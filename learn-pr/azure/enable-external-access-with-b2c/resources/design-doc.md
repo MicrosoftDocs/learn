@@ -77,7 +77,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
     - Conditions – Specified conditions that need to be met
     - Action – defined action steps once the conditions are met.
 
-    Azure MFA helps safeguard access to data and customer-facing applications while maintaining simplicity for users. It provides additional security by requiring a second form of authentication and delivers strong authentication via a range of easy to use authentication methods. The security of two-step verification lies in its layered approach. Compromising multiple authentication factors presents a significant challenge for attackers. Even if an attacker manages to learn the user's password, it's useless without also having possession of the additional authentication method. MFA provides additional security for your identities by requiring two or more elements for full authentication. These elements fall into three categories:
+    Azure AD MFA helps safeguard access to data and customer-facing applications while maintaining simplicity for users. It provides additional security by requiring a second form of authentication and delivers strong authentication via a range of easy to use authentication methods. The security of two-step verification lies in its layered approach. Compromising multiple authentication factors presents a significant challenge for attackers. Even if an attacker manages to learn the user's password, it's useless without also having possession of the additional authentication method. MFA provides additional security for your identities by requiring two or more elements for full authentication. These elements fall into three categories:
 
     - Something you know
     - Something you possess

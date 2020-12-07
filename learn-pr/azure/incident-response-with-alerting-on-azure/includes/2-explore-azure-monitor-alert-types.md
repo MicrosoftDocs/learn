@@ -59,13 +59,13 @@ The following alert capabilities aren't yet available for the generation of moni
 
 ## Managing alert rules
 
-Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules and enable or disable them as needed.
+Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules and enable or disable them, as needed.
 
-As an Azure solution architect, you would use Azure Monitor to enable tightly focused and specific alerts before any application change. You would then disable the alerts after a successful deployment.
+As an Azure solution architect, you would use Azure Monitor to enable tightly-focused and specific alerts before any application change. You would then disable the alerts after a successful deployment.
 
 ## Alert summary view
 
-By default, the alert page shows a summary of all alerts. Note that the view doesn't show classic alerts. You can apply filters to the view by using one or more of the following three categories: subscriptions, resource groups, or time ranges. The view will include only alerts that match these criteria. The following constraints apply:
+By default, the alert page shows a summary of all alerts. Note that the view doesn't show classic alerts. You can apply filters to the view by using one or more of the following three categories: subscriptions, resource groups, or time ranges. The view includes only alerts that match these criteria. The following constraints apply:
 
 - **Subscriptions**: You're limited to reporting on a maximum of five subscriptions.
 - **Resource groups**: You can have only one resource group.
@@ -76,7 +76,7 @@ By default, the alert page shows a summary of all alerts. Note that the view doe
 You control the alert state to manage and specify where you are in the alert resolution process. Currently, there are three states:
 
 - Every new alert has an alert state of **New**. This state means that the issue has been detected but not yet reviewed.
-- After an administrator has reviewed the alert and is working on it, the alert state changes to **Acknowledged**.
+- After an admin has reviewed the alert and is working on it, the alert state changes to **Acknowledged**.
 - When the issue is resolved, the alert state is set to **Closed**.
 
 ### Filtering alerts
@@ -86,8 +86,8 @@ From the alert summary window, you'll see a satellite view of the alerts being r
 You can select the following items to filter the view:
 
 - **Smart groups**: You can select this filter if it's enabled.
-- **Resource type**: This filter is applicable only when it's used with a resource group.
-- **Resource**: This filter is applicable only when a resource type has been specified.
-- **Severity**: This filter identifies the severity assigned by the alert rule.
-- **Monitor condition**: This filter is set by the system and indicates if the alert is fired or resolved.
-- **Alert state**: You'd typically use this filter to find the **New** and **Acknowledged** alerts.
+- **Resource type**: Applies only when it's used with a resource group.
+- **Resource**: Applies only when a resource type has been specified.
+- **Severity**: Identifies the severity assigned by the alert rule.
+- **Monitor condition**: Set by the system and indicates if the alert is fired or resolved.
+- **Alert state**: Typically, finds the **New** and **Acknowledged** alerts.

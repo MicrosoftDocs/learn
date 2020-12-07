@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.policy-security-management-using-microsoft-endpoint-manager
+metadata:
+  title: Understand Conditional Access policies using Microsoft Endpoint Manager
+  description: In this module, you'll learn about policy and security management using Microsoft Endpoint Manager. 
+  ms.date: 10/26/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand Conditional Access policies using Microsoft Endpoint Manager
+summary: Microsoft Endpoint Manager uses groups to assign policies, such as Conditional Access policies and endpoint security policies. Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. 
+abstract: | 
+  In this module, you will:
+  - Understand how to manage devices, apps, and policies based on groups.
+  - Understand how trusted users can access organizational resources on trusted devices using trusted apps.
+  - Learn about common ways to use Conditional Access.
+  - Learn about configuring and managing device security.
+prerequisites: None
+iconUrl: /learn/achievements/policy-security-management-using-microsoft-endpoint-manager.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+products:
+- mem
+units:
+- learn.policy-security-management-using-microsoft-endpoint-manager.1-introduction
+- learn.policy-security-management-using-microsoft-endpoint-manager.2-policy-management-groups
+- learn.policy-security-management-using-microsoft-endpoint-manager.3-conditional-access
+- learn.policy-security-management-using-microsoft-endpoint-manager.4-use-conditional-access
+- learn.policy-security-management-using-microsoft-endpoint-manager.5-benefits-conditional-access
+- learn.policy-security-management-using-microsoft-endpoint-manager.6-implement-security-rules
+- learn.policy-security-management-using-microsoft-endpoint-manager.7-knowledge-check
+- learn.policy-security-management-using-microsoft-endpoint-manager.8-summary
+badge:
+  uid: learn.policy-security-management-using-microsoft-endpoint-manager.badge

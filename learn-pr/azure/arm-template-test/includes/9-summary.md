@@ -1,19 +1,19 @@
 
-You started by learning about the benefits of knowing beforehand about what would be deployed. This pre-knowledge helps with concerns like, for example,  if a new deploy would break the existing setup. It's also a good mental check to see if what you intend to happen is actually what will happen. You've furthermore learned that the *What-If* script is the tool that will help you address the above concerns.
+In this module, you started by learning about the benefits of knowing beforehand what will be deployed. This pre-knowledge helps with concerns like whether a new deployment will break the existing setup. It's also a good mental check to see if what you intend to happen is actually what will happen. You learned that the *what-if* script is the tool that will help you address these concerns.
 
-You were then introduced to ARM template test toolkit. The testing toolkit validates your deployment templates by comparing them to tried and tested, best practices and indicates where you are in *violation*. It's worth pointing out that the ARM template test toolkit is not something you *must* abide by but is merely recommendations.
+You were then introduced to the Azure Resource Manager (ARM) template test toolkit. The test toolkit validates your deployment templates by comparing them to tried and tested best practices. It then indicates where you're in violation. The ARM template test toolkit isn't something you *must* abide by. It's just recommendations.
 
-Finally you've learned how to implement domain-specific rules by authoring and running custom tests for the ARM template test toolkit tool.
+Finally, you learned how to implement domain-specific rules by authoring and running custom tests for the ARM template test toolkit.
 
-In summary, you should now have a good overall understanding of what scripts and tools can help you during the development process of your deployment templates.
+You should now have a good understanding of what scripts and tools can help you during the development process of your deployment templates.
 
 ## Additional resources
 
-- Read more on **what-if** command at the official [What-If](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell?azure-portal=true)
-- Read more on the different test cases the toolkit is testing [Test cases](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-cases?azure-portal=true)
-- Docs on [Deployment modes](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?azure-portal=true)
-- Visual Studio Code [Integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal?azure-portal=true)
-- Azure CLI command [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true)
-- Installing [PowerShell Core](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit?azure-portal=true)
-- Docs on the [Test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit?azure-portal=true)
-- The testing toolkit GitHub repository [ARM template test toolkit](https://aka.ms/arm-ttk-latest?azure-portal=true)
+- [ARM template deployment what-if operation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell?azure-portal=true)
+- [Default test cases for the ARM template test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-cases?azure-portal=true)
+- [Azure Resource Manager deployment modes](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?azure-portal=true)
+- [Visual Studio Code integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal?azure-portal=true)
+- [Azure CLI configuration](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true)
+- [Installing PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
+- [Using the ARM template test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit?azure-portal=true)
+- [ARM template test toolkit (direct download)](https://aka.ms/arm-ttk-latest?azure-portal=true)

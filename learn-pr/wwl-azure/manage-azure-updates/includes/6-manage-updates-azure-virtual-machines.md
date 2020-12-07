@@ -11,7 +11,7 @@ In this demonstration, you'll learn to:
 
 ## Next steps
 
-You can review the steps for this demonstration at [Manage updates and patches for your Azure VMs](https://aka.ms/automation-tutorial-update-management?azure-portal=true)
+You can review the steps for this demonstration at [Manage updates and patches for your Azure VMs](https://docs.microsoft.com/azure/automation/update-management/manage-updates-for-vm)
 
 If you want to repeat these steps, [get a free trial Azure subscription](https://aka.ms/Azure_free_account?azure-portal=true). 
 

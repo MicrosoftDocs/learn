@@ -1,22 +1,19 @@
 ### YamlMime:Module
 uid: learn.arm-template-test
 metadata:
-  title: Validate your deployments by using what-if and the ARM template test toolkit
-  description: Leverage the ARM template test toolkit and apply it on your Azure Resource
-    Manager templates to ensure the templates follow good practices before
-    deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
+  description: Use the ARM template test toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment. Apply the what-if command to see the impact of a deployment before it's applied. 
   ms.date: 10/12/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Validate your deployments by using what-if and the ARM template test toolkit
-summary: This module teaches two major things, how to preview your changes with the what-if operation and the value of doing so. Secondly it teaches you how to create valid templates and gives you good recommendations that you can follow using the ARM template test toolkit tool.
+title: Preview changes and validate Azure resources by using what-if and the ARM template test toolkit
+summary: This module teaches you how to preview your changes with the what-if operation and the value of doing so. It also teaches you how to create valid templates and gives you recommendations that you can follow by using the ARM template test toolkit.
 abstract: |
   After completing this module, you'll be able to:
   - Preview what changes will happen before you deploy by using the what-if operation.
-  - Validate your templates adherence to sound recommendations using ARM template test toolkit.
-  - Implement domain specific rules for deployments that can be run by ARM template test toolkit.
+  - Validate your template's adherence to recommendations by using the ARM template test toolkit.
+  - Implement domain-specific rules for deployments that you can run by using the ARM template test toolkit.
 iconUrl: /learn/achievements/arm-template-test.svg
 levels:
   - intermediate

@@ -52,7 +52,7 @@ az vm encryption show --name "YourSecureVM" --resource-group "YourVirtualMachine
 
 How do you ensure that the data in files is encrypted? You need to be able to encrypt this data yourself before it's moved and stored in Azure Storage.
 
-That's where client-side encryption comes in. Your application can encrypt all of the data before it lands in Azure. The application then encrypts the data when it fetches the data back. 
+That's where client-side encryption comes in. Your application can encrypt all of the data before it lands in Azure. The application then decrypts the data when it fetches the data back. 
 
 You can use Azure Storage client libraries for .NET, Python, or Java to encrypt the data. You use Azure Key Vault with all of these libraries to take care of your encryption keys.
 

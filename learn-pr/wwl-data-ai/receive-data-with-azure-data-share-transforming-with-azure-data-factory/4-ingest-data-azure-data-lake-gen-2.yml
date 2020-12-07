@@ -4,7 +4,7 @@ title: Ingest data into Azure Data Lake Gen 2 using Azure Data Factory
 metadata:
   title: Ingest data into Azure Data Lake Gen 2 using Azure Data Factory
   description: "Ingest data into Azure Data Lake Gen 2 using Azure Data Factory"
-  ms.date: 10/16/2020
+  ms.date: 11/10/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial

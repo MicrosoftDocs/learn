@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-devices-with-microsoft-endpoint-manager.3-enroll-devices
+title: Learn about enrolling devices
+metadata:
+  title: Learn about enrolling devices
+  description: Learn about enrolling devices using Microsoft Endpoint Manager.
+  ms.date: 10/23/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-enroll-devices.md)]

@@ -1,6 +1,6 @@
 The financial company you're working with has moved an application to Azure that generates reports and data exports for users and other systems to consume. They wanted to consolidate the files they produce into a native cloud service. With Azure file shares, the company can continue to use the SMB protocol to access these files securely.
 
-You used Azure storage accounts, and the fully managed cloud shares it provides, to re-create the on-premises file shares used by the finance company. You then added extra levels of security to these shares to restrict access and create snapshots. With the secure file shares in place, you quickly transferred 1,000 files by using AzCopy.
+You used Azure storage accounts, and the fully managed cloud shares it provides, to re-create the on-premises file shares used by the finance company. You then added extra levels of security to these shares to restrict access and create snapshots.
 
 If you couldn't use Azure file shares, you might have to manually create a virtual machine in the cloud to act as a file server. You would then be responsible for managing the operating system updates and disk space. This solution wouldn't benefit from the global redundancy that a GRS storage account has built in. The server would become a single point of failure. In this scenario, costs would be higher than using the unified Azure file shares.
 

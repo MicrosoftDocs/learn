@@ -4,16 +4,16 @@ You learned how metric alerts enable time-series evaluations, which trigger an a
 
 You also learned how log alert runs specify log queries at regular time intervals. The runs trigger an action group when a match is found.
 
-Then you learned how log alerts enable notifications when a named Azure resource meets the specified conditions.
+Next, you learned how log alerts enable notifications when a named Azure resource meets the specified conditions.
 
-Finally, you explored how to use smart groups to reduce notification and alert noise, providing enhanced reporting and analytics.
+Lastly, you explored how to use smart groups to reduce notification and alert noise, providing enhanced reporting and analytics.
 
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
 
-For more information on Azure Monitor, each of the alert types, and smart groups, see:
+For more info about Azure Monitor, each of the alert types, and smart groups, see:
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview)
 - [Metric alerts](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-overview)

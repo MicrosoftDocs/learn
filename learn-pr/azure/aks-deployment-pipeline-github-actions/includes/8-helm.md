@@ -1,37 +1,39 @@
-You have successfully built and pushed both of your production and staging images to the ACR. It's time to automate all the steps and make the machine work for you.
+You have successfully built and pushed both your staging and production images to your Container Registry instance. It's time to automate all the steps and make the machine work for you.
 
-But there's a problem. Your workloads aren't generic enough, this way you can't deploy them automatically, you need to manually change the files every time.
+But, there's a problem. Your workloads aren't generic enough, so you can't deploy them automatically. Instead, you must manually change the files every time. 
+
+As a solution, you'll create and use a Helm chart.
 
 ## Helm charts
 
-Helm is an open-source packaging tool that helps you install and manage the lifecycle of Kubernetes applications. Similar to Linux package managers such as APT and Yum. Helm is used to manage Kubernetes charts, which are packages of preconfigured Kubernetes resources.
+Helm is an open-source packaging tool that helps you install and manage the lifecycle of Kubernetes applications. Similar to Linux package managers like APT and Yum, you can use Helm to manage Kubernetes charts. 
 
-A chart is a group of one or more workloads together with some configuration files and a chart description file. Those files compose a unit that can be easily deployed to a Kubernetes cluster.
+A Kubernetes chart is a group of one or more workloads that are packaged with configuration files and a chart description file. When packaged in a chart, the files can easily be deployed as a unit to a Kubernetes cluster.
 
-One of the greatest advantages of using Helm is that you don't need to deploy all files individually. Instead, you can issue a single command to deploy the chart, or even multiple dependent charts with an automatic dependency resolution.
+One of the top advantages of using Helm is that you don't need to deploy files individually. Instead, you can issue a single command to deploy the chart. You can even deploy multiple dependent charts, with an automatic dependency resolution.
 
-The structure of a chart directory is as follows:
+Here's the structure of a Helm chart directory:
 
-:::image type="content" source="../media/8-helm-chart-tree.png" alt-text="A Helm chart tree":::
+:::image type="content" source="../media/8-helm-chart-tree.png" alt-text="Screenshot that shows an example of a Helm chart tree.":::
 
-Let's go through each file and directory to understand their meaning.
+The following table describes each file and directory that's included in a Kubernetes chart:
 
 |Name  |Type  |Meaning  |
 |---------|---------|---------|
-|Chart.yaml     |File         |File that describes the chart, it's the file that will have the name, description, and version of the chart         |
-|charts     |Directory         |Directory to include dependent charts         |
-|templates     |Directory         |Directory where all the manifest files live         |
-|values.yaml     |File         |File that contains all default values for helm templates         |
+|Chart.yaml     |File         |Describes the chart. It's the file that contains the name, description, and version of the chart.         |
+|charts     |Directory         |Includes dependent charts.         |
+|templates     |Directory         |Contains all manifest files.         |
+|values.yaml     |File         |Contains all default values for Helm templates.         |
 
-The other feature that makes Helm stand out is, in fact, the feature that you'll need the most. The ability to create and manipulate templates.
+Another feature that makes Helm stand out as a tool is the feature that you'll need the most for this exercise—the ability to create and manage templates.
 
 ## Helm templates
 
-Templates are the feature that makes possible for manifest files to be automated and put into a CI pipeline.
+Templates are the feature that makes it possible for manifest files to be automated and added to a CI pipeline.
 
-A template file is a manifest file that contains placeholders for variable values, let's take this example of the `deployment.yaml` file inside the `kubernetes` directory of your website fork:
+A template file is a manifest file that contains placeholders for variable values. Let's look at the following example of the deployment.yaml file inside the kubernetes directory of your website fork:
 
-```yml
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -60,17 +62,17 @@ spec:
               name: http
 ```
 
-See the `!IMAGE!` placeholder? That's a place where you should put your repository and image name. If you're doing a manual replacement, you'd do something like this:
+The `!IMAGE!` placeholder is where you put your repository and image name. In a manual replacement, you'd do something like this example:
 
 ```bash
 $ sed 's+!IMAGE!+'"$ACR_NAME"'/contoso-website+g' kubernetes/deployment.yaml
 ```
 
-This command would replace `!IMAGE!` in the file by the name of your ACR and the name of your image and print out the result, so you can pipe this command to a `kubectl apply -f -` and create the workloads.
+The code replaces `!IMAGE!` in the file with the name of your Container Registry instance and the name of your image. Then, it prints out the result. You can pipe this command to `kubectl apply -f -` and create the workloads.
 
-However, this solution isn't elegant or efficient. Helm comes with native templating that allows you to replace `!IMAGE!` by `{{.Values.containerImage}}`:
+However, this solution isn't elegant or efficient. Helm comes with native templating that allows you to replace `!IMAGE!` by using `{{.Values.containerImage}}`:
 
-```yml
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -99,13 +101,13 @@ spec:
               name: http
 ```
 
-And then you just need to run the Helm command to install the workload passing this argument:
+Then, you just need to run the Helm command to install the workload and pass this argument:
 
 ```bash
 $ helm install contoso-website ./chart-location \
  --set containerImage="$ACR_NAME/contoso-website"
 ```
 
-Besides this simple feature, Helm also uses template functions, which allows you to use more complex logic to include, for example, default and required values.
+In addition to this simple feature, Helm offers template functions. You can use template functions for more complex logic, for example, to include default and required values.
 
-To make your CI pipeline more efficient, let's build the helm chart for the company's website.
+To make your CI pipeline more efficient, let's build the Helm chart for the company's website.

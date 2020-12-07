@@ -3,7 +3,7 @@ uid: learn.wwl.extract-key-phrases-text-analytics-api
 metadata:
   title: Extract key phrases from text with the text analytics API
   description: "Automatically extract key phrases to quickly identify the main points in documents or text."
-  ms.date: 09/27/2020
+  ms.date: 11/03/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.wwl.synthesize-text-input-speech
 metadata:
   title: Synthesize Text Input to Speech
   description: "Learn how to synthesize text to speech using the Speech-to-Text service."
-  ms.date: 10/15/2020
+  ms.date: 10/30/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

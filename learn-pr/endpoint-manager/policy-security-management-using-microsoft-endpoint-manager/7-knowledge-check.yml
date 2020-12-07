@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.policy-security-management-using-microsoft-endpoint-manager.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/26/2020
+  author: Erikre 
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager   
+title: Knowledge check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is Conditional Access?"
+    choices:
+    - content: "Conditional Access allows anonymous users to access organizational resources on trusted devices. "
+      isCorrect: false
+      explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
+    - content: "Conditional Access prevents trusted users from accessing trusted devices and trusted apps."
+      isCorrect: false
+      explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
+    - content: "Conditional Access ensures that only trusted users can access organizational resources on trusted devices using trusted apps."
+      isCorrect: true
+      explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
+  - content: "When assign a policy, what is the difference between using an assigned group and using a dynamic group?"
+    choices:
+    - content: "An assigned group is a group of users or devices that you manually add into a static group. A dynamic group is a group of users or devices that are automatically assigned based on an expression you create. In addition, dynamic groups requires Azure AD Premium."
+      isCorrect: true
+      explanation: ""
+    - content: "An assigned group is a group of users or devices that automatically set. A dynamic group is a group of users that you manually set."
+      isCorrect: false
+      explanation: "An assigned group is a group of users or devices that you manually add into a static group. A dynamic group is a group of users or devices that are automatically assigned based on an expression you create. In addition, dynamic groups requires Azure AD Premium."
+    - content: "For policies, there are no differences when assigning based on assigned group or dynamic group."
+      isCorrect: false
+      explanation: "An assigned group is a group of users or devices that you manually add into a static group. A dynamic group is a group of users or devices that are automatically assigned based on an expression you create. In addition, dynamic groups requires Azure AD Premium."
+  - content: "When would you assign a policy to a device group?"
+    choices:
+    - content: "Assign a policy to a device group when you want to have different policy settings for each user."
+      isCorrect: false
+      explanation: "Assign a policy using a device group when it doesn't matter who's signed in."
+    - content: "If you want to apply policy settings on a device, regardless of who's signed in, then assign your policies to a devices group."
+      isCorrect: true
+      explanation: ""
+    - content: "If you don't want to have any policy settings for the device, use a device group."
+      isCorrect: false
+      explanation: "Assign a policy using a device group when it doesn't matter who's signed in."
+  - content: "It is possible to integrate Microsoft Defender ATP with Intune, but is it possible to integrate Microsoft Defender ATP with Configuration Manager?"
+    choices:
+    - content: "Yes. Using tenant attach in a co-managed endpoint management scenario, you can integrate Configuration Manager with Microsoft Defender ATP to gain access to security tasks that help enterprises detect, investigate, and respond to advanced attacks on their networks."
+      isCorrect: true
+      explanation: ""
+    - content: "No. You can only integrate Microsoft Defender ATP with Intune."
+      isCorrect: false
+      explanation: "Using tenant attach in a co-managed endpoint management scenario, you can integrate Configuration Manager with Microsoft Defender ATP to gain access to security tasks that help enterprises detect, investigate, and respond to advanced attacks on their networks."
+      

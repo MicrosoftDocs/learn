@@ -1,6 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.secure-access-azure-identity-services
 metadata:
+  title: Secure access to your applications by using Azure identity services
   description: Learn how Azure Active Directory, single sign-on (SSO), multifactor authentication, and Conditional Access can help you manage and secure identities on Azure.
   ms.date: 09/14/2020
   author: tpetchel
@@ -17,7 +18,7 @@ abstract: |
   * Explain the role single sign-on (SSO), multifactor authentication, and Conditional Access play in managing user identity.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
-  - Familiarity with cloud computing is helpful but isn't necessary.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/examine-core-identity-services.svg
 levels:
 - beginner

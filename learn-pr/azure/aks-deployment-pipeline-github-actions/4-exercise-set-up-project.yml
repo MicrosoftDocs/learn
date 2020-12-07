@@ -2,7 +2,7 @@
 uid: learn.aks-deployment-pipeline-github-actions.4-exercise-set-up-project
 metadata:
   title: Exercise - Set up the project
-  description: Set up the initial steps of the project so you can start building the application pipeline
+  description: Set up the initial steps of the project to start building the application pipeline.
   ms.date: 10/08/2020
   author: khaosdoctor
   ms.author: ludossan

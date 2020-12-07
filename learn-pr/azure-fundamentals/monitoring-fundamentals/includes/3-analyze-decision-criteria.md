@@ -6,7 +6,7 @@ Choose Azure Advisor when you're looking for an analysis of your deployed resour
 
 ### Do you want to monitor Azure services or your usage of Azure?
 
-If you want to keep tabs on Azure itself, especially the services and regions you depend on, you want to choose Azure Service Health.  You can view the current status of the Azure services you rely on, upcoming planned outages, and services that will be sunlit.  You can set up alerts that help you stay on top of incidents and upcoming downtime without having to visit the dashboard regularly.
+If you want to keep tabs on Azure itself, especially the services and regions you depend on, you want to choose Azure Service Health.  You can view the current status of the Azure services you rely on, upcoming planned outages, and services that will be sunset.  You can set up alerts that help you stay on top of incidents and upcoming downtime without having to visit the dashboard regularly.
 
 However, if you want to keep track of the performance or issues related to your specific VM or container instances, databases, your applications, and so on, you want to visit Azure Monitor and create reports and notifications to help you understand how your services are performing or diagnose issues related to your Azure usage.
 

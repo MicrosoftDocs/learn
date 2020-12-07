@@ -3,7 +3,7 @@ uid: learn.arm-template-test.7-exercise-custom-tests
 title: Exercise - Author and run custom tests with the test toolkit
 metadata:
   title: Exercise - Author and run custom tests with the test toolkit
-  description: Author and run custom tests to ensure your templates complies with org-specific requirements.
+  description: Author and run custom tests to ensure your template complies with organization-specific requirements.
   author: softchris
   ms.author: chnoring
   ms.date: 10/12/2020

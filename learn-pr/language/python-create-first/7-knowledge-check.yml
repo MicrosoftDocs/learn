@@ -18,7 +18,7 @@ quiz:
     - content: "All variables are of string data type by default."
       isCorrect: true
       explanation: "This is a false statement.  A variable can point to values in memory that are of many different data types."
-    - content: "The print() function can work only with both integer and string data types."
+    - content: "The print() function can work with several data types, including string, int, float, and others."
       isCorrect: false
       explanation: "This is a true statement."
     - content: "You use the same symbol for both addition and concatenation, and Python will understand which to perform based on the two values' data types."

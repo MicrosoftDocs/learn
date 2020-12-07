@@ -9,14 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enterprise-scale architecture organizational design principles
-summary: Evaluate the critical design areas for enterprise enrollment and Azure AD tenants, identity and access management, and management group and subscription organization.
+summary: Evaluate the critical design areas for enterprise enrollment and Azure Active Directory (Azure AD) tenants, identity and access management, and management group and subscription organization.
 abstract: | 
-  After completing this module, you will be able to:
-  - Determine the need for single or multiple Azure AD tenants
-  - Define the Azure enterprise enrollment hierarchy
-  - Define the requirements for Privileged Identity Management
-  - Determine what RBAC roles are necessary for enterprise-scale architecture
-  - Define a management group hierarchy
+  After completing this module, you'll be able to:
+  - Determine the need for single or multiple Azure AD tenants.
+  - Define the Azure enterprise enrollment hierarchy.
+  - Define the requirements for Privileged Identity Management.
+  - Determine what role-based access control (RBAC) roles are necessary for enterprise-scale architecture.
+  - Define a management group hierarchy.
 prerequisites: | 
   - Basic knowledge of Azure policies
   - Basic knowledge of Azure Enterprise Agreements

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.4-corporate-policies
+title: Corporate policy
+metadata:
+  title: Corporate policy 
+  description: Learn how to validate and define corporate policies that drive actionable governance.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-corporate-policies.md)]

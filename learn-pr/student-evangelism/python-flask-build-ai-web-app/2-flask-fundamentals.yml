@@ -4,9 +4,9 @@ title: Flask fundamentals
 metadata:
   title: Flask fundamentals
   description: Learn the fundamentals of Flask.
-  ms.date: 01/31/2020
+  ms.date: 10/23/2020
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 10
@@ -26,37 +26,3 @@ quiz:
       - content: "Python only"
         isCorrect: true
         explanation: "Correct! Flask is a framework for building Python web apps."
-    - content: "Which of the following are valid expression delimiters in Flask?"
-      choices:
-      - content: "`{{` and `}}`"
-        isCorrect: false
-        explanation: "Incorrect. `{{` and `}}` are valid, but not the only valid expression delimiters in Flask."
-      - content: "`{%` and `%}`"
-        isCorrect: false
-        explanation: "Incorrect. `{%` and `%}` are valid, but not the only valid expression delimiters in Flask."
-      - content: "Both `{{` and `}}` and `{%` and `%}`"
-        isCorrect: true
-        explanation: "Correct! Valid expression delimiters in Flask are `{{`, `}}`, `{%`, and `%}`. `{{`, `}}` is used for referencing template variables, and `{%`, and `%}` is used for control-of-flow statements."
-    - content: "How are messages <i>flashed</i> with Flask's `flash()` method shown by default?"
-      choices:
-      - content: "In alert boxes"
-        isCorrect: true
-        explanation: "Correct! Messages that are <i>flashed</i> with Flask's `flash()` method by default are shown in alert boxes."
-      - content: "In `<div>` elements decorated with `class='flash'` attributes"
-        isCorrect: false
-        explanation: "Incorrect. Messages that are <i>flashed</i> with Flask's `flash()` method by default are shown in alert boxes."
-      - content: "Flashed messages are not shown by default"
-        isCorrect: false
-        explanation: "Incorrect. Messages that are <i>flashed</i> with Flask's `flash()` method by default are shown in alert boxes."
-    - content: "By default, in which subdirectory must HTML files served up by Flask be located?"
-      choices:
-      - content: "<b>templates</b>"
-        isCorrect: true
-        explanation: "Correct! By default, HTML files served up by Flask must be located in a subdirectory named **templates**."
-      - content: "<b>static</b>"
-        isCorrect: false
-        explanation: "Incorrect. Flask looks in the **static** subdirectory for images, style sheets, and other static files that don't change as the application runs."
-      - content: "<b>html</b>"
-        isCorrect: false
-        explanation: "Incorrect. Flask does not look for a subdirectory named **html**."
-

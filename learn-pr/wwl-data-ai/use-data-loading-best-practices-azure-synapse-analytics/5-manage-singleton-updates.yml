@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.manage-singleton-updates
+title: Manage singleton updates
+metadata:
+  title: Manage singleton updates
+  description: "Manage singleton updates"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-manage-singleton-updates.md)]

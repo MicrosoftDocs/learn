@@ -1,15 +1,15 @@
-Azure Resource Manager (ARM) templates use things like parameters, variables, functions, and more to create the templates. These constructs allow you to save time, as you don't need to create a new template per environment, you get consistent naming and so on.
+Azure Resource Manager (ARM) templates use things like parameters, variables, and functions to create the templates. These constructs save you time, because you don't need to create a new template for each environment. You also get consistent naming.
 
-You are the person on a software team for the company Tailwind Traders authoring these templates. You plan to deploy the described infrastructure in the templates. As you author these templates you care about having a fast feedback loop. It's important that you can be made aware of any issues prior to deployment. Issues that can occur while authoring can be things such as errors in the template/s or violation against good practices or that you simply aren't deploying what you think you are deploying.
+You're on a software team that's authoring these templates for the company Tailwind Traders. You plan to deploy the described infrastructure in the templates. As you author these templates, you care about having a fast feedback loop. It's important that you're aware of any issues before deployment. Issues that can happen while authoring include errors in the templates, violation of good practices, or deploying something other than what you think you're deploying.
 
-You decide to evaluate the existing set of tools that addresses the above issues.
+You decide to evaluate the existing set of tools that addresses these issues.
 
-In this module, you gain an understanding to what practices are beneficial to follow and why it's important. You also practice using the what-if command as well as the Testing toolkit to correct issues on your templates.
+In this module, you gain an understanding of what practices are beneficial to follow and why it's important. You also practice using the what-if command and the ARM template test toolkit to correct issues in your templates.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
 - Preview what changes will happen before you deploy by using the what-if operation.
-- Validate your templates adherence to sound recommendations using ARM template test toolkit.
-- Implement domain-specific rules for deployments that can be run by ARM template test toolkit.
+- Validate your template's adherence to recommendations by using the ARM template test toolkit.
+- Implement domain-specific rules for deployments that can be run by using the ARM template test toolkit.

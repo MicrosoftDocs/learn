@@ -4,14 +4,14 @@ Your security policies mandate that data must be encrypted using your own encryp
 
 Your admin team already uses PowerShell for on-premises server management. You'll deploy and test many Azure VMs, and intend to use Azure Resource Manager templates to automate this process.
 
-Here, we'll look at the types of protection available for VM disks, so you can decide if Azure Disk Encryption (ADE) is the best choice for a given scenario. We'll then enable ADE on existing VM disks, and use templates to enable ADE for new VM deployments.
+Here, you'll look at the types of protection available for VM disks, so you can decide if Azure Disk Encryption (ADE) is the best choice for a given scenario. You'll then enable ADE on existing VM disks, and use templates to enable ADE for new VM deployments.
 
 
 ## Learning objectives
 
 In this module, you will:
 
-- Determine which encryption method is best for your VM
-- Encrypt existing VM disks using the Azure portal
-- Encrypt existing VM disks using PowerShell
-- Modify Azure Resource Manager templates to automate disk encryption on new VMs
+- Determine which encryption method is best for your VM.
+- Encrypt existing VM disks using the Azure portal.
+- Encrypt existing VM disks using PowerShell.
+- Modify Azure Resource Manager templates to automate disk encryption on new VMs.

@@ -207,7 +207,7 @@ instead of measuring one qubit three times.
 
     Here, we introduce three concepts:
 
-    * The `qubits` variable now represents a `Qubit` array that has a length of three. For more information about arrays in Q#, see the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types?azure-portal=true).
+    * The `qubits` variable now represents a `Qubit` array that has a length of three. For more information about arrays in Q#, see the [QDK documentation](/quantum/user-guide/language/).
     * The operations [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true) and
       [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
       are useful to measure and act on multiple qubits, and they use

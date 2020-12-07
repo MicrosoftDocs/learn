@@ -26,7 +26,7 @@ With geographically redundant storage (GRS), your data is copied three times wit
 
 ### Read-access geo-redundant storage
 
-With read-access geo-redundant storage (RA-GRS), your secondary region isn't available for read access until the primary region fails. If you want to read from the secondary region, even if the primary region hasn't failed, use RA-GRS for your replication type.
+With GRS, your secondary region isn't available for read access until the primary region fails. If you want to read from the secondary region, even if the primary region hasn't failed, use RA-GRS for your replication type.
 
 ### Zone-redundant storage
 
@@ -54,7 +54,6 @@ GZRS and RA-GZRS are currently available in the following regions:
 - US Central
 - US East
 - US East 2
-- US Central
 
 ### Paired regions
 
@@ -83,11 +82,11 @@ The following table summarizes how many copies you get with each replication typ
 |Replication type  |Copies  | Use case  |
 |---------|---------|---------|
 |LRS|3|Data remains highly available, but for compliance reasons, isn't allowed to leave the local datacenter.|
-|GRS|6|Application has access to the data, even if an entire region has an outage.|
-|RA-GRS|6|Application reads from multiple geographical locations, so you can serve users from a location that's closer to them.|
+|GRS|6|App has access to the data, even if an entire region has an outage.|
+|RA-GRS|6|App reads from multiple geographical locations, so you can serve users from a location that's closer to them.|
 |ZRS|3|Need redundancy in multiple physical locations, but because of compliance, data isn't allowed to leave a region.|
-|GZRS|6| Application can access data, even if the primary region has failed, and your secondary region has a datacenter that's experiencing an outage. But you don't want to read from the secondary region unless the primary region is down.|
-|RA-GZRS|6| Regularly read data from your secondary region, perhaps to serve users from a location closer to them, even if a datacenter is down in your secondary region.|
+|GZRS|6| App can access data, even if the primary region has failed, and your secondary region has a datacenter that's experiencing an outage. But you don't want to read from the secondary region unless the primary region is down.|
+|RA-GZRS|6| Regularly read data from your secondary region, perhaps to serve users from a location closer to them, even if a datacenter is up in your primary region.|
 
 ## Switch replication strategies
 
@@ -122,7 +121,7 @@ You'll then be contacted by a support representative about your live migration r
 
 There are some limitations to live migration. For example:
 
-- Unlike a manual application, you won't know exactly when a live migration will complete.
+- Unlike a manual app, you won't know exactly when a live migration will complete.
 - Data can only be migrated to the same region.
 - Live migration is only supported for data held in standard storage account types.
 - If your account contains a large file share, live migration to GZRS isn't supported.
