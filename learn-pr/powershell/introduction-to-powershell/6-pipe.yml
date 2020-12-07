@@ -6,10 +6,10 @@ metadata:
   description: Learn about pipeline construction and
     pipeline input. Also learn how to use helper constructs to filter and format your data.
   author: softchris
-  ms.author: chnoring
-  ms.date: 11/19/2020
+  ms.author: shanama
+  ms.date: 12/7/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/6-pipe.md)]

@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Answer multiple-choice questions to check your knowledge.
-  ms.date: 11/19/2020
+  ms.date: 12/7/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
@@ -53,4 +53,3 @@ quiz:
         - content: "`{command} Get-Member`"
           isCorrect: false
           explanation: Incorrect. The command needs to be piped with `Get-Member`.
-

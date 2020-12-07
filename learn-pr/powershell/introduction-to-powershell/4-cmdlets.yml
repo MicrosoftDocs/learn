@@ -5,10 +5,10 @@ metadata:
   title: Use the core cmdlets to find and learn about cmdlets
   description: Learn how to use the built-in help system, the Get-Command cmdlet, and the Get-Member cmdlet.
   author: softchris
-  ms.author: chnoring
-  ms.date: 11/19/2020
+  ms.author: shanama
+  ms.date: 12/7/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 14
 content: |
   [!include[](includes/4-cmdlets.md)]

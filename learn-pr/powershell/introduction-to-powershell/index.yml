@@ -4,9 +4,9 @@ metadata:
   title: Introduction to PowerShell
   description: This module introduces PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration
     management. 
-  ms.date: 11/19/2020
+  ms.date: 12/7/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to PowerShell
@@ -22,6 +22,7 @@ levels:
   - beginner
 roles:
   - developer
+  - student
 products:
   - vs
 prerequisites: |
