@@ -4,8 +4,6 @@ For this exercise, we'll use the [Drizzle box](https://www.trufflesuite.com/boxe
 
 The Drizzle box comes with several out-of-the-box smart contracts to check out. It also comes with a simplified truffle-config.js file that's designed for development and testing.
 
-If you're using a prior Truffle project, first create a clean and empty
-folder, and select **unbox** > **Drizzle**. Then copy over the smart contracts, migrations, and other files for the current project.
 
 ## Use Drizzle to wire smart contacts to a front-end server
 

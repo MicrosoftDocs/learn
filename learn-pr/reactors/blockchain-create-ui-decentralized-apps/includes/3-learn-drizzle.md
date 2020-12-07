@@ -20,13 +20,13 @@ There are three core packages:
 
 ### Underlying technologies
 
-Drizzle provides the mechanisms for synchronizing and managing smart contract data. It's based on a [Redux](https://redux.js.org/?azure-portal=true) store.
+Drizzle provides the mechanisms for synchronizing and managing smart contract data. It's based on a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for users and any environment they use.
 
-Underlying technologies for managing the front-end apps that interact with the smart contacts can communicate by using a JSON-RPC layer called the Web3 API:
+Drizzle dapps can interact with the smart contacts by using a JSON-RPC layer called the Web3 API.
 
-- [JSON-RPC](https://www.jsonrpc.org/specification?azure-portal=true) is a stateless, lightweight remote procedure call (RPC) protocol that uses JSON for the payload.
+[JSON-RPC](https://www.jsonrpc.org/specification?azure-portal=true) is a stateless, lightweight remote procedure call (RPC) protocol that uses JSON for the payload.
 
-- [Web3](http://web3?azure-portal=true) is the Ethereum-compatible JavaScript API and bindings that are built through the JSON-RPC specification. Any decentralized app can use Web3.js for browser-based dapps.
+- [Web3](https://web3js.readthedocs.io?azure-portal=true) is the Ethereum-compatible JavaScript API and bindings that are built through the JSON-RPC specification. For dapp development, Web3.js should be used so that the app can communicate with and get updates from the Ethereum blockchain nodes..
 
 - [Redux](https://redux.js.org/?azure-portal=true) is a predictable state container for JavaScript apps.
 
@@ -34,7 +34,7 @@ Underlying technologies for managing the front-end apps that interact with the s
 
 ## Drizzle components
 
-Drizzle includes the following components:
+Drizzle also includes the following components that may be integrated with your dapps:
 
 - [\@drizzle/store](https://github.com/trufflesuite/drizzle/blob/develop/packages/store/README.md?azure-portal=true) is the state manager of Drizzle. It handles the boilerplate for Web3 connections as synchronizing state and events for smart contracts.
   - Fully reactive contract data, including state, events, and transactions.
