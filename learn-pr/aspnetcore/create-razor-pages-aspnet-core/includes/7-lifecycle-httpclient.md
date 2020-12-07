@@ -101,7 +101,7 @@ The `BaseAddress` URI that the `HttpClient` instance will use for all requests t
 
 Now that you walked through how `ProductService` is made available to the app as a service at startup, let's walk through the lifecycle of its `CreateProduct` method.
 
-## Walk through the lifecycle of the `CreateProduct` method
+## Examine the lifecycle of the `CreateProduct` method
 
 1. The user posts the product data form in the *:::no-loc text="Create.cshtml":::* Razor Page.
 1. The Input Tag Helper uses the data annotation attributes specified in the `Product` model and produces HTML attributes needed for jQuery validation, executed on the client-side. The HTTP POST event is allowed to continue only if the data is valid. In many cases, validation errors would be detected on the client, and never submitted to the server.

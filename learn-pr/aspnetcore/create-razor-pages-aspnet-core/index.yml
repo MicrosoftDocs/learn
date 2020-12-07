@@ -19,7 +19,7 @@ abstract: |
   - Add server-side model validation using data annotations.
   - Add a reference to a Data Transfer Object (DTO).
   - Consume a RESTful service from your PageModel.
-  - Walk through the life cycle of an example HTTP request.
+  - Examine the life cycle of a sample HTTP request.
   - Deploy and test the web app.
 prerequisites: |
   - Experience writing C# at the beginner level
