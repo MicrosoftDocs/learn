@@ -67,6 +67,8 @@ To preview using **Visual Studio Code**, select on `index.html` and select **Ope
 
 The webpage opens in your default browser.
 
+:::image type="content" source="../media/chrome-applied-font-styles.png" alt-text="Screenshot of website with font styles applied":::
+
 Are the font styles what you expected to see? It's interesting how styles cascade from `body` to `h1`. We didn't define anything for `h1`, so it inherits styling from the `body`. However, `li` takes precedence over the `body` tag because you specifically defined a style for it.
 
 ## Add a light theme
@@ -103,8 +105,9 @@ In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I
 1. Select the **Styles** tab.
 2. Select the **Elements** tab.
 3. Roll over and select the HTML elements.
-4. Open the disclosure triangles.
-5. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
+4. Select the `<body>` element. Note the `light-theme` applied.
+5. Open the disclosure triangles.
+6. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
 ![Screenshot of website with light theme applied](../media/chrome-light-theme-in-dev-tools.png)
 
@@ -136,15 +139,15 @@ At the end of the CSS file, add the `dark-theme` selector and update the `light-
 }
 ```
 
-Next, in your CSS file, add the following after the `:root` selector, replacing the current `body` selector. The * selector is a universal selector that applies to all page elements (except where a more specific selector overrides it). Here, you use it to set the default `color` property for all page elements. For the `color` and `background` properties, you specify the variables defined in the light and dark theme selectors.
+Next, in your CSS file, add the following after the `:root` selector, replacing the current `body` selector. The * selector is a universal selector that applies to all page elements (except where a more specific element selector overrides it). Here, you use it to set the default `color` property for all page elements. For the `color` and `background` properties, you specify the variables defined in the light and dark theme selectors.
 
 ```css
 * {
   color: var(--fontColor);
+  font-family: helvetica;
 }
 
 body {
-    font-family: monospace;
     background: var(--bg);
 }
 ```
