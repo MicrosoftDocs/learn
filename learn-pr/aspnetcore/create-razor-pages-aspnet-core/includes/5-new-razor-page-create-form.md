@@ -2,7 +2,7 @@ In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* p
 
 ## Use the .NET CLI to create a new Razor Page
 
-The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
+The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor).
 
 1. Run the following command in the command shell:
 
