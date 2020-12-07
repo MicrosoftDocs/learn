@@ -21,13 +21,11 @@ The .NET CLI:
     * Locates the project file at the current directory.
     * Retrieves and installs any required project dependencies for this project.
     * Compiles the project code.
-    * Hosts the web app with ASP.NET Core's Kestrel web server.
+    * Hosts the web app with ASP.NET Core's Kestrel web server at both `http://localhost:5000` and `https://localhost:5001`.
 
-    The web app is hosted at both `http://localhost:5000` and `https://localhost:5001`. This module uses the secure URL beginning with `https`.
+    This module uses the secure localhost URL beginning with `https`. You can't view the app's pages in a browser, since it isn't yet hosted on a public endpoint. You'll host the app on a public endpoint in a following step.
 
-    You can't view the app's pages in a browser, since it isn't yet hosted on a public endpoint. You'll host the app on a public endpoint in a following step.
-
-    A variation of the following output displays to indicate your app is being hosted:
+    A variation of the following output displays to indicate your app is running. The app is listening for requests on ports 5000 and 5001.
 
     ```console
     Hosting environment: Development
@@ -35,8 +33,6 @@ The .NET CLI:
     Now listening on: https://localhost:5001
     Now listening on: http://localhost:5000
     ```
-
-    The preceding output indicates the app is running and listening on ports 5000 and 5001.
 
 1. Press <kbd>Ctrl+C</kbd> to stop the app.
 
