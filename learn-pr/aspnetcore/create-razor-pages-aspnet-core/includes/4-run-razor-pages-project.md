@@ -51,7 +51,7 @@ The preceding Azure CLI command provisions a public endpoint for this project. B
 A variation of the following output eventually displays to indicate the web UI is being deployed:
 
 ```console
-Starting zip deployment.  This operation can take a while to complete...
+Starting zip deployment. This operation can take a while to complete ...
 ```
 
 Once your project has been successfully hosted, a variation of the following output appears:

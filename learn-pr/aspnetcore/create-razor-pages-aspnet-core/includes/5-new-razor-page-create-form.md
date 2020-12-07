@@ -1,6 +1,6 @@
 In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* project using Razor Pages to separate the logic of the page from its presentation.
 
-## Use the .NET CLI to create a new Razor Page
+## Use the .NET CLI to create a page
 
 The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor).
 
@@ -21,7 +21,7 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 
     The preceding command:
 
-    * Creates a new Razor page named *:::no-loc text="Create.cshtml":::*.
+    * Creates a Razor page named *:::no-loc text="Create.cshtml":::*.
     * Creates the Razor page's *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::*.
     * Stores both new files in the *:::no-loc text="Pages/Products":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
 
@@ -38,24 +38,14 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 	}
 	```
 
-    The preceding Razor Page contains:
+    The preceding Razor Page contains reserved Razor keywords:
 
-    * Reserved Razor keywords:
-      * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
-      * The `@model` directive is Razor syntax specifying the type of the model made available to the Razor page. In this case, the `ContosoPets.Ui.Pages.Products.Create` `PageModel`-derived class. `ContosoPets.Ui.Pages.Products.CreateModel` was automatically defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated the new Razor page named *:::no-loc text="Create":::* was made.
-    * HTML: Such as an `<h1>` tag.
-    * C# code: The `@` character starts single-statement C# blocks. Multi-statement C# blocks can be created when using `@{}`. For example:
-
-    	```cshtml
-    	@{
-        	var pageTitle = "Home page";
-        	ViewData["Title"] = pageTitle;
-    	}
-    	```
+    * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
+    * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class. That class, `ContosoPets.Ui.Pages.Products.CreateModel`, is defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated when the new Razor page named *:::no-loc text="Create":::* was made.
 
 ## Render HTML and transition to C#
 
-The following markup is an example of an `@` symbol followed by C# code. The C# code is setting the `ViewData` collection's `Title` key value to `Create`. Razor syntax uses the `@` symbol to transition from HTML to C#. If the `@` symbol is followed by a Razor reserved keyword, it transitions into Razor-specific markup; otherwise, it transitions to C#. Razor evaluates the C# expressions and renders them in the HTML output.
+The following markup is an example of an `@` symbol followed by C# code. The code sets the `ViewData` collection's `Title` key value to `Create`. Razor syntax uses the `@` symbol to transition from HTML to C#. If the `@` symbol is followed by a Razor reserved keyword, it transitions into Razor-specific markup; otherwise, it transitions to C#. Razor evaluates the C# expressions and renders them in the HTML output.
 
 ```cshtml
 @{
@@ -63,11 +53,11 @@ The following markup is an example of an `@` symbol followed by C# code. The C# 
 }
 ```
 
-A Razor Page supports Razor syntax which HTML and C# to be combined. The C# code defines the dynamic rendering logic for the page on the server-side. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *:::no-loc text=".cshtml":::* Razor Page files is rendered by the server unchanged. In Razor Pages, HTML can be used as you're used to. At the same time, you can take advantage of powerful and time saving razor features as you learn to use them.
+A Razor page supports Razor syntax, which is HTML and C# combined. The C# code defines the dynamic rendering logic for the page on the server. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *:::no-loc text=".cshtml":::* Razor page files is rendered by the server unchanged. In Razor Pages, HTML can be used as you're used to. At the same time, you can take advantage of powerful and time-saving Razor features as you learn to use them.
 
 ## Add form markup to the Create Razor page
 
-Open the *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="Pages/Products":::* directory. Replace the contents with the following, and save the changes.
+Open the *:::no-loc text="Pages/Products/Create.cshtml":::* Razor page. Replace the contents with the following markup, and save the changes.
 
 ```cshtml
 @page
@@ -97,7 +87,7 @@ Open the *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-l
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *:::no-loc text="Create":::* Razor Page now contains HTML plus Razor syntax for a basic form. The *:::no-loc text="Create":::* page allows a user to create a new product entry with **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
+The *:::no-loc text="Create":::* Razor page now contains HTML plus Razor syntax for a basic form. The *:::no-loc text="Create":::* page allows a user to create a new product entry with **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
 
 ## Razor Tag Helpers
 
@@ -110,7 +100,13 @@ Tag Helpers save development time:
 
 Most built-in Tag Helpers extend standard HTML elements. Tag Helpers provide additional server-side attributes for the element, making the element more robust.
 
-There are three Tag Helpers on this page: Label, Input, and Validation Message. ASP.NET Core extends the standard HTML element by adding attributes.
+There are three Tag Helpers on this page:
+
+* Label
+* Input
+* Validation Message
+
+ASP.NET Core extends the standard HTML element by adding attributes.
 
 ### The *:::no-loc text="Label Tag Helper":::*
 
