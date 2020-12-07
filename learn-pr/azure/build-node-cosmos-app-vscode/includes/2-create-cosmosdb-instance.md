@@ -43,7 +43,7 @@ Azure Databases extension uses the concept of Request Units per second (RU/s) to
 
 ## Azure Databases extension APIs
 
-Azure Databases extension supports several programmatic APIs. These APIs conform as closely as possible to the APIs used by other common NoSQL databases. The intention is to provide an easy migration pathway toAzure Databases extension from these databases, without developers having to learn a whole new paradigm, or make significant changes to their applications. The APIs currently supported are:
+Azure Databases extension supports several programmatic APIs. These APIs conform as closely as possible to the APIs used by other common NoSQL databases. The intention is to provide an easy migration pathway to Azure Databases extension from these databases, without developers having to learn a whole new paradigm, or make significant changes to their applications. The APIs currently supported are:
 
 - MongoDB
 - Cassandra
