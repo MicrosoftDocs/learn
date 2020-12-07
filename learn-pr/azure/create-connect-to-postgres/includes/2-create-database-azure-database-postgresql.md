@@ -21,7 +21,7 @@ Full compute and storage details for the different pricing tiers are available i
 > [!NOTE]
 > Consider the Hyperscale deployment option for databases over 100GB, high-performance applications, and to scale across multiple regions.
 
-For our payment app scenario, basic tier is suitable while the app undergoes development. For a trial, either General Purpose or Memory Optimized would be suitable. When the app is ready to be released to a wider audience, Hyperscale will enable the app to scale across regions.
+For our payment app scenario, the Basic tier is suitable while the app undergoes development. For a trial, either the General Purpose or Memory Optimized tiers would be suitable. When the app is ready to be released to a wider audience, Hyperscale will enable the app to scale across regions.
 
 ## Scaling up compute or storage needs
 
