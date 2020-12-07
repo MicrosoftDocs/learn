@@ -9,9 +9,6 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 - Create a playbook to automate an action to respond to incidents.
 - Create a playbook from the Azure Sentinel repository on GitHub.
 
-> [!NOTE]
-> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)
-
 > [!NOTE] 
 > You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
