@@ -1,42 +1,49 @@
-The pipe `|` character is used to connect several cmdlets, where one cmdlet's output serve as the input for the next cmdlet to the right of the pipe. This connection of cmdlets means you are creating a much more powerful and complex statement than a single cmdlet could have accomplished. The connection is referred to as a _pipeline_, consisting of one or more pipes and cmdlets.
+The pipe character (`|`) is used to connect cmdlets. The output of the cmdlet on the left of the pipe serves as the input for the cmdlet on the right of the pipe. This connection of cmdlets allows you to create a statement that's more powerful and complex than a single cmdlet. The connection is called a _pipeline_. It consists of one or more pipes and cmdlets.
 
-You've been creating pipelines already, in previous units in this module. For example, when you asked for the fields and columns of a process you had to _pipe_ the `Get-Command` cmdlet with `Get-Member`. What you did was asking for details on a specific process. By _piping_ `Get-Member` to the result you were able to have a look at the resulting object and inspect it for its types, events, methods and more.
+You've already created some pipelines in this module. For example, to find the fields and columns of a process, you _piped_ the `Get-Command` cmdlet with `Get-Member`. In effect, you asked for details about a specific process. By piping `Get-Member` to the result, you inspected the resulting object's types, events, and methods.
 
-When you start constructing pipelines more and more, it's good to know about concepts that make the construction process easier, namely:
+As you construct pipelines, you'll use these concepts:
 
-- **Pipeline evaluation**. When a pipeline is being evaluated, it does so in a specific order. Learning how this process happen makes it easier to understand how to connect two or more cmdlets.
-- **Helper constructs**. As you construct more and more complex pipelines, you build longer and longer statements separated by the pipe character. Part of this connection process is being able to filter out the data you need. There are cmdlet helpers as well as operators that can make this _filtering_ task easier.
-- **Filtering and formatting principles**.  As you apply filtering functions and operators, it's good to know about some sound principles to ensure your constructed statement is written in an efficient way and that the end result is formatted in a readable and usable way.
+- **Pipeline evaluation**: A pipeline is evaluated in a specific order. By understanding the evaluation process, you can better understand how to connect two or more cmdlets.
+- **Helper constructs**: Your pipelines become more complex as you build longer statements separated by the pipe character. Part of this process is filtering for the data you need. Cmdlet helpers and operators can make the filtering task easier.
+- **Filtering and formatting principles**: As you apply filtering functions and operators, you'll want to follow filtering and formatting principles. Sound principles will help you write your statement efficiently so that the result is readable and usable.
 
 ## Pipeline input evaluation
 
-Most cmdlets lend themselves to be used in two different ways. Either you only call that specific cmdlet and assign values to the mandatory parameters. Or you use it as part of a pipeline, a longer expression where it operates on input that usually is the result of calling another cmdlet. PowerShell differs between these two types of usages by letting the author of the cmdlet specify a field **Accept pipeline input**. This field takes a boolean as a value and if set to true means it accepts pipeline data.
+Most cmdlets can be used in two ways. You can call only a specific cmdlet and assign values to the mandatory parameters. Or you can use the cmdlet in a pipeline, which is a long expression where the cmdlet operates on input that's usually the result of calling another cmdlet. 
 
-As part of your learning journey it's important to understand how to interpret what type of input parameters a cmdlet takes, in what order it's processed and how to provide data. It's important as it helps you understand how to combine suitable cmdlet statements in a useful way to solve your problems.
+PowerShell treats these two usages differently by letting the author of the cmdlet specify the field `Accept pipeline input?`. This field takes a Boolean as a value. If the value is true, then PowerShell accepts the pipeline data.
+
+As part of your learning journey, you need to understand:
+- The type of input parameters a cmdlet takes.
+- The order in which the parameters are processed.
+- How to provide data. 
+ 
+This understanding helps you combine suitable cmdlet statements in a useful way to solve your problems.
 
 ### Evaluation order in the pipeline
 
-It's not uncommon that a cmdlet takes more than parameter meant for the pipeline.
+A cmdlet often takes more than just the parameters meant for the pipeline.
 
-But how do you know which of the parameter inputs it will try to use first? Let's explain the evaluation by looking at a real example. By running the command, `help Get-Process -Full` you will get a detailed listing of the help section of the `Get-Process` command. The INPUTS and the PARAMETERS section reveal there are three possible inputs:
+How can you know which of the parameter inputs the system will try to use first? Consider a real example. The command `help Get-Process -Full` returns a detailed listing of the help section for the `Get-Process` command. The `INPUTS` section and the `PARAMETERS` section reveal three possible inputs:
 
-- `System.String[]`, this primitive type is connected to the parameter `-Name`.
-- `System.Int32`, the parameter for this one is called `-Id`.
-- `System.Diagnostics.Process[]`, this complex type is associated with a parameter called `-InputObject`.
+- **System.String[]**: This primitive type is connected to the parameter `-Name`.
+- **System.Int32**: The parameter for this input is called `-Id`.
+- **System.Diagnostics.Process[]**: This complex type is associated with a parameter called `-InputObject`.
 
-The PARAMETERS section had more than these three parameters above but it's only the parameters that had a field `Accept pipeline input?` set to true that is eligible for pipeline evaluation, as that is what you are evaluating here.
+The `PARAMETERS` section includes more than just these three parameters. But these parameters are the only ones whose `Accept pipeline input?` field is set to true. The parameters are eligible for pipeline evaluation because here you're evaluating only parameters that accept pipeline input.
 
-Now back to the evaluation process, how will it evaluate the input?
+Now back to the evaluation process. PowerShell evaluates the input:
 
-1. **By value (by type)**. The first thing PowerShell will do is try match it to a complex type, this is called _by value_, which in the above case means it will try to evaluate whether the input looks like a `System.Diagnostics.Process[]`. If that fails, it will go on to the next step.
+1. **By value (by type)**: PowerShell first tries to match the input to a complex type. That is, it tries to match _by value_. So in the preceding example, PowerShell evaluates whether the input looks like `System.Diagnostics.Process[]`. If that fails, PowerShell moves to the next step.
 
-2. **By property name**. The next step is trying to match it towards a simpler data type, which is either the `-Name` or `-Id` parameter. Looking at the PARAMETERS section for these two parameters you see the following listing:
+2. **By property name**: Next, PowerShell tries to match the input to a simpler data type, which is either the `-Name` parameter or the `-Id` parameter. In the `PARAMETERS` section for both parameters, you see the following listing:
 
    ```output
    Accept pipeline input?       true (ByPropertyName)
    ```
 
-   The above states that it accepts pipeline as input but it also has a `ByPropertyName` statement. Now this `ByPropertyName` statement means that it expects what's passed to it is an object with a property in it named `Name` or `Id` to match the `Get-Process` input parameter requirements, like so:  
+   This information tells you that the parameter accepts pipeline input, but it also has a `ByPropertyName` statement. The `ByPropertyName` statement means that the parameter expects to receive an object that contains a property named `Name` or `Id` to match the `Get-Process` input parameter requirements. So it expects an object like the following example.  
 
    ```output
    {
@@ -44,73 +51,75 @@ Now back to the evaluation process, how will it evaluate the input?
    }
    ```
 
-   How can this be tested using `Get-Process` and the pipe? You could call a cmdlet that returns an object with the needed shape or you could use a construct called `pscustomobject`. The `pscustomobject` allows you to create a custom PowerShell object. To use it, you would construct a custom object, then pipe it to `Get-Process` like the below PowerShell statement:
+   How can you test the evaluation process by using `Get-Process` and the pipe? You could call a cmdlet that returns an object that has the needed shape. Or you could use a construct called `pscustomobject`. The `pscustomobject` construct allows you to create a custom PowerShell object. To use it, you construct a custom object and then pipe it to `Get-Process`, as in the following PowerShell statement.
 
    ```powershell
    [pscustomobject]@{ Name='name of process' } | Get-Process
    ```
 
-   The above statement first creates a custom PowerShell object with a `Name` property and a value assigned to it. Then it goes onto piping it to the `Get-Process` cmdlet. The end result is your process being listed.
+   This statement first creates a custom PowerShell object that has a `Name` property and a value assigned to it. Then the statement pipes the object, statement, and value to the `Get-Process` cmdlet. The result is your process listing.
 
 ## Helper constructs
 
-You've seen so far how you can use a `Name` parameter to look for a specific process by its display name. You could also be using a helper cmdlet `Where-Object`. This cmdlet takes an operator and an expression that when put together processes a list of objects and returns a result where all records match the filtering statement. A typical usage of `Where-Object` can look like the below PowerShell:
+You've seen how to use a `Name` parameter to look for a specific process by its display name. You could also use the helper cmdlet `Where-Object`. This cmdlet takes an operator and an expression. Together, they process a list of objects and return a result where all records match the filtering statement. 
+
+Take a look at the following example that uses `Where-Object`.
 
 ```powershell
 Get-Process | Where-Object Name -eq name-of-my-process
 ```
 
-The reason for using the `Where-Object` is it's increased flexibility. It allows you to create queries where you might be looking at other properties than `Name` and also use different operators to help you better match your result.
+The `Where-Object` helper cmdlet increases your flexibility. Use it to create queries that look for properties other than `Name`. And use operators to help you better match your result.
 
-### Introducing operators
+### Operators
 
-Operators can be used in conjunction with the `Where-Object` cmdlet and there are quite a few of them. These operators are not tied to the cmdlet and can be used on the command line like so:
+You can use a large selection of operators with the `Where-Object` cmdlet. These operators aren't tied to the cmdlet. This example shows how you can use an operator at a command prompt:
 
 ```powershell
 'a string' -eq 'some other string'
 ```
 
-The above statement evaluates to false, where you to run it in the console.
+This statement evaluates to false when you to run it in the console.
 
-Let's list some operators you are likely to use:
+You'll likely use these common operators:
 
-- `-eq`, this operator checks whether something on the left of the operator is equal to something on the right of it.
-- `-gt`, the greater than operator checks whether a number is higher than the compared number.
-- `-lt`, the less than operator checks whether the number is less than a compared number.
-- `-Match`, this operator _matches_ a value towards a regular expression. An example usage of this operator could be looking for all process that starts with the letter `V`. You would write such a statement in the following way:
+- **-eq**: This operator checks whether something on its left is equal to something on its right.
+- **-gt**: The greater-than operator checks whether a number is higher than the compared number.
+- **-lt**: The less-than operator checks whether a number is less than a compared number.
+- **-Match**: This operator matches a value to a regular expression. For example, you could use this operator to look for all processes that start with the letter `V`:
 
    ```powershell
    Get-Process | Where-Object Name -Match "^V.*"
    ```
 
-- `-Contains`, checks if a collection contains a specific value.
+- **-Contains**: This operator checks whether a collection contains a specific value.
 
 ## Filtering left
 
-_Filtering left_ is a principle that means filtering down to the results you want to as early as possible in your pipeline statement. You can see the term _left_ equal to _early_, as you are executing a PowerShell statement from left to right. The idea is to make the statement as fast and efficient as possible by ensuring that the dataset you are operating on is as small as possible. Where this really comes in to play is when your commands are backed by larger data stores or your are bringing results back across the network.
+In a pipeline statement, _filtering left_ means filtering for the results you want as early as possible. You can think of the term _left_ as _early_ because a PowerShell statement runs from left to right. The idea is to make the statement fast and efficient by ensuring that the dataset you operate on is as small as possible. This principle really comes into play when your commands are backed by larger data stores or you're bringing results back across the network.
 
-Take the following statement:
+Consider the following statement:
 
 ```powershell
 Get-Process | Select-Object Name | Where-Object Name -eq name-of-process
 ```
 
-The above statement first retrieves all the processes on the machine and then ends up formatting the response so that only the `Name` property is listed. This does not follow the _filtering left_ principle as it operates on all the processes, attempts to format the response and then does the filtering at the end.
+This statement first retrieves all of the processes on the machine. It ends up formatting the response so that only the `Name` property is listed. This statement doesn't follow the _filtering left_ principle, because it operates on all of the processes, attempts to format the response, and then filters at the end.
 
-A better approach would be to do the filtering first and then the formatting like the below statement:
+It's better to filter first and then format, like in the following statement.
 
 ```powershell
 Get-Process | Where-Object Name -eq name-of-process | Select-Object Name
 ```
 
-Often, if a cmdlet offers filtering, that is more efficient than using `Where-Object` so an even more efficient version of the above statement would be the following invocation:
+Often, a cmdlet that offers filtering is more efficient than using `Where-Object`. Here's a more efficient version of the preceding statement:
 
 ```powershell
 Get-Process | -Name name-of-process | Select-Object Name
 ```
 
-In this version, the parameter `-Name` is doing the filtering for you.
+In this version, the parameter `-Name` does the filtering for you.
 
-## Format right
+## Formatting right
 
-If _filtering left_ meant to filter something as early as possible, _formatting right_ means the opposite. The idea is that any type of formatting should happen as late as possible in your statements. There are different cmdlets dedicated to the formatting of your output with `Format-Table` and `Format-List` being the most common ones. Most cmdlets defaults to formatting the output as table. What happens when you use `Format-List` is that properties that used to be columns are now grouped and each row in your resulting output now groups all its properties together.
+Whereas _filtering left_ means to filter something as early as possible, _formatting right_ means to _format_ something as _late_ as possible in your statements. The most common cmdlets that format your output are `Format-Table` and `Format-List`. By default, most cmdlets format output as a table. If your output displays properties in columns, the `Format-List` cmdlet reformats them as a list.

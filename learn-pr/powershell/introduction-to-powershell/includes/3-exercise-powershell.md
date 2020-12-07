@@ -1,16 +1,12 @@
-Here you will run a command to verify your PowerShell installation. It's a good starting point to know that everything is installed correctly.
+To make sure your system is set up to work in PowerShell, run a command to verify your installation.  
 
-## Verify installation
-
-To make sure you are correctly set up to work in PowerShell, running a command to verify your installation is a good idea.  
-
-1. Type `$PSVersionTable` and press `enter`:
+1. Type `$PSVersionTable` and then press Enter.
 
    ```powershell
    $PSVersionTable
    ```
 
-    Your output resembles the below text:
+    Your output resembles the following text:
 
    ```output
     Name                           Value
@@ -26,9 +22,11 @@ To make sure you are correctly set up to work in PowerShell, running a command t
     WSManStackVersion              3.0
    ```
 
-   The output above is formatted as a table and gives you various information on not only what version of PowerShell you are running but what platform you are on, what edition and more. If you want to know what version of PowerShell you are running, you can narrow it down by running a modified version of `$PSVersionTable`.
+   The output is formatted as a table. It provides information about not only your version of PowerShell but also your platform and edition. 
 
-1. Type `$PSVersionTable.PSVersion` and press `enter`:
+    For more information about your version of PowerShell, you can run a modified version of `$PSVersionTable`.
+
+1. Type `$PSVersionTable.PSVersion` and then press Enter.
 
    ```powershell
    $PSVersionTable.PSVersion
@@ -42,4 +40,6 @@ To make sure you are correctly set up to work in PowerShell, running a command t
     7      0      3  
     ```
 
-    The information above is narrowed down to give you more information on the version of PowerShell you are running. The learning here is that running `$PSVersionTable` results in an output looking like a table but is an actuality an object. You can therefore you can use a dot, `.` to access a specific property like `PSVersion`.
+    This output gives you more details about your version of PowerShell. 
+
+Notice that running `$PSVersionTable` results in output that looks like a table but is actually an object. So you can use a dot (`.`) to access a specific property like `PSVersion`.
