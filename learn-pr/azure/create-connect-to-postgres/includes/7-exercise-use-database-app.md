@@ -187,6 +187,10 @@ Now let's add to the application the code to retrieve user data from the databas
     private string connectionString = "Server=payment-server-demo.postgres.database.azure.com;Database=paymentapp;Port=5432;User Id=paymentadmin@payment-server-demo;Password={your_password};Ssl Mode=Require;";
     ```
 
+    > [!NOTE]
+    > We are including the connection string in the source code to make this exercise easy and understandable. Best practice, however, is to keep your connection string in a configuration file.
+
+
 7. After the comment `//TODO: Connect to the database`, replace the commented-out `//using ()` statement on line 22 with the following code.
 
     ```C#
@@ -283,7 +287,7 @@ Now let's add to the application the code to retrieve user data from the databas
     }
     ```
 
-    Later, if your program doesn't properly query the user data, come back to this file and replace the entire contents with the code block above, and save.
+    Later, if your program doesn't properly query the user data, come back to this file and replace the entire contents with the code block above, with your connection string and password, and save.
 
     Save the file, and close the **Code** editor.
 
@@ -305,7 +309,7 @@ The application can now retrieve the course data. Now, update the app to display
     code Index.cshtml
     ```
 
-    This file contains the display logic for the webpage page. Our data is delivered by the `UsersModel` - It will return a list, containing the user information.
+    This file contains the display logic for the webpage. Our data is delivered by the `UsersModel` - It will return a list, containing the user information.
 
     Currently, the page just displays the table headings. The table body (`<tbody>`) is empty.
 
