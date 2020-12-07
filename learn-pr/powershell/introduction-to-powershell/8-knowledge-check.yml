@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.powershell.intro-to-powershell.8-knowledge-check
+uid: learn.automate-with-powershell.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Answer multiple-choice questions to check your knowledge.
+  description: Four multiple-choice questions
   ms.date: 11/19/2020
   author: softchris
   ms.author: chnoring
@@ -13,44 +13,40 @@ durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
+  title: Check your knowledge
   questions:
-    - content: To use the help system to find out more about a command, which command should you run?
+    - content: What's the best way to use the help system to find out more about a command?
       choices:
-        - content: "`{your command} --help`"
-          explanation: Incorrect.
+        - content: Run `{your command} --help`
           isCorrect: false
-        - content: "`Get-Help {your command}`"
-          explanation: Incorrect.
+        - content: Run `Get-Help {your command}`
           isCorrect: false
-        - content: "`help {your command}`"
-          explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line if you want.
+        - content: Run `help {your command}`
+          explanation: By using `help` you pipe `Get-Help` into a function and gain the ability to watch the help page, row by row and line by line if you wish.
           isCorrect: true
-        - content: "`man {your command}`"
-          explanation: Incorrect.
+        - content: man {your command}
           isCorrect: false
-    - content: Which statement is the best choice to _filter left_?
+    - content: What statement is the best to use when _filtering left_?
       choices:
-        - content: "`Get-Process | Select-Object Name | Where-Object Name -eq name-of-process`"
+        - content: Run `Get-Process | Select-Object Name | Where-Object Name -eq name-of-process`
           isCorrect: false
-          explanation: In this statement, the filtering happens last (that is, on the _right_ side of the statement). Filtering last is inefficient and slow, especially if the command is sent over the network and the data store is large.
-        - content: "`Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`"
-          explanation: Almost. In this statement, filtering happens early (that is, on the right side of the statement). But the statement would be faster if it used the built-in filter.
+          explanation: The filtering happens, last, i.e _right_. Filtering last is inefficient and slow, especially if the command is sent over the network and the data store is big.
+        - content: Run `Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`
+          explanation: The filtering happens early, i.e _left_, but it would be even faster if the built-in filter was used.
           isCorrect: false
-        - content: "`Get-Process -Name name-of-process | Select-Object Name`"
+        - content: Run `Get-Process -Name name-of-process | Select-Object Name`.
           isCorrect: true
-          explanation: Correct. This solution is the best choice. The statement filters early and uses a built-in filter.
-    - content: Which statement will most efficiently find the returned type from a command?
+          explanation: This is the best solution, early filtering with a built-in filter.
+    - content: How would you easiest find the returned type from a command?
       choices:
-        - content: "`{command} --type`"
+        - content: Run `{command} --type`.
           isCorrect: false
-          explanation: Incorrect.
-        - content: "`{command} | Get-Member`"
+        - content: Run `{command} | Get-Member`.
           isCorrect: true
-          explanation: Correct. The cmdlet `Get-Member` lists the returned type at the top of the response. 
-        - content: "`{command} | Get-Type`"
+          explanation: The cmdlet `Get-Member` lists the returned type at the top of the response. 
+        - content: Run `{command} | Get-Type`.
           isCorrect: false
-          explanation: Incorrect.
-        - content: "`{command} Get-Member`"
+        - content: Run `{command} Get-Member`.
           isCorrect: false
-          explanation: Incorrect. The command needs to be piped with `Get-Member`.
+          explanation: The command needs to be _piped_ with `Get-Member`.
 

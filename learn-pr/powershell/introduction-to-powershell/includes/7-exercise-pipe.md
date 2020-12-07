@@ -1,16 +1,16 @@
-Here you'll run commands to construct powerful statements that pipe cmdlets together. You'll run helper cmdlets and formatting cmdlets to filter for the data you need and to ensure the result is usable.
+Here you will run commands to construct more powerful statements where cmdlets are _piped_ together. You will run helper cmdlets and formatting cmdlets to ensure you filter out the data you need and that the end result is something that looks usable.
 
-## Discover the most-used processes on your machine
+## Discover the most used processes on your machine
 
-To manage your machine, you sometimes need to discover what processes run on it and how much memory and CPU they consume. This information tells you what the machine spends its resources on. You can use this information to decide whether to introduce new processes on your machine, to leave the machine as it is, or to free up resources by closing resource-intensive processes. The more you know about the processes that run on your machine, the better.
+Part of managing your machine can be to discover what processes run on it and how much memory and CPU they consume. Knowing that helps you realize what the machine spends its resources on. You can use this information to make decisions like whether you want to introduce new processes on your machine, to leave it be, or if you want to free up resources by closing down costly processes. The more you know what goes on in your machine the better.
 
-To begin, run the command `Get-Process`, and pipe in the cmdlets `Where-Object` and `Sort-Object`.
+Run the command `Get-Process`, using the cmdlets `Where-Object` and `Sort-Object` piped in:
 
 ```powershell
 Get-Process | Where-Object CPU -gt 1000 | Sort-Object CPU -Descending | SelectObject -First 3
 ```
 
-The exact output you see depends on your machine, but you should see the first three processes whose CPU value is higher than a 1,000. These processes are sorted in a descending order, with the highest CPU value on top. Your output will look similar to the following example.
+The resulting output differs per machine, but should present the three first processes with a CPU value higher than a 1000, sorted in a descending order. The highest CPU value is presented on top and then the next highest and so on. Your output will look similar to this:
 
 ```output
  NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
@@ -22,17 +22,15 @@ The exact output you see depends on your machine, but you should see the first t
 
 ## Compare formatting approaches
 
-Different output formats make sense for different scenarios. Depending on the type of data you're looking for, a table might make more sense than a list, for example. 
+Different formats like a table formatting or list formatting make different sense depending on what type of data you look at. Some cmdlets use a certain type of formatting by default. You can override the _default_ formatting by using a formatting cmdlet to suit your needs.
 
-Some cmdlets use a certain type of formatting by default. You can override the default formatting by using a formatting cmdlet.
-
-1. Run the `Get-Member` command.
+1. Run the following command `Get-Member`:
 
    ```powershell
    "a string" | Get-Member
    ```
 
-   The output is a table that lists all of the members. Here are the first few lines of the output:
+   The output shows as a table and lists all the members. The first few lines of the output look like so:
 
    ```output
     Name                 MemberType            Definition
@@ -41,15 +39,15 @@ Some cmdlets use a certain type of formatting by default. You can override the d
     CompareTo            Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparable.CompareTo(…
    ```
 
-   Next, you override the default formatting by using the `Format-List` cmdlet.
+   Next up, let's override the default formatter by using the `Format-List` cmdlet.
 
-1. Run the `Format-List` command as you see in the following example.
+1. Run the command `Format-List` like so instead:
 
    ```powershell
    "a string" | Get-Member | Format-List
    ```
 
-   The resulting output is a little different from the earlier output. The first few lines of the output response now appear like a list.
+   The resulting output would now show a little differently. The first few lines of the output response now show like a list instead:
 
    ```output
     TypeName   : System.String
