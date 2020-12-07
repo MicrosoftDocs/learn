@@ -1,28 +1,45 @@
 ## Deploy a Key Vault
 
-Create a Key Vault and add the VM password as a secure secret. To do so:
+> [!NOTE]
+> Due to limitations with the sandbox, here you create an Azure Key Vault from the Azure portal. Normally, you would use the `New-AzKeyVault` cmdlet to create a Key Vault from Azure PowerShell.
 
-1. Start a PowerShell session by typing `pwsh` in a terminal.
+Create a Key Vault and allow deploy time access. To do so:
 
-1. Create a PowerShell variable that holds the Key Vault name:
+Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-   ```powershell
-   $KVNAME="tailwind-secrets" + (Get-Random -Count 1)
-   ```
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-   Key Vault names must be unique. The call to `Get-Random` part ensures that the Key Vault name ends in a random series of numbers.
+1. In the search box, enter **Key Vault**.
 
-1. Run the command `New-AzKeyVault`:
+1. Select **Key Vault** from the list.
 
-    ```powershell
-    New-AzKeyVault `
-      -VaultName $KVNAME `
-      -EnabledForTemplateDeployment
-    ```
+1. Select the **Create** button to start configuring the Key Vault.
 
-    The `-EnabledForTemplateDeployment` argument permits the ARM template to retrieve secrets from the key vault.
+1. In the creation pane, provide the name `KeyVault1` for the Key Vault.
 
-1 Run the `ConvertTo-SecureString` command and assign it to the `secretSecureString` PowerShell variable:
+1. Select **Review and Create**.
+
+1. Select **Create**. This should take a minute or so. Once the resource has been created, go to the resource blade.
+
+1. To allow access to Key Vault during deployment, ensure you are in the detail page for the resource, then select **Access Policies** from the left menu. Check the option **Azure Resource Manager for template deployment** and select **Save**.
+
+## Create a secret in the Key Vault
+
+At this point, you can choose to create a secret from either the Azure Portal or the command line. Choose one of two options.
+
+### Create a secret via the Azure Portal
+
+1. From the resource blade of the Key Vault resource, select **Secrets** from the left menu.
+
+1. Select **+Generate/Import**.
+
+1. Create a secret called *vmPassword* by entering *vmPassword* in the **Name** field and "insecurepassword123!" in the **Value** field. Leave the other fields and select **Create**.
+
+### Create a secret via the terminal
+
+1. Run `pwsh` to start a PowerShell shell in a terminal.
+
+1. Run the `ConvertTo-SecureString` command and assign it to the `secretSecureString` PowerShell variable:
 
    ```powershell
    $secretSecureString = ConvertTo-SecureString 'insecurepassword123!' -AsPlainText -Force
@@ -31,7 +48,7 @@ Create a Key Vault and add the VM password as a secure secret. To do so:
 1. Run the following `Set-AzKeyVaultSecret` command to create a secret in the key vault named *vmPassword* with the value "insecurepassword123!":
 
    ```powershell
-   $secret = Set-AzKeyVaultSecret -VaultName $KVNAME -Name vmPassword -SecretValue $secretSecureString
+   $secret = Set-AzKeyVaultSecret -VaultName 'KeyVault1' -Name vmPassword -SecretValue $secretSecureString
    ```
 
 ## Create the parameter file
@@ -43,7 +60,7 @@ Recall that a parameter file is an alternative way to pass parameters to your AR
 1. Run the following `Get-AzKeyVault` command to print your key vault ID:
 
     ```powershell
-    Get-AzKeyVault -VaultName $KVNAME | Select-Object Id
+    Get-AzKeyVault -VaultName 'KeyVault1' | Select-Object Id
     ```
 
     The output resembles this:
@@ -117,7 +134,7 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
    ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
    ```
   
-1. Run the SSH command from the previous step:
+1. Run the SSH command from the previous step, that looks similar to:
 
    ```bash
    ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
