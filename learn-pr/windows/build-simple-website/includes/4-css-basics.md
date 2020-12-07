@@ -152,6 +152,8 @@ body {
 }
 ```
 
+Also, remove the `#msg` selector in your CSS, so that we can apply the same font to all elements.
+
 To view the dark theme, manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
 
 ![Screenshot of website with dark theme applied](../media/chrome-dark-theme.png)
