@@ -1,5 +1,3 @@
-In this module, you learned about Azure Database for PostgreSQL. You also learned about Hyperscale, and other server deployment options.
-
 In this module, you've seen what the Azure Database for PostgreSQL offering looks like. You created an Azure Database for PostgreSQL server using the Azure portal and adjusted the firewall. Finally, you connected to the Azure Database for PostgreSQL server using psql in Azure Cloud Shell and queried the database.
 
 ## Clean up
@@ -10,9 +8,9 @@ When you're working in your own subscription, it's a good idea at the end of a p
 
 Now that you have reviewed this module, you should be able to:
 
-* Create an Azure Database for PostgreSQL instance using the CLI
-* Query the Azure Database for PostgreSQL instance using pgsql
-* Use a Django app to connect to the PostgreSQL database
+* Create an Azure Database for PostgreSQL instance using the Azure portal
+* Develop and query the database in the Azure Cloud Shell using pgsql
+* Query the PostgreSQL database from an ASP.NET app
 
 ## Use these resources to discover more
 

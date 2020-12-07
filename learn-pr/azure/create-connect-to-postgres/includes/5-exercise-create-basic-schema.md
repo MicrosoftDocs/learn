@@ -3,7 +3,7 @@ We need to set up our database and connect to it from an app. In this exercise w
 * Configure the firewall so we can connect to the database service
 * Connect to the database service using Azure Cloud Shell
 * Create a database called `paymentapp`
-* Create a users table and load the names and age of two users
+* Create a `payment_users` table and load the names and age of two users
 * Run an update query to update a users age
 
 ## Configure a server-level firewall rule
@@ -26,26 +26,31 @@ Azure has an automatic firewall for our server - preventing all external parties
 
 ## Use psql to connect in Azure Cloud Shell
 
-We'll now use the psql command-line utility to connect to the Azure Database for PostgreSQL server. To start with, we'll save the name of the database server in the Cloud Shell.
+We’ll now use the psql command-line utility to connect to the Azure Database for PostgreSQL server. To start with, we'll save the name of the database server in the Cloud Shell on the right of your screen.
 
-Copy the code below, and replace `{server-name}` with the server name you chose in exercise 3.
+To run the code in this article in Azure Cloud Shell:
+
+1. Start Cloud Shell.
+1. Select the Copy button on the code block below to copy the code
 
     ```bash
     SERVERNAME={server-name}
     ```
 
-To run the code in this article in Azure Cloud Shell:
+1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
+1. Replace `{server-name}` with the server name you chose in Exercise 3.
+1. Select Enter to run the code and set your server name.
 
-1. Start Cloud Shell.
-1. Select the Copy button on the code block to copy the code.
+1. Select the Copy button on the code block to copy the connection command for our Azure Database for PostgreSQL instance.
 
     ```psql
     psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
     ```
 
-1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or by selecting Cmd+Shift+V on macOS.
-1. Select Enter to run the code to connect to your Azure Database for PostgreSQL database.
-1. Type in your password and select enter.
+1. Type in your password and select enter to connect.
+
+    > [!NOTE]
+    > If you get stuck, you can disconnect from the database connection using `\q`. You can then reconnect using the connection command above. If you're still stuck, try hitting the Escape key then Enter, or alternatively `;` then Enter.
 
 ## Create the paymentapp database
 
@@ -74,13 +79,13 @@ First, create a table and load it with some account data.
 
 ### Create the users table
 
-8. In the Cloud Shell window, run the following query to create a table called `users`:
+8. In the Cloud Shell window, run the following query to create a table called `payment_users`:
 
     ```sql
-    CREATE TABLE users (
-    	id serial PRIMARY KEY,
-    	name VARCHAR(50),
-    	age INTEGER
+    CREATE OR REPLACE TABLE payment_users (
+    	user_id serial PRIMARY KEY,
+    	user_name VARCHAR(50),
+    	age_in_years INTEGER
     );
     ```
 
@@ -96,11 +101,11 @@ The table is storing an id, name, and age.
 
 Now that you have a table, insert some data into it.
 
-10. In the Cloud Shell  window, run the following query to insert some rows of data.
+10. In the Cloud Shell  window, run the following query to insert a couple rows of data.
 
     ```sql
-    INSERT INTO users (id, name, age) VALUES (1, 'John', 45);
-    INSERT INTO users (id, name, age) VALUES (2, 'Lauren', 32);
+    INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (1, 'John', 45);
+    INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (2, 'Lauren', 32);
     ```
 
 You have now two rows of sample data into the account table you created earlier.
@@ -110,19 +115,19 @@ You have now two rows of sample data into the account table you created earlier.
 11. Execute the following query to retrieve information from the account database table.
 
     ```sql
-    SELECT * FROM users;
+    SELECT * FROM payment_users;
     ```
 
 12. You can also update the data in the table.
 
     ```sql
-    UPDATE users SET age = 31 WHERE id = 2;
+    UPDATE payment_users SET age_in_years = 31 WHERE user_id = 2;
     ```
 
 13. You can see the updated values when you retrieve the data.
 
     ```sql
-    SELECT * FROM users;
+    SELECT * FROM payment_users;
     ```
 
-Well done. Now you can create a PostgreSQL database in Azure Database for PostgreSQL, create tables and query data.
+Well done. Now you can create a PostgreSQL database in Azure Database for PostgreSQL, create tables, and query data.
