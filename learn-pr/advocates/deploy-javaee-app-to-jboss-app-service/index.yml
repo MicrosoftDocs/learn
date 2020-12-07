@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.deploy-javaee-app-to-appservice
+metadata:
+  title: Deploy Java EE (Jakarta EE) app to Azure
+  description: You'll learn how to create a Java web application and deploy it to Azure App Services.
+  ms.date: 11/25/2020
+  author: yoshioterada
+  ms.author: yoterada
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Java EE (Jakarta EE) app to Azure
+summary: In this module, you'll look at practices to create and deploy a Java Web Application on Azure App Service.
+abstract: |
+  After completing this module, you can:
+  - Create a PrimeFaces Java Web Application
+  - Configure your Java Project to deploy to Azure App Service
+  - Deploy your Java Web Application to Azure App Service
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+prerequisites: |
+  - Your Own Azure Subscription
+  - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
+  - [JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) and [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer
+units:
+  - learn.azure.deploy-javaee-app-to-appservice.1-introduction
+  - learn.azure.deploy-javaee-app-to-appservice.2-javaee-on-jboss
+  - learn.azure.deploy-javaee-app-to-appservice.3-azure-database-mysql
+  - learn.azure.deploy-javaee-app-to-appservice.4-exercise-deploy-javaee-app-to-app-service
+  - learn.azure.deploy-javaee-app-to-appservice.5-knowledge-check
+  - learn.azure.deploy-javaee-app-to-appservice.6-summary
+
+badge:
+  uid: learn.azure.deploy-javaee-app-to-appservice.badge

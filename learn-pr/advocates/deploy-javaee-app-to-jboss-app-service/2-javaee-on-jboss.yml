@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-javaee-app-to-appservice.2-javaee-on-jboss
+title: Java EE (Jakarta EE) App on JBoss EAP
+metadata:
+  title: Java EE (Jakarta EE) App on JBoss EAP
+  description: Get an overview of a typical Java EE (Jakarta EE) App and JBoss EAP.
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 11/25/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-javaee-on-jboss.md)]

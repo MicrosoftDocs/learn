@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-javaee-app-to-appservice.3-azure-database-mysql
+title: What is Azure Database for MySQL
+metadata:
+  title: What is Azure Database for MySQL
+  description: Get an overview and operations for Azure Database for MySQL.
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 11/25/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-azure-database-mysql.md)]

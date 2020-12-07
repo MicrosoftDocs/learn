@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-javaee-app-to-appservice.4-exercise-deploy-javaee-app-to-app-service
+title: Exercise - Deploy Java EE (Jakarta EE) App to JBoss EAP on Azure App Service
+metadata:
+  title: Exercise - Deploy Java EE (Jakarta EE) App to JBoss EAP on Azure App Service
+  description: Deploy your Java EE (Jakarta EE) Application to JBoss EAP on Azure App Service.
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 11/25/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-deploy-javaee-app-to-app-service.md)]
