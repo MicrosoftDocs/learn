@@ -64,7 +64,6 @@ In your CSS file, add a selector for the button. To make the button colors diffe
 
 ```css
 .btn {
-  font-family: helvetica;
   color: var(--btnFontColor);
   background-color: var(--btnBg);
 }
@@ -81,7 +80,6 @@ Then, add some rules for the size, shape, appearance, and placement of the butto
   width: 50px;
   border-radius: 50%;
   border: none;
-  font-family: helvetica;
   color: var(--btnFontColor);
   background-color: var(--btnBg);
 }
