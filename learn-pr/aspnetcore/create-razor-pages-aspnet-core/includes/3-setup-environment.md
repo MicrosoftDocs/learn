@@ -13,8 +13,8 @@ The preceding command:
 * Installs a specific version of the .NET SDK in the Cloud Shell environment.
 * Clones the ASP.NET Core starter code from a GitHub repository.
 * Builds the ASP.NET Core starter code.
-* Provisions an Azure App Service instance for the web API and deploys the web API's code to it.
-* Provisions an App Service instance for the Razor Pages app.
+* Provisions an Azure App Service instance and deploys the web API to it.
+* Provisions a separate App Service instance for the Razor Pages app.
 * Displays the URL for the web API hosted in App Service.
 * Sets environment variables that are required for this module.
 * Launches the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) to view the starter code.
