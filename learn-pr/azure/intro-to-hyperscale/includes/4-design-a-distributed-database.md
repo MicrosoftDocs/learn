@@ -20,7 +20,7 @@ There are, broadly, two kinds of applications that work well on Hyperscale (Citu
 
 Multi-tenant is the most common architecture used in SaaS applications, where multiple customers (tenants) share application resources.
 
-:::image type="content" source="../media/4a-multitenant.png" alt-text="Multitenant architecture.":::
+:::image type="content" source="../media/4a-multitenant.jpeg" alt-text="Multitenant architecture.":::
 
 Essentially, multi-tenant means that multiple customers share application resources with other **users, accounts, companies, or organizations**, which can provide massive cost savings. Multi-Tenant applications are inherently relational, with a natural dimension on which to distribute data across nodes: shard by tenant_id.
 
