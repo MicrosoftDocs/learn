@@ -23,14 +23,7 @@ Imagine that you want to ensure that a resource, say a storage account, has been
 
 You might start by inspecting the current state of your deployment by running Azure PowerShell or Azure CLI commands to check for the existence of the storage account. You might also see whether there's an ARM construct that allows you to do the same check.
 
-A more elegant method you can use relies on how ARM works by default. Two constructs that can accomplish this are _incremental mode_ and an ARM construct called _dependsOn_. These contructs provide a two-step solution:
-
-- **Take advantage of incremental mode**
-
-    By understanding how ARM works when in _incremental mode_, you are safe placing your storage account definition in the resources list knowing that it will either deploy it or leave it be, if it already exists.
-- **Use the _dependsOn_ construct**
-
-    For the next part, the _dependsOn_ construct makes resources wait until the pointed out resource has finished deploying.
+There's such a construct in ARM, _dependsOn_. Using the _dependsOn_ construct makes resources wait until the pointed out resource has finished deploying.
 
 ### What's the dependsOn construct
 

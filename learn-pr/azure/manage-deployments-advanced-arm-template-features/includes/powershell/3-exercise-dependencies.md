@@ -1,13 +1,13 @@
 ## Prerequisites
 
-Before installing the required PowerShell module, make sure you have PowerShell Core (6.x or 7.x)
+Before installing the required PowerShell module, make sure you have PowerShell Core (6 or 7)
 
-- **Upgrade to/Install latest PowerShell**. If you have Windows PowerShell 5.x or earlier or PowerShell Core 6.2.3 or earlier, [install the latest version of PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.4.0&azure-portal=true) You can't install the required module on Windows PowerShell 5.x or earlier.
-
-- **Install the Az Module**. To use *what-if* in PowerShell, you must have version **4.2 or later of the Az module**.
+- **Upgrade to/Install latest PowerShell**. If you have Windows PowerShell 5 or earlier or versions of PowerShell Core 6, [install the latest version of PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.4.0&azure-portal=true)
 
    > [!NOTE]
-   > The Az module is a PowerShell module dedicated to managing cloud resources on Azure. It's needed for the upcoming exercises in this module.
+   > You can't install the required module on Windows PowerShell 5.x or earlier.
+
+- **Install the Az Module**. The Az module is a PowerShell module dedicated to managing cloud resources on Azure. It's needed for the upcoming exercises in this module.
 
 ## Verify installation
 
@@ -140,13 +140,13 @@ Here, you download an ARM template from a GitHub repository that we provide for 
 
     ```powershell
     New-AzResourceGroupDeployment `
-    -TemplateFile "./azuredeploy.json" `
-    -adminUsername "azureuser" `
-    -vmName "vm1" `
-    -adminPasswordOrKey $secure
+      -TemplateFile "./azuredeploy.json" `
+      -adminUsername "azureuser" `
+      -vmName "vm1" `
+      -adminPasswordOrKey $secure
     ```
 
-    The command can take a few minutes to run. While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json?azure-portal=true) from a separate browser tab if you'd like.
+    The command can take a few minutes to run. While the command runs, you can [examine the ARM template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json?azure-portal=true) from a separate browser tab if you'd like.
 
     Note the resource dependencies by searching for the `dependsOn` key. For example, the virtual machine resource depends on the network interface:
 
@@ -163,23 +163,11 @@ Here, you download an ARM template from a GitHub repository that we provide for 
 ## Verify deployment
 
 Verify that the VM is provisioned and is connectable over SSH. To do so:
-
-1. Run the following command PowerShell query:
+  
+1. Run the `Invoke-Expression` command to connect to the VM via SSH:
 
    ```powershell
-   invoke-expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
-   ```
-
-   Your output is similar to:
-
-   ```output
-   ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
-   ```
-  
-1. Run the SSH command from the previous step:
-
-   ```bash
-   ssh azureuser@simplelinuxvm-a33zb3sc332ue.westus.cloudapp.azure.com
+   Invoke-Expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
    ```
 
    When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.

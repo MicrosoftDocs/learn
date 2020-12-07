@@ -70,7 +70,7 @@ Because the condition provisions the storage account only when `environment` equ
 1. Create a PowerShell variable that holds the storage account name.
 
     ```PowerShell
-    $STORAGE_ACCT_NAME="tailwindsa"+ (Get-Random -COUNT 1))
+    $STORAGE_ACCT_NAME="tailwindsa"+ (Get-Random -COUNT 1 -Maximum 9999999 ))
     ```
 
     Storage account names must be unique. The `Get-Random` part ensures that the storage account name ends in a random series of numbers.
@@ -79,9 +79,9 @@ Because the condition provisions the storage account only when `environment` equ
 
     ```powershell
     New-AzResourceGroupDeployment `
-    -TemplateFile "./condition.json" `
-    -storageAccountName $STORAGE_ACCT_NAME
-    -environment dev
+      -TemplateFile "./condition.json" `
+      -storageAccountName $STORAGE_ACCT_NAME `
+      -environment dev
     ```
 
 ## Verify the deployment to Dev
@@ -116,11 +116,11 @@ To trigger this condition, you set the `environment` template parameter to "prod
 
 Run the following `New-AzResourceGroupDeployment` command to deploy the template to the _Production_ environment:
 
-```azurecli
+```powershell
 New-AzResourceGroupDeployment `
-    -TemplateFile "./condition.json" `
-    -storageAccountName $STORAGE_ACCT_NAME
-    -environment production
+  -TemplateFile "./condition.json" `
+  -storageAccountName $STORAGE_ACCT_NAME `
+  -environment production
 ```
 
 ## Verify the deployment to Production

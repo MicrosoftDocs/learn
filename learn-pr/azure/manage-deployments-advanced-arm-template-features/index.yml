@@ -33,6 +33,7 @@ prerequisites: |
   - Experience building and running basic ARM templates.
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
+  - Ensure you've installed [OpenSSH client](https://docs.microsoft.com/windows-server/administration/openssh/openssh_install_firstuse).
 units:
   - learn.manage-deployments-advanced-arm-template-features.1-introduction
   - learn.manage-deployments-advanced-arm-template-features.2-dependencies

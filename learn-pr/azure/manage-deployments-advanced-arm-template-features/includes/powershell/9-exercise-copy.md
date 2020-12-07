@@ -14,7 +14,7 @@ Here, you create an ARM template that defines a storage account resource. The te
           "type": "int",
           "defaultValue": 1,
           "metadata": {
-            "description": "the number of storage accounts being deployed"
+            "description": "the number of storage accounts copies being deployed"
           }
         },
         "storageAccountName": {
@@ -80,7 +80,7 @@ Here, you deploy the template as you did previously. The deployment step provisi
 
 ## Verify the deployment
 
-Although the output shows that two storage accounts were created, here you run the `az deployment group show` command to focus on the output resources.
+Although the output shows that two storage accounts were created, here you run the `Get-AzResource` command to focus on the output resources.
 
 1. Run the following `Get-AzResource` command to ensure the resources were deployed:
 
