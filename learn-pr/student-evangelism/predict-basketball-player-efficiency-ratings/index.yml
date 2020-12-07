@@ -16,6 +16,10 @@ abstract:  |
   - Cleanse and manipulate data that requires critical analysis.
   - Use machine learning to cleanse and complete data. 
   - Prepare data to be used for multiple customer-facing purposes.
+  
+  > [!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
 prerequisites: | 
   - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
   - A local Python environment, such as the one used in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
