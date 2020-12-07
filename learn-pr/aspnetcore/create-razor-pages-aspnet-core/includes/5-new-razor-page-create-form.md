@@ -25,7 +25,7 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
     * Creates the Razor page's *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::*.
     * Stores both new files in the *:::no-loc text="Pages/Products":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
 
-## Examine the structure of a basic Razor Page
+## Examine the structure of a basic Razor page
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
@@ -55,7 +55,7 @@ The following markup is an example of an `@` symbol followed by C# code. The cod
 
 A Razor page supports Razor syntax, which is HTML and C# combined. The C# code defines the dynamic rendering logic for the page on the server. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *:::no-loc text=".cshtml":::* Razor page files is rendered by the server unchanged. In Razor Pages, HTML can be used as you're used to. At the same time, you can take advantage of powerful and time-saving Razor features as you learn to use them.
 
-## Add form markup to the Create Razor page
+## Add form markup to the *Create* Razor page
 
 Open the *:::no-loc text="Pages/Products/Create.cshtml":::* Razor page. Replace the contents with the following markup, and save the changes.
 
