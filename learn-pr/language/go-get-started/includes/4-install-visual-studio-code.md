@@ -20,23 +20,29 @@ Install Visual Studio Code on your workstation based on your operating system.
 ### Install Visual Studio Code on Linux
 
 **Step 1: Download the Visual Studio Code installer**
+
 On the Visual Studio Code page, select the **Linux** box, and then select the **.deb** or **.rpm** option. Your choice depends on whether your Linux distribution uses Debian (DEB)-based or Red Hat Package Manager (RPM)-based package managers. In a few seconds, you’ll be prompted to save the file locally.
 
 **Step 2: Start the Visual Studio Code installer**
+
 Locate and open the file you’ve just downloaded. Follow the instructions to install the app on your workstation.
 
 **Step 3: Start Visual Studio Code**
+
 When the installation is complete, open Visual Studio Code to confirm that it’s working.
 
 ### Install Visual Studio Code on macOS
 
 **Step 1: Download Visual Studio Code**
+
 On the Visual Studio Code page, select the **Mac** box to download the app. In a few seconds, you’ll be prompted to save the file locally.
 
 **Step 2: Move the app to the Applications folder**
+
 Locate the Visual Studio Code file you’ve just downloaded, and then drag it to the *Applications* folder in Finder.
 
 **Step 3: Start the app from the Applications folder**
+
 From the *Applications* folder, double-click the Visual Studio Code icon to start the app.
 
 > [!NOTE]
@@ -51,12 +57,15 @@ Alternatively, you can install Visual Studio Code by using a package manager suc
 ### Install Visual Studio Code on Windows
 
 **Step 1: Download the Visual Studio Code installer**
+
 On the Visual Studio Code page, select the **Windows** box. In a few seconds, you’ll be prompted to save the file locally.
 
 **Step 2: Start the Visual Studio Code installer**
+
 Locate and open the file you’ve just downloaded. Follow the instructions to install the app on your workstation.
 
 **Step 3: Start Visual Studio Code**
+
 When the installation is complete, open Visual Studio Code to confirm that it’s working.
 
 ## Install the Go extension for Visual Studio Code
