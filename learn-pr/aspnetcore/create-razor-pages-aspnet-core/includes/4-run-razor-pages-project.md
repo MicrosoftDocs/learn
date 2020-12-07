@@ -16,8 +16,6 @@ The .NET CLI:
     dotnet run
     ```
 
-    [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-
     The preceding command:
 
     * Locates the project file at the current directory.

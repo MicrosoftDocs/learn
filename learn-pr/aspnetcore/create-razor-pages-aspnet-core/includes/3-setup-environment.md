@@ -8,6 +8,8 @@ Run the following command in the command shell. Be patient, as setup can take a 
 . <(wget -q -O - https://aka.ms/create-razor-pages-aspnet-core-setup)
 ```
 
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
 The preceding command:
 
 * Installs a specific version of the .NET SDK in the Cloud Shell environment.
