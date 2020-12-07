@@ -45,7 +45,7 @@ Time partitioning makes most sense when you:
 * Most frequently query a very small subset of your most recent data
 * You actively delete/drop older data
 
-For example, with our payment app, we can partition the transactional data by time. A common query is when a customer wants to see their transactions for a particular month. In this case, we can dramatically increase the performance if we have partitioned the data by time - allowing us to query transactional data for a single month, rather than querying the customer's data for every month.
+For example, with our payment app, we can partition the transactional data by time. A common query is when a customer wants to see their transactions for a particular month. We can dramatically increase the performance if we have partitioned the data by time - allowing us to query transactional data for a single month, rather than querying the customer's data for every month.
 
 It’s important to not shard by time, as data will be distributed seemingly at random. However, partitioning by time is a best-practice, and very recommended.
 

@@ -2,20 +2,20 @@
 uid: learn.intro-to-hyperscale
 metadata:
   title: Introduction to Hyperscale
-  description: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables and workloads grow, you need to think about other ways to scale your database. Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
+  description: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables grow, you need to think about other ways to scale your database. Azure Database for PostgreSQL Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
   ms.date: 10/23/2020
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Hyperscale 
-summary: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables and workloads grow, you need to think about other ways to scale your database. Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
+summary: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables grow, you need to think about other ways to scale your database. Azure Database for PostgreSQL Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
 abstract: |
   In this module, you will:
-  - Create a Hyperscale instance of Azure Database for PostgreSQL.
-  - Automatically shard and distribute tables in Hyperscale.
-  - Scale and rebalance a Hyperscale database without downtime.
-prerequisites: Basic knowledge of relational databases
+  - Create a Hyperscale instance of Azure Database for PostgreSQL
+  - Automatically shard and distribute tables in Hyperscale
+  - Scale and rebalance a Hyperscale database without downtime
+prerequisites: Basic familiarity with relational databases
 iconUrl: /learn/achievements/intro-to-hyperscale.svg
 levels:
 - beginner

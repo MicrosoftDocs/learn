@@ -19,5 +19,5 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-- [Azure Database for PostgreSQL documentation](https://docs.microsoft.com/azure/postgresql/)
-- [Azure Database for PostgreSQL - Hyperscale (Citus) documentation](https://docs.microsoft.com/azure/postgresql/hyperscale/)
+* [Azure Database for PostgreSQL documentation](https://docs.microsoft.com/azure/postgresql/)
+* [Azure Database for PostgreSQL - Hyperscale (Citus) documentation](https://docs.microsoft.com/azure/postgresql/hyperscale/)
