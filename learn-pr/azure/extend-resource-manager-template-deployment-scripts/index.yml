@@ -13,7 +13,7 @@ title: Extend ARM templates by using deployment scripts
 summary: Learn how to add custom steps to your Azure Resource Manager (ARM)
   templates by using deployment scripts.
 abstract: |
-  After completing this module, you'll be able to:
+  After you finish this module, you'll be able to:
   - Perform custom steps in your ARM templates by using a deployment script.
   - Define parameters to make your deployment scripts more reusable.
 iconUrl: /learn/achievements/extend-resource-manager-template-deployment-scripts.svg
