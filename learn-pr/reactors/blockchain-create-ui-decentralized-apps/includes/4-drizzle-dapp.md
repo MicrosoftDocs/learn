@@ -1,81 +1,74 @@
-We can use [Truffle Boxes](https://www.trufflesuite.com/boxes?azure-portal=true) as boilerplates or templates that can contain helpful modules, Solidity contracts & libraries, front-end views and more; all the way up to complete
-example dapps.
+We can use [Truffle boxes](https://www.trufflesuite.com/boxes?azure-portal=true) as boilerplates or templates that can contain helpful modules, Solidity contracts and libraries, front-end views, and more. We can even get complete example dapps.
 
-For this exercise we'll be using the [**Drizzle box**](https://www.trufflesuite.com/boxes/drizzle?azure-portal=true). This box will help us quickly and easily build our first dapp and provide an overview of Drizzle's capabilities.
+For this exercise, we'll use the [Drizzle box](https://www.trufflesuite.com/boxes/drizzle?azure-portal=true). This box will help us quickly and easily build our first dapp and provide an overview of Drizzle's capabilities.
 
-The **Drizzle** box comes with several out of the box smart contracts to check out and a
-simplified **truffle-config.js** designed for development and testing.
-If using a prior **truffle project,** first create a clean and empty
-folder, **unbox** **Drizzle**, then copy over the current project -
-smart contracts, migrations, and other project-specific files.
+The Drizzle box comes with several out-of-the-box smart contracts to check out. It also comes with a simplified truffle-config.js file that's designed for development and testing.
 
-Using Drizzle to wire smart contacts to a front-end server
+
+## Use Drizzle to wire smart contacts to a front-end server
 
 Unboxing Drizzle results in essentially two separate projects within a
 single directory: a **truffle** project and a **drizzle-react client**
-project. If you already have experience with **Truffle**, then
-directory structure will look familiar in the smart contract area. The
-primary difference will be how you wire it to **Web3** and
-configurations modification which need to be taken into account.
+project. If you already have experience with Truffle, the directory structure will look familiar in the area for smart contracts. The
+main difference is how you wire it to Web3. You also need to take configurations for modification into account.
 
-## Get started with the Drizzle Box
+## Get started with the Drizzle box
 
-We'll begin by creating a new directory which will be used to house the Truffle Drizzle project. You'll need to make sure that you already have **Truffle** installed.
+We'll begin by creating a new directory to house the Truffle Drizzle project. Make sure that you already have Truffle installed.
 
-1. Open your terminal and create a new empty directory by typing: `mkdir drizzle_tutorial`
-2. Then navigate to the directory by typing: `cd drizzle_tutorial`
-3. Once in the dirzzle_tutorial folder, you can indicate that you want to use the Drizzle Truffle box by typing: `truffle unbox drizzle`. Wait a few minutes for the box to setup. Once it's complete you'll see the message: **Unbox successful, sweet!**
-4. Open up the project in VS Code, and take a look at the folder structure.
+1. Open your terminal and create a new empty directory by entering `mkdir drizzle_tutorial`.
+2. Go to the directory by entering `cd drizzle_tutorial`.
+3. After you're in the **drizzle_tutorial** folder, indicate that you want to use the Truffle Drizzle box by entering `truffle unbox drizzle`. 
 
-## Compile, Migrate and test the project
+   Wait a few minutes for the box to be set up. You'll then see the message **Unbox successful, sweet!**.
+4. Open the project in Visual Studio Code, and look at the folder structure.
 
-The **Truffle Drizzle-Box** comes with three contracts that use the
-drizzle components for connecting to a Dapp. The contracts directory
-contains the files: **ComplexStorage.sol**, **SimpleStorage.sol** and
-**TutorialToken.sol** which are used by the **Drizzle** tutorial.
+## Compile, migrate, and test the project
 
-We'll want to compile, migrate, and test these contracts first before exploring the app components in detail.
+The Truffle Drizzle box comes with three contracts that use the Drizzle components for connecting to a dapp. The **contracts** directory contains the files **ComplexStorage.sol**, **SimpleStorage.sol**, and **TutorialToken.sol**. The Drizzle tutorial uses them.
 
-1. From within VS Code, open up the terminal by going to **Terminal -> New Terminal**. Then start up Ganache CLI by typing: `ganache-cli`.
-1. Open up another terminal window by right-clicking into the terminal and selecting **New Terminal**.
-1. In that new terminal window, type `truffle compile` to compile the contracts. Wait for the compilation to successfully complete.
-1. Once the compilation is complete, you can now test the contracts. The Truffle box comes with the file **simplestorage.js** for testing the **Simple Storage** smart contract. In the terminal window, type: `truffle test`.
-1. After the tests successfully run, you can now deploy the contracts. The migrations folder has JavaScript files that help you deploy contracts to the network of your choice.**2_deploy_contracts.js** located in the migrations folder will migrate the smart contracts in this project. Type `truffle migrate --network develop`. Then wait for the migration to successfully complete.
+Let's compile, migrate, and test these contracts before we explore the app components in detail.
+
+1. From within Visual Studio Code, open the terminal by going to **Terminal** > **New Terminal**. Then start the Ganache CLI by entering `ganache-cli`.
+1. Open another terminal window by right-clicking the terminal and selecting **New Terminal**.
+1. In that new terminal window, enter `truffle compile` to compile the contracts. Wait for the compilation to successfully finish.
+1. After the compilation is complete, you can test the contracts. The Truffle box comes with the file **simplestorage.js** for testing the **Simple Storage** smart contract. In the terminal window, enter `truffle test`.
+1. After the tests successfully run, you can deploy the contracts. The **migrations** folder has JavaScript files that help you deploy contracts to the network of your choice. The **2_deploy_contracts.js** file in the **migrations** folder will migrate the smart contracts in this project. 
+
+   Enter `truffle migrate --network develop`. Then wait for the migration to successfully finish.
 
 ## Explore the dapp components
 
-The Drizzle Box includes code using the Drizzle libraries to connect the
-smart contracts to the dapp's front-end. That code exists within the **app/** directory.
+The Drizzle box includes code that uses the Drizzle libraries to connect the smart contracts to the dapp's front end. That code exists within the **app/** folder.
 
-The files in the **app/** folder which are of interest for connecting the smart contract to the dapp are:
+The files in the **app/** folder that are of interest for connecting the smart contract to the dapp are:
 
-- **app.js**
+- **MyComponent.js**
 - **drizzleOptions.js**
-- **MyComponent.js.**
+- **App.js**
 
-Next let's explore how the files work together to wire up the smart contracts to the dapp.
+Let's explore how the files work together to wire up the smart contracts to the dapp.
 
 ### MyComponent.js
 
-The file **MyComponent.js** creates the component for connecting the SimpleStorage, ComplexStorage and TutorialToken smart contracts with the front-end.
+The **MyComponent.js** file creates the component for connecting the SimpleStorage, ComplexStorage, and TutorialToken smart contracts with the front end.
 
 ### drizzleOptions.js
 
-**drizzleOptions.js** is used to create an **options** object and pass in the desired contract artifacts for **Drizzle** to instantiate. The **options** object sets up and instantiates the
-Drizzle store.
+The **drizzleOptions.js** file is used to create an **options** object and pass in the desired contract artifacts for Drizzle to instantiate. The **options** object sets up and instantiates the Drizzle store.
 
 ### App.js
 
-**App.js** contains the code for the main app. It requires importing React and the Drizzle libraries. It must also import the component file which interacts directly with the smart contract.
+**App.js** contains the code for the main app. It requires importing React and the Drizzle libraries. It must also import the component file that interacts directly with the smart contract.
 
 ## Run the dapp
 
-1. Focusing your attention back on the terminal window, run the following commands:
+Focusing your attention back on the terminal window, run the following commands:
 
-- `cd app` to move into the app/ folder
-- `npm rebuild` to run the build and recompile changes in the app/ folder
-- `npm run start` to start the web-pack dev server for React and opens up a new browser window for the React project.
+- `cd app` to move into the **app/** folder.
+- `npm rebuild` to run the build and recompile changes in the **app/** folder.
+- `npm run start` to start the web-pack development server for React. It opens a new browser window for the React project.
 
-Your browser should now open with a window showing a dapp where you can interact with the contracts: SimpleStorage, TutorialToken, and ComplexStorage.
+Your browser should now open with a window that shows a dapp where you can interact with the SimpleStorage, TutorialToken, and ComplexStorage contracts.
 
-:::image type="content" source="../media/drizzle-dapp.png" alt-text="Image showing the dapp that is generated from the Drizzle box":::
+:::image type="content" source="../media/drizzle-dapp.png" alt-text="Screenshot that shows the dapp that's generated from the Drizzle box.":::
