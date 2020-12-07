@@ -1,4 +1,4 @@
-In this exercise, you'll install the tools and components needed to build a Blazor WebAssembly client app locally using Visual Studio Code.
+In this exercise, you'll install the tools and components needed to build a Blazor WebAssembly client app locally using **Visual Studio Code** application.
 
 This exercise assumes you've already installed Visual Studio Code. You can download Visual Studio Code for free for Windows, macOS, or Linux from https://code.visualstudio.com/.
 

@@ -11,7 +11,7 @@ Gateways are used to route public HTTP traffic to microservices:
 To create our gateway, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=gateway -d bootVersion=2.3.2.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=todo-gateway -d bootVersion=2.3.6.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 > [!NOTE]
@@ -29,36 +29,36 @@ spring.cloud.gateway.discovery.locator.enabled=true
 
 ## Create the application on Azure Spring Cloud
 
-As in the previous module, create a specific `gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--is-public true` flag so it is exposed publicly.
+As in the previous module, create a specific `todo-gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--is-public true` flag so it is exposed publicly.
 
 ```bash
-az spring-cloud app create -n gateway --is-public true
+az spring-cloud app create -n todo-gateway --is-public true
 ```
 
 ## Deploy the application
 
-You can now build your "gateway" project and send it to Azure Spring Cloud:
+You can now build your "todo-gateway" project and send it to Azure Spring Cloud:
 
 ```bash
-cd gateway
+cd todo-gateway
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy -n gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
+az spring-cloud app deploy -n todo-gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 
 ## Test the project in the cloud
 
 1. Go to **Apps** in your Azure Spring Cloud instance.
-    1. Verify **gateway** has a Discovery status that says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
-    1. Select **gateway** to have more information on the microservice.
+    1. Verify **todo-gateway** has a Discovery status that says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Select **todo-gateway** to have more information on the microservice.
 1. Copy/paste the public URL that is provided (there is a "Test Endpoint" like for microservices, but the gateway is directly exposed on the Internet, so let's use the public URL). Keep this URL handy for subsequent sections.
 
 As the gateway is connected to the Spring Cloud Service Registry, it should have automatically opened routes to the available microservices, with URL paths in the form of `/MICROSERVICE-ID/**`:
 [The MICROSERVICE-ID must be in capital letters]
 
-Test the `todo-service` microservice endpoint by doing: `curl https://XXXXXXXX-gateway.azuremicroservices.io/TODO-SERVICE/` (replacing XXXXXXXX with the name of your Azure Spring Cloud instance)
+Test the `todo-service` microservice endpoint by doing: `curl https://XXXXXXXX-todo-gateway.azuremicroservices.io/TODO-SERVICE/` (replacing XXXXXXXX with the name of your Azure Spring Cloud instance)
 
-As in the previous module, the result of this command should be the three items that were initially inserted in the Azure Cosmos DB database:
+As in the previous module, the result of this command should be the three items that were initially inserted in the MySQL database:
 
 ```json
 [{"id":"1","description":"First item","done":true},{"id":"2","description":"Second item","done":true},{"id":"3","description":"Third item","done":false}]
