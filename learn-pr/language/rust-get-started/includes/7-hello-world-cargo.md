@@ -1,14 +1,14 @@
-Lets write our Hello World program using Cargo this time.
+Here's how to write your program by using Cargo.
 
 ## Create a new project
 
-To start, we'll use Cargo to make a new project for us.
+To start, use Cargo to make a new project.
 
-Make sure you terminal is at our `rust-learning-path` directory and run the following command:
+Make sure your terminal is at your `rust-learning-path` directory, and run the following command:
 
 `cargo new hello-cargo`
 
-This will generate a new directory called `hello-cargo` with the following files:
+This generates a new directory called `hello-cargo`, with the following files:
 
     hello-cargo
     |- Cargo.toml
@@ -17,13 +17,13 @@ This will generate a new directory called `hello-cargo` with the following files
 
 `Cargo.toml` is the manifest file for Rust. It's where you keep metadata for your project, as well as dependencies.
 
-`src/main.rs` is where we'll write our application code.
+`src/main.rs` is where you'll write your application code.
 
-You can see that `cargo new` generated a boilerplate "Hello, world!" project for us!
+You can see that `cargo new` generated a boilerplate "Hello, world!" project for us.
 
-## Building and running our program with Cargo
+## Build and run your program with Cargo
 
-We can run this program by moving into the new directory `helo-cargo` and running this in our
+To run this program, move into the new directory `hello-cargo`, and run this in your
 terminal:
 
     $ cd hello-cargo
@@ -36,4 +36,4 @@ You should see this in your terminal:
          Running `target/debug/hello-cargo`
     Hello, world!
 
-Congratulations! You've just learned how to initialize your first Rust project with Cargo!
+Congratulations, you've just learned how to initialize your first Rust project with Cargo!

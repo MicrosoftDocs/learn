@@ -1,14 +1,14 @@
-Just compiling with `rustc` is fine for simple programs, but as your project grows, you’ll want to manage all the options and make it easy to share your code.
+While the `rustc` compiler is fine for simple programs, as your project grows, you’ll want to manage all the options and make it easy to share your code.
 
-The good news is when you install `rustup` you'll also get the latest stable version of the Rust build tool and package manager, also known as Cargo.
+The good news is that when you install `rustup`, you'll also get the latest stable version of the Rust build tool and package manager. This is called Cargo.
 
-Cargo does lots of things for you:
+Cargo does lots of things for you, including:
 
-- create new project templates with `cargo new`
-- build your project with `cargo build`
-- run your project with `cargo run`
-- test your project with `cargo test`
-- build documentation for your project with `cargo doc`
-- publish a library to crates.io with `cargo publish`
+- Creating new project templates with `cargo new`.
+- Building your project with `cargo build`.
+- Running your project with `cargo run`.
+- Testing your project with `cargo test`.
+- Building documentation for your project with `cargo doc`.
+- Publishing a library to crates.io with `cargo publish`.
 
-In the next unit we will rewrite our "Hello, world!" program using Cargo.
+In the next unit, you'll rewrite your "Hello, world!" program by using Cargo.

@@ -1,9 +1,9 @@
-Now that you've installed Rust, let's write your first Rust program that prints the message "Hello, world!" to the console.
+Now that you've installed Rust, let's write your first Rust program. You'll print the message "Hello, world!" to the console.
 
-## Creating a new directory to organize our code
+## Create a new directory to organize your code
 
-We'll start by creating a directory for storing all the code in this learning path
-(`rust-learning-path`) and then creating a new sub-directory to keep the source code for this exercise.
+Start by creating a directory for storing all the code in this learning path
+(`rust-learning-path`), and then creating a new sub-directory to keep the source code for this exercise.
 
 For Linux, macOS, and PowerShell on Windows, enter this:
 
@@ -12,14 +12,14 @@ For Linux, macOS, and PowerShell on Windows, enter this:
     $ mkdir hello_world
     $ cd hello_world
 
-For Windows Command Prompt, enter this:
+For the Windows command prompt, enter this:
 
     > mkdir "%USERPROFILE%\rust-learning-path"
     > cd /d "%USERPROFILE%\rust-learning-path"
     > mkdir hello_world
     > cd hello_world
 
-## Writing our first Rust program
+## Write your first Rust program
 
 Next, create a new file named `main.rs` and use your editor to write the following code into it:
 
@@ -29,22 +29,22 @@ fn main() {
 }
 ```
 
-## Compiling and running our program
+## Compile and run your program
 
-Now that we have our source code ready, we need to compile our program into an executable file. Back in your terminal window, enter  the following commands to compile and run the file:
+Now that you have your source code ready, you need to compile your program into an executable file. Back in your terminal window, enter the following commands to compile and run the file:
 
-If you are on Linux or macOS:
+If you're on Linux or macOS:
 
     $ rustc main.rs
     $ ./main
     Hello, world!
 
-On Windows, enter the command .\main.exe instead of ./main:
+On Windows, enter the command `.\main.exe`, instead of `./main`:
 
     > rustc main.rs
     > .\main.exe
     Hello, world!
 
-You should see the string `Hello, world!` be displayed in the terminal.
+You should see `Hello, world!` in the terminal.
 
-Congratulations! You've written your first Rust program!
+Congratulations, you've written your first Rust program!

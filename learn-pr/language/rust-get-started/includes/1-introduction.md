@@ -1,37 +1,20 @@
-The Rust programming language empowers you to build reliable and efficient software, like:
-
-- Network programming:
-  - Web servers
-  - Mail servers
-  - Web browsers
-- Systems programming
-  - Compilers and interpreters
-  - Virtualization and software containers
-  - Databases
-  - Operating systems
-  - Cryptography
-- Games
-- Media processing
-- Command line programs
-- Web assembly
-- Embedded programming
+With the Rust programming language, you can build reliable and efficient software, like network programming (such as web servers, mails servers, and web browsers) and systems programming (such as compilers and interpreters, virtualization and software containers, databases, operating systems, and cryptography). You can also build games, media processing, command line programs, web assembly, and embedded programming.
 
 ## What's the best way to learn Rust?
 
-By far, the best way to learn Rust is to practice writing code as much code as possible. So, we
-encourage you to type along with the exercises in this module and the others in this learning path.
+Practice writing code as much code as possible. Type along with the exercises in this module and the others in this learning path.
 
-Furthermore, you need to begin learning small foundational concepts and build on them with continual
+Additionally, begin by learning small, foundational concepts, and build on these with continual
 practice and exploration. You'll build a few projects along the way, and by the end, you'll have a
 solid grasp of the language.
 
-## Learning Objectives
+## Learning objectives
 
-In this module, you'll learn:
+In this module, you'll learn how to:
 
-- How to setup your development environment for using Rust.
-- How to write a simple "Hello, World!" program.
-- How to use Cargo, Rust's powerful package manager and build system.
+- Set up your development environment for using Rust.
+- Write a simple "Hello, World!" program.
+- Use Cargo, Rust's package manager and build system.
 
 ## Prerequisites
 
