@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the format of the Kubernetes manifest files?"
+  - content: "What is the format of the Kubernetes manifest files supported by Arc?"
     choices:
     - content: "XML"
       isCorrect: false
@@ -31,12 +31,12 @@ quiz:
       explanation: "Kubernetes does not recognize the TXT format"
   - content: "Which technology makes possible to deploy Azure Kubernetes Service (AKS) in on-premises data centers?"
     choices:
-    - content: "Azure Stack Hub"
+    - content: "GKS"
       isCorrect: false
-      explanation: "Azure Stack Hub does not support AKS at this point"
-    - content: "Azure Stack Edge"
+      explanation: "GKE is a third party platform which does not support AKS"
+    - content: "EKS"
       isCorrect: false
-      explanation: "Azure Stack Edge does not support AKS at this point"
+      explanation: "EKS is a third party platform which does not support AKS"
     - content: "Azure Stack HCI"
       isCorrect: true
       explanation: "The only solution that allows running AKS in an on-premises data center is Azure Stack HCI"

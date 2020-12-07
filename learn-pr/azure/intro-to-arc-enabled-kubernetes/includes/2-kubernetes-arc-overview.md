@@ -2,7 +2,7 @@ Before we focus on how Azure Arc optimizes management of Kubernetes clusters and
 
 ## What is Kubernetes?
 
-Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, each Kubernetes deployment consists of multiple, clustered servers. Some of them form function as control plane nodes, responsible for management of the remaining, worker nodes, hosting containerized workloads. In case of Kubernetes, these workloads run as pods. 
+Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, each Kubernetes deployment consists of multiple, clustered servers. Some of them function as control plane nodes, responsible for management of the remaining, worker nodes, hosting containerized workloads. In case of Kubernetes, these workloads run as pods. 
 
 > [!NOTE] 
 > A pod corresponds roughly to a container, although it can include multiple, tightly-coupled containers running on the same cluster node.
@@ -39,13 +39,13 @@ However, it's important to understand that Kubernetes is an highly customizable 
 
 Business technology landscape continuously evolves and becomes increasingly complex with multiple applications running on different hardware across on-premises datacenters, multiple public and private clouds, and the edge. Managing these disparate environments at scale, enhancing security across an entire organization so that it cannot be compromised, and enabling developer agility and innovation are critical for businesses to succeed and thrive. Microsoft provides tools and solutions that help customers like Contoso to innovate their hybrid environments in a secure manner and with a minimized management overhead. 
 
-Azure Arc is an example of such solution. It consists of a set of technologies that you can use to simplify administration of complex, distributed, hybrid environments. It provides a centralized, scalable, and consistent multi-cloud and on-premises governance and management platform. It facilitates adoption of automation, single-pane of glass monitoring and comprehensive security, and promotes the cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices, as you transition to the the DevOps model to fully benefit from cloud native architectural and operational patterns.
+Azure Arc is an example of such solution. It consists of a set of technologies that you can use to simplify administration of complex, distributed, hybrid environments. It provides a centralized, scalable, and consistent multi-cloud and on-premises governance and management platform. It facilitates adoption of automation, single-pane-of-glass monitoring and comprehensive security, and promotes the cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices, as you transition to the the DevOps model to fully benefit from cloud native architectural and operational patterns.
 
 :::image type="content" source="../media/2-azure_arc.png" alt-text="Diagram illustrating different scenarios that leverage Azure Arc to optimize administration of SQL Server instances residing on-premises or hosted by third-party cloud providers. The first group of scenarios consists of SQL Server instances running on physical servers or virtual machines. The second group of scenarios comprises on-premises, third-party cloud hosted Kubernetes clusters, or Azure Kubernetes Service clusters running on Azure Stack HCI, with Azure Arc data controller serving as an intermediary management layer. All of these scenarios offer integration with a range of Azure services, such as Azure Monitor and Log Analytics, Azure Policy, Azure Security Center, and Azure Sentinel." border="false":::
 
 ### What types of resources support Azure Arc?
 
-Azure Arc supports Azure integration in several scenarios for different types of resources residing outside of Azure via the following offerings:
+Azure Arc supports Azure integration in several scenarios for different types of resources residing outside of Azure in the following scenarios:
 
 - Azure Arc enabled servers - physical and virtual machines (VMs) running Windows or Linux operating system. 
 - Azure Arc enabled SQL Server - SQL Server instances running on Azure Arc enabled servers.
@@ -60,7 +60,7 @@ Azure Arc supports Azure integration in several scenarios for different types of
 > [!NOTE]
 > Verify that the Azure Arc features you intend to use in your production environment are generally available.
 
-In each of the Azure Arc enabled scenarios, Azure Arc relies on a locally installed agent to establish a logical connection between the local resource and Azure. By virtue of establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable an non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. 
+In each of the Azure Arc enabled scenarios, Azure Arc relies on a locally installed agent to establish a logical connection between the local resource and Azure. By virtue of establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable a non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. 
 
 ### What are the key benefits of Azure Arc?
 

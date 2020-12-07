@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which version of Helm is required to implement an Azure Arc-enabled Kubernetes cluster"
+  - content: "Which version of Helm is required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "1"
       isCorrect: false
@@ -29,17 +29,17 @@ quiz:
     - content: "4"
       isCorrect: false
       explanation: "This version is not available yet."
-  - content: "Which tool uses the administrator to run the command that connects a Kubernetes cluster to Azure"
+  - content: "What's the minimum version of Azure CLI required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
     choices:
-    - content: "Azure CLI"
+    - content: "2.15"
       isCorrect: true
-      explanation: "The administrator is connecting the Kubernetes cluster to Azure by running the az connectedk8s connect Azure CLI command"
-    - content: "PowerShell Core"
+      explanation: "You need an Azure CLI version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc enabled Kubernetes CLI extensions."
+    - content: "1.15"
       isCorrect: false
-      explanation: "This functionality is not available in PowerShell Core"
-    - content: "Command Prompt"
+      explanation: "The version 2.15 of an Azure CLI is sufficient."
+    - content: "2.0"
       isCorrect: false
-      explanation: "This functionality is not available from Command Prompt"
-    - content: "Cloud Shell"
+      explanation: "You need at least version 2.15 of Azure CLI."
+    - content: "3.0"
       isCorrect: false
-      explanation: "This functionality is not available in Cloud Shell"
+      explanation: "The version 2.15 of an Azure CLI is sufficient."

@@ -29,17 +29,17 @@ quiz:
     - content: "kube-public"
       isCorrect: false
       explanation: "This namespace is meant by shared application workloads"
-  - content: "What is the benefit provided by Kubernetes clusters to Azure Arc enabled data services"
+  - content: "Which of the following is NOT an advantage of Azure Arc enabled Kubernetes?"
     choices:
-    - content: "GitOps-based updates"
+    - content: "GitOps-based configuration and workload management"
       isCorrect: false
-      explanation: "GitOps-based updates is the benefit of Azure Arc enabled Kubernetes"
-    - content: "Azure Policy-based runtime policies"
+      explanation: "GitOps-based configuration and workload management is the benefit of Azure Arc enabled Kubernetes"
+    - content: "Use of Azure Policy for Kubernetes"
       isCorrect: false
       explanation: "Azure Policy-based runtime policies is the benefit of Azure Arc enabled Kubernetes"
-    - content: "tagging"
+    - content: "Use of Azure Monitor for Containers"
       isCorrect: false
-      explanation: "Tagging is a benefit provided by Azure Resource Manager"
-    - content: "Autoscaling"
+      explanation: "Azure Monitor for Containers is a benefit provided by Azure Resource Manager"
+    - content: "Managing cluster creation"
       isCorrect: true
-      explanation: "Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure hosting the Kubernetes clusters"
+      explanation: "Azure Arc enabled Kubernetes does not provide the ability to manage cluster creation"

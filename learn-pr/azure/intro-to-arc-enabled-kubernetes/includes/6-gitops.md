@@ -1,8 +1,8 @@
-One of the primary benefits of Azure Arc is facilitating implemenation of DevOps principles that apply established development practices to operations. This results in improved agility, without jeopardizing the stability of IT environment. One way to promote DevOps principles is to implement GitOps, which streamline releases of new versions of applications by eliminating the manual effort involved in their deployment. Azure Arc enabled Kubernetes clusters offer support for GitOps. In this unit you'll learn what is GitOps and how to configure it. 
+One of the primary benefits of Azure Arc is facilitating implemenation of DevOps principles that apply established development practices to operations. This results in improved agility, without jeopardizing the stability of IT environment. One way to promote DevOps principles is to implement GitOps, which streamline releases of applications by reducing the manual effort involved in their deployment. Azure Arc enabled Kubernetes clusters offer support for GitOps. In this unit you'll learn what is GitOps and how to configure it. 
 
 ## What is GitOps?
 
-GitOps is a DevOps practice that relies on a Git repository to store a code or configuration representing the current state of a resource external to the repository. An approved change to this repository leads automatically to an update of the corresponding resource.
+GitOps is a DevOps practice that relies on a Git repository to host files that contain the configuration representing the expected state of a resource. An agent running on the cluster monitors the state of the repository and, when there is a change on the repository, the agent pulls the changed files to the cluster and applies the new configuration.
 
 In the context of Azure Arc enabled Kubernetes clusters, a Git repository hosts a configuration of a Kubernetes cluster, including its resources such as pods and deployments. A pod or a set of pods running on the cluster polls the status of the repository and, once it detects a change, it pulls and applies the new configuration to the cluster. 
 
@@ -35,6 +35,6 @@ To create an Azure Policy assignment in the Azure portal, you would use the foll
 - Set values of the **sourceControlConfiguration** parameter, representing the association between Git repositories and configuration of the corresponding components of the Azure Arc enabled Kubernetes cluster.
 - Create a remediation task and enable the **Create a managed identity** option. Verify that the identity will have Contributor permissions. 
 
-The policy definition automatically applies the GitOps-based configuration to each Azure Arc enabled Kubernetes cluster you create, as long as its Azure Resource Manager resoure is in the scope of the assignment. For existing clusters, you need to manually run the remediation task. The policy assignment typically takes effect within 20 minutes from the time you create it. 
+The policy assignment will automatically enable GitOps on each Azure Arc enabled Kubernetes cluster that is within the scope of the assignment. For existing clusters, you need to manually run the remediation task. The policy assignment typically takes effect within 20 minutes from the time you create it. 
 
 Choose the best response for each of the following questions. Then select "Check your answers".

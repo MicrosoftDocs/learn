@@ -1,4 +1,4 @@
-Azure Arc centralizes and streamlines management by leveraging a range of Azure services, such as Azure Policy. With Azure Policy, companies like Contoso can enforce uniform governance rules across all of their Azure Arc enabled Kubernetes estate and detect any instances of non-compliance with organizational standards. In this unit you'll learn what is Azure Policy for Kubernetes and how to implement it.
+Azure Arc centralizes and streamlines management by leveraging a range of Azure services, such as Azure Policy. With Azure Policy, companies like Contoso can enforce uniform governance rules across all of their Azure Arc enabled Kubernetes estate and detect any instances of non-compliance with organizational standards. In this unit you'll learn about Azure Policy for Kubernetes and how to implement it.
 
 ## What is Azure Policy?
 
@@ -14,7 +14,7 @@ Azure Policy for Kubernetes facilitates at-scale policy enforcements and safegua
 
 - Checks periodically for Azure Policy assignments targeting the Kubernetes cluster hosting the admission controller pods
 - Deploys policy definitions into the cluster as custom resources that apply constraints, which, in turn, are enforced by the admission controller pods
-- Reports auditing and compliance data to Azure Policy, allowing you to review their status via the Azure portal, the same way as with any other Azure or Azure Arc enabled resource.
+- Reports auditing and compliance data to Azure Policy, allowing you to review their status via the Azure portal, similar to other Azure or Azure Arc enabled resource.
 
 Azure Policy for Kubernetes supports the following types of Kubernetes environments:
 
@@ -36,7 +36,7 @@ Azure Policy offers a number of built-in definitions for Azure Arc enabled Kuber
 
 ## How to implement Azure Policy for Kubernetes?
 
-To implement Azure Policy for Kubernetes, you need to install an Azure Policy Add-on. Such add-on is available for each of the three supported types of Kubernetes environments. 
+To implement Azure Policy for Kubernetes, you need to install an Azure Policy add-on. The add-on is available for each of the three supported types of Kubernetes environments. 
 
 For Azure Arc enabled Kubernetes, the implementation consists of the following high-level steps:
 
