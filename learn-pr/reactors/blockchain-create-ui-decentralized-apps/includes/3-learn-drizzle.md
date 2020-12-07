@@ -28,7 +28,6 @@ Drizzle dapps can interact with the smart contacts by using a JSON-RPC layer cal
 
 - [Web3](https://web3js.readthedocs.io?azure-portal=true) is the Ethereum-compatible JavaScript API and bindings that are built through the JSON-RPC specification. For dapp development, Web3.js should be used so that the app can communicate with and get updates from the Ethereum blockchain nodes..
 
-- [Redux](https://redux.js.org/?azure-portal=true) is a predictable state container for JavaScript apps.
 
 - [React.js](https://reactjs.org/?azure-portal=true) is a JavaScript library for building user interfaces.
 
