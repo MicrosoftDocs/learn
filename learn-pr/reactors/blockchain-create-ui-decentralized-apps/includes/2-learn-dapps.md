@@ -25,3 +25,15 @@ Outside of providing a way for users to interact with the blockchain network in 
 - **Censorship resistance** no entity on the network can prevent users from using the dapp in any way.
 - **Data integrity** since data stored on the blockchain is immutable, it is not possible for bad actors to modify or falsify data and transactions.
 - **Verifiable behavior** smart contracts and their dapps are guaranteed to execute in a predictable way without a central authority.
+
+## Examples of dapps
+
+Just like blockchain solutions are being created in nearly every industry, dapps are becoming more popular in major industries as well. Most notably, there has been a lot of movement in the areas of finance, arts and collectibles, gaming, and technology. Here are examples across each of those industries to check out and inspire you as you begin to create your own dapps.
+
+[Augur](https://augur.net?azure-portal=true?azure-portal=true) is a platform where you can bet on things like sports, economics, politics, and entertainment. The user interface allows you to trade and to view reporting on both the open and closed bets. The UI for betting is still in progress at this time.
+
+[OpenSea](https://opensea.io?azure-portal=true?azure-portal=true) is a platform where you can buy, sell, and discover limited-edition goods. The dapp allows users to browse items and make an offer or buy for the price listed. Users can also list their goods for sale.
+
+[Cryptokitties](https://www.cryptokitties.co/) is a gaming dapp where you can breed, collect, and sell unique cryptographic kittens. Aditionally, you can do things like solve puzzles, earn rewards, and play games with your kitties.
+
+[Brave](https://brave.com/) is a fast and private browser that allows you to earn tokens called BAT that can be donated or converted into a currency of your choice.
