@@ -4,7 +4,7 @@ In the sample scenario, you want to use Visual Studio Code as the development en
 
 In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of students. The application then creates JavaScript objects that capture this information.
 
-In the next exercise, you'll see how to save these objects to a container in Azure DB.
+In the next exercise, you'll see how to save these objects to a container in Azure Databases extension.
 
 This exercise runs on your desktop computer and uses an Azure sandbox for your resources.
 
@@ -114,7 +114,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
     The **Student** class represents a student. It has the properties **id**, **StudentNumber**, **Forename**, **Lastname**, and **CourseGrades**. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property. The **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
 
     > [!NOTE]
-    > It's important to distinguish between the **id** field, which is used by Azure DB to identify the document, and the **StudentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **StudentNumber** field may change over time.
+    > It's important to distinguish between the **id** field, which is used by Azure Databases extension to identify the document, and the **StudentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **StudentNumber** field may change over time.
 
 5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class:
 
@@ -164,7 +164,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 You'll now run the app and verify that the **Student** class creates student objects and can assign grades correctly. You'll use the test harness to prompt the user for the details of two students. The details of the students and the course grades assigned by the test harness will be displayed.
 
-The application doesn't store student information in the Azure DB. You'll see how to do that in the next exercise.
+The application doesn't store student information in the Azure Databases extension. You'll see how to do that in the next exercise.
 
 1. In the **Terminal** window, start the **studentgrades** app using **node**:
 
