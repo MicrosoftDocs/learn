@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-api-azure-functions.9-understand-cors
-title: Understand CORS
+title: Configure CORS
 metadata:
-  title: Understand CORS
-  description: Understand CORS
-  ms.date: 01/24/2020
+  title: Configure CORS
+  description: Configure CORS
+  ms.date: 12/04/2020
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-understand-cors.md)]
+  [!include[](includes/9-configure-cors.md)]

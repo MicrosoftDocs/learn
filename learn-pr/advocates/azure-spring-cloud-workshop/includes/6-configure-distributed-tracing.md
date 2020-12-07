@@ -3,7 +3,7 @@ Monitor our services with Azure Spring Cloud's distributed tracing mechanism, to
 We now have a complete microservices stack:
 
 - A Spring Boot microservice, that stores its data in MySQL.
-- A gateway based on Spring Cloud Gateway.
+- A todo-gateway based on Spring Cloud Gateway.
 
 However, even with only those two components, it already is quite challenging to monitor and study performance issues in our architecture.
 
@@ -14,7 +14,7 @@ To solve that issue, we're going to set up a distributed tracing solution:
 
 ## Enable distributed tracing to better understand the architecture
 
-In our two applications (`todo-service` and `gateway`), open up the `pom.xml` file and add the following Maven dependency as a child element of the __first__ `<dependencies>` element.
+In our two applications (`todo-service` and `todo-gateway`), open up the `pom.xml` file and add the following Maven dependency as a child element of the __first__ `<dependencies>` element.
 
 ```java
         <dependency>
@@ -36,12 +36,12 @@ az spring-cloud app deploy -n todo-service --jar-path target/demo-0.0.1-SNAPSHOT
 cd ..
 ```
 
-Redeploy the `gateway` gateway:
+Redeploy the `todo-gateway` gateway:
 
 ```bash
-cd gateway
+cd todo-gateway
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy -n gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
+az spring-cloud app deploy -n todo-gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 
