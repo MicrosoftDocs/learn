@@ -111,7 +111,7 @@ This command first produces an object result by calling `Get-Process`. That resu
 
 ### Search by type
 
-The first line of the response, calling `Get-Member`, is the type of the returned object. When you know the type, you can search for other cmdlets that operate on the same type. Explore these related commands to quickly build your knowledge in the domain you're working in.
+The first line of the response, running the `Get-Member` command, is the type of the returned object. When you know the type, you can search for other cmdlets that operate on the same type. Explore these related commands to quickly build your knowledge in the domain you're working in.
 
 Let's say you invoked the PowerShell command that lists all members for a specific process. The first few rows of the result look something like this output:
 

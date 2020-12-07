@@ -77,7 +77,7 @@ After you find a cmdlet you want to use, you can learn more about it. For exampl
                go to https://go.microsoft.com/fwlink/?LinkId=517145.
    ```
 
-   Because this output is a difficult to read, you decide to use a verbose alternative. That is, you use the `help` alias.
+   Because this output is a difficult to read, you decide to use a less verbose alternative. That is, you use the `help` alias.
 
 1. Type the `help` command.
 
