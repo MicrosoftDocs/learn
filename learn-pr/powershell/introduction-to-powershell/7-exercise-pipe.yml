@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.automate-with-powershell.7-exercise-pipe
+uid: learn.powershell.intro-to-powershell.7-exercise-pipe
 title: Exercise - Create a pipeline and format the response
 metadata:
   title: Exercise - Create a pipeline and format the response
-  description: This exercise will let you create a pipeline out of several cmdlets
-    piped together. Additionally it will let you run different formatting
-    cmdlets so you can see the difference in what they produce.
+  description: Create a pipeline out of several cmdlets
+    piped together. Try out formatting
+    cmdlets so you can see differences in their results.
   author: softchris
   ms.author: chnoring
   ms.date: 11/19/2020
