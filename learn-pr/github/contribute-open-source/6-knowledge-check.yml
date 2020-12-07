@@ -26,7 +26,7 @@ quiz:
           explanation: "The search bar allows you to find repositories and topics in GitHub."
         - content: The LICENSE file
           isCorrect: false
-          explanation: "The license file describes how you can use, redistribute, and modify the project."
+          explanation: "The LICENSE file describes how you can use, redistribute, and modify the project."
     - content: What is the preferred way to ask for help or reviews on a pull request?
       choices:
         - content: Send a negative or disrespectful comment to the project's maintainers via social media.

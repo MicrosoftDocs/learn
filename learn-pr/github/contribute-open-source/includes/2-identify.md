@@ -6,7 +6,7 @@ There are many ways to contribute to open-source projects. Making your first con
 
 You can get started by thinking about the projects you already use, or want to use. Contributing is easier when you're familiar with the project and its community.
 
-Perhaps while reading a project's README you find a broken link or some typos. Maybe you noticed something isn't working as expected or the documentation is out of date. These are all great opportunities to help and contribute to the project.
+Perhaps while reading a project's README file you find a broken link or some typos. Maybe you noticed something isn't working as expected or the documentation is out of date. These are all great opportunities to help and contribute to the project.
 
 > [!TIP]
 > One important tip: *All* kinds of contributions are valuable. Your level of experience or knowledge of the project doesn't matter here. We all have something we can contribute. Be confident in yourself. The most important thing here is the will to help.
@@ -32,7 +32,7 @@ Something worth mentioning here is that every open-source community is different
 Most projects will have these documents at the top level of the repository:
 
 - **LICENSE**: The project must contain an [open-source license](https://choosealicense.com/). If the project doesn't have a license, it's not open source.
-- **README**: The README usually serves as the welcome page for the project. It usually provides information on how to get started using the project. It's also common for it to add information on how to engage with the community.
+- **README**: The README file usually serves as the welcome page for the project. It usually provides information on how to get started using the project. It's also common for it to add information on how to engage with the community.
 - **CONTRIBUTING**: As its name suggests, this document provides guidance on how to contribute to the project. It usually describes how the contribution process works and includes details on how to set your development environment.
 - **CODE_OF_CONDUCT**: The code of conduct sets ground rules for community members. By doing so, it helps make the community a safe and welcoming environment for all.
 

@@ -6,7 +6,7 @@ You'll find frequent contributors to the project in the comment section for issu
 
 You can also find like-minded folks by attending meetups or conferences on open-source topics. Or, you can meet people if the project or ecosystem is large enough around the project you're interested in. Find archives with talk recordings for past events, podcasts, newsletters, and mailing lists.
 
-Some projects have centralized communication, which is often referenced on the project's website or in the README. There might be a Discord server, a Slack community, Gitter, IRC, or even regular "office hours."
+Some projects have centralized communication, which is often referenced on the project's website or in the README file. There might be a Discord server, a Slack community, Gitter, IRC, or even regular "office hours."
 
 ## Code reusability
 
@@ -22,4 +22,4 @@ GitHub Actions are packaged scripts that automate tasks in a software developmen
 
 For all three of the suggested paths, consider that you're now a maintainer of a project. People will come to you with praise, questions, and complaints. Are you ready for such a commitment?
 
-If your project takes off, people's apps might depend on your bit of code. Can you involve more people to take some of the potential load off? Do you have time to add documentation, triage issues, and review suggestions from people you've likely never met before? Consider your "bandwidth," and instead set expectations in your project's README. Or, you can release your code in a public gist or a blog post. Code doesn't need to be on GitHub to be open source after all.
+If your project takes off, people's apps might depend on your bit of code. Can you involve more people to take some of the potential load off? Do you have time to add documentation, triage issues, and review suggestions from people you've likely never met before? Consider your "bandwidth," and instead set expectations in your project's README file. Or, you can release your code in a public gist or a blog post. Code doesn't need to be on GitHub to be open source after all.

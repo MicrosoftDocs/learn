@@ -8,7 +8,7 @@ How can you ensure success when you communicate with other project members about
 
 ## Communicate your intent to maintainers
 
-You should always start by communicating your intent to contribute before you do any actual work. Unless indicated otherwise in the README, the issue tracker is usually the best place for doing that.
+You should always start by communicating your intent to contribute before you do any actual work. Unless indicated otherwise in the README file, the issue tracker is usually the best place for doing that.
 
 - If you want to work on an existing issue, check that nobody is assigned to it by looking at the **Assignees** section. Also check the **Linked pull requests** section. A linked pull request means somebody is already working on it. Look through the comments to see if someone stated their interest to work on the issue. If everything's clear, post a comment on the issue to indicate your interest to work on it. That way you're telling people who might come later that someone's working on the issue. Also, if needed, maintainers can reply to you with guidance and advice.
 
@@ -125,6 +125,6 @@ After the project maintainers come by your pull request, they can reply to the c
 
 ### Respond to comments on your pull request
 
-Remember to always be respectful in all your exchanges and to follow the CODE_OF_CONDUCT. It's likely that before your changes can be accepted, there will be an ongoing discussion with the maintainers or other contributors.
+Remember to always be respectful in all your exchanges and to follow the code of conduct. It's likely that before your changes can be accepted, there will be an ongoing discussion with the maintainers or other contributors.
 
 Contributing to open source requires patience. Sometimes you don't get immediate feedback. Don't reach out to the maintainers privately via email, Twitter, or any other means hoping to get a faster answer. This behavior is considered harmful. Discussing things publicly also gives other contributors or passersby the opportunity to learn about the process behind the changes and the best practices to follow.

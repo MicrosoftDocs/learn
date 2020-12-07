@@ -1,4 +1,4 @@
-You've learned how to create a pull request (PR) when there's guidance either in a pull request template or in a `CONTRIBUTING` file. But what if a project doesn't offer that guidance and documentation on conventions?
+You've learned how to create a pull request (PR) when there's guidance either in a pull request template or in a CONTRIBUTING file. But what if a project doesn't offer that guidance and documentation on conventions?
 
 ## Describe your changes
 
@@ -9,7 +9,7 @@ To write a good commit message, and subsequently your pull request, follow these
 - Include a succinct description of the change by using the imperative, present tense. For example, use *add* not *added* or *adds*.
 - Limit your subject line to 50 characters.
 - Start with a capital letter, and don't end with a period (.).
-- You can use emojis in your subject line and *@mention* other GitHub users, but not everyone is a fan of such frivolity.
+- You can use emojis in your subject line and `@mention` other GitHub users, but not everyone is a fan of such frivolity.
 
 For the body of your message and pull request, continue to use present tense. Make sure to include the motivation for the change. Contrast your change with the previous behavior. Use the space at your disposal to explain the *what* and *why* versus the *how*.
 
