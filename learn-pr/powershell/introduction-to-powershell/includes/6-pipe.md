@@ -115,7 +115,7 @@ Get-Process | Where-Object Name -eq name-of-process | Select-Object Name
 Often, a cmdlet that offers filtering is more efficient than using `Where-Object`. Here's a more efficient version of the preceding statement:
 
 ```powershell
-Get-Process | -Name name-of-process | Select-Object Name
+Get-Process -Name name-of-process | Select-Object Name
 ```
 
 In this version, the parameter `-Name` does the filtering for you.
