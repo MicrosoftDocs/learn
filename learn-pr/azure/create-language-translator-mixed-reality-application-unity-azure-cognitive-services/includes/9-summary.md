@@ -6,6 +6,7 @@ You integrated the Azure Cognitive Services Speech Translation service into a Mi
 
 ## Further reading
 
+- Sign up for the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/en-US/signup/?Place=APRIL) to receive the latest on mixed reality developer tools, events, and early access offers.
 - View a [list of languages](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#speech-translation?azure-portal=true) that the Speech Translation API supports.
 - Learn about [Custom Translator](https://docs.microsoft.com/azure/cognitive-services/translator/custom-translator/overview?azure-portal=true).
 - Explore guidelines for [designing content for holographic display](https://docs.microsoft.com/windows/mixed-reality/design/designing-content-for-holographic-display?azure-portal=true).
