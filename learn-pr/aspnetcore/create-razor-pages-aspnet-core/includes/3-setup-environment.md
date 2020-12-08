@@ -14,7 +14,6 @@ The preceding command:
 
 * Installs a specific version of the .NET SDK in the Cloud Shell environment.
 * Clones the ASP.NET Core starter code from a GitHub repository.
-* Builds the ASP.NET Core starter code.
 * Provisions an Azure App Service instance and deploys the web API to it.
 * Provisions a separate App Service instance for the Razor Pages app.
 * Displays the URL for the web API hosted in App Service.

@@ -82,4 +82,4 @@ Now that your app is hosted on a public endpoint, let's tour the unfinished app.
 
     This Razor Page has requested a list of available products from the web API. Currently, you can only choose to read the current list of products and edit or delete an existing product.
 
-You've verified you can successfully build, run, and deploy the existing project. Let's modify it so the user can create new product entries that are validated and sent to the web API.
+You've verified you can successfully compile, run, and deploy the existing project. Let's modify it so the user can create new product entries that are validated and sent to the web API.

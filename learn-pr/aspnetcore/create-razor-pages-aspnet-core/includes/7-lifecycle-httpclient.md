@@ -144,4 +144,4 @@ Once the ASP.NET Core runtime determines the `HttpClient` instance is no longer 
 
 You now have a completed project that includes a new *:::no-loc text="Create":::* Razor page and its `PageModel` class. You've also walked through how the `PageModel` injects and calls the `ProductService` class methods that encapsulate HTTP request logic.
 
-Next let's build, deploy, and test your updated project.
+Next let's compile, deploy, and test your updated project.

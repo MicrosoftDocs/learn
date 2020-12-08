@@ -18,7 +18,7 @@ Now that you've added a *:::no-loc text="Create":::* Razor Page form and its *::
     dotnet build
     ```
 
-    The preceding command rebuilds the project with your latest saved changes.
+    The preceding command compiles the project with your latest saved changes.
 
 ### Deploy the app to a public endpoint hosted on Azure App Service
 
