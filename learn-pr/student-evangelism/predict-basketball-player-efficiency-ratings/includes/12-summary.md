@@ -8,7 +8,8 @@ In this module, you started with publicly available data about professional bask
 
 You can use the `player_data_final.csv` file that you created to determine the best draft picks for a combined human and Tune Squad team. Or you can use this data to make decisions in the heat of the game. For example, in the next module in this learning path, you'll use the data to create an app that a coach can use to figure out which player should be given a water break during a game. 
 
-This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video?azure-portal=true).
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video?azure-portal=true).
 
 :::image type="content" source="../media/space-jam-end-card.png" alt-text="Logo for Space Jam: A New Legacy.":::
 
