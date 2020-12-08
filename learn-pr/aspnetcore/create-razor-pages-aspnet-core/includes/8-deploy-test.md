@@ -63,4 +63,4 @@ You can launch the app at http://webapp<random ID number here>.azurewebsites.net
     * The form data is sent to the web API via an HTTP POST request.
     * You're returned to the products page, which displays the new product in the list.
 
-1. When you're finished testing your app, close the browser. In the command shell, press <kbd>Ctrl+C</kbd> to stop the app.
+1. When you're finished testing your app, close the browser.
