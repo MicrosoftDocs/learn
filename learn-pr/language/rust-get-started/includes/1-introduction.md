@@ -1,4 +1,4 @@
-With the Rust programming language, you can build reliable and efficient software, like network programming (such as web servers, mails servers, and web browsers) and systems programming (such as compilers and interpreters, virtualization and software containers, databases, operating systems, and cryptography). You can also build games, media processing, command line programs, web assembly, and embedded programming.
+With the Rust programming language, you can build reliable and efficient software, like network programming (such as web servers, mails servers, and web browsers) and systems programming (such as compilers and interpreters, virtualization and software containers, databases, operating systems, and cryptography). You can also build games, media processing, command-line programs, web assembly, and embedded programming.
 
 ## What's the best way to learn Rust?
 
