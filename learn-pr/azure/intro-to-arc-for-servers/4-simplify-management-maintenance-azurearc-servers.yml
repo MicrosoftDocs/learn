@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content:  "What is the simplest method to identify the manufacturer and model of hardware of an Azure Arc enabled server?"
+  - content:  "What is the simplest method to identify the operating system of an Azure Arc enabled server?"
     choices:
     - content: "Integrate the server with Azure Monitor and run a Log Analytics query."
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
       isCorrect: true
       explanation: "That's correct. The blade allows the administrator to readily identify server name, OS version, OS build, manufacturer, model, serial number, the number of CPU cores, and the amount of memory."
 
-  - content: "What is the primary benefit of Azure Arc enabled servers in regard to Azure Monitor comparing with servers which are not Azure Arc enabled?"
+  - content: "What is the primary Azure Monitor-related benefit of Azure Arc enabled servers comparing with servers which are not Azure Arc enabled?"
     choices:
     - content: "The ability to capture diagnostic logs."
       isCorrect: false

@@ -28,7 +28,7 @@ quiz:
       isCorrect: true
       explanation: "That's correct. In each of the Azure Arc enabled scenarios, Azure Arc leverages the locally installed Connected Machine agents to establish a logical connection between the local resource and Azure."
 
-  - content: "Which of the following operating systems is not supported by Azure Arc enabled servers?"
+  - content: "Which of the following operating system are not supported by Azure Arc enabled servers?"
     choices:
     - content: "Windows Server 2012 R2"
       isCorrect: false
