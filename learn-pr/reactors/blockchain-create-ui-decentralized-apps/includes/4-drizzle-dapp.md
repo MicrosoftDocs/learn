@@ -29,8 +29,8 @@ The Truffle Drizzle box comes with three contracts that use the Drizzle componen
 Let's compile and migrate these contracts before we explore the app components in detail.
 
 1. From within Visual Studio Code, open the terminal by going to **Terminal** > **New Terminal**. Then start the Ganache CLI by entering `ganache-cli`.
-1. Right-click on any of the contracts and select **Build contracts**. Wait for the build and compilation to successfully finish.
-1. Right-click on any of the contracts again and select **Deploy contracts**. When the menu option for deploy destination appears, select the **develop** network. Wait a minute for the migration to complete successfully.
+1. Right-click on any of the contracts and select **Build Contracts**. Wait for the build and compilation to successfully finish.
+1. Right-click on any of the contracts again and select **Deploy Contracts**. When the window for deploy destination appears, select the **develop** network. Wait a minute for the migration to complete successfully.
 
 ## Explore the dapp components
 
