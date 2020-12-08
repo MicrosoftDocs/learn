@@ -58,9 +58,9 @@ You can launch the app at http://webapp<random ID number here>.azurewebsites.net
 
 1. Enter any product name in the **:::no-loc text="Name":::** text box. Enter `30` in the **:::no-loc text="Price":::** text box. Select the **:::no-loc text="Save":::** button.
 
-    If the form fields passed validation:
+    The form fields passed validation. For that reason:
 
-    * The web API accepts the new data.
+    * The form data is sent to the web API via an HTTP POST request.
     * You're returned to the products page, which displays the new product in the list.
 
 1. When you're finished testing your app, close the browser. In the command shell, press <kbd>Ctrl+C</kbd> to stop the app.
