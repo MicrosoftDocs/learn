@@ -10,7 +10,7 @@ Dapps are:
 
 - **Decentralized**. They run independently on a decentralized network and are not controlled by a centralized authority.
 - **Deterministic**. They perform the same function no matter which environment runs the code.
-- **[Turing complete](https://en.wikipedia.org/wiki/Turing_completeness?azure-portal=true?azure-portal=true)**. They can perform any action that can be coded.
+- **Turing complete**. They can perform any action that can be coded.
 - **Isolated**. They're run in a virtual environment called an
 [Ethereum Virtual Machine](https://ethereum.org/en/developers/docs/evm/?azure-portal=true?azure-portal=true). That way, bugs or other problems won't affect other blocks or the normal functioning of the blockchain network.
 
@@ -32,6 +32,6 @@ Just like blockchain solutions are being created in nearly every industry, dapps
 
 [OpenSea](https://opensea.io?azure-portal=true?azure-portal=true) is a platform where you can buy, sell, and discover limited-edition goods. The dapp allows users to browse items and make an offer or buy for the price listed. Users can also list their goods for sale.
 
-[Cryptokitties](https://www.cryptokitties.co/) is a gaming dapp where you can breed, collect, and sell unique cryptographic kittens. Aditionally, you can do things like solve puzzles, earn rewards, and play games with your kitties.
+[Cryptokitties](https://www.cryptokitties.co?azure-portal=true?azure-portal=true) is a gaming dapp where you can breed, collect, and sell unique cryptographic kittens. Aditionally, you can do things like solve puzzles, earn rewards, and play games with your kitties.
 
-[Brave](https://brave.com/) is a fast and private browser that allows you to earn tokens called BAT that can be donated or converted into a currency of your choice.
+[Brave](https://brave.com?azure-portal=true?azure-portal=true) is a fast and private browser that allows you to earn tokens called BAT that can be donated to web creators, and will soon be able to be spent on gift cards and more rewards.
