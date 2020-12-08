@@ -128,7 +128,7 @@ player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15) & (player
 
 You could reasonably expect these rows to represent the Tune Squad players. For the purposes of this module, the 16 Tune Squad players were in fact added to the very end of the dataset. If you didn't know that detail, though, you could reasonably assume the data was compiled from two different datasets, where the second dataset was added to the end of the first dataset. 
 
-The rows for player IDs 34 and 40 aren't a part of this set. You removed 40 earlier because the points in that row were only 183. Now look at player ID 34:
+The rows for player IDs 34 and 40 aren't a part of this set. Although index 34 and index 40 appear, the IDs 34 and 40 don't. You removed 40 earlier because the points in that row were only 183. Now look at player ID 34:
 
 ```python
 player_df.loc[player_df['ID'] == 34]

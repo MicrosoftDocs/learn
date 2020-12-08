@@ -33,7 +33,7 @@ Ideally, you would produce the box plots for your columns in a single matrix tha
 
 Because of how the Seaborn library in Python works, you need to explicitly state the cell in the matrix where you want to render each box plot. Use the Python floor-division operator (`//`) to divide the 13 columns of interest (you don't need to look at `ID`) into rows. Use the modulo operator (`%`) to derive the column.
 
-First, import the Matplotlib and Seaborn libraries into your notebook:
+First, import the Matplotlib and [Seaborn](https://seaborn.pydata.org) libraries into your notebook:
 
 ```python
 import matplotlib.pyplot as plt
@@ -93,7 +93,7 @@ points_outlier
 ```
 
 ```python
-# Identify the index number of the row that has the lowest value in 'points'.
+# Identify the index number of the row that has the lowest value in 'possession'.
 possession_outlier = player_df['possessions'].idxmin()
 possession_outlier
 ```
@@ -129,7 +129,7 @@ player_df.tail(10)
 | 41 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
 | 42 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
-Like the `head()` function, the `tail()` function shows the last five values of a DataFrame. And, sure enough, you've removed the row you needed to remove (row index 35).
+Like the `head()` function, the `tail()` function shows the last five values of a DataFrame. And, sure enough, you've removed the row you needed to remove (for example, the row where the index is 35).
 
 You can reset the index for the DataFrame again to ensure accuracy within the data:
 

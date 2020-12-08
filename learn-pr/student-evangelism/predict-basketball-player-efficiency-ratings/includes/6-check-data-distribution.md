@@ -52,7 +52,10 @@ Another common technique is to replace missing values in a column with the avera
 
 A common way to visualize the distribution of data is a histogram. A *histogram* is a bar chart that shows how many times the data in a dataset appears within a range of values. Ranges are called *bins*. You'll produce a pretty granular view of the data by using 30 bins to construct histograms.
 
-No built-in function in Python or in commonly used libraries plots multiple histograms. So you'll create the histograms by using a `for` loop as you did with the box plots. (Matplotlib is a little easier than Seaborn when it comes to histograms. You can just plot the histograms sequentially without explicitly stating the column and row for each histogram.)
+No built-in function in Python or in commonly used libraries plots multiple histograms. So you'll create the histograms by using a `for` loop as you did with the box plots. 
+
+>[!NOTE]
+>Matplotlib is a little easier than Seaborn when it comes to histograms. You can just plot the histograms sequentially without explicitly stating the column and row for each histogram.
 
 ```python
 # Create a list of all column names, except for 'ID'.

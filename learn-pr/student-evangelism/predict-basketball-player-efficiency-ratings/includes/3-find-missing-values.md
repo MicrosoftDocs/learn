@@ -1,8 +1,8 @@
 Basketball is full of statistics. You'll use some of them to make decisions about the hypothetical basketball team in this module. 
 
-To make good decisions, you need good data. Throughout this module, you'll use a dataset that's based on publicly available [stats from the NBA](https://www.nba.com/stats/leaders/?azure-portal=true). You'll also use stats we created based on Tune Squad characters. All of the data is anonymized.
+To make good decisions, you need good data. Throughout this module, you'll use a dataset that's based on publicly available [basketball stats](https://www.nba.com/stats/leaders/?azure-portal=true). You'll also use stats we created based on Tune Squad characters. All of the data is anonymized.
 
-As fans, we can't influence the methodology the NBA follows to gather data. This detail introduces some questions:
+As fans, we can't influence the methodology for gathering data. This detail introduces some questions:
 
 - Were best practices used to gather the data?
 - Were biases introduced in the data?
@@ -56,7 +56,7 @@ Many of these data points make sense in the context of basketball. But even with
 
 The important thing to understand is that each of these columns lists data that can be counted during a game, except for the PER column. *PER* (player efficiency rating) is a calculation based on all of the other player stats. It determines "how good" a player is. 
 
-You can use the PER column to predict how effective a player is during a game. As of this writing, the NBA player who has the highest PER is Michael Jordan. His score is 27.91. The NBA player who has the second-highest rating, and the highest rating of currently active NBA players, is LeBron James. His score is 27.49.
+You can use the PER column to predict how effective a player is during a game. As of this writing, the basketball player who has the highest PER is Michael Jordan. His score is 27.91. The player who has the second-highest rating, and the highest rating of currently active professional basketball players, is LeBron James. His score is 27.49.
 
 The calculation of PER isn't perfect. Some fans and data scientists might choose to evaluate players differently. But in this module, you'll use PER as the measurement to help make decisions about players before and during games.
 

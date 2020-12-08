@@ -18,7 +18,8 @@ This image provides a visualization of the cross-validation process:
 
 Here you'll use a *10-fold* cross validation. That is, Python will iterate through the data 10 times, reserving 10 percent of the data for testing and training on the other 90 percent of the data each time. You'll also plot a histogram of the results.
 
-As you read the Python code, keep in mind that you define the  predictors as `X` by longstanding convention. For the purposes of building your model, you should use only rows that contain `NaN` values (`player_df.dropna(how='any')`). Then use the `iloc` DataFrame attribute to select columns by number rather than name (`iloc[:, 4:-1]`). Finally, use only the values from the resulting DataFrame slice rather than the slice in DataFrame form. (Here, the `to_numpy()` method is preferred over the DataFrame `values` attribute, per the `pandas.DataFrame.values` [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.values.html?azure-portal=true)). 
+>[!NOTE]
+>As you read the Python code, keep in mind that you define the  predictors as `X` by longstanding convention. For the purposes of building your model, you should use only rows that contain `NaN` values (`player_df.dropna(how='any')`). Then use the `iloc` DataFrame attribute to select columns by number rather than name (`iloc[:, 4:-1]`). Finally, use only the values from the resulting DataFrame slice rather than the slice in DataFrame form. (Here, the `to_numpy()` method is preferred over the DataFrame `values` attribute, per the `pandas.DataFrame.values` [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.values.html?azure-portal=true)). 
 
 The code of the predicted value (`y`) is similar to the code for `X`, except that you don't have to scrape out just the values.
 

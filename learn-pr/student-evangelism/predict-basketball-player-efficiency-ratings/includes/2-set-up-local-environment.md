@@ -1,4 +1,4 @@
-In *Space Jam: A New Legacy* we see NBA star LeBron James, passionate about basketball, in contrast to his son, Dom, who is passionate about digital technology. With those seemingly different passions in mind, you'll now dive into how coding can play a role in basketball, particularly in understanding players based on their stats.
+In *Space Jam: A New Legacy* we see basketball star LeBron James in contrast to his son, Dom, who is passionate about digital technology. With those seemingly different passions in mind, you'll now dive into how coding can play a role in basketball, particularly in understanding players based on their stats.
 
 Before jumping into the module, make sure your environment is set up and ready to go. You'll need a coding editor (we use Visual Studio Code), Python, and Jupyter notebooks. If you're using Visual Studio Code, make sure you have the Python extension installed.
 
