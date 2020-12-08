@@ -9,12 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Java EE (Jakarta EE) app to Azure
-summary: In this module, you'll look at practices to create and deploy a Java Web Application on Azure App Service.
+summary: In this module, you can learn how to deploy a general Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
 abstract: |
   After completing this module, you can:
-  - Create a PrimeFaces Java Web Application
-  - Configure your Java Project to deploy to Azure App Service
-  - Deploy your Java Web Application to Azure App Service
+  - Create and manage Azure Database for MySQL Flexible Server
+  - How to deploy your Java EE App to JBoss EAP on Azure App Service
+  - How to create DataSource and configure the Database Binding for your Apps.
+  - How to access and manage the Admin Tool of JBoss
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -23,9 +24,13 @@ roles:
 products:
   - azure
 prerequisites: |
-  - Your Own Azure Subscription
-  - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
-  - [JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) and [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer
+  - [Azure CLI command]((https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada))
+  - [Java SE 8 (or 11)]((https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html))
+  - [git command](https://git-scm.com/downloads)
+  - [Maven command](https://maven.apache.org/download.cgi)
+  - [MySQL client command](https://dev.mysql.com/downloads/shell/)
+  - [jq command](https://stedolan.github.io/jq/)
+  - [Bash](https://www.gnu.org/software/bash/)
 units:
   - learn.azure.deploy-javaee-app-to-appservice.1-introduction
   - learn.azure.deploy-javaee-app-to-appservice.2-javaee-on-jboss
