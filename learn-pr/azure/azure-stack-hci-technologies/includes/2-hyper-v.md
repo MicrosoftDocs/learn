@@ -39,15 +39,13 @@ Hyper-V supports various scenarios ranging from hosting individual VMs to provid
 New releases of Windows Server and updates add features to Hyper-V for supporting different workloads, increase their performance and enhance their security. You can group Hyper-V's general features as follows:
 
 - Management and connectivity. You can manage your Hyper-V environment with the Windows Admin Center, Hyper-V Manager, Hyper-V module for Windows PowerShell, and Virtual Machine Connection (also referred to as VMConnect). You can install these tools on the computer with the Hyper-V server role, or you can install the tools on a remote management computer.
-- Portability. To make it easier to move or distribute a VM, Hyper-V provides features such as live migration, storage migration, and standard import/export functionality.
+- Portability. To make it easier to move or distribute a VM, Hyper-V provides features such as live migration, storage migration, and standard import/export functionality. 
 
 > [!NOTE]
 > Live Migration is a Hyper-V feature that allows you to move running VMs from one Hyper-V host to another while maintaining the availability of VM workloads. The primary benefit of live migration is flexibility. For example, you can decommission or upgrade a Hyper-V host on an as-needed basis, without having to schedule a maintenance window, by simply live migrating all of its VMs.
 
 > [!NOTE]
-> With Storage Migration, you move VM files, including disks, configuration, and checkpoints while the corresponding VM is running. This helps with resolving disk space issues on Hyper-V hosts. For example, if you have storage available on another Hyper-V cluster, you can use storage migration to transfer existing VM disk files to it without affecting availability of your virtualized workloads.
-
-Another common reason for moving VM disk files is to update the underlying physical storage. You can also move VM disks between physical storage devices in response to reduced performance resulting from increased I/O demand on one of them.
+> With Storage Migration, you move VM files, including disks, configuration, and checkpoints while the corresponding VM is running. This helps with resolving disk space issues on Hyper-V hosts. For example, if you have storage available on another Hyper-V cluster, you can use storage migration to transfer existing VM disk files to it without affecting availability of your virtualized workloads. Another common reason for moving VM disk files is to update the underlying physical storage. You can also move VM disks between physical storage devices in response to reduced performance resulting from increased I/O demand on one of them.
 
 - Disaster recovery and backup. Hyper-V supports Hyper-V Replica, which creates copies of VMs in other physical locations. You can use these copies to restore VM instances as needed. Other features such as production checkpoints and support for Volume Shadow Copy Service (VSS) facilitate application-consistent backups of VM states.
 - Security: Hyper-V supports security features such as secure boot and shielded VMs. Secure boot verifies digital signatures on files during the boot process to help protect against malware. Virtual disks in shielded VMs are encrypted to secure access and the VMs can only run on specific protected hosts.
