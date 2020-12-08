@@ -8,13 +8,13 @@ In this unit, you create a simple project structure that includes three files: a
 
    When you open Visual Studio Code, the **Welcome** page opens. Notice you can create a new file or open a folder. You can also accomplish this by going to **File > New File**.
 
-   ![Screenshot of Visual Studio Code welcome window](../media/vs-code-welcome.png)
+   :::image type="content" source="../media/vs-code-welcome.png" alt-text="Screenshot of Visual Studio Code welcome window":::
 
    If not visible, you can display the **Welcome** window by navigating to **Help > Welcome**. Alternately, select **View > Command Palette** or the keyboard shortcut Shift+Command+P. Then in the search field enter **>Help: Welcome**.
 
 1. Select **Open folder** in the Start section of the Welcome page, or go to **Folder > Open**.
 
-   ![Screenshot of Visual Studio Code open folder](../media/vs-code-open-folder.png)
+   :::image type="content" source="../media/vs-code-open-folder.png" alt-text="Screenshot of Visual Studio Code open folder":::
 
    When opening a folder, the operating system provides a button to create a **New Folder**.
 
@@ -34,7 +34,7 @@ In this unit, you create a simple project structure that includes three files: a
 
    Under the folder name in the Explorer window, you see the three files that comprise your web site.
 
-   ![Screenshot of your files in VS Code Explorer view](../media/vs-code-explorer-view.png)
+   :::image type="content" source="../media/vs-code-explorer-view.png" alt-text="Screenshot of your files in VS Code Explorer view":::
 
 You could build a website all in one text file or HTML file. Here you're using an HTML file for content and page structure. A CSS file is for presentation and styling. The JavaScript file is for behaviors and interactivity.
 
@@ -52,7 +52,7 @@ To install this extension:
 
 1. Type "open in" in the search bar, then select **open in browser**, published by TechER, and choose **Install**. The extension gets installed.
 
-   ![Screenshot of finding a VS Code extension](../media/vs-code-get-extension.png)
+   :::image type="content" source="../media/vs-code-get-extension.png" alt-text="Screenshot of finding a VS Code extension":::
 
 1. Switch back to the Explorer window.
 

@@ -104,7 +104,7 @@ You need some way to let the user switch between the light and dark theme in you
       --btnBg: var(--black);
       --btnFontColor: var(--white);
     }
-    
+
     .dark-theme {
       --bg: var(--black);
       --fontColor: var(--green);
@@ -182,11 +182,11 @@ As before, even though you were just editing the `app.js` file, to preview the c
 
    The webpage opens in your default browser.
 
-   ![Screenshot of website with the button](../media/chrome-light-theme-with-button.png)
+   :::image type="content" source="../media/chrome-light-theme-with-button.png" alt-text="Screenshot of website with the button":::
 
 1. Click the new **Dark** button to switch to the dark theme.
 
-   ![Screenshot of website after switching to dark theme](../media/chrome-dark-theme-with-button.png)
+   :::image type="content" source="../media/chrome-dark-theme-with-button.png" alt-text="Screenshot of website after switching to dark theme":::
 
 1. Make sure that everything looks correct.
 
@@ -208,6 +208,6 @@ As before, even though you were just editing the `app.js` file, to preview the c
 
 1. Select the **Console** tab to see the `console.log` message, "current class name: light-theme dark-theme".
 
-![Screenshot of console message in Chrome](../media/chrome-console-output.png)
+:::image type="content" source="../media/chrome-console-output.png" alt-text="Screenshot of console message in Chrome":::
 
 Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, the last class name applied, the dark theme, takes precedence. In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strike though text.

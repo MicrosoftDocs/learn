@@ -100,7 +100,7 @@ You can preview your webpage locally by opening the HTML file in a browser. Inst
 
 - To preview using **Visual Studio Code**, select `index.html` and select **Open In Default Browser** or use the keyboard shortcut Alt+B.
 
-  ![Screenshot of Open in Browser in Visual Studio Code](../media/vs-code-open-in-browser.png)
+   :::image type="content" source="../media/vs-code-open-in-browser.png" alt-text="Screenshot of Open in Browser in Visual Studio Code":::
 
   > [!IMPORTANT]
   > If you're having trouble, make sure you're directly selecting on the filename icon or text.
@@ -117,7 +117,7 @@ You can inspect a webpage by using the developer tools in your browser. Let's gi
 
    - In **Chrome**, press the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
 
-   ![Screenshot of the Chrome developer tools](../media/chrome-developer-tools-elements-tab.png)
+   :::image type="content" source="../media/chrome-developer-tools-elements-tab.png" alt-text="Screenshot of the Chrome developer tools":::
 
 1. Select the **Elements** tab.
 

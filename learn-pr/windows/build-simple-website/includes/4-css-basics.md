@@ -101,7 +101,7 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
   The webpage opens in your default browser. Notice that the light theme using a green background appears.
 
-  ![Screenshot of website with light theme applied](../media/chrome-light-theme.png)
+  :::image type="content" source="../media/chrome-light-theme.png" alt-text="Screenshot of website with light theme applied":::
 
 ## View applied CSS
 
@@ -123,7 +123,7 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
 1. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
-![Screenshot of website with light theme applied](../media/chrome-light-theme-in-dev-tools.png)
+:::image type="content" source="../media/chrome-light-theme-in-dev-tools.png" alt-text="Screenshot of website with light theme applied":::
 
 ## Add a dark theme
 
@@ -178,7 +178,7 @@ To set up support for a dark theme:
 
 1. To view the dark theme, manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
 
-   ![Screenshot of website with dark theme applied](../media/chrome-dark-theme.png)
+   :::image type="content" source="../media/chrome-dark-theme.png" alt-text="Screenshot of website with dark theme applied":::
 
 1. Edit the `<body>` element to switch the default back to light theme.
 

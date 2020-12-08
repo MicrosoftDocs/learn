@@ -11,7 +11,7 @@ Imagine that you're a web developer, and you're asked to make your company's web
 
 When completed, the simple website will look like this, when the dark theme is selected.
 
-![Website showing dark theme](../media/chrome-themed-website.png)
+:::image type="content" source="../media/chrome-themed-website.png" alt-text="Website showing dark theme":::
 
 ## What's in a web page?
 
