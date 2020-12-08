@@ -1,5 +1,7 @@
 Cascading Style Sheets (CSS) let you specify how your page should look. The basic idea is to target HTML code then define what the style should be. For example, you can select a box and apply rounded corners or give the box a gradient background. CSS is responsible for determining how hyperlinks look and respond when you interact with them—although you define the destination address in HTML. In CSS3, you can also do sophisticated animation effects.
 
+In this unit, you apply CSS styles to page elements, add CSS code to support light and dark themes, and check the results in developer tools.
+
 ## External CSS
 
 In the previous unit on HTML, you linked to an external CSS file from HTML.
@@ -41,7 +43,7 @@ What you're selecting is an existing element that you previously defined in HTML
 
 *ID* and *class selectors* allow you to apply styles to custom attribute names in your HTML. An ID is used to style one element, whereas classes can style multiple elements.
 
-1. Copy the following code into your CSS file, after the `ul` selector.
+1. Copy the following code into your CSS file, after the `ul` selector you added previously.
 
     ```css
     li {
@@ -59,7 +61,7 @@ What you're selecting is an existing element that you previously defined in HTML
 
    The preceding custom attributes are called `.list` and `#msg`. The class selector *list* has a period prefix, while the ID selector is *msg* and has a pound sign prefix. The names are arbitrary so long as they match what you've defined in the HTML.
 
-1. Save your work with the keyboard shortcut Control+S (Windows) or Command+S (macOS).
+1. Save your work by pressing the keyboard shortcut Control+S (Windows) or Command+S (macOS).
 
 ## View in browser
 
@@ -103,9 +105,11 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
 ## View applied CSS
 
-- In **Edge**, press the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
+1. Open developer tools.
 
-- In **Chrome**, press the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
+   - In **Edge**, press the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
+
+   - In **Chrome**, press the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
 
 1. Select the **Styles** tab.
 

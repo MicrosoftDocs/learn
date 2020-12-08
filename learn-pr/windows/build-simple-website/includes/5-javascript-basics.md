@@ -1,5 +1,7 @@
 JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your webpage. When you select a button, JavaScript is the code that defines the event or behavior that will happen, such as open a popup window. Using JavaScript, you can add or remove content like text from the webpage without reloading it. As a web developer, you can use the browser to test and get feedback about your scripts.
 
+In this unit, you set up the JavaScript file, create a button to switch between light and dark themes, and then wire up the button to JavaScript code that performs the actual theme switching. When this is done, you check the finished project in developer tools.
+
 ## Link to JavaScript
 
 Like CSS, you could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
@@ -19,7 +21,7 @@ Like CSS, you could add JavaScript directly to the HTML page, but it's better no
 
 The script element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` at the end of the `<body>` section allows all the page content to display on the screen first, then load the script.
 
-## No script
+## Add fault tolerance
 
 1. In the HTML file, add the `<noscript>` element, which can be used to show a message if JavaScript is deactivated.
 
@@ -190,9 +192,11 @@ As before, even though you were just editing the `app.js` file, to preview the c
 
 ## Check the page in the developer tools
 
-- In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, you can view **Settings and more** with Alt+X and select **Developer Tools**.
+1. Open developer tools.
 
-- In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is Option+Command+J. (F12 also works.)
+   - In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, you can view **Settings and more** with Alt+X and select **Developer Tools**.
+
+   - In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is Option+Command+J. (F12 also works.)
 
 1. Select the **Styles** tab.
 

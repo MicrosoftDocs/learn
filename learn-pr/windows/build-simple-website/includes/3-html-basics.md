@@ -1,5 +1,7 @@
 At the moment you have an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page the browser should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
 
+In this unit, you add basic HTML content, open the HTML page in the browser, and get your first look at the developer tools.
+
 ## Add some HTML code
 
 Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting.
@@ -109,11 +111,13 @@ You can preview your webpage locally by opening the HTML file in a browser. Inst
 
 You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
 
-- In **Edge**, press the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
+1. Open developer tools.
 
-- In **Chrome**, press the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
+   - In **Edge**, press the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
 
-  ![Screenshot of the Chrome developer tools](../media/chrome-developer-tools-elements-tab.png)
+   - In **Chrome**, press the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
+
+   ![Screenshot of the Chrome developer tools](../media/chrome-developer-tools-elements-tab.png)
 
 1. Select the **Elements** tab.
 

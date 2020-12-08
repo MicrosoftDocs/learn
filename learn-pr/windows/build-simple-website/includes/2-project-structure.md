@@ -1,5 +1,7 @@
 There are different ways to create and manage website projects. Some variation occurs depending on the specific tools you have, and also the preferences of your organization. When creating a website, it's not uncommon for your project structure to change over time as it becomes more complicated. The key is to keep a semblance of organization, and there are common strategies to help. Large projects often require a higher degree of care and attention so that many people can keep everything straight.
 
+In this unit, you create a simple project structure that includes three files: an HTML file, a CSS file, and a JavaScript file. You also add a VS Code extension to simplify running the web site in the browser.
+
 ## Create a new folder
 
 1. Open Visual Studio Code
@@ -20,17 +22,17 @@ There are different ways to create and manage website projects. Some variation o
 
 ## Create some files
 
-1. Go to **File > New**.
+1. Select **File > New File**.
 
-1. Save the file with Control+S (Windows) or Command+S (macOS). Name the file `index.html`.
+1. Save the file using Control+S (Windows) or Command+S (macOS). Name the file `index.html`.
 
-1. Repeat the preceding steps to create two more files, `main.css` and `app.js`. When you're finished, your project folder will contain the following files that comprise your web site:
+1. Repeat the preceding steps to create two more files, `main.css` and `app.js`. When you're finished, your project folder will contain the following files that make up your web site:
 
    - index.html
    - main.css
    - app.js
 
-   Under the folder name in the Explorer window, you see the three files that make up your web site.
+   Under the folder name in the Explorer window, you see the three files that comprise your web site.
 
    ![Screenshot of your files in VS Code Explorer view](../media/vs-code-explorer-view.png)
 
