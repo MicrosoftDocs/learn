@@ -26,18 +26,14 @@ The starter code cloned by the setup script consists of two projects. One projec
 
 The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the Cloud Shell editor. The following table outlines noteworthy project files and directories. Examine each of them in the Cloud Shell editor window.
 
-| Name                                        | Description                                                                                  |
-|---------------------------------------------|----------------------------------------------------------------------------------------------|
-| *:::no-loc text="Pages/":::*                | Contains Razor Pages and supporting files. Each Razor page is a pair of files:               |
-|                                             | * A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax. |
-|                                             | * A *:::no-loc text=".cshtml.cs":::* `PageModel` class file that defines:                    |
-|                                             | * Page handlers for requests sent to the page.                                               |
-|                                             | * Data used to render the page.                                                              |
-| *:::no-loc text="wwwroot/":::*              | Contains static asset files, such as HTML, JavaScript, and CSS.                              |
-| *:::no-loc text="Models/":::*               | Contains Model files. This project uses one central model file for model validation.         |
-| *:::no-loc text="Program.cs":::*            | Contains the app's managed entry point.                                                      |
-| *:::no-loc text="ContosoPets.Ui.csproj":::* | Contains configuration metadata for the project, such as dependencies.                       |
-| *:::no-loc text="Startup.cs":::*            | Configures app behavior, such as routing between pages.                                      |
+| Name                                        | Description                                                                                                                     |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| *:::no-loc text="Pages/":::*                | Contains Razor Pages and supporting files. Each Razor page is a pair of files:<br>* A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax.<br>* A *:::no-loc text=".cshtml.cs":::* `PageModel` class file that defines page handler methods and data used to render the page.                                      |
+| *:::no-loc text="wwwroot/":::*              | Contains static asset files, such as HTML, JavaScript, and CSS.                                                                 |
+| *:::no-loc text="Models/":::*               | Contains Model files. This project uses one central model file for model validation.                                            |
+| *:::no-loc text="ContosoPets.Ui.csproj":::* | Contains configuration metadata for the project, such as dependencies.                                                          |
+| *:::no-loc text="Program.cs":::*            | Serves as the app's managed entry point.                                                                                        |
+| *:::no-loc text="Startup.cs":::*            | Configures app behavior, such as routing between pages.                                                                         |
 
 ### Razor page files and their paired *PageModel* class file
 

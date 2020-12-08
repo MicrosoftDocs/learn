@@ -1,6 +1,6 @@
-In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add an HTTP POST event handler method for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add an HTTP POST page handler for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
 
-## Examine the structure of a basic Razor Pages *:::no-loc text="PageModel":::* class file
+## Examine the structure of a basic Razor Pages *:::no-loc text="PageModel":::* class
 
 Open the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="Pages/Products":::* directory. You may remember, that when you created a new Razor Page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It should contain the following C# code:
 
@@ -26,14 +26,14 @@ namespace ContosoPets.Ui.Pages.Products
 A Razor Page's *:::no-loc text="PageModel":::* class file defines any page handlers for requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor Page, your app more modular, and much easier to maintain.
 By convention, the *:::no-loc text="PageModel":::* class is named *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
 
-Currently, the `CreateModel` class handles the HTTP GET request with an empty `OnGet` handler method. You can add handler methods for any HTTP verb. The most common handlers are:
+Currently, the `CreateModel` class handles the HTTP GET request with an empty `OnGet` page handler. You can add handlers for any HTTP verb. The most common handlers are:
 
 * `OnGet` to initialize state needed for the page.
 * `OnPost` to handle form submissions.
 
-The *:::no-loc text="Create":::* page contains a form and therefore requires an HTTP POST handler.
+The *:::no-loc text="Create":::* page contains a form and therefore requires an HTTP POST page handler.
 
-## Add an HTTP POST handler to the *:::no-loc text="PageModel":::* class
+## Add an HTTP POST page handler to the *:::no-loc text="PageModel":::*
 
 Replace the code in the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class with the following code. Save your changes.
 
@@ -73,9 +73,9 @@ namespace ContosoPets.Ui.Pages.Products
 }
 ```
 
-The `CreateModel` class now has an asynchronous `OnPostAsync` handler method. `OnPostAsync` executes when the user posts the *:::no-loc text="Create":::* page's form. The *:::no-loc text="Async":::* naming suffix is optional but is a common naming convention for asynchronous methods.
+The `CreateModel` class now has an asynchronous `OnPostAsync` page handler. `OnPostAsync` executes when the user posts the *:::no-loc text="Create":::* page's form. The *:::no-loc text="Async":::* naming suffix is optional but is a common naming convention for asynchronous methods.
 
-The `OnPostAsync` handler will need to do the following tasks for this app:
+The `OnPostAsync` page handler needs to perform the following tasks for this app:
 
 * Verify the user-submitted data posted to the *:::no-loc text="PageModel":::* is valid.
 * If the attempted *:::no-loc text="PageModel":::* changes are invalid, the *:::no-loc text="Create":::* page is presented again to the user. A message is displayed clarifying the input requirements.
@@ -94,7 +94,7 @@ Binding to properties can reduce the amount of code you have to write. Binding r
 
 ## Built-in server-side model validation using ASP.NET Core data annotations
 
-Model binding and validation are available when you create a ASP.NET Core web app. Both automatically occur before the execution of a Razor Page's handler method. So the `OnPostAsync` handler method only needs to verify the outcome of that validation.
+Model binding and validation are available when you create a ASP.NET Core web app. Both automatically occur before the execution of a page handler. So the `OnPostAsync` page handler only needs to verify the outcome of that validation.
 
 ```csharp
 if (!ModelState.IsValid)
@@ -105,7 +105,7 @@ if (!ModelState.IsValid)
 
 In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *:::no-loc text="Create":::* page is presented again to the user. In the previous unit, you saw how the *:::no-loc text="Create":::* Razor page takes advantage of ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
 
-If the `ModelState` is valid, the `OnPostAsync` handler calls upon an instance of `ProductService`. `ProductService` is responsible for HTTP requests and responses for the web API.
+If the `ModelState` is valid, the `OnPostAsync` page handler calls upon an instance of `ProductService`. `ProductService` is responsible for HTTP requests and responses for the web API.
 
 ```csharp
 await _productService.CreateProduct(Product);
