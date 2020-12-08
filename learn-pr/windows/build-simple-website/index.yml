@@ -31,12 +31,12 @@ products:
 - windows
 - vs-code
 units:
-- learn-windows.introduction-to-web-development.1-introduction
+- learn-windows.introduction-to-web-development.1-installation-and-setup
 - learn-windows.introduction-to-web-development.2-project-structure
 - learn-windows.introduction-to-web-development.3-html-basics
 - learn-windows.introduction-to-web-development.4-css-basics
 - learn-windows.introduction-to-web-development.5-javascript-basics
-- learn-windows.introduction-to-web-development.6-knowledge-check
-- learn-windows.introduction-to-web-development.7-summary
+- learn-windows.introduction-to-web-development.6-tracking-changes
+- learn-windows.introduction-to-web-development.7-summary-and-knowledge-check
 badge:
   uid: learn-windows.introduction-to-web-development.badge
