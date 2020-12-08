@@ -21,17 +21,17 @@ As mentioned previously, you can also write CSS directly in HTML, which is calle
 
 Imagine you have an old fashioned key and a series of doors down a long corridor. First, you select a door; then you unlock it with the key. Once you have access to a room, you can decorate however you'd like. You might paint the walls blue or set the floor to be hardwood. You select a room and define rules for how it should look. You can apply the same style to multiple rooms, which is just like CSS.
 
-In **Visual Studio Code**, open the `main.css` file and type the following.
+- In **Visual Studio Code**, open the `main.css` file and type the following.
 
-```css
-body {
-    font-family: monospace;
-}
-  
-ul {
-    font-family: helvetica;
-}
-```
+    ```css
+    body {
+        font-family: monospace;
+    }
+
+    ul {
+        font-family: helvetica;
+    }
+    ```
 
 You can use CSS rules to style HTML. The unordered list element `ul {}` above is a *selector*, which selects the `<ul>` HTML element to apply styles. The *declaration* is `font-family: helvetica` and says what the style of should be. The *property name* is `font-family`, and the *value* is `helvetica`. The property and value together make a key-value pair.
 
@@ -39,35 +39,38 @@ What you're selecting is an existing element that you previously defined in HTML
 
 ## Selectors
 
-*ID* and *class selectors* allow you to apply styles to custom attribute names in your HTML. An ID is used to style one element, whereas classes can style multiple elements. The custom attributes below are called `.list` and `#msg`. The class selector *list* has a period prefix, while the ID selector is *msg* and has a pound sign prefix. The names are arbitrary so long as they match what you've defined in the HTML.
+*ID* and *class selectors* allow you to apply styles to custom attribute names in your HTML. An ID is used to style one element, whereas classes can style multiple elements.
 
-```css
-...
-li {
-  list-style: circle;
-}
+1. Copy the following code into your CSS file, after the `ul` selector.
 
-.list {
-  list-style: square;
-}
+    ```css
+    li {
+      list-style: circle;
+    }
 
-#msg {
-  font-family: monospace;
-}
-```
+    .list {
+      list-style: square;
+    }
 
-Copy the preceding code into your CSS file. Remember to save your work with the keyboard shortcut Control+S (Windows) or Command+S (macOS).
+    #msg {
+      font-family: monospace;
+    }
+    ```
+
+   The preceding custom attributes are called `.list` and `#msg`. The class selector *list* has a period prefix, while the ID selector is *msg* and has a pound sign prefix. The names are arbitrary so long as they match what you've defined in the HTML.
+
+1. Save your work with the keyboard shortcut Control+S (Windows) or Command+S (macOS).
 
 ## View in browser
 
-To preview using **Visual Studio Code**, select on `index.html` and select **Open In Default Browser**.
+1. To preview using **Visual Studio Code**, select on `index.html` and select **Open In Default Browser**.
 
-> [!IMPORTANT]
-> Even though you were just editing the `main.css` file, to preview the changes, you should select the `index.html` file.
+   > [!IMPORTANT]
+   > Even though you were just editing the `main.css` file, to preview the changes, you should select the `index.html` file.
 
-The webpage opens in your default browser.
+   The webpage opens in your default browser.
 
-:::image type="content" source="../media/chrome-applied-font-styles.png" alt-text="Screenshot of website with font styles applied":::
+   :::image type="content" source="../media/chrome-applied-font-styles.png" alt-text="Screenshot of website with font styles applied":::
 
 Are the font styles what you expected to see? It's interesting how styles cascade from `body` to `h1`. We didn't define anything for `h1`, so it inherits styling from the `body`. However, `li` takes precedence over the `body` tag because you specifically defined a style for it.
 
@@ -75,39 +78,46 @@ Are the font styles what you expected to see? It's interesting how styles cascad
 
 Next, add support for a color theme for your website. Begin by defining a light-colored theme. For the light theme, use hex color codes for the font color (#000000, black) and for the background (#00FF00, a green hue).
 
-```css
-.light-theme {
-  color: #000000;
-  background: #00FF00;
-}
-```
+1. In your CSS file, add the following code at the end of the file.
 
-In your HTML file, update the `<body>` element with a class name, `light-theme`, so the class selector for light theme will apply the styles correctly.
+    ```css
+    .light-theme {
+      color: #000000;
+      background: #00FF00;
+    }
+    ```
 
-```html
-<body class="light-theme">
-```
+1. In your HTML file, update the `<body>` element with a class name, `light-theme`, so the class selector for light theme will apply the styles correctly.
+
+    ```html
+    <body class="light-theme">
+    ```
 
 ## View in browser
 
-To preview using **Visual Studio Code**, select on `index.html` and select **Open In Default Browser**.
+- To preview using **Visual Studio Code**, select on `index.html` and select **Open In Default Browser**.
 
-The webpage opens in your default browser. Notice that the light theme using a green background appears.
+  The webpage opens in your default browser. Notice that the light theme using a green background appears.
 
-![Screenshot of website with light theme applied](../media/chrome-light-theme.png)
+  ![Screenshot of website with light theme applied](../media/chrome-light-theme.png)
 
 ## View applied CSS
 
-In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
+- In **Edge**, press the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
 
-In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
+- In **Chrome**, press the keyboard shortcut for **Developer Tools** is Option+Command+I. (F12 also works.)
 
 1. Select the **Styles** tab.
-2. Select the **Elements** tab.
-3. Roll over and select the HTML elements.
-4. Select the `<body>` element. Note the `light-theme` applied.
-5. Open the disclosure triangles.
-6. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
+
+1. Select the **Elements** tab.
+
+1. Roll over and select the HTML elements.
+
+1. Select the `<body>` element. Note the `light-theme` applied.
+
+1. Open the disclosure triangles.
+
+1. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
 ![Screenshot of website with light theme applied](../media/chrome-light-theme-in-dev-tools.png)
 
@@ -115,49 +125,57 @@ In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I
 
 For the dark theme, you set up the plumbing in preparation for the next unit, in which you will enable theme switching on the web page.
 
-To set up support for a dark theme, add some constants to the page root in your CSS file. The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in the `:root` element. Here, you define three color variables attached to the page root.
+To set up support for a dark theme:
 
-```css
-:root {
-  --green: #00FF00;
-  --white: #ffffff;
-  --black: #000000;
-}
-```
+1. Add some constants to the page root in your CSS file.
 
-At the end of the CSS file, add the `dark-theme` selector and update the `light-theme` selector. Here, you define some new variables, `bg` and `fontColor`, to specify the background color and font color. Use the `var` keyword to specify variables to use as the property values. You set the values previously in your `:root` selector.
+    ```css
+    :root {
+      --green: #00FF00;
+      --white: #ffffff;
+      --black: #000000;
+    }
+    ```
 
-```css
-.light-theme {
-  --bg: var(--green);
-  --fontColor: var(--black);
-}
+   The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in the `:root` element. Here, you define three color variables attached to the page root.
 
-.dark-theme {
-  --bg: var(--black);
-  --fontColor: var(--green);
-}
-```
+1. At the end of the CSS file, add the `dark-theme` selector and update the `light-theme` selector.
 
-Next, in your CSS file, add the following after the `:root` selector, replacing the current `body` selector. The * selector is a universal selector that applies to all page elements (except where a more specific element selector overrides it). Here, you use it to set the default `color` property for all page elements. For the `color` and `background` properties, you specify the variables defined in the light and dark theme selectors.
+    ```css
+    .light-theme {
+      --bg: var(--green);
+      --fontColor: var(--black);
+    }
 
-```css
-* {
-  color: var(--fontColor);
-  font-family: helvetica;
-}
+    .dark-theme {
+      --bg: var(--black);
+      --fontColor: var(--green);
+    }
+    ```
 
-body {
-    background: var(--bg);
-}
-```
+   In the preceding code, you define some new variables, `bg` and `fontColor`, to specify the background color and font color. Use the `var` keyword to specify variables to use as the property values. You set the values previously in your `:root` selector.
 
-Also, remove the `#msg` selector in your CSS, so that we can apply the same font to all elements.
+1. Next, in your CSS file, add the following after the `:root` selector, replacing the current `body` selector.
 
-To view the dark theme, manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
+    ```css
+    * {
+      color: var(--fontColor);
+      font-family: helvetica;
+    }
 
-![Screenshot of website with dark theme applied](../media/chrome-dark-theme.png)
+    body {
+        background: var(--bg);
+    }
+    ```
 
-Edit the `<body>` element to switch the default back to light theme.
+   The * selector is a universal selector that applies to all page elements (except where a more specific element selector overrides it). Here, you use it to set the default `color` property for all page elements. For the `color` and `background` properties, you specify the variables defined in the light and dark theme selectors.
+
+1. Remove the `#msg` selector in your CSS, so that we can apply the same font to all elements.
+
+1. To view the dark theme, manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
+
+   ![Screenshot of website with dark theme applied](../media/chrome-dark-theme.png)
+
+1. Edit the `<body>` element to switch the default back to light theme.
 
 In the next unit, you will use JavaScript to provide interactivity and support the switching of themes.
