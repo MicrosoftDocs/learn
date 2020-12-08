@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks
+hidden: true
 metadata:
   title: Create a web app that uses data to make decisions on the basketball court
   description: Create a web app by using JavaScript, Azure, GitHub, and Visual Studio Code to help the Tune Squad coach use data to make decisions on the basketball court, inspired by SPACE JAM A NEW LEGACY.
@@ -19,7 +20,7 @@ abstract:  |
   - GitHub Actions for deploying web apps
   - CodeTour for code writing guidance
   - JavaScript to create functionality for your app
-prerequisites: | 
+prerequisites: |
   - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode)
   - [Azure Static Web Apps (Preview) extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
   - [CodeTour extension for Visual Studio Code](https://aka.ms/codetour-mslearn)
@@ -32,7 +33,7 @@ levels:
 roles:
 - data-scientist
 - developer
-- student 
+- student
 products:
 - vs-code
 units:

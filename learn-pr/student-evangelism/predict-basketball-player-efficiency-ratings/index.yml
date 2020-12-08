@@ -1,11 +1,12 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings
+hidden: true
 metadata:
   title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
   description: "Use data from basketball players in the film *Space Jam: A New Legacy* to create a machine learning model to cleanse data and explore bimodal data distributions."
   ms.date: 11/11/2020
   author: sguthals
-  ms.author: shanama 
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
@@ -14,13 +15,13 @@ abstract:  |
   In this module, you will:
   - Use Python, pandas, and Visual Studio Code.
   - Cleanse and manipulate data that requires critical analysis.
-  - Use machine learning to cleanse and complete data. 
+  - Use machine learning to cleanse and complete data.
   - Prepare data to be used for multiple customer-facing purposes.
-  
+
   > [!TIP]
   > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 
-prerequisites: | 
+prerequisites: |
   - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
   - A local Python environment, such as the one used in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
