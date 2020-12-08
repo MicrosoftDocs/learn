@@ -8,7 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy Azure Stack HCI
+title: Unit title
 durationInMinutes: 10
 content: |
   [!include[](includes/4-deploy.md)]

@@ -8,7 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Integrate Azure Stack HCI with Azure
+title: Unit title
 durationInMinutes: 10
 content: |
   [!include[](includes/6-integration-options.md)]
