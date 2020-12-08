@@ -96,3 +96,5 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 10. Select **Next:Review**.
 11. On the **Review and Create** page, verify that the validation passed, and then select **Create**.
 
+> [!NOTE]
+> You can learn more about Azure Sentinel analytics rules in the **Threat detection with Azure Sentinel analytics** module.
