@@ -52,7 +52,9 @@ You can launch the app at http://webapp<random ID number here>.azurewebsites.net
 
 1. Leave the **:::no-loc text="Name":::** text box empty. Enter `0` in the **:::no-loc text="Price":::** text box. Select the **:::no-loc text="Save":::** button.
 
-   Server-side validation occurs. Validation messages appear next to the text boxes because the provided values are invalid.
+    Server-side validation occurs. Validation messages appear next to the text boxes because the provided values are invalid:
+
+    :::image type="content" source="../media/8-deploy-test/product-creation-validation.png" alt-text="Screenshot of the product creation form validation messages." border="true" lightbox="../media/8-deploy-test/product-creation-validation.png":::
 
 1. Enter any product name in the **:::no-loc text="Name":::** text box. Enter `30` in the **:::no-loc text="Price":::** text box. Select the **:::no-loc text="Save":::** button.
 
