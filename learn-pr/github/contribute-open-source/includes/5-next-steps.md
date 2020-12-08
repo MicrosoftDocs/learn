@@ -18,7 +18,7 @@ Code, and solutions, can sometimes be reused across projects. Have you solved a 
 
 The first option is probably the best course of action when your bit of code is like a plug-in that could be used across web development projects. Mirroring or forking a project with the addition of your code is useful when you're solving a narrow use case for a small subset of customers, or even a single customer. Consider that you'll need to keep your fork up to date with the upstream repository if you want to benefit from, for instance, security patches.
 
-GitHub Actions are packaged scripts that automate tasks in a software development workflow in GitHub. The two different types of Actions are container Actions and JavaScript Actions. You can submit your Action to the [GitHub Marketplace](https://github.com/marketplace?type=actions) for discoverability.
+GitHub Actions are packaged scripts that automate tasks in a software development workflow in GitHub. The two different types of actions are container actions and JavaScript actions. You can submit your action to the [GitHub Marketplace](https://github.com/marketplace?type=actions) for discoverability.
 
 For all three of the suggested paths, consider that you're now a maintainer of a project. People will come to you with praise, questions, and complaints. Are you ready for such a commitment?
 

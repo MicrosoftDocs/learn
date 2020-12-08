@@ -1,6 +1,6 @@
 Open-source software relies heavily on the community for its long-term sustainability. One way to contribute to open-source projects is by making contributions to the project's repository and conducting code reviews.
 
-Suppose you've been using open-source libraries for your projects and at work for quite some time. In the spirit of open source, you've decided to contribute to some of these libraries and frameworks.
+Suppose you've been using open-source libraries for your projects and at work for quite some time. In the spirit of open source, you've decided to contribute back to some of these libraries and frameworks.
 
 However, you've never contributed before, and you're not sure how to get started.
 
