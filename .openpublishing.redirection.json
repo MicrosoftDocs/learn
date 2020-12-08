@@ -3271,17 +3271,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/windows/build-simple-website/1-installation-and-setup.md",
+      "source_path": "learn-pr/windows/build-simple-website/1-installation-and-setup.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-simple-website/1-introduction",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/windows/build-simple-website/6-tracking-changes.md",
+      "source_path": "learn-pr/windows/build-simple-website/6-tracking-changes.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-simple-website",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/windows/build-simple-website/7-summary-and-knowledge-check.md",
+      "source_path": "learn-pr/windows/build-simple-website/7-summary-and-knowledge-check.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/6-summary-and-knowledge-check",
       "redirect_document_id": false
     },
