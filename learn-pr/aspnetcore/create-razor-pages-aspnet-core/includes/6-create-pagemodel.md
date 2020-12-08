@@ -196,7 +196,7 @@ The *:::no-loc text="Create":::* page has been created and implemented. Let's al
 
 1. In *:::no-loc text="Pages/Products/Index.cshtml":::*, replace the comment `<!-- Replace with link to Create page -->` with the markup highlighted below:
 
-   [!code-cshtml[](../code/7-create-pagemodel.cs?highlight=34)]
+   [!code-cshtml[](../code/create-pagemodel.cs?highlight=34)]
 
 1. Save your changes.
 
