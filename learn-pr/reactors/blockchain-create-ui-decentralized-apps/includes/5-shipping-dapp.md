@@ -78,9 +78,9 @@ In the body of the function, add a line to deploy the shipping contract on line 
 
 You can now compile and migrate the contract. Go to the terminal and confirm that Ganache CLI is running. If it's not running in a terminal window, enter `ganache-cli`.
 
-Next, you can use the Blockchain Development Kit to compile the contract. Focusing your attention on the project, right-click on the shipping contract and select **Build contracts**. Wait for the build and compilation to successfully finish.
+Next, you can use the Blockchain Development Kit to compile the contract. Focusing your attention on the project, right-click on the shipping contract and select **Build Contracts**. Wait for the build and compilation to successfully finish.
 
-Then right-click on the shipping contract again and select **Deploy contracts**. When the menu option for deploy destination appears, select the **develop** network. Wait a minute for the migration to complete successfully.
+Then right-click on the shipping contract again and select **Deploy Contracts**. When the window for deploy destination appears, select the **develop** network. Wait a minute for the migration to complete successfully.
 
 ## Wire up the front end to the shipping contract
 
