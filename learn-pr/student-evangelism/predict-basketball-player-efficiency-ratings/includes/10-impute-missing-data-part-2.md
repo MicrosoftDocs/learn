@@ -14,7 +14,7 @@ This image provides a visualization of the cross-validation process:
 
 :::image type="content" source="../media/k-fold-cross-validation.png" alt-text="Screenshot showing a k-fold cross-validation.":::
 
-## Cross-validate the r2 scores for the model
+## Cross-validate the R2 scores for the model
 
 Here you'll use a *10-fold* cross validation. That is, Python will iterate through the data 10 times, reserving 10 percent of the data for testing and training on the other 90 percent of the data each time. You'll also plot a histogram of the results.
 
@@ -35,7 +35,7 @@ y = player_df.dropna(how='any').iloc[:, -1]
 # Define the regression model.
 lin_reg = LinearRegression()
 
-# Use the scikit-learn cross-validation function to fit this model 10 times and return the r2 scores.
+# Use the scikit-learn cross-validation function to fit this model 10 times and return the R2 scores.
 scores = cross_val_score(lin_reg, X, y, cv=10, scoring='r2')
 
 # Define the histogram of the scores and copy out information from the histogram.
@@ -58,15 +58,15 @@ Mean r2 score: 0.9993
 70% of r2 scores are between 0.9996 and 1.0000
 ```
 
-:::image type="content" source="../media/cross-validation.png" alt-text="Screenshot showing a histogram of r2 scores.":::
+:::image type="content" source="../media/cross-validation.png" alt-text="Screenshot showing a histogram of R2 scores.":::
 
 >[!NOTE]
 >If you get an error when you run this code, make sure you've [installed the scitkit-learn library](https://scikit-learn.org/stable/install.html?azure-portal=true).
 
-In short, your model is good. Your $R^2$ score is 99.93 percent. The *$R^2$* score tells you how much data variance your model captures. For your purposes, this score serves as a loose proxy for the model's accuracy. Your lowest $R^2$ scores are still good, and most of them are close to the maximum value of 1. So you should feel confident applying this model to your missing `PER` values.
+In short, your model is good. Your R2 score is 99.93 percent. The *R2* (meaning, R squared) score tells you how much data variance your model captures. For your purposes, this score serves as a loose proxy for the model's accuracy. Your lowest R2 scores are still good, and most of them are close to the maximum value of 1. So you should feel confident applying this model to your missing `PER` values.
 
 >[!NOTE]
->Your exact r2 scores might differ slightly. Each time you run this model, you'll get a different random sampling of data per cut across the 10 cuts. So the model might be slightly better or slightly worse from run to run. Your numbers should be fairly close to the example numbers, however.
+>Your exact R2 scores might differ slightly. Each time you run this model, you'll get a different random sampling of data per cut across the 10 cuts. So the model might be slightly better or slightly worse from run to run. Your numbers should be fairly close to the example numbers, however.
 
 ## Fit the regression model for the player data
 
