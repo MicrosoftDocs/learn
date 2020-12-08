@@ -42,7 +42,7 @@ In the `if` statement, we need to make one check before we do anything else: You
         }
 ```
 
-If there's room on the court for the player, we want to do a few things:
+If there's room on the court for the player, we want to do a few things in our code:
 
 1. Increase the count for number of players on the court.
 2. Get the player's PER for the current quarter.
@@ -65,7 +65,7 @@ If there's room on the court for the player, we want to do a few things:
         }
 ```
 
-Next, we want to support the coach moving players from the bench back to the court. We can put these steps in an `else` statement because there are only two places a player can be—the court or the bench. So, we'll do a couple things in this `else` statement:
+Next, we want to support the coach moving players from the bench back to the court. We can put these steps in an `else` statement because there are only two places a player can be—the court or the bench. So, we'll do a few things in the `else` statement we'll create next:
 
 1. Decrement the count of players on the court.
 2. Calculate the PER for the players left on the court. If there are no more players on the court, set PER to 0.
