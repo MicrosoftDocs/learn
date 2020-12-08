@@ -9,11 +9,10 @@ This module uses the [.NET CLI](/dotnet/core/tools/) to demonstrate ASP.NET Core
 In this module, you will:
 
 * Understand when and why to use Razor Pages for your ASP.NET Core app.
-* Use the .NET CLI to create a Razor page and its accompanying C# PageModel class.
+* Use the .NET CLI to create a new page in the app.
 * Create a form that supports the app's product data management requirements.
 * Add client-side form input validation using Razor's Input Tag Helper.
 * Add server-side model validation using data annotations.
-* Add a reference to a Data Transfer Object.
 * Consume a RESTful service from your PageModel.
 * Examine the life cycle of a sample HTTP request.
 * Deploy and test the web app.
