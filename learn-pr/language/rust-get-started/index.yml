@@ -13,7 +13,7 @@ summary: Learn how to get started with Rust - set up the environment, write a pr
 abstract: |
   In this module, you will learn how to:
   - Set up your development environment for using Rust.
-  - Write a simple "Hello, World!" program.
+  - Write a simple "Hello, world!" program.
   - Use Cargo, Rust's package manager and build system.
 prerequisites: | 
   - A Windows, Mac, or Linux computer

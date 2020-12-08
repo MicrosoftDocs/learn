@@ -1,4 +1,4 @@
-The recommended way to install Rust is to use `rustup`, the Rust Toolchain Installer. Go to the website [rustup.rs](https://rustup.rs?azure-portal=true) to find the appropriate instructions for your operating system.
+The recommended way to install Rust is to use `rustup`, the Rust toolchain installer. Go to the website [rustup.rs](https://rustup.rs?azure-portal=true) to find the appropriate instructions for your operating system.
 
 :::image type="content" source="../media/rustup.png" alt-text="Screenshot of rustup installer website.":::
 

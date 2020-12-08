@@ -2,7 +2,7 @@ With the Rust programming language, you can build reliable and efficient softwar
 
 ## What's the best way to learn Rust?
 
-Practice writing code as much code as possible. Type along with the exercises in this module and the others in this learning path.
+Practice writing code as much as possible. Type along with the exercises in this module and the others in this learning path.
 
 Additionally, begin by learning small, foundational concepts, and build on these with continual
 practice and exploration. You'll build a few projects along the way, and by the end, you'll have a
@@ -13,7 +13,7 @@ solid grasp of the language.
 In this module, you'll learn how to:
 
 - Set up your development environment for using Rust.
-- Write a simple "Hello, World!" program.
+- Write a simple "Hello, world!" program.
 - Use Cargo, Rust's package manager and build system.
 
 ## Prerequisites

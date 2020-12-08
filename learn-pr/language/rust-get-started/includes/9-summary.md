@@ -6,4 +6,4 @@ In this module, you learned:
 - How to write and compile a simple rust program by using `rustc`.
 - How to start a new project template, build it, and run it by using Cargo.
 
-In the next module in this Learning Path, you'll walk through some common programming concepts, such as functions, data types, and control flow, in Rust.
+In the next module in this learning path, you'll walk through some common programming concepts, such as functions, data types, and control flow, in Rust.
