@@ -1,79 +1,79 @@
-In *Space Jam: A New Legacy* we know that superstar LeBron James's teammates, the Tune Squad, are coming back in full force with their singular basketball skills and unique cartoon powers to have fun on the court. Their coach has been preparing to lead the team to victory against any opponent, but he doesn't have a ton of experience coaching a basketball team, so we're going to build a simple app to help him out. 
+In *Space Jam: A New Legacy*, we know that superstar LeBron James's teammates, the Tune Squad, are coming back in full force with their singular basketball skills and unique cartoon powers to have fun on the court. Their coach has been preparing to lead the team to victory against any opponent, but the coach doesn't have a ton of experience coaching a basketball team. So, we're going to build a basic app to help out the coach. 
 
-Before jumping into the module, be sure to make sure your environment is setup and ready to go. For this module, you will need Visual Studio Code, with the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python?azure-portal=true) and [Azure Static Web App](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps?azure-portal=true) extensions installed. You will also need an [Azure account](/learn/modules/create-an-azure-account?azure-portal=true) and a [GitHub account](/learn/modules/introduction-to-github?azure-portal=true). 
+Before jumping into the module, make sure your environment is set up and ready to go. For this module, you'll need Visual Studio Code, with the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python&azure-portal=true) and [Azure Static Web Apps](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) extensions installed. You'll also need an [Azure account](/learn/modules/create-an-azure-account?azure-portal=true) and a [GitHub account](/learn/modules/introduction-to-github?azure-portal=true). 
 
-If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). Here, you can also find a Coding Pack for Python for Windows that will install everything you need for this module. If you're not on Windows, you can find a guide for seeting up your environment on the [Data Science in Visual Studio Code docs page](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
+If you haven't yet installed Visual Studio Code, you can find guides on the [Visual Studio Code Learn to Code site](https://aka.ms/LearnOnVSCode?azure-portal=true). Here, you also can find a coding pack for Python for Windows that will install everything you need for this module. If you're not using Windows, you can find a guide for setting up your environment in [Data Science in Visual Studio Code](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true).
 
-## Setting up Visual Studio Code with a new Jupyter file
+## Set up Visual Studio Code with a new Jupyter file
 
-Once you have your environment setup, you should create a folder called space-jam-anl wherever you store code on your computer. This can be anywhere, for example, on your Desktop. You might already have this folder if you are contuining on from the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true).
+When your environment is set up, create a folder named *space-jam-anl* wherever you store code on your computer. You can save this folder anywhere, including, for example, on your desktop. You might already have this folder if you're continuing on from the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true).
 
-:::image type="content" source="../media/new-folder.png" alt-text="Screenshot showing The new space-jam-anl folder created on the desktop.":::
+:::image type="content" source="../media/new-folder.png" alt-text="Screenshot that shows the new folder created on the desktop.":::
 
-Open Visual Studio Code, and from the Welcome tab, click "Open Folder". You can also do this by clicking File -> Open... and navigating to the folder you just created.
+Open Visual Studio Code and, on the **Welcome** tab, select **Open Folder**, and then go to the folder you created. Another way to open a folder is to select **File** > **Open**.
 
-![Open the space-jam-anl folder in Visual Studio Code](../media/open-folder.png)
+:::image type="content" source="../media/open-folder.png" alt-text="Screenshot that shows the new folder open in Visual Studio Code.":::
 
-Create a new file in the space-jam-anl folder called space-jam-anl.ipynb by clicking on the new file icon next to the folder name in the Explorer.
+In the *space-jam-anl* folder, create a new file named *space-jam-anl.ipynb*. To create the file, in Visual Studio Code Explorer, select the new file icon next to the folder name:
 
-![Create the space-jam-anl.ipynb file in Visual Studio Code](../media/new-file.png)
+:::image type="content" source="../media/new-file.png" alt-text="Screenshot that shows the new file icon highlighted in Visual Studio Code.":::
 
->[!Note] 
->You can also just continue using the space-jam-anl.ipynb file that you created in the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true) if you already have that.
+> [!NOTE]
+> You also can just continue using the *space-jam-anl.ipynb* file that you created in the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), if you already have that file.
 
-Make sure the file opens into a notebook and that the Jupyter server is connected and the kernel is pointing to the desired Python version.
+Make sure the file opens in a notebook, the Jupyter server is connected, and the kernel points to the correct Python version.
 
-![A blank jupyter notebook file open in Visual Studio Code](../media/jupyter-file.png)
+:::image type="content" source="../media/jupyter-file.png" alt-text="Screenshot that shows a blank Jupyter Notebook file open, with the server status and Python version, in Visual Studio Code.":::
 
-## Downloading data with basketball stats and Tune Squad character names
+## Download data with basketball stats and Tune Squad character names
 
-Next, you will need some data. You might already have this data from the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data2?azure-portal=true) and downloading the CSV file. Make sure you save the data in a file called player_data_final.csv and save it in the space-jam-anl folder you just created. 
+Next, you'll need some data. You might already have this data from the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), but if you don't, you can download a clean copy from [player_data_final.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data2?azure-portal=true). Download the CSV file. Make sure you save the data in a file called *player_data_final.csv*. Save the file in the *space-jam-anl* folder you created. 
 
-Then, you will need the Tune Squad character names, which is stored in [tune_squad.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data3?azure-portal=true). Make sure you save the data in a file called tune_squad.csv and save it in the space-jam-anl folder you just created. 
+Then, you'll need the Tune Squad character names. This data is stored in [tune_squad.csv on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data3?azure-portal=true). Make sure that you save the data in a file called tune_squad.csv, and save the file in the *space-jam-anl* folder you created. 
 
-Visual Studio Code should show you this data if you click on the CSV file. 
+If you select the CSV file, you see this data in Visual Studio Code:
 
-![Viewing the CSV file in Visual Studio Code](../media/csv-visual-studio-code.png)
+:::image type="content" source="../media/csv-visual-studio-code.png" alt-text="Screenshot that shows viewing the C S V file in Visual Studio Code.":::
 
-## Checking local setup with Python libraries
+## Check the local setup with Python libraries
 
-Now that you have your local environment and data ready to go, you should check to make sure everything is setup properly. 
+Now that you have your local environment and data ready to go, check to make sure everything is set up properly.
 
-If this is a new file, in the top cell of the space-jam-anl.ipynb file, import the Pandas library as pd. If you are continuing on with the file created in the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), skip this import step, but be sure to re-run your entire notebook to ensure everything is loaded into your python environment. This will allow you to call Pandas functions using `pd.`. 
+If this file is a new file, in the top cell of the *space-jam-anl.ipynb* file, import the pandas library as `pd`. If you're continuing on with the file created in the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), skip this import step, but be sure to rerun your entire notebook to ensure that everything is loaded into your Python environment. This way, you can call pandas functions by using `pd`.
 
 ```python
 import pandas as pd
 ```
 
-If that completes, successfully, you should see a [1] next to the cell and no output. 
+If the code runs successfully, you'll see `[1]` next to the cell and no output: 
 
-![Showing a successful Pandas import in Visual Studio Code](../media/successful-pandas-import.png)
+:::image type="content" source="../media/successful-pandas-import.png" alt-text="Screenshot that shows a successful pandas import in Visual Studio Code.":::
 
-Next, you will make sure you can import the data into your coding environment by using the Pandas function `read_csv`. 
+Next, make sure you can import the data into your coding environment by using the pandas `read_csv` function: 
 
 ```python
 # Import the CSV file and create a DataFrame.
 player_df_final = pd.read_csv('player_data_final.csv')
 ```
 
-If that us successful, you should see a `[2]` next to the cell (if you're continuing on with the file created in the [previous *Space Jam: A New Legacy* inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true) then you might see a different number than 2) and no output.
+If this code runs successfully, you'll see `[2]` next to the cell (if you're continuing on with the file created in the [preceding *Space Jam: A New Legacy*-inspired module](/learn/modules/predict-basketball-player-efficiency-ratings?azure-portal=true), you might see a different number), and no output.
 
-![Showing a successful data import in Visual Studio Code](../media/successful-data-import.png)
+:::image type="content" source="../media/successful-data-import.png" alt-text="Screenshot that shows a successful data import in Visual Studio Code.":::
 
-Now you're ready to start exploring and cleansing your data!
+Now, you're ready to start exploring and cleansing your data!
 
-## Checking local setup with Azure Static Web Apps extension
+## Check local setup with the Azure Static Web Apps extension
 
-Before continuing on, make sure you are logged in to Azure and you have access to your subscriptions within the Azure Static Web Apps extenion. 
+Before continuing, make sure that you're signed in to Azure and you have access to your subscriptions in the Azure Static Web Apps extension. 
 
-Click on the Azure Extension on the left-hand icon menu and you should see a section for Static Web Apps. Within this section, you should see all of your Azure subscriptions, for example, a Pay-As-You-Go subscription. If you have not created an Azure Static Web App before, there should be nothing listed under the subscription. Make sure that at the bottom of your Visual Studio Code window, you are signed in to the Azure account that you want to create this resource under.
+In the left icon menu, select the Azure extension. Look for a section for Static Web Apps. In this section, you'll see all of your Azure subscriptions, including, for example, a Pay-As-You-Go subscription. If you haven't created a static web app in Azure before, nothing should be listed under the subscription. Make sure that at the bottom of your Visual Studio Code window, you are signed in to the Azure account that you want to use to create this resource.
 
-![Azure Static Web App Setup in Visual Studio Code](../media/set-up-azure-static-web-app.png)
+:::image type="content" source="../media/set-up-azure-static-web-app.png" alt-text="Screenshot that shows the Azure Static Web App setup in Visual Studio Code.":::
 
-## Checking local setup with CodeTour extension
+## Check local setup with the CodeTour extension
 
-Finally, make sure you have installed [Visual Studio Code's CodeTour extension](https://aka.ms/codetour-mslearn). If you have, you should see it at the bottom of your Visual Studio Code Explorer. This will come in handy later when you are creating the web app because there are a lot of ways to build a vanilla JavaScript app and we will guide you through how we built ours!
+Finally, make sure that you've installed the [Visual Studio Code CodeTour extension](https://aka.ms/codetour-mslearn?azure-portal=true). If you have, look for it at the bottom of Visual Studio Code Explorer. Having the CodeTour extension installed will come in handy later when you create the web app because there are many ways to build a basic JavaScript app. We'll guide you through the steps we used to build ours!
 
-![CodeTour in Visual Studio Code](../media/codetour-setup.png)
+:::image type="content" source="../media/codetour-setup.png" alt-text="Screenshot that shows CodeTour in Visual Studio Code.":::
 
 © 2020 Warner Bros. Ent. All Rights Reserved
