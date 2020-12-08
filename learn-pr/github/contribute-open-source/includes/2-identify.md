@@ -36,7 +36,7 @@ Most projects will have these documents at the top level of the repository:
 - **CONTRIBUTING**: As its name suggests, this document provides guidance on how to contribute to the project. It usually describes how the contribution process works and includes details on how to set your development environment.
 - **CODE_OF_CONDUCT**: The code of conduct sets ground rules for community members. By doing so, it helps make the community a safe and welcoming environment for all.
 
-Although not all projects have CONTRIBUTING or CODE OF CONDUCT documents, having these documents is a good indication of how friendly and welcoming a project is.
+Although not all projects have CONTRIBUTING or CODE_OF_CONDUCT documents, having these documents is a good indication of how friendly and welcoming a project is.
 
 Open-source contributors and maintainers come from all over the world. Projects usually have multiple communication channels to organize discussions and ask for help. A good way to familiarize yourself with the community is by reading through some of these communication channels:
 

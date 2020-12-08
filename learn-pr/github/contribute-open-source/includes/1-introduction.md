@@ -13,7 +13,7 @@ By the end of this module, you'll learn how to submit a successful contribution 
 By the end of this module, you'll be able to:
 
 - Find open-source projects and tasks to contribute to in GitHub.
-- Create Pull Requests to open-source projects.
+- Create pull requests to open-source projects.
 - Implement best practices to communicate with open-source maintainers and perform code reviews.
 - Find and engage with open-source communities.
 
