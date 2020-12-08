@@ -123,7 +123,7 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
 1. Select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
-:::image type="content" source="../media/chrome-light-theme-in-dev-tools.png" alt-text="Screenshot of website with light theme applied":::
+:::image type="content" source="../media/chrome-light-theme-in-dev-tools.png" alt-text="Screenshot of website in dev tools with light theme applied":::
 
 ## Add a dark theme
 
