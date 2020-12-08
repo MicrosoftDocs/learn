@@ -2,7 +2,7 @@ There are still many customers that are not ready to transition to the hybrid op
 
 ## What are typical Azure Stack HCI workloads?
 
-Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads on a hyperconverged infrastructure (HCI) cluster in your own datacenter or in a datacenter managed by a service provider. From the hardware standpoint, each Azure Stack HCI cluster consists of between 2 and 16 physical, pre-configured, servers running a specialized operating system derived from Windows Server 2019.
+Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads on a hyperconverged infrastructure (HCI) cluster in your own datacenter or in a datacenter managed by a service provider. From the hardware standpoint, each Azure Stack HCI cluster consists of between 2 and 16 physical, validated servers running a specialized operating system purposely defined for hyperconverged infrastructure.
 
 > [!NOTE]
 > Azure Stack HCI clusters are available as integrated systems from a range of hardware vendors, with configuration validated and certified by Microsoft.
@@ -13,9 +13,9 @@ In addition, Azure Stack HCI provides built-in support for disaster recovery of 
 
 ## What are Azure Stack HCI technical use cases?
 
-To assist customers with the process of evaluating suitability of their workloads for Azure Stack HCI-based deployments and identifying appropriate hardware configuration, Microsoft established the Azure Stack HCI Technical Use Case program. Through the program, Microsoft certifies Azure Stack HCI hardware configurations in the following six use cases:
+To assist customers with the process of evaluating suitability of their workloads for Azure Stack HCI-based deployments and identifying appropriate hardware configuration, Microsoft established the Azure Stack HCI Technical Use Case program. Through the program, Microsoft certifies Azure Stack HCI hardware configurations in the following use cases:
 
-:::image type="content" source="../media/2-azs-hci-workloads.png" alt-text="The image illustrating the six certified Azure Stack HCI use cases, including branch office and edge, virtual desktop infrastructure, high-performance Microsoft SQL Server, trusted enterprise virtualization, scale-out storage, and general-purpose Kubernetes." border="false":::
+:::image type="content" source="../media/2-azs-hci-workloads.png" alt-text="The image illustrating the six certified Azure Stack HCI use cases, including branch office and edge, virtual desktop infrastructure, high-performance Microsoft SQL Server, trusted enterprise virtualization, and Azure Kubernetes Service." border="false":::
 
 ### Branch office and Edge
 
@@ -43,12 +43,8 @@ VBS allows you to implement Hypervisor-Enforced Code Integrity (HVCI) and Creden
 > [!NOTE]
 > The United States Department of Defense considers both VBS and HVCI to be a general security requirement.
 
-### Scale-out storage
+### Azure Kubernetes Service on Azure Stack HCI (AKS-HCI)
 
-Storage Spaces Direct (S2D) is one of the core technologies of Azure Stack HCI. Its primary benefits include high availability, performance, and scalability that use locally attached drives. Using S2D results in significant cost reduction compared with competing offers based on storage area network (SAN) or network-attached storage technologies. These benefits result from an innovative design and a wide range of enhancements, such as persistent read/write cache drives, mirror-accelerated parity, nested resiliency, and deduplication.
+You can leverage the Azure Stack HCI to host container-based deployments, increasing workload density and resource usage efficiency. Azure Kubernetes Service on Azure Stack HCI (AKS-HCI) is a Kubernetes-based orchestrator that automates running containerized applications on clusters that use Azure Stack HCI. Orchestrators such as the open-source Kubernetes, automate much of the work involved with deploying and managing multiple containers. However, Kubernetes can be complex to set up and maintain. AKS-HCI helps simplify setting up Kubernetes on-premises, making it quicker to get started hosting Linux and Windows containers. By bringing the power of AKS from Azure to your on-premises locations, you benefit from the advanced security, management and deployment experiences for running your workloads, all while reducing the complexity and learning curve for your users.
 
-### General-purpose Kubernetes
-
-You can leverage the Azure Stack HCI to host container-based deployments, increasing workload density and resource usage efficiency. Kubernetes offers production support for Windows Server 2019 operating as cluster nodes and serving as container images. This allows you to host Kubernetes clusters on either Linux or Windows Server 2019 VMs, hosting Linux and Windows Server 2019 containers.
-
-Azure Stack HCI further enhances the agility and resiliency inherent to Azure Kubernetes deployments. You have the option to scale VMs hosting the containerized workloads and increase available capacity by adding physical nodes to the cluster. There is also extra flexibility resulting directly from the container-based isolation, which allows running distinct, potentially incompatible applications within the same operating system. From the resiliency standpoint, Azure Stack HCI manages automatic failover of VMs serving as Kubernetes cluster nodes in case of a localized failure of the underlying physical components. This supplements the high availability built into Kubernetes, which automatically restarts failed containers on the same or another VM.
+AKS-HCI is ideal for customers who want to run containerized workloads within their on-premises environments, whether that be at an edge remote site, or in the datacenter, to meet network or regulatory goals. With an existing Azure Stack HCI cluster in place, and after validating several prerequisites, Windows Admin Center guides administrators through first configuring an AKS management cluster. This is responsible for provisioning and managing target clusters where your workloads run, and includes an API server and a Load Balancer. 
