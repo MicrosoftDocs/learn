@@ -38,7 +38,7 @@ Hyper-V supports various scenarios ranging from hosting individual VMs to provid
 
 New releases of Windows Server and updates add features to Hyper-V for supporting different workloads, increase their performance and enhance their security. You can group Hyper-V's general features as follows:
 
-- Management and connectivity. You can manage your Hyper-V environment with the Windows Admin Center, Hyper-V Manager, Hyper-V module for Windows PowerShell, and Virtual Machine Connection (also referred to as VMConnect). You can install these tools on the computer with the Hyper-V server role, or you can install the tools on a remote management computer.
+- Management and connectivity. You can manage your Hyper-V environment with the Windows Admin Center, Hyper-V Manager, Hyper-V module for Windows PowerShell, and Virtual Machine Connection. You can install these tools on the computer with the Hyper-V server role, or you can install the tools on a remote management computer.
 - Portability. To make it easier to move or distribute a VM, Hyper-V provides features such as live migration, storage migration, and standard import/export functionality. 
 
 > [!NOTE]
