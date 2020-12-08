@@ -7,7 +7,7 @@ To manage your machine, you sometimes need to discover what processes run on it 
 To begin, run the command `Get-Process`, and pipe in the cmdlets `Where-Object` and `Sort-Object`.
 
 ```powershell
-Get-Process | Where-Object CPU -gt 1000 | Sort-Object CPU -Descending | SelectObject -First 3
+Get-Process | Where-Object CPU -gt 100 | Sort-Object CPU -Descending | Select-Object -First 3
 ```
 
 The exact output you see depends on your machine, but you should see the first three processes whose CPU value is higher than a 1,000. These processes are sorted in a descending order, with the highest CPU value on top. Your output will look similar to the following example.
