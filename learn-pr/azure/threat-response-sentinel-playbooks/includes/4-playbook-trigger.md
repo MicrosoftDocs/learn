@@ -16,21 +16,21 @@ The header bar provides the following options:
 - The **Enable**, **Disable**, and **Delete** option are only available if you select one or more logic apps.
 - Use the **Logic Apps documentation** option to review links to official Microsoft documentation for more information on logic apps.
 
-Contoso wants to use automated actions to prevent suspicious users from accessing their network. As their security administrator, you can create a playbook to implement this action. To create a new playbook, select **Add Playbook**. You will be directed to the page where you should create a new Logic App by providing inputs for the following settings:
+Contoso wants to use automated actions to prevent suspicious users from accessing their network. As their security administrator, you can create a playbook to implement this action. To create a new playbook, select **Add Playbook**. You will be directed to the page where you should create a new logic app by providing inputs for the following settings:
 
 - **Subscription**. Select the subscription that contains Azure Sentinel.
 - **Resource Group**. You can use an existing resource group or create a new one.
 - **Logic App name**. Provide a descriptive name for the logic app.
 - **Location**. Select the same location as where your Log Analytics workspace is located.
-- **Log Analytics**. If you enable log analytics, you can get information about playbook&#39;s runtime events.
+- **Log Analytics**. If you enable Log Analytics, you can get information about playbook&#39;s runtime events.
 
 After providing these inputs, select the **Review + Create** option, and then select **Create**.
 
 ## Logic Apps Designer
 
-Azure Sentinel creates the Logic App, and then you are directed to the **Logic App Designer** page.
+Azure Sentinel creates the logic app, and then you are directed to the **Logic App Designer** page.
 
-The Logic App Designer provides a design canvas that you use to add a trigger and actions to your workflow. For example, you can configure the trigger to come from the Azure Sentinel Connector when a new security incident is created. The Logic App Designer page provides many predefined templates that you can use. However, to create a playbook, you should start with the **Blank Logic App** template to design the logic app from scratch.
+The Logic App Designer provides a design canvas that you use to add a trigger and actions to your workflow. For example, you can configure the trigger to originate from the Azure Sentinel Connector when a new security incident is created. The Logic App Designer page provides many predefined templates that you can use. However, to create a playbook, you should start with the **Blank Logic App** template to design the logic app from scratch.
 
 The automated activity in the playbook is initiated by the Azure Sentinel trigger. You can search for the Azure Sentinel trigger in the search box of the design canvas, and then select one of the following two available triggers:
 
