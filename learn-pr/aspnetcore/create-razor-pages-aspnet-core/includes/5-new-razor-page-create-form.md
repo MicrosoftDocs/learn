@@ -23,7 +23,7 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 
     * Creates a Razor page named *:::no-loc text="Create.cshtml":::*.
     * Creates the Razor page's *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::*.
-    * Stores both new files in the *:::no-loc text="Pages/Products":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
+    * Stores both new files in the *:::no-loc text="Pages/Products":::* directory. By convention, the files share the same name and location.
 
 ## Examine the structure of a basic Razor page
 
@@ -38,7 +38,7 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 	}
 	```
 
-    The preceding Razor Page contains reserved Razor keywords:
+    The preceding Razor page contains reserved Razor keywords:
 
     * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
     * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class. That class, `ContosoPets.Ui.Pages.Products.CreateModel`, is defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated when the new Razor page named *:::no-loc text="Create":::* was made.
@@ -108,17 +108,17 @@ There are three Tag Helpers on this page:
 
 ASP.NET Core extends the standard HTML element by adding attributes.
 
-### The *:::no-loc text="Label Tag Helper":::*
+### The Label Tag Helper
 
-The following markup uses the *:::no-loc text="Label Tag Helper":::* that contains an `asp-for` attribute, as do many Tag Helpers.
+The following markup uses the Label Tag Helper:
 
 ```cshtml
 <label asp-for="Product.Name" class="control-label"></label>
 ```
 
-The *:::no-loc text="Label Tag Helper":::* extends the standard HTML *:::no-loc text="<label>":::* element. As is common for many Razor Tag Helpers, it uses an `asp-for` attribute, which takes a specified *:::no-loc text="PageModel":::* property. The *:::no-loc text="PageModel":::* property is defined in C#. In this case, the value of the *:::no-loc text="PageModel":::* `Name` property will be rendered as the content for an HTML `<label>` element. The `[asp-for]` attribute is scoped to the *:::no-loc text="PageModel":::* for the Razor page, so the `@` symbol isn't used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
+The Label Tag Helper extends the standard HTML `<label>` element. As is common for many Tag Helpers, it uses an `asp-for` attribute. The attribute accepts a specified *:::no-loc text="PageModel":::* property. In this case, the value of the *:::no-loc text="PageModel":::* `Name` property will be rendered as the content for an HTML `<label>` element. The `asp-for` attribute is scoped to the *:::no-loc text="PageModel":::* for the Razor page, so the `@` symbol isn't used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
 
-### The *:::no-loc text="Input Tag Helper":::*
+### The Input Tag Helper
 
 The following markup uses the Input Tag Helper. It extends the standard HTML `<input>` element. It also uses an `asp-for` attribute to specify a *:::no-loc text="PageModel":::* property.
 
@@ -126,32 +126,31 @@ The following markup uses the Input Tag Helper. It extends the standard HTML `<i
 <input asp-for="Product.Name" class="form-control" />
 ```
 
-The *:::no-loc text="Input Tag Helper":::*:
+The Input Tag Helper:
 
-* Evaluates the `Product.Name` property, like the *:::no-loc text="Label Tag Helper":::*.
-* Is defined in the *:::no-loc text="PageModel":::* in C#.
-* Adds an `id` and `name` based on that property.
-* Sets the input type appropriately. For example, if the specified property is a *:::no-loc text="Boolean":::*, then an input type of `checkbox` is dynamically generated in the HTML output. In this case, the `Product.Name` property is a *:::no-loc text="String":::*. The `Product.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
+* Evaluates the `Product.Name` property, like the Label Tag Helper.
+* Adds an `id` and `name` HTML attribute based on that property.
+* Sets the input type appropriately. For example, if the specified property type is `bool`, an input type of `checkbox` is used in the generated HTML. In this case, the `Product.Name` property type is `string`. The `Product.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
 * Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the *:::no-loc text="PageModel":::*.
-* Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *:::no-loc text="Create":::* Razor Page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
+* Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *:::no-loc text="Create":::* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
 
-The following HTML output is generated from the *:::no-loc text="Input Tag Helper":::* located in the *:::no-loc text="Create":::* page:
+The following HTML output is generated from the Input Tag Helper located in the *:::no-loc text="Create":::* page:
 
 ```html
 <input name="Product.Name" class="form-control" id="Product_Name" type="text" value="" data-val-required="The Name field is required." data-val="true">
 ```
 
-### The *:::no-loc text="Validation Message Tag Helper":::*
+### The Validation Message Tag Helper
 
-The following markup uses the *:::no-loc text="Validation Message Tag Helper":::*. It displays a validation message for a single property on the model.
+The following markup uses the Validation Message Tag Helper. It displays a validation message for a single property on the model.
 
 ```cshtml
 <span asp-validation-for="Product.Price" class="text-danger"></span>
 ```
 
-The *:::no-loc text="Input Tag Helper":::* adds HTML5 attributes prefixed with `data-` to input elements. The attributes are based on properties in the C# model classes. While responsive client-side validation occurs, validation is also done on the server, which is more secure.
+The Input Tag Helper adds HTML5 `data-` attributes to input elements. The attributes are based on properties in the C# model classes. While responsive client-side validation occurs, validation is also done on the server, which is more secure.
 
-The following HTML is rendered by the *:::no-loc text="Validation Message Tag Helper":::*:
+The following HTML is rendered by the Validation Message Tag Helper:
 
 ```html
 <input name="Product.Price" class="form-control" id="Product_Price" type="text" value="" data-val-required="The Price field is required." data-val="true" data-val-range-min="0.01" data-val-range-max="9999.99" data-val-range="The field Price must be between 0.01 and 9999.99." data-val-number="The field Price must be a number.">
@@ -163,4 +162,4 @@ The following page is the *:::no-loc text="Create":::* form. The *:::no-loc text
 
 :::image type="content" source="../media/5-new-razor-page-create-form/createproduct-validation.png" alt-text="The completed create product form." border="true" lightbox="../media/5-new-razor-page-create-form/createproduct-validation.png":::
 
-The *:::no-loc text="Create":::* Razor Page form has been created. Let's explore its *:::no-loc text="PageModel":::* class file and modify it to handle the *:::no-loc text="Create":::* page's HTTP POST event and data.
+The *:::no-loc text="Create":::* Razor page form has been created. Let's explore its *:::no-loc text="PageModel":::* class file and modify it to handle the *:::no-loc text="Create":::* page's HTTP POST event and data.
