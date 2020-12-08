@@ -13,7 +13,7 @@ In this module, you will:
 * Create a form that supports the app's product data management requirements.
 * Add client-side form input validation using Razor's Input Tag Helper.
 * Add server-side model validation using data annotations.
-* Consume a RESTful service from your PageModel.
+* Consume a RESTful service in your app to manage product data.
 * Examine the life cycle of a sample HTTP request.
 * Deploy and test the web app.
 
