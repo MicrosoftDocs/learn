@@ -81,3 +81,8 @@ You can run several actions on the playbook from the Logic Apps header bar:
 The **Essentials** section  displays descriptive information about the logic app. For example, the logic app definition displays the number of triggers and actions that the logic app provides.
 You can use the **Summary** section, to review summarized information about the logic app. From this section, you can select the logic app link to open it in the Logic Apps Designer or review the trigger history.
 The **Runs history** section displays the previous runs of the logic app and whether they succeeded or failed.
+
+## Automate response to an incident in Azure Sentinel
+
+As a final step, you need to attach this playbook to an analytics rule to automate responses to an incident. You can use the **Automated Response** section in the analytics rule to select a playbook to run automatically when the alert is generated. For more details on how to create analytics rule, refer to the "Threat detection with Azure Sentinel analytics" module.
+
