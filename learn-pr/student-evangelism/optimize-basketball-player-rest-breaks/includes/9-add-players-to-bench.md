@@ -58,8 +58,8 @@ Then, open a browser and paste the path in the address bar. You should see the s
 
 In the upper-left corner of the app, select the **Choose File** button and find your *game_stats.csv* file. After the file uploads, a couple things should happen:
 
-1. The file name should appear next to the **Choose File** button.
-2. Your 16 players should be added to the bench.
+* The file name should appear next to the **Choose File** button.
+* Your 16 players should be added to the bench.
 
 > [!NOTE] 
 > If you select the player buttons, nothing happens yet because we haven't written the `movingPlayers` function yet.
