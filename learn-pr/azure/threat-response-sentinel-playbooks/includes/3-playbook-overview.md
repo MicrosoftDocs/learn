@@ -19,7 +19,7 @@ For example, to address Contoso's concerns, you can develop a workflow with defi
 
 ## Azure Logic Apps
 
-Azure Logic Apps is a cloud service that automates the operation of your business processes. You use a graphical design tool called the *Logic Apps Designer* to arrange prebuilt components into the sequence you need.
+Azure Logic Apps is a cloud service that automates the operation of your business processes. You use a graphical design tool called the *Logic Apps Designer* to arrange prebuilt components into the sequence you need. You can also use the code view and write your automated process in the JSON file.
 
 ## Logic Apps Connector
 
@@ -30,7 +30,7 @@ Logic apps use connectors to connect to hundreds of services. A *connector* is a
 Azure Logic Apps use triggers and actions, which are defined as follows:
 
 - A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, a security incident occurs in Azure Sentinel, which is a trigger for an automated action.
-- An *action* is an operation that performs a task in the Logic Apps workflow. Actions run when a trigger activates, or another action completes.
+- An *action* is an operation that performs a task in the Logic Apps workflow. Actions run when a trigger activates, another action completes, or a condition is met.
 
 ## Azure Sentinel Logic Apps connector
 
