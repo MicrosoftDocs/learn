@@ -89,7 +89,7 @@ Replace the contents of *:::no-loc text="Pages/Products/Create.cshtml":::* with 
 
 The *:::no-loc text="Create":::* Razor page now contains HTML plus Razor syntax for a basic form. The *:::no-loc text="Create":::* page allows a user to create a new product entry with **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
 
-## Razor Tag Helpers
+## Review Razor Tag Helpers
 
 Tag Helpers are components for automating HTML generation in ASP.NET Core web apps.
 

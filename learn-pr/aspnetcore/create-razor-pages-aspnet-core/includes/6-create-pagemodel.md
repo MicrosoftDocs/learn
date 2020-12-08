@@ -194,8 +194,6 @@ The *:::no-loc text="Create":::* page has been created and implemented. Let's al
 
 ### Add an Anchor Tag Helper to the *Index* page
 
-1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
-
 1. In *:::no-loc text="Pages/Products/Index.cshtml":::*, replace the comment `<!-- Replace with link to Create page -->` with the markup highlighted below:
 
    [!code-cshtml[](../code/7-create-pagemodel.cs?highlight=34)]
