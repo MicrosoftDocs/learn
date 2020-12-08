@@ -4,43 +4,55 @@ In this unit, you will write an Azure Function that is triggered each time an im
 
 Azure Functions can be written in the Azure portal or written externally using tools such as Visual Studio. You will write an Azure Function in the portal. The function will be written in JavaScript and executed using Azure Functions' Node.js run-time. It will be triggered each time an image is uploaded to the "photos" container that you created in blob storage, and it will pass each blob that is uploaded to the Custom Vision Service to be analyzed for polar bears.
 
-1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) in your browser. In the Azure portal, click **+ Create a resource**, followed by **Compute** and **Function App**.
+1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) in your browser, and select **+ Create a resource**. The display changes to show the choices for a New resource. On the left, select **Compute**. After the list refreshes, select **Function App**.
 
-1. Enter an app name that is unique to Azure. Place the Function App in the "polar-bear-rg" resource group and select the **South Central US** region. Choose **Node.js** as the runtime stack, and then click the **Next: Hosting** button.
+    ![Screenshot that shows how to create a new function app resource in the Azure portal.](../media/select-create-resource-compute-function-app.png)
 
-    ![Creating an Azure Function App](../media/create-function-app-1.png)
+    _Create a new Azure function app_
 
-    _Creating an Azure Function App_
+1. On the **Create Function App** > **Basics** page, enter a name for your new app that's unique to Azure. Place the function app in the "polar-bear-rg" resource group. Choose "Node.js" as the runtime stack, and select the "South Central US" region. When you’re done, select **Next: Hosting** to go to the **Hosting** settings.
 
-1. Select the storage account that you created to receive wildlife photos. Accept the defaults everywhere else, and click **Review + create**. Wait for validation to complete, and then click **Create**.
+    ![Screenshot that shows the basic settings for a new function app.](../media/create-new-function-app-basic-settings.png)
 
-    ![Specifying hosting options](../media/create-function-app-2.png)
+    _Configure the basic settings for a new function app_
 
-    _Specifying hosting options_
+1. On the **Create Function App** > **Hosting** page, select the storage account that you created to receive wildlife photos. Accept the defaults for the other settings, and then select **Review + create**. Wait for validation to complete, and then select **Create**.
 
-1. Wait for the Function App to be deployed. Then open it in the Azure portal and click the **+** sign to the right of **Functions**. Click **In-portal**, and then click **Continue**.
+    ![Screenshot that shows the hosting settings for a new function app.](../media/create-new-function-app-hosting-settings.png)
 
-    ![Adding a function](../media/add-function-1.png)
+    _Configure the hosting settings for a new function app_
 
-    _Adding a function_
+1. Wait for the function app to deploy, then open the app in the Azure portal. In the left navigation, in the **Functions** group, select **Functions**. In the tool bar above the results pane, select **Add**. The **Add function** pane opens.
 
-1. Click **More templates**. Then click **Finish and view templates**.
+    ![Screenshot that shows how to add a function in the Azure portal.](../media/create-new-function-app-add-function.png)
 
-    ![Viewing additional function templates](../media/add-function-2.png)
+    _Add a function_
 
-    _Viewing additional function templates_
+1. In the **Add function** pane, set the **Development environment** to "Develop in portal". In the list under **Select a template**, select "Azure Blob Storage trigger." After you select a list item, the **Template details** section is displayed.
 
-1. Click **Azure Blob Storage trigger**. If you are prompted to install the `Microsoft.Azure.WebJobs.Extensions.Storage` extension, click the **Install** button. Wait for the extension to be installed, and then click **Continue**. (If you are not prompted to install the extension, you may have to wait a minute or two before proceeding to the next step.)
+    ![Screenshot that shows how to configure the settings for a new function.](../media/create-new-function-choose-template.png)
 
-1. Change the function name to `BlobTrigger` and the path to "photos/{name}" so the function will be triggered when blobs are uploaded to the "photos" container.
+    _Configure the settings and choose a template for a function_
+    
+    > [!Note]
+    > If you're prompted to install the `Microsoft.Azure.WebJobs.Extensions.Storage` extension, select **Install**.
+    > Wait for the installation to complete, and then select **Continue**.
+    > (If you're **not** prompted to install the extension, you might have to wait a few minutes before you can proceed to the next step.)
 
-1. Click **new** next to "Storage account connection" and select the storage account that you created earlier. Note down the string that is shown in this field, as you will use it in a later step. Then click **Create** to add the function to the Function App.
+1. In the **Template details** section, provide details about the trigger for the function app.
 
-    ![Creating a blob-triggered function](../media/add-function-3.png)
+    ![Screenshot that shows how to configure the template to create a blob-triggered function.](../media/create-new-function-template-details.png)
 
-    _Creating a blob-triggered function_
+    _Configure the template to create a blob-triggered function_
 
-1. Replace the function code with the following code:
+    1. Enter "BlobTrigger" as the name for the new function.
+    1. For the **Path**, set the value to "photos/{name}" so the function triggers when blobs are uploaded to the "photos" container.
+    1. Under **Storage account connection**, select **New**. In the popup dialog, select the storage account that you created earlier. Note down the value in the box. You'll need the value in a later step. 
+    1. Select **OK**.
+    
+1. At the bottom of the **Add function** pane, select **Add**. After the function app is created, the Azure portal display changes to show the newly created app.
+
+1. <!-- Update UI instructions and screenshots --> Replace the function code with the following code:
 
     ```javascript
     module.exports = function (context, myBlob) {
@@ -127,15 +139,15 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     The code that you just added uses the Azure Storage SDK for Node.js ([azure-storage](https://www.npmjs.com/package/azure-storage)) to generate a read-only SAS for the blob whose URL is passed to the Custom Vision Service, and appends it to the blob URL as a query string. The SAS is valid for 3 minutes and allows read access only. This allows your code to submit private blobs to the Custom Vision Service for analysis without putting the blobs in a public container where anyone could download them.
 
-1. Replace <CONNECTION_STRING_NAME> on line 4 with the **Storage account connection** string you noted earlier (for example, "polarbearstorage_STORAGE"). This connection string was added to application settings when you added the `BlobTrigger` function to the Function App, and its name derives from the storage-account name. If needed, you can look it up in the Application settings of the Function App. Then click the **Save** button to save the changes.
+1. <!-- Update UI instructions and screenshots --> Replace <CONNECTION_STRING_NAME> on line 4 with the **Storage account connection** string you noted earlier (for example, "polarbearstorage_STORAGE"). This connection string was added to application settings when you added the `BlobTrigger` function to the Function App, and its name derives from the storage-account name. If needed, you can look it up in the Application settings of the Function App. Then click the **Save** button to save the changes.
 
-1. Click the Function App in the menu on the left. Click **Platform features**, and then click **Console** to open a function console.
+1. <!-- Update UI instructions and screenshots --> Click the Function App in the menu on the left. Click **Platform features**, and then click **Console** to open a function console.
 
     ![Opening a function console](../media/open-function-console.png)
 
     _Opening a function console_
 
-1. Execute the following commands in the function console to install the NPM [request](https://www.npmjs.com/package/request) package and the [Azure Storage SDK for Node.js](https://www.npmjs.com/package/azure-storage) so your function can use them, and ignore any warning messages that are displayed.
+1. <!-- Update UI instructions and screenshots --> Execute the following commands in the function console to install the NPM [request](https://www.npmjs.com/package/request) package and the [Azure Storage SDK for Node.js](https://www.npmjs.com/package/azure-storage) so your function can use them, and ignore any warning messages that are displayed.
 
     ```bash
     npm install request
@@ -145,7 +157,7 @@ Azure Functions can be written in the Azure portal or written externally using t
     > [!NOTE]
     > Ignore any warning messages that are displayed. We are using an older version of a javascript library for simplicity.
 
-1. Wait for the installs to finish. Then return to the "Platform features" tab and click **Function app settings**. Click **Manage application settings** and add two application settings to the Function App:
+1. <!-- Update UI instructions and screenshots --> Wait for the installs to finish. Then return to the "Platform features" tab and click **Function app settings**. Click **Manage application settings** and add two application settings to the Function App:
 
     - One named PREDICTION_URL whose value is the Custom Vision Service prediction URL you saved in the previous unit
     - One named PREDICTION_KEY whose value is the Custom Vision Service prediction key you saved in the previous unit
@@ -154,19 +166,19 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     > Rather than hard-code the Custom Vision Service URL and authentication key in the function's code, you are storing them in the Function App's application settings, where they are more secure.
 
-1. Return to the `BlobTrigger` function in the portal and click **Logs** at the bottom of the page to open the function's output log.
+1. <!-- Update UI instructions and screenshots --> Return to the `BlobTrigger` function in the portal and click **Logs** at the bottom of the page to open the function's output log.
 
     ![Opening the function's output log](../media/open-output-log.png)
 
     _Opening the function's output log_
 
-1. Start a separate browser instance and navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account and upload **image_12.jpg** from the "photos" folder you created in an earlier unit this module to the "photos" container. Here's what **image_12.jpg** looks like:
+1. <!-- Update UI instructions and screenshots --> Start a separate browser instance and navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account and upload **image_12.jpg** from the "photos" folder you created in an earlier unit this module to the "photos" container. Here's what **image_12.jpg** looks like:
 
     ![Image uploaded to blob storage](../media/image-12.jpg)
 
     _Image uploaded to blob storage_
 
-1. Return to the function log in the other browser instance and confirm that the function executed, and that **image_12.jpg** was determined by the Custom Vision Service to contain a polar bear.
+1. <!-- Update UI instructions and screenshots --> Return to the function log in the other browser instance and confirm that the function executed, and that **image_12.jpg** was determined by the Custom Vision Service to contain a polar bear.
 
     ![Viewing the output log](../media/function-output-1.png)
 
