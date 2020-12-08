@@ -10,7 +10,7 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 	pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 	```
 
-	The current directory changes to the *:::no-loc text="Products/":::* directory.
+	The current directory changes to the *:::no-loc text="Products":::* directory.
 
 1. Run the following .NET CLI command in the command shell at the current directory.
 
@@ -29,7 +29,7 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-1. Open the new *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="Pages/Products":::* directory. Examine the file's markup:
+1. Open the new *:::no-loc text="Pages/Products/Create.cshtml":::* Razor page. Examine the file's markup:
 
 	```cshtml
 	@page
@@ -57,7 +57,7 @@ A Razor page supports Razor syntax, which is HTML and C# combined. The C# code d
 
 ## Add form markup to the *Create* Razor page
 
-Open the *:::no-loc text="Pages/Products/Create.cshtml":::* Razor page. Replace the contents with the following markup, and save the changes.
+Replace the contents of *:::no-loc text="Pages/Products/Create.cshtml":::* with the following markup. Save your changes.
 
 ```cshtml
 @page

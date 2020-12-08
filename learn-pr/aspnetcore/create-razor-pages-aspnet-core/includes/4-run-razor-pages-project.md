@@ -68,7 +68,7 @@ Now that your app is deployed, let's tour the unfinished app.
 
 ## Tour the app
 
-1. Open the app in your browser by selecting the link provided in the "**You can launch the app at...**" text.
+1. Open the app in your browser by selecting the URL provided in the "**You can launch the app at...**" text.
 
 1. Select the **:::no-loc text="Products Admin":::** link near the top of the page.
 

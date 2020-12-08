@@ -1,8 +1,8 @@
-In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add an HTTP POST page handler for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a basic Razor page *:::no-loc text="PageModel":::* class and its elements. You'll add an HTTP POST page handler for the *:::no-loc text="Create":::* Razor page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
 
-## Examine the structure of a basic Razor Pages *:::no-loc text="PageModel":::* class
+## Examine the structure of a Razor Pages *:::no-loc text="PageModel":::* class
 
-Open the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="Pages/Products":::* directory. You may remember, that when you created a new Razor Page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It should contain the following C# code:
+Open the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file. You may remember, that when you created a new Razor page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It should contain the following C# code:
 
 ```csharp
 using System;
@@ -23,8 +23,7 @@ namespace ContosoPets.Ui.Pages.Products
 }
 ```
 
-A Razor Page's *:::no-loc text="PageModel":::* class file defines any page handlers for requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor Page, your app more modular, and much easier to maintain.
-By convention, the *:::no-loc text="PageModel":::* class is named *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
+A Razor page's *:::no-loc text="PageModel":::* class file defines any page handlers for HTTP requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor page, your app more modular, and easier to maintain. By convention, the *:::no-loc text="PageModel":::* class is named *:::no-loc text="<PageName>Model":::* and resides in the same namespace as the Razor page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
 
 Currently, the `CreateModel` class handles the HTTP GET request with an empty `OnGet` page handler. You can add handlers for any HTTP verb. The most common handlers are:
 
@@ -115,7 +114,7 @@ return RedirectToPage("Index");
 
 ## Define validation rules for the product model using data annotations
 
-This project uses a central model file *:::no-loc text="Product.cs":::* for `Product` model validation and operations. It's used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention, it's stored in the *:::no-loc text="Models":::* directory. The `Product` model's namespace is `ContosoPets.Ui.Models`.
+This project uses a central model file *:::no-loc text="Product.cs":::* for `Product` model validation and operations. It's used by all Razor page *:::no-loc text="PageModels":::* involved in UI for `Product` CRUD operations, and is used to validate product data received from the web api. By convention, it's stored in the *:::no-loc text="Models":::* directory. The `Product` model's namespace is `ContosoPets.Ui.Models`.
 
 Your new `CreateModel` class gained access to any model types defined in the `ContosoPets.Ui.Models` namespace, including the `Product` model, with the following `using` directive:
 
@@ -155,7 +154,7 @@ The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an obj
 
 ## Inject the service that handles HTTP requests
 
-As a final step, the `OnPostAsync` method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed `HttpClient` service architecture. The `ProductService` class manages all HTTP requests to the web API so that code is maintained in one place. Furthermore, it's registered at startup as a service so that it may be injected where needed. It's injected in this project for all *:::no-loc text="PageModel":::* classes that require CRUD operations for their Razor Pages. You'll walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
+As a final step, the `OnPostAsync` method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed `HttpClient` service architecture. The `ProductService` class manages all HTTP requests to the web API so that code is maintained in one place. Furthermore, it's registered at startup as a service so that it may be injected where needed. It's injected in this project for all *:::no-loc text="PageModel":::* classes that require CRUD operations for their Razor pages. You'll walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
 
 The `ProductService` class was made available to the `Create` *:::no-loc text="PageModel":::* class with the following `using` statement:
 
@@ -179,9 +178,9 @@ public class CreateModel : PageModel
     }
 ```
 
-ASP.NET Core supports the Inversion of Control (IoC) pattern using DI. This pattern allows the `ProductService` service to be injected directly into the constructor of this class where it's used. The framework creates an instance of the class and disposes of the resulting object when it's no longer needed. The `ProductService` class defines a constructor, `CreateModel` that the service provides to the app. This interface is implemented by a concrete type, `ProductService`. This IoC design pattern allows ASP.NET Core developers to avoid the inherent costs of a class taking a direct dependency on another class.
+ASP.NET Core supports the Inversion of Control (IoC) principle using DI. DI allows the `ProductService` service to be injected directly into the constructor of the `PageModel` class that needs it. .NET creates an instance of the `ProductService` class and disposes of the resulting object when it's no longer needed. DI allows developers to avoid tightly coupling a specific class to another class.
 
-The following code calls the `CreateProduct` method, passing the `Product` Data Transfer Object (DTO) which will be sent by HTTP request to the web API.
+The following code calls the `CreateProduct` method, passing the `Product` DTO. The DTO will be sent by HTTP request to the web API:
 
 ```csharp
 await _productService.CreateProduct(Product);
@@ -189,11 +188,11 @@ await _productService.CreateProduct(Product);
 
 The lifecycle of the *:::no-loc text="ContosoPets.Ui":::* project's `ProductService` HTTP request logic is explored later in this module.
 
-## Use an *:::no-loc text="Anchor Tag Helper":::* to link to the new *:::no-loc text="Create":::* Razor Page
+## Link to the *:::no-loc text="Create":::* page
 
-Now that the *:::no-loc text="Create.cshtml":::* Razor Page and its *:::no-loc text="CreateModel.cshtml.cs":::* class file are complete. Let's allow users to navigate to it.
+The *:::no-loc text="Create":::* page has been created and implemented. Let's allow users to navigate to it.
 
-### Add an *:::no-loc text="Anchor Tag Helper":::* to the *:::no-loc text="/Pages/Products/Index.cshtml":::* Razor Page
+### Add an Anchor Tag Helper to the *Index* page
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
@@ -203,6 +202,11 @@ Now that the *:::no-loc text="Create.cshtml":::* Razor Page and its *:::no-loc t
 
 1. Save your changes.
 
-The preceding highlighted code uses an *:::no-loc text="Anchor Tag Helper":::* to direct the user to the *:::no-loc text="Pages/Products/Create.cshtml":::* Razor Page located in the same directory as the Index page. The *:::no-loc text="Anchor Tag Helper":::* enhances the standard HTML anchor (`<a ... ></a>`) tag by adding new attributes, such as the `asp-page-handler` attribute used to route to specific page handlers or the `asp-page` attribute, as used here, to set an anchor tag's `href` attribute value to a specific page.
+The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
+
+* Directs the user to the *:::no-loc text="Pages/Products/Create.cshtml":::* Razor page, located in the same directory as the *:::no-loc text="Index":::* page.
+* Enhances the standard HTML anchor (`<a>`) tag by adding custom HTML attributes, such as `asp-page-handler`.
+
+The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.
 
 Next, you'll explore the lifecycle of the project's `ProductService` HTTP request logic.

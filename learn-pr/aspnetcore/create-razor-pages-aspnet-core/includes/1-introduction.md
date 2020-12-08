@@ -13,7 +13,7 @@ In this module, you will:
 * Create a form that supports the app's product data management requirements.
 * Add client-side form input validation using Razor's Input Tag Helper.
 * Add server-side model validation using data annotations.
-* Add a reference to a Data Transfer Object (DTO).
+* Add a reference to a Data Transfer Object.
 * Consume a RESTful service from your PageModel.
 * Examine the life cycle of a sample HTTP request.
 * Deploy and test the web app.
