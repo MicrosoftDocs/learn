@@ -18,9 +18,9 @@ quiz:
 
   - content: "Which of the following PaaS services does Azure Stack Hub support?"
     choices:
-    - content: "Keyvaults."
+    - content: "KeyVaults."
       isCorrect: true
-      explanation: "That's correct. Azure Stack Hub supports virtual machines, App Service web apps, API apps, and functions, Keyvaults, SQL and MySQL databases, containers, Event Hubs, IoT Hubs, Service Fabric clusters and Kubernetes clusters."
+      explanation: "That's correct. Azure Stack Hub supports virtual machines, App Service web apps, API apps, and functions, KeyVaults, SQL and MySQL databases, containers, Event Hubs, IoT Hubs, Service Fabric clusters and Kubernetes clusters."
     - content: "Cosmos DB."
       isCorrect: false
       explanation: "That's incorrect. Cosmos DB is currently supported in Azure only."
