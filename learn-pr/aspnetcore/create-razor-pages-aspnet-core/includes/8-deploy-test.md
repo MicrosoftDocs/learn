@@ -1,4 +1,4 @@
-Now that you've added a *:::no-loc text="Create":::* Razor page form and its *:::no-loc text="PageModel":::* class file that handles HTTP POST events, it's time to test and run the completed project.
+You've added a product creation page, so it's time to test and run the completed project.
 
 ## Compile, deploy, and test the updated project
 
@@ -40,9 +40,11 @@ You can launch the app at http://webapp<random ID number here>.azurewebsites.net
 
 1. Select the **:::no-loc text="Products Admin":::** link.
 
-1. Select the **:::no-loc text="Add Product":::** link:
+    Notice the presence of the new **:::no-loc text="Add Product":::** link:
 
     :::image type="content" source="../media/8-deploy-test/products-admin-updated.png" alt-text="Screenshot of the updated products administration page." border="true" lightbox="../media/8-deploy-test/products-admin-updated.png":::
+
+1. Select the **:::no-loc text="Add Product":::** link:
 
     Your new *:::no-loc text="Create":::* page displays:
 
