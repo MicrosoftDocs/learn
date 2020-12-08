@@ -14,7 +14,7 @@ In Unity, you can configure your project to create an immersive view by enabling
 
 ## How are holograms rendered
 
-In Mixed Reality apps, the scene is rendered twice, once for each eye to the user. This rendering method is referred to as *stereoscopic vision*. Compared to traditional 3D development, stereoscopic vision doubles the amount of work that needs to be computed. Therefore, it's important to select the most efficient rendering path in Unity to save both on CPU and GPU time. **Single pass instanced** rendering optimizes the Unity rendering pipeline for mixed reality apps and therefore it's recommended to enable this setting by default for every project.
+In mixed reality apps, the scene is rendered twice, once for each eye to the user. This rendering method is referred to as *stereoscopic vision*. Compared to traditional 3D development, stereoscopic vision doubles the amount of work that needs to be computed. Therefore, it's important to select the most efficient rendering path in Unity to save both on CPU and GPU time. **Single pass instanced** rendering optimizes the Unity rendering pipeline for mixed reality apps and therefore it's recommended to enable this setting by default for every project.
 
 ## How to stabilize holograms
 
