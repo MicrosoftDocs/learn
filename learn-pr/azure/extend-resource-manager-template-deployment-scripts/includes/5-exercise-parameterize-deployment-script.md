@@ -1,6 +1,6 @@
 Now that you've used a deployment script to migrate some manual work into your Azure Resource Manager (ARM) template, another partner application team in your organization has asked for some help.
 
-The team's process has similar requirements, but it needs to deploy multiple files to its storage account. The team has a PowerShell script that can take a list of files as a parameter and upload them, similar to the script that you were already using in your template.
+The team's process has similar requirements, but the team needs to deploy multiple files to its storage account. The team has a PowerShell script that can take a list of files as a parameter and upload them, similar to the script that you were already using in your template.
 
 In this exercise, you'll take your previous template as a starting point and update the PowerShell script to use the one from your partner team. Then you'll add a way to enable the person who's deploying the template to specify what configuration files to deploy (one or more).
 
@@ -21,7 +21,7 @@ You start with the template that you created in the last exercise.
 
 Because the other team has done the hard work in creating a PowerShell script to copy multiple files, you decide to use that script in your template.
 
-Edit the `scriptContent` in the `properties` section to include the script that your partner team has provided.
+Edit `scriptContent` in the `properties` section to include the script that your partner team has provided.
 
 :::code language="powershell" source="code/template-with-deploymentscript-parameters.json" range="121-134" :::
 
@@ -29,7 +29,7 @@ Edit the `scriptContent` in the `properties` section to include the script that 
 
 The script you've adopted requires some environment variables. You can specify them directly in the template, but it will be more flexible to use template functions to get some of the values.
 
-1. Add an `environmentVariables` property to the `properties` of the deployment script.
+1. Add an `environmentVariables` property to the `properties` section of the deployment script.
 
     :::code language="powershell" source="code/template-with-deploymentscript-parameters.json" range="105,118" :::
 
@@ -133,7 +133,7 @@ Now that you've got the template set, you can validate the new deployment script
 
 ### Create a resource group for the exercise
 
-You need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, your cleanup after the exercise will be much easier.
+You need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
 
@@ -199,7 +199,7 @@ az group delete --name $resourceGroupName
 
 ### Create a resource group for the exercise
 
-You need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, your cleanup after the exercise will be much easier.
+You need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise.
 

@@ -25,4 +25,4 @@ One benefit of using environment variables is that you can use [the `secureValue
 
 As you've seen, you can set parameter values directly in the properties of the deployment script. There are several other options for values that can be passed in. You can use dynamic values coming from previously created resources, variables declared in the template, or parameters passed directly in to the template at deployment time.
 
-These scenarios are available through template functions in the `arguments` or `environmentVariables` property. You can use any of the existing functions, like `reference`, `parameters`, or `variables`, to access values and pass them in to the template.
+These scenarios are available through template functions in the `arguments` or `environmentVariables` property. You can use any of the existing functions to access values and pass them in to the template. These functions include `reference`, `parameters`, or `variables`.

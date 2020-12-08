@@ -41,7 +41,7 @@ quiz:
     choices:
       - content: "Deployment scripts can access template parameters and variables."
         isCorrect: false
-        explanation: "Deployment scripts can't directly reference template parameters or variables unless they're included in the arguments or environment variables provided to the ACI container that's running the deployment script."
+        explanation: "Deployment scripts can't directly reference template parameters or variables unless they're included in the arguments or environment variables provided to the container instance that's running the deployment script."
       - content: "Deployment script resources can be passed as arguments and access environment variables."
         isCorrect: true
         explanation: "Arguments and environment variables are the two direct ways to pass data to a deployment script."

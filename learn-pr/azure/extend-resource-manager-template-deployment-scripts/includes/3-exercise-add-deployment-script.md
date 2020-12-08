@@ -66,7 +66,7 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 ## Add a template output
 
-Now that you have a deployment script uploading a file into Azure Blob Storage, you might need to reference that file location in later automation. (Perhaps a test to validate that the file is where you think it should be.)
+Now that you have a deployment script uploading a file into Azure Blob Storage, you might need to reference that file location in later automation. (Perhaps you'll run a test to validate that the file is where you think it should be.)
 
 After the `resources` section of the ARM template, add an output that references the URI for the file as reported by the deployment script.
 
@@ -119,7 +119,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Create a resource group for the exercise
 
-Next, you need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, your cleanup after the exercise will be much easier.
+Next, you need to create a resource group to contain the resources that you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
 
@@ -197,7 +197,7 @@ az group delete --name $resourceGroupName
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [installed Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed, and sign in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
@@ -220,12 +220,12 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Connect-AzAccount
     ```
 
-1. Get the subscription ID of the subscription that you want to use for this exercise. The following command will list your subscriptions and their IDs. 
+1. Get the ID of the subscription that you want to use for this exercise. The following command will list your subscriptions and their IDs. 
 
     ```azurepowershell
     Get-AzSubscription
     ```
-    The subscription ID is the second column. Copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*. 
+    The subscription ID is the second column. Copy the second column. It looks something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*. 
 
 1. Set the default subscription for all of the Azure PowerShell commands that you run in this session.
 
@@ -235,7 +235,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Create a resource group for the exercise
 
-Next, you need to create a resource group to contain the resources you'll create as part of this exercise. By using a new resource group, your cleanup after the exercise will be much easier.
+Next, you need to create a resource group to contain the resources you'll create as part of this exercise. By using a new resource group, you'll make cleaning up after the exercise much easier.
 
 From the terminal in Visual Studio Code, run this command to create the resource group for this exercise:
 

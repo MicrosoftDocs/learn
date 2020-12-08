@@ -8,7 +8,7 @@ ARM templates are wonderful things. You can use them to declare the desired stat
 
 Deployment scripts use a [managed service identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) to authenticate to Azure. A managed service identity is a service principal whose credential and lifecycle are managed by the Azure platform. This identity is what the Azure PowerShell or Azure CLI commands will use to act on the environment. Because you assign the identity, you control the scope of what a `deploymentScripts` resource can affect.
 
-The `deploymentScripts` resource can produce output that other resources in the deployment can use. You can then look up information from an external system or provide data based on the current state of your environment to affect the remainder of the deployment.
+The `deploymentScripts` resource produces output that other resources in the deployment can use. You can then look up information from an external system or provide data based on the current state of your environment to affect the rest of the deployment.
 
 ## How deployment scripts work
 
@@ -31,7 +31,7 @@ Two `deploymentScripts`-specific values are required:
 
   :::code language="json" source="code/example-template.json" range="10-20" highlight="5" :::
 
-- `identity`: The managed identity that the ACI instance will use. You can create the managed identity ahead of time and specify it like the following example. Or you can create it in the template and reference it there (which is what you'll do in the next exercise).
+- `identity`: The managed identity that the container instance will use. You can create the managed identity ahead of time and specify it like the following example. Or you can create it in the template and reference it there (which is what you'll do in the next exercise).
 
   :::code language="json" source="code/example-template.json" range="10-20" highlight="6-10" :::
 
