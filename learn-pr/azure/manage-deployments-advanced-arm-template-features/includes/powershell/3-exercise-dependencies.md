@@ -54,11 +54,27 @@ Here's an overview of the steps you are about to carry out:
 - **Set default resource group**. Also this task can be carried out by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
 - **Carry out the deployment**. This step involves using the cmdlet **New-AzResourceGroupDeployment** with a URL to a template as an argument.
 
+## Open a PowerShell shell
+
+Before you can run PowerShell commands, you need a PowerShell shell running. You can open such a shell using Visual Studio Code and the PowerShell extension.
+
+1. Open a terminal window by using the **Terminal** menu.
+
+1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
+
+   :::image type="content" source="../../media/vscode-pwsh.png" alt-text="Terminal window, terminal type":::
+
+1. If not, select the drop-down and choose **Select Default Shell**.
+
+1. Select **pwsh**.
+
+   :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Select shell type pwsh":::
+
+1. Select the + in the terminal to create a new terminal with _pwsh_ as the shell.
+
 ## Sign in to Azure
 
-You can sign into your Azure account from either the terminal (running `pwsh`), or from Visual Studio Code, using the extension. Below instruction shows how to sign in using the PowerShell extension in Visual Studio Code.
-
-1. In Visual Studio Code, open up the command palette, select **PowerShell: Show integrated console** . Be sure you are signing in to the same account that activated the sandbox.
+Below instruction shows how to sign in to Azure using a PowerShell shell.
 
 1. Run `Connect-AzAccount` to sign in to your account.
 

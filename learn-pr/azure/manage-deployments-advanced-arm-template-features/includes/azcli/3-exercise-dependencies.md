@@ -12,10 +12,21 @@ Here, you open Visual Studio Code, create a terminal session, and connect to the
 
 You need to perform these setup tasks one time during this module. You can refer back to these steps if you sign out or become disconnected in a later exercise.
 
-### Sign in to Azure
+### Open a shell in Visual Studio Code
 
 1. Open Visual Studio Code.
-1. On the **Terminal** menu, select **New Terminal**.
+1. Open a terminal window by using the **Terminal** menu.
+
+1. If the drop-down menu indicates the desired type of shell, you can skip to the next section.
+
+1. If not, select the drop-down and choose **Select Default Shell**.
+
+1. Select the type of shell you want.
+
+1. Select the + in the terminal to create a new terminal with your selected shell type.
+
+### Sign in to Azure
+
 1. From the terminal, run `az login`:
 
     ```azurecli
