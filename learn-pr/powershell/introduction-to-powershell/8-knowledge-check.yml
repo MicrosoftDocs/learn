@@ -14,7 +14,7 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-    - content: What command offers the best experience for finding out more about a command?
+    - content: To use the help system, what command offers the best experience for finding out more about a command?
       choices:
         - content: "`{your command} --help`"
           explanation: Incorrect.
