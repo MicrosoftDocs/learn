@@ -46,7 +46,7 @@ A model object defines data properties and encapsulates logic or operations rela
 * Allows for separation of the logic of a Razor page from its presentation.
 * Defines page handlers for requests sent to the page and for the data used to render the page.
 
-A *page handler* is the method that's executed as a result of an HTTP request. For example, an `OnGet` method in the Razor Page's `PageModel` class is automatically executed for an HTTP GET request.
+A *page handler* is the method that's executed as a result of an HTTP request. For example, an `OnGet` method in the Razor page's `PageModel` class is automatically executed for an HTTP GET request.
 
 ## Models and the *:::no-loc text="Models":::* directory
 
@@ -79,8 +79,8 @@ Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* 
 
 The following table provides routes to be used in this module's completed project.
 
-| URL                                                  | Maps to this Razor Page                             |
-|------------------------------------------------------|-----------------------------------------------------|
+| URL                                                  | Maps to this Razor page                            |
+|------------------------------------------------------|----------------------------------------------------|
 | *:::no-loc text="www.domain.com":::*                 | *:::no-loc text="Pages/Index.cshtml":::*           |
 | *:::no-loc text="www.domain.com/index":::*           | *:::no-loc text="Pages/Index.cshtml":::*           |
 | *:::no-loc text="www.domain.com/products":::*        | *:::no-loc text="Pages/Products/Index.cshtml":::*  |

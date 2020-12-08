@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.5-new-razor-page-create-form
 metadata:
-  title: Exercise - Create the Razor page for a create product form
+  title: Exercise - Add a product creation page
   description: Review the basic elements of a Razor Page and create a page with a form.
   ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Exercise - Create the Razor page for a create product form
+title: Exercise - Add a product creation page
 azureSandbox: true
 interactive: bash
 durationInMinutes: 8
