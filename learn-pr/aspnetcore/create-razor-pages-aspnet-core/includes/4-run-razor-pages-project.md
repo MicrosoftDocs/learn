@@ -25,13 +25,19 @@ The .NET CLI:
 
     This module uses the secure localhost URL beginning with `https`. You can't view the app's pages in a browser, since it isn't yet hosted on a public endpoint. You'll host the app on a public endpoint in a following step.
 
-    A variation of the following output displays to indicate your app is running. The app is listening for requests on ports 5000 and 5001.
+    A variation of the following output displays to indicate your app is running:
 
     ```console
-    Hosting environment: Development
-    Content root path: [your app directory here]\src\ContosoPets.Ui
-    Now listening on: https://localhost:5001
-    Now listening on: http://localhost:5000
+    info: Microsoft.Hosting.Lifetime[0]
+          Now listening on: https://localhost:5001
+    info: Microsoft.Hosting.Lifetime[0]
+          Now listening on: http://localhost:5000
+    info: Microsoft.Hosting.Lifetime[0]
+          Application started. Press Ctrl+C to shut down.
+    info: Microsoft.Hosting.Lifetime[0]
+          Hosting environment: Development
+    info: Microsoft.Hosting.Lifetime[0]
+          Content root path: /home/<user>/aspnet-learn/src/ContosoPets.Ui
     ```
 
 1. Press <kbd>Ctrl+C</kbd> to stop the app.

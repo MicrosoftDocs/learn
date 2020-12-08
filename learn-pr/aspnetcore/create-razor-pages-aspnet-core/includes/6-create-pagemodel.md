@@ -5,13 +5,19 @@ In this unit, you'll review the structure of a basic Razor Page *:::no-loc text=
 Open the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="Pages/Products":::* directory. You may remember, that when you created a new Razor Page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It should contain the following C# code:
 
 ```csharp
-namespace Contoso.UI.Pages.Products
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace ContosoPets.Ui.Pages.Products
 {
     public class CreateModel : PageModel
     {
         public void OnGet()
         {
-
         }
     }
 }
@@ -20,18 +26,16 @@ namespace Contoso.UI.Pages.Products
 A Razor Page's *:::no-loc text="PageModel":::* class file defines any page handlers for requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor Page, your app more modular, and much easier to maintain.
 By convention, the *:::no-loc text="PageModel":::* class is named *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
 
-Currently, the `CreateModel` class handles the HTTP GET request and does nothing with it.
-
-You can add handler methods for any HTTP verb. The most common handlers are:
+Currently, the `CreateModel` class handles the HTTP GET request with an empty `OnGet` handler method. You can add handler methods for any HTTP verb. The most common handlers are:
 
 * `OnGet` to initialize state needed for the page.
 * `OnPost` to handle form submissions.
 
-The *:::no-loc text="Create":::* page is a form and requires an `OnPost` handler method.
+The *:::no-loc text="Create":::* page contains a form and therefore requires an HTTP POST handler.
 
-## Add an `OnPost` handler method to the `Create` *:::no-loc text="PageModel":::* class
+## Add an HTTP POST handler to the *:::no-loc text="PageModel":::* class
 
-Replace the code in the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="Pages/Products":::* directory with the following code. Save your changes.
+Replace the code in the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class with the following code. Save your changes.
 
 ```csharp
 using ContosoPets.Ui.Models;
@@ -69,22 +73,7 @@ namespace ContosoPets.Ui.Pages.Products
 }
 ```
 
-The `CreateModel` class now has an `OnPostAsync` handler method. `OnPostAsync` runs on HTTP POST requests (when the user posts the *:::no-loc text="Create":::* form).
-The *:::no-loc text="Async":::* naming suffix is optional but is a common naming convention for asynchronous methods.
-
-```csharp
-public async Task<IActionResult> OnPostAsync()
-{
-    if (!ModelState.IsValid)
-    {
-        return Page();
-    }
-
-    await _productService.CreateProduct(Product);
-
-    return RedirectToPage("Index");
-}
-```
+The `CreateModel` class now has an asynchronous `OnPostAsync` handler method. `OnPostAsync` executes when the user posts the *:::no-loc text="Create":::* page's form. The *:::no-loc text="Async":::* naming suffix is optional but is a common naming convention for asynchronous methods.
 
 The `OnPostAsync` handler will need to do the following tasks for this app:
 
@@ -92,7 +81,7 @@ The `OnPostAsync` handler will need to do the following tasks for this app:
 * If the attempted *:::no-loc text="PageModel":::* changes are invalid, the *:::no-loc text="Create":::* page is presented again to the user. A message is displayed clarifying the input requirements.
 * If the *:::no-loc text="PageModel":::* update is valid, then data changes are passed to a service called `ProductService`. `ProductService` will handle the concern of HTTP requests and responses to the web API.
 
-## Bind the `Product` model
+## Bind the model
 
 The `CreateModel` class needs access to the `Product` model. It will validate and pass `Product` entries from the *:::no-loc text="Create":::* form. It does so by using the `[BindProperty]` attribute in the following code:
 
@@ -114,7 +103,7 @@ if (!ModelState.IsValid)
 }
 ```
 
-In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *:::no-loc text="Create":::* page is presented again to the user. In the previous unit, you saw how the *:::no-loc text="Create":::* Razor Page takes advantage of ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
+In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *:::no-loc text="Create":::* page is presented again to the user. In the previous unit, you saw how the *:::no-loc text="Create":::* Razor page takes advantage of ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
 
 If the `ModelState` is valid, the `OnPostAsync` handler calls upon an instance of `ProductService`. `ProductService` is responsible for HTTP requests and responses for the web API.
 
