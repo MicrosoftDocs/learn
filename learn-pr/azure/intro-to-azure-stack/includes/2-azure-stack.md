@@ -20,4 +20,7 @@ Azure Arc consists of a set of technologies that you can use to simplify adminis
 
 Azure Arc delivers further integration between management of Azure services and on-premises infrastructure. Azure Arc and Azure Stack complement each other. You can combine the benefits of Azure Arc with Azure Stack where Azure Arc can manage virtualized and containerized workloads running on Azure Stack hardware, leveraging the compute and cloud capabilities of Azure Stack.
 
+> [!NOTE]
+> Azure Arc provides integration with Azure Stack HCI and Azure Stack Edge. Azure Stack Hub has its own Azure Resource Manager layer.
+
 Choose the best response for each of the questions below. Then select "Check our answers".

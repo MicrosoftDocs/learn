@@ -2,7 +2,7 @@ There are still many customers that are not ready to transition to the hybrid op
 
 ## What is Azure Stack HCI?
 
-Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads on a hyperconverged infrastructure (HCI) cluster in your own datacenter or in a datacenter managed by a service provider. From the hardware standpoint, each Azure Stack HCI cluster consists of between 2 and 16 physical, pre-configured, servers running a specialized operating system derived from Windows Server 2019.
+Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads on a hyperconverged infrastructure (HCI) cluster in your own datacenter or in a datacenter managed by a service provider. From the hardware standpoint, each Azure Stack HCI cluster consists of between 2 and 16 physical, validated servers running a specialized operating system purposely defined for hyperconverged infrastructure.
 
 > [!NOTE]
 > In the simplest terms, you can think of Azure Stack HCI as pre-built, pre-configured, highly-optimized hyperconverged cluster that you can use to deploy Windows and Linux Hyper-V VMs.
@@ -25,7 +25,7 @@ Unlike with Azure Stack Hub, which allows only a restricted set of administrativ
 
 Azure Stack HCI also offers disaster recovery capabilities that leverage its support for stretched clustering. By deploying a stretched Azure Stack HCI cluster, you can synchronously replicate its workloads across two separate on-premises locations and automatically failover between them.
 
-On the other hand, Azure Stack HCI doesn't support implementation of Azure PaaS services and the Azure-based deployment methodologies that rely on Azure Resource Manager, both of which are available on Azure Stack Hub. In addition, Azure Stack HCI doesn't inherently enforce or provide multitenancy. However, it is possible to implement it.
+On the other hand, Azure Stack HCI doesn't support implementation of Azure PaaS services and the Azure-based deployment methodologies that rely on Azure Resource Manager, both of which are available on Azure Stack Hub. In addition, Azure Stack HCI doesn't inherently enforce or provide multitenancy. 
 
 ## Common use cases of Azure Stack HCI
 

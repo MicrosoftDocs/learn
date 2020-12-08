@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What functionality does Field Programmable Gate Array provide in Azure Stack Edge?"
+  - content: "What functionality does Vision Processing Unit provide in Azure Stack Edge?"
     choices:
     - content: "accelerated Artificial Intelligence-inferencing"
       isCorrect: true
@@ -36,6 +36,6 @@ quiz:
     - content: "Azure Container Instance."
       isCorrect: false
       explanation: "That's incorrect. Azure Stack Edge does not rely on Azure Container Instances."
-    - content: "Docker containers."
+    - content: "A managed Kubernetes environment."
       isCorrect: true
-      explanation: "That's correct. IoT Edge modules are implemented as Docker containers, hosting the relevant ML models."
+      explanation: "That's correct. Containers are deployed via IoT Hub or Azure Arc within a managed Kubernetes environment."
