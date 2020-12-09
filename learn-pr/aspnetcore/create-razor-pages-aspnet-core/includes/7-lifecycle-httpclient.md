@@ -104,8 +104,8 @@ Now that you walked through how `ProductService` is made available to the app as
 ## Examine the lifecycle of the `CreateProduct` method
 
 1. The user posts the product data form in the *:::no-loc text="Create":::* page.
-1. The Input Tag Helper uses the data annotation attributes specified in the `Product` model and produces HTML attributes needed for jQuery validation, executed on the client-side. The HTTP POST event is allowed to continue only if the data is valid. In many cases, validation errors would be detected on the client, and never submitted to the server.
-1. The `Create` class's `OnPostAsync` method handles the HTTP POST event on the server-side and checks the `ModelState` for validation errors as seen in the following code:
+1. The Input Tag Helper uses the data annotation attributes specified in the `Product` model and produces HTML attributes needed for jQuery validation, executed on the client-side. The HTTP POST request is allowed to continue only if the data is valid. In many cases, validation errors would be detected on the client, and never submitted to the server.
+1. The `Create` class's `OnPostAsync` method handles the HTTP POST request on the server-side and checks the `ModelState` for validation errors as seen in the following code:
   
     ```csharp
     public async Task<IActionResult> OnPostAsync()
