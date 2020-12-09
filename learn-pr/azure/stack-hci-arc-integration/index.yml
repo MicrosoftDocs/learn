@@ -2,8 +2,8 @@
 uid: learn.azure.stack-hci-arc-integration
 metadata:
   title: Integrate Azure Arc and Azure Stack HCI
-  description: TODO
-  ms.date: 11/20/2020
+  description: Integrate Azure Arc and Azure Stack HCI
+  ms.date: 12/07/20
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
