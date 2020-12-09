@@ -104,7 +104,9 @@ The following markup uses the Partial Tag Helper to asynchronously render a part
 <partial name="_ValidationScriptsPartial" />
 ```
 
-It's an alternative to the following Razor syntax:
+The Partial Tag Helper's `name` attribute accepts the partial view name without the file extension. A view discovery process locates the partial view in the project.
+
+This Tag Helper syntax is an alternative to the following HTML Helper syntax:
 
 ```cstml
 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
