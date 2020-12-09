@@ -69,7 +69,7 @@ From the header toolbar in the **Query** pane, you can create either a **New Azu
 You can export the query into one of the following formats:
 
 - **Export to CSV**. Use this option to export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.
-- **Export to CSV-Displayed Columns**. Use this option to export only those columns that are shown in the results windows of the query.
+- **Export to CSV-Displayed Columns**. Use this option to export only those columns that are displayed in the results windows of the query.
 - **Export to Power BI (M query)**. Use this option to create and download a **PowerBIQuery.txt** file that you can open with Microsoft Power BI application.
 
 You can pin the results of the query into a private or shared dashboard so you can quickly examine the results of the query.
@@ -80,4 +80,4 @@ You can use **Format query** on the header toolbar to make the query more readab
 
 ### Query results
 
-In the **Query results** pane, you can observe the results of the query. You can also present the results using a chart, or hide and show additional columns to filter the query results.
+In the **Query results** pane, you can observe the results of the query. You can also present the results using a chart, or hide and display additional columns to filter the query results.
