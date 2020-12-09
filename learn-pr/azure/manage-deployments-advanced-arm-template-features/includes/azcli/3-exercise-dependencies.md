@@ -1,11 +1,3 @@
-## Prerequisites
-
-Make sure that you have the following software installed in your development environment before you proceed:
-
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools?azure-portal=true)
-- The [latest version of Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
-
 ## Setup
 
 Here, you open Visual Studio Code, create a terminal session, and connect to the Azure subscription that's provided by the free Azure sandbox environment.
@@ -17,13 +9,15 @@ You need to perform these setup tasks one time during this module. You can refer
 1. Open Visual Studio Code.
 1. Open a terminal window by using the **Terminal** menu.
 
-1. If the drop-down menu indicates the desired type of shell, you can skip to the next section.
+1. If the drop-down menu shows your preferred shell (**bash** or **zsh**, for example), you can skip to the next section.
 
 1. If not, select the drop-down and choose **Select Default Shell**.
 
 1. Select the type of shell you want.
 
-1. Select the + in the terminal to create a new terminal with your selected shell type.
+    :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Selecting a shell from the drop-down menu.":::
+
+1. Select the **+** in the terminal to create a new terminal with your selected shell type.
 
 ### Sign in to Azure
 

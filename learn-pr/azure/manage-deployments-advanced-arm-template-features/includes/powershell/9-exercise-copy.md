@@ -85,7 +85,7 @@ Although the output shows that two storage accounts were created, here you run t
 1. Run the following `Get-AzResource` command to ensure the resources were deployed:
 
     ```powershell
-    Get-AzResource -Name tailwindsa* -ResourceGroupName <rgn>resource group name</rgn> | Select-Object ResourceId
+    Get-AzResource -Name tailwindsa* -ResourceGroupName <rgn>resource group name</rgn> | Select-Object -Property Name,ResourceId
     ```
 
     The `tailwindsa*` argument specifies to show just the identifiers matching the name prefix you gave the resources.

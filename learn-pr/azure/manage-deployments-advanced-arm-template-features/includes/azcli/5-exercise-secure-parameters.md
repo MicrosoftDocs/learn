@@ -33,7 +33,7 @@ Create a Key Vault and add the VM password as a secure secret. To do so:
 
 Here, you create a parameter file that contains the VM's name, the administrator username, and a reference to the VM password in the key vault.
 
-Recall that a parameter file is an alternative way to pass parameters to your ARM template during deployment.
+You can pass parameters to templates from the command line. Recall that a parameter file is an alternative way to pass parameters to your ARM template during deployment. A parameter file enables you to access key vault secrets from your template.
 
 1. Run the following `az keyvault show` command to print your key vault ID:
 

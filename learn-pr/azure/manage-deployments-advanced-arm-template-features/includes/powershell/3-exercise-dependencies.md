@@ -1,63 +1,12 @@
-## Prerequisites
+## Setup
 
-Before installing the required PowerShell module, make sure you have PowerShell Core (6 or 7)
+Here, you open Visual Studio Code, create a PowerShell session, and connect to the Azure subscription that's provided by the free Azure sandbox environment.
 
-- **Upgrade to/Install latest PowerShell**. If you have Windows PowerShell 5 or earlier or versions of PowerShell Core 6, [install the latest version of PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.4.0&azure-portal=true)
+You need to perform these setup tasks one time during this module. You can refer back to these steps if you sign out or become disconnected in a later exercise.
 
-   > [!NOTE]
-   > You can't install the required module on Windows PowerShell 5.x or earlier.
+### Open PowerShell in Visual Studio Code
 
-- **Install the Az Module**. The Az module is a PowerShell module dedicated to managing cloud resources on Azure. It's needed for the upcoming exercises in this module.
-
-## Verify installation
-
-Run `$PSVersionTable.PSVersion` to verify the PowerShell version:
-
-```powershell
-$PSVersionTable.PSVersion
-```
-
-You should see a similar output:
-
-```powershell
-Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
-7      1      0      -1       preview.5
-
->
-```
-
-## Install or update module
-
-There are potentially two different paths here:
-
-> [!NOTE]
-> In order to avoid using PowerShell in an *elevated mode* you can use the argument `-Scope CurrentUser` to install or update modules on your user.
-
-- **You don't have the module installed previously**. Install this module using the following command:
-
-   ```powershell
-   Install-Module -Name Az -Force -Scope CurrentUser
-   ```
-
-- **You need to update a pre-existing module**. If you have an older version of the **Az Module**, and need to update it, use the following command:
-
-   ```powershell
-   Update-Module -Name Az -Scope CurrentUser
-   ```
-
-## Exercise overview
-
-Here's an overview of the steps you are about to carry out:
-
-- **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-- **Set the active subscription**. This task can be accomplished by invoking a PowerShell cmdlet.
-- **Set default resource group**. Also this task can be carried out by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-- **Carry out the deployment**. This step involves using the cmdlet **New-AzResourceGroupDeployment** with a URL to a template as an argument.
-
-## Open a PowerShell shell
-
-Before you can run PowerShell commands, you need a PowerShell shell running. You can open such a shell using Visual Studio Code and the PowerShell extension.
-
+1. Open Visual Studio Code.
 1. Open a terminal window by using the **Terminal** menu.
 
 1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
@@ -68,51 +17,49 @@ Before you can run PowerShell commands, you need a PowerShell shell running. You
 
 1. Select **pwsh**.
 
-   :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Select shell type pwsh":::
+   :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Selecting a shell from the drop-down menu.":::
 
-1. Select the + in the terminal to create a new terminal with _pwsh_ as the shell.
+1. Select the **+** in the terminal to create a new terminal with _pwsh_ as the shell.
 
-## Sign in to Azure
-
-Below instruction shows how to sign in to Azure using a PowerShell shell.
+### Sign in to Azure
 
 1. Run `Connect-AzAccount` to sign in to your account.
 
-    ```powershell
+    ```azurepowershell
     Connect-AzAccount
     ```
 
-    (it will open a browser that allows you to sign in to your account)
+    A browser window appears.
 
-   Once you are logged in, you see a list, in JSON format. The list contains subscriptions associated with this account in the terminal, if you activated the sandbox.
+1. Select the account that you used to activate the sandbox and close the browser window when prompted.
 
-## Set the active subscription
+### Set the active subscription
 
-The command you are about to run will list your subscriptions and their IDs. The subscription ID is the second column.
+1. Run `Get-AzSubscription` to get the subscription ID for the sandbox environment.
 
-1. Run `Get-AzSubscription` to get a hold of the subscription ID for the Concierge Subscription.
-
-    ```powershell
+    ```azurepowershell
     Get-AzSubscription
     ```
 
-    Look for Concierge Subscription and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*.
+    Look for Concierge Subscription and copy the second column. It will look something like **cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0**.
 
 1. Run `Set-AzContext` to change your active subscription to the Concierge Subscription.
 
    > [!NOTE]
    > Be sure to substitute *{Your subscription ID}* with the ID of the Concierge Subscription you just got in the last command.
 
-    ```powershell
+    ```azurepowershell
     $subscription = Get-AzSubscription -SubscriptionId {Your subscription ID}
     Set-AzContext $subscription
     ```
 
 ### Set default resource group
 
-You need to set the resource group created for you in the sandbox as the default resource group. You will accomplish this task in two steps:
+Normally, when you run an Azure CLI command, you need to specify a resource group.
 
-Run `Set-AzDefault` to set the default Resource Group.
+The sandbox provides a default resource group for you. To make the Azure CLI commands that follow easier to run, here you set the default resource group.
+
+Run the `Set-AzDefault` cmdlet to set the default resource group.
 
 ```powershell
 Set-AzDefault -ResourceGroupName <rgn>resource group name</rgn>
@@ -144,11 +91,11 @@ Here, you download an ARM template from a GitHub repository that we provide for 
     curl -O 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json'
     ```
 
-1. Run the command `ConvertTo-SecureString` and assign the results to a PowerShell variable `$secure`:
+1. Run the `ConvertTo-SecureString` cmdlet and assign the results to a PowerShell variable named `$secure`:
 
-   ```powershell
+    ```powershell
     $secure = "insecurepassword123!" | ConvertTo-SecureString -AsPlainText -Force
-   ```
+    ```
 
    Now you have an encrypted version of your password that you can pass the deployment script next.
 
@@ -176,11 +123,11 @@ Here, you download an ARM template from a GitHub repository that we provide for 
     ],
     ```
 
-## Verify deployment
+## Verify the deployment
 
 Verify that the VM is provisioned and is connectable over SSH. To do so:
   
-1. Run the `Invoke-Expression` command to connect to the VM via SSH:
+1. Run the `Invoke-Expression` command to connect to the VM over SSH:
 
    ```powershell
    Invoke-Expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
