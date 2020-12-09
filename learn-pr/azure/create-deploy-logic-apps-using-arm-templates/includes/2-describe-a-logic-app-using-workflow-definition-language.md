@@ -3,7 +3,7 @@ You define the structure and workflow for a Logic App using a JSON document. Thi
 
 In the sample scenario, you want to provide your consultants with common workflows, which they can adapt to the specific needs of the universities they work with. You want to make it as easy as possible to customize and deploy each workflow, so you decide to take a look at the code behind the workflow, namely the workflow definition JSON. 
 
-## The Logic Apps designer
+## Logic Apps designer
 
 The Logic Apps Designer enables you to create and debug the workflow for a Logic App graphically. The Logic Apps Designer also lets developers look under the hood of a workflow to see how it's implemented. The following image shows an example of a simple Logic App. The workflow is triggered by sending an HTTP GET request to a specified URL. The result is returned in the HTTP response. In this example, the workflow is sending back a simple *Hello Logic Apps Template!* message.
 
@@ -11,7 +11,7 @@ The Logic Apps Designer enables you to create and debug the workflow for a Logic
 
 Let's now look at the workflow definition language as used by the JSON template.
 
-## The Code view
+## Code view
 
 The Code View window in the Logic Apps Designer shows the JSON document that describes the workflow. In the sample app, the code looks like this:
 
@@ -49,7 +49,7 @@ The Code View window in the Logic Apps Designer shows the JSON document that des
 
 Notice the sections in the `definition` scope that relate to the actions and triggers shown in the Logic Apps Designer. You can edit the JSON code in this document to reflect any changes required in the functionality of the Logic App. You can also add further actions, and specify how the logic in the workflow runs from one action to the next.
 
-### The triggers section
+### Triggers section
 
 The triggers section contains the description of the type of trigger, and how it can be invoked. In this example, the trigger is a simple HTTP trigger that that runs in response to an HTTP GET request.
 
@@ -123,7 +123,7 @@ A trigger can also specify conditions. The trigger will only fire if these condi
 }
 ```
 
-### The actions section
+### Actions section
 
 The actions section of a Logic App defines the logic and structure of the workflow. It contains a series of *action* items. An action item is a basic building block for constructing workflows. Action items take inputs and produce outputs, which are passed to the next action item in the workflow. The different types of action items available include:
 
@@ -187,7 +187,7 @@ The *runAfter* section indicates where the action runs in the workflow sequence.
 }
 ```
 
-### The outputs section
+### Outputs section
 
 Use the outputs section to define the data that your workflow can return when it has completed running. You could track a specific status or data for each run of the workflow. You can examine the output from each run of a workflow using the Logic Apps run history, available via the Azure portal of the Workflow REST API.
 
@@ -266,7 +266,7 @@ You can define variables in the *inputs* section of an *InitializeVariable* acti
 }
 ```
 
-### The parameters section
+### Parameters section
 
 The parameters section enables you to parameterize a workflow. At runtime, you can provide values for each of these parameters. You reference the parameters anywhere in the workflow where you might use a constant or expression.
 
