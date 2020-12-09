@@ -17,15 +17,13 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 	```dotnetcli
 	dotnet new page --name Create \
         --namespace ContosoPets.Ui.Pages.Products
-        --referenceScriptLibraries
 	```
 
     The preceding command:
 
     * Creates the following files in the `ContosoPets.Ui.Pages.Products` namespace:
         * *:::no-loc text="Create.cshtml":::*&mdash;The Razor page
-        * *:::no-loc text="Create.cshtml.cs":::*&mdash;The *:::no-loc text="PageModel":::* class
-    * References the jQuery validation script libraries in the Razor page to enable client-side input validation.
+        * *:::no-loc text="Create.cshtml.cs":::*&mdash;The accompanying *:::no-loc text="PageModel":::* class
     * Stores both files in the *:::no-loc text="Pages/Products":::* directory.
 
 ## Examine the structure of a Razor page
