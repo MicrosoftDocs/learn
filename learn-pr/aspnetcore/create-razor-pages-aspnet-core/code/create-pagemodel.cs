@@ -19,7 +19,7 @@
         {
             <tr>
                 <td>@product.Name</td>
-                <td>@product.Price.ToString("C")</td>
+                <td>@($"{product.Price:C}")</td>
                 <td>
                     <a asp-page="Edit" asp-route-id="@product.Id">Edit</a> |
                     <a href="#" onclick="deleteProduct('@product.Id', antiForgeryToken())">Delete</a>
