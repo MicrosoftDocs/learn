@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In our current directory we want to find the 3 files which have the least number of lines. Which command listed below would work?"
+    - content: "In our current directory, we want to find the three files, which have the least number of lines. Which command listed below would work?"
       choices:
         - content: "wc -l * > sort -n > head -n 3"
           isCorrect: false
@@ -25,32 +25,32 @@ quiz:
           explanation: "The correct syntax for the head command is -n 3"
         - content: "wc -l * | sort -n | head -n 3"
           isCorrect: true
-          explanation: "This command will count the lines in a file, sort the output in ascending order (numerical) and display the first 3 lines"
+          explanation: "This command will count the lines in a file, sort the output in ascending order (numerical) and display the first three lines"
         - content: "wc -l * | head -n 3 | sort -n"
           isCorrect: false
-          explanation: "This command will count the lines in a file, slelect the first 3 lines and finally, sort the output in ascending order (numerical),"
+          explanation: "This command will count the lines in a file, select the first three lines and finally, sort the output in ascending order (numerical),"
     - content: "What will the regular expression `Fr[ea]nc[eh]` match?"
       choices:
         - content: "French, France, Frence, Franch"
           isCorrect: true
-          explanation: "Note that the way this regular expression is constructed, it will match misspellings such as Franch and Frence."
+          explanation: "The way this regular expression is constructed, it will match misspellings such as Franch and Frence."
         - content: "Frenche, Franceh, Frenceh, Franche"
           isCorrect: false
-          explanation: "Note that the way this regular expression is constructed, it will match only one of the characters in each list at a time."
+          explanation: "The way this regular expression is constructed, it will match only one of the characters in each list at a time."
         - content: "France, French"
           isCorrect: false
-          explanation: "Note that the way this regular expression is constructed, it will match misspellings such as Franch and Frence."
+          explanation: "The way this regular expression is constructed, it will match misspellings such as Franch and Frence."
         - content: "Freanceh, Fraenche"
           isCorrect: false
-          explanation: "Note that the way this regular expression is constructed, it will match only one of the characters in each list at a time."
-    - content: "The -v option to grep inverts pattern matching, so that only lines which do not match the pattern are printed. Given that, which of the following commands will find all files in /data whose names end in s.txt but whose names also do not contain the string net? (For example, shuttles.txt or software.txt but not planets.txt.)."
+          explanation: "The way this regular expression is constructed, it will match only one of the characters in each list at a time."
+    - content: "The -v option to grep inverts pattern matching, so that only lines that don't match the pattern are printed. Given that, which of the following commands will find all files in /data whose names end in s.txt but whose names also don't contain the string net? (For example, shuttles.txt or software.txt but not planets.txt.)."
       choices:
         - content: "find data -name *s.txt | grep -v net"
           isCorrect: false
           explanation: "The shell expands *s.txt instead of passing the wildcard expression to find"
         - content: "grep -v 'net' $(find data -name '*s.txt')"
           isCorrect: false
-          explanation: "This command searches the contents of the files for lines which do not match ‘net’, rather than searching the file names"
+          explanation: "This command searches the contents of the files for lines that don't match ‘net’, rather than searching the file names"
         - content: "find data -name '*s.txt' | grep -v net"
           isCorrect: true
           explanation: "Putting the match expression in quotes prevents the shell expanding it, so it gets passed to the find command."
@@ -61,13 +61,13 @@ quiz:
       choices:
         - content: "rm ?.txt"
           isCorrect: false
-          explanation: "This would remove .txt files with one-character names"
+          explanation: "This expression would remove .txt files with one-character names"
         - content: "rm *.txt"
           isCorrect: true
-          explanation: "This would remove all the files ending with a .txt extension"
+          explanation: "This expression would remove all the files ending with a .txt extension"
         - content: "rm * .txt"
           isCorrect: false
           explanation: "The shell would expand * to match everything in the current directory, so the command would try to remove all matched files and an additional file called .txt"
         - content: "rm *.*"
           isCorrect: false
-          explanation: "The shell would expand *.* to match all files with any extension, so this command would delete all filess"
+          explanation: "The shell would expand *.* to match all files with any extension, so this command would delete all files"
