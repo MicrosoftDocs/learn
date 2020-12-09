@@ -103,7 +103,7 @@ Especially in this time, we will deploy the application to JBoss EAP, so please 
 
 After finshed the command, You can see following entry is added in `pom.xml`.
 
-```
+```xml
     <plugins>
       <plugin>
         <groupId>com.microsoft.azure</groupId>
@@ -262,7 +262,7 @@ az webapp config appsettings set \
   MYSQL_USER=azureuser
 ```
 
-> [!TIPS]
+> [!TIP]
 > The value of "MYSQL_CONNECTION_URL", "MYSQL_USER" and "MYSQL_PASSWORD" was already got in the previous section.
 
 ## Access to the Application
@@ -399,7 +399,7 @@ Then you could finish the confirmation of the Application. Exactlly you get the 
 
 ## Access to the JBoss EAP Admin Tool (CLI & Web Console)
 
-JBoss EAP is running on Container in Azure App Service. So if the instance is restarted, all of the configuration will be clear as volatility. However in order to manage or monitor the  JBoss EAP Application Server, sometimes you may want to access to the server and you want to confirm or configure the Server. In order to do it, Azure App Service provide the command. In this section, we will confirm it.
+In order to manage or monitor the  JBoss EAP Application Server, sometimes you may want to access to the server and you want to confirm or configure the Server. In order to do it, Azure App Service provide the command. In this section, we will confirm it.
 
 ### Create a TCP Tunnel for connecting  to Remote Server
 
@@ -427,13 +427,13 @@ Then you will get like the following information from the command result.
 
 ### SSH Login by TCP Tunnel
 
-Then you can Login to the Server by using `ssh` command like follows. 
+Then you can Login to the Server by using `ssh` command. Please open a new command terminal and execute the  following commnand.
 
 ```bash
 ssh  root@127.0.0.1  -L 9990:localhost:9990 -p $PORT_NUMBER (ex. 59445)
 ```
 
-> [!TIPS]
+> [!TIP]
 > If you would like to access to the JBoss EAP Admin Web Concole, please specify the `-L 9990:localhost:9990` options. Then you can access to the `http://localhost:9990/console` for Web Console. If you don't need to login the JBoss Web Console, you can remove the "-L" option.
 
 Then you can see following messages and you could login to the Server.
@@ -538,7 +538,7 @@ http://127.0.0.1:9990/console
 
 Then you will see following Login Screen and you can login with previous user name and password.
 
-![Admin Console Login](../media/jboss-admin-console1.png)
+![Admin Console Login Auth Window](../media/jboss-admin-console1.png)
 
 After Login to the Web Console, you can see like following screen.
 
@@ -546,11 +546,11 @@ After Login to the Web Console, you can see like following screen.
 
 You can confirm created Datasource from `Configuration` -> `Subsystems` -> `Datasources & Drivers` -> `Datasources`.
 
-![Admin Console Top Page](../media/jboss-admin-console3.png)
+![Admin Console DataSources List](../media/jboss-admin-console3.png)
 
 You can also confirm your RESTful endpoint of application from `Runtime` -> `system` -> `JAX-RS` -> `Your Application`.
 
-![Admin Console Top Page](../media/jboss-admin-console4.png)
+![Admin Console RESTful Endpoint](../media/jboss-admin-console4.png)
 
 > [!NOTE]
 > If you directly access to the Remote Server via JBoss CLI command or Web Console and add or update some configurations, the configuration will be clear and deleted after the container is rebooted due to some reason. So if you need persist the configuration, please configure in the Start up script. For example, we created the `createMySQLDataSource.sh` in previous section as a startup script. 
