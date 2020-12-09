@@ -24,7 +24,7 @@ abstract:  |
 prerequisites: |
   - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
   - A local Python environment, such as the one used in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
-iconUrl: /learn/achievements/predict-basketball-player-efficiency-ratings.svg
+iconUrl: /learn/achievements/student-evangelism/predict-basketball-player-efficiency-ratings.svg
 levels:
 - beginner
 roles:

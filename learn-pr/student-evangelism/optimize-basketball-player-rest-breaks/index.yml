@@ -27,7 +27,7 @@ prerequisites: |
   - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
   - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
   - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github/)
-iconUrl: /learn/achievements/optimize-basketball-player-rest-breaks.svg
+iconUrl: /learn/achievements/student-evangelism/optimize-basketball-player-rest-breaks.svg
 levels:
 - beginner
 roles:
