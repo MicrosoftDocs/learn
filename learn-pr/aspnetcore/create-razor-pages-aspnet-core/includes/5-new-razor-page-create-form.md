@@ -2,7 +2,7 @@ In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* p
 
 ## Create a page
 
-The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor). Run the following .NET CLI command in the command shell at the current directory:
+The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor). Run the following .NET CLI command in the command shell:
 
 ```dotnetcli
 dotnet new page --name Create \
@@ -160,8 +160,4 @@ The following HTML is rendered by the Validation Message Tag Helper:
 
 The `type`, `data-val-range-min`, `data-val-range-max`, and error response are dynamically set by the model's data annotations for the model's `Product.Price` property.
 
-The following page is the *:::no-loc text="Create":::* form. The *:::no-loc text="Create":::* form is rendered in the browser displaying its validation messages after the user's input failed to pass data validation.
-
-:::image type="content" source="../media/5-new-razor-page-create-form/createproduct-validation.png" alt-text="The completed create product form." border="true" lightbox="../media/5-new-razor-page-create-form/createproduct-validation.png":::
-
-The *:::no-loc text="Create":::* Razor page form has been created. Let's explore its *:::no-loc text="PageModel":::* class file and modify it to handle the *:::no-loc text="Create":::* page's HTTP POST event and data.
+The product creation Razor page has been created. Let's explore its *:::no-loc text="PageModel":::* class and modify it to handle the form's HTTP POST request.
