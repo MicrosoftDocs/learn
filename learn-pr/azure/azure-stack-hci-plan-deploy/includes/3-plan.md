@@ -1,28 +1,37 @@
-Once you verify that Azure Stack HCI is suitable for hosting your workload, you need to consider infrastructure requirements, including compute, storage, and networking components. These considerations are workload dependent, so in the case of Contoso, they should account for distinct performance requirements of Microsoft SQL Server and VDI.
+After you verify that Azure Stack HCI is suitable for hosting your workload, you must consider your infrastructure requirements, including compute, storage, and networking components. These considerations are workload dependent, so for a scenario such as Contoso's, you must account for distinct performance requirements of Microsoft SQL Server and VDI.
 
 ## Plan for Azure Stack HCI
 
-In general, when planning for Azure Stack HCI implementation, you should consider:
+General planning considerations for an Azure Stack HCI implementation include:
 
-- The number of physical servers per cluster. This number must be between 2 and 16.
+- The number of physical servers per cluster. This number must be between two and 16.
 - The number of fault domains per cluster. By default, each node in a Storage Spaces Direct cluster is one fault domain.
-- The number and type of processors per server. The first of these values determines the core count, while the latter dictates their speed.
-- The amount and type of memory per server. This includes the decision whether to use persistent memory (PMEM).
-- The number and types of disks, including HDDs, SSDs and NVMe. Your choice impacts storage performance and total capacity.
-- Storage Spaces Direct resiliency levels. Besides resiliency, this affects storage performance and usable capacity.
-- Tiering and caching configuration. This also affects storage performance and usable capacity.
-- Disk performance. The performance considerations include the corresponding tiering and caching configuration.
-- The number and type of network adapters per server. This affects throughput and latency of storage and network traffic.
-- The number and type of network switches per cluster. This also has impact on throughput and latency of storage and network traffic.
-- The Azure subscription in which you'll register your Azure Stack HCI deployment. Note that your decision has pricing implications, because the ongoing charges for Azure Stack HCI clusters are associated with that Azure subscription.
+- The number and type of processors per server. The first of these values determines the core count and the latter dictates their speed.
+- The amount and type of memory per server, including whether to use persistent memory (PMEM).
+- Disk performance, including the corresponding tiering and caching configuration.
+- The Azure subscription in which you'll register your Azure Stack HCI deployment, because there are ongoing charges for Azure Stack HCI clusters depending on Azure subscription type.
 
-There are other considerations that apply to stretched clusters, including how many servers you'll need at each site and whether the cluster configuration will be active/passive or active/active. In active-passive mode, a designated primary site unidirectionally replicates to another site that provides disaster-recovery capability. In active-active mode, two sites replicate their respective volumes unidirectionally to each other, providing failover capability if either site fails. The active-active mode helps minimize business continuity costs by eliminating the need for a dedicated disaster recovery site.
+Planning considerations with respect to storage performance and capacity include:
 
-All these considerations depend, to a large extent, on intended workloads. Effectively, the use cases previously discussed serve as the basis for identifying the optimal Azure Stack HCI hardware configuration. The Azure Stack HCI catalog has a list of all Azure Stack HCI solutions that third-party hardware vendors offer and of which Microsoft approves.
+- The number and types of disks, including HDDs, SSDs and NVMe.
+- Storage Spaces Direct resiliency levels.
+- Tiering and caching configuration.
+
+Factors to consider about throughput and latency of storage and network traffic include:
+
+- The number and type of network adapters per server.
+- The number and type of network switches per cluster.
+
+Other considerations apply to stretched clusters, including how many servers each site requires and the cluster configuration's mode. The two modes are:
+
+- Active-passive mode, in which a designated primary site unidirectionally replicates to another site that provides disaster-recovery capability.
+- Active-active mode, in which two sites replicate their respective volumes unidirectionally to each other, providing failover capability if either site fails. The active-active mode helps minimize business-continuity costs because you won't need a dedicated disaster-recovery site.
+
+Your intended workloads affect all of these factors. Effectively, the use cases previously discussed are a basis for identifying an optimal Azure Stack HCI hardware configuration. The Azure Stack HCI catalog has a list of all Azure Stack HCI solutions that third-party hardware vendors offer and of which Microsoft approves.
 
 ### Plan for Azure Stack HCI host storage
 
-In the simplest terms, planning for Azure Stack HCI host storage involves identifying the optimal balance between resiliency, capacity, and performance of Storage Spaces Direct. The challenge results from the fact that maximizing one of these characteristics typically has a negative impact on at least one of the other two. For example, increasing resiliency reduces the usable capacity, although resulting performance might vary depending on resiliency type.
+In the simplest terms, planning for Azure Stack HCI host storage involves identifying the optimal balance between resiliency, capacity, and performance of Storage Spaces Direct. However, there's a challenge. Typically, maximizing one of these characteristics typically has a negative impact on at least one of the other two. For example, increasing resiliency reduces the usable capacity, although resulting performance might vary depending on resiliency type.
 
 #### Drives
 

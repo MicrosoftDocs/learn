@@ -40,6 +40,6 @@ The Create Cluster wizard of the Windows Admin Center guides you through five ma
 
 1. Integrate with Azure services. Use Windows Admin Center to implement integration between Azure Stack HCI VM-based workloads and Azure.
 
-1. If applicable, perform an additional hardware vendor-specific configuration.
+1. If applicable, perform additional hardware vendor-specific configuration.
 
 1. Implement Software Defined Networking (SDN). SDN implementation is optional and not available for stretched clusters.

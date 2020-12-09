@@ -10,7 +10,7 @@ Additionally, Azure Arc enables you to leverage Azure Resource Manager functiona
 - Devise a single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
 - Provide a consolidated display of Azure and Azure Arc-enabled resources by using the Azure portal, Azure CLI, Azure PowerShell, and Azure REST API.
 
-There are also workload-specific benefits applicable to VMs and Azure Kubernetes Services (AKS) running on Azure Stack HCI, but they are also available for servers and Kubernetes clusters running on any platform.
+There are also workload-specific benefits applicable to VMs and Azure Kubernetes Services (AKS) running on Azure Stack HCI, but they're also available for servers and Kubernetes clusters that run on any platform.
 
 ## How does Azure Stack HCI benefit from integration with Azure hybrid services?
 
