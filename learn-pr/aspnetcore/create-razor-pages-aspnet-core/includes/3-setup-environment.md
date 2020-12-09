@@ -52,7 +52,7 @@ A *page handler* is the method that's executed as a result of an HTTP request. F
 
 By convention, model files are located in a *:::no-loc text="Models":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
 
-The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. The `Product` model is implemented as a C# [record](/dotnet/csharp/whats-new/csharp-9#record-types) that defines the data properties for a product. Each PageModel that focuses on CRUD operations for products uses this `Product` model.
+The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. The `Product` model is implemented as a C# [record](/dotnet/csharp/whats-new/csharp-9#record-types) that defines the data properties for a product. Each :::no-loc text="PageModel"::: that focuses on CRUD operations for products uses this `Product` model.
 
 ### Data annotations
 
@@ -62,8 +62,8 @@ Models in ASP.NET Core often make use of data annotations to constrain or custom
 
 Partial markup elements that are shared across several Razor pages are located by convention in a *:::no-loc text="Pages/Shared":::* directory. The *:::no-loc text="ContosoPets.Ui":::* app uses two shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
 
-* *:::no-loc text="_Layout.cshtml":::*: Provides common layout elements across multiple Razor Pages.
-* *:::no-loc text="_ValidationScriptsPartial.cshtml":::*: Provides validation functionality such as client-side form input validation and cross-site antiforgery validation, available to all Razor Pages in this project.
+* *:::no-loc text="_Layout.cshtml":::*: Provides common layout elements across multiple pages.
+* *:::no-loc text="_ValidationScriptsPartial.cshtml":::*: Provides validation functionality such as client-side form input validation and cross-site antiforgery validation. This partial view is available to all pages in the project.
 
 ### Layouts and partial view files
 
@@ -88,7 +88,7 @@ The following table provides routes to be used in this module's completed projec
 
 ### Organize groups of related Razor pages
 
-The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a basic UI client to execute CRUD operations through your company's web API endpoint to manage product listings. The *:::no-loc text="Pages/Products":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files. For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
+The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a UI to execute CRUD operations through your company's web API endpoint to manage product listings. The *:::no-loc text="Pages/Products":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files. For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
 
 ### The HTTP request service
 

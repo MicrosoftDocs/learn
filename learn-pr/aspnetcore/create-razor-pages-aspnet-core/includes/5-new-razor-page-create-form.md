@@ -17,15 +17,18 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
 	```dotnetcli
 	dotnet new page --name Create \
         --namespace ContosoPets.Ui.Pages.Products
+        --referenceScriptLibraries
 	```
 
     The preceding command:
 
-    * Creates a Razor page named *:::no-loc text="Create.cshtml":::*.
-    * Creates the Razor page's *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::*.
-    * Stores both new files in the *:::no-loc text="Pages/Products":::* directory. By convention, the files share the same name and location.
+    * Creates the following files in the `ContosoPets.Ui.Pages.Products` namespace:
+        * *:::no-loc text="Create.cshtml":::*&mdash;The Razor page
+        * *:::no-loc text="Create.cshtml.cs":::*&mdash;The *:::no-loc text="PageModel":::* class
+    * References the jQuery validation script libraries in the Razor page to enable client-side input validation.
+    * Stores both files in the *:::no-loc text="Pages/Products":::* directory.
 
-## Examine the structure of a basic Razor page
+## Examine the structure of a Razor page
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
@@ -41,7 +44,7 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently o
     The preceding Razor page contains reserved Razor keywords:
 
     * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
-    * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class. That class, `ContosoPets.Ui.Pages.Products.CreateModel`, is defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated when the new Razor page named *:::no-loc text="Create":::* was made.
+    * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class name, prefixed with its namespace. As you recall, that class is defined in *:::no-loc text="Pages/Products/Create.cshtml.cs":::*.
 
 ## Render HTML and transition to C#
 
@@ -87,7 +90,7 @@ Replace the contents of *:::no-loc text="Pages/Products/Create.cshtml":::* with 
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *:::no-loc text="Create":::* Razor page now contains HTML plus Razor syntax for a basic form. The *:::no-loc text="Create":::* page allows a user to create a new product entry with **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
+The *:::no-loc text="Create":::* Razor page now contains HTML plus Razor syntax for a form. The *:::no-loc text="Create":::* page allows a user to create a new product entry with **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
 
 ## Review Razor Tag Helpers
 

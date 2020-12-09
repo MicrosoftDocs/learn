@@ -1,8 +1,8 @@
-In this unit, you'll review the structure of a basic Razor page *:::no-loc text="PageModel":::* class and its elements. You'll add an HTTP POST page handler for the *:::no-loc text="Create":::* Razor page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a Razor page *:::no-loc text="PageModel":::* class and its components. You'll add an HTTP POST page handler for the *:::no-loc text="Create":::* Razor page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
 
 ## Examine the structure of a Razor Pages *:::no-loc text="PageModel":::* class
 
-Open the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file. You may remember, that when you created a new Razor page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It should contain the following C# code:
+Open the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file. You may remember, that when you created a new Razor page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It contains the following C# code:
 
 ```csharp
 using System;
@@ -102,7 +102,7 @@ if (!ModelState.IsValid)
 }
 ```
 
-In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *:::no-loc text="Create":::* page is presented again to the user. In the previous unit, you saw how the *:::no-loc text="Create":::* Razor page takes advantage of ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
+In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *:::no-loc text="Create":::* page is presented again to the user. In the previous unit, you saw how the *:::no-loc text="Create":::* Razor page uses ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
 
 If the `ModelState` is valid, the `OnPostAsync` page handler calls upon an instance of `ProductService`. `ProductService` is responsible for HTTP requests and responses for the web API.
 
