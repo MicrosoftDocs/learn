@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-title: Summary and knowledge check
-uid: learn-windows.introduction-to-web-development.7-summary-and-knowledge-check
+uid: learn-windows.introduction-to-web-development.6-tracking-changes
+title: Knowledge check
 metadata:
-  title: Summary and knowledge check
-  description: Check your knowledge of the basics of web development, and review what you've learned and where to learn more.
-  ms.date: 3/29/2019
+  title: Knowledge check
+  description: Check your knowledge of the basics of web development
+  ms.date: 12/04/2020
   author: mmpadget
   ms.author: quradic
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
-  
-durationInMinutes: 5
+  ms.prod: learning-azure
+
+durationInMinutes: 2
 content: |
-    [!include[](includes/7-summary-and-knowledge-check.md)]
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
     title: Check your knowledge
     questions:
@@ -30,15 +30,15 @@ quiz:
     - content: ___ is a design principle where you put code into different files.
       choices:
       - content: Progressive enhancement.
-        explanation: Incorrect. Progressive enchancement is where you start with essential content and add more features if supported.
+        explanation: Incorrect. Progressive enhancement is where you start with essential content and add more features if supported.
         isCorrect: false
       - content: Separation of concerns.
-        explanation: Correct! You organize files so that each file or section addresses a seperate concern.
+        explanation: Correct! You organize files so that each file or section addresses a separate concern.
         isCorrect: true
       - content: Graceful degradation.
         explanation: Incorrect. Graceful degradation is where you start with all the features and remove them if not supported.
         isCorrect: false
-    - content: In HTML and CSS, `#date` and `.list` are examples of ___.
+    - content: In HTML and CSS, `#msg` and `.list` are examples of ___.
       choices:
       - content: A - Elements.
         explanation: Incorrect. HTML, head, or body are examples of elements.
