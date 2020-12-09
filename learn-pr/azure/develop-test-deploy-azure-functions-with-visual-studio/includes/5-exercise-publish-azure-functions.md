@@ -25,7 +25,6 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Under the **Basics** tab, in the **Project Details** section, specify:
 
-[!div class="mx-tableFixed"]
     | Property  | Value  |
     |---|---|
     | Subscription | Concierge Subscription  |
@@ -33,7 +32,6 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. In the **Instance Details** section, specify:
 
-[!div class="mx-tableFixed"]
     | Property  | Value  |
     |---|---|
     | Function App name | *\<your-function-app-name\>* |
@@ -46,21 +44,18 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Under the **Hosting** tab, in the **Storage** section, specify:
 
-[!div class="mx-tableFixed"]
     | Property  | Value  |
     |---|---|
     | Storage account | *Accept the default name* |
 
 1. Under the **Operating system** section, specify:
 
-[!div class="mx-tableFixed"]
     | Property  | Value  |
     |---|---|
     | Operating System | Windows |
 
 1. Under the **Plan** section, specify:
 
-[!div class="mx-tableFixed"]
     | Property  | Value  |
     |---|---|
     | Plan type | Consumption (Serverless) |
