@@ -10,7 +10,7 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 - Create and edit a custom workbook to visualize important data.
 
 > [!NOTE] 
-> You need to complete the Exercise Setup unit, in order to be able to complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
+> You must have completed the Exercise Setup unit before you can complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
 ### Task 1: Work with Logs in Azure Sentinel
 
@@ -40,7 +40,7 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 
 ### Task 2: Work with Workbooks in Azure Sentinel
 
-1. On the **Azure Sentinel** page, on the menu bar on the left, in the **Threat Management** section, select **Workbooks**.
+1. On the **Azure Sentinel** page, on the menu bar, in the **Threat Management** section, select **Workbooks**.
 2. On the **Azure Sentinel | Workbooks** page, select the **Templates** tab.
 3. In the **Search** field, enter and select **Azure Activity**.
 4. In the details pane, review the information provided for the template, and then select **Save**. In the **Save workbook to…** window, select the same location that you selected in the preparation exercise, and then select **OK**.
@@ -52,8 +52,8 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 :::image type="content" source="../media/07-Default-workbook.png" alt-text="Screenshot of the Azure Activity page, with the previous elements called out." border="true":::
 
 9. Scroll down to the **Caller activities** table, which displays the activities run by your users or security principals. Sort the table data in each column by selecting the arrows in the column header.
-10. Scroll up to the header bar in the **Azure Activity-** *sentinelname* page. Select the **Edit** option to switch the workbook in the editing mode. Observe the various **Edit** options that display on the page.
-11. Select the first **Edit** option. That will bring editing pane for one of the steps in the workbook. You can further customize the presentation of the elements by adjusting the style and reordering them in different order.
+10. Scroll up to the header bar in the **Azure Activity-** *sentinelname* page. Select the **Edit** option to switch the workbook to the editing mode. Observe the various **Edit** options that display on the page.
+11. Select the first **Edit** option. That will display the editing pane for one of the steps in the workbook. You can further customize the presentation of the elements by adjusting the style and reordering them in different order.
 12. You can add additional parameters with different types such as text, drop-down, multi-values, or similar.
 13. Select **Add parameter**.
 14. In the **New Parameter** page, enter the following values:
@@ -83,11 +83,11 @@ AzureActivity
 
 :::image type="content" source="../media/07-Add-parameter.png" alt-text="Screenshot of the New Parameter pane, with steps for adding a new parameter. The Save, Query, Run query options and the AzureActivity section are highlighted in the screenshot." border="true":::
 
-17. Select **Save** to commit the changes, and notice how the parameter step includes an additional parameter called **Level**.
+17. Select **Save** to commit the changes, and notice the parameter step now includes an additional parameter called **Level**.
 
 > [!TIP]
 
-> In edit mode, if you select the three dots icon next to the **Edit** option, the new drop-down menu will appear. From that menu, you can move this step to different parts of the workbook. You can also clone or remove the step from the workbook.
+> In the edit mode, if you select the three dots icon next to the **Edit** option, the new drop-down menu will appear. From that menu, you can move this step to different parts of the workbook. You can also clone or remove the step from the workbook.
 
 18. On the header bar, select the **Save as** icon to save the customized workbook.
 19. In the **Title** field, provide a name for the new workbook, and then select **Save**.
