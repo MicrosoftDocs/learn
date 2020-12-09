@@ -16,7 +16,7 @@ To connect a Kubernetes cluster to Azure Arc, you first deploy the Azure Arc Age
 2. Starting an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure.
 3. Signing in to the Azure AD tenant associated with the subscription that will be hosting Azure Arc enabled Kubernetes resource. Use the account that you identified when verifying the prerequisites.
 4. Registering the Azure resource providers that allow you to manage Azure Arc enabled Kubernetes from the command line.
-5. Creating a new or designate an existing Azure resource group that will host the resource representing the Azure Arc enabled Kubernetes cluster.
+5. Creating a new or designating an existing Azure resource group that will host the resource representing the Azure Arc enabled Kubernetes cluster.
 6. Verifying connectivity to the Kubernetes cluster. 
 7. Connecting the Kubernetes cluster to Azure by running the `az connectedk8s connect` Azure CLI command. The command requires that you specify the name that the connected cluster will have in Azure and the name of the resource group that will contain the resource representing the Azure Arc enabled Kubernetes cluster. It automatically deploys the Helm 3-based package containing the agents.
 8. Verifying the outcome by running the `az connectedk8s list` command to list the connected clusters. The command requires that you specify the name of the resource group you specified in the previous step.
