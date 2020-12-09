@@ -1,6 +1,6 @@
 # Introduction
 
-Have you ever needed transforming data from one format to another? 
+Have you ever needed transforming data from one format to another?
 As a developer, this is a very common task. Whether you are trying to extract some information from some logs or incoming streams. You will often need to deal with raw data and transform it before it is actually usable.
 
 In this module, you'll learn how to wrangle (transform) data using the UNIX shell. You'll be introduced to some commonly used tools as well as to the basics of regular expressions.

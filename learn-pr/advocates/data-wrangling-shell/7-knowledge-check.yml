@@ -2,16 +2,16 @@
 uid:
 metadata:
   title: knowledge check
-  description: 
-  ms.date:
+  description: Test your knowledge.
+  ms.date: 12/09/2020
   author: trallard
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: knowledge check
-durationInMinutes:
+durationInMinutes: 1
 content: |
-  [!include[](includes/2-unit.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -41,7 +41,7 @@ quiz:
           isCorrect: false
           explanation: "Note that the way this regular expression is constructed, it will match misspellings such as Franch and Frence."
         - content: "Freanceh, Fraenche"
-          isCorrect: true
+          isCorrect: false
           explanation: "Note that the way this regular expression is constructed, it will match only one of the characters in each list at a time."
     - content: "The -v option to grep inverts pattern matching, so that only lines which do not match the pattern are printed. Given that, which of the following commands will find all files in /data whose names end in s.txt but whose names also do not contain the string net? (For example, shuttles.txt or software.txt but not planets.txt.)."
       choices:

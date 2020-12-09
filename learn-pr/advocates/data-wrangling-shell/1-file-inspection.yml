@@ -3,7 +3,7 @@ uid:
 metadata:
   title: Perform file inspection in the Unix shell
   description: This unit describes how you can use the Unix shell to inspect files' contents before doing any data wrangling.
-  ms.date: 12/01/2020
+  ms.date: 12/09/2020
   author: trallard
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial

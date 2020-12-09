@@ -22,7 +22,7 @@ As a developer, you'll often need to extract information from logs. In this modu
 
 You should see a `NASA-software-API.txt` and a `NASA-logs-1995.txt` file.
 
-The first file `NASA-Software-API.txt` is an open dataset listing out all software in use by NASA (see original dataset [here]([https://](https://data.nasa.gov/Management-Operations/NASA-Open-Source-And-General-Resource-Software-API/4tfb-za6v)link)). The second dataset contains all the logged requests to the NASA Kennedy center server.
+The first file `NASA-Software-API.txt` is an open dataset listing out all software in use by NASA (see original dataset [here](https://data.nasa.gov/Management-Operations/NASA-Open-Source-And-General-Resource-Software-API/4tfb-za6v). The second dataset contains all the logged requests to the NASA Kennedy center server.
 
 ## Peeking into your files' contents
 

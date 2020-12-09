@@ -3,7 +3,7 @@ uid:
 metadata:
   title: "Pipes and filters: putting it all together!"
   description: In this unit you'll be introduced to pipes. Pipes are handy operators that allow you to combine some of the commands we have checked before to build complex data processing pipelines.
-  ms.date:
+  ms.date: 12/09/2020
   author: trallard
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
