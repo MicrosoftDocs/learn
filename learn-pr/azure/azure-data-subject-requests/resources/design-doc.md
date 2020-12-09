@@ -23,8 +23,9 @@ Choose all roles that apply, delete the others:
 
 List product(s) that will be taught in this module. Replace the example below.
 
-- Azure AD 
+- Azure 
 - Office 365
+- Dynamics 365
 - Microsoft Accounts
 
 
