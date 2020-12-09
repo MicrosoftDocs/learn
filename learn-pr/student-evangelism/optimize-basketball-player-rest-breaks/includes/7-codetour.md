@@ -15,7 +15,7 @@ Whichever learning journey you choose today, you *will* be able to complete this
 
 Using [CodeTour](https://aka.ms/codetour-mslearn) is easy. In fact, CodeTour is already set up in the repo that you cloned in the last unit!
 
-Open the CodeTour extension in Visual Studio Code Explorer. You should see *X* tours. Each tour has a few steps in it to guide you through your code writing.
+Open the CodeTour extension in Visual Studio Code Explorer. You should see a list of tours. Each tour has a few steps in it to guide you through your code writing.
 
 :::image type="content" source="../media/initial-codetour.png" alt-text="Screenshot that shows CodeTour in Visual Studio Code, with the green arrow highlighted.":::
 

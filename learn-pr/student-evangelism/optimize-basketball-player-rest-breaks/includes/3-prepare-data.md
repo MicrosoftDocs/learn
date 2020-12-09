@@ -27,9 +27,8 @@ Here's the output:
 | 36 | 42 | tune_squad12 | 1631.0 | 1465.7 | 110.1 | 66.000000 | 37.500000 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.400000 |
 | 37 | 43 | tune_squad13 | 1828.0 | 1507.2 | 112.7 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 | 29.102157 |
 | 38 | 44 | tune_squad14 | 1821.0 | 1443.7 | 118.8 | 66.000000 | 36.600000 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.960000 |
-| 39 | 45 | tune_squad15 | 1604.0 | 1526.5 | 114.5 | 67.000000 | 37.600000 | 0.633 | 28.2 | 13.0 | 34.2 | 6.1 | 19.0 | 16.3 | 33.890000 |
-| 40 | 46 | tune_squad16 | 1740.0 | 1443.9 | 114.1 | 68.000000 | 37.100000 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.220000 |
-| 41 | 47 | tune_squad17 | 1993.0 | 1459.0 | 112.5 | 59.972222 | 36.900000 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.760000 |
+| 39 | 45 | tune_squad16 | 1740.0 | 1443.9 | 114.1 | 68.000000 | 37.100000 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.220000 |
+| 40 | 46 | tune_squad17 | 1993.0 | 1459.0 | 112.5 | 59.972222 | 36.900000 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.760000 |
 
 Let's understand this data a bit more. We can see that some of the column headings are acronyms. Let's break down our column names:
 
@@ -51,7 +50,7 @@ Let's understand this data a bit more. We can see that some of the column headin
 
 Although many of these data points make sense in the context of basketball, we can start to cleanse our data even without a highly technical understanding of each of these columns. So, if you're not well versed in these terms, don't worry! We still have a lot to do to gain insights into the data. 
 
-The most important thing to understand is that each of these columns is data that can be counted during a game, expect for *player efficiency rating* (PER). PER is a calculation that's based on all the other player stats. PER determines "how good" a player is. This column can help predict how effective a player is during a game. When this module was written, the NBA player with the highest PER was Michael Jordan, with a rating of 27.91. The NBA player with the second highest rating, and with the highest rating of currently active NBA players, was LeBron James, with a score of 27.49.
+The most important thing to understand is that each of these columns is data that can be counted during a game, expect for *player efficiency rating* (PER). PER is a calculation that's based on all the other player stats. PER determines "how good" a player is. This column can help predict how effective a player is during a game. When this module was written, the basketball player with the highest PER was Michael Jordan, with a rating of 27.91. The basketball player with the second highest rating, and with the highest rating of currently active basketball players, was LeBron James, with a score of 27.49.
 
 The calculation of PER isn't perfect, and some fans and data scientists might choose to evaluate players differently. But in this module, we'll use PER as the measurement that will help the coach make decisions about which player should be given a quick water break during a game.
 
@@ -81,9 +80,8 @@ ts_name_df
 11	42	Granny
 12	43	Wile E. Coyote
 13	44	Tweety
-14	45	Speedy Gonzales
-15	46	Penelope
-16	47	Daffy Duck
+14	45	Penelope
+15	46	Daffy Duck
 ```
 
 The `ts_names_df` DataFrame contains the ID of the player, which matches the ID in the main DataFrame, and the player's actual name.

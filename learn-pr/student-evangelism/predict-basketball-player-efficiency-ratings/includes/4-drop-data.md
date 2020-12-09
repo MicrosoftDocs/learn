@@ -40,22 +40,24 @@ player_df.info()
 
 ```output
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 47 entries, 0 to 46
+RangeIndex: 46 entries, 0 to 45
 Data columns (total 14 columns):
-ID             47 non-null int64
-points         44 non-null float64
-possessions    44 non-null float64
-team_pace      44 non-null float64
-GP             40 non-null float64
-MPG            41 non-null float64
-TS%            46 non-null float64
-AST            46 non-null float64
-TO             46 non-null float64
-USG            46 non-null float64
-ORR            46 non-null float64
-DRR            46 non-null float64
-REBR           46 non-null float64
-PER            37 non-null float64
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   ID           46 non-null     int64  
+ 1   points       43 non-null     float64
+ 2   possessions  43 non-null     float64
+ 3   team_pace    43 non-null     float64
+ 4   GP           39 non-null     float64
+ 5   MPG          40 non-null     float64
+ 6   TS%          45 non-null     float64
+ 7   AST          45 non-null     float64
+ 8   TO           45 non-null     float64
+ 9   USG          45 non-null     float64
+ 10  ORR          45 non-null     float64
+ 11  DRR          45 non-null     float64
+ 12  REBR         45 non-null     float64
+ 13  PER          36 non-null     float64
 dtypes: float64(13), int64(1)
 memory usage: 5.2 KB
 ```
@@ -147,9 +149,8 @@ player_df
 | 41 | 42 | 1631.0 | 1465.7 | 110.1 | 66.0 | 37.5 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.40 |
 | 42 | 43 | 1828.0 | 1507.2 | 112.7 | 64.0 | 36.5 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 | NaN |
 | 43 | 44 | 1821.0 | 1443.7 | 118.8 | 66.0 | 36.6 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.96 |
-| 44 | 45 | 1604.0 | 1526.5 | 114.5 | 67.0 | 37.6 | 0.633 | 28.2 | 13.0 | 34.2 | 6.1 | 19.0 | 16.3 | 33.89 |
-| 45 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
-| 46 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
+| 44 | 45 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
+| 45 | 46 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
 Now you see that three rows are missing the same three values. Another row is missing 10 values. This information indicates two things:
 
@@ -224,26 +225,28 @@ player_df.info()
 
 ```output
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 43 entries, 0 to 42
+RangeIndex: 42 entries, 0 to 41
 Data columns (total 14 columns):
-ID             43 non-null int64
-points         43 non-null float64
-possessions    43 non-null float64
-team_pace      43 non-null float64
-GP             37 non-null float64
-MPG            38 non-null float64
-TS%            43 non-null float64
-AST            43 non-null float64
-TO             43 non-null float64
-USG            43 non-null float64
-ORR            43 non-null float64
-DRR            43 non-null float64
-REBR           43 non-null float64
-PER            34 non-null float64
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   ID           42 non-null     int64  
+ 1   points       42 non-null     float64
+ 2   possessions  42 non-null     float64
+ 3   team_pace    42 non-null     float64
+ 4   GP           36 non-null     float64
+ 5   MPG          37 non-null     float64
+ 6   TS%          42 non-null     float64
+ 7   AST          42 non-null     float64
+ 8   TO           42 non-null     float64
+ 9   USG          42 non-null     float64
+ 10  ORR          42 non-null     float64
+ 11  DRR          42 non-null     float64
+ 12  REBR         42 non-null     float64
+ 13  PER          33 non-null     float64
 dtypes: float64(13), int64(1)
-memory usage: 4.8 KB
+memory usage: 4.7 KB
 ```
 
-You see that you now have only 43 players in the DataFrame. Only three columns are missing some values.
+You see that you now have only 42 players in the DataFrame. Only three columns are missing some values.
 
 © 2020 Warner Bros. Ent. All Rights Reserved.

@@ -78,8 +78,8 @@ ID              0
 points          3
 possessions     3
 team_pace       3
-Unnamed: 4     47
-Unnamed: 5     47
+Unnamed: 4     46
+Unnamed: 5     46
 GP              7
 MPG             6
 TS%             1
@@ -93,7 +93,7 @@ PER            10
 dtype: int64
 ```
 
-You know that you have 47 rows of data, because you can see that in the CSV file and in the printout for the DataFrame:
+You know that you have 46 rows of data, because you can see that in the CSV file and in the printout for the DataFrame:
 
 ```python
 # Print out the information about the DataFrame.
@@ -102,28 +102,30 @@ player_df.info()
 
 ```output
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 47 entries, 0 to 46
+RangeIndex: 46 entries, 0 to 45
 Data columns (total 16 columns):
-ID             47 non-null int64
-points         44 non-null float64
-possessions    44 non-null float64
-team_pace      44 non-null float64
-Unnamed: 4     0 non-null float64
-Unnamed: 5     0 non-null float64
-GP             40 non-null float64
-MPG            41 non-null float64
-TS%            46 non-null float64
-AST            46 non-null float64
-TO             46 non-null float64
-USG            46 non-null float64
-ORR            46 non-null float64
-DRR            46 non-null float64
-REBR           46 non-null float64
-PER            37 non-null float64
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   ID           46 non-null     int64  
+ 1   points       43 non-null     float64
+ 2   possessions  43 non-null     float64
+ 3   team_pace    43 non-null     float64
+ 4   Unnamed: 4   0 non-null      float64
+ 5   Unnamed: 5   0 non-null      float64
+ 6   GP           39 non-null     float64
+ 7   MPG          40 non-null     float64
+ 8   TS%          45 non-null     float64
+ 9   AST          45 non-null     float64
+ 10  TO           45 non-null     float64
+ 11  USG          45 non-null     float64
+ 12  ORR          45 non-null     float64
+ 13  DRR          45 non-null     float64
+ 14  REBR         45 non-null     float64
+ 15  PER          36 non-null     float64
 dtypes: float64(15), int64(1)
-memory usage: 6.0 KB
+memory usage: 5.9 KB
 ```
 
-There are 47 rows, and you see that the two unnamed columns have 47 `NaN` values. So you can deduce that at least two columns can be eliminated from the DataFrame.
+There are 46 rows, and you see that the two unnamed columns have 0 non-`NaN` values (which means all 46 rows have `NaN` values for these two columns). So you can deduce that at least two columns can be eliminated from the DataFrame.
 
 © 2020 Warner Bros. Ent. All Rights Reserved.

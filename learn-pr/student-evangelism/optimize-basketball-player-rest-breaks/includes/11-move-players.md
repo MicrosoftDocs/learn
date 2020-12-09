@@ -2,13 +2,13 @@ This web app won't be useful if the coach can't make a decision about which play
 
 ## Write the functionality to move players 
 
-This unit fills in the `movingPlayers()` function:
+This unit fills in the `movePlayers()` function:
 
 ```javascript
 // This function is called each time a player button is selected. A player
 // button being selected indicates that the player either is moving to the
 // court or moving to the bench for a water break.
-function movingPlayers() {
+function movePlayers() {
 
 }
 ```
@@ -38,7 +38,7 @@ In the `if` statement, we need to make one check before we do anything else: You
         // If there are already five players on the court, don't let the player
         // move to the court; alert the coach that there are enough players.
         if(playersOnCourt >= maxPlayersOnCourt){
-            alert("You can only have " + maxPlayersOnCourt + " players on the court at a time.");
+            alert('You can only have ' + maxPlayersOnCourt + ' players on the court at a time.');
         }
 ```
 
@@ -58,7 +58,7 @@ If there's room on the court for the player, we want to do a few things in our c
             playersOnCourt++;
             quarterPER += playerMap.get(this.id)[currentQuarter];
             quarterAvePER = quarterPER / playersOnCourt;
-            document.getElementById('currentPER').innerHTML = "Current PER: "+ quarterAvePER.toPrecision(4);
+            document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER;
             
             // Move the player to the court
             document.getElementById('playersOnCourt').appendChild(this);
@@ -73,8 +73,7 @@ Next, we want to support the coach moving players from the bench back to the cou
 4. Move the player to the bench.
 
 ```javascript
-    } //Closes the outer if statement.
-    else {
+    } else {
         // If the player is being taken off the court for a water break, decrement
         // the number of players on the bench and remove the player's PER from the
         // average.
@@ -83,30 +82,29 @@ Next, we want to support the coach moving players from the bench back to the cou
         if(playersOnCourt != 0) {
             quarterPER -= playerMap.get(this.id)[currentQuarter];
             quarterAvePER = quarterPER / playersOnCourt;
-        }
-        else {
+        } else {
             // If there are no more players on the court, set the values to 0.
             quarterPER = 0;
             quarterAvePER = 0;
         }
 
         // Update the PER average. This might result in a zero value if your team is particularly tired.
-        document.getElementById('currentPER').innerHTML = "Current PER: "+ quarterAvePER.toPrecision(4);
+        document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER;
 
         // Move the player to the bench.
         document.getElementById('playersOnBench').appendChild(this);
     }
 ```
 
-## Review the final movingPlayers code
+## Review the final movePlayers code
 
-The entire `movingPlayers()` function should be like this code:
+The entire `movePlayers()` function should be like this code:
 
 ```javascript
 // This function is called each time a player button is selected. A player's
 // button being selected indicates that the player either moving to the
 // court or moving to the bench for a water break.
-function movingPlayers() {
+function movePlayers() {
     // Don't let the coach change players during a quarter.
     if(quarterInPlay) {
         return;
@@ -120,22 +118,20 @@ function movingPlayers() {
         // If there are already five players on the court, don't let the player
         // move to the court, and alert the coach that there are enough players.
         if(playersOnCourt >= maxPlayersOnCourt){
-            alert("You can only have " + maxPlayersOnCourt + " players on the court at a time.");
-        }
-        else {
+            alert('You can only have ' + maxPlayersOnCourt + ' players on the court at a time.');
+        } else {
             // If there is room on the court, update the number of players on
             // the court, and update the average PER for the quarter based on
             // this player moving to the court.
             playersOnCourt++;
             quarterPER += playerMap.get(this.id)[currentQuarter];
             quarterAvePER = quarterPER / playersOnCourt;
-            document.getElementById('currentPER').innerHTML = "Current PER: "+ quarterAvePER.toPrecision(4);
+            document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER;
             
             // Move the player to the court.
             document.getElementById('playersOnCourt').appendChild(this);
         }
-    }
-    else {
+    } else {
         // If the player is being taken off the court for a water break, decrement
         // the number of players on the bench and remove the player's PER from the
         // average.
@@ -144,15 +140,14 @@ function movingPlayers() {
         if(playersOnCourt != 0) {
             quarterPER -= playerMap.get(this.id)[currentQuarter];
             quarterAvePER = quarterPER / playersOnCourt;
-        }
-        else {
+        } else {
             // If there are no more players on the court, set the values to 0.
             quarterPER = 0;
             quarterAvePER = 0;
         }
 
         // Update the PER average. This might result in a zero value if your team is particularly tired.
-        document.getElementById('currentPER').innerHTML = "Current PER: "+ quarterAvePER.toPrecision(4);
+        document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER;
 
         // Move the player to the bench.
         document.getElementById('playersOnBench').appendChild(this);
