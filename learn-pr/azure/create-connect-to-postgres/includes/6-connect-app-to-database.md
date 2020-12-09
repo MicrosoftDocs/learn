@@ -9,7 +9,7 @@ Most language client libraries used to connect to PostgreSQL server are external
 :::row:::
 :::column span="2":::
 
-PostgreSQL is a great database choice for most applications - it’s easy to use, and it’s flexible enough to survive requirement changes. As you develop your application, you may need to store new types of data. You can count on postgres to support your data types that aren't available in other database solutions, such as MySQL. You can also add your own data types, operators, and index types.
+PostgreSQL is a great database choice for most applications - it’s easy to use, and it’s flexible enough to survive requirement changes. As you develop your application, you may need to store new types of data. You can count on postgres to support your data types that aren't available in other database solutions, such as MySQL. Some of these postgres-supported data types include timezone-aware timestamps, JSONB which can indexed, and network address types. You can also add your own data types, operators, and index types.
 
 In our scenario, we’re rapidly developing our contactless payment app. Using Azure Database for PostgreSQL, we’ve done everything we need to set up the database for the app’s test deployment. We've hosted the database server and connected to it. Now we can quickly integrate our existing ASP.NET application with our database, and get back to developing the application, instead of spending time and money on managing the database. In the next exercise, we’ll walk you through how to close the loop - connecting your app to your postgres database.
 
