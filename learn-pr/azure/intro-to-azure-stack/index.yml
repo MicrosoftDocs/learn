@@ -22,7 +22,7 @@ prerequisites: |
   - Window Server software-defined storage
   - Windows Server software-defined networking
   - IoT technologies
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/intro-to-azure-stack.svg
 levels:
 - beginner
 roles:
