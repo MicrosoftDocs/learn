@@ -22,7 +22,7 @@ prerequisites: |
   - Window Server software-defined storage
   - Windows Server software-defined networking
   - IoT technologies
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/intro-to-azure-stack.svg
 levels:
 - beginner
 roles:
@@ -30,14 +30,14 @@ roles:
  - student
 products:
  - azure-stack-hci
- - azure-stack-hub
+ - azure-stack
  - azure-stack-edge
 units:
 - learn.azure.intro-to-azure-stack.1-introduction
-- learn.azure.intro-to-azure-stack.2-what-is-azure-stack
-- learn.azure.intro-to-azure-stack.3-what-is-azure-stack-hub
-- learn.azure.intro-to-azure-stack.4-what-is-azure-stack-hci
-- learn.azure.intro-to-azure-stack.5-what-is-azure-stack-edge
+- learn.azure.intro-to-azure-stack.2-azure-stack
+- learn.azure.intro-to-azure-stack.3-azure-stack-hub
+- learn.azure.intro-to-azure-stack.4-azure-stack-hci
+- learn.azure.intro-to-azure-stack.5-azure-stack-edge
 - learn.azure.intro-to-azure-stack.6-azure-stack-portfolio
 - learn.azure.intro-to-azure-stack.7-summary
 badge:
