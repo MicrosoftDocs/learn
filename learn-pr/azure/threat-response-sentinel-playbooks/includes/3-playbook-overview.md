@@ -25,6 +25,9 @@ Azure Logic Apps is a cloud service that automates the operation of your busines
 
 Logic apps use connectors to connect to hundreds of services. A *connector* is a component that provides an interface to an external service.
 
+> [!NOTE]
+> An Azure Sentinel data connector and a Logic Apps connector are not the same thing. An Azure Sentinel data connector connects Azure Sentinel with Microsoft security products and security ecosystems for non-Microsoft solutions. A Logic Apps connector is a component that provides an API connection for an external service and allows integration of events, data, and actions across other apps, services, systems, protocols, and platforms. 
+
 ## What are triggers and actions
 
 Azure Logic Apps use triggers and actions, which are defined as follows:
