@@ -30,7 +30,7 @@ quiz:
 
   - content: "Which disaster recovery scenario is not supported with Azure Site Recovery in Azure Stack HCI scenarios?"
     choices:
-    - content: "Disaster recovery of Hyper-V VMs managed by SCVMM from an Azure Stack HCI cluster to Azure with Site Recovery-based replication."
+    - content: "Disaster recovery of Hyper-V VMs managed by System Center Virtual Machine Manager (SCVMM) from an Azure Stack HCI cluster to Azure with Site Recovery-based replication."
       isCorrect: false
       explanation: "That's incorrect. This functionality is available."
     - content: "Disaster recovery of Hyper-V VMs not managed by System Center Virtual Machine Manager (SCVMM) from an Azure Stack HCI cluster to Azure with Site Recovery-based replication."
