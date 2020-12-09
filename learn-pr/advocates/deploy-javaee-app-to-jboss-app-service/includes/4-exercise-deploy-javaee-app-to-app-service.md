@@ -9,12 +9,22 @@ This is a general Java EE (Jakarta EE) application. In the project, we used foll
 	- [JSON-B 1.0](https://jakarta.ee/specifications/jsonb/1.0/)
 	- [JAX-RS 2.1](https://jakarta.ee/specifications/restful-ws/2.1/)
 
-## Execute Azure App Service Maven Plugin
 
+## Configure App and Deploy to JBoss EAP on Azure App Service
+
+You already clone the GitHub repository in the previous section, so you already have source code of Sample Application. 
+
+In this section, at first we will configure the project to prepare the deployment by using `Azure App Service Maven Plugin`. After that we will compile the source code and create an artifact as WAR file. Finally we will deploy the artifact to JBoss EAP on Azure App Service.
+
+### Configure the App with Azure App Service Maven Plugin
+
+In order to configure the Application to deploy to JBoss EAP on Azure App Service, please execute the following command.
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
+
+Then you can see following messages in the terminal.
 
 ```bash
 [INFO] Scanning for projects...
@@ -78,7 +88,20 @@ Confirm (Y/N) [Y]: y
 [INFO] ------------------------------------------------------------------------
 ```
 
-You can see following entry is added in `pom.xml`.
+In the command messages, you need input the following value.   
+Especially in this time, we will deploy the application to JBoss EAP, so please select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`.
+
+|  Input Element  |  Value  |
+| ---- | ---- |
+|  Please choose a Web Container Web App [<create>]: |  `1: <create>`  |
+|  Define value for OS [Linux]:  |  `Linux`  |
+|  Define value for pricingTier [P1v2]:  |  `P1v2`  |
+|  Define value for javaVersion [Java 8]:  |  `1: Java 8`  |
+|  Define value for runtimeStack:  |  `1: Jbosseap 7.2`  |
+|  Confirm (Y/N) [Y]: | `y` |
+
+
+After finshed the command, You can see following entry is added in `pom.xml`.
 
 ```
     <plugins>
@@ -113,11 +136,15 @@ You can see following entry is added in `pom.xml`.
     </plugins>
 ```
 
-## Create Package for Deploy
+### Create Package for Deploy
+
+After configure the Azure App Service Deployment settings, you need to compile and package the source code. In order to compile and package the code, please execute the following command?
 
 ```bash
 mvn clean package
 ```
+
+Then you can see following in the terminal.
 
 ```text
 [INFO] Packaging webapp
@@ -136,11 +163,15 @@ mvn clean package
 ```
 
 
-## Deploy Java EE App to JBoss EAP on Azure App Service
+### Deploy Java EE App to JBoss EAP on Azure App Service
+
+After compile and package the code, you can deploy it to the JBoss EAP on Azure App Service. In order to deploy the application, please execute the following command.
 
 ```bash
 mvn azure-webapp:deploy
 ```
+
+Then you can see following message in the terminal.
 
 ```text
 [INFO] Auth Type : AZURE_CLI, Auth Files : [/Users/********/.azure/azureProfile.json, /Users/********/.azure/accessTokens.json]
@@ -162,23 +193,22 @@ mvn azure-webapp:deploy
 [INFO] ------------------------------------------------------------------------
 ```
 
+Especially following line is very important. It showes the URL of the EndPoint for your service. So in order to access to your service in following step, please remember it.
 
-## Configure the MySQL Connection String to App Service
-
-In order to configure the connection information for MySQL, please execute the following command.
-
-```azurecli
-az webapp config appsettings set \
-  --resource-group ${RESOURCEGROUP_NAME} --name ${WEBAPP_NAME} \
-  --settings \
-  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&amp;requireSSL=false&amp;serverTimezone=JST' \
-  MYSQL_PASSWORD=************ \
-  MYSQL_USER=azureuser
+```text
+[INFO] Successfully deployed the artifact to  
+https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 ```
 
-## Create the MySQL DataSource in JBoss EAP
 
-In order to create MySQL DataSource Resouce during the startup of JBoss EAP, please execute the following command? After executed it, the script will be invoke every times when the Application Server restarted.
+## Configure DB Connection from JBoss EAP
+
+In our Sample Application, it will connect to MySQL DB to show the data. In order to access to the `Azure Database for MySQL`, you need configure the `DataSource` in JBoss EAP, and you need specify the JNDI name into your source code.
+
+
+### Create the MySQL DataSource in JBoss EAP
+
+In order to create MySQL `DataSource`, we will create it during the startup of JBoss EAP, please execute the following command? After executed it, the script will be invoke every times when the Application Server restarted.
 
 ```azurecli
 az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
@@ -186,7 +216,7 @@ az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/crea
 -g ${RESOURCEGROUP_NAME}
 ```
 
-Following code is wrote on the script file. We created a MySQL DataSource by JBoss CLI command. And the connection string,user name and password can get from the Environment Variables.
+In the above shell script following code is wrote and the script is stored in the `/WEB-INF` directory. In the code, we created a MySQL DataSource by JBoss CLI command. And the connection string, user name and password will get from the Environment Variables as `MYSQL_CONNECTION_URL`, `MYSQL_USER` and `MYSQL_PASSWORD`.
 
 ```shell
 #!/usr/bin/bash
@@ -216,13 +246,48 @@ exit
 EOF
 ```
 
+> [!WARNING]
+> If your deployment artifact is not "ROOT.war", you need change the "--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0" value too.
+
+### Configure the Environment Variables for Connecting to MySQL
+
+After specify the script file, you need to configure the Environment Variables in the Azure App Service. In order to configure the Environment Variables, please execute the following command.
+
+```azurecli
+az webapp config appsettings set \
+  --resource-group ${RESOURCEGROUP_NAME} --name ${WEBAPP_NAME} \
+  --settings \
+  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&amp;requireSSL=false&amp;serverTimezone=JST' \
+  MYSQL_PASSWORD=************ \
+  MYSQL_USER=azureuser
+```
+
+> [!TIPS]
+> The value of "MYSQL_CONNECTION_URL", "MYSQL_USER" and "MYSQL_PASSWORD" was already got in the previous section.
 
 ## Access to the Application
+
+In this Sample Application, we implemented three RESTful endpoints. So we will confirm whether the three endpoint is available or not by using `curl` command or Web browser.
+
+In order to access to the  Application, you need specify the Web Server name in the URL. For the URL, You already got in the previous section like follows. So please specify it. 
+
+```text
+[INFO] Successfully deployed the artifact to  
+https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
+```
+
+If you have the curl command, please execute following command. Then you can get all of the Continent Area infomation as JSON format.
+
+![REST Endpoint Area](../media/rest-endpoint-area.png)
 
 ```bash
 $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area
 ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]$ 
 ```
+
+And if you specify the Cotinent in the URL, you can get all of the countries in the specified continent like follows.
+
+![REST Endpoint Continent](../media/rest-endpoint-continent.png)
 
 ```bash
 $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
@@ -305,135 +370,12 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia 
   "name": "Japan",
   "code": "JPN"
 }
-{
-  "name": "Kazakstan",
-  "code": "KAZ"
-}
-{
-  "name": "Kyrgyzstan",
-  "code": "KGZ"
-}
-{
-  "name": "Cambodia",
-  "code": "KHM"
-}
-{
-  "name": "South Korea",
-  "code": "KOR"
-}
-{
-  "name": "Kuwait",
-  "code": "KWT"
-}
-{
-  "name": "Laos",
-  "code": "LAO"
-}
-{
-  "name": "Lebanon",
-  "code": "LBN"
-}
-{
-  "name": "Sri Lanka",
-  "code": "LKA"
-}
-{
-  "name": "Macao",
-  "code": "MAC"
-}
-{
-  "name": "Maldives",
-  "code": "MDV"
-}
-{
-  "name": "Myanmar",
-  "code": "MMR"
-}
-{
-  "name": "Mongolia",
-  "code": "MNG"
-}
-{
-  "name": "Malaysia",
-  "code": "MYS"
-}
-{
-  "name": "Nepal",
-  "code": "NPL"
-}
-{
-  "name": "Oman",
-  "code": "OMN"
-}
-{
-  "name": "Pakistan",
-  "code": "PAK"
-}
-{
-  "name": "Philippines",
-  "code": "PHL"
-}
-{
-  "name": "North Korea",
-  "code": "PRK"
-}
-{
-  "name": "Palestine",
-  "code": "PSE"
-}
-{
-  "name": "Qatar",
-  "code": "QAT"
-}
-{
-  "name": "Saudi Arabia",
-  "code": "SAU"
-}
-{
-  "name": "Singapore",
-  "code": "SGP"
-}
-{
-  "name": "Syria",
-  "code": "SYR"
-}
-{
-  "name": "Thailand",
-  "code": "THA"
-}
-{
-  "name": "Tajikistan",
-  "code": "TJK"
-}
-{
-  "name": "Turkmenistan",
-  "code": "TKM"
-}
-{
-  "name": "East Timor",
-  "code": "TMP"
-}
-{
-  "name": "Turkey",
-  "code": "TUR"
-}
-{
-  "name": "Taiwan",
-  "code": "TWN"
-}
-{
-  "name": "Uzbekistan",
-  "code": "UZB"
-}
-{
-  "name": "Vietnam",
-  "code": "VNM"
-}
-{
-  "name": "Yemen",
-  "code": "YEM"
-}
+....
 ```
+
+Finally, if you specify the Country Code after the `/countries`, you will be able to get all of the cities which has the population over 1 million persons in the Country.
+
+![REST Endpoint Cities](../media/rest-endpoint-cities.png)
 
 ```bash
 $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/JPN | jq '.[].name'
@@ -453,10 +395,17 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/
 "Kitakyushu"
 ```
 
+Then you could finish the confirmation of the Application. Exactlly you get the data from `Azure Database for MySQL`.
 
-## Access to the JBoss WebConsole & CLI via SSH
+## Access to the JBoss EAP Admin Tool (CLI & Web Console)
 
-```bash
+JBoss EAP is running on Container in Azure App Service. So if the instance is restarted, all of the configuration will be clear as volatility. However in order to manage or monitor the  JBoss EAP Application Server, sometimes you may want to access to the server and you want to confirm or configure the Server. In order to do it, Azure App Service provide the command. In this section, we will confirm it.
+
+### Create a TCP Tunnel for connecting  to Remote Server
+
+In order to access to the remote server, You can create a TCP Tunnel between remote server and your local machine. Please execute the following command?
+
+```azurecli
 $ az webapp create-remote-connection -n jakartaee-app-on-jboss-1606464084546 \
   -g jakartaee-app-on-jboss-1606464084546-rg
 
@@ -467,12 +416,29 @@ SSH is available { username: root, password: Docker! }
 Ctrl + C to close
 ```
 
+Then you will get like the following information from the command result.
+
+|  Required Information  |  Value  |
+| ---- | ---- |
+|  Opening tunnel on port  |  PORT_NUMBER (ex. 59445)  |
+|  username  |  root  |
+|  password  |  Docker!  |
+
+
+### SSH Login by TCP Tunnel
+
+Then you can Login to the Server by using `ssh` command like follows. 
 
 ```bash
-ssh  root@127.0.0.1  -L 9990:localhost:9990 -p 59445
+ssh  root@127.0.0.1  -L 9990:localhost:9990 -p $PORT_NUMBER (ex. 59445)
 ```
 
-```
+> [!TIPS]
+> If you would like to access to the JBoss EAP Admin Web Concole, please specify the `-L 9990:localhost:9990` options. Then you can access to the `http://localhost:9990/console` for Web Console. If you don't need to login the JBoss Web Console, you can remove the "-L" option.
+
+Then you can see following messages and you could login to the Server.
+
+```bash
 The authenticity of host '[127.0.0.1]:59445 ([127.0.0.1]:59445)' can't be established.
 ECDSA key fingerprint is SHA256:vHsp1b3+7NtnHISvZ6aKS82pww+e5L6CUc9fKaPZGDQ.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
@@ -495,7 +461,70 @@ Documentation: http://aka.ms/webapp-linux
 -bash-4.2# 
 ```
 
-### Create Admin User for accessing to Web Console
+### Execute JBoss CLI Command
+
+After login to the remote server, you can execute JBoss EAP Admin CLI Tool as `jboss-cli.sh`. The CLI command is located on `/opt/eap/bin/` directory. So you can connect to JBoss EAP by using following command.
+
+```bash
+-bash-4.2# /opt/eap/bin/jboss-cli.sh --connect
+Picked up JAVA_TOOL_OPTIONS: -Xmx2402M -Djava.net.preferIPv4Stack=true 
+```
+
+After connected to the JBoss EAP Server, you can execute the JBoss CLI command like follows. 
+
+You can get the Product Information from following command.
+
+```bash
+[standalone@localhost:9990 /] :product-info
+{
+    "outcome" => "success",
+    "result" => [{"summary" => {
+        "host-name" => "05b2037f748e",
+        "instance-identifier" => "895f0c88-5c7d-440f-9e45-e972f5cc14a5",
+        "product-name" => "JBoss EAP",
+        "product-version" => "7.2.9.GA",
+        "product-community-identifier" => "Product",
+        "product-home" => "/opt/eap",
+        "last-update-date" => "8/27/20 1:09 PM",
+        "standalone-or-domain-identifier" => "STANDALONE_SERVER",
+        "host-operating-system" => "Red Hat Enterprise Linux Server 7.8 (Ma
+ipo)",
+        "host-cpu" => {
+            "host-cpu-arch" => "amd64",
+            "host-core-count" => 1
+        },
+        "jvm" => {
+            "name" => "OpenJDK 64-Bit Server VM",
+            "java-version" => "1.8",
+            "jvm-version" => "1.8.0_262",
+            "jvm-vendor" => "Oracle Corporation",
+            "java-home" => "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0
+.el7_8.x86_64/jre"
+        }
+    }}]
+}
+```
+
+You can get all of the deployed Applications from following command.
+
+```bash
+[standalone@localhost:9990 /] ls deployment
+ROOT.war          activemq-rar.rar  
+```
+
+You can test DB connection availabiilty from following command.
+
+```bash
+[standalone@localhost:9990 /] /subsystem=datasources/data-source="JPAWorldDataSourceDS":test-connection-in-pool
+{
+    "outcome" => "success",
+    "result" => [true]
+}
+```
+
+### Access to the JBoss EAP Admin Web Console
+
+Not only terminal login, you can also access to the Admin Web Console. Before accessing to the Web Concole, please create admin user and password for authentication.
 
 ```bash
 -bash-4.2# /opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
@@ -507,14 +536,53 @@ Then you can access to the Web Console from your Local environment. Please open 
 http://127.0.0.1:9990/console
 ```
 
+Then you will see following Login Screen and you can login with previous user name and password.
 
+![Admin Console Login](../media/jboss-admin-console1.png)
 
-## Open a log stream
+After Login to the Web Console, you can see like following screen.
 
-```
+![Admin Console Top Page](../media/jboss-admin-console2.png)
+
+You can confirm created Datasource from `Configuration` -> `Subsystems` -> `Datasources & Drivers` -> `Datasources`.
+
+![Admin Console Top Page](../media/jboss-admin-console3.png)
+
+You can also confirm your RESTful endpoint of application from `Runtime` -> `system` -> `JAX-RS` -> `Your Application`.
+
+![Admin Console Top Page](../media/jboss-admin-console4.png)
+
+> [!NOTE]
+> If you directly access to the Remote Server via JBoss CLI command or Web Console and add or update some configurations, the configuration will be clear and deleted after the container is rebooted due to some reason. So if you need persist the configuration, please configure in the Start up script. For example, we created the `createMySQLDataSource.sh` in previous section as a startup script. 
+
+## Open a Log stream
+
+If you login to the server, you can confirm the Application log. However Azure CLI provide very useful functionality to confirm the log without login to the remote server.
+In order to confirm the Application Log on your local machine, you can execute following command.
+
+```azurecli
 az webapp log tail --name ${WEBAPP_NAME} \
  --resource-group ${RESOURCEGROUP_NAME}
-
 ```
 
+If you executed the command you can see the log look like follows.
 
+```azurecli
+az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
+  -g jakartaee-app-on-jboss-1606464084546-rg
+
+2020-12-09T02:23:24.412067731Z: [INFO]  02:23:24,411 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2020-12-09T02:23:24.455340165Z: [INFO]  02:23:24,453 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
+2020-12-09T02:23:24.464834646Z: [INFO]  02:23:24,456 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "activemq-rar.rar" (runtime-name : "activemq-rar.rar")
+2020-12-09T02:23:24.674103836Z: [INFO]  02:23:24,673 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-12-09T02:23:24.676640538Z: [INFO]  02:23:24,675 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.2.9.GA (WildFly Core 6.0.30.Final-redhat-00001) started in 25914ms - Started 537 of 709 services (345 services are lazy, passive or on-demand)
+2020-12-09T02:23:24.680203180Z: [INFO]  02:23:24,679 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-12-09T02:23:24.680950010Z: [INFO]  02:23:24,680 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+```
+
+## Finally
+
+In this chapter, we learned how to configure and deploy a Java EE 8 (Jakarta EE) Application to JBoss EAP on Azure App Service. Then we created `DataSource` for accessing from MySQL to  JBoss EAP in the startup script. And learned how to access to the Remote Server both CLI and GUI by TCP Tunnel. Finally we confimed how to see the log file from local machine.
+
+> [!WARNING]
+> I need write a little bit more for considering the structure.

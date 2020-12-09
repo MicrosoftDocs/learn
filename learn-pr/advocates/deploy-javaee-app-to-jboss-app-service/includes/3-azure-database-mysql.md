@@ -66,7 +66,7 @@ We will create an instance of `Azure  Database for MySQL`. In order to create th
 Please execute the following command.
 
 ```bash
-setup_mysql.sh
+ ./setup_mysql.sh flexible
 ```
 
 Then you can see following result. The following information is important and we will use the following value to the following steps. So please copy the value to some places.
@@ -77,16 +77,20 @@ Then you can see following result. The following information is important and we
 [INFO] -------------------------------------------------------
 [INFO] 1. Please copy the following value into your temporal file
 [INFO]
-[INFO] RESOURCE GROUP is MySQL-RG-20201127161600
-[INFO] MySQL HOSTNAME is mysqlserver-qtrfennwvy.mysql.database.azure.com
+[INFO] RESOURCE GROUP is MySQL-RG-20201208152233
+[INFO] MySQL HOSTNAME is mysqlserver-wqcnzwhqvw.mysql.database.azure.com
 [INFO] MySQL USERNAME is azureuser
-[INFO] MySQL PASSWORD is !Bzepiihx28028
+[INFO] MySQL PASSWORD is **********
 [INFO]
 [INFO]
 [INFO] 2. Please execute the following command.
 [INFO]
-[INFO] mysql -u azureuser -h mysqlserver-qtrfennwvy.mysql.database.azure.com -p [Enter Key]
-[INFO] Enter password: !Bzepiihx28028 [COPY&PASTE]
+[INFO] mysql -u azureuser -h mysqlserver-wqcnzwhqvw.mysql.database.azure.com -p [Enter Key]
+[INFO] Enter password: ********** [COPY&PASTE]
+[INFO] 
+[INFO] 
+[INFO] 3. Clean up Resource (Delete MySQL DB)
+[INFO] az group delete -n MySQL-RG-20201208152233
 [INFO] -------------------------------------------------------
 ```
 

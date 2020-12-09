@@ -12,17 +12,17 @@ After the release of Java EE 7, the acquisition of Sun Microsystems by Oracle st
 |  Version  |  Description  |  Date  |
 | ---- | ---- | ---- |
 |  JPE Project  |  Initial Version  | May 1998|
-|  J2EE 1.2  |  Servlet,JSP,EJB,JMS,RMI,IIOP  |Dec 12, 1999|
-|  J2EE 1.3  |  CMP, Connector Architecture  |Sep 24, 2001|
-|  J2EE 1.4  |  Web Services, Management, Deployment, Async Connector  |Nov 11, 2003|
-|  Java EE 5  |  Easy of Development by Annotation, EJB 3.0, JPA, JSF, JAXB, JAX-WS, Stax, SAAJ  |May 11 2006|
-|  Java EE 6 |  Web Profile, EJB Lite, JAX-RS, CDI  |Dec 20, 2009|
-|  Java EE 7 |  WebSocket, JSON-P, JMS 2.0  |May 28, 2013|
-|  Jakarta EE 8 |  JSON-B,   |Sep 21, 2017|
-|  Jakarta EE 9 |  TD  |December 8, 2020|
+|  J2EE 1.2  |  JSP, Servlet, EJB, JMS, Java Mail, JDBC, JNDI, JAF |Dec 12, 1999|
+|  J2EE 1.3  |  JSTL、JAXP, J2CA , JAAS  |Sep 24, 2001|
+|  J2EE 1.4  |  JAXP, JAXR, JAX-RPC, Async Connector  |Nov 11, 2003|
+|  Java EE 5  |  Easy of Development by Annotation, EJB 3.0, JPA, JSF, JAXB|May 11 2006|
+|  Java EE 6 |  Web Profile, EJB Lite, JAX-RS, CDI, Bean Validation  |Dec 20, 2009|
+|  Java EE 7 |  WebSocket,Java Batch, JSON-P, JMS 2.0 |May 28, 2013|
+|  Jakarta EE 8 |  JSON-B, HTTP/2, Security   |Sep 21, 2017|
+|  Jakarta EE 9 |  Namespace change to jakarta, Enhancement of EJB, Activation, Moved from Java SE to Jakarta EE of JAXB, JAX-WS, SOAP as optional |December 8, 2020|
 ## What is JBoss Enterprise Application Platform
 
-`Red Hat JBoss Enterprise Application Platform` is listed on one of the `Jakarta EE 8 Platform Compatible Products`. And it has many functionalities like below.
+`Red Hat JBoss Enterprise Application Platform 7` is listed on one of the `Jakarta EE 8 Platform Compatible Products`. And it has many functionalities like below.
 
 - Optimized for cloud and containers
 - Lightweight, flexible architecture
@@ -30,3 +30,6 @@ After the release of Java EE 7, the acquisition of Sun Microsystems by Oracle st
 - Flexible management, configuration, and administration
 - Flexible, future-friendly subscription model
 - Support and standardize microservices development
+
+The JBoss EAP is a Java EE Application Server runtime with commercial support by Red Hat based on the Open Source. The Open Source product is called as Wildfly.
+
