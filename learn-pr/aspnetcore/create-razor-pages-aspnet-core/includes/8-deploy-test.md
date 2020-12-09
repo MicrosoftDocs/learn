@@ -4,21 +4,13 @@ You've added a product creation page, so it's time to test and run the completed
 
 ### Compile the project
 
-1. Run the following command in the command shell to return to the project directory:
+Run the following command:
 
-    ```bash
-    popd
-    ```
+```dotnetcli
+dotnet build
+```
 
-    The current directory should now be the *:::no-loc text="ContosoPets.Ui":::* directory.
-
-1. Run the following command:
-
-    ```dotnetcli
-    dotnet build
-    ```
-
-    The preceding command compiles the project with your latest saved changes.
+The preceding command compiles the project with your latest saved changes.
 
 ### Redeploy the app to Azure App Service
 
@@ -50,11 +42,17 @@ You can launch the app at http://webapp<random ID number here>.azurewebsites.net
 
     :::image type="content" source="../media/8-deploy-test/product-creation-page.png" alt-text="Screenshot of the product creation page." border="true" lightbox="../media/8-deploy-test/product-creation-page.png":::
 
+1. Leave the **:::no-loc text="Name":::** text box empty. Enter `asdf` in the **:::no-loc text="Price":::** text box. Move focus away from the **:::no-loc text="Price":::** text box.
+
+    Client-side validation occurs. A validation message appears next to the text box because the provided value isn't numeric:
+
+    :::image type="content" source="../media/8-deploy-test/product-creation-client-validation.png" alt-text="Screenshot of a client-side validation message on the product creation form." border="true" lightbox="../media/8-deploy-test/product-creation-client-validation.png":::
+
 1. Leave the **:::no-loc text="Name":::** text box empty. Enter `0` in the **:::no-loc text="Price":::** text box. Select the **:::no-loc text="Save":::** button.
 
     Server-side validation occurs. Validation messages appear next to the text boxes because the provided values are invalid:
 
-    :::image type="content" source="../media/8-deploy-test/product-creation-validation.png" alt-text="Screenshot of the product creation form validation messages." border="true" lightbox="../media/8-deploy-test/product-creation-validation.png":::
+    :::image type="content" source="../media/8-deploy-test/product-creation-server-validation.png" alt-text="Screenshot of the product creation form validation messages." border="true" lightbox="../media/8-deploy-test/product-creation-server-validation.png":::
 
 1. Enter any product name in the **:::no-loc text="Name":::** text box. Enter `30` in the **:::no-loc text="Price":::** text box. Select the **:::no-loc text="Save":::** button.
 

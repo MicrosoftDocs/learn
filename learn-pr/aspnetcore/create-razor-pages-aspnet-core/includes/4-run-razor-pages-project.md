@@ -44,7 +44,7 @@ The .NET CLI:
 
 If running this app on your own machine, you could direct a browser to `https://localhost:5001` to view the resulting page. To view the app, deploy it to a public endpoint hosted on Azure App Service.
 
-### Deploy your app to a public endpoint hosted on Azure App Service
+### Deploy your app to Azure App Service
 
 Run the following command in the command shell:
 

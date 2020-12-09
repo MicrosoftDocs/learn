@@ -1,32 +1,23 @@
 In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* project using Razor Pages to separate the logic of the page from its presentation.
 
-## Use the .NET CLI to create a page
+## Create a page
 
-The *:::no-loc text="ContosoPets.Ui":::* project directory should be currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor).
+The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor). Run the following .NET CLI command in the command shell at the current directory:
 
-1. Run the following command in the command shell:
+```dotnetcli
+dotnet new page --name Create \
+    --namespace ContosoPets.Ui.Pages.Products \
+    --output Pages/Products
+```
 
-	```bash
-	pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
-	```
+The preceding command:
 
-	The current directory changes to the *:::no-loc text="Products":::* directory.
+* Creates the following files in the `ContosoPets.Ui.Pages.Products` namespace:
+  * *:::no-loc text="Create.cshtml":::*&mdash;The Razor page
+  * *:::no-loc text="Create.cshtml.cs":::*&mdash;The accompanying *:::no-loc text="PageModel":::* class
+* Stores both files in the project's *:::no-loc text="Pages/Products":::* directory.
 
-1. Run the following .NET CLI command in the command shell at the current directory.
-
-	```dotnetcli
-	dotnet new page --name Create \
-        --namespace ContosoPets.Ui.Pages.Products
-	```
-
-    The preceding command:
-
-    * Creates the following files in the `ContosoPets.Ui.Pages.Products` namespace:
-        * *:::no-loc text="Create.cshtml":::*&mdash;The Razor page
-        * *:::no-loc text="Create.cshtml.cs":::*&mdash;The accompanying *:::no-loc text="PageModel":::* class
-    * Stores both files in the *:::no-loc text="Pages/Products":::* directory.
-
-## Examine the structure of a Razor page
+## Examine the Razor page's structure
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
@@ -84,11 +75,15 @@ Replace the contents of *:::no-loc text="Pages/Products/Create.cshtml":::* with 
         <input type="submit" value="Save" class="btn btn-primary" />
     </div>
 </form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 ```
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *:::no-loc text="Create":::* Razor page now contains HTML plus Razor syntax for a form. The *:::no-loc text="Create":::* page allows a user to create a new product entry with **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values. With relatively little markup, dynamic features have been provided through Razor Tag Helpers.
+The *:::no-loc text="Create":::* Razor page uses HTML and Razor to support a product creation form. The form accepts **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *:::no-loc text="Pages/Shared/_ValidationScriptsPartial.cshtml":::* partial view.
 
 ## Review Razor Tag Helpers
 
