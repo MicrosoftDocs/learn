@@ -48,7 +48,7 @@ prerequisites: |
   - [CodeTour extension for Visual Studio Code](https://aka.ms/codetour-mslearn)
   - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
   - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github/)
-iconUrl: /learn/achievements/generic-trophy.svg # TODO change
+iconUrl: /learn/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
 levels:
 - beginner
 roles:
