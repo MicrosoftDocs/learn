@@ -21,7 +21,7 @@ quiz:
     - content: "Hyper-V VMs running Linux."
       isCorrect: true
       explanation: "That's correct. Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads."
-    - content: "Azure Key vault."
+    - content: "Azure Key Vault."
       isCorrect: false
       explanation: "That's incorrect. Azure Stack HCI does not support Azure PaaS services."
     - content: "Azure VM scale set."
