@@ -63,11 +63,11 @@ The header bar in the editing mode contains several options, which the following
 
 :::image type="content" source="../media/05-Editing-options.PNG" alt-text="Screenshot of the Editing mode that depicts the various editing options such as Save, Save As, Settings, Refresh, Share, Help, and more." border="true":::
 
-When you switch to the editing mode, you'll notice several **Edit** options that appear on the right<!-- This is a non-accessible descriptor. Can we reword this? For example, do the edit options appear in a pane, perhaps? -->, which correspond to each individual aspect of your workbook.
+When you switch to the editing mode, you'll notice several **Edit** options, which correspond to each individual aspect of your workbook.
 
 If you select one of these edit options, you can examine the query that Azure Sentinel uses to filter the data from the corresponding log.
 
-When you select the gear icon, the **Settings** page opens, where you can provide additional resources that you want to use in the workbook. You can also change the style of the workbook, provide tagging, or pin an item in the workbook.
+When you select the settings icon, the **Settings** page opens, where you can provide additional resources that you want to use in the workbook. You can also change the style of the workbook, provide tagging, or pin an item in the workbook.
 
 :::image type="content" source="../media/05-Settings.PNG" alt-text="Screenshot of the Settings page." border="true":::
 
