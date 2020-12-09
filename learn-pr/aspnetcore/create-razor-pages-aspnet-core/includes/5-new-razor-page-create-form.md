@@ -77,34 +77,40 @@ Replace the contents of *:::no-loc text="Pages/Products/Create.cshtml":::* with 
 </form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <partial name="_ValidationScriptsPartial" />
 }
 ```
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *:::no-loc text="Create":::* Razor page uses HTML and Razor to support a product creation form. The form accepts **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *:::no-loc text="Pages/Shared/_ValidationScriptsPartial.cshtml":::* partial view.
+The *:::no-loc text="Create":::* Razor page uses HTML and Razor to support a product creation form. The form accepts **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *:::no-loc text="Pages/Shared/_ValidationScriptsPartial.cshtml":::* partial view. The partial view's contents are injected into the layout page's `Scripts` section.
 
 ## Review Razor Tag Helpers
 
-Tag Helpers are components for automating HTML generation in ASP.NET Core web apps.
+Tag Helpers address the inefficiencies of context switching between HTML and C#. Most of ASP.NET Core's built-in Tag Helpers extend standard HTML elements. Tag Helpers provide additional server-side attributes for HTML elements, making the elements more robust.
 
-Tag Helpers save development time:
+There are four Tag Helpers on this page:
 
-* Tag Helpers are reusable.
-* Tag Helpers are customizable building blocks.
-
-Most built-in Tag Helpers extend standard HTML elements. Tag Helpers provide additional server-side attributes for the element, making the element more robust.
-
-There are three Tag Helpers on this page:
-
+* Partial
 * Label
 * Input
 * Validation Message
 
-ASP.NET Core extends the standard HTML element by adding attributes.
+### Partial Tag Helper
 
-### The Label Tag Helper
+The following markup uses the Partial Tag Helper to asynchronously render a partial view:
+
+```cshtml
+<partial name="_ValidationScriptsPartial" />
+```
+
+It's an alternative to the following Razor syntax:
+
+```cstml
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+```
+
+### Label Tag Helper
 
 The following markup uses the Label Tag Helper:
 
@@ -114,7 +120,7 @@ The following markup uses the Label Tag Helper:
 
 The Label Tag Helper extends the standard HTML `<label>` element. As is common for many Tag Helpers, it uses an `asp-for` attribute. The attribute accepts a specified *:::no-loc text="PageModel":::* property. In this case, the value of the *:::no-loc text="PageModel":::* `Name` property will be rendered as the content for an HTML `<label>` element. The `asp-for` attribute is scoped to the *:::no-loc text="PageModel":::* for the Razor page, so the `@` symbol isn't used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
 
-### The Input Tag Helper
+### Input Tag Helper
 
 The following markup uses the Input Tag Helper. It extends the standard HTML `<input>` element. It also uses an `asp-for` attribute to specify a *:::no-loc text="PageModel":::* property.
 
@@ -136,7 +142,7 @@ The following HTML output is generated from the Input Tag Helper located in the 
 <input name="Product.Name" class="form-control" id="Product_Name" type="text" value="" data-val-required="The Name field is required." data-val="true">
 ```
 
-### The Validation Message Tag Helper
+### Validation Message Tag Helper
 
 The following markup uses the Validation Message Tag Helper. It displays a validation message for a single property on the model.
 
