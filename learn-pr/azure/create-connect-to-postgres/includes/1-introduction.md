@@ -1,4 +1,4 @@
-On Azure, hosting and using PostgreSQL is simple. Develop your application with your choice of open-source tools and platform, and let Azure take care of managing virtual machines and infrastructure.
+On Azure, hosting and using PostgreSQL is simple. Develop your application with your choice of open-source tools and frameworks, and let Azure take care of managing virtual machines and infrastructure.
 
 Azure Database for PostgreSQL runs the open-source, community edition of PostgreSQL. This means you can leverage decades of development by the postgres community, and rely on Azure to make hosting a secure database easy.
 
@@ -15,9 +15,9 @@ Alternatively, PostgreSQL Server workloads can also run as Infrastructure as a S
 
 With PaaS, you can pass these responsibilities to Azure. Additionally, setting up your database to ensure high availability to another datacenter requires very little hands-on configuration or administration.
 
-#### More control with a flexible server
+#### More control with a Flexible Server
 
-Some situations will require more granular server control. In these instances, Azure Database for PostgreSQL can be deployed with a flexible server option. A flexible server gives developers more control, while retaining the automation benefits of Azure Database for PostgreSQL, without the complex operational requirements of IaaS.
+Some situations will require more granular server control. In these cases, Azure Database for PostgreSQL can be deployed with a Flexible Server option. Flexible Server gives developers more control, while retaining the automation benefits of Azure Database for PostgreSQL, without the complex operational requirements of IaaS.
 
 ### Scenario: A new kind of payment app
 
