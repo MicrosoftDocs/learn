@@ -1,8 +1,8 @@
 On Azure, hosting and using PostgreSQL is simple. Develop your application with your choice of open-source tools and frameworks, and let Azure take care of managing virtual machines and infrastructure.
 
-Azure Database for PostgreSQL runs the open-source, community edition of PostgreSQL. This means you can leverage decades of development by the postgres community, and rely on Azure to make hosting a secure database easy.
+Azure Database for PostgreSQL runs the open-source, community edition of PostgreSQL. This means you can leverage decades of development by the Postgres community, and rely on Azure to make hosting a secure database easy.
 
-### Postgres on Azure
+### PostgreSQL on Azure
 
 Azure Database for PostgreSQL is a fully managed Platform as a Service (PaaS). The main benefit of this configuration is that Azure manages maintenance and security obligations.
 
