@@ -20,7 +20,7 @@ You set up and use alerts to:
 
 ## What is Azure Monitor for containers?
 
-Azure Monitor for containers is extends Azure Monitor to enable monitoring the state of nodes, pools, and containers running on:
+Azure Monitor for containers extends Azure Monitor to enable monitoring the state of nodes, pools, and containers running on:
 
 - Managed Kubernetes clusters hosted on AKS
 - Self-managed Kubernetes clusters hosted on Azure using AKS Engine
