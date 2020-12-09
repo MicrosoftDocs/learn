@@ -39,7 +39,7 @@ With Azure Monitor for containers you can:
 
 ## How to implement monitoring of Azure Arc enabled Kubernetes clusters?
 
-Azure Monitor for containers relies on a containerized version of the Log Analytics agent for Linux named omsagent, that runs in the monitored cluster to collect performance metrics and logs from its nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected telemetry to Azure. Metrics reside in the metrics store, while log data is persists in the logs store in the Log Analytics workspace you designate.
+Azure Monitor for containers relies on a containerized version of the Log Analytics agent for Linux named omsagent, that runs in the monitored cluster to collect performance metrics and logs from its nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected telemetry to Azure. Metrics reside in the metrics store, while log data persists in the logs store in the Log Analytics workspace you designate.
 
 You can set up of Azure Monitor for containers for Azure Arc enabled Kubernetes deployments by using either a PowerShell or Bash script. The implementation consists of the following high-level steps:
 
