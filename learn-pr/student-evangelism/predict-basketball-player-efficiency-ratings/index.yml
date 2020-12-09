@@ -20,7 +20,8 @@ abstract:  |
 
   > [!TIP]
   > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
-
+  
+  © 2020 Warner Bros. Ent. All Rights Reserved.
 prerequisites: |
   - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
   - A local Python environment, such as the one used in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)

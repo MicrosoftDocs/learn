@@ -10,16 +10,16 @@ player_df.describe()
 
 **Output**
 
-| | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
+|   | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| count | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 37.000000 | 38.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 34.000000 |
-| mean | 24.279070 | 1592.651163 | 1350.513953 | 106.711628 | 60.054054 | 35.331579 | 0.597209 | 26.267442 | 13.081395 | 30.565116 | 4.323256 | 14.946512 | 8.679070 | 22.926471 |
-| std | 14.114035 | 347.666978 | 213.708586 | 6.707963 | 5.622109 | 1.922851 | 0.029468 | 5.145859 | 2.013911 | 4.893187 | 2.067876 | 7.218176 | 5.077427 | 7.402536 |
-| min | 1.000000 | 183.000000 | 147.300000 | 89.700000 | 48.000000 | 30.500000 | 0.511000 | 14.800000 | 9.200000 | 16.500000 | 0.000000 | 0.900000 | -2.900000 | 8.710000 |
-| 25% | 12.500000 | 1395.500000 | 1284.800000 | 102.700000 | 56.000000 | 34.125000 | 0.572500 | 23.650000 | 11.400000 | 27.050000 | 2.950000 | 8.550000 | 5.250000 | 20.212500 |
-| 50% | 24.000000 | 1639.000000 | 1384.700000 | 107.800000 | 61.000000 | 35.400000 | 0.605000 | 27.200000 | 13.500000 | 30.700000 | 4.700000 | 17.300000 | 9.400000 | 24.675000 |
-| 75% | 36.500000 | 1824.500000 | 1451.550000 | 112.150000 | 64.000000 | 36.900000 | 0.619000 | 30.500000 | 14.750000 | 34.800000 | 5.900000 | 20.150000 | 13.000000 | 28.395000 |
-| max | 47.000000 | 2062.000000 | 1542.000000 | 118.800000 | 69.000000 | 38.800000 | 0.645000 | 33.200000 | 16.200000 | 36.700000 | 8.300000 | 29.400000 | 16.400000 | 34.260000 |
+| count | 42.000000 | 42.000000 | 42.000000 | 42.000000 | 36.000000 | 37.00000 | 42.000000 | 42.000000 | 42.000000 | 42.000000 | 42.000000 | 42.000000 | 42.000000 | 33.000000 |
+| mean | 23.738095 | 1592.380952 | 1346.323810 | 106.526190 | 59.861111 | 35.27027 | 0.596357 | 26.221429 | 13.083333 | 30.478571 | 4.280952 | 14.850000 | 8.497619 | 22.594242 |
+| std | 13.826555 | 351.876707 | 214.503887 | 6.676791 | 5.576239 | 1.91135 | 0.029284 | 5.199275 | 2.038282 | 4.919079 | 2.074025 | 7.277538 | 4.995876 | 7.255338 |
+| min | 1.000000 | 183.000000 | 147.300000 | 89.700000 | 48.000000 | 30.50000 | 0.511000 | 14.800000 | 9.200000 | 16.500000 | 0.000000 | 0.900000 | -2.900000 | 8.710000 |
+| 25% | 12.250000 | 1390.750000 | 1283.650000 | 102.400000 | 55.750000 | 34.10000 | 0.572250 | 23.275000 | 11.350000 | 26.975000 | 2.925000 | 8.475000 | 5.225000 | 20.120000 |
+| 50% | 23.500000 | 1680.000000 | 1369.800000 | 106.800000 | 60.500000 | 35.40000 | 0.604000 | 27.200000 | 13.500000 | 30.650000 | 4.650000 | 16.800000 | 9.150000 | 24.230000 |
+| 75% | 35.750000 | 1826.250000 | 1444.050000 | 111.950000 | 64.000000 | 36.90000 | 0.618750 | 30.550000 | 14.775000 | 34.850000 | 5.900000 | 20.325000 | 12.875000 | 28.380000 |
+| max | 46.000000 | 2062.000000 | 1542.000000 | 118.800000 | 69.000000 | 38.80000 | 0.645000 | 33.200000 | 16.200000 | 36.700000 | 8.300000 | 29.400000 | 16.400000 | 34.260000 |
 
 Here you see, for example, that the mean for all 43 players is 24.27 points. But look at the numbers for min (1), 25% (12.5), 50% (24), 75% (36.5), and max (47). Here, the min points (1) might be an outlier. You can use box plots to visualize the values and determine possible outliers.
 
@@ -76,7 +76,7 @@ In a different dataset, the factors might differ. So stopping to carefully evalu
 
 ## Identify and remove the rows that contain the outlier values
 
-You could dig further into the data if you needed to. Was some of the data mistyped or corrupted in some way? With enough subject matter expertise or familiarity with how the data was gathered, you could attempt to correct the erroneous values. But you could also risk introducing your own bias or preconceived notions about the data into the dataset. Those accidents could ultimately hurt your analysis. Because you have 43 records remaining in the data, you're probably safest removing the offending row or rows.
+You could dig further into the data if you needed to. Was some of the data mistyped or corrupted in some way? With enough subject matter expertise or familiarity with how the data was gathered, you could attempt to correct the erroneous values. But you could also risk introducing your own bias or preconceived notions about the data into the dataset. Those accidents could ultimately hurt your analysis. Because you have 42 records remaining in the data, you're probably safest removing the offending row or rows.
 
 The box plot tells you only that the outlying values exist, however. You now need to figure out the rows in which the values occur. 
 
@@ -118,6 +118,7 @@ player_df.tail(10)
 
 | | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 31 | 36 | 2062.0 | 1505.7 | 111.5 | NaN | 37.0 | 0.620 | 29.8 | 15.6 | 36.2 | 4.9 | 23.9 | 14.7 | 27.86 |
 | 32 | 37 | 1845.0 | 1435.7 | 113.1 | 69.0 | 36.9 | 0.634 | 33.2 | 14.0 | 36.5 | 4.1 | 21.5 | 16.4 | 34.26 |
 | 33 | 38 | 1778.0 | 1526.4 | 109.3 | 66.0 | 34.9 | 0.612 | 30.6 | 15.9 | 35.9 | 5.5 | 18.8 | 13.7 | 28.65 |
 | 34 | 39 | 1901.0 | 1444.1 | 109.7 | 67.0 | 36.5 | 0.609 | 27.2 | 14.8 | 35.5 | 5.0 | 21.8 | 8.9 | 20.12 |
@@ -125,9 +126,8 @@ player_df.tail(10)
 | 37 | 42 | 1631.0 | 1465.7 | 110.1 | 66.0 | 37.5 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.40 |
 | 38 | 43 | 1828.0 | 1507.2 | 112.7 | 64.0 | 36.5 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 | NaN |
 | 39 | 44 | 1821.0 | 1443.7 | 118.8 | 66.0 | 36.6 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.96 |
-| 40 | 45 | 1604.0 | 1526.5 | 114.5 | 67.0 | 37.6 | 0.633 | 28.2 | 13.0 | 34.2 | 6.1 | 19.0 | 16.3 | 33.89 |
-| 41 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
-| 42 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
+| 40 | 45 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
+| 41 | 46 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
 Like the `head()` function, the `tail()` function shows the last five values of a DataFrame. And, sure enough, you've removed the row you needed to remove (for example, the row where the index is 35).
 
@@ -138,6 +138,6 @@ You can reset the index for the DataFrame again to ensure accuracy within the da
 player_df.reset_index(drop=True, inplace=True)
 ```
 
-If you execute `player_df.tail(10)` again, you'll see the indexes in order now until row 41.
+If you execute `player_df.tail(10)` again, you'll see the indexes in order now until row 40.
 
 © 2020 Warner Bros. Ent. All Rights Reserved.

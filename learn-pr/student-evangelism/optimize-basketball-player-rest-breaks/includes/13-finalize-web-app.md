@@ -9,30 +9,30 @@ The `startNextQuarter()` function is called from the button that is defined in *
 function startNextQuarter() {
     // If there aren't exactly five players on the court, alert the coach that the game can't start.
     if(playersOnCourt != maxPlayersOnCourt){
-        alert("Choose exactly " + maxPlayersOnCourt + " players to be on the court.");
+        alert('Choose exactly ' + maxPlayersOnCourt + ' players to be on the court.');
         return;
     }
 
-    document.getElementById("start").innerHTML = "Q" + (currentQuarter+1) + " is in progress";
+    document.getElementById('start').innerText = 'Q' + (currentQuarter + 1) + ' is in progress';
 
     // Define the interval period for the quarter; in this case, it's 12 seconds.
-    var interval = secondsInQuarter;
+    var secondsInQuarter = 12;
 
-    // Set the quarterInplay variable to true so that the coach can't move players during
-    // gameplay.
+    // Set the quarterInPlay variable to true so that the coach
+    // can't move players during gameplay
     quarterInPlay = true;
 
-    // Update the count down every 1 second, as indicated by 1000 as the second parameter
-    // to the setInterval function.
+    // Update the count down every 1 second, as indicated by the `1000` as
+    // the second parameter to the setInterval function
     var x = setInterval(function() {        
         // Display the current time on the court board.
-        document.getElementById("timer").innerHTML = "Q "+ (currentQuarter+1) + " Timer: " + ((secondsInQuarter - interval)+1);
+        document.getElementById('timer').innerText = 'Q '+ (currentQuarter + 1) + ' Time: ' + secondsInQuarter + ':00';
 
         // Decrement the interval counter for this quarter.
-        interval--;
+        secondsInQuarter--;
 
         // If the quarter has ended, reset the interval timer and get ready for the next quarter.
-        if (interval < 0) {
+        if (secondsInQuarter < 0) {
             clearInterval(x);
             if(currentQuarter < 3) {
                 endQuarter();

@@ -20,9 +20,9 @@ To get started, you'll need to create a repo based on this app. Go to [https://a
 
 After your repo is created, you can clone it (make a copy on your local computer) by using Visual Studio Code. First, open a new Visual Studio Code window: select **File** > **New Window**.
 
-In the left menu, select the **Source Control** icon, and then select **Clone Repository**:
+Open the command palette, you can use the Ctrl+Shift+P shortcut, and type "Git: Clone":
 
-:::image type="content" source="../media/clone-repo-button.png" alt-text="Screenshot that shows the clone repository menu item in Visual Studio Code.":::
+:::image type="content" source="../media/clone-repo-selection.png" alt-text="Screenshot that shows the clone repository menu item in Visual Studio Code.":::
 
 Then, back on GitHub.com in your *space-jam-a-new-legacy-app* repo, select the **Clone** button and copy the HTTPS URL:
 

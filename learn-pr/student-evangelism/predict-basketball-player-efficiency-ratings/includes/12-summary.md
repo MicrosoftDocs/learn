@@ -11,6 +11,8 @@ You can use the `player_data_final.csv` file that you created to determine the b
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video?azure-portal=true).
 
-:::image type="content" source="../media/space-jam-end-card.png" alt-text="Logo for Space Jam: A New Legacy.":::
+And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie) coming Summer 2021!
+
+:::image type="content" source="../media/space-jam-end-card.png" alt-text="Logo for SPACE JAM: A NEW LEGACY.":::
 
 © 2020 Warner Bros. Ent. All Rights Reserved.

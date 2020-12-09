@@ -14,6 +14,8 @@ We encourage you to make this app your own and use it as a place to test your cr
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video).
 
-:::image type="content" source="../media/space-jam-end-card.png" alt-text="Image of the Space Jam: A New Legacy logo." border="false":::
+And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie) coming Summer 2021!
+
+:::image type="content" source="../media/space-jam-end-card.png" alt-text="Image of the SPACE JAM: A NEW LEGACY logo." border="false":::
 
 © 2020 Warner Bros. Ent. All Rights Reserved

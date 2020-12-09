@@ -23,26 +23,26 @@ player_df.loc[player_df['points'] >= 1600].info()
 
 ```output
 <class 'pandas.core.frame.DataFrame'>
-Int64Index: 24 entries, 0 to 41
+Int64Index: 23 entries, 0 to 40
 Data columns (total 14 columns):
  #   Column       Non-Null Count  Dtype  
 ---  ------       --------------  -----  
- 0   ID           24 non-null     int64  
- 1   points       24 non-null     float64
- 2   possessions  24 non-null     float64
- 3   team_pace    24 non-null     float64
- 4   GP           21 non-null     float64
- 5   MPG          21 non-null     float64
- 6   TS%          24 non-null     float64
- 7   AST          24 non-null     float64
- 8   TO           24 non-null     float64
- 9   USG          24 non-null     float64
- 10  ORR          24 non-null     float64
- 11  DRR          24 non-null     float64
- 12  REBR         24 non-null     float64
- 13  PER          21 non-null     float64
+ 0   ID           23 non-null     int64  
+ 1   points       23 non-null     float64
+ 2   possessions  23 non-null     float64
+ 3   team_pace    23 non-null     float64
+ 4   GP           20 non-null     float64
+ 5   MPG          20 non-null     float64
+ 6   TS%          23 non-null     float64
+ 7   AST          23 non-null     float64
+ 8   TO           23 non-null     float64
+ 9   USG          23 non-null     float64
+ 10  ORR          23 non-null     float64
+ 11  DRR          23 non-null     float64
+ 12  REBR         23 non-null     float64
+ 13  PER          20 non-null     float64
 dtypes: float64(13), int64(1)
-memory usage: 2.8 KB
+memory usage: 2.7 KB
 ```
 
 Twenty-four rows include players who scored at least 1,600 points. 
@@ -68,26 +68,26 @@ player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15)].info()
 
 ```output
 <class 'pandas.core.frame.DataFrame'>
-Int64Index: 19 entries, 0 to 41
+Int64Index: 18 entries, 0 to 40
 Data columns (total 14 columns):
  #   Column       Non-Null Count  Dtype  
 ---  ------       --------------  -----  
- 0   ID           19 non-null     int64  
- 1   points       19 non-null     float64
- 2   possessions  19 non-null     float64
- 3   team_pace    19 non-null     float64
- 4   GP           16 non-null     float64
- 5   MPG          17 non-null     float64
- 6   TS%          19 non-null     float64
- 7   AST          19 non-null     float64
- 8   TO           19 non-null     float64
- 9   USG          19 non-null     float64
- 10  ORR          19 non-null     float64
- 11  DRR          19 non-null     float64
- 12  REBR         19 non-null     float64
- 13  PER          17 non-null     float64
+ 0   ID           18 non-null     int64  
+ 1   points       18 non-null     float64
+ 2   possessions  18 non-null     float64
+ 3   team_pace    18 non-null     float64
+ 4   GP           15 non-null     float64
+ 5   MPG          16 non-null     float64
+ 6   TS%          18 non-null     float64
+ 7   AST          18 non-null     float64
+ 8   TO           18 non-null     float64
+ 9   USG          18 non-null     float64
+ 10  ORR          18 non-null     float64
+ 11  DRR          18 non-null     float64
+ 12  REBR         18 non-null     float64
+ 13  PER          16 non-null     float64
 dtypes: float64(13), int64(1)
-memory usage: 2.2 KB
+memory usage: 2.1 KB
 ```
 
 Finally, take a look at PER. If the hypothesis is correct so far, Tune Squad players probably have a higher PER.
@@ -122,11 +122,10 @@ player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15) & (player
 | 35 | 41 | 2030.0 | 1431.0 | 112.3 | 68.0 | 37.0 | 0.618 | 32.5 | 15.3 | 34.5 | 5.7 | 15.7 | 13.2 | 30.07 |
 | 36 | 42 | 1631.0 | 1465.7 | 110.1 | 66.0 | 37.5 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.40 |
 | 38 | 44 | 1821.0 | 1443.7 | 118.8 | 66.0 | 36.6 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.96 |
-| 39 | 45 | 1604.0 | 1526.5 | 114.5 | 67.0 | 37.6 | 0.633 | 28.2 | 13.0 | 34.2 | 6.1 | 19.0 | 16.3 | 33.89 |
-| 40 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
-| 41 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
+| 39 | 45 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
+| 40 | 46 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
-You could reasonably expect these rows to represent the Tune Squad players. For the purposes of this module, the 16 Tune Squad players were in fact added to the very end of the dataset. If you didn't know that detail, though, you could reasonably assume the data was compiled from two different datasets, where the second dataset was added to the end of the first dataset. 
+You could reasonably expect these rows to represent the Tune Squad players. For the purposes of this module, the 15 Tune Squad players were in fact added to the very end of the dataset. If you didn't know that detail, though, you could reasonably assume the data was compiled from two different datasets, where the second dataset was added to the end of the first dataset. 
 
 The rows for player IDs 34 and 40 aren't a part of this set. Although index 34 and index 40 appear, the IDs 34 and 40 don't. You removed 40 earlier because the points in that row were only 183. Now look at player ID 34:
 

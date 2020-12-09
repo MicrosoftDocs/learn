@@ -24,7 +24,7 @@ Make sure that the file opens in a notebook, that the Jupyter server is connecte
 
 ## Download data for basketball players
 
-Next, you need some data. You can gather data on your own, but in this module you'll use data we gathered from 47 anonymous basketball players. Download the CSV file at [*player_data.csv* on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data1?azure-portal=true). Save the *player_data.csv* file in your *space-jam-anl* folder.
+Next, you need some data. You can gather data on your own, but in this module you'll use data we gathered from 46 anonymous basketball players. Download the CSV file at [*player_data.csv* on GitHub](https://aka.ms/LearnWithDrG/Basketball/Data1?azure-portal=true). Save the *player_data.csv* file in your *space-jam-anl* folder.
 
 Select the CSV file to see the data in Visual Studio Code.
 
