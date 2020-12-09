@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.optimize-basketball-games-with-machine-learning
 hidden: true
 metadata:
-  title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by the new film *Space Jam: A New Legacy*"
+  title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by the new film SPACE JAM: A NEW LEGACY"
   description: "This *Space Jam: A New Legacy* - inspired learning path aims to equip you with data science, web development skills, and coding strategies to impact a game of basketball in real time, ensuring victory for the Tune Squad in their next game."
   brand: vs-code
   ms.date: 12/14/2020
@@ -27,7 +27,7 @@ summary: |
 
   </details>
 
-  And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie) coming Summer 2021!
+  And don't forget to watch _Space Jam: A New Legacy_ coming Summer 2021!
 
   In this learning path you will:
   - Use Python, Pandas, and Visual Studio Code to understand basketball stats

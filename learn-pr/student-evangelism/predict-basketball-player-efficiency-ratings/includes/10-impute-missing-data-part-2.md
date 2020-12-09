@@ -51,11 +51,12 @@ for i in range(len(entries)):
 ```
 
 ```output
-Mean r2 score: 0.9993
-10% of r2 scores are between 0.9962 and 0.9966
-10% of r2 scores are between 0.9985 and 0.9989
-10% of r2 scores are between 0.9992 and 0.9996
-70% of r2 scores are between 0.9996 and 1.0000
+Mean r2 score: 0.9995
+10% of r2 scores are between 0.9985 and 0.9987
+10% of r2 scores are between 0.9987 and 0.9988
+10% of r2 scores are between 0.9995 and 0.9996
+10% of r2 scores are between 0.9996 and 0.9997
+60% of r2 scores are between 0.9997 and 0.9998
 ```
 
 :::image type="content" source="../media/cross-validation.png" alt-text="Screenshot showing a histogram of R2 scores.":::
@@ -63,7 +64,7 @@ Mean r2 score: 0.9993
 >[!NOTE]
 >If you get an error when you run this code, make sure you've [installed the scitkit-learn library](https://scikit-learn.org/stable/install.html?azure-portal=true).
 
-In short, your model is good. Your R2 score is 99.93 percent. The *R2* (meaning, R squared) score tells you how much data variance your model captures. For your purposes, this score serves as a loose proxy for the model's accuracy. Your lowest R2 scores are still good, and most of them are close to the maximum value of 1. So you should feel confident applying this model to your missing `PER` values.
+In short, your model is good. Your R2 score is 99.95 percent. The *R2* (meaning, R squared) score tells you how much data variance your model captures. For your purposes, this score serves as a loose proxy for the model's accuracy. Your lowest R2 scores are still good, and most of them are close to the maximum value of 1. So you should feel confident applying this model to your missing `PER` values.
 
 >[!NOTE]
 >Your exact R2 scores might differ slightly. Each time you run this model, you'll get a different random sampling of data per cut across the 10 cuts. So the model might be slightly better or slightly worse from run to run. Your numbers should be fairly close to the example numbers, however.
@@ -129,13 +130,12 @@ mask
 32    False
 33    False
 34    False
+35    False
 36    False
-37    False
-38     True
+37     True
+38    False
 39    False
 40    False
-41    False
-42    False
 dtype: bool
 ```
 
@@ -158,7 +158,7 @@ player_df.loc[mask].iloc[:, 5:-1]
 | 20 | 61.000000 | 35.272973 | 0.645 | 20.6 | 13.1 | 31.5 | 4.0 | 12.0 | 5.2 |
 | 24 | 48.000000 | 35.100000 | 0.569 | 19.0 | 10.9 | 29.2 | 4.6 | 17.7 | 5.2 |
 | 29 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 |
-| 38 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 |
+| 37 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 |
 
 Now you've identified the nine rows that have a `NaN` value in the `PER` column and have the columns that can be used in the machine learning model to predict the PER value.
 
@@ -232,22 +232,21 @@ player_df
 | 23 | 27 | player27 | 1497.0 | 1410.9 | 98.3 | 57.000000 | 34.100000 | 0.613 | 15.4 | 10.0 | 29.3 | 3.8 | 5.7 | 6.7 | 25.350000 |
 | 24 | 28 | player28 | 1313.0 | 1420.5 | 105.0 | 48.000000 | 35.100000 | 0.569 | 19.0 | 10.9 | 29.2 | 4.6 | 17.7 | 5.2 | 12.920786 |
 | 25 | 29 | player29 | 1464.0 | 1353.4 | 103.3 | 63.000000 | 34.400000 | 0.595 | 17.9 | 9.2 | 29.3 | 1.0 | 8.7 | 4.1 | 20.490000 |
-| 26 | 31 | looney_tune1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 |
-| 27 | 32 | looney_tune2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 |
-| 28 | 33 | looney_tune3 | 1805.0 | 1509.9 | 108.6 | 64.000000 | 35.400000 | 0.622 | 27.9 | 13.9 | 36.0 | 5.9 | 27.7 | 12.2 | 22.410000 |
-| 29 | 34 | looney_tune4 | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 |
-| 30 | 35 | looney_tune5 | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 |
-| 31 | 36 | looney_tune6 | 2062.0 | 1505.7 | 111.5 | 59.972222 | 37.000000 | 0.620 | 29.8 | 15.6 | 36.2 | 4.9 | 23.9 | 14.7 | 27.860000 |
-| 32 | 37 | looney_tune7 | 1845.0 | 1435.7 | 113.1 | 69.000000 | 36.900000 | 0.634 | 33.2 | 14.0 | 36.5 | 4.1 | 21.5 | 16.4 | 34.260000 |
-| 33 | 38 | looney_tune8 | 1778.0 | 1526.4 | 109.3 | 66.000000 | 34.900000 | 0.612 | 30.6 | 15.9 | 35.9 | 5.5 | 18.8 | 13.7 | 28.650000 |
-| 34 | 39 | looney_tune9 | 1901.0 | 1444.1 | 109.7 | 67.000000 | 36.500000 | 0.609 | 27.2 | 14.8 | 35.5 | 5.0 | 21.8 | 8.9 | 20.120000 |
-| 35 | 41 | looney_tune11 | 2030.0 | 1431.0 | 112.3 | 68.000000 | 37.000000 | 0.618 | 32.5 | 15.3 | 34.5 | 5.7 | 15.7 | 13.2 | 30.070000 |
-| 36 | 42 | looney_tune12 | 1631.0 | 1465.7 | 110.1 | 66.000000 | 37.500000 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.400000 |
-| 37 | 43 | looney_tune13 | 1828.0 | 1507.2 | 112.7 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 | 29.102157 |
-| 38 | 44 | looney_tune14 | 1821.0 | 1443.7 | 118.8 | 66.000000 | 36.600000 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.960000 |
-| 39 | 45 | looney_tune15 | 1604.0 | 1526.5 | 114.5 | 67.000000 | 37.600000 | 0.633 | 28.2 | 13.0 | 34.2 | 6.1 | 19.0 | 16.3 | 33.890000 |
-| 40 | 46 | looney_tune16 | 1740.0 | 1443.9 | 114.1 | 68.000000 | 37.100000 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.220000 |
-| 41 | 47 | looney_tune17 | 1993.0 | 1459.0 | 112.5 | 59.972222 | 36.900000 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.760000 |
+| 26 | 31 | tune_squad1 | 2049.0 | 1434.0 | 110.0 | 64.000000 | 38.800000 | 0.619 | 31.5 | 14.9 | 35.5 | 8.3 | 17.6 | 12.8 | 28.440000 |
+| 27 | 32 | tune_squad2 | 1795.0 | 1481.8 | 112.1 | 62.000000 | 35.400000 | 0.608 | 31.9 | 14.5 | 32.0 | 6.5 | 22.5 | 12.9 | 23.340000 |
+| 28 | 33 | tune_squad3 | 1805.0 | 1509.9 | 108.6 | 64.000000 | 35.400000 | 0.622 | 27.9 | 13.9 | 36.0 | 5.9 | 27.7 | 12.2 | 22.410000 |
+| 29 | 34 | tune_squad4 | 1743.0 | 1422.4 | 112.9 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | 29.858714 |
+| 30 | 35 | tune_squad5 | 1963.0 | 1539.1 | 117.4 | 59.972222 | 35.272973 | 0.633 | 32.3 | 16.2 | 34.0 | 5.9 | 19.8 | 13.1 | 27.160000 |
+| 31 | 36 | tune_squad6 | 2062.0 | 1505.7 | 111.5 | 59.972222 | 37.000000 | 0.620 | 29.8 | 15.6 | 36.2 | 4.9 | 23.9 | 14.7 | 27.860000 |
+| 32 | 37 | tune_squad7 | 1845.0 | 1435.7 | 113.1 | 69.000000 | 36.900000 | 0.634 | 33.2 | 14.0 | 36.5 | 4.1 | 21.5 | 16.4 | 34.260000 |
+| 33 | 38 | tune_squad8 | 1778.0 | 1526.4 | 109.3 | 66.000000 | 34.900000 | 0.612 | 30.6 | 15.9 | 35.9 | 5.5 | 18.8 | 13.7 | 28.650000 |
+| 34 | 39 | tune_squad9 | 1901.0 | 1444.1 | 109.7 | 67.000000 | 36.500000 | 0.609 | 27.2 | 14.8 | 35.5 | 5.0 | 21.8 | 8.9 | 20.120000 |
+| 35 | 41 | tune_squad11 | 2030.0 | 1431.0 | 112.3 | 68.000000 | 37.000000 | 0.618 | 32.5 | 15.3 | 34.5 | 5.7 | 15.7 | 13.2 | 30.070000 |
+| 36 | 42 | tune_squad12 | 1631.0 | 1465.7 | 110.1 | 66.000000 | 37.500000 | 0.613 | 28.4 | 14.4 | 35.7 | 6.5 | 20.7 | 14.0 | 28.400000 |
+| 37 | 43 | tune_squad13 | 1828.0 | 1507.2 | 112.7 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 | 29.102157 |
+| 38 | 44 | tune_squad14 | 1821.0 | 1443.7 | 118.8 | 66.000000 | 36.600000 | 0.609 | 27.3 | 13.5 | 35.8 | 7.0 | 23.8 | 11.5 | 22.960000 |
+| 39 | 45 | tune_squad15 | 1740.0 | 1443.9 | 114.1 | 68.000000 | 37.100000 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.220000 |
+| 40 | 46 | tune_squad16 | 1993.0 | 1459.0 | 112.5 | 59.972222 | 36.900000 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.760000 |
 
 Finally, save this DataFrame to a CSV file. You'll use this dataset to make pregame and in-game decisions based on the team players, the players who are currently in the game, and the current game stats.
 

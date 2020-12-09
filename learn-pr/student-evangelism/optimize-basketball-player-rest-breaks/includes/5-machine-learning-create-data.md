@@ -1,4 +1,4 @@
-We've run into a problem. We can't get real-time game data from the Tune Squad playing. There's no way for us to watch a game of 16 Tune Squad characters playing basketball and test out our model in an actual app.
+We've run into a problem. We can't get real-time game data from the Tune Squad playing. There's no way for us to watch a game of 15 Tune Squad characters playing basketball and test out our model in an actual app.
 
 *But*, we *can* use the trick we learned about testing our model to create a new dataset that will simulate a game!
 
@@ -45,7 +45,7 @@ Here's the output:
 |  | Penelope | 0.613901 | 25.007772 | 14.394944 | 28.324923 | 7.564207 | 23.184055 | 9.919301 | 16.124275 |
 |  | Daffy Duck | 0.634848 | 31.911011 | 14.694308 | 33.226023 | 6.308140 | 18.023737 | 16.305183 | 33.155391 |
 
-63 rows × 8 columns
+60 rows × 8 columns
 
 The final DataFrame looks complete. We can save it as a CSV file, so we can use it in our web app. When saving this DataFrame as a CSV file, we'll want to keep the indices, because we made them the player's names.
 

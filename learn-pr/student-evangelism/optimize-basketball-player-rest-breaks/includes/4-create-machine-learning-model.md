@@ -132,7 +132,7 @@ Here's the output:
 > [!NOTE]
 > Your data will be different from the data shown here because each time we run this code, we generate a random number within the standard deviation for each relevant stat column. If it *is* identical, it was complete luck!
 
-Our methodology provides a variety of results that are in line with what we might expect based on the stats: Lola and Speedy likely are some of the best players, based on PER.
+Our methodology provides a variety of results that are in line with what we might expect based on the stats: Lola is likely one of the best players, based on PER.
 
 So, if we had in-game data instead of random values based on the standard deviation, we could feasibly feed that data into this machine learning model and determine which player (the lowest PER player) should take a water break and which should stay in the game (the highest PER player).
 

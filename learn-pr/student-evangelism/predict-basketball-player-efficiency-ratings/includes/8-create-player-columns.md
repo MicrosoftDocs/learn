@@ -57,8 +57,7 @@ pop_list
  'tune_squad13',
  'tune_squad14',
  'tune_squad15',
- 'tune_squad16',
- 'tune_squad17']
+ 'tune_squad16']
 ```
 
 >[!NOTE]
