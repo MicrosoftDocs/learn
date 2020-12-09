@@ -35,13 +35,13 @@ The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in 
 | *:::no-loc text="Program.cs":::*            | Serves as the app's managed entry point.                                                                                        |
 | *:::no-loc text="Startup.cs":::*            | Configures app behavior, such as routing between pages.                                                                         |
 
-### Razor page files and their paired *PageModel* class file
+### Razor page files and their paired `PageModel` class file
 
 By convention, the *:::no-loc text="Pages":::* directory is where all Razor Pages are stored and organized in an ASP.NET Core app.
 
-A Razor page has a *:::no-loc text=".cshtml":::* file extension. By convention, its associated *:::no-loc text="PageModel":::* C# class file uses the same name but with a *:::no-loc text=".cs":::* appended. For example, the Razor page *:::no-loc text="Index.cshtml":::* has an associated *:::no-loc text="PageModel":::* class file for *:::no-loc text="Index.cshtml.cs":::*.
+A Razor page has a *:::no-loc text=".cshtml":::* file extension. By convention, its associated `PageModel` C# class file uses the same name but with a *:::no-loc text=".cs":::* appended. For example, the Razor page *:::no-loc text="Index.cshtml":::* has an associated `PageModel` class file for *:::no-loc text="Index.cshtml.cs":::*.
 
-A model object defines data properties and encapsulates logic or operations related to those data properties. A *:::no-loc text="PageModel":::* is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class:
+A model object defines data properties and encapsulates logic or operations related to those data properties. A `PageModel` is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class:
 
 * Allows for separation of the logic of a Razor page from its presentation.
 * Defines page handlers for requests sent to the page and for the data used to render the page.
@@ -52,7 +52,7 @@ A *page handler* is the method that's executed as a result of an HTTP request. F
 
 By convention, model files are located in a *:::no-loc text="Models":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
 
-The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. The `Product` model is implemented as a C# [record](/dotnet/csharp/whats-new/csharp-9#record-types) that defines the data properties for a product. Each :::no-loc text="PageModel"::: that focuses on CRUD operations for products uses this `Product` model.
+The project has a `Product` model in *:::no-loc text="Models/Product.cs":::*. The `Product` model is implemented as a C# [record](/dotnet/csharp/whats-new/csharp-9#record-types) that defines the data properties for a product. Each `PageModel` that focuses on CRUD operations for products uses this `Product` model.
 
 ### Data annotations
 
@@ -75,7 +75,7 @@ Layouts and partial views are outside of the scope of this module. At the end of
 
 ## The *Pages* directory structure and routing requests
 
-Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default. An index page located in the root of the *:::no-loc text="Pages":::* directory, for example, is the default page for the app's site. In the *:::no-loc text="ContosoPets.Ui":::* project's *:::no-loc text="Pages/Products":::* directory, you'll find a collection of Razor pages, including an *:::no-loc text="Index.cshtml":::* page. Requests routed to *:::no-loc text="/Product/":::* will be directed to use the default *:::no-loc text="Index.cshtml":::* page physically located at *:::no-loc text="Products/Index.cshtml":::*, for example. The project's Razor pages (*:::no-loc text=".cshtml":::*) and accompanying *:::no-loc text="PageModel":::* classes (*:::no-loc text=".cshtml.cs":::*) are grouped conveniently in *:::no-loc text="Pages/Products":::*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features.
+Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default. An index page located in the root of the *:::no-loc text="Pages":::* directory, for example, is the default page for the app's site. In the *:::no-loc text="ContosoPets.Ui":::* project's *:::no-loc text="Pages/Products":::* directory, you'll find a collection of Razor pages, including an *:::no-loc text="Index.cshtml":::* page. Requests routed to *:::no-loc text="/Product/":::* will be directed to use the default *:::no-loc text="Index.cshtml":::* page physically located at *:::no-loc text="Products/Index.cshtml":::*, for example. The project's Razor pages (*:::no-loc text=".cshtml":::*) and accompanying `PageModel` classes (*:::no-loc text=".cshtml.cs":::*) are grouped conveniently in *:::no-loc text="Pages/Products":::*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features.
 
 The following table provides routes to be used in this module's completed project.
 
@@ -88,7 +88,7 @@ The following table provides routes to be used in this module's completed projec
 
 ### Organize groups of related Razor pages
 
-The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a UI to execute CRUD operations through your company's web API endpoint to manage product listings. The *:::no-loc text="Pages/Products":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files. For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
+The *:::no-loc text="ContosoPets.Ui":::* project's purpose is to provide a UI to execute CRUD operations through your company's web API endpoint to manage product listings. The *:::no-loc text="Pages/Products":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their `PageModel` class files. For the *:::no-loc text="ContosoPets.Ui":::* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
 
 ### The HTTP request service
 

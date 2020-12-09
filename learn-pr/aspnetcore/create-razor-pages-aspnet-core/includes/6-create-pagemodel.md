@@ -1,8 +1,8 @@
-In this unit, you'll review the structure of a Razor page *:::no-loc text="PageModel":::* class and its components. You'll add an HTTP POST page handler for the *:::no-loc text="Create":::* Razor page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a Razor page `PageModel` class and its components. You'll add an HTTP POST page handler for the *:::no-loc text="Create":::* Razor page form. Finally, you'll walk through the `Product` model and its data annotations that drive both client-side and server-side validation.
 
-## Examine the structure of a Razor Pages *:::no-loc text="PageModel":::* class
+## Examine the structure of a Razor Pages `PageModel` class
 
-Open the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file. You may remember, that when you created a new Razor page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It contains the following C# code:
+Open the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* `PageModel` class file. You may remember, that when you created a new Razor page called *:::no-loc text="Create":::*, its `PageModel` class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It contains the following C# code:
 
 ```csharp
 using System;
@@ -23,7 +23,7 @@ namespace ContosoPets.Ui.Pages.Products
 }
 ```
 
-A Razor page's *:::no-loc text="PageModel":::* class file defines any page handlers for HTTP requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor page, your app more modular, and easier to maintain. By convention, the *:::no-loc text="PageModel":::* class is named *:::no-loc text="<PageName>Model":::* and resides in the same namespace as the Razor page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
+A Razor page's `PageModel` class file defines any page handlers for HTTP requests sent to the page, and data used to render the page. The `PageModel` keeps those concerns separate from the Razor page, your app more modular, and easier to maintain. By convention, the `PageModel` class is named *:::no-loc text="<PageName>Model":::* and resides in the same namespace as the Razor page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
 
 Currently, the `CreateModel` class handles the HTTP GET request with an empty `OnGet` page handler. You can add handlers for any HTTP verb. The most common handlers are:
 
@@ -32,9 +32,9 @@ Currently, the `CreateModel` class handles the HTTP GET request with an empty `O
 
 The *:::no-loc text="Create":::* page contains a form and therefore requires an HTTP POST page handler.
 
-## Add an HTTP POST page handler to the *:::no-loc text="PageModel":::*
+## Add an HTTP POST page handler to the `PageModel`
 
-Replace the code in the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class with the following code. Save your changes.
+Replace the code in the *:::no-loc text="Pages/Products/Create.cshtml.cs":::* `PageModel` class with the following code. Save your changes.
 
 ```csharp
 using ContosoPets.Ui.Models;
@@ -76,9 +76,9 @@ The `CreateModel` class now has an asynchronous `OnPostAsync` page handler. `OnP
 
 The `OnPostAsync` page handler needs to perform the following tasks for this app:
 
-* Verify the user-submitted data posted to the *:::no-loc text="PageModel":::* is valid.
-* If the attempted *:::no-loc text="PageModel":::* changes are invalid, the *:::no-loc text="Create":::* page is presented again to the user. A message is displayed clarifying the input requirements.
-* If the *:::no-loc text="PageModel":::* update is valid, then data changes are passed to a service called `ProductService`. `ProductService` will handle the concern of HTTP requests and responses to the web API.
+* Verify the user-submitted data posted to the `PageModel` is valid.
+* If the attempted `PageModel` changes are invalid, the *:::no-loc text="Create":::* page is presented again to the user. A message is displayed clarifying the input requirements.
+* If the `PageModel` update is valid, then data changes are passed to a service called `ProductService`. `ProductService` will handle the concern of HTTP requests and responses to the web API.
 
 ## Bind the model
 
@@ -144,7 +144,7 @@ The `Product` record uses the:
 * `[Required]` attribute to indicate that a property must have a value.
 * `[Range]` attribute to constrain a value to a specific range.
 
-If you decide to enforce more validation rules, you can easily modify attributes in just one place, the `Product` model, without being required to modify any of the *:::no-loc text="PageModel":::* class files in the project. A significant benefit!
+If you decide to enforce more validation rules, you can easily modify attributes in just one place, the `Product` model, without being required to modify any of the `PageModel` class files in the project. A significant benefit!
 
 A comprehensive set of data annotation attributes is available to you in the `System.ComponentModel.DataAnnotations` namespace. For the scope of this module, a simplified example is provided.
 
@@ -154,9 +154,9 @@ The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an obj
 
 ## Inject the service that handles HTTP requests
 
-As a final step, the `OnPostAsync` method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed `HttpClient` service architecture. The `ProductService` class manages all HTTP requests to the web API so that code is maintained in one place. Furthermore, it's registered at startup as a service so that it may be injected where needed. It's injected in this project for all *:::no-loc text="PageModel":::* classes that require CRUD operations for their Razor pages. You'll walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
+As a final step, the `OnPostAsync` method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed `HttpClient` service architecture. The `ProductService` class manages all HTTP requests to the web API so that code is maintained in one place. Furthermore, it's registered at startup as a service so that it may be injected where needed. It's injected in this project for all `PageModel` classes that require CRUD operations for their Razor pages. You'll walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
 
-The `ProductService` class was made available to the `Create` *:::no-loc text="PageModel":::* class with the following `using` statement:
+The `ProductService` class was made available to the `Create` `PageModel` class with the following `using` statement:
 
 ```csharp
 using ContosoPets.Ui.Services;

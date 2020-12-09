@@ -14,7 +14,7 @@ The preceding command:
 
 * Creates the following files in the `ContosoPets.Ui.Pages.Products` namespace:
   * *:::no-loc text="Create.cshtml":::*&mdash;The Razor page
-  * *:::no-loc text="Create.cshtml.cs":::*&mdash;The accompanying *:::no-loc text="PageModel":::* class
+  * *:::no-loc text="Create.cshtml.cs":::*&mdash;The accompanying `PageModel` class
 * Stores both files in the project's *:::no-loc text="Pages/Products":::* directory.
 
 ## Examine the Razor page's structure
@@ -120,11 +120,11 @@ The following markup uses the Label Tag Helper:
 <label asp-for="Product.Name" class="control-label"></label>
 ```
 
-The Label Tag Helper extends the standard HTML `<label>` element. As is common for many Tag Helpers, it uses an `asp-for` attribute. The attribute accepts a specified *:::no-loc text="PageModel":::* property. In this case, the value of the *:::no-loc text="PageModel":::* `Name` property will be rendered as the content for an HTML `<label>` element. The `asp-for` attribute is scoped to the *:::no-loc text="PageModel":::* for the Razor page, so the `@` symbol isn't used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
+The Label Tag Helper extends the standard HTML `<label>` element. As is common for many Tag Helpers, it uses an `asp-for` attribute. The attribute accepts a specified `PageModel` property. In this case, the value of the `PageModel` `Name` property will be rendered as the content for an HTML `<label>` element. The `asp-for` attribute is scoped to the `PageModel` for the Razor page, so the `@` symbol isn't used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
 
 ### Input Tag Helper
 
-The following markup uses the Input Tag Helper. It extends the standard HTML `<input>` element. It also uses an `asp-for` attribute to specify a *:::no-loc text="PageModel":::* property.
+The following markup uses the Input Tag Helper. It extends the standard HTML `<input>` element. It also uses an `asp-for` attribute to specify a `PageModel` property.
 
 ```cshtml
 <input asp-for="Product.Name" class="form-control" />
@@ -135,7 +135,7 @@ The Input Tag Helper:
 * Evaluates the `Product.Name` property, like the Label Tag Helper.
 * Adds an `id` and `name` HTML attribute based on that property.
 * Sets the input type appropriately. For example, if the specified property type is `bool`, an input type of `checkbox` is used in the generated HTML. In this case, the `Product.Name` property type is `string`. The `Product.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
-* Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the *:::no-loc text="PageModel":::*.
+* Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the `PageModel`.
 * Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *:::no-loc text="Create":::* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
 
 The following HTML output is generated from the Input Tag Helper located in the *:::no-loc text="Create":::* page:
@@ -162,4 +162,4 @@ The following HTML is rendered by the Validation Message Tag Helper:
 
 The `type`, `data-val-range-min`, `data-val-range-max`, and error response are dynamically set by the model's data annotations for the model's `Product.Price` property.
 
-The product creation Razor page has been created. Let's explore its *:::no-loc text="PageModel":::* class and modify it to handle the form's HTTP POST request.
+The product creation Razor page has been created. Let's explore its `PageModel` class and modify it to handle the form's HTTP POST request.
