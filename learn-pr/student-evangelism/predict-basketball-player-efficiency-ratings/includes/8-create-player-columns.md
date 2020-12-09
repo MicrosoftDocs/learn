@@ -1,12 +1,12 @@
-Since we have identified the groups of players by examining the bimodal histograms, let's make a column to indicate whether a row represents a human or Tune Squad player and give each one a unique "name".
+You've identified the groups of players by examining the bimodal histograms. So now make a column to indicate whether a row represents a human or Tune Squad player. Then give each row a unique "name."
 
-First, we need to create the new column for the DataFrame. We do this by creating a list of values for the column and then assigning the column a name.
+First, create the new column for the DataFrame. Create it by making a list of values for the column and then assigning the column a name.
 
 ```python
 # Initialize the list to house the player data.
 pop_list = []
 
-# If the ID number is 30 or less, it is a human player; other, they are Tune Squad players.
+# If the ID number is 30 or less, it's a human player; otherwise, it's a Tune Squad player.
 for id in player_df['ID']:
     if id <= 30:
         pop_list.append('player'+str(id))
@@ -62,9 +62,11 @@ pop_list
 ```
 
 >[!NOTE]
->We did a quick shortcut with creating the numbers for the Tune Squad players by using `str(id%30)`. The modulus operator (`%`) will divide and return the difference. So, for every id after 30, the code will enter the `else` branch. For example, for 31, the else branch will create a string that is `tune_squad` + `str(id%30)`, which would be `str(31%30)`. If you do the math, 31 divided by 30 is 0 remainder 1. So the player string for row with ID 31 would be `tune_squad1`.
+>You took a shortcut when you used `str(id%30)` to create the numbers for the Tune Squad players. The modulus operator (`%`) will divide and return the difference. 
+>
+>So for every ID after 30, the code enters the `else` branch. For example, for 31, the else branch creates a string that's `tune_squad` + `str(id%30)`, which is `str(31%30)`. If you do the math, 31 divided by 30 is 0 remainder 1. So the player string for the row that contains ID 31 is `tune_squad1`.
 
-Now, we can add this list of strings to the DataFrame.
+Now add this list of strings to the DataFrame:
 
 ```python
 # Assign this list as the values for the new player column in the DataFrame.
@@ -81,10 +83,14 @@ player_df.head()
 4	5	1721.0	1254.0	105.7	59.0	30.5	0.589	22.8	9.9	24.6	1.2	8.4	12.1	28.38	player5
 ```
 
-Having the new column at the last column (the default location for new columns) will cause us problems later, so let's move that to be just to the right of `ID`. Because we have more columns than would be easy to explicitly type, create list of all but the last column (now `player`) and use the `insert()` list method to move it to the second position in the list. (Remember that Python uses 0-indexing!) We will then use that altered list to specify the order of columns in the `player_df` DataFrame.
+Placing the new column last will cause problems later because the last column is the default location for new columns. So move the new column to the right of `ID`. 
+
+Because you have too many columns to easily type, create a list of all but the last column (now `player`). Use the `insert()` list method to move the column to the second position in the list. (Remember that Python uses zero-based indexing!) 
+
+Now use the altered list to specify the order of columns in the `player_df` DataFrame.
 
 ```python
-# Create list of all but the last DataFrame column names.
+# Create list of all DataFrame column names but the last one.
 column_list = list(player_df.iloc[:, :-1])
 
 # Make player the second item in the list.
@@ -106,6 +112,6 @@ player_df.head()
 4	5	player5	1721.0	1254.0	105.7	59.0	30.5	0.589	22.8	9.9	24.6	1.2	8.4	12.1	28.38
 ```
 
-Now we have a DataFrame that contains all of the player data with a new player column that represents whether the row is stats for a human player or a Tune Squad player. But as you can see, there are still missing values that we need to impute.
+Now the DataFrame contains all of the player data, with a new player column that indicates whether the row of stats is for a human player or a Tune Squad player. But as you can see, you still need to impute some missing values.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2020 Warner Bros. Ent. All Rights Reserved.

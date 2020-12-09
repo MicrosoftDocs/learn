@@ -1,34 +1,41 @@
-As confirmed by `player_df.isna().sum()` in the previous unit, we only have nine missing values remaining in `PER`. Because we can't use a simple average to impute values in that column, a little domain expertise can help.
+As `player_df.isna().sum()` confirmed in the previous unit, only nine missing values remain in `PER`. You can't use a simple average to impute values in that column. But little domain expertise can help.
 
-PER is computed from the values of the nine columns before it in the DataFrame (`GP` through `REBR`). However, it is also a very complicated statistic to compute (details at [basketball-reference.com](https://www.basketball-reference.com/about/per.html?azure-portal=true)). So, we're going to do what data scientists do: build a model to give us a good approximation!
+PER is computed from the values of the nine columns that precede it in the DataFrame (`GP` through `REBR`). However, PER is a complicated statistic to compute (see details at [basketball-reference.com](https://www.basketball-reference.com/about/per.html?azure-portal=true)). So you'll do what data scientists do: build a model to give a good approximation!
 
-We would like to build a simple linear regression model to estimate the missing `PER` values. However, as with any estimate, we have to ask ourselves how accurate it is.
+It would be nice to build a simple linear regression model to estimate the missing `PER` values. However, as with any estimate, you have to ask yourself how accurate it is.
 
-To get some sense of how accurate a model might be, it is common in machine learning to split ones data into two subsets: test and training. The training subset would be a portion of the data the is used to train the model, and the other subset would be used to test the model. A common split is to use 75% of the data to train the model and 25% of the data to test the model. However, what if we get unusually lucky or unlucky with our random split of test and training data? For example, what if you chose all human players to train the model, but then tested the accuracy of the model on the Tune Squad players? It is unlikely to yield accurate results.
+To get some sense of a model's accuracy, you could use machine learning to split your data into two subsets: test and training. The training subset is the portion of the data you use to train the model. You use the other subset to test the model. Commonly, 75 percent of the data is used to train the model, and 25 percent is used to test the model. 
 
-To avoid this, statisticians and data scientists use a technique called cross validation. The idea is to iterate through the dataset splitting the data in different ways between training and test data. Doing this multiple times should give us a reasonable idea of how the model will work with new data, even if we only have limited data to work with. This graphic provides a visualization of the cross-validation process:
+But what if you get unusually lucky or unlucky with your random split of test and training data? For example, what if you chose all human players to train the model, but then you tested the accuracy of the model on the Tune Squad players? This setup is unlikely to yield accurate results.
 
-![K-fold cross validation](../media/k-fold-cross-validation.png)
+To avoid this problem, statisticians and data scientists use a technique called cross-validation. The idea is to iterate through the dataset, splitting the data in different ways between training data and test data. Using this technique multiple times should give you a reasonable idea of how the model will work with new data, even if you have only limited data to work with. 
 
-## Cross-validate the r2 scores for the model
+This image provides a visualization of the cross-validation process:
 
-We will us a 10-fold cross validation, meaning that Python will iterate through the data 10 times reserving 10% of the data for testing and training on the other 90% each time. We'll also plot a histogram of the results.
+:::image type="content" source="../media/k-fold-cross-validation.png" alt-text="Screenshot showing a k-fold cross-validation.":::
 
-One note on reading the Python code. We define the our predictors as the `X` by longstanding convention; for purposes of building our model, we want to use only rows that contain now `NaN` values (`player_df.dropna(how='any')`), then use the `iloc` DataFrame attribute to select columns to use by number rather than name (`iloc[:, 4:-1]`), and finally we want to use only the values from the resulting DataFrame slice rather than the slice in DataFrame form (with the `to_numpy()` method being preferred over the DataFrame `values` attribute per the `pandas.DataFrame.values` [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.values.html?azure-portal=true)). The code of the predicted value (`y`) is similar to that for `X` except that we don't have to scrape out just the values.
+## Cross-validate the R2 scores for the model
+
+Here you'll use a *10-fold* cross validation. That is, Python will iterate through the data 10 times, reserving 10 percent of the data for testing and training on the other 90 percent of the data each time. You'll also plot a histogram of the results.
+
+>[!NOTE]
+>As you read the Python code, keep in mind that you define the  predictors as `X` by longstanding convention. For the purposes of building your model, you should use only rows that contain `NaN` values (`player_df.dropna(how='any')`). Then use the `iloc` DataFrame attribute to select columns by number rather than name (`iloc[:, 4:-1]`). Finally, use only the values from the resulting DataFrame slice rather than the slice in DataFrame form. (Here, the `to_numpy()` method is preferred over the DataFrame `values` attribute, per the `pandas.DataFrame.values` [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.values.html?azure-portal=true)). 
+
+The code of the predicted value (`y`) is similar to the code for `X`, except that you don't have to scrape out just the values.
 
 ```python
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.model_selection import cross_val_score
 
-# Define the variables for the regression model as those rows with no missing values.
+# Define the variables for the regression model as those rows that have no missing values.
 X = player_df.dropna(how='any').iloc[:, 5:-1].to_numpy()
 y = player_df.dropna(how='any').iloc[:, -1]
 
 # Define the regression model.
 lin_reg = LinearRegression()
 
-# Use the scikit-learn cross-validation function to fit this model ten times and return the r2 scores.
+# Use the scikit-learn cross-validation function to fit this model 10 times and return the R2 scores.
 scores = cross_val_score(lin_reg, X, y, cv=10, scoring='r2')
 
 # Define the histogram of the scores and copy out information from the histogram.
@@ -51,19 +58,19 @@ Mean r2 score: 0.9993
 70% of r2 scores are between 0.9996 and 1.0000
 ```
 
-![Histogram of r2 scores](../media/cross-validation.png)
+:::image type="content" source="../media/cross-validation.png" alt-text="Screenshot showing a histogram of R2 scores.":::
 
 >[!NOTE]
->If you get an error when running this code, make sure you've installed the [scitkit-learn library, instructions here](https://scikit-learn.org/stable/install.html?azure-portal=true).
+>If you get an error when you run this code, make sure you've [installed the scitkit-learn library](https://scikit-learn.org/stable/install.html?azure-portal=true).
 
-In short, our model is good. The $R^2$ score (ours is 99.93%) tells us how much variance in the data our model captures, and for our purposes this will serve as a loose proxy for our model's accuracy. Our lowest $R^2$ scores are still quite good, and most of them bump up close to the maximum value of 1, so we should feel quite confident applying this to our missing `PER` values.
+In short, your model is good. Your R2 score is 99.93 percent. The *R2* (meaning, R squared) score tells you how much data variance your model captures. For your purposes, this score serves as a loose proxy for the model's accuracy. Your lowest R2 scores are still good, and most of them are close to the maximum value of 1. So you should feel confident applying this model to your missing `PER` values.
 
 >[!NOTE]
->Your exact r2 scores might be slightly different. Since each time we run this model we are going to get a different random sampling of data per cut across the 10 cuts, the model may be slightly better or slightly worse between runs. Your numbers should be fairly close to these, however.
+>Your exact R2 scores might differ slightly. Each time you run this model, you'll get a different random sampling of data per cut across the 10 cuts. So the model might be slightly better or slightly worse from run to run. Your numbers should be fairly close to the example numbers, however.
 
 ## Fit the regression model for the player data
 
-Now we fit the regression model to all of our data. (The general rule of thumb is that you use cross validation for model selection or evaluation, but you use all of your data for model building.)
+Now you fit the regression model to all of your data. (The general rule is that you use cross-validation for model selection or evaluation, but you use all of your data for model building.)
 
 ```python
 # Fit the same regression model, this time using all of the available data.
@@ -74,14 +81,14 @@ lin_reg.fit(X, y)
 LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
 ```
 
-## Create a mask of rows with missing values in the DataFrame
+## Create a mask of rows that use missing values in the DataFrame
 
-There isn't an elegant way to use `fillna()` to use the results from our model to fill in the missing `PER` values, so we have to use a *mask*.
+There isn't an elegant way for `fillna()` to use the results from your model to fill in the missing `PER` values. So you'll have to use a mask.
 
-A mask in pandas is a Boolean map of values that fulfill a certain condition or set of conditions. In order to fill in just our remaining values, we want a mask that looks like this:
+A *mask* in pandas is a Boolean map of values that fulfill a certain condition or set of conditions. To fill in just your remaining values, your mask should look like this:
 
 ```python
-# Create and display a mask of rows in the DataFrame with at least one NaN value in them.
+# Create and display a mask of rows in the DataFrame. Rows should contain at least one NaN value.
 mask = player_df.isnull().any(axis=1)
 mask
 ```
@@ -132,10 +139,10 @@ mask
 dtype: bool
 ```
 
-Applying that mask to just the columns that we used as X in our model using the loc DataFrame method, we get this:
+Now apply that mask to just the columns that you used as `X` in your model. Use the `loc` DataFrame method:
 
 ```python
-# Apply the mask defined above to show the contents of specific columns of rows containing NaN values.
+# Apply the mask defined earlier to show the contents of specific columns of rows that contain NaN values.
 player_df.loc[mask].iloc[:, 5:-1]
 ```
 
@@ -153,19 +160,19 @@ player_df.loc[mask].iloc[:, 5:-1]
 | 29 | 64.000000 | 36.300000 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 |
 | 38 | 64.000000 | 36.500000 | 0.618 | 31.3 | 14.0 | 34.9 | 5.9 | 21.3 | 14.5 |
 
-Now we have identified hte 9 rows that have a `NaN` value in the `PER` column, and have the columns that can be used in the machine learning model to predict the PER value.
+Now you've identified the nine rows that have a `NaN` value in the `PER` column and have the columns that can be used in the machine learning model to predict the PER value.
 
 ## Use the mask and the fitted mask to impute the final missing values in the DataFrame
 
-A mask is particularly useful for us here because it lets us use a *view* of the `player_df` DataFrame rather than a `slice` of it. When we defined `X`, we used `player_df.dropna(how='any').iloc[:, 5:-1].to_numpy()`. The `dropna()` method creates a new DataFrame object by default when it is called (which is why we used the method's `inplace` parameter to use is on the original DataFrame). Thus any changes to values that we might make in the `X` DataFrame would not change values in the `player_df` DataFrame.
+A mask is useful here because it lets you use a *view* of the `player_df` DataFrame rather than a *slice* of it. When you defined `X`, you used `player_df.dropna(how='any').iloc[:, 5:-1].to_numpy()`. The `dropna()` method creates a new DataFrame object by default when it's called. (This feature is the reason you used the method's `inplace` parameter on the original DataFrame.) So any changes to values that you might make in the `X` DataFrame wouldn't change values in the `player_df` DataFrame.
 
-Our mask is different. If simply enables us to work with a subset of the `player_df` DataFrame. This means that any changes we make to the DataFrame while applying the mask will also apply to the `player_df` DataFrame as a whole. 
+Your mask is different. It simply enables you to work with a subset of the `player_df` DataFrame. So any changes you make to the DataFrame while you're applying the mask will also apply to the `player_df` DataFrame as a whole. 
 
 ```python
-# Impute the missing values in 'PER' using the regression model and mask
+# Impute the missing values in 'PER' by using the regression model and mask.
 player_df.loc[mask, 'PER'] = lin_reg.predict(player_df.loc[mask].iloc[:, 5:-1])
 
-# Recheck the DataFrame for rows with missing values.
+# Recheck the DataFrame for rows that have missing values.
 player_df.isna().sum()
 ```
 
@@ -188,10 +195,10 @@ PER            0
 dtype: int64
 ```
 
-Next, let's review the entire DataFrame to see is not without any missing values.
+Next, review the entire DataFrame to check for any missing values.
 
 ```python
-# Display entire DataFrame.
+# Display the entire DataFrame.
 player_df
 ```
 
@@ -242,17 +249,17 @@ player_df
 | 40 | 46 | looney_tune16 | 1740.0 | 1443.9 | 114.1 | 68.000000 | 37.100000 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.220000 |
 | 41 | 47 | looney_tune17 | 1993.0 | 1459.0 | 112.5 | 59.972222 | 36.900000 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.760000 |
 
-Finally, we can save this final DataFrame to a CSV file so that we can use this dataset to make pre- and in-game decisions beased on what players we have on our teams, what players are playing in the game, and what the stats of the game currently are.
+Finally, save this DataFrame to a CSV file. You'll use this dataset to make pregame and in-game decisions based on the team players, the players who are currently in the game, and the current game stats.
 
 ```python
 player_df.to_csv('player_data_final.csv', index=False)
 ```
 
 >[!NOTE]
->The `index=False` parameter ensures that the index that was added to the DataFrame when pandas initially read in the CSV file doesn't get written to the CSV file.
+>The `index=False` parameter ensures that the index that was added to the DataFrame when pandas initially read the CSV file isn't written to the CSV file.
 
-You should now see a new CSV file in your space-jam-anl folder.
+You should now see a new CSV file in your *space-jam-anl* folder.
 
-![Final cleansed dataset ready for use](../media/output-csv.png)
+:::image type="content" source="../media/output-csv.png" alt-text="Screenshot showing the final cleansed dataset ready for use.":::
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2020 Warner Bros. Ent. All Rights Reserved.

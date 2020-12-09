@@ -1,6 +1,8 @@
-Recognizing that data comes from different populations can be essential in business data analysis. Imagine that you were analyzing occupancy data for a lodging-rental business. Vacation renters and business renters (such as individuals renting for a temporary business trip) could distribute themselves very differently for length of stay, time of year, or types of amenities required. However, being able to separate out the different populations could be useful, such as for generating different marketing promotions for each population.
+Recognizing that data comes from different populations can be essential in data analysis for business. For example, imagine that you're analyzing occupancy data for a lodging-rental business. Vacation renters and business renters (such as individuals renting for a temporary business trip) could distribute themselves very differently for length of stay, time of year, or types of amenities required. Separating the two populations would be useful for purposes such as generating different marketing promotions for each population.
 
-In our case, we know that have a mixture of human basketball players and Tune Squad players in our dataset. We can take a few of our more distinguished bimodal graphs, for example `points`, `DRR`, and `PER` and try to see if we can differentiate the two populations. First, let's look at each of these distributions on their own:
+In your basketball scenario, you know the dataset includes a mixture of human basketball players and Tune Squad players. You can take a few of the more distinguished bimodal graphs, for example `points`, `DRR`, and `PER`, and try to differentiate the two populations. 
+
+First, look at each distribution on its own:
 
 ```python
 # Plot the KDE for 'points' over the probability-density histogram.
@@ -9,9 +11,11 @@ plt.title('Points histogram')
 sns.kdeplot(player_df['points']);
 ```
 
-![Points histogram](../media/points-histogram.png)
+:::image type="content" source="../media/points-histogram.png" alt-text="Screenshot showing a points histogram.":::
 
-We can see that at around 1,600 is when the split across the two populations occurs. We can use that to explore the data further. One hypothesis is that Tune Squad players might score more points because they often have additional skills that humans just don't have. We can start to see the rows where players have scored more than 1,600 points: 
+You see that at around 1,600, the two populations split. You can use that information to explore the data further. For example, you could hypothesize that Tune Squad players might score more points because they have skills that humans don't have. 
+
+Take a look at the rows where players scored more than 1,600 points: 
 
 ```python
 player_df.loc[player_df['points'] >= 1600].info()
@@ -41,7 +45,9 @@ dtypes: float64(13), int64(1)
 memory usage: 2.8 KB
 ```
 
-There are 24 rows that have players that have scored at least 1,600 points. Let's continue narrowing down the players that are more likely to be part of the Tune Squad. 
+Twenty-four rows include players who scored at least 1,600 points. 
+
+Continue to narrow down the players who are likely to be part of Tune Squad: 
 
 ```python
 # Plot the KDE for 'DRR' over the probability-density histogram.
@@ -50,9 +56,11 @@ plt.title('DRR histogram')
 sns.kdeplot(player_df['DRR']);
 ```
 
-![DRR histogram](../media/drr-histogram.png)
+:::image type="content" source="../media/drr-histogram.png" alt-text="Screenshot showing a D R R histogram.":::
 
-At around 15 defensive rebounds is where we see the distribution split. So we can see if that helps narrow down our population that we think might be Tune Squad players. Again, we could hypothesis that the Tune Squad are going to be more likely to try to get the ball in a defensive rebound because of their special skills, so we can count how many rows/players have scored more than 1,600 points and have a DRR of more than 15:
+At around 15 defensive rebounds, you see the distribution split. Check to see if that information helps narrow down the population that might be Tune Squad players. 
+
+Again, you could hypothesize that Tune Squad players are more likely to try to get the ball in a defensive rebound because of their special skills. So count how many players (rows) scored more than 1,600 points and have a DRR of more than 15:
 
 ```python
 player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15)].info()
@@ -82,7 +90,7 @@ dtypes: float64(13), int64(1)
 memory usage: 2.2 KB
 ```
 
-Finally, we can take a look at PER. If our hypothesis is correct so far, then Tune Squad players probably have a higher PER.
+Finally, take a look at PER. If the hypothesis is correct so far, Tune Squad players probably have a higher PER.
 
 ```python
 # Plot the KDE for 'PER' over the probability-density histogram.
@@ -91,9 +99,9 @@ plt.title('PER histogram')
 sns.kdeplot(player_df['PER']);
 ```
 
-![PER histogram](../media/per-histogram.png)
+:::image type="content" source="../media/per-histogram.png" alt-text="Screenshot showing a P E R histogram.":::
 
-At around 17 is when the PER distributions get split, we can take a look at those rows now that are at least 17 PER:
+At around 17, the PER distributions split. Take a look at those rows that are at least 17 PER:
 
 ```python
 player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15) & (player_df['PER'] >= 17)]
@@ -118,9 +126,9 @@ player_df.loc[(player_df['points'] >= 1600) & (player_df['DRR'] >= 15) & (player
 | 40 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
 | 41 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
-We could reasonably expect these to represent the Tune Squad players, and as part of this module I can tell you that the 16 Tune Squad players that we added to this data set were in fact added at the very end. If you didn't know that, though, you could reasonable assume that the data was compiled from two different datasets, where the second dataset was simply added to the end of the first. 
+You could reasonably expect these rows to represent the Tune Squad players. For the purposes of this module, the 16 Tune Squad players were in fact added to the very end of the dataset. If you didn't know that detail, though, you could reasonably assume the data was compiled from two different datasets, where the second dataset was added to the end of the first dataset. 
 
-We can see that the rows for Player ID 34 and 40 are not a part of this set. We removed 40 because that was the row where the points were only 183, and looking at player ID 34:
+The rows for player IDs 34 and 40 aren't a part of this set. Although index 34 and index 40 appear, the IDs 34 and 40 don't. You removed 40 earlier because the points in that row were only 183. Now look at player ID 34:
 
 ```python
 player_df.loc[player_df['ID'] == 34]
@@ -132,6 +140,6 @@ player_df.loc[player_df['ID'] == 34]
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 29 | 34 | 1743.0 | 1422.4 | 112.9 | 64.0 | 36.3 | 0.619 | 30.9 | 15.6 | 34.5 | 5.9 | 18.9 | 14.8 | NaN |
 
-The PER for Player 34 is `NaN`, since we haven't had a chance to impute data yet, so that makes sense.
+The PER for player 34 is `NaN`. You haven't imputed any data yet, so that value makes sense.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2020 Warner Bros. Ent. All Rights Reserved.

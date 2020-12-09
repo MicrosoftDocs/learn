@@ -1,84 +1,84 @@
-To create our Azure Static Web App, you will use a GitHub template repository to get started. GitHub template repositories are basically repos that have everything setup to be able to accomplish a specific task, while giving you felxibility to make it your own. 
+To create a web app by using the Azure Static Web Apps extension, you'll use a GitHub template repository to get started. GitHub template repositories basically are repos that have everything set up for a specific task, while giving you the flexibility to make it your own. 
 
-In this case, we will leverage the Static Web Vanilla Basic repo template. Before continuing, make sure you have your GitHub account and you are signed in on the browser of your choice. 
+In this case, we'll use the Static Web Vanilla Basic repo template. Before continuing, make sure you have your GitHub account, and that you're signed in to GitHub in a web browser.
 
->[!NOTE] 
->You can also create a basic web app without deploying it to Azure, which you can setup by following [this Learn module](/learn/modules/build-simple-website?azure-portal=true). 
+> [!NOTE]
+> You also can create a basic web app without deploying it to Azure. For the steps to follow, see the [Build a simple website](/learn/modules/build-simple-website?azure-portal=true) Learn module.
 
-## Create the Azure Static Web App repo
+## Create the web app repo
 
-There are many ways to create an Azure Static Web App, and in later units we will introduce some others. For the puposes of this module, we will build a *very* simple web app and deploy it using GitHub Actions.
+There are many ways to create a static web app in Azure. In later units, we introduce some other ways. In this module, we'll build a *very* simple web app and deploy it by using GitHub Actions.
 
-To get started, you will need to create a repo based on this app. Go to [https://aka.ms/LearnWithDrG/Basketball/TemplateApp](	
-https://github.com/microsoft/space-jam-a-new-legacy-template/generate?azure-portal=true) and fill out the form, naming your repo `space-jam-a-new-legacy-app`. You can make this repo public or private, but be sure to include all branches
+To get started, you'll need to create a repo based on this app. Go to [https://aka.ms/LearnWithDrG/Basketball/TemplateApp](https://github.com/microsoft/space-jam-a-new-legacy-template/generate?azure-portal=true) and fill in the form. Name your repo *space-jam-a-new-legacy-app*. You can make this repo public or private, but be sure to include all branches.
 
-:::image type="content" source="../media/web-app-repo-setup.png" alt-text="Screenshot showing how to set up the new web app repo on GitHub.com.":::
+:::image type="content" source="../media/web-app-repo-setup.png" alt-text="Screenshot that shows how to set up the new web app repo on GitHub.com.":::
 
-## Clone your repo using Visual Studio Code
+## Clone your repo by using Visual Studio Code
 
->[!NOTE] 
-> You may be prompted to sign in to Azure or GitHub throughout the remaining steps in this unit. If so, follow the instructions to authorize Visual Studio Code to access this specific repository and your Azure subscription if you feel comfortable doing so. This is necessary to complete the module.
+> [!NOTE]
+> You might be prompted to sign in to Azure or GitHub throughout the remaining steps in this unit. If so, follow the instructions to authorize Visual Studio Code to access this specific repository and your Azure subscription if you feel comfortable doing so. This is necessary to complete the module.
 
-One your repo is created, you can clone it (make a copy onto your local computer) using Visual Studio Code. First, open a new Visual Studio Code window by clicking "File -> New Window".
+After your repo is created, you can clone it (make a copy on your local computer) by using Visual Studio Code. First, open a new Visual Studio Code window: select **File** > **New Window**.
 
-Click on the Source Control menu on the left-hand side and choose "Clone Repository":
+In the left menu, select the **Source Control** icon, and then select **Clone Repository**:
 
-![The clone repository menu item in Visual Studio Code](../media/clone-repo-button.png)
+:::image type="content" source="../media/clone-repo-button.png" alt-text="Screenshot that shows the clone repository menu item in Visual Studio Code.":::
 
-Then, back on GitHub.com in your space-jam-a-new-legacy-app repo, click the Clone button and copy the HTTPS URL:
+Then, back on GitHub.com in your *space-jam-a-new-legacy-app* repo, select the **Clone** button and copy the HTTPS URL:
 
-:::image type="content" source="../media/github-clone-url.png" alt-text="Screenshot showing how to get the HTTPS URL of the repo from GitHub.com.":::
+:::image type="content" source="../media/github-clone-url.png" alt-text="Screenshot that shows how to get the HTTPS URL of the repo from GitHub.com.":::
 
->[!NOTE] 
-> The `complete-code` branch is there in case you need it, but you should ignore it for now as you create this web app on your own. Don't worry, there is lots of start code!
+> [!NOTE]
+> The *complete-code* branch is there if you need it, but you should ignore it for now as you create this web app on your own. Don't worry, there's lots of start code!
 
-Back in Visual Studio Code, paste the URL you just copied into the command prompt and press Enter. If prompted, choose a location for your code to be downloaded.
+Back in Visual Studio Code, paste the URL you copied at the command prompt and press Enter. If prompted, choose a location for your code to be downloaded.
 
-![Prompt to clone repo in Visual Studio Code](../media/clone-prompt-visual-studio-code.png)
+:::image type="content" source="../media/clone-prompt-visual-studio-code.png" alt-text="Screenshot that shows the prompt to clone repo in Visual Studio Code.":::
 
-If prompted, choose to open the code in your current window. Once the files download, Visual Studio Code should look like this:
+If prompted, choose to open the code in your current window. After the files download, Visual Studio Code should look like this:
 
-![Repository cloned and opened in Visual Studio Code](../media/repo-cloned-downloaded-files.png)
+:::image type="content" source="../media/repo-cloned-downloaded-files.png" alt-text="Screenshot that shows the repository cloned and open in Visual Studio Code.":::
 
-## Create an Azure Static Web App in Visual Studio Code
+## Create a static web app in Azure in Visual Studio Code
 
-Before we start modifying the web app, let's make sure it can deploy successfully with Azure. In Visual Studio Code, click on the Azure extension, and click on the plus sign of the Static Web App area to create a new Static Web App.
+Before we start modifying the web app, let's make sure it can deploy successfully with Azure. In Visual Studio Code, select the Azure extension. Select the plus sign of the Static Web Apps area to create a new static web app:
 
-![Create an Azure Static Web App in VSCode](../media/create-static-web-app.png)
+:::image type="content" source="../media/create-static-web-app.png" alt-text="Screenshot that shows creating a static web app in Visual Studio Code.":::
 
-Follow the prompts. All will be default except the name and the deployment branch:
-- *Static web app a name: `space-jam-a-new-legacy-app`
-- *Deployment branch: `main`
-- Web App Location: `/`
-- Azure Functions Location: `/`
-- Buid path: `build`
-- Location: `WESTUS2` (or whatever is closest to you geographically!)
+Follow the prompts. Accept all the default prompts, except the name and the deployment branch:
 
-You will then be prompted to view the GitHub Action associated with this Static Web App. 
+- **Static web app name**: *space-jam-a-new-legacy-app*
+- **Deployment branch**: *main*
+- **Web App Location**: */*
+- **Azure Functions Location**: */*
+- **Build path**: *build*
+- **Location**: *WESTUS2* (or whatever is closest to you geographically!)
 
-![VSCode prompting to view the GitHub Action](../media/action-prompt.png)
+Then, you'll be prompted to view the GitHub action that's associated with this static web app. 
 
-Clicking on "Show Actions" will take you to the Actions page of your space-jam-a-new-legacy-app GitHub repo that you created at the beginning of this unit.
+:::image type="content" source="../media/action-prompt.png" alt-text="Screenshot that shows a Visual Studio Code prompt to view the GitHub action.":::
 
-:::image type="content" source="../media/action-on-github.png" alt-text="Screenshot showing GitHub Action for this web app.":::
+To go to the **Actions** page of your *space-jam-a-new-legacy-app* GitHub repo that you created at the beginning of this unit, select **Show Actions**.
 
-If you want, you can click on the Action and then click on "Workflow file" to see the workflow that was generated. This Action will take all pushed to the main branch and deploy them to the Azure Static Web App that is saved in the secret GitHub token that was setup when you connected the repo to Azure in Visual Studio Code. GitHub Actions is beyond the scope of this module, but if you want to learn more you can check out the [GitHub Actions Learn module](/learn/modules/github-actions-ci?azure-portal=true).
+:::image type="content" source="../media/action-on-github.png" alt-text="Screenshot that shows the GitHub action for this web app.":::
 
-For the purposes of this module, all you have to know is that if you push changes to your main branch, they will get rendered on the static web app.
+To see the workflow that was generated, select the action, and then select **Workflow file**. In this action, all code that's pushed to the main branch is deployed to the static web app that's saved in the secret GitHub token that was set up when you connected the repo to Azure in Visual Studio Code. How GitHub Actions works is beyond the scope of this module, but if you want to learn more, you can check out the [GitHub Actions Learn module](/learn/modules/github-actions-ci?azure-portal=true).
+
+For this module, all you have to know is that if you push changes to your main branch, the changes are rendered in the static web app.
 
 ## View the web app live in the browser
 
-The final setup step is to make sure your web app is actually live. Back in Visual Studio Code in the Azure extension, right click on the production site for the space-jam-a-new-legacy-app and click "Browse Site".
+The final setup step is to make sure that your web app is live. Back in Visual Studio Code, in the Azure extension, right-click the Production site for *space-jam-a-new-legacy-app*, and then select **Browse Site**:
 
-![Locating the browse site menu in Visual Studio Code](../media/browse-site.png)
+:::image type="content" source="../media/browse-site.png" alt-text="Screenshot that shows locating the browse site menu in Visual Studio Code.":::
 
-You may have to authorize Visual Studio Code to open a new brower window or tab. After you've done this, your live web app will open in a browser tab and you should see the beginnings of a Tune Squad basketball web app. 
+You might have to authorize Visual Studio Code to open a new browser window or tab. After you've done this, your live web app opens in a browser tab and you'll see the beginnings of a Tune Squad basketball web app:
 
-:::image type="content" source="../media/web-app-browser.png" alt-text="Screenshot showing the basketball web app with no functionality.":::
+:::image type="content" source="../media/web-app-browser.png" alt-text="Screenshot that shows the basketball web app with no functionality in a web browser.":::
 
->[!NOTE] 
-> If your Action on GitHub hasn't completed yet, you will see a generic Azure Static Web App page rather than the *Space Jam: A New Legacy* app that is shown above. Just wait until the Action completes and re-load the page to see the app.
+> [!NOTE]
+> If your action on GitHub hasn't finished yet, you'll see a generic static web app page in Azure instead of the *Space Jam: A New Legacy* app that's shown in the preceding screenshot. Just wait until the action finishes, and then reload the page to see the app.
 
-Congratulations! You just deployed an Azure Static Web App! Now it's time to make this usable with our data.
+Congratulations! You just deployed a static web app in Azure! Now, it's time to make the app usable with our data.
 
 © 2020 Warner Bros. Ent. All Rights Reserved

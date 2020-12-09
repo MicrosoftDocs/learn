@@ -1,8 +1,8 @@
-While we still have some lingering missing values, let's set those aside for a moment; we might want to impute replacement values for them and if we have any outliers in our dataset, those outliers might skew the values we end up using for to replace the null values.
+You still have some lingering missing values, but let's set those missing values aside for a moment. Otherwise, you might be tempted to impute replacement values, and possible outliers in the dataset might skew your replacements.
 
-*Outliers* refer to data values so far outside of the distribution of other data values in the dataset that they bring into question whether they even belong in the dataset. Outliers often arise from data errors or other undesirable noise and they are something we always need to check for and deal with before analyzing our data.
+*Outliers* are data values so far outside the distribution of other values that they bring into question whether they even belong in the dataset. Outliers often arise from data errors or other undesirable noise. You'll always need to check for and deal with possible outliers before you analyze the data.
 
-A quick way to identify if you might have outliers is to use the pandas `describe()` function:
+A quick way to identify outliers is to use the pandas `describe()` function:
 
 ```python
 player_df.describe()
@@ -10,28 +10,30 @@ player_df.describe()
 
 **Output**
 
- | | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
- |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
- | count | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 37.000000 | 38.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 34.000000 |
- | mean | 24.279070 | 1592.651163 | 1350.513953 | 106.711628 | 60.054054 | 35.331579 | 0.597209 | 26.267442 | 13.081395 | 30.565116 | 4.323256 | 14.946512 | 8.679070 | 22.926471 |
- | std | 14.114035 | 347.666978 | 213.708586 | 6.707963 | 5.622109 | 1.922851 | 0.029468 | 5.145859 | 2.013911 | 4.893187 | 2.067876 | 7.218176 | 5.077427 | 7.402536 |
- | min | 1.000000 | 183.000000 | 147.300000 | 89.700000 | 48.000000 | 30.500000 | 0.511000 | 14.800000 | 9.200000 | 16.500000 | 0.000000 | 0.900000 | -2.900000 | 8.710000 |
- | 25% | 12.500000 | 1395.500000 | 1284.800000 | 102.700000 | 56.000000 | 34.125000 | 0.572500 | 23.650000 | 11.400000 | 27.050000 | 2.950000 | 8.550000 | 5.250000 | 20.212500 |
- | 50% | 24.000000 | 1639.000000 | 1384.700000 | 107.800000 | 61.000000 | 35.400000 | 0.605000 | 27.200000 | 13.500000 | 30.700000 | 4.700000 | 17.300000 | 9.400000 | 24.675000 |
- | 75% | 36.500000 | 1824.500000 | 1451.550000 | 112.150000 | 64.000000 | 36.900000 | 0.619000 | 30.500000 | 14.750000 | 34.800000 | 5.900000 | 20.150000 | 13.000000 | 28.395000 |
- | max | 47.000000 | 2062.000000 | 1542.000000 | 118.800000 | 69.000000 | 38.800000 | 0.645000 | 33.200000 | 16.200000 | 36.700000 | 8.300000 | 29.400000 | 16.400000 | 34.260000 |
+| | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| count | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 37.000000 | 38.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 43.000000 | 34.000000 |
+| mean | 24.279070 | 1592.651163 | 1350.513953 | 106.711628 | 60.054054 | 35.331579 | 0.597209 | 26.267442 | 13.081395 | 30.565116 | 4.323256 | 14.946512 | 8.679070 | 22.926471 |
+| std | 14.114035 | 347.666978 | 213.708586 | 6.707963 | 5.622109 | 1.922851 | 0.029468 | 5.145859 | 2.013911 | 4.893187 | 2.067876 | 7.218176 | 5.077427 | 7.402536 |
+| min | 1.000000 | 183.000000 | 147.300000 | 89.700000 | 48.000000 | 30.500000 | 0.511000 | 14.800000 | 9.200000 | 16.500000 | 0.000000 | 0.900000 | -2.900000 | 8.710000 |
+| 25% | 12.500000 | 1395.500000 | 1284.800000 | 102.700000 | 56.000000 | 34.125000 | 0.572500 | 23.650000 | 11.400000 | 27.050000 | 2.950000 | 8.550000 | 5.250000 | 20.212500 |
+| 50% | 24.000000 | 1639.000000 | 1384.700000 | 107.800000 | 61.000000 | 35.400000 | 0.605000 | 27.200000 | 13.500000 | 30.700000 | 4.700000 | 17.300000 | 9.400000 | 24.675000 |
+| 75% | 36.500000 | 1824.500000 | 1451.550000 | 112.150000 | 64.000000 | 36.900000 | 0.619000 | 30.500000 | 14.750000 | 34.800000 | 5.900000 | 20.150000 | 13.000000 | 28.395000 |
+| max | 47.000000 | 2062.000000 | 1542.000000 | 118.800000 | 69.000000 | 38.800000 | 0.645000 | 33.200000 | 16.200000 | 36.700000 | 8.300000 | 29.400000 | 16.400000 | 34.260000 |
 
- Here we can see, for example, that the mean points for all 43 players is 24.27. But looking at the minimum (1), 25% (12.5), 50% (24), 75% (36.5), and max (47) numbers we can see that the min points (1) looks like it might be an outlier. We can use box plots to visualize this and determine for sure what might be an outlier.
+Here you see, for example, that the mean for all 43 players is 24.27 points. But look at the numbers for min (1), 25% (12.5), 50% (24), 75% (36.5), and max (47). Here, the min points (1) might be an outlier. You can use box plots to visualize the values and determine possible outliers.
 
 ## Create box plots for columns
 
-The traditional tools for probing for outlying data values is the box plot. The 'box' in 'box plot' refers to the box that we draw that encloses the range of data from the 25th to the 75th percentiles (because these percentiles demarcate important quarters of the data, it is also call the interquartile range). This is the middle 50% of our data values for a given variable (a column in a DataFrame); we mark the median of the data (the 50th percentile) with another line.
+The traditional tool for probing for outlying data values is the *box plot*. The *box* in *box plot* refers to a box drawn around the range of data from the 25th percentile to the 75th percentile. (These percentiles demarcate important quarters of the data. Their range is called the *interquartile* range.) This box is the middle 50% of the data values for a given variable (a column in a DataFrame). You use another line to mark the median of the data, which is the 50th percentile.
 
-The box plot is often also called a box-and-whisker plot because we draw a T shape above and below the box to encompass the maximum and minimum values of the data *excluding outliers*. This last part is important for our purposes here because it will let us graphically identify our outliers.
+The box plot is also called a *box-and-whisker plot* because you draw a T shape above and below the box to encompass the maximum and minimum values of the data, *excluding outliers*. This last part is important for your purposes because it lets you graphically identify outliers.
 
-Ideally, we would produce the box plots for our columns in a single matrix that we could easily scan. Unfortunately, there is no single function to produce multiple box plots, so we will write a simple for loop to do this. Given how the Seaborn library in Python works, we need to explicitly state which cell in the matrix we want to render each box plot, so we will use the Python floor-division operator (`//`) to divide our 13 columns of interest (we don't need to look at `ID`) into rows and the modulo operator (`%`) to derive the column.
+Ideally, you would produce the box plots for your columns in a single matrix that you can easily scan. Unfortunately, no single function produces multiple box plots, so you'll write a `for` loop instead. 
 
-First, we need to import the MatplotLib and Seaborn libraries into our notebook:
+Because of how the Seaborn library in Python works, you need to explicitly state the cell in the matrix where you want to render each box plot. Use the Python floor-division operator (`//`) to divide the 13 columns of interest (you don't need to look at `ID`) into rows. Use the modulo operator (`%`) to derive the column.
+
+First, import the Matplotlib and [Seaborn](https://seaborn.pydata.org) libraries into your notebook:
 
 ```python
 import matplotlib.pyplot as plt
@@ -39,17 +41,17 @@ import seaborn as sns
 ```
 
 >[!NOTE]
->If you get an error when importing matplotlib or seaborn, you may need install the libraries. You can find instructions on how to install [MatplotLib here](https://matplotlib.org/3.3.2/users/installing.html?azure-portal=true) and [Seaborn here](https://seaborn.pydata.org/installing.html?azure-portal=true).
+>If you get an error when you import `matplotlib` or `seaborn`, you might need to install the libraries. For more information, see the [Matplotlib installation guide](https://matplotlib.org/3.3.2/users/installing.html?azure-portal=true) and the [Seaborn installation guide](https://seaborn.pydata.org/installing.html?azure-portal=true).
 
-You should see no output, indicating that the libraries were successfully imported. Now, you can:
+You should see no output, indicating that the libraries were successfully imported. Now you can:
 
-- Create a list of the column names, exlcuding ID, to use that as a way to find specific values within each row
-- Create a matrix of subplots so that you can have one figure that shows all 13 columns
-- Create padding around the subplots so that they are easier to read
-- For each column, create a box plot based on the data in that column across all of the rows
+- Create a list of the column names, excluding `ID`. Use the list to find specific values within each row.
+- Create a matrix of subplots so you have one figure that shows all 13 columns.
+- Add padding around the subplots to make them easier to read.
+- Create a box plot based on the data in each column, across all of the rows.
 
 ```python
-# Create a list of all column names (except for 'ID').
+# Create a list of all column names, except for ID.
 cols = list(player_df.iloc[:, 1:])
 
 # Create a 3x5 matrix of subplots.
@@ -64,20 +66,24 @@ for i in range(len(cols)):
 ```
 
 **Output**
-![DataFrame box plots](../media/dataframe-box-plots.png)
+:::image type="content" source="../media/dataframe-box-plots.png" alt-text="Screenshot showing DataFrame box plots." lightbox="../media/dataframe-box-plots.png":::
 
-Sure enough, we can see that we have two outliers in `points` and `possessions`. You can see these outliers represented as diamonds towards the bottom of the first two box plots that represent the `points` and `possessions` columns. These are so far out of the range of the other data that they are likely to represent garbage data and not a seriously underperforming player.
+Sure enough, you can see two outliers in `points` and `possessions`. These outliers are represented as diamonds near the bottom of the first two box plots that visualize the `points` and `possessions` columns. The values are so far outside the range of the other data that they likely represent garbage data and not a seriously underperforming player.
 
-This is where subject matter expertise becomes important, in this case, knowledge of basketball. The likelihood of a player only ever scoring one point is extremely small because that player wouldn't likely be on a professional team. Similarly, the likelihood of a player having over 1,400 fewer possessions than the average number of possessions is also extremely unlikely. In this case, we are confident that these are incorrect data, but given another data set it may not be the case, so stopping to really evaluate outliers is critical to the data science journey.
+Here, subject matter expertise becomes important. In this case, that expertise is knowledge about basketball. The likelihood of a professional player scoring only one point in their career is extremely small. Similarly, the likelihood of a player having 1,400 fewer possessions than the average number of possessions is also extremely small. So you can be confident that this outlying data is incorrect. 
 
-## Identify and remove the rows containing the outlier values
+In a different dataset, the factors might differ. So stopping to carefully evaluate outliers is critical to the data science journey.
 
-We could dig into the data if we needed to. We it mistyped data? Corrupted in some form. With enough subject matter expertise or familiarity with how the data was gathered, we might attempt to correct the erroneous values. But there is also the danger of doing so that we introduce our own bias or pre-conceived notions about the data into the dataset, which could ultimate hurt our analysis. Given that we have 43 records remaining in the data, we are probably safest removing the offending row or rows.
+## Identify and remove the rows that contain the outlier values
 
-The box plot only tells us that these outlying values exist, however. We now need to figure out in which row these values occur. Because the values both occur below the minimum value of their respective columns, we will use the `idxmin()` method on both columns. This method returns the index number of the row inwhich a minimum value occurs. (Note that we will want to check each value separately).
+You could dig further into the data if you needed to. Was some of the data mistyped or corrupted in some way? With enough subject matter expertise or familiarity with how the data was gathered, you could attempt to correct the erroneous values. But you could also risk introducing your own bias or preconceived notions about the data into the dataset. Those accidents could ultimately hurt your analysis. Because you have 43 records remaining in the data, you're probably safest removing the offending row or rows.
+
+The box plot tells you only that the outlying values exist, however. You now need to figure out the rows in which the values occur. 
+
+Because both values occur below the minimum value of their respective columns, you can use the `idxmin()` method on both columns. This method returns the index number of the row in which a minimum value occurs. (You'll want to check each value separately.)
 
 ```python
-# Identify the index number of the row with the lowest value in 'points'.
+# Identify the index number of the row that has the lowest value in 'points'.
 points_outlier = player_df['points'].idxmin()
 points_outlier
 ```
@@ -87,7 +93,7 @@ points_outlier
 ```
 
 ```python
-# Identify the index number of the row with the lowest value in 'points'.
+# Identify the index number of the row that has the lowest value in 'possession'.
 possession_outlier = player_df['possessions'].idxmin()
 possession_outlier
 ```
@@ -96,12 +102,12 @@ possession_outlier
 35
 ```
 
-Fortunately, the outliers are both on the same row. We will now use the `drop()` function again to manually remove the row.
+Fortunately, the outliers are both on the same row. You can now use the `drop()` function again to manually remove the row.
 
-Note, we could manually enter the index number for the row, but this introduces the possibility of mistyping. Instead, we will use the variable we created to house the minimum value.
+You *could* manually enter the index number for the row. But this manual change would introduce the possibility of mistyping. Instead, use the variable you created to house the minimum value.
 
 ```python
-# Drop the row with the outlying values for 'points' and 'possessions'.
+# Drop the row that has the outlying values for 'points' and 'possessions'.
 player_df.drop(player_df.index[points_outlier], inplace=True)
 
 # Check the end of the DataFrame to ensure that the correct row was dropped.
@@ -123,15 +129,15 @@ player_df.tail(10)
 | 41 | 46 | 1740.0 | 1443.9 | 114.1 | 68.0 | 37.1 | 0.611 | 26.6 | 15.2 | 29.3 | 8.3 | 17.7 | 11.1 | 21.22 |
 | 42 | 47 | 1993.0 | 1459.0 | 112.5 | NaN | 36.9 | 0.627 | 30.4 | 15.0 | 33.7 | 6.3 | 19.3 | 14.1 | 28.76 |
 
-Like `head()`, the `tail()` function shows the last five values of a DataFrame and, sure enough, we have removed the row we needed to (Row index 35).
+Like the `head()` function, the `tail()` function shows the last five values of a DataFrame. And, sure enough, you've removed the row you needed to remove (for example, the row where the index is 35).
 
-We can reset the index for the DataFrame again to ensure accuracy within our data:
+You can reset the index for the DataFrame again to ensure accuracy within the data:
 
 ```python
 # Renumber the DataFrame index to reflect the dropped rows.
 player_df.reset_index(drop=True, inplace=True)
 ```
 
-If you were to execute `player_df.tail(10)` again you would see the indices in order now until row 41.
+If you execute `player_df.tail(10)` again, you'll see the indexes in order now until row 41.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2020 Warner Bros. Ent. All Rights Reserved.
