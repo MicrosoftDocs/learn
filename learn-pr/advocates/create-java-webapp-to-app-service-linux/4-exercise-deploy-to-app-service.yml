@@ -3,7 +3,7 @@ uid: learn.azure.build-webapp-java-tomcat.4
 title: Exercise - Deploy a Java web app to Azure App Service
 metadata:
   title: Exercise - Deploy a Java web app to Azure App Service
-  description: Package your Java web Application and deploy to an Azure App Service.
+  description: Package your Java web application and deploy it to Azure App Service.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 12/04/2020
