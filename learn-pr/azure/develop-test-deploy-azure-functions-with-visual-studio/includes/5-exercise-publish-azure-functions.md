@@ -58,7 +58,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     | Property | Value |
     | --------- | --------- |
-    | Plan type | Consumption (Severless) |
+    | Plan type | Consumption (Serverless) |
 
 1. Select **Review + create**, then select **Create**. Wait while the Function App is created before continuing.
 
