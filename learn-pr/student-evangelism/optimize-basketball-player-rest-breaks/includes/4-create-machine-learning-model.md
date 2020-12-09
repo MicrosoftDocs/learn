@@ -67,7 +67,7 @@ X = player_df_final.iloc[:, 7:-1].to_numpy()
 y = player_df_final.iloc[:, -1]
 ```
 
-Next, we need to train, or fit, the machine learning model. We're using the scikit-learn LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` based on `X`. For more information about how this training works, you can check out the [Developer's Intro to Data Science video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&azure-portal=true) and other [Microsoft Learn modules about data science](https://www.aka.ms/DevIntroDS_Learn?azure-portal=true).
+Next, we need to train, or fit, the machine learning model. We're using the scikit-learn LinearRegression library, which is a pre-written linear regression machine learning model that will automatically learn how to predict `y` based on `X`. For more information about how this training works, you can check out the [Developer's Intro to Data Science video series](https://aka.ms/LearnWithDrG/DevIntroDS-Videos?azure-portal=true) and other [Microsoft Learn modules about data science](https://aka.ms/LearnWithDrG/DevIntroDS-Learn?azure-portal=true).
 
 ```python
 # Define and fit the model.
@@ -117,15 +117,15 @@ Here's the output:
 
 | Iteration # | high PER | low PER |
 |---|---|---|
-| Iteration 1 | Speedy Gonzales | Road Runner |
-| Iteration 2 | Speedy Gonzales | Marvin the Martian |
+| Iteration 1 | Tweety | Road Runner |
+| Iteration 2 | Tweety | Marvin the Martian |
 | Iteration 3 | Lola Bunny | Marvin the Martian |
-| Iteration 4 | Speedy Gonzales | Penelope |
+| Iteration 4 | Tweety | Penelope |
 | Iteration 5 | Lola Bunny | Tasmanian Devil |
 | Iteration 6 | Lola Bunny | Road Runner |
 | Iteration 7 | Lola Bunny | Penelope |
 | Iteration 8 | Lola Bunny | Penelope |
-| Iteration 9 | Speedy Gonzales | Penelope |
+| Iteration 9 | Tweety | Penelope |
 | Iteration 10 | Elmer Fudd | Penelope |
 
 

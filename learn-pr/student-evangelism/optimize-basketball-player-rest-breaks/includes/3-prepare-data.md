@@ -51,7 +51,7 @@ Let's understand this data a bit more. We can see that some of the column headin
 
 Although many of these data points make sense in the context of basketball, we can start to cleanse our data even without a highly technical understanding of each of these columns. So, if you're not well versed in these terms, don't worry! We still have a lot to do to gain insights into the data. 
 
-The most important thing to understand is that each of these columns is data that can be counted during a game, expect for *player efficiency rating* (PER). PER is a calculation that's based on all the other player stats. PER determines "how good" a player is. This column can help predict how effective a player is during a game. When this module was written, the NBA player with the highest PER was Michael Jordan, with a rating of 27.91. The NBA player with the second highest rating, and with the highest rating of currently active NBA players, was LeBron James, with a score of 27.49.
+The most important thing to understand is that each of these columns is data that can be counted during a game, expect for *player efficiency rating* (PER). PER is a calculation that's based on all the other player stats. PER determines "how good" a player is. This column can help predict how effective a player is during a game. When this module was written, the basketball player with the highest PER was Michael Jordan, with a rating of 27.91. The basketball player with the second highest rating, and with the highest rating of currently active basketball players, was LeBron James, with a score of 27.49.
 
 The calculation of PER isn't perfect, and some fans and data scientists might choose to evaluate players differently. But in this module, we'll use PER as the measurement that will help the coach make decisions about which player should be given a quick water break during a game.
 
@@ -81,9 +81,8 @@ ts_name_df
 11	42	Granny
 12	43	Wile E. Coyote
 13	44	Tweety
-14	45	Speedy Gonzales
-15	46	Penelope
-16	47	Daffy Duck
+14	45	Penelope
+15	46	Daffy Duck
 ```
 
 The `ts_names_df` DataFrame contains the ID of the player, which matches the ID in the main DataFrame, and the player's actual name.

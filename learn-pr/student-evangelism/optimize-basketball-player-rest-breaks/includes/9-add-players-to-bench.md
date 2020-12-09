@@ -1,10 +1,10 @@
-In the next function, `addPlayersToGame`, we initialize the players in the web app. Because we want our coach to be able to move players from the bench to the court and back depending on each player's PER for a specific quarter, we need to create HTML elements for each player. The HTML elements can have actions associated with them. One of the easiest ways to do this is to use buttons. 
+In the next function, `displayPlayerBench`, we initialize the players in the web app. Because we want our coach to be able to move players from the bench to the court and back depending on each player's PER for a specific quarter, we need to create HTML elements for each player. The HTML elements can have actions associated with them. One of the easiest ways to do this is to use buttons. 
 
 Before we create a button for each player, we need to get the `div` in which the players will be displayed in our web app. If we take a look at the *index.html* file, we can see that there is a `div` that has the ID `bench`. Nested in that `div` is another `div` called `playersOnBench`. This probably is where we want the player buttons to appear.
 
 ```javascript
     // Get the bench div in which the players will be shown.
-    var bench = document.getElementById("playersOnBench");
+    var bench = document.getElementById('playersOnBench');
 ```
 
 Now, we need to create an HTML button element for each player. This button element needs to have these elements:
@@ -12,38 +12,41 @@ Now, we need to create an HTML button element for each player. This button eleme
 - `id`: We'll set the ID to the player's name so that it's easy to identify later on.
 - `className`: In the *styles.css* file, we can see a `playerButton` class, so we'll assign it here.
 - `onclick`: This function is what we want our app to call when the button is selected.
-- `style`: We can set a couple style attributes, like background color and width.
 - `playerImage`: We'll add the player's image to the button, instead of their name.
 
 After we create the button, we can add the button to the bench area that we identified earlier, and then repeat the process for each player:
 
 ```javascript
-    // For each player, create a button. 
+    // For each player, create a button 
     for (let playerName of playerMap.keys()) {
-        var newPlayer = document.createElement("button");
+        // Create a button for each player
+        var newPlayer = document.createElement('button');
+
+        // Set the ID to the name of the player so we can get it later
         newPlayer.id = playerName;
-        newPlayer.className = "playerButton";
 
-        // When the button is selected, call the movingPlayers function.
-        newPlayer.onclick = movingPlayers;
+        // Identify the style class, which will set the color scheme
+        newPlayer.className = 'playerButton';
 
-        // Style the button.
-        newPlayer.style.backgroundColor = "#AC6FAA";
-        newPlayer.style.width = "32%";
-        
-        // Add the player's image to the button.
-        var playerImage = document.createElement("img");
-        playerImage.src = "images/"+playerName+".png";
+        // When the button is clicked, call the movePlayer function
+        newPlayer.onclick = movePlayer;
+
+        // Add the players image to the button
+        var playerImage = document.createElement('img');
+
+        // Set the source (or location) of the image
+        playerImage.src = 'images/'+playerName+'.png';
+
+        // Add the image to the button
         newPlayer.appendChild(playerImage);
 
-        // Add the button to the bench.
+        // Add the button to the bench
         bench.appendChild(newPlayer);
-    }
 ```
 
 ## Test the web app locally
 
-Before continuing, let's make sure that our app is working so far. If we tried to test our app at this point, we should be able to upload our *game_stats.csv* file. Then, the 16 characters should be added as buttons to the bench area.
+Before continuing, let's make sure that our app is working so far. If we tried to test our app at this point, we should be able to upload our *game_stats.csv* file. Then, the 15 characters should be added as buttons to the bench area.
 
 We can test our app in two ways:
 
@@ -59,10 +62,10 @@ Then, open a browser and paste the path in the address bar. You should see the s
 In the upper-left corner of the app, select the **Choose File** button and find your *game_stats.csv* file. After the file uploads, a couple things should happen:
 
 * The file name should appear next to the **Choose File** button.
-* Your 16 players should be added to the bench.
+* Your 15 players should be added to the bench.
 
 > [!NOTE] 
-> If you select the player buttons, nothing happens yet because we haven't written the `movingPlayers` function yet.
+> If you select the player buttons, nothing happens yet because we haven't written the `movePlayers` function yet.
 
 :::image type="content" source="../media/first-test.png" alt-text="Screenshot that shows the first functionality test of the web app.":::
 
@@ -71,42 +74,47 @@ In the upper-left corner of the app, select the **Choose File** button and find 
 Finally, we add the PER values for each player for the first quarter to the app. This happens in the next unit, but we know we need to call the function that will perform this task: 
 
 ```javascript
-    // Call the function to add PER for each player to the game.
-    addStatsToGame();
+    // Display cards for all players
+    displayPlayerCards();
 ```
 
-We can review the entire `addPlayersToGame` function here:
+We can review the entire `displayPlayerBench` function here:
 
 ```javascript
 // Function to add the players to the bench to start the game.
-function addPlayersToGame() {
+function displayPlayerBench() {
     // Get the bench div in which the players will be shown.
-    var bench = document.getElementById("playersOnBench");
+    var bench = document.getElementById('playersOnBench');
 
     // For each player, create a button. 
     for (let playerName of playerMap.keys()) {
-        var newPlayer = document.createElement("button");
+        // Create a button for each player
+        var newPlayer = document.createElement('button');
+
+        // Set the ID to the name of the player so we can get it later
         newPlayer.id = playerName;
-        newPlayer.className = "playerButton";
 
-        // When the button is selected, call the movingPlayers function.
-        newPlayer.onclick = movingPlayers;
+        // Identify the style class, which will set the color scheme
+        newPlayer.className = 'playerButton';
 
-        // Style the button.
-        newPlayer.style.backgroundColor = "#F6FA1B";
-        newPlayer.style.width = "32%";
+        // When the button is clicked, call the movePlayer function
+        newPlayer.onclick = movePlayer;
         
-        // Add the player's image to the button.
-        var playerImage = document.createElement("img");
-        playerImage.src = "images/"+playerName+".png";
+        // Add the players image to the button
+        var playerImage = document.createElement('img');
+
+        // Set the source (or location) of the image
+        playerImage.src = 'images/'+playerName+'.png';
+
+        // Add the image to the button
         newPlayer.appendChild(playerImage);
 
         // Add the button to the bench.
         bench.appendChild(newPlayer);
     }
 
-    // Call the function to add PER for each player to the game.
-    addStatsToGame();
+    // Display cards for all players
+    displayPlayerCards();
 }
 ```
 
