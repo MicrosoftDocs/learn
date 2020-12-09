@@ -83,7 +83,7 @@ After a pull request is created, it can be updated with new commits, comments, o
     This command creates a new branch on the upstream repository on GitHub (your fork), and pushes all your commits to it.
 
     > [!NOTE]
-    > When we talk about an *upstream* repository, we refer to the remote repository linked to your local repository. The `origin` is the default alias for the repository URL, which was created by Git in step 2.
+    > When we talk about an *upstream* repository, we refer to the remote repository linked to your local repository. The `origin` is the default alias for the repository URL, which was created by Git in step 4.
 
     If you didn't create a branch previously, enter only `git push`.
 
