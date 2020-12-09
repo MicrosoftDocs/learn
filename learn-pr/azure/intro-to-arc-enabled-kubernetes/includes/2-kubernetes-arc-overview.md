@@ -26,7 +26,7 @@ In addition, the control plane delivers such benefits as:
 
 Effectively, Kubernetes allows you to treat your datacenter as a unified compute resource. You don't have to worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
 
-However, it's important to understand that Kubernetes is an highly customizable orchestration platform, which requires proper configuration, management, and maintenance:
+However, it's important to understand that Kubernetes is a highly customizable orchestration platform, which requires proper configuration, management, and maintenance:
 
 - Aspects such as deployment, scaling, load balancing, logging, and monitoring are all optional. It is up to you to identify and implement the optimal configuration addressing your specific needs.
 - Kubernetes doesn't natively provide middleware, data-processing frameworks, or databases. However, you have the option of implementing any of the corresponding functionality by using containers.
