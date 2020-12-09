@@ -74,7 +74,8 @@ player_df.head()
 ```
 
 **Output**
-|  | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER | player |
+
+|   | ID | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER | player |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | 1 | 1893.0 | 1251.8 | 97.8 | 63.0 | 33.9 | 0.569 | 17.2 | 11.5 | 26.1 | 4.7 | 23.3 | 7.8 | 10.90 | player1 |
 | 1 | 2 | 1386.0 | 1282.5 | 110.5 | 58.0 | 32.5 | 0.511 | 24.8 | 9.7 | 26.9 | 6.1 | 0.9 | 10.7 | 27.30 | player2 |
@@ -104,6 +105,7 @@ player_df.head()
 ```
 
 **Output**
+
 |  | ID | player | points | possessions | team_pace | GP | MPG | TS% | AST | TO | USG | ORR | DRR | REBR | PER |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 0 | 1 | player1 | 1893.0 | 1251.8 | 97.8 | 63.0 | 33.9 | 0.569 | 17.2 | 11.5 | 26.1 | 4.7 | 23.3 | 7.8 | 10.90 |
