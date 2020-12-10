@@ -28,6 +28,10 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     notepad Dockerfile
     ```
 
+  > [!NOTE] 
+  > With the above command, you will be offered a textfile to save.  However, if you use this method you may still need to go to the folder and remove the .txt extension.  Save it as **Dockerfile** (NOT Dockerfile.txt)
+
+
 4. Add the following commands to the Dockerfile. These commands fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the /src folder in the container. The `*`dotnet restore`*` command downloads the dependencies required by these projects from NuGet.
 
     ```Dockerfile
