@@ -14,24 +14,9 @@ Using Visual Studio Code and the Go extension gives you numerous benefits. You c
 - Navigate the project code easily even if you have multiple files.
 - Enlist support for testing, such as generating test skeletons for functions.
 
-## Install Visual Studio Code
-Install Visual Studio Code on your workstation based on your operating system.
+::: zone pivot="macos"
 
-### Install Visual Studio Code on Linux
-
-**Step 1: Download the Visual Studio Code installer**
-
-On the Visual Studio Code page, select the **Linux** box, and then select the **.deb** or **.rpm** option. Your choice depends on whether your Linux distribution uses Debian (DEB)-based or Red Hat Package Manager (RPM)-based package managers. In a few seconds, you’ll be prompted to save the file locally.
-
-**Step 2: Start the Visual Studio Code installer**
-
-Locate and open the file you’ve just downloaded. Follow the instructions to install the app on your workstation.
-
-**Step 3: Start Visual Studio Code**
-
-When the installation is complete, open Visual Studio Code to confirm that it’s working.
-
-### Install Visual Studio Code on macOS
+## Install Visual Studio Code on macOS
 
 **Step 1: Download Visual Studio Code**
 
@@ -54,7 +39,29 @@ From the *Applications* folder, double-click the Visual Studio Code icon to star
 
 Alternatively, you can install Visual Studio Code by using a package manager such as [APT (Advanced Package Tool) or YUM (Yellowdog Updater, Modified)](https://code.visualstudio.com/docs/setup/linux).
 
-### Install Visual Studio Code on Windows
+::: zone-end
+
+::: zone pivot="linux"
+
+## Install Visual Studio Code on Linux
+
+**Step 1: Download the Visual Studio Code installer**
+
+On the Visual Studio Code page, select the **Linux** box, and then select the **.deb** or **.rpm** option. Your choice depends on whether your Linux distribution uses Debian (DEB)-based or Red Hat Package Manager (RPM)-based package managers. In a few seconds, you’ll be prompted to save the file locally.
+
+**Step 2: Start the Visual Studio Code installer**
+
+Locate and open the file you’ve just downloaded. Follow the instructions to install the app on your workstation.
+
+**Step 3: Start Visual Studio Code**
+
+When the installation is complete, open Visual Studio Code to confirm that it’s working.
+
+::: zone-end
+
+::: zone pivot="windows"
+
+## Install Visual Studio Code on Windows
 
 **Step 1: Download the Visual Studio Code installer**
 
@@ -67,6 +74,7 @@ Locate and open the file you’ve just downloaded. Follow the instructions to in
 **Step 3: Start Visual Studio Code**
 
 When the installation is complete, open Visual Studio Code to confirm that it’s working.
+::: zone-end
 
 ## Install the Go extension for Visual Studio Code
 The Go extension for Visual Studio Code can help you write Go apps more efficiently. You'll see why it’s a good idea to use an IDE for developing Go apps.
