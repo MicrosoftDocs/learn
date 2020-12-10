@@ -15,28 +15,28 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: " What’s the single command for executing and compiling Go apps?"
+  - content: " What’s the command for executing and compiling Go apps?"
     choices:
     - content: "go build"
       isCorrect: false
-      explanation: "go build compiles the the program and generates the binary executable, but doesn't run the program"
+      explanation: "Incorrect. The go build command compiles the program and generates the binary executable, but it doesn't run the program."
     - content: "go run"
       isCorrect: true
-      explanation: "go run compiles and runs the program, but doesn't generate the binary executable"
+      explanation: "Correct. The go run command compiles and runs the program, but it doesn't generate the binary executable."
     - content: "go install"
       isCorrect: false
-      explanation: "go install compiles, generates the binary, and moves it to the $GOBIN directory (doesn't run the program)"
+      explanation: "Incorrect. The go install command compiles the app, generates the binary, and moves it to the $GOBIN directory, but it doesn't run the program."
     - content: "go compile"
       isCorrect: false
-      explanation: "go compile is an invalid command"
-  - content: "Where should you place your project files in your workstation?"
+      explanation: "Incorrect. The go compile command is an invalid command."
+  - content: "Where should you place your project files on your workstation?"
     choices:
     - content: "Anywhere I want"
       isCorrect: false
-      explanation: "Althoug this is true, we haven't covered how to do it yet"
+      explanation: "Although this is true, we haven't covered how to do it yet."
     - content: "At the root file system"
       isCorrect: false
-      explanation: "Partially true, but we haven't covered how to create projects outside of the $GOPATH yet"
+      explanation: "This is partially true, but we haven't yet covered how to create projects outside of the $GOPATH."
     - content: "At the workspace directory"
       isCorrect: true
-      explanation: "At the moment, this is the only option we've explored, then it's the correct answer"
+      explanation: "Correct. At the moment, this is the only option we've explored, so it's the correct answer."

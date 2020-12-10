@@ -12,14 +12,14 @@ title: Get started with Go
 summary: In this module, you’ll start taking your first steps with Go.
 abstract:  |
   In this module, you will:
-  - Install and configure Go in your local workstation
-  - Install and configure VS Code and the Go extension
-  - Explore the Go Playground
-  - Create your first Go application
+  - Install and configure Go on your local workstation.
+  - Install and configure Visual Studio Code and the Go extension.
+  - Explore the Go Playground.
+  - Create your first Go application.
 prerequisites: |
-  - Programming basics in general
-  - Knowledge with at least one programming language
-  - Download / Install Software from the Internet
+  - Familiarity with programming basics in general
+  - Familiarity with at least one programming language
+  - Familiarity with downloading and installing software from the internet
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner

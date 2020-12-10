@@ -1,71 +1,100 @@
-You can use any text editor to write Go applications, but when you use an IDE like Visual Studio Code (VS Code), you write code faster. Without an IDE, you’d have to write every line from scratch, which at the beginning could help to get familiar with the syntax, but in the long-term, you might need more time to write an application. Therefore, we recommend using an IDE. For instance, you could start using VS Code, which is free and open-source, which has an extension for Go to help you write code faster.
+You can use any text editor to write Go applications, but when you use an integrated development environment (IDE) such as Visual Studio Code, you can write code faster. Without an IDE, you’d have to write every line from scratch. When you're just beginning, this could help you get familiar with the Go syntax but, in the long term, it might take you longer to write an application. 
 
-When you have VS Code and the Go extension, you get the following benefits:
+For this reason, we recommend that you start by using Visual Studio Code, which is free and open-source and offers a Go extension to help you write code faster.
 
-- Format applications following Go standards
+Using Visual Studio Code and the Go extension gives you numerous benefits. You can:
+
+- Format applications following Go standards.
 - Add package references as soon as you add a new line and save your code.
-- Remove package references that your application is not using anymore.
-- Debug your applications by allowing you to set breakpoints and use watchers at runtime
-- Provides suggested completions for code and package references
-- Hover information to get more details about the code referencing its documentation
-- Provides signature help like listing the parameters a function has
-- Navigate the project’s code easily when you have multiple files
-- Support for testing like generating test skeletons for functions
+- Remove package references that your application isn't using anymore.
+- Debug your applications by setting breakpoints and using watchers at runtime.
+- Get suggested completions for code and package references.
+- Use hover information to connect to the code documentation.
+- Get signature help, such as listing a function's parameters.
+- Navigate the project code easily even if you have multiple files.
+- Enlist support for testing, such as generating test skeletons for functions.
 
-Below are the instructions to install Visual Studio Code on your workstation.
+::: zone pivot="macos"
 
 ## Install Visual Studio Code on macOS
 
 **Step 1: Download Visual Studio Code**
-Head over to the Visual Studio Code page and click on the “Mac” box to download the app. Wait a few seconds. You’ll see a prompt to save the file locally.
+
+On the Visual Studio Code page, select the **Mac** box to download the app. In a few seconds, you’ll be prompted to save the file locally.
 
 **Step 2: Move the app to the Applications folder**
-Locate the file you’ve just downloaded and open Finder. Drag and drop the Visual Studio Code file to the Applications folder in Finder.
+
+Locate the Visual Studio Code file you’ve just downloaded, and then drag it to the *Applications* folder in Finder.
 
 **Step 3: Start the app from the Applications folder**
-To start the Visual Studio Code app, double-click on the icon from the Applications folder.
+
+From the *Applications* folder, double-click the Visual Studio Code icon to start the app.
 
 > [!NOTE]
-> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select OK to dismiss the message. Then right-click Visual Studio Code in the Applications folder and choose the Open menu. If you choose this option, Visual Studio Code should open without any further issues.
+> You might see a warning message that Visual Studio Code can't be opened because Apple can't check it for malicious software. If so, do the following:
+> * Select **OK** to dismiss the message. 
+> * In the *Applications* folder, right-click (or Control-click) the Visual Studio Code file, and then select **Open**.
+> 
+> If you choose this option, Visual Studio Code should open without any further issues.
+
+Alternatively, you can install Visual Studio Code by using a package manager such as [APT (Advanced Package Tool) or YUM (Yellowdog Updater, Modified)](https://code.visualstudio.com/docs/setup/linux).
+
+::: zone-end
+
+::: zone pivot="linux"
 
 ## Install Visual Studio Code on Linux
 
 **Step 1: Download the Visual Studio Code installer**
-Head over to the Visual Studio Code page and click on the “.deb” or “.rpm” option (depending on if your Linux distribution uses deb-based or rpm-based package managers) from the “Linux” box to download the app. Wait a few seconds. You’ll see a prompt to save the file locally.
+
+On the Visual Studio Code page, select the **Linux** box, and then select the **.deb** or **.rpm** option. Your choice depends on whether your Linux distribution uses Debian (DEB)-based or Red Hat Package Manager (RPM)-based package managers. In a few seconds, you’ll be prompted to save the file locally.
 
 **Step 2: Start the Visual Studio Code installer**
-Locate the file you’ve just downloaded, and open it by double-clicking the file. Follow the instructions to install the app on your workstation.
+
+Locate and open the file you’ve just downloaded. Follow the instructions to install the app on your workstation.
 
 **Step 3: Start Visual Studio Code**
-When the installation process is complete, open Visual Studio Code to confirm that it’s working.
 
----------------
+When the installation is complete, open Visual Studio Code to confirm that it’s working.
 
-Alternatively, you can install Visual Studio Code [using a package manager like APT or YUM](https://code.visualstudio.com/docs/setup/linux).
+::: zone-end
+
+::: zone pivot="windows"
 
 ## Install Visual Studio Code on Windows
 
 **Step 1: Download the Visual Studio Code installer**
-Head over to the Visual Studio Code page and click on the “Windows” box to download the app. Wait a few seconds. You’ll see a prompt to save the file locally.
+
+On the Visual Studio Code page, select the **Windows** box. In a few seconds, you’ll be prompted to save the file locally.
 
 **Step 2: Start the Visual Studio Code installer**
-Locate the file you’ve just downloaded, and open it by double-clicking the file. Follow the instructions to install the app on your workstation.
+
+Locate and open the file you’ve just downloaded. Follow the instructions to install the app on your workstation.
 
 **Step 3: Start Visual Studio Code**
-When the installation process is complete, open Visual Studio Code to confirm that it’s working.
+
+When the installation is complete, open Visual Studio Code to confirm that it’s working.
+::: zone-end
 
 ## Install the Go extension for Visual Studio Code
-The Go extension for VS Code will help you write Go apps more efficiently because you’ll enjoy all of the features we mentioned early regarding why it’s a good idea to use an IDE for developing Go apps.
-
-Open VS Code, in case you haven’t done it already.
+The Go extension for Visual Studio Code can help you write Go apps more efficiently. You'll see why it’s a good idea to use an IDE for developing Go apps.
 
 **Step 1: Open the Extensions view**
-In VS Code, go to “View” and select “Extensions” from the menu bar, or select the “Extensions” icon from the left side of the screen.
+
+Open Visual Studio Code, and then do either of the following:
+* Select **View**, and then select **Extensions**. 
+* On the toolbar pane at left, select the **Extensions** icon.
 
 **Step 2: Search for the Go extension**
-Enter “Go” in the search box at the top of the Extensions view.
 
-Select the extension published by the “Go Team at Google” (usually the first one in the list). You’ll see the details of the extension on the right side of the screen.
+In the **Search Extensions in Marketplace** box, enter **Go**.
 
-**Step 3: Install the Go extensions**
-Below the extension’s description, you’ll see an **Install** button; click on it to install the extension in your workstation. When the installation is complete, the button’s text will change to **Uninstall**, meaning that you’ve successfully installed the Go extension.
+Select the **Go** extension that's published by the “Go Team at Google” (usually the first one in the list). 
+
+The extension details are displayed at the right.
+
+**Step 3: Install the Go extension**
+
+Below the extension description, select the green **Install** button to install it on your workstation. 
+
+When the installation is complete, the button label changes to **Uninstall**, which indicates that the extension has been installed successfully.
