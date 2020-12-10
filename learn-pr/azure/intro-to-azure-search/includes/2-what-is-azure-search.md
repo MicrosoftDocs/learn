@@ -193,4 +193,4 @@ The steps are then:
     Invoke-RestMethod -Uri $url -Headers $headers -Method Put -Body $body | ConvertTo-Json
     ```
 
-You have created in index using the REST API. You can load your search documents using the same approach, calling the appropriate REST endpoints.
+You have created an index using the REST API. You can load your search documents using the same approach, calling the appropriate REST endpoints.
