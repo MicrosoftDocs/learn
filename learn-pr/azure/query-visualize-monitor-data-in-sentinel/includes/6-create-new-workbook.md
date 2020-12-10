@@ -56,7 +56,7 @@ On the header bar, there are several fields that provide you options to tune the
 |Data Source|Use this option to specify the data source for the query.|
 |Resource type|Use this option select the type of resource.|
 |Log Analytics workspace|Use this option if you want to query data against more than one resource.|
-|Time Range|USe this option to specify a time range parameter to use in the query.|
+|Time Range|Use this option to specify a time range parameter to use in the query.|
 |Visualization|Use this option to choose a specific visualization or choose **Set by query** to present the data in a different format.|
 |Size|Use this option to choose the size of the visualization element.|
 |Color palette|Use this option to choose specific series colors in chart settings.|
