@@ -32,6 +32,6 @@ Just like blockchain solutions are being created in nearly every industry, dapps
 
 [OpenSea](https://opensea.io?azure-portal=true?azure-portal=true) is a platform where you can buy, sell, and discover limited-edition goods. The dapp allows users to browse items and make an offer or buy for the price listed. Users can also list their goods for sale.
 
-[Cryptokitties](https://www.cryptokitties.co?azure-portal=true?azure-portal=true) is a gaming dapp where you can breed, collect, and sell unique cryptographic kittens. Aditionally, you can do things like solve puzzles, earn rewards, and play games with your kitties.
+[Cryptokitties](https://www.cryptokitties.co?azure-portal=true?azure-portal=true) is a gaming dapp where you can breed, collect, and sell unique cryptographic kittens. Additionally, you can do things like solve puzzles, earn rewards, and play games with your kitties.
 
 [Brave](https://brave.com?azure-portal=true?azure-portal=true) is a fast and private browser that allows you to earn tokens called BAT that can be donated to web creators, and will soon be able to be spent on gift cards and other rewards.
