@@ -4,13 +4,13 @@ title: 'Exercise: Deploy an Azure SQL Database using an Azure Resource Manager t
 metadata:
   title: 'Exercise: Deploy an Azure SQL Database using an Azure Resource Manager template'
   description: "Exercise: Deploy an Azure SQL Database using an Azure Resource Manager template"
-  ms.date: 12/04/2020
+  ms.date: 12/10/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 82774
+labId: 85886
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-deploy-azure-database-using-template.md)]
