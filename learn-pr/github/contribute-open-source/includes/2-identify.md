@@ -54,7 +54,7 @@ Perhaps you've already identified something to work on such as fixing broken lin
 
 You'll notice that most of the issues displayed in the `contribute` URL will have labels such as `good-first-issue`, `help wanted`, `beginner-friendly`, and so on. Labels are often used to provide top-level information of the issue and the type of help needed.
 
-You can head to the labels page, for example, [https://github.com/jupyter/notebook/labels](https://github.com/jupyter/notebook/labels), and select issues that have labels like `help wanted`, `discussion`, or other labels relevant to the type of contribution you're interested in.
+You can head to the labels page, for example, [https://github.com/jupyter/notebook/labels](https://github.com/jupyter/notebook/labels). Then select issues that have labels like `help wanted`, `discussion`, or other labels relevant to the type of contribution you're interested in.
 
 As you explore issues, you might also notice that some have other issues or pull requests linked.
 
