@@ -64,7 +64,7 @@ In each of the Azure Arc enabled scenarios, Azure Arc relies on a locally instal
 
 ### What are the key benefits of Azure Arc?
 
-A number of Azure Arc benefits are independent of the resouce type, since they reflect the capabilities of Azure Resource Manager. These benefits include:
+A number of Azure Arc benefits are independent of the resource type, since they reflect the capabilities of Azure Resource Manager. These benefits include:
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
