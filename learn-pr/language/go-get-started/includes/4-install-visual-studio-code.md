@@ -48,7 +48,7 @@ From the *Applications* folder, double-click the Visual Studio Code icon to star
 > [!NOTE]
 > You might see a warning message that Visual Studio Code can't be opened because Apple can't check it for malicious software. If so, do the following:
 > * Select **OK** to dismiss the message. 
-> * In the *Applications* folder, right-click the Visual Studio Code file, and select **Open**.
+> * In the *Applications* folder, right-click (or Control-click) the Visual Studio Code file, and then select **Open**.
 > 
 > If you choose this option, Visual Studio Code should open without any further issues.
 
