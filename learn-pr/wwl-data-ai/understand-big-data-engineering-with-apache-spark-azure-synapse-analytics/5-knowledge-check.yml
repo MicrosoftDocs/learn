@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is an element of a Spark Pool in Azure Synapse Analytics?"
+    choices:
+    - content: "HDI."
+      isCorrect: false
+      explanation: "InCorrect. HDI is a implementation by Microsoft of Open Source Spark, managed on the Azure Platform."
+    - content: "Spark Console."
+      isCorrect: false
+      explanation: "Incorrect. It is highly recommended to use the notebook or IntelliJ experiences instead of a Spark Console for Spark Pools in Azure Synapse Analytics"
+    - content: "Spark Instance."
+      isCorrect: true
+      explanation: "Correct, The definition of a Spark pool is that, when instantiated, it is used to create a Spark instance that processes data."
+  - content: "In order to create a Spark pool in Azure Synapse Analytics, what needs to be created in order to do so?"
+    choices:
+    - content: "Synapse Analytics Workspace."
+      isCorrect: true
+      explanation: "Correct. In order to create a Spark pool in Azure Synapse Analytics, you would have to create a Synapse Analytics Workspace."
+    - content: "Azure Databricks."
+      isCorrect: false
+      explanation: "Incorrect. In order to create a Spark pool in Azure Synapse Analytics, you would have to create a Synapse Analytics Workspace."
+    - content: "A Spark Instance"
+      isCorrect: false
+      explanation: "Incorrect. The definition of a Spark pool is that, when instantiated, it is used to create a Spark instance automatically, that processes data."
