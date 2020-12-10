@@ -4,7 +4,7 @@ You can create and configure Azure Virtual Network instances from the Azure port
 
 When you create an Azure virtual network, you configure a number of basic settings. You'll have the option to configure advanced settings, such as multiple subnets, distributed denial of service (DDoS) protection, and service endpoints.
 
-![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/create-virtual-network.png)
+:::image type="content" source="../media/create-virtual-network.png" alt-text="Screenshot of the Azure portal showing an example of the Create virtual network pane fields.":::
 
 You'll configure the following settings for a basic virtual network:
 
