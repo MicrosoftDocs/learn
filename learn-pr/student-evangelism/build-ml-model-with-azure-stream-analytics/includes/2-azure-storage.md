@@ -1,28 +1,28 @@
-In this unit, you will create an Azure Storage account and implement a simulated camera array in Node.js that uploads wildlife photos to the account. The storage account will store photographs taken by the cameras that you deploy. These represent the first steps toward building an end-to-end solution that demonstrates how Azure services are combined to create sophisticated systems that incorporate cloud services and AI.
+In this unit, you'll create an Azure Storage account and implement a simulated camera array in Node.js that uploads wildlife photos to the account. The storage account will store photographs taken by the cameras that you deploy. These represent the first steps toward building an end-to-end solution that demonstrates how Azure services are combined to create sophisticated systems that incorporate cloud services and AI.
 
 ## Create a storage account
 
-Let's begin by using Azure Cloud Shell to create an Azure Storage account. The Cloud Shell provides a browser-based command line for executing Azure commands and is an alternative to installing the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) on your own machine. Whether to use the CLI or the Cloud Shell is often a matter of personal preference. One of the advantages of the Cloud Shell is that it doesn't require you to install any software on your PC. Another is that you don't have to update it periodically as you do the CLI.
+Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud Shell provides a browser-based command line for executing Azure commands and is an alternative to installing the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) on your own machine. Whether to use the CLI or Cloud Shell is often a matter of personal preference. One of the advantages of Cloud Shell is that it doesn't require you to install any software on your PC. Another is that you don't have to update it periodically as you do the CLI.
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) in your browser. If asked to log in, do so using your Microsoft account.
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) in your browser. If asked to sign in, do so using your Microsoft account.
 
-1. Click the **Cloud Shell** button in the toolbar at the top of the portal to open the Cloud Shell.
+1. Select the **Cloud Shell** button in the toolbar at the top of the portal to open Cloud Shell.
 
-    If you would prefer, you can open a Cloud Shell in a separate browser window by pointing your browser to [https://shell.azure.com](https://shell.azure.com?azure-portal=true). Clicking the Cloud Shell button in the portal opens a Cloud Shell inside the portal.
+    If you would prefer, you can open Cloud Shell in a separate browser window by pointing your browser to [https://shell.azure.com](https://shell.azure.com?azure-portal=true). Select the Cloud Shell button in the portal to open a Cloud Shell inside the portal.
 
-    ![Opening the Azure Cloud Shell](../media/cloud-shell.png)
+    ![Open Azure Cloud Shell](../media/cloud-shell.png)
 
-    _Opening the Azure Cloud Shell_
+    _Open Azure Cloud Shell_
 
-    If you are prompted to choose a language, select Bash. If you are prompted to allow the Cloud Shell to create a storage account, allow it to do so.
+    If you're prompted to choose a language, select Bash. If you're prompted to allow Cloud Shell to create a storage account, allow it to do so.
 
-1. The next task is to create a resource group to hold the storage account and other Azure resources that comprise the solution. Make sure the language selected in the Cloud Shell is Bash, and execute the following command in the Cloud Shell to create a resource group named "polar-bear-rg" in Azure's South Central US region:
+1. The next task is to create a resource group to hold the storage account and other Azure resources that comprise the solution. Make sure the language selected in Cloud Shell is Bash, and execute the following command in Cloud Shell to create a resource group named "polar-bear-rg" in Azure's South Central US region:
 
     ```bash
     az group create --name polar-bear-rg --location southcentralus
     ```
 
-    You can use **Shift+Insert** to paste commands into the Cloud Shell, and **Ctrl+Insert** to copy text from the Cloud Shell to the clipboard.
+    You can use **Shift+Insert** to paste commands into Cloud Shell, and **Ctrl+Insert** to copy text from Cloud Shell to the clipboard.
 
 1. Use this command to save the name you wish to use for the storage account, replacing `<account name>` with the name you wish to use. You'll reference this later through the `$ACCOUNT_NAME` field.
 
@@ -47,13 +47,13 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. The C
     az storage container create --name photos --account-name $ACCOUNT_NAME
     ```
 
-1. Execute the following command in the Cloud Shell to list the access keys for the storage account:
+1. Execute the following command in Cloud Shell to list the access keys for the storage account:
 
     ```bash
     az storage account keys list --account-name $ACCOUNT_NAME
     ```
 
-1. Copy the primary access key — the `value` property containing a long series of letters and numbers — from the output and paste it into a text file so you can retrieve it later. Remember that you can use **Ctrl+Insert** to copy text from the Cloud Shell to the clipboard.
+1. Copy the primary access key — the `value` property containing a long series of letters and numbers — from the output and paste it into a text file so you can retrieve it later. Remember that you can use **Ctrl+Insert** to copy text from Cloud Shell to the clipboard.
 
 You now have a storage account for storing photos and a container to store them in. Now let's deploy some cameras to snap wildlife photos and upload them to blob storage.
 
@@ -222,23 +222,23 @@ The next task is to create a Node.js app that simulates an array of motion-activ
     }
     ```
 
-    This code uses the [class support](http://es6-features.org/#ClassDefinition) in ECMAScript 6 (ES6) to define a class named ```Camera```. Then it creates 10 ```Camera``` instances and starts them running. Each camera uses a random timer that fires once every few minutes to upload wildlife images to the "photos" container in blob storage. Images are randomly selected from the files in the project directory's "photos" subdirectory. Each blob that is created contains metadata identifying the camera that uploaded the photo and the camera's location.
+    This code uses the [class support](http://es6-features.org/#ClassDefinition) in ECMAScript 6 (ES6) to define a class named `Camera`. Then, it creates 10 `Camera` instances and starts them running. Each camera uses a random timer that fires once every few minutes to upload wildlife images to the "photos" container in blob storage. Images are randomly selected from the files in the project directory's "photos" subdirectory. Each blob that's created contains metadata identifying the camera that uploaded the photo and the camera's location.
 
-1. If you are running Windows, execute the following commands to create a pair of environment variables, replacing STORAGE_ACCOUNT_NAME with the name of the storage account that you created earlier, and STORAGE_ACCOUNT_KEY with the storage account's access key:
+1. If you're running Windows, execute the following commands to create a pair of environment variables, replacing STORAGE_ACCOUNT_NAME with the name of the storage account that you created earlier, and STORAGE_ACCOUNT_KEY with the storage account's access key:
 
     ```terminal
     set ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
     set ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
     ```
 
-    If you are running Linux or macOS, use these commands instead:
+    If you're running Linux or macOS, use these commands instead:
 
     ```bash
     export ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
     export ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
     ```
 
-    At run-time, **run.js** reads these environment variables and uses them to connect to the storage account. Storing "secrets" such as these in environment variables is more secure than embedding them in source code. Of course, if you close the Command Prompt or terminal window in which you executed these commands, you will need to run them again before running **run.js**.
+    At runtime, *run.js* reads these environment variables and uses them to connect to the storage account. Storing "secrets" such as these in environment variables is more secure than embedding them in source code. Of course, if you close the Command Prompt or terminal window in which you executed these commands, you'll need to run them again before running *run.js*.
 
 1. Execute the following command in the Command Prompt or terminal window to run **run.js**:
 
@@ -285,4 +285,4 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     _Viewing blob metadata_
 
-Open some of the blobs and view the images inside them. Which images contain polar bears, and which do not?
+Open some of the blobs and view the images inside them. Which images contain polar bears, and which don't contain polar bears?

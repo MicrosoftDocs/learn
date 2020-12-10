@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following Azure Cloud Shell/Azure CLI commands creates an Azure storage account?"
+  - content: "Which of the following Azure Cloud Shell/Azure CLI commands creates an Azure Storage account?"
     choices:
     - content: "`az group create`"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
       explanation: "Correct! This would create a new storage account."
     - content: "`az storage create`"
       isCorrect: false
-      explanation: "Close! This isn't a real Azure CLI command though."
+      explanation: "Close! This isn't a real Azure CLI command, though."
   - content: "What is the difference between precision and recall when measuring the accuracy of a machine-learning model?"
     choices:
     - content: "Precision roughly measures false positives, while recall roughly measures false negatives"

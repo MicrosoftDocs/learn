@@ -136,7 +136,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 
 1. Return to your project. Make sure you're on the **Performance** tab and select **Publish** at the top of the page.
 
-1. In the **Publish Model** dialog, set **Prediction resource** to the name of your resource, "polar-bear-vision." Make sure you choose your resource name and not the resource *group* name. Select **Publish** to publish the model.
+1. In the **Publish Model** dialog, set **Prediction resource** to the name of your resource, "polar-bear-vision." Make sure you choose your resource name, and not the resource *group* name. Select **Publish** to publish the model.
 
     ![Screenshot that shows how to publish the model.](../media/publish-model.png)
 
@@ -160,4 +160,4 @@ Now it's time to train the model by using the images that you tagged and uploade
 1. Finish by selecting **Got it!** to dismiss the dialog.
 
 
-You now have a machine learning model that can discern whether an image contains a polar bear, along with a URL and API key to invoke the model. The next step is to invoke the model each time an image is uploaded to blob storage. An Azure Function is the perfect tool for the job.
+You now have a machine learning model that can discern whether an image contains a polar bear, along with a URL and API key to invoke the model. The next step is to invoke the model each time an image is uploaded to blob storage. Azure Functions is the perfect tool for the job.

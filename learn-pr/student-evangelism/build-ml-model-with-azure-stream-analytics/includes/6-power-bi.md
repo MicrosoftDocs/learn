@@ -1,15 +1,15 @@
-To complete the end-to-end solution for spotting polar bears in the wild, you will connect Microsoft Power BI to the database you created in the previous unit and build a report that shows in near real time where polar bears are being photographed. You will use Power BI Desktop to create the report, and Power BI Desktop only runs on Windows. If you aren't running Windows, one solution is to create a Windows VM in Azure and run Power BI Desktop from there.
+To complete the end-to-end solution for spotting polar bears in the wild, you'll connect Power BI to the database you created in the previous unit and build a report that shows in near real time where polar bears are being photographed. You'll use Power BI Desktop to create the report, and Power BI Desktop only runs on Windows. If you aren't running Windows, one solution is to create a Windows VM in Azure and run Power BI Desktop from there.
 
 ## Connect Power BI to the database
 
-You used the Custom Vision Service to train an image-classification model to differentiate between different types of Arctic wildlife, and modified the Azure Function you wrote to output the results to an Azure SQL Database. The first step in using Microsoft Power BI to explore and visualize this data is connecting it to the database. In this exercise, you will connect Power BI Desktop to the Azure SQL Database.
+You used the Custom Vision Service to train an image-classification model to differentiate between different types of Arctic wildlife, and modified the Azure Function you wrote to output the results to an Azure SQL Database. The first step in using Power BI to explore and visualize this data is connecting it to the database. In this exercise, you'll connect Power BI Desktop to the Azure SQL Database.
 
 1. If Power BI Desktop isn't already installed on your computer, go to [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.com/desktop/?azure-portal=true) and install it now.
 
-1. Start Power BI Desktop. If you are asked to sign in, do so using your work/school or organizational account.
+1. Start Power BI Desktop. If you're asked to sign in, do so using your work or school account or an organizational account.
 
     > [!NOTE]
-    > There are two types of Microsoft accounts: personal Microsoft accounts and work/school accounts, also known as organizational accounts. Power BI accepts the latter but not the former. If you have a Microsoft 365 subscription, it uses your work/school account. You can have a work/school account without having a Microsoft 365 subscription, however. For an explanation of the differences between personal Microsoft accounts and work/school accounts, see [Understanding Microsoft Work And Personal Accounts](http://www.brucebnews.com/2016/06/finding-your-way-through-microsofts-maze-of-work-and-personal-accounts/).
+    > There are two types of Microsoft accounts: personal Microsoft accounts and work or school accounts, also known as organizational accounts. Power BI accepts the latter, but not the former. If you have a Microsoft 365 subscription, it uses your work or school account. You can have a work or school account without having a Microsoft 365 subscription, however. For an explanation of the differences between personal Microsoft accounts and work or school accounts, see [Understanding Microsoft Work And Personal Accounts](http://www.brucebnews.com/2016/06/finding-your-way-through-microsofts-maze-of-work-and-personal-accounts/).
 
 1. Click **Get Data** in the ribbon at the top of the window. Then select **Azure SQL database** from the list of data sources and click the **Connect** button.
 
@@ -37,7 +37,7 @@ After a short delay, Power BI will connect to the database and retrieve a datase
 
 ## Build a report in Power BI Desktop
 
-Visualizations (or simply "visuals") are the primary element that make up Power BI reports. In this exercise, you will use the Power BI report designer to create visuals from the database you connected to in the previous exercise, adjust filters and aggregates to refine the way the data is displayed, and format the visuals to produce compelling output.
+Visualizations (or simply "visuals") are the primary element that make up Power BI reports. In this exercise, you'll use the Power BI report designer to create visuals from the database you connected to in the previous exercise, adjust filters and aggregates to refine the way the data is displayed, and format the visuals to produce compelling output.
 
 1. Click the **Map** icon in the "Visualizations" panel to add a map visual to the report.
 

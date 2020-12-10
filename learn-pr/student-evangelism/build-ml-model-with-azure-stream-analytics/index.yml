@@ -14,15 +14,15 @@ abstract:  |
   In this module, you will:
   - Create an Azure Storage account
   - Deploy virtual cameras that upload wildlife photos to the storage account
-  - Train a machine-learning model to detect polar bears in photographs
-  - Write an Azure Function that invokes the machine-learning model
-  - Deploy an Azure SQL Database to capture output from the Azure Function
-  - Connect Power BI to the Azure SQL Database
+  - Train a machine learning model to detect polar bears in photographs
+  - Write an Azure Functions app that invokes the machine learning model
+  - Use Azure SQL Database to capture output from the function app
+  - Connect Power BI to the SQL database
   - Create a Power BI report that shows where polar bears are being spotted on a map
 
 prerequisites: |
   - An Azure subscription
-  - Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
+  - Basic knowledge of Azure services, the Azure portal, and the Azure CLI
   - Familiarity with Node.js
   - Power BI Desktop
 iconUrl: /learn/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
