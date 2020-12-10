@@ -18,7 +18,7 @@ brew update
 brew install go
 ```
 
-Homebrew installs Go at `/usr/local/go`, and the path `/usr/local/go/bin` should now be part of the **$PATH** environment variable. You might need to restart your Terminal prompt to confirm that Go is installed correctly.
+Homebrew installs Go at `/usr/local/go`, and the path `/usr/local/go/bin` should now be part of the **$PATH** environment variable. You might need to reopen your Terminal prompt to confirm that Go is installed correctly.
 
 To confirm that Go is installed, run the following command:
 
@@ -44,7 +44,7 @@ By default, the .pkg file installs Go at `/usr/local/go`, and the path `/usr/loc
 
 **Step 3: Confirm that Go is installed correctly**
 
-After the installation finishes, open a new terminal prompt, and run the following command:
+After the installation finishes, open a new Terminal prompt, and run the following command:
 
 ```
 go version
@@ -89,7 +89,7 @@ You need to add the path `/usr/local/go/bin` to the **$PATH** environment variab
 export PATH=$PATH:/usr/local/go/bin
 ```
 
-You need to log out and log in again to update the **$PATH** environment variable. Alternatively, you can force the update by running the following command:
+You need to close and reopen the Terminal prompt to update the **$PATH** environment variable. Alternatively, you can force the update by running the following command:
 
 ```
 source $HOME/.profile
