@@ -3,7 +3,7 @@ uid: learn.azure.stack-hci-arc-integration
 metadata:
   title: Integrate Azure Arc and Azure Stack HCI
   description: Integrate Azure Arc and Azure Stack HCI
-  ms.date: 12/07/2020
+  ms.date: 12/09/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Basic concepts of virtualization and containerization
   - Basic architecture and operating principles of Azure Stack HCI
   - The purpose and core capabilities of Azure Resource Manager
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/stack-hci-arc-integration.svg
 levels:
 - beginner
 roles:

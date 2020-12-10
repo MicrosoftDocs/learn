@@ -28,7 +28,7 @@ Azure Arc supports Azure integration in several distinct scenarios for different
 
 In each of the Azure Arc enabled scenarios, Azure Arc leverages locally installed agents to establish a logical connection between the local resource and Azure. By establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable a non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations.
 
-In case of Azure Arc enabled servers, the connection to Azure relies on the Connected Machine agent. You have the option to install it on individual Windows or Linux servers manually or by running a script available from the Azure portal. This requires that you authenticate to your Azure subscription interactively for each installation. If an Arc enabled server is hosting a SQL Server instance, you can also register it with Azure Arc using the Azure portal and a registration script to implement Azure Arc enabled SQL Server. In enterprise environments, you will likely perform installations at scale, by using a script or PowerShell Desired State Configuration-based installation with authentication via an Azure Active Directory (Azure AD) service principal.
+With Azure Arc enabled servers, the connection to Azure relies on the Connected Machine agent. You have the option to install it on individual Windows or Linux servers manually or by running a script available from the Azure portal. This requires that you authenticate to your Azure subscription interactively for each installation. If an Arc enabled server is hosting a SQL Server instance, you can also register it with Azure Arc using the Azure portal and a registration script to implement Azure Arc enabled SQL Server. In enterprise environments, you will likely perform installations at scale, by using a script or PowerShell Desired State Configuration-based installation with authentication via an Azure Active Directory (Azure AD) service principal.
 
 :::image type="content" source="../media/2-gen-script.png" alt-text="The screenshot depicts the Select a method blade of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale." border="false":::
 
@@ -63,13 +63,13 @@ There are also resource type-specific benefits, such as:
 
   - Enforcement of run-time policies by using Azure Policy for Kubernetes and centralized reporting of the corresponding policy compliance. This allows you, for example to enforce HTTPS ingress in Kubernetes cluster or ensure that containers listen only on allowed ports.
   - Support for automated updates to cluster configuration by using GitOps. GitOps is the practice of automatic deployment of code residing in a Git repository. In this scenario, that code describes the desired state of Kubernetes configuration. You have the option to enforce specific GitOps-based configurations by using Azure Policy, which also provide centralized reporting of the corresponding policy compliance.
-  - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirrors the update management model of their Azure counterparts.
-  - Support for automatic scaling. Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure. 
+  - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirror the update management model of their Azure counterparts.
+  - Support for automatic scaling. Azure Arc enabled data services can autoscale dynamically to limits dependent on the capacity of your infrastructure. 
 
 - **Azure Arc enabled data services**
 
-  - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirrors the update management model of their Azure counterparts.
-  - Support for automatic scaling. Azure Arc enabled data services can auto-scale dynamically to limits dependent on the capacity of your infrastructure. 
+  - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirror the update management model of their Azure counterparts.
+  - Support for automatic scaling. Azure Arc enabled data services can autoscale dynamically to limits dependent on the capacity of your infrastructure. 
 
 ## Additional reading
 

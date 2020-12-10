@@ -3,7 +3,7 @@ uid: learn.azure.stack-hci-arc-integration.4-monitor-virtualized-workloads
 metadata:
   title: Monitor Azure Stack HCI clusters and their virtualized workloads with Azure Arc
   description: Another important advantage of Azure Arc is its ability to centralize and standardize enterprise-wide management and monitoring of technology assets regardless of their location. In this unit, you will learn how this principle applies to Azure Stack HCI clusters.
-  ms.date: 12/07/2020
+  ms.date: 12/09/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
