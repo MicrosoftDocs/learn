@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the simplest method to to identify the manufacturer and model of hardware of cluster nodes a few Azure Stack HCI clusters in your organization?"
+  - content: "What is the simplest method to identify the manufacturer and model of hardware of cluster nodes a few Azure Stack HCI clusters in your organization?"
     choices:
     - content: "Integrate the Azure Stack HCI clusters with Azure Monitor and run a Kusto query."
       isCorrect: false

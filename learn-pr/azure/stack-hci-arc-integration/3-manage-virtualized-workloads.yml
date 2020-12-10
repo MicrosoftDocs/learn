@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "Which VM extension can an administrator add to Azure Arc enabled servers running Windows Server?"
     choices:
-    - content: "VMAccess."
+    - content: "VM Access."
       isCorrect: false
-      explanation: "That's incorrect. The Azure VMAccess extension allows an administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
+      explanation: "That's incorrect. The Azure VM Access extension allows an administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
     - content: "BGInfo."
       isCorrect: false
       explanation: "That's incorrect. The Azure BGInfo extension allows an administrator to configure the wallpaper on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
