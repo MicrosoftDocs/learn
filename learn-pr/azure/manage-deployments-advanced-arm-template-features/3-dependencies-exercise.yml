@@ -6,7 +6,7 @@ metadata:
   description: Use the _dependsOn_ construct to define dependencies between resources and decide deployment order.
   author: softchris
   ms.author: chnoring
-  ms.date: 12/01/2020
+  ms.date: 12/09/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
