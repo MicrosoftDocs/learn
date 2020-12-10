@@ -1,4 +1,4 @@
-In past modules, we introduced the [Truffle Suite](https://www.trufflesuite.com/?azure-portal=true), a set of tools to make blockchain development easier. And we used [Truffle](https://www.trufflesuite.com/truffle?azure-portal=true) and [Ganache CLI](https://www.trufflesuite.com/ganache?azure-portal=true) to help with the development, deployment, and testing of smart contracts.
+In past modules, we introduced the [Truffle Suite](https://www.trufflesuite.com/?azure-portal=true), a set of tools that make blockchain development easier. And we've used [Truffle](https://www.trufflesuite.com/truffle?azure-portal=true) and [Ganache CLI](https://www.trufflesuite.com/ganache?azure-portal=true) to help with the development, deployment, and testing of smart contracts.
 
 This unit introduces the next member of the Truffle Suite, [Drizzle](https://www.trufflesuite.com/drizzle?azure-portal=true). Drizzle is a collection of front-end libraries that make writing dapp user interfaces easier and more predictable.
 
@@ -6,11 +6,11 @@ This unit introduces the next member of the Truffle Suite, [Drizzle](https://www
 
 ### About Drizzle
 
-Drizzle is built with JavaScript. It works particularly well with and has great support for [React.js](https://reactjs.org/?azure-portal=true), which is the most popular JavaScript library for building front-end user interfaces. However, there is also an option to use front-end JavaScript frameworks like [Vue.js](https://vuejs.org/) or [Angular](https://angular.io/).
+Drizzle is built with JavaScript. It works particularly well with and has great support for [React](https://reactjs.org/?azure-portal=true), which is the most popular JavaScript library for building front-end user interfaces. However, there's also an option to use front-end JavaScript frameworks like [Vue.js](https://vuejs.org?azure-portal=true) or [Angular](https://angular.io?azure-portal=true).
 
-Drizzle helps to synchronize and manage smart contract data. This is significant so that all the blockchain data stays in sync with your dapp interface. It uses a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for users and any environment they use.
+Drizzle helps to synchronize and manage smart contract data. This is significant so that all the blockchain data stays in sync with your dapp interface. It uses a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for all users and any environment they use.
 
-Drizzle dapps are able to interact with the smart contacts by using a JSON-RPC layer called the Web3 API.
+Drizzle dapps interact with smart contacts by using a JSON-RPC layer called the Web3 API.
 
 [JSON-RPC](https://www.jsonrpc.org/specification?azure-portal=true) is a stateless, lightweight remote procedure call (RPC) protocol that uses JSON for the payload. This specification defines several data structures and the rules around their processing.
 
@@ -24,9 +24,9 @@ Drizzle is completely modular, which means you can use as much or as little of t
 
 The three core packages are:
 
-- **drizzle**: The core library responsible for web3, account and contract instantiation. It is also used to wire up the smart contracts to the dapp.
+- **drizzle**: The core library responsible for web3, account, and contract instantiation. It's also used to wire up the smart contracts to the dapp.
 - **drizzle-react**: A library that abstracts the core Drizzle functionality into usable React components.
-- **drizzle-react-components**: A library of useful user interface components for common dapp functions. The library currently includes ContractData, ContractForm and LoadingContainer.
+- **drizzle-react-components**: A library of useful user interface components for common dapp functions. The library currently includes ContractData, ContractForm, and LoadingContainer.
 
 :::image type="content" source="../media/modular-overview.png" alt-text="Screenshot that shows Drizzle's architecture overview.":::
 
