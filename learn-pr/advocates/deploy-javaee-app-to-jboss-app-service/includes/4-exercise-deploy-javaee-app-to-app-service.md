@@ -203,8 +203,27 @@ https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 
 ## Configure DB Connection from JBoss EAP
 
-In our Sample Application, it will connect to MySQL DB to show the data. In order to access to the `Azure Database for MySQL`, you need configure the `DataSource` in JBoss EAP, and you need specify the JNDI name into your source code.
+In our Sample Application, it will communicate with MySQL DB to show the data. In order to access to the `Azure Database for MySQL`, you need configure the `DataSource` in JBoss EAP, and you need specify the JNDI name into your source code.
 
+## What is Data Source
+
+A Datasource is a component used to connect to a Database. Through the datasource, an application can persist the data and can reuse it in later. A Datasource can configure for any Database by using JDBC Driver.  
+
+In this module, we will connect to MySQL Database. If you deploy the Sample Application, you already include a MySQL JDBC Driver in your deployment package `(ROOT.war)`. Bacause in the Maven Project Configuration in `pom.xml`, we specify the MySQL JDBC Driver as follows.
+
+```xml
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql-jdbc-driver}</version>
+    </dependency>
+```
+
+As a result, JBoss EAP automatically install the JDBC Driver. And you can refer the name of MySQL JDBC Driver as follows.
+
+```text
+ROOT.war_com.mysql.cj.jdbc.Driver_8_0
+```
 
 ### Create the MySQL DataSource in JBoss EAP
 
@@ -233,7 +252,8 @@ data-source add --name=JPAWorldDataSourceDS \
 --driver-name=ROOT.war_com.mysql.cj.jdbc.Driver_8_0 \
 --user-name=${MYSQL_USER} \
 --password=${MYSQL_PASSWORD} \
---max-pool-size=5 \
+--min-pool-size=5 \
+--max-pool-size=20 \
 --blocking-timeout-wait-millis=5000 \
 --enabled=true \
 --driver-class=com.mysql.cj.jdbc.Driver \
