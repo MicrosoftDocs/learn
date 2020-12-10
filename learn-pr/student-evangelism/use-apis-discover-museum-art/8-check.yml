@@ -1,8 +1,8 @@
   ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.explore-art-world-apis.8-check
+uid: learn.student-evangelism.use-apis-discover-museum-art.8-check
 metadata:
   title: Knowledge check
-  description: Knowledge check
+  description: Check your knowledge.
   ms.date: 12/09/2020
   author: jlooper
   ms.author: shanama 
@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Knowledge check
 durationInMinutes: 2
-content: |
 quiz:
   title: Check your knowledge.
   questions:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.explore-art-world-apis.7-use-libraries
+uid: learn.student-evangelism.use-apis-discover-museum-art.7-use-libraries
 metadata:
   title: Use libraries
   description: Use libraries.
@@ -8,6 +8,7 @@ metadata:
   ms.author: shanama 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: ''
 title: Use libraries
 durationInMinutes: 5
 content: |

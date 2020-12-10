@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.explore-art-world-apis
+uid: learn.student-evangelism.use-apis-discover-museum-art
 metadata:
   title: Explore the art world by using RESTful APIs
   description: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art from museum APIs.
@@ -17,9 +17,9 @@ abstract:  |
   - various strategies to connect to external APIs
   - how to query two different museum APIs
 prerequisites: | 
-- an internet-connected browser such as Edge
-- Node.js installed locally
-- NPM installed locally
+  - An internet-connected browser such as Edge
+  - Node.js installed locally
+  - NPM installed locally
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner
@@ -29,14 +29,14 @@ roles:
 products:
 - "vs-code"
 units:
-- learn.student-evangelism.explore-art-world-apis.1-introduction
-- learn.student-evangelism.explore-art-world-apis.2-build-local-api
-- learn.student-evangelism.explore-art-world-apis.3-query-met-api
-- learn.student-evangelism.explore-art-world-apis.4-authentication-strategies
-- learn.student-evangelism.explore-art-world-apis.5-query-cooper-hewitt-api
-- learn.student-evangelism.explore-art-world-apis.6-handle-responses
-- learn.student-evangelism.explore-art-world-apis.7-use-libraries
-- learn.student-evangelism.explore-art-world-apis.8-check
-- learn.student-evangelism.explore-art-world-apis.9-summary
+- learn.student-evangelism.use-apis-discover-museum-art.1-introduction
+- learn.student-evangelism.use-apis-discover-museum-art.2-build-local-api
+- learn.student-evangelism.use-apis-discover-museum-art.3-query-met-api
+- learn.student-evangelism.use-apis-discover-museum-art.4-authentication-strategies
+- learn.student-evangelism.use-apis-discover-museum-art.5-query-cooper-hewitt-api
+- learn.student-evangelism.use-apis-discover-museum-art.6-handle-responses
+- learn.student-evangelism.use-apis-discover-museum-art.7-use-libraries
+- learn.student-evangelism.use-apis-discover-museum-art.8-check
+- learn.student-evangelism.use-apis-discover-museum-art.9-summary
 badge:
-  uid: learn.student-evangelism.explore-art-world-apis.badge
+  uid: learn.student-evangelism.use-apis-discover-museum-art.badge
