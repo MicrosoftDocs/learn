@@ -22,7 +22,7 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 > When you open the **Logs** page for the first time, you may be redirected to the **Queries** window. Close the **Queries** window and return to the **New Query 1** section.
 
 3. On the **Azure Sentinel | Logs** page, in the **Tables** pane, from the **Group by: Solution** drop-down menu, select **Category**.
-4. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category, move the cursor over the **Azure Activity** table or use the Tab key to navigate the table, and then select **Preview data**.
+4. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category, move the cursor over the **Azure Activity** table or use the Tab key to navigate to the table, and then select **Preview data**.
 5. In the **AzureActivity** window, select **See in query editor**. This option enables you to preview the data and to check if the results will be as you expect before you actually run a query with it.
 
 :::image type="content" source="../media/07-Tables-Pane.png" alt-text="Screenshot of the Tables pane." border="true":::
