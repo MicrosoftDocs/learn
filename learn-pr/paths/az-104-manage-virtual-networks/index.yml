@@ -45,9 +45,9 @@ modules:
 - learn.control-network-traffic-flow-with-routes
 - learn.connect-on-premises-network-with-vpn-gateway
 - learn.connect-on-premises-network-with-expressroute
-- learn.load-balance-web-traffic-with-application-gateway
 - learn.improve-app-scalability-resiliency-with-load-balancer
 - troubleshoot-inbound-network-connectivity-azure-load-balancer
+- learn.load-balance-web-traffic-with-application-gateway
 - learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.az-104-manage-virtual-networks.trophy

@@ -35,7 +35,7 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
 
     This time, the app won't generate any output and might eventually time out with the message "Error sending request to Load Balancer: The operation was canceled." Press **Enter** to stop the application.
 
-1. In the Azure portal, select **Dashboard**.
+1. In the Azure portal, select **Dashboard** > **dashboard-learn-ts-loadbalancer**.
 1. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
 
     > [!div class="mx-imgBorder"]
@@ -62,7 +62,8 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
 1. Run the following command to get the password that you created when you ran the initial setup script. Copy this password for the next step.
 
     ```bash
-    echo $PASSWORD
+    cd ~/load-balancer/src/scripts
+    cat passwd.txt
     ```
  
 1. Sign in to the jump box. Replace **azureuser** if you used a different user name.
@@ -124,7 +125,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **retailapphealthprobe** page](../media/5-retailapphealthprobe.png)
 
-1. Wait for a minute.
+1. Wait a few minutes.
 1. Select **Dashboard** in the menu on the left of the Azure portal.
 
 1. On the dashboard, select the chart showing the Health Probe Status and Data Path Availability metrics. The **Data Path Availability** metric should rise to 100, but the **Health Probe Status** metric will hover around 50. There's now a path available from the load balancer to at least one virtual machine, but only 50 percent of the virtual machines are showing as healthy.
