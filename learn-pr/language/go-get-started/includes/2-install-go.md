@@ -11,14 +11,14 @@ To install Go on macOS, you can use Homebrew, or download the installer from the
 ### Install Go by using Homebrew
 The simplest way to install Go is by using [Homebrew](https://brew.sh/).
 
-Open a terminal prompt, and run the following commands to install the latest version of Go:
+Open a Terminal prompt, and then run the following commands:
 
 ```
 brew update
 brew install go
 ```
 
-Homebrew installs Go at `/usr/local/go`, and the path `/usr/local/go/bin` should now be part of the **$PATH** environment variable. You might need to restart your terminal prompt to confirm that Go is installed correctly.
+Homebrew installs Go at `/usr/local/go`, and the path `/usr/local/go/bin` should now be part of the **$PATH** environment variable. You might need to restart your Terminal prompt to confirm that Go is installed correctly.
 
 To confirm that Go is installed, run the following command:
 
@@ -61,7 +61,7 @@ To install Go on Linux, download the Go installer from the [Go downloads page](h
 
 **Step 1: Download the Go installer**
 
-On the [Go download page](https://golang.org/dl/), in the “Featured downloads” section, select the **Linux** option.  
+On the [Go downloads page](https://golang.org/dl/), in the “Featured downloads” section, select the **Linux** option.  
 
 You might see a window prompting you to allow downloading files from golang.org. If so, select **Allow**.
 
@@ -123,7 +123,7 @@ After you've downloaded the Go installer locally, you can start installing Go. T
 By default, the .msi file installs Go at `C:\Go`, and the path `C:\Go\bin` should now be part of the **$PATH** environment variable.
 
 **Step 3: Confirm that Go is installed correctly**
-After you've configured the Go distribution, confirm that Go works. To do so, open a new command prompt window or Powershell, and run the following command:
+After you've configured the Go distribution, confirm that Go works. To do so, open a new Command Prompt or PowerShell window, and then run the following command:
 
 ```
 go version
