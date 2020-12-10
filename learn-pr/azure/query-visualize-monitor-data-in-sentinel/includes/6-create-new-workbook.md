@@ -49,8 +49,8 @@ When you create a query, Azure Sentinel adds a new Run Query step to the workboo
 
 On the header bar, there are several fields that provide you options to tune the output of the query.
 
-|Run Query|Use this option to test the result of the query.|
 |---|---|
+|Run Query|Use this option to test the result of the query.|
 |Samples|Microsoft provides sample code that contains sample queries that you can add to the workbook.|
 |Data Source|Use this option to specify the data source for the query.|
 |Resource type|Use this option select the type of resource.|
