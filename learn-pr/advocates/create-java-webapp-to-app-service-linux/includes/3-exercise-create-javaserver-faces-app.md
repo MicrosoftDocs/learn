@@ -1,13 +1,12 @@
-You've been asked to create a Java Server Faces web application that can handle Form submissions. 
-You'll build a web application and deploy it locally to a Tomcat server.
+You've been asked to create a JavaServer Faces (JSF) web application that can handle Form submissions. You'll build a web application and deploy it locally to a Tomcat server.
 
-## Create a simple JSF Web app on Tomcat
+## Create a simple JSF web app on Tomcat
 
-In the exercise, we'll create a Maven Project your Java Web application. After you have created the project, you need to configure three configurations. First one is to add the dependency libraries to `pom.xml` file. Second is to create a CDI configuration file as `beans.xml` to use the CDI. Third is to configure the JSF on `web.xml` file. After the configurations, we can create a JSF Web Page and create the Backing Bean for server-side backend operation. Finally we'll evaluate it on local Tomcat environment.
+In this exercise, we'll create a Maven project for your Java web application. After you've created the project, you'll need to configure three configurations. The first one is to add the dependency libraries to the `pom.xml` file. The second is to create a CDI configuration file as `beans.xml` to use the Contexts and Dependency Injection (CDI). The third is to configure the JSF on the `web.xml` file. After the configurations, we can create a JSF web page and create the backing bean for the server-side back-end operation. Finally, we'll evaluate it on the local Tomcat environment.
 
 ### Create a Maven project
 
-Execute the following Maven archetype command. This command will create a Maven project for your Java web application:
+Execute the following Maven archetype command. This command will create a Maven project for your Java web application.
 
    ```bash
    mvn archetype:generate \
@@ -18,7 +17,7 @@ Execute the following Maven archetype command. This command will create a Maven 
    -DinteractiveMode=false
    ```
 
-You'll see following output:
+You'll see the following output:
 
    ```text
    [INFO] Parameter: package, Value: com.microsoft.azure.samples
@@ -35,7 +34,7 @@ You'll see following output:
    [INFO] ------------------------------------------------------------------------
    ```
 
-The following files and directories are now available:
+The following files and directories are now available.
 
    ```xml
 ├── pom.xml
@@ -48,11 +47,11 @@ The following files and directories are now available:
             └── index.jsp
    ```
 
-### Modify Maven pom.xml file
+### Modify the Maven pom.xml file
 
 To use the JSF libraries, we need to add the following dependency libraries into `pom.xml`.
 
-Replace the contents of your  `pom.xml` with the below:
+Replace the contents of your `pom.xml` with the following code:
 
    ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -117,17 +116,16 @@ Replace the contents of your  `pom.xml` with the below:
 </project>
    ```
 
-If you would like to use the Java SE 11 instead of Java 8, modify the following `pom.xml` entry:
+If you want to use Java SE 11 instead of Java 8, modify the following `pom.xml` entry:
 
    ```xml
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
    ```
 
-### Enable Contexts and Dependency Injection (CDI)
+### Enable Contexts and Dependency Injection
 
-Next, make CDI available to your web application.
-Create a `beans.xml` file under the `src/main/WEB-INF` directory and describe the following contents.
+Next, make CDI available to your web application. Create a `beans.xml` file under the `src/main/WEB-INF` directory, and describe the following contents:
 
    ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -170,8 +168,7 @@ Next, to recognize all files with the `xhtml` extension as JSF Facelets, make th
 
 ### Modify the name of index.jsp
 
-Now that the environment settings for running JSF have been completed, it's time to create the JSF page.
-JSF web pages are written in XHTML file format instead of JSP, as set in `web.xml` above. So, change the name of the `index.jsp` file that was automatically generated when the project was created to `index.xhtml`.
+Now that the environment settings for running JSF have been completed, it's time to create the JSF page. JSF web pages are written in XHTML file format instead of JSP, as set in `web.xml` in the preceding example. So, change the name of the `index.jsp` file that was automatically generated when the project was created to `index.xhtml`.
 
    ```bash
 mv index.jsp index.xhtml
@@ -179,7 +176,7 @@ mv index.jsp index.xhtml
 
 ### Create a basic web page for JSF
 
-Delete all the contents described in `index.xhtml` and copy the following code:
+Delete all the contents described in `index.xhtml`, and copy the following code:
 
    ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -201,10 +198,9 @@ Delete all the contents described in `index.xhtml` and copy the following code:
 </html>
    ```
 
-### Create JSF backing bean
+### Create a JSF backing bean
 
-Next, create a backing bean to implement server-side backend processing.
-Create a new directory for your Java package, which will use to create the backing bean under the `src/main` directory.
+Next, create a backing bean to implement server-side back-end processing. Create a new directory for your Java package, which will be used to create the backing bean under the `src/main` directory.
 
 ```bash
 mkdir src/main/java
@@ -213,7 +209,7 @@ mkdir src/main/java/com/microsoft/azure
 mkdir src/main/java/com/microsoft/azure/samples
 ```
 
-Then create a `IndexController.java` file and copy and paste the JSF Backing Bean code below.
+Then create an `IndexController.java` file, and copy and paste the JSF backing bean code that follows:
 
 ```java
 package com.microsoft.azure.samples;
@@ -242,8 +238,7 @@ public class IndexController implements Serializable{
 }
 ```
 
-This last action completes your program.
-The directory structure after implementing the program is as follows.
+This last action completes your program. The directory structure after implementing the program is as follows:
 
 ```text
 ├── pom.xml
@@ -263,12 +258,11 @@ The directory structure after implementing the program is as follows.
             └── index.xhtml
 ```
 
-### Run in local Tomcat environment
+### Run in a local Tomcat environment
 
-If you installed Tomcat 9.0.x on your local environment, go to the next step, else go to the next section.
+If you installed Tomcat 9.0.x on your local environment, go to the next step. Otherwise, go to the next section.
 
-Compile the source code and run it in a locally installed Tomcat environment.
-Execute the following command.
+Compile the source code and run it in a locally installed Tomcat environment. Execute the following command.
 
 #### Compile and package the Java project
 
@@ -286,16 +280,16 @@ Copy the artifact war file to the directory in the Tomcat.
 cp target/azure-javaweb-app.war /$INSTALL_DIR/apache-tomcat-9.0.39/webapps/
 ```
 
-#### Start the Tomcat Server
+#### Start the Tomcat server
 
-Start the Tomcat Server.
+Start the Tomcat server.
 
 ```bash
 $INSTALL_DIR/apache-tomcat-9.0.39/bin/startup.sh
 ```
 
-After you start Tomcat, browse to `http://localhost:8080/azure-javaweb-app/` and you'll see the screen below.
+After you start Tomcat, browse to `http://localhost:8080/azure-javaweb-app/` and you'll see the following screen:
 
 :::image type="content" source="../media/javaserver-faces-helloworld.png" alt-text="JSF HelloWorld Page":::
 
-You have successfully run your JSF web application in your local Tomcat environment.
+You've successfully run your JSF web application in your local Tomcat environment.
