@@ -1,12 +1,12 @@
-You should scale out a system when you expect an increase in traffic. You might also scale out in response to declining performance.
+You should scale-out a system when you expect an increase in traffic. You might also scale-out in response to declining performance.
 
-Remember that, in the hotel reservation system example, you increase the number of instances of the web app when you anticipate extra traffic because of a special event, a special offer, or because of seasonal fluctuations. You scale the system back when the demand drops.
+Remember that, in the hotel reservation system example, you increase the number of instances of the web app when you anticipate extra traffic because of a special event, a special offer, or seasonal fluctuations. You scale the system back when the demand drops.
 
-In this exercise, you'll create an App Service plan and deploy a web app using this plan. You'll monitor the performance of the web app under load. You'll then scale out the app and verify that its performance has improved as a result.
+In this exercise, you'll create an App Service plan and deploy a web app using this plan. You'll monitor the performance of the web app under load. You'll then scale-out the app and verify that its performance has improved as a result.
 
-The exercise uses a sample web app that implements a web API. The web API exposes HTTP POST and GET operations that create and retrieve customer bookings for a hotel reservations web site. The bookings aren't actually saved, and the GET operation simply retrieves dummy data.
+The exercise uses a sample web app that implements a web API. The web API exposes HTTP POST and GET operations that create and retrieve customer bookings for a hotel reservations website. The bookings aren't saved, and the GET operation simply retrieves dummy data.
 
-The exercise also runs a client app that simulates a number of users issuing POST and GET operations simultaneously. This app provides the workload that's used to test the performance of the web app before and after scaling.
+The exercise also runs a client app that simulates several users issuing POST and GET operations simultaneously. This app provides the workload that's used to test the performance of the web app before and after scaling.
 
 ## Create an App Service plan and web app
 
@@ -37,7 +37,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Build and deploy the web app
 
-1. Open the Cloud Shell in the Azure portal. Run this command to download the source code for the hotel reservation system:
+1. Open the Cloud Shell in the Azure portal (at the top-right, looks like a square with >_ inside). Run this command to download the source code for the hotel reservation system:
 
      ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
@@ -102,7 +102,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     ```
 
     > [!NOTE]
-    > The `NumClients` setting in this file specifies the number of clients that will simultaneously try to connect to the web app and perform work. The work consists of creating a reservation and then running a query to fetch the details of the reservation. All the data used is fake. It's not actually persisted anywhere. Leave this value set to `100`.
+    > The `NumClients` setting in this file specifies the number of clients that will simultaneously try to connect to the web app and perform work. The work consists of creating a reservation and then running a query to fetch the details of the reservation. All the data used is fake. It's not persisted anywhere. Leave this value set to `100`.
 
 1. Save the file and close the code editor.
 
@@ -112,7 +112,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet build
     ```
 
-1. Run the client app. You'll see a number of messages appear as the clients start running, make reservations, and run queries. Allow the system to run for a couple of minutes. The responses will be slow, and soon the client requests will start to fail with HTTP 408 (Timeout) errors.
+1. Run the client app. You'll see several messages appear as the clients start running, make reservations, and run queries. Allow the system to run for a couple of minutes. The responses will be slow, and soon the client requests will start to fail with HTTP 408 (Timeout) errors.
 
     ```bash
     dotnet run
@@ -125,20 +125,20 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard.
 
-   - CPU Time. Select the Sum aggregation.
-   - Http Server Errors. Select the Sum aggregation.
-   - Http 4.xx. Select the Sum aggregation.
-   - Average Response Time. Select the Avg aggregation.
+   - Select **Add metric** CPU Time. Select the Sum aggregation.
+   - Select **Add metric** Http Server Errors. Select the Sum aggregation.
+   - Select **Add metric** Http 4.xx. Select the Sum aggregation.
+   - Select **Add metric** Average Response Time. Select the Avg aggregation.
 
-1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4.xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the web server is coping with the burden.
+1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4.xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the webserver is coping with the burden.
 
    ![Screenshot showing the performance metrics for the web app before scaling out.](../media/3-web-app-chart-before-scaling-out.png)
 
 1. Leave the client app running while you perform the next task.
 
-## Scale out the web app and verify the performance improvement
+## Scale-out the web app and verify the performance improvement
 
-1. In the Azure portal, in the pane for your web app, under **Settings**, select **Scale out (App Service Plan)**.
+1. In the Azure portal, in the pane for your web app, under **Settings**, select **Scale-out (App Service Plan)**.
 
 1. On the **Configure** page, set the **Instance count** to **5**, and then select **Save**.
 
@@ -146,7 +146,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Switch to the Cloud Shell that's running the client app. You should see fewer requests failing with errors, though you'll still see some that time out.
 
-1. Run the app for another five minutes. Then go to the chart that shows the metrics for the app on the dashboard in the Azure portal. You should see that the CPU time has increased dramatically because there's now five times more CPU power available. The average response time should have dropped, and the number of HTTP 4xx errors should also have decreased. The following chart shows a typical set of results. The point at which scale out occurred is noted.
+1. Run the app for another five minutes. Then go to the chart that shows the metrics for the app on the dashboard in the Azure portal. You should see that the CPU time has increased dramatically because there's now five times more CPU power available. The average response time should have dropped, and the number of HTTP 4xx errors should also have decreased. The following chart shows a typical set of results. The point at which scale-out occurred is noted.
 
     ![Screenshot showing the performance metrics for the web app after scaling out to five instances.](../media/3-web-app-chart-after-scaling-out.png)
 
@@ -154,4 +154,4 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Return to the Cloud Shell that's running the client app. Select Enter to stop the app.
 
-1. In the Azure portal, set the instance count for the App Service plan back to 1.
+1. In the Azure portal, set the instance count for the App Service plan back to 1. 

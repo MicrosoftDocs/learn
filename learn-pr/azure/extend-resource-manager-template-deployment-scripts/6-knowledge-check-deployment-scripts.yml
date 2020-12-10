@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-resource-manager-template-deployment-scripts.6-knowledge-check-deployment-scripts
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of deployment scripts
+  author: smurawski
+  ms.author: stmuraws
+  ms.date: 12/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check-deployment-scripts.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are deployment scripts?"
+    choices:
+      - content: "Scripts that create a new Azure Resource Manager deployment."
+        isCorrect: false
+        explanation: "Deployment scripts are a specific Azure Resource Manager resource type that can add custom behavior to a template deployment."
+      - content: "An Azure Automation feature for creating new environments."
+        isCorrect: false
+        explanation: "Deployment scripts are a specific Azure Resource Manager resource type that can add custom behavior to a template deployment."
+      - content: "An Azure Resource Manager resource that can run custom scripts to extend the capabilities of template deployments."
+        isCorrect: true
+        explanation: "Deployment scripts are a specific Azure Resource Manager resource type that can add custom behavior to a template deployment."
+  - content: "How do deployment scripts use the managed identity?"
+    choices:
+      - content: "To impersonate the user who's doing the deployment."
+        isCorrect: false
+        explanation: "The managed identity is used to authenticate the Azure CLI or Azure PowerShell session that's used to run the deployment script. That identity has its own role-based access control and does not assume the deploying user's rights."
+      - content: "To run the Azure CLI or Azure PowerShell commands in the deployment script."
+        isCorrect: true
+        explanation: "The managed identity is used to authenticate the Azure CLI or Azure PowerShell session that's used to run the deployment script."
+      - content: "To create the deployment script resource."
+        isCorrect: false
+        explanation: "The user who's deploying the template creates the deployment script. The managed identity is used to authenticate the Azure CLI or Azure PowerShell session that's used to run the deployment script."
+  - content: "What are the direct ways that data can be passed to deployment scripts?"
+    choices:
+      - content: "Deployment scripts can access template parameters and variables."
+        isCorrect: false
+        explanation: "Deployment scripts can't directly reference template parameters or variables unless they're included in the arguments or environment variables provided to the container instance that's running the deployment script."
+      - content: "Deployment script resources can be passed as arguments and access environment variables."
+        isCorrect: true
+        explanation: "Arguments and environment variables are the two direct ways to pass data to a deployment script."
+      - content: "Deployment scripts can only use the output of resources that they depend on."
+        isCorrect: false
+        explanation: "You can't directly reference outputs of prior resources from a deployment script, but you can use them to populate the arguments or environment variables."
+  - content: "Deployment scripts require:"
+    choices:
+      - content: "A custom container image."
+        isCorrect: false
+        explanation: "Deployment scripts can use default container images. A storage account (either pre-existing or created by the deployment script resource) is required."
+      - content: "An Azure Automation environment."
+        isCorrect: false
+        explanation: "Deployment scripts are not associated with Azure Automation or Azure Functions (which are more general ways to run automation in Azure). A storage account (either pre-existing or created by the deployment scripts resource) is required."
+      - content: "A storage account."
+        isCorrect: true
+        explanation: "You can supply an existing Azure Storage resource for the deployment script, or the deployment script resource will create a storage account and file share."
