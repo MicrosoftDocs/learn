@@ -4,7 +4,6 @@ For this exercise, we'll use the [Drizzle box](https://www.trufflesuite.com/boxe
 
 The Drizzle box comes with several out-of-the-box smart contracts to check out. It also comes with a simplified truffle-config.js file that's designed for development and testing.
 
-
 ## Use Drizzle to wire smart contacts to a front-end server
 
 Unboxing Drizzle results in essentially two separate projects within a
@@ -23,19 +22,15 @@ We'll begin by creating a new directory to house the Truffle Drizzle project. Ma
    Wait a few minutes for the box to be set up. You'll then see the message **Unbox successful, sweet!**.
 4. Open the project in Visual Studio Code, and look at the folder structure.
 
-## Compile, migrate, and test the project
+## Compile and migrate the project
 
 The Truffle Drizzle box comes with three contracts that use the Drizzle components for connecting to a dapp. The **contracts** directory contains the files **ComplexStorage.sol**, **SimpleStorage.sol**, and **TutorialToken.sol**. The Drizzle tutorial uses them.
 
-Let's compile, migrate, and test these contracts before we explore the app components in detail.
+Let's compile and migrate these contracts before we explore the app components in detail.
 
 1. From within Visual Studio Code, open the terminal by going to **Terminal** > **New Terminal**. Then start the Ganache CLI by entering `ganache-cli`.
-1. Open another terminal window by right-clicking the terminal and selecting **New Terminal**.
-1. In that new terminal window, enter `truffle compile` to compile the contracts. Wait for the compilation to successfully finish.
-1. After the compilation is complete, you can test the contracts. The Truffle box comes with the file **simplestorage.js** for testing the **Simple Storage** smart contract. In the terminal window, enter `truffle test`.
-1. After the tests successfully run, you can deploy the contracts. The **migrations** folder has JavaScript files that help you deploy contracts to the network of your choice. The **2_deploy_contracts.js** file in the **migrations** folder will migrate the smart contracts in this project. 
-
-   Enter `truffle migrate --network develop`. Then wait for the migration to successfully finish.
+1. Right-click on any of the contracts and select **Build Contracts**. Wait for the build and compilation to successfully finish.
+1. Right-click on any of the contracts again and select **Deploy Contracts**. When the window for deploy destination appears, select the **develop** network. Wait a minute for the migration to complete successfully.
 
 ## Explore the dapp components
 
