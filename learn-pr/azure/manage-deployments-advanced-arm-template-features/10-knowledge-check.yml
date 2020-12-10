@@ -26,7 +26,7 @@ quiz:
         - content: Add a _dependsOn_ construct on a resource and add the name or ID of the resource it depends on.
           explanation: This is how you would create a dependency between one or many resources.
           isCorrect: true
-    - content: A condition element is used to?
+    - content: "The condition element is used to:"
       choices:
         - content: Conditionally set values on a resource's attribute.
           isCorrect: false

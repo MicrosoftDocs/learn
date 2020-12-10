@@ -70,7 +70,7 @@ Because the condition provisions the storage account only when `environment` equ
 1. Create a PowerShell variable that holds the storage account name.
 
     ```PowerShell
-    $STORAGE_ACCT_NAME="tailwindsa"+ (Get-Random -COUNT 1 -Maximum 9999999 ))
+    $STORAGE_ACCT_NAME="tailwindsa"+ (Get-Random -COUNT 1 -Maximum 9999999 )
     ```
 
     Storage account names must be unique. The `Get-Random` part ensures that the storage account name ends in a random series of numbers.
@@ -92,15 +92,17 @@ To verify this fact, you run the `Get-AzStorageAccount` command to check whether
 
 1. Run the command `Get-AzStorageAccount`:
 
-   ```powershell
-   Get-AzStorageAccount -Name $STORAGE_ACCT_NAME -ResourceGroupName <rgn>sandbox resource group</rgn>
-   ```
+    ```powershell
+    Get-AzStorageAccount -Name $STORAGE_ACCT_NAME -ResourceGroupName <rgn>sandbox resource group</rgn>
+    ```
 
-   You will see an output similar to the below response. Your resource has not been deployed, your `condition` construct has done its job:
+    Your output resembles this:
 
-   ```output
-   Get-AzStorageAccount: The Resource 'Microsoft.Storage/storageAccounts/{the name you chose for storage account}' under resource group '<rgn>name of resource group</rgn>' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix
-   ```
+    ```output
+    Get-AzStorageAccount: The Resource 'Microsoft.Storage/storageAccounts/tailwindsa4736629' under resource group '<rgn>name of resource group</rgn>' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix
+    ```
+
+    This tells you that the storage account has not yet been provisioned. You expect this because you have not yet deployed to the _Production_ environment.
 
 ## Provision the Production environment
 
@@ -139,13 +141,12 @@ To verify this fact, you run the `Get-AzStorageAccount` command again to verify 
 
    Your output resembles this:
 
-   ```output
-   StorageAccountName     ResourceGroupName              PrimaryLocation  SkuName        Kind      AccessTier CreationTime        ProvisioningStat
-                                                                                                                    e
-   ------------------     -----------------              ---------------  -------        ----      ---------- ------------        ----------------
-   {your storage account} <rgn>your resource group</rgn> northeurope      Standard_RAGRS StorageV2 Hot        18/01/2020 20:34:35 Succeeded
-   ```
-  
+    ```output
+    Location Name              Type                              Kind
+    -------- ----              ----                              ----
+    westus   tailwindsa4736629 Microsoft.Storage/storageAccounts StorageV2
+    ```
+
    These values tell you that the storage account has been provisioned as you expect.
 
 Although this is a basic example, you see how to deploy based on a condition.

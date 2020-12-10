@@ -11,7 +11,19 @@ Create a Key Vault and allow deploy time access. To do so:
    $KVNAME="tailwind-secrets" + (Get-Random -Count 1 -Maximum 9999999)
    ```
 
-1. Run `$KVNAME` in the terminal and copy the value, you will use it when you create a Key Vault in the Azure Portal next.
+1. Run `$KVNAME` to print its value:
+
+    ```powershell
+    $KVNAME
+    ```
+
+    Your output resembles this (the number you see will be different):
+
+    ```output
+    tailwind-secrets5978564
+    ```
+
+    Copy the value somewhere convenient for the next step.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -23,17 +35,18 @@ Create a Key Vault and allow deploy time access. To do so:
 
 1. Select the **Create** button to start configuring the Key Vault.
 
-1. In the creation pane, paste the value of `$KVNAME`, for the Key Vault name.
+1. In the creation pane, specify these values:
 
-1. Select **Review and Create**.
+    1. **Resource group**: <rgn>resource group name</rgn>.
+    1. **Key vault name**: Your value of `$KVNAME`, for example, *tailwind-secrets5978564*.
 
-1. Select **Create**. This should take a minute or so. Once the resource has been created, go to the resource blade.
+1. Select **Review + create**.
 
-1. To allow access to Key Vault during deployment, ensure you are in the detail page for the resource, then select **Access Policies** from the left menu. Check the option **Azure Resource Manager for template deployment** and select **Save**.
+1. Select **Create**. This should take a minute or so. Once the resource has been created, select **Go to resource**.
 
-1. Run `pwsh` to start a PowerShell shell in a terminal.
+1. Select **Access Policies**. Enable the option **Azure Resource Manager for template deployment** and select **Save**.
 
-1. Run the `ConvertTo-SecureString` command and assign it to the `secretSecureString` PowerShell variable:
+1. From your PowerShell session, run the `ConvertTo-SecureString` cmdlet and assign the result to the `secretSecureString` variable:
 
    ```powershell
    $secretSecureString = ConvertTo-SecureString 'insecurepassword123!' -AsPlainText -Force
@@ -49,7 +62,7 @@ Create a Key Vault and allow deploy time access. To do so:
 
 Here, you create a parameter file that contains the VM's name, the administrator username, and a reference to the VM password in the key vault.
 
-Recall that a parameter file is an alternative way to pass parameters to your ARM template during deployment.
+You can pass parameters to templates from the command line. Recall that a parameter file is an alternative way to pass parameters to your ARM template during deployment. A parameter file enables you to access key vault secrets from your template.
 
 1. Run the following `Get-AzKeyVault` command to print your key vault ID:
 
@@ -60,8 +73,6 @@ Recall that a parameter file is an alternative way to pass parameters to your AR
     The output resembles this:
 
     ```output
-    
-    
     /subscriptions/7c7df858-93a0-4f38-8990-304c836a4e8d/resourceGroups/<rgn>[resource group name]</rgn>/providers/Microsoft.KeyVault/vaults/tailwind-secrets3020
     ```
 
@@ -104,11 +115,11 @@ Here, you deploy the same ARM template that you deployed in the previous exercis
    ```powershell
    New-AzResourceGroupDeployment `
      -TemplateFile "./azuredeploy.json" `
-     -TemplateParameterFile "./azuredeploy.parameters.json"
+     -TemplateParameterFile "./azuredeploy.parameters.json" `
      -dnsLabelPrefix ("vm2-" + (Get-Random -Count 1 -Maximum 9999999))
    ```
 
-   In the previous exercise, you provided each key-value pair in the `-TemplateParameterFile` argument. Here, you specify `"./azuredeploy.parameters.json"` to provide your parameters file.
+   In the previous exercise, you provided each key-value pair directly from the command line. Here, you specify `"./azuredeploy.parameters.json"` to provide your parameters file.
 
    The `dnsLabelPrefix` is set to "vm2-" followed by a random number. This is required to ensure that the DNS name differs from the DNS name you used in the previous exercise.
 
@@ -145,4 +156,4 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
     exit
     ```
 
-Congratulations, you've successfully deployed a Linux VM by using an ARM template. A VM is a common resource type that includes dependent resources.
+Nice work! You've extended your deployment to include a parameters file that reads secret information from Key Vault.
