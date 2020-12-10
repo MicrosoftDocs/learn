@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.2-hyper-v
+metadata:
+  title: What is Hyper-V?
+  description: Describe Windows Server Hyper-V and its components
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Hyper-V?
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-hyper-v.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is not required to implement Hyper-V on a physical server?"
+    choices:
+    - content: "A 64-bit processor with second-level address translation (SLAT) and VM Monitor Mode extensions."
+      isCorrect: false
+      explanation: "That's incorrect. A 64-bit processor with second-level address translation (SLAT) and VM Monitor Mode extensions is one of the requirements."
+    - content: "The guest VM must be running Windows Server 2016 or newer."
+      isCorrect: true
+      explanation: "That's correct. This is a requirement for nested virtualization, not for implementing Hyper-V on a physical server."
+    - content: "Hardware-enforced Data Execution Prevention (DEP) enabled."
+      isCorrect: false
+      explanation: "That's incorrect. Hardware-enforced Data Execution Prevention (DEP) enabled is one of the requirements."
+  - content: "Where can an administrator obtain Integration Services for Windows Server 2019 Hyper-V guest VMs?"
+    choices:
+    - content: "Windows Server installation media"
+      isCorrect: false
+      explanation: "That's incorrect. Updates for Integration Services are obtained and delivered through Windows Update."
+    - content: "Microsoft Downloads"
+      isCorrect: false
+      explanation: "That's incorrect. Updates for Integration Services are obtained and delivered through Windows Update."
+    - content: "Windows Updates"
+      isCorrect: true
+      explanation: "That's correct. Updates for Integration Services are obtained and delivered through Windows Update."
