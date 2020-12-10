@@ -17,7 +17,7 @@ Storage spaces is the simplest example of software-defined storage in non-cluste
 
 A storage space is a storage-virtualization capability that Microsoft has built into Azure Stack HCI, Windows Server, and Windows 10. The storage spaces feature consists of two components:
 
-- Storage pools. This is a collection of physical disks aggregated into a logical disk that you can manage as a single entity. A storage pool can contain physical disks of any type and size.
+- Storage pools is a collection of physical disks aggregated into a logical disk that you can manage as a single entity. A storage pool can contain physical disks of any type and size.
 - Storage spaces. These are virtual disks that you can create from free space in a storage pool. Virtual disks are equivalent to LUNs on a SAN.
 
 ### Reasons for using storage spaces
@@ -25,7 +25,7 @@ A storage space is a storage-virtualization capability that Microsoft has built 
 The most common reasons for using storage spaces include:
 
 - Increasing storage resiliency levels, such as mirroring and parity. Virtual disks resiliency resembles Redundant Array of Independent Disks (RAID) technologies.
-- Improving storage performance by using storage tiers. Storage tiers allow you optimize the use of different disk types in a storage space. For example, you could use very fast but small-capacity solid-state drives (SSDs) with slower, but large-capacity hard disks. When you use this combination of disks, Storage Spaces automatically moves data that is accessed frequently to the faster disks, and then moves data that is accessed less often to the slower disks.
+- Improving storage performance by using storage tiers. Storage tiers allow you optimize the use of different disk types in a storage space. For example, you could use fast but small-capacity solid-state drives (SSDs) with slower, but large-capacity hard disks. When you use this combination of disks, Storage Spaces automatically moves data that is accessed frequently to the faster disks, and then moves data that is accessed less often to the slower disks.
 - Improving storage performance by using write-back caching. The purpose of write-back caching is to optimize writing data to the disks in a storage space. Write-back caching works with storage tiers. If the server that is running the storage space detects a peak in disk-writing activity, it automatically starts writing data to the faster disks.
 - Increasing storage efficiency by using thin provisioning. Thin provisioning enables storage to be allocated readily on as needed basis. Instead of the traditional fixed storage allocation method in which large portions of storage capacity are preallocated but might remain unused, thin provisioning optimizes any available storage by reclaiming storage that is no longer needed by using a process known as trim.
 
@@ -64,13 +64,13 @@ SMB 3.x provides support for SMB Multichannel and SMB Direct.
 
 SMB Multichannel is part of the implementation of the SMB 3.x protocol, which significantly improves network performance and availability for devices running Windows Server or Azure Stack HCI cluster nodes operating as file servers. SMB Multichannel allows such servers to take advantage of multiple network connections to provide the following capabilities:
 
-- Increased throughput. The file server can simultaneously transmit more data using multiple connections. This is particularly beneficial when using servers with multiple, high-speed network adapters.
+- Increased throughput. The file server can simultaneously transmit more data using multiple connections. This is beneficial when using servers with multiple, high-speed network adapters.
 - Automatic configuration. SMB Multichannel automatically discovers multiple available network paths and dynamically adds connections as required.
 - Network fault tolerance. If an existing connection is terminated because of an issue along one of the network paths to an SMB 3.x server, SMB 3.x clients have a built-in ability to automatically fail over to another one.
 
 ## SMB Direct
 
-SMB Direct optimizes the use of remote direct memory access (RDMA) network adapters for SMB traffic, allowing them to function at full speed with very low latency and low CPU utilization. This makes SMB Direct suitable for scenarios in which workloads such as Hyper-V or Microsoft SQL Server rely on remote SMB 3.x file servers to emulate local storage. SMB Direct is available and enabled by default on all currently supported versions of Windows Server and Azure Stack HCI.
+SMB Direct optimizes the use of remote direct memory access (RDMA) network adapters for SMB traffic, allowing them to function at full speed with low latency and low CPU utilization. This makes SMB Direct suitable for scenarios in which workloads such as Hyper-V or Microsoft SQL Server rely on remote SMB 3.x file servers to emulate local storage. SMB Direct is available and enabled by default on all currently supported versions of Windows Server and Azure Stack HCI.
 
 SMB Multichannel is responsible for detecting the RDMA capabilities of network adapters necessary to enable SMB Direct. It automatically creates two RDMA connections per interface. SMB clients automatically detect and use multiple network connections if an appropriate configuration is identified.
 
@@ -116,7 +116,7 @@ Using local disks in this manner requires a high-bandwidth, low-latency network 
 There are two deployment models of Hyper-V workloads using Storage Spaces Direct:
 
 - Disaggregated. In the disaggregated model, the Hyper-V hosts (compute) are in a separate cluster from the Storage Spaces Direct hosts (storage). You configure Hyper-V VMs to store their files in the storage cluster by relying on SOFS. This allows you to scale the Hyper-V cluster (compute) and S2D-based cluster (storage) independently.
-- Hyperconverged. In the hyperconverged model, the cluster nodes operate as both Hyper-V hosts (compute) and Storage Spaces Direct hosts (storage). This means that compute and storage are co-located on the same set of cluster nodes. To scale up the cluster, you need to increase the number of its nodes.
+- Hyperconverged. In the hyperconverged model, the cluster nodes operate as both Hyper-V hosts (compute) and Storage Spaces Direct hosts (storage). This means that compute and storage are colocated on the same set of cluster nodes. To scale up the cluster, you need to increase the number of its nodes.
 
 > [!NOTE]
 > Azure Stack HCI is an example of the hyperconverged model, which does not use SOFS.

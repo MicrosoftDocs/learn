@@ -49,11 +49,11 @@ New releases of Windows Server and updates add features to Hyper-V for supportin
 
 - Disaster recovery and backup. Hyper-V supports Hyper-V Replica, which creates copies of VMs in other physical locations. You can use these copies to restore VM instances as needed. Other features such as production checkpoints and support for Volume Shadow Copy Service (VSS) facilitate application-consistent backups of VM states.
 - Security: Hyper-V supports security features such as secure boot and shielded VMs. Secure boot verifies digital signatures on files during the boot process to help protect against malware. Virtual disks in shielded VMs are encrypted to secure access and the VMs can only run on specific protected hosts.
-- Optimization. For all supported guest operating systems, Hyper-V includes a set of customized services and drivers called Integration Services. These Integration Services include Time Synchronization, Operating System Shutdown, Data Exchange, Heartbeat, Backup and Guest Services. You can obtain updates for Integration Services through Windows Update.
+- Optimization. For all supported guest operating systems, Hyper-V includes a set of customized services and drivers called Integration Services. These Integration Services includes Time Synchronization, Operating System Shutdown, Data Exchange, Heartbeat, Backup, and Guest Services. You can obtain updates for Integration Services through Windows Update.
 
 ## System requirements for Hyper-V
 
-You should plan and carefully assess your VM's service, resource, and capacity requirements before deploying production workloads to Hyper-V. The basic hardware requirements for a Hyper-V host include:
+Always plan and carefully assess your VM's service, resource, and capacity requirements before deploying production workloads to Hyper-V. The basic hardware requirements for a Hyper-V host include:
 
 - A 64-bit processor with second-level address translation (SLAT) and VM Monitor Mode extensions
 - Intel Virtualization Technology (Intel VT) or AMD Virtualization (AMD-V) enabled

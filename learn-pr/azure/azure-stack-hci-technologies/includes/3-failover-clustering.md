@@ -1,8 +1,8 @@
-Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex solutions. With Failover Clustering, it is possible to accomplish the same objective in a cost-effective manner on commodity hardware. Failover Clustering will be a required component of your proof-of-concept environment at Contoso.
+Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex solution. With Failover Clustering, it is possible to accomplish the same objective in a cost-effective manner on commodity hardware. Failover Clustering will be a required component of your proof-of-concept environment at Contoso.
 
 # What is Failover Clustering?
 
-Failover Clustering is a Windows Server and Azure Stack HCI feature that provides high availability of common workloads, including file shares, VMs, database management systems, and messaging services. To accomplish this, you create a failover cluster consisting of multiple servers running the Windows Server or Azure Stack HCI operating system. If a server that is part of a failover cluster fails or becomes unavailable, another server in the same failover cluster takes over the task of providing the services that the failed node was offering. This process is called failover and it results in minimal or, in certain cases, no service disruptions for clients that are accessing the service.
+Failover Clustering is a Windows Server and Azure Stack HCI feature that provides high availability of common workloads. This includes file shares, VMs, database management systems, and messaging services. To accomplish this, you create a failover cluster consisting of multiple servers running the Windows Server or Azure Stack HCI operating system. If a server that is part of a failover cluster fails or becomes unavailable, another server in the same failover cluster takes over the task of providing the services that the failed node was offering. This process is called failover and it results in minimal or, in certain cases, no service disruptions for clients that are accessing the service.
 
 ## Reasons for using Failover Clustering
 
@@ -16,7 +16,7 @@ The most common uses of Failover Clustering include:
 A failover cluster consists of the following components:
 
 - Nodes. Nodes are Windows Server or Azure Stack HCI computers that are members of a failover cluster. These computers have the Failover Clustering feature installed, and they run highly available workloads consisting of services, applications, and resources that are associated with a cluster. A Windows Server failover cluster can consist of up to 64 nodes, while Azure Stack HCI supports up to 16 nodes. A Hyper-V cluster can host up to 8,000 guest VMs, with up to 1,024 guest VMs per host.
-- Clients. Clients are computers that consume highly available services and applications running in a failover cluster. There should be multiple network paths between clients and the cluster. You should configure client applications to automatically attempt to reconnect to clustered services in case of their temporary unavailability.
+- Clients. Clients are computers that consume highly available services and applications running in a failover cluster. There should be multiple network paths between clients and the cluster. Configure client applications to automatically attempt to reconnect to clustered services if they are  temporary unavailable.
 - Networks. Networks enable communication between nodes and computers consuming clustered workloads. In addition, nodes frequently use high-throughput, low-latency networks for accessing shared storage.
 - Clustered role. A clustered role is a highly available role or service that runs on the cluster node. Clients consume this service by connecting to the cluster node. If such a service becomes unavailable on one node, the failover cluster fails it over automatically to another node. The failover mechanism automatically redirects client requests for the service to the new node.
 - Resources. Resources are physical or logical elements such as a shared folder, disk, or IP address, which the failover cluster manages. Resources might be integral parts of highly available applications or provide service to clients. Resources are the most basic and smallest configurable failover cluster components. A resource can run only on a single node at any given time.
@@ -40,7 +40,7 @@ The functionality of a failover cluster depends not only on a quorum but also on
 
 ### Types of witness
 
-There are three types of quorum witness available to Failover Clustering:
+There are three types of quorum witness available to Fail over Clustering:
 
 - Disk Witness uses a clustered disk resource in the same failover cluster. All nodes must have access to the shared disk.
 - File Share Witness uses an external file share. In Windows Server 2019 and Azure Stack HCI, you can implement this by using a USB drive attached to a network device accessible to all cluster nodes.
