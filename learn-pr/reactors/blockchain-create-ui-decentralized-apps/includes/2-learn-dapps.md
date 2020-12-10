@@ -2,9 +2,9 @@ A [dapp](https://ethereum.org/en/developers/docs/dapps/?azure-portal=true), or a
 
 ## How dapps operate
 
-Dapps differ from traditional applications in that they don't rely on a centralized server network. Instead, they operate on a decentralized peer-to-peer blockchain network.
+Dapps differ from traditional applications because they don't rely on a centralized server network. Instead, they operate on a decentralized peer-to-peer blockchain network.
 
-A dapp can have front-end code written in any language, just like a traditional web app, that can make calls to its back end. With dapps, the back end consists of smart contracts that run on a blockchain.
+A dapp can have front-end code written in any language, just like a traditional web app, that can make calls to its back end, which are smart contracts that run on a blockchain.
 
 Dapps are:
 
@@ -26,7 +26,7 @@ Dapps help users to interact with the blockchain network in an easy and visual w
 
 ## Examples of dapps
 
-Just like blockchain solutions are being created in nearly every industry, dapps are becoming more popular in major industries as well. Most notably, there has been a lot of movement in the areas of finance, arts and collectibles, gaming, and technology. Here are examples across each of those industries to check out and inspire you as you begin to create your own dapps.
+Dapps are being created in nearly every major industry. Most notably, there has been a lot of movement in the areas of finance, arts and collectibles, gaming, and technology. Here are examples across each of those industries to check out and inspire you as you begin to create your own dapps.
 
 [Augur](https://augur.net?azure-portal=true?azure-portal=true) is a platform where you can bet on things like sports, economics, politics, and entertainment. The user interface allows you to trade and to view reporting on both the open and closed bets. The UI for betting is still in progress at this time.
 
@@ -34,4 +34,4 @@ Just like blockchain solutions are being created in nearly every industry, dapps
 
 [Cryptokitties](https://www.cryptokitties.co?azure-portal=true?azure-portal=true) is a gaming dapp where you can breed, collect, and sell unique cryptographic kittens. Additionally, you can do things like solve puzzles, earn rewards, and play games with your kitties.
 
-[Brave](https://brave.com?azure-portal=true?azure-portal=true) is a fast and private browser that allows you to earn tokens called BAT that can be donated to web creators, and will soon be able to be spent on gift cards and other rewards.
+[Brave](https://brave.com?azure-portal=true?azure-portal=true) is a fast and private browser that allows you to earn tokens called BAT that can be donated to web creators, and can soon be used to buy gift cards and other rewards.
