@@ -4,7 +4,7 @@ In this unit, you will write an Azure Function that is triggered each time an im
 
 Azure Functions can be written in the Azure portal or written externally using tools such as Visual Studio. You will write an Azure Function in the portal. The function will be written in JavaScript and executed using Azure Functions' Node.js run-time. It will be triggered each time an image is uploaded to the "photos" container that you created in blob storage, and it will pass each blob that is uploaded to the Custom Vision Service to be analyzed for polar bears.
 
-1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) in your browser, and select **+ Create a resource**. The display changes to show the choices for a New resource. On the left, select **Compute**. After the list refreshes, select **Function App**.
+1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) in your browser, and select **+ Create a resource**. The portal view changes to show the choices for a New resource. On the left, select **Compute**. After the list refreshes, select **Function App**.
 
     ![Screenshot that shows how to create a new function app resource in the Azure portal.](../media/select-create-resource-compute-function-app.png)
 
@@ -22,13 +22,12 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     _Configure the hosting settings for a new function app_
 
-1. Wait for the function app to deploy, then open the app in the Azure portal. In the left navigation, in the **Functions** group, select **Functions**. In the tool bar above the results pane, select **Add**. The **Add function** pane opens.
+1. Wait for the function app to deploy, then open the app in the Azure portal. In the left navigation, in the **{fx} Functions** group, select **Functions**. In the tool bar above the results pane, select **Add**. The **Add function** page opens.
 
     ![Screenshot that shows how to add a function in the Azure portal.](../media/create-new-function-app-add-function.png)
 
     _Add a function_
-
-1. In the **Add function** pane, set the **Development environment** to "Develop in portal". In the list under **Select a template**, select "Azure Blob Storage trigger." After you select a list item, the **Template details** section is displayed.
+1. In the **Add function** page, set the development environment to "Develop in portal". In the template list, select "Azure Blob Storage trigger." After you select a list item, the **Template details** section opens.
 
     ![Screenshot that shows how to configure the settings for a new function.](../media/create-new-function-choose-template.png)
 
@@ -44,18 +43,18 @@ Azure Functions can be written in the Azure portal or written externally using t
     ![Screenshot that shows how to configure the template to create a blob-triggered function.](../media/create-new-function-template-details.png)
 
     _Configure the template to create a blob-triggered function_
-    <br>
+    <br><br>
 
     1. Enter "BlobTrigger" as the name for the new function.
-    1. For the **Path**, set the value to "photos/{name}" so the function triggers when blobs are uploaded to the "photos" container.
-    1. Under **Storage account connection**, select **New**. In the popup dialog, select the storage account that you created earlier, and then select **OK**.
+    1. Set the path to "photos/{name}" so the function triggers when blobs are uploaded to the "photos" container.
+    1. Under the **Storage account connection** box, select **New**. In the popup dialog, select the storage account that you created earlier, and then select **OK**.
     
     > [!Note]
     > Copy and save the value in the **Storage account connection** box. You'll need the value in a later step.
     
-1. At the bottom of the **Add function** pane, select **Add**. After the function app is created, the Azure portal display changes to show the newly created app.
+1. At the bottom of the **Add function** page, select **Add**. After the function app is created, the portal view changes to show the new app.
 
-1. On the trigger function page in the portal, on the left under **Developer**, select **Code + Test**. The index.js file for the trigger is opened.
+1. On the trigger function page in the portal, on the left under **Developer**, select **Code + Test**. The index.js file for the trigger opens.
 
     ![Screenshot that shows how to open the index dot J S file for the blob-triggered function.](../media/blob-triggered-function-update-code.png)
 
@@ -148,7 +147,9 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     The code that you just added uses the Azure Storage SDK for Node.js ([azure-storage](https://www.npmjs.com/package/azure-storage)) to generate a read-only SAS for the blob whose URL is passed to the Custom Vision Service, and appends it to the blob URL as a query string. The SAS is valid for 3 minutes and allows read access only. This allows your code to submit private blobs to the Custom Vision Service for analysis without putting the blobs in a public container where anyone could download them.
 
-1. Replace `<CONNECTION_STRING_NAME>` on line 4 with the Storage account connection string that you saved earlier (for example, "polarbearstorage_STORAGE"). This connection string was added to application settings when you added the `BlobTrigger` function to the function app, and its name derives from the storage-account name. If needed, you can look it up in the **Application settings** of the function app. After you add your Storage account connection string, select **Save** to complete the changes to the index.js file. After the file is saved, the function's output log opens at the bottom of the page.
+1. Replace `<CONNECTION_STRING_NAME>` on line 4 with the Storage account connection string that you saved earlier (for example, "polarbearstorage_STORAGE"). This connection string was added to application settings when you added the `BlobTrigger` function to the function app, and its name derives from the Storage account name. If needed, you can look it up in the **Application settings** of the function app.
+
+    After you add your Storage account connection string, select **Save** to complete the changes to the index.js file. After the file is saved, the function's output log opens at the bottom of the page.
 
 1. Open a Console in the Azure portal. At the top, select your function app name. The portal view changes to the overview page for the function app. On the left, scroll to locate the **Development Tools** group. Under **Development Tools**, select **Console**. A Console pane opens at the right.
 
@@ -156,7 +157,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     _Open a function app console_
 
-1. Run the following commands in the function console to install the NPM [request](https://www.npmjs.com/package/request) package and the [Azure Storage SDK for Node.js](https://www.npmjs.com/package/azure-storage) so your function can use them.
+1. Run the following commands in the function Console to install the NPM [request](https://www.npmjs.com/package/request) package and the [Azure Storage SDK for Node.js](https://www.npmjs.com/package/azure-storage) so your function can use them.
 
     ```console
     npm install request
@@ -183,17 +184,13 @@ Azure Functions can be written in the Azure portal or written externally using t
 
 1. Return to your `BlobTrigger` function in the Azure portal and open the function's output log.
 
-    1. On the left, scroll to locate the **Functions** group. Under **Functions**, select **{fx} Functions**. 
-    1. On the **Functions** blade, select **BlobTrigger**.
+    On the left, scroll to locate the **Functions** group. Under **Functions**, select **{fx} Functions**. On the **Functions** blade, select **BlobTrigger**.
     
     ![Screenshot that shows how to open the blob trigger function.](../media/open-function-output-log-1.png)
 
     _Open the blob trigger function_
 
-    After the overview page for the `BlobTrigger` function displays, open the **Logs** output pane:
-    
-    1. At the left, under the **Developer** group, select **Code + Test**.
-    1. At the bottom, select the up arrow next to **Logs**. The Log output pane opens.
+    After the portal view changes to show the overview page for the `BlobTrigger` function, open the **Logs** output pane. At the left, under the **Developer** group, select **Code + Test**. At the bottom, select the up arrow next to **Logs**. The Log output pane opens.
 
     ![Screenshot that shows how to open the output log for a function.](../media/open-function-output-log-2.png)
 
@@ -201,31 +198,28 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     Keep the Log pane open. We'll use it in a later step.
 
-1. Now upload an image from your Blob Storage container so you can try out your function app.
+1. Open the "photos" Blob Storage container. Start a separate browser instance and navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account that you created earlier. On the left, scroll to the **Blob service** group, and select **Containers**. On the right, select the **photos** container that you created earlier.
 
-    1. Start a separate browser instance and navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account that you created earlier.
-    1. On the left, scroll to the **Blob service** group, and select **Containers**.
-    1. On the right, select the **photos** container that you created earlier.
+    ![Screenshot that shows how to open the photos container for the Blob Storage account.](../media/open-photos-container.png)
 
-        ![Screenshot that shows how to open the photos container for the Blob Storage account.](../media/open-container-photos.png)
-
-        _Open the photos container for your Blob Storage account_
+    _Open the photos container for your Blob Storage account_
     
-    1. After the photos container opens, at the top, select **Upload**. The **Upload blob** page opens at the right.
-    1. In the **Upload blob** page, select the folder icon to the right of the **Files** box. A Windows Explorer **Open** dialog displays.
+1. Upload an image to the photos container so you can try out your function app. On the photos container page in the portal, at the top, select **Upload**. The **Upload blob** page opens at the right.
+
+    1. In the **Upload blob** page, select the folder icon to the right of the **Files** box. A Windows Explorer **Open** dialog opens.
     1. In the Explorer dialog, browse to the photos folder that you created in your project directory.
     1. Select the **image_12.jpg** file, then select **Open**. The Explorer dialog closes.
     1. In the **Upload blob** page, select **Upload**. After the upload completes, select the **X** to close the page.
 
-        ![Screenshot that shows how to upload a photo to a container.](../media/upload-photo-to-container.png)
+    ![Screenshot that shows how to upload a photo to a container.](../media/upload-photo-to-container.png)
 
-        _Upload a photo to the container_
+    _Upload a photo to the container_
         
-        And here's what **image_12.jpg** looks like:
+    Here's what **image_12.jpg** looks like:
         
-        ![A picture of image 12, which shows a polar bear.](../media/image-12.jpg)
+    ![A picture of image 12, which shows a polar bear.](../media/image-12.jpg)
         
-        _Image 12 in Blob Storage_
+    _Image 12 in Blob Storage_
 
 1. Return to the function log in the other browser instance. Confirm that the function executed, and that **image_12.jpg** was determined by the Custom Vision Service to contain a polar bear.
 
