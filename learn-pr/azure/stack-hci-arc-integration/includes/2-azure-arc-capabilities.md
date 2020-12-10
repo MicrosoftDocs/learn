@@ -38,7 +38,7 @@ For Kubernetes and AKS clusters, connection to Azure requires a deployment of se
 
 ## What are the key benefits of Azure Arc?
 
-A number of Azure Arc benefits are independent of the resouce type, because they reflect the capabilities of Azure Resource Manager. These benefits include:
+A number of Azure Arc benefits are independent of the resource type, because they reflect the capabilities of Azure Resource Manager. These benefits include:
 
 - The ability to organize all resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
