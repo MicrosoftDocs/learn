@@ -4351,7 +4351,6 @@
       "redirect_document_id": false
     },
     {
-<<<<<<< HEAD
       "source_path": "learn-pr/ai-business-school/implement-ai-organization/4-ai-economics.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/implement-ai-organization/6-ai-economics",
       "redirect_document_id": true
@@ -4370,7 +4369,6 @@
       "source_path": "learn-pr/ai-business-school/implement-ai-organization/7-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/implement-ai-organization/9-summary-resources",
       "redirect_document_id": true
-=======
 
       "source_path": "learn-pr/github/create-open-source-program-github/4-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/5-knowledge-check",
@@ -4475,7 +4473,6 @@
       "source_path": "learn-pr/azure/build-api-azure-functions/13-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
       "redirect_document_id": false
->>>>>>> master
     }
   ]
 }
