@@ -30,10 +30,10 @@ quiz:
       choices:
         - content: "JBoss Command Line Interface (CLI)"
           isCorrect: false
-          explanation: "It is possible, however we don't recommend about it. Because you must logged in directly to execute the CLI, and can only be set temporarily as the settings because it will disappear after the system reboot."
+          explanation: "It is possible, however we don't recommend about it on Azure AppService Environment. Because you must logged in directly to execute the CLI, and can only be set temporarily as the settings because it will disappear after the system reboot."
         - content: "JBoss Graphical User Interface (GUI)"
           isCorrect: false
-          explanation: "It is possible, however we don't recommend about it. Because you can only be set temporarily as the settings because it will disappear after the system reboot."
+          explanation: "It is possible, however we don't recommend about it on Azure AppService Environment. Because you can only be set temporarily as the settings because it will disappear after the system reboot."
         - content: "Startup Shell Script"
           isCorrect: true
         - content: "All of the above"
