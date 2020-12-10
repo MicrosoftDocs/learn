@@ -33,13 +33,13 @@ quiz:
     choices:
     - content: "GKS"
       isCorrect: false
-      explanation: "GKE is a third party platform which does not support AKS"
+      explanation: "GKE is a third-party platform platform, which not support AKS"
     - content: "EKS"
       isCorrect: false
-      explanation: "EKS is a third party platform which does not support AKS"
+      explanation: "EKS is a third-party platform, which does not support AKS"
     - content: "Azure Stack HCI"
       isCorrect: true
       explanation: "The only solution that allows running AKS in an on-premises data center is Azure Stack HCI"
     - content: "OpenShift"
       isCorrect: false
-      explanation: "OpenShift is a third party containerization platform and it does not support AKS"
+      explanation: "OpenShift is a third-party containerization platform and it does not support AKS"
