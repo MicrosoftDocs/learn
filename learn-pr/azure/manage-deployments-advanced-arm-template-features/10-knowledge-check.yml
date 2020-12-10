@@ -36,7 +36,7 @@ quiz:
           explanation: You can run shell commands within a template. However, you can't use the `condition` element to control the running of shell commands.
         - content: Conditionally deploy a resource.
           isCorrect: true
-          explanation: Assigning a `condition` construct to a resource definition enables you to control wether to deploy this resource or not.
+          explanation: Assigning a `condition` construct to a resource definition enables you to control whether to deploy this resource or not.
     - content: How do you get the current index in a _copy_ iteration?
       choices:
         - content: Refer to the `$index` field within the _copy_ element.
@@ -44,7 +44,7 @@ quiz:
           isCorrect: false
         - content: You use the `copyIndex()` function. 
           isCorrect: true
-          explanation: That's how get the current index of the iteration.
+          explanation: That's how to get the current index of the iteration.
         - content: There's a `currentIndex()` function that returns the current index value.
           isCorrect: false
           explanation: There's no `currentIndex()` function.

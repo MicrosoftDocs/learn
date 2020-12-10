@@ -39,7 +39,7 @@ There are several configuration steps you need to perform to set up the Key Vaul
 
 The Key Vault instance needs to be configured so that credentials can be read from it during deployment of an ARM template.
 
-To enable the Key Vault for deployment, there's a setting you can pass, either during creation of the Key Vault instance or something you can amend at a later point. In PowerShell it's a switch called   **-EnabledForTemplateDeployment**. In Azure CLI it's a parameter called **--enabled-for-template-deployment** that needs the value `true` to be passed as well.
+To enable the Key Vault for deployment, there's a setting you can pass, either during creation of the Key Vault instance or something you can amend at a later point. In PowerShell, it's a switch called   `-EnabledForTemplateDeployment`. In the Azure CLI, it's an argument called `--enabled-for-template-deployment` that needs the value `true` to be passed as well.
 
 > [!NOTE]
 > Azure CLI additionally requires you to pass a boolean with the value `true`.
@@ -87,7 +87,7 @@ The steps you would need to take to configure everything are:
 
 - **Assign parameter to resource's password**
 
-   This step is not really related to the Key Vault but is about ensuring the intended resource makes use of the parameter configured to read the secret's value from the Key Vault. Below is a shortened snippet from a VM, in the template file, that shows the `adminPassword` element reading from the parameter `myPassword`. Thereby the secret's value will be read from the Key Vault at deployment time and be assigned to the element `adminPassword`.
+   This step is not related to the Key Vault but is about ensuring the intended resource makes use of the parameter configured to read the secret's value from the Key Vault. Below is a shortened snippet from a VM, in the template file, that shows the `adminPassword` element reading from the parameter `myPassword`. Thereby the secret's value will be read from the Key Vault at deployment time and be assigned to the element `adminPassword`.
 
    ```json
    {
