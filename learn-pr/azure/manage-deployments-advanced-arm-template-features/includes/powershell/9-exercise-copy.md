@@ -101,7 +101,7 @@ Although the output shows that two storage accounts were created, here you run t
 
     In this example:
 
-    * **tailwindsa185277781** is the base name that was generated for the storage account ("tailwindsa" + Get-Random -Count 1).
+    * **tailwindsa185277781** is the base name that was generated for the storage account (`"tailwindsa" + Get-Random -Count 1`).
     * **tailwindsa1852777810** (the base name plus "0") is the first storage account.
     * **tailwindsa1852777811** (the base name plus "1") is the second storage account.
 
