@@ -12,40 +12,46 @@ metadata:
 durationInMinutes: 2
 quiz:
   questions:
-    - content: JBoss EAP on Azure AppService のデータソース管理はどこで行う？
+    - content: Name of the current version of Enterprise Java Framework
+      choices:
+        - content: Java 2 Platform, Enterprise Edition(J2EE)
+          isCorrect: false
+          explanation: It is not correct. J2EE was used until version 4.
+        - content: Jakarta Enterprise Edition(Jakarta EE)
+          isCorrect: true
+          explanation: Correct. Since Jakarta EE 8, The project was moved to Jakarta Project under the Eclipse Foundation.
+        - content: Java Platform, Enterprise Edition(Java EE)
+          isCorrect: false
+          explanation: It is not correct. Java EE was used between 5 to 8.
+        - content: All of the Above
+          isCorrect: false
+          explanation: You can select only one.
+    - content: How do you manage DataSources for JBoss EAP on Azure AppService?
       choices:
         - content: "JBoss Command Line Interface (CLI)"
           isCorrect: false
-          explanation: "This method is a correct option but CLI は直接ログインをして実行しなければならず、再起動すると設定は消えてしまうため一時的にしか設定できません。"
+          explanation: "It is possible, however we don't recommend about it. Because you must logged in directly to execute the CLI, and can only be set temporarily as the settings because it will disappear after the system reboot."
         - content: "JBoss Graphical User Interface (GUI)"
           isCorrect: false
-          explanation: "This method is a correct option but GUI は直接ログインをして実行しなければならず、再起動すると設定は消えてしまうため一時的にしか設定できません。"
-        - content: "起動スクリプト"
+          explanation: "It is possible, however we don't recommend about it. Because you can only be set temporarily as the settings because it will disappear after the system reboot."
+        - content: "Startup Shell Script"
           isCorrect: true
-    - content: Which method(s) allow you to access the Application Logs in Azure App Service?
+        - content: "All of the above"
+          isCorrect: false
+          explanation: "We don't recommend some options"
+    - content: How to confirm your Application Log
       choices:
-        - content: SSH in Advanced Tools on the Azure portal
+        - content: Login to the JBoss EAP Container Instance
           isCorrect: false
-          explanation: This method is a correct option but not the only way to access the logs.
-        - content: Access the LogStream in Advanced Tools on the Azure portal
+          explanation: This choice is a correct option. If you login to the container by TCP Tunnel, you can confirm it. However it isn't only feature.
+        - content: Azure Log Analytics
           isCorrect: false
-          explanation: This method is a correct option but not the only way to access the logs.
-        - content: Azure Command-Line Tool (Azure CLI)
+          explanation: This choice is a correct. If you configure the Log Analytics WorkSpace, you can confirm it. However it isn't only feature.
+        - content: Azure Portal Log Stream
           isCorrect: false
-          explanation: This method is a correct option but not the only way to access the logs.
-        - content: All of the Above
-          isCorrect: true
-
-    - content: Which task(s) can you do with Maven Plugin for Azure App Service?
-      choices:
-        - content: Compile the source code
+          explanation: This choice is a correct option. If you access to the JBoss EAP on Azure App Service, you can select LogStream in the menu and confirm it. However it isn't only feature.
+        - content: Azure Command Line Interface
           isCorrect: false
-          explanation: The Maven Compiler Plugin compiles your source code.
-        - content: Configure your Azure App Service instance
-          isCorrect: false
-          explanation: This choice is a correct option but not its only feature.
-        - content: Deploy to your App Service instance
-          isCorrect: false
-          explanation: This choice is a correct option but not its only feature.
-        - content: Both Configure and Deploy to your App Service instance
+          explanation: This choice is a correct option. If you execute the Azure CLI command you can confirm it. However it isn't only feature.
+        - content: All of the above
           isCorrect: true
