@@ -13,7 +13,7 @@ To implement Azure Stack HCI, you should:
 
 Next, create a failover cluster using Windows Admin Center or PowerShell. Ensure that the computer on which you run Windows Admin Center is joined to the same Active Directory domain in which you'll create the cluster, or a trusted domain.
 
-:::image type="content" source="../media/4-azs-hci-wac1.png" alt-text="A screenshot of the initial page of the Windows Admin Center Cluster Creation wizard indicating the choice of cluster type with Azure Stack HCI selected and the choice of select server locations with all servers in one site selected." border="false":::
+:::image type="content" source="../media/4-azure-stack-hci-windows-admin-center-1.png" alt-text="A screenshot of the initial page of the Windows Admin Center Cluster Creation wizard indicating the choice of cluster type with Azure Stack HCI selected and the choice of select server locations with all servers in one site selected." border="false":::
 
 The Create Cluster wizard of the Windows Admin Center guides you through five main deployment steps:
 
@@ -23,7 +23,7 @@ The Create Cluster wizard of the Windows Admin Center guides you through five ma
   1. Storage: Configures Storage Spaces Direct.
   1. SDN: Installs the Network Controller component of SDN.
 
-:::image type="content" source="../media/4-azs-hci-wac2.png" alt-text="A screenshot of the Windows Admin Center Cluster Creation wizard page containing a list of the main installation steps." border="false":::
+:::image type="content" source="../media/4-azure-stack-hci-windows-admin-center-2.png" alt-text="A screenshot of the Windows Admin Center Cluster Creation wizard page containing a list of the main installation steps." border="false":::
 
 > [!NOTE]
 > To implement an SMB File Share witness, which you'll do in the next step, you can use an USB key attached to a network device accessible from all nodes. Azure Cloud Witness is particularly useful in scenarios where there isn't an additional on-premises infrastructure and when implementing stretched clusters.

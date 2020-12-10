@@ -15,9 +15,9 @@ Additionally, Azure Stack HCI provides built-in support for disaster recovery of
 
 To assist customers with the process of evaluating suitability of their workloads for Azure Stack HCI-based deployments and identifying appropriate hardware configuration, Microsoft established the Azure Stack HCI Technical Use Case program. Through the program, Microsoft certifies Azure Stack HCI hardware configurations in the following use cases:
 
-:::image type="content" source="../media/2-azs-hci-workloads.png" alt-text="The image illustrating the six certified Azure Stack HCI use cases, including branch office and edge, virtual desktop infrastructure, high-performance Microsoft SQL Server, trusted enterprise virtualization, and Azure Kubernetes Service." border="false":::
+:::image type="content" source="../media/2-azure-stack-hci-workloads.png" alt-text="The image illustrating the six certified Azure Stack HCI use cases, including branch office and edge, virtual desktop infrastructure, high-performance Microsoft SQL Server, trusted enterprise virtualization, and Azure Kubernetes Service." border="false":::
 
-### Branch office and Edge
+### Branch office and edge
 
 Azure Stack HCI provides reasonably priced yet highly available compute, storage, and networking resources for business-critical applications and edge workloads that integrate with containerization and Azure IoT Edge technologies. You can minimize infrastructure cost by deploying two-node clusters that deliver high availability by taking advantage of inexpensive witness options, such as Cloud Witness or a USB drive-based file share witness attached to a network device accessible by both cluster nodes. Another factor that contributes to the lower cost of two-node clusters is support for switchless networking, which relies on cross-over cable between cluster nodes instead of more expensive high-speed switches. This capability distinguishes Azure Stack HCI from equivalent HCI solutions offered by other vendors. Similarly, for less demanding workloads, you can choose single-socket servers with as few as eight cores and storage with solid-state drives (SSDs) in a single tier or hard-disk drives (HDD) in the capacity tier.
 
