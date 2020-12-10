@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-plan-deploy.3-plan
+metadata:
+  title: Plan for Azure Stack HCI workloads
+  description: An overview of planning for Azure Stack HCI workloads
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan for Azure Stack HCI workloads
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-plan.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is the minimum number of servers in an Azure Stack HCI cluster?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
+    - content: "2"
+      isCorrect: true
+      explanation: "That's correct. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
+    - content: "4"
+      isCorrect: false
+      explanation: "That's incorrect. The number of servers in an Azure Stack HCI cluster must be between 2 and 16."
+
+  - content: "What is the maximum round-trip latency supported for Azure Stack HCI stretched clusters?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "That's incorrect. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
+    - content: "5"
+      isCorrect: true
+      explanation: "That's correct. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."
+    - content: "250"
+      isCorrect: false
+      explanation: "That's incorrect. For stretched clusters, you should have at least one 1-Gb connection between sites with at most 5-ms round-trip latency."

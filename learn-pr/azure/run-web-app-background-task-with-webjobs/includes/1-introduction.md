@@ -13,7 +13,7 @@ By the end of this module, you will be able to automate tasks by using WebJobs.
 In this module, you will:
 
 - Identify what a WebJob is and when to use one instead of an Azure Function
-- Use Visual Studio to Create an App Service background task with a WebJob linked to a web project
+- Use Visual Studio to create an App Service background task with a WebJob linked to a web project
 - Package a WebJob for deployment
 - Configure the WebJob operating model by using the WebJobs SDK
 

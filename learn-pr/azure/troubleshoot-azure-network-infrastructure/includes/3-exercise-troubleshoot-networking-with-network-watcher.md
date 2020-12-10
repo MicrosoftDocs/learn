@@ -144,7 +144,7 @@ az network watcher configure \
 
 Now, you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS and the RDP protocol between the two VMs. First, investigate the network topology:
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) by using the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure portal menu, select **All services**. Then, go to **Networking** > **Network Watcher**.
 

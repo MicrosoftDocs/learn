@@ -1,13 +1,17 @@
-In this exercise, you'll learn how to authentication to GitHub with Visual Studio Code. You'll also learn how to control your logged-in status, and which extensions in Visual Studio Code can use your authentication.
+In this exercise, you'll learn how to authenticate to GitHub by using Visual Studio Code. You'll also learn how to control your signed-in status, and which extensions in Visual Studio Code can use your authentication.
 
-1. Make sure you have the latest version of Visual Studio Code installed. If you don't, select on the gear icon in the bottom of the activity bar and choose "Check for Updates..." and install the latest.
+1. Make sure you have the latest version of Visual Studio Code installed. Select the gear icon in the bottom of the Activity Bar, select **Check for Updates**, and install the latest version if necessary.
 
-2. Select the extensions icon in the activity bar. Search for the "GitHub Pull Requests and Issues" extension and install it.
+2. Select the extensions icon on the Activity Bar. Search for the **GitHub Pull Requests and Issues** extension and install it.
 
-   :::image type="content" source="../media/github-pull-requests-and-issues.png" alt-text="Extensions view in Visual Studio Code showing search results":::
+   :::image type="content" source="../media/github-pull-requests-and-issues.png" alt-text="Screenshot of the extensions view in Visual Studio Code, showing search results.":::
 
-3. Once you install the extension, you can select the gear icon at the bottom of the activity bar and select "Sign into use GitHub Pull Requests and Issues". A browser window will open and you'll be prompted to grant permission for Visual Studio Code to access GitHub.
+3. After you install the extension, you can select the gear icon at the bottom of the Activity Bar and select **Sign in to use GitHub Pull Requests and Issues**. 
 
-   :::image type="content" source="../media/2-sign-in.png" alt-text="Account context menu in Visual Studio Code showing you signed in to GitHub":::
+   :::image type="content" source="../media/2-sign-in.png" alt-text="Screenshot of the settings menu in Visual Studio Code, with the option to sign in.":::
 
-4. Follow the prompt and select "Continue" to authorize Visual Studio Code to use GitHub. Your Visual Studio Code window will reopen and you'll be signed in! You can double check by selecting the account icon again and seeing your GitHub username.
+   A browser window opens, and you're prompted to grant permission for Visual Studio Code to access GitHub.
+
+4. Select **Continue**. 
+
+   Your Visual Studio Code window reopens, and you're signed in. You can double check by selecting the account icon again and seeing your GitHub username.

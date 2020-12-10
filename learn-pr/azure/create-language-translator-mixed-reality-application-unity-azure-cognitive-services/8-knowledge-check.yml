@@ -15,7 +15,7 @@
   quiz:
     title: Knowledge check
     questions:
-    - content: "If a Mixed Reality experience uses the Mixed Reality Toolkit and the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to:"
+    - content: "If a mixed reality experience uses the Mixed Reality Toolkit and the Cognitive Services Speech SDK, the MRTK Speech Commands Start Behavior should be set to:"
       choices:
         - content: "Auto Start"
           isCorrect: false
