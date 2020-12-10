@@ -8,7 +8,7 @@ Here are few aspects to consider:
 
 - **Can I rely on how things work on ARM?**
 
-    Your first thought when checking whether another resource exists might be to use something like Azure PowerShell or the Azure CLI to check for a resource's existence. A more automated solution uses a an ARM's built-in idempotency. The idea is that ARM if spots, a resource defined in a template, that already exist in the cloud it would not redeploy it. For this to be a valid approach you need to understand how ARM does the check.
+    Your first thought when checking whether another resource exists might be to use something like Azure PowerShell or the Azure CLI to check for a resource's existence. A more automated solution uses a an ARM's built-in idempotency. The idea is that if ARM spots, a resource defined in a template, that already exist in the cloud it would not redeploy it. For this to be a valid approach you need to understand how ARM does the check.
 
     > [!NOTE]
     > What happens when existing resources identities match something defined in a template is that the resource manager compares the properties - if the properties match exactly, the resource is left alone. If they do not, the engine makes the changes - possibly redeploying the resource.
