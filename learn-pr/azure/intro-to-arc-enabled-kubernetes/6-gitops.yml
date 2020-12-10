@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
 metadata:
   title: Apply Azure Arc enabled Kubernetes cluster configurations by using GitOps
-  description: In this unit you'll learn what is GitOps and how to configure it.
+  description: In this unit, you'll learn what is GitOps and how to configure it.
   ms.date: 11/13/2020
   author: jboeshart
   ms.author: jaboes
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Flux"
       isCorrect: true
-      explanation: "Azure Arc enabled Kubernetes clusters rely on Flux, an open source GitOps deployment tool to implement the pods responsible for tracking changes to the Git repository you designate and applying them to the local cluster."
+      explanation: "Azure Arc enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool to implement the pods responsible for tracking changes to the Git repository you designate and applying them to the local cluster."
     - content: "Istio"
       isCorrect: false
-      explanation: "Istio is an open source service mesh platform that provides a way to control how microservices share data with one another. It is not used directly by Azure Arc enabled Kubernetes functionality to implement GitOps."
+      explanation: "Istio is an open-source service mesh platform that provides a way to control how microservices share data with one another. It is not used directly by Azure Arc enabled Kubernetes functionality to implement GitOps."
     - content: "omsagent"
       isCorrect: false
       explanation: "omsagent is the agent that implements Azure Monitor functionality on Kubernetes clusters. It is not used directly by Azure Arc enabled Kubernetes functionality to implement GitOps."
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Azure Policy"
       isCorrect: true
-      explanation: "Azure Policy automates GitOps configuration, allowing you to apply it consistently to all resources in entire subscription or indiviual resource groups you designate."
+      explanation: "Azure Policy automates GitOps configuration, allowing you to apply it consistently to all resources in entire subscription or individual resource groups you designate."
     - content: "Azure Security Center"
       isCorrect: false
       explanation: "Azure Security Center does not provide this functionality"
