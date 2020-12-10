@@ -7,7 +7,7 @@ Up to J2EE 1.4, it also supported XML technologies such as SOAP to meet all the 
 
 Therefore, the specification creator has made improvements to improve the ease of development so that XML is not required from version 5 and development can be performed using Java annotations. It also renamed from J2EE to Java EE. Improvements that enhance ease of development have also been made in Java EE 6 and Java EE 7, and also incorporate technologies such as WebSocket and RESTful Web services, which were modern technologies, and Java EE standard technology makes it easy for enterprise applications to develop.  
 
-After the release of Java EE 7, the acquisition of Sun Microsystems by Oracle stagnated the development process for the next version of Java EE, but Thanks to the efforts of the communities and companies that underpin the enterprise Java industry (IBM, Red Hat, Payara, Tomitribe, Fujitsu and Oracle), Java EE is now being renamed to Jakarta EE under the Eclipse Foundation. Even after becoming Jakarta EE, Jakarta EE 8 and 9 were released, and many applications conforming to the Jakarta EE specifications were provided, and it is still provided as a Java framework for developing important enterprise applications.
+After the release of Java EE 7, the acquisition of Sun Microsystems by Oracle stagnated the development process for the next version of Java EE, but Thanks to the efforts of the communities and companies that underpin the enterprise Java industry (IBM, Red Hat, Payara, Tomitribe, Fujitsu and Oracle), Java EE is now being renamed to Jakarta EE under the Eclipse Foundation. Even after becoming Jakarta EE, Jakarta EE 8 and 9 were released, and many applications conforming to the Jakarta EE specifications were provided, and it is still provided as a Java framework for developing important enterprise applications. Thus in this module, we will deploy a Java EE (Jakarta EE) Application to `Red Hat JBoss Enterprise Application Platform (JBoss EAPs)` as one of Java EE Compatible Application Server.
 
 |  Version  |  Description  |  Date  |
 | ---- | ---- | ---- |
@@ -20,16 +20,30 @@ After the release of Java EE 7, the acquisition of Sun Microsystems by Oracle st
 |  Java EE 7 |  WebSocket,Java Batch, JSON-P, JMS 2.0 |May 28, 2013|
 |  Jakarta EE 8 |  JSON-B, HTTP/2, Security   |Sep 21, 2017|
 |  Jakarta EE 9 |  Namespace change to jakarta, Enhancement of EJB, Activation, Moved from Java SE to Jakarta EE of JAXB, JAX-WS, SOAP as optional |December 8, 2020|
+
 ## What is JBoss Enterprise Application Platform
 
-`Red Hat JBoss Enterprise Application Platform 7` is listed on one of the `Jakarta EE 8 Platform Compatible Products`. And it has many functionalities like below.
+`Red Hat JBoss Enterprise Application Platform 7` is listed on one of the `Jakarta EE 8 Platform Compatible Products`.
 
-- Optimized for cloud and containers
-- Lightweight, flexible architecture
-- More productive developers
-- Flexible management, configuration, and administration
-- Flexible, future-friendly subscription model
+And it has many functionalities like below.
+
+- Optimized for Cloud and Containers
+- Lightweight, Flexible Architecture
+- More Productive Developers
+- Flexible Management, Configuration, and Administration
+- Flexible, Future-Friendly Subscription Model
 - Support and standardize microservices development
 
-The JBoss EAP is a Java EE Application Server runtime with commercial support by Red Hat based on the Open Source. The Open Source product is called as Wildfly.
+JBoss EAP is based on the Open Source Application Server which is called as `WildFly Application Server`. It also provides commercial support.
+
+HTTP request is handled by a module called `Undertow`, which supports HTTP/2 and WebSocket, and is implemented by using Non-Blocking IO, so it is highly scalable and has high performance. In addition, it can run various Java web applications such as HTML5, mobile applications, microservice applications, and enterprise applications that require transactions using Java EE. 
+
+![JBoss Web Admin Console](../media/jboss-admin-console2.png)
+
+For Management, Both Command Line Interface (CLI) and a Graphical User Interface (GUI) are provided, and by using these, various configurations of the application server can be managed quickly and centrally.
+
+As a result, the JBoss EAP making it ideal for companies that demand high development productivity and reliability.
+
+
+
 
