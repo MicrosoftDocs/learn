@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.manage-deployments-advanced-arm-template-features
+uid: learn.azure.manage-deployments-advanced-arm-template-features
 title: Manage complex cloud deployments by using advanced ARM template features
 metadata:
   description: Use advanced constructs in Azure Resource Manager to manage complex scenarios such as deployment order, conditional deployments and secrets. 
@@ -38,16 +38,16 @@ prerequisites: |
     - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally.
     - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) and the [Azure PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.2.0&azure-portal=true) installed locally.
 units:
-  - learn.manage-deployments-advanced-arm-template-features.1-introduction
-  - learn.manage-deployments-advanced-arm-template-features.2-dependencies
-  - learn.manage-deployments-advanced-arm-template-features.3-dependencies-exercise
-  - learn.manage-deployments-advanced-arm-template-features.4-secure-parameters
-  - learn.manage-deployments-advanced-arm-template-features.5-secure-parameters-exercise
-  - learn.manage-deployments-advanced-arm-template-features.6-conditions
-  - learn.manage-deployments-advanced-arm-template-features.7-conditions-exercise
-  - learn.manage-deployments-advanced-arm-template-features.8-copy
-  - learn.manage-deployments-advanced-arm-template-features.9-copy-exercise
-  - learn.manage-deployments-advanced-arm-template-features.10-knowledge-check
-  - learn.manage-deployments-advanced-arm-template-features.11-summary
+  - learn.azure.manage-deployments-advanced-arm-template-features.introduction
+  - learn.azure.manage-deployments-advanced-arm-template-features.dependencies
+  - learn.azure.manage-deployments-advanced-arm-template-features.dependencies-exercise
+  - learn.azure.manage-deployments-advanced-arm-template-features.secure-parameters
+  - learn.azure.manage-deployments-advanced-arm-template-features.secure-parameters-exercise
+  - learn.azure.manage-deployments-advanced-arm-template-features.conditions
+  - learn.azure.manage-deployments-advanced-arm-template-features.conditions-exercise
+  - learn.azure.manage-deployments-advanced-arm-template-features.copy
+  - learn.azure.manage-deployments-advanced-arm-template-features.copy-exercise
+  - learn.azure.manage-deployments-advanced-arm-template-features.knowledge-check
+  - learn.azure.manage-deployments-advanced-arm-template-features.summary
 badge:
-  uid: learn.manage-deployments-advanced-arm-template-features.badge
+  uid: learn.azure.manage-deployments-advanced-arm-template-features.badge

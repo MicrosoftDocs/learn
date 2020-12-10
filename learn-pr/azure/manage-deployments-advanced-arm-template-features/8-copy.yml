@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-deployments-advanced-arm-template-features.8-copy
+uid: learn.azure.manage-deployments-advanced-arm-template-features.copy
 title: Create multiple resource instances by using the copy element
 metadata:
   title: Create multiple resource instances by using the copy element

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-deployments-advanced-arm-template-features.6-conditions
+uid: learn.azure.manage-deployments-advanced-arm-template-features.conditions
 title: Add conditional logic to your ARM templates
 metadata:
   title: Add conditional logic to your ARM templates
