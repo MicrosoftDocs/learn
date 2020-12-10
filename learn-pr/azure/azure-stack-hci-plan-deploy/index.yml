@@ -3,9 +3,9 @@ uid: learn.azure.azure-stack-hci-plan-deploy
 metadata:
   title: Plan and deploy Azure Stack HCI
   description: This module introduces you to planing for and deploying Azure Stack HCI. Content includes identifying suitable workloads, determining the optimal configuration to host these workloads, stepping through the deployment process, validating post-deployment operational status, and evaluating Azure integration options.
-  ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and deploy Azure Stack HCI
@@ -22,7 +22,7 @@ prerequisites: |
   - Windows Server Hyper-V
   - Windows Server software-defined storage 
   - Windows Server software-defined networking
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/azure-stack-hci-plan-deploy.svg
 levels:
 - beginner
 roles:

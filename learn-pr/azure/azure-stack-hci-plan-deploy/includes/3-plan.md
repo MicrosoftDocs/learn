@@ -1,19 +1,19 @@
-After you verify that Azure Stack HCI is suitable for hosting your workload, you must consider your infrastructure requirements, including compute, storage, and networking components. These considerations are workload dependent, so for a scenario such as Contoso's, you must account for distinct performance requirements of Microsoft SQL Server and VDI.
+After you verify that Azure Stack HCI is suitable for hosting your workload, you must consider your infrastructure requirements, including compute, storage, and networking components. These considerations are workload-dependent, so for a scenario such as Contoso's, you must account for distinct performance requirements of Microsoft SQL Server and VDI.
 
 ## Plan for Azure Stack HCI
 
 General planning considerations for an Azure Stack HCI implementation include:
 
-- The number of physical servers per cluster. This number must be between two and 16.
+- The number of physical servers per cluster. This number must be between 2 and 16.
 - The number of fault domains per cluster. By default, each node in a Storage Spaces Direct cluster is one fault domain.
-- The number and type of processors per server. The first of these values determines the core count and the latter dictates their speed.
+- The number and type of processors per server. The first of these values determine the core count and the latter dictates their speed.
 - The amount and type of memory per server, including whether to use persistent memory (PMEM).
 - Disk performance, including the corresponding tiering and caching configuration.
 - The Azure subscription in which you'll register your Azure Stack HCI deployment, because there are ongoing charges for Azure Stack HCI clusters depending on Azure subscription type.
 
 Planning considerations with respect to storage performance and capacity include:
 
-- The number and types of disks, including HDDs, SSDs and NVMe.
+- The number and types of disks, including HDDs, SSDs, and NVMe.
 - Storage Spaces Direct resiliency levels.
 - Tiering and caching configuration.
 
@@ -35,7 +35,7 @@ In the simplest terms, planning for Azure Stack HCI host storage involves identi
 
 #### Drives
 
-Storage Spaces Direct supports hard disk drives (HDDs), solid state drives (SSDs), and Non-Volatile Memory Express (NVMe) drives, including PMEM. The choice of drive type directly affects storage performance due to differences in performance characteristics between each type and the cache mechanism.
+Storage Spaces Direct supports hard disk drives (HDDs), solid-state drives (SSDs), and Non-Volatile Memory Express (NVMe) drives, including PMEM. The choice of drive type directly affects storage performance due to differences in performance characteristics between each type and the cache mechanism.
 
 #### Storage Spaces Direct cache
 
@@ -68,8 +68,8 @@ With Storage Spaces Direct, volumes allow you to group drives in the storage poo
 - Number of volumes per cluster. To optimize storage performance, the number of volumes per server should be a multiple of the number of servers per cluster.
 - File system. Consider using the ReFS for Storage Spaces Direct volumes.
 - Volume size. The size of a volume on an Azure Stack HCI cluster shouldn't exceed 64 TB.
-- Reserve capacity. To optimize disk space usage, consider setting aside the equivalent of one capacity drive per server, up to 4 drives per server.
-- Resiliency type. Volume resiliency is the primary mechanism that protects data residing in the storage pool against hardware issues, such as drive or server failures. The choice of resiliency type is workload dependent. Workloads that have strict latency requirements or that perform large amounts of mixed random IOPS, such as Microsoft SQL Server databases or performance-sensitive Hyper-V VMs, should run on volumes that use mirroring to maximize performance. Workloads that have less demanding I/O requirements, such as file servers or Virtual Desktop Infrastructure (VDI), can use dual-parity to improve capacity efficiency. Workloads that perform large, sequential writes, such as backup software, are best suited for mirror-accelerated parity.
+- Reserve capacity. To optimize disk space usage, consider setting aside the equivalent of one capacity drive per server, up to four drives per server.
+- Resiliency type. Volume resiliency is the primary mechanism that protects data residing in the storage pool against hardware issues, such as drive or server failures. The choice of resiliency type is workload-dependent. Workloads that have strict latency requirements or that perform large amounts of mixed random IOPS, such as Microsoft SQL Server databases or performance-sensitive Hyper-V VMs, should run on volumes that use mirroring to maximize performance. Workloads that have less demanding I/O requirements, such as file servers or Virtual Desktop Infrastructure (VDI), can use dual-parity to improve capacity efficiency. Workloads that perform large, sequential writes, such as backup software, are best suited for mirror-accelerated parity.
 
 ### Plan for Azure Stack HCI host networking
 
@@ -93,7 +93,7 @@ While each cluster node must have direct network path to each of the other nodes
 RDMA is a networking technology that provides high-throughput, low-latency communication that minimizes CPU usage. RDMA supports *zero-copy networking*, which allows the pNIC to transfer data directly to or from an application memory. Azure Stack HCI configurations implement one of the two common RDMA technologies:
 
 - RDMA over Converged Ethernet (RoCE and RoCEv2) over UDP/IP, with Data Center Bridging (DCB) providing flow control and congestion management.
-- Internet Wide Area RDMA Protocol (iWarp) over TCP/IP, with TCP providing flow control and congestion management.
+- Internet-Wide Area RDMA Protocol (iWarp) over TCP/IP, with TCP providing flow control and congestion management.
 
 Although a Microsoft RDMA implementation is RDMA-technology agnostic, RoCE and RoCEv2 installations are difficult to configure and problematic at any scale beyond a single rack. For all other scenarios, you should consider using iWarp, which doesn't require configuration of DCB on network hosts or network switches, and which can operate over the same distances as any other TCP connection.
 

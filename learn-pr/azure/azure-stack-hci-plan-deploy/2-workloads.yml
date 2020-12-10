@@ -3,9 +3,9 @@ uid: learn.azure.azure-stack-hci-plan-deploy.2-workloads
 metadata:
   title: What are the use cases of Azure Stack HCI?
   description: An overview of the use cases of Azure Stack HCI.
-  ms.date: 09/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What are the use cases of Azure Stack HCI?
