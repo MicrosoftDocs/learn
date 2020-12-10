@@ -55,7 +55,7 @@ If you didn't activate the free trial for Azure AD Premium 2, you won't be able 
 
 ## Change group back to assigned
 
-You'll need to assign a guest user to the Developer group in the next exercise. So let's changes the membership type back to assigned.
+You'll need to assign a guest user to the Developer group in the next exercise, so let's change the membership type back to **Assigned**.
 
 1. In the **Developer group**, select **Properties**. 
 1. Change **Membership type** to **Assigned**.

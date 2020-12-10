@@ -2,14 +2,14 @@
 uid: learn.azure.build-api-azure-functions
 metadata:
   title: Build Serverless APIs with Azure Functions
-  description: Use Visual Studio Code to build a JavaScript and Vue.js dashboard with a Serverless API powered by Azure Functions, Node.js and Cosmos DB.
-  ms.date: 10/02/2019
+  description: Use Visual Studio Code to build a JavaScript and Vue.js dashboard with a Serverless API powered by Azure Functions and Node.js.
+  ms.date: 12/04/2020
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build Serverless APIs with Azure Functions
-summary: Build Serverless APIs with Azure Functions
+summary: Use Visual Studio Code and Azure Functions to rapidly create a serverless API, implement a RESTful architecture and safely store secure information like connection strings.
 abstract: |
   In this module, you will:
   - Establish a solid understanding of Application Programming Interfaces (API).
@@ -20,7 +20,7 @@ abstract: |
   - Deploy an Azure Functions application.
 prerequisites: |
   - Must have a working knowledge of Azure Functions
-  - Must have basic knowledge of Azure Cosmos DB
+  - Must be familiar with fundamental API concepts
   - Must have [Node.js](https://nodejs.org/en/) installed
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
@@ -38,14 +38,13 @@ units:
   - learn.azure.build-api-azure-functions.2-exercise-setup-project
   - learn.azure.build-api-azure-functions.3-overview-api
   - learn.azure.build-api-azure-functions.4-exercise-create-function-project
-  - learn.azure.build-api-azure-functions.5-rest-function-routes
-  - learn.azure.build-api-azure-functions.6-exercise-make-functions-restful
   - learn.azure.build-api-azure-functions.7-query-azure-cosmos-db
   - learn.azure.build-api-azure-functions.8-exercise-query-azure-cosmos-db
+  - learn.azure.build-api-azure-functions.5-rest-function-routes
+  - learn.azure.build-api-azure-functions.6-exercise-make-functions-restful
   - learn.azure.build-api-azure-functions.9-understand-cors
   - learn.azure.build-api-azure-functions.10-exercise-cors-frontend
   - learn.azure.build-api-azure-functions.11-function-security
-  - learn.azure.build-api-azure-functions.12-exercise-publish-function-project
   - learn.azure.build-api-azure-functions.13-summary
 badge:
   uid: learn.azure.build-api-azure-functions.badge

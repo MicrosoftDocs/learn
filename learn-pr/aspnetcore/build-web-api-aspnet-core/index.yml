@@ -27,7 +27,6 @@ roles:
 products:
 - dotnet
 - aspnet-core
-- dotnet-core
 units:
 - learn.build-web-api-net-core.1-introduction
 - learn.build-web-api-net-core.2-create-web-api
