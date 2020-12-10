@@ -38,7 +38,7 @@ The workbook contains additional tiles that indicate the users who signed in usi
 
 :::image type="content" source="../media/05-Conditional-Access.PNG" alt-text="Screenshot of Conditional Access activity." border="true":::
 
-The rest of the page also contains tables and charts that are interactive and by selecting some of the rows or tiles, you can filter the data that is presented. Some tables are created with links to corresponding logs as displayed in the following screenshot.
+The rest of the page also contains tables and charts that are interactive, and by selecting some of the rows or tiles, you can filter the data that is presented. Some tables are created with links to corresponding logs as displayed in the following screenshot.
 
 :::image type="content" source="../media/05-Links.PNG" alt-text="Screenshot of the links that can open the query in Azure Data Explorer or pin the query in dashboard." border="true":::
 
