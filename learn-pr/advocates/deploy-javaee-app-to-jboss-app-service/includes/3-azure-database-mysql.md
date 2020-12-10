@@ -274,7 +274,7 @@ mysql> select * from city where CountryCode='JPN' AND Population > 1000000 ORDER
 
 We created a MySQL database flexible server on Azure and created the databases and tables which will be used by the application in this. Then We stored the data in the created table.
 
-We also executed some SQL queries with the mysql command to see if the data could be available and if the SQL statements written in the application could be executed.
-Now we completed the setup and preparation of MySQL Server which is required to deploy a Java EE (Jakarta EE) application in next Chapter.
+We also executed some SQL queries with the mysql command to see if the data could be available and if the SQL statements written in the application could be executed.  
 
+Now we completed the setup and preparation for MySQL Server which is required to deploy a Java EE (Jakarta EE) application in next Chapter.  
 Next, we will deploy the Java EE(Jakarta EE) application to JBoss EAP on Azure App Service and configure it so that it can connect to the MySQL created here.

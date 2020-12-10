@@ -1,5 +1,3 @@
-# Build and Deploy Java EE (Jakarta EE) Application to JBoss EAP on Azure  App Service
-
 In this page, You will learn how to deploy  a Java EE (Jakarta EE) Application to JBoss EAP on Azure App Service.  
 This is a general Java EE (Jakarta EE) application. In the project, we used following technologies.
 
@@ -641,9 +639,8 @@ az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
 2020-12-09T02:23:24.680950010Z: [INFO]  02:23:24,680 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
 ```
 
-## Finally
+## Exercise Summary
 
-In this chapter, we learned how to configure and deploy a Java EE 8 (Jakarta EE) Application to JBoss EAP on Azure App Service. Then we created `DataSource` for accessing from MySQL to  JBoss EAP in the startup script. And learned how to access to the Remote Server both CLI and GUI by TCP Tunnel. Finally we confimed how to see the log file from local machine.
+In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) Application to JBoss EAP on Azure App Service. Then we created `DataSource` for accessing from MySQL to  JBoss EAP in the startup script. And learned how to access to the Remote Server both CLI and GUI by TCP Tunnel. Finally we confimed how to see the log file from local machine.
 
-> [!WARNING]
-> I need write a little bit more for considering the structure.
+This is the general step to deploy your Java EE (Jakarta EE) application to JBoss EAP which communicate with MySQL.  
