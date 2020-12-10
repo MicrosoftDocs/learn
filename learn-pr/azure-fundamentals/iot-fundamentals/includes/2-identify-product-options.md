@@ -56,7 +56,7 @@ A key part of IoT Central is the use of device templates.  By using  a device te
 
 Azure Sphere comes in three parts:
 
-- The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.
+- The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.
 
   ![Screenshot of an Azure Sphere development kit micro-controller unit.](../media/2-identify-product-options-02.png)
 
