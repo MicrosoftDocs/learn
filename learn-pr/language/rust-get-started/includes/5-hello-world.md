@@ -45,6 +45,6 @@ On Windows, enter the command `.\main.exe`, instead of `./main`:
     > .\main.exe
     Hello, world!
 
-You should see `Hello, world!` in the terminal.
+You should see `Hello, world!` printed out in the terminal.
 
 Congratulations, you've written your first Rust program!

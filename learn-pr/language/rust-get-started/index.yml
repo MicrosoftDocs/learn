@@ -23,6 +23,7 @@ levels:
 - beginner
 roles:
 - student
+- developer
 products:
 - vs-code
 - azure

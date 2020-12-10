@@ -74,7 +74,7 @@ Here's how to download the installer from the Visual Studio Code website. You ca
 
 Go to the [Visual Studio Code download page](http://code.visualstudio.com/download?azure-portal=true).
 
-The webpage displays logos for Windows, Linux, and Mac. Under the Linux logo, select either the .deb installer (for .deb-based package managers) or the .rpm installer (for .rpm-based package managers).
+The webpage displays logos for Windows, Linux, and Mac. Under the Linux logo, select either the .deb installer (for Debian or Ubuntu distributions) or the .rpm installer (for Red Hat, Fedora, or SUSE distributions).
 
 ### Step 2 - Start the installer
 

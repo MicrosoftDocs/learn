@@ -4,7 +4,7 @@ The recommended way to install Rust is to use `rustup`, the Rust toolchain insta
 
 Copy the curl command by selecting the clipboard icon. Then open your computer's terminal or command prompt to paste the command, and follow the on-screen instructions.
 
-Rust has a six-week, rapid release process, and supports a great number of platforms, so there are many builds of Rust available at any time. If you've installed `rustup` in the past, you can update your installation by running the command `rustup update`.
+Rust has a six-week, rapid release process, and supports a great number of platforms, so there are many builds of Rust available at any time. If you've installed `rustup` in the past, you can update to the latest stable version of Rust by running the command `rustup update`.
 
 After you've completed the installation, you should have the `rustc` and `cargo` commands available. Type the following commands in your terminal or command prompt:
 
