@@ -2,36 +2,43 @@
 uid: learn.azure.azure-stack-hci-plan-deploy
 metadata:
   title: Plan and deploy Azure Stack HCI
-  description: TODO
+  description: This module introduces you to planing for and deploying Azure Stack HCI. Content includes identifying suitable workloads, determining the optimal configuration to host these workloads, stepping through the deployment process, validating post-deployment operational status, and evaluating Azure integration options.
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and deploy Azure Stack HCI
-summary: TODO
+summary: This module introduces you to planing for and deploying Azure Stack HCI. Content includes identifying suitable workloads, determining the optimal configuration to host these workloads, stepping through the deployment process, validating post-deployment operational status, and evaluating Azure integration options.
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Plan for Azure Stack HCI.
+  - Deploy Azure Stack HCI.
+  - Validate deployment of Azure Stack HCI.
+  - Integrate Azure Stack HCI with Azure.
 prerequisites: | 
-  - TODO
+  To get the best learning experience from this module, you should have the basic knowledge of:
+  - Azure
+  - Windows Server Hyper-V
+  - Windows Server software-defined storage 
+  - Windows Server software-defined networking
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
 roles:
 - solution-architect
+- administrator
+- student
 products:
+- azure-stack-hci
 - azure
 units:
 - learn.azure.azure-stack-hci-plan-deploy.1-introduction
 - learn.azure.azure-stack-hci-plan-deploy.2-workloads
-- learn.azure.azure-stack-hci-plan-deploy.3-hardware
-- learn.azure.azure-stack-hci-plan-deploy.4-integration-options
-- learn.azure.azure-stack-hci-plan-deploy.5-deploy
-- learn.azure.azure-stack-hci-plan-deploy.6-verify-deployment
-- learn.azure.azure-stack-hci-plan-deploy.7-knowledge-check
-- learn.azure.azure-stack-hci-plan-deploy.8-summary
+- learn.azure.azure-stack-hci-plan-deploy.3-plan
+- learn.azure.azure-stack-hci-plan-deploy.4-deploy
+- learn.azure.azure-stack-hci-plan-deploy.5-verify-deployment
+- learn.azure.azure-stack-hci-plan-deploy.6-integration-options
+- learn.azure.azure-stack-hci-plan-deploy.7-summary
 badge:
   uid: learn.azure.azure-stack-hci-plan-deploy.badge
