@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "go build"
       isCorrect: false
-      explanation: "Incorrect. The go build command compiles the the program and generates the binary executable, but it doesn't run the program."
+      explanation: "Incorrect. The go build command compiles the program and generates the binary executable, but it doesn't run the program."
     - content: "go run"
       isCorrect: true
       explanation: "Correct. The go run command compiles and runs the program, but it doesn't generate the binary executable."
