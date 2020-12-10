@@ -54,7 +54,7 @@ You can combine your queries with some of the most commonly used operators:
 - **count**. Returns the count of rows in the table.
 - **take**. Returns up to the specified number of rows of data.
 - **project**. Selects a subset of columns.
-- **sort**. Sort the rows of the input table into order by one or more columns.
+- **sort**. Sorts the rows of the input table into order by one or more columns.
 - **top**. Returns the first N records sorted by the specified columns.
 - **extend**. Computes derived columns.
 - **summarize**. Aggregates groups of rows.
