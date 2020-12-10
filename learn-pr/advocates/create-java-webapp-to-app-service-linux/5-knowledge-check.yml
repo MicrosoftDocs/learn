@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-webapp-java-tomcat.5
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 12/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  questions:
+    - content: Which file format do you use for Facelets?
+      choices:
+        - content: "Hypertext Markup Language (HTML)"
+          isCorrect: false
+          explanation: "HTML is used for creating static web pages."
+        - content: "Extensible Hypertext Markup Language (XHTML)"
+          isCorrect: true
+          explanation: "Since JavaServer Faces 2.0, Facelets has been used as the default view declaration language."
+        - content: "JavaServer Pages (JSP)"
+          isCorrect: false
+          explanation: "In the past, you could write JavaServer Faces (JSF) tags in JSP pages. Facelets is the new view declaration language since JSF 2.0. We recommend that you use the XHTML instead of JSP."
+    - content: Which methods allow you to access the application logs in Azure App Service?
+      choices:
+        - content: SSH in Advanced Tools in the Azure portal
+          isCorrect: false
+          explanation: This method is a correct option, but it isn't the only way to access the logs.
+        - content: Access the log stream in Advanced Tools in the Azure portal
+          isCorrect: false
+          explanation: This method is a correct option, but it isn't the only way to access the logs.
+        - content: The Azure CLI command-line tool
+          isCorrect: false
+          explanation: This method is a correct option, but it isn't the only way to access the logs.
+        - content: All of the above
+          isCorrect: true
+
+    - content: Which tasks can you do with the Maven Plugin for Azure App Service?
+      choices:
+        - content: Compile the source code
+          isCorrect: false
+          explanation: The Maven Compiler Plugin compiles your source code.
+        - content: Configure your Azure App Service instance
+          isCorrect: false
+          explanation: This choice is a correct option, but it isn't its only feature.
+        - content: Deploy to your Azure App Service instance
+          isCorrect: false
+          explanation: This choice is a correct option, but it isn't its only feature.
+        - content: Both configure and deploy to your Azure App Service instance
+          isCorrect: true

@@ -171,6 +171,6 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. Select **Pin to dashboard** > **Existing**.
 1. For a dashboard, select **dashboard-learn-ts-loadbalancer**.
-1. Select **Apply**.
+1. Select **Pin**.
 
 You now have a baseline set of metrics for the system when it's running correctly.
