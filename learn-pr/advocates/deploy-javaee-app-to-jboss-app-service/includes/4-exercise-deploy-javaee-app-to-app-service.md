@@ -326,7 +326,6 @@ public class CityService {
     EntityManager em;
 ```
 
-
 ## Access to the Application
 
 In this Sample Application, we implemented three RESTful endpoints. So we will confirm whether the three endpoint is available or not by using `curl` command or Web browser.
