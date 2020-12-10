@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.manage-deployments-advanced-arm-template-features
+title: Manage complex cloud deployments by using advanced ARM template features
+metadata:
+  description: Use advanced constructs in Azure Resource Manager to manage complex scenarios such as deployment order, conditional deployments and secrets. 
+  ms.date: 11/04/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  title: Manage complex cloud deployments by using advanced ARM template features
+summary: This module teaches you how to use advanced Azure Resource Manager (ARM) template features to perform secrets management and conditional deployments.
+abstract: |
+  After completing this module, you'll be able to:
+  - Control the deployment order of resources by using the _dependsOn_ construct.
+  - Securely assign secrets like passwords to resources in your templates by using an Azure Key Vault and ARM template configuration.
+  - Conditionally deploy resources by using the _condition_ construct and parameters at deployment time.
+  - Deploy multiple resources of the same type by using the _copy_ construct and to reduce repetitive configuration. 
+iconUrl: /learn/achievements/manage-deployments-advanced-arm-template-features.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - administrator
+  - solution-architect
+products:
+  - azure
+  - azure-clis
+  - azure-resource-manager
+prerequisites: |
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - Experience building and running basic ARM templates.
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
+  - The [Azure Resource Manager Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension for Visual Studio Code installed locally.
+  - The [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell&azure-portal=true) extension for Visual Studio Code installed locally.
+  - On Windows, the [OpenSSH client](https://docs.microsoft.com/windows-server/administration/openssh/openssh_install_firstuse?azure-portal=true).
+  - Either:
+    - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally.
+    - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) and the [Azure PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.2.0&azure-portal=true) installed locally.
+units:
+  - learn.manage-deployments-advanced-arm-template-features.1-introduction
+  - learn.manage-deployments-advanced-arm-template-features.2-dependencies
+  - learn.manage-deployments-advanced-arm-template-features.3-dependencies-exercise
+  - learn.manage-deployments-advanced-arm-template-features.4-secure-parameters
+  - learn.manage-deployments-advanced-arm-template-features.5-secure-parameters-exercise
+  - learn.manage-deployments-advanced-arm-template-features.6-conditions
+  - learn.manage-deployments-advanced-arm-template-features.7-conditions-exercise
+  - learn.manage-deployments-advanced-arm-template-features.8-copy
+  - learn.manage-deployments-advanced-arm-template-features.9-copy-exercise
+  - learn.manage-deployments-advanced-arm-template-features.10-knowledge-check
+  - learn.manage-deployments-advanced-arm-template-features.11-summary
+badge:
+  uid: learn.manage-deployments-advanced-arm-template-features.badge
