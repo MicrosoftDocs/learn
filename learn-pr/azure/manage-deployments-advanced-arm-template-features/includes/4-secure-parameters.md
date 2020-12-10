@@ -33,7 +33,7 @@ There are several configuration steps you need to perform to set up the Key Vaul
 
 - **User needs deployment permission on resource group**. This is no different than other deployment. However, if you haven't created the resource group, you can assign a role to ensure you can deploy to it.
 
-- **User needs proper access to the Key Vault**. You must ensure that you have the proper access to the Key Vault when you read from it during deployment.  
+- **User needs proper access to the Key Vault**. You must ensure that you have the proper access to the Key Vault when you read from it during deployment.  When you create a Key Vault, it creates an access policy giving the user rights to manage all the secrets, keys, and certs.
 
 ### Configure Key Vault for deployment
 

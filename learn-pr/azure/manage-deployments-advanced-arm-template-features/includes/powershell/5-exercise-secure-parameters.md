@@ -60,8 +60,8 @@ Recall that a parameter file is an alternative way to pass parameters to your AR
     The output resembles this:
 
     ```output
-    Id
-    --
+    
+    
     /subscriptions/7c7df858-93a0-4f38-8990-304c836a4e8d/resourceGroups/<rgn>[resource group name]</rgn>/providers/Microsoft.KeyVault/vaults/tailwind-secrets3020
     ```
 
