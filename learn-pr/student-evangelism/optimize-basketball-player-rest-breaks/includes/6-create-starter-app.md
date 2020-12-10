@@ -2,8 +2,6 @@ To create a web app by using the Azure Static Web Apps extension, you'll use a G
 
 In this case, we'll use the Static Web Vanilla Basic repo template. Before continuing, make sure you have your GitHub account, and that you're signed in to GitHub in a web browser.
 
-> [!NOTE]
-> You also can create a basic web app without deploying it to Azure. For the steps to follow, see the [Build a simple website](/learn/modules/build-simple-website?azure-portal=true) Learn module.
 
 ## Create the web app repo
 
@@ -62,7 +60,7 @@ To go to the **Actions** page of your *space-jam-a-new-legacy-app* GitHub repo t
 
 :::image type="content" source="../media/action-on-github.png" alt-text="Screenshot that shows the GitHub action for this web app.":::
 
-To see the workflow that was generated, select the action, and then select **Workflow file**. In this action, all code that's pushed to the main branch is deployed to the static web app that's saved in the secret GitHub token that was set up when you connected the repo to Azure in Visual Studio Code. How GitHub Actions works is beyond the scope of this module, but if you want to learn more, you can check out the [GitHub Actions Learn module](/learn/modules/github-actions-ci?azure-portal=true).
+To see the workflow that was generated, select the action, and then select **Workflow file**. In this action, all code that's pushed to the main branch is deployed to the static web app that's saved in the secret GitHub token that was set up when you connected the repo to Azure in Visual Studio Code.
 
 For this module, all you have to know is that if you push changes to your main branch, the changes are rendered in the static web app.
 

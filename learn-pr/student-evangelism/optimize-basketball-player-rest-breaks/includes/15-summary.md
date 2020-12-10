@@ -12,9 +12,9 @@ You can continue exploring how to integrate Azure Static Web Apps and machine le
 We encourage you to make this app your own and use it as a place to test your creativity, determination, and skills. 
 
 > [!TIP]
-> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video).
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video?azure-portal=true).
 
-And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie) coming Summer 2021!
+And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie?azure-portal=true) coming Summer 2021!
 
 :::image type="content" source="../media/space-jam-end-card.png" alt-text="Image of the SPACE JAM: A NEW LEGACY logo." border="false":::
 
