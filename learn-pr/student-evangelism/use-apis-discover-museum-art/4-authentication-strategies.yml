@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.explore-art-world-apis.4-authentication-strategies
+metadata:
+  title: Authentication strategies
+  description: Summary
+  ms.date: 12/08/2020
+  author: jlooper
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authentication strategies
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-authentication-strategies.md)]

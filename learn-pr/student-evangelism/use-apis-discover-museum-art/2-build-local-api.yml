@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.explore-art-world-apis.2-build-local-api
+metadata:
+  title: Build a local API
+  description: Build a local API.
+  ms.date: 12/08/2020
+  author: jlooper
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a local API
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-build-local-api.md)]
+quiz:
+  title: Test your knowledge about APIs.
+  questions:
+  - content: "Assuming the API as a sink metaphor, which of these statements is true?"
+    choices:
+    - content: "The data is the faucet"
+      isCorrect: false
+      explanation: "If an API is the sink, the data stream is actually the pipes in the wall"
+    - content: "The data is the drain"
+      isCorrect: false
+      explanation: "If an API is the sink, the data stream comes via pipes"
+    - content: "The data is in the pipes"
+      isCorrect: true
+      explanation: "If an API is the sink, the user consumes the output of pipes in the wall by leveraging the sink mechanism"   
+  - content: "API stands for"
+    choices:
+    - content: "Application Programming Intelligence"
+      isCorrect: false
+      explanation: "Almost, not quite!"
+    - content: "Application Programming Interface"
+      isCorrect: true
+      explanation: "This is correct, it is an interface that exists to link applications programmatically"
+    - content: "Auto Project Interface"
+      isCorrect: false
+      explanation: "Try again"
+    - content: "Amazing Programming Intellectual"
+      isCorrect: false
+      explanation: "That's not quite right"
+  - content: "It's necessary to understand the entire architecture of an application to use its API"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Try again; the API provides a layer between the user and the backend system for a good reason"
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct! Part of the beauty of using APIs is you don't have to have a deep understanding of data structures. Of course, this means that good API design is very important!"
+
