@@ -35,4 +35,4 @@ units:
 - learn.azure.stack-hci-arc-integration.4-monitor-virtualized-workloads
 - learn.azure.stack-hci-arc-integration.5-summary
 badge:
-  uid: learn.learn.azure.stack-hci-arc-integration
+  uid: learn.azure.stack-hci-arc-integration
