@@ -16,38 +16,38 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'You want your Logic Apps workflow to run every three minutes. In which of the following sections of the workflow definition would you define this recurring behavior? '
+  - content: 'You want your Logic Apps workflow to run every three minutes. In which of the following sections of the workflow definition would you define this recurring behavior?'
     choices:
-    - content: 'The actions section'
+    - content: 'Actions section'
       isCorrect: false
-      explanation: 'Actions are the processes carried out when a trigger fires successfully'
-    - content: 'The triggers section'
+      explanation: 'Actions are the processes carried out when a trigger fires successfully.'
+    - content: 'Triggers section'
       isCorrect: true
       explanation: 'The trigger is the area where the behavior that starts the workflow is defined. In this case, we would define a *recurrence* trigger.'
-    - content: 'The parameters section'
+    - content: 'Parameters section'
       isCorrect: false
-      explanation: 'The parameters section is where variables to be used at run time can be defined'
+      explanation: 'The parameters section is where variables to be used at runtime can be defined.'
 
-  - content: 'In which section of a Logic Apps workflow definition can you send a response to an HTTP request, returning a message body, status code , and message headers?'
+  - content: 'In which section of a workflow definition can you send a response to an HTTP request that will return a message body, status code, and message headers?'
     choices:
-    - content: 'The triggers section'
+    - content: 'Triggers section'
       isCorrect: false
       explanation: 'This section defines the calls that instantiate and start a workflow, such as an HTTP request.'
-    - content: 'The actions section'
+    - content: 'Actions section'
       isCorrect: true
       explanation: 'The response is an action which flows from the trigger in the workflow.'
-    - content: 'The outputs section'
+    - content: 'Outputs section'
       isCorrect: false
-      explanation: 'While the outputs section defines the data that a workflow can return when finished running, the Response action type is used to respond to incoming HTTp requests.'
+      explanation: 'While the outputs section defines the data that a workflow can return when it finishes running, the Response action type is used to respond to incoming HTTP requests.'
 
   - content: 'In which section of the workflow definition do you specify a value to return when a workflow completes?'
     choices:
-    - content: 'The triggers section'
+    - content: 'Triggers section'
       isCorrect: false
-      explanation: 'This section is for defining triggers'
-    - content: 'The outputs section'
+      explanation: 'This section is for defining triggers.'
+    - content: 'Outputs section'
       isCorrect: true
-      explanation: 'This is the section where you can define what you wish to return on completion of a workflow'
-    - content: 'The actions section'
+      explanation: 'This is the section where you can define what you want to return on completion of a workflow.'
+    - content: 'Actions section'
       isCorrect: false
-      explanation: 'This section is for defining actions'
+      explanation: 'This section is for defining actions.'
