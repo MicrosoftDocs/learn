@@ -24,7 +24,7 @@ quiz:
     - content: "Azure Key Vault."
       isCorrect: false
       explanation: "That's incorrect. Azure Stack HCI does not support Azure PaaS services."
-    - content: "Azure VM scale set."
+    - content: "Azure virtual machine scale set."
       isCorrect: false
       explanation: "That's incorrect. Azure Stack HCI does not support Azure IaaS services."
 
