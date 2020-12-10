@@ -95,6 +95,9 @@ Then you can see following result. The following information is important and we
 [INFO] -------------------------------------------------------
 ```
 
+> [!NOTE]
+> Please execute the above command on IPv4 environment, if your environment has IPv6 address, this command will fail because firewall configuration of azure cli command doesn't support the IPv6 address now.
+
 ## Login to the MySQL DB
 
 After you created the MySQL DB, you can access to the MySQL DB using `mysql` client command.  
