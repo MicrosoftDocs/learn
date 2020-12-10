@@ -15,11 +15,11 @@ In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the mineral chunks on the ship. This sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
 
-![An equation that shows the sum of mineral weights](../media/example-1.png)
+![An equation that shows the sum of mineral weights](../media/costfun-1.svg)
 
 Ideally, we want a solution where the weight difference between the ships is as small as possible.
 
-![An equation that subtracts the total weights on one ship from the total weights on the other ship to produce a cost function](../media/example-2.png)
+![An equation that subtracts the total weights on one ship from the total weights on the other ship to produce a cost function](../media/costfun-2.svg)
 
 This equation subtracts the sum of weights on ship *b* from the sum of weights on ship *a*.
 
@@ -33,7 +33,7 @@ Because we can assign the chunk *i* to either ship, the variable $x_i$ can take 
 
 By introducing this variable $x_i$, we can simplify the equation as follows:
 
-![An equation that introduces a binary variable to simplify the calculation of the cost function](../media/example-3.png)
+![An equation that introduces a binary variable to simplify the calculation of the cost function](../media/costfun-3.svg)
 
 ## Refine the problem again
 
@@ -41,7 +41,7 @@ There's one last change we need to make before we can solve our problem.
 
 If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to ship *b* by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
-![An equation that squares the previous computation to ensure that the cost function is not negative](../media/example-4.png)
+![An equation that squares the previous computation to ensure that the cost function is not negative](../media/costfun-4.svg)
 
 This final model gives us a cost function with the required properties.
 
@@ -198,11 +198,13 @@ The problem has 90 terms for 10 mineral chunks:
 
 That's a lot of terms for just 10 chunks! On closer inspection, you'll note that there are essentially duplicated terms that result from having squared the right hand side of the equation when building our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of it: `{'w': 110, 'ids': [8, 9]}`.
 
-This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms by a slight modification to our cost function:
+This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms as follows:
 
-$$ H^2 = \Large(\sum_{i<j} w_{i} x_{i})^2 $$
+![An equation that reduces the number of terms in the previous cost function](../media/costfun-5.svg)
 
-In code, this means a small modification to the `createProblemForMineralWeights` function:
+Notice that we've expanded the square in our previous cost function to a summation over two indices $i$ and $j$. With the constraint $i<j$ we exclude symmetric copies of terms (as well as "constant" $i=j$ terms).
+
+Modify your `createProblemForMineralWeights` function as follows to implement the improved cost function:
 
 ```python
 def createSimplifiedProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
