@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which ALTER DATABASE statement parameter allows a dedicated SQL pool to scale?"
+    choices:
+    - content: "SCALE."
+      isCorrect: false
+      explanation: "Incorrect. SCALE is not a valid ALTER DATABASE parameter"
+    - content: "MODIFY"
+      isCorrect: true
+      explanation: "Correct. MODIFY is used to scale a dedicated SQL pool."
+    - content: "CHANGE."
+      isCorrect: false
+      explanation: "Incorrect. CHANGE is not a valid ALTER DATABASE parameter."
+  - content: "Which workload management feature influences the order in which a request gets access to resources?"
+    choices:
+    - content: "Workload classification."
+      isCorrect: false
+      explanation: "Incorrect. Workload classification allows workload policies to be applied to requests through assigning resource classes and importance.."
+    - content: "Workload importance."
+      isCorrect: true
+      explanation: "Correct. Workload importance indexes write multiple data types and values per row of data and so compression functions are less likely to be able to reduce the size through pattern matching and offsets."
+    - content: "Workload isolation."
+      isCorrect: false
+      explanation: "Incorrect. Workload isolation reserves resources for a workload group."
+  - content: "Which Dynamic Management View enables the view the active connections against a dedicated SQL pool?"
+    choices:
+    - content: "sys.dm_pdw_exec_requests."
+      isCorrect: true
+      explanation: "Correct. sys.dm_pdw_exec_requests enables you to view the active connections against a dedicated SQL pool"
+    - content: "sys.dm_pdw_dms_workers."
+      isCorrect: false
+      explanation: "Incorrect. sys.dm_pdw_dms_workers allows you to monitor data movement in the dedicated SQL pool"
+    - content: "DBCC PDW_SHOWEXECUTIONPLAN."
+      isCorrect: false
+      explanation: "Incorrect. DBCC PDW_SHOWEXECUTIONPLAN Shows an execution plan of a query, and is not a Dynamic Management View."
