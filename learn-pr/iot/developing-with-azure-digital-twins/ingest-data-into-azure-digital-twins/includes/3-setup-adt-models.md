@@ -28,7 +28,7 @@ The model looks like this:
   }
 ```
 
-1. Upload this model to your twins instance by running the following command in the Azure shell from the previous unit
+1. Upload this model to your twins instance by running the following command in the PowerShell session from the previous unit
 
     ```azurecli
     az dt model create --models '{"@id": "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1", "@type": "Interface","displayName": "Factory Production Step: Moulding - Interface Model", "extends": "dtmi:com:microsoft:iot:e2e:digital_factory:production_step;2","@context": "dtmi:dtdl:context;2", "contents": [{"@type": [ "Property", "Temperature" ],"name": "ChasisTemperature","schema": "double","unit": "degreeFahrenheit", "writable": true }, { "@type": "Property", "name": "PowerUsage", "schema": "double"  } ]}' -n $dtname

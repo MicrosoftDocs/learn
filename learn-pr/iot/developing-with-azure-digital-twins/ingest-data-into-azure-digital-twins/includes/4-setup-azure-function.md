@@ -59,6 +59,10 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
 
 1. Choose a directory location for your project workspace and choose **Select**.
 
+>[!NOTE]
+>This directoy should be new, empty, and unique for this Azure Function
+>
+
 1. Provide the following information at the prompts:
     - **Select a language for your function project**: Choose `C#`.
     - **Select a template for your project's first function**: Choose `Change template filter`.
@@ -152,7 +156,7 @@ namespace My.Function
 1. In the VSCode function extension, click on on **Deploy to Function App...**
     ![Choose Deploy to Function App...](../media/deploy-to-function-app.png)
 
-- **Select subscription**: Choose `Concierge Subscription` if you're using the sandbox environment
+- **Select subscription**: Choose your subscription
 - **Select Function App in Azure**: Choose `<name>twinfunction`.
 
 1. When the deployment finishes, you'll be prompted to Start Streaming Logs

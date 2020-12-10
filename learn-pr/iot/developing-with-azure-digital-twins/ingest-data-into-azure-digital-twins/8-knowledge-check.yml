@@ -24,7 +24,7 @@ quiz:
       isCorrect: false
       explanation: "An Azure Administrator can create instances of Azure Digital Twin services but won't be able to modify, write, etc."
 
-  - content: 'Which of the items below an publish data to Azure Digital Twins?'
+  - content: 'Which of the items below can publish data directly to Azure Digital Twins?'
     choices:
     - content: Event Grid
       isCorrect: false
@@ -34,8 +34,22 @@ quiz:
       explanation: "Event Hub is a message ingestion service used to publish or subscribe to messages generated from other services."
     - content: IoT Hub
       isCorrect: false
-      explanation: "IoT Hub enables communication with IoT devices and applications.  IoT Hub supports messages routing to a variety of Azure messages services such as Event Grid and Event Hub."
+      explanation: "IoT Hub enables communication with IoT devices and applications.  IoT Hub supports messages routing to a variety of Azure messaging services such as Event Grid and Event Hub."
     - content: SDK / APIs
       isCorrect: true
-      explanation: "Azure Digital Twins support message ingestion through API calls. Developers can use the REST APIs or the SDK to interact with the APIs."
+      explanation: "Azure Digital Twins support message ingestion through API calls. Developers can use the REST APIs or the SDKs to interact with the APIs."
 
+  - content: 'What is the recommended pattern for IoT Hub to publish data to Azure Digital Twins in real-time?'
+    choices:
+    - content: Event Grid and Azure Functions
+      isCorrect: true
+      explanation: "IoT Hub can publish telemetry events to Event Grid which triggers Azure Functions running the ADT SDK. The SDK is used to update ADT."
+    - content: Virtual Machines
+      isCorrect: false
+      explanation: "While virtual machines could be used as 'external compute', this would be an overly complex and costly approach."
+    - content: Azure Storage
+      isCorrect: false
+      explanation: "IoT Hub can send telemetry data to Azure Storage however this pattern would be unnecessarily complex and would not result in real-time data updates."
+    - content: Azure Data Pipeline
+      isCorrect: false
+      explanation: "Azure Data Pipeline does not provide integration with IoT Hub or Azure Digital Twins."

@@ -10,9 +10,21 @@ git clone https://github.com/Azure-Samples/digital-twins-samples
 
 ## Setup variables
 
-We'll create and store some variables in the Azure Cloud Shell. This will make running the commands needed in the subsequent units easier and avoid mistakes from typos.
+We'll create and store some variables which will make running the commands needed in the subsequent units easier and avoid mistakes from typos.
 
 1. Open a PowerShell Console locally or a Cloud Shell with PowerShell
+1. Ensure you are logged into the right account and set to the correct default Azure subscription by running the command below
+
+    ```azurecli
+    az account show
+    ```
+
+    - You can change the subscription using the command below
+
+    ```azurecli
+    az account set -s <subscriptionId>
+    ```
+
 1. Setup the variables that will be used by the commands in the rest of this module. Copy and paste the following into the CLI.
 
 > [!TIP]
@@ -28,7 +40,7 @@ $location = "eastus"
 $functionstorage = $random + "storage"
 $telemetryfunctionname = $random + "-telemetryfunction"
 $aaddtapp = $random + "dtapp"
-$username = Read-Host "What is your username?"
+$username = Read-Host "Enter username. ex: jdoe@contoso.com"
 ```
 
 ## Use the CLI to deploy ADT
@@ -41,7 +53,7 @@ $username = Read-Host "What is your username?"
     ```azurecli
    az dt create --dt-name $dtname -g $rgname -l $location
     ```
-1. Assign permissions to Azure Digital Twins
+1. In order to modify the Azure Digital Twins service, you'll need to assign the *Azure Digital Twins Owner* permission
 
     ```azurecli
     az dt role-assignment create -n $dtname -g $rgname --role "Azure Digital Twins Data Owner" --assignee $username -o json
@@ -53,7 +65,7 @@ $username = Read-Host "What is your username?"
     cat > manifest.json
     ```
 1. Now you're editing manifest.json
-1. Paste the JSON code below into the shell and use ctrl+C to close the file
+1. Paste the JSON code below into the PowerShell and use ctrl+C to close the file
 
     ```json
     [{
