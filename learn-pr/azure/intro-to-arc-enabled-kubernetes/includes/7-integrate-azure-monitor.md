@@ -1,4 +1,4 @@
-Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implemenation details and hundreds or thousands of containers hosting workloads, being able to gain a comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. In this unit you'll learn what Azure Monitor for containers is and how to implement it.
+Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implementation details and hundreds or thousands of containers hosting workloads, being able to gain a comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. In this unit you'll learn what Azure Monitor for containers is and how to implement it.
 
 ## What is Azure Monitor?
 
