@@ -17,12 +17,9 @@ abstract: |
   - Describe Windows Server software-defined storage
   - Describe Windows Server software-defined networking
 prerequisites: | 
-  In order to get the best learning experience from this module, you should have the basic knowledge of:
-  - Windows Server Hyper-V
-  - Window Server software-defined storage
-  - Windows Server software-defined networking
-  - Windows Server operating system management
-  - Windows Server Failover Clustering.
+  - Basic knowledge of Windows Server Hyper-V
+  - Basic knowledge of Windows Server Failover Clustering
+  - Basic knowledge of Windows Server operating system management
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
