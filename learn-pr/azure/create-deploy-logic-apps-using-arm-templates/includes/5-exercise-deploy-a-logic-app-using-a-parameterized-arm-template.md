@@ -35,6 +35,7 @@ In the preceding exercise, we deployed an app using a basic Azure Resource Manag
 
 1. Save all changes to **template-with-params.json**.
 
+
 ## Deploy our logic app using the parameterized template
 
 There are two ways to supply parameters to our template during deployment using the`--parameters` flag in the `az deployment group create` command. We can pass in a URI of a remote parameters file, or the name of a local file. Let's use a local file.
@@ -84,6 +85,7 @@ There are two ways to supply parameters to our template during deployment using 
 
 1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL and paste it into a new browser window. The page will display the *Hello Logic Apps Template!* message.
 
+
 ## Deploy template with parameters from the command line
 
 Instead of editing a parameters file every time we want to deploy from the command line, we can supply the parameters in a JSON string on the command line.
@@ -96,6 +98,7 @@ Instead of editing a parameters file every time we want to deploy from the comma
     --template-file template-with-params.json \
     --parameters '{ "logicAppName": {"value":"MyLogicApp2"}, "location": {"value":"East US"}}'
     ```
+    
     Deployment will take a few seconds and you can watch the progress in the Cloud Shell command line. When deployment is finished, you should see `provisioningState` in the JSON result with the value `Succeeded`.
 
 1. To see the app in action, find the **logicAppUrl** value in the JSON result. Select the URL and paste it into a new browser window. The page will display the *Hello Logic Apps Template!* message.
@@ -113,7 +116,7 @@ Instead of editing a parameters file every time we want to deploy from the comma
 
 ## Update the app action in the Azure Resource Manager template
 
-Let's now turn our attention to making our app do a little more than just sending back a static message to us. We'll keep the app as an HTTP-triggered workflow and it will still return an HTTP response. But let's pass in some values with the request and have the app do a calculation for us. We'll do a simple area calculation. Assuming the inputs we pass in are height and width of a rectangle, we'll return the area. We'll then deploy the new app and see it in action. 
+Let's now turn our attention to making our app do a little more than just sending back a static message to us. We'll keep the app as an HTTP-triggered workflow and it will still return an HTTP response. But let's pass in some values with the request, and have the app do a calculation for us. We'll do a simple area calculation. Assuming the inputs we pass in are height and width of a rectangle, we'll return the area. We'll then deploy the new app and see it in action.
 
 1. Open **template-with-params.json** in the built-in editor by running the following command in the Cloud Shell. 
 
@@ -132,6 +135,7 @@ Let's now turn our attention to making our app do a little more than just sendin
     [!code-json[](../code/basic-template-with-params/template.json?range=49-49)]
 
     Our updated response does the following:
+
     - Prints out the name of the logic app. It makes a call to the `workflow()` function to return information about the workflow, and from that we reference the name property.
     - It returns the product (`mul()` function) of the integer equivalents (`int()` conversion function) of the height and width string values of the URL parameters.
 
