@@ -32,7 +32,7 @@ Alternatively, you can install the latest version of Go by doing the following:
 
 **Step 1: Download the Go installer**
 
-On the [Go download page](https://golang.org/dl/), in the “Featured downloads” section, select the **Apple macOS** option.
+On the [Go downloads page](https://golang.org/dl/), in the “Featured downloads” section, select the **Apple macOS** option.
 
 You might see a window that prompts you to allow downloading files from golang.org. If so, select **Allow**.
 
@@ -65,7 +65,7 @@ On the [Go downloads page](https://golang.org/dl/), in the “Featured downloads
 
 You might see a window prompting you to allow downloading files from golang.org. If so, select **Allow**.
 
-Alternatively, you can download the installer by using the following command:
+Alternatively, you can download the installer by running the following command from your Terminal prompt:
 
 > [!NOTE]
 > You might need to change the version number in the command if 1.15.4 isn't the [latest version](https://golang.org/doc/devel/release.html) as you're reading this guide.
@@ -112,7 +112,7 @@ To install Go on Windows, download the Go installer from the [Go downloads page]
 
 **Step 1: Download the Go installer**
 
-On the [Go download page](https://golang.org/dl/), in the “Featured downloads” section, select the **Microsoft Windows** option.  
+On the [Go downloads page](https://golang.org/dl/), in the “Featured downloads” section, select the **Microsoft Windows** option.  
 
 You might see a window prompting you to allow downloading files from golang.org. If so, select **Allow**.
 
