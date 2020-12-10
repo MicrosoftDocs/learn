@@ -21,7 +21,7 @@ To compare the three products, review the following table:
 |Build modern apps across cloud and on-premises using Azure services|Yes|No|No|
 |Small-footprint branch office scenarios|No|Yes|Yes|
 |Ruggedized form-factors in harsh or remote environments|No|No|Yes|
-|Support for re-purposed hardware|No|Yes. Customers have the option of reusing their existing hardware if provides the required capabilities, as defined by the Azure Stack HCI catalog|No|
+|Support for repurposed hardware|No|Yes. Customers have the option of reusing their existing hardware if provides the required capabilities, as defined by the Azure Stack HCI catalog|No|
 |Trusted enterprise virtualization|No|Yes|No|
 |High availability for virtual machines|Yes|Yes|No|
 |Built-in disaster recovery capabilities|No|Yes|No|
