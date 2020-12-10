@@ -1,4 +1,4 @@
-_Infrastructure as code_ (IaC) is concept where you describe your infrastructure requirements as human-readable text files. ARM templates are a form of IaC.
+_Infrastructure as code_ (IaC) is concept where you describe your infrastructure requirements as human-readable text files. Azure Resource Manager (ARM) templates are a form of IaC.
 
 Just like application code, you can manage your infrastructure code in a version control system such as Git. Doing so enables you to collaborate with others and trace changes to your infrastructure requirements as they evolve.
 

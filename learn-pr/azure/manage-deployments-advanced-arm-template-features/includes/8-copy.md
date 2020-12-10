@@ -3,7 +3,7 @@ You've so far declared resources in a resources list in a template. When deployi
 There are different aspects to creating many instances, and iterating over constructs, that you might want to consider:
 
 - **Do I need more than one copy**, for simpler scenarios this answer might be a no. For more advanced scenarios, like Subnets or Virtual Machines, you might need to consider whether you need more than one copy of something.
-- **Am I dependent on a resource**. Normally Azure Resource Manager, ARM is good at figuring out what needs to be constructed in what order so that references within the ARM template work out. There are situations though where you might need to specify the order.
+- **Am I dependent on a resource**. Normally Azure Resource Manager (ARM) is good at figuring out what needs to be constructed in what order so that references within the ARM template work out. There are situations though where you might need to specify the order.
 - **Define a naming scheme**. You want to give your resources meaningful names. For that reason, you rely parameters being passed at deploy time. When you have multiple copies, you might want to have more granular control and base the naming on what iteration in the copying sequence you are currently on
 - **Configure and control resource creation**. You might want to limit how many resources are being created in a production environment. It's possible to do so by configuring the resource creation as *serial* or *parallel*.
 - **Copy other types**. Resources aren't the only thing you can create multiple copies of and iterate over. You can in fact do the same with properties, variables, and output.

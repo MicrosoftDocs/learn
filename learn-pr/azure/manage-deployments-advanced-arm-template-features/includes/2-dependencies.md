@@ -6,7 +6,7 @@ Here are few aspects to consider:
 
     For example, say you need Azure Key Vault in order to fetch secrets that you need to load in a virtual machine (VM). When deploying Key Vault, you can at the same time deploy its secret within the same template. However, the Key Vault needs to be deployed before its secret. Therefore you can say that the secret would _depend_ on the Key Vault to exist. What happens in this case is that the Key Vault and the secret would be deployed serially, one after another, starting with the Key Vault, because of the dependency.
 
-- **Can I rely on how things work on ARM?**
+- **Can I rely on how things work on Azure Resource Manager (ARM)?**
 
     Your first thought when checking whether another resource exists might be to use something like Azure PowerShell or the Azure CLI to check for a resource's existence. A more automated solution uses a an ARM's built-in idempotency. The idea is that if ARM spots, a resource defined in a template, that already exist in the cloud it would not redeploy it. For this to be a valid approach you need to understand how ARM does the check.
 

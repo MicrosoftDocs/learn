@@ -1,4 +1,4 @@
-In the previous exercise, you ran a basic ARM template that provisions a Linux virtual machine (VM). In this part, you follow a similar process.
+In the previous exercise, you ran a basic Azure Resource Manager (ARM) template that provisions a Linux virtual machine (VM). In this part, you follow a similar process.
 
 This time, instead of passing the password as a parameter, you store the password in Azure Key Vault. To enable the ARM template to access the password, you create a parameter file that references the Key Vault secret in your subscription.
 
