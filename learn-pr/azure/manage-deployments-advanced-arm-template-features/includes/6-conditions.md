@@ -2,10 +2,10 @@ There might be situations where you need to optionally deploy a resource. A comm
 
 Picture the following situations where logic is expressed implicitly or explicitly:
 
-- **Pre-existing resource**. When you specify a resource in a template and deploy it, one of two things happens. Either the resource is deployed, or it's not deployed if it already exists. Checking whether a resource exists is something Azure Resource Manager (ARM) does for you; it's implicit. The question is if you can leverage this mechanism to your advantage when you reason about _how_ you can check the preexistence of something.
+- **Pre-existing resource**. When you specify a resource in a template and deploy it, one of two things happens. Either the resource is deployed, or it's not deployed if it already exists. Checking whether a resource exists is something Azure Resource Manager does for you; it's implicit. The question is if you can leverage this mechanism to your advantage when you reason about _how_ you can check the preexistence of something.
 - **Branching logic**. Depending on what parameters you pass to a template, at deployment time, you might want to deploy a different set of resources. What you are expressing is something known as *branching logic*. If the parameter has a certain type of value, then select the first branch otherwise select the second or third branch to deploy and so on.
 
-Both of the above situations represent scenarios where conditional logic is being applied. The logic is either in the ARM system itself or it's something you need to explicitly express.
+Both of the above situations represent scenarios where conditional logic is being applied. The logic is either in the Resource Manager system itself or it's something you need to explicitly express.
 
 ## Conditional deployment
 

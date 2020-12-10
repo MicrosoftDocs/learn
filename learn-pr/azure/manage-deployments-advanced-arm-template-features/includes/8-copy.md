@@ -3,7 +3,7 @@ You've so far declared resources in a resources list in a template. When deployi
 There are different aspects to creating many instances, and iterating over constructs, that you might want to consider:
 
 - **Do I need more than one copy**, for simpler scenarios this answer might be a no. For more advanced scenarios, like Subnets or Virtual Machines, you might need to consider whether you need more than one copy of something.
-- **Am I dependent on a resource**. Normally Azure Resource Manager (ARM) is good at figuring out what needs to be constructed in what order so that references within the ARM template work out. There are situations though where you might need to specify the order.
+- **Am I dependent on a resource**. Normally Azure Resource Manager is good at figuring out what needs to be constructed in what order so that references within the ARM template work out. There are situations though where you might need to specify the order.
 - **Define a naming scheme**. You want to give your resources meaningful names. For that reason, you rely parameters being passed at deploy time. When you have multiple copies, you might want to have more granular control and base the naming on what iteration in the copying sequence you are currently on
 - **Configure and control resource creation**. You might want to limit how many resources are being created in a production environment. It's possible to do so by configuring the resource creation as *serial* or *parallel*.
 - **Copy other types**. Resources aren't the only thing you can create multiple copies of and iterate over. You can in fact do the same with properties, variables, and output.
@@ -124,7 +124,7 @@ Sometimes you might want to control how resources are created and in what order.
 
 ### Deployment modes and _copy_
 
-You might want to ensure that a set of resources created by the copy construct is all being created before something else. If that's the case, you need to express this situation. Let's quickly remind ourselves that what comes into play here is the deployment modes that ARM uses. There are two modes supported:
+You might want to ensure that a set of resources created by the copy construct is all being created before something else. If that's the case, you need to express this situation. Let's quickly remind ourselves that what comes into play here is the deployment modes that Resource Manager uses. There are two modes supported:
 
 - **Serial**. Setting a resource to this deployment mode means it will be created one after another. In this mode, you are also expected to set a property `batchSize` to determine how many resources are deployed using this mode. A new *batch* can't be started before a preview one has completed. This ability to limit things this way is something you might want to use in a production environment, for example,  where it might be important to limit the number of affected resources at any one point.
 - **parallel**. This mode is the default deployment mode. The advantages are high throughput so the template ends up being processed faster. The drawbacks are that you can't guarantee order and it might not, as mentioned in the above bullet, be what you want for production environment.
@@ -159,4 +159,4 @@ In the context of the copy element, you need to tell the resource, with the depe
   ]
 ```
 
-In the above JSON the *copy element* has a `name` property with the value `storagecopy` and the dependent resource, a storage account is *waiting* for the *copy element* operation to finish with this expression **"dependsOn": ["storagecopy"]**. Thereby ARM switches to a serial deployment mode between these two resources. It might affect the throughput speed of the deployment but you've expressed that you care about a certain deployment order, which will now take precedence.
+In the above JSON the *copy element* has a `name` property with the value `storagecopy` and the dependent resource, a storage account is *waiting* for the *copy element* operation to finish with this expression **"dependsOn": ["storagecopy"]**. Thereby the ARM template switches to a serial deployment mode between these two resources. It might affect the throughput speed of the deployment but you've expressed that you care about a certain deployment order, which will now take precedence.

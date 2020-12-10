@@ -1,4 +1,4 @@
-Azure Resource Manager (ARM) templates has numerous constructs able to handle everything from simpler setups to even more complex ones. These constructs help you to for example conditionally run statements, define dependencies between resources, and read secrets at deployment time.
+ARM templates has numerous constructs able to handle everything from simpler setups to even more complex ones. These constructs help you to for example conditionally run statements, define dependencies between resources, and read secrets at deployment time.
 
 You're on a software team at Tailwind Traders. You plan to deploy infrastructure to Azure by using ARM templates. There are various challenges that you need to address, including managing secrets, assigning secrets to template resources, and dealing with repetitive resources. You also need to look into how you can express dependencies to control the order in which resources are deployed.
 
