@@ -1,6 +1,6 @@
 ## Excersize of Azure Database for MySQL
 
-`Azure Database for MySQL` is a relational database service in the Microsoft cloud based on MySQL Community Edition database engine. We will create sample DB for Java Web Applications.
+`Azure Database for MySQL` is a Relational Database Service in the Microsoft Azure. Since now, We will create and deploy a Sample Java Web Applications which communicate with the MySQL DB.
 
 ## Get Sample Application and script
 
@@ -10,7 +10,7 @@ First, please get the sample application and script from the GitHub repository.
 git clone https://*****
 ```
 
-After you got the project, you will see like following files and directories.
+After you got the project, you will see like following directories and files.
 
 ```text
 ├── Azure-MySQL-Setup-For-Sample-App.md
@@ -40,7 +40,7 @@ After you got the project, you will see like following files and directories.
 │   │   └── webapp
 │   │       └── WEB-INF
 │   │           ├── beans.xml
-│   │           ├── mysql-ds.xml
+│   │           ├── createMySQLDataSource.sh
 │   │           └── web.xml
 │   └── test
 │       └── java
@@ -62,14 +62,15 @@ az login
 
 ## Create an Instance of Azure Database for MySQL
 
-We will create an instance of `Azure  Database for MySQL`. In order to create the MySQL DB intance, I created the Bash shell script as `setup_mysql.sh` in the project.  
+We will create an instance of `Azure  Database for MySQL Flexsible Server`. In order to create the MySQL DB intance, You can execute the Bash script as `setup_mysql.sh` in the direcotry. 
+ 
 Please execute the following command.
 
 ```bash
  ./setup_mysql.sh flexible
 ```
 
-Then you can see following result. The following information is important and we will use the following value to the following steps. So please copy the value to some places.
+Then you can see following result. The following information is important and we will use them to the following steps. So please copy the value to some places.
 
 ```text
 [INFO] -------------------------------------------------------
@@ -96,12 +97,12 @@ Then you can see following result. The following information is important and we
 
 ## Login to the MySQL DB
 
-After you created the MySQL DB, you can access to the MySQL DB like below.  
-Please copy & paste the string in the previous step.
+After you created the MySQL DB, you can access to the MySQL DB using `mysql` client command.  
+Please copy & paste the string in the previous result of `2`.
 
 ```bash
 mysql -u azureuser -h mysqlserver-qtrfennwvy.mysql.database.azure.com -p [Enter]
-Enter password: [!Bzepiihx28028]
+Enter password: [**********]
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 12
 Server version: 5.7.29-log MySQL Community Server (GPL)
@@ -119,12 +120,13 @@ mysql>
 
 ## Create a Database and Tables for Application
 
-In this time, we will use a Sample World DB from MySQL from official site.
-You can get the official data from  following.
+In this time, we will use a Sample World DataBase from official site of MySQL.
+You can get the original data from following URL.
 `https://downloads.mysql.com/docs/world.sql.zip`
 
-In this project, I already get and unarchive the download ata.
-So you can see the `world.sql` file in the project. Please execute the following mysql  command.
+In this project, We already got and unarchive the data. So you can see the `world.sql` file in your project.  
+
+Please execute the following mysql  command.
 
 ```mysql
 mysql> source world.sql
@@ -137,6 +139,10 @@ mysql>
 ```
 
 ### Evaluate the created DB and TABLES
+
+Then automatically, `world` database and some tables will be created on your MySQL.
+
+In order to confirm the databases in your server, please execute the following mysql command.
 
 ```bash
 mysql> show databases;
@@ -152,10 +158,14 @@ mysql> show databases;
 5 rows in set (0.02 sec)
 ```
 
+In order to refer the data in the `world` DB , please execute the following command.
+
 ```mysql
 mysql> use world;
 Database changed
 ```
+
+Then you can operate the `world` DB. In order to confirme the tables in the `world` DB, please execute the following command. Then you can see following result.
 
 ```mysql
 mysql> show tables;
@@ -169,61 +179,20 @@ mysql> show tables;
 3 rows in set (0.04 sec)
 ```
 
-```mysql
-mysql> DESC `city`;
-+-------------+----------+------+-----+---------+----------------+
-| Field       | Type     | Null | Key | Default | Extra          |
-+-------------+----------+------+-----+---------+----------------+
-| ID          | int(11)  | NO   | PRI | NULL    | auto_increment |
-| Name        | char(35) | NO   |     |         |                |
-| CountryCode | char(3)  | NO   | MUL |         |                |
-| District    | char(20) | NO   |     |         |                |
-| Population  | int(11)  | NO   |     | 0       |                |
-+-------------+----------+------+-----+---------+----------------+
-5 rows in set (0.01 sec)
-```
-
-```mysql
-mysql> DESC `country`;
-+----------------+---------------------------------------------------------------------------------------+------+-----+---------+-------+
-| Field          | Type                                                                                  | Null | Key | Default | Extra |
-+----------------+---------------------------------------------------------------------------------------+------+-----+---------+-------+
-| Code           | char(3)                                                                               | NO   | PRI |         |       |
-| Name           | char(52)                                                                              | NO   |     |         |       |
-| Continent      | enum('Asia','Europe','North America','Africa','Oceania','Antarctica','South America') | NO   |     | Asia    |       |
-| Region         | char(26)                                                                              | NO   |     |         |       |
-| SurfaceArea    | decimal(10,2)                                                                         | NO   |     | 0.00    |       |
-| IndepYear      | smallint(6)                                                                           | YES  |     | NULL    |       |
-| Population     | int(11)                                                                               | NO   |     | 0       |       |
-| LifeExpectancy | decimal(3,1)                                                                          | YES  |     | NULL    |       |
-| GNP            | decimal(10,2)                                                                         | YES  |     | NULL    |       |
-| GNPOld         | decimal(10,2)                                                                         | YES  |     | NULL    |       |
-| LocalName      | char(45)                                                                              | NO   |     |         |       |
-| GovernmentForm | char(45)                                                                              | NO   |     |         |       |
-| HeadOfState    | char(60)                                                                              | YES  |     | NULL    |       |
-| Capital        | int(11)                                                                               | YES  |     | NULL    |       |
-| Code2          | char(2)                                                                               | NO   |     |         |       |
-+----------------+---------------------------------------------------------------------------------------+------+-----+---------+-------+
-15 rows in set (0.02 sec)
-```
-
-```bash
-mysql> DESC `countrylanguage`;
-+-------------+---------------+------+-----+---------+-------+
-| Field       | Type          | Null | Key | Default | Extra |
-+-------------+---------------+------+-----+---------+-------+
-| CountryCode | char(3)       | NO   | PRI |         |       |
-| Language    | char(30)      | NO   | PRI |         |       |
-| IsOfficial  | enum('T','F') | NO   |     | F       |       |
-| Percentage  | decimal(4,1)  | NO   |     | 0.0     |       |
-+-------------+---------------+------+-----+---------+-------+
-4 rows in set (0.02 sec)
-```
-
 ## Query for Sample Database
 
+In the Sample Application, we would like to show the following data.
 
-### Get Area Informations
+1. Get all of the Continent Informations
+2. List the Name of Country and Country Code in Continent
+3. Get Cities which has the population over 1 million
+
+So we will show the above data using SQL query.
+
+### Get All of the Continent Informations
+
+In order to get the Continent Informations, please execute following command.  
+Then you will see following result.
 
 ```bash
 mysql> select distinct Continent from country ;
@@ -240,7 +209,10 @@ mysql> select distinct Continent from country ;
 +---------------+
 ```
 
-### Get Country Code in one Continent
+### List Country Name and Country Code in Continent
+
+In order to get Country Name and  Country Code in Continent, please execute following command.  
+Then you will see following result.
 
 ```bash
 mysql> select code,name from country where Continent='Asia';
@@ -266,43 +238,17 @@ mysql> select code,name from country where Continent='Asia';
 | ISR  | Israel               |
 | JOR  | Jordan               |
 | JPN  | Japan                |
-| KAZ  | Kazakstan            |
-| KGZ  | Kyrgyzstan           |
-| KHM  | Cambodia             |
-| KOR  | South Korea          |
-| KWT  | Kuwait               |
-| LAO  | Laos                 |
-| LBN  | Lebanon              |
-| LKA  | Sri Lanka            |
-| MAC  | Macao                |
-| MDV  | Maldives             |
-| MMR  | Myanmar              |
-| MNG  | Mongolia             |
-| MYS  | Malaysia             |
-| NPL  | Nepal                |
-| OMN  | Oman                 |
-| PAK  | Pakistan             |
-| PHL  | Philippines          |
-| PRK  | North Korea          |
-| PSE  | Palestine            |
-| QAT  | Qatar                |
-| SAU  | Saudi Arabia         |
-| SGP  | Singapore            |
-| SYR  | Syria                |
-| THA  | Thailand             |
-| TJK  | Tajikistan           |
-| TKM  | Turkmenistan         |
-| TMP  | East Timor           |
-| TUR  | Turkey               |
-| TWN  | Taiwan               |
-| UZB  | Uzbekistan           |
+.....
 | VNM  | Vietnam              |
 | YEM  | Yemen                |
 +------+----------------------+
 51 rows in set (0.02 sec)
 ```
 
-### Get the city which the population over 1,000,000
+### Get the cites which has the population over 1 million
+
+In order to get the cities which has the population over 1 million, please execute following command.  
+Then you will see following result.
 
 ```mysql
 mysql> select * from city where CountryCode='JPN' AND Population > 1000000 ORDER BY Population DESC;
@@ -324,4 +270,11 @@ mysql> select * from city where CountryCode='JPN' AND Population > 1000000 ORDER
 11 rows in set (0.33 sec)
 ```
 
+## Finally
 
+We created a MySQL database flexible server on Azure and created the databases and tables which will be used by the application in this. Then We stored the data in the created table.
+
+We also executed some SQL queries with the mysql command to see if the data could be available and if the SQL statements written in the application could be executed.
+Now we completed the setup and preparation of MySQL Server which is required to deploy a Java EE (Jakarta EE) application in next Chapter.
+
+Next, we will deploy the Java EE(Jakarta EE) application to JBoss EAP on Azure App Service and configure it so that it can connect to the MySQL created here.
