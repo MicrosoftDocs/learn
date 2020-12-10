@@ -8,9 +8,9 @@ This unit introduces the next member of the Truffle Suite, [Drizzle](https://www
 
 Drizzle is built with JavaScript. It works particularly well with and has great support for [React](https://reactjs.org/?azure-portal=true), which is the most popular JavaScript library for building front-end user interfaces. However, there's also an option to use front-end JavaScript frameworks like [Vue.js](https://vuejs.org?azure-portal=true) or [Angular](https://angular.io?azure-portal=true).
 
-Drizzle helps to synchronize and manage smart contract data. This is significant so that all the blockchain data stays in sync with your dapp interface. It uses a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for all users and any environment they use.
+Drizzle helps to synchronize and manage smart contract data. This is significant so that all the blockchain data stays in sync with your app interface. It uses a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for all users and any environment they use.
 
-Drizzle dapps interact with smart contacts by using a JSON-RPC layer called the Web3 API.
+Drizzle apps interact with smart contacts by using a JSON-RPC layer called the Web3 API.
 
 [JSON-RPC](https://www.jsonrpc.org/specification?azure-portal=true) is a stateless, lightweight remote procedure call (RPC) protocol that uses JSON for the payload. This specification defines several data structures and the rules around their processing.
 
@@ -20,7 +20,7 @@ To talk to an Ethereum node from a JavaScript application, the [Web3 API](https:
 
 Before we get into how to use Drizzle, let's focus on the main libraries that you can use to build your dapp.
 
-Drizzle is completely modular, which means you can use as much or as little of the library portions as you want.
+Drizzle is modular, which means you can use as much or as little of the library portions as you want.
 
 The three core packages are:
 
