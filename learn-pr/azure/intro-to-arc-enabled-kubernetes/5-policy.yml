@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.5-policy
 metadata:
   title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Policy for Kubernetes
-  description: In this unit you'll learn what is Azure Policy for Kubernetes and how to implement it.
+  description: In this unit, you'll learn what is Azure Policy for Kubernetes and how to implement it.
   ms.date: 11/13/2020
   author: jboeshart
   ms.author: jaboes
@@ -22,7 +22,7 @@ quiz:
       explanation: "A service provides internal or external inbound connectivity, not applicable in this case."
     - content: "admission controller"
       isCorrect: true
-      explanation: "Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open source admission controller Kubernetes-based implementation of OPA."
+      explanation: "Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open-source admission controller Kubernetes-based implementation of OPA."
     - content: "ingress controller"
       isCorrect: false
       explanation: "An ingress controller provides inbound connectivity, not applicable in this case."
