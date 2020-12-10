@@ -1,45 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.stack-hci-arc-integration.3-manage-virtualized-workloads
 metadata:
-  title: Manage Azure Stack HIC-based virtualized workloads with Azure Arc
-  description: TODO
-  ms.date: TODO
+  title: Manage Azure Stack HCI-based virtualized workloads with Azure Arc
+  description: As described in the previous unit of this module, Azure Arc expands the scope of a number of the Azure Resource Manager features to non-Azure servers running Windows or Linux, including Azure Stack HCI VMs. In some cases, it also enhances the capabilities of some of the hybrid Azure services that do not depend directly on Azure Arc. In this unit, you will learn how you can benefit from these features and capabilities when managing Azure Stack HCI VMs.
+  ms.date: 12/07/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage Azure Stack HIC-based virtualized workloads with Azure Arc
+title: Manage Azure Stack HCI-based virtualized workloads with Azure Arc
 durationInMinutes: 5
 content: |
-  [!include[]includes/3-manage-virtualized-workloads.md)]
+  [!include[](includes/3-manage-virtualized-workloads.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which VM extension can an administrator add to Azure Arc enabled servers running Windows Server?"
     choices:
-    - content: "Answer 1"
+    - content: "VMAccess."
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "That's incorrect. The Azure VMAccess extension allows an administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
+    - content: "BGInfo."
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "That's incorrect. The Azure BGInfo extension allows an administrator to configure the wallpaper on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
+    - content: "DSC."
+      isCorrect: true
+      explanation: "That's correct. This VM extension allows an administrator to apply a PowerShell DSC configuration on Arc enabled servers."
+  - content: "Which software component allows an administrator to use Azure Policy to audit settings within the operating system of Arc enabled servers to evaluate their compliance?"
     choices:
-    - content: "Answer 1"
+    - content: "DSC."
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "That's incorrect. This is a VM extension that allows an administrator to apply a PowerShell DSC configuration on Arc enabled servers."
+    - content: "Microsoft Dependency agent."
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
-      isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "That's incorrect. This is an agent that facilitates identifying internal and external dependencies of server workloads."
+    - content: "Guest Configuration."
+      isCorrect: true
+      explanation: "That's correct. Guest Configuration policies do not apply configurations, but they audit settings within the target operating system and evaluate their compliance."
