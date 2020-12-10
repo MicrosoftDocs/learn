@@ -1,6 +1,6 @@
 ## Excersize of Azure Database for MySQL
 
-Azure Database for MySQL is a relational database service in the Microsoft cloud based on MySQL Community Edition database engine. We will create sample DB for Java Web Applications.
+`Azure Database for MySQL` is a relational database service in the Microsoft cloud based on MySQL Community Edition database engine. We will create sample DB for Java Web Applications.
 
 ## Get Sample Application and script
 

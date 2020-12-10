@@ -12,17 +12,16 @@ metadata:
 durationInMinutes: 2
 quiz:
   questions:
-    - content: Which file format do you use for Facelets?
+    - content: JBoss EAP on Azure AppService のデータソース管理はどこで行う？
       choices:
-        - content: "HTML (HyperText Markup Language)"
+        - content: "JBoss Command Line Interface (CLI)"
           isCorrect: false
-          explanation: "HTML is used for creating static Web Pages."
-        - content: "XHTML (Extensible HyperText Markup Language)"
+          explanation: "This method is a correct option but CLI は直接ログインをして実行しなければならず、再起動すると設定は消えてしまうため一時的にしか設定できません。"
+        - content: "JBoss Graphical User Interface (GUI)"
+          isCorrect: false
+          explanation: "This method is a correct option but GUI は直接ログインをして実行しなければならず、再起動すると設定は消えてしまうため一時的にしか設定できません。"
+        - content: "起動スクリプト"
           isCorrect: true
-          explanation: "Since JSF 2.0, Facelets has been used as default view declaration language."
-        - content: "JSP (JavaServer Pages)"
-          isCorrect: false
-          explanation: "In the past, you could write JSF tags in JSP pages, however Facelets is the new view declaration language since JSF 2.0. So we recommend you to use the XHTML instead of JSP."
     - content: Which method(s) allow you to access the Application Logs in Azure App Service?
       choices:
         - content: SSH in Advanced Tools on the Azure portal

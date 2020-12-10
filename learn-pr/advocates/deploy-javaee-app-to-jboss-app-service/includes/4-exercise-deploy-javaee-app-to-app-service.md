@@ -207,7 +207,7 @@ In our Sample Application, it will communicate with MySQL DB to show the data. I
 
 ## What is Data Source
 
-A Datasource is a component used to connect to a Database. Through the datasource, an application can persist the data and can reuse it in later. A Datasource can configure for any Database by using JDBC Driver.  
+A `Datasource` is a component used to connect to a Database. Through the DataSource, an application can persist or query the data. A DataSource can configure for any Database by using JDBC Drivers.  
 
 In this module, we will connect to MySQL Database. If you deploy the Sample Application, you already include a MySQL JDBC Driver in your deployment package `(ROOT.war)`. Bacause in the Maven Project Configuration in `pom.xml`, we specify the MySQL JDBC Driver as follows.
 
@@ -219,7 +219,7 @@ In this module, we will connect to MySQL Database. If you deploy the Sample Appl
     </dependency>
 ```
 
-As a result, JBoss EAP automatically install the JDBC Driver. And you can refer the name of MySQL JDBC Driver as follows.
+As a result, JBoss EAP automatically install the JDBC Driver during the Deployment. And you can refer the name of MySQL JDBC Driver as follows.
 
 ```text
 ROOT.war_com.mysql.cj.jdbc.Driver_8_0
@@ -227,15 +227,9 @@ ROOT.war_com.mysql.cj.jdbc.Driver_8_0
 
 ### Create the MySQL DataSource in JBoss EAP
 
-In order to create MySQL `DataSource`, we will create it during the startup of JBoss EAP, please execute the following command? After executed it, the script will be invoke every times when the Application Server restarted.
+In order to create a MySQL `DataSource` in JBoss EAP, we created a startup shell script file as `createMySQLDataSource.sh` under the `/WEB-INF` directory. 
 
-```azurecli
-az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
--n ${WEBAPP_NAME} \
--g ${RESOURCEGROUP_NAME}
-```
-
-In the above shell script following code is wrote and the script is stored in the `/WEB-INF` directory. In the code, we created a MySQL DataSource by JBoss CLI command. And the connection string, user name and password will get from the Environment Variables as `MYSQL_CONNECTION_URL`, `MYSQL_USER` and `MYSQL_PASSWORD`.
+In the code, we created a MySQL DataSource using JBoss CLI command. And the variable in the script like connection string, user name and password will get from the Environment Variables as `MYSQL_CONNECTION_URL`, `MYSQL_USER` and `MYSQL_PASSWORD`.
 
 ```shell
 #!/usr/bin/bash
@@ -266,6 +260,15 @@ exit
 EOF
 ```
 
+In order to invoke the script during the start up of JBoss EAP, please execute the following command.  
+After executed it, the script will be invoke every times when the Application Server restarted.
+
+```azurecli
+az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
+-n ${WEBAPP_NAME} \
+-g ${RESOURCEGROUP_NAME}
+```
+
 > [!WARNING]
 > If your deployment artifact is not "ROOT.war", you need change the "--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0" value too.
 
@@ -284,6 +287,45 @@ az webapp config appsettings set \
 
 > [!TIP]
 > The value of "MYSQL_CONNECTION_URL", "MYSQL_USER" and "MYSQL_PASSWORD" was already got in the previous section.
+
+### Confirm the DataSource Reference in the Code
+
+Finally, in order to access to the MySQL from Your Application Code, You need configure the `DataSource` reference in Your Project. In this time, we implemented the DB access code by using `Java Persistence API (JPA)`. So we added the configuration for the `DataSource` reference in the `persistence.xml` which is the configuration file of the JPA.
+
+Please confirm the following file.
+
+```text
+├── src
+│   ├── main
+│   │   ├── resources
+│   │   │   └── META-INF
+│   │   │       └── persistence.xml
+```
+
+And You need check whether the name of the `DataSource` equal to the previous configuration or not. In the above step, we created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`. So we added a DataSource reference as `java:jboss/datasources/JPAWorldDataSource` in `<jta-data-source>` XML element as follows.
+
+```xml
+  <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
+    <jta-data-source>java:jboss/datasources/JPAWorldDataSource</jta-data-source>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="hibernate.generate_statistics" value="true" />
+    </properties>
+  </persistence-unit>
+</persistence>
+```
+
+Then you can access to the MySQL DB referenced by the `Persisntence Unit` name in your  JPA code like follows.
+
+```java
+@Transactional(REQUIRED)
+@RequestScoped
+public class CityService {
+
+    @PersistenceContext(unitName = "JPAWorldDatasourcePU")
+    EntityManager em;
+```
+
 
 ## Access to the Application
 
