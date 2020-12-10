@@ -138,7 +138,7 @@ groups:
       title: JavaScript
     - id: powershell
       title: PowerShell
-	  - id: python
+    - id: python
       title: Python
 - id: dev-lang-csharp-powershell
   title: Development language
