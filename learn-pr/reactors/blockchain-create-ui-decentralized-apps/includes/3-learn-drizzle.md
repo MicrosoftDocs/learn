@@ -6,7 +6,7 @@ This unit introduces the next member of the Truffle Suite, [Drizzle](https://www
 
 ### About Drizzle
 
-Drizzle is built with JavaScript. It works particularly well with and has great support for [React.js](https://reactjs.org/?azure-portal=true), which is the most popular JavaScript library for building front-end user interfaces. However, it is also an option to use front-end JavaScript frameworks like [Vue.js](https://vuejs.org/) and [Angular](https://angular.io/).
+Drizzle is built with JavaScript. It works particularly well with and has great support for [React.js](https://reactjs.org/?azure-portal=true), which is the most popular JavaScript library for building front-end user interfaces. However, there is also an option to use front-end JavaScript frameworks like [Vue.js](https://vuejs.org/) or [Angular](https://angular.io/).
 
 Drizzle helps to synchronize and manage smart contract data. This is significant so that all the blockchain data stays in sync with your dapp interface. It uses a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for users and any environment they use.
 
@@ -22,7 +22,7 @@ Before we get into how to use Drizzle, let's focus on the main libraries that yo
 
 Drizzle is completely modular, which means you can use as much or as little of the library portions as you want.
 
-There are three core packages are:
+The three core packages are:
 
 - **drizzle**: The core library responsible for web3, account and contract instantiation. It is also used to wire up the smart contracts to the dapp.
 - **drizzle-react**: A library that abstracts the core Drizzle functionality into usable React components.
