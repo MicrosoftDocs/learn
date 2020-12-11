@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.5-exercise-migrate-mysql-azure-database
+title: 'Exercise: Migrate on-premises MySQL database to Azure Database for MySQL'
+metadata:
+  title: 'Exercise: Migrate on-premises MySQL database to Azure Database for MySQL'
+  description: "Exercise: Migrate on-premises MySQL database to Azure Database for MySQL"
+  ms.date: 12/11/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-migrate-mysql-azure-database.md)]
+interactive: bash
