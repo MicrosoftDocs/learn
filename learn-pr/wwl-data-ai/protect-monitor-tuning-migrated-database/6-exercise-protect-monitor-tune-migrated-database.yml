@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protecting-monitoring-tuning-migrated-database.6-exercise-protect-monitor-tune-migrated-database
+title: 'Exercise: Protect, monitor, and tune a migrated database'
+metadata:
+  title: 'Exercise: Protect, monitor, and tune a migrated database'
+  description: "Exercise: Protect, monitor, and tune a migrated database"
+  ms.date: 12/11/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-protect-monitor-tune-migrated-database.md)]
+interactive: bash
