@@ -87,8 +87,6 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
 
-   <!-- ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png) -->
-
    :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status.":::
 
 1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
@@ -136,7 +134,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Click **View devices in this hub**.
 
-    :::image type="content" source="../media/iot-explorer-view-devices-in-this-hub.png" alt-text="The illustration shows CMake status.":::
+    :::image type="content" source="../media/iot-explorer-view-devices-in-this-hub.png" alt-text="The illustration shows how to select devices in this hub.":::
 
 1. Click on your **device**.
 
@@ -148,15 +146,15 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Click **IoT Plug and Play components** from the side menu.
 
-    :::image type="content" source="../media/iot-explorer-iot-pnp.png" alt-text="The illustration shows CMake status.":::
+    :::image type="content" source="../media/iot-explorer-iot-pnp.png" alt-text="The illustration shows how to select IoT Plug and Play components.":::
 
 1. Click **Default component**.
     
-    :::image type="content" source="../media/iot-explorer-pnp-default-component.png" alt-text="The illustration shows CMake status.":::
+    :::image type="content" source="../media/iot-explorer-pnp-default-component.png" alt-text="The illustration shows how to select the default component.":::
 
 1. Select **Telemetry** from the menu.
 
-    :::image type="content" source="../media/iot-explorer-pnp-telemetry.png" alt-text="The illustration shows CMake status.":::
+    :::image type="content" source="../media/iot-explorer-pnp-telemetry.png" alt-text="The illustration shows how to select telemetry.":::
 
 1. Click the **Start** button.
 
