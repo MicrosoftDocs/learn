@@ -11,7 +11,7 @@ metadata:
 title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Monitor
 durationInMinutes: 5
 content: |
-  [!include[]includes/(7-integrate-azure-monitor.md)]
+  [!include[](includes/7-integrate-azure-monitor.md)]
 quiz:
   title: Check your knowledge
   questions:
