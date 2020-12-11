@@ -1,4 +1,4 @@
-## Built-in roles for Azure Resources (USES POWERSHELL)
+## Built-in roles for Azure Resources (uses PowerShell)
 
 Azure AD provides several _built-in roles_ to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
 
@@ -8,7 +8,7 @@ Azure AD provides several _built-in roles_ to cover the most common security sce
 
 ## Role definitions
 
-Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name, Id**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
+Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name**, **ID**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
 
 For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
