@@ -70,7 +70,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     :::image type="content" source="../media/iot-explorer-iot-pnp.png" alt-text="The illustration shows CMake status.":::
 
 1. Click **Default component**.
-    
+
     :::image type="content" source="../media/iot-explorer-pnp-default-component.png" alt-text="The illustration shows CMake status.":::
 
 1. Select **Properties (writable)** from the menu.
@@ -108,7 +108,6 @@ The Avnet Azure Sphere Starter Kit, revisions 1 and 2, have a built-in temperatu
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 1. The User LED will blink every 5 seconds when connected to Azure.
-
 
 ## Close Visual Studio
 
