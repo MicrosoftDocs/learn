@@ -1,8 +1,8 @@
-Azure Sentinel provides the Kusto Query Language that you can use to search and filter collected data.
+You can use the Kusto Query Language (KQL) in Azure Sentinel to search and filter collected data.
 
 ## Kusto Query Language
 
-The Kusto Query Language provides you the ability to create,  store, and run interactive analytics on collected data by using KQL. Azure Data Explorer offers different tools and integrations to perform data ingestion, queries, visualization, orchestration, and other operations. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
+KQL provides you the ability to create, store, and run interactive analytics on collected data. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
 
 - Calculated columns
 - Join functions
@@ -10,8 +10,8 @@ The Kusto Query Language provides you the ability to create,  store, and run int
 
 ## Write and run basic queries
 
-A query is a read-only request that processes data and returns the results of this processing, without modifying the data or metadata. Similar to SQL queries, KQL queries use schema entities that are organized in a hierarchy such as databases, tables, and columns. A schema is a collection of tables grouped under logical categories. The queries consist of sequences of query statements that are delimited by a semicolon (;).
-When you construct a query, you start with either a table name or a search command. The following query retrieves all records from the **Event** table:
+A query is a read-only request that processes data and returns the results of this processing without modifying the data or metadata. Similar to SQL queries, KQL queries use schema entities that are organized in a hierarchy such as databases, tables, and columns. A schema is a collection of tables grouped under logical categories. The queries consist of sequences of query statements that are delimited by a semicolon (;).
+When you construct a query, you start with either a table name or a search command. For example, the following query retrieves all records from the **Event** table:
 
 ```kusto
 Event
@@ -25,7 +25,7 @@ Event
 | search error
 ```
 
-You can construct the query with tabular and scalar operators that are combined into multiple tabular expression statements, which produce the results of the query.
+You can construct the query with tabular and scalar operators that KQL combines into multiple tabular expression statements, which produce the results of the query.
 
 source1 | operator1 | operator2
 
@@ -60,7 +60,7 @@ You can combine your queries with some of the most commonly used operators:
 - **summarize**. Aggregates groups of rows.
 - **render**. Renders results as a graphical output.
 
-To combine the records from two sources (tables), you can use the **join** operator. The **union** command combines two or more tables into one.
+To combine the records from two sources (tables), you can use the **join** operator. The **union** operator combines two or more tables into one.
 
 For more information, refer to the Microsoft [Log analytics tutorial](https://docs.microsoft.com/azure/azure-monitor/log-query/log-analytics-tutorial) that uses features of Log Analytics to build and run a query instead of working with the query itself.
 
