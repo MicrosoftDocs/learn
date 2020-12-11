@@ -112,6 +112,20 @@ Use Maven, as before, to deploy to your Azure instance.
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
 
+## Use the Deployment Center for CI/CD with GitHub Actions
+
+The App Service Deployment Center will automatically generate a workflow file based on your application stack and commit it to your GitHub repository in the correct directory.
+
+1. Navigate to your webapp in the Azure portal
+1. On the left side, click **Deployment Center**
+1. Under **Continuous Deployment (CI / CD)**, select **GitHub**
+1. Next, select **GitHub Actions**
+1. Use the dropdowns to select your GitHub repository, branch, and application stack
+    - If the selected branch is protected, you can still continue to add the workflow file. Be sure to review your branch protections before continuing.
+1. On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. If the selections are correct, click **Finish**
+
+This will commit the workflow file to the repository. The workflow to build and deploy your app will start immediately.
+
 ## Destroy your resources
 
 Remove the resources you created for this tutorial.
