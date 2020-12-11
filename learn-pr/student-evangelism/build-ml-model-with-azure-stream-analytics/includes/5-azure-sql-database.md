@@ -6,11 +6,11 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true). Select the **Cloud Shell** button in the toolbar at the top of the page to open the Azure Cloud Shell. If you would prefer to run Cloud Shell in its own browser window, open a separate browser instance and navigate to <https://shell.azure.com>.
 
-    ![Opening the Azure Cloud Shell](../media/cloud-shell.png)
+    ![Screenshot that shows how to open Azure Cloud Shell.](../media/cloud-shell.png)
 
-    _Opening the Azure Cloud Shell_
+    _Open Azure Cloud Shell_
 
-1. Use these commands to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
+1. Use the following commands to create values for the database server, admin username, admin password, and database name. Replace `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with your own values.
 
     ```bash
     SERVER_NAME="<server name>"
@@ -20,10 +20,13 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
     ```
 
     > [!NOTE]
-    >  The server name must be unique within Azure, and the admin password must be at least 8 characters long. The user name cannot be one that is reserved in SQL Server such as "admin" or "sa." The user name "adminuser" is valid if you want to use that.
-
-    > [!NOTE]
-    > Remember the user name and password you enter, because you'll need them later.
+    > Keep in mind the following constraints when you assign these system values:
+    >
+    > - The `SERVER_NAME` value must be unique within Azure. The server name can only use lowercase letters, numbers, and the hyphen. The hyphen can't be the first or last character in the name.
+    > The `ADMIN_USERNAME` value can't be a name that's reserved in SQL Server, such as "admin" or "sa." The name "adminuser" is valid and can be used.
+    > - The `ADMIN_PASSWORD` value must be at least 8 characters long.
+    >
+    > Copy and save the admin username and password values for later.
 
 1. Execute the following command in Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Insert** to paste commands into Cloud Shell.
 
@@ -37,11 +40,15 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
     az sql db create --resource-group polar-bear-rg --server $SERVER_NAME --name $DATABASE_NAME --service-objective S0
     ```
 
-1. Go to the database server in the [Azure portal](https://portal.azure.com?azure-portal=true) and select **Firewalls and virtual networks** in the menu on the left. Turn on **Allow Azure services and resources to access this server** to allow Azure Functions and other Azure services to connect to the server, and select **+ Add client IP** so you can connect to the database from Power BI Desktop later. Then select **Save** at the top of the blade to save these changes.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), open your new SQL database server. On the left, under the **Security** group, select **Firewalls and virtual networks**. Configure the following settings for your new database:
 
-    ![Configuring the database server](../media/configure-database-server.png)
+    1. At the top, select **+ Add client IP** to enable you to connect to the database from Power BI Desktop later. 
+    1. Turn on **Allow Azure services and resources to access this server** to allow Azure Functions and other Azure services to connect to your server.
+    1. At the top, select **Save** to store your changes. If prompted, also select **OK**.
 
-    _Configuring the database server_
+    ![Screenshot that shows how to configure the database server.](../media/configure-database-server.png)
+
+    _Configure the database server_
 
 1. Open the database in the Azure portal. Select **Query editor** in the menu on the left and enter the user name and password you specified in Step 2. Then select **OK** to log in to the database.
 
