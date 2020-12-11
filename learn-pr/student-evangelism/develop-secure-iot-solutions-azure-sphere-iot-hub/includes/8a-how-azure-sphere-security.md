@@ -8,7 +8,7 @@ Application capabilities include what hardware can be accessed, what network end
 
 You must declare all network endpoints your application will use. As a security feature, if you try to access any endpoint that has not been declared in the application manifest then the application will fail when it tries to connect. This security is implemented as a network firewall that cannot be changed until the device is restarted.
 
-When connecting to IoT Hub you must declare the global device provisioning service endpoint, your DPS network endpoint, as well as the endpoint for your IoT Hub. Otherwise, your Azure Sphere application will not be able to connect to IoT Hub.
+When connecting to IoT Hub you must declare the DPS global device provisioning service endpoint, your DPS network endpoint, as well as the endpoint for your IoT Hub. Otherwise, your Azure Sphere application will not be able to connect to IoT Hub.
 
 ## Network endpoint capabilities
 

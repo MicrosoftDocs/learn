@@ -14,4 +14,5 @@ In this unit, you'll learn how to secure, build, deploy, and debug your high-lev
 To set up the connectivity between the high-level Azure Sphere application and Azure IoT Hub, do the following:
 
 1. Create Azure resources.
-2. Set up a trusted relationship between your Azure Sphere device tenant and the device provisioning service.
+1. Set up a trusted relationship between your Azure Sphere device tenant and the device provisioning service.
+1. Connect Azure IoT Explorer to your IoT Hub.

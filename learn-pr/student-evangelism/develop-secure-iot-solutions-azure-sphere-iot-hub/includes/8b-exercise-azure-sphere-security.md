@@ -8,21 +8,21 @@ Follow these steps:
 
 2. Select **Overview** from the Device Provisioning Service sidebar menu.
 
-3. Copy the device provisioning service **Global device endpoint** URI to Notepad.
+3. Copy the device provisioning service **Service endpoint** URI to Notepad.
 
-4. Copy the device provisioning service **Service endpoint** URI to Notepad.
+4. Copy the device provisioning service **Global device endpoint** URI to Notepad.
 
 5. Copy the **ID Scope** to Notepad.
 
-6. Select the **Resource group URL** to return to the resource group.
+6. Click the **Resource group URL** to return to the resource group.
 
-   ![Screenshot of the overview page of device provisioning service.](../media/dps-overview.png)
+    :::image type="content" source="../media/dps-overview.png" alt-text="The illustration shows the overview page of device provisioning service.":::
 
 7. Select the **IoT Hub** resource.
 
 8. Copy the IoT hub **Hostname** URL to Notepad.
 
-   ![Screenshot of the overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
+    :::image type="content" source="../media/iot-hub-endpoint-url.png" alt-text="The illustration shows the overview page of IoT Hub.":::
 
 ## Step 2: Get your Azure Sphere tenant ID
 

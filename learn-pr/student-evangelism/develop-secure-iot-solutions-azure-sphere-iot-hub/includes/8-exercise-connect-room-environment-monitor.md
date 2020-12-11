@@ -2,7 +2,7 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
 ## Step 1: Prepare Azure resources
 
-You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a Device Provisioning Service (DPS) and a linked Azure IoT hub.
+You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a Device Provisioning Service (**DPS**) and a linked Azure IoT hub.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2FAzure-Sphere-Developer-Learning-Path%2Fmaster%2Fdocs%2Fdocs_vs_code_iot_hub%2FLab_2_Send_Telemetry_to_Azure_IoT_Hub%2Fsetup%2Fazuredeploy.json)
 
@@ -14,7 +14,10 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
 
 4. Select **Next** > **Deploy**. The deployment will take three to four minutes to complete.
 
-5. When the deployment has completed, select **Manage your resources**. You will see two services listed in the Azure portal: the Device Provisioning Service (DPS) and IoT Hub. Appended to the resource names is a random string to ensure that the names are globally unique.
+5. When the deployment has completed, select **Manage your resources**. You will see two services listed in the Azure portal: the Device Provisioning Service (DPS) and IoT Hub. Appended to the resource names is a random string to ensure that the names are globally unique. 
+
+   > [!TIP]
+   > If you don't see the two services listed then click the fresh button.
 
    :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows IoT Hub resources.":::
 
@@ -22,9 +25,9 @@ Don't close the Azure Web portal. You will need to access it again.
 
 ## Step 2: Establish trust between your Azure Sphere Tenant and DPS
 
-You need to set up a trust relationship between your Azure Sphere device tenant and your device provisioning service.
+You need to set up a trust relationship between your Azure Sphere device tenant and your Device Provisioning Service.
 
-Devices claimed by your Azure Sphere device tenant are automatically enrolled with the linked IoT hub by the device provisioning service when the device first connects.
+Devices claimed by your Azure Sphere device tenant are automatically enrolled with the linked IoT hub by the Device Provisioning Service when the device first connects.
 
 ### Download the Azure Sphere device tenant authentication CA certificate
 
@@ -113,11 +116,12 @@ You need the connection string for your IoT Hub.
 1. From the Azure web portal.
 1. Select the IoT Hub you created at the beginning of this unit.
 
-   ![Screenshot showing Azure IoT resources.](../media/azure-iot-resources.png)
+    :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows IoT Hub resources created for this learning module.":::
+
+1. From the IoT Hub blade.
 
     :::image type="content" source="../media/iot-hub-connection-string.png" alt-text="The illustration shows IoT Hub resources created for this learning module.":::
 
-1. From the IoT Hub blade.
 1. Click **Shared access policies**, then **iothubowner**.
 1. Copy the **Connection string--primary key** to the clipboard.
 
