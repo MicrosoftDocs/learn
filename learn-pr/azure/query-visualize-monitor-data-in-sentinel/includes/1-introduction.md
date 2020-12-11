@@ -36,4 +36,4 @@ To get the best learning experience from this module, you should have:
 - Azure Sentinel instance in your Azure subscription
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware that you could incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing] (<https://azure.microsoft.com/pricing/details/azure-sentinel/>)
+> If you choose to perform the exercise in this module, be aware that you could incur costs in your Azure Subscription. To estimate the cost refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/).
