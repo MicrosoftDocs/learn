@@ -66,7 +66,7 @@ In this module, you will:
 * Create an Azure IoT Hub and a Device Provisioning Service (DPS)
 * Build and deploy an Azure Sphere application
 * Display environment data with the Azure IoT Explorer
-* Control an Azure Sphere application by using Azure IoT Explorer Plug and Play properties and commands
+* Control an Azure Sphere application using Azure IoT Hub device twins and direct method commands
 * Deploy a new more sensitive room sensor onto an Azure Sphere real-time core running Azure RTOS
 * Read the data from the new sensor running on the real-time core and send the data to IoT Hub
 
