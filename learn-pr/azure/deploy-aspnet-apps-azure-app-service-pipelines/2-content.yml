@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.content
+title: Content
+metadata:
+  title: Content
+  description: Content
+  ms.date: 12/11/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-content.md)]
