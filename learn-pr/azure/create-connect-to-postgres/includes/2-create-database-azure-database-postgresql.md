@@ -8,7 +8,7 @@ An Azure Database for PostgreSQL instance can be created using the Azure portal,
 
 ## Pricing tiers, explained
 
-The single server version of Azure Database for PostgreSQL has three different pricing tiers. Each tier provides different levels of performance for compute and storage. You can scale performance up or down, and change tiers, as needed.
+The Single Server deployment option of Azure Database for PostgreSQL has three different pricing tiers. Each tier provides different levels of performance for compute and storage. You can scale performance up or down, and change tiers, as needed.
 
 **Basic tier** is suited for workloads that require light compute and storage performance. This could include servers used for development or small-scale applications.
 
