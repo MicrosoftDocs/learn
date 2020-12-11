@@ -95,7 +95,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 2. On the **Azure Sentinel | Overview** page, on the menu bar, in the **Threat management** section, select **Incidents**.
 
 > [!NOTE]
-> Incident creration can take up to 15 minutes. Refresh the page until incident appeatr in the **Incidents** page.
+> Incident creation can take up to 15 minutes. Refresh the page until incident appeatr in the **Incidents** page.
 
 3. On the **Azure Sentinel | Incidents** page, select the incident that has been created based on the deletion of the virtual machine.
 4. In the details pane, select **View full details**.
