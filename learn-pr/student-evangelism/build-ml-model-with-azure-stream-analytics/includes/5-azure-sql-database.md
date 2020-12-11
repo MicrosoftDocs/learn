@@ -92,7 +92,9 @@ Note the column named "IsPolarBear," which will be set to 1 or 0 to indicate tha
 
 The next step is to modify the Azure Function that you created to write output to the Azure SQL Database.
 
-1. Open the Azure Functions app that you created in the previous unit in the Azure portal. Select **Platform features** to open the "Platform features" tab, and then select **Console** to open a function console. Execute the following command in the function console to install the NPM [tedious](https://www.npmjs.com/package/tedious) package, and ignore any warning messages that are displayed. `tedious` provides an API allowing Node.js apps to talk to SQL Server and Azure SQL Database.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), open the Azure Functions app that you created in the previous unit. On the left, under the **Development Tools** group, select **Console** to open a Console at the right.
+
+    Execute the following command in the function Console to install the NPM [tedious](https://www.npmjs.com/package/tedious) package. You can ignore any warning messages that are displayed. The `tedious` package provides an API that allows Node.js apps to talk to SQL Server and Azure SQL Database.
 
     ```bash
     npm install tedious
@@ -107,79 +109,86 @@ The next step is to modify the Azure Function that you created to write output t
     var databaseName = 'DATABASE_NAME';
     ```
 
+    > [!Note]
+    > In the code, don't replace `DATABASE_ADMIN_NAME` or `DATABASE_PASSWORD` placeholders with other values. You''l create values for these placeholders in a later step.
+
 1. Find the following statements near the end of the function:
 
     ```javascript
-    if (isPolarBear) {
-        context.log('POLAR BEAR detected by ' + id + ' at ' + latitude + ', ' + longitude);
-    }
-    else {
-        context.log('Other wildlife detected by ' + id + ' at ' + latitude + ', ' + longitude);
-    }
+                        if (isPolarBear) {
+                            context.log('POLAR BEAR detected by ' + id + ' at ' + latitude + ', ' + longitude);
+                        }
+                        else {
+                            context.log('Other wildlife detected by ' + id + ' at ' + latitude + ', ' + longitude);
+                        }
 
-    context.done();
+                        context.done();
     ```
 
-    Replace these statements with the following:
+    Replace these statements with the following code:
 
     ```javascript
     // Update the database
-    var Connection = require('tedious').Connection;
-    var Request = require('tedious').Request;
+                        var Connection = require('tedious').Connection;
+                        var Request = require('tedious').Request;
 
-    var config =
-    {
-        authentication:
-        {
-            type: 'default',
-            options:
-            {
-                userName: databaseUserName,
-                password: databasePassword
-            }
-        },
-        server: databaseServer,
-        options:
-        {
-            database: databaseName,
-            encrypt: true
-        }
-    };
+                        var config =
+                        {
+                            authentication:
+                            {
+                                type: 'default',
+                                options:
+                                {
+                                    userName: databaseUserName,
+                                    password: databasePassword
+                                }
+                            },
+                            server: databaseServer,
+                            options:
+                            {
+                                database: databaseName,
+                                encrypt: true
+                            }
+                        };
 
-    var dbConnection = new Connection(config);
+                        var dbConnection = new Connection(config);
 
-    dbConnection.on('connect', err => {
-        if (!err) {
-            var query = "INSERT INTO dbo.PolarBears (CameraId, Latitude, Longitude, URL, Timestamp, IsPolarBear) " +
-                "VALUES ('" + id + "', " + latitude + ", " + longitude + ", '" + blobUri + "', GETDATE(), " + (isPolarBear ? "1" : "0") + ")";
+                        dbConnection.on('connect', err => {
+                            if (!err) {
+                                var query = "INSERT INTO dbo.PolarBears (CameraId, Latitude, Longitude, URL, Timestamp, IsPolarBear) " +
+                                    "VALUES ('" + id + "', " + latitude + ", " + longitude + ", '" + blobUri + "', GETDATE(), " + (isPolarBear ? "1" : "0") + ")";
 
-            var dbRequest = new Request(query, err => {
-                // Called when request completes, with or without error
-                if (err) {
-                    context.log(err);
-                }
+                                var dbRequest = new Request(query, err => {
+                                    // Called when request completes, with or without error
+                                    if (err) {
+                                        context.log(err);
+                                    }
 
-                dbConnection.close();
-                context.done();
-            });
+                                    dbConnection.close();
+                                    context.done();
+                                });
 
-            dbConnection.execSql(dbRequest);
-        }
-        else {
-            context.log(err);
-            context.done();
-        }
-    });
+                                dbConnection.execSql(dbRequest);
+                            }
+                            else {
+                                context.log(err);
+                                context.done();
+                            }
+                        });
     ```
 
     These statements connect to the database and execute an INSERT command to record the latest sighting. The row added to the database includes the ID, latitude, and longitude of the camera that took the photograph, the URL of the blob containing the photograph, the current date and time, and an `IsPolarBear` value that indicates whether the photograph contains a polar bear.
 
-1. Select **Save** to save your changes to the function. Return to the "Platform features" tab and select **Function app settings**. Select **Manage application settings** and add two application settings to the function app:
+    Select **Save** to store your changes to the function.
 
-    - One named DATABASE_USER_NAME whose value is the user name you specified when you created the database server
-    - One named DATABASE_PASSWORD whose value is the password you specified when you created the database server
+1. Return to your function app in the Azure portal. Add two application settings to the function app:
 
-    To finish, select **Save** at the top of the blade to save the new application settings.
+    1. On the left, scroll to locate the **Settings** group. Under **Settings**, select **Configuration**.
+    1. Under **Configuration**, make sure the **Application settings** page is open. Select **New application** setting.
+    1. In the **Add/Edit application setting** page, add a setting named `DATABASE_ADMIN_NAME`. Set the value to the admin name you specified when you created the database server. Select **OK**.
+    1. Repeat the previous step to add a setting named `DATABASE_PASSWORD`. Set the value to the password you specified when you created the database server. Select **OK**.
+    
+    Finish by selecting **Save** at the top of the page. If you're prompted, select **Continue** to complete the save action.
 
 1. Return to the project directory in a Command Prompt or terminal window. Then use the following command to run **run.js**:
 
