@@ -37,4 +37,3 @@ The deployment may take a few minutes to complete.
 
 1. On the **Virtual machine** pane, under **SETTINGS**, select **Disks**.
 
-1. On the **Disks** pane, notice **Encryption** is not enabled.
