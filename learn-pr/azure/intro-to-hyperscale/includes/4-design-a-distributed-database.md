@@ -6,9 +6,9 @@ Transactional workloads have **small amounts of data** with **large numbers of t
 
 Our contactless payment app will mostly have OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
 
-### What are OLAP workloads?
 :::row:::
 :::column span="3":::
+### What are OLAP workloads?
 
 Workloads that generate reports can involve **large amounts of data**, but have a **low numbers of transactions**. The data being analyzed is generally event data or time series data. Examples include applications that power customer-facing analytics dashboards. These workloads are usually called online analytical processing, or **OLAP**.
 
