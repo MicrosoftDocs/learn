@@ -4,7 +4,7 @@ As a security engineer working for Contoso, you notice suspicious activities in 
 
 You want to analyze the logs in Azure Sentinel from the Azure Activity connector. You want to then further implement visualization of this data and save it in a customized workbook.
 
-In this exercise, you will explore logs and Azure Sentinel workbooks. You will perform the following tasks:
+In this exercise, you will explore logs and Azure Sentinel Workbooks. You will perform the following tasks:
 
 - Interact with logs data in the Azure Sentinel **Logs** page.
 - Create and edit a custom workbook to visualize important data.
@@ -15,7 +15,7 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 ### Task 1: Work with Logs in Azure Sentinel
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel** page, on the menu bar on the left, in the **General** section, select **Logs**.
+2. On the **Azure Sentinel** page, on the menu bar, in the **General** section, select **Logs**.
 
 > [!NOTE]
 
@@ -35,7 +35,6 @@ In this exercise, you will explore logs and Azure Sentinel workbooks. You will p
 8. Select **Queries** tab in the left pane. This pane includes example queries that you can add to the query window. If you're using your own workspace, you should have a variety of queries in multiple categories, but if you're using the demonstration environment, you might only see a single **Log Analytics workspaces** category.
 
 > [!NOTE]
-
 > You can try to practice writing queries in the following [demonstration environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
 
 ### Task 2: Work with Workbooks in Azure Sentinel
@@ -86,15 +85,13 @@ AzureActivity
 17. Select **Save** to commit the changes, and notice the parameter step now includes an additional parameter called **Level**.
 
 > [!TIP]
-
-> In the edit mode, if you select the ellipsis icon next to the **Edit** option, the new drop-down menu will appear. From that menu, you can move this step to different parts of the workbook. You can also clone or remove the step from the workbook.
+> In the edit mode, you can select the ellipsis icon next to the **Edit** option to display a new drop-down menu. From that menu, you can move this step to different parts of the workbook. You can also clone or remove the step from the workbook.
 
 18. On the header bar, select the **Save as** icon to save the customized workbook.
 19. In the **Title** field, provide a name for the new workbook, and then select **Save**.
 20. When you are finished making changes, select **Done Editing**.
 
 > [!TIP]
-
 > Your new workbook will be accessible from the **Azure Sentinel | Workbooks pane** in the **My workbooks** tab. If your new workbook is not listed, select the **Refresh** option.
 
 ### Clean up the resources
@@ -103,4 +100,3 @@ AzureActivity
 2. Select **azure-sentinel-rg**.
 3. On the header bar, select **Delete resource group**.
 4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**. 
-
