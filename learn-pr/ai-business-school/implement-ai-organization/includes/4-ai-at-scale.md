@@ -8,11 +8,11 @@ But recently, researchers have been training AI models that can execute multiple
 
 :::row:::
 :::column span="2":::
-These multitasking models are called “large” or “massive” because they have billions of “parameters,” or connections between nodes in the model’s neural network. To illustrate just how powerful they are: models with only millions of parameters achieved human parity in object recognition, speech recognition, and translation. These cutting-edge models will jumpstart a whole new breed of AI applications that weren’t possible before.
+These multitasking models are called “large” or “massive” because they have billions of “parameters,” or connections between nodes in the model’s neural network. To illustrate just how powerful they are: much smaller models with only millions of parameters achieved human parity in object recognition, speech recognition, and translation. Cutting-edge "massive" AI models will jumpstart a whole new breed of AI applications that weren’t possible before.
 
 According to a 2018 OpenAI analysis,<sup>3</sup> from 2012 to 2018 the amount of compute used in the largest AI training runs grew more than 300,000 times with a 3.5-month doubling time. Just in the year 2020, the size of natural language generation (NLG) models has increased exponentially—from less than 20 billion parameters to 175 billion.
 
-As you can imagine, training these large, multi-tasking models requires expertise, years of work, and massive amounts of training data. It also requires the most advanced supercomputing infrastructure and techniques for training the models across many pieces of hardware.
+As you can imagine, training large, multi-tasking models requires expertise, years of work, and massive amounts of training data. It also requires the most advanced supercomputing infrastructure and techniques for training the models across many pieces of hardware.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/implement-ai-organization-1.png" alt-text="Illustration of natural language generation (NLG) model growth.":::
