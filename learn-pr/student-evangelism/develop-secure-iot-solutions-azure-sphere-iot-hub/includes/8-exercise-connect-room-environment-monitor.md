@@ -115,7 +115,7 @@ You need the connection string for your IoT Hub.
 
    ![Screenshot showing Azure IoT resources.](../media/azure-iot-resources.png)
 
-    :::image type="content" source="../media/iot-hub-connection-string.png" alt-text="The illustration shows IoT Hub resources.":::
+    :::image type="content" source="../media/iot-hub-connection-string.png" alt-text="The illustration shows IoT Hub resources created for this learning module.":::
 
 1. From the IoT Hub blade.
 1. Click **Shared access policies**, then **iothubowner**.
