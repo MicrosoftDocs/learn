@@ -116,7 +116,7 @@ You need the connection string for your IoT Hub.
 1. From the Azure web portal.
 1. Select the IoT Hub you created at the beginning of this unit.
 
-    :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows IoT Hub resources created for this learning module.":::
+    :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows resources created for this learning module.":::
 
 1. From the IoT Hub blade.
 
