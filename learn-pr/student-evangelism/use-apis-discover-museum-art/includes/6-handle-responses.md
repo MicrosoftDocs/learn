@@ -6,14 +6,14 @@ The API will return a code of `400`: this is a 'bad request' error as the access
 
 Common access codes you might encounter include:
 
-200 – OK. The request was successful.
-204 – No Content.
-301 – Moved Permanently.
-400 – Bad Request.
-401 – Unauthorized.
-403 – Forbidden.
-404 – Not Found.
-500 – Internal Server Error.
+- 200 – OK. The request was successful.
+- 204 – No Content.
+- 301 – Moved Permanently.
+- 400 – Bad Request.
+- 401 – Unauthorized.
+- 403 – Forbidden.
+- 404 – Not Found.
+- 500 – Internal Server Error.
 
 It is useful to learn about the [various status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes?azure-portal=true) so that you can handle them well in your client-side code. Normally a `200` code means 'all is well' and you can continue to display the query results. It's just as useful to be able to triage errors and display appropriate message handling them.
 

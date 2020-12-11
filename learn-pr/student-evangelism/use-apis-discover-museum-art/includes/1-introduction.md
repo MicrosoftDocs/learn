@@ -21,4 +21,4 @@ You will need an internet-connected web browser such as Edge, and NPM and Node.j
 ## Learn more about APIs
 
 Watch Burke Holland conference talk, "What is an API":
-> [!VIDEO https://channel9.msdn.com/Events/Start-Dev-Change/Start-Dev-Change/What-is-an-API]
+> [!VIDEO https://channel9.msdn.com/Events/Start-Dev-Change/Start-Dev-Change/What-is-an-API/player]
