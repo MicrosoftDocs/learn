@@ -12,6 +12,12 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 1. Use the following commands to create values for the database server, admin username, admin password, and database name. Replace `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with your own values.
 
+    Keep in mind the following constraints when you assign these system values:
+    
+    - The `SERVER_NAME` value must be unique within Azure. The server name can only use lowercase letters, numbers, and the hyphen. The hyphen can't be the first or last character in the name.
+    - The `ADMIN_USERNAME` value can't be a name that's reserved in SQL Server, such as "admin" or "sa." The name "adminuser" is valid and can be used.
+    - The `ADMIN_PASSWORD` value must be at least 8 characters long.
+
     ```bash
     SERVER_NAME="<server name>"
     ADMIN_USERNAME="<admin username>"
@@ -19,14 +25,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
     DATABASE_NAME="<database name>"
     ```
 
-    > [!NOTE]
-    > Keep in mind the following constraints when you assign these system values:
-    >
-    > - The `SERVER_NAME` value must be unique within Azure. The server name can only use lowercase letters, numbers, and the hyphen. The hyphen can't be the first or last character in the name.
-    > The `ADMIN_USERNAME` value can't be a name that's reserved in SQL Server, such as "admin" or "sa." The name "adminuser" is valid and can be used.
-    > - The `ADMIN_PASSWORD` value must be at least 8 characters long.
-    >
-    > Copy and save the admin username and password values for later.
+    Copy and save the admin username and password values for later.
 
 1. Execute the following command in Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Insert** to paste commands into Cloud Shell.
 
@@ -115,68 +114,68 @@ The next step is to modify the Azure Function that you created to write output t
 1. Find the following statements near the end of the function:
 
     ```javascript
-                        if (isPolarBear) {
-                            context.log('POLAR BEAR detected by ' + id + ' at ' + latitude + ', ' + longitude);
-                        }
-                        else {
-                            context.log('Other wildlife detected by ' + id + ' at ' + latitude + ', ' + longitude);
-                        }
+    if (isPolarBear) {
+        context.log('POLAR BEAR detected by ' + id + ' at ' + latitude + ', ' + longitude);
+    }
+    else {
+        context.log('Other wildlife detected by ' + id + ' at ' + latitude + ', ' + longitude);
+    }
 
-                        context.done();
+    context.done();
     ```
 
-    Replace these statements with the following code:
+    Replace the statements with the following code. Adjust the code indentation as needed.
 
     ```javascript
     // Update the database
-                        var Connection = require('tedious').Connection;
-                        var Request = require('tedious').Request;
+    var Connection = require('tedious').Connection;
+    var Request = require('tedious').Request;
 
-                        var config =
-                        {
-                            authentication:
-                            {
-                                type: 'default',
-                                options:
-                                {
-                                    userName: databaseUserName,
-                                    password: databasePassword
-                                }
-                            },
-                            server: databaseServer,
-                            options:
-                            {
-                                database: databaseName,
-                                encrypt: true
-                            }
-                        };
+    var config =
+    {
+        authentication:
+        {
+            type: 'default',
+            options:
+            {
+                userName: databaseUserName,
+                password: databasePassword
+            }
+        },
+        server: databaseServer,
+        options:
+        {
+            database: databaseName,
+            encrypt: true
+        }
+    };
 
-                        var dbConnection = new Connection(config);
+    var dbConnection = new Connection(config);
 
-                        dbConnection.on('connect', err => {
-                            if (!err) {
-                                var query = "INSERT INTO dbo.PolarBears (CameraId, Latitude, Longitude, URL, Timestamp, IsPolarBear) " +
-                                    "VALUES ('" + id + "', " + latitude + ", " + longitude + ", '" + blobUri + "', GETDATE(), " + (isPolarBear ? "1" : "0") + ")";
+    dbConnection.on('connect', err => {
+        if (!err) {
+            var query = "INSERT INTO dbo.PolarBears (CameraId, Latitude, Longitude, URL, Timestamp, IsPolarBear) " +
+                "VALUES ('" + id + "', " + latitude + ", " + longitude + ", '" + blobUri + "', GETDATE(), " + (isPolarBear ? "1" : "0") + ")";
 
-                                var dbRequest = new Request(query, err => {
-                                    // Called when request completes, with or without error
-                                    if (err) {
-                                        context.log(err);
-                                    }
+            var dbRequest = new Request(query, err => {
+                // Called when request completes, with or without error
+                if (err) {
+                    context.log(err);
+                }
 
-                                    dbConnection.close();
-                                    context.done();
-                                });
+                dbConnection.close();
+                context.done();
+            });
 
-                                dbConnection.execSql(dbRequest);
-                            }
-                            else {
-                                context.log(err);
-                                context.done();
-                            }
-                        });
+            dbConnection.execSql(dbRequest);
+        }
+        else {
+            context.log(err);
+            context.done();
+        }
+    });
     ```
-
+    
     These statements connect to the database and execute an INSERT command to record the latest sighting. The row added to the database includes the ID, latitude, and longitude of the camera that took the photograph, the URL of the blob containing the photograph, the current date and time, and an `IsPolarBear` value that indicates whether the photograph contains a polar bear.
 
     Select **Save** to store your changes to the function.
@@ -204,10 +203,10 @@ The next step is to modify the Azure Function that you created to write output t
 
 1. Confirm that the table contains a few rows representing images that were submitted to the Custom Vision Service for analysis. Look at the "IsPolarBear" column in each row. How many of the images that were analyzed contain a polar bear?
 
-    ![Rows written to the database by the Azure Function](../media/query-results.png)
+    ![Screenshot that shows the rows written to the database by the Azure functions app.](../media/query-results.png)
 
-    _Rows written to the database by the Azure Function_
+    _Rows written to the database by the Azure functions app_
 
-1. Return to the Command Prompt or terminal window and press **Ctrl+C** to stop **run.js**.
+1. Return to the Command Prompt or terminal window and press **Ctrl+C** to stop the **run.js** command.
 
-In the next unit, you'll use Power BI to produce a more compelling — and graphical — visualization of the data.
+In the next unit, you'll use Power BI to produce a more compelling graphical visualization of the data.
