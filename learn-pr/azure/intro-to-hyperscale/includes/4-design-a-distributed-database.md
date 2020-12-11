@@ -15,13 +15,14 @@ Workloads that generate reports can involve **large amounts of data**, but have 
 In our scenario, when customer and merchant queries are run on the contactless payment app, these will be OLAP workloads. An example might be a status dashboard, showing if services are running or undergoing maintenance.
  :::column-end:::
 :::column span="2":::
+<br/>
 
-Example real-time analytics applications
-
-* Web and mobile analytics
-* Behavioral analytics via funnel analysis and segmentation
-* Anomaly and fraud detection
-* Geospatial analytics
+> **Example real-time analytics applications**
+> 
+> * Web and mobile analytics
+> * Behavioral analytics via funnel analysis and segmentation
+> * Anomaly and fraud detection
+> * Geospatial analytics
 
 :::column-end:::
 :::row-end:::
