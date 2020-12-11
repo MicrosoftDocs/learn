@@ -21,7 +21,7 @@ The components you'll need to know are:
 
 The steps you follow are:
 
-1. Install Visual Studio Code
+1. Install Visual Studio Code.
 1. Install the Azure Sphere SDK.
 1. Claim your Azure Sphere device.
    1. Log in to Azure Sphere.
