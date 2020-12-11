@@ -25,7 +25,8 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
     DATABASE_NAME="<database name>"
     ```
 
-    Copy and save the admin username and password values for later.
+    > [!Note]
+    > Copy and save the admin username and password values for later.
 
 1. Execute the following command in Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Insert** to paste commands into Cloud Shell.
 
@@ -81,11 +82,12 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 1. Expand the list of tables in the treeview on the left and confirm that the "dbo.PolarBears" table was created, and that it has the following schema:
 
-    ![The dbo.PolarBears table](../media/polar-bears-table.png)
+    ![Diagram that shows the dbo dot Polar Bears table.](../media/polar-bears-table.png)
 
     _The dbo.PolarBears table_
 
-Note the column named "IsPolarBear," which will be set to 1 or 0 to indicate that the corresponding image does or doesn't contain a polar bear.  
+    In the table, the "IsPolarBear" column is set to 1 or 0 to indicate whether the corresponding image contains a polar bear. A value of 1 (True) means that the image shows a polar bear.
+
 
 ## Modify the Azure Function
 
@@ -109,7 +111,7 @@ The next step is to modify the Azure Function that you created to write output t
     ```
 
     > [!Note]
-    > In the code, don't replace `DATABASE_ADMIN_NAME` or `DATABASE_PASSWORD` placeholders with other values. You''l create values for these placeholders in a later step.
+    > In the code, don't replace the `DATABASE_ADMIN_NAME` or `DATABASE_PASSWORD` placeholders with other values. You'll create values for these placeholders in a later step.
 
 1. Find the following statements near the end of the function:
 
