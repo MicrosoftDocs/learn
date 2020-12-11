@@ -35,7 +35,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
 
-1. Select the **data** file share.
+1. You should see **Access Denied**. 
 
     ![Screenshot showing access is denied to the share](../media/6-access-denied.png)
 
