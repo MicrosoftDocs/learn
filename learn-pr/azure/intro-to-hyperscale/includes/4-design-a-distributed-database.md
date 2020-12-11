@@ -6,27 +6,11 @@ Transactional workloads have **small amounts of data** with **large numbers of t
 
 Our contactless payment app will mostly have OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
 
-:::row:::
-:::column span="3":::
-
 ### What are OLAP workloads?
 
-Workloads that generate reports can involve **large amounts of data**, but have a **low numbers of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards.
+Workloads that generate reports can involve **large amounts of data**, but have a **low numbers of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards, such as web and mobile analytics or anomaly and fraud detection
 
 In our scenario, when customer and merchant queries are run on the contactless payment app, these will be OLAP workloads. An example might be a status dashboard, showing if services are running or undergoing maintenance.
- :::column-end:::
-:::column span="2":::
-<br/>
-
-> **Example applications with OLAP workloads**
-> 
-> * Web and mobile analytics
-> * Behavioral analytics via funnel analysis and segmentation
-> * Anomaly and fraud detection
-> * Geospatial analytics
-
-:::column-end:::
-:::row-end:::
 
 ## Types of applications for Hyperscale
 
