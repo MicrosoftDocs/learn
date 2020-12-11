@@ -7,10 +7,24 @@ Transactional workloads have **small amounts of data** with **large numbers of t
 Our contactless payment app will mostly have OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
 
 ### What are OLAP workloads?
+:::row:::
+:::column span="3":::
 
-Analytical workloads have **large amounts of data** with **low numbers of transactions**. Examples include business intelligence dashboards and financial reporting. These workloads are usually called online analytical processing, or **OLAP**.
+Workloads that generate reports can involve **large amounts of data**, but have a **low numbers of transactions**. The data being analyzed is generally event data or time series data. Examples include applications that power customer-facing analytics dashboards. These workloads are usually called online analytical processing, or **OLAP**.
 
 In our scenario, when customer and merchant queries are run on the contactless payment app, these will be OLAP workloads. An example might be a status dashboard, showing if services are running or undergoing maintenance.
+ :::column-end:::
+:::column span="2":::
+
+Example real-time analytics applications
+
+* Web and mobile analytics
+* Behavioral analytics via funnel analysis and segmentation
+* Anomaly and fraud detection
+* Geospatial analytics
+
+:::column-end:::
+:::row-end:::
 
 ## Types of applications for Hyperscale
 
@@ -50,7 +64,7 @@ To distribute the data, a typical column to shard by could be *user_id*, *custom
 
 ### Real-time applications
 
-Real-Time Applications are aptly named - they’re applications that analyze real-time events as they happen.
+Real-time applications are aptly named - they’re applications that analyze real-time events as they happen.
 
 **Examples**: Customer-facing dashboards requiring sub-second response times and logistics companies who need to monitor if shipments are on-time.  
 **Characteristics**:
