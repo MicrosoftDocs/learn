@@ -24,6 +24,8 @@ Virtual machines are essentially an emulation of a computer system's hardware an
 
 While the IaaS option is often the quickest and easiest method to move an application to a cloud-hosted environment, PaaS offers more benefits. Using the Platform as a Service option, you offload the responsibility of maintaining system software, OS, hardware, etc., to the hosting provider. You are responsible for your application(s). PaaS provides the database server for your data that supports the applications.  In the scenario for this module, your application is the ASP.NET app and the data that resides in the on-premises SQL Server database.  You will migrate the data to a SQL Azure database instance. The hosting provider will manage the SQL Azure database and the security for it.
 
+In this module, you will look at evaluation of migrating an ASP.NET app and SQL Server database to an IaaS solution. This will involve considerations around using the Azure App Service for the ASP.NET application and Azure SQL Database for hosting the current on-premises SQL Server data.
+
 ### Software as a Service (SaaS)
 
 The SaaS option isn't relevant for the module scenario. Consider SaaS solutions like Office 365 or Microsoft Dynamics 365. In this hosting option, you are essentially "renting" software.
