@@ -1,8 +1,8 @@
-<!-- Introductory text here: motivational scenario and lead-in. See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master 
+Modernizing your ASP.NET application and supporting data platforms to an online environment, can raise many questions. What problem is being solved? Will you need to rearchitect the application? How much will it cost to migrate and host? What downtime will my application experience?
 
-For guidance on writing a scenario, see https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios?branch=master
+If you have reached the point of considering a migration to a cloud-hosted solution, it likely means you are interested in taking advantage of the many facets of the cloud hosting option. 
 
--->
+Before beginning the migration process, you should evaluate your existing environment to better understand the requirements and considerations around security, cost, transition down time, etc.  Microsoft provides many tools to help evaluate your migration before you start the process.
 
 <!--
 
@@ -30,8 +30,14 @@ Guidance for content and exercise units:
 
 By the end of this module, you will be able to:
 
-<!--  Bullet list copied from index.yml -->
+- Explain the ASP.NET application migration process
+- Choose which tools are available to help you assess your environment
+- Choose which tools are available to help perform the migration
+- Explain how to evaluate networking and security requirements
+- Explain how to evaluate hosting costs when you migrate your existing ASP.NET applications to Azure
 
 ## Prerequisites
 
-<!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
+- Knowledge of cloud and traditional architecture concepts for hosting applications
+- Knowledge of networking, compute, and database systems for on-premises applications
+- Knowledge of application security and authentication concepts
