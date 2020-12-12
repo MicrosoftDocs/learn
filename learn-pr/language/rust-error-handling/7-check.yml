@@ -54,5 +54,5 @@ quiz:
       isCorrect: false
       explanation: "An empty vector doesn't convey meaning about a failed I/O operation."
     - content: "An empty tuple: `()`."
-      isCorrect: true
+      isCorrect: false
       explanation: "An empty tuple doesn't convey meaning about a failed I/O operation."
