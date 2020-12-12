@@ -5,10 +5,10 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 12/11/2020
-  author: nickwalkmsft
+  author: gerryaobrien
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/6-summary.md)]

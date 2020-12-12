@@ -5,11 +5,11 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 12/11/2020
-  author: nickwalkmsft
+  author: gerryaobrien
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 10
 # Modules generally must include a form of interactive validation - either sandbox task validation (see the guidance link in the exercise unit template) or a knowledge check.
 # From an instructional design perspective, knowledge checks are intended to aid retention, not to actually test the user. Questions should not be overly difficult and should focus on the broad concepts covered in the module, not fine details.
 # Knowledge checks should be in their own units, like this one.
