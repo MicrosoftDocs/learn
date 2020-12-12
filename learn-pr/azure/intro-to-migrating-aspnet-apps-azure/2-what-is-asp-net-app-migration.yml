@@ -2,13 +2,13 @@
 uid: learn.azure.intro-to-migrating-aspnet-apps-azure.content
 title: Content
 metadata:
-  title: Content
+  title: What is ASP.Net Migration?
   description: Content
   ms.date: 12/11/2020
-  author: nickwalkmsft
+  author: gerryaobrien
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 10
 content: |
-  [!include[](includes/2-content.md)]
+  [!include[](includes/2-what-is-asp-net-app-migration.md)]
