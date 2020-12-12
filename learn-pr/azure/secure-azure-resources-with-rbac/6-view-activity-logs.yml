@@ -10,6 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - View activity logs for RBAC changes
+labId: 46468
 durationInMinutes: 4
 content: |
   [!include[](includes/6-view-activity-logs.md)]
