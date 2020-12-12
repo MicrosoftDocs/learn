@@ -1,18 +1,36 @@
-<!-- Guidance on writing the opening to an exercise unit: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#use-the-standard-exercise-unit-introduction-format -->
 
-<!-- 
+## What is Azure App Service?
 
-See here for general guidance on exercise units: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-structure-exercise-content?branch=master
+### How does Azure App Service host ASP.NET apps?
 
-The titles of exercise units specified in the YAML should be prefixed with "Exercise - ".
+## What is Azure SQL DB?
 
-If your module uses sample code or other supporting resources, talk to your contact on the Learn team about creating an official GitHub repository for the module in the MicrosoftDocs organization. Check with your contact before using code or resources from any other source, including official Microsoft sources.
+### Compare Azure SQL DB with SQL Server
 
-SANDBOXES: There's lots to know about sandbox restrictions, limitations and initial setup - it's best to talk to your contact on the Learn team. The following guidance focuses on actually using the sandbox within your content:
+### Hybrid data scenarios
 
-- YAML and resource group referencing: https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-labs-use-sandbox?branch=master
-- Cloud shell: https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-labs-sandbox-use-the-cloudshell?branch=master
-- Azure portal: https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-labs-sandbox-use-azure-portal?branch=master
-- Task validation - confirming resource creation and configuration: https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-labs-sandbox-add-task-validation?branch=master
+## What are Migration Assistance Tools?
 
--->
+### What is Azure Migrate?
+
+### What is the Azure Migration Assistant?
+
+### What is the Data Migration Assistant?
+
+## Evaluate your existing environment
+
+### Inventory existing environment
+
+### Identify required app changes
+
+## Estimate costs
+
+### Introducing the Azure Cost Estimator
+
+## Evaluate security considerations
+
+### Evaluate security requirements for your app
+
+### Map security aspects for migration success
+
+## Explore DevOps pipelines for a migration scenario
