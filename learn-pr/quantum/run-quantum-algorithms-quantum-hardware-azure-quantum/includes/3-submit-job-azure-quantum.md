@@ -245,7 +245,7 @@ output`:
    ```
 
 The histogram you receive may be slightly different than the one above, but you
-should find that the states generally are observed with equal frequency.
+should find that the states generally are observed with equal frequency.  
 
 
 TODO
