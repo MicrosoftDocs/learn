@@ -74,25 +74,25 @@ Now you're ready to get the images to use in your project.
 
 1. Select **Add images** to add the Arctic fox images to your project.
 
-    ![Screenshot that shows how to add images to the Custom Vision Service project.](../media/add-images-to-project.png)
+    ![Screenshot that shows adding images to the Custom Vision project.](../media/add-images-to-project.png)
 
-    _Adding images to the Custom Vision Service project_
+    _Add images to the Custom Vision project_
 
 1. In the **Open** files dialog, select all the images of Arctic foxes found in the unzipped folder. Select **Open** to choose the images.
 
     ![Screenshot that shows all images selected and ready to open.](../media/open-images.png)
 
-    _Opening the images for use in the project_
+    _Open the images to use in the project_
 
-1. Enter "arctic-fox" as the **My Tags** setting for the images, and then select **Upload 130 files**. Wait for the upload to complete.
+1. For the **My Tags** setting for the images, enter *arctic-fox*. Then, select **Upload 130 files**. Wait for the upload to finish.
 
     ![Screenshot that shows the tag setting and the images ready to upload.](../media/add-tag-and-upload-images.png)
 
-    _Adding the image tag and uploading the images to the project_
+    _Add the image tag and upload the images to the project_
 
-    After the images are uploaded successfully, a summary dialog displays. Select **Done**.
+    After the images are uploaded successfully, a dialog box displays a summary. Select **Done**.
 
-Now repeat these steps for the polar bear images.
+Repeat these steps for the polar bear images.
 
 1. Download [this zip file](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/training-images/polar-bear.zip) of polar bear training images. Unzip the folder.
 
@@ -115,7 +115,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 
     ![Screenshot that shows training he model.](../media/train-model.png)
 
-    _Training the model_
+    _Train the model_
 
 1. Wait for the training process to complete. (The process can take a few minutes.) Then review the training statistics presented to you for iteration 1.
 
@@ -141,13 +141,13 @@ Now it's time to train the model by using the images that you tagged and uploade
 
 1. The "testing-images" directory contains subdirectories with a total of 30 different images for testing. Perform additional quick tests by using these images until you're satisfied that the model is reasonably adept at predicting whether an image contains a polar bear.
 
-1. Return to your project. Make sure you're on the **Performance** tab and select **Publish** at the top of the page.
+1. Return to your project. On the **Performance** tab, select **Publish**.
 
-1. In the **Publish Model** dialog, set **Prediction resource** to the name of your resource, "polar-bear-vision." Make sure you choose your resource name, and not the resource *group* name. Select **Publish** to publish the model.
+1. In the **Publish Model** pane, set **Prediction resource** to the name of your resource, "polar-bear-vision." Make sure you choose your resource name, and not the resource *group* name. Select **Publish** to publish the model.
 
     ![Screenshot that shows how to publish the model.](../media/publish-model.png)
 
-    _Publishing the model_
+    _Publish the model_
 
 1. At the top of the page, select **Prediction URL**. The **How to use the Prediction API** pane shows two URLs to use for uploading images and API values to define when you use the URLs.
     
@@ -160,11 +160,11 @@ Now it's time to train the model by using the images that you tagged and uploade
     
     You'll need to copy some of the values from this dialog and save them for use later on.
 
-1. Under the heading **If you have an image URL**, copy-and-save the URL into your favorite text editor so you can retrieve it later.
+1. Under the heading **If you have an image URL**, copy and then save the URL in your favorite text editor, so you can get it later.
 
-    - Also copy and then save the key value after **Set** `Prediction-Key` **Header to**. This value must be passed in each call to the prediction URL.
+   Also copy and then save the key value after **Set** `Prediction-Key` **Header to**. This value must be passed in each call to the prediction URL.
 
-1. Finish by selecting **Got it!** to dismiss the dialog.
+1. To finish, select **Got it!**.
 
 
-You now have a machine learning model that can discern whether an image contains a polar bear, along with a URL and API key to invoke the model. The next step is to invoke the model each time an image is uploaded to blob storage. Azure Functions is the perfect tool for the job.
+Now, you have a machine learning model that can discern whether an image contains a polar bear, and you have a URL and API key to invoke the model. The next step is to invoke the model each time an image is uploaded to Blob Storage. Azure Functions is the perfect tool for this job.

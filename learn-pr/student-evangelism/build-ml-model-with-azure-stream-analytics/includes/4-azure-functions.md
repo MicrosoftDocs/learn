@@ -45,12 +45,12 @@ Azure Functions can be written in the Azure portal or written externally using t
     _Configure the template to create a blob-triggered function_
     <br><br>
 
-    1. Enter "BlobTrigger" as the name for the new function.
-    1. Set the path to "photos/{name}" so the function triggers when blobs are uploaded to the "photos" container.
-    1. Under the **Storage account connection** box, select **New**. In the popup dialog, select the storage account that you created earlier, and then select **OK**.
+    1. For the new function app nape, enter **BlobTrigger**.
+    1. Set the path to *photos/{name}* so that the function app triggers when blobs are uploaded to the *photos* container.
+    1. Under **Storage account connection**, select **New**. In the dialog box, select the storage account that you created earlier, and then select **OK**.
     
-    > [!Note]
-    > Copy and save the value in the **Storage account connection** box. You'll need the value in a later step.
+       > [!Note]
+       > Copy and then save the value that's shown in the **Storage account connection** box. You'll need the value in a later step.
     
 1. At the bottom of the **Add function** page, select **Add**. After the function app is created, the portal view changes to show the new app.
 
