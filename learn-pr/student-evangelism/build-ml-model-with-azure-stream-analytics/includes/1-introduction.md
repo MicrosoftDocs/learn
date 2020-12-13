@@ -9,10 +9,10 @@ In this module, you'll build this automated system by using Microsoft Azure and 
 In the units that follow, you'll deploy several Azure services and integrate them to form an end-to-end solution, culminating in a Power BI report that depicts where polar bears are being spotted. Along the way, you'll learn:
 
 - How to create an Azure Storage account and upload blobs to it
-- How to write an Azure Functions app that's triggered when a blob is uploaded to storage
-- How to use Azure Custom Vision to train a machine learning model to recognize polar bears
+- How to write a function app in Azure Functions that's triggered when a blob is uploaded to storage
+- How to use Azure Cognitive Services Custom Vision to train a machine learning model to recognize polar bears
 - How to invoke a Custom Vision model from a function app
-- How to create a SQL database by using Azure SQL Database, and then write records to it
+- How to create a SQL database in Azure SQL Database, and then write records to it
 - How to connect Power BI to a SQL database
 - How to create a report with informative visuals in Power BI
 

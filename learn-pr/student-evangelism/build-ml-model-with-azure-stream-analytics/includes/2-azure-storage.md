@@ -279,7 +279,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     _Images uploaded to the "photos" container_
 
-1. Click one of the blobs to show a blob detail and examine the blob's metadata. Confirm that the blob metadata contains properties named `latitude`, `longitude`, and `id` as pictured below:
+1. Select one of the blobs to show a blob detail and examine the blob's metadata. Confirm that the blob metadata contains properties named `latitude`, `longitude`, and `id` as pictured below:
 
     ![Viewing blob metadata](../media/blob-metadata.png)
 

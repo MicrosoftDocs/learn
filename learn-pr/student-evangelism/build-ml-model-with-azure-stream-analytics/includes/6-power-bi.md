@@ -11,13 +11,13 @@ You used the Custom Vision Service to train an image-classification model to dif
     > [!NOTE]
     > There are two types of Microsoft accounts: personal Microsoft accounts and work or school accounts, also known as organizational accounts. Power BI accepts the latter, but not the former. If you have a Microsoft 365 subscription, it uses your work or school account. You can have a work or school account without having a Microsoft 365 subscription, however. For an explanation of the differences between personal Microsoft accounts and work or school accounts, see [Understanding Microsoft Work And Personal Accounts](http://www.brucebnews.com/2016/06/finding-your-way-through-microsofts-maze-of-work-and-personal-accounts/).
 
-1. Click **Get Data** in the ribbon at the top of the window. Then select **Azure SQL database** from the list of data sources and click the **Connect** button.
+1. Select **Get Data** in the ribbon at the top of the window. Then select **Azure SQL database** from the list of data sources and select the **Connect** button.
 
     ![Adding a data source](../media/connect-database-1.png)
 
     _Adding a data source_
 
-1. Enter the server's host name (the server name you specified in the previous unit plus ".database.windows.net") and the database name. Select **DirectQuery**, and click **Advanced options**. Then type the query below into the "SQL statement" box to select the 20 most recently added rows in the "dbo.PolarBears" table. This is the query that Power BI will use to pull information from the database. When you're done, click **OK**.
+1. Enter the server's host name (the server name you specified in the previous unit plus ".database.windows.net") and the database name. Select **DirectQuery**, and select **Advanced options**. Then type the query below into the "SQL statement" box to select the 20 most recently added rows in the "dbo.PolarBears" table. This is the query that Power BI will use to pull information from the database. When you're done, select **OK**.
 
     ```sql
     SELECT TOP 20 Id, CameraId, Latitude, Longitude, Url, Timestamp, FORMAT(Timestamp,'MM/dd/yyyy h:mm:ss tt') AS TimestampLabel, IsPolarBear FROM dbo.PolarBears ORDER BY Timestamp DESC
@@ -27,7 +27,7 @@ You used the Custom Vision Service to train an image-classification model to dif
 
     _Connecting to the database_
 
-1. In the ensuing dialog, click **Database** in the menu on the left. Enter the user name and password you specified when you created the database server, and select the database server from the drop-down list. Click **Connect**, and then click the **Load** button in the next dialog.
+1. In the ensuing dialog, select **Database** in the menu on the left. Enter the user name and password you specified when you created the database server, and select the database server from the drop-down list. Select **Connect**, and then select the **Load** button in the next dialog.
 
     ![Entering admin credentials](../media/connect-database-3.png)
 
@@ -39,7 +39,7 @@ After a short delay, Power BI will connect to the database and retrieve a datase
 
 Visualizations (or simply "visuals") are the primary element that make up Power BI reports. In this exercise, you'll use the Power BI report designer to create visuals from the database you connected to in the previous exercise, adjust filters and aggregates to refine the way the data is displayed, and format the visuals to produce compelling output.
 
-1. Click the **Map** icon in the "Visualizations" panel to add a map visual to the report.
+1. Select the **Map** icon in the "Visualizations" panel to add a map visual to the report.
 
     ![Adding a map visual](../media/add-map-visual.png)
 
@@ -51,31 +51,31 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
     _Adding fields to the map visual_
 
-1. In the "Visualizations" panel, click the down arrow next to **Average of Latitude** and select **Don't summarize** from the menu. Then do the same for **Average of Longitude**.
+1. In the "Visualizations" panel, select the down arrow next to **Average of Latitude** and select **Don't summarize** from the menu. Then do the same for **Average of Longitude**.
 
     ![Removing summary calculations](../media/do-not-summarize.png)
 
     _Removing summary calculations_
 
-1. Click in the empty area outside the map to deselect it. Then check the **CameraId**, **IsPolarBear**, and **TimestampLabel** boxes in the "Fields" panel to add a table visual containing those columns to the report.
+1. Select in the empty area outside the map to deselect it. Then check the **CameraId**, **IsPolarBear**, and **TimestampLabel** boxes in the "Fields" panel to add a table visual containing those columns to the report.
 
     ![Adding a table visual](../media/add-table-visual.png)
 
     _Adding a table visual_
 
-1. Click in an empty area to deselect the table visual. Then check **IsPolarBear** and **Latitude** in the "Fields" panel to add another table visual, and click the **Pie Chart** icon in the "Visualizations" panel to convert the table into a pie chart. 
+1. Select in an empty area to deselect the table visual. Then check **IsPolarBear** and **Latitude** in the "Fields" panel to add another table visual, and select the **Pie Chart** icon in the "Visualizations" panel to convert the table into a pie chart. 
 
     ![Adding a pie-chart visual](../media/add-pie-chart-visual.png)
 
     _Adding a pie-chart visual_
 
-1. Click the down arrow next to **Average of Latitude** and select **Count** from the menu to configure the pie chart to show a count of sightings and the proportion of sightings in which polar bears were detected. 
+1. Select the down arrow next to **Average of Latitude** and select **Count** from the menu to configure the pie chart to show a count of sightings and the proportion of sightings in which polar bears were detected. 
 
     ![Refining the pie-chart visual](../media/refine-pie-chart-visual.png)
 
     _Refining the pie-chart visual_
 
-1. Deselect the pie-chart visual and click the **Slicer** icon to add a slicer to the report. Slicers provide a convenient means for filtering information in a Power BI report by narrowing the data shown in other visuals. Then select the **IsPolarBear** field in the "Fields" panel so the slicer shows checkboxes labeled "True" and "False."
+1. Deselect the pie-chart visual and select the **Slicer** icon to add a slicer to the report. Slicers provide a convenient means for filtering information in a Power BI report by narrowing the data shown in other visuals. Then select the **IsPolarBear** field in the "Fields" panel so the slicer shows checkboxes labeled "True" and "False."
 
     ![Adding a slicer](../media/add-slicer.png)
 
@@ -87,7 +87,7 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
     _Adjusting the layout_
 
-1. With the report structure in place, the next task is to use some of Power BI's rich formatting options to embellish the visuals. Start by selecting the map visual in the report designer. Then click the **Format** icon in the "Visualizations" panel.
+1. With the report structure in place, the next task is to use some of Power BI's rich formatting options to embellish the visuals. Start by selecting the map visual in the report designer. Then select the **Format** icon in the "Visualizations" panel.
 
     ![Formatting the map visual](../media/format-map.png)
 
@@ -142,7 +142,7 @@ Now that the report is prepared in Power BI, your final task is to run the end-t
     node run.js
     ```
 
-1. Return to Power BI Desktop and click **Refresh** in the ribbon at the top of the window. Click it again every 15 seconds or so. The report will refresh automatically every few minutes, but you can refresh it manually as often as you would like to update the visuals. 
+1. Return to Power BI Desktop and select **Refresh** in the ribbon at the top of the window. Select it again every 15 seconds or so. The report will refresh automatically every few minutes, but you can refresh it manually as often as you would like to update the visuals. 
 
 1. Confirm that red and green bubbles appear at various locations around the island. Green bubbles indicate the presence of polar bears, while red bubbles represent locations where photos were taken but no polar bears were detected. Locations that have a mixture of sightings will show red *and* green, as pictured below.
 

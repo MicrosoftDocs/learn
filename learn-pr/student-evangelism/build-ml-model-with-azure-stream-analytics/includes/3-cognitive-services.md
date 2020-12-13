@@ -1,61 +1,68 @@
-Azure Cognitive Services is a suite of more than 20 services and APIs that are backed by machine learning. Developers can use the APIs to incorporate intelligent features like facial recognition and sentiment analysis into their applications. Custom Vision Service is one member of the Cognitive Services family. Its purpose is to create image-classification models that "learn" from labeled images you provide. Want to know if a photo contains a picture of a flower? Train the Custom Vision Service with a collection of flower images, and it can tell you whether the next image includes a flower, or even what type of flower it is.
+Azure Cognitive Services is a suite of more than 20 services and APIs that are backed by machine learning. Developers can use the APIs to incorporate intelligent features like facial recognition and sentiment analysis into their applications. Custom Vision is just one member of the Azure Cognitive Services family. Its purpose is to create image classification models that "learn" from labeled images you provide. Want to know if a photo contains a picture of a flower? Train Custom Vision by using a collection of flower images. Then, it can tell you whether the next image includes a flower, or even what type of flower appears in an image.
 
-![Custom Vision Service](../media/custom-vision.jpg)
+![Screenshot that shows an example of results when using the Azure Cognitive Services Custom Vision service.](../media/custom-vision.jpg)
 
-The Custom Vision Service exposes two APIs: the [Custom Vision Training API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/d9a10a4a5f8549599f1ecafc435119fa/operations/58d5835bc8cb231380095be3) and the [Custom Vision Prediction API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/eb68250e4e954d9bae0c2650db79c653/operations/58acd3c1ef062f0344a42814). You can build, train, and test image-classification models by using the [Custom Vision Service portal](https://www.customvision.ai/), or you can build, train, and test the models by using the Custom Vision Training API. After a model is trained, you can use the Custom Vision Prediction API to build apps that use the model. Both are REST APIs that can be called from a variety of programming languages.
+The Custom Vision service exposes two APIs: the [Custom Vision Training API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/d9a10a4a5f8549599f1ecafc435119fa/operations/58d5835bc8cb231380095be3) and the [Custom Vision Prediction API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/eb68250e4e954d9bae0c2650db79c653/operations/58acd3c1ef062f0344a42814). You can build, train, and test image classification models by using the [Custom Vision portal](https://www.customvision.ai/), or you can build, train, and test the models by using the Custom Vision Training API. After a model is trained, you can use the Custom Vision Prediction API to build apps that use the model. Both are REST APIs that can be called from a variety of programming languages.
 
-In this unit, you'll create a Custom Vision Service model and train it to differentiate between various types of Arctic wildlife.
+In this unit, you'll create a Custom Vision model and train it to differentiate between various types of Arctic wildlife.
 
-## Build a Custom Vision Service model
+## Build a Custom Vision model
 
-You'll begin by creating a new Custom Vision Service project. Then you'll upload images of polar bears, Arctic foxes, and walruses and tag the images so the Custom Vision Service can learn to differentiate between them.
+You'll begin by creating a new Custom Vision project. Then, you'll upload images of polar bears, Arctic foxes, and walruses and tag the images so Custom Vision can learn to differentiate between them.
 
 ### Create a new project, resource, and resource group
 
-1. Open the [Custom Vision Service portal](https://www.customvision.ai/?azure-portal=true) in your browser. Then select **Sign In** and sign in with your Microsoft account. Accept any terms of service if needed.
+1. In your browser, go to the [Custom Vision portal](https://www.customvision.ai/?azure-portal=true). Select **Sign In** and sign in with your Microsoft account. Accept any terms of service if needed.
 
-1. Select **+ NEW PROJECT** to display the **Create new project** dialog. Enter a project **Name** and **Description**.
-
-1. Select **create new** at the right above the **Resource** box, to create a new Cognitive Services resource.
+1. Select the **New Project** button.
+1. In the **Create new project** dialog box:
+   1. Enter a project **Name** and **Description**.
+   1. Beside **Resource**, select **create new** to create a new Cognitive Services resource.
 
    ![Screenshot that shows how to create a Cognitive Services project.](../media/create-new-project-1.png)
 
-   _Creating a new Cognitive Services project_
+   _Create a new Cognitive Services project_
    
-1. In the **Create New Resource** dialog, enter "polar-bear-vision" for the resource **Name**, and choose your **Subscription**.
+1. In the **Create New Resource** dialog box:
+   1. For the resource **Name**, enter *polar-bear-vision*.
+   1. Select your **Subscription**.
+   1. Beside **Resource Group**, select **create new** to create a new Cognitive Services resource group.
 
    ![Screenshot that shows how to create a Cognitive Services resource.](../media/create-resource-1.png)
 
-   _Creating a new Cognitive Services resource_
+   _Create a new Cognitive Services resource_
 
-1. Select **create new** at the right above the **Resource Group** box, to create a new Cognitive Services resource group.
+1. In the **Create New Resource Group** dialog box:
 
-   1. Enter "polar-bear-rg" for the **Resource Group**.
+   1. For the resource group **Name**, enter *polar-bear-rg*.
 
-   1. Make sure **Location** is set to "South Central US," and then select **Create resource group**.
+   1. Make sure **Location** is set to *South Central US**, and then select **Create resource group**.
 
    ![Screenshot that shows how to create a Cognitive Services resource group.](../media/create-resource-group.png)
 
-   _Creating a new Cognitive Services resource group_
+   _Create a new Cognitive Services resource group_
 
-1. The **Resource Group** information is added to the **Create New Resource** dialog. Select **Create resource**.
+    The new resource group information is added to the **Create New Resource** dialog box.
+
+1.  In the **Create New Resource Group** dialog box, select **Create resource**.
 
     ![Screenshot that shows the complete settings for a Cognitive Services resource.](../media/create-resource-2.png)
 
-    _Creating the Cognitive Services resource_
+    _Create the Cognitive Services resource_
 
-1. In the **Create new project** dialog, check the following settings.
+1. In the **Create new project** dialog box, check the following settings:
 
-    - **Resource**: polar-bear-vision
-    - **Project Types**: Classification
-    - **Classification Types**: Multiclass (Single tab per image)
-    - **Domains**: General
+    - **Resource**: *polar-bear-vision*
+    - **Project Types**: *Classification*
+    - **Classification Types**: *Multiclass (Single tab per image)*
+    - **Domains**: *General*
 
-    > A domain optimizes a model for specific types of images. If your goal is to classify food images by the types of food they contain or the ethnicity of the dishes, then it's helpful to select the "Food" domain. For scenarios that don't match any of the offered domains, or if you're unsure of which domain to choose, select the "General" domain.
+    > [!NOTE]
+    > A domain optimizes a model for specific types of images. If your goal is to classify food images by the types of food they contain or by the ethnicity of the dishes, it's helpful to select the **Food** domain. For scenarios that don't match any of the offered domains, or if you're unsure which domain to choose, select the **General** domain.
 
-    ![Screenshot that shows the creation of a Custom Vision Service project.](../media/create-new-project-2.png)
+    ![Screenshot that shows entered and selected values in the Create new project dialog box.](../media/create-new-project-2.png)
 
-    _Create the Custom Vision Service project_
+    _Verify your settings_
 
     When all settings are correct, select **Create project**. Your project opens.
 
@@ -142,20 +149,20 @@ Now it's time to train the model by using the images that you tagged and uploade
 
     _Publishing the model_
 
-1. Select **Prediction URL** at the top of the page. The **How to use the Prediction API** dialog opens. The dialog shows two URLs to use for uploading images, and API values to define when you use the URLs.
+1. At the top of the page, select **Prediction URL**. The **How to use the Prediction API** pane shows two URLs to use for uploading images and API values to define when you use the URLs.
     
     ![Screenshot that shows how to copy the Prediction A P I  U R L.](../media/copy-prediction-url.png)
 
-    _Copying the Prediction API URL_
+    _Copy the Prediction API URL_
 
-    - **If you have an image URL**: You can use the first URL to upload images with a URL address.
+    - **If you have an image URL**: You can use the first URL to upload images by using a URL address.
     - **If you have an image file**: You can use the second URL to upload images as byte streams.
     
     You'll need to copy some of the values from this dialog and save them for use later on.
 
 1. Under the heading **If you have an image URL**, copy-and-save the URL into your favorite text editor so you can retrieve it later.
 
-    - Also copy-and-save the key value after **Set** `Prediction-Key` **Header to**. This value must be passed in each call to the prediction URL.
+    - Also copy and then save the key value after **Set** `Prediction-Key` **Header to**. This value must be passed in each call to the prediction URL.
 
 1. Finish by selecting **Got it!** to dismiss the dialog.
 
