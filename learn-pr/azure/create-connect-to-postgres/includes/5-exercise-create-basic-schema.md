@@ -45,15 +45,15 @@ To run the code in this article in Azure Cloud Shell:
 
 To connect to the server, we'll use our sever name in a connection command, and the password from Exercise 3.
 
-6. Select the Copy button on the code block to copy the connection command for our Azure Database for PostgreSQL instance.
+1. Select the Copy button on the code block to copy the connection command for our Azure Database for PostgreSQL instance.
 
     ```psql
     psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
     ```
 
-7. Paste the code into the Cloud Shell session and select Enter.
+1. Paste the code into the Cloud Shell session and select Enter.
 
-8. Type in your password and select Enter to connect.
+1. Type in your password and select Enter to connect.
 
     > [!NOTE]
     > If you get stuck, you can disconnect from the database connection using `\q`. You can then reconnect using the connection command above. If you're still stuck, try hitting the Escape key then Enter, or alternatively `;` then Enter.
@@ -66,7 +66,7 @@ To connect to the server, we'll use our sever name in a connection command, and 
     CREATE DATABASE paymentapp;
     ```
 
-2. At the prompt, execute the following command to **connect directly** to the newly created **paymentapp** database:
+1. At the prompt, execute the following command to **connect directly** to the newly created **paymentapp** database:
 
     ```sql
     \c paymentapp
@@ -97,7 +97,7 @@ First, create a table and load it with some account data.
 
     The table is storing an id, name, and age.
 
-2. You can see the newly created table in the list of tables now by typing:
+1. You can see the newly created table in the list of tables now by typing:
 
     ```sql
     \dt
@@ -107,7 +107,7 @@ First, create a table and load it with some account data.
 
 Now that you have a table, insert some data into it.
 
-3. In the Cloud Shell  window, run the following query to insert a couple rows of data.
+In the Cloud Shell  window, run the following query to insert a couple rows of data.
 
     ```sql
     INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (1, 'John', 45);
@@ -118,19 +118,19 @@ You have now two rows of sample data into the account table you created earlier.
 
 ### Query and update the data the users tables
 
-4. Execute the following query to retrieve information from the account database table.
+1. Execute the following query to retrieve information from the account database table.
 
     ```sql
     SELECT * FROM payment_users;
     ```
 
-5. You can also update the data in the table.
+1. You can also update the data in the table.
 
     ```sql
     UPDATE payment_users SET age_in_years = 31 WHERE user_id = 2;
     ```
 
-6. You can see the updated values when you retrieve the data.
+1. You can see the updated values when you retrieve the data.
 
     ```sql
     SELECT * FROM payment_users;
