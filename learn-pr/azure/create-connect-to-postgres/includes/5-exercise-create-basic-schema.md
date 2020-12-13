@@ -109,10 +109,10 @@ Now that you have a table, insert some data into it.
 
 In the Cloud Shell  window, run the following query to insert a couple rows of data.
 
-    ```sql
-    INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (1, 'John', 45);
-    INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (2, 'Lauren', 32);
-    ```
+```sql
+INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (1, 'John', 45);
+INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (2, 'Lauren', 32);
+```
 
 You have now two rows of sample data into the account table you created earlier.
 
