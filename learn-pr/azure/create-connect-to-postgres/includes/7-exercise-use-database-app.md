@@ -25,7 +25,7 @@ In this exercise, we’ll:
     ls
     ```
 
-This folder contains one file: **users.csv**.
+    This folder contains one file: **users.csv**.
 
 3. We're going to load more user data. Let's view the contents of the **users.csv** file.
 
