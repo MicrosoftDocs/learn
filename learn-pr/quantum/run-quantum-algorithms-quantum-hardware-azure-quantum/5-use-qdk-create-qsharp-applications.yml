@@ -5,8 +5,8 @@ metadata:
   title: Exercise – Use the QDK to create Q# applications for Azure Quantum
   description: Learn how to use the tools from the QDK to develop applications for Azure Quantum. 
   ms.date: 05/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: geduardo
+  ms.author: v-edsanc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

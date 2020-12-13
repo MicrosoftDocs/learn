@@ -4,7 +4,7 @@ Now you are going to submit a job to Azure Quantum.
 
 ## Pre-requisites
 
-First, check that you have an Azure subscription. If you don't have one, you can
+Check that you have an Azure subscription. If you don't have one, you can
 create a [free account](https://azure.microsoft.com/free) before you begin.
 
 ### Create a quantum workspace
