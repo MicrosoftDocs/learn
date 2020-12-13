@@ -1,4 +1,4 @@
-We want to set up an ASP.NET app to connect and query our `paymentapp` PostgreSQL database. We run our queries using low-level code, to understand the process well. PostgreSQL can also be connected to objects that support higher-level logic, such as the .NET Entity Framework.
+We want to set up an ASP.NET app to connect and query our `paymentapp` PostgreSQL database. We'll run our queries using low-level code, to understand the process well. PostgreSQL can also be connected to objects that support higher-level logic, such as the .NET Entity Framework.
 
 In this exercise, we’ll:
 
