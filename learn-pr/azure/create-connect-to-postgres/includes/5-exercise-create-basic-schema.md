@@ -41,26 +41,32 @@ To run the code in this article in Azure Cloud Shell:
 1. Replace `{server-name}` with the server name you chose in Exercise 3.
 1. Select Enter to run the code and set your server name.
 
+### Connect to the server
+
+To connect to the server, we'll use our sever name in a connection command, and the password from Exercise 3.
+
 1. Select the Copy button on the code block to copy the connection command for our Azure Database for PostgreSQL instance.
 
     ```psql
     psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
     ```
 
-1. Type in your password and select enter to connect.
+1. Paste the code into the Cloud Shell session and select Enter.
+
+1. Type in your password and select Enter to connect.
 
     > [!NOTE]
     > If you get stuck, you can disconnect from the database connection using `\q`. You can then reconnect using the connection command above. If you're still stuck, try hitting the Escape key then Enter, or alternatively `;` then Enter.
 
 ## Create the paymentapp database
 
-6. Once you're connected to the server, create a blank database at the prompt:
+1. Once you're connected to the server, create a blank database at the prompt:
 
     ```sql
     CREATE DATABASE paymentapp;
     ```
 
-7. At the prompt, execute the following command to **connect directly** to the newly created **paymentapp** database:
+1. At the prompt, execute the following command to **connect directly** to the newly created **paymentapp** database:
 
     ```sql
     \c paymentapp
@@ -68,7 +74,7 @@ To run the code in this article in Azure Cloud Shell:
 
 ## Create and query tables in the payment app database
 
-Now that you know how to connect to the Azure Database for PostgreSQL, we can complete some basic tasks. We'll:
+Now that you know how to connect to Azure Database for PostgreSQL and create a database, we can complete some basic tasks. We'll:
 
 * Create a table
 * Insert some account data into it
@@ -79,7 +85,7 @@ First, create a table and load it with some account data.
 
 ### Create the users table
 
-8. In the Cloud Shell window, run the following query to create a table called `payment_users`:
+1. In the Cloud Shell window, run the following query to create a table called `payment_users`:
 
     ```sql
     CREATE OR REPLACE TABLE payment_users (
@@ -89,9 +95,9 @@ First, create a table and load it with some account data.
     );
     ```
 
-The table is storing an id, name, and age.
+    The table is storing an id, name, and age.
 
-9. You can see the newly created table in the list of tables now by typing:
+1. You can see the newly created table in the list of tables now by typing:
 
     ```sql
     \dt
@@ -101,30 +107,30 @@ The table is storing an id, name, and age.
 
 Now that you have a table, insert some data into it.
 
-10. In the Cloud Shell  window, run the following query to insert a couple rows of data.
+In the Cloud Shell  window, run the following query to insert a couple rows of data.
 
-    ```sql
-    INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (1, 'John', 45);
-    INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (2, 'Lauren', 32);
-    ```
+```sql
+INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (1, 'John', 45);
+INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (2, 'Lauren', 32);
+```
 
 You have now two rows of sample data into the account table you created earlier.
 
-## Query and update the data the users tables
+### Query and update the data the users tables
 
-11. Execute the following query to retrieve information from the account database table.
+1. Execute the following query to retrieve information from the account database table.
 
     ```sql
     SELECT * FROM payment_users;
     ```
 
-12. You can also update the data in the table.
+1. You can also update the data in the table.
 
     ```sql
     UPDATE payment_users SET age_in_years = 31 WHERE user_id = 2;
     ```
 
-13. You can see the updated values when you retrieve the data.
+1. You can see the updated values when you retrieve the data.
 
     ```sql
     SELECT * FROM payment_users;
