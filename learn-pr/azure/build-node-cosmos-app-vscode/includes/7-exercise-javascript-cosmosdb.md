@@ -1,20 +1,20 @@
-Azure DB provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents.
+Azure Databases extension provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents.
 
-In the sample scenario, you're using Azure DB to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Azure DB, and to query documents held in Azure DB.
+In the sample scenario, you're using Azure Databases extension to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Azure DB, and to query documents held in Azure DB.
 
-In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves student documents to the Azure DB container you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
+In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves student documents to the Azure Databases extension container you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
 
 This exercise runs on your desktop computer and uses an Azure sandbox for your resources.
 
-## Configure a connection to Azure DB
+## Configure a connection to Azure Databases extension
 
-The first task is to enable your application to connect to the Azure DB account you created in the first exercise.
+The first task is to enable your application to connect to the Azure Databases extension account you created in the first exercise.
 
 1. Start Visual Studio Code if it isn't already running, and open the **grades** folder, holding the **studentgrades.js** file.
 
 2. On the **Terminal** menu, click **New Terminal** if you don't currently have a terminal window open.
 
-3. In the **Terminal** window, run the following command to install the Azure DB package for JavaScript:
+3. In the **Terminal** window, run the following command to install the Azure Databases extension package for JavaScript:
 
     ```bash
     npm install @azure/cosmos
@@ -32,11 +32,11 @@ The first task is to enable your application to connect to the Azure DB account 
 
 5. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
 
-6. In the **Azure DB** pane, if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox.
+6. In the **Azure Databases extension** pane, if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox.
 
-    ![Screenshot of Azure DB pane in Visual Studio Code. The user is about to sign in to Azure.](../media/7-azure-sign-in.png)
+    ![Screenshot of Azure Databases extension pane in Visual Studio Code. The user is about to sign in to Azure.](../media/7-azure-sign-in.png)
 
-7. Expand your Azure account, right-click your Azure DB account, and then click **Copy Connection String**.
+7. Expand your Azure account, right-click your Azure Databases extensionaccount, and then click **Copy Connection String**.
 
     ![Screenshot of Azure DB pane in Visual Studio Code. The user is copying the connection string for the Azure DB account to the clipboard.](../media/7-connection.png)
 
@@ -238,11 +238,11 @@ You can now create and run a test harness that verifies that your code creates s
 
     1. It creates two students, and adds them to the container using the **addStudent** function. The test verifies that the students were created using the **getStudent** function.
 
-    2. It assigns grades for each course to both students, then updates the student documents in the Azure DB container with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student. These details should now include the course grade data.
+    2. It assigns grades for each course to both students, then updates the student documents in the Azure Databases extension container with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student. These details should now include the course grade data.
 
     3. It runs the **queryStudents** function to display the grades for all students who have taken each course.
 
-    4. It removes student documents from the container in Azure DB with the **deleteStudent** function. The students removed are those created manually, in the first exercise in this module. The **getStudent** function is used to retrieve the student data afterward. In both cases, the documents should no longer be present, and nothing will be displayed.
+    4. It removes student documents from the container in Azure Databases extension with the **deleteStudent** function. The students removed are those created manually, in the first exercise in this module. The **getStudent** function is used to retrieve the student data afterward. In both cases, the documents should no longer be present, and nothing will be displayed.
 
 2. Save the file.
 
@@ -265,7 +265,7 @@ You can now create and run a test harness that verifies that your code creates s
     | Enter the student's forename: | ABC |
     | Enter the student's last name: | DEF |
 
-    The following messages should appear. This is the data displayed by the **getStudent** function, after the course has been added to the Azure DB container by the **addStudent** function:
+    The following messages should appear. This is the data displayed by the **getStudent** function, after the course has been added to the Azure Databases extensioncontainer by the **addStudent** function:
 
     ```text
     Added student with id: S901
@@ -281,7 +281,7 @@ You can now create and run a test harness that verifies that your code creates s
     | Enter the student's forename: | TUV |
     | Enter the student's last name: | XYZ |
 
-    The following message should appear, indicating that the document for this student has also been added to the Azure DB container.
+    The following message should appear, indicating that the document for this student has also been added to the Azure Databases extension container.
 
     ```text
     Added student with id: S902

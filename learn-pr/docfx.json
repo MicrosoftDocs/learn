@@ -421,6 +421,19 @@
                 "dest": "modules"
             },
             {
+                "src": "powershell",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "python-partnership",
                 "files": [
                     "**/*.yml",

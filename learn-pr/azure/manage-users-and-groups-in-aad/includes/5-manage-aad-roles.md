@@ -1,4 +1,4 @@
-## Built-in Roles for Azure Resources (USES POWERSHELL)
+## Built-in roles for Azure Resources (uses PowerShell)
 
 Azure AD provides several _built-in roles_ to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
 
@@ -8,14 +8,14 @@ Azure AD provides several _built-in roles_ to cover the most common security sce
 
 ## Role definitions
 
-Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name, Id**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
+Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name**, **ID**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
 
 For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
-You can get this information using the Powershell `Get-AzureRmRoleDefinition` cmdlet. Try typing the following command into the Cloud Shell on the right.
+You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. Try entering the following command into the Cloud Shell on the right.
 
 ```powershell
-Get-AzureRmRoleDefinition -Name Owner
+Get-AzRmRoleDefinition -Name Owner
 ```
 
 This should produce the following output:
@@ -50,7 +50,7 @@ Next, let's explore some of the other built-in roles.
 
 A role definition is a collection of permissions. It's sometimes just called a role. A role definition lists the operations that can be performed, such as **read, write, and delete**. It can also list the operations that can't be performed or operations related to underlying data.
 
-As you saw above, a role definition has the following structure.
+As previously described, a role definition has the following structure.
 
 | Name                 | Description |
 |----------------------|-------------|
@@ -149,7 +149,7 @@ Creating a new role can be done through several mechanisms:
 
 * **Azure portal**. You can use the Azure portal to create a custom role - **Azure Active Directory > Roles and administrators > New custom role**.
 
-* **Azure PowerShell**. You can use the `New-AzureADMSRoleDefinition` cmdlet to define a new role.
+* **Azure PowerShell**. You can use the `New-AzADMSRoleDefinition` cmdlet to define a new role.
 
 * **Azure Graph API**. You can use a REST call to the Graph API to programmatically create a new role.
 

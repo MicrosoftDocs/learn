@@ -34,7 +34,7 @@ In this step, to create an ASP.NET Web app using code from a GitHub repository, 
    az storage account create -n $storageAccount -g $resourceGroup -l $appLocation --sku Standard_LRS 
    ```
 
-1. Before continuing with the exercise, wait until the commands have completed.
+1. Before continuing with the exercise, wait until the commands have been completed.
 
 ### Enable logging using the Azure portal
 
