@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-java-app-enable-authentication-authorization.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 12/14/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-summary.md)]
