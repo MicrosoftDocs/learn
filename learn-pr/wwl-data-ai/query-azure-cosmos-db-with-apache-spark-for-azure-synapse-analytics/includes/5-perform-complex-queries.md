@@ -3,7 +3,8 @@ We now need to unpack the sales order line-item data that is contained within an
 -	explode(), which separates the elements of array into multiple rows and uses the default column name col for elements of the array.
 -	posexplode(), which separates the elements of array into multiple rows with positions and uses the column name pos for position, col for elements of the array.
 
-> [!Note}: There are similar explode() and posexplode() functions in PySpark.
+> [!Note]
+> There are similar explode() and posexplode() functions in PySpark.
 
 Firstly, lets remind ourselves what the data we are interested in looks like in the current SalesOrders table by 
 
@@ -18,7 +19,7 @@ Firstly, lets remind ourselves what the data we are interested in looks like in 
 
     ![Using SparkSQL query to explore data in a notebook](../media/explore-data-in-notebook.png)
 
-    Here we can see our details column contains array data that needs to be expanded. Each element of the embedded array represents an individual line item of the sales order parent record the id of which is contained in the _id column of the SalesOrders table. 
+    Here we can see our details column contains array data that needs to be expanded. Each element of the embedded array represents an individual line item of the sales order parent record the ID of which is contained in the _id column of the SalesOrders table. 
 
     If we expand this array using the explode() function, by:
 

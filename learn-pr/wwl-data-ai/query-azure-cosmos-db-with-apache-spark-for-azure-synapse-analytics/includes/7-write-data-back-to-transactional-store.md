@@ -22,7 +22,7 @@ For our example, where we are wanting to write the limited number of statistic r
 
     As you can see, we now an appropriately shaped result set ready to write back to the transactional store, by
 
-2.	Paste the code below into a **new cell (B), click the **run cell** button.
+2.	Paste the code below into a **new cell (B)**, click the **run cell** button.
 
     ```sql
     dfSalesOrderStatistic = spark.sql("SELECT concat(Country,'-',replace(City,' ','')) AS id, \

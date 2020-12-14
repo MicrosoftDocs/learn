@@ -86,7 +86,7 @@ We have so far used loading the data into a DataFrame as the approach, lets crea
     
     We are now using Spark SQL to create a temporary view called **SalesOrderView (D)**.
     
-    Within which we are **renaming the _id column from the SalesOrders table to SalesOrderId (F) **, as the _id property is the id of all Adventure Works sales order records. We have also **accessed the string values for this column by specifying _id.string (E)**. In a similar manner, we are accessing the address.country and address.city properties embedded in the address of the Customer table. 
+    Within which we are **renaming the _id column from the SalesOrders table to SalesOrderId (F)**, as the _id property is the ID of all Adventure Works sales order records. We have also **accessed the string values for this column by specifying _id.string (E)**. In a similar manner, we are accessing the address.country and address.city properties embedded in the address of the Customer table. 
     
     We are converting the data type of the ship date and order date properties to the date data type using the Spark SQL to_date() function, remembering to access the string values using the shipdate.string and orderdate.string respectively from the **SalesOrder table (G)**. 
     

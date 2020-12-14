@@ -18,7 +18,7 @@ Now that you are familiar with reading from analytical store into a DataFrame re
 
     ![Connecting to the transactional store](../media/connect-to-transactional-store.png)
 
-And a similar approach applies to the creating a Spark SQL table to access the transactional store, the USING clause is changed to specify cosmos.oltp as the source.
+    And a similar approach applies to the creating a Spark SQL table to access the transactional store, the USING clause is changed to specify cosmos.oltp as the source.
 
 2.	Paste the code below into a **new cell (B)**, click the **run cell** button.
 

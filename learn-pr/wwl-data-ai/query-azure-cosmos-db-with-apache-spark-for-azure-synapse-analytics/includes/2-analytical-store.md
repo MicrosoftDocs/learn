@@ -18,11 +18,11 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 2.	In the left-hand menu, select **Data (A)**
 3.	Click on the **Linked tab** in the explorer view **(B)**
 4.	Expand the **AdventureWorksSQL** linked service to expose the **Customer** container
-5.	Expand the **AdventureWorksMongDB** linked service to expose the **SaleOrder** container.
+5.	Expand the **AdventureWorksMongoDB** linked service to expose the **SalesOrder** container.
 
     ![Viewing linked services in Azure Synapse Studio](../media/view-linked-services.png)
 
-    Here you can see that an additional two containers are now visible in the data explorer view, under the previously created linked service to our Azure Cosmos DB accounts. The first, **Customer (C)**, has been created in the AdventureWorks database within the Azure Cosmos DB SQL API account and contains customer profile information. The second, **SalesOrder (D) **, has been created the AdventureWorks database within the Azure Cosmos DB API for MongoDB account and contains sales order information.
+    Here you can see that an additional two containers are now visible in the data explorer view, under the previously created linked service to our Azure Cosmos DB accounts. The first, **Customer (C)**, has been created in the AdventureWorks database within the Azure Cosmos DB SQL API account and contains customer profile information. The second, **SalesOrder (D)**, has been created the AdventureWorks database within the Azure Cosmos DB API for MongoDB account and contains sales order information.
 
     Let’s open a new notebook to explore what is in these containers with Spark.
 
@@ -86,7 +86,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     Let’s explore what data is contained in these DataFrames.
 
-15.	Click the **+” (N)** at the bottom of notebook and select **Code Cell** to add an additional code cell.
+15.	Click the **"+" (N)** at the bottom of notebook and select **Code Cell** to add an additional code cell.
 
     ![Create a new cell in a notebook in Azure Synapse Studio](../media/create-new-cell-in-notebook.png)
 
@@ -106,7 +106,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     You will note that the top-level properties of the document are represented as columns with the associated property values as the value of the column. In the case that these values are primitive data types (“string”, “integer”, “float” etc.) the column will be **typed (Q)**, if these properties are embedded arrays or objects within the document, the column value will be a structure of these **embedded values (R)**. 
 
-    In the case of our example, the title, firstName, lastName, emailAddress, and phoneNumber properties are primitive strings and assigned to their own **columns (Q) **, the address and password properties are **both embedded objects (R) **.
+    In the case of our example, the title, firstName, lastName, emailAddress, and phoneNumber properties are primitive strings and assigned to their own **columns (Q)**, the address and password properties are **both embedded objects (R)**.
 
 18.	Run a similar statement for the dfSalesOrder DataFrame, by creating a new cell, pasting the below and clicking the “run cell” button:
 
@@ -149,9 +149,9 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
 20.	Paste the above code (X), click the **run cell** button.
 
-    ![Adding the id to the results](../media/add-id-to-resultset.png)
+    ![Adding the ID to the results](../media/add-id-to-resultset.png)
 
-    You will note that for this DataFrame we have additionally included the **id column (W) **, for Azure Cosmos DB API for MonogDB accounts, the id column can be considered a system document property and should not be confused with the _id property of the original document. 
+    You will note that for this DataFrame we have additionally included the **id column (W)**, for Azure Cosmos DB API for MonogDB accounts, the ID column can be considered a system document property and should not be confused with the _id property of the original document. 
 
     To get a more visual representation of the DataFrame schema, you can use the printSchema() method on the DataFrame.
 

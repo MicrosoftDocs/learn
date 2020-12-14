@@ -25,7 +25,7 @@ Adventure Works wanted to be able to understand how the sales order volume and r
 
     ![Using SparkSQL to create a windowing function in a notebook](../media/use-spark-sql-windowing-function-in-notebook.png)
 
-    This query answers the many parts of the questions being asked through traditional aggregation, because we are mostly interested in understanding the number (COUNT) or total (SUM) of values a GROUP BY clause that covers both **Country and City (B) ** can answer most of the questions with **absolute values for the total number of customers, orders and order lines and the sum of revenue by City (C)**.
+    This query answers the many parts of the questions being asked through traditional aggregation, because we are mostly interested in understanding the number (COUNT) or total (SUM) of values a GROUP BY clause that covers both **Country and City (B)** can answer most of the questions with **absolute values for the total number of customers, orders and order lines and the sum of revenue by City (C)**.
 
     To answer the ranking part of the question, we use window functions. In essence a window function calculate a result for every row of a table based on a group of rows, called the frame. Every row can have a unique frame associated with it for that window function allowing you to concisely express and solve ranking, analytic, and aggregation problems in powerful yet simple a manner no other approach does. 
 
