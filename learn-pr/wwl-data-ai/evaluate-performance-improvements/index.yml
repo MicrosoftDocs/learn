@@ -3,7 +3,7 @@ uid: learn.wwl.evaluate-performance-improvements
 metadata:
   title: Evaluate performance improvements
   description: "Evaluate performance improvements"
-  ms.date: 12/10/2020
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -36,7 +36,7 @@ units:
 - learn.wwl.evaluate-performance-improvements.describe-wait-statistics
 - learn.wwl.evaluate-performance-improvements.tune-indexes
 - learn.wwl.evaluate-performance-improvements.maintain-indexes
-- learn.wwl.evaluate-performance-improvements.5a-exercise-isolate-problem-areas-poor-performing-queries
+- learn.wwl.evaluate-performance-improvements.exercise-isolate-problem-areas-poor-performing-queries
 - learn.wwl.evaluate-performance-improvements.knowledge-check
 - learn.wwl.evaluate-performance-improvements.summary
 badge:
