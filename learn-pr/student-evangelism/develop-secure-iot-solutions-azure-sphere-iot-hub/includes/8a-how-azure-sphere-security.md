@@ -1,12 +1,12 @@
 In this unit you will learn about Azure Sphere security.
 
-Applications on Azure Sphere are secure by default. You must grant capabilities to the application. Granting capabilities is key to Azure Sphere security and is also known as the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege?azure-portal=true). You should grant only the capabilities that the Azure Sphere application needs to run correctly, and no more.
+Applications on Azure Sphere are secure by default. You must grant capabilities to the application. Granting capabilities is key to Azure Sphere security and is also known as the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege?azure-portal=true). You should grant only the capabilities that the Azure Sphere application needs to run correctly.
 
 Application capabilities include what hardware can be accessed, what network endpoints can be called, and what inter-core communications is allowed.
 
 ## IoT Hub and DPS network endpoints
 
-You must declare all network endpoints your application will use. As a security feature, if you try to access any endpoint that has not been declared in the application manifest then the application will fail when it tries to connect. This security is implemented as a network firewall that cannot be changed until the device is restarted.
+You must declare all network endpoints your application will use. As a security feature, if you try to access any endpoint that has not been declared in the application manifest then the application will fail when it tries to connect. This security is implemented as a network firewall that cannot be changed until the application package is updated.
 
 When connecting to IoT Hub you must declare the DPS global device provisioning service endpoint, your DPS network endpoint, as well as the endpoint for your IoT Hub. Otherwise, your Azure Sphere application will not be able to connect to IoT Hub.
 
@@ -61,5 +61,3 @@ The labs for this learning module have a set of hardware definition files for th
 ```c
 #include "hw/azure_sphere_learning_path.h"
 ```
-
-You will learn how to declare network endpoints in the following exercise.

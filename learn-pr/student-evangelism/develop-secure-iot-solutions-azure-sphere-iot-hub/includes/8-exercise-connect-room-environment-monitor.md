@@ -147,5 +147,5 @@ You need the connection string for your IoT Hub.
    :::image type="content" source="../media/iot-explorer-pnp-settings.png" alt-text="The illustration shows how to set the IoT Explorer Plug and Play public repository.":::
 
 1. Select **+ Add**.
-1. Select **Public Repository**.
+1. Select **Public repository**.
 1. Then select **Save**.
