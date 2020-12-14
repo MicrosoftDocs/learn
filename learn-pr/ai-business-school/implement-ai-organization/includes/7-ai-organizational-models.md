@@ -15,7 +15,7 @@ Everyone has a role to play in AI transformation, not just IT. It's important to
 * Collecting and evaluating feedback from AI users (whether they are customers or employees).
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/implement-ai-organization-4.png" alt-text="Venn diagram showing that AI requires multidisciplinary skills.":::
+:::image type="complex" source="../media/implement-ai-organization-6.png" alt-text="Venn diagram showing that AI requires multidisciplinary skills.":::
 The diagram is composed of three circles. The top circle in the diagram is labeled "Domain Understanding." The bottom left circle is labeled "IT Skills." The bottom right circle is labeled "AI Skills." The three circles are dark blue, and the overlapping sections are light blue. The very middle of the diagram, where all three circles overlap is a slightly darker circle. 
 :::image-end:::
 :::column-end:::
@@ -32,10 +32,10 @@ As for the other leaders across an organization, there's no single model to foll
 This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
 
 * **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic.
-* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>3</sup> Ultimately, this increased customer loyalty and satisfaction.
+* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>4</sup> Ultimately, this increased customer loyalty and satisfaction.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/implement-ai-organization-5.png" alt-text="Diagram showing AI-related roles.":::
+:::image type="complex" source="../media/implement-ai-organization-7.png" alt-text="Diagram showing AI-related roles.":::
 This graphic shows the business roles that are involved with AI initiatives. There are four blue circles with labels underneath them, arranged in a square formation. The first blue circle in the top left is labeled “Business Leader.” In the circle, there is a simple icon of three people standing shoulder to shoulder. In the top right, the blue circle is labeled “Chief Digital Officer.” In the blue circle there is an icon of a person in a suit. In the bottom left circle, labeled “HR,” There is an icon of three people surrounding a single person, to represent support. In the bottom right blue circle, there is an icon of a person next to a computer with a bar graph on it, indicating an upward trend. This blue circle is labeled “IT.”
 :::image-end:::
 :::column-end:::
@@ -51,7 +51,7 @@ The Chief Digital Officer (CDO) is a change agent who oversees the transformatio
 * **Cultivate a culture of data sharing across the company:** Most organizations generate, store, and use data in a siloed manner. While each department may have a good view of their own data, they may lack other information that could be relevant to their operations. For instance, a sales department might not have a complete view of a customer because they're missing e-commerce data that's controlled by another department. Sharing data is key to efficiently using AI.
 * **Create your AI manifesto:** This is the 'north star' that clearly outlines the organization's vision for AI and digital transformation more broadly. Its goal is not only to solidify the company's strategy, but to inspire everyone across the organization and help them understand what the transformation will mean for them. The CDO will need to work with other members of C-suite to create the document and message it to the company.
 * **Identify catalyst projects for quick wins:** Kick-start AI transformation by identifying work that can immediately benefit from AI. Then, showcase those projects to prove its value and gain momentum among other teams.
-* **Roll out an education program on data management best practices:** As more people outside of IT become involved in creating AI models, it's important to make sure everyone understands data management best practices. Data needs to be cleaned, consolidated, formatted, and managed so that it's easily consumable by AI. It's extremely important to be careful about what training data is used and how it's structured. Using unsuitable or biased training data negatively affects model performance and fairness. And the need for rigorous processes doesn't end after training – it's also important to plan for monitoring model accuracy over time and retraining them when necessary.
+* **Roll out an education program on data management best practices:** As more people outside of IT become involved in creating AI models, it's important to make sure everyone understands data management best practices. Data needs to be cleaned, consolidated, formatted, and managed so that it's easily consumable by AI. It's extremely important to be careful about what training data is used and how it's structured. Using unsuitable or biased training data negatively affects model performance and fairness. And the need for rigorous processes doesn't end after training—it's also important to plan for monitoring model accuracy over time and retraining them when necessary.
 
 ### Human Resources leader
 
