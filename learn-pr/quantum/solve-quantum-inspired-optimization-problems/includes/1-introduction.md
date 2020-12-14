@@ -1,4 +1,4 @@
-In this module, you'll learn about an area called quantum-inspired optimization (QIO). These are quantum-inspired algorithms that are applied to solve optimization problems. In this module, we'll look at Interplanet Express, a space freight company that specializes in mineral transports.
+In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms inspired from quantum computing that are applied to solve optimization problems on traditional hardware. To illustrate this method, we'll look at Interplanet Express, a space freight company that specializes in mineral transports.
 
 ![An illustration that shows two space ships that need to be loaded with minerals as evenly as possible](../media/interplanet_express.png)
 
