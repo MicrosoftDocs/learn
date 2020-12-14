@@ -16,7 +16,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
 
-## Configure a server-based firewall rule using the Azure Portal
+## Configure a server-based firewall rule using the Azure portal
 
 1. In the search bar at the top of the Azure portal, type **SQL servers**.
 
@@ -141,6 +141,6 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 The results show the logged in user, containeddemo.
 
-In this exercis you've seen how to add a client IP address to enable SSMS to connect to a database in Azure. You did this in the Azure portal, and you created a firewall rule using T-SQL.
+In this exercise you've seen how to add a client IP address to enable SSMS to connect to a database in Azure. You did this in the Azure portal, and you created a firewall rule using T-SQL.
 
 To finish this exercise select **Done** below.
