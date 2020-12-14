@@ -31,13 +31,13 @@ occurred.
 
     :::image type="content" source="../media/create-storage.png" alt-text="Create storage":::
 
-1. If you have already used a Cloud Shell, just make sure the upper left corner of the Cloud shell screen shows **Bash**.
+1. If you have already used a Cloud Shell, just make sure the upper left corner of the Cloud Shell screen shows **Bash**.
 
     Once complete, you will see a prompt similar to the one below.
 
     :::image type="content" source="../media/cloud-shell-prompt.png" alt-text="Cloud Shell prompt":::
 
-1. Create a storage account from the CLI using by executing the following command in cloud shell. Your storage account name must be unique and all lower case with no special characters. You should change dp300storage in the example to a unique name such as **dp300storagemsl123**. The value **DP-300-HADR** is the name of a Resource Group:
+1. Create a storage account from the CLI using by executing the following command in Cloud Shell. Your storage account name must be unique and all lower case with no special characters. You should change dp300storage in the example to a unique name such as **dp300storagemsl123**. The value **DP-300-HADR** is the name of a Resource Group:
 
     > [!NOTE]
     > You can copy these Azure CLI commands from the **D:\LabFiles\High Availability\High Availability Bash scripts.sh** file.
@@ -46,7 +46,7 @@ occurred.
     az storage account create -n dp300storage -g DP-300-HADR --kind StorageV2 -l eastus2
     ```
 
-    Next you will get the account keys for your account, which you will use in subsequent steps. Execute the following code in cloud shell using the unique name of your storage account:
+    Next you will get the account keys for your account, which you will use in subsequent steps. Execute the following code in Cloud Shell using the unique name of your storage account:
 
     ```bash
     az storage account keys list -g DP-300-HADR -n dp300storage
