@@ -1,5 +1,7 @@
 In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
+## Step 1: Open the lab project
+
 1. Start Visual Studio Code.
 
 2. Click **Open folder**.
