@@ -18,6 +18,8 @@ In this module you will:
   - Beginner-level experience with: IoT Hub, Azure Functions, and Logic Apps
   - Azure Subcription
   - Admin Access to Azure AD Tenant & Azure Subscription
+  - Mac OS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6 )
+- Windows OS: PowerShell is built-in
   - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
   - [.NET Core 3.1](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)

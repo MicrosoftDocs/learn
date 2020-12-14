@@ -8,7 +8,7 @@ Use the Azure CLI to create a resource group and then add an IoT hub. For {resou
    az iot hub create --name $dtname --resource-group $rgname --sku S1
    ```
 
-1. In Azure Cloud Shell, create a device in IoT Hub with the following command:
+1. In the active PowerShell window, create a device in IoT Hub with the following command:
 
     ```azurecli
     az iot hub device-identity create --device-id GrindingStep --hub-name $dtname -g $rgname
