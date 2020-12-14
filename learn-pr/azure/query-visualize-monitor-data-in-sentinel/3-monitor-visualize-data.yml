@@ -2,7 +2,7 @@
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.3-monitor-visualize-data
 metadata:
   title: Monitor and visualize data
-  description: Monitor and visualize data by using Azure Sentinel workbooks.
+  description: Monitor and visualize data by using Azure Sentinel Workbooks.
   ms.date: 11/9/2020
   author: jboeshart
   ms.author: jaboes
