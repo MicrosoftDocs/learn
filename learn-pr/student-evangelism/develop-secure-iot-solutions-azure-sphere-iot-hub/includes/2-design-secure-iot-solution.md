@@ -1,5 +1,3 @@
-## Designing a secure IoT solution
-
 In the scenario, your goal is to maintain ambient room conditions accurately within a laboratory. Doing so will ensure that your test results will be accurate and stable. The system you'll build should automatically read the data and transmit it securely from the device to the cloud. To accomplish the requirement, you'll create a secure IoT solution to run on Azure Sphere.
 
 ## Components to use
