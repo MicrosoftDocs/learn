@@ -20,7 +20,7 @@ GitOps associates your Kubernetes cluster with one or more Git repositories, whe
 > [!NOTE] 
 > For examples of manifest files illustrating configuration of Azure Arc enabled Kubernetes clusters, refer to [the official, Microsoft-curated GitHub repository](https://github.com/Azure/arc-k8s-demo). 
 
-![A graphic depicts the process of applying GitOps-based configuration to multiple Azure Arc enabled clusters.](../media/6-arc_enabled_k8s_gitops.png)
+![A graphic depicts the process of applying GitOps-based configuration to multiple Azure Arc enabled clusters.](../media/6-arc-enabled-k8s-gitops.png)
 
 Each association between an Azure Arc enabled Kubernetes cluster configuration and the corresponding GitOps repository resides in Azure, as part of the Azure Resource Manager resource representing the Azure Arc enabled Kubernetes clusters. You can configure that association via traditional Azure management interfaces, such as the Azure portal or Azure CLI. Alternatively, you can use for this purpose Azure Policy, which automates this process, allowing you to apply it consistently to all resources in entire subscription or individual resource groups you designate.
 
@@ -29,11 +29,11 @@ To create an Azure Policy assignment in the Azure portal, you would use the foll
 1. In the Azure portal, displaying Azure policy definitions, search for the **Deploy GitOps to Kubernetes cluster** built-in policy. To speed up the search by filtering the list of policy definitions based on the **Kubernetes** category.
 1. Create a policy assignment by specifying the following settings:
 
-- Set the scope to the management group, subscription, or resource group where the policy assignment will apply.
-- Optionally, specify an exclusion to designate a subscope of resources where the policy should not apply.
-- Enable policy enforcement.
-- Set values of the **sourceControlConfiguration** parameter, representing the association between Git repositories and configuration of the corresponding components of the Azure Arc enabled Kubernetes cluster.
-- Create a remediation task and enable the **Create a managed identity** option. Verify that the identity will have Contributor permissions. 
+    - Set the scope to the management group, subscription, or resource group where the policy assignment will apply.
+    - Optionally, specify an exclusion to designate a subscope of resources where the policy should not apply.
+    - Enable policy enforcement.
+    - Set values of the **sourceControlConfiguration** parameter, representing the association between Git repositories and configuration of the corresponding components of the Azure Arc enabled Kubernetes cluster.
+    - Create a remediation task and enable the **Create a managed identity** option. Verify that the identity will have Contributor permissions. 
 
 The policy assignment will automatically enable GitOps on each Azure Arc enabled Kubernetes cluster that is within the scope of the assignment. For existing clusters, you need to manually run the remediation task. The policy assignment typically takes effect within 20 minutes from the time you create it. 
 
