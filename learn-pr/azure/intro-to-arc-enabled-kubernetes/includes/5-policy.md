@@ -1,4 +1,4 @@
-Azure Arc centralizes and streamlines management by leveraging a range of Azure services, such as Azure Policy. With Azure Policy, companies like Contoso can enforce uniform governance rules across all of their Azure Arc enabled Kubernetes estate and detect any instances of non-compliance with organizational standards. In this unit you'll learn about Azure Policy for Kubernetes and how to implement it.
+Azure Arc centralizes and streamlines management by leveraging a range of Azure services, such as Azure Policy. With Azure Policy, companies like Contoso can enforce uniform governance rules across all of their Azure Arc enabled Kubernetes estate and detect any instances of non-compliance with organizational standards. In this unit, you'll learn about Azure Policy for Kubernetes and how to implement it.
 
 ## What is Azure Policy?
 
@@ -8,7 +8,7 @@ Azure Policy is a service that helps manage and evaluate internal and regulatory
 
 Azure Policy for Kubernetes leverages the Open Policy Agent (OPA), which is an open source, general-purpose, platform-agnostic, policy engine that provides policy evaluation and enforcement functionality. OPA provides a declarative language that allows you to create policy definitions along with the corresponding Application Programming Interface (API). 
 
-Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open source admission controller Kubernetes-based implementation of OPA. The admission controller intercepts requests targeting the control plane of a Kubernetes cluster to create or update its resources, such as pods or deployments. The admission controller evaluates each request against the policies you define and, depending on the outcome of that evaluation, allows or blocks the corresponding action. In addition, each request that is subject to evaluation is logged. 
+Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open-source admission controller Kubernetes-based implementation of OPA. The admission controller intercepts requests targeting the control plane of a Kubernetes cluster to create or update its resources, such as pods or deployments. The admission controller evaluates each request against the policies you define and, depending on the outcome of that evaluation, allows, or blocks the corresponding action. In addition, each request that is subject to evaluation is logged. 
 
 Azure Policy for Kubernetes facilitates at-scale policy enforcements and safeguards Kubernetes clusters integrated with Azure in a centralized, uniform manner. It serves the following functions:
 
@@ -53,7 +53,7 @@ For Azure Arc enabled Kubernetes, the implementation consists of the following h
 1. Starting an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure. 
 1. Signing in to the Azure AD tenant associated with the subscription that hosts the Azure Arc enabled Kubernetes resource. 
 1. Registering the Azure Policy resource provider if you haven't used the Azure Policy functionality in the target subscription before.
-1. Granting the **Policy Insights Data Writer (Preview)** RBAC privileges to the Azure Arc enabled Kubernetes cluster.
+1. Granting the **Policy Insights Data Writer (Preview)** Azure role-based access control (Azure RBAC) privileges to the Azure Arc enabled Kubernetes cluster.
 1. Verify connectivity to the Kubernetes cluster. 
 1. Installing the Azure Policy Add-on using its Helm chart.
 1. Creating a policy assignment using one of the Kubernetes-specific policy definitions.

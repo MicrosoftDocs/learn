@@ -3,9 +3,9 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
   description: In this unit you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
-  ms.date: 11/13/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect Kubernetes clusters to Azure Arc

@@ -2,7 +2,7 @@ Before we focus on how Azure Arc optimizes management of Kubernetes clusters and
 
 ## What is Kubernetes?
 
-Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, each Kubernetes deployment consists of multiple, clustered servers. Some of them function as control plane nodes, responsible for management of the remaining, worker nodes, hosting containerized workloads. In case of Kubernetes, these workloads run as pods. 
+Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, each Kubernetes deployment consists of multiple, clustered servers. Some of them function as control plane nodes, responsible for management of the remaining, worker nodes, hosting containerized workloads. Using Kubernetes, these workloads run as pods. 
 
 > [!NOTE] 
 > A pod corresponds roughly to a container, although it can include multiple, tightly-coupled containers running on the same cluster node.
@@ -11,7 +11,7 @@ Besides container-based isolation, Kubernetes offers the ability to isolate pods
 
 ### What are the key benefits of Kubernetes?
 
-Kubernetes abstracts away the complexity of a multi-container environment that combines compute, networking, and storage components that hundreds or thousands of containers rely on. It offers a declarative management model, in which you simply describe the target desired configuration and leave its implementation details for the Kubernetes control plane. 
+Kubernetes abstracts away the complexity of a multi-container environment that combines compute, networking, and storage components that hundreds or thousands of containers rely on. It offers a declarative management model, in which you  describe the target desired configuration and leave its implementation details for the Kubernetes control plane. 
 
 > [!NOTE] 
 > With the declaritive management model, you can use YAML-formatted manifest files to control provision, modify, and delete Kubernetes resources, such as pods or deployments. Alternatively, you can use for this purpose packaged collections of YAML files, referred to as Helm charts. Helm, currently in version 3, is a package manager for Kubernetes, which also provides the ability to deploy packaged applications to Kubernetes clusters.
@@ -21,7 +21,7 @@ In addition, the control plane delivers such benefits as:
 - Self-healing of pods.
 - Autoscaling of pods and, in virtualized scenarios, cluster nodes. 
 - Automatic rolling updates and rollbacks of pod deployments. 
-- Auto-discovery of new pod deployments. 
+- Autodiscovery of new pod deployments. 
 - Load balancing across pods running the same workloads.
 
 Effectively, Kubernetes allows you to treat your datacenter as a unified compute resource. You don't have to worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
@@ -29,7 +29,7 @@ Effectively, Kubernetes allows you to treat your datacenter as a unified compute
 However, it's important to understand that Kubernetes is a highly customizable orchestration platform, which requires proper configuration, management, and maintenance:
 
 - Aspects such as deployment, scaling, load balancing, logging, and monitoring are all optional. It is up to you to identify and implement the optimal configuration addressing your specific needs.
-- Kubernetes doesn't natively provide middleware, data-processing frameworks, or databases. However, you have the option of implementing any of the corresponding functionality by using containers.
+- Kubernetes doesn't natively provide middleware, data-processing frameworks, or databases. However, you have the option of implementing any of the corresponding functionalities by using containers.
 - You're responsible for maintaining your Kubernetes environment. For example, you need to manage operating system upgrades and Kubernetes upgrades. You also manage the hardware resources available to cluster nodes, such as networking, memory, and storage.
 
 > [!NOTE] 
@@ -39,9 +39,9 @@ However, it's important to understand that Kubernetes is a highly customizable o
 
 Business technology landscape continuously evolves and becomes increasingly complex with multiple applications running on different hardware across on-premises datacenters, multiple public and private clouds, and the edge. Managing these disparate environments at scale, enhancing security across an entire organization so that it cannot be compromised, and enabling developer agility and innovation are critical for businesses to succeed and thrive. Microsoft provides tools and solutions that help customers like Contoso to innovate their hybrid environments in a secure manner and with a minimized management overhead. 
 
-Azure Arc is an example of such solution. It consists of a set of technologies that you can use to simplify administration of complex, distributed, hybrid environments. It provides a centralized, scalable, and consistent multi-cloud and on-premises governance and management platform. It facilitates adoption of automation, single-pane-of-glass monitoring and comprehensive security, and promotes the cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices, as you transition to the the DevOps model to fully benefit from cloud native architectural and operational patterns.
+Azure Arc is an example of such solution. It consists of a set of technologies that you can use to simplify administration of complex, distributed, hybrid environments. It provides a centralized, scalable, and consistent multi-cloud and on-premises governance and management platform. It facilitates adoption of automation, single-pane-of-glass monitoring and comprehensive security, and promotes the cloud-first strategy, regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices, as you transition to the DevOps model to fully benefit from cloud native architectural and operational patterns.
 
-:::image type="content" source="../media/2-azure_arc.png" alt-text="Diagram illustrating different scenarios that leverage Azure Arc to optimize administration of SQL Server instances residing on-premises or hosted by third-party cloud providers. The first group of scenarios consists of SQL Server instances running on physical servers or virtual machines. The second group of scenarios comprises on-premises, third-party cloud hosted Kubernetes clusters, or Azure Kubernetes Service clusters running on Azure Stack HCI, with Azure Arc data controller serving as an intermediary management layer. All of these scenarios offer integration with a range of Azure services, such as Azure Monitor and Log Analytics, Azure Policy, Azure Security Center, and Azure Sentinel." border="false":::
+![Diagram illustrating different scenarios that leverage Azure Arc to optimize administration of SQL Server instances residing on-premises or hosted by third-party cloud providers. The first group of scenarios consists of SQL Server instances running on physical servers or virtual machines. The second group of scenarios comprises on-premises, third-party cloud hosted Kubernetes clusters, or Azure Kubernetes Service clusters running on Azure Stack HCI, with Azure Arc data controller serving as an intermediary management layer. All of these scenarios offer integration with a range of Azure services, such as Azure Monitor and Log Analytics, Azure Policy, Azure Security Center, and Azure Sentinel.](../media/2-azure_arc.png)
 
 ### What types of resources support Azure Arc?
 

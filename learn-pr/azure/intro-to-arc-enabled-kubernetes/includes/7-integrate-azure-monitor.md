@@ -1,4 +1,4 @@
-Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implementation details and hundreds or thousands of containers hosting workloads, being able to gain a comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. In this unit you'll learn what Azure Monitor for containers is and how to implement it.
+Monitoring is an important aspect of operationalizing any technology. Considering the complexity of Kubernetes deployments, with multiple layers of abstraction hiding its implementation details and hundreds or thousands of containers hosting workloads, being able to gain a comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. To accomplish this goal, companies like Contoso can use Azure Monitor. In this unit, you'll learn what Azure Monitor for containers is and how to implement it.
 
 ## What is Azure Monitor?
 
@@ -39,7 +39,7 @@ With Azure Monitor for containers you can:
 
 ## How to implement monitoring of Azure Arc enabled Kubernetes clusters?
 
-Azure Monitor for containers relies on a containerized version of the Log Analytics agent for Linux named omsagent, that runs in the monitored cluster to collect performance metrics and logs from its nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected telemetry to Azure. Metrics reside in the metrics store, while log data persists in the logs store in the Log Analytics workspace you designate.
+Azure Monitor for containers relies on a containerized version of the Log Analytics agent for Linux named omsagent, that runs in the monitored cluster to collect performance metrics and logs from its nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected  data to Azure. Metrics reside in the metrics store, while log data persists in the logs store in the Log Analytics workspace you designate.
 
 You can set up of Azure Monitor for containers for Azure Arc enabled Kubernetes deployments by using either a PowerShell or Bash script. The implementation consists of the following high-level steps:
 
