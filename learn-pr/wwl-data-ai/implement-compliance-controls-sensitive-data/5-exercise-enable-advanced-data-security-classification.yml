@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-compliance-controls-for-sensitive-data.5-exercise-enable-advanced-data-security-classification
+uid: learn.wwl.implement-compliance-controls-for-sensitive-data.exercise-enable-advanced-data-security-classification
 title: 'Exercise: Enable Advanced Data Security and Data Classification'
 metadata:
   title: 'Exercise: Enable Advanced Data Security and Data Classification'
   description: "Exercise: Enable Advanced Data Security and Data Classification"
-  ms.date: 12/10/2020
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

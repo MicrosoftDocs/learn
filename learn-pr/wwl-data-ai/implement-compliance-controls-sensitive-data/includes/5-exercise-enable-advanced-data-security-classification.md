@@ -6,7 +6,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure Portal are in the  **Resources** tab above these instructions. If you select the **Username**, it will be filled in for you.
+1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username**, it will be filled in for you.
 
 1. Select **Next**.
 
@@ -40,7 +40,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
 1. Select **OK** and wait for the storage account to be created.
 
-1. Toggle the switch for **Periodic recurring scans** to **ON**. Enter the azure account email in the **Send scan reports to** and **Send alerts to** dialog boxes. Deselect **Also send email notification to admins and subscription owners**.
+1. Toggle the switch for **Periodic recurring scans** to **ON**. Enter the Azure account email in the **Send scan reports to** and **Send alerts to** dialog boxes. Deselect **Also send email notification to admins and subscription owners**.
 
     Select **Advanced Threat Detection types** and review the selections. Leave all of the boxes checked and select **OK**.
 

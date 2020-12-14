@@ -3,7 +3,7 @@ uid: learn.wwl.implement-compliance-controls-for-sensitive-data
 metadata:
   title: Implement compliance controls for sensitive data
   description: "Implement compliance controls for sensitive data"
-  ms.date: 12/10/2020
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ units:
 - learn.wwl.implement-compliance-controls-for-sensitive-data.describe-data-classification
 - learn.wwl.implement-compliance-controls-for-sensitive-data.describe-advanced-threat-protection
 - learn.wwl.implement-compliance-controls-for-sensitive-data.describe-sql-injection
-- learn.wwl.implement-compliance-controls-for-sensitive-data.5-exercise-enable-advanced-data-security-classification
+- learn.wwl.implement-compliance-controls-for-sensitive-data.exercise-enable-advanced-data-security-classification
 - learn.wwl.implement-compliance-controls-for-sensitive-data.knowledge-check
 - learn.wwl.implement-compliance-controls-for-sensitive-data.summary
 badge:
