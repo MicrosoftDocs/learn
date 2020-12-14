@@ -1,8 +1,16 @@
 In this exercise, we'll build a high-level Azure Sphere application that connects and sends environment telemetry to Azure IoT Hub.
 
-## Step 1: Prepare Azure resources
+## Step 1: Sign into the Azure web portal
+
+You need an Azure account for this learn module. If you do not have an Azure account then create a free account. If you are a student then sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true)  (no credit card required), otherwise sign up for a [free Azure account](https://azure.microsoft.com/free?azure-portal=true).
+
+From you web browser navigate to [https://portal.azure.com](https://portal.azure.com?azure-portal=true) and sign in.
+
+## Step 2: Prepare Azure resources
 
 You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a Device Provisioning Service (**DPS**) and a linked Azure IoT hub.
+
+
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2FAzure-Sphere-Developer-Learning-Path%2Fmaster%2Fdocs%2Fdocs_vs_code_iot_hub%2FLab_2_Send_Telemetry_to_Azure_IoT_Hub%2Fsetup%2Fazuredeploy.json?azure-portal=true)
 
@@ -23,7 +31,7 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
 
 Don't close the Azure Web portal. You will need to access it again.
 
-## Step 2: Establish trust between your Azure Sphere Tenant and DPS
+## Step 3: Establish trust between your Azure Sphere Tenant and DPS
 
 You need to set up a trust relationship between your Azure Sphere device tenant and your Device Provisioning Service.
 
@@ -95,7 +103,7 @@ Devices claimed by your Azure Sphere device tenant are automatically enrolled wi
 
    :::image type="content" source="../media/dps-certificate-verify-upload.png" alt-text="The illustration shows upload the verification certificate.":::
 
-## Step 3: Create a DPS enrollment group
+## Step 4: Create a DPS enrollment group
 
 From the Azure portal:
 
@@ -107,7 +115,7 @@ From the Azure portal:
 
    :::image type="content" source="../media/dps-enrollment-group-add.png" alt-text="The illustration shows how to save the certificate.":::
 
-## Step 4: Configure Azure IoT Explorer
+## Step 5: Configure Azure IoT Explorer
 
 This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices. You should have already installed Azure IoT Explorer in the previous exercise.
 
