@@ -15,15 +15,15 @@ durationInMinutes: 6
 
 In a solution context, Azure Digital Twins is the platform that allows you to model any environment and connect sensors and business systems to the model to control the present, track the past and predict the future.
 
-To enable this promise, a typical customer would need to model their environment using the Digital Twin Definition Language (DTDL) and keep this model of their environment live with the data coming from their operational systems (i.e. IoT data) as well as the data coming from their business systems such as CRM, ERP, HR, Finance, etc. The insights that are generated in the digital twin would then need to be plugged into business systems to drive action and close the digital feedback loop.
+To enable this promise, a typical customer would need to model their environment using the Digital Twin Definition Language (DTDL) and keep this model of their environment live with the data coming from their operational systems (that is, IoT data) as well as the data coming from their business systems such as CRM, ERP, HR, Finance, etc. The insights that are generated in the digital twin would then need to be plugged into business systems to drive action and close the digital feedback loop.
 
 :::image type="content" source="../media/adt-overview.png" alt-text="Diagram of the sources and uses of Azure Digital Twins" lightbox="../media/adt-overview.png":::
 
 :::image type="content" source="../media/adt-dataflow.png" alt-text="Diagram of the data flow in digital twins solutions" lightbox="../media/adt-dataflow.png":::
 
-## Open modelling language (DTDL)
+## Open modeling language (DTDL)
 
-Real world environments in Azure Digital Twins are modeled as a topology graph. The entities that make up the graph are called twins, and each type of twin is described as a collection of Properties, Telemetry, Commands, Relationships and Components. Twin definitions are expressed in Digital Twins Definition Language (DTDL), a language based on JSON-LD.
+Real world environments in Azure Digital Twins are modeled as a topology graph. The entities that make up the graph are called twins, and each type of twin is described as a collection of Properties, Telemetry, Commands, Relationships, and Components. Twin definitions are expressed in Digital Twins Definition Language (DTDL), a language based on JSON-LD.
 
 ## Live execution environment
 
@@ -47,7 +47,7 @@ IoT data is not a mandatory component for your digital twin solutions. You can a
 
 Azure Digital Twins provides means to output insights to external services such as Azure Time Series Insights, storage, and analytics using event routes to downstream services including Azure Synapse Analytics.
 
-Developers can define event routes that send selected data out to downstream services. Supported endpoints include EventHub, Event Grid or Service Bus.
+Developers can define event routes that send selected data out to downstream services. Supported endpoints include EventHub, Event Grid, or Service Bus.
 
 Examples include cold storage, for example Azure Data Lake, machine learning or other analytics with Azure Synapse or workflow integration with Logic Apps.
 
