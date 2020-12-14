@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.5-workbooks
 metadata:
-  title: Use default Azure Sentinel workbooks
-  description: Use default Azure Sentinel workbooks.
+  title: Use default Azure Sentinel Workbooks
+  description: Use default Azure Sentinel Workbooks.
   ms.date: 11/10/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use default Azure Sentinel workbooks
+title: Use default Azure Sentinel Workbooks
 durationInMinutes: 5
 content: |
   [!include[](includes/5-workbooks.md)]
