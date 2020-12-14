@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 12/12/2018
+  ms.date: 12/1/2020
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

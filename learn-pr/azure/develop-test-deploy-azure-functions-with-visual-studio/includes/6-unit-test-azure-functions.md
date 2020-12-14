@@ -1,4 +1,4 @@
-Unit testing is a fundamental part of an Agile methodology. Visual Studio provides the Test project template. You use this template to create the unit tests for your applications, and you can apply the same technique to testing for Azure Functions.
+Unit testing is a fundamental part of an Agile methodology. Visual Studio provides the Test project template. Use this template to create the unit tests for your applications, and you can apply the same technique to testing for Azure Functions.
 
 In the luxury watch online website scenario, your development team has a policy to achieve at least 80% coverage of code in unit testing. You would like to implement the same policy for Azure Functions.
 
@@ -8,40 +8,42 @@ In this unit, you'll see how to use the `xUnit` test framework with Visual Studi
 
 The first step is to create a project that contains your unit tests, and add it to the solution holding your Azure functions app. Use the following steps to create a unit test project for testing the *WatchInfo* function.
 
-1. In Visual Studio, in the **Solution Explorer** window, right-click the **WatchPortalFunction** solution, click **Add**, and then click **New Project**.
+1. In Visual Studio, in the **Solution Explorer** window, right-click the **WatchPortalFunction** solution, select **Add**, and then select **New Project**.
 
     :::image type="content" source="../media/6-add-new-project-to-solution.png" alt-text="Screenshot of Solution Explorer, showing the Add new project to solution command." loc-scope="vs":::
 
-1. In the **Add New Project** dialog box, under **Visual C#**, click **Test**. Select the **xUnit Test Project (.NET Core)** template. Specify the name **WatchFunctionsTests**, and then click **OK**.
+1. In the **Add a new project** window, scroll down, select the **xUnit Test Project (.NET Core)** template, and then select **Next**.
 
-    :::image type="content" source="../media/6-create-xunit-project.png" alt-text="Screenshot of Add New Project dialog box. The user has selected the xUnit Test Project template." loc-scope="vs":::
+    :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of Add New Project window. The user has selected the xUnit Test Project template." loc-scope="vs":::
 
-1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then click **Manage NuGet Packages**.
+1. The **Configure your new project** window appears. In the **Project name** field, enter **WatchFunctionsTests**. Aside the **Location** field, select the browse icon, and then select **WatchPortalFunction**. Select **Create.**
 
-1. In the **NuGet: WatchFunctionTests** window, click the **Browse** tab. In the **Search** box, type **Microsoft.AspNetCore.Mvc**. Click the **Microsoft.AspNetCore.Mvc** package, and then click **Install**.
+1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then select **Manage NuGet Packages**.
+
+1. In the **NuGet: WatchFunctionTests** window, select the **Browse** tab. In the **Search** box, enter **Microsoft.AspNetCore.Mvc**. Select the **Microsoft.AspNetCore.Mvc** package, and then select **Install**.
 
     :::image type="content" source="../media/6-nuget-install-aspnet-mvc.png" alt-text="Screenshot of the NuGet Package Manager window. The user is installing the Microsoft.AspNetCore.Mvc package." loc-scope="vs":::
 
     > [!NOTE]
     > The test project will create a mock HTTP environment. The classes required for doing this are in the **Microsoft.AspNetCore.Mvc** package.
 
-1. Wait while the package in installed. If the **Preview Changes** message box appears, click **OK**. In the **License Acceptance** message box, click **I Accept**.
+1. Wait while the package in installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
 
-1. Once the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click the **UnitTest1.cs** file and then click **Rename**. Change the name of the file to **WatchFunctionUnitTests.cs**. In the message box that appears, click **Yes** to rename all references of **UnitTest1** to **WatchFunctionUnitTests**.
+1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to **WatchFunctionUnitTests.cs**. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
 
-1. In the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click **Dependencies**, and then click **Add Reference**.
+1. In the **Solution Explorer** window, under the **WatchFunctionsTest** project, right-click **Dependencies**, and then select **Add Reference**.
 
-1. In the **Reference Manager** window, select the **WatchPortalFunction** project, and then click **OK**.
+1. In the **Reference Manager** window, select the **WatchPortalFunction** project, and then select **OK**.
 
 ## Add unit tests for the WatchInfo function
 
 You can now add unit tests to the test project. In the luxury watch scenario, you want to ensure the **WatchInfo** function always returns an *OK* response when a model is provided in the query string of a request, and a *Bad* response if the query string is empty or doesn't contain the `model` parameter.
 
-You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this behavior.
+To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctionsTests**.
 
-1. In the **Solution Explorer** window, double-click the **WatchFunctionUnitTests.cs** file to display it in the code window.
+1. In the **Solution Explorer** window, to display it in the code window, double-click the **WatchFunctionUnitTests.cs** file.
 
-1. Add the following `using` directives to the list at the top of the file.
+1. At the top of the file, add the following `using` directives to the list.
 
     ```csharp
     using Microsoft.AspNetCore.Http;
@@ -56,7 +58,6 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
 1. In the body of the **TestWatchFunctionSuccess** method, add the following code. This statement creates a mock HTTP context and an HTTP request. The request includes a query string that includes the `model` parameter, which is set to `abc`.
 
     ```csharp
-    var httpContext = new DefaultHttpContext();
     var queryStringValue = "abc";
     var request = new DefaultHttpRequest(new DefaultHttpContext())
     {
@@ -70,7 +71,7 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
     };
     ```
 
-1. Add the statement shown below to the method. This statement creates a dummy logger.
+1. Add the following statement to the method. This statement creates a dummy logger.
 
     ```csharp
     var logger = NullLoggerFactory.Instance.CreateLogger("Null Logger");
@@ -83,7 +84,7 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
     response.Wait();
     ```
 
-1. Add the code shown below to the method. This code checks that the response from the Azure function is correct. In this case, the function should return an *OK* response, containing the expected body data.
+1. Add the following code to the method. This code checks that the response from the Azure function is correct. In this case, the function should return an *OK* response, containing the expected body data.
 
     ```csharp
     // Check that the response is an "OK" response
@@ -91,7 +92,7 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
 
     // Check that the contents of the response are the expected contents
     var result = (OkObjectResult)response.Result;
-    dynamic watchinfo = new { Manufacturer = "Abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
+    dynamic watchinfo = new { Manufacturer = "abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
     string watchInfo = $"Watch Details: {watchinfo.Manufacturer}, {watchinfo.CaseType}, {watchinfo.Bezel}, {watchinfo.Dial}, {watchinfo.CaseFinish}, {watchinfo.Jewels}";
     Assert.Equal(watchInfo, result.Value);
     ```
@@ -102,7 +103,6 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
     [Fact]
     public void TestWatchFunctionSuccess()
     {
-        var httpContext = new DefaultHttpContext();
         var queryStringValue = "abc";
         var request = new DefaultHttpRequest(new DefaultHttpContext())
         {
@@ -125,7 +125,7 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
 
         // Check that the contents of the response are the expected contents
         var result = (OkObjectResult)response.Result;
-        dynamic watchinfo = new { Manufacturer = "Abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
+        dynamic watchinfo = new { Manufacturer = "abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
         string watchInfo = $"Watch Details: {watchinfo.Manufacturer}, {watchinfo.CaseType}, {watchinfo.Bezel}, {watchinfo.Dial}, {watchinfo.CaseFinish}, {watchinfo.Jewels}";
         Assert.Equal(watchInfo, result.Value);
     }
@@ -137,7 +137,6 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
     [Fact]
     public void TestWatchFunctionFailureNoQueryString()
     {
-        var httpContext = new DefaultHttpContext();
         var request = new DefaultHttpRequest(new DefaultHttpContext());
         var logger = NullLoggerFactory.Instance.CreateLogger("Null Logger");
 
@@ -155,7 +154,6 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
     [Fact]
     public void TestWatchFunctionFailureNoModel()
     {
-        var httpContext = new DefaultHttpContext();
         var queryStringValue = "abc";
         var request = new DefaultHttpRequest(new DefaultHttpContext())
         {
@@ -184,7 +182,7 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
 
 ## Run the tests
 
-1. On the **Test** menu, click **Run**, and then click **All Tests**.
+1. On the **Test** menu, select **Run All Tests**.
 
     :::image type="content" source="../media/6-start-tests.png" alt-text="Screenshot of the Test menu in Visual Studio. The user has selected Run -> All Tests." loc-scope="vs":::
 
@@ -192,9 +190,9 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
 
     :::image type="content" source="../media/6-test-success.png" alt-text="Screenshot of the Team Explorer window. All three tests ran successfully." loc-scope="vs":::
 
-1. In the **Solution Explorer** window, under the **WatchPortalFunction** project, double-click **WatchInfo.cs** to display the file in the code editor.
+1. In the **Solution Explorer** window, under the **WatchPortalFunction** project, to display the file in the code editor, double-click **WatchInfo.cs**.
 
-1. Find the following code:
+1. Find the following code.
 
     ```csharp
     // Retrieve the model id from the query string
@@ -207,7 +205,7 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
     string model = req.Query["modelll"];
     ```
 
-1. On the **Test** menu, click **Run**, and then click **All Tests** to repeat the tests. This time, the **TestWatchFunctionSuccess** test should fail. This failure occurs because the **WatchInfo** function hasn't found the parameter named `modelll` in the query string, and so the function has returned a *Bad* response.
+1. On the **Test** menu, select **Run**, and to repeat the tests, select **All Tests**. This time, the **TestWatchFunctionSuccess** test should fail. This failure occurs because the **WatchInfo** function hasn't found the parameter named `modelll` in the query string, and so the function has returned a *Bad* response.
 
     :::image type="content" source="../media/6-test-failure.png" alt-text="Screenshot of the Team Explorer window. The TestWatchFunctionSuccess test failed." loc-scope="vs":::
 

@@ -6,7 +6,7 @@ As an aspiring Python developer, you'll probably prefer to write a Python *scrip
 
 You typically write Python syntax in a text file and save it to your local hard drive. You can write code by using a simple text file editor, like Notepad in Windows. Notepad edits ASCII text, a simple standard text file format.  
 
-You always want to avoid any text editor that includes formatting options, like bold, underline, or italics, or any other program that has word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs will include additional formatting instructions that the Python compiler will understand.
+You always want to avoid any text editor that includes formatting options, like bold, underline, or italics, or any other program that has word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs will include additional formatting instructions that the Python compiler won't understand.
 
 Although you can use a text editor, you'll probably want to use a tool that's better suited for the unique challenges of writing code. There are many options, but many developers rely on Visual Studio Code for this purpose. It's free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate code, no matter which programming language you want to work with.
 

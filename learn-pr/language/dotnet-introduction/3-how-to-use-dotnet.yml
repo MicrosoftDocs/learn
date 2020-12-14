@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-introduction.how-to-use-dotnet
+title: How to use .NET
+metadata:
+  title: How to use .NET
+  description: An overview of the workflow that developers use to build .NET applications.
+  ms.date: 10/12/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+azureSandbox: false
+content: |
+  [!include[](includes/3-how-to-use-dotnet.md)]

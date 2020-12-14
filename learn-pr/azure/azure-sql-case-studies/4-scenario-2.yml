@@ -56,12 +56,12 @@ quiz:
       - content: "Data Classification"
         isCorrect: false
         explanation: "Now you have labeled sensitive data, but you can't track or prevent DBAs from seeing it with this option."
-      - content: "Always Encrypted"
-        isCorrect: false
-        explanation: "Although this answer is technically correct, there's a better system you can put into place."
-      - content: "All of the above" 
+      - content: "Always Encrypted with role separation"
         isCorrect: true
         explanation: "It's not possible to keep a db_owner from viewing user data with permission only. If highly sensitive data is in a database, you can use Always Encrypted to safely prevent even db_owners from seeing it. You can manage the Always Encrypted keys with role separation. The security admin doesn't access the database, and the DBA doesn't access the physical keys in plaintext. You can also use SQL Audit, Data Classification, and Dynamic Data Masking in combination to monitor."
+      - content: "Dynamic Data Masking" 
+        isCorrect: false
+        explanation: "It's not possible to keep a db_owner from viewing user data with Dynamic Data Masking."
     - content: "How can you track access to tables that contain sensitive data?"
       choices:
         - content: "SQL Audit and Data Classification"

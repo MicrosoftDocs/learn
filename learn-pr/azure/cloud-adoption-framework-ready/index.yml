@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.azure.cloud-adoption-framework-ready
+metadata:
+  title: Choose the best Azure landing zone to support your cloud operations requirements
+  description: Azure landing zones help accelerate how you configure your environment to meet your operational requirements.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose the best Azure landing zone to support your cloud operations requirements
+summary: Azure landing zones can accelerate configuration of your cloud environment. This module will help you choose and get started with the best landing zone option for your needs.
+abstract: |
+  In this module, you will:
+  - Compare your operations management, governance, and security requirements to common operating models. 
+  - Evaluate Azure landing zone implementation options against your short-term and long-term requirements.
+  - Choose the best Azure landing zones and support Learn modules to support your cloud adoption needs. 
+prerequisites: |
+  - An understanding of your organization’s cloud adoption strategy. 
+  - Familiarity with Azure cloud environment including network configuration, network connectivity, and Azure Active Directory. 
+  - Familiarity with Azure governance tools including Azure Policy, Azure Blueprints, and Azure Resource Manager templates. 
+  - A general understanding of the environmental requirements needed to proceed with your cloud adoption plan.  
+iconUrl: /learn/achievements/cloud-adoption-framework-ready.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- auditor
+- business-analyst
+- business-owner
+- data-engineer
+- database-administrator
+- developer
+- devops-engineer
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
+products:
+- azure
+units:
+- learn.azure.cloud-adoption-framework-ready.1-introduction
+- learn.azure.cloud-adoption-framework-ready.2-customer-narrative
+- learn.azure.cloud-adoption-framework-ready.3-common-operating-models
+- learn.azure.cloud-adoption-framework-ready.4-design-areas
+- learn.azure.cloud-adoption-framework-ready.5-azure-landing-zone-options
+- learn.azure.cloud-adoption-framework-ready.6-deploy-blueprint
+- learn.azure.cloud-adoption-framework-ready.7-expand-landing-zone
+- learn.azure.cloud-adoption-framework-ready.8-summary
+badge:
+  uid: learn.azure.cloud-adoption-framework-ready.badge 

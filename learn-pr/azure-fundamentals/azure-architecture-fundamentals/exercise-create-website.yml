@@ -1,0 +1,22 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-architecture-fundamentals.exercise-create-website
+title: Exercise - Create a website hosted in Azure
+metadata:
+  title: Exercise - Create a website hosted in Azure
+  description: No matter your area of interest, get started with the cloud by creating your first Azure-hosted website.
+  ms.date: 09/14/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/exercise-create-website.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Web/sites"
+  hint: "Make sure you have followed all the steps to create your Wordpress website."

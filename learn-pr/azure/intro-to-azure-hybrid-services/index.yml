@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-hybrid-services
+metadata:
+  title: Introduction to Azure hybrid cloud services
+  description: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
+  ms.date: 09/21/2020
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure hybrid cloud services
+summary: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
+abstract: | 
+  In this module, you will:
+  - Describe the elements of an Azure hybrid cloud deployment.
+  - Explain methods of connecting on-premises networks to workloads in Azure.
+  - Understand how to use the same set of identities in hybrid environments.
+  - List the types of compute workloads for hybrid clouds.
+  - Explain the application infrastructure of hybrid clouds.
+  - Describe the services that support files and data in hybrid clouds.
+  - Explain technologies that support the security of hybrid clouds.
+prerequisites: | 
+  - Basic understanding of Azure networking fundamentals
+  - Basic understanding of Azure compute fundamentals
+  - Basic understanding of Azure security fundamentals
+  - Basic understanding of on-premises workload fundamentals
+iconUrl: /learn/achievements/intro-to-azure-hybrid-services.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.intro-to-azure-hybrid-services.1-introduction
+- learn.azure.intro-to-azure-hybrid-services.2-hybrid-cloud-overview
+- learn.azure.intro-to-azure-hybrid-services.3-hybrid-cloud-networking
+- learn.azure.intro-to-azure-hybrid-services.4-hybrid-identity
+- learn.azure.intro-to-azure-hybrid-services.5-hybrid-cloud-compute
+- learn.azure.intro-to-azure-hybrid-services.6-hybrid-cloud-apps
+- learn.azure.intro-to-azure-hybrid-services.7-hybrid-cloud-files-data
+- learn.azure.intro-to-azure-hybrid-services.8-hybrid-cloud-security
+- learn.azure.intro-to-azure-hybrid-services.9-summary
+badge:
+  uid: learn.azure.intro-to-azure-hybrid-services.badge

@@ -3,8 +3,8 @@ uid: learn.wwl.work-with-data-in-aml.working-with-data
 title: Exercise - Work with data
 metadata:
   title: Exercise - Work with data
-  description: "Use this hands-on exercise to learn how to use datastores and datasets in Azure Machine Learning."
-  ms.date: 07/16/2020
+  description: "Exercise - Work with data"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

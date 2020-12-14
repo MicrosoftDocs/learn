@@ -3,12 +3,12 @@ uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-setu
 title: How to set up Azure Sphere
 metadata:
   title: How to set up Azure Sphere
-  description: In this section, we set up Azure Sphere for development
+  description: In this section, we set up Azure Sphere for development.
   ms.date: 6/29/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-hub
+  ms.prod: learning-azure-iot-hub
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/5-how-setup-azure-sphere.md)]

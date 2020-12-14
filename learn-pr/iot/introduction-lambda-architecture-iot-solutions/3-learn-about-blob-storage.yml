@@ -5,7 +5,7 @@ metadata:
   description: Provides a brief overview of Blob storage, and when to use it.
   ms.date: 12/20/2019
   author: olivierbloch
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about unstructured data storage

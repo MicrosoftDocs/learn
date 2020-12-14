@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.determine-cluster-performance
+title: Determine HDInsight HBase cluster performance
+metadata:
+  title: Determine HDInsight HBase cluster performance
+  description: "Determine HDInsight HBase cluster performance"
+  ms.date: 09/12/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-determine-cluster-performance.md)]

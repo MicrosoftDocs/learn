@@ -1,16 +1,16 @@
-The first step in writing object-oriented code is writing the classes from which objects will be created. In this unit, you create a class in Python, and then use the class to instantiate an object.
+The first step in writing object-oriented code is to define the classes from which objects are created. In this unit, you create a class in Python, and then use the class to instantiate an object.
 
-The term "instantiate" is a fancy way of saying that Python uses the class to create an object by allocating memory for the object and copying the object's code and data into memory. Just as you use a blueprint to create a house or a recipe to create a cookie, Python uses classes to create objects.
+The term *instantiate* is a fancy way of saying that Python uses the class to create an object. Python allocates memory for the object and then copies the object's code and data into memory. Just as you use a blueprint to create a house, or a recipe to create a cookie, Python uses classes to create objects.
 
-To run your Python code, you will use Azure Cloud Shell to your right. Python comes preinstalled on Azure Cloud Shell so there's nothing we need to configure.
+To run your Python code, you use Azure Cloud Shell to your right. Python comes preinstalled on Azure Cloud Shell so there's nothing we need to configure.
 
 ## Objects in Python
 
-Everything is an object in Python. When you create a variable and assign it a number, Python creates an instance of a built-in class. When you create a variable and assign it a string, Python again creates an instance of a built-in class, although a different one.
+Everything is an object in Python. When you create a variable and assign it a number value, Python creates an instance of a built-in class. If you create a variable and assign it a string value, Python again creates an instance of a built-in class, although a different one. 
 
-Before you begin writing classes of your own, it's helpful to peek under the hood and understand how Python itself uses objects.
+Before you start to write classes of your own, it's helpful to peek under the hood and understand how Python itself uses objects.
 
-First, we will start the Python interpreter in Cloud Shell to look at some objects.
+First, we'll start the Python interpreter in Cloud Shell to look at some objects.
 
 1. In Cloud Shell to the right, enter the following command to start the Python interpreter:
 
@@ -21,7 +21,7 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
 1. You should see the following output, which lets you know that the Python interpreter is running:
 
     ```output
-    Python 3.5.2 (default, Oct  8 2019, 13:06:37)
+    Python 3.5.2 (default, Jul 17 2020, 14:04:10)
     [GCC 5.4.0 20160609] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
@@ -36,7 +36,7 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     print(type(True))
     ```
 
-    The `print()` function writes output to the screen. The `type()` function shows an object's underlying class.
+    The `print()` method writes output to the screen. The `type()` method shows the class type for an object.
 
 1. You should see output that looks like this:
 
@@ -51,13 +51,13 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     <class 'bool'>
     ```
 
-    The output shows that 1 is an instance of Python's built-in `int` (integer) class. "Hello There!" is a `str` (string).
+    The output shows that "1" is an instance of Python's built-in `int` (integer) class. "Hello There!" is an instance of the `str` (string) class.
 
-    Notice that Python uses different classes for 1 and 1.1. 1.1 is a `float`, not an `int`. If something has a truth value, True or False, it relies on the `bool` class.
+    Notice that Python uses different classes for the numbers 1 and 1.1. A number with a decimal value like 1.1 is an instance of the `float` class, not an `int`. If something has a truth value: True or False, then it relies on the `bool` class.
 
-    You could easily test other kinds of data (feel free to experiment!) but be assured that any sort of data you try has an associated class, whether it's one that is built into Python or one that you have written yourself.
+    You can easily test other kinds of data--feel free to experiment! Whether the class is built into Python or you create your own class definition, all data has an associated class.
 
-1. All classes have methods associated with them. Enter the following code, and then press Enter:
+1. All classes have methods associated with them. Run the following code:
 
     ```python
     print(dir(1))
@@ -86,13 +86,15 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     'real', 'to_bytes']
     ```
 
-    This confusing list is all the `int` object's methods. The `dir()` function provides a list of attributes and methods for whatever you put in the parentheses.
+    This seemingly confusing list is actually the methods for the `int` class.
+    
+    The `dir()` method shows the list of attributes and methods for the object that you provided in the parentheses. In this example, we entered "1" as the object. The number 1 is an instance of the `int` class, so the code `dir(1)` is the list of attributes and methods for the `int` class.
 
-    When you work with Python, you might hear methods referred to as *functions*. In Python, the two terms, *methods* and *functions*, are synonymous. But you can avoid confusion when talking with other people about Python by calling them *methods*.
+    When you work with Python, you might hear methods referred to as *functions*. In Python, the two terms, *methods* and *functions*, are synonymous. You can avoid confusion when talking with other people about Python by calling them *methods*.
 
-    All the entries you see in the output list are methods. A method represents an action that you can perform on an object. For example, `to_bytes()` outputs the object value in byte format, which is just a specific way of looking at the data.
+    A method represents an action that you can perform on an object. For example, the `to_bytes()` method displays the object value in byte format, which is just a specific way of looking at the data.
 
-    Notice the `__str__` method in the list. This method turns a value into a `str` type. An object's type is simply the class it was created from. So the type of 1 is `int`.
+    Notice the `__str__` method in the list. This method converts a value into a `str` (string) type. 
 
 1. Run the following code:
 
@@ -101,56 +103,64 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     print(type(myVar.__str__()))
     ```
 
-    The first line of code is an assignment. You're assigning the value `1` to an object named `myVar`. The `myVar` object now has an attribute: the value 1.
+    The first line of code is an assignment. The value 1 is assigned to a variable named `myVar`. This assignment creates an object named `myVar` with one attribute, the value 1.
 
-    The second line of code calls the `__str__()` method that is part of the `int` class, and therefore present in the `myVar` object.
+    The class type for the `myVar` object is determined by the class type of the value. The value 1 is an integer, so the `myVar` object is of type `int`.
+    
+    You can use any method for the `int` class with your `myVar` object. The second line of code calls the `__str__()` method.
 
     What does the output from the code tell you?
 
-The `__str__()` method created a new object from `myVar` of type `str`. The `myVar` object is still the same, untouched; it's still of type `int`. The new object, which doesn't have a name because you haven't assigned it one, is of type `str`.
+The `__str__()` method creates a new object from the `myVar` object. The new object is of type `str`. The `myVar` object is untouched--it continues to be of type `int`.
 
 ## Define a class
 
-Python has several built-in classes, including `int`, `float`, `bool`, and `str`, but you can also define classes of your own. Defining your own classes is the main objective in OOP.
+Python has several built-in classes, including `int`, `float`, `bool`, and `str`, but you can also define classes of your own. Defining your own classes is the main objective in object-oriented programming.
 
-Every Python class you create begins with the word `class`. A class needs a name, and it also needs to do something.
+Every Python class needs a name, and it also needs to do something.
 
 Let's begin with something simple: Tell the user that the class has been created. In the real world, you wouldn't actually create a class like this, but it's helpful for learning incrementally.
 
-Let's open Cloud Shell's built-in code editor to make our first class.
+Let's open the Cloud Shell code editor to make our first class.
 
-1. First, enter or paste the following code to stop the Python interpreter:
+1. First, enter (or copy and paste) the following code to stop the Python interpreter:
 
     ```python
     quit()
     ```
 
-1. Now, enter the following code to create a new Python file and open it:
+1. Now, enter the following command to create a new Python file to store the class definition.
+
+    We'll use the same name for the file as our new class, **MyClass**, and we'll include the Python file extension **.py**:
 
     ```bash
     code MyClass.py
     ```
+    
+    The Cloud Shell `code` command creates a new file with the name **MyClass.py** and opens the file in the Cloud Shell editor above the command pane.
 
-1. Enter the following code in the open file above Cloud Shell:
+1. In the code editor, enter the following code:
 
     ```python
     class MyClass:
         print('MyClass created!')
     ```
 
-    The command creates the simplest class you can create. It contains the bare essentials needed to create a class:
+    The bit of code creates the simplest class you can make. It contains the bare essentials needed to create a class:
 
-    - The keyword `class`
-    - The class name ("myClass")
-    - A colon marking the end of the `class` statement
+    - The keyword `class`.
+    - The class name **MyClass**.
+    - A colon to mark the end of the `class` statement.
+    
+    Notice that the next line of code is indented. The indentation is important! Python uses indentation to indicate structure. In this case, the indentation informs Python that the `print()` method is part of the `MyClass` class definition.
 
-    Notice that the next line is indented. The indentation is important! Python uses indentation to indicate structure. In this case, the `print()` statement is part of `myClass`.
+1. To save your file, select the ellipsis (three dots) at the top right, or select Ctrl+S (or Command+S on a Mac).
 
-1. To save your file, select the three dots in the upper-right corner, or press Ctrl+S (or Command+S on a Mac).
+    ![Screenshot that shows how to save the class definition file in the Cloud Shell editor.](../media/save-file.png)
 
-    ![Save the file in the Cloud Shell editor](../media/save-file.png)
+    After you save the class definition file, you can reopen the file later with the same `code MyClass.py` command to make changes. Because the **MyClass.py** file already exists, the command will now open the file.
 
-1. Use this command to run the code you wrote:
+1. In the command pane below the editor, enter the following command to run the code in your new class:
 
     ```bash
     python3 MyClass.py
@@ -162,40 +172,44 @@ Let's open Cloud Shell's built-in code editor to make our first class.
     MyClass created!
     ```
 
-The output proves that the class was created (not that it was instantiated). The `print()` function executes during the creation process. Normally, you wouldn't use a `print(`) statement this way, but in this case, it helps to see how class creation works.
+The output proves that the class was created or *defined*. The output **doesn't** prove that an object was instantiated from the class--we'll do that next. The `print()` method executes during the class creation process. Normally, you wouldn't use a `print(`) method this way, but in this case, it helps to show how class creation works.
 
 ## Instantiate a class
 
-At this point, you have a basic (and nearly useless) class, but it serves to show how a class is defined. Now, let's create an object from the class.
+At this point, you have a basic class that shows how a class is defined. Let's create an object from this class.
 
-1. Add the following statement to the bottom of the file:
+> If you closed your **MyClass.py** file, you can reopen it with the command `code MyClass.py`.
+
+1. In the code editor, add the following code at the end of your **MyClass.py** file:   
 
     ```python
     myVar = MyClass()
     ```
 
     > [!NOTE]
-    > Be sure to use proper Python indentation. This line should not be indented at all. This line is at the same level as `class MyClass:` in the preceding exercise.
+    > Be sure to use proper Python indentation! Don't indent this new code. This code should be left-adjusted to the margin at the same level as the code `class MyClass:` that we added in the preceding exercise.
 
-    This line creates an object named `myVar` from the class named `myClass`. Notice the parentheses after `myClass`. The parentheses tell Python to create an instance of the class without passing any parameters to it.
+    This new code creates an object named `myVar` from the class named `MyClass`. Notice the parentheses after `MyClass`. The parentheses tell Python to create an instance of the class without passing any parameters to it.
 
-1. Now, add the following statements to the end of the file to prove that the object was created:
+1. Now, add the following code at the end of the file to prove that the object was created:
 
     ```python
     print(type(myVar))
     print(dir(myVar))
     ```
 
-1. Save the file, and then run your code again by using the same command that you used earlier:
+    Save the file. 
+
+1. In the command pane, run your code again by using the same command from the preceding exercise:
 
     ```bash
     python3 MyClass.py
     ```
 
-    The output shows that the type of `myVar` is `__main__.myClass`. `__main__` is the scope in which this code is executing.
+    The output shows that the class type of `myVar` is `__main__.MyClass`. The output `__main__` shows the scope in which this code is executing.
 
     A scope is a kind of logical grouping that holds pieces of code together.
 
-    You don't see a scope for the `int` type because `int` is defined outside the scope of the current application. You see `__main__` for `myClass` because you defined `myClass` in the current application. It's the default scope, but you don't need to worry about it for now. The important takeaway, for the moment, is that `myVar` is an instance of the `myClass` class.
+    You don't see a scope for the `int` class type because `int` is defined outside the scope of the current application. You see the scope `__main__` for the class `MyClass` because you defined `MyClass` in the current application. It's the default scope, but you don't need to worry about this concept yet. The important takeaway is that the `myVar` object is an instance of the `MyClass` class.
 
-Notice that you get default methods with your new class. Python provides a class with these default methods for performing essential tasks. These methods aren't all that important right now, but it's a good idea to know that they exist. As you continue with this module, this information will become more relevant.
+Notice that you get default methods with your new class. Python provides each class with these default methods so you can do essential tasks. These methods aren't necessary right now, but it's helpful to know they exist. As you continue with this module, this information will become more relevant.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.8-introduction-quantum-algorithms
+title: Introduction to quantum algorithms
+metadata:
+  title: Introduction to quantum algorithms
+  description: Short introduction to several famous quantum algorithms.
+  ms.date: 09/09/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/8-introduction-quantum-algorithms.md)]

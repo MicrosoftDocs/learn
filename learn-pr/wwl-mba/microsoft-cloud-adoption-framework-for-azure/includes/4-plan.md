@@ -161,7 +161,7 @@ As you develop a business justification model for your organization's cloud jour
 Key steps to build this plan are to:
 
 - Review sample business outcomes. 
-- Identify the learning metrics that best represent progress toward the identified business outcomes. 
+- Identify the leading metrics that best represent progress toward the identified business outcomes. 
 - Establish a financial model that aligns with the outcomes and learning metrics.
 
 

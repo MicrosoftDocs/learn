@@ -1,8 +1,12 @@
-In this module, you'll run Azure Cognitive Services on an edge device with Azure IoT Edge. You will combine the advantages of Azure IoT Edge (ability to run offline if needed) with the characteristics of Docker containers that enable you to run Cognitive Services APIs on the edge.
+In this module, you'll run Azure Cognitive Services on an edge device with Azure IoT Edge.
 
-In this module, you'll focus on language detection working with the Text Analytics API. You'll deploy a Language Detection container to the edge device that uses Text Analytics API. This API enables you to detect which language the input text is written in.
+## High-level goals
 
-The steps you'll follow:
+- **Run offline if needed**: Leverage the advantages of Azure IoT Edge.
+- **Run Cognitive Services APIs**: The characteristics of Docker containers enable you to run Cognitive Services APIs on the edge.
+- **Focus on language detection**: You'll deploy a Docker container to the edge device that uses the Text Analytics API. This API enables you to detect which language the input text is written in.
+
+## The steps you'll follow
 
 1. Create an IoT hub
 2. Create an IoT Edge device

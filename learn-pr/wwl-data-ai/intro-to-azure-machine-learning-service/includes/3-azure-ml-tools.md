@@ -38,7 +38,7 @@ You can install the Azure Machine Learning SDK for Python by using the `pip` pac
 pip install azureml-sdk
 ```
 
-The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks** extra include widgets for displaying detailed output in Jupyter Notebooks, the **automl** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
+The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks** extra include widgets for displaying detailed output in Jupyter Notebooks, the **AutoML** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
 
 ```bash
 pip install azureml-sdk[notebooks,automl,explain]
@@ -134,7 +134,7 @@ You can store notebooks independently in workspace storage, and open them in any
 
 ## Visual Studio Code
 
-Visual Studio Code is a lightweight code editing environment for Microsoft Windows, Apple macOS, and Linux. It provides a visual interface for many kinds of code, including Microsoft C#, Javascript, Python and others; as well as intellisense and syntax formatting for common data formats such as JSON and XML.
+Visual Studio Code is a lightweight code editing environment for Microsoft Windows, Apple macOS, and Linux. It provides a visual interface for many kinds of code, including Microsoft C#, JavaScript, Python and others; as well as intellisense and syntax formatting for common data formats such as JSON and XML.
 
 Visual Studio Code's flexibility is based on the ability to install modular *extensions* that add syntax checking, debugging, and visual management interfaces for specific workloads. For example, the Microsoft Python extension for Visual Studio Code adds support for writing and running Python code in scripts or notebooks within the Visual Studio Code interface.
 
@@ -142,4 +142,5 @@ Visual Studio Code's flexibility is based on the ability to install modular *ext
 
 The Azure Machine Learning Extension for Visual Studio Code provides a graphical interface for working with assets in an Azure Machine Learning workspace. You can combine the capabilities of the Azure Machine Learning and Python extensions to manage a complete end-to-end machine learning workload in Azure Machine Learning from the Visual Studio Code environment.
 
-> **More Information**: For more information about using the Azure Machine Learning extension for Visual Studio Code, see the [documentation](/azure/machine-learning/tutorial-setup-vscode-extension).
+> **More Information**: For more information about using the Azure Machine Learning extension for Visual Studio Code, see the [documentation](https://docs.microsoft.com/azure/machine-learning/how-to-manage-resources-vscode).
+ 

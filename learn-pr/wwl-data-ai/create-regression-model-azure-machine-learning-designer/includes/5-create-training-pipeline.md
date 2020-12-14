@@ -13,7 +13,7 @@ Follow the steps below, using the image above for reference as you add and confi
 
 1. Open the **Auto Price Training** pipeline you created in the previous unit if it's not already open.
 
-2. In the pane on the left, on the **Modules** tab, in the **Data Transformations** section, drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
+2. In the pane on the left, in the **Data Transformations** section, drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 3. Select the **Split Data** module, and configure its settings as follows:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7

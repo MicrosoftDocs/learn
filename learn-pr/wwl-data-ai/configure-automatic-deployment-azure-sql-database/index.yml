@@ -3,7 +3,7 @@ uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database
 metadata:
   title: Configure automatic deployment for Azure SQL Database
   description: "Utilize Azure Resource Manager templates for deploying Azure SQL resources."
-  ms.date: 08/05/2020
+  ms.date: 09/18/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/configure-automatic-deployment-for-azure-sql-database.svg
 levels:
 - intermediate
 roles:

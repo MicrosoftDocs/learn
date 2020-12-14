@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - azure-maps
+- azure
+- azure-iot
 prerequisites: | 
   - Ability to use Python at a beginner level
   - Experience using Visual Studio Code, at the beginner level

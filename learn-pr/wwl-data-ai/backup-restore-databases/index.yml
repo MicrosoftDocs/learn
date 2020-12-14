@@ -3,7 +3,7 @@ uid: learn.wwl.backup-restore-databases
 metadata:
   title: Backup and restore databases
   description: "Plan and implement policy for recovering data in case of user error or failure of technology. Explore various options for how and where to backup and restore databases."
-  ms.date: 08/07/2020
+  ms.date: 09/18/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Basic understanding of SQL Server file storage.
   - Familiarity with SQL Server database files for data and log.
   - Familiarity with purpose and management of SQL Server transaction log.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/backup-and-restore-databases.svg
 levels:
 - intermediate
 roles:

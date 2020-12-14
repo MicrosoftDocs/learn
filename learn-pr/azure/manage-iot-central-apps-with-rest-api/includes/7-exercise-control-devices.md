@@ -6,7 +6,7 @@ In this unit, you use the IoT Central REST API to set a writeable property on a 
 
 ## Set a property
 
-The store monitoring device template specified a **brightness** property in the **sensor** interface:
+The store monitoring device template specified a **brightness** property in the default component:
 
 ```json
 {
@@ -19,10 +19,10 @@ The store monitoring device template specified a **brightness** property in the 
 }
 ```
 
-Run the following command in the Cloud Shell to set the **brightness** to **3** on the **sensor** interface on one of the simulated devices in the application:
+Run the following command in the Cloud Shell to set the **brightness** to **3** on the default component on one of the simulated devices in the application:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/properties \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/properties \
 --headers Authorization="$API_TOKEN" --body \
 '{
   "brightness": 3
@@ -34,12 +34,11 @@ The response to this request echoes the requested value for the property to conf
 
 ## Send a command
 
-The store monitoring device template specified a **reboot** command in the **sensor** interface:
+The store monitoring device template specified a **reboot** command in the default component:
 
 ```json
 {
   "@type": "Command",
-  "commandType": "synchronous",
   "comment": "This command reboots the device.",
   "name": "reboot"
 }
@@ -48,7 +47,7 @@ The store monitoring device template specified a **reboot** command in the **sen
 Run the following command in the Cloud Shell to send a reboot command to one of the simulated devices in the application. The reboot command takes a parameter that specifies the number of seconds to wait before rebooting:
 
 ```azurecli
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/commands/reboot \
+az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/commands/reboot \
 --headers Authorization="$API_TOKEN" --body \
 '{
     "delay": 10

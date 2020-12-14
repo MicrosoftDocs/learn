@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-network-connectivity-azure.3-protect-network-azure-firewall
+title: Protect virtual networks by using Azure Firewall
+metadata:
+  description: Learn how Azure Firewall helps protect resources in your Azure virtual networks.
+  ms.date: 09/14/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-protect-network-azure-firewall.md)]

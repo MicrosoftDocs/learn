@@ -378,4 +378,4 @@ Play around with some of the other ufuncs we've seen.
 >[!div class="alert is-tip"]
 >### Takeaway
 >
->Fancy indexing enables you to select and manipulate several array members at once. This type of programmatic data manipulation is common in data science: often what you want to do with your data you want to do on several data points at once.
+>Fancy indexing enables you to select and manipulate several array members at once. This type of programmatic data manipulation is common in data science: often what you want to do with your data is the same thing you do on several data points at once.

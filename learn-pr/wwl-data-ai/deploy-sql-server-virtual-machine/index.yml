@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-sql-server-virtual-machine
 metadata:
   title: Deploy SQL Server in a virtual machine
   description: "Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options. Investigate options for migrating existing workloads."
-  ms.date: 08/02/2020
+  ms.date: 10/18/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
   - Ability to create a on-premises SQL Server database, including the configuration  of data files and log files.
   - Experience creating and configuring resources using the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-sql-server-in-a-virtual-machine.svg
 levels:
 - intermediate
 roles:

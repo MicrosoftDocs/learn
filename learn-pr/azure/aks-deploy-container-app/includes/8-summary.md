@@ -15,7 +15,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. Select **Resource groups** on the left.
 
-1. Find the **contoso-aks** resource group, or the resource group name you used, and select it.
+1. Find the **rg-contoso-video** resource group, or the resource group name you used, and select it.
 
 1. On the **Overview** tab of the resource group, select **Delete resource group**.
 
@@ -24,13 +24,13 @@ In this module, you created resources by using your Azure subscription. The foll
 1. Finally, run the `kubectl config delete-context` command to remove the deleted clusters context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
 
     ```bash
-    kubectl config delete-context contoso-kubernetes-cluster
+    kubectl config delete-context aks-contoso-video
     ```
 
     If successful, the command returns the following example output.
 
     ```output
-    deleted context contoso-kubernetes-cluster from /home/user/.kube/config
+    deleted context aks-contoso-video from /home/user/.kube/config
     ```
 
 ## Learn more
@@ -45,6 +45,8 @@ To learn more about Azure Kubernetes Service, see the following articles:
 - [HTTP application routing](https://docs.microsoft.com/azure/aks/http-application-routing?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Azure CLI documentation on Microsoft Docs](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Azure CLI command docs](https://docs.microsoft.com/cli/azure/aks?view=azure-cli-latest&WT.mc_id=deploycontainerapps_summary-learn-ludossan#az-aks-create)
+- [AKS HTTPS ingress controller docs](/azure/aks/ingress-tls)
 - [Kubernetes ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [Kubernetes documentation](https://kubernetes.io/docs/home/)
 - [Kubernetes service types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
+- [Azure Kubernetes Service (AKS) Production Baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.app-package-management-using-helm
+title: Application and package management using Helm
+metadata:
+  description: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here you'll see how to install third-party packages called Helm charts and how to create and install Helm charts for the workloads your teams develop.
+  title: Application and package management using Helm
+  author: cryophobia
+  ms.author: chrvaw
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial 
+  ms.date: 9/30/2020
+summary: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here you'll see how to install third-party packages called Helm charts and how to create and install Helm charts for the workloads your teams develop.
+abstract: |
+  In this module, you will:
+  - Describe the benefits of using HELM as a Kubernetes package manager
+  - Create a HELM chart for a cloud-native application
+  - Manage a cloud-native application release using Helm
+prerequisites: |
+  - Access to an Azure subscription
+  - Basic knowledge of executing commands using Azure CLI
+  - Knowledge of Kubernetes and its concepts
+  - Basic knowledge of creating Kubernetes YAML manifest files
+  - Basic knowledge of executing commands using Kubectl
+iconUrl: /learn/achievements/app-package-management-using-helm.svg
+badge:
+  uid: learn.app-package-management-using-helm.badge
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- solution-architect
+- student
+products:
+- azure
+- azure-kubernetes-service
+units:
+- learn.app-package-management-using-helm.introduction
+- learn.app-package-management-using-helm.what-is-helm
+- learn.app-package-management-using-helm.exercise-set-up-the-environment
+- learn.app-package-management-using-helm.create-install-helm-chart
+- learn.app-package-management-using-helm.exercise-install-helm-chart
+- learn.app-package-management-using-helm.manage-helm-release
+- learn.app-package-management-using-helm.exercise-manage-helm-release
+- learn.app-package-management-using-helm.summary
+  

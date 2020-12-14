@@ -21,7 +21,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 
     Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
 
-4. The inference pipeline assumes that new data will match the schema of the original training data, so the **penguin-data** dataset from the training pipeline is included. However, this input data includes a column for the penguin species, which the model does not use. Delete both the **penguin-data** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section of the **Modules** tab. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which contains feature values for three new penguin observations (including headers):
+4. The inference pipeline assumes that new data will match the schema of the original training data, so the **penguin-data** dataset from the training pipeline is included. However, this input data includes a column for the penguin species, which the model does not use. Delete both the **penguin-data** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which contains feature values for three new penguin observations (including headers):
 
     ```CSV
     CulmenLength,CulmenDepth,FlipperLength,BodyMass
@@ -30,7 +30,7 @@ After creating and running a pipeline to train the clustering model, you can cre
     46.6,17.8,193,3800
     ```
 
-5. Connect the outputs from both the **Web Service Input** and **Enter Data Manually** modules to the Dataset (right) input of the **Assign Data to Clusters** module.
+5. Connect the outputs from both the **Web Service Input** and **Enter Data Manually** modules to the Dataset (right) input of the first **Apply Transformation** module.
 6. Delete the **Evaluate Model** module.
 7. Verify that your pipeline looks similar to the following:
 

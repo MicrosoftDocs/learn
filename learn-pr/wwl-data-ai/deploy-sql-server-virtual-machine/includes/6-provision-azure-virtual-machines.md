@@ -8,8 +8,7 @@ The blade for SQL Server 2019 on Windows Server 2019 in the Azure Marketplace is
 
 :::image type="content" source="../media/module-22-plan-implement-final-06.png" alt-text="Azure portal SQL Server VM Creation":::
 
-
-The disadvantage of using the portal to create Azure resources is that it is not an easily repeatable process. However, is it easy to get started with the portal, and using the portal a new administrator can quickly get up and running.
+The disadvantage of using the portal to create Azure resources is that it is not an easily repeatable process. However, it is easy to get started with the portal, and a new administrator can quickly get up and running by using the portal.
 
 ## Storage considerations
 
@@ -55,7 +54,7 @@ As the image shows, the CLI is less verbose in terms of the amount of code requi
 
 ## Deploying using Azure Resource Manager templates
 
-Azure Resource Manager Templates have the benefit of being able to deploy a full set of resources in one single declarative template. This includes the ability to build dependencies into the templates, as well as using parameters to change specific values at deployment time. Once you have a template, there are several ways with which you can deploy it including an Azure DevOps pipeline, or through the custom deployments blade in the Azure portal. You can use the Azure portal to export a Resource Manager template to JSON for future deployment. 
+Azure Resource Manager Templates have the benefit of being able to deploy a full set of resources in one single declarative template. This includes the ability to build dependencies into the templates, as well as using parameters to change specific values at deployment time. Once you have a template, there are several ways with which you can deploy it including an Azure DevOps pipeline, or through the custom deployments blade in the Azure portal. You can use the Azure portal to export a Resource Manager template to JSON for future deployment.
 
 :::image type="content" source="../media/module-22-plan-implement-final-09.png" alt-text="Example Azure Resource Manager Template":::
 

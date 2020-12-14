@@ -3,7 +3,7 @@ uid: learn.wwl.explore-causes-of-performance-issues
 metadata:
   title: Explore causes of performance issues
   description: "Explore the Query Store for tracking down problematic queries. Understand how SQL Server and Azure SQL manage currency by locking and blocking, or by using snapshots. Implement fragmentation checks and defragmentation."
-  ms.date: 08/03/2020
+  ms.date: 09/18/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
   - Basic understanding of SQL Server file storage.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/explore-causes-of-performance-issues.svg
 levels:
 - intermediate
 roles:

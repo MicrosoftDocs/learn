@@ -32,8 +32,8 @@ You can assign role-based authorization policies to a workspace, enabling you to
 
 You can create a workspace in any of the following ways:
 
-- In the Microsoft Azure portal, create a new **Machine Learning** resource, specifying the subscription, resource group, workspace name, and workspace edition.
-- Use the Azure Machine Learning Python SDK to run code that creates a workspace. For example,m the following code creates a workspace named *aml-workspace* (assuming the Azure ML SDK for Python is installed and a valid subscription ID is specified):
+- In the Microsoft Azure portal, create a new **Machine Learning** resource, specifying the subscription, resource group and workspace name.
+- Use the Azure Machine Learning Python SDK to run code that creates a workspace. For example, the following code creates a workspace named *aml-workspace* (assuming the Azure ML SDK for Python is installed and a valid subscription ID is specified):
 
 ```Python
     from azureml.core import Workspace
@@ -42,8 +42,7 @@ You can create a workspace in any of the following ways:
                       subscription_id='123456-abc-123...',
                       resource_group='aml-resources',
                       create_resource_group=True,
-                      location='eastus',
-                      sku='enterprise'
+                      location='eastus'
                      )
 
 ```
@@ -55,26 +54,3 @@ You can create a workspace in any of the following ways:
 ```
 
 - Create an Azure Resource Manager template. For more information the template format for an Azure Machine Learning workspace, see the [Azure Machine Learning documentation](https://aka.ms/AA70rq4).
-
-## Considerations for Creating a Workspace
-
-When planning to create an Azure Machine Learning workspace, there are some options you should consider.
-
-### Region
-
-Your workspace will be created in an Azure region, which determines the data center in which the workspace resources will be hosted. You should ensure that the region where you create the workspace will support the resources you will need.
-
-For example, you might need to create virtual machines in your workspace to support notebook development or model training. If you intend to leverage graphical processing unit (GPU) processing, which are commonly used to perform training of deep neural network (DNN) models, then you should ensure that the region where your workspace is hosted supports the appropriate series of virtual machines (for example, NC-series virtual machines support vGPUs, but are not available in all regions).
-
-> [!TIP] 
-> You can check for specific resource availability by region in the [Azure Global Infrastructure *products available by region* page](https://aka.ms/AA70zfd).
-
-### Edition
-
-Azure Machine Learning workspaces are available in two editions:
-
-- *Enterprise* - includes all features.
-- *Basic* - includes core features, but does not include *Designer* or graphical tools for automated machine learning or data drift monitoring.
-
-> [!TIP] 
-> You can upgrade from *Basic* to *Enterprise* edition at any time.

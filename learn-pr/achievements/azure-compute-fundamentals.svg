@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Distinguish Microsoft Azure Core Services/define-core-azure-services-and-products</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <filter x="-18.9%" y="-18.9%" width="136.5%" height="136.5%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-42.9%" y="-54.5%" width="185.7%" height="209.1%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="99.9004975%" x2="50%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#32BEDD" offset="0%"></stop>
+            <stop stop-color="#32CAEA" offset="18%"></stop>
+            <stop stop-color="#32D2F2" offset="41%"></stop>
+            <stop stop-color="#32D4F5" offset="78%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Distinguish-Microsoft-Azure-Core-Services" transform="translate(-159.000000, -319.000000)">
+            <g id="Distinguish-Microsoft-Azure-Core-Services/define-core-azure-services-and-products" transform="translate(160.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" filter="url(#filter-8)" transform="translate(12.871870, 13.169388)" stroke="#FFFFFF" stroke-width="3">
+                    <circle id="Oval" cx="37.6281301" cy="36.8306122" r="28.5"></circle>
+                    <line x1="59.0845105" y1="36.7095965" x2="73.419193" y2="36.7095965" id="Path-145" stroke-linecap="round"></line>
+                    <line x1="0.128130086" y1="36.7095965" x2="14.4628126" y2="36.7095965" id="Path-145" stroke-linecap="round"></line>
+                    <line x1="36.7736615" y1="59.0204455" x2="36.7736615" y2="73.3551279" id="Path-145" stroke-linecap="round"></line>
+                    <line x1="36.7736615" y1="0.064065043" x2="36.7736615" y2="14.3987475" id="Path-145" stroke-linecap="round"></line>
+                </g>
+                <g id="Browser-Window" filter="url(#filter-9)" transform="translate(36.000000, 38.000000)" fill-rule="nonzero">
+                    <path d="M0,4 L28,4 L28,20.9791045 C28,21.5429295 27.5796744,22 27.0611765,22 L0.938823529,22 C0.689832048,22 0.45103861,21.8924417 0.274975045,21.7009866 C0.0989114807,21.5095316 0,21.2498628 0,20.9791045 L0,4 Z" id="Path" fill="url(#linearGradient-10)"></path>
+                    <path d="M0.940082494,0 L27.0612201,0 C27.5796939,0 28,0.418357709 28,0.934426989 L28,6 L0.00130264144,6 L0.00130264144,0.983607309 C-0.012265088,0.727376309 0.0806191143,0.476865795 0.258166434,0.290840625 C0.435713754,0.104815454 0.682300587,-0.000354743546 0.940082494,0 Z" id="Path" fill="#0078D4"></path>
+                    <rect id="Rectangle" fill="#F2F2F2" x="2" y="2" width="24" height="1" rx="0.28"></rect>
+                </g>
+                <g id="Azure-black" transform="translate(42.333333, 47.000000)" fill="#FFFFFF">
+                    <polygon id="Path" points="4.66666667 9.99891528 14.6666667 10 9.28088295 0 7.64054273 4.82807246 10.7906035 8.84260766"></polygon>
+                    <polygon id="Path" points="8.66666667 0 4.3566199 3.2488401 0.666666667 8.99083399 3.99499315 8.99083399 3.99499315 9"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

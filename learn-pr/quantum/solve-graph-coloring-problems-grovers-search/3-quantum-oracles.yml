@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-graph-coloring-problems-grovers-search.3-quantum-oracles
+title: How to implement classical computation on a quantum computer
+metadata:
+  description: General definition of quantum oracles and reversible computing.
+  ms.date: 09/19/2020
+  author: tcNickolas
+  ms.author: mamykhai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-quantum
+  show_latex: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-quantum-oracles.md)]

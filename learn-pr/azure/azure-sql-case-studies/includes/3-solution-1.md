@@ -27,8 +27,8 @@ If the analytics workload doesn't need all these readable replicas, using Genera
 The other piece of this scenario involves determining the best way for each application or person to connect to the solution, given the need to create and use the most secure technologies possible. If you break down the scenario, four separate clients will need access to Azure SQL Managed Instance:
 
 - Application running on an Azure VM
-- Application running on a non-Azure machine
-- Database analysts (DBAs) or other users of SQL admin tools (SQL Server Management Studio, Azure Data Studio, PowerShell) from a non-Azure machine
+- Application running on a non-Azure machine that is domain-joined
+- DBAs or other users of SQL admin tools (SQL Server Management Studio, Azure Data Studio, PowerShell) from a non-Azure machine that is not domain-joined
 - Older applications running on a non-Azure machine where you can't change the driver or connection string
 
 Let's look at these clients in terms of how you might choose the authentication method and some additional considerations and constraints.
@@ -37,11 +37,11 @@ Let's look at these clients in terms of how you might choose the authentication 
 
 Managed identities for Azure resources are, in general, the recommended form of passwordless authentication for applications running on Azure virtual machines.
 
-### Application running on a non-Azure machine
+### Application running on a non-Azure machine that is domain-joined
 
 For non-Azure machines, using managed identities is not an option. Integrated authentication via Azure Active Directory (Azure AD) is the recommended authentication method for apps running on domain-joined machines outside Azure, assuming that the domain has been federated with Azure AD. 
 
-Alternatively, you can:
+If the non-Azure machine is not domain-joined, you can:
 
 1. Create an application identity for your application in Azure AD.
 1. Associate a certificate with the application identity.
@@ -49,11 +49,11 @@ Alternatively, you can:
 
 Although the certificate must contain a private key and it must be deployed on the machine that hosts your application, you at least avoid hard-coding an application secret in the application code or configuration. (You'll need to configure the app with the certificate thumbprint.)
 
-### DBAs or other users of SQL admin tools from a non-Azure machine
+### DBAs or other users of SQL admin tools from a non-Azure machine that is not domain-joined
 
-For users outside Azure, eliminating the use of passwords is best if possible. You can eliminate the use passwords with SQL tools by using Azure AD integrated authentication. The tools must run on a domain-joined machine, and the domain must have been federated with Azure AD. 
+For users outside Azure, eliminating the use of passwords is best if possible. You can eliminate the use passwords with SQL tools by using Azure AD integrated authentication. However, the tools must run on a domain-joined machine, and the domain must have been federated with Azure AD, which is not the case for this scenario. 
 
-If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support.
+Since the environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support.
 
 ### Older applications running on a non-Azure machine where you can't change the driver or connection string
 

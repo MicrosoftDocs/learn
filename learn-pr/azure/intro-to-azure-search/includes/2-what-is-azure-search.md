@@ -125,7 +125,7 @@ The Import data wizard can be used in the portal to create indexes if you're usi
 
 #### Using C#
 
-Azure Cognitive Search indexes can be created programmatically in C#. This is achieved using the .Net SDK. Index creation using this method is a case of following through a few simple tasks:
+Azure Cognitive Search indexes can be created programmatically in C#. This is achieved using the .NET SDK. Index creation using this method is a case of following through a few simple tasks:
 
 - Create a `SearchServiceClient` object class for connecting to the search service
 - Create an `Index` object
@@ -193,4 +193,4 @@ The steps are then:
     Invoke-RestMethod -Uri $url -Headers $headers -Method Put -Body $body | ConvertTo-Json
     ```
 
-You have created in index using the REST API. You can load your search documents using the same approach, calling the appropriate REST endpoints.
+You have created an index using the REST API. You can load your search documents using the same approach, calling the appropriate REST endpoints.

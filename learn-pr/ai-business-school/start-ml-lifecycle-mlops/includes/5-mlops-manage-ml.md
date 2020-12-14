@@ -76,6 +76,6 @@ While ML services can help automate aspects of this process, it's important to k
 
 MLOps practices facilitate real business results, enabling a faster time to market for machine learning-based solutions and a more rapid rate of experimentation and innovation. These practices also increase collaboration and alignment across teams and help assure model quality and auditability—ultimately accelerating the ML lifecycle.  
 
-When you're setting up new processes, be aware that these aren't just technical shifts, but also cultural shifts in how your employees work. It's important to manage those changes carefully. To more easily track and manage the processes we've discussed, we recommend using a central MLOps platform that supports the entire lifecycle, such as the Microsoft Azure MLOps offering. If you'd like to read about best practices for software engineering teams working with machine learning, this study published by the IEEE Computer Society is a great place to start.
+When you're setting up new processes, be aware that these aren't just technical shifts, but also cultural shifts in how your employees work. It's important to manage those changes carefully. To more easily track and manage the processes we've discussed, we recommend using a central MLOps platform that supports the entire lifecycle, such as the Microsoft Azure MLOps offering.
 
 Next, let's wrap up everything you've learned about MLOps with a knowledge check.

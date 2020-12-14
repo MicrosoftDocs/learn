@@ -8,7 +8,7 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
 1. You should now see a list of all the **Telemetry**, **Property**, and **Commands** you created, each with a check box. There is also a list of **Cloud properties**, and **Custom tiles**, which you can ignore for now.
 
-1. Click the **Location** check box, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner of the tile, so that the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map of the world.
+1. Click the drop-down under **Telemetry** and select  **Location**, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner of the tile, so that the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map of the world.
 
 1. Before adding more tiles, change the **View name** to something more specific, "Truck view", or something similar.
 
@@ -75,9 +75,9 @@ The next step is to create the keys that will allow a remote device to communica
 
 ### Record the connection keys
 
-1. Click **Connect** in the top-right menu. Do _not_ click **Connect to gateway**.
+1. Click **Connect** in the top-right menu. Do _not_ click **Attach to gateway**.
 
-1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. The **Scope ID** identifies the app, the **Device ID** the real device, and the **Primary Key** gives you permission for the connection. Typically, use a tool like Notepad, and save the text file with a meaningful name, say "Truck keys.txt". 
+1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. The **ID Scope** identifies the app, the **Device ID** the real device, and the **Primary Key** gives you permission for the connection. Typically, use a tool like Notepad, and save the text file with a meaningful name, say "Truck keys.txt".
 
 1. Leave the **Connect method** as **Shared access signature (SAS)**.
 

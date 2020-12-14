@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-getting-started.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

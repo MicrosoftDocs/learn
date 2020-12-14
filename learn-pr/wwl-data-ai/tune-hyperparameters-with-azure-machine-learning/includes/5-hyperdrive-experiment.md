@@ -61,9 +61,9 @@ To prepare the hyperdrive experiment, you must use a **HyperDriveConfig** object
 from azureml.core import Experiment
 from azureml.train.hyperdrive import HyperDriveConfig, PrimaryMetricGoal
 
-# Assumes ws, sklearn_estimator and param_sampling are already defined
+# Assumes ws, script_config and param_sampling are already defined
 
-hyperdrive = HyperDriveConfig(estimator=sklearn_estimator,
+hyperdrive = HyperDriveConfig(run_config=script_config,
                               hyperparameter_sampling=param_sampling,
                               policy=None,
                               primary_metric_name='Accuracy',

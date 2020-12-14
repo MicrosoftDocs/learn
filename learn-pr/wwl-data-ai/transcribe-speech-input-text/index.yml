@@ -3,7 +3,7 @@ uid: learn.wwl.transcribe-speech-input-text
 metadata:
   title: Transcribe speech input to text
   description: "Speech to text from the speech service, known as speech recognition, enables real time transcription of audio streams into text. Your applications, tools, or devices can consume, display, and take action on this text as command input."
-  ms.date: 08/19/2020
+  ms.date: 09/26/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ai-machine-learning-fundamentals.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Begin your exploration of artificial intelligence services from Azure.
+  ms.date: 09/14/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -24,4 +24,4 @@ The service tiers offered by the open source platforms provide a wide range of p
 | **MySQL**| 5.6-8.0 |
 | **Postgres**| 9.5-11 |
 
-While the Azure service will perform minor upgrades, in order to execute a major upgrade you will be need to restore from a backup into a new version.
+While the Azure service will perform minor upgrades, in order to execute a major upgrade you will need to restore from a backup into a new version.

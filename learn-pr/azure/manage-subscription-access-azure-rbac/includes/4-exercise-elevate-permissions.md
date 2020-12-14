@@ -32,7 +32,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 Because you're using your own subscription, you might want to walk through the following procedure without saving the Owner role assignment in step 5.
 
-1. At the top of the **Access control (AIM)** pane, select **Add**.
+1. At the top of the **Access control (IAM)** pane, select **Add**.
 1. Select **Add role assignment**.
 1. In the **Role** drop-down list, select **Owner**.
 1. In the **Select** box, enter the username or email address of the user you want to grant access to. Select that user.

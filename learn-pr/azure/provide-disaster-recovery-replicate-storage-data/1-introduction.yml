@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.provide-disaster-recovery-replicate-storage-data.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about a business scenario that storage replication can address.
+  ms.date: 10/08/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

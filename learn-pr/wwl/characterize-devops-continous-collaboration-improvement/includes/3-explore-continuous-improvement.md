@@ -2,8 +2,6 @@
 
 Continuous Improvement is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Improvement: Lead time and cycle time, Deployment frequency, Mean time to restore, Change fail percentage, Continuous feedback, Value stream mapping.](../media/6-3-capabilities.png)
-
 ### Discover why Continuous Improvement is necessary
 
 Continuous Improvement involves and requires measurement. How do you identify improvement if you don't measure?

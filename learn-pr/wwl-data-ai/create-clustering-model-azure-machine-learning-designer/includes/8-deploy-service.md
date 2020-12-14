@@ -17,14 +17,15 @@ Now you can test your deployed service from a client application - in this case,
     - The REST endpoint for your service
     - the Primary Key for your service
 3. Note that you can use the &#10697; link next to these values to copy them to the clipboard.
-4. With the **Consume** page for the **predict-penguin-clusters** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page.
-5. On the **Notebooks** page, create a new file with the following settings:
-    - **File name**: penguin_test.ipynb
+4. With the **Consume** page for the **predict-penguin-clusters** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page (under **Author**).
+5. In the **Notebooks** page, under **My files**, use the **&#128459;** button to create a new file with the following settings:
+    - **File location**: Users/*your user name*
+    - **File name**: Test-Penguins
     - **File type**: Notebook
     - **Overwrite if already exists**: Selected
-    - **Select target directory**: *Select the folder with your user name under **User files***
 6. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
-7. Edit the notebook inline, and in the cell that has been created in the notebook, paste the following code:
+7. Use the **&#8810;** button to collapse the file explorer pane and give you more room to focus on the **Test-Penguins.ipynb** notebook tab.
+8. In the rectangular cell that has been created in the notebook, paste the following code:
 
     ```Python
     endpoint = 'YOUR_ENDPOINT' #Replace with your endpoint
@@ -75,7 +76,7 @@ Now you can test your deployed service from a client application - in this case,
     > [!NOTE]
     > Don't worry too much about the details of the code. It just defines features for a penguin, and uses the **predict-penguin-clusters** service you created to predict a cluster assignment.
 
-8. Switch to the browser tab containing the **Consume** page for the **predict-penguin-clusters** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
-9. Switch to the browser tab containing the **Consume** page for the **predict-penguin-clusters** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
-10. Save the notebook, Then use the **&#9655;** button next to the cell to run the code.
-11. Verify that predicted cluster is returned.
+9. Switch to the browser tab containing the **Consume** page for the **predict-penguin-clusters** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
+10. Switch to the browser tab containing the **Consume** page for the **predict-penguin-clusters** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
+11. Save the notebook, Then use the **&#9655;** button next to the cell to run the code.
+12. Verify that predicted cluster is returned.

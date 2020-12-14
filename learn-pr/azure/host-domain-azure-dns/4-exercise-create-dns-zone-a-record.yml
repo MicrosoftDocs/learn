@@ -15,10 +15,3 @@ azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-create-dns-zone-a-record.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Follow the directions to create a DNS zone."
-  azure:
-    resource:
-      type: "Microsoft.Network/dnszones"

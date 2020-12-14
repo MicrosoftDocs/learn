@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.create-conversational-ai-solutions
+metadata:
+  title: Create conversational AI solutions
+  description: Conversational AI revolves around user interactions, in this case through Bots. In this learning path, you will learn how to create chat bots and integrate the bot with various AI services to add intelligence to the interaction. Learn how to integrate the QnA Maker Service (an easy method to add question and answers for bots), and explore the new Virtual Assistant scenarios for creating branded experiences with bots.
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create conversational AI solutions
+prerequisites: |
+  - Active Azure account
+  - Knowledge of Azure portal navigation
+  - Knowledge of at least one programming language (C#, Python)
+summary: |
+  Conversational AI revolves around user interactions, in this case through bots.  In this learning path, you  create chat bots and integrate with various AI services to add intelligence to the interaction.
+iconUrl: /learn/achievements/create-conversational-ai-solutions.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure
+- azure-bot-service
+- azure-cognitive-services
+- azure-language-understanding
+- azure-sdks
+modules:
+- learn.wwl.build-chat-bot-with-azure-portal
+- learn.wwl.design-bot-conversation-flow
+- learn.wwl.create-bot-with-bot-framework-composer
+trophy:
+  uid: learn.wwl.create-conversational-ai-solutions.trophy

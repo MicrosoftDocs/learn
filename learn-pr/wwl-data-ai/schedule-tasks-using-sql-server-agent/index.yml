@@ -2,8 +2,8 @@
 uid: learn.wwl.schedule-tasks-using-sql-server-agent
 metadata:
   title: Schedule tasks using SQL Server Agent
-  description: "Explore SQL automation for scheduled tasks and automatic alerts for SQL Server and Managed Instance. Configure extended event sessions for tracing activities."
-  ms.date: 08/07/2020
+  description: "Schedule tasks using SQL Server Agent"
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/schedule-tasks-using-sql-server-agent.svg
 levels:
 - intermediate
 roles:
@@ -38,6 +38,7 @@ units:
 - learn.wwl.schedule-tasks-using-sql-server-agent.describe-task-status-notifications
 - learn.wwl.schedule-tasks-using-sql-server-agent.describe-extended-events
 - learn.wwl.schedule-tasks-using-sql-server-agent.create-extended-events-session
+- learn.wwl.schedule-tasks-using-sql-server-agent.exercise-create-cpu-status-alert
 - learn.wwl.schedule-tasks-using-sql-server-agent.knowledge-check
 - learn.wwl.schedule-tasks-using-sql-server-agent.summary
 badge:

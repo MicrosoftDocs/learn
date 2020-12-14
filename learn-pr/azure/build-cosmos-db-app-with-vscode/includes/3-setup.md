@@ -81,7 +81,6 @@ In this unit, you will create a basic console app using the integrated terminal,
     <add key="accountEndpoint" value="https://<account-name>.documents.azure.com:443/" />
     ```
 
-1. Now copy the **AccountKey** value from the connection string into the **accountKey** value, and then delete the original connection string you copied in.
 
     Your final App.config file looks similar to this.
 

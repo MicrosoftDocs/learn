@@ -2,10 +2,6 @@
 
 Continuous Security is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Security: Security architecture, Identity and access management, Application security, Secure infrastructure, Secure data and Secure Operations, Governance and Compliance.](../media/5-2-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Security is necessary
 
 Cyber-crime is an inevitable fact of the digital times we live in. Many organizations are being attacked daily by criminals doing it to do damage or by hackers doing it for fun. As well as our organizations, we as users of third party services are also possible targets for these attacks.

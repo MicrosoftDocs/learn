@@ -17,3 +17,5 @@ It's challenging to manage the software lifecycle for millions of IoT devices th
 Consider the case of deploying complex event processing or machine learning on edge devices. If you want to implement machine learning on edge devices, you must first train the model in the cloud. After training the model, you need to deploy the trained model to a diverse range of edge devices often across geography. Once deployed, these models will run often offline on the device. You would also need to update the model periodically. By encapsulating the models in docker compatible containers, IoT Edge can manage the end-to-end cycle of deployment for machine learning on IoT. IoT Edge runtime and the cloud interface can monitor the status of the machine learning modules.
 
 In the absence of the IoT Edge, the developer would need to create the added functionality of maintaining the module.
+
+![The illustration show the three components of IoT Edge.](../media/iot-edge-components.png)

@@ -30,7 +30,7 @@ quiz:
       isCorrect: false
       explanation: "A hyphen specifies a range. For example, a 1-3 in the {month} field means select January, February, and March."
 
-  - content: 'Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when images are uploaded. Which of the following blob trigger *Path* values should you use?'
+  - content: 'Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when *png* images are uploaded. Which of the following blob trigger *Path* values should you use?'
     choices:
     - content: "samples-workitems/{name}"
       isCorrect: false

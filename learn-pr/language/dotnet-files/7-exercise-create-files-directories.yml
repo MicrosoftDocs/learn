@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-files.7-exercise-create-files-directories
+title: Exercise - Create files and directories
+metadata:
+  title: Exercise - Create files and directories
+  description: Exercise - Create a directory and write a new file to it.
+  ms.date: 10/28/2020
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+interactive: bash
+azureSandbox: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-create-files-directories.md)]

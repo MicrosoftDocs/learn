@@ -27,6 +27,7 @@ levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - dotnet
 modules:

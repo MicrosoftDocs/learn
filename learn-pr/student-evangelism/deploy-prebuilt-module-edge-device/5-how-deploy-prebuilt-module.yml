@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.deploy-prebuilt-module-edge-device.5-how-deploy-prebuilt-module
-title: How to deploy a prebuilt module to an IoT Edge device
+title: Deploy a prebuilt module to an IoT Edge device
 metadata:
-  title: How to deploy a prebuilt module to an IoT Edge device
-  description: In this section, we explain submitting a new deployment to an IoT Edge device
+  title: Deploy a prebuilt module to an IoT Edge device
+  description: In this unit, we explain submitting a new deployment to an IoT Edge device
   ms.date: 12/5/2019
   author: leestott
   ms.author: leestott

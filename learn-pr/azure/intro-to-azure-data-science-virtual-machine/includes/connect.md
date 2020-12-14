@@ -1,30 +1,30 @@
-On a Windows Data Science Virtual Machine, the graphical desktop is available via Remote Desktop Protocol.
+On a Windows Data Science Virtual Machine (DSVM), the graphical desktop is available via Remote Desktop Protocol.
 
 With SSH, you can connect to the command line of the Data Science Virtual Machine. Both Windows and Ubuntu Data Science Virtual Machine images support SSH connection.
 
-## Connect to a Windows server using RDP 
+## Connect to a Windows server by using RDP 
 
 To connect to a Windows DSVM with Remote Desktop: 
 
-1. If necessary, download [Microsoft Remote Desktop client](https://www.microsoft.com/p/microsoft-remote-desktop/9wzdncrfj3ps?portal=true)
-1. Navigate to the DSVM in the portal
-1. Select **Connect** and **RDP**
-1. Click **Download RDP File** 
-1. Open the file in Microsoft Remote Desktop to connect
+1. If necessary, download the [Microsoft Remote Desktop client](https://www.microsoft.com/p/microsoft-remote-desktop/9wzdncrfj3ps?portal=true).
+1. Go to the DSVM in the portal.
+1. Select **Connect** and **RDP**.
+1. Select **Download RDP File**. 
+1. Open the file in Microsoft Remote Desktop to connect.
 
-![Screenshot of portal showing RDP File download page](../media/download-rdp-file.png)
+![Screenshot of the portal showing the RDP file download page.](../media/download-rdp-file.png)
 
-## Connect to the command line using SSH
+## Connect to the command line by using SSH
 
 To access the command line of your Data Science Virtual Machine, you'll use:
 
-- An SSH client running in a terminal on your local machine
-- The username and password you specified during creation
-- The public IP address of the running Data Science Virtual Machine
+- An SSH client running in a terminal on your local machine.
+- The username and password that you specified during creation.
+- The public IP address of the running Data Science Virtual Machine.
 
 ### Install an SSH client on Windows, if necessary
 
-If you're running Linux or macOS, an SSH client is part of the OS standard utilities. If you're running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
+If you're running Linux or macOS, an SSH client is part of the OS standard utilities. If you're running Windows, you might not have an SSH client already installed on your machine. Open a PowerShell console with administrative rights and see if you have the client installed:
 
 ```powershell
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
@@ -37,15 +37,15 @@ Name  : OpenSSH.Server~~~~0.0.1.0
 State : NotPresent
 ```
 
-If the `State` of the `OpenSSH.Client` isn't `Installed`, run:
+If the `State` value of `OpenSSH.Client` isn't `Installed`, run:
 
 ```powershell
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-## Connect using an ssh client from the command line
+## Connect by using an SSH client from the command line
 
-From a terminal or PowerShell console, run the following, replacing your username and the IP address for `1.1.1.1`:
+From a terminal or a PowerShell console, run the following code. Replace your username and the IP address for `1.1.1.1`.
 
 ```bash
 ssh UserName@1.1.1.1

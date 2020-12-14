@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.identify-faces-with-computer-vision.using-emotion-api
+title: Using the Emotion API
+metadata:
+  title: Using the Emotion API
+  description: "Learn how to access the Emotion API from a client application"
+  ms.date: 10/14/2020
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-using-emotion-api.md)]
