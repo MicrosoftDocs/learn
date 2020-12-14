@@ -4,7 +4,7 @@ title: Understand migration from an existing on-premises third-party management 
 metadata:
   title: Understand migration from an existing on-premises third-party management solution
   description: Understand the endpoint management migration path when your organization uses an existing on-prem third-party management provider, where endpoint management infrastructure is significant and complex.
-  ms.date: 12/15/2020
+  ms.date: 12/14/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
