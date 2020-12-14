@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-stack
+metadata:
+  title: Introduction to Azure Stack
+  description: This module introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Stack
+summary: This module introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
+abstract: | 
+  In this module, you will:
+  - Describe the Azure Stack portfolio
+  - Describe basic architecture, core capabilities, and primary use cases of Azure Stack Hub
+  - Describe basic architecture, core capabilities, and primary use cases of Azure Stack HCI
+  - Describe basic architecture, core capabilities, and primary use cases of Azure Stack Edge
+prerequisites: | 
+  In order to get the best learning experience from this module, you should have the basic knowledge of:
+  - Azure
+  - Window Server software-defined storage
+  - Windows Server software-defined networking
+  - IoT technologies
+iconUrl: /learn/achievements/intro-to-azure-stack.svg
+levels:
+- beginner
+roles:
+ - administrator
+ - student
+products:
+ - azure-stack-hci
+ - azure-stack
+ - azure-stack-edge
+units:
+- learn.azure.intro-to-azure-stack.1-introduction
+- learn.azure.intro-to-azure-stack.2-azure-stack
+- learn.azure.intro-to-azure-stack.3-azure-stack-hub
+- learn.azure.intro-to-azure-stack.4-azure-stack-hci
+- learn.azure.intro-to-azure-stack.5-azure-stack-edge
+- learn.azure.intro-to-azure-stack.6-azure-stack-portfolio
+- learn.azure.intro-to-azure-stack.7-summary
+badge:
+  uid: learn.azure.intro-to-azure-stack.badge
