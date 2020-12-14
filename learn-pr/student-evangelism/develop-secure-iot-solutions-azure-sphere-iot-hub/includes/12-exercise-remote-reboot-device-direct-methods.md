@@ -79,27 +79,13 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Click **View devices in this hub**.
 
-    :::image type="content" source="../media/iot-explorer-view-devices-in-this-hub.png" alt-text="The illustration shows how to view devies in the hub.":::
-
 1. Click your on your **device**.
-
-    The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
-
-    ```
-    azsphere device show-attached
-    ```
 
 1. Click **IoT Plug and Play components** from the side menu.
 
-    :::image type="content" source="../media/iot-explorer-iot-pnp.png" alt-text="The illustration shows how to select IoT Plug and Play components.":::
-
 1. Click **Default component**.
-    
-    :::image type="content" source="../media/iot-explorer-pnp-default-component.png" alt-text="The illustration shows how to select the default component.":::
 
 1. Select **Commands** from the menu.
-
-    :::image type="content" source="../media/iot-explorer-pnp-commands.png" alt-text="The illustration shows how to select the command menu.":::
 
 1. Set the **Restart Delay** value to be greater than 2 and less than 10.
 

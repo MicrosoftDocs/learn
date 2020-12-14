@@ -93,10 +93,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     > [!NOTE]
     > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
-    <!-- > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to set a breakpoint in the InterCoreHandler callback function](../media/visual-studio-debug-intercore-callback.png) -->
-
-    :::image type="content" source="../media/visual-studio-debug-intercore-callback.png" alt-text="The illustration shows how to set a breakpoint in the InterCoreHandler callback function.":::
+    :::image type="content" source="../media/visual-studio-debug-intercore-callback.png" alt-text="The illustration shows how to set a breakpoint in the InterCoreHandler callback function." lightbox="../media/visual-studio-debug-intercore-callback.png":::
 
 ## Step 5: Start the app build deploy process
 
@@ -126,23 +123,23 @@ The Avnet Azure Sphere Starter Kit, revisions 1 and 2, have a built-in temperatu
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
-1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
+- The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
-1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
+- The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The User LED will blink every 5 seconds when connected to Azure.
+- The User LED will blink every 5 seconds when connected to Azure.
 
 ## Step 8: Set the desired temperature
 
