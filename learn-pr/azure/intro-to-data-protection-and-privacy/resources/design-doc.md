@@ -10,7 +10,7 @@
 
 # Learner level
 
-- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. It covers topic concepts, functions, features, and benefits.
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. The material covers topic concepts, functions, features, and benefits.
 
 # Product(s) taught
 
@@ -28,7 +28,7 @@ To get the best learning experience from this module, you should have knowledge 
 
 # Module summary description
 
-Learn about key concepts of data protection, privacy regulation, data processing, and Azure data security, privacy, and compliance technologies.
+Learn about key concepts of data protection, privacy regulation, and data processing. Learn Azure data security, privacy, and compliance technologies.
 
 # Module learning objectives
 
