@@ -43,15 +43,15 @@ And this will produce the following output:
 
 Back to our first code example where the `result` variable is of type `int`; why can't the C# compiler figure out that we want to treat the variable `second` containing `4` as a number, not a `string`?
 
-The C# compiler sees a potential problem in the making.  The variable `second` is of type `string`, so it's possible it might be set to a different value like `"hello"`.  If the C# compiler attempted to convert `"hello"` to a number that would cause an exception at runtime.  To avoid this possibility, the C# compiler will not implicitly perform the conversion from `string` to `int` for you.
+The C# compiler sees a potential problem in the making.  The variable `second` is of type `string`, so it might be set to a different value like `"hello"`.  If the C# compiler attempted to convert `"hello"` to a number that would cause an exception at runtime.  To avoid this possibility, the C# compiler will not implicitly perform the conversion from `string` to `int` for you.
 
 From the C# compiler's perspective, the safer operation would be to convert `int` into a `string` and perform concatenation instead.
 
-If your intent is to perform addition using a string, the C# compiler requires you to take more explicit control of the process of data conversion.  In other words, it forces you to be more involved so that you can put the proper precautions in place to handle the possibility that the conversion could throw an exception.
+If you intend to perform addition using a string, the C# compiler requires you to take more explicit control of the process of data conversion.  In other words, it forces you to be more involved so that you can put the proper precautions in place to handle the possibility that the conversion could throw an exception.
 
 If you need to change a value from the original data type to a new data type and the change could produce an exception at run time, you must perform a **data conversion**.
 
-To perform a data conversion, you can use one of several techniques:
+To perform data conversion, you can use one of several techniques:
 
 - Use a helper method on the data type
 - Use a helper method on the variable
@@ -95,7 +95,7 @@ Since any `int` value can easily fit inside of a `decimal`, the compiler perform
 
 The term **narrowing conversion** means that you're attempting to convert a value from a data type that can hold more information to a data type that can hold less information.  In this case, you may lose information such as precision (that is, the number of values after the decimal point).  An example of this would be converting value stored in a variable of type `decimal` and now convert that value into a variable of type `int`.  If you were to print out the two values, you would possibly notice the loss of information.
 
-When you know you'll be performing a narrowing conversion, you'll need to perform a **cast**.  Casting is an instruction to the C# compiler that you know it's possible that precision will be lost, but you're willing to accept it.
+When you know you'll be performing a narrowing conversion, you'll need to perform a **cast**.  Casting is an instruction to the C# compiler that you know precision may be lost, but you're willing to accept it.
 
 ### Step 3 - Modify the code in the .NET Editor to perform a cast
 
@@ -137,7 +137,7 @@ This Docs article uses the .NET Class Library name for types, not the C# keyword
 
 [Built-in types table](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/built-in-types-table?azure-portal=true)
 
-However, you can also write some code to perform a conversion two different ways and observe the changes.  Developers frequently write small tests to better understand the propensities of two similar techniques.  For example, you might do something like this:
+However, you can also write some code to perform a conversion in two different ways and observe the changes.  Developers frequently write small tests to better understand the propensities of two similar techniques.  For example, you might do something like this:
 
 ```csharp-interactive
 decimal myDecimal = 1.23456789m;
@@ -154,11 +154,11 @@ Decimal: 1.23456789
 Float: 1.234568
 ```
 
-From this, I can see that casting a `decimal` into a `float` is a narrowing conversion, because I'm losing precision.
+From this, I can see that casting a `decimal` into a `float` is a narrowing conversion because I'm losing precision.
 
 ## Performing Data Conversions
 
-Earlier, we said that when you need to change a value from one data type into another, and that change could cause a runtime exception, you should perform a data conversion, and there are three techniques you can use:
+Earlier, we said that when you need to change a value from one data type into another, and that change could cause a runtime exception, you should perform data conversion, and there are three techniques you can use:
 
 - Use a helper method on the variable
 - Use a helper method on the data type
@@ -167,7 +167,7 @@ Earlier, we said that when you need to change a value from one data type into an
 
 ### Use ToString() to convert a number to a string
 
-Every data type variable has a `ToString()` method.  What the `ToString()` method does depends on how it's implemented on a given type. However on most primitives, it performs a widening conversion.  While this isn't strictly necessary (since we can rely on implicit conversion in most cases) it can communicate to other developers that you understand what you're doing and it's intentional.
+Every data type variable has a `ToString()` method.  What the `ToString()` method does depends on how it's implemented on a given type. However, on most primitives, it performs a widening conversion.  While this isn't strictly necessary (since we can rely on implicit conversion in most cases) it can communicate to other developers that you understand what you're doing and it's intentional.
 
 ### Step 4 - Modify the code in the .NET Editor to convert a number to a string using the ToString() helper method
 
@@ -206,13 +206,13 @@ If you run the code example, you should see the following output.
 ```output
 12
 ```
-Can you spot the potential problem with the code example above?  What if either of the variables `first` or `second` are set to values that can't be converted to an `int`?  An exception will be thrown at runtime.  This is exactly what the C# compiler and runtime expects us to plan for ahead of time.  Fortunately, we can mitigate this in a number of ways.  
+Can you spot the potential problem with the code example above?  What if either of the variables `first` or `second` are set to values that can't be converted to an `int`?  An exception will be thrown at runtime.  This is exactly what the C# compiler and runtime expects us to plan for ahead of time.  Fortunately, we can mitigate this in several ways.  
 
  The easiest way to mitigate this situation is through the use of `TryParse()`, which is a better version of the `Parse()` method.  We'll discover that in the next unit.
 
 ## Data Conversion using the Convert class
 
-The Convert class has many helper methods to convert a value from one type into another.  In this following code example, we'll convert a couple of strings into values of type `int`.
+The Convert class has many helper methods to convert a value from one type into another.  In the following code example, we'll convert a couple of strings into values of type `int`.
 
 ## Step 6 - Modify the code in the .NET Editor to convert a string to a number using the Convert class
 
@@ -226,9 +226,9 @@ Console.WriteLine(result);
 ```
 
 > [!NOTE]
-> Why is the method name `ToInt32()`?  Why not `ToInt()`?  `System.Int32` is the name of the underlying data type in the .NET Class Library that the C# programming language maps to the keyword `int`.  Since the `Convert` class is also part of the .NET Class Library, it is called by its full name, not its C# name.  By defining data types as part of the .NET Class Library, multiple .NET languages like Visual Basic, F#, IronPython and others can share the same data types, and the same classes in the .NET Class Library.  At the end of this module, we'll post some links so you can learn more about .NET's Common Type System.
+> Why is the method name `ToInt32()`?  Why not `ToInt()`?  `System.Int32` is the name of the underlying data type in the .NET Class Library that the C# programming language maps to the keyword `int`.  Since the `Convert` class is also part of the .NET Class Library, it is called by its full name, not its C# name.  By defining data types as part of the .NET Class Library, multiple .NET languages like Visual Basic, F#, IronPython, and others can share the same data types and the same classes in the .NET Class Library.  At the end of this module, we'll post some links so you can learn more about .NET's Common Type System.
 
-The `ToInt32()` method has 19 overloaded version allowing it to accept virtually every data type as we'll see in a moment.  
+The `ToInt32()` method has 19 overloaded versions allowing it to accept virtually every data type as we'll see in a moment.  
 
 We used the `Convert.ToInt32()` method with a string here, but you should probably use `TryParse()` when possible.
 
@@ -263,10 +263,10 @@ When converting using `Convert.ToInt32()`, the literal float value is properly r
 
 ## Recap
 
-We covered several important concepts about data conversion and casting:
+We covered several important concepts of data conversion and casting:
 
 - Perform a data conversion when it's possible that doing so could cause a runtime error.
 - Perform an explicit cast to tell the compiler you understand the risk of losing data.
 - Rely on the compiler to perform an implicit cast when performing an expanding conversion.
 - Use the () cast operator and the data type to perform a cast.  Ex. `(int)myDecimal`.
-- Use the `Convert` class when you want to perform a narrowing conversion, but want to perform rounding, not truncation of information.
+- Use the `Convert` class when you want to perform a narrowing conversion, but want to perform rounding, not a truncation of information.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.implement-ai-organization.ai-at-scale
+title: Leverage Microsoft AI at Scale technology
+metadata:
+  title: Leverage Microsoft AI at Scale technology
+  description: Learn about the AI at Scale initiative and its potential for creating complex AI models.
+  ms.date: 11/20/2020
+  author: Adriamen
+  ms.author: v-admene
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-ai-at-scale.md)] 
