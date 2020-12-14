@@ -27,7 +27,7 @@ The following steps outline how Azure IoT Explorer and Azure IoT Hub direct meth
 1. The Azure Sphere is then restarted.
 1. Azure IoT Explorer queries and displays the device **ReportedRestartUTC** property.
 
-## Getting started with Direct method bindings
+## Getting started with direct method bindings
 
 A direct method binding maps an IoT Hub direct method command name with a handler function that will be called to implement the action.
 
@@ -110,7 +110,7 @@ lp_directMethodSetOpen(directMethodBindingSet, NELEMS(directMethodBindingSet));
 
 ### Closing the direct method binding set
 
-The device direct method bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+The direct method bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_directMethodSetClose();

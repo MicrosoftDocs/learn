@@ -1,4 +1,4 @@
-In this exercise, we'll partner a high-level application to send Azure RTOS real-time room environment sensor data to IoT Central.
+In this exercise, we'll partner a high-level application to send Azure RTOS real-time room environment sensor data to IoT Hub.
 
 ## Step 1: Open the project
 
@@ -41,12 +41,14 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. **DO NOT** copy the app_manifest.json that you saved to notepad as there are new properties in this application manifest.
 
-1. Update the connection properties for the Azure IoT Hub application.
+1. Update the connection properties for the Azure IoT Hub.
 
-   - Update **CmdArgs** with your Azure IoT Central ID scope.
-   - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
+    - Update **CmdArgs** with your Azure IoT DPS ID scope.
+    - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
 
-1. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
+1. Update the **AllowedConnections** with the **global device provisioning service endpoint**, your **DPS endpoint**, and your **Azure IoT Hub endpoint**. See the example below to understand the correct format for these endpoints.
+
+1. You can format the app_manifest.json document by right mouse clicking on the document and selecting **Format Document** from the context menu.
 
 1. Review your updated **app_manifest.json** file. It should look similar to the following.
 

@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.prod: learning-azure-iot-hub
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/16-exercise-partnering-with-rtos-environment.md)]
