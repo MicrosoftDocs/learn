@@ -34,6 +34,9 @@ general, a functional quantum computer should fulfill the following criteria:
   the measurement affects the state of the register. It's often performed only
   at the end of the computation.
 
+These five criteria are often known as the Divicenzo criteria for quantum
+computation.
+
 Building devices that meet these five criteria is one of the most demanding
 engineering challenges ever faced by humankind. However, in the recent years
 astounding advances in condense matter physics and quantum optics are allowing
@@ -57,13 +60,14 @@ operations in the qubit states. The qubit states are stored in the internal
 states of each ion. In particular, the qubit states are generally stored in two
 hyperfine levels of the ion.
 
-> [!NOTE] The hyperfine levels of an atom arise from the different possible
-> configurations of the spins of the electron and the nucleus. Generally, the
-> state with the lower energy, the ground state, is associated with the state
-> $|0\rangle$, and the first excited state is associated with the qubit state
-> $|1\rangle$.
+> [!NOTE]
+> The hyperfine levels of an atom arise from the different possible
+> configurations of the spin orientations of the electron and the nucleus.
+> Generally, the state with the lower energy, the ground state, is associated
+> with the state $|0\rangle$, and the first excited state is associated with the
+> qubit state $|1\rangle$.
 
-These computers use advanced lasers and electromagnetic pulses to cause
+These computers use lasers and electromagnetic pulses to cause
 transitions in the internal states of the ions and to modify the vibrational
 motion of the ion chain. By combining very carefully transformations of the
 vibrational motion of the ion chain and individual ion transitions, it's
@@ -112,7 +116,7 @@ controllable quantum system with two levels can be used to represent qubits. For
 example:
 
 - **Quantum dot computers:** quantum dots are small cumulus of semiconductor
-  atoms that behave like macroscopic atoms that can be place in superposed
+  atoms that behave like macroscopic atoms and can be prepared into superposed
   states. They can be used to represent qubits.
 - **Photonic quantum computers:** they use polarized photons to represent qubits
   and light guides to implement quantum operations.
@@ -120,7 +124,7 @@ example:
   computers that use a new type of material called *anyons* to create qubits
   very resilient to noise.
 
-There many other proposals for quantum computers since it's a field still under
+There many other proposals for quantum computers since the field is still under
 development. With Azure Quantum you have access to an ever-increasing collection
 of quantum computers to run your own quantum algorithms.
 
