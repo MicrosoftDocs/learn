@@ -14,7 +14,7 @@ You can think of Azure Files as a standard file share, hosted on Azure, that you
 
 Azure Files can be used to add to or replace a company's existing on-premises NAS devices or file servers. Some reasons why your organization will want to use Azure Files are:
 
-- Developers can store apps and configuration files in a file share and connect new VMs to the shared files. This action reduces the speed to get new machines into production.
+- Developers can store apps and configuration files in a file share and connect new VMs to the shared files. This action reduces the time to get new machines into production.
 - Cloud-based apps can efficiently write log files by using the File REST API to the shared storage. Developers can then map to the shared folder and run their local debugging tools on the shared data.
 - With file shares on Azure, a company doesn't need to buy and deploy expensive redundant hardware and manage software updates.
 - You can automate the creation and editing of file shares by using PowerShell or Azure CLI commands. Automation leads to an increase in the productivity of a company's operations.
