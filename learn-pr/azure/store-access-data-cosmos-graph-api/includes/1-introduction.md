@@ -8,9 +8,9 @@ In this module, you'll learn how to create an application that that uses an Azur
 
 In this module, you will:
 
-- Determine if a graph database fits the data needs of your application
-- Store data in a graph database from an application using the Gremlin API
-- Query data in a graph database from an application using the Gremlin API
+- Determine if a graph database fits the data needs of your application.
+- Store data in a graph database from an application using the Gremlin API.
+- Query data in a graph database from an application using the Gremlin API.
 
 ## Prerequisites
 
