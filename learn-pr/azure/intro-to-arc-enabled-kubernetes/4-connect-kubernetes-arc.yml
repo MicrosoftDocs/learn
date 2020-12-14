@@ -2,8 +2,8 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
-  description: TODO
-  ms.date: TODO
+  description: In this unit you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
+  ms.date: 11/13/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -11,35 +11,35 @@ metadata:
 title: Connect Kubernetes clusters to Azure Arc
 durationInMinutes: 5
 content: |
-  [!include[]includes/4-connect-kubernetes-arc.md)]
+  [!include[](includes/4-connect-kubernetes-arc.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1"
+  - content: "Which version of Helm is required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
     choices:
-    - content: "Answer 1"
+    - content: "1"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "The administrator needs to use Helm 3."
+    - content: "2"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "The administrator needs to use Helm 3."
+    - content: "3"
+      isCorrect: true
+      explanation: "The administrator needs to use Helm 3."
+    - content: "4"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
-  - content: "Question 2"
+      explanation: "This version is not available yet."
+  - content: "What's the minimum version of Azure CLI required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
     choices:
-    - content: "Answer 1"
+    - content: "2.15"
+      isCorrect: true
+      explanation: "You need an Azure CLI version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc enabled Kubernetes CLI extensions."
+    - content: "1.15"
       isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Answer 2"
+      explanation: "The version 2.15 of an Azure CLI is sufficient."
+    - content: "2.0"
       isCorrect: false
-      explanation: "Explanation 2"
-    - content: "Answer 3"
+      explanation: "You need at least version 2.15 of Azure CLI."
+    - content: "3.0"
       isCorrect: false
-      explanation: "Explanation 3"
-    - content: "Answer 4"
-      isCorrect: false
-      explanation: "Explanation 4"
+      explanation: "The version 2.15 of an Azure CLI is sufficient."

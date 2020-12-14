@@ -2,21 +2,27 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes
 metadata:
   title: Introduction to Azure Arc enabled Kubernetes
-  description: TODO
-  ms.date: TODO
+  description: Introduction to Azure Arc enabled Kubernetes
+  ms.date: 11/13/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Arc enabled Kubernetes
-summary: TODO
+summary: In this module, you learned how Azure Arc enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
 abstract: |
   In this module you will:
-  - TODO
-  - TODO
-  - TODO
+  - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
+  - Connect Kubernetes clusters to Azure Arc.
+  - Manage Azure Arc enabled Kubernetes clusters by using GitOps.
+  - Integrate Azure Arc enabled Kubernetes cluster with Azure services like Azure Monitor and Azure Policy.
 prerequisites: |
-  - TODO
+  - Containerization and its concepts
+  - Kubernetes architecture and its concepts
+  - Azure Resource Manager
+  - Azure Policy
+  - Azure command-line interface (CLI)
+  - GitOps principles
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -29,10 +35,9 @@ units:
 - learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview
 - learn.azure.intro-to-arc-enabled-kubernetes.3-architecture-components
 - learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
-- learn.azure.intro-to-arc-enabled-kubernetes.5-gitops
-- learn.azure.intro-to-arc-enabled-kubernetes.6-policy
-- learn.azure.intro-to-arc-enabled-kubernetes.7-deploy-applications
-- learn.azure.intro-to-arc-enabled-kubernetes.8-integrate-azure-monitor
-- learn.azure.intro-to-arc-enabled-kubernetes.9-summary
+- learn.azure.intro-to-arc-enabled-kubernetes.5-policy
+- learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
+- learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-monitor
+- learn.azure.intro-to-arc-enabled-kubernetes.8-summary
 badge:
-  uid: learn.azure.intro-to-arc-enabled-kubernetes
+  uid: learn.azure.intro-to-arc-enabled-kubernetes.badge
