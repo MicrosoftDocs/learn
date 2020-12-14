@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.protect-data-transit-at-rest.6a-exercise-configure-azure-sql-database-firewall
+uid: learn.wwl.protect-data-transit-at-rest.exercise-configure-azure-sql-database-firewall
 title: 'Exercise: Configure a server-based firewall rule using the Azure portal'
 metadata:
   title: 'Exercise: Configure a server-based firewall rule using the Azure portal'
