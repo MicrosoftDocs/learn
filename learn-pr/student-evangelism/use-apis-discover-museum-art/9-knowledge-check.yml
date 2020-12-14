@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.use-apis-discover-museum-art.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 12/09/2020
+  author: jlooper
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge.
+  questions:
+  - content: "All APIs need keys to ensure access"
+    choices:
+    - content: "true"
+      isCorrect: false
+      explanation: "Some APIs require keys, but many are open"
+    - content: "false"
+      isCorrect: true
+      explanation: "Most APIs do need keys to access them, but some are open"
+  - content: "OAuth uses access tokens to perform the following:"
+    choices:
+    - content: "obtain an authorization code"
+      isCorrect: true
+      explanation: "OAuth 2.0 protocol for Authorization Code Grant exchanges the token for an access code"
+    - content: "ensure a user is logged in"
+      isCorrect: false
+      explanation: "Authorization should not be confused with authentication"
+    - content: "Ensure security"
+      isCorrect: false
+      explanation: "Tokens should be rotated periodically by the user to ensure security"
+  - content: "APIs can be used for the following:"
+    choices:
+    - content: "E-commerce applications"
+      isCorrect: false
+      explanation: "This is true, but not the only use"
+    - content: "Cultural organizations"
+      isCorrect: false
+      explanation: "As we saw in this module, you can definitely use APIs for this purpose, but that's not all"
+    - content: "Payment transactions"
+      isCorrect: false
+      explanation: "Payments can definitely use APIs, but that's not their only use"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "APIs have many uses, including many more than those listed here"
