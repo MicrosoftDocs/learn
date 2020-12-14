@@ -2,12 +2,16 @@ Now that you have discovered some interesting collections at the Metropolitan Mu
 
 To access this API, you need either an access token or both an access token and an API key that acts as its authenticator. This API allows a user to visit an endpoint for individual visits by using a one-off access token, but to query the API with code, you need both elements.
 
+## Create a token and a key
+
 Go to the [API homepage](https://collection.cooperhewitt.org/api?azure-portal=true) and create an account. Once your account is created, you can create a key and an access token for yourself. Save the token that is generated in a text file somewhere safe on your local computer.
 
 >[!NOTE] 
 >Why create an access token AND a key? This API uses [OAuth (version 2)](https://collection.cooperhewitt.org/api/oauth2?azure-portal=true), which requires tokens to monitor and limit access to the API. The API key works with the access token to ensure that you have the authority to access the API in the way that you have set up the token.
 
 Once you have created a token and authenticated it with an API key, you can start sending that token in the URL of a test API call. Let's see what we can find in the Cooper Hewitt Design Museum!
+
+## Query the API
 
 Let's say you are interested in Art Nouveau, and you'd like to see what objects exist in the collection from this era. The API will allow you to get an ID for the era in question, and query it to get a url with a collection specified for the era.
 

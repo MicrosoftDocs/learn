@@ -1,6 +1,8 @@
 It's useful to test an API by sending queries over a browser's URL, complete with a query string populated by an access token, but in a production app, you might need to make a more complicated API call with various data assembled together to form a query.
 
-Many developers, therefore, rely on libraries that standardize the process of working with APIs. For JavaScript developers, Axios is an excellent choice. Python programmers might use Request. Using Powershell? Try RestMethod.
+Many developers, therefore, rely on libraries that standardize the process of working with APIs. For JavaScript developers, Axios is an excellent choice. Python programmers might use Request. Using PowerShell? Try RestMethod.
+
+## Query by using a URL
 
 Imagine that you are passionate about clock radios, and are interested in the interesting collection of well-designed examples at the Cooper Hewitt. You would construct a query with your API access token with this format, given that you want paginated results and only results with images: 
 

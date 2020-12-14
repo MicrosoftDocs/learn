@@ -2,12 +2,16 @@ So far, you have built an API that works on your local machine to give you a goo
 
 One wonderful thing about modern museum collections management is that the ongoing efforts to digitize collections and bring them online has also allowed the casual art lover to access this data. [The Smithsonian Museums](https://www.si.edu/openaccess?azure-portal=true) in the US, Amsterdam's [Rijksmuseum](https://www.rijksmuseum.nl/en/api/-rijksmuseum-oai-api-instructions-for-use?azure-portal=true), and the [Chicago Art Institute](https://aggregator-data.artic.edu/home?azure-portal=true) (US) are among many museums who are opening their collections to the public to access virtually.
 
+## Research the API
+
 The first step when researching the use of a third-party API is to check out its documentation. 
 Take a look at the API documentation provided by the museum.
 
 Another thing to consider is permissions. Read through the terms of use of all third-party APIs that you would like to use and make sure the way that you want to use it is acceptable. The Met Museum's [Terms and Conditions page](https://www.metmuseum.org/information/terms-and-conditions?azure-portal=true) is a good place to start. Since they have adopted the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0?azure-portal=true) license, there is no copyright on their dataset, which is helpful for the casual user.
 
 In addition, this API does not require an API key to use the service, so you can access many aspects of its collections by using 'GET' requests via a well-formed URL query. By visiting a given URL, you are using the Met Museum's API from right within your browser. This is the simplest of all ways to use an API. In a later unit, you will learn how to use code to call APIs.
+
+## Query the API
 
 The Met lists its endpoints, or the URL that you will use to query for objects, as including Objects, (one) Object, Departments, and Search.
 
@@ -27,6 +31,8 @@ This query gives you the information to retrieve the objects that are returned. 
 
 :::image type="content" source="../media/costume-armor.png" alt-text="costume armor from the Met.":::
 > This costume helmet was acquired by the Metropolitan Museum in 1988 and currently resides in the Arms and Armor department.
+
+## Summary
 
 The Metropolitan Museum's well-organized and easy-to-access API is a great place to start imagining how you might use an API in your web site. You could build a search by using the `search` endpoint using query parameters. You could query the `department` for a group of objectIds and loop over them to create a list of interesting objects. You can explore the collection in depth and in detail without ever touching or even understanding the database underlying it. That's the power of a great API!
 

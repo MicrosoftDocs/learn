@@ -30,13 +30,14 @@ products:
 - "vs-code"
 units:
 - learn.student-evangelism.use-apis-discover-museum-art.1-introduction
-- learn.student-evangelism.use-apis-discover-museum-art.2-build-local-api
-- learn.student-evangelism.use-apis-discover-museum-art.3-query-met-api
-- learn.student-evangelism.use-apis-discover-museum-art.4-authentication-strategies
-- learn.student-evangelism.use-apis-discover-museum-art.5-query-cooper-hewitt-api
-- learn.student-evangelism.use-apis-discover-museum-art.6-handle-responses
-- learn.student-evangelism.use-apis-discover-museum-art.7-use-libraries
-- learn.student-evangelism.use-apis-discover-museum-art.8-check
-- learn.student-evangelism.use-apis-discover-museum-art.9-summary
+- learn.student-evangelism.use-apis-discover-museum-art.2-what-is-api
+- learn.student-evangelism.use-apis-discover-museum-art.3-build-local-api
+- learn.student-evangelism.use-apis-discover-museum-art.4-query-met-api
+- learn.student-evangelism.use-apis-discover-museum-art.5-authentication-strategies
+- learn.student-evangelism.use-apis-discover-museum-art.6-query-cooper-hewitt-api
+- learn.student-evangelism.use-apis-discover-museum-art.7-handle-responses
+- learn.student-evangelism.use-apis-discover-museum-art.8-use-libraries
+- learn.student-evangelism.use-apis-discover-museum-art.9-knowledge-check
+- learn.student-evangelism.use-apis-discover-museum-art.10-summary
 badge:
   uid: learn.student-evangelism.use-apis-discover-museum-art.badge
