@@ -9,7 +9,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link.
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FWayPointVenturesOrg%2Ftemplates%2Fmain%2Fsentinel-deploy%2FSentinelTemplate.json)
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Fmaster%2Flearn-pr%2Fazure%2Fthreat-hunting-sentinel%2Fresources%2FSentinelTemplate.json?azure-portal=true)
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
