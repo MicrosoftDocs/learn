@@ -53,25 +53,25 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
-1. When you initiate the device restart direct method, you will observe the device restarting.
+- When you initiate the device restart direct method, you will observe the device restarting.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
-1. When you initiate the device restart direct method, you will observe the device restarting.
+- When you initiate the device restart direct method, you will observe the device restarting.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The User LED will blink every 5 seconds when connected to Azure.
+- The User LED will blink every 5 seconds when connected to Azure.
 
-1. When you initiate the device restart direct method, you will observe the device restarting.
+- When you initiate the device restart direct method, you will observe the device restarting.
 
 ## Testing Azure IoT Hub direct method commands
 
