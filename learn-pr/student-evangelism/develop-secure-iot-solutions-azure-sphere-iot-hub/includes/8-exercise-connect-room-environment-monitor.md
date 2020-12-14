@@ -119,7 +119,7 @@ From the Azure portal:
 
 ## Step 5: Configure Azure IoT Explorer
 
-This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices. You should have already installed Azure IoT Explorer in the previous exercise.
+This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices. You should have already installed Azure IoT Explorer in the previous exercise.
 
 You need the connection string for your IoT Hub.
 
