@@ -8,9 +8,7 @@ From your web browser, navigate to [https://portal.azure.com](https://portal.azu
 
 ## Step 2: Prepare Azure resources
 
-You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a Device Provisioning Service (**DPS**) and a linked Azure IoT hub.
-
-
+You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a Device Provisioning Service (**DPS**) and a linked Azure IoT Hub.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2FAzure-Sphere-Developer-Learning-Path%2Fmaster%2Fdocs%2Fdocs_vs_code_iot_hub%2FLab_2_Send_Telemetry_to_Azure_IoT_Hub%2Fsetup%2Fazuredeploy.json?azure-portal=true)
 
@@ -18,11 +16,11 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
 
 2. Choose the site located closest to you.
 
-3. Select the tier for Azure IoT Hub. The default tier is **F1**, which is free. You can only have one free IoT hub per subscription. If you already have a free IoT hub, then either select **S1** ([pricing](https://azure.microsoft.com/pricing/details/iot-hub/)) or delete your existing free IoT hub before proceeding.
+3. Select the tier for Azure IoT Hub. The default tier is **F1**, which is free. You can only have one free IoT Hub per subscription. If you already have a free IoT Hub, then either select **S1** ([pricing](https://azure.microsoft.com/pricing/details/iot-hub?azure-portal=true)) or delete your existing free IoT Hub before proceeding.
 
 4. Select **Next** > **Deploy**. The deployment will take three to four minutes to complete.
 
-5. When the deployment has completed, select **Manage your resources**. You will see two services listed in the Azure portal: the Device Provisioning Service (DPS) and IoT Hub. Appended to the resource names is a random string to ensure that the names are globally unique. 
+5. When the deployment has completed, select **Go to resource group**. You will see two services listed in the Azure portal: the Device Provisioning Service (DPS) and IoT Hub. Appended to the resource names is a random string to ensure that the names are globally unique. 
 
    > [!TIP]
    > If you don't see the two services listed then click the fresh button.
@@ -31,13 +29,13 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
 
 Don't close the Azure Web portal. You will need to access it again.
 
-## Step 3: Establish trust between your Azure Sphere Tenant and DPS
+## Step 3: Establish trust between your Azure Sphere tenant and DPS
 
-You need to set up a trust relationship between your Azure Sphere device tenant and your Device Provisioning Service.
+You need to establish a trust relationship between your Azure Sphere tenant and your Device Provisioning Service.
 
-Devices claimed by your Azure Sphere device tenant are automatically enrolled with the linked IoT hub by the Device Provisioning Service when the device first connects.
+Devices claimed by your Azure Sphere tenant are automatically enrolled with the linked IoT Hub by the Device Provisioning Service when the device first connects.
 
-### Download the Azure Sphere device tenant authentication CA certificate
+### Download the Azure Sphere tenant authentication CA certificate
 
 1. If you're using Windows, open a Windows **PowerShell command line**. If you're using Linux, open **Terminal**.
 
@@ -57,7 +55,7 @@ Devices claimed by your Azure Sphere device tenant are automatically enrolled wi
 
    The output file must have the .cer extension.
 
-### Upload the Azure Sphere device tenant certificate to DPS
+### Upload the Azure Sphere tenant certificate to DPS
 
 1. Switch back to the Azure portal.
 
