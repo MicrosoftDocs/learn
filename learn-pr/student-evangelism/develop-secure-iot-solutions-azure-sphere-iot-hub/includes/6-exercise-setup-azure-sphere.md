@@ -94,7 +94,7 @@ Install the GNU Arm Embedded Toolchain for Linux
     sudo apt-get install libncurses5
     ```
 
-## Recommended Visual Studio Code Extension
+## Recommended Visual Studio Code extension
 
 The Peacock extension allows you to change the color of your Visual Studio Code workspace. The Peacock extension is useful when you have multiple instances of Visual Studio Code open. In one of the exercises an instance of Visual Studio Code will be attached to the real-time core, and another instance will be attached to the high-level application core.
 

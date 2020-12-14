@@ -2,7 +2,7 @@ The microbiology laboratory is to run a set of experiments for a new customer. T
 
 In this unit, you will learn how to deploy a real-time application onto the Azure Sphere to support the new temperature, humidity, and pressure sensor.
 
-## Azure Sphere Architecture
+## Azure Sphere architecture
 
 The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7, which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a real-time operating system such as Azure RTOS or FreeRTOS.
 
