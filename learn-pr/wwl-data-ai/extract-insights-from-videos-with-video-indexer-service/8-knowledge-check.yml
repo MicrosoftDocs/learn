@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-insights-from-videos-with-video-indexer-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/24/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which two required values for an API request are specific to a Video Indexer subscription? (Choose one.):"
+    choices:
+    - content: "Endpoint and Name"
+      isCorrect: false
+      explanation: "False. The endpoint is not unique and name is used to specify how to title the video."
+    - content: "Account ID and API Key"
+      isCorrect: true
+      explanation: "True. The Account ID and API Key combination is unique to a Video Indexer subscription."
+    - content: "Location and Partition"
+      isCorrect: false
+      explanation: "False. The location is either ‘trial’ or an Azure region so it is not unique to a subscription."
+  - content: "Which of the following items is a temporal segment that videos are split into by Video Indexer? (Choose one.):"
+    choices:
+    - content: "Shots"
+      isCorrect: true
+      explanation: "True. Each scene is split into one or more shots."
+    - content: "Tags"
+      isCorrect: false
+      explanation: "False. Tags are one of the insights extracted; not one of the levels in which videos are segmented."
+    - content: "Sentiments"
+      isCorrect: false
+      explanation: "False. Sentiments are one of the insights extracted; not one of the levels in which videos are segmented."
+  - content: "What results will be returned from a search request? (Choose one.):"
+    choices:
+    - content: "The search will return links to the start of videos only."
+      isCorrect: false
+      explanation: "False. The search results may start at timestamp 00:00 if match is for the whole video; but that is not all that is included."
+    - content: "The search will return one item per video based on title and description."
+      isCorrect: false
+      explanation: "False. The search includes title and description; but searches on additional information and may include more than one match per video."
+    - content: "The search will return exact moments in the video based on insights."
+      isCorrect: true
+      explanation: "True. The search results will include exact start times where an insight exists, possibly multiple matches for the same video if multiple segments are matched."

@@ -20,15 +20,15 @@ quiz:
     choices:
     - content: "Aggregate policies and initiative assignments via Azure Policy."
       isCorrect: true
-      explanation: Correct, management groups can be used to aggregate policies and initiative assignments via Azure Policy.
+      explanation: Correct. Management groups can be used to aggregate policies and initiative assignments via Azure Policy.
     - content: "Autoscaling of resources when load increases."
       isCorrect: false
-      explanation: Management groups cannot be used to autoscale resources.
+      explanation: Management groups can't be used to autoscale resources.
     - content: "Storing sensitive data such as keys and secrets."
       isCorrect: false
-      explanation: Management groups cannot be used to store sensitive data.
+      explanation: Management groups can't be used to store sensitive data.
 
-  - content: Subscriptions are a unit of management, billing, and scale within Azure.  Which one of these items follows the Microsoft Cloud Adaption Framework for Azure as a valid design consideration or recommendation?
+  - content: Subscriptions are a unit of management, billing, and scale within Azure. Which one of these items follows the Microsoft Cloud Adoption Framework for Azure as a valid design consideration or recommendation?
     choices:
     - content: Use multiple identity subscriptions to host Windows Server Active Directory domain controllers.
       isCorrect: false
@@ -38,4 +38,4 @@ quiz:
       explanation: This is the correct answer.
     - content: Use a rigid subscription model to help maintain proper governance across the organization.
       isCorrect: false
-      explanation: Avoid a rigid subscription model, and opt instead for a set of flexible criteria to group subscriptions across the organization. This flexibility ensures that as your organization's structure and workload composition changes, you can create new subscription groups instead of using a fixed set of existing subscriptions. One size doesn't fit all for subscriptions. What works for one business unit might not work for another. Some applications might coexist within the same landing zone subscription, while others might require their own subscription.
+      explanation: Avoid a rigid subscription model. Instead, use a set of flexible criteria to group subscriptions across the organization. This flexibility ensures that as your organization's structure and workload composition changes, you can create new subscription groups instead of using a fixed set of existing subscriptions. One size doesn't fit all for subscriptions. What works for one business unit might not work for another. Some applications might coexist within the same landing zone subscription, while others might require their own subscription.

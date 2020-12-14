@@ -4,7 +4,7 @@ Before deploying an Azure landing zone, it's important to understand what you wi
 
 Regardless of the deployment option, you should carefully consider each design area. Your decisions affect the platform foundation on which each landing zone depends.
 
-| Design areas | Objective  | Relevant methodologies |
+| Design areas | Objective | Relevant methodologies |
 |---|---|---|
 | Enterprise enrollment | For enterprise customers with an Azure commitment, proper tenant creation and enrollment is an important early step. | Ready |
 | Identity | Identity and access management is a primary security boundary in the public cloud. It's the foundation for any secure and fully compliant architecture. | Ready |
@@ -29,15 +29,15 @@ Subscriptions should be used as a unit of management and scale aligned with busi
 
 Azure Policy should be used to provide guardrails and ensure continued compliance with your organization's platform, along with the applications deployed onto it. Azure Policy also provides application owners with sufficient freedom and a secure unhindered path to the cloud.
 
-**Design impact:** Azure Policy provides a cloud-first governance approach by enforcing sound policies. It is also used in a DeployIfNotExists capacity to automatically deploy critical architecture elements if they are deleted or changed, integrating the CI/CD pipeline for environment deployment with the central governance tooling.
+**Design impact:** Azure Policy provides a cloud-first governance approach by enforcing sound policies. It is also used in a DeployIfNotExists capacity to automatically deploy critical architecture elements if they are deleted or changed, integrating the continuous integration/continuous development pipeline for deploying environments with the central governance tooling.
 
 ### Single control and management plane
 
 <!-- cSpell:ignore AppOps -->
 
-Enterprise-scale architecture shouldn't consider any abstraction layers, such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operation teams and dedicated workload operations teams. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels subject to role-based access and policy-driven controls. Azure can be used to establish a standardized set of policies and controls for governing the entire enterprise estate.
+Enterprise-scale architecture shouldn't consider any abstraction layers such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operation teams and dedicated workload operations teams. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels subject to role-based access and policy-driven controls. Azure can be used to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
-**Design impact:** Role-based access control (RBAC) and Azure Policy are used to ensure that all workload deployments adhere to separation of duties and other governance requirements.
+**Design impact:** Role-based access control and Azure Policy are used to ensure that all workload deployments adhere to separation of duties and other governance requirements.
 
 ### Application-centric and archetype-neutral
 
@@ -75,7 +75,7 @@ Rather than provide opinionated solutions the start small approach uses decision
 
 ### Deferred decisions
 
-When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The start-small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework guide implementation of those individual disciplines.
+When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The start-small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework (CAF) guide implementation of those individual disciplines.
 
 **Design impact:** You may need to complete a foundational implementation of the Govern, Manage, and Secure methodologies in parallel to landing zone deployment.
 
@@ -114,7 +114,7 @@ Configuring an enterprise-ready environment will take time. This approach will n
 
 All initial landing zone templates have limitations. Guardrails or policies during refactoring should reflect those limitations. Before beginning a landing zone refactoring process, it is important to understand the long-term requirements of the cloud adoption plan and classification of the candidate workloads, compared to the initial template limitations.
 
-As an example of establishing refactoring guardrails, lets compare the development approach in the prior example and the CAF Migration landing zone blueprint.
+As an example of establishing refactoring guardrails, let's compare the development approach in the prior example and the CAF Migration landing zone blueprint.
 
 - Per the [assumptions of the CAF Migration landing zone blueprint](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone#assumptions), this initial landing zone is not designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring.
 - In this example, lets assume that the portfolio of 100 workloads will require both mission critical and sensitive data hosting capabilities.
@@ -126,13 +126,13 @@ To balance these two competing requirements, the adoption team and platform team
 - The cloud platform team will work with the security and governance teams to implement a security baseline. Once security approves the implementation, the adoption team will be cleared to migrate workloads that have access to some sensitive data.
 - The cloud platform team will work with the operations team to implement a management baseline. Once the operations team approves the implementation, the adoption team will be cleared to migrate workloads with a higher level of criticality.
 
-For this example, the above set of agreed upon conditions will allow the adoption team get started on their migration effort. It also helps the platform team shape their interactions with other teams, as they build towards a longer-term enterprise ready environment.
+For this example, the above set of agreed upon conditions will allow the adoption team get started on their migration effort. It also helps the platform team shape their interactions with other teams as they build toward a longer-term enterprise ready environment.
 
 #### Meeting long-term requirements while refactoring
 
 The section of the Ready methodology on expanding your landing zone will aid in moving towards the longer term requirements. As the cloud adoption team progresses with their adoption plan, review [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
 
-:::image type="content" source="../media/refactor-methodologies.png" alt-text="Image showing parallel landing zone iteration" border="false":::
+:::image type="content" source="../media/refactor-methodologies.png" alt-text="Image showing parallel landing zone iteration." border="false":::
 _Figure 2: Deeper methodologies assisting a parallel landing zone iteration._
 
-Each subsection of [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern methodology or the Manage methodology) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines.
+Each subsection of [expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern or the Manage methodology) of this framework can help to go beyond basic landing zone modifications and implement long-term disciplines with.

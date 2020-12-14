@@ -6,7 +6,7 @@ metadata:
   description: Exercise - Configure the Azure Stream Analytics job output
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

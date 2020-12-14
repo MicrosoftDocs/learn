@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.6-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

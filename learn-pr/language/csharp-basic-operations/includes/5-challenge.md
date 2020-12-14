@@ -12,7 +12,7 @@ Begin with this line of code:
 int fahrenheit = 94;
 ```
 
-To convert temperatures in degrees Fahrenheit to Celsius, first subtract 32, then multiply by five nineths (5 / 9).
+To convert temperatures in degrees Fahrenheit to Celsius, first subtract 32, then multiply by five ninths (5 / 9).
 
 ### Step 3: Display the result of the temperature conversion in a formatted message.
 

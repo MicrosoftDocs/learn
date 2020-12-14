@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics
+metadata:
+  title: Ingest data with Apache Spark notebooks in Azure Synapse Analytics
+  description: "Ingest data with Apache Spark notebooks in Azure Synapse Analytics"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Ingest data with Apache Spark notebooks in Azure Synapse Analytics
+summary: Learn how  to ingest data using Apache Spark Notebooks in Azure Synapse Analytics.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand the use-cases for Spark Notebooks
+  - Create a Spark Notebook in Azure Synapse Analytics
+  -  Understand the supported languages in Spark Notebooks
+  - Develop Spark Notebooks
+  - Run Spark Notebooks
+  - Load data in Spark Notebooks
+  - Save Spark Notebooks
+prerequisites: |
+  Before taking this module, it is recommended that you complete the following modules:
+  - Data Fundamentals
+  - Introduction to Azure Data Factory
+  - Introduction to Azure Synapse Analytics
+iconUrl: /learn/achievements/ingest-data-with-apache-spark-notebooks-in-azure-synapse-analytics.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.introduction
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.introduction-to
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.understand-use-cases-for
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.exercise-create-spark-notebook
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.discover-supported-languages
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.develop
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.exercise-develop
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.run
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.exercise-run
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.load-data
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.exercise-load-data
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.save
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.knowledge-check
+- learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.badge

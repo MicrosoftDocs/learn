@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug.2-debugger
+title: What's a debugger?
+metadata:
+  title: What's a debugger?
+  description: Learn what a debugger is and why it's useful.
+  author: jongalloway
+  ms.author: jogallow
+  ms.date: 10/28/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-debugger.md)]

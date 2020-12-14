@@ -20,7 +20,7 @@ There are several additional tools you can use to map your server estate and ide
 
 ## Data Migration Assistant
 
-The MAP toolkit and Database Experimentation assistant can help you identity your databases and highlight any incompatibilities or potential performance issues in your database, but the Data Migration Assistant (DMA) is a comprehensive toolkit that assesses, identifies new features you can use to benefit your application, and ultimately performs the migration. This tool can be used to migrate between versions of SQL Server, from on-premises to an Azure VM or Azure SQL Database or Azure SQL Managed Instance.
+The MAP toolkit and Database Experimentation assistant can help you identify your databases and highlight any incompatibilities or potential performance issues in your database, but the Data Migration Assistant (DMA) is a comprehensive toolkit that assesses, identifies new features you can use to benefit your application, and ultimately performs the migration. This tool can be used to migrate between versions of SQL Server, from on-premises to an Azure VM or Azure SQL Database or Azure SQL Managed Instance.
 
 One of the main benefits of the DMA is the ability to assess queries both from Extended Event trace files and SQL queries from an external application, for example T-SQL queries in the C# application code for your application. You can generate a full report using a C# source and upload the migration assessment to the DMA. The DMA mitigates the risk of moving to a newer version of SQL Server or to Azure SQL Database.
 

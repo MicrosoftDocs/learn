@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn-windows.introduction-to-web-development.6-tracking-changes
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of the basics of web development
+  ms.date: 12/04/2020
+  author: mmpadget
+  ms.author: quradic
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: What is the main purpose of HTML?
+      choices:
+      - content: HTML is used to provide webpage structure.
+        explanation: Correct! HTMl provides the structural building block of a web page.
+        isCorrect: true
+      - content: HTML is used to style web pages.
+        explanation: Incorrect. CSS is generally used for styling HTML elements.
+        isCorrect: false
+      - content: User interaction or events.
+        explanation: Incorrect. JavaScript is generally used for interactivity.
+        isCorrect: false
+    - content: ___ is a design principle where you put code into different files.
+      choices:
+      - content: Progressive enhancement.
+        explanation: Incorrect. Progressive enhancement is where you start with essential content and add more features if supported.
+        isCorrect: false
+      - content: Separation of concerns.
+        explanation: Correct! You organize files so that each file or section addresses a separate concern.
+        isCorrect: true
+      - content: Graceful degradation.
+        explanation: Incorrect. Graceful degradation is where you start with all the features and remove them if not supported.
+        isCorrect: false
+    - content: In HTML and CSS, `#msg` and `.list` are examples of ___.
+      choices:
+      - content: A - Elements.
+        explanation: Incorrect. HTML, head, or body are examples of elements.
+        isCorrect: false
+      - content: B - Custom attributes.
+        explanation: While these two do represent custom HTML attributes, they are not the attributes themselves.
+        isCorrect: false
+      - content: C - Key-value pairs.
+        explanation: "Incorrect. In CSS, 'font-family: monospace' is a key-value pair."
+        isCorrect: false
+      - content: D - Selectors.
+        explanation: While these two are selectors, they aren't normal selectors, and there's a better answer.
+        isCorrect: false
+      - content: E - Both B and D. Use CSS selectors to target custom attributes in HTML.
+        explanation: Correct! They are CSS selectors that represent custom attributes in HTML.
+        isCorrect: true
+    - content: In the context of Web development, Console is ___
+      choices:
+      - content: JavaScript code.
+        explanation: While partially correct, this doesn't capture the entirety of what the Console does.
+        isCorrect: false
+      - content: A way to send a message to the browser.
+        explanation: While partially correct, this doesn't capture the entirety of what the Console does.
+        isCorrect: false
+      - content: A tab in the browser developer tools
+        explanation: While partially correct, this doesn't capture the entirety of what the Console does.
+        isCorrect: false
+      - content: All of the above.
+        explanation: Correct! The code you write in JavaScript appears in the console tab of the browser.
+        isCorrect: true

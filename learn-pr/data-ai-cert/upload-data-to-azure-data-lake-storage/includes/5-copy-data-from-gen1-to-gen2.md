@@ -132,7 +132,7 @@ Set permissions to allow the data factory to access the data in your Data Lake S
     ![Screenshot showing how to select the destination](../media/6-select-destination.png)
 
 1. On the **Specify Azure Data Lake Storage Gen2 connection** page:
-    - In the **Storage account name** list, select your Data Lake Storage Gen2 account.
+    - In the **Storage account name** list, select your Data Lake Storage Gen2 account, this will automatically populate the access key.
     - To create the connection, select **Finish** > **Next**.
 
 1. On the **Choose the output file or folder** page, next to **Folder path**, enter **copyfromadlsgen1**. Then select **Next**.

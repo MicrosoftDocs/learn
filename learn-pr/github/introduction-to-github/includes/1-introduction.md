@@ -14,6 +14,9 @@ In this module, you will:
 - Make commits to update project source
 - Introduce changes with pull requests
 - Deploy a web page to GitHub Pages
+- Recognize the differences between Git and GitHub and the roles they play in the software development lifecycle 
+- Describe a repository fork and how it differs from a clone 
+- Explain the functionality of repository labels and where to apply them in issues and pull requests 
 
 ## Prerequisites
 

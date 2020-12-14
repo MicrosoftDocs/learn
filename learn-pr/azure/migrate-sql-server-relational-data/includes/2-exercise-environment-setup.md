@@ -5,15 +5,15 @@ In this exercise, you lay the groundwork for using Data Migration Assistant. You
 
 This deployment will create the following resources:
 
-- A resource group
-- A SQL Server instance
-- An empty Azure SQL database
-- A virtual machine running SQL Server
-- Network and storage resources to support the previous items
+- A resource group.
+- A SQL Server instance.
+- An empty Azure SQL database.
+- A virtual machine running SQL Server.
+- Network and storage resources to support the previous items.
 
 ## Deploy the template
 
-1. Select the following **Deploy to Azure** button to open the Azure portal and deploy the resources needed for the exercises.
+1. To open the Azure portal and deploy the resources needed for the exercises, select **Deploy to Azure**.
 
     [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-migrate-sql-server-relational-data%2Fmaster%2Fazuredeploy.json?azure-portal=true)
 
@@ -33,6 +33,6 @@ This deployment will create the following resources:
     | Target SQL DB Administrator Login | azuresqladmin |
     | Target SQL DB Administrator Password | Enter a complex password |
 
-1. Select **I agree to the terms and conditions stated above** and select **Purchase**.
+1. Select **I agree to the terms and conditions stated above**, and select **Purchase**.
 
 Make note of the passwords that you used for the accounts, because you'll use them later. This deployment will take 10 to 15 minutes. While this is in progress, continue to the next unit to learn about the migration process.

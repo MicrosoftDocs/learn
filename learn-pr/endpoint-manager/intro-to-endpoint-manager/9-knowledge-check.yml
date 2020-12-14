@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.9-knowledge-check
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 10/15/2020
+  author: Erikre 
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager  
+  ROBOTS: NOINDEX
+title: Knowledge Check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Microsoft Endpoint Manager provide for an organization?"
+    choices:
+    - content: "Endpoint Manager helps keep an organization's cloud and on-premises devices, apps, and data secure."
+      isCorrect: true
+      explanation: "Microsoft Endpoint Manager integrates Microsoft Intune and Microsoft Endpoint Configuration Manager to help protect devices, apps, and data, whether they are located on-premises. In addition, the devices can be personally owned or corporate owned."
+    - content: "Endpoint Manager ensures an organization no longer needs credentials to access and share company data."
+      isCorrect: false
+      explanation: "Microsoft Endpoint Manager integrates Microsoft Intune and Microsoft Endpoint Configuration Manager to help protect devices, apps, and data, whether they are located on-premises. In addition, the devices can be personally owned or corporate owned."
+    - content: "Endpoint Manager prevents remote devices and apps from accessing an organization's resources."
+      isCorrect: false
+      explanation: "Microsoft Endpoint Manager integrates Microsoft Intune and Microsoft Endpoint Configuration Manager to help protect devices, apps, and data, whether they are located on-premises. In addition, the devices can be personally owned or corporate owned."
+  - content: "What are endpoints?"
+    choices:
+    - content: "Endpoints are the policies that the users and groups of an organization use to safely transfer data."
+      isCorrect: false
+      explanation: "Microsoft Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses. Additionally, endpoints also include the apps used by an organization. These endpoints are managed in different environments based on where these endpoints are located. Microsoft Endpoint Manager manages multiple endpoint environments, including cloud endpoints, on-premises endpoints, and co-managed endpoints."
+    - content: "Endpoints are the end-users of an organization."
+      isCorrect: false
+      explanation: "Microsoft Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses. Additionally, endpoints also include the apps used by an organization. These endpoints are managed in different environments based on where these endpoints are located. Microsoft Endpoint Manager manages multiple endpoint environments, including cloud endpoints, on-premises endpoints, and co-managed endpoints."
+    - content: "Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses."
+      isCorrect: true
+      explanation: "Microsoft Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses. Additionally, endpoints also include the apps used by an organization. These endpoints are managed in different environments based on where these endpoints are located. Microsoft Endpoint Manager manages multiple endpoint environments, including cloud endpoints, on-premises endpoints, and co-managed endpoints."
+  - content: "What is co-management as it applies to Microsoft Endpoint Manager?"
+    choices:
+    - content: "Co-management describes how an organization can concurrently manage Windows 10 devices using both Configuration Manager and Microsoft Intune. "
+      isCorrect: true
+      explanation: "Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. Co-management combines your existing on-premises Configuration Manager investment with the cloud, by using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. By using co-management, you keep some tasks on-premises, while running other tasks in the cloud with Intune."
+    - content: "Co-management describes how an organization can manage non-Windows devices at an organization using Microsoft 365, BitLocker, and Azure Active Directory."
+      isCorrect: false
+      explanation: "Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. Co-management combines your existing on-premises Configuration Manager investment with the cloud, by using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. By using co-management, you keep some tasks on-premises, while running other tasks in the cloud with Intune."
+    - content: "Co-management describes how company owned devices can be managed without using cloud-based services."
+      isCorrect: false
+      explanation: "Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. Co-management combines your existing on-premises Configuration Manager investment with the cloud, by using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. By using co-management, you keep some tasks on-premises, while running other tasks in the cloud with Intune."

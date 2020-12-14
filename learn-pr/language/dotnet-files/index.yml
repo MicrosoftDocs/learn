@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dotnet-files
+metadata:
+  title: Work with files and directories in a .NET app
+  description: Learn how to use .NET, C#, and System.IO to work with directories, paths, files, and the file system.
+  ms.date: 10/28/2020
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Work with files and directories in a .NET app
+summary: Build an app that manipulates files and directories with C# and .NET.
+abstract: |   
+  By the end of this module, you will be able to:
+
+  - Work with directories.
+  - Create and delete files.
+  - Read from files.
+  - Write to files.
+  - Parse data in files.
+prerequisites: |   
+  - Experience writing C# at the beginner level 
+  - Familiarity with basic programming constructs, such as loops and "if" statements 
+iconUrl: /learn/achievements/dotnet-files.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- dotnet-core
+units:
+- learn.dotnet-files.1-introduction
+- learn.dotnet-files.2-file-system
+- learn.dotnet-files.3-exercise-file-system
+- learn.dotnet-files.4-paths
+- learn.dotnet-files.5-exercise-paths
+- learn.dotnet-files.6-create-files-directories
+- learn.dotnet-files.7-exercise-create-files-directories
+- learn.dotnet-files.8-read-write-files
+- learn.dotnet-files.9-exercise-read-write-files
+- learn.dotnet-files.10-summary
+badge:
+  uid: learn.dotnet-files.badge
