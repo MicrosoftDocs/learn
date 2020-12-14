@@ -11,7 +11,7 @@ Now that you have reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Download PDF of Apply best practices for fueling innovation in your organization](https://aka.ms/AIBSSCAINN).
-* [Download PDF of Leverage Microsoft AI at Scale technology](https://aka.ms/AIBSSCAINN).
+* [Download PDF of Leverage Microsoft AI at Scale technology](https://aka.ms/AIBSAISCALE).
 * [Download PDF of Evaluate and prioritize AI investments](https://aka.ms/AIBSSCAECO).
 * [Download PDF of Establish AI-related roles and responsibilities](https://aka.ms/AIBSSCAORG).
 * Learn more about how [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) can help your organization foster innovation, growth, and a culture of data-driven decisions. Contact your Microsoft Services account representative for more information.
