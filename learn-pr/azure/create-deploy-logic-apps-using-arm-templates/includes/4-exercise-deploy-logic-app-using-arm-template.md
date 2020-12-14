@@ -1,3 +1,4 @@
+
 In this unit, we'll deploy a Logic Apps workflow using an Azure Resource Manager template. 
 
 ### Creating resources in Azure
@@ -15,7 +16,9 @@ Because we are in the free Azure sandbox environment, you don't need to do this 
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-logic-apps-and-arm-templates/master/basic-template/template.json > basic-template.json
     ```
 
+
 1. To view our template, open it in the built-in editor.
+
     ```azurecli
     code basic-template.json
     ```
@@ -25,6 +28,7 @@ Because we are in the free Azure sandbox environment, you don't need to do this 
     [!code-json[](../code/basic-template/template.json)]
 
     As you can see from the preceding JSON definition, and as the template name suggests, this Logic App is basic. Let's look at the main components of this app.
+
 
     In the following snippet, we see that the app is called `HelloLogicAppsTemplate`. This name is hard-coded in the template. The location in which the app runs is also hard-coded to `westus2`.
 
@@ -38,12 +42,12 @@ Because we are in the free Azure sandbox environment, you don't need to do this 
 
     [!code-json[](../code/basic-template/template.json?range=28-38)]
 
+
     The Azure Resource Manager template has one output in the template's **outputs** section called `logicAppUrl`. This output variable lists the URL for the logic app when it is deployed. This makes it easy to test the app. The output uses `listCallbackURL` to create the URl, but the workflow name and trigger name are once again both hard-coded here.
 
     [!code-json[](../code/basic-template/template.json?range=45-50)]
 
-
-    Let's now deploy this logic app and test it. 
+    Let's now deploy this logic app and test it.
 
 ### Validate and deploy the template
 
@@ -60,6 +64,7 @@ To deploy our logic app, we'll use the `az deployment group create` command beca
     The `--template-file` argument points to the local template. The template's filename is **basic-template.json**.
 
     You see a large JSON block as output, which tells you that the template passed validation.
+
 
     Azure Resource Manager fills in the template parameters, and checks whether the template would successfully run in your subscription.
 

@@ -76,7 +76,7 @@ Now that your app is deployed, let's tour the unfinished app.
 
     :::image type="content" source="../media/4-run-razor-pages-project/products-admin.png" alt-text="The ASP.NET Core Razor Pages app's products administration page." border="true" lightbox="../media/4-run-razor-pages-project/products-admin.png":::
 
-    This screenshot represents the rendered *:::no-loc text="Index.cshtml":::* Razor page located in the *:::no-loc text="Pages/Products":::* directory. The URL ends with *:::no-loc text="Product":::*. By convention, Razor Pages apps map page routes to the files within the *:::no-loc text="Pages":::* directory structure.
+    This screenshot represents the rendered *:::no-loc text="Index.cshtml":::* Razor page located in the *:::no-loc text="Pages/Products":::* directory. The URL ends with *:::no-loc text="Products":::*. By convention, Razor Pages apps map page routes to the files within the *:::no-loc text="Pages":::* directory structure.
 
     This Razor page has requested a list of available products from the web API. Currently, you can only choose to read the current list of products and edit or delete an existing product.
 
