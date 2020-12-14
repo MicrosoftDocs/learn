@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-control-flow.1-use-if-else-statements
+metadata:
+  title: Exercise - Use if and else statements
+  description: Exercise - Use if and else statements.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Use if and else statements
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-use-if-else-statements.md)]

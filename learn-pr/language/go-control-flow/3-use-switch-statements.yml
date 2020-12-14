@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-control-flow.3-use-switch-statements
+metadata:
+  title: Exercise - Use switch statements
+  description: Exercise - Use switch statements.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Use switch statements
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-use-switch-statements.md)]

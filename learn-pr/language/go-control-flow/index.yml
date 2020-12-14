@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.language.go-control-flow
+metadata:
+  title: Go control flow # TODO
+  description: Go control flow # TODO
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Go control flow # TODO
+summary: Go control flow # TODO
+abstract:  | # TODO
+  In this module, you will:
+  - TBD
+  
+prerequisites: | # TODO
+  - TBD
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # TODO
+- beginner
+roles: # TODO
+- developer
+- student
+products: # TODO
+- azure
+units:
+- learn.language.go-control-flow.0-introduction
+- learn.language.go-control-flow.1-use-if-else-statements
+- learn.language.go-control-flow.2-use-for-loops
+- learn.language.go-control-flow.3-use-switch-statements
+- learn.language.go-control-flow.4-use-defer-statement
+- learn.language.go-control-flow.5-challenge
+- learn.language.go-control-flow.6-solution
+- learn.language.go-control-flow.7-knowledge-check
+- learn.language.go-control-flow.8-summary
+badge:
+  uid: learn.language.go-control-flow.badge 
