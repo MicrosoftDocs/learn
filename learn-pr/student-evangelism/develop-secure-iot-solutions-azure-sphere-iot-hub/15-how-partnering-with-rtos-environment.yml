@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-partnering-with-rtos-environment
+title: How to send Azure RTOS real-time room environment sensor data to IoT Hub
+metadata:
+  title: How to send Azure RTOS real-time room environment sensor data to IoT Hub
+  description: In this section, send Azure RTOS real-time room environment sensor data to IoT Hub
+  ms.date: 11/10/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/15-how-partnering-with-rtos-environment.md)]

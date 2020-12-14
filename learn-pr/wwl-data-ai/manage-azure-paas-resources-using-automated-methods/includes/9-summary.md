@@ -4,4 +4,4 @@ Now that you've reviewed this module, you should be able to:
 
 - Discuss the benefits of Azure policy
 - Describe the capabilities of Azure automation
-- Understand how to use elastic jJobs
+- Understand how to use elastic Jobs
