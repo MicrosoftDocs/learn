@@ -68,7 +68,7 @@ quiz:
       explanation: Storing the data in a data lake makes good sense for archiving the data, but does not on its own provide insights.
     - content: 'C. Analyze the digital twins data with Time Series Insights.'
       isCorrect: false
-      explanation: Time Series Insights will give you, as the name suggests, insights. However, it might not on its own give the best results.
+      explanation: Time Series Insights will give you, as the name suggests, insights. However, it might not give the best results on its own.
     - content: 'D. Extract insights from the live execution environment, using the Azure Digital Twins powerful query API.'
       isCorrect: false
       explanation: The Query API will give you valuable insights. Is there a better possibility?
