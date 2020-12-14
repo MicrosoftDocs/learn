@@ -40,6 +40,6 @@ TODO
 
 To summarize, here are the necessary conditions for QIO to perform well, compared to other classical optimization algorithms:
 
-- Optimization landscapes should be rugged but structured. Such landscapes occur frequently in real-world problems. As they often consider hundreds or thousands of variables, it is not easy to visualize them like in the examples above.
+- Optimization landscapes should be rugged but structured. Such landscapes occur frequently in real-world problems.
 - If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with hundreds of variables, QIO has achieved orders of magnitude improvement over previously used methods.
 - TODO - cost function summary
