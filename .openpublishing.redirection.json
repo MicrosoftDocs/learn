@@ -3271,6 +3271,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/build-simple-website/1-installation-and-setup.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-simple-website/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/6-tracking-changes.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-simple-website",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/build-simple-website/7-summary-and-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/6-summary-and-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwwl-data-ai/extract-insights-from-videos-with-video-indexer-service/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/1-introduction",
       "redirect_document_id": false
@@ -4336,7 +4351,26 @@
       "redirect_document_id": false
     },
     {
-
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/4-ai-economics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-ai-organization/6-ai-economics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/5-ai-organizational-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-ai-organization/7-ai-organizational-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-ai-organization/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/7-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-ai-organization/9-summary-resources",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/github/create-open-source-program-github/4-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-open-source-program-github/5-knowledge-check",
       "redirect_document_id": false
@@ -4394,6 +4428,51 @@
     {
       "source_path": "learn-pr/student-evangelism/develop-secure-iot-solutions-azure-sphere-iot-central/4-event-driven-programming.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/5-how-setup-azure-sphere",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/5-rest-function-routes.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/6-exercise-make-functions-restful.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/7-query-azure-cosmos-db.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/8-exercise-query-azure-cosmos-db.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/9-understand-cors.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/10-exercise-cors-frontend.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/11-function-security.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/12-exercise-publish-function-project.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/13-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
       "redirect_document_id": false
     }
   ]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.conditions-exercise
+title: Exercise - Add conditional logic to your ARM template
+metadata:
+  title: Exercise - Add conditional logic to your ARM template
+  description: Use the _condition_ construct with parameters, to define whether a resource should be deployed or not.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/09/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 5
+azureSandbox: true
+content: |
+  [!include[](includes/7-conditions-exercise.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-webapp-java-tomcat.2
-title: Overview of a JavaServer Faces Application
+title: Overview of a JavaServer Faces application
 metadata:
-  title: Overview of a JavaServer Faces Application
-  description: Get an overview of a typical JavaServer Faces Application.
+  title: Overview of a JavaServer Faces application
+  description: Get an overview of a typical JavaServer Faces application.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 12/04/2020

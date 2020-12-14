@@ -4,6 +4,9 @@ After applying the initial EF Core migration, the supporting database tables are
 
 ![database diagram](../media/3-identity-tables.png)
 
+  > [!NOTE] 
+  >  The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many.  A database can have 1 to 1, 1 to many, and many to many relationship types.  Keys are unique.  The diagram shows how these joins are created, and the relationships. 
+
 In this unit, Identity will be added to the existing ASP.NET Core Razor Pages project.
 
 ## Add Identity to the project
@@ -55,7 +58,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     In the preceding command:
 
-    * The generator identified as `identity` is used to add Identity framework to the project.
+    * The generator identified as `identity` is used to add the Identity framework to the project.
     * The `--useDefaultUI` option indicates that an RCL containing the default UI elements will be used. Bootstrap will be used to style the components.
     * The `--dbContext` option to indicate the name of an EF Core database context class to generate.
 

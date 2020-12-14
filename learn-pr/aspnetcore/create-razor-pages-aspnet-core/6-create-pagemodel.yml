@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.6-create-pagemodel
 metadata:
-  title: Modify the page model 
-  description: Review a basic Razor Pages `PageModel` class elements and add a Post handler method.
-  ms.date: 07/31/2019
+  title: Exercise - Handle the product creation form submission
+  description: Review a Razor Pages `PageModel` class and add an HTTP POST handler.
+  ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
-title: Modify the page model
+title: Exercise - Handle the product creation form submission
 azureSandbox: true
 interactive: bash
 durationInMinutes: 8
