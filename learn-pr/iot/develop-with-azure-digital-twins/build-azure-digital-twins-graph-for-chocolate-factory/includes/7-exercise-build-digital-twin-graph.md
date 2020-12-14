@@ -47,7 +47,7 @@ Great, the ADT Explorer sample is loaded and ready! The next stage is to start u
 
 1. Navigate to your folder that contains all your chocolate factory production line models. Select all of them and upload them to the ADT Explorer sample.
 
-1. If you get any errors, you'll need to go back to [unit 4](4-exercise-create-digital-twin-definition-language-models.md) and check your work for the model that has the error.
+1. If you get any errors, you'll need to go back to [unit 4](https://docs.microsoft.com/learn/modules/developing-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models.md) and check your work for the model that has the error.
 
 If there aren't any errors, you'll see a list of models in the left of your ADT Explorer sample window:
 
@@ -57,7 +57,7 @@ If there aren't any errors, you'll see a list of models in the left of your ADT 
 
 1. Select the **Create a Twin** icon for the Factory model. Name the twin "factory" and create it.
 
-    :::image type="content" source="../media/adt-create-twin.png" alt-text="Screenshot showing the icon for creating a model twin in the ADT Explorer sample" lightbox="../media/adt-create-twin":::
+    :::image type="content" source="../media/adt-create-twin.png" alt-text="Screenshot showing the icon for creating a model twin in the ADT Explorer sample" lightbox="../media/adt-create-twin.png":::
 
 1. Create digital twins for the following models, giving the models the suggested names or using your own names:
     - Factory floor: "floor"
@@ -70,7 +70,7 @@ If there aren't any errors, you'll see a list of models in the left of your ADT 
 
 You should now see all the created digital twins in the graph view. Also note that the properties for a selected digital twin will appear in the right-hand pane of the ADT Explorer sample:
 
-:::image type="content" source="../media/adt-twins-in-graph.png" alt-text="Screenshot showing the created twins in the ADT Explorer graph and the properties for a selected twin in the right-hand pane" lightbox="../media/adt-twins-in-graph":::
+:::image type="content" source="../media/adt-twins-in-graph.png" alt-text="Screenshot showing the created twins in the ADT Explorer graph and the properties for a selected twin in the right-hand pane" lightbox="../media/adt-twins-in-graph.png":::
 
 ## Create relationships
 
@@ -96,7 +96,7 @@ You should now see all the relationships between the digital twins in the graph 
 
 1. Locate the icon in the graph view that gives a range of layout options, with names such as "Cola" and "Klay":
 
-    :::image type="content" source="../media/adt-explorer-graph-layout.png" alt-text="Screenshot showing the graph icon for changing layout options in the ADT Explorer sample" lightbox="../media/adt-explorer-graph-layout.png":::
+    :::image type="content" source="../media/adt-explorer-graph-import.png" alt-text="Screenshot showing the graph icon for changing layout options in the ADT Explorer sample" lightbox="../media/adt-explorer-graph-import.png":::
 
 1. Try each of the layout options in turn.
 
