@@ -2,7 +2,7 @@ Azure Arc also simplifies the process of centralizing and standardizing enterpri
 
 ## What are the benefits of Azure Monitor in hybrid scenarios?
 
-With Azure Arc enabled servers, the Azure portal can serve as a centralized dashboard for status monitoring and a launching pad for management of all your Azure Arc enabled servers, along with all of your Azure and Azure Arc enabled resources. The home page of the Azure Arc enabled servers lists all of your servers, along with their resource group, location, and associated subscription. For each server, you can readily identify its name, OS version and OS build. 
+With Azure Arc enabled servers, the Azure portal can serve as a centralized dashboard for status monitoring and a launching pad for management of all your Azure Arc enabled servers, along with all of your Azure and Azure Arc enabled resources. The home page of the Azure Arc enabled servers lists all of your servers, along with their resource group, location, and associated subscription. For each server, you can readily identify its name, OS version and build. 
 
 More in-depth monitoring, alerting, log collection, and log analytics are available through integration with Azure Monitor. Azure Monitor is a comprehensive solution for collecting, analyzing, and responding to telemetry from cloud and on-premises environments. Azure Monitor offers three main capabilities:
 
@@ -14,7 +14,7 @@ You can store and analyze near real-time and historical data in a Log Analytics 
 
 :::image type="content" source="../media/4-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
 
-Once you install and configure the agent, servers will start forwarding telemetry to the Log Analytics workspace of your choice. You can subsequently display the collected data via Azure Monitor dashboards and analyze via Log Analytics queries. You also have the option of implementing metric or log-based rules that will trigger alerts and auto-remediation tasks. 
+Once you install and configure the agent, servers will start forwarding telemetry to the Log Analytics workspace of your choice. You can subsequently display the collected data via Azure Monitor dashboards and analyze via Log Analytics queries. You also have the option of implementing metric or log-based rules that will trigger alerts and autoremediation tasks. 
 
 ## What are the benefits of Azure Security Center in hybrid scenarios?
 
@@ -53,6 +53,6 @@ PowerShell DSC is a technology that implements declarative configuration managem
 
 All of the services described in this unit are available to non-Azure servers, including those which are not Azure Arc enabled. However, Azure Arc offers advantages when it comes to the onboarding process, because you can use VM extensions or Azure Policy to deploy the Log Analytics agent. This streamlines the deployment process, allows for centralized, at-scale management from any location via the Azure portal, and facilitates agent maintenance, considerably simplifying identifying and upgrading out-of-date agents.
 
-In addition, integration with Azure Resource Manager provides support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
+In addition, integration with Azure Resource Manager provides support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server exists as an Azure resource, you can control access to its Log Analytics logs by relying on Azure role-based access control (Azure RBAC) permissions assigned to that resource.
 
 Choose the best response for each of the following questions. Then select "Check your answers".

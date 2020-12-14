@@ -38,7 +38,7 @@ VM extensions are lightweight software components that automate post-operating s
 
 Azure Policy is a service that can help organizations manage and evaluate internal and regulatory compliance of their Arc enabled servers, in addition to a wide range of Azure services. Azure Policy uses declarative rules based on properties of target resource types, including Windows and Linux operating systems. These rules form policy definitions, which administrators can apply through policy assignment to resource groups, subscriptions, or management groups that host Azure Arc enabled servers. To simplify management of policy definitions, it is possible to combine multiple policies into initiatives, and then create a few initiative assignments in lieu of multiple policy assignments.
 
-Azure Policy supports auditing the state of Arc enabled server with Guest Configuration policies. Guest Configuration policies do not apply configurations, but they audit settings within the target operating system and evaluate their compliance. You can, however, use Azure Policy to apply configuration of the Azure resource representing an Arc enabled server. You can also use Azure Policy to deploy configurations by leveraging VM extensions.
+Azure Policy supports auditing the state of Arc enabled server with Guest Configuration policies. Guest Configuration policies do not apply configurations, but they audit settings within the target operating system and evaluate their compliance. You can, however, use Azure Policy to apply configuration of the Azure resource representing an Arc enabled server. You can also use Azure Policy to deploy configurations by using VM extensions.
 
 For example, Contoso could use Azure Policy to implement the following rules:
 
