@@ -31,11 +31,15 @@ So far we have discussed smooth and rugged cost functions, but what if there is 
 
 In these cases, where the solutions are completely random, then no algorithm can improve on a brute force search.
 
+## How do we write a cost function?
+TODO
+
 ## Summary
 
 ![A summary that shows how a complex, structured landscape works best for QIO](../media/plot-summary.png)
 
 To summarize, here are the necessary conditions for QIO to perform well, compared to other classical optimization algorithms:
 
-- Optimization landscapes should be rugged but structured. Such landscapes occur frequently in  real-world problems.
+- Optimization landscapes should be rugged but structured. Such landscapes occur frequently in real-world problems.
 - If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with hundreds of variables, QIO has achieved orders of magnitude improvement over previously used methods.
+- TODO - cost function summary
