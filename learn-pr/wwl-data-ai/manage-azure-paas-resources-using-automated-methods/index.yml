@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
   title: Manage Azure PaaS resources using automated methods
   description: "Manage Azure PaaS resources using automated methods"
-  ms.date: 12/10/2020
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.describe-azure-automation
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.build-automation-runbook
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.describe-elastic-jobs-azure-sql-database
-- learn.wwl.manage-azure-paas-resources-using-automated-methods.7-exercise-deploy-automation-runbook-rebuild-indexes
+- learn.wwl.manage-azure-paas-resources-using-automated-methods.exercise-deploy-automation-runbook-rebuild-indexes
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.knowledge-check
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.summary
 badge:
