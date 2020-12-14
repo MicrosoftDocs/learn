@@ -1,4 +1,4 @@
-In the cloud, Mobile Device Management (MDM) providers, such as Intune, manage settings and features on devices. Group policies objects (GPO) aren't used. When managing devices, Intune device configuration profiles replace on-premises GPO.
+In the cloud, Mobile Device Management (MDM) providers, such as Microsoft Intune, manage settings and features on devices. When using Intune, group policies objects (GPOs) aren't used. Intune provides device configuration profiles, which replace on-premises GPOs.
 
 ## Device configuration profiles
 
@@ -31,4 +31,4 @@ Many organizations are looking at cloud solutions to support the growing remote 
 
 ## Next steps
 
-For detailed steps when you currently use on-premises group policy as your on-premises management solution, see the [Currently use on-premises group policy](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-use-on-premises-group-policy).
+For detailed steps when you currently use on-premises Group Policy as your on-premises management solution, see the [Currently use on-premises group policy](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-use-on-premises-group-policy).

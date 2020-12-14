@@ -2,7 +2,7 @@ If you currently use a different Mobile Device Management (MDM) platform, you ca
 
 As mentioned earlier in this module, Microsoft Intune is available within Microsoft Endpoint Manager. It is a cloud-based mobile device management (MDM) and mobile application management provider for your apps and devices. It lets you protect your organization by controlling features and settings on Android, Android Enterprise, iOS/iPadOS, macOS, and Windows 10 devices. It integrates closely with Azure Active Directory (Azure AD) for identity and access control and Azure Information Protection for data protection.
 
-You use Configuration Manager to manage desktops, servers, and laptops that are on your network or are internet-based. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud, which will provide integration with Intune, Azure AD, Microsoft Defender ATP, and other cloud services. 
+You use Configuration Manager to manage desktops, servers, and laptops that are on your network or are internet-based. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud, which will provide integration with Intune, Azure AD, Microsoft Defender for Endpoint, and other cloud services. 
 
 Devices should only have one Mobile Device Management (MDM) provider. It's common to switch from another MDM provider, such as AirWatch, MobileIron, or MaaS360, to Intune. The biggest challenge is that users must unenroll their devices from the current MDM provider, and then enroll in Intune. 
 

@@ -6,7 +6,7 @@ By protecting and monitoring your organization's endpoints using Microsoft Endpo
 - Safeguard the devices and apps that access your organization resources.
 - Confirm security rules are in place based on your organizations requirements. 
 
-The Microsoft Endpoint Manager console helps keep your organization's cloud and on-premises devices, apps, and data secure. Endpoint Manager integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot. In addition, Microsoft Endpoint Manager integrates with specific technologies, such as Office 365, Microsoft Defender ATP, Azure Active Directory, and Azure Information Protection.
+The Microsoft Endpoint Manager console helps keep your organization's cloud and on-premises devices, apps, and data secure. Endpoint Manager integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Analytics, and Windows Autopilot. In addition, Microsoft Endpoint Manager integrates with specific technologies, such as Office 365, Microsoft Defender for Endpoint, Azure Active Directory, and Azure Information Protection.
 
 Suppose that you're the administrator or business decision maker of a company with several thousand employees. Your company must determine the best path to manage end users devices, apps, and data. You currently have no Mobile Device Management (MDM) solution. You need to keep your corporate data safe by protecting data, apps, and devices that your employees use, and maximize the return on your investment. Learn how Microsoft Endpoint Manager can be a part of your device management migration path.
 
