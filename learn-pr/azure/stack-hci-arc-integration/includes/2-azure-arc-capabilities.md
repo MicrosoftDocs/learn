@@ -30,7 +30,7 @@ In each of the Azure Arc enabled scenarios, Azure Arc leverages locally installe
 
 With Azure Arc enabled servers, the connection to Azure relies on the Connected Machine agent. You have the option to install it on individual Windows or Linux servers manually or by running a script available from the Azure portal. This requires that you authenticate to your Azure subscription interactively for each installation. If an Arc enabled server is hosting a SQL Server instance, you can also register it with Azure Arc using the Azure portal and a registration script to implement Azure Arc enabled SQL Server. In enterprise environments, you will likely perform installations at scale, by using a script or PowerShell Desired State Configuration-based installation with authentication via an Azure Active Directory (Azure AD) service principal.
 
-:::image type="content" source="../media/2-gen-script.png" alt-text="The screenshot depicts the Select a method blade of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale." border="false":::
+:::image type="content" source="../media/2-generate-script.png" alt-text="The screenshot depicts the Select a method blade of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale." border="false":::
 
 In case of Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes, so there is no need to install it. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure monitoring, support, and billing.
 
