@@ -17,7 +17,7 @@ Azure Sphere and IoT Hub are only part of an Internet of Things solution. You ca
 To learn more about Azure Sphere and IoT Hub then review the following resources.
 
 1. [Azure Sphere documentation](https://docs.microsoft.com/azure-sphere?azure-portal=true)
-1. [Azure IoT Central documentation](https://docs.microsoft.com/en-us/azure/iot-central/?azure-portal=true)
+1. [Azure IoT Central documentation](https://docs.microsoft.com/azure/iot-central/?azure-portal=true)
 1. [Azure IoT reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/iot?azure-portal=true)
 1. [Microsoft Certified: Azure IoT Developer Specialty](https://docs.microsoft.com/learn/certifications/azure-iot-developer-specialty?azure-portal=true)
 
