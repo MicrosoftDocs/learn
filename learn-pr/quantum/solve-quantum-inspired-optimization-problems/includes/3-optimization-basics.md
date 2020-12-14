@@ -3,7 +3,7 @@ To understand optimization problems, you first need to learn some terminology.
 - **Cost function**. This is a mathematical function to be minimized. For Interplanet Express, the cost function is the weight difference between the two space ships. In other scenarios, it might be length of travel or a monetary cost.
 - **Search space**. This is the space that contains all the feasible solutions to the optimization problem. Each point in this search space is a valid solution to the problem but it's not necessarily the lowest point, which corresponds to the lowest cost solution.
 
-Together, the search space and the cost function are often referred to as an _optimization landscape_. In the case of a problem that involves two continuous variables, the analogy to a landscape is quite direct.
+Together, the search space and the cost function are often referred to as an *optimization landscape*. In the case of a problem that involves two continuous variables, the analogy to a landscape is quite direct.
 
 Let's explore a few landscapes and see which are good candidates for QIO.
 
@@ -32,6 +32,7 @@ So far we have discussed smooth and rugged cost functions, but what if there is 
 In these cases, where the solutions are completely random, then no algorithm can improve on a brute force search.
 
 ## How do we write a cost function?
+
 TODO
 
 ## Summary
