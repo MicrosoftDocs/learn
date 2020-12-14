@@ -12,10 +12,10 @@ title: Query, visualize, and monitor data in Azure Sentinel
 summary: This module describes how to query, visualize, and monitor data in Azure Sentinel.
 abstract: |
   In this module you will:
-  - Visualize security data using Azure Sentinel workbooks.
+  - Visualize security data using Azure Sentinel Workbooks.
   - Understand how queries work.
   - Explore workbook capabilities.
-  - Create an Azure Sentinel workbook.
+  - Create an Azure Sentinel Workbook.
 prerequisites: |
   - Familiarity with security operations in an organization
   - Basic experience with Azure services
