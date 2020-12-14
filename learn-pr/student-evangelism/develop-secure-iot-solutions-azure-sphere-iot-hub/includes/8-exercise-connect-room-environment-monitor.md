@@ -2,7 +2,7 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
 ## Step 1: Sign into the Azure web portal
 
-You need an Azure account for this learn module. If you do not have an Azure account, then create a free account. If you are a student, then sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true)  (no credit card required). Otherwise, sign up for a [free Azure account](https://azure.microsoft.com/free?azure-portal=true).
+You need an Azure account for this learning module. If you do not have an Azure account, then create a free account. If you are a student, then sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true)  (no credit card required). Otherwise, sign up for a [free Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
 From your web browser, navigate to [https://portal.azure.com](https://portal.azure.com?azure-portal=true) and sign in.
 

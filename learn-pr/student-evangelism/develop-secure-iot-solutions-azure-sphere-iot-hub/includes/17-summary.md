@@ -6,14 +6,21 @@ We also learnt that Azure Sphere is flexible and supports a wide range of applic
 
 Internet of Things security was critical for this microbiology lab. Without this Azure Sphere-based application, you would need to manually record room conditions at regular intervals. Using this solution, you can record accurate and secure results in near real time.
 
+## Azure IoT reference architecture
+
+Azure Sphere and IoT Hub are only part of an IoT solution. To learn more about IoT solutions review the [Azure IoT reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/iot?azure-portal=true) guide.
+
+![This illustration shows the recommended architecture for IoT applications on Azure using PaaS (platform-as-a-service) components.](../media/iot-refarch.svg)
+
 ## Next steps
 
 To learn more about Azure Sphere and IoT Hub then review the following resources.
 
-1. [Azure Sphere Documentation](https://docs.microsoft.com/azure-sphere?azure-portal=true)
-1. [Azure Sphere samples on GitHub](https://github.com/Azure/azure-sphere-samples?azure-portal=true)
+1. [Azure Sphere documentation](https://docs.microsoft.com/azure-sphere?azure-portal=true)
 1. [Azure IoT Hub documentation](https://docs.microsoft.com/azure/iot-hub?azure-portal=true)
+1. [Azure IoT reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/iot?azure-portal=true)
 1. [Microsoft Certified: Azure IoT Developer Specialty](https://docs.microsoft.com/learn/certifications/azure-iot-developer-specialty?azure-portal=true)
+
 
 ## Learning module feedback
 
