@@ -83,7 +83,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Click **Refresh** to display the latest reported values.
 
-    The device will acknowledge the property update by setting the reported value, along with an acknowledgment code and version. This behavior is defined as part of the [IoT Plug and Play conventions](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-convention?azure-portal=true).
+    The device will acknowledge the property update by setting the reported value, along with an acknowledgment code and version. This behavior is defined as part of the [IoT Plug and Play conventions](https://docs.microsoft.com/azure/iot-pnp/concepts-convention?azure-portal=true).
 
 ## Step 6: Expected device behavior
 

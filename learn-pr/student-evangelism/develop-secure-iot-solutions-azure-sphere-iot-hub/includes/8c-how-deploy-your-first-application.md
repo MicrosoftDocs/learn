@@ -72,6 +72,6 @@ The IoT Plug and Play model used by this learning module is declared in main.c.
 #define IOT_PLUG_AND_PLAY_MODEL_ID "dtmi:com:example:azuresphere:labmonitor;1"
 ```
 
-Azure IoT Explorer along with IoT Central are IoT Plug and Play enabled applications. IoT Plug and Play is an open specification. You can also build Plug and Play compliant applications. For more information, read the [Introduction to IoT Plug and Play](https://azure.microsoft.com/en-us/resources/videos/iot-plug-play-intro?azure-portal=true) article.
+Azure IoT Explorer along with IoT Central are IoT Plug and Play enabled applications. IoT Plug and Play is an open specification. You can also build Plug and Play compliant applications. For more information, read the [Introduction to IoT Plug and Play](https://azure.microsoft.com/resources/videos/iot-plug-play-intro?azure-portal=true) article.
 
 When your device first connects to IoT Hub, the IoT Plug and Play Model ID is passed to IoT Hub. Azure IoT Explorer then retrieves the IoT Plug and Play model from the public repository of IoT Plug and Play models. The telemetry is display using the model.

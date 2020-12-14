@@ -32,7 +32,7 @@ Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
 
 ### Install Azure IoT Explorer for Windows
 
-This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices.
+This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices.
 
 **Download** and install the latest Azure IoT Explorer **.msi** package from the [Azure IoT explorer releases](https://github.com/Azure/azure-iot-explorer/releases?azure-portal=true) GitHub page.
 
@@ -66,7 +66,7 @@ sudo apt install git
 
 ### Install Azure IoT Explorer for Ubuntu
 
-This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices.
+This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices.
 
 **Download** and install the latest Azure IoT Explorer **.deb** package from the [Azure IoT explorer releases](https://github.com/Azure/azure-iot-explorer/releases?azure-portal=true) GitHub page.
 
