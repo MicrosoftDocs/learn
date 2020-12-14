@@ -8,7 +8,7 @@ You also advise the Contoso's CIO that Contoso could further benefit by integrat
 
 You can learn more by visiting the following webpages:
 
-- [What is Azure Resource Manager?](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview).
+- [What is Azure Resource Manager?](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
 - [Azure Arc overview](https://docs.microsoft.com/azure/azure-arc/overview)
 - [What is Azure Arc enabled servers?](https://docs.microsoft.com/en-us/azure/azure-arc/servers/overview)
 - [Virtual machine extension management with Azure Arc enabled servers](https://docs.microsoft.com/azure/azure-arc/servers/manage-vm-extensions)

@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-capabilities-azurearc-enabled-servers.md)]
+  [!include[](includes/3-capabilities-azure-arc-enabled-servers.md)]
 quiz:
   title: Check your knowledge
   questions:

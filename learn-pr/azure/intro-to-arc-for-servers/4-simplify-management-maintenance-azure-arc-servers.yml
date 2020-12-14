@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-simplify-management-maintenance-azurearc-servers.md)]
+  [!include[](includes/4-simplify-management-maintenance-azure-arc-servers.md)]
 quiz:
   title: Check your knowledge
   questions:
