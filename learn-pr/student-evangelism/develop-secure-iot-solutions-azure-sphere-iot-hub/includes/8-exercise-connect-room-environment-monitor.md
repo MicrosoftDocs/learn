@@ -63,9 +63,11 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 
    :::image type="content" source="../media/dps-certificate-add.png" alt-text="The illustration shows add certificate.":::
 
-3. Name your certificate, and then select the **CAcertificate.cer** file you downloaded in the previous step to upload into the device provisioning service. Then select **Save**.
+3. Name your certificate, and then select the **CAcertificate.cer** file you downloaded in the previous step to upload into the device provisioning service.
 
    :::image type="content" source="../media/dps-certificate-upload.png" alt-text="The illustration shows how to upload a certificate.":::
+
+4. Then select **Save**.
 
 ### Verify the uploaded certificate
 
@@ -109,9 +111,11 @@ From the Azure portal:
 
 2. Select **+ Add enrollment group**, and name the enrollment group.
 
-3. Select the primary certificate you just uploaded, and select **Save**.
+3. Select the primary certificate you just uploaded.
 
    :::image type="content" source="../media/dps-enrollment-group-add.png" alt-text="The illustration shows how to save the certificate.":::
+
+4. Then select **Save**.
 
 ## Step 5: Configure Azure IoT Explorer
 
@@ -128,21 +132,21 @@ You need the connection string for your IoT Hub.
 
     :::image type="content" source="../media/iot-hub-connection-string.png" alt-text="The illustration shows IoT Hub resources created for this learning module.":::
 
-1. Click **Shared access policies**, then **iothubowner**.
+1. Select **Shared access policies**, then **iothubowner**.
 1. Copy the **Connection string--primary key** to the clipboard.
 
 1. Start Azure IoT Explorer.
-1. Click **+ Add connection**.
+1. Select **+ Add connection**.
 1. Paste your IoT Hub connection string in the connection string dialogue box.
-1. Click **Save**
+1. Then select **Save**
 
     :::image type="content" source="../media/iot-explorer-connection-string.png" alt-text="The illustration shows how to set the IoT Explorer connection string.":::
 
-1. Click **Home**.
-1. Click **IoT Plug and Play Settings**.
+1. Select **Home**.
+1. Select **IoT Plug and Play Settings**.
 
    :::image type="content" source="../media/iot-explorer-pnp-settings.png" alt-text="The illustration shows how to set the IoT Explorer Plug and Play public repository.":::
 
-1. Click **+ Add**.
+1. Select **+ Add**.
 1. Select **Public Repository**.
-1. Click **Save**.
+1. Then select **Save**.
