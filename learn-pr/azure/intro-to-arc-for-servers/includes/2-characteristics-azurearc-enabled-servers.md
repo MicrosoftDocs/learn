@@ -8,7 +8,7 @@ In this unit, you'll learn about the characteristics of Azure Arc enabled server
 
 Azure Arc relies on a locally installed agent to establish a logical connection between the local resource and Azure. By establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. After you Arc-enable a non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. This allows for facilitates implementing a range of additional scenarios that use Azure services to optimize server management and monitoring.
 
-:::image type="content" source="../media/2-azure-arc-enabled-vm-portal.png" alt-text="A screenshot of the Azure portal displaying the entry representing an Azure Arc enabled Windows server." border="false":::
+![A screenshot of the Azure portal displaying the entry representing an Azure Arc enabled Windows server.](../media/2-azure-arc-enabled-vm-portal.png)
 
 ## How to enable Azure Arc?
 
@@ -22,7 +22,7 @@ Effectively, to Arc enable a server, you need:
 
 Connecting the agent to your subscription creates an Azure Resource Manager object representing the server. From that point on, you can use the Azure portal, Azure command-line tools, or REST API to manage the server.
 
-:::image type="content" source="../media/2-gen-script.png" alt-text="Screenshot that depicts the "Select a method" option of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale." border="false":::
+![Screenshot that depicts the "Select a method" option of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale.](../media/2-gen-script.png)
 
 The Connected Machine agent allows you to enhance management of Windows and Linux computers residing in on-premises datacenters or hosted by third party private and public cloud providers. The Azure Connected Machine agent supports the following operating systems:
 

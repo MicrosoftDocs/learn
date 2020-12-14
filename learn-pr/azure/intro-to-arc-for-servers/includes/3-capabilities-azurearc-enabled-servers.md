@@ -14,7 +14,7 @@ A number of Azure Arc benefits are independent of the resource type, since they 
   - Azure Policy guest configuration to audit operating system and software configuration
   - An Azure Active Directory system assigned managed identity for apps running on the server to use when authenticating to other Azure services
 
-:::image type="content" source="../media/3-access-control.png" alt-text="Screenshot of the Access control (IAM) page in the Azure portal for the selected VM: ContosoVM1. The details pane displays a number of tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles." border="false":::
+![Screenshot of the Access control (IAM) page in the Azure portal for the selected VM: ContosoVM1. The details pane displays a number of tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.](../media/3-access-control.png)
 
 There are also benefits specific to Azure Arc enabled servers, such as:
 
@@ -58,10 +58,10 @@ For example, Contoso could use Azure Policy to implement the following rules:
 
 You can manage and assign Azure policies to Azure Arc enabled servers directly from the Azure portal. 
 
-:::image type="content" source="../media/3-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
+![The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies.](../media/3-assign-policy.png)
 
 Once you create a policy assignment, shortly afterwards, you will be able to review the outcome of the policy evaluation on the target Azure Arc enabled servers.
 
-:::image type="content" source="../media/3-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
+![The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other.](../media/3-review-policies.png)
 
 Choose the best response for each of the following questions. Then select "Check your answers".
