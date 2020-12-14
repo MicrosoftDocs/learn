@@ -12,12 +12,12 @@ In this exercise, you run an application that shows how you can use the Circuit 
 
 Fiddler is a third-party tool that's used to help debug applications, in particular web applications. It captures network traffic between computers and, based on the result, uses its event-based scripting subsystem to halt connections. 
 
-In this unit, you use Fiddler to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you'll see the traffic being directed to the various storage account endpoints.
+In this unit, you use Fiddler Classic to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you'll see the traffic being directed to the various storage account endpoints.
 
-If you don't have Fiddler installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/fiddler?azure-portal=true).
+If you don't have Fiddler Classic installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/download/fiddler?azure-portal=true).
 
 > [!NOTE]
-> Fiddler is available for Windows, Linux, and Mac OS X. This exercise works best if you use the Windows version.
+> Fiddler has released a new version of their application. This exercise uses Fiddler Classic, which is currently only available for Windows.
 
 ## Install Visual Studio and download the sample code
 

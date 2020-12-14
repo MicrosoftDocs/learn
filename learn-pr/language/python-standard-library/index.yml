@@ -13,7 +13,7 @@ summary: Explore the Python standard library, how to add a module to your progra
 abstract: |
   In this module, you will:
   - Explore the Python standard library.
-  - Add the `include` statement to tell the Python compiler which modules you will use in your code.
+  - Add the `import` statement to tell the Python compiler which modules you will use in your code.
   - Use the pip utility to download third-party open-sourced packages.
 prerequisites: |
   - A Python development environment.

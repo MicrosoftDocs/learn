@@ -9,7 +9,7 @@
     operation MarkColorEquality(c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
         within {
             // Iterate over pairs of qubits in matching positions in c0 and c1.
-            for ((q0, q1) in Zip(c0, c1)) {
+            for ((q0, q1) in Zipped(c0, c1)) {
                 // Compute XOR of bits q0 and q1 in place (storing it in q1).
                 CNOT(q0, q1);
             }
@@ -31,7 +31,7 @@
         // Allocate one extra qubit per edge to mark the edges that connect vertices with the same color.
         using (conflictQubits = Qubit[nEdges]) {
             within {
-                for (((start, end), conflictQubit) in Zip(edges, conflictQubits)) {
+                for (((start, end), conflictQubit) in Zipped(edges, conflictQubits)) {
                     // Check that the endpoints have different colors: apply MarkColorEquality operation; 
                     // if the colors are the same, the result will be 1, indicating a conflict.
                     MarkColorEquality(colors[start], colors[end], conflictQubit);

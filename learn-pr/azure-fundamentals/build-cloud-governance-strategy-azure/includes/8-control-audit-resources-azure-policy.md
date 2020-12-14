@@ -4,13 +4,13 @@ Now that you've identified your governance and business requirements, how do you
 
 ## How does Azure Policy define policies?
 
-Azure Policy enables you to define both individual policies and groups of related policies, known as _initiatives_. Azure Policy evaluates your resources and highlights those which are not compliant with the policies you've created. Azure Policy can also prevent non-compliant resources from being created.
+Azure Policy enables you to define both individual policies and groups of related policies, known as _initiatives_. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
 
 Azure Policy comes with a number of built-in policy and initiative definitions that you can use, under categories such as Storage, Networking, Compute, Security Center, and Monitoring.
 
-For example, say you define a policy that allows only a certain stock keeping unit (SKU) size of virtual machines (VMs) to be used in your environment. After you enable this policy, that policy is applied when you create new VMs or resize existing VMs. Azure Policy also evaluates any current VMs in your environment.
+For example, say you define a policy that allows only a certain stock-keeping unit (SKU) size of virtual machines (VMs) to be used in your environment. After you enable this policy, that policy is applied when you create new VMs or resize existing VMs. Azure Policy also evaluates any current VMs in your environment.
 
-In some cases, Azure Policy can automatically remediate non-compliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with the **AppName** tag and a value of "SpecialOrders", Azure Policy can automatically reapply that tag if it has been removed.
+In some cases, Azure Policy can automatically remediate noncompliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with the **AppName** tag and a value of "SpecialOrders," Azure Policy can automatically reapply that tag if it has been removed.
 
 Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that apply to the pre-deployment and post-deployment phases of your applications.
 
@@ -28,23 +28,23 @@ Let's examine each step in more detail.
 
 A policy definition expresses what to evaluate and what action to take. For example, you could prevent VMs from being deployed in certain Azure regions. You also could audit your storage accounts to verify that they only accept connections from allowed networks.
 
-Every policy definition has conditions under which it is enforced. A policy definition also has an accompanying effect that takes place when the conditions are met. Here are some example policy definitions:
+Every policy definition has conditions under which it's enforced. A policy definition also has an accompanying effect that takes place when the conditions are met. Here are some example policy definitions:
 
-* **Allowed Virtual Machine SKUs**
+* **Allowed virtual machine SKUs**
 
     This policy enables you to specify a set of VM SKUs that your organization can deploy.
 
 * **Allowed locations**
 
-    This policy enables you to restrict the locations that your organization can specify when deploying resources. Its effect is used to enforce your geographic compliance requirements.
+    This policy enables you to restrict the locations that your organization can specify when it deploys resources. Its effect is used to enforce your geographic compliance requirements.
 
-* **MFA should be enabled accounts with write permissions on your subscription**
+* **MFA should be enabled on accounts with write permissions on your subscription**
 
-    This policy requires that Multi-Factor Authentication (MFA) be enabled for all subscription accounts with write privileges to prevent a breach of accounts or resources.
+    This policy requires that multifactor authentication (MFA) be enabled for all subscription accounts with write privileges to prevent a breach of accounts or resources.
 
-* **CORS should not allow every resource to access your Web Applications**
+* **CORS should not allow every resource to access your web applications**
 
-    CORS (Cross Origin Resource Sharing) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
+    Cross-origin resource sharing (CORS) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
 
 * **System updates should be installed on your machines**
 
@@ -54,13 +54,13 @@ Every policy definition has conditions under which it is enforced. A policy defi
 
 To implement your policy definitions, you assign definitions to resources. A _policy assignment_ is a policy definition that takes place within a specific scope. This scope could be a management group (a collection of multiple subscriptions), a single subscription, or a resource group.
 
-Policy assignments are inherited by all child resources within that scope. This means that if a policy is applied to a resource group, that policy is applied to all resources within that resource group. However, you can exclude a sub-scope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
+Policy assignments are inherited by all child resources within that scope. If a policy is applied to a resource group, that policy is applied to all resources within that resource group. You can exclude a subscope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
-### 3. Review the policy evaluation results
+### 3. Review the evaluation results
 
-When a condition is evaluated against your existing resources, each resource is marked as compliant or non-compliant. You can review the non-compliant policy results and take any action that's needed.
+When a condition is evaluated against your existing resources, each resource is marked as compliant or noncompliant. You can review the noncompliant policy results and take any action that's needed.
 
-Policy evaluation happens about once per hour, which means that if you make changes to your policy definition and create a policy assignment, that policy is evaluated over your resources within the hour.
+Policy evaluation happens about once per hour. If you make changes to your policy definition and create a policy assignment, that policy is evaluated over your resources within the hour.
 
 ## What are Azure Policy initiatives?
 
@@ -75,7 +75,7 @@ Under this initiative, the following policy definitions are included:
     This policy monitors for unencrypted SQL databases and servers.
 * **Monitor OS vulnerabilities in Security Center**
 
-    This policy monitors servers that do not satisfy the configured OS vulnerability baseline.
+    This policy monitors servers that don't satisfy the configured OS vulnerability baseline.
 * **Monitor missing Endpoint Protection in Security Center**
 
     This policy monitors for servers that don't have an installed endpoint protection agent.
@@ -86,7 +86,7 @@ Azure Policy also includes initiatives that support regulatory compliance standa
 
 ### How do I define an initiative?
 
-You define initiatives by using the Azure portal or by using command-line tools. From the Azure portal, you can search the list of built-in initiatives that are already provided by Azure or you can create your own custom policy definition.
+You define initiatives by using the Azure portal or by using command-line tools. From the Azure portal, you can search the list of built-in initiatives that are already provided by Azure. You also can create your own custom policy definition.
 
 The following image shows a few example Azure Policy initiatives in the Azure portal.
 
@@ -96,4 +96,4 @@ The following image shows a few example Azure Policy initiatives in the Azure po
 
 Like a policy assignment, an initiative assignment is an initiative definition that's assigned to a specific scope of a management group, a subscription, or a resource group.
 
-Even if you have just a single policy, an initiative enables you to increase the number of policies over time. Because the associated initiative remains assigned, this makes it easier to add and remove policies without the need to change your resources' policy assignment.
+Even if you have only a single policy, an initiative enables you to increase the number of policies over time. Because the associated initiative remains assigned, it's easier to add and remove policies without the need to change the policy assignment for your resources.

@@ -43,4 +43,9 @@ Next, open Visual Studio Code. Open the new folder that you created. Create a ne
 
 :::image type="content" source="../media/set-environment.png" alt-text="Screenshot of Visual Studio Code and setting the Anaconda environment.":::
 
+> [!Note]
+> In some Python configurations, the Python 3 and Python 3.x N-bit ('myenv': conda) environments are essentially the same.
+> If you change the environment by selecting ('myenv': conda), Visual Studio Code might report the new environment as Python 3 rather than ('myenv': conda).
+> 
+
 Congratulations, you installed all the libraries you need to make an AI program, and configured Visual Studio Code to find them.

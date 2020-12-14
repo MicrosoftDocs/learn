@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.securing-you-basics-beyond.2-phishing
+metadata:
+  title: Identify and protect yourself from phishing
+  description: Identify and protect yourself from phishing
+  ms.date: 05/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Identify and protect yourself from phishing
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-phishing.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "How many indicators are needed to identify a phishing email?"
+    choices:
+    - content: "At least five indicators."
+      isCorrect: false
+      explanation: "Identifying many indicators helps avoid being phished, but only one indicator is enough to detect and avoid a phishing email."
+    - content: "Two or more indicators."
+      isCorrect: false
+      explanation: "Identifying more than one indicator helps avoid being phished, but only one indicator is enough to detect and avoid a phishing email."
+    - content: "One or more indicators."
+      isCorrect: true
+      explanation: "Excellent! Identifying just one indicator is enough to detect and avoid a phishing email."
+    - content: "The indicators don't help. Click the links and attachments to see if they're safe."
+      isCorrect: false
+      explanation: "Remember, you should never click or interact with anything that looks suspicious."
+  - content: "If an email link or attachment looks suspicious, what is the best way to handle that email?"
+    choices:
+    - content: "Go ahead and click. It's probably safe."
+      isCorrect: false
+      explanation: "If it looks suspicious, you should never interact with it directly. Just report it."
+    - content: "You can open attachments and/or links as long as email sender seems legitimate."
+      isCorrect: false
+      explanation: "Attackers will make phishing emails look as legitimate as possible."
+    - content: "Don't open any attachments or click any links. Just report it."
+      isCorrect: true
+      explanation: "Perfect! Identifying the email as suspicious and not interacting with it are the best way to protect yourself from phishing."
+    - content: "Don't open any attachments or click any links unless the email says you need to take immediate action."
+      isCorrect: false
+      explanation: "Attackers will use a false sense of urgency to get you to interact with their email."

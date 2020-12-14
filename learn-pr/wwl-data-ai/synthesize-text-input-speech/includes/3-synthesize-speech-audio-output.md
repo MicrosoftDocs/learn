@@ -6,7 +6,7 @@ The ability to synthesize text to speech output will require that your computer 
 The SpeechConfig configuration object accepts your Speech service key and region for authorization.  You can also use the SpeechConfig object to change how your speech synthesis works.  For example, the default voice will be used for speaking unless you modify the SpeechConfig object.  You can do so by providing a voice name for the SpeechConfig object as shown here:
 
 ```python
-speech_config_obj = speech_synthesis_voice_name = "en-CA-Linda"
+speech_config_obj.speech_synthesis_voice_name = "en-CA-Linda"
 ```
 
 ```csharp
@@ -85,7 +85,7 @@ var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRe
 
 ```csharp
 // uncomment this line to change the voice used for synthesis
-// config.Speech = "en-CA-Linda";
+// config.SpeechSynthesisVoiceName = "en-CA-Linda";
 
 // Creates a speech synthesizer using the default speaker as audio output.
 using (var synthesizer = new SpeechSynthesizer(config))
@@ -146,7 +146,7 @@ using (var synthesizer = new SpeechSynthesizer(config))
                 var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
 
                 // uncomment this line to change the voice used for synthesis
-                // config.Speech = "en-CA-Linda";
+                // config.SpeechSynthesisVoiceName = "en-CA-Linda";
 
                 // Creates a speech synthesizer using the default speaker as audio output.
                 using (var synthesizer = new SpeechSynthesizer(config))
@@ -187,9 +187,9 @@ using (var synthesizer = new SpeechSynthesizer(config))
                 }
             }
 
-            static void Main()
+            static async Task Main()
             {
-                SynthesisToSpeakerAsync().Wait();
+                await SynthesisToSpeakerAsync();
             }
         }
     }

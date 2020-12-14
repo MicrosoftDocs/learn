@@ -2,7 +2,7 @@
 uid: learn.azure.build-node-cosmos-app-vscode
 metadata:
   title: Build a Node.js app for Azure Cosmos DB in Visual Studio Code
-  description: Build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code and Node.js.
+  description: Build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code, Node.js and JavaScript.
   ms.date: 11/18/2019
   author: nickwalkmsft
   ms.author: nickwalk

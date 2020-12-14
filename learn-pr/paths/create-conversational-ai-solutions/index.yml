@@ -3,7 +3,7 @@ uid: learn.wwl.create-conversational-ai-solutions
 metadata:
   title: Create conversational AI solutions
   description: Conversational AI revolves around user interactions, in this case through Bots. In this learning path, you will learn how to create chat bots and integrate the bot with various AI services to add intelligence to the interaction. Learn how to integrate the QnA Maker Service (an easy method to add question and answers for bots), and explore the new Virtual Assistant scenarios for creating branded experiences with bots.
-  ms.date: 09/09/2020
+  ms.date: 10/21/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   - Knowledge of at least one programming language (C#, Python)
 summary: |
   Conversational AI revolves around user interactions, in this case through bots.  In this learning path, you  create chat bots and integrate with various AI services to add intelligence to the interaction.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/create-conversational-ai-solutions.svg
 levels:
 - intermediate
 roles:

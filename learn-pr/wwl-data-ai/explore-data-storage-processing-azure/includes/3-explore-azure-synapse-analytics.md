@@ -80,7 +80,7 @@ Synapse pipelines use the same Data Integration engine used by Azure Data Factor
 
 For more information, read [Pipelines and activities in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities).
 
-### What is Synapse link?
+### What is Synapse Link?
 
 Azure Synapse Link for Azure Cosmos DB is a cloud-native hybrid transactional and analytical processing (HTAP) capability that enables you to run near real-time analytics over operational data stored in Azure Cosmos DB.
 

@@ -30,7 +30,7 @@ Indexing is an asynchronous operation. To check the status of an indexer, you us
     ```
 5. When prompted, press **3** to create and run an indexer. Then wait while the program creates the indexer and then retrieves it status.
 6. When the prompt is redisplayed, press **q** to quit the program.
-7. In another browser tab, open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has been created and has processed 72 documents.
+7. Open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has been created and has processed 72 documents.
 
 :::zone-end
 
@@ -56,6 +56,6 @@ Indexing is an asynchronous operation. To check the status of an indexer, you ca
     python3 submit-rest.py 'GET' 'indexers/margies-indexer-py/status' 'null'
     ```
 8. Review the JSON response that is returned from the REST interface, which shows the status of the indexer. In particular, check the **status** value in the **lastResult** section of the response. If this is shown as **inProgress**, the indexer is still being applied to the index. You can rerun the previous command to retrieve the status until the last result status is **success**.
-9. In another browser tab, open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has been created and has processed 72 documents.
+9. Open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has been created and has processed 72 documents.
 
 :::zone-end

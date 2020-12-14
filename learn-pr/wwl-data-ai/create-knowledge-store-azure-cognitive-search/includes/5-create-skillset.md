@@ -59,18 +59,18 @@ At the time of writing, the .NET SDK for Azure Cognitive Search does not support
         - **Locations**: Contains an automatically generated key column and a **location** column mapped to the **knowledge_projection/key_phrases/** collection output of the shaper skill.
         - **ImageTags**: Contains an automatically generated key column and a **tag** column mapped to the **knowledge_projection/image_tags/** collection output of the shaper skill.
         - **Docs**: Contains an automatically generated key column and all of the **knowledge_projection** output values from the shaper skill that are not already assigned to a table.
-3. In the **Terminal** pane, select the bash terminal for the **create-knowledge-store** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **Python/create-knowledge-store** folder and select **Open in Integrated Terminal**.
-4. In the terminal for the **create-knowledge-store** folder, enter the following command:
+4. In the **Terminal** pane, select the bash terminal for the **create-knowledge-store** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **Python/create-knowledge-store** folder and select **Open in Integrated Terminal**.
+5. In the terminal for the **create-knowledge-store** folder, enter the following command:
     ```bash
     python3 submit-rest.py 'PUT' 'skillsets/margies-skillset-py' 'skillset.json'
     ```
-5. Wait while Python runs the **submit-rest&#46;py** script to create the skillset.
-6. Review the JSON response that is returned from the REST interface.
-7. In another browser tab, open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Skillsets** tab to confirm that the skillset has been created.
+6. Wait while Python runs the **submit-rest&#46;py** script to create the skillset.
+7. Review the JSON response that is returned from the REST interface.
+8. Open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Skillsets** tab to confirm that the skillset has been created.
 
 :::zone-end
 
 > [!NOTE]
 > To learn more about the **shaper** skill, see [Shaper cognitive skill](https://docs.microsoft.com/azure/search/cognitive-search-skill-shaper) in the Azure Cognitive Search documentation.
 >
-> To learrn more about knowledge stores and projections, see [Knowledge store in Azure Cognitive Search](https://docs.microsoft.com/azure/search/knowledge-store-concept-intro) and [Knowledge store "projections" in Azure Cognitive Search](https://docs.microsoft.com/azure/search/knowledge-store-projection-overview).
+> To learn more about knowledge stores and projections, see [Knowledge store in Azure Cognitive Search](https://docs.microsoft.com/azure/search/knowledge-store-concept-intro) and [Knowledge store "projections" in Azure Cognitive Search](https://docs.microsoft.com/azure/search/knowledge-store-projection-overview).

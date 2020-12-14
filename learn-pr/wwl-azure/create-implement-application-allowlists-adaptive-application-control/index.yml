@@ -3,7 +3,7 @@ uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application
 metadata:
   title: Create and implement application allowlists with adaptive application control
   description: "You'll be able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs."
-  ms.date: 08/31/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-and-implement-application-whitelists-with-adaptive-application-control.svg
 levels:
 - intermediate
 roles:

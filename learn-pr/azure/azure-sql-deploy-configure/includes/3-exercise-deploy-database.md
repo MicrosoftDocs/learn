@@ -45,13 +45,9 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, select **Sample**.  
 
-1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Advanced Data Security in a free trial. Select **Start free trial**.
+1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Azure Defender in a free trial. Select **Start free trial**.
 
-    After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection.
-
-    Your **Additional settings** pane should now look similar to the following image.
-
-    :::image type="content" source="../media/3-additional-settings.png" alt-text="Screenshot of additional settings.":::
+    After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
 
 1. Select **Review + create**. Here you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
 

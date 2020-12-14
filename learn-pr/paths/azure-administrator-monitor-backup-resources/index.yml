@@ -13,7 +13,12 @@ title: Monitor and back up resources for Azure administrators
 summary: |
   Learn how to monitor resources by using Azure Monitor and implement backup and recover in Azure. 
 prerequisites: | 
-  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Azure Fundamentals Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+  - [Azure Fundamentals Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  - [Azure Fundamentals Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+  - [Azure Fundamentals Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+  - [Azure Fundamentals Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+  - [Azure Fundamentals Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
   - [Prerequisites for Azure administrators](../azure-administrator-prerequisites/index.yml)
 iconUrl: /learn/achievements/azure-administrator-monitor-backup-resources.svg
 levels:
@@ -31,6 +36,7 @@ modules:
 - learn.design-monitoring-strategy-on-azure
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.analyze-infrastructure-with-azure-monitor-logs
+- learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.incident-response-with-alerting-on-azure
 - learn.capture-page-load-times-application-insights
 - learn.protect-virtual-machines-with-azure-backup

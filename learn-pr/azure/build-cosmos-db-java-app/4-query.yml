@@ -3,11 +3,12 @@ uid: learn.cosmos-db-java-app.4-query
 metadata:
   title: Exercise - Query by using the Azure Cosmos DB Java SDK
   description: Exercise - Query by using the Azure Cosmos DB Java SDK
-  ms.date: 09/15/2020
+  ms.date: 11/02/2020
   author: anfeldma-ms
   ms.author: anfeldma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: cosmos-db-programming-model-java-spring
 title: Exercise - Query by using the Azure Cosmos DB Java SDK
 durationInMinutes: 5
 content: |

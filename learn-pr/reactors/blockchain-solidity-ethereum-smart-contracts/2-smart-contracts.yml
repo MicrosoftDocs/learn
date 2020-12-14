@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.2-smart-contracts
+metadata:
+  title: What is a smart contract?
+  description: Learn about smart contracts and use cases.
+  ms.date: 10/06/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is a smart contract?
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-smart-contracts.md)]

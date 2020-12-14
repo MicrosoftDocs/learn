@@ -15,8 +15,13 @@ abstract:  |
   - Survey the data storage options in Azure
   - Explore how Azure can meet your business demands for storing and analyzing data
   - Compare Azure data options with on-premises storage
+  > [!NOTE]
+  > This module has been updated to [Explore Azure database and analytics services](https://docs.microsoft.com/learn/modules/azure-database-fundamentals/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
 prerequisites: None
 iconUrl: /learn/achievements/intro-to-data-in-azure.svg
+hidden: true
 levels: 
 - beginner
 roles: 

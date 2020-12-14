@@ -35,9 +35,11 @@ int[] inventory = { 200, 450, 700, 175, 250 };
 
 ### Step 2 - Add a foreach statement to iterate through the array
 
-Next, add a foreach statement that iterates through each element of the `inventory` array, temporarily assigning the value of the current element to the variable `items`.
+Next, add a foreach statement that iterates through each element of the `inventory` array, temporarily assigning the value of the current element to the variable `items`. Your code should match the following listing.
 
 ```csharp-interactive
+int[] inventory = { 200, 450, 700, 175, 250 };
+
 foreach (int items in inventory)
 {
 

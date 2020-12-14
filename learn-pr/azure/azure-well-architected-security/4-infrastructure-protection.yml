@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-security.4-infrastructure-protection
 title: Infrastructure protection
 metadata:
   title: Infrastructure protection
-  description: In this unit we'll discuss how to protect access to your infrastructure
+  description: In this unit, we'll discuss how to protect access to your infrastructure
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -23,18 +23,18 @@ quiz:
     - content: 'Resource group'
       isCorrect: false
       explanation: 'Role-based access control can be applied at the resource group scope.'
-    - content: 'Files and folders within a Linux filesystem'
+    - content: 'Files and folders within a Linux file system'
       isCorrect: true
-      explanation: 'Azure role-based access control can only be applied to Azure resources. Files and folders within a Linux file system can be secured with various methods, but not with Azure role-based access control.'
+      explanation: 'Azure role-based access control can be applied to only Azure resources. Files and folders within a Linux file system can be secured with various methods, but not with Azure role-based access control.'
     - content: 'Resource'
       isCorrect: false
       explanation: 'Role-based access control can be applied at the resource scope.'
 
-  - content: 'True or false: a managed identity for Azure resources could be assigned to a virtual machine to give it rights to start and stop other virtual machines.'
+  - content: 'True or false: a managed identity for Azure resources can be assigned to a virtual machine to give it rights to start and stop other virtual machines.'
     choices:
     - content: 'True'
       isCorrect: true
-      explanation: 'Managed identities for Azure resources is a method of assigning an identity to services. Through this assignment, role-based access control can be granted to manage Azure services, such as starting and stopping virtual machines.'
+      explanation: 'Managed identities for Azure resources are a method of assigning an identity to services. Through this assignment, role-based access control can be granted to manage Azure services, such as starting and stopping virtual machines.'
     - content: 'False'
       isCorrect: false
-      explanation: 'Managed identities for Azure resources is a method of assigning an identity to services. Through this assignment, role-based access control can be granted to manage Azure services, such as starting and stopping virtual machines.'
+      explanation: 'Managed identities for Azure resources are a method of assigning an identity to services. Through this assignment, role-based access control can be granted to manage Azure services, such as starting and stopping virtual machines.'

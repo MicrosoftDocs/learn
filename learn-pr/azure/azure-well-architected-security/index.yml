@@ -11,12 +11,12 @@ metadata:
 title: Microsoft Azure Well-Architected Framework - Security
 summary: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
 abstract:  | 
-  By the end of this module, you will be able to:
-  - Develop a defense in depth approach to securing your architecture
+  By the end of this module, you'll be able to:
+  - Develop a defense-in-depth approach to securing your architecture
   - Choose the technologies to secure your Azure infrastructure
   - Develop a strategy for secure identity management
 prerequisites: |
-  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
+  - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-security.svg
 levels:

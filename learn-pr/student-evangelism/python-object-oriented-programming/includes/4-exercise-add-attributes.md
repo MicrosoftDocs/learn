@@ -62,7 +62,7 @@ Python provides multiple ways to create instance attributes, but the most common
             self.dob = date_of_birth
     ```
 
-    The `self` keyword refers to the object instance and is provided in the first argument to `__init__()`. Inside `__init__()` are three instance attributes that can be accessed on `Person` objects:
+    The `self` keyword refers to the object instance and is provided in the first argument to `__init__()`. Inside the `__init__()` method are three instance attributes that can be accessed on `Person` objects:
 
     - `name`, which holds the person's name
     - `photo`, which holds an image of the person's face
@@ -88,7 +88,7 @@ Python provides multiple ways to create instance attributes, but the most common
     print(aPerson.name)
     ```
 
-    Feel free to remove the previous `print` line and associated comment (`print faces.data.shape`) to clean up your code.
+    If you want to clean up your code a bit, you can remove the `print(faces.data.shape)` statement and the associated comment, "Prove that the dataset was loaded."
 
 1. Save your file, and then run it in Cloud Shell:
 
@@ -102,7 +102,7 @@ Because `name`, `photo`, and `dob` are instance attributes, you could create hun
 
 ## Data hiding
 
-Many programming languages that support OOP also support *data hiding* by allowing methods and attributes—"class members"—to be declared private or protected. Private class members can be accessed from inside an object but not from outside the object. Protected class members can be accessed inside an object and inside objects that are subclassed from it (more on this later), but not from outside.
+Many programming languages that support OOP also support *data hiding* by allowing methods and attributes—"class members"—to be declared private or protected. Private class members can be accessed from inside an object but not from outside the object. Protected class members can be accessed inside an object and inside objects that are subclassed from it, but not from outside. We'll take a closer look at this subject later.
 
 Python doesn't support data hiding—at least not in the same sense that other languages do. Guido van Rossum, the creator of Python, felt that data hiding makes languages harder to use. Consequently, you can't hide class members in Python.
 

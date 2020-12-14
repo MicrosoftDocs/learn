@@ -6,15 +6,15 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
-The Azure sandbox that you just activated allows you to use Azure services without incurring any costs.
+The Azure sandbox that you activated allows you to use Azure services without incurring any costs.
 
 ## Install the Azure Static Web Apps extension for Visual Studio Code
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
-1. When the extension tab loads in Visual Studio Code, click **Install**.
+1. When the extension tab loads in Visual Studio Code, click **Install** on the gear icon in the bottom left-hand side.
 
-1. After installation is complete, click **Reload**.
+1. After installation is complete, click **Restart to update**.
 
 ## Sign into Azure in Visual Studio Code
 
@@ -27,7 +27,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 ## Create a static web app
 
-1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
+1. Open Visual Studio Code and go to **File > Open** to open the repository you cloned to your computer in the editor.
 
 2. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
@@ -60,7 +60,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **angular-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **react-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
 ::: zone-end
 
@@ -76,7 +76,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **svelte-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
 
 ::: zone-end
 
@@ -84,7 +84,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 7. Select **vue-app** as the location for the application code and press **Enter**.
 
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Application code location":::
+   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
 ::: zone-end
 
@@ -130,11 +130,11 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 10. Select a location nearest you and press **Enter**.
 
-   :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
+    :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
 
 11. Click the **Select Existing** button to select the resource group that has been created for you in the Azure sandbox
 
-   :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
+    :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
 
 12. Select the resource group named <rgn>[Sandbox resource group]</rgn>
 
@@ -159,11 +159,14 @@ You can check the status of your build and deploy action by navigating to the Ac
 
 1. Click the link shown below in the screenshot
 
-    :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+   :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+   
+> [!NOTE] 
+> You can open the Azure page by right clicking on my-first-static-web-app in the Visual Studio Code editor, and selecting **Open in portal**.
 
 1. Click **Azure Static Web Apps CI/CD**
 1. Click the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**
-1. Click the **Build and Deploy Job** link
+1. Click the **Build and Deploy Job** link on the left
 
 From here, you can observe the progress of your app as it builds.
 
@@ -179,7 +182,3 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
-
-## Next steps
-
-Next you'll learn how to handle all unmatched page requests to the server and map them to navigate to a valid page in your app.

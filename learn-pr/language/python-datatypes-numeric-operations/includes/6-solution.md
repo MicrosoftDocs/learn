@@ -17,7 +17,7 @@ This code is merely *one possible solution*, because we didn't specify what to n
 
 As long as your program works in the best case scenario, and handles the worst case scenario, you were successful.
 
-If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
+If you were successful, congratulations!  Continue on to the next challenge!
 
 > [!IMPORTANT]
 > If you had trouble completing this challenge, it might be a good idea to review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

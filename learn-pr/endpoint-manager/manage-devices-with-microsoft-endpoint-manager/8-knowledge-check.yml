@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-devices-with-microsoft-endpoint-manager.8-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check - Understand device management using Microsoft Endpoint Manager
+  ms.date: 10/23/2020
+  author: Erikre 
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager  
+title: Knowledge check
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's the difference between device provisioning and device enrollment?"
+    choices:
+    - content: "Provisioning involves retiring existing devices from end users of your organization. Enrollment means that a device will be managed without being connected to either Intune or Configuration Manager."
+      isCorrect: false
+      explanation: "Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. In Intune, enrolling means that the device is connected and recognized by Intune based on a mobile device management (MDM) certificate. For Configuration Manager, you install the Configuration Manager client on a device, and then it registers with the site to be managed."
+    - content: "Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. In Intune, enrolling means that the device is connected and recognized by Intune based on a mobile device management (MDM) certificate. For Configuration Manager, you install the Configuration Manager client on a device, and then it registers with the site to be managed."
+      isCorrect: true
+      explanation: ""
+    - content: "In the context of mobile device management, provisioning involves planning enrollment, where enrollment involves delivering devices to end users."
+      isCorrect: false
+      explanation: "Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. In Intune, enrolling means that the device is connected and recognized by Intune based on a mobile device management (MDM) certificate. For Configuration Manager, you install the Configuration Manager client on a device, and then it registers with the site to be managed."
+  - content: "BYOD stands for what?"
+    choices:
+    - content: "Bring your own domain."
+      isCorrect: false
+      explanation: "BYOD means bring your own device to be managed by Intune. BYOD includes personally owned phones, tablets, and PCs. Users install and run the Company Portal app to enroll BYODs. "
+    - content: "Bring your own deployment."
+      isCorrect: false
+      explanation: "BYOD means bring your own device to be managed by Intune. BYOD includes personally owned phones, tablets, and PCs. Users install and run the Company Portal app to enroll BYODs. "
+    - content: "Bring your own device."
+      isCorrect: true
+      explanation: ""

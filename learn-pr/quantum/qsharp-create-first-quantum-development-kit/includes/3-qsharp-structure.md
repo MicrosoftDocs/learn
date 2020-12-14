@@ -81,7 +81,7 @@ namespace HelloQuantum {
 
 Here, you simply specify `Message` and the compiler understands which namespace it belongs to.
 
-The Q# documentation provides complete reference documentation for each built-in library. For more information, see [Q# libraries](/qsharp/api/qsharp/?azure-portal=true).
+The Q# documentation provides complete reference documentation for each built-in library. For more information, see [Q# libraries](/quantum/user-guide/libraries/additional-libraries?tabs=tabid-csproj).
 
 ### Operations
 

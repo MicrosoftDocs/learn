@@ -48,7 +48,7 @@ Choose the language you want to use at the top of this page, and follow the step
     ```
 7. Wait while Python runs the **submit-rest&#46;py** script to create the skillset.
 8. Review the JSON response that is returned from the REST interface.
-9. In another browser tab, open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Skillsets** tab to confirm that the skillset has been created.
+9. Open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Skillsets** tab to confirm that the skillset has been created.
 
 :::zone-end
 

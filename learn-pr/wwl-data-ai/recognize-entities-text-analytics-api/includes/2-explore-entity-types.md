@@ -10,7 +10,7 @@ Many of the entity types that you encounter in this service, also come with a su
 |Quantity|Number|"6" or "six"|
 |Quantity|Percentage|"25%" or "fifty percent"|
 |Quantity|Ordinal|"1st" or "first"|
-|Quantity|Age|"90 day old" or "30 years old"|
+|Quantity|Age|"90 days old" or "30 years old"|
 |Quantity|Currency|"10.99"|
 |Quantity|Dimension|"10 miles", "40 cm"|
 |Quantity|Temperature|"45 degrees"|

@@ -3,7 +3,7 @@ uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
 metadata:
   title: Implement a knowledge store
   description: "Learn how to persist the output from an Azure Cognitive Search enrichment pipeline for independent analysis or downstream processing."
-  ms.date: 09/19/2020
+  ms.date: 10/29/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
   - Experience of creating an enrichment pipeline with Azure Cognitive Search
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implementing-a-knowledge-store.svg
 levels:
 - intermediate
 roles:

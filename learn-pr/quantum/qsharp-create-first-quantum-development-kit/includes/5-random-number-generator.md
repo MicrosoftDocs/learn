@@ -65,7 +65,7 @@ The [ResultArrayAsInt](/qsharp/api/qsharp/microsoft.quantum.convert.resultarraya
 
 ## Define the entry point
 
-Your program can how generate random numbers. Here, you define the entry point for your program.
+Your program can now generate random numbers. Here, you define the entry point for your program.
 
 Modify *Program.qs* like this:
 

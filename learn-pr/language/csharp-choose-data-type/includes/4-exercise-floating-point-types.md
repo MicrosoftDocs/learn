@@ -34,16 +34,16 @@ If you run the code, you'll see the following output.
 
 ```output
 Floating point types:
-float  : -3.402823E+38 to 3.402823E+38
-double : -1.79769313486232E+308 to 1.79769313486232E+308
-decimal: -79228162514264337593543950335 to 79228162514264337593543950335
+float  : -3.402823E+38 to 3.402823E+38 (with ~6-9 digits of precision)
+double : -1.79769313486232E+308 to 1.79769313486232E+308 (with ~15-17 digits of precision)
+decimal: -79228162514264337593543950335 to 79228162514264337593543950335 (with 28-29 digits of precision)
 ```
 
 As you can see, `float` and `double` use a different notation than `decimal` to represent it's largest and smallest possible values.  But what does this notation mean?
 
 ### Deciphering large floating point values
 
-Since floating-point types can hold large numbers with a lot of precision, their values can be represented using "E notation", which is a form of scientific notation that means "times ten raised to the power of".  So a value like `5E+2` would be the value `500` because it's the equivalent of `5 * $$10^2$$`, or `5 * 10 * 10`.
+Since floating-point types can hold large numbers with a lot of precision, their values can be represented using "E notation", which is a form of scientific notation that means "times ten raised to the power of".  So a value like `5E+2` would be the value `500` because it's the equivalent of `5 * 10^2`, or `5 * 10 * 10`.
 
 ## Recap
 

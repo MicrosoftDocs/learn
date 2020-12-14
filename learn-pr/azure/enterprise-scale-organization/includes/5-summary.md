@@ -1,12 +1,12 @@
-This module showed you how to evaluate the critical design areas for enterprise enrollment and Azure AD tenants, identity and access management, and management group and subscription organization.
+This module showed you how to evaluate the critical design areas for enterprise enrollment and Azure Active Directory (Azure AD) tenants, identity and access management, and management group and subscription organization.
 
 You have learned to:
 
-- Determine the need for single or multiple Azure AD tenants
-- Define the Azure enterprise enrollment hierarchy
-- Define the requirements for Privileged Identity Management
-- Determine what RBAC roles are necessary for enterprise-scale architecture
-- Define a management group hierarchy
+- Determine the need for single or multiple Azure AD tenants.
+- Define the Azure enterprise enrollment hierarchy.
+- Define the requirements for Privileged Identity Management.
+- Determine what role-based access control roles are necessary for enterprise-scale architecture.
+- Define a management group hierarchy.
 
 ## Learn more
 
