@@ -14,3 +14,7 @@ To learn more about Azure Sphere and IoT Hub then review the following resources
 1. [Azure Sphere samples on GitHub](https://github.com/Azure/azure-sphere-samples?azure-portal=true)
 1. [Azure IoT Hub documentation](https://docs.microsoft.com/azure/iot-hub?azure-portal=true)
 1. [Microsoft Certified: Azure IoT Developer Specialty](https://docs.microsoft.com/learn/certifications/azure-iot-developer-specialty?azure-portal=true)
+
+## Learning module feedback
+
+Please take a moment to rate this learning module and provide feedback to help us improve the learning experience. Thank you.
