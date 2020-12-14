@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.query-visualize-monitor-data-in-sentinel.2-exercise-setup
 metadata:
-  title: Exercise - Query and visualize data with Azure Sentinel workbooks
-  description: Query and visualize data with Azure Sentinel workbooks.
+  title: Exercise - Query and visualize data with Azure Sentinel Workbooks
+  description: Query and visualize data with Azure Sentinel Workbooks.
   ms.date: 10/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Query and visualize data with Azure Sentinel workbooks
+title: Exercise - Query and visualize data with Azure Sentinel Workbooks
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-setup.md)]
