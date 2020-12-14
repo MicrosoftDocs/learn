@@ -8,7 +8,7 @@ Internet of Things security was critical for this microbiology lab. Without this
 
 ## Azure IoT reference architecture
 
-Azure Sphere and IoT Hub are only part of an IoT solution. To learn more about IoT solutions review the [Azure IoT reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/iot?azure-portal=true) guide.
+Azure Sphere and IoT Hub are only part of an Internet of Things solution. You can learn more about IoT solutions by reviewing the [Azure IoT reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/iot?azure-portal=true) guide.
 
 ![This illustration shows the recommended architecture for IoT applications on Azure using PaaS (platform-as-a-service) components.](../media/iot-refarch.svg)
 
