@@ -14,7 +14,7 @@ Properties can be used in the following ways:
 
 ## Controlling the heating, ventilation, and air conditioning unit (HVAC) using Azure IoT Hub device twins
 
-From the Azure IoT Explorer device twins tab, you can set the desired temperature twin. The device actions and acknowledges the request. Azure IoT Hub updates the device twin reported property and IoT Explorer then queries and display this reported property.
+From Azure IoT Explorer you can set the desired temperature twin. The device actions and acknowledges the request. Azure IoT Hub updates the device twin reported property and IoT Explorer then queries and display this reported property.
 
 ![The illustration shows a cloud to device device twin configuration pattern.](../media/azure-device-twins-c2d-pattern.png)
 
@@ -103,7 +103,7 @@ LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &dt_desiredTemperature, &dt_r
 
 ### Opening the device twin binding set
 
-Device twin binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
+The device twin binding set is initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
@@ -111,7 +111,7 @@ lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
 
 ### Closing the device twin binding set
 
-Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+The device twin bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_deviceTwinSetClose();

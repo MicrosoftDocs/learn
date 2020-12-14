@@ -11,7 +11,7 @@ IoT Hub direct methods represent a request-reply interaction with a device simil
 
 ## Remote restarting an Azure Sphere
 
-From the IoT Explorer device commands tab, you can invoke the command to restart the device. You need to set the number of seconds the device will wait before restarting. Azure IoT Hub sends a direct method message with an optional payload to the device. The device responds with a status code and optionally a message indicating if the command succeeded or failed.
+From the IoT Explorer you can invoke a direct method command to restart the device. You need to set the number of seconds the device will wait before restarting. Azure IoT Hub sends a direct method message with an optional payload to the device. The device responds with a status code and optionally a message indicating if the command succeeded or failed.
 
 ![The illustration shows a device twin configuration pattern.](../media/azure-direct-method-pattern.png)
 
@@ -19,7 +19,8 @@ From the IoT Explorer device commands tab, you can invoke the command to restart
 
 The following steps outline how Azure IoT Explorer and Azure IoT Hub direct methods are used for cloud-to-device control.
 
-1. From Azure IoT Explorer, you can invoke the **Restart Device** IoT Hub direct method command.
+1. From Azure IoT Explorer you can invoke the **Restart Device** IoT Hub direct method command.
+1. Azure IoT Hub then sends the direct method command message to the device.
 1. On the Azure Sphere, the **RestartDeviceHandler** function is called.
 1. Next the device sends a device twin **ReportedRestartUTC** message to Azure IoT to record the time the device was restarted.
 1. The direct method responds with an HTTP status code and a response message.
@@ -99,17 +100,17 @@ All declared direct method bindings must be added by reference to the directMeth
 LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &dm_restartDevice };
 ```
 
-### Opening the device twin binding set
+### Opening the direct method binding set
 
-Direct method binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
+The direct method binding set is initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_directMethodSetOpen(directMethodBindingSet, NELEMS(directMethodBindingSet));
 ```
 
-### Closing the device twin binding set
+### Closing the direct method binding set
 
-Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+The device direct method bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_directMethodSetClose();
