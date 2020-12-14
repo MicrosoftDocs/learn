@@ -4474,7 +4474,7 @@
       "source_path": "learn-pr/azure/build-api-azure-functions/13-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions",
       "redirect_document_id": false
-    }    ,
+    },
     {
       "source_path": "learn-pr/student-evangelism/develop-secure-iot-solutions-azure-sphere-iot-hub/4-event-driven-programming.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-hub/5-how-setup-azure-sphere",
