@@ -1,10 +1,10 @@
-Suppose you work for a clothing brand as the collaborative tools developer for the Global Expansion team. The team collaborates virtually through a multiuser Mixed Reality application to plan new store openings. This application enables people to work from anywhere in the world. The team spans seven countries and includes individuals who speak various languages. 
+Suppose you work for a clothing brand as the collaborative tools developer for the Global Expansion team. The team collaborates virtually through a multiuser mixed reality application to plan new store openings. This application enables people to work from anywhere in the world. The team spans seven countries and includes individuals who speak various languages. 
 
 As the team prepares to map out product placement and store displays, it finds that the language barrier sometimes results in miscommunication between people. To foster an inclusive work environment, your team needs a speech translation service that can integrate with the collaboration tool.
 
-In this module, you'll create a Mixed Reality application that translates speech to a chosen language. A microphone will capture speech that's sent to the Azure Cognitive Services Speech Translation service. The service will return a string of translated text, which will appear in the application's interface.
+In this module, you'll create a mixed reality application that translates speech to a chosen language. A microphone will capture speech that's sent to the Azure Cognitive Services Speech Translation service. The service will return a string of translated text, which will appear in the application's interface.
 
-By the end of this module, you'll be able to integrate Speech Translation as a feature into a Mixed Reality application.
+By the end of this module, you'll be able to integrate Speech Translation as a feature into a mixed reality application.
 
 ## Learning objectives
 
