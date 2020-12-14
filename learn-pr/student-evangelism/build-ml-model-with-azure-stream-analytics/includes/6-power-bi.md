@@ -13,9 +13,9 @@ You used the Custom Vision Service to train an image-classification model to dif
 
 1. Select **Get Data** in the ribbon at the top of the window. Then select **Azure SQL database** from the list of data sources and select the **Connect** button.
 
-    ![Adding a data source](../media/connect-database-1.png)
+    ![Screenshot that shows how to add a data source.](../media/connect-database-1.png)
 
-    _Adding a data source_
+    _Add a data source_
 
 1. Enter the server's host name (the server name you specified in the previous unit plus ".database.windows.net") and the database name. Select **DirectQuery**, and select **Advanced options**. Then type the query below into the "SQL statement" box to select the 20 most recently added rows in the "dbo.PolarBears" table. This is the query that Power BI will use to pull information from the database. When you're done, select **OK**.
 
@@ -23,15 +23,15 @@ You used the Custom Vision Service to train an image-classification model to dif
     SELECT TOP 20 Id, CameraId, Latitude, Longitude, Url, Timestamp, FORMAT(Timestamp,'MM/dd/yyyy h:mm:ss tt') AS TimestampLabel, IsPolarBear FROM dbo.PolarBears ORDER BY Timestamp DESC
     ```
 
-    ![Connecting to the database](../media/connect-database-2.png)
+    ![Screenshot that shows how to connect to the database.](../media/connect-database-2.png)
 
-    _Connecting to the database_
+    _Connect to the database_
 
 1. In the ensuing dialog, select **Database** in the menu on the left. Enter the user name and password you specified when you created the database server, and select the database server from the drop-down list. Select **Connect**, and then select the **Load** button in the next dialog.
 
-    ![Entering admin credentials](../media/connect-database-3.png)
+    ![Screenshot that shows how to enter the admin credentials.](../media/connect-database-3.png)
 
-    _Entering admin credentials_
+    _Enter the admin credentials_
 
 After a short delay, Power BI will connect to the database and retrieve a dataset using the query you provided. The next step is to add visuals to bring that dataset to life.
 
@@ -41,57 +41,57 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
 1. Select the **Map** icon in the "Visualizations" panel to add a map visual to the report.
 
-    ![Adding a map visual](../media/add-map-visual.png)
+    ![Screenshot that shows how to add a map visual.](../media/add-map-visual.png)
 
-    _Adding a map visual_
+    _Add a map visual_
 
 1. Check the **IsPolarBear**, **Latitude**, and **Longitude** boxes in the "Fields" panel to include these fields in the map visual.
 
-    ![Adding fields to the map visual](../media/check-latitude-longitude.png)
+    ![Screenshot that shows how to add fields to the map visual.](../media/check-latitude-longitude.png)
 
-    _Adding fields to the map visual_
+    _Add fields to the map visual_
 
 1. In the "Visualizations" panel, select the down arrow next to **Average of Latitude** and select **Don't summarize** from the menu. Then do the same for **Average of Longitude**.
 
-    ![Removing summary calculations](../media/do-not-summarize.png)
+    ![Screenshot that shows how to remove summary calculations.](../media/do-not-summarize.png)
 
-    _Removing summary calculations_
+    _Remove summary calculations_
 
 1. Select in the empty area outside the map to deselect it. Then check the **CameraId**, **IsPolarBear**, and **TimestampLabel** boxes in the "Fields" panel to add a table visual containing those columns to the report.
 
-    ![Adding a table visual](../media/add-table-visual.png)
+    ![Screenshot that shows how to add a table visual.](../media/add-table-visual.png)
 
-    _Adding a table visual_
+    _Add a table visual_
 
 1. Select in an empty area to deselect the table visual. Then check **IsPolarBear** and **Latitude** in the "Fields" panel to add another table visual, and select the **Pie Chart** icon in the "Visualizations" panel to convert the table into a pie chart. 
 
-    ![Adding a pie-chart visual](../media/add-pie-chart-visual.png)
+    ![Screenshot that shows how to add a pie-chart visual.](../media/add-pie-chart-visual.png)
 
-    _Adding a pie-chart visual_
+    _Add a pie-chart visual_
 
-1. Select the down arrow next to **Average of Latitude** and select **Count** from the menu to configure the pie chart to show a count of sightings and the proportion of sightings in which polar bears were detected. 
+1. In the "Visualizations" panel, in the Values section, select the down arrow next to **Average of Latitude** and select **Count** from the menu to configure the pie chart to show a count of sightings and the proportion of sightings in which polar bears were detected. 
 
-    ![Refining the pie-chart visual](../media/refine-pie-chart-visual.png)
+    ![Screenshot that shows how to refine the pie-chart visual.](../media/refine-pie-chart-visual.png)
 
-    _Refining the pie-chart visual_
+    _Refine the pie-chart visual_
 
 1. Deselect the pie-chart visual and select the **Slicer** icon to add a slicer to the report. Slicers provide a convenient means for filtering information in a Power BI report by narrowing the data shown in other visuals. Then select the **IsPolarBear** field in the "Fields" panel so the slicer shows checkboxes labeled "True" and "False."
 
-    ![Adding a slicer](../media/add-slicer.png)
+    ![Screenshot that shows how to add a slicer.](../media/add-slicer.png)
 
-    _Adding a slicer_
+    _Add a slicer_
 
 1. Now resize and reposition the visuals to achieve a layout similar to this:
 
-    ![Adjusting the layout](../media/adjust-layout.png)
+    ![Screenshot that shows how to adjust the layout.](../media/adjust-layout.png)
 
-    _Adjusting the layout_
+    _Adjust the layout_
 
 1. With the report structure in place, the next task is to use some of Power BI's rich formatting options to embellish the visuals. Start by selecting the map visual in the report designer. Then select the **Format** icon in the "Visualizations" panel.
 
-    ![Formatting the map visual](../media/format-map.png)
+    ![Screenshot that shows how to format the map visual.](../media/format-map.png)
 
-    _Formatting the map visual_
+    _Format the map visual_
 
 1. Use the formatting controls in the "Visualizations" panel to make the following changes to the map visual:
 
@@ -103,7 +103,7 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
     Confirm that the resulting map looks something like this:
 
-    ![Formatted map visual](../media/formatted-map-visual.png)
+    ![Screenshot that shows the formatted map visual.](../media/formatted-map-visual.png)
 
     _Formatted map visual_
 
@@ -118,11 +118,13 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
     - Under "Style," change the table style to "Alternating rows"
     - Turn "Title" on, and change the title text to "Camera Activity" 
 
-1. Select the slicer visual and under "Selection controls" in the "Visualizations" panel, turn "Multi-select with CTRL" off. This prevents you from having to use the **Ctrl** key to select more than one check box.
+1. Select the slicer visual and use the formatting controls in the "Visualizations" panel to make the following changes.
+
+    - Under the "Selection controls" section, turn **Multi-select with CTRL** off. This setting prevents you from having to use the Ctrl key to select more than one check box.
 
 1. Double-click **Page 1** in the bottom-left corner of the designer and change the report title to "Polar Bear Activity."
 
-1. Use the **File -> Save** command to save the report.
+1. Use the **File** > **Save** command to save the report.
 
 Feel free to embellish the report further. Once you're satisfied with the layout and content, it's time to put it to work using a live data source.
 
@@ -146,7 +148,7 @@ Now that the report is prepared in Power BI, your final task is to run the end-t
 
 1. Confirm that red and green bubbles appear at various locations around the island. Green bubbles indicate the presence of polar bears, while red bubbles represent locations where photos were taken but no polar bears were detected. Locations that have a mixture of sightings will show red *and* green, as pictured below.
 
-    ![There be polar bears!](../media/live-map.png)
+    ![Screenshot that shows the live map and tracking for polar bears.](../media/live-map.png)
 
     _There be polar bears!_
 
