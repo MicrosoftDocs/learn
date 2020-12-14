@@ -7,7 +7,7 @@ Quantum-inspired optimization is a quantum-inspired algorithm based on emulating
 
 A good analogy of this is to imagine you have a glass of water. If you move that glass slowly across a table, the contents won't spill because the system has time to adapt to its new configuration. If you were to move the glass quickly however, the system has been forced to change too quickly, and we have water everywhere.
 
-In this module, we'll focus on quantum-inspired optimization, although it's important to remember that quantum-inspired is not just optimization, and similarly there are quantum optimization algorithms that do not have a quantum-inspired counterpart.
+While this module focuses on quantum-inspired optimization, it is important to remember that quantum-inspired is not limited to optimization, and similarly there are quantum optimization algorithms that might not have a quantum-inspired counterpart.
 
 ## Where can quantum-inspired optimization (QIO) be applied?
 
