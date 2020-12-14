@@ -3,7 +3,7 @@ uid: learn.wwl.schedule-tasks-using-sql-server-agent
 metadata:
   title: Schedule tasks using SQL Server Agent
   description: "Schedule tasks using SQL Server Agent"
-  ms.date: 12/10/2020
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ units:
 - learn.wwl.schedule-tasks-using-sql-server-agent.describe-task-status-notifications
 - learn.wwl.schedule-tasks-using-sql-server-agent.describe-extended-events
 - learn.wwl.schedule-tasks-using-sql-server-agent.create-extended-events-session
-- learn.wwl.schedule-tasks-using-sql-server-agent.6-exercise-create-cpu-status-alert
+- learn.wwl.schedule-tasks-using-sql-server-agent.exercise-create-cpu-status-alert
 - learn.wwl.schedule-tasks-using-sql-server-agent.knowledge-check
 - learn.wwl.schedule-tasks-using-sql-server-agent.summary
 badge:

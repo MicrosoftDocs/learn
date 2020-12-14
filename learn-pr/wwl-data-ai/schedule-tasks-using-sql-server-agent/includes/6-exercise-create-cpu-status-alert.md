@@ -18,7 +18,7 @@ You have been hired as a Senior Data Engineer to help automate day to day operat
 
 ## Create an alert when a CPU exceeds an average of 80 percent.
 
-1. In the search bar at the top of the Azure Portal, type **SQL**, and select **SQL databases**. Select the **sample-db-with-tde**  database name.
+1. In the search bar at the top of the Azure portal, type **SQL**, and select **SQL databases**. Select the **sample-db-with-tde**  database name.
 
     :::image type="content" source="../media/dp-3300-module-66-lab-11.png" alt-text="Screenshot of selecting a SQL database.":::
 
