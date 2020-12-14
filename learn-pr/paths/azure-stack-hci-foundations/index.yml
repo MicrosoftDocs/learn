@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.azure-stack-hci-foundations
+metadata:
+  title: Azure Stack HCI foundations
+  description: This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
+  brand: azure
+  ms.date: 12/10/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Stack HCI foundations
+summary: |
+  This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
+prerequisites: |
+  - Azure
+  - Window Server software-defined storage
+  - Windows Server software-defined networking
+  - IoT technologies
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- ai-edge-engineer
+- business-owner
+- data-engineer
+- database-administrator
+- devops-engineer
+- privacy-manager
+- security-engineer
+- solution-architect
+- student
+- technology-manager
+products:
+  - azure-stack-hci
+  - azure-stack-hub
+  - azure-stack-edge
+modules:
+- learn.azure.intro-to-azure-stack
+- learn.azure.azure-stack-hci-technologies
+- learn.azure.azure-stack-hci-plan-deploy
+- learn.azure.stack-hci-arc-integration
+trophy:
+  uid: learn.azure-stack-hci-foundations.trophy
