@@ -20,12 +20,20 @@ You can choose to offload some of the responsibilities to a hosting provider usi
 
 Virtual machines are essentially an emulation of a computer system's hardware and operating system environment. For example, you can create a VM on Microsoft Azure by specifying a hardware configuration and an operating system to install.  Once the configuration is complete and the VM has been started, you can log into that VM and interact with it in the same manner as a physical computer. You install software and configure the aspects of the OS as needed.  Using VMs, you can host various operating systems and versions to meet your needs for compatibility or any other reason. Microsoft Azure supports VMs that host Windows and Linux operating systems.
 
+You may have to choose this model if your application makes use of some more proprietary software that is not provided in the PaaS service. Using IaaS, you could make use of an on-premises virtual machine, that has the software configuration for your application. You can take a snapshot of the virtual machine and "rehost" it, or move it, to the cloud.
+
+You may have to choose IaaS for various reasons.  Three of the more common reasons are listed here:
+
+- Security - your company may have to comply with specific security practices and policies pertaining to data
+- Control - your company may want more control over the environment for software and OS configurations
+- Policies - your company may have other policies that restrict hosting options or you have vendor or other technology "lock-in" objections.  With a VM, you can move your VM disk (.vhd) over to another vendor if the need arises.
+
 ### Platform as a Service (PaaS)
 
 While the IaaS option is often the quickest and easiest method to move an application to a cloud-hosted environment, PaaS offers more benefits. Using the Platform as a Service option, you offload the responsibility of maintaining system software, OS, hardware, etc., to the hosting provider. You are responsible for your application(s). PaaS provides the database server for your data that supports the applications.  In the scenario for this module, your application is the ASP.NET app and the data that resides in the on-premises SQL Server database.  You will migrate the data to a SQL Azure database instance. The hosting provider will manage the SQL Azure database and the security for it.
 
-In this module, you will look at evaluation of migrating an ASP.NET app and SQL Server database to an IaaS solution. This will involve considerations around using the Azure App Service for the ASP.NET application and Azure SQL Database for hosting the current on-premises SQL Server data.
+In this module, you will look at evaluation of migrating an ASP.NET app and SQL Server database to an IaaS solution. This will involve considerations around using the Azure App Service for the ASP.NET application and Azure SQL Database for hosting the current on-premises SQL Server data. This may require refactoring of the app or rebuilding it.
 
 ### Software as a Service (SaaS)
 
-The SaaS option isn't relevant for the module scenario. Consider SaaS solutions like Office 365 or Microsoft Dynamics 365. In this hosting option, you are essentially "renting" software.
+The SaaS option isn't relevant for the module scenario. Consider SaaS solutions like Office 365 or Microsoft Dynamics 365. In this hosting option, you are essentially "renting" software. To use SaaS, you are essentially replacing your existing application.  If your application is a custom app, then it is unlikely that SaaS will be an option for you.
