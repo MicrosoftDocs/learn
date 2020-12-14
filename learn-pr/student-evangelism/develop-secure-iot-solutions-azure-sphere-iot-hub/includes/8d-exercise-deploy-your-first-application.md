@@ -19,7 +19,7 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
     - Update **CmdArgs** with your Azure IoT DPS ID scope.
     - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
 
-1. Update the **AllowedConnections** with the Azure IoT Hub and DPS endpoints you previously copied to Notepad.
+1. Update the **AllowedConnections** with the **global device provisioning service endpoint**, your **DPS endpoint**, and your **Azure IoT Hub endpoint**. See the example below to understand the correct format for these endpoints.
 
 1. You can format the app_manifest.json document by right mouse clicking on the document and selecting **Format Document** from the context menu.
 
