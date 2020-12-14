@@ -48,7 +48,7 @@ None
 
 ## Module outline of units
 
-## 1st unit: Introduction
+## First unit: Introduction
 
 **Type of unit:** Introduction unit
 
@@ -56,13 +56,13 @@ None
 
 ### Module scenario
 
-Contoso is a medium-size financial services company with its headquarters in London, England and offices all around the world. It’s currently operating almost entirely on-premises, with the compute environment consisting of a mix of physical and virtual servers, running a range of Windows Server versions and Linux distributions. That diversity, along with the corresponding siloed operational model and lack of tools that would facilitate a consistent, unified management is the primary challenge that the Contoso's IT team is currently dealing with. 
+Contoso is a medium-size financial services company with its headquarters in London, England, and offices all around the world. It’s currently operating almost entirely on-premises, with the compute environment consisting of a mix of physical and virtual servers, running a range of Windows Server versions and Linux distributions. That diversity, along with the corresponding siloed operational model and lack of tools that would facilitate a consistent, unified management is the primary challenge that the Contoso's IT team is currently dealing with. 
 
-In addition, the Contoso's IT team is exploring the option of migrating to cloud some of its on-premises server workloads running on legacy infrastructure which is reaching end-of-life. Contoso is considering several different cloud providers, with the possibility of the multi-cloud strategy. The primary concern of the Contoso's Chief Information Officer (CIO) is that such strategy might further exacerbate operational complexity and management overhead that Contoso's IT is trying to minimize. 
+In addition, the Contoso's IT team is exploring the option of migrating to cloud some of its on-premises server workloads running on legacy infrastructure that is reaching end-of-life. Contoso is considering several different cloud providers, with the possibility of the multi-cloud strategy. The primary concern of the Contoso's Chief Information Officer (CIO) is that such strategy might further exacerbate operational complexity and management overhead that Contoso's IT is trying to minimize. 
 
 Given these challenges, the Contoso's CIO wants to identify technologies that promise to bridge the gap between the administrative model of on-premises and multi-cloud services, regardless of the server operating system and the hardware or virtualization platform. While attending the most recent Ignite event, the CIO heard about the hybrid capabilities of Azure Arc and tasked you, the IT Engineering team lead, with evaluating the extent to which Azure Arc enabled servers can help with building a consistent, unified management model.
 
-## 2nd unit: What are the characteristics of Azure Arc enabled servers?
+## Second unit: What are the characteristics of Azure Arc enabled servers?
 
 **Type of unit:** Learning content unit
 
@@ -75,7 +75,7 @@ Describe the characteristics and capabilities of Azure Arc enabled servers.
 - Describe the characteristics of Azure Arc enabled servers.
 - Describe how Azure Arc integrates Windows and Linux servers with Azure.
 
-## 3rd unit: What are the core capabilities of Azure Arc enabled servers?
+## Third unit: What are the core capabilities of Azure Arc enabled servers?
 
 **Type of unit:** Learning content unit
 
@@ -89,7 +89,7 @@ Describe the capabilities, benefits, and use cases of Azure Arc enabled servers.
 - Describe the role of Azure VM extensions in the context of Azure Arc enabled servers.
 - Describe the role of Azure Arc enabled servers in securing access to Azure resources.
 
-## 4th unit: How can you simplify management and maintenance of Azure Arc enabled servers?
+## Fourth unit: How can you simplify management and maintenance of Azure Arc enabled servers?
 
 **Type of unit:** Learning content unit
 
@@ -104,7 +104,7 @@ Describe the capabilities, benefits, and use cases of Azure Arc enabled servers.
 - Integrate Azure Arc enabled servers with the Update Management feature of Azure Automation.
 - Integrate Azure Arc enabled servers with Azure Automation Desired State Configuration (DSC).
 
-## 5th unit: Summary
+## Fifth unit: Summary
 
 **Type of unit:** Summary unit
 
@@ -112,4 +112,4 @@ Describe the capabilities, benefits, and use cases of Azure Arc enabled servers.
 
 ### Resolution of module problem
 
-Contoso was looking for a way to build a consistent, unified management model across on-premises and multi-cloud environments for virtual and physical workloads running on Windows and Linux servers. By implementing Azure Arc enabled servers, Contoso was able to accomplish that objective. The core capabilities of Azure Arc enabled servers faciliated applying and maintaining desired configuration to all of their operating system and workload settings. By onboarding Azure Arc enabled servers onto other Azure services, including Azure Monitor, Azure Automation, and Azure Security Center, Contoso managed to further minimize operational complexity and the management overhead. 
+Contoso was looking for a way to build a consistent, unified management model across on-premises and multi-cloud environments for virtual and physical workloads running on Windows and Linux servers. By implementing Azure Arc enabled servers, Contoso was able to accomplish that objective. The core capabilities of Azure Arc enabled servers facilitated applying and maintaining desired configuration to all of their operating system and workload settings. By onboarding Azure Arc enabled servers onto other Azure services, including Azure Monitor, Azure Automation, and Azure Security Center, Contoso managed to further minimize operational complexity and the management overhead. 
