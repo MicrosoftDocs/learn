@@ -36,8 +36,6 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you used to activate the sandbox.
 
-1. Expand the left pane.
-
 1. On the top of the Azure portal left pane, select **Create a resource**.
 
     [![Screenshot of the Azure portal showing the left pane with Create a resource option highlighted.](../media/create-resource.png)](../media/create-resource-expanded.png#lightbox)

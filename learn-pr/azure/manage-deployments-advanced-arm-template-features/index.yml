@@ -3,7 +3,7 @@ uid: learn.azure.manage-deployments-advanced-arm-template-features
 title: Manage complex cloud deployments by using advanced ARM template features
 metadata:
   description: Use advanced constructs in Azure Resource Manager to manage complex scenarios such as deployment order, conditional deployments and secrets. 
-  ms.date: 11/04/2020
+  ms.date: 12/09/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

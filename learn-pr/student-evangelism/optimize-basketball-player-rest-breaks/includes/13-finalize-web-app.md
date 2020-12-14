@@ -13,6 +13,7 @@ function startNextQuarter() {
         return;
     }
 
+    // Update the button to indicate a quarter is in progress.
     document.getElementById('start').innerText = 'Q' + (currentQuarter + 1) + ' is in progress';
 
     // Define the interval period for the quarter; in this case, it's 12 seconds.

@@ -42,6 +42,7 @@ After we create the button, we can add the button to the bench area that we iden
 
         // Add the button to the bench
         bench.appendChild(newPlayer);
+    }
 ```
 
 ## Test the web app locally
