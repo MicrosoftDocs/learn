@@ -20,7 +20,7 @@ Now that you have reviewed this module, you should be able to:
 * Learn more about how you can use [DeepSpeed](https://github.com/microsoft/deepspeed) to train your AI models 10 times faster.
 * Learn more about how [ONNX Runtime](https://microsoft.github.io/onnxruntime/) can help you train models more efficiently.
 * Learn more about [AI at Scale](https://innovation.microsoft.com/en-us/ai-at-scale) in its website.
-* Learn more about [AI at Scale - Deep Dive](https://innovation.microsoft.com/exploring-ai-at-scale).
+* Learn more about [AI at Scale - Deep Dive](https://innovation.microsoft.com/en-us/exploring-ai-at-scale).
 
 ## References
 
