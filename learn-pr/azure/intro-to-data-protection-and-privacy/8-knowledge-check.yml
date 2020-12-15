@@ -1,0 +1,81 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-data-protection-and-privacy.8-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/15/2020
+  author: 
+  ms.author: 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+questions:
+
+  - content: "What kind of data is in primary focus of GDPR?"
+    choices:
+    - content: "Business data"
+      isCorrect: false
+      explanation: "That is not correct. Business data is not in the primary focus of GDPR"
+    - content: "Confidential data"
+      isCorrect: false
+      explanation: "That is not correct. Confidential data is not in the primary focus of GDPR"
+    - content: "Personal and sensitive personal data"
+      isCorrect: true
+      explanation: "That is correct. GDPR primarily deals with how personal data is collected, protected and used"
+
+
+  - content: "What is CCPA?"
+    choices:
+    - content: "Data protection policy"
+      isCorrect: false
+      explanation: "That is not correct. CCPA is not a data protection policy."
+    - content: "comprehensive privacy law"
+      isCorrect: true
+      explanation: "That is correct.The California Consumer Privacy Act (CCPA) is the first comprehensive privacy law in the United States"
+    - content: "Data encryption policy"
+      isCorrect: false
+      explanation: "That is not correct. CCPA is not a data encryption policy."
+
+   - content: "What is processor?"
+    choices:
+    - content: "A person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data"
+      isCorrect: false
+      explanation: "That is not correct. Processor does not determine the purpose of processing of personal data."
+    - content: "A part of a data protection technology that processes user's data."
+      isCorrect: false
+      explanation: "That is not correct. Processor is not a part of data protection technology"
+    - content: "A natural or legal person, public authority, agency, or other body, which processes personal data on behalf of the controller"
+      isCorrect: true
+      explanation: "That is correct. A processor processes personal data on behalf of the controller."
+
+   - content: "Which of the following IS NOT one of the six key principles that Microsoft follow when deals with customer data?"
+    choices:
+    - content: "Control"
+      isCorrect: false
+      explanation: "That is not correct. Control is one of the key principles."
+    - content: "No content based targeting"
+      isCorrect: false
+      explanation: "That is not correct. Microsoft does not use content based targeting."
+    - content: "Sharing"
+      isCorrect: true
+      explanation: "That is correct. Microsoft never shares your data."
+
+   - content: "Which Microsoft resources helps you learn how Microsoft implements and supports security, privacy, compliance, and transparency in all its cloud products and services"
+    choices:
+    - content: "Azure Blueprints"
+      isCorrect: false
+      explanation: "That is not correct. Azure Blueprints helps customers build Azure applications that are secure and comply with many regulations"
+    - content: "Azure AD Privileged Identity Protection"
+      isCorrect: false
+      explanation: "That is not correct. Azure AD Privileged Identity Protection helps you protect privileged identities in your organization"
+    - content: "Microsoft Trust Center"
+      isCorrect: true
+      explanation: "That is correct. The Microsoft Trust Center is your resource for learning how we implement and support security, privacy, compliance, and transparency in all our cloud products and services"
+
+
+  
