@@ -16,7 +16,7 @@ You have been hired as a database administrator to identify performance related 
 
 1. On the **Welcome to Azure** popup, select **Maybe later**.
 
-## Review CPU utilization in Azure Portal
+## Review CPU utilization in Azure portal
 
 1. From the Home screen, select the menu, and select **SQL databases**.
 
@@ -86,7 +86,7 @@ You have been hired as a database administrator to identify performance related 
 1. Locate the **Query Performance Insight** icon on the **Intelligent Performance** section of the blade for the AdventureWorks database.
 1. Select **Reset settings**.
 
-:::image type="content" source="../media/resetsettings.png" alt-text="Reset settings":::
+    :::image type="content" source="../media/resetsettings.png" alt-text="Reset settings":::
 
 1. Click on the query in the grid below the graph. If you do not see a query, wait for 2 minutes and select **Refresh**.
 
