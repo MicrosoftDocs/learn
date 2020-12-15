@@ -4,7 +4,7 @@ title: Write data back to the Azure Cosmos DB transactional store
 metadata:
   title: Write data back to the Azure Cosmos DB transactional store
   description: "Write data back to the Azure Cosmos DB transactional store"
-  ms.date: 12/14/2020
+  ms.date: 12/15/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
