@@ -26,8 +26,7 @@ quiz:
     - content: "Arrays and Vectors can only hold values from a single type."
       isCorrect: false
       explanation: "Arrays and vectors is a collection of objects that allow you to store multiple values of the same type."
-  - content: "Which data structure would be the best fit for representing an address-book, that associates
-people's names to their phone numbers?"
+  - content: "Which data structure would be the best fit for representing an address-book, that associates people's names to their phone numbers?"
     choices:
     - content: "A Tuple."
       isCorrect: false
@@ -41,8 +40,7 @@ people's names to their phone numbers?"
     - content: "A HashMap."
       isCorrect: true
       explanation: "Correct. A hashmap allows you to store a mapping of keys to values. So each name key could have a corresponding phone number as a value."
-  - content: "What would happen if you tried to directly access an element of a vector whose index was beyond that
-vector's boundaries?"
+  - content: "What would happen if you tried to directly access an element of a vector whose index was beyond that vector's boundaries?"
     choices:
     - content: "The program would panic in runtime."
       isCorrect: true
