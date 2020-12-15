@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-plan-deploy.4-deploy
+metadata:
+  title: Deploy Azure Stack HCI
+  description: An overview of the Azure Stack HCI deployment process
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure Stack HCI
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-deploy.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is the last step of the Create Cluster wizard in the Windows Admin Center when provisioning an Azure Stack HCI cluster?"
+    choices:
+    - content: "SDN."
+      isCorrect: true
+      explanation: "That's correct. The steps include, in sequence, Get Started, Networking, Clustering, Storage, and SDN."
+    - content: "Storage."
+      isCorrect: false
+      explanation: "That's incorrect. The steps include, in sequence, Get Started, Networking, Clustering, Storage, and SDN."
+    - content: "Clustering."
+      isCorrect: false
+      explanation: "That's incorrect. The steps include, in sequence, Get Started, Networking, Clustering, Storage, and SDN."
+
+  - content: "How much time do you have to register a newly deployed Azure Stack HCI cluster with Azure?"
+    choices:
+    - content: "1 day"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack HCI is an Azure service and you need to register it with Azure within 30 days of installation."
+    - content: "30 days"
+      isCorrect: true
+      explanation: "That's correct. Azure Stack HCI is an Azure service and you need to register it with Azure within 30 days of installation."
+    - content: "6 months"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack HCI is an Azure service and you need to register it with Azure within 30 days of installation."
