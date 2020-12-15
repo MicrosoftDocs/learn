@@ -1,14 +1,12 @@
-Azure Quantum offers two different types of services: *optimization solutions*,
+Azure Quantum offers two different types of services: *optimization* solutions,
 where you can run first class optimization algorithms in classical hardware to
 address optimization problems; and *quantum computing* solutions, where you have
 access to quantum computing targets where you can run Q# quantum programs in
 real or simulated quantum devices.
 
-In this module, you'll explore the quantum computing options in Azure Quantum
-and you'll discover how to submit and manage your Q# quantum programs to
-quantum computers.
+In this module, you'll explore the quantum computing options in Azure Quantum and manage the submissions.
 
-You'll also learn the basics principles behind quantum hardware and the different
+You'll also learn the basic principles behind quantum hardware and the different
 kinds of target devices that you have access to in Azure Quantum.
 
 ## Learning objectives

@@ -119,7 +119,7 @@ it. It's simple but enough to show how to submit a job.
 Next, you prepare your environment to submit the job using the workspace
 you created.
 
-1. Use `quantum workspace set` to select the workspace you created above as the
+1. Use `az quantum workspace set` to select the workspace you created above as the
    default Workspace. Note that you also need to specify the resource group you
    created it in, for example:
 

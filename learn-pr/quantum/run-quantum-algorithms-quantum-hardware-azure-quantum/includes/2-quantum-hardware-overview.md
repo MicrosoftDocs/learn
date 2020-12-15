@@ -10,11 +10,10 @@ systems to represent the qubits that we use to store the quantum information. In
 general, a functional quantum computer should fulfill the following criteria:
 
 - **Scalability of qubits:** since quantum computers are based in the
-  manipulation of quantum information by using qubits, we need a system that
-  conceives an scalable number of many qubits. A qubit can be represented by any
+  manipulation of quantum information by using qubits, we need a system that allows scalability to a large number of qubits. A qubit can be represented by any
   physical system with **two** *states* or *levels* that can be prepared in a
   quantum superposition.
-- **Ability to initialize the qubits in a fiducial state:** having many qubits
+- **Ability to initialize the qubits in a specific state:** having many qubits
   isn't useful if we can't trust their initial state. A fundamental
   characteristic of a quantum computer is its ability to initialize the qubits
   reliably to a specific state (usually, the state $|0\rangle$).
@@ -39,9 +38,9 @@ computation.
 
 Building devices that meet these five criteria is one of the most demanding
 engineering challenges ever faced by humankind. However, in the recent years
-astounding advances in condense matter physics and quantum optics are allowing
+astounding advances in condensed matter physics and quantum optics are allowing
 companies and universities to build the first working version of quantum
-computers. Microsoft is partnering with some of the top-class quantum computers
+computers. Microsoft is partnering with some of the best-in-class quantum computer
 manufacturers around the world to give you access to the latest quantum
 computing solutions through Azure Quantum. Let's see an overview of the
 different technologies used to create quantum computers.
@@ -49,15 +48,15 @@ different technologies used to create quantum computers.
 ### Trapped ion quantum computers
 
 Trapped ion quantum computers use *ions* (electrically charged atoms) suspended
-in a electromagnetic field in the vacuum as the basic element to represent
+in an electromagnetic field in vacuum as the basic element to represent
 qubits.
 
 ![alt_text=todo](../media/2-trapped-ion-quantum-computer.png)
 
 In particular, these computers use chains of trapped ions and each ion
-represents a qubit. They use the transversal motion of the chain to induce
+represents a qubit. They use the vibrational motion of the chain to induce
 operations in the qubit states. The qubit states are stored in the internal
-states of each ion. In particular, the qubit states are generally stored in two
+states of each ion. In particular, the qubit states are often stored in two
 hyperfine levels of the ion.
 
 > [!NOTE]
@@ -104,7 +103,7 @@ cloud-available superconducting quantum computers.
 Since superconducting properties appear at very low temperatures and higher
 temperatures imply more noise, these quantum computers work at very low
 temperatures, near absolute zero. This is why these chips are usually contained
-in big cryostates.
+in big cryostats.
 
 [FIGURE OF CRYOSTATE QUANTUM COMPUTER]
 
@@ -131,7 +130,7 @@ of quantum computers to run your own quantum algorithms.
 ### Azure Quantum for cloud quantum computing
 
 Azure Quantum is a cloud computing hub where you can connect to different
-industry leader providers to use their most advanced quantum computers.
+industry leading providers to use their most advanced quantum computers.
 
 ![Alt_text=Diagram of the Azure Quantum
 service](../media/azure-quantum-flow-diagram.png)
