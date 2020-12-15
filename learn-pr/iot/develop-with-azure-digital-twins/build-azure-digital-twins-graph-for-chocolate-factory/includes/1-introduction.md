@@ -1,4 +1,4 @@
-Azure Digital Twins enables an organization to track the past and predict the future. The key to this knowledge is the creation of working digital models that represent, to any degree of detail, physical devices and structures. The devices can range from focused IoT sensors to complex pieces of equipment. The structures can be production lines, whole factories, buildings, railway networks, shipping lines, or, in other words, just about any industrial or commercial environment.
+Azure Digital Twins enables an organization to track the past and predict the future. The key to this knowledge is the creation of working digital models that represent, to any degree of detail, physical devices, and structures. The devices can range from focused IoT sensors to complex pieces of equipment. The structures can be production lines, whole factories, buildings, railway networks, shipping lines, or, in other words, just about any industrial or commercial environment.
 
 For example, by digitally modeling a production line, managers can predict the future based on past performance. Another powerful scenario is the ability to ask "what if" questions. You could digitally add new pieces of equipment, new production lines, and new transport to an existing system, and test for its effectiveness. You'll be able to gain all these insights long before committing to purchasing and installing any physical equipment. The realism of the digital model is greatly enhanced by the use of IoT data to supply real-world sensor data to the digital simulation.
 
@@ -18,7 +18,7 @@ To summarize, in this module, you will:
 
 - Introductory knowledge of the purpose of Azure IoT
 - Ability to navigate the Azure IoT portal
-- Ability to use the Command Prompt and command line windows
+- Ability to use the Command Prompt and command-line windows
 - Ability to download and install software tools
 - Ability to use Visual Studio at the beginner level
 - A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended
@@ -37,7 +37,7 @@ For the sake of explanation, the production of chocolate has been simplified int
 
 Cocoa beans are the input to this production line and chocolate bars the output!
 
-1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 to 150 degrees C. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
+1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 degrees to 150 degrees C. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
 
 1. **Grinding**: The grinding process takes the cocoa nibs that result from the roasting and crushes them to pieces, typically between steel plates, to create a liquid cocoa butter.
 

@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Introductory knowledge of the purpose of Azure IoT
   - Ability to navigate the Azure IoT portal
-  - Ability to use the Command Prompt and command line windows
+  - Ability to use the Command Prompt and command-line windows
   - Ability to download and install software tools
   - Ability to use Visual Studio at the beginner level
   - A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended
