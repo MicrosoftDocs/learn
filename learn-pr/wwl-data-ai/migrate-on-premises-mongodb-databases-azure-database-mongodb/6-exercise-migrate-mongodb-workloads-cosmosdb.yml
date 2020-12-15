@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.6-exercise-migrate-mongodb-workloads-cosmosdb
+title: 'Exercise: Migrate MongoDB workloads to Cosmos DB'
+metadata:
+  title: 'Exercise: Migrate MongoDB workloads to Cosmos DB'
+  description: "Exercise: Migrate MongoDB workloads to Cosmos DB"
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: rcapert
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-migrate-mongodb-workloads-cosmosdb.md)]
+interactive: bash
