@@ -429,7 +429,7 @@ You're now ready to test out your Node.js web application!
 1. From the `~/Books` directory, run this command to start the web application.
 
     ```bash
-    sudo node server.js
+    sudo nodejs server.js
     ```
 
     This command starts the application by listening on port 80 for incoming HTTP requests.
