@@ -12,15 +12,15 @@ Currently, your weather bot has only one phrase to greet users with. To add some
 1. Select the **Send a response** action in the **Authoring canvas**.
 1. In the **Properties** pane, modify the contents of the **Language Generation** text area to include the following phrases:
 
-- **- Hello. Welcome to the Get Weather Bot. Enter "weather" to start.**
-- **- Hi! I am a weather bot and can retrieve weather conditions for you. Try saying "weather".**
-- **- Need to know the weather conditions? Say "weather" and I can help.**
+- **Hello. Welcome to the Get Weather Bot. Enter "weather" to start.**
+- **Hi! I am a weather bot and can retrieve weather conditions for you. Try saying "weather".**
+- **Need to know the weather conditions? Say "weather" and I can help.**
 
 ## Manage templates
 
 All of your bot responses can be found in the **Bot Responses** panel by selecting **Bot Responses** from the menu.  You can expand the menu to see the names in the event the icons are not clear enough.
 
-:::image type="content" source="../media/bot-responses.png" alt-text="bot responses menu selected":::
+   :::image type="content" source="../media/bot-responses.png" alt-text="bot responses menu selected" :::
 
 The default view is shown in the previous image.  You can also edit the code for the responses.
 

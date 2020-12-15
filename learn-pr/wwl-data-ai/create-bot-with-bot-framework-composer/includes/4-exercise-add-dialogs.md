@@ -53,7 +53,7 @@ Now that you have the starting point for the weather bot in place, it's time to 
 1. On the **User Input** tab, set the **Property** field to **user.zipcode**, and set the **Output format** field to the expression **=trim(this.value)** to remove any superfluous spaces around the user-provided value.
 1. On the **Other** tab, set the following values to define validation rules for the zipcode input:
     - In the **Recognizers** areas, set the **Unrecognized Prompt** field, to **- Sorry the value '${this.value}' doesn't appear to be a valid entry.  Please enter a zip code in the form of 12345.**.
-    - In the **Validation**section, add the validation rule **length(this.value) == 5** to will check that the length of the zipcode entry is only five characters. Then set the **Invalid Prompt** field to **- Sorry, '${this.value}' is not valid. I'm looking for a 5-digit number as zip code. Please specify a zip code in the form 12345.**.
+    - In the **Validation** section, add the validation rule **length(this.value) == 5** to will check that the length of the zipcode entry is only five characters. Then set the **Invalid Prompt** field to **- Sorry, '${this.value}' is not valid. I'm looking for a 5-digit number as zip code. Please specify a zip code in the form 12345.**.
     - In the **Prompt configurations** section, set the **Default value** property to **98052**.
 
     >[!Note]
@@ -61,14 +61,14 @@ Now that you have the starting point for the weather bot in place, it's time to 
 
 ## Make the weather report request
 
-In this exercise, you will add an action tthat uses an HTTP request to retrieve the weather forecast for the zipcode entered by the user. You will require an API key for the service to work so visit the [**OpenWeather site**](https://openweathermap.org/price) to create a user account and get a free API key before you start.
+In this exercise, you will add an action that uses an HTTP request to retrieve the weather forecast for the zipcode entered by the user. You will require an API key for the service to work so visit the [**OpenWeather site**](https://openweathermap.org/price) to create a user account and get a free API key before you start.
 
 1. Ensure you have your weather bot open in the Bot Framework Composer.
 1. Directly under the last action you created for the user zipcode entry, select the **+** symbol.
 1. From the list of options, select **Access external resources** and then **Send an HTTP request**.
 1. Set the properties for the **HTTP request** as follows:
     - **HTTP method**: GET
-    - **Url**: http://weatherbot-ignite-2019.azurewebsites.net/api/getWeather?zipcode=${user.zipcode}&api_token=*Your_API_Token*
+    - **Url**: `http://weatherbot-ignite-2019.azurewebsites.net/api/getWeather?zipcode=${user.zipcode}&api_token=` *Your_API_Token*
     - **Result property**: dialog.api_response
 
     The result can include any of the following four properties from the HTTP response:
@@ -88,13 +88,13 @@ In this exercise, you will add an action tthat uses an HTTP request to retrieve 
 
     Your **Properties** pane should look like this image.
 
-    :::image type="content" source="../media/set-property.png" alt-text="True branch property settings":::
+        :::image type="content" source="../media/set-property.png" alt-text="True branch property settings":::
 
 1. If the status is true, you want to send a response to the user with the weather information so, still in the **True** branch, add a **Send a response** action under the **Set a property** action and set its **Language generation** text to **- The weather in ${dialog.weather.city} is ${dialog.weather.weather} and the temp is ${dialog.weather.temp}\&deg;.**
 
 1. The flow should now appear in the **Authoring canvas** as follows:
 
-    :::image type="content" source="../media/if-else.png" alt-text="if/else branch True settings":::
+        :::image type="content" source="../media/if-else.png" alt-text="if/else branch True settings":::
 
 1. You also need to account for a response from the weather service that is not 200, so in the **False** branch, add a **Send a response** action and set its **Language generation** text to **- I got an error: ${dialog.api_response.content.message}.**
 
@@ -104,7 +104,7 @@ In this exercise, you will add an action tthat uses an HTTP request to retrieve 
 1. To remove the invalid value from the zipcode property, in the **False** branch, after the  **Send a response** action you just created, add a **Manage properties** > **Delete a property** action and set its **Property** field to **user.zipcode**.
 1. The finished branching statement should look like the following image:
 
-    :::image type="content" source="../media/if-else-2.png" alt-text="Completed if/else branch":::
+        :::image type="content" source="../media/if-else-2.png" alt-text="Completed if/else branch":::
 
 1. Restart the bot and test it in the Bot Framework Emulator. Wait for the greeting from the bot and then enter "What is the weather like?". Then, when prompted, enter a valid U.S. zip code, such as 98004. The bot will contact the service and should respond with a small weather report statement.
 1. When you have finished testing, close the Bot Framework Emulator.

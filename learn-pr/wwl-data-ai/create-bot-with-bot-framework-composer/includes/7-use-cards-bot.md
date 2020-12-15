@@ -5,8 +5,8 @@ In the next set of exercises, you will add buttons to the weather bot and then e
 ## Add buttons
 
 1. Ensure that your weather bot is open in the Bot Framework Composer.
-1. In the navigation pane, under the **getWeather** action, selecy **BeginDialog**.
-1. In the **Authoring canvas**, select the **Promot for text** action that contains the prompt for the zipcode.
+1. In the navigation pane, under the **getWeather** action, select **BeginDialog**.
+1. In the **Authoring canvas**, select the **Promote for text** action that contains the prompt for the zipcode.
 1. In the **Properties** pane, update **Prompt for text** with the following text value.
 
     ```json
@@ -23,17 +23,17 @@ In the next set of exercises, you will add buttons to the weather bot and then e
 
 1. In the **True** path after checking the response from the HTTP weather service, edit the **Send a response** action for the weather report and the existing template with this text.
 
-```json
-[ThumbnailCard
-    title = Weather for ${dialog.weather.city}
-    text = ${DescribeWeather(dialog.weather)}. The temperature is ${dialog.weather.temp}&deg;.
-    image = ${dialog.weather.icon}
-]
-```
+    ```json
+    [ThumbnailCard
+        title = Weather for ${dialog.weather.city}
+        text = ${DescribeWeather(dialog.weather)}. The temperature is ${dialog.weather.temp}&deg;.
+        image = ${dialog.weather.icon}
+    ]
+    ```
 
-This template will use the same variables as before for the weather condition but also adds a title to the card that will be displayed, along with an image for the weather condition. Restart your bot and test in the emulator.  Testing the current condition for New Orleans, Louisiana displayed the card depicted in this image.
+    This template will use the same variables as before for the weather condition but also adds a title to the card that will be displayed, along with an image for the weather condition. Restart your bot and test in the emulator.  Testing the current condition for New Orleans, Louisiana displayed the card depicted in this image.
 
-    :::image type="content" source="../media/weather-card.png" alt-text="Bot card response showing New Orleans name with icon for mist":::
+        ::: image type="content" source="../media/weather-card.png" alt-text="Bot card response showing New Orleans name with icon for mist":::
 
 1. Restart the bot and test it with the Bot Framework Emulator.
 1. Enter "weather" and review the user interface for entering your zipcode. Then, when you enter the zipcode, review the card that is displayed in the response.
