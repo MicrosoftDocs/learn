@@ -22,10 +22,10 @@ quiz:
       explanation: "This statement declares a variable."
     - content: "firstName := \"John\""
       isCorrect: true
-      explanation: "Correct! This statement declares and initialized a variable."
+      explanation: "Correct! This statement declares and initializes a variable."
     - content: "string firstName = \"John\""
       isCorrect: false
-      explanation: "This statement will result in a syntax error. Additionally, you don't need to specify a type as Go will infer the type is string."
+      explanation: "This statement will result in a syntax error. Additionally, you don't need to specify a type because Go will infer the type is string."
     - content: "firstName = \"John\""
       isCorrect: false
       explanation: "This is close, but will result in an error where firstName is undefined. The declaration syntax (:=) is missing here."
@@ -42,12 +42,12 @@ quiz:
       explanation: "You will get something other than a warning."
     - content: "You get an error; the program doesn't compile."
       isCorrect: true
-      explanation: "Correct. Go requires that variables are used in programs or will throw an error that the variable was declared but not used."
+      explanation: "Correct. Go requires that variables are used in programs or it will throw an error that the variable was declared but not used."
   - content: "How do data conversion types work in Go?"
     choices:
     - content: "You have to do conversion explicitly; implicit conversion doesn't work in Go."
       isCorrect: true
-      explanation: "Correct. With Go, you need to be very explicit when converting a value from one type to another."
+      explanation: "Correct. With Go, you need to be explicit when converting a value from one type to another."
     - content: "You can do implicit casting from `int` to `int32`."
       isCorrect: false
       explanation: "If you try to do this the program will result in an 'invalid operation' error."
@@ -64,10 +64,10 @@ quiz:
       explanation: "Go does in fact have support for pointers. A pointer is a variable that contains the memory address of another variable."
     - content: "To free-up memory."
       isCorrect: false
-      explanation: "When you send a pointer to a function, you're not passing the value but an address memory. That means the variable and it's value still exists is taking up memory."
+      explanation: "When you send a pointer to a function, you're not passing the value but an address memory. That means the variable and its value still exists and is taking up memory."
     - content: "To change variable values from the function caller."
       isCorrect: true
-      explanation: "Correct. Pointers make it possible to change to change a variable's value in a function because it passes a copy of the value."
+      explanation: "Correct. Pointers make it possible to change a variable's value in a function because it passes a copy of the value."
   - content: "How do you differentiate between a package and a standalone application?"
     choices:
     - content: "A standalone application uses the package main, and a package (library) use a different name."
