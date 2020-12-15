@@ -325,7 +325,7 @@ Next, create an app security group for database servers, so that all servers in 
 
 1. As before, the response should include a `200 OK` message. The app security group settings can take a minute or two to take effect. If you don't initially receive the `200 OK` message, wait a minute and try again.
 
-1. To connect to your **DataServer** V< in the Cloud Shell, run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
+1. To connect to your **DataServer** in the Cloud Shell (at the top-right in Azure; the box with the >_) , run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
 
     ```bash
     ssh -t azureuser@$DATASERVERIP 'wget http://10.0.0.4; exit; bash'
