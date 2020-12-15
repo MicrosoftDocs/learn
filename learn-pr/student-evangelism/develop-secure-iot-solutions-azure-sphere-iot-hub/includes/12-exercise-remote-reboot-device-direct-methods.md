@@ -2,7 +2,7 @@
 
 1. Start Visual Studio Code to open your project.
 
-2. Click **Open folder**.
+2. From the menu, click **File**, then **Open Folder**.
 
 3. Open the **Azure-Sphere lab** folder.
 

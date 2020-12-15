@@ -4,7 +4,7 @@ In this exercise, we'll partner a high-level application to send Azure RTOS real
 
 1. Start Visual Studio Code to open your project.
 
-2. Click **Open folder**.
+2. From the menu, click **File**, then **Open Folder**.
 
 3. Open the **Azure-Sphere lab** folder.
 
@@ -12,7 +12,7 @@ In this exercise, we'll partner a high-level application to send Azure RTOS real
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
-6. If you installed the Visual Studio Code Peacock extension then Visual Studio Code will turn blue. The blue colored instance is connected to the high-level application running on the Cortex-A7 core.
+If you installed the Visual Studio Code Peacock extension then Visual Studio Code will turn blue. The blue colored instance is connected to the high-level application running on the Cortex-A7 core.
 
 ## Step 2: Set your developer board configuration
 

@@ -18,12 +18,17 @@ In this exercise, we'll deploy a real-time application to your Azure Sphere.
 
 ## Step 2: Open the project
 
-1. Start Visual Studio Code to open your project.
-2. Click **Open folder**.
-3. Open the **Azure-Sphere lab** folder.
-4. Open the **Lab_6_AzureRTOS_Environment** folder.
-5. Click **Select Folder** or the **OK** button to open the project.
-6. If you installed the Visual Studio Code Peacock extension, then Visual Studio Code will turn red. We will be connecting two instances of Visual Studio Code to the Azure Sphere. The red colored instance is connected to the real-time core.
+1. Start Visual Studio Code.
+
+1. From the menu, click **File**, then **Open Folder**.
+
+1. Open the **Azure-Sphere lab** folder.
+
+1. Open the **Lab_6_AzureRTOS_Environment** folder.
+
+1. Click **Select Folder** or the **OK** button to open the project.
+
+If you installed the Visual Studio Code Peacock extension, then Visual Studio Code will turn red. We will be connecting two instances of Visual Studio Code to the Azure Sphere. The red colored instance is connected to the real-time core.
 
 ## Step 3: Set your developer board configuration
 
