@@ -1,10 +1,10 @@
-::: zone pivot="Grover's algorithm"
+::: zone pivot="python"
 
 TODO
 
 ::: zone-end
 
-::: zone pivot="Ising model"
+::: zone pivot="csharp"
 
 TODO
 
