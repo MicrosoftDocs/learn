@@ -198,8 +198,8 @@ As a database administrator, you'll set up a new SQL Database, including a Virtu
 ‎
     :::image type="content" source="../media/dp-3300-module-22-lab-31.png" alt-text="Screenshot of adding markdown text to a notebook.":::
 
-1. Select **+ Code** in the toolbar, or **Add code** in the notebook, to add a new cell at the end of the notebook to enter a query in. 
-‎
+1. Select **+ Code** in the toolbar, or **Add code** in the notebook, to add a new cell at the end of the notebook to enter a query in.
+
     :::image type="content" source="../media/dp-3300-module-22-lab-32.png" alt-text="Screenshot of selecting the code button.":::
 
 1. Paste the following SQL statement into the new cell.
