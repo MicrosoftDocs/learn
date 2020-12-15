@@ -69,9 +69,6 @@ Azure Sentinel Analytics includes built-in machine learning behavioral analytics
 
 For example, by using a machine learning behavioral analytics rule, you can detect an anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) login activity.
 
-> [!Note]
-> In the future, Microsoft plans to allow customers to edit and customize machine learning analytics rules.
-
 ## Scheduled alerts
 
 Scheduled alerts analytics rules provide you the highest level of customization. You can define your own expression using Kusto Query Language (KQL) to filter the security events, and you can set up a schedule for the rule to run.
