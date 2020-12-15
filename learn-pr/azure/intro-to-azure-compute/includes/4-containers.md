@@ -57,3 +57,4 @@ The preceding figure depicts this process as follows:
 1. Azure AD controls access to AKS resources.
 1. You access SLA-backed Azure services, such as Azure Database for MySQL, via Azure Service Operator (for Kubernetes).
 1. Optionally, AKS is deployed with a virtual network.
+1. Open Service Broker for Azure (OSBA), with OSBA our Kubernetes manifests can provision an Azure Database for MySQL on our behalf.
