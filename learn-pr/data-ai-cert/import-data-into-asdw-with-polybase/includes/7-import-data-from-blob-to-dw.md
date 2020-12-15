@@ -32,15 +32,15 @@ The first step in using PolyBase is to create a database-scoped credential that 
 
 1. Paste the following code into the query window. Replace the `SECRET` value with the access key you retrieved in the previous exercise.
 
-```sql
-CREATE MASTER KEY;
-
-CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
-WITH
-    IDENTITY = 'DemoDwStorage',
-    SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
-;
-```
+    ```sql
+    CREATE MASTER KEY;
+    
+    CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
+    WITH
+        IDENTITY = 'DemoDwStorage',
+        SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
+    ;
+    ```
 
 1. Select **Run** to run the query. It should report `Query succeeded: Affected rows: 0.`
 
@@ -50,14 +50,14 @@ Use the database-scoped credential to create an external data source named **Azu
 
 1. Paste the following code into the query window. Replace the `LOCATION` value with your correct value from the previous exercise.
 
-```sql
-CREATE EXTERNAL DATA SOURCE AzureStorage
-WITH (
-    TYPE = HADOOP,
-    LOCATION = 'wasbs://data-files@demodwstorage.blob.core.windows.net',
-    CREDENTIAL = AzureStorageCredential
-);
-```
+    ```sql
+    CREATE EXTERNAL DATA SOURCE AzureStorage
+    WITH (
+        TYPE = HADOOP,
+        LOCATION = 'wasbs://data-files@demodwstorage.blob.core.windows.net',
+        CREDENTIAL = AzureStorageCredential
+    );
+    ```
 
 1. Select **Run** to run the query. It reports `Query succeeded: Affected rows: 0.`.
 
@@ -67,13 +67,13 @@ Define the external file format named **TextFile**. This name indicates to PolyB
 
 1. Paste the following code into the query window:
 
-```sql
-CREATE EXTERNAL FILE FORMAT TextFile
-WITH (
-    FORMAT_TYPE = DelimitedText,
-    FORMAT_OPTIONS (FIELD_TERMINATOR = ',')
-);
-```
+    ```sql
+    CREATE EXTERNAL FILE FORMAT TextFile
+    WITH (
+        FORMAT_TYPE = DelimitedText,
+        FORMAT_OPTIONS (FIELD_TERMINATOR = ',')
+    );
+    ```
 
 1. Select **Run** to run the query. It reports `Query succeeded: Affected rows: 0.`.
 
@@ -88,28 +88,28 @@ The table definition must match the fields defined in the input file. There are 
 
 1. Add the following code into the Visual Studio window underneath the previous code:
 
-```sql
--- Create a temp table to hold the imported data
-CREATE EXTERNAL TABLE dbo.Temp (
-    [Date] datetime2(3) NULL,
-    [DateKey] decimal(38, 0) NULL,
-    [MonthKey] decimal(38, 0) NULL,
-    [Month] nvarchar(100) NULL,
-    [Quarter] nvarchar(100) NULL,
-    [Year] decimal(38, 0) NULL,
-    [Year-Quarter] nvarchar(100) NULL,
-    [Year-Month] nvarchar(100) NULL,
-    [Year-MonthKey] nvarchar(100) NULL,
-    [WeekDayKey] decimal(38, 0) NULL,
-    [WeekDay] nvarchar(100) NULL,
-    [Day Of Month] decimal(38, 0) NULL
-)
-WITH (
-    LOCATION='../',
-    DATA_SOURCE=AzureStorage,
-    FILE_FORMAT=TextFile
-);
-```
+    ```sql
+    -- Create a temp table to hold the imported data
+    CREATE EXTERNAL TABLE dbo.Temp (
+        [Date] datetime2(3) NULL,
+        [DateKey] decimal(38, 0) NULL,
+        [MonthKey] decimal(38, 0) NULL,
+        [Month] nvarchar(100) NULL,
+        [Quarter] nvarchar(100) NULL,
+        [Year] decimal(38, 0) NULL,
+        [Year-Quarter] nvarchar(100) NULL,
+        [Year-Month] nvarchar(100) NULL,
+        [Year-MonthKey] nvarchar(100) NULL,
+        [WeekDayKey] decimal(38, 0) NULL,
+        [WeekDay] nvarchar(100) NULL,
+        [Day Of Month] decimal(38, 0) NULL
+    )
+    WITH (
+        LOCATION='../',
+        DATA_SOURCE=AzureStorage,
+        FILE_FORMAT=TextFile
+    );
+    ```
 
 1. Select **Run** to run the query. It takes a few seconds to complete and reports `Query succeeded: Affected rows: 0.`.
 
@@ -119,16 +119,17 @@ Create a physical table in the SQL Data Warehouse database. In the following exa
 
 1. Paste the following code into the query window:
 
-```sql
--- Load the data from Azure Blob storage to SQL Data Warehouse
-CREATE TABLE [dbo].[StageDate]
-WITH (   
-    CLUSTERED COLUMNSTORE INDEX,
-    DISTRIBUTION = ROUND_ROBIN
-)
-AS
-SELECT * FROM [dbo].[Temp];
-```
+    ```sql
+    -- Load the data from Azure Blob storage to SQL Data Warehouse
+    CREATE TABLE [dbo].[StageDate]
+    WITH (   
+        CLUSTERED COLUMNSTORE INDEX,
+        DISTRIBUTION = ROUND_ROBIN
+    )
+    AS
+    SELECT * FROM [dbo].[Temp];
+    ```
+
 1. Select **Run** to run the query. It takes a few seconds to complete and reports `Query succeeded: Affected rows: 0.`.
 
 ## Add statistics onto columns to improve query performance
@@ -137,12 +138,12 @@ As an optional step, create statistics on columns that feature in queries to imp
 
 1. Paste the following code into the query window:
 
-```sql
--- Create statistics on the new data
-CREATE STATISTICS [DateKey] on [StageDate] ([DateKey]);
-CREATE STATISTICS [Quarter] on [StageDate] ([Quarter]);
-CREATE STATISTICS [Month] on [StageDate] ([Month]);
-```
+    ```sql
+    -- Create statistics on the new data
+    CREATE STATISTICS [DateKey] on [StageDate] ([DateKey]);
+    CREATE STATISTICS [Quarter] on [StageDate] ([Quarter]);
+    CREATE STATISTICS [Month] on [StageDate] ([Month]);
+    ```
 
 1. Select **Run** to run the query. It reports `Query succeeded: Affected rows: 0.`.
 
