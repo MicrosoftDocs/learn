@@ -40,6 +40,7 @@ units:
 - learn.azure.introduction-data-protection-and-privacy.5-what-are-key-concepts-data-processing
 - learn.azure.introduction-data-protection-and-privacy.6-how-does-ms-support-protection-and-privacy
 - learn.azure.introduction-data-protection-and-privacy.7-what-are-sci-options-in-azure
-- learn.azure.introduction-data-protection-and-privacy.8-summary
+- learn.azure.introduction-data-protection-and-privacy.8-knowledge-check
+- learn.azure.introduction-data-protection-and-privacy.9-summary
 badge:
   uid: learn.azure.introduction-data-protection-and-privacy.badge
