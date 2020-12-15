@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.6-exercise-migrate-cassandra-workloads-cosmosdb
+title: 'Excerxise: Migrate Cassandra workloads to Cosmos DB'
+metadata:
+  title: 'Excerxise: Migrate Cassandra workloads to Cosmos DB'
+  description: "Excerxise: Migrate Cassandra workloads to Cosmos DB"
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise-migrate-cassandra-workloads-cosmosdb.md)]
+interactive: bash
