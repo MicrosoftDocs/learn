@@ -19,8 +19,7 @@ quiz:
       explanation: "Variables in Rust are immutable by default, meaning their value can't be changed."
     - content: "All integer types can be either positive or negative."
       isCorrect: true
-      explanation: "Correct. Signed integers can represent positive and negative numbers, while unsigned integers can represent only positive
-numbers."
+      explanation: "Correct. Signed integers can represent positive and negative numbers, while unsigned integers can represent only positive numbers."
     - content: "Tuples can contain elements of different types."
       isCorrect: false
       explanation: "A tuple is a grouping of values of different types collected into one compound."

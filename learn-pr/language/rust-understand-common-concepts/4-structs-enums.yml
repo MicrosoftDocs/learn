@@ -11,4 +11,4 @@ metadata:
 title: Learn about Structs and Enums
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-struct-enums.md)]
+  [!include[](includes/4-structs-enums.md)]
