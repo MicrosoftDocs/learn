@@ -12,7 +12,7 @@ Follow these steps:
 
 1. Copy the IoT hub **Hostname** to Notepad.
 
-    :::image type="content" source="../media/iot-hub-endpoint-url.png" alt-text="The illustration shows the overview page of IoT Hub.":::
+    :::image type="content" source="../media/iot-hub-endpoint-url.png" alt-text="The illustration shows the overview page of IoT Hub." lightbox="../media/iot-hub-endpoint-url.png":::
 
 1. Select the **Resource group** URL to return to the resource group blade.
 
@@ -26,7 +26,7 @@ Follow these steps:
 
 1. Copy the **ID Scope** to Notepad.
 
-    :::image type="content" source="../media/dps-overview.png" alt-text="The illustration shows the overview page of device provisioning service.":::
+    :::image type="content" source="../media/dps-overview.png" alt-text="The illustration shows the overview page of device provisioning service." lightbox="../media/dps-overview.png":::
 
 ## Step 2: Get your Azure Sphere tenant ID
 
