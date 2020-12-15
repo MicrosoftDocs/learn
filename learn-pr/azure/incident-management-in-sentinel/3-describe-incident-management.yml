@@ -3,9 +3,9 @@ uid: learn.azure.incident-management-in-sentinel.3-describe-incident-management
 metadata:
   title: Describe incident management
   description: Describe incident management in Azure Sentinel
-  ms.date: 10/27/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe incident management

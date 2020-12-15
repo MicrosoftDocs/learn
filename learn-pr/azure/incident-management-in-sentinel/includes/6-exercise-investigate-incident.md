@@ -16,9 +16,9 @@ In this exercise, you will create an Azure Sentinel analytics rule, delete a VM,
 In this task, you'll create an analytics rule that will create an incident when a VM is deleted in the Contoso Azure subscription.
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
-2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
-3. On the **Azure Sentinel | Analytics** blade, select **Create**, and then select **Scheduled query rule**.
-4. On the **General** page, provide the inputs in the following table, and then select **Next:Set rule logic**.
+2. Select **Azure Sentinel**, on the menu bar, in the **Configuration** section, select **Analytics**.
+3. Select **Azure Sentinel | Analytics**, select **Create**, and then select **Scheduled query rule**.
+4. On the **General** page, provide the inputs in the following table, and then select **Next: Set rule logic**.
 
    - **Name**: **Deleted VMs**
    - **Description**: Enter a detailed description that will help other security analysts understand what the rule does.
@@ -50,8 +50,8 @@ In this task, you'll create an analytics rule that will create an incident when 
 8. Select **Next: Incident setting (Preview)**.
 9. In the **Incident setting (Preview)** page, ensure that **Create incidents from alerts triggered by this analytics rule** is set to **Enabled**.
 10. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
-11. Ensure that **Re-open closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
-12. In the **Automated response** page, select **Next:Review**.
+11. Ensure that **Reopen closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
+12. In the **Automated response** page, select **Next: Review**.
 13. In the **Review and Create** page, verify that the validation was successful, and then select **Create**.
 
 ## Task 2: Delete a VM
@@ -67,7 +67,7 @@ In this task, you'll delete a VM to test rule detection and incident creation.
 In this task, you'll investigate the incident created when you deleted the VM in Task 2. It might take up to 20 minutes for the incident to display in Azure Sentinel.
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel** blade, on the menu bar, in the **Threat management** section, select **Incidents**.
+2. Select **Azure Sentinel**, on the menu bar, in the **Threat management** section, select **Incidents**.
 3. On the Incidents page, select the incident with the title **Deleted VMs**.
 4. On the details pane, observe the details of the incident, including **Owner**, **Status**, and **Severity**.
 5. On the details pane, select **Owner**, select **Assign to me**, and then select **Apply**.
@@ -81,7 +81,7 @@ In this task, you'll investigate the incident created when you deleted the VM in
 13. In the **Select classification** drop-down menu, select **Benign Positive - suspicious but expected**.
 14. In the **Comment** field, enter **Testing incident creation and resolution steps**, and then select **Apply**.
 15. At the top of the page, select **Azure Sentinel** to return to the Azure Sentinel home page, and then select **Incidents** in the menu pane.
-16. on the **Incidents** page, note that **Open incidents** and **Active incidents** now have values of 0.
+16. on the **Incidents** page, **Open incidents** and **Active incidents** now have values of 0.
 
 ## Results
 

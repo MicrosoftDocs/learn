@@ -6,7 +6,7 @@ Incident evidence consists of the security event information and related Azure S
 
 ### Events
 
-Events link you back to one or more events from the Log Analytics workspaces associated with Azure Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to an Azure Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
+Events link you back to one or more events from the Log Analytics workspaces associated with Azure Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to an Azure Sentinel analytics rule returns event, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
 
 ### Alerts
 

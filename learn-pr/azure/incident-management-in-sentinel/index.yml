@@ -3,9 +3,9 @@ uid: learn.azure.incident-management-in-sentinel
 metadata:
   title: Security incident management in Azure Sentinel
   description: Security incident management in Azure Sentinel
-  ms.date: 10/27/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Security incident management in Azure Sentinel
@@ -20,7 +20,7 @@ prerequisites: |
   - Basic experience with Azure services
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
   - Basic knowledge of Azure Sentinel rules
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/incident-management-in-sentinel.svg
 levels:
 - beginner
 roles:
