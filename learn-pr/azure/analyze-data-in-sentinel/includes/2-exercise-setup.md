@@ -9,7 +9,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link.
 
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Fmaster%2Flearn-pr%2Fazure%2Fanalyze-data-in-sentinel%2Fresources%2FSentinelTemplate.json?azure-portal=true)
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/analyze-data-in-sentinel/resources/SentinelTemplate.json?azure-portal=true)
 
 
 2. You'll be prompted to sign in your Azure subscription.
