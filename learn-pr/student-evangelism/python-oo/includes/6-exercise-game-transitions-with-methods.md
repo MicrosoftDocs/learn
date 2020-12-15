@@ -298,4 +298,3 @@ A continuation query is a question at the end of the game round asking the playe
 > The solution for this exercise can be found at: [Continuation query - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-3.py)
 
 Congrats, you did it. You've implemented an OOP version of Rock, Paper, Scissors.
-
