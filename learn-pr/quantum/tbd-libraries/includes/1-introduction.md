@@ -15,4 +15,5 @@ In this module you'll:
 
 ## Prerequisites
 
-- Jupyter Notebook and IQ#; from a conda-based install (recommended) or a mybinder.org instance
+- A basic understanding of how Grover's Algorithm works. If you completed the prior (LINK) module you are all set, but otherwise an overview can be found here(LINK).
+- A functioning QDK environment, preferably in VS Code for command-line applications or in Jupyter Notebook and IQ#.

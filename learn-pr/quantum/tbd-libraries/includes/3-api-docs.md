@@ -46,8 +46,8 @@ Let's keep getting familiar with [`ControlledOnInt`](https://docs.microsoft.com/
 
 Video explanation talking through the page goes here.
 
-### Additional information
+### What's next?
 
-Other possible headers and explanations
-
+In the next unit, we change gears to actually start using the Q# libraries.
+Specifically, you'll make use of the Standard and Numerics libraries to define an oracle and use Grover's algorithm to determine the missing digit of the ISBN of a book you desperately need (for spaceship narrative purposes).
 
