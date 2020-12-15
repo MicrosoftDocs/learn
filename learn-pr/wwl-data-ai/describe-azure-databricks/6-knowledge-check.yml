@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "The Executor and the Slot"
       isCorrect: true
-      explanation: "The first level of parallelization is the executor - a Java virtual machine running on a node, typically, one instance per node. Each executor has a number of slots to which parallelized Tasks can be assigned to it by the driver."
+      explanation: "The first level of parallelization is the executor - a Java virtual machine running on a node, typically, one instance per node. Each executor has a number of slots to which parallelized tasks can be assigned to it by the driver."
     - content: "The Driver and the Executor"
       isCorrect: false
       explanation: "There is only one driver in a cluster. Therefore, work cannot be parallelized at this level."
