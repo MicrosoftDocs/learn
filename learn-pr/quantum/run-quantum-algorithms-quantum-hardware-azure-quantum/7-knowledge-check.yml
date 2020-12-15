@@ -29,8 +29,19 @@ quiz:
       explanation: "This sentence is true. You just submitted a Q# program to IonQ's trapped ion quantum computer!"
     - content: 'Azure Quantum only allows you to run algorithms in quantum computers, but for simulations you need them to run locally in your computer.'
       isCorrect: true
-      explanation: "This sentence is false. Azure Quantum also let's you test
-      your Q# programs in different simulators."
+      explanation: "This sentence is false. Azure Quantum also let's you test your Q# programs in different simulators."
+
+  - content: 'A trapped ion quantum computer is:'
+    choices:
+    - content: 'A quantum computer that ions suspended in a electromagnetic field in the vacuum as the basic element to represent qubits.'
+      isCorrect: true
+      explanation: "Correct. These computers use chains of trapped ions and each ion represents a qubit."
+    - content: 'The only working form of quantum computers to date.'
+      isCorrect: false
+      explanation: "This is false. There are other working technologies available today, like superconducting qubit quantum computers."
+    - content: 'A quantum computer that only allows a certain set of transformations that is not universal.'
+      isCorrect: false
+      explanation: "This sentence is false. With ion trapped quantum computers possible to get qubits entangled and apply an universal set of quantum operations."
       
   - content: 'Which of the following sentences is **true**?'
     choices:
