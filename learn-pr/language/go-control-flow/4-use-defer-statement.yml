@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.go-control-flow.4-use-defer-statement
 metadata:
-  title: Exercise - Use a defer statement
-  description: Exercise - Use a defer statement.
+  title: Exercise - Use defer, panic, and recover
+  description: Learn about less common control flows in Go - defer, panic, and recover.
   ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Use a defer statement
-durationInMinutes: 2
+title: Exercise - Use defer, panic, and recover
+durationInMinutes: 7
 content: |
   [!include[](includes/4-use-defer-statement.md)]

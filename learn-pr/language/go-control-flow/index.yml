@@ -1,35 +1,43 @@
 ### YamlMime:Module
 uid: learn.language.go-control-flow
 metadata:
-  title: Go control flow # TODO
-  description: Go control flow # TODO
+  title: Use control flows in Go
+  description: Learn to use control flows in Go.
   ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Go control flow # TODO
-summary: Go control flow # TODO
-abstract:  | # TODO
+title: Use control flows in Go
+summary: Use control flows in Go
+abstract:  | 
   In this module, you will:
-  - TBD
+
+  - Learn about simple and compound `if` statements
+  - Learn about `switch` statements and its different features
+  - Learn about loop statements and its patterns in Go using the `for` keyword
+  - Learn about essential functions you'll use to handle errors like `defer`, `panic`, and `recover`
   
-prerequisites: | # TODO
-  - TBD
+prerequisites: | 
+  - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and VS Code with the Go extension installed. Alternatively, you could use the Go Playground.
+  - Know how to create and modify `.go` files
+  - Know how run Go applications using the terminal prompt 
+  - Know how to declare and initialize variables
+  - Know how to create functions
   
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # TODO
+levels: # TBC
 - beginner
-roles: # TODO
+roles: # TBC
 - developer
 - student
-products: # TODO
+products: 
 - azure
 units:
 - learn.language.go-control-flow.0-introduction
 - learn.language.go-control-flow.1-use-if-else-statements
-- learn.language.go-control-flow.2-use-for-loops
-- learn.language.go-control-flow.3-use-switch-statements
+- learn.language.go-control-flow.2-use-switch-statements
+- learn.language.go-control-flow.3-use-for-loops
 - learn.language.go-control-flow.4-use-defer-statement
 - learn.language.go-control-flow.5-challenge
 - learn.language.go-control-flow.6-solution

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.go-control-flow.5-challenge
 metadata:
-  title: Challenge - 
-  description: Challenge - 
+  title: Challenge - Control flow
+  description: Practice what you've learned about control flow statements.
   ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Challenge - 
-durationInMinutes: 2
+title: Challenge - Control flow
+durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge.md)]
