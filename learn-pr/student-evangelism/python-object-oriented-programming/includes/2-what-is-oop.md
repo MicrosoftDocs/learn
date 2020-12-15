@@ -1,4 +1,3 @@
-
 Object-oriented programming, OOP, is a programming paradigm. It has the idea of _grouping_ related data and functions into islands of information. These islands are known as objects.
 
 Regardless of paradigm, programs use the same series of steps to solve problems:
@@ -16,6 +15,8 @@ The OOP paradigm is no different in that aspect, but what really makes it stand 
 ### OOP Modeling, identify concepts
 
 During this _modeling_ phase, you look at a description of a domain and try to analyze the text on what takes place. The first step is in identifying actors. They are called actors as they _act_ and performs an action, for example a printer (actor) prints (action). Once actors are identified, you look at _what_ they do, their behavior. Then you look at description of the actors and any data that's needed to carry out the action. Actors are made into objects, the traits are encoded as data on the objects and the behaviors are functions that also get added to the object.
+
+:::image type="content" source="../media/printer.png" alt-text="Printer prints":::
 
 The idea is then that data on objects, can be altered by calling functions on the objects themselves. There's also the notion that objects _interact_ with one another to achieve a tangible result.  
 
@@ -37,6 +38,7 @@ Software is often written to address a need to make something faster, more effic
 
 Let's exemplify a manual flow that many companies struggle with, namely _invoice management_. Invoices are something many companies receive and that the company needs to pay on time, or there will be late fees, e.g wasted money. Before an invoice can be paid, it needs to be _processed_. It's common for an invoice to pass a few hands before it ends up being registered somewhere and payment is made. It usually starts with an initial sorting phase where the invoice is sent to the _correct_ department. Then it's checked for correctness followed by an approval by someone who has the proper authorization level. Lastly the invoice is being paid. If you are a small business, it might be the business owner that does all of the above. In a large company there might be a ton of people and process involved, and _invoice management_ becomes a complex activity.
 
+:::image type="content" source="../media/sort-invoice.png" alt-text="Invoice system":::
 
 What does this description have to do with OOP? If you were to take the above, which is often a manual flow, and turn that flow into written software, the first thing you would do is try to model the system. With the context of _invoice management_ you can start seeing actors (objects), behaviors, and data by just reading a description of the problem domain.
 

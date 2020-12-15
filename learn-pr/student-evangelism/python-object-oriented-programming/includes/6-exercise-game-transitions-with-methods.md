@@ -111,7 +111,7 @@ Most of the behavior in the above table corresponds to methods with similar name
    ```
 
 > [!NOTE]
-> The solution for this exercise can be found at: [Start a game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-0.py)
+> The solution for this exercise can be found at: [Start a game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-0.py?azure-portal=true)
 
 ### Implement rules
 
@@ -206,7 +206,7 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
    The above code introduces the field `rules`, which contain an implementation of the rules for rock paper scissors. Additionally, the call to `self.compareChoices()` _compares_ the two choices made. Lastly, there's a row that prints reader-friendly result to the screen.
 
 > [!NOTE]
-> The solution for this exercise can be found at: [Implement rules - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-1.py)
+> The solution for this exercise can be found at: [Implement rules - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-1.py?azure-portal=true)
 
 ### Score game
 
@@ -232,7 +232,7 @@ Scoring the game is about assigning points to the correct player after. The winn
    ```
 
 > [!NOTE]
-> The solution for this exercise can be found at: [Score game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-2.py)
+> The solution for this exercise can be found at: [Score game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-2.py?azure-portal=true)
 
 ### Add continuation query
 
@@ -295,6 +295,6 @@ A continuation query is a question at the end of the game round asking the playe
    ```
 
 > [!NOTE]
-> The solution for this exercise can be found at: [Continuation query - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-3.py)
+> The solution for this exercise can be found at: [Continuation query - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-3.py?azure-portal=true)
 
 Congrats, you did it. You've implemented an OOP version of Rock, Paper, Scissors.

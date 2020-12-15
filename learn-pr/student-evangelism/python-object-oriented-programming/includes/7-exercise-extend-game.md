@@ -1,4 +1,4 @@
-Your company is pleased with your OOP implementation of Rock, Paper, Scissors. So much so, they want you to change it into Rock, Paper, Scissor, Lizard, Spock, cause that's what all the cool kids are playing these days.  
+Your company is pleased with your OOP implementation of Rock, Paper, Scissors. So much so, they want you to change it into Rock, Paper, Scissor, Lizard, Spock, cause that's what all the cool kids are playing these days.
 
 ## Add choices Spock and lizard
 

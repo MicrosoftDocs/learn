@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.python-oo.1-introduction
+uid: learn.student-evangelism.python-object-oriented-programming.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
   author: softchris
-  ms.author: chnoring
+  ms.author: shanama
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

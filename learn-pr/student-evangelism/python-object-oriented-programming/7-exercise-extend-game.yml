@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.python-oo.7-exercise-extend-game
+uid: learn.student-evangelism.python-object-oriented-programming.7-exercise-extend-game
 title: Exercise - Extend the game implementation with added rules
 metadata:
   title: Exercise - extend the game implementation with added rules
-  description: In this unit you will add rules supporting a more advanced version of Rock, Paper, Scissor.
+  description: In this unit you will add rules supporting a more advanced version of rock paper scissors.
   author: softchris
-  ms.author: chnoring
+  ms.author: shanama
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

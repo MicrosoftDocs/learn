@@ -20,7 +20,7 @@ Rock paper, scissor is a game played by two participants. The game consists of r
 
    Here's the problem description text with highlights:
 
-   Rock paper, scissor is a _game_ played by two participants. The game consists of _rounds_. In each round, a _participant_ chooses a _symbol_, _rock_, _paper_, or _scissor_ and the other _participant_ does the same. Then a _winner_ of the round is determined by _comparing_ the chosen symbols. The _rules_ of the game states that rock wins over scissor, scissor beats (cuts) paper and paper beats (covers) rock. Thereafter the winner is awarded a _point_. The game goes on for as many rounds as the participants agreed on. The winner is the participant with the most number of points_.
+   Rock paper scissors is a _game_ played by two participants. The game consists of _rounds_. In each round, a _participant_ chooses a _symbol_, _rock_, _paper_, or _scissors_ and the other _participant_ does the same. Then a _winner_ of the round is determined by _comparing_ the chosen symbols. The _rules_ of the game states that rock wins over scissors, scissors beats (cuts) paper and paper beats (covers) rock. Thereafter the winner is awarded a _point_. The game goes on for as many rounds as the participants agreed on. The winner is the participant with the most number of points_.
 
 1. Next, create a table with the columns `Phase`, `Actor`, `Behavior`, and `Data` and arrange the highlighted words where you think they should be placed.
 
@@ -72,5 +72,5 @@ The table above tells the story of how the game progresses through different pha
    The `Participant` class was given the attributes `points` and `choice` as indicated by the first and third line of your table.
 
    The `Game` has been given the fields `endGame` as a result of the fourth line. Additionally, the `Game` class has two participants, `participant` and `secondParticipant`. Looking back at the conceptual part, there were to roles a variable on an object could have, a state, like the floor of an elevator or a descriptive attribute. The `points` and `choice` attributes are in this context state variables, whereas the participants on the `Game` class are descriptive attributes, a game _has_ participants.
- 
+
    Congrats! You've added classes to your game and created data, attribute,s that you've assigned to the created classes. At this point, you have a good starting code. It doesn't do much yet, it needs behavior. You will add behavior in the next exercise unit.
