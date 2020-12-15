@@ -51,6 +51,6 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
     :::image type="content" source="../media/dp-3300-module-66-lab-10.png" alt-text="Screenshot of the resource group page.":::
 
-You've just seen how, with a single click on an Azure resource manager template link, you can create both an Azure SQL server and database in minutes.
+You've just seen how, with a single click on an Azure Resource Manager template link, you can create both an Azure SQL server and database in minutes.
 
 To finish this exercise select **Done** below.
