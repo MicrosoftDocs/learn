@@ -33,7 +33,7 @@ quiz:
 
   - content: 'A trapped ion quantum computer is:'
     choices:
-    - content: 'A quantum computer that ions suspended in a electromagnetic field in the vacuum as the basic element to represent qubits.'
+    - content: 'A quantum computer that uses ions suspended in a electromagnetic field in the vacuum as the basic element to represent qubits.'
       isCorrect: true
       explanation: 'Correct. These computers use chains of trapped ions and each ion represents a qubit.'
     - content: 'The only working form of quantum computers to date.'
@@ -48,9 +48,9 @@ quiz:
     - content: 'The following line can run in a target with the *No control flow* profile: `if (M(qubit) == One {...`'
       isCorrect: false
       explanation: 'This sentence is false. For No Control Flow targets values of type `Result` do not support equality comparison.'
-    - content: 'The following line cannot run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One {...`'
+    - content: 'The following line cannot run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One) {...`'
       isCorrect: false
       explanation: 'This sentence is false. For Basic Measurement Feedback targets values of type `Result` do support equality comparisons as part of conditions within `if` statements in operations.'
-    - content: 'The following line cannot run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One {return M(qubit)}`'
+    - content: 'The following line cannot run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One) {return M(qubit)}`'
       isCorrect: true
       explanation: "This statement is false. Although the Basic Measurement Feedback profile allows for comparison of values of type `Result` as part of conditions within `if` statements, it doesn't allow to return values within the `if` block."
