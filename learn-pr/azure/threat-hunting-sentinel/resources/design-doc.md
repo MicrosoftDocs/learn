@@ -12,13 +12,13 @@
 
 ## Learner level
 
-- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Covers topic concepts, functions, features, benefits. <!-- Can we replace this with "Provides a detailed overview of a topic&#39;s subareas."? Otherwise, I'd delete this last sentence as it doesn't apply to the heading - it doesn't respond to the implied question," What is the learner level?"  -->
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. Provides a detailed overview of a topic&#39;s subareas.
 
 ## Products taught
 
 - Microsoft Azure Sentinel
 - Azure Log Analytics workspace
-- Kusto Query Language (KQL)<!-- Kusto is no longer an approved term. Please s/r both Kusto Query Language and KQL with "Azure Data Explorer." -->
+- Azure Data Explorer
 
 ## Prerequisites
 
@@ -27,11 +27,11 @@ To get the best learning experience from this module, you should have:
 - Familiarity with security operations in an organization.
 - Basic experience with Azure services.
 - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
-- Completed the introductory Azure Sentinel modules.<!-- Is the introductory module a single module? If so, change to singular "Azure Sentinel module." -->
+- Completed the introductory Azure Sentinel modules.
 
 ## Module summary description
 
-Threat hunting involves proactively seeking for and identifying threat behaviors in the early stages of an attack. Threat hunting is also for testing analytic rules to determine result quality and identify potential investigation areas. In this module, you’ll learn how to perform threat hunting using Azure Sentinel tools.<!-- In other mods, this section just has the "In this module, you'll learn..." sentence. If you agree to go with that, please delete the first two sentences.  -->
+In this module, you’ll learn how to perform threat hunting using Azure Sentinel tools.
 
 ## Subtasks in this module
 
@@ -39,16 +39,15 @@ Threat hunting involves proactively seeking for and identifying threat behaviors
 - Save key findings with bookmarks.
 - Observe threats over time with livestream.
 
-## Lab exercise<!-- I added this section to avoid confusion.  -->
+## Lab exercise
 
 None
 
 ## Module learning objectives
 
-After completing this module, you&#39;ll be able to:
+After completing this module, you'll be able to:
 
-- Hunt threats with built-in hunting queries.
-- Create and edit hunting queries using KQL.
+- Use queries to hunt threats.
 - Save key findings with bookmarks.
 - Observe threats over time with livestream.
 
@@ -59,7 +58,7 @@ After completing this module, you&#39;ll be able to:
 ## Module outline of units
 
 1. Introduction
-2. Explore Azure Sentinel hunting query management and creation<!-- Is this query creation? If so, consider changing this to "Explore query hunting creation and management in Azure Sentinel." If you agree to change it, don't forget to change it on line 78 as well (and possibly 86) as well. -->
+2. Explore Azure Sentinel hunting query creation and management
 3. Save key findings with bookmarks
 4. Observe threats over time with livestream
 5. Exercise unit
@@ -73,11 +72,11 @@ After completing this module, you&#39;ll be able to:
 
 ### Module scenario
 
-Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.<!-- I added this second sentence from our scenario pgph that we use in all of the mods, for consistency. Feel free to delete it though. -->
+Contoso, Ltd. is a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Endpoint Protection, and Microsoft Azure Information Protection.<
 
-As part of the Security Operations (SecOps) team, you've been tasked with using Azure Sentinel to identify specific account usage patterns for Contoso's Azure Active Directory (Azure AD) accounts.
+As part of the Security Operations (SecOps) team, you've been tasked with using Azure Sentinel to identify specific activity within Contoso's Azure environment.
 
-## Second unit: Explore Azure Sentinel hunting query management and creation
+## Second unit: Explore Azure Sentinel hunting query creation and management
 
 **Type of unit:** Learning content unit
 
@@ -85,7 +84,7 @@ As part of the Security Operations (SecOps) team, you've been tasked with using 
 
 ### Key content per learning objective
 
-After you complete this unit, you&#39;ll be able to describe Azure Sentinel hunting query management and creation. Unit topics include:
+After you complete this unit, you'll be able to describe Azure Sentinel hunting query creation and management. Unit topics include:
 
 - Azure Sentinel queries and their purpose, including MITRE ATT&CK tactics
 - Use built-in queries to hunt for threats
@@ -144,4 +143,4 @@ In this exercise, you&#39;ll learn to:
 
 ### Resolution of module problem
 
-In this module you’ve learned how to perform threat hunting using the tools available in Azure Sentinel, including proactively identifying threat behaviors using Azure Sentinel queries. You've also continued the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure AD accounts.
+In this module you’ve learned how to perform threat hunting using the tools available in Azure Sentinel, including proactively identifying threat behaviors using Azure Sentinel queries. You've also continued the hunt using bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment.

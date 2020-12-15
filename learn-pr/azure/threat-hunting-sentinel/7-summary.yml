@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-hunting-sentinel.6-summary
+uid: learn.azure.threat-hunting-sentinel.7-summary
 metadata:
   title: Summary
-  description: TODO
-  ms.date: TODO
+  description: Summary
+  ms.date: 11/02/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
-  [!include[]includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]
