@@ -2,10 +2,10 @@ Go is a strongly typed language, meaning that every variable you declare is boun
 
 In Go, you have four different categories for data types:
 
-1. Basic Types: numbers, strings, and booleans.
-2. Aggregate Types: arrays and structs.
-3. Reference Types: pointers, slices, maps, functions, and channels.
-4. Interface Types: interface.
+- Basic Types: numbers, strings, and booleans.
+- Aggregate Types: arrays and structs.
+- Reference Types: pointers, slices, maps, functions, and channels.
+- Interface Types: interface.
 
 In this module, we're covering only the basic types. Don't worry if you don't know what the other types are; we'll cover them in the upcoming modules.
 
