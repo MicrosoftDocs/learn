@@ -3,9 +3,9 @@ uid: learn.azure.analyze-data-in-sentinel.5-create-rule-from-templates
 metadata:
   title: Create an analytics rule from templates
   description: Describes the procedure to create an analytics rule from templates.
-  ms.date: 10/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an analytics rule from templates

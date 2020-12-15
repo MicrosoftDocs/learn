@@ -49,7 +49,7 @@ In the **Query Scheduling** section, you can configure how often the query shoul
 
 ### Alert threshold
 
-In the **Alert threshold** section, you can specify the number of a positive results that can be returned for the rule before it generates an alert. You can use the following logical operators to define an appropriate logical expression:
+In the **Alert threshold** section, you can specify the number of a positive result that can be returned for the rule before it generates an alert. You can use the following logical operators to define an appropriate logical expression:
 
 - Is greater than
 - Is fewer than
@@ -71,19 +71,19 @@ In the **Suppression** section, you can set the **Stop running the Query after t
 
 Use the **Incident settings** page to create an Incident from the alerts that are triggered by the analytics rule.
 
-In the **Alert grouping** section, you can reduce the noise from multiple alerts by grouping them into one incident. When you enable grouping of related alerts you can choose from the following options:
+In the **Alert grouping** section, you can reduce the noise from multiple alerts by grouping them into one incident. When you enable grouping of related alerts, you can choose from the following options:
 
 - **Grouping alerts into a single incident if all the entities match (recommended)**
 - **Grouping all alerts triggered by this rule into a single incident**
 - **Grouping alerts into a single incident if the selected entities match** - for example source or target IP addresses.
 
-In the **Re-open closed matching incidents** section, you can configure Azure Sentinel Analytics to open a previously closed incident again if another alert is generated that also belongs to the previously closed incident.
+In the **Reopen closed matching incidents** section, you can configure Azure Sentinel Analytics to open a previously closed incident again if another alert is generated that also belongs to the previously closed incident.
 
 ## Automated response
 
-You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
+You can use the **Automated Response** section to select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Azure Sentinel connector are displayed.
 
-For more details on how to create a playbook and run the automated activity on an incident creation, refer to the "Threat response with Azure Sentinel Playbooks" module.
+For more information on how to create a playbook and run the automated activity on an incident creation, see the "Threat response with Azure Sentinel Playbooks" module.
 
 ## Review and create
 

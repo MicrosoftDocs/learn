@@ -13,9 +13,9 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 ### Task 1: Create an analytics rule from the analytics rule wizard 
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
-3. On the **Azure Sentinel | Analytics** blade, select **Create** and then select **Scheduled query rule**.
-4. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic**. 
+2. Open **Azure Sentinel**, on the menu bar, in the **Configuration** section, select **Analytics**.
+3. Open **Azure Sentinel | Analytics**, select **Create** and then select **Scheduled query rule**.
+4. Open **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic**. 
 
   |||
   | --- | --- |
@@ -49,11 +49,11 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 12. Accept the default values and then select **Next: Incident setting (Preview)**.
 13. In the **Incident setting (preview)** page, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule.
 14. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
-15. Ensure that **Re-open closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
+15. Ensure that **Reopen closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
 
   :::image type="content" source="../media/07-Incident-Settings.PNG" alt-text="Screenshot Analytics Incident Settings." border="true":::
 
-16. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contains Logic App Azure Sentinel connector are displayed.
+16. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Azure Sentinel connector are displayed.
 17. Select **Next: Review**.
 18. In the **Review and create** page, verify that the validation was successful, and then select **Create**.
 
@@ -69,8 +69,8 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 ### Task 3: Create an analytics rule from an existing template
 
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Analytics**.
-3. On the **Azure Sentinel | Analytics** blade, select **Rule templates.**
+2. Open **Azure Sentinel**, on the menu bar, in the **Configuration** section, select **Analytics**.
+3. Open **Azure Sentinel | Analytics**, select **Rule templates.**
 4. In the search field, enter and select **Create incidents based on Azure Security Center alerts**.  
 5. In the details pane, select **Create rule**.
 6. In the **General** pane, observe the name of the analytics rule, and verify that the **Status** of the rule is **Enabled**.

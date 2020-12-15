@@ -3,9 +3,9 @@ uid: learn.azure.analyze-data-in-sentinel.4-analytics-rules
 metadata:
   title: Types of analytics rules
   description: Identify different template rules to create analytic rules.
-  ms.date: 10/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Types of analytics rules

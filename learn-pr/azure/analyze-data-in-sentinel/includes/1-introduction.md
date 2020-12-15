@@ -22,7 +22,7 @@ Additionally, the time spent to set up and maintain IT infrastructure takes the 
 
 The IT director believes that Azure Sentinel Analytics will help the security analysts perform complex investigations faster and improve their Security Operations Center (SOC). As Contoso's lead system engineer and Azure administrator, you've been asked to set up analytics rules in Azure Sentinel so that the SecOps team can identify and analyze attacks to Contoso's resources.
 
-In this module, you'll understand the importance of using Azure Sentinel Analytics, create and implement analytics rules from existing templates, create new rules and queries using the wizard, and manage rules with modifications.
+In this module, you'll understand the importance of using Azure Sentinel Analytics, create, and implement analytics rules from existing templates, create new rules and queries using the wizard, and manage rules with modifications.
 
 By the end of this module, you'll be able to set up analytics rules in Azure Sentinel to help the SecOps team identify and stop cyberattacks.
 

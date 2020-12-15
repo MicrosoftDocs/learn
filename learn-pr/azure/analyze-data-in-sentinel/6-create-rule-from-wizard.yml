@@ -3,9 +3,9 @@ uid: learn.azure.analyze-data-in-sentinel.6-create-rule-from-wizard
 metadata:
   title: Create an analytics rule from wizard
   description: Describes how to create an analytics rule by using the wizard.
-  ms.date: 10/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an analytics rule from wizard

@@ -3,9 +3,9 @@ uid: learn.azure.analyze-data-in-sentinel.3-azure-sentinel-analytics-overview
 metadata:
   title: What is Azure Sentinel Analytics?
   description: Explain what is Azure Sentinel Analytics.
-  ms.date: 10/30/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Azure Sentinel Analytics?

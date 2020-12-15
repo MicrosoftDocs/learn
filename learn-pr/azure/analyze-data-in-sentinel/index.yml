@@ -3,9 +3,9 @@ uid: learn.azure.analyze-data-in-sentinel
 metadata:
   title: Threat detection with Azure Sentinel analytics
   description: Threat detection with Azure Sentinel analytics
-  ms.date: 11/05/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat detection with Azure Sentinel analytics
@@ -22,7 +22,7 @@ prerequisites: |
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
   - Azure subscription
   - Azure Sentinel instance in your Azure subscription
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/analyze-data-in-sentinel.svg
 levels:
 - beginner
 roles:

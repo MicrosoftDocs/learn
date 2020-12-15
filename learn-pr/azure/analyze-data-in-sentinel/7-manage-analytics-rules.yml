@@ -3,9 +3,9 @@ uid: learn.azure.analyze-data-in-sentinel.7-manage-analytics-rules
 metadata:
   title: Manage analytics rules
   description: Describes how to manage and modify analytics rules.
-  ms.date: 10/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage analytics rules

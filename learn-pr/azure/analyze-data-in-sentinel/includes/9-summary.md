@@ -4,7 +4,7 @@ The SecOps team was spending significant time investigating the high volume of a
 
 By using Azure Sentinel Analytics, the SecOps team was able to detect and analyze potential threats more effectively. They could create analytics rules that would trigger alerts.  The SecOps team was then able to effectively react to the threats based on the triggered alerts.
 
-Without the help of Azure Sentinel Analytics, earlier the SecOps team wasn't able to use its time effectively on its other operations because it was spending a lot of time in manually correlating the threats and analyzing them.
+Without the help of Azure Sentinel Analytics, earlier the SecOps team wasn't able to use its time effectively on its other operations because it was spending time in manually correlating the threats and analyzing them.
 
 In this module, you learned how Azure Sentinel Analytics can help SecOps to identify and stop cyberattacks.
 

@@ -14,7 +14,7 @@ By selecting one of the rules on the **Rule Template** tab, you can observe the 
   - Low
   - Informational
 - Name of the rule. This provides a meaningful name for the alert rule.
-- Rule type. This defines the type of the rule which can be one of the following four types:
+- Rule type. This defines the type of the rule that can be one of the following four types:
   - Fusion
   - Microsoft Security
   - ML Behavior Analytics
@@ -50,7 +50,7 @@ The following screenshot presents an example of creating an incident from alerts
 
 :::image type="content" source="../media/04-Create-analytics-rule.PNG" alt-text="Screenshot of the wizard used to create analytics rules from templates." border="true":::
 
-The Creating an Analytics rule from the wizard unit that follows describes how to create an analytics rule from a scheduled template rule type.
+The "Creating an Analytics" rule from the wizard describes how to create an analytics rule from a scheduled template rule type.
 
 > [!NOTE]
 > For certain rule templates, the **Create rule** button might be disabled, which indicates that you can't create a rule from selected template because of a missing data source.

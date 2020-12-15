@@ -60,7 +60,7 @@ In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
 3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 5. Select your subscription, and then select **Connect**.
-6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel | Data connector** blade.
+6. When you receive a status of **Connected**, close all open panels to return to **Azure Sentinel | Data connector**.
 
 :::image type="content" source="../media/07-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 

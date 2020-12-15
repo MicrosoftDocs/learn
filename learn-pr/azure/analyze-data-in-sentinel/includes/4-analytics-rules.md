@@ -34,7 +34,7 @@ Some of the common attack detection scenarios that Fusion alerts identify includ
 - **Ransomware**. After a suspicious sign-in to an Azure AD account, unusual user behavior used to encrypt data can trigger a ransomware execution alert.
 
 > [!Note]
-> For more information on the Fusion technology in Azure Sentinel, refer to [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/fusion)
+> For more information on the Fusion technology in Azure Sentinel, see [Advanced multistage attack detection in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/fusion)
 
 ## Microsoft security
 
