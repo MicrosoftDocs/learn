@@ -45,6 +45,8 @@ Spark is a unified processing engine that can analyze big data using SQL, machin
 - The Graph processing API gives us an easily approachable API for modeling pairwise relationships between people, objects, or nodes in a network.
 - The Streaming APIs give us End-to-End Fault Tolerance, with Exactly-Once semantics, and the possibility for sub-millisecond latency.
 
+Spark is a distributed computing environment. Therefore, work is parallelized across executors. The first level of parallelization is the Executor - a Java virtual machine running on a node, typically, one instance per node. Each executor has a number of slots to which parallelized tasks can be assigned to it by the driver.
+
 And it all works together seamlessly!
 
 ## Azure Databricks
