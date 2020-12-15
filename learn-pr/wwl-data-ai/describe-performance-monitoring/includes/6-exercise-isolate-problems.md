@@ -32,13 +32,13 @@ You have been hired as a database administrator to identify performance related 
 
 1. Select **Add client IP** and select **Save**.
 
-    :::image type="content" source="../media/clientip.png" alt-text="Screenshot showing selecting Add client IP":::
+    :::image type="content" source="../media/client-ip.png" alt-text="Screenshot showing selecting Add client IP":::
 
 1. Select **OK**.
 
 1. In the navigation above **Firewall settings**, select the link that begins with **AdventureWorks**.
 
-    :::image type="content" source="../media/firewalladventureworks.png" alt-text="Screenshot showing selecting AdventureWorks.":::
+    :::image type="content" source="../media/firewall-adventureworks.png" alt-text="Screenshot showing selecting AdventureWorks.":::
 
 1. In the left navigation, select **Query editor (preview)**.
 
@@ -63,7 +63,7 @@ You have been hired as a database administrator to identify performance related 
     END
     ```
 
-    :::image type="content" source="../media/query1.png" alt-text="Screenshot showing the Query.":::
+    :::image type="content" source="../media/query-1.png" alt-text="Screenshot showing the Query.":::
 
     > [!NOTE]
     > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\exercise_steps.sql** file.
@@ -86,13 +86,13 @@ You have been hired as a database administrator to identify performance related 
 1. Locate the **Query Performance Insight** icon on the **Intelligent Performance** section of the blade for the AdventureWorks database.
 1. Select **Reset settings**.
 
-    :::image type="content" source="../media/resetsettings.png" alt-text="Reset settings":::
+    :::image type="content" source="../media/reset-settings.png" alt-text="Reset settings":::
 
 1. Click on the query in the grid below the graph. If you do not see a query, wait for 2 minutes and select **Refresh**.
 
 Notice that you can find details of the performance metrics for each query.
 
-:::image type="content" source="../media/intelligentperformance.png" alt-text="Intelligent Performance":::
+:::image type="content" source="../media/intelligent-performance.png" alt-text="Intelligent Performance":::
 
 For this query, you can see that the total duration was over 20 seconds and that it ran approximately 10,000 times.
 
