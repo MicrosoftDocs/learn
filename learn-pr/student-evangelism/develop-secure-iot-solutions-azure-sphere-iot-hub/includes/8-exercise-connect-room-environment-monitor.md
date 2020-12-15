@@ -25,7 +25,7 @@ You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a we
    > [!TIP]
    > If you don't see the two services listed then click the fresh button.
 
-   :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows IoT Hub resources.":::
+   :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows IoT Hub resources." lightbox="../media/azure-iot-resources.png":::
 
 Don't close the Azure Web portal. You will need to access it again.
 
@@ -61,11 +61,11 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 
 2. Select **DPS** > **Certificates** > **+ Add**.
 
-   :::image type="content" source="../media/dps-certificate-add.png" alt-text="The illustration shows add certificate.":::
+   :::image type="content" source="../media/dps-certificate-add.png" alt-text="The illustration shows add certificate." lightbox="../media/dps-certificate-add.png":::
 
 3. Name your certificate, and then select the **CAcertificate.cer** file you downloaded in the previous step to upload into the device provisioning service.
 
-   :::image type="content" source="../media/dps-certificate-upload.png" alt-text="The illustration shows how to upload a certificate.":::
+   :::image type="content" source="../media/dps-certificate-upload.png" alt-text="The illustration shows how to upload a certificate." lightbox="../media/dps-certificate-upload.png":::
 
 4. Then select **Save**.
 
@@ -77,7 +77,7 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 
 3. Copy the verification code to the clipboard.
 
-   :::image type="content" source="../media/dps-certificate-verify.png" alt-text="The illustration shows how to copy the verification certificate.":::
+   :::image type="content" source="../media/dps-certificate-verify.png" alt-text="The illustration shows how to copy the verification certificate." lightbox="../media/dps-certificate-verify.png":::
 
 ### Verify the tenant CA certificate
 
@@ -101,7 +101,7 @@ Devices claimed by your Azure Sphere tenant are automatically enrolled with the 
 
 4. Select **Verify**.
 
-   :::image type="content" source="../media/dps-certificate-verify-upload.png" alt-text="The illustration shows upload the verification certificate.":::
+   :::image type="content" source="../media/dps-certificate-verify-upload.png" alt-text="The illustration shows upload the verification certificate." lightbox="../media/dps-certificate-verify-upload.png":::
 
 ## Step 4: Create a DPS enrollment group
 
@@ -126,24 +126,24 @@ You need the connection string for your IoT Hub.
 1. From the Azure web portal.
 1. Select the IoT Hub you created at the beginning of this unit.
 
-    :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows resources created for this learning module.":::
+    :::image type="content" source="../media/azure-iot-resources.png" alt-text="The illustration shows resources created for this learning module." lightbox="../media/azure-iot-resources.png":::
 
 1. Select **Shared access policies**, then **iothubowner**.
 1. Copy the **Connection string--primary key** to the clipboard.
 
-   :::image type="content" source="../media/iot-hub-connection-string.png" alt-text="The illustration shows IoT Hub resources created for this learning module.":::
+   :::image type="content" source="../media/iot-hub-connection-string.png" alt-text="The illustration shows IoT Hub resources created for this learning module." lightbox="../media/iot-hub-connection-string.png":::
 
 1. Start Azure IoT Explorer.
 1. Select **+ Add connection**.
 1. Paste your IoT Hub connection string in the connection string dialogue box.
 1. Then select **Save**
 
-    :::image type="content" source="../media/iot-explorer-connection-string.png" alt-text="The illustration shows how to set the IoT Explorer connection string.":::
+    :::image type="content" source="../media/iot-explorer-connection-string.png" alt-text="The illustration shows how to set the IoT Explorer connection string." lightbox="../media/iot-explorer-connection-string.png":::
 
 1. Select **Home**.
 1. Select **IoT Plug and Play Settings**.
 
-   :::image type="content" source="../media/iot-explorer-pnp-settings.png" alt-text="The illustration shows how to set the IoT Explorer Plug and Play public repository.":::
+   :::image type="content" source="../media/iot-explorer-pnp-settings.png" alt-text="The illustration shows how to set the IoT Explorer Plug and Play public repository." lightbox="../media/iot-explorer-pnp-settings.png":::
 
 1. Select **+ Add**.
 1. Select **Public repository**.
