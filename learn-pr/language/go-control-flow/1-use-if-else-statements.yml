@@ -3,6 +3,7 @@ uid: learn.language.go-control-flow.1-use-if-else-statements
 metadata:
   title: Exercise - Use if/else statements
   description: Learn about the most basic control flow statement, the if/else statement.
+  ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
