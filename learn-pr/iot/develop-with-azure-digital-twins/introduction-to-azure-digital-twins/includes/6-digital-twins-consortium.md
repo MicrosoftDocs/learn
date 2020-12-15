@@ -1,19 +1,19 @@
 ---
 metadata:
-  title: Digital Twins Consortium
+  title: Digital Twin Consortium
   description: Introduction to the Digital Twin Consortium
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Digital Twins Consortium
+title: Digital Twin Consortium
 durationInMinutes: 5
 ---
 
 :::image type="content" source="../media/adt-consortium-logo.png" alt-text="Logo of the digital twin consortium" lightbox="../media/adt-consortium-logo.png":::
 
-[Digital Twins Consortium (DTC)](https://www.digitaltwinconsortium.org/index.htm) co-founded by Microsoft, Dell, Ansys, Autodesk, GE Software, Northrop Grumman and Land lease, was announced in May 2020 at Build conference. This is a fast-growing organization that started with 14 founding members and added 42 members in the first week. It has 125+ partners as of August 2020.
+[Digital Twin Consortium (DTC)](https://www.digitaltwinconsortium.org/index.htm) co-founded by Microsoft, Dell, Ansys, Autodesk, GE Software, Northrop Grumman and Land lease, was announced in May 2020 at Build conference. This is a fast-growing organization that started with 14 founding members and added 42 members in the first week. It has 125+ partners as of August 2020.
 
 Digital Twin Consortium is a program of Object Management Group dedicated to the widespread adoption of digital twin technology and the value it delivers. Through cross-industry collaboration, the Consortium will help enterprises maximize the benefits of digital twin technology - sharing within a member ecosystem the lessons learned and opportunities uncovered within the virtual world and applying them to the physical world.
 
