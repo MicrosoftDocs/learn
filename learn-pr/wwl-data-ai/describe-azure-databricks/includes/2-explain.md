@@ -14,7 +14,7 @@ To address the problems seen on other Big Data platforms, Azure Databricks was o
 
 By providing an optimized, easy to provision and configure environment, Azure Databricks gives developers a performant, cost-effective platform that enables them to spend more time building applications, and less time focused on managing clusters and infrastructure.
 
-## Who is Databricks?
+## What is Databricks?
 
 Databricks was founded by the creators of Apache Spark, Delta Lake, and MLflow.
 
