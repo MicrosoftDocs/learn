@@ -9,7 +9,7 @@ You can search for potential threats by using the built-in analytics rules that 
 - Machine learning (ML) behavior analytics
 - Scheduled alerts
 
-:::image type="content" source="../media/03-rule-templates.PNG" alt-text="Screenshot of rule templates in the Analytics home page." border="true":::
+:::image type="content" source="../media/03-rule-templates.png" alt-text="Screenshot of rule templates in the Analytics home page." border="true":::
 
 ## Fusion alerts
 

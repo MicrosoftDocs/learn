@@ -27,7 +27,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 4. Select the **Review + create**, and then select **Create**.
 
-:::image type="content" source="../media/02-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
+:::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than 5 minutes.
@@ -62,7 +62,7 @@ In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
 5. Select your subscription, and then select **Connect**.
 6. When you receive a status of **Connected**, close all open panels to return to **Azure Sentinel | Data connector**.
 
-:::image type="content" source="../media/07-Azure-Sentinel-Connector.PNG" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
+:::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Azure Sentinel connector." border="true":::
 
 > [!Note]
 > The connector for Azure Activity could take 20 minutes to send data in Azure Sentinel. You can proceed with rest of the steps and with other units of this module. 

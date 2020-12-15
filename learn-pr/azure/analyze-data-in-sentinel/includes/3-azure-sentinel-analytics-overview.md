@@ -30,7 +30,7 @@ Analytics will help the Contoso SOC team to improve the efficiency of their comp
 
 You can create analytics rules from the **Analytics** home page. You can access the **Analytics** page in Azure Sentinel from the navigation pane.
 
-:::image type="content" source="../media/02-Analytics-page.png" alt-text="Screenshot of the Analytics home page." border="true":::
+:::image type="content" source="../media/02-analytics-page.png" alt-text="Screenshot of the Analytics home page." border="true":::
 
 The **Analytics** home page has three main parts:
 
@@ -44,7 +44,7 @@ Currently Microsoft has preloaded over 150 template rules from the Azure Sentine
 
 To use filters, in the header bar, select the filters you want to use.
 
-:::image type="content" source="../media/02-Filter-The-Rule-Templates.PNG" alt-text="Screenshot of filtering the Analytics home page." border="true":::
+:::image type="content" source="../media/02-filter-the-rule-templates.png" alt-text="Screenshot of filtering the Analytics home page." border="true":::
 
 The **Analytics** home page provides the following filters:
 

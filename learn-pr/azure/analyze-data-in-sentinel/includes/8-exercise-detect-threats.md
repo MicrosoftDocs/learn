@@ -25,7 +25,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
   | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
   | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates large numbers of false positives. |
 
-  :::image type="content" source="../media/07-Analytics-rule-wizzard-Create-new-rule.PNG" alt-text="Screenshot Analytics Rule wizard-Create new rule." border="true":::
+  :::image type="content" source="../media/07-analytics-rule-wizard-create-new-rule.png" alt-text="Screenshot Analytics Rule wizard-Create new rule." border="true":::
 
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
@@ -39,7 +39,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
 6. In the **Result simulation** section, select **Test with current data**, and then observe the results.
 
-  :::image type="content" source="../media/07-Rule-Logic.PNG" alt-text="Screenshot Analytics Rule Logic." border="true":::
+  :::image type="content" source="../media/07-rule-logic.png" alt-text="Screenshot Analytics Rule Logic." border="true":::
 
 7. In the  **Map entities**  section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis.
 8. In the **Query Scheduling** section, you can configure how often the query should run, and how far in history to search. Select query to run on every 5 min.
@@ -51,7 +51,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 14. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents, and ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
 15. Ensure that **Reopen closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
 
-  :::image type="content" source="../media/07-Incident-Settings.PNG" alt-text="Screenshot Analytics Incident Settings." border="true":::
+  :::image type="content" source="../media/07-incident-settings.png" alt-text="Screenshot Analytics Incident Settings." border="true":::
 
 16. In the **Automated response**  page, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Azure Sentinel connector are displayed.
 17. Select **Next: Review**.

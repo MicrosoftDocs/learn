@@ -24,7 +24,7 @@ On the **Set rule logic** page, you can define the detection method by specifyin
 
 When you enter the KQL query string in the **Rule query** field, you can use the **Results simulation (preview)** section to review the results of the query. The **Results simulation (preview)** section will help you determine whether your query returned the expected results.
 
-:::image type="content" source="../media/05-Create-scheduled-rule.PNG" alt-text="Screenshot of the wizard used to create a scheduled analytics rule." border="false":::
+:::image type="content" source="../media/05-create-scheduled-rule.png" alt-text="Screenshot of the wizard used to create a scheduled analytics rule." border="false":::
 
 The following sample query alerts you when an anomalous number of resources is created in Azure Activity.
 
