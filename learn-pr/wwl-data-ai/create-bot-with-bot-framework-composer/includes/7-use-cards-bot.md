@@ -33,7 +33,7 @@ In the next set of exercises, you will add buttons to the weather bot and then e
 
     This template will use the same variables as before for the weather condition but also adds a title to the card that will be displayed, along with an image for the weather condition. Restart your bot and test in the emulator.  Testing the current condition for New Orleans, Louisiana displayed the card depicted in this image.
 
-        ::: image type="content" source="../media/weather-card.png" alt-text="Bot card response showing New Orleans name with icon for mist":::
+    ::: image type="content" source="../media/weather-card.png" alt-text="Bot card response showing New Orleans name with icon for mist":::
 
 1. Restart the bot and test it with the Bot Framework Emulator.
 1. Enter "weather" and review the user interface for entering your zipcode. Then, when you enter the zipcode, review the card that is displayed in the response.
