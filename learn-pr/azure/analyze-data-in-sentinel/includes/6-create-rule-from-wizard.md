@@ -35,8 +35,7 @@ AzureActivity
 | make-seriesdcount(ResourceId)  default=0 on EventSubmissionTimestamp inrange(ago(7d), now(), 1d) by Caller
 ```
 
-> [!**Tip**]
-
+> [!Tip]
 > **For assistance with the query language, refer to the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](https://docs.microsoft.com/en-us/azure/kusto/query/)
 
 ### Map entities
