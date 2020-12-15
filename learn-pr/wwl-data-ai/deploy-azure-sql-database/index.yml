@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-azure-sql-database
 metadata:
   title: Deploy Azure SQL Database
   description: "Deploy Azure SQL Database"
-  ms.date: 12/14/2020
+  ms.date: 12/15/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -37,7 +37,7 @@ units:
 - learn.wwl.deploy-azure-sql-database.deploy-single
 - learn.wwl.deploy-azure-sql-database.deploy-elastic-pool
 - learn.wwl.deploy-azure-sql-database.deploy-sql-managed-instance
-- learn.wwl.deploy-azure-sql-database.6-exercise-deploy-azure-sqldatabase
+- learn.wwl.deploy-azure-sql-database.exercise-deploy-azure-sql-database
 - learn.wwl.deploy-azure-sql-database.knowledge-check
 - learn.wwl.deploy-azure-sql-database.summary
 badge:
