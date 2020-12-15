@@ -1,6 +1,6 @@
 ## Download files
 
-First we'll need to clone a GitHub repo that has contains some files we'll need
+First we'll need to clone a GitHub repo that contains some files we'll need
 ```azurecli
 git clone https://github.com/Azure-Samples/digital-twins-samples
 ```
@@ -10,7 +10,7 @@ git clone https://github.com/Azure-Samples/digital-twins-samples
 
 ## Setup variables
 
-We'll create and store some variables which will make running the commands needed in the subsequent units easier and avoid mistakes from typos.
+We'll create and store some variables, which will make running the commands needed in the subsequent units easier and avoid mistakes from typos.
 
 1. Open a PowerShell Console locally or a Cloud Shell with PowerShell
 1. Ensure you are logged into the right account and set to the correct default Azure subscription by running the command below
@@ -121,7 +121,7 @@ There are several important values from the resources set that you will need as 
 
 ### Collect app registration values
 
-1. Get the Azure Active Directory (AAD) Tennant ID
+1. Get the Azure Active Directory (AAD) Tenant ID
     ```azurecli
     az account show --query 'tenantId'
     ```

@@ -1,6 +1,6 @@
 ## Scenario
 
-Imagine you've been asked to prototype a solution that can model how Chocolate manufacturing components impact the production of Chocolate. These components often have a child-parent relationship and the status of the parent component relies on the values stored in child components or other systems. You need to be able to ceate and store the model, instantiate instances of the model for each component, and store / update important component values from a variety of external systems.
+Imagine you've been asked to prototype a solution that can model how Chocolate manufacturing components impact the production of Chocolate. These components often have a child-parent relationship and the status of the parent component relies on the values stored in child components or other systems. You need to be able to create and store the model, instantiate instances of the model for each component, and store / update important component values from a variety of external systems.
 
 Azure Digital Twins provides a service that abstracts the complexity needed to deliver the solution above. Azure Digital Twins can be used to store models created using the Digital Twins Definition Language (DTDL). Models of components can be instantiated and their properties updated using APIs or the ADT SDK.
 
@@ -16,7 +16,7 @@ In this module you will:
 ## Prerequisites
   - Basic understanding of Azure Digital Twins
   - Beginner-level experience with: IoT Hub, Azure Functions, and Logic Apps
-  - Azure Subcription
+  - Azure Subscription
   - Admin Access to Azure AD Tenant & Azure Subscription
   - Mac OS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6 )
 - Windows OS: PowerShell is built-in

@@ -8,7 +8,7 @@ We can ingest data into Azure Digital Twins through external compute resources, 
 
 ## Create an Azure Function via CLI
 
-1. Create a Azure storage account
+1. Create an Azure storage account
 
     ```azurecli
     az storage account create --name $functionstorage --location $location --resource-group $rgname --sku Standard_LRS
@@ -24,7 +24,7 @@ We can ingest data into Azure Digital Twins through external compute resources, 
 
 The Azure function skeleton from earlier examples requires that a bearer token to be passed in order to authenticate with Azure Digital Twins. To make sure that this bearer token is passed, you'll need to create a Managed Service Identity (MSI) for the function app.
 
-In this section, we'll create a system-managed identity and assign the function app's identity to the _Azure Digital Twins Owner (Preview)_ role for your Azure Digital Twins instance. The Managed Identity gives the function app permission in the instance to perform data plane activities. We'll also provide the the URL of Azure Digital Twins instance to the function by setting an environment variable.
+In this section, we'll create a system-managed identity and assign the function app's identity to the _Azure Digital Twins Owner (Preview)_ role for your Azure Digital Twins instance. The Managed Identity gives the function app permission in the instance to perform data plane activities. We'll also provide the URL of Azure Digital Twins instance to the function by setting an environment variable.
 
 1. Use the following command to create the system-managed identity and save the _principalId_ to a variable for use later
 
@@ -73,9 +73,9 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
     - **When prompted for a storage account choose**: Skip for now
     - **Select how you would like to open your project**: Choose `Add to workspace`.
 
-### Install Nuget packages
+### Install NuGet packages
 
-In the Visual Studio Code Terminal, add the required Nuget packages by typing the following commands:
+In the Visual Studio Code Terminal, add the required NuGet packages by typing the following commands:
 
 ```dos
     dotnet add package Azure.DigitalTwins.Core --version 1.0.0-preview.3
@@ -153,7 +153,7 @@ namespace My.Function
 
 ## Publish the function app to Azure
 
-1. In the VSCode function extension, click on on **Deploy to Function App...**
+1. In the VSCode function extension, click on **Deploy to Function App...**
     ![Choose Deploy to Function App...](../media/deploy-to-function-app.png)
 
 - **Select subscription**: Choose your subscription

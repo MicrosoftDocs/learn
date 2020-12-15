@@ -15,7 +15,7 @@ In this unit a custom Logic App connector will be created and used within a Logi
 ## Configure connector for Azure Digital Twins
 
 1. Download a custom Azure Digital Twins Swagger that has been modified to work with Logic Apps. Download the Azure Digital Twins custom Swaggers (Logic Apps connector) sample from [this link](https://docs.microsoft.com/en-us/samples/azure-samples/digital-twins-custom-swaggers/azure-digital-twins-custom-swaggers/) by hitting the Download ZIP button. Navigate to the downloaded Azure_Digital_Twins_custom_Swaggers__Logic_Apps_connector_.zip folder and unzip it.
-1. Back in the Azure Portal on your connector's Overview page, click on **Edit**
+1. Back in the Azure portal on your connector's Overview page, click on **Edit**
 ![Edit new connector](..\media\edit-connector.png)
 1. In the Edit Logic Apps Custom Connector page that follows, configure this information:
     - **Custom connectors**
@@ -77,9 +77,9 @@ In this unit a custom Logic App connector will be created and used within a Logi
 1. You should see your custom connector from earlier in the top box. Select it to display the list of APIs contained in that connector. Use the search bar or scroll through the list to select **DigitalTwins_SendTelemetry**
    ![Add custom connector to workflow](..\media\custom-action.png)
 1. In the new DigitalTwins SendTelemetry box, fill the fields as follows:
-    - id: GrindingStep.
+    - ID: GrindingStep.
     - telemetry: This field is where you'll enter the body that the chosen API request requires. For SendTelemetry, this body is in the form of JSON (see image below)
-    - Message-Id: A unique message identifier (in the scope of the digital twin id) that is commonly used for de-duplicating message.
+    - Message-ID: A unique message identifier (in the scope of the digital twin ID) that is commonly used for de-duplicating message.
     - api-version: The latest API version. Currently, this value is 2020-10-31.
 1. Click **Save**
 ![Save Logic App](..\media\save-logic-app.png)
