@@ -19,7 +19,7 @@ To create a livestream from the **Hunting** page in Azure Sentinel, select the *
 
 ## View a livestream
 
-On the new **Livestream** page, specify a name for the livestream session and the query that will provide results for the session. Notifications for livestream events will appear in your Azure Portal notifications.
+On the new **Livestream** page, specify a name for the livestream session and the query that will provide results for the session. Notifications for livestream events will appear in your Azure portal notifications.
 
 ## Manage a livestream
 

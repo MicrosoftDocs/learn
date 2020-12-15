@@ -3,9 +3,9 @@ uid: learn.azure.threat-hunting-sentinel.3-query-management-creation
 metadata:
   title: Explore Azure Sentinel threat hunting query creation and management
   description: Explore Azure Sentinel threat hunting query creation and management
-  ms.date: 11/02/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure Sentinel threat hunting query management and creation

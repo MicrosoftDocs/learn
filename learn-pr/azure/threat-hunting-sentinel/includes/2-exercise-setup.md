@@ -18,7 +18,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 | --- | --- |
 | **Subscription** | Select your Azure subscription. |
 | **Resource Group** | Select **Create new** and provide a name for the resource group, for example **azure-sentinel-rg**. |
-| **Locations** | From the drop-down menu select the location where you are deploying Azure Sentinel. |
+| **Locations** | From the drop-down menu, select the location where you are deploying Azure Sentinel. |
 | **Workspace name**  | Provide a unique name for the Azure Sentinel workspace, for example ***yourname*-sentinel**. |
 | **Location** | Accept the default value **[resourceGroup().location]**. |
 | **Simplevm Name** | Accept the default value **simple-vm**. |
@@ -54,8 +54,8 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 3. In the **Data connectors** pane, search for and select **Azure Activity.** In the **details** pane, select **Open connector page.**
 4. In the **Azure Activity** pane, select the link **Configure Azure Activity logs**.
 5. Select your subscription and then select **Connect.**
-6. When you receive status **Connected**, you can close all open blades to return to **Azure Sentinel | Data connector** blade.
-7. On the **Azure Sentinel** | **Data connectors** pane ensure the **Azure Activity** connector has a status of **Connected**.
+6. When you receive status **Connected**, return to the **Azure Sentinel | Data connector** pane.
+7. Select the **Azure Sentinel** | **Data connectors** pane ensure the **Azure Activity** connector has a status of **Connected**.
 
 > [!NOTE]
 > The connector for Azure Activity could take 15-30 minutes until it displays a status of connected.

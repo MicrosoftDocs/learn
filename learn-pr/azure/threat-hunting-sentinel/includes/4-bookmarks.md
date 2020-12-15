@@ -11,7 +11,7 @@ You can revisit your bookmarked data at any time on the Bookmarks tab of the Hun
 
 ## Create or add to incidents using bookmarks
 
-You can use bookmarks to create a new incident or add bookmarked query results to existing incidents. The **Incident actions** button on the toolbar enables you perform either of these tasks when a bookmark is selected.
+You can use bookmarks to create a new incident or add bookmarked query results to existing incidents. The **Incident actions** button on the toolbar enables you to perform either of these tasks when a bookmark is selected.
 
 :::image type="content" source="../media/4-incident-actions.png" alt-text="The Incident actions drop-down menu in Azure Sentinel, with the options to create new incident, or add to existing incident." :::
 

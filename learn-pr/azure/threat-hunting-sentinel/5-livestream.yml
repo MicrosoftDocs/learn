@@ -3,9 +3,9 @@ uid: learn.azure.threat-hunting-sentinel.5-livestream
 metadata:
   title: Observe threats over time with livestream
   description: Observe threats over time with livestream
-  ms.date: 11/02/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Observe threats over time with livestream

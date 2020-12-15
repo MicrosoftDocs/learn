@@ -3,9 +3,9 @@ uid: learn.azure.threat-hunting-sentinel.7-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 11/02/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
