@@ -2,12 +2,7 @@ Now you are going to submit a job to Azure Quantum.
 
 ---- This chapter is subjected to changes depending on the chosen framework----
 
-## Pre-requisites
-
-Check that you have an Azure subscription. If you don't have one, you can
-create a [free account](https://azure.microsoft.com/free) before you begin.
-
-### Create a quantum workspace
+## Create a quantum workspace
 
 First, you need to create a Quantum Workspace in your Azure subscription and
 select the providers you desire to use. To do it follow these steps:
@@ -86,33 +81,35 @@ Next, you'll use Visual Studio Code to create a Q# Project.
    `ExecutionTarget` property, which will give you design-time feedback on the
    compatibility of your program for IonQ's hardware in VS Code.
 
-```xml
-<Project Sdk="Microsoft.Quantum.Sdk/0.12.20100504">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ExecutionTarget>ionq.qpu</ExecutionTarget>
-  </PropertyGroup>
-</Project>
-```
+    ```xml
+    <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <ExecutionTarget>ionq.qpu</ExecutionTarget>
+      </PropertyGroup>
+    </Project>
+    ```
+
+   with `yy.yy.yyyyyyyy` being the number of the last version of the Quantum
+   Development Kit.
 
 1. Replace the contents of `Program.qs` with the program:
 
-```qsharp
-namespace MyFirstJob {
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Measurement;
-    open Microsoft.Quantum.Canon;
-
-    @EntryPoint()
-    operation TestSuperposition() : Result {
-        using (q = Qubit())  {
-            H(q);
-            return M(q);
+    ```qsharp
+    namespace MyFirstJob {
+        open Microsoft.Quantum.Intrinsic;
+        open Microsoft.Quantum.Measurement;
+        open Microsoft.Quantum.Canon;
+    
+        @EntryPoint()
+        operation TestSuperposition() : Result {
+            using (q = Qubit())  {
+                H(q);
+                return M(q);
+            }
         }
     }
-}
-```
+    ```
 
 This program prepares a qubit in an even superposition and then measures
 it. It's simple but enough to show how to submit a job.
@@ -129,9 +126,9 @@ you created.
    ```dotnetcli
    az quantum workspace set -g MyResourceGroup -w MyWorkspace -o table
 
-   Location     Name                               ResourceGroup
-   -----------  ---------------------------------  --------------------------------
-   westus       ws-yyyyyy                          rg-yyyyyyyyy
+   Location     Name         ProvisioningState    ResourceGroup    Usable  
+   -----------  -----------  -------------------  ---------------  --------
+   westus       MyWorkspace  Succeeded            MyResourceGroup  Yes  
 
    ```
 
@@ -176,76 +173,96 @@ histogram which should look like the one below:
    ```dotnetcli
    az quantum execute --target-id ionq.simulator -o table
 
-   .........
-   Result     Frequency
-   ---------  -----------  -------------------------
-   [0]  0.06250000   ▐█                      |
-   [1]  0.06250000   ▐█                      |
+   ..
+   Result    Frequency
+   --------  -----------  -------------------------
+   0         0.50000000   ▐██████████             |
+   1         0.50000000   ▐██████████             |
    ```
 
-This shows an equal frequency for each of the 16 possible states for measuring 4
-qubits, which is what we expect from an idealized simulator. This means we're
+This shows an equal frequency for each of the 2 possible states for measuring a
+qubit, which is what we expect from an idealized simulator. This means we're
 ready to run it on the QPU.
 
 ## Run the program on hardware
 
 To run the program on hardware, we'll use the asynchronous job submission
-command `az quantum job submit`. Like the `execute` command this will compile
-and submit your program, but it won't wait until the execution is complete. We
-recommend this pattern for running against hardware, because you may need to
-wait a while for your job to finish. To get an idea of how long you can run `az
-quantum target list -o table` as described above.
+command `az quantum job submit`.
+
+1. Run in the Azure command line:
 
    ```dotnetcli
    az quantum job submit --target-id ionq.qpu -o table
-
-   Name        Id                                    Status    Target    Submission time
-   ----------  ------------------------------------  --------  --------  ---------------------------------
-   QuantumRNG  5aa8ce7a-25d2-44db-bbc3-87e48a97249c  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00
    ```
 
-The table above shows that your job has been submitted and is waiting for its
-turn to run. To check on the status, use the `az quantum job show` command,
-being sure to replace the `job-id` parameter with the Id output by the previous
-command:
+   Like the `execute` command this will compile
+   and submit your program, but it won't wait until the execution is complete. We
+   recommend this pattern for running against hardware, because you may need to
+   wait a while for your job to finish. To get an idea of how long you can run `az
+   quantum target list -o table` as described above. You should obtain something
+   like this:
+
+   ```output
+   Name        Id                                    Status    Target    Submission time
+   ----------  ------------------------------------  --------  --------  ---------------------------------
+   QuantumRNG  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00
+   ```
+
+1. Track the status of your job using `az quantum job show` command. To check on
+   the status, use the `az quantum job show` command, being sure to replace the
+   `job-id` parameter with the `Id` output by the previous command:
 
    ```dotnetcli
     az quantum job show -o table --job-id 5aa8ce7a-25d2-44db-bbc3-87e48a97249c 
 
    Name        Id                                    Status    Target    Submission time
    ----------  ------------------------------------  --------  --------  ---------------------------------
-   QuantumRNG  5aa8ce7a-25d2-44db-bbc3-87e48a97249c  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00 
+   QuantumRNG  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00 
    ```
 
-Eventually, you will see the `Status` in the above table change to `Succeeded`.
-Once that's done you can get the results from the job by running `az quantum job
-output`:
+1. Eventually, you will see the `Status` in the above table change to `Succeeded`.
+   Once that's done you can get the results from the job by running `az quantum job output`:
 
    ```dotnetcli
-   az quantum job output -o table --job-id 5aa8ce7a-25d2-44db-bbc3-87e48a97249c 
+   az quantum job output -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy 
 
-   Result     Frequency
-   ---------  -----------  -------------------------
-   [0,0,0,0]  0.05200000   ▐█                      |
-   [1,0,0,0]  0.07200000   ▐█                      |
-   [0,1,0,0]  0.05000000   ▐█                      |
-   [1,1,0,0]  0.06800000   ▐█                      |
-   [0,0,1,0]  0.04600000   ▐█                      |
-   [1,0,1,0]  0.06000000   ▐█                      |
-   [0,1,1,0]  0.06400000   ▐█                      |
-   [1,1,1,0]  0.07600000   ▐██                     |
-   [0,0,0,1]  0.04800000   ▐█                      |
-   [1,0,0,1]  0.06200000   ▐█                      |
-   [0,1,0,1]  0.07400000   ▐█                      |
-   [1,1,0,1]  0.08000000   ▐██                     |
-   [0,0,1,1]  0.05800000   ▐█                      |
-   [1,0,1,1]  0.06800000   ▐█                      |
-   [0,1,1,1]  0.05200000   ▐█                      |
-   [1,1,1,1]  0.07000000   ▐█                      |
+   Result    Frequency
+   --------  -----------  ------------------------
+   0         0.47200000   ▐█████████             |
+   1         0.52800000   ▐██████████            |
    ```
 
-The histogram you receive may be slightly different than the one above, but you
-should find that the states generally are observed with equal frequency.  
+The histogram you receive is the averaged results over the number of **shots**
+or iterations that the computer has run the program. Remember that quantum
+programs are probabilistic, and thus we need to run them many times to see
+output of the relevant statistics. In this case, the quantum computer has run
+the program above 500 times, because the default value of the argument `shots`
+is defaulted to 500.
 
+### Set the number of shots
 
-TODO
+To change the number of shots you need to specify a different value for the
+argument `--shots`. For example, if you want to run the program only once:
+
+1. Set the number of shots to 1:
+
+```dotnetcli
+az quantum job submit --target-id ionq.simulator --shots 1 -o table
+```
+
+1. After the status of the job changes to `Succeeded`, extract the output of the job:
+
+```dotnetcli
+az quantum job output -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
+Result    Frequency
+--------  -----------  -------------------------
+1         1.00000000   ▐████████████████████   |
+```
+
+In this case, we obtained `1` as the result of the bit generated by measuring the
+superposed qubit in the ion trapped quantum computer.
+
+Congratulations, you learned how to use Azure Quantum to generate a true quantum
+random bit generator. However, we don't want quantum computers just to
+generate random numbers. In the next sections, you'll learn about more complex
+tasks that you can use the quantum computer for.
