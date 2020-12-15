@@ -17,7 +17,7 @@ function updateCardsInGame() {
     // For each player, update their player stat card to show PER for that player for 
     // a specific quarter.
     for (let [playerName, playerStats] of playerMap.entries()) {
-        document.getElementById(playerName + '_card').children[1].innerText = 'PER: '+playerStats[currentQuarter];
+        document.getElementById(playerName + '_card').children[1].innerText = 'PER: '+playerStats[currentQuarter].toPrecision(4);
     }
 
     // Reset the current quarter's total PER.
@@ -44,7 +44,7 @@ function updateCardsInGame() {
 
     // Update Current PER with the new average PER for the quarter now that the
     // stats have been updated.
-    document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER;
+    document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER.toPrecision(4);
 }
 ```
 
@@ -67,7 +67,7 @@ function endQuarter() {
     quarterInPlay = false;
 
     // Add the average PER of the quarter to the total count.
-    totalAvePER += parseFloat(quarterAvePER);
+    totalAvePER += parseFloat(quarterAvePER.toPrecision(4));
 
     // Add the value to the display counter above the stats column.
     document.getElementById('averagePER').innerText += quarterAvePER + ' + ';
@@ -99,8 +99,8 @@ function endGame() {
     var averagePER = totalAvePER/numQuarters;
 
     // Let the coach know that the game is over and what the PER was for the game.
-    alert('Game Over. Game Average PER was: ' + averagePER);
-    document.getElementById('averagePER').innerText += quarterAvePER + ' = ' + averagePER;
+    alert('Game Over. Game Average PER was: ' + averagePER.toPrecision(4));
+    document.getElementById('averagePER').innerText += quarterAvePER.toPrecision(4) + ' = ' + averagePER.toPrecision(4);
 
     // Clean up the web app view.
     document.getElementById('timer').innerText = 'That\'s All Folks!';

@@ -1,8 +1,8 @@
-While they share a similar name, Azure AD is _not_ a cloud version of Windows Server Active Directory. It's also not intended as a complete replacement for an on-premises Active Directory. Instead, if you are already using a Windows AD server, you can connect it to Azure AD to extend your directory into Azure. This approach allows users to use the same credentials to access local and cloud-based resources.
+While they share a similar name, Azure AD is _not_ a cloud version of Windows Server Active Directory. It's also not intended as a complete replacement for an on-premises Active Directory. Instead, if you're already using a Windows AD server, you can connect it to Azure AD to extend your directory into Azure. This approach allows users to use the same credentials to access local and cloud-based resources.
 
 ![Conceptual art showing Windows AD and Azure AD controlling resources](../media/2-azure-vs-windows-ad.png)
 
-Azure AD can also be used independently of Windows AD. Smaller companies can use Azure AD as their only directory service, using it to control access to their applications and SaaS products such as Microsoft 365, Salesforce, and Dropbox.
+Azure AD can also be used independently of Windows AD. Smaller companies can use Azure AD as their only directory service, using it to control access to their applications and SaaS products, such as Microsoft 365, Salesforce, and Dropbox.
 
 > [!NOTE]
 > Keep in mind that this approach doesn't provide a completely centralized administrative model - for example, local Windows machines would authenticate using local credentials. But applications can be written to use Azure AD to provide authentication and authorization that can then be administered in a single place.
@@ -32,16 +32,16 @@ Here you can also decide how the default directory is selected: last visited, or
 
 ## Creating a new directory
 
-An organization (tenant) always has one default Azure AD directory it's associated with, however owners can create additional directories to support development or testing purposes, or because they want to have separate directories to synchronize with their local Windows Server AD forests. 
+An organization (tenant) always has one default Azure AD directory it's associated with; however, owners can create additional directories to support development or testing purposes, or because they want to have separate directories to synchronize with their local Windows Server AD forests.
 
 > [!IMPORTANT]
-> The steps to create a new directory are shown below, however unless you are an owner of your Azure account, this option won't be available to you. The Azure Sandbox doesn't allow you to create new Azure AD directories.
+> The steps to create a new directory follow; however, unless you are an owner of your Azure account, this option won't be available to you. The Azure Sandbox doesn't allow you to create new Azure AD directories.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **Create a resource** from the left sidebar, **Identity** from the Azure Marketplace, and then **Azure Active Directory** from the list.
+1. Select **Create a resource**, **Identity** from the Azure Marketplace, and then **Azure Active Directory** from the list. Select **Create**.
 
-1. Choose a name for the directory that will help distinguish it from your other directories. If the directory you're creating is to be used in production, choose a name for the directory that your users will recognize as the name of your organization. You can change the name later if you want.
+1. Choose an *organization name* for the directory that will help distinguish it from your other directories. If the directory you're creating will be used in production, choose a name for the directory that your users will recognize as the name of your organization. You can change the name later if you want.
 
 1. Enter the domain name associated with it. The domain must not be known to Azure or you will get a validation error. The default domain name will always have the suffix `.onmicrosoft.com`. While this default domain cannot be changed, later you can add a custom domain owned by your organization so defined users can use a traditional company email such as `john@contoso.com`.
 

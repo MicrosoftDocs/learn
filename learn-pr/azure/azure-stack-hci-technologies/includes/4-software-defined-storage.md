@@ -107,7 +107,7 @@ In both scenarios, you can implement storage by using Storage Spaces Direct.
 
 Storage Spaces Direct represents the evolution of storage spaces. It leverages storage spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly available clustered storage by using local disks on each of the Storage Spaces Direct cluster nodes. It is suitable for hosting highly available workloads, including VMs and SQL Server databases. This eliminates the need for attaching storage devices to multiple cluster nodes in failover clustering scenarios.
 
-:::image type="content" source="../media/4-s2d-architecture.png" alt-text="The architecture of a typical Storage Spaces Direct implementation, including the storage pool, software storage bus, cluster, Storage Spaces, CSV, and Hyper-V VMs." border="true":::
+:::image type="content" source="../media/4-storage-spaces-direct-architecture.png" alt-text="The architecture of a typical Storage Spaces Direct implementation, including the storage pool, software storage bus, cluster, Storage Spaces, CSV, and Hyper-V VMs." border="true":::
 
 Using local disks in this manner requires a high-bandwidth, low-latency network between the nodes. To satisfy this requirement, you should deploy redundant network connections in combination with high-end RDMA network adapters. This allows you to benefit from technologies such as SMB 3.x, SMB Direct, and SMB Multichannel to deliver high-speed, low-latency, CPU-efficient storage access. 
 

@@ -99,17 +99,17 @@ All declared direct method bindings must be added by reference to the directMeth
 LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &dm_restartDevice };
 ```
 
-### Opening the device twin binding set
+### Opening the direct method binding set
 
-Direct method binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
+The direct method binding set is initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_directMethodSetOpen(directMethodBindingSet, NELEMS(directMethodBindingSet));
 ```
 
-### Closing the device twin binding set
+### Closing the direct method binding set
 
-Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+The direct method bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_directMethodSetClose();

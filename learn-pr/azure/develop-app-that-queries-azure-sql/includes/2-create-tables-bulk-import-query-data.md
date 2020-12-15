@@ -95,11 +95,11 @@ Suppose that you have the following data in the file *mydata.csv*, and you want 
 
 ```text
 Column1,Column2
-some text,99
-some more text,101
-another bit of text,97
-yet more text,87
-a final bit of text,33
+99,some text
+101,some more text
+97,another bit of text
+87,yet more text
+33,a final bit of text
 ```
 
 The first line contains field names that aren't the same as the columns in the table. The data is comma-separated, and  each row is terminated by a newline character. Keep in mind that the order of the columns in the file might be different from the table. In this example, the first column in the table is numeric, and the second column is a string, as follows:
