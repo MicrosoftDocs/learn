@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.10-control-flow
+metadata:
+  title: Iterate through code with control flow
+  description: Learn about if/else expressions and loops.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Iterate through code with control flow
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-control-flow.md)]

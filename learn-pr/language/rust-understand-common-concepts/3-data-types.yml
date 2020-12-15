@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.3-data-types
+metadata:
+  title: Learn about data types
+  description: Explore the primary data types available in Rust.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about data types
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-data-types.md)]
