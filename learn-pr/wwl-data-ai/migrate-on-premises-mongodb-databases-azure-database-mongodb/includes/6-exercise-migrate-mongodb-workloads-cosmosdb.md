@@ -536,14 +536,3 @@ The final step is to reconfigure your existing MongoDB applications to connect t
 1. Test the application with other device numbers. Enter **Q** to finish.
 
 You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured an existing MongoDB application to connect to the Cosmos DB database.
-
-Microsoft.Compute/disks
-Microsoft.Compute/virtualMachines
-Microsoft.Compute/virtualMachines/extensions
-Microsoft.DataMigration/services
-Microsoft.DevTestLab/schedules
-Microsoft.DocumentDb/databaseAccounts
-Microsoft.Network/networkInterfaces
-Microsoft.Network/networkSecurityGroups
-Microsoft.Network/publicIPAddresses
-Microsoft.Network/virtualNetworks

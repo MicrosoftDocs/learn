@@ -6,7 +6,7 @@ metadata:
   description: "Exercise: Migrate MongoDB workloads to Cosmos DB"
   ms.date: 12/15/2020
   author: wwlpublish
-  ms.author: rcapert
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
