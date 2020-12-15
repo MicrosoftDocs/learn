@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.incident-management-in-sentinel
+uid: learn.azure.incident-management-sentinel
 metadata:
   title: Security incident management in Azure Sentinel
   description: Security incident management in Azure Sentinel
@@ -20,7 +20,7 @@ prerequisites: |
   - Basic experience with Azure services
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
   - Basic knowledge of Azure Sentinel rules
-iconUrl: /learn/achievements/incident-management-in-sentinel.svg
+iconUrl: /learn/achievements/incident-management-sentinel.svg
 levels:
 - beginner
 roles:
@@ -28,12 +28,12 @@ roles:
 products:
 - azure
 units:
-- learn.azure.incident-management-in-sentinel.1-introduction
-- learn.azure.incident-management-in-sentinel.2-exercise-setup
-- learn.azure.incident-management-in-sentinel.3-describe-incident-management
-- learn.azure.incident-management-in-sentinel.4-understand-evidence-and-entities
-- learn.azure.incident-management-in-sentinel.5-manage-incidents
-- learn.azure.incident-management-in-sentinel.6-exercise-investigate-incident
-- learn.azure.incident-management-in-sentinel.7-summary
+- learn.azure.incident-management-sentinel.1-introduction
+- learn.azure.incident-management-sentinel.2-exercise-setup
+- learn.azure.incident-management-sentinel.3-describe-incident-management
+- learn.azure.incident-management-sentinel.4-understand-evidence-entities
+- learn.azure.incident-management-sentinel.5-manage-incidents
+- learn.azure.incident-management-sentinel.6-exercise-investigate-incident
+- learn.azure.incident-management-sentinel.7-summary
 badge:
-  uid: learn.learn.azure.incident-management-in-sentinel
+  uid: learn.learn.azure.incident-management-sentinel

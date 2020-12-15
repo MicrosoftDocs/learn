@@ -1,5 +1,3 @@
-## Exercise: Investigate incidents with Azure Sentinel
-
 As a security engineer working for Contoso, you recently noticed that a significant number of VMs were deleted from your Azure subscription. You want to analyze this occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM. You then investigate the incident to determine incident details and close the incident.
 
 In this exercise, you will create an Azure Sentinel analytics rule, delete a VM, and investigate the incident created by the rule. You will perform the following tasks:
@@ -26,26 +24,26 @@ In this task, you'll create an analytics rule that will create an incident when 
    - **Severity**: Select **Medium**.
    - **Status**: Select **Enable.**
 
-  :::image type="content" source="../media/6-Analytics-rule-wizard-Create-new-rule.PNG" alt-text="Screenshot Analytics Rule wizard-Create new rule." border="true":::
+      :::image type="content" source="../media/6-Analytics-rule-wizard-Create-new-rule.PNG" alt-text="Screenshot Analytics Rule wizard-Create new rule." border="true":::
 
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
-  ```kusto
-  AzureActivity
-  | where OperationName == 'Delete Virtual Machine'
-  | where ActivityStatus == 'Accepted'
-  | extend AccountCustomEntity = Caller
-  | extend IPCustomEntity = CallerIpAddress
-  ```
+      ```kusto
+      AzureActivity
+      | where OperationName == 'Delete Virtual Machine'
+      | where ActivityStatus == 'Accepted'
+      | extend AccountCustomEntity = Caller
+      | extend IPCustomEntity = CallerIpAddress
+      ```
 
 6. In the **Result simulation** section, select **Test with current data**, and then observe the results.
 7. Still in the **Set rule logic** pane, scroll down to view the following configuration options.
 
-  - In the  **Map entities** section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis. Use the default values,
-  - In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history to observe. Set **Run query every** to **5 minutes**.
-  - In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert gets generated. Use the default values.
-  - In the **Event grouping** section, accept the default selection **Group all events into a single alert.**
-  - In the **Suppression** section, you can configure **Stop running the query after the alert is generated** to  **On**  or  **Off.** Accept the default values.
+      - In the  **Map entities** section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis. Use the default values,
+      - In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history to observe. Set **Run query every** to **5 minutes**.
+      - In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert gets generated. Use the default values.
+      - In the **Event grouping** section, accept the default selection **Group all events into a single alert.**
+      - In the **Suppression** section, you can configure **Stop running the query after the alert is generated** to  **On**  or  **Off.** Accept the default values.
   
 8. Select **Next: Incident setting (Preview)**.
 9. In the **Incident setting (Preview)** page, ensure that **Create incidents from alerts triggered by this analytics rule** is set to **Enabled**.
