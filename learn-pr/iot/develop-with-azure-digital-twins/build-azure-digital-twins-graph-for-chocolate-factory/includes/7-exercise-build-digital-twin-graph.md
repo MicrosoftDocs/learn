@@ -96,7 +96,7 @@ You should now see all the relationships between the digital twins in the graph 
 
 1. Locate the icon in the graph view that gives a range of layout options, with names such as "Cola" and "Klay":
 
-    :::image type="content" source="../media/adt-explorer-graph-import.png" alt-text="Screenshot showing the graph icon for changing layout options in the ADT Explorer sample" lightbox="../media/adt-explorer-graph-import.png":::
+    :::image type="content" source="../media/adt-explorer-graph-layout.png" alt-text="Screenshot showing the graph icon for changing layout options in the ADT Explorer sample" lightbox="../media/adt-explorer-graph-layout.png":::
 
 1. Try each of the layout options in turn.
 
