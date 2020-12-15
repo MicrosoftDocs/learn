@@ -1,21 +1,25 @@
-Transitioning workloads to the cloud involves more than just moving servers, websites, and data. Companies need to think about how to secure those resources, identify authorized users, and ensure that data accessed, services created, and operations performed by those users is permitted. Security is a complex area and it's easy to get wrong - as shown by the multitude of successful attacks on big companies in the news.
-
-We need to control that access centrally, provide a definitive identity for each user that they use for every service, and ensure employees and vendors have _just enough access_ to do their job. When those employees leave, or a vendor's contract is over, ensuring that their access is removed is even more important.
-
-Azure tries to make these sorts of problems easier to solve with Azure Active Directory (Azure AD). Azure AD is Microsoft's cloud-based identity and access management service which provides single sign-on and multi-factor authentication to help protect your users from 99.9 percent of cybersecurity attacks.
+You've been responsible for getting your SQL Server instance fast, keeping it fast, and making it fast again when something is wrong. In this module, we'll show you how to use your existing performance skills, processes, and tools to apply them to Azure SQL. This includes taking advantage of the intelligence in Azure to deliver consistent performance for your application.
 
 ## Learning objectives
 
-In this module, you will:
+At the end of this module, you will be able to:
 
-- Learn the difference between Azure AD and Windows Server Active Directory
-- Understand tenants, subscriptions, and users
-- Create a new Azure Active Directory
-- Add users and groups to an Azure AD
-- Manage roles in an Azure AD
-- Learn how to create a hybrid identity solution with Azure AD Connect
+* Identify and use the performance capabilities of Azure SQL.
+* Configure and maintain performance for Azure SQL.
+* Monitor and troubleshoot performance in Azure SQL.
+* Accelerate and tune performance in Azure SQL.
+* Use intelligent performance.
 
-## Prerequisites
+## Prerequisites  
 
-- Basic understanding of identity and role-based access control (RBAC)
-- Understand how to use the Azure portal
+* Experience working with, maintaining, and developing with SQL Server.
+* Experience with Azure, such as deploying and managing resources.
+
+For the exercises, a sandbox environment is provided for Azure resources. However, you need to do a few things on your local machine in order to complete the exercises:  
+
+* Use a Windows machine or VM (SQL Server Management Studio is only available on Windows).  
+* Download and install [the latest version of SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true).
+* Download and install [the latest version of Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio?azure-portal=true).
+* Download the [zip file](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/archive/master.zip?azure-portal=true) or clone the repository from [GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals?azure-portal=true) to access lab files. Extract the contents of the zip file to something similar to `C:\Users\[YourUsername]\` so you can access it easily in the exercises.
+
+If you can't complete the prerequisites, you can still go through the module and see demos of the exercises.
