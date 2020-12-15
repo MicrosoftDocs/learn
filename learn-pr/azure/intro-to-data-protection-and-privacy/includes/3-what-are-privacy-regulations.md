@@ -1,0 +1,13 @@
+In many cases and scenarios, data protection requirements are defined by internal, external or public policy, regulation or law. For example, company can define internal data protection policy to protect its intellectual property. Also, company can define external policy for its vendors to define how they should handle the data when doing business with the company. 
+
+A country can define law or regulation which defines how personal data is collected and handled by government authorities or by companies that process personal data. Examples of these regulations are General Data Protection Regulation (GDPR) or California Consumer Privacy Act (CCPA). We will discuss these in more details in the next topic.
+
+In general, information privacy, data privacy or data protection regulations and laws are used to provide a legal framework on how to obtain, use and store data about persons, companies or other entities.  Laws and regulations rarely define or prescribe specific technologies used to protect data, instead you should choose appropriate technologies, platforms or vendors that comply with a specific regulation or law.
+
+The various laws around the world describe the rights of persons and companies to control who is using its data. This includes usually the right to get details on which data is stored, for what purpose and to request the deletion in case the purpose is not given anymore.
+
+Data protection policies, that companies use internally, are mostly focused on data access management and data protection principles and procedures. On the other hand, laws and regulations in this field are strongly focused on data collection and data usage. Regulations very specifically define who, when and how can collect personal data, how the data should be used and how it is removed or deleted.
+
+Very often, companies should implement both data privacy and protection regulations provided by governments and internal data protection policies. Data protection officers should have good understanding of requirements provided by laws and regulations as well as requirements from internal policies. Based on this understanding they should define procedures for data collection, storage and protection as well as technologies to implement these.
+
+Microsoft provides compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. You can learn how Microsoft products and services help your organization meet regulatory compliance standards here: [Compliance offerings for Microsoft 365, Azure, and other Microsoft services. | Microsoft Docs](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home)
