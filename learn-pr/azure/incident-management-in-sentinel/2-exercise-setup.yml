@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.incident-management-in-sentinel.2-exercise-setup
+metadata: 
+  title: Exercise setup
+  description: Exercise setup
+  ms.date: 10/27/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise setup
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-exercise-setup.md)]

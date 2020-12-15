@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.incident-management-in-sentinel.6-exercise-investigate-incident
+metadata: 
+  title: Exercise - Investigate an incident
+  description: Exercise - Investigate an incident
+  ms.date: 10/27/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Investigate an incident
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-investigate-incident.md)]

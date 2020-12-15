@@ -2,21 +2,24 @@
 uid: learn.azure.incident-management-in-sentinel
 metadata:
   title: Security incident management in Azure Sentinel
-  description: TODO
-  ms.date: TODO
+  description: Security incident management in Azure Sentinel
+  ms.date: 10/27/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Security incident management in Azure Sentinel
-summary: TODO
+summary: In this module, you will investigate Azure Sentinel incident management, learn about Azure Sentinel events and entities, and discover ways to resolve incidents.
 abstract: |
   In this module you will:
-  - TODO
-  - TODO
-  - TODO
+  - Understand Azure Sentinel incident management
+  - Explore Azure Sentinel evidence and entity management
+  - Investigate and manage incident resolution
 prerequisites: |
-  - TODO
+  - Familiarity with security operations in an organization
+  - Basic experience with Azure services
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - Basic knowledge of Azure Sentinel rules
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -26,10 +29,11 @@ products:
 - azure
 units:
 - learn.azure.incident-management-in-sentinel.1-introduction
-- learn.azure.incident-management-in-sentinel.2-custom-rules
-- learn.azure.incident-management-in-sentinel.3-manage-events-alerts
-- learn.azure.incident-management-in-sentinel.4-manage-incidents
-- learn.azure.incident-management-in-sentinel.5-exercise-investigate-incident
-- learn.azure.incident-management-in-sentinel.6-summary
+- learn.azure.incident-management-in-sentinel.2-exercise-setup
+- learn.azure.incident-management-in-sentinel.3-describe-incident-management
+- learn.azure.incident-management-in-sentinel.4-understand-evidence-and-entities
+- learn.azure.incident-management-in-sentinel.5-manage-incidents
+- learn.azure.incident-management-in-sentinel.6-exercise-investigate-incident
+- learn.azure.incident-management-in-sentinel.7-summary
 badge:
   uid: learn.learn.azure.incident-management-in-sentinel

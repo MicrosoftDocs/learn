@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.incident-management-in-sentinel.5-manage-incidents
+metadata:
+  title: Manage incidents
+  description: Manage incidents in Azure Sentinel
+  ms.date: 10/27/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage incidents
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-manage-incidents.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A member of Contoso's security team wants to escalate an incident to a member of the Contoso tier 2 security team. Which incident parameter should you change?"
+    choices:
+    - content: "Severity"
+      isCorrect: false
+      explanation: "Severity doesn't change incident ownership."
+    - content: "Status"
+      isCorrect: false
+      explanation: "Status doesn't change incident ownership."
+    - content: "Owner"
+      isCorrect: true
+      explanation: "You should change the owner parameter to the user account for the member of the tier 2 security team."
+    - content: "User name"
+      isCorrect: false
+      explanation: "User name is an incident entity and can't be changed."
+  - content: "What Azure Sentinel interface enables someone to view timelines and relationships between incident resources?"
+    choices:
+    - content: "Investigation graph"
+      isCorrect: true
+      explanation: "The investigation graph enables you to view timelines and relationships between incident resources."
+    - content: "Incident details page"
+      isCorrect: false
+      explanation: "The Incident details page doesn't enable you to view timelines and relationships between incident resources."
+    - content: "Resource relationships"
+      isCorrect: false
+      explanation: "There isn't an interface in Sentinel named Resource relationships."
+    - content: "Incident status"
+      isCorrect: false
+      explanation: "Viewing incident status doesn't enable you to view timelines and relationships between incident resources."
