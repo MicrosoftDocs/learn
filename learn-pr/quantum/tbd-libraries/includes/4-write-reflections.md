@@ -1,3 +1,6 @@
+> [!NOTE]
+> To-do: clean up some of the strucure
+
 You are in desperate need of a book on how to save your spaceship, but the intergalactic online library only lets you search for books by their International Standard Book Number, or ISBN, a sequence of numbers which uniquely identify every book. 
 You had written it down on a sticky note, but after spilling your coffee during liftoff one of the digits is now illegible.
 The online library only allows three attempts when searching for a book, so you need to somehow determine the missing digit without guessing.
@@ -39,25 +42,96 @@ The instructions here are specifically for Q# via the command line in VS Code , 
 We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \text{ mod } 11$.
 To do this, we need to implement the operation $(9 + 6\cdot x) \text{ mod } 11$ on a quantum register. 
 
-### Setup
+Fortunately, the operation [MultiplyAndAddByModularInteger](xref:fill) from the Artithmetic namespace of the Standard Library can be used to do just that. 
+It implements the map
+$$
+\ket{x}\ket{b} \mapsto \ket{x}\ket{(b + a \cdot x) \text{mod} N}
+$$
+for a given modulus $N$ and constant integer multiplier $a$. 
 
-First things first, create a new Q# project. 
-Some of the operations we will implement require the Numerics library, so go ahead and add that by entering in the command line
-```dotnet
-dotnet add package Microsoft.Quantum.Numerics
-```
+To implement our map specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
+Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
-Next, at the beginning of the namespace in our Q# file, open the namespaces we will need for our program:
+Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit scratch register ($\ket{b}$) and preparing it in the number state $\ket{9}$ (this can be done using [ApplyXorInPlace](xref:fill)), and then performing the mapping above by providing $N=11$ and $a=6$, so
+$$
+\ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \text{mod} 11}.
+$$
+
+In the remainder of this unit you will learn how to explicitly implement this operation as an oracle while defining the corresponding Q# operations. 
+In the next unit, you will put it all together and finally find the book you've been needing!
+
+### Flag the correct state by applying the oracle
+
+Recall from the (FILL) module on Grover's algorithm that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states—i.e. those which are a solution to the search problem.
+This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` gate is applied to the $\ket{-}$ state, the $\ket{-}$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
+
+Supposing we have in hand the search register `missingDigitReg` and a `flagQubit` initialized to $\ket{-}$, how would we go about getting that phase factor on strictly the state $\ket{x}$ in `missingDigitReg` which satisfies $(9 + 6 \cdot x) \text{mod} 11 = 0$?
+Well, we can add a secondary target register, leaving the full state of the form
+$$
+\ket{x}\ket{\text{target}}\ket{-},
+$$
+then, after first initializing $\ket{\text{target}}$ to $\ket{9}$, we apply the mapping, yielding
+$$
+\ket{x}\ket{(9 + 6 \cdot x) \text{mod} 11}\ket{-}.
+$$
+
+Finally, we can apply a controlled `X` gate on the $\ket{-}$ flag qubit, controlled by the target register's being in the $\ket{0}$ number state (for four qubits, technically this is $\ket{0000}$).
+Thus the state of `missingDigitReg` which satisfies the equation acquires the phase factor as
+$$
+-1*\ket{x_{good}} \ket{0} \ket{-}
+$$
+and the non-solution states do not:
+$$
+\ket{x_{bad}} \ket{\neq 0} \ket{-}.
+$$
+
+After this, the target register can be uncomputed (handled by our `apply-within` statements) and de-allocated, having served its purpose. 
+
+We will define this sequence in the operation `ApplyIsbnOracle`, where `flagQubit` is our qubit in $\ket{-}$, and `ComputeIsbnCheck` is the operation which performs the arithmetic mapping to the target register.
+
 ```qsharp
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Arithmetic;
-    open Microsoft.Quantum.Arrays;
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Preparation;
-    open Microsoft.Quantum.Diagnostics;
+    operation ApplyIsbnOracle(missingDigitReg : LittleEndian, flagQubit : Qubit) : Unit is Adj + Ctl {
+        // Allocate an additional register for the check digit.
+        using (rawTarget = Qubit[Length(missingDigitReg!)]) {
+            let targetReg = LittleEndian(rawTarget);
+            
+            within {
+                ComputeIsbnCheck(missingDigitReg, targetReg);
+            } apply {
+                // The flag qubit will be already initialized in |-> when this is applied.
+                // Thus those states where targetReg is in |0> number state (the good solutions)
+                // will be flagged with a -1 phase due to the controlled X they apply to the |-> state.  
+                ApplyControlledOnInt(0, X, targetReg!, flagQubit);
+            }
+        }
+    }
 ```
 
-> [!NOTE]
-> To do: define and explain the oracle; rename files accordingly; document oracle with API stuff
+### Apply the arithmetic to target state
+
+We just described how the oracle itself is implemented through the `ComputeIsbnCheck` operation, which ultimately performs the mapping
+$$
+\ket{x}\ket{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \text{mod} 11}.
+$$
+
+So, what exactly does that operation consist of?
+As mentioned above, we can take a register in $\ket{0}$, initialize it to the number state $\ket{9}$, and then perform the mapping using `MultiplyAndAddByModularInteger`.
+But instead of doing this directly to the target register, we make use of another scratch register, performing the work on it before transferring it's state to the target register and de-allocating it.
+
+This code then takes the form
+
+```qsharp
+    operation ComputeIsbnCheck(missingDigitReg : LittleEndian, targetReg : LittleEndian) : Unit is Adj + Ctl {
+        using (rawScratch = Qubit[Length(missingDigitReg!)]) {
+            let scratchReg = LittleEndian(rawScratch);
+            
+            within {
+                ApplyXorInPlace(9, scratchReg);
+                MultiplyAndAddByModularInteger(6, 11, missingDigitReg, scratchReg);
+            } apply {
+                ApplyToEachCA(CNOT, Zipped(scratchReg!, targetReg!));
+            }
+            
+        }
+    }
+```
