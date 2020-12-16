@@ -4,7 +4,7 @@ metadata:
   description: This unit covers setting up all the resources necessary for creating the chocolate factory twin and simulating data input to the twin
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and simulate the chocolate factory twin
@@ -15,15 +15,15 @@ The following exercise units require that you have an Azure Digital Twins instan
 
 This pattern relies on the twin updates, rather than forwarding telemetry from an IoT device. This set up gives you the flexibility to change the underlying data source without needing to update your Time Series Insights logic.
 
-To proceed, please choose one of the following options:
+To proceed, choose one of the following options:
 
-- If you have been following the "Develop with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/en-us/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13689), and retained the solution resources in your Azure Subscription, please skip to [**Create a route and filter to twin update notifications**](/learn/modules/developing-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-a-route-and-filter-to-twin-update-notifications).
+- If you have been following the "Develop with Azure Digital Twins" Learning Path modules in sequence, and have successfully completed all exercises in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13689), and retained the solution resources in your Azure Subscription, skip to [**Create a route and filter to twin update notifications**](/learn/modules/developing-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-a-route-and-filter-to-twin-update-notifications).
 
-- Otherwise, if you haven't completed the previous modules and would still like to proceed with the exercises in this module, please continue with the following steps.
+- Otherwise, if you haven't completed the previous modules and would still like to proceed with the exercises in this module, continue with the following steps.
 
 ## Deploy a PowerShell script
 
-This is required to re-provision the resources created in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/en-us/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13689).
+This is required to re-provision the resources created in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13689).
 
 1. Create a directory and clone the repo. Replace *username* with a valid directory:
 
@@ -38,7 +38,7 @@ This is required to re-provision the resources created in [Module 3: Ingest Data
     :::image type="content" source="../media/adt-deploy-script.png" alt-text="Running the PowerShell resource deployment script":::
 
     1. Click on Run Script
-    1. Enter your Azure Subscription ID when prompted (for more information on finding your Subscription ID, see the [guide for setting Azure subscription](https://docs.microsoft.com/en-us/azure/media-services/latest/how-to-set-azure-subscription?tabs=portal))
+    1. Enter your Azure Subscription ID when prompted (for more information on finding your Subscription ID, see the [guide for setting Azure subscription](https://docs.microsoft.com/azure/media-services/latest/how-to-set-azure-subscription?tabs=portal))
     1. Enter your username. This should be the same email you use to sign in your Azure account
     1. The previous step should start the deployment, but it will take several minutes while all resources are provisioned and deployed. Please wait until the command prompt re-appears
     1. Save the device connection string displayed at the end of the deployment as you'll need it in the following steps
@@ -46,7 +46,7 @@ This is required to re-provision the resources created in [Module 3: Ingest Data
 > [!NOTE]
 > if you get "*IoT Hub is not currently in Active state. Try the request again after it is in Active state*" warning message, wait a few minutes then select the few lines remaining below the "`az iot hub create`" line and "Run Selection" (`F8`).
 
-1. Now you have an Azure Digital Twin of a factory production line! You can view your DT using a sample application like [Azure Digital Twins Explorer](https://docs.microsoft.com/en-us/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins explorer also provides additional Twin Capabilities like uploading models, creating twins, relationship, and updating twin properties.
+1. Now you have an Azure Digital Twin of a factory production line! You can view your DT using a sample application like [Azure Digital Twins Explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins explorer also provides additional Twin Capabilities like uploading models, creating twins, relationship, and updating twin properties.
 
 :::image type="content" source="../media/adt-explorer.png" alt-text="A screenshot showing the Azure Digital Twins explorer user interface":::
 

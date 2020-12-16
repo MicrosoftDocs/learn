@@ -101,7 +101,7 @@ Use Visual Studio Code to create a local Azure Functions project. Later in this 
 
     - **Select Function App in Azure:** Choose the function that ends in "twinupdatefunction"
 
-    - If prompted to overwrite a previous deployment, click "Deploy"
+    - If you are prompted to overwrite a previous deployment, click "Deploy"
 
     :::image type="content" source="../media/adt-overwrite-azure-function-vsc.png" alt-text="Screenshot of a Visual Studio Code prompt to overwrite the previous Azure function deployment":::
 
@@ -123,7 +123,7 @@ You'll now create a second event hub and configure your function to stream its o
 
 To create the second event hub, use the following PowerShell instructions:
 
-1. Prepare your Event Hubs namespace and resource group name from ear-lier in this module
+1. Prepare your Event Hubs namespace and resource group name from earlier in this module
 
 1. Create a new event hub:
 
@@ -132,7 +132,7 @@ To create the second event hub, use the following PowerShell instructions:
     az eventhubs eventhub create --name "tsi-event-hub" --resource-group $rgname --namespace-name $ehnamespace
     ```
 
-1. Create an [authorization rule](https://docs.microsoft.com/en-us/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) with send and receive permissions:
+1. Create an [authorization rule](https://docs.microsoft.com/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) with send and receive permissions:
 
     ```powershell
     # Create an authorization rule. Specify a name for the rule.
@@ -145,7 +145,7 @@ Next, you'll need to set environment variables in your function app from earlier
 
 ### Set the Twins event hub connection string
 
-1. Get the Twins [event hub connection string](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you [created previously](#create-an-event-hub) for the Twins hub:
+1. Get the Twins [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you [created previously](#create-an-event-hub) for the Twins hub:
 
     ```powershell
     $adtehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name twins-event-hub --name EHPolicy --query primaryConnectionString -o tsv)
@@ -159,7 +159,7 @@ Next, you'll need to set environment variables in your function app from earlier
 
 ### Set the Time Series Insights event hub connection string
 
-1. Get the Time Series Insights [event hub connection string](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you [created previously](#create-an-event-hub) for the Time Series Insights hub:
+1. Get the Time Series Insights [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you [created previously](#create-an-event-hub) for the Time Series Insights hub:
 
     ```powershell
     $tsiehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name tsi-event-hub --name EHPolicy --query primaryConnectionString -o tsv)

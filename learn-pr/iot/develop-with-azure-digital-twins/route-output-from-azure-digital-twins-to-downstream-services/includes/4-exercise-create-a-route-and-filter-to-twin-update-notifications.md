@@ -51,6 +51,6 @@ In this section, you'll be creating an Azure Digital Twins event route that will
     > [!NOTE]
     > There is currently a **known issue** in Cloud Shell affecting these command groups: `az dt route`, `az dt model`, `az dt twin`.
     >
-    > To resolve, either run `az login` in Cloud Shell prior to running the command, or use the [local CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) instead of Cloud Shell. For more information on this issue, see the [article for troubleshooting known issues in Azure Digital Twins](https://docs.microsoft.com/en-us/azure/digital-twins/troubleshoot-known-issues#400-client-error-bad-request-in-cloud-shell).
+    > To resolve, either run `az login` in Cloud Shell prior to running the command, or use the [local CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true) instead of Cloud Shell. For more information on this issue, see the [article for troubleshooting known issues in Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/troubleshoot-known-issues#400-client-error-bad-request-in-cloud-shell).
 
 1. Before moving on, take note of your Event Hubs namespace and resource group, as you will use them again to create another event hub later in this article.

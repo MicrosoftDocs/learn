@@ -4,7 +4,7 @@ metadata:
   description: This unit summarizes the Learn module and provides links to additional resources
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
@@ -19,25 +19,25 @@ Azure Digital Twins seamlessly integrates with Azure data, analytics, and AI ser
 
 ## Learn more
 
-- [Azure Digital Twins Documentation](https://docs.microsoft.com/en-us/azure/digital-twins/tutorial-end-to-end)
+- [Azure Digital Twins Documentation](https://docs.microsoft.com/azure/digital-twins/tutorial-end-to-end)
 
-- [Azure Digital Twins Product Page](https://azure.microsoft.com/en-us/services/digital-twins/)
+- [Azure Digital Twins Product Page](https://azure.microsoft.com/services/digital-twins/)
 
 - [Azure Digital Twins New Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-Digital-Twins-Preview-New-Capabilities?term=Azure%20Digital%20Twins&lang-en=true)
 
 - [Deep Dive: Azure Digital Twins Updated Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Azure-Digital-Twins-Updated-Capabilities)
 
-For more information on how to use Time Series Insights and visualize and query data, please see the additional resources:
+For more information on how to use Time Series Insights and visualize and query data, see the additional resources:
 
-- [What is Azure Time Series Insights Gen2](https://docs.microsoft.com/en-us/azure/time-series-insights/overview-what-is-tsi)
+- [What is Azure Time Series Insights Gen2](https://docs.microsoft.com/azure/time-series-insights/overview-what-is-tsi)
 
-- [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/)
+- [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/learn/modules/explore-analyze-time-series-insights/)
 
-- [Quickstart: Explore the Azure Time Series Insights Gen2 demo environment](https://docs.microsoft.com/en-us/azure/time-series-insights/quickstart-explore-tsi)
+- [Quickstart: Explore the Azure Time Series Insights Gen2 demo environment](https://docs.microsoft.com/azure/time-series-insights/quickstart-explore-tsi)
 
-- [Azure Time Series Insights Explorer](https://docs.microsoft.com/en-us/azure/time-series-insights/concepts-ux-panels)
+- [Azure Time Series Insights Explorer](https://docs.microsoft.com/azure/time-series-insights/concepts-ux-panels)
 
-- [Querying Data from Azure Time Series Insights Gen2](https://docs.microsoft.com/en-us/azure/time-series-insights/concepts-query-overview)
+- [Querying Data from Azure Time Series Insights Gen2](https://docs.microsoft.com/azure/time-series-insights/concepts-query-overview)
 
 ## Clean up resources
 
