@@ -34,10 +34,10 @@ Once you decide to move to Configuration Manager or extend your existing Configu
 
 > [!NOTE]
 > It is important to understand that you have more than one option when considering a migration path to device management in the cloud. Any of the following options will put you on the path to modern endpoint management:
-- Add tenant attach with Microsoft Endpoint Configuration Manager
-- Set up co-management with Microsoft Endpoint Configuration Manager
-- Move from Configuration Manager to Intune
-- Start from scratch with Microsoft 365 and Intune
+> - Add tenant attach with Microsoft Endpoint Configuration Manager
+> - Set up co-management with Microsoft Endpoint Configuration Manager
+> - Move from Configuration Manager to Intune
+> - Start from scratch with Microsoft 365 and Intune
 
 ## Next steps
 
