@@ -5,7 +5,7 @@ metadata:
   description: Check that you understand outputting data from Azure Digital Twins to Time Series Insights
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check

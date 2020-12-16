@@ -2,15 +2,15 @@
 uid: learn.iot.output-from-adt-to-downstream-services
 metadata:
   title: Output from Azure Digital Twins to Downstream Services
-  description: In this module you will get to learn about how Azure Digital twins uses event routes to send data to consumers outside the service.
+  description: In this module, you will get to learn about how Azure Digital twins uses event routes to send data to consumers outside the service.
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Output from Azure Digital Twins to Downstream Services
 summary: |
-  In this module you will get to learn about how Azure Digital Twins use event routes to send data to consumers outside the service.
+  In this module, you will get to learn about how Azure Digital Twins uses event routes to send data to consumers outside the service.
   It's also the fun part of this learning journey as you can finally start experiencing the ‘outcome’ of the hard work you invested earlier in the form of insights, dashboards, visualizations, and more!
 abstract: |
   In this module, you will:

@@ -5,7 +5,7 @@ metadata:
   description: This unit introduces the types of events and data emitted by Azure Digital Twins
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: Rania.Bayoumy
+  ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
