@@ -1,17 +1,13 @@
-Organizations often run many different Java workloads, from simple applications to highly complex, mission-critical microservice architectures.
+Azure Cache for Redis is a key solution for improving speed and sclability of Java applications running in the cloud.
 
-An e-commerce website could have a highly scalable, customer-facing store that relies on hundreds of Spring Boot services. The site could also have a monolithic back-office system to handle its catalog, and many smaller batch applications to update its stocks and notify its customers.
-
-Azure provides many ways to run Java, from simple virtual machines to containers, managed services, or serverless functions. Azure offers one or maybe even several solutions that will fit your needs, including solutions for complex e-commerce scenarios. 
-
-This module introduces those solutions, along with tools to help you choose the most appropriate one for your specific use case.
-
+In this module, you'll develop a Spring Boot application and use Azure Cache for Redis for storing business and session data. You'll learn the main use cases for Redis, and you'll create and configure a Redis instance. Using Spring Boot and Azure App Service, you'll see how your application performs and scales.
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Describe and differentiate the Azure deployment options that are available for Java applications.
-- Choose the best Azure service for deploying a Java application.
+- Describe and differentiate the main use cases for Azure Cache for Redis.
+- Configure a Spring Boot application to use Redis as a cache for business objects.
+- Configure Spring Session to replicate HTTP Session data between server nodes.
 
 ## Prerequisites
 
