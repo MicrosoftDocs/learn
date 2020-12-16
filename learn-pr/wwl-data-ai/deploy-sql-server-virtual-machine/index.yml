@@ -2,8 +2,8 @@
 uid: learn.wwl.deploy-sql-server-virtual-machine
 metadata:
   title: Deploy SQL Server in a virtual machine
-  description: "Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options. Investigate options for migrating existing workloads."
-  ms.date: 10/18/2020
+  description: "Deploy SQL Server in a virtual machine"
+  ms.date: 12/15/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -15,6 +15,7 @@ abstract: |
   - Explore the basics of SQL Server in an Infrastructure as a Service (IaaS) offering
   - Learn the available options for provisioning and deployment
   - Examine methods for migration to Azure SQL Server virtual machine
+  - Deploy SQL Server into an Azure Virtual Machine
 prerequisites: |
   - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
   - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
@@ -38,6 +39,7 @@ units:
 - learn.wwl.deploy-sql-server-virtual-machine.explain-high-availability-options
 - learn.wwl.deploy-sql-server-virtual-machine.explain-disaster-recovery-options
 - learn.wwl.deploy-sql-server-virtual-machine.provision-to-azure-virtual-machines
+- learn.wwl.deploy-sql-server-virtual-machine.provision-on-azure-virtual-machines
 - learn.wwl.deploy-sql-server-virtual-machine.describe-migration-options
 - learn.wwl.deploy-sql-server-virtual-machine.knowledge-check
 - learn.wwl.deploy-sql-server-virtual-machine.summary
