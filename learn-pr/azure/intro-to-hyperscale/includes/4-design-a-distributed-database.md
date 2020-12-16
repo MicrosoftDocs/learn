@@ -2,13 +2,13 @@ If you want a database to perform well, it’s important to design it methodical
 
 ### What are OLTP workloads?
 
-Transactional workloads have **small amounts of data** with **large numbers of transactions**. An example of this kind of workload might be sending a text, or purchasing clothes online. These transactions are commonly referred to as online transactional processing, or more simply **OLTP**, and are the most common type of workload.
+Workloads that generate standard CRUD—create, read, update, delete—operations can involve **small amounts of data**, but generally have a **large number of transactions**. The data being analyzed is usually text, numeric, time, or JSON data. These workloads are usually called online transactional processing, or more simply **OLTP**, and are the most common type of workload. An example of this kind of workload might be sending a text, or purchasing clothes online.
 
 Our contactless payment app will mostly have OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
 
 ### What are OLAP workloads?
 
-Workloads that generate reports can involve **large amounts of data**, but have a **low numbers of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards, such as web and mobile analytics or anomaly and fraud detection
+Workloads that generate reports can involve **large amounts of data**, but have a **low numbers of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards, such as web and mobile analytics or anomaly and fraud detection.
 
 In our scenario, when customer and merchant queries are run on the contactless payment app, these will be OLAP workloads. An example might be a status dashboard, showing if services are running or undergoing maintenance.
 
