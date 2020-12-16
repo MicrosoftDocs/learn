@@ -65,7 +65,7 @@ Use the database-scoped credential to create an external data source named **Azu
 
 Define the external file format named **TextFile**. This name indicates to PolyBase that the format of the text file is **DelimitedText** and the field terminator is a comma.
 
-1. Paste the following code into the query window:
+1. Paste the following code into the query window.
 
     ```sql
     CREATE EXTERNAL FILE FORMAT TextFile
@@ -86,7 +86,7 @@ Create an external table named `dbo.temp` with the column definition for your ta
 
 The table definition must match the fields defined in the input file. There are 12 defined columns, with data types that match the input file data.
 
-1. Add the following code into the Visual Studio window underneath the previous code:
+1. Add the following code into the Visual Studio window underneath the previous code.
 
     ```sql
     -- Create a temp table to hold the imported data
@@ -117,7 +117,7 @@ The table definition must match the fields defined in the input file. There are 
 
 Create a physical table in the SQL Data Warehouse database. In the following example, you create a table named `dbo.StageDate`. The table has a clustered column store index defined on all the columns. It uses a table geometry of `round_robin` by design because `round_robin` is the best table geometry to use for loading data.
 
-1. Paste the following code into the query window:
+1. Paste the following code into the query window.
 
     ```sql
     -- Load the data from Azure Blob storage to SQL Data Warehouse
@@ -136,7 +136,7 @@ Create a physical table in the SQL Data Warehouse database. In the following exa
 
 As an optional step, create statistics on columns that feature in queries to improve the query performance against the table.
 
-1. Paste the following code into the query window:
+1. Paste the following code into the query window.
 
     ```sql
     -- Create statistics on the new data
