@@ -38,11 +38,11 @@ SELECT top 10 *
 
 Click **run**.
 
-You will now be presented with a result set of the first 10 rows, of a row based representation of the documents contained within the SalesOrder container’s analytical store. This is from an Azure Cosmos Core API account for MongoDB, so that data will be represented using the full fidelity schema representation by default. 
+You will now be presented with a result set of the first 10 rows, of a row-based representation of the documents contained within the SalesOrder container’s analytical store. This is from an Azure Cosmos Core API account for MongoDB, so that data will be represented using the full fidelity schema representation by default. 
 
 All top-level properties of the document are represented as columns with the associated property values as the value of the column. All properties are **represented as a structure of the type of values assigned to the properties; and the values themselves, (A) and (B)**. For complex types such as objects and arrays, these remain embedded within the structure but similarly expanded to include type encapsulation of each of their property values. 
 
-In the case of our example, ignoring the system document properties for now, the _id, customerId, orderDate and shipDate are all stings and have a **type encapsulation of string (A)**. The **details property is an embedded array (B)**, in turn with embedded properties sku, name, price and quantity of each array element object.
+In the case of our example, ignoring the system document properties for now, the _id, customerId, orderDate, and shipDate are all stings and have a **type encapsulation of string (A)**. The **details property is an embedded array (B)**, in turn with embedded properties sku, name, price, and quantity of each array element object.
 
 Let’s use what we observed here, and what we learned earlier about using OPENROWSET to combine this data with our Customers view we created previously to create a new SalesOrders view by creating the following script
 
@@ -69,7 +69,7 @@ SELECT  SalesOrderId, SalesOrders.customerId CustomerId,
 
 ![Create a cross-container view in Azure Synapse Studio](../media/create-cross-container-view-synapse-studio.png)
 
-Here you can see we are using the **WITH clause (C)** again to specify the path to our property values, notably **including the data type suffix (D)** of the property as part of the path to the property in order to access the values when using the full fidelity schema. In this example we need to specify “$.shipDate.string” rather than just “$.shipDate”.
+Here you can see we are using the **WITH clause (C)** again to specify the path to our property values, notably **including the data type suffix (D)** of the property as part of the path to the property in order to access the values when using the full fidelity schema. In this example, we need to specify “$.shipDate.string” rather than just “$.shipDate”.
 
 We are joining it back to our Customers view using the **CustomerId key present in both (E)**, and doing some explicit type conversion for our date values using the CONVERT function to project them as SQL date data types.
 
@@ -83,5 +83,5 @@ SELECT top 10 * FROM SalesOrders
 
 Here you can see the results from our SalesOrders view, returning a flattened columnar view of the JSON documents that reside in the SalesOrder container within the Azure Cosmos DB API for MongoDB account.
 
-However you will notice that we are not quite done yet, we still have not extracted the order details information from within the details array we identified earlier that contains the crucial revenue and unit sales data needed to answer some of the questions we set out to answer at the beginning of this module. 	
+However you will notice that we are not quite done, we still have not extracted the order details information from within the details array we identified earlier that contains the crucial revenue and unit sales data needed to answer some of the questions we set out to answer at the beginning of this module. 	
 
