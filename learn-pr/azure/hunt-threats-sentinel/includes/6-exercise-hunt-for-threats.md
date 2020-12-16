@@ -1,5 +1,3 @@
-# Exercise: Hunt threats with Azure Sentinel
-
 As a security engineer working for Contoso, you recently notice that a significant number of VMs has been deleted from your Azure subscription. You want to simulate a deleted VM, analyze this occurrence, and understand the key elements of the potential threat in Azure Sentinel.
 
 In this exercise, you will delete a VM, manage threat hunting queries, and save key findings with bookmarks.
@@ -32,13 +30,13 @@ In this task, you'll create and manage threat hunting queries to review events r
    - **Description**: Enter a detailed description that will help other security analysts understand what the rule does.
    - **Custom query**:
 
-```kusto
-  AzureActivity
-  | where OperationName == 'Delete Virtual Machine'
-  | where ActivityStatus == 'Accepted'
-  | extend AccountCustomEntity = Caller
-  | extend IPCustomEntity = CallerIpAddress
-  ```
+    ```kusto
+      AzureActivity
+      | where OperationName == 'Delete Virtual Machine'
+      | where ActivityStatus == 'Accepted'
+      | extend AccountCustomEntity = Caller
+      | extend IPCustomEntity = CallerIpAddress
+      ```
   
    - **Tactics**: Select **Impact**.
 
@@ -46,8 +44,8 @@ In this task, you'll create and manage threat hunting queries to review events r
 6. In the list of queries, select the star icon beside **Deleted VMs** to mark the query as a favorite.
 7. Select the **Deleted VMs** query and then, in the details pane, select **View Results**.
 
->[!NOTE]
->It might take up to 15 minutes for the deleted VM event to be sent to Azure Sentinel. You can periodically choose to run the query on the **Results** tab if the VM deletion event is not appearing.
+    >[!NOTE]
+    >It might take up to 15 minutes for the deleted VM event to be sent to Azure Sentinel. You can periodically choose to run the query on the **Results** tab if the VM deletion event is not appearing.
 
 8. On the Logs page, in the **Results** section, select the event listed. It should have **{ "action": "Microsoft.Compute/virtualMachines/delete"** in the **Authorization** column. This is the event from the Azure Activity log that indicates the VM was deleted.
 9.  Remain on this page for the next task.

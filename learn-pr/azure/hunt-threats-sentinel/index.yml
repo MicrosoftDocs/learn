@@ -37,4 +37,4 @@ units:
 - learn.azure.hunt-threats-sentinel.6-exercise-hunt-for-threats
 - learn.azure.hunt-threats-sentinel.7-summary
 badge:
-  uid: learn.learn.azure.hunt-threats-sentinel
+  uid: learn.azure.hunt-threats-sentinel.badge
