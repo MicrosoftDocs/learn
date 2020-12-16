@@ -42,4 +42,4 @@ To refresh keys:
 1. Refresh the primary key in the Azure portal. Consider this as the new secondary key value.
 
 > [!IMPORTANT]
-> After your refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key, and update them to keep them operational.
+> After you refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key, and update them to keep them operational.

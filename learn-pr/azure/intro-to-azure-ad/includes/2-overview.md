@@ -29,7 +29,7 @@ If you subscribe to services like Azure or Microsoft 365, you're already taking 
 
 If you're an administrator, you need to know how secure your Azure AD tenant is. The identity secure score can help you understand. Azure AD gives an overall value between 1 and 223. This value represents how well you match the recommendations and best practices that Microsoft suggests for tenant security. The identity secure score reveals how effective your security is and helps you implement improvements.
 
-You can find your tenant's identity secure score in the Azure portal. Go to your Azure AD tenant and then open the identity secure score dashboard.
+You can find your tenant's identity secure score in the Azure portal. Go to your Azure AD tenant, select **Security**, and then select the **Identity Secure Score** dashboard.
 
 ![Secure identity score](../media/2-secure-identity-score.png)
 
@@ -85,4 +85,4 @@ When you subscribe to a service like Azure or Microsoft 365, all of your identit
 |---------|---------|
 |Azure Active Directory B2B (Azure AD B2B)| Guest users access applications through a link in an invitation email or a link shared directly with them. These redemption links are stored in US datacenters. If a user unsubscribes from invitation messages, their email address is also stored in US datacenters.  |
 |Azure Active Directory B2C (Azure AD B2C)|No personal data is stored outside of Europe, but policy configuration data is stored in US datacenters.|
-|Azure Multi-Factor Authentication|Phone calls and text messages come from US datacenters, and global providers handle the routing. OAuth code validation happens in the US. Push notifications for the Microsoft Authenticator app come from US datacenters.|
+|Azure AD Multi-Factor Authentication|Phone calls and text messages come from US datacenters, and global providers handle the routing. OAuth code validation happens in the US. Push notifications for the Microsoft Authenticator app come from US datacenters.|

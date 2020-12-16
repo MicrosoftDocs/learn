@@ -15,15 +15,19 @@ abstract: |
     - Explore the physical structure of Azure infrastructure
     - Understand the service level agreements provided by Azure
     - Learn how to provide your own service level agreements for your apps
+  > [!NOTE]
+  > This module has been updated to [Describe core Azure architectural components](https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.    
 prerequisites: None
 iconUrl: /learn/achievements/explore-azure-infrastructure.svg
+hidden: true
 levels:
 - beginner
 roles:
 - administrator
 - developer
 - solution-architect
-- student
 products:
 - azure
 units:

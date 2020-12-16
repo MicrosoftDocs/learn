@@ -121,7 +121,7 @@ In math, PEMDAS is an acronym that helps students remember the order in which mu
 3. **M**ultiplication and **D**ivision (from left to right)
 4. **A**ddition and **S**ubtraction (from left to right)
 
-C# follows the same order as PEMDAS except for exponents.  While there's no exponent operator in C#, you can use the `System.Math.Pow()` method, which is available from the .NET Class Library.  The module "Execute methods in the .NET Class Library using C#" will feature this method and others.
+C# follows the same order as PEMDAS except for exponents.  While there's no exponent operator in C#, you can use the `System.Math.Pow()` method, which is available from the .NET Class Library.  The module "Call methods from the .NET Class Library using C#" will feature this method and others.
 
 ### Step 4 - Write code to exercise C#'s order of operations
 
@@ -147,5 +147,5 @@ Now, run the code.  You should see the following result.
 - Use operators like `+`, `-`, `*`, and `/` to perform basic mathematical operations.
 - The division of two `int` values will result in the truncation of any values after the decimal point.  To retain values after the decimal point, you need to cast the divisor or dividend (or both) to from `int` into a floating point number like `decimal` first, then the quotient must be of the same floating point type as well in order to avoid truncation.
 - Perform a cast operation to temporarily treat a value as if it were a different data type.
-- Use the `%` operator to capture the remainder after division.
+- Use the `%` operator to capture the remainder after subtraction.
 - The order of operations will follow the rules of the acronym PEMDAS.

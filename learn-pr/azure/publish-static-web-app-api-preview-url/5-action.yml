@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-api-preview-url.5-action
+metadata:
+  title: Publish the API with GitHub Actions
+  description: Learn how to include your API when you publish a static site with a GitHub Action
+  ms.date: 09/25/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
+title: Publish the API with GitHub Actions
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-action.md)]

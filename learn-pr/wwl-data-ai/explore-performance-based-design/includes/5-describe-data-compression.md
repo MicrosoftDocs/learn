@@ -2,7 +2,7 @@ As mentioned above, one of the key benefits to columnstore indexes is the abilit
 
 :::image type="content" source="../media/module-55-optimize-queries-final-16.png" alt-text="Query against non-compressed and page compressed table":::
 
-The image above shows this performance benefit. These tables have same underlying indexes; the only difference is that the clustered and nonclustered indexes on the Production.TransactionHistory_Page table are page compressed. The query against the page compressed object performs 27% fewer logical reads than the query that uses the uncompressed objects.
+The image above shows this performance benefit. These tables have same underlying indexes; the only difference is that the clustered and nonclustered indexes on the Production.TransactionHistory_Page table are page compressed. The query against the page compressed object performs 72% fewer logical reads than the query that uses the uncompressed objects.
 
 Compression is implemented in SQL Server at the object level. Each index or table can be compressed individually, and you have the option of compressing partitions within a partitioned table or index. You can evaluate how much space you will save by using the sp_estimate_data_compression_savings system stored procedure. Prior to SQL Server 2019, this procedure did not support columnstore indexes, or columnstore archival compression.
 

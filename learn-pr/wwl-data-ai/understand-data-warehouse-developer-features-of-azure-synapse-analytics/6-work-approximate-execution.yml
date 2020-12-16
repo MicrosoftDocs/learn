@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.work-with-approximate-execution
+title: Work with approximate execution
+metadata:
+  title: Work with approximate execution
+  description: "Work with approximate execution"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-work-approximate-execution.md)]

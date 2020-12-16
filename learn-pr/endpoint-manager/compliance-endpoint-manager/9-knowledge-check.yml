@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.compliance-endpoint-manager.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/26/2020
+  author: Erikre 
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager  
+title: Knowledge check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "If you wanted to determine the status of your Intune tenant, where in Microsoft Endpoint Manager should you start?"
+    choices:
+    - content: "Start with the Tenant Status page. It allows you to view current and important details about your tenant."
+      isCorrect: true
+      explanation: "In the Tenant Status page you'll find the Intune Service Health section and the Intune Message Center section. Both of these sections will provide helpful information."
+    - content: "Start with connector status to determine if Intune is connected to the internet."
+      isCorrect: false
+      explanation: "Tenant details provide at-a-glance information about your tenant. However, these details will not provide the status of your Tenant."
+    - content: "Start with the off-line device Intune status report."
+      isCorrect: false
+      explanation: "Tenant details provide at-a-glance information about your tenant. However, these details will not provide the status of your Tenant."
+  - content: "What are some examples of the kind of data Intune reports provide?"
+    choices:
+    - content: "Device access, storage space availability, and detected use time are all examples of the type of information that Intune reports provide."
+      isCorrect: false
+      explanation: "Microsoft Intune reports allow you to more effectively and proactively monitor the health and activity of endpoints across your organization, and also provide other reporting data across Intune."
+    - content: "Device compliance, feature update failures, and detected malware are all examples of the type of information that Intune reports provide."
+      isCorrect: true
+      explanation: "Microsoft Intune reports allow you to more effectively and proactively monitor the health and activity of endpoints across your organization, and also provide other reporting data across Intune."
+  - content: "Where should you look to view Intune end user information so that you can troubleshoot end user issues?"
+    choices:
+    - content: "Use the information provide by endpoint analytics to troubleshoot end user issues."
+      isCorrect: false
+      explanation: "Although endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into the user experience, the troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests."
+    - content: "The service health dashboard provides the details you need to troubleshoot end user issues."
+      isCorrect: false
+      explanation: "The service health dashboard provides details for active incidents and advisories. The troubleshooting portal lets help desk operators and Intune administrators view user information to address user help requests."
+    - content: "The troubleshooting portal lets help desk operators and Intune administrators view user information to address end user issues."
+      isCorrect: true
+      explanation: "The troubleshooting portal lets help desk operators and Intune administrators view details about a user's app assignments, device information, and app protection status."

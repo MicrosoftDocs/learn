@@ -2,21 +2,21 @@
 uid: learn.azure.cloud-adoption-framework-getting-started
 metadata:
   title: Getting started with the Microsoft Cloud Adoption Framework for Azure
-  description: CAF getting started. Use the Cloud Adoption Framework getting started guides to unblock your organization’s cloud adoption efforts 
+  description: CAF getting started. Use the Cloud Adoption Framework getting started guides to unblock your organization’s cloud adoption efforts. 
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Getting started with the Microsoft Cloud Adoption Framework for Azure
-summary: The Microsoft Cloud Adoption Framework for Azure is a guide for the full lifecycle of cloud adoption. Along your organization’s journey to the cloud you may encounter a number of roadblocks that can be easily removed with common approaches used by thousands of customers.
+summary: The Microsoft Cloud Adoption Framework for Azure is a guide for the full lifecycle of cloud adoption. Along your organization’s journey to the cloud, you might encounter a number of roadblocks that can be easily removed with common approaches used by thousands of customers.
 abstract: |
   In this module, you will:
-  - Understand common roadblocks that prevent adoption success
-  - Evaluate one or more guides that can help you get things moving (or moving faster) 
-  - Get started on the proper course of action using shared guidance and related Learn modules
+  - Understand common roadblocks that prevent adoption success.
+  - Evaluate one or more guides that can help you get things moving or start moving faster. 
+  - Get started on the proper course of action using shared guidance and related Learn modules.
 prerequisites: |
-  - General understanding of your current cloud adoption plan and an understanding of the roadblocks that may be presenting your organization from being successful
+  - A general understanding of your current cloud adoption plan and an understanding of the roadblocks that may be preventing your organization from being successful.
 iconUrl: /learn/achievements/cloud-adoption-framework-getting-started.svg
 ratingEnabled: true
 levels:
@@ -48,4 +48,4 @@ units:
 - learn.azure.cloud-adoption-framework-getting-started.4-knowledge-check
 - learn.azure.cloud-adoption-framework-getting-started.5-summary
 badge:
-  uid: learn.azure.cloud-adoption-framework-getting-started.badge
+  uid: learn.azure.cloud-adoption-framework-getting-started.badge 

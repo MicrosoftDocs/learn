@@ -1,10 +1,10 @@
-Visual Studio Code provides tight source-control integration with Git, by default, and with other source code management (SCM) providers through Visual Studio Code extensions.   
+Visual Studio Code provides tight source-control integration with Git, by default, and with other source code management (SCM) providers through Visual Studio Code extensions.
 
 If you're an avid user of Visual Studio Code, it's possible that you've either kept Git Bash open in a separate window or used the Visual Studio Code integrated terminal window to enter Git commands. Although this technique works, you might want to improve your workflow efficiency by learning more about other tools that Visual Studio Code has to offer.  Visual Studio Code provides many visual cues, helpful prompts, and shortcuts to common Git features that are tucked away and available when you use common tools such as the Command Palette, the Status Bar, and the Source Control view.
 
 ## What you'll accomplish in this exercise
 
-In this first exercise, you'll simulate the process of contributing to an open-source library.  This provides the perfect context for using the Visual Studio Code integration with Git.  You'll see how each tool and feature plays a part in creating a local clone and making your first change to your project code.  
+In this first exercise, you'll simulate the process of contributing to an open-source library.  This provides the perfect context for using the Visual Studio Code integration with Git.  You'll see how each tool and feature plays a part in creating a local clone and making your first change to your project code.
 
 In the next exercise, you'll stage and commit your changes and then push them to your remote fork.
 
@@ -13,7 +13,7 @@ In the next exercise, you'll stage and commit your changes and then push them to
 
 ### Step 1 - Create a fork of an open-source project in GitHub
 
-If you clone someone else's GitHub repository and make some changes, you'll find that you don't have permission to push those changes back to GitHub. The workflow for making contributions to other people's projects on GitHub is a little more complex than working directly in the project repository. 
+If you clone someone else's GitHub repository and make some changes, you'll find that you don't have permission to push those changes back to GitHub. The workflow for making contributions to other people's projects on GitHub is a little more complex than working directly in the project repository.
 
 It all starts with creating a *fork*.
 
@@ -58,7 +58,7 @@ At the prompt, enter the repository URL by selecting <kbd>Ctrl+V</kbd>. This act
 > [!NOTE]
 > The Command Palette provides access to many Git features with helpful prompts.  If you're curious about what you can accomplish from the Command Palette, open it by selecting <kbd>Ctrl+Shift+P</kbd>, then enter **git** to display a list containing dozens of commands.
 
-Next, the **Select Folder** window is displayed.  Choose the folder on your local hard drive where you want to store the files for the cloned repository.  
+Next, the **Select Folder** window is displayed.  Choose the folder on your local hard drive where you want to store the files for the cloned repository.
 
 Select the **Select Repository Location** button.
 
@@ -73,7 +73,7 @@ All the repository's code files are displayed in the Visual Studio Code **Explor
 
 The **Status Bar**, displayed at the bottom of the Visual Studio Code window, provides a host of functionality, depending on the extensions you've loaded and what you're working on.  The Status Bar features some handy Git information and functionality. It displays two parts:
 
-- On the left is the name of the current working branch.  If you modify any tracked files in the working branch, the Status Bar adds an asterisk symbol (*) next to the branch name.  
+- On the left is the name of the current working branch.  If you modify any tracked files in the working branch, the Status Bar adds an asterisk symbol (*) next to the branch name.
 
    ![Screenshot of the Status Bar with an arrow pointing to the asterisk next to the working branch name.](../media/2-exercise-clone-branch-03.png)
 
@@ -105,8 +105,8 @@ In the Explorer View, expand the *node/routes* folder and select the *index.js* 
 Update the code example to match the following code:
 
 ```javascript
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

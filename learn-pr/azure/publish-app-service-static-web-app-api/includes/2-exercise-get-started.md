@@ -2,7 +2,7 @@ Azure Static Web Apps publishes websites to a production environment by building
 
 ## Create a repository
 
-This tutorial makes it easy for you to create a new repository by using a GitHub template repository. A series of templates are available where each contains a starter app built with a different front-end framework.
+This tutorial makes it easy for you to create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
@@ -66,6 +66,11 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
    ```bash
    npm install
    ```
+> [!NOTE] 
+> If you get the error: Cannot find path - Make sure you have installed Nodejs from: https://nodejs.org/en/  You may need to do a **Custom setup** that include installing the, **Add to PATH** option.  
+
+:::image type="content" source="../media/2-custom-install-nodjs.png" alt-text="Image displaying the custom install of Nodjs options.":::
+   
 
 1. Finally, run the front-end client application.
 
@@ -111,7 +116,7 @@ Click the link to browse to your application.
 
 Browse to `http://localhost:4200`.
 
->
+:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Screenshot of browsing to your Angular web app":::
 
 ::: zone-end
 
@@ -119,11 +124,15 @@ Browse to `http://localhost:4200`.
 
 Browse to `http://localhost:3000`.
 
+:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Screenshot of browsing to your React web app":::
+
 ::: zone-end
 
 ::: zone pivot="svelte"
 
 Browse to `http://localhost:5000`.
+
+:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Screenshot of browsing to your Svelte web app":::
 
 ::: zone-end
 
@@ -131,11 +140,12 @@ Browse to `http://localhost:5000`.
 
 Browse to `http://localhost:8080`.
 
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Screenshot of browsing to your Vue web app":::
+
 ::: zone-end
 
-:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
-
-Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
+> [!NOTE]
+> In this module's exercises, you will deploy an app without an API. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
 
 Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 

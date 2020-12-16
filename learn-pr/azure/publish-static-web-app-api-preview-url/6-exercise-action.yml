@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-api-preview-url.6-exercise-action
+metadata:
+  title: Exercise - Publish the API with GitHub Actions
+  description: Use a GitHub Action to automatically publish your updated static site and API
+  ms.date: 09/25/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
+title: Exercise - Publish the API with GitHub Actions
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-exercise-action.md)]

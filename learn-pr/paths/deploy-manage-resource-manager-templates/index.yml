@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.deploy-manage-resource-manager-templates
+metadata:
+  description: Learn how ARM templates enable you to manage both basic and complex infrastructure deployments on Azure.
+  brand: azure
+  ms.date: 10/16/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy and manage resources in Azure by using ARM templates
+summary: |
+  Azure Resource Manager (ARM) templates enable you to define the infrastructure requirements for your deployments on Azure.
+
+  ARM templates use a declarative code syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable. 
+
+  Take this learning path to learn how to:
+
+  * Declaratively define the Azure resources you need within the structure of an ARM template.
+  * Create and validate your templates by using Visual Studio Code.
+  * Deploy your templates by using the Azure CLI, Azure PowerShell, and through GitHub Actions.
+  * Break down complex deployments into smaller and more reusable components by using nested templates and linked templates.
+  * Validate and preview your infrastructure changes by using what-if and the ARM template test toolkit.
+  * Add custom steps to your ARM templates by using deployment scripts.
+  * Use advanced constructs such as deployment order, conditional deployments, and secrets to manage complex deployments.
+prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required
+iconUrl: /learn/achievements/deploy-manage-resource-manager-templates.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.create-resource-manager-template-vs-code
+- learn.azure.resource-manager-template-reuse
+- learn.arm-template-test
+- learn.azure.deploy-templates-command-line-github-actions
+- learn.azure.extend-resource-manager-template-deployment-scripts
+- learn.azure.manage-deployments-advanced-arm-template-features
+trophy:
+  uid: learn.deploy-manage-resource-manager-templates.trophy

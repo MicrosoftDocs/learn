@@ -125,17 +125,9 @@ Run the code.  Again, you'll likely see different results than what is displayed
 7
 ```
 
-Since the `continue` statement changes the flow of execution and steps directly to the Boolean expression next to the `while` keyword, we could use this to break out of the loop by jumping over the rest of the code in the code block when `current` is `7`.
+As you can see, `continue` will skips execution of current iteration so that nothing greater than 7 is printed.
 
-```csharp
-if (current == 7) continue;
-```
-This is roughly the equivalent of the using the `break` statement.  As you may recall from other modules, the `break` statement can be used in iteration statements to exit an iteration statement.  We can achieve similar results to the line of code featuring the `continue` statement with the following line of code:
-
-```csharp
-if (current == 7) break;
-```
-While these are equivalent ideas expressed in two different ways, the `continue` statement feels more appropriate, since we've already delegated the responsibility of performing the Boolean expression that breaks out of the code block to the `do-while` statement.  The `break` would duplicate that logic.
+This is in contrast to the `break` keyword which we learned about earlier.  The `break` keyword stops executing the while loop entirely and the execution path moves on with the remainder of the code logic.
 
 ## Recap
 

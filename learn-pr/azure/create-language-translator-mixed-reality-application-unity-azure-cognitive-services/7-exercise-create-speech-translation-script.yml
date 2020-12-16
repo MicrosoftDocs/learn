@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.7-exercise-create-speech-translation-script
+title: Exercise - Create the speech translation script
+metadata:
+  title: Exercise - Create the speech translation script
+  description: Create the C# script in your Unity project that performs speech recognition and translation
+  ms.date: 10/06/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-create-speech-translation-script.md)]

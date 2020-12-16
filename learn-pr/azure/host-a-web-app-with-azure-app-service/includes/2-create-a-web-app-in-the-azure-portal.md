@@ -1,6 +1,6 @@
 ﻿In this unit, you'll learn how to create an Azure App Service web app using the Azure portal.
 
-## Why use the Azure portal?
+## Why use the Azure portal
 
 The first step in hosting your web application is to create a web app (an App Service app) inside your Azure subscription.
 
@@ -8,7 +8,7 @@ There are several ways you can create a web app. You can use the Azure portal, t
 
 The information presented below will discuss how to use the Azure portal to create a web app, and in the next exercise you will use this information to create a web app. For this module, we will demonstrate using the Azure portal because it's a graphical experience, which makes it a great learning tool. The portal helps you discover available features, add additional resources, and customize existing resources.
 
-## What is Azure App Service?
+## What is Azure App Service
 
 Azure App Service is a fully managed web application hosting platform. This platform as a service (PaaS) offered by Azure allows you to focus on designing and building your app while Azure takes care of the infrastructure to run and scale your applications.
 
@@ -16,13 +16,13 @@ Azure App Service is a fully managed web application hosting platform. This plat
 
 Using the Azure portal, you can easily add **deployment slots** to an App Service web app. For instance, you can create a **staging** deployment slot where you can push your code to test on Azure. Once you are happy with your code, you can easily **swap** the staging deployment slot with the production slot. You do all this with a few simple mouse clicks in the Azure portal.
 
-![Screenshot of the staging deployment slot to test the deployments](../media/2-deployment-slots.png)
+:::image type="content" source="../media/2-deployment-slots.png" alt-text="Screenshot of the staging deployment slot to test the deployments":::
 
 ### Continuous integration/deployment support
 
 The Azure portal provides out-of-the-box continuous integration and deployment with Azure DevOps, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the above sources and App Service will do the rest for you by automatically syncing your code and any future changes on the code into the web app. Furthermore, with Azure DevOps, you can define your own build and release process that compiles your source code, runs the tests, builds a release, and finally deploys the release into your web app every time you commit the code. All that happens implicitly without any need to intervene.
 
-![Screenshot to set up deployment option and choose source for the deployment source code](../media/2-continuous-integration.png)
+:::image type="content" source="../media/2-continuous-integration.png" alt-text="Screenshot to set up deployment option and choose source for the deployment source code":::
 
 ### Integrated Visual Studio publishing and FTP publishing
 

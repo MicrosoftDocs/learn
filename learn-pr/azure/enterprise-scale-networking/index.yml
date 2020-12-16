@@ -1,27 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.enterprise-scale-networking
 metadata:
-  title: Enterprise-scale architecture networking design principles
-  description: Enterprise-scale architecture networking design principles
+  title: Network design principles for enterprise-scale architecture
+  description: Network design principles for enterprise-scale architecture
   ms.date: 09/21/2020
   author: jknightly
   ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enterprise-scale architecture networking design principles
+title: Network design principles for enterprise-scale architecture
 summary: This training examines key design considerations and recommendations surrounding networking and connectivity to, from, and within Microsoft Azure for the enterprise customer.
 abstract: | 
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Choose the right network topology
   - Define the IP addressing for Azure resources
   - Determine DNS recommendations
   - Determine how to connect to Azure
-  - Determine how to connect to the public Internet
+  - Determine how to connect to the public internet
   - Determine how to connect to PaaS services
 prerequisites: | 
-  - Understanding of Azure networking concepts like ExpressRoute and Virtual Networks
-  - Understanding of networking concepts like IP Addressing, DNS and routing
-iconUrl: /learn/achievements/generic-badge.svg
+  - Understanding of Azure networking concepts like ExpressRoute and virtual networks
+  - Understanding of networking concepts like IP addressing, DNS, and routing
+iconUrl: /learn/achievements/enterprise-scale-networking.svg
 levels:
 - advanced
 roles:

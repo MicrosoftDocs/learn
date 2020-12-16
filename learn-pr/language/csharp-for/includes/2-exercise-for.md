@@ -38,7 +38,7 @@ There are six parts to `for` statement.
 - The `for` keyword
 - A set of parenthesis that defines the conditions of for iteration.  It contains three distinct parts, separated by the end of statement operator, a semi-colon.
 - The first part defines and initializes the iterator variable.  In this example: `int i = 0`.  The docs refer to this section as the **initializer**.
-- The second part defines the completion condition.  In this example: `i < 10`.  In other words, the runtime will continue to iterate over the code in the code block below the `if` statement while `i` is less than `10`.  Once `i` is greater or equal to `10`, the runtime will continue executing code after the `for` statement's code block.  The docs refer to this section as the **condition**.
+- The second part defines the completion condition.  In this example: `i < 10`.  In other words, the runtime will continue to iterate over the code in the code block below the `for` statement while `i` is less than `10`.  Once `i` is greater or equal to `10`, the runtime will continue executing code after the `for` statement's code block.  The docs refer to this section as the **condition**.
 - The third part defines the action to take after each iteration.  In this case, after each iteration, `i++` will increment the value of `i` by 1.  The docs refer to this section as the **iterator**.
 - Finally, the code block.  This is the code that will be executed for each iteration.  Notice that the value of `i` is referenced inside of the code block.  The docs refer to this section as the **body**.
 

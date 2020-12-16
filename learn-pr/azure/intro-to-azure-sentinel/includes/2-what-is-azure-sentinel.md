@@ -2,36 +2,40 @@ Let's start with a few definitions and a look at *security information and event
 
 ## What is security incident and event management (SIEM)?
 
-A SIEM is a tool that enables organizations to collect, analyze, and perform security operations on their computer systems, whether those be hardware appliances, applications, or both.
+A SIEM system is a tool that an organization uses to collect, analyze, and perform security operations on its computer systems. Those systems can be hardware appliances, applications, or both.
 
-In its simplest form, a SIEM will enable you to collect logs, query them, do some form of correlation or anomaly detection and create alerts and incidents based on findings.
+In its simplest form, a SIEM system enables you to:
 
-The functionality that a SIEM may offer could include:
+- Collect and query logs.
+- Do some form of correlation or anomaly detection.
+- Create alerts and incidents based on your findings.
 
-- **Log Management**: The ability to collect, store, and query the log data from resources within our environment.
+A SIEM system might offer functionality such as:
 
-- **Alerting**: Proactively looking within the log data for potential security incidents and Anomalies.
+- **Log management**: The ability to collect, store, and query the log data from resources within your environment.
 
-- **Visualization**: Graphs and Dashboards that enable us to gain visual insights into our log data.
+- **Alerting**: A proactive look inside the log data for potential security incidents and anomalies.
 
-- **Incident Management**: Creating, updating, assigning, and investigating incidents that have been identified.
+- **Visualization**: Graphs and dashboards that provide visual insights into your log data.
 
-- **Querying Data**: Similar to Log Management, there should be a rich query language to enable us to query and understand our data.
+- **Incident management**: The ability to create, update, assign, and investigate incidents that have been identified.
+
+- **Querying data**: A rich query language, similar to that for log management, that you can use to query and understand your data.
 
 ## What is Azure Sentinel?
 
-Azure Sentinel is a cloud-native SIEM that enables the security operations team to:
+Azure Sentinel is a cloud-native SIEM system that a security operations team can use to:
 
 - Get security insights across the enterprise by collecting data from virtually any source.
-- Detect and investigate threats quickly with built-in machine learning and Microsoft threat intelligence.
-- Automate threat responses with playbooks and integration of Azure Logic Apps.
+- Detect and investigate threats quickly by using built-in machine learning and Microsoft threat intelligence.
+- Automate threat responses by using playbooks and by integrating Azure Logic Apps.
 
-Unlike traditional SIEM solutions, you don't need to install any servers either on-premises or in the cloud to run the solution. Azure Sentinel is a service you deploy in Azure. You can get up and running with Sentinel in just a few minutes in the Azure portal.
+Unlike with traditional SIEM solutions, to run Azure Sentinel, you don't need to install any servers either on-premises or in the cloud. Azure Sentinel is a service that you deploy in Azure. You can get up and running with Sentinel in just a few minutes in the Azure portal.
 
-Azure Sentinel is tightly integrated with other cloud services, enabling you to not only ingest logs at the click of a button, but to leverage other cloud services natively such as authorization and automation.
+Azure Sentinel is tightly integrated with other cloud services. Not only can you quickly ingest logs, but you can also use other cloud services natively (for example, authorization and automation).
 
-Azure Sentinel is designed to help you enable end to end security operations including collection, detection, investigation, and response.
+Azure Sentinel helps you enable end-to-end security operations including collection, detection, investigation, and response:
 
-:::image type="content" source="../media/02-end-to-end.svg" alt-text="Diagram showing the end to end functionality of Azure Sentinel":::
+:::image type="content" source="../media/02-end-to-end.svg" alt-text="This diagram shows the end-to-end functionality of Azure Sentinel.":::
 
-Let's take a look at the key components that make up Azure Sentinel.
+Let's take a look at the key components in Azure Sentinel.

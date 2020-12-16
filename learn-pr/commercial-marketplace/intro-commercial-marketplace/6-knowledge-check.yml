@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: 'The Microsoft commercial marketplace is accessible through'
     choices:
-    - content: 'The web storefronts, Microsoft AppSource and Azure Marketplace'
+    - content: 'The online stores, Microsoft AppSource and Azure Marketplace'
       isCorrect: false
     - content: 'The Microsoft network of resellers'
       isCorrect: false
@@ -23,13 +23,13 @@ quiz:
       isCorrect: false
     - content: 'All the above'
       isCorrect: true  
-  - content: 'One of the ways to access commercial marketplace products and services is through the web storefronts, Microsoft AppSource and Azure Marketplace. Which of the following describes the difference between the two storefronts'
+  - content: 'One of the ways to access commercial marketplace products and services is through the online stores, Microsoft AppSource and Azure Marketplace. Which of the following describes the difference between the two online stores?'
     choices: 
     - content: 'Microsoft AppSource contains consulting services offered by Microsoft partners, while Azure Marketplace only contains apps'
       isCorrect: false
-    - content: 'Microsoft AppSource is geared toward business users, while Azure Marketplace is geared toward IT professionals and developers'
+    - content: 'Microsoft AppSource contains business solutions, while Azure Marketplace contains IT software and services'
       isCorrect: true
-    - content: 'Microsoft AppSource is geared toward IT professionals and developers, while Azure Marketplace is geared toward business users'
+    - content: 'Microsoft AppSource contains IT software and services, while Azure Marketplace contains business solutions'
       isCorrect: false
     - content: 'None of the above'
       isCorrect: false  

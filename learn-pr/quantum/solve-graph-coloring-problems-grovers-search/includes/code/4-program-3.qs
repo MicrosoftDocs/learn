@@ -9,7 +9,7 @@
     operation MarkColorEquality(c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
         within {
             // Iterate over pairs of qubits in matching positions in c0 and c1.
-            for ((q0, q1) in Zip(c0, c1)) {
+            for ((q0, q1) in Zipped(c0, c1)) {
                 // Compute XOR of bits q0 and q1 in place (storing it in q1).
                 CNOT(q0, q1);
             }

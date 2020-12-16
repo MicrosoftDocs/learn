@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.10-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 10/20/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "If you have a dataframe called 'samples', what would 'samples.head()' output?"
+    choices:
+    - content: "The top row of the dataframe"
+      isCorrect: false
+      explanation: "While technically true, the 'head()' function returns more than the top row."
+    - content: "Ten random rows from the dataframe"
+      isCorrect: false
+      explanation: "The 'head()' function returns the top rows from a dataframe, not a random set."
+    - content: "The column names of the dataframe"
+      isCorrect: false
+      explanation: "While technically true, the 'head()' function returns more than the top row."
+    - content: "The top five rows of the dataframe"
+      isCorrect: true
+      explanation: "Correct, and if you add a number (for example, 'head(x)'') it would print the top x rows."
+  - content: "Pandas dataframes and series are two names for the same kind of data type."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Dataframes represent 2D data, such as a table or an Excel worksheet, and series represent 1D data, such as a list."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct. Dataframes and series are different. Dataframes represent 2D data, such as a table or an Excel worksheet, and series represent 1D data, such as a list."
+  - content: "What is the total weight of the samples that were brought back by the six Apollo missions that landed on the Moon?"
+    choices:
+    - content: "Over 63 lb, or 28 kg"
+      isCorrect: false
+      explanation: "Incorrect. Across the 2,229 samples, a lot more weight was returned."
+    - content: "Over 136 lb, or 62 kg"
+      isCorrect: false
+      explanation: "Incorrect. This was the average weight of the samples brought back per Apollo mission."
+    - content: "Over 490 lb, or 92 kg"
+      isCorrect: false
+      explanation: "Incorrect. This is how much weight we estimated the three Artemis missions could bring back in total."
+    - content: "Over 825 lb, or 375 kg"
+      isCorrect: true
+      explanation: "Correct. Across 2,229 samples, over 800 lb (375 kg) of sample was returned to Earth."

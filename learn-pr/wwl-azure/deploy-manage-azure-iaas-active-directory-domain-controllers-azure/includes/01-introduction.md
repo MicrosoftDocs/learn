@@ -10,7 +10,7 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 
 With more services available online and in the cloud, organizations are finding that they also need to define and manage cloud identities. Contoso can use cloud identities to authenticate and authorize their users when they try to access company resources.
 
-IT staff at Contoso are considering deploying domain controllers on Windows Server VMs in Azure IaaS as a means to extend authentication and identity from on-premises and into the cloud. You must determine if this is the ideal solution. Kepp in mind that Contoso could also implement Azure Active Directory (Azure AD) or Azure Active Directory Domain Services (Azure AD DS).
+IT staff at Contoso are considering deploying domain controllers on Windows Server VMs in Azure IaaS as a means to extend authentication and identity from on-premises and into the cloud. You must determine if this is the ideal solution. Keep in mind that Contoso could also implement Azure Active Directory (Azure AD) or Azure Active Directory Domain Services (Azure AD DS).
 
 In this module, you'll learn how to select an identity services option by using AD DS in Azure. You'll deploy and configure AD DS domain controllers in Azure. You'll also learn how to install a replica domain controller in Azure, and how to deploy a new AD DS forest on an Azure VNet.
 

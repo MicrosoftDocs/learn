@@ -16,13 +16,13 @@ quiz:
  
   - content: "Which of the following approaches is the most convenient way to get the URI and master key for your account into your project?"
     choices:
-    - content: "The client will infer the connection string when it connects to the server"
+    - content: "The client will infer the connection string when it connects to the server."
       isCorrect: false
       explanation: "Specify the access credentials for your Azure Cosmos DB account."
-    - content: "I can get it from the Azure portal"
+    - content: "I can get it from the Azure portal."
       isCorrect: true
       explanation: "It's trivial to find the URI and key on the **Keys** pane of the Azure portal."
-    - content: "I can use the Azure CLI"
+    - content: "I can use the Azure CLI."
       isCorrect: false
       explanation: "Although this approach is a good choice, especially because Visual Studio Code has a built-in terminal, it does demand knowledge of the required commands. There is a more convenient alternative."
  
@@ -40,12 +40,12 @@ quiz:
  
   - content: "When you're working with the Azure Cosmos DB Java SDK `User` class, you use a NoSQL model. What's the best way to change the `firstName` field of a person document from `Ann` to `Fran`?"
     choices:
-    - content: "Call `upsertItem` with `FirstName=Fran`"
+    - content: "Call `upsertItem` with `FirstName=Fran`."
       isCorrect: false
       explanation: "Although the SDK does have an `upsertItem` method, there's currently no patch API to update specific fields."
-    - content: "Call `upsertItem` with an updated `Person` object"
+    - content: "Call `upsertItem` with an updated `Person` object."
       isCorrect: false
       explanation: "Although this way would work, it isn't the minimum necessary access to meet our requirements. Upsert operations will replace a document if its key already exists or add a new document if not. We don't want to add a new one, so using this method risks introducing subtle, hard-to-track bugs."
-    - content: "Call `replaceItem` with an updated `Person` object"
+    - content: "Call `replaceItem` with an updated `Person` object."
       isCorrect: true
       explanation: "`replaceItem` will replace the existing document with the new one. In this case, we'd intend the old and new to be the same other than `firstName`."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-introduction.when-to-use-dotnet
+title: When to use .NET
+metadata:
+  title: When to use .NET
+  description: Determine when it makes sense to .NET. Understand its strengths and how developers use it.
+  ms.date: 10/12/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+azureSandbox: false
+content: |
+  [!include[](includes/5-when-to-use-dotnet.md)]

@@ -8,7 +8,7 @@ The blade for SQL Server 2019 on Windows Server 2019 in the Azure Marketplace is
 
 :::image type="content" source="../media/module-22-plan-implement-final-06.png" alt-text="Azure portal SQL Server VM Creation":::
 
-The disadvantage of using the portal to create Azure resources is that it is not an easily repeatable process. However, is it easy to get started with the portal, and using the portal a new administrator can quickly get up and running.
+The disadvantage of using the portal to create Azure resources is that it is not an easily repeatable process. However, it is easy to get started with the portal, and a new administrator can quickly get up and running by using the portal.
 
 ## Storage considerations
 

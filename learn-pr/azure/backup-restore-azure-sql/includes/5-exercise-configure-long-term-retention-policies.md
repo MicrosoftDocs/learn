@@ -13,7 +13,7 @@ Here, you'll use the Azure portal to set up a policy and then check it in PowerS
 
 Let's start by configuring the 5-year retention by using the portal.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **ERPServer-NNNN**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **erpserver-NNNN**.
 
 1. Under **Settings**, select **Manage Backups**.
 
@@ -46,7 +46,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         | Get-AzSqlDatabaseLongTermRetentionPolicy
     ```
 
-    This step will output the retention policies for all databases on the server. In this case, you should see one policy for the **master** database, and one policy for the **sql-erp-db** database.
+    This step will output the retention policies for all databases on the server.
 
 1. Run this command to view the long-term retention policy for the **sql-erp-db** database.
 

@@ -1,22 +1,22 @@
 In this module, you'll learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
 
-If your organization is a government department or agency, or you need to deploy to regions of China, you'll also learn about some additional considerations that you need to make that don't apply to other Azure users.
+If your organization is a government department or agency, or you need to deploy to regions of China, you'll also learn about some considerations that don't apply to other Azure users.
 
-In general, _compliance_ means to adhere to some law, standard, or set of guidelines. _Regulatory compliance_ refers to the discipline and process of ensuring that a company follows the laws that governing bodies enforce.
+In general, _compliance_ means to adhere to a law, standard, or set of guidelines. _Regulatory compliance_ refers to the discipline and process of ensuring that a company follows the laws that governing bodies enforce.
 
 ## Meet Tailwind Traders
 
 [!include[](../../shared/includes/tailwind-traders-overview.md)]
 
-## How will Tailwind Traders protect their data in the cloud and stay compliant?
+## How will Tailwind Traders protect its data in the cloud and stay compliant?
 
-Tailwind Traders is planning their migration to the cloud. They're used to having full control of all of their application data, which is stored on servers that they manage in their datacenter.
+Tailwind Traders is planning its migration to the cloud. It's used to having full control of all of its application data, which is stored on servers that it manages in its datacenter.
 
-Knowing that moving an application to the cloud means that data is now outside of their own walls, and understanding that the cloud provider has access to the server hardware and infrastructure, how is the privacy of their application data protected?
+Tailwind Traders knows that moving an application to the cloud means that data is now outside of its own walls. The company also understands that the cloud provider has access to the server hardware and infrastructure. How is the privacy of its application data protected?
 
-Tailwind Traders must also adhere to multiple regulatory and compliance frameworks. For example, they must follow certain rules to ensure that they properly handle credit card data. Although they'll still need to ensure that their applications comply with applicable regulations and standards, how does infrastructure on Azure already adhere to these same standards?
+Tailwind Traders must also adhere to multiple regulatory and compliance frameworks. For example, it must follow certain rules to ensure that it properly handles credit card data. It will still need to ensure that its applications comply with applicable regulations and standards. How does infrastructure on Azure already adhere to these same standards?
 
-To answer theses questions, you'll start by learning about the types of compliance offerings that are available on Azure.
+To answer these questions, you'll start by learning about the types of compliance offerings that are available on Azure.
 
 ## Learning objectives
 
@@ -29,5 +29,5 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- You should be familiar with basic computing concepts and terminology
-- You should be familiar with cloud computing is helpful, but isn't necessary
+- You should be familiar with basic computing concepts and terminology.
+- Familiarity with cloud computing is helpful but isn't necessary.

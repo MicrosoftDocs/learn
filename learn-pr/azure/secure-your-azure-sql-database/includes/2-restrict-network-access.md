@@ -99,7 +99,7 @@ Since our VM has outbound internet access, we can use the **Allow access to Azur
 
 1. In the SQL server panel, in the **Security** section in the left menu, select **Firewalls and virtual networks**.
 
-1. Set **Allow access to Azure services** to **ON** and click **Save**.
+1. Set **Allow access to Azure services** to **YES** and click **Save**.
 
 1. Back in your SSH session, let's try to connect to your database again.
 

@@ -13,18 +13,4 @@ title: Azure Backup features and scenarios
 durationInMinutes: 5
 content: |
   [!include[](includes/2-azure-backup-features-scenarios.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "Which is the best way to back up an entire Azure virtual machine that's running Linux?"
-    choices:
-    - content: Use the Azure Backup extension
-      isCorrect: true
-      explanation: Azure Backup works on Azure virtual machines without the need to install an agent. It meets the goal of a disk-level backup.
-    - content: Use the MABS or DPM agent
-      isCorrect: false
-      explanation: The MABS or DPM agents can be used in this scenario, but the agents would need be installed and configured. That would require more effort to achieve the same goal as the Azure Backup agent. 
-    - content: Use the MARS agent
-      isCorrect: false
-      explanation: The MARS agent doesn't support Linux. 
   

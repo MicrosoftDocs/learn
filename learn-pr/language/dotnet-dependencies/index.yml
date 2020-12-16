@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dotnet-dependencies
+metadata:
+  title: Create a new .NET project and work with package dependencies 
+  description: Create a .NET project and learn to add packages and manage package dependencies in your project. Use the .NET Core CLI and NuGet registry to add libraries and tools to your C# applications through Visual Studio Code.
+  ms.date: 10/28/2020
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a new .NET project and work with dependencies  
+summary: Use dependencies from the NuGet registry to develop .NET applications faster. Learn how to manage dependencies for your project.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Initialize .NET projects
+  - Add packages to and remove packages from a .NET project
+  - Manage your package dependencies and update them in a predictable way
+iconUrl: /learn/achievements/dotnet-dependencies.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+prerequisites: |
+  - Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+  - Experience with using the command line
+units:
+- learn.dotnet-dependencies.1-introduction
+- learn.dotnet-dependencies.2-dependency
+- learn.dotnet-dependencies.3-exercise-dependency
+- learn.dotnet-dependencies.4-dependency-management
+- learn.dotnet-dependencies.5-exercise-dependency-management
+- learn.dotnet-dependencies.6-knowledge-check
+- learn.dotnet-dependencies.7-summary
+
+badge:
+  uid: learn.dotnet-dependencies.badge

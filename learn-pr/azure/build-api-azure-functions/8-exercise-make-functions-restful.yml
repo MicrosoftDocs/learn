@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-api-azure-functions.6-exercise-make-functions-restful
+title: Exercise - Make functions RESTful
+metadata:
+  title: Exercise - Make functions RESTful
+  description: Exercise - Make functions RESTful
+  ms.date: 12/04/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-exercise-make-functions-restful.md)]

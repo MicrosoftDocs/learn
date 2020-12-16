@@ -15,6 +15,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 3. On the **Custom deployment** page, provide the following information:
 
     | Name  | Description |
+    |||
     | --- | --- |
     | **Subscription** | Select your Azure subscription. |
     | **Resource Group** | Select **Create new** and provide a name for the resource group, for example **azure-sentinel-rg**. |

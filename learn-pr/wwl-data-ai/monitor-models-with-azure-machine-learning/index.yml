@@ -2,8 +2,8 @@
 uid: learn.wwl.monitor-models-with-azure-machine-learning
 metadata:
   title: Monitor models with Azure Machine Learning
-  description: "After a machine learning model has been deployed into production, it's important to understand how it is being used by capturing and viewing telemetry."
-  ms.date: 07/16/2020
+  description: "Monitor models with Azure Machine Learning"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -20,7 +20,6 @@ levels:
 - intermediate
 roles:
 - data-scientist
-- student
 products:
 - azure
 - azure-machine-learning

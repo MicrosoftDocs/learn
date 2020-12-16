@@ -1,22 +1,24 @@
 ### YamlMime:Module
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 metadata:
-  title: "Develop secure IoT solutions for Azure Sphere with IoT Central"
-  description: "University of Oxford"
+  title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
+  description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Central"
   ms.date: 06/26/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: "Develop secure IoT Solutions for Azure Sphere with IoT Central"
-summary: "Deploy an Azure Sphere application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Central, and send telemetry data from the device to the cloud. You'll control cloud to device communications and undertake actions as needed."
+title: "Develop secure IoT solutions for Azure Sphere, Azure RTOS and Azure IoT Central"
+summary: "Deploy an Azure Sphere application to monitor ambient conditions for a laboratory. The application will monitor the room environment, connect to Azure IoT Central, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
 abstract: | 
   In this module, you will:
-  - Create an IoT Central Application
-  - Configure your Azure Sphere application to IoT Central
+  - Create an Azure IoT Central application
+  - Configure your Azure Sphere application to Azure IoT Central
   - Build and deploy the Azure Sphere application
-  - Display the environment telemetry in the IoT Central Dashboard
-  - Control an Azure Sphere application using Azure IoT Central properties and commands
+  - Display environment telemetry in the Azure IoT Central dashboard
+  - Control an Azure Sphere application by using Azure IoT Central properties and commands
+  - Deploy a new more sensitive room sensor onto an Azure Sphere real-time core running Azure RTOS
+  - Read the data from the new sensor running on the real-time core and send the data to IoT Central
      
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 
@@ -25,7 +27,7 @@ prerequisites: |
   - Visual Studio Code installed in your computer
   - Ability to use Visual Studio Code
   - Git installed in your computer
-  - Ability to use Git/Github
+  - Ability to use Git/GitHub
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /learn/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
@@ -41,15 +43,22 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.introduction
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.design-secure-iot-solution
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.gpio-hardware-interfaces
-- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.event-driven-programming
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-setup-azure-sphere
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-setup-azure-sphere
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-connect-monitor-iot-central
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-connect-room-environment-monitor
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-azure-sphere-security
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-azure-sphere-security
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-deploy-your-first-application
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-deploy-your-first-application
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-set-virtual-thermostat-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-set-room-virtual-thermostat-azure-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-remote-reboot-device
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-remote-reboot-device
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-azure-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-azure-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-partnering-with-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.summary
 

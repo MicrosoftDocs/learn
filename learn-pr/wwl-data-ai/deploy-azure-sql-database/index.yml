@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-azure-sql-database
 metadata:
   title: Deploy Azure SQL Database
   description: "Provision and deploy Azure SQL Database and SQL Server Managed Instances. Select the appropriate options when performing a migration to the SQL PaaS platform."
-  ms.date: 09/25/2020
+  ms.date: 10/12/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

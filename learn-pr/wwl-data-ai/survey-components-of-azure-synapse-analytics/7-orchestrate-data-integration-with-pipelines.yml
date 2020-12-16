@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.survey-components-of-azure-synapse-analytics.orchestrate-data-integration-with-pipelines
+title: Orchestrate data integration with Azure Synapse pipelines
+metadata:
+  title: Orchestrate data integration with Azure Synapse pipelines
+  description: "Orchestrate data integration with Azure Synapse pipelines"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-orchestrate-data-integration-with-pipelines.md)]
