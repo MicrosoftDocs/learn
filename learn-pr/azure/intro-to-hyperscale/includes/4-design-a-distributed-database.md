@@ -8,7 +8,7 @@ Our contactless payment app will mostly have OLTP workloads - account-to-account
 
 ### What are OLAP workloads?
 
-Workloads that generate reports can involve **large amounts of data**, but have a **low numbers of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards, such as web and mobile analytics or anomaly and fraud detection.
+Workloads that generate reports can involve **large amounts of data**, but have a **low number of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards, such as web and mobile analytics or anomaly and fraud detection.
 
 In our scenario, when customer and merchant queries are run on the contactless payment app, these will be OLAP workloads. An example might be a status dashboard, showing if services are running or undergoing maintenance.
 
