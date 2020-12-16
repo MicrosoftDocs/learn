@@ -50,7 +50,7 @@ Once the token is generated, leave that tab open until the end of this section.
 1. Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=java-11899-judubois).
 1. Go to the overview page of your Azure Spring Cloud server and select "Config server" in the menu.
 1. Configure the repository we previously created:
-    1. 1. Add the repository URL, for example `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config.git` or `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config`.
+    1. Add the repository URL, for example `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config.git` or `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config`.
 
      > [!TIP]
      > Make sure you include the `.git` ending in the URL, or you use the qualified URI.
