@@ -12,7 +12,7 @@ Azure Database for PostgreSQL Hyperscale, created by the Citus Data team, combin
  :::column-end:::
 :::column span="2":::
 
-:::image type="content" source="../media/1-logo.png" alt-text="Postgres logos.":::
+![Postgres logos.](../media/1-logo.png)
 
 :::column-end:::
 :::row-end:::

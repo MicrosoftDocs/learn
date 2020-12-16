@@ -67,7 +67,7 @@ Our contactless payment app will also need customer facing dashboards. Merchants
 | Multi-Tenant Applications                                 | Real-Time Applications                                |
 |-----------------------------------------------------------|-------------------------------------------------------|
 | Sometimes dozens or hundreds of tables in schema          | Small number of tables                                |
-| Queries relating to one tenant (company/store) at a time | Relatively simple analytics queries with aggregations |
+| Queries relating to one tenant (company/store) at a time  | Relatively simple analytics queries with aggregations |
 | OLTP workloads for serving web clients                    | High ingest volume of mostly immutable data           |
 | OLAP workloads that serve per-tenant analytical queries   | Often centering around large table of events            |
 

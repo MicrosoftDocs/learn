@@ -13,7 +13,7 @@ After a few seconds, a black Cloud Shell should appear
 
 :::image type="content" source="../media/5b-shell.png" alt-text="Azure Cloud Shell.":::
 
-4. To make things easier, we'll save the name of the server group in the cloud shell. Copy the code below, and replace the `{SERVER-NAME}` with the name you set for the server in the previous exercise.
+4. To make things easier, we'll save the name of the server group in the Cloud Shell. Copy the code below, and replace the `{SERVER-NAME}` with the name you set for the server in the previous exercise.
 
 ```bash
 SERVERNAME={SERVER-NAME}
@@ -23,7 +23,7 @@ SERVERNAME={SERVER-NAME}
 
 Let's now use the psql command-line utility to connect to the Hyperscale server group.
 
-5. Select the Copy button on the code block to copy the code, and paste it into the cloud shell.
+5. Select the Copy button on the code block to copy the code, and paste it into the Cloud Shell.
 
 ```psql
    psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"

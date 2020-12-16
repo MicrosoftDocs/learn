@@ -6,7 +6,7 @@ A node is an instance of a database server. Hyperscale creates and coordinates n
 
 By leveraging multiple nodes, instead of a single node, you can scale out, otherwise known as horizontal scaling.
 
-:::image type="content" source="../media/2a-nodes.png" alt-text="Hyperscale nodes.":::
+![Hyperscale nodes.](../media/2a-nodes.png)
 
 We'll start with three nodes for our payment app. Later, we'll horizontally scale by creating extra nodes.
 
@@ -25,7 +25,7 @@ Every server group has a coordinator node and multiple worker nodes. The coordin
 3. Each node queries the table rows it holds within its shard
 4. The coordinator node accumulates their results
 
-:::image type="content" source="../media/2c-distribute.gif" alt-text="Hyperscale distribute queries.":::
+![Hyperscale distribute queries.](../media/2c-distribute.gif)
 
 Applications can't connect directly to worker nodes. Instead, nodes working together allows extremely large databases to be stored and queried with a level of performance that is impossible to achieve on a single server.
 
