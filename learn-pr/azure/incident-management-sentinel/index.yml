@@ -36,4 +36,4 @@ units:
 - learn.azure.incident-management-sentinel.6-exercise-investigate-incident
 - learn.azure.incident-management-sentinel.7-summary
 badge:
-  uid: learn.learn.azure.incident-management-sentinel
+  uid: learn.azure.incident-management-sentinel
