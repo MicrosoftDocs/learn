@@ -110,7 +110,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > [!div class="centered"]
 > ![The penguin-data dataset, a Select Columns in Dataset module, a Clean Missing Data module, and a Normalize Data module](../media/data-preparation.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **penguin-cluster-training** on your compute cluster.
+2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-penguin-training** on your compute cluster.
 3. Wait for the run to finish. This may take 5 minutes or more. When the run has completed, the modules should look like this:
 
 > [!div class="centered"]

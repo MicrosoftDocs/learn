@@ -45,7 +45,7 @@ dtypes: float64(13), int64(1)
 memory usage: 2.7 KB
 ```
 
-Twenty-four rows include players who scored at least 1,600 points. 
+Twenty-three rows include players who scored at least 1,600 points. 
 
 Continue to narrow down the players who are likely to be part of Tune Squad: 
 
