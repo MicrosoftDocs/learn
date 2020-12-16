@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.5-use-azure-cache-for-redis-with-spring-data-redis
+uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.4-use-azure-cache-for-redis-with-spring-data-redis
 title: TODO
 metadata:
   title: TODO
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-use-azure-cache-for-redis-with-spring-data-redis.md)]
+  [!include[](includes/4-use-azure-cache-for-redis-with-spring-data-redis.md)]

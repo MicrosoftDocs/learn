@@ -31,8 +31,8 @@ units:
 - learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.1-introduction
 - learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.2-setup-azure-cache-for-redis
 - learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.3-what-is-azure-cache-for-redis
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.4-configure-an-azure-cache-for-redis-instance
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.5-use-azure-cache-for-redis-with-spring-data-redis
+- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.4-use-azure-cache-for-redis-with-spring-data-redis
+- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.5-configure-an-azure-cache-for-redis-instance
 - learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.6-use-spring-session-to-store-data-in-redis
 - learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.7-deploy-a-spring-boot-and-redis-application-to-azure-app-service
 - learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.8-knowledge-check
