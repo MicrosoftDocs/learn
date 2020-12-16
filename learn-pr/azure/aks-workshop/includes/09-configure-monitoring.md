@@ -107,7 +107,7 @@ The RBAC Role and ClusterRole objects allow you to set up rules that represent a
 
 We use a role binding to grant the permissions defined in a role to a user or set of users. A role binding contains the list of users, groups, or service accounts, and a reference to the role being granted. Like the Role and ClusterRole, a RoleBinding grants permission within a specific namespace and the ClusterRoleBinding grants access to the cluster. You'll use a ClusterRoleBinding bind your ClusterRole to all the namespaces in your cluster.
 
-In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that aren't limited to a specific namespace. You configure *CusterRoles* to define permissions on namespaced resources given within individual namespaces or across all namespaces. *CusterRoles* are also used to describe permissions on cluster-scoped resources. You then use the *ClusterRoleBindings* to grant permissions across a whole cluster.
+In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that aren't limited to a specific namespace. You configure *ClusterRoles* to define permissions on namespaced resources given within individual namespaces or across all namespaces. *ClusterRoles* are also used to describe permissions on cluster-scoped resources. You then use the *ClusterRoleBindings* to grant permissions across a whole cluster.
 
 1. Create a file called `logreader-rbac.yaml` by using the integrated editor in Cloud Shell.
 

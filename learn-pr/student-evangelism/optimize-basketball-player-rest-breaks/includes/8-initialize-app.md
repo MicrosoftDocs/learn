@@ -39,7 +39,7 @@ We also need to remove the first line, as it contains header information which w
     // Split the data by newline into an array.
     var allPlayerStatLines = allPlayerStats.split(/\r\n|\n/);
 
-    // remove the header line (first line)
+    // Remove the header line (first line)
     allPlayerStatLines.shift();
 ```
 
@@ -54,7 +54,7 @@ Looking at the CSV file, we can see that, for example, Sylvester appears on line
 What we will do is read each line from the file. We'll get the name of the player, and look in the map to see if the player exists. If they don't (it's the first time we've seen the player in the data) we will add them. Then we'll get the PER value. Knowing the entries are in order of quarter, we can add each value knowing they're in the correct order.
 
 ```javascript
-    // Loop through the 15 players and create a map entry of player name to player PER
+    // Loop through the rows and create a map entry of player name to a list of player PER
     for (var statLine of allPlayerStatLines) {
         // Get all individual stat values
         var stats = statLine.split(',');
@@ -64,7 +64,7 @@ What we will do is read each line from the file. We'll get the name of the playe
         // The second column has the player name
         var playerName = stats[1];
 
-        // check if player exists in map
+        // Check if player exists in map
         if (!playerMap.has(playerName)) {
             // First time we see the player; Add them in!
             playerMap.set(playerName, []);
@@ -93,7 +93,7 @@ function processPlayers(allPlayerStats) {
     // Split the data by newline into an array.
     var allPlayerStatLines = allPlayerStats.split(/\r\n|\n/);
 
-    // remove the header line (first line)
+    // Remove the header line (first line)
     allPlayerStatLines.shift();
 
     // Loop through the 15 players and create a map entry of player name to player PER
