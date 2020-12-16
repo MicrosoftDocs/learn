@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb
 metadata:
   title: Migrate on-premises MongoDB databases to Cosmos DB
   description: "Migrate on-premises MongoDB databases to Cosmos DB"
-  ms.date: 12/15/2020
+  ms.date: 12/16/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -32,8 +32,8 @@ units:
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-migration-planning
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-data-migration
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-application-migration
-- learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.knowledge-check
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.6-exercise-migrate-mongodb-workloads-cosmosdb
+- learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.knowledge-check
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.summary
 badge:
   uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.badge
