@@ -5,7 +5,7 @@ As a proof-of-concept for the company's applications, you decide to try running 
 In this exercise, you'll pull an image from Docker Hub and run it. You'll examine the local state of Docker to help understand the elements that are deployed. Finally, you'll remove the container and image from your computer.
 
 > [!IMPORTANT]
-> This exercise takes place on your computer, not in Azure. You need a local installation of Docker to proceed with the exercise.
+> This exercise takes place on your computer, not in Azure. You need a local installation of Docker to proceed with the exercise. Download: https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 
 ## Pull and run a sample application from Docker Hub
 
