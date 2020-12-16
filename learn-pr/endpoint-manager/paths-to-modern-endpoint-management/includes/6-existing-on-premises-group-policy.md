@@ -1,4 +1,4 @@
-In the cloud, Mobile Device Management (MDM) providers, such as Microsoft Intune, manage settings and features on devices. When using Intune, group policies objects (GPOs) aren't used. Intune provides device configuration profiles, which replace on-premises GPOs.
+In the cloud, Mobile Device Management (MDM) providers, such as Microsoft Intune, manage settings and features on devices. When using Intune, group policies objects (GPOs) aren't used. Intune provides device configuration profiles, which replace GPOs.
 
 ## Device configuration profiles
 
@@ -15,7 +15,7 @@ As part of a MDM solution, you can use these configuration profiles to complete 
 
 ## Group policy objects
 
-Group policy objects (GPOs) are used on-premises to configure settings on personal computers, and other on-premises devices. In device management, GPOs help control security and features in the Windows OS, Internet Explorer, Office apps, and more. Group policy provides the capability to manage a large number of Active Directory Domain Services (AD DS) computer and user objects through a centralized, one-to-many model. Group Policy settings are contained in a group policy object and linked to one or more AD DS service containers—sites, domains, and organizational units (OUs).  
+Group policy objects (GPOs) are primarily used on-premises to configure settings on Windows computers, but also can include remote Windows devices. In device management, GPOs help control security and features in the Windows OS, Internet Explorer, Office apps, and more. Group policy provides the capability to manage a large number of Active Directory Domain Services (AD DS) computer and user objects through a centralized, one-to-many model. Group Policy settings are contained in a group policy object and linked to one or more AD DS service containers—sites, domains, and organizational units (OUs). Note that devices do not have to be domain-joined to apply GPOs.
 
  Some organizations have Group Policy settings that are restrictive and could cause problems during operating system deployments. For example, the following group policy settings can interrupt an automated logon process:  
 - Autologon restrictions
@@ -27,7 +27,7 @@ If your organization uses GPOs and you want to move some workloads to Microsoft 
 
 ## Group policy analytics
 
-Many organizations are looking at cloud solutions to support the growing remote workforce. **Group Policy analytics** is a tool and feature in Microsoft Endpoint Manager that analyzes your on-premises GPOs. It helps you determine how your GPOs translate in the cloud. The output shows which settings are supported in MDM providers, including Microsoft Intune. It also shows any deprecated settings, or settings not available to MDM providers.
+Many organizations are looking at cloud solutions to support the growing remote workforce. **Group Policy analytics** is a tool and feature in Microsoft Endpoint Manager that analyzes your GPOs. It helps you determine how your GPOs translate in the cloud. The output shows which settings are supported in MDM providers, including Microsoft Intune. It also shows any deprecated settings, or settings not available to MDM providers.
 
 ## Next steps
 

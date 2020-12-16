@@ -33,8 +33,7 @@ units:
 - learn.paths-to-modern-endpoint-management.4-existing-third-party-mobile-management-provider
 - learn.paths-to-modern-endpoint-management.5-existing-on-premises-management
 - learn.paths-to-modern-endpoint-management.6-existing-on-premises-group-policy
-- learn.paths-to-modern-endpoint-management.7-existing-on-premises-third-party-management
-- learn.paths-to-modern-endpoint-management.8-knowledge-check
-- learn.paths-to-modern-endpoint-management.9-summary
+- learn.paths-to-modern-endpoint-management.7-knowledge-check
+- learn.paths-to-modern-endpoint-management.8-summary
 badge:
   uid: learn.paths-to-modern-endpoint-management.badge

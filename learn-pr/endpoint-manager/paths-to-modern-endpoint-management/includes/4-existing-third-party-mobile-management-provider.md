@@ -1,4 +1,4 @@
-If you're using an existing cloud-based mobile device management provider, you should consider moving your existing endpoints and workloads to Microsoft Intune to achieve modern endpoint management.
+If you're using an existing cloud-based mobile device management provider, you should consider moving your existing endpoints and workloads to Microsoft Intune to achieve modern endpoint management. For cloud-based device management scenario, endpoint management can be accomplished for desktops and devices in the same way.
 
 > [!NOTE]
 > Devices should only have one Mobile Device Management (MDM) provider.
@@ -12,6 +12,8 @@ By moving your additional endpoint to Intune to manage your organization's endpo
 - Native integration with cloud-powered security controls and risk-based conditional access for apps and data.
 - Flexible support for diverse corporate and bring-your-own-device (BYOD) scenarios, while increasing productivity and collaboration.
 - Maximize your investment and accelerate time to value with fast rollout of services and devices with end-to-end integration across familiar Microsoft stack.
+
+To move from your current cloud-based MDM to Intune, you must first unenroll your organization's devices from your existing MDM provider. Different MDM providers handle removing devices differently. For example, authentication certificates may not get removed by unenrolling devices. So, you should consider contacting your MDM provider for guidance on making sure everything is removed. Once you have unenrolled your organization's devices from the previous cloud-based MDM, you can use conditional access from Intune to ensure the temporarily unprotected devices are block from accessing corporate data until you enroll the devices in Intune. For more information about unenrolling, see [Unenroll from existing MDM](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-enrollment?azure-portal=true#unenroll-from-existing-mdm-and-factory-reset).
 
 ## Next steps
 

@@ -92,17 +92,7 @@ Identify the subtasks of *Learn about paths to modern endpoint management*
        - Learn about the different benefits that each migration path offers:
            - Intune using Group Policy analytics
 
-7. **Migrate from an existing on-premises third-party management**
-   List the content that will enable the learner to understand this module:
-   - Enabling objective
-       - Learn about the best paths to consider when migrating to a modern endpoint management solution:
-           - Intune
-           - Co-management
-       - Learn about the different benefits that each migration path offers:
-           - Intune
-           - Co-management
-
-    **Knowledge check**
+7. **Knowledge check**
 
     What types of questions will test *Understand why you should migrate to a modern endpoint management solution.*? 
 
@@ -117,7 +107,7 @@ Identify the subtasks of *Learn about paths to modern endpoint management*
     - Question #3: If you currently have no Mobile Device Management (MDM) solution and need to keep your corporate data safe by protecting data, apps, and devices that your employees use, as well as maximize the return on your investment, which endpoint management solution should you consider?
         - Move directly to cloud endpoint management using Microsoft Intune. For on-premises devices, use tenant attach or co-management with Microsoft Endpoint Configuration Manager.
 
-1. **Summary**
+8. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module? 
     
