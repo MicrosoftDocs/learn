@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.5-exercise-structs-enums
+metadata:
+  title: Exercise - Fix the code with structs and enums
+  description: Use what you've learned to fix the problems in the code that contains structs and enums.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Fix the code with structs and enums
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-structs-enums.md)]
