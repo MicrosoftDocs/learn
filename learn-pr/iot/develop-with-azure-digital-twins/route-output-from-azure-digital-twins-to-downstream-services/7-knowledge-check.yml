@@ -1,34 +1,33 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.output-from-adt-to-downstream-services.summary-and-resources
+uid: learn.iot.output-from-adt-to-downstream-services.knowledge-check
 metadata:
-  title: Summary and resources
-  description: This unit summarizes the Learn module and provides links to additional resources
+  title: Knowledge check
+  description: Check that you understand outputting data from Azure Digital Twins to Time Series Insights
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: rabayoum
+  ms.author: Rania.Bayoumy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary and resources
-durationInMinutes: 3
+title: Knowledge check
+durationInMinutes: 5
 content: |
-  [!include[](includes/7-summary-and-resources.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'The Azure Functions are used in the Connect to TSI context to:'
+  - content: 'The Azure Functions are used in the Connect to Time Series Insights context to:'
     choices: 
     - content: 'Convert twin update events from JSON documents to JSON objects'
       isCorrect: true
       explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins.'
-    - content: 'Convert ADT models from DTDL V1 to DTDL V2'
+    - content: 'Convert Azure Digital Twins models from DTDL V1 to DTDL V2'
       isCorrect: false
       explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins.'
     - content: 'Convert telemetry messages to twin updates'
       isCorrect: false
       explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins.'
 
-  - content: 'True or false. When you connect ADT to Time Series Insights, you need to bring your own visualization service.'
+  - content: 'When you connect Azure Digital Twins to Time Series Insights, you need to bring your own visualization service.'
     choices: 
     - content: 'True'
       isCorrect: false

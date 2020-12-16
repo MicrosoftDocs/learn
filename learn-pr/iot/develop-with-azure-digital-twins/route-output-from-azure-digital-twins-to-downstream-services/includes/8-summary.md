@@ -1,13 +1,13 @@
 ---
 metadata:
-  title: Summary and resources
+  title: Summary
   description: This unit summarizes the Learn module and provides links to additional resources
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: rabayoum
+  ms.author: Rania.Bayoumy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary and resources
+title: Summary
 durationInMinutes: 3
 ---
 
@@ -23,7 +23,7 @@ Azure Digital Twins seamlessly integrates with Azure data, analytics, and AI ser
 
 - [Azure Digital Twins Product Page](https://azure.microsoft.com/en-us/services/digital-twins/)
 
-- [Azure Digital Twins Preview New Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-Digital-Twins-Preview-New-Capabilities?term=Azure%20Digital%20Twins&lang-en=true)
+- [Azure Digital Twins New Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-Digital-Twins-Preview-New-Capabilities?term=Azure%20Digital%20Twins&lang-en=true)
 
 - [Deep Dive: Azure Digital Twins Updated Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Azure-Digital-Twins-Updated-Capabilities)
 

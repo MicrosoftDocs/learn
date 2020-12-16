@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.output-from-adt-to-downstream-services.introduction
 metadata:
-  title: Introduction to outputting data from Azure Digital Twins
+  title: Introduction
   description: This unit introduces the types of events and data emitted by Azure Digital Twins
   ms.date: 11/30/2020
   author: raniabayoumy
-  ms.author: rabayoum
+  ms.author: Rania.Bayoumy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to outputting data from Azure Digital Twins
+title: Introduction
 durationInMinutes: 6
 content: |
   [!include[](includes/1-introduction.md)]
