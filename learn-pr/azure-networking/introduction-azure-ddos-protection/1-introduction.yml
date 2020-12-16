@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-ddos-protection.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: TBD.
+  ms.date: 02/28/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

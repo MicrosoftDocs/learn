@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-ddos-protection.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 02/28/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "TBD"
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: true
+      explanation: "."
+    - content: "C"
+      isCorrect: false
+      explanation: "."
+  - content: "TBD"
+    choices:
+    - content: "A"
+      isCorrect: true
+      explanation: "."
+    - content: "B"
+      isCorrect: false
+      explanation: "."
+    - content: "C"
+      isCorrect: false
+      explanation: "."
+  - content: "TBD" 
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: true
+      explanation: "."
+    - content: "C"
+      isCorrect: false
+      explanation: "."

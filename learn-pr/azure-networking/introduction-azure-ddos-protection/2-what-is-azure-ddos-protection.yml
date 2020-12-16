@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-ddos-protection.2-what-is-azure-ddos-protection
+title: What is Azure DDoS Protection service?
+metadata:
+  title: What is Azure DDoS Protection service?
+  description: TBD
+  ms.date: 02/28/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-what-is-azure-ddos-protection.md)]

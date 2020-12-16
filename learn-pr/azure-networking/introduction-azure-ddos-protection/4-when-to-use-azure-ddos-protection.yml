@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-ddos-protection.4-when-to-use-azure-ddos-protection
+title: When to use Azure DDoS Protection service
+metadata:
+  title: When to use Azure DDoS Protection service
+  description: TBD.
+  ms.date: 02/28/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-when-to-use-azure-ddos-protection.md)]
