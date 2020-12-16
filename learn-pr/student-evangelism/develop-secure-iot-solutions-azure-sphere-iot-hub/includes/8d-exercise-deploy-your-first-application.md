@@ -4,7 +4,7 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 1. Start Visual Studio Code.
 
-2. Click **Open folder**.
+2. From the menu, click **File**, then **Open Folder**.
 
 3. Open the **Azure-Sphere lab** folder.
 
@@ -89,7 +89,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
 
-   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status.":::
+   :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status." lightbox="../media/visual-studio-code-start-application.png":::
 
 1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
 
@@ -116,19 +116,19 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The User LED will blink every 5 seconds when connected to Azure.
+- The User LED will blink every 5 seconds when connected to Azure.
 
 ## Step 6: Display the device telemetry using Azure IoT Explorer
 
@@ -136,7 +136,7 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Click **View devices in this hub**.
 
-    :::image type="content" source="../media/iot-explorer-view-devices-in-this-hub.png" alt-text="The illustration shows how to select devices in this hub.":::
+    :::image type="content" source="../media/iot-explorer-view-devices-in-this-hub.png" alt-text="The illustration shows how to select devices in this hub." lightbox="../media/iot-explorer-view-devices-in-this-hub.png":::
 
 1. Click on your **device**.
 
@@ -148,15 +148,15 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. Click **IoT Plug and Play components** from the side menu.
 
-    :::image type="content" source="../media/iot-explorer-iot-pnp.png" alt-text="The illustration shows how to select IoT Plug and Play components.":::
+    :::image type="content" source="../media/iot-explorer-iot-pnp.png" alt-text="The illustration shows how to select IoT Plug and Play components." lightbox="../media/iot-explorer-iot-pnp.png":::
 
 1. Click **Default component**.
     
-    :::image type="content" source="../media/iot-explorer-pnp-default-component.png" alt-text="The illustration shows how to select the default component.":::
+    :::image type="content" source="../media/iot-explorer-pnp-default-component.png" alt-text="The illustration shows how to select the default component." lightbox="../media/iot-explorer-pnp-default-component.png":::
 
 1. Select **Telemetry** from the menu.
 
-    :::image type="content" source="../media/iot-explorer-pnp-telemetry.png" alt-text="The illustration shows how to select telemetry.":::
+    :::image type="content" source="../media/iot-explorer-pnp-telemetry.png" alt-text="The illustration shows how to select telemetry." lightbox="../media/iot-explorer-pnp-telemetry.png":::
 
 1. Click the **Start** button.
 
