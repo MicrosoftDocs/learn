@@ -46,15 +46,13 @@ Before we start modifying the web app, let's make sure it can deploy successfull
 Follow the prompts. Accept all the default prompts, except the name and the deployment branch:
 
 - **Static web app name**: *space-jam-a-new-legacy-app*
-- **Deployment branch**: *main*
-- **Web App Location**: */*
-- **Azure Functions Location**: */*
+- **Build Preset**: *Custom*
+- **Application Code Location**: *./*
+- **Azure Functions Location**: *./*
 - **Build path**: *build*
 - **Location**: *WESTUS2* (or whatever is closest to you geographically!)
 
 Then, you'll be prompted to view the GitHub action that's associated with this static web app. 
-
-:::image type="content" source="../media/action-prompt.png" alt-text="Screenshot that shows a Visual Studio Code prompt to view the GitHub action.":::
 
 To go to the **Actions** page of your *space-jam-a-new-legacy-app* GitHub repo that you created at the beginning of this unit, select **Show Actions**.
 

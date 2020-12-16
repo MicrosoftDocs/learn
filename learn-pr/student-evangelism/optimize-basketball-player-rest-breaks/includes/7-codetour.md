@@ -19,7 +19,7 @@ Open the CodeTour extension in Visual Studio Code Explorer. You should see a lis
 
 :::image type="content" source="../media/initial-codetour.png" alt-text="Screenshot that shows CodeTour in Visual Studio Code, with the green arrow highlighted.":::
 
-To get started using CodeTour, select the green arrow for the first tour, called `readStatData`. When you do this, a step pops up on line 19 of your *main.js* file, even if you didn't have it open. Follow the instructions in the step, and then select the **Next** button at the bottom of the window to go to the next step.
+To get started using CodeTour, select the green arrow for the first tour, called `1 - Create Variables`. When you do this, a step pops up in a new file. Follow the instructions in the step, and then select the **Next** button at the bottom of the window to go to the next step.
 
 :::image type="content" source="../media/codetour-step-main.png" alt-text="Screenshot that shows the first step in a CodeTour file.":::
 

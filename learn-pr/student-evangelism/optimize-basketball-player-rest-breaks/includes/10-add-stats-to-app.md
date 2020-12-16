@@ -2,7 +2,7 @@ Now that we have successfully added the players to the bench, we need to show th
 
 ## Add the initial PER stats
 
-Like before, we can revisit the *index.html* file to find there is a `div` with the ID `plaerCards` that we can use to show the PER stats for each player. And, like we did when we dynamically created the player buttons, we can dynamically create a `div` for each player to represent the players' PER for that quarter.
+Like before, we can revisit the *index.html* file to find there is a `div` with the ID `playerCards` that we can use to show the PER stats for each player. And, like we did when we dynamically created the player buttons, we can dynamically create a `div` for each player to represent the players' PER for that quarter.
 
 ```javascript
 // This function is called at the beginning of the game play to initialize
@@ -34,7 +34,7 @@ function displayPlayerCards() {
         // Load the image
         playerImage.src = 'images/'+playerName+'.png';
 
-        // Ad the image to the card
+        // Add the image to the card
         playerCard.appendChild(playerImage);
 
         // Add the player's PER to the div.
@@ -44,7 +44,7 @@ function displayPlayerCards() {
         newPlayerPER.className = 'perCard';
 
         // Set the text for the PER
-        newPlayerPER.innerText = 'PER: ' + playerStats[currentQuarter];
+        newPlayerPER.innerText = 'PER: ' + playerStats[currentQuarter].toPrecision(4);
 
         // Add the PER
         playerCard.appendChild(newPlayerPER);

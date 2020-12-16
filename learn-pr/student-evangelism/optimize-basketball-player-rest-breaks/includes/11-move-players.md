@@ -126,7 +126,7 @@ function movePlayers() {
             playersOnCourt++;
             quarterPER += playerMap.get(this.id)[currentQuarter];
             quarterAvePER = quarterPER / playersOnCourt;
-            document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER;
+            document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER.toPrecision(4);
             
             // Move the player to the court.
             document.getElementById('playersOnCourt').appendChild(this);
@@ -147,7 +147,7 @@ function movePlayers() {
         }
 
         // Update the PER average. This might result in a zero value if your team is particularly tired.
-        document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER;
+        document.getElementById('currentPER').innerText = 'Current PER: '+ quarterAvePER.toPrecision(4);
 
         // Move the player to the bench.
         document.getElementById('playersOnBench').appendChild(this);
