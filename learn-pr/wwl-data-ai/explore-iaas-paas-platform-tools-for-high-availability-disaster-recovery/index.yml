@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr
 metadata:
-  title: Explore IaaS and PaaS platform tools for HA-DR
-  description: "Deploy Windows Server Failover Cluster and AGs in Azure and hybrid environments. Configure temporal tables, geo-replication and auto failover groups."
-  ms.date: 09/18/2020
+  title: Explore IaaS and PaaS platform tools for high availability and disaster recovery
+  description: "Explore IaaS and PaaS platform tools for high availability and disaster recovery"
+  ms.date: 12/16/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -37,6 +37,7 @@ units:
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-temporal-tables-azure-sql-database
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-active-geo-replication
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.explore-auto-failover-groups
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.exercise
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.knowledge-check
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.summary
 badge:
