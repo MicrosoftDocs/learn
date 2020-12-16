@@ -14,7 +14,7 @@ From this page, you can take various steps to investigate incidents.
 
 ### Review incidents
 
-The **Incidents** page provides a complete list of incidents in Azure Sentinel along with basic incident information, including severity, id, title, alerts, product names, created time, last update time, owner, and status. You can sort by any incident column and filter the incident list by name, severity, status, product name, or owner.
+The **Incidents** page provides a complete list of incidents in Azure Sentinel along with basic incident information, including severity, ID, title, alerts, product names, created time, last update time, owner, and status. You can sort by any incident column and filter the incident list by name, severity, status, product name, or owner.
 
 Selecting any incident will display more information about the incident in the details column. This information can help you clarify the nature, context, and course of action for an incident.
 
