@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.threat-hunting-sentinel
+uid: learn.azure.hunt-threats-sentinel
 metadata:
   title: Threat hunting with Azure Sentinel
   description: Threat hunting with Azure Sentinel
@@ -21,7 +21,7 @@ prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
   - Basic Azure Sentinel functionality.
   - Access to a Microsoft Azure subscription for exercise tasks.
-iconUrl: /learn/achievements/threat-hunting-sentinel.svg
+iconUrl: /learn/achievements/hunt-threats-sentinel.svg
 levels:
 - beginner
 roles:
@@ -29,12 +29,12 @@ roles:
 products:
 - azure
 units:
-- learn.azure.threat-hunting-sentinel.1-introduction
-- learn.azure.threat-hunting-sentinel.2-exercise-setup
-- learn.azure.threat-hunting-sentinel.3-query-management-creation
-- learn.azure.threat-hunting-sentinel.4-bookmarks
-- learn.azure.threat-hunting-sentinel.5-livestream
-- learn.azure.threat-hunting-sentinel.6-exercise-hunt-for-threats
-- learn.azure.threat-hunting-sentinel.7-summary
+- learn.azure.hunt-threats-sentinel.1-introduction
+- learn.azure.hunt-threats-sentinel.2-exercise-setup
+- learn.azure.hunt-threats-sentinel.3-query-management-creation
+- learn.azure.hunt-threats-sentinel.4-bookmarks
+- learn.azure.hunt-threats-sentinel.5-livestream
+- learn.azure.hunt-threats-sentinel.6-exercise-hunt-for-threats
+- learn.azure.hunt-threats-sentinel.7-summary
 badge:
-  uid: learn.learn.azure.threat-hunting-sentinel
+  uid: learn.learn.azure.hunt-threats-sentinel

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-hunting-sentinel.6-exercise-hunt-for-threats
+uid: learn.azure.hunt-threats-sentinel.6-exercise-hunt-for-threats
 metadata:
   title: Exercise - Hunt for threats using Azure Sentinel
   description: Exercise - Hunt for threats using Azure Sentinel
