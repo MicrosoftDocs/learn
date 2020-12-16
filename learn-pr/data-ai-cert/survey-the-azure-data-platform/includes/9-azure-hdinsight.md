@@ -23,7 +23,7 @@ Developers can remotely submit and monitor jobs from Spark. Storm supports commo
 
 ## Queries
 
-In Hadoop supports Pig and HiveQL languages. In Spark, data engineers use Spark SQL.
+Hadoop supports Pig and HiveQL languages. In Spark, data engineers use Spark SQL.
 
 ## Data security
 

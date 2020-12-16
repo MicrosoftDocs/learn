@@ -18,11 +18,13 @@ The same options are available to create groups in Azure AD as we saw with users
 
 ![Screenshot of the Create Group feature in the Azure portal](../media/4-add-group-portal.png)
 
-The membership type field can be one of two values:
+The membership type field can be one of three values:
 
-1. **Assigned**. The group will contain specific users or groups that you select.
+1. **Assigned (static)**. The group will contain specific users or groups that you select.
 
-1. **Dynamic user**. You create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s department is Sales, that user will be dynamically assigned to the Sales group. You can set up a rule for dynamic membership on security groups or on Office 365 groups. If the user's department changes in the future, they are automatically removed from the group. This feature requires an Azure AD Premium P1 license.
+1. **Dynamic user**. You create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s department is Sales, that user will be dynamically assigned to the Sales group. You can set up a rule for dynamic membership on security groups or on Microsoft 365 groups. If the user's department changes in the future, they are automatically removed from the group. This feature requires an Azure AD Premium P1 license.
+
+1. **Dynamic device**. You create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s device is associated with the Service department, that device will be dynamically assigned to the Service group. You can set up a rule for dynamic membership on security groups or on Microsoft 365 groups. If the device's association with a particular department changes in the future, it are automatically removed from the group. This feature requires an Azure AD Premium P1 license.
 
 Finally, you can select group owner(s) that can administer the group, and member(s) that will belong to the group. Both of these can contain other groups as well as individual users.
 
