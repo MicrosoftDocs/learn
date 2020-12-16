@@ -17,7 +17,7 @@ In this module, you learned about:
 
 - Azure Digital Twins service and functional building blocks to build a digital twin solution.
 - Uses of digital twins in different industries.
-- Digital Twins Consortium
+- Digital Twin Consortium
 
 ## Resources
 
