@@ -4,7 +4,7 @@ title: 'Exercise: Plan and implement a high availability and disaster recovery e
 metadata:
   title: 'Exercise: Plan and implement a high availability and disaster recovery environment'
   description: "Exercise: Plan and implement a high availability and disaster recovery environment"
-  ms.date: 12/10/2020
+  ms.date: 12/16/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labId: 85903
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-plan-implement-hadr.md)]
+  [!include[](includes/7-exercise-plan-implement-high-availability-disaster-recovery.md)]
