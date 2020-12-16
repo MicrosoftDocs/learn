@@ -53,13 +53,6 @@ You can configure the following security solutions to pass their alerts to Azure
 
 > [!Note]
 > Microsoft unifies security information and event management (SIEM) and extended detection and response (XDR) terminology across their security products.
->| Earlier name | New name |
->| --- | --- |
->| Azure Advanced Threat Protection | Microsoft Defender for Identity |
->| Microsoft Defender Advanced Threat Protection | Microsoft Defender for Endpoint |
->| Office 365 Advanced Threat Protection | Defender for Office 365 |
->| Azure Security Center Standard Edition | Azure Defender for Servers |
->| Azure Security Center for IoT | Azure Defender for IoT |
 
 You can filter these alerts by severity and by specific text that is contained in the alert name.
 
