@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-arc-enabled-kubernetes
+metadata:
+  title: Introduction to Azure Arc enabled Kubernetes
+  description: Introduction to Azure Arc enabled Kubernetes
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Arc enabled Kubernetes
+summary: In this module, you learned how Azure Arc enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
+abstract: |
+  In this module you will:
+  - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
+  - Connect Kubernetes clusters to Azure Arc.
+  - Manage Azure Arc enabled Kubernetes clusters by using GitOps.
+  - Integrate Azure Arc enabled Kubernetes cluster with Azure services like Azure Monitor and Azure Policy.
+prerequisites: |
+  - Containerization and its concepts
+  - Kubernetes architecture and its concepts
+  - Azure Resource Manager
+  - Azure Policy
+  - Azure command-line interface (CLI)
+  - GitOps principles
+iconUrl: /learn/achievements/intro-to-arc-enabled-kubernetes.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.intro-to-arc-enabled-kubernetes.1-introduction
+- learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview
+- learn.azure.intro-to-arc-enabled-kubernetes.3-architecture-components
+- learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
+- learn.azure.intro-to-arc-enabled-kubernetes.5-policy
+- learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
+- learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-monitor
+- learn.azure.intro-to-arc-enabled-kubernetes.8-summary
+badge:
+  uid: learn.azure.intro-to-arc-enabled-kubernetes.badge

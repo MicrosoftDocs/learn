@@ -15,7 +15,7 @@ When you're securing your network for Azure SQL Database, you have four main cho
 - Use virtual network rules
 - Use Azure Private Link
 
-In addition to these main choices, you have the opportunity to block all public access (only with Private Link) and the option to force a minimum Transport Layer Security (TLS) version.
+In addition to these main choices, you have the opportunity to block all public access (only with Private Link) and the option to force a minimum Transport Layer Security (TLS) version. The least secure method, but the easiest to configure, is to allow access to Azure services. The most secure method is to use Private Link. The following sections will cover the capabilities for each option, as well as how to configure and maintain each option.
 
 #### Allow access to Azure services
 
