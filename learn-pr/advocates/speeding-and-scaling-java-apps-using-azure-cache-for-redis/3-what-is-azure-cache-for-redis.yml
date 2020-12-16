@@ -9,6 +9,6 @@ metadata:
   ms.date: 12/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/3-what-is-azure-cache-for-redis.md)]
