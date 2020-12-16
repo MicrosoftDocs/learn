@@ -3,7 +3,7 @@ uid: learn.wwl.protecting-monitoring-tuning-migrated-database
 metadata:
   title: Protecting, monitoring and tuning a migrated database
   description: "Protecting, monitoring and tuning a migrated database"
-  ms.date: 12/11/2020
+  ms.date: 12/16/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -32,8 +32,8 @@ units:
 - learn.wwl.protecting-monitoring-tuning-migrated-database.monitor-configure-database-server
 - learn.wwl.protecting-monitoring-tuning-migrated-database.trace-track-activity
 - learn.wwl.protecting-monitoring-tuning-migrated-database.configure-read-replicas
+- learn.wwl.protecting-monitoring-tuning-migrated-database.exercise-protect-monitor-tune-migrated-database
 - learn.wwl.protecting-monitoring-tuning-migrated-database.knowledge-check
-- learn.wwl.protecting-monitoring-tuning-migrated-database.6-exercise-protect-monitor-tune-migrated-database
 - learn.wwl.protecting-monitoring-tuning-migrated-database.summary
 badge:
   uid: learn.wwl.protecting-monitoring-and-tuning-a-migrated-database.badge
