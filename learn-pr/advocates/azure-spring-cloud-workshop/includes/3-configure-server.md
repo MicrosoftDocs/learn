@@ -55,7 +55,7 @@ Once the token is generated, leave that tab open until the end of this section.
      > [!TIP]
      > Make sure you include the `.git` ending in the URL, or you use the qualified URI.
 
-    1. Add your branch in `Label`. It defaults to `master`.
+    1. Add your branch in `Label`. It defaults to `main` on GitHub, but older repositories or alternate Git providers might still use `master`.
     1. Click on **Authentication** and select **HTTP Basic**.
     1. The __username__ is your GitHub login name.
     1. The __password__ is the personal token we created in the previous section.
