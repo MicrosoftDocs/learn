@@ -46,7 +46,7 @@ This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/
 You need to do the following:
 
 1. Install the Azure Sphere SDK.
-    **Ensure you install the new azsphere CLI v2**.
+    **Ensure you install the new Azure Sphere CLI v2**.
 1. Set up the device connection.
 1. Install CMake and Ninja.
 1. Install Visual Studio Code.

@@ -53,7 +53,7 @@ After creating and running a pipeline to train the model, you need a second pipe
 > [!div class="centered"]
 > ![A visual inference pipeline](../media/visual-inference.png)
 
-9. Run the pipeline as a new experiment named **predict-diabetes** on your compute cluster. This may take a while!
+9. Run the pipeline as a new experiment named **mslearn-diabetes-inference** on your compute cluster. This may take a while!
 10. When the pipeline has finished, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
 
 Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.
