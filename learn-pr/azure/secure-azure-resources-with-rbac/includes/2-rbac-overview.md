@@ -13,7 +13,7 @@ First, remember that each Azure subscription is associated with a single Azure A
 
 Azure role-based access control (Azure RBAC) is an authorization system built on Azure Resource Manager that provides fine-grained access management of resources in Azure. With Azure RBAC, you can grant the exact access that users need to do their jobs. For example, you can use Azure RBAC to let one employee manage virtual machines in a subscription while another manages SQL databases within the same subscription.
 
-#### What is role-based access control?
+#### What is Azure role-based access control?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvk]
 
