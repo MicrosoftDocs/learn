@@ -12,14 +12,14 @@ title: Explore the art world by using RESTful APIs
 summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art from museum APIs.
 abstract:  |
   In this module, you will:
-  - learn about RESTful APIs
-  - build your own simple API
-  - various strategies to connect to external APIs
-  - how to query two different museum APIs
+  - Learn about RESTful APIs.
+  - Build your own simple API.
+  - Learn various strategies to connect to external APIs.
+  - Learn how to query two different museum APIs.
 prerequisites: | 
-  - An internet-connected browser such as Edge
-  - Node.js installed locally
-  - NPM installed locally
+  - An internet-connected browser, like Microsoft Edge.
+  - Node.js, installed locally.
+  - npm, installed locally.
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner

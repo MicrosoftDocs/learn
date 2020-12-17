@@ -11,38 +11,38 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 quiz:
-  title: Check your knowledge.
+  title: Check your knowledge
   questions:
-  - content: "All APIs need keys to ensure access"
+  - content: "All APIs require keys for access."
     choices:
-    - content: "true"
+    - content: "True"
       isCorrect: false
-      explanation: "Some APIs require keys, but many are open"
-    - content: "false"
+      explanation: "Some APIs require keys, but many are open."
+    - content: "False"
       isCorrect: true
-      explanation: "Most APIs do need keys to access them, but some are open"
-  - content: "OAuth uses access tokens to perform the following:"
+      explanation: "Most APIs do require keys for access, but some are open."
+  - content: "OAuth uses access tokens to perform the following task:"
     choices:
-    - content: "obtain an authorization code"
+    - content: "Obtain an authorization code"
       isCorrect: true
-      explanation: "OAuth 2.0 protocol for Authorization Code Grant exchanges the token for an access code"
-    - content: "ensure a user is logged in"
+      explanation: "OAuth 2.0 protocol for Authorization Code Grant exchanges the token for an access code."
+    - content: "Ensure a user is logged in"
       isCorrect: false
-      explanation: "Authorization should not be confused with authentication"
+      explanation: "Keep in mind that authorization and authentication aren't the same."
     - content: "Ensure security"
       isCorrect: false
-      explanation: "Tokens should be rotated periodically by the user to ensure security"
+      explanation: "To ensure security, users should rotate tokens periodically."
   - content: "APIs can be used for the following:"
     choices:
     - content: "E-commerce applications"
       isCorrect: false
-      explanation: "This is true, but not the only use"
+      explanation: "This is one use, but it's not the only one."
     - content: "Cultural organizations"
       isCorrect: false
-      explanation: "As we saw in this module, you can definitely use APIs for this purpose, but that's not all"
+      explanation: "As we saw in this module, you can definitely use APIs for this purpose, but that's not all."
     - content: "Payment transactions"
       isCorrect: false
-      explanation: "Payments can definitely use APIs, but that's not their only use"
+      explanation: "Payments can definitely use APIs, but that's not their only use."
     - content: "All of the above"
       isCorrect: true
-      explanation: "APIs have many uses, including many more than those listed here"
+      explanation: "APIs have many uses, including many more than the ones listed here."
