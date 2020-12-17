@@ -182,51 +182,50 @@ You can write an Azure Functions function app in the Azure portal or externally 
    ```
 
    > [!NOTE]
-   > Ignore any warning messages that appear. We're using an older version of a JavaScript library for simplicity.
+   > Ignore any warning messages that appear. For simplicity, we're using an older version of a JavaScript library.
 
-1. Wait for the installation commands to finish. Now, you'll add two application settings to the function app:
+1. Wait for the installation commands to finish. Then, you'll add two application settings to the function app:
 
-   1. In the Azure portal, on the left, scroll to locate the **Settings** group. Under **Settings**, select **Configuration**.
-   1. Under **Configuration**, make sure the **Application settings** page is open. Select **New application** setting.
-   1. In the **Add/Edit application setting** page, add a setting named `PREDICTION_URL`. Set the value to the Custom Vision Service prediction URL that you saved in the previous unit. Leave the **Deployment slot setting** unchecked. Select **OK**.
-   1. Repeat the previous step to add a setting named `PREDICTION_KEY`. Set the value to the Custom Vision Service prediction key that you saved in the previous unit. Leave the **Deployment slot setting** unchecked. Select **OK**.
+   1. In the Azure portal, in the left menu, under **Settings**, select **Configuration**.
+   1. Under **Configuration**, make sure that the **Application settings** overview page is open. Select **New application**.
+   1. In **Add/Edit application setting**, add a setting named `PREDICTION_URL`. Set the value to the Custom Vision prediction URL that you saved in the preceding unit. Leave **Deployment slot setting** cleared. Select **OK**.
+   1. Repeat the preceding step to add a setting named `PREDICTION_KEY`. Set the value to the Custom Vision prediction key that you saved in the preceding unit. Leave the **Deployment slot setting** cleared. Select **OK**.
 
-   ![Screenshot that shows how to set application settings for a function app.](../media/function-app-application-settings.png)
+   ![Screenshot that shows selections to make in the Azure portal for application settings for a function app.](../media/function-app-application-settings.png)
 
    _Configure the application settings for the function app_
 
-   Finish by selecting **Save** at the top of the blade. If you're prompted, select **Continue** to complete the save action.
+   To finish, select **Save**. If you're prompted, select **Continue** to finish the save action.
 
-   > Rather than hard-code the Custom Vision Service URL and authentication key in the function app code, you're storing the values in the function app's application settings. The values are more secure when they're saved in the application settings.
+   > [!NOTE]
+   > Rather than hard-code the Custom Vision URL and authentication key in the function app code, you're storing the values in the function app's application settings. The values are more secure when they're saved in the application settings.
 
-1. Return to your `BlobTrigger` function in the Azure portal and open the function's output log.
-
-   On the left, scroll to locate the **Functions** group. Under **Functions**, select **{fx} Functions**. On the **Functions** blade, select **BlobTrigger**.
+1. In the Azure portal, select **Functions** > **Functions** > **BlobTrigger** to return to your `BlobTrigger` function app:
     
-   ![Screenshot that shows how to open the blob trigger function.](../media/open-function-output-log-1.png)
+   ![Screenshot that shows selections to make in the Azure portal to view the blob trigger function app.](../media/open-function-output-log-1.png)
 
    _Open the blob trigger function_
 
-   After the portal view changes to show the overview page for the `BlobTrigger` function, open the **Logs** output pane. At the left, under the **Developer** group, select **Code + Test**. At the bottom, select the up arrow next to **Logs**. The Log output pane opens.
+   In the function app overview pane, in the resource menu, under **Developer**, select **Code + Test** to open the **Logs** output pane. At the bottom, select the up arrow next to **Logs**. The Log output pane opens.
 
    ![Screenshot that shows how to open the output log for a function.](../media/open-function-output-log-2.png)
 
    _Open the function's output log_
 
-   Keep the Log pane open. We'll use it in a later step.
+   Keep the **Logs** pane open because we'll use it in a later step.
 
-1. Open the `photos` Blob Storage container. In a browser window, go to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account that you created earlier. On the left, scroll to the **Blob service** group, and then select **Containers**. On the right, select the `photos` container that you created earlier.
+1. Open the `photos` Blob Storage container. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account that you created earlier. In the resource menu, under **Blob service**, select **Containers**. In the list of containers, select the `photos` container.
 
-   ![Screenshot that shows how to open the photos container for the Blob Storage account.](../media/open-photos-container.png)
+   ![Screenshot that highlights the items you select in the Azure portal to open the photos container in the Blob Storage account.](../media/open-photos-container.png)
 
    _Open the photos container for your Blob Storage account_
     
 1. Upload an image to the photos container so that you can try out your function app. On the `photos` container page in the portal, select **Upload**. The **Upload blob** page opens at the right.
 
-   1. In **Upload blob**, select the folder icon to the right of the **Files** box. A Windows Explorer **Open** dialog opens.
-   1. In the Explorer dialog, browse to the photos folder that you created in your project directory.
-   1. Select the **image_12.jpg** file, then select **Open**. The Explorer dialog closes.
-   1. In the **Upload blob** page, select **Upload**. After the upload completes, select the **X** to close the page.
+   1. In **Upload blob**, select the folder icon next to **Files**.
+   1. In Windows Explorer, go to the *photos* folder in your project directory.
+   1. Select the *image_12.jpg* file, and select **Open**.
+   1. In **Upload blob**, select **Upload**. When the upload is finished, select **X** to close the pane.
 
    ![Screenshot that shows how to upload a photo to a container.](../media/upload-photo-to-container.png)
 
@@ -234,23 +233,23 @@ You can write an Azure Functions function app in the Azure portal or externally 
         
    Here's what **image_12.jpg** looks like:
         
-   ![A picture of image 12, which shows a polar bear.](../media/image-12.jpg)
+   ![Image 12, which shows a polar bear.](../media/image-12.jpg)
         
    _Image 12 in Blob Storage_
 
-1. Return to the function log in the other browser instance. Confirm that the function executed, and that **image_12.jpg** was determined by the Custom Vision Service to contain a polar bear.
+1. In your browser, return to the function log. Confirm that the function executed, and that Custom Vision indicates that *image_12.jpg* contains a polar bear.
 
    ![Screenshot that shows the output log details for uploading and analyzing image 12.](../media/function-output-1.png)
 
    _View the output log details for uploading and analyzing image 12_
 
-The reason for the text "undefined at undefined, undefined" in the log output is that the function attempted to read the latitude, longitude, and camera ID from blob metadata and include them in the output. Those metadata values don't exist since you uploaded the blob manually. That condition will change when your virtual cameras upload photos to blob storage.
+The text *undefined at undefined, undefined* appears in the log output because the function attempted to read the latitude, longitude, and camera ID from blob metadata and include them in the output. Those metadata values don't exist since you uploaded the blob manually. That condition will change when your virtual cameras upload photos to blob storage.
 
 ## Run the camera array
 
-Next, you'll run the simulated camera array that you created earlier. Then, you'll check the log output from the function app to verify that images are being uploaded to Blob Storage and analyzed for polar bears.
+Next, you'll run the simulated camera array you created earlier. Then, you'll check the log output from the function app to verify that images are being uploaded to Blob Storage and analyzed for polar bears.
 
-1. In a Command Prompt or terminal window, return to the project directory. Then, use the following command to run *run.js*:
+1. In a Command Prompt or terminal window, return to the project directory. Run the following code to run *run.js*:
 
    ```bash
    node run.js
@@ -262,6 +261,6 @@ Next, you'll run the simulated camera array that you created earlier. Then, you'
 
    _There be polar bears!_
 
-1. To finish, return to the Command Prompt or terminal window in which *run.js* is running and select Ctrl+C to stop the process.
+1. Return to the Command Prompt or terminal window in which *run.js* is running, and select Ctrl+C.
 
-Congratulations! You've built a system that transmits wildlife photos to Blob Storage and uses a custom AI model built by using the Azure Cognitive Services Custom Vision to determine which photos contain polar bears. The next step is to make the output more visual, and that starts with an Azure SQL Database.
+Congratulations! You've built a system that transmits wildlife photos to Blob Storage and uses a custom AI model built by using Azure Cognitive Services Custom Vision to determine which photos contain polar bears. The next step is to make the output more visual, and that starts with a SQL database created by using Azure SQL Database.

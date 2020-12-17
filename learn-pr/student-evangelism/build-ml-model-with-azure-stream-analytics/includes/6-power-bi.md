@@ -1,4 +1,6 @@
-To complete the end-to-end solution for spotting polar bears in the wild, you'll connect Power BI to the database you created in the previous unit and build a report that shows in near real time where polar bears are being photographed. You'll use Power BI Desktop to create the report, and Power BI Desktop only runs on Windows. If you aren't running Windows, one solution is to create a Windows VM in Azure and run Power BI Desktop from there.
+To complete the end-to-end solution for spotting polar bears in the wild, you'll connect Power BI to the database you created in the preceding unit and build a report that shows in near real time where polar bears are being photographed by your cameras. You'll use Power BI Desktop to create the report. 
+
+Power BI Desktop runs only on Windows. If you aren't running Windows, one solution is to create a Windows VM in Azure and run Power BI Desktop from there.
 
 ## Connect Power BI to the database
 
