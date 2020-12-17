@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.4-write-reflections
-title: TBD, but likely an exercise unit
+uid: learn.quantum.tbd-libraries.4-write-oracle
+title: Write an oracle to determine a missing digit
 metadata:
-  title: TBD, but likely an exercise unit
+  title: Write an oracle to determine a missing digit
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -22,4 +22,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-write-reflections.md)]
+  [!include[](includes/4-write-pracle.md)]

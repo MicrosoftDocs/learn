@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.5-write-oracle
-title: TBD, but likely an exercise unit
+uid: learn.quantum.tbd-libraries.5-run-full-program
+title: "Run Grover's algorithm"
 metadata:
-  title: TBD, but likely an exercise unit
+  title: "Run Grover's algorithm"
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -22,4 +22,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-write-oracle.md)]
+  [!include[](includes/5-run-full-program.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.6-combine-oracle-reflections
-title: TBD, but likely an exercise unit
+uid: learn.quantum.tbd-libraries.6-write-documentation
+title: "Write your own documentation"
 metadata:
-  title: TBD, but likely an exercise unit
+  title: "Write your own documentation"
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -22,4 +22,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-combine-oracle-reflections.md)]
+  [!include[](includes/6-write-documentation.md)]
