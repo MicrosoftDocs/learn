@@ -33,7 +33,7 @@ GE Aviation is using Azure Digital Twins to combine data from two disparate syst
 
 With the new system in place, GE Aviation will have a living database that tracks the performance of an airplane.
 
-Moving beyond tracking the performance of an aircraft in its current configuration, GE Aviation is using Azure Digital Twins to model and maintain a record of each component and part of the aircraft. They will be able to see previous aircrafts a part was on, the performance of the part on each  aircraft, the maintenance of the part on the previous aircrafts and the performance of the part on the current aircraft.
+Moving beyond tracking the performance of an aircraft in its current configuration, GE Aviation is using Azure Digital Twins to model and maintain a record of each component and part of the aircraft. They will be able to see previous aircraft a part was on, the performance of the part on each  aircraft, the maintenance of the part on the previous aircraft and the performance of the part on the current aircraft.
 
 This new insight into the historical performance of the components of an aircraft will help them identify potential issues, diagnose current issues, and ultimately decrease the cost of maintaining the aircraft.
 
