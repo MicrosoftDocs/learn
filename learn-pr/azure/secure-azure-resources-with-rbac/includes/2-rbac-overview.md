@@ -21,7 +21,7 @@ You grant access by assigning the appropriate Azure role to users, groups, and a
 
 The following diagram depicts how the classic subscription administrator roles, Azure roles, and Azure AD roles are related at a high level. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
-![Diagram that depicts how the classic subscription administrator roles, Azure roles, and Azure AD roles are related at a high level.](../media/2-AzureAD-and-RBAC.png)
+![Diagram that depicts how the classic subscription administrator roles, Azure roles, and Azure AD roles are related at a high level.](../media/2-azuread-and-azure-roles.png)
 
 In the preceding diagram, a subscription is associated with only one Azure AD tenant. Also note that a resource group can have multiple resources but is associated with only one subscription. Although it’s not obvious from the diagram, a resource can be bound to only one resource group.
 
