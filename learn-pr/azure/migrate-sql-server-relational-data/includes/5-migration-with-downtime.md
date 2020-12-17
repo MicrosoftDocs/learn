@@ -18,11 +18,11 @@ During an online migration, the service takes a backup of the source database an
 
 Database Migration Service then reads the data from the transaction log to bring the target database into sync. When this process is complete, the new target database becomes available for use. This is why the online option is sometimes called *minimal downtime*. There is some downtime, but it's minimal compared to doing an offline migration.
 
-Although the online option looks attractive, there's a major downside: cost. The online option requires creating a SQL Server instance that's based on the Premium price tier. This can become cost prohibitive, especially when you don't need any of the features of the Premium tier except its support of online migrations.
+![Online migration](../media/5-02-online.svg)
+
+Although the online option looks attractive, there's a major downside - cost. The online option requires creating a SQL Server instance that's based on the Premium price tier. This can become cost prohibitive, especially when you don't need any of the features of the Premium tier except its support of online migrations.
 
 Because of this downside, we recommend that you first test by using the offline option to see whether it can run in an acceptable time frame.
-
-![Online migration](../media/5-02-online.svg)
 
 ## Migration exercises
 

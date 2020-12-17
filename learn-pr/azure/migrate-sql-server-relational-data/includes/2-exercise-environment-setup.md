@@ -17,7 +17,7 @@ This deployment will create the following resources:
 
     [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-migrate-sql-server-relational-data%2Fmaster%2Fazuredeploy.json?azure-portal=true)
 
-1. Complete the **Custom deployment** template with the following values:
+1. Complete the **Custom deployment** template with the following values.
 
     | Field | Value |
     |---------|---------|
@@ -33,7 +33,7 @@ This deployment will create the following resources:
     | Target Sql Db Administrator Login | azuresqladmin |
     | Target Sql Db Administrator Password | Enter a complex password |
 
-1. Select **Review + create**.**
+1. Select **Review + create**.
 
 1. Upon receiving *Validation Passed* notification, select **Create**.
 

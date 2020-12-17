@@ -6,7 +6,7 @@ In this exercise, you migrate the data in your database by using Azure Database 
 
 1. In the **Search the Marketplace** box, search for **Azure Database Migration Service**, and select **Create**.
 
-1. On the **Basics** tab, configure the following values:
+1. On the **Basics** tab, configure the following values.
 
     |  |  |
     |---------|---------|
@@ -17,7 +17,7 @@ In this exercise, you migrate the data in your database by using Azure Database 
     | **Pricing tier** | Standard 1 vCores |
     |||
 
-1. Select **Next:Networking**.
+1. Select **Next : Networking**.
 
 1. Select the **admsdemo-vnet/default** virtual network, and then select **Review + create**.
 
@@ -33,7 +33,7 @@ After the service instance is created, you create a project to migrate the datab
 
 1. In the migration project, select **New Migration Project**.
 
-1. On the **New migration project** pane, configure the following values:
+1. On the **New migration project** pane, configure the following values.
 
     |  |  |
     |---------|---------|
@@ -61,7 +61,7 @@ After the service instance is created, you create a project to migrate the datab
 
     ![Source details](../media/7-08-source-details.png)
 
-Select **Next : Select Target**.
+Select **Next : Select target**.
 
 1. For the target Azure SQL Database instance, complete the **Migration target details** pane with the following values:
 
@@ -76,7 +76,7 @@ Select **Next : Select Target**.
 
     ![Target details](../media/7-09-target-details.png)
 
-1. Select **Next : Map to target database**.
+1. Select **Next : Map to target databases**.
 
 1. For the **Social** database, select **Set Source DB Read-Only**.
 
