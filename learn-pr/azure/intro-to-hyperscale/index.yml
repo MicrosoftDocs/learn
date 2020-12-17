@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.intro-to-hyperscale
 metadata:
-  title: Introduction to Hyperscale
+  title: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
   description: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables grow, you need to think about other ways to scale your database. Azure Database for PostgreSQL Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
   ms.date: 10/23/2020
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Hyperscale 
+title: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL 
 summary: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables grow, you need to think about other ways to scale your database. Azure Database for PostgreSQL Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
 abstract: |
   In this module, you will:

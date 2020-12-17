@@ -10,7 +10,7 @@ For a total of 12 vCores and 1.5 TiB of storage.
 1. Sign in to the Azure portal using your Azure account.
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/)
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/)
 
 2. Next, select **Create a resource**, **Databases**, and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 

@@ -2,14 +2,14 @@ In this module, you learned about Hyperscale, a deployment option for Azure Data
 
 ## Clean up
 
-It's important that you clean up any unused resources. You're charged for the configured capacity not how much of the database is used. For this module, we make these resources available to you free of charge. But you should get into the habit of deleting resources when you're done with them.
+It's important that you clean up any unused resources. You're charged for the configured capacity not how much of the database is used. If you didn't delete your resource group in Unit 7 - Exercise - Scale and rebalance your database, follow these instructions:
 
 1. Go to the [Azure portal](https://portal.azure.com/).
-1. In the navigation menu on the left, click **Resource Groups**, and then click the resource group that you created as part of the optional exercise in unit 3.
-1. In the **Overview** pane, click **Delete resource group**.
-1. Enter the name of the resource group that you created to confirm, and then click **Delete**.
+1. In the navigation menu on the left, select **Resource Groups**, and then select the resource group that you created as part of the optional exercise in unit 3.
+1. In the **Overview** pane, select **Delete resource group**.
+1. Enter the name of the resource group that you created to confirm, and then select **Delete**.
 
-Now that you have reviewed this module, you should be able to:
+Now that you've reviewed this module, you should be able to:
 
 * Create a Hyperscale instance of Azure Database for PostgreSQL.
 * Automatically shard and distribute tables in Hyperscale.

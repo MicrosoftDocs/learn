@@ -12,7 +12,7 @@ Azure Database for PostgreSQL Hyperscale, created by the Citus Data team, combin
  :::column-end:::
 :::column span="2":::
 
-:::image type="content" source="../media/1-logo.png" alt-text="Postgres logos.":::
+![Postgres logos.](../media/1-logo.png)
 
 :::column-end:::
 :::row-end:::
@@ -22,7 +22,7 @@ Azure Database for PostgreSQL Hyperscale, created by the Citus Data team, combin
 :::row:::
 :::column span="2":::
 
-Hyperscale is a deployment option, built into Azure Database for PostgreSQL - A fully managed database-as-a-service. You keep the open-source Postgres relational database engine, while scaling as much as you need.
+Hyperscale is a deployment option, built into Azure Database for PostgreSQL - A fully managed database-as-a-service. You keep the open-source PostgreSQL relational database engine, while scaling as much as you need.
 
 Hyperscale should be used when applications require high performance or massive scale. A real-life example of a Hyperscale deployment is the credit card processing company Clearent, which handles over half a billion transactions every year. An application like this requires transaction speed and has a high analytical workload: Hyperscale takes care of these requirements for employees and customers alike.
 
@@ -51,7 +51,7 @@ The trial went well, and now you’re planning to start releasing your app to cu
 
 Hyperscale will let you scale out, seamlessly distributing and managing your data. Transactions will be spread across multiple servers, resulting in better transaction times, lower latency, and more room for analytical workloads.
 
-With this scenario in mind, over the rest of the module, we’ll create a Hyperscale instance on Azure, design how to effectively distribute the postgres database, and then scale it. Most importantly, we’ll explain what we’re doing, and why.
+With this scenario in mind, over the rest of the module, we’ll create a Hyperscale instance on Azure, design how to effectively distribute the PostgreSQL database, and then scale it. Most importantly, we’ll explain what we’re doing, and why.
 
 ## Prerequisites
 

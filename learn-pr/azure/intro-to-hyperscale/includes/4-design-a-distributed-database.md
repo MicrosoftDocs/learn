@@ -2,13 +2,13 @@ If you want a database to perform well, it’s important to design it methodical
 
 ### What are OLTP workloads?
 
-Transactional workloads have **small amounts of data** with **large numbers of transactions**. An example of this kind of workload might be sending a text, or purchasing clothes online. These transactions are commonly referred to as online transactional processing, or more simply **OLTP**, and are the most common type of workload.
+Workloads that generate standard CRUD—create, read, update, delete—operations can involve **small amounts of data**, but generally have a **large number of transactions**. The data being analyzed is usually text, numeric, time, or JSON data. These workloads are usually called online transactional processing, or more simply **OLTP**, and are the most common type of workload. An example of this kind of workload might be sending a text, or purchasing clothes online.
 
 Our contactless payment app will mostly have OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
 
 ### What are OLAP workloads?
 
-Analytical workloads have **large amounts of data** with **low numbers of transactions**. Examples include business intelligence dashboards and financial reporting. These workloads are usually called online analytical processing, or **OLAP**.
+Workloads that generate reports can involve **large amounts of data**, but have a **low number of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards, such as web and mobile analytics or anomaly and fraud detection.
 
 In our scenario, when customer and merchant queries are run on the contactless payment app, these will be OLAP workloads. An example might be a status dashboard, showing if services are running or undergoing maintenance.
 
@@ -18,9 +18,10 @@ There are, broadly, two kinds of applications that work well on Hyperscale (Citu
 
 ### SaaS applications
 
-Multi-tenant is the most common architecture used in SaaS applications, where multiple customers (tenants) share application resources.
+:::row:::
+:::column span="3":::
 
-:::image type="content" source="../media/4a-multitenant.jpeg" alt-text="Multitenant architecture.":::
+Multi-tenant is the most common architecture used in SaaS applications, where multiple customers (tenants) share application resources.
 
 Essentially, multi-tenant means that multiple customers share application resources with other **users, accounts, companies, or organizations**, which can provide massive cost savings. Multi-Tenant applications are inherently relational, with a natural dimension on which to distribute data across nodes: shard by tenant_id.
 
@@ -32,6 +33,13 @@ Essentially, multi-tenant means that multiple customers share application resour
 * Mixed workloads: OLAP workloads for serving per-tenant analytical queries, and large OLTP workloads.
 
 With Hyperscale, you can continue scaling far beyond a single node, giving you efficiency of scale, with many more tenants able to use a single application.
+ :::column-end:::
+:::column span="2":::
+
+:::image type="content" source="../media/4a-multitenant.jpeg" alt-text="Multitenant architecture.":::
+
+:::column-end:::
+:::row-end:::
 
 Our contactless payment app will be a multi-tenant application, with mixed workloads:
 
@@ -42,7 +50,7 @@ To distribute the data, a typical column to shard by could be *user_id*, *custom
 
 ### Real-time applications
 
-Real-Time Applications are aptly named - they’re applications that analyze real-time events as they happen.
+Real-time applications are aptly named - they’re applications that analyze real-time events as they happen.
 
 **Examples**: Customer-facing dashboards requiring sub-second response times and logistics companies who need to monitor if shipments are on-time.  
 **Characteristics**:
@@ -59,7 +67,7 @@ Our contactless payment app will also need customer facing dashboards. Merchants
 | Multi-Tenant Applications                                 | Real-Time Applications                                |
 |-----------------------------------------------------------|-------------------------------------------------------|
 | Sometimes dozens or hundreds of tables in schema          | Small number of tables                                |
-| Queries relating to one tenant (company/store) at a time | Relatively simple analytics queries with aggregations |
+| Queries relating to one tenant (company/store) at a time  | Relatively simple analytics queries with aggregations |
 | OLTP workloads for serving web clients                    | High ingest volume of mostly immutable data           |
 | OLAP workloads that serve per-tenant analytical queries   | Often centering around large table of events            |
 

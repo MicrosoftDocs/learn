@@ -49,4 +49,4 @@ For example, with our payment app, we can partition the transactional data by ti
 
 It’s important to not shard by time, as data will be distributed seemingly at random. However, partitioning by time is a best-practice, and very recommended.
 
-PostgreSQL can natively partition by time. It’s recommended to use the postgres partman extension, pg_partman. The extension is highly effective and has great user experience.
+PostgreSQL can natively partition by time. It’s recommended to use the PostgreSQL partman extension, pg_partman. The extension is highly effective and has great user experience.

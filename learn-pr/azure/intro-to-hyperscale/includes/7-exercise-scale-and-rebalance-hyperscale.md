@@ -33,7 +33,7 @@ psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user
 ```
 
 > [!NOTE]
-> You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password` 
+> You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password`
 
 8. In the Cloud Shell window, run the following query to rebalance the shards for our payment_events and payment_users tables:
 
