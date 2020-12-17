@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.threat-response-sentinel-playbooks.2-exercise-setup
+metadata:
+  title: Exercise - Create an Azure Sentinel playbook
+  description: Create an Azure Sentinel playbook.
+  ms.date: 10/29/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create an Azure Sentinel playbook
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-setup.md)]

@@ -7,12 +7,12 @@
 - Risk practitioner
 - Security engineer
 - Solution architect
-- Student<!-- Would a student be at an intermediate learner level?" -->
+- Student
 - Technology manager
 
 ## Learner level
 
-- **Intermediate**: Material that assumes some knowledge, but little in-depth understanding of the topic. Provides a detailed overview of a topic&#39;s subareas.<!-- I'd delete this last sentence as it doesn't apply to the heading - it doesn't respond to the implied question," What is the learner level?" -->
+- **Intermediate**: Material that assumes some knowledge, but little in-depth understanding of the topic. Provides a detailed overview of a topic&#39;s subareas.
 
 ## Products taught
 
@@ -65,11 +65,12 @@ After completing this module, you&#39;ll be able to:
 ## Module outline of units
 
 1. Introduction
-2. What are Azure Sentinel playbooks?
-3. Trigger a playbook in real-time<!-- On line 113, we have "Trigger playbooks in near real-time." Can we make these consistent? -->
-4. Run playbooks on demand
-5. Exercise unit<!-- On line 140, we have this as "Create an Azure Sentinel playbook." Can we make these consistent? -->
-6. Summary
+2. Exercise Setup
+3. What are Azure Sentinel playbooks?
+4. Trigger playbooks in real-time
+5. Run playbooks on demand
+6. Exercise unit Create an Azure Sentinel playbook
+7. Summary
 
 ## First unit: Introduction
 
@@ -87,7 +88,22 @@ As Contoso's lead security engineer and Azure administrator, you've been tasked 
 
 In this module, you will learn about Azure Sentinel playbooks, including how to write and edit them, configure their workflow, and manage them.
 
-## Second unit: What are Azure Sentinel playbooks?
+## Second unit: Prepare the environment for exercise unit
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 5 minutes
+
+**Use of supplemental demo video:** Potentially
+
+### Key content per learning objective
+
+In this exercise, you'll setup:
+
+- Create an Azure Sentinel instance
+- Create resources needed for exercise units.
+
+## Third unit: What are Azure Sentinel playbooks?
 
 **Type of unit:** Learning content unit
 
@@ -102,7 +118,7 @@ After you complete this unit, you&#39;ll be able to use SOAR for incidents by le
 - Explain the Azure Sentinel Logic Apps connector
 - Use playbooks to orchestrate or automate actions
 
-## Third unit: Trigger playbooks in near real-time <!-- On line 69, we have "3. Trigger a playbook in real-time." Can we make these consistent? -->
+## Fourth unit: Trigger playbooks in near real-time <!-- On line 69, we have "3. Trigger a playbook in real-time." Can we make these consistent? -->
 
 **Type of unit:** Learning content unit
 
@@ -116,7 +132,7 @@ After you complete this unit, you&#39;ll be able to create an incident response 
 - Work with Azure Sentinel connections in Logic Apps
 - Automate a response to an analytic<!-- To a Log Analytics rule? --> rule with playbooks
 
-## Fourth unit: Run playbooks on demand
+## Fifth unit: Run playbooks on demand
 
 **Type of unit:** Learning content unit
 
@@ -129,7 +145,7 @@ After completing this unit, you&#39;ll be able to run a playbook on demand from 
 - Explore the incident page<!-- If the name of the page is "Incident." it should be capitalized and bold. Otherwise, in what app/program is this page located? Should it be the Incident page in Logic Apps? -->
 - Run a playbook on demand
 
-## Fifth unit: Create an Azure Sentinel playbook
+## Sixth unit: Create an Azure Sentinel playbook
 
 **Type of unit:** Exercise unit
 
@@ -158,7 +174,7 @@ To repeat these steps, sign up for a free trial Azure subscription.
 
 After completing the steps, delete any resource groups you created.
 
-## Sixth unit: Summary
+## Seventh unit: Summary
 
 **Type of unit:** Summary unit
 
