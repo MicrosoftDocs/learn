@@ -20,7 +20,7 @@ prerequisites: |
   - Automation and monitoring
   - Azure Monitor and its Log Analytics workspace
   - Azure Logic Apps
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/threat-response-sentinel-playbooks.svg
 levels:
 - beginner
 roles:
@@ -36,5 +36,5 @@ units:
 - learn.azure.threat-response-sentinel-playbooks.6-exercise-create-playbook
 - learn.azure.threat-response-sentinel-playbooks.7-summary
 badge:
-  uid: learn.learn.azure.threat-response-sentinel-playbooks
+  uid: learn.azure.threat-response-sentinel-playbooks.badge
 
