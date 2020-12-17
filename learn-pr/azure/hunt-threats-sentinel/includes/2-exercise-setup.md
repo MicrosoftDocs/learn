@@ -1,7 +1,7 @@
 To complete this optional exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 > [!NOTE]
-> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
+> If you choose to perform the exercise in this module, be aware you may incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/)
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
@@ -9,7 +9,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link.
 
-    [![Deploy To Azure](../media/2-deploy-button.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/incident-management-in-sentinel/resources/sentinel-template.json?azure-portal=true)
+    [![Deploy To Azure](../media/2-deploy-button.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/threat-hunting-sentinel/resources/sentinel-template.json?azure-portal=true)
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
@@ -55,8 +55,8 @@ In this task, you will deploy Azure Sentinel connector to Azure Activity.
 3. In the **Data connectors** pane, search for and select **Azure Activity.** In the **details** pane, select **Open connector page.**
 4. In the **Azure Activity** pane, select the link **Configure Azure Activity logs**.
 5. Select your subscription and then select **Connect.**
-6. When you receive status **Connected**, you can return to **Azure Sentinel | Data connector**.
-7. On the **Azure Sentinel** | **Data connectors** pane ensure the **Azure Activity** connector has a status of **Connected**.
+6. When you receive status **Connected**, return to the **Azure Sentinel | Data connector** pane.
+7. Select the **Azure Sentinel** | **Data connectors** pane ensure the **Azure Activity** connector has a status of **Connected**.
 
 > [!NOTE]
 > The connector for Azure Activity could take 15-30 minutes until it displays a status of connected.
