@@ -6,7 +6,7 @@ You can automate responses to threats on the **Playbooks** page. On this page, y
 
 You can use the header bar, as displayed in the following diagram, to create new playbooks or to enable or disable existing playbooks.
 
-:::image type="content" source="../media/04-PLaybooks-header.PNG" alt-text="Screenshot of the header bar." border="true":::
+:::image type="content" source="../media/04-playbooks-header.png" alt-text="Screenshot of the header bar." border="true":::
 
 The header bar provides the following options:
 
@@ -39,7 +39,7 @@ The automated activity in the playbook is initiated by the Azure Sentinel trigge
 
 Opening Azure Sentinel Connector for the first time prompts you to **Sign in** to your tenant either with a user account from Azure Active Directory (Azure AD) or with Service Principal. This establishes an API connection to your Azure AD. The API connections store variables and tokens that are required to access the API for the connection, such as Azure AD, Office 365, or similar.
 
-:::image type="content" source="../media/04-Sign-In-ADTenant.PNG" alt-text="Screenshot of sign-in to the Azure AD tenant." border="true":::
+:::image type="content" source="../media/04-sign-in-aad-tenant.png" alt-text="Screenshot of sign-in to the Azure AD tenant." border="true":::
 
 Each playbook starts with a trigger followed by actions that define the automated response on a security incident. You can combine actions from an Azure Sentinel connector with other actions from other Logic Apps connectors.
 
@@ -47,11 +47,11 @@ For example, you can add the trigger from an Azure Sentinel connector when an in
 
 The following screenshot displays the incident triggered by Azure Sentinel connector, which detects a suspicious account and sends an email to the administrator.
 
-:::image type="content" source="../media/04-Log-App-Designer.PNG" alt-text="Screenshot of the logic app with actions." border="true":::
+:::image type="content" source="../media/04-log-app-designer.png" alt-text="Screenshot of the logic app with actions." border="true":::
 
 Each step in the workflow design has different fields that you must fill. For example, the **Entities - Get Accounts** action requires you to provide the list of entities from an Azure Sentinel alert. An advantage of using Azure Logic Apps is that you can provide this input from the **Dynamic content** list, which is populated with the outputs of the previous step. For example, the Azure Sentinel connector trigger **When a response to Azure Sentinel Alert is triggered** provides dynamic properties such as **Entities, Alert Display name**, which you can use to fill the inputs.
 
-:::image type="content" source="../media/04-Dynamic-Content.PNG" alt-text="Screenshot that displays dynamic content." border="true":::
+:::image type="content" source="../media/04-dynamic-content.png" alt-text="Screenshot that displays dynamic content." border="true":::
 
 You can also add a control actions group that lets your logic app make decisions. The control actions group can include logical conditions, switch case conditions, or loops.
 
@@ -59,7 +59,7 @@ A **condition** action is an **if** statement that lets your app perform differe
 For example, Contoso receives a large volume of alerts, many of them with recurring patterns, which cannot be processed or investigated. Using real-time automation, the Contoso SecOps teams can significantly reduce their workload by fully automating the routine responses to recurring types of alerts.
 The following screenshot presents a similar situation, where based on the user input, the playbook can change the status of the alert. The control action intercepts the user input, and if the expression evaluates to be a true statement, the playbook changes the status of the alert. In case the control action evaluates the expression to be false, the playbook can run other activities, such as sending an email as depicted in the following screenshot.
 
-:::image type="content" source="../media/04-Condition.PNG" alt-text="Screenshot that displays the logic app condition." border="true":::
+:::image type="content" source="../media/04-condition.png" alt-text="Screenshot that displays the logic app condition." border="true":::
 
 After you provide all the steps in the Logic Apps Designer, save the logic app to create a playbook in Azure Sentinel.
 

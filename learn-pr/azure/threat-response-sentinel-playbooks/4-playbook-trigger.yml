@@ -3,9 +3,9 @@ uid: learn.azure.threat-response-sentinel-playbooks.4-playbook-trigger
 metadata:
   title: Trigger a playbook in real-time
   description: Explain how to trigger a playbook in real time.
-  ms.date: 10/29/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/17/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Trigger a playbook in real-time

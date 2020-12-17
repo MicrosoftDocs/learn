@@ -26,7 +26,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 4. Select **Review + create**, and then select **Create**.
 
-:::image type="content" source="../media/02-Custom-Deployment.PNG" alt-text="Screenshot of the Custom Deployment page." border="true":::
+:::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
 > [!Note]
 > Wait for the deployment to complete. The deployment should take less than five minutes.
@@ -59,7 +59,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 5. Select your subscription, and then select **Connect**.
 6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel | Data connector** blade.
 
-:::image type="content" source="../media/02-Azure-Sentinel-Connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
+:::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
 
 > [!Note]
 > The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps and continue with the subsequent units in this module.
@@ -81,13 +81,13 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
-```kusto
-  AzureActivity
-  | where OperationName == 'Delete Virtual Machine'
-  | where ActivityStatus == 'Accepted'
-  | extend AccountCustomEntity = Caller
-  | extend IPCustomEntity = CallerIpAddress
-```
+    ```kusto
+      AzureActivity
+      | where OperationName == 'Delete Virtual Machine'
+      | where ActivityStatus == 'Accepted'
+      | extend AccountCustomEntity = Caller
+      | extend IPCustomEntity = CallerIpAddress
+    ```
 
 6. In the **Query Scheduling** section, you can configure how often the query should run. Select query to run on every 5 min.
 7. Accept the default values for all other settings and then select **Next: Incident setting (Preview)**.

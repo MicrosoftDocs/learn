@@ -3,9 +3,9 @@ uid: learn.azure.threat-response-sentinel-playbooks.1-introduction
 metadata:
   title: Introduction
   description: Describes how to implement threat response with Azure Sentinel playbooks.
-  ms.date: 10/28/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/17/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

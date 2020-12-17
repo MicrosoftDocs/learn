@@ -3,9 +3,9 @@ uid: learn.azure.threat-response-sentinel-playbooks.3-playbook-overview
 metadata:
   title: What are Azure Sentinel playbooks?
   description: Explore Azure Sentinel playbooks.
-  ms.date: 10/28/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/17/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What are Azure Sentinel playbooks?

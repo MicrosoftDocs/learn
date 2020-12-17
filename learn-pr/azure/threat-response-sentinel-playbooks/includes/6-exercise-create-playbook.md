@@ -38,11 +38,11 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 8. In the search field, enter and select **Azure Sentinel**.
 9. On the **Triggers** tab, select **When a response to an Azure Sentinel alert is triggered (preview)**.
 
-:::image type="content" source="../media/06-Azure-Sentinel-Triger.PNG" alt-text="Screenshot of the Azure Sentinel trigger." border="true":::
+:::image type="content" source="../media/06-azure-sentinel-trigger.png" alt-text="Screenshot of the Azure Sentinel trigger." border="true":::
 
 10. On the **Azure Sentinel** page, set the drop-down menu to **Default Directory**, and then select **Sign in**.
 
-:::image type="content" source="../media/06-Sign-in-AADTenant.PNG" alt-text="Screenshot of the authorizing API connection." border="true":::
+:::image type="content" source="../media/06-sign-in-aad-tenant.png" alt-text="Screenshot of the authorizing API connection." border="true":::
 
 11. Provide the credentials for your Azure subscription, and then select **+ New step**.
 12. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
@@ -52,7 +52,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 > [!TIP]
 > When you select a field, a new window opens to help you fill these fields with dynamic content. On the **Dynamic content** tab, in the search box, you can start entering **Resource group** for example, and then you can select the entry from the list, as the following screenshot displays.
 
-:::image type="content" source="../media/06-Get-Incident.PNG" alt-text="Screenshot of Get Incident." border="true":::
+:::image type="content" source="../media/06-get-incident.png" alt-text="Screenshot of Get Incident." border="true":::
 
 |||
 | --- | --- |
@@ -76,7 +76,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 | Close reason | From the drop-down menu select **Enter custom value**, and then enter **Incident Resolved**. |
 | Close reason text | Write descriptive text. |
 
-:::image type="content" source="../media/06-Change-Incident-Status.PNG" alt-text="Screenshot of the Get Incident status." border="true":::
+:::image type="content" source="../media/06-change-incident-status.png" alt-text="Screenshot of the Get Incident status." border="true":::
 
 18. Choose **Save**, and then close the Logic Apps Designer.
 
