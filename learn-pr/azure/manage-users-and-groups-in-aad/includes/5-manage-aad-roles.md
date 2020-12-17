@@ -15,7 +15,7 @@ For the Owner role, that means all actions, indicated by an asterisk (*); no den
 You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. Try entering the following command into the Cloud Shell on the right.
 
 ```powershell
-Get-AzRmRoleDefinition -Name Owner
+Get-AzureRmRoleDefinition -Name Owner
 ```
 
 This code should produce the following output:
