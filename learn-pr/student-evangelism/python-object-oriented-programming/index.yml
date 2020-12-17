@@ -2,23 +2,18 @@
 uid: learn.student-evangelism.python-object-oriented-programming
 metadata:
   title: Introduction to object-oriented programming with Python
-  description: This module will teach you how to model problems using object
-    oriented programming concepts. Additionally you will learn to turn your
-    model into working code using OOP concepts like classes, attributes and
-    methods to do so.
+  description: This module will teach you how to model problems using object-oriented programming (OOP) concepts.
   ms.date: 12/01/2020
   author: softchris
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to object-oriented programming with Python
-summary: This module will teach you how to model problems using object-oriented
-  programming concepts. Additionally you will learn to turn your model into
-  working code using OOP concepts like classes, attributes and methods to do so.
+summary: This module will teach you how to model problems using object-oriented programming (OOP) concepts. You'll also learn to turn your model into working code by using OOP concepts like classes, attributes, and methods.
 abstract: |
   After completing this module, you'll be able to:
-  - Model problems using OOP concepts. 
-  - Describe the basic concepts involved in OOP.
+  - Model problems using OOP concepts 
+  - Describe the basic concepts involved in OOP
   - Distinguish classes from objects
 iconUrl: /learn/achievements/student-evangelism/python-object-oriented-programming-badge.svg
 levels:
@@ -28,7 +23,7 @@ roles:
 products:
   - vs
 prerequisites: |
-  - Basic knowledge of Python including syntax, writing and invoking functions, creating variables, reading inputs, and outputs from the Python console.  
+  - Basic knowledge of Python - syntax, writing and invoking functions, creating variables, reading inputs, and generating outputs from the Python console.
   - Familiarity using a text editor or IDE  
   - Knowledge on how to execute a Python program
   - Python keywords
