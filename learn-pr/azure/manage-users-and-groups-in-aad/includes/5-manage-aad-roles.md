@@ -140,7 +140,7 @@ Here are some examples.
 
 ## Creating roles
 
-As you can see, Azure AD comes with a bunch of built-in roles that likely cover 99% of what you'll ever want to do. You should prefer to use a built-in role if possible. However, you can create custom roles if you find it necessary to do so.
+Azure AD comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It is preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
 
 > [!NOTE]
 > Custom role creation requires Azure AD Premium P1 or P2 and cannot be done in the free tier.
