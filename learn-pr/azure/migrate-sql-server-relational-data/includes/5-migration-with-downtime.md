@@ -8,19 +8,19 @@ Let's look closely at both options and how the tools work with them.
 
 ## Offline
 
-![Offline migration](../media/5-01-offline.svg)
-
 With offline mode, you take the source database offline. You place it in a state where no more updates are being made. You can then use Azure Database Migration Service to do the migration.
 
-## Online
+![Offline migration](../media/5-01-offline.svg)
 
-![Online migration](../media/5-02-online.svg)
+## Online
 
 During an online migration, the service takes a backup of the source database and migrates the data to the target platform. This enables the source database to continue to receive incoming transactions and return data. When the main part of the migration is complete, the user starts the cutover process. The source database is then taken offline, rendering it unavailable for use.
 
 Database Migration Service then reads the data from the transaction log to bring the target database into sync. When this process is complete, the new target database becomes available for use. This is why the online option is sometimes called *minimal downtime*. There is some downtime, but it's minimal compared to doing an offline migration.
 
-Although the online option looks attractive, there's a major downside: cost. The online option requires creating a SQL Server instance that's based on the Premium price tier. This can become cost prohibitive, especially when you don't need any of the features of the Premium tier except its support of online migrations.
+![Online migration](../media/5-02-online.svg)
+
+Although the online option looks attractive, there's a major downside - cost. The online option requires creating a SQL Server instance that's based on the Premium price tier. This can become cost prohibitive, especially when you don't need any of the features of the Premium tier except its support of online migrations.
 
 Because of this downside, we recommend that you first test by using the offline option to see whether it can run in an acceptable time frame.
 

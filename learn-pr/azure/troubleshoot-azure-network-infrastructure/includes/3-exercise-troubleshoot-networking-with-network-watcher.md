@@ -103,7 +103,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --resource-group $RG
     ```
 
-1. To create an NSG configuration mistake that prevents communication between the VMs, run this command.
+1. To create an NSG **configuration mistake that prevents communication** between the VMs, run this command.
 
     ```azurecli
     az network nsg rule create \
@@ -120,6 +120,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --direction Inbound \
         --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
+
 
 1. To associate a network security group with a subnet, run this command.
 
