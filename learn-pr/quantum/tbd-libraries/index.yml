@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.quantum.tbd-libraries
 metadata:
-  title: TBD quantum libraries
+  title: Using quantum libraries
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: tutorial
   ms.prod: learning-quantum
-title: TBD quantum libraries
+title: Using quantum libraries
 summary: TBD.
 abstract: |
   In this module you will:
@@ -30,10 +30,9 @@ units:
 - learn.quantum.tbd-libraries.1-introduction
 - learn.quantum.tbd-libraries.2-libraries-overview
 - learn.quantum.tbd-libraries.3-api-docs
-- learn.quantum.tbd-libraries.4-write-reflections
-- learn.quantum.tbd-libraries.5-write-oracle
-- learn.quantum.tbd-libraries.6-combine-oracle-reflections
-- learn.quantum.tbd-libraries.7-run-full-program
+- learn.quantum.tbd-libraries.4-write-oracle
+- learn.quantum.tbd-libraries.5-run-full-program
+- learn.quantum.tbd-libraries.6-write-documentation
 - learn.quantum.tbd-libraries.8-knowledge-check
 - learn.quantum.tbd-libraries.9-summary
 badge:

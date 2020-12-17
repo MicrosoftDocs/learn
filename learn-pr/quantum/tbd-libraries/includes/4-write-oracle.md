@@ -87,11 +87,11 @@ $$
 
 After this, the target register can be uncomputed (handled by our `apply-within` statements) and de-allocated, having served its purpose. 
 
-We will define this sequence in the operation `ApplyIsbnOracle`, where `flagQubit` is our qubit in $\ket{-}$, and `ComputeIsbnCheck` is the operation which performs the arithmetic mapping to the target register.
+The following code defines the operation `ApplyIsbnOracle`, where `flagQubit` is our qubit in $\ket{-}$, and `ComputeIsbnCheck` is the operation which performs the arithmetic mapping to the target register.
 
 ```qsharp
     operation ApplyIsbnOracle(missingDigitReg : LittleEndian, flagQubit : Qubit) : Unit is Adj + Ctl {
-        // Allocate an additional register for the check digit.
+        // Allocate an additional register for the target regsiter
         using (rawTarget = Qubit[Length(missingDigitReg!)]) {
             let targetReg = LittleEndian(rawTarget);
             
@@ -107,18 +107,35 @@ We will define this sequence in the operation `ApplyIsbnOracle`, where `flagQubi
     }
 ```
 
+As a part of the full Grover operation, this operation will be nested inside an operation which allocates the ancilla `flagQubit`. This is handled by the following `ReflectAboutCorrectDigit` operation. It takes only the data register as input, allocates `flagQubit` and puts it in the $\ket{-}$, and then provides both as arguments to `ApplyIsbnOracle`.
+
+```qsharp
+    operation ReflectAboutCorrectDigit(missingDigitReg : LittleEndian) : Unit is Adj + Ctl {
+        using (flagQubit = Qubit()) {
+            within {
+                // put flagQubit in |->
+                X(flagQubit);
+                H(flagQubit);
+            } apply {
+                // uses phase kickback to flag the good solutions with a -1 phase
+                ApplyIsbnOracle(missingDigitReg, flagQubit);
+            }
+        }
+    }
+```
+
+
 ### Apply the arithmetic to target state
 
-We just described how the oracle itself is implemented through the `ComputeIsbnCheck` operation, which ultimately performs the mapping
+We just described how the oracle itself is implemented by using the `ComputeIsbnCheck` operation, which itself performs the mapping
 $$
 \ket{x}\ket{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \text{mod} 11}.
 $$
-
 So, what exactly does that operation consist of?
 As mentioned above, we can take a register in $\ket{0}$, initialize it to the number state $\ket{9}$, and then perform the mapping using `MultiplyAndAddByModularInteger`.
 But instead of doing this directly to the target register, we make use of another scratch register, performing the work on it before transferring it's state to the target register and de-allocating it.
 
-This code then takes the form
+The code to do this is shown below. After allocating the scratch register, it is initialized to $\ket{9}$ using `ApplyXorInPlace, and the mapping leaves it in the state $\ket{(9 + 6 \cdot x) \text{mod} 11}$. Then, it's state is transferred to the target register `targetReg` via the `CNOT` gates.
 
 ```qsharp
     operation ComputeIsbnCheck(missingDigitReg : LittleEndian, targetReg : LittleEndian) : Unit is Adj + Ctl {
@@ -135,3 +152,7 @@ This code then takes the form
         }
     }
 ```
+
+## What's next?
+
+In the next unit, you will put all this together and run Grover's algorithm to find the missing digit.
