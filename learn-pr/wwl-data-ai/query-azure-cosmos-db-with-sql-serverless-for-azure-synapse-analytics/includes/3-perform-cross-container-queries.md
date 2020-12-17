@@ -42,7 +42,7 @@ You will now be presented with a result set of the first 10 rows, of a row-based
 
 All top-level properties of the document are represented as columns with the associated property values as the value of the column. All properties are **represented as a structure of the type of values assigned to the properties; and the values themselves, (A) and (B)**. For complex types such as objects and arrays, these remain embedded within the structure but similarly expanded to include type encapsulation of each of their property values. 
 
-In the case of our example, ignoring the system document properties for now, the _id, customerId, orderDate, and shipDate are all stings and have a **type encapsulation of string (A)**. The **details property is an embedded array (B)**, in turn with embedded properties sku, name, price, and quantity of each array element object.
+In this example, ignoring the system document properties for now, the _id, customerId, orderDate, and shipDate are all strings and have a **type encapsulation of string (A)**. The **details property is an embedded array (B)**, in turn with embedded properties sku, name, price, and quantity of each array element object.
 
 Let’s use what we observed here, and what we learned earlier about using OPENROWSET to combine this data with our Customers view we created previously to create a new SalesOrders view by creating the following script
 
@@ -82,6 +82,3 @@ SELECT top 10 * FROM SalesOrders
 ![Query a view in Azure Synapse Studio](../media/query-view.png)
 
 Here you can see the results from our SalesOrders view, returning a flattened columnar view of the JSON documents that reside in the SalesOrder container within the Azure Cosmos DB API for MongoDB account.
-
-However you will notice that we are not quite done, we still have not extracted the order details information from within the details array we identified earlier that contains the crucial revenue and unit sales data needed to answer some of the questions we set out to answer at the beginning of this module. 	
-

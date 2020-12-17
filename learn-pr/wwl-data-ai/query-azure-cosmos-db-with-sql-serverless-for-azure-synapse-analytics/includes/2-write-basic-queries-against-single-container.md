@@ -118,7 +118,7 @@ We are going to be working the same two new containers (Customer and SalesOrder)
 
     You will now be presented with a result set of the first 10 rows of a row-based representation of the documents contained within the Customer container’s analytical store. This is held within an Azure Cosmos Core (SQL) API account, so that data will be represented using the well-defined schema representation by default. 
 
-    The top-level properties of the document are represented as columns with the associated property values as the value of the column. In the case that these values are primitive data types (“string”, “integer”, “float” etc.), the column will be apparently **typed (R) **, if these properties are embedded arrays or objects within the document, the column value will be a structure of these **embedded values (S) **. 
+    The top-level properties of the document are represented as columns with the associated property values as the value of the column. In the case that these values are primitive data types (“string”, “integer”, “float” etc.), the column will be apparently **typed (R)**, if these properties are embedded arrays or objects within the document, the column value will be a structure of these **embedded values (S)**. 
 
     In the case of our example the title, firstName, lastName, emailAddress, and phoneNumber propertied are primitive strings and **assigned to their own columns (R)**, the address and password properties are both **embedded objects (S)**.
 
