@@ -14,7 +14,7 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
-questions:
+  questions:
 
   - content: "What kind of data is in primary focus of GDPR?"
     choices:
