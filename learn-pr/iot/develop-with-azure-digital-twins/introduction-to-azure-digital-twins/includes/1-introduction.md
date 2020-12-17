@@ -1,16 +1,3 @@
----
-metadata:
-  title: Introduction
-  description: This unit introduces Azure Digital Twins
-  ms.date: 11/4/2020
-  author: raniabayoumy
-  ms.author: bamut
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Introduction
-durationInMinutes: 2
----
-
 We hear the term “digital twin” used frequently in many contexts. The term has been around for a while, but the definition has broadened as companies continue to evolve along with technology. With the availability of cloud technology, advances in simulation, modeling capabilities, IoT platforms, and better interoperability with IoT sensors, companies have started to invest heavily in digital twin solutions.
 
 How can a business address their digital twin needs?

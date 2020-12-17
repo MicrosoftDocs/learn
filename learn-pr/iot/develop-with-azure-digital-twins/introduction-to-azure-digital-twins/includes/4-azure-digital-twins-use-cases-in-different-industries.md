@@ -1,16 +1,3 @@
----
-metadata:
-  title: Azure Digital Twins use cases in different industries
-  description: This unit outlines use cases in different industries
-  ms.date: 11/4/2020
-  author: raniabayoumy
-  ms.author: bamut
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Azure Digital Twins use cases in different industries
-durationInMinutes: 12
----
-
 :::image type="content" source="../media/adt-business-env.png" alt-text="Graphical representation of a complete Digital Twins business environment" lightbox="../media/adt-business-env.png":::
 
 As companies navigate their business transformations, new use cases are unlocked.

@@ -1,16 +1,3 @@
----
-metadata:
-  title: Summary
-  description: Further Azure Digital Twins introductory resources
-  ms.date: 11/4/2020
-  author: raniabayoumy
-  ms.author: bamut
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Summary
-durationInMinutes: 3
----
-
 Congratulations, you've completed all the work for this introductory module. Let's summarize what you've learned, and finish with a list of resources to continue building up your knowledge on Azure Digital Twins.
 
 In this module, you learned about:
