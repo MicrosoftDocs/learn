@@ -41,7 +41,7 @@ questions:
       isCorrect: false
       explanation: "That is not correct. CCPA is not a data encryption policy."
 
-   - content: "What is processor?"
+  - content: "What is processor?"
     choices:
     - content: "A person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data"
       isCorrect: false
