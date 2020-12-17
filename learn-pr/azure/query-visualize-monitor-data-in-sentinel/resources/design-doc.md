@@ -17,8 +17,8 @@
 ## Products taught
 
 - Microsoft Azure Sentinel
-- Kusto Query Language (KQL)<!-- Kusto is now a failed term, and has been replaced with "Azure Data Explorer." Please s/r. -->
-- Azure Sentinel workbooks<!-- This term isn't in Term Studio or MS Cloud Style Guide. When I search the internet, it shows up with both "workbooks" and "Workbooks," but the majority are capitalized "Azure Sentinel Workbooks." Currently, capitalization varies throughout this doc. Since the majority are currently lowercase, I've changed them all to lowercase. If you decide to change it to title caps, please search & replace (s/r) -->
+- Azure Data explorer
+- Azure Sentinel workbooks
 
 ## Prerequisites
 
@@ -42,8 +42,8 @@ In this module, you'll learn about Azure Sentinel workbooks and their visual int
 ## Lab exercise
 
 - Draft lab exercise title: Create a workbook using a template
-  - Task 1. Create a workbook from a template
-  - Task 2. Edit a workbook to modify results
+  - Task 1. Explore a Logs page in Azure Sentinel
+  - Task 2. Create and edit a workbook form templates
 - In this exercise, students interact with Azure Sentinel workbooks and review collected security data.
 - Feasibility questions or concerns?
   - Create a new Azure Sentinel workbook
@@ -65,12 +65,13 @@ After completing this module, you'll be able to:
 ## Module outline of units
 
 1. Introduction
-2. Monitor and visualize data
-3. Query data using Kusto Query Language
-4. Use default Azure Sentinel workbooks
-5. Create a new Azure Sentinel workbook
-6. Exercise unit
-7. Summary
+2. Exercise Setup
+3. Monitor and visualize data
+4. Query data using Kusto Query Language
+5. Use default Azure Sentinel workbooks
+6. Create a new Azure Sentinel workbook
+7. Exercise unit
+8. Summary
 
 ## First unit: Introduction
 
@@ -84,7 +85,22 @@ Contoso, Ltd. is a medium-size financial services company in London with a branc
 
 A recent incident with compromised identities led to exposed customer data. The Contoso Security Operations (SecOps) team wants to ensure that proper monitoring and reporting methods are in place. You need to demonstrate the Azure Sentinel reporting and monitoring capabilities, and how they can alert your organization to potential security incidents.
 
-## Second unit: Monitor and visualize data
+## Second unit: Exercise unit - Prepare the environment for exercise unit
+
+**Type of unit:** Exercise unit
+
+**Estimated unit duration:** 5 minutes
+
+**Use of supplemental demo video:** Potentially
+
+### Key content per learning objective
+
+In this exercise, you'll setup:
+
+- Create an Azure Sentinel instance
+- Create resources needed for exercise units.
+
+## Third unit: Monitor and visualize data
 
 **Type of unit:** Learning content unit
 
@@ -97,7 +113,7 @@ After you complete this unit, you&#39;ll be able to visualize security data usin
 - Introduction to the Azure Sentinel Logs page
 - Navigate through the Logs page
 
-## Third unit: Query data using Kusto Query Language
+## Fourth unit: Query data using Kusto Query Language
 
 **Type of unit:** Learning content unit
 
@@ -111,7 +127,7 @@ After you complete this unit, you&#39;ll be able to query your logs using Kusto 
 - Test your Kusto Query Language queries
 - Review the graphical results<!-- View is a non-accessibility term, so I replaced it here with "Review." -->
 
-## Fourth unit: Use default Azure Sentinel workbooks
+## Fifth unit: Use default Azure Sentinel workbooks
 
 **Type of unit:** Learning content unit
 
@@ -124,7 +140,7 @@ After you complete this unit, you&#39;ll be able to explore existing workbook ca
 - Explore existing workbook capabilities
 - Work with different data visualizations
 
-## Fifth unit: Create a new Azure Sentinel workbook
+## Sixth unit: Create a new Azure Sentinel workbook
 
 **Type of unit:** Learning content unit
 
@@ -137,7 +153,7 @@ After you complete this unit, you&#39;ll be to create an Azure Sentinel workbook
 - Work with different steps<!-- Steps are a task with an order that must be followed. I'm not sure how you "work with steps." Can you revisit this? --> in a workbook
 - Add texts, queries, and graphs to a workbook
 
-## Sixth unit: Exercise, Visualize data using Azure Sentinel workbooks (tjm)
+## Seventh unit: Exercise, Visualize data using Azure Sentinel workbooks (tjm)
 
 **Type of unit:** Exercise unit
 
@@ -156,13 +172,13 @@ In this exercise, you will learn to:
 - Create a new Azure Sentinel workbook.
 - Visualize data by adding text, queries, and a graph into your workbook.
 
-Review the steps for this exercise: Create an Azure Sentinel<!-- an Azure Sentinel what? --> using the portal.<!-- "using the Azure portal?" If not, then which portal? Also, online 142, the lab title is "Create a workbook from a template."-->
+Review the steps for this exercise: Create an Azure Sentinel workbook using the Azure portal.
 
 To repeat these steps, sign up for a free trial Azure subscription.
 
 After completing the steps, delete any resource groups you created.
 
-## 7th unit: Summary
+## 7Eigth unit: Summary
 
 **Type of unit:** Summary unit
 
