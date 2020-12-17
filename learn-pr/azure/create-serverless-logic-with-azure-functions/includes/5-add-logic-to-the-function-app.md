@@ -30,7 +30,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. Select **Create** button to create the function.
 
-1. When your function creation completes, on the left-side the code editor is avalibal **Code + Test**.  Select *index.js* code file. The default code that the template generated for us is listed in the following snippet.
+1. When your function creation completes, on the left-side the code editor is available **Code + Test**.  Select *index.js* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
