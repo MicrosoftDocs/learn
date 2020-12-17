@@ -33,7 +33,7 @@ In this exercise, you'll see how to view and edit your firewall rules. Setting t
 
     The result should be the *public* IP address of your local machine. You can confirm this address by opening an Azure PowerShell terminal on your local machine and running the following command:
     
-    `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` 
+    '(Invoke-WebRequest -UseBasicParsing -Uri "https://ipinfo.io/ip").Content'
     
     This is similar to how you found the IP address at the beginning of the module. The two IP addresses should match.  
 
