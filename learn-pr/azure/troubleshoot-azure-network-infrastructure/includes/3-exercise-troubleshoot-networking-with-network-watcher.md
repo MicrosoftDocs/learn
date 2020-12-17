@@ -41,6 +41,10 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --vnet-name MyVNet1
     ```
 
+  > [!NOTE] 
+  >  If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks. 
+
+
 1. To deploy a VM in **FrontendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
@@ -134,10 +138,10 @@ Now, to set up Network Watcher in the same region as the infrastructure, let's u
 To enable Network Watcher, run this command.
 
 ```azurecli
-az network watcher configure \ 
---resource-group $RG \ 
---location <location> \ 
---enabled true
+az network watcher configure \
+--locations westus \
+--enabled true \
+--resource-group $RG
 ```
 
 ## Use Network Watcher to show the topology
