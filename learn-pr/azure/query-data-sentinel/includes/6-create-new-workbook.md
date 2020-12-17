@@ -23,10 +23,10 @@ You can add a new element to your workbook by selecting **+Add** as the followin
 
 ## Text visualizations
 
-You can use text blocks to interpret your security data, section headings, telemetry data, and other information. You need to edit the text using the Markdown markup language, which provides different formatting options for headings, font styles, hyperlinks, and tables.
+You can use text blocks to interpret your security data, section headings, telemetry data, and other information. You can edit the text using the Markdown markup language, which provides different formatting options for headings, font styles, hyperlinks, and tables.
 
 > [!NOTE]
-> Markdown is a markup language that you can use to format text in plain-text documents. For more information on how to format text by using Markdown controls, refer to the markdown guides available online.
+> Markdown is a markup language that you can use to format text in plain-text documents. For more information on how to format text by using Markdown controls, see the markdown guides available online.
 
 After you add the text, you can select the **Preview** tab to preview how your content will appear. Finally, when you complete editing the text, select the **Done Editing** option.
 
@@ -132,7 +132,7 @@ You can add a links/tabs step to customize the navigation in the workbook with t
 - **Action**. Use this option to specify the action that will be performed when you select the link, such as **Url, Set a parameter value** and **Scroll to a step**.
 - **Value**. Use this option to indicate a value for the link.
 - **Settings**. Use this option to configure specific settings based on the link type, and support parameters syntax.
-- **Context Blade**. Use this option to open a new context blade to the side instead of a full view.
+- **Context**. Use this option to open a new context panel to the side instead of a full view.
 - **Style**. Use this option to select between Link, Button (primary), Button (secondary) style.
 
 You can add a new tab by selecting **TABS** from the **Style** drop-down menu on the header bar.

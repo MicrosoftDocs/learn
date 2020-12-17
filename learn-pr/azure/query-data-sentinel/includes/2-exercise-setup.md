@@ -7,7 +7,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link.
 
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Fmaster%2Flearn-pr%2Fazure%2Fquery-visualize-monitor-data-in-sentinel%2Fresources%2FSentinelTemplate.json?azure-portal=true)
+[![Deploy To Azure](../media/02-deploy-button.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/query-data-sentinel/resources/sentinel-template.json?azure-portal=true)
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
@@ -58,7 +58,7 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 4. In the details pane, select **Open connector page**.
 5. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 6. Select your subscription, and then select **Connect**.
-7. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel | Data connector** blade.
+7. When you receive a status of **Connected**, close all open panels to return to the **Azure Sentinel | Data connector** panel.
 
 :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot of the Azure Sentinel Data connectors page." border="true":::
 

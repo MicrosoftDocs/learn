@@ -11,7 +11,7 @@ You can search for specific logs on the **Azure Sentinel Logs** page, which you 
 
 The **Logs** page has four main parts:
 
-- The page header contains links to the **Queries**, **Query explorer**, settings and help section.
+- The page header contains links to the **Queries**, **Query explorer**, settings, and help section.
 - The **Tables** pane displays collected data from the logs in tables, each comprising multiple columns.
 - The query pane is where you write your own query expressions.
 - The query result pane displays the results of your queries.
@@ -33,7 +33,7 @@ You can start predefined queries by selecting **Run**, which will redirect you t
 
 ### Query Explorer
 
-You can use the **Query Explorer** link on the page header to access your previously saved queries. You can also access some **Solution Queries** that basically filter the most common queries that you can use to filter the data. From the **Solution Queries** list, you can either run the query or organize the query in the favorites section by selecting the star symbol.
+The **Query Explorer** link on the page header to access your previously saved queries. You can also access some **Solution Queries** that basically filter the most common queries that you can use to filter the data. From the **Solution Queries** list, you can either run the query or organize the query in the favorites section by selecting the star symbol.
 
 ### Tables pane
 
@@ -45,8 +45,8 @@ The following screenshot displays the logs collected in Azure Sentinel solution.
 
 ### Queries pane
 
-You can use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Queries** pane can help you in writing an accurate query by providing suggestions and automatically filling the expected elements of the query.
-You can use the capabilities of the Kusto Query Language (KQL) to write a query that retrieves data from the logs. The following example illustrates how to use KQL code in your queries to identify deleted virtual machines.
+The **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Queries** pane can help you in writing an accurate query by providing suggestions and automatically filling the expected elements of the query.
+Take advantage of the capabilities of the Kusto Query Language (KQL) to write a query that retrieves data from the logs. The following example illustrates how to use KQL code in your queries to identify deleted virtual machines.
 
 ```kusto
 AzureActivity
@@ -62,17 +62,17 @@ The header toolbar provides additional interaction with the query, as displayed 
 
 :::image type="content" source="../media/03-header-toolbar.png" alt-text="Screenshot of the header toolbar, with options described in the text following the image." border="true":::
 
-You can save the query from the **Query** pane by selecting **Save**. This opens a new window, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
+Save the query from the **Query** pane by selecting **Save**. This opens a new window, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
 In the **Time Range** field, you can provide a different time to change the time range for which you want to display the results of the query.
-You can also create a link for the query and share with other team members by selecting **Copy link to query**. You can also copy the query text.
+Create a link for the query and share with other team members by selecting **Copy link to query**. You can also copy the query text.
 From the header toolbar in the **Query** pane, you can create either a **New Azure Monitor alert** or a **New Azure Sentinel alert**. If you opt to create a new Azure Sentinel alert, you will be directed to the next steps for creating an analytics rule.
-You can export the query into one of the following formats:
+Export the query into one of the following formats:
 
-- **Export to CSV**. Use this option to export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.
-- **Export to CSV-Displayed Columns**. Use this option to export only those columns that are displayed in the results windows of the query.
-- **Export to Power BI (M query)**. Use this option to create and download a **PowerBIQuery.txt** file that you can open with Microsoft Power BI application.
+- **Export to CSV**. To export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.
+- **Export to CSV-Displayed Columns**. To export only those columns that are displayed in the results windows of the query.
+- **Export to Power BI (M query)**. To create and download a **PowerBIQuery.txt** file that you can open with Microsoft Power BI application.
 
-You can pin the results of the query into a private or shared dashboard so you can quickly examine the results of the query.
+You can pin the results of the query into a private or shared dashboard to quickly examine the results of the query.
 You can use **Format query** on the header toolbar to make the query more readable.
 
 > [!NOTE]

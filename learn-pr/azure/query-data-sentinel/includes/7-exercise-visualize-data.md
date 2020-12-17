@@ -78,7 +78,7 @@ AzureActivity
 |summarize by Level
 ```
 
-16. Confirm that the query result returns two type of events based on the level: **Informational** and **Warning**.
+16. Confirm that the query result returns two types of events based on the level: **Informational** and **Warning**.
 
 :::image type="content" source="../media/07-add-parameter.png" alt-text="Screenshot of the New Parameter pane, with steps for adding a new parameter. The Save, Query, Run query options and the AzureActivity section are highlighted in the screenshot." border="true":::
 

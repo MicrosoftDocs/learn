@@ -21,15 +21,15 @@ As mentioned earlier, Contoso is concerned about compromised identities. As the 
 
 The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and tables that can provide important insight about the sign-in activity in Azure AD. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users. In addition, you can also review information about failed activities and the errors that triggered the failures.
 
-On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in the Azure AD. For example, Contoso wants to identify users that can sign in to the Azure portal, so they can filter the data as displayed in the following screenshot.
+On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in the Azure AD. For example, Contoso wants to identify users that can sign-in to the Azure portal, so they can filter the data as displayed below.
 
-:::image type="content" source="../media/05-filter-users.png" alt-text="Screenshot that displays Sign-in Analysis with filtering of the users that sign in to the Azure Portal." border="true":::
+:::image type="content" source="../media/05-filter-users.png" alt-text="Screenshot that displays Sign-in Analysis with filtering of the users that sign-in to the Azure portal." border="true":::
 
 Contoso is interested in identifying the failed sign-in attempts, so that they can display these accounts by selecting the information tiles, and then selecting a tile or a row to display more information such as:
 
 - **Sign-in Location**. This section indicates the location from which the user signed in to Azure AD.
 - **Location Sign-in details**. This section displays the users, their sign-in status, and the time of the sign-in attempt.
-- **Sign-ins by Device**. This section lists devices used by the users to sign-in in Azure AD.
+- **Sign-ins by Device**. This section lists devices used by the users to sign-in Azure AD.
 - **Device Sign-in details**. This section displays the users that signed in on a particular device and the time they signed in.
 
 This information tile in the background is configured to run the query and filter the data collected from the Azure AD connector. Azure Sentinel then visualizes and presents the data collected with tables that are more meaningful and provide useful insight on user sign-in attempts.
@@ -53,7 +53,7 @@ For example, Contoso wants to search the logs for more information that presents
 
 ## Explore saved workbooks
 
-From the **Templates** page, you can save a workbook from existing templates by selecting one of the templates, and then selecting **Save.** You must provide a location to indicate where you want to save the workbook. This creates an Azure resource based on the template with template&#39;s JSON file.
+From the **Templates** page, you can save a workbook from existing templates by selecting one of the templates, and then selecting **Save.** You must provide a location to indicate where you want to save the workbook. This creates an Azure resource based on the template with template's JSON file.
 
 Saved workbooks are available on the **My Workbooks** tab, and you can further customize them. You can open saved workbooks by selecting **View saved workbook**. This opens the same page as the template workbook page, but you can customize this one based on Contoso's requirements.
 
