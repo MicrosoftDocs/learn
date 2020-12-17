@@ -3,7 +3,7 @@ uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.understand-
 metadata:
   description: In this unit, you'll examine the Digital Twins Definition Language (DTDL) by going over the main components of the language and looking at some examples.
   ms.date: 10/1/2020
-  author: PeterTurcan
+  author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

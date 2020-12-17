@@ -4,7 +4,7 @@ metadata:
   title: Build an Azure Digital Twins graph for a chocolate factory production line
   description: This module covers the first steps in building an Azure Digital Twins solution. The units cover making an instance of Azure Digital Twins, and learning about, creating, and visualizing, DTDL models. You will create, validate, graph, and query, models for a chocolate factory production line.
   ms.date: 11/1/2020
-  author: PeterTurcan
+  author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
