@@ -78,8 +78,8 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
     There are several parameters that need to be specified on the **spark.read** method to facilitate a read from Azure Cosmos DB analytical store:
 
     -	The format in the spark.read.format parameter needs to be specified as **cosmos.olap** to indicate that we are wanting to read from Azure Cosmos DB analytical store.
-    -	An option needs to be set for **spark.synapse.linkedService** with the name of the previously create linked service.
-    -	An option needs to be set for **spark.cosmos.container** specifying the name of the container that we wish to read.
+    -	An option should be set for **spark.synapse.linkedService** with the name of the previously create linked service.
+    -	An option should be set for **spark.cosmos.container** specifying the name of the container that we wish to read.
     -	Optionally the **spark.cosmos.preferredRegions** option can be set to a list of preferred regions to use if you are using a Cosmos DB account with multiple regions configured. 
 
 14.	Click the **run cell** button and within a couple of seconds the data from the respective analytical stores will be loaded into the two DataFrames we have defined. 
@@ -122,7 +122,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     In this example the _id, customerId, orderDate, and shipDate are all stings and have a type of encapsulation of “string” (T). The details property is an embedded array (U), we can expand the structure within the column to reveal the three elements of the array [0],[1],[3] and in turn the embedded properties sku, name, price, and quantity of each array element object. 
 
-    You will also not the presence of several Azure Cosmos DB system document properties (S). Azure Cosmos DB automatically has system properties such as _ts, _self, _attachments, _rid, and _etag associated with every document. These system document properties are seldom useful for analytical store query purposes and are easily removed by running the following PySpark code:
+    You will also note the presence of several Azure Cosmos DB system document properties (S). Azure Cosmos DB automatically has system properties such as _ts, _self, _attachments, _rid, and _etag associated with every document. These system document properties are seldom useful for analytical store query purposes and are easily removed by running the following PySpark code:
 
     ```python
     system_document_properties = {'_attachments','_etag','_rid','_self','_ts'}
@@ -134,7 +134,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
 19.	Paste the above code, click the **run cell** button.
 
-    This code defines the set of system property columns we wish to remove from the DataFrame, subtracts these from the list of all columns and the selects just this subset of columns back into the DataFrame itself. If we display the resultant DataFrame, we see the **resultset (R)** no longer contains these columns.
+    This code defines the set of system property columns we wish to remove from the DataFrame, subtracts these from the list of all columns, and then selects just this subset of columns back into the DataFrame itself. If we display the resultant DataFrame, we see the **resultset (R)** no longer contains these columns.
     Similar code to remove system property columns from the dfSalesOrder DataFrame is as follows:
 
     ```python
