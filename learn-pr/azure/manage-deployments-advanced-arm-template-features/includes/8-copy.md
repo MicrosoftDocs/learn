@@ -122,7 +122,7 @@ When you use the `copy` element for resources, you end up creating numerous simi
 Sometimes you might want to control how resources are created and in what order. The reasons for controlling the order might be:
 
 - **Environment limitations**. Depending on what environment you deploy to, you might want to limit how much this environment is affected by a deployment. In a production environment, it makes sense to limit how many resources are affected at any one time. You can configure a *deployment mode* to control the number of concurrently deployed resources.
-- **Dependencies**. You could be dependent on something to already exist before you venture on to create the resource you need. To express such a dependency, there's a construct called `dependsOn`.
+- **Dependencies**. You might be dependent on something to already exist before you venture on to create the resource you need. To express such a dependency, there's a construct called `dependsOn`.
 
 ### Deployment modes and `copy`
 

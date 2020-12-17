@@ -4,7 +4,7 @@ Here are few aspects to consider:
 
 - **Something needs to exist before something else can be deployed.**
 
-    For example, say you need a key vault in Azure Key Vault in order to fetch secrets that you need to load in a virtual machine (VM). When deploying key vault, you can at the same time deploy its secret within the same template. However, the key vault needs to be deployed before its secret. Therefore, the secret _depends_ on the key vault to exist. The key vault and the secret are deployed serially, one after another, starting with the key vault, because of the dependency.
+    For example, say you need a key vault in Azure Key Vault in order to fetch secrets that you need to load in a virtual machine (VM). When deploying the key vault, you can at the same time deploy its secret within the same template. However, the key vault needs to be deployed before its secret. Therefore, the secret _depends_ on the key vault to exist. The key vault and the secret are deployed serially, one after another, starting with the key vault, because of the dependency.
 
 - **Can I rely on how things work on Azure Resource Manager?**
 

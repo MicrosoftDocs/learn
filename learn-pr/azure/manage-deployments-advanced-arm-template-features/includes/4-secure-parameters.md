@@ -14,7 +14,7 @@ Key Vault is capable of storing both keys and secrets. Its numerous features mak
 
 - **Role-based access control**. You can manage your key vault by using various roles, so you can ensure it's usable by apps as well as different levels of admins.
 
-- **Allowing users and apps**. You can configure your key vault so that both specific users as well as apps can have access to the Key Vault. For apps, you create a *service principal*. In fact, you can configure your Key Vault so that only service principals have access to it.
+- **Allowing users and apps**. You can configure your key vault so that both specific users as well as apps can have access to the key vault. For apps, you create a *service principal*. In fact, you can configure your key vault so that only service principals have access to it.
 
    > [!NOTE]
    > A service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources. You restrict access to resources by only assigning the principal a role or a subset of roles with limited access rights. This approach gives you a more granular control over what and how much something can access your resources.
@@ -57,7 +57,7 @@ Microsoft.KeyVault/vaults/deploy/action
 
 ## Configure the deployment parameters file  
 
-Instead of specifying each parameter and corresponding values as key-value pairs during deployment, you could use a parameters file.
+Instead of specifying each parameter and corresponding values as key-value pairs during deployment, you can use a parameters file.
 
 In this parameters file, you specify which key vault and which secret in that key vault you're interested in. You do this by modifying a parameter, and then updating the deployment template to use this parameter.
 
