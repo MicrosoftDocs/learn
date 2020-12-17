@@ -23,7 +23,7 @@ The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and t
 
 On the **Azure AD Sign-in logs** page, you can expand the time range or filter the apps and users that have sign-in privileges in the Azure AD. For example, Contoso wants to identify users that can sign in to the Azure portal, so they can filter the data as displayed in the following screenshot.
 
-:::image type="content" source="../media/05-Filter-Users.PNG" alt-text="Screenshot that displays Sign-in Analysis with filtering of the users that sign in to the Azure Portal." border="true":::
+:::image type="content" source="../media/05-filter-users.png" alt-text="Screenshot that displays Sign-in Analysis with filtering of the users that sign in to the Azure Portal." border="true":::
 
 Contoso is interested in identifying the failed sign-in attempts, so that they can display these accounts by selecting the information tiles, and then selecting a tile or a row to display more information such as:
 
@@ -36,11 +36,11 @@ This information tile in the background is configured to run the query and filte
 
 The workbook contains additional tiles that indicate the users who signed in using conditional access. From the **Conditional access status** table, you can review users who required multifactor authentication (MFA) to validate their identity.
 
-:::image type="content" source="../media/05-Conditional-Access.PNG" alt-text="Screenshot of Conditional Access activity." border="true":::
+:::image type="content" source="../media/05-conditional-access.png" alt-text="Screenshot of Conditional Access activity." border="true":::
 
 The rest of the page also contains tables and charts that are interactive, and by selecting some of the rows or tiles, you can filter the data that is presented. Some tables are created with links to corresponding logs as displayed in the following screenshot.
 
-:::image type="content" source="../media/05-Links.PNG" alt-text="Screenshot of the links that can open the query in Azure Data Explorer or pin the query in dashboard." border="true":::
+:::image type="content" source="../media/05-links.png" alt-text="Screenshot of the links that can open the query in Azure Data Explorer or pin the query in dashboard." border="true":::
 
 > [!NOTE]
 > You can also pin the query step in the private or shared dashboard for quick retrieval.
@@ -49,7 +49,7 @@ The rest of the page also contains tables and charts that are interactive, and b
 
 For example, Contoso wants to search the logs for more information that presents the failed user sign-in and they are redirected to the Azure Data Explorer, where Azure Sentinel performs the log query to filter the information.
 
-:::image type="content" source="../media/05-Data-Explorer.png" alt-text="Screenshot of Data Explorer." border="true":::
+:::image type="content" source="../media/05-data-explorer.png" alt-text="Screenshot of Data Explorer." border="true":::
 
 ## Explore saved workbooks
 
@@ -61,7 +61,7 @@ You can select **Edit** to open the workbook in the edit mode, where you can add
 
 The header bar in the editing mode contains several options, which the following screenshot depicts.
 
-:::image type="content" source="../media/05-Editing-options.PNG" alt-text="Screenshot of the Editing mode that depicts the various editing options such as Save, Save As, Settings, Refresh, Share, Help, and more." border="true":::
+:::image type="content" source="../media/05-editing-options.png" alt-text="Screenshot of the Editing mode that depicts the various editing options such as Save, Save As, Settings, Refresh, Share, Help, and more." border="true":::
 
 When you switch to the editing mode, you'll notice several **Edit** options, which correspond to each individual aspect of your workbook.
 
@@ -69,7 +69,7 @@ If you select one of these edit options, you can examine the query that Azure Se
 
 When you select the settings icon, the **Settings** page opens, where you can provide additional resources that you want to use in the workbook. You can also change the style of the workbook, provide tagging, or pin an item in the workbook.
 
-:::image type="content" source="../media/05-Settings.PNG" alt-text="Screenshot of the Settings page." border="true":::
+:::image type="content" source="../media/05-settings.png" alt-text="Screenshot of the Settings page." border="true":::
 
 You can rearrange the placement of different tables in the workbook by selecting **Show Pin Options**.
 

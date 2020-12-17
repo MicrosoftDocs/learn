@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: azure.query-visualize-monitor-data-in-sentinel
+uid: azure.query-data-sentinel
 metadata:
   title: Query, visualize, and monitor data in Azure Sentinel
   description: Describe how to query, visualize, and monitor data in Azure Sentinel.
-  ms.date: 11/20/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/17/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query, visualize, and monitor data in Azure Sentinel
@@ -21,7 +21,7 @@ prerequisites: |
   - Basic experience with Azure services
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - An Azure Sentinel instance in your Azure subscription
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/query-data-sentinel.svg
 levels:
 - beginner
 roles:
@@ -29,13 +29,13 @@ roles:
 products:
 - azure
 units:
-- learn.azure.query-visualize-monitor-data-in-sentinel.1-introduction
-- learn.azure.query-visualize-monitor-data-in-sentinel.2-exercise-setup
-- learn.azure.query-visualize-monitor-data-in-sentinel.3-monitor-visualize-data
-- learn.azure.query-visualize-monitor-data-in-sentinel.4-query-data
-- learn.azure.query-visualize-monitor-data-in-sentinel.5-workbooks
-- learn.azure.query-visualize-monitor-data-in-sentinel.6-create-new-workbook
-- learn.azure.query-visualize-monitor-data-in-sentinel.7-exercise-visualize-data
-- learn.azure.query-visualize-monitor-data-in-sentinel.8-summary
+- learn.azure.query-data-sentinel.1-introduction
+- learn.azure.query-data-sentinel.2-exercise-setup
+- learn.azure.query-data-sentinel.3-monitor-visualize-data
+- learn.azure.query-data-sentinel.4-query-data
+- learn.azure.query-data-sentinel.5-workbooks
+- learn.azure.query-data-sentinel.6-create-new-workbook
+- learn.azure.query-data-sentinel.7-exercise-visualize-data
+- learn.azure.query-data-sentinel.8-summary
 badge:
-  uid: learn.learn.azure.query-visualize-monitor-data-in-sentinel
+  uid: learn.azure.query-data-sentinel.badge

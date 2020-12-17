@@ -25,12 +25,12 @@ In this exercise, you will explore logs and Azure Sentinel Workbooks. You will p
 4. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category, move the cursor over the **Azure Activity** table or use the Tab key to navigate to the table, and then select **Preview data**.
 5. In the **AzureActivity** window, select **See in query editor**. This option enables you to preview the data and to check if the results will be as you expect before you actually run a query with it.
 
-:::image type="content" source="../media/07-Tables-Pane.png" alt-text="Screenshot of the Tables pane." border="true":::
+:::image type="content" source="../media/07-tables-pane.png" alt-text="Screenshot of the Tables pane." border="true":::
 
 6. In the **Query** section, you can observe the query structure. This query searches and presents the last 10 events from the Azure Activity log. The first row in the query, **AzureActivity** specifies the table used in the query. The second line contains a **where** statement, which filters the records from the last day. The third line contains another statement **where** to filter only the last 10 events.
 7. The query results section presents the results of the query. You can expand any of the records to review the values in the table. Select the name of any column to sort the results by that column. Select the filter icon next to it to provide a filter condition. This is similar to adding a filter condition to the query itself except that this filter is cleared if you run the query again. If you select the **Columns** drop-down menu, you can filter the columns from the table that you want to be displayed. By selecting **Group columns**, you can group records by a particular column.
 
-:::image type="content" source="../media/07-Query-Result.png" alt-text="Screenshot of the Query results with the previous items called out." border="true":::
+:::image type="content" source="../media/07-query-result.png" alt-text="Screenshot of the Query results with the previous items called out." border="true":::
 
 8. Select **Queries** tab in the left pane. This pane includes example queries that you can add to the query window. If you're using your own workspace, you should have a variety of queries in multiple categories, but if you're using the demonstration environment, you might only see a single **Log Analytics workspaces** category.
 
@@ -48,7 +48,7 @@ In this exercise, you will explore logs and Azure Sentinel Workbooks. You will p
 7. You can interact with the workbook by selecting some of the elements.
 8. Select the **Time range:** field to select a different time range for the records presented in the **Azure Activity** table. Select the **Caller:** drop-down menu to filter the records based on the user or service that generates the events. Select the **Resource Group:** drop-down menu to filter the events based on a specific resource group.
 
-:::image type="content" source="../media/07-Default-workbook.png" alt-text="Screenshot of the Azure Activity page, with the previous elements called out." border="true":::
+:::image type="content" source="../media/07-default-workbook.png" alt-text="Screenshot of the Azure Activity page, with the previous elements called out." border="true":::
 
 9. Scroll down to the **Caller activities** table, which displays the activities run by your users or security principals. Sort the table data in each column by selecting the arrows in the column header.
 10. Scroll up to the header bar in the **Azure Activity-** *sentinelname* page. Select the **Edit** option to switch the workbook to the editing mode. Observe the various **Edit** options that display on the page.
@@ -80,7 +80,7 @@ AzureActivity
 
 16. Confirm that the query result returns two type of events based on the level: **Informational** and **Warning**.
 
-:::image type="content" source="../media/07-Add-parameter.png" alt-text="Screenshot of the New Parameter pane, with steps for adding a new parameter. The Save, Query, Run query options and the AzureActivity section are highlighted in the screenshot." border="true":::
+:::image type="content" source="../media/07-add-parameter.png" alt-text="Screenshot of the New Parameter pane, with steps for adding a new parameter. The Save, Query, Run query options and the AzureActivity section are highlighted in the screenshot." border="true":::
 
 17. Select **Save** to commit the changes, and notice the parameter step now includes an additional parameter called **Level**.
 

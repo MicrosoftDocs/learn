@@ -16,7 +16,7 @@ The **Logs** page has four main parts:
 - The query pane is where you write your own query expressions.
 - The query result pane displays the results of your queries.
 
-:::image type="content" source="../media/03-LOGS.png" alt-text="Screenshot of the default Logs page that shows four elements: the Header bar, the Tables pane, the Queries pane, and the Query results/history pane." border="true":::
+:::image type="content" source="../media/03-logs.png" alt-text="Screenshot of the default Logs page that shows four elements: the Header bar, the Tables pane, the Queries pane, and the Query results/history pane." border="true":::
 
 ### Queries
 
@@ -29,7 +29,7 @@ When you select the **Queries** link on the page header, a new window opens, whe
 
 You can start predefined queries by selecting **Run**, which will redirect you to the query pane, where you can observe the query structure and the results. To address Contoso's concern about unauthorized users, you can select the predefined query **Unauthorized Users**, as depicted in the following screenshot.
 
-:::image type="content" source="../media/03-Unauthorized-Users.png" alt-text="Screenshot that presents unauthorized users." border="true":::
+:::image type="content" source="../media/03-unauthorized-users.png" alt-text="Screenshot that presents unauthorized users." border="true":::
 
 ### Query Explorer
 
@@ -41,7 +41,7 @@ The **Tables** pane groups logs from different solutions into tables. You can ex
 
 The following screenshot displays the logs collected in Azure Sentinel solution.
 
-:::image type="content" source="../media/03-Logs-Azure-Sentinel.png" alt-text="Screenshot displaying the Tables view." border="true":::
+:::image type="content" source="../media/03-logs-azure-sentinel.png" alt-text="Screenshot displaying the Tables view." border="true":::
 
 ### Queries pane
 
@@ -60,7 +60,7 @@ AzureActivity
 
 The header toolbar provides additional interaction with the query, as displayed in the following screenshot.
 
-:::image type="content" source="../media/03-Header-Toolbar.png" alt-text="Screenshot of the header toolbar, with options described in the text following the image." border="true":::
+:::image type="content" source="../media/03-header-toolbar.png" alt-text="Screenshot of the header toolbar, with options described in the text following the image." border="true":::
 
 You can save the query from the **Query** pane by selecting **Save**. This opens a new window, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
 In the **Time Range** field, you can provide a different time to change the time range for which you want to display the results of the query.

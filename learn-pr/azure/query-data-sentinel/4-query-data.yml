@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.query-visualize-monitor-data-in-sentinel.4-query-data
+uid: learn.azure.query-data-sentinel.4-query-data
 metadata:
   title: Query data using Kusto Query Language
   description: Query data using Kusto Query Language.
-  ms.date: 11/09/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 12/17/2020
+  author: micrum
+  ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query data using Kusto Query Language

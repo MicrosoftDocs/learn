@@ -19,7 +19,7 @@ Each workbook provides a rich set of capabilities for visualizing the security d
 
 You can add a new element to your workbook by selecting **+Add** as the following screenshot depicts.
 
-:::image type="content" source="../media/06-Add-visualization.PNG" alt-text="Screenshot of adding a new step in the workbook." border="true":::
+:::image type="content" source="../media/06-add-visualization.png" alt-text="Screenshot of adding a new step in the workbook." border="true":::
 
 ## Text visualizations
 
@@ -45,7 +45,7 @@ You can create a different query from the logs and visualize the data as text, c
 
 When you create a query, Azure Sentinel adds a new Run Query step to the workbook as the following screenshot depicts:
 
-:::image type="content" source="../media/06-Query-Visualization.PNG" alt-text="Screenshot of the Query visualization step, with the Done editing button called out." border="true":::
+:::image type="content" source="../media/06-query-visualization.png" alt-text="Screenshot of the Query visualization step, with the Done editing button called out." border="true":::
 
 On the header bar, there are several fields that provide you options to tune the output of the query.
 
@@ -68,7 +68,7 @@ On the **Advanced Settings** tab, you can provide additional customization for t
 
 For example, on the **Settings** tab, you can enter the **Chart title**, as the following screenshot depicts.
 
-:::image type="content" source="../media/06-Advanced-Settings.PNG" alt-text="Screenshot of the Advanced settings tab, with the chart title, Total number of Security Alerts." border="true":::
+:::image type="content" source="../media/06-advanced-settings.png" alt-text="Screenshot of the Advanced settings tab, with the chart title, Total number of Security Alerts." border="true":::
 
 You can use the **Style** tab to adjust the margin and padding element in the step. After you are done customizing the settings and styles, remember to save the step by selecting **Done Editing**.
 
@@ -95,7 +95,7 @@ SecurityAlert
 
 In the previous example, the query indicated the visualization type for the data. You can also use the query without including the *render* parameter, and then use the **Visualization** drop-down menu to select one of the offered types of visualizations, as indicated in the following screenshot.
 
-:::image type="content" source="../media/06-Visualization-Menu.PNG" alt-text="Screenshot of the Visualization drop-down menu options." border="true":::
+:::image type="content" source="../media/06-visualization-menu.png" alt-text="Screenshot of the Visualization drop-down menu options." border="true":::
 
 ## Grid visualizations
 
