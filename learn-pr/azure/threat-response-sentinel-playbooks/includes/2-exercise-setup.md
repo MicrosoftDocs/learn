@@ -9,27 +9,27 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link:
 
-[![Deploy To Azure](../media/02-deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/threat-response-sentinel-playbooks/resources/sentinel-template.json?azure-portal=true)
+    [![Deploy To Azure](../media/02-deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/threat-response-sentinel-playbooks/resources/sentinel-template.json?azure-portal=true)
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
 
-|||
-| --- | --- |
-| Subscription | Select your Azure subscription. |
-| Resource Group | Select Create new and provide a name for the resource group such as azure-sentinel-rg.|
-| Region | From the drop-down menu, select the region where you want to deploy the Azure Sentinel. |
-| Workspace name  | Provide a unique name for the Azure Sentinel workspace such as *yourname*-sentinel. |
-| Location | Accept the default value of [resourceGroup().location]. |
-| Simplevm Name | Accept the default value of simple-vm.|
-| Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
+    |||
+    | --- | --- |
+    | Subscription | Select your Azure subscription. |
+    | Resource Group | Select Create new and provide a name for the resource group such as azure-sentinel-rg.|
+    | Region | From the drop-down menu, select the region where you want to deploy the Azure Sentinel. |
+    | Workspace name  | Provide a unique name for the Azure Sentinel workspace such as *yourname*-sentinel. |
+    | Location | Accept the default value of [resourceGroup().location]. |
+    | Simplevm Name | Accept the default value of simple-vm.|
+    | Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
 
 4. Select **Review + create**, and then select **Create**.
 
-:::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
+    :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
-> [!Note]
-> Wait for the deployment to complete. The deployment should take less than five minutes.
+    > [!Note]
+    > Wait for the deployment to complete. The deployment should take less than five minutes.
 
 ## Task 2: Check the resources created
 
@@ -59,10 +59,10 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 5. Select your subscription, and then select **Connect**.
 6. When you receive a status of **Connected**, close all open panels to return to the **Azure Sentinel | Data connector** panel.
 
-:::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
+    :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
 
-> [!Note]
-> The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps and continue with the subsequent units in this module.
+    > [!Note]
+    > The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps and continue with the subsequent units in this module.
 
 ## Task 4: Create an analytics rule
 
@@ -71,14 +71,14 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 3. On the **Azure Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
 4. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic >**.
 
-  |||
-  | --- | --- |
-  | Name | Provide a descriptive name such as **Delete Virtual Machines** to explain what type of suspicious activity the alert detects. |
-  | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
-  | Tactics | From the **Tactics** drop-down menu, choose **Initial Access** category to classify the rule following the MITRE tactics. |
-  | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
-  | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
-
+    |||
+    | --- | --- |
+    | Name | Provide a descriptive name such as **Delete Virtual Machines** to explain what type of suspicious activity the alert detects. |
+    | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
+    | Tactics | From the **Tactics** drop-down menu, choose **Initial Access** category to classify the rule following the MITRE tactics. |
+    | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
+    | Status | Specify the status of the rule. By default, the status is **Enable.** You can select **Disable** to disable the rule if it generates a large number of false positives. |
+    
 5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
 
     ```kusto
