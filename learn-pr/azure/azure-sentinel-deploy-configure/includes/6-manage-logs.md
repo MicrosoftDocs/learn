@@ -10,7 +10,7 @@ Any source that sends logs to Monitor or Log Analytics inherently also supports 
 
 Azure Sentinel bills based on the volume of data that's ingested for analysis in Azure Sentinel and that's stored in the Log Analytics workspace. There are two ways to pay for the Azure Sentinel service: Capacity Reservations and pay-as-you-go.
 
-The Azure Monitor Analytics Workspace is the location where the data is sent. Data in a workspace is organized into tables. Each table stores different kinds of data and has a unique set of properties. The properties are based on the resource that generates the data. Most data sources write to their own tables in a Log Analytics workspace.
+The Azure Monitor Log Analytics Workspace is the location where the data is sent. Data in a workspace is organized into tables. Each table stores different kinds of data and has a unique set of properties. The properties are based on the resource that generates the data. Most data sources write to their own tables in a Log Analytics workspace.
 
 You can get the full benefit of the Azure Sentinel experience when using a single workspace. Even so, some circumstances might require you to have multiple workspaces, such as:
 
