@@ -10,7 +10,7 @@ You can use a playbook that can automatically dismiss this risky user property i
 
 ## Azure Sentinel repository on GitHub
 
-[Azure Sentinel repository on GitHub](https://github.com/Azure/Azure-Sentinel) contains ready-to-use playbooks to help you automate responses on incidents. These playbooks are defined with Azure Resource Manager (ARM) templates that use Logic App Azure Sentinel triggers.
+[Azure Sentinel repository on GitHub](https://github.com/Azure/Azure-Sentinel) contains ready-to-use playbooks to help you automate responses on incidents. These playbooks are defined with Azure Resource Manager (ARM template) that use Logic App Azure Sentinel triggers.
 
 For the scenario described earlier, you can use the **Dismiss-AADRiskyUser** playbook, which is located in the Azure Sentinel repository on GitHub, and deploy it directly in your Azure subscription.
 
@@ -21,7 +21,7 @@ The name of each API connection is appended with the **azuresentinel** prefix. Y
 
 ## Attach a playbook to an existing incident
 
-After your playbook is ready, you can open the **Incident** page in Azure Sentinel, and then select the existing incident. In the details pane, you can select **View full details** to explore the properties of the incident. From the **Alerts blade,** you can select **View playbooks**, and then you can run one of the existing playbooks.
+After your playbook is ready, you can open the **Incident** page in Azure Sentinel, and then select the existing incident. In the details pane, you can select **View full details** to explore the properties of the incident. From the **Alerts panel,** you can select **View playbooks**, and then you can run one of the existing playbooks.
 The following screenshot depicts the suspicious user activity example for which you can attach the **Dismiss-AADRiskyUser** playbook.
 
 :::image type="content" source="../media/05-incident-page.png" alt-text="Screenshot of the Incident page." border="true":::

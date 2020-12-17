@@ -16,7 +16,7 @@ Contoso provides threat protection for its Azure-based and on-premises resources
 
 The Contoso Security Operations (SecOps) team didn't respond quickly enough to the organization's latest security incident. Contoso's IT director wants to implement Azure Sentinel playbooks to help the SecOps team identify and stop potential security threats. As Contoso's lead security engineer and Azure administrator, you've been tasked with setting up an Azure Sentinel playbook to respond to security incidents.
 
-In this module, you'll learn about the Security Orchestration, Automation and Response (SOAR) capabilities within Azure Sentinel. You will examine how to create and edit Azure Sentinel playbooks, configure their workflow, and manage them.
+In this module, you'll learn about the Security Orchestration and the Automation and Response (SOAR) capabilities within Azure Sentinel. You will examine how to create and edit Azure Sentinel playbooks, configure their workflow, and manage them.
 
 By the end of this module, you'll be able to set up security playbooks in Azure Sentinel to help the SecOps team respond to alerts effectively.
 

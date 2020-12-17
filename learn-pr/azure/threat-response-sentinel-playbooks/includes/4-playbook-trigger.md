@@ -39,7 +39,7 @@ The automated activity in the playbook is initiated by the Azure Sentinel trigge
 
 Opening Azure Sentinel Connector for the first time prompts you to **Sign in** to your tenant either with a user account from Azure Active Directory (Azure AD) or with Service Principal. This establishes an API connection to your Azure AD. The API connections store variables and tokens that are required to access the API for the connection, such as Azure AD, Office 365, or similar.
 
-:::image type="content" source="../media/04-sign-in-aad-tenant.png" alt-text="Screenshot of sign-in to the Azure AD tenant." border="true":::
+:::image type="content" source="../media/04-sign-in-aad-tenant.png" alt-text="Screenshot of sign in to the Azure AD tenant." border="true":::
 
 Each playbook starts with a trigger followed by actions that define the automated response on a security incident. You can combine actions from an Azure Sentinel connector with other actions from other Logic Apps connectors.
 
@@ -84,5 +84,5 @@ The **Runs history** section displays the previous runs of the logic app and whe
 
 ## Automate response to an incident in Azure Sentinel
 
-As a final step, you need to attach this playbook to an analytics rule to automate responses to an incident. You can use the **Automated Response** section in the analytics rule to select a playbook to run automatically when the alert is generated. For more details on how to create analytics rule, refer to the "Threat detection with Azure Sentinel analytics" module.
+As a final step, you need to attach this playbook to an analytics rule to automate responses to an incident. You can use the **Automated Response** section in the analytics rule to select a playbook to run automatically when the alert is generated. For more information on how to create analytics rule, see the "Threat detection with Azure Sentinel analytics" module.
 

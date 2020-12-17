@@ -9,7 +9,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link:
 
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Fmaster%2Flearn-pr%2Fazure%2Fthreat-response-sentinel-playbooks%2Fresources%2FSentinelTemplate.json?azure-portal=true)
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Fmaster%2Flearn-pr%2Fazure%2Fthreat-response-sentinel-playbooks%2Fresources%2Fsentinel-template.json?azure-portal=true)
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
@@ -57,7 +57,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 5. Select your subscription, and then select **Connect**.
-6. When you receive a status of **Connected**, close all open blades to return to the **Azure Sentinel | Data connector** blade.
+6. When you receive a status of **Connected**, close all open panels to return to the **Azure Sentinel | Data connector** panel.
 
 :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
 
@@ -93,7 +93,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 7. Accept the default values for all other settings and then select **Next: Incident setting (Preview)**.
 8. On the **Incident setting (preview)** tab, ensure that **Enabled** is selected for creation of incidents from alerts triggered by this analytics rule. And then select **Next: Automated response**.
 9. On the **Automated response** tab, you can select a playbook to run automatically when the alert is generated. Only the playbooks that contain a Logic App Azure Sentinel connector are displayed.
-10. Select **Next:Review**.
+10. Select **Next: Review**.
 11. On the **Review and Create** page, verify that the validation passed, and then select **Create**.
 
 > [!NOTE]

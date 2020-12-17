@@ -2,7 +2,7 @@ In addition to assessing and addressing problems with their security configurati
 
 ## Azure Sentinel as a SIEM and SOAR solution
 
-Azure Sentinel is both a Security Information and Event Management (SIEM) and Security Orchestration, Automation and Response (SOAR) solution that&#39;s designed for hybrid environments.
+Azure Sentinel is both a Security Information and Event Management (SIEM) and Security Orchestration, Automation and Response (SOAR) solution that's designed for hybrid environments.
 
 > [!Note]
 > SIEM solutions provide storage and analysis of logs, events, and alerts that other systems generate. You can configure these solutions to raise their own alerts. SOAR solutions support the remediation of vulnerabilities and the overall automation of security processes.
@@ -38,7 +38,7 @@ Azure Logic Apps use triggers and actions, which are defined as follows:
 ## Azure Sentinel Logic Apps connector
 
 An Azure Sentinel playbook uses an Azure Sentinel Logic Apps connector. It provides the triggers and actions that can start the playbook and perform defined actions.
-At the time of the writing of this article, there are two triggers from Azure Sentinel Logic Apps connector:
+Currently, there are two triggers from Azure Sentinel Logic Apps connector:
 
 - When a response to an Azure Sentinel alert is triggered
 - When Azure Sentinel incident creation rule is triggered

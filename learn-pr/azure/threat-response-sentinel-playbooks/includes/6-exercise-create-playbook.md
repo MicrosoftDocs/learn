@@ -15,9 +15,9 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 ### Task 1: Work with Azure Sentinel playbooks
 
 1. In the Azure portal, search for and select Azure Sentinel, and select the previously created Azure Sentinel workspace.
-2. In the **Azure Sentinel** blade, on the menu bar, in the **Configuration** section, select **Playbooks**.
+2. In the **Azure Sentinel** panel, on the menu bar, in the **Configuration** section, select **Playbooks**.
 3. Select **+Add Playbook**.
-4. In the  **Logic App** blade, on the **Basics** tab, specify the following settings:
+4. In the  **Logic App** panel, on the **Basics** tab, specify the following settings:
 
 | **Settings** | **Value** |
 | --- | --- |
@@ -45,7 +45,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 :::image type="content" source="../media/06-sign-in-aad-tenant.png" alt-text="Screenshot of the authorizing API connection." border="true":::
 
 11. Provide the credentials for your Azure subscription, and then select **+ New step**.
-12. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
+12. In the **Choose an operation** window, in the search field,  select **Azure Sentinel**.
 13. On the **Actions** tab, locate and select **Alert-Get incident (Preview)**.
 14. In the **Alert-Get Incident (Preview)** window, provide the following inputs, and then select **+ New step**.
 
@@ -56,20 +56,20 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 
 |||
 | --- | --- |
-| Specify subscription id | **Subscription ID** |
+| Specify subscription ID | **Subscription ID** |
 | Specify resource group | **Resource group** |
-| Specify workspace id | **Workspace ID** |
-| Specify alert id | **System Alert ID** |
+| Specify workspace ID | **Workspace ID** |
+| Specify alert ID | **System Alert ID** |
 
-15. In the **Choose an operation** window, in the search field, enter and select **Azure Sentinel**.
+15. In the **Choose an operation** window, in the search field,  select **Azure Sentinel**.
 16. From the **Actions** tab, locate and select **Change incident status (Preview)**.
 17. In the **Change incident status (Preview)** window, provide the following inputs:
 
 |||
 | --- | --- |
-| Specify subscription id | **Subscription ID** |
+| Specify subscription ID | **Subscription ID** |
 | Specify resource group | **Resource group** |
-| Specify workspace id | **Workspace ID** |
+| Specify workspace ID | **Workspace ID** |
 | Identifier | From the drop-down menu, select **Alert**. |
 | Specify alert / incident | **System Alert ID** |
 | Specify status | From the drop-down menu, select **Closed**. |
@@ -108,7 +108,7 @@ In this exercise, you will explore the Azure Sentinel playbooks by performing th
 > [!NOTE]
 > It could take up to 5 minute for Alerts to be shown as **Closed**
 
-:::image type="content" source="../media/06-header-refresh.png" alt-text="Screenshot of the the header bar." border="true":::
+:::image type="content" source="../media/06-header-refresh.png" alt-text="Screenshot of the header bar." border="true":::
 
 10. Verify that the incident displays again and notice the **Status** column to check that it is **Closed**.
 

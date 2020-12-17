@@ -30,7 +30,7 @@ To get the best learning experience from this module, you should have knowledge 
 
 ## Module summary description
 
-In this module, you'll learn about the Security Orchestration, Automation and Response (SOAR) capabilities within Azure Sentinel.
+In this module, you'll learn about the Security Orchestration, Automation, and Response (SOAR) capabilities within Azure Sentinel.
 
 ## Subtasks in this module
 
@@ -67,7 +67,7 @@ After completing this module, you&#39;ll be able to:
 1. Introduction
 2. Exercise Setup
 3. What are Azure Sentinel playbooks?
-4. Trigger playbooks in real-time
+4. Trigger playbooks in real time
 5. Run playbooks on demand
 6. Exercise unit Create an Azure Sentinel playbook
 7. Summary
@@ -98,7 +98,7 @@ In this module, you will learn about Azure Sentinel playbooks, including how to 
 
 ### Key content per learning objective
 
-In this exercise, you'll setup:
+In this exercise, you'll set up:
 
 - Create an Azure Sentinel instance
 - Create resources needed for exercise units.
@@ -118,7 +118,7 @@ After you complete this unit, you&#39;ll be able to use SOAR for incidents by le
 - Explain the Azure Sentinel Logic Apps connector
 - Use playbooks to orchestrate or automate actions
 
-## Fourth unit: Trigger playbooks in near real-time <!-- On line 69, we have "3. Trigger a playbook in real-time." Can we make these consistent? -->
+## Fourth unit: Trigger playbooks in near real time <!-- On line 69, we have "3. Trigger a playbook in real-time." Can we make these consistent? -->
 
 **Type of unit:** Learning content unit
 
@@ -128,7 +128,7 @@ After you complete this unit, you&#39;ll be able to use SOAR for incidents by le
 
 After you complete this unit, you&#39;ll be able to create an incident response automation playbook. Unit topics include:
 
-- Create a playbook to respond to an incident in near real-time
+- Create a playbook to respond to an incident in near real time
 - Work with Azure Sentinel connections in Logic Apps
 - Automate a response to an analytic<!-- To a Log Analytics rule? --> rule with playbooks
 
