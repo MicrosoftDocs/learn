@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.hunt-threats-sentinel
+metadata:
+  title: Threat hunting with Azure Sentinel
+  description: Threat hunting with Azure Sentinel
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Threat hunting with Azure Sentinel
+summary: In this module, you'll learn to proactively identify threat behaviors using Azure Sentinel queries. You'll also learn to use bookmarks and livestream to hunt threats.
+abstract: |
+  In this module you will:
+  - Use queries to hunt threats.
+  - Save key findings with bookmarks.
+  - Observe threats over time with livestream.
+prerequisites: |
+  - Familiarity with security operations in an organization.
+  - Basic experience with Azure services.
+  - Basic knowledge of operational concepts such as monitoring, logging, and alerting.
+  - Basic Azure Sentinel functionality.
+  - Access to a Microsoft Azure subscription for exercise tasks.
+iconUrl: /learn/achievements/hunt-threats-sentinel.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.hunt-threats-sentinel.1-introduction
+- learn.azure.hunt-threats-sentinel.2-exercise-setup
+- learn.azure.hunt-threats-sentinel.3-query-management-creation
+- learn.azure.hunt-threats-sentinel.4-bookmarks
+- learn.azure.hunt-threats-sentinel.5-livestream
+- learn.azure.hunt-threats-sentinel.6-exercise-hunt-for-threats
+- learn.azure.hunt-threats-sentinel.7-summary
+badge:
+  uid: learn.azure.hunt-threats-sentinel.badge

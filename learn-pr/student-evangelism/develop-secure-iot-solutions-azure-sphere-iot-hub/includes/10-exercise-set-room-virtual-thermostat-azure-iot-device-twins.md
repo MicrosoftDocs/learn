@@ -2,7 +2,7 @@
 
 1. Start Visual Studio Code to open your project.
 
-2. Click **Open folder**.
+2. From the menu, click **File**, then **Open Folder**.
 
 3. Open the **Azure-Sphere lab** folder.
 
@@ -55,27 +55,13 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Click **View devices in this hub**.
 
-    :::image type="content" source="../media/iot-explorer-view-devices-in-this-hub.png" alt-text="The illustration shows how to set the desired temperature.":::
-
 1. Click your on your **device**.
-
-    The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
-
-    ```
-    azsphere device show-attached
-    ```
 
 1. Click **IoT Plug and Play components** from the side menu.
 
-    :::image type="content" source="../media/iot-explorer-iot-pnp.png" alt-text="The illustration shows how to select IoT Plug and Play components.":::
-
 1. Click **Default component**.
 
-    :::image type="content" source="../media/iot-explorer-pnp-default-component.png" alt-text="The illustration shows how to select the default component.":::
-
 1. Select **Properties (writable)** from the menu.
-
-    :::image type="content" source="../media/iot-explorer-pnp-properties-writable.png" alt-text="The illustration shows set a property.":::
 
 1. Set the **Desired Temperature** property.
 
@@ -93,23 +79,23 @@ The Avnet Azure Sphere Starter Kit, revisions 1 and 2, have a built-in temperatu
 
 ![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
-1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
+- The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The WLAN LED will blink every 5 seconds when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
 
-1. The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
+- The RGB LED will turn red if the measured temperature is less than the desired temperature, blue if the measured temperature is greater than the desired temperature and green if the measured temperature is the same as the desired temperature.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The User LED will blink every 5 seconds when connected to Azure.
+- The User LED will blink every 5 seconds when connected to Azure.
 
 ## Close Visual Studio
 
