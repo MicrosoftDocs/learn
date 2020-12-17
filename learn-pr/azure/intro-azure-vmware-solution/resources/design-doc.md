@@ -16,7 +16,6 @@ Introduction to Azure VMware Solution
 ### Prerequisites
 
 - Basic knowledge of VMware infrastructure products
-- Ability to navigate the Azure portal
 
 ### Summary
 
@@ -53,16 +52,15 @@ By the end of this module, you will be able to evaluate if Azure VMware solution
 
  - Video (https://gearup.microsoft.com/resources/azure-vmware-solution?selectedassetcontainerid=486e4125-2f60-4a03-9e33-47350f8b005d)
 
-1. **Content Outline**
 
 Outline the content that will enable the learner to achieve the task:
 
 - Introduction
-- What is the Azure VMware Solution?
+1.  What is the Azure VMware Solution?
     - overview
     - logical architecture
     - KNOWLEDGE CHECK
-- How Azure VMware Solution Works
+1. How Azure VMware Solution Works
     - management
     - migration
     - security
@@ -74,12 +72,11 @@ Outline the content that will enable the learner to achieve the task:
     - service components
     - network connectivity
     - KNOWLEDGE CHECK
-- When to use Azure VMware Solution
+1. When to use Azure VMware Solution
     - supported use cases
     - customer success stories
     - integration examples
     - KNOWLEDGE CHECK
-- Summary
 
 
 **Knowledge check - What is the Azure VMware Solution?**
@@ -120,13 +117,12 @@ Outline the content that will enable the learner to achieve the task:
         - "Rehost" isCorrect: true
         - "Refactor" isCorrect: false
         - "Rearchitect" isCorrect: false
-        - "Rebuild" isCorrect: false
     - "Emily needs to add Azure Storage Services to her AVS environment. Which of the options available to her includes automatic synchronization and tiering?"
         - "Blob Storage" isCorrect: false
         - "Azure Files" isCorrect: false
         - "File Sync" isCorrect: true
 
-**Summary**
+1. **Summary**
 
     You need to evaluate options for migrating your production workloads out of your on-premises data center. You need to maintain your existing investments in training and operational processes, but want to avoid incurring more datacenter and hardware ownership costs, and you need to move quickly.
 
