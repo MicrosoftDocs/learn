@@ -1,4 +1,4 @@
-So far, you have built an API that works on your local machine to give you a good understanding of how APIs work. Query your first API to search for objects at a real third-party API: New York's Metropolitan Museum.
+So far, you've built an API that works on your local machine to give you a good understanding of how APIs work. Query your first API to search for objects at a real third-party API: New York's Metropolitan Museum.
 
 One wonderful thing about modern museum collections management is that the ongoing efforts to digitize collections and bring them online has also allowed the casual art lover to access this data. [The Smithsonian Museums](https://www.si.edu/openaccess?azure-portal=true) in the US, Amsterdam's [Rijksmuseum](https://www.rijksmuseum.nl/en/api/-rijksmuseum-oai-api-instructions-for-use?azure-portal=true), and the [Chicago Art Institute](https://aggregator-data.artic.edu/home?azure-portal=true) (US) are among many museums who are opening their collections to the public to access virtually.
 
