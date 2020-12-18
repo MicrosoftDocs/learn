@@ -166,4 +166,4 @@ namespace My.Function
 1. Click on **Stream Logs** to see the messages received by the Azure Function after the IoT Hub set up in the next step. There won't be any messages received until the IoT Hub is set up and a device sends messages.
 1. Alternatively, you can Stream Logs at a later time by right-clicking on the Azure Function in VS Code and choosing **Start Streaming Logs**
 
-     ![Stream Logs](../media/function-stream-logs-extension.png)
+     ![Stream logs extension](../media/function-stream-logs-extension.png)

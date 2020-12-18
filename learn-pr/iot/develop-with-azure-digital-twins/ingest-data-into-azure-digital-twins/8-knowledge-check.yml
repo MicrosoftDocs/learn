@@ -21,7 +21,7 @@ quiz:
       explanation: "Gives full access over Azure Digital Twins resources."
     - content: "Azure Administrator."
       isCorrect: false
-      explanation: "An Azure Administrator can create instances of Azure Digital Twin services but won't be able to modify, write, and so on."
+      explanation: "An Azure Administrator can create instances of Azure Digital Twin services but cannot modify, write, and so on."
 
   - content: 'Which of the items below can publish data directly to Azure Digital Twins?'
     choices:
@@ -33,7 +33,7 @@ quiz:
       explanation: "Event Hub is a message ingestion service used to publish or subscribe to messages generated from other services."
     - content: IoT Hub
       isCorrect: false
-      explanation: "IoT Hub enables communication with IoT devices and applications.  IoT Hub supports messages routing to a variety of Azure messaging services such as Event Grid and Event Hub."
+      explanation: "IoT Hub enables communication with IoT devices and applications.  IoT Hub supports messages routing to various Azure messaging services such as Event Grid and Event Hub."
     - content: SDK / APIs
       isCorrect: true
       explanation: "Azure Digital Twins support message ingestion through API calls. Developers can use the REST APIs or the SDKs to interact with the APIs."
