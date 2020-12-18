@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 84794
+labId: 85068
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-deploy-azure-database-postgresql.md)]
