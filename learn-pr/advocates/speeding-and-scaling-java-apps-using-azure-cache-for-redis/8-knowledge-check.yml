@@ -26,7 +26,7 @@ quiz:
           explanation: "You are partially right, but this answer is not the only reason."
         - content: "All of the above."
           isCorrect: true
-          explanation: "Correct. Azure Cache for Redis can be used as a distributed cache, an HTTP session data store, and a message broker."
+          explanation: "Correct. You can use Azure Cache for Redis as a distributed cache, an HTTP session data store, and a message broker."
     - content: "How does Azure Cache for Redis scale out a Web application?"
       choices:
         - content: "It uses IP multicast to find other application nodes and share data among them."
@@ -49,7 +49,7 @@ quiz:
         - content: "Azure Cache for Redis is a Cosmos DB database, compatible with Redis at the API layer."
           isCorrect: false
           explanation: "Incorrect. Azure Cache for Redis uses the real Redis software."
-        - content: "Azure Cache for Redis is a managed version of Redis, maintained and operated by Azure."
+        - content: "Azure Cache for Redis is a managed version of Redis, maintained, and operated by Azure."
           isCorrect: true
           explanation: "Correct. Azure Cache for Redis is a managed version of Redis."
               
