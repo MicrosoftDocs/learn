@@ -2,9 +2,9 @@ To complete the end-to-end solution for spotting polar bears in the wild, you'll
 
 Power BI Desktop runs only on Windows. If you aren't running Windows, one solution is to create a Windows VM in Azure and run Power BI Desktop from there.
 
-## Connect Power BI to the database
+## Connect Power BI to the SQL database
 
-You used the Custom Vision Service to train an image-classification model to differentiate between different types of Arctic wildlife, and modified the Azure Function you wrote to output the results to an Azure SQL Database. The first step in using Power BI to explore and visualize this data is connecting it to the database. In this exercise, you'll connect Power BI Desktop to the Azure SQL Database.
+You used Custom Vision to train an image classification model to differentiate between different types of Arctic wildlife, and modified the function app you wrote to output the results to a SQL database. The first step in using Power BI to explore and visualize this data is connecting it to the database. In this exercise, you'll connect Power BI Desktop to the SQL database.
 
 1. If Power BI Desktop isn't already installed on your computer, go to [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.com/desktop/?azure-portal=true) and install it now.
 
@@ -154,10 +154,10 @@ Now that the report is prepared in Power BI, your final task is to run the end-t
 
     _There be polar bears!_
 
-1. Suppose you *only* wanted to show locations where polar bears were detected. Check the **True** box in the slicer visual. What happens in the map?
+1. Suppose you wanted to *only* show locations where polar bears were detected. Check the **True** box in the slicer visual. What happens in the map?
 
 1. Continue running for a few minutes and refreshing the report once or twice a minute. Confirm that there are polar bears active on the island!
 
 1. When you're satisfied that the solution is working as intended, return to the Command Prompt or terminal window and press **Ctrl+C** stop the cameras.
 
-You now have a report that shows, in near real time, polar-bear activity on the island. If you have a Power BI Pro or Power BI Premium account, you can share the report with other Power BI users so they, too, can monitor polar-bear activity. For more information about sharing your work, see [Share Power BI Dashboards and Reports](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports "Share Power BI Dashboards and Reports"). Reports can also be viewed in the [Power BI mobile apps](https://docs.microsoft.com/power-bi/mobile-apps-for-mobile-devices) so you can keep track of polar bears on your Windows, Android, or iOS device — even on an Apple watch!
+You now have a report that shows, in near real time, polar bear activity on the island. If you have a Power BI Pro or Power BI Premium account, you can share the report with other Power BI users so that they, too, can monitor polar bear activity. For more information about sharing your work, see [Share Power BI dashboards and reports](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports "Share Power BI Dashboards and Reports"). You also can view reports in the [Power BI mobile apps](https://docs.microsoft.com/power-bi/mobile-apps-for-mobile-devices), so you can keep track of polar bears on your Windows, Android, or iOS device—even on an Apple watch!
