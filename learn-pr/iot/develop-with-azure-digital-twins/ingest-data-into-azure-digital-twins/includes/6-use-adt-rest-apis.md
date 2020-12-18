@@ -1,8 +1,8 @@
 ## Why REST APIs?
 
-Some application architectures will not support using the Azure Digital Twin (ADT) SDK. In this scenario, the Azure Digital Twin (ADT) REST APIs can be used to perform both Control Plane operations (ex: Create ADT instances) and Data Plane operations (ex: ingesting telemetry / modifying ADT instance properties).
+Some application architectures will not support using the Azure Digital Twin SDK. In this scenario, the Azure Digital Twin REST APIs can be used to perform both Control Plane operations (ex: Create Azure digital twin instances) and Data Plane operations (ex: ingesting telemetry / modifying Azure digital twin instance properties).
 
-More information on ADT REST APIs can be found in the documentation.
+More information on Azure digital twin REST APIs can be found in the documentation.
 
  [Azure Digital Twins REST APIs](https://docs.microsoft.com/en-us/rest/api/azure-digitaltwins/)
 
@@ -20,9 +20,10 @@ Here are some common potential activities that an Owner/administrator on the sub
 - Grant admin consent for the app registration. Your organization may have Admin Consent Required globally turned on in Azure AD for all app registrations within your subscription. If so, the Owner/administrator will need to select this button for your company on the app registration's API permissions page for the app registration to be valid: 
 
     ![Admin Consent](../media/grant-admin-consent.png)
+
 ### Retrieve Token
 In order to use the Azure Digital Twin APIs, we'll need to get an Authorization Token from Azure Active Directory:
-1. The command below will issue a POST request to the /oauth/v2.0/token endpoint for your AAD Tenant which will respond with a bearer token
+1. The command below will issue a POST request to the /oauth/v2.0/token endpoint for your AAD Tenant, which will respond with a bearer token
 1.
 > [!NOTE]
 > Update the values for tenant_id, client_id, and client_secret
@@ -43,7 +44,7 @@ In order to use the Azure Digital Twin APIs, we'll need to get an Authorization 
 
 ## Use REST APIs
 
-1. Run the command below to update the RESTAPI property in the thermostat67 digital twin.
+1. Run the command below to update the REST API property in the thermostat67 digital twin.
 
 > [!NOTE]
 > Update the values for adt_hostname, aad_token

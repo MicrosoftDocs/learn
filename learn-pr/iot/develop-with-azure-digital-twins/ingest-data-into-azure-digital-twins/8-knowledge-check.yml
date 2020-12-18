@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: Event Grid
       isCorrect: false
-      explanation: "Event Grid enables event-based architectures. IoT services such as IoT Hub and ADT can publish their events (that is, messages) to Event Grid."
+      explanation: "Event Grid enables event-based architectures. IoT services such as IoT Hub and Azure digital twins can publish their events (that is, messages) to Event Grid."
     - content: Event Hub
       isCorrect: false
       explanation: "Event Hub is a message ingestion service used to publish or subscribe to messages generated from other services."
@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: Event Grid and Azure Functions
       isCorrect: true
-      explanation: "IoT Hub can publish telemetry events to Event Grid, which triggers Azure Functions running the ADT SDK. The SDK is used to update ADT."
+      explanation: "IoT Hub can publish telemetry events to Event Grid, which triggers Azure Functions running the Azure digital twins SDK. The SDK is used to update Azure digital twins."
     - content: Virtual Machines
       isCorrect: false
       explanation: "While virtual machines could be used as 'external compute', this would be an overly complex and costly approach."

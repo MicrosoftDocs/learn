@@ -12,11 +12,11 @@ title: Ingest Data into Azure Digital Twins
 summary: Learn the different ways of ingesting data into Azure Digital Twins.
 abstract: |
   In this module, you will:
-  - Create an Azure Digital Twins (ADT) instance
-  - Create and instantiate Azure Digital Twin (ADT) models 
+  - Create an Azure Digital Twins instance
+  - Create and instantiate Azure Digital Twin models 
   - Create an Azure Function that publishes data into Digital Twins
   - Create an IoT Hub that sends telemetry to an Azure Function
-  - Use ADT REST APIs to ingest data into IoT Hub
+  - Use Azure digital twins REST APIs to ingest data into IoT Hub
   - Create a Logic App that ingests data into IoT Hub
 prerequisites: | 
   - Basic understanding of Azure Digital Twins

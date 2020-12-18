@@ -3,7 +3,7 @@ uid: learn.iot.ingest-data-into-azure-digital-twins.5-setup-iot-hub
 title: Setup IoT Hub
 metadata:
   title: Setup IoT Hub
-  description: Create an IoT Hub and configure it to push telemetry to an Azure Function. Also setup an IoT client to generate data.
+  description: Create an IoT Hub and configure it to push telemetry to an Azure Function. Also set up an IoT client to generate data.
   ms.date: 10/30/2020
   author: teodelas
   ms.author: teodelas

@@ -8,12 +8,12 @@ git clone https://github.com/Azure-Samples/digital-twins-samples
 > [!TIP]
 > Take note of the directory these files are downloaded to
 
-## Setup variables
+## Set up variables
 
 We'll create and store some variables, which will make running the commands needed in the subsequent units easier and avoid mistakes from typos.
 
 1. Open a PowerShell Console locally or a Cloud Shell with PowerShell
-1. Ensure you are logged into the right account and set to the correct default Azure subscription by running the command below
+1. Ensure you're logged into the right account and set to the correct default Azure subscription by running the command below
 
     ```azurecli
     az account show
@@ -25,7 +25,7 @@ We'll create and store some variables, which will make running the commands need
     az account set -s <subscriptionId>
     ```
 
-1. Setup the variables that will be used by the commands in the rest of this module. Copy and paste the following into the CLI.
+1. Set up the variables that will be used by the commands in the rest of this module. Copy and paste the following into the CLI.
 
 > [!TIP]
 > dtname & functionname must be globally unique and **LOWERCASE**
@@ -43,7 +43,7 @@ $aaddtapp = $random + "dtapp"
 $username = Read-Host "Enter username. ex: jdoe@contoso.com"
 ```
 
-## Use the CLI to deploy ADT
+## Use the CLI to deploy Azure digital twins
 
 1. Create a Resource Group
     ```azurecli
@@ -92,7 +92,7 @@ $username = Read-Host "Enter username. ex: jdoe@contoso.com"
     ```azurecli
     az ad sp create --id $appid
     ```
-1. The command below assign permissions to the application created above to the ADT instance. Add the App ID from above to the command below before running.
+1. The command below assign permissions to the application created above to the Azure digital twin instance. Add the App ID from above to the command below before running.
     ```azurecli
     az dt role-assignment create --dt-name $dtname --assignee $appid --role "Azure Digital Twins Data Owner"
     ```
