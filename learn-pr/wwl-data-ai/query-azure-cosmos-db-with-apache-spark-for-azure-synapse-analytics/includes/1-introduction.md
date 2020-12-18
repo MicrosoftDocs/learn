@@ -1,6 +1,6 @@
 In this module, you learn how to use the Synapse Spark to query the Azure Cosmos DB data made available by Azure Synapse Link.
 
-After completing this module, you'll be able to:
+After completing this module, you'll be able to: 
 
 - Query the Azure Cosmos DB analytical store
 - Perform simple aggregations with analytical store data
