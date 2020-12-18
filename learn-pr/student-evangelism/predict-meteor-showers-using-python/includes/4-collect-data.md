@@ -46,8 +46,7 @@ As [the Moon](https://solarsystem.nasa.gov/moons/earths-moon/overview/?azure-por
 
 These are the phases of the Moon:
 - New Moon: Around the 15th of the month
-- Waxing
-- Crescent
+- Waxing crescent
 - First quarter: Around the 23rd of the month
 - Waxing gibbous
 - Full Moon: Around the 1st of the month
