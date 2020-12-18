@@ -26,7 +26,7 @@ az account set --subscription <SUBSCRIPTION_ID>
 
 ## Create an Azure Cache for Redis instance
 
-In this section, you will create our Azure Cache for Redis instance using Azure CLI. It is possible to do exactly the same configuration using the Azure portal. For this, you will need to set up three environment variables:
+In this section, you will create our Azure Cache for Redis instance using Azure CLI. It's possible to do exactly the same configuration using the Azure portal. For this, you will need to set up three environment variables:
 
 - You need to create a resource group. To limit typing, set the variable `AZ_RESOURCE_GROUP` to the name of the resource group you want to create.
 - You also need to set the variable `AZ_LOCATION` to the name of the Azure data center you want to use. Default location is `eastus`, but you can choose a region closer to you for better performance (use `az account list-locations` to list all available regions).
