@@ -204,10 +204,12 @@ mysqldump -u root -p --databases source_database1 source_database3 source_databa
 #### Create a database on the target server
 
 Next, you create an empty database in Azure Database for MariaDB. You can do this by copying the connection details for your Azure Database for MariaDB from the Azure portal: 
-:::image type="content" source="../../Linked_Image_Files/M01_L03_Img-01-get-connection-details-maria.png" alt-text="Get server connection details":::
+
+:::image type="content" source="../media/M01_L03_Img-01-get-connection-details-maria.png" alt-text="Get server connection details":::
+
 You can then use that information to connect to your server using MySQL Workbench:
 
-:::image type="content" source="../../Linked_Image_Files/M01_L03_Img-02-mysql-workbench-connect.png" alt-text="MySQLWorkbench connection":::
+:::image type="content" source="../media/M01_L03_Img-02-mysql-workbench-connect.png" alt-text="MySQLWorkbench connection":::
 
 Or by executing the following command in a tool like the `mysql` command-line utility: 
 
@@ -238,7 +240,8 @@ You can also perform a migration with phpMyadmin. First you'll need to export yo
 1. Start phpMyAdmin.
 1. Select your source database by selecting the database name in the list on the left.
 1. Select the **Export** at the top. A new page will appear.
-:::image type="content" source="../../Linked_Image_Files/M01_L03_Img-03-php-my-admin.png" alt-text="phpMyAdmin home page":::
+
+    :::image type="content" source="../media/M01_L03_Img-03-php-my-admin.png" alt-text="phpMyAdmin home page":::
 
 1. In the Export method section of this page, select the **Custom - display all possible options** to choose the tables in your database.
 1. In the Output section select **Save output to file** and the matching compression type.
@@ -249,13 +252,13 @@ Once your file has been exported, you can import it into your Azure SQL Database
 
 1. In phpMyAdmin, connect to your Azure Database for MariaDB server using the connection details from the Azure portal:
 
-    :::image type="content" source="../../Linked_Image_Files/M01_L03_Img-04-remote-phpmyadmin.png" alt-text="Connect to your Azure Database for MariaDB":::
+    :::image type="content" source="../media/M01_L03_Img-04-remote-phpmyadmin.png" alt-text="Connect to your Azure Database for MariaDB":::
 
 1. Select **Go** to connect. 
 1. Create a target database by selecting **New** on the left in phpMyAdmin.
 1. Once you've created your target database, select **Import** on the top menu.
 
-    :::image type="content" source="../../Linked_Image_Files/M01_L03_Img-05-import-phpmyadmin.png" alt-text="Import your exported file":::
+    :::image type="content" source="../media/M01_L03_Img-05-import-phpmyadmin.png" alt-text="Import your exported file":::
 
 1. Select **Choose File** to upload your exported file.
 1. Select **Go** at the bottom of the page to import your file to Azure Database for MariaDB and recreate the database.
