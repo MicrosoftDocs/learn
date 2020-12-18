@@ -29,8 +29,8 @@ products:
   - azure
   - azure-sentinel
 modules:
-- learn.azure.intro-to-azure-sentinel
-- learn.azure.azure-sentinel-deploy-configure
+- learn.intro-to-azure-sentinel
+- learn.azure-sentinel-deploy-configure
 - learn.azure.analyze-data-in-sentinel
 - learn.azure.incident-management-sentinel
 - learn.azure.hunt-threats-sentinel
