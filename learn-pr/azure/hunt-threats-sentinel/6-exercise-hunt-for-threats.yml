@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.hunt-threats-sentinel.6-exercise-hunt-for-threats
+metadata:
+  title: Exercise - Hunt for threats using Azure Sentinel
+  description: Exercise - Hunt for threats using Azure Sentinel
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Hunt for threats using Azure Sentinel
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-hunt-for-threats.md)]
