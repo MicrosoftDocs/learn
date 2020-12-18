@@ -11,6 +11,8 @@ metadata:
 title: Use AI to recognize objects in images by using the Custom Vision service
 summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
 abstract:  |
+  This module is part of a multimodal learning experience. Start the module to see how you can follow along!
+
   In this module, you will:
   - Create a good dataset of images for training AI.
   - Train a Custom Vision AI model on a particular animal.

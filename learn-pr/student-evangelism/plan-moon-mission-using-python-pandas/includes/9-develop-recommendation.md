@@ -127,9 +127,7 @@ We can use this number to determine how many of each rock we want the astronauts
 
 ```python
 needed_samples_overview['Weight to collect'] = needed_samples_overview['Percentage of rocks'] * artemis_ave_weight
-
 needed_samples_overview['Rocks to collect'] = needed_samples_overview['Weight to collect'] / needed_samples_overview['Average weight (kg)']
-
 needed_samples_overview
 ```
 

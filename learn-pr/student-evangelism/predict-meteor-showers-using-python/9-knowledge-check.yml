@@ -21,7 +21,7 @@ quiz:
     - content: "Meteor showers originate from Mars, which has about a two-year orbit around the Sun."
       isCorrect: false
       explanation: "Incorrect. Meteor showers originate from debris left by comets, asteroids, and sometimes planets or moons. But they don't depend on planetary orbits."
-    - content: "Only once every two years."
+    - content: "Meteor showers happen every night."
       isCorrect: true
       explanation: "Correct. Debris is always being brought into our atmosphere. Most of it burns before it passes through the atmosphere."
     - content: "Every 76 years, when the Halley comet orbits near the Sun."
@@ -56,5 +56,4 @@ quiz:
     - content: "A list of all my friends who were with me, who were at least as hungry as I was, and who had the same favorite food as me. "
       isCorrect: false
       explanation: "Incorrect. This code looks for friends who were with you and who were at least as hungry as you. But it doesn't return a list of friends."
-
 

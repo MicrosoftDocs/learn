@@ -17,7 +17,7 @@ abstract:  |
   - Strategies to cleanse and manipulate your data.
 
   >[!TIP]
-  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 
 prerequisites: |
   - [Visual Studio Code, with the Python extension](https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons?azure-portal=true)
