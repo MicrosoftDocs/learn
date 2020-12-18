@@ -12,7 +12,7 @@ Redis is often ranked as the most popular key-value database. Its ease of use, p
 
 Azure Cache for Redis provides all the benefits or Redis: excellent throughput and performance to handle millions of requests per second. As it is managed by Azure, you benefit from all the advantages of a cloud service like automatic patches, updates, scaling and provisioning.
 
-Several tiers are available, and the most advanced one can provide clustering, replication and high availability, so you can rely on Redis for critical workloads.
+Several tiers are available, and the most advanced ones can provide clustering, replication and high availability, so you can rely on Redis for critical workloads.
 
 ## Using Redis in Java and with Spring Boot
 
