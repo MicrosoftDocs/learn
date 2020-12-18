@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/16/2020
+  ms.date: 12/18/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ quiz:
     - content: "It increases to 99.999%."
       isCorrect: true
       explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
-    - content: "It increass to 99.9999%"
+    - content: "It increases to 99.9999%"
       isCorrect: false
       explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
   - content: "You need specific connection strings for your applications, so that they use your security protocols. Where can you find this information?"

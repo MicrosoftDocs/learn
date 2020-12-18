@@ -1,14 +1,24 @@
-In this exercise, you'll migrate two datasets from Cassandra to Cosmos DB. You'll first create a database that represents your current system. Then, you'll migrate the data stored in it using Spark. You'll verify that migration was successful by running queries against the data held in the Cosmos DB database.
+In this exercise, you'll migrate two datasets from Cassandra to Cosmos DB. You'll move the data in two ways. First, you'll export the data from Cassandra and use the **CQLSH COPY** command to import the database into Cosmos DB. Then, you'll migrate the data using Spark. You'll verify that migration was successful by running queries against the data held in the Cosmos DB database. 
 
-The scenario for this lab concerns an e-commerce system. Customers can place orders for goods. The customer and order details are recorded in a Cassandra database.
+The scenario for this lab concerns an ecommerce system. Customers can place orders for goods. The customer and order details are recorded in a Cassandra database.
 
-## Create a Cassandra database on Azure
+### Create a Resource Group
 
-First you'll create the Cassandra database for holding the data captured from the temperature devices.
+First, you'll create the Cassandra database for holding the customer and order data.
+
+1. In your Internet browser, navigate to [https://portal.azure.com](https://portal.azure.com) and sign in.
+1. In the Azure portal, select **Resource groups**, and then select **+Add**.
+1. On the **Create a resource group page**, enter the following details, and then select **Review + create**:
+
+    | Property  | Value  |
+    |---|---|
+    | Resource Group | **cassandradbrg** |
+    | Region | Select your nearest location |
+
+1. Select **Create**, and wait for the resource group to be created.
 
 ### Create a Virtual Network
 
-1. Using a web browser, open a new tab and navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. In the left-hand pane of the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Virtual Network**, and press Enter.
 1. On the **Virtual Network** page, select **Create**.
@@ -16,7 +26,7 @@ First you'll create the Cassandra database for holding the data captured from th
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **cassandradbrg** |
     | Name | **databasevnet** |
     | Region | Select the same location that you specified for the resource group |
 
@@ -43,7 +53,7 @@ First you'll create the Cassandra database for holding the data captured from th
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **cassandradbrg** |
     | Virtual machine name | **cassandraserver** |
     | Region | Select the same location that you specified for the resource group |
     | Availability options | **No infrastructure redundancy required** |
@@ -95,7 +105,10 @@ First you'll create the Cassandra database for holding the data captured from th
 1. In the left-hand pane of the Azure portal, select **All resources**.
 1. On the **All resources** page, select **cassandraserver-ip**.
 1. On the **cassandraserver-ip** page, make a note of the **IP address**.
-1. Return to the Cloud Shell tab, run the following command to download the sample code and data:
+1. In the toolbar at the top of the Azure portal, select **Cloud Shell**.
+1. If the **You have no storage mounted** message box appears, select **Create storage**.
+1. When the Cloud Shell starts, in the drop-down list above the Cloud Shell window, select **Bash**.
+1. In the Cloud Shell, run the following command to download the sample code and data:
 
     ```bash
     git clone https://github.com/MicrosoftLearning/DP-160T00A-Migrating-your-Database-to-Cosmos-DB migration-workshop-apps
@@ -187,38 +200,6 @@ First you'll create the Cassandra database for holding the data captured from th
     exit
     ```
 
-### Create a Cosmos Account and Database
-
-1. Return to the Azure portal.
-1. In the left pane, click **+ Create a resource**.
-1. On the **New** page, in the **Search the Marketplace** box, type **Azure Cosmos DB**, end then press Enter.
-1. On the **Azure Cosmos DB** page, click **Create**.
-1. On the **Create Azure Cosmos DB Account** page, enter the following settings, and then click **Review + create**:
-
-    | Property  | Value  |
-    |---|---|
-    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
-    | Account Name | cassandra*nnn*, where *nnn* is a random number selected by you |
-    | API | **Cassandra** |
-    | Notebooks | **Off** |
-    | Location | Specify the same location that you used for the Cassandra server and virtual network |
-    | Capacity mode | **Provisioned throughput** |
-    | Apply Free Tier Discount | **Apply** |
-    | Account Type | **Non-Production** |
-    | Geo-Redundancy | **Disable** |
-    | Multi-region Writes | **Disable** |
-    | Availability Zones | **Disable** |
-
-1. On the validation page, click **Create**, and wait for the Cosmos DB account to be deployed.
-1. In the left-hand pane, click **All resources**.
-1. On the **All resources** page, click your Cosmos DB account (**cassandra*nnn***).
-1. Under **Settings**, click **Connection String**, and make a note of the following items:
-
-   - Contact Point
-   - Port
-   - Username
-   - Primary Password
-
 ## Migrate data from Cassandra to Cosmos DB using Spark
 
 In the next steps you'll migrate the same data you just created. You'll use Spark from an Azure Databricks notebook.
@@ -232,13 +213,13 @@ In the next steps you'll migrate the same data you just created. You'll use Spar
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | Use existing, <rgn>[sandbox resource group name]</rgn> |
+    | Resource Group | Use existing, cassandradbrg |
     | Workspace name | **CassandraMigration** |
     | Location | Select the same location that you specified for the resource group |
     | Pricing Tier | **Standard** |
 
 1. On the **Review + create** page, select **Create** and then wait for the Databricks Service to be deployed.
-1. In the left-hand pane, select **Resource groups**, select **<rgn>[sandbox resource group name]</rgn>**, and then select the **CassandraMigration** Databricks Service.
+1. In the left-hand pane, select **Resource groups**, select **cassandradbrg**, and then select the **CassandraMigration** Databricks Service.
 1. On the **CassandraMigration** page, select **Launch Workspace**.
 1. On the **Azure Databricks** page, under **Common Tasks**, select **New Cluster**.
 1. On the **New Cluster** page, enter the following settings, and then select **Create Cluster**:
@@ -259,8 +240,7 @@ In the next steps you'll migrate the same data you just created. You'll use Spar
 
 ### Create a Notebook for migrating data
 
-1. In the pane to the left, select **Clusters**, then select **MigrationClusters**. 
-1. Select the **Libraries** tab, and then select **Install New**.
+1. In the pane to the left, select **Clusters**, select the **Libraries** tab, and then select **Install New**.
 1. In the **Install Library** dialog, enter the following settings, and then select **Install**:
 
     | Property  | Value  |
