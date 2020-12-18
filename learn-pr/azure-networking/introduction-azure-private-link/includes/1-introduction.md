@@ -1,8 +1,10 @@
 Azure Private Link provides access to Azure services privately over the Microsoft Azure backbone network instead of publicly over the internet.
 
-Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. The company has just migrated some on-premises services to Microsoft Azure, including services accessed by company employees and by Contoso customers. However, Contoso IT staff are concerned that accessing these services requires the public internet, which is considered a security risk. IT would like to be able to connect an Azure virtual network to Azure services without using a public IP address, connect customers to company-provided Azure services without using the public internet, and connect employees to Azure services without having to configure ExpressRoute or a VPN.
+Suppose you work at Contoso, Ltd., a financial services company in Seattle with major offices located throughout the world. Your company has an Azure virtual network that connects to several Azure PaaS services. Your company also connects to these Azure PaaS services via a peered virtual network and an on-premises network that uses Azure ExpressRoute. Contoso also offers company-created Azure services that Contoso customers connect to from their own Azure virtual networks.
 
-As a lead engineer at Contoso, you’re responsible for evaluating the functionality of Azure Private Link to enable employees and customers to privately access services on the Azure platform, protect against data leakage, and connect to services running in other regions.  
+However, Contoso IT staff are concerned that every one of these connections requires the public internet, which is considered a security risk. IT would like these connections to not use a public IP address.
+
+As a lead engineer at Contoso, you’re responsible for evaluating the functionality of Azure Private Link to enable employees and customers to bypass the public internet and privately access services on the Azure platform.  
 
 In this module, you'll learn the fundamentals of Azure Private Link, including what it is, how it works, and when you should use it. By the end of this module, you will be able to evaluate whether Azure Private Link is a suitable solution for offering Contoso employees and customers private access to Azure services.
 
