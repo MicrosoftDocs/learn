@@ -28,11 +28,17 @@ Private Link provides access to Azure services privately by replacing a resource
 
 Private Endpoint is the key technology behind Private Link. Private Endpoint is a network interface that enables a private and secure connection between your virtual network and an Azure service. In other words, Private Endpoint is the network interface that replaces the resource's public endpoint.
 
+> [!NOTE]
+> Private Endpoint is not a free service. You pay a set fee per hour, as well as a set fee per gigabyte for both inbound and outbound traffic that passes through the Private Endpoint.
+
 ## What is Azure Private Link Service?
 
 Private Link gives you private access from your Azure virtual network to Azure PaaS services and Microsoft Partner services in Azure. However, what if your company has created its own Azure services that are consumed by your company's customers? Is it possible to offer those customers a private connection to your company's services?
 
 Yes, by using Azure Private Link Service, which enables you to offer Private Link connections to your custom Azure services. Consumers of your custom services can then access those services privately (that is, without using the internet) from their own Azure virtual networks.
+
+> [!NOTE]
+> There is no charge to use Private Link Service.
 
 ## Key benefits of Private Link
 
