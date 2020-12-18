@@ -4,7 +4,6 @@ You know what Private Link is and how it works. Now you need some criteria to he
 * Securing traffic between your company network and the Azure cloud
 * Eliminating internet exposure for PaaS services
 * Accessing Azure PaaS resources across networks
-* Simplifying network architecture
 * Lowering the risk of data exfiltration
 * Offering customers private access to company-created Azure services
 
@@ -12,24 +11,48 @@ Do any of these scenarios apply to your company? If so, read the corresponding s
 
 ## Bringing Azure PaaS services into your virtual network
 
-Depending on the resource and how it's configured, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network. T
+Depending on the resource and how it's configured, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network. With a Private Link resource now effectively part of your virtual network, clients can use a relatively simple FQDN to make the connection.
 
 ## Securing traffic between your company network and the Azure cloud
 
+Here's one of the paradoxes of cloud computing: For a cloud-based virtual machine to access a service in the same cloud provider, the connection and traffic must go outside of the cloud. That is, although the endpoints are located in the cloud, the traffic must travel along the internet.
+
+Unfortunately, once that traffic leaves the cloud, it becomes "public" and thus at risk. There's a long list of potential exploits that nefarious actors might use to steal, monitor, or corrupt that traffic.
+
+Private Link eliminates that risk by no longer requiring traffic to traverse the internet. Instead, all traffic between your virtual network and a Private Link resource rides along Microsoft's secure and private Azure backbone.
+
 ## Eliminating internet exposure for PaaS services
+
+Most Azure PaaS resources are internet-facing. These resources have, by default, a public endpoint that offers a public IP address so that clients can connect to the resource via the internet.
+
+The public endpoint exposes the resource to the internet, which is by design. However, that endpoint can also act an attack point for black-hat hackers seeking a way to infiltrate or disrupt the service.
+
+Private Link doesn't do anything to prevent such attacks. However, once you've created a Private Endpoint and mapped it to the Azure resource, you no longer need the resource's public endpoint. Fortunately, you can configure the resource to disable its public endpoint that it no longer prevents an attack surface to the internet.
 
 ## Accessing Azure PaaS resources across networks
 
-## Simplifying network architecture
+It's a rare network architecture that consists of just a single virtual network. Most networks also include either or both of the following:
+
+* One or more peered networks connected via Azure Virtual Net Peering.
+
+* One or more on-premises networks connected either via ExpressRoute Private Peering or via a VPN tunnel.
+
+Without Private Link, these networks must create their own connections to a specific Azure resource—and those connections usually require the public internet. That changes once Private Endpoint maps the Azure resource to a private IP address in your virtual network. Now all your peered networks can connect to the Private Link resource directly, without any other configuration.
 
 ## Lowering the risk of data exfiltration
 
+Suppose a virtual machine in your network is connected to an Azure service. It's often possible for a user on the virtual machine to access multiple resources in the Azure service. For example, if the service is Azure Storage, a user might be able to access multiple blobs, tables, files, and so on.
+
+Now suppose that the user is a malicious infiltrator who has taken control of the virtual machine. In that scenario, the user might be able to move data from one resource to another one that's controlled by the attacker.
+
+This scenario is an example of *data exfiltration*. Private Link lowers the risk of data exfiltration by only mapping a Private Endpoint to a single instance of an Azure resource. An attacker might still be able view the data, but has no way to copy or move it to another resource.
+
 ## Offering customers private access to company-created Azure services
 
-Connect an Azure virtual network to Azure services without using a public IP address.
+Suppose your company creates custom Azure services. Those services could be consumed by people who buy your products, by suppliers or vendors, or by your company's employees. These are all customers of your service.
 
-Connect customers to company-provided Azure services without using the public internet.
+There's an excellent chance that the data accessed and created by those customers is every bit as important as your company's data. So your customer's data deserves the same level of privacy and security and your company data.
 
-Connect employees to Azure services without having to configure ExpressRoute or a VPN.
+If you believe that Private Link is the right choice for securing your company data, then you'll want to extend that security model to your custom Azure services. By putting your custom services behind a Standard Load Balancer, you can use Private Link Service to enable customers to access your service using Private Endpoint.
 
-Connect privately to Azure services running in other regions.
+Imagine the glee of your marketing department when you tell them you can now offer customers private and secure access to your custom Azure services.
