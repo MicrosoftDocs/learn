@@ -2,9 +2,9 @@ Now that we have Azure Cache Redis configured and working, let's use it to store
 
 ## What is Spring Session
 
-HTTP sessions store user data between requests. Typically they store security information (like security tokens), and they can go further and store an application's state, or serve as a cache for frequently-accessed user data. As those sessions are stored on the server side, they cause scalability issues as you need to replicate them when your application scales out to multiple nodes.
+HTTP sessions store user data between requests. Typically they store security information, and they can go further and store an application's state, or serve as a cache for frequently accessed user data. As those sessions are stored on the server side, they cause scalability issues as you need to replicate them when your application scales out to multiple nodes.
 
-This is where Spring Session comes into play. [Spring Session](https://spring.io/projects/spring-session) is a Spring sub-project that aims to simplify HTTP session replication configuration. It supports several backend mechanisms, Redis being a popular option for this: it'll replicate all session data inside Redis, so that when the application scales out, each node will have access to those user sessions.
+Those scalability issues are where Spring Session comes into play. [Spring Session](https://spring.io/projects/spring-session) is a Spring subproject that aims to simplify HTTP session replication configuration. It supports several backend mechanisms, Redis being a popular option here: it will replicate all session data inside Redis, so that when the application scales out, each node will have access to those user sessions.
 
 ## Spring Session configuration
 
@@ -71,7 +71,7 @@ You can now restart your application, and you'll now benefit from HTTP session r
 
 ## Testing Spring Session
 
-Session are specific to each user, and are usually maintained using a cookie.
+Sessions are specific to each user, and are maintained using a cookie.
 
 There are two ways to test that sessions are working correctly here: you can point your browser to [http://localhost:8080/session](http://localhost:8080/session) and reload your page several times, or use the following command line:
 
