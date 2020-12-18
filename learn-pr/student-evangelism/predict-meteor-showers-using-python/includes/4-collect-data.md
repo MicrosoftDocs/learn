@@ -77,8 +77,6 @@ Download these files and save them in your *over-the-moon/meteor-showers/data* f
 > 1. Right-click anywhere in the browser window, and then select **Save as**.
 > 1. In the **File save as** dialog box, you can choose the file name (use the original name of the downloaded CSV file), the file type (CSV), and where to download the file to (your project data folder).
 >
-> See a [demonstration](https://github.com/sguthals/learnwithdrg/blob/main/SaveCSVFromGitHub.mp4?azure-portal=true). To view the demo file, select the **Download** button in the GitHub repository, and then open the downloaded file.
->
 
 ## Other data to consider
 
