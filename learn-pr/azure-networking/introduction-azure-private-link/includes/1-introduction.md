@@ -1,4 +1,4 @@
-A few intro sentences. Do not add a heading to these md files.
+Azure Private Link provides access to Azure services privately over the Microsoft Azure backbone network instead of publicly over the internet.
 
 Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. The company has just migrated some on-premises services to Microsoft Azure, including services accessed by company employees and by Contoso customers. However, Contoso IT staff are concerned that accessing these services requires the public internet, which is considered a security risk. IT would like to be able to connect an Azure virtual network to Azure services without using a public IP address, connect customers to company-provided Azure services without using the public internet, and connect employees to Azure services without having to configure ExpressRoute or a VPN.
 
