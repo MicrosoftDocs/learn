@@ -3,7 +3,7 @@ uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.9-summary
 title: Summary
 metadata:
   title: Summary
-  description: TODO
+  description: What we learned about scaling Java applications with Azure Cache for Redis.
   author: judubois
   ms.author: judubois
   ms.date: 12/04/2020
