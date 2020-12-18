@@ -3,53 +3,53 @@ uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.8-knowledg
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge of the Java target destinations on Azure.
+  description: Check your knowledge on speeding and scaling Java application using Azure Cache for Redis.
   author: judubois
   ms.author: judubois
-  ms.date: 12/04/2020
+  ms.date: 12/18/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Why would you use a platform as a service (PaaS) solution?"
+    - content: "What are the main recommended use cases for using Azure Cache for Redis?"
       choices:
-        - content: "You want to go to production as fast as possible, with a limited ops team."
+        - content: "Use Azure Cache for Redis as distributed cache."
           isCorrect: false
           explanation: "You are partially right, but this answer is not the only reason."
-        - content: "You have high availability, security, or compliance requirements."
+        - content: "Use Azure Cache for Redis as an HTTP session data store."
           isCorrect: false
           explanation: "You are partially right, but this answer is not the only reason."
-        - content: "Your team doesn't have the resources or the willingness to maintain a production-grade infrastructure."
+        - content: "Use Azure Cache for Redis as a message broker."
           isCorrect: false
           explanation: "You are partially right, but this answer is not the only reason."
         - content: "All of the above."
           isCorrect: true
-          explanation: "Correct. Platform as a service solutions are the preferred choice if you want to go to production quickly, with high confidence and a minimal maintenance burden."
-    - content: "Which Azure service is designed to run serverless workloads?"
+          explanation: "Correct. Azure Cache for Redis can be used as a distributed cache, an HTTP session data store, and a message broker."
+    - content: "How does Azure Cache for Redis allow to scale out a Web application?"
       choices:
-        - content: "Azure App Service"
+        - content: "It uses IP multicast to find other application nodes and share data among them."
           isCorrect: false
-          explanation: "Incorrect. Azure App Service is a platform as a service solution, which can run standard Java applications."
-        - content: "Azure Functions"
+          explanation: "Incorrect. Some alternate caching solutions use this mechanism, but not Azure Cache for Redis, as it doesn't work well in cloud environment."
+        - content: "It acts as a central and scalable data store, where all application nodes can store and retrieve cached data."
           isCorrect: true
-          explanation: "Correct. Azure Functions is the serverless offer from Azure."
-        - content: "Azure Kubernetes Service"
+          explanation: "Correct. All nodes can store and retrieve data at scale by connecting to Azure Cache for Redis."
+        - content: "It sends messages to every application nodes to invalidate stale data, so they can then retrieve that data from an persistent database."
           isCorrect: false
-          explanation: "Incorrect. Azure Kubernetes Service is a managed Kubernetes offer"
-        - content: "Azure Spring Cloud"
+          explanation: "Incorrect. Some alternate caching solutions use this mechanism, but not Azure Cache for Redis."
+        - content: "It stores cached data in a SQL database, so that application nodes can retrieve it easily."
           isCorrect: false
-          explanation: "Incorrect. Azure Spring Cloud is a managed service for running Spring Boot and Spring Cloud applications."
-    - content: "With a platform as a service offer such as Azure App Service or Azure Spring Cloud, who manages your Java Virtual Machine (JVM)?"
+          explanation: "Incorrect. Spring Session can use an SQL database to store its data, but it's an alternative and less performant solution than Azure Cache for Redis."
+    - content: ""
       choices:
-        - content: "You are responsible for updating and patching your JVM."
+        - content: "."
           isCorrect: false
-          explanation: "Incorrect. Microsoft manages, updates, and patches your JVM for you."
-        - content: "Microsoft is responsible for updating and patching your JVM."
+          explanation: "Incorrect.."
+        - content: "."
           isCorrect: true
-          explanation: "Correct. Microsoft manages, updates, and patches your JVM for you."
-        - content: "JVM can't be updated or patched."
+          explanation: "."
+        - content: "."
           isCorrect: false
-          explanation: "Incorrect. Microsoft manages, updates, and patches your JVM for you."
+          explanation: "Incorrect.."
               
