@@ -1,8 +1,8 @@
 ## Why REST APIs?
 
-Some application architectures will not support using the Azure Digital Twin SDK. In this scenario, the Azure Digital Twin REST APIs can be used to perform both Control Plane operations (ex: Create Azure digital twin instances) and Data Plane operations (ex: ingesting telemetry / modifying Azure digital twin instance properties).
+Some application architectures will not support using the Azure Digital Twin SDK. In this scenario, the Azure Digital Twin REST APIs are used to perform both Control Plane operations (ex: Create Azure digital twin instances) and Data Plane operations (ex: ingesting telemetry / modifying Azure digital twin instance properties).
 
-More information on Azure digital twin REST APIs can be found in the documentation.
+More information on Azure digital twin REST APIs are found in the documentation.
 
  [Azure Digital Twins REST APIs](https://docs.microsoft.com/en-us/rest/api/azure-digitaltwins/)
 
@@ -10,13 +10,13 @@ More information on Azure digital twin REST APIs can be found in the documentati
 
 Use the OAuth 2.0 client credentials grant specified in RFC 6749, sometimes called two-legged OAuth, to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often referred to as daemons or service accounts.
 
-More information on the different authentication patterns can be found in the [Azure Active Directory documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types)
+More information on the different authentication patterns are found in the [Azure Active Directory documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types)
 
 ### Admin Consent
 
-It's possible that your organization requires additional actions from subscription Owners/administrators to successfully set up an app registration. The steps required may vary depending on your organization's specific settings.
+It's possible that your organization requires extra actions from subscription Owners/administrators to successfully set up an app registration. The steps required may vary depending on your organization's specific settings.
 
-Here are some common potential activities that an Owner/administrator on the subscription may need to perform. These and other operations can be performed from the [Azure AD App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) page in the Azure portal.
+Here are some common potential activities that an Owner/administrator on the subscription may need to perform. These and other operations are performed from the [Azure AD App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) page in the Azure portal.
 - Grant admin consent for the app registration. Your organization may have Admin Consent Required globally turned on in Azure AD for all app registrations within your subscription. If so, the Owner/administrator will need to select this button for your company on the app registration's API permissions page for the app registration to be valid: 
 
     ![Admin Consent](../media/grant-admin-consent.png)

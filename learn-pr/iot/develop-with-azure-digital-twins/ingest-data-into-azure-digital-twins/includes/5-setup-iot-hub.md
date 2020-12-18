@@ -1,6 +1,6 @@
 ## Create an IoT Hub
 
-Use the Azure CLI to create a resource group and then add an IoT hub. For {resource group} use the one that was created for use by Azure Digital Twin and Azure Function.
+Use the Azure CLI to create a resource group and then add an IoT hub. For {resource group} use the one that is created for use by Azure Digital Twin and Azure Function.
 
 1. Run the following [command to create an IoT hub](https://docs.microsoft.com/cli/azure/iot/hub#az-iot-hub-create) in your resource group, using a globally unique name for your IoT hub:
     
@@ -14,7 +14,7 @@ Use the Azure CLI to create a resource group and then add an IoT hub. For {resou
     az iot hub device-identity create --device-id GrindingStep --hub-name $dtname -g $rgname
     ```
 
-The output is information about the device that was created.
+You'll see the output information of the device created.
 
 ## Configure and run the simulation
 
@@ -71,7 +71,7 @@ In this section, you configure your IoT Hub to publish events as they occur.
 
 1.  Select **Create**
 
-At this point, you should see messages showing up in the Azure Function Log Stream that was configured in the previous unit.  The Azure Function Log Stream will show the telemetry being received from Event Grid and any errors connecting to Azure Digital Twins or updating the Twin.
+At this point, you should see messages showing up in the Azure Function Log Stream that is configured in the previous unit.  The Azure Function Log Stream will show the telemetry being received from Event Grid and any errors connecting to Azure Digital Twins or updating the Twin.
 
    ![Log Stream](../media/LogStream.png)
 

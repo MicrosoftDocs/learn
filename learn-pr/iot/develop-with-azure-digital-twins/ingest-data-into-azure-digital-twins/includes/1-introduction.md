@@ -1,8 +1,8 @@
 ## Scenario
 
-Imagine you've been asked to prototype a solution that can model how Chocolate manufacturing components impact the production of Chocolate. These components often have a child-parent relationship and the status of the parent component relies on the values stored in child components or other systems. You need to be able to create and store the model, instantiate instances of the model for each component, and store / update important component values from a variety of external systems.
+Imagine you're asked to prototype a solution that can model how Chocolate manufacturing components impact the production of Chocolate. These components often have a child-parent relationship and the status of the parent component relies on the values stored in child components or other systems. You can create and store the model, instantiate instances of the model for each component, store or update important component values from various external systems.
 
-Azure Digital Twins provides a service that abstracts the complexity needed to deliver the solution above. Azure Digital Twins can be used to store models created using the Digital Twins Definition Language (DTDL). Models of components can be instantiated and their properties updated using APIs or the Azure Digital Twins SDK.
+Azure Digital Twins provides a service that abstracts the complexity needed to deliver the solution above. Azure Digital Twins is used to store models created using the Digital Twins Definition Language (DTDL). Models of components can be instantiated and their properties updated using APIs or the Azure Digital Twins SDK.
 
 ## Learning objectives
 In this module you will:
@@ -18,8 +18,8 @@ In this module you will:
   - Beginner-level experience with: IoT Hub, Azure Functions, and Logic Apps
   - Azure Subscription
   - Admin Access to Azure AD Tenant & Azure Subscription
-  - Mac OS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6 )
-- Windows OS: PowerShell is built-in
+  - macOS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6 )
+- Windows OS: PowerShell is built in
   - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
   - [.NET Core 3.1](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)
