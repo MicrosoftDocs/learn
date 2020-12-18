@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.backup-restore-databases
 metadata:
-  title: Backup and restore databases
-  description: "Plan and implement policy for recovering data in case of user error or failure of technology. Explore various options for how and where to backup and restore databases."
-  ms.date: 09/18/2020
+  title: Back up and restore databases
+  description: "Back up and restore databases"
+  ms.date: 12/16/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -35,6 +35,7 @@ units:
 - learn.wwl.backup-restore-databases.backup-restore-sql-server-running-azure-virtual-machines
 - learn.wwl.backup-restore-databases.backup-sql-server-virtual-machine
 - learn.wwl.backup-restore-databases.backup-restore-database-using-azure-sql-database
+- learn.wwl.backup-restore-databases.exercise
 - learn.wwl.backup-restore-databases.knowledge-check
 - learn.wwl.backup-restore-databases.summary
 badge:
