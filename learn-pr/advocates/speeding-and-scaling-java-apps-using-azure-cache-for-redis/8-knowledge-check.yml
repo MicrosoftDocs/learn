@@ -17,13 +17,13 @@ quiz:
       choices:
         - content: "Use Azure Cache for Redis as distributed cache."
           isCorrect: false
-          explanation: "You are partially right, but this answer is not the only reason."
+          explanation: "You're partially right, but this answer isn't the only reason."
         - content: "Use Azure Cache for Redis as an HTTP session data store."
           isCorrect: false
-          explanation: "You are partially right, but this answer is not the only reason."
+          explanation: "You're partially right, but this answer isn't the only reason."
         - content: "Use Azure Cache for Redis as a message broker."
           isCorrect: false
-          explanation: "You are partially right, but this answer is not the only reason."
+          explanation: "You're partially right, but this answer isn't the only reason."
         - content: "All of the above."
           isCorrect: true
           explanation: "Correct. You can use Azure Cache for Redis as a distributed cache, an HTTP session data store, and a message broker."
