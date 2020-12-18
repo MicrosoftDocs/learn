@@ -4,7 +4,7 @@ Now you know the basic features and benefits of Azure Private Link. It's time no
 
 Azure Private Link provides private access to Azure services. Here, "private" means that the connection uses the Microsoft Azure backbone network instead of the internet. To make that switch, Private Link changes the connectivity method for the Azure resource from public endpoint to *private endpoint*.
 
-With a private endpoint, you no longer need to use a public IP address to access the Azure resource. Instead, you use a private IP address that Azure assigns to the resource from the address space of your subnet.
+You no longer need to use a public IP address to access the Azure resource. Instead, you use a private IP address that Azure assigns to the resource from the address space of your subnet.
 
 The key takeaway? The Azure resource is now effectively a part of your virtual network. Clients on your network can access the resource—known as a *Private Link resource*—just like any other network resource.
 
@@ -53,7 +53,7 @@ Once you create the Private Link Service resource, Azure issues an *alias* for t
 * *guid*. A globally unique ID generated automatically by Azure.
 * *suffix*. The text region.azure.privatelinkservice; region is the region where the Private Link Service is deployed.
 
-Once that's done, you share the Private Link Service alias with the consumers of your custom service. Each consumer then sets up a Private Endpoint in their own Azure virtual network and maps the endpoint to the Private Link Service alias.
+You share the Private Link Service alias with the consumers of your custom service. Each consumer then sets up a Private Endpoint in their own Azure virtual network. The consumer then maps the endpoint to the Private Link Service alias.
 
 Here are some key points to consider when evaluating Private Link Service:
 
