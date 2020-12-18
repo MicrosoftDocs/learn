@@ -13,17 +13,17 @@ While going into the depths of how AI is built is beyond the scope of this modul
 
 Now imagine that the computer is a little smarter and can identify the primary color that shows up in an image. We can already start *teaching* (called *training* in AI) the computer to identify images. For example, if I showed the computer this picture of Bungee:
 
-![Picture with mostly Bungee in it.](../media/bungee-face.png)
+:::image type="content" source="../media/bungee-face.png" alt-text="Image that shows mostly Bungee." border="false":::
 
 The computer would probably understand that pictures that are mostly white and yellow are pictures of Bungee. But what if we showed the computer this picture of Chang'e?
 
-![Chang'e playing ping pong.](../media/change-ping-pong.png)
+:::image type="content" source="../media/change-ping-pong.png" alt-text="Image that shows Chang'e playing ping pong." border="false":::
 
 That picture also has a lot of white and yellow, so the computer would probably think that is a picture of Bungee, too.
 
 And what if we showed the computer this picture of Bungee next to the night sky?
 
-![Bungee looking at the Moon.](../media/bungee-moon.png)
+:::image type="content" source="../media/bungee-moon.png" alt-text="Image that shows Bungee looking at the Moon." border="false":::
 
 There is white, but no yellow at all, so the computer would probably think this is *not* a picture of Bungee.
 
@@ -35,17 +35,17 @@ Rather than only keeping track of aggregate colors in an image, the computer wou
 
 This kind of analysis can be useful, for example, if we start to identify pictures of the Moon. Now we can say that the Moon is in a picture if there is a white circle, typically against a blue or black background, like this:
 
-![Moon against a night sky.](../media/moon-big.png)
+:::image type="content" source="../media/moon-big.png" alt-text="Image that shows the Moon against a night sky." border="false":::
 
 And if we showed the computer this picture:
 
-![Moon behind Fei Fei.](../media/moon-small.png)
+:::image type="content" source="../media/moon-small.png" alt-text="Image that shows the Moon behind Fei Fei." border="false":::
 
 The computer would probably still recognize it because there is a distinct white circle against a blue or black background.
 
 But the computer would probably not be able to recognize this as a picture of the Moon:
 
-![Moon with a big dog taking a bite from it.](../media/moon-bite.png)
+:::image type="content" source="../media/moon-bite.png" alt-text="Image that shows the Moon with a big dog taking a bite from it." border="false":::
 
 Because it's not a complete white circle.
 
