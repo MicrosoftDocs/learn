@@ -27,7 +27,7 @@ quiz:
         - content: "All of the above."
           isCorrect: true
           explanation: "Correct. Azure Cache for Redis can be used as a distributed cache, an HTTP session data store, and a message broker."
-    - content: "How does Azure Cache for Redis allow to scale out a Web application?"
+    - content: "How does Azure Cache for Redis scale out a Web application?"
       choices:
         - content: "It uses IP multicast to find other application nodes and share data among them."
           isCorrect: false
