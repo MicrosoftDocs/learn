@@ -10,6 +10,7 @@ curl https://start.spring.io/starter.tgz -d dependencies=web,data-redis -d baseD
 
 > [!NOTE]
 > We use the `Spring Web` and the `Spring Data Redis` components.
+> `Spring Data Redis` uses the [Lettuce](https://github.com/lettuce-io/lettuce-core) Redis driver, and you will be able to use it for more advanced usage.
 
 ## Add Spring code to manage data using Spring Data Redis
 
