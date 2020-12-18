@@ -69,4 +69,4 @@ If your goal is to either access or offer an Azure resource without using the pu
 * To privately access an Azure PaaS service or an Azure service from a Microsoft Partner, create a Private Endpoint in a subnet of your Azure virtual network. That Private Endpoint uses Private Link to access the Azure service using a private IP address over the Microsoft Azure backbone. Peered virtual networks and on-premises networks that use ExpressRoute Private Peering or a VPN tunnel can also access the Azure service via the Private Endpoint.
 * To offer private access to a custom Azure service, place the service behind a Standard Load Balancer, create a Private Link Service resource, and attach it to the load balancer's frontend IP configuration.
 
-<!-- insert image here-->
+[The unit image will appear here]
