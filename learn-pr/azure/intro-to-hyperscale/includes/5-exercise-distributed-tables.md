@@ -4,8 +4,8 @@
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com)
 
-2. Select **Bash**
-3. Select the subscription you used in the previous exercise to deploy the Hyperscale server group
+1. Select **Bash**
+1. Select the subscription you used in the previous exercise to deploy the Hyperscale server group
 
     :::image type="content" source="../media/5a-subscription.png" alt-text="Select Subscription.":::
 
@@ -13,7 +13,7 @@
 
     :::image type="content" source="../media/5b-shell.png" alt-text="Azure Cloud Shell.":::
 
-4. To make things easier, we'll save the name of the server group in the Cloud Shell. Copy the code below, and replace the `{SERVER-NAME}` with the name you set for the server in the previous exercise.
+1. To make things easier, we'll save the name of the server group in the Cloud Shell. Copy the code below, and replace the `{SERVER-NAME}` with the name you set for the server in the previous exercise.
 
     ```bash
     SERVERNAME={SERVER-NAME}
@@ -23,13 +23,13 @@
 
     Let's now use the psql command-line utility to connect to the Hyperscale server group.
 
-5. Select the Copy button on the code block to copy the code, and paste it into the Cloud Shell.
+1. Select the Copy button on the code block to copy the code, and paste it into the Cloud Shell.
 
     ```psql
        psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
     ```
 
-6. At the prompt, type in your password, then Select Enter to connect to your Hyperscale server group.
+1. At the prompt, type in your password, then Select Enter to connect to your Hyperscale server group.
 
     > [!NOTE]
     > You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password` 
@@ -72,7 +72,7 @@ First, create the event and user tables.
     
     In our case, we have the **user_id** to shard and we want to distribute both the tables we created. We'll shard the two tables from our previous step, `payment_events` and `payment_users`.
     
-2. In the Cloud Shell window, run the following query to distribute our payment_events and payment_users tables to the worker nodes:
+1. In the Cloud Shell window, run the following query to distribute our payment_events and payment_users tables to the worker nodes:
 
     ```sql
     SELECT create_distributed_table('payment_events', 'event_id');
@@ -95,7 +95,7 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     \! curl -O https://raw.githubusercontent.com/MicrosoftDocs/mslearn-create-connect-postgresHyperscale/main/events.csv
     ```
 
-2. Next, load the data from the CSV files into the distributed tables, `payment_users` and `payment_events`.
+1. Next, load the data from the CSV files into the distributed tables, `payment_users` and `payment_events`.
 
     ```sql
     SET CLIENT_ENCODING TO 'utf8';
@@ -104,11 +104,11 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     \copy payment_events from 'events.csv' WITH CSV;
     ```
 
-### Run queries
+    ### Run queries
 
     Our data is now loaded and distributed. Let's run a couple queries.
 
-3. Run the follow query in the Cloud Shell to see how many events we have stored.
+1. Run the follow query in the Cloud Shell to see how many events we have stored.
 
     ```sql
     SELECT count(*) from payment_events;
@@ -116,7 +116,7 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
 
     126,195 events. Let's look into the data further.
 
-4. Run the following query to see how many transactions we're having per hour.
+1. Run the following query to see how many transactions we're having per hour.
 
     ```sql
     SELECT date_trunc('hour', created_at) AS hour,
@@ -127,7 +127,7 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     ORDER BY hour;
     ```
 
-5. And now, let's take a look for high activity and see if we can find anything interesting.
+1. And now, let's take a look for high activity and see if we can find anything interesting.
 
     ```sql
     SET citus.enable_repartition_joins TO ON;
@@ -140,4 +140,12 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     ORDER BY purchases DESC LIMIT 20;
     ```
 
-We can see our most active user is `LombiqBot`, with 2232 transactions within the four hour window. Interesting.
+    We can see our most active user is `LombiqBot`, with 2232 transactions within the four hour window. Interesting.
+
+1. In the Cloud Shell window, run to disconnect from the Hyperscale instance:
+
+    ```sql
+    \q
+    ```
+    
+    Keep the cloud shell tab open, and move onto Unit 6 - Scale up and scale out.
