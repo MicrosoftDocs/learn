@@ -3,7 +3,7 @@ uid: learn.student-evangelism.train-custom-vision-ai
 metadata:
   title: Use AI to recognize objects in images by using the Custom Vision service
   description: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
-  ms.date: 10/15/2020
+  ms.date: 11/24/2020
   author: sguthals
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -11,11 +11,17 @@ metadata:
 title: Use AI to recognize objects in images by using the Custom Vision service
 summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
 abstract:  |
+  This module is part of a multimodal learning experience. Start the module to see how you can follow along!
+
   In this module, you will:
   - Create a good dataset of images for training AI.
-  - Train a Custom Vision AI on a particular animal.
+  - Train a Custom Vision AI model on a particular animal.
   - Test the model you trained.
   - Ensure ethical practices throughout AI development.
+
+  >[!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
 prerequisites: | 
   None
 iconUrl: /learn/achievements/student-evangelism/train-custom-vision-ai.svg
