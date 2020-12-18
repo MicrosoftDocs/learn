@@ -5,7 +5,7 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com?azure-portal=true)
 
-1. Next, select the **payment-server-demo** resource.
+1. Next, select the **server resource** (such as `payment-server-demo`).
 
     :::image type="content" source="../media/7a-resource.png" alt-text="Payment server resource.":::
 
@@ -24,7 +24,7 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
 
 1. Go to Azure Cloud Shell
     > [!div class="nextstepaction"]
-    > [Azure Cloud Shell](https://shell.azure.com)
+    > [Azure Cloud Shell](https://shell.azure.com?azure-portal=true))
 
 1. Connect to your Hyperscale instance with the following command, using your password:
 
@@ -33,7 +33,7 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
     ```
 
     > [!NOTE]
-    > You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password`
+    > You can reset your password in the [Azure Portal](https://portal.azure.com?azure-portal=true)). Select the server resource you created in the previous exercise (such as `payment-server-demo`), then select `Reset password`
 
 1. In the Cloud Shell window, run the following query to rebalance the shards for our payment_events and payment_users tables:
 

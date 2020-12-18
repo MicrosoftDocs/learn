@@ -2,7 +2,7 @@
 
 1. Go to Azure Cloud Shell
     > [!div class="nextstepaction"]
-    > [Azure Cloud Shell](https://shell.azure.com)
+    > [Azure Cloud Shell](https://shell.azure.com?azure-portal=true))
 
 1. Select **Bash**
 1. Select the subscription you used in the previous exercise to deploy the Hyperscale server group
@@ -32,7 +32,7 @@
 1. At the prompt, type in your password, then Select Enter to connect to your Hyperscale server group.
 
     > [!NOTE]
-    > You can reset your password in the [Azure Portal](https://portal.azure.com). Select the `payment-server-demo` resource, then select `Reset password` 
+    > You can reset your password in the [Azure Portal](https://portal.azure.com?azure-portal=true)). Select the server resource you created in the previous exercise (such as `payment-server-demo`), then select `Reset password`
 
 ## Create tables in the database
 
