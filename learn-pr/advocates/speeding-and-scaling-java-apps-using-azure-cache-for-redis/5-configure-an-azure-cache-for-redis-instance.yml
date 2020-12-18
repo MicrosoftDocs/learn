@@ -3,7 +3,7 @@ uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.5-configur
 title: Configure an Azure Cache for Redis instance
 metadata:
   title: Use Azure Cache for Redis as a data store for a Spring Boot application using Spring Data Redis
-  description: In this unit, we configure a Spring Boot application to connect to a Azure Cache for Redis instance.
+  description: In this unit, we configure a Spring Boot application to connect to an Azure Cache for Redis instance.
   author: judubois
   ms.author: judubois
   ms.date: 12/04/2020
