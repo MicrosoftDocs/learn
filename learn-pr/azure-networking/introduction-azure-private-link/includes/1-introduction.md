@@ -1,10 +1,10 @@
 A few intro sentences. Do not add a heading to these md files.
 
-Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. The company has just migrated some on-premises services to Microsoft Azure, including services accessed by company employees and by Contoso customers. However, Contoso IT staff are concerned that accessing these services requires the public internet, which is considered a security risk. IT would like to be able to connect an Azure virtual network to Azure services without using a public IP address, connect customers to company-provided Azure services without using the public internet, and connect employees to Azure services without having to configure ExpressRoute or a VPN. 
+Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. The company has just migrated some on-premises services to Microsoft Azure, including services accessed by company employees and by Contoso customers. However, Contoso IT staff are concerned that accessing these services requires the public internet, which is considered a security risk. IT would like to be able to connect an Azure virtual network to Azure services without using a public IP address, connect customers to company-provided Azure services without using the public internet, and connect employees to Azure services without having to configure ExpressRoute or a VPN.
 
 As a lead engineer at Contoso, you’re responsible for evaluating the functionality of Azure Private Link to enable employees and customers to privately access services on the Azure platform, protect against data leakage, and connect to services running in other regions.  
 
-In this module, you... (explain what they do)
+In this module, you'll learn the fundamentals of Azure Private Link, including what it is, how it works, and when you should use it. By the end of this module, you will be able to evaluate whether Azure Private Link is a suitable solution for offering Contoso employees and customers private access to Azure services.
 
 ## Learning objectives
 
