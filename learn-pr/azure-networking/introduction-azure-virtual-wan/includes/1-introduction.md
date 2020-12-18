@@ -1,6 +1,4 @@
-A few intro sentences. Do not add a heading to these md files.
-
-hellow world
+Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
 
 Contoso, Ltd. is a growing financial services company in London with major offices located throughout the world. They’re evaluating the adoption of a global transit network architecture to connect their growing number of distributed offices, address the work from home initiatives, and control their cloud-centric modern, global enterprise IT footprint.
 
