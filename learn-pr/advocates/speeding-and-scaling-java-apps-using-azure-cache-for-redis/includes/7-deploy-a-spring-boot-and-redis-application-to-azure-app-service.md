@@ -71,7 +71,7 @@ That command will end up with a line like:
 Successfully deployed the artifact to https://xxxx.azurewebsites.net
 ```
 
-This is the URL of your running application, which we will use in the next section.
+This is the URL of your running application, which we'll use in the next section.
 
 ## Testing the application on Azure
 

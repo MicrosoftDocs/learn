@@ -1,8 +1,8 @@
-You will now create a Spring Boot application that will use Spring Data Redis to store and retrieve data from Azure Cache for Redis.
+You'll now create a Spring Boot application that'll use Spring Data Redis to store and retrieve data from Azure Cache for Redis.
 
 ## Create a Spring Boot project using Spring Data Redis
 
-To create our Spring Boot project, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
+To create our Spring Boot project, we'll use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
 curl https://start.spring.io/starter.tgz -d dependencies=web,data-redis -d baseDir=spring-redis-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
@@ -10,7 +10,7 @@ curl https://start.spring.io/starter.tgz -d dependencies=web,data-redis -d baseD
 
 > [!NOTE]
 > We use the `Spring Web` and the `Spring Data Redis` components.
-> `Spring Data Redis` uses the [Lettuce](https://github.com/lettuce-io/lettuce-core) Redis driver, and you will be able to use it for more advanced usage.
+> `Spring Data Redis` uses the [Lettuce](https://github.com/lettuce-io/lettuce-core) Redis driver, and you'll be able to use it for more advanced usage.
 
 ## Add Spring code to manage data using Spring Data Redis
 

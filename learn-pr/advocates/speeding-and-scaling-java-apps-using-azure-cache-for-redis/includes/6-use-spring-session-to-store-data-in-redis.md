@@ -65,9 +65,9 @@ public class SessionReplicationController {
 
 > [!NOTE]
 > We configure a specific `ConfigureRedisAction.NO_OP` Spring bean, as by default Spring Session will try to set up [Redis Keyspace notifications](https://redis.io/topics/notifications). This setup will not work on a secured Redis instance like the one provided by Azure Cache for Redis, and has to be applied manually (using the Redis CLI) if needed.
-> Those keyspace notifications shouldn't be enabled for our current scenario anyway: they are useful for people using Websockets (which isn't our case), and they will consume more resources.
+> Those keyspace notifications shouldn't be enabled for our current scenario anyway: they are useful for people using Websockets (which isn't our case), and they'll consume more resources.
 
-You can now restart your application, and you will now benefit from HTTP session replication.
+You can now restart your application, and you'll now benefit from HTTP session replication.
 
 ## Testing Spring Session
 

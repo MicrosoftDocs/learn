@@ -21,7 +21,7 @@ For Java developers, Redis doesn't provide an official library: there are in fac
 Here are the three most popular ones:
 
 - [Jedis](https://github.com/redis/jedis) is the most used library, and it's simple and easy to use.
-- [Lettuce](https://github.com/lettuce-io/lettuce-core) is the library we will use in this module, as it's the one that comes bundled with Spring Data for Redis. It has great asynchronous support, which is important if you want to create a reactive Spring application.
+- [Lettuce](https://github.com/lettuce-io/lettuce-core) is the library we'll use in this module, as it's the one that comes bundled with Spring Data for Redis. It has great asynchronous support, which is important if you want to create a reactive Spring application.
 - [Redisson](https://github.com/redisson/redisson) is the most advanced Redis client, as it can also be used as a Hibernate second-level cache (which is an awesome feature if you need it).
 
 ## Recommended use cases
