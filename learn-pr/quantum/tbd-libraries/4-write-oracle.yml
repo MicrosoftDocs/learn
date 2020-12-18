@@ -22,4 +22,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-write-pracle.md)]
+  [!include[](includes/4-write-oracle.md)]
