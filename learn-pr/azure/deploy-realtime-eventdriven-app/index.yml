@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.deploy-event-driven-real-time
+metadata:
+  title: Deploy Event-driven real-time app to Azure
+  description: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
+  ms.date: 01/28/2021
+  author: Sandra Ahlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Event-driven real-time app to Azure
+summary: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
+abstract: |
+  In this module, you will:
+  - Learn what event-driven and real-time means.
+  - Create an IoT scenario with simulated telemetric data.
+  - Send the telemetric data with an Azure Function to a Event Hub.
+  - Connect another function this Event Hub to trigger a storage in Cosmos DB.
+  - Have a look at the metrics in Application Insights to measure the performance and identify potential bottle necks.
+prerequisites: | 
+  - An Azure subscription
+  - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-functions
+- azure-event-hubs
+- azure-cosmos-db
+- azure-storage
+units:
+- learn.azure.deploy-event-driven-real-time.1-introduction
+- learn.azure.deploy-event-driven-real-time.2-build
+- learn.azure.deploy-event-driven-real-time.3-exercise-build
+- learn.azure.deploy-event-driven-real-time.4-deploy
+- learn.azure.deploy-event-driven-real-time.5-exercise-deploy
+- learn.azure.deploy-event-driven-real-time.6-knowledge-check
+- learn.azure.deploy-event-driven-real-time.7-summary
+badge:
+  uid: learn.azure.deploy-event-driven-real-time.badge

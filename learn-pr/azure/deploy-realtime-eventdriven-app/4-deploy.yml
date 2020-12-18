@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-event-driven-real-time.4-deploy
+title: Deploy a Spring Boot application to Azure
+metadata:
+  title: Deploy a Spring Boot application to Azure
+  description: Deploy a Spring Boot application to Azure.
+  ms.date: 28/01/2021
+  author: Sandra Ahlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-deploy.md)]
