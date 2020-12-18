@@ -1,4 +1,4 @@
-We will now explore the second of our two containers, the SalesOrder container, has been created the AdventureWorks database within the Azure Cosmos DB API for MongoDB account and contains sales order information. 
+Let's explore the second of our two containers; the SalesOrder container.This container has been created the AdventureWorks database within the Azure Cosmos DB API for MongoDB and contains sales order information. 
 
 For reference here is a sample of a sales order JSON document from the SalesOrder container:
 
@@ -38,9 +38,9 @@ SELECT top 10 *
 
 Click **run**.
 
-You will now be presented with a result set of the first 10 rows, of a row-based representation of the documents contained within the SalesOrder container’s analytical store. This is from an Azure Cosmos Core API account for MongoDB, so that data will be represented using the full fidelity schema representation by default. 
+You will now be presented with a result set of the first 10 rows. It is a row-based representation of the documents contained within the SalesOrder container’s analytical store using Azure Cosmos Core API account for MongoDB. As a result, the data will be represented using the full fidelity schema representation by default. 
 
-All top-level properties of the document are represented as columns with the associated property values as the value of the column. All properties are **represented as a structure of the type of values assigned to the properties; and the values themselves, (A) and (B)**. For complex types such as objects and arrays, these remain embedded within the structure but similarly expanded to include type encapsulation of each of their property values. 
+All top-level properties of the document are represented as columns with the associated property values. All properties are **represented as a structure of the type of values assigned to the properties; and the values themselves, (A) and (B)**. For complex types such as objects and arrays, they will remain embedded within the structure, and expanded to include type encapsulation of each of their property values. 
 
 In this example, ignoring the system document properties for now, the _id, customerId, orderDate, and shipDate are all strings and have a **type encapsulation of string (A)**. The **details property is an embedded array (B)**, in turn with embedded properties sku, name, price, and quantity of each array element object.
 
