@@ -2,7 +2,7 @@ In this unit, you download and install the DTDL Validator sample. This is a comm
 
 ## Download and install the DTDL Validator sample application
 
-1. Download the [DTDL Validator](https://docs.microsoft.com/en-us/samples/azure-samples/dtdl-validator/dtdl-validator/).
+1. Download the [DTDL Validator](https://docs.microsoft.com/samples/azure-samples/dtdl-validator/dtdl-validator/).
 
 1. Extract the zip file to an appropriate location. The default location will be in your **Downloads** folder.
 
@@ -16,9 +16,9 @@ In this unit, you download and install the DTDL Validator sample. This is a comm
 
 1. Navigate to the folder containing the DTDLValidator sample app. If you extracted the file to the default location, this location will be:
 
-```cmd
-C:\Users\<your alias>\Downloads\DTDL_Validator\DTDLValidator-Sample\DTDLValidator\bin\Debug\netcoreapp3.1
-```
+    ```cmd
+    C:\Users\<your alias>\Downloads\DTDL_Validator\DTDLValidator-Sample\DTDLValidator\bin\Debug\netcoreapp3.1
+    ```
 
 1. In the Command Prompt window, validate the app is installed correctly by entering:
 
@@ -26,7 +26,7 @@ C:\Users\<your alias>\Downloads\DTDL_Validator\DTDLValidator-Sample\DTDLValidato
     DTDLValidator --help
     ```
 
-    :::image type="content" source="../media/adt-dtdl-validator-help.png" alt-text="Command prompt help output for the DTDLValidator application" lightbox="../media/adt-dtdl-validator-help.png":::
+    :::image type="content" source="../media/dtdl-validator-help.png" alt-text="Command prompt help output for the DTDLValidator application" lightbox="../media/dtdl-validator-help.png":::
 
 1. Leave the Command Prompt window open.
 

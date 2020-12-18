@@ -18,7 +18,7 @@ In this unit, you create an instance of a digital twins resource and collect the
 
 1. For **Resource name**, enter a friendly name. For example: "digital-twins-instance".
 
-    :::image type="content" source="../media/adt-create-digital-twins-instance.png" alt-text="Screenshot showing the completed Create Resource pane for a digital twins instance" lightbox="../media/adt-create-digital-twins-instance.png":::
+    :::image type="content" source="../media/create-digital-twins-instance.png" alt-text="Screenshot showing the completed Create Resource pane for a digital twins instance" lightbox="../media/create-digital-twins-instance.png":::
 
 1. Select **Review + create**. Then Select **Create**.
 
@@ -47,7 +47,7 @@ The next step is to save some important data used to connect other resources to 
     > [!NOTE]
     > If you get the following warning message, ignore it. You don't need to see other role assignments.
 
-    :::image type="content" source="../media/adt-aad-permission-error.png" alt-text="Screenshot showing a permissions warning message" lightbox="../media/adt-aad-permission-error.png":::
+    :::image type="content" source="../media/permission-error.png" alt-text="Screenshot showing a permissions warning message" lightbox="../media/permission-error.png":::
 
 1. Select **+ Add**, then select **Add role assignment**.
 
@@ -61,6 +61,6 @@ The next step is to save some important data used to connect other resources to 
 
 1. Select **Save**. After a few seconds, you should see your details added to the role assignments, but now with the correct role.
 
-    :::image type="content" source="../media/adt-create-role-assignment.png" alt-text="Screenshot showing the correct role assignments for a digital twins instance" lightbox="../media/adt-create-role-assignment.png":::
+    :::image type="content" source="../media/create-role-assignment.png" alt-text="Screenshot showing the correct role assignments for a digital twins instance" lightbox="../media/create-role-assignment.png":::
 
 Great work. You have completed the bulk of the setup for this module. Next, you'll go over the format and purpose of the digital twin models.

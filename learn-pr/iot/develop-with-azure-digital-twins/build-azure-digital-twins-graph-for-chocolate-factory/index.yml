@@ -24,8 +24,8 @@ prerequisites: |
   - Ability to use the Command Prompt and command-line windows
   - Ability to download and install software tools
   - Ability to use Visual Studio at the beginner level
-  - A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended
-  - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+  - A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended
+  - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli)
     - It is recommended to install AZ CLI locally
     - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab
    - Access to an Azure subscription where you have Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
@@ -43,7 +43,7 @@ units:
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-create-digital-twins-instance
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.understand-digital-twin-definition-language-models
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-create-digital-twin-definition-language-models
-- learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-validate-dtdl-models
+- learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-validate-models
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.build-digital-twin-graph
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-build-digital-twin-graph
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.querying-digital-twin-graphs

@@ -11,7 +11,7 @@ In this exercise, you'll download and run the ADT Explorer sample locally, conne
 
 For the ADT Explorer sample to run properly, you'll need to locally log in to the Azure subscription where you've deployed the ADT instance for your machine to create an environment variable that references those credentials. When running the ADT Explorer sample locally, it will look for this environment variable so that it can connect the sample to your ADT instance in Azure.
 
-1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
+1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
 
 1. Once you successfully installed the Azure CLI, you'll be able to log in to Azure by running the following command in a command prompt:
 
@@ -31,7 +31,7 @@ For the ADT Explorer sample to run properly, you'll need to locally log in to th
 
 1. Type **npm install**. This command will install all the required dependencies of the ADT Explorer sample.
 
-    :::image type="content" source="../media/adt-explorer-npm-install.png" alt-text="Command prompt help output when running npm install" lightbox="../media/adt-explorer-npm-install.png":::
+    :::image type="content" source="../media/explorer-npm-install.png" alt-text="Command prompt help output when running npm install" lightbox="../media/explorer-npm-install.png":::
 
 1. Start the explorer ADT Explorer sample by typing **npm run start**. It might take a few seconds before the opening screen of the ADT Explorer sample appears in your web browser.
 
@@ -51,13 +51,13 @@ Great, the ADT Explorer sample is loaded and ready! The next stage is to start u
 
 If there aren't any errors, you'll see a list of models in the left of your ADT Explorer sample window:
 
-:::image type="content" source="../media/adt-imported-models.png" alt-text="Screenshot showing the imported models in the ADT Explorer sample" lightbox="../media/adt-imported-models.png":::
+:::image type="content" source="../media/imported-models.png" alt-text="Screenshot showing the imported models in the ADT Explorer sample" lightbox="../media/imported-models.png":::
 
 ## Create digital twins
 
 1. Select the **Create a Twin** icon for the Factory model. Name the twin "factory" and create it.
 
-    :::image type="content" source="../media/adt-create-twin.png" alt-text="Screenshot showing the icon for creating a model twin in the ADT Explorer sample" lightbox="../media/adt-create-twin.png":::
+    :::image type="content" source="../media/create-twin.png" alt-text="Screenshot showing the icon for creating a model twin in the ADT Explorer sample" lightbox="../media/create-twin.png":::
 
 1. Create digital twins for the following models, giving the models the suggested names or using your own names:
     - Factory floor: "floor"
@@ -70,7 +70,7 @@ If there aren't any errors, you'll see a list of models in the left of your ADT 
 
 You should now see all the created digital twins in the graph view. Also note that the properties for a selected digital twin will appear in the right-hand pane of the ADT Explorer sample:
 
-:::image type="content" source="../media/adt-twins-in-graph.png" alt-text="Screenshot showing the created twins in the ADT Explorer graph and the properties for a selected twin in the right-hand pane" lightbox="../media/adt-twins-in-graph.png":::
+:::image type="content" source="../media/twins-in-graph.png" alt-text="Screenshot showing the created twins in the ADT Explorer graph and the properties for a selected twin in the right-hand pane" lightbox="../media/twins-in-graph.png":::
 
 ## Create relationships
 
@@ -78,7 +78,7 @@ To create a relationship hold down the `CTRL` key and select the *source* twin, 
 
 1. Locate the **Add Relationship** icon along the range of icons for the graph view. Don't select it yet.
 
-    :::image type="content" source="../media/adt-explorer-add-relationship-icon.png" alt-text="Screenshot showing the Add Relationship icon of the ADT Explorer sample" lightbox="../media/adt-explorer-add-relationship-icon.png":::
+    :::image type="content" source="../media/explorer-add-relationship-icon.png" alt-text="Screenshot showing the Add Relationship icon of the ADT Explorer sample" lightbox="../media/explorer-add-relationship-icon.png":::
 
 1. Hold down the `CTRL` key and select your **factory** twin circle. Then, select the **floor** twin. From the list of relationships, select **rel_has_floors**.
 
@@ -90,13 +90,13 @@ To create a relationship hold down the `CTRL` key and select the *source* twin, 
 
 You should now see all the relationships between the digital twins in the graph view:
 
-:::image type="content" source="../media/adt-explorer-graph-relationships.png" alt-text="Screenshot showing the completed graph in the ADT Explorer sample" lightbox="../media/adt-explorer-graph-relationships.png":::
+:::image type="content" source="../media/explorer-graph-relationships.png" alt-text="Screenshot showing the completed graph in the ADT Explorer sample" lightbox="../media/explorer-graph-relationships.png":::
 
 ## Explore the graph layout options
 
 1. Locate the icon in the graph view that gives a range of layout options, with names such as "Cola" and "Klay":
 
-    :::image type="content" source="../media/adt-explorer-graph-layout.png" alt-text="Screenshot showing the graph icon for changing layout options in the ADT Explorer sample" lightbox="../media/adt-explorer-graph-layout.png":::
+    :::image type="content" source="../media/explorer-graph-layout.png" alt-text="Screenshot showing the graph icon for changing layout options in the ADT Explorer sample" lightbox="../media/explorer-graph-layout.png":::
 
 1. Try each of the layout options in turn.
 

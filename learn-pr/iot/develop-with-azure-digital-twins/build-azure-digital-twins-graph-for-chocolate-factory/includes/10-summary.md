@@ -10,7 +10,7 @@ In this module, you learned how to:
 
 You also learned a bit about chocolate production!
 
-:::image type="content" source="../media/adt-chocolate-nibs3.png" alt-text="Photograph of roasted chocolate nibs" lightbox="../media/adt-chocolate-nibs3.png":::
+:::image type="content" source="../media/chocolate-nibs3.png" alt-text="Photograph of roasted chocolate nibs" lightbox="../media/chocolate-nibs3.png":::
 
 ## Clean up
 

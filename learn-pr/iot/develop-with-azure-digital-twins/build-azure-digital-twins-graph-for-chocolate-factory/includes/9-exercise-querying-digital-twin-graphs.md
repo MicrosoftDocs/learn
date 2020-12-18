@@ -11,13 +11,13 @@ With all the digital twins in view on the graph, set the production step propert
 
 1. Select the **Save** icon at the top-right. Verify that the properties have been updated in the dialog showing the new values.
 
-    :::image type="content" source="../media/adt-explorer-graph-save-properties.png" alt-text="Screenshot of where to find the icon to save properties for a digital twin" lightbox="../media/adt-explorer-graph-save-properties.png":::
+    :::image type="content" source="../media/explorer-graph-save-properties.png" alt-text="Screenshot of where to find the icon to save properties for a digital twin" lightbox="../media/explorer-graph-save-properties.png":::
 
 Now, go through this process three times, one for each production step:
 
 ### Set the roasting step properties
 
-:::image type="content" source="../media/adt-roasting.png" alt-text="Graphical representation of the roasting step" lightbox="../media/adt-roasting.png":::
+:::image type="content" source="../media/roasting.png" alt-text="Graphical representation of the roasting step" lightbox="../media/roasting.png":::
 
 1. Set **ChasisTemperature** to **120**.
 
@@ -31,7 +31,7 @@ Now, go through this process three times, one for each production step:
 
 ### Set the grinding step properties
 
-:::image type="content" source="../media/adt-grinding.png" alt-text="Graphical representation of the grinding step" lightbox="../media/adt-grinding.png":::
+:::image type="content" source="../media/grinding.png" alt-text="Graphical representation of the grinding step" lightbox="../media/grinding.png":::
 
 1. Set **ChasisTemperature** to **40**.
 
@@ -45,7 +45,7 @@ Now, go through this process three times, one for each production step:
 
 ### Set the molding step properties
 
-:::image type="content" source="../media/adt-molding.png" alt-text="Graphical representation of the molding step" lightbox="../media/adt-molding.png":::
+:::image type="content" source="../media/molding.png" alt-text="Graphical representation of the molding step" lightbox="../media/molding.png":::
 
 1. Set **ChasisTemperature** to **55**.
 
@@ -65,7 +65,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE T.FinalStep = true
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-finalstep.png" alt-text="Screenshot showing a query to show a twin based on a boolean property" lightbox="../media/adt-explorer-query-finalstep.png":::
+    :::image type="content" source="../media/explorer-query-finalstep.png" alt-text="Screenshot showing a query to show a twin based on a boolean property" lightbox="../media/explorer-query-finalstep.png":::
 
 - You should now only see the molding step. To recover all the models in a graph, you can enter the following query:
 
@@ -73,7 +73,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE IS_DEFINED(T.$dtId)
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-allmodels.png" alt-text="Screenshot showing a query to show all twins in the graph" lightbox="../media/adt-explorer-query-allmodels.png":::
+    :::image type="content" source="../media/explorer-query-all-models.png" alt-text="Screenshot showing a query to show all twins in the graph" lightbox="../media/explorer-query-all-models.png":::
 
 - The `$dtId` value can be queried for equality:
 
@@ -81,7 +81,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE T.$dtId = 'factory'
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-equality.png" alt-text="Screenshot showing a query based on an equality comparison" lightbox="../media/adt-explorer-query-equality.png":::
+    :::image type="content" source="../media/explorer-query-equality.png" alt-text="Screenshot showing a query based on an equality comparison" lightbox="../media/explorer-query-equality.png":::
 
 - The string comparison function `ENDSWITH` can be used to locate the production steps:
 
@@ -89,7 +89,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE ENDSWITH(T.$dtId,'ing')
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-endswith.png" alt-text="Screenshot showing a query based on the ENDSWITH function" lightbox="../media/adt-explorer-query-endswith.png":::
+    :::image type="content" source="../media/explorer-query-endswith.png" alt-text="Screenshot showing a query based on the ENDSWITH function" lightbox="../media/explorer-query-endswith.png":::
 
 - String comparisons will work with a single letter:
 
@@ -97,7 +97,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE STARTSWITH(T.$dtId,'f')
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-startswith.png" alt-text="Screenshot showing a query based on the STARTSWITH function" lightbox="../media/adt-explorer-query-startswith.png":::
+    :::image type="content" source="../media/explorer-query-startswith.png" alt-text="Screenshot showing a query based on the STARTSWITH function" lightbox="../media/explorer-query-startswith.png":::
 
 - Use `AND`, `OR` to combine elements:
 
@@ -105,7 +105,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE STARTSWITH(T.$dtId,'prod') OR ENDSWITH(T.$dtId,'r')
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-or.png" alt-text="Screenshot showing a query using OR to combine elements" lightbox="../media/adt-explorer-query-or.png":::
+    :::image type="content" source="../media/explorer-query-or.png" alt-text="Screenshot showing a query using OR to combine elements" lightbox="../media/explorer-query-or.png":::
 
 - When looking for whether an item is within a list, use the `IN` keyword:
 
@@ -113,7 +113,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE T.$dtId IN ['factory','grinding']
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-in.png" alt-text="Screenshot showing a query based on searching in a list" lightbox="../media/adt-explorer-query-in.png":::
+    :::image type="content" source="../media/explorer-query-in.png" alt-text="Screenshot showing a query based on searching in a list" lightbox="../media/explorer-query-in.png":::
 
 - To test the property settings, use numerical comparisons:
 
@@ -121,7 +121,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE T.ChasisTemperature > 50
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-numerical.png" alt-text="Screenshot showing a query based on a numerical value" lightbox="../media/adt-explorer-query-numerical.png":::
+    :::image type="content" source="../media/explorer-query-numerical.png" alt-text="Screenshot showing a query based on a numerical value" lightbox="../media/explorer-query-numerical.png":::
 
 - Combine numerical comparisons:
 
@@ -129,7 +129,7 @@ Now run through a range of queries. Copy and paste the following queries into th
     SELECT  *  FROM DIGITALTWINS T   WHERE T.PowerUsage > 100 AND T.ChasisTemperature >= 55
     ```
 
-    :::image type="content" source="../media/adt-explorer-query-and.png" alt-text="Screenshot showing a query using AND to combine elements" lightbox="../media/adt-explorer-query-and.png":::
+    :::image type="content" source="../media/explorer-query-and.png" alt-text="Screenshot showing a query using AND to combine elements" lightbox="../media/explorer-query-and.png":::
 
 ## Next steps
 
