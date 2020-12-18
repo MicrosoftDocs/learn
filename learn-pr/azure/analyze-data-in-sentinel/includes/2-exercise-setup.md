@@ -9,28 +9,27 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link.
 
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-analyze-data-in-sentinel%2Fsentinel-template.json?azure-portal=true)
+    [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-analyze-data-in-sentinel%2Fsentinel-template.json?azure-portal=true)
 
+1. You'll be prompted to sign in your Azure subscription.
+1. On the **Custom deployment** page, provide the following information:
 
-2. You'll be prompted to sign in your Azure subscription.
-3. On the **Custom deployment** page, provide the following information:
+    |||
+    | --- | --- |
+    | **Subscription** | Select your Azure subscription. |
+    | **Resource Group** | Select **Create new** and provide a name for the resource group such as **azure-sentinel-rg**.|
+    | **Region** | From the drop-down menu, select the location where you want to deploy the Azure Sentinel.|
+    | **Workspace name**  | Provide a unique name for the Azure Sentinel Workspace such as ***yourname*-sentinel**. |
+    | **Location** | Accept the default value of **[resourceGroup().location]**. |
+    | **Simplevm Name** | Accept the default value of **simple-vm**.|
+    | **Simplevm Windows OS Version** | Accept the default value of **2016-Datacenter**.|
 
-|||
-| --- | --- |
-| **Subscription** | Select your Azure subscription. |
-| **Resource Group** | Select **Create new** and provide a name for the resource group such as **azure-sentinel-rg**.|
-| **Region** | From the drop-down menu, select the location where you want to deploy the Azure Sentinel.|
-| **Workspace name**  | Provide a unique name for the Azure Sentinel Workspace such as ***yourname*-sentinel**. |
-| **Location** | Accept the default value of **[resourceGroup().location]**. |
-| **Simplevm Name** | Accept the default value of **simple-vm**.|
-| **Simplevm Windows OS Version** | Accept the default value of **2016-Datacenter**.|
+1. Select the **Review + create**, and then select **Create**.
 
-4. Select the **Review + create**, and then select **Create**.
+    :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
-:::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
-
-> [!Note]
-> Wait for the deployment to complete. The deployment should take less than 5 minutes.
+    > [!Note]
+    > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
 ## Task 2: Check the resources created
 
