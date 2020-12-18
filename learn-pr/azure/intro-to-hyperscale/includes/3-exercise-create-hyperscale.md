@@ -14,7 +14,7 @@ For a total of 12 vCores and 1.5 TiB of storage.
 
 2. Next, select **Create a resource**, **Databases**, and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 
-:::image type="content" source="../media/3a-select-postgres.png" alt-text="Select create database.":::
+    :::image type="content" source="../media/3a-select-postgres.png" alt-text="Select create database.":::
 
 3. Select **Create** in the **Hyperscale (Citus) server group** box.
 
@@ -37,14 +37,13 @@ For a total of 12 vCores and 1.5 TiB of storage.
     1. Note the server name and password down for later use.
     1. Select **Configure server group** in the **Compute + storage** options.
 
-:::image type="content" source="../media/3c-form.png" alt-text="Configure Hyperscale form.":::
+    :::image type="content" source="../media/3c-form.png" alt-text="Configure Hyperscale form.":::
 
 5. Increase compute and storage if you want. Next, scroll to the bottom of the page and select the blue **Save** box.
-
 6. Select the **Networking** tab at the top of the page
 7. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
 
-:::image type="content" source="../media/3d-firewall.png" alt-text="Configure Hyperscale firewall.":::
+    :::image type="content" source="../media/3d-firewall.png" alt-text="Configure Hyperscale firewall.":::
 
 8. Scroll to the bottom of the page and select the blue **Review + create** button.
 

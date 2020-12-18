@@ -23,7 +23,7 @@ There are, broadly, two kinds of applications that work well on Hyperscale (Citu
 
 Multi-tenant is the most common architecture used in SaaS applications, where multiple customers (tenants) share application resources.
 
-Essentially, multi-tenant means that multiple customers share application resources with other **users, accounts, companies, or organizations**, which can provide massive cost savings. Multi-Tenant applications are inherently relational, with a natural dimension on which to distribute data across nodes: shard by tenant_id.
+Essentially, multi-tenant means that multiple customers share application resources with other **users, accounts, companies, or organizations**, which can provide massive cost savings. Multi-Tenant applications are inherently relational, with a natural dimension on which to distribute data across nodes: _**shard by tenant_id**_.
 
 **Examples**: Websites which host store-fronts for other businesses, or sales automation tools.  
 **Characteristics**:
@@ -64,7 +64,7 @@ For fast results, these applications need massive amounts of compute - for numer
 :::column-end:::
 :::row-end:::
 
-Our contactless payment app will also need customer facing dashboards. Merchants will need to analyze new events & new data as it happens, in real time. These **OLAP workloads** will be much more intensive than customer account statements.
+Our contactless payment app will also need customer facing dashboards. Merchants will need to analyze new events and new data as it happens, in real time. These **OLAP workloads** will be much more intensive than customer account statements.
 
 ## At a Glance
 
