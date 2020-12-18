@@ -40,18 +40,18 @@ The model looks like this:
     az dt twin create --dtmi "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1" --twin-id GrindingStep --properties '{"ChasisTemperature": 0.0}' --dt-name $dtname
     ```
 
-Output of a successful twin create command should look like this:
+    Output of a successful twin create command should look like this:
 
-```json
-{
-  "$dtId": "GrindingStep",
-  "$etag": "W/\"911fc8fa-8ffb-4c22-b7f3-ed939f4f8c64\"",
-  "$metadata": {
-    "$model": "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1",
-    "ChasisTemperature": {
-      "lastUpdateTime": "2020-10-26T19:27:20.1460603Z"
+    ```json
+    {
+      "$dtId": "GrindingStep",
+      "$etag": "W/\"911fc8fa-8ffb-4c22-b7f3-ed939f4f8c64\"",
+      "$metadata": {
+        "$model": "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1",
+        "ChasisTemperature": {
+          "lastUpdateTime": "2020-10-26T19:27:20.1460603Z"
     }
-  },
-  "ChasisTemperature": 0.0
-}
-```
+      },
+      "ChasisTemperature": 0.0
+    }
+    ```

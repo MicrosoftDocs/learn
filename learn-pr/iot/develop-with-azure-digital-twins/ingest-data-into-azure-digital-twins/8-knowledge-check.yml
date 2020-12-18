@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.ingest-data-into-azure-digital-twins.8-knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned
@@ -9,7 +9,6 @@ metadata:
   ms.author: teodelas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

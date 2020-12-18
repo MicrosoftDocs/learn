@@ -3,7 +3,7 @@
 Use the Azure CLI to create a resource group and then add an IoT hub. For {resource group} use the one that is created for use by Azure Digital Twin and Azure Function.
 
 1. Run the following [command to create an IoT hub](https://docs.microsoft.com/cli/azure/iot/hub#az-iot-hub-create) in your resource group, using a globally unique name for your IoT hub:
-    
+
    ```azurecli-interactive
    az iot hub create --name $dtname --resource-group $rgname --sku S1
    ```
@@ -28,7 +28,8 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 
 1. Open the file ~\digital-twins-samples\HandsOnLab\SimulatedClient\Sensor.js
 1. Find the line const deviceConnectionString = "" and update it with the device connection string created earlier.
-    ![Device Connection String](/media/update-device-key.png)
+
+      :::image type="content" source= "../media/update-device-key.png" alt-text="Device Connection String":::
 
 1. Save and close the file
 1. In the PowerShell window, navigate to the SimulatedClient folder in the repo and run the simulated client
@@ -39,7 +40,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
     node ./Sensor.js
     ```
 
-## Configure EventGrid on IoT Hub
+## Configure EventGrid on IoT hub
 
 In this section, you configure your IoT Hub to publish events as they occur.
 
@@ -48,7 +49,7 @@ In this section, you configure your IoT Hub to publish events as they occur.
 1. Select **Events**.
 1. Select **Event subscription**.
 
-   ![Create new event subscription](../media/add-event-subscription.png)
+    :::image type="content" source= "../media/add-event-subscription.png" alt-text="Create new event subscription":::
 
 1. In the **EVENT SUBSCRIPTION DETAILS** section:
     - Provide a **name** for the event subscription: twinevents
@@ -61,23 +62,24 @@ In this section, you configure your IoT Hub to publish events as they occur.
     - Select the **Filter to Event Types** drop-down.
     - Deselect all leaving only the **Device Telemetry** checkbox selected.
 
-         ![select subscription event types](../media/event-types.png)
-   
-1. In the **ENDPOINT DETAILS** section: 
+        :::image type="content" source= "../media/event-types.png" alt-text="select subscription event types":::
+
+1. In the **ENDPOINT DETAILS** section:
    - Select **Endpoint Type** as **Azure Function**.
    - Click **select an endpoint**, paste the URL that you copied from your logic app, and confirm selection.
 
-   ![select endpoint url](../media/select-azure-function.png)
+      :::image type="content" source= "../media/select-azure-function.png" alt-text="select endpoint url":::
 
-1.  Select **Create**
+1. Select **Create**
 
-At this point, you should see messages showing up in the Azure Function Log Stream that is configured in the previous unit.  The Azure Function Log Stream will show the telemetry being received from Event Grid and any errors connecting to Azure Digital Twins or updating the Twin.
+    At this point, you should see messages showing up in the Azure Function Log Stream that is configured in the previous unit.  The Azure Function Log Stream will show the telemetry being received from Event Grid and any errors connecting to Azure Digital Twins or updating the Twin.
 
-   ![Log Stream](../media/LogStream.png)
+    :::image type="content" source= "../media/logstream.png" alt-text="Log Stream":::
 
-## Validate Twin is being updated
-1. You can see the values in being updated in the Twin Thermostat67 by running the following command
+## Validate twin is updated
+
+You can see the values in being updated in the Twin Thermostat67 by running the following command
 
 ```azurecli
- az dt twin show -n $dtname --twin-id GrindingStep
+az dt twin show -n $dtname --twin-id GrindingStep
 ```

@@ -6,6 +6,7 @@ Azure Digital Twins provides a service that abstracts the complexity needed to d
 
 ## Learning objectives
 In this module you will:
+
   - Create an Azure Digital Twins instance
   - Create and instantiate Azure Digital Twin models
   - Create an Azure Function that publishes data into Digital Twins
@@ -14,6 +15,7 @@ In this module you will:
   - Create a Logic App that publishes data to Azure Digital Twins
 
 ## Prerequisites
+
   - Basic understanding of Azure Digital Twins
   - Beginner-level experience with: IoT Hub, Azure Functions, and Logic Apps
   - Azure Subscription

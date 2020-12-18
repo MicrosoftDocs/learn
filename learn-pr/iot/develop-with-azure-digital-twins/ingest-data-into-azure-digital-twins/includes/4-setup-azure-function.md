@@ -29,8 +29,7 @@ In this section, we'll create a system-managed identity and assign the function 
 1. Use the following command to create the system-managed identity and save the _principalId_ to a variable for use later
 
     ```azurecli	
-    az functionapp identity assign -g $rgname -n $telemetryfunctionname
-    $principalID = $(az functionapp identity assign -g $rgname -n $telemetryfunctionname  --query principalId)
+    az functionapp identity assign -g $rgname -n $telemetryfunctionname $principalID = $(az functionapp identity assign -g $rgname -n $telemetryfunctionname  --query principalId)
     ```
 
 1. Use the _principalId_ value in the following command to assign the function app's identity to the _Azure Digital Twins Data Owner_ role for your Azure Digital Twins instance.
@@ -39,17 +38,17 @@ In this section, we'll create a system-managed identity and assign the function 
     az dt role-assignment create --dt-name $dtname --assignee $principalID --role "Azure Digital Twins Data Owner"
     ```
 
-Lastly, set the URL of your Azure Digital Twins as an environment variable
+1. Lastly, set the URL of your Azure Digital Twins as an environment variable
 
-> [!TIP]
-> The Azure Digital Twins instance's URL is made by adding *https://* to the beginning of your Azure Digital Twins instance's *hostName* which you retrieved earlier.
+    > [!TIP]
+    > The Azure Digital Twins instance's URL is made by adding *https://* to the beginning of your Azure Digital Twins instance's *hostName* which you retrieved earlier.
 
-```azurecli
+    ```azurecli
     $adthostname = "https://" + $(az dt show -n $dtname --query 'hostName' -o tsv)
     az functionapp config appsettings set -g $rgname -n $telemetryfunctionname --settings "ADT_SERVICE_URL=$adthostname"
-```
+    ```
 
-## Create an Azure Functions app in Visual Studio Code
+## Create an Azure functions app in Visual studio code
 
 In this section, you use Visual Studio Code to create a local Azure Functions project in your chosen language. Later in this article, you'll publish your function code to Azure.
 
@@ -59,9 +58,9 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
 
 1. Choose a directory location for your project workspace and choose **Select**.
 
->[!NOTE]
->This directoy should be new, empty, and unique for this Azure Function
->
+    >[!NOTE]
+    >This directory should be new, empty, and unique for this Azure Function
+    >
 
 1. Provide the following information at the prompts:
     - **Select a language for your function project**: Choose `C#`.
@@ -78,12 +77,12 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
 In the Visual Studio Code Terminal, add the required NuGet packages by typing the following commands:
 
 ```dos
-    dotnet add package Azure.DigitalTwins.Core --version 1.0.0-preview.3
-    dotnet add package Azure.identity --version 1.2.2
-    dotnet add package System.Net.Http
+dotnet add package Azure.DigitalTwins.Core --version 1.0.0-preview.3
+dotnet add package Azure.identity --version 1.2.2
+dotnet add package System.Net.Http
 ```
 
-### Write an Azure function with an Event Grid trigger
+### Write an Azure function with an Event grid trigger
 
 1. In VS Code, open the file TwinsFunction.cs
 1. Replace the code in the Function App template with the sample provided:
@@ -154,13 +153,17 @@ namespace My.Function
 ## Publish the function app to Azure
 
 1. In the VSCode function extension, click on **Deploy to Function App...**
+
     ![Choose Deploy to Function App...](../media/deploy-to-function-app.png)
 
-- **Select subscription**: Choose your subscription
-- **Select Function App in Azure**: Choose `<name>twinfunction`.
+    - **Select subscription**: Choose your subscription
+    - **Select Function App in Azure**: Choose `<name>twinfunction`.
 
 1. When the deployment finishes, you'll be prompted to Start Streaming Logs
-  ![STream Logs](../media/function-stream-logs.png)
+
+     ![Stream Logs](../media/function-stream-logs.png)
+
 1. Click on **Stream Logs** to see the messages received by the Azure Function after the IoT Hub set up in the next step. There won't be any messages received until the IoT Hub is set up and a device sends messages.
 1. Alternatively, you can Stream Logs at a later time by right-clicking on the Azure Function in VS Code and choosing **Start Streaming Logs**
-  ![Stream Logs](../media/function-stream-logs-extension.png)
+
+     ![Stream Logs](../media/function-stream-logs-extension.png)
