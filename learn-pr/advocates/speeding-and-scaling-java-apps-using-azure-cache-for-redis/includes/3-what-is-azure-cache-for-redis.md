@@ -2,7 +2,7 @@ While your Azure Cache for Redis is being created, let's have a look at what Red
 
 ## What is Redis
 
-[Redis](https://redis.io/) is an Open Source (BSD licensed) data store. It's a distributed, in-memory key-value database, that can be used as a cache and a message broker, and it has optional durability.
+[Redis](https://redis.io/) is an Open Source (BSD licensed) data store. It's a distributed, in-memory key-value database, that you can use as cache and as a message broker, and it has optional durability.
 
 Redis is often ranked as the most popular key-value database. Its ease of use, performance, and scalability make it an excellent choice for many application developers.
 
@@ -22,7 +22,7 @@ Here are the three most popular ones:
 
 - [Jedis](https://github.com/redis/jedis) is the most used library, and it's simple and easy to use.
 - [Lettuce](https://github.com/lettuce-io/lettuce-core) is the library we'll use in this module, as it's the one that comes bundled with Spring Data for Redis. It has great asynchronous support, which is important if you want to create a reactive Spring application.
-- [Redisson](https://github.com/redisson/redisson) is the most advanced Redis client, as it can also be used as a Hibernate second-level cache (which is an awesome feature if you need it).
+- [Redisson](https://github.com/redisson/redisson) is the most advanced Redis client, as you can also use it as an Hibernate second-level cache (which is an awesome feature if you need it).
 
 ## Recommended use cases
 

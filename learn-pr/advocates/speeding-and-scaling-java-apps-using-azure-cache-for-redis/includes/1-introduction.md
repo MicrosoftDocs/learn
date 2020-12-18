@@ -1,4 +1,4 @@
-Azure Cache for Redis is a key solution for improving speed and sclability of Java applications running in the cloud.
+Azure Cache for Redis is a key solution for improving speed and scalability of Java applications running in the cloud.
 
 In this module, you'll develop a Spring Boot application and use Azure Cache for Redis for storing business and session data. You'll learn the main use cases for Redis, and you'll create and configure a Redis instance. Using Spring Boot and Azure App Service, you'll see how your application performs and scales.
 ## Learning objectives
