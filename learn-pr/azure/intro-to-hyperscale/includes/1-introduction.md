@@ -39,7 +39,7 @@ The Helsinki Region Transport Authority (HSL) in Finland also utilizes Hyperscal
 
 ### Scaling out
 
-Hyperscale allows you to easily ”scale out,” which allows a single PostgreSQL instance to run on multiple servers, instead of a single server. Collectively, server groups can hold more data and use more CPU cores than a single server, while reducing the distance to users. This gives faster responses on large datasets, even over multiple regions.
+Hyperscale allows you to easily ”scale out,” where a single PostgreSQL instance is run on multiple servers, instead of a single server. Collectively, server groups can hold more data and use more CPU cores than a single server, while reducing the distance to users. This gives faster responses on large datasets, even over multiple regions.
 
 ### Scenario: Scaling across the Atlantic
 
