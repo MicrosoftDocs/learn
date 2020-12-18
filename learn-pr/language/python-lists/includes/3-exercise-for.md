@@ -63,7 +63,7 @@ Tokyo
 
 The `for` statement has features similar to the `while` statement, which we explored in another module.
 
-The `break` statement allows you to break out of the `for` iteration.  In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out, we can filter the original list.
+The `break` statement allows you to break out of the `for` iteration.  In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out of the loop, we can filter the original list.
 
 Comment out the code from the previous section. Then add the following code listing:
 
