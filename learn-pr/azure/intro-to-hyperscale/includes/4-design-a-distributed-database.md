@@ -28,9 +28,9 @@ Essentially, multi-tenant means that multiple customers share application resour
 **Examples**: Websites which host store-fronts for other businesses, or sales automation tools.  
 **Characteristics**:
 
-* Queries relating to a single tenant rather than joining information across tenants.
-* Having dozens or hundreds of tables in your database schema.
-* Mixed workloads: OLAP workloads for serving per-tenant analytical queries, and large OLTP workloads.
+* Queries relating to a single tenant rather than joining information across tenants
+* Having dozens or hundreds of tables in your database schema
+* Mixed workloads: OLAP workloads for serving per-tenant analytical queries, and large OLTP workloads
 
 With Hyperscale, you can continue scaling far beyond a single node, giving you efficiency of scale, with many more tenants able to use a single application.
  :::column-end:::
@@ -51,14 +51,18 @@ To distribute the data, a typical column to shard by could be *user_id*, *custom
 ### Real-time applications
 
 Real-time applications are aptly named - they’re applications that analyze real-time events as they happen.
+:::row:::
+:::column span="3":::
 
 **Examples**: Customer-facing dashboards requiring sub-second response times and logistics companies who need to monitor if shipments are on-time.  
 **Characteristics**:
 
-* Few tables with a high volume of data - Often device, user, or IoT data.
-* Relatively simple (but computationally intensive) analytics queries.
+* Few tables with a high volume of data - Often device, user, or IoT data
+* Relatively simple (but computationally intensive) analytics queries
 
 For fast results, these applications need massive amounts of compute - for numerical, statistical, or counting queries. Hundreds of cores need to be run in parallel. Hyperscale makes it possible to perform real-time queries across billions of records in under a second using horizontal scalability.
+:::column-end:::
+:::row-end:::
 
 Our contactless payment app will also need customer facing dashboards. Merchants will need to analyze new events & new data as it happens, in real time. These **OLAP workloads** will be much more intensive than customer account statements.
 
