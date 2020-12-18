@@ -5,11 +5,11 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost, refer to [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/).
 
-1. Select the following link.
+1. Select the following link:
 
     [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-query-data-sentinel%2Fsentinel-template.json?azure-portal=true)
 
-1. You will be prompted to sign in to your Azure subscription.
+    You're prompted to sign in to Azure.
 1. On the **Custom deployment** page, provide the following information:
 
     |Name|Description|

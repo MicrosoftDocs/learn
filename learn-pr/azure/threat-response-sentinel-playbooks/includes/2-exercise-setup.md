@@ -11,7 +11,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
     [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-threat-response-sentinel-playbooks%2Fsentinel-template.json?azure-portal=true)
 
-1. You will be prompted to sign in to your Azure subscription.
+    You're prompted to sign in to Azure.
 1. On the **Custom deployment** page, provide the following information:
 
     |||

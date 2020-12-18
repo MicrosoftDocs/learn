@@ -7,11 +7,11 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 ## Task 1: Deploy Azure Sentinel using ARM template 
 
-1. Select the following link.
+1. Select the following link:
 
     [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-analyze-data-in-sentinel%2Fsentinel-template.json?azure-portal=true)
 
-1. You'll be prompted to sign in your Azure subscription.
+    You're prompted to sign in to Azure.
 1. On the **Custom deployment** page, provide the following information:
 
     |||
