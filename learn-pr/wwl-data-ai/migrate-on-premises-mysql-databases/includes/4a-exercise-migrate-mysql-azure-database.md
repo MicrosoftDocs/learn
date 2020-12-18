@@ -6,8 +6,7 @@ You work as a database developer for the AdventureWorks organization. AdventureW
 
 Run these Azure CLI commands in the Cloud Shell to create a virtual machine, running MySQL, with a copy of the Adventure works database. The last commands will print the IP address of the new virtual machine.
 
-    ```azurecli
-    az vm create \
+      az vm create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name mysqlvm \
         --admin-username azureuser \
@@ -60,7 +59,6 @@ Run these Azure CLI commands in the Cloud Shell to create a virtual machine, run
         --output tsv)"
 
     echo $MYSQLIP
-    ```
 
 These commands will take approximately 5 minutes to complete. You don't need to wait, you can continue with the steps below.
 
