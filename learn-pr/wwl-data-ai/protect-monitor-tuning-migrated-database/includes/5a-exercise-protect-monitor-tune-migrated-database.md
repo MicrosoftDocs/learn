@@ -335,3 +335,7 @@ Run these Azure CLI commands in the Cloud Shell to create an Azure database for 
 1. Return to the Cloud Shell and press enter, to stop the app.
 
 You have now seen how to monitor server activity using the tools available in the Azure portal. You have also learned how to configure replication, and seen how creating read-only replicas can distribute the workload in read-intensive data scenarios.
+
+
+Microsoft.DBForPostgreSQL/servers
+Microsoft.DBforPostgreSQL/servers

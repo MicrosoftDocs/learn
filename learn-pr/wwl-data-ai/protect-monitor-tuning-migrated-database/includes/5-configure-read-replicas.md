@@ -1,3 +1,11 @@
+Companies can use read-only replicas of their databases to scale performance globally. Replicas are useful when an organization has customers distributed globally, and have users in their millions trying to access their data. Once in place, they can also handle regional disaster recover.
+
+Your company has grown to an internationally renowned seller of bicycles. The CIO has asked your department to improve the responsiveness of your online shop for its users across the globe. You know that a quick and simple way to improve the performance is place read-only replicas of your databases in each geographical location.
+
+In this unit, you'll see how easy it is to create and manage read-only replicas of data stored in an Azure Database for MySQL/PostgreSQL.
+
+## How to use read replication
+
 You use read replication to copy data from one instance of Azure Database for MySQL/PostgreSQL (referred to as the *master*) to up to five replicas. Use replication to spread the load across servers for read-heavy workloads. Replication is one-way only, and each replica is read-only. Replication operates asynchronously, so there's a lag between the time the data changes on the master and the point at which it appears in each replica.
 
 Replicas can be in different regions from the master. You use replicas to place data close to the clients needing it, to reduce query latency. Cross-region replication also gives you a mechanism for handling regional disaster recovery.
