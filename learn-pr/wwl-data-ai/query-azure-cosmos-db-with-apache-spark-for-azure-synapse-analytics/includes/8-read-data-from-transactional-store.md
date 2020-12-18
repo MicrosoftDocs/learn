@@ -40,3 +40,5 @@ Now that you are familiar with reading from analytical store into a DataFrame re
     LIMIT 10
     ```
     As you can see the result is the content of the Azure Cosmos DB transactional store.
+
+    ![Viewing results inthe transactional store](../media/view-results-in-transactional-store.png)
