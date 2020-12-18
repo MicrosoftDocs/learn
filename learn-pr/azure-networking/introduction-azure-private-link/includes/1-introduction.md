@@ -21,5 +21,5 @@ In this module, you will:
 To get the best learning experience from this module, you should have:
 
 - Beginner-level knowledge of Azure, including regions, Azure virtual networks, and ExpressRoute.
-- Beginner-level knowledge of networking, including IP addresses and virtual private networks.
+- Beginner-level knowledge of networking, including IP addresses, network interfaces, and virtual private networks.
 - Beginner-level knowledge of cloud computing, including platform as a service (PaaS).
