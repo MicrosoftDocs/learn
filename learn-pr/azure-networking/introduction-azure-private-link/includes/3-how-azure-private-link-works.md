@@ -4,7 +4,7 @@ Now you know the basic features and benefits of Azure Private Link. It's time no
 
 Azure Private Link provides private access to Azure services. Here, "private" means that the connection uses the Microsoft Azure backbone network instead of the internet. To make that switch, Private Link changes the connectivity method for the Azure resource from public endpoint to *private endpoint*.
 
-This means that you no longer need to use a public IP address to access the Azure resource. Instead, you use a private IP address that Azure assigns to the resource from the address space of your subnet.
+With a private endpoint, you no longer need to use a public IP address to access the Azure resource. Instead, you use a private IP address that Azure assigns to the resource from the address space of your subnet.
 
 The key takeaway? The Azure resource is now effectively a part of your virtual network. Clients on your network can access the resource—known as a *Private Link resource*—just like any other network resource.
 
@@ -14,7 +14,7 @@ The resource's public endpoint still exists, however, even though you're not usi
 
 ## How Azure Private Endpoint works
 
-Private Link's transition of a resource interface from public to private requires adding an Azure Private Endpoint to your network configuration. Private Endpoint is a network interface that enables a private connection between your virtual network and a specified Azure resource.
+How do you shift a resource interface from public to private? You need to add an Azure Private Endpoint to your network configuration. Private Endpoint is a network interface that creates a private connection between your virtual network and a specified Azure resource.
 
 Private Endpoint takes an unused private IP address from the address space of a specified subnet of your virtual network. For example, suppose you have a subnet that uses the address space 10.1.0.0/24. Virtual machines on that subnet use IP addresses such as 10.1.0.20 or 10.1.0.155.
 
