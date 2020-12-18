@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.introduction-to-azure-digital-twins.digital-twin-consortium
+uid: learn.iot.introduction-to-azure-digital-twins.consortium
 metadata:
   title: Digital Twin Consortium
   description: Introduction to the Digital Twin Consortium
@@ -11,4 +11,4 @@ metadata:
 title: Digital Twin Consortium
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-digital-twin-consortium.md)]
+  [!include[](includes/6-consortium.md)]

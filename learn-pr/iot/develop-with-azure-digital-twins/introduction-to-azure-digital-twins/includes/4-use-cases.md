@@ -1,4 +1,4 @@
-:::image type="content" source="../media/adt-business-env.png" alt-text="Graphical representation of a complete Digital Twins business environment" lightbox="../media/adt-business-env.png":::
+:::image type="content" source="../media/business-environment.png" alt-text="Graphical representation of a complete Digital Twins business environment" lightbox="../media/business-environment.png":::
 
 As companies navigate their business transformations, new use cases are unlocked.
 
@@ -27,7 +27,7 @@ Many industries can benefit by innovating with IoT. Examples of industries inclu
 
 ## Customer examples
 
-:::image type="content" source="../media/adt-ge-aviation-example.png" alt-text="GE Aviation Digital Group example of using Azure Digital Twins" lightbox="../media/adt-ge-aviation-example.png":::
+:::image type="content" source="../media/ge-aviation-example.png" alt-text="GE Aviation Digital Group example of using Azure Digital Twins" lightbox="../media/ge-aviation-example.png":::
 
 GE Aviation is using Azure Digital Twins to combine data from two disparate systems for creating a living replica of an aircraft. One system keeps track of the performance of an aircraft when it’s in the air. The other system keeps track of everything that happens to an aircraft once it lands on the ground. Currently it’s a manual process to connect the data from these systems for auditing and tracking purposes.
 
@@ -37,13 +37,13 @@ Moving beyond tracking the performance of an aircraft in its current configurati
 
 This new insight into the historical performance of the components of an aircraft will help them identify potential issues, diagnose current issues, and ultimately decrease the cost of maintaining the aircraft.
 
-:::image type="content" source="../media/adt-telstra-purple-example.png" alt-text="Telstra Purple example of using Azure Digital Twins" lightbox="../media/adt-telstra-purple-example.png":::
+:::image type="content" source="../media/telstra-purple-example.png" alt-text="Telstra Purple example of using Azure Digital Twins" lightbox="../media/telstra-purple-example.png":::
 
 Telstra has selected Microsoft as a strategic partner in the design and build of a scalable and unified Azure IoT platform enabling Telstra to simplify operations and significantly reduce time to market.
 
 Using its technology services provider, Telstra Purple, Telstra is working together with Microsoft to provide an advanced digital twin solution for Downer Group’s asphalt plants. This "digital asphalt plant" provides greater efficiency, reliability, and safety while at the same time increasing operational transparency and control. The solution identifies and tracks dangerous activity across the plant. Downer also explores scenarios like asset monitoring and chute detection to avoid future incidents.
 
-:::image type="content" source="../media/adt-ansys-example.png" alt-text="Ansys example of using Azure Digital Twins" lightbox="../media/adt-ansys-example.png":::
+:::image type="content" source="../media/ansys-example.png" alt-text="Ansys example of using Azure Digital Twins" lightbox="../media/ansys-example.png":::
 
 Physics-based simulation has long been an essential part of the product design process, helping engineers to optimize and validate design choices.
 
@@ -51,7 +51,7 @@ With the broad deployment of IoT sensors in products and their environment, it i
 
 ANSYS is the market leader in technical simulation software. ANSYS Twin Builder lets engineers quickly deliver real time simulation models for operational use. With Microsoft’s Azure Digital Twins platform, it is now possible to efficiently integrate the simulation-based twins into a broader IoT solution.
 
-:::image type="content" source="../media/adt-brookfield-example.png" alt-text="Brookfield example of using Azure Digital Twins" lightbox="../media/adt-brookfield-example.png":::
+:::image type="content" source="../media/brookfield-example.png" alt-text="Brookfield example of using Azure Digital Twins" lightbox="../media/brookfield-example.png":::
 
 Brookfield was interested in exploring digital twin technology to create a virtual model of the One Manhattan West (OMW) connected directly to infrastructure, equipment, and systems. This technology would enable Brookfield to transform the building into an intelligent network of digitally connected spaces, combining systems across retail, office, hospitality, and residential environments.
 

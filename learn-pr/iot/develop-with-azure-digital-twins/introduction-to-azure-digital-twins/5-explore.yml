@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.introduction-to-azure-digital-twins.explore-azure-digital-twins-in-a-solution-context
+uid: learn.iot.introduction-to-azure-digital-twins.explore
 metadata:
   title: Explore Azure Digital Twins in a solution context
   description: This unit outlines Azure Digital Twins in a solution context
@@ -11,4 +11,4 @@ metadata:
 title: Explore Azure Digital Twins in a solution context
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-explore-azure-digital-twins-in-a-solution-context.md)]
+  [!include[](includes/5-explore.md)]

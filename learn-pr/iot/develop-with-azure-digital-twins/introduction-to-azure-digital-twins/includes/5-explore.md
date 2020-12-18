@@ -1,12 +1,12 @@
-:::image type="content" source="../media/adt-solutions.png" alt-text="Diagram of an Azure Digital Twins solution steps](../media/adt-solutions.png" lightbox="../media/adt-solutions.png":::
+:::image type="content" source="../media/solutions.png" alt-text="Diagram of an Azure Digital Twins solution steps](../media/solutions.png" lightbox="../media/solutions.png":::
 
 In a solution context, Azure Digital Twins is the platform that allows you to model any environment and connect sensors and business systems to the model to control the present, track the past and predict the future.
 
 To enable this promise, a typical customer would need to model their environment using the Digital Twin Definition Language (DTDL) and keep this model of their environment live with the data coming from their operational systems (that is, IoT data) as well as the data coming from their business systems such as CRM, ERP, HR, Finance, etc. The insights that are generated in the digital twin would then need to be plugged into business systems to drive action and close the digital feedback loop.
 
-:::image type="content" source="../media/adt-overview.png" alt-text="Diagram of the sources and uses of Azure Digital Twins" lightbox="../media/adt-overview.png":::
+:::image type="content" source="../media/overview.png" alt-text="Diagram of the sources and uses of Azure Digital Twins" lightbox="../media/overview.png":::
 
-:::image type="content" source="../media/adt-dataflow.png" alt-text="Diagram of the data flow in digital twins solutions" lightbox="../media/adt-dataflow.png":::
+:::image type="content" source="../media/data-flow.png" alt-text="Diagram of the data flow in digital twins solutions" lightbox="../media/data-flow.png":::
 
 ## Open modeling language (DTDL)
 
@@ -44,4 +44,4 @@ Integration with Azure Time Series Insights can be used to track data over time 
 
 Below diagram shows how different capabilities come together to form a digital twin solution. Each functional building block provides examples of Azure services or external systems that can serve for the purpose. Please note that this is not a comprehensive diagram in terms of components or Azure Services that can be part of a digital twin solution but an example.
 
-:::image type="content" source="../media/adt-architecture.png" alt-text="Graphical representation of a Digital Twin solution architecture" lightbox="../media/adt-architecture.png":::
+:::image type="content" source="../media/architecture.png" alt-text="Graphical representation of a Digital Twin solution architecture" lightbox="../media/architecture.png":::

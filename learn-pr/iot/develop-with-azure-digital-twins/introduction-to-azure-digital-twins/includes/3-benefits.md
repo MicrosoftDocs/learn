@@ -7,7 +7,7 @@ In the next phase of digital twins, we will take these capabilities beyond engin
 
 However, **modeling and creating a digital representation of these environments can be difficult for even the most sophisticated business.**
 
-:::image type="content" source="../media/adt-obstacles.png" alt-text="Obstacles for building a digital twin" lightbox="../media/adt-obstacles.png":::
+:::image type="content" source="../media/obstacles.png" alt-text="Obstacles for building a digital twin" lightbox="../media/obstacles.png":::
 
 Today, modeling connected environments is complicated as it spans devices, places, business systems, people and more. With siloed data across all these, it is a challenge to capture actionable insights. Building digital twins solutions involves stitching together a lot of building blocks such as modeling, storage, event systems, etc. Doing this in a scalable and secure manner is time consuming.
 
@@ -31,4 +31,4 @@ Microsoft launched the Azure Digital Twins service to overcome these obstacles a
 
     Build enterprise-grade IoT connected solutions with the compliance, security, and privacy benefits that Microsoft Azure is known for. Monitor, manage, and update IoT devices with high-level security and scalability through integration with Azure IoT Hub. Manage access and identity with features like role-based access control (RBAC) and Azure Active Directory.
 
-:::image type="content" source="../media/adt-build-connected-env.png" alt-text="Build connected environments with Azure Digital Twins" lightbox="../media/adt-build-connected-env.png":::
+:::image type="content" source="../media/build-connected-environment.png" alt-text="Build connected environments with Azure Digital Twins" lightbox="../media/build-connected-environment.png":::

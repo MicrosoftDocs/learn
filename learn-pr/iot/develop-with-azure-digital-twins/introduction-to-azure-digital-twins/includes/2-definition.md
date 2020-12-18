@@ -1,4 +1,4 @@
-:::image type="content" source="../media/adt-replica-overview.png" alt-text="Overview of the replica types that Azure Digital Twins can be used for" lightbox="../media/adt-replica-overview.png":::
+:::image type="content" source="../media/replica-overview.png" alt-text="Overview of the replica types that Azure Digital Twins can be used for" lightbox="../media/replica-overview.png":::
 
 Microsoft’s definition of a “digital twin” is a digital replica of real-world things, places, business processes and people. It is designed to understand, control, simulate, analyze, and improve real-world business operations. Azure Digital Twins is our IoT platform enabling the creation of next-generation IoT solutions that model the real world.
 
