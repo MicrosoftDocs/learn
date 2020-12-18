@@ -18,7 +18,7 @@ How do you shift a resource interface from public to private? You need to add an
 
 Private Endpoint takes an unused private IP address from the address space of a specified subnet of your virtual network. For example, suppose you have a subnet that uses the address space 10.1.0.0/24. Virtual machines on that subnet use IP addresses such as 10.1.0.20 or 10.1.0.155.
 
-Using Private Endpoint, an Azure resource would get an IP address from the same address space, such as 10.1.0.32. Azure Private Endpoint then maps that IP address to a specified Azure service, which effectively brings the service into your virtual network.
+Private Endpoint gets an IP address from the same address space, such as 10.1.0.32. Private Endpoint then maps that IP address to a specified Azure service, which effectively brings the service into your virtual network.
 
 > [!NOTE]
 > Clients that connect to a Private Link resource don't need to use the Private Endpoint's assigned IP address in the connection string. Instead, if you configure the Private Endpoint to integrate with your private DNS zone, then Azure automatically assigns a fully qualified domain name (FQDN) to the endpoint. For example, if the Private Link resource is an Azure Storage table, the FQDN will be something like mystorageaccount1234.table.core.windows.net.
