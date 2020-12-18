@@ -3,7 +3,7 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
 1. Sign in to the Azure portal using your Azure account.
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/)
+    > [Azure portal](https://portal.azure.com?azure-portal=true)
 
 1. Next, select the **payment-server-demo** resource.
 
