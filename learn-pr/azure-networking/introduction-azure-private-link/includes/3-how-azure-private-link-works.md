@@ -2,15 +2,15 @@ Now you know the basic features and benefits of Azure Private Link. It's time no
 
 ## How Private Link fits into an Azure virtual network
 
-Azure Private Link provides access to Azure services privately over the Microsoft Azure backbone network instead of publicly over the internet. To make that switch to private connectivity, Private Link changes the connectivity method for the Azure resource from public endpoint to *private endpoint*.
+Azure Private Link provides private access to Azure services. Here, "private" means that the connection uses the Microsoft Azure backbone network instead of the internet. To make that switch, Private Link changes the connectivity method for the Azure resource from public endpoint to *private endpoint*.
 
 In other words, access to the Azure resource changes from using a public IP address to using a private IP address. That is, Azure assigns the resource an IP address from the address space of your virtual network or a subnet of that network.
 
-The key point here is that the Azure resource is effectively now a part of your virtual network. Clients on your network can access the resource—which is often called a *Private Link resource*—just like any other network resource.
+The key takeaway? The Azure resource is now effectively a part of your virtual network. Clients on your network can access the resource—known as a *Private Link resource*—just like any other network resource.
 
 Not only is the Azure resource now mapped to your virtual network, but the connection to the resource now uses the Microsoft Azure backbone network. That is, any traffic to and from the resource now entirely bypasses the public internet.
 
-However, note that the resource's public endpoint still exists, even though you're not using it. The presence of a public endpoint, even an unused one, is still a security risk. However, it's possible to disable the Azure resource's public endpoint, which plugs that potential security hole.
+The resource's public endpoint still exists, however, even though you're not using it. The presence of a public endpoint, even an unused one, is still a security risk. Fortunately, it's possible to disable the Azure resource's public endpoint, which plugs that potential security hole.
 
 ## How Azure Private Endpoint works
 
@@ -37,8 +37,8 @@ Here are a few key points to consider when evaluating Private Endpoint:
 > Although it's possible to map multiple Private Endpoint interfaces to a single resource, it's not recommended because doing so can lead DNS conflicts and other problem. The best practice is to only ever map a single Private Endpoint to a single Private Link resource.
 
 * Connections are one way, meaning that only clients can connect to a Private Endpoint interface. If an Azure service is mapped to a Private Endpoint interface, the provider of that service can't connect to (or even see) the Private Endpoint interface.
-* A deployed Private Endpoint interface is read-only, meaning that it can't be modified. For example, the interface can't be mapped to a different resource, nor can the interface's IP address be changed.
-* Although the Private Endpoint must be deployed in the same region as your virtual network, the Private Link resource can be located in a different region.
+* A deployed Private Endpoint interface is read-only, meaning that no one can modify it. For example, no one can map the interface to a different resource, nor can anyone change the interface's IP address.
+* Although you must deploy the Private Endpoint in the same region as your virtual network, the Private Link resource can be located in a different region.
 
 > [!NOTE]
 > What is the difference between a service endpoint and a private endpoint? A *service endpoint* configures an Azure resource to allow connections only from a specified virtual network. However, that connection is still made via the resource's public endpoint, so some security risks remain. Private Endpoint removes those risks by enabling you to disable a resource's public endpoint.
@@ -47,7 +47,7 @@ Here are a few key points to consider when evaluating Private Endpoint:
 
 Azure Private Link Service brings the security and benefits of Private Link to your custom Azure services. As long as your custom service runs behind a Standard Load Balancer, you can create a Private Link Service resource and attach it to the load balancer's frontend IP address.
 
-Once your Private Link Service resource has been created, Azure issues an *alias* for the resource, which is a globally unique read-only string with the syntax *prefix*.*guid*.*suffix*:
+Once you create the Private Link Service resource, Azure issues an *alias* for the resource, which is a globally unique read-only string with the syntax *prefix*.*guid*.*suffix*:
 
 * *prefix*. A name you supply for the custom service.
 * *guid*. A globally unique ID generated automatically by Azure.
