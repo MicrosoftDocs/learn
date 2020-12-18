@@ -40,7 +40,7 @@ Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?a
 > 1. Right-click anywhere in the browser window, and then select **Save as**.
 > 1. In the **File save as** dialog box, you can choose the file name (*rocksamples*), the file type (*CSV*), and where to download the file to (your project data folder).
 >
-> For a demonstration of how to complete these steps, see https://github.com/sguthals/learnwithdrg/blob/main/SaveCSVFromGitHub.mp4. To view the demo file, select the **Download** button in the GitHub repository, and then open the downloaded file.
+> See a [demonstration](https://github.com/sguthals/learnwithdrg/blob/main/SaveCSVFromGitHub.mp4?azure-portal=true). To view the demo file, select the **Download** button in the GitHub repository, and then open the downloaded file.
 >
 
 After you download the CSV file and save it to your data folder, your Visual Studio Code environment should look like this:
