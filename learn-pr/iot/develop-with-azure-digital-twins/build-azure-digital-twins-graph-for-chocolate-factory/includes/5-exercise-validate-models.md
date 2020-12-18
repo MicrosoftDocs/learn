@@ -26,7 +26,7 @@ In this unit, you download and install the DTDL Validator sample. This is a comm
     DTDLValidator --help
     ```
 
-    :::image type="content" source="../media/dtdl-validator-help.png" alt-text="Command prompt help output for the DTDLValidator application" lightbox="../media/dtdl-validator-help.png":::
+    :::image type="content" source="../media/validator-help.png" alt-text="Command prompt help output for the DTDLValidator application" lightbox="../media/validator-help.png":::
 
 1. Leave the Command Prompt window open.
 
