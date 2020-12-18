@@ -32,14 +32,14 @@ products:
 - azure-iot
 
 units:
-- learn.iot.ingest-data-into-azure-digital-twins.1-introduction
-- learn.iot.ingest-data-into-azure-digital-twins.2-setup-adt
-- learn.iot.ingest-data-into-azure-digital-twins.3-setup-adt-models
-- learn.iot.ingest-data-into-azure-digital-twins.4-setup-azure-function
-- learn.iot.ingest-data-into-azure-digital-twins.5-setup-iot-hub
-- learn.iot.ingest-data-into-azure-digital-twins.6-use-adt-rest-apis
-- learn.iot.ingest-data-into-azure-digital-twins.7-setup-logic-app
-- learn.iot.ingest-data-into-azure-digital-twins.8-knowledge-check
-- learn.iot.ingest-data-into-azure-digital-twins.9-summary
+- learn.iot.ingest-data-into-azure-digital-twins.introduction
+- learn.iot.ingest-data-into-azure-digital-twins.set-up
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-models
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-function
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-iot-hub
+- learn.iot.ingest-data-into-azure-digital-twins.use-rest-apis
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-logic-app
+- learn.iot.ingest-data-into-azure-digital-twins.knowledge-check
+- learn.iot.ingest-data-into-azure-digital-twins.summary
 badge:
   uid: learn.iot.connect-input-to-azure-digital-twins.badge

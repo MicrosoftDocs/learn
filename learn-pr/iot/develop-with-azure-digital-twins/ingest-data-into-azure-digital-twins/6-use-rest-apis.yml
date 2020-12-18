@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.ingest-data-into-azure-digital-twins.6-use-adt-rest-apis
+uid: learn.iot.ingest-data-into-azure-digital-twins.use-rest-apis
 title: Use Azure Digital Twins REST APIs
 metadata:
   title: Use Azure Digital Twins REST APIs
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-use-adt-rest-apis.md)]
+  [!include[](includes/6-use-rest-apis.md)]

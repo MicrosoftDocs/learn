@@ -74,7 +74,7 @@ In this section, you configure your IoT Hub to publish events as they occur.
 
     At this point, you should see messages showing up in the Azure Function Log Stream that is configured in the previous unit.  The Azure Function Log Stream will show the telemetry being received from Event Grid and any errors connecting to Azure Digital Twins or updating the Twin.
 
-    :::image type="content" source= "../media/logstream.png" alt-text="Log Stream":::
+    :::image type="content" source= "../media/log-stream.png" alt-text="Log Stream":::
 
 ## Validate twin is updated
 
