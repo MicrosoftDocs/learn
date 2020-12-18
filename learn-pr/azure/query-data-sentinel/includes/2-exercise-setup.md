@@ -7,27 +7,27 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link.
 
-[![Deploy To Azure](../media/02-deploy-button.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/query-data-sentinel/resources/sentinel-template.json?azure-portal=true)
+    [![Deploy To Azure](../media/02-deploy-button.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/query-data-sentinel/resources/sentinel-template.json?azure-portal=true)
 
 2. You will be prompted to sign in to your Azure subscription.
 3. On the **Custom deployment** page, provide the following information:
 
-|||
-|---|---|
-|Subscription|Select your Azure subscription.|
-|Resource Group|Select **Create new** and provide a name for the resource group such as **azure-sentinel-rg**.|
-|Locations|From the drop-down menu, select the location where you want to deploy Azure Sentinel.|
-|Workspace name|Provide a unique name for the Azure Sentinel Workspace such as ***yourname*-sentinel**. |
-|Location|Accept the default value of **[resourceGroup().location]**.|
-|Simplevm Name|Accept the default value of **simple-vm**.|
-|Simplevm Windows OS Version|Accept the default value of **2016-Datacenter**.|
+    |Name|Description|
+    |---|---|
+    |Subscription|Select your Azure subscription.|
+    |Resource Group|Select **Create new** and provide a name for the resource group such as **azure-sentinel-rg**.|
+    |Locations|From the drop-down menu, select the location where you want to deploy Azure Sentinel.|
+    |Workspace name|Provide a unique name for the Azure Sentinel Workspace such as ***yourname*-sentinel**. |
+    |Location|Accept the default value of **[resourceGroup().location]**.|
+    |Simplevm Name|Accept the default value of **simple-vm**.|
+    |Simplevm Windows OS Version|Accept the default value of **2016-Datacenter**.|
 
 4. Select **Review + create**, and then select **Create**.
 
-:::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
+    :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
-> [!NOTE]
-> Wait for the deployment to complete. The deployment should take less than 5 minutes.
+    > [!NOTE]
+    > Wait for the deployment to complete. The deployment should take less than 5 minutes.
 
 ## Task 2: Check the resources created
 
@@ -60,7 +60,7 @@ In this task, you will deploy an Azure Sentinel connector to Azure Activity.
 6. Select your subscription, and then select **Connect**.
 7. When you receive a status of **Connected**, close all open panels to return to the **Azure Sentinel | Data connector** panel.
 
-:::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot of the Azure Sentinel Data connectors page." border="true":::
+    :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot of the Azure Sentinel Data connectors page." border="true":::
 
 > [!NOTE]
 > The connector for Azure Activity could take 15 minutes to deploy. You can proceed with the rest of the steps in the exercise and with the subsequent units in this module.
