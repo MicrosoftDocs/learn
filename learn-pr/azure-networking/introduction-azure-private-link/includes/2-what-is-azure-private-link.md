@@ -9,7 +9,8 @@ This works seamlessly, but the problem is that your SQL database is exposed to t
 * A peered Azure virtual network.
 * An on-premises network that connects to Azure using ExpressRoute and Microsoft peering.
 * A customer's Azure virtual network that connects to an Azure service offered by your company.
-image
+
+<!-- insert image here -->
 
 Private Link is designed to eliminate these security risks by removing the "public" part of the connection.
 
@@ -21,7 +22,7 @@ Private Link provides access to Azure services privately by replacing a resource
 * The connection to the resource now uses the Microsoft Azure backbone network instead of the public internet.
 * You can configure the Azure resource to no longer expose its public IP address, which eliminates that potential security risk.
 
-video
+<!-- insert video here -->
 
 ## What is Azure Private Endpoint?
 
@@ -41,8 +42,8 @@ Private Link working together with Private Endpoint and Private Link Service pro
 * Private access to Azure services in any region. Private Link works globally, which means that the private connection to an Azure service works even if that service's virtual network resides in a completely different region than your own virtual network.
 * Non-public routes to Azure services. Once an Azure service has been mapped to your virtual network, all inbound and outbound traffic between your virtual network and the Azure service goes over the Microsoft Azure backbone network. The public internet is never used for service traffic.
 * Public endpoints are no longer required. Since all traffic to and from a mapped Azure service now flows over the Microsoft Azure backbone, the public endpoint for the service is no longer required. This means you can disable that public endpoint a thus eliminate a possible security threat.
-* Your peered Azure virtual networks also get access to Private Link-powered resources. If you have one or more peered Azure virtual networks, no extra configuration is needed for those peered networks to access a private Azure resource. This works because any peered network can access whatever Private Endpoint you've mapped to an Azure service.
-* Your on-premises network also gets access to Private Link-powered resources. If your on-premises network connects to your Azure virtual network using either ExpressRoute private peering or a VPN tunnel, no extra configuration is needed for the on-premises network to access a private Azure resource.
+* Your peered Azure virtual networks also get access to Private Link-powered resources. If you have one or more peered Azure virtual networks, no extra configuration is needed for those peered networks to access a private Azure resource. This works because clients within any peered network can access whatever Private Endpoint you've mapped to an Azure service.
+* Your on-premises network also gets access to Private Link-powered resources. If your on-premises network connects to your Azure virtual network using either ExpressRoute private peering or a VPN tunnel, no extra configuration is needed for clients within the on-premises network to access a private Azure resource.
 * Protection against data exfiltration. When you map a Private Endpoint to an Azure service, you map to a specific instance of that service. For example, if you're setting up private access to Azure Storage, the access is mapped to a blob, table, file, or other storage instance. This means that if a virtual machine in your network gets compromised, the attacker cannot move or copy data to another resource instance.
 * Private access to your own Azure services. You can implement Private Link Service and offer customers private access to your custom Azure services.
 
@@ -54,33 +55,34 @@ Service| Available regions
 --------|----------------
 Azure Automation | All public regions
 Azure App Configuration | All public regions
-Azure Backup | All public regions; all Government regions
-Azure Batch | All public regions except: Germany CENTRAL, Germany NORTHEAST; all Government regions
-Azure Blob storage | All public regions; all Government regions
-Azure Container Registry | All public regions; all Government regions
-Azure Cosmos DB | All public regions; all Government regions; all China regions
-Azure Data Factory | All public regions; all Government regions; all China regions
-Azure Database for PostgreSQL | All public regions; all Government regions; all China regions
-Azure Database for MySQL | All public regions; all Government regions; all China regions
-Azure Database for MariaDB | All public regions; all Government regions; all China regions
-Azure Event Grid | All public regions; all Government regions
-Azure Event Hub | All public regions; all Government regions
-Azure Files | All public regions; all Government regions
+Azure Backup | All public regions, all government regions
+Azure Batch | All public regions except: Germany Central, Germany Northeast, all government regions
+Azure Blob storage | All public regions, all government regions
+Azure Container Registry | All public regions, all government regions
+Azure Cosmos DB | All public regions, all government regions, all China regions
+Azure Data Factory | All public regions, all government regions, all China regions
+Azure Database for PostgreSQL | All public regions, all government regions, all China regions
+Azure Database for MySQL | All public regions, all government regions, all China regions
+Azure Database for MariaDB | All public regions, all government regions, all China regions
+Azure Event Grid | All public regions, all government regions
+Azure Event Hub | All public regions, all government regions
+Azure Files | All public regions, all government regions
 Azure File Sync | All public regions
 Azure IoT Hub | All public regions
-Azure Key Vault | All public regions; all Government regions
+Azure Key Vault | All public regions, all government regions
 Azure Kubernetes Service | All public regions
 Azure Machine Learning | All public regions
-Azure Managed Disks | All public regions; all Government regions; all China regions
+Azure Managed Disks | All public regions, all government regions, all China regions
 Azure Monitor | All public regions
-Azure Queue storage | All public regions; all Government regions
+Azure Queue storage | All public regions, all government regions
 Azure Relay | All public regions
-Azure Search | All public regions; all Government regions
-Azure Service Bus | All public region; all Government regions
-Azure SQL Database | All public regions; all Government regions; all China regions
-Azure Synapse Analytics | All public regions; all Government regions
-Azure Table storage | All public regions; all Government regions
+Azure Search | All public regions, all government regions
+Azure Service Bus | All public regions, all government regions
+Azure SQL Database | All public regions, all government regions, all China regions
+Azure Synapse Analytics | All public regions, all government regions
+Azure Table storage | All public regions, all government regions
 Azure Web Apps | All public regions
-Azure SignalR | East US, South Central US, West US 2; all China regions
+Azure SignalR | East US, South Central US, West US 2, all China regions
 
-Note: Microsoft is gradually rolling out Private Link and Private Endpoint to its services and regions. To keep up to date on the latest services and regions that support Private Link, see [https://azure.microsoft.com/updates/?product=private-link](https://azure.microsoft.com/updates/?product=private-link)
+> [!NOTE]
+> Microsoft is gradually rolling out Private Link and Private Endpoint to its services and regions. To keep up to date on the latest services and regions that support Private Link, see [https://azure.microsoft.com/updates/?product=private-link](https://azure.microsoft.com/updates/?product=private-link)
