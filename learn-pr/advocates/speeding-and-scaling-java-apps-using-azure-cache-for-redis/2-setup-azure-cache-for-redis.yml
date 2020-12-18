@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.2-setup-azure-cache-for-redis
-title: Setup Azure Cache for Redis
+title: Set up Azure Cache for Redis
 metadata:
   title: Create an Azure Cache for Redis instance
   description: In this unit, we set up the Azure CLI and use it to create an Azure Cache for Redis instance.
