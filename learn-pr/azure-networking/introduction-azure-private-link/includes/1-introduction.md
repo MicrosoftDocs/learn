@@ -6,7 +6,7 @@ However, Contoso IT staff are concerned that every one of these connections requ
 
 As a lead engineer at Contoso, you’re responsible for evaluating the functionality of Azure Private Link to enable employees and customers to bypass the public internet and privately access services on the Azure platform.  
 
-In this module, you'll learn the fundamentals of Azure Private Link, including what it is, how it works, and when you should use it. By the end of this module, you will be able to evaluate whether Azure Private Link is a suitable solution for offering Contoso employees and customers private access to Azure services.
+In this module, you'll learn the fundamentals of Azure Private Link, including what it is, how it works, and when you should use it. By the end of this module, you'll be able to evaluate whether Azure Private Link is a suitable solution for offering Contoso employees and customers private access to Azure services.
 
 ## Learning objectives
 
