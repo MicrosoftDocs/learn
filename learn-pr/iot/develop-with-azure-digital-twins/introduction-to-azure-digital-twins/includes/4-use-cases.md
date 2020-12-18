@@ -1,10 +1,10 @@
 :::image type="content" source="../media/business-environment.png" alt-text="Graphical representation of a complete Digital Twins business environment" lightbox="../media/business-environment.png":::
 
-As companies navigate their business transformations, new use cases are unlocked.
+As companies navigate their business transformations, they unlock new use cases.
 
-The need to model the whole enterprise is becoming more and more evident. Azure Digital Twins allows companies to create comprehensive models of their complete business, inclusive of the processes, people, and products. This gives them a true end-to-end view of their enterprise.
+The need to model the whole enterprise is becoming more evident. Azure Digital Twins allows companies to create comprehensive models of their complete business, inclusive of the processes, people, and products. This gives them a true end-to-end view of their enterprise.
 
-Think of a customer that is able to model not only their factories, but also their suppliers and resellers. This would allow them to further automate their operations. For example, they could capture the signal from their users’ experiences or in-store demands and tie them in real-time to the production line, to have visibility of the production capacity and capability to meet the demand. They could even take it one step further by closing the loop with supplier of the raw materials that is required to meet the demand in the specific timeline. This provides better visibility of the product and its traceability.
+Think of a customer that is able to model not only their factories, but also their suppliers and resellers. This would allow them to further automate their operations. For example, they could capture the signal from their users’ experiences or in-store demands and tie them in real time to the production line, to have visibility of the production capacity and capability to meet the demand. They could even take it one step further by closing the loop with supplier of the raw materials that is required to meet the demand in the specific timeline. This provides better visibility of the product and its traceability.
 
 On the other hand, Azure Digital Twins service is bridging the gap between the inception and engineering of any product and its operations. With digital twins and simulations, customers can do what-if analysis on their products, testing situations before they even occur. For example, before ordering a whole a new part of an expensive asset, customers could simulate the impact of a change in the configuration or a repair. Coupled with AI and process automation, this gets us to true self-healing assets and advanced root cause analysis.
 
@@ -49,7 +49,7 @@ Physics-based simulation has long been an essential part of the product design p
 
 With the broad deployment of IoT sensors in products and their environment, it is now possible to apply the same simulation technology after a product has been built, shipped, and deployed in the field.  Simulation technology can be used to optimize performance and energy usage or predict failures in a highly accurate and immediate way, without the complexities associated with alternative techniques.
 
-ANSYS is the market leader in technical simulation software. ANSYS Twin Builder lets engineers quickly deliver real time simulation models for operational use. With Microsoft’s Azure Digital Twins platform, it is now possible to efficiently integrate the simulation-based twins into a broader IoT solution.
+ANSYS is the market leader in technical simulation software. ANSYS Twin Builder lets engineers quickly deliver real-time simulation models for operational use. With Microsoft’s Azure Digital Twins platform, it is now possible to efficiently integrate the simulation-based twins into a broader IoT solution.
 
 :::image type="content" source="../media/brookfield-example.png" alt-text="Brookfield example of using Azure Digital Twins" lightbox="../media/brookfield-example.png":::
 

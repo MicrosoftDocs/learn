@@ -28,10 +28,10 @@ quiz:
     choices: 
     - content: 'True'
       isCorrect: false
-      explanation: Smart spaces was the focus of earlier digital twins technology, however, feedback from the community shows it has far wider applications. Though smart spaces is still a good use of the technology.
+      explanation: Smart spaces were the focus of earlier digital twins technology, however, feedback from the community shows it has far wider applications. Though smart spaces are still a good use of the technology.
     - content: 'False'
       isCorrect: true
-      explanation: Smart spaces was the focus of earlier digital twins technology, however, feedback from the community shows it has far wider applications. Though smart spaces is still a good use of the technology.
+      explanation: Smart spaces were the focus of earlier digital twins technology, however, feedback from the community shows it has far wider applications. Though smart spaces are still a good use of the technology.
 
   - content: 'True or false: Azure Digital Twins uses role-based access control (RBAC) to provide security?'
     choices:     
