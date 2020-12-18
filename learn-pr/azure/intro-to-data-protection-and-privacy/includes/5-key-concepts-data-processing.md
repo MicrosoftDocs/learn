@@ -32,9 +32,9 @@ The following list defines terms that are relevant to data processing:
 
 -	Personal data and data subject. Any information relating to an identified or identifiable natural person, or data subject. An identifiable natural person is one who can be identified, directly or indirectly by referring to:
 
-  - An identifier such as a name, an identification number, location data, or an online identifier.
+    - An identifier such as a name, an identification number, location data, or an online identifier.
   
-  - One or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
+    - One or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
   
 - Processor. A natural or legal person, public authority, agency, or other body that processes personal data on behalf of the controller.
 
