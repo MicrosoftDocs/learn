@@ -34,18 +34,18 @@ The deployment may take a few minutes to complete.
 
 In Cloud Shell, check the encryption status.
 
-    ```powershell
+   ```powershell
     $vmName = "fmdata-vm01"
     $rgName = "<rgn>[sandbox Resource Group]</rgn>"
     Get-AzVmDiskEncryptionStatus  -ResourceGroupName $rgName -VMName $vmName
-    ```
+  ```
 
 Now, the OS disk isn't encrypted.
 
-    ```output
+  ```output
     OsVolumeEncrypted          : NotEncrypted
     DataVolumesEncrypted       : NoDiskFound
     OsVolumeEncryptionSettings : Microsoft.Azure.Management.Compute.Models.DiskEncryptionSettings
     ProgressMessage            : [2.2.0.36] Disable Encryption completed successfully
-    ```
+  ```
 
