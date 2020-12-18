@@ -2,24 +2,26 @@
 uid: learn.azure.introduction-data-protection-and-privacy
 metadata:
   title: Introduction to data protection and privacy regulations
-  description: Learners should know and be able to describe and understand key concepts of data protection and privacy regulation. They should also understand key terms in these fields as well as key concepts of data processing. Students should also be able to describe, on a high level, key technologies in Azure that deal with data protection and compliance.
+  description: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe at a high level the key technologies in Azure that deal with data protection and compliance.
   ms.date: 11/10/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to data protection and privacy regulations
-summary: Learners should know and be able to describe and understand key concepts of data protection and privacy regulation. They should also understand key terms in these fields as well as key concepts of data processing. Students should also be able to describe, on a high level, key technologies in Azure that deal with data protection and compliance.
+summary: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe at a high level the key technologies in Azure that deal with data protection and compliance.
 abstract: |
-  By the end of this module, you will be able to answer:
-  - What is data protection?
-  - What are privacy regulations?
-  - What are common data protection regulations and acts?
-  - What are the key concepts of data processing?
-  -	How does Microsoft support data protection and privacy?
-  - What are the Security, Privacy, and Compliance options in Microsoft Azure?
+  After completing this module, you'll be able to:
+  - Describe data protection.
+  - Describe privacy regulations.
+  - Describe the most common data protection regulations and acts.
+  - Describe the key concepts of data processing.
+  - Describe how Microsoft supports data protection and privacy.
+  - Describe security, privacy, and compliance options in Azure.
 prerequisites: |
   - Basic experience with Azure services
+  - Intermediate knowledge of data protection
+  - Basic experience with security technologies
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -36,10 +38,10 @@ units:
 - learn.azure.introduction-data-protection-and-privacy.1-introduction
 - learn.azure.introduction-data-protection-and-privacy.2-what-is-data-protection
 - learn.azure.introduction-data-protection-and-privacy.3-what-are-privacy-regulations
-- learn.azure.introduction-data-protection-and-privacy.4-what-are-regulations-and-acts
-- learn.azure.introduction-data-protection-and-privacy.5-what-are-key-concepts-data-processing
-- learn.azure.introduction-data-protection-and-privacy.6-how-does-ms-support-protection-and-privacy
-- learn.azure.introduction-data-protection-and-privacy.7-what-are-sci-options-in-azure
+- learn.azure.introduction-data-protection-and-privacy.4-common-data-protection-regulations-and-acts
+- learn.azure.introduction-data-protection-and-privacy.5-key-concepts-data-processing
+- learn.azure.introduction-data-protection-and-privacy.6-how-microsoft-support-protection-and-privacy
+- learn.azure.introduction-data-protection-and-privacy.7-security-privacy-compliance-options-in-azure
 - learn.azure.introduction-data-protection-and-privacy.8-knowledge-check
 - learn.azure.introduction-data-protection-and-privacy.9-summary
 badge:
