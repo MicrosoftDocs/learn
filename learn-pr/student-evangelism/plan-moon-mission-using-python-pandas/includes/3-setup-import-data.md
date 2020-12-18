@@ -31,16 +31,16 @@ Your environment should look like this:
 
 The data that you'll explore during this module is a file full of all the samples collected from the six Apollo missions that landed on the Moon. The [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true). 
 
-Download the [rocksamples.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file and save it to your data folder.
+Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file and save it to your data folder.
 
 > [!TIP]
 > To download a CSV file in GitHub:
 > 1. In the list of files in the GitHub repository, select the file.
 > 1. In the upper-right corner, select **Raw**. The file opens as a raw CSV file in your browser.
-> 1. Right-click anywhere in the browser window, and then select **Save As**.
-> 1. In the **File save as** dialog box, you can enter a file name (use *rocksamples*), select the file type in the drop-down list (select **CSV**), and choose where to download the file to.
+> 1. Right-click anywhere in the browser window, and then select **Save as**.
+> 1. In the **File save as** dialog box, you can choose the file name (*rocksamples*), the file type (CSV), and where to download the file to (your project data folder).
 >
-> To view a demonstration of how to complete these steps, see https://github.com/sguthals/learnwithdrg/blob/main/SaveCSVFromGitHub.mp4. (To view the demo file, select the **Download** button in the GitHub repository, and then select the file in your browser to open and view the downloaded file.)
+> For a demonstration of how to complete these steps, see https://github.com/sguthals/learnwithdrg/blob/main/SaveCSVFromGitHub.mp4. To view the demo file, select the **Download** button in the GitHub repository, and then select the file in your browser to open and view the downloaded file.
 >
 
 After you download the CSV file and save it to your data folder, your Visual Studio Code environment should look like this:
