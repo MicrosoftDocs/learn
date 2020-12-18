@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.3-what-is-azure-cache-for-redis
-title: TODO
+title: What is Azure Cache for Redis
 metadata:
-  title: TODO
-  description: TODO
+  title: Learn what Redis and Azure Cache for Redis are
+  description: In this unit, we learn about Redis and Azure Cache for Redis, and discover their common usage scenarios.
   author: judubois
   ms.author: judubois
   ms.date: 12/04/2020

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.7-deploy-a-spring-boot-and-redis-application-to-azure-app-service
-title: TODO
+title: Deploy a Spring Boot and Redis application to Azure App Service
 metadata:
-  title: TODO
-  description: TODO
+  title: Create an Azure App Service instance, and deploy to production in the cloud a Spring Boot and Redis application.
+  description: In this unit, we create an Azure App Service instance, configure our Spring Boot and Redis project to use it, and test the final production application in the cloud.
   author: judubois
   ms.author: judubois
   ms.date: 12/04/2020
