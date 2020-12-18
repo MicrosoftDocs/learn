@@ -41,15 +41,15 @@ quiz:
         - content: "It stores cached data in a SQL database, so that application nodes can retrieve it easily."
           isCorrect: false
           explanation: "Incorrect. Spring Session can use an SQL database to store its data, but it's an alternative and less performant solution than Azure Cache for Redis."
-    - content: ""
+    - content: "What is the difference between Redis and Azure Cache for Redis?"
       choices:
-        - content: "."
+        - content: "Azure Cache for Redis is a limited version of Redis that only focuses on caching."
           isCorrect: false
-          explanation: "Incorrect.."
-        - content: "."
+          explanation: "Incorrect. Azure Cache for Redis isn't a limited version of Redis."
+        - content: "Azure Cache for Redis is a Cosmos DB database, compatible with Redis at the API layer."
+          isCorrect: false
+          explanation: "Incorrect. Azure Cache for Redis uses the real Redis software."
+        - content: "Azure Cache for Redis is a managed version of Redis, maintained and operated by Azure.."
           isCorrect: true
-          explanation: "."
-        - content: "."
-          isCorrect: false
-          explanation: "Incorrect.."
+          explanation: "Correct. Azure Cache for Redis is a managed version of Redis."
               
