@@ -1,12 +1,14 @@
-Intro text
+Programs that describe the real-world scenario the best, tend to be the most efficient and reliable. Many workloads are event-driven in its nature. In this module, we're going to learn what that means and how to represent the real-world scenario in our program architectures.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Step 1
-- Step 2
-- Step 3
+- Explain event-driven and real-time workloads.
+- Create a scenario with simulated telemetric data.
+- Send the telemetric data with an Azure Function to an Event Hub.
+- Connect another function with this Event Hub to trigger the storage in Cosmos DB.
+- Have a look at the metrics in Application Insights to measure the performance and identify potential bottle necks.
 
 ## Prerequisites
 

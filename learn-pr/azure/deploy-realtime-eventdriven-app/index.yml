@@ -11,10 +11,10 @@ metadata:
 title: Deploy Event-driven real-time app to Azure
 summary: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
 abstract: |
-  In this module, you will:
-  - Learn what event-driven and real-time means.
-  - Create an IoT scenario with simulated telemetric data.
-  - Send the telemetric data with an Azure Function to a Event Hub.
+  By the end of this module, you'll be able to:
+  - Explain event-driven and real-time workloads.
+  - Create a scenario with simulated telemetric data.
+  - Send the telemetric data with an Azure Function to an Event Hub.
   - Connect another function this Event Hub to trigger a storage in Cosmos DB.
   - Have a look at the metrics in Application Insights to measure the performance and identify potential bottle necks.
 prerequisites: | 

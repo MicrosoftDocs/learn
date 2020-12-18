@@ -10,7 +10,7 @@ Your application are sending event based telemetric data in real time to Cosmos 
 
 4. Add Maven Plugin.
 
-5. Update y.
+5. Update.
 
 You're now confident that you can handle real-time workloads on Azure.
 
