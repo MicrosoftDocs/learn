@@ -1,6 +1,6 @@
-In this exercise, you'll take an existing MongoDB database and migrate it to Cosmos DB. You'll use the Azure Database Migration Service. You'll also see how to reconfigure existing applications that use the MongoDB database to connect to the Cosmos DB database instead.
-
 You work for a utilities company that has IoT sensors that collect temperature data. The temperatures are logged in a MongoDB database, together with a timestamp. Each device has a unique ID. You'll run a MongoDB application that simulates these devices, and stores the data in the database. You'll also use a second application that enables a user to query statistical information about each device. After migrating the database from MongoDB to Cosmos DB, you'll configure both applications to connect to Cosmos DB, and verify that they still function correctly.
+
+In this exercise, you'll take an existing MongoDB database and migrate it to Cosmos DB. You'll use the Azure Database Migration Service. You'll also see how to reconfigure existing applications that use the MongoDB database to connect to the Cosmos DB database instead.
 
 ## Create a MongoDB database on Azure
 
@@ -536,3 +536,14 @@ The final step is to reconfigure your existing MongoDB applications to connect t
 1. Test the application with other device numbers. Enter **Q** to finish.
 
 You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured an existing MongoDB application to connect to the Cosmos DB database.
+
+Microsoft.Compute/disks
+Microsoft.Compute/virtualMachines
+Microsoft.Compute/virtualMachines/extensions
+Microsoft.DataMigration/services
+Microsoft.DevTestLab/schedules
+Microsoft.DocumentDb/databaseAccounts
+Microsoft.Network/networkInterfaces
+Microsoft.Network/networkSecurityGroups
+Microsoft.Network/publicIPAddresses
+Microsoft.Network/virtualNetworks

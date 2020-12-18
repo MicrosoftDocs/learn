@@ -1,20 +1,24 @@
 Migrating from MongoDB to Cosmos DB has benefits including scalability, global distribution, and server management.
 
+As the lead database developer you want to understand what the benefits are of moving your database workloads to Azure. Cosmos DB has unique features that you can't find in conventional on-premises document-based databases.
+
+In this unit, you'll explore the feature of CosmosDB you can take advantage of, while maintaining API compatibility with your existing MongoDB applications.
+
 ## Scalability
 
 By migrating your database to Azure, you benefit from limitless storage and elastic scalability for performance. To specify performance, you specify the Request Units (RUs) for throughput at either the container or database level.
 
 ### Specifying container throughput
 
-The most common option is to specify throughput at the container level. This guarantees throughput uniformly across all logical partitions in the container and the throughput is exclusive to that container. Because the throughput is uniform across logical partitions, if one partition exceeds the throughput it will be rate limited even if other partitions have available throughput. Because of this, it is important to configure your partitioning key to avoid hot partitions.
+The most common option is to specify throughput at the container level. This guarantees throughput uniformly across all logical partitions in the container and the throughput is exclusive to that container. Because the throughput is uniform across logical partitions, if one partition exceeds the throughput it will be rate limited, even if other partitions have available throughput. That's why it's important to configure your partitioning key to avoid hot partitions.
 
 ### Specifying database throughput
 
-By specifying throughput at the database level, the throughput is shared between the containers. This can be useful if containers regularly increase or decrease throughput, but the total throughput for the database remains relatively static. Throughput within each container is still uniform across logical partitions and if one partition exceeds the throughput it will be rate limited even if other partitions have available throughput.
+By specifying throughput at the database level, the throughput is shared between the containers. This can be useful if containers throughput varies regularly, but the total throughput for the database remains relatively static. Throughput within each container is still uniform across logical partitions and if one partition exceeds the throughput it will be rate limited even if other partitions have available throughput.
 
 You can change throughput at any time and the maximum throughput for either a container or database is unlimited.
 
-For more information on migration benefits, click Rationale at [Move MongoDB to Azure Cosmos DB](https://aka.ms/AA56f93)
+For more information on migration benefits, see the Rationale section at [Move MongoDB to Azure Cosmos DB](https://aka.ms/AA56f93).
 
 ## Multi-region
 
