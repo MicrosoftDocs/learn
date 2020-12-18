@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-data-protection-and-privacy.4-what-are-regulations-and-acts
-title: What are common data protection regulations and acts?
+uid: learn.azure.introduction-data-protection-and-privacy.4-common-data-protection-regulations-and-acts
+title: Common data protection regulations and acts
 metadata:
-  title: What are common data protection regulations and acts?
-  description: What are common data protection regulations and acts?
+  title: Common data protection regulations and acts
+  description: Common data protection regulations and acts
   ms.date: 11/10/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
-  [!include[](includes/4-what-are-regulations-and-acts.md)]
+  [!include[](includes/4-common-data-protection-regulations-and-acts.md)]
