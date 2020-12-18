@@ -12,7 +12,7 @@ Do any of these scenarios apply to your company? If so, read the corresponding s
 
 ## Bringing Azure PaaS services into your virtual network
 
-Depending on the resource and how it's configured, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network.
+Depending on the resource and how it's configured, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network. T
 
 ## Securing traffic between your company network and the Azure cloud
 
