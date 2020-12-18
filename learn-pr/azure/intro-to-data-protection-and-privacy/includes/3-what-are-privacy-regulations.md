@@ -14,7 +14,7 @@ The various laws around the world describe the rights of persons and companies t
 
 - Requesting deletion if the purpose of data storage is not valid anymore.
 
-##Considerations for defining compliant procedures
+## Considerations for defining compliant procedures
 
 Data protection policies that companies use internally mostly focus on the principles and procedures for data access management and data protection. At the same time, laws and regulations in this field strongly focus on data collection and data usage. Regulations very specifically define the who, when, and how of personal data collection. They also define how the data should be used and removed or deleted.
 
