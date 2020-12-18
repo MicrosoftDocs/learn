@@ -5,7 +5,7 @@ metadata:
   title: Deploy a Spring Boot application to Azure
   description: Deploy a Spring Boot application to Azure.
   ms.date: 28/01/2021
-  author: Sandra Ahlgrimm
+  author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

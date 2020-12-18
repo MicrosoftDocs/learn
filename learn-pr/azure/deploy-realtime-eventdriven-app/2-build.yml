@@ -5,7 +5,7 @@ metadata:
   title: Build an Azure Function to simulate telemetric data
   description: Build an Azure Function to simulate telemetric data, set up its Azure resources, and connect it to an Event Hub.
   ms.date: 28/01/2021
-  author: Sandra Ahlgrimm 
+  author: SandraAhlgrimm 
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

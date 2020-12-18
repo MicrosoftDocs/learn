@@ -4,7 +4,7 @@ metadata:
   title: Deploy Event-driven real-time app to Azure
   description: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
   ms.date: 01/28/2021
-  author: Sandra Ahlgrimm
+  author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
