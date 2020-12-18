@@ -71,6 +71,16 @@ Download these files and save them in your *over-the-moon/meteor-showers/data* f
 
 :::image type="content" source="../media/data-downloaded.png" alt-text="Screenshot that shows all four C S V data files in the data folder in Visual Studio Code.":::
 
+> [!TIP]
+> To download a CSV file in GitHub:
+> 1. In the list of files in the GitHub repository, select the file.
+> 1. In the upper-right corner, select **Raw**. The file opens as a raw CSV file in your browser.
+> 1. Right-click anywhere in the browser window, and then select **Save as**.
+> 1. In the **File save as** dialog box, you can choose the file name (*rocksamples*), the file type (*CSV*), and where to download the file to (your project data folder).
+>
+> For a demonstration of how to complete these steps, see https://github.com/sguthals/learnwithdrg/blob/main/SaveCSVFromGitHub.mp4. To view the demo file, select the **Download** button in the GitHub repository, and then open the downloaded file.
+>
+
 ## Other data to consider
 
 This module focuses on the four data files. But you can also gather other types of data that might affect the likelihood of viewing a meteor shower:
