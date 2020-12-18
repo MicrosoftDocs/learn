@@ -84,7 +84,7 @@ curl https://<xxxx>.azurewebsites.net
 ```
 
 > [!NOTE]
-> Change **<xxxx>** by the name of your Application Service instance.
+> Change **<xxxx>** by the name of your Application Service instance in the command above, as well as the two below.
 
 To add an item:
 
