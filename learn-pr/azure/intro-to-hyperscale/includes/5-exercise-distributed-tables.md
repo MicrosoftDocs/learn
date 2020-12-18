@@ -64,7 +64,7 @@ First, create the event and user tables.
         merchant_id bigint,
         event_details jsonb,
         created_at timestamp,
-        primary key(event_id, user_id)
+        primary key(event_id)
     );
     ```
     
@@ -91,8 +91,8 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
 1. Run the following command to download the CSV files of our user and payment event data.
 
     ```
-    \! curl -O https://raw.githubusercontent.com/MicrosoftDocs/mslearn-create-connect-postgresHyperscale/users.csv
-    \! curl -O https://raw.githubusercontent.com/MicrosoftDocs/mslearn-create-connect-postgresHyperscale/events.csv
+    \! curl -O https://raw.githubusercontent.com/MicrosoftDocs/mslearn-create-connect-postgresHyperscale/main/users.csv
+    \! curl -O https://raw.githubusercontent.com/MicrosoftDocs/mslearn-create-connect-postgresHyperscale/main/events.csv
     ```
 
 2. Next, load the data from the CSV files into the distributed tables, `payment_users` and `payment_events`.
