@@ -1,10 +1,12 @@
-Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe at a high level the key technologies in Azure that deal with data protection and compliance. <!--Damir please review this sentence - it is a “summary sentence” we need to add at the beginning of the intro unit. --> 
+Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe at a high level the key technologies in Azure that deal with data protection and compliance. 
+
 Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, whereas its cloud services are under evaluation.
 
 Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring the capabilities of Microsoft Azure and the Microsoft 365 platform. They want to determine whether Contoso can use Azure services to help modernize its current operational model through automation and virtualization. They’re also considering the use of Microsoft 365 productivity services instead of locally deployed services, such as email, intranet portals, or storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection when using cloud services instead of locally deployed services.
 
 As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You should make sure that these services have the capabilities to address the legal department's concerns.
-In this module, you’ll learn about data protection and privacy regulations. You’ll also learn about Microsoft’s principles and standards for protecting customer data.  <!--Damir please review this  - it is the “prose TOC” we add after the scenario. -->
+
+In this module, you’ll learn about data protection and privacy regulations. You’ll also learn about Microsoft’s principles and standards for protecting customer data.  
 
 ## Learning objectives
 
@@ -22,4 +24,3 @@ After completing this module, you'll be able to:
 - Intermediate knowledge of data protection
 - Basic experience with security technologies
 - Basic experience with Azure services
-<!--Damir, MS wants us to be specific about the level of knowledge and/or experience with each of these. Do these items look OK?”-->
