@@ -20,7 +20,7 @@ Microsoft uses its own data categorization for online services. These categories
 
 - Payment data. Payment data is the information you provide when you buy a Microsoft product online. It might include a credit card number and security code, name, billing address, and other financial data. Microsoft uses payment data to complete transactions and to detect and prevent fraud.
 
-- Personal data. Personal Data includes any information relating to an identified or identifiable natural person. <!--Damir I removed the definition of natural person as we included it in an earlier unit-->Microsoft uses the same GDPR definition for personal data. It includes pseudonymized data. In addition to being a subset of administrator data and payment data, personal data is a subset of each of the data categories presented in this list.
+- Personal data. Personal Data includes any information relating to an identified or identifiable natural person. Microsoft uses the same GDPR definition for personal data. It includes pseudonymized data. In addition to being a subset of administrator data and payment data, personal data is a subset of each of the data categories presented in this list.
 
 ## Microsoft's GDPR commitments to customers
 
