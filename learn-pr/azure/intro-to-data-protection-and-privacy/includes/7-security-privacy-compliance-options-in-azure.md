@@ -24,7 +24,7 @@ It differs from Azure Resource Manager and Azure Policy in that Azure Blueprints
 
 > [!NOTE]
 
-> You can create blueprints in the Azure portal or by using the REST API with tools such as PowerShell or the Azure portal. If you use the REST API, you can define blueprint parameters to prevent conflicts when reusing certain blueprints.<!--Damir, please confirm replacement of “the latter” with “the REST API”-->
+> You can create blueprints in the Azure portal or by using the REST API with tools such as PowerShell or the Azure portal. If you use the REST API, you can define blueprint parameters to prevent conflicts when reusing certain blueprints.
 
 ## Data protection in Azure
 
