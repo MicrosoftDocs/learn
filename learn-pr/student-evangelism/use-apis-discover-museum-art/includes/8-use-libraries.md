@@ -54,7 +54,7 @@ print(response.text.encode('utf8'))
 
 ::: zone-end
 
-::: zone pivot="PowerShell"
+::: zone pivot="powershell"
 
 ```powershell
 $response = Invoke-RestMethod 'https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=clock%20radio&page=1&per_page=100&access_token=yourtoken' -Method 'GET' -Headers $headers -Body $body
@@ -75,7 +75,7 @@ Using the terminal, `cd` to the location of your `db.json` file and then enter `
 
 You can write to this collection by setting a header value `'content-type': 'application/json'` and passing through a stringified JSON object:
 
-::: zone pivot="JavaScript"
+::: zone pivot="javascript"
 
 ```javascript
 var axios = require('axios');
@@ -120,7 +120,7 @@ print(response.text.encode('utf8'))
 
 ::: zone-end
 
-::: zone pivot="PowerShell"
+::: zone pivot="powershell"
 
 ```powershell
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
