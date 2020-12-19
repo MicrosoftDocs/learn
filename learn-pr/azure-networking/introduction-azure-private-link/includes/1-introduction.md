@@ -12,7 +12,7 @@ In this module, you'll learn the fundamentals of Azure Private Link. You'll lear
 
 In this module, you will:
 
-- Explain how Azure Private Link, Azure Private Endpoint, and Azure Private Link service work together to create private connections to Azure resources.
+- Explain how Azure Private Link, Azure Private Endpoint, and Azure Private Link Service work together to create private connections to Azure resources.
 - Evaluate whether Azure Private Link is appropriate for giving your employees, vendors, and customers private access to your Azure services.
 - Identify and describe use cases for Azure Private Link.
 
