@@ -1,7 +1,7 @@
 You can now import the data from the blob storage to the Azure Synapse Analytics database. Let's connect to the database and run the appropriate SQL queries to create a staging table with the data.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob storage account into a SQL data warehouse.
+> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob storage account into a Azure Synapse Analytics.
 
 ## Open the query editor in the Azure portal
 
@@ -35,7 +35,11 @@ The first step in using PolyBase is to create a database-scoped credential that 
     
     CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
     WITH
+<<<<<<< HEAD
         IDENTITY = 'demodwStorage',
+=======
+        IDENTITY = 'DemoDwStorage',
+>>>>>>> 8d6aa812d70effdb26852eaa74f21655017925eb
         SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
     ;
     ```
@@ -118,7 +122,11 @@ Create a physical table in the Azure Synapse Analytics database. In the followin
 1. Paste the following code into the query window.
 
     ```sql
+<<<<<<< HEAD
     -- Load the data from Azure Blob storage to SQL Data Warehouse
+=======
+    -- Load the data from Azure Blob storage to Azure Synapse Analytics
+>>>>>>> 8d6aa812d70effdb26852eaa74f21655017925eb
     CREATE TABLE [dbo].[StageDate]
     WITH (   
         CLUSTERED COLUMNSTORE INDEX,
