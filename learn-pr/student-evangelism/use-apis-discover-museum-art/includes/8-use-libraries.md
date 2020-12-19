@@ -1,4 +1,4 @@
-It's useful to test an API by sending queries over a browser's URL, complete with a query string populated by an access token, but in a production app, you might need to make a more complicated API call with various data assembled together to form a query.
+It's useful to test an API by sending queries over a browser's URL, complete with a query string populated by an access token. But in a production app, you might need to make a more complicated API call with various data assembled together to form a query.
 
 Many developers, therefore, rely on libraries that standardize the process of working with APIs. For JavaScript developers, Axios is an excellent choice. Python programmers might use Request. Using PowerShell? Try RestMethod.
 
