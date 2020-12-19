@@ -8,7 +8,7 @@ Run this command on a command line or in a terminal:
 
 This package, [JSON Server](https://github.com/typicode/json-server?azure-portal=true), creates a "full fake REST API" server and is useful for prototyping and learning.
 
-Next, by using a text editor or Visual Studio Code, create a file on your local computer called db.json:
+Next, by using a text editor or Visual Studio Code, create a file on your local computer called `db.json`:
 
 ```json
 {
