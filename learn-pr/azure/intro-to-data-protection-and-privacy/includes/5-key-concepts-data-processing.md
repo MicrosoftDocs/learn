@@ -6,9 +6,7 @@ The GDPR gives people rights to manage their personal data that an employer or o
 
 ## Key concepts of CCPA
 
-Similarly, the CCPA provides privacy rights and obligations to Californian consumers, including rights that similar to the GDPR's data subject rights, such as the right to delete, access, and receive their personal information to move it elsewhere <!--Damir please check this edit - wording was unclear-->. The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights <!--not clear - what does “electing exercise rights” mean?-->, and "opt-out/ opt-in" requirements for certain data transfers classified as "sales".
-
-<!--Damir, I moved the similarities list and “biggest difference” paragraph here from the previous unit - please validate; it might be better here as we have now defined service providers, processors, controllers, etc.-->
+Similarly, the CCPA provides privacy rights and obligations to Californian consumers, including rights that similar to the GDPR's data subject rights, such as the right to delete, access, and receive their personal information to move it elsewhere. The CCPA also provides for certain disclosures, protections against discrimination, and "opt-out/ opt-in" requirements for certain data transfers classified as "sales".
 
 ### GDPR vs. CCPA
 
@@ -18,7 +16,7 @@ Similarities between GDPR and CCPA include:
 
 - Consumer rights to access, delete, and receive a copy of data
 
-- The CCPA definition of service providers that is similar to how GDPR defines processors with a similar contractual obligation <!--Damir, I added “the CCPA” to the beginning of this bullet and the next to clarify a bit more that we’re talking about the CCPA-->
+- The CCPA definition of service providers that is similar to how GDPR defines processors with a similar contractual obligation 
 
 - The CCPA definition of businesses that encompasses the GDPR definition of controllers
 
