@@ -1,4 +1,4 @@
-First, let's create a SQL pool named **DemoDW** in Azure Synapse Analytics.
+First, let's create a Data Lake Storage named **demodw** in Azure Synapse Analytics.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to create a blank data warehouse.
