@@ -6,7 +6,7 @@ A country/region can define a law or regulation that defines how government auth
 
 In general, information privacy, data privacy, or data protection regulations and laws provide a legal framework on how to obtain, use, and store data about persons, companies, or other entities. Laws and regulations rarely define or prescribe specific technologies that you can use to protect data. Instead, you should choose appropriate technologies, platforms, or vendors that comply with a specific regulation or law.
 
-The various laws around the world describe the rights of persons and companies to control who is using their data. This usually includes the right to get details on<!--Damir please review edits here-->:
+The various laws around the world describe the rights of persons and companies to control who is using their data. This usually includes the right to get details on:
 
 - The data that is being stored.
 
@@ -22,5 +22,4 @@ Very often, organizations implement government-provided data privacy and protect
 
 > [!NOTE]
 
-> Microsoft provides compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. 
-<!--Damir I moved the url to the summary unit. We’re only supposed to link to urls in the summary unit.-->
+> Microsoft provides compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
