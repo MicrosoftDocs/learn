@@ -9,15 +9,13 @@ You use a built-in query editor in the Azure portal to run the necessary queries
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal).
 
-1. Select **SQL database** in the left sidebar. If it's not present, use the search box at the top to search for the database by name.
+1. Select **SQL database** in the nav bar. If it's not present, use the search box at the top to search for the database by name.
 
     ![Showing SQL databases](../media/7-show-sql-db.png)
 
-1. Select **DemoDW** as the name of the target database where you want to import the data.
+1. Select **demodw** as the name of the target database where you want to import the data.
 
-1. Select **Query editor (preview)** from the **Common tools** section. This tool is a built-in SQL query editor.
-
-    ![Opening the query editor preview](../media/7-open-query-editor.png)
+1. In the nav bar, under the **Overview** section, select **Query editor (preview)**. This tool is a built-in SQL query editor.
 
     > [!TIP]
     > If you want to work with a desktop-based tool, you can open Visual Studio from here.
@@ -37,7 +35,7 @@ CREATE MASTER KEY;
 
 CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
 WITH
-    IDENTITY = 'DemoDwStorage',
+    IDENTITY = 'demodwStorage',
     SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
 ;
 ```
@@ -65,7 +63,7 @@ WITH (
 
 Define the external file format named **TextFile**. This name indicates to PolyBase that the format of the text file is **DelimitedText** and the field terminator is a comma.
 
-1. Paste the following code into the query window:
+1. Paste the following code into the query window.
 
 ```sql
 CREATE EXTERNAL FILE FORMAT TextFile
@@ -86,7 +84,7 @@ Create an external table named `dbo.temp` with the column definition for your ta
 
 The table definition must match the fields defined in the input file. There are 12 defined columns, with data types that match the input file data.
 
-1. Add the following code into the Visual Studio window underneath the previous code:
+1. Add the following code into the Visual Studio window underneath the previous code.
 
 ```sql
 -- Create a temp table to hold the imported data
@@ -115,9 +113,9 @@ WITH (
 
 ## Create a destination table
 
-Create a physical table in the SQL Data Warehouse database. In the following example, you create a table named `dbo.StageDate`. The table has a clustered column store index defined on all the columns. It uses a table geometry of `round_robin` by design because `round_robin` is the best table geometry to use for loading data.
+Create a physical table in the Azure Synapse Analytics database. In the following example, you create a table named `dbo.StageDate`. The table has a clustered column store index defined on all the columns. It uses a table geometry of `round_robin` by design because `round_robin` is the best table geometry to use for loading data.
 
-1. Paste the following code into the query window:
+1. Paste the following code into the query window.
 
 ```sql
 -- Load the data from Azure Blob storage to SQL Data Warehouse
@@ -135,7 +133,7 @@ SELECT * FROM [dbo].[Temp];
 
 As an optional step, create statistics on columns that feature in queries to improve the query performance against the table.
 
-1. Paste the following code into the query window:
+1. Paste the following code into the query window.
 
 ```sql
 -- Create statistics on the new data
