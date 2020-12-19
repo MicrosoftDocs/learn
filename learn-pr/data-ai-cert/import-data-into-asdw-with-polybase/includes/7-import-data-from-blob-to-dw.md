@@ -1,7 +1,7 @@
 You can now import the data from the blob storage to the Azure Synapse Analytics database. Let's connect to the database and run the appropriate SQL queries to create a staging table with the data.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob storage account into a SQL data warehouse.
+> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob storage account into a Azure Synapse Analytics.
 
 ## Open the query editor in the Azure portal
 
@@ -48,14 +48,14 @@ Use the database-scoped credential to create an external data source named **Azu
 
 1. Paste the following code into the query window. Replace the `LOCATION` value with your correct value from the previous exercise.
 
-```sql
-CREATE EXTERNAL DATA SOURCE AzureStorage
-WITH (
-    TYPE = HADOOP,
-    LOCATION = 'wasbs://data-files@demodwstorage.blob.core.windows.net',
-    CREDENTIAL = AzureStorageCredential
-);
-```
+    ```sql
+    CREATE EXTERNAL DATA SOURCE AzureStorage
+    WITH (
+        TYPE = HADOOP,
+        LOCATION = 'wasbs://data-files@demodwstorage.blob.core.windows.net',
+        CREDENTIAL = AzureStorageCredential
+    );
+    ```
 
 1. Select **Run** to run the query. It reports `Query succeeded: Affected rows: 0.`.
 
@@ -65,13 +65,13 @@ Define the external file format named **TextFile**. This name indicates to PolyB
 
 1. Paste the following code into the query window.
 
-```sql
-CREATE EXTERNAL FILE FORMAT TextFile
-WITH (
-    FORMAT_TYPE = DelimitedText,
-    FORMAT_OPTIONS (FIELD_TERMINATOR = ',')
-);
-```
+    ```sql
+    CREATE EXTERNAL FILE FORMAT TextFile
+    WITH (
+        FORMAT_TYPE = DelimitedText,
+        FORMAT_OPTIONS (FIELD_TERMINATOR = ',')
+    );
+    ```
 
 1. Select **Run** to run the query. It reports `Query succeeded: Affected rows: 0.`.
 
@@ -117,16 +117,17 @@ Create a physical table in the Azure Synapse Analytics database. In the followin
 
 1. Paste the following code into the query window.
 
-```sql
--- Load the data from Azure Blob storage to SQL Data Warehouse
-CREATE TABLE [dbo].[StageDate]
-WITH (   
-    CLUSTERED COLUMNSTORE INDEX,
-    DISTRIBUTION = ROUND_ROBIN
-)
-AS
-SELECT * FROM [dbo].[Temp];
-```
+    ```sql
+    -- Load the data from Azure Blob storage to Azure Synapse Analytics
+    CREATE TABLE [dbo].[StageDate]
+    WITH (   
+        CLUSTERED COLUMNSTORE INDEX,
+        DISTRIBUTION = ROUND_ROBIN
+    )
+    AS
+    SELECT * FROM [dbo].[Temp];
+    ```
+
 1. Select **Run** to run the query. It takes a few seconds to complete and reports `Query succeeded: Affected rows: 0.`.
 
 ## Add statistics onto columns to improve query performance
@@ -135,12 +136,12 @@ As an optional step, create statistics on columns that feature in queries to imp
 
 1. Paste the following code into the query window.
 
-```sql
--- Create statistics on the new data
-CREATE STATISTICS [DateKey] on [StageDate] ([DateKey]);
-CREATE STATISTICS [Quarter] on [StageDate] ([Quarter]);
-CREATE STATISTICS [Month] on [StageDate] ([Month]);
-```
+    ```sql
+    -- Create statistics on the new data
+    CREATE STATISTICS [DateKey] on [StageDate] ([DateKey]);
+    CREATE STATISTICS [Quarter] on [StageDate] ([Quarter]);
+    CREATE STATISTICS [Month] on [StageDate] ([Month]);
+    ```
 
 1. Select **Run** to run the query. It reports `Query succeeded: Affected rows: 0.`.
 

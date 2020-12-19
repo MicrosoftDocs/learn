@@ -1,4 +1,4 @@
-If you have questions around Azure services or curious about its capabilities, we have a variety of resources to help you find answers to your questions. Let's look at these support resources. 
+If you have questions around Azure services or are curious about Azure's capabilities, we have a variety of resources to help you find answers to your questions. Let's look at these support resources. 
 
 ## Azure free support resources
 
