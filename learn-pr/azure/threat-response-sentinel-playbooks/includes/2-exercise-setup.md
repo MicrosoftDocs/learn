@@ -9,10 +9,10 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link:
 
-    [![Deploy To Azure](../media/02-deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/threat-response-sentinel-playbooks/resources/sentinel-template.json?azure-portal=true)
+    [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-threat-response-sentinel-playbooks%2Fsentinel-template.json?azure-portal=true)
 
-2. You will be prompted to sign in to your Azure subscription.
-3. On the **Custom deployment** page, provide the following information:
+    You're prompted to sign in to Azure.
+1. On the **Custom deployment** page, provide the following information:
 
     |||
     | --- | --- |
@@ -24,7 +24,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Simplevm Name | Accept the default value of simple-vm.|
     | Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
 
-4. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, and then select **Create**.
 
     :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
