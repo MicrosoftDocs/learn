@@ -108,7 +108,7 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
 
     Our data is now loaded and distributed. Let's run a couple queries.
 
-1. Run the follow query in the Cloud Shell to see how many events we have stored.
+1. Run the follow query in the Cloud Shell to see how many events we've stored.
 
     ```sql
     SELECT count(*) from payment_events;
@@ -148,4 +148,4 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     \q
     ```
     
-    Keep the cloud shell tab open, and move onto Unit 6 - Scale up and scale out.
+    Keep the Cloud Shell tab open, and move onto Unit 6 - Scale up and scale out.
