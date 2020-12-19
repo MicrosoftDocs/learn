@@ -20,45 +20,45 @@ durationInMinutes: 10
 # See https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-a-knowledge-check?branch=master for full guidance.
 quiz:
   questions:
-  - content: Question 1
+  - content: Which hosting option requires the customer to manage only the applications and data?
     choices:
-    - content: Answer 1
+    - content: Platform as a Service (PaaS)
       isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
+      explanation: The PaaS hosting option has everything except applications and data managed by the hosting vendor
+    - content: Infrastructure as a Service (IaaS)
       isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
+      explanation: The IaaS option still requires the customer to manage the applications, data, runtime, middleware, and OS
+    - content: Software as a Service (SaaS)
       isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
+      explanation: The SaaS options has the vendor manage all the services and the customer only rents the software. The customer cannot manage the application or data.
+    - content: On-premises
       isCorrect: false
-      explanation: Explanation 4
-  - content: Question 2
+      explanation: The customer is responsible for everything in an on-premises environment as it is not a hosted option in Azure.
+  - content: What is an App Service Plan?
     choices:
-    - content: Answer 1
+    - content: The pricing tier you select for the storage of your application.
+      isCorrect: false
+      explanation: Storage accounts are used for the storage needs of an application.
+    - content: The App Service plan will define a set of compute resources for your ASP.NET application
       isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
+      explanation: THe Azure App Service uses an App Service Plan to define the necessary compute resources that your app will need.
+    - content: The set of migration tools that you use to move your application to the cloud.
       isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
+      explanation: The set of migration tools that Azure provides, help you assess and move your application to cloud environment but they are part of the App Service Plan.
+    - content: The licensing agreement you select for your Azure subscription.
       isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
-      isCorrect: false
-      explanation: Explanation 4
-  - content: Question 3
+      explanation: Licensing agreements pertain to various services in your hosted environment such as the OS and Azure SQL Database licensing.  They are not part of the App Service Plan.
+  - content: Which component in Azure offers similar configuration options and benefits to a firewall?
     choices:
-    - content: Answer 1
+    - content: Azure DNS
+      isCorrect: false
+      explanation: Azure DNS behaves in a similar fashion to the standard DNS used to translate domain names to IP addresses.
+    - content: Azure Compute
+      isCorrect: false
+      explanation: Azure Compute is a category that relates to compute instances on Azure such as VMs.
+    - content: Resource Group
+      isCorrect: false
+      explanation: Resource Groups are a mechanism in Azure that allow you to groups related resources for the purpose of management.
+    - content: Azure VNETs
       isCorrect: true
-      explanation: Explanation 1
-    - content: Answer 2
-      isCorrect: false
-      explanation: Explanation 2
-    - content: Answer 3
-      isCorrect: false
-      explanation: Explanation 3
-    - content: Answer 4
-      isCorrect: false
-      explanation: Explanation 4
+      explanation: Azure can help secure various aspects of your app and data by using virtual networks (VNETs), which act in a similar fashion to firewalls.
