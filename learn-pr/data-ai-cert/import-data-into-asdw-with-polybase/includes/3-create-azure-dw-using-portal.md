@@ -11,26 +11,26 @@ First, let's create a Data Lake Storage named **demodw** in Azure Synapse Analyt
 
 1. In the **Create Synapse workspace** panel, create an Azure Synapse Analytics workspace with the following settings:
 
-| Field       | Value |
-| ----------- | ----------- |
-| **Basics** tab > **Project details** section |
-| Subscription     | Name of the subscription you are using in this exercise. |
-| Resource group        | Select **Create new**, and enter **mslearn-demodw**, and select **OK**. |
-| **Workspace details** |
-| Workspace name | **sampledatawhxx**, where xx are your initials |
-| Region | Select a region near to you. |
-| Select Data Lake Storage Gen2 | From subscription |
-| Account name | Select **Create new**, and enter **demodw**. |
-| File system name | Select **Create new**, and enter **demodw**. |
-
+    | Field       | Value |
+    | ----------- | ----------- |
+    | **Basics** tab > **Project details** section |
+    | Subscription     | Name of the subscription you are using in this exercise. |
+    | Resource group        | Select **Create new**, and enter **mslearn-demodw**, and select **OK**. |
+    | **Workspace details** |
+    | Workspace name | **sampledatawhxx**, where xx are your initials |
+    | Region | Select a region near to you. |
+    | Select Data Lake Storage Gen2 | From subscription |
+    | Account name | Select **Create new**, and enter **demodw**. |
+    | File system name | Select **Create new**, and enter **demodw**. |
+    
 1. Select **Next: Security**. Enter the following settings:
 
-| Field       | Value |
-| ----------- | ----------- |
-| **Security** tab > **SQL administrator credentials** section |
-| Admin username     | dwdbadmin |
-| Password        | Pa55w.rd |
-| Confirm password | Pa55w.rd |
+    | Field       | Value |
+    | ----------- | ----------- |
+    | **Security** tab > **SQL administrator credentials** section |
+    | Admin username     | dwdbadmin |
+    | Password        | Pa55w.rd |
+    | Confirm password | Pa55w.rd |
 
 1. Select **Review + create**. The **Create Synapse workspace** pane reappears with a *Validation succeeded* notification.
 

@@ -66,7 +66,7 @@ Now you'll set up the git client in Console for the left-hand menu and use it to
     ```bash
     mkdir demoapp
     ```
-    
+
      ```bash
     cd demoapp
     ```

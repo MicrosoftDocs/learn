@@ -4,8 +4,6 @@ A key feature of Azure Synapse Analytics is that you pay for only the processing
 
 Azure Synapse Analytics supports many loading methods. These methods include non-PolyBase options such as Bulk Copy Utility (BCP) and the SQL Bulk Copy API. The fastest and most scalable way to load data is through PolyBase. PolyBase is a technology that accesses external data stored in Azure Blob storage, Hadoop, or Azure Data Lake Store via the Transact-SQL language.
 
-
-
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Introduction-to-Polybase/player?format=ny]
 
 The following architecture diagram shows how loading is achieved with each Hadoop Distributed File System (HDFS) bridge of the data movement service (DMS) on every compute node that connects to an external resource such as Azure Blob storage. PolyBase then bidirectionally transfers data between Azure Synapse Analytics and the external resource to provide the fast load performance.
@@ -17,9 +15,13 @@ The following architecture diagram shows how loading is achieved with each Hadoo
 Follow these steps to implement a PolyBase extract, load, and transform process for Azure Synapse Analytics:
 
 1. Extract the source data into text files.
-2. Load the data into Azure Blob storage, Hadoop, or Azure Data Lake Store.
-3. Import the data into Azure Synapse Analytics staging tables by using PolyBase.
-4. Transform the data (optional).
-5. Insert the data into production tables.
+
+1. Load the data into Azure Blob storage, Hadoop, or Azure Data Lake Store.
+
+1. Import the data into Azure Synapse Analytics staging tables by using PolyBase.
+
+1. Transform the data (optional).
+
+1. Insert the data into production tables.
 
 Let's look more closely at the import process defined by steps 1-3.
