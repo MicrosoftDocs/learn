@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-data-protection-and-privacy.7-security-privacy-compliance-options-in-azure
+title: What are the security, privacy, and compliance options in Microsoft Azure?
+metadata:
+  title: What are the security, privacy, and compliance options in Microsoft Azure?
+  description: What are the security, privacy, and compliance options in Microsoft Azure?
+  ms.date: 11/10/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-security-privacy-compliance-options-in-azure.md)]
