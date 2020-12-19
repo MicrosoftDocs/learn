@@ -18,7 +18,7 @@ For a total of 12 vCores and 1.5 TiB of storage.
 
 1. Select **Create** in the **Hyperscale (Citus) server group** box.
 
-    ![Select Hyperscale deployment](../media/3a-hyper.png)
+    :::image type="content" source="../media/3a-hyper.png" alt-text="Select Hyperscale deployment.":::
 
     > The portal will display a PostgreSQL server configuration screen.
 
