@@ -17,6 +17,8 @@
 
 ## Explore cost considerations
 
+### Introducing the Azure Cost Estimator
+
 ### Determine Azure SQL Database costs
 
 ### Determine App Service costs
