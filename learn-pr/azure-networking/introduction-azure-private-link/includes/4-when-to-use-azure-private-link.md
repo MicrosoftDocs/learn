@@ -11,13 +11,13 @@ Do any of these scenarios apply to your company? If so, read the corresponding s
 
 ## Bringing Azure PaaS services into your virtual network
 
-Depending on the resource and how it's configured, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network. With a Private Link resource now effectively part of your virtual network, clients can use a relatively simple FQDN to make the connection.
+Depending on the resource and how it's configured, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network. With a Private Link resource now effectively part of your virtual network, clients can use a relatively straightforward FQDN to make the connection.
 
 ## Securing traffic between your company network and the Azure cloud
 
 Here's one of the paradoxes of cloud computing: For a cloud-based virtual machine to access a service in the same cloud provider, the connection and traffic must go outside of the cloud. That is, although the endpoints are located in the cloud, the traffic must travel along the internet.
 
-Unfortunately, once that traffic leaves the cloud, it becomes "public" and therefore at risk. There's a long list of potential exploits that nefarious actors might use to steal, monitor, or corrupt that traffic.
+Unfortunately, once that traffic leaves the cloud, it becomes "public" and at risk. There's a long list of potential exploits that nefarious actors can use to steal, monitor, or corrupt that traffic.
 
 Private Link eliminates that risk by no longer requiring traffic to traverse the internet. Instead, all traffic between your virtual network and a Private Link resource rides along Microsoft's secure and private Azure backbone.
 
@@ -31,7 +31,7 @@ Private Link doesn't do anything to prevent such attacks. However, once you've c
 
 ## Accessing Azure PaaS resources across networks
 
-Network setups rarely consist of just a single virtual network. Most networks also include either or both of the following:
+Network setups rarely consist of a single virtual network. Most networks also include either or both of the following items:
 
 * One or more peered networks connected via Azure Virtual Net Peering.
 
@@ -49,13 +49,13 @@ This scenario is an example of *data exfiltration*. Private Link lowers the risk
 
 ## Offering customers private access to company-created Azure services
 
-Suppose your company creates custom Azure services. Who consumes those services? It could be any of the following:
+Suppose your company creates custom Azure services. Who consumes those services? It could be anyone in the following list:
 
 * People who buy your products.
 * Company suppliers or vendors.
 * Your company's employees.
 
-These are all customers of your service.
+You can say that each consumer is the above list is a *customer* of your service.
 
 There's an excellent chance that the data accessed and created by those customers is every bit as important as your company's data. So your customer's data deserves the same level of privacy and security and your company data.
 
