@@ -21,6 +21,6 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Intermediate knowledge of data protection
+- Basic knowledge of data protection
 - Basic experience with security technologies
 - Basic experience with Azure services
