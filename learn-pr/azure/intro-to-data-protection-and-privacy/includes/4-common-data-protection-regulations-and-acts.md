@@ -4,7 +4,7 @@ Although there are many laws and regulations for data protection worldwide, some
 
 The GDPR introduces rules for organizations that offer goods and services to people in the EU, or that collect and analyze data for EU residents, irrespective of where those organizations are located. The GDPR gives people the right to manage their personal data that an organization collects.
 
-The GDPR is an EU regulation that updates and expands the earlier Data Protection Directive that was first enacted in 1995. The GDPR is concerned with the privacy of an individual's data. the individual could be a client, customer, employee, or business partner. The GDPR's goal is to strengthen personal data protection for EU citizens, whether they reside in the EU or elsewhere. The regulation sets out expectations and advises on how to achieve them. When the GDPR became enforceable in late May 2018, organizations started having measures in place to satisfy the requirements of the GDPR.
+The GDPR is an EU regulation that updates and expands the earlier Data Protection Directive that was first enacted in 1995. The GDPR is concerned with the privacy of an individual's data. The individual could be a client, customer, employee, or business partner of an organization. The GDPR's goal is to strengthen personal data protection for EU citizens, whether they reside in the EU or elsewhere. The regulation sets out expectations and advises on how to achieve them. When the GDPR became enforceable in late May 2018, organizations started having measures in place to satisfy the requirements of the GDPR.
 
 > [!NOTE]
 
