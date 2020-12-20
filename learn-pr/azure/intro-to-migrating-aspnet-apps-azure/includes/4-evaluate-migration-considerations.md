@@ -34,15 +34,15 @@ Azure can help you mimic your on-premises networking environment by using servic
 
 ### Explore Azure networking options
 
-Azure can help secure various aspects of your app and data by using virtual networks (VNETs), which act in a similar fashion to firewalls. Setting up VNETs is a simple process and provides control over the network security of your application. You can configure subnets using CIDR notation, create perimeter networks to isolate traffic domains, and control access using network ports.
-<!-- GLOBAL: Replace "VNET" with "VNet" and "VNETs" with "VNets". -->
+Azure can help secure various aspects of your app and data by using virtual networks (VNets), which act in a similar fashion to firewalls. Setting up VNets is a simple process and provides control over the network security of your application. You can configure subnets using CIDR notation, create perimeter networks to isolate traffic domains, and control access using network ports.
+
 An Azure Virtual Network allows your applications to securely communicate with each other, to the Internet, and to your on-premises networks. By default, apps are permitted outbound communication with the Internet but inbound connections are denied until you explicitly open the necessary application ports.
 
 Communication between your Azure resources is accomplished through:
 
-- a VNET - deploying your VMs and other resources to a VNET provides direct communication between these resources.
+- a VNet - deploying your VMs and other resources to a VNet provides direct communication between these resources.
 - a service endpoint - service endpoints allow you to secure your critical Azure service resources to only a virtual network
-- VNET peering - You can connect virtual networks to each other, enabling resources in either virtual network to communicate with each other, using virtual network peering
+- VNet peering - You can connect virtual networks to each other, enabling resources in either virtual network to communicate with each other, using virtual network peering
 
 Communication with your on-premises network is accomplished through:
 

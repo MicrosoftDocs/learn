@@ -59,6 +59,6 @@ quiz:
     - content: Resource Group
       isCorrect: false
       explanation: Resource Groups are a mechanism in Azure that allow you to groups related resources for the purpose of management.
-    - content: Azure VNETs
+    - content: Azure VNets
       isCorrect: true
-      explanation: Azure can help secure various aspects of your app and data by using virtual networks (VNETs), which act in a similar fashion to firewalls.
+      explanation: Azure can help secure various aspects of your app and data by using virtual networks (VNets), which act in a similar fashion to firewalls.
