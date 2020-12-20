@@ -23,14 +23,14 @@ There are, broadly, two kinds of applications that work well on Hyperscale (Citu
 
 Multi-tenant is the most common architecture used in SaaS applications, where multiple customers (tenants) share application resources.
 
-Essentially, multi-tenant means that multiple customers share application resources with other **users, accounts, companies, or organizations**, which can provide massive cost savings. Multi-Tenant applications are inherently relational, with a natural dimension on which to distribute data across nodes: shard by tenant_id.
+Essentially, multi-tenant means that multiple customers share application resources with other **users, accounts, companies, or organizations**, which can provide massive cost savings. Multi-Tenant applications are inherently relational, with a natural dimension on which to distribute data across nodes: _**shard by tenant_id**_.
 
 **Examples**: Websites which host store-fronts for other businesses, or sales automation tools.  
 **Characteristics**:
 
-* Queries relating to a single tenant rather than joining information across tenants.
-* Having dozens or hundreds of tables in your database schema.
-* Mixed workloads: OLAP workloads for serving per-tenant analytical queries, and large OLTP workloads.
+* Queries relating to a single tenant rather than joining information across tenants
+* Having dozens or hundreds of tables in your database schema
+* Mixed workloads: OLAP workloads for serving per-tenant analytical queries, and large OLTP workloads
 
 With Hyperscale, you can continue scaling far beyond a single node, giving you efficiency of scale, with many more tenants able to use a single application.
  :::column-end:::
@@ -51,16 +51,20 @@ To distribute the data, a typical column to shard by could be *user_id*, *custom
 ### Real-time applications
 
 Real-time applications are aptly named - they’re applications that analyze real-time events as they happen.
+:::row:::
+:::column span="3":::
 
 **Examples**: Customer-facing dashboards requiring sub-second response times and logistics companies who need to monitor if shipments are on-time.  
 **Characteristics**:
 
-* Few tables with a high volume of data - Often device, user, or IoT data.
-* Relatively simple (but computationally intensive) analytics queries.
+* Few tables with a high volume of data - Often device, user, or IoT data
+* Relatively simple (but computationally intensive) analytics queries
 
 For fast results, these applications need massive amounts of compute - for numerical, statistical, or counting queries. Hundreds of cores need to be run in parallel. Hyperscale makes it possible to perform real-time queries across billions of records in under a second using horizontal scalability.
+:::column-end:::
+:::row-end:::
 
-Our contactless payment app will also need customer facing dashboards. Merchants will need to analyze new events & new data as it happens, in real time. These **OLAP workloads** will be much more intensive than customer account statements.
+Our contactless payment app will also need customer facing dashboards. Merchants will need to analyze new events and new data as it happens, in real time. These **OLAP workloads** will be much more intensive than customer account statements.
 
 ## At a Glance
 
