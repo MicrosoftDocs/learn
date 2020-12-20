@@ -83,13 +83,13 @@ Different types of applications have different best practices for choosing which
 
 ### Sharding by ID
 
-__Multi-tenant apps are usually distributed via a *tenant ID*__. Common instances include company, account, organization, or customer. The column name will be something like *company_id* or *customer_id*.
+__Multi-tenant apps are usually distributed via a *tenant id*__. Common instances include company, account, organization, or customer. The column name will be something like *company_id* or *customer_id*.
 
-As our example payment app is a multi-tenant app, with bank customers making up the tenants, it’s a perfect use case for distributing data. In the exercises we’ll shard by the banking customer ID, which is named *user_id*.
+As our example payment app is a multi-tenant app, with bank customers making up the tenants, it’s a perfect use case for distributing data. In the exercises we’ll shard by the banking customer id, which is named *user_id*.
 
 **Sharding by user_id or tenant_id will be highly successful** because we have a large number of distinct tenants, increasing the potential number of shards that can hold data.
 
-**Real-time applications** are usually distributed by an *entity ID*. Common instances include users, hosts, or devices. The column name will be something like *user_id*, *vehicle_id*, *host_id*, or *device_id*.
+**Real-time applications** are usually distributed by an *entity id*. Common instances include users, hosts, or devices. The column name will be something like *user_id*, *vehicle_id*, *host_id*, or *device_id*.
 
 For example, with our payment app, we'll have large numbers of merchants with payment machines. Merchants will need a real-time dashboard so they can see the service status - If the network is offline, or there are intermittent faults, or maintenance. We can shard by a *merchant_id*, or even by *device_id* - for each payment device.
 
