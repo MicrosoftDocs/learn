@@ -1,4 +1,5 @@
 Tailwind Traders have hosted web applications on their own internal infrastructure by using computers running Windows Server, Internet Information Services (IIS), and Microsoft SQL Server. Beyond the initial effort and costs, these applications incur ongoing maintenance costs in terms of hardware, operating system updates, and licensing costs. These maintenance costs make Azure App Service an attractive alternative.
+<!-- Replace "computers" with "servers". -->
 
 Migrating ASP.NET applications and any associated SQL Server database, to Microsoft Azure and Azure SQL Database, may be an option you are considering. Before jumping into the actual process of migrating apps and data, careful consideration and assessment of your existing environment, apps, and requirements, will go a long way to helping ensure a successful migration.
 
