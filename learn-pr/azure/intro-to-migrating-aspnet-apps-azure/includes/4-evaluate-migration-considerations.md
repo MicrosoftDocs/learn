@@ -35,7 +35,7 @@ Azure can help you mimic your on-premises networking environment by using servic
 ### Explore Azure networking options
 
 Azure can help secure various aspects of your app and data by using virtual networks (VNETs), which act in a similar fashion to firewalls. Setting up VNETs is a simple process and provides control over the network security of your application. You can configure subnets using CIDR notation, create perimeter networks to isolate traffic domains, and control access using network ports.
-
+<!-- GLOBAL: Replace "VNET" with "VNet" and "VNETs" with "VNets". -->
 An Azure Virtual Network allows your applications to securely communicate with each other, to the Internet, and to your on-premises networks. By default, apps are permitted outbound communication with the Internet but inbound connections are denied until you explicitly open the necessary application ports.
 
 Communication between your Azure resources is accomplished through:
