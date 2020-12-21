@@ -30,19 +30,15 @@ The first step in using PolyBase is to create a database-scoped credential that 
 
 1. Paste the following code into the query window. Replace the `SECRET` value with the access key you retrieved in the previous exercise.
 
-    ```sql
-    CREATE MASTER KEY;
-    
-    CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
-    WITH
-<<<<<<< HEAD
-        IDENTITY = 'demodwStorage',
-=======
-        IDENTITY = 'DemoDwStorage',
->>>>>>> 8d6aa812d70effdb26852eaa74f21655017925eb
-        SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
-    ;
-    ```
+```sql
+CREATE MASTER KEY;
+
+CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
+WITH
+    IDENTITY = 'demodwStorage',
+    SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
+;
+```
 
 1. Select **Run** to run the query. It should report `Query succeeded: Affected rows: 0.`
 
@@ -122,11 +118,7 @@ Create a physical table in the Azure Synapse Analytics database. In the followin
 1. Paste the following code into the query window.
 
     ```sql
-<<<<<<< HEAD
-    -- Load the data from Azure Blob storage to SQL Data Warehouse
-=======
     -- Load the data from Azure Blob storage to Azure Synapse Analytics
->>>>>>> 8d6aa812d70effdb26852eaa74f21655017925eb
     CREATE TABLE [dbo].[StageDate]
     WITH (   
         CLUSTERED COLUMNSTORE INDEX,
