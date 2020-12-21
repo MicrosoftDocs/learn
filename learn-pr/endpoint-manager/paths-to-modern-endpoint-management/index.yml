@@ -18,7 +18,7 @@ abstract: |
   - Start planning the migration process to modern endpoint management. 
 prerequisites: | 
   - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](https://docs.microsoft.com/learn/paths/endpoint-manager-fundamentals/).
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
 - beginner
