@@ -1,4 +1,4 @@
-In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure .
+In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure.
 
 ## Investigate the benefits of migration
 
@@ -98,11 +98,11 @@ Cost is an important factor in helping you determine if migration is the right c
 
 ### Azure Pricing Calculator
 
-You can use the  Azure Pricing Calculator to determine the cost of the resources you plan to use on Azure. In this tool, you can select from the various categories that are available, which cover the Azure resources. You can then choose specific configurations that will display the estimated monthly costs for that service.
+You can use the Azure Pricing Calculator to determine the cost of the resources you plan to use on Azure. In this tool, you can select from the various categories that are available, which cover the Azure resources. You can then choose specific configurations that will display the estimated monthly costs for that service.
 
-For example, if you want to evaluate the cost of using Azure VMs, you’ll select the **Virtual Machine** category, and then  review the configuration options.  As you make changes to the options, such as region, OS, pricing tier, and size, the charts will update to reflect the chosen options.
+For example, if you want to evaluate the cost of using Azure VMs, you’ll select the **Virtual Machine** category, and then review the configuration options.  As you make changes to the options, such as region, OS, pricing tier, and size, the charts will update to reflect the chosen options.
 
-:::image type="content" source="../media/vm-cost-calculator.png" alt-text="Pricing calculator depicting cost of VM with configured parameters .":::
+:::image type="content" source="../media/vm-cost-calculator.png" alt-text="Pricing calculator depicting cost of VM with configured parameters.":::
 
 ### Determine Azure SQL Database costs
 
