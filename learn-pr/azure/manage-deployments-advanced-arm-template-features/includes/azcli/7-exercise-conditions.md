@@ -89,21 +89,21 @@ To verify this fact, you run the `az storage account check-name` command to chec
 
 Run the following `az storage account check-name` command:
 
-    ```azurecli
-    az storage account check-name --name $STORAGE_ACCT_NAME
-    ```
+```azurecli
+az storage account check-name --name $STORAGE_ACCT_NAME
+```
 
-    You see this:
+You see this:
 
-    ```output
-    {
-      "message": null,
-      "nameAvailable": true,
-      "reason": null
-    }
-    ```
+```output
+{
+  "message": null,
+  "nameAvailable": true,
+  "reason": null
+}
+```
 
-  The value for `nameAvailable` is `true`, which means that the storage account name is still available and hasn't yet been provisioned. You expect this because you haven't yet deployed to the Production environment.
+The value for `nameAvailable` is `true`, which means that the storage account name is still available and hasn't yet been provisioned. You expect this because you haven't yet deployed to the Production environment.
 
 ## Provision the Production environment
 
