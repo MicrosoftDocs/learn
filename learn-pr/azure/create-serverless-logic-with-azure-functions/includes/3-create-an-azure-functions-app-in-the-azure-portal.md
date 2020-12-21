@@ -49,6 +49,7 @@ Let's create a function app in the Azure portal.
 ::: zone-end
 
 ## Verify your Azure function app
+Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated the sandbox with
 
 1. From the Azure portal left-hand menu, select **Resource groups**. You should then see a resource group named **<rgn>[sandbox resource group name]</rgn>** in the list of available groups.
 
