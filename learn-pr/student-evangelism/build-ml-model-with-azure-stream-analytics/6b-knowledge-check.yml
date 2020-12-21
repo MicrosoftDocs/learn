@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6a-knowledge-check
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6b-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge
-  ms.date: 12/23/2020
+  ms.date: 12/21/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
