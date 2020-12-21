@@ -11,7 +11,7 @@ Choosing the correct storage solution can lead to better performance, cost savin
 
 **Latency & throughput:** High throughput and low latency.
 
-**Transactional support:** Because all of the data is historical and unchanging, transactional support is NOT REQUIRED. 
+**Transactional support:** Because all of the data is historical and unchanging, transactional support is required.
 
 ### Recommended service: Azure Cosmos DB
 
@@ -63,7 +63,7 @@ You could upload your images to Azure App Service, so that the same server that 
 
 **Latency & throughput:** Some latency in the results is expected based on the complex nature of the queries.
 
-**Transactional support:** Required
+**Transactional support:** Not required
 
 ### Recommended service: Azure SQL Database
 
