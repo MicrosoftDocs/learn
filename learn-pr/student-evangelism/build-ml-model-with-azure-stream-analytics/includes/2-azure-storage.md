@@ -58,7 +58,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
    az storage account keys list --account-name $ACCOUNT_NAME
    ```
 
-1. The primary access key is the `value` property that contains a long series of letters and number. Equate the *primary access key* value to the `key1` value. Then, copy the primary access key from the output and paste it in a text file so that you can retrieve the key later. 
+1. The primary access key is the `key1` property value that contains a long series of letters and numbers. Copy the primary access key from the output and paste it in a text file so that you can retrieve the key later. 
   
    Remember that you can select Ctrl+Insert to copy text from Cloud Shell to the clipboard.
 
