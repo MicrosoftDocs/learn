@@ -4,7 +4,7 @@ You are now ready to start implementing the temperature service. In the previous
 
 Functions are hosted in an execution context called a **function app**. You define function apps to logically group and structure your functions and a compute resource in Azure. In our elevator example, you would create a function app to host the escalator drive gear temperature service. There are a few decisions that need to be made to create the function app; you need to choose a service plan and select a compatible storage account.
 
-### Choosing a service plan
+### Choose a service plan
 
 Function apps may use one of two types of service plans. The first service plan is the **Consumption service plan**. This is the plan that you choose when using the Azure serverless application platform. The Consumption service plan provides automatic scaling and bills you when your functions are running. The Consumption plan comes with a configurable timeout period for the execution of a function. By default, it is 5 minutes, but may be configured to have a timeout as long as 10 minutes.
 
@@ -58,4 +58,4 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal showing all resources within the <rgn>[sandbox resource group name]</rgn> group, including entries for an App Service plan, a Storage account, Application Insights resource, and an App Service.](../media/3-resource-list.png)
 
-The item with the lightning bolt Function icon, listed as an App Service, is your new function app. You can click on it to open the details about the new function - it has a public URL assigned to it, if you open that in a browser, you should get a default web page that indicates your Function App is running.
+The item with the lightning bolt icon is your new Function App. Select it to open the details about the new function. It has a public URL assigned to it. If you open that in a browser, you should get a default web page that indicates your Function App is running.
