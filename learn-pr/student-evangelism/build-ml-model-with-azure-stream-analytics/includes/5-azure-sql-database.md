@@ -6,7 +6,7 @@ Now, you'll use Azure SQL Database to create a SQL database and modify the funct
 
 Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Database. The database collects output from the function app you deployed. Later, you'll connect the SQL database to Power BI to show where cameras are capturing photos of polar bears.
 
-1. In a browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). In the global controls, select the Cloud Shell icon.
+1. In a browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). In the global controls, select Azure Cloud Shell.
 
     ![Screenshot of the global controls in the Azure portal with the Azure Cloud Shell icon highlighted.](../media/cloud-shell.png)
 

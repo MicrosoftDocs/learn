@@ -18,7 +18,7 @@ In the units that follow, you'll deploy several Azure services and integrate the
 
 ## Prerequisites
 
-- An Azure subscription
+- An [Azure subscription](https://azure.microsoft.com/account/?azure-portal=true)
 - Basic knowledge of Azure services, the Azure portal, and the Azure CLI
-- Familiarity with Node.js
-- Power BI Desktop
+- Familiarity with [Node.js](https://nodejs.org/?azure-portal=true)
+- [Power BI Desktop](https://powerbi.microsoft.com/desktop/?azure-portal=true)

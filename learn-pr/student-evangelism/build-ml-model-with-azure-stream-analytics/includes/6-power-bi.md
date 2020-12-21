@@ -1,4 +1,4 @@
-To complete the end-to-end solution for spotting polar bears in the wild, you'll connect Power BI to the SQL database you created in the last unit and build a report that shows in near real time where your cameras are capturing polar bears. You'll use Power BI Desktop to create the report. 
+To complete the end-to-end solution for spotting polar bears in the wild, first, you'll connect Power BI to the SQL database you created in the last unit. Then, you'll build a report that shows in near real time where your cameras are spotting polar bears. You'll use Power BI Desktop to create a customizable report. 
 
 Power BI Desktop runs only on Windows. If you aren't running Windows, an alternative is to create a Windows virtual machine in Azure and run Power BI Desktop in the virtual machine.
 
@@ -47,9 +47,9 @@ After a short delay, Power BI connects to the database and retrieves a dataset b
 
 Visualizations (*visuals*) are the primary element in a Power BI report. In this exercise, you'll use the Power BI report designer to create visuals from the database you connected to, adjust filters and aggregates to refine the way the data is reported, and then format the visuals to produce compelling output.
 
-1. In **Visualizations**, select the **Map** icon to add a map visual to the report.
+1. In **Visualizations**, select **Map** to add a map visual to the report.
 
-    ![Screenshot that shows the map icon selected in the Visualizations pane.](../media/add-map-visual.png)
+    ![Screenshot that shows the Map icon selected in the Visualizations pane.](../media/add-map-visual.png)
 
     _Add a map visual_
 
@@ -73,7 +73,7 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
     _Add a table visual_
 
 1. Select an empty area to deselect the table visual.
-1. In **Visualizations**, select the **Pie Chart** icon to convert the table into a pie chart. Then, in **Fields**, select **IsPolarBear** and **Latitude** to add another table visual. 
+1. In **Visualizations**, select **Pie Chart** to convert the table into a pie chart. Then, in **Fields**, select **IsPolarBear** and **Latitude** to add another table visual. 
 
     ![Screenshot that shows how to add a pie chart visual.](../media/add-pie-chart-visual.png)
 
@@ -85,9 +85,9 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
 
     _Refine the pie chart visual_
 
-1. Clear the pie chart visual and select the **Slicer** icon to add a slicer to the report. Slicers are a convenient way to filter information in a Power BI report by narrowing the data that's shown in other visuals.
+1. Clear the pie chart visual and select **Slicer** to add a slicer to the report. Slicers are a convenient way to filter information in a Power BI report by narrowing the data that's shown in other visuals.
 
-   ![Screenshot that shows the map icon selected in the Fields pane.](../media/add-slicer.png)
+   ![Screenshot that shows the Slider icon selected in the Fields pane.](../media/add-slicer.png)
 
     _Add a slicer_
 
@@ -99,7 +99,7 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
 
     _Adjust the layout_
 
-1. With the report structure in place, the next task is to use some of the rich formatting options in Power BI to enhance the visuals. Start by selecting the map visual in the report designer. Then, in **Visualizations**, select the **Format** icon.
+1. With the report structure in place, the next task is to use some of the rich formatting options in Power BI to enhance the visuals. Start by selecting the map visual in the report designer. Then, in **Visualizations**, select **Format**.
 
     ![Screenshot that shows the Format icon selected in the Visualizations pane.](../media/format-map.png)
 
@@ -121,18 +121,18 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
 
 1. Select the pie chart visual and use the formatting controls in **Visualizations** to make the following changes:
 
-    * **Data colors**: Set **True** to **00FF00** and set **False** to **FF0000**.
-    - **Detail  labels**: Set the label style to **Data value, percent of total**.
-    - **Title**: Change the title text to **Sightings Proportion**.
+    * **Data colors**: Set **True** to **00FF00**, and set **False** to **FF0000**.
+    * **Detail  labels**: Set the label style to **Data value, percent of total**.
+    * **Title**: Change the title text to **Sightings Proportion**.
 
 1. Select the table visual and use the formatting controls in **Visualizations** to make the following changes:
 
-    - **Style**: Change the table style to **Alternating rows**.
-    - **Title**: Select the check box to add a title. Change the title text to **Camera Activity**. 
+    * **Style**: Change the table style to **Alternating rows**.
+    * **Title**: Select the check box to add a title. Change the title text to **Camera Activity**. 
 
 1. Select the slicer visual and use the formatting controls in **Visualizations** to make the following changes.
 
-    - Under **Selection controls**, clear the **Multi-select with CTRL** check box. With this setting, you don't have to use the Ctrl key to select more than one check box.
+    * Under **Selection controls**, clear the **Multi-select with CTRL** check box. With this setting, you don't have to use the Ctrl key to select more than one check box.
 
 1. In the bottom-left corner of the designer, double-click **Page 1**,  and change the report title to **Polar Bear Activity**.
 

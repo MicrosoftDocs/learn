@@ -11,13 +11,13 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
 
 1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). If you're prompted to sign in, sign in with your Microsoft account.
 
-1. In the portal global controls, select the Azure Cloud Shell icon.
+1. In the portal global controls, select **Azure Cloud Shell**.
 
-   ![Screenshot that shows the Azure Cloud Shell icon highlighted on the Azure portal global controls.](../media/cloud-shell.png)
+   ![Screenshot that shows the Azure Cloud Shell icon highlighted in the Azure portal global controls.](../media/cloud-shell.png)
 
     _Open Azure Cloud Shell_
 
-   If you're prompted to choose a programming language, select **Bash**. If you're prompted to allow Cloud Shell to create a storage account, allow it.
+   If you're prompted to choose a programming language, select **Bash**. If you’re prompted to allow Cloud Shell to create a storage account (no storage is mounted), choose the option to create new storage. Cloud Shell will mount new storage for you and then open the Command Prompt window. You’ll see a welcome message and then the command prompt.
 
    You also can open Cloud Shell by going to [https://shell.azure.com](https://shell.azure.com?azure-portal=true) in a separate browser window.
 
@@ -58,7 +58,9 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
    az storage account keys list --account-name $ACCOUNT_NAME
    ```
 
-1. The primary access key is the `value` property that contains a long series of letters and number. Copy the primary access key from the output and paste it in a text file so that you can retrieve the key later. Remember that you can select Ctrl+Insert to copy text from Cloud Shell to the clipboard.
+1. The primary access key is the `value` property that contains a long series of letters and number. Equate the *primary access key* value to the `key1` value. Then, copy the primary access key from the output and paste it in a text file so that you can retrieve the key later. 
+  
+   Remember that you can select Ctrl+Insert to copy text from Cloud Shell to the clipboard.
 
 Now, you have a storage account for storing photos and a container to store them in. Next, let's deploy some cameras to capture photos of wildlife and upload them to Blob Storage.
 
@@ -68,7 +70,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. If Node.js isn't installed on your computer, go to [https://nodejs.org/](https://nodejs.org/?azure-portal=true) and install it now. To check whether Node.js is installed and the version that's installed, in a Command Prompt or terminal window, run this command:
 
-   ```bash
+   ```console
    node -v
    ```
 
@@ -78,7 +80,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Run the following command to initialize the project directory to host a Node.js project and install a package:
 
-    ```bash
+    ```console
     npm init -y
     npm install azure-storage --save
     ```
@@ -233,14 +235,14 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. If you're running Windows, run the following commands to create a pair of environment variables. In the command, replace `STORAGE_ACCOUNT_NAME` with the name of the storage account you created earlier, and replace `STORAGE_ACCOUNT_KEY` with the storage account's access key:
 
-   ```terminal
+   ```console
    set ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
    set ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
    ```
 
    If you're running Linux or macOS, use these commands instead:
 
-   ```bash
+   ```terminal
    export ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
    export ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
    ```
@@ -292,4 +294,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     _Viewing blob metadata_
 
-Open some of the blobs and view the images inside them. Which images contain polar bears?
+1. Open a blob to view the actual image:
+   - Select the ellipsis (**…**), and then select **View** > **Edit**. Repeat this action to view the images for several blobs.
+   
+   Which images contain polar bears, and which do not?

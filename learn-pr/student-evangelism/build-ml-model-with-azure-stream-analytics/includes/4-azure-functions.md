@@ -45,7 +45,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
    ![Screenshot that highlights the elements to select for a new function.](../media/create-new-function-choose-template.png)
 
    _Configure the settings and choose a template for a function_
-    
+
    > [!Note]
    > If you're prompted to install the `Microsoft.Azure.WebJobs.Extensions.Storage` extension, select **Install**.
    > 
@@ -202,7 +202,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
    > Instead of hard-coding the Custom Vision URL and authentication key in the function app code, you're storing the values in the function app's application settings. The values are more secure when they're saved in the application settings.
 
 1. To return to your `BlobTrigger` function app, in the resource menu, under **Functions**, select **Functions**, and then select **BlobTrigger**:
-    
+
    ![Screenshot that shows selections to make in the Azure portal to view the blob trigger function app.](../media/open-function-output-log-1.png)
 
    _Open the BlobTrigger function app_
@@ -231,11 +231,11 @@ You can write a function app in Azure Functions in the Azure portal or externall
    ![Screenshot that shows how to upload a photo to a container.](../media/upload-photo-to-container.png)
 
    _Upload a photo to the container_
-        
+
    Here's what **image_12.jpg** looks like:
-        
+
    ![Image 12 dot j p g, which shows a polar bear.](../media/image-12.jpg)
-        
+
    _Image 12 in Blob Storage_
 
 1. In your browser, return to the function app log. Confirm that the function app executed, and that Custom Vision indicates that *image_12.jpg* contains a polar bear.
