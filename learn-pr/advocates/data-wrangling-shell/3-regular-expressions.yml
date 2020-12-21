@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid:
+uid: learn.advocates.wrangle-data-shell.3-regular-expressions
 metadata:
   title: Introduction to regular expressions
-  description: In this unit, you'll be introduced to regular expressions. You'll learn about basic regular expressions covering literal character matching, wildcards, ranges, and anchors.
+  description: In this unit, you'll be introduced to regular expressions. You'll learn about basic regular expressions, including literal character matching, wildcards, ranges, and anchors.
   ms.date: 12/09/2020
   author: trallard
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you

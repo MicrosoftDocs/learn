@@ -6,13 +6,13 @@ The `cat` command is one of the most basic yet useful commands for working with 
 
 ## Reading files
 
-The most common use of `cat` is reading the content of files. Its default output destination (a.k.a standard output or `stdout`) is the monitor screen. For example, to display the content of a file named `file1`:
+The most common use of `cat` is reading the content of files. Its default output destination (a.k.a standard output or `stdout`) is the monitor screen. For example, to display the content of a file named `file1`.
 
 ```bash
 cat file1
 ```
 
-1. Run the command `cat` to display the contents of `NASA-software-API.txt`
+1. Run the `cat` command to display the contents of `NASA-software-API.txt`.
 
 ```bash
 cat NASA-software-API.txt
@@ -20,21 +20,21 @@ cat NASA-software-API.txt
 
 ## File creation
 
-`cat` can  be used to create files and it's often easier than vi or text editors for small files.
+The `cat` command can  be used to create files and it's often easier than vi or text editors for small files.
 
-You can create new files by redirecting the standard output of the `cat` command using the *output redirect operator* `>` followed by the name of the file to be created. Then pressing <kbd>ENTER</kbd> and finally simultaneously pressing <kbd> CTRL + d</kbd>.
+You can create new files by redirecting the standard output of the `cat` command using the *output redirect operator* `>` followed by the name of the file to be created, then pressing <kbd>ENTER</kbd>, and finally simultaneously pressing <kbd> CTRL + d</kbd>.
 
-1. Run the command `cat` followed with the `>` operator and the file name (file1):
-   
+1. Run the command `cat` followed with the `>` operator and the file name (file1).
+
    ```bash
    cat > file1
    ```
-   
-2. Press <kbd> ENTER</kbd> to place the cursor at a new line
-3. Type some text, in this case: `NASA headquarters` followed by <kbd> ENTER</kbd>.
-4. End the program and restore the command prompt by pressing <kbd> CTRL + d </kbd>
 
-If there's an existing `file1`, it will be overwritten. To append a line to the existing file  without overwriting, you can use the `>>` operator. For example to add `Goddard Space Flight Center` to `file1` you'd run:
+2. Press <kbd> ENTER</kbd> to place the cursor at a new line.
+3. Type some text, in this case: `NASA headquarters` followed by <kbd> ENTER</kbd>.
+4. End the program and restore the command prompt by pressing <kbd> CTRL + d </kbd>.
+
+If there's an existing `file1`, it will be overwritten. To append a line to the existing file  without overwriting, you can use the `>>` operator. For example, to add `Goddard Space Flight Center` to `file1` you'd run:
 
 ```bash
 cat >> file1

@@ -4,7 +4,7 @@ The stream editor (`sed`) is a useful text parsing and manipulation tool. It can
 
 ## Basic usage
 
-`sed` operates on text from the `stdin` or from a file. This behavior allows you to send the output of another command directly into `sed` for editing or you can work from a file that you've previously created or edited. 
+`sed` operates on text from the `stdin` or from a file. This behavior allows you to send the output of another command directly into `sed` for editing or you can work from a file that you've previously created or edited.
 
 Remember that `sed` outputs everything to `stdout` by default, so if you want to save the edited text, you'll need to redirect the output using the redirect operator (`>`) as we did with the `cat` command.
 
@@ -38,9 +38,9 @@ The basic syntax for text substitution is:
 sed s'/old_text/new_text/'
 ```
 
-where the `s` is the substitute command and the three forward slashes `/` are used to separate the text fields. 
+The `s` is the substitute command and the three forward slashes `/` are used to separate the text fields.
 
-Imagine you have the following URL https://www.nasa.gov/about/sites/index.html and you want to replace `index.html` with `home`. You can achieve this with the following command:
+Imagine you have a URL (https://www.nasa.gov/about/sites/index.html) and you want to replace `index.html` with `home`. You can achieve this with the following command:
 
 ```bash
 echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
@@ -54,14 +54,13 @@ https://www.nasa.gov/about/sites/homes
 
 Let's replace the `NASA` occurrences for 'National Aerospace Agency' in the `NASA-software-API.txt` file:
 
-
 ```bash
  sed 's/NASA/National Aerospace Agency/' NASA-software-API.txt
 ```
 
 You'll notice that the substitution happened on all matches for NASA but the command `sed` printed out all of the lines in the file. This is the default behavior of `sed`.
 
-Let's say we only want to print the lines in which the pattern was replaced. We can use the flag `-n` to suppress automatic printing and pass the option `p` to the replacement flag, like so;
+Let's say we only want to print the lines in which the pattern was replaced. We can use the flag `-n` to suppress automatic printing and pass the option `p` to the replacement flag, like so:
 
 ```bash
 sed -n 's/NASA/National Aerospace Agency/p' NASA-software-API.txt

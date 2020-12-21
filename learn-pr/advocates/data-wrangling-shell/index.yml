@@ -3,7 +3,7 @@ uid: learn.advocates.wrangle-data-shell
 metadata:
   title: Use the Unix shell to wrangle log data
   description: |
-    Have you ever needed transforming data from one format to another?
+    Have you ever needed to transform data from one format to another?
     As a developer, this is a common task. Whether you're trying to extract some information from some logs or incoming streams. You'll often need to deal with raw data and transform it before it's usable.
     In this module, you'll learn how to wrangle (transform) data using the UNIX shell. You'll be introduced to some commonly used tools and to the basics of regular expressions.
   ms.date: 12/09/2020
