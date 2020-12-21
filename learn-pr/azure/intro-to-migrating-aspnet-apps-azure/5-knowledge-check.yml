@@ -9,56 +9,51 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
-# Modules generally must include a form of interactive validation - either sandbox task validation (see the guidance link in the exercise unit template) or a knowledge check.
-# From an instructional design perspective, knowledge checks are intended to aid retention, not to actually test the user. Questions should not be overly difficult and should focus on the broad concepts covered in the module, not fine details.
-# Knowledge checks should be in their own units, like this one.
-# Aim to include 3-4 questions, each with 3 or 4 potential answers. Stick to real multiple-choice questions, not true/false.
-# Explanations are shown after the user answers. Write short explanations for all choices, both correct and incorrect. You don't need to begin with "Correct" or "Incorrect" - the platform makes this clear.
-# Users are given unlimited attempts to answer correctly.
-# This YAML template does not define a `content` property - most knowledge check units don't include body content. If you add it, the quiz will be rendered below the content.
-# See https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-a-knowledge-check?branch=master for full guidance.
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
+  
   - content: Which hosting option requires the customer to manage only the applications and data?
     choices:
-    - content: Platform as a Service (PaaS)
+    - content: PaaS
       isCorrect: true
-      explanation: The PaaS hosting option has everything except applications and data managed by the hosting vendor
-    - content: Infrastructure as a Service (IaaS)
+      explanation: That's correct. In the PaaS hosting option, the hosting vendor manages everything except applications and data.
+    - content: IaaS
       isCorrect: false
-      explanation: The IaaS option still requires the customer to manage the applications, data, runtime, middleware, and OS
-    - content: Software as a Service (SaaS)
+      explanation: That's incorrect. The IaaS option still requires the customer to manage the applications, data, runtime, middleware, and OS.
+    - content: SaaS
       isCorrect: false
-      explanation: The SaaS options has the vendor manage all the services and the customer only rents the software. The customer cannot manage the application or data.
+      explanation: That's incorrect. The SaaS options has the vendor manage all the services and the customer only rents the software. The customer cannot manage the application or data.
     - content: On-premises
       isCorrect: false
-      explanation: The customer is responsible for everything in an on-premises environment as it is not a hosted option in Azure.
-  - content: What is an App Service Plan?
+      explanation: That's incorrect. The customer is responsible for everything in an on-premises environment, because it is not a hosted option in Azure.
+  - content: What is an App Service plan?
     choices:
     - content: The pricing tier you select for the storage of your application.
       isCorrect: false
-      explanation: Storage accounts are used for the storage needs of an application.
-    - content: The App Service plan will define a set of compute resources for your ASP.NET application
+      explanation: That's incorrect. Storage accounts are used for the storage needs of an application.
+    - content: The App Service plan will define a set of compute resources for your ASP.NET application.
       isCorrect: true
-      explanation: THe Azure App Service uses an App Service Plan to define the necessary compute resources that your app will need.
+      explanation: That's correct. The Azure App Service uses an App Service plan to define the necessary compute resources that your app will need.
     - content: The set of migration tools that you use to move your application to the cloud.
       isCorrect: false
-      explanation: The set of migration tools that Azure provides, help you assess and move your application to cloud environment but they are part of the App Service Plan.
+      explanation: That's incorrect. The set of migration tools that Azure provides will help you assess and move your application to a cloud environment, but they're part of the App Service Plan.
     - content: The licensing agreement you select for your Azure subscription.
       isCorrect: false
-      explanation: Licensing agreements pertain to various services in your hosted environment such as the OS and Azure SQL Database licensing.  They are not part of the App Service Plan.
-  - content: Which component in Azure offers similar configuration options and benefits to a firewall?
+      explanation: That's incorrect. Licensing agreements pertain to various services in your hosted environment such as the OS and Azure SQL Database licensing.  They're not part of the App Service Plan.
+  - content: Which component in Azure offers configuration options and benefits that are similar to a firewall?
     choices:
     - content: Azure DNS
       isCorrect: false
-      explanation: Azure DNS behaves in a similar fashion to the standard DNS used to translate domain names to IP addresses.
+      explanation: That's incorrect. Azure DNS behaves in a similar fashion to the standard DNS used to translate domain names to IP addresses.
     - content: Azure Compute
       isCorrect: false
-      explanation: Azure Compute is a category that relates to compute instances on Azure such as VMs.
+      explanation: That's incorrect. Azure Compute is a category that relates to compute instances on Azure such as VMs.
     - content: Resource Group
       isCorrect: false
-      explanation: Resource Groups are a mechanism in Azure that allow you to groups related resources for the purpose of management.
+      explanation: That's incorrect. Resource Groups are a mechanism in Azure that allow you to group related resources for the purpose of management.
     - content: Azure VNets
       isCorrect: true
-      explanation: Azure can help secure various aspects of your app and data by using virtual networks (VNets), which act in a similar fashion to firewalls.
+      explanation: That's correct. Azure can help secure various aspects of your app and data by using virtual networks, which act in a similar fashion to firewalls.
