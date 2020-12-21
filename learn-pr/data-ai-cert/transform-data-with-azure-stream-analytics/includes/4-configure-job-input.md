@@ -1,7 +1,7 @@
 An Azure Stream Analytics job supports three input types:
 
 > [!div class="mx-tableFixed"]
-> | Input Type | Use case |
+> | Input type | Use case |
 > |------------|----------|
 > | **Azure Event Hub** | Azure Event Hub consumes live streaming data from applications with low latency and high throughput. |
 > | **Azure IoT Hub**   | Azure IoT Hub consumes live streaming events from IoT devices. This service enables bi-directional communication scenarios where commands can be sent back to IoT devices to trigger specific actions based on analyzing streams they send to the service. |
@@ -20,11 +20,6 @@ Let's start by creating an Azure Blob Storage account.
 1. On the **Basics** tab, select the new **mslearn-streamanalytics** resource group.
 1. Set the Storage account name to a unique name - try using the prefix "streamsrc" with your initials or a numeric value. This value has to be unique across all Azure storage accounts, so you might have to try a few combinations to find one that works for you. The portal will place a green checkmark next to the name if it's valid.
 1. Check the Location - you can set it to the same location as the job to avoid having to pay to transfer data between regions.
-
-    > **TIP**
-    >
-    > This isn't absolutely necessary, but can be a cost-savings measure if you plan to have a lot of data flowing in or out of storage accounts.
-
 1. Leave the rest of the fields as default values.
 
     ![Screenshot showing how to create a storage account named "streamsrc"](../media/4-add-storage-account.png)
@@ -38,7 +33,7 @@ Wait for a few moments for the deployment to complete, once you receive the mess
 
 Next, let's connect our Stream Analytics job to our new Blob Storage account.
 
-1. In the Azure portal, Select **All services** in the left sidebar.
+1. In the Azure portal, select **All services** in the left sidebar.
 1. In the search box, type in **Stream Analytics**. Select the **Stream Analytics jobs** from the results.
 1. In the list of jobs, select the Stream Analytics job you created earlier (**SimpleTransformer**). This will display the overview page for your job.
 
@@ -52,7 +47,7 @@ Next, let's connect our Stream Analytics job to our new Blob Storage account.
 1. Enter **input/** for Path pattern.
 1. Leave the rest of the fields as the current default values.
 
-    > **NOTE**
+    > [!NOTE]
     >
     > If the job and storage account are in different locations, you'll get a warning as shown in the following image.
 

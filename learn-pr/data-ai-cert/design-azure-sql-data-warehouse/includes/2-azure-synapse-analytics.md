@@ -1,5 +1,3 @@
-# What is Azure Synapse Analytics
-
 Azure Synapse Analytics can work by acting as the one stop shop to meet all of your analytical needs in an integrated environment if you do not have an analytical environment in place already. 
 It does this by providing the following capabilities:
 
@@ -16,9 +14,9 @@ You can develop big data engineering and machine learning solutions using Apache
 For machine learning workloads, you can use SparkML algorithms and AzureML integration for Apache Spark 2.4 with built-in support for Linux Foundation Delta Lake. 
 There is a simple model for provisioning and scaling the Spark clusters to meet your compute needs, regardless of the operations that you are performing on the data.
 
-## Data integration to integrate your data with Azure Synapse Pipelines
+## Data integration to integrate your data with Azure Synapse pipelines
 
-Azure Synapse Pipelines leverages the capabilities of Azure Data Factory and is the cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale. Using Azure Synapse Pipelines, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. You can build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight Hadoop, or Azure Databricks.
+Azure Synapse pipelines leverages the capabilities of Azure Data Factory and is the cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale. Using Azure Synapse pipelines, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. You can build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight Hadoop, or Azure Databricks.
 
 ## Perform operational analytics with near real-time hybrid transactional and analytical processing with Azure Synapse Link
 
@@ -53,4 +51,4 @@ It also contains important information about your Synapse Analytics environment,
 * The **Workspace web URL (3)**, a direct link to Synapse Studio for the workspace.
 * Available resources, such as **SQL pools** and **Apache Spark pools (4)**.
 
-> **Note**: This course will only focus on the dedicated SQL pool capabilities of Azure Synapse Analytics.
+> [!Note]: This course will only focus on the dedicated SQL pool capabilities of Azure Synapse Analytics.

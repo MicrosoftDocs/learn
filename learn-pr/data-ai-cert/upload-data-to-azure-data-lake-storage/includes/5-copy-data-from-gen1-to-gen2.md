@@ -21,7 +21,7 @@ The first step is to provision a data factory in the Azure portal.
     ![Screenshot showing where to select Data Factory](../media/6-select-data-factory.png)
 
 1. On the **New data factory** page, provide values for each of the required fields:
-    - **Subscription**: The subscription in whch the ADF instance is created
+    - **Subscription**: The subscription in which the ADF instance is created
     - **Resource group**: The resource group where the ADF instance will reside
     - **Region**: The datacenter location in which the instance is stored
     - **Name**: The name of the Azure Data Factory instance
@@ -29,7 +29,7 @@ The first step is to provision a data factory in the Azure portal.
 
       ![Screenshot showing how to set up a data factory](../media/6-create-data-factory.png)
 
-1. Cick on the **Git configuration** tab, and choose to set it up later. 
+1. Click on the **Git configuration** tab, and choose to set it up later. 
 
 1. Select **Create**.
 
