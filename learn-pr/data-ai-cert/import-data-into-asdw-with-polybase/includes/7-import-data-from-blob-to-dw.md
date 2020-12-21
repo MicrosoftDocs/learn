@@ -30,15 +30,15 @@ The first step in using PolyBase is to create a database-scoped credential that 
 
 1. Paste the following code into the query window. Replace the `SECRET` value with the access key you retrieved in the previous exercise.
 
-```sql
-CREATE MASTER KEY;
-
-CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
-WITH
-    IDENTITY = 'demodwStorage',
-    SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
-;
-```
+    ```sql
+    CREATE MASTER KEY;
+    
+    CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
+    WITH
+        IDENTITY = 'demodwStorage',
+        SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
+    ;
+    ```
 
 1. Select **Run** to run the query. It should report `Query succeeded: Affected rows: 0.`
 

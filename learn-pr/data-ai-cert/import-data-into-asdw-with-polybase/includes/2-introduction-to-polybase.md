@@ -4,6 +4,8 @@ A key feature of Azure Synapse Analytics is that you pay for only the processing
 
 Azure Synapse Analytics supports many loading methods. These methods include non-PolyBase options such as Bulk Copy Utility (BCP) and the SQL Bulk Copy API. The fastest and most scalable way to load data is through PolyBase. PolyBase is a technology that accesses external data stored in Azure Blob storage, Hadoop, or Azure Data Lake Store via the Transact-SQL language.
 
+
+
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Introduction-to-Polybase/player?format=ny]
 
 
