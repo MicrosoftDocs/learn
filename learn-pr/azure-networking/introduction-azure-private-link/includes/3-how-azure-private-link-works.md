@@ -47,6 +47,9 @@ Here are a few key points to consider when evaluating Private Endpoint:
 
 Azure Private Link Service brings the benefits of Private Link to your custom Azure services. The only requirement is that you run your custom service behind a Standard Load Balancer. You can then create a Private Link Service resource and attach it to the load balancer.
 
+> [!CAUTION]
+> Azure offers two versions of its load balancer: basic and standard. The Basic Load Balancer doesn't support Private Link Service, so be sure you're using the Standard Load Balancer.
+
 Once you create the Private Link Service resource, Azure issues an *alias* for the resource, which is a globally unique read-only string with the syntax *prefix*.*guid*.*suffix*:
 
 * *prefix*. A name you supply for the custom service.
