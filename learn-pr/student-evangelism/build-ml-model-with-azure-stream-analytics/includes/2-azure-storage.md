@@ -152,7 +152,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
    This file defines 10 virtual cameras to upload photos to Blob Storage. Each camera instance contains a device ID and latitude and longitude that specify the camera's location.
 
-   The latitudes and longitudes correspond to points on the coast of Northern Canada's [Cornwallis Island](https://en.wikipedia.org/wiki/Cornwallis_Island_(Nunavut)?azure-portal=true), which is one of the best sites in Canada to spot polar bears. Cornwallis Island is next to [Bathurst Island](https://en.wikipedia.org/wiki/Bathurst_Island_(Nunavut)?azure-portal=true), which is home to the Polar Bear Pass National Wildlife Area.
+   The latitudes and longitudes correspond to points on the coast of Northern Canada's [Cornwallis Island](https://en.wikipedia.org/wiki/Cornwallis_Island_(Nunavut)?azure-portal=true). The island is one of the best sites in Canada to spot polar bears. Cornwallis Island is next to [Bathurst Island](https://en.wikipedia.org/wiki/Bathurst_Island_(Nunavut)?azure-portal=true), which is home to the Polar Bear Pass National Wildlife Area.
 
 1. In the project directory, create a file named *run.js*. Paste the following code in the file:
 

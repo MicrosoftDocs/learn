@@ -38,10 +38,10 @@ quiz:
       explanation: "Not quite!"
     - content: "Precision is a mean of false-positive rates computed across a range of thresholds."
       isCorrect: false
-      explanation: "Precision and recall both are slightly simpler than this."
+      explanation: "Precision and recall both are slightly simpler than this answer."
     - content: "Recall is a mean of false-positive rates computed across a range of thresholds."
       isCorrect: false
-      explanation: "Precision and recall both are slightly simpler than this."
+      explanation: "Precision and recall both are slightly simpler than this answer."
   - content: "When deploying a function app in Azure Functions, what's one reason to choose App Service Plan over Consumption Plan?"
     choices:
     - content: "Function apps that are hosted in an App Service Plan support parallel execution. Function apps that are hosted under the Consumption Plan, don't support parallel execution."
@@ -52,7 +52,7 @@ quiz:
       explanation: "All function types in Azure Functions have a charge model, but how does it differ?"
     - content: "Functions that are hosted in an App Service Plan incur charges only when they execute."
       isCorrect: false
-      explanation: "Actually, this is true of the Consumption model. The App Service model continually runs a compute instance to support your function apps."
+      explanation: "Actually, this statement is true of the Consumption model. The App Service model continually runs a compute instance to support your function apps."
     - content: "Function apps that are hosted in an App Service Plan execute immediately when triggered."
       isCorrect: true
       explanation: "When you use the Consumption model, it might take a few minutes for a machine to run your function app when it's fired. With the App Service plan, the function app runs immediately."

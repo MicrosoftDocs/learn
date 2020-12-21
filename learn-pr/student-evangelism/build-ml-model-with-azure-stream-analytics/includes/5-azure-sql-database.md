@@ -1,4 +1,4 @@
-In the last unit, you wrote a function app in Azure that passes each photo uploaded to a blob container to the Custom Vision service to determine whether the photo contains a polar bear. The only output from the function app was log output that shows the verdict rendered by the Custom Vision service, and the ID and location of the camera that captured the photo. 
+In the last unit, you wrote a function app in Azure that passes each photo that's uploaded to a blob container to the Custom Vision service to determine whether the photo contains a polar bear. The only output from the function app was log output that shows the verdict that was rendered by the Custom Vision service, and the ID and location of the camera that captured the photo. 
 
 Now, you'll use Azure SQL Database to create a SQL database and modify the function app to write to the database. The SQL database sets the stage for visualizing polar bear sightings in Power BI, which draws information from the database.
 
