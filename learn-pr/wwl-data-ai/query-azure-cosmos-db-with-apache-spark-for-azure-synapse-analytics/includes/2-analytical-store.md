@@ -151,7 +151,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     ![Adding the ID to the results](../media/add-id-to-resultset.png)
 
-    You will note that for this DataFrame we have additionally included the **id column (W)**, for Azure Cosmos DB API for MonogDB accounts, the ID column can be considered a system document property and should not be confused with the _id property of the original document. 
+    You will note that for this DataFrame we have additionally included the **ID column (W)**, for Azure Cosmos DB API for MonogDB accounts, the ID column can be considered a system document property and should not be confused with the _id property of the original document. 
 
     To get a more visual representation of the DataFrame schema, you can use the printSchema() method on the DataFrame.
 

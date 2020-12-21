@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/18/2020
+  ms.date: 12/21/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -24,14 +24,14 @@ quiz:
     - content: "%%sql."
       isCorrect: true
       explanation: "Correct.  When you want to switch to SparkSQL in a notebook, type the %%sql command."
-  - content: "What SparkSQL method is used to read data from the analytical store?"
+  - content: "What SparkSQL method reads data from the analytical store?"
     choices:
     - content: "cosmos.olap."
       isCorrect: true
-      explanation: "Correct. Cosmos.olap is the method that is used to connect to the analytical store in Azure Cosmos DB."
+      explanation: "Correct. Cosmos.olap is the method that connects to the analytical store in Azure Cosmos DB."
     - content: "cosmos.oltp."
       isCorrect: false
-      explanation: "Incorrect. Cosmos.oltp is the method that is used to connect to the transactional store in Azure Cosmos DB."
+      explanation: "Incorrect. Cosmos.oltp is the method that connects to the transactional store in Azure Cosmos DB."
     - content: "cosmos.db."
       isCorrect: false
       explanation: "Incorrect.  Cosmos.db is not a valid method."

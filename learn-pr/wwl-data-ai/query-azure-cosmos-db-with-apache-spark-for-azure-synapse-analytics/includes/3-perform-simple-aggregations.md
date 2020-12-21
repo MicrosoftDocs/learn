@@ -12,7 +12,7 @@ Let’s start by exploring some basic statistics, the simplest being the number 
 
     You will see that there are **19119 customers (B)**
 
-    Let’s now break this down by country and city by customers, where we have the address information; and see how many customers there are where we don’t have the address information captured on their customer profile.
+    Let’s break this down by country and city by customers, where we have the address information; and see how many customers there are where we don’t have the address information captured on their customer profile.
 
 2.	Paste the below code into a **new cell (C)**, click the **run cell** button.
 
@@ -20,11 +20,11 @@ Let’s start by exploring some basic statistics, the simplest being the number 
     display(dfCustomer.groupBy("address.country","address.city").count().orderBy("count",  ascending=False).limit(10))
     ```
 
-    You will see a break down of the top 10 country, city combinations having the most customers, right at the top of the list you will see that there are 615 customers for which Adventure Works has neither Country or City information within the customer profile.
+    You will see a breakdown of the top 10 country, city combinations having the most customers, right at the top of the list you will see that there are 615 customers for which Adventure Works has no country or city information within the customer profile.
 
     ![Using an order by query in a notebook](../media/use-order-by-query.png)
 
-    Remember that we can always leverage the built-in chart capabilities of the Synapse Analytics notebooks to visualize our data more easily directly within the notebook.
+    Remember that we can always use the built-in chart capabilities of the Synapse Analytics notebooks to visualize our data more easily directly within the notebook.
 
     ![Visualizing results in a notebook](../media/visualize-results-in-notebook.png)
 
@@ -37,9 +37,9 @@ Let’s start by exploring some basic statistics, the simplest being the number 
     - Aggregation = SUM 
 
     
-    As mentioned earlier, we are going to use both PySpark (we have up until now used this exclusively) and Spark SQL, which we will include going forward.  However, to be able to use both interchangeably within the same notebook, it is often useful to be able to work on the same data sets. 
+    As mentioned earlier, we are going to use both PySpark and Spark SQL, which we will include going forward.  However, to be able to use both interchangeably within the same notebook, it is often useful to be able to work on the same data sets. 
 
-    To save a PySpark DataFrame  as a temporary view there is a DataFrame method.createOrReplaceView, which does just that. Temporary Views can be queried from Spark SQL. Temporary views in Spark SQL are session-scoped and will disappear if the session that creates it terminates.
+    To save a PySpark DataFrame  as a temporary view there is a DataFrame method.createOrReplaceView, which does just that. Temporary Views can also be queried from Spark SQL. Temporary views in Spark SQL are session scoped and will disappear if the session that creates it terminates.
     
     To load data into a DataFrame using a Spark SQL query, you can use the **spark.sql()** method to run a query and return a DataFrame as a result. 
     
