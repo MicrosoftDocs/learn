@@ -18,9 +18,9 @@ SELECT TOP(10) SalesOrderId, details
 
 Click **run**.
 
-Here we can see the **SalesOrderId column (A)** is retuning an JSON fragment including the data type of the document _id property, in this case string along with the property values. The **details column (B)** is also retuning a JSON fragment in this case indicating that the data type is an **array (C)** and that it contains **multiple array elements (D)**.
+Here we can see the **SalesOrderId column (A)** is retuning a JSON fragment including the data type of the document _id property, in this case string along with the property values. The **details column (B)** is also retuning a JSON fragment in this case indicating that the data type is an **array (C)** and that it contains **multiple array elements (D)**.
 
-Let us now access these properties by correctly specifying the path including the type suffix for each properties (in this case “string” for _id and “array” for the details attributes) by:
+Let us now access these properties by correctly specifying the path including the type suffix for each property (in this case “string” for _id and “array” for the details attributes) by:
 
 Paste the following SQL into the query pane.
 
@@ -39,7 +39,7 @@ SELECT TOP(10) SalesOrderId, details
 
 Click **run**.
 
-Now we can see that the SalesOrderId column contains just the appropriate value and the details column now just contains the JSON array itself starting with the array designator “[“ and ending with “]” and can contain **multiple array elements (H)** of object type as indicated in the JSON by means of the **object type suffix (I)**. 
+Now we can see that the SalesOrderId column contains just the appropriate value and the details column now just contains the JSON array itself starting with the array designator “[“ and ending with “]” and can contain **multiple array elements (H)** of object type as indicated in the JSON with **object type suffix (I)**. 
 
 Let now create a SalesOrderDetails view by:
 
@@ -66,13 +66,13 @@ SELECT SalesOrderId, SalesOrderArray.[key]+1 as SalesOrderLine, SKUCode, SKUName
             ) As SalesOrderDetails
 ```
 
-The first OPENJSON clause is provided with the SalesOrders.details value we extracted in using the WITH clause of the OPENROWSET. When you call OPENJSON without a WITH clause and provide it with a JSON fragment that represents an array (as is the case in our example) the function returns a table with the following columns:
+The first OPENJSON clause provides the SalesOrders.details value we extracted in using the WITH clause of the OPENROWSET. When you call OPENJSON without a WITH clause and provide it with a JSON fragment that represents an array (as is the case in our example) the function returns a table with the following columns:
 
 -	Key- A value that contains the zero-based index of the element in the specified array. 
 -	Value - An nvarchar(max) value that contains the value of the property itself. This will be the object value for each of the array elements in our example.
 -	Type -An int value that contains the type of the value, which we don’t use in our example.
 
-The second OPENJSON clause is provided with an input value of the value returned by the first OPENJSON clause, in our example the JSON fragment that represents the object of each element within the array. In this case we use the WITH clause to further specify the column alias, and the column data type and the element path we want to access (remembering to include the type suffix).
+The second OPENJSON clause is provided with an input value of the value returned by the first OPENJSON clause, in our example the JSON fragment that represents the object of each element within the array. In this case, we use the WITH clause to further specify the column alias, and the column data type and the element path we want to access (remembering to include the type suffix).
 
 Lastly, we will project all the needed columns including key value returned by the first OPENJSON function (L) which will provide us with the SalesOrderLine, which by convention starts at 1 for each order at AdventureWorks, so needs to be adjusted from its zero-based value. 
 

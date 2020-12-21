@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/18/2020
+  ms.date: 12/21/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Once Azure Synapse Link has been configured on Cosmos DB, what is the first step to perform to use Azure Synapse Analytics serverless SQL pools to query the Azure Cosmos DB data?"
+  - content: "Once Azure Synapse Link is configured on Cosmos DB, what is the first step to perform to use Azure Synapse Analytics serverless SQL pools to query the Azure Cosmos DB data?"
     choices:
     - content: "Use the OPENROWSET function"
       isCorrect: false
@@ -28,10 +28,10 @@ quiz:
     choices:
     - content: "OPENROWSET."
       isCorrect: false
-      explanation: "Incorrect. The OPENROWSET function function allows you to access files in Azure Storage.."
+      explanation: "Incorrect. The OPENROWSET function allows you to access files in Azure Storage.."
     - content: "OPENJSON."
       isCorrect: true
       explanation: "Correct. The OPENJSON function provides a rowset view over a JSON document."
     - content: "WITH."
       isCorrect: false
-      explanation: "Incorrect. The WITH clause enable you to specify the path to property values in a JSON document."
+      explanation: "Incorrect. The WITH clause enables you to specify the path to property values in a JSON document."
