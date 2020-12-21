@@ -1,4 +1,4 @@
-Now that you've discovered some interesting collections at the Metropolitan Museum, let's look at a different museum API: the Cooper Hewitt API. This museum is part of the Smithsonian. It's the US's National Design Museum. Its collection is devoted to interesting and notable design, from Dyson fans to antique shoes.
+Now that you've discovered some interesting collections at the Metropolitan Museum, let's look at a different museum API: the Cooper Hewitt API. Cooper Hewitt is part of the Smithsonian. It's the US's National Design Museum. Its collection is devoted to interesting and notable design, from Dyson fans to antique shoes.
 
 To access the API, you need either an access token or both an access token and an API key that acts as its authenticator. The API allows a user to visit an endpoint for individual visits by using a one-off access token. But to query the API with code, you need both elements.
 

@@ -2,14 +2,14 @@
 uid: learn.student-evangelism.use-apis-discover-museum-art
 metadata:
   title: Explore the art world by using RESTful APIs
-  description: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art from museum APIs.
+  description: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
   ms.date: 12/09/2020
   author: jlooper
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore the art world by using RESTful APIs
-summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art from museum APIs.
+summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
 abstract:  |
   In this module, you will:
   - Learn about RESTful APIs.

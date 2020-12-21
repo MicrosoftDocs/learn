@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Application programming intelligence"
       isCorrect: false
-      explanation: "Almost, not quite!"
+      explanation: "Almost, but not quite!"
     - content: "Application programming interface"
       isCorrect: true
-      explanation: "Correct. An API an interface that links applications programmatically."
+      explanation: "Correct. An API is an interface that links applications programmatically."
     - content: "Auto project interface"
       isCorrect: false
       explanation: "Try again."
@@ -47,5 +47,5 @@ quiz:
       explanation: "Try again. The API provides a layer between the user and the back-end system for a good reason."
     - content: "False"
       isCorrect: true
-      explanation: "Correct! Part of the beauty of using APIs is you don't have to have a deep understanding of data structures. Of course, this means that good API design is important!"
+      explanation: "Correct! Part of the beauty of using APIs is that you don't have to have a deep understanding of data structures. Of course, this means that good API design is important!"
 

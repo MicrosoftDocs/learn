@@ -7,15 +7,15 @@ One wonderful thing about modern museum collections management is that the ongoi
 The first step when you're researching the use of a third-party API is to check out its documentation. 
 Take a look at the API documentation provided by the museum.
 
-Another thing to consider is permissions. Read through the terms of use of all third-party APIs that you want to use to make sure that what you want to do is acceptable. The Met Museum's [Terms and Conditions page](https://www.metmuseum.org/information/terms-and-conditions?azure-portal=true) is a good place to start. Because the museum has adopted the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0?azure-portal=true) license, there's no copyright on the dataset, which is helpful for the casual user.
+Another thing to consider is permissions. Read through the terms of use of all third-party APIs that you want to use to make sure that what you want to do is acceptable. The Met Museum's [Terms and Conditions page](https://www.metmuseum.org/information/terms-and-conditions?azure-portal=true) is a good place to start. Because the museum has adopted the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0?azure-portal=true) license, there's no copyright on the dataset. That license makes working with the API easier for the casual user.
 
-And you don't need an API key to use this API, so you can access many aspects of its collections by using GET requests via a well-formed URL query. By visiting a given URL, you're using the Met Museum's API from within your browser. This method is the simplest way to use an API. In a later unit, you'll learn how to use code to call APIs.
+And you don't need an API key to use this API, so you can access many elements of its collections by using GET requests via well-formed URL queries. By visiting a given URL, you're using the Met Museum's API from within your browser. This method is the simplest way to use an API. In a later unit, you'll learn how to use code to call APIs.
 
 ## Query the API
 
 The Met's endpoints, or the URLs that you'll use to query for objects, are Objects, Object (for a single object), Departments, and Search.
 
-The design of this API indicates that users are expected to search the collection and then drill into object groups and individual objects for more detail and information. The API is being built progressively. The choice of including a Department endpoint might be an indication of the way the data is structured and how users search for it.
+The design of this API indicates that users are expected to search the collection and then drill down into object groups and individual objects for more detail and information. The API is being built progressively. The choice of including a Department endpoint might be an indication of the way the data is structured and how users search for it.
 
 Suppose you're interested in arms and armor. You could query the Departments endpoint to get the ID of that department:
 

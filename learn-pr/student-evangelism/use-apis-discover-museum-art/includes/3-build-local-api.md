@@ -25,7 +25,7 @@ This JSON file is a mock version of a database. You can use `json-server` to que
 
 ## Query a database
 
-In a terminal, go to the location where you added db.json and enters `json-server --watch db.json`. The server will run on port 3000. You can query it via a specially formatted URL. 
+In a terminal, go to the location where you added `db.json` and enter `json-server --watch db.json`. The server will run on port 3000. You can query it via a specially formatted URL. 
 
 Try entering `http://localhost:3000/objects` in a browser's URL box. You'll see all the objects in your database, listed in neat JSON format.
 
@@ -57,4 +57,4 @@ The method used is GET.
 
 You don't need any headers in the call for now. (You'll learn more about headers soon.) 
 
-The data that's returned is the same as the data stored in your db.json file, filtered by the query.
+The data that's returned is the same as the data stored in your `db.json` file, filtered by the query.

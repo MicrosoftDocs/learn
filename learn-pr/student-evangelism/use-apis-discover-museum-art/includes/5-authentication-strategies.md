@@ -30,4 +30,4 @@ Using an API key can easily get complicated, but it's the most common way to aut
 
 API keys are different from access tokens in that keys provide authorization but not authentication. Access tokens provide a more secure way to access sensitive endpoints.  
 
-In the next unit, you'll query an API that uses OAuth 2: the Smithsonian's Cooper Hewitt's National Design Museum.
+In the next unit, you'll query an API that uses OAuth 2: the Smithsonian's Cooper Hewitt National Design Museum.
