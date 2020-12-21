@@ -31,7 +31,7 @@ There are several configuration steps you need to perform to set up Key Vault so
 
 1. **The user needs deployment permission on the resource group**. This is no different than other deployments. However, if you haven't created the resource group, you can assign a role to ensure you can deploy to it.
 
-1. **The user needs proper access to the key vault**. You must ensure that you have the proper access to the key vault when you read from it during deployment. When you create a key vault, it creates an access policy giving the user rights to manage all the secrets, keys, and certifications.
+1. **The user needs proper access to the key vault**. You must ensure that you have the proper access to the key vault when you read from it during deployment. When you create a key vault, it creates an access policy giving the user rights to manage all the secrets, keys, and certificates.
 
 ### Configure Key Vault for deployment
 
@@ -49,20 +49,16 @@ Before you attempt to deploy and read secrets from the key vault, you have to en
 - `Owner`: If you created the key vault, you automatically have this role.
 - `Contributor`: This role grants you access to manage all the secrets. If you didn't create the key vault, the easiest approach is to give yourself the `Contributor` role.
 
-Another choice is to create and assign a custom role, and ensure that role contains the following permission:
+Another choice is to create and assign a custom role, and ensure that role contains the **Microsoft.KeyVault/vaults/deploy/action** permission.
 
-```bash
-Microsoft.KeyVault/vaults/deploy/action
-```
+## Configure the deployment parameter file  
 
-## Configure the deployment parameters file  
+Instead of specifying each parameter and corresponding values as key-value pairs during deployment, you can use a parameter file.
 
-Instead of specifying each parameter and corresponding values as key-value pairs during deployment, you can use a parameters file.
-
-In this parameters file, you specify which key vault and which secret in that key vault you're interested in. You do this by modifying a parameter, and then updating the deployment template to use this parameter.
+In this parameter file, you specify which key vault and which secret in that key vault you're interested in. You do this by modifying a parameter, and then updating the deployment template to use this parameter.
 
 > [!NOTE]
-> The template doesn't have any notion of a key vault or its secret. The configuration you're making takes place in the parameters file.
+> The template doesn't have any notion of a key vault or its secret. The configuration you're making takes place in the parameter file.
 
 ### Configure a key vault and secret for a parameter
 

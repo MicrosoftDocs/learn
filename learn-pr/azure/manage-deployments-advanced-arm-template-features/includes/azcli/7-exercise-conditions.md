@@ -133,19 +133,19 @@ To verify this fact, you run the `az storage account check-name` command again t
 
 Run the following `az storage account check-name` command:
 
-    ```azurecli
-    az storage account check-name --name $STORAGE_ACCT_NAME
-    ```
+```azurecli
+az storage account check-name --name $STORAGE_ACCT_NAME
+```
 
-    Your output resembles this:
+Your output resembles this:
 
-    ```output
-    {
-      "message": "The storage account named tailwindsa32100 is already taken.",
-      "nameAvailable": false,
-      "reason": "AlreadyExists"
-    }
-    ```
+```output
+{
+  "message": "The storage account named tailwindsa32100 is already taken.",
+  "nameAvailable": false,
+  "reason": "AlreadyExists"
+}
+```
 
 These values tell you that the storage account has been provisioned as you expect.
 

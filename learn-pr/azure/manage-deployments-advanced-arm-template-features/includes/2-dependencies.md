@@ -25,7 +25,7 @@ You might start by inspecting the current state of your deployment, by running A
 
 There's such a construct in Resource Manager templates, called `dependsOn`. Using this construct makes resources wait until the pointed out resource has finished deploying.
 
-### What's the `dependsOn` construct?
+### What's the dependsOn construct?
 
 It's a key-value pair that enables you to define the deployment order between resources. Sometimes you need to ensure something exists before something else. For example, you might need a database to exist before an app, or a secret resource to exist before a key vault.
 

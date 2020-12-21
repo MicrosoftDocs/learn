@@ -8,7 +8,7 @@ In this module, you'll gain an understanding for how to handle more complex scen
 
 After completing this module, you'll be able to:
 
-- Control the deployment order of resources by using the `dependsOn`construct.
+- Control the deployment order of resources by using the `dependsOn` construct.
 - Securely assign secrets like passwords to resources in your templates by using Azure Key Vault and your ARM template.
 - Conditionally deploy resources by using the `condition` construct and parameters at deployment time.
 - Deploy multiple resources of the same type by using the `copy` construct to reduce repetitive configuration.

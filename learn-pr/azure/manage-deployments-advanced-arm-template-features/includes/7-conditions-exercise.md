@@ -8,7 +8,7 @@ Let's say that you have three environments that you need to deploy to: Dev, Stag
 
 As you move from Dev to Production, you require additional infrastructure. For example, in Production, you require an additional storage account that you don't need in the previous environments.
 
-Here, you use a condition to control when a storage account is provisioned. Doing so enables you to support each of your infrastructure environments from the same Azure Resource Manager template.
+Here, you use a condition to control when a storage account is provisioned. Doing so enables you to support each of your infrastructure environments from the same ARM template.
 
 ::: zone pivot="powershell"
 
