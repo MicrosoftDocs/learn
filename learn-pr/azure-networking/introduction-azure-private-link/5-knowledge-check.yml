@@ -43,7 +43,7 @@ quiz:
       isCorrect: false
       explanation: "."
     - content: "Azure Basic Load Balancer"
-      isCorrect: true
+      isCorrect: false
       explanation: "."
     - content: "Azure Standard Load Balancer"
       isCorrect: true
