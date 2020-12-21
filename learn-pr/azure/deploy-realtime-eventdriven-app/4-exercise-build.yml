@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-event-driven-real-time.3-exercise-build
+uid: learn.azure.deploy-event-driven-real-time.4-exercise-build
 title: Exercise - Create Azure resources and a Java Spring application
 metadata:
   title: Exercise - Create Azure resources and a Java Spring application
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-build.md)]
+  [!include[](includes/4-exercise-build.md)]

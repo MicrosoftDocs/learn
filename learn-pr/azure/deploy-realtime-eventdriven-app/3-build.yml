@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-event-driven-real-time.2-build
+uid: learn.azure.deploy-event-driven-real-time.3-build
 title: Build an Azure Function to simulate telemetric data
 metadata:
   title: Build an Azure Function to simulate telemetric data
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-build.md)]
+  [!include[](includes/3-build.md)]

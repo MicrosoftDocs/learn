@@ -34,3 +34,4 @@ This command might take a minute to run.
 ## Additional resources
 
 Resources
+[Tutorial: Create a function in Java with an Event Hub trigger and an Azure Cosmos DB output binding](https://docs.microsoft.com/azure/azure-functions/functions-event-hub-cosmos-db?WT.mc_id=java-9741-sakriema)

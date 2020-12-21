@@ -33,11 +33,12 @@ products:
 - azure-storage
 units:
 - learn.azure.deploy-event-driven-real-time.1-introduction
-- learn.azure.deploy-event-driven-real-time.2-build
-- learn.azure.deploy-event-driven-real-time.3-exercise-build
-- learn.azure.deploy-event-driven-real-time.4-deploy
-- learn.azure.deploy-event-driven-real-time.5-exercise-deploy
-- learn.azure.deploy-event-driven-real-time.6-knowledge-check
-- learn.azure.deploy-event-driven-real-time.7-summary
+- learn.azure.deploy-event-driven-real-time.2-event-driven-example
+- learn.azure.deploy-event-driven-real-time.3-build
+- learn.azure.deploy-event-driven-real-time.4-exercise-build
+- learn.azure.deploy-event-driven-real-time.5-deploy
+- learn.azure.deploy-event-driven-real-time.6-exercise-deploy
+- learn.azure.deploy-event-driven-real-time.7-knowledge-check
+- learn.azure.deploy-event-driven-real-time.8-summary
 badge:
   uid: learn.azure.deploy-event-driven-real-time.badge

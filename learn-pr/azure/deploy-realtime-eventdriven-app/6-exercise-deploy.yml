@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-event-driven-real-time.5-exercise-deploy
+uid: learn.azure.deploy-event-driven-real-time.6-exercise-deploy
 title: Exercise - Deploy a Spring Boot application
 metadata:
   title: Exercise - Deploy a Spring Boot application
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-exercise-deploy.md)]
+  [!include[](includes/6-exercise-deploy.md)]
