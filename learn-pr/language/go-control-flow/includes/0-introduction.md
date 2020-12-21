@@ -1,22 +1,22 @@
-In the previous module, you learned the basics of Go regarding data types, variables, constants, functions, and packages. Now that you know how to structure the logic of a program and how Go prefers to organize the code, let's see how fundamental control flows like `if/else`, `switches`, `for`, and another set of keywords that will help to write programs the Go way.
+In the previous module, you learned the basics of Go. You explored data types, variables, constants, functions, and packages. You know how to structure the logic of a program and how Go prefers to organize the code. So now you're ready to learn how to write programs in the Go way by using fundamental control flows like `if/else`, `switches`, and `for` as well as another set of keywords.
 
-If you have previous experience in a programming language that follows most of the C syntax like C# or Java, a few sections in this module will be pretty straightforward. However, there are going to be certain sections and specific nuances that are very different in Go.
+If you have previous experience in a programming language that follows most of the C syntax, like C# or Java, a few sections in this module will be straightforward. But in other sections, you'll see nuances that differ in Go.
 
-Almost at the end of the module, you'll find a challenge where you need to apply all the concepts you've learned so far. We'll provide the solution to the challenge so that you compare it with your resolution.
+Near the end of the module, you'll find a challenge where you need to apply all the concepts you've learned so far. Later, you'll compare the challenge's solution with your own resolution.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Learn about simple and compound `if` statements
-- Learn about `switch` statements and its different features
-- Learn about loop statements and its patterns in Go using the `for` keyword
-- Learn about essential functions you'll use to handle errors like `defer`, `panic`, and `recover`
+- Learn about simple and compound `if` statements.
+- Learn about `switch` statements and their features.
+- Use the `for` keyword to learn about `loop` statements and their patterns in Go.
+- Use essential functions to handle errors like `defer`, `panic`, and `recover`.
 
 ## Prerequisites
 
-- A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and VS Code with the Go extension installed. Alternatively, you could use the Go Playground.
-- Know how to create and modify `.go` files
-- Know how run Go applications using the terminal prompt
-- Know how to declare and initialize variables
-- Know how to create functions
+- A Go environment that's ready to create applications. Ideally, you should have Go locally installed and configured and also have the Visual Studio Code Go extension installed. Alternatively, you can use the Go Playground.
+- Know how to create and modify *.go* files.
+- Know how run Go applications by using the terminal prompt.
+- Know how to declare and initialize variables.
+- Know how to create functions.

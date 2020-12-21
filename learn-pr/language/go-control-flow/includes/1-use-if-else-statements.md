@@ -1,12 +1,12 @@
-The most basic control flow in any programming language is the `if/else` statement. In Go, these statements are pretty straightforward. However, there are a few nuances that you need to know before you start getting to feel comfortable writing Go programs.
+The most basic control flow in any programming language is the `if/else` statement. In Go, `if/else` statements are straightforward. But you need to understand a few nuances before you start feeling comfortable writing Go programs.
 
-Let's see how the syntax in Go looks like for `if` statements.
+Let's take a look at the Go syntax for `if` statements.
 
-## If statement syntax
+## Syntax for `if` statements
 
-Unlike other programming languages, in Go, you **don't need parentheses in conditions**, and the `else` clause is optional. However, braces are still required. Moreover, Go doesn't offer support for [ternary if statements](http://en.wikipedia.org/wiki/%3F:) to reduce lines, so you need to write the full `if` statement every time.
+Unlike other programming languages, in Go, you *don't need parentheses in conditions*. The `else` clause is optional. But braces are still required. Moreover, Go doesn't offer support for [ternary `if` statements](http://en.wikipedia.org/wiki/%3F:?azure-portal=true) to reduce lines, so you need to write the full `if` statement every time.
 
-A basic example of an `if` statement looks like this
+Here's a basic example of an `if` statement:
 
 ```go
 package main
@@ -21,11 +21,11 @@ func main() {
 }
 ```
 
-When you're using VS Code, if you forget that in Go, you omit the parentheses in conditions; when you save your program VS Code removes them automatically.
+In Visual Studio Code, if your Go syntax includes parentheses in conditions, the parentheses are automatically removed when you save your program.
 
-## Compound If statements
+## Compound `if` statements
 
-When you need to write more complex `if` statements, Go has support to compound `if` statements. You can nest statements using the `else if` statement, like this:
+Go supports compound `if` statements. You can nest statements by using the `else if` statement. Here's an example:
 
 ```go
 package main
@@ -47,7 +47,7 @@ func main() {
 }
 ```
 
-Notice how in the above code, the `num` variable stores the value returned from the `givemeanumber()` function **is available in all `if` branches**. However, if you try to print the value of the `num` variable outside of the `if` block, you'll get an error like this:
+In this code, notice that the `num` variable stores the value returned from the `givemeanumber()` function, and the variable *is available in all `if` branches*. However, if you try to print the value of the `num` variable outside of the `if` block, you'll get an error like this:
 
 ```go
 package main
@@ -77,4 +77,4 @@ When you run the program, the error output looks like this:
 ./main.go:17:14: undefined: num
 ```
 
-Declaring variables within `if` blocks are very idiomatic in Go.
+In Go, declaring variables within `if` blocks is idiomatic.
