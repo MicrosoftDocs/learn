@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.paths-to-modern-endpoint-management
 metadata:
-  title: Learn about paths to modern endpoint management
+  title: Paths to modern endpoint management
   description: In this module, you will learn about the migration paths you can follow to enable modern endpoint management using the products and services that encompass Microsoft Endpoint Manager.
-  ms.date: 12/14/2020
+  ms.date: 12/21/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
-title: Learn about paths to modern endpoint management
+title: Paths to modern endpoint management
 summary: Microsoft Endpoint Manager helps you protect the devices, apps, and data that the people of your organization use to be productive. In this module, you will learn about the migration paths you can follow to enable modern endpoint management using the products and services that encompass Microsoft Endpoint Manager.
 abstract: | 
   In this module, you will:
@@ -26,6 +26,7 @@ roles:
 - administrator
 products:
 - mem
+- m365
 units:
 - learn.paths-to-modern-endpoint-management.1-introduction
 - learn.paths-to-modern-endpoint-management.2-determine-starting-point
