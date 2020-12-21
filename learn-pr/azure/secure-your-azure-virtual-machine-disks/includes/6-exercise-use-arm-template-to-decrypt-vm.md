@@ -26,14 +26,26 @@ You're going to use a template Microsoft has published on GitHub that is specifi
     - For the **VM Name**, enter "fmdata-vm01".
     - Leave the **Volume Type** as _All_.
 
-1. Select the **I agree to the terms and conditions** check box.
-1. To run the template, select **Purchase**. Note that there is no cost to this - it's a standard button.
+1. Select **Review + create** > **Create**.
 
 The deployment may take a few minutes to complete.
 
 ## Verify the encryption status of the VM
 
-1. On the Azure portal menu or from the **Home** page, select **Virtual machines**, and select your VM **fmdata-vm01**. Alternatively, you can search for your VM by name from **All Resources**.
+In Cloud Shell, check the encryption status.
 
-1. On the **Virtual machine** pane, under **SETTINGS**, select **Disks**.
+   ```powershell
+    $vmName = "fmdata-vm01"
+    $rgName = "<rgn>[sandbox Resource Group]</rgn>"
+    Get-AzVmDiskEncryptionStatus  -ResourceGroupName $rgName -VMName $vmName
+  ```
+
+Now, the OS disk isn't encrypted.
+
+  ```output
+    OsVolumeEncrypted          : NotEncrypted
+    DataVolumesEncrypted       : NoDiskFound
+    OsVolumeEncryptionSettings : Microsoft.Azure.Management.Compute.Models.DiskEncryptionSettings
+    ProgressMessage            : [2.2.0.36] Disable Encryption completed successfully
+  ```
 
