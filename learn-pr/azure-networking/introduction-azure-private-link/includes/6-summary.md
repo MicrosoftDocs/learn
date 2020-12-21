@@ -1,4 +1,4 @@
-IT management at Contoso were concerned about exposure of company and customer data to the internet. You were asked to evaluate whether Azure Private Link would be a good choice for enabling private access to Azure resources.
+IT management at Contoso were concerned about exposure of company and customer data to the internet. You were asked to evaluate whether Private Link would be a good choice for enabling private access to Azure resources.
 
 In this module, you learned how Private Link works with Private Endpoint to enable private access. You learned that Private Endpoint takes an IP address from a subnet of your Azure virtual network and maps that address to an Azure resource. You now have a private connection between your virtual network—and all of its peered networks—and the Azure resource. All traffic uses the private Microsoft Azure backbone network, not the public internet.
 
