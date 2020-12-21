@@ -51,4 +51,4 @@ It also contains important information about your Synapse Analytics environment,
 * The **Workspace web URL (3)**, a direct link to Synapse Studio for the workspace.
 * Available resources, such as **SQL pools** and **Apache Spark pools (4)**.
 
-> [!Note]: This course will only focus on the dedicated SQL pool capabilities of Azure Synapse Analytics.
+This module will only focus on the dedicated SQL pool capabilities of Azure Synapse Analytics.
