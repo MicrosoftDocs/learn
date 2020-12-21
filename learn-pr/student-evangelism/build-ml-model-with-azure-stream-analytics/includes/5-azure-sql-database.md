@@ -20,7 +20,7 @@ Let's begin by using Azure Cloud Shell to create a SQL database in Azure SQL Dat
     
     - `SERVER_NAME` must be unique in Azure. The server name can use only lowercase letters, numbers, and hyphens. The first character and the last character in the name can't be a hyphen.
     - `ADMIN_USERNAME`  can't be a name that's reserved in SQL Server, such as `admin` or `sa`. You can use the name `adminuser`.
-    - `ADMIN_PASSWORD`  must be at least 8 characters.
+    - `ADMIN_PASSWORD`  must be at least 8 characters in length.
 
     ```bash
     SERVER_NAME="<server-name>"

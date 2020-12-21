@@ -14,10 +14,10 @@ abstract:  |
   In this module, you will:
   - Create an Azure Storage account
   - Deploy virtual cameras that upload wildlife photos to the storage account
-  - Train a machine learning model to detect polar bears in photographs
+  - Train a machine learning model to detect polar bears in photos
   - Write a function app in Azure Functions to invoke the machine learning model
-  - Use Azure SQL Database to capture output from the function app
-  - Connect Power BI to a SQL database
+  - Use Azure SQL Database to capture output from the function app in a SQL database
+  - Connect Power BI to the SQL database
   - Create a Power BI report that shows on a live map where cameras spot polar bears
 
 prerequisites: |

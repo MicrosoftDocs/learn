@@ -1,4 +1,4 @@
-In this unit, you'll create an Azure Storage account and implement a simulated camera array in Node.js that uploads wildlife photos to the account. The storage account will store photographs taken by the cameras that you deploy.
+In this unit, you'll create an Azure Storage account, and then implement a simulated camera array in Node.js that uploads wildlife photos to the storage account. The storage account will store photos that are taken by the cameras you deploy.
 
 Creating a storage account and uploading wildlife photos to the account are the first steps in building an end-to-end solution that demonstrates how you can combine Azure services to create sophisticated systems that incorporate cloud services and AI.
 
@@ -7,7 +7,7 @@ Creating a storage account and uploading wildlife photos to the account are the 
 Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud Shell provides a browser-based command line that you can use to run Azure commands. Cloud Shell is an alternative to installing the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&azure-portal=true) on your own computer.
 
 > [!NOTE]
-> Whether to use the CLI or Cloud Shell often is a matter of personal preference. One of the advantages of Cloud Shell is that it doesn't require you to install any software. Another is that you don't have to update Cloud Shell periodically as you do the CLI.
+> Whether to use the CLI or Cloud Shell often is a matter of personal preference. One of the advantages of Cloud Shell is that it doesn't require you to install any software. Another advantage is that you don't have to update Cloud Shell periodically like you do the CLI.
 
 1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). If you're prompted to sign in, sign in with your Microsoft account.
 
@@ -58,7 +58,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. Cloud
    az storage account keys list --account-name $ACCOUNT_NAME
    ```
 
-1. The primary access key is the `key1` property value that contains a long series of letters and numbers. Copy the primary access key from the output and paste it in a text file so that you can retrieve the key later. 
+1. The primary access key is the `key1` property value, which contains a long series of letters and numbers. Copy the primary access key from the output and paste it in a text file so that you can retrieve the key later. 
   
    Remember that you can select Ctrl+Insert to copy text from Cloud Shell to the clipboard.
 
@@ -66,7 +66,7 @@ Now, you have a storage account for storing photos and a container to store them
 
 ## Deploy a simulated camera array
 
-The next task is to create a Node.js app that simulates an array of motion-activated cameras. The cameras upload photos taken in the wild to the storage account's `photos` container.
+The next task is to create a Node.js app that simulates an array of motion-activated cameras. The cameras upload photos that are taken in the wild to the storage account's `photos` container.
 
 1. If Node.js isn't installed on your computer, go to [https://nodejs.org/](https://nodejs.org/?azure-portal=true) and install it now. To check whether Node.js is installed and the version that's installed, in a Command Prompt or terminal window, run this command:
 
@@ -76,7 +76,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
    If Node.js is installed, the output shows the version number. If the version number is less than 8.0, *download and install the latest version*.
 
-1. Create a directory on your hard disk to be the project directory. Then, at the command line, run `cd` to change to that directory.
+1. Create a directory on your hard disk to be the project directory. Then, at the command prompt, run `cd` to change to that directory.
 
 1. Run the following command to initialize the project directory to host a Node.js project and install a package:
 
@@ -87,11 +87,11 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     The [azure-storage](https://www.npmjs.com/package/azure-storage?azure-portal=true) package provides a programmatic interface to Azure Storage, including Blob Storage, for Node.js apps.
 
-1. When the installation finishes, in the project directory, create a subdirectory named *photos*. Download a [.zip file of camera images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/camera-images.zip?azure-portal=true). Unzip the file, and then copy the 30 .jpg files that are in the .zip file to the *photos* subdirectory.  The simulated cameras will upload these images to Blob Storage. 
+1. When the installation finishes, in the project directory, create a subdirectory named *photos*. Download a [.zip file of camera images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/camera-images.zip?azure-portal=true). Unzip the file, and then copy the 30 .jpg files that are in the .zip file to the *photos* subdirectory.  The simulated cameras upload these images to Blob Storage. 
 
-   The following images are a sample of the images in the set. Wildlife shown in the images includes Arctic foxes, polar bears, and walruses.
+   The following images are a sample of the images that are in the dataset. Wildlife shown in the images include Arctic foxes, polar bears, and walruses.
 
-   ![Two images of Arctic foxes, four of polar bears, and two of walruses.](../media/wildlife-images.png)
+   ![Two photos of Arctic foxes, four photos of polar bears, and two photos of walruses.](../media/wildlife-images.png)
 
 1. In the project directory, create a file named *cameras.json*. Paste the following JSON in the file:
 
@@ -152,7 +152,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
    This file defines 10 virtual cameras to upload photos to Blob Storage. Each camera instance contains a device ID and latitude and longitude that specify the camera's location.
 
-   The latitudes and longitudes correspond to points on the coast of Northern Canada's [Cornwallis Island](https://en.wikipedia.org/wiki/Cornwallis_Island_(Nunavut)?azure-portal=true). The island is one of the best sites in Canada to spot polar bears. Cornwallis Island is next to [Bathurst Island](https://en.wikipedia.org/wiki/Bathurst_Island_(Nunavut)?azure-portal=true), which is home to the Polar Bear Pass National Wildlife Area.
+   The latitude and longitude values correspond to points on the coast of Northern Canada's [Cornwallis Island](https://en.wikipedia.org/wiki/Cornwallis_Island_(Nunavut)?azure-portal=true). The island is one of the best sites in Canada to spot polar bears. Cornwallis Island is next to [Bathurst Island](https://en.wikipedia.org/wiki/Bathurst_Island_(Nunavut)?azure-portal=true), which is home to the Polar Bear Pass National Wildlife Area.
 
 1. In the project directory, create a file named *run.js*. Paste the following code in the file:
 
@@ -290,9 +290,9 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Select one of the blobs to show a blob detail and examine the blob's metadata. Confirm that the blob metadata contains properties named `latitude`, `longitude`, and `id`:
 
-    ![Screenshot that shows blob metadata fields in the Metadata dialog box.](../media/blob-metadata.png)
+    ![Screenshot that shows blob metadata fields in the Metadata pane.](../media/blob-metadata.png)
 
-    _Viewing blob metadata_
+    _View blob metadata_
 
 1. Open a blob to view the actual image:
    - Select the ellipsis (**…**), and then select **View** > **Edit**. Repeat this action to view the images for several blobs.
