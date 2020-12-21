@@ -4,7 +4,7 @@ Suppose your company has an Azure virtual network and you want to connect to a P
 
 Having a public endpoint means that the resource is assigned a public IP address. So, even though both your virtual network and the SQL database are located within the Azure cloud, the connection between them takes place over the internet.
 
-The problem is that your SQL database is exposed to the internet via its public IP address. That exposure creates multiple security risks. The same security risks are present when an Azure resource is accessed via a public IP address in the following scenarios:
+The problem is that your SQL database is exposed to the internet via its public IP address. That exposure creates multiple security risks. The same security risks are present when an Azure resource is accessed via a public IP address from the following locations:
 
 * A peered Azure virtual network.
 * An on-premises network that connects to Azure using ExpressRoute and Microsoft peering.
@@ -33,9 +33,9 @@ Private Endpoint is the key technology behind Private Link. Private Endpoint is 
 
 ## What is Azure Private Link Service?
 
-Private Link gives you private access from your Azure virtual network to Azure PaaS services and Microsoft Partner services in Azure. However, what if your company has created its own Azure services that are consumed by your company's customers? Is it possible to offer those customers a private connection to your company's services?
+Private Link gives you private access from your Azure virtual network to PaaS services and Microsoft Partner services in Azure. However, what if your company has created its own Azure services that are consumed by your company's customers? Is it possible to offer those customers a private connection to your company's services?
 
-Yes, by using Azure Private Link Service, which enables you to offer Private Link connections to your custom Azure services. Consumers of your custom services can then access those services privately (that is, without using the internet) from their own Azure virtual networks.
+Yes, by using Azure Private Link Service. This service lets you offer Private Link connections to your custom Azure services. Consumers of your custom services can then access those services privately—that is, without using the internet—from their own Azure virtual networks.
 
 > [!NOTE]
 > There is no charge to use Private Link Service.
@@ -44,7 +44,7 @@ Yes, by using Azure Private Link Service, which enables you to offer Private Lin
 
 Private Link working together with Private Endpoint and Private Link Service provides the following benefits:
 
-* Private access to Azure PaaS services and Microsoft Partner services on Azure. Using Private Endpoint, Azure services are mapped to your Azure virtual network. It doesn't matter that the Azure resource is in a different virtual network and in a different Active Directory tenant. To users in your Azure virtual network the resource appears to be part of that network.
+* Private access to PaaS services and Microsoft Partner services on Azure. Using Private Endpoint, Azure services are mapped to your Azure virtual network. It doesn't matter that the Azure resource is in a different virtual network and in a different Active Directory tenant. To users in your Azure virtual network the resource appears to be part of that network.
 * Private access to Azure services in any region. Private Link works globally. The private connection to an Azure service works even if that service's virtual network is in a different region than your own virtual network.
 * Non-public routes to Azure services. Once an Azure service has been mapped to your virtual network, the traffic route changes. All inbound and outbound traffic between your virtual network and the Azure service goes over the Microsoft Azure backbone network. The public internet is never used for service traffic.
 * Public endpoints are no longer required. Since all traffic to and from a mapped Azure service now flows over the Microsoft Azure backbone, the public endpoint for the service is no longer required. You can disable that public endpoint and therefore eliminate a possible security threat.

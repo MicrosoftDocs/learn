@@ -4,7 +4,7 @@ Suppose you work at Contoso, Ltd., a financial services company in Seattle with 
 
 However, Contoso IT staff are concerned that all of these connections require the public internet, which they consider a security risk. IT would like these connections to not use a public IP address.
 
-You're a network engineer at Contoso. You’re responsible for finding a way to enable employees and customers to  privately access services on the Azure platform. In particular, you want to evaluate Azure Private Link as a method for bypassing the internet and offering private connections.
+You're a network engineer at Contoso. You’re responsible for finding a way to enable employees and customers to privately access services on the Azure platform. In particular, you want to evaluate Azure Private Link as a method for bypassing the internet and offering private connections.
 
 In this module, you'll learn the fundamentals of Azure Private Link. You'll learn what it is, how it works, and when you should use it. By the end of this module, you'll be able to evaluate whether Azure Private Link is a suitable solution for offering Contoso employees and customers private access to Azure services.
 
@@ -20,6 +20,6 @@ In this module, you will:
 
 To get the best learning experience from this module, you should have:
 
-- Beginner-level knowledge of Azure, including regions, Azure virtual networks, and ExpressRoute.
-- Beginner-level knowledge of networking, including IP addresses, network interfaces, and virtual private networks.
-- Beginner-level knowledge of cloud computing, including platform as a service (PaaS).
+- Beginner-level knowledge of Azure, including regions, Azure virtual networks, Azure Virtual Network Peering, Azure Active Directory, and ExpressRoute.
+- Beginner-level knowledge of networking, including IP addresses, full qualified domain names (FQDNs), network interfaces, and virtual private networks.
+- Beginner-level knowledge of cloud computing, including tenants, virtual networks, virtual machines, and platform as a service (PaaS).

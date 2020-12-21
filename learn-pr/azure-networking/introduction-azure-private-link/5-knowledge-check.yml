@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Suppose your company wants to give private access to Azure resources via your Azure virtual network. How does Azure Private Link map an Azure resources to offer private access?"
     choices:
-    - content: "A"
-      isCorrect: false
-      explanation: "."
-    - content: "B"
+    - content: "By using an IP address from a subnet of your Azure virtual network."
       isCorrect: true
       explanation: "."
-    - content: "C"
+    - content: "By using a private IP address supplied by Azure."
       isCorrect: false
       explanation: "."
-  - content: "TBD"
+    - content: "By using Azure ExpressRoute Private Peering."
+      isCorrect: false
+      explanation: "."
+  - content: "Suppose your company wants clients in your Azure virtual network to have secure and non-public access to a particular Azure resource. Which of the following technologies should your IT staff add to your virtual network"
     choices:
-    - content: "A"
+    - content: "Azure Service Endpoint"
+      isCorrect: false
+      explanation: "."
+    - content: "Azure Private Endpoint"
       isCorrect: true
       explanation: "."
-    - content: "B"
+    - content: "Azure Firewall"
       isCorrect: false
       explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
-  - content: "TBD" 
+  - content: "Suppose your company want to offer private access to your custom Azure services via Azure Private Link Service. Which of the following technologies is a requirement for implementing Private Link Service?" 
     choices:
-    - content: "A"
+    - content: "Azure Application Gateway"
       isCorrect: false
       explanation: "."
-    - content: "B"
+    - content: "Azure Basic Load Balancer"
       isCorrect: true
       explanation: "."
-    - content: "C"
-      isCorrect: false
+    - content: "Azure Standard Load Balancer"
+      isCorrect: true
       explanation: "."
