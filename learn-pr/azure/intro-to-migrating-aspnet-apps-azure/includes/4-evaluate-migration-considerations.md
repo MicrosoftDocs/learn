@@ -1,4 +1,4 @@
-In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure.<!--Gerry, please validate this edit. -->
+In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure.<!--Gerry, please validate this edit. --> <!--Edit is good-->
 
 ## Investigate the benefits of migration
 
@@ -98,9 +98,9 @@ Cost is an important factor in helping you determine if migration is the right c
 
 ### Azure Pricing Calculator
 
-You can use the Azure Pricing Calculator<!--We only link to URLs in the summary section, so I’ve moved the link there. --> to determine the cost of the resources you plan to use on Azure. In this tool, you can select from the various categories that are available, which cover the Azure resources. You can then choose specific configurations that will display the estimated monthly costs for that service.
+You can use the Azure Pricing Calculator<!--We only link to URLs in the summary section, so I’ve moved the link there. --> <!--Ok thanks.-->to determine the cost of the resources you plan to use on Azure. In this tool, you can select from the various categories that are available, which cover the Azure resources. You can then choose specific configurations that will display the estimated monthly costs for that service.
 
-For example, if you want to evaluate the cost of using Azure VMs, you’ll select the **Virtual Machine** category, and then <!--Edited, “scroll down to view” is not accessible-->review the configuration options.  As you make changes to the options, such as region, OS, pricing tier, and size, the charts will update to reflect the chosen options.
+For example, if you want to evaluate the cost of using Azure VMs, you’ll select the **Virtual Machine** category, and then <!--Edited, “scroll down to view” is not accessible--> <!-- thanks for the edit -->review the configuration options.  As you make changes to the options, such as region, OS, pricing tier, and size, the charts will update to reflect the chosen options.
 
 :::image type="content" source="../media/vm-cost-calculator.png" alt-text="Pricing calculator depicting cost of VM with configured parameters.":::<!--Gerry, could you add a bit more detail - maybe a line about the 72% savings? -->
 

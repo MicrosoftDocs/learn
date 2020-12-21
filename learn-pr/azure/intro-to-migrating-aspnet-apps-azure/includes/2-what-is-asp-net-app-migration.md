@@ -1,10 +1,10 @@
 Modernizing your ASP.NET application and supporting data platforms to an online environment can raise many questions, such as:
 
-- What problem is being solved? 
+- What problem is being solved?
 
 - Will you need to rearchitect the application?
 
-- How much will it cost to migrate and host? 
+- How much will it cost to migrate and host?
 
 - What downtime will your application experience?
 

@@ -26,14 +26,8 @@ quiz:
     - content: SaaS
       isCorrect: false
       explanation: That's incorrect. The SaaS options has the vendor manage all the services and the customer only rents the software. The customer cannot manage the application or data.
-    - content: On-premises
-      isCorrect: false
-      explanation: That's incorrect. The customer is responsible for everything in an on-premises environment, because it is not a hosted option in Azure.
   - content: What is an App Service plan?
     choices:
-    - content: The pricing tier you select for the storage of your application.
-      isCorrect: false
-      explanation: That's incorrect. Storage accounts are used for the storage needs of an application.
     - content: The App Service plan will define a set of compute resources for your ASP.NET application.
       isCorrect: true
       explanation: That's correct. The Azure App Service uses an App Service plan to define the necessary compute resources that your app will need.
@@ -51,9 +45,6 @@ quiz:
     - content: Azure Compute
       isCorrect: false
       explanation: That's incorrect. Azure Compute is a category that relates to compute instances on Azure such as VMs.
-    - content: Resource Group
-      isCorrect: false
-      explanation: That's incorrect. Resource Groups are a mechanism in Azure that allow you to group related resources for the purpose of management.
     - content: Azure VNets
       isCorrect: true
       explanation: That's correct. Azure can help secure various aspects of your app and data by using virtual networks, which act in a similar fashion to firewalls.

@@ -20,7 +20,10 @@ You can use Azure App Service to host your ASP.NET application in an App Service
 
 :::image type="content" source="../media/web-app-azure.png" alt-text="Web app architecture hosted on Azure with app plan, DNS, resource group, and databases.":::
 
-<!--Can we make this active voice and clarify what is using the resources? Something like “The app will use other resources as well…”?-->Other resources will be used for your app as well such as:
+<!--Can we make this active voice and clarify what is using the resources? Something like “The app will use other resources as well…”?-->
+
+<!--I like it, edited to reflect that -->
+The app will user other resource as well such as:
 
 - Networking resources to provide access to the web application through the standard port 80 or https port 443. Networking also provides options for DNS and public IP addressing configurations.
 - Monitoring and logging options for the service
@@ -84,7 +87,9 @@ Azure Hybrid Benefit is a model that helps reduce your licensing costs for runni
 
 An example of a SQL Server Enterprise savings is demonstrated in this graph.
 
-:::image type="content" source="../media/azure-sql-hybrid-savings.png" alt-text="SQL hybrid savings graph showing enterprise at $3.97 per hour and hybrid at $0.598 per hour":::<!--Gerry, this graphic might benefit from a couple more lines of alt-text that describe the $3 per hour and $0.972 per hour and the 85% savings as well. -->
+:::image type="content" source="../media/azure-sql-hybrid-savings.png" alt-text="SQL hybrid savings graph showing enterprise at $3.97 per hour and hybrid at $0.598 per hour. It represents an 85% savings.":::<!--Gerry, this graphic might benefit from a couple more lines of alt-text that describe the $3 per hour and $0.972 per hour and the 85% savings as well. -->
+
+<!-- added that extra bit of text.  Didn't want the alt text to be too verbose -->
 
 ## What are migration assistance tools?
 
@@ -110,13 +115,13 @@ The Data Migration Assistant helps you upgrade to a modern data platform by dete
 
 Key features are:
 
-- Assessing on-premises SQL Server instance(s) to detect issues with a migration that resulted from compatibility issues or a lack of<!--Gerry, please validate--> feature support
+- Assessing on-premises SQL Server instance(s) to detect issues with a migration that resulted from compatibility issues or a lack of<!--Gerry, please validate--> <!--Yes, your edit is ok--> feature support
 
 - Discovering new features in Azure SQL Database that you can take advantage of
 
 - Migrating on-premises SQL Server instances to the cloud
 
-- Assessing on-premises SQL Server Integration Services package(s) <!--Single use acronym, so we use just the full term-->migrating to Azure SQL Database
+- Assessing on-premises SQL Server Integration Services package(s) <!--Single use acronym, so we use just the full term--> <!-- Sorry, I am unclear on this comment.-->migrating to Azure SQL Database
 
 ## Evaluate your existing environment
 
@@ -136,7 +141,7 @@ You application will likely require changes to make it work correctly after the 
 
 A key consideration for any migration scenario is the cost your organization will incur to host the application on Azure. You’ll be moving from a cost model that’s different from a typical on-premises environment. In the Azure environment, you’ll be billed on a monthly basis for various consumption costs related to compute, storage, and access costs.
 
-The next unit discusses the Azure Pricing Calculator, which you can use to help evaluate your estimated spend.<!--Gerry, please validate-->
+The next unit discusses the Azure Pricing Calculator, which you can use to help evaluate your estimated spend.<!--Gerry, please validate--> <!--Yes, edit is good-->
 
 ## Evaluate security considerations
 
@@ -164,4 +169,4 @@ Similar to taking an inventory of your on-premises environment for apps and hard
 
 ## Explore DevOps pipelines for a migration scenario
 
-Many organizations are adopting DevOps practices for more agile development and faster deployments. One of the key areas that makes this possible in a cloud environment is the native integration between the tools that developers use. Microsoft Visual Studio, GitHub, and App Service integration enable your developers to build and ship changes faster. For ASP.NET applications, remote and live-site debugging provide greater benefit to developers for diagnosing issues in your production environment.<!--Every microlearning module is standalone, so we ideally don’t want to refer to or link to content in another module. -->
+Many organizations are adopting DevOps practices for more agile development and faster deployments. One of the key areas that makes this possible in a cloud environment is the native integration between the tools that developers use. Microsoft Visual Studio, GitHub, and App Service integration enable your developers to build and ship changes faster. For ASP.NET applications, remote and live-site debugging provide greater benefit to developers for diagnosing issues in your production environment.<!--Every microlearning module is standalone, so we ideally don’t want to refer to or link to content in another module. --> <!--Right, I forgot about that.  Thanks for removing-->
