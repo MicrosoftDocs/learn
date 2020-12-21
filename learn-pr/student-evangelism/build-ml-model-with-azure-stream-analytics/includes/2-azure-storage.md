@@ -242,7 +242,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
    If you're running Linux or macOS, use these commands instead:
 
-   ```terminal
+   ```console
    export ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
    export ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
    ```
