@@ -35,7 +35,6 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
 1. In **Create New Resource Group**:
 
    1. For the resource group name, enter *polar-bear-rg*.
-
    1. Make sure **Location** is set to *South Central US*, and then select **Create resource group**.
 
    ![Screenshot that shows the name and location for a new resource group, with the Create resource group button selected.](../media/create-resource-group.png)
@@ -94,13 +93,13 @@ Now, you're ready to get the images to use in your project.
 
 Repeat these steps for the polar bear images:
 
-1. Download the .zip file of [polar bear training images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/training-images/polar-bear.zip). Unzip the file.
+1. Download the .zip file of [polar bear training images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/training-images/polar-bear.zip?azure-portal=true). Unzip the file.
 
 1. To upload the polar bear images in the unzipped file folder to your project, select **Add images**. For these images, set **My Tags** to *polar-bear*. Wait for the upload to finish—there are 140 files in this folder. When the upload is finished, select **Done**.
 
 Finally, repeat these steps for the walrus images:
 
-1. Download the .zip file of [walrus training images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/training-images/walrus.zip). Unzip the file.
+1. Download the .zip file of [walrus training images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/training-images/walrus.zip?azure-portal=true). Unzip the file.
 
 1. To upload the walrus images in the unzipped file folder to your project, select **Add images**. Set **My Tags** to *walrus*. Wait for the upload to finish—there are 138 files in this folder. When the upload is finished, select **Done**.
 
@@ -127,7 +126,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 
    *Precision* and *recall* are two separate but related measures of the model's accuracy. Suppose the model is presented with three polar bear images and three walrus images. It correctly identifies two of the images that contain polar bears as polar bear images, but it incorrectly identifies two of the walrus images as polar bear images. In this case, precision would be 50 percent (two of the four images it classified as polar bear images actually are polar bear images). Its recall would be 67 percent (it correctly identified two of the three polar bear images as polar bear images). Learn more about precision and recall in [Precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall?azure-portal=true).
 
-   *Average precision* (AP) is a third measurement of the model's accuracy. Whereas precision measures the false-positive rate and recall measures the false-negative rate, AP is the mean of false-positive rates computed across a range of thresholds. For more information, see [Understanding the mAP Evaluation Metric for Object Detection](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3?azure-portal=true).
+   *Average precision* (AP) is a third measurement of the model's accuracy. Whereas precision measures the false-positive rate and recall measures the false-negative rate, AP is the mean of false-positive rates that are computed across a range of thresholds. For more information, see [Understanding the mAP Evaluation Metric for Object Detection](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3?azure-portal=true).
 
 1. Now, test the model by using the portal's Quick Test feature. You can use Quick Test to submit images to the model and see how the model classifies the images by using the knowledge gained during training.
 
@@ -160,9 +159,7 @@ Now it's time to train the model by using the images that you tagged and uploade
    ![Screenshot that shows the How to use the Prediction A P I pane with the image U R L, prediction key example, and the Got it button highlighted.](../media/copy-prediction-url.png)
 
    _Copy the Prediction API URL_
-   
-
-
+ 
 1. To finish, select **Got it!**.
 
 Now, you have a machine learning model that can discern whether an image contains a polar bear, and you have a URL and API key to invoke the model. The next step is to invoke the model each time an image is uploaded to Blob Storage. Azure Functions is the perfect tool for this job.

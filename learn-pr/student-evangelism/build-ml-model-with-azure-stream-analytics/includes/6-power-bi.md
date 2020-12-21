@@ -85,7 +85,7 @@ Visualizations (*visuals*) are the primary element in a Power BI report. In this
 
     _Refine the pie chart visual_
 
-1. Clear the pie chart visual and select the **Slicer** icon to add a slicer to the report. Slicers are a convenient way to filter information in a Power BI report by narrowing the data shown in other visuals.
+1. Clear the pie chart visual and select the **Slicer** icon to add a slicer to the report. Slicers are a convenient way to filter information in a Power BI report by narrowing the data that's shown in other visuals.
 
    ![Screenshot that shows the map icon selected in the Fields pane.](../media/add-slicer.png)
 
