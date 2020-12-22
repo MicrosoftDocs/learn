@@ -1,12 +1,14 @@
-To close this module, we're going to cover less common control flows in Go: `defer`, `panic`, and `recover`. As we've said since the beginning, Go is idiomatic in several aspects, and these three functions are the proof of that. There are several use cases for each of these functions, but we'll only cover the most important ones while we explain them.
+Now consider some less-common control flows in Go: `defer`, `panic`, and `recover`. As you've already seen, Go is idiomatic in several ways. These less-common functions are also idiomatic. 
 
-Let's get started with the first function.
+Each of these functions has several use cases. You'll explore the most important use cases in this part. Let's get started with the first function.
 
 ## Defer function
 
-A `defer` statement in Go defers the execution of a function (including any parameters) when the function that contains the defer statement finishes. In other words, you'd typically defer functions when you don't want to forget about things like closing a file or run a cleanup process. You can defer as many functions as you want, but they will be executed in the reverse order in which they were deferred.
+In Go, a `defer` statement postpones the running of a function (including any parameters) until the function that contains the `defer` statement finishes. Generally, you defer a function when you want to avoid forgetting about tasks like closing a file or running a cleanup process. 
 
-Let's see how this works with an example; use the following code:
+You can defer as many functions as you want. They run in an order that's the reverse of the order of the undeferred tasks.
+
+Check out how this works by running the follow example code:
 
 ```go
 package main
@@ -21,7 +23,7 @@ func main() {
 }
 ```
 
-When you run the above code, the output is the following one:
+Here's the output of the preceding code:
 
 ```output
 regular 1
@@ -34,9 +36,9 @@ deferred -2
 deferred -1
 ```
 
-From the previous example, notice how every time the `fmt.Println("deferred", -i)` was deferred, the value for `i` was stored, and its execution was added to a queue. When the `main()` function finished printing the "regular" values, all the deferred calls were executed. That's why you see the output in reverse order (last-in-first-out).
+In this example, notice that every time `fmt.Println("deferred", -i)` was deferred, the value for `i` was stored, and its run task was added to a queue. After the `main()` function finished printing the `regular` values, all the deferred calls ran. That's why you see the output in reverse order (last in, first out).
 
-A typical application for the `defer` function is to close a file when you're done using it, like this:
+A typical use case for the `defer` function is to close a file when you finish using it. Here's an example:
 
 ```go
 package main
@@ -61,15 +63,17 @@ func main() {
 }
 ```
 
-Right after you create or open a file, you defer the `f.Close()` function to avoid forgetting to close the file after writing something into it.
+After you create or open a file, you defer the `f.Close()` function to avoid forgetting to close the file after you write something into it.
 
 ## Panic function
 
-When there are runtime errors, a Go program panics. You can force a program to panic, but this could also happen due to other runtime errors like out-of-bounds array access or nil pointer dereferences. The built-in `panic()` function stops the normal flow of control, and all the deferred function calls are executed typically. The process continues up the stack until all functions have returned. The program then crashes with a log message, including any error message and a stack trace to help diagnose the problem's root cause.
+Runtime errors make a Go program panic. You can force a program to panic, but a panic can also result from runtime errors like out-of-bounds array access and nil pointer dereferences. 
 
-When you call the `panic()` function, you can add any value as an argument. Usually, you send the error message of why you're panicking.
+The built-in `panic()` function stops the normal flow of control. All the deferred function calls are run typically. The process continues up the stack until all functions return. The program then crashes with a log message. The message includes any error and a stack trace to help you diagnose the problem's root cause.
 
-For instance, let's combine the `panic` and `defer` functions to see how the control flow is interrupted, but continue running any "clean up" processes. Use the following code snippet:
+When you call the `panic()` function, you can add any value as an argument. Usually, you send an error message about why you're panicking.
+
+For instance, combine the `panic` and `defer` functions to see how the control flow is interrupted. But continue running any clean-up processes. Use the following code snippet:
 
 ```go
 package main
@@ -92,7 +96,7 @@ func g(i int) {
 }
 ```
 
-When you run the above code, the output looks like this:
+When you run the preceding code, the output looks like this:
 
 ```output
 Printing in g() 0
@@ -122,15 +126,17 @@ main.main()
 exit status 2
 ```
 
-First, everything runs normally, and the program prints the value that the function `g()` receives. When this value is equal to 3, it panics, and you see the `Panicking!` message. At this point, the control flow is interrupted, and all the deferred functions start to print the `Defer in g()` message. As a final step, the program crashes, and you see the full stack trace. Therefore, you don't see the `Program finished successfully!` message.
+First, everything runs normally. The program prints the value that the function `g()` receives. When this value is equal to `3`, the program panics. You see the `Panicking!` message. At this point, the control flow is interrupted, and all the deferred functions start to print the `Defer in g()` message. Finally, the program crashes, and you see the full stack trace. You don't see the `Program finished successfully!` message.
 
-A call to `panic()` is usually executed when grave errors are not expected. If you want to avoid a program crash, you could use the `recover()` function, which we'll explore in the next section.
+A call to `panic()` usually runs when grave errors aren't expected. To avoid a program crash, you can use the `recover()` function. You'll learn about this function in the next section.
 
 ## Recover function
 
-There are times where you'd like to avoid the program to crash and report the error internally. Or, perhaps you simply want to clean up the mess before letting the program crash. For instance, you might want to close any connection to a resource to avoid more problems. Go provides the built-in function `recover()` to regain control after panic has occurred. However, you can only use this function in a deferred function. If you call the `recover()` function, it returns `nil` and has no other effect in normal execution.
+Sometimes you might want to avoid a program crash and instead report the error internally. Or perhaps you want to clean up the mess before letting the program crash. For instance, you might want to close any connection to a resource to avoid more problems. 
 
-Let's modify our previous code to add a call to the `recover()` function, like this:
+Go provides the built-in function `recover()` to allow you to regain control after a panic. You can use this function only in a deferred function. If you call the `recover()` function, it returns `nil` and has no other effect in normal running.
+
+Try modifying the previous code to add a call to the `recover()` function, like this:
 
 ```go
 package main
@@ -158,7 +164,7 @@ func g(i int) {
 }
 ```
 
-Run the program, and the output should look like this:
+When you run the program, the output should look like this:
 
 ```output
 Printing in g() 0
@@ -173,6 +179,10 @@ Defer in g() 0
 Recovered in main Panic in g() (major)
 ```
 
-Do you see the difference from the previous version? Well, the main difference is that you no longer see the stack trace error. In the `main()` function we're deferring an anonymous function where we call the `recover()` function. If the call to `recover()` doesn't return a `nil` it's because the program is panicking. Therefore, we can do something here to clean up the mess, but we're simply printing out something in our case.
+Do you see the difference from the previous version? The main difference is that you no longer see the stack trace error. 
 
-The combination of `panic` and `recover` is the idiomatic way of Go to handle exceptions. You have the `try/catch` block in other programming languages, but Go prefers to follow the approach we've covered in this section. If you want to read more about this topic, check out the [proposal to have a built-in `try` function](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md).
+In the `main()` function, you defer an anonymous function where you call the `recover()` function. A call to `recover()` fails to return `nil` when the program is panicking. You can do something here to clean up the mess, but in this case you're simply printing something.
+
+The combination of `panic` and `recover` is the idiomatic way that Go handles exceptions. Other programming languages use the `try/catch` block. Go prefers the approach you explored here. 
+
+For more information about this topic, check out the [proposal to add a built-in `try` function in Go](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md).

@@ -1,18 +1,18 @@
-Another common control flow is a loop. Go uses only one looping construct, and that's a `for` loop. But you have more than one way to represent loops. In this part, you'll learn that even though Go has only one keyword for loops, Go supports multiple loop patterns.
+Another common control flow is a loop. Go uses only one looping construct, and that's a `for` loop. But you can represent loops in more than one way. In this part, you'll learn about the loop patterns that Go supports.
 
-## `For` loop basic syntax
+## Basic syntax for the `for` loop
 
-Similar to the `if` and `switch` statements, in `for` loops statements, you don't need to use parenthesis for the expressions, but the braces are required.
+Like `if` statements and `switch` statements, `for` loop expressions don't require parentheses. But braces are required.
 
-There are three components in the `for` loop that are separated by semicolons (`;`):
+Semicolons (`;`) separate the three components of `for` loops:
 
-- An initial statement that is executed before the first iteration (optional)
-- A condition expression that is evaluated before every iteration (the loop stops when this is `false`)
-- A post statement that is executed at the end of every iteration (optional)
+- An initial statement that's executed before the first iteration (optional).
+- A condition expression that's evaluated before every iteration. The loop stops when this condition is `false`.
+- A poststatement that's executed at the end of every iteration (optional).
 
-As you can see, the above is very similar to a `for` loop in other programming languages like C, Java, or C#.
+As you can see, the `for` loop in Go is similar to the `for` loop in programming languages like C, Java, and C#.
 
-So, at its simplest form, a for loop in Go looks like this:
+In its simplest form, a `for` loop in Go looks like this:
 
 ```go
 func main() {
@@ -24,13 +24,13 @@ func main() {
 }
 ```
 
-Let's see what else we can do to write loops in Go.
+Let's see how else you can write loops in Go.
 
-## Empty prestatements and poststatements (`while` loops)
+## Empty prestatements and poststatements
 
-In some programming languages, you use the `while` keyword to write loop patterns where only the condition expression is required. Go has no `while` keyword, but you can use a `for` loop instead. This provision makes the prestatments and poststatements optional.
+In some programming languages, you use the `while` keyword to write loop patterns where only the condition expression is required. Go has no `while` keyword. But you can use a `for` loop instead. This provision makes prestatements and poststatements optional.
 
-Use the following code snippet to confirm that you can use the `for` loop without prestatments and poststatements.
+Use the following code snippet to confirm that you can use the `for` loop without using prestatements and poststatements.
 
 ```go
 package main
@@ -55,7 +55,7 @@ As long as the `num` variable holds a value different than `5`, the program prin
 
 ## Infinite loop and `break` statements
 
-Another loop pattern you can write in Go is the infinite loop. In this case, you don't write a condition expression or a prestatement or poststatement. Instead, you write your way out of the loop; otherwise, the logic will never exit. To make the logic exit a loop, you use the `break` keyword.
+Another loop pattern you can write in Go is the infinite loop. In this case, you don't write a condition expression or a prestatement or poststatement. Instead, you write your way out of the loop. Otherwise, the logic will never exit. To make the logic exit a loop, use the `break` keyword.
 
 To write a proper infinite loop, follow the `for` keyword with braces, like this:
 
@@ -86,11 +86,11 @@ func main() {
 
 Every time you run this code, you get a different output.
 
-## Continue statement
+## The `continue` statement
 
-Lastly, in Go, you also have the `continue` keyword available to skip the current iteration for the loop. You might find useful this keyword when you need to run a validation before continuing with the loop. Perhaps you're writing an infinite loop, and you're waiting for a resource to become available.
+In Go, you can use the `continue` keyword to skip the current iteration of a loop. You can use this keyword, for example, to run a validation before the loop continues. Or use it when you're writing an infinite loop and need to wait for a resource to become available.
 
-Here's a simple example of using the `continue` keyword:
+This example uses the `continue` keyword:
 
 ```go
 package main
@@ -109,4 +109,4 @@ func main() {
 }
 ```
 
-The above excludes simply excludes numbers divisible by 5.
+This example excludes numbers that are divisible by 5.
