@@ -20,43 +20,41 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="javascript"
 
-1. Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated the sandbox with.
+1. Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
 
 1. From the portal menu, select **Create a resource**.
 
-    [!include[](../../includes/functions-classic-workaround.md)]
+   [!include[](../../includes/functions-classic-workaround.md)]
 
-    ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
+   ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. Select **Compute > Function App**.
+1. In the left navigation, select **Compute**, then select **Function App**.
 
-    ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
+   ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
 
-1. Choose a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and -.
+   The **Create Function App** page appears.
+   
+1. In the **Create Function App** page, configure the following settings on the **Basics** tab.
+   
+   Under the **Project Details** section:
+   - **Subscription**: Concierge Subscription
+   - **Resource Group**: "**<rgn>[sandbox resource group name]</rgn>**"
+   
+   Under the **Instance Details** section:
+   - **Function App name**: Enter a globally unique app name. The name serves as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If the value isn't globally unique, you can try any other combination. Valid characters are lowercase letters, numbers, and the hyphen.
+   - **Publish**: Code
+   - **Runtime stack**: Node.js (The language used to implement the function examples in this exercise.)
+   - **Version**: *default*
+   - **Region**: Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
 
-1. Select the Azure sandbox subscription **Concierge Subscription**.
-
-1. Select the existing resource group called "**<rgn>[sandbox resource group name]</rgn>**".
-
-1. For **Runtime Stack**, select **Node.js** from the dropdown, which is the language in which we implement the function examples in this exercise.
-
-1. For **Version**, leave as default.
-
-1. Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
-
-1. Select **Review + create**, then select **Create**; deployment will take a few minutes. You'll receive a notification after it's complete.
+1. Select **Review + create**, and then select **Create**. Deployment can take a few minutes. You'll receive a notification when deployment completes.
 
 ::: zone-end
 
 ## Verify your Azure function app
 Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated the sandbox with
 
-1. From the Azure portal left-hand menu, select **Resource groups**. You should then see a resource group named **<rgn>[sandbox resource group name]</rgn>** in the list of available groups.
+1. When deployment is completed, select **Go to resource**. Your Function App page appears.
 
-    ![Screenshot of the Azure portal showing the Resource groups pane with the Resource groups menu item and <rgn>[sandbox resource group name]</rgn> list item highlighted.](../media/3-resource-group.png)
+1. In the **Essentials** section, select the **URL** link to open it in a browser. You should get a default web page that indicates your Function App is up and running.
 
-1. Select the resource group **<rgn>[sandbox resource group name]</rgn>**. You should then see a resource list like the following list.
-
-    ![Screenshot of the Azure portal showing all resources within the <rgn>[sandbox resource group name]</rgn> group, including entries for an App Service plan, a Storage account, Application Insights resource, and an App Service.](../media/3-resource-list.png)
-
-The item with the lightning bolt icon is your new Function App. Select it to open the details about the new function. It has a public URL assigned to it. If you open that in a browser, you should get a default web page that indicates your Function App is running.
