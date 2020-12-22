@@ -1,4 +1,4 @@
-You're a database administrator for a retail organization, and you need to upgrade several CRM databases to SQL Server 2019. The source databases include versions from SQL Server 2008R2 through to SQL Server 2016. You'll use the **Microsoft Data Migration Assistant (DMA)** to check the compatibility of these older databases before upgrading to SQL Server 2019. 
+You're a database administrator for a law firm, and you need to upgrade several CRM databases to SQL Server 2019. The source databases include versions from SQL Server 2008R2 through to SQL Server 2016. You'll use the **Microsoft Data Migration Assistant (DMA)** to check the compatibility of these older databases before upgrading to SQL Server 2019. 
 
 In this exercise, you'll run the DMA compatibility and performance assessments on a SQL Server 2008 database, then view the results for a SQL Server 2019 target.
 
