@@ -35,7 +35,7 @@ SELECT TOP(10) SalesOrderId, details
                     )  As SalesOrderDetails
 ```
 
-![Accessing JSON Properties in a query in Azure Synapse Studio](../media/access-json-properties-synapse-studio.png)
+[![Accessing JSON Properties in a query in Azure Synapse Studio](../media/access-json-properties-synapse-studio.png)](../media/access-json-properties-synapse-studio.png#lightbox)
 
 Click **run**.
 
@@ -84,7 +84,7 @@ Paste the following SQL into the query pane.
 SELECT TOP(10) * FROM SalesOrderDetails
 ```
 
-![View results from a query in Azure Synapse Studio](../media/view-results-from-query-synapse-studio.png)
+[![View results from a query in Azure Synapse Studio](../media/view-results-from-query-synapse-studio.png)](../media/view-results-from-query-synapse-studio.png#lightbox)
 
 Click **run**.
 

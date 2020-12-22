@@ -11,7 +11,7 @@ SELECT TOP(10) * FROM
                 ON SalesOrders.SalesOrderId = SalesOrderDetails.SalesOrderID
 ```
 
-![Querying joined views in Azure Synapse Studio](../media/query-joined-views-synapse-studio.png)
+[![Querying joined views in Azure Synapse Studio](../media/query-joined-views-synapse-studio.png)](../media/query-joined-views-synapse-studio.png#lightbox)
 
 Click **run**.
 
@@ -44,7 +44,7 @@ GO
 ```
 The query above will create the SalesOrderStats view and output the results of the view created 
 
-![Creating and querying a view in Azure Synapse Studio](../media/create-query-views-synapse-studio.png)
+[![Creating and querying a view in Azure Synapse Studio](../media/create-query-views-synapse-studio.png)](../media/create-query-views-synapse-studio.png#lightbox)
 
 Click **run**.
 

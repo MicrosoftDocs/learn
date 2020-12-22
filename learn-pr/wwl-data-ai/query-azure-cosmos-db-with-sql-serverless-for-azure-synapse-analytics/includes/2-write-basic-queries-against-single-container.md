@@ -5,14 +5,14 @@ We are going to be working the same two new containers (Customer and SalesOrder)
 
 1.	Connect to an Azure Synapse Workspace that has an Azure Synapse SQL Serverless instance, and an Azure Synapse Spark Pool.
 
-    ![The home page of Azure Synapse Studio](../media/azure-synapse-studio.png)
+    [![The home page of Azure Synapse Studio](../media/azure-synapse-studio.png)](../media/azure-synapse-studio.png#lightbox)
 
 2.	In the left-hand menu, select **Data (A)**
 3.	Click on the **Linked tab** in the explorer view **(B)**
 4.	Expand the **AdventureWorksSQL** linked service to expose the **Customer** container
 5.	Expand the **AdventureWorksMongoDB** linked service to expose the **SalesOrder** container.
 
-    ![Viewing linked services in Azure Synapse Studio](../media/view-linked-services.png)
+    [![Viewing linked services in Azure Synapse Studio](../media/view-linked-services.png)](../media/view-linked-services.png#lightbox)
 
     Here you can see additional two containers now visible in the data explorer view under the previously created linked service to our Azure Cosmos DB accounts (these containers already have Adventure Works data loaded into them) . The first, **Customer (C)**, has been created in the AdventureWorks database within the Azure Cosmos DB SQL API account and contains customer profile information. The second, **SalesOrder (D)**, has been created the AdventureWorks database within the Azure Cosmos DB API for MongoDB account and contains sales order information.
 
@@ -49,7 +49,7 @@ We are going to be working the same two new containers (Customer and SalesOrder)
     }    
     ```
 
-    ![Open a SQL Script in Azure Synapse Studio](../media/open-sql-script-synapse-studio.png)
+    [![Open a SQL Script in Azure Synapse Studio](../media/open-sql-script-synapse-studio.png)](../media/open-sql-script-synapse-studio.png#lightbox)
 
 6.	In the left-hand menu, select **develop (E)**
 
@@ -61,11 +61,11 @@ We are going to be working the same two new containers (Customer and SalesOrder)
 
 10.	And then click the **properties icon (I)** to close the properties blade.
 
-    ![Defining a SQL script in Azure Synapse Studio](../media/view-sql-script-synapse-studio.png)
+    [![Defining a SQL script in Azure Synapse Studio](../media/view-sql-script-synapse-studio.png)](../media/view-sql-script-synapse-studio.png#lightbox)
 
     Because we are going to utilize the built-in SQL Serverless pool, you can choose **built-in** from the **connect to:** drop down at the top of the query pane (J). You will see that the default database is now **master**.
 
-    ![Connect to SQL Serverless in Azure Synapse Studio](../media/connect-to-sql-serverless.png)
+    [![Connect to SQL Serverless in Azure Synapse Studio](../media/connect-to-sql-serverless.png)](../media/connect-to-sql-serverless.png#lightbox)
 
     Lets create a database in which we will store the objects we are going to query.
 
@@ -79,13 +79,13 @@ We are going to be working the same two new containers (Customer and SalesOrder)
         GO
         ```
 
-        ![Execute a SQL Script in Azure Synapse Studio](../media/execute-sql-script-synapse-studio.png)
+        [![Execute a SQL Script in Azure Synapse Studio](../media/execute-sql-script-synapse-studio.png)](../media/execute-sql-script-synapse-studio.png#lightbox)
 
         This will create a database named **SynapseLinkDB** and the select it for use within the subsequent session. 
 
         An alternative method of selecting this database for use is to click on the **Use database (N)** drop-down and selecting the database you wish to use, in our case **SynapseLinkDB (O)**.
 
-        ![Select the database context in Azure Synapse Studio](../media/select-database-context-synapse-studio.png)
+        [![Select the database context in Azure Synapse Studio](../media/select-database-context-synapse-studio.png)](../media/select-database-context-synapse-studio.png#lightbox)
 
         Let’s also create a little more display real-estate by minimizing the explorer blade by:
 
@@ -104,7 +104,7 @@ We are going to be working the same two new containers (Customer and SalesOrder)
                     ,Customer) AS Customer
     ```
 
-    ![Execute a query in Azure Synapse Studio](../media/execute-query-synapse-studio.png)
+    [![Execute a query in Azure Synapse Studio](../media/execute-query-synapse-studio.png)](../media/execute-query-synapse-studio.png#lightbox)
 
 14.	And then click **run**.
 
@@ -154,7 +154,7 @@ Let us now create a view of our customers that we can use in our SQL queries in 
                         AS Customers
     ```
 
-    ![Create a view in Azure Synapse Studio](../media/create-view-synapse-studio.png)
+    [![Create a view in Azure Synapse Studio](../media/create-view-synapse-studio.png)](../media/create-view-synapse-studio.png#lightbox)
 
     Here you will note that we have expanded the functionality of OPENROWSET function of the CREATE VIEW statement to include a **WITH clause (U)** that allows us to:
 
@@ -168,6 +168,6 @@ Let us now create a view of our customers that we can use in our SQL queries in 
     SELECT TOP(10) * FROM Customers
     ```
 
-    ![Query a view in Azure Synapse Studio](../media/query-view-synapse-studio.png)
+    [![Query a view in Azure Synapse Studio](../media/query-view-synapse-studio.png)](../media/query-view-synapse-studio.png#lightbox)
 
     Here you can see the **results (Z)** from our Customers view, returning a flattened columnar view of the JSON documents that reside in the customer container within the Azure Cosmos DB SQL API account.

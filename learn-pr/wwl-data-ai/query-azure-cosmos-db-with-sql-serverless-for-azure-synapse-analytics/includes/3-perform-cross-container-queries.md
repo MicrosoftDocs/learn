@@ -34,7 +34,7 @@ SELECT top 10 *
                     SalesOrder) As SalesOrders
 ```
 
-![Execute a cross-container query in Azure Synapse Studio](../media/execute-cross-container-query-synapse-studio.png)
+[![Execute a cross-container query in Azure Synapse Studio](../media/execute-cross-container-query-synapse-studio.png)](../media/execute-cross-container-query-synapse-studio.png#lightbox)
 
 Click **run**.
 
@@ -67,7 +67,7 @@ SELECT  SalesOrderId, SalesOrders.customerId CustomerId,
                 On SalesOrders.customerId = Customers.CustomerId
 ```
 
-![Create a cross-container view in Azure Synapse Studio](../media/create-cross-container-view-synapse-studio.png)
+[![Create a cross-container view in Azure Synapse Studio](../media/create-cross-container-view-synapse-studio.png)](../media/create-cross-container-view-synapse-studio.png#lightbox)
 
 Here you can see we are using the **WITH clause (C)** again to specify the path to our property values, notably **including the data type suffix (D)** of the property as part of the path to the property in order to access the values when using the full fidelity schema. In this example, we need to specify “$.shipDate.string” rather than just “$.shipDate”.
 
@@ -79,6 +79,6 @@ Let see what this view returns by:
 SELECT top 10 * FROM SalesOrders
 ```
 
-![Query a view in Azure Synapse Studio](../media/query-view.png)
+[![Query a view in Azure Synapse Studio](../media/query-view.png)](../media/query-view.png#lightbox)
 
 Here you can see the results from our SalesOrders view, returning a flattened columnar view of the JSON documents that reside in the SalesOrder container within the Azure Cosmos DB API for MongoDB account.
