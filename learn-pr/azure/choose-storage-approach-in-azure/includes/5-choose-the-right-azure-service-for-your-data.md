@@ -6,12 +6,12 @@ Choosing the correct storage solution can lead to better performance, cost savin
 
 **Operations:**
 
-- Customers require a high number of read operations, with the ability to query on many fields within the database.
-- The business requires a high number of write operations to track the constantly changing inventory.
+- Customers require a high number of read operations, with the ability to query many fields within the database.
+- The business requires a high number of write operations to track its constantly changing inventory.
 
 **Latency & throughput:** High throughput and low latency.
 
-**Transactional support:** Because all of the data is historical and unchanging, transactional support is NOT REQUIRED. 
+**Transactional support:** Because all of the data is both historical and yet changing, transactional support is required. 
 
 ### Recommended service: Azure Cosmos DB
 
@@ -63,7 +63,7 @@ You could upload your images to Azure App Service, so that the same server that 
 
 **Latency & throughput:** Some latency in the results is expected based on the complex nature of the queries.
 
-**Transactional support:** Required
+**Transactional support:** Not required
 
 ### Recommended service: Azure SQL Database
 
