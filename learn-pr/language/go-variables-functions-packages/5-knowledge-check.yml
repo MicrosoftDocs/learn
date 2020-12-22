@@ -25,32 +25,32 @@ quiz:
       explanation: "Correct! This statement declares and initializes a variable."
     - content: "string firstName = \"John\""
       isCorrect: false
-      explanation: "This statement will result in a syntax error. Additionally, you don't need to specify a type because Go will infer the type is string."
+      explanation: "This statement will cause a syntax error. And you don't need to specify a type because Go will infer that the type is string."
     - content: "firstName = \"John\""
       isCorrect: false
-      explanation: "This is close, but will result in an error where firstName is undefined. The declaration syntax (:=) is missing here."
-  - content: "What happens when you've declared variables but don't use them?"
+      explanation: "This answer is close, but this statement will cause an error because firstName is undefined. The declaration syntax (`:=`) is missing here."
+  - content: "What happens when you declare a variable but don't use it?"
     choices:
     - content: "You simply get a warning."
       isCorrect: false
-      explanation: "You will not get a warning, but will receive something else instead."
-    - content: "Nothing, there's no problem if you have unused objects."
+      explanation: "You won't get a warning, but something else will happen."
+    - content: "Nothing. There's no problem if you have unused objects."
       isCorrect: false
-      explanation: "There is, in fact, a problem when a declared variable is not used."
-    - content: "You get a warning, but the next time it won't compile."
+      explanation: "There is, in fact, a problem when a declared variable isn't used."
+    - content: "You get a warning, but the next time the code won't compile."
       isCorrect: false
-      explanation: "You will get something other than a warning."
-    - content: "You get an error; the program doesn't compile."
+      explanation: "You'll get something other than a warning."
+    - content: "You get an error. The program won't compile."
       isCorrect: true
-      explanation: "Correct. Go requires that variables are used in programs or it will throw an error that the variable was declared but not used."
+      explanation: "Correct. Go requires that variables are used in programs. It will throw an error stating that the variable was declared but not used."
   - content: "How do data conversion types work in Go?"
     choices:
-    - content: "You have to do conversion explicitly; implicit conversion doesn't work in Go."
+    - content: "You have to do conversion explicitly. Implicit conversion doesn't work in Go."
       isCorrect: true
       explanation: "Correct. With Go, you need to be explicit when converting a value from one type to another."
     - content: "You can do implicit casting from `int` to `int32`."
       isCorrect: false
-      explanation: "If you try to do this the program will result in an 'invalid operation' error."
+      explanation: "If you try to do implicit casting, the program will throw an 'invalid operation' error."
     - content: "You can only do it through external libraries."
       isCorrect: false
       explanation: "Conversions don't need to be done in external libraries. You can use a built-in function or package instead."
