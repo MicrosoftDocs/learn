@@ -8,7 +8,7 @@ Fundamentally, this handshake between systems allows you to build your own appli
 
 APIs have traditionally been built with a variety of protocols, including the XML-based Simple Object Access Protocol ([SOAP](https://en.wikipedia.org/wiki/SOAP?azure-portal=true)) and Representational State Transfer ([REST](https://en.wikipedia.org/wiki/Representational_state_transfer?azure-portal=true)). SOAP is a powerful tool for sending and receiving messages between systems. But REST, with its ability to return both XML and the popular JSON format, has emerged as a more common way to use internet-connected web services and HTTP calls to send and receive data from third-party connections. 
 
-When an API or other interface follows the principles of REST, that interface is referred to as **RESTful**. We will use both terms loosely in the rest of this module as we learn about building and using RESTful APIs.
+When an API or other interface follows the principles of REST, that interface is referred to as *RESTful*. We'll use both terms loosely in the rest of this module as you learn about building and using RESTful APIs.
 
 ## Learn more about APIs
 
