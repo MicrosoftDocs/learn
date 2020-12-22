@@ -14,7 +14,7 @@ The first example that comes up is this slick example from the 1950s:
 
 >[!TIP] 
 >[Postman](https://www.postman.com?azure-portal=true) is an excellent tool for testing API endpoints.
-
+Try out using a library to call the Cooper Hewitt API in your preferred programming language by copy/pasting and running the below code snippet in your local development environment.
 ::: zone pivot="javascript"
 
 ```javascript

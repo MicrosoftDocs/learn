@@ -6,7 +6,9 @@ One example of an API is the [jQuery API](https://api.jquery.com?azure-portal=tr
 
 Fundamentally, this handshake between systems allows you to build your own applications with the help of a technology that allows you to easily use other systems to enhance your own.
 
-APIs have traditionally been built with a variety of protocols, including the XML-based Simple Object Access Protocol ([SOAP](https://en.wikipedia.org/wiki/SOAP?azure-portal=true)) and Representational State Transfer ([REST](https://en.wikipedia.org/wiki/Representational_state_transfer?azure-portal=true)). SOAP is a powerful tool for sending and receiving messages between systems. But REST, with its ability to return both XML and the popular JSON format, has emerged as a more common way to use internet-connected web services and HTTP calls to send and receive data from third-party connections. For this reason, you'll learn about building and using REST APIs in this module.  
+APIs have traditionally been built with a variety of protocols, including the XML-based Simple Object Access Protocol ([SOAP](https://en.wikipedia.org/wiki/SOAP?azure-portal=true)) and Representational State Transfer ([REST](https://en.wikipedia.org/wiki/Representational_state_transfer?azure-portal=true)). SOAP is a powerful tool for sending and receiving messages between systems. But REST, with its ability to return both XML and the popular JSON format, has emerged as a more common way to use internet-connected web services and HTTP calls to send and receive data from third-party connections. 
+
+When an API or other interface follows the principles of REST, that interface is referred to as **RESTful**. We will use both terms loosely in the rest of this module as we learn about building and using RESTful APIs.
 
 ## Learn more about APIs
 

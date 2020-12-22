@@ -1,6 +1,6 @@
 So far, you've built an API that works on your local machine to give you a good understanding of how APIs work. You'll now query your first API to search for objects in a real third-party API: New York's Metropolitan Museum API.
 
-One wonderful thing about modern museum collections management is that the ongoing efforts to digitize collections and bring them online has also allowed the casual art lover to access their data. [The Smithsonian museums](https://www.si.edu/openaccess?azure-portal=true) in the US, the [Rijksmuseum](https://www.rijksmuseum.nl/en/api/-rijksmuseum-oai-api-instructions-for-use?azure-portal=true) in Amsterdam, and the [Chicago Art Institute](https://aggregator-data.artic.edu/home?azure-portal=true) in the US are among many museums that are opening their collections to allow the public to access them virtually.
+One wonderful thing about modern museum collections management is that the ongoing efforts to digitize collections and bring them online has also allowed the casual art lover to access their data. [The Smithsonian museums](https://www.si.edu/openaccess?azure-portal=true) in the US, the [Rijksmuseum](https://www.rijksmuseum.nl/en/api/-rijksmuseum-oai-api-instructions-for-use?azure-portal=true) in Amsterdam, and the [Chicago Art Institute](https://www.artic.edu/open-access/public-api?azure-portal=true) in the US are among many museums that are opening their collections to allow the public to access them virtually.
 
 ## Research the API
 
@@ -35,7 +35,6 @@ This query gives you the information to retrieve the objects that are returned. 
 ## Summary
 
 The Metropolitan Museum's well-organized and easy-to-access API is a great place to start imagining how you might use an API in your website. You can build a search by using the `search` endpoint and query parameters. You can query the `department` for a group of objectIds and loop over them to create a list of interesting objects. You can explore the collection in depth and in detail without ever touching or even understanding the database underlying it. That's the power of a great API!
-
 
 
 
