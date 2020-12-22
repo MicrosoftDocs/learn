@@ -1,6 +1,6 @@
-Another common control flow is a loop. In Go, there's only one looping construct, and that is a `for` loop. However, this doesn't mean that you only have one way of representing loops. In this section, you'll learn that even though Go has only one keyword for loops, Go supports different loop patterns.
+Another common control flow is a loop. Go uses only one looping construct, and that's a `for` loop. But you have more than one way to represent loops. In this part, you'll learn that even though Go has only one keyword for loops, Go supports multiple loop patterns.
 
-## For loop basic syntax
+## `For` loop basic syntax
 
 Similar to the `if` and `switch` statements, in `for` loops statements, you don't need to use parenthesis for the expressions, but the braces are required.
 
@@ -26,11 +26,11 @@ func main() {
 
 Let's see what else we can do to write loops in Go.
 
-## Empty pre and post statements (while loops)
+## Empty prestatements and poststatements (`while` loops)
 
-In other programming languages, you have the `while` keyword available to write different loop patterns where only the condition expression is required. In Go, there is no `while` keyword, but a `for` loop can be used instead. This is why the pre and post statements are optional, as you learned in the previous section.
+In some programming languages, you use the `while` keyword to write loop patterns where only the condition expression is required. Go has no `while` keyword, but you can use a `for` loop instead. This provision makes the prestatments and poststatements optional.
 
-Use the following code snippet to confirm that you can use the `for` loop without pre and post statements:
+Use the following code snippet to confirm that you can use the `for` loop without prestatments and poststatements.
 
 ```go
 package main
@@ -51,13 +51,13 @@ func main() {
 }
 ```
 
-As long as the `num` variable holds a value different than 5, the program will print out a random number.
+As long as the `num` variable holds a value different than `5`, the program prints a random number.
 
-## Infinite loop and break statements
+## Infinite loop and `break` statements
 
-Another loop pattern that is possible to write in Go are infinite loops. In this case, you don't write a condition expression, nor a pre or post statement. Therefore, you need to write a way out of the loop; otherwise, the program will never exit. To exit a loop, you use the `break` keyword.
+Another loop pattern you can write in Go is the infinite loop. In this case, you don't write a condition expression or a prestatement or poststatement. Instead, you write your way out of the loop; otherwise, the logic will never exit. To make the logic exit a loop, you use the `break` keyword.
 
-So, to write a proper infinite loop, you simply write the `for` keyword followed immediately by braces, like this:
+To write a proper infinite loop, follow the `for` keyword with braces, like this:
 
 ```go
 package main
@@ -84,7 +84,7 @@ func main() {
 }
 ```
 
-Every time you run the above code, you get a different output.
+Every time you run this code, you get a different output.
 
 ## Continue statement
 
