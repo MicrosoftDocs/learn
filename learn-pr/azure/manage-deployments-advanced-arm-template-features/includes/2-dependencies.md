@@ -74,7 +74,7 @@ Typical code for a parent-child relationship in a template looks like this:
 ]
 ```
 
-This parent-child dependency doesn't automatically create a dependency in which the parent is deployed before it's child. You need to make the dependency explicit.
+This parent-child dependency doesn't automatically create a dependency in which the parent is deployed before its child. You need to make the dependency explicit.
 
 So when you express such a relationship, be sure to add a `dependsOn` construct, like the following:
 
