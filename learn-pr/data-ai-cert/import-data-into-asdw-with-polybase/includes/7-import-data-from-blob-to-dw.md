@@ -9,15 +9,13 @@ You use a built-in query editor in the Azure portal to run the necessary queries
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal).
 
-1. Select **SQL database** in the left sidebar. If it's not present, use the search box at the top to search for the database by name.
+1. Select **SQL database** in the nav bar. If it's not present, use the search box at the top to search for the database by name.
 
     ![Showing SQL databases](../media/7-show-sql-db.png)
 
-1. Select **DemoDW** as the name of the target database where you want to import the data.
+1. Select **demodw** as the name of the target database where you want to import the data.
 
-1. Select **Query editor (preview)** from the **Common tools** section. This tool is a built-in SQL query editor.
-
-    ![Opening the query editor preview](../media/7-open-query-editor.png)
+1. In the nav bar, under the **Overview** section, select **Query editor (preview)**. This tool is a built-in SQL query editor.
 
     > [!TIP]
     > If you want to work with a desktop-based tool, you can open Visual Studio from here.
@@ -37,7 +35,7 @@ The first step in using PolyBase is to create a database-scoped credential that 
     
     CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
     WITH
-        IDENTITY = 'DemoDwStorage',
+        IDENTITY = 'demodwStorage',
         SECRET = 'THE-VALUE-OF-THE-ACCESS-KEY' -- put key1's value here
     ;
     ```

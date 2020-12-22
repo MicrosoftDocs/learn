@@ -27,9 +27,12 @@ Next, connect the storage account as the destination for the Stream Analytics jo
 1. In the search box, type **Stream Analytics** and select **Stream Analytics job** from the results.
 1. Select the Stream Analytics job you created.
 1. Under **Job topology**, select **Outputs**.
-1. Select **Add**, and from the list select **Blob storage**.
-1. In the **Output alias** field, type **streamoutput**. This is your own name for the output.
-1. Select the **streamsink** storage account you created in the previous section.
+1. Select **+ Add**, and from the list select **Blob storage/ADLS Gen2.**.
+1. **Select Event Hub from your subscriptions**: checked
+1. **Subscription**: Your subscription name
+1. **Storage account**: :awsastudxx:, where xx is your initials
+1. **Container**: Use existing and select phonecalls
+1. Leave the rest of the entries as default values. Finally, click Save.
 
 > [!NOTE]
 > If your account doesn't appear in the list, try refreshing it by closing the Azure portal, closing the browser, and then opening the Azure portal again.

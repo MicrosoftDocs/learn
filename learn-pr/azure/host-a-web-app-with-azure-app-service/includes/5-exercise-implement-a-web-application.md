@@ -56,7 +56,7 @@ If you open a second command shell session, for example by browsing to <https://
     curl -KL http://127.0.0.1:5000/
     ```
 
-    You should see some HTML displayed:
+    You should see some HTML displayed.
 
 1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
 
@@ -236,7 +236,7 @@ If you open a second command shell session, for example by browsing to <https://
 1. From your second command shell session, run the following command to browse to your web application:
 
     ```bash
-    curl http://127.0.0.1:5000/
+    curl https://127.0.0.1:5001/
     ```
 
     You should see the following displayed:
