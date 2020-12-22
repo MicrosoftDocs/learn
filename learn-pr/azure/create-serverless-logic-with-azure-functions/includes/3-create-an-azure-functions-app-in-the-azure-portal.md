@@ -28,7 +28,7 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. From the left nav bar, select **Compute**, then select **Function App**.
+1. From the left nav bar, select **Compute**, and then select **Function App**.
 
     ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
 
@@ -50,10 +50,28 @@ Let's create a function app in the Azure portal.
 
 ::: zone-end
 
+::: zone pivot="powershell"
+
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as you activated for the sandbox.
+
+1. From the Azure portal menu, select **Resource groups**. You should then see a resource group named **learn-e0dad911-2b85-4c63-8b7a-0d2ca7eed3bc** in the list of available groups.
+
+    ![Screenshot of the Azure resource groups](../media/3-resource-group.png)
+
+1. Select the resource group **learn-e0dad911-2b85-4c63-8b7a-0d2ca7eed3bc**. You should then see a resource list like the following list.
+
+    ![Screenshot of the Azure resource list](../media/3-resource-list.png)
+
+    Select your new Function App (identified with lightning bolt icon) to open the details about the new function. It has a public URL assigned to it. Select that link to open it in a browser. You should get a default web page that indicates your Function App is running.
+
+::: zone-end
+
+::: zone pivot="javascript"
+
 ## Verify your Azure function app
-Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated the sandbox with
 
 1. When deployment is completed, select **Go to resource**. Your Function App page appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. You should get a default web page that indicates your Function App is up and running.
 
+::: zone-end

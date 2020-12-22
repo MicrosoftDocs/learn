@@ -192,7 +192,7 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
 1. Next, from the left nav bar, select **Functions**, and then select the **HttpTrigger1**.
 
-1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. An **Test** pane appears. Under the **Input** pane, in the ***Body** text box, overwrite the embedded code by pasting the following cURL command.
+1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. A **Test** pane appears. Under the **Input** pane, in the ***Body** text box, overwrite the embedded code by pasting the following cURL command.
 
 1. Replace the placeholders in the code with the URL for your function and the function key you previously saved to Notepad or a similar app. Select **Run**.
 
@@ -208,10 +208,10 @@ The function and master keys are found in the **Function Keys** in the left-hand
 Under the **Output** pane, for **HTTP response code**, the function responds with the text `"200 OK"`.
 
 > [!CAUTION]
-> If you are on Windows, please run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest and is not the same as `cURL`.
+> If you are on Windows, run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
 
 > [!NOTE]
-> You can also test from an individual function's section with the **Test** pane on the side of a selected function, though you won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
+> You can also test from an individual function's section with the **Test** pane appearing on the side of a selected function. You won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
 
 ## Add business logic to the function
 
