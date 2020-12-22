@@ -83,23 +83,23 @@ The `copyIndex()` function has two different input parameters, `loopName` and `o
 
 The `loopName` parameter is either optional or mandatory, depending on where it's used. It's mandatory if used inside of a `properties` construct, and optional if used in a `resources` array. Here's an example where it's mandatory:
 
-    ```json
-    "properties": {
-        "storageProfile": {
-          "copy": [
-            {
-              "name": "dataDisks",
-              "count": "[parameters('numberOfDataDisks')]",
-              "input": {
-                "diskSizeGB": 1023,
-                "lun": "[copyIndex('dataDisks')]",
-                "createOption": "Empty"
-              }
-            }
-          ]
+```json
+"properties": {
+    "storageProfile": {
+      "copy": [
+        {
+          "name": "dataDisks",
+          "count": "[parameters('numberOfDataDisks')]",
+          "input": {
+            "diskSizeGB": 1023,
+            "lun": "[copyIndex('dataDisks')]",
+            "createOption": "Empty"
+          }
         }
+      ]
     }
-    ```
+}
+```
 
 Note how the `copy` element is used inside of a `properties` construct, and `copyIndex()` has the `loopName` specified as `copyIndex('dataDisks')`.
 
