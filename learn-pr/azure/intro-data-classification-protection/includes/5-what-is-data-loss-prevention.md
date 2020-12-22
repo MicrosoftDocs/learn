@@ -53,7 +53,7 @@ With a DLP policy, you can:
 - View DLP alerts and reports showing content that matches your organization’s DLP policies. To view alerts and metadata related to your DLP policies you can use the DLP Alerts Management Dashboard. You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 
-![DLP](C:\Users\ddami\OneDrive\Desktop\Azure data residency\Development\M2\DLP.png)
+:::image type="content" source="../media/5-DLP.png" alt-text="Image shows DLP Policy components.":::
 
 A DLP policy contains a few basic things:
 
