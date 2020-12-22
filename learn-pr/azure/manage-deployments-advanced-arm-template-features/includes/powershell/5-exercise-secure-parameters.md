@@ -25,7 +25,7 @@ Create a key vault and allow deploy time access. To do so:
 
     Copy the value somewhere convenient for the next step.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
@@ -125,7 +125,7 @@ Here, you deploy the same ARM template that you deployed in the previous exercis
 
 Verify that the VM is provisioned and is connectable over SSH. To do so:
 
-1. Run the `Invoke-Expression` command to connect to the VM via SSH::
+1. Run the `Invoke-Expression` command to connect to the VM via SSH:
 
    ```powershell
    Invoke-Expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
