@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-data-classification-protection.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+
+questions:
+
+  - content: "Which phases are included in Microsoft's approach to sensitive data protection?"
+    choices:
+    - content: "Protect, Encrypt, Monitor and Destroy"
+      isCorrect: false
+      explanation: "That is not correct. Microsoft's approach includes Discover, Classify, Protect and Monitor phases."
+    - content: "Discover, Protect, Sign and Monitor"
+      isCorrect: false
+      explanation: "That is not correct. Microsoft's approach includes Discover, Classify, Protect and Monitor phases."
+    - content: "Discover, Classify, Protect and Monitor"
+      isCorrect: true
+      explanation: "That is correct. Microsoft's approach includes Discover, Classify, Protect and Monitor phases."
+
+
+  - content: "When you implement data classification, what is the meta data being added after data is classified?"
+    choices:
+    - content: "Permission list"
+      isCorrect: false
+      explanation: "That is not correct. Meta data that is added as a result of classification is classification label."
+    - content: "Label"
+      isCorrect: true
+      explanation: "That is correct. Meta data that is added as a result of classification is classification label."
+    - content: "Digital signature"
+      isCorrect: false
+      explanation: "That is not correct. Meta data that is added as a result of classification is classification label."
+
+   - content: "You have chosen to perform content based classification on your data. What condition you can use to automate this process?"
+    choices:
+    - content: "Permissions on the data"
+      isCorrect: false
+      explanation: "That is not correct. You can use keywords to automatically recognize and classify data."
+    - content: "Application that produced the data"
+      isCorrect: false
+      explanation: "That is not correct. You can use keywords to automatically recognize and classify data."
+    - content: "Keywords"
+      isCorrect: true
+      explanation: ""That is correct. You can use keywords to automatically recognize and classify data.""
+
+   - content: "You want to search for sensitive data accross Office 365 services in your organization, in order to prevent data loss. What should you configure to be able to do this?"
+    choices:
+    - content: "File and folder permissions"
+      isCorrect: false
+      explanation: "That is not correct. You need to configure DLP Policy in Security & Compliance Center."
+    - content: "Keyword search"
+      isCorrect: false
+      explanation: "That is not correct. You need to configure DLP Policy in Security & Compliance Center."
+    - content: "DLP Policy"
+      isCorrect: true
+      explanation: "That is correct. You need to configure DLP Policy in Security & Compliance Center."
+
+   - content: "You need to be able to classify and protect various Word documents stored on your local file server and on your SharePoint Online sites. Which technology you should choose?"
+    choices:
+    - content: "Azure Information Protection"
+      isCorrect: true
+      explanation: "That is correct. You should use Azure Information Protection for this."
+    - content: "Office 365 Message Encryption"
+      isCorrect: false
+      explanation: "That is not correct. You should use Azure Information Protection for this."
+    - content: "Label based information protection in Windows 10"
+      isCorrect: false
+      explanation: "That is not correct. You should use Azure Information Protection for this."
+
+
+  
