@@ -1,11 +1,11 @@
-## Deploy a Key Vault
+## Deploy Azure Key Vault
 
 > [!NOTE]
-> Due to limitations with the sandbox, here you create an Azure Key Vault from the Azure portal. Normally, you would use the `New-AzKeyVault` cmdlet to create a Key Vault from Azure PowerShell.
+> Due to limitations with the sandbox, here you create a key vault in Azure Key Vault from the Azure portal. Normally, you would use the `New-AzKeyVault` cmdlet to create a key vault from Azure PowerShell.
 
-Create a Key Vault and allow deploy time access. To do so:
+Create a key vault and allow deploy time access. To do so:
 
-1. Create a PowerShell variable that holds the Key Vault name:
+1. Create a PowerShell variable that holds the key vault name:
 
    ```powershell
    $KVNAME="tailwind-secrets" + (Get-Random -Count 1 -Maximum 9999999)
@@ -25,15 +25,13 @@ Create a Key Vault and allow deploy time access. To do so:
 
     Copy the value somewhere convenient for the next step.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the search box, enter _Key Vault_.
 
-1. Select **Key Vault** from the list.
-
-1. Select the **Create** button to start configuring the Key Vault.
+1. Select **Key Vault** from the list, and select **Create** to start configuring the key vault.
 
 1. In the creation pane, specify these values:
 
@@ -42,9 +40,9 @@ Create a Key Vault and allow deploy time access. To do so:
 
 1. Select **Review + create**.
 
-1. Select **Create**. This should take a minute or so. Once the resource has been created, select **Go to resource**.
+1. Select **Create**. This should take a minute or so. When the resource has been created, select **Go to resource**.
 
-1. Select **Access Policies**. Enable the option **Azure Resource Manager for template deployment** and select **Save**.
+1. Select **Access Policies**. Enable the option **Azure Resource Manager for template deployment**, and select **Save**.
 
 1. From your PowerShell session, run the `ConvertTo-SecureString` cmdlet and assign the result to the `secretSecureString` variable:
 
@@ -52,7 +50,7 @@ Create a Key Vault and allow deploy time access. To do so:
    $secretSecureString = ConvertTo-SecureString 'insecurepassword123!' -AsPlainText -Force
    ```
 
-1. Run the following `Set-AzKeyVaultSecret` command to create a secret in the key vault named *vmPassword* with the value "insecurepassword123!":
+1. Run the following `Set-AzKeyVaultSecret` command to create a secret in the key vault. The secret is named `vmPassword`, with the value `insecurepassword123!`:
 
    ```powershell
    $secret = Set-AzKeyVaultSecret -VaultName $KVNAME -Name vmPassword -SecretValue $secretSecureString
@@ -121,22 +119,22 @@ Here, you deploy the same ARM template that you deployed in the previous exercis
 
    In the previous exercise, you provided each key-value pair directly from the command line. Here, you specify `"./azuredeploy.parameters.json"` to provide your parameters file.
 
-   The `dnsLabelPrefix` is set to "vm2-" followed by a random number. This is required to ensure that the DNS name differs from the DNS name you used in the previous exercise.
+   The `dnsLabelPrefix` is set to `vm2-` followed by a random number. This is required to ensure that the DNS name differs from the DNS name you used in the previous exercise.
 
 ## Verify deployment
 
 Verify that the VM is provisioned and is connectable over SSH. To do so:
 
-1. Run the `Invoke-Expression` command to connect to the VM via SSH::
+1. Run the `Invoke-Expression` command to connect to the VM via SSH:
 
    ```powershell
    Invoke-Expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
    ```
 
-   When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
+   When prompted, enter `yes` to continue connecting. Then enter the administrator password, `insecurepassword123!`.
 
     > [!IMPORTANT]
-    > In practice, keep passwords safe. Or use public key authentication, which is typically more secure than using passwords.
+    > In practice, keep passwords safe. You can also use public key authentication, which is typically more secure than using passwords.
 
 1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
 
@@ -144,7 +142,7 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
     hostname
     ```
 
-    You see the VM's internal hostname, *vm1*:
+    You see the VM's internal hostname, `vm1`:
 
     ```output
     vm2
