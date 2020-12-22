@@ -42,7 +42,7 @@ One way to deploy your website is to use Azure Static Web Apps.
 
 **CSS3**
 
-- [MDN web docs - CSS3](https://developer.mozilla.org/docs/Web/CSS/CSS3)
+- [MDN web docs - CSS3](https://developer.mozilla.org/docs/Archive/CSS3)
 
 **JavaScript**
 
