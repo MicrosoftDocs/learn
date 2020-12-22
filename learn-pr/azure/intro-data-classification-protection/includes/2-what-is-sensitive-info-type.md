@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./
----
-
 In a perfect world, all your employees understand the importance of information protection and work within your policies. In the real world, it's likely that a busy partner who frequently works with accounting information will inadvertently upload a sensitive document to some cloud repository with incorrect permissions. A week later you realize your enterprise's confidential information was leaked to your competition.
 
 ## What is sensitive data?
@@ -38,7 +34,7 @@ Microsoft's approach to sensitive data protection can be split into the four pha
 - Protect your data
 - Monitor and report on your data
 
-![tutorial-dlp-solution](C:\Users\ddami\OneDrive\Desktop\Azure data residency\Development\M2\tutorial-dlp-solution.png)
+:::image type="content" source="../media/2-dlp-solutions.png" alt-text="Image shows Microsoft approach to sensitive data":::
 
 
 
