@@ -1,4 +1,4 @@
-There are many types of quantum-inspired algorithms. Put simply, they are classical algorithms based on a quantum algorithms, where the essential quantum phenomenon that would provide the speed up can be classically emulated.
+There are many types of quantum-inspired algorithms. Put simply, they are classical algorithms inspired by quantum algorithms, where the essential quantum phenomenon that would provide the speed-up can be classically emulated.
 
 Quantum-inspired optimization is a quantum-inspired algorithm based on emulating quantum tunneling as used in the adiabatic quantum optimization algorithm. A number of techniques have been developed to simulate this type of physics, and one such approach uses a concept from quantum physics known as the adiabatic theorem. When you apply that theorem to solve a problem, you:
 
