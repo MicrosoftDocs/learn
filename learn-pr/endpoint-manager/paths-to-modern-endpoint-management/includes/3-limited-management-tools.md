@@ -9,7 +9,7 @@ If you need to use both cloud and on-premises device management, consider using 
 ## Benefits of using Intune
 
 By using Intune to manage your organization's endpoints, you gain the following benefits:
-- No need to setup and operate your own management infrastructure.
+- No need to set up and operate your own management infrastructure.
 - Native integration with cloud-powered security controls and risk-based conditional access for apps and data.
 - Flexible support for diverse corporate and bring-your-own-device (BYOD) scenarios, while increasing productivity and collaboration.
 - Maximize your investment and accelerate time to value with fast rollout of services and devices with end-to-end integration across familiar Microsoft stack.

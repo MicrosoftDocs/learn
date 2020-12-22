@@ -9,7 +9,7 @@ metadata:
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-existing-on-premises-management.md)]
   

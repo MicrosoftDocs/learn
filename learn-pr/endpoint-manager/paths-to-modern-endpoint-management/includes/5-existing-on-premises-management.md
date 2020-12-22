@@ -33,7 +33,7 @@ Once you decide to move to Configuration Manager or extend your existing Configu
 - **New internet-based devices**: You have new Windows 10 devices that join Azure AD and automatically enroll to Intune. You install the Configuration Manager client to reach a co-management state.
 
 > [!NOTE]
-> It is important to understand that you have more than one option when considering a migration path to device management in the cloud. Any of the following options will put you on the path to modern endpoint management:
+> It's important to understand that you have more than one option when considering a migration path to device management in the cloud. Any of the following options will put you on the path to modern endpoint management:
 > - Add tenant attach with Microsoft Endpoint Configuration Manager
 > - Set up co-management with Microsoft Endpoint Configuration Manager
 > - Move from Configuration Manager to Intune
