@@ -1,4 +1,4 @@
-The end goal of a system is to produce useful output. To get there, you need to process the input. While _processing_, you might need the help of various methods and data to do so. In OOP, your methods and your data are placed on objects. To process the input and produce a result, in OOP, you need methods. 
+The end goal of a system is to produce useful output. To get there, you need to process the input. While _processing_, you might need the help of various methods and data to do so. In object-oriented programming (OOP), your methods and your data are placed on objects. To process the input and produce a result, in OOP, you need methods. 
 
 ## Methods in OOP
 

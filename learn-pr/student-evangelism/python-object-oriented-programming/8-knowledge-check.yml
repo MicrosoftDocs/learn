@@ -24,10 +24,10 @@ quiz:
           explanation: A class is where you write all the code. You later create an instance of the class, which is a so-called object.
         - content: A class has data and an object doesn't.
           isCorrect: false
-          explanation: The class is the object's blueprint. Whatever the class has, the object has as well.
+          explanation: The class is the object's blueprint. Whatever the class has, the object has too.
         - content: A class has methods and an object doesn't.
           isCorrect: false
-          explanation: The class is the object's blueprint. Whatever the class has, the object has as well.
+          explanation: The class is the object's blueprint. Whatever the class has, the object has too.
     - content: How does Python implement accessors?
       choices:
         - content: It uses prefixes. One underscore, `_`, at the beginning of the name indicates this variable is _protected_. Two underscores, `__`, make the variable _private_ and will raise an exception if assigned.

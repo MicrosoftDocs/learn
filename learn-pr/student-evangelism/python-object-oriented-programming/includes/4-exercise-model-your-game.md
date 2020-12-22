@@ -1,4 +1,4 @@
-A game is no different from the _invoice system_ mentioned in a previous unit. It still has the same parts in the world of OOP. These parts are objects, data, and behavior. Just like we did with the invoice system, you can _model_ a game like rock, paper, scissors by first describing its domain, and then try listing what's what. Modeling your game is what you're going to do next. You'll also write some code that you can build on later.
+A game is no different from the _invoice system_ mentioned in a previous unit. It still has the same parts in the world of object-oriented programming (OOP). These parts are objects, data, and behavior. Just like we did with the invoice system, you can _model_ a game like rock, paper, scissors by first describing its domain, and then try listing what's what. Modeling your game is what you're going to do next. You'll also write some code that you can build on later.
 
 ## Analyze rock, paper, scissors for OOP modeling
 

@@ -1,4 +1,4 @@
-In this module, you started by learning what OOP is and how you can use it to model a problem domain. You were given a problem domain, and you explored an approach to find its main constructs, objects, data, and behavior.
+In this module, you started by learning what object-oriented programming (OOP) is and how you can use it to model a problem domain. You were given a problem domain, and you explored an approach to find its main constructs, objects, data, and behavior.
 
 You were then introduced to classes and how they differed from objects. Additionally, you learned how to organize your data around objects and add that data to the appropriate class definitions.
 
@@ -8,4 +8,4 @@ You then looked at how you can add behavior to objects to operate on an object's
 
 Finally, you learned to add behavior to your rock, paper, scissors game and got a working piece of software. As an added bonus, you also learned how you could extend your game with the choices lizard and Spock. In that way, you were shown how little you needed to modify.
 
-You should now have a good understanding of how to model your problems by using OOP methodology and implement code, to support your model, using OOP constructs.
+You should now have a good understanding of how to model your problems by using OOP methodology and how to implement code, to support your model, by using OOP constructs.

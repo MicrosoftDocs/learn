@@ -2,7 +2,7 @@ Now that you've added classes and data to your rock, paper, scissors game, it's 
 
 ## Implement behavior
 
-You've been taught that to build a program in OOP style, you model first and then you code. The modeling produced the output of a table that represented what objects, data, and behavior your program seems to consist of. Here's that same table again.
+You've been taught that to build a program in object-oriented programming (OOP) style, you model first and then you code. The modeling produced the output of a table that represented what objects, data, and behavior your program seems to consist of. Here's that same table again.
 
 |Phase     | Actor             |Behavior                                 | Data                                            |
 |----------|-------------------|-----------------------------------------|-------------------------------------------------|
