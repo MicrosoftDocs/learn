@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.advocates.wrangle-data-shell
+uid: learn.advocates.data-wrangling-shell
 metadata:
   title: Use the Unix shell to wrangle log data
   description: |

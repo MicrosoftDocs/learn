@@ -1,8 +1,6 @@
-Here we'll use the command `cat` to create, display, and concatenate files. This will be useful when doing complex data wrangling.
-
 # The `cat` command
 
-The `cat` command is one of the most basic yet useful commands for working with files. It has three main functions when it comes to text files: display their content, combine copies, and create new files.
+Here we'll use the command `cat` to create, display, and concatenate files. This will be useful when doing complex data wrangling. The `cat` command is one of the most basic yet useful commands for working with files. It has three main functions when it comes to text files: display their content, combine copies, and create new files.
 
 ## Reading files
 
@@ -22,7 +20,7 @@ cat NASA-software-API.txt
 
 The `cat` command can  be used to create files and it's often easier than vi or text editors for small files.
 
-You can create new files by redirecting the standard output of the `cat` command using the *output redirect operator* `>` followed by the name of the file to be created, then pressing <kbd>ENTER</kbd>, and finally simultaneously pressing <kbd> CTRL + d</kbd>.
+You can create new files by redirecting the standard output of the `cat` command using the *output redirect operator* `>` followed by the name of the file to be created, then pressing **ENTER**, and finally simultaneously pressing **CTRL** + **d**.
 
 1. Run the command `cat` followed with the `>` operator and the file name (file1).
 
@@ -30,9 +28,9 @@ You can create new files by redirecting the standard output of the `cat` command
    cat > file1
    ```
 
-2. Press <kbd> ENTER</kbd> to place the cursor at a new line.
-3. Type some text, in this case: `NASA headquarters` followed by <kbd> ENTER</kbd>.
-4. End the program and restore the command prompt by pressing <kbd> CTRL + d </kbd>.
+2. Press **ENTER** to place the cursor at a new line.
+3. Type some text, in this case: `NASA headquarters` followed by **ENTER**.
+4. End the program and restore the command prompt by pressing **CTRL** + **d**.
 
 If there's an existing `file1`, it will be overwritten. To append a line to the existing file  without overwriting, you can use the `>>` operator. For example, to add `Goddard Space Flight Center` to `file1` you'd run:
 

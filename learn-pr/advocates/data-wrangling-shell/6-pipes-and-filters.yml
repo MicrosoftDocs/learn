@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.wrangle-data-shell.6-pipes-and-filters
+uid: learn.advocates.data-wrangling-shell.6-pipes-and-filters
 metadata:
   title: "Pipes and filters: putting it all together!"
   description: In this unit you'll be introduced to pipes. Pipes are handy operators that allow you to combine some of the commands we have checked before to build complex data processing pipelines.

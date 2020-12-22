@@ -93,7 +93,7 @@ So, how do you prevent a special character from doing its regex function when yo
 
 ## Regex cheatsheet
 
-This unit was a brief introduction to regular expressions and what you can accomplish with them. There are many other complex patterns you can build with regular expressions. In the meantime here's a handy regex cheatsheet for you:
+This unit was a brief introduction to regular expressions and what you can accomplish with them. There are many other complex patterns you can build with regular expressions. In the meantime here's a handy regex cheat sheet for you:
 
 ```output
 ^        Matches the beginning of a line
