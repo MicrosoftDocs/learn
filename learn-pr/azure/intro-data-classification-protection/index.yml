@@ -14,7 +14,6 @@ abstract: |
   By the end of this module, you will be able to answer:
   - What is a sensitive information type?
   - What is data classification?
-  - Data classification in the context of data governance and privacy compliance
   - What are the common scenarios for using data classification?
   - How does data classification integrate with data protection?
   - What is data loss prevention?
@@ -38,9 +37,9 @@ units:
 - learn.azure.classification-and-protection.2-what-is-sensitive-info-type
 - learn.azure.classification-and-protection.3-what-is-data-classification
 - learn.azure.classification-and-protection.4-common-scenarios-classification
-- learn.azure.classification-and-protection.5-classification-integrate-protection
-- learn.azure.classification-and-protection.6-what-is-data-loss-prevention
-- learn.azure.classification-and-protection.7-ms-tech-classification-protection
+- learn.azure.classification-and-protection.5-what-is-data-loss-prevention
+- learn.azure.classification-and-protection.6-ms-tech-classification-protection
+- learn.azure.classification-and-protection.7-knowledge-check
 - learn.azure.classification-and-protection.8-summary
 badge:
   uid: learn.azure.classification-and-protection.badge
