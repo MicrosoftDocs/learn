@@ -367,4 +367,6 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
 
     You can see in the **Output** pane that our status field has been correctly added to each of the readings.
 
+    To see that the request has been logged to Application Insights, go to the Monitor dashboard by selecting **Monitor** under your trigger function in the home Azure portal left nav bar.
 
+    ![Screenshot of the Monitor dashboard showing logging to Application Insights](../media/5-app-insights.png)

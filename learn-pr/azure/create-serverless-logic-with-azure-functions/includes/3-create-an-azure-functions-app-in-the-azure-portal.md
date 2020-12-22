@@ -34,17 +34,17 @@ Let's create a function app in the Azure portal.
 
     The **Create Function App** page appears. Complete the following fields.
 
-| Field | Value  |
-| ------ | ------- |
-| In the **Basics** tab, under the **Project Details** section:  |
-| Subscription | Concierge Subscription |
-| Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
-| Under the **Instance Details** section: |
-| Function App name  | Enter a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
-| Publish  | Code |
-| Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
-| Version | *default* |
-| Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
+    | Field | Value  |
+    | ------ | ------- |
+    | In the **Basics** tab, under the **Project Details** section:  |
+    | Subscription | Concierge Subscription |
+    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
+    | Under the **Instance Details** section: |
+    | Function App name  | Enter a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
+    | Publish  | Code |
+    | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
+    | Version | *default* |
+    | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
 1. Select **Review + create**, and then select **Create**. Deployment will take a few minutes. You'll receive a notification when deployment is completed.
 
