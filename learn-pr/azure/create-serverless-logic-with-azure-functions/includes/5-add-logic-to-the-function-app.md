@@ -194,16 +194,18 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
 1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. An **Test** pane appears. Under the **Input** pane, in the **Body** text box, overwrite the embedded code by pasting the following cURL command.
 
-1. Replace the placeholders in the code with the URL for your function and the function key you previously saved to Notepad or a similar app. Select **Run**.
-
-    - Use a `POST` request.
-    - Add a `Content-Type` header value of type `application/json`.
-    - Make sure to replace the URL below with your own.
-    - Pass the Function Key as the header value `x-functions-key`.
-
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" https://<your-url-here>/api/DriveGearTemperatureService
     ```
+
+1. Replace the placeholders in the code with the URL for your function and the function key you previously saved to Notepad or a similar app. Make note of these aspects of the cURL command:
+
+    - Used a `POST` request.
+    - Added a `Content-Type` header value of type `application/json`.
+    - Made sure to replace the URL with your own.
+    - Passed the Function Key as the header value `x-functions-key`.
+
+1. Select **Run**.
 
 Under the **Output** pane, for **HTTP response code**, the function responds with the text `"200 OK"`.
 
