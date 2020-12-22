@@ -192,7 +192,9 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
 1. Next, from the left nav bar, select **Functions**, and then select the **HttpTrigger1**.
 
-1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. An **Test** pane appears. Under the **Input** pane, in the **Body** text box, overwrite the embedded code by pasting the following cURL command.
+1. In the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. A **Test** pane appears.
+
+1. Under the **Input** pane, in the **Body** text box, overwrite the embedded code by pasting the following cURL command.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" https://<your-url-here>/api/DriveGearTemperatureService
@@ -210,10 +212,10 @@ The function and master keys are found in the **Function Keys** in the left-hand
 Under the **Output** pane, for **HTTP response code**, the function responds with the text `"200 OK"`.
 
 > [!CAUTION]
-> If you are on Windows, please run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest and is not the same as `cURL`.
+> If you are on Windows, run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
 
 > [!NOTE]
-> You can also test from an individual function's section with the **Test** pane on the side of a selected function, though you won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
+> You can also test from an individual function's section with the **Test** pane appearing on the side of a selected function. You won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
 
 ## Add business logic to the function
 
@@ -368,3 +370,8 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
     ![Screenshot of the Azure portal showing the function editor pane with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
 
     You can see in the **Output** pane that our status field has been correctly added to each of the readings.
+
+    To see that the request has been logged to Application Insights, go to the Monitor dashboard by selecting **Monitor** under your trigger function in the home Azure portal left nav bar.
+
+    ![Screenshot of the Monitor dashboard showing logging to Application Insights](../media/5-app-insights.png)
+
