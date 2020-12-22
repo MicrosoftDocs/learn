@@ -4,7 +4,7 @@ That's why many developers rely on libraries that standardize the process of wor
 
 ## Query by using a URL
 
-Say you're passionate about clock radios and are interested in the collection of well-designed examples at the Cooper Hewitt. You take a look at the museum's API documentation. You see that you can construct a query with your API access token in this format, given that you want paginated results and only results with images: 
+Say you're passionate about clock radios and are interested in the collection of well-designed examples at the Cooper Hewitt. You take a look at the [museum's API documentation](https://collection.cooperhewitt.org/api/methods/). You see that you can construct a query with your API access token in this format, given that you want paginated results and only results with images: 
 
 `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.collection&access_token=<your access token>&query=clock%20radio&has_images=true&page=1&per_page=100`
 
