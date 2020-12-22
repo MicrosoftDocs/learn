@@ -5,7 +5,7 @@ One wonderful thing about modern museum collections management is that the ongoi
 ## Research the API
 
 The first step when you're researching the use of a third-party API is to check out its documentation. 
-Take a look at the API documentation provided by the museum.
+Take a look at the [API documentation](https://metmuseum.github.io/) provided by the museum.
 
 Another thing to consider is permissions. Read through the terms of use of all third-party APIs that you want to use to make sure that what you want to do is acceptable. The Met Museum's [Terms and Conditions page](https://www.metmuseum.org/information/terms-and-conditions?azure-portal=true) is a good place to start. Because the museum has adopted the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0?azure-portal=true) license, there's no copyright on the dataset. That license makes working with the API easier for the casual user.
 
