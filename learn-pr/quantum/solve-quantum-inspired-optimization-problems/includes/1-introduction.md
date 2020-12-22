@@ -1,4 +1,4 @@
-In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms inspired from quantum computing that are applied to solve optimization problems on traditional hardware. To illustrate this method, we'll look at Interplanet Express, a space freight company that specializes in mineral transports.
+In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms inspired from quantum computing that are applied to solve optimization problems on traditional hardware. Throughout the [learning path](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/?azure-portal=true), you have been working on a spaceship on an asteroid mining mission. To illustrate the optimization method, let's look at how the logistics division efficiently loads cargo vessels.
 
 ![An illustration that shows two space ships that need to be loaded with minerals as evenly as possible](../media/interplanet_express.png)
 
