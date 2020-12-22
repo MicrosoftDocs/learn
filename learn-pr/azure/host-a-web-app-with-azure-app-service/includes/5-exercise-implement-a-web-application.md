@@ -53,7 +53,7 @@ If you open a second command shell session, for example by browsing to <https://
 1. From your second command shell session, run the following command to browse to your web application:
 
     ```bash
-    curl -KL http://127.0.0.1:5000/
+    curl -kL http://127.0.0.1:5000/
     ```
 
     You should see some HTML displayed.
