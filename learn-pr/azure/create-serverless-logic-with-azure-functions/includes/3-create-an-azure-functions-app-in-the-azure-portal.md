@@ -24,29 +24,30 @@ Let's create a function app in the Azure portal.
 
 1. From the portal menu, select **Create a resource**.
 
-    [!include[](../../includes/functions-classic-workaround.md)]
+   [!include[](../../includes/functions-classic-workaround.md)]
 
-    ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
+   ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. From the left nav bar, select **Compute**, then select **Function App**.
+1. In the left navigation, select **Compute**, then select **Function App**.
 
-    ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
+   ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
 
-    The **Create Function App** page appears. Complete the following fields.
+   The **Create Function App** page appears.
+   
+1. In the **Create Function App** page, configure the following settings on the **Basics** tab.
+   
+   Under the **Project Details** section:
+   - **Subscription**: Concierge Subscription
+   - **Resource Group**: "**<rgn>[sandbox resource group name]</rgn>**"
+   
+   Under the **Instance Details** section:
+   - **Function App name**: Enter a globally unique app name. The name serves as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If the value isn't globally unique, you can try any other combination. Valid characters are lowercase letters, numbers, and the hyphen.
+   - **Publish**: Code
+   - **Runtime stack**: Node.js (The language used to implement the function examples in this exercise.)
+   - **Version**: *default*
+   - **Region**: Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
 
-| Field | Value  |
-| ------ | ------- |
-| In the **Basics** tab, under the **Project Details** section:  |
-| Subscription | Concierge Subscription |
-| Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
-| Under the **Instance Details** section: |
-| Function App name  | Enter a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
-| Publish  | Code |
-| Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
-| Version | *default* |
-| Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
-
-1. Select **Review + create**, and then select **Create**. Deployment will take a few minutes. You'll receive a notification when deployment is completed.
+1. Select **Review + create**, and then select **Create**. Deployment can take a few minutes. You'll receive a notification when deployment completes.
 
 ::: zone-end
 
