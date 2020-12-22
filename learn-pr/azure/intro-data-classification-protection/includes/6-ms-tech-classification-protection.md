@@ -31,7 +31,7 @@ As part of the unified labeling and protection experience, Microsoft also wants 
 
 This extends information protection on managed Windows devices and endpoints and helps protect labeled files from accidental leakage, with or without applying encryption. For example, Windows can understand that a Word document residing on a user’s computer has a label of “Confidential”, and as a result of the policy defined by the organization, apply a Windows Information Protection (WIP) policy to prevent the copying or sharing of the data to any non-work location from that device (such as personal email accounts, social channels, etc.).
 
-![MIP](C:\Users\ddami\OneDrive\Desktop\Azure data residency\Development\M2\MIP.png)
+:::image type="content" source="../media/6-MIP-W10.png" alt-text="Image shows how label based information protection works in Windows 10.":::
 
 ### Office 365 Message Encryption
 
