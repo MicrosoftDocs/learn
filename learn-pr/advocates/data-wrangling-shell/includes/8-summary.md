@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you were introduced to some tools and commands that you can use on the UNIX shell to transform your data from one format into another.
 
 You were first introduced to the commands `head`, `tail`, `wc`, and `nl`. Using these commands will help you to do quick inspections of your text files and get a better understanding of the raw data.

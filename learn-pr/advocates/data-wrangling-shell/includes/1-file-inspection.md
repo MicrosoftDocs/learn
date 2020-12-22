@@ -1,5 +1,3 @@
-# Doing basic files inspection in the Unix shell
-
 Have you ever wanted to take data from one format into another? I'm sure you have, or will have to do it in the future. This process is called data wrangling. And it's a common task faced by developers. But before we go ahead and learn how to wrangle data, we need some data files to work with.
 
 As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to your sandbox environment.
@@ -14,7 +12,7 @@ As a developer, you'll often need to extract information from logs. In this modu
 2. Verify that you have the correct files using the command `ls`:
 
    ```bash
-   # first we change to the data directorys
+   # first we change to the data directories
    cd data
    # now we display its contents
    ls

@@ -1,5 +1,3 @@
-# Introduction to regular expressions
-
 Regular expressions (regex) are massively helpful and chances are, you've come across them at some point. This esoteric, miniature language can help with complex pattern matching and might look a bit intimidating at first. However, regular expressions can be found in most text editors and languages and tools such as Python, SQL, Go, and Scala among many others. So they're definitely worth learning.
 
 A useful online tool to have in your bookmarks is [Regular Expressions 101](https://regex101.com/), which allows you to test a regex against test inputs.

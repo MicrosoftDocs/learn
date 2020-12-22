@@ -1,5 +1,3 @@
-# Introduction
-
 Have you ever needed to transform data from one format to another?
 As a developer, this is a common task. Whether you're trying to extract information from logs or from incoming streams, you'll need to deal with raw data and transform it before it's usable.
 

@@ -42,6 +42,6 @@ units:
   - learn.advocates.data-wrangling-shell.5-sed-and-regex
   - learn.advocates.data-wrangling-shell.6-pipes-and-filters
   - learn.advocates.data-wrangling-shell.7-knowledge-check
-  - learn.advocates.data-wrangling-shell.9-summary
+  - learn.advocates.data-wrangling-shell.8-summary
 badge:
   uid: ""

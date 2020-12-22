@@ -1,5 +1,3 @@
-# Introduction to the stream editor (`sed`)
-
 The stream editor (`sed`) is a useful text parsing and manipulation tool. It can be used to do transformations on text coming from the standard input or a file. `sed` edits the text line-by-line and in a non-interactive way. This means you make the decisions as you call the command and these directions are executed automatically. This makes `sed` a powerful and fast tool to transform text.
 
 ## Basic usage

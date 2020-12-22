@@ -1,5 +1,3 @@
-# Pipes and filters: putting it all together!
-
 So far you've been introduced to commands to inspect files, regular expressions, and the stream editor.
 
 We also know now that commands such as `cat` and `grep` have the monitor screen as standard output. However, in many cases you'll want to redirect the output to another file (using the `>` redirect operator), or even to another program that transforms data for further processing. In UNIX, we call these programs [filters](http://www.linfo.org/filters.html).

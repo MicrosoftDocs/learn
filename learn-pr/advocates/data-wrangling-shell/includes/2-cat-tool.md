@@ -1,5 +1,3 @@
-# The `cat` command
-
 Here we'll use the command `cat` to create, display, and concatenate files. This will be useful when doing complex data wrangling. The `cat` command is one of the most basic yet useful commands for working with files. It has three main functions when it comes to text files: display their content, combine copies, and create new files.
 
 ## Reading files
@@ -10,7 +8,7 @@ The most common use of `cat` is reading the content of files. Its default output
 cat file1
 ```
 
-1. Run the `cat` command to display the contents of `NASA-software-API.txt`.
+Run the `cat` command to display the contents of `NASA-software-API.txt`.
 
 ```bash
 cat NASA-software-API.txt

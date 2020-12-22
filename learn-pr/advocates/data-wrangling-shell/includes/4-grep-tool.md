@@ -1,5 +1,3 @@
-# Using the grep command
-
 So far you've learned about basic file inspection and regular expressions. In this unit, you will be introduced to the `grep` command.
 The `grep` command searches specified files or `stdin` for patterns matching a given regular expression.
 As other commands we've seen before, the command `grep` has a number of flags to control the output and its behavior. We'll learn more about these flags later on in this unit.
