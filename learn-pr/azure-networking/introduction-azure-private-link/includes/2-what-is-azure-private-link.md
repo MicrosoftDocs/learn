@@ -10,7 +10,7 @@ The problem is that your SQL database is exposed to the internet via its public 
 * An on-premises network that connects to Azure using ExpressRoute and Microsoft peering.
 * A customer's Azure virtual network that connects to an Azure service offered by your company.
 
-<!-- insert image here -->
+![alt text](./media/what-is-azure-private-link.png)
 
 Private Link is designed to eliminate these security risks by removing the "public" part of the connection.
 
