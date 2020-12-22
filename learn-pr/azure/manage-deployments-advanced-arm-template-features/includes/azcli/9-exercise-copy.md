@@ -83,21 +83,21 @@ Although the output shows that two storage accounts were created, here you run t
 
 Run the following `az deployment group show` command to display details about the deployment:
 
-    ```azurecli
-    az deployment group show \
-      --name copy \
-      --query "properties.outputResources[].id" \
-      --output tsv
-    ```
+```azurecli
+az deployment group show \
+  --name copy \
+  --query "properties.outputResources[].id" \
+  --output tsv
+```
 
 The `--query` argument specifies to show just the identifiers from the output resources.
 
 Your output resembles this:
 
-    ```output
-    /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9820
-    /subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9821
-    ```
+```output
+/subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9820
+/subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9821
+```
 
 In this example:
 
