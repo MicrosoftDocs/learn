@@ -1,20 +1,21 @@
-It's useful to test an API by sending queries over a browser's URL, complete with a query string populated by an access token, but in a production app, you might need to make a more complicated API call with various data assembled together to form a query.
+It's useful to test an API by sending queries over a browser's URL, complete with a query string populated by an access token. But in a production app, you might need to make a more complicated API call with various data assembled to form a query.
 
-Many developers, therefore, rely on libraries that standardize the process of working with APIs. For JavaScript developers, Axios is an excellent choice. Python programmers might use Request. Using PowerShell? Try RestMethod.
+That's why many developers rely on libraries that standardize the process of working with APIs. For JavaScript developers, Axios is an excellent choice. Python programmers might use Requests. Using PowerShell? Try RestMethod.
 
 ## Query by using a URL
 
-Imagine that you are passionate about clock radios, and are interested in the interesting collection of well-designed examples at the Cooper Hewitt. You would construct a query with your API access token with this format, given that you want paginated results and only results with images: 
+Say you're passionate about clock radios and are interested in the collection of well-designed examples at the Cooper Hewitt. You take a look at the [museum's API documentation](https://collection.cooperhewitt.org/api/methods/). You see that you can construct a query with your API access token in this format, given that you want paginated results and only results with images: 
 
-`https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.collection&access_token=<your access token>&query=clock%20radio&has_images=true&page=1&per_page=100`, as specified in the museum's API documentation.
+`https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.collection&access_token=<your access token>&query=clock%20radio&has_images=true&page=1&per_page=100`
 
 The first example that comes up is this slick example from the 1950s:
 
-:::image type="content" source="../media/clock-radio.png" alt-text="1957 clock radio.":::
+:::image type="content" source="../media/clock-radio.png" alt-text="Drawing of a slick clock radio from 1957.":::
 
 >[!TIP] 
->To test API endpoints, [Postman](https://www.postman.com?azure-portal=true) is an excellent tool.
+>[Postman](https://www.postman.com?azure-portal=true) is an excellent tool for testing API endpoints.
 
+Try using a library to call the Cooper Hewitt API by running this code snippet in your local development environment:
 ::: zone pivot="javascript"
 
 ```javascript
@@ -63,17 +64,17 @@ $response | ConvertTo-Json
 
 ::: zone-end
 
-By using libraries appropriate to your preferred programming language, you can have more control over how you leverage APIs from within your code as you script functions based on user interactions such as a button click.
+By using libraries appropriate to your preferred programming language, you can have more control over how you use APIs from within your code as you script functions based on user interactions like button clicks.
 
-## Write to an endpoint with a method
+## Write to an endpoint by using a method
 
-Many third party endpoints like these museum examples do not allow writing (using 'POST') to their databases, as their purpose is not transactional. However you can practice using these methods on your own data. 
+Many third-party endpoints like these museum examples don't allow you to write to their databases by using POST. These databases aren't transactional. But you can practice using methods to write to your own data. 
 
-If you return to the `db.json` file you created earlier in this module, you can write data to your personal database.
+Let's return to the `db.json` file you created earlier in this module. You can write data to this database.
 
-Using your terminal, `cd` to the location of your `db.json` file and type `json-server --watch db.json`. The server will start on port 3000 and you can query it using Postman by using `GET` for your objects collection: `localhost:3000/objects`.
+Using the terminal, `cd` to the location of your `db.json` file and then enter `json-server --watch db.json`. The server will start on port 3000. You can query it with Postman by using `GET` for your objects collection: `localhost:3000/objects`.
 
-To write to this collection by setting a header value: `'content-type': 'application/json'` and passing through a JSON object, stringified:
+You can write to this collection by setting a header value `'content-type': 'application/json'` and passing through a stringified JSON object:
 
 ::: zone pivot="javascript"
 
@@ -134,4 +135,4 @@ $response | ConvertTo-Json
 
 ::: zone-end
 
-You can use your personal database and API endpoint to try other operations, using your library of choice to `GET`, `POST`, and even `DELETE` items from your collection.
+You can use your personal database and API endpoint to try other operations. Try using your chosen library to GET, POST, and even DELETE items from your collection.
