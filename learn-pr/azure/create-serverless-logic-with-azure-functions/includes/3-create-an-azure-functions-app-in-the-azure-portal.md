@@ -28,7 +28,7 @@ Let's create a function app in the Azure portal.
 
    ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the left navigation, select **Compute**, then select **Function App**.
+1. In the left nav bar, select **Compute**, then select **Function App**.
 
    ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
 
@@ -54,7 +54,6 @@ Let's create a function app in the Azure portal.
 ## Verify your Azure function app
 Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated the sandbox with
 
-1. When deployment is completed, select **Go to resource**. Your Function App page appears.
+1. When deployment completes, select **Go to resource**. Your Function App page appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. You should get a default web page that indicates your Function App is up and running.
-

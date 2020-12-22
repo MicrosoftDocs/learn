@@ -51,7 +51,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. The function responds by returning the message **Hello, {name}**, echoing back the name that was sent in the request.
 
-    Again, from the source dropdown, select **function.json** to view the configuration of the function, which should look like the following:
+    Again, from the source dropdown, select **function.json** to view the configuration of the function, which should look like the following.
 
     ```javascript
     {
@@ -135,7 +135,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. HTTP functions must generate a response by writing to their output binding, which is accomplished in PowerShell Functions with the `Push-OutputBinding` cmdlet. This function returns the message **Hello $name**, echoing back the name that was sent in the request.
 
-    On the right-hand side of the source view, you'll see two tabs. The **View files** tab lists the code and config file for your function. Select **function.json** to view the configuration of the function, which should look like the following:
+    On the right-hand side of the source view, you'll see two tabs. The **View files** tab lists the code and config file for your function. Select **function.json** to view the configuration of the function, which should look like the following.
 
     ```json
     {
@@ -172,7 +172,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 >- <https://en.wikipedia.org/wiki/CURL>
 >- <https://curl.haxx.se/docs/>
 
-To test the function, you can send an HTTP request to the function URL using cURL on the command line. To find the endpoint URL of the function, expand the **Log** frame at the bottom of the trigger function page. At the top menu bar, select **Get function URL**, as shown in the following screenshot. Save this link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
+To test the function, you can send an HTTP request to the function URL using cURL on the command line. To find the endpoint URL of the function, expand the **Log** frame at the bottom of the trigger function page. At the top menu bar, select **Get function URL**, as shown in the following image. Save this link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
 ![Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted.](../media/5-get-function-url.png)
 
@@ -192,7 +192,7 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
 1. Next, from the left nav bar, select **Functions**, and then select the **HttpTrigger1**.
 
-1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. An **Test** pane appears. Under the **Input** pane, in the ***Body** text box, overwrite the embedded code by pasting the following cURL command.
+1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. An **Test** pane appears. Under the **Input** pane, in the **Body** text box, overwrite the embedded code by pasting the following cURL command.
 
 1. Replace the placeholders in the code with the URL for your function and the function key you previously saved to Notepad or a similar app. Select **Run**.
 
@@ -361,10 +361,8 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
     }
     ```
 
-1. Select **Run** and view the response in the **Output** pane. To see log messages, open the **Logs** tab in the bottom flyout of the page. The following screenshot shows an example response in the output pane and messages in the  **Logs** pane.
+1. Select **Run** and view the response in the **Output** pane. To see log messages, open the **Logs** tab in the bottom flyout of the page. The following image shows an example response in the output pane and messages in the  **Logs** pane.
 
     ![Screenshot of the Azure portal showing the function editor pane with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
 
     You can see in the **Output** pane that our status field has been correctly added to each of the readings.
-
-
