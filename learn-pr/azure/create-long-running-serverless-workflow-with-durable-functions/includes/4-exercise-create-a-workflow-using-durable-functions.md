@@ -100,7 +100,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. Select the **Durable Functions HTTP starter** template. This template creates a durable function that runs in response to an HTTP request.
 
-1. Name the function **HttpStart**, select **Function** authorization level, and then click **Create Function**.
+1. Name the function **HttpStart**, select **Function** authorization level, and then click **Add**.
 
 1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Your file should resemble the following example:
 
@@ -158,7 +158,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. Select the **Durable Functions orchestrator** template. This template creates a durable function that orchestrates the execution of functions.
 
-1. Name the new function **OrchFunction**, and then select **Create Function**.
+1. Name the new function **OrchFunction**, and then select **Add**.
 
 1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code:
 
@@ -193,7 +193,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. Select the **Durable Functions activity** template. This template creates a durable function that is run when an Activity is called by an orchestrator function.
 
-1. Name the function **Approval**, and then select **Create Function**.
+1. Name the function **Approval**, and then select **Add**.
 
 1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code:
 

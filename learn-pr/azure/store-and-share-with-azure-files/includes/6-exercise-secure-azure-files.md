@@ -7,7 +7,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 ## Enable secure file transfer
 
 1. Use your local browser to sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. In the portal menu on the left, select **Storage Accounts**.
+1. In the portal menu on the left, select **Storage accounts**.
 1. Select the created storage account that should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Configuration**.
 
@@ -19,7 +19,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Under **Settings**, select **Firewalls and virtual networks**.
 
- :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options.":::
+   :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options.":::
 
 1. Under **Allow access from**, select the **Selected networks** option.
 1. Under **Firewall**, in the address range input, enter the public IP address of your VM. You can see this address in the title bar of the remote desktop connection.
@@ -35,7 +35,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
 
-1. Select the **data** file share.
+1. You should see **Access Denied**. 
 
     ![Screenshot showing access is denied to the share](../media/6-access-denied.png)
 

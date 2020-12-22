@@ -2,7 +2,7 @@ So far we've used real-world data. But we can account for one more bit of inform
 
 Although we don't know when this crying might happen, we *do* know that it happened at one moment in the film. We can create new data that takes this phenomenon into account!
 
-![Image of Chang'e.](../media/change.png)
+:::image type="content" source="../media/change.png" alt-text="Image of Chang'e." border="false":::
 
 ## Determine the right data
 
@@ -10,17 +10,20 @@ We know that Fei Fei travels to Lunaria after the Moon Festival. Though we don't
 
 The 2020 Chinese Moon Festival was on October 1. Because the rest of the dates that we use in this module are from 2020, let's use that date. 
 
-We need data for each of the data frames that we reference. So let's start with the meteor shower in the film. For Chang'e's meteor shower, let's choose the Draco constellation because it's where the Draconids meteor shower is likely to radiate from in early October. We'll use that meteor shower as inspiration for our fictional one:
+We need data for each of the DataFrames that we reference. So let's start with the meteor shower in the film. For Chang'e's meteor shower, let's choose the Draco constellation because it's where the Draconids meteor shower is likely to radiate from in early October. We'll use that meteor shower as inspiration for our fictional one:
+
 ```python
 change_meteor_shower = {'name':'Chang\'e','radiant':'Draco','bestmonth':'october','startmonth':'october','startday':1,'endmonth':'october','endday':31,'hemisphere':'northern','preferredhemisphere':'northern'}
 ```
 
 Next, create an entry for the Draco constellation:
+
 ```python
 draco_constellation = {'constellation':'Draco','bestmonth':'july','latitudestart':90,'latitudeend':-15,'besttime':2100,'hemisphere':'northern'}
 ```
 
-Now add these two entries to the data frames. Go to the top of your Python notebook file and add two cells after the second cell. Use the following code:
+Now add these two entries to the DataFrames. Go to the top of your Python notebook file and add two cells after the second cell. Use the following code:
+
 ```python
 change_meteor_shower = {'name':'Chang\'e','radiant':'Draco','bestmonth':'october','startmonth':'october','startday':1,'endmonth':'october','endday':31,'hemisphere':'northern','preferredhemisphere':'northern'}
 
@@ -35,11 +38,11 @@ constellations = constellations.append(draco_constellation, ignore_index=True)
 
 Your code should look like this:
 
-![The code that includes the new Chang'e meteor shower at the top.](../media/add-change-draco.png)
+:::image type="content" source="../media/add-change-draco.png" alt-text="Screenshot that shows the code that includes the new Chang'e meteor shower at the top.":::
 
 Now rerun all of the code in your notebook:
 
-1. Select the **Clear all output** button. (It's a stack of rectangles and a letter *x*.)
+1. Select the **Clear all output** button. (It's a stack of rectangles and the letter *x*.)
 1. Select the **Restart iPython kernel** button. (It's a circle arrow.) 
 1. Select the **Run all cells** button. (It's a double right-arrow.)
 
@@ -88,4 +91,4 @@ Though the Moon will be bright, Chang'e's meteor shower is best seen if you look
 
 Now we know that when Fei Fei's family gathers for the Moon Festival, they might be able to look into the sky to see Chang'e showering them. We hope she showers them with tears of happiness and remembrance instead of sadness.
 
-![Fei Fei's family gathering for the Moon Festival.](../media/moon-festival-gathering.png)
+:::image type="content" source="../media/moon-festival-gathering.png" alt-text="Imagae that shows Fei Fei's family gathering for the Moon Festival." border="false":::

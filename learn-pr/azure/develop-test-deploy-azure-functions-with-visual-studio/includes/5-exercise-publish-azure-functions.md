@@ -25,39 +25,39 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Under the **Basics** tab, in the **Project Details** section, specify:
 
-    | Property  | Value  |
-    |---|---|
+    | Property | Value |
+    | --- | --- |
     | Subscription | Concierge Subscription  |
     | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
 
 1. In the **Instance Details** section, specify:
 
-    | Property  | Value  |
-    |---|---|
+    | Property | Value |
+    | --------- | --------- |
     | Function App name | *\<your-function-app-name\>* |
     | Publish | Code |
     | Runtime stack | .NET Core |
-    | Version | 3.1 |
-    | Region | *Accept the default location* |
+    | Version     | 3.1 |
+    | Region     | *Accept the default location* |
 
 1. Select **Next : Hosting**.
 
 1. Under the **Hosting** tab, in the **Storage** section, specify:
 
-    | Property  | Value  |
-    |---|---|
+    | Property  | Value |
+    | --------- | --------- |
     | Storage account | *Accept the default name* |
 
 1. Under the **Operating system** section, specify:
 
-    | Property  | Value  |
-    |---|---|
-    | Operating System | Windows |
+    | Property | Value |
+    | --------- | --------- |
+    | Operating system | Windows |
 
 1. Under the **Plan** section, specify:
 
-    | Property  | Value  |
-    |---|---|
+    | Property | Value |
+    | --------- | --------- |
     | Plan type | Consumption (Serverless) |
 
 1. Select **Review + create**, then select **Create**. Wait while the Function App is created before continuing.

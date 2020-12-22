@@ -14,20 +14,17 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-    - content: To use the help system to find out more about a command, which command should you run?
+    - content: Using the help system, what command, or function, offers the best experience for finding out more about a command?
       choices:
         - content: "`{your command} --help`"
           explanation: Incorrect.
           isCorrect: false
         - content: "`Get-Help {your command}`"
-          explanation: Incorrect.
+          explanation: The command `Get-Help` is what you use to find out more about a command. However, the function `help` offers a better experience as it paginates the response and lets you traverse it row by row.
           isCorrect: false
         - content: "`help {your command}`"
           explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line if you want.
           isCorrect: true
-        - content: "`man {your command}`"
-          explanation: Incorrect.
-          isCorrect: false
     - content: Which statement is the best choice to _filter left_?
       choices:
         - content: "`Get-Process | Select-Object Name | Where-Object Name -eq name-of-process`"

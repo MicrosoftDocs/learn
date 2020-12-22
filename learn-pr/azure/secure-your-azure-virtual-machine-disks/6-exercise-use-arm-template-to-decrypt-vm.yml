@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+interactive: powershell
 azureSandbox: true
 durationInMinutes: 10
 content: |
