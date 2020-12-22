@@ -11,6 +11,7 @@ Choosing the correct storage solution can lead to better performance, cost savin
 
 **Latency & throughput:** High throughput and low latency.
 
+
 **Transactional support:** Because all of the data is both historical and yet changing, transactional support is required. 
 
 ### Recommended service: Azure Cosmos DB

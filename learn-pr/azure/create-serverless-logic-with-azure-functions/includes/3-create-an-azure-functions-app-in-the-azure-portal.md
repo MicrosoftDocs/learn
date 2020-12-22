@@ -51,7 +51,9 @@ Let's create a function app in the Azure portal.
 ::: zone-end
 
 ## Verify your Azure function app
+Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated the sandbox with
 
 1. When deployment is completed, select **Go to resource**. Your Function App page appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. You should get a default web page that indicates your Function App is up and running.
+
