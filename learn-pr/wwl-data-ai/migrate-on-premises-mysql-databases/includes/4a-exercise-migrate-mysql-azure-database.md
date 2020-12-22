@@ -6,7 +6,8 @@ You work as a database developer for the AdventureWorks organization. AdventureW
 
 Run these Azure CLI commands in the Cloud Shell to create a virtual machine, running MySQL, with a copy of the Adventure works database. The last commands will print the IP address of the new virtual machine.
 
-      az vm create \
+    ```azurecli
+    az vm create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name mysqlvm \
         --admin-username azureuser \
@@ -59,6 +60,7 @@ Run these Azure CLI commands in the Cloud Shell to create a virtual machine, run
         --output tsv)"
 
     echo $MYSQLIP
+    ```
 
 These commands will take approximately 5 minutes to complete. You don't need to wait, you can continue with the steps below.
 
@@ -271,3 +273,19 @@ You'll now connect to your existing MySQL VM using the Cloud Shell to export you
     The first query should return 3 rows. The second query should return 29 rows.
 
 1. Close the *mysql* utility with the **quit** command.
+
+
+--- TODO: Delete below once sandbox has been requested
+Microsoft.Compute/disks
+Microsoft.Compute/virtualMachines
+Microsoft.Compute/virtualMachines/extensions
+Microsoft.DBforMySQL/servers
+Microsoft.Network/networkInterfaces
+Microsoft.Network/networkSecurityGroups
+Microsoft.Network/publicIPAddresses
+Microsoft.Network/virtualNetworks
+Microsoft.DataMigration/services
+Microsoft.DataMigration/services/projects
+Microsoft.Network/networkInterfaces
+
+VM size = Standard_B2ms
