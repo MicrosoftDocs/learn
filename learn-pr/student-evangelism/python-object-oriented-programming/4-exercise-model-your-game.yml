@@ -3,7 +3,7 @@ uid: learn.student-evangelism.python-object-oriented-programming.4-exercise-mode
 title: Exercise - Model and scaffold your game
 metadata:
   title: Exercise - Model and scaffold your game
-  description: In this exercise you learn to model the game rock paper scissors and identify objects, behaviors, and data. You also scaffold good given your created model.
+  description: In this exercise, you learn to model the game rock, paper, scissors and identify objects, behaviors, and data. You also scaffold your created model.
   author: softchris
   ms.author: shanama
   ms.date: 12/01/2020

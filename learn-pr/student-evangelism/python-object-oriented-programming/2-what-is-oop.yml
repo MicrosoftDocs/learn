@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.python-object-oriented-programming.2-what-is-oop
-title: What is object-oriented programming
+title: What is object-oriented programming?
 metadata:
-  title: What is object-oriented programming
+  title: What is object-oriented programming?
   description: This unit covers the object-oriented programming paradigm. It talks about what makes it unique and how you can model a problem domain with it.
   author: softchris
   ms.author: shanama
