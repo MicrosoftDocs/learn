@@ -15,7 +15,7 @@ You need to perform these setup tasks one time during this module. You can refer
 
 1. Select the type of shell you want.
 
-    :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Selecting a shell from the drop-down menu.":::
+    :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Screenshot that shows selecting a shell from the drop-down menu.":::
 
 1. Select the **+** in the terminal to create a new terminal with your selected shell type.
 
@@ -40,7 +40,7 @@ az account set -s "Concierge Subscription"
 ```
 
 > [!NOTE]
-> If the command fails, run `az account list --refresh --all` and then rerun the `az account set` command.
+> If the command fails, run `az account list --refresh --all`, and then rerun the `az account set` command.
 
 ### Set the default resource group
 
@@ -60,7 +60,7 @@ When you deploy a VM, keep in mind that there are several resources that need to
 
 Here's a brief summary of the types of resources that typically need to be deployed along with a VM:
 
-- **Microsoft.Storage/storageAccounts**. A storage account provides disk space for the OS and files.
+- **Microsoft.Storage/storageAccounts**. A storage account provides disk space for the operating system and files.
 - **Microsoft.Network/publicIPAddresses**. A public IP address enables you to connect to the VM from the internet.
 - **Microsoft.Network/networkSecurityGroups**. A network security group contains rules for handling inbound and outbound traffic to your virtual network.
 - **Microsoft.Network/virtualNetworks**. Your VM needs to be placed in a virtual network. This resource requires the network security group to be deployed before it.
@@ -69,7 +69,7 @@ Here's a brief summary of the types of resources that typically need to be deplo
 
 ## Deploy a Linux VM
 
-Here, you download an ARM template from a GitHub repository that we provide for you. The template provisions a Linux VM and all of the resources necessary to run it.
+Here, you download an Azure Resource Manager (ARM) template from a GitHub repository that we provide for you. The template provisions a Linux VM and all of the resources necessary to run it.
 
 1. Run the following `wget` command to download the ARM template:
 
@@ -147,10 +147,10 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
       --output tsv)
     ```
 
-    When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
+    When prompted, enter `yes` to continue connecting. Then enter the administrator password, `insecurepassword123!`.
 
     > [!IMPORTANT]
-    > In practice, keep passwords safe. Or use public key authentication, which is typically more secure than using passwords.
+    > In practice, keep passwords safe. You can also use public key authentication, which is typically more secure than using passwords.
 
 1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
 
@@ -158,7 +158,7 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
     hostname
     ```
 
-    You see the VM's internal hostname, *vm1*:
+    You see the VM's internal hostname, `vm1`:
 
     ```output
     vm1

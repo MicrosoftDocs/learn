@@ -1,16 +1,16 @@
 ## Deploy Azure Key Vault
 
-Create a Key Vault and add the VM password as a secure secret. To do so:
+In Azure Key Vault, create a key vault and add the VM password as a secure secret. To do so:
 
-1. Create a Bash variable that holds the Key Vault name.
+1. Create a Bash variable that holds the key vault name.
 
     ```bash
     KVNAME=tailwind-secrets$RANDOM
     ```
 
-    Key Vault names must be unique. The `$RANDOM` part ensures that the Key Vault name ends in a random series of numbers.
+    Key vault names must be unique. The `$RANDOM` part ensures that the key vault name ends in a random series of numbers.
 
-1. Run the following `az keyvault create` command to create the Key Vault:
+1. Run the following `az keyvault create` command to create the key vault:
 
     ```azurecli
     az keyvault create \
@@ -18,9 +18,9 @@ Create a Key Vault and add the VM password as a secure secret. To do so:
       --enabled-for-template-deployment true
     ```
 
-    The `--enabled-for-template-deployment` argument permits the ARM template to retrieve secrets from the key vault.
+    The `--enabled-for-template-deployment` argument permits the Azure Resource Manager (ARM) template to retrieve secrets from the key vault.
 
-1. Run the following `az keyvault secret set` command to create a secret in the key vault named *vmPassword* with the value "insecurepassword123!":
+1. Run the following `az keyvault secret set` command to create a secret in the key vault. The secret is named `vmPassword`, with the value `insecurepassword123!`:
 
    ```azurecli
    az keyvault secret set \
@@ -94,7 +94,7 @@ az deployment group create \
 
 In the previous exercise, you provided each key-value pair in the `--parameters` argument. Here, you specify `@azuredeploy.parameters.json` to provide your parameters file.
 
-The `dnsLabelPrefix` is set to "vm2-" followed by a random number. This is required to ensure that the DNS name differs from the DNS name you used in the previous exercise.
+The `dnsLabelPrefix` is set to `vm2-` followed by a random number. This is required to ensure that the DNS name differs from the DNS name you used in the previous exercise.
 
 ## Verify the deployment
 
@@ -109,7 +109,7 @@ As you did in the previous exercise, verify that the VM is provisioned and is co
       --output tsv)
     ```
 
-    When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
+    When prompted, enter `yes` to continue connecting. Then enter the administrator password, `insecurepassword123!`.
 
 1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
 
@@ -117,7 +117,7 @@ As you did in the previous exercise, verify that the VM is provisioned and is co
     hostname
     ```
 
-    You see the VM's internal hostname, *vm2*:
+    You see the VM's internal hostname, `vm2`:
 
     ```output
     vm2
