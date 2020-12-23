@@ -1,4 +1,4 @@
-function can listen to events of the specific namespace in the Azure Event Hub, process, and store them into a Cosmos DB.
+A function can listen to events of the specific namespace in the Azure Event Hub, process, and store them into a Cosmos DB.
 
 ### Create an Azure Cosmos DB
 
