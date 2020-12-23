@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-event-driven-real-time.5-deploy
+uid: learn.azure.deploy-event-driven-real-time.5-exercise-cosmosdb
 title: Deploy a Spring Boot application to Azure
 metadata:
   title: Deploy a Spring Boot application to Azure
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-deploy.md)]
+  [!include[](includes/5-exercise-cosmosdb.md)]
