@@ -9,6 +9,6 @@ metadata:
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-eventhub.md)]
