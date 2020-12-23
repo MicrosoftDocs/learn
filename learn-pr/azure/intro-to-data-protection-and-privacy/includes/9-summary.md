@@ -11,5 +11,3 @@ You can learn more by reviewing the following articles:
 - [California Consumer Privacy Act (CCPA)](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide?azure-portal=true)
 
 - [Microsoft compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide?azure-portal=true)
-
-<!--Damir, can we delete these last two URLs - https://www.microsoft.com/en-us/trust-center/privacy/customer-data-definitions and https://www.microsoft.com/en-gb/trust-center/privacy/gdpr-faqs?azure-portal=true - these are not from our “approved docs.microsoft.com domains” if we use, we have to check if we have permission-->
