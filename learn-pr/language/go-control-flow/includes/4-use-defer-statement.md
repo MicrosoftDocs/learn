@@ -1,6 +1,6 @@
-Now consider some less-common control flows in Go: `defer`, `panic`, and `recover`. As you've already seen, Go is idiomatic in several ways. These less-common functions are also idiomatic. 
+Now consider some less-common control flows in Go: `defer`, `panic`, and `recover`. As you've already seen, Go is idiomatic in several ways. So as you might expect, these control flows are also idiomatic. 
 
-Each of these functions has several use cases. You'll explore the most important use cases in this part. Let's get started with the first function.
+Each of these functions has several use cases. You'll explore the most important use cases here. Let's get started with the first function.
 
 ## Defer function
 
@@ -8,7 +8,7 @@ In Go, a `defer` statement postpones the running of a function (including any pa
 
 You can defer as many functions as you want. They run in an order that's the reverse of the order of the undeferred tasks.
 
-Check out how this works by running the follow example code:
+Check out how this pattern works by running the follow example code:
 
 ```go
 package main
@@ -23,7 +23,7 @@ func main() {
 }
 ```
 
-Here's the output of the preceding code:
+Here's the code output:
 
 ```output
 regular 1
@@ -69,11 +69,11 @@ After you create or open a file, you defer the `f.Close()` function to avoid for
 
 Runtime errors make a Go program panic. You can force a program to panic, but a panic can also result from runtime errors like out-of-bounds array access and nil pointer dereferences. 
 
-The built-in `panic()` function stops the normal flow of control. All the deferred function calls are run typically. The process continues up the stack until all functions return. The program then crashes with a log message. The message includes any error and a stack trace to help you diagnose the problem's root cause.
+The built-in `panic()` function stops the normal flow of control. All the deferred function calls run normally. The process continues up the stack until all functions return. The program then crashes with a log message. The message includes any error and a stack trace to help you diagnose the problem's root cause.
 
 When you call the `panic()` function, you can add any value as an argument. Usually, you send an error message about why you're panicking.
 
-For instance, combine the `panic` and `defer` functions to see how the control flow is interrupted. But continue running any clean-up processes. Use the following code snippet:
+For instance, combine the `panic` and `defer` functions to see how the control flow is interrupted. But continue running any cleanup processes. Use the following code snippet:
 
 ```go
 package main
@@ -96,7 +96,7 @@ func g(i int) {
 }
 ```
 
-When you run the preceding code, the output looks like this:
+When you run the code, the output looks like this:
 
 ```output
 Printing in g() 0
@@ -185,4 +185,4 @@ In the `main()` function, you defer an anonymous function where you call the `re
 
 The combination of `panic` and `recover` is the idiomatic way that Go handles exceptions. Other programming languages use the `try/catch` block. Go prefers the approach you explored here. 
 
-For more information about this topic, check out the [proposal to add a built-in `try` function in Go](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md).
+For more information, check out the [proposal to add a built-in `try` function in Go](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md).
