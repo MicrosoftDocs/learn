@@ -2,7 +2,7 @@ The most basic control flow in any programming language is the `if/else` stateme
 
 Let's take a look at the Go syntax for `if` statements.
 
-## Syntax for `if` statements
+## Syntax for if statements
 
 Unlike other programming languages, in Go, you *don't need parentheses in conditions*. The `else` clause is optional. But braces are still required. Moreover, Go doesn't offer support for [ternary `if` statements](http://en.wikipedia.org/wiki/%3F:?azure-portal=true) to reduce lines, so you need to write the full `if` statement every time.
 
@@ -23,7 +23,7 @@ func main() {
 
 In Visual Studio Code, if your Go syntax includes parentheses in conditions, the parentheses are automatically removed when you save your program.
 
-## Compound `if` statements
+## Compound if statements
 
 Go supports compound `if` statements. You can nest statements by using the `else if` statement. Here's an example:
 
@@ -47,7 +47,7 @@ func main() {
 }
 ```
 
-In this code, notice that the `num` variable stores the value returned from the `givemeanumber()` function, and the variable *is available in all `if` branches*. However, if you try to print the value of the `num` variable outside of the `if` block, you'll get an error like this:
+In this code, notice that the `num` variable stores the value returned from the `givemeanumber()` function, and the variable *is available in all `if` branches*. However, if you try to print the value of the `num` variable outside the `if` block, you'll get an error like this:
 
 ```go
 package main

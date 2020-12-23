@@ -185,4 +185,4 @@ In the `main()` function, you defer an anonymous function where you call the `re
 
 The combination of `panic` and `recover` is the idiomatic way that Go handles exceptions. Other programming languages use the `try/catch` block. Go prefers the approach you explored here. 
 
-For more information, check out the [proposal to add a built-in `try` function in Go](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md).
+For more information, check out the [proposal to add a built-in `try` function in Go](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md?azure-portal=true).

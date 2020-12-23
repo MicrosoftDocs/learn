@@ -21,7 +21,7 @@ quiz:
       explanation: "No, the scope of these variables is only within an `if` block."
     - content: "No, the variable scope is only within the `if` block or nested `if` statements."
       isCorrect: true
-      explanation: "Correct, those variables can't be used outside the `if` block."
+      explanation: "Correct. Those variables can't be used outside the `if` block."
     - content: "Yes, as long as they're used within the function."
       isCorrect: false
       explanation: "No, those variables can be used only within the `if` block."

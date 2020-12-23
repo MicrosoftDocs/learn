@@ -1,6 +1,6 @@
 Another common control flow is a loop. Go uses only one looping construct, and that's a `for` loop. But you can represent loops in more than one way. In this part, you'll learn about the loop patterns that Go supports.
 
-## Basic syntax for the `for` loop
+## Basic for loop syntax 
 
 Like `if` statements and `switch` statements, `for` loop expressions don't require parentheses. But braces are required.
 
@@ -53,7 +53,7 @@ func main() {
 
 As long as the `num` variable holds a value different than `5`, the program prints a random number.
 
-## Infinite loop and `break` statements
+## Infinite loops and break statements
 
 Another loop pattern you can write in Go is the infinite loop. In this case, you don't write a condition expression or a prestatement or poststatement. Instead, you write your way out of the loop. Otherwise, the logic will never exit. To make the logic exit a loop, use the `break` keyword.
 
@@ -86,7 +86,7 @@ func main() {
 
 Every time you run this code, you get a different output.
 
-## The `continue` statement
+## Continue statements
 
 In Go, you can use the `continue` keyword to skip the current iteration of a loop. You can use this keyword, for example, to run a validation before the loop continues. Or use it when you're writing an infinite loop and need to wait for a resource to become available.
 

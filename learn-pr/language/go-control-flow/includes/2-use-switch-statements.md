@@ -1,6 +1,6 @@
 Like other programming languages, Go supports `switch` statements. You use `switch` statements to avoid chaining multiple `if` statements. By using `switch` statements, you avoid the difficulty of maintaining and reading code that includes many `if` statements. These statements also make complicated conditions easier to construct. Take a look at `switch` statements in the following sections.
 
-## Basic `switch` syntax
+## Basic switch syntax
 
 Like the `if` statement, the `switch` condition doesn't require parentheses. In its simplest form, a `switch` statement looks like this:
 
