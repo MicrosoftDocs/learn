@@ -16,7 +16,7 @@ Now that you are familiar with reading from analytical store into a DataFrame re
     display(dfCustomer.limit(10))
     ```
 
-    ![Connecting to the transactional store](../media/connect-to-transactional-store.png)
+    [![Connecting to the transactional store](../media/connect-to-transactional-store.png)](../media/connect-to-transactional-store.png#lightbox)
 
     And a similar approach applies to the creating a Spark SQL table to access the transactional store, the USING clause is changed to specify cosmos.oltp as the source.
 
@@ -41,4 +41,4 @@ Now that you are familiar with reading from analytical store into a DataFrame re
     ```
     As you can see the result is the content of the Azure Cosmos DB transactional store.
 
-    ![Viewing results inthe transactional store](../media/view-results-in-transactional-store.png)
+    [![Viewing results inthe transactional store](../media/view-results-in-transactional-store.png)](../media/view-results-in-transactional-store.png#lightbox)

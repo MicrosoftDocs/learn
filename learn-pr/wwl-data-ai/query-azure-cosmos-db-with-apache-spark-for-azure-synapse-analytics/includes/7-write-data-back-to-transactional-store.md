@@ -18,7 +18,7 @@ For our example, where we are wanting to write the limited number of statistic r
     LIMIT 10
     ```
  
-    ![querying the salesorderstatsview](../media/query-salesorderstatsview.png)
+    [![querying the salesorderstatsview](../media/query-salesorderstatsview.png)](../media/query-salesorderstatsview.png#lightbox)
 
     As you can see, we now an appropriately shaped result set ready to write back to the transactional store, by
 
@@ -38,12 +38,12 @@ For our example, where we are wanting to write the limited number of statistic r
         .save()
     ```
 
-    ![Write back data to the transactional store](../media/write-back-to-transactional-store.png)
+    [![Write back data to the transactional store](../media/write-back-to-transactional-store.png)](../media/write-back-to-transactional-store.png#lightbox)
 
 
     Within a couple of minutes the DataFrame write operation should have finished writing our statistics back to the transactional store.   
 
-    ![Creating a query to validate the data](../media/create-sql-query-in-synapse-studio.png)
+    [![Creating a query to validate the data](../media/create-sql-query-in-synapse-studio.png)](../media/create-sql-query-in-synapse-studio.png#lightbox)
 
     Let’s validate that these records are now visible in our Cosmos DB container by. 
 
@@ -68,7 +68,7 @@ For our example, where we are wanting to write the limited number of statistic r
 
     This will immediately return items containing the statistics we inserted from Synapse Analytics. 
 
-    ![Viewing query results](../media/view-query-results.png)
+    [![Viewing query results](../media/view-query-results.png)](../media/view-query-results.png#lightbox)
 
     We can validate that all the expected 273 items have been inserted by
 
@@ -78,7 +78,7 @@ For our example, where we are wanting to write the limited number of statistic r
     SELECT COUNT(c.id) FROM c WHERE c.type = 'SalesOrderStatistic’
     ```
 
-    ![Writing to the transactional store](../media/perform-query-in-transactional-store.png)
+    [![Writing to the transactional store](../media/perform-query-in-transactional-store.png)](../media/perform-query-in-transactional-store.png#lightbox)
 
     And should immediacy return a value of 273 as the result. 
 

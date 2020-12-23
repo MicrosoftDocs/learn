@@ -13,20 +13,20 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
 1.	Connect to an Azure Synapse Workspace that has an Azure Synapse SQL Serverless instance, and an Azure Synapse Spark Pool.
 
-    ![The home page of Azure Synapse Studio](../media/azure-synapse-studio.png)
+    [![The home page of Azure Synapse Studio](../media/azure-synapse-studio.png)](../media/azure-synapse-studio.png#lightbox)
 
 2.	In the left-hand menu, select **Data (A)**
 3.	Click on the **Linked tab** in the explorer view **(B)**
 4.	Expand the **AdventureWorksSQL** linked service to expose the **Customer** container
 5.	Expand the **AdventureWorksMongoDB** linked service to expose the **SalesOrder** container.
 
-    ![Viewing linked services in Azure Synapse Studio](../media/view-linked-services.png)
+    [![Viewing linked services in Azure Synapse Studio](../media/view-linked-services.png)](../media/view-linked-services.png#lightbox)
 
     Here you can see that an additional two containers are now visible in the data explorer view, under the previously created linked service to our Azure Cosmos DB accounts. The first, **Customer (C)**, has been created in the AdventureWorks database within the Azure Cosmos DB SQL API account and contains customer profile information. The second, **SalesOrder (D)**, has been created the AdventureWorks database within the Azure Cosmos DB API for MongoDB account and contains sales order information.
 
     Let’s open a new notebook to explore what is in these containers with Spark.
 
-    ![Open a notebook in Azure Synapse Studio](../media/open-notebook-synapse-studio.png)
+    [![Open a notebook in Azure Synapse Studio](../media/open-notebook-synapse-studio.png)](../media/open-notebook-synapse-studio.png#lightbox)
 
 6.	In the left-hand menu, select **develop (E)**
 
@@ -34,13 +34,13 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
 8.	And then select **Notebook (G)** to create a new notebook. A new notebook will immediately be created within the Synapse Workspace.
 
-    ![Viewing a notebook in Azure Synapse Studio](../media/view-notebook-synapse-studio.png)
+    [![Viewing a notebook in Azure Synapse Studio](../media/view-notebook-synapse-studio.png)](../media/view-notebook-synapse-studio.png#lightbox)
 
 9.	Within the notebook properties, provide an appropriate name, such as **“Cosmos DB Notebook” (H)**.
 
 10.	And then click the **properties icon (I)** to close the properties.
 
-    ![Naming a notebook in Azure Synapse Studio](../media/name-notebook-synapse-studio.png)
+    [![Naming a notebook in Azure Synapse Studio](../media/name-notebook-synapse-studio.png)](../media/name-notebook-synapse-studio.png#lightbox)
 
     Before we can run any spark jobs, we need to select the spark pool we wish to connect to execute our jobs. 
 
@@ -55,7 +55,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     Let’s start by creating a DataFrame for each of our two containers and perform a read of the content of the analytical store. 
 
-    ![Create a DataFrame in a notebook in Azure Synapse Studio](../media/create-dataframe-in-notebook.png)
+    [![Create a DataFrame in a notebook in Azure Synapse Studio](../media/create-dataframe-in-notebook.png)](../media/create-dataframe-in-notebook.png#lightbox)
 
 12.	Click into the first cell of the **notebook (M)**
 
@@ -88,7 +88,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
 15.	Click the **"+" (N)** at the bottom of notebook and select **Code Cell** to add an additional code cell.
 
-    ![Create a new cell in a notebook in Azure Synapse Studio](../media/create-new-cell-in-notebook.png)
+    [![Create a new cell in a notebook in Azure Synapse Studio](../media/create-new-cell-in-notebook.png)](../media/create-new-cell-in-notebook.png#lightbox)
 
 16.	Click into the new cell and paste the following.
 
@@ -96,11 +96,11 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
     display(dfCustomer.limit(10))
     ```
 
-    ![Entering code in a notebook in Azure Synapse Studio](../media/entere-code-in-notebook.png)
+    [![Entering code in a notebook in Azure Synapse Studio](../media/entere-code-in-notebook.png)](../media/entere-code-in-notebook.png#lightbox)
 
 17.	Click the **run cell** button.
 
-    ![Viewing results in a notebook in Azure Synapse Studio](../media/view-results-in-notebook.png)
+    [![Viewing results in a notebook in Azure Synapse Studio](../media/view-results-in-notebook.png)](../media/view-results-in-notebook.png#lightbox)
 
     You will be presented with a result set of the first 10 rows of a row-based representation of the documents contained within the Customer container’s analytical store. The results are from an Azure Cosmos Core (SQL) API account, so that data will be represented using the well-defined schema representation by default. 
 
@@ -114,7 +114,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
     display(dfSalesOrder.limit(10))
     ```
 
-    ![Exploring results in a notebook in Azure Synapse Studio](../media/explore-cosmos-db-results.png)
+    [![Exploring results in a notebook in Azure Synapse Studio](../media/explore-cosmos-db-results.png)](../media/explore-cosmos-db-results.png#lightbox)
 
     You will now be presented with a result set of the first 10 rows of a row-based representation of the documents contained within the SalesOrder container’s analytical store. This is an Azure Cosmos Core API account for MongoDB, so that data will be represented using the full fidelity schema representation by default. 
 
@@ -145,11 +145,11 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
     display(dfSalesOrder.limit(10))
     ```
 
-    ![Remove system property columns from results in a notebook in Azure Synapse Studio](../media/remove-system-property-columns-from-resultset.png)
+    [![Remove system property columns from results in a notebook in Azure Synapse Studio](../media/remove-system-property-columns-from-resultset.png)](../media/remove-system-property-columns-from-resultset.png#lightbox)
 
 20.	Paste the above code (X), click the **run cell** button.
 
-    ![Adding the ID to the results](../media/add-id-to-resultset.png)
+    [![Adding the ID to the results](../media/add-id-to-resultset.png)](../media/add-id-to-resultset.png#lightbox)
 
     You will note that for this DataFrame we have additionally included the **ID column (W)**, for Azure Cosmos DB API for MonogDB accounts, the ID column can be considered a system document property and should not be confused with the _id property of the original document. 
 
@@ -163,7 +163,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     It prints out the schema in an easy-to-read **tree format (Y)**. and you can easily see the structure of the address object within the dfCustomer DataFrame. 
 
-    ![tree format results](../media/tree-format-results.png)
+    [![tree format results](../media/tree-format-results.png)](../media/tree-format-results.png#lightbox)
 
     And the following will do a similar thing for the dfSalesOrder DataFrame
 
@@ -174,4 +174,4 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     Here you can see the type of encapsulation (underlined) of each property value and the embedding of the details array within the SaleOrder document that contains the sales order line items with the sku, price, quantity etc. for each sales order, again encapsulated within the type of structure.
 
-    ![embedded tree format results](../media/embedded-tree-resuls.png) 
+    [![embedded tree format results](../media/embedded-tree-resuls.png)](../media/embedded-tree-resuls.png#lightbox) 

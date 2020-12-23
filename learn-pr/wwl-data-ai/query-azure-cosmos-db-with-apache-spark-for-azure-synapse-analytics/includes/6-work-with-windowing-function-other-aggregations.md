@@ -23,7 +23,7 @@ Adventure Works wants to be able to understand how the sales order volume and re
 
     ```
 
-    ![Using SparkSQL to create a windowing function in a notebook](../media/use-spark-sql-windowing-function-in-notebook.png)
+    [![Using SparkSQL to create a windowing function in a notebook](../media/use-spark-sql-windowing-function-in-notebook.png)](../media/use-spark-sql-windowing-function-in-notebook.png#lightbox)
 
     This query answers the questions being asked through traditional aggregation, as we are mostly interested in understanding the number (COUNT) or total (SUM) of values a GROUP BY clause that covers both **Country and City (B)** can answer most of the questions with **absolute values for the total number of customers, orders and order lines and the sum of revenue by City (C)**.
 
@@ -33,7 +33,7 @@ Adventure Works wants to be able to understand how the sales order volume and re
 
     As well as the rank of each city within each country, by partitioning the dense_rank() window function by the country. 
 
-    ![Using the dense_rank windowing function in a notebook](../media/use-dense-rank-windowing-function-in-notebook.png)
+    [![Using the dense_rank windowing function in a notebook](../media/use-dense-rank-windowing-function-in-notebook.png)](../media/use-dense-rank-windowing-function-in-notebook.png#lightbox)
 
     Given the usefulness of these results we can encapsulate them in a temporary view for future use by:
 
@@ -59,5 +59,5 @@ Adventure Works wants to be able to understand how the sales order volume and re
     ORDER BY Total_Revenue DESC
     ```
 
-     ![Encapsulating the dense_rank windowing function in a view](../media/encapsulate-dense-rank-windowing-function.png)
+     [![Encapsulating the dense_rank windowing function in a view](../media/encapsulate-dense-rank-windowing-function.png)](../media/encapsulate-dense-rank-windowing-function.png#lightbox)
    

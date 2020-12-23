@@ -17,7 +17,7 @@ Firstly, lets remind ourselves what the data we are interested in looks like in 
         LIMIT 10
     ```
 
-    ![Using SparkSQL query to explore data in a notebook](../media/explore-data-in-notebook.png)
+    [![Using SparkSQL query to explore data in a notebook](../media/explore-data-in-notebook.png)](../media/explore-data-in-notebook.png#lightbox)
 
     Here we can see our details column contains array data that needs to be expanded. Each element of the embedded array represents an individual line item of the sales order parent record the ID of which is contained in the _id column of the SalesOrders table. 
 
@@ -32,7 +32,7 @@ Firstly, lets remind ourselves what the data we are interested in looks like in 
         LIMIT 10
     ```
 
-    ![Exploding data in a notebook](../media/explode-data-in-notebook.png)
+    [![Exploding data in a notebook](../media/explode-data-in-notebook.png)](../media/explode-data-in-notebook.png#lightbox)
 
     We see that we get a new row for each element of the array, so each SalesOrderId in the SalesOrders table is now represented by one or more rows of line item detail, however we are unable to identify the line item row uniquely (without making some assumptions about other properties of the document, always dangerous).
 
@@ -47,7 +47,7 @@ Firstly, lets remind ourselves what the data we are interested in looks like in 
         LIMIT 10
     ```
 
-    ![Posexplode data in a notebook](../media/posexplode-data-in-notebook.png)
+    [![Posexplode data in a notebook](../media/posexplode-data-in-notebook.png)](../media/posexplode-data-in-notebook.png#lightbox)
 
     We see that we again get back a new row for each element of the array, so each SalesOrderId in the SalesOrders table is now represented by one or more rows of line item detail. However, the pos column now uniquely identifies the item detail and the order in which it appears in the array. We also note that the pos value is 0 based, and Adventure Works by convention numbers its line items starting at 1, so we will need to fix that as we use this data. 
 
@@ -71,7 +71,7 @@ Firstly, lets remind ourselves what the data we are interested in looks like in 
 
     ```
 
-    ![Create a SalesOrderDetailsView-temporary-view](../media/create-salesorderdetailsview-temporary-view.png)
+    [![Create a SalesOrderDetailsView-temporary-view](../media/create-salesorderdetailsview-temporary-view.png)](../media/create-salesorderdetailsview-temporary-view.png#lightbox)
 
     In this view, we have wrapped the inner subquery that uses the posexplode() function to extract the content of the array with some additional projection specifically projecting the col.object.sku.string, col.object.price.float64 and col.object.quantity.int32 values as SKUCode, Price and Quantity respectively, remembering to include their respective data type suffixes when accessing their values. 
 
@@ -87,7 +87,7 @@ Firstly, lets remind ourselves what the data we are interested in looks like in 
     LIMIT 10
     ```
 
-    ![Query the SalesOrderDetailsView-temporary-view](../media/query-salesorderdetailsview-temporary-view.png)
+    [![Query the SalesOrderDetailsView-temporary-view](../media/query-salesorderdetailsview-temporary-view.png)](../media/query-salesorderdetailsview-temporary-view.png#lightbox)
 
     And as you can see, we now get back a result set with each sales order line individually represented in a row with the SalesOrderId and SalesOrderLine uniquely identifying it along with the associated SKUCode, price, and quantity information.
 
@@ -99,7 +99,7 @@ Firstly, lets remind ourselves what the data we are interested in looks like in 
     DESCRIBE SalesOrderDetailsView
     ```
 
-    ![Using the describe function](../media/use-describe-spark-sql-function.png)
+    [![Using the describe function](../media/use-describe-spark-sql-function.png)](../media/use-describe-spark-sql-function.png#lightbox)
 
     As you can see the data types for the SKUCode, Price and Quantity where automatically mapped back to the underlying data types contained within the array without the need to manually infer data types for these columns. 
 

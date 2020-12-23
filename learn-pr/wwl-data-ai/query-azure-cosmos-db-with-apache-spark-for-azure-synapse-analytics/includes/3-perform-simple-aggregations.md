@@ -8,7 +8,7 @@ Let’s start by exploring some basic statistics, the simplest being the number 
     print(dfCustomer.count())
     ```
 
-    ![Performing a count of records in a notebook](../media/perform-count-of-records.png)
+    [![Performing a count of records in a notebook](../media/perform-count-of-records.png)](../media/perform-count-of-records.png#lightbox)
 
     You will see that there are **19119 customers (B)**
 
@@ -22,11 +22,11 @@ Let’s start by exploring some basic statistics, the simplest being the number 
 
     You will see a breakdown of the top 10 country, city combinations having the most customers, right at the top of the list you will see that there are 615 customers for which Adventure Works has no country or city information within the customer profile.
 
-    ![Using an order by query in a notebook](../media/use-order-by-query.png)
+    [![Using an order by query in a notebook](../media/use-order-by-query.png)](../media/use-order-by-query.png#lightbox)
 
     Remember that we can always use the built-in chart capabilities of the Synapse Analytics notebooks to visualize our data more easily directly within the notebook.
 
-    ![Visualizing results in a notebook](../media/visualize-results-in-notebook.png)
+    [![Visualizing results in a notebook](../media/visualize-results-in-notebook.png)](../media/visualize-results-in-notebook.png#lightbox)
 
 3.	Click the **Chart button (E)**
 
@@ -54,7 +54,7 @@ Let’s start by exploring some basic statistics, the simplest being the number 
     display(dfResult.limit(10))
     ```
 
-    ![Creating a temporary view](../media/create-temporary-view.png)
+    [![Creating a temporary view](../media/create-temporary-view.png)](../media/create-temporary-view.png#lightbox)
 
     You will see that the result set returned is the same as what was originally in our dfCustomer DataFrame and made the journey to temporary view and back unscathed. 
     

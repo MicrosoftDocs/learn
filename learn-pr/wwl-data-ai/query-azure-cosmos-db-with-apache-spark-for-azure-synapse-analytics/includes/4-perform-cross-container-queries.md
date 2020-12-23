@@ -9,7 +9,7 @@ To begin, the two options available for querying the Azure Cosmos DB analytical 
 
 We have so far used loading the data into a DataFrame as the approach, lets create a Spark table to access our analytical store data by
 
-![Using SparkSQL query in a notebook](../media/input-spark-sql-queries-into-notebook.png)
+[![Using SparkSQL query in a notebook](../media/input-spark-sql-queries-into-notebook.png)](../media/input-spark-sql-queries-into-notebook.png#lightbox)
 
 1.	Paste the code below into a **new cell (A)**, click the **run cell** button.
 
@@ -60,7 +60,7 @@ We have so far used loading the data into a DataFrame as the approach, lets crea
                                 LIMIT 10
     ```
 
-    ![Using SparkSQL to query the customers containers in a notebook](../media/query-customers-container.png)
+    [![Using SparkSQL to query the customers containers in a notebook](../media/query-customers-container.png)](../media/query-customers-container.png#lightbox)
 
     You will notice that the query is using the customer's table we have created to return a result set identical to the one we created using the PySpark example earlier. 
 
@@ -80,7 +80,7 @@ We have so far used loading the data into a DataFrame as the approach, lets crea
             ON c.id = s.CustomerId.string
     ```
 
-    ![Using SparkSQL to perform a join query in a notebook](../media/perform-join-query.png)
+    [![Using SparkSQL to perform a join query in a notebook](../media/perform-join-query.png)](../media/perform-join-query.png#lightbox)
 
     We’re doing a lot here so let’s break it down. 
     
@@ -90,7 +90,7 @@ We have so far used loading the data into a DataFrame as the approach, lets crea
     
     We are converting the data type of the ship date and order date properties to the date data type using the Spark SQL to_date() function, remembering to access the string values using the shipdate.string and orderdate.string respectively from the **SalesOrder table (G)**. 
     
-    And lastly, we are joining the Customers table with the SalesOrders table using the customer ID (in the case of Customers, this is stored in the column id, and in the case of SalesOrder, the CustomerId column, remembering to access the string values using CustomerId.string. 
+    And lastly, we are joining the Customers table with the SalesOrders table using the customer ID (in the case of Customers, this is stored in the column ID, and in the case of SalesOrder, the CustomerId column, remembering to access the string values using CustomerId.string. 
     
     As the Adventure Works sales order records are stored in Azure Cosmos DB API for MongoDB account, and these accounts use full fidelity schema representation by default, we need to include the type of suffix to access the property values for the SalesOrders table. The Adventure Works customer profile records are store in Azure Cosmos DB Core (SQL) API account and these accounts use well-defined schema representation, so we do not need to include the type suffix to access the property values. 
 
@@ -115,6 +115,6 @@ We have so far used loading the data into a DataFrame as the approach, lets crea
         ORDER BY Total_Orders DESC
         ```
         
-        ![Using SparkSQL to query a view in a notebook](../media/query-view.png)
+        [![Using SparkSQL to query a view in a notebook](../media/query-view.png)](../media/query-view.png#lightbox)
         
         That’s about as much insight as we can get from the sales order record without using the information contained in the details column and given that this data is an embedded array, we need to explore ways to surface this data in a more row-friendly format.
