@@ -2,7 +2,7 @@ To understand how to comply with regulations such as GDPR and CCPA, you need to 
 
 ## Key concepts of GDPR
 
-The GDPR gives people rights to manage their personal data that an employer or other type of agency or organization has collected from them. The GDPR defines people as data subjects and the employer, agency, or organization as data controller or just controller. The GDPR defines personal data very broadly as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data, which include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to act on their personal data is called a Data Subject Request (DSR).
+The GDPR gives people rights to manage their personal data that an employer or other type of agency or organization has collected from them. The GDPR defines people as data subjects and the employer, agency, or organization as data controller or just controller. The GDPR defines personal data very broadly as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data, which include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to act on their personal data is called a data subject request (DSR).
 
 ## Key concepts of CCPA
 
