@@ -2,14 +2,14 @@
 uid: learn.language.go-variables-functions-packages
 metadata:
   title: Understand how to use packages, variables, and functions
-  description: Learn about the basic data types in Go, how to declare variables, write functions and use packages.
+  description: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
   ms.date: 12/15/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand how to use packages, variables, and functions
-summary: Learn about the basic data types in Go, how to declare variables, write functions and use packages.
+summary: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
 abstract:  | 
   In this module, you will:
   - Declare variables and constants
@@ -18,10 +18,10 @@ abstract:  |
   - Create and use packages
   
 prerequisites: |
-  - A Go environment ready to create applications.
-  - [VS Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/)
+  - A Go environment that's ready to create applications.
+  - [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/).
   - Know how to create and modify `.go` files
-  - Know how to run Go applications using the terminal
+  - Know how to run Go applications by using the terminal
   
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
