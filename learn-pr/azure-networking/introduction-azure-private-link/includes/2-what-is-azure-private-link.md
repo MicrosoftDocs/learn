@@ -1,11 +1,12 @@
 Before you learn about Azure Private Link and its features and benefits, let's have a quick look at the problem that Private Link is designed to solve.
 
 Suppose your company has an Azure virtual network and you want to connect to a PaaS resource such as an Azure SQL Database. When you create the SQL database resource, you normally specify a *public endpoint* as the connectivity method.
-
+<!-- GLOBAL: Replace "SQL database" with "Azure SQL database". By just using "SQL database" you are refering to an on-premises SQL database or an IaaS instance for a SQL database. -->
 Having a public endpoint means that the resource is assigned a public IP address. So, even though both your virtual network and the SQL database are located within the Azure cloud, the connection between them takes place over the internet.
+<!-- GLOBAL: Replace "SQL database" with "Azure SQL database". By just using "SQL database" you are refering to an on-premises SQL database or an IaaS instance for a SQL database. -->
 
 The problem is that your SQL database is exposed to the internet via its public IP address. That exposure creates multiple security risks. The same security risks are present when an Azure resource is accessed via a public IP address from the following locations:
-
+<!-- GLOBAL: Replace "SQL database" with "Azure SQL database". By just using "SQL database" you are refering to an on-premises SQL database or an IaaS instance for a SQL database. -->
 * A peered Azure virtual network.
 * An on-premises network that connects to Azure using ExpressRoute and Microsoft peering.
 * A customer's Azure virtual network that connects to an Azure service offered by your company.
