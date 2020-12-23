@@ -106,7 +106,7 @@ az functionapp config appsettings set \
         EventHubConnectionString=$EVENT_HUB_CONNECTION_STRING
 ```
 
-Your Azure resources Event Hub and Azure Function have now been created and configured to work properly together.
+Your Azure resources event hub and Azure Function have now been created and configured to work properly together.
 
 Next, create a local functions project with Maven.
 
@@ -148,9 +148,7 @@ Next, open the `Functions.java` file and replace the content with the following 
 package com.learn;
 
 import com.learn.TelemetryItem.status;
-import com.microsoft.azure.functions.annotation.Cardinality;
 import com.microsoft.azure.functions.annotation.EventHubOutput;
-import com.microsoft.azure.functions.annotation.EventHubTrigger;
 import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.azure.functions.annotation.TimerTrigger;
 import com.microsoft.azure.functions.ExecutionContext;
@@ -168,14 +166,18 @@ public class Function {
             schedule = "*/10 * * * * *") // every 10 seconds
             String timerInfo,
         final ExecutionContext context) {
-
-        context.getLogger().info("Java Timer trigger function executed at: "
-            + java.time.LocalDateTime.now());
-        double temperature = Math.random() * 100;
-        double pressure = Math.random() * 50;
+            context.getLogger().info("Java Timer trigger function executed at: " + java.time.LocalDateTime.now());
+            double temperature = Math.random() * 100;
+            double pressure = Math.random() * 50;
         return new TelemetryItem(temperature, pressure);
     }
 ```
+
+The `generateSensorData` function simulates a sensor that sends temperature and pressure readings to the event hub. A timer trigger runs the function every 10 seconds, and an event hub output binding sends the return value to the event hub.
+
+When the event hub receives the message, it generates an event.
+
+The data used by these function is stored using a class called TelemetryItem, which you'll need to implement. Create a new file called TelemetryItem.java in the same location as Function.java and add the following code:
 
 ``` Java
 package com.learn;
@@ -239,4 +241,15 @@ public class TelemetryItem {
 ``` Bash
 mvn clean package
 mvn azure-functions:run
+```
+
+After some build and startup messages, you'll see output similar to the following example for each time the functions run:
+
+``` Output
+[10/22/19 4:01:30 AM] Executing 'Functions.generateSensorData' (Reason='Timer fired at 2019-10-21T21:01:30.0016769-07:00', Id=c1927c7f-4f70-4a78-83eb-bc077d838410)
+[10/22/19 4:01:30 AM] Java Timer trigger function executed at: 2019-10-21T21:01:30.015
+[10/22/19 4:01:30 AM] Function "generateSensorData" (Id: c1927c7f-4f70-4a78-83eb-bc077d838410) invoked by Java Worker
+[10/22/19 4:01:30 AM] Executed 'Functions.generateSensorData' (Succeeded, Id=c1927c7f-4f70-4a78-83eb-bc077d838410)
+[10/22/19 4:01:30 AM] Event hub message received: TelemetryItem={id=null,temperature=32.728691307527015,pressure=10.122563042388165}
+
 ```

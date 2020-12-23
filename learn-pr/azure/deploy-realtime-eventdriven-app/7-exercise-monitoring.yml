@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-event-driven-real-time.7-exercise-monitoring
-title: Exercise - Deploy a Spring Boot application
+title: Exercise - Monitoring and Logging
 metadata:
-  title: Exercise - Deploy a Spring Boot application
-  description: In this exercise, follow the steps to deploy a Spring Boot application.
+  title: Exercise - Monitoring and Logging
+  description: In this exercise, follow the steps to monitor the performance of the system.
   ms.date: 12/22/2020
   author: SandraAhlgrimm
   ms.author: sakriema
