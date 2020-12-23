@@ -16,12 +16,14 @@ Not to forget, you should always be aware what is happening in your system. So m
 
 In summary, we agree that real time means super fast, in an instant. How fast exactly is specified by your given scenario.
 
-## Event-driven architecture
+## Event-driven applications
 
-If you think about a Click-event, you think about something else. Event-driven architecture (EDA) is a software architecture paradigm promoting the production, detection, consumption of, and reaction to events.
+If you think about a Click-event, you think about something else. To identify the nature of event-driven applications, let's have a look at its main architecture patterns.
 
 ### Event Notification
 
 ### Event Carried State Transfer
 
 ### Event Sourcing
+
+### CQRS
