@@ -29,6 +29,7 @@ Here are a few key points to consider when evaluating Private Endpoint:
 * Private Endpoint offers private connectivity between your regionally peered virtual networks and Private Link-powered Azure services.
 * Private Endpoint offers private connectivity between your globally peered virtual networks and Private Link-powered Azure services.
 * Private Endpoint offers private connectivity between your on-premises network—connected via Express Route Private Peering or a VPN—and Private Link-powered Azure services.
+<!-- Replace "Express Route" with "ExpressRoute". -->
 * You can deploy a maximum of 1,000 Private Endpoint interfaces per virtual network.
 * You can deploy a maximum of 64,000 Private Endpoint interfaces per Azure subscription.
 * You can map a maximum of 1,000 Private Endpoint interfaces to the same Private Link resource.
