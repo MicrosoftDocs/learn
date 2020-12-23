@@ -59,7 +59,7 @@ func main() {
 
 This program asks for a number and prints it. Modify the example code to:
 
-- Ask continuously for an integer number. The exit condition for the loop should be a user entry that's a negative number.
+- Ask continually for an integer number. The exit condition for the loop should be a user entry that's a negative number.
 - Crash the program when the user enters a negative number. Then print the stack trace error.
 - When the number is 0, print `0 is neither negative nor positive`. Keep asking for a number.
 - When the number is positive, print `You entered: X` (where `X` is the entered number). Keep asking for a number.
