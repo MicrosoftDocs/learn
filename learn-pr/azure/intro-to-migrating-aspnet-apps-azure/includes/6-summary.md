@@ -4,5 +4,6 @@ In this module, you’ve learned what a migration process is and the various too
 
 ## Learn more
 
-You can learn more by reviewing the following articles:<!--Gerry, are there more reference articles we can ink to? We typically provide 3-5. They need to be Azure, Azure docs, or MS docs pages. -->
+You can learn more by reviewing the following articles:
+
 - [Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)

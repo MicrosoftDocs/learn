@@ -14,9 +14,9 @@ Before beginning the migration process, you should evaluate your existing enviro
 
 ## Azure hosting options
 
-Microsoft currently offers three main hosting service options. You can choose from Infrastructure as a Service (IaaS), Platform as a Service (PaaS), or Software as a Service (SaaS). The options are distinguished by responsibility related to hardware and software. The hosting service graphic presented here highlights the key points.
+Microsoft currently offers three main hosting service options. You can choose from IaaS, PaaS, or SaaS. The options are distinguished by responsibility related to hardware and software. The hosting service graphic presented here highlights the key points.
 
-:::image type="content" source="../media/hosting-graphic.png" alt-text="Hosting responsibilities for an on-premises model as compared to IaaS, PaaS, and SaaS.":::
+:::image type="content" source="../media/2-hosting-graphic.png" alt-text="Hosting responsibilities for an on-premises model as compared to IaaS, PaaS, and SaaS.":::
 
 ### On-Premises
 
