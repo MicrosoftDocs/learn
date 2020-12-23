@@ -45,8 +45,8 @@ When learning about GDPR, you'll often come across specific terms. It's importan
 
 ## Overview of CCPA
 
-The CCPA is the first comprehensive privacy law in the United States of America. It provides a variety of privacy rights to Californian consumers. Businesses that the CCPA regulates have a number of obligations to those consumers, including disclosures, GDPR-like consumer data subject rights<!--Damir - term studio lists DSR as “data subject request”, so I’ve removed the acronym here-->, an "opt-out" for certain data transfers, and an "opt-in" requirement for minors.
-<!--LM: Term Studio lists DSR as an acronym for "data subject request" but in the context section it does list the full term as capitalized (i.e., it's not consistent) and it's mixed in documentation. I recommend the following in accordance with TS: "data subject request (DSR). Please do spell it out with first mention. -->
+The CCPA is the first comprehensive privacy law in the United States of America. It provides a variety of privacy rights to Californian consumers. Businesses that the CCPA regulates have a number of obligations to those consumers, including disclosures, GDPR-like consumer data subject rights, an "opt-out" for certain data transfers, and an "opt-in" requirement for minors.
+
 The CCPA only applies to companies that do business in California and satisfy one or more of the following conditions:
 
 - Have a gross annual revenue of more than $25 million
