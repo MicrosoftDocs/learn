@@ -58,7 +58,7 @@ We now have our function URL copied to our clipboard. Let's issue a GET request 
 
 1. Paste the URL into the address bar.
 
-1. Add a query string parameter called *name* with your name for example `.../api/HttpTriggerCSharp1&name=Jesse`
+1. Add a query string parameter called *name* with your name for example `.../api/HttpTriggerCSharp1?name=Jesse`
 
 1. Press <kbd>ENTER</kbd> to submit the request.
 
