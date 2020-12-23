@@ -18,7 +18,7 @@ In Azure SQL Database specifically, "stale" page detection is enabled and the de
 * CHECKSUM
 * QUERY_STORE
 * TDE
-* ACCERATED_DATABASE_RECOVERY
+* ACCELERATED_DATABASE_RECOVERY
 
 ## Job management
 

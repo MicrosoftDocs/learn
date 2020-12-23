@@ -137,7 +137,7 @@ Now that we've configured the timer, it will invoke the function on the interval
 
 1. In the left nav bar, under **Developer**, select **Code + Test**. The **Code + Test** page appears.
 
-1. Select **Test/Run**. From the left-hand panel, select **Run**. The **Logs** panel appears at the bottom of the page.
+1. Select **Test/Run**. From the right-hand panel, select **Run**. The **Logs** panel appears at the bottom of the page.
 
 1. Observe new messages arrive every 20 seconds in the log window.
 
