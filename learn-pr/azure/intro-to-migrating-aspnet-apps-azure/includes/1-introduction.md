@@ -8,9 +8,7 @@ As part of the migration consideration, senior leadership has asked you, their l
 
 By the end of this module, you’ll be able to identify the various migration assistance tools that you can use to provide the necessary supporting recommendations for an ASP.NET app migration, including data, to Azure.
 
-## Learning objectives<!--Gerry, the learning objectives and prerequisites are different from the final design doc. Can we use the ones in the design doc instead of these? -->
-
-<!--Edited per above comment-->
+## Learning objectives
 
 After completing this module, you'll be able to:
 
