@@ -158,7 +158,7 @@ Let us now create a view of our customers that we can use in our SQL queries in 
 
     Here you will note that we have expanded the functionality of OPENROWSET function of the CREATE VIEW statement to include a **WITH clause (U)** that allows us to:
 
-    -	Specify an alias for the column name (V), for example renaming the id attribute to CustomerId in our example
+    -	Specify an alias for the column name (V), for example renaming the ID attribute to CustomerId in our example
     -	Specify the datatype of the underlying column store (W)
     -	Specify the JSON path of the property, the value of which to return in the specified column, this includes returning property values within embedded objects within the JSON. (X), for example “$.address.zipCode” to access the zipCode property contained within the embedded address object.
 
