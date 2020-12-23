@@ -55,11 +55,11 @@ Let's create a function app in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as you activated for the sandbox.
 
-1. From the Azure portal menu, select **Resource groups**. You should then see a resource group named **learn-e0dad911-2b85-4c63-8b7a-0d2ca7eed3bc** in the list of available groups.
+1. From the Azure portal menu, select **Resource groups**. You should then see a resource group named **learn-627e4f72-e5dc-4174-9182-44bce1f70176** in the list of available groups.
 
     ![Screenshot of the Azure resource groups](../media/3-resource-group.png)
 
-1. Select the resource group **learn-e0dad911-2b85-4c63-8b7a-0d2ca7eed3bc**. You should then see a resource list like the following list.
+1. Select the resource group **learn-627e4f72-e5dc-4174-9182-44bce1f70176**. You should then see a resource list like the following list.
 
     ![Screenshot of the Azure resource list](../media/3-resource-list.png)
 
