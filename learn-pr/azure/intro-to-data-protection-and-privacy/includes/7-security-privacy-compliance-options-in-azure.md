@@ -40,7 +40,7 @@ Data in Azure is always encrypted. To align with the best practices for protecti
 
 #### Azure Disk Encryption and Azure Key Vault
 
-Azure Disk Encryption uses the industry-standard BitLocker feature of Windows and the DM-Crypt feature of Linux to provide volume encryption for the operating system and data disks. Transparent data encryption helps protect Azure SQL databases<!--Damir please confirm - replace service name with database instances-->. Azure Key Vault helps you easily and cost-effectively streamline key management and maintain control of the keys that cloud applications and services use to encrypt data. Encryption at rest with Azure Site Recovery supports Storage Service Encryption.
+Azure Disk Encryption uses the industry-standard BitLocker feature of Windows and the DM-Crypt feature of Linux to provide volume encryption for the operating system and data disks. Transparent data encryption helps protect Azure SQL databases. Azure Key Vault helps you easily and cost-effectively streamline key management and maintain control of the keys that cloud applications and services use to encrypt data. Encryption at rest with Azure Site Recovery supports Storage Service Encryption.
 
 ### Protocols
 
