@@ -34,7 +34,7 @@ quiz:
     - content: "Data protection policy"
       isCorrect: false
       explanation: "That's incorrect. CCPA is not a data protection policy."
-    - content: "comprehensive privacy law"
+    - content: "Comprehensive privacy law"
       isCorrect: true
       explanation: "That's correct. CCPA is the first comprehensive privacy law in the United States."
     - content: "Data encryption policy"
@@ -44,7 +44,7 @@ quiz:
 
   - content: "What is a processor?"
     choices:
-    - content: "A person, public authority, agency or other body that alone or jointly with others, determines the purposes and means of the processing of personal data."
+    - content: "A person, public authority, agency, or other body that alone or jointly with others, determines the purposes and means of the processing of personal data."
       isCorrect: false
       explanation: "That's incorrect. A processor does not determine the purpose of processing of personal data."
     - content: "A part of a data protection technology that processes users' data."
@@ -59,10 +59,10 @@ quiz:
     choices:
     - content: "Control"
       isCorrect: false
-      explanation: "That's incorrect. Control is one of Microsoft's key privacy principles."
+      explanation: "That's incorrect. Control is one of the key privacy principles that Microsoft follows when dealing with customer data."
     - content: "No content-based targeting"
       isCorrect: false
-      explanation: "That's incorrect. One of Microsoft's key privacy principles is to not use content-based targeting."
+      explanation: "That's incorrect. Not using content-based targeting is one of the key privacy principles that Microsoft follows when dealing with customer data."
     - content: "Sharing"
       isCorrect: true
       explanation: "That's correct. Microsoft never shares your data."

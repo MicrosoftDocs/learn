@@ -1,6 +1,6 @@
-Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe at a high level the key technologies in Azure that deal with data protection and compliance. 
+Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe at a high level the key technologies in Azure that deal with data protection and compliance.
 
-Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, whereas its cloud services are under evaluation.
+Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, while its cloud services are under evaluation.
 
 Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring the capabilities of Microsoft Azure and the Microsoft 365 platform. They want to determine whether Contoso can use Azure services to help modernize its current operational model through automation and virtualization. They’re also considering the use of Microsoft 365 productivity services instead of locally deployed services, such as email, intranet portals, or storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection when using cloud services instead of locally deployed services.
 
@@ -13,7 +13,7 @@ In this module, you’ll learn about data protection and privacy regulations. Yo
 After completing this module, you'll be able to:
 
 - Describe data protection.
-- Describe privacy regulations. 
+- Describe privacy regulations.
 - Describe the most common data protection regulations and acts.
 - Describe the key concepts of data processing.
 - Describe how Microsoft supports data protection and privacy.
