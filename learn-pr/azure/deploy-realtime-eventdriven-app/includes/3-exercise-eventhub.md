@@ -52,7 +52,7 @@ az eventhubs eventhub authorization-rule create \
     --rights Listen Send
 ```
 
-### Build, Configure and Deploy the Azure Function
+### Build, Configure, and Deploy the Azure Function
 
 To make this example as realistic as possible, you'll create an Azure Functions and simulate telemetric data. You could also bind an IoT device to your Azure Function, which would then take real data.
 
@@ -73,9 +73,9 @@ az functionapp create \
 > [!NOTE]
 > In order to use Java for the Azure Functions application we need to use at least the functions-version 2.
 
-When the `az functionapp create` command creates your function application, it also creates an Application Insights resource with the same name. We will use this later for our monitoring.
+When the `az functionapp create` command creates your function application, it also creates an Application Insights resource with the same name. We'll use that resource later for our monitoring.
 
-To retrieve the connection strings for the storage account and the Event Hub, we can use the following commands and save them in environment variables. They will be also displayed as you print them with the `echo` command.
+To retrieve the connection strings for the storage account and the Event Hub, we can use the following commands and save them in environment variables. They'll be also displayed as you print them with the `echo` command.
 
 ```bash
 AZURE_WEB_JOBS_STORAGE=$( \
@@ -93,4 +93,150 @@ EVENT_HUB_CONNECTION_STRING=$( \
         --query primaryConnectionString \
         --output tsv)
 echo $EVENT_HUB_CONNECTION_STRING
+```
+
+These connection strings need to be stored in the application settings at your Azure Functions account.
+
+```bash
+az functionapp config appsettings set \
+    --resource-group $RESOURCE_GROUP \
+    --name $FUNCTION_APP \
+    --settings \
+        AzureWebJobsStorage=$AZURE_WEB_JOBS_STORAGE \
+        EventHubConnectionString=$EVENT_HUB_CONNECTION_STRING
+```
+
+Your Azure resources Event Hub and Azure Function have now been created and configured to work properly together.
+
+Next, create a local functions project with Maven.
+
+``` bash
+mvn archetype:generate --batch-mode \
+    -DarchetypeGroupId=com.microsoft.azure \
+    -DarchetypeArtifactId=azure-functions-archetype \
+    -DappName=$FUNCTION_APP \
+    -DresourceGroup=$RESOURCE_GROUP \
+    -DgroupId=com.learn \
+    -DartifactId=telemetry-functions
+```
+
+This command generates several files inside a telemetry-functions folder:
+
+- The `pom.xml` build file with predefined Azure dependencies.
+- The `local.settings.json` file to hold the application settings for local deployment and manual testing.
+- A `host.json` file that enables the Azure Functions Extension Bundle.
+- A `Function.java` file that includes the default Http trigger function.
+- A few test files that this MS Learn module doesn't use.
+
+As we won't touch the test files in this learn module, feel free to delete it.
+
+``` Bash
+cd telemetry-functions
+rm -r src/test
+```
+
+For local execution, the application settings need to be retrieved and stored at the `local.settings.json` file. You can do that automatically by running the `fetch-app-settings` command.
+
+``` Bash
+cd telemetry-functions
+func azure functionapp fetch-app-settings $FUNCTION_APP
+```
+
+Next, open the `Functions.java` file and replace the content with the following code.
+
+``` Java
+package com.learn;
+
+import com.learn.TelemetryItem.status;
+import com.microsoft.azure.functions.annotation.Cardinality;
+import com.microsoft.azure.functions.annotation.EventHubOutput;
+import com.microsoft.azure.functions.annotation.EventHubTrigger;
+import com.microsoft.azure.functions.annotation.FunctionName;
+import com.microsoft.azure.functions.annotation.TimerTrigger;
+import com.microsoft.azure.functions.ExecutionContext;
+import com.microsoft.azure.functions.OutputBinding;
+public class Function {
+
+    @FunctionName("generateSensorData")
+    @EventHubOutput(
+        name = "event",
+        eventHubName = "", // blank because the value is included in the connection string
+        connection = "EventHubConnectionString")
+    public TelemetryItem generateSensorData(
+        @TimerTrigger(
+            name = "timerInfo",
+            schedule = "*/10 * * * * *") // every 10 seconds
+            String timerInfo,
+        final ExecutionContext context) {
+
+        context.getLogger().info("Java Timer trigger function executed at: "
+            + java.time.LocalDateTime.now());
+        double temperature = Math.random() * 100;
+        double pressure = Math.random() * 50;
+        return new TelemetryItem(temperature, pressure);
+    }
+```
+
+``` Java
+package com.learn;
+
+public class TelemetryItem {
+
+    private String id;
+    private double temperature;
+    private double pressure;
+    private boolean isNormalPressure;
+    private status temperatureStatus;
+    static enum status {
+        COOL,
+        WARM,
+        HOT
+    }
+
+    public TelemetryItem(double temperature, double pressure) {
+        this.temperature = temperature;
+        this.pressure = pressure;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
+
+    public double getPressure() {
+        return pressure;
+    }
+
+    @Override
+    public String toString() {
+        return "TelemetryItem={id=" + id + ",temperature="
+            + temperature + ",pressure=" + pressure + "}";
+    }
+
+    public boolean isNormalPressure() {
+        return isNormalPressure;
+    }
+
+    public void setNormalPressure(boolean isNormal) {
+        this.isNormalPressure = isNormal;
+    }
+
+    public status getTemperatureStatus() {
+        return temperatureStatus;
+    }
+
+    public void setTemperatureStatus(status temperatureStatus) {
+        this.temperatureStatus = temperatureStatus;
+    }
+}
+```
+
+## Run locally
+
+``` Bash
+mvn clean package
+mvn azure-functions:run
 ```
