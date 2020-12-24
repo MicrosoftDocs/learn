@@ -6,4 +6,7 @@ In this module, you’ve learned what a migration process is and the various too
 
 You can learn more by reviewing the following articles:
 
-- [Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
+- [Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true)
+- [Get free, expert help to move to the cloud](https://azure.microsoft.com/migration/innovative/?azure-portal=true)
+- [Migration guide: SQL Server to SQL Server on Azure VMs](https://docs.microsoft.com/azure/azure-sql/migration-guides/virtual-machines/sql-server-to-sql-on-azure-vm-individual-databases-guide?azure-portal=true)
+- 
