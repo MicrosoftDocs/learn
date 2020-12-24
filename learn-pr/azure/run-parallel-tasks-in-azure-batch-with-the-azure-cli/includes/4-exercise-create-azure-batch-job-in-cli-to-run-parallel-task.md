@@ -21,7 +21,7 @@ First, you'll create the Azure Batch account and pool of worker nodes for your t
 
 1. Complete the form to create a new resource group for the exercise and note the name.
 
-### Create an Azure Batch account
+### Create the Azure Batch account
 
 1. In portal, open the cloud shell by clicking **>_** in the top menu.
 
