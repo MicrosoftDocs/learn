@@ -10,7 +10,7 @@ A database account is a container for multiple Azure Cosmos DB databases.
     export COSMOS_NAME=cosmos$RANDOM
     ```
 
-1. Create an Azure Cosmos DB account by using the following command:
+1. Create an Azure Cosmos DB account using the following command.
 
     ```azurecli
     az cosmosdb create \
@@ -18,9 +18,15 @@ A database account is a container for multiple Azure Cosmos DB databases.
         --name $COSMOS_NAME
     ```
 
-The database account can take 10 minutes to provision. Keep reading while the account is being created.
+The database account can take 10 minutes to provision. You can continue reading this unit while the account is being created.
 
 ## Azure Cosmos DB concepts
+
+Azure Cosmos DB concepts consist of:
+
+- Resources
+- Partitioning
+- Indexing
 
 ### Resources
 
