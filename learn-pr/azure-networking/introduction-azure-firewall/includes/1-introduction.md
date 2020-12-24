@@ -1,4 +1,4 @@
-A few intro sentences. Do not add a heading to these md files.
+
 
 Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. Most of its compute environment runs as Azure Virtual Network resources.
 
