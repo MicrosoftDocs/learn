@@ -1,4 +1,4 @@
-In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure.<!--Gerry, please validate this edit. --> <!--Edit is good-->
+In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure.
 
 ## Investigate the benefits of migration
 
@@ -98,11 +98,11 @@ Cost is an important factor in helping you determine if migration is the right c
 
 ### Azure Pricing Calculator
 
-You can use the Azure Pricing Calculator<!--We only link to URLs in the summary section, so I’ve moved the link there. --> <!--Ok thanks.-->to determine the cost of the resources you plan to use on Azure. In this tool, you can select from the various categories that are available, which cover the Azure resources. You can then choose specific configurations that will display the estimated monthly costs for that service.
+You can use the Azure Pricing Calculator to determine the cost of the resources you plan to use on Azure. In this tool, you can select from the various categories that are available, which cover the Azure resources. You can then choose specific configurations that will display the estimated monthly costs for that service.
 
-For example, if you want to evaluate the cost of using Azure VMs, you’ll select the **Virtual Machine** category, and then <!--Edited, “scroll down to view” is not accessible--> <!-- thanks for the edit -->review the configuration options.  As you make changes to the options, such as region, OS, pricing tier, and size, the charts will update to reflect the chosen options.
+For example, if you want to evaluate the cost of using Azure VMs, you’ll select the **Virtual Machine** category, and then review the configuration options.  As you make changes to the options, such as region, OS, pricing tier, and size, the charts will update to reflect the chosen options.
 
-:::image type="content" source="../media/vm-cost-calculator.png" alt-text="Pricing calculator depicting cost of VM with configured parameters.":::<!--Gerry, could you add a bit more detail - maybe a line about the 72% savings? -->
+:::image type="content" source="../media/4-vm-cost-calculator.png" alt-text="Pricing calculator depicting cost of VM with configured parameters.":::
 
 ### Determine Azure SQL Database costs
 
@@ -110,11 +110,11 @@ You can evaluate your SQL Server costs by selecting the **Databases** category o
 
 There are various options on this estimator that’ll impact the cost. The first option deals with the instance configuration.
 
-:::image type="content" source="../media/sql-instance-pricing.png" alt-text="SQL instance options in pricing calculator. The screenshot depicts the region for hosting, the type (single or elastic pool), and the service tier among the options available here.":::
+:::image type="content" source="../media/4-sql-instance-pricing.png" alt-text="SQL instance options in pricing calculator. The screenshot depicts the region for hosting, the type (single or elastic pool), and the service tier among the options available here.":::
 
 You’ll also need to select the compute resource options to tailor your pricing model. For example, you might choose to use the hybrid model to reduce the licensing costs as depicted in the following compute option screenshot.
 
-:::image type="content" source="../media/hybrid-benefit.png" alt-text="Azure Hybrid benefit selected depicting reduction in cost.":::<!--Gerry, could we add a couple more lines to explain the screenshot? -->
+:::image type="content" source="../media/4-hybrid-benefit.png" alt-text="Azure Hybrid benefit selected depicting reduction in cost.":::
 
 The remaining options deal with the storage account options and any support that you might want to include as a part of your Azure SQL Database hosting.
 
@@ -122,12 +122,12 @@ The remaining options deal with the storage account options and any support that
 
 You can use the pricing calculator to determine the costs of hosting your ASP.NET application on Azure by selecting the App Service category.
 
-:::image type="content" source="../media/app-service-pricing-option.png" alt-text="Azure App Service category option":::<!--Can we add where they would find this? Which window? -->
+:::image type="content" source="../media/4-app-service-pricing-option.png" alt-text="Screenshot of the Azure App Service category option.":::
 
 Adjusting the pricing tier option from the **Tier** drop-down will change the cost model. This will change the compute configuration by selecting specific configurations of CPU cores and memory options. You can select a tier that matches your on-premises environment to review the monthly hosting cost for that compute environment.
 
 To get an idea of costs associated with scaling the app, you can increase the counter for the number of instances.
 
-:::image type="content" source="../media/instances-counter.png" alt-text="Instance counter set to 3.":::<!--Can we add which window they’d find this option in? -->
+:::image type="content" source="../media/4-instances-counter.png" alt-text="Screenshot of the instance counter set to 3.":::
 
 Continue to modify the options on this pane to evaluate the monthly costs associated with the Azure App Service.

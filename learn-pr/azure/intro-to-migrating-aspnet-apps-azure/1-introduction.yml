@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-migrating-aspnet-apps-azure.introduction
+uid: learn.azure.intro-to-migrating-aspnet-apps-azure.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: Introduction to migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database.  
   ms.date: 12/11/2020
   author: gerryaobrien
   ms.author: nickwalk
