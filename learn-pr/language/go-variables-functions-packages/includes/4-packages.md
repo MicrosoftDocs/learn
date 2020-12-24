@@ -1,30 +1,30 @@
-Packages in Go are like libraries or modules in other programming languages. You can pack your code and reuse it somewhere else. The source code of a package can be distributed in more than one `.go` files. So far, we've been writing the `main` package and have made a few references to other native packages.
+Packages in Go are like libraries or modules in other programming languages. You can package your code and reuse it somewhere else. The source code of a package can be distributed in more than one `.go` file. So far, we've been writing the `main` package and have made a few references to other native packages.
 
-In this section, you'll not only learn what a package is, but you'll also learn how to create one and how to consume external packages.
+In this section, you'll learn what a package is. You'll also learn how to create one and how to consume external packages.
 
-## Main package
+## The main package
 
-As you might have noticed, even the most straightforward program in Go has to be part of a package. Usually, the default one is the `main` package, the one we've been using so far. If a program is part of the `main` package, Go generates a binary file, and when it runs, it calls the `main()` function.
+As you might have noticed, even the most straightforward program in Go has to be part of a package. Usually, the default package is the `main` package, the one we've been using so far. If a program is part of the `main` package, Go generates a binary file. When that file runs, it calls the `main()` function.
 
-In other words, the `main` package means that your program will produce a standalone executable. **Whereas, when a program is part of a different package than `main`, then Go doesn't generate a binary file but a package archive file (.a extension).**
+In other words, when you use `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file with an .a extension).
 
-By convention, the package name is the same as the last element of the import path. For instance, to import the `math/rand` package, you'll need to import it like this:
+By convention, the package name is the same as the last element of the import path. For example, to import the `math/rand` package, you need to import it like so:
 
 ```go
 import "math/rand"
 ```
 
-And to refer to objects inside the package, you'll have to do it like this:
+And to refer to objects in the package, you do it like so:
 
 ```go
 rand.Int()
 ```
 
-Let's go deeper into this topic by creating a package.
+Let's create a package.
 
 ## Create a package
 
-Create a new directory in the `$GOPATH/src` directory called `calculator`, and create a new file called `sum.go`. The tree directory should look like this:
+Create a new directory in the `$GOPATH/src` directory called `calculator`. Create a file called `sum.go`. The tree directory should look like this directory:
 
 ```output
 src/
@@ -38,10 +38,10 @@ Initialize the `sum.go` file with the name of the package:
 package calculator
 ```
 
-Then, you can start writing the functions and variables for the package. Unlike other programming languages, Go doesn't provide the `public` or `private` keywords to indicate if a variable or function can be called outside or inside of the package. However, Go follows two simple rules:
+You can now start to write the functions and variables for the package. Unlike other programming languages, Go doesn't provide the `public` or `private` keywords to indicate if a variable or function can be called from outside or inside of the package. But Go follows two simple rules:
 
-- If you want something to be **private**, start its name with a **lower case letter**
-- If you want something to be **public**, start its name with an **upper case letter**
+- If you want something to be private, start its name with a lowercase letter.
+- If you want something to be public, start its name with an uppercase letter.
 
 So let's add the following code to the calculator package we're creating:
 
@@ -63,28 +63,28 @@ func Sum(number1, number2 int) int {
 }
 ```
 
-From the above code, let's highlight a few things:
+Let's look at a few things in that code:
 
-- The `logMessage` variable can be called only within the package
-- The `Version` variable can be reached from anywhere, and it's recommended that you include a comment to describe the purpose of this variable (useful for who's using this package)
-- The `internalSum` function can be called only within the package
-- The `Sum` function can be reached from anywhere, and it's recommended that you include a comment to describe the purpose of this variable (useful for who's using this package)
+- The `logMessage` variable can be called only from within the package.
+- The `Version` variable can be reached from anywhere. We recommend that you include a comment to describe the purpose of this variable. (This description is useful for anyone who uses the package.)
+- The `internalSum` function can be called only from within the package.
+- The `Sum` function can be reached from anywhere. Again, we recommend that you include a comment to describe the purpose of the variable.
 
-To confirm that everything is working, you can run the `go build` command in the `calculator` directory. If you do it, notice that it doesn't generate an executable binary.
+To confirm that everything is working, you can run the `go build` command in the `calculator` directory. If you do, notice that no executable binary is generated.
 
-## Creating a module
+## Create a module
 
-You've grouped the calculator functionality into a `package`, now it's time to group the package into a `module`. Why? Your package's module is the one in charge of specifying the context that Go needs to run the code you've grouped together, including the Go version your code is written for.
+You've grouped the calculator functionality into a package. Now it's time to group the package into a module. Why? Your package's module specifies the context that Go needs to run the code you've grouped together. This contextual information includes the Go version your code is written for.
 
-Additionally, modules help other developers to reference specific versions of your code and make working with dependencies less painful. Another benefit is that **our program's source code doesn't strictly need to exist in the `$GOPATH/src` directory**, making it more convenient to work with different package versions in other projects at the same time.
+Also, modules help other developers reference specific versions of your code and make working with dependencies easier. Another benefit is that our program's source code doesn't strictly need to exist in the `$GOPATH/src` directory. Freeing that restriction makes it more convenient to work with different package versions in other projects at the same time.
 
-So, to create a module for the `calculator` package, run the following command in the root directory (`$GOPATH/src/calculator`):
+So, to create a module for the `calculator` package, run this command in the root directory (`$GOPATH/src/calculator`):
 
 ```output
 go mod init github.com/myuser/calculator
 ```
 
-From the above command, the `github.com/myuser/calculator` becomes now the package's name, and this is how you'll reference it in other programs. Additionally, the above command creates a new file `go.mod`, and the tree directory now looks like this:
+After you run this command, `github.com/myuser/calculator` becomes the package's name. You'll use that name to reference it in other programs. The command also creates a new file called `go.mod`. Finally, the tree directory now looks like this directory:
 
 ```output
 src/
@@ -93,7 +93,7 @@ src/
     sum.go
 ```
 
-And the content of the `go.mod` file should look like this (Go version might be different):
+The contents of the `go.mod` file should look like the following code. (The Go version might be different.)
 
 ```output
 module github.com/myuser/calculator
@@ -101,16 +101,16 @@ module github.com/myuser/calculator
 go 1.14
 ```
 
-To reference this package in other programs, you need to import it under the module name, and in this case, it is `github.com/myuser/calculator`. Let's see an example of how to use this package in the following section.
+To reference this package in other programs, you need to import it by using the module name. In this case, the name is `github.com/myuser/calculator`. Now let's look at an example of how to use this package.
 
 > [!NOTE]
-> Historically, managing dependencies in Go hasn't been easy, and it's still a work in progress. If you want to learn more about modules, you can check the [series of posts published in the Go's blog](https://blog.golang.org/using-go-modules).
+> Historically, managing dependencies in Go hasn't been easy. The dependency management system is still a work in progress. If you want to learn more about modules, see this [series of posts published in the Go blog](https://blog.golang.org/using-go-modules).
 
-## Referencing local packages (modules)
+## Reference a local package (a module)
 
-Once you've created the package, it's time to use it. Let's continue using the sample application we've been using, but this time instead of having the `sum` function in the `main` package, let's use the one we created before in the `calculator` package.
+Now let's use the package. We'll continue with the sample application we've been using. This time, instead of having the `sum` function in the `main` package, let's use the one we created earlier in the `calculator` package.
 
-The tree file structure now should look like this:
+The tree file structure now should look like so:
 
 ```output
 src/
@@ -121,7 +121,7 @@ src/
     main.go
 ```
 
-Let's use the following code for the `$GOPATH/src/helloword/main.go` file:
+We'll use this code for the `$GOPATH/src/helloword/main.go` file:
 
 ```go
 package main
@@ -135,15 +135,15 @@ func main() {
 }
 ```
 
-Notice that the import has the name of the package you created, `calculator`. Additionally, to call the `Sum` function from that package, you need to specify the package name like this `calculator.Sum`. Lastly, you now also have access to the `Version` variable as it follows the convention name to be exported, and you call it like this `calculator.Version`.
+Notice that the import statement uses the name of the package you created: `calculator`. To call the `Sum` function from that package, you need to specify the package name like so: `calculator.Sum`. Finally, you now also have access to the `Version` variable. You call it like this: `calculator.Version`.
 
-If you try to run the program now, it won't work. You need to tell Go that you're using modules to reference other packages. To do so, run the following command in the `$GOPATH/src/helloworld` directory:
+If you try to run the program now, it won't work. You need to inform Go that you're using modules to reference other packages. To do so, run this command in the `$GOPATH/src/helloworld` directory:
 
 ```output
 go mod init helloworld
 ```
 
-In this case, `helloworld` from the above command is the name of the project. Also, this command creates a new file `go.mod`, so now the tree directory looks like this:
+In the above command, `helloworld` is the name of the project. This command creates a new `go.mod` file, so now the tree directory looks like so:
 
 ```output
 src/
@@ -155,7 +155,7 @@ src/
     main.go
 ```
 
-When you open the `go.mod` file, you should see something like this (Go version might be different):
+When you open the `go.mod` file, you should see something like the following code. (The Go version might be different.)
 
 ```output
 module helloworld
@@ -163,7 +163,7 @@ module helloworld
 go 1.14
 ```
 
-Because you're referencing a local copy of the module, you need to tell Go that you don't want to use a remote location. So you need to modify the `go.mod` manually and include the reference manually, like this:
+Because you're referencing a local copy of the module, you need to inform Go that you don't want to use a remote location. So you need to manually modify the `go.mod` file to include the reference, like so:
 
 ```output
 module helloworld
@@ -175,15 +175,15 @@ require github.com/myuser/calculator v0.0.0
 replace github.com/myuser/calculator => ../calculator
 ```
 
-The `replace` keyword says that instead of using a remote location of the module, use a local directory. In this case, because the `helloworld` and `calculator` programs live in `$GOPATH/src`, the location is simply `../calculator`. If the module's source is in a different location, here's where you define the local path.
+The `replace` keyword specifies to use a local directory instead of a remote location for the module. In this case, because the `helloworld` and `calculator` programs are in `$GOPATH/src`, the location is simply `../calculator`. If the module's source is in a different location, you define the local path here.
 
-You should be able to run the program using this command:
+Run the program by using this command:
 
 ```output
 go run main.go
 ```
 
-And the output should be:
+The output should be as follows:
 
 ```output
 8
@@ -209,34 +209,34 @@ What happens if you try to call the `logMessage` variable or the `internalSum` f
 
 ### Publishing a package
 
-[Publishing a Go package](https://github.com/golang/go/wiki/PackagePublishing) is relatively simple. You simply need to make the package source code publicly available. The majority of developers use GitHub to host packages and make them publicly available. That's the reason you'll sometimes find import in some programs references to `github.com`.
+[Publishing a Go package](https://github.com/golang/go/wiki/PackagePublishing) is fairly easy. You just need to make the package source code publicly available. Most developers use GitHub to make packages available to the public. That's why you'll sometimes find references to `github.com` in import statements.
 
-For instance, if you want to publish your `calculator` package to your GitHub account, you'll need to create a repository named `calculator`, and the URL should look similar to this:
+For example, if you want to publish your `calculator` package to your GitHub account, you need to create a repository named `calculator`. The URL should look similar to this one:
 
 ```output
 https://github.com/myuser/calculator
 ```
 
-And regarding versioning your packages, you'll do it by tagging your repository, like this:
+You'll version your packages by tagging your repository, like so:
 
 ```output
 git tag v0.1.0
 git push origin v0.1.0
 ```
 
-Then, those who want to use your package (or even you) would have to reference it like this:
+Developers who want to use your package (including you) would reference it like so:
 
 ```output
 import "github.com/myuser/calculator"
 ```
 
-But, let's continue talking in more detail about how to reference third-party packages in the next section.
+Let's talk in more detail about how to reference third-party packages.
 
 ## Referencing external (third-party) packages
 
-Sometimes, your programs need to reference packages written by other developers. Typically, those packages are available on GitHub. The below instructions for referencing third-party packages work whether you're developing a package (package different than main) or a standalone program (package main).
+Sometimes your programs need to reference packages written by other developers. Typically, those packages are available on GitHub. The following instructions for referencing third-party packages work whether you're developing a package (a package other than `main`) or a standalone program (the `main` package).
 
-Now let's add a reference to the `rsc.io/quote` package in your program, like this:
+Let's add a reference to the `rsc.io/quote` package:
 
 ```go
 package main
@@ -254,7 +254,7 @@ func main() {
 }
 ```
 
-If you're using VS Code, when you save the file, the `go.mod` file gets updated, and now it looks like this:
+If you're using Visual Studio Code, the `go.mod` file is updated when you save the file. It now looks like so:
 
 ```output
 module helloworld
@@ -269,15 +269,15 @@ require (
 replace github.com/myuser/calculator => ../calculator
 ```
 
-Notice how `rsc.io/quote` is referencing a specific version of the package. This is where you'll need to change the version when you need to upgrade your program's dependencies.
+Notice how `rsc.io/quote` references a specific version of the package. When you need to upgrade your program's dependencies, you'll need to change the version here.
 
-Rerun the program with the following command:
+Run the program again by using this command:
 
 ```output
 go run main.go
 ```
 
-And the output should look like this:
+The output should look like so:
 
 ```output
 8
@@ -285,4 +285,4 @@ Version:  1.0
 Hello, world.
 ```
 
-All future references to third-party packages will need to exist in the `go.mod` file, and when you run or compile the application, Go will download all its dependencies.
+All future references to third-party packages will need to be in the `go.mod` file. When you run or compile the application, Go will download all of its dependencies.
