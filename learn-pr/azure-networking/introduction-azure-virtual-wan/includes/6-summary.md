@@ -6,14 +6,14 @@ After completing the evaluation, you found that Azure Virtual WAN solved the iss
 
 - Customers use Microsoft global WAN with no contracts.
 - Microsoft owns and runs one of the largest backbone networks in the world, connecting their data centers and customers.
-- Any-to-any connectivity encompasses ExpressRoute, S25 & P2S VPN, and SD WAN.
+- Any-to-any connectivity encompasses ExpressRoute, Site-to-Site & Point-to-Site VPN, and SD-WAN.
 - Virtual WAN provides the most optimal way to connect to Azure.
-- Virtual WAN is global with no geographic boundaries.  
+- Azure Virtual WAN is global with no geographic boundaries.  
 
 To summarize Azure Virtual WAN provides a unified framework for connecting, routing, and securing through the Azure Firewall.
 It's deployed in a hub-and-spoke architecture so that you can architect your network, re-architect it, scale it, or just simplify it.
 
-The following image depicts a Azure Virtual WAN deployment and the network traffic flow.
+The following image depicts a Azure Virtual WAN deployment with two Virtual Hubs in different Azure regions and the network traffic flow.
 
 :::image type="content" source="../media/6-united-framework-for-networking.png" alt-text="Azure Virtual WAN provides any-to-any connectivity, custom routing, and security.":::
 

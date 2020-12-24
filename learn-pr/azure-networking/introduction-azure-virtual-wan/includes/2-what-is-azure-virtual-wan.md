@@ -21,18 +21,6 @@ Virtual WAN is a **Microsoft managed** Azure based networking service. Microsoft
 
 This unified framework enables any-to-any connectivity to workloads distributed globally in VNets. It connects working at home and mobile users typically using Point-to-Site VPN, branch offices using Site-to-Site VPN, and main campuses and data centers using ExpressRoute for private connections. Virtual WAN hubs enabled in a Azure regions function as networking hubs connected in full mesh integration for any-to-any connectivity access to workloads that are globally distributed.
 
-## Virtual WAN options
-
-Azure Virtual WAN supports two WAN types, Basic and Standard. A Basic WAN creates only Basic hubs, and Standard WAN creates only Standard hubs. The difference between Basic and Standard is detailed below.
-
-| **Virtual WAN type** | **Hub type** | **Available configurations**                                 |
-| :------------------- | :----------- | :----------------------------------------------------------- |
-| Basic                | Basic        | Site-to-site VPN only                                        |
-| Standard             | Standard     | ExpressRoute, User VPN (P2S), VPN (site-to-site), Inter-hub and VNet-to-VNet transiting through the virtual hub |
-
->[!NOTE]
-> An Basic Virtual WAN can be upgraded to a Standard Virtual WAN. A Standard Virtual WAN cannot be downgraded to a Basic Virtual WAN
-
 To get started with a virtual WAN, create a single Virtual WAN in a Azure region that current supports many spokes. Connect the regional spokes to the hub, then connect the other regions to the hub. The hubs become the connection points for regional connectivity.
 
 ## Overview of Azure Virtual WAN Hubs
@@ -52,5 +40,4 @@ To convert the virtual hub to a secure virtual hub use Azure Firewall Manager. T
 
 The Secure Virtual hub supports the provisioning of two security providers. The aforementioned Azure Firewall for private traffic, and third-party security providers that are integrated with Firewall Manager.
 
-Virtual Hubs or Secure Virtual hubs are the regional connection points for a Virtual WAN. They support multiple service endpoints
-that provide for connectivity between networks and services. They're the core of networking for each region.
+Virtual Hubs or Secure Virtual hubs are the regional connection points for a Virtual WAN. They support multiple service endpoints that provide for connectivity between networks and services. They're the core of networking for each region.
