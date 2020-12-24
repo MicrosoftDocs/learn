@@ -188,7 +188,7 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
 1. Next, from the left nav bar, select **Functions**, and then select the **HttpTrigger1**.
 
-1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. An **Test** pane appears. Under the **Input** pane, in the **Body** text box, overwrite the embedded code by pasting the following cURL command.
+1. From the left nav bar, select **Code + Test**, and from the menu bar, select **Test/Run**. A **Test** pane appears. Under the **Input** pane, in the **Body** text box, overwrite the embedded code by pasting the following cURL command.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" https://<your-url-here>/api/DriveGearTemperatureService
