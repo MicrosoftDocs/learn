@@ -90,15 +90,11 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
     ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
-1. Select **Functions** on the left-side menu. Select **+ Add** at the top of the screen.  This action starts the function creation process.
+1. Select **Functions** from the left nav bar, and then select **+ Add** from the top menu bar. The **Add function** panel appears that starts the function creation process.
 
-1. On the **Azure Functions for PowerShell - getting started** page, select **In-portal**, and then select **Continue**.
+1. In the **Select a template** section, select **HTTP trigger**.
 
-1. In the **Create a function** step, select **More templates**, and then select **Finish and view templates**.
-
-1. In the list of all templates available to this function app, select **HTTP trigger**.
-
-1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as *Function*, and select **Create** to create the function.
+1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and select **Add** to create the function.
 
 1. When your function creation completes, the code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
