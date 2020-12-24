@@ -9,7 +9,7 @@ Next, let's create an Azure Storage account and Blob storage container to hold t
 
 1. Select **Create a Resource**.
 
-1. Select **Storage**, search for and select **Storage account**. Select **Create**.
+1. In the left nav bar, select **Storage**, then search for and select **Storage account**. Select **Create**.
 
 1. In the **Create storage account** panel, enter the following settings:
 
