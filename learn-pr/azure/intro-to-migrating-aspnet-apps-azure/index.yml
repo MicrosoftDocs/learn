@@ -27,17 +27,7 @@ iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the L
 levels: 
 - beginner
 roles:
-- Administrator
-- App maker
-- Business owner
-- Database administrator
-- Developer
-- DevOps engineer
-- Functional consultant
-- Security engineer
-- Solution architect
-- Student
-- Technology manager
+- developer
 products:
 - azure
 units:
