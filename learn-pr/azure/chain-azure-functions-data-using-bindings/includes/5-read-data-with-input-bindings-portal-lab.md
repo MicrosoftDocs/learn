@@ -71,7 +71,7 @@ You've defined a container in our database called **Bookmarks**. You want to sto
 
 You'll add data to the new container using Data Explorer.
 
-1. In Data Explorer, the new database appears in the Containers pane. Expand the **func-io-learn-db** database, expand the **Bookmarks** collection, select **Items**, and from the menu barr, select **New Item**.
+1. In Data Explorer, the new database appears in the Containers pane. Expand the **func-io-learn-db** database, expand the **Bookmarks** collection, select **Items**, and from the menu bar, select **New Item**.
 
 1. Replace the default content of the new item with the following JSON.
 
