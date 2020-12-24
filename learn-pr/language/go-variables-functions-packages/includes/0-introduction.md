@@ -14,6 +14,6 @@ In this module, you will:
 ## Prerequisites
 
 - A Go environment that's ready to create applications.
-- [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/).
-- Know how to create and modify `.go` files.
-- Know how to run Go applications by using the terminal.
+- [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Or you could use the [Go Playground](https://play.golang.org/).
+- The ability to create and modify `.go` files.
+- The ability to run Go applications by using the terminal.

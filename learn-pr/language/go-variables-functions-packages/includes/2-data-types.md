@@ -1,4 +1,4 @@
-Go is a strongly typed language. This means that every variable you declare is bound to a specific data type and won't accept any values that don't match its type.
+Go is a strongly typed language. This means that every variable you declare is bound to a specific data type and will accept only values that match this type.
 
 In Go, you have four categories of data types:
 
@@ -13,7 +13,7 @@ Let's start by exploring the numeric data types.
 
 ## Integer numbers
 
-In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with size of 8, 16, 32, or 64 bits, respectively. When you just use `int`, the size is 32 bits on 32-bit systems and 64 bits on 64-bit systems (most of the time, but it might differ from one machine to another). If you need to represent a value as an unsigned number, you can use `uint`, but only use this type when you have a specific reason to. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
+In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you just use `int`, the size is 32 bits on 32-bit systems and 64 bits on 64-bit systems (most of the time, but it might differ from one computer to another). If you need to represent a value as an unsigned number, you can use `uint`, but only use this type when you have a specific reason to. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
 
 Here's an example of how to use the various integer types in Go:
 
@@ -54,7 +54,7 @@ You can learn about the ranges for each type by looking at the [Go source code](
 
 ### Challenge 1:
 
-Set another variable of type `int` and use the value from the `integer32` or `integer64` variable to confirm the natural size of the variable in your system. If you're on a 32-bit system and use a value higher than 2,147,483,647, you'll get an overflow error that looks like this one: `constant 9223372036854775807 overflows int`.
+Set another variable of type `int` and use the value from the `integer32` or `integer64` variable to confirm the natural size of the variable on your system. If you're on a 32-bit system and use a value higher than 2,147,483,647, you'll get an overflow error that looks like this one: `constant 9223372036854775807 overflows int`.
 
 > **Challenge solution**:
 >```go
@@ -114,7 +114,7 @@ Notice that with the previous code, Go infers the data types from the values use
 
 ## Booleans
 
-A Boolean type has only two possible values: `true` and `false`. You declare a Boolean type by using the keyword `bool`. Go is different from other programming languages in that in Go you *can't implicitly convert* a Boolean type to either 0 or 1. You have to do it explicitly.
+A Boolean type has only two possible values: `true` and `false`. You declare a Boolean type by using the keyword `bool`. Go is different from other programming languages in that in Go you can't implicitly convert a Boolean type to either 0 or 1. You have to do it explicitly.
 
 So you can declare a Boolean variable like so:
 
@@ -126,7 +126,7 @@ We'll use Boolean data types in the upcoming module when we talk about control f
 
 ## Strings
 
-Finally, let's look at the most common data type in any programming language: strings. In Go, the keyword `string` is used to represent a string data type. To initialize a string variable, you need to define its value within double quotation marks (`"`). Single quotation marks (`'`) are used for single characters (or for runes, as we saw in a previous section).
+Finally, let's look at the most common data type in any programming language: string. In Go, the keyword `string` is used to represent a string data type. To initialize a string variable, you need to define its value within double quotation marks (`"`). Single quotation marks (`'`) are used for single characters (and for runes, as we saw in a previous section).
 
 For example, the following code shows two ways to declare and initialize a string variable:
 
@@ -161,7 +161,7 @@ John Doe        (alias "Foo")
 
 ## Default values
 
-So far, almost every time we've declared a variable, we've initialized it with a value. But in Go, unlike in other programming languages, *all data types have a default value* when you don't initialize a variable. This feature comes in handy because you don't have to check if a variable has been initialized before you use it.
+So far, almost every time we've declared a variable, we've initialized it with a value. But in Go, unlike in other programming languages, all data types have a default value when you don't initialize a variable. This feature comes in handy because you don't have to check if a variable has been initialized before you use it.
 
 Here's a list of a few default values for the types we've explored so far:
 
@@ -181,7 +181,7 @@ var defaultString string
 println(defaultInt, defaultBool, defaultFloat32, defaultFloat64, defaultString)
 ```
 
-You could use code like the previous code to determine the default value for a data type we didn't explore here.
+You could use code like this code to determine the default value for a data type we didn't explore here.
 
 ## Type conversions
 

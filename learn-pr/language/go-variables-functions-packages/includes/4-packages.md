@@ -6,7 +6,7 @@ In this section, you'll learn what a package is. You'll also learn how to create
 
 As you might have noticed, even the most straightforward program in Go has to be part of a package. Usually, the default package is the `main` package, the one we've been using so far. If a program is part of the `main` package, Go generates a binary file. When that file runs, it calls the `main()` function.
 
-In other words, when you use `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file with an .a extension).
+In other words, when you use the `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file with an .a extension).
 
 By convention, the package name is the same as the last element of the import path. For example, to import the `math/rand` package, you need to import it like so:
 

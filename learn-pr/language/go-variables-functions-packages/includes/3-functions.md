@@ -2,7 +2,7 @@ In Go, functions allow you to group together a set of statements that you can ca
 
 Up to this point, we've been calling the `println()` function, and we've been writing code in the `main()` function. In this section, we'll explore how you can create custom functions. We'll also look at some other techniques you can use with functions in Go.
 
-## Main function
+## The main function
 
 The function you've been interacting with is the `main()` function. All executable programs in Go have this function because it's the program's starting point. You can only have one `main()` function in your program. If you're creating a Go package, you don't need to write a `main()` function. We'll look at how to create packages in an upcoming module.
 
@@ -51,7 +51,7 @@ func name(parameters) (results) {
 }
 ```
 
-Notice that you use the `func` keyword to define a function and then assign a name to it. After the name, you specify the list of parameters for the function. There can be zero or more parameters. You can also define the return types of the function, of which there can also be zero or more. We'll talk about returning multiple values in the next section. And after you define all of those values, you write the body content of the function.
+Notice that you use the `func` keyword to define a function and then assign a name to it. After the name, you specify the list of parameters for the function. There can be zero or more parameters. You can also define the return types of the function, of which there can also be zero or more. (We'll talk about returning multiple values in the next section.) And after you define all of those values, you write the body content of the function.
 
 To practice this technique, let's refactor the previous section's code to sum the numbers in a custom function. We'll use this code:
 
@@ -92,7 +92,7 @@ Notice that now you need to enclose the result value of the function in parenthe
 
 ## Returning multiple values
 
-In Go, a function can return more than one value. You can define these values in a way that's similar to how you define the function's parameters. In other words, you need to specify a type and a name, but the name is optional.
+In Go, a function can return more than one value. You can define these values in a way that's similar to how you define the function's parameters. In other words, you specify a type and a name, but the name is optional.
 
 For example, say you want to create a function that sums two numbers but also multiplies them. The function code would look like so:
 
@@ -116,7 +116,7 @@ func main() {
 }
 ```
 
-Another interesting feature in Go is that if you don't need one of the return values from a function, you can discard it by assigning the returning value to the `_` variable. *The `_` variable is the idiomatic way for Go to ignore return values. It allows the program to compile*. So, if you only want the sum value, you could use this code:
+Another interesting feature in Go is that if you don't need one of the return values from a function, you can discard it by assigning the returning value to the `_` variable. The `_` variable is the idiomatic way for Go to ignore return values. It allows the program to compile. So, if you only want the sum value, you could use this code:
 
 ```go
 func main() {
@@ -125,7 +125,7 @@ func main() {
 }
 ```
 
-We'll look more at ignoring return values from functions when we talk about error handling in an upcoming module.
+We'll look more at ignoring return values from functions when we explore error handling in an upcoming module.
 
 ## Changing function parameter values (pointers)
 
@@ -174,4 +174,4 @@ func updateName(name *string) {
 
 Run the preceding code. Notice that the output now shows `David` instead of `John`.
 
-The first thing you have to do is modify the function's signature to indicate that you'd like to receive a pointer. To do so, change the parameter type from `string` to `*string`. (The latter is the *pointer to string* data type.) Then, when you assign a new value to that variable, you need to add the star (`*`) on the left side of the variable to yield that variable's value. When you call the `updateName` function, you don't send the value but the memory address of the variable. That's why the preceding code has the `&` symbol on the left side of the variable.
+The first thing you have to do is modify the function's signature to indicate that you want to receive a pointer. To do so, change the parameter type from `string` to `*string`. (The latter is the *pointer to string* data type.) Then, when you assign a new value to that variable, you need to add the star (`*`) on the left side of the variable to yield that variable's value. When you call the `updateName` function, you don't send the value but the memory address of the variable. That's why the preceding code has the `&` symbol on the left side of the variable.

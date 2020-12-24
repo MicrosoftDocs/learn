@@ -1,4 +1,4 @@
-Let's start this module by looking at how to declare and use variables in Go. There are various ways to declare a variable. We'll look at each of them, and you'll choose the one that best suits your needs or style. We'll note some things specific to Go that you don't typically find in other programming languages as we explain the core concepts for variables.
+Let's start this module by looking at how to declare and use variables in Go. There are various ways to declare a variable. We'll look at each of them, and you'll choose the one that best suits your needs or style. We'll note some things specific to Go that you don't typically find in other programming languages as we explore the core concepts for variables.
 
 We're including code snippets in this section that you can run in Visual Studio Code or in the Go Playground.
 
@@ -10,7 +10,7 @@ To declare a variable, you need to use the `var` keyword:
 var firstName string
 ```
 
-The previous statement declares a variable named `firstName` of type `string`.(We'll talk about data types in the upcoming section.) This example shows the most basic way to declare a variable. If you want to declare another variable, you simply add a similar statement to the previous one. But you can declare more than one variable in a single line if they're the same type:
+The previous statement declares a variable named `firstName` of type `string`. (We'll talk about data types in the upcoming section.) This example shows the most basic way to declare a variable. If you want to declare another variable, you simply add a similar statement to the previous one. But you can declare more than one variable in a single line if they're the same type:
 
 ```go
 var firstName, lastName string
@@ -23,7 +23,7 @@ var firstName, lastName string
 var age int
 ```
 
-Another to write the above statement is by using parenthesis after the `var` keyword, as if you had a dedicated block to declare variables, like so:
+Another way to write the previous statement is by using parenthesis after the `var` keyword, as if you had a dedicated block to declare variables, like so:
 
 ```go
 var (
@@ -34,7 +34,7 @@ var (
 
 ## Initializing variables
 
-You've only declared variables at this point, but there will be times when you need them to have an initial value. In Go, you initialize variables in various ways. For instance, continuing with the same example from earlier, you could initialize each variable like this:
+You've only declared variables at this point, but there will be times when you need them to have an initial value. In Go, you can initialize variables in various ways. For instance, continuing with the same example from earlier, you could initialize each variable by using this code:
 
 ```go
 var (
@@ -76,7 +76,7 @@ func main() {
 }
 ```
 
-Run the preceding code to confirm that this way of declaring and initialing variables works.
+Run the preceding code to confirm that this way of declaring and initializing variables works.
 
 Notice that here you need to include a colon equal sign (`:=`) and its corresponding value right after you define the variable name. When you use the colon equal sign, *the variable you're declaring has to be a new one*. If you use a colon equal sign and the variable has been declared already, the program won't compile. Go ahead and give it a try.
 
@@ -92,9 +92,9 @@ For example, you can declare a constant like so:
 const HTTPSatusOK = 200
 ```
 
-As with variables, the type of a constant is inferred from the value assigned to it. In Go, constant names are typically written in MixedCased or all caps.
+As with variables, the type of a constant is inferred from the value assigned to it. In Go, constant names are typically written in MixedCased or all uppercase letters.
 
-If you need to declare multiple constants in the same block, you can do it like so:
+If you need to declare multiple constants in one block, you can do it like so:
 
 ```go
 const (
@@ -107,7 +107,7 @@ const (
 > [!NOTE]
 > Go has an interesting concept related to constants that's called *iota*, which we're not covering in this module. But you can learn more about it by looking at the [Go wiki on GitHub](https://github.com/golang/go/wiki/Iota). Just keep in mind that `iota` is a keyword that Go uses to simplify constant definitions when the values are sequential.
 
-Although there are similarities between constants and variables, there are some key differences. For example, you can declare constants without using them. You won't get an error message. And you can't use the colon equal sign to declare constants. Go will complain about it.
+Although there are similarities between constants and variables, there are some key differences. For example, you can declare constants without using them. You won't get an error message. And you can't use the colon equal sign to declare constants. Go will complain if you do.
 
 ## Go throws an error if you declare variables and don't use them
 
