@@ -34,7 +34,7 @@ Next, create a blob container that holds the source data.
 
 1. Select **Containers** in the **Overview** page.
 
-    ![Creating a container in the storage account option](../media/4-exercise-create-blob-storage-blobs.png)
+    ![Creating a container in the storage account option](../media/4-exercise-create-blob-storage-blob.png)
 
    The **Containers** panel appears.
 
