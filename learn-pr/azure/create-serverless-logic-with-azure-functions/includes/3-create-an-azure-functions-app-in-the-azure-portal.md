@@ -73,7 +73,7 @@ Let's create a function app in the Azure portal.
 
 1. When deployment completes, select **Go to resource**. Your Function App page appears.
 
-1. In the **Essentials** section, select the **URL** link to open it in a browser. You should get a default web page that indicates your Function App is up and running.
+
+1. In the **Essentials** section, select the **URL** link to open it in a browser. A default web page appears that indicates your Function App is up and running.
 
 ::: zone-end
-
