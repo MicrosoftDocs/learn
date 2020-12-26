@@ -6,14 +6,14 @@ Contoso’s IT director realizes that Contoso has an outdated operational model 
 
 As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to evaluate data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You need to determine if Azure services and Microsoft 365 can address the legal department's concerns about General Data Protection Regulation (GDPR) compliance; for example, how to respond to Data Subject Requests.
 
-**Learning Objectives
+## Learning Objectives
 
 - Describe DSRs.
 - Identify DSR processes and terminology for Microsoft products and services.
 - Describe the response process to a DSR.
 - List the DSR admin tools used to execute a DSR.
 
-**Prerequisites
+## Prerequisites
 
 - General Data Protection Regulation (GDPR) for organizations that provide services to people in the European Union (EU)
 - California Consumer Privacy Act (CCPA) that provides privacy rights and obligations to California consumers
