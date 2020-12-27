@@ -18,7 +18,7 @@ Enterprises can choose from these options:
 |  Managed Hybrid WAN model  | Enterprises acquire a Managed Service Provider (MSP) to provide their SD-WAN design, integrations, and operations |
 It should be re-enforced that the benefits of Azure Virtual WAN are not just for Fortune 500 global companies. Small, medium and large business can take advantage of the multiple methods of connectivity outlined above offering tremendous flexibility for users to access a companies services. For example, the Virtual WAN any-to-any connectivity to support distrubed working from home users running Point-to-Site VPN. This allows connection to all of your resources on-premises and in Azure by your contractors, employees, and customers.
 
-In summary:
+Use case summary:
 
 - Azure Virtual WAN manages the traffic between the user and the destination.
 - It provides automatic connections between company services in other regions.
