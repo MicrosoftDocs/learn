@@ -12,11 +12,10 @@ Enterprises can choose from these options:
 
 | Enterprise connection model | Functional features|
 |:------------------------------------------- |:-------------------- |
-|  Direct Interconnect Model | The SD-WAN branch customer-premises equipment (CPE) is directly connected to Virtual WAN hubs via IPsec connections. Azure workloads can be accessed securely and directly using IPsec tunnels connected to Virtual WAN hubs |
+|  Direct Interconnect Model | The SD-WAN branch customer-premises equipment (CPE) is directly connected to virtual hubs via IPsec connections. Azure workloads can be accessed securely and directly using IPsec tunnels connected to virtual hubs |
 | Direct Interconnect Model with NVA-in-VWAN-hub | Supports the interconnection of a third-party Network Virtual Appliance (NVA) directly into the virtual hub, protecting their current investments|
-| Indirect Interconnect model | CPE deployed in their VNet are indirectly connected to Virtual WAN hubs using IPsec. The virtual CPE serves as an SD-WAN gateway into Azure |
+| Indirect Interconnect model | CPE deployed in their VNet are indirectly connected to virtual hubs using IPsec. The virtual CPE serves as an SD-WAN gateway into Azure |
 |  Managed Hybrid WAN model  | Enterprises acquire a Managed Service Provider (MSP) to provide their SD-WAN design, integrations, and operations |
-<!-- GLOBAL: Replace "The Virtual WAN hubs" with "virtual hubs". -->
 It should be re-enforced that the benefits of Azure Virtual WAN are not just for Fortune 500 global companies. Small, medium and large business can take advantage of the multiple methods of connectivity outlined above offering tremendous flexibility for users to access a companies services. For example, the Virtual WAN any-to-any connectivity to support distrubed working from home users running Point-to-Site VPN. This allows connection to all of your resources on-premises and in Azure by your contractors, employees, and customers.
 
 In summary:
