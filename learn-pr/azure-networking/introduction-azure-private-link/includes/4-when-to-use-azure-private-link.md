@@ -7,6 +7,10 @@ You know what Private Link is and how it works. Now you need some criteria to he
 * Lowering the risk of data exfiltration
 * Offering customers private access to company-created Azure services
 
+
+
+<!-- Paul, perhaps the two sentences below could instead bring in the Contoso scenario. Maybe something like, "Contoso has several of these goals. The following sections provide further details for each goal." -->
+
 Do any of these goals apply to your company? If so, read the corresponding section below for more details.
 
 ## Bringing Azure PaaS services into your virtual network
@@ -33,9 +37,9 @@ Private Link doesn't do anything to prevent such attacks. However, once you've c
 
 Network setups rarely consist of a single virtual network. Most networks also include either or both of the following items:
 
-* One or more peered networks connected via Azure Virtual Network Peering.
+* One or more peered networks connected via Azure Virtual Network peering.
 
-* One or more on-premises networks connected either via ExpressRoute Private Peering or via a VPN tunnel.
+* One or more on-premises networks connected either via ExpressRoute private peering or via a VPN tunnel.
 
 Without Private Link, these networks must create their own connections to a specific Azure resource. Those connections usually require the public internet. That changes once Private Endpoint maps the Azure resource to a private IP address in your virtual network. Now all your peered networks can connect to the Private Link resource directly, without any other configuration.
 
@@ -47,7 +51,7 @@ Now suppose that the user is a malicious infiltrator who has taken control of th
 
 This scenario is an example of *data exfiltration*. Private Link lowers the risk of data exfiltration by  mapping a Private Endpoint to a single instance of an Azure resource. An attacker might still be able view the data, but has no way to copy or move it to another resource.
 
-:::image type="content" source="../media/when-to-use-azure-private-link.png" alt-text="Network diagram showing an Azure virtual network accessing a single instance of an Azure SQL Database via a private IP address mapped by Private Endpoint and not allowing access to other instances of Azure SQL Database.":::
+:::image type="content" source="../media/when-to-use-azure-private-link.png" alt-text="Network diagram showing an Azure virtual network accessing a single instance of an Azure SQL database via a private IP address mapped by Private Endpoint and not allowing access to other instances of Azure SQL Database.":::
 
 ## Offering customers private access to company-created Azure services
 
@@ -57,10 +61,12 @@ Suppose your company creates custom Azure services. Who consumes those services?
 * Company suppliers or vendors.
 * Your company's employees.
 
-You can say that each consumer is the above list is a *customer* of your service.
+You can say that each consumer in the above list is a *customer* of your service.
 
 There's an excellent chance that the data accessed and created by those customers is every bit as important as your company's data. So your customer's data deserves the same level of privacy and security as your company data.
 
-If you believe that Private Link is the right choice for securing your company data, then you'll want to extend that security model to your custom Azure services. By putting your custom services behind a Standard Load Balancer, you can use Private Link Service to enable customers to access your service using Private Endpoint.
+If you believe that Private Link is the right choice for securing your company data, then you'll want to extend that security model to your custom Azure services. By putting your custom services behind Azure Standard Load Balancer, you can use Private Link Service to enable customers to access your service using Private Endpoint.
 
 Imagine the glee of your marketing department when you tell them you can now offer customers private and secure access to your custom Azure services.
+
+<!--  Paul, I wonder if "glee" above is a little too sales-like, should it be something like "satisfaction"? -->
