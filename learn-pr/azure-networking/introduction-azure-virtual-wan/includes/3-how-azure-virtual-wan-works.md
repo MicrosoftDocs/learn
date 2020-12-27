@@ -7,8 +7,7 @@ The following services and components of Azure Virtual WAN are designed to provi
 
 ### The service components that encompass the Azure Virtual WAN service follow
 
-- **The Virtual WAN Hub** - All traffic flows through these fully meshed hubs. An address space and routing tables are provided at creation.
-<!-- Replace "The Virtual WAN Hub" with "Virtual hub". -->
+- **The Virtual Hub** - All traffic flows through these fully meshed hubs. An address space and routing tables are provided at creation.
 - **Hub-to-Hub connections** - Enable cross-region connectivity between all on-premises and Azure network endpoints.
 - **Virtual Hub Router** - Support for custom route tables for VNets, default route table for branches (P2S, S2S, ER). They also associate connections to route tables, and propagate routes from connections to route tables.
 - **Connection between sites** - Support for any-to-any, branch to Azure, branch to branch, users to branch, VNet to VNet transit, and VPN to Express Route transit connectivity.
@@ -44,8 +43,7 @@ Comparison of VPN Network Gateways and Virtual WAN Hubs
 | Point-to-Site VPN connection speed | 10 Gbps | 20 Gbps |
 | Express Route max connections | 0 | 4 |
 | Express Route connection speed | N/A | 20 Gbps |
-| Zone Redundancy | Optional | Yes (automatic) |
-| Premise Device Orchestration | No | Yes (automatic) |
+
 
 As shown above the Virtual WAN offers significant improvements in connectivity, speed, and configuration over the VPN gateways.
 
