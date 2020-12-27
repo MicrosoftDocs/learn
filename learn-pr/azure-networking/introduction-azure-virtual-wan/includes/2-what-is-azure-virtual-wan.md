@@ -7,15 +7,11 @@ Azure Virtual WAN is a unified framework for networking, security, and routing. 
 This networking topology, refereed to as a star topology or hub and spoke, is often used as a classic site to site WAN service. A efficient and cost effect model to extend your WAN geographically would be through Azure. Azure's network expands the globe with many data centers interconnected using Azure global high speed backbone.
 
 Initially as services are moved to Azure and connected to on-premises networks a virtual
-network (VNet) is created to host the VMs and the Windows Azure gateway. This gateway  is also called VNet hub.
-<!-- VNets don't host VMs. Consider replacing with "..is created to connect the VMs.." -->
-<!-- Replace "Windows Azure gateway" with "Azure VPN Gateway". -->
-<!-- Consider removing the very last sentence since a "virtual hub" (not a "VNet hub" as mentioned above" doesn't necesseraily need a gateway, it's optional. More info https://docs.microsoft.com/en-us/azure/firewall-manager/secured-virtual-hub -->
-This VNet hub functions as the focal point for connectivity to a on-premises network, and other VNets. The spokes are VNets that peer with the Hub. VNet peering is the interconnecting of VNets to each other. For connectivity purposes, the virtual networks appear as one. The Hub and spokes are connected using VPN gateways or ExpressRoute.
-<!-- GLOBAL: Replace "VNet hub" with "virtual hub". -->
+network (VNet) is created to connect with the VMs and the Azure VPN gateway. When a Virtual WAN is created using the Azure portal a virtual hub VNet and gateways (optional) are created as its components.
+This virtual hub functions as the focal point for connectivity to a on-premises network, and other VNets. The spokes are VNets that peer with the Hub. VNet peering is the interconnecting of VNets to each other. For connectivity purposes, the virtual networks appear as one. The Hub and spokes are connected using VPN gateways or ExpressRoute.
  Regional and global VNet peering is supported which allows many locations to be connected. In many situations, the network topology can grow over time to be very complex as additional locations and WANs are added.
 
-Keeping track of all network connections, **customer managed** VNet hubs, and peering processes can become difficult. Azure Virtual WAN addresses this issue by providing a single interface to manage all these points in addition to adding software defined Virtual WAN hubs.
+Keeping track of all network connections, **customer managed** virtual hubs, and peering processes can become difficult. Azure Virtual WAN addresses this issue by providing a single interface to manage all these points in addition to adding software defined Virtual WAN hubs.
 
 ## Overview of Azure Virtual WAN
 
