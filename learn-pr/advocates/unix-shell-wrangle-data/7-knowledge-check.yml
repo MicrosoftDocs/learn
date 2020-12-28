@@ -8,12 +8,11 @@ metadata:
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: knowledge check
+title: Knowledge check
 durationInMinutes: 1
 content: |
   Choose the best response for each question. Then select **Check your answers**.
 quiz:
-  title: Check your knowledge
   questions:
     - content: "In our current directory, we want to find the three files, which have the least number of lines. Which command listed below would work?"
       choices:
