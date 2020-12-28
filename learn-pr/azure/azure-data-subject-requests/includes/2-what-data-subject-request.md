@@ -4,7 +4,7 @@ GDPR|CCPA
 ----|----
 Effective May 25, 2018|Effective January 1, 2020
 Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information
-Penalties for non-coompliance and breaches|Penalties for breaches and provisions for consumer lawsuits
+Penalties for non-compliance and breaches|Penalties for breaches and provisions for consumer lawsuits
 
 Reference: "Four differences between the GDPR and the CCPA" (www.helpnetsecurity.com)
 
@@ -39,7 +39,7 @@ It is possible to use the Microsoft products, service and administrative tools t
 
 - Exporting and receiving (portability). Provide an electronic copy of personal data or personal information in a machine-readable format to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person's private, public, or work role. The defined term, "personal information," corresponds with "personal data" under the GDPR. However, the CCPA also includes family and household data.
 
- In the following units we will introduce some of the technical proceedures perfomed when personal data reides in the Microsoft cloud.
+ In the following units we will introduce some of the technical proceedures used to respond to DSRs when personal data reides in the Microsoft cloud.
  
 ## DSR Terminology
 
