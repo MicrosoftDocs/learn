@@ -1,10 +1,10 @@
 Regualations exist that provide rights to people (data subjects and consumers) to manage personal data that has been collected from them by organziations or employers (data controller or controller). In the European Union (EU) the General Data Protection Reguatlation (GDPR) provides these rights. In the United States, the California Consumer Privacy Act (CCPA) provides California consumers with these rights. 
 
-GDPR | CCPA
-----   ----
-Effective May 25, 2018 | January 1, 2020
-Applies to any controller of EU citizens' data regardless of their location or size | Applies to controllers in California earning > $25 million USD or controllers that sell personal information
-Penalties for non-coompliance and breaches | Penalties for breaches
+GDPR|CCPA
+----|----
+Effective May 25, 2018|January 1, 2020
+Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information
+Penalties for non-coompliance and breaches|Penalties for breaches
 
 
 ## What is a data subject request?
