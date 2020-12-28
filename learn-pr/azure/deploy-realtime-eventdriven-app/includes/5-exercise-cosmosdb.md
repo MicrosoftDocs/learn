@@ -84,7 +84,7 @@ public class Function {
 }
 ```
 
-When the event hub receives the message, it generates an event. The processSensorData function runs when it receives the event. It then processes the event data and uses an Azure Cosmos DB output binding to send the results to Azure Cosmos DB. We'll use again the `TelemetryItem.java` class. The `TelemetryItem` objects can be seen as the Consumer Driven Contract between the participants of this event-driven system.
+When the event hub receives the message, it generates an event. The `processSensorData` function runs when it receives the event. It then processes the event data and uses an Azure Cosmos DB output binding to send the results to Azure Cosmos DB. We'll use again the `TelemetryItem.java` class. The `TelemetryItem` objects can be seen as the Consumer Driven Contract between the participants of this event-driven system.
 
 ## Run locally
 
@@ -96,3 +96,11 @@ mvn azure-functions:run
 You can go to the Azure portal and navigate to your Azure Cosmos DB account. Select Data Explorer, expand TelemetryInfo, then select Items to view your data when it arrives.
 
 // Add Screenshot
+
+## Deploy on Azure
+
+Now, let's shift the whole workload in the cloud. To deploy the functions to Azure Functions, you'll use the Maven command `mvn azure-functions:deploy`. Make sure, you're still in the correct repository __telemetry-functions__.
+
+``` Bash
+mvn azure-functions:deploy
+```
