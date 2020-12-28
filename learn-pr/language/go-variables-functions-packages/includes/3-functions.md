@@ -36,7 +36,7 @@ go run main.go 3 5
 Here's the output:
 
 ```output
-Sum: 5
+Sum: 8
 ```
 
 Let's see how we can refactor the above code and create our first custom function.
