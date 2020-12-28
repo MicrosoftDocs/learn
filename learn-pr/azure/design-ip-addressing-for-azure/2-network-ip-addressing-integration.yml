@@ -20,9 +20,9 @@ quiz:
     - content: "A dedicated leased line"
       isCorrect: false
       explanation: " A VPN can connect through the internet. You do not need to have a leased line."
-    - content: "A VM, Subnet, Firewall, and Load balancer"
+    - content: "A VM, subnet, firewall, and load balancer"
       isCorrect: true
-      explanation: "Typical components involved in a network design do include: VM, Subnet, Firewall, and Load balancer. "
+      explanation: "Typical components involved in a network design do include a VM, subnet, firewall, and load balancer. "
     - content: "A dedicated network security group"
       isCorrect: false
       explanation: "A network security group is used to filter traffic. They are not required when you connect an on-premises network to a virtual network."
