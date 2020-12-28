@@ -83,7 +83,7 @@ The `nl` filter has flags that allow you to change the increment value (`-i`), c
 
 ### `wc` command
 
-The wordcount command `wc` counts the number of lines, words (separated by whitespace), and characters in a file or from `stdin`. The output is printed to `stdout` and separated by tabs.
+The word count command `wc` counts the number of lines, words (separated by whitespace), and characters in a file or from `stdin`. The output is printed to `stdout` and separated by tabs.
 
 Use the command `wc` to see the number of lines, words, and characters in `NASA-software-API.txt`
 

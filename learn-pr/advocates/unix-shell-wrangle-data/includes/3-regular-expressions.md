@@ -26,11 +26,11 @@ First, open the `NASA-software-API.txt` file in VSCode. Then open the search box
 
 Make sure that the `regex` option is switched on (see screenshot below, the regex option should be active).
 
-:::image type="content" source="../media/clair_vscode_screenshot.png" alt-text="Screenshot showing VSCode search box and regex option.":::
+:::image type="content" source="../media/clair-vscode-screenshot.png" alt-text="Screenshot showing VSCode search box and regex option.":::
 
 If you type the word *Open Source* in the search box, VSCode will match all the string instances and you can use the arrow buttons to navigate to the matches in the file.
 
-:::image type="content" source="../media/NASA-software-capability.png" alt-text="Screenshot showing VSCode search results in a text file.":::
+:::image type="content" source="../media/nasa-software-capability.png" alt-text="Screenshot showing VSCode search results in a text file.":::
 
 This might not seem any different from any search box. But the true power of regex comes when we start using special characters, ranges, and anchors.
 
