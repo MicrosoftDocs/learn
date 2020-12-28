@@ -10,10 +10,10 @@ In the next few units you will write a Q# program to do just that using Grover's
 
 Fortunately, ISBNs are not simply a random sequence of numbers. 
 Instead, they utilize check digits, a type of redundancy check historically used to detect simple errors when digits are input manually.
-In the ISBN 10 system, each ISBN is a ten-digit sequence and the last digit serves as the check---specifically such that the full sequence $(x_0, x_1, ..., x_9)$ satisfies the weighted sum 
+In the ISBN 10 system, each ISBN is a ten-digit sequence and the last digit serves as the check---specifically such that the full sequence $(x_0, x_1, \ldots, x_9)$ satisfies the weighted sum 
 
 $$
-\left ( \sum_{i=0}^{9} (10-i) x_i \right ) \text{ mod }11 = 0.
+\left ( \sum_{i=0}^{9} (10-i) x_i \right ) \bmod 11 = 0.
 $$
 
 That is, the sum of the digits weighted by their position from the right must be equal to zero modulo 11.
@@ -24,8 +24,8 @@ Now, the digits you see on your sticky note are ISBN 0-306-$x$0615-2, where $x$ 
 
 $$
 \begin{align}
-0 &= (10\cdot 0 + 9\cdot 3 + 8\cdot 0 + 7\cdot 6 + 6\cdot x + 5\cdot 0 + 4\cdot 6 + 3\cdot 1 + 2\cdot 5 + 1\cdot 2) \text{ mod } 11 \\
-0 &= (9 + 6\cdot x) \text{ mod } 11
+0 &= (10\cdot 0 + 9\cdot 3 + 8\cdot 0 + 7\cdot 6 + 6\cdot x + 5\cdot 0 + 4\cdot 6 + 3\cdot 1 + 2\cdot 5 + 1\cdot 2) \bmod 11 \\
+0 &= (9 + 6\cdot x) \bmod 11
 \end{align}
 $$
 
@@ -35,12 +35,12 @@ While this can be easily solved by a classical computer (not to mention by hand)
 To find the value of $x$ with a quantum computer, Grover's algorithm can be used with an oracle that checks whether the above equation is satisfied.
 In the rest of this unit, you will create and document this oracle in a new Q# project using the Standard and Numerics libraries.
 Then, in the next unit, you will put it all together into Grover's algorithm and finally find that book you need. 
-The instructions here are specifically for Q# via the command line in VS Code , but easily extended to other environments. 
+The instructions here are specifically for Q# via the command line in VS Code, but easily extend to other environments. 
 
 ## Grover's oracle
 
-We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \text{ mod } 11$.
-To do this, we need to implement the operation $(9 + 6\cdot x) \text{ mod } 11$ on a quantum register. 
+We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \bmod 11$.
+To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a quantum register. 
 
 Fortunately, the operation [MultiplyAndAddByModularInteger](xref:fill) from the Artithmetic namespace of the Standard Library can be used to do just that. 
 It implements the map
@@ -54,7 +54,7 @@ Note that each register will need consist of four qubits to accurately represent
 
 Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit scratch register ($\ket{b}$) and preparing it in the number state $\ket{9}$ (this can be done using [ApplyXorInPlace](xref:fill)), and then performing the mapping above by providing $N=11$ and $a=6$, so
 $$
-\ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \text{mod} 11}.
+\ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
 $$
 
 In the remainder of this unit you will learn how to explicitly implement this operation as an oracle while defining the corresponding Q# operations. 
@@ -62,17 +62,17 @@ In the next unit, you will put it all together and finally find the book you've 
 
 ### Flag the correct state by applying the oracle
 
-Recall from the (FILL) module on Grover's algorithm that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states—i.e. those which are a solution to the search problem.
+Recall from the (FILL) module on Grover's algorithm that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, i.e. those which are a solution to the search problem.
 This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` gate is applied to the $\ket{-}$ state, the $\ket{-}$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 
-Supposing we have in hand the search register `missingDigitReg` and a `flagQubit` initialized to $\ket{-}$, how would we go about getting that phase factor on strictly the state $\ket{x}$ in `missingDigitReg` which satisfies $(9 + 6 \cdot x) \text{mod} 11 = 0$?
+Supposing we have in hand the search register `missingDigitReg` and a `flagQubit` initialized to $\ket{-}$, how would we go about getting that phase factor on strictly the state $\ket{x}$ in `missingDigitReg` which satisfies $(9 + 6 \cdot x) \bmod 11 = 0$?
 Well, we can add a secondary target register, leaving the full state of the form
 $$
 \ket{x}\ket{\text{target}}\ket{-},
 $$
 then, after first initializing $\ket{\text{target}}$ to $\ket{9}$, we apply the mapping, yielding
 $$
-\ket{x}\ket{(9 + 6 \cdot x) \text{mod} 11}\ket{-}.
+\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\ket{-}.
 $$
 
 Finally, we can apply a controlled `X` gate on the $\ket{-}$ flag qubit, controlled by the target register's being in the $\ket{0}$ number state (for four qubits, technically this is $\ket{0000}$).
@@ -129,7 +129,7 @@ As a part of the full Grover operation, this operation will be nested inside an 
 
 We just described how the oracle itself is implemented by using the `ComputeIsbnCheck` operation, which itself performs the mapping
 $$
-\ket{x}\ket{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \text{mod} 11}.
+\ket{x}\ket{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
 $$
 So, what exactly does that operation consist of?
 As mentioned above, we can take a register in $\ket{0}$, initialize it to the number state $\ket{9}$, and then perform the mapping using `MultiplyAndAddByModularInteger`.

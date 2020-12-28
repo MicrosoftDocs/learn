@@ -11,7 +11,7 @@ When such a library has been made available to a Q# project, its namespaces can 
 > Namespaces can be also be partially defined in each of several different libraries.
 > In this case, the compiler will still recognize the namespace regardless, but if you try to call a function from a particular library that is missing, an error will be raised that the function is not found in the namespace. 
 
-## How are Q# libaries distributed?
+## How are Q# libraries distributed?
 
 Libraries in Q# are distributed as [NuGet](https://www.nuget.org/) packages.
 
@@ -116,4 +116,3 @@ qsharp.reload()
 ## What's next?
 
 Something, surely.
-

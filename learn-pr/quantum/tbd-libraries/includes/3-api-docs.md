@@ -5,7 +5,7 @@ In this unit, you will familiarize yourself with the Q# API documentation: where
 
 ## Where is it?
 
-The official documentation for the Q# libraries can be found from the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum/?view=qsharp-preview) homepage, under the **API reference** tab in the table of contents:
+The official documentation for the Q# libraries can be found from the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum) homepage, under the **API reference** tab in the table of contents:
 
 ![Screengrab showing Q# libraries API location](../media/3-api-location.png)
 
@@ -27,7 +27,7 @@ In the **Q# libraries** dropdown, you find the documentation for all of the Q# l
 ### Looking for something in particular?
 
 Looking for a specific callable or type? 
-Use the *Filter by title* box above the table of contents—it includes the API references and can take you straight to the right page.
+Use the *Filter by title* box above the table of contentsâ€”it includes the API references and can take you straight to the right page.
 We'll be using the `ControlledOnInt` function later in the module, so lets take it as our example:
 
 ![Screengrab showing filter by title ControlledOnInt](../media/3-filter-by-title.png)
@@ -50,4 +50,3 @@ Video explanation talking through the page goes here.
 
 In the next unit, we change gears to actually start using the Q# libraries.
 Specifically, you'll make use of the Standard and Numerics libraries to define an oracle and use Grover's algorithm to determine the missing digit of the ISBN of a book you desperately need (for spaceship narrative purposes).
-
