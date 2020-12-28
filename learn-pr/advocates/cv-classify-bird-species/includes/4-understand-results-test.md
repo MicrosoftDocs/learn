@@ -1,6 +1,6 @@
-Now that our model is created, let's take a look at how it's performing and test the model.
+Now that our model is created, let's take a look at how it's performing. We'll also test the model.
 
-## Understanding model performance
+## Understand model performance
 
 Custom Vision provides three indicators or *metrics*  to help you understand how your model is performing. The indicators do *not* indicate how factual or accurate the model is. The indicators tell you how the model performed on the data you provided, to give you an idea of how the model will perform on new data.
 
@@ -28,7 +28,7 @@ The warning indicates that you don't have an even number of samples for each cla
 
 If you don't have enough data or your data isn't diverse enough, your model can become overfitted. When a model is overfitted, it knows the dataset that is provided well, and it is overfitted to the patterns in that data. The model  performs well on the training data, but it will perform poorly on new data that it hasn't seen before. This is why we always test our models by using new data!
 
-### Testing by using training data
+### Test by using training data
 
 As in overfitting, if you test the model by using the same data that you trained the model with, the model will appear to perform well, but when you deploy the model to production, it most likely will do poorly.
 

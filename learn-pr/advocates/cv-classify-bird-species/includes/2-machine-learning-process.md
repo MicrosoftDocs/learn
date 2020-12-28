@@ -4,27 +4,27 @@ We're going to use the Azure Cognitive Services Custom Vision service to create 
 
 It's likely that you've heard of AI, machine learning, or deep learning before. Let's identify the terms and understand how they are different:
 
-- **artificial intelligence (AI)**: AI is the process of programming a computer to mimic human intelligence. AI includes *machine learning*. The idea of AI is as simple as trying to mimic human intelligence by using a machine, but AI includes many different techniques. The technique this module focuses on is machine learning.
+- **Artificial intelligence (AI)**: AI is the process of programming a computer to mimic human intelligence. AI includes *machine learning*. The idea of AI is as simple as trying to mimic human intelligence by using a machine, but AI includes many different techniques. The technique this module focuses on is machine learning.
 
-- **machine learning**: Machine learning is a subset of AI. Machine learning uses techniques to enable machines to use *experience*. Think of experience as a dataset, with right and wrong answers already given. In machine learning, the computer uses the answers that are supplied to improve how the computer completes specific tasks. The field of machine learning also includes *deep learning*.
+- **Machine learning**: Machine learning is a subset of AI. Machine learning uses techniques to enable machines to use *experience*. Think of experience as a dataset, with right and wrong answers already given. In machine learning, the computer uses the answers that are supplied to improve how the computer completes specific tasks. The field of machine learning also includes *deep learning*.
 
-- **deep learning**: Deep learning is a subset of machine learning. Deep learning is based on *artificial neural networks (ANNs)*. The learning process is *deep* because the structure of ANNs consists of multiple layers: input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure enables a machine to learn through its own data processing.
+- **Deep learning**: Deep learning is a subset of machine learning that's based on *artificial neural networks* (ANNs). The learning process is *deep* because the structure of ANNs consists of multiple layers: input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure enables a machine to learn through its own data processing.
 
-When we build a model, we are trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
+When we build a model, we're trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
 
 ## What is transfer learning?
 
 Azure Cognitive Services Custom Vision uses *transfer learning*. Transfer learning is the ability to use prior knowledge to better solve the current problem. As humans, we do this all the time. We are discovering new ways to do this with computers, too. 
 
-The way transfer learning works with the Custom Vision service in Azure is to add a layer in the neural network that is a pretrained model. The trained model gives us a head start when we train new data. It starts with a general-knowledge domain, and then new layers are added to the neural network to solve a specific problem. In this case, the problem we want to solve is how to identify birds. By starting with a pretrained model, we can get better results with adding less data.
+The way transfer learning works with the Custom Vision service in Azure is to add a layer in the neural network that's a pretrained model. The trained model gives us a head start when we train new data. It starts with a general-knowledge domain, and then new layers are added to the neural network to solve a specific problem. In this case, the problem we want to solve is how to identify birds. By starting with a pretrained model, we can get better results with adding less data.
 
 ## The model building process
 
-To better understand the model building process, here's a step-by-step overview of the process and how we will go through it to create a model:
+To better understand the model building process, here's a step-by-step overview of the process and how we'll complete the process to create a model:
 
 1. *Ask a pointed question.* Our question is, can we identify the species of a bird from an image of a bird, to help document different trends and patterns of bird habits?
 
-2. *Prepare data.* We have a dataset of bird images from the CLO that is clean and prepared, so this step is taken care of for us. If you built a different model, you would need to find and prepare data for training the model. You would want to find data that would help you answer the pointed question (step 1) that you're interested in.
+2. *Prepare data.* We have a dataset of bird images from the CLO that's clean and prepared, so this step is taken care of for us. If you built a different model, you would need to find and prepare data for training the model. You would want to find data that would help you answer the pointed question (step 1) that you're interested in.
 
 3. *Select an algorithm.* The Custom Vision service in Azure uses a *convolutional neural network (CNN)*, so we don't have to worry about this step. A CNN is a type of deep learning that's commonly used to analyze images. Having the algorithm already created saves us a *lot* of time!
 
