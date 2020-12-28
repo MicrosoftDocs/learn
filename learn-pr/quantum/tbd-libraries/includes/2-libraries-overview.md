@@ -1,4 +1,4 @@
-The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without worrying about the nitty-gritty details of the actual implementation on target machines.
+The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without worrying about the details of actual implementation on target machines, e.g. whether it will be run on a trapped ion, superconducting qubit, or a simulated quantum computer. 
 
 ## What is a Q# library?
 
@@ -38,15 +38,10 @@ Then, there are three libraries focused on more domain-specific functionality:
 - The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer.
     Many quantum algorithms require some level of arithmetic manipulation for the information encoded in the qubit registers, and the operations implemented in this library provide you the necessary arithmetic operations to implement algorithms like Shor's factoring algorithm.
 
-> [!NOTE]
-> By default, Q# projects have access to the standard library. 
-> However, although the domain-specific libraries are also part of the QDK, this does not mean that your Q# projects will automatically have access to their contents. 
-> As we explain below, their respective packages must be explicitly added to each project. 
-
 
 ## How can I add a Q# library to my project?
 
-The standard library is included in every Q# project by default, but accessing other libraries requires adding their packages to the project.
+The standard library is included in every Q# project by default, but accessing other libraries—including the domain-specific libraries discussed above—requires adding their respective packages to the project.
 
 Depending on your Q# development setup, the method will vary. 
 

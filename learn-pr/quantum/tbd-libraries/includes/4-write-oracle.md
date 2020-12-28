@@ -1,6 +1,3 @@
-> [!NOTE]
-> To-do: clean up some of the strucure
-
 You are in desperate need of a book on how to save your spaceship, but the intergalactic online library only lets you search for books by their International Standard Book Number, or ISBN, a sequence of numbers which uniquely identify every book. 
 You had written it down on a sticky note, but after spilling your coffee during liftoff one of the digits is now illegible.
 The online library only allows three attempts when searching for a book, so you need to somehow determine the missing digit without guessing.

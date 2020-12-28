@@ -1,8 +1,9 @@
-> [!NOTE]
-> Currently just copied from planning doc. Will update *after* content more developed.
-
-
 Q# provides you with an increasing number of libraries that will help you leverage existing functionalities to create advanced quantum algorithms. In this module you will explore some of these interoperability tools and learn about the different libraries currently available in the Quantum Development Kit (QDK).
+
+*spaceship prose goes here*
+
+*also will fix up the learning objectives*
+
 
 ## Learning objectives
 
