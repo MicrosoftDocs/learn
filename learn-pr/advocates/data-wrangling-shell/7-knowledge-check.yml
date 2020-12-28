@@ -13,7 +13,6 @@ durationInMinutes: 1
 content: |
   Choose the best response for each question. Then select **Check your answers**.
 quiz:
-  title: Check your knowledge
   questions:
     - content: "In our current directory, we want to find the three files, which have the least number of lines. Which command listed below would work?"
       choices:
