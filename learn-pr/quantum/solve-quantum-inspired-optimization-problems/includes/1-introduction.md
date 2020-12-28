@@ -1,6 +1,6 @@
 In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms inspired from quantum computing that are applied to solve optimization problems on traditional hardware. Throughout the [learning path](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/?azure-portal=true), you have been working on a spaceship on an asteroid mining mission. To illustrate the optimization method, let's look at how the logistics division efficiently loads cargo vessels.
 
-![An illustration that shows two space ships that need to be loaded with minerals as evenly as possible](../media/interplanet_express.png)
+![An illustration that shows two space ships that need to be loaded with minerals as evenly as possible](../media/mineral_loading.svg)
 
 Your spaceship is transporting a rare mineral from a recently discovered asteroid in the Virgo cluster. Two competing galactic federations have laid claim to the asteroid, and we must avoid a political crisis at all costs. To resolve this conundrum, you organized two freight ships which must be loaded with the mineral as evenly as possible. To make the problem harder, the mineral is mined in massive chunks of various sizes, so you can't easily divide them between the ships. How can you optimize the distribution of the mineral and avert an intergalactic crisis?
 
