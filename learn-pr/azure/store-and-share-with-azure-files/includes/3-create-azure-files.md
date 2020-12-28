@@ -40,7 +40,7 @@ There are interesting optional arguments that you might find useful in some situ
 
 The defaults for these arguments are acceptable in our scenario. So, the full command takes the following form:
 
-```azurelci
+```azurecli
 az storage share create \
 --account-name <unique account name> \
 --account-key <account key> \
