@@ -1,41 +1,46 @@
-In a perfect world, all your employees understand the importance of information protection and work within your policies. In the real world, it's likely that a busy partner who frequently works with accounting information will inadvertently upload a sensitive document to some cloud repository with incorrect permissions. A week later you realize your enterprise's confidential information was leaked to your competition.
+In a perfect world, all your employees understand the importance of information protection and work within your policies. In the real world, it's likely that a busy partner who frequently works with accounting information might inadvertently upload a sensitive document to a cloud repository with incorrect permissions. A week later, you realize that your enterprise's confidential information was leaked to your competitors.
 
 ## What is sensitive data?
 
-Before we start learning on how to protect data, we need to identify the data that needs protection. It is very important to understand that not all data need protection, and not all data need the same level of protection. For example, you might need to have very strong protection over your financial data, but at the same time you might not need any protection for some marketing materials. Also, you might need to protect personal data so that only you can access it, while financial data, although very important, might need to be protected in a way that few authorized people can access it.
+Before learning about protecting data, you need to identify the data that needs protection. It is important to understand that not all data need protection, and not all data need the same level of protection. For example, you might need to implement strong protection methods for your financial data, but you might not need to include any protection with some marketing materials. Also, you might need to protect personal data so that only you can access it, while protecting important financial data in a way that a few authorized people can access it.
 
-Having said this, we need to define sensitive data. Although the specific definition of sensitive data might differ for different scenarios, we can generally say that sensitive data is information that needs to be protected from unauthorized access. We usually achieve that protection by implementing appropriate data security and information protection technologies. In some cases, such as when sensitive data are in paper form, you might need physical security also. All technologies and methods for sensitive data protection are used to prevent unauthorized access or data leakage.
+Although the specific definition of sensitive data might differ for different scenarios, sensitive data is generally defined as information that needs protection from unauthorized access. You can usually achieve that protection by implementing appropriate data security and information protection technologies. In some cases, such as sensitive data in paper form, you might need to include physical security as well. There are several technologies and methods for sensitive data protection that you can use to prevent unauthorized access or data leakage.
 
-Reasons to protect sensitive data can include:
+Reasons to protect sensitive data include:
 
 - Personal privacy
 - Regulatory requirements
 - Intellectual property
 - Ethical or legal requirements
 
-For example, from the aspect of GDPR, which primarily protects personal data, following personal data is considered sensitive:
+For example, the General Data Protection Regulation (GDPR), which primarily protects personal data, considers the following personal data sensitive:
 
-- personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs;
-- trade-union membership;
-- genetic data, biometric data processed solely to identify a human being;
-- health-related data;
-- data concerning a person’s sex life or sexual orientation.
+- Personal data that reveals racial or ethnic origin, political opinions, and religious or philosophical beliefs
+- Trade-union membership
+- Genetic data and biometric data that is processed solely to identify a human being
+- Health-related data
+- Data concerning a person’s sex life or sexual orientation
 
-## How to discover and protect sensitive data?
+## Discover and protect sensitive data
 
-If you are implementing sensitive data protection in your organization, you need to implement several steps on that path. It is not enough just to choose a technology to protect data. If you don't properly identify sensitive data, protection technology will not help much. Also, if you don't have a consistent processes of classifying data (both sensitive and non-sensitive) you will not be able to efficiently implement protection technology. At the end , but not less important, if you don't monitor your sensitive data through its lifecycle, protection will not be efficient as you will not know if it really works properly. 
+If you're incorporating sensitive data protection in your organization, you need to account for several steps during the process. It's not enough just to choose a technology to protect data. If you don't properly identify sensitive data, protection technology won't help much. Also, if you don't have a consistent processes for classifying data (both sensitive and non-sensitive), you won't be able to efficiently implement protection technology. Another important consideration is data monitoring. If you don't monitor your sensitive data through its lifecycle, protection won't be efficient, because you won't know if it really works properly. 
 
-Data location is also very important. Today, data can be located everywhere - on mobile devices, on cloud storage services and on your local file server infrastructure. You need to consider all possible locations where sensitive data might reside, as well as network paths which it may transit.
+Data location is also important. Today, data can be located everywhere - on mobile devices, on cloud storage services, and on your local file server infrastructure. You need to consider all the possible locations where sensitive data might reside, as well as the network paths along which it may transit.
 
-Microsoft's approach to sensitive data protection can be split into the four phases that allow you to protect your data through its full lifecycle, across multiple locations and devices. These phases are:
+The Microsoft approach to sensitive data protection consists of four phases that allow you to protect your data through its entire lifecycle and across multiple locations and devices. These phases are:
 
 - Discover your data
 - Classify sensitive information
 - Protect your data
 - Monitor and report on your data
 
-:::image type="content" source="../media/2-dlp-solutions.png" alt-text="Image shows Microsoft approach to sensitive data":::
+The following image depicts the Microsoft approach to information protection.
 
+:::image type="content" source="../media/2-data-loss-prevention-solutions.png" alt-text="The Microsoft approach to sensitive data includes the discover, classify, protect, and monitor phases. This approach improves data security across devices, apps, cloud services, and on-premises data.":::
 
+You can use this approach to help ensure that all your sensitive data will be discovered, classified, protected, and monitored. Later in this module <!--Damir, I removed the reference to the course because for microlearning, we don’t refer to any other modules or courses; each ML module is standalone-->, you’ll also learn about specific technologies that you can use to:
 
-When using this approach, you can be sure that all your sensitive data will be discovered, classified, protected and monitored. Later in this module and this course, you will learn about specific technologies that can help you to define and discover sensitive data for your specific scenario, protect the data and monitor data usage.
+- Define and discover sensitive data for your specific scenario.
+- Protect the data.
+- Monitor data usage.
+ 
