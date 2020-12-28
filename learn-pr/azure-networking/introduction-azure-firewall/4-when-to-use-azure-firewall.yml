@@ -3,8 +3,8 @@ uid: learn.introduction-azure-firewall.4-when-to-use-azure-firewall
 title: When to use Azure Firewall
 metadata:
   title: When to use Azure Firewall
-  description: TBD.
-  ms.date: 02/28/2021
+  description: Evaluate whether Azure Firewall and Azure Firewall Manager are the right solutions for your company.
+  ms.date: 12/28/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
