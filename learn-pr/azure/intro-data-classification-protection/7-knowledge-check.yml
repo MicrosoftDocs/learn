@@ -17,66 +17,66 @@ quiz:
 
 questions:
 
-  - content: "Which phases are included in Microsoft's approach to sensitive data protection?"
+  - content: "Which phases are included in the Microsoft approach to sensitive data protection?"
     choices:
-    - content: "Protect, Encrypt, Monitor and Destroy"
+    - content: "Protect, Encrypt, Monitor, and Destroy"
       isCorrect: false
-      explanation: "That is not correct. Microsoft's approach includes Discover, Classify, Protect and Monitor phases."
-    - content: "Discover, Protect, Sign and Monitor"
+      explanation: "That's incorrect. The Microsoft approach doesn't include the Protect, Encrypt, Monitor, and Destroy phases."
+    - content: "Discover, Protect, Sign, and Monitor"
       isCorrect: false
-      explanation: "That is not correct. Microsoft's approach includes Discover, Classify, Protect and Monitor phases."
-    - content: "Discover, Classify, Protect and Monitor"
+      explanation: "That's incorrect. The Microsoft approach doesn't include the Discover, Protect, Sign, and Monitor phases."
+    - content: "Discover, Classify, Protect, and Monitor"
       isCorrect: true
-      explanation: "That is correct. Microsoft's approach includes Discover, Classify, Protect and Monitor phases."
+      explanation: "That's correct. The Microsoft approach includes the Discover, Classify, Protect, and Monitor phases."
 
 
-  - content: "When you implement data classification, what is the meta data being added after data is classified?"
+  - content: "When an administrator implements data classification, what's the metadata that's added after the data is classified?"
     choices:
     - content: "Permission list"
       isCorrect: false
-      explanation: "That is not correct. Meta data that is added as a result of classification is classification label."
+      explanation: "That's incorrect. A permission list is not metadata that's added as a result of classification."
     - content: "Label"
       isCorrect: true
-      explanation: "That is correct. Meta data that is added as a result of classification is classification label."
+      explanation: "That's correct. The classificaation label is metadata that's added as a result of classification."
     - content: "Digital signature"
       isCorrect: false
-      explanation: "That is not correct. Meta data that is added as a result of classification is classification label."
+      explanation: "That's incorrect. A digital signature is not metadata that's added as a result of classification."
 
-   - content: "You have chosen to perform content based classification on your data. What condition you can use to automate this process?"
+   - content: "An administrator has chosen to perform content-based classification on their data. What condition can they use to automate this process?"
     choices:
     - content: "Permissions on the data"
       isCorrect: false
-      explanation: "That is not correct. You can use keywords to automatically recognize and classify data."
+      explanation: "That's incorrect. You cannot use data permissions to automatically recognize and classify data."
     - content: "Application that produced the data"
       isCorrect: false
-      explanation: "That is not correct. You can use keywords to automatically recognize and classify data."
+      explanation: "That's incorrect. You cannot use the application to automatically recognize and classify data."
     - content: "Keywords"
       isCorrect: true
-      explanation: ""That is correct. You can use keywords to automatically recognize and classify data.""
+      explanation: "That's correct. You can use keywords to automatically recognize and classify data."
 
-   - content: "You want to search for sensitive data accross Office 365 services in your organization, in order to prevent data loss. What should you configure to be able to do this?"
+   - content: "To prevent data loss, an administrator want to search for sensitive data across Office 365 services in their organization. What should they configure to be able to do this?"
     choices:
     - content: "File and folder permissions"
       isCorrect: false
-      explanation: "That is not correct. You need to configure DLP Policy in Security & Compliance Center."
+      explanation: "That's incorrect. You don't need to configure file and folder permissions to search for sensitive data and prevent data loss."
     - content: "Keyword search"
       isCorrect: false
-      explanation: "That is not correct. You need to configure DLP Policy in Security & Compliance Center."
-    - content: "DLP Policy"
+      explanation: "That's incorrect. You don't need to configure a keyword search for sensitive data."
+    - content: "DLP policy"
       isCorrect: true
-      explanation: "That is correct. You need to configure DLP Policy in Security & Compliance Center."
+      explanation: "That's correct. You need to configure a DLP policy in the Security & Compliance Center."
 
-   - content: "You need to be able to classify and protect various Word documents stored on your local file server and on your SharePoint Online sites. Which technology you should choose?"
+   - content: "An administrator wants to classify and help protect various Word documents stored on their local file server and SharePoint Online sites. To do this, which technology should they choose?"
     choices:
     - content: "Azure Information Protection"
       isCorrect: true
-      explanation: "That is correct. You should use Azure Information Protection for this."
+      explanation: "That's correct. You should use Azure Information Protection to classify and help protect the documents."
     - content: "Office 365 Message Encryption"
       isCorrect: false
-      explanation: "That is not correct. You should use Azure Information Protection for this."
-    - content: "Label based information protection in Windows 10"
+      explanation: "That's incorrect. You don't need to use Office 365 Message Encryption to classify and help protect the documents in this scenario."
+    - content: "Label-based information protection in Windows 10"
       isCorrect: false
-      explanation: "That is not correct. You should use Azure Information Protection for this."
+      explanation: "That's incorrect. You don't need to use label-based information protection to classify and help protect the documents in this scenario."
 
 
   
