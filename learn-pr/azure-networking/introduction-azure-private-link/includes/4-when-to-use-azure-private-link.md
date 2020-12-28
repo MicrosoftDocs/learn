@@ -7,11 +7,7 @@ You know what Private Link is and how it works. Now you need some criteria to he
 * Lowering the risk of data exfiltration
 * Offering customers private access to company-created Azure services
 
-
-
-<!-- Paul, perhaps the two sentences below could instead bring in the Contoso scenario. Maybe something like, "Contoso has several of these goals. The following sections provide further details for each goal." -->
-
-Do any of these goals apply to your company? If so, read the corresponding section below for more details.
+As part of your Azure Private Link evaluation, you know that Contoso has several of these goals. Read the corresponding sections below for more details.
 
 ## Bringing Azure PaaS services into your virtual network
 
@@ -67,6 +63,4 @@ There's an excellent chance that the data accessed and created by those customer
 
 If you believe that Private Link is the right choice for securing your company data, then you'll want to extend that security model to your custom Azure services. By putting your custom services behind Azure Standard Load Balancer, you can use Private Link Service to enable customers to access your service using Private Endpoint.
 
-Imagine the glee of your marketing department when you tell them you can now offer customers private and secure access to your custom Azure services.
-
-<!--  Paul, I wonder if "glee" above is a little too sales-like, should it be something like "satisfaction"? -->
+Imagine the satisfaction of your marketing department when you tell them they can now offer customers private and secure access to your custom Azure services.

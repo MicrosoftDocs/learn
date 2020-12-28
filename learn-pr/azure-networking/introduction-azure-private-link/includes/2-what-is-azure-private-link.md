@@ -1,8 +1,6 @@
 Before you learn about Azure Private Link and its features and benefits, let's examine the problem that Private Link is designed to solve.
 
-<!-- Paul, it would be best to try to continue the Contoso story we started in the Intro. Maybe something like, "In the Contoso scenario, they have an Azure virtual network connected to PaaS resources, such as Azure SQL databases. When you create such resources, you normally specify..." (the rest of the text might continue as is) -->
-
-Suppose your company has an Azure virtual network and you want to connect to a PaaS resource such as an Azure SQL database. When you create the Azure SQL Database resource, you normally specify a *public endpoint* as the connectivity method.
+Contoso has an Azure virtual network and you want to connect to a PaaS resource such as an Azure SQL database. When you create such resources, you normally specify a *public endpoint* as the connectivity method.
 
 Having a public endpoint means that the resource is assigned a public IP address. So, even though both your virtual network and the Azure SQL database are located within the Azure cloud, the connection between them takes place over the internet.
 
