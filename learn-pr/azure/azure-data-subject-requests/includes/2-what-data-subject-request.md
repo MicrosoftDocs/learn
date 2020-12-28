@@ -5,6 +5,7 @@ GDPR|CCPA
 Effective May 25, 2018|Effective January 1, 2020
 Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information
 Penalties for non-coompliance and breaches|Penalties for breaches and provisions for consumer lawsuits
+
 Reference: "Four differences between the GDPR and the CCPA" (www.helpnetsecurity.com)
 
 ## What is a data subject request?
