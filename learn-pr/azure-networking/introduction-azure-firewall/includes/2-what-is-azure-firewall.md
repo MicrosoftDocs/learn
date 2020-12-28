@@ -35,7 +35,7 @@ The following table lists some key features of Azure Firewall:
 |Destination network address translation (DNAT)     |All inbound traffic from external sources is sent to the public IP address of the Azure Firewall. Allowed traffic is translated to the private IP address of the destination resource on your virtual network.         |
 |Application rules     |Rules that limit outbound traffic to a list of FQDNs. For example, you can  allow outbound traffic to access the FQDN of a specified SQL database instance.         |
 |Network rules     |Rules for incoming and outgoing traffic based on network parameters. These parameters include the destination or source IP address; the network port; and the network protocol.         |
-|Threat intelligence     |Filters incoming and outgoing traffic based on the Microsoft Threat Intelligence rules, which define known malicious IP addresses and domain names. You can configure Azure Firewall to only alert you when traffic fails a threat intelligence rule, or to both alert you and deny the traffic.         |
+|Threat intelligence     |Filters incoming and outgoing traffic based on the Microsoft Threat Intelligence rules, which define known malicious IP addresses and domain names. You can configure Azure Firewall with one of two threat intelligence modes: Alert you when traffic fails a threat intelligence rule; alert you and deny the traffic.         |
 |Stateful     |Examines network packets in context, not just individually. If one or more packets arrive unexpectedly given current traffic, Azure Firewall treats the packets as malicious and denies them.         |
 |Forced tunneling     |Enables Azure Firewall to route all outbound traffic to a specified network resource rather than directly to the internet. The network resource might be an on-premises hardware firewall or a network virtual appliance that processes traffic before allowing it to pass through to the internet.         |
 |Tag support     |Azure Firewall supports service tags and FQDN tags for easier rule configuration. A *service tag* is a text entity that represents an Azure service. For example, **AzureCosmosDB** is the service tag for the Azure Cosmos DB service. An *FQDN tag* is a text entity that represents a group of domain names associated with popular Microsoft services. For example, **WindowsVirtualDesktop** is the FQDN tag for Windows Virtual Desktop traffic.   |
@@ -43,11 +43,11 @@ The following table lists some key features of Azure Firewall:
 
 ## Overview of Azure Firewall Manager
 
-Azure Firewall Manager provides a central point of configuration and management of multiple Azure Firewall instances. Azure Firewall Manager enables you to create on or more firewall policies and rapidly apply them to multiple firewalls.
+Azure Firewall Manager provides a central point of configuration and management of multiple Azure Firewall instances. Azure Firewall Manager enables you to create one or more firewall policies and rapidly apply them to multiple firewalls.
 
 ### What is a firewall policy?
 
-The configuration of a single Azure Firewall can be extremely complex. For example, the firewall might be configured with multiple rule collections, where a *collection* is defined as a combination of any or all of the following:
+The configuration of a single Azure Firewall can be extremely complex. For example, the firewall might be configured with multiple rule collections. A *collection* is a combination of any or all of the following items:
 
 * One or more network address translation (NAT) rules.
 * One or more network rules.
@@ -55,7 +55,7 @@ The configuration of a single Azure Firewall can be extremely complex. For examp
 
 When you include other firewall settings such as custom DNS and how you want the firewall to handle the threat intelligence rules, configuring just a single firewall can be a burden. Adding to that burden are two common network security scenarios:
 
-* Your network architectures requires multiple firewalls.
+* Your network architectures require multiple firewalls.
 * You want each firewall to implement both a base level of security rules that apply to everyone, plus special rules for designated groups such as developers, database users, and the marketing department.
 
 To simplify the complexity of managing these and similar firewall scenarios, you can implement firewall policies. A *firewall policy* is an Azure resource that contains one or more collections of NAT, network, and application rules, custom DNS settings, threat intelligence settings, and more.
