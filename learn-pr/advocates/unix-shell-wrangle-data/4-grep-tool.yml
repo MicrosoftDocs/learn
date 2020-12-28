@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.data-wrangling-shell.4-grep-tool
+uid: learn.advocates.unix-shell-wrangle-data.4-grep-tool
 metadata:
   title: Using the grep command to match regular expressions
   description: In this unit, you'll learn how to use the grep command to match patterns using regular expressions from the command line.

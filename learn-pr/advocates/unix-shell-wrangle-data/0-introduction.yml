@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.data-wrangling-shell.8-summary
+uid: learn.advocates.unix-shell-wrangle-data.0-introduction
 metadata:
-  title: Summary
-  description: Summary
+  title: Introduction
+  description: Introduction
   ms.date: 12/09/2020
   author: trallard
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary
+title: Introduction
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/0-introduction.md)]

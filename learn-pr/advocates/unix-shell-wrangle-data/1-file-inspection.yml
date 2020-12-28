@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.data-wrangling-shell.1-file-inspection
+uid: learn.advocates.unix-shell-wrangle-data.1-file-inspection
 metadata:
   title: Performing file inspection in the Unix shell
   description: This unit describes how you can use the Unix shell to inspect files' contents before doing any data wrangling.
