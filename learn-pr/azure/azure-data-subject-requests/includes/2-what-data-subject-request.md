@@ -5,7 +5,7 @@ GDPR|CCPA
 Effective May 25, 2018|Effective January 1, 2020
 Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information
 Penalties for non-coompliance and breaches|Penalties for breaches and provisions for consumer lawsuits
-
+Reference: "Four differences between the GDPR and the CCPA" (www.helpnetsecurity.com)
 
 ## What is a data subject request?
 
@@ -19,8 +19,6 @@ The CCPA additionally provides for:
 - certain disclosures
 - protections against discrimination
 - opt-out/opt-in requirment for sales related data transfers
-
-
 
 When a data controller receives a DSR they are obligated to promptly consider each DSR and provide a substantive response either by taking the requested action, or by providing an explanation for why they can't accommodate the DSR. A controller should consult with their own legal or compliance advisers regarding the proper disposition of any given DSR. Completing a DSR might involve several processes that are subject to your organization's GDPR compliance rules.
 
