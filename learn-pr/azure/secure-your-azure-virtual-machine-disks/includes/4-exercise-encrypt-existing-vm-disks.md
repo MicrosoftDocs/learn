@@ -146,7 +146,7 @@ You are almost ready to encrypt the disks. Before you do, a warning about creati
 
 1. Next, to encrypt the VM disks, run the `Set-AzVmDiskEncryptionExtension` cmdlet.
     - The `VolumeType` parameter enables you to specify which disks to encrypt: [_All_ | _OS_ | _Data_]. It will default to _All_. You can only encrypt data disks for some distributions of Linux.
-    - You have to supply the `SkipVmBackup` flag for managed disks or the command will fail because there is no snapshot.
+    - You can supply the `SkipVmBackup` flag for managed disks if there is no snapshot.
 
     ```powershell
     Set-AzVmDiskEncryptionExtension `
