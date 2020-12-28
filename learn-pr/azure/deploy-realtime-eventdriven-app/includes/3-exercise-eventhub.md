@@ -177,7 +177,7 @@ The `generateSensorData` function simulates a sensor that sends temperature and 
 
 When the event hub receives the message, it generates an event.
 
-The data used by these function is stored using a class called TelemetryItem, which you'll need to implement. Create a new file called TelemetryItem.java in the same location as Function.java and add the following code:
+The data used by this function is stored using a class called TelemetryItem, which you'll need to implement. Create a new file called TelemetryItem.java in the same location as Function.java and add the following code:
 
 ``` Java
 package com.learn;

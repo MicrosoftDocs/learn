@@ -1,4 +1,4 @@
-Congratulations! You've completed a full IoT scenario!
+Congratulations! You've completed a full event-driven scenario!
 
 Your application are sending event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub. You followed these steps:
 
