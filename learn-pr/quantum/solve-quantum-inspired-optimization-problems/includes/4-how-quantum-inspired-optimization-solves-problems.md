@@ -34,8 +34,8 @@ This parameter defines the radius of neighboring states we can move to. As time 
 
 In Azure Quantum we make available a range of physics-inspired and quantum-inspired techniques to solve discrete and combinatorial optimization problems:
 
-- **Simulated annealing**: A classical stochastic simulation method mimicking the slow cooling of a material (annealing) to remove imperfections [[1]](https://doi.org/10.1126/science.220.4598.671). A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.
-- **Parallel tempering**:  A related classical optimization approach, where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches [[2]](https://doi.org/10.1143/JPSJ.65.1604). It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.
+- **Simulated annealing**: A classical stochastic simulation method mimicking the slow cooling of a material (annealing) to remove imperfections [[1]](https://doi.org/10.1126/science.220.4598.671?azure-portal=true). A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.
+- **Parallel tempering**:  A related classical optimization approach, where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches [[2]](https://doi.org/10.1143/JPSJ.65.1604?azure-portal=true). It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.
 - **Quantum Monte Carlo**: A quantum-inspired method.
 
-Note that this is just a small subset of available techniques [[3]](https://doi.org/10.1103/PhysRevA.94.022337) and we continue to develop and add new solvers to the service.
+Note that this is just a small subset of available techniques [[3]](https://doi.org/10.1103/PhysRevA.94.022337?azure-portal=true) and we continue to develop and add new solvers to the service.

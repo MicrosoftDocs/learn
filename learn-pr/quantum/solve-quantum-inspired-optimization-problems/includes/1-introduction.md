@@ -16,7 +16,7 @@ In this module you'll:
 ## Prerequisites
 
 1. The latest version of the [Azure Quantum Optimization SDK](//TODO: Link)
-2. [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
+2. [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html?azure-portal=true)
 3. An Azure Quantum workspace
 
 If you don't have these tools yet, we recommend that you follow the [How to create an Azure Quantum workspace](//TODO link) module first.
