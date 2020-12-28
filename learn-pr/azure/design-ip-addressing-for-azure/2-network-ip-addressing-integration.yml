@@ -33,7 +33,7 @@ quiz:
       explanation: "This range is not routable over the internet."
     - content: "215.11.0.0 to 215.11.255.255"
       isCorrect: true
-      explanation: "Correct, this is address range is routable over the internet."
+      explanation: "Correct, this address range is routable over the internet."
     - content: "172.16.0.0 to 172.31.255.255"
       isCorrect: false
       explanation: "This range is not routable over the internet."    
