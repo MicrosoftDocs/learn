@@ -2,7 +2,7 @@ Many Microsoft enterprise customers are or will be required to respond to DSRs u
 
 ## Scope of DSR for Azure AD and Microsoft service accounts
 
-:::image type="content" source="../media/2-dlp-solutions.png" alt-text="Image shows Microsoft approach to sensitive data":::
+:::image type="content" source="../media/4-dsr-scope.png" alt-text="Image shows Microsoft's DSR execution scope":::
 
 
 
