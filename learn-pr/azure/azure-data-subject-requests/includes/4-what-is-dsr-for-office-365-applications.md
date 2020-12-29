@@ -5,7 +5,7 @@ In general, the actions perfomed when executing a DSR for Office 365 application
 
 **Office 365 National Clouds**
 
-National clouds are isolated from the Office 365 cloud and may have notible diferences in the DSR exectuion processes. The following national clouds are provded by Microsoft:
+National clouds are isolated from the Office 365 cloud and may have notible diferences in the DSR exectuion processes. The following are national clouds:
 - Office 365 Germany
 - Office 365 operated by 21Vianet (China)
 - Office 365 US Government
