@@ -25,6 +25,7 @@ In a hybrid deployment the scope will vary based on the data that is responsive 
 Office 365 encompases many applications that have the potential to store user data. Knowing which applicaitons that the data subject uses will help narrow down what is in-scope for the DRS response. Depending on the applicaiton, you may be able to use the Content Search tool to respond. In some caseses however, you'll have to use the in-app functionality to get to the data.
 The following table shows the applications that support Content Search in Office 365.
 
+<!--"Not sure how to do a table without column headings"-->
 App Name|App Name|App Name|App Name
 ---|---|---|---
 Calendar|Excel|Office Lens|OneDrive for Business
