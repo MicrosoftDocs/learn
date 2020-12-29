@@ -1,14 +1,14 @@
 In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure.
 
 ## Investigate the benefits of migration
-
-The benefits of migrating your application to an Azure-hosted environment revolve around the key aspects of application performance and security. You should cannot achieve these facets on par with, or exceeding, your on-premises environment. Otherwise, the cost and workload associated with the migration might not seem feasible. 
+<!--LM: Please check "should" or "cannot" in the following paragraph and select the appropriate word.-->
+The benefits of migrating your application to an Azure-hosted environment revolve around the key aspects of application performance and security. You should achieve these facets on par with, or exceeding, your on-premises environment. Otherwise, the cost and workload associated with the migration might not seem feasible.
 
 ### Evaluate performance considerations
 
 Performance of your application is a key consideration for customer satisfaction. Your application might experience peaks and troughs in a demand cycle. Holiday shopping or marketing campaigns can contribute to increased demand on your application and the servers hosting them.
 
-In an on-premises world, increasing demand means your systems might become overloaded. Supporting increases in demand might require the addition of server hardware and the management that goes along with it. Management includes adding the hardware, installing and configuring software, and setting up the necessary traffic routing to help ensure that your systems remain available to customers. If demand reduces, you are then left with server hardware that is unused until the next peak in the cycle.
+In an on-premises world, increasing demand means your systems might become overloaded. Supporting increases in demand might require the addition of server hardware and the management that goes along with it. Management includes adding the hardware, installing and configuring software, and setting up the necessary traffic routing to help ensure that your systems remain available to customers. If demand decreases, you are then left with server hardware that's unused until the next peak in the cycle.
 
 ### Evaluate scaling options
 
@@ -22,19 +22,19 @@ Azure provides scaling options for web apps and for your SQL databases. Scaling 
 
 > The App Service will not automatically scale related resources such as an Azure SQL Database. Those resources are not managed by the App Service Plan. However, it’s easy to configure scaling on these other resources as well.
 
-Azure SQL Database and Azure SQL Managed Instance enable you to dynamically add more resources to your database with minimal downtime. By adding more resources, you can quickly react when your database hits the current resource limits and needs more power to handle the incoming workload. Azure SQL Database also enables you to scale-down the resources when they’re not needed to lower the cost.  Single databases in Azure SQL Database support manual dynamic scalability, but not autoscale. For a more automatic experience, consider using elastic pools, which allow databases to share resources in a pool based on individual database needs.
+Azure SQL Database and Azure SQL Managed Instance enable you to dynamically add more resources to your database with minimal downtime. By adding more resources, you can quickly react when your database reaches the current resource limits and needs more power to manage the incoming workload. Azure SQL Database also enables you to scale-down the resources when they’re not needed to lower the cost.  Single databases in Azure SQL Database support manual dynamic scalability, but not autoscale. For a more automatic experience, consider using elastic pools, which allow databases to share resources in a pool based on individual database needs.
 
 ### Evaluate security considerations for app and data
 
-Securing your application and associated data is a critical consideration. Your web app might present a publicly accessible interface, but you do not want unauthorized users to access your database or administration pages of the web app. Some key questions to consider are:
+Securing your application and associated data is a critical consideration. Your web app might present a publicly accessible interface, but you do not want unauthorized users to access your database or administration pages of the web app. Key questions to consider are:
 
 - Who should have access to specific areas of the app?
 
-- Which areas require tighter security? 
+- Which areas require tighter security?
 
 - How do users authenticate with secure areas?
 
-Assess your current environment security configuration and use that assessment to map out your security needs for the hosted environment. Some aspects in an on-premises environment, such as firewall hardware, will be slightly different in Azure. For example, virtual networks on Azure will act as a firewall for apps and services. 
+Assess your current environment security configuration and use that assessment to map out your security needs for the hosted environment. Some aspects in an on-premises environment, such as firewall hardware, will be slightly different in Azure. For example, virtual networks on Azure will act as a firewall for apps and services.
 
 Other areas are new, such as the Azure Key Vault for storing secrets that the application might need. A prime example is storing a SQL connection string in the Azure Key Vault rather than in application configuration files. This adds an extra security layer around database credentials.
 
@@ -66,7 +66,7 @@ Communication with your on-premises network is accomplished through:
 
 - Point-to-site VPN connection. Established between a virtual network and a single computer in your network. Each computer that wants to establish connectivity with a virtual network must configure its connection.
 
-- Site-to-site VPN connection. Established between your on-premises VPN device and an Azure VPN Gateway that is deployed in a virtual network. This connection type enables any on-premises resource that you authorize to access a virtual network.
+- Site-to-site VPN connection. Established between your on-premises VPN device and an Azure VPN Gateway that's deployed in a virtual network. This connection type enables any on-premises resource that you authorize to access a virtual network.
 
 - ExpressRoute connection. Established between your network and Azure, through an ExpressRoute partner. This connection is private. Traffic does not go over the internet.
 
@@ -80,7 +80,7 @@ Azure AD is a cloud-based identity and access management service that helps your
 
 ### Explore authentication and access control with Azure AD
 
-Azure AD authentication can provide verification of a username and password, but it is also much more. To improve security and reduce the need for helpdesk assistance, Azure AD authentication includes the following components:
+Azure AD authentication can provide verification of a username and password, but it's also much more. To improve security and reduce the need for helpdesk assistance, Azure AD authentication includes the following components:
 
 - Self-service password reset. Users can update or change their passwords by using a web browser from any device.
 
@@ -124,7 +124,7 @@ You can use the pricing calculator to determine the costs of hosting your ASP.NE
 
 :::image type="content" source="../media/4-app-service-pricing-option.png" alt-text="Screenshot of the Azure App Service category option.":::
 
-Adjusting the pricing tier option from the **Tier** drop-down will change the cost model. This will change the compute configuration by selecting specific configurations of CPU cores and memory options. You can select a tier that matches your on-premises environment to review the monthly hosting cost for that compute environment.
+Adjusting the pricing tier option from the **Tier** drop-down menu will change the cost model. This will change the compute configuration by selecting specific configurations of CPU cores and memory options. You can select a tier that matches your on-premises environment to review the monthly hosting cost for that compute environment.
 
 To get an idea of costs associated with scaling the app, you can increase the counter for the number of instances.
 

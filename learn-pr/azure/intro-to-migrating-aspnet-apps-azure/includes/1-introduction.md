@@ -12,10 +12,10 @@ By the end of this module, you’ll be able to identify the various migration as
 
 After completing this module, you'll be able to:
 
-- Assess application migration considerations
-- Determine which tools can help evaluate existing infrastructure
-- Evaluate key findings to plan a migration
-- Decide if migration is the right choice
+- Assess application migration considerations.
+- Determine which tools can help evaluate existing infrastructure.
+- Evaluate key findings to plan a migration.
+- Decide if migration is the right choice.
 
 ## Prerequisites
 
