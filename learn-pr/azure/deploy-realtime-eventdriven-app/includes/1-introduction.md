@@ -1,4 +1,4 @@
-Application stacks, which describe the real-world scenario the best, tend to be the most efficient and reliable. Many workloads are event-driven in its nature. In this module, we're going to learn what that means and how we can represent a real-world scenario on Azure.
+Application stacks, which describe the real-world scenario the best, tend to be the most efficient and reliable. Many workloads are event-driven in its nature. In this module, we're going to learn what event-driven means and how we can represent a real-world scenario on Azure.
 
 ## Learning objectives
 

@@ -18,7 +18,9 @@ In summary, we agree that real time means super fast, in an instant. How fast ex
 
 ## Event-driven applications
 
-If you think about a Click-event, you think about something else. Event-driven applications use the _fire and forget_ principle. So the event gets send or _fired_ towards the next system, which can be an event hub, stream or a message broker like Kafka. To identify the nature of event-driven applications, let's have a look at its main architecture patterns.
+If you think about a Click-event, you think about something else. Event-driven applications use the _fire and forget_ principle. So the event gets send or _fired_ towards the next system, which can be another service, an event hub, stream, or a message broker like Kafka. We don't wait necessarily for a response of the next one in the system. _Loose coupling_ is achieved for the price of eventual consistency, which needs to be taken care of at another level.
+
+To identify the nature of event-driven applications, let's have a look at its main architecture patterns.
 
 ### Event Notification
 

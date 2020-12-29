@@ -1,6 +1,6 @@
 Congratulations! You've completed a full event-driven scenario!
 
-Your application are sending event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub. You followed these steps:
+Your application is sending event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub. You followed these steps:
 
 1. Create.
 
@@ -31,7 +31,9 @@ This command might take a minute to run.
 > [!IMPORTANT]
 > Deprovision the Azure resources you used in this module to avoid unwanted charges.
 
-## Additional resources
+## Extra resources
 
 Resources
 [Tutorial: Create a function in Java with an Event Hub trigger and an Azure Cosmos DB output binding](https://docs.microsoft.com/azure/azure-functions/functions-event-hub-cosmos-db?WT.mc_id=java-9741-sakriema)
+
+[An introduction to Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=java-9741-sakriema)
