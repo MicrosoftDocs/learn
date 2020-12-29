@@ -29,7 +29,7 @@ Data classification is usually based on some kind of requirement. A company migh
 
 However, there any many legal frameworks or regulations that require or encourage companies and organizations to classify their data. Requirements based on legal regulations might vary, depending on the types of data that organization or company collects, uses, stores, processes, or transmits.
 
-For example, the GDPR requires that organizations and companies that handle the personal data of EU citizens must classify the types of data they collect, so that they can comply with GDPR regulations. Also, the GDPR itself already categorizes some types of data such as biometric data, race, ethnic origin, political opinions, and health data as sensitive, and these types of data needs protection, not just classification. This means that organizations need to know what types of data they hold, and how to classify this data. <!--Damir, is this last sentence something we can delete? The acronyms all seem to be unapproved, except for HIPAA, which we talk about later.-->Other examples of such regulations are SOC 2, HIPAA, PCI and others.
+For example, the GDPR requires that organizations and companies that handle the personal data of EU citizens must classify the types of data they collect, so that they can comply with GDPR regulations. Also, the GDPR itself already categorizes some types of data such as biometric data, race, ethnic origin, political opinions, and health data as sensitive, and these types of data needs protection, not just classification. This means that organizations need to know what types of data they hold, and how to classify this data. 
 
 ## Relation between data classification and data protection
 
