@@ -38,8 +38,8 @@ A single database deployment model is similar to a single, contained database in
 
 ### Elastic pool model
 
-The elastic pool is a collection of single databases that share a set of resources such as memory and CPU. If necessary, you can move the single databases out of the pool that are part of the elastic pool, and move other single databases into the pool.
-<!--LM: Please review the previous sentence to ensure that it retains the meaning.-->
+The elastic pool is a collection of single databases that share a set of resources such as memory and CPU. If necessary, you can move single databases out of the elastic pool, and move other single databases into the pool.
+
 There are various service tiers and compute sizes that will help customize the Azure SQL Database deployment to your specific application needs. For example, you can start with a single small database to meet your existing needs and help keep costs low. As your application needs grow, you can upgrade the service tier to provide dynamic scalability options to help meet demand on the application and data access. The dynamic scaling allows you to bring on resources to manage the scale when needed, and then reduce the scale when demands drop off, helping to keep costs lower.
 
 ### Compare Azure SQL Database with SQL Server

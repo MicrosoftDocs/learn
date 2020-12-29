@@ -1,8 +1,8 @@
 In this unit, you’ll learn about the benefits of an ASP.NET migration to Azure.
 
 ## Investigate the benefits of migration
-<!--LM: Please check "should" or "cannot" in the following paragraph and select the appropriate word.-->
-The benefits of migrating your application to an Azure-hosted environment revolve around the key aspects of application performance and security. You should achieve these facets on par with, or exceeding, your on-premises environment. Otherwise, the cost and workload associated with the migration might not seem feasible.
+
+The benefits of migrating your application to an Azure-hosted environment revolve around the key aspects of application performance and security. You could achieve these facets on par with, or exceeding, your on-premises environment. Otherwise, the cost and workload associated with the migration might not seem feasible.
 
 ### Evaluate performance considerations
 
