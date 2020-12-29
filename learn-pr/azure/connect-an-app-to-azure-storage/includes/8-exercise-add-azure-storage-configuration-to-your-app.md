@@ -3,7 +3,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 ## Create a JSON configuration file
 
-1. `cd` to the PhotoSharingApp directory if you aren't already there.
+1. Change the directory (`cd`) to the PhotoSharingApp directory, if you aren't already there.
 
 1. Use the `touch` tool on the command line to create a file named **appsettings.json**.
 
@@ -56,7 +56,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 ## Add support to read a JSON configuration file
 
-A .NET Core application requires additional NuGet packages to read a JSON configuration file.
+A .NET Core application requires extra NuGet packages to read a JSON configuration file.
 
 1. In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
 
@@ -116,7 +116,7 @@ namespace PhotoSharingApp
 
 Let's add support to our Node.js application to retrieve a connection string from a configuration file. We'll start by adding the necessary plumbing to manage configuration from our JavaScript file.
 
-## Create a .env configuration file
+## Create an .env configuration file
 
 1. Make sure you are in the correct working directory for your project.
 
@@ -155,7 +155,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
         --name <name>
     ```
 
-1. Copy the connection string that is returned from that command, (minus the quotes), and replace `<value>` in the **.env** file with this connection string.
+1. Copy the connection string that is returned from that command (minus the quotes), and replace `<value>` in the **.env** file with this connection string.
 
 1. Save the file.
 
@@ -175,7 +175,7 @@ Now that we have added the required libraries to enable reading configuration, w
 
 1. Select **index.js** in the editor.
 
-1. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This will make environment variables defined in our **.env** file available to the program.
+1. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This code will make environment variables defined in our **.env** file available to the program.
 
     ```javascript
     #!/usr/bin/env node
