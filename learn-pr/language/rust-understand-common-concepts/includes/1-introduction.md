@@ -26,6 +26,6 @@ In this module, you will:
 ## Prerequisites
 
 - Have your Rust development environment already set up.
-- Know how to create, edit, and execute Rust code with Cargo.
+- Know how to create, edit, and run Rust code by using Cargo.
 
 If you need help with installing these prerequisites, follow the instructions in the previous module.

@@ -2,7 +2,7 @@
 uid: learn.language.rust-understand-common-concepts.2-variables
 metadata:
   title: Create and use variables
-  description: Learn about how variables work in Rust, including how to declare them and how to use their properties.
+  description: Learn about how variables work in Rust, how to declare them, and how to use their properties.
   ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama

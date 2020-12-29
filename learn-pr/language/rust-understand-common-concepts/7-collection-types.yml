@@ -2,7 +2,7 @@
 uid: learn.language.rust-understand-common-concepts.7-collection-types
 metadata:
   title: Use collection types
-  description: Learn about the collection types - arrays, vectors, and hashmaps.
+  description: Learn about the collection types known as arrays, vectors, and hash maps.
   ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama
