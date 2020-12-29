@@ -39,7 +39,7 @@ fn main() {
 }
 ```
 
-You can see this error message for yourself in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true). Select the **Run** button to execute the code.
+You can see this error message for yourself in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true). Select the **Run** button to run the code.
 
 To mutate a value, we must first use the `mut` keyword to make a variable binding mutable instead.
 

@@ -4,14 +4,7 @@ An essential part of any programming language is the way to modify control flow.
 
 We can create conditional branches in the execution of our code by using the `if` and `else` keywords, similar to what other languages do.
 
-The form of an `if` expression is:
-
-- A condition expression, followed by
-- A consequent block, followed by
-- Any number of `else if` conditions and blocks, followed by
-- An optional trailing `else` block
-
-The condition expressions must have type `bool`.
+The form of an `if` expression is a condition expression followed by a consequent block, any number of `else if` conditions and blocks, and an optional trailing `else` block. The condition expressions must have type `bool`.
 
 ```rust
 if 1 == 2 {

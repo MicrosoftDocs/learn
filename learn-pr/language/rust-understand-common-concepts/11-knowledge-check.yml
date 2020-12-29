@@ -48,7 +48,7 @@ quiz:
     - content: "A null value would be returned."
       isCorrect: false
       explanation: "No value of any kind can be returned if it doesn't exist."
-    - content: "A compilation error"
+    - content: "A compilation error would occur."
       isCorrect: false
       explanation: "Almost. The program will compile successfully and then return an error when the vector is accessed with an index that's not in range."
     - content: "The last element of this vector would be returned instead."

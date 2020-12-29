@@ -6,7 +6,7 @@ program. Learning these concepts will give you a strong core to start from.
 
 The [Rust Playground](https://play.rust-lang.org?azure-portal=true) is a browser interface to the Rust compiler. You can use it to experiment with the language before you install it locally. You can also use it in any other case where you might not have the compiler available.
 
-The Rust Playground can run simple snippets of Rust code. It can even quickly load and save your code to a GitHub Gist and share it with your friends.
+The Rust Playground can run simple snippets of Rust code. It can even quickly load and save your code to a GitHub gist and share it with your friends.
 
 Throughout this course, we'll give Playground links to our examples and exercises. This way you can interact with the code, even if you don't have the Rust toolchain available at the moment.
 

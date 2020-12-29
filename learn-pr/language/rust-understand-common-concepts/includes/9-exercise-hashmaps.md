@@ -39,4 +39,4 @@ fn main() {
 
 You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8351e5ee4fc27335e54cdc027383f238?azure-portal=true).
 
-The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=43e50bc0e2f8bee361662f8575935b04?azure-portal=true)
+The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=43e50bc0e2f8bee361662f8575935b04?azure-portal=true).

@@ -17,10 +17,8 @@ struct Point2D(u32, u32);
 struct Unit;
 ```
 
-- **Regular structs** are the most commonly used. Each field defined within them has a name and a type. After they're defined, they can be accessed by using `example_struct.field` syntax.
-- **Tuple structs** are similar to regular structs, but their fields have no names. For accessing
-  individual variables, the same syntax is used as with regular tuples, namely, `foo.0`, `foo.1`, and so on,
-  starting at zero.
+- **Structs with named fields** are the most commonly used. Each field defined within them has a name and a type. After they're defined, they can be accessed by using `example_struct.field` syntax.
+- **Tuple structs** are similar to regular structs, but their fields have no names. For accessing individual variables, the same syntax is used as with regular tuples, namely, `foo.0`, `foo.1`, and so on, starting at zero.
 - **Unit structs** are most commonly used as markers. They're useful when you need to implement a trait on something but don't need to store any data inside it.
 
 ## Instantiate structs
