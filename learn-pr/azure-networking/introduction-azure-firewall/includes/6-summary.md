@@ -16,3 +16,5 @@ Explain these links here...
 - https://docs.microsoft.com/azure/firewall-manager/secure-cloud-network?azure-portal=true
 - https://docs.microsoft.com/azure/firewall-manager/rule-hierarchy?azure-portal=true
 - https://docs.microsoft.com/azure/firewall-manager/trusted-security-partners?azure-portal=true
+- https://docs.microsoft.com/azure/firewall/fqdn-tags
+- https://docs.microsoft.com/azure/virtual-network/service-tags-overview#available-service-tags

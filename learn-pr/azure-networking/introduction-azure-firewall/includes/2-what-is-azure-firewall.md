@@ -76,3 +76,10 @@ The following table lists some key features of Azure Firewall Manager:
 
 > [!NOTE]
 > By enabling you to integrate third-party SECaaS solutions, your network security strategy might be to use Azure Firewall to monitor local network traffic while using the third-party SECaaS provider to monitor Internet traffic.
+
+### Architecture options
+
+Azure Firewall Manager provides security management for the following two network architectures:
+
+* Hub virtual network. This is a standard Azure virtual network where one or more firewall policies have been applied.
+* Secured virtual hub. This is an Azure Virtual WAN Hub where one or more firewall policies have been applied.
