@@ -14,8 +14,7 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: Check your knowledge
-
-questions:
+  questions:
 
   - content: "Which phases are included in the Microsoft approach to sensitive data protection?"
     choices:
