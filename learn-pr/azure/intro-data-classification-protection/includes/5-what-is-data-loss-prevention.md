@@ -17,20 +17,20 @@ Data treated by DLP can be:
 - In use on a managed device such as laptop or mobile phone.
 - At rest in on-premises file servers or in a cloud storage service.
 
-DLP technologies and products implement responses based on policy and rules that you define on the DLP platform <!--Damir, is this edit to previous sentence OK?-->. These responses address the risk of inadvertent or accidental leaks, or the exposure of sensitive data outside an authorized framework.
+DLP technologies and products implement responses based on policy and rules that you define on the DLP platform. These responses address the risk of inadvertent or accidental leaks, or the exposure of sensitive data outside an authorized framework.
 
 ## How does DLP work?
 
 DLP finds sensitive information by regular expression (regex) pattern matching, in combination with other indicators such as the proximity of certain keywords to the matching patterns. For example, suppose a credit card number has 16 digits. However, those digits can be written in different ways, such as 1111-1111-1111-1111, 1111 1111 1111 1111, or 1111111111111111.
 
-Any 16-digit string is not necessarily a credit card number. It could be a ticket number from a helpdesk system or the serial number of a piece of hardware. To discern the difference between a credit card number and a regular 16-digit string, DLP uses regex <!--Damir, please check if edit here is OK--> to perform a calculation(checksum) to confirm that the numbers match a known pattern from the various credit card brands.
+Any 16-digit string is not necessarily a credit card number. It could be a ticket number from a helpdesk system or the serial number of a piece of hardware. To discern the difference between a credit card number and a regular 16-digit string, DLP uses regex to perform a calculation(checksum) to confirm that the numbers match a known pattern from the various credit card brands.
 
-If DLP finds keywords that match a credit card company’s name or date values that might be the credit card expiry date, DLP uses that data to decide whether the string is a credit card number or not <!--Damir, please check - I removed the references to VISA and AMEX as they’re third party-->.
+If DLP finds keywords that match a credit card company’s name or date values that might be the credit card expiry date, DLP uses that data to decide whether the string is a credit card number or not.
 
 In other words, DLP is smart enough to recognize the difference between these two strings of text in an email:
 
 - "Can you order me a new laptop. Use my credit card number 1111-1111-1111-1111, expiry 11/22, and send me the estimated delivery date when you have it."
-- "My laptop serial number is 2222-2222-2222-2222 and it was purchased on 11/2010. By the way, is my travel visa approved yet?" <!--Damir, not sure if I’ve removed the meaning of this comparison by removing “VISA” from the first bullet - but using it will be a compliance issue. Is there a similar example we can use?-->
+- "My laptop serial number is 2222-2222-2222-2222 and it was purchased on 11/2010. By the way, is my travel visa approved yet?" 
 
 ## Achieve DLP with Microsoft tools
 
