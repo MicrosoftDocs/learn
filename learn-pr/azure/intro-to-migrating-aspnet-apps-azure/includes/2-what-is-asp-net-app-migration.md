@@ -26,19 +26,19 @@ As you might expect, the on-premises model places all the responsibility of mana
 
 You can choose to offload some of the responsibilities to a hosting provider by using the IaaS model. You’re still responsible for managing the applications, any runtimes, security, and the data on your database systems. In this model, you’re renting the IT infrastructure. This model makes use of virtual machines (VMs) to contain the operating system (OS), software, and data. You’re still responsible for supplying and maintaining the OS, applications, and data. You also install patches and updates to the OS.
 
-VMs are essentially an emulation of a computer system's hardware and OS environment. For example, you can create a VM on Azure by specifying a hardware configuration and an OS to install. After the configuration is complete and the VM has been deployed and started, you can sign in to that VM and interact with it in the same manner as a physical computer. You install software and configure the aspects of the OS as needed. By using VMs, you can host various operating systems and versions to meet your needs for compatibility or any other reason. Azure supports VMs that host Windows and Linux operating systems.
+VMs are an emulation of a computer system's hardware and OS environment. For example, you can create a VM on Azure by specifying a hardware configuration and an OS to install. After the configuration is complete and the VM has been deployed and started, you can sign in to that VM and interact with it in the same manner as a physical computer. You install software and configure the aspects of the OS as needed. By using VMs, you can host various operating systems and versions to meet your needs for compatibility or any other reason. Azure supports VMs that host Windows and Linux operating systems.
 
-You might have to choose this model if your application uses some more proprietary software that is not provided in the PaaS service. By using IaaS, you could use an on-premises VM that has the software configuration for your application. You can take a snapshot of the virtual machine and "rehost" it, or move it, to the cloud.
+You might have to choose this model if your application uses proprietary software that's not provided in the PaaS service. By using IaaS, you could use an on-premises VM that has the software configuration for your application. You can take a snapshot of the virtual machine and "rehost" it, or move it, to the cloud.
 
 You might have to choose IaaS for various reasons. Three of the more common reasons are:
 
 - Security. Your company might have to comply with specific security practices and policies pertaining to data.
 - Control. Your company might want more control over the environment for software and OS configurations.
-- Policies. Your company might have other policies that restrict hosting options, or you might have vendor or other technology "lock-in" objections.  With a VM, you can move your VM disk (.vhd) over to another cloud provider or back to on-premises if the need arises.
+- Policies. Your company might have other policies that restrict hosting options, or you might have vendor or other technology "lock-in" objections.  With a VM, you can move your VM disk (.vhd file) over to another cloud provider or back to on-premises if the need arises.
 
 ### PaaS
 
-Though the IaaS option is often the quickest and easiest method to move an application to a cloud-hosted environment, PaaS offers more benefits. By using PaaS, you offload the responsibility of maintaining system software, OS, hardware, and more, to the hosting provider. You are responsible for your application(s). PaaS provides the database server for your data that supports the applications. 
+Though the IaaS option is often the quickest and easiest method to move an application to a cloud-hosted environment, PaaS offers more benefits. By using PaaS, you offload the responsibility of maintaining system software, OS, hardware, and more, to the hosting provider. You are responsible for your applications. PaaS provides the database server for your data that supports the applications.
 
 In the scenario for this module, your application is the ASP.NET app and the data that resides in the on-premises SQL Server database. You’ll migrate the data to a SQL Azure database instance. The hosting provider will manage the SQL Azure database and the security for it.
 
@@ -46,4 +46,4 @@ In this module, you’ll evaluate different aspects of migrating an ASP.NET app 
 
 ### SaaS
 
-The SaaS option isn't relevant for this module scenario. Consider SaaS solutions such as Office 365 or Microsoft Dynamics 365, where you’re essentially "renting" software. To use SaaS, you’re essentially replacing your existing application. If your application is a custom app, then it’s unlikely that SaaS will be an option for you.
+The SaaS option isn't relevant for this module scenario. Consider SaaS solutions such as Office 365 or Microsoft Dynamics 365, where you’re essentially "renting" software. To use SaaS, you’re replacing your existing application. If your application is a custom app, then it’s unlikely that SaaS will be an option for you.

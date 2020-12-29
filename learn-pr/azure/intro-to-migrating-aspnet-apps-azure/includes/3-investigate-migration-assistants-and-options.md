@@ -4,47 +4,47 @@ When you have an ASP.NET application that you want to migrate, consider using th
 
 ## What is Azure App Service?
 
-Azure App Service is an HTTP-based service on Azure that you can use to host web applications and REST APIs. This service provides many benefits such as:
+Azure App Service is an HTTP-based service on Azure that you can use to host web applications and REST APIs. This service provides benefits such as:
 
-- Autoscaling to help your app scale to meet demand, based on the parameters you specify, and then automatically reduce the scale when demand decreases
+- Autoscaling to help your app scale to meet demand, based on the parameters you specify, and then automatically reduce the scale when demand decreases.
 
-- High availability to help ensure that your application remains available in the event of server or datacenter failures or downtime. Azure makes use of zones, regions, and availability sets to help achieve this.
+- High availability to help ensure that your application remains available in case of server or datacenter failures or downtime. Azure makes use of zones, regions, and availability sets to help achieve this.
 
-- Support on the Windows and Linux platforms
+- Support on the Windows and Linux platforms.
 
 - Integration with automated deployment models using Azure DevOps or GitHub repos.
 
 ### How does Azure App Service host ASP.NET apps?
 
-You can use Azure App Service to host your ASP.NET application in an App Service plan. The App Service plan will define a set of compute resources for your ASP.NET application. Think of the compute resources as being similar to an on-premises server farm. The compute resources will consist of VMs that will contain the software that is necessary to host your application. This might be a VM running a Window Server product with IIS hosting the app.
+You can use Azure App Service to host your ASP.NET application in an App Service plan. The App Service plan will define a set of compute resources for your ASP.NET application. Think of the compute resources as being similar to an on-premises server farm. The compute resources will consist of VMs that contain the software that's necessary to host your application. This might be a VM running a Window Server product with IIS hosting the app.
 
 :::image type="content" source="../media/3-web-app-azure.png" alt-text="Web app architecture hosted on Azure with app plan, DNS, resource group, and databases.":::
 
 The app will user other resources as well, such as:
 
-- Networking resources to provide access to the web application through the standard port 80 or https port 443. Networking also provides options for DNS and public IP addressing configurations.
-- Monitoring and logging options for the service
-- Access control through Azure Active Directory (Azure AD) and role-based access control (RBAC)
-- Other options that are available, depending on your required configuration for the specific application such as database access and the aforementioned scaling and availability options
-- A storage option for various files needed to host the application
+- Networking resources to provide access to the web application through the standard port 80 or HTTPS port 443. Networking also provides options for DNS and public IP addressing configurations.
+- Monitoring and logging options for the service.
+- Access control through Azure Active Directory (Azure AD) and role-based access control (RBAC).
+- Other options that are available, depending on your required configuration for the specific application such as database access and the scaling and availability options.
+- A storage option for various files needed to host the application.
 
 ## What is Azure SQL Database?
 
-Azure SQL Database is an intelligent, scalable, relational database service built for the cloud. It is a fully managed SQL database service that handles patching, upgrading, and backups without user intervention. You can select from two deployment models for your Azure SQL database--single database or elastic pool.
+Azure SQL Database is an intelligent, scalable, relational database service built for the cloud. It's a fully managed SQL database service that manages patching, upgrading, and backups without user intervention. You can select from two deployment models for your Azure SQL database, a single database or an elastic pool.
 
 ### Single database model
 
-A single database deployment model is similar to a single, contained database in an on-premises SQL Server database engine. In the Azure SQL Database single deployment model, you get the full managed option mentioned earlier in this unit. It is an isolated database for your applications' data needs.
+A single database deployment model is similar to a single, contained database in an on-premises SQL Server database engine. In the Azure SQL Database single deployment model, you get the full managed option mentioned earlier in this unit. It's an isolated database for your applications' data needs.
 
 ### Elastic pool model
 
-The elastic pool is a collection of single databases that share a set of resources such as memory and CPU. If necessary, you can move the single databases that are part of the elastic pool out of the pool, and move other single databases into the pool.
-
-There are various service tiers and compute sizes that will help customize the Azure SQL Database deployment to your specific application needs. For example, you can start with a single small database to meet your existing needs and help keep costs low. As your application needs grow, you can upgrade the service tier to provide dynamic scalability options to help meet demand on the application and data access. The dynamic scaling allows you to bring on resources to handle the scale when needed, and then reduce the scale when demands drop off, helping to keep costs lower.
+The elastic pool is a collection of single databases that share a set of resources such as memory and CPU. If necessary, you can move the single databases out of the pool that are part of the elastic pool, and move other single databases into the pool.
+<!--LM: Please review the previous sentence to ensure that it retains the meaning.-->
+There are various service tiers and compute sizes that will help customize the Azure SQL Database deployment to your specific application needs. For example, you can start with a single small database to meet your existing needs and help keep costs low. As your application needs grow, you can upgrade the service tier to provide dynamic scalability options to help meet demand on the application and data access. The dynamic scaling allows you to bring on resources to manage the scale when needed, and then reduce the scale when demands drop off, helping to keep costs lower.
 
 ### Compare Azure SQL Database with SQL Server
 
-Comparing an on-premises SQL Server database engine with Azure SQL Database can help highlight some of the benefits of using Azure.
+Comparing an on-premises SQL Server database engine with Azure SQL Database can help highlight the benefits of using Azure.
 
 With an on-premises SQL Server database engine, you:
 
@@ -64,25 +64,25 @@ With an on-premises SQL Server database engine, you:
 
 - Manage disaster recovery.
 
-- Perform all the preceding tasks again for new hardware, when the compute resources are not enough to meet demand.
+- Perform all the preceding tasks again for new hardware when the compute resources are not enough to meet demand.
 
 When you use Azure SQL Database, you:
 
-- Create a database instance on Azure using your chosen deployment model
+- Create a database instance on Azure using your chosen deployment model.
 
-- Migrate your data to the new instance
+- Migrate your data to the new instance.
 
-- Configure the application access
+- Configure the application access.
 
-- Configure scalability options if needed
+- Configure scalability options if needed.
 
-- Enjoy the benefits of a managed environment
+- Enjoy the benefits of a managed environment.
 
 ### Hybrid data scenarios
 
 Azure Hybrid Benefit is a model that helps reduce your licensing costs for running your SQL workloads in the cloud. You take advantage of this benefit by using your existing on-premises Software Assurance-enabled licenses for Windows Server and SQL Server on the Azure platform.
 
-An example of a SQL Server Enterprise savings is demonstrated in this graph.
+This graph demonstrates an example of a SQL Server Enterprise savings.
 
 :::image type="content" source="../media/3-azure-sql-hybrid-savings.png" alt-text="SQL hybrid savings graph showing enterprise at $3.97 per hour and hybrid at $0.598 per hour. It represents an 85% savings.":::
 
@@ -110,13 +110,13 @@ The Data Migration Assistant helps you upgrade to a modern data platform by dete
 
 Key features are:
 
-- Assessing on-premises SQL Server instance(s) to detect issues with a migration that resulted from compatibility issues or a lack of feature support
+- Assessing on-premises SQL Server instances to detect issues with a migration that resulted from compatibility issues or a lack of feature support
 
 - Discovering new features in Azure SQL Database that you can take advantage of
 
 - Migrating on-premises SQL Server instances to the cloud
 
-- Assessing on-premises SQL Server Integration Services package(s) migrating to Azure SQL Database
+- Assessing on-premises SQL Server Integration Services packages migrating to Azure SQL Database
 
 ## Evaluate your existing environment
 
@@ -130,17 +130,17 @@ You’ll also want to produce a full inventory and dependency map of servers and
 
 ### Identify required app changes
 
-You application will likely require changes to make it work correctly after the migration. For example, your ASP.NET application is accessing a database. The database connection string will likely need a change. A benefit to using Azure is the ability to store your database connection string as a secret in the Azure Key Vault.  This protects the authentication parameters in the connection string by "hiding" the connection string behind a secret in the key vault.  You then configure your app to use that secret, rather than the connection string directly.
+Your application will likely require changes to make it work correctly after the migration. For example, your ASP.NET application is accessing a database. The database connection string will likely need a change. A benefit to using Azure is the ability to store your database connection string as a secret in the Azure Key Vault.  This protects the authentication parameters in the connection string by "hiding" the connection string behind a secret in the key vault.  You then configure your app to use that secret, rather than the connection string directly.
 
 ## Estimate costs
 
-A key consideration for any migration scenario is the cost your organization will incur to host the application on Azure. You’ll be moving from a cost model that’s different from a typical on-premises environment. In the Azure environment, you’ll be billed on a monthly basis for various consumption costs related to compute, storage, and access costs.
+A key consideration for any migration scenario is the cost your organization will incur to host the application on Azure. You’ll be moving from a cost model that’s different from a typical on-premises environment. In the Azure environment, you’ll be billed monthly for various consumption costs related to compute, storage, and access costs.
 
 The next unit discusses the Azure Pricing Calculator, which you can use to help evaluate your estimated spend.
 
 ## Evaluate security considerations
 
-Security is, and should be, a top priority in any migration scenario. You might worry about hosting data in an online world or wonder if your employees will still be able to use their current credentials to access the applications. Perhaps you’re also concerned about security of data from the perspective of compliance with industry standards. Understanding the options available in Azure can help to address these concerns.
+Security is, and should be, a top priority in any migration scenario. You might worry about hosting data in an online world or wonder if your employees will still be able to use their current credentials to access the applications. You’re also concerned about security of data from the perspective of compliance with industry standards. Understanding the options available in Azure can help to address these concerns.
 
 ### Evaluate security requirements for your app
 
@@ -160,7 +160,7 @@ In an ASP.NET application scenario, where the app needs to access a data store, 
 
 You might also access applications running on-premises using Active Directory for authentication and identity management. Azure AD Connect enables you to integrate your on-premises directories with Azure AD. This means that employees won’t be required to have multiple sets of credentials for authentication.
 
-Similar to taking an inventory of your on-premises environment for apps and hardware, you should also map out your existing security requirements and implementation, so that you can perform a proper security assessment for the migration scenario. You want to ensure that the security needs of your organization will still be met in a cloud-hosted environment.
+Similar to taking an inventory of your on-premises environment for apps and hardware, you should also map out your existing security requirements and implementation, so that you can perform a proper security assessment for the migration scenario. You want to ensure that a cloud-hosted environment will still meet your organization's security needs.
 
 ## Explore DevOps pipelines for a migration scenario
 

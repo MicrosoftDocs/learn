@@ -46,6 +46,6 @@ quiz:
     - content: "Azure Compute"
       isCorrect: false
       explanation: "That's incorrect. Azure Compute is a category that relates to compute instances on Azure such as VMs."
-    - content: "Azure VNets"
+    - content: "Azure virtual networks"
       isCorrect: true
-      explanation: "That's correct. Azure can help secure various aspects of your app and data by using virtual networks, which act in a similar fashion to firewalls."
+      explanation: "That's correct. Azure can help secure various aspects of your app and data by using virtual networks, which act in a similar manner to firewalls."
