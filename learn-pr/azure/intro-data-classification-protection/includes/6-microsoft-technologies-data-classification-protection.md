@@ -15,7 +15,7 @@ Azure Information Protection supports online and on-premises Microsoft server pr
   - Sign up for rights management for individuals without the need to build explicit trust relationships.
 - Availability of default rights policy templates and labels and the ability to create custom labels. 
 - Ability of users to define their own permission sets if the templates aren’t sufficient.
-- Support for all the Office apps for multiple operating systems and versions, including third-party operating systems. <!--Damir, please check edit - removed third-party Mac-->
+- Support for all the Office apps for multiple operating systems and versions, including third-party operating systems.
 - Support for the Rights Management sharing app or Azure Information Protection client app on mobile devices and desktops, which enables sharing of files with people in another organization, document tracking, and email notifications.
 - Support for Cryptographic Mode 2 without additional configuration, which provides stronger security enhancements for key lengths and encryption algorithms.
 
