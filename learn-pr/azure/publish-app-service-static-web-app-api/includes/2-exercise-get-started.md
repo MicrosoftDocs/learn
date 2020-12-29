@@ -5,16 +5,21 @@ Azure Static Web Apps publishes websites to a production environment by building
 This tutorial makes it easy for you to create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository.
-   - If you get a 404 Page Not Found error, sign in to GitHub and try again.
-1. If prompted for **Owner**, choose one of your GitHub accounts
-1. Name your repository **my-static-web-app**
-1. Click the **Create repository from template** button
+
+   - If you get a 404 Page Not Found error, sign in to GitHub, and try again.
+
+1. If prompted for **Owner**, choose one of your GitHub accounts.
+
+1. Name your repository **my-static-web-app**.
+
+1. Select **Create repository from template**.
 
 ## Run your app
 
 You just created a GitHub repository named **my-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
 1. Open a terminal on your computer.
+
 1. Start by cloning the GitHub repository to your computer.
 
    ```bash
@@ -27,7 +32,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
    cd my-static-web-app
    ```
 
-1. Next, go to the folder of your preferred front-end framework, as shown below:
+1. Next, go to the folder of your preferred front-end framework, as follows.
 
    ::: zone pivot="angular"
 
@@ -61,7 +66,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
 
    ::: zone-end
 
-1. Now install the application dependencies.
+1. Now, install the application dependencies.
 
    ```bash
    npm install
@@ -110,7 +115,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
 
 It's time to see your application running locally. Each front-end application runs on a different port.
 
-Click the link to browse to your application.
+Select the link to browse to your application.
 
 ::: zone pivot="angular"
 
@@ -145,9 +150,9 @@ Browse to `http://localhost:8080`.
 ::: zone-end
 
 > [!NOTE]
-> In this module's exercises, you will deploy an app without an API. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
+> In this module's exercises, you will deploy an app without an API. See the *Next steps* section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
 
-Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
+Now, stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
 ## Next steps
 
