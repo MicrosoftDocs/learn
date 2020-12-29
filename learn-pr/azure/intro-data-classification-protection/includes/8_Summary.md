@@ -1,17 +1,15 @@
-In this module, you've learned about sensitive information management and some key concepts for classifying and protecting sensitive data. Also, you learned about most common types and methods for data classification. You reviewed Microsoft technologies for data classification, data protection and data loss prevention as well as about scenarios when you should use these technologies. You now have enough information to present to the legal department and alleviate their concerns.
+In this module, you've learned about the management of sensitive information and some key concepts for classifying and protecting sensitive data. You’ve also learned about the most common types and methods of data classification. You reviewed Microsoft technologies for data classification, data protection, and DLP, and learned about the scenarios in which you should use these technologies. You now have enough information to present to the legal department and alleviate their concerns.
 
-### Learn more
+## Learn more
 
-You can learn more by reviewing following articles:
+You can learn more by reviewing the following articles:
 
-- [Microsoft Information Protection in Microsoft 365 - Microsoft 365 Compliance | Microsoft Docs](https://docs.microsoft.com/en-us/microsoft-365/compliance/information-protection?view=o365-worldwide)
+- [Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection?view=o365-worldwide?azure-portal=true)
 
-- [Microsoft Information Protection – Microsoft security](https://www.microsoft.com/en/security/business/information-protection)
+- [Protect your sensitive information](https://www.microsoft.com/security/business/information-protection?azure-portal=true)
 
-- [What is Azure Information Protection (AIP)? | Microsoft Docs](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
+- [What is Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection?azure-portal=true)
 
-- [Get started with data classification - Microsoft 365 Compliance | Microsoft Docs](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-classification-overview?view=o365-worldwide)
+- [Know your data - data classification overview](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview?view=o365-worldwide?azure-portal=true)
 
-- [What is data classification? - Cloud Adoption Framework | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/policy-compliance/data-classification)
-
-  
+- [What is data classification?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/data-classification?azure-portal=true)
