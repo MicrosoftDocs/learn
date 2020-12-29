@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   To get the best learning experience from this module, you should have: 
   - Intermediate-level knowledge of networking concepts such as routing, hubs, switches, and DNS. 
-  - Beginner-level knowledge of Azure networking services, including virtual networks, Express Route, site-to-site VPN, point-to-site VPN, Azure Firewall, and Azure Regions. 
+  - Beginner-level knowledge of Azure networking services, including virtual networks, Express Route, site-to-site VPN, point-to-site VPN, Azure Firewall, and Azure regions. 
   - Intermediate-level knowledge of security concepts such as the zero-trust security model, identity management, and role-based access controls. 
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
