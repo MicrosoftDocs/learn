@@ -33,4 +33,4 @@ The process for executing a DSR in Azure is broken into two parts. The high-leve
 2. Delete
 3. Export
 
-In the next unit we will lean how to execute a DSR for customer data in Azure.
+
