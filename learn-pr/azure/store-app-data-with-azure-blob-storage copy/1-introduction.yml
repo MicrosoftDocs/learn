@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.store-app-data-with-azure-blob-storage.1-introduction
+title: Introduction to Blob storage
+metadata:
+  title: Introduction to Blob storage
+  description: Introduction to Blob storage
+  ms.date: 09/24/2018
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

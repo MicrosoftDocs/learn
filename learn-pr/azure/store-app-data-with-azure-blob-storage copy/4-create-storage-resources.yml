@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.store-app-data-with-azure-blob-storage.4-create-storage-resources
+title: Exercise - Create Azure storage resources
+metadata:
+  title: Exercise - Create Azure storage resources
+  description: Exercise - Create Azure storage resources
+  ms.date: 09/24/2018
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-create-storage-resources.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Run the `az storage account create` command above to create a general-purpose v2 storage account."
+  azure:
+    resource:
+      type: "Microsoft.Storage/storageAccounts"
+      kind: "StorageV2"

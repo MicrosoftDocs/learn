@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.store-app-data-with-azure-blob-storage.3-design-organization-strategy
+title: Design a storage organization strategy
+metadata:
+  title: Design a storage organization strategy
+  description: Design a storage organization strategy
+  ms.date: 09/24/2018
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-design-organization-strategy.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Suppose you need to store profile and order information about your customers. You need to query the data to answer questions like \"who are my top 100 customers?\" and \"how many customers live in a given geographic region?\". True or false: blob storage is a good choice for this data?"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Blobs are not appropriate for structured data that needs to be queried frequently. They have higher latency than memory and local disk and don't have the indexing features that make databases efficient at running queries."
+    - content: "False"
+      isCorrect: true
+      explanation: "Blobs are not appropriate for structured data that needs to be queried frequently. They have higher latency than memory and local disk and don't have the indexing features that make databases efficient at running queries."
+
+  - content: Blobs provide *unstructured* data storage. What does *unstructured* mean?
+    choices:
+    - content: "Blobs can't be organized or named."
+      isCorrect: false
+      explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
+    - content: "There are no restrictions on the type of data you can store in blobs."
+      isCorrect: true
+      explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
+    - content: "Blobs can't contain structured data, like JSON or XML."
+      isCorrect: false
+      explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
+      
+
