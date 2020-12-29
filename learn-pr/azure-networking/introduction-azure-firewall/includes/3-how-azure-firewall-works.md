@@ -7,7 +7,7 @@ To understand how Azure Firewall protects your virtual network, know that there 
 * The firewall instance has a public IP address to which all inbound traffic is sent.
 * The firewall instance has a private IP address to which all outbound traffic is sent.
 
-In other words, all traffic—inbound and outbound—goes through the firewall. By default, the firewall denies access to all traffic. Your job is to configure the firewall with the conditions under which traffic is allowed through the firewall. Each condition is called a *rule* and each rule applies one or more checks on the data. Only traffic that passes all the checks in all the firewall's rules is allowed to pass through.
+That is, all traffic—inbound and outbound—goes through the firewall. By default, the firewall denies access to everything. Your job is to configure the firewall with the conditions under which traffic is allowed through the firewall. Each condition is called a *rule* and each rule applies one or more checks on the data. Only traffic that passes every check in all the firewall's rules is allowed to pass through.
 
 How Azure Firewall handles network traffic depends on where the traffic originates:
 
@@ -17,18 +17,18 @@ How Azure Firewall handles network traffic depends on where the traffic originat
 > [!NOTE]
 > Azure Firewall uses SNAT only when the destination IP address is outside your virtual network. If the destination IP address is from your virtual network's private address space, Azure Firewall doesn't use SNAT on the traffic.
 
-## Where Azure Firewall resides in a virtual network
+## Where Azure Firewall fits into a virtual network
 
 For Azure Firewall to do its job effectively, you must set it up as a barrier between a trusted network you want to protect, and an untrusted network that offers potential threats. Most commonly, you deploy Azure Firewall as a barrier between your Azure virtual network and the Internet.
 
 Azure Firewall is best deployed using a *hub and spoke* network topology with the following characteristics:
 
-* A virtual network that acts as the central connectivity point. This is the *hub virtual network*.
-* One or more virtual networks that are peered to the hub. These are the *spoke virtual networks* and are used to provision workload servers.
+* A virtual network that acts as the central connectivity point. This network is the *hub virtual network*.
+* One or more virtual networks that are peered to the hub. These peers are the *spoke virtual networks* and are used to provision workload servers.
 
 You deploy the firewall instance in a subnet of the hub virtual network and then configure all inbound and outbound traffic to go through the firewall.
 
-From a practical viewpoint, you follow these general steps to set up an instance of Azure Firewall:
+From a practical viewpoint, you follow the general steps given below to set up an instance of Azure Firewall:
 
 1. Create a hub virtual network that includes a subnet for the firewall deployment.
 1. Create the spoke virtual networks and their subnets and servers.
@@ -59,7 +59,7 @@ Azure Firewall offers many features designed to make it easier to create and man
 |Feature  |Description  |
 |---------|---------|
 |FQDN     |A domain name of a host or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wild cards, such as *.google.com.        |
-|FQDN tag     |A group of well known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. There are FQDN tags for Windows Update, Windows Virtual Desktop, Windows Diagnostics, Azure Backup, and more. FQDN tags are managed by Microsoft and can't be modified or created.       |
+|FQDN tag     |A group of well-known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. There are FQDN tags for Windows Update, Windows Virtual Desktop, Windows Diagnostics, Azure Backup, and more. FQDN tags are managed by Microsoft and can't be modified or created.       |
 |Service tag     |A group of IP address prefixes related to a specific Azure service. Adding a service tag to a network rule allows access to the service represented by the tag. There are service tags for dozens of Azure services, including Azure Backup, Azure Cosmos DB, Logic Apps, and more. Service tags are managed by Microsoft and can't be modified or created.        |
 |IP groups     |A group of IP addresses, such as 10.2.0.0/16 or 10.1.0.0-10.1.0.31. You can use an IP group as the source address in a NAT or application rule, or as the source or destination address in a network rule.        |
 |Custom DNS     |A custom DNS server that resolves domain names to IP addresses. If you use a custom DNS server rather than Azure DNS, you must also configure Azure Firewall as a DNS proxy.        |
