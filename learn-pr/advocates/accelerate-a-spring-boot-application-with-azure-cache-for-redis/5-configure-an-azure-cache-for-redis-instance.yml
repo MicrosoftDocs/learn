@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.5-configure-an-azure-cache-for-redis-instance
+uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.5-configure-an-azure-cache-for-redis-instance
 title: Configure an Azure Cache for Redis instance
 metadata:
   title: Use Azure Cache for Redis as a data store for a Spring Boot application using Spring Data Redis

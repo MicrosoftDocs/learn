@@ -1,7 +1,7 @@
 ### YamlMime:Module
-uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis
+uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis
 metadata:
-  title: Speeding and scaling Java apps using Azure Cache for Redis
+  title: Accelerate a Spring Boot application with Azure Cache for Redis
   description: In this module, you'll learn what Azure Cache for Redis is, and how to use it with a Java and Spring Boot application. You''ll use it to cache some business data using Spring Data Redis, and you'll also use it to store HTTP session data using Spring Session.
   author: judubois
   ms.author: judubois
@@ -28,14 +28,14 @@ products:
 - azure-cache-redis
 - azure-app-service
 units:
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.1-introduction
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.2-setup-azure-cache-for-redis
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.3-what-is-azure-cache-for-redis
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.4-use-azure-cache-for-redis-with-spring-data-redis
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.5-configure-an-azure-cache-for-redis-instance
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.6-use-spring-session-to-store-data-in-redis
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.7-deploy-a-spring-boot-and-redis-application-to-azure-app-service
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.8-knowledge-check
-- learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.9-summary
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.1-introduction
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.2-setup-azure-cache-for-redis
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.3-what-is-azure-cache-for-redis
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.4-use-azure-cache-for-redis-with-spring-data-redis
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.5-configure-an-azure-cache-for-redis-instance
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.6-use-spring-session-to-store-data-in-redis
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.7-deploy-a-spring-boot-and-redis-application-to-azure-app-service
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.8-knowledge-check
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.9-summary
 badge:
-  uid: learn.speeding-and-scaling-java-apps-using-azure-cache-for-redis.badge
+  uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.badge
