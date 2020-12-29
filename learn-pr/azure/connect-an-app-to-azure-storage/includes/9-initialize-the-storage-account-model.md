@@ -60,7 +60,7 @@ const { BlobServiceClient } = require("@azure/storage-blob");
 Now you can create a `BlobServiceClient` object in your code by getting the storage account connection string and passing it to the factory method `fromConnectionString()` on the `BlobServiceClient` object like this.
 
 ```javascript
-const storageAccountConnectionString = process.env.STORAGE_ACCOUNT_CONNECTION_STRING;
+const storageAccountConnectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
 const blobServiceClient = BlobServiceClient.fromConnectionString(storageAccountConnectionString);
 ```
 
