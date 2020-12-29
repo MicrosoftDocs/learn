@@ -20,7 +20,9 @@ abstract: |
   - What is Service encryption with Customer Key?
   - What is Office 365 Message Encryption?
 prerequisites: |
-  -Basic experience with Azure services
+  -Basic knowledge of data protection
+  -Basic experience with security technologies
+  -Basic experience with Microsoft 365 or Office 365 services
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -42,6 +44,7 @@ units:
 - learn.azure.data-classification-and-data-protection.6-what-ms-cloud-app-security
 - learn.azure.data-classification-and-data-protection.7-what-is-encryption-customer-key
 - learn.azure.data-classification-and-data-protection.8-what-is-office-365-message-encryption
-- learn.azure.data-classification-and-data-protection.9-summary
+- learn.azure.data-classification-and-data-protection.9-knowledge-check
+- learn.azure.data-classification-and-data-protection.10-summary
 badge:
   uid: learn.azure.data-classification-and-data-protection.badge
