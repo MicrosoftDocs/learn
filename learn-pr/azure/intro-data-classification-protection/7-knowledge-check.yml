@@ -42,7 +42,7 @@ questions:
       isCorrect: false
       explanation: "That's incorrect. A digital signature is not metadata that's added as a result of classification."
 
-   - content: "An administrator has chosen to perform content-based classification on their data. What condition can they use to automate this process?"
+  - content: "An administrator has chosen to perform content-based classification on their data. What condition can they use to automate this process?"
     choices:
     - content: "Permissions on the data"
       isCorrect: false
@@ -54,7 +54,7 @@ questions:
       isCorrect: true
       explanation: "That's correct. You can use keywords to automatically recognize and classify data."
 
-   - content: "To prevent data loss, an administrator want to search for sensitive data across Office 365 services in their organization. What should they configure to be able to do this?"
+  - content: "To prevent data loss, an administrator want to search for sensitive data across Office 365 services in their organization. What should they configure to be able to do this?"
     choices:
     - content: "File and folder permissions"
       isCorrect: false
@@ -66,7 +66,7 @@ questions:
       isCorrect: true
       explanation: "That's correct. You need to configure a DLP policy in the Security & Compliance Center."
 
-   - content: "An administrator wants to classify and help protect various Word documents stored on their local file server and SharePoint Online sites. To do this, which technology should they choose?"
+  - content: "An administrator wants to classify and help protect various Word documents stored on their local file server and SharePoint Online sites. To do this, which technology should they choose?"
     choices:
     - content: "Azure Information Protection"
       isCorrect: true
@@ -77,6 +77,3 @@ questions:
     - content: "Label-based information protection in Windows 10"
       isCorrect: false
       explanation: "That's incorrect. You don't need to use label-based information protection to classify and help protect the documents in this scenario."
-
-
-  
