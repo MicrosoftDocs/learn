@@ -30,7 +30,7 @@ One of the fastest ways to determine the in-scope applications is to review the 
 
 ## DSR response processes for Office 365 applications
 
-The guidance for executing a DSR in Office 365 ("Office 365 Data Subject Requests for the GDPR and CCPA" https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-office365 ) is broken iinto four parts. The high-level exectuion tasks differ based on the data type,  application, and the request type. Parts 1-3 detail the technical capabilities available to an organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
+The guidance for executing a DSR in Office 365 ("Office 365 Data Subject Requests for the GDPR and CCPA" https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-office365 ) is broken into four parts. The high-level exectuion tasks differ based on the data type,  application, and the request type. Parts 1-3 detail the technical capabilities available to an organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
 
 
 **Part 1: Responding to DSRs for Customer Data**
