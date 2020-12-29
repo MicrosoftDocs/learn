@@ -1,8 +1,32 @@
 Let's build our model! We'll download the dataset, create our Azure service, upload the data, and then train the model.
 
+> [!NOTE]
+> The sandbox sign-in process runs outside the learning module. You're automatically returned to the module after you sign in. 
+> 1. Select **Sign in to activate Sandbox**.
+> 1. Enter your credentials and provide authentication as prompted.
+> 1. After you authenticate, if prompted, select **Review permissions**.
+>     :::image type="content" source="../media/sandbox-review-permission.png" alt-text="Screenshot that shows the Review Permissions button selected.":::     
+>    
+> 1. In the dialog box, select the permission settings you want to use, and then select **Accept**.
+>     :::image type="content" sou:::image type="content" source="../media/download-dataset-from-github.png" alt-text="":::rce="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows permissions details and the Accept button selected.":::
+>
+>The message **Sandbox activated!** is shown, and you can continue with the learning module.
+>
+
 ## Download the data
 
-The first thing we need to create our model is data! To train our model, we'll use a subset of the NABirds dataset from the CLO. Download the .zip file that contains the [dataset](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/blob/master/bird_photos.zip?azure-portal=true).
+The first thing we need to create our model is data! To train our model, we'll use a subset of the NABirds dataset from the CLO. 
+
+Download the zip file that contains the dataset:
+
+1. In your web browser, go to the [dataset](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/blob/master/bird_photos.zip?azure-portal=true) in GitHub.
+1. Select **Download**. 
+    
+   
+   :::image type="content" source="../media/download-dataset-from-github.png" alt-text="Screenshot that shows the dataset zip file in GitHub, with the Download button selected.":::   
+
+   The zip file is copied to your computer and stored in your default location for downloaded files. 
+1. When the download is finished, unzip the file. Note the folder location because you’ll need it for a later step.
 
 ## Create a Custom Vision API resource
 
@@ -12,12 +36,19 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision:
 1. Select **Create a resource**.
 1. Search for **Custom Vision**.
 1. Select **Create**.
-1. On the **Basics** tab, enter or select the required values.
-1. Select **Review + create**.
-1. When the deployment succeeds, a notification shows in the upper-right corner.
-1. Select **Go to resource**.
+1. On the **Basics** tab, enter or select the required values:
+   1. Select your Azure subscription.
+   1. Create a new Resource group.
+(copy steps from Polar Bears module, unit 3, step 5)
+   1. Enter a name for your new Custom Vision service resource, (for example, "BirdCustomVisionService").
+   1. Set the Training location and the Prediction location to "(US) South Central US."
+   1. Set the Training pricing tier and the Prediction pricing tier to "Free F0 (2 Transactions per second…)."
+   1. Select **Review + create**.
+1. On the next page, select **Create**.
 
-![An animated GIF that demonstrates how to create a Custom Vision project](../media/create-custom-vision-service.gif)
+When the deployment finishes, select **Go to resource**.
+
+![An animated image file that demonstrates how to create a Custom Vision project.](../media/create-custom-vision-service.gif)
 
 ## Upload data
 
