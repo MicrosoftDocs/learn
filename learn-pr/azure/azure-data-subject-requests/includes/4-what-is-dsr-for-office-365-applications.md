@@ -23,6 +23,14 @@ In a hybrid deployment the scope will vary based on the data that is responsive 
 **In-scope Applications**
 
 Office 365 encompases many applications that have the potential to store user data. Knowing which applicaitons that the data subject uses will help narrow down what is in-scope for the DRS response. Depending on the applicaiton, you may be able to use the Content Search tool to respond. In some caseses however, you'll have to use the in-app functionality to get to the data.
+The following table shows the applications that support Content Search in Office 365.
+
+App Name|App Name|App Name|App Name
+---|---|---|---
+Calendar|Excel|Office Lens|OneDrive for Business
+OneNote|Outlook/Exchange|People|PowerPoint
+SharePoint|Skype for Business|Tasks|Teams
+To Do|Video|Visio|Word
 
 One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for business subcription. The Office 365 admin portal can be used to locate the user's account. In the properites for the user account you can view thier product licensing. 
 
@@ -30,6 +38,7 @@ One of the fastest ways to determine the in-scope applications is to review the 
 ## DSR response processes for Office 365 applications
 
 The guidance for executing a DSR in Office 365 ("Office 365 Data Subject Requests for the GDPR and CCPA" https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-office365 ) is broken iinto four parts. The high-level exectuion tasks differ based on the data type,  application, and the request type. Parts 1-3 detail the technical capabilities available to an organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
+
 
 **Part 1: Responding to DSRs for Customer Data**
 
