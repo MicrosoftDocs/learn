@@ -1,8 +1,6 @@
-Functions are the primary way code is executed within Rust. You’ve already seen one of the most
-important functions in the language: the `main` function, which is the entry point of many programs.
+Functions are the primary way code is executed within Rust. You've already seen one of the most important functions in the language. The `main` function is the entry point of many programs.
 
-Function definitions in Rust start with `fn` and have a set of parentheses after the function
-name. The curly brackets tell the compiler where the function body begins and ends.
+Function definitions in Rust start with `fn` and have a set of parentheses after the function name. The braces tell the compiler where the function body begins and ends.
 
 ```rust
 fn main() {
@@ -15,20 +13,15 @@ fn another_function() {
 }
 ```
 
-A function can be called by entering its name followed by a set of parentheses, passing any
-arguments as necessary. In the example above, the `another_function` function required no arguments,
-so we haven't passed any.
+A function can be called by entering its name followed by a set of parentheses, passing any arguments as necessary. In the preceding example, `another_function` required no arguments, so we haven't passed any.
 
-Note that we defined `another_function` after the `main` function in the source code; we could have
-defined it before as well. Rust doesn’t care where you define your functions, only that they’re
-defined somewhere.
+We defined `another_function` after the `main` function in the source code. We could have defined it before too. Rust doesn't care where you define your functions, only that they're defined somewhere.
 
-Lets try declaring a function that accepts parameters and returns a value.
+Let's try to declare a function that accepts parameters and returns a value.
 
-## Passing parameters to functions
+## Pass parameters to functions
 
-In the following example, we are going to declare a function that checks if a given number is
-divisible by another and returns a `boolean` to confirm that.
+In the following example, we're going to declare a function that checks if a given number is divisible by another and returns a `boolean` value to confirm that.
 
 ```rust
 fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
@@ -40,17 +33,16 @@ fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
 }
 ```
 
-Lets take a look in this function signature:
+Let's take a look at this function signature:
 
-- `fn`: the function declaration keyword in Rust.
-- `is_divisible_by`: the function name.
-- `(dividend: u32, divisor: u32)`: this function's parameter list, and it states that two unsigned
-    32-bit integers are expected as input values.
-- `-> bool`: the arrow points to the type of the value this function will always return.
+- `fn`: The function declaration keyword in Rust.
+- `is_divisible_by`: The function name.
+- `(dividend: u32, divisor: u32)`: This function's parameter list. It states that two unsigned 32-bit integers are expected as input values.
+- `-> bool`: The arrow points to the type of value this function will always return.
 
-So, the `is_divisible_by` function accepts two integers as inputs and will output a boolean value.
+The `is_divisible_by` function accepts two integers as inputs and outputs a Boolean value.
 
-Now lets look closer to this function's body:
+Now let's look closer at this function's body:
 
 ```rust
 if divisor == 0 {
@@ -58,30 +50,23 @@ if divisor == 0 {
 }
 ```
 
-All this part of the function is trying to do is preventing a classic programming error, the
-division by zero error.
+All this part of the function is trying to do is prevent a classic programming error, the division by zero error.
 
-We still haven't covered *conditional expressions* yet, but this snippet is really simple. The `if`
-keyword checks if the value held by the `divisor` variable is zero and, if it is, the code inside
-the folowing block is executed. If it is, the function will return the boolean value `false`, using
-the keyword `return` followed by the value to be returned.
+We still haven't covered *conditional expressions* yet, but this snippet is simple. The `if` keyword checks if the value held by the `divisor` variable is zero. If it is, the code inside the following block is executed. If it isn't, the function will return the Boolean value `false` by using the keyword `return` followed by the value to be returned.
 
-The last line in our functin's body is actually just an expression without the `return` keyword:
+The last line in our function's body is an expression without the `return` keyword:
 
 ```rust
 dividend % divisor == 0
 ```
 
-In Rust, the last expression inside a code block (`{ ... }`) is always returned, so we don't really
-need to use the `return` keyword in here.
+In Rust, the last expression inside a code block (`{ ... }`) is always returned, so we don't need to use the `return` keyword in here.
 
-This expression uses the remainder operator (`%`) to get the remainder of the division between the
-two terms and compare it to zero. The resulting type after applying the equality operator (`==`) is
-the `bool` type, either `true` or `false`.
+This expression uses the remainder operator (`%`) to get the remainder of the division between the two terms and compare it to zero. The resulting type after applying the equality operator (`==`) is the `bool` type, which is either `true` or `false`.
 
-## Calling a function
+## Call a function
 
-Lets see our function in action.
+Let's see our function in action.
 
 ```rust
 fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
@@ -98,21 +83,18 @@ fn main() {
 }
 ```
 
-You can interact with the example above in this [Rust Playground Link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=554726b787ed0426bf288756e938c028?azure-portal=true).
+You can interact with the preceding example in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=554726b787ed0426bf288756e938c028?azure-portal=true).
 
-It looks like it is working just fine! But what happens if we change the return type of our
-function?
+It looks like it's working fine. But what happens if we change the return type of our function?
 
-We can learn a lot of how Rust works when we try to break things on purpose, so lets try to break
-our function contract and declare that it should return a `char` instead of a `bool` type, without
-modifying the function's body:
+We can learn a lot about how Rust works when we try to break things on purpose. Let's try to break our function contract and declare that it should return a `char` instead of a `bool` type, without modifying the function's body.
 
 ```rust
 fn is_divisible_by(dividend: u32, divisor: u32) -> char {
 //                                                 ^^^^
 ```
 
-We get some compiler errors explaining that we have "mismatched types" in our function definition:
+We get some compiler errors explaining that we have "mismatched types" in our function definition.
 
 ```output
     error[E0308]: mismatched types
@@ -134,7 +116,6 @@ We get some compiler errors explaining that we have "mismatched types" in our fu
       |     ^^^^^^^^^^^^^^^^^^^^^^^ expected `char`, found `bool`
 ```
 
-This error tells us that the expected type (`char`) did not match the received type (`bool`).
+This error tells us that the expected type (`char`) didn't match the received type (`bool`).
 
-Indeed, each of the two return points inside our function received complaints from the compiler,
-telling us that it expected a `char` to be returned, but it found a `bool` instead.
+Each of the two return points inside our function received complaints from the compiler, telling us that it expected a `char` to be returned but found a `bool` instead.

@@ -1,4 +1,4 @@
-Values can be bound to variables using the `let` keyword.
+Values can be bound to variables by using the `let` keyword.
 
 ```rust
 fn main() {
@@ -10,14 +10,13 @@ fn main() {
 }
 ```
 
-`println` is a macro that takes a string as a first argument and one extra argument for each `{}`
-inside that string and replaces them for the argument's display value.
+The `println` macro takes a string as a first argument and one extra argument for each `{}` inside that string and replaces them for the argument's display value.
 
 > [!NOTE]
-> We won't cover Rust macros in this module, but you can think of the `println` macro as a function
-with a variable number of arguments, for now
+> We won't cover Rust macros in this module. For now, you can think of the `println` macro as a function
+with a variable number of arguments.
 
-The example above would print:
+The preceding example would print:
 
 > the number is 10.
 
@@ -25,10 +24,10 @@ The example above would print:
 
 ## Mutability
 
-In Rust, variable bindings are immutable by default. When a variable is immutable, once a value is
-bound to a name, you can’t change that value.
+In Rust, variable bindings are immutable by default. When a variable is immutable, after a value is
+bound to a name, you can't change that value.
 
-For instance, if we try to change the value of our number from the previous example, we would receive an
+For instance, if we tried to change the value of our number from the previous example, we would receive an
 error message from the compiler.
 
 ```rust
@@ -40,11 +39,9 @@ fn main() {
 }
 ```
 
-You can see this error message for yourself in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true).
-Just click the "Run" button to execute the code.
+You can see this error message for yourself in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true). Select the **Run** button to execute the code.
 
-In order to mutate a value we must first use the `mut` keyword to make a variable binding mutable
-instead.
+To mutate a value, we must first use the `mut` keyword to make a variable binding mutable instead.
 
 ```rust
 fn main() {
@@ -55,17 +52,15 @@ fn main() {
 }
 ```
 
-This code will compile without errors, since the variable `a_number` is now allowed to be mutated.
+This code compiles without errors because the variable `a_number` can now be mutated.
 
 ## Shadowing
 
-You can also declare a new variable with the same name as a previous variable, creating a new
-binding. In Rust this operation is called "shadowing" since the new variable shadows the previous
-variable, in the sense that the old variable still exists, but you can't refer to it in this scope
-anymore.
+You can also declare a new variable with the same name as a previous variable, which creates a new
+binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous
+variable. The old variable still exists, but you can't refer to it in this scope anymore.
 
-Note that the variable `number` from the example above does not need to be mutable. In fact, no
-mutation occurs since every operation creates a new variable while shadowing the previous one.
+The variable `number` from the preceding example doesn't need to be mutable. No mutation occurs because every operation creates a new variable while shadowing the previous one.
 
 ```rust
 fn main() {
@@ -76,5 +71,4 @@ fn main() {
 }
 ```
 
-Can you guess the output?
-[Visit the Rust Playground to run this example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ddc9fa490b0602526e10b564fa93890a?azure-portal=true).
+Can you guess the output? Visit the [Rust Playground to run this example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ddc9fa490b0602526e10b564fa93890a?azure-portal=true).
