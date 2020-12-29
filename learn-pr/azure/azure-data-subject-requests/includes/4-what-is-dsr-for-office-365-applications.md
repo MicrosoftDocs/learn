@@ -101,4 +101,9 @@ A global IT admin needs to do the following to export system-generated log data 
 
 **Part 4: Additional resources to assist you with DSRs**
 
+There are various circumstances where your organization's users may use their work or school account (also referred to as "Azure Active Directory ID" or "AAD") to sign in to Microsoft products and services for which Microsoft is a data controller. For all such products and services, your users need to initiate their own data subject requests directly to Microsoft and Microsoft will fulfill the requests directly to the user. By design, products and services involving storage of user-authored content enable users to access, export, rectify, and delete their user-authored content as part of the inherent functionality of the products. Scenarios where this may apply include the following:
 
+- Optional connected online services:
+- User feedback
+- Windows authenticated via work or school account
+- User-acquired products or services
