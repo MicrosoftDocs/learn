@@ -134,7 +134,7 @@ Save the file using the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on
 > [!IMPORTANT]
 > Whenever you paste or change code into a file in the editor, make sure to save afterwards using the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
-Switch to the `index.js` file and add the following contents to it. This is a small Node.js program that always respond with "Hello World!" when any GET request is made to the server.
+Switch to the `index.js` file, and add the following contents to it. This is a small Node.js program that always responds with "Hello World!" when any GET request is made to the server.
 
 ```javascript
 const http = require('http');
@@ -150,11 +150,11 @@ server.listen(port);
 console.log(`Server running at http://localhost:${port}`);
 ```
 
-Save the file and exit the editor. You can exit the editor through the "..." menu on the top right or through <kbd>Ctrl+Q</kbd>.
+Save the file and exit the editor. You can exit the editor selecting the "..." menu on the top right, or by pressing <kbd>Ctrl+Q</kbd>.
 
 ### Optionally test your web app
 
-If you open a second command shell session, for example by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
+If you open a second command shell session, for example, by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
 
 1. From your primary command shell session, run the following commands to start your web application:
 

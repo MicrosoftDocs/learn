@@ -83,7 +83,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
-1. Select **vue-app** as the location for the application code and press **Enter**.
+1. Select **vue-app** as the location for the application code, and press **Enter**.
 
    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
@@ -91,7 +91,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. The extension is looking for the location of the API in your application. This article doesn't implement an API.
 
-   Select **Skip for now** and press **Enter**.
+   Select **Skip for now**, and press **Enter**.
 
    :::image type="content" source="../media/extension-api-location.png" alt-text="API location":::
 
@@ -99,7 +99,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    ::: zone pivot="angular"
 
-   Type **dist/angular-app** and press **Enter**.
+1. Enter **dist/angular-app**, and press **Enter**.
 
    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
 
@@ -107,7 +107,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    ::: zone pivot="react"
 
-   Enter **build**, and press **Enter**.
+1. Enter **build**, and press **Enter**.
 
    :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
 
@@ -115,7 +115,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    ::: zone pivot="svelte"
 
-   Enter **public**, and press **Enter**.
+1. Enter **public**, and press **Enter**.
 
    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
 
@@ -123,7 +123,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    ::: zone pivot="vue"
 
-   Enter **dist**, and press **Enter**.
+1. Enter **dist**, and press **Enter**.
 
    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
 
@@ -141,7 +141,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
     :::image type="content" source="../media/extension-select-resource-group.png" alt-text="Select resource group":::
 
-1. After the app is created, a confirmation notification appears in Visual Studio Code.
+    After the app is created, a confirmation notification appears in Visual Studio Code.
 
     :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
 
@@ -161,9 +161,9 @@ You can check the status of your build and deploy action by navigating to the Ac
 1. Select the link shown in the following image.
 
    :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
-   
-> [!NOTE] 
-> You can open the Azure page by right-clicking on my-first-static-web-app in the Visual Studio Code editor, and selecting **Open in portal**.
+
+   > [!NOTE]
+   > You can open the Azure page by right-clicking on my-first-static-web-app in the Visual Studio Code editor, and selecting **Open in portal**.
 
 1. Select **Azure Static Web Apps CI/CD**.
 
