@@ -27,7 +27,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     }
     ```
 
-1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell run the following command.
+1. Now we need to get the storage account connection string, and place it into the configuration for our app. In Cloud Shell, run the following command.
 
     ```azurecli
     az storage account show-connection-string \
@@ -40,7 +40,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Next, open the project file (**PhotoSharingApp.csproj**) in the editor.
 
-1. Add the following configuration block to the file in the project. Add below < / ItemGroup > from the existing code. 
+1. Add the following configuration block to the file in the project. Add < / ItemGroup > from the existing code.
 
     ```xml
    
@@ -52,7 +52,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
     ```
 
-1. Save the file. (Make sure you do this or you will lose the change when you add the package below!)
+1. Save the file. (Make sure you do this or you will lose the change when you add the following package!)
 
 ## Add support to read a JSON configuration file
 
@@ -87,7 +87,7 @@ Now that we have added the required libraries to enable reading configuration, w
     var configuration = builder.Build();
     ```
 
-Your **Program.cs** file should now look like the following:
+Your **Program.cs** file should now look like the following.
 
 ```csharp
 using System;
@@ -132,10 +132,10 @@ Let's add support to our Node.js application to retrieve a connection string fro
     code .
     ```
 
-1. Select the **.env** file in the editor and add the following text.
+1. Select the **.env** file in the editor, and add the following text.
 
     > [!TIP]
-    > You may need to click the refresh button in code to see the new files.
+    > You may need to select the refresh button in code to see the new files.
 
     ```
     AZURE_STORAGE_CONNECTION_STRING=<value>
@@ -146,7 +146,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
 1. Save the file.
 
-1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell run the following command.
+1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell, run the following command.
 
     ```azurecli
     az storage account show-connection-string \
@@ -155,7 +155,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
         --name <name>
     ```
 
-1. Copy the connection string that is returned from that command, minus the quotes, and replace `<value>` in the **.env** file with this connection string.
+1. Copy the connection string that is returned from that command, (minus the quotes), and replace `<value>` in the **.env** file with this connection string.
 
 1. Save the file.
 

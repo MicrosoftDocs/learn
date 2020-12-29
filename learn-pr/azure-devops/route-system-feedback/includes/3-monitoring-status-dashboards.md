@@ -3,7 +3,7 @@ Visualizations, such as charts and graphs, can help you analyze your monitoring 
 In this part, you explore some of the ways you can build a monitoring and status dashboard for your application. You'll look at:
 
 * Azure dashboards
-* Azure Monitor Views
+* Azure Monitor workbooks
 * Application Insights workbooks
 * Power BI
 * Grafana
@@ -53,17 +53,15 @@ Azure dashboards do not provide:
 * Interactivity with dashboard data.
 * Full contextual drill-down.
 
-## What are Azure Monitor Views?
+## What are Azure Monitor workbooks?
 
 [Views in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer?azure-portal=true) enable you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
 
-Here's a screenshot:
+![A screenshot of Azure Monitor workbooks](../media/3-azure-monitor-views.png)
 
-![A screenshot of Azure Monitor Views](../media/3-azure-monitor-views.png)
+### Advantages of Azure Monitor workbooks
 
-### Advantages of Azure Monitor Views
-
-Azure Monitor Views provide:
+Azure Monitor workbooks provide:
 
 * Rich visualizations for log data.
 * Export and import views to transfer them to other resource groups and subscriptions.
@@ -71,9 +69,9 @@ Azure Monitor Views provide:
 * [Filters](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer-filters?azure-portal=true) for custom parameters.
 * Interactive views that can drill down into other views.
 
-### Limitations of Azure Monitor Views
+### Limitations of Azure Monitor workbooks
 
-Azure Monitor Views do not:
+Azure Monitor workbooks do not:
 
 * Support metrics data.
 * Provide personal views. Rather, views are available to all users with access to the workspace.
