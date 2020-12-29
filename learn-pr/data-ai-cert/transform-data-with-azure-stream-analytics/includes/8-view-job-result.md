@@ -1,4 +1,4 @@
-After a Stream Analytics job finishes, you can view the results in the Azure portal. On the job's **Overview** pane, you see the status information, the location and resource group where the service is provisioned, and the subscription details. Here, you can also confirm when the service was created and started.
+After a Stream Analytics job finishes, you can view the results in the Azure portal. On the job's **Overview** pane, you see the status information, the location, and resource group where the service is provisioned, and the subscription details. Here, you can also confirm when the service was created and started.
 
 To see the job's results:
 

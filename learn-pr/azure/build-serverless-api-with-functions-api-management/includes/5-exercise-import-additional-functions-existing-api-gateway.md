@@ -18,7 +18,7 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 1. Select **Run**, and then examine the results in the **Output** box.
 
-    :::image type="content" source="../media/5-order-test-results.png" alt-text="Add a new fuction option page appears.":::
+    :::image type="content" source="../media/5-order-test-results.png" alt-text="Add a new function option page appears.":::
 
     The output pane displays the details of an order in JSON format. You can also test the function with the names "Henri" and "Barriclough" for different orders.
 
