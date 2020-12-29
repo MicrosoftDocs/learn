@@ -1,4 +1,4 @@
-Imagine you're building a photo-sharing application. Every day, thousands of users take pictures and rely on your application to keep them safe and make them accessible across all their devices. Storing these photos is critical to your business, and you would like to ensure that the system used in your application is fast, reliable, and secure. Ideally, this would be done without you having to build all these aspects into the app.
+Imagine you're building a photo-sharing application. Every day, thousands of users take pictures, and rely on your application to keep their photos safe while making them accessible across all their devices. Storing these photos is critical to your business, and you want to ensure users that the system used in your application is fast, reliable, and secure. Ideally, this would be done without you having to build all these aspects into the app.
 
 Azure Storage provides such power, resiliency, and performance in the cloud. This module provides instructions about using the power of Azure Storage to achieve the reliability and performance in your app that you require. You can then apply this knowledge to any application.
 
