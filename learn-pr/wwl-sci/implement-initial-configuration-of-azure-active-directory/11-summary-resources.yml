@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.summary-resources
+title: Summary and Resources
+metadata:
+  title: Summary and Resources
+  description: "Summary and Resources"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-summary-resources.md)]

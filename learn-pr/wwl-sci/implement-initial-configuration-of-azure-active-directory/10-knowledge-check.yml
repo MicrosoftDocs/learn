@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Insert the question text in this cell."
+    choices:
+    - content: "Insert the correct answer text in this cell."
+      isCorrect: true
+      explanation: "Insert the correct answer feedback in this cell."
+    - content: "Insert the first incorrect answer text in this cell."
+      isCorrect: false
+      explanation: "Insert the first incorrect answer feedback in this cell."
+    - content: "Insert the second incorrect answer text in this cell."
+      isCorrect: false
+      explanation: "Insert the second incorrect answer feedback in this cell."
+  - content: "Insert the question text in this cell."
+    choices:
+    - content: "Insert the second incorrect answer text in this cell."
+      isCorrect: false
+      explanation: "Insert the second incorrect answer feedback in this cell."
+    - content: "Insert the first incorrect answer text in this cell."
+      isCorrect: false
+      explanation: "Insert the first incorrect answer feedback in this cell."
+    - content: "Insert the correct answer text in this cell."
+      isCorrect: true
+      explanation: "Insert the correct answer feedback in this cell."
+  - content: "Insert the question text in this cell."
+    choices:
+    - content: "Insert the correct answer text in this cell."
+      isCorrect: true
+      explanation: "Insert the correct answer feedback in this cell."
+    - content: "Insert the second incorrect answer text in this cell."
+      isCorrect: false
+      explanation: "Insert the second incorrect answer feedback in this cell."
+    - content: "Insert the first incorrect answer text in this cell."
+      isCorrect: false
+      explanation: "Insert the first incorrect answer feedback in this cell."
