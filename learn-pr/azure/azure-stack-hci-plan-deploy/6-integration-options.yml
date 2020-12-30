@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which functionality is not available Azure Arc provide in Azure Stack HCI deployments?"
+  - content: "Which functionality is not available in Azure Arc, provided in the Azure Stack HCI deployments?"
     choices:
     - content: "Searching and indexing by using Azure Resource Graph."
       isCorrect: false
