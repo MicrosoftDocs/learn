@@ -35,7 +35,7 @@ A customer of Contoso, Ltd that resides in France has called into the toll free 
 > **Note:** Deleting this data also means deleting the user from the tenant. Users are initially soft-deleted, which means the account can be recovered by a tenant admin within 30 days of being marked for soft-delete. After 30 days, the account is automatically, and permanently, deleted from the tenant. Prior to that 30 days, you can manually delete a soft-deleted user from the recycle bin.
 
 ### Example 2: DSR against customer data in Office 365
-A customer of Contoso, Ltd that resides in California has submitted a Data Subject Request form on the company website. They want to gain access to their personal information that was provided to Contoso, Ltd in the form of emails and word documents. You need to search for thier personal information and, if applicable, provide them with **access** to that information or an explantion of why the information can not be provided.  In order to accomplish this you execute the following tasks for this DSR:
+A customer of Contoso, Ltd that resides in California has submitted a Data Subject Request form on the company website. They want to gain access to their personal information that was provided to Contoso, Ltd in the form of emails and documents. You need to search for thier personal information and, if appropriate, provide them with **access** to that information or an explantion of why the information can not be provided.  In order to accomplish this you execute the following tasks for this DSR:
 
 1. Discover
     * Search all content locations with the Content Search tool using identifiers such as:
@@ -68,5 +68,11 @@ A customer of Contoso, Ltd that resides in California has submitted a Data Subje
 
 ## Tools used for DSR for customer data
 
+The following table lists tool that can be used for executing DSRs for customer data in the Microsoft Cloud.
 
-
+|Tool Name|Description|
+|------|------|
+|Azure Portal| Can be used to respond to DSRs against Azure.|
+|Content Search eDiscovery tool|Located in the complance center of Office 365 and Microsoft 365. Used when executing DSRs againts Office 365 applications.|
+|DSR case tool|Located in the Security & Compliance Center. Can be used to manage investigations for a data subject.|
+|In-app functionality|For applications that do not support Content Search, applicaitons' can be used directly for responding to DSRs.|
