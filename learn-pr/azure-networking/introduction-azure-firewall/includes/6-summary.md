@@ -1,6 +1,6 @@
 Contoso IT management was concerned about external threats in the form of malicious actors attempting to infiltrate the network. Management was also concerned about internal threats in the form of employees inadvertently attempting to access malicious websites.
 
-You were asked to evaluate whether Azure Firewall would be a good choice to deny incoming and outgoing threats while also allowing legitimate traffic. You were also asked to find the most efficient way to implement firewall policies across Contoso's multiple Azure regions.
+You were asked to evaluate whether Azure Firewall would be a good choice to deny threats while allowing legitimate traffic. You were also asked to find the most efficient way to implement firewall policies across Contoso's multiple Azure regions.
 
 In this module, you learned the fundamentals of Azure Firewall and Azure Firewall Manager. You saw that Azure Firewall acts as a barrier between your Azure virtual network and the Internet. You found out that Azure Firewall examines all inbound and outbound traffic and uses threat intelligence, rules, and other policy settings to allow legitimate traffic and deny threatening or unknown traffic. You also learned that Azure Firewall Manager can help reduce the complexity of deploying policies to multiple firewalls
 

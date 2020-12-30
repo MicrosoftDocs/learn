@@ -1,4 +1,4 @@
-You know what Azure Firewall is and how it works. Now you need some criteria to help you evaluate whether Azure Firewall amd Azure Firewall Manager are suitable choices for your company. To help you make a decision, let's consider the following scenarios:
+You know what Azure Firewall is and how it works. Now you need some criteria to help you evaluate whether Azure Firewall and Azure Firewall Managers are suitable choices for your company. To help you make a decision, let's consider the following scenarios:
 
 - You want to protect your network against infiltration
 - You want to protect your network against user error
@@ -12,7 +12,7 @@ As part of your evaluation of Azure Firewall and Azure Firewall Manager, you kno
 
 ## You want to protect your network against infiltration
 
-A common goal of many malicious actors is to infiltrate your network. These unauthorized users might want to use your network resources or they might want to view, steal, or destroy sensitive or proprietary data.
+A common goal of many malicious actors is to infiltrate your network. These intruders might want to use your network resources or view, steal, or destroy sensitive or proprietary data.
 
 Azure Firewall is designed to help prevent such intrusions. For example, an attacker might try to infiltrate the network by requesting access to a network resource. Azure Firewall uses stateful inspection of network packets to examine the context of such requests. If a request is a response to earlier legitimate activity, then the firewall will likely allow the request; if a request came seemingly out of nowhere—as would the request sent by a would-be infiltrator—then the firewall would deny the request.
 
@@ -37,11 +37,11 @@ A typical hub and spoke network topology has the following characteristics:
 - One virtual network that acts as a central connection point—the *hub*.
 - One or more virtual networks that are peered to the hub—the *spokes*. An on-premises network connected via an ExpressRoute circuit or a VPN gateway can also be considered a spoke in this topology.
 
-The spoke networks can exchange data with the hub, but the spokes can't communicate directly with each other. However, you might need such a direct connection. For example, one spoke network might host an application programming interface (API) that requires information from a SQL database deployed in a different spoke.
+The spoke networks can exchange data with the hub, but the spokes can't communicate directly with each other. You might need such a direct connection. For example, one spoke network might host an application programming interface (API) that requires information from a SQL database deployed in a different spoke.
 
 One solution is to peer the spoke networks with each other. That works for a few such connections, but can quickly grow unwieldy as the number of connections increases.
 
-An easier and more secure solution is to use Azure Firewall to set up direct connectivity between spokes. You achieve this connectivity by deploying an Azure Firewall instance in the hub, then configuring the spoke virtual networks with user-defined routes (UDRs) that specifically route data through the firewall and on to the other spoke.
+An easier and more secure solution is to use Azure Firewall to set up direct connectivity between spokes. You achieve this connectivity by first deploying an Azure Firewall instance in the hub. You then configure the spoke virtual networks with user-defined routes (UDRs) that specifically route data through the firewall and on to the other spoke.
 
 :::image type="content" source="../media/4-using-firewall.png" alt-text="Network diagram showing a spoke-to-spoke connection between a virtual machine and a SQL database via Azure Firewall.":::
 

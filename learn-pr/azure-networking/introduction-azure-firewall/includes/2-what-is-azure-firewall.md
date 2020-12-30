@@ -47,20 +47,20 @@ Azure Firewall Manager provides a central point of configuration and management 
 
 ### What is a firewall policy?
 
-The configuration of a single Azure Firewall can be extremely complex. For example, the firewall might be configured with multiple rule collections. A *collection* is a combination of any or all of the following items:
+The configuration of a single Azure Firewall can be complicated. For example, the firewall might be configured with multiple rule collections. A *collection* is a combination of any or all of the following items:
 
 - One or more network address translation (NAT) rules.
 - One or more network rules.
 - One or more application rules.
 
-When you include other firewall settings such as custom DNS and how you want the firewall to handle the threat intelligence rules, configuring just a single firewall can be a burden. Adding to that burden are two common network security scenarios:
+When you include other firewall settings such as custom DNS and threat intelligence rules, configuring just a single firewall can be a burden. Adding to that burden are two common network security scenarios:
 
 - Your network architectures require multiple firewalls.
 - You want each firewall to implement both a base level of security rules that apply to everyone, plus special rules for designated groups such as developers, database users, and the marketing department.
 
 To simplify the complexity of managing these and similar firewall scenarios, you can implement firewall policies. A *firewall policy* is an Azure resource that contains one or more collections of NAT, network, and application rules, custom DNS settings, threat intelligence settings, and more.
 
-The key point to understand here is that Azure offers a resource called Firewall Policy and a firewall policy that you create is an instance of that resource. As a separate resource, you can rapidly apply the policy to multiple firewalls using Azure Firewall Manager. You can create one policy to be the base policy, then have more specialized policies inherit the base policy's rules.
+The key point here is that Azure offers a resource called Firewall Policy. A firewall policy that you create is an instance of that resource. As a separate resource, you can rapidly apply the policy to multiple firewalls using Azure Firewall Manager. You can create one policy to be the base policy, then have more specialized policies inherit the base policy's rules.
 
 ### Key features of Azure Firewall Manager
 
@@ -72,7 +72,7 @@ The following table lists some key features of Azure Firewall Manager:
 |Manage multiple firewalls     |Deploy, configure, and monitor any number of firewalls from a single interface.         |
 |Supports multiple network architectures     |Protects both standard Azure virtual networks and Azure Virtual WAN Hubs.         |
 |Automated traffic routing     |Network traffic is automatically routed to the firewall (when used with Azure Virtual WAN Hub only).         |
-|Hierarchical policies     |Enables you to create so-called parent and child firewall policies. A *parent* policy contains the rules and settings you want to apply globally, while a *child* policy inherits all the rules and settings of its parent.         ||Support for third-party security providers     |Enables you to integrate third-party security as a service (SECaaS) solutions to protect your network's Internet connection.         |
+|Hierarchical policies     |Enables you to create so-called parent and child firewall policies. A *parent* policy contains the rules and settings you want to apply globally; a *child* policy inherits all the rules and settings of its parent.         ||Support for third-party security providers     |Enables you to integrate third-party security as a service (SECaaS) solutions to protect your network's Internet connection.         |
 
 > [!NOTE]
 > By enabling you to integrate third-party SECaaS solutions, your network security strategy might be to use Azure Firewall to monitor local network traffic while using the third-party SECaaS provider to monitor Internet traffic.
@@ -81,5 +81,5 @@ The following table lists some key features of Azure Firewall Manager:
 
 Azure Firewall Manager provides security management for the following two network architectures:
 
-- Hub virtual network. This is a standard Azure virtual network where one or more firewall policies have been applied.
-- Secured virtual hub. This is an Azure Virtual WAN Hub where one or more firewall policies have been applied.
+- Hub virtual network. A standard Azure virtual network where one or more firewall policies have been applied.
+- Secured virtual hub. An Azure Virtual WAN Hub where one or more firewall policies have been applied.
