@@ -1,8 +1,8 @@
-Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application layer for your content. This content includes data from Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
+Microsoft 365 provides baseline, volume-level encryption enabled through BitLocker and Distributed Key Manager (DKM). Microsoft 365 offers an added layer of encryption at the application layer for your content. This content includes data from Exchange Online, Skype for Business, <!--- I would suggest to remove Skype for Business. My impresion is that since Microsoft Teams waas released, Microsoft is rarely referencing Skype for Business. ---> SharePoint Online, OneDrive for Business, and Teams files. This added layer of encryption is called service encryption.
 
 ## How service encryption, BitLocker, and Customer Key work together
 
-Service encryption ensures that content at rest is encrypted at the service layer. Your data is always encrypted at rest in the Microsoft 365 service with BitLocker and DKM.  Customer Key provides additional protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.
+Service encryption ensures that content at rest is encrypted at the service layer. Your data is always encrypted at rest in the Microsoft 365 service with BitLocker and DKM.  Customer Key provides additional protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. Service encryption is not meant to prevent Microsoft personnel from accessing customer data. The primary purpose is to assist customers in meeting regulatory or compliance obligations for controlling root keys. Customers explicitly authorize O365 services <!--- Is O365 wel known/approved acronym? ---> to use their encryption keys to provide value added cloud services, such as eDiscovery, anti-malware, anti-spam, search indexing, etc.
 
 Customer Key is built on service encryption and lets you provide and control encryption keys. Microsoft 365 then uses these keys to encrypt your data at rest as described in the Online Services Terms (OST). Customer Key helps you meet compliance obligations because you control the encryption keys that Microsoft 365 uses to encrypt and decrypt data.
 
@@ -15,6 +15,6 @@ Using keys you provide, Customer Key encrypts:
 - SharePoint Online, OneDrive for Business, and Teams files.
 - Files uploaded to OneDrive for Business.
 - Exchange Online mailbox content including e-mail body content, calendar entries, and the content within email attachments.
-- Text conversations from Skype for Business.
+- Text conversations from Skype for Business. <!--- Although this is correct, I would suggest to delete this bullet point. --->
   
   Customer Key only encrypts data at rest in the cloud. Customer Key does not work to protect your on-premises mailboxes and files. You can encrypt your on-premises data using another method, such as BitLocker.
