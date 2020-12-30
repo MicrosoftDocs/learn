@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose a company wants to enable external users to access an Azure virtual server via a remote desktop connection. Which one of the following items would you implement on Azure Firewall to allow these connections?"
+  - content: "Suppose a company wants to allow external users to access an Azure virtual server via a remote desktop connection. Which one of the following items would you implement on Azure Firewall to allow these connections?"
     choices:
     - content: "Service tag"
       isCorrect: false
@@ -33,7 +33,7 @@ quiz:
       explanation: "That's correct. You use an application rule to filter traffic based on an FQDN such as server1.database.windows.net."
     - content: "Network"
       isCorrect: false
-      explanation: "That's incorrect. You use a network rule to filter traffic based on one or more of the following: IP address, port, and protocol."
+      explanation: "That's incorrect. You use a network rule to filter traffic based on one or more of the following items: IP address, port, and protocol."
     - content: "NAT"
       isCorrect: false
       explanation: "That's incorrect. You use a NAT rule to translate and filter inbound Internet traffic based on your firewall's public IP address and a specified port number."
