@@ -49,8 +49,8 @@ Next, connect the storage account as the destination for the Stream Analytics jo
 
 1. Select **Save**.
 
-> [!NOTE]
-> If your account doesn't appear in the list, try refreshing it by closing the Azure portal, closing the browser, and then opening the Azure portal again.
+    > [!NOTE]
+    > If your account doesn't appear in the list, try refreshing it by closing the Azure portal, closing the browser, and then opening the Azure portal again.
 
 1. Under **Container**, select **Create new**. Give the container a unique name, such as **learn-container**.
 

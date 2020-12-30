@@ -33,4 +33,4 @@ When storage activity anomalies occur, you receive an email notification with in
 
 You can review and manage your current security alerts from Azure Security Center's Security alerts tile. Clicking on a specific alert provides details and actions for investigating the current threat and addressing future threats.
 
-![Viewing security anomolies details in Azure Defender for Security](../media/view-security-anomolies-details-in-azure-defender-for-security.png)
+    ![Viewing security anomolies details in Azure Defender for Security](../media/view-security-anomolies-details-in-azure-defender-for-security.png)

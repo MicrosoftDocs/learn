@@ -16,7 +16,7 @@ Azure Static Web Apps is designed to host applications where the source code liv
 
 You also need to specify three folder paths within your repository so your app can be automatically built and deployed:
 
-| Location              | Location example | Description                                                               | required |
+| Location              | Location example | Description                                                               | Required |
 | --------------------- | ---------------- | ------------------------------------------------------------------------- | -------- |
 | App location          | /                | The location of the source code for your web app                          | Yes      |
 | App artifact location | dist             | The location of your app's build artifacts, relative to your app location | No       |

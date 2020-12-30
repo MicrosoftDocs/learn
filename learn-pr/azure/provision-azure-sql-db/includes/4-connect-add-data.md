@@ -50,7 +50,7 @@ Here, you use the `az` utility to list your databases and show some information 
     ```
     You see a large block of JSON as output.
 
-1. Since we want to see only the database names, run the command a second time. But this time, pipe the output to `jq` to print out only the name fields.
+1. Because we want to see only the database names, run the command a second time. But this time, pipe the output to `jq` to print out only the name fields.
    
      ```azurecli
     az sql db list | jq '[.[] | {name: .name}]'

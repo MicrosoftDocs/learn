@@ -52,13 +52,13 @@ Let's add support to our .NET core application to retrieve a connection string f
 
     ```
 
-1. Save the file. (Make sure you do this or you will lose the change when you add the following package!)
+1. Save the file. (Make sure you do this, or you will lose the change when you add the following package!)
 
 ## Add support to read a JSON configuration file
 
 A .NET Core application requires extra NuGet packages to read a JSON configuration file.
 
-1. In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
+In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
 
     ```bash
     dotnet add package Microsoft.Extensions.Configuration.Json
@@ -89,26 +89,26 @@ Now that we have added the required libraries to enable reading configuration, w
 
 Your **Program.cs** file should now look like the following.
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-
-namespace PhotoSharingApp
-{
-    class Program
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    
+    namespace PhotoSharingApp
     {
-        static void Main(string[] args)
+        class Program
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json");
-
-            var configuration = builder.Build();
+            static void Main(string[] args)
+            {
+                var builder = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json");
+    
+                var configuration = builder.Build();
+            }
         }
     }
-}
-```
+    ```
 
 ::: zone-end
 
@@ -163,7 +163,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
 Node.js apps can include support to read from the **.env** file by adding the **dotenv** package.
 
-1. In the command prompt section of the window, add a dependency to the  **dotenv** package using `npm`.
+In the command prompt section of the window, add a dependency to the  **dotenv** package using `npm`.
 
     ```bash
     npm install dotenv --save

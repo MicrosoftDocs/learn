@@ -31,101 +31,101 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
-   :::image type="content" source="../media/extension-azure-logo.png" alt-text="Azure Logo":::
+    :::image type="content" source="../media/extension-azure-logo.png" alt-text="Azure Logo":::
 
    > [!NOTE]
    > Azure and GitHub sign-in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
 
 1. Place your mouse over the _Static Web Apps_ label, and select the **+** (plus sign).
 
-   :::image type="content" source="../media/extension-create-button.png" alt-text="Application name":::
+    :::image type="content" source="../media/extension-create-button.png" alt-text="Application name":::
 
 1. Select **Concierge Subscription**.
 
-   :::image type="content" source="../media/extension-select-subscription.png" alt-text="Select Subscription":::
+    :::image type="content" source="../media/extension-select-subscription.png" alt-text="Select Subscription":::
 
    > [!NOTE]
    > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.
 
-1. The command palette opens at the top of the editor and prompts you to name your application. Enter **my-first-static-web-app**, and press **Enter**.
+1. The command palette opens at the top of the editor and prompts you to name your application. Enter **my-first-static-web-app**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web App":::
+    :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web App":::
 
-1. Select the **main** branch, and press **Enter**.
+1. Select the **main** branch, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-branch.png" alt-text="Branch name":::
+    :::image type="content" source="../media/extension-branch.png" alt-text="Branch name":::
 
 ::: zone pivot="angular"
 
-7. Select **angular-app** as the location for the application code, and press **Enter**.
+7. Select **angular-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
+    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-7. Select **react-app** as the location for the application code and press **Enter**.
+7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
+    :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-7. Select **svelte-app** as the location for the application code and press **Enter**.
+7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
+    :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-7. Select **vue-app** as the location for the application code, and press **Enter**.
+7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
+    :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
 
 ::: zone-end
 
-8. The extension is looking for the location of the API in your application. This article doesn't implement an API. Select **Skip for now**, and press **Enter**.
+8. The extension is looking for the location of the API in your application. This article doesn't implement an API. Select **Skip for now**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-api-location.png" alt-text="API location":::
+    :::image type="content" source="../media/extension-api-location.png" alt-text="API location":::
 
 9. Select the location where files are built for production in your app.
 
 ::: zone pivot="angular"
 
-10. Enter **dist/angular-app**, and press **Enter**.
+10. Enter **dist/angular-app**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
+    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-10. Enter **build**, and press **Enter**.
+10. Enter **build**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
+    :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-10. Enter **public**, and press **Enter**.
+10. Enter **public**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
+    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-10. Enter **dist**, and press **Enter**.
+10. Enter **dist**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
+    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
 
 ::: zone-end
 
-11. Select a location nearest you, and press **Enter**.
+11. Select a location nearest you, and press <kbd>Enter</kbd>.
 
     :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
 
@@ -175,7 +175,7 @@ After your GitHub Action finishes building and publishing your web app, you can 
 
 Select the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
+    :::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

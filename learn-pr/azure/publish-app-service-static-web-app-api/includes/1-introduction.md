@@ -67,11 +67,9 @@ The starter code includes the four apps that you'll use.
 
 After you choose your client application, you'll:
 
-    - Build and run your front-end application.
-
-    - Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions.
-
-    - Finally, you'll explore and launch your application, as follows.
+- Build and run your front-end application.
+- Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions.
+- Finally, you'll explore and launch your application, as follows.
 
 ::: zone pivot="angular"
 

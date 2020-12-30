@@ -3,7 +3,7 @@
 Now that we have a Redis cache created in Azure, let's create an application to use it. Make sure you have your connection string information from the Azure portal.
 
 > [!NOTE]
-> The integrated Cloud Shell is available on the right. You can use that command prompt to create and run the example code we are building here, or perform these steps locally if you have a .NET Core development environment setup.
+> The integrated Cloud Shell is available on the right. You can use that command prompt to create and run the example code we are building here, or perform these steps locally if you have a .NET Core development environment set up.
 
 ## Create a Console Application
 
@@ -14,13 +14,13 @@ We'll use a simple Console Application so we can focus on the Redis implementati
     ```bash
     dotnet new console --name SportsStatsTracker
     ```
-    
+
 1. Change the current directory to the folder for the new project.
 
     ```bash
     cd SportsStatsTracker
     ```
-    
+
 ## Add the connection string
 
 Let's add the connection string we got from the Azure portal into the code. Never store credentials like this in your source code. To keep this sample simple, we're going to use a configuration file. A better approach for a server-side application in Azure would be to use Azure Key Vault with certificates.
@@ -67,7 +67,7 @@ Let's add the connection string we got from the Azure portal into the code. Neve
 
 A .NET Core application requires additional NuGet packages to read a JSON configuration file.
 
-1. In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
+In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
 
     ```bash
     dotnet add package Microsoft.Extensions.Configuration.Json
@@ -97,31 +97,31 @@ Now that we have added the required libraries to enable reading configuration, w
 
 Your **Program.cs** file should now look like the following example.
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-
-namespace SportsStatsTracker
-{
-    class Program
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    
+    namespace SportsStatsTracker
     {
-        static void Main(string[] args)
+        class Program
         {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .Build();
+            static void Main(string[] args)
+            {
+                var config = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+            }
         }
     }
-}
-```
+    ```
 
 ## Get the connection string from configuration
 
-1. In **Program.cs**, at the end of the **Main** method, use the new **config** variable to retrieve the connection string, and store it in a new variable named **connectionString**.
+In **Program.cs**, at the end of the **Main** method, use the new **config** variable to retrieve the connection string, and store it in a new variable named **connectionString**.
 
-    - The **config** variable has an indexer where you can pass in a string to retrieve from your **appSettings.json** file.
+The **config** variable has an indexer where you can pass in a string to retrieve from your **appSettings.json** file.
 
     ```csharp
     string connectionString = config["CacheConnection"];
@@ -177,9 +177,9 @@ Now that we have the connection, let's add a value to the cache.
     IDatabase db = cache.GetDatabase();
     ```
 
-1. Call `StringSet` on the `IDatabase` object to set the key "test:key" to the value "some value:"
+1. Call `StringSet` on the `IDatabase` object to set the key "test:key" to the value "some value".
 
-    - The return value from `StringSet` is a `bool` indicating whether the key was added.
+The return value from `StringSet` is a `bool` indicating whether the key was added.
 
 1. Display the return value from `StringSet` onto the console.
 
@@ -279,21 +279,21 @@ Next, apply the `async` keyword to the **Main** method. We will have to do three
 
 1. Add a `using` statement to include `System.Threading.Tasks`.
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using StackExchange.Redis;
-using System.Threading.Tasks;
-
-namespace SportsStatsTracker
-{
-    class Program
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    using StackExchange.Redis;
+    using System.Threading.Tasks;
+    
+    namespace SportsStatsTracker
     {
-        static async Task Main(string[] args)
+        class Program
         {
-        ...
-```
+            static async Task Main(string[] args)
+            {
+            ...
+    ```
 
 ### Get and set values asynchronously
 
@@ -318,7 +318,7 @@ We can leave the synchronous methods in place. Let's add a call to the `StringSe
 
 #### Increment the value
 
-1. Use the `StringIncrementAsync` method to increment your **counter** value. Pass the number **50** to add to the counter.
+1. Use the `StringIncrementAsync` method to increment your **counter** value. Pass the number **50** to add to the counter:
 
     - Notice that the method takes the key _and_ either a `long` or `double`.
 
@@ -339,62 +339,62 @@ Finally, let's try executing a few additional methods with the `ExecuteAsync` su
 
 1. Execute "FLUSHDB" to clear the database values. It should respond with "OK".
 
-```csharp
-var result = await db.ExecuteAsync("ping");
-Console.WriteLine($"PING = {result.Type} : {result}");
-
-result = await db.ExecuteAsync("flushdb");
-Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
-```
-
+    ```csharp
+    var result = await db.ExecuteAsync("ping");
+    Console.WriteLine($"PING = {result.Type} : {result}");
+    
+    result = await db.ExecuteAsync("flushdb");
+    Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
+    ```
+    
 The final code should look something like the following.
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using StackExchange.Redis;
-using System.Threading.Tasks;
-
-namespace SportsStatsTracker
-{
-    class Program
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    using StackExchange.Redis;
+    using System.Threading.Tasks;
+    
+    namespace SportsStatsTracker
     {
-        static async Task Main(string[] args)
+        class Program
         {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .Build();
-
-            string connectionString = config["CacheConnection"];
-
-            using (var cache = ConnectionMultiplexer.Connect(connectionString))
+            static async Task Main(string[] args)
             {
-                IDatabase db = cache.GetDatabase();
-
-                bool setValue = db.StringSet("test:key", "some value");
-                Console.WriteLine($"SET: {setValue}");
-
-                string getValue = db.StringGet("test:key");
-                Console.WriteLine($"GET: {getValue}");
-
-                setValue = await db.StringSetAsync("test", "100");
-                Console.WriteLine($"SET: {setValue}");
-
-                getValue = await db.StringGetAsync("test");
-                Console.WriteLine($"GET: {getValue}");
-
-                var result = await db.ExecuteAsync("ping");
-                Console.WriteLine($"PING = {result.Type} : {result}");
-                
-                result = await db.ExecuteAsync("flushdb");
-                Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
+                var config = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+    
+                string connectionString = config["CacheConnection"];
+    
+                using (var cache = ConnectionMultiplexer.Connect(connectionString))
+                {
+                    IDatabase db = cache.GetDatabase();
+    
+                    bool setValue = db.StringSet("test:key", "some value");
+                    Console.WriteLine($"SET: {setValue}");
+    
+                    string getValue = db.StringGet("test:key");
+                    Console.WriteLine($"GET: {getValue}");
+    
+                    setValue = await db.StringSetAsync("test", "100");
+                    Console.WriteLine($"SET: {setValue}");
+    
+                    getValue = await db.StringGetAsync("test");
+                    Console.WriteLine($"GET: {getValue}");
+    
+                    var result = await db.ExecuteAsync("ping");
+                    Console.WriteLine($"PING = {result.Type} : {result}");
+                    
+                    result = await db.ExecuteAsync("flushdb");
+                    Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
+                }
             }
         }
     }
-}
-```
+    ```
 
 ## Challenge
 
@@ -552,7 +552,7 @@ We're ready to write code to interact with our Redis cache.
     await client.quitAsync();
     ```
 
-    Save the file. Your finished application should look like this.
+1. Save the file. Your finished application should look like this.
 
     ```javascript
     var Promise = require("bluebird");
@@ -582,14 +582,14 @@ We're ready to write code to interact with our Redis cache.
       await client.quitAsync();
     })();
     ```
-    
+
 1. Run the application. In the Cloud Shell, execute the following command.
-    
+
     ```bash
     node app.js
     ```
 
-    You'll see the following results:
+    You'll see the following results.
 
     ```output
     Adding value to the cache
@@ -598,6 +598,5 @@ We're ready to write code to interact with our Redis cache.
     Pinging the cache
     PONG
     ```
-
 
 ::: zone-end
