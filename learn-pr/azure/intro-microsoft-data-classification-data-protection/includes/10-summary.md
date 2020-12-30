@@ -1,4 +1,4 @@
-In this module, you've learned about .....
+In this module, you've learned about ..... <!--- This paragraph still needs to be completed. --->
 
 ### Learn more
 
