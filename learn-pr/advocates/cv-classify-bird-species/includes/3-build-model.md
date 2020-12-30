@@ -21,8 +21,6 @@ Download the zip file that contains the dataset:
 
 1. In your web browser, go to the [dataset](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/blob/master/bird_photos.zip?azure-portal=true) in GitHub.
 1. Select **Download**. 
-    
-   
    :::image type="content" source="../media/download-dataset-from-github.png" alt-text="Screenshot that shows the dataset zip file in GitHub, with the Download button selected.":::   
 
    The zip file is copied to your computer and stored in your default location for downloaded files. 
@@ -65,14 +63,14 @@ With lots of data and image classes and tags to upload, it's faster to use the S
    1. Select **New project**.
    1. In **Create a new project**, enter or select the following values:
 
-      | Name                 | Value                             |
-      | ---------------------- | --------------------------------- |
-      | **Name**           | *A project name of your choice.*               |
-      | **Description**            | *A short description of the model.*  |
-      | **Resource Group** | *Select the resource group you created in the Azure portal.*   |
-      | **Project Types**          | Classification                    |
-      | **Classification Types**   | Multiclass (Single tag per image) |
-      | **Domains**                | General                           |
+      | Name | Value |
+      | -------|------- |
+      | **Name** | *A project name of your choice.* |
+      | **Description**  | *A short description of the model.* |
+      | **Resource Group** | *Select the resource group you created in the Azure portal.* |
+      | **Project Types**  | Classification |
+      | **Classification Types**  | Multiclass (Single tag per image) |
+      | **Domains** | General |
 
    1. Select **Create project**.
 
@@ -137,7 +135,7 @@ To create the notebook and copy in the code:
 
 1. Go to [customvision.ai](https://www.customvision.ai/?azure-portal=true) if you want to validate in the UI that the project was created.
 
-1. Unzip *bird_photos.zip* and save it to directory where your Jupyter notebook is saved. Then, add the following code to get the list of bird type tags to be created based on the folder names in the *bird_photos* directory:
+1. Unzip *bird_photos.zip* and save it to directory where your Jupyter Notebook file is saved. Then, add the following code to get the list of bird type tags to be created based on the folder names in the *bird_photos* directory:
 
    ```python
    # Create a tag list from folders in bird directory
@@ -209,7 +207,7 @@ To create the notebook and copy in the code:
 
 ## Train the model
 
-We have created our dataset in Custom Vision, and now we can train our model. You can train the model by using the SDK, but we'll use the CustomVision.ai UI instead by completing these steps:
+We've created our dataset in Custom Vision, and now we can train our model. You can train the model by using the SDK, but we'll use the CustomVision.ai UI instead:
 
 1. Go to [customvision.ai](https://www.customvision.ai/?azure-portal=true).
 1. Select the **Bird Classification** project.
