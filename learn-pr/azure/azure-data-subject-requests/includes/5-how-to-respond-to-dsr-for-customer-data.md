@@ -3,7 +3,7 @@ Once a data controller receives a DSR, a response must be given as soon as possi
 ## Scenarios for DSR in Azure and Office 365 for customer data
 
 ### Scenario 1: DSR against customer data in Azure
-A customer of Contoso in the EU has called into the toll free number establised for DSRs. They want to enact their "right to erasure" also known as their right to be forgotten. You need to remove all of their personal information from Azure.  In order to accomplish this you execute the following tasks:
+A customer of Contoso, Ltd that resides in France has called into the toll free number establised for DSRs. They want to enact their "right to erasure" also known as their "right to be forgotten". You need to remove all of their personal information from Azure.  In order to accomplish this you execute the following tasks for this DSR:
 
 1. Discovery
     * Sign into the Azure portal
@@ -26,6 +26,20 @@ A customer of Contoso in the EU has called into the toll free number establised 
 > **Note:** Deleting this data also means deleting the user from the tenant. Users are initially soft-deleted, which means the account can be recovered by a tenant admin within 30 days of being marked for soft-delete. After 30 days, the account is automatically, and permanently, deleted from the tenant. Prior to that 30 days, you can manually delete a soft-deleted user from the recycle bin.
 
 ### Scenario 2: DSR against customer data in Office 365
+A customer of Contoso, Ltd that resides in California has submitted a Data Subject Request form on the company website. They want to gain access to their personal information that was provided to Contoso, Ltd in the form of emails and word documents. You need to search for thier personal information and, if applicable, provide them with access to that information.  In order to accomplish this you execute the following tasks for this DSR:
+
+1. Search all content locations using the Content Search tool using identifiers including:
+    * Email address or alias
+    * Phone number
+    * Mailing address
+    * Social Security Number
+2. Narrow down results by using conditions such as:
+    * File type (docx, pdf, xlxs)
+    * Message type (/*email, /*contacts)
+    * Compliance tag (compliancetag="personal data")
+3. Search for data in SharePoint lists, discussion, forms, OneDrive for Business
+
+
 
 ## Tools used for DSR for customer data
 
