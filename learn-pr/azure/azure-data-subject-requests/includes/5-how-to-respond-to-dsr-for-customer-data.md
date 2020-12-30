@@ -3,7 +3,7 @@ Once a data controller receives a DSR, a response must be given as soon as possi
 ## Scenarios for DSR in Azure and Office 365 for customer data
 
 ### Scenario 1: DSR against customer data in Azure
-A customer of Contoso, Ltd that resides in France has called into the toll free number establised for DSRs. They want to enact their "right to erasure" also known as their "right to be forgotten". You need to remove all of their personal information from Azure.  In order to accomplish this you execute the following tasks for this DSR:
+A customer of Contoso, Ltd that resides in France has called into the toll free number establised for DSRs. They want to enact their "**right to erasure**" also known as their "right to be forgotten". You need to remove all of their personal information from Azure.  In order to accomplish this you execute the following tasks for this DSR:
 
 1. Discovery
     * Sign into the Azure portal
