@@ -32,9 +32,9 @@ products:
 - azure-web-application-firewall
 units:
 - learn.introduction-azure-web-application-firewall.1-introduction
-- learn.introduction-azure-web-application-firewall.2-what-is-azure-private-link
-- learn.introduction-azure-web-application-firewall.3-how-azure-private-link-works
-- learn.introduction-azure-web-application-firewall.4-when-to-use-azure-private-link
+- learn.introduction-azure-web-application-firewall.2-what-is-azure-web-application-firewall
+- learn.introduction-azure-web-application-firewall.3-how-azure-web-application-firewall-works
+- learn.introduction-azure-web-application-firewall.4-when-to-use-azure-web-application-firewall
 - learn.introduction-azure-web-application-firewall.5-knowledge-check
 - learn.introduction-azure-web-application-firewall.6-summary
 badge:
