@@ -66,7 +66,7 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
     
     main();
     ```
-1. Save the file. Use the "..." menu on the top right corner of the Cloud Shell editor.
+1. Save the file. Use the "..." menu on the top-right corner of the Cloud Shell editor.
 
 1. Run the app to make sure it executes correctly. It should display "Hello, World!" in the console.
 
