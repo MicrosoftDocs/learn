@@ -2,7 +2,7 @@ Moving to the cloud increases flexibility for employees and IT alike. However, i
 
 ## What is Cloud App Security?
 
-Microsoft Cloud App Security (MCAS) is a user-based subscription service that provides rich visibility and control over data travel and sophisticated analytics to identify and combat cyberthreats across all your cloud services. MCAS, which is powered powered by native integrations with industry-leading security and identity solutions, including Azure Active Directory, Intune, and Azure Information Protection, identifies and combats these threats by operating as an intermediary, or broker, between a cloud user and the cloud provider. 
+Microsoft Cloud App Security (MCAS) is a user-based subscription service that provides rich visibility and control over data travel and sophisticated analytics to identify and combat cyberthreats across all your cloud services. MCAS, which is powered powered <!--- Delete one copy of word "powered". ---> by native integrations with industry-leading security and identity solutions, including Azure Active Directory, Intune, and Azure Information Protection, identifies and combats these threats by operating as an intermediary, or broker, between a cloud user and the cloud provider. 
 
 MCAS is a **Cloud Access Security Broker** (CASB). CASBs are cloud-based security solutions that provide a layer of security to enable oversight and control of activities and information across public and custom cloud SaaS apps and IaaS services. CASBs are broken down into four key capability areas, including Shadow IT discovery, information protection, threat protection, and compliance. These capability areas represent the framework upon which MCAS is built.
 
