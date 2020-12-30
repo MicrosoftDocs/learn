@@ -6,7 +6,7 @@ Contoso IT staff are concerned about their web applications being the target of 
 
 After completing this module, you’ll understand the basics of Azure Web Application Firewall, Azure Web Application Firewall policies and rules, and the different ways that Azure Web Application Firewall can be deployed.  
 
-In this module, you... (explain what they do)
+In this module, you
 
 ## Learning objectives
 
