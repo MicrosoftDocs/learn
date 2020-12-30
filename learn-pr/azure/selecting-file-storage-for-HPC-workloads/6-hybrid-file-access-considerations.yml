@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.selecting-file-storage-for-HPC-workloads.6-hybrid-file-access-requirements
+title: Hybrid file access requirements
+metadata:
+  title: Hybrid file access requirements
+  description: Hybrid file access requirements
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-hybrid-file-access-requirements.md)]

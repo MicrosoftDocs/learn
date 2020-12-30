@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.store-app-data-with-azure-blob-storage.8-cleanup-next-steps-knowledge-check
-title: Clean up and knowledge check
+uid: learn.selecting-file-storage-for-HPC-workloads.8-next-steps-knowledge-check
+title: Next steps and knowledge check
 metadata:
-  title: Clean up and knowledge check
-  description: Clean up and knowledge check
-  ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  title: Next steps and knowledge check
+  description: Next steps and knowledge check
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-cleanup-next-steps-knowledge-check.md)]
+  [!include[](includes/8-next-steps-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:

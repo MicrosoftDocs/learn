@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.store-app-data-with-azure-blob-storage.3-design-organization-strategy
-title: Design a storage organization strategy
+uid: learn.selecting-file-storage-for-HPC-workloads.3-performance-considerations
+title: File system performance considerations
 metadata:
-  title: Design a storage organization strategy
-  description: Design a storage organization strategy
-  ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  title: File system performance considerations
+  description: File system performance considerations
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-design-organization-strategy.md)]
+  [!include[](includes/3-performance-considerations.md)]
 quiz:
   title: Check your knowledge
   questions:

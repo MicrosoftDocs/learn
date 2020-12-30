@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.selecting-file-storage-for-HPC-workloads.7-consolidating-your-requirements
+title: Consolidating your file system requirements
+metadata:
+  title: Consolidating your file system requirements
+  description: Consolidating your file system requirements
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/7-consolidating-your-requirements.md)]
