@@ -20,7 +20,7 @@ Azure Firewall is a cloud-based firewall service. In most configurations, Azure 
 
 All traffic to and from the Internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 
-:::image type="content" source="../media/what-is-azure-firewall.png" alt-text="Network diagram showing a hub virtual network, several spoke virtual networks, and an on-premises network, with all traffic to and from the Internet passing through an Azure Firewall instance in the hub network.":::
+:::image type="content" source="../media/3-firewall.png" alt-text="Network diagram showing a hub virtual network, several spoke virtual networks, and an on-premises network, with all traffic to and from the Internet passing through an Azure Firewall instance in the hub network.":::
 
 > [!NOTE]
 > Azure Firewall works not only for traffic to and from the Internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
@@ -49,14 +49,14 @@ Azure Firewall Manager provides a central point of configuration and management 
 
 The configuration of a single Azure Firewall can be extremely complex. For example, the firewall might be configured with multiple rule collections. A *collection* is a combination of any or all of the following items:
 
-* One or more network address translation (NAT) rules.
-* One or more network rules.
-* One or more application rules.
+- One or more network address translation (NAT) rules.
+- One or more network rules.
+- One or more application rules.
 
 When you include other firewall settings such as custom DNS and how you want the firewall to handle the threat intelligence rules, configuring just a single firewall can be a burden. Adding to that burden are two common network security scenarios:
 
-* Your network architectures require multiple firewalls.
-* You want each firewall to implement both a base level of security rules that apply to everyone, plus special rules for designated groups such as developers, database users, and the marketing department.
+- Your network architectures require multiple firewalls.
+- You want each firewall to implement both a base level of security rules that apply to everyone, plus special rules for designated groups such as developers, database users, and the marketing department.
 
 To simplify the complexity of managing these and similar firewall scenarios, you can implement firewall policies. A *firewall policy* is an Azure resource that contains one or more collections of NAT, network, and application rules, custom DNS settings, threat intelligence settings, and more.
 
@@ -81,5 +81,5 @@ The following table lists some key features of Azure Firewall Manager:
 
 Azure Firewall Manager provides security management for the following two network architectures:
 
-* Hub virtual network. This is a standard Azure virtual network where one or more firewall policies have been applied.
-* Secured virtual hub. This is an Azure Virtual WAN Hub where one or more firewall policies have been applied.
+- Hub virtual network. This is a standard Azure virtual network where one or more firewall policies have been applied.
+- Secured virtual hub. This is an Azure Virtual WAN Hub where one or more firewall policies have been applied.
