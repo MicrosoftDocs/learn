@@ -1,21 +1,21 @@
-Microsoft provides a set of solutions for data classification and data protection. These solutions work both on cloud resources, such as SharePoint Online, OneDrive for Business or Exchange Online, but also on locally deployed resources, such as local file servers. Azure Information Protection and Microsoft Information Protection and two main SKUs that provide technologies to classify and protect data.
+Microsoft provides a set of solutions for data classification and data protection. These solutions work both on cloud resources, such as SharePoint Online, OneDrive for Business or Exchange Online, but also on locally deployed resources, such as local file servers. Azure Information Protection and Microsoft Information Protection and <!--- Should this be "are" instead of "and"? Are AIP and MIP considered SKUs or they are rather considered features? ---> two main SKUs that provide technologies to classify and protect data.
 
 ## How Azure Information Protection works?
 
 Azure Information Protection (AIP) is a cloud-based solution that enables organizations to discover, classify, and protect documents and emails by applying labels to content and by encrypting the content. AIP is part of the Microsoft Information Protection (MIP) solution, and extends the labeling and classification functionality provided by Microsoft 365.
 
-The Azure Information Protection service (and Microsoft) don’t see or store your data as part of the information protection process. To help protect information, data is never sent or stored in Azure unless you intentionally store it there or use another cloud service that stores it in Azure. 
+The Azure Information Protection service (and Microsoft <!--- I'm not sure that it is clear that Microsoft here means "Microsoft Information Protection". I would suggest to use complete name, not just name Microsoft (which could be confused for the company name). ---> ) don’t see or store your data as part of the information protection process. To help protect information, data is never sent or stored in Azure unless you intentionally store it there or use another cloud service that stores it in Azure. 
 Azure Information Protection encrypts your data at the application level and includes a policy that defines the authorized use for that document. It decrypts the document and enforces the rights that are defined in the policy if a legitimate user or an authorized service accesses the data. It can also track document usage, so you can monitor both successful and unsuccessful attempts to use a document.
 A content key helps to protect an Azure Information Protection-protected document. This content key is unique for each document and is placed in the file header, where your Azure Information Protection tenant root key helps to protect it. Microsoft either generates or manages this tenant root key, or you can generate and manage your own tenant key.
 
 The protection process on the client works as follows:
-1.	The user prepares the user environment on the client in a one-time process by installing the Azure Information Protection client application.
+1.	The user prepares the user environment on the client in a one-time process by installing the Azure Information Protection client application. <!--- I know that in the past you had to install AIP client. But as far as I know, in more recent version of Office 365 apps, AIP labeling support is included and you don't need to install AIP client as a separate step. --->
 2.	The Azure Information Protection client connects to Azure Information Protection and authenticates the user with the user’s Azure AD account (This is also known as Microsoft 365 or Office 365 organizational account).
 3.	As soon as the user is authenticated, certificates are issued that allow the user to authenticate to Azure Information Protection to consume protected content and to protect content offline. A copy of the user’s certificate is stored in Azure Information Protection. This helps to ensure that if the user moves to another device, that user will have access to his or her protected data.
 4.	Now that the user is protecting data, the Azure Information Protection client creates a random content key and encrypts the document with it.
 5.	The Azure Information Protection client creates a certificate with an included policy. This policy is based on a template or specific document rights. The policy includes:
 o	Rights for users and groups.
-o	Restrictions such as read-only or an expiration date.
+o	Restrictions such as read-only or an expiration date. <!--- This two list items do not render correctly in the Preview (or at least in the preview that I see) - they are both in the same line. --->
 6.	After that, the organization’s key is used to encrypt the policy and the symmetric content key.
 7.	The Azure Information Protection client signs the policy with the user’s certificate.
 8.	The policy is embedded into a file with the body of the document previously encrypted.
@@ -37,7 +37,7 @@ Microsoft Information Protection is the common information protection stack that
 
 :::image type="content" source="../media/2-protect-from-file-explorer.png" alt-text="Image shows how File Explorer is used to protect a file.":::
 
-Microsoft Information Protection also includes components, such as:
+Microsoft Information Protection also includes components, such as: <!--- I'm not sure that we can say that AIP includes components in this list. For example, I don't think that MCAS is component of AIP. It is true that MCAS is aware of AIP and can work with AIP protected files, but I don't think that we can say that MCAS is component of AIP. --->
 
 - Office 365 Message Encryption
 - Sensitivity labels
