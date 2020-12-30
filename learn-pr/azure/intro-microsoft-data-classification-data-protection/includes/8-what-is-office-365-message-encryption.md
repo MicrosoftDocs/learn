@@ -10,7 +10,7 @@ Users can then encrypt email messages and a variety of attachments by using thes
 
 As an administrator, you can also define mail flow rules to apply this protection. For example, you can create a rule that requires the encryption of all messages addressed to a specific recipient, or that contains specific words in the subject line, and also specify that recipients can't copy or print the contents of the message.
 
-Unlike the previous version of OME, the new capabilities provide a unified sender experience whether you're sending mail inside your organization or to recipients outside of Microsoft 365. In addition, recipients who receive a protected email message sent to a Microsoft 365 account in Outlook 2016 or Outlook on the web, don't have to take any additional action to view the message. It works seamlessly. Recipients using other email clients and email service providers also have an improved experience. 
+Unlike the previous version of OME, the new capabilities provide a unified sender experience whether you're sending mail inside your organization or to recipients outside of Microsoft 365. In addition, recipients who receive a protected email message sent to a Microsoft 365 account in Outlook 2016 <!--- Should "or newer" be added? I assume that it applies also to Outlook 2019 ... ---> or Outlook on the web, don't have to take any additional action to view the message. It works seamlessly. Recipients using other email clients and email service providers also have an improved experience. 
 
 ### How Office 365 Message Encryption Works?
 
@@ -24,3 +24,4 @@ End users that read encrypted or rights-protected mail on clients other than Out
 
 If the sender of the protected mail is in GCC High and the recipient is outside of GCC High, including commercial users, Outlook.com users, and users of other email providers such as Gmail, the recipient receives a wrapper mail. The wrapper mail directs the recipient to the OME Portal where the recipient is able to read and reply to the message. Otherwise, if the sender and recipient are both in the GCC High environment, even if they're not in the same organization, then recipients that use Outlook clients to read mail receive native, first-class reading experiences for encrypted and rights-protected mail. For more information about the different experience in GCC High, see Compare versions of OME.
 
+<!--- I find it interesting that Office 365 OME encrypts only e-mails up to 25 MB. https://docs.microsoft.com/en-us/microsoft-365/compliance/ome-faq But this is probably not something to include in this topic. --->
