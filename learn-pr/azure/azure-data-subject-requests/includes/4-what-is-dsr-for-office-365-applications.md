@@ -27,6 +27,12 @@ Office 365 encompases many applications that have the potential to store user da
 
 One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for business subcription. The Office 365 admin portal can be used to locate the user's account. In the properites for the user account you can view thier product licensing. 
 
+**Compliance Boundaries**
+
+Compliance Boundaries can be created using the Security & Compliance Center. They are logical search boundaries that control locations that the people involved in the DSR execution can access. Some common use cases for compliance boundaries include:
+- geographical boundaries
+- governmental organizations agencies
+- Organizational units or department
 
 ## DSR response processes for Office 365 applications
 
@@ -35,12 +41,12 @@ The guidance for executing a DSR in Office 365 ("Office 365 Data Subject Request
 
 **Part 1: Responding to DSRs for Customer Data**
 
-Guideance on the execution of a DSR for customer data further organized into four sections:
+Guideance on the execution of a DSR for customer data is organized into four sections:
 
-1. Using the Content Search eDiscovery tool to respond to DSRs
-2. Using In-App functionality to respond to DSRs
-3. Responding to DSR rectification requests
-4. Responding to DSR restriction requests
+- Using the Content Search eDiscovery tool to respond to DSRs
+- Using In-App functionality to respond to DSRs
+- Responding to DSR rectification requests
+- Responding to DSR restriction requests
 
 > Microsoft estimates that over 90% of an organization's data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook.
 
@@ -56,11 +62,13 @@ To Do|Video|Visio|Word
 
 Documents authored in Word, Excel, PowerPoint, OneNote, and Outlook are most likely stored on a SharePoint Online site, in a user's OneDrive for Business account, or in a user's Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Microsoft 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating.
 
+You can use Compliance Boundaries together with eDiscovery cases to limit the content locations that can be searched in an investigation.
+
 The following table shows the applications where in-app functionality is used in Office 365.
 <!--"Not sure how to do a table without column headings"-->
 App Name|App Name|App Name|App Name
 ---|---|---|---
-Access|Business App for Office 365|Education|Flow
+Access|Education|Flow|Business App for Office 365
 Forms|Kaizala|Planner|Power Apps
 Power BI|Project|Publisher|Stream
 Yammer|||
@@ -102,8 +110,7 @@ A global IT admin needs to do the following to export system-generated log data 
 **Part 4: Additional resources to assist you with DSRs**
 
 There are various circumstances where your organization's users may use their work or school account (also referred to as "Azure Active Directory ID" or "AAD") to sign in to Microsoft products and services for which Microsoft is a data controller. For all such products and services, your users need to initiate their own data subject requests directly to Microsoft and Microsoft will fulfill the requests directly to the user. By design, products and services involving storage of user-authored content enable users to access, export, rectify, and delete their user-authored content as part of the inherent functionality of the products. Scenarios where this may apply include the following:
-
-- Optional connected online services:
+- Optional connected online services
 - User feedback
 - Windows authenticated via work or school account
 - User-acquired products or services
