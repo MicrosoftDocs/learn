@@ -1,4 +1,4 @@
-Advanced Threat Protection has been replaced with Azure Defender for Storage provides an additional layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. This layer of protection allows you to address threats without being a security expert or managing security monitoring systems.
+Azure Defender for Storage provides an additional layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. This layer of protection allows you to address threats without being a security expert or managing security monitoring systems.
 
 Security alerts are triggered when anomalies in activity occur. These security alerts are integrated with Azure Security Center, and are also sent via email to subscription administrators, with details of suspicious activity and recommendations on how to investigate and remediate threats.
 
@@ -33,4 +33,4 @@ When storage activity anomalies occur, you receive an email notification with in
 
 You can review and manage your current security alerts from Azure Security Center's Security alerts tile. Clicking on a specific alert provides details and actions for investigating the current threat and addressing future threats.
 
-![Viewing security anomolies details in Azure Defender for Security](../media/view-security-anomolies-details-in-azure-defender-for-security.png)
+    ![Viewing security anomolies details in Azure Defender for Security](../media/view-security-anomolies-details-in-azure-defender-for-security.png)
