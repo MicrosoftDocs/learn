@@ -1,10 +1,10 @@
-Regualations exist that provide rights to people (data subjects and consumers) to manage personal data that has been collected from them by organziations or employers (data controller or controller). In the European Union (EU) the General Data Protection Reguatlation (GDPR) provides these rights. In the United States, the California Consumer Privacy Act (CCPA) provides California consumers with these rights. 
+Regulations exist that provide rights to people (data subjects and consumers) to manage personal data that has been collected from them by organizations or employers (data controller or controller). In the European Union (EU) the General Data Protection Regulation (GDPR) provides these rights. In the United States, the California Consumer Privacy Act (CCPA) provides California consumers with these rights. 
 
-GDPR|CCPA
-----|----
-Effective May 25, 2018|Effective January 1, 2020
-Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information
-Penalties for non-compliance and breaches|Penalties for breaches and provisions for consumer lawsuits
+|GDPR|CCPA|
+|----|----|
+|Effective May 25, 2018|Effective January 1, 2020|
+|Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information|
+|Penalties for non-compliance and breaches|Penalties for breaches and provisions for consumer lawsuits|
 
 Reference: "Four differences between the GDPR and the CCPA" (www.helpnetsecurity.com)
 
@@ -19,7 +19,7 @@ Under the provisions of these regulations a person has the right to review, chan
 The CCPA additionally provides for:
 - certain disclosures
 - protections against discrimination
-- opt-out/opt-in requirment for sales related data transfers
+- opt-out/opt-in requirement for sales related data transfers
 
 When a data controller receives a DSR they are obligated to promptly consider each DSR and provide a substantive response either by taking the requested action, or by providing an explanation for why they can't accommodate the DSR. A controller should consult with their own legal or compliance advisers regarding the proper disposition of any given DSR. Completing a DSR might involve several processes that are subject to your organization's GDPR compliance rules.
 
@@ -39,7 +39,7 @@ It is possible to use the Microsoft products, service and administrative tools t
 
 - Exporting and receiving (portability). Provide an electronic copy of personal data or personal information in a machine-readable format to the data subject. Personal information under the CCPA is any information relating to an identified or identifiable person. There is no distinction between a person's private, public, or work role. The defined term, "personal information," corresponds with "personal data" under the GDPR. However, the CCPA also includes family and household data.
 
- In the following units we will introduce some of the technical proceedures used to respond to DSRs when personal data reides in the Microsoft cloud.
+ In the following units we will introduce some of the technical procedures used to respond to DSRs when personal data resides in the Microsoft cloud.
  
 ## DSR Terminology
 
