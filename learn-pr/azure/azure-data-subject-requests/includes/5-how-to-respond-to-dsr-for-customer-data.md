@@ -1,21 +1,21 @@
-Once a data controller receives a DSR, a response must be given as soon as possible. GDPR requires that a response is given in one calandar month. For example, if the request is recieved on January 1st, the response is required by February 1st. CCPA requires a response no later than 45 days. Failure to comply in the specified periods could incur severe monitary penalties. In order to respond efficiently to a DSR for customer data, organizations can follow the guidance from Microsoft and use the tools and in-app features avaialble in Office 365.
+Once a data controller receives a DSR, a response must be given as soon as possible. GDPR requires that a response is given in one calendar month. For example, if the request is received on January 1st, the response is required by February 1st. CCPA requires a response no later than 45 days. Failure to comply in the specified periods could incur severe monetary penalties. In order to respond efficiently to a DSR for customer data, organizations can follow the guidance from Microsoft and use the tools and in-app features available in Office 365.
 
 ## Scenarios for DSR in Azure and Office 365 for customer data
 
-The first step for all scenarios is to perfom discovery and locate the personal information in question. The next step will be determined by the action requested in the DSR. The technical process and tools used to execute the DSR will be determined by the location of the personal information and the data type. 
+The first step for all scenarios is to perform discovery and locate the personal information in question. The next step will be determined by the action requested in the DSR. The technical process and tools used to execute the DSR will be determined by the location of the personal information and the data type. 
 
 |Request Type|Step 1|Step 2|
 |------|------|------|
 |Right to Access Data|Discover|Access|
 |Right to Rectify Data|Discover|Rectify|
 |Right to Restrict Data|Discover|Restrict|
-|Right to be forgoten|Discover|Delete|
+|Right to be forgotten|Discover|Delete|
 |Right of portability|Discover|Export/Receive|
 
-Some DSRs may be more complex or there may even be multiple requests from the same person. Data controlers have the right to validate the identity of the data subject prior to executing thier DSR. However, the data subject does not have to specify the reason for the DSR.
+Some DSRs may be more complex or there may even be multiple requests from the same person. Data controllers have the right to validate the identity of the data subject prior to executing their DSR. However, the data subject does not have to specify the reason for the DSR.
 
 ### Example 1: DSR against customer data in Azure
-A customer of Contoso, Ltd that resides in France has called into the toll free number establised for DSRs. They want to enact their "**right to erasure**" also known as their "right to be forgotten". You need to remove all of their personal information from Azure.  In order to accomplish this you execute the following tasks for this DSR:
+A customer of Contoso, Ltd that resides in France has called into the toll free number established for DSRs. They want to enact their "**right to erasure**" also known as their "right to be forgotten". You need to remove all of their personal information from Azure.  In order to accomplish this you execute the following tasks for this DSR:
 
 1. Discover
     * Sign into the Azure portal
@@ -26,16 +26,16 @@ A customer of Contoso, Ltd that resides in France has called into the toll free 
 2. Delete
     * Sign into the Azure portal
     * Navigate to Azure Active Directory and select **Users**
-    * In the **All users** blade, select the checkbox next to the data subject's user account.
+    * In the **All users** blade, select the check-box next to the data subject's user account.
     * Select **Delete user**
-    * In the **Deleted users** blade, select the checkbox next to the data subject's user account.
+    * In the **Deleted users** blade, select the check-box next to the data subject's user account.
     * Select **Delete permanently** and then select **Yes** to confirm.
 
 
 > **Note:** Deleting this data also means deleting the user from the tenant. Users are initially soft-deleted, which means the account can be recovered by a tenant admin within 30 days of being marked for soft-delete. After 30 days, the account is automatically, and permanently, deleted from the tenant. Prior to that 30 days, you can manually delete a soft-deleted user from the recycle bin.
 
 ### Example 2: DSR against customer data in Office 365
-A customer of Contoso, Ltd that resides in California has submitted a Data Subject Request form on the company website. They want to gain access to their personal information that was provided to Contoso, Ltd in the form of emails and documents. You need to search for thier personal information and, if appropriate, provide them with **access** to that information or an explantion of why the information can not be provided.  In order to accomplish this you execute the following tasks for this DSR:
+A customer of Contoso, Ltd that resides in California has submitted a Data Subject Request form on the company website. They want to gain access to their personal information that was provided to Contoso, Ltd in the form of emails and documents. You need to search for their personal information and, if appropriate, provide them with **access** to that information or an explanation of why the information can not be provided.  In order to accomplish this you execute the following tasks for this DSR:
 
 1. Discover
     * Search all content locations with the Content Search tool using identifiers such as:
@@ -75,4 +75,4 @@ The following table lists tool that can be used for executing DSRs for customer 
 |Azure Portal| Can be used to respond to DSRs against Azure.|
 |Content Search eDiscovery tool|Located in the complance center of Office 365 and Microsoft 365. Used when executing DSRs againts Office 365 applications.|
 |DSR case tool|Located in the Security & Compliance Center. Can be used to manage investigations for a data subject.|
-|In-app functionality|For applications that do not support Content Search, applicaitons' can be used directly for responding to DSRs.|
+|In-app functionality|For applications that do not support Content Search, application can be used directly for responding to DSRs.|
