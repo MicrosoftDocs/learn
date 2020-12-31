@@ -2,9 +2,9 @@ Here, you learn the basic of Azure Web Application Firewall. This overview will 
 
 ## Overview of Azure Web Application Firewall
 
-Security researchers have shown that bots or malicious users probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, it's prudent to assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.
+You might you think malicious users won't bother with your web apps. However, tests have shown that bots or malicious actors probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.
 
-Most malicious tests of web apps look for the presence of one or more common vulnerabilities, such as the following exploits:
+Most malicious tests of web apps check for the presence of one or more common vulnerabilities, such as the following exploits:
 
 - SQL injection
 - Cross-site scripting
@@ -13,7 +13,7 @@ Most malicious tests of web apps look for the presence of one or more common vul
 
 A common task in the web app development cycle involves writing code to close the most common security holes. Writing that security code requires time, expertise, and lots of testing.
 
-Azure Web Application Firewall is an Azure service that provides centralized protection of Azure-hosted web apps. Azure Web Application Firewall is designed to protect web apps from common threats such as SQL injection and cross-site scripting.
+Azure Web Application Firewall is an Azure service that provides centralized protection of Azure-hosted web apps. Azure Web Application Firewall protects web apps from common threats such as SQL injection and cross-site scripting.
 
 :::image type="content" source="../media/2-web-application-firewall-description.png" alt-text="Network diagram showing an Azure virtual network that includes a web app and an instance of Azure Web Application Firewall. Bots and threats are blocked from the app, while legitimate requests are allowed.":::
 
@@ -28,15 +28,19 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 > [!NOTE]
 > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for you—for example, it blocks legitimate traffic to your web app—you can disable the rule.
 
-- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule. You can build custom rules by creating conditions that include variables such as RequestHeader or QueryString; HTTP request methods such as POST or PUT; operators such as Equal or Contains; and an action such as Allow or Block.
+- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
+  - Variables such as RequestHeader or QueryString
+  - HTTP request methods such as POST or PUT
+  - Operators such as Equal or Contains
+  - An action such as Allow or Block.
 
 > [!TIP]
 > Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
 
 - Modes. You can configure Azure Web Application Firewall to operate in one of two modes:
-  - Detection mode. Logs a request if the request matches one of Azure Web Application Firewall's rules. The request is allowed to proceed.
+  - Detection mode. Logs a request if the request matches one of Azure Web Application Firewall's rules. The request is allowed.
   - Prevention mode. Logs a request if the request matches one of Azure Web Application Firewall's rules and denies the request.
-- Alerts. Azure Web Application Firewall is integrated with Azure Monitor, which enables you to get near-real-time alerts when the firewall detects a threat.
+- Alerts. Azure Web Application Firewall integrates with Azure Monitor. This integration enables you to get near-real-time alerts when the firewall detects a threat.
 
 ## Common attacks prevented by Azure Web Application Firewall
 
@@ -45,7 +49,7 @@ Azure Web Application Firewall protects web apps by using rules. Each rule is de
 > [!IMPORTANT]
 > The CRS 3 rule sets are a big improvement over CRS 2 because they reduce false positives by more than 90 percent and include many new exploits. Therefore, you should select a CRS 3 set when you deploy Azure Web Application Firewall.
 
-To help you get a sense of the depth of protection offered by Azure Web Application Firewall, the following table lists the groups that comprise CRS 3.1.
+The following table lists the groups in CRS 3.1. This table should give you a sense of the depth of protection offered by Azure Web Application Firewall.
 
 |Rule group  |Description  |
 |---------|---------|
@@ -63,7 +67,7 @@ To help you get a sense of the depth of protection offered by Azure Web Applicat
 |REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION     |Detects application exploits that use session-fixation attacks         |
 |REQUEST-944-APPLICATION-ATTACK-SESSION-JAVA     |Detects application exploits that use JAVA attacks         |
 
-Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the following table lists the specific rules tha comprise the REQUEST-942-APPLICATION-ATTACK-SQLI rule group in CRS 3.1.
+Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the following table lists the specific rules in the REQUEST-942-APPLICATION-ATTACK-SQLI rule group of CRS 3.1.
 
 |Rule ID     |Detects   |
 |---------|---------|
