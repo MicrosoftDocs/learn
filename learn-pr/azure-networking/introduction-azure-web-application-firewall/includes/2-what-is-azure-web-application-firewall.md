@@ -1,4 +1,4 @@
-dHere, you learn the basic of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network security strategy.
+Here, you learn the basic of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network security strategy.
 
 ## Overview of Azure Web Application Firewall
 
@@ -9,9 +9,7 @@ Most malicious tests of web apps look for the presence of one or more common vul
 - SQL injection
 - Cross-site scripting
 - HTTP request smuggling
-- Remote file inclusion
-
-You learn about these and other common attacks a bit later.
+- Local and remote file inclusion
 
 A common task in the web app development cycle involves writing code to close the most common security holes. Writing that security code requires time, expertise, and lots of testing.
 
@@ -20,6 +18,12 @@ Azure Web Application Firewall is an Azure service that provides centralized pro
 You can deploy Azure Web Application Firewall in minutes. Your web apps are immediately protected from known threats, all without writing a single line of security code.
 
 ## Key features of Azure Web Application Firewall
+
+Managed rules
+Custom rules
+Bot protection
+Geo-filtering
+Modes
 
 ## Common attacks prevented by Azure Web Application Firewall
 
@@ -50,7 +54,7 @@ Each group is a collection of rules designed to detect and thwart a specific exp
 
 |Rule Id     |Description   |
 |---------|---------|
-|942100     |SQL Injection Attack Detected via libinjection         |
+|942100     |SQL Injection Attack Detected via libinjection, an open-source SQL injection detection library         |
 |942110     |SQL Injection Attack: Common Injection Testing Detected         |
 |942130     |SQL Injection Attack: SQL Tautology Detected.         |
 |942140     |SQL Injection Attack = Common DB Names Detected         |
@@ -70,23 +74,10 @@ Each group is a collection of rules designed to detect and thwart a specific exp
 |942330     |Detects classic SQL injection probings 1/2         |
 |942340     |Detects basic SQL authentication bypass attempts 3/3         |
 |942350     |Detects MySQL UDF injection and other data/structure manipulation attempts         |
-|942360     |Detects concatenated basic SQL injection and SQLLFI attempts         |
+|942360     |Detects concatenated basic SQL injection and SQLLFI (SQL local file inclusion)attempts         |
 |942370     |Detects classic SQL injection probings 2/2         |
 |942410     |SQL Injection Attack         |
 |942430     |Restricted SQL Character Anomaly Detection (args): # of special characters exceeded (12)         |
 |942440     |SQL Comment Sequence Detected.         |
 |942450     |SQL Hex Encoding Identified         |
-|942460     |Meta-Character Anomaly Detection Alert - Repetitive Non-Word Characters         |
-
-SQL Injection (SQLi)
-Cross Site Scripting (XSS)
-Local File Inclusion (LFI)
-Remote File Inclusion (RFI)
-PHP Code Injection
-Java Code Injection 	
-HTTPoxy
-Shellshock
-Unix/Windows Shell Injection
-Session Fixation
-Scripting/Scanner/Bot Detection
-Metadata/Error Leakages
+|942460     |Meta-Character Anomaly Detection Alert-Repetitive Non-Word Characters         |
