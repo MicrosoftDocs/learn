@@ -32,15 +32,15 @@ Microsoft hosts and manages all the components that make up this service.  It is
 
 - Enables any-to-any connectivity to workloads distributed globally in VNets.
 - Connects:
-    - Working at home and mobile users using Point-to-Site VPN,
-    - Branch offices using Site-to-Site VPN,
-    - Main campuses and data centers using ExpressRoute for private connections.
+  - Working at home and mobile users using Point-to-Site VPN,
+  - Branch offices using Site-to-Site VPN,
+  - Main campuses and data centers using ExpressRoute for private connections.
 
 Virtual WAN hubs enabled in Azure regions function as networking hubs. These hubs are connected in full mesh integration. This integration supports any-to-any connectivity access to workloads that are globally distributed.
 
 To get started with a virtual WAN:
 
-- Create a single virtual WAN in an Azure region that currently supports many spokes. 
+- Create a single virtual WAN in an Azure region that currently supports many spokes.
 - Connect the regional spokes to the hub, then connect the other regions to the hub. The hubs become the connection points for regional connectivity.
 
 ## Azure Virtual WAN hubs
