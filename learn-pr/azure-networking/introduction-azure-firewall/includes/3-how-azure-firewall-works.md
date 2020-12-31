@@ -46,7 +46,7 @@ The following table describes the three types of rules you can create for an Azu
 |NAT     |Enables you to translate and filter inbound Internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine, you might use a NAT rule to translate your firewall's public IP address and port 3389 to the private IP address of the virtual machine.        |
 |Application     |Enables you to filter traffic based on an FQDN. For example, you might use an application rule to allow outbound traffic to access an Azure SQL Database instance using the FQDN *server10.database.windows.net*.         |
 |Network     |Enables you to filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, you might use a network rule to allow outbound traffic to access a particular DNS server at a specified IP address using port 53.
-
+<!-- Might be worth specifying "TCP 3389". -->
 :::image type="content" source="../media/3-firewall-operation.png" alt-text="Network diagram showing an external computer requesting a remote desktop connection with a virtual machine and Azure Firewall translating its public IP address to the virtual machine's private IP address.":::
 
 > [!IMPORTANT]
