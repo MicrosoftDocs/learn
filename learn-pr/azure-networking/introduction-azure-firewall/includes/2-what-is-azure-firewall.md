@@ -3,7 +3,7 @@ Here you learn the basics of both Azure Firewall and Azure Firewall Manager. Thi
 ## Overview of Azure Firewall
 
 Azure Firewall is a cloud-based security service that protects your Azure virtual network resources from incoming and outgoing threats. In the next few sections, you learn the fundamentals and key features of Azure Firewall.
-
+<!-- Missing "will". Sentece should be "In the next few sections, you will learn the fundamentals and key features of Azure Firewall." -->
 ### What is a firewall?
 
 A *firewall* is a network security feature that sits between a trusted network and an untrusted network, such as the Internet. The firewall's job is to analyze all incoming and outgoing network traffic. Based on that analysis, the firewall either allows the traffic to pass, or it denies the traffic. Ideally, the firewall allows all legitimate traffic while denying malicious traffic such as malware and intrusion attempts.
