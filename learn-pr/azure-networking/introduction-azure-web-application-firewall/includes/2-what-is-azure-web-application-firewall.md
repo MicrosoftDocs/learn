@@ -2,7 +2,7 @@ Here, you learn the basic of Azure Web Application Firewall. This overview will 
 
 ## Overview of Azure Web Application Firewall
 
-Security researchers have shown that new web apps are probed for weaknesses by bots or malicious users within minutes of being deployed. If you put an app on the web, it's prudent to assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume that such probes will continue for the lifetime of the app.
+Security researchers have shown that bots or malicious users probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, it's prudent to assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.
 
 Most malicious tests of web apps look for the presence of one or more common vulnerabilities, such as the following exploits:
 
@@ -28,15 +28,15 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 > [!NOTE]
 > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for you—for example, it blocks legitimate traffic to your web app—you can disable the rule.
 
-- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule. You can build custom rules by creating conditions that include variables (such as RequestHeader or QueryString), HTTP request methods (such as POST or PUT), operators (such as Equal or Contains), and an action (such as Allow or Block).
+- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule. You can build custom rules by creating conditions that include variables such as RequestHeader or QueryString; HTTP request methods such as POST or PUT; operators such as Equal or Contains; and an action such as Allow or Block.
 
 > [!TIP]
 > Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
 
 - Modes. You can configure Azure Web Application Firewall to operate in one of two modes:
-    - Detection mode. Logs a request if the request matches one of Azure Web Application Firewall's rules. The request is allowed to proceed.
-    - Prevention mode. Logs a request if the request matches one of Azure Web Application Firewall's rules and denies the request.
-- Alerts. Azure Web Application Firewall is integrated with Azure Monitor, which enables you to get near-real-time alerts when a firewall threat is detected.
+  - Detection mode. Logs a request if the request matches one of Azure Web Application Firewall's rules. The request is allowed to proceed.
+  - Prevention mode. Logs a request if the request matches one of Azure Web Application Firewall's rules and denies the request.
+- Alerts. Azure Web Application Firewall is integrated with Azure Monitor, which enables you to get near-real-time alerts when the firewall detects a threat.
 
 ## Common attacks prevented by Azure Web Application Firewall
 
