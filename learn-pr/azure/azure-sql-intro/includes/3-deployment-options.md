@@ -28,7 +28,7 @@ Companies around the world have used SQL Server on virtual machines. One example
 
 ## IaaS vs. PaaS
 
-SQL Server on a virtual machine is considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance and Azure SQL Database, are platform as a service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions, like upgrading, patching, backups, and monitoring. Here are some key features of SQL Manged Instance and SQL Database:  
+SQL Server on a virtual machine is considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance and Azure SQL Database, are platform as a service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions, like upgrading, patching, backups, and monitoring. Here are some key features of SQL Managed Instance and SQL Database:  
 
 - **Business continuity** enables your business to continue operating in the face of disruption.
 
