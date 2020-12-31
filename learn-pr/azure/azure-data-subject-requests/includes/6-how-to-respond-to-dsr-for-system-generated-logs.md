@@ -44,7 +44,16 @@ A customer of Contoso, Ltd that resides in the Netherlands has submitted a DSR f
     * In the **Deleted users** blade, select the check-box next to the data subject's user account.
     * Select **Delete permanently** and then select **Yes** to confirm.
 
-You may have noticed, in example 2, that the same process was used to satisfy the delete requests for personal data in Azure. The system-generated logs that contain the data subject's personal data will be deleted, along with the user, as long as it does not negatively impact the security or integrity the Microsoft cloud.
+You may have noticed, in example 2, that the same process was used to satisfy the delete requests for personal data in Azure. The users personal data contained in the system-generated logs will be deleted, along with the user account, as long as it does not negatively impact the security or integrity the Microsoft cloud.
+
+**National clouds**
+In the event that Contoso, Ltd were to have a global presence in one or more national clouds, their tenant admin will need to do the following in order to execute an export request for system-generated logs:
+
+|National Cloud|Export Steps|
+|---|---|
+|Office 365 Germany|Same steps previously described|
+|Office 365 US Government|Go to the Office 365 admin portal and submit a request to Microsoft Support|
+|Office 365 operated by 21Vianet (China)|Go to the Office 365 operated by 21Vianet admin portal and then go to **Commerce > Subscription > Privacy > GDPR** and enter the required information|
 
 ## Tools used for DSR for system-generated logs
 
