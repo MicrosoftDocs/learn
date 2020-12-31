@@ -19,11 +19,22 @@ You can deploy Azure Web Application Firewall in minutes. Your web apps are imme
 
 ## Key features of Azure Web Application Firewall
 
-Managed rules
-Custom rules
-Bot protection
-Geo-filtering
-Modes
+To help you evaluate Azure Web Application Firewall, here are some of its important features:
+
+- Managed rules. The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a rule set (described below) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
+
+> [!NOTE]
+> You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for you—for example, it blocks legitimate traffic to your web app—you can disable the rule.
+
+- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule. You can build custom rules by creating conditions that include variables (such as RequestHeader or QueryString), HTTP request methods (such as POST or PUT), operators (such as Equal or Contains), and an action (such as Allow or Block).
+
+> [!TIP]
+> Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
+
+- Modes. You can configure Azure Web Application Firewall to operate in one of two modes:
+    - Detection mode. Logs a request if the request matches one of Azure Web Application Firewall's rules. The request is allowed to proceed.
+    - Prevention mode. Logs a request if the request matches one of Azure Web Application Firewall's rules and denies the request.
+- Alerts. Azure Web Application Firewall is integrated with Azure Monitor, which enables you to get near-real-time alerts when a firewall threat is detected.
 
 ## Common attacks prevented by Azure Web Application Firewall
 
@@ -46,38 +57,38 @@ To help you get a sense of the depth of protection offered by Azure Web Applicat
 |REQUEST-932-APPLICATION-ATTACK-RCE     |Detects application exploits that use remote code execution (RCE) attacks         |
 |REQUEST-933-APPLICATION-ATTACK-PHP     |Detects application exploits that use PHP-injection attacks         |
 |REQUEST-941-APPLICATION-ATTACK-XSS     |Detects application exploits that use cross-site scripting (XSS) attacks         |
-|REQUEST-942-APPLICATION-ATTACK-SQLI     |Detects application exploits that use SQL-injection (SQLi)attacks         |
+|REQUEST-942-APPLICATION-ATTACK-SQLI     |Detects application exploits that use SQL-injection (SQLi) attacks         |
 |REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION     |Detects application exploits that use session-fixation attacks         |
 |REQUEST-944-APPLICATION-ATTACK-SESSION-JAVA     |Detects application exploits that use JAVA attacks         |
 
 Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the following table lists the specific rules tha comprise the REQUEST-942-APPLICATION-ATTACK-SQLI rule group in CRS 3.1.
 
-|Rule Id     |Description   |
+|Rule ID     |Detects   |
 |---------|---------|
-|942100     |SQL Injection Attack Detected via libinjection, an open-source SQL injection detection library         |
-|942110     |SQL Injection Attack: Common Injection Testing Detected         |
-|942130     |SQL Injection Attack: SQL Tautology Detected.         |
-|942140     |SQL Injection Attack = Common DB Names Detected         |
-|942150     |SQL Injection Attack         |
-|942160     |Detects blind SQLi tests using sleep() or benchmark()         |
-|942170     |Detects SQL benchmark and sleep injection attempts including conditional queries         |
-|942190     |Detects MSSQL code execution and information gathering attempts         |
-|942200     |Detects MySQL comment-/space-obfuscated injections and backtick termination         |
-|942230     |Detects conditional SQL injection attempts         |
-|942260     |Detects basic SQL authentication bypass attempts 2/3         |
-|942251     |Detects HAVING injections         |
-|942270     |Looking for basic sql injection. Common attack string for mysql oracle and others.         |
-|942290     |Finds basic MongoDB SQL injection attempts         |
-|942300     |Detects MySQL comments, conditions and ch(a)r injections         |
-|942310     |Detects chained SQL injection attempts 2/2         |
-|942320     |Detects MySQL and PostgreSQL stored procedure/function injections         |
-|942330     |Detects classic SQL injection probings 1/2         |
-|942340     |Detects basic SQL authentication bypass attempts 3/3         |
-|942350     |Detects MySQL UDF injection and other data/structure manipulation attempts         |
-|942360     |Detects concatenated basic SQL injection and SQLLFI (SQL local file inclusion)attempts         |
-|942370     |Detects classic SQL injection probings 2/2         |
-|942410     |SQL Injection Attack         |
-|942430     |Restricted SQL Character Anomaly Detection (args): # of special characters exceeded (12)         |
-|942440     |SQL Comment Sequence Detected.         |
-|942450     |SQL Hex Encoding Identified         |
-|942460     |Meta-Character Anomaly Detection Alert-Repetitive Non-Word Characters         |
+|942100     |SQL injection attack using libinjection, an open-source SQL injection detection library         |
+|942110     |SQL injection attack: common injection         |
+|942130     |SQL injection attack: SQL tautology         |
+|942140     |SQL injection attack: Common database names         |
+|942150     |SQL injection attack         |
+|942160     |Blind SQLi tests using sleep() or benchmark()         |
+|942170     |SQL benchmark and sleep injection attempts including conditional queries         |
+|942190     |MSSQL code execution and information gathering attempts         |
+|942200     |MySQL comment-/space-obfuscated injections and backtick termination         |
+|942230     |Conditional SQL injection attempts         |
+|942260     |Basic SQL authentication bypass attempts 2/3         |
+|942251     |HAVING injections         |
+|942270     |Basic SQL injection: Common attack string for mysql oracle and others         |
+|942290     |Basic MongoDB SQL injection attempts         |
+|942300     |MySQL comments, conditions, and chr/char injections         |
+|942310     |Chained SQL injection attempts 2/2         |
+|942320     |MySQL and PostgreSQL stored procedure/function injections         |
+|942330     |Classic SQL injection probings 1/2         |
+|942340     |Basic SQL authentication bypass attempts 3/3         |
+|942350     |MySQL UDF injection and other data/structure manipulation attempts         |
+|942360     |Concatenated basic SQL injection and SQLLFI (SQL local file inclusion) attempts         |
+|942370     |Classic SQL injection probings 2/2         |
+|942410     |SQL injection attack         |
+|942430     |Restricted SQL character anomaly (args): number of special characters exceeded (12)         |
+|942440     |SQL comment sequence         |
+|942450     |SQL hex encoding         |
+|942460     |Meta-character anomaly-repetitive non-word characters         |
