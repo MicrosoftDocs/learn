@@ -1,12 +1,10 @@
-A few intro sentences. Do not add a heading to these md files.
+Azure Web Application Firewall is an Azure service that provides centralized protection of web applications from common attacks such as SQL injection and cross-site scripting.
 
-Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. Most of its compute environment runs as Azure Virtual Network resources. These resources include several web applications that serve customers, vendors, and employees.
+Suppose you work for Contoso, Ltd., a financial services company in Seattle with major offices located throughout the world. Contoso's compute environment runs as Azure virtual network resources. These resources include several web applications that serve customers, vendors, and employees.
 
-Contoso IT staff are concerned about their web applications being the target of malicious attacks that use common exploits, such as SQL injection. As a Contoso web development program manager, it's your responsibility to research and implement Azure Web Application Firewall to protect your company's web applications from attacks that exploit common vulnerabilities.
+Contoso IT staff are concerned about their web applications being the target of malicious attacks that use common exploits, such as SQL injection. Suppose you're a Contoso web development program manager. You're responsible for researching and recommending a web application security solution. In particular, you've been asked to evaluate Azure Web Application Firewall as a method of protecting your company's web apps from attacks that exploit common vulnerabilities.
 
-After completing this module, you’ll understand the basics of Azure Web Application Firewall, Azure Web Application Firewall policies and rules, and the different ways that Azure Web Application Firewall can be deployed.  
-
-In this module, you
+In this module, you'll learn the basics of Azure Web Application Firewall. Those basics consist of what it is, how it works, and when you should use it. By the end of this module, you’ll be able to evaluate whether Azure Web Application Firewall is a suitable solution for protecting Contoso's web applications from common vulnerabilities.
 
 ## Learning objectives
 
@@ -20,6 +18,6 @@ In this module, you will:
 
 To get the best learning experience from this module, you should have:
 
-- Beginner-level knowledge of Azure, including Azure virtual networks, Azure App Service, Azure Front Door, and Azure Application Gateway. 
-- Beginner-level knowledge of networking, including IP addresses, HTTP/HTTPS request parameters, and HTTP request methods. 
-- Beginner-level knowledge of cloud computing, including availability, scalability, and web applications.  
+- Beginner-level knowledge of Azure, including Azure virtual networks, Azure App Service, Azure Front Door, and Azure Application Gateway.
+- Beginner-level knowledge of networking, including IP addresses, HTTP/HTTPS request parameters, and HTTP request methods.
+- Beginner-level knowledge of cloud computing, including availability and web applications.  
