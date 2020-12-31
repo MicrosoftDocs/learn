@@ -1,4 +1,4 @@
-You're familiar with the basic features of both Azure Firewall and Azure Firewall Manager. Now let's see how these technologies work to provide security for your Azure resources. This information will help you evaluate whether Azure Firewall is the right tool for Contoso's network security strategy.
+You're familiar with the basic features of both Azure Firewall and Azure Firewall Manager. Now let's examine how these technologies work to provide security for your Azure resources. This information will help you evaluate whether Azure Firewall is the right tool for Contoso's network security strategy.
 
 ## How Azure Firewall protects an Azure virtual network
 
@@ -28,7 +28,7 @@ Azure Firewall is best deployed using a *hub and spoke* network topology with th
 
 You deploy the firewall instance in a subnet of the hub virtual network and then configure all inbound and outbound traffic to go through the firewall.
 
-From a practical viewpoint, you follow the general steps given below to set up an instance of Azure Firewall:
+From a practical standpoint, you follow the general steps given below to set up an instance of Azure Firewall:
 
 1. Create a hub virtual network that includes a subnet for the firewall deployment.
 1. Create the spoke virtual networks and their subnets and servers.

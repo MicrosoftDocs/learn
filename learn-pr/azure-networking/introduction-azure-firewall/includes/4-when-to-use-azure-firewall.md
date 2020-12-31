@@ -12,7 +12,7 @@ As part of your evaluation of Azure Firewall and Azure Firewall Manager, you kno
 
 ## You want to protect your network against infiltration
 
-A common goal of many malicious actors is to infiltrate your network. These intruders might want to use your network resources or view, steal, or destroy sensitive or proprietary data.
+A common goal of many malicious actors is to infiltrate your network. These intruders might want to use your network resources or examine, steal, or destroy sensitive or proprietary data.
 
 Azure Firewall is designed to help prevent such intrusions. For example, an attacker might try to infiltrate the network by requesting access to a network resource. Azure Firewall uses stateful inspection of network packets to examine the context of such requests. If a request is a response to earlier legitimate activity, then the firewall will likely allow the request; if a request came seemingly out of nowhere—as would the request sent by a would-be infiltrator—then the firewall would deny the request.
 
@@ -47,7 +47,7 @@ An easier and more secure solution is to use Azure Firewall to set up direct con
 
 ## You want to monitor incoming and outgoing traffic
 
-Your company might want to view detailed reports on inbound and outbound network traffic. There are many reasons for requiring such reports, including regulatory compliance, enforcing company policies on Internet usage, and troubleshooting problems.
+Your company might want to analyze detailed reports on inbound and outbound network traffic. There are many reasons for requiring such reports, including regulatory compliance, enforcing company policies on Internet usage, and troubleshooting problems.
 
 You can configure Azure Firewall to maintain diagnostic logs of four types of firewall activity:
 
@@ -66,9 +66,9 @@ Similarly, the log for your firewall's network rules might include entries such 
 
 Once you've enabled diagnostic logging, you can monitor and analyze the logs in the following ways:
 
-- You can view the logs directly in their native JSON format.
-- You can view the logs in Azure Monitor.
-- You can view and analyze the logs in Azure Firewall Workbook.
+- You can examine the logs directly in their native JSON format.
+- You can examine the logs in Azure Monitor.
+- You can examine and analyze the logs in Azure Firewall Workbook.
 
 ## Your network requires multiple firewalls
 
