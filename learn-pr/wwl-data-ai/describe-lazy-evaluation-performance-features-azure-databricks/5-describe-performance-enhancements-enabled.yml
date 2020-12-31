@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-describe-performance-enhancements-enabled.md)]
+  [!include[](includes/5-describe-performance-enhancements-enabled.md)]

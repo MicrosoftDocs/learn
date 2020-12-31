@@ -4,7 +4,7 @@ Open the **2.Actions-and-transformations** notebook. Make sure you attach your c
 
 Within the notebook, you will:
 
-- Define and identify transformations
 - Define and identify actions
+- Define and identify transformations
 
 After you've completed the notebook, return to this screen, and continue to the next step.
