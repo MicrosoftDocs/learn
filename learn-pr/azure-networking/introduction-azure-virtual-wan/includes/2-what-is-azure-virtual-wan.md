@@ -59,11 +59,16 @@ The following image shows an Azure Virtual WAN deployment with two Virtual hubs 
 
 ## Secure virtual hub
 
-To convert the virtual hub to a secure virtual hub, use Azure Firewall Manager. The firewall rules, created by the Firewall Manager allows for the creation of security and routing policies for network traffic. Data flowing from the internet, private IP addresses, or Azure platform services can be filtered.
+To convert the virtual hub to a secure virtual hub, use Azure Firewall Manager.
+
+Firewall rules, created by the Firewall Manager allows for the creation of security and routing policies for network traffic. Data flowing from the internet, private IP addresses, or Azure platform services can be filtered.
 
 >[!NOTE]
 > User defined routes are not needed to route traffic through the firewall.
 
-The secure virtual hub supports the provisioning of two security providers: Azure Firewall for private traffic, and third-party security providers that are integrated with Firewall Manager.
+The secure virtual hub supports the provisioning of two security providers:
 
-Virtual hubs or secure virtual hubs are the regional connection points for a virtual WAN. They support multiple service endpoints that provide for connectivity between networks and services. They're the core of networking for each region.
+- Azure Firewall for private traffic,
+- third-party security providers that are integrated with Firewall Manager.
+
+Virtual hubs or secure virtual hubs are the regional connection points for a virtual WAN. These hubs support multiple service endpoints. The endpoints provide for connectivity between networks and services. They're the core of networking for each region.
