@@ -6,7 +6,7 @@ Regulations exist that provide rights to people (data subjects and consumers) to
 |Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information|
 |Penalties for non-compliance and breaches|Penalties for breaches and provisions for consumer lawsuits|
 
-Reference: "Four differences between the GDPR and the CCPA" (www.helpnetsecurity.com)
+Reference: "Four differences between the GDPR and the CCPA" (www.helpnetsecurity.com) <!--- If I know correctly, reference URLs and URLs that provide additional information/reading should be (only?) in the last topic. Personally I'm OK if URLs are included also in other topics, but IDs will decide if that is allowed/acceptable. ---> 
 
 ## What is a data subject request?
 
@@ -21,7 +21,7 @@ The CCPA additionally provides for:
 - protections against discrimination
 - opt-out/opt-in requirement for sales related data transfers
 
-When a data controller receives a DSR they are obligated to promptly consider each DSR and provide a substantive response either by taking the requested action, or by providing an explanation for why they can't accommodate the DSR. A controller should consult with their own legal or compliance advisers regarding the proper disposition of any given DSR. Completing a DSR might involve several processes that are subject to your organization's GDPR compliance rules.
+When a data controller receives a DSR they are obligated to promptly consider each DSR and provide a substantive response either by taking the requested action, or by providing an explanation for why they can't accommodate the DSR. A controller should consult with their own legal or compliance advisers regarding the proper disposition of any given DSR. Completing a DSR might involve several processes that are subject to your organization's GDPR compliance rules. <!--- If this is not GDPR specific, I would suggest to update to "... organization's GDPR or CCPA compliance rules". ---> 
 
 ## DSR Process
 
@@ -33,7 +33,7 @@ It is possible to use the Microsoft products, service and administrative tools t
 
 - Rectification. Make changes or implement other requested actions on the personal data, where applicable.
 
-- Restriction. Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+- Restriction. Restrict the processing of personal data, either by removing licenses for various Azure services or turning off the desired services where possible. <!--- Is this explanation supposed to be Microsoft Azure specific? Or it would make sense to add a sentence about Microsoft 365/Office 365? Or that is the intention of the next sentence? ---> You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 
 - Deletion. Permanently remove personal data that resides in the Microsoft cloud.
 
