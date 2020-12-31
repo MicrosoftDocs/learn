@@ -18,25 +18,25 @@ Many organizations choose to manage their user identities in on-premises deploym
 - SharePoint hybrid deployments, where site and file servers are on-premises and OneDrive for Business accounts are in Office 365
 - The on-premises identity management system (Active Directory) that is synchronized with Azure Activity Directory, which is the underlying directory service in Office 365.
 
-In a hybrid deployment the scope will vary based on the data that is responsive to a specific data subject's DSR. It will be up to the controller to determine if the response must come from the cloud or from on-premises. While this module focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. See "GDPR for Office on-premises Servers" https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-for-office-servers 
+In a hybrid deployment the scope will vary based on the data that is responsive to a specific data subject's DSR. It will be up to the controller to determine if the response must come from the cloud or from on-premises. While this module focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. See "GDPR for Office on-premises Servers" https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-for-office-servers <!--- If I know correctly, reference URLs and URLs that provide additional information/reading should be (only?) in the last topic. Personally I'm OK if URLs are included also in other topics, but IDs will decide if that is allowed/acceptable. --->
 
 **In-scope Applications**
 
 Office 365 encompass many applications that have the potential to store user data. Knowing which applications that the data subject uses will help narrow down what is in-scope for the DSR response. Depending on the application, you may be able to use the Content Search tool to respond. In some cases however, you'll have to use the in-app functionality to get to the data.
 
 
-One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for business subscription. The Office 365 admin portal can be used to locate the user's account. In the properties for the user account you can view their product licensing. 
+One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for business subscription. The Office 365 admin portal <!--- Portal is renamed; its name is Microsoft 365 admin center. ---> can be used to locate the user's account. In the properties for the user account you can view their product licensing. 
 
 **Compliance Boundaries**
 
-Compliance Boundaries can be created using the Security & Compliance Center. They are logical search boundaries that control locations that the people involved in the DSR execution can access. Some common use cases for compliance boundaries include:
+Compliance Boundaries can be created using the Security & Compliance Center. <!--- Although Security & Compliance Center is still available, Microsoft introduced two separate portals, Security Center and Compliance Center. Not all Security & Compliance Center is available in those two newer portals, but my understanding is that Microsoft preferes to reference newer portals (Compliance Center in this case). I would suggest to replace Security & Compliance Center with Compliance Center, except you are explicitely talking about some functionality that can be performed only in Security & Compliance Center (it is not jet available in Compliance Center). --->  They are logical search boundaries that control locations that the people involved in the DSR execution can access. Some common use cases for compliance boundaries include:
 - geographical boundaries
 - governmental organizations agencies
 - Organizational units or department
 
 ## DSR response processes for Office 365 applications
 
-The guidance for executing a DSR in Office 365 ("Office 365 Data Subject Requests for the GDPR and CCPA" https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-office365 ) is broken into four parts. The high-level execution tasks differ based on the data type,  application, and the request type. Parts 1-3 detail the technical capabilities available to an organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
+The guidance for executing a DSR in Office 365 ("Office 365 Data Subject Requests for the GDPR and CCPA" https://docs.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-office365 ) <!--- As commented earlier, I'm not sure if URLs are allowed in topic other than the last one. If they are not allowed, first sentence in this paragraph needs to be rephrased. ---> is broken into four parts. The high-level execution tasks differ based on the data type,  application, and the request type. Parts 1-3 detail the technical capabilities available to an organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
 
 
 **Part 1: Responding to DSRs for Customer Data**
@@ -103,7 +103,7 @@ The execution of a DSR for system-generated logs can include:
 
 A global IT admin needs to do the following to export system-generated log data in the following national clouds:
 - Office 365 Germany: Same steps as Office 365.
-- Office 365 US Government: Go to the Office 365 admin portal and submit a request to Microsoft Support.
+- Office 365 US Government: Go to the Office 365 admin portal <!--- I don't have access to US Government or 21Vianet cloud, but I'm guessing that portal there has also been renamed to Microsoft 365 admin center,  as it was in publicly accessable Office 365. ---> and submit a request to Microsoft Support.
 - Office 365 operated by 21Vianet (China): Go to the Office 365 operated by 21Vianet admin portal and then go to **Commerce > Subscription > Privacy > GDPR** and enter the required information.
 
 **Part 4: Additional resources to assist you with DSRs**
