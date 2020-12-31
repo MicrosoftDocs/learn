@@ -27,7 +27,7 @@ A customer of Contoso, Ltd that resides in France has called into the toll free 
     * Sign into the Azure portal
     * Navigate to Azure Active Directory and select **Users**
     * In the **All users** blade, select the check-box next to the data subject's user account.
-    * Select **Delete user**
+    * Select **Delete user** <!--- Here you should add  "and then select **Yes** to confirm.", as you get prompted in the same way as in the last step, when you want to permanently delete the user. ---> 
     * In the **Deleted users** blade, select the check-box next to the data subject's user account.
     * Select **Delete permanently** and then select **Yes** to confirm.
 
@@ -48,12 +48,12 @@ A customer of Contoso, Ltd that resides in California has submitted a Data Subje
         - Message type (\*email, \*contacts)
         - Compliance tag (compliancetag="personal data")
     * Search for data in SharePoint Online and OneDrive for Business with queries such as:
-        - datasubject@contoso.com AND filetype="docx"
+        - datasubject@contoso.com AND filetype="docx" <!--- It should be probably clear to the reader, but in the first list item you used just "Email address", while here you use actual e-mail address (and both means the same). I would suggest to add this sample e-mail address (datasubject@contoso.com) as an example also to the first list item. ---> 
         - (11-18-1990) AND (kind="email") 
         - Save the Content Search for additional steps
 2. Access
     * Provide Access by retrieving a copy of document or item that contains responsive data using preview and download items:
-        - In the Security & Compliance Center, open Content Search
+        - In the Security & Compliance Center, open Content Search <!--- Content Search, as well as Data subject requests, are available in Compliance Center. Because of that I would suggest to replace Security & Compliance Center with Compliance Center. ---> 
         - Select Preview results
         - Select an item
         - Select Download original file
@@ -73,6 +73,6 @@ The following table lists tool that can be used for executing DSRs for customer 
 |Tool Name|Description|
 |------|------|
 |Azure Portal| Can be used to respond to DSRs against Azure.|
-|Content Search eDiscovery tool|Located in the complance center of Office 365 and Microsoft 365. Used when executing DSRs againts Office 365 applications.|
-|DSR case tool|Located in the Security & Compliance Center. Can be used to manage investigations for a data subject.|
+|Content Search eDiscovery tool|Located in the complance center <!--- Compliance Center should be capitalized. --->  of Office 365 and Microsoft 365. Used when executing DSRs againts Office 365 applications.|
+|DSR case tool|Located in the Security & Compliance Center. <!--- I suggest to replace Security & Compliance Center with Compliance Center. ---> Can be used to manage investigations for a data subject.|
 |In-app functionality|For applications that do not support Content Search, application can be used directly for responding to DSRs.|
