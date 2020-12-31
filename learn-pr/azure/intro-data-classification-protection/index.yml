@@ -16,7 +16,7 @@ abstract: |
   - Describe data classification.
   - Describe common scenarios for using data classification.
   - Describe DLP.
-  - Describe Microsoft technologies for data classification and protection, and DLP.What is a sensitive information type?
+  - Describe Microsoft technologies for data classification and protection, and DLP.
 prerequisites: |
   - Basic knowledge of data protection
   - Basic experience with security technologies
