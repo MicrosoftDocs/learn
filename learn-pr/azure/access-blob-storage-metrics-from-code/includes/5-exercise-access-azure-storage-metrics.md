@@ -16,7 +16,7 @@ To begin creating your application, use git to clone the sample application code
     mkdir ~/metricapp
     ```
 
-1. To clone the console app from Git Hub into the new folder, run the following command:.
+1. To clone the console app from Git Hub into the new folder, run the following command.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-access-blob-storage-metrics-from-code ~/metricapp
