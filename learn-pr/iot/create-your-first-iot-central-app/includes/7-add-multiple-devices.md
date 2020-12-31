@@ -4,9 +4,9 @@ In this unit, we complete the app testing.
 
 Now for the best fun of all.
 
-1. Click the **Commands** title for the device. This control should be under the truck name, and right of the **Truck view** control.
+1. Select the **Commands** title for the device. This control should be under the truck name, and right of the **Truck view** control.
 
-1. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
+1. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and select **Run**.
 
 1. In the console for the device app, you should see both a **New customer** event, and a **Route found** message.
 
@@ -43,9 +43,9 @@ To test a conflict event, send a command that you know doesn't make sense.
 
 1. The simplest test is to check the **Truck ID** tile. This tile should have picked up the **Truck number 1** message when the apps were started.
 
-1. The next test is to check the writable property, **OptimalTemperature**. To change this value, click on the **Set properties** view.
+1. The next test is to check the writable property, **OptimalTemperature**. To change this value, select on the **Set properties** view.
 
-1. Set the optimal temperature to any value, say -8. Click **Save**, and note the **Pending** status.
+1. Set the optimal temperature to any value, say -8. Select **Save**, and note the **Pending** status.
 
     [![Screenshot showing the console view with a conflict event](../media/set-properties-pending.png)](../media/set-properties-pending.png#lightbox)
 

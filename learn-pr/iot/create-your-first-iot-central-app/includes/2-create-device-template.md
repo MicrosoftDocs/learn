@@ -1,60 +1,59 @@
-
-The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template encapsulates all the details of the data so that both the device and IoT Central have all they need to make sense of the communication.
+The data communicated between a remote device and IoT Central is specified in a _device template_. The device template encapsulates all the details of the data so that both the device and IoT Central have all they need to make sense of the communication.
 
 In this unit, you'll create a device template for a refrigerated truck.
 
 ## Create a device template
 
-1. Within the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true)portal (which you may still have open), select **Device templates** from the menu on the left-hand side.
+1. In the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, in the menu on the left, select **Device templates**.
 
-1. Click **+ New** to create a new template.
+1. Select **New** to create a new template.
 
-1. You'll next see a range of template options, select the **IoT device**. We are going to build the template from scratch.
-
-    > [!TIP]
-    > Take note of the other options. You may want to use those prebuilt template options in a future project!
-
-1. Click **Next: Customize**.
-
-1. Enter the name for your device template, "RefrigeratedTruck". Don't select the **Gateway device** box.
-
-1. Click **Next: Review**. Then click **Create**.
-
-1. **Create a capability model**, click **Custom**. You should now see a screen similar to the following image.
-
-    [![Screenshot showing the most important controls when creating a device template](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
+1. You'll next see a range of template options. Select **IoT device**. You're going to build the template from scratch.
 
     > [!TIP]
-    > Take note of a few important elements of the above image. Including that the template is in **Draft** form, and the locations of the **+ Add interface**, **Views**, and **Publish** controls.
+    > Review the other template options. You might want to use the prebuilt template options in a future project.
 
-1. You're now ready to add the specifics of the device template. Click **Add interface**, then **Custom**, to start building from a blank interface.
+1. Select **Next: Customize**.
 
-An interface defines a set of _capabilities_. We have quite a few to create, to define a refrigerated truck.
+1. Name your device template *RefrigeratedTruck*. Don't select the **Gateway device** box.
+
+1. Select **Next: Review**. Then select **Create**.
+
+1. For **Create a capability model**, select **Custom**. Your view should now look similar to the following image.
+
+    [![Screenshot showing the most important controls when creating a device template.](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
+
+    > [!TIP]
+    > In the image, notice that the template is in **Draft** form. Also notice the locations of the **Add interface**, **Views**, and **Publish** controls.
+
+1. You're now ready to add details for the device template. Select **Add interface**. Then select **Custom** to start building from a blank interface.
+
+An interface defines a set of _capabilities_. You'll need to create several capabilities to define a refrigerated truck.
 
 ### Add sensor telemetry
 
-Telemetry is the data values transmitted by sensors. The most important sensor in our refrigerated truck monitors the temperature of the contents.
+Telemetry is made up of the data values that sensors transmit. The most important sensor in our refrigerated truck monitors the temperature of the contents.
 
-1. Click **+ Add capability**, and enter the following values:
+To get started, select **Add capability**, and then enter the values in the following table.
 
-    | Entry summary | Value |
-    | --- | --- |
-    | Display Name | Contents temperature |
-    | Name | ContentsTemperature |
-    | Capability Type | Telemetry |
-    | Semantic type | Temperature |
-    | Schema | Double |
-    | Unit | <sup>o</sup>C |
+| Entry summary | Value |
+| --- | --- |
+| Display name | Contents temperature |
+| Name | ContentsTemperature |
+| Capability type | Telemetry |
+| Semantic type | Temperature |
+| Schema | Double |
+| Unit | <sup>o</sup>C |
 
-1. Your screen should now look like the following image.
+Your screen should now look like the following image.
 
-    [![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
+[![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
 
-    > [!NOTE]
-    > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
+> [!NOTE]
+> The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
 
-    > [!IMPORTANT]
-    > In all locales, capability names can currently _only_ contain characters **A** through **Z**, upper or lower case, the digits **0** through **9**, and the underscore **_**. No spaces, special characters, or localized characters, are allowed.
+> [!IMPORTANT]
+> In all locales, capability names can currently _only_ contain characters **A** through **Z**, upper or lower case, the digits **0** through **9**, and the underscore **_**. No spaces, special characters, or localized characters, are allowed.
 
 Let's add the rest of the template.
 
@@ -72,7 +71,7 @@ States are important, they let the operator know what is going on. A state in Io
     | Semantic type | State |
     | Value schema | String |
 
-1. Now, click **+**, and enter "empty" for the **Display Name**, and **Value**. The **Name** field should automatically be populated with "empty". So, all three fields are identical, containing "empty".
+1. Now, select **+**, and enter "empty" for the **Display Name**, and **Value**. The **Name** field should automatically be populated with "empty". So, all three fields are identical, containing "empty".
 
 1. Add two more state values: "full" and "melting". Again, the same text should appear in the **Display Name**, **Name**, and **Value**.
 
@@ -80,7 +79,7 @@ States are important, they let the operator know what is going on. A state in Io
 
 1. Carefully check each capability before moving on. 
 
-1. Now, to add some uncertainty to our simulation, let's add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably! Add _on_, and _off_ and _failed_ entries for a cooling system. Start by clicking **+ Add capability**, and add another state.
+1. Now, to add some uncertainty to our simulation, let's add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably! Add _on_, and _off_ and _failed_ entries for a cooling system. Start by selecting **+ Add capability**, and add another state.
 
     | Entry summary | Value |
     | --- | --- |
@@ -162,7 +161,7 @@ A property is a single value. If more complex sets of data need to be transmitte
     | Writable | Off |
     | Unit | None |
 
-1. Next, add the optimal temperature property.
+1. Add the optimal temperature property.
 
     | Entry summary | Value |
     | --- | --- |
@@ -184,7 +183,7 @@ Commands are sent by the operator of the IoT Central app, to the remote devices.
 
 For refrigerated trucks, there are two commands you should add: a command to deliver the contents to a customer, and a command to recall the truck to base.
 
-1. Use **+ Add Capability**, and add the first command.
+1. Use **Add Capability**, and add the first command.
 
     | Entry summary | Value |
     | --- | --- |
@@ -215,15 +214,15 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
     [![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-commands.png)](../media/refrigerated-trucks-commands.png#lightbox)
 
-1. Click **Save**. Before going any further carefully double-check your interface. After an interface has been published, there are limited editing options. It's important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
+1. Select **Save**. Before going any further carefully double-check your interface. After an interface has been published, there are limited editing options. It's important to get it right before publishing. If you select the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
 
     [![Screenshot to help validate the capabilities of the simulated device](../media/refrigerated-trucks-capabilities.png)](../media/refrigerated-trucks-capabilities.png#lightbox)
 
 ## Publish the template
 
-1. Click **Save** again, if you've made any changes since the last time you saved.
+1. Select **Save** again, if you've made any changes since the last time you saved.
 
-1. Click **Publish** followed by **Publish** from the dialog that pops up. You should see that the annotation changes from **Draft** to **Published**.
+1. Select **Publish** followed by **Publish** from the dialog that pops up. You should see that the annotation changes from **Draft** to **Published**.
 
 Preparing a device template does take some care and some time.
 

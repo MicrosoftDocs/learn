@@ -40,7 +40,7 @@ quiz:
     - content: 'To match the entries in the code running on the IoT device, to enable communications.'
       isCorrect: true
       explanation: Names must be copied exactly in the code running on the device.
-    - content: 'To appear in tooltip type text boxes when the operator clicks on an element in the app UI.'
+    - content: 'To appear in tooltip type text boxes when the operator selects on an element in the app UI.'
       isCorrect: false
       explanation: Names aren't descriptive text.
 
