@@ -1,48 +1,79 @@
-When designing an app that needs to store data, it's important to think about how the app is going to organize data across storage accounts, containers, and blobs.
+The performance requirements for HPC workloads may vary widely depending on a number of variables. The following section highlights the main aspects of file system performance that you must consider when determining your architecture.
 
-## Storage accounts
+## Factors contributing to File System Performance
 
-A single storage account is flexible enough to organize your blobs however you like, but you should use additional storage accounts as necessary to logically separate costs and control access to data.
+### Operations
 
-## Containers and blobs
+**Operations** refers to any activity between the host/machine and the file system or disk. OS-level operations include the following list:
 
-The nature of your app and the data that it stores should drive your strategy for naming and organizing containers and blobs.
+- File create
+- File delete
+- File open
+- close
+- read
+- write
+- append
+- get attribute
+- set attribute
+- rename
 
-Apps using blobs as part of a storage scheme that includes a database often don't need to rely heavily on organization, naming, or metadata to indicate anything about their data. Such apps commonly use identifiers like GUIDs as blob names and reference these identifiers in database records. The app will use the database to determine where blobs are stored and the kind of data they contain.
+When using the NFS protocol, there are several key operations:
 
-Other apps may use Azure Blob storage more like a personal file system, where container and blob names are used to indicate meaning and structure. Blob names in these kinds of apps will often look like traditional file names and include file name extensions like `.jpg` to indicate what kind of data they contain. They'll use virtual directories (see below) to organize blobs and will frequently use metadata tags to store information about blobs and containers.
+- create (file or link)
+- mkdir
+- readdir / readdirplus
+- getattr
+- setattr
+- lookup (search for file handle in directory)
+- link / symlink /readlink
+- read
+- rename
+- remove
+- rmdir
+- write
 
-There are a few key things to consider when deciding how to organize and store blobs and containers.
+### Block Size
 
-### Naming limitations
+**Block Size** refers to the smallest size of a read or write, in bytes, of a file system. For our purposes, block size also refers to the payload size of a NFS data chunk (read/write) that can be transmitted between NFS clients and servers.
 
-Container and blob names must conform to a set of rules, including length limitations and character restrictions. For more specific information about naming rules, at the end of this module, see the *Further Reading* section.
+NFS servers and clients negotiate the block size, accepting the largest size both can support. Default settings can range from 4KB to 64KB, with the current maximum configurable value being 1MB. This would translate into individual packets with payloads no greater than the set value.
 
-### Public access and containers as security boundaries
+Block size may be explicitly configured on clients. Check the full `mount` statement on your HPC cluster machines to determine what the value is.
 
-By default, all blobs require authentication to access. However, individual containers can be configured to allow public downloading of their blobs without authentication. This feature supports many use cases, such as hosting static website assets and sharing files. This is because downloading blob contents works the same way as reading any other kind of data over the web: you just point a browser or anything that can make a GET request at the blob URL.
+The two arguments used to configure block size are `rsize` and `wsize`, configuring block sizes for reading and writing data respectively.
 
-Enabling public access is important for scalability because data downloaded directly from Blob storage doesn't generate any traffic in your server-side app. Even if you don't immediately take advantage of public access or if you will use a database to control data access via your app, plan on using separate containers for data you want to be publicly available.
+### IOPS
 
-> [!CAUTION]
-> Blobs in a container configured for public access can be downloaded without any kind of authentication or auditing by anyone who knows their storage URLs. Never put blob data in a public container that you don't intend to share publicly.
+**IOPS** stands for "Input/Output operations per second", and is a key value when evaluating storage solutions. The number of IOPS will vary depending on the following attributes:
 
-In addition to public access, Azure has a shared access signature feature that allows fine-grained permissions control on containers. Precision access control enables scenarios that further improve scalability, so thinking about containers as security boundaries in general is a helpful guideline.
+- the type of storage media (Hard Disk Drives (HDD) vs Solid-State Drives(SSD))
+- latency, usually introduced via network connectivity
+- the block size used by the file system
+- the amount of concurrent access to the file system (there is one set of IOPS for all clients)
 
-### Blob name prefixes (virtual directories)
+### Throughput
 
-Technically, containers are "flat" and do not support any kind of nesting or hierarchy. But if you give your blobs hierarchical names that look like file paths (such as `finance/budgets/2017/q1.xls`), the API's listing operation can filter results to specific prefixes. This enables you to navigate the list as if it was a hierarchical system of files and folders.
+**Throughput** refers to the total possible transfer rate the file system can handle, measured in bytes per second. The basic calculation for throughput is to multiply IOPS x Block Size. So for example if you have a disk that supports 3000 IOPS and your block size is 4K, your total possible throughput is 12MB/s. This provides a basic understanding of the general performance possibility, but can be affected by a variety of factors, including high rates of small file creates/deletes (as one example).
 
-This feature is often called *virtual directories* because some tools and client libraries use it to visualize and navigate Blob storage as if it was a file system. Each folder navigation triggers a separate call to list the blobs in that folder.
+### Latency
 
-Using names that are like filenames for blobs is a common technique for organizing and navigating complex blob data.
+**Latency** refers to processing delays. The higher the latency, the higher the likelihood of slower job runs. There can be multiple sources of latency within a single architecture, each contributing to an overall latency effect.
 
-### Blob types
+File system latency may occur under the following conditions:
 
-There are three different kinds of blobs you can store data in:
+- Slow network connection between client and server
+- Congestion on the network, or at the file server, due to a large number of concurrent requests
+- Natural latency due to distance between clients and servers, for instance across a Wide-Area Network
+- Slow disk subsystem access on the file server itself
 
-- **Block blobs** are composed of blocks of different sizes that can be uploaded independently and in parallel. Writing to a block blob involves uploading data to blocks and committing them to the blob.
-- **Append blobs** are specialized block blobs that support only appending new data (not updating or deleting existing data), but they're very efficient at it. Append blobs are great for scenarios like storing logs or writing streamed data.
-- **Page blobs** are designed for scenarios that involve random-access reads and writes. Page blobs are used to store the virtual hard disk (VHD) files used by Azure Virtual Machines, but they're great for any scenario that involves random access.
+Latency is not always consistent or clearly documented. You will need to run tests to determine latency between your HPC cluster machines and the storage endpoint (using `ping` to gain a basic number)
 
-Block blobs are the best choice for most scenarios that don't specifically call for append or page blobs. Their block-based structure supports very fast uploads and downloads and efficient access to individual pieces of a blob. The process of managing and committing blocks is automatically handled by most client libraries, and some will also handle parallel uploads and downloads to maximize performance.
+## Baseline Values
+
+Choosing the precise performance configuration for HPC workloads is highly conditional on the workloads themselves.
+
+Azure file system offerings will present IOPS and throughput values you can expect. If you choose to build your own NAS solution, you would use the metrics documented for each virtual machine SKU as well as the metrics provided for the managed disks you would be using.
+
+You can use your local datacenter HPC configuration as a starting point for performance expectations, but keep in mind that cloud solutions may be more on-demand, and thus you may have more per-workload flexibility when building in Azure.
+
+You will want to use basic tools such as `ping`, `fio`, `iozone` and `iometer` to determine some of your Azure file system's baseline numbers.

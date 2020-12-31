@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.selecting-file-storage-for-HPC-workloads.1-introduction
-title: Introduction to HPC File Storage Options
+uid: learn.hpc-storage-considerations.1-introduction
+title: HPC Storage Considerations
 metadata:
-  title: Introduction to HPC File Storage Options
-  description: Introduction to HPC File Storage Options
+  title: HPC Storage Considerations
+  description: HPC Storage Considerations
   ms.date: 12/29/2020 
   author: scjeschomsft
   ms.author: scjescho
