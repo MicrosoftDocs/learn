@@ -1,8 +1,8 @@
 <!-- estimated unit duration 3 minutes -->
 
-After completing the evaluation, you found that Azure Virtual WAN solved the issue of securely connecting to branch offices, which reduced transit time to access Azure services, while also reducing the company cost. Azure Virtual WAN provides any-to-any connectivity, custom routing, and security. The following list of advantages summarizes your findings.
+After completing the evaluation, you found that Azure Virtual WAN solved the issue of securely connecting to branch offices, which reduced transit time to access Azure services, while also reducing company costs. Azure Virtual WAN provides any-to-any connectivity, custom routing, and security. The following list of advantages summarizes your findings.
 
-## Azure Virtual WAN advantages
+## Azure Virtual WAN key points
 
 - Customers use Microsoft global WAN with no contracts.
 - Microsoft owns and runs one of the largest backbone networks in the world, connecting their data centers and customers.
@@ -13,13 +13,9 @@ After completing the evaluation, you found that Azure Virtual WAN solved the iss
 To summarize Azure Virtual WAN provides a unified framework for connecting, routing, and securing through the Azure Firewall.
 It's deployed in a hub-and-spoke architecture so that you can architect your network, re-architect it, scale it, or just simplify it.
 
-The following image depicts a Azure Virtual WAN deployment with two Virtual Hubs in different Azure regions and the network traffic flow.
-
-:::image type="content" source="../media/6-united-framework-for-networking.png" alt-text="Azure Virtual WAN provides any-to-any connectivity, custom routing, and security.":::
-
 ## Learn more
 
-Explain these links here...
+To learn more, refer to the following articles:
 
 - [Virtual WAN documentation](https://docs.microsoft.com/azure/virtual-wan?azure-portal=true)
 - [Migrate to Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/migrate-from-hub-spoke-topology?azure-portal=true)
