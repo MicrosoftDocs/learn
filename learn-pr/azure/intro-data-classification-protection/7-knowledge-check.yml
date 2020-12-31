@@ -36,7 +36,7 @@ quiz:
       explanation: "That's incorrect. A permission list is not metadata that's added as a result of classification."
     - content: "Label"
       isCorrect: true
-      explanation: "That's correct. The classificaation label is metadata that's added as a result of classification."
+      explanation: "That's correct. The classification label is metadata that's added as a result of classification."
     - content: "Digital signature"
       isCorrect: false
       explanation: "That's incorrect. A digital signature is not metadata that's added as a result of classification."
@@ -53,7 +53,7 @@ quiz:
       isCorrect: true
       explanation: "That's correct. You can use keywords to automatically recognize and classify data."
 
-  - content: "To prevent data loss, an administrator want to search for sensitive data across Office 365 services in their organization. What should they configure to be able to do this?"
+  - content: "To prevent data loss, an administrator wants to search for sensitive data across Office 365 services in their organization. What should they configure to be able to do this?"
     choices:
     - content: "File and folder permissions"
       isCorrect: false
