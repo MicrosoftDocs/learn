@@ -69,10 +69,10 @@ quiz:
     choices:
     - content: "Azure Information Protection"
       isCorrect: true
-      explanation: "That's correct. You should use Azure Information Protection to classify and help protect the documents."
+      explanation: "That's correct. You should use Azure Information Protection to classify and help protect the Word documents."
     - content: "Office 365 Message Encryption"
       isCorrect: false
-      explanation: "That's incorrect. You don't need to use Office 365 Message Encryption to classify and help protect the documents in this scenario."
+      explanation: "That's incorrect. You don't need to use Office 365 Message Encryption to classify and help protect the Word documents."
     - content: "Label-based information protection in Windows 10"
       isCorrect: false
-      explanation: "That's incorrect. You don't need to use label-based information protection to classify and help protect the documents in this scenario."
+      explanation: "That's incorrect. You don't need to use label-based information protection to classify and help protect the Word documents."
