@@ -21,7 +21,7 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
     az acr replication create --registry $ACR_NAME --location japaneast
     ```
 
-    Here's an example of what the output from this command looks like:
+    Here's an example of what the output from this command looks like.
 
     ```output
     {
@@ -40,13 +40,13 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
     }
     ```
 
-1. As a final step,  retrieve all container image replicas created by running the following command. 
+1. As a final step, retrieve all container image replicas created by running the following command.
 
     ```azurecli
     az acr replication list --registry $ACR_NAME --output table
     ```
 
-    The output should look similar to the following example:
+    The output should look similar to the following example.
 
     ```output
     NAME       LOCATION    PROVISIONING STATE    STATUS
@@ -57,7 +57,7 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
 
 Keep in mind that you aren't limited to the Azure CLI to list your image replicas. From within the Azure portal, selecting `Replications` for an Azure Container Registry displays a map that details current replications. Container images can be replicated to additional regions by selecting the regions on the map.
 
-[![Screenshot of Azure portal showing the container replication world map with many circles marked across several countries.](../media/replication-map.png)](../media/replication-map-expanded.png#lightbox "Azure Container Registry replication map")
+    [![Screenshot of Azure portal showing the container replication world map with many circles marked across several countries.](../media/replication-map.png)](../media/replication-map-expanded.png#lightbox "Azure Container Registry replication map")
 
 ## Summary
 
