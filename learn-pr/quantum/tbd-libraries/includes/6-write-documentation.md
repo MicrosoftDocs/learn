@@ -52,10 +52,8 @@ The QDK makes this even easier by enabling help functions in various editors.
 For example, if you are using VS Code, IntelliSense enables autocomplete functionality and you can see the overview of your callable by simply hovering the mouse over it:
 ![VS Code IntelliSense mouseover](../media/6-mouseover.png)
 
-If using Q# with Jupyter Notebooks, you can use the `?` magic functions to return 
-
-> [!NOTE]
-> Pic of this, once the problem has been fixed and is live (Ryan has a PR out) 
+If using Q# with Jupyter Notebooks, for example, this works with the `?` magic functions. 
+That is, running a cell with `<OperationName>?` returns the API reference and other related information.
 
 ## Additional documentation headers
 
