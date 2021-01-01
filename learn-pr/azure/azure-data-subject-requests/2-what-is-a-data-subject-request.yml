@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-data-subject-requests.2-what-data-subject-request
+uid: learn.azure-data-subject-requests.2-what-is-a-data-subject-request
 title: What is Data Subject Request?
 metadata:
   title: What is Data Subject Request?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-what-data-subject-request.md)]
+  [!include[](includes/2-what-is-a-data-subject-request.md)]
