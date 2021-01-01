@@ -12,7 +12,7 @@ The comment then extends from the slashes to the end of the line.
 Documentation comments for a declared callable or type, however, are written differently.
 To be recognized as documentation by the compiler, these utilize three slashes (`///`) and are written *before* the declaration.
 
-Within the comments, the text is formatted as [Markdown](link) and different parts of the documentation are indicated by different specially-named headers---each provided as an "H1" header with a single `#` preceding it.
+Within the comments, the text is formatted as [Markdown](https://daringfireball.net/projects/markdown/syntax) and different parts of the documentation are indicated by different specially-named headers---each provided as an "H1" header with a single `#` preceding it.
 We provide a full list of the possible headers below, but first let's document the oracle reflection operation as an example:
 
 ```qsharp

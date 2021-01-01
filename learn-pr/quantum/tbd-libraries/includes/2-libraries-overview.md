@@ -110,4 +110,4 @@ qsharp.reload()
 
 ## What's next?
 
-Something, surely.
+In the next unit you will learn about the Q# API documentation, specifically how it is structured and how to navigate it.

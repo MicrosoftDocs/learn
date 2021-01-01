@@ -9,7 +9,7 @@ metadata:
   ms.date: 09/19/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/8-knowledge-check.md)]
 
@@ -17,16 +17,41 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: Question
+  - content: "To use Q# libraries besides the Standard library, I need to..." 
     choices:
-    - content: response 1
+    - content: "simply create my Q# project and get started programming."
       isCorrect: false
-      explanation: explanation 1
-    - content: response 2
-      isCorrect: false
-      explanation: explanation 2
-    - content: response 3
+      explanation: "New Q# projects automatically include the Standard library by default, but using other libraries requires adding the corresponding NuGet package to the project." 
+    - content: "add the corresponding NuGet package to my Q# project."
       isCorrect: true
-      explanation: explanation 3 correct
+      explanation: "Correct!"
+
+  - content: "The Q# API documentation is..." 
+    choices:
+    - content: "something only experts should use as a reference."
+      isCorrect: false
+      explanation: "It is a valuable resource that can help both beginners and experts alike." 
+    - content: "neither worth exploring nor using as a reference when writing programs."
+      isCorrect: false
+      explanation: "It is a valuable resource that should absolutely be explored "
+    - content: "automatically generated from documentation comments in the source code and published on the Microsoft Quantum Documentation website."
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "Documentation comments are denoted with _____ slashes, and should go immediately _____ the callable or type declaration." 
+    choices:
+    - content: "two; before"
+      isCorrect: false
+      explanation: "Two slashes `//` delineate *general* comments, which can be written anywhere in Q# files. The lines of documentation comments must begin with `///` and are treated specially by the compiler. They must be placed outside and immediately preceding the declaration."
+    - content: "two; after"
+      isCorrect: false
+      explanation: "Two slashes `//` delineate *general* comments, which can be written anywhere in Q# files. The lines of documentation comments must begin with `///` and are treated specially by the compiler. They must be placed outside and immediately preceding the declaration."
+    - content: "three; before"
+      isCorrect: true
+      explanation: "Correct! In contrast to general comments, which are delineated by two slashes `//` and can be written anywhere in Q# files, the lines of documentation comments must begin with `///` and are treated specially by the compiler. They must be placed outside and immediately preceding the declaration." 
+    - content: "three; after"
+      isCorrect: false
+      explanation: "In contrast to general comments, which are delineated by two slashes `//` and can be written anywhere in Q# files, the lines of documentation comments must begin with `///` and are treated specially by the compiler. They must be placed outside and immediately preceding the declaration."
+
       
 

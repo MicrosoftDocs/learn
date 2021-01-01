@@ -1,7 +1,4 @@
-﻿> [!NOTE]
-> To-do: rename files to align with all this
-
-In the previous unit, you defined the operation `ApplyIsbnOracle`, which takes as an argument the qubit register for our search space, as well as an ancilla qubit in $\ket{-}$ to be used by the oracle to flag the correct states. 
+﻿In the previous unit, you defined the operation `ApplyIsbnOracle`, which takes as an argument the qubit register for our search space, as well as an ancilla qubit in $\ket{-}$ to be used by the oracle to flag the correct states. 
 This process is handled by the `ComputeIsbnCheck` operation run within `ApplyIsbnOracle`.
 
 Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations" which consist of
@@ -13,7 +10,7 @@ The second step is *not* as problem specific as the oracle, but can be somewhat 
 
 ## Reflection about uniform superposition
 
-In the [previous module using Grover's](link), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. 
+In the [previous module using Grover's](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. 
 However, since we are only interested in the number states $0 - 9$, we have no use for the remaining states $10-15$ which our 4 qubits can represent.
 Therefore, we will only utilize and reflect about the uniform superposition $\sum_{i=0}^9 \ket{i}$.
 
