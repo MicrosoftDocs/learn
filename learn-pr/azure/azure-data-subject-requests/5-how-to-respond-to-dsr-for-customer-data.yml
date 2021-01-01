@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-data-subject-requests.5-use-dsr-office365-apps
+uid: learn.azure-data-subject-requests.5-how-to-respond-to-dsr-for-customer-data
 title:  How to use DSR for Office 365 apps
 metadata:
   title:  How to use DSR for Office 365 apps
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-use-dsr-office365-apps.md)]
+  [!include[](includes/5-how-to-respond-to-dsr-for-customer-data.md)]
