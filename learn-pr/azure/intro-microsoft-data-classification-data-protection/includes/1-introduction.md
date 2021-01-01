@@ -1,4 +1,4 @@
-Learn and understand Microsoft technologies used for data classification and data protection. Learn about sensitivity labels and their usage for data protection, as well as about Microsoft CASB solution <!--- I think CASB acronym is not widely used and I would suggest to use full form instead (cloud access security broker). ---> and Office 365 message encryption.
+Learn and understand Microsoft technologies used for data classification and data protection. Learn about sensitivity labels and their usage for data protection, as well as about Microsoft cloud access security broker solution and Office 365 message encryption.
 
 Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, whereas its cloud services are under evaluation.
 
