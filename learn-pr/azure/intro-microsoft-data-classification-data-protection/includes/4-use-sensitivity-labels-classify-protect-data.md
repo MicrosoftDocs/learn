@@ -10,10 +10,9 @@ The following steps identify the basic workflow in using sensitivity labels to p
 
 ### Sensitivity label policy
 
-After you create your sensitivity labels, you must publish them in sensitivity label policies to make them available to people and services in your organization. The sensitivity labels can then be applied to documents and emails. Unlike retention labels, which are published to locations such as all Exchange mailboxes, sensitivity labels are published to users or groups. Sensitivity labels then appear in Office apps for those users and groups. <!--- Maybe this is covered later, but I think that it would make sense to also mention it here. You can publish sensitivity labels by using label policies and that behaves exactly as described. But you can also use auto-labeling policies to automatically apply sensitiviti labels (lo locations such as Exchange or SharePoint). With auto-labeling policies, sensitivity labels are published to locations. --->
+After you create your sensitivity labels, you must publish them in sensitivity label policies to make them available to people and services in your organization. The sensitivity labels can then be applied to documents and emails. Unlike retention labels, which are published to locations such as all Exchange mailboxes, sensitivity labels are published to users or groups. Sensitivity labels then appear in Office apps for those users and groups. You can publish sensitivity labels by using label policies and you can also use auto-labeling policies to automatically apply sensitivity labels, if needed. 
 
 A label policy consists of:
-
 
  *  A set of labels.
  *  The scope of the label policy, meaning the users and groups included in the policy.
@@ -22,19 +21,18 @@ A label policy consists of:
 Label policies enable organizations to:
 
 
- * **Choose which users and groups see the labels.** Labels can be published to any email-enabled security group, Office 365 group <!--- Office 365 groups were renamed to "Microsoft 365 groups" ---> , or dynamic distribution group <!--- Is word dynamic important here? Or it could be just "distribution group"? --->.
+ * **Choose which users and groups see the labels.** Labels can be published to any email-enabled security group, Microsoft 365 group, or distribution group.
 
- * **Apply a default label.** Apply a default label to all new documents and email created by the users and groups included in the label policy. This option also applies to containers, if you've enabled sensitivity labels for Microsoft Teams, Office 365 groups <!--- Should be updated to "Microsoft 365 groups". ---> , and SharePoint sites. Users can always change the default label if it's not the right label for their document or email. Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling.
+ * **Apply a default label.** Apply a default label to all new documents and email created by the users and groups included in the label policy. This option also applies to containers, if you've enabled sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites. Users can always change the default label if it's not the right label for their document or email. Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling.
 
  * **Require a justification for changing a label.** If a user tries to remove a label or replace it with a label that has a lower order number, you can require the user provides a justification to perform this action. For example, a user opens a document labeled Confidential (order number 3) and replaces that label with one named Public (order number 1). Currently, the justification reason isn't sent to label analytics for the admin to review. However, the Azure Information Protection unified labeling client sends this information to Azure Information Protection analytics.
 
  * **Require users to apply a label to their email and documents.** Also known as mandatory labeling, you can require that a label must be applied before users can save documents and send emails. Use this option to help increase your labeling coverage. The label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option described above). 
 
  * **Provide help link to a custom help page.** If your users aren’t sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the Sensitivity label menu in the Office apps.
+ 
 
-   
-
-After you create a label policy that assigns sensitivity labels to users and groups, allow up to 24 hours for these users to see the labels in their Office apps. <!--- As commented earlier, I'm not sure if this should be updated to Microsoft 365 apps. --->
+After you create a label policy that assigns sensitivity labels to users and groups, allow up to 24 hours for these users to see the labels in their Office apps.
 
 There is no limit to the number of sensitivity labels that you can create and publish, with one exception: If the label applies encryption, there is a maximum of 500 labels. However, as a best practice to lower admin overheads and reduce complexity for your users, try to keep the number of labels to a minimum. Real-word deployments have proved effectiveness to be noticeably reduced when users have more than five main labels or more than five sublabels per main label.
 
