@@ -39,7 +39,7 @@ The instructions here are specifically for Q# via the command line in VS Code, b
 We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \bmod 11$.
 To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a quantum register. 
 
-Fortunately, the operation [MultiplyAndAddByModularInteger](xref:fill) from the Artithmetic namespace of the Standard Library can be used to do just that. 
+Fortunately, the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger) from the Artithmetic namespace of the Standard Library can be used to do just that. 
 It implements the map
 $$
 \ket{x}\ket{b} \mapsto \ket{x}\ket{(b + a \cdot x) \text{mod} N}
@@ -49,7 +49,7 @@ for a given modulus $N$ and constant integer multiplier $a$.
 To implement our map specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
 Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
-Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit scratch register ($\ket{b}$) and preparing it in the number state $\ket{9}$ (this can be done using [ApplyXorInPlace](xref:fill)), and then performing the mapping above by providing $N=11$ and $a=6$, so
+Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit scratch register ($\ket{b}$) and preparing it in the number state $\ket{9}$ (this can be done using [ApplyXorInPlace](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
 $$
 \ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
 $$
@@ -59,7 +59,7 @@ In the next unit, you will put it all together and finally find the book you've 
 
 ### Flag the correct state by applying the oracle
 
-Recall from the (FILL) module on Grover's algorithm that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, i.e. those which are a solution to the search problem.
+Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, i.e. those which are a solution to the search problem.
 This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` gate is applied to the $\ket{-}$ state, the $\ket{-}$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 
 Supposing we have in hand the search register `missingDigitReg` and a `flagQubit` initialized to $\ket{-}$, how would we go about getting that phase factor on strictly the state $\ket{x}$ in `missingDigitReg` which satisfies $(9 + 6 \cdot x) \bmod 11 = 0$?
