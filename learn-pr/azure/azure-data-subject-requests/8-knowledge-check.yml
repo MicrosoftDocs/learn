@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-data-subject-requests.8-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which regulation provides the right to be forgotten?"
+    choices:
+    - content: "California Citizen Privacy Act"
+      isCorrect: false
+      explanation: "That is incorrect. While CCPA does provide California residents with privacy rights that are equvilan to the right to be forgetten, the correct name is the California Consumer Privacy Act"
+    - content: "General Data Protection Regulation"
+      isCorrect: true
+      explanation: "That's correct. The GDPR provides the right to erasure also known as the right to be forgotten."
+
+  - content: "Which of the following are supported DSRs for system-generated logs?"
+    choices:
+    - content: "Access"
+      isCorrect: true
+      explanation: "That's correct. This is a supported DSR for system-generated logs"
+    - content: "Rectify"
+      isCorrect: false
+      explanation: "That's incorrect. This is not a supported DSR for system-generated logs"
+    - content: "Restrict"
+      isCorrect: false
+      explanation: "That's incorrect. This is not a supported DSR for system-generated logs"
+    - content: "Delete"
+      isCorrect: true
+      explanation: "That's correct. This is a supported DSR for system-generated logs"
+    - content: "Export"
+      isCorrect: true
+      explanation: "That's correct. This is a supported DSR for system-generated logs"
+
+  - content: "Which of the following statement is not true regarding the scope of DSR execution for a Microsoft enterprise customer?"
+    choices:
+    - content: "DSR execution is performed in every tenant in the Microsoft cloud that the data subject's personal information resides in"
+      isCorrect: false
+      explanation: "That's incorrect. DSR execution is only perfomed by the enterprise customer that receives the request and iss have not affect on any other tenants"
+    - content: "A"
+      isCorrect: true
+      explanation: ""
+    - content: "A"
+      isCorrect: false
+      explanation: "That's incorrect."
+
+  - content: "Based on Microsoft's estimation, 90% of an organization data is stored where in the Microsoft Cloud?"
+    choices:
+    - content: "SharePoint Online"
+      isCorrect: true
+      explanation: "That's correct. Word, Excel, PowerPoint, and OneNote are likely stored here."
+    - content: "OneDrive for Business"
+      isCorrect: true
+      explanation: "That's correct. Word, Excel, PowerPoint, and OneNote are likely stored here."
+    - content: "Exchange Online"
+      isCorrect: true
+      explanation: "That's correct. Word, Excel, PowerPoint, OneNote, documents and Outlook messages are likely stored here."
+
+  - content: "In which of the following scenarios would Microsoft be considered the data controller and not the data processor for a DSR?"
+    choices:
+    - content: "A part-time employee uses their student account to access OneDrive account"
+      isCorrect: true
+      explanation: "That's correct. When a user signs in with their own Azure Active Directory ID the data subject will need to initiate a DSR directly to Microsoft and not their employer"
+    - content: "A customer sends an email to their financial institution, which is a Microsoft enterprise customer, regarding their loan"
+      isCorrect: false
+      explanation: "That's incorrect. The email recieved from the customer containing personal information is stored in the enterprise customers Exchange Online mailboxes"
+    - content: "A developer in an organization creates a free azure account to experiment with Azure DevOps."
+      isCorrect: true
+      explanation: "That's correct. When an individual purchases services from Microsoft outside of their organization will need to initiate a DSR directly to Microsoft and not their employer"
