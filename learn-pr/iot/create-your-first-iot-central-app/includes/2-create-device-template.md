@@ -47,49 +47,49 @@ To get started, select **Add capability**, and then enter the values in the foll
 
 Your screen should now look like the following image.
 
-[![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
+[![Screenshot showing how to create temperature telemetry for the simulated device.](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
 
 > [!NOTE]
-> The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
+> The names for the interface must be entered _exactly_ as shown in this unit. An exact match is needed between these names and entries in the code you'll add later in this module.
 
 > [!IMPORTANT]
-> In all locales, capability names can currently _only_ contain characters **A** through **Z**, upper or lower case, the digits **0** through **9**, and the underscore **_**. No spaces, special characters, or localized characters, are allowed.
+> In all locales, capability names can currently contain _only_ characters *A* through *Z*, uppercase or lowercase, digits 0 through 9, and the underscore character (`_`). No spaces, special characters, or localized characters are allowed.
 
 Let's add the rest of the template.
 
 ### Add state telemetry
 
-States are important, they let the operator know what is going on. A state in IoT Central is a name associated with a range of values. In addition, you later get to choose a color to associate with each value.
+States are important. They let the operator know what's happening. A state in IoT Central is a name associated with a range of values. Later you'll choose a color to associate with each value.
 
-1. Use the **+ Add capability** control to add a state for the truck's refrigerated contents: one of _empty_, _full_, or _melting_.
+1. Use the **Add capability** control to add a state for the truck's refrigerated contents: _empty_, _full_, or _melting_.
 
     | Entry summary | Value |
     | --- | --- |
-    | Display Name | Contents state |
+    | Display name | Contents state |
     | Name | ContentsState |
-    | Capability Type | Telemetry |
+    | Capability type | Telemetry |
     | Semantic type | State |
     | Value schema | String |
 
-1. Now, select **+**, and enter "empty" for the **Display Name**, and **Value**. The **Name** field should automatically be populated with "empty". So, all three fields are identical, containing "empty".
+1. Now, select the plus sign (**+**). For **Display name** and **Value**, enter *empty*. The **Name** field should automatically be populated with **empty**. So all three fields are identical, containing **empty**.
 
-1. Add two more state values: "full" and "melting". Again, the same text should appear in the **Display Name**, **Name**, and **Value**.
+1. Add two more state values: *full* and *melting*. Again, the same text should appear in the fields for **Display name**, **Name**, and **Value**.
 
-    [![Screenshot showing how to create contents state for the simulated device](../media/refrigerated-trucks-contents.png)](../media/refrigerated-trucks-contents.png#lightbox)
+    [![Screenshot showing how to create contents states for the simulated device.](../media/refrigerated-trucks-contents.png)](../media/refrigerated-trucks-contents.png#lightbox)
 
-1. Carefully check each capability before moving on. 
+1. Carefully check each capability before you continue. 
 
-1. Now, to add some uncertainty to our simulation, let's add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably! Add _on_, and _off_ and _failed_ entries for a cooling system. Start by selecting **+ Add capability**, and add another state.
+1. To add some uncertainty to the simulation, add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably. To add _on_, _off_, and _failed_ entries for the cooling system. start by selecting **Add capability**. Then add another state.
 
     | Entry summary | Value |
     | --- | --- |
-    | Display Name | Cooling system state |
+    | Display name | Cooling system state |
     | Name | CoolingSystemState |
-    | Capability Type | Telemetry |
+    | Capability type | Telemetry |
     | Semantic type | State |
     | Value schema | String |
 
-1. Now add three values: "on", "off", and "failed". Make sure that each word appears in the **Display Name**, **Name**, and **Value** fields.
+1. Now add three values: _on_, _off_, and _failed_. Make sure that each word appears in the **Display Name**, **Name**, and **Value** fields.
 
     [![Screenshot showing how to create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)](../media/refrigerated-trucks-cooling.png#lightbox)
 
