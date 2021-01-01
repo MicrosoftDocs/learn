@@ -1,4 +1,4 @@
-In this module, you've learned about ..... <!--- This paragraph still needs to be completed. --->
+In this module, you've learned about Microsoft technologies used for data classification and data protection. You also learned about sensitivity labels and their usage for data protection, as well as about Microsoft cloud access security broker solution and Office 365 message encryption.
 
 ### Learn more
 
