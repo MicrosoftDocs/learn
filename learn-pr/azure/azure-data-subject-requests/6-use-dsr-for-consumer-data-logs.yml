@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-data-subject-requests.6-how-to-respond-to-dsr-for-system-generated-logs
-title:  How to use DSR for consumer data and logs
+title:  How to respond to DSR for system-generated logs?
 metadata:
-  title:  How to use DSR for consumer data and logs
-  description:  How to use DSR for consumer data and logs
+  title:  How to respond to DSR for system-generated logs?
+  description:  How to respond to DSR for system-generated logs?
   ms.date: 11/13/2020
   author: micrum
   ms.author: micrum
