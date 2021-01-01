@@ -15,7 +15,7 @@ Data that could be derived from system-generated logs includes:
 
 Example 1: DSR for system-generated logs in Azure
 
-A customer of Contoso, Ltd that resides in Spain has submitted a DSR form in the corporate website to see the their personal data stored in system-generated logs. To execute the DSR you perform the following tasks:
+A customer of Contoso, Ltd that resides in Spain has submitted a DSR form in the corporate website to see the <!--- Word "the" should be deleted. ---> their personal data stored in system-generated logs. To execute the DSR you perform the following tasks:
 
 **Export**
 1. Notify the Tenant administrator of the request for system-generated logs.
@@ -55,7 +55,7 @@ In the event that Contoso, Ltd were to have a global presence in one or more nat
 |National Cloud|Export Steps|
 |---|---|
 |Office 365 Germany|Same steps previously described|
-|Office 365 US Government|Go to the Office 365 admin portal and submit a request to Microsoft Support|
+|Office 365 US Government|Go to the Office 365 admin portal <!--- I don't have access to Office 365 US Government or operated by 21Vianet, but I would expect that portal has "Microsoft 365" in its name (Microsoft 365 admin center), similarly as in publicly accessable Office 365. Please verify and update if needed (this and next table row). ---> and submit a request to Microsoft Support|
 |Office 365 operated by 21Vianet (China)|Go to the Office 365 operated by 21Vianet admin portal and then go to **Commerce > Subscription > Privacy > GDPR** and enter the required information|
 
 ## Tools used for DSR for system-generated logs
