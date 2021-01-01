@@ -54,7 +54,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
 1. Create a container called **messages** in your storage account running the following command. Use the **connectionString** you copied in the previous step.
 
     ```azurecli
-    az storage container create -n messages --connection-string "<connection string here>"
+    az storage container create -name messages --connection-string "<connection string here>"
     ```
 
 ## Clone the Event Hubs GitHub repository
@@ -96,7 +96,7 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then press <kbd
     - `"Your Event Hub"` with the name of your Event Hub.
     - `"Your policy name"` with **RootManageSharedAccessKey**.
     - `"Your primary SAS key"` with the value of the **primaryKey** key for your Event Hub namespace that you saved earlier.
- 
+
     > [!TIP]
     > Unlike the terminal window, the editor can use typical copy/paste keyboard accelerator keys for your OS.
 
@@ -138,7 +138,7 @@ You'll now build the Java application running **mvn** commands.
 
 You'll now configure a **receiver** (also known as **subscribers** or **consumers**) application to ingest data from your Event Hub.
 
-For the receiver application, two methods are available; **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
+For the receiver application, two classes are available: **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
 In this unit, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
@@ -153,7 +153,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
     ```bash
     code .
     ```
-    
+
 1. Select the **EventProcessorSample.java** file.
 
 1. Locate and replace the following strings in the editor:
@@ -163,7 +163,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
     - `----SharedAccessSignatureKeyName----` with **RootManageSharedAccessKey**.
     - `----SharedAccessSignatureKey----` with the value of the **primaryKey** key for your Event Hubs namespace that you saved earlier.
     - `----AzureStorageConnectionString----` with your storage account connection string that you saved earlier.
-    - `----StorageContainerName----` with **messages**.
+    - `----StorageContainerName----` with "messages".
     - `----HostNamePrefix----` with the name of your storage account.
 
 1. Save **EventProcessorSample.java** either with the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
