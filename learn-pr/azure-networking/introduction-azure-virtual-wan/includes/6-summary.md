@@ -8,7 +8,7 @@ It's deployed in a well-understood hub-and-spoke architecture. This model suppor
 
 - Customers use Microsoft global WAN with no contracts.
 - Microsoft owns and runs one of the largest backbone networks in the world, connecting their data centers and customers.
-- Any-to-any connectivity encompasses ExpressRoute, Site-to-Site & Point-to-Site VPN, and SD-WAN.
+- Any-to-any connectivity encompasses ExpressRoute, site-to-site and point-to-site VPN, and SD-WAN.
 - Virtual WAN provides the most optimal way to connect to Azure.
 - Azure Virtual WAN is global with no geographic boundaries.  
 

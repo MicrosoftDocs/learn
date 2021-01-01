@@ -18,19 +18,19 @@ In this module, you’ll:
 
 To get the best learning experience from this module, you should have:
 
-- Intermediate-level knowledge of networking concepts such as: 
-    - routing, 
-    - hubs, 
-    - switches,
-    - DNS.
+- Intermediate-level knowledge of networking concepts such as:
+    - Routing
+    - Hubs
+    - Switches
+    - DNS
 - Beginner-level knowledge of Azure networking services including:
-    -  virtual networks, 
-    - ExpressRoute, 
-    - site-to-site VPN, 
-    - point-to-site VPN, 
-    - Azure Firewall, 
-    - Azure regions.
+    - Virtual networks
+    - ExpressRoute
+    - Site-to-site VPN
+    - Point-to-site VPN
+    - Azure Firewall
+    - Azure regions
 - Intermediate-level knowledge of security concepts such as:
-    -  the zero-trust security model,
-    -  identity management,
-    -  role-based access controls.
+    -  The zero-trust security model
+    -  Identity management
+    -  Role-based access controls
