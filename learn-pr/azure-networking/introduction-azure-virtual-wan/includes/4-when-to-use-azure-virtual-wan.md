@@ -15,14 +15,14 @@ Enterprises can choose from these options:
 
 | Enterprise connection model | Functional features|
 |:------------------------------------------- |:-------------------- |
-|  Direct Interconnect Model | The SD-WAN branch customer-premises equipment (CPE) is directly connected to virtual hubs via IPsec connections. Azure workloads can be accessed securely and directly using IPsec tunnels connected to virtual hubs. |
+|  Direct Interconnect Model | The SD-WAN branch customer-premises equipment (CPE) is directly connected to virtual hubs with IPsec connections. Azure workloads can be accessed securely and directly using IPsec tunnels connected to virtual hubs. |
 | Direct Interconnect Model with NVA-in-VWAN-hub | Supports the interconnection of a third-party Network Virtual Appliance (NVA) directly into the virtual hub, protecting their current investments.|
-| Indirect Interconnect model | CPE deployed in their VNet are indirectly connected to virtual hubs using IPsec. The virtual CPE serves as an SD-WAN gateway into Azure. |
+| Indirect Interconnect model | CPE deployed in their virtual network are indirectly connected to virtual hubs using IPsec. The virtual CPE serves as an SD-WAN gateway into Azure. |
 |  Managed Hybrid WAN model  | Enterprises acquire a Managed Service Provider (MSP) to provide their SD-WAN design, integrations, and operations |
 
 The benefits of Azure Virtual WAN are not just for Fortune 500 global companies.
 
-Small, medium, and large business can take advantage of the multiple methods of connectivity outlined above. The options for connectivity offer flexibility for users to access a company’s services.
+Small, medium, and large business can take advantage of the multiple methods of connectivity previously outlined. The options for connectivity offer flexibility for users to access a company’s services.
 
 For example, the Virtual WAN any-to-any connectivity to support distributed working from home, your contractors, employees, and customers. They all can connect using Point-to-Site VPN. This service allows connection to all your resources on-premises and in Azure.
 
@@ -33,7 +33,7 @@ Azure Virtual WAN is beneficial for organizations that:
 - Want to take advantage of a global service using Azure global transit network.
 - Use automated spoke setup and configuration.
 - Take advantage of enhanced WAN performance without sacrificing security.
-- Use optimal routing through VNet connections with low latency and high bandwidth.
+- Use optimal routing through virtual network connections with low latency and high bandwidth.
 - Use firewall protection with security policy managed by Azure Firewall manager.
 
 The ease of management, any-to-any connectivity, access speed, and cost saving, are features of the Azure Virtual WAN.
