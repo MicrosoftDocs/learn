@@ -20,10 +20,10 @@ Beyond merely detecting errors, if any of the digits are entirely missing, this 
 Now, the digits you see on your sticky note are ISBN 0-306-$x$0615-2, where $x$ is just a coffee smudge where the fifth digit used to be. Since it *was* a valid ISBN, we have the equation
 
 $$
-\begin{align}
+\begin{split}
 0 &= (10\cdot 0 + 9\cdot 3 + 8\cdot 0 + 7\cdot 6 + 6\cdot x + 5\cdot 0 + 4\cdot 6 + 3\cdot 1 + 2\cdot 5 + 1\cdot 2) \bmod 11 \\
 0 &= (9 + 6\cdot x) \bmod 11
-\end{align}
+\end{split}
 $$
 
 which can only be true for the proper value of $x$. 
@@ -42,7 +42,7 @@ To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a qu
 Fortunately, the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger) from the Artithmetic namespace of the Standard Library can be used to do just that. 
 It implements the map
 $$
-\ket{x}\ket{b} \mapsto \ket{x}\ket{(b + a \cdot x) \text{mod} N}
+\ket{x}\ket{b} \mapsto \ket{x}\ket{(b + a \cdot x) \bmod N}
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 

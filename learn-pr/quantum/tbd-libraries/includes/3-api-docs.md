@@ -49,4 +49,4 @@ Video explanation talking through the page goes here.
 ### What's next?
 
 In the next unit, we change gears to actually start using the Q# libraries.
-Specifically, you'll make use of the Standard and Numerics libraries to define an oracle and use Grover's algorithm to determine the missing digit of the ISBN of a book you desperately need (for spaceship narrative purposes).
+Specifically, you'll make use of the Standard and Numerics libraries to define an oracle and use Grover's algorithm to determine the missing digit of the ISBN of a book you desperately need to save your spaceship.

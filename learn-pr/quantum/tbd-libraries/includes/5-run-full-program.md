@@ -103,7 +103,7 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
     }
 ```
 
-The `DumpMachine` call will allow us to see the full four-qubit quantum state, and the return will be the measurement result---hopefully the digit you need!
+The `DumpMachine` call will allow us to see the full four-qubit quantum state, and the return will be the measurement result--hopefully the digit you need!
 
 ### Full file
 

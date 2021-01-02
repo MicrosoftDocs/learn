@@ -13,12 +13,10 @@ When such a library has been made available to a Q# project, its namespaces can 
 
 ## How are Q# libraries distributed?
 
-Libraries in Q# are distributed as [NuGet](https://www.nuget.org/) packages.
-
-> [!NOTE]
-> NuGet is a package manager used for a variety of different platforms, and is the primary package manager used by most .NET languages.
-> It enables developers to produce, share, and consume useful code. 
-> A NuGet *package* is essentially a ZIP file containing compiled code and related files.
+Libraries in Q# are distributed as [NuGet](https://www.nuget.org/) packages. 
+NuGet is a package manager used for a variety of different platforms, and is the primary package manager used by most .NET languages.
+It enables developers to produce, share, and consume useful code. 
+A NuGet *package* is essentially a ZIP file containing compiled code and related files.
 
 The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package.
 Naturally only those packages meant for use with Q# can be used, such as those containing Q# libraries, new/custom simulators, or new magic commands for Q# Jupyter Notebooks.
@@ -41,7 +39,7 @@ Then, there are three libraries focused on more domain-specific functionality:
 
 ## How can I add a Q# library to my project?
 
-The standard library is included in every Q# project by default, but accessing other libraries—including the domain-specific libraries discussed above—requires adding their respective packages to the project.
+The standard library is included in every Q# project by default, but accessing other libraries--including the domain-specific libraries discussed above--requires adding their respective packages to the project.
 
 Depending on your Q# development setup, the method will vary. 
 
