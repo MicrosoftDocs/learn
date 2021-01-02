@@ -1,8 +1,7 @@
-<!-- Estimated time 5 minutes -->
 
 ## How Azure Virtual WAN works
 
-In evaluating whether Contoso should migrate to Azure Virtual WAN, you need to understand how Azure Virtual WAN works.
+In order to evaluate whether Contoso should migrate to Azure Virtual WAN, you need to understand how Azure Virtual WAN works.
 
 In this unit, you’ll learn how remote offices use Virtual WAN to connect to Azure. You’ll explore connectivity options and hub types.
 
@@ -39,8 +38,8 @@ Azure Virtual WAN supports two WAN types, Basic and Standard. A Basic WAN create
 | **Virtual WAN type** | **Hub type** | **Available configurations**                                 |
 | :------------------- | :----------- | :----------------------------------------------------------- |
 | Basic                | Basic        | Site-to-site VPN only                                        |
-| Standard             | Standard     | Full mesh connectivity, ExpressRoute, User VPN (P2S), VPN (site-to-site), Inter-hub, VNet-to-VNet transiting through the virtual hub |
-<!--LM: VNet is not approved. I suggest "virtual network to virtual network"-->
+| Standard             | Standard     | Full mesh connectivity, ExpressRoute, User VPN (P2S), VPN (site-to-site), Inter-hub, Virtual Network-to-Virtual Network transiting through the virtual hub |
+
 >[!NOTE]
 > A Basic Virtual WAN can be upgraded to a Standard Virtual WAN. A Standard Virtual WAN cannot be downgraded to a Basic Virtual WAN.
 

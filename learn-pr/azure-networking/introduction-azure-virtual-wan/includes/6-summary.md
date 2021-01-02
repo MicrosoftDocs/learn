@@ -1,4 +1,4 @@
-<!-- estimated unit duration 3 minutes -->
+
 ## Summary
 
 After completing the evaluation, you found that Azure Virtual WAN solved the issue of securely connecting to branch offices. This connection reduced transit time to access Azure services while also reducing company costs. Azure Virtual WAN provides any-to-any connectivity, custom routing, and security.

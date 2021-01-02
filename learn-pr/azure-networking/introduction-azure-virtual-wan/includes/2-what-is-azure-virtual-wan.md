@@ -1,8 +1,7 @@
-<!-- Estimated time: 6 minutes -->
-<!--LM: Is the previous line meant to be commented out? Global comment across units-->
+
 Azure Virtual WAN is a unified framework for networking, security, and routing.
 
-You’re investigating how Contoso could migrate from a typical hub and spoke network. Azure Virtual WAN and Virtual WAN hubs used across Azure regions, seem promising.
+You’re investigating how Contoso could migrate from a typical hub and spoke network. Azure Virtual WAN and Virtual WAN hubs used across Azure regions, seems to be a promising solution.
 
 The Virtual WAN hubs can be connected to your branches, virtual networks, and remote users. They provide scale and enhanced performance over the current Contoso network.
 
@@ -13,8 +12,8 @@ This networking topology, referred to as a star topology or hub and spoke, is of
 Contoso is considering using Azure to extend their WAN geographically. Azure's network spans the globe with many data centers interconnected using the Azure global high-speed backbone.
 
 Initially, as services are moved to Azure, a virtual network is created to connect with the virtual machines (VMs). An Azure VPN gateway is connected to the on-premises networks.
-<!--LM: Does it make sense as "virtual hub virtual network" to replace "virtual hub VNet"?-->
-When, a virtual WAN is created using the Azure portal, a virtual hub virtual network and gateways (optional) are created as its components.
+
+When, a virtual WAN is created using the Azure portal, a virtual hub, virtual network, and gateways (optional) are created as its components.
 
 This virtual hub functions as the focal point for connectivity to an on-premises network, and other virtual networks. The spokes are virtual networks that peer with the hub.
 
