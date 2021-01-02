@@ -1,0 +1,81 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.data-classification-and-data-protection.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+
+questions:
+
+  - content: "You are planning to use sensitivity labels. Select one thing that you cannot do with sensitivity labels."
+    choices:
+    - content: "Encrypt content"
+      isCorrect: false
+      explanation: "That's not correct. You can use sensitivity labels to encrypt content."
+    - content: "Protect content"
+      isCorrect: false
+      explanation: "That's not correct. You can use sensitivity labels to protect content."
+    - content: "Synchronize content between locations"
+      isCorrect: true
+      explanation: "That's correct. You cannot use sensitivity labels to synchronize content."
+
+  - content: "You created sensitivity labels to protect content. You configured permissions and protection level. What you should do before you users start to use these sensitivity labels?"
+    choices:
+    - content: "Copy sensitivity labels"
+      isCorrect: false
+      explanation: "That's not correct. You should publish sensitivity labels."
+    - content: "Publish sensitivity labels"
+      isCorrect: true
+      explanation: "That's correct. You should publish sensitivity labels."
+    - content: "Send sensitivity labels to your users."
+      isCorrect: false
+      explanation: "That's not correct. You should publish sensitivity labels."
+
+   - content: "You want to use Azure Information Protection to protect files on your local file servers. Before protection, you need to discover files that contain sensitive information types. What solution you should use?"
+    choices:
+    - content: "AIP scanner"
+      isCorrect: true
+      explanation: "That's correct. AIP scanner can work on local file servers and discover files that contain sensitive information types."
+    - content: "AIP client"
+      isCorrect: false
+      explanation: "That's not correct. AIP scanner can work on local file servers and discover files that contain sensitive information types."
+    - content: "Sensitivity labels"
+      isCorrect: false
+      explanation: "That's not correct. AIP scanner can work on local file servers and discover files that contain sensitive information types."
+
+   - content: "You need to discover applications in your local network that work with cloud services and are not under control of your IT department. What solution you should choose?"
+    choices:
+    - content: "Azure Information Protection"
+      isCorrect: false
+      explanation: "That's not correct. You should use Cloud App Security for this."
+    - content: "Azure Identity Protection"
+      isCorrect: false
+      explanation: "That's not correct. You should use Cloud App Security for this."
+    - content: "Cloud App Security"
+      isCorrect: true
+      explanation: "That's correct. You should use Cloud App Security for this."
+
+   - content: "What is the primary purpose of data encryption with customer key?"
+    choices:
+    - content: "To replace Bitlocker encryption."
+      isCorrect: false
+      explanation: "That's not correct. Data encryption with customer key work together with Bitlocker but it's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
+    - content: "To meet regulatory or compliance obligations for controlling root keys."
+      isCorrect: true
+      explanation: "That's correct. Data encryption with customer key primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
+    - content: "To provide stronger data encryption."
+      isCorrect: false
+      explanation: "That's not correct. Data encryption with customer key primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
+
+
+  
