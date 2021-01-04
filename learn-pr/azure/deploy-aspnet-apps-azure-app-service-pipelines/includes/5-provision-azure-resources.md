@@ -69,4 +69,4 @@ Both Azure App Service and Azure SQL Database implement public endpoints. There 
 
 ## Azure Pipelines Azure resource deployment agents
 
-To perform deployment of Azure resources, you have more flexibility due to multi-platform support for Azure CLI. This allows you to choose any of the Microsoft-hosted agents, including those running Ubuntu or macOS X.
+To perform deployment of Azure resources, you have more flexibility due to multi-platform support for Azure CLI. This allows you to choose any of the Microsoft-hosted agents, including those running Ubuntu or macOS.
