@@ -3,7 +3,7 @@ uid: introduction-azure-ddos-protection
 metadata:
   title: "Introduction to Azure DDoS Protection service"
   description: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection Standard.
-  ms.date: 02/28/2021
+  ms.date: 01/04/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
