@@ -1,4 +1,4 @@
-Here, we discuss two common methods for finding the global minimum of a cost function: *simulated annealing* and *quantum annealing*. Simulated annealing is based on ideas from thermal physics; quantum annealing is a quantum algorithm.
+Before we get down to business, let's discuss two common methods for finding the global minimum of a cost function: *simulated annealing* and *quantum annealing*. Don't get confused by the term *annealing*, the name of the algorithm dates from the days back on Earth, before humans knew modern tecnniques and materials. It comes from annealing in metallurgy which was a technique involving heating and controlled cooling of a material to increase the size of its crystals and reduce their defects. Simulated annealing is based on ideas from thermal physics, whereas quantum annealing is a quantum algorithm. 
 
 ## Simulated annealing
 
