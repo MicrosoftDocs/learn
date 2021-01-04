@@ -38,7 +38,7 @@ Storage ‘auto-grow’ is an option that prevents your server from running out 
 
 When you're assessing a trial of your payment app, creating a read-only server for analytics will be useful as you can show stakeholders analytics, without impacting the transaction times for users. Storage auto-grow will also keep costs down, while never running out of storage.
 
-## How PostgeSQL extensions work
+## How PostgreSQL extensions work
 
 PostgreSQL provides the ability to extend the functionality of your database by using extensions. After being loaded in the database, extensions can function like built-in features. Due to the open-source nature of PostgreSQL, there are too many extensions available to list on this page. A hyperlink to the full list is available in Unit 7 - Summary.
 

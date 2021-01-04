@@ -4,8 +4,8 @@ metadata:
   title: Integrate Azure Databricks with other Azure services
   description: "Integrate Azure Databricks with other Azure services"
   ms.date: 05/15/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Integrate Azure Databricks with other Azure services
