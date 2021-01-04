@@ -158,7 +158,7 @@ def printResultSummary(result):
 
         print(f'Mineral chunk {chunk} with weight {chunkWeight} was placed on Ship {ship}')
 
-    print(f'\nTotal weights: \n\tShip A: {shipAWeight} tonnes \n\tShip B: {shipBWeight} tonnes')
+    print(f'\nTotal weights: \n\tShip A: {shipAWeight} tons \n\tShip B: {shipBWeight} tons')
 
 printResultSummary(result)
 ```
@@ -176,11 +176,11 @@ Chunk 8 with weight 10 was placed on Ship A
 Chunk 9 with weight 11 was placed on Ship A
 
 Total weights:
-    Ship A: 52 tonnes
-    Ship B: 53 tonnes
+    Ship a: 52 tons
+    Ship b: 53 tons
 ```
 
-Great! The solver found a partition such that the ships are within 1 tonne of each other. A satisfactory outcome, as a perfectly balanced solution does not exist for this problem instance.
+Great! The solver found a partition such that the ships are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution does not exist for this problem instance.
 
 ## Improving the Cost Function
 
