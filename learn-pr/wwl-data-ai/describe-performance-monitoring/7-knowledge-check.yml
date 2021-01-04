@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/15/2020
+  ms.date: 12/30/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "The SQL VM Resource Provider"
       isCorrect: true
-      explanation: "That's correct. The SQL VM resource provider has an agent in your SQL Server VM which provides this information."
+      explanation: "That's correct. The SQL VM resource provider has an agent in your SQL Server VM, which provides this information."
     - content: "Azure Monitor"
       isCorrect: false
       explanation: "That's incorrect. Azure Monitor does not include data from within the VM resource."
     - content: "Intelligent Insights"
       isCorrect: false
-      explanation: "That's incorrect. Intelligent insights provides some additional data, but does not include SQL Server information."
+      explanation: "That's incorrect. Intelligent insights provide some other data, but does not include SQL Server information."

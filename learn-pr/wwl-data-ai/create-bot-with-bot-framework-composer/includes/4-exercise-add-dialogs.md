@@ -38,10 +38,10 @@ Then create a trigger with the following settings:
 
 - Select **Intent recognized** from the **What is the type of this trigger?** drop-down list.
 - Enter **weather-regex** for the **What is the name of this trigger (RegEx)** value.
-- Enter **weather** for the **Please input regex pattern** value.
+- Enter **-weather** for the **Please input regex pattern** value.
 
 > [!NOTE]
-> The text entered in the regex pattern text box is a simply regular expression pattern that will cause the bot to look for the word *weather* in any incoming message.  If weather is present, the message becomes a **recognized intent**.
+> The text entered in the regex pattern text box is a simply regular expression pattern that will cause the bot to look for the word *weather* in any incoming message.  If weather is present, the message becomes a **recognized intent**. A (-) dash is required syntax to run correctly. 
 
 1. Now that the trigger is created, you need to configure an action for it. In the authoring canvas for the trigger, elect the **+** symbol under your new **weather-regex** trigger node. Then in the list of actions, select **Dialog Management** and select **Begin a new dialog**.
 1. With the **Begin a new dialog** action selected, in the properties pane, select the **getWeather** dialog from the **Dialog name** drop-down list to start the **getWeather** dialog you defined earlier when the **weather-regex** trigger is recognized.

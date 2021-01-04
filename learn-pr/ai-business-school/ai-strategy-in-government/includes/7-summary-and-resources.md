@@ -14,7 +14,7 @@ Check out reports, podcasts, and training resources to learn more about how gove
 
 * Read [The Ethics of Artificial Intelligence: A Guide for Government Leaders white paper](https://tech.humanrights.gov.au/sites/default/files/2019-02/AHRC_WEF_AI_WhitePaper2019.pdf) to consider some of these ethical questions raised by the adoption of AI-based solutions.
 
-* Read [Understanding Machine Learning: A Guide for Government Leaders white paper](https://www.quantiq.com/insights/understanding-machine-learning-a-guide-for-government-leaders/) to review the core concepts of machine learning to make informed decisions about incorporating it into your organization.
+* Read Understanding Machine Learning: A Guide for Government Leaders white paper to review the core concepts of machine learning to make informed decisions about incorporating it into your organization.
 
 For example, you can to listen to the ["Intelligent Technologies" episode](http://govpod.mpsn.libsynpro.com/001-predictive-technologies) of our government podcast series to hear how national and municipal governments can use AI, the Internet of Things (IoT), blockchain, and other transformative technologies to improve their services. 
 
