@@ -6,8 +6,7 @@ Regulations exist that provide rights to people (data subjects and consumers) to
 |Applies to any controller of EU citizens data regardless of their location or size|Applies to controllers in California earning more than $25 million USD or controllers that sell personal information|
 |Penalties for non-compliance and breaches|Penalties for breaches and provisions for consumer lawsuits|
 
-Reference: "Four differences between the GDPR and the CCPA" <!--- If I know correctly, reference URLs and URLs that provide additional information/reading should be (only?) in the last topic. Personally I'm OK if URLs are included also in other topics, but IDs will decide if that is allowed/acceptable. --->
-<!--- ID: I have moved the URL to last unit but left the name of the reference in this case as it is not MS content RL ---> 
+Reference: "Four differences between the GDPR and the CCPA" <!--- If I know correctly, reference URLs and URLs that provide additional information/reading should be (only?) in the last topic. Personally I'm OK if URLs are included also in other topics, but IDs will decide if that is allowed/acceptable. ---> <!--- ID: I have moved the URL to last unit but left the name of the reference in this case as it is not MS content RL ---> 
 
 ## What is a data subject request?
 
