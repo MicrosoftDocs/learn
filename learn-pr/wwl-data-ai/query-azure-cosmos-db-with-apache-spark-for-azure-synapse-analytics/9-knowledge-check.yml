@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/23/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "When you want to switch to SparkSQL in a notebook, what is the first command to type?"
+    choices:
+    - content: "%%sparksql."
+      isCorrect: false
+      explanation: "Incorrect. The %%sparksql command is not a valid command."
+    - content: "%%spark."
+      isCorrect: false
+      explanation: "Incorrect. The %%spark command is not a valid command."
+    - content: "%%sql."
+      isCorrect: true
+      explanation: "Correct.  When you want to switch to SparkSQL in a notebook, type the %%sql command."
+  - content: "What SparkSQL method reads data from the analytical store?"
+    choices:
+    - content: "cosmos.olap."
+      isCorrect: true
+      explanation: "Correct. Cosmos.olap is the method that connects to the analytical store in Azure Cosmos DB."
+    - content: "cosmos.oltp."
+      isCorrect: false
+      explanation: "Incorrect. Cosmos.oltp is the method that connects to the transactional store in Azure Cosmos DB."
+    - content: "cosmos.db."
+      isCorrect: false
+      explanation: "Incorrect.  Cosmos.db is not a valid method."
