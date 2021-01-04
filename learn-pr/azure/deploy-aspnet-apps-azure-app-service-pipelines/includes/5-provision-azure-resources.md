@@ -25,7 +25,7 @@ az group create -name apdevops-rg -location eastus
 ```
 
 When you first run this command , its execution will create a resource group with the matching name and location (assuming that such group does not already exist) and generate output that provides its JSON representation. Every subsequent execution will result in the same the outcome, without affecting the resource group state or generating an error message. This effectively means that this Azure CLI command is idempotent.
-
+<!-- Remove extra space right after "command" and the ",". -->
 Idempotency is a critical component of IaC. In scenarios more complex than the one involving creating a resource group, you could use IaC to restore original configuration of an Azure resource and ensure consistency of your environment. 
 
 ### IaC and Azure Pipeline stages
@@ -70,3 +70,4 @@ Both Azure App Service and Azure SQL Database implement public endpoints. There 
 ## Azure Pipelines Azure resource deployment agents
 
 To perform deployment of Azure resources, you have more flexibility due to multi-platform support for Azure CLI. This allows you to choose any of the Microsoft-hosted agents, including those running Ubuntu or macOS X.
+<!-- Delete the X in "macOS X", it should be "macOS". -->
