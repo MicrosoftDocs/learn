@@ -15,21 +15,21 @@ First, let's create a Data Lake Storage named **demodw** in Azure Synapse Analyt
     | ----------- | ----------- |
     | **Basics** tab > **Project details** section |
     | Subscription     | Name of the subscription you are using in this exercise. |
-    | Resource group        | Select **Create new**, and enter **mslearn-demodw**, and select **OK**. |
+    | Resource group        | Select **Create new**, enter **mslearn-demodw**, and then select **OK**. |
     | **Workspace details** |
-    | Workspace name | **sampledatawhxx**, where xx are your initials |
+    | Workspace name | **sampledatawhxx**, where *xx* are your initials. |
     | Region | Select a region near to you. |
     | Select Data Lake Storage Gen2 | From subscription |
-    | Account name | Select **Create new**, and enter **demodw**. |
-    | File system name | Select **Create new**, and enter **demodw**. |
+    | Account name | Select **Create new**, and enter *demodw*. |
+    | File system name | Select **Create new**, and enter *demodw*. |
     
 1. Select **Next: Security**. Enter the following settings:
 
     | Field       | Value |
     | ----------- | ----------- |
     | **Security** tab > **SQL administrator credentials** section |
-    | Admin username     | dwdbadmin |
-    | Password        | Pa55w.rd |
+    | Admin username   | dwdbadmin |
+    | Password         | Pa55w.rd |
     | Confirm password | Pa55w.rd |
 
 1. Select **Review + create**. The **Create Synapse workspace** pane reappears with a *Validation succeeded* notification.
