@@ -27,6 +27,7 @@ quiz:
     - content: "General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA)"
       isCorrect: true
       explanation: "That's is correct. Both GDPR and CCPA provide right to be forgotten"
+  
   - content: "Which of the following are supported DSRs for system-generated logs?"
     choices:
     - content: "Access"
@@ -38,42 +39,37 @@ quiz:
     - content: "Restrict"
       isCorrect: false
       explanation: "That's incorrect. This is not a supported DSR for system-generated logs"
-    - content: "Delete"
-      isCorrect: true
-      explanation: "That's correct. This is a supported DSR for system-generated logs"
-    - content: "Export"
-      isCorrect: true
-      explanation: "That's correct. This is a supported DSR for system-generated logs"
 
-  - content: "Which of the following statement is not true regarding the scope of DSR execution for a Microsoft enterprise customer?"
+
+  - content: "Which of the following statements is accurate regarding the scope of DSR execution for a Microsoft enterprise customer?"
     choices:
     - content: "DSR execution is performed in every tenant in the Microsoft cloud that the data subject's personal information resides in"
       isCorrect: false
-      explanation: "That's incorrect. DSR execution is only perfomed by the enterprise customer that receives the request and iss have not affect on any other tenants"
-    - content: "A"
+      explanation: "That's incorrect. DSR execution is only perfomed by the enterprise customer (tenant) that receives the request and does not have not affect on any other tenants"
+    - content: "A user that subscribed to Azure outside of enterprise customer should use the data privacy dashboard to submit their DSR"
       isCorrect: true
-      explanation: ""
-    - content: "A"
+      explanation: "That's correct. A user that uses their own MSA outside of an enterpirse customer tenant will need to contact Microsoft directly with their DSR."
+    - content: "A data subject's customer data can only reside in a single Azure Active Directory tenant"
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect. The data subject may participate in multiple Azure Active Diretory tenants."
 
   - content: "Based on Microsoft's estimation, 90% of an organization data is stored where in the Microsoft Cloud?"
     choices:
-    - content: "SharePoint Online"
-      isCorrect: true
-      explanation: "That's correct. Word, Excel, PowerPoint, and OneNote are likely stored here."
-    - content: "OneDrive for Business"
-      isCorrect: true
-      explanation: "That's correct. Word, Excel, PowerPoint, and OneNote are likely stored here."
+    - content: "Access Databases"
+      isCorrect: false
+      explanation: "That's incorrect. Office documents like Word, Excel, PowerPoint, and OneNote are not likely stored here."
+    - content: "Dynamics365"
+      isCorrect: false
+      explanation: "That's incorrect. Office documents like Word, Excel, PowerPoint, and OneNote are not likely stored here."
     - content: "Exchange Online"
       isCorrect: true
-      explanation: "That's correct. Word, Excel, PowerPoint, OneNote, documents and Outlook messages are likely stored here."
+      explanation: "That's correct. Office documents like Word, Excel, PowerPoint, OneNote, documents and Outlook messages are likely stored here."
 
-  - content: "In which of the following scenarios would Microsoft be considered the data controller and not the data processor for a DSR?"
+  - content: "In which of the following scenarios would Microsoft be considered the data controller and not the data processor?"
     choices:
-    - content: "A part-time employee uses their student account to access OneDrive account"
-      isCorrect: true
-      explanation: "That's correct. When a user signs in with their own Azure Active Directory ID the data subject will need to initiate a DSR directly to Microsoft and not their employer"
+    - content: "A part-time employee uses their account to access OneDrive for Business."
+      isCorrect: false
+      explanation: "That's incorrect. Weither a user a part-time or fulltime, when a user signs in with their their employeer's Azure Active Directory tenant will be the data controller."
     - content: "A customer sends an email to their financial institution, which is a Microsoft enterprise customer, regarding their loan"
       isCorrect: false
       explanation: "That's incorrect. The email recieved from the customer containing personal information is stored in the enterprise customers Exchange Online mailboxes"
