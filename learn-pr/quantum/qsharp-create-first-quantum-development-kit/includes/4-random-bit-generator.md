@@ -1,20 +1,30 @@
-Now that you understand some of the basics, it's your turn to build a quantum random number generator.
+Now that you understand some of the basics, it's your turn to build a small quantum program. 
 
-You're likely already familiar with the concept of a random number generator. A random number generator is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
+Before using quantum computers to solve decisive problems, the captain of the space fleet has command to implement quantum physics in our system as a test. Your first task consists of improving current security protocols. 
 
-On classical computers, most random number generators don't produce truly random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates the same sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
+Humans may have good diplomatic relations, but we need to take care of invaders and space pirates. Good relations don’t mean not to be careful! Every member of the space fleet has a personal and non-transferable password. These passwords change every hour thanks to a random number generator (RNG) to ensure security.
 
-The quantum random number generator uses an `H` operation to put a qubit into superposition. The measurement results in a zero or a one. But how can we use this behavior to generate larger numbers?
+You're likely already familiar with the concept of a random number generator (RNG). On classical computers, most RNG don't produce truly random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates the same sequence of numbers based on some initial value, called a _seed_. 
 
-Let's say you repeat the process four times, generating this sequence of binary digits:
+We say it is pseudorandom because after a certain number of iterations, called _period_, the RNG returns the seed and the same sequence of numbers starts all over again. To better approximate random values, this seed is often the current time from the CPU's clock.
+
+You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers and thus, jeopardize space fleet security. To do so you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and unbreakable. 
+
+A QRNG is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
+
+You start by taking a qubit in a classical state, for example zero, as seed. The first step of the QRNG is to use an `H` operation to put the qubit \ket{0}$ into superposition. The measurement of this state results in a bit zero or a one with equal 50% probability each one. The value of this bit is truly random, there is no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger numbers to use as a valid password?
+
+Let's say you run your QRNG four times, generating this sequence of binary digits:
 
 $${0, 1, 1, 0}$$
 
-If you concatenate, or combine, these bits into a bit string, you can form a larger number. In this example, the bit sequence ${0110}$ is equivalent to six in decimal.
+If you concatenate, or combine, these bits into a bit string, you can form a decimal number. In this example, the bit sequence ${0110}$ is equivalent to six in decimal.
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-You'll build out your quantum random number generator in two phases. In this part, you build out the first phase, which is to generate a single random bit.
+If you repeat this process many times you can combine multiple bits to form any large number. Now you can provide your superior with that number as a seccure password since you can be sure that no space hacker could determine the results of the sequence of measurements. 
+
+You build out your quantum random number generator in two phases. In this chapter, you build out the first phase, which is to generate a single random bit.
 
 To do so, you:
 
@@ -23,7 +33,7 @@ To do so, you:
 > * Add code that uses the `H` operation to put a qubit into superposition and then measure its value.
 > * Run the program.
 
-In the next part, you build out the second phase, which combines random bits to form a larger number.
+In the next chapter, you build out the second phase, which combines random bits to form a larger number.
 
 > [!NOTE]
 > Keep in mind that because you're using the simulator to run your Q# program, you still get pseudorandom results. But after you verify your program through the simulator, you can run the same program on a quantum computer to get truly random results that measure fundamental physical processes.
