@@ -49,7 +49,7 @@ fourth#fifth#sixth!
         sixth
 ```
 
-Whether or not you used the solution shown here, as long as you got the desired output, you were successful. Now you can continue on to the knowledge check in the next unit.
+Whether you used the solution shown here, as long as you got the desired output, you were successful. Now you can continue to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, maybe you should review the previous units before you continue on. All new ideas we describe in other modules will depend upon your understanding of the ideas that were presented in this module.

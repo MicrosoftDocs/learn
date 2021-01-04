@@ -5,7 +5,7 @@ Azure Storage provides a REST API to work with the containers and data stored in
 - **Tables** for structured storage of key/values.
 - **Files** for traditional SMB file shares.
 
-## Using the REST API
+## Use the REST API
 
 The Storage REST APIs are accessible from anywhere on the Internet, by any app that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
 
@@ -67,7 +67,7 @@ This would return an XML block with data specific to the account:
 
 However, this approach requires a lot of manual parsing and the creation of HTTP packets to work with each API. For this reason, Azure provides pre-built _client libraries_ that make working with the service easier for common languages and frameworks.
 
-## Using a client library
+## Use a client library
 
 Client libraries can save a significant amount of work for app developers because the API is tested and it often provides nicer wrappers around the data models sent and received by the REST API.
 

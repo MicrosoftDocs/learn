@@ -10,7 +10,7 @@ Manage default network access rules for storage accounts through the Azure porta
 To change default network access in the Azure portal:
 
 1. Go to the storage account you want to secure.
-1. Select **Firewalls and virtual networks**.
+1. Select **Networking**.
 1. To restrict traffic from selected networks, choose **Selected networks**. To allow traffic from all networks, select **All networks**.
 1. Select **Save** to apply your changes.
 
