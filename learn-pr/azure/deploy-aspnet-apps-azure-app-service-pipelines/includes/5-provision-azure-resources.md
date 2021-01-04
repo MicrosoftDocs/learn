@@ -1,4 +1,4 @@
-With the build artifacts successfully generated and published into Azure Pipelines, you are ready to proceed to the next step. This step is actually not dependent on the build, since it involves provisioning of the Azure resources into which you will deploy artifacts. However, starting with the predefined **ASP.NET** templates simplifiles generation of the YAML pipeline you will now modify to include the first set of deployment steps. This deployment implements the concept of *Infrastructure as code*. 
+With the build artifacts successfully generated and published into Azure Pipelines, you are ready to proceed to the next step. This step is actually not dependent on the build, since it involves provisioning of the Azure resources into which you will deploy artifacts. However, starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you will now modify to include the first set of deployment steps. This deployment implements the concept of *Infrastructure as code*. 
 
 ## What is Infrastructure as code?
 

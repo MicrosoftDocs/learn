@@ -28,4 +28,4 @@ As the Azure resource deployment stage of the pipeline, this stage does not have
 
 ## Continuous Integration and Continuous Deployment
 
-The `trigger:` element of a YAML pipeline allows you to enable continuous integration, which triggers the build process following commits to the main branch of the GitHub repository hosting the sample ASP.NET app code. The multi-stage pipeline you authored also performs continuous deployment, automatically provisioning target Azure environment and populating its resoures with build artifacts.
+The `trigger:` element of a YAML pipeline allows you to enable continuous integration, which triggers the build process following commits to the main branch of the GitHub repository hosting the sample ASP.NET app code. The multi-stage pipeline you authored also performs continuous deployment, automatically provisioning target Azure environment and populating its resources with build artifacts.

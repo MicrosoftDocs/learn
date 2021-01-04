@@ -1,4 +1,4 @@
-In this exercise, we'll complete the deployment proess by using an Azure DevOps release pipeline to deploy the artifacts generated in the second exercise of this module into the the Azure App Service web app you provisioned in the previous exercise. 
+In this exercise, we'll complete the deployment process by using an Azure DevOps release pipeline to deploy the artifacts generated in the second exercise of this module into the Azure App Service web app you provisioned in the previous exercise. 
 
 ## Configure the Azure Pipeline to deploy the sample ASP.NET web app to the Azure App Service web app
 
@@ -51,7 +51,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
    ]
    ```
 
-   :::image type="content" source="../media/8-azure-app-service-settings-task.png" alt-text="The azure-pipelines.yml editor pane including the azure app srevice settings task with its parameters set.":::
+   :::image type="content" source="../media/8-azure-app-service-settings-task.png" alt-text="The azure-pipelines.yml editor pane including the azure app service settings task with its parameters set.":::
 
 
 1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, press the **Tab** key twice to indent it.
@@ -170,7 +170,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 
 ## Run the Azure Pipeline to provision Azure resources
 
-With the new stage of the Azure Pipeline created, you can now invoke exection of its tasks. You can exclude the second stage, since the required Azure resources have already been provisioned in the previous exercise of this module. 
+With the new stage of the Azure Pipeline created, you can now invoke execution of its tasks. You can exclude the second stage, since the required Azure resources have already been provisioned in the previous exercise of this module. 
 
 1. On the **azure-pipelines.yml** editor pane, select **Run**.
 1. On the **Run pipeline** pane, select **Stages to run**, on the **Stages to run** pane, uncheck the **DeployAzureResources** checkbox, and select **Use select stages**. 
@@ -189,7 +189,7 @@ With the new stage of the Azure Pipeline created, you can now invoke exection of
 
 ## Examine the outcome of the Azure Pipeline run
 
-Verify that the sample ASP.NET web app has been succesfully deployed to the Azure App Service web app.
+Verify that the sample ASP.NET web app has been successfully deployed to the Azure App Service web app.
 
 1. Within the browser window, on the browser tab displaying the Azure DevOps project, switch to the web browser tab displaying the Azure portal.
 1. In the Azure portal, on the **aspdevops-rg** resource group blade, select the entry representing the App Service web app.
@@ -223,7 +223,7 @@ To conclude this exercise, you will trigger integration and deployment by modify
 
 1. Within the web browser window displaying the Azure DevOps portal, switch to the browser tab displaying the fork of the GitHub repository you created in the first exercise of this lab.
 1. Within the web browser window displaying the GitHub repository you created in the first exercise of this lab, select the **Code** tab header.
-1. Within the repository hierarchy, naviagate to the **/DotNetAppSqlDb/Views/Shared/_Layout.cshtml** file.
+1. Within the repository hierarchy, navigate to the **/DotNetAppSqlDb/Views/Shared/_Layout.cshtml** file.
 1. On the page displaying the content of **_Layout.cshtml**, select the **Edit this file** pencil-shaped icon.
 1. Change the content of line **27** from `<p>&copy; @DateTime.Now.Year - MS Learn Sample ASP.NET Application</p>` to `<p>&copy; @DateTime.Now.Year - MS Learn Sample Azure ASP.NET Application</p>` and select **Commit changes**.
 1. Within the web browser window displaying the GitHub repository, switch back to the web browser tab displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry.

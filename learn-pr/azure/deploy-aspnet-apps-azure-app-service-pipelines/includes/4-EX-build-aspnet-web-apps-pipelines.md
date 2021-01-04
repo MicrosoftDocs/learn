@@ -8,7 +8,7 @@ You will start by creating a GitHub account, an Azure DevOps organization, and a
 > You will need a valid email address, such as one associated with a Microsoft LiveID user account.
 
 > [!NOTE]
-> You can skip this task if you already have an existing Azure DevOps organization and a corresponing GitHub account that you can use for exercises in this module.
+> You can skip this task if you already have an existing Azure DevOps organization and a corresponding GitHub account that you can use for exercises in this module.
 
 1. From your computer, start a web browser in the **private** mode and browse to [https://github.com](https://github.com). 
 1. On the GitHub home page, select **Sign up**.

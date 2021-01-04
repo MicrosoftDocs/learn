@@ -27,7 +27,7 @@ quiz:
     - content: "Separation between the build and deployment pipelines"
       isCorrect: false
       explanation: "That's incorrect. The separation between the build and deployment pipelines is available with the classic approach."
-  - content: "Which element of Azure Pipelines allows you to specify the operating system and software to be available on thef host that will be executing the pipeline steps?"
+  - content: "Which element of Azure Pipelines allows you to specify the operating system and software to be available on the host that will be executing the pipeline steps?"
     choices:
     - content: "job"
       isCorrect: true

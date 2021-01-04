@@ -6,7 +6,7 @@ The process of building ASP.NET app artifacts is well defined and it consists of
 
 1. Identifying and updating NuGet package dependencies. This allows you to retrieve all packages required to perform the build.
 1. Building artifacts. This generates a compiled app that you can subsequently test and deploy.
-1. Runing unit and functional tests. This allows you to verify functionality of the built app prior to its deployment.
+1. Running unit and functional tests. This allows you to verify functionality of the built app prior to its deployment.
 1. Indexing source code and publishing symbols. This allows you to debug the app on another computer that does not have access to the source code. 
 1. Publishing build artifacts to a location that you designate. This makes the artifacts available for subsequent deployment. 
 
