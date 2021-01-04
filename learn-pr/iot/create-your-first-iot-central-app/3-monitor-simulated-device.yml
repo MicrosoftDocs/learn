@@ -44,11 +44,11 @@ quiz:
       isCorrect: false
       explanation: Names aren't descriptive text.
 
-  - content: 'What is meant by a Writable Property?'
+  - content: 'What is meant by a Writeable Property?'
     choices: 
     - content: 'A property that can be written to in the device app, but not changed by the IoT Central app.'
       isCorrect: false
-      explanation: IoT Central can change a writable property. 
+      explanation: IoT Central can change a writeable property. 
     - content: 'A property that can be written to by the IoT Central app, but not by the device app.'
       isCorrect: false
       explanation: A device app can change any of its own properties.

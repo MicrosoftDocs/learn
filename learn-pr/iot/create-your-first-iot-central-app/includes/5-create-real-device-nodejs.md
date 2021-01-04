@@ -1,4 +1,4 @@
-In this unit, you are going to create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! 
+In this unit, you'll create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! 
 
 IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app is the same for a real truck. In other words, if you do run a refrigerated truck company, you would start with simulated code similar to the code in this unit. After this code works to your satisfaction, the simulation-specific code would be replaced with code that receives sensor data. This limited update makes writing the following code a valuable experience.
 
@@ -61,7 +61,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
     [![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
-1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
+1. Right-click the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 
 1. In the dialog that follows, search for and install the following libraries:
 
@@ -619,7 +619,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     > [!NOTE]
     > The `sendTruckTelemetry` is an important function, handling the sending of telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data.
 
-1. Add the code to handle writable properties. You only have one writable property in the app, though if there are more, they are easily added.
+1. Add the code to handle writeable properties. You only have one writeable property in the app, though if there are more, they are easily added.
 
     ```js
     // Send device twin reported properties. 
@@ -663,7 +663,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > This section of code is generic to most Node.js apps that communicate with IoT Central. To add additional writable properties, add entries to `var writeableProperties`.
+    > This section of code is generic to most Node.js apps that communicate with IoT Central. To add additional writeable properties, add entries to `var writeableProperties`.
 
 1. Add the connection callback function. This function is called when the Node.js app first attempts to contact IoT Central. This method handles the _read-only_ properties.
 
@@ -1329,7 +1329,7 @@ In the blank Program.cs file, insert the following code. Each additional section
     > [!NOTE]
     > The `SendTruckTelemetryAsync` is an important function, handling the sending of telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data.
 
-1. Add the code to handle properties. You only have one writable property, and one read-only property, in the app, though if there are more, they are easily added.
+1. Add the code to handle properties. You only have one writeable property, and one read-only property, in the app, though if there are more, they are easily added.
 
     ```cs
         static async Task SendDevicePropertiesAsync()
@@ -1352,7 +1352,7 @@ In the blank Program.cs file, insert the following code. Each additional section
     ```
 
     > [!NOTE]
-    > This section of code is generic to most C# apps that communicate with IoT Central. To add additional read-only properties, add to `reportedProperties`. To create a new writable property, set the `setting` string to the new property name, and create a similar `if` statement to the one above.
+    > This section of code is generic to most C# apps that communicate with IoT Central. To add additional read-only properties, add to `reportedProperties`. To create a new writeable property, set the `setting` string to the new property name, and create a similar `if` statement to the one above.
 
 1. Add the `Main` function.
 

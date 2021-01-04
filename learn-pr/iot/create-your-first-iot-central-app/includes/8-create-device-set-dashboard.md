@@ -8,7 +8,7 @@ Feel free to skip this unit, completing it is optional!
 
 1. Select **RefrigeratedTruck** in the **Devices** menu, to ensure the device we create uses this device template. The device template you select will be shown in bold text.
 
-1. Select **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
+1. Select **New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
 
 1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck2".
 
