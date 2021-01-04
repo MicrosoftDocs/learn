@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.2-azure-pipelines-github-repos
+title: What are Azure Pipelines and GitHub repositories?
+metadata:
+  title: What are Azure Pipelines and GitHub repositories?
+  description: Content
+  ms.date: 12/11/2020
+  author: mpolicht
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-azure-pipelines-github-repos.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.8-EX-deploy-aspnet-web-app-pipelines
+title: Exercise - Deploy a data-driven ASP.NET web app by using Azure Pipelines
+metadata:
+  title: Exercise - Deploy a data-driven ASP.NET web app by using Azure Pipelines
+  description: Content
+  ms.date: 12/11/2020
+  author: mpolicht
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-EX-deploy-aspnet-web-app-pipelines.md)]

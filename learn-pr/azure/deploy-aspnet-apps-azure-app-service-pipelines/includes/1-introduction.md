@@ -1,37 +1,33 @@
-<!-- Introductory text here: motivational scenario and lead-in. See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master 
+Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you'll focus on using them to implement existing ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store. 
 
-For guidance on writing a scenario, see https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios?branch=master
+To provide some context, imagine that you're a member of the IT team at a mid-sized financial services company. You have a programming background, but over the last few years, you've been managing platform services and operational support of internally developed applications. Your familiarity with software development, deployment, and maintenance gives you a unique perspective, providing you insight into both aspects of DevOps.
 
--->
+As part of the modernization of its computing environment, your company is considering migrating its ASP.NET applications and their associated database to the Azure App Service and Azure SQL Database. You welcome the change because you've learned of the benefits of Azure PaaS offerings. You're eager to experience them firsthand. 
 
-<!--
+However, you're concerned about the deployment methodology and approach to maintaining application updates. You realize that without a sensible DevOps strategy, your company won't be able to take full advantage of the cloud capabilities. 
 
-Guidance for all content:
-
- - Ignore the linter warning about how the first line of a unit should be a header. The platform renders the unit title as an H1 at the top. All headers used in content should be H2 or smaller.
- - Links to other content (in Learn, Docs or anywhere else), put them in a section in the final Summary unit called "Learn more" or "Further reading" or something similar. If you need to mention the external resources in the content, indicate to the user that links are located at the end of the module.
-- All content, including images, must be original and not copied from Docs or anywhere else.
-- Screenshots: see https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-create-screenshot?branch=master for requirements and guidance.
-- Conceptual images and diagrams: Don't spend lots of time creating polished diagrams. Work with the Learn team to submit a conceptual image creation request if new art is needed.
-- Video: Work with your contact on the Learn team.
-- Zone pivots: See https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-zone-pivots?branch=master
-- Think carefully about the knowledge prerequisites you declare for your content, and use them to shape the content and keep the scope reasonable. In both conceptual content and exercise steps, don't dwell on things you expect the reader to already know and understand.
-- Feel free to use HTML comments like these during authoring. They show up in published content as HTML comments - the platform doesn't render them on the page, but they are present in the pae source, so remove them all before publishing.
-
-Guidance for content and exercise units:
-
-- Most standard content should generally follow a pattern of alternating between "content" units and "exercise" units. See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-standardmodules?branch=master
-- Don't include a summary section in individual units
-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom
-
--->
+To address your concerns, you decided to reach out to management. You ask them to allow you to investigate the best approach to deploying data-driven ASP.NET applications to Azure App Services. Your intention is to evaluate the role that Azure Pipelines can serve in optimizing the efficiency and the functionality of that approach.
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+After completing this module, you'll be able to:
 
-<!--  Bullet list copied from index.yml -->
+- Provide an overview of App Services and Azure SQL Database. 
+- Describe core components of continuous integration and continuous deployment (CI/CD).
+- Describe the process of automated deployment process of App Services and Azure SQL Database.
+- Build and deploy data-driven ASP.NET web apps into Azure by using Azure Pipelines.
 
 ## Prerequisites
 
-<!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
+To get the best learning experience from this module, you should have beginner-level knowledge and experience of the following:
+
+- Core Azure App Service and Azure SQL Database concepts
+- Basic DevOps concepts such as pipelines and repositories
+- Data-driven ASP.NET apps
+
+To implement the exercises included in this module, you should have or be able to provision the following:
+
+- An Azure subscription in which you have the Owner role
+- An Azure Active Directory (Azure AD) tenant in which you have the Global Administrator role
+- An Azure DevOps organization in which you are the organization owner
+- An Azure GitHub account into which you can fork public GitHub repositories

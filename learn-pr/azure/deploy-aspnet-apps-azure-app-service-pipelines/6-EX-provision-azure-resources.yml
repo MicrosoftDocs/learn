@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.6-EX-provision-azure-resources
+title: Exercise - Provision Azure resources for data-driven ASP.NET apps
+metadata:
+  title: Exercise - Provision Azure resources for data-driven ASP.NET apps
+  description: Content
+  ms.date: 12/11/2020
+  author: mpolicht
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-EX-provision-azure-resources.md)]
