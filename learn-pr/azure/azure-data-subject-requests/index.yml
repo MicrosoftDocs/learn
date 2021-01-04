@@ -33,11 +33,13 @@ products:
 - m365-information-protection
 units:
 - learn.azure-data-subject-requests.1-introduction
-- learn.azure-data-subject-requests.2-what-data-subject-request
-- learn.azure-data-subject-requests.3-use-dsr-azure-ad
-- learn.azure-data-subject-requests.4-use-dsr-microsoft-accounts
-- learn.azure-data-subject-requests.5-use-dsr-office365-apps
-- learn.azure-data-subject-requests.6-use-dsr-for-consumer-data-logs
-- learn.azure-data-subject-requests.7-summary
+- learn.azure-data-subject-requests.2-what-is-a-data-subject-request
+- learn.azure-data-subject-requests.3-what-is-dsr-for-azure-ad-and-microsoft-service-accounts
+- learn.azure-data-subject-requests.4-what-is-dsr-for-office-365-applications
+- learn.azure-data-subject-requests.5-how-to-respond-to-dsr-for-customer-data
+- learn.azure-data-subject-requests.6-how-to-respond-to-dsr-for-system-generated-logs
+- learn.azure-data-subject-requests.7-exercise-execute-a-dsr-in-azure-active-directory
+- learn.azure-data-subject-requests.8-knowledge-check
+- learn.azure-data-subject-requests.9-summary
 badge:
   uid: learn.azure-data-subject-requests.badge
