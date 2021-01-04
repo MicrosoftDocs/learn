@@ -4,8 +4,8 @@ metadata:
   title: Build and query a Delta Lake
   description: "Build and query a Delta Lake"
   ms.date: 05/15/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and query a Delta Lake
