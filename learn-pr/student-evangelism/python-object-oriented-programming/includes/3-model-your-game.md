@@ -1,6 +1,6 @@
-You want to evaluate object-oriented programming (OOP) by rebuilding the game rock, paper, scissors. You have the original procedural code to look at for reference, but now you need to model it in an OOP format.
+You want to evaluate object-oriented programming (OOP) by building the game rock, paper, scissors. To do so, you first need to model it in an OOP format.
 
-To do so, we'll need to apply some fundamental OOP concepts, such as classes, objects, and state. This unit explores the following parts:
+We'll need to apply some fundamental OOP concepts, such as classes, objects, and state. This unit explores the following parts:
 
 - **Important OOP concepts**: To reason in OOP, you need to understand some fundamental concepts like classes, objects, and state. You need to know what the difference is between them and how they relate to one another.
 - **Variables in OOP**: You need to know how to deal with variables and how to add them to your objects.

@@ -10,13 +10,13 @@ _Scissors decapitate lizard, scissors cut paper, paper covers rock, rock crushes
 
 The preceding description can be translated into this updated rules table:
 
-|Choice   |Rock     |Paper    |Scissors  |Lizard| Spock |
-|---------|---------|---------|---------|------|-------|
-|Rock     | 0       | -1      |  1      |  1   |  -1   |
-|Paper    | 1       |  0      | -1      | -1   |   1   |
-|Scissors  | -1      |  1      |  0      |  1   |  -1   |
-|Lizard   | -1      |  1      | -1      |  0   |   1   |  
-|Spock    | 1       | -1      |  1      |  -1  |   0   |
+|Choice   |Rock     |Paper    |Scissors |Lizard |Spock |
+|---------|---------|---------|---------|-------|------|
+|Rock     |  0      | -1      |  1      |  1    | -1   |
+|Paper    |  1      |  0      | -1      | -1    |  1   |
+|Scissors | -1      |  1      |  0      |  1    | -1   |
+|Lizard   | -1      |  1      | -1      |  0    |  1   |  
+|Spock    |  1      | -1      |  1      | -1    |  0   |
 
 1. Locate the `Participant` class, and update the method `toNumericalChoice()` to look like so:
 
