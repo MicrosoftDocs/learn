@@ -92,9 +92,9 @@ After you’ve found the right software application, completing the purchase is 
 
 In the Azure portal, find the software application you want to buy and click ‘create’ or ‘set up + subscribe’. You’ll be prompted to provide some information before being able to use your new solution.
 
-:::image type="content" source="../media/11-purchase-create.png" alt-text="Screen shot of Azure benefit eligible badge in Azure Marketplace":::
+:::image type="content" source="../media/11-purchase-create.png" alt-text="Screen shot of the create button in the Azure Marketplace experience in the Azure portal":::
 
-:::image type="content" source="../media/12-save-subscribe-purchase.png" alt-text="Screen shot of set up and subscribe button in Azure Marketplace":::
+:::image type="content" source="../media/12-save-subscribe-purchase.png" alt-text="Screen shot of set up and subscribe button in Azure Marketplace in the Azure portal":::
 
 If you want to get a solution from the Azure Marketplace online store, you'll need to log in using your Azure account credentials after clicking “get it now“ on the product description page.
 
