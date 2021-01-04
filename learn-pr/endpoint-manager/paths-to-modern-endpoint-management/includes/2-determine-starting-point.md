@@ -1,6 +1,6 @@
 When you have decided to migrate your organization to Microsoft Endpoint Manager, you must determine where to start. You must confirm the endpoint management solution you and your organization currently use. Then, determine the direction and solution that will make the most sense for you and your organization.
 
-Questions to consider when determining your organization's future Enterprise Mobility Management (EMM) direction include the following:
+When determining your organization's future Enterprise Mobility Management (EMM) direction, consider the following questions:
 - Is your organization's devices, apps, and data currently managed in the cloud, on-premises, a combination of both cloud and on-premises, or not managed at all?
 - Do you need to have your organization's devices, apps, and data managed in the cloud, on-premises, or a combination of both cloud and on-premises?
 
