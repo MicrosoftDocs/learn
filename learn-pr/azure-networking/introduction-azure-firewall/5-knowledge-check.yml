@@ -36,7 +36,7 @@ quiz:
       explanation: "That's incorrect. You use a network rule to filter traffic based on one or more of the following items: IP address, port, and protocol."
     - content: "NAT"
       isCorrect: false
-      explanation: "That's incorrect. You use a NAT rule to translate and filter inbound Internet traffic based on your firewall's public IP address and a specified port number."
+      explanation: "That's incorrect. You use a NAT rule to translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number."
   - content: "Suppose a company wants to deploy Azure Firewall Manager. Which of the following items is not an acceptable network architecture for Azure Firewall Manager?" 
     choices:
     - content: "Spoke virtual network"
@@ -47,4 +47,4 @@ quiz:
       explanation: "That's incorrect. A hub virtual network is a standard Azure virtual network where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager."
     - content: "Secured virtual hub"
       isCorrect: false
-      explanation: "That's incorrect. A secured virtual hub is an Azure Virtual WAN Hub where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager"
+      explanation: "That's incorrect. A secured virtual hub is an Azure Virtual WAN Hub where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager."
