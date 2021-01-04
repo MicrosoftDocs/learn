@@ -104,7 +104,7 @@ The following table lists some additional resources availabe for other DSR scena
 |Microsoft is the data controller|Overview of optional connected experiences in Office|
 |Personal accounts|Microsoft Privacy Dashboard|
 |Third-party products|Third-party directly|
-|Azrure DevOps|Azure DevOps Services Data Subject Requests for the GDPR and CCPA|
+|Azure DevOps|Azure DevOps Services Data Subject Requests for the GDPR and CCPA|
 |Dynamics 365|Dynamics 365 Data Subject Requests for the GDPR and CCPA|
 |Intune|Intune Data Subject Requests for the GDPR and CCPA|
 |Visual Studio|Visual Studio Family Data Subject Requests for the GDPR and CCPA|
