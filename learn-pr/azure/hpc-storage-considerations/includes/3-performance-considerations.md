@@ -17,7 +17,7 @@ The performance requirements for HPC workloads may vary widely depending on a nu
 - set attribute
 - rename
 
-When using the NFS protocol, there are several key operations:
+When using the NFS protocol, there are several key API calls that translate into multiple operations
 
 - create (file or link)
 - mkdir
@@ -40,7 +40,7 @@ NFS servers and clients negotiate the block size, accepting the largest size bot
 
 Block size may be explicitly configured on clients. Check the full `mount` statement on your HPC cluster machines to determine what the value is.
 
-The two arguments used to configure block size are `rsize` and `wsize`, configuring block sizes for reading and writing data respectively.
+The two arguments used to configure NFS block size are `rsize` and `wsize`, configuring block sizes for reading and writing data respectively.
 
 ### IOPS
 
@@ -57,7 +57,7 @@ The two arguments used to configure block size are `rsize` and `wsize`, configur
 
 ### Latency
 
-**Latency** refers to processing delays. The higher the latency, the higher the likelihood of slower job runs. There can be multiple sources of latency within a single architecture, each contributing to an overall latency effect.
+**Latency** refers to the measured amount of time it takes to complete an operation. The higher the latency, the higher the likelihood of slower job runs. There can be multiple sources of latency within a single architecture, each contributing to an overall latency effect.
 
 File system latency may occur under the following conditions:
 
@@ -66,7 +66,9 @@ File system latency may occur under the following conditions:
 - Natural latency due to distance between clients and servers, for instance across a Wide-Area Network
 - Slow disk subsystem access on the file server itself
 
-Latency is not always consistent or clearly documented. You will need to run tests to determine latency between your HPC cluster machines and the storage endpoint (using `ping` to gain a basic number)
+Latency is not always consistent or clearly documented. You will need to run tests to determine latency between your HPC cluster machines and the storage endpoint. Latency is also a cumulative issue, where the network performance may be the sole contributor, but there may also be misconfiguration of the machine operating system, or inefficiencies in the actual workload code itself. Each of these will impact overall latency.
+
+Latency is the most important factor when assessing your file system's actual performance. Higher latencies translate into fewer IOPS. Fewer IOPS may translate into lower throughput.
 
 ## Baseline Values
 
