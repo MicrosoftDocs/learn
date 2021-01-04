@@ -1,3 +1,5 @@
+The first Quantum Space Exploration Team is going to be released! You have been chosen as member of the small crew. Before you begin working on the many problems of the galaxy, you need to know the tools you will use. 
+
 In this part, you prepare your development environment so you can begin writing quantum programs.
 
 To set up your development environment, you:
