@@ -9,18 +9,18 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. From the menu bar in the upper right, open **Cloud Shell**.
 1. Set the resource group name.
-    ```bash
+    ```azurecli
     export RESOURCEGROUP=learn-storage-replication-rg
     ```
 1. To set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name, run this command.
 
-    ```Bash
+    ```azurecli
     export AZURE_STORAGE_ACCOUNT=<storageaccountname>
      ```
 
 1. Set the location. Replace the **westus2** value with a location near you.
 
-    ```bash
+    ```azurecli
     export LOCATION=westus2
     ```
 
@@ -37,13 +37,13 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 
 1. To create a resource group, run this command.
 
-    ```bash
+    ```azurecli
     az group create --name $RESOURCEGROUP --location $LOCATION
     ```
 
 1. To create a storage account, run this command.
 
-    ```Bash
+    ```azurecli
     az storage account create \
     --name $AZURE_STORAGE_ACCOUNT \
     --resource-group $RESOURCEGROUP \
@@ -55,7 +55,7 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 
 1. For the rest of the steps in this exercise, you'll need your storage credentials. To list your storage account keys, run this command.
 
-    ```Bash
+    ```azurecli
     az storage account keys list \
     --account-name $AZURE_STORAGE_ACCOUNT \
     --resource-group $RESOURCEGROUP \
@@ -65,7 +65,7 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 1. Copy the keys listed.
 1. To hold your storage key, set an environment variable. Replace *account-key* and the brackets with one of your key values.
 
-    ```Bash
+    ```azurecli
     export AZURE_STORAGE_KEY="<account-key>"
     ```
 
@@ -75,19 +75,19 @@ To upload blobs to Azure Storage, you need a container. You use containers to lo
 
 1. To set a container name where you replace *blob-container-name* and the brackets with another name, run this command.
 
-    ```Bash
+    ```azurecli
     export BLOB_CONTAINER_NAME=<blob-container-name>
     ```
 
 1. Run the following command to create a container for your storage account:
 
-    ```Bash
+    ```azurecli
     az storage container create --account-key $AZURE_STORAGE_KEY --account-name $AZURE_STORAGE_ACCOUNT --name $BLOB_CONTAINER_NAME
     ```
 
 1. When your storage account container has been created, you'll see this message returned in your terminal.
 
-    ```Bash
+    ```output
     {
         "created": true
     }
@@ -99,7 +99,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
 
 1. To create a file you can upload to your storage account, run this command.
 
-    ```bash
+    ```azurecli
     cat > song.mp3
     ```
 
@@ -107,7 +107,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
 
 1. To see the contents of your `song.mp3` file, run this command.
 
-    ```bash
+    ```azurecli
     cat song.mp3
     ```
 
@@ -119,7 +119,7 @@ Upload the file to your storage account via your container.
 
 1. To upload your file, run this command.
 
-    ```bash
+    ```azurecli
     az storage blob upload \
         --container-name $BLOB_CONTAINER_NAME \
         --name song \
@@ -128,7 +128,7 @@ Upload the file to your storage account via your container.
 
 1. When the upload is complete, to verify the file is in your storage account, run this command.
 
-    ```bash
+    ```azurecli
     az storage blob list \
     --container-name $BLOB_CONTAINER_NAME  \
     --output table
