@@ -1,4 +1,4 @@
-Once a data controller receives a DSR, a response must be given as soon as possible. GDPR requires that a response is given in one calendar month. For example, if the request is received on January 1st, the response is required by February 1st. CCPA requires a response no later than 45 days. Failure to comply in the specified periods could incur severe monetary penalties. In order to respond efficiently to a DSR for customer data, organizations can follow the guidance from Microsoft and use the tools and in-app features available in Office 365.
+Once a data controller receives a DSR, a response must be given as soon as possible. GDPR requires that a response is given in one calendar month. For example, if the request is received on January 1st, the response is required by February 1st. CCPA requires a response no later than 45 days. Failure to comply in the specified periods could incur severe monetary penalties. In order to respond efficiently to a DSR for customer data, organizations can follow the guidance from Microsoft and use the tools and in-app features available in Microsoft 365/Office 365.
 
 ## Scenarios for DSR in Azure and Office 365 for customer data
 
@@ -27,7 +27,7 @@ A customer of Contoso, Ltd that resides in France has called into the toll free 
     * Sign into the Azure portal
     * Navigate to Azure Active Directory and select **Users**
     * In the **All users** blade, select the check-box next to the data subject's user account.
-    * Select **Delete user** <!--- Here you should add  "and then select **Yes** to confirm.", as you get prompted in the same way as in the last step, when you want to permanently delete the user. ---> 
+    * Select **Delete user** and then select **Yes** to confirm. 
     * In the **Deleted users** blade, select the check-box next to the data subject's user account.
     * Select **Delete permanently** and then select **Yes** to confirm.
 
@@ -39,7 +39,7 @@ A customer of Contoso, Ltd that resides in California has submitted a Data Subje
 
 1. Discover
     * Search all content locations with the Content Search tool using identifiers such as:
-        - Email address or alias
+        - Email address or alias (examples: datasubject@contoso.com or datasubject)
         - Phone number
         - Mailing address
         - Social Security Number
@@ -48,12 +48,12 @@ A customer of Contoso, Ltd that resides in California has submitted a Data Subje
         - Message type (\*email, \*contacts)
         - Compliance tag (compliancetag="personal data")
     * Search for data in SharePoint Online and OneDrive for Business with queries such as:
-        - datasubject@contoso.com AND filetype="docx" <!--- It should be probably clear to the reader, but in the first list item you used just "Email address", while here you use actual e-mail address (and both means the same). I would suggest to add this sample e-mail address (datasubject@contoso.com) as an example also to the first list item. ---> 
+        - datasubject@contoso.com AND filetype="docx" 
         - (11-18-1990) AND (kind="email") 
         - Save the Content Search for additional steps
 2. Access
     * Provide Access by retrieving a copy of document or item that contains responsive data using preview and download items:
-        - In the Security & Compliance Center, open Content Search <!--- Content Search, as well as Data subject requests, are available in Compliance Center. Because of that I would suggest to replace Security & Compliance Center with Compliance Center. ---> 
+        - In the Compliance Center, open Content Search 
         - Select Preview results
         - Select an item
         - Select Download original file
@@ -73,6 +73,22 @@ The following table lists tool that can be used for executing DSRs for customer 
 |Tool Name|Description|
 |------|------|
 |Azure Portal| Can be used to respond to DSRs against Azure.|
-|Content Search eDiscovery tool|Located in the complance center <!--- Compliance Center should be capitalized. --->  of Office 365 and Microsoft 365. Used when executing DSRs againts Office 365 applications.|
-|DSR case tool|Located in the Security & Compliance Center. <!--- I suggest to replace Security & Compliance Center with Compliance Center. ---> Can be used to manage investigations for a data subject.|
+|Content Search eDiscovery tool|Located in the Compliance Center of Office 365 and Microsoft 365. Used when executing DSRs against Office 365 applications.|
+|DSR case tool|Located in the Compliance Center. Can be used to manage investigations for a data subject.|
 |In-app functionality|For applications that do not support Content Search, application can be used directly for responding to DSRs.|
+
+<!--- TR & ID: The following content was moved from Unit 4 to help reduce the size of Unit 4. Unfortunatly, this content was not appropriate to move to Module 3 to make that module longer. I do feel this content works in this unit but not 100% sure about the flow. If it doesn't feel right please let me know and we can remove it. --->
+**In-scope Applications**
+
+Office 365 encompass many applications that have the potential to store user data. Knowing which applications that the data subject uses will help narrow down what is in-scope for the DSR response. Depending on the application, you may be able to use the Content Search tool to respond. In some cases however, you'll have to use the in-app functionality to get to the data.
+
+
+One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for business subscription. The Microsoft 365 admin center can be used to locate the user's account. In the properties for the user account you can view their product licensing. 
+
+**Compliance Boundaries**
+
+Compliance Boundaries can be created using the Compliance Center. They are logical search boundaries that control locations that the people involved in the DSR execution can access. Some common use cases for compliance boundaries include:
+- geographical boundaries
+- governmental organizations agencies
+- Organizational units or department
+
