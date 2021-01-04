@@ -1,6 +1,10 @@
-In this module, you (reiterate the objectives).
+IT staff at Contoso were concerned that their Azure web apps could be subjected to attacks using common exploits, such as SQL injection and cross-site scripting. You were asked to evaluate whether Azure Web Application Firewall would be a good choice to protect Contoso's web apps from such attacks.
 
-With your knowledge of Azure Web Application Firewall's features, policies, rules, and deployment scenarios, you have successfully configured Azure Web Application Firewall to protect Contoso's web applications from common exploits.
+In this module, you learned that Azure Web Application Firewall creates a barrier between your web apps and their HTTP requests. You learned that Azure Web Application Firewall maintains a large set of rules that can detect and deny common web app security holes.
+
+Yes, it's possible to write frontend and backend code to deter the many vulnerabilities that plague modern web apps. However, there are hundreds of possible exploits to consider. Writing the code to handle just a single vulnerability takes a great deal of time and requires specialized expertise. And with threat actors constantly inventing new exploits, protecting web apps in-house requires a significant commitment and a large budget.
+
+You can deploy Azure Web Application Firewall in minutes and your web apps are instantly protected from hundreds of common exploits. Microsoft's security experts manage your core rule set and you can tweak the protection as needed with custom rules. You recommend Azure Web Application Firewall to Contoso IT management as a way of providing immediate and cost-effective protection to all your web apps.
 
 ## Learn more
 

@@ -38,7 +38,7 @@ Sanitizing the input means different things depending on the context. For exampl
 
 ## Rules, core rule sets, and rule groups
 
-Azure Web Application Firewall thwarts known exploits by applying rules to an app's incoming HTTP requests. A *rule* is firewall code designed to recognize and prevent a particular threat.
+Azure Web Application Firewall thwarts known exploits by applying rules to an app's incoming HTTP/HTTPS requests. A *rule* is firewall code designed to recognize and prevent a particular threat.
 
 The rules that Azure Web Application Firewall uses to detect and block common vulnerabilities are mostly *managed rules*. Managed rules are coded, maintained, and updated by Microsoft's team of security experts. Managed rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
 
@@ -53,8 +53,8 @@ The following table lists the groups in CRS 3.1. This table should give you a se
 |---------|---------|
 |REQUEST-911-METHOD-ENFORCEMENT     |Disables some request methods (for example, PUT and PATCH)         |
 |REQUEST-913-SCANNER-DETECTION     |Detects security (port and environment) scanners, web crawlers, and bots         |
-|REQUEST-920-PROTOCOL-ENFORCEMENT     |Protects against protocol and encoding exploits by validating HTTP requests         |
-|REQUEST-921-PROTOCOL-ATTACK     |Detects protocol-related attacks, such as HTTP header injection, HTTP request smuggling, and HTTP response splitting         |
+|REQUEST-920-PROTOCOL-ENFORCEMENT     |Protects against protocol and encoding exploits by validating HTTP/HTTPS requests         |
+|REQUEST-921-PROTOCOL-ATTACK     |Detects protocol-related attacks, such as HTTP/HTTPS header injection, HTTP/HTTPS request smuggling, and HTTP/HTTPS response splitting         |
 |REQUEST-930-APPLICATION-ATTACK-LFI     |Detects application exploits that use local file inclusion (LFI) attacks         |
 |REQUEST-931-APPLICATION-ATTACK-RFI     |Detects application exploits that use remote file inclusion (RFI) attacks         |
 |REQUEST-932-APPLICATION-ATTACK-RCE     |Detects application exploits that use remote code execution (RCE) attacks         |
@@ -97,19 +97,23 @@ Each group is a collection of rules designed to detect and thwart a specific exp
 |942460     |Meta-character anomaly-repetitive non-word characters         |
 
 The rules in the preceding table are examples of the managed rules that are created, maintained, and updated by Microsoft.
+Don't worry if the descriptions of these rules seem obscure. The point is to show the depth of protection offered by Azure Web Application Firewall.
 
 ## Custom rules
 
 The managed rules offered by Azure Web Application Firewall might not cover a specific problem you're having. If so, you can create a custom rule. You build custom rules by creating conditions that include the following components:
 
 - Variables such as RequestHeader or QueryString
-- HTTP request methods such as POST or PUT
+- HTTP/HTTPS request methods such as POST or PUT
 - Operators such as Equal or Contains
 - An action such as Allow or Block.
 
+> [!TIP]
+> Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
+
 ## Detection mode vs prevention mode
 
-Azure Web Application Firewall can operate in one of two modes. The mode you choose depends on how you want the firewall the deal with incoming HTTP requests that match one of its rules:
+Azure Web Application Firewall can operate in one of two modes. The mode you choose depends on how you want the firewall the deal with incoming HTTP/HTTPS requests that match one of its rules:
 
 - Detection mode. Logs the request, but allows the request to go through.
 - Prevention mode. Logs the request, but doesn't allow the request to go through.

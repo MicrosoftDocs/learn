@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Suppose a company wants to stop threat actors from submitting malicious requests to a web app. Which of the following Azure Web Application Firewall modes should the company use?"
     choices:
-    - content: "A"
+    - content: "Detection"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "Incorrect. Detection mode only logs a rule violation. It doesn't stop a request from being submitted."
+    - content: "Prevention"
       isCorrect: true
-      explanation: "."
-    - content: "C"
+      explanation: "Correct. Prevention mode not only logs a rule violation, but it also stops the request from being submitted to the web app."
+    - content: "Exclusions"
       isCorrect: false
-      explanation: "."
-  - content: "TBD"
+      explanation: "Incorrect. Exclusions are an Azure Web Application Firewall feature that enables you to ignore specified HTTP/HTTPS request attributes."
+  - content: "Suppose a company wants to deploy Azure networking infrastructure that includes a suite of web apps protected by Azure Web Application Firewall. Which of the following Azure services should the company not consider?"
     choices:
-    - content: "A"
+    - content: "Application Gateway"
+      isCorrect: false
+      explanation: "Incorrect. Application Gateway is an application delivery controller that operates within a single region and has built-in support for Azure Web Application Firewall."
+    - content: "Front Door"
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door is an application delivery network that operates across regions and has built-in support for Azure Web Application Firewall."
+    - content: "Virtual WAN"
       isCorrect: true
-      explanation: "."
-    - content: "B"
-      isCorrect: false
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
+      explanation: "Correct. Virtual WAN optimizes and automates branch-to-branch connectivity, but it's not a web application front end."
   - content: "TBD" 
     choices:
     - content: "A"
       isCorrect: false
-      explanation: "."
+      explanation: "Incorrect."
     - content: "B"
       isCorrect: true
-      explanation: "."
+      explanation: "Correct."
     - content: "C"
       isCorrect: false
-      explanation: "."
+      explanation: "Incorrect."

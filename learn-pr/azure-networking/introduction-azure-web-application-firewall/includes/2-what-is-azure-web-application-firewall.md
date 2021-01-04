@@ -8,7 +8,7 @@ Most malicious tests of web apps check for the presence of one or more common vu
 
 - SQL injection
 - Cross-site scripting
-- HTTP request smuggling
+- HTTP/HTTPS request smuggling
 - Local and remote file inclusion
 
 A common task in the web app development cycle involves writing code to close the most common security holes. Writing that security code requires time, expertise, and lots of testing.
@@ -28,14 +28,7 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 > [!NOTE]
 > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for you—for example, it blocks legitimate traffic to your web app—you can disable the rule.
 
-- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule. You can build custom rules by creating conditions that include the following components:
-  - Variables such as RequestHeader or QueryString
-  - HTTP request methods such as POST or PUT
-  - Operators such as Equal or Contains
-  - An action such as Allow or Block.
-
-> [!TIP]
-> Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
+- Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule.
 
 - Modes. Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
 - Exclusion lists. You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
@@ -52,7 +45,7 @@ The following table describes the most common types of malicious threats that Az
 |Cross-site scripting|A threat actor uses a web application to send malicious code to another user's web browser. The browser runs the code, which enables the script to access the user's session data, cookies, and other sensitive information.   |
 |Local file inclusion   |An attacker exploits vulnerabilities in a server's handling of `include` statements, most often in PHP scripts. By passing specially configured text to a script's `include` statement, the attacker can include files that are locally present on the server. The attacker might then be able to view sensitive information and run server commands.   |
 |PHP injection   |The attacker inserts text specially configured to trick the server into running PHP commands. These commands enable the attacker to run local or remote PHP code. The attacker might then be able enable to access sensitive data and run commands on the server.   |
-|Protocol attacks   |An attacker inserts specially configured text into an HTTP request header. Depending on the specific text injected into the header, the attacker can fool the server into viewing sensitive data or running code.   |
+|Protocol attacks   |An attacker inserts specially configured text into an HTTP/HTTPS request header. Depending on the specific text injected into the header, the attacker can fool the server into viewing sensitive data or running code.   |
 |Remote command execution   |The attacker tricks a server into running commands associated with the server's operating system. On a UNIX system, for example, the attacker might have the server run `ls` to get a directory listing,   |
 |Remote file inclusion   |The same as local file inclusion, except the attacker passes the server specially configured text that enables a remote file—that is, a file on a remote server controlled by the attacker—to a script's `include` statement.   |
 |Session fixation   |An attacker exploits a web app vulnerability that enables the attacker to obtain a valid session ID. The attacker fools a user into authenticating a new session with that ID. The attacker then hijacks this user-validated session.   |
