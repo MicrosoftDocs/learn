@@ -7,7 +7,7 @@ The following image shows three scenarios where a DSR is received by a Microsoft
 :::image type="content" source="../media/4-dsr-scope.png" alt-text="Image shows Microsoft's DSR execution scope":::
 
 **Scenario 1**
-If a DSR is received ay <!--- Typo, it should be "by" istead of "ay". --->  an enterprise customer the execution of the DSR is only performed in that customer's Azure Active Directory tenant. It will have no affect on any other tenants.
+If a DSR is received by an enterprise customer the execution of the DSR is only performed in that customer's Azure Active Directory tenant. It will have no affect on any other tenants.
 
 **Scenario 2**
 If a DSR is received by a Microsoft Service Account (MSA) and that MSA has created an Azure Active Directory tenant than the scope of the DSR execution is also the Azure Active Directory tenant.
