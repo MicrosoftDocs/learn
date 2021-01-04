@@ -18,13 +18,15 @@ quiz:
 
   - content: "Which regulation provides the right to be forgotten?"
     choices:
-    - content: "California Citizen Privacy Act"
+    - content: "General Data Protection Regulation (GDPR) only"
       isCorrect: false
-      explanation: "That is incorrect. While CCPA does provide California residents with privacy rights that are equvilan to the right to be forgetten, the correct name is the California Consumer Privacy Act"
-    - content: "General Data Protection Regulation"
+      explanation: "That is incorrect. The GDPR provides the right to erasure also known as the right to be forgotten but so does CCPA"
+    - content: "California Consumer Privacy Act (CCPA) only"
+      isCorrect: false
+      explanation: "That's incorrect. The CCPA provides the right to be forgotten but so does GDPR"
+    - content: "General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA)"
       isCorrect: true
-      explanation: "That's correct. The GDPR provides the right to erasure also known as the right to be forgotten."
-
+      explanation: "That's is correct. Both GDPR and CCPA provide right to be forgotten"
   - content: "Which of the following are supported DSRs for system-generated logs?"
     choices:
     - content: "Access"
