@@ -23,7 +23,7 @@ You can deploy Azure Web Application Firewall in minutes. Your web apps are imme
 
 To help you evaluate Azure Web Application Firewall, here are some of its important features:
 
-- Managed rules. The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a rule set (described below) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
+- Managed rules. The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a core rule set (described below) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
 > [!NOTE]
 > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for you—for example, it blocks legitimate traffic to your web app—you can disable the rule.
@@ -37,64 +37,25 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 > [!TIP]
 > Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
 
-- Modes. You can configure Azure Web Application Firewall to operate in one of two modes:
-  - Detection mode. Logs a request if the request matches one of Azure Web Application Firewall's rules. The request is allowed.
-  - Prevention mode. Logs a request if the request matches one of Azure Web Application Firewall's rules and denies the request.
+- Modes. Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
+- Exclusion lists. You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
+- Policies. You can combine a set of managed rules, custom rules, exclusions, and other Azure Web Application Firewall settings into a single element called an Azure Web Application Firewall policy. YOu can then apply that policy to multiple web apps for easy management and maintenance.
+- Request size limits. You can configure Azure Web Application Firewall to flag requests that are either too small or too large.
 - Alerts. Azure Web Application Firewall integrates with Azure Monitor. This integration enables you to get near-real-time alerts when the firewall detects a threat.
 
 ## Common attacks prevented by Azure Web Application Firewall
 
-Azure Web Application Firewall protects web apps by using rules. Each rule is designed to prevent a particular threat. Collections of related rules are gathered into a *core rule set* (CRS). These collections are based on the sets defined by the Open Web Application Security Project (OWASP). Currently there are three sets available when you deploy Azure Web Application Firewall: CRS 3.1, CRS 3.0, and CRS 2.2.9.
+The following table describes the most common types of malicious threats that Azure Web Application Firewall protects against.
 
-> [!IMPORTANT]
-> The CRS 3 rule sets are a big improvement over CRS 2 because they reduce false positives by more than 90 percent and include many new exploits. Therefore, you should select a CRS 3 set when you deploy Azure Web Application Firewall.
-
-The following table lists the groups in CRS 3.1. This table should give you a sense of the depth of protection offered by Azure Web Application Firewall.
-
-|Rule group  |Description  |
+|Threat     |Description   |
 |---------|---------|
-|General     |Rules that don't fit in any of the other groups         |
-|REQUEST-911-METHOD-ENFORCEMENT     |Disables some request methods (for example, PUT and PATCH)         |
-|REQUEST-913-SCANNER-DETECTION     |Detects security (port and environment) scanners, web crawlers, and bots         |
-|REQUEST-920-PROTOCOL-ENFORCEMENT     |Protects against protocol and encoding exploits by validating HTTP requests         |
-|REQUEST-921-PROTOCOL-ATTACK     |Detects protocol-related attacks, such as HTTP header injection, HTTP request smuggling, and HTTP response splitting         |
-|REQUEST-930-APPLICATION-ATTACK-LFI     |Detects application exploits that use local file inclusion (LFI) attacks         |
-|REQUEST-931-APPLICATION-ATTACK-RFI     |Detects application exploits that use remote file inclusion (RFI) attacks         |
-|REQUEST-932-APPLICATION-ATTACK-RCE     |Detects application exploits that use remote code execution (RCE) attacks         |
-|REQUEST-933-APPLICATION-ATTACK-PHP     |Detects application exploits that use PHP-injection attacks         |
-|REQUEST-941-APPLICATION-ATTACK-XSS     |Detects application exploits that use cross-site scripting (XSS) attacks         |
-|REQUEST-942-APPLICATION-ATTACK-SQLI     |Detects application exploits that use SQL-injection (SQLi) attacks         |
-|REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION     |Detects application exploits that use session-fixation attacks         |
-|REQUEST-944-APPLICATION-ATTACK-SESSION-JAVA     |Detects application exploits that use JAVA attacks         |
+|Cross-site scripting|A threat actor uses a web application to send malicious code to another user's web browser. The browser runs the code, which enables the script to access the user's session data, cookies, and other sensitive information.   |
+|Local file inclusion   |An attacker exploits vulnerabilities in a server's handling of `include` statements, most often in PHP scripts. By passing specially configured text to a script's `include` statement, the attacker can include files that are locally present on the server. The attacker might then be able to view sensitive information and run server commands.   |
+|PHP injection   |The attacker inserts text specially configured to trick the server into running PHP commands. These commands enable the attacker to run local or remote PHP code. The attacker might then be able enable to access sensitive data and run commands on the server.   |
+|Protocol attacks   |An attacker inserts specially configured text into an HTTP request header. Depending on the specific text injected into the header, the attacker can fool the server into viewing sensitive data or running code.   |
+|Remote command execution   |The attacker tricks a server into running commands associated with the server's operating system. On a UNIX system, for example, the attacker might have the server run `ls` to get a directory listing,   |
+|Remote file inclusion   |The same as local file inclusion, except the attacker passes the server specially configured text that enables a remote file—that is, a file on a remote server controlled by the attacker—to a script's `include` statement.   |
+|Session fixation   |An attacker exploits a web app vulnerability that enables the attacker to obtain a valid session ID. The attacker fools a user into authenticating a new session with that ID. The attacker then hijacks this user-validated session.   |
+|SQL injection   |In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands. These commands enable the attacker to access sensitive data, insert, update, or delete data, or run SQL operations.  |
 
-Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the following table lists the specific rules in the REQUEST-942-APPLICATION-ATTACK-SQLI rule group of CRS 3.1.
-
-|Rule ID     |Detects   |
-|---------|---------|
-|942100     |SQL injection attack using libinjection, an open-source SQL injection detection library         |
-|942110     |SQL injection attack: common injection         |
-|942130     |SQL injection attack: SQL tautology         |
-|942140     |SQL injection attack: Common database names         |
-|942150     |SQL injection attack         |
-|942160     |Blind SQLi tests using sleep() or benchmark()         |
-|942170     |SQL benchmark and sleep injection attempts including conditional queries         |
-|942190     |MSSQL code execution and information gathering attempts         |
-|942200     |MySQL comment-/space-obfuscated injections and backtick termination         |
-|942230     |Conditional SQL injection attempts         |
-|942260     |Basic SQL authentication bypass attempts 2/3         |
-|942251     |HAVING injections         |
-|942270     |Basic SQL injection: Common attack string for mysql oracle and others         |
-|942290     |Basic MongoDB SQL injection attempts         |
-|942300     |MySQL comments, conditions, and chr/char injections         |
-|942310     |Chained SQL injection attempts 2/2         |
-|942320     |MySQL and PostgreSQL stored procedure/function injections         |
-|942330     |Classic SQL injection probings 1/2         |
-|942340     |Basic SQL authentication bypass attempts 3/3         |
-|942350     |MySQL UDF injection and other data/structure manipulation attempts         |
-|942360     |Concatenated basic SQL injection and SQLLFI (SQL local file inclusion) attempts         |
-|942370     |Classic SQL injection probings 2/2         |
-|942410     |SQL injection attack         |
-|942430     |Restricted SQL character anomaly (args): number of special characters exceeded (12)         |
-|942440     |SQL comment sequence         |
-|942450     |SQL hex encoding         |
-|942460     |Meta-character anomaly-repetitive non-word characters         |
+All the exploits listed in the above table are only possible when the server trusts whatever input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. And the above table represents only a small fraction of the possible exploits a web app can face. Azure Web Application Firewall is designed to prevent these attacks and many more.
