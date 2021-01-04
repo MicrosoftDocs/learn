@@ -9,18 +9,18 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. From the menu bar in the upper right, open **Cloud Shell**.
 1. Set the resource group name.
-    ```azurecli
+    ```bash
     export RESOURCEGROUP=learn-storage-replication-rg
     ```
 1. To set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name, run this command.
 
-    ```azurecli
+    ```bash
     export AZURE_STORAGE_ACCOUNT=<storageaccountname>
      ```
 
 1. Set the location. Replace the **westus2** value with a location near you.
 
-    ```azurecli
+    ```bash
     export LOCATION=westus2
     ```
 
@@ -65,7 +65,7 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 1. Copy the keys listed.
 1. To hold your storage key, set an environment variable. Replace *account-key* and the brackets with one of your key values.
 
-    ```azurecli
+    ```bash
     export AZURE_STORAGE_KEY="<account-key>"
     ```
 
@@ -75,7 +75,7 @@ To upload blobs to Azure Storage, you need a container. You use containers to lo
 
 1. To set a container name where you replace *blob-container-name* and the brackets with another name, run this command.
 
-    ```azurecli
+    ```bash
     export BLOB_CONTAINER_NAME=<blob-container-name>
     ```
 
@@ -99,7 +99,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
 
 1. To create a file you can upload to your storage account, run this command.
 
-    ```azurecli
+    ```bash
     cat > song.mp3
     ```
 
@@ -107,7 +107,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
 
 1. To see the contents of your `song.mp3` file, run this command.
 
-    ```azurecli
+    ```bash
     cat song.mp3
     ```
 
