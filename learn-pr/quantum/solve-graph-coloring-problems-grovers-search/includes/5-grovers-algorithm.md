@@ -1,7 +1,11 @@
-In the previous units, we introduced the search problem and learned to implement its instances as quantum oracles. 
 
-In this unit, we will learn Grover's search algorithm for solving search problems. 
-We won't dive deep into the gate-level implementation details but will focus the discussion on the high-level logic instead.
+In the previous units, we introduced the search problem and you learned to implement its instances as quantum oracles. 
+
+Preliminaries are over! Prepare yourself for your first real mission! In this unit, you will need to implement Grover's search algorithm for solving a problem we struggle with. It is not necesaary to dive deep into the gate-level implementation details but you will focus the discussion on the high-level logic instead.
+
+The captain has assigned this particular task to you. Part of our spacecrafts are in charge of transporting and delivering supplies to the different space stations which belong to our space fleet. We provide different types of supplies, but unfortunately we haven't got enough resources to reach every single space station. For a strategic delivery you have to make sure that two connected station, that is two stations that are close to each other, don't receive the same type of supply. If two stations are close, a smaller spaceship can travel from one to the other to deliver supplies. 
+
+You have to prepare a route to deliver to different space stations following those indications. To do that, you implement Grover's algorithm in Q#.
 
 ## Algorithm outline
 
@@ -114,10 +118,10 @@ After that, the probability grows again and approaches 100% on iteration $3 R_{o
 
 ### But I don't know how many solutions my problem has!
 
-In our example, we have a small and easy to analyze problem, so we can calculate the number of solutions by hand. 
+In the previous example, we have a small and easy to analyze problem, so we can calculate the number of solutions by hand. 
 In practical applications, you don't usually know how many solutions your problem has before you solve it.
 
 To handle this issue, you can pick a small number, run the algorithm with that many iterations, and if it doesn't yield an answer, retry with a different, larger number of iterations. 
 An efficient strategy of gradually increasing the iteration number will still find the solution with an average number of iterations around $\sqrt{\frac{N}{M}}$.
 
-In the next unit, we will implement Grover's algorithm  in Q# and run it to solve our graph coloring problem!
+In the next unit, we will implement Grover's algorithm in Q# and run it to solve the best-delivery-route problem!
