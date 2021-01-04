@@ -4,7 +4,7 @@ Many Microsoft enterprise customers will be required to respond to DSRs under GD
 
 The following image shows three scenarios where a DSR is received by a Microsoft customer.
 
-:::image type="content" source="../media/4-dsr-scope.png" alt-text="Image shows Microsoft's DSR execution scope":::
+:::image type="content" source="../media/4-dsr-scope.png" alt-text="Image shows Microsoft's DSR execution scope." border="false":::
 
 **Scenario 1**
 If a DSR is received by an enterprise customer the execution of the DSR is only performed in that customer's Azure Active Directory tenant. It will have no affect on any other tenants.
