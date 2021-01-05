@@ -46,6 +46,7 @@ Configuration files describe the components needed to run applications.
 ### Providers
 
 A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
+
 - Azure, Kubernetes, Docker, VMware, and so on
 - Resources – the things you can create
 - Data Sources – the things you can reference
@@ -80,8 +81,8 @@ When running Terraform in automation, the focus is usually on the core plan/appl
 - Plan: Produce a plan for changing resources to match the current configuration.
   - The terraform plan command is used to create an execution plan. Terraform determines what actions are necessary to achieve the wanted state specified in the configuration files.
 - Apply: Apply the changes described by the plan.
-- Destroy: Remove the TF manage infrastructure
+- Destroy: Remove the Terraform managed infrastructure
 
 ## Next steps
 
-In the next unit, we'll use Terraform to provision your environment.
+In the next unit, we'll discuss using GitHub Actions, along with Terraform, to provision and deploy your applications.
