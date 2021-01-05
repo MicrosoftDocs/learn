@@ -1,6 +1,8 @@
 When working with nearly any programming language, one of the most important development tools at your disposal is the API documentation itself.
 API documentation is essentially the reference manual for a language, containing the specifics about how all the puzzle pieces fit together; for example, all types or classes as well as functions and any required/optional inputs.
 
+Besides checking QKD libraries, quantum space crew members can contribute to its growth and add their own programs and consideration to the documentation. By doing so, other space crew members can easy solve problems that have already happen to their companions, save time and resources to the entire mission. 
+
 In this unit, you will familiarize yourself with the Q# API documentation: where to find it and how to read it. 
 
 ## Where is it?
