@@ -1,4 +1,4 @@
-Next, you'll create an Event Hubs-triggered function inside a function app. This function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins.
+Next, you'll create an Event Hubs-triggered function inside a function app. This function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins.
 
 ## Create an Azure Function
 
