@@ -20,9 +20,9 @@ Secrets can be of various types. The most common (and default) type is `Opaque`,
 
 A secret can be used in one of three ways, according to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/secret/#overview-of-secrets):
 
-1. Mounted as files in a volume on containers inside a Pod or Deployment.
-1. Referenced as an environment variable in the Pod or Deployment specification.
-1. Used by the Kubelet when pulling images from private registries via the `imagePullSecret` key in the Pod specification.
+- Mounted as files in a volume on containers inside a Pod or Deployment.
+- Referenced as an environment variable in the Pod or Deployment specification.
+- Used by the Kubelet when pulling images from private registries via the `imagePullSecret` key in the Pod specification.
 
 Later on, in this application, we'll use secrets mounted as part of the Pod's environment variables.
 
