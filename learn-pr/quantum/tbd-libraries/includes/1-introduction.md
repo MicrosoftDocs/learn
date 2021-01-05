@@ -16,5 +16,5 @@ In this module you'll:
 
 ## Prerequisites
 
-- A basic understanding of how Grover's algorithm works. If you completed the [prior module on using the algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/) you are all set, but otherwise the overview can be found at the [Grover Search Algorithm unit](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) therein.
+- A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/), you are all set, but otherwise the overview can be found at the [Grover Search Algorithm unit](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) therein.
 - A functioning QDK environment, preferably in VS Code for command-line applications or in Jupyter Notebook and IQ#.
