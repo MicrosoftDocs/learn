@@ -13,7 +13,7 @@ DDoS Policy is generated from the DDoS Protection Plan. It is auto configured an
 
 DDoS Protection Standard monitors network traffic and constantly compares it against the limits defined in the DDoS Policy.
 
-When the traffic upper limit is exceeded, DDoS mitigation is initiated automatically.  During the mitigation, packets sent to a protected resource are rerouted by the DDoS protection service. Several checks are performed on this traffic, to ensure packets conform to internet specifications and are not malformed. Valid IP traffic is forwarded to the intended service. DDoS Protection Standard applies three auto-tuned mitigation policies (TCP SYN, TCP & UDP) for each public IP address associated with a protected resource.
+When the traffic upper limit is exceeded, DDoS mitigation is initiated automatically.  During the mitigation, packets sent to a protected resource are rerouted by the DDoS protection service. Several checks are performed on this traffic, to ensure packets conform to internet specifications and are not malformed. Valid IP traffic is forwarded to the intended service. DDoS Protection Standard applies three autotuned mitigation policies (TCP SYN, TCP & UDP) for each public IP address associated with a protected resource.
 
 When traffic returns below the thresholds, the mitigation is suspended. This protection does not apply to App Service Environments.
 
@@ -25,15 +25,15 @@ The following diagram shows the data flow through the DDoS Protection Standard.
 
 Each Azure application has a unique traffic pattern like the uniqueness of a human fingerprint. In DDoS protection, the process is to detection the attack, and then stop the attack. In DDoS Protection Standard, a proprietary machine learning (ML) algorithm, is used. This ML seeks to identify the traffic pattern (fingerprint) for your application. Based on that, an application traffic profile is built.
 
-For example, the algorithm learns, that at nine o'clock Monday morning the data traffic, on your business-critical application, is very different from data traffic at nine o'clock Sunday morning. It learns how the traffic pattern changes every minute, how it shifts every hour of a day, every week, every month of the year.
+For example, the algorithm learns, that at nine o'clock Monday mornings the data traffic, on your business-critical application, is different from data traffic at nine o'clock Sunday mornings. It learns how the traffic pattern changes every minute, how it shifts every hour of a day, every week, every month of the year.
 
-In the event this application starts receiving traffic outside the standard range DDoS standard mitigation policy will be increased to support what might be a seasonal surge.
+In the event this application starts receiving traffic outside the standard range DDoS standard mitigation policy upper limit will be increased to support what might be a seasonal surge.
 
 If someone is trying to DDoS your application, the traffic would continue to grow. At that point alerts will be triggered since something seems anomalous with the traffic. The incoming traffic to the application will be inspected in real time to test for valid packets.
 
 Invalid packets will be dropped so they do not impact the availability and performance of your application.
 
-### Azure DDoS Protection Standard telemetry
+### Azure DDoS Protection Standard metrics
 
 In the example above, shortly after the detection of an attack, notifications are sent using Azure Monitor metrics. Any DDoS protection metrics are used to generate alerts. Data logged during an attack, should be used for analysis of the attack. Azure Sentinel, partner SIEM tools, Azure Monitor logs, and other diagnostic services can be used. The logged data is retained for 30 days.
 

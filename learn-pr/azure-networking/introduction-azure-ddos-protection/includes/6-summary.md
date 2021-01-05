@@ -1,7 +1,9 @@
 
 ### Resolution of module problem
 
-After evaluation of Azure DDoS Protection Standard for Contoso, your recommendation was to proceed with the upgrade from Basic to Standard. Your decision was based on Azure DDoS Protection Standard, which provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your application and resources deployed in your virtual networks. Additionally, customers using Azure DDoS Protection have access to DDoS Rapid Response support to engage DDoS experts during an active attack.
+After evaluation of Azure DDoS Protection Standard for Contoso, your recommendation was to proceed with the upgrade from Basic to Standard.
+
+Your decision was based on Azure DDoS Protection Standard, provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your application, and resources deployed in your virtual networks. Additionally, a customer defined SLA, and access to DDoS Rapid Response team. This support provides access to DDoS experts during an active attack.
 
 ### Further learning links
 

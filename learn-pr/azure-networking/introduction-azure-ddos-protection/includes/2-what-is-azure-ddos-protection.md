@@ -56,15 +56,15 @@ The features are:
 
 1. Intelligent traffic profiling as described in unit 3.
 
-1. Native integration into the Azure Portal for setup and deploying. This level of integration enables DDoS Standard to identify your Azure resources and their configuration.
+1. Native integration into the Azure portal for setup and deploying. This level of integration enables DDoS Standard to identify your Azure resources and their configuration.
 
 1. When DDoS Standard is enabled for a virtual network, all resources on that network are automatically protected. No additional administrative procedure is needed.
 
-1. Your network resources are under constant traffic monitoring for indications of a DDoS attack. Once detected, DDoS Standard will intervene and automatically mitigate the the attack.
+1. Your network resources are under constant traffic monitoring for indications of a DDoS attack. Once detected, DDoS Standard will intervene and automatically mitigate the attack.
 
-1. Layer 3, 4 protection at the network layer secured by DDoS Standard Protect. Combined the above with application layer 7 protection with Azure Web Application Firewall (WAF). WAF is included with Azure Gateway. Since the Azure Gateway, and WAF, are Internet facing, their network interfaces will be protected by DDoS Standard. This is an example of multi-layed or defense-in-depth protection.
+1. Layers 3, and 4 protection at the network layer secured by DDoS Standard Protect. Combined the above with application layer 7 protection with Azure Web Application Firewall (WAF). WAF is included with Azure Gateway. Since the Azure Gateway, and WAF, are Internet facing, their network interfaces will be protected by DDoS Standard. This is an example of multi-layed or defense-in-depth protection.
 
-1. Given the world wide scale of Azure, DDoS Standard Protection's machine learning data sets have access to information on the latest DDoS attacks. This ML framework can currently recognize, and mitigate, over 60 different attack types.
+1. Given the world-wide scale of Azure, DDoS Standard Protection's machine learning data sets have access to information on the latest DDoS attacks. This ML framework can currently recognize, and mitigate, over 60 different attack types.
 
 1. Detailed attack analytic reports during the attack in five minute intervals.
 
@@ -82,16 +82,16 @@ Two other DDoS Standard Protection features that need to be outlined. They are D
 
 At the beginning of DDoS attack, what often happens is that the attack will trigger the automatic scale out of the service running in Azure. It could be the increase in network bandwidth, the scaling up of the virtual machine count, or both.
 
-Customers that are onboarded to DDoS protection standard, will receive service credit for application scale out, and network bandwidth, cost incurred during a documented DDoS attack.
+Customers that are onboarded to DDoS protection standard, will receive service credit for application scale-out, and network bandwidth, cost incurred during a documented DDoS attack.
 
 This refund is provided by Microsoft directly.
 
 ### DDoS Rapid Response support
 
-Microsoft has created a DDoS Protection Rapid Response (DRR) team. This team can be engaged to help during a DDoS attack, and also perform a post-attack analysis. The DDR team can be notified using the Azure Portal by opening a support request. The team should be called on if:
+Microsoft has created a DDoS Protection Rapid Response (DRR) team. This team can be engaged to help during a DDoS attack, and also perform a post-attack analysis. The DDR team can be notified using the Azure portal by opening a support request. The team should be called on if:
 
 - Your company is planning a virtual event that is expected to significantly increase your network traffic.
-- An attack that is severely degrading the performance of a protected critical business systems.
+- An attack that is severely degrading the performance of a protected critical business system.
 - Your security team determines that protected resources are under attack, but DDoS Standard Protection service is not mitigating the attack effectively.
 
 This DDR service follows the Azure Rapid Response support model.
