@@ -4479,6 +4479,16 @@
       "source_path": "learn-pr/student-evangelism/develop-secure-iot-solutions-azure-sphere-iot-hub/4-event-driven-programming.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-hub/5-how-setup-azure-sphere",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/5-define-identify-transformations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations",
+      "redirect_document_id": false
     }
   ]
 }
