@@ -34,7 +34,7 @@ units:
 - learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.4-use-azure-cache-for-redis-with-spring-data-redis
 - learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.5-configure-an-azure-cache-for-redis-instance
 - learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.6-use-spring-session-to-store-data-in-redis
-- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.7-deploy-a-spring-boot-and-redis-application-to-azure-app-service
+- learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.7-exercise-deploy-a-spring-boot-and-redis-application-to-azure-app-service
 - learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.8-knowledge-check
 - learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.9-summary
 badge:
