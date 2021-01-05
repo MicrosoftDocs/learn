@@ -2,7 +2,7 @@ Go is a strongly typed language. This means that every variable you declare is b
 
 In Go, you have four categories of data types:
 
-- Basic types: numbers, strings, and Booleans
+- Basic types: numbers, strings, and booleans
 - Aggregate types: arrays and structs
 - Reference types: pointers, slices, maps, functions, and channels
 - Interface types: interface
@@ -114,15 +114,15 @@ Notice that with the previous code, Go infers the data types from the values use
 
 ## Booleans
 
-A Boolean type has only two possible values: `true` and `false`. You declare a Boolean type by using the keyword `bool`. Go is different from other programming languages in that in Go you can't implicitly convert a Boolean type to either 0 or 1. You have to do it explicitly.
+A boolean type has only two possible values: `true` and `false`. You declare a boolean type by using the keyword `bool`. Go is different from other programming languages in that in Go you can't implicitly convert a boolean type to either 0 or 1. You have to do it explicitly.
 
-So you can declare a Boolean variable like so:
+So you can declare a boolean variable like so:
 
 ```go
 var featureFlag bool = true
 ```
 
-We'll use Boolean data types in the upcoming module when we talk about control flow statements in Go. We'll also use them in later modules.
+We'll use boolean data types in the upcoming module when we talk about control flow statements in Go. We'll also use them in later modules.
 
 ## Strings
 
