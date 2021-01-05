@@ -3,40 +3,40 @@ When it comes to identity and access, most organizations that are considering us
 1. Ensuring that when people leave the organization, they lose access to resources in the cloud.
 1. Striking the right balance between autonomy and central governance - for example, giving project teams the ability to create and manage virtual machines in the cloud while centrally controlling the networks those VMs use to communicate with other resources.
 
-Azure Active Directory (Azure AD) and Role-Based Access Control (RBAC) work together to make it simple to carry out these goals.
+Azure Active Directory (Azure AD) and Azure role-based access control (Azure RBAC) work together to make it simple to carry out these goals.
 
 ## Azure subscriptions
 
 First, remember that each Azure subscription is associated with a single Azure AD directory. Users, groups, and applications in that directory can manage resources in the Azure subscription. The subscriptions use Azure AD for single sign-on (SSO) and access management. You can extend your on-premises Active Directory to the cloud by using **Azure AD Connect**. This feature allows your employees to manage their Azure subscriptions by using their existing work identities. When you disable an on-premises Active Directory account, it automatically loses access to all Azure subscriptions connected with Azure AD.
 
-## What is RBAC?
+## What is Azure RBAC?
 
-Role-based access control (RBAC) is an authorization system built on Azure Resource Manager that provides fine-grained access management of resources in Azure. With RBAC, you can grant the exact access that users need to do their jobs. For example, you can use RBAC to let one employee manage virtual machines in a subscription while another manages SQL databases within the same subscription.
+Azure role-based access control (Azure RBAC) is an authorization system built on Azure Resource Manager that provides fine-grained access management of resources in Azure. With Azure RBAC, you can grant the exact access that users need to do their jobs. For example, you can use Azure RBAC to let one employee manage virtual machines in a subscription while another manages SQL databases within the same subscription.
 
-#### What is role-based access control?
+#### What is Azure role-based access control?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvk]
 
-You grant access by assigning the appropriate RBAC role to users, groups, and applications at a certain scope. The scope of a role assignment can be a subscription, a resource group, or a single resource. A role assigned at a parent scope also grants access to the child scopes contained within it. For example, a user with access to a resource group can manage all the resources it contains, like websites, virtual machines, and subnets. The RBAC role that you assign dictates what resources the user, group, or application can manage within that scope.
+You grant access by assigning the appropriate Azure role to users, groups, and applications at a certain scope. The scope of a role assignment can be a subscription, a resource group, or a single resource. A role assigned at a parent scope also grants access to the child scopes contained within it. For example, a user with access to a resource group can manage all the resources it contains, like websites, virtual machines, and subnets. The Azure role that you assign dictates what resources the user, group, or application can manage within that scope.
 
-The following diagram depicts how the classic subscription administrator roles, RBAC roles, and Azure AD administrator roles are related at a high level. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
+The following diagram depicts how the classic subscription administrator roles, Azure roles, and Azure AD roles are related at a high level. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
-![Diagram that depicts how the classic subscription administrator roles, RBAC roles, and Azure AD administrator roles are related at a high level.](../media/2-AzureAD-and-RBAC.png)
+![Diagram that depicts how the classic subscription administrator roles, Azure roles, and Azure AD roles are related at a high level.](../media/2-azuread-and-azure-roles.png)
 
 In the preceding diagram, a subscription is associated with only one Azure AD tenant. Also note that a resource group can have multiple resources but is associated with only one subscription. Although it’s not obvious from the diagram, a resource can be bound to only one resource group.
 
-## What can I do with RBAC?
+## What can I do with Azure RBAC?
 
-RBAC allows you to grant access to Azure resources that you control. Suppose you need to manage access to resources in Azure for the development, engineering, and marketing teams. You’ve started to receive access requests, and you need to quickly learn how access management works for Azure resources.
+Azure RBAC allows you to grant access to Azure resources that you control. Suppose you need to manage access to resources in Azure for the development, engineering, and marketing teams. You’ve started to receive access requests, and you need to quickly learn how access management works for Azure resources.
 
-Here are some scenarios you can implement with RBAC.
+Here are some scenarios you can implement with Azure RBAC.
 
 - Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
 - Allow a database administrator group to manage SQL databases in a subscription
 - Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets
 - Allow an application to access all resources in a resource group
 
-## RBAC in the Azure portal
+## Azure RBAC in the Azure portal
 
 In several areas in the Azure portal, you'll see a pane named **Access control (IAM)**, also known as identity and access management. On this pane, you can see who has access to that area and their role. Using this same pane, you can grant or remove access.
 
@@ -44,9 +44,9 @@ The following shows an example of the Access control (IAM) pane for a resource g
 
 ![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted](../media/2-resource-group-access-control.png)
 
-## How does RBAC work?
+## How does Azure RBAC work?
 
-You control access to resources using RBAC by creating role assignments, which control how permissions are enforced. To create a role assignment, you need three elements: a security principal, a role definition, and a scope. You can think of these elements as "who", "what", and "where".
+You control access to resources using Azure RBAC by creating role assignments, which control how permissions are enforced. To create a role assignment, you need three elements: a security principal, a role definition, and a scope. You can think of these elements as "who", "what", and "where".
 
 ### 1. Security principal (who)
 
@@ -85,11 +85,11 @@ The following example shows how the Marketing group has been assigned the Contri
 
 ![An illustration showing a sample role assignment process for Marketing group, which is a combination of security principal, role definition, and scope. The Marketing group falls under the Group security principal and has  a Contributor role assigned for  the Resource group scope.](../media/2-rbac-overview.png)
 
-## RBAC is an allow model
+## Azure RBAC is an allow model
 
-RBAC is an allow model. What this means is that when you are assigned a role, RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have read and write permissions on that resource group.
+Azure RBAC is an allow model. What this means is that when you are assigned a role, Azure RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have read and write permissions on that resource group.
 
-RBAC has something called `NotActions` permissions. Use `NotActions` to create a set of allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations. For example, the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) role has both `Actions` and `NotActions`. The wildcard (*) in `Actions` indicates that it can perform all operations on the control plane. Then you subtract the following operations in `NotActions` to compute the effective permissions:
+Azure RBAC has something called `NotActions` permissions. Use `NotActions` to create a set of allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations. For example, the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) role has both `Actions` and `NotActions`. The wildcard (*) in `Actions` indicates that it can perform all operations on the control plane. Then you subtract the following operations in `NotActions` to compute the effective permissions:
 
 - Delete roles and role assignments
 - Create roles and role assignments

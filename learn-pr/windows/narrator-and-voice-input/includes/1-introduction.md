@@ -8,13 +8,13 @@ In this module, we'll focus on using audio features to create an inclusive exper
 
 We'll use a scientific calculator app in this module, so we can show how to make Narrator and speech input work in a technically complex scenario. If you've already completed our previous module on inclusive design for Windows devs, you'll already have this app downloaded and ready to go. If you haven't, here's what you need to do:
 
-1. Open up Visual Studio and create a new **Windows Universal** project using the **Blank App** template, called **InclusiveScientificCalculator**. Make sure to use this name exactly, to match the code we'll get from GitHub.
+1. Open Visual Studio, and create a new **Windows Universal** project using the **Blank App** template, called **InclusiveScientificCalculator**. Make sure to use this name exactly, to match the code we'll get from GitHub.
 
-2. When asked about the versions of Windows that the app should support, change the minimum version from the default to the one shown in the image below. There are some newer features of Windows that we would like to include.
+2. When prompted about the versions of Windows that the app should support, change the minimum version from the default to the one shown in the following image. There are some newer features of Windows that we need to include.
 
 ![Setting the Minimum version](../media/windows-minimum.png)
 
-3. Navigate to [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-inclusive-Windows-apps) and open up the `MainPage.xaml` file. Select all the contents of the file and copy and paste it over the entire contents of the MainPage.xaml file in your project.
+3. Navigate to [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-inclusive-Windows-apps), and open the `MainPage.xaml` file. Select all the contents of the file, and copy and paste it over the entire contents of the MainPage.xaml file in your project.
 
 4. At the same location on GitHub, open the `MainPage.xaml.cs` file. Again, replace all the contents of your file with the contents of the file on GitHub. It's quite a lot of code, over 1000 lines of C#.
 
