@@ -25,7 +25,7 @@ prerequisites: |
   - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
     - It is recommended to install AZ CLI locally 
     - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
-  - Mac OS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
+  - macOS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
   - Windows OS: PowerShell is built-in
   - Access to an Azure subscription where you have the Global Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
   - It is recommended that you have some experience working with Time Series Insights, you can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/) module 

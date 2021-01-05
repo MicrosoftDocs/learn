@@ -47,10 +47,10 @@ quiz:
     choices: 
     - content: 'An IoT Hub'
       isCorrect: false
-      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
+      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
     - content: 'An Event Hub'
       isCorrect: true
-      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
+      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
     - content: 'A Service Bus'
       isCorrect: false
-      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
+      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'

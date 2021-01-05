@@ -19,10 +19,10 @@ This step is required to re-provision the resources created in [Module 3: Ingest
     - Create a new resource group and give it a unique name
     - Select a **Region**, ideally nearest to your location
     - Leave **Location** and **Utc Value** as defaults
-    - Run the following command in PowerShell (do not forget to replace id with your Azure Subscription ID) and paste the output in **Userid**:
+    - Run the following command in PowerShell (do not forget to replace ID with your Azure Subscription ID) and paste the output in the **Userid** field:
 
         ```powershell
-        az ad user show --id jdoe@contoso.com --query 
+        az ad user show --id jdoe@contoso.com --query objectId -o tsv
         ```
 
     :::image type="content" source="../media/custom-template-deployment.png" alt-text="Customizing the ARM template deployment":::
@@ -47,7 +47,7 @@ This step is required to re-provision the resources created in [Module 3: Ingest
 
 1. Copy and paste the list of variables you had in Notepad and run these variables in PowerShell in order to continue working locally on the next exercises.
 
-1. Now you have an Azure Digital Twin of a factory production line! You can view your Digital Twin using a sample application like [Azure Digital Twins Explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins Explorer also provides additional twin capabilities like uploading models, creating twins, relationships, and updating twin properties.
+1. Now you have an Azure Digital Twin of a factory production line! You can view your Digital Twin using a sample application like [Azure Digital Twins Explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins Explorer also provides more twin capabilities like uploading models, creating twins, relationships, and updating twin properties.
 
 :::image type="content" source="../media/azure-digital-twins-explorer.png" alt-text="A screenshot showing the Azure Digital Twins explorer user interface":::
 
@@ -83,7 +83,7 @@ Additionally, you have provisioned the IoT Hub and an Azure function that is con
     :::image type="content" source="../media/deploy-script-connection-string.png" alt-text="A screenshot showing where to insert the connection string in the deployment script":::
 
     > [!NOTE]
-    > if you lost the device connection string, you can retrieve it by running the command: `az iot hub device-identity connection-string show -d GrindingStep --hub-name $dtname -o tsv`
+    > If you lost the device connection string, you can retrieve it by running the command: `az iot hub device-identity connection-string show -d GrindingStep --hub-name $dtname -o tsv`
 
 1. Save and close the file.
 
@@ -107,7 +107,7 @@ Additionally, you have provisioned the IoT Hub and an Azure function that is con
 
 ## Challenge: simulate Fanning/Roasting and Molding devices
 
-The Sensor.js script can be edited to send data as additional devices. The Azure Function has logic that evaluates the device type specified in the payload. Change the value stored in the deviceType and deviceConection string to send as Fanning and Molding sensors.
+The Sensor.js script can be edited to send data as other devices. The Azure Function has logic that evaluates the device type specified in the payload. Change the value stored in the deviceType and deviceConnection string to send as Fanning and Molding sensors.
 
 :::image type="content" source="../media/sensor-type.png" alt-text="A screenshot showing which deployment script value to change to simulate sending data as a different sensor type":::
 

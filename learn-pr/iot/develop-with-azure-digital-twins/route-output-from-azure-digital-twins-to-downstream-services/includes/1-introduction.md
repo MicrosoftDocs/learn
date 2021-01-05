@@ -25,7 +25,7 @@ In this module, you'll learn how to route events to Time Series Insights for que
 
 In many cases, data from Azure Digital Twins needs to be sent to downstream services for further analysis, integration, simulation, or processing. In this example, you'll explore how to send the data to a Time Series Insights instance to record time series data of manufacturing process events for bulk analytics.
 
-Data egress is handled using *event routes*. An event route lets you send event data (such as telemetry events, life cycle events, and property change events) from twins to defined endpoints in your subscriptions (such as an event hub, event grid, or a service bus).
+Data egress is handled using *event routes*. An event route lets you send event data (such as telemetry events, life-cycle events, and property change events) from twins to defined endpoints in your subscriptions (such as an event hub, event grid, or a service bus).
 
 Azure Digital Twins will emit the following events (notifications and telemetry messages) and they'll be routed to custom endpoints:
 
@@ -89,7 +89,7 @@ In this module, you will:
 - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
   - It is recommended to install AZ CLI locally 
   - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
-- Mac OS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
+- macOS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
 - Windows OS: PowerShell is built-in
 - Access to an Azure subscription where you have the Global Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
 - It is recommended that you have some experience working with Time Series Insights, you can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/) module 
