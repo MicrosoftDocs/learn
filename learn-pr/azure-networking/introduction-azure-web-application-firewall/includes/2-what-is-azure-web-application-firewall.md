@@ -34,7 +34,7 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 - Exclusion lists. You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
 - Policies. You can combine a set of managed rules, custom rules, exclusions, and other Azure Web Application Firewall settings into a single element called an Azure Web Application Firewall policy. YOu can then apply that policy to multiple web apps for easy management and maintenance.
 - Request size limits. You can configure Azure Web Application Firewall to flag requests that are either too small or too large.
-- Alerts. Azure Web Application Firewall integrates with Azure Monitor. This integration enables you to get near-real-time alerts when the firewall detects a threat.
+- Alerts. Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near-real-time alerts when the firewall detects a threat.
 
 ## Common attacks prevented by Azure Web Application Firewall
 
@@ -42,13 +42,15 @@ The following table describes the most common types of malicious threats that Az
 
 |Threat     |Description   |
 |---------|---------|
-|Cross-site scripting|A threat actor uses a web application to send malicious code to another user's web browser. The browser runs the code, which enables the script to access the user's session data, cookies, and other sensitive information.   |
-|Local file inclusion   |An attacker exploits vulnerabilities in a server's handling of `include` statements, most often in PHP scripts. By passing specially configured text to a script's `include` statement, the attacker can include files that are locally present on the server. The attacker might then be able to view sensitive information and run server commands.   |
-|PHP injection   |The attacker inserts text specially configured to trick the server into running PHP commands. These commands enable the attacker to run local or remote PHP code. The attacker might then be able enable to access sensitive data and run commands on the server.   |
-|Protocol attacks   |An attacker inserts specially configured text into an HTTP/HTTPS request header. Depending on the specific text injected into the header, the attacker can fool the server into viewing sensitive data or running code.   |
+|Cross-site scripting|A threat actor uses a web application to send malicious code to another user's web browser. The browser runs the code, which gives the script access to the user's session data, cookies, and other sensitive information.   |
+|Local file inclusion   |An attacker exploits vulnerabilities in a server's handling of `include` statements, most often in PHP scripts. By passing specially configured text to a script's `include` statement, the attacker can include files that are locally present on the server. The attacker might then be able to access sensitive information and run server commands.   |
+|PHP injection   |The attacker inserts text specially configured to trick the server into running PHP commands. These commands let the attacker run local or remote PHP code. The attacker might then be able to access sensitive data and run commands on the server.   |
+|Protocol attacks   |An attacker inserts specially configured text into an HTTP/HTTPS request header. Depending on the specific text injected into the header, the attacker can fool the server into displaying sensitive data or running code.   |
 |Remote command execution   |The attacker tricks a server into running commands associated with the server's operating system. On a UNIX system, for example, the attacker might have the server run `ls` to get a directory listing,   |
-|Remote file inclusion   |The same as local file inclusion, except the attacker passes the server specially configured text that enables a remote file—that is, a file on a remote server controlled by the attacker—to a script's `include` statement.   |
-|Session fixation   |An attacker exploits a web app vulnerability that enables the attacker to obtain a valid session ID. The attacker fools a user into authenticating a new session with that ID. The attacker then hijacks this user-validated session.   |
-|SQL injection   |In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands. These commands enable the attacker to access sensitive data, insert, update, or delete data, or run SQL operations.  |
+|Remote file inclusion   |The same as local file inclusion, except the attacker passes the server specially configured text that pass a remote file—that is, a file on a remote server controlled by the attacker—to a script's `include` statement.   |
+|Session fixation   |An attacker exploits a web app vulnerability that allows the attacker to obtain a valid session ID. The attacker fools a user into authenticating a new session with that ID. The attacker then hijacks this user-validated session.   |
+|SQL injection   |In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands. These commands allow the attacker to access sensitive data, insert, update, or delete data, or run SQL operations.  |
 
 All the exploits listed in the above table are only possible when the server trusts whatever input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. And the above table represents only a small fraction of the possible exploits a web app can face. Azure Web Application Firewall is designed to prevent these attacks and many more.
+
+<!-- Insert concept video here -->

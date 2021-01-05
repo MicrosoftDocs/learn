@@ -1,10 +1,10 @@
-You're familiar with the basic features and benefits of Azure Web Application Firewall. Now let's take a look at how Azure Web Application Firewall works. In particular, let's consider how features such as core rule sets and rule groups enable Azure Web Application Firewall to protect web apps from common exploits. This information will help you evaluate whether Azure Web Application Firewall is the right solution for your company.
+You're familiar with the basic features and benefits of Azure Web Application Firewall. Now let's examine how Azure Web Application Firewall works. In particular, let's consider how features such as core rule sets and rule groups allow Azure Web Application Firewall to protect web apps from common exploits. This information will help you evaluate whether Azure Web Application Firewall is the right solution for your company.
 
 ## Sanitizing input
 
 The threats faced by modern web apps are varied and sophisticated. However, in most cases the reason exploits are possible is that the web app implicitly trusts the input it receives.
 
-For example, consider a web form that enables an authorized web app user to sign in to the user's account. The form consists of just three elements:
+For example, consider a web form that lets an authorized web app user sign in to the user's account. The form consists of just three elements:
 
 - A User Name text box
 - A Password text box
@@ -30,7 +30,7 @@ On many SQL systems, the double dashes (`--`) mark the start of a comment. Every
 
 Assuming there's a user named `admin`, this command will sign in the attacker as the admin user. Not good!
 
-:::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram showing two sign in attempts, with Azure Web Application Firewall allowing the authorized sign in and denying the unauthorized sign in.":::
+:::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram showing two sign-in attempts, with Azure Web Application Firewall allowing the authorized sign-in and denying the unauthorized sign-in.":::
 
 The above example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
 
@@ -120,7 +120,7 @@ Azure Web Application Firewall can operate in one of two modes. The mode you cho
 - Detection mode. Logs the request, but allows the request to go through.
 - Prevention mode. Logs the request, but doesn't allow the request to go through.
 
-A common scenario is to run Azure Web Application Firewall in detection mode when you're testing an app. Detection mode enables you to look for two types of problems:
+A common scenario is to run Azure Web Application Firewall in detection mode when you're testing an app. In detection mode, you can check for two types of problems:
 
 - False positives. Legitimate requests that the firewall flags as malicious.
 - False negatives. Malicious requests that the firewall allows through.
@@ -129,7 +129,14 @@ Once the app is ready to be deployed, you then switch to prevention mode.
 
 ## Deployment options
 
-You deploy Azure Web Application Firewall as part of an Azure front-end solution for your web apps. You have two choices:
+You deploy Azure Web Application Firewall as part of an Azure front-end solution for your web apps. You begin by creating an Azure Web Application Firewall policy, which includes the following settings:
 
-- Azure Front Door. You create an Azure Web Application Firewall policy—basically, you specify which CRS you want to use, any custom rules you want to add, and which mode you want to use—and apply it to a front-end host at Azure Front Door.
-- Azure Application Gateway. You configure your application gateway to use Azure Web Application Firewall. You then create an Azure Web Application Firewall policy and associate it with your application gateway.
+- Which managed rule set you want to use
+- Which rules within that rule set you want to disable
+- Any custom rules you want to add
+- Which mode you want to use
+
+For deployment, you have two choices:
+
+- Azure Front Door. When you create your Azure Web Application Firewall policy, you associate it with an existing Azure Front Door profile.
+- Azure Application Gateway. You configure your application gateway to use Azure Web Application Firewall. You can choose a Web Application Firewall tier when you create your application gateway. Alternatively, you can upgrade an existing application gateway to use a Web Application Firewall tier. You then associate your Web Application Firewall policy with your application gateway.

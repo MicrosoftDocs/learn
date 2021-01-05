@@ -37,14 +37,14 @@ quiz:
     - content: "Virtual WAN"
       isCorrect: true
       explanation: "Correct. Virtual WAN optimizes and automates branch-to-branch connectivity, but it's not a web application front end."
-  - content: "TBD" 
+  - content: "Suppose a company wants to deploy a web app and is trying to decide whether to use in-house developers to code against common exploits. Which of the following scenarios isn't an argument in favor of using Azure Web Application Firewall instead?" 
     choices:
-    - content: "A"
+    - content: "Your web app includes user accounts and stores sensitive or proprietary data."
       isCorrect: false
-      explanation: "Incorrect."
-    - content: "B"
+      explanation: "Incorrect. User credentials, sensitive personal information, and proprietary company data are coveted by malicious users, so Azure Web Application Firewall is a good choice for protecting that data"
+    - content: "Your web app is made available to employees, customers, and vendors using Azure Private Link."
       isCorrect: true
-      explanation: "Correct."
-    - content: "C"
+      explanation: "Correct. Azure Private Link provides private access to the virtual network where the web app resides. App traffic never goes over the public Internet, so there is no need to protect the app against common web exploits. "
+    - content: "Your web app development team lacks security expertise, time, and money"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. A lack of expertise, time, and money can prevent your team from covering all possible exploits, which can leave your app vulnerable. Azure Web Application Firewall protects against all OWASP exploits and can be deployed quickly and cost-effectively."
