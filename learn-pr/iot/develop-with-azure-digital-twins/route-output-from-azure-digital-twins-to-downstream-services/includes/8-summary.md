@@ -11,21 +11,19 @@ title: Summary
 durationInMinutes: 3
 ---
 
-Microsoft’s definition of a "Digital Twin" is a digital replica of real-world things, places, business processes or people, designed to understand, model, control, simulate, analyze, and improve real-world business operations. Azure Digital Twins is our IoT Platform enabling the creation of next-generation IoT solutions that model the real world.
+In this module, you learned how to integrate Azure Digital Twins with Azure Time Series Insights.
 
-The Internet of Things gives businesses unprecedented insights into their assets. As connected solutions continue to evolve, companies are looking to create comprehensive digital models of their entire environments to gain insights that drive better products, optimization of operations, cost reduction, and breakthrough customer experiences.
+The scenario described in this module covered how you can gather and analyze near real-time, as well as historical data, about your IoT solution. Azure Digital Twins is a great fit for feeding data into Time Series Insights, as it allows you to correlate multiple data streams and standardize your information before sending it to Time Series Insights.
 
-Azure Digital Twins seamlessly integrates with Azure data, analytics, and AI services to make it easy to track the past and predict the future – giving businesses the edge they need to meet the challenges they face today... and tomorrow.
+In this module, you learned how to:
+
+- Build and simulate the chocolate factory twin
+- Create a route and filter to twin update notifications
+- Create and configure an Azure function, and send telemetry to an event hub
+- Create and connect a Time Series Insights instance
+- Visualize and query your data in Time Series Insights
 
 ## Learn more
-
-- [Azure Digital Twins Documentation](https://docs.microsoft.com/azure/digital-twins/tutorial-end-to-end)
-
-- [Azure Digital Twins Product Page](https://azure.microsoft.com/services/digital-twins/)
-
-- [Azure Digital Twins New Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-Digital-Twins-Preview-New-Capabilities?term=Azure%20Digital%20Twins&lang-en=true)
-
-- [Deep Dive: Azure Digital Twins Updated Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Azure-Digital-Twins-Updated-Capabilities)
 
 For more information on how to use Time Series Insights and visualize and query data, see the additional resources:
 

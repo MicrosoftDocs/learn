@@ -36,7 +36,7 @@ quiz:
       isCorrect: true
       explanation: 'From the Azure portal, you may launch the Time Series Insights Explorer URL, which provides out-of-the-box visualization capabilities.'
 
-  - content: 'What kind of data/storage is supported by Time Series Insights?'
+  - content: 'What kind of data/storage is supported by Time Series Insights? Choose all options that apply.'
     choices: 
     - content: 'Warm'
       isCorrect: false

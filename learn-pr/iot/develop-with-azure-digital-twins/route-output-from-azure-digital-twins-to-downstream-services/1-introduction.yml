@@ -20,13 +20,13 @@ quiz:
     choices: 
     - content: 'Event Hub, Event Grid, Service Bus'
       isCorrect: true
-      explanation: 'An endpoint is a connection to a destination outside of ADT. Supported destinations are: Event Grid, EventHub, and Service Bus.'
+      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are: Event Grid, EventHub, and Service Bus.'
     - content: 'Azure Data Lake, Azure Synapse Analytics, Logic Apps'
       isCorrect: false
-      explanation: 'An endpoint is a connection to a destination outside of ADT. Supported destinations are: Event Grid, EventHub, and Service Bus.'
+      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are: Event Grid, EventHub, and Service Bus.'
     - content: 'Time Series Insights, Azure Maps, Azure Functions'
       isCorrect: false
-      explanation: 'An endpoint is a connection to a destination outside of ADT. Supported destinations are: Event Grid, EventHub, and Service Bus.'
+      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are: Event Grid, EventHub, and Service Bus.'
 
   - content: 'Event routes are defined using data plane APIs. A route definition contains:'
     choices: 

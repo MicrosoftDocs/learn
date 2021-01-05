@@ -20,18 +20,19 @@ abstract: |
   - Create and connect a Time Series Insights instance
   - Visualize and query your data in Time Series Insights
 prerequisites: |
-  - It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) 
-  - A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended 
+  - It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) Learning Path
+  - A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended 
   - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
     - It is recommended to install AZ CLI locally 
     - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
   - Mac OS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
   - Windows OS: PowerShell is built-in
-  - Access to an Azure subscription where you have Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
+  - Access to an Azure subscription where you have the Global Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
   - It is recommended that you have some experience working with Time Series Insights, you can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/) module 
   - [Node.js](https://nodejs.org/en/download/) to run the device simulator application  
   - [Git](https://git-scm.com/downloads)
   - [Visual Studio Code](https://code.visualstudio.com/)
+  - [.NET Core 3.1](https://dotnet.microsoft.com/download)
   - [C# VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
   - [Azure Function VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg
@@ -46,11 +47,11 @@ products:
 - azure-digital-twins
 units:
 - learn.iot.output-from-adt-to-downstream-services.introduction
-- learn.iot.output-from-adt-to-downstream-services.the-scenario
-- learn.iot.output-from-adt-to-downstream-services.exercise-build-and-simulate-the-chocolate-factory-twin
-- learn.iot.output-from-adt-to-downstream-services.exercise-create-a-route-and-filter-to-twin-update-notifications
-- learn.iot.output-from-adt-to-downstream-services.exercise-create-configure-and-deploy-an-azure-function
-- learn.iot.output-from-adt-to-downstream-services.exercise-visualize-your-data-in-time-series-insights
+- learn.iot.output-from-adt-to-downstream-services.scenario
+- learn.iot.output-from-adt-to-downstream-services.exercise-build-simulate-chocolate-factory-twin
+- learn.iot.output-from-adt-to-downstream-services.exercise-create-route-filter-twin-update-notifications
+- learn.iot.output-from-adt-to-downstream-services.exercise-create-configure-deploy-azure-function
+- learn.iot.output-from-adt-to-downstream-services.exercise-visualize-data-time-series-insights
 - learn.iot.output-from-adt-to-downstream-services.knowledge-check
 - learn.iot.output-from-adt-to-downstream-services.summary
 badge:
