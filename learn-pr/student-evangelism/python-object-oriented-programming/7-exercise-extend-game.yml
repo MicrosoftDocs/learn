@@ -2,8 +2,8 @@
 uid: learn.student-evangelism.python-object-oriented-programming.7-exercise-extend-game
 title: Exercise - Extend the game implementation with added rules
 metadata:
-  title: Exercise - extend the game implementation with added rules
-  description: In this unit you will add rules supporting a more advanced version of rock paper scissors.
+  title: Exercise - Extend the game implementation with added rules
+  description: In this unit, you'll add rules supporting a more advanced version of rock, paper, scissors.
   author: softchris
   ms.author: shanama
   ms.date: 12/01/2020

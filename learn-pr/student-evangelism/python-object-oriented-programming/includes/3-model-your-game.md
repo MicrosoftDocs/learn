@@ -1,85 +1,86 @@
-You want evaluate OOP by rebuilding the game rock paper scissors. You have the original procedural code to look at for reference but now you need to model it in an OOP format. 
+You want to evaluate object-oriented programming (OOP) by building the game rock, paper, scissors. To do so, you first need to model it in an OOP format.
 
-To do so, we will need to apply some fundamental OOP concepts, such as classes, objects and state. This unit will therefore explore the following parts:
+We'll need to apply some fundamental OOP concepts, such as classes, objects, and state. This unit explores the following parts:
 
-- **Important OOP concepts**. To be able to reason in OOP, you need to understand some fundamental concepts like classes and objects and state, what's the difference between them and how they relate to one another.
-- **Variables in OO**. How do you deal with variables and how do you add them to your objects.
+- **Important OOP concepts**: To reason in OOP, you need to understand some fundamental concepts like classes, objects, and state. You need to know what the difference is between them and how they relate to one another.
+- **Variables in OOP**: You need to know how to deal with variables and how to add them to your objects.
 
-## What is an Object
+## What is an object?
 
-The concept of objects has been mentioned a few times already as part of trying to _model_ problem domains. An object is an actor, something that does something within a system and as a result of taking an action, it changes state within itself or other objects.
+The concept of objects has been mentioned a few times already as part of trying to _model_ problem domains. An object is an actor. It's something that does something within a system. As a result of taking an action, it changes state within itself or other objects.
 
-Lets try to imagine an object in the real world, you are in a car park, what do you see? You are likely to see cars, lots of them, of all shapes, sizes, and colors. To describe a car you can use properties like make, model, color, type of car, like a four-wheel drive and so on. If you assign values to these properties, it quickly becomes clear whether you are talking about red Ferrari or a four-wheel drive Jeep or a yellow Mustang and so on.
+Let's imagine an object in the real world. You're in a car park, and what do you see? You're likely to see many cars, in different shapes, sizes, and colors. To describe a car, you can use properties like make, model, color, and type of car. If you assign values to these properties, it quickly becomes clear whether you're talking about a red Ferrari, or a four-wheel-drive Jeep, or a yellow Mustang, and so on.
 
-:::image type="content" source="../media/car.png" alt-text="A car object with properties color and make":::
+:::image type="content" source="../media/car.png" alt-text="Visualization that shows a car object with the properties color and make.":::
 
-New scene, a deck of cards in Vegas. You look at two different cards, two objects and you realize they have some common properties namely suit, e.g clubs, heart, diamonds etc. and what value they are like ace, king, nine etc.
+In another scene, picture a deck of cards in Las Vegas. You look at two different cards, which are two objects. You realize they have some common properties, namely, suit. The suit for the objects can be clubs, hearts, diamonds, or spades. Their values can be ace, king, nine, and so on.
 
 > [!TIP]
-> Start looking at your surroundings, see if you can take two similar objects, like two books or two chairs and see if you can find the properties that best describes them and tells them apart.
+> Look at your surroundings. Take two similar objects, like two books or two chairs, and see if you can find the properties that best describe them and tell them apart.
 
-## What is a class
+## What is a class?
 
 A class is a data type that acts as a template definition for a particular kind of object.
 
-You've learned that an OOP system has objects and that those objects have properties. There's a concept that's similar to an object namely a class. So what's a class? A class is a blueprint of an object. Where the class is the blueprint of a car, the object is the actual car that you drive around. The class is what you write in code, the object is what you get when you tell the runtime environment to run your code. Here's a table of some example of classes and their resulting objects.
+You've learned that an OOP system has objects, and those objects have properties. There's a concept that's similar to an object, namely, a class. So what's a class? A class is a blueprint of an object. Where the class is the blueprint of a car, the object is the actual car you drive around. The class is what you write in code. The object is what you get when you tell the runtime environment to run your code.
+
+Here's a table of some examples of classes and their resulting objects:
 
 |Class                                 |Object                              |
 |--------------------------------------|------------------------------------|
 |Blueprint of a car                    | Honda Accord, Jeep Wrangler        |
 |Cat                                   | Garfield the cat                   |
-|Description of ice cream              | Strawberry, chocolate, or vanilla ice cream  |
+|Description of ice cream              | Strawberry, chocolate, or vanilla  |
 
-The way you go about creating an object from a class is similar to how you would create a car from a blueprint. When you create an object your program asks the operating system for resources, memory, to be able to construct the object. Conversely when a car is made from a blueprint the factory asks for resources like metal, rubber, glass etc. to be able to assemble the car.
+The way you go about creating an object from a class is similar to how you would create a car from a blueprint. When you create an object, your program asks the operating system for resources, namely, memory, to be able to construct the object. Conversely, when a car is made from a blueprint, the factory asks for resources like metal, rubber, and glass to be able to assemble the car.
 
-:::image type="content" source="../media/car-assembly.png" alt-text="Assembling a car in a factory":::	
+:::image type="content" source="../media/car-assembly.png" alt-text="Visualization that shows assembling a car in a factory.":::	
 
+## Create a class
 
-## How to create a class
-
-A class in Python is created by using the keyword `class` and give it a name, like in this example:
+A class in Python is created by using the keyword `class` and giving it a name, like in this example:
 
 ```python
 class Car:
 ```
 
-### Creating an object from a class
+### Create an object from a class
 
-When you create an object from class, you're said to _instantiate_ it. What you're doing is asking the operating system that, given this template (the class), and these starter values, give me enough memory and create an object. Essentially, _instantiate_ is another word for create.
+When you create an object from a class, you're said to _instantiate_ it. What you're doing is asking the operating system, that with this template (the class) and these starter values, to give you enough memory and create an object. Essentially, instantiate is another word for create.
 
-To _instantiate_ an object you add parentheses to the class's name. What you get is an object that you can chose to assign to a variable, like so:
+To instantiate an object, you add parentheses to the name of the class. What you get is an object that you can choose to assign to a variable, like so:
 
 ```python
 car = Car()
 ```
 
-The `car` is the variable that holds your object's instance. The moment of instantiation, object creation, is when you call `Car()`.
+The `car` is the variable that holds your object's instance. The moment of instantiation, or object creation, is when you call `Car()`.
 
-## Variables in OOP vs variables in procedural programs
+## Variables in OOP vs. variables in procedural programs
 
-From procedural programming, you are used to having variables to hold information and keeping track of state. You can define these variables wherever you need them in your file. A typical variable _initialization_ can look like so:
+From procedural programming, you're used to having variables to hold information and keep track of state. You can define these variables wherever you need them in your file. The typical variable _initialization_ can look like so:
 
 ```python
 pi = 3.14
 ```
 
-You have variables in OOP as well, although they are _attached_ to objects rather than being defined on its own. You refer to variables on an object as attributes. When an attribute is attached to an object, it's used in one of two ways:
+You have variables in OOP too, although they're _attached_ to objects instead of being defined on their own. You refer to variables on an object as *attributes*. When an attribute is attached to an object, it's used in one of two ways:
 
-- **Describing the object**. An example of _description_ variable is, for example, the color of the car, or the number of spots on a giraffe.
-- **Holding the state**. A variable can instead be used to describe an object's state. Example of a state is the floor of an elevator, or whether it's running or not.
+- **Describe the object**: An example of a _description_ variable is, for example, the color of a car or the number of spots on a giraffe.
+- **Hold the state**: A variable can instead be used to describe an object's state. An example of a state is the floor of an elevator, or whether it's running or not.
 
-## Adding attributes to a class
+## Add attributes to a class
 
-Knowing what attributes (variables) that should be added to your class is part of modeling. You've learned how to create a class in code, so how do you add an attribute to it? You need to tell the class what attributes it should have at construction time, when an object is being instantiated. There's a special function that's being called, at the moment of creation, called a _constructor_.
+Knowing what attributes (variables) that should be added to your class is part of modeling. You've learned how to create a class in code, so how do you add an attribute to it? You need to tell the class what attributes it should have at construction time, when an object is being instantiated. There's a special function that's being called at the moment of creation, called a _constructor_.
 
 ### Constructor
 
-Many program languages have the notion of a _constructor_, a special function that's only invoked when the object is first being created. The constructor will be called only once, and in this method, you create the attributes the object should have. Additionally, you assign any starter values to the created attributes.
+Many program languages have the notion of a constructor, the special function that's only invoked when the object is first being created. The constructor will be called only once. In this method, you create the attributes the object should have. Additionally, you assign any starter values to the created attributes.
 
-In Python the constructor has the name `__init()__`.  You also need to pass a special keyword `self` as a parameter to the constructor. The keyword `self` refers to the object's instance. Any assignment to this keyword means that the attribute ends up on the object instance. If you don't add an attribute to `self` it will instead be treated as a temporary variable that will seize to exist once `__init()__` is done executing.
+In Python, the constructor has the name `__init()__`. You also need to pass a special keyword, `self`, as a parameter to the constructor. The keyword `self` refers to the object's instance. Any assignment to this keyword means that the attribute ends up on the object instance. If you don't add an attribute to `self`, it will instead be treated as a temporary variable that won't exist after `__init()__` is done executing.
 
 > [!NOTE]
-> They keyword `self` will also need to be passed to any methods that needs to refer to anything on the object instance. This will be covered in the next concept unit.
+> They keyword `self` will also need to be passed to any methods that need to refer to anything on the object instance. This concept will be covered in the next unit.
 
 ### Add and initialize attributes on a class
 
@@ -98,7 +99,7 @@ print(elevator.make) # "The Elevator company"
 print(elevator.floor) # 1
 ```
 
-The above example, describes the class `Elevator` with two variables `make` and `floor`. An important takeaway from the code is that `__init__()` is called implicitly. You don't call the `__init__()` method by name, but it's called when the object is created, in this line of code:
+The preceding example describes the class `Elevator` with two variables, `make` and `floor`. An important takeaway from the code is that `__init__()` is called implicitly. You don't call the `__init__()` method by name, but it's called when the object is created, in this line of code:
 
 ```python
 elevator = Elevator(1)
@@ -106,7 +107,7 @@ elevator = Elevator(1)
 
 ### Incorrect use of `self`
 
-To emphasize how the keyword `self` works, consider the below code in which two attributes `color` and `make` are being assigned in the constructor `__init__()`:
+To emphasize how the keyword `self` works, consider the following code in which two attributes, `color` and `make`, are being assigned in the constructor `__init__()`:
 
 ```python
 class Car:
@@ -119,7 +120,7 @@ print(car.color) # "Red"
 print(car.make) # would result in an error, `make` does not exist on the object
 ```
 
-If the purpose was to make both `color` and `make` attributes of the class `Car` you would need to modify the code. In the constructor, ensure both attributes are assigned to `self`, like so:
+If the purpose was to make both `color` and `make` attributes of the class `Car`, you would need to modify the code. In the constructor, ensure both attributes are assigned to `self`, like so:
 
 ```python
 self.color = "Red" # ends up on the object

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.python-object-oriented-programming.6-exercise-game
 title: Exercise - Add behavior to your game
 metadata:
   title: Exercise - Add behavior to your game
-  description: In this exercise, you add behavior to your game project. You end up adding methods to your objects and also implement them to get a fully working rock paper scissors game.
+  description: In this exercise, you add behavior to your game project. You add methods to your objects and also implement them to get a fully working rock, paper, scissors game.
   author: softchris
   ms.author: shanama
   ms.date: 12/01/2020
