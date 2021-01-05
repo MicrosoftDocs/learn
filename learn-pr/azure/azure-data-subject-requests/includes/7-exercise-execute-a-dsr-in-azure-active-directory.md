@@ -2,7 +2,7 @@ You are the administrator for Contoso, Ltd. You have been asked to evaluate the 
 
 ## Setup
 
-1. Download .csv file <!--- Isn't there additional step needed, to populate .csv file that you downloaded with customers? After that you upload the .csv file, which bulk creates customers. ---> 
+1. Download datasubject01.csv file <!--- Isn't there additional step needed, to populate .csv file that you downloaded with customers? After that you upload the .csv file, which bulk creates customers. ---> 
 2. Bulk create customers in default Azure Active Directory domain
 
 ## Review a DSR and determine appropriate process
