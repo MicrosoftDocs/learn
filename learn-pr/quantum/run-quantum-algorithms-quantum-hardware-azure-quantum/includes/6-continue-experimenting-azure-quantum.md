@@ -1,6 +1,6 @@
-Now that you know how to use Azure Quantum, you are ready to start running your own experiments with real quantum hardware.
+Now that you know how to submit your work to Azure Quantum, you are ready to start running your own experiments with real quantum hardware.
 
-Current quantum computers offer a limited number of qubits, but this number is expected to grow in the next years. Meanwhile, you can start testing your quantum applications and preparing yourself for the quantum revolution. Let's see some things that you can do with current quantum devices.
+Please have in mind that current quantum computers offer a limited number of qubits, but this number is expected to grow in the next years. Meanwhile, as a memmber of the quantum space explorer team, we need you to start testing your quantum applications and preparing yourself for the quantum revolution. Let's see some things that you can do with current quantum devices.
 
 ## Run tests of quantum mechanics
 
