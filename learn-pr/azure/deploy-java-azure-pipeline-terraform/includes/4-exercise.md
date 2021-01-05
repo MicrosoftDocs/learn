@@ -50,7 +50,7 @@ Create a GitHub secret for each of four secrets using the values returned the Az
 
 The result will be something like this:
 
-![Github Secrets.](../media/6-secrets.png)
+![Github Secrets.](../media/4-secrets.png)
 
 ## Workflow file
 
