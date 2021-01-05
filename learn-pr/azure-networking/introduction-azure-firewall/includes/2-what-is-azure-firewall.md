@@ -25,6 +25,8 @@ All traffic to and from the internet is denied by default. Traffic is only allow
 > [!NOTE]
 > Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
 
+<!-- Insert concept video here -->
+
 ### Key features of Azure Firewall
 
 The following table lists some key features of Azure Firewall:
@@ -83,4 +85,3 @@ Azure Firewall Manager provides security management for the following two networ
 
 - Hub virtual network. A standard Azure virtual network where one or more firewall policies have been applied.
 - Secured virtual hub. An Azure Virtual WAN Hub where one or more firewall policies have been applied.
-

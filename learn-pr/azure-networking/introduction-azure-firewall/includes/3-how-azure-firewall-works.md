@@ -64,4 +64,3 @@ Azure Firewall offers many features designed to make it easier to create and man
 |IP groups     |A group of IP addresses, such as 10.2.0.0/16 or 10.1.0.0-10.1.0.31. You can use an IP group as the source address in a NAT or application rule, or as the source or destination address in a network rule.        |
 |Custom DNS     |A custom DNS server that resolves domain names to IP addresses. If you use a custom DNS server rather than Azure DNS, you must also configure Azure Firewall as a DNS proxy.        |
 |DNS proxy     |You can configure Azure Firewall to act as a DNS proxy, which means that all client DNS requests go through the firewall before going to the DNS server.        |
-
