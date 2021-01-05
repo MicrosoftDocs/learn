@@ -35,7 +35,7 @@ Spark has optimized this operation by using a format called **Tungsten**.
 
 Tungsten prevents the need for expensive serialization and de-serialization of objects in order to get data from one JVM to another.
 
-The data that is "shuffled" is in a format known as `UnsafeRow`, or more commonly, the **Tungsten Binary Format**.
+The data that is *shuffled* is in a format known as `UnsafeRow`, or more commonly, the **Tungsten Binary Format**.
 
 `UnsafeRow` is the in-memory storage format for Spark SQL, DataFrames & Datasets.
 
@@ -51,7 +51,7 @@ Advantages include:
 
 - The first field, "123", is stored in place as its primitive.
 - The next 2 fields, "data" and "bricks", are strings and are of variable length.
-- An offset for these two strings is stored in place (32L and 48L, respectively, shown in the following image.
+- An offset for these two strings is stored in place (32L and 48L, respectively, shown in the following image).
 - The data stored in these two offset's are of format "length + data".
 - At offset 32L, we store 4 + "data" and likewise at offset 48L we store 6 + "bricks".
 
