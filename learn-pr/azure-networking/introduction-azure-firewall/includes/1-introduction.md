@@ -8,10 +8,10 @@ In this module, you’ll learn the fundamentals of Azure Firewall and Azure Fire
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you’ll:
 
 - Explain how Azure Firewall and Azure Firewall Manager work together to protect Azure Virtual Networks.
-- Evaluate whether Azure Firewall is the right solution to protect your Azure Virtual Networks from malicious incoming and outgoing traffic.
+- Evaluate whether Azure Firewall is the right solution to protect your Azure virtual networks from malicious incoming and outgoing traffic.
 - Evaluate whether Azure Firewall Manager is the right solution for deploying policies across multiple firewalls.
 - Identify and describe use cases for Azure Firewall and Azure Firewall Manager.
 
