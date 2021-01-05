@@ -1,8 +1,10 @@
 In this unit, we look at Terraform configuration and scripting.
 
-# Terraform with Azure
+# Why Terraform?
 
 Terraform is an open-source tool for provisioning and managing cloud infrastructure. It manages "infrastructure as code" in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces.
+
+Terraform is great at deploying infrastructure across cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition.
 
 ## Automate infrastructure management
 
@@ -21,9 +23,7 @@ The Terraform CLI enables users to validate and preview infrastructure changes b
 - Team members can collaborate more effectively by quickly understanding proposed changes and their impact.
 - Unintended changes can be caught early in the development process
 
-## Deploy infrastructure to Azure
-
-Terraform is great at deploying infrastructure across cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure.
+# Terraform Configuration
 
 ## Hashicorp Configuration Language (HCL)
 
