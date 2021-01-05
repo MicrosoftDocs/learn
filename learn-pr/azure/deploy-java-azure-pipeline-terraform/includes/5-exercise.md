@@ -15,13 +15,13 @@ https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
 ## Set Up up your workflow
 
 You now need to allow access from your GitHub workflow to your Azure account.
-Create a service principal to deploy to Azure.
+Create a service principal with the Azure CLI:
 
 > [!IMPORTANT]
 > Make sure you assign the name of your resource group to the variable `AZ_RESOURCE_GROUP` or substitute the value for it in the commands below.
 > Replace `yourServicePrincipalName` with a name of your service principal you choose.
 
-```bash
+```azurecli
 RESOURCE_ID=$(az group show --name "$AZ_RESOURCE_GROUP" --query id -o tsv)
 az ad sp create-for-rbac --name "yourServicePrincipalName" --role contributor --scopes "$RESOURCE_ID" --sdk-auth
 ```

@@ -12,7 +12,7 @@ Typically there are three steps to deliver application resources:
 
 1. Provision the Application –  Build and deploy the application and configure it.
 
-For step 1, you'll use a personal Azure account, with the following items installed:
+For step 1, you'll use a personal Azure account.
 For step 2, you'll use Terraform and Github Actions to provision the Azure infrastructure.
 For step 3, you'll use Maven and Github Actions to build and deploy the sample application.
 
