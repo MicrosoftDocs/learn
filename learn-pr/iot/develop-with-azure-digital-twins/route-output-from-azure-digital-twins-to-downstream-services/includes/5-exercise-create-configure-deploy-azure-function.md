@@ -80,8 +80,6 @@ Use Visual Studio Code to create a local Azure Functions project. Later in this 
     }
     ```
 
-    :::image type="content" source="../media/tsi-function-code-reference.png" alt-text="Reference of the code to replace in the TSIFunction.cs file":::
-
 1. In the VSCode function extension, click on **Deploy to Function App...**
 
     :::image type="content" source="../media/deploy-azure-function-visual-studio-code.png" alt-text="Screenshot showing how to deploy an Azure function app in Visual Studio Code":::
