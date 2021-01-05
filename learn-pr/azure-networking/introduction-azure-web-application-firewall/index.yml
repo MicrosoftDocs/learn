@@ -26,6 +26,9 @@ levels:
 - beginner
 roles:
 - administrator
+- developer
+- devops-engineer
+- security-engineer
 - solution-architect
 - technology-manager
 products:

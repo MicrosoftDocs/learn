@@ -30,6 +30,8 @@ On many SQL systems, the double dashes (`--`) mark the start of a comment. Every
 
 Assuming there's a user named `admin`, this command will sign in the attacker as the admin user. Not good!
 
+:::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram showing two sign in attempts, with Azure Web Application Firewall allowing the authorized sign in and denying the unauthorized sign in.":::
+
 The above example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
 
 Azure Web Application Firewall creates a barrier of non-trust between a web app and its user input. Azure Web Application Firewall assumes that all input is potentially malicious, so it *sanitizes* that input.
