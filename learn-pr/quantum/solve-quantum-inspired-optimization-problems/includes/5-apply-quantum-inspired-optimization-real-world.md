@@ -1,6 +1,6 @@
-Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Interplanet Express has to optimize how it distributes the mineral chunks between its two space ships. In other words, each chunk has a weight, $w$, associated to it, and we would like to partition these weights into two sets: $W_A$ and $W_B$.
+Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Two companies are commissioned to transport and deliver mineral cargo across the galaxy. As member of the quantum space exploration team, you have to study the logistics of this project and optimize how it equally distributes the mineral chunks between two space ships. You can denote the spaceships as ship *A* and ship *B*. If each chunk has a weight, $w$, associated to it, there are two sets of weights, $W_A$ and $W_B$, depending on whether a mineral chunk is loaded onto ship *A* or ship *B*.
 
-Those two sets correspond to whether a mineral chunk is loaded onto ship *A* or ship *B*, and we define $\Delta$ as the weight difference between the two ships.
+We define $\Delta$ as the weight difference between the two ships.
 
 This short animation shows one possible way an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
@@ -17,7 +17,7 @@ Let's start by coming up with an equation for the weight of a given ship, which 
 
 ![An equation that shows the sum of mineral weights](../media/costfun-1.svg)
 
-Ideally, we want a solution where the weight difference between the ships is as small as possible.
+Ideally, we look for a solution where the weight difference between the ships $\Delta$ is as small as possible.
 
 ![An equation that subtracts the total weights on one ship from the total weights on the other ship to produce a cost function](../media/costfun-2.svg)
 
