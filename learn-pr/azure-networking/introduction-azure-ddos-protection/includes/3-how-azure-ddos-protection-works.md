@@ -1,6 +1,4 @@
 
-## Unit 3: How Azure DDoS Protection works
-
 In evaluating, whether Contoso should upgrade to DDoS Protection Standard, you need to understand how the service works.
 
 In this unit, you’ll learn how Azure DDoS Protection Standard works.

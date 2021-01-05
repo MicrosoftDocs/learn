@@ -1,4 +1,3 @@
-## Unit 4: When to use Azure DDoS Basic or Standard
 
 ### Build DDoS-resilient services on Azure
 

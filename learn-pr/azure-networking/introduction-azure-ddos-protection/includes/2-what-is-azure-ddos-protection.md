@@ -1,4 +1,3 @@
-## Unit 2: What are Azure DDoS Protection services?
 
 <!-- A short video like the following example to explain what a DDoS attack is and the various types of DDoS attacks.
 [DDoS Attack Explained](https://www.youtube.com/watch?v=ilhGh9CEIwM) -->
