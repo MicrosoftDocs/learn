@@ -21,7 +21,7 @@ We provide a full list of the possible headers below, but first let's document t
     /// "good" states with a factor of -1. 
     ///
     /// # Description
-    /// Allocates a "flag" qubit and puts it in the state |-> to be used by the oracle in 
+    /// Allocates a "flag" qubit and puts it in the state |−⟩ to be used by the oracle in 
     /// flagging the solution states. This is deallocated at the end of the call. 
     ///
     /// # Input
@@ -33,7 +33,7 @@ We provide a full list of the possible headers below, but first let's document t
     operation ReflectAboutCorrectDigit(missingDigitReg : LittleEndian) : Unit is Adj + Ctl {
         using (flagQubit = Qubit()) {
             within {
-                // put flagQubit in |->
+                // put flagQubit in |−⟩
                 X(flagQubit);
                 H(flagQubit);
             } apply {
@@ -50,6 +50,7 @@ Besides others, documenting your code can always help you too.
 The QDK makes this even easier by enabling help functions in various editors. 
 
 For example, if you are using VS Code, IntelliSense enables autocomplete functionality and you can see the overview of your callable by simply hovering the mouse over it:
+
 ![VS Code IntelliSense mouseover](../media/6-mouseover.png)
 
 If using Q# with Jupyter Notebooks, for example, this works with the `?` magic functions. 

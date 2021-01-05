@@ -1,7 +1,7 @@
 ﻿In the previous unit, you defined the operation `ApplyIsbnOracle`, which takes as an argument the qubit register for our search space, as well as an ancilla qubit in $\ket{-}$ to be used by the oracle to flag the correct states. 
 This process is handled by the `ComputeIsbnCheck` operation run within `ApplyIsbnOracle`.
 
-Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations" which consist of
+Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations," each of which consists of
 - applying the oracle, which reflects the state about the bad solutions, and
 - reflecting about the uniform superposition of states.
 

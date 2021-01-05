@@ -15,7 +15,7 @@ Alongside **Q# libraries**, notice there are a few other sets of API documentati
 We won't focus on them here, but note that they concern various other parts of the QDK:
 - *.NET libraries* contains references for the trace simulator target machine and the *.NET* quantum chemistry library (those parts of the quantum chemistry library which are represented outside the Q# program).
 - *Python libraries* contains details regarding integration with Python as a host program.
-- *IQ# magic commands* contains the magic commands that can be used in Jupyter Notebooks (e.g. `%package` used to add a package to the workspace).
+- *IQ# magic commands* contains the magic commands that can be used in Jupyter Notebooks (e.g. the [`%package` command](xref:microsoft.quantum.iqsharp.magic-ref.package) used to add a package to the workspace).
 
 ### Q# library API references
 
