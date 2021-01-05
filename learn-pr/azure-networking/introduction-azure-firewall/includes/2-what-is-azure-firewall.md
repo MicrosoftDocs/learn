@@ -6,9 +6,9 @@ Azure Firewall is a cloud-based security service that protects your Azure virtua
 
 ### What is a firewall?
 
-A *firewall* is a network security feature that sits between a trusted network and an untrusted network, such as the Internet. The firewall's job is to analyze all incoming and outgoing network traffic. Based on that analysis, the firewall either allows the traffic to pass, or it denies the traffic. Ideally, the firewall allows all legitimate traffic while denying malicious traffic such as malware and intrusion attempts.
+A *firewall* is a network security feature that sits between a trusted network and an untrusted network, such as the internet. The firewall's job is to analyze all incoming and outgoing network traffic. Based on that analysis, the firewall either allows the traffic to pass, or it denies the traffic. Ideally, the firewall allows all legitimate traffic while denying malicious traffic such as malware and intrusion attempts.
 
-By default, most firewalls deny all incoming and outgoing traffic. When a firewall analyzes network traffic, it looks for certain conditions to be met before it allows the traffic to pass through. Those conditions could be a specified IP address, FQDN, network port, network protocol, or any combination.
+By default, most firewalls deny all incoming and outgoing traffic. When a firewall analyzes network traffic, it checks for certain conditions to be met before it allows the traffic to pass through. Those conditions could be a specified IP address, FQDN, network port, network protocol, or any combination.
 
 Together, these conditions define a firewall *rule*. A firewall might have only a single rule, but most firewalls are configured with many rules. Only network traffic that meets the conditions of the firewall's rules is allowed to pass through.
 
@@ -18,12 +18,12 @@ Some firewalls are hardware-based and reside inside devices that are built speci
 
 Azure Firewall is a cloud-based firewall service. In most configurations, Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall via the hub network.
 
-All traffic to and from the Internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
+All traffic to and from the internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 
-:::image type="content" source="../media/2-firewall-description.png" alt-text="Network diagram showing a hub virtual network, several spoke virtual networks, and an on-premises network, with all traffic to and from the Internet passing through an Azure Firewall instance in the hub network.":::
+:::image type="content" source="../media/2-firewall-description.png" alt-text="Network diagram showing a hub virtual network, several spoke virtual networks, and an on-premises network, with all traffic to and from the internet passing through an Azure Firewall instance in the hub network.":::
 
 > [!NOTE]
-> Azure Firewall works not only for traffic to and from the Internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
+> Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
 
 ### Key features of Azure Firewall
 
@@ -31,11 +31,11 @@ The following table lists some key features of Azure Firewall:
 
 |Feature  |Description  |
 |---------|---------|
-|Source network address translation (SNAT)     |All outbound traffic is sent to the private IP address of the Azure Firewall. The IP address of each source virtual machine is translated to the static public IP address of the Azure Firewall. To all external destinations, your network traffic appears to come from a single public IP address.         |
-|Destination network address translation (DNAT)     |All inbound traffic from external sources is sent to the public IP address of the Azure Firewall. Allowed traffic is translated to the private IP address of the destination resource on your virtual network.         |
-|Application rules     |Rules that limit outbound traffic to a list of FQDNs. For example, you can  allow outbound traffic to access the FQDN of a specified SQL database instance.         |
+|Source network address translation (SNAT)     |All outbound traffic is sent to the private IP address of the Azure Firewall instance. The IP address of each source virtual machine is translated to the static public IP address of the Azure Firewall instance. To all external destinations, your network traffic appears to come from a single public IP address.         |
+|Destination network address translation (DNAT)     |All inbound traffic from external sources is sent to the public IP address of the Azure Firewall instance. Allowed traffic is translated to the private IP address of the destination resource on your virtual network.         |
+|Application rules     |Rules that limit outbound traffic to a list of FQDNs. For example, you can allow outbound traffic to access the FQDN of a specified SQL database instance.         |
 |Network rules     |Rules for incoming and outgoing traffic based on network parameters. These parameters include the destination or source IP address; the network port; and the network protocol.         |
-|Threat intelligence     |Filters incoming and outgoing traffic based on the Microsoft Threat Intelligence rules, which define known malicious IP addresses and domain names. You can configure Azure Firewall with one of two threat intelligence modes: Alert you when traffic fails a threat intelligence rule; alert you and deny the traffic.         |
+|Threat intelligence     |Filters incoming and outgoing traffic based on the Microsoft threat intelligence rules, which define known malicious IP addresses and domain names. You can configure Azure Firewall with one of two threat intelligence modes: alert you when traffic fails a threat intelligence rule, or alert you and deny the traffic.         |
 |Stateful     |Examines network packets in context, not just individually. If one or more packets arrive unexpectedly given current traffic, Azure Firewall treats the packets as malicious and denies them.         |
 |Forced tunneling     |Enables Azure Firewall to route all outbound traffic to a specified network resource rather than directly to the Internet. The network resource might be an on-premises hardware firewall or a network virtual appliance that processes traffic before allowing it to pass through to the Internet.         |
 |Tag support     |Azure Firewall supports service tags and FQDN tags for easier rule configuration. A *service tag* is a text entity that represents an Azure service. For example, **AzureCosmosDB** is the service tag for the Azure Cosmos DB service. An *FQDN tag* is a text entity that represents a group of domain names associated with popular Microsoft services. For example, **WindowsVirtualDesktop** is the FQDN tag for Windows Virtual Desktop traffic.   |
@@ -83,3 +83,4 @@ Azure Firewall Manager provides security management for the following two networ
 
 - Hub virtual network. A standard Azure virtual network where one or more firewall policies have been applied.
 - Secured virtual hub. An Azure Virtual WAN Hub where one or more firewall policies have been applied.
+
