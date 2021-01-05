@@ -5,7 +5,7 @@ After you start using Azure Sentinel to generate incidents, you and the IT team 
 
 To identify and resolve security issues at Contoso, you'll first want to investigate any incidents. The **Overview** page in Azure Sentinel provides a list of the most recent incidents for quick reference. For more details and a complete overview of the incidents at Contoso, you'll use the **Incidents** page, which displays all incidents in the current workspace and details about those incidents.
 
-:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot displays the **Incidents** page in Azure Sentinel.":::
+:::image type="content" source="../media/5-incidents-page.png" alt-text="The screenshot displays a list of incidents in Azure Sentinel.":::
 
 From this page, you can take various steps to investigate incidents.
 
@@ -22,13 +22,17 @@ Selecting any incident will display more information about the incident in the *
 
 The **Incident details** page provides a description of the incident and lists the evidence, entities, and tactics related to the incident. It also contains links to associated workbooks and the analytic rule that generated the incident.
 
-:::image type="content" source="../media/5-incident-details.png" alt-text="The screenshot displays the Incident details page." :::
+:::image type="content" source="../media/5-incident-details.png" alt-text="The screenshot displays the page for incident details." :::
 
 You can reference all these details to better understand the context of the incident. For example, in a brute force attack incident, you might go to the Log Analytics query for the alert to determine the number of attacks made.
 
 ### Manage incident ownership, status, and severity
 
-Each incident created in Azure Sentinel has manageable metadata attached to it. This information can help you set and track the status of an incident from creation to resolution, set and review severity, and assign and track ownership for the incident.
+Each incident created in Azure Sentinel has manageable metadata attached to it. This information can help you:
+
+- Set and track the status of an incident from creation to resolution.
+- Set and review severity.
+- Assign and track ownership for the incident.
 
 :::image type="content" source="../media/5-incident-settings.png" alt-text="The screenshot displays the section of the Incidents page where you can assign ownership, status, and severity." :::
 
@@ -40,7 +44,7 @@ In a typical environment, each incident should be assigned an owner from your se
 
 Every new incident that's created in Azure Sentinel is assigned a status of **New**. As you review and respond to incidents at Contoso, you'll manually change the status to reflect the current state of the incident. For incidents under investigation, set the status to **Active**. When an incident is fully resolved, set status to **Closed**. 
 
-When you set the status to **Closed**, you'll be prompted to choose one of the following from the drop-down list:
+When you set the status to **Closed**, you'll be prompted to choose one of the following from a drop-down list:
 
 - **True Positive**: suspicious activity
 - **Benign Positive**: suspicious but expected
@@ -60,7 +64,7 @@ You can further investigate an incident by selecting **Investigate** on the **In
 
 #### Review entity details
 
-You can select each entity on the graph to observe more information about the entity. This information includes relationships to other entities, account usage, and data flow information. For each information area, you can navigate to the related events in Log Analytics and add the related alert data into the graph.
+You can select each entity on the graph to observe more information about the entity. This information includes relationships to other entities, account usage, and data flow information. For each information area, you can go to the related events in Log Analytics and add the related alert data into the graph.
 
 #### Review incident details
 
