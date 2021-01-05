@@ -1,6 +1,3 @@
-
-## How Azure Virtual WAN works
-
 In order to evaluate whether Contoso should migrate to Azure Virtual WAN, you need to understand how Azure Virtual WAN works.
 
 In this unit, you’ll learn how remote offices use Virtual WAN to connect to Azure. You’ll explore connectivity options and hub types.
@@ -8,7 +5,7 @@ In this unit, you’ll learn how remote offices use Virtual WAN to connect to Az
 <!--video  short conceptual video of Azure Virtual WAN
 Use a video like this one, Azure Virtual WAN, and stop at 4:25 minutes. It’s an overview of the Azure Network and how remote offices could be connected to Azure. It also illustrates how the architecture can become unwieldy as connections grow. Azure Virtual WAN Hubs addresses the issue. -->
 
-### Service components of Azure Virtual WAN
+## Service components of Azure Virtual WAN
 
 The following services and components of Azure Virtual WAN provide multiple connectivity options into Azure and permit customers to use the Azure high-speed connected backbone.
 
@@ -54,4 +51,4 @@ The following table describes the key differences between Virtual WAN Hubs compa
 | Express Route max connections | 0 | 4 |
 | Express Route connection speed | N/A | 20 Gbps |
 
-Additionally, Azure Virtual WAN is integrated into Azure Monitor Insights, which provides a display of health and metrics for all deployed network resource.
+Additionally, Azure Virtual WAN is integrated into Azure Monitor Insights, which provides a display of health and metrics for all deployed network resources.
