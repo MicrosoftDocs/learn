@@ -17,7 +17,6 @@ abstract: |
   - Set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
 prerequisites: | 
   - An Azure Subscription
-  - Local installations of Java JDK (1.8+), Maven (3.0+), and the Azure CLI (2.12+)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -31,10 +30,9 @@ products:
 units:
 - learn.azure.deploy-java-azure-pipeline-terraform.1-introduction
 - learn.azure.deploy-java-azure-pipeline-terraform.2-terraform
-- learn.azure.deploy-java-azure-pipeline-terraform.3-terraform
-- learn.azure.deploy-java-azure-pipeline-terraform.4-github-actions
-- learn.azure.deploy-java-azure-pipeline-terraform.5-exercise
-- learn.azure.deploy-java-azure-pipeline-terraform.6-knowledge-check
-- learn.azure.deploy-java-azure-pipeline-terraform.7-summary
+- learn.azure.deploy-java-azure-pipeline-terraform.3-github-actions
+- learn.azure.deploy-java-azure-pipeline-terraform.4-exercise
+- learn.azure.deploy-java-azure-pipeline-terraform.5-knowledge-check
+- learn.azure.deploy-java-azure-pipeline-terraform.6-summary
 badge:
   uid: learn.azure.deploy-java-azure-pipeline-terraform.badge
