@@ -217,7 +217,7 @@ let vaultSecretsMap = {};
 Next, you'll add the code to authenticate to the vault and load the secrets. You'll add this as two separate functions. Insert a couple of blank lines after the code you previously added, and then paste in the following code.
 
 ```javascript
-const getKeyVaultSecrets = async => {
+const getKeyVaultSecrets = async () => {
   // Create a key vault secret client
   let secretClient = new SecretClient(vaultUri, new DefaultAzureCredential());
   try {
