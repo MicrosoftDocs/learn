@@ -1,9 +1,6 @@
-
-## Summary
-
 After completing the evaluation, you found that Azure Virtual WAN solved the issue of securely connecting to branch offices. This connection reduced transit time to access Azure services while also reducing company costs. Azure Virtual WAN provides any-to-any connectivity, custom routing, and security.
 
-In this module, you reviewed many of the features of an Azure Virtual WAN. The Virtual WAN provides a unified framework for connecting, routing, and securing your network traffic.
+In this module, you reviewed many of the features of an Azure Virtual WAN. Virtual WAN provides a unified framework for connecting, routing, and securing your network traffic.
 It's deployed in a well-understood hub-and-spoke architecture. This model supports deploying your network, redesigning it, scaling it, or just simplifying it. More reasons are:
 
 - Customers use Microsoft global WAN with no contracts.
