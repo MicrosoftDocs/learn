@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.2-rbac-overview
 metadata:
-  title: What is RBAC?
-  description: Learn what role-based access control (RBAC) is and how it works.
+  title: What is Azure RBAC?
+  description: Learn what Azure role-based access control (Azure RBAC) is and how it works.
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: What is RBAC?
+title: What is Azure RBAC?
 durationInMinutes: 8
 content: |
   [!include[](includes/2-rbac-overview.md)]
