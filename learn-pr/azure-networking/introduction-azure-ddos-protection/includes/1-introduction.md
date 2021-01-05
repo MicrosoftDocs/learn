@@ -1,9 +1,6 @@
-
-## Unit 1: Introduction
-
 Consider which Distributed Denial of Service protection to use for your Azure services.
 
-Contoso, Ltd. is a growing financial services company based in London with major offices located throughout the world. They’re continuing to move their on-premises services to Azure. 
+Contoso, Ltd. is a growing financial services company based in London with major offices located throughout the world. They’re continuing to move their on-premises services to Azure.
 
 The IT director asked you to evaluate the benefits of upgrading to Azure DDoS Protection Standard from the no-cost Azure DDoS Basic option that’s part of every property in Azure. 
 
