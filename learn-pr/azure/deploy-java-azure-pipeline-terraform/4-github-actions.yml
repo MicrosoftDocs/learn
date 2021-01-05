@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-azure-pipeline-terraform.5-github-actions
+uid: learn.azure.deploy-java-azure-pipeline-terraform.4-github-actions
 title: GitHub Actions
 metadata:
   title: GitHub Actions
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-github-actions.md)]
+  [!include[](includes/4-github-actions.md)]

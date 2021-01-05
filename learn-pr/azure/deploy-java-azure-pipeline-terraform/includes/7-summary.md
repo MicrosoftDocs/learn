@@ -2,13 +2,11 @@ Congratulations! You've used Terraform to provision an Azure App Service, MySQL 
 
 Your company wanted to learn how they could provision their existing Spring Boot Java web applications to Azure App Service. You used the following steps:
 
-1. You accessed a sample Spring Boot web application and tested it locally
+1. You accessed a sample Spring Boot web application and configured it.
 
 1. You use Terraform to provision a MySQL database, and an Azure App Service.
 
-1. Once you verified that your resources were provisioned, you added the Maven Plugin for Azure App Service to your project and configured it interactively.
-
-1. Configured your GIT repository to use GitHub actions to provision its resources on demand.
+1. Configured your GIT repository to use GitHub actions to provision and deploy its resources on demand.
 
 You're confident that you can recommend Terraform to provision your Spring Boot Java applications to Azure.
 
@@ -25,8 +23,10 @@ This command may take a minute to run.
 > [!IMPORTANT]
 > It's important that you de-provision the Azure resources used in this module to avoid accruing unwanted charges.
 
-## Additional resources
+## Extra resources
 
 For more information about Terraform on Azure. [Terraform on Azure documentation](https://docs.microsoft.com/en-us/azure/developer/terraform/?WT.mc_id=java-00000-ropreddy).
 
 For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/en-us/azure/developer/java/?WT.mc_id=java-00000-ropreddy)
+
+For more information about GitHub Actions with Azure App Service, see [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions/?WT.mc_id=java-00000-ropreddy)

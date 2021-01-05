@@ -1,6 +1,16 @@
 In this unit, you'll configure GitHub actions to provision your Terraform resources.
 
-You'll configure your pipeline to act as soon as you push code to master (see on: push: branches: master), then you'll check out the code (actions/checkout@master), then do a terraform init, terraform plan and terraform apply.
+## Fork the sample application
+
+In this module, we'll be checking out an existing project that contains all the code for our Terraform provisioning.
+
+Fork the following GitHub repository:
+
+```html
+https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
+```
+
+1. in your forked repository you need to customize your application, and resource group name: edit `terraform/variables.tf`.
 
 ## Set Up up your workflow
 
@@ -104,38 +114,55 @@ Then, select the "Terraform" workflow. Notice how the "Terraform Init", "Terrafo
 Expand the "Terraform Apply" step. Terraform has created the resources and displayed the Azure Instance URL.
 Verify your Azure App Instance is publicly available.
 
-## Deploy your application
-
-Use Maven, as before, to deploy to your Azure instance.
-
-```bash
-./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
-```
-
-## Use the Deployment Center for CI/CD with GitHub Actions
+## Use the Deployment Center to deploy the sample action using CI/CD and GitHub Actions
 
 The App Service Deployment Center will automatically generate a workflow file based on your application stack and commit it to your GitHub repository in the correct directory.
 
 1. Navigate to your webapp in the Azure portal
-1. On the left side, click **Deployment Center**
+1. On the left side, select **Deployment Center**
 1. Under **Continuous Deployment (CI / CD)**, select **GitHub**
 1. Next, select **GitHub Actions**
-1. Use the dropdowns to select your GitHub repository, branch, and application stack
-    - If the selected branch is protected, you can still continue to add the workflow file. Be sure to review your branch protections before continuing.
-1. On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. If the selections are correct, click **Finish**
+1. Use the dropdowns to select your GitHub repository, branch, and application stack **Java** and version **JRE8**.
+1. On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. If the selections are correct, select **Finish**
 
-This will commit the workflow file to the repository. The workflow to build and deploy your app will start immediately.
+This configuration will commit the workflow file to the repository, and immediately start to build and deploy your app.
 
-## Destroy your resources
+Your Workflow file will be created similar to the below (You'll have a different app name and publishing profile).
 
-Remove the resources you created for this tutorial.
+```java
+name: Build and deploy JAR app to Azure Web App - spring-petclinic-app
 
-```bash
-terraform destroy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Set up Java version
+      uses: actions/setup-java@v1
+      with:
+        java-version: '8'
+
+    - name: Build with Maven
+      run: mvn clean install
+
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'spring-petclinic-app'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
+        package: '${{ github.workspace }}/target/*.jar'
 ```
 
-Congratulations! Each time you `git push` your code, your TerraForm provisioned resources are now automatically deployed to production.
-
 ## Next steps
+
+Congratulations! Each time you `git push` your code, your TerraForm provisioned resources are now automatically deployed to production.
 
 In the next unit, we'll summarize what we learnt about Terraform.
