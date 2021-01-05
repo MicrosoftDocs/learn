@@ -1,8 +1,8 @@
-Welcome back space explorer! So far you have focus on the most theoretical aspect of quantum computing. As part of your training, you need to learn what components a quantum computer has and what requirements they must meet. Our quantum computers are located in the space fleet headquarters, back to Earth. Thanks to the low temperatures and the lack of humans, Earth seems a good place to set up a laboratory. Depending on the task we aim to solve, that is how we design the quantum hardware of our quantum devices. 
+Welcome to Azure Quantum space explorer! So far you have focus on the most theoretical aspect of quantum computing. As part of your training, you need to learn what components a quantum computer has and what requirements they must meet. Our quantum computers are located in the space fleet headquarters, back to Earth. Thanks to the low temperatures and the lack of humans, Earth seems a good place to set up a laboratory. Depending on the task we aim to solve, that is how we design the quantum hardware of our quantum devices. 
 
-At this point you're ready to connect to earth and start using real quantum computers to implement your quantum programs. 
+At this point you're ready to connect to earth and start using real quantum computers to implement your Q# quantum programs. 
 
-Azure Quantum offers two different types of services: *optimization* solutions,
+Azure Quantum is a cloud service that offers two different types of services: *optimization* solutions,
 where you can run first class optimization algorithms in classical hardware to
 address optimization problems; and *quantum computing* solutions, where you have
 access to quantum computing targets where you can run Q# quantum programs in
