@@ -19,7 +19,7 @@ abstract:  |
   
 prerequisites: |
   - A Go environment that's ready to create applications.
-  - [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Or you could use the [Go Playground](https://play.golang.org/).
+  - [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
   - The ability to create and modify `.go` files.
   - The ability to run Go applications by using the terminal.
   
