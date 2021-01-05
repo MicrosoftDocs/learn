@@ -184,6 +184,6 @@ jobs:
 
 ## Next steps
 
-Congratulations! Each time you `git push` your code, your TerraForm provisioned resources are now automatically deployed to production.
+Congratulations! Each time you `git push` your code, your TerraForm provisioned resources are created (if not created already) and your application is deployed to production.
 
 In the next unit, we'll summarize what we learnt about Terraform.
