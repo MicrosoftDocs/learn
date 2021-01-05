@@ -1,3 +1,5 @@
+Welcome back space explorer! So far you have focus on the most theoretical aspect of quantum computing. As part of your training, you need to learn what components a quantum computer has and what requirements they must meet. Depending on the task we aim to solve, that is how we design the quantum hardware of our quantum devices. 
+
 Azure Quantum offers two different types of services: *optimization* solutions,
 where you can run first class optimization algorithms in classical hardware to
 address optimization problems; and *quantum computing* solutions, where you have
@@ -6,8 +8,7 @@ real or simulated quantum devices.
 
 In this module, you'll explore the quantum computing options in Azure Quantum and manage the submissions.
 
-You'll also learn the basic principles behind quantum hardware and the different
-kinds of target devices that you have access to in Azure Quantum.
+You'll also learn the basic principles behind quantum hardware and the different kinds of target devices that you have access to in Azure Quantum.
 
 ## Learning objectives
 
