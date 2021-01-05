@@ -1,67 +1,88 @@
-Like the Azure DSR response, the Office 365 DSR response has a scope to it. Office 365 services are available in different environments that can impact the scope. For example, a DSR received by an Office 365 customer in Germany would be executed in a national cloud called Office 365 Germany. Another similarity between Azure and Office 365 DSR response is that the process of responding is broken into parts for ease of execution. 
+Like the Azure DSR response, the Office 365 DSR response has a scope to it. Office 365 services are available in different environments that can impact the scope. For example, a DSR that an Office 365 customer receives in Germany would be fulfilled in a national cloud called Office 365 Germany. Another similarity between the DSR responses for Azure and Office 365 is that the process of responding consists of different parts, for ease of fulfillment. 
 
 ## Scope of DSR for Office 365 applications
-In general, the actions performed when executing a DSR for Office 365 applications will be the same regardless of the environment. However, there are some exceptions based on isolated clouds and cross-premises scenarios. 
 
-**Office 365 National Clouds**
+In general, the actions performed when fulfilling a DSR for Office 365 applications will be the same, regardless of the environment. However, there are some exceptions based on isolated clouds and cross-premises scenarios. 
 
-National clouds are isolated from the Office 365 cloud and may have notable differences in the DSR execution processes. The following are national clouds:
+### Office 365 national clouds
+
+National clouds are isolated from the Office 365 cloud and might have notable differences in the DSR fulfillment processes. The national clouds are:
+
 - Office 365 Germany
 - Office 365 operated by 21Vianet (China)
 - Office 365 US Government
 
-**Hybrid deployments**
+### Hybrid deployments
 
-Many organizations choose to manage their user identities in on-premises deployments of Active Directory. Hybrid deployments combine cloud-based services and on-premises server products. In a hybrid deployments an organization can share accounts and resources. For example, a user can sign in with their on-premises user account and access their mailbox in the cloud. Some of the most common hybrid deployments include:
+Many organizations choose to manage their user identities in on-premises deployments of Active Directory. Hybrid deployments combine cloud-based services and on-premises server products. In a hybrid deployment, an organization can share accounts and resources. For example, a user can sign in with their on-premises user account and access their mailbox in the cloud. Some of the most common hybrid deployments include<!--Richard, please review edits below. Also, the third bullet, identity management doesn’t match the list type - could you reword to match the “hybrid deployment type” list?-->:
 
-- Exchange hybrid deployments, mailboxes exist both on-premises and in the cloud for an organization.
-- SharePoint hybrid deployments, On-premises SharePoint servers, on-premises files servers, Skype for Business Online, and  OneDrive for Business accounts are leveraged by an organzation.
-- Identity management, on-premises Active Directory is synchronized with Azure Activity Directory utilizing Azure Active Directory Connect.
+- Microsoft Exchange hybrid deployments. Mailboxes exist both on-premises and in the cloud for an organization.
+- Microsoft SharePoint hybrid deployments. An organization uses on-premises SharePoint servers, on-premises files servers, Skype for Business Online, and  Microsoft OneDrive for Business accounts.
+- Identity management. On-premises Active Directory is synchronized with Azure AD by using Azure AD Connect.
 
-In a hybrid deployment the scope will vary based on the data that is responsive to a specific data subject's DSR. It will be up to the controller to determine if the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. See "GDPR for Office on-premises Servers" <!--- ID: I have moved the URL to the last Unit - RL --->
-
+In a hybrid deployment, the scope will vary based on the data that is responsive to a specific data subject's DSR. It’ll be up to the controller to determine if the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. Refer to the summary unit for more information. 
 
 ## DSR response processes for Office 365 applications
 
-The guidance for executing a DSR in Office 365 ("Office 365 Data Subject Requests for the GDPR and CCPA") <!--- ID: I have moved the URL to the last Unit - RL ---> is broken into four parts. The high-level execution tasks differ based on the data type,  application, and the request type. Parts 1-3 detail the technical capabilities available to an organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
+The guidance for fulfilling a DSR in Office 365 consists of four parts. The high-level fulfillment tasks differ based on the data type, application, and the request type. The first three parts detail the technical capabilities available to an organization to respond to a DSR. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. The fourth part provides guidance on how data subjects can submit DSRs to Microsoft.
 
 
-**Part 1: Responding to DSRs for Customer Data**
+### Part One: Responding to DSRs for customer data
 
-Guidance on the execution of a DSR for customer data is organized into four sections:
+Guidance on the fulfillment of a DSR for customer data consists of the following four sections:
 
 - Using the Content Search eDiscovery tool to respond to DSRs
-- Using In-App functionality to respond to DSRs
+- Using in-app functionality to respond to DSRs
 - Responding to DSR rectification requests
 - Responding to DSR restriction requests
 
-> Microsoft estimates that over 90% of an organization's data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook.
+> [!NOTE]
+> Microsoft estimates that more than 90 percent of an organization's data that is stored in Office 365 is authored in Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft OneNote, and Microsoft Outlook.
 
-The following table shows the applications that support Content Search in Microsoft 365/Office 365.
+The applications that support content search in Microsoft 365 and Office 365 are:
 
-|||||
-|---|---|---|---|
-|Calendar|Excel|Office Lens|OneDrive for Business|
-|OneNote|Outlook/Exchange|People|PowerPoint|
-|SharePoint|Skype for Business|Tasks|Teams|
-|To Do|Video|Visio|Word|
+- Calendar
+- Excel
+- Office Lens
+- OneDrive for Business
+- OneNote
+- Outlook
+- Exchange Server and Exchange Online
+- People
+- PowerPoint
+- SharePoint Server and SharePoint Online
+- Skype for Business
+- Tasks
+- Microsoft Teams
+- To Do
+- Video
+- Visio
+- Word
 
-Documents authored in Word, Excel, PowerPoint, OneNote, and Outlook are most likely stored on a SharePoint Online site, in a user's OneDrive for Business account, or in a user's Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Microsoft 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating.
+When users author documents in Word, Excel, PowerPoint, OneNote, and Outlook, they most likely store them on a SharePoint Online site, in their OneDrive for Business account, or their Exchange Online mailbox. This means that you can use the Content Search eDiscovery tool to search and perform other DSR-related actions across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes. The searches will also include the sites and mailboxes associated with Microsoft 365 Groups, Teams, and EDU assignments. You can find documents and mailbox items that might be relevant to the DSR you're investigating.
 
-You can use Compliance Boundaries together with eDiscovery cases to limit the content locations that can be searched in an investigation.
+> [!NOTE]
+> You can use compliance boundaries together with eDiscovery cases to limit the content locations that can be searched in an investigation.
 
-The following table shows the applications where in-app functionality is used in Office 365.
+The applications where in-app functionality is used in Office 365 are:
 
-|||||
-|---|---|---|---|
-|Access|Education|Flow|Business App for Office 365|
-|Forms|Kaizala|Planner|Power Apps|
-|Power BI|Project|Publisher|Stream|
-|Yammer||||
+- Microsoft Access
+- Education
+- Microsoft Power Automate <!--Richard please validate - (Microsoft Flow was renamed to Power Automate in November 2019.)-->
+- Business App for Office 365|
+- Microsoft Forms
+- Kaizala
+- Microsoft Planner
+- Microsoft Power Apps
+- Microsoft Power BI
+- Microsoft Project
+- Microsoft Publisher
+- Microsoft Stream
+- Yammer
 
-**Part 2: Responding to DSRs with Respect to Insights Generated by Office 365**
+### Part two: Responding to DSRs with respect to insights generated by Office 365
 
-Microsoft cloud services include analytics that both users and organizations can utilize.
+The following table lists the Microsoft cloud services that include analytics that both users and organizations can utilize.
 
 |Analytics service|Description|
 |------|------|
@@ -69,34 +90,40 @@ Microsoft cloud services include analytics that both users and organizations can
 |MyAnalytics|Insights for users|
 |Workplace Analytics|Insights for organizations|
 
-The execution of a DSR for MyAnalytics or Workplace Analytics include the following steps:
+The fulfillment of a DSR for MyAnalytics or Workplace Analytics includes the following steps:
+
 1. Access and export
 2. Rectify
 3. Restrict
 4. Delete
 
-**Part 3: Responding to DSRs for system-generated Logs**
-GDPR may require an organization to provide system-generated logs when they contain a data-subject's personal information.  Some examples include:
+### Part three: Responding to DSRs for system-generated logs
+GDPR might require an organization to provide system-generated logs when they contain a data-subject's personal information.  Some examples include:
+
 - Product and service usage data (user logs)
 - User search requests and query data
-- Data generated by product and services as a product of system functionality and interaction by users or other systems
+- Data that a product or service generates as a result of system functionality and interaction by users or other systems
 
-> **Note:** It is not possible to restrict or rectify data in system-generated logs. Doing so could expose the Microsoft cloud to fraud and increase security risks. This is because system-generated logs a historical record of the actions within the Microsoft cloud. Any changes to these logs would break thier integrity. 
+> [!NOTE]
+> You cannot restrict or rectify data in system-generated logs. Doing so could expose the Microsoft cloud to fraud and increased security risks. This is because system-generated logs contain a historical record of the actions within the Microsoft cloud. Any changes to these logs would break their integrity. 
 
-The execution of a DSR for system-generated logs can include:
+The fulfillment of a DSR for system-generated logs can include the following steps:
+
 1. Accessing and exporting
 2. Notifying about DSR execution issues
 3. Deleting
 
-**National Clouds**
+#### National clouds
 
-National clouds are isoloated from other clounds by design. Administrators will need to follow the guidance from the cloud that contains the responsive data for the DSR they receive. In the case of the request for system generated logs the following will need to be perfomred:
-- Office 365 Germany: Same steps as Microsoft 365/Office 365.
+National clouds are isolated from other clouds by design. Administrators need to follow the guidance from the cloud that contains the responsive data for the DSR they receive. In the case of the request for system-generated logs the following will need to be performed:
+
+- Office 365 Germany: <!--Richard, if not too long, could you add the steps here again for easier access?-->Perform the same steps as Microsoft 365/Office 365.
 - Office 365 US Government: Go to the Microsoft 365 admin center and submit a request to Microsoft Support.
-- Office 365 operated by 21Vianet (China): Go to the Microsoft 365 admin center operated by 21Vianet admin portal and then go to **Commerce > Subscription > Privacy > GDPR** and enter the required information.
+- Office 365 operated by 21Vianet (China): Go to the Microsoft 365 admin center operated by the 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.
 
-**Part 4: Additional resources to assist you with DSRs**
-The following table lists some additional resources availabe for other DSR scenarios that may occur in the Microsoft cloud.
+### Part four: Additional resources for DSRs
+
+The following table lists some additional resources that are available for other DSR scenarios that might occur in the Microsoft cloud.<!--Richard, this table is a bit unclear. Are the “Resources” a mix of URLs and generic information? Could we make this less specific and provide a generic paragraph instead? -->
 
 |Customer Data location|Resource|
 |---|---|
@@ -108,11 +135,3 @@ The following table lists some additional resources availabe for other DSR scena
 |Dynamics 365|Dynamics 365 Data Subject Requests for the GDPR and CCPA|
 |Intune|Intune Data Subject Requests for the GDPR and CCPA|
 |Visual Studio|Visual Studio Family Data Subject Requests for the GDPR and CCPA|
-
-
-
-
-
-
-
-
