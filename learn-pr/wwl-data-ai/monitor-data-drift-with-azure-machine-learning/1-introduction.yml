@@ -3,8 +3,8 @@ uid: learn.wwl.monitor-data-drift-with-azure-machine-learning.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Get started learning about data drift monitoring in Azure Machine Learning."
-  ms.date: 07/16/2020
+  description: "Introduction"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

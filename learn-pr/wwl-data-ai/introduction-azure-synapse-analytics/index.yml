@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-azure-synapse-analytics
+metadata:
+  title: Introduction to Azure Synapse Analytics
+  description: "Introduction to Azure Synapse Analytics"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Synapse Analytics
+summary: Learn the features and components that Azure Synapse Analytics provides to provide a one stop shop for all your analytical needs.
+abstract: |
+  In this module, you will learn:
+  - What is Azure Synapse Analytics
+  - How Azure Synapse Analytics works
+  - When to use Azure Synapse Analytics
+prerequisites: |
+  - Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/introduction-to-azure-synapse-analytics.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.introduction-to-azure-synapse-analytics.introduction
+- learn.wwl.introduction-to-azure-synapse-analytics.what-is
+- learn.wwl.introduction-to-azure-synapse-analytics.how-works
+- learn.wwl.introduction-to-azure-synapse-analytics.when-to-use
+- learn.wwl.introduction-to-azure-synapse-analytics.knowledge-check
+- learn.wwl.introduction-to-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.introduction-to-azure-synapse-analytics.badge

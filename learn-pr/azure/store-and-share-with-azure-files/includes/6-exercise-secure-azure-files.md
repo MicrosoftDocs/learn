@@ -7,11 +7,11 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 ## Enable secure file transfer
 
 1. Use your local browser to sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. In the portal menu on the left, select **Storage Accounts**.
+1. In the portal menu on the left, select **Storage accounts**.
 1. Select the created storage account that should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Configuration**.
 
-    ![Screenshot of the configuration page of storage accounts](../media/5-secure-transfer.png)
+    :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 
 1. Check that **Secure transfer required** is enabled.
 
@@ -19,7 +19,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Under **Settings**, select **Firewalls and virtual networks**.
 
-    ![Screenshot showing the firewalls and virtual networks options](../media/6-add-firewall-protections.png)
+   :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options.":::
 
 1. Under **Allow access from**, select the **Selected networks** option.
 1. Under **Firewall**, in the address range input, enter the public IP address of your VM. You can see this address in the title bar of the remote desktop connection.
@@ -35,7 +35,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
 
-1. Select the **data** file share.
+1. You should see **Access Denied**. 
 
     ![Screenshot showing access is denied to the share](../media/6-access-denied.png)
 
@@ -85,7 +85,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Shared access signatures**.
 
-    ![Screenshot showing Shared access signatures](../media/6-sas-connection-string.png)
+    :::image type="content" source="../media/6-sas-connection-string.png" alt-text="Screenshot showing Shared access signatures.":::
 
 1. AzCopy requires a shared access signature (SAS) to authorize access to the share.
 1. Select **Generate SAS and connection string**.

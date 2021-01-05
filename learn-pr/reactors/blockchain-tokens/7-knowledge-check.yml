@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-tokens.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/16/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 1
+content: |
+quiz:
+  questions:
+  - content: "What is the most complete definition of blockchain tokens?"
+    choices:
+    - content: "They represent currency that can be traded."
+      isCorrect: false
+      explanation: "Tokens are traded and often represent much more than currency. They also can represent ownership or access, or be used to redeem a service."
+    - content: "They represent digital assets that have some value and are tradeable."
+      isCorrect: true
+      explanation: "Correct. Tokens have some value and represent either virtual or real-world, tangible objects."
+    - content: "They are physical tokens that can be used to trade on a blockchain network."
+      isCorrect: false
+      explanation: "Tokens are digital, but they can represent virtual <i>or</i> physical objects."
+    - content: "They are unique assets that identify ownership."
+      isCorrect: false
+      explanation: "Tokens can identify ownership, for example, of houses, cars, or artwork. Tokens can also represent digital objects."
+
+  - content: "What type of token is most commonly used solely for nun-fungible assets?"
+    choices:
+    - content: "ERC20"
+      isCorrect: false
+      explanation: "This type of token is used for fungible assets."
+    - content: "ERC777"
+      isCorrect: false
+      explanation: "This type of token is used for fungible assets."
+    - content: "ERC1155"
+      isCorrect: false
+      explanation: "This type of token is used both for fungible and non-fungible assets."
+    - content: "ERC721"
+      isCorrect: true
+      explanation: "Correct. This type of token is used solely for non-fungible assets."
+
+  - content: "What modular, robust, and reusable tool does OpenZeppelin provide to make it easier to write secure code?"
+    choices:
+    - content: "CLI"
+      isCorrect: false
+      explanation: "The CLI, often referred to as the SDK, is used to develop, deploy, and manage smart contract projects."
+    - content: "SDK"
+      isCorrect: false
+      explanation: "The SDK is used to develop, deploy, and manage smart contract projects."
+    - content: "Contracts library"
+      isCorrect: true
+      explanation: "Correct. The OpenZeppelin contracts library provides a set of modular and reusable contracts to integrate into new and existing blockchain projects."
+    - content: "Test Helpers"
+      isCorrect: false
+      explanation: "Test Helpers is an assertion library for Ethereum smart contract testing."            

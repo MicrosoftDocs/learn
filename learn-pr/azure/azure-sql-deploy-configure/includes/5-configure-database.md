@@ -1,6 +1,6 @@
 You've verified that your deployment was successful, and you know what resources are available. You might now want to configure your SQL managed instance, SQL database, or databases within a managed instance. These are called *managed databases*.
 
-## Configuration of Azure SQL Managed Instance
+## Configure Azure SQL Managed Instance
 
 Azure SQL Managed Instance is essentially a managed SQL Server instance. Many configurations available in SQL Server apply here. For example, you can configure using sp_configure and certain global trace flags. You also have options available around tempdb, model, and master. And you have control over your network connectivity and configuration, which will be discussed shortly.
 
@@ -18,7 +18,7 @@ In Azure SQL Database specifically, "stale" page detection is enabled and the de
 * CHECKSUM
 * QUERY_STORE
 * TDE
-* ACCERATED_DATABASE_RECOVERY
+* ACCELERATED_DATABASE_RECOVERY
 
 ## Job management
 

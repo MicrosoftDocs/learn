@@ -1,4 +1,4 @@
-Scripting is necessary to use APIs in Unity projects. In the example of collaboration tools, the Cognitive Services Speech SDK is used for translation. Here, you'll learn the basic structure of a C# script that you can use for speech recognition and translation in a Unity Mixed Reality project.
+Scripting is necessary to use APIs in Unity projects. In the example of collaboration tools, the Cognitive Services Speech SDK is used for translation. Here, you'll learn the basic structure of a C# script that you can use for speech recognition and translation in a Unity mixed reality project.
 
 > [!NOTE]
 > When you create a C# script in Unity, the provided template includes default namespaces in addition to `start()` and `update()` methods. The `start()` method is the first method called on the frame when the script is enabled. The `update()` method is then called for every subsequent frame.
@@ -35,7 +35,7 @@ In a production version of the app, the Azure credentials that the Speech resour
 
 Any private variable created in the script can't be accessed through the Unity editor. These variables are used throughout the script in the methods that are necessary to run the speech recognition task. For instance, when the Speech Translation service returns the translated string, the result is stored in the private variable `translatedString`. The returned string is passed as a string for the `translatedText` UI element, which displays the translation in the app's UI.
 
-For Mixed Reality apps that require voice input from a microphone, we recommend that you require permission from the user to access their microphone. Whether the user has granted permission can be stored in the Boolean variable `micPermissionGranted`. The initial Boolean value for `micPermissionGranted` should be set to `false` and changed to `true` only if the user grants permission to access their microphone.
+For mixed reality apps that require voice input from a microphone, we recommend that you require permission from the user to access their microphone. Whether the user has granted permission can be stored in the Boolean variable `micPermissionGranted`. The initial Boolean value for `micPermissionGranted` should be set to `false` and changed to `true` only if the user grants permission to access their microphone.
 
 A `threadLocker` object is created to synchronize access to data. Thread coordination is a concept used in asynchronous programming to make the UI responsive to the user.
 
