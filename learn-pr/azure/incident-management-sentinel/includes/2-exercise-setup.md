@@ -18,12 +18,12 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     |||
     | --- | --- |
     | **Subscription** | Select your Azure subscription. |
-    | **Resource Group** | Select **Create new** and provide a name for the resource group, such as **azure-sentinel-rg**. |
+    | **Resource Group** | Select **Create new** and provide a name for the resource group: **azure-sentinel-rg**. |
     | **Locations** | From the drop-down menu, select the location where you're deploying Azure Sentinel. |
-    | **Workspace name**  | Provide a unique name for the Azure Sentinel workspace, such as ***yourname*-sentinel**. |
-    | **Location** | Accept the default value **[resourceGroup().location]**. |
-    | **Simplevm Name** | Accept the default value **simple-vm**. |
-    | **Simplevm Windows OS Version** | Accept the default value **2016-Datacenter**.|
+    | **Workspace name**  | Provide a unique name for the Azure Sentinel workspace: ***yourname*-sentinel**. |
+    | **Location** | Accept the default value, **[resourceGroup().location]**. |
+    | **Simplevm Name** | Accept the default value, **simple-vm**. |
+    | **Simplevm Windows OS Version** | Accept the default value, **2016-Datacenter**.|
 
 1. Select **Review + create**, and then select **Create**.
 

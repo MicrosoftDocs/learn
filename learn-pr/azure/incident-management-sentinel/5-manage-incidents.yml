@@ -37,7 +37,7 @@ quiz:
     - content: "**Incident details** page"
       isCorrect: false
       explanation: "The **Incident details** page doesn't enable you to view timelines and relationships between incident resources."
-    - content: "**Resource relationships**"
+    - content: "**Resource relationships** page"
       isCorrect: false
       explanation: "There isn't an interface in Sentinel named **Resource relationships**."
     - content: "Incident status"

@@ -29,7 +29,7 @@ quiz:
     - content: "Events"
       isCorrect: false
       explanation: "Events don't generate alerts. Events are stored in a Log Analytics workspace and contain the details of security-related activity that you want to monitor with Sentinel."
-  - content: "What is the primary goal of incident management in Sentinel"
+  - content: "What is the primary goal of incident management in Sentinel?"
     choices:
     - content: "Understand the state of security health in Microsoft Azure."
       isCorrect: false

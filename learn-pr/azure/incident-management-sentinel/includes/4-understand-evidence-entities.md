@@ -2,7 +2,7 @@ Azure Sentinel uses various sources of security information to create incidents.
 
 ## Incident evidence
 
-Incident evidence consists of the security event information and related Azure Sentinel assets that identify threats in the Azure Sentinel environment. Evidence displays how a threat has been identified in Azure Sentinel. It links you back to the specific resources that you can use to increase you awareness of incident details.
+Incident evidence consists of the security event information and related Azure Sentinel assets that identify threats in the Azure Sentinel environment. Evidence displays how a threat has been identified in Azure Sentinel. It links you back to the specific resources that you can use to increase your awareness of incident details.
 
 ### Events
 

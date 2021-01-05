@@ -42,7 +42,7 @@ In a typical environment, each incident should be assigned an owner from your se
 
 #### Status
 
-Every new incident that's created in Azure Sentinel is assigned a status of **New**. As you review and respond to incidents at Contoso, you'll manually change the status to reflect the current state of the incident. For incidents under investigation, set the status to **Active**. When an incident is fully resolved, set status to **Closed**. 
+Every new incident that's created in Azure Sentinel is assigned a status of **New**. As you review and respond to incidents at Contoso, you'll manually change the status to reflect the current state of the incident. For incidents under investigation, set the status to **Active**. When an incident is fully resolved, set the status to **Closed**. 
 
 When you set the status to **Closed**, you'll be prompted to choose one of the following from a drop-down list:
 
