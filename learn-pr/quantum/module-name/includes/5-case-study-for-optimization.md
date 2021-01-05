@@ -1,3 +1,7 @@
+ Azure Quantum offers optimization solutions, where some divisions of the space team can run first class optimization algorithms in classical hardware to address optimization problems.
+
+
+
 Complex optimization problems exist across every industry, such as vehicle routing, supply chain management, portfolio optimization, power grid management and many others. Optimization algorithms are also at the core of many machine learning methods. These real-world problems are very valuable to solve in order to reduce costs, accelerate processes, or reduce risks. Many real-world optimization problems remain unsolvable by classical computing despite the remarkable advancement in both algorithms and computing power over the past decades.
 
 Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run
