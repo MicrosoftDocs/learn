@@ -1,11 +1,8 @@
+In this unit, you’ll discover common cases for deploying Azure Virtual WAN.
 
-## When to use Azure Virtual WAN
+## Common cases for deploying Azure Virtual WAN
 
-In this unit, you’ll discover common cases reasons for deploying Azure Virtual WAN.
-
-### Consider deploying Azure Virtual when in the following situations
-
-Common cases for deploying Azure Virtual WAN include:
+Consider deploying Azure Virtual WAN in the following situations:
 
 - Enterprises migrating from existing Multi-protocol Label Switching (MPLS) network connectivity to Azure Virtual WAN that uses Microsoft backbone network. The Microsoft backbone will provide simplified management for their combined networking functionality. Additionally, it will reduce cost while providing faster network services access.
 - Enterprises transitioning from their private WAN to SD-WAN because of their growing cloud footprint. Virtual WAN offers multiple options for interconnecting their current SD-WANs to Azure Virtual WAN. For each of these options, the interconnection process of SD-WAN is similar to Virtual WAN.
@@ -34,6 +31,6 @@ Azure Virtual WAN is beneficial for organizations that:
 - Use automated spoke setup and configuration.
 - Take advantage of enhanced WAN performance without sacrificing security.
 - Use optimal routing through virtual network connections with low latency and high bandwidth.
-- Use firewall protection with security policy managed by Azure Firewall manager.
+- Use firewall protection with security policy managed by Azure Firewall Manager.
 
 The ease of management, any-to-any connectivity, access speed, and cost saving, are features of the Azure Virtual WAN.
