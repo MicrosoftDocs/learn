@@ -10,7 +10,28 @@ Fork the following GitHub repository:
 https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
 ```
 
-1. in your forked repository you need to customize your application, and resource group name: edit `terraform/variables.tf`.
+In your forked repository you need to customize your application, and resource group name.
+Using the build in GitHub Text editor or your editor of choice, edit and commit `terraform/variables.tf` and change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name:
+
+```yaml
+variable "resource_group" {
+  description = "The resource group"
+  default = "CHANGE_ME_RESOURCE_GROUP"
+}
+
+variable "application_name" {
+  description = "The Spring Boot application name"
+  default     = "CHANGE_ME_APP_NAME"
+}
+
+variable "location" {
+  description = "The Azure location where all resources in this example should be created"
+  default     = "westeurope"
+}
+```
+
+> [!IMPORTANT]
+> Make sure the name of your resource group and application name are unique.
 
 ## Set Up up your workflow
 
