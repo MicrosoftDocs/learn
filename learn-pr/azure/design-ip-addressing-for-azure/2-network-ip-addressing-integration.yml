@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which objects are required when you connect a virtual network to an on-premises network by using an Azure VPN gateway?"
+  - content: "What are some of the typical components involved in a network design?"
     choices:
     - content: "A dedicated leased line"
       isCorrect: false
       explanation: " A VPN can connect through the internet. You do not need to have a leased line."
-    - content: "A dedicated subnet for the gateway"
+    - content: "A VM, subnet, firewall, and load balancer"
       isCorrect: true
-      explanation: "A dedicated subnet assigns an IP address to devices connected through the tunnel. You must have a dedicated subnet named GatewaySubnet for the VPN gateway."
+      explanation: "Typical components involved in a network design do include a VM, subnet, firewall, and load balancer. "
     - content: "A dedicated network security group"
       isCorrect: false
       explanation: "A network security group is used to filter traffic. They are not required when you connect an on-premises network to a virtual network."
@@ -33,7 +33,7 @@ quiz:
       explanation: "This range is not routable over the internet."
     - content: "215.11.0.0 to 215.11.255.255"
       isCorrect: true
-      explanation: "Correct, this is address range is routable over the internet."
+      explanation: "Correct, this address range is routable over the internet."
     - content: "172.16.0.0 to 172.31.255.255"
       isCorrect: false
       explanation: "This range is not routable over the internet."    

@@ -3,7 +3,7 @@ uid: learn.azure.manage-deployments-advanced-arm-template-features.secure-parame
 title: Exercise - Manage secrets in your ARM template
 metadata:
   title: Exercise - Manage secrets in your ARM template
-  description: Read from an Azure Key Vault instance from within your ARM template at deployment time. 
+  description: Read from an instance of Azure Key Vault from within your ARM template at deployment time. 
   author: softchris
   ms.author: chnoring
   ms.date: 12/09/2020
