@@ -9,15 +9,15 @@ You need to perform these setup tasks one time during this module. You can refer
 1. Open Visual Studio Code.
 1. Open a terminal window by using the **Terminal** menu.
 
-1. If the drop-down menu on the right of the terminal window says **pwsh**, you have the right shell to work from and you can skip to the next section.
+1. If the drop-down menu on the right of the terminal window shows **pwsh**, you have the right shell to work from, and you can skip to the next section.
 
-   :::image type="content" source="../../media/vscode-pwsh.png" alt-text="Terminal window, terminal type":::
+   :::image type="content" source="../../media/vscode-pwsh.png" alt-text="Screenshot of Terminal window, terminal type.":::
 
 1. If not, select the drop-down and choose **Select Default Shell**.
 
 1. Select **pwsh**.
 
-   :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Selecting a shell from the drop-down menu.":::
+   :::image type="content" source="../../media/vscode-select-shell.png" alt-text="Screenshot that shows selecting a shell from the drop-down menu.":::
 
 1. Select the **+** in the terminal to create a new terminal with _pwsh_ as the shell.
 
@@ -31,7 +31,7 @@ You need to perform these setup tasks one time during this module. You can refer
 
     A browser window appears.
 
-1. Select the account that you used to activate the sandbox and close the browser window when prompted.
+1. Select the account that you used to activate the sandbox, and close the browser window when prompted.
 
 ### Set the active subscription
 
@@ -41,7 +41,7 @@ You need to perform these setup tasks one time during this module. You can refer
     Get-AzSubscription
     ```
 
-    Look for Concierge Subscription and copy the second column. It will look something like **cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0**.
+    Look for `Concierge Subscription`, and copy the second column. It will look something like **cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0**.
 
 1. Run `Set-AzContext` to change your active subscription to the Concierge Subscription.
 
@@ -66,7 +66,7 @@ Set-AzDefault -ResourceGroupName <rgn>resource group name</rgn>
 ```
 
 > [!NOTE]
-> Normally, when you use PowerShell to deploy resource on Azure, you need to specify a resource group. You are bypassing this requirement by setting the context of your deployment, using **Set-AzDefault**.
+> Normally, when you use PowerShell to deploy resource on Azure, you need to specify a resource group. You're bypassing this requirement by setting the context of your deployment, using `Set-AzDefault`.
 
 ## What's in a typical VM deployment
 
@@ -74,7 +74,7 @@ When you deploy a VM, keep in mind that there are several resources that need to
 
 Here's a brief summary of the types of resources that typically need to be deployed along with a VM:
 
-- **Microsoft.Storage/storageAccounts**. A storage account provides disk space for the OS and files.
+- **Microsoft.Storage/storageAccounts**. A storage account provides disk space for the operating system and files.
 - **Microsoft.Network/publicIPAddresses**. A public IP address enables you to connect to the VM from the internet.
 - **Microsoft.Network/networkSecurityGroups**. A network security group contains rules for handling inbound and outbound traffic to your virtual network.
 - **Microsoft.Network/virtualNetworks**. Your VM needs to be placed in a virtual network. This resource requires the network security group to be deployed before it.
@@ -91,7 +91,7 @@ Here, you download an ARM template from a GitHub repository that we provide for 
     curl -O 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json'
     ```
 
-1. Run the `ConvertTo-SecureString` cmdlet and assign the results to a PowerShell variable named `$secure`:
+1. Run the `ConvertTo-SecureString` cmdlet, and assign the results to a PowerShell variable named `$secure`:
 
     ```powershell
     $secure = "insecurepassword123!" | ConvertTo-SecureString -AsPlainText -Force
@@ -133,10 +133,10 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
    Invoke-Expression (Get-AzResourceGroupDeployment -Name azuredeploy -ResourceGroupName <rgn>your resource group</rgn>).outputs.sshCommand.value
    ```
 
-   When prompted, enter *yes* to continue connecting. Then enter the administrator password, *insecurepassword123!*.
+   When prompted, enter `yes` to continue connecting. Then enter the administrator password, `insecurepassword123!`.
 
     > [!IMPORTANT]
-    > In practice, keep passwords safe. Or use public key authentication, which is typically more secure than using passwords.
+    > In practice, keep passwords safe. You can also use public key authentication, which is typically more secure than using passwords.
 
 1. From your SSH connection to the VM, run `hostname` to print the VM's hostname:
 
@@ -144,7 +144,7 @@ Verify that the VM is provisioned and is connectable over SSH. To do so:
     hostname
     ```
 
-    You see the VM's internal hostname, *vm1*:
+    You see the VM's internal hostname, `vm1`:
 
     ```output
     vm1

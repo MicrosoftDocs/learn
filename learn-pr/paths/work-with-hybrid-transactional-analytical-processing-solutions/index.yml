@@ -3,7 +3,7 @@ uid: learn.wwl.work-with-hybrid-transactional-analytical-processing-solutions
 metadata:
   title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
   description: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
-  ms.date: 12/03/2020
+  ms.date: 12/24/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -23,5 +23,7 @@ products:
 modules:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics
 trophy:
   uid: learn.wwl.work-hybrid-transactional-analytical-processing-solutions.trophy

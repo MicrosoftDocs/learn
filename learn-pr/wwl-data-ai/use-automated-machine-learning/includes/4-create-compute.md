@@ -19,14 +19,12 @@ Compute targets are cloud-based resources on which you can run model training an
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2
     - **Compute name**: *enter a unique name*
-    - **Minimum number of nodes**: 2
+    - **Minimum number of nodes**: 0
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
     * **Enable SSH access**: Unselected
 
 > [!NOTE]
-> In a production environment, you'd typically set the **minimum number of nodes** value to 0 so that compute is only started when it is needed. However, compute can take a while to start, so to reduce the amount of time you spend waiting for it in this module, you've initialized it with two permanently running nodes.
->
-> If you decide not to complete this module, be sure to stop your compute instance and edit the compute cluster to reset the minimum number of nodes to 0 in order to avoid leaving your compute running and incurring unnecessary charges to your Azure subscription.
+> If you decide not to complete this module, be sure to stop your compute instance to avoid incurring unnecessary charges to your Azure subscription.
 
 The compute targets will take some time to be created. You can move onto the next unit while you wait.
