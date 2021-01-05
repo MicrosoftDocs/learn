@@ -1,5 +1,5 @@
 
-Congrats space explorer! Now you are ready to connect to Earth and start working to solve problems on a real quantum computer. Programs such as your quantum random number generator (QRNG) for seccure passwords will run using real qubits rather than simulated ones enabled by the [Quantum Development Kit](), meaning that the results respond to quantum measurements based on the amplitude probabilities.
+Congrats space explorer! Now you are ready to connect to Earth and start working to solve problems on a real quantum computer. The programs you create in Q# such as your quantum random number generator (QRNG) for seccure passwords will run using real qubits rather than simulated ones enabled by the [Quantum Development Kit](), meaning that the results respond to quantum measurements based on the amplitude probabilities.
 
 To do so in this part you learn how to submit a job to Azure Quantum. 
 
