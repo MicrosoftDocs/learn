@@ -143,7 +143,7 @@ The App Service Deployment Center will automatically generate a workflow file ba
 1. On the left side, select **Deployment Center**
 1. Under **Continuous Deployment (CI / CD)**, select **GitHub**
 1. Next, select **GitHub Actions**
-1. Use the dropdowns to select your GitHub repository, branch, and application stack **Java** and version **JRE8**.
+1. Use the dropdowns to select your GitHub repository, branch, and application stack **Java** and version **Java 8**.
 1. On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. If the selections are correct, select **Finish**
 
 This configuration will commit the workflow file to the repository, and immediately start to build and deploy your app.
