@@ -2,7 +2,7 @@ Q# provides you with an increasing number of libraries that will help you levera
 In this module you will explore some of these interoperability tools and learn about the different libraries currently available in the Quantum Development Kit (QDK).
 
 You are in desperate need of a book on how to grow poppy seeds in outer space, but the intergalactic online library only lets you search for books by their identifying number sequence (ISBN). You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field, one of the digits is now illegible.
-By implementing Grover's algorithm with the Q# Standard Library you will determine the missing digit and save your ship.
+By implementing Grover's algorithm with the Q# Standard Library you will determine the missing digit and save your space garden.
 
 ## Learning objectives
 
