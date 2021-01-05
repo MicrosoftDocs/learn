@@ -1,6 +1,8 @@
 In this unit, you'll create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before you need a real truck! 
 
-IoT Central treats this simulation as real because the communication code between the device app and the IoT Central app is the same for a real truck. In other words, if you actually do run a refrigerated truck company, you would start with simulation code similar to the code in this unit. After this code works to your satisfaction, you would replace the simulation code would with code that receives sensor data. Because the final code replacement is limited, learning to write the following code is a valuable experience.
+IoT Central treats this simulation as real. The communication code between the device app and the IoT Central app is the same for a real truck. 
+
+In other words, if you actually run a refrigerated truck company, you would start with simulation code like the code in this unit. After this code works to your satisfaction, you would replace the simulation code with code that receives sensor data. Because the final code replacement is limited, learning to write the following code is a valuable experience.
 
 ## Create the device app
 
@@ -12,9 +14,11 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. In the opened terminal, create an empty folder where you'll develop your code. Name it "RefrigeratedTruck" by entering `mkdir RefrigeratedTruck`. Then go to that folder by entering `cd RefrigeratedTruck`.
+1. In the opened terminal, create an empty folder where you'll develop your code. Name it *RefrigeratedTruck* by entering `mkdir RefrigeratedTruck`. Then go to that folder by entering `cd RefrigeratedTruck`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the _RefrigeratedTruck_ folder (finding this folder might involve a bit of navigation). Name the file _app.js_. Visual Studio Code interprets files that have the .js file extension as JavaScript. It evaluates the contents of the file by using the JavaScript language service.
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the _RefrigeratedTruck_ folder. In the folder, name the file _app.js_. 
+
+    Visual Studio Code interprets files that have the .js file extension as JavaScript. It evaluates the contents of the file by using the JavaScript language service.
 
     [![Screenshot showing how to save the JavaScript file in Visual Studio Code.](../media/refrigerated-trucks-vscode.png)](../media/refrigerated-trucks-vscode.png#lightbox)
 
@@ -61,7 +65,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
     [![Screenshot showing how to create a blank Node.js project in Visual Studio.](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
-1. In Solution Explorer, right-click **npm**, and then select **Install New npm Packages**.
+1. In **Solution Explorer**, right-click **npm**, and then select **Install New npm Packages**.
 
 1. In the dialog box that opens, search for and install the following libraries:
 
@@ -76,7 +80,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
 1. Delete the default contents of the _app.js_ file.
 
-1. Enter the code in the following section. Then you can run the app by using **Start Without Debugging** or **Start Debugging**. In the latter case, you can set breakpoints, examine data, and do other debugging tasks.
+1. Enter the code in the following section. Then run the app by using **Start Without Debugging** or **Start Debugging**. In the latter case, you can set breakpoints, examine data, and do other debugging tasks.
 
 ::: zone-end
 ::: zone pivot="vs-csharp"
@@ -93,7 +97,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
 1. Delete the default contents of the _Program.cs_ file.
 
-1. Add to the _Program.cs_ file all the code in the following section.
+1. In the _Program.cs_ file, add all the code in the following section.
 
 ::: zone-end
 
@@ -152,7 +156,7 @@ In the blank _app.js_ file, insert the following code. Add each section of code 
     > [!NOTE]
     > An Azure Maps `Pipeline` class contains the HTTP request policies. In this app, you use the default policies, so provide only your key as a parameter. 
     >
-    >A `RouteURL` class represents a URL to the Azure Maps route operations. The class takes your pipeline as a parameter.
+    > A `RouteURL` class represents a URL to the Azure Maps route operations. The class takes your pipeline as a parameter.
 
 1. Add global variables.
 
@@ -170,7 +174,7 @@ In the blank _app.js_ file, insert the following code. Add each section of code 
     var timeOnCurrentTask = 0; // Time on current task, in seconds. 
     var interval = 60; // Time interval in seconds. 
     var tooWarmPeriod = 0; // Time that contents are too warm, in seconds. 
-    var temp = -2; // Current temperature of contents in degrees C. 
+    var temp = -2; // Current temperature of contents, in degrees C. 
     var baseLat = 47.644702; // Base position latitude. 
     var baseLon = -122.130137; // Base position longitude. 
     var currentLat = baseLat; // Current position latitude. 
@@ -565,7 +569,7 @@ In the blank _app.js_ file, insert the following code. Add each section of code 
     ```
 
     > [!NOTE]
-    > This function is called at every time interval. The actual time interval is set at 5 seconds later on. But the _simulated time_ (the number of specified seconds that have passed each time this function is called) is set by the global `var interval = 60`. So the simulation runs at a rate of 60 divided by 5, or 12 times the speed of real time. 
+    > This function is called at every time interval. The actual time interval is later set at 5 seconds. But the _simulated time_ (the number of specified seconds that have passed each time this function is called) is set by the global `var interval = 60`. So the simulation runs at a rate of 60 divided by 5, or 12 times the speed of real time. 
     >
     > To shorten the simulated time, reduce the `var interval` to, say, `30` (for a simulation that runs 6 times faster than real time). If you set `var interval = 5`, the simulation will run in real time. This would be realistic but slow, given the real driving times to the customer destinations.
 
@@ -621,7 +625,7 @@ In the blank _app.js_ file, insert the following code. Add each section of code 
     ```
 
     > [!NOTE]
-    > The `sendTruckTelemetry` is an important function. It sends telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data.
+    > The `sendTruckTelemetry` function is important. It sends telemetry, states, and events to IoT Central. Notice the use of JSON strings to send the data.
 
 1. Add the code to handle writeable properties. You have only one writeable property in the app. But you could easily add more if you need to.
 
@@ -708,11 +712,11 @@ In the blank _app.js_ file, insert the following code. Add each section of code 
     > [!NOTE]
     > Most of the `connectCallback` function is generic. You can use it for most Node.js apps that communicate with IoT Central. 
     >
-    > Specific to this app are the two `hubClient.onDeviceMethod` calls, which link JavaScript functions in this app to the commands in the IoT Central app. Also specific to this app is the `setInterval(sendTruckTelemetry, 5000);` call, which specifies that the `sendTruckTelemetry` function should be called every five seconds (5,000 milliseconds). 
+    > Specific to this app are the two `hubClient.onDeviceMethod` calls. These calls link JavaScript functions in this app to the commands in the IoT Central app. Also specific to this app is the `setInterval(sendTruckTelemetry, 5000);` call. This call specifies that the `sendTruckTelemetry` function should be called every 5 seconds (5,000 milliseconds). 
     >
     > You can add more read-only properties by adding entries to `var properties`.
 
-1. Complete the app with the code that starts the device. This code opens the connection callback.
+1. Complete the app by adding the code that starts the device. This code opens the connection callback.
 
     ```js    
     // Start the device (register and connect to Azure IoT Central). 
@@ -783,7 +787,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
                 failed
             }
     
-            // Azure maps service globals.
+            // Azure Maps service globals.
             static AzureMapsServices azureMapsServices;
     
             // Telemetry globals.
@@ -971,7 +975,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
                     double distanceApartInMeters;
                     double timeForOneSection;
     
-                    // Clear the time on path array. The path array is 1 less than the points array.
+                    // Clear the time on the path array. The path array is 1 less than the points array.
                     timeOnPath = new double[nPoints + 1];
     
                     // Calculate how much time is required for each section of the path.
@@ -1034,7 +1038,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
                                 destinationLat = customer[customerNumber, 0];
                                 destinationLon = customer[customerNumber, 1];
 
-                                // Find route from current position to destination and store the route.
+                                // Find route from current position to destination, and store the route.
                                 GetRoute(StateEnum.enroute);
                             }
                             break;
@@ -1073,7 +1077,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
             destinationLat = baseLat;
             destinationLon = baseLon;
 
-            // Find route from current position to base and store the route.
+            // Find route from current position to base, and store the route.
             GetRoute(StateEnum.returning);
         }
         static Task<MethodResponse> CmdRecall(MethodRequest methodRequest, object userContext)
@@ -1277,7 +1281,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
     ```
 
     > [!NOTE]
-    > This function is called at every time interval. The actual time interval is set at 5 seconds. But the _simulated time_ (the number of simulated seconds you specify that has passed each time this function is called) is set by the global `static double interval = 60`. So the simulation runs at a rate of 60 divided by 5, or 12 times the speed of real time. 
+    > This function is called at every time interval. The actual time interval is set at 5 seconds. But the _simulated time_ (the number of simulated seconds you specify that have passed each time this function is called) is set by the global `static double interval = 60`. So the simulation runs at a rate of 60 divided by 5, or 12 times the speed of real time. 
     >
     > To shorten the simulated time, reduce `interval` to, say, 30 (for a simulation that runs 6 times faster than real time). If you set `interval` at 5, the simulation will run in real time. This would be realistic but slow, given the real driving times to the customer destinations.
 
@@ -1337,7 +1341,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
     ```
 
     > [!NOTE]
-    > The `SendTruckTelemetryAsync` is an important function. It sends telemetry, states, and events to IoT Central. Notice the use of JSON strings to send the data.
+    > The `SendTruckTelemetryAsync` function is important. It sends telemetry, states, and events to IoT Central. Notice the use of JSON strings to send the data.
 
 1. Add the code to handle properties. You have only one writeable property and one read-only property in the app. But you could easily add more if you need to.
 
@@ -1443,7 +1447,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
     ```
 
     > [!NOTE]
-    > You can set direct methods are set in the client by using statements such as `s_deviceClient.SetMethodHandlerAsync("cmdGoTo", CmdGoToCustomer, null).Wait();`.
+    > You can set direct methods in the client by using statements such as `s_deviceClient.SetMethodHandlerAsync("cmdGoTo", CmdGoToCustomer, null).Wait();`.
 
 ::: zone-end
 
