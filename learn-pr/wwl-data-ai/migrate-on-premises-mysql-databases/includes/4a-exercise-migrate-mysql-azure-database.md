@@ -6,61 +6,62 @@ You work as a database developer for the AdventureWorks organization. AdventureW
 
 Run these Azure CLI commands in the Cloud Shell to create a virtual machine, running MySQL, with a copy of the Adventure works database. The last commands will print the IP address of the new virtual machine.
 
-    ```azurecli
-    az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name mysqlvm \
-        --admin-username azureuser \
-        --admin-password Pa55w.rdDemo \
-        --image "percona:percona-server:5_7_21-20-1:latest" \
-        --public-ip-address-allocation static \
-        --public-ip-sku Standard \
-        --size Standard_B2ms 
+```azurecli
+az vm create \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name mysqlvm \
+    --admin-username azureuser \
+    --admin-password Pa55w.rdDemo \
+    --image "Canonical:UbuntuServer:18.04-LTS:latest" \
+    --public-ip-address-allocation static \
+    --public-ip-sku Standard \
+    --size Standard_B2ms 
 
-    az vm open-port \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name mysqlvm \
-        --priority 200 \
-        --port '22'
+az vm open-port \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name mysqlvm \
+    --priority 200 \
+    --port '22'
+
+az vm open-port \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name mysqlvm \
+    --priority 300 \
+    --port '3306'
+
+az vm run-command invoke \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name mysqlvm \
+    --command-id RunShellScript \
+    --scripts "
+    # MySQL installation
+    sudo apt-get update && sudo apt-get upgrade -y
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
+
+    # Enable Ubuntu Firewall and allow SSH & MySQL Ports
+    sudo ufw enable
+    sudo ufw allow 22
+    sudo ufw allow 3306
+
+    # Clone exercise code
+    sudo git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git /home/azureuser/workshop
+ 
+    # Add a password to mysql root user
+    sudo mysqladmin -u root password Pa55w.rd
+    # Use mysql to create users and an empty adventureworks 
+    sudo mysql -u root -pPa55w.rd -e \"CREATE USER azureuser IDENTIFIED BY 'Pa55w.rd';GRANT ALL PRIVILEGES ON *.* TO azureuser;CREATE DATABASE adventureworks;\"
+    # Use mysql to import the adventureworks database
+    sudo mysql --user=azureuser --password=Pa55w.rd --database=adventureworks < /home/azureuser/workshop/migration_samples/setup/mysql/adventureworks/adventureworks.sql
+    sudo service mysql restart"
     
-    az vm open-port \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name mysqlvm \
-        --priority 300 \
-        --port '3306'
+MYSQLIP="$(az vm list-ip-addresses \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name mysqlvm \
+    --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
+    --output tsv)"
 
-    az vm run-command invoke \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name mysqlvm \
-        --command-id RunShellScript \
-        --scripts "
-        # Update MySQL installation
-        sudo service mysql stop
-        sudo bash << EOF
-            echo 'bind-address=0.0.0.0' >> /etc/percona-server.conf.d/mysqld.cnf
-            echo 'log-bin' >> /etc/percona-server.conf.d/mysqld.cnf
-            echo 'server-id=99' >> /etc/percona-server.conf.d/mysqld.cnf
-        EOF
-        sudo service mysql start 
-        # Install git
-        sudo yum -y install git
-        # Clone exercise code
-        sudo git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git /home/azureuser/workshop
-        # Add a password to mysql root user
-        sudo mysqladmin -u root password Pa55w.rd
-        # Use mysql to create users and an empty adventureworks 
-        sudo mysql -u root -pPa55w.rd -e ""CREATE USER azureuser IDENTIFIED BY 'Pa55w.rd';GRANT ALL PRIVILEGES ON *.* TO azureuser;CREATE DATABASE adventureworks;""
-        # Use mysql to import the adventureworks database
-        sudo mysql --user=azureuser --password=Pa55w.rd --database=adventureworks < /home/azureuser/workshop/migration_samples/setup/mysql/adventureworks/adventureworks.sql"
-
-    MYSQLIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name mysqlvm \
-        --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
-        --output tsv)"
-
-    echo $MYSQLIP
-    ```
+echo $MYSQLIP
+```
 
 These commands will take approximately 5 minutes to complete. You don't need to wait, you can continue with the steps below.
 
