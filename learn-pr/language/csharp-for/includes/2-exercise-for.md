@@ -109,7 +109,7 @@ Instead of incrementing or decrementing the value of the iterator variable by `1
 
 Admittedly, you won't do this sort of thing often, but hopefully you can appreciate that you have a fine grained level of control should you ever need it.
 
-### Step 4 - Use the break keyword to short circuit the iteration statement
+### Step 4 - Use the break keyword to break the iteration statement
 
 What if we need to exit the iteration statement prematurely based on some condition?  We can use the `break` keyword.
 
