@@ -1,4 +1,4 @@
-The most basic control flow in any programming language is the `if/else` statement. In Go, `if/else` statements are straightforward. But you need to understand a few nuances before you start feeling comfortable writing Go programs.
+The most basic control flow in any programming language is the `if/else` statement. In Go, `if/else` statements are straightforward. But you need to understand a few differences before you start feeling comfortable writing Go programs.
 
 Let's take a look at the Go syntax for `if` statements.
 
@@ -77,4 +77,4 @@ When you run the program, the error output looks like this:
 ./main.go:17:14: undefined: num
 ```
 
-In Go, declaring variables within `if` blocks is idiomatic.
+In Go, declaring variables within `if` blocks is idiomatic, meaning that it is a way to program effectively using a convention that is common in Go.

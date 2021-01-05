@@ -109,4 +109,4 @@ func main() {
 }
 ```
 
-This example excludes numbers that are divisible by 5.
+This example has a for loop that iterates from 1 to 100, adding the current number to the sum in each iteration. Every number divisible by 5 is skipped in the current iteration of the loop, and not added to the sum.

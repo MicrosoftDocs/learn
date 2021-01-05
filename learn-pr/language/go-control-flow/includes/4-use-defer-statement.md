@@ -1,4 +1,4 @@
-Now consider some less-common control flows in Go: `defer`, `panic`, and `recover`. As you've already seen, Go is idiomatic in several ways. So as you might expect, these control flows are also idiomatic. 
+Now consider some less-common control flows in Go: `defer`, `panic`, and `recover`. As you've already seen, Go is idiomatic in several ways, and these three control flows are ones that are unique to Go.
 
 Each of these functions has several use cases. You'll explore the most important use cases here. Let's get started with the first function.
 
@@ -6,7 +6,7 @@ Each of these functions has several use cases. You'll explore the most important
 
 In Go, a `defer` statement postpones the running of a function (including any parameters) until the function that contains the `defer` statement finishes. Generally, you defer a function when you want to avoid forgetting about tasks like closing a file or running a cleanup process. 
 
-You can defer as many functions as you want. They run in an order that's the reverse of the order of the undeferred tasks.
+You can defer as many functions as you want. The defer statements run in reverse order, from last to first.
 
 Check out how this pattern works by running the follow example code:
 
@@ -126,7 +126,13 @@ main.main()
 exit status 2
 ```
 
-First, everything runs normally. The program prints the value that the function `g()` receives. When this value is equal to `3`, the program panics. You see the `Panicking!` message. At this point, the control flow is interrupted, and all the deferred functions start to print the `Defer in g()` message. Finally, the program crashes, and you see the full stack trace. You don't see the `Program finished successfully!` message.
+Here's what happens when the code runs: 
+
+1. Everything runs normally. The program prints the value that the function `g()` receives. 
+
+1. When `i` is greater than 3, the program panics. You see the `Panicking!` message. At this point, the control flow is interrupted, and all the deferred functions start to print the `Defer in g()` message. 
+
+1. The program crashes, and you see the full stack trace. You don't see the `Program finished successfully!` message.
 
 A call to `panic()` usually runs when grave errors aren't expected. To avoid a program crash, you can use the `recover()` function. You'll learn about this function in the next section.
 

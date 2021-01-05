@@ -6,4 +6,4 @@ By default, when Go enters into a `case` statement, it runs it and then exits th
 
 In this module, you also learned that in Go you use only the `for` keyword to write loops. But you can write infinite loops or `while` conditions. Go supports the `continue` keyword, so you can skip an iteration of a loop without exiting the loop.
 
-Lastly, you learned about other Go control flows like the `defer`, `panic`, and `recover` functions. Go doesn't support exceptions. It deals with runtime errors idiomatically by using a combination of the three functions.
+Lastly, you learned about other Go control flows like the `defer`, `panic`, and `recover` functions. Go doesn't support exceptions. It deals with runtime errors by using a combination of the three functions.
