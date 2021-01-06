@@ -2,7 +2,7 @@ In this unit, we look at Terraform configuration and scripting.
 
 # Why Terraform?
 
-Terraform is an open-source tool for provisioning and managing cloud infrastructure. It manages "infrastructure as code" in configuration files that describe the topology of cloud resources.
+Terraform is an open-source tool for provisioning and managing cloud infrastructure. Terraform manages "infrastructure as code" in configuration files that describe the topology of cloud resources.
 Terraform is great at deploying infrastructure across cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition.
 
 ## Automate infrastructure management
@@ -24,7 +24,9 @@ Terraform enables users to validate and preview infrastructure changes before ap
 
 # Terraform Configuration
 
-Configuration files generate an execution plan describing what it will do to reach the desired state, and then executes it to build the described infrastructure. As the configuration changes, Terraform is able to determine what changed and create incremental execution plans which can be applied.
+Configuration files generate an execution plan and what it will do to reach the wanted state. Terraform can then build the described infrastructure.
+
+As the configuration changes, Terraform can determine what changed and create incremental execution plans.
 
 ## Hashicorp Configuration Language (HCL)
 
@@ -61,7 +63,7 @@ Terraform supports the persisting of state in remote storage. For More informati
 
 ### Configuration Files
 
-Configuration files are stored in plain text files with a .tf file extension.
+Configuration files are stored in plain text files with a ".tf" file extension.
 
 - main.tf (Required): Main structure to deploy the complete infrastructure directly or through calls to modules
 - output.tf: Identify each return value of a Terraform module
