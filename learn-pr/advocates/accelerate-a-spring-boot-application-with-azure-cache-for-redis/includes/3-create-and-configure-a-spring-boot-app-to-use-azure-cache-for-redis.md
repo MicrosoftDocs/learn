@@ -36,7 +36,7 @@ Here are the three most popular ones:
 
 Let's focus on the first recommended use case that we listed earlier: creating a distributed cache using Redis.
 
-Using Spring Boot, typically with [https://start.spring.io/](https://start.spring.io/), you will have 3 main tasks to achieve:
+Using Spring Boot, typically with [https://start.spring.io/](https://start.spring.io/), you will have three main tasks to achieve:
 
 - Add the Spring Data Redis library to your application.
 - Configure your `application.yml` file to connect to your Azure Cache for Redis instance.
