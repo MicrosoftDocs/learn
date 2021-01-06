@@ -24,6 +24,8 @@ Terraform enables users to validate and preview infrastructure changes before ap
 
 # Terraform Configuration
 
+Configuration files generate an execution plan describing what it will do to reach the desired state, and then executes it to build the described infrastructure. As the configuration changes, Terraform is able to determine what changed and create incremental execution plans which can be applied.
+
 ## Hashicorp Configuration Language (HCL)
 
 Terraform uses its own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
@@ -59,11 +61,11 @@ Terraform supports the persisting of state in remote storage. For More informati
 
 ### Configuration Files
 
-Configuration files describe the components needed to run applications.
+Configuration files are stored in plain text files with a .tf file extension.
 
 - main.tf (Required): Main structure to deploy the complete infrastructure directly or through calls to modules
 - output.tf: Identify each return value of a Terraform module
-- variables.tf: Define variables required (or not) in main.tf, we need to define the var type and it allows to you assign a default value.
+- variables.tf: Define variables required (or not) in main.tf
 
 ![Config structure for Terraform.](../media/3-config.png)
 
@@ -74,7 +76,7 @@ Configuration files describe the components needed to run applications.
 - Provider: A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
 - Terraform: Terraform version
 - Data: Get data from already existing services
-- Locals: generates new variables using functions and expressions
+- Locals: Generates new variables using functions and expressions
 - Resource: Describes resources & dependencies
 - Module: Reusability & complexity abstraction
 
@@ -85,10 +87,7 @@ Configuration files describe the components needed to run applications.
 When running Terraform in automation, the focus is usually on the core plan/apply cycle.
 
 - Init: Initialize a working directory with Terraform configuration files.
-  - The terraform init command looks through all of the *.tf files in the current working directory and automatically downloads any of the providers required for them. In this example, it will download Azure provider as we're going to deploy Azure resource.
-- Validate: Validates configuration files in a directory without checking remotely
 - Plan: Produce a plan for changing resources to match the current configuration.
-  - The terraform plan command is used to create an execution plan. Terraform determines what actions are necessary to achieve the wanted state specified in the configuration files.
 - Apply: Apply the changes described by the plan.
 - Destroy: Remove the Terraform managed infrastructure
 
