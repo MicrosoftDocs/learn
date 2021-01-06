@@ -2,8 +2,7 @@ In this unit, we look at Terraform configuration and scripting.
 
 # Why Terraform?
 
-Terraform is an open-source tool for provisioning and managing cloud infrastructure. It manages "infrastructure as code" in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces.
-
+Terraform is an open-source tool for provisioning and managing cloud infrastructure. It manages "infrastructure as code" in configuration files that describe the topology of cloud resources.
 Terraform is great at deploying infrastructure across cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition.
 
 ## Automate infrastructure management
@@ -18,7 +17,7 @@ Terraform's template-based configuration files enable you to define, provision, 
 
 As a resource topology becomes complex, understanding the meaning and impact of infrastructure changes can be difficult.
 
-The Terraform CLI enables users to validate and preview infrastructure changes before application. Previewing infrastructure changes in a safe manner has several benefits:
+Terraform enables users to validate and preview infrastructure changes before application. Previewing infrastructure changes in a safe manner has several benefits:
 
 - Team members can collaborate more effectively by quickly understanding proposed changes and their impact.
 - Unintended changes can be caught early in the development process
@@ -68,31 +67,16 @@ Configuration files describe the components needed to run applications.
 
 ![Config structure for Terraform.](../media/3-config.png)
 
-### Providers
-
-A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
-
-- Azure, Kubernetes, Docker, VMware, and so on
-- Resources – the things you can create
-- Data Sources – the things you can reference
-
 ### Main.tf
 
 ![Main.tf structure.](../media/3-main.png)
 
-- Provider: API authentication & interaction
+- Provider: A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
 - Terraform: Terraform version
 - Data: Get data from already existing services
 - Locals: generates new variables using functions and expressions
 - Resource: Describes resources & dependencies
 - Module: Reusability & complexity abstraction
-
-### Best Practices
-
-- Start writing your configuration with modules in mind
-- Use local modules to organize and encapsulate your code
-- Use the public Terraform Registry to find useful modules
-- Publish and share modules with your team
 
 ## Workflow
 

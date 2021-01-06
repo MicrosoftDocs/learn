@@ -12,7 +12,7 @@ You're confident that you can recommend Terraform to provision your Spring Boot 
 
 ## Clean up resources
 
-In the preceding steps, you created Azure resources. If you don't expect to need these resources in the future, either 'Terraform Destroy' or delete the resource group by running the following command in the Cloud Shell:
+In the preceding steps, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group by running the following command in the Cloud Shell:
 
 ```bash
 az group delete --name <your resource group name> --yes
