@@ -57,7 +57,7 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
 
 Keep in mind that you aren't limited to the Azure CLI to list your image replicas. From within the Azure portal, selecting `Replications` for an Azure Container Registry displays a map that details current replications. Container images can be replicated to additional regions by selecting the regions on the map.
 
-    [![Screenshot of Azure portal showing the container replication world map with many circles marked across several countries.](../media/replication-map.png)](../media/replication-map-expanded.png#lightbox "Azure Container Registry replication map")
+[![Screenshot of Azure portal showing the container replication world map with many circles marked across several countries.](../media/replication-map.png)](../media/replication-map-expanded.png#lightbox "Azure Container Registry replication map")
 
 ## Summary
 
@@ -69,7 +69,7 @@ In this module, you created resources using your Azure subscription. You want to
 
 1. In Azure, select **Resource groups** on the left.
 
-1. Find the **learn-deploy-acr-rg** resource group, or whatever resource group name you used,  and select it.
+1. Find the **learn-deploy-acr-rg** resource group, or whatever resource group name you used, and select it.
 
 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
