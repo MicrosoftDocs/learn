@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.3-what-is-azure-cache-for-redis
-title: What is Azure Cache for Redis
+uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.3-create-and-configure-a-spring-boot-app-to-use-azure-cache-for-redis
+title: Create and configure a Spring Boot app to use Azure Cache for Redis
 metadata:
   title: Learn what Redis and Azure Cache for Redis are
   description: In this unit, we learn about Redis and Azure Cache for Redis, and discover their common usage scenarios.
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-what-is-azure-cache-for-redis.md)]
+  [!include[](includes/3-create-and-configure-a-spring-boot-app-to-use-azure-cache-for-redis.md)]
