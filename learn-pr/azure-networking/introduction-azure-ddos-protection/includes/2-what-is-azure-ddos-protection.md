@@ -7,7 +7,7 @@ Microsoft offers DDoS Basic protection to all Azure customers for free. Microsof
 You’re investigating the benefits for Contoso to upgrade to Azure Standard Denial of Service protection for your services running in Azure.
 
 The motivation for investigating upgrading, is the consensus of DDoS security experts, the frequency of the DDoS attacks continues to grow every year. It's not only the frequency of the attacks that's increasing, but also the sophistication of the attacks that's growing as well.
-
+<!-- Consider replacing "investigating" with "evaluating", since technically you don't investigate an upgrade, you consider it or evaluate it. -->
 The attack traffic does not have to be terabits per second to take an application down. All it needs is to be a specific targeted attack that will impact the availability of any application running in Azure which is receiving traffic from the public Internet.
 
 ### What is a DDoS attack?
