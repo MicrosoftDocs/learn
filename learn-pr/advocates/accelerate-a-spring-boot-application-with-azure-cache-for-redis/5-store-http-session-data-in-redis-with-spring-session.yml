@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.5-configure-an-azure-cache-for-redis-instance
+uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.5-store-http-session-data-in-redis-with-spring-session
 title: Configure an Azure Cache for Redis instance
 metadata:
   title: Use Azure Cache for Redis as a data store for a Spring Boot application using Spring Data Redis
-  description: In this unit, we configure a Spring Boot application to connect to an Azure Cache for Redis instance.
+  description: Learn how to use Spring Session to store HTTP session data into Azure Cache for Redis.
   author: judubois
   ms.author: judubois
   ms.date: 12/04/2020
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-configure-an-azure-cache-for-redis-instance.md)]
+  [!include[](includes/5-store-http-session-data-in-redis-with-spring-session.md)]
