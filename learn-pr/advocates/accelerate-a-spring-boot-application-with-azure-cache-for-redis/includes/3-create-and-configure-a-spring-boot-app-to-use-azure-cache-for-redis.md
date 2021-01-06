@@ -12,7 +12,7 @@ Redis is often ranked as the most popular key-value database. Its ease of use, p
 
 Azure Cache for Redis provides all the benefits or Redis: excellent throughput and performance to handle millions of requests per second. As it's managed by Azure, you benefit from all the advantages of a cloud service like automatic patches, updates, scaling and provisioning.
 
-Several tiers are available, and the most advanced ones can provide clustering, replication, and high availability, so you can rely on Redis for critical workloads.
+Several tiers are available, and the most advanced ones can provide clustering, replication, and high availability. You can rely on those advanced tiers for critical workloads.
 
 ## Recommended use cases
 
@@ -24,7 +24,7 @@ Azure Cache for Redis has the following main use cases:
 
 ## Using Redis in Java and with Spring Boot
 
-For Java developers, Redis doesn't provide an official library: there are in fact several different Open Source libraries made by third-party developers. Choice is good, and one of your main decisions will be to select the one that fits your needs best.
+For Java developers, Redis doesn't provide an official library: there are in fact several different Open Source libraries made by third-party developers. Choice is good, and one of your main decisions is to select the one that fits your needs best.
 
 Here are the three most popular ones:
 
@@ -42,7 +42,7 @@ Using Spring Boot, typically with [https://start.spring.io/](https://start.sprin
 - Configure your `application.yml` file to connect to your Azure Cache for Redis instance.
 - Code some business logic, using Spring Data Redis to store, and retrieve data from the cache.
 
-This setup will use the [Lettuce](https://github.com/lettuce-io/lettuce-core) library underneath, but you will not need to use that library directly, unless you require some advanced configuration. All the data access code is handled by Spring Data, using a mechanism that most Spring developers should be familiar with, as Spring Data is also used for accessing SQL databases (using JPA) and NoSQL databases (like MongoDB).
+This setup will use the [Lettuce](https://github.com/lettuce-io/lettuce-core) library underneath, but you won't need to use that library directly, unless you require some advanced configuration. All the data access code is handled by Spring Data, using a mechanism that most Spring developers should be familiar with. Spring Data is also used for accessing SQL databases (using JPA) and NoSQL databases (like MongoDB).
 
 Spring Data requires you to create two classes:
 
