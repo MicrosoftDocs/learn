@@ -69,7 +69,7 @@ The applications where in-app functionality is used in Office 365 are:
 - Microsoft Access
 - Education
 - Microsoft Power Automate <!--Richard please validate - (Microsoft Flow was renamed to Power Automate in November 2019.)-->
-- Business App for Office 365|
+- Business App for Office 365
 - Microsoft Forms
 - Kaizala
 - Microsoft Planner
