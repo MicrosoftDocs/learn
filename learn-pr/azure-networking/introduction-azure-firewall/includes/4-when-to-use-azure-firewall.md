@@ -1,24 +1,24 @@
 You know what Azure Firewall is and how it works. Now you need some criteria to help you evaluate whether Azure Firewall and Azure Firewall Manager are suitable choices for your company. To help you decide, let's consider the following scenarios:
 
-- You want to protect your network against infiltration
-- You want to protect your network against user error
-- Your business includes e-commerce or credit card payments
-- You want to configure spoke-to-spoke connectivity
-- You want to monitor incoming and outgoing traffic
-- Your network requires multiple firewalls
-- You want to implement hierarchical firewall policies
+- You want to protect your network against infiltration.
+- You want to protect your network against user error.
+- Your business includes e-commerce or credit card payments.
+- You want to configure spoke-to-spoke connectivity.
+- You want to monitor incoming and outgoing traffic.
+- Your network requires multiple firewalls.
+- You want to implement hierarchical firewall policies.
 
-As part of your evaluation of Azure Firewall and Azure Firewall Manager, you know that Contoso has faced several of these scenarios. Read the corresponding sections below for more details.
+As part of your evaluation of Azure Firewall and Azure Firewall Manager, you know that Contoso has faced several of these scenarios. Read the following corresponding sections for more details.
 
 ## You want to protect your network against infiltration
 
 A common goal of many malicious actors is to infiltrate your network. These intruders might want to use your network resources or examine, steal, or destroy sensitive or proprietary data.
 
-Azure Firewall is designed to help prevent such intrusions. For example, an attacker might try to infiltrate the network by requesting access to a network resource. Azure Firewall uses stateful inspection of network packets to examine the context of such requests. If a request is a response to earlier legitimate activity, then the firewall will likely allow the request; if a request came seemingly out of nowhere—as would the request sent by a would-be infiltrator—then the firewall would deny the request.
+Azure Firewall is designed to help prevent such intrusions. For example, a malicious hacker might try to infiltrate the network by requesting access to a network resource. Azure Firewall uses stateful inspection of network packets to examine the context of such requests. If a request is a response to earlier legitimate activity, then the firewall will likely allow the request; if a request came seemingly out of nowhere—as would the request sent by a would-be infiltrator—then the firewall would deny the request.
 
 ## You want to protect your network against user error
 
-Perhaps the most common method for infiltrating a network or installing malware on a network computer is to trick a network user into clicking a link in an email message. That link sends the user to an attacker-controlled website that either installs the malware or tricks the user into entering network credentials.
+Perhaps the most common method for infiltrating a network or installing malware on a network computer is to trick a network user into clicking a link in an email message. That link sends the user to a malicious hacker-controlled website that either installs the malware or tricks the user into entering network credentials.
 
 Azure Firewall prevents such attacks by using threat intelligence to deny access to known malicious domains and IP addresses.
 

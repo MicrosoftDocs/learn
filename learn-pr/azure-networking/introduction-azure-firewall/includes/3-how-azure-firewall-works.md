@@ -9,7 +9,7 @@ To understand how Azure Firewall protects your virtual network, know that there 
 
 That is, all traffic—inbound and outbound—goes through the firewall. By default, the firewall denies access to everything. Your job is to configure the firewall with the conditions under which traffic is allowed through the firewall. Each condition is called a *rule* and each rule applies one or more checks on the data. Only traffic that passes every check in all the firewall's rules is allowed to pass through.
 
-How Azure Firewall handles network traffic depends on where the traffic originates:
+How Azure Firewall manages network traffic depends on where the traffic originates:
 
 - For allowed inbound traffic, Azure Firewall uses DNAT to translate the firewall's public IP address to the private IP address of the appropriate destination resource in the virtual network.
 - For allowed outbound traffic, Azure Firewall uses SNAT to translate the source IP address to the firewall's public IP address.
@@ -43,9 +43,9 @@ The following table describes the three types of rules you can create for an Azu
 
 |Rule type  |Description  |
 |---------|---------|
-|NAT     |Translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine, you might use a NAT rule to translate your firewall's public IP address and port 3389 to the private IP address of the virtual machine.        |
+|NAT     |Translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine, you might use a NAT rule to translate your firewall's public IP address and port **3389** to the private IP address of the virtual machine.        |
 |Application     |Filter traffic based on an FQDN. For example, you might use an application rule to allow outbound traffic to access an Azure SQL Database instance using the FQDN *server10.database.windows.net*.         |
-|Network     |Filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, you might use a network rule to allow outbound traffic to access a particular DNS server at a specified IP address using port 53.  |
+|Network     |Filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, you might use a network rule to allow outbound traffic to access a particular DNS server at a specified IP address using port **53**.  |
 
 :::image type="content" source="../media/3-firewall-operation.png" alt-text="Network diagram showing an external computer requesting a remote desktop connection with a virtual machine and Azure Firewall translating its public IP address to the virtual machine's private IP address.":::
 

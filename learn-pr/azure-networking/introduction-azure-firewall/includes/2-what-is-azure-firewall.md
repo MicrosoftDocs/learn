@@ -12,11 +12,11 @@ By default, most firewalls deny all incoming and outgoing traffic. When a firewa
 
 Together, these conditions define a firewall *rule*. A firewall might have only a single rule, but most firewalls are configured with many rules. Only network traffic that meets the conditions of the firewall's rules is allowed to pass through.
 
-Some firewalls are hardware-based and reside inside devices that are built specially to act as firewalls. Other firewalls are software programs that run on general-purpose computing devices.
+Some firewalls are hardware-based and reside inside devices that are built to act as firewalls. Other firewalls are software programs that run on general-purpose computing devices.
 
 ### What is Azure Firewall?
 
-Azure Firewall is a cloud-based firewall service. In most configurations, Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall via the hub network.
+Azure Firewall is a cloud-based firewall service. In most configurations, Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall with the hub network.
 
 All traffic to and from the internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 
@@ -29,7 +29,7 @@ All traffic to and from the internet is denied by default. Traffic is only allow
 
 ### Key features of Azure Firewall
 
-The following table lists some key features of Azure Firewall:
+The following table lists key features of Azure Firewall:
 
 |Feature  |Description  |
 |---------|---------|
@@ -37,11 +37,11 @@ The following table lists some key features of Azure Firewall:
 |Destination network address translation (DNAT)     |All inbound traffic from external sources is sent to the public IP address of the Azure Firewall instance. Allowed traffic is translated to the private IP address of the destination resource on your virtual network.         |
 |Application rules     |Rules that limit outbound traffic to a list of FQDNs. For example, you can allow outbound traffic to access the FQDN of a specified SQL database instance.         |
 |Network rules     |Rules for incoming and outgoing traffic based on network parameters. These parameters include the destination or source IP address; the network port; and the network protocol.         |
-|Threat intelligence     |Filters incoming and outgoing traffic based on the Microsoft threat intelligence rules, which define known malicious IP addresses and domain names. You can configure Azure Firewall with one of two threat intelligence modes: alert you when traffic fails a threat intelligence rule, or alert you and deny the traffic.         |
+|Threat intelligence     |Filters incoming and outgoing traffic based on the Microsoft threat intelligence rules, which define known malicious IP addresses and domain names. You can configure Azure Firewall with one of two threat intelligence modes: alert you when traffic fails a threat intelligence rule or alert you and deny the traffic.         |
 |Stateful     |Examines network packets in context, not just individually. If one or more packets arrive unexpectedly given current traffic, Azure Firewall treats the packets as malicious and denies them.         |
-|Forced tunneling     |Enables Azure Firewall to route all outbound traffic to a specified network resource rather than directly to the Internet. The network resource might be an on-premises hardware firewall or a network virtual appliance that processes traffic before allowing it to pass through to the Internet.         |
+|Forced tunneling     |Enables Azure Firewall to route all outbound traffic to a specified network resource rather than directly to the internet. The network resource might be an on-premises hardware firewall or a network virtual appliance that processes traffic before allowing it to pass through to the internet.         |
 |Tag support     |Azure Firewall supports service tags and FQDN tags for easier rule configuration. A *service tag* is a text entity that represents an Azure service. For example, **AzureCosmosDB** is the service tag for the Azure Cosmos DB service. An *FQDN tag* is a text entity that represents a group of domain names associated with popular Microsoft services. For example, **WindowsVirtualDesktop** is the FQDN tag for Windows Virtual Desktop traffic.   |
-|Monitoring     |Azure Firewall logs all incoming and outgoing network traffic and you can analyze the resulting logs using Azure Monitor, Power BI, Excel, and other tools.         |
+|Monitoring     |Azure Firewall logs all incoming and outgoing network traffic, and you can analyze the resulting logs using Azure Monitor, Power BI, Excel, and other tools.         |
 
 ## Overview of Azure Firewall Manager
 
@@ -66,7 +66,7 @@ The key point here is that Azure offers a resource called Firewall Policy. A fir
 
 ### Key features of Azure Firewall Manager
 
-The following table lists some key features of Azure Firewall Manager:
+The following table lists key features of Azure Firewall Manager:
 
 |Feature  |Description  |
 |---------|---------|
@@ -74,10 +74,10 @@ The following table lists some key features of Azure Firewall Manager:
 |Manage multiple firewalls     |Deploy, configure, and monitor any number of firewalls from a single interface.         |
 |Supports multiple network architectures     |Protects both standard Azure virtual networks and Azure Virtual WAN Hubs.         |
 |Automated traffic routing     |Network traffic is automatically routed to the firewall (when used with Azure Virtual WAN Hub only).         |
-|Hierarchical policies     |Enables you to create so-called parent and child firewall policies. A *parent* policy contains the rules and settings you want to apply globally; a *child* policy inherits all the rules and settings of its parent.         ||Support for third-party security providers     |Enables you to integrate third-party security as a service (SECaaS) solutions to protect your network's Internet connection.         |
+|Hierarchical policies     |Enables you to create so-called parent and child firewall policies. A *parent* policy contains the rules and settings you want to apply globally; a *child* policy inherits all the rules and settings of its parent.         ||Support for third-party security providers     |Enables you to integrate third-party security as a service (SECaaS) solutions to protect your network's internet connection.         |
 
 > [!NOTE]
-> By enabling you to integrate third-party SECaaS solutions, your network security strategy might be to use Azure Firewall to monitor local network traffic while using the third-party SECaaS provider to monitor Internet traffic.
+> By enabling you to integrate third-party SECaaS solutions, your network security strategy might be to use Azure Firewall to monitor local network traffic while using the third-party SECaaS provider to monitor internet traffic.
 
 ### Architecture options
 
