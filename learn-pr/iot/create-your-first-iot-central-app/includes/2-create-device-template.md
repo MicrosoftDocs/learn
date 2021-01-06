@@ -109,7 +109,7 @@ States are important. They let the operator know what's happening. A state in Io
 
 ### Add event telemetry
 
-Events are issues triggered by the device and communicated to the IoT Central app. Events can be one of three types: _Error_, _Warning_, or _Informational_.
+Events are issues triggered by the device and communicated to the IoT Central app. Events can be one of three types: _error_, _warning_, or _informational_.
 
 One event a device might trigger is a conflicting command. An example might be when a truck returning empty from a customer receives a command to deliver its contents to another customer. If a conflict occurs, the device should trigger an event to warn the operator of the IoT Central app.
 

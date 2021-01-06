@@ -11,14 +11,14 @@ If you used a trial subscription in the IoT Central app, your work is deleted au
 
 ## Next steps
 
-To work more with Azure Maps, see [Create your first route-finding app by using Azure Maps](https://docs.microsoft.com/learn/modules/create-your-first-app-with-azure-maps/).
+To work more with Azure Maps, see [Create your first route-finding app by using Azure Maps](https://docs.microsoft.com/learn/modules/create-your-first-app-with-azure-maps?azure-portal=true).
 
-To take your IoT Central refrigerated truck app further, see [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/).
+To take your IoT Central refrigerated truck app further, see [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central?azure-portal=true).
 
 Or take your interest further by using these resources:
 
-- [IoT Central solutions documentation](https://docs.microsoft.com/azure/iot-central/)
-- [Azure Certified Device for IoT devices catalog](https://catalog.azureiotsolutions.com/alldevices)
+- [IoT Central solutions documentation](https://docs.microsoft.com/azure/iot-central?azure-portal=true)
+- [Azure Certified Device for IoT devices catalog](https://catalog.azureiotsolutions.com/alldevices?azure-portal=true)
 
 You can also learn more in other modules about IoT Central and in the video series [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true).
 

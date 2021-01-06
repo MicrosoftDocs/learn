@@ -37,7 +37,7 @@ In this module, you'll build the app you see in this image.
 
 ## Create a custom IoT Central app
 
-1. Right-click [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) and then select **Open in a new window**. It's a good idea to bookmark this URL. It's the home for all your IoT Central apps.
+1. Right-click [Azure IoT Central](https://apps.azureiotcentral.com) and then select **Open in a new window**. It's a good idea to bookmark this URL. It's the home for all your IoT Central apps.
 
 1. In the menu on the left, select **Build** and then select **Custom apps**.
 
