@@ -21,17 +21,17 @@ To begin testing, open the [Azure IoT Central](https://apps.azureiotcentral.com/
 
 ::: zone pivot="vs-csharp,vs-node"
 
-1. In Visual Studio, select **Debug/Start without Debugging**.
+In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
 ::: zone pivot="vscode-node"
 
-1. In the terminal, enter `node app.js`.
+In the terminal, enter `node app.js`.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-1. In the terminal, enter `dotnet run`.
+In the terminal, enter `dotnet run`.
 
 ::: zone-end
 
