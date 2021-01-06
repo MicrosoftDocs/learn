@@ -30,4 +30,3 @@ By the end of this module, you can:
 ## Prerequisites
 
 As you complete the exercises in this module, you'll use a personal Azure account and a GitHub account.
-
