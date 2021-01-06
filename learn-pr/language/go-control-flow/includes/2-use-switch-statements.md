@@ -1,8 +1,8 @@
-Like other programming languages, Go also has support for `switch` statements. When you need to have several `if` statements chained, a better approach is to use `switch` statements. Not only you'll avoid having too many `if` statements that could make your code harder to read and maintain, but you can also have complicated conditions. We'll give them a look in the below sections.
+Like other programming languages, Go supports `switch` statements. You use `switch` statements to avoid chaining multiple `if` statements. By using `switch` statements, you avoid the difficulty of maintaining and reading code that includes many `if` statements. These statements also make complicated conditions easier to construct. Take a look at `switch` statements in the following sections.
 
 ## Basic switch syntax
 
-Like the `if` statement, you don't need parenthesis for the `switch` condition. At its simplest form, a `switch` statement looks like this:
+Like the `if` statement, the `switch` condition doesn't require parentheses. In its simplest form, a `switch` statement looks like this:
 
 ```go
 package main
@@ -31,9 +31,11 @@ func main() {
 }
 ```
 
-Run the code above several times, and you'll see a different output every time (If you run it in the Go Playground, you'll get the same result every time, and that's one of the service's limitations).
+If you run the preceding code several times, you'll see a different output every time. (But if you run the code in the Go Playground, you'll get the same result every time. That's one of the service's limitations.)
 
-Go executes each case of the `switch` statement until it finds a match for the condition. However, notice that the previous code doesn't cover all possible cases of the `num` variable's values. For instance, if `num` ends up being `5`, the program's output will simply be `ok`. Alternatively, you can be more specific about the default use case and include it like this:
+Go executes each case of the `switch` statement until it finds a match for the condition. But notice that the previous code doesn't cover all possible cases of the `num` variable's values. For example, if `num` ends up being `5`, the program's output is `ok`. 
+
+Alternatively, you can be more specific about the default use case and include it like this:
 
 ```go
 switch i {
@@ -48,13 +50,13 @@ default:
 }
 ```
 
-Notice that for the `default` case, you don't write an expression to validate. Instead, you simply include the `i` variable because you'll validate its value in the different `case` statements.
+Notice that for the `default` case, you don't write a validating expression. Instead, you simply include the `i` variable because you'll validate its value in the `case` statements.
 
-## Switch with multiple expressions
+## Use multiple expressions
 
-There will be cases where more than one expression could match only one `case` statement. In Go, if you want to have more than one expression in the same `case` statement, you can separate them with commas (`,`). This allows you to avoid duplicate code.
+Occasionally, more than one expression matches only one `case` statement. In Go, if you want a `case` statement to include more than one expression, separate the expressions by using commas (`,`). This technique allows you to avoid duplicate code.
 
-Below is a code sample of how you can have multiple expressions:
+The following code sample shows how to include multiple expressions.
 
 ```go
 package main
@@ -82,11 +84,11 @@ func main() {
 }
 ```
 
-Notice that the values you include in the expressions for the `case` statement correspond to the data type of the variable the `switch` statement is validating. If you try to include an integer value as a new `case` statement, the program won't compile.
+Notice that the values you include in the expressions for the `case` statement correspond to the data type of the variable that the `switch` statement validates. If you include an integer value as a new `case` statement, the program won't compile.
 
-## Switch invoking a function
+## Invoke a function
 
-A `switch` can also invoke a function, and you can write `case` statements for possible return values from that function. For instance, the below code makes a call to the `time.Now()` function and prints out something depending on the current weekday:
+A `switch` can also invoke a function. From that function, you can write `case` statements for possible return values. For example, the following code calls the `time.Now()` function. The output that it prints depends on the current weekday.
 
 ```go
 package main
@@ -108,9 +110,9 @@ func main() {
 }
 ```
 
-When you're calling a function from a `switch` statement, you can modify its logic without having to change the expression as you'll always validate what the function returns.
+When you call a function from a `switch` statement, you can modify its logic without changing the expression because you always validate what the function returns.
 
-Also, you can call a function from a `case` statement. For instance, when you want to match a particular pattern by using a regular expression, like this:
+Also, you can call a function from a `case` statement. Use this technique, for instance, to match a particular pattern by using a regular expression. Here's an example:
 
 ```go
 package main
@@ -136,13 +138,13 @@ func main() {
 }
 ```
 
-Notice that the above `switch` block doesn't have an expression to validate. Let's talk about that in the next section.
+Notice that the `switch` block has no validating expression. Let's talk about that concept in the next section.
 
-## Omitting condition
+## Omit a condition
 
-In Go, conditions in a `switch` statement can be omitted altogether, simulating an `if` statement. This pattern is as if you would be comparing a `true` value as if you were forcing the `switch` statement to be executed all the time.
+In Go, you can omit a condition in a `switch` statement like you do in an `if` statement. This pattern is like comparing a `true` value as if you were forcing the `switch` statement to run all the time.
 
-See the below code for a simple example of how to write a `switch` statement without a condition:
+Here's an example of how to write a `switch` statement without a condition:
 
 ```go
 package main
@@ -165,13 +167,13 @@ func main() {
 }
 ```
 
-Notice that this pattern might be a cleaner way to write long if-then-else chains.
+This pattern might be a cleaner way to write long if-then-else chains.
 
-## Switch fallthrough
+## Make the logic fall through to the next case
 
-Unlike other programming languages where you need to write a `break` keyword at the end of every `case` statement, in Go, once the logic falls into one case, it will exit the `switch` block unless you explicitly say so. To fall through to the next immediate case, you need to use the `fallthrough` keyword.
+In some programming languages, you write a `break` keyword at the end of every `case` statement. But in Go, when the logic falls into one case, it exits the `switch` block unless you explicitly stop it. To make the logic fall through to the next immediate case, use the `fallthrough` keyword.
 
-To understand this pattern better, let's use the following code sample:
+To understand this pattern better, look at the following code sample.
 
 ```go
 package main
@@ -194,7 +196,7 @@ func main() {
 }
 ```
 
-Run the above code, and analyze the output:
+Run the code and analyze the output:
 
 ```output
 15 is less than 50
@@ -204,4 +206,4 @@ Run the above code, and analyze the output:
 
 Do you see anything wrong?
 
-Notice that because `num` is 15, it matches the first case because it's lower than 50. However, num it's not higher than 100, but because there was a `fallthrough` from the first `case` statement, it goes to the next immediately without validating if it's a valid case or not. So you have to be careful when you use fall through; you might not want to have the above behavior.
+Notice that because `num` is 15 (less than 50), it matches the first case. But `num` isn't greater than 100. And because the first `case` statement has a `fallthrough` keyword, the logic goes to the next `case` statement immediately without validating the case. So you have to be careful when you use the `fallthrough` keyword. You might not want the behavior that this code creates.

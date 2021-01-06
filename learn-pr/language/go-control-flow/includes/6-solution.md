@@ -1,4 +1,4 @@
-Here you can find one solution for the previous challenges
+Here you can find a solution for each of the previous challenges.
 
 ## Write a FizzBuzz program
 
@@ -31,7 +31,7 @@ func main() {
 }
 ```
 
-Notice that for the `FizzBuzz` case, we're multiplying 3 by 5 (as that will be divisible by 3 and 5), but you can also include an `AND` condition to check if the number is divisible by 3 and 5.
+For the `FizzBuzz` case, you multiply 3 by 5 because the results are divisible by 3 and 5. You can also include an `AND` condition to check whether a number is divisible by 3 and 5.
 
 ## Guess the square root
 
@@ -63,7 +63,7 @@ func main() {
 }
 ```
 
-Notice that we've included an `if` statement within the loop to stop it if the previous and current numbers are the same. You might need more than 10 calculations for high numbers, so it will be interesting to change the code to use instead of an infinite loop to run a calculation until the previous and current guess are the same. However, you might have a decimal precision problem, so you'll need to use round numbers.
+This solution includes an `if` statement within the loop. This statement stops the logic if the previous and current numbers are the same. You might need more than 10 calculations for high numbers. So it would be interesting to change the code to use an infinite loop to run a calculation until the previous and current guess are the same. To avoid a decimal precision problem, you'll need to use round numbers.
 
 ## Ask a number, panic if negative
 
@@ -95,4 +95,4 @@ func main() {
 }
 ```
 
-Notice that the idea was to practice an infinite loop and a `switch` statement.
+Remember, the idea is to practice an infinite loop and a `switch` statement.
