@@ -33,6 +33,7 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 - Modes. Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
 - Exclusion lists. You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
 - Policies. You can combine a set of managed rules, custom rules, exclusions, and other Azure Web Application Firewall settings into a single element called an Azure Web Application Firewall policy. YOu can then apply that policy to multiple web apps for easy management and maintenance.
+<!-- Replace "YOu" with "You". -->
 - Request size limits. You can configure Azure Web Application Firewall to flag requests that are either too small or too large.
 - Alerts. Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near-real-time alerts when the firewall detects a threat.
 
