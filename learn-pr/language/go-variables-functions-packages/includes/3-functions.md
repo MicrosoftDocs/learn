@@ -77,7 +77,7 @@ func sum(number1 string, number2 string) int {
 
 This code creates a function called `sum` that takes two `string` arguments, casts them to `int`, and then returns the result of summing them up. When you define a return type, your function needs to return a value of that type.
 
-In Go, you can also set a name to the return value of a function, as though it were a variable. For example, you could refactor the `sum` function like so:
+In Go, you can also set a name to the return value of a function, as though it were a variable. For example, you could refactor the `sum` function like this:
 
 ```go
 func sum(number1 string, number2 string) (result int) {
@@ -94,7 +94,7 @@ Notice that now you need to enclose the result value of the function in parenthe
 
 In Go, a function can return more than one value. You can define these values in a way that's similar to how you define the function's parameters. In other words, you specify a type and a name, but the name is optional.
 
-For example, say you want to create a function that sums two numbers but also multiplies them. The function code would look like so:
+For example, say you want to create a function that sums two numbers but also multiplies them. The function code would look like this:
 
 ```go
 func calc(number1 string, number2 string) (sum int, mul int) {
