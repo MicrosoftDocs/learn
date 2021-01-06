@@ -116,7 +116,7 @@ Notice that with the previous code, Go infers the data types from the values use
 
 A boolean type has only two possible values: `true` and `false`. You declare a boolean type by using the keyword `bool`. Go is different from other programming languages in that in Go you can't implicitly convert a boolean type to either 0 or 1. You have to do it explicitly.
 
-So you can declare a boolean variable like so:
+So you can declare a boolean variable like this:
 
 ```go
 var featureFlag bool = true
@@ -185,7 +185,7 @@ You could use code like this code to determine the default value for a data type
 
 ## Type conversions
 
-In a previous section, we confirmed that implicit casting doesn't work in Go. In Go, casting needs to be done explicitly. Go offers some native ways for converting one data type to a different data type. For example, one way is to use the built-in function for each type, like so:
+In a previous section, we confirmed that implicit casting doesn't work in Go. In Go, casting needs to be done explicitly. Go offers some native ways for converting one data type to a different data type. For example, one way is to use the built-in function for each type, like this:
 
 ```go
 var integer16 int16 = 127
