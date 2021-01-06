@@ -13,13 +13,13 @@ Typically there are three steps to deliver application resources:
 1. Provision the Application – Build and deploy the application and configure it.
 
 For step 1, you'll use a personal Azure account.
-For step 2, you'll use Terraform and Github Actions to provision the Azure infrastructure.
-For step 3, you'll use Maven and Github Actions to build and deploy the sample application.
+For step 2, you'll use Terraform and GitHub Actions to provision the Azure infrastructure.
+For step 3, you'll use Maven and GitHub Actions to build and deploy the sample application.
 
 > [!IMPORTANT]
 > More information on using Terraform to also deploy and build using external State can be located in the summary unit of this module.
 
-## Learning objectives
+## Learning Goals
 
 By the end of this module, you can:
 
@@ -30,3 +30,5 @@ By the end of this module, you can:
 ## Prerequisites
 
 As you complete the exercises in this module, you'll use a personal Azure account and the Azure Cloud Shell.
+
+Terraform is installed in Bash in Cloud Shell by default. Additionally, Cloud Shell automatically authenticates your default Azure CLI subscription to deploy resources through the Terraform Azure modules.
