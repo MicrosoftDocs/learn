@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.paths-to-modern-endpoint-management.2-determine-starting-point
+title: Determine your endpoint management migration starting point
+metadata:
+  title: Determine your endpoint management migration starting point
+  description: Determine your organization's endpoint migration starting point.
+  ms.date: 01/04/2021
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-determine-starting-point.md)]
