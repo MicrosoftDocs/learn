@@ -9,6 +9,6 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/4-use-sensitivity-labels-classify-protect-data.md)]
