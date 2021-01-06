@@ -16,14 +16,14 @@ The previous statement declares a variable named `firstName` of type `string`. (
 var firstName, lastName string
 ```
 
-By adding a comma (`,`) after a variable name, you're saying that you're about to declare another variable. In this case, the previous statement declares two variables named `firstName` and `lastName` of type `string`. If you want to add a third variable of type `int`, the code will look like so:
+By adding a comma (`,`) after a variable name, you're saying that you're about to declare another variable. In this case, the previous statement declares two variables named `firstName` and `lastName` of type `string`. If you want to add a third variable of type `int`, the code will look like this:
 
 ```go
 var firstName, lastName string
 var age int
 ```
 
-Another way to write the previous statement is by using parenthesis after the `var` keyword, as if you had a dedicated block to declare variables, like so:
+Another way to write the previous statement is by using parenthesis after the `var` keyword, as if you had a dedicated block to declare variables, like this:
 
 ```go
 var (
@@ -44,7 +44,7 @@ var (
 )
 ```
 
-If you decide to initialize a variable, you don't need to specify its type because Go will infer the type when you initialize the variable with a value. For example, you could declare and initialize variables like so:
+If you decide to initialize a variable, you don't need to specify its type because Go will infer the type when you initialize the variable with a value. For example, you could declare and initialize variables like this:
 
 ```go
 var (
@@ -58,7 +58,7 @@ Go will infer that the `firstName` and `lastName` variables are of `string` type
 
 ## Various ways to initialize variables
 
-In Go, you can declare and initialize variables in a single line. You separate each variable name with a comma and do the same for every value (in the same order), like so:
+In Go, you can declare and initialize variables in a single line. You separate each variable name with a comma and do the same for every value (in the same order), like this:
 
 ```go
 var (
@@ -66,7 +66,7 @@ var (
 )
 ```
 
-There's another way you can declare and initialize variables. This method is the most common way to do so in Go. The same example we've been using could look like so:
+There's another way you can declare and initialize variables. This method is the most common way to do so in Go. The same example we've been using could look like this:
 
 ```go
 func main() {
@@ -86,7 +86,7 @@ Finally, *you can use the colon equal sign only inside a function*. When you dec
 
 There will be times when you need to have static values in your code, known as *constants*. Go supports the use of constants. The keyword to declare one is `const`.
 
-For example, you can declare a constant like so:
+For example, you can declare a constant like this:
 
 ```go
 const HTTPSatusOK = 200
@@ -94,7 +94,7 @@ const HTTPSatusOK = 200
 
 As with variables, the type of a constant is inferred from the value assigned to it. In Go, constant names are typically written in MixedCased or all uppercase letters.
 
-If you need to declare multiple constants in one block, you can do it like so:
+If you need to declare multiple constants in one block, you can do it like this:
 
 ```go
 const (
