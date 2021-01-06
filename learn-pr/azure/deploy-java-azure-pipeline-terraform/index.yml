@@ -17,6 +17,7 @@ abstract: |
   - Set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
 prerequisites: | 
   - An Azure Subscription
+  - A GitHub account
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

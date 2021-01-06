@@ -29,6 +29,5 @@ By the end of this module, you can:
 
 ## Prerequisites
 
-As you complete the exercises in this module, you'll use a personal Azure account and the Azure Cloud Shell.
+As you complete the exercises in this module, you'll use a personal Azure account and a GitHub account.
 
-Terraform is installed in Bash in Cloud Shell by default. Additionally, Cloud Shell automatically authenticates your default Azure CLI subscription to deploy resources through the Terraform Azure modules.
