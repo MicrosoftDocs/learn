@@ -7,7 +7,7 @@ By implementing Grover's algorithm with the Q# Standard Library you will determi
 
 ## Learning objectives
 
-In this module you'll:
+In this module you will:
 
 - Learn about libraries in Q#, specifically how they are distributed and how to add them to your projects
 - Use Q# to express quantum algorithms at a high level

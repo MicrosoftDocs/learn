@@ -66,6 +66,7 @@ Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/
 This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` gate is applied to the $\ket{-}$ state, the $\ket{-}$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 
 Supposing we have in hand the search register `missingDigitReg` and a `flagQubit` initialized to $\ket{-}$, how would we go about getting that phase factor on strictly the state $\ket{x}$ in `missingDigitReg` which satisfies $(9 + 6 \cdot x) \bmod 11 = 0$?
+
 Well, we can add a secondary target register, leaving the full state of the form
 $$
 \ket{x}\ket{\text{target}}\ket{-},
