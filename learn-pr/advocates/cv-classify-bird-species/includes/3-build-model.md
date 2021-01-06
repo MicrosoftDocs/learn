@@ -30,17 +30,19 @@ Download the zip file that contains the dataset:
 
 Next, we'll create an API resource in Azure Cognitive Services Custom Vision:
 
-1. Go to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. Select **Create a resource**.
-1. Search for **Custom Vision**.
-1. Select **Create**.
+1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), select **Create a resource**.
+1. Search for **Custom Vision**, and then select **Create**.
 1. On the **Basics** tab, enter or select the required values:
    1. Select your Azure subscription.
-   1. Create a new Resource group.
-(copy steps from Polar Bears module, unit 3, step 5)
-   1. Enter a name for your new Custom Vision service resource, (for example, "BirdCustomVisionService").
-   1. Set the Training location and the Prediction location to "(US) South Central US."
-   1. Set the Training pricing tier and the Prediction pricing tier to "Free F0 (2 Transactions per second…)."
+   1. Create a new resource group.
+      1. For the resource group name, enter *BirdResourceGroup*.
+          :::image type="content" source="../media/resource-group-search.jpg" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
+      1. Make sure **Location** is set to *South Central US*, and then select **Create resource group**.
+          :::image type="content" source="../media/create-new-custom-vision-resource.png" alt-text="Screenshot that shows elements to select in the Azure portal to create a new Custom Vision resource.":::
+       The new resource group information is added in **Create New Resource**. 
+   1. Enter a name for your new Custom Vision service resource, (for example, *BirdCustomVisionService*).
+   1. Set **Training location** and **Prediction location** to *(US) South Central US*.
+   1. Set **Training pricing tier** and **Prediction pricing tier** to *Free F0 (2 Transactions per second…)*.
    1. Select **Review + create**.
 1. On the next page, select **Create**.
 
@@ -50,17 +52,17 @@ When the deployment finishes, select **Go to resource**.
 
 ## Upload data
 
-Now, it's time to upload the data for training. There are a couple ways to upload data: you can either use the UI to browse, upload, and tag images, *or* you can use the SDK. 
+Now, it's time to upload the data for training. There are a couple ways to upload data:
+- You can use the UI to browse, upload, and then tag images.
+- You can use the images that are included in the SDK. 
 
-With lots of data and image classes and tags to upload, it's faster to use the SDK. However, you can complete the steps in the next sections to upload data the way that works best for you. 
+With a large amount of data, image classes, and tags to upload, it's faster to use the SDK. However, you can choose an option in the next sections and complete the steps to upload data the way that works best for you. 
 
 ### Upload data option 1: UI upload
 
 1. Create a project in the Custom Vision portal:
 
-   1. Go to [https://www.customvision.ai/projects](https://www.customvision.ai/projects?azure-portal=true).
-   1. Select **Sign in**.
-   1. Select **New project**.
+   1. Go to [https://www.customvision.ai/projects](https://www.customvision.ai/projects?azure-portal=true) and sign in. Select **New project**.
    1. In **Create a new project**, enter or select the following values:
 
       | Name | Value |
@@ -72,20 +74,25 @@ With lots of data and image classes and tags to upload, it's faster to use the S
       | **Classification Types**  | Multiclass (Single tag per image) |
       | **Domains** | General |
 
-   1. Select **Create project**.
+      Select **Create project** to create the project.
 
       > [!NOTE]
-      > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in the settings after the project is created.
+      > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
 
 1. Add and tag an image:
 
-   1. In your Custom Vision project, select **Add images**.
-   1. Go to the *bird_photos* folder.
-   1. Select Ctrl + A to select all the images for each bird species folder.
-   1. Select **Open**.
-   1. Add a tag for photos to indicate the bird species.
-   1. Select **Upload \<number\> files**.
-   1. Repeat the steps for each bird species (class).
+   1. In your Custom Vision project, select **Add images**.  Go to the *bird_photos* folder.
+   1. Repeat these steps to upload the bird photos in each species folder:
+      1. In your Custom Vision project, select **Add images**.
+      1. In **Open**, go to the *birds_photo* folder where you extracted the images files from the dataset.
+          :::image type="content" source="../media/unit-3-upload-photos-from-ui-1.png" alt-text="Screenshot that shows how to add images to a custom vision project.":::
+      1. Browse to a bird species folder. Open the folder, so all images in the species folder are shown in the files pane.
+      1. Select Ctrl + A to select all the images in the species folder, and then select **Open**.
+          :::image type="content" source="../media/unit-3-upload-photos-from-ui-2.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
+      1. In **Image upload**, add a description in **My Tags** to indicate the species for the birds shown in the photos.
+          :::image type="content" source="../media/unit-3-upload-photos-from-ui-3.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
+      1. Select **Upload \<number\> files**.
+
 
    ![An animated GIF that demonstrates how to upload photos in Custom Vision](../media/upload-custom-vision-photos.gif)
 
@@ -99,7 +106,7 @@ If you prefer to instead download the notebook and code, you can clone the repo 
 git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
 ```
 
-To create the notebook and copy in the code: 
+Follow these steps to create the Jupyter notebook and paste code into the notebook:
 
 1. Open a new Jupyter Notebook instance or the IDE of your choice. Then, run the following command to import the package:
 
@@ -112,7 +119,8 @@ To create the notebook and copy in the code:
    ```python
    from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
    from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateEntry
-   import numpy as np
+   from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateBatch
+   from msrest.authentication import ApiKeyCredentials import numpy as np
    ```
 
 1. Create the Custom Vision project. Update the endpoint and key with the values from the resource you created in Azure:
