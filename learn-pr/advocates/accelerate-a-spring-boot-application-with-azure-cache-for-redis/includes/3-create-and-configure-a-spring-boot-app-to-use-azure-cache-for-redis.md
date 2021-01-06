@@ -40,13 +40,13 @@ Using Spring Boot, typically with [https://start.spring.io/](https://start.sprin
 
 - Add the Spring Data Redis library to your application.
 - Configure your `application.yml` file to connect to your Azure Cache for Redis instance.
-- Code some business logic, using Spring Data Redis, to store and retrieve data from the cache.
+- Code some business logic, using Spring Data Redis to store, and retrieve data from the cache.
 
 This setup will use the [Lettuce](https://github.com/lettuce-io/lettuce-core) library underneath, but you will not need to use that library directly, unless you require some advanced configuration. All the data access code is handled by Spring Data, using a mechanism that most Spring developers should be familiar with, as Spring Data is also used for accessing SQL databases (using JPA) and NoSQL databases (like MongoDB).
 
 Spring Data requires you to create two classes:
 
-- A Java bean that will hold your data, and which should be annotated with the `@RedisHash` Java annotation. This annotation is used to store and retrieve data in Redis, using a specific key.
+- A Java bean that will hold your data, and which should be annotated with the `@RedisHash` Java annotation. This annotation is used to store, and retrieve data in Redis, using a specific key.
 - A Spring repository, which is a specific Java class which will be able to do database operations (create, retrieve, update, delete) on the Java bean that stores the data. For example, it will be able to store one instance of the bean, or retrieve a list of beans.
 
 Then, you can inject this Spring repository into any standard Spring bean: for instance, you can inject it inside a Spring MVC Rest controller, which will be used to store and access that data. It is what we're going to achieve in the next section's exercise.

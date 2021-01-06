@@ -1,4 +1,4 @@
-You'll now create a Spring Boot application that'll use Spring Data Redis to store and retrieve data from Azure Cache for Redis.
+You'll now create a Spring Boot application that'll use Spring Data Redis to store, and retrieve data from Azure Cache for Redis.
 
 ## Create a Spring Boot project using Spring Data Redis
 

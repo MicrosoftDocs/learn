@@ -1,5 +1,5 @@
 
-Congratulations! You have used Azure Cache for Redis to speed up and scale a Spring Boot application. In this module, you also learned about Spring Data Redis and Spring Session to store and retrieve data with Redis, and how to deploy this scalable application to Azure App Service.
+Congratulations! You have used Azure Cache for Redis to speed up and scale a Spring Boot application. In this module, you also learned about Spring Data Redis and Spring Session to store, and retrieve data with Redis, and how to deploy this scalable application to Azure App Service.
 
 ## Extra resources
 
