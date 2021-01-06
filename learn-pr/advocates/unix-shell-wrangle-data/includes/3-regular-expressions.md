@@ -1,8 +1,4 @@
-In this unit, you'll be introduced to regular expressions. Regular expressions are handy to do text pattern matching and are equally used by developers and data scientists.
-
-# Introduction to regular expressions
-
-Regular expressions are massively helpful and chances are, you've come across them at some point. This esoteric, miniature language can help with complex pattern matching and might look a bit intimidating at first. However, regular expressions can be found in most text editors and languages and tools such as Python, SQL, Go, and Scala among many others. So they're definitely worth learning.
+Regular expressions (regex) are massively helpful and chances are, you've come across them at some point. This esoteric, miniature language can help with complex pattern matching and might look a bit intimidating at first. However, regular expressions can be found in most text editors and languages and tools such as Python, SQL, Go, and Scala among many others. So they're definitely worth learning.
 
 A useful online tool to have in your bookmarks is [Regular Expressions 101](https://regex101.com/), which allows you to test a regex against test inputs.
 
@@ -12,7 +8,7 @@ In brief, regex is an accessible way to define a pattern of characters and is mo
 The pattern specified can be broad or specific and is **strictly** read left-to-right. Its input is a text string.
 
 Most characters (alphabetic and numeric) don't have a special functionality and literally match that character.
-For example, a regex of 'SSH' will only match the string 'SSH'
+For example, a regex of 'SSH' will only match the string 'SSH'.
 
 ```output
 REGEX: SSH
@@ -26,34 +22,34 @@ MATCH: false
 
 If you completed the previous module, you should now have a sample of the open dataset `NASA-software-API.txt`. We'll use this dataset to do some pattern matching with regex in VSCode.
 
-First, open the `NASA-software-API.txt` file in VSCode. And then open the search box using the key combinations <kbd>Cmd + F</kbd> in macOS or <kbd>Ctrl + F</kbd> in Windows and Linux.
+First, open the `NASA-software-API.txt` file in VSCode. Then open the search box using the key combinations **Cmd** + **F** in macOS or **Ctrl** + **F** in Windows and Linux.
 
 Make sure that the `regex` option is switched on (see screenshot below, the regex option should be active).
 
-:::image type="content" source="../media/clair_vscode_screenshot.png" alt-text="Screenshot showing VSCode search box and regex option":::
+:::image type="content" source="../media/clair-vscode-screenshot.png" alt-text="Screenshot showing VSCode search box and regex option.":::
 
 If you type the word *Open Source* in the search box, VSCode will match all the string instances and you can use the arrow buttons to navigate to the matches in the file.
 
-:::image type="content" source="../media/NASA-software-capability.png" alt-text="Screenshot showing VSCode search results in a text file":::
+:::image type="content" source="../media/nasa-software-capability.png" alt-text="Screenshot showing VSCode search results in a text file.":::
 
-This might not seem any different from any search box. But the true power of regex comes when we start using special characters, ranges and anchors.
+This might not seem any different from any search box. But the true power of regex comes when we start using special characters, ranges, and anchors.
 
 ### Character matching and ranges
 
 So far you've learned that you can use regex to make a literal matching of characters.
-Let's say you want to find the versions of the software specified in the file. You're interested in those versions that have a format similar to `v1`
+Let's say you want to find the versions of the software specified in the file. You're interested in those versions that have a format similar to `v1`.
 
-As you already know that all versions should start with `v` you can enclose the rest of the search in brackets (`[]`). The brackets mean "any character in this list. For example:
+As you already know that all versions should start with `v` you can enclose the rest of the search in brackets (`[]`). The brackets mean "any character in this list". For example:
 
 ```bash
 v[12345]
 ```
 
-Using regex like this one is simple enough to do as we only have five digits we're looking for (1-5) in the list. But how would you go about matching the entire alphabet or digits without having to write every single character?
+Using a regex like this one is simple enough to do as we only have five digits we're looking for (1-5) in the list. But how would you go about matching the entire alphabet or digits without having to write every single character?
 
 You can achieve this by defining a consecutive range of letters or numbers. For example, for all digits, you'd create a range [0-9] and for lowercase alphabetic characters you can write [a-z].
 
-So if you wanted, for example finding all versions containing any digits you'd modify the regex to:
+So if you wanted, for example, to find all versions containing any digits, you'd modify the regex to:
 
 ```bash
 v[1-9]
@@ -95,7 +91,7 @@ So, how do you prevent a special character from doing its regex function when yo
 
 ## Regex cheatsheet
 
-This unit was a brief introduction to regular expressions and what you can accomplish with them. There are many other complex patterns you can build with regular expressions. In the meantime here's a handy regex cheatsheet for you:
+This unit was a brief introduction to regular expressions and what you can accomplish with them. There are many other complex patterns you can build with regular expressions. In the meantime here's a handy regex cheat sheet for you:
 
 ```output
 ^        Matches the beginning of a line
@@ -116,4 +112,4 @@ $        Matches the end of the line
 )        Indicates where string extraction is to end
 ```
 
-You can also learn more about VSCOde and regular expressions in the [VSCode documentation](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019).
+You can also learn more about VSCOde and regular expressions in the [VSCode documentation](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019).
