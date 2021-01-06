@@ -1,21 +1,21 @@
-Go is a strongly typed language, meaning that every variable you declare is bound to a specific data type and won't accept any values that don't match with its type.
+Go is a strongly typed language. This means that every variable you declare is bound to a specific data type and will accept only values that match this type.
 
-In Go, you have four different categories for data types:
+In Go, you have four categories of data types:
 
-- Basic Types: numbers, strings, and booleans.
-- Aggregate Types: arrays and structs.
-- Reference Types: pointers, slices, maps, functions, and channels.
-- Interface Types: interface.
+- Basic types: numbers, strings, and booleans
+- Aggregate types: arrays and structs
+- Reference types: pointers, slices, maps, functions, and channels
+- Interface types: interface
 
-In this module, we're covering only the basic types. Don't worry if you don't know what the other types are; we'll cover them in the upcoming modules.
+In this module, we're covering only the basic types. Don't worry if you don't know what the other types are. We'll cover them in the upcoming modules.
 
-So, let's start by exploring the numeric data types.
+Let's start by exploring the numeric data types.
 
 ## Integer numbers
 
-In general terms, the keyword to define an integer type is `int`. However, Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with size of 32 or 64 bits, respectively. When you simply use `int`, the size is 32 bits on 32-bit systems and 64 on 64-bit systems (most of the time, but it might differ from one machine to another). If you need to represent a value as an unsigned number, you could use `uint`, but only use this type when you have specific reasons to do use it. And like `int`, Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
+In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you just use `int`, the size is 32 bits on 32-bit systems and 64 bits on 64-bit systems (most of the time, but it might differ from one computer to another). If you need to represent a value as an unsigned number, you can use `uint`, but only use this type when you have a specific reason to. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
 
-So, here's an example of how to use the different integer types in Go:
+Here's an example of how to use the various integer types in Go:
 
 ```go
 var integer8 int8 = 127
@@ -25,7 +25,7 @@ var integer64 int64 = 9223372036854775807
 println(integer8, integer16, integer32, integer64)
 ```
 
-Most of the time, you'll use `int`, but you must know about the different integer types because for Go, `int` is not the same as `int32`, even if the integer's natural size is 32 bits. In other words, you'll need to cast explicitly when you require it. Moreover, if you try to perform a math operation between different types, you'll get an error. For instance, suppose you have the following code:
+Most of the time, you'll use `int`, but you need to know about the other integer types because, in Go, `int` isn't the same as `int32`, even if the integer's natural size is 32 bits. In other words, you'll need to cast explicitly when a cast is required. And if you try to perform a math operation between different types, you'll get an error. For example, suppose you have this code:
 
 ```go
 var integer16 int16 = 127
@@ -33,28 +33,28 @@ var integer32 int32 = 32767
 println(integer16 + integer32)
 ```
 
-When you run the program, you'll get the following error:
+When you run the program, you'll get this error:
 
 ```output
 invalid operation: integer16 + integer32 (mismatched types int16 and int32)
 ```
 
-As you can see, unlike other programming languages, in Go, you need to be very explicit when converting a value from one type to another. We'll talk about how to cast types properly at the end of this module.
+As you can see, unlike in other programming languages, in Go you need to be explicit when you convert a value from one type to another. We'll talk about how to cast types properly at the end of this module.
 
-Additionally, as you progress in your Go learning, you might be hearing in the future something about [runes](https://www.geeksforgeeks.org/rune-in-golang/). A `rune` is simply an alias for an `int32` data type, and it's used to represent a Unicode character (or a Unicode code point). For instance, let's say that you have the following code:
+As you progress in your Go learning, you might hear about [runes](https://www.geeksforgeeks.org/rune-in-golang/). A `rune` is simply an alias for an `int32` data type. It's used to represent a Unicode character (or a Unicode code point). For example, say you have this code:
 
 ```go
 rune := 'G'
 println(rune)
 ```
 
-When you run the above code snippet, you might expect to see the program prints `G` in the command prompt. However, what you see it's the number `71`, which represents the Unicode character for `G`. We'll talk more about runes in the upcoming modules.
+You might expect to see the program print `G` in the command prompt when you run the preceding code snippet. But you see the number `71`, which represents the Unicode character for `G`. We'll talk more about runes in the upcoming modules.
 
-You can learn about the different ranges for each type by looking at the [Go's source code](https://golang.org/src/builtin/builtin.go). Knowing the ranges of each type will help you choose the proper data type, and you'll also avoid wasting bits in memory.
+You can learn about the ranges for each type by looking at the [Go source code](https://golang.org/src/builtin/builtin.go). Knowing the ranges of each type will help you choose the proper data type, and you'll also avoid wasting bits in memory.
 
 ### Challenge 1:
 
-Set another variable of type `int` and use either the value from the `integer32` or `integer64` variables to confirm the natural size of the variable in your system. If you're on a 32-bit system and use a value higher than 2147483647, you'll get an overflow error like `constant 9223372036854775807 overflows int`.
+Set another variable of type `int` and use the value from the `integer32` or `integer64` variable to confirm the natural size of the variable on your system. If you're on a 32-bit system and use a value higher than 2,147,483,647, you'll get an overflow error that looks like this one: `constant 9223372036854775807 overflows int`.
 
 > **Challenge solution**:
 >```go
@@ -68,7 +68,7 @@ Set another variable of type `int` and use either the value from the `integer32`
 
 ### Challenge 2:
 
-Declare an unsigned variable like `uint`, and initialize it with a negative value like `-10`. When you try to run the program, you should get an error like `constant -10 overflows uint`.
+Declare an unsigned variable like `uint`, and initialize it with a negative value like `-10`. When you try to run the program, you should get an error like this one: `constant -10 overflows uint`.
 
 > **Challenge solution**:
 >```go
@@ -82,7 +82,7 @@ Declare an unsigned variable like `uint`, and initialize it with a negative valu
 
 ## Floating-point numbers
 
-When you need to store high numbers, and they don't fit in any of the previous integer types, Go provides you with two sizes of floating-point numbers, `float32` and `float64`. The difference between these two types is the maximum size of bits they can hold. Look at the following lines to learn how to use these two types:
+Go provides data types for two sizes of floating-point numbers: `float32` and `float64`. You can use these types when you need to store large numbers and they don't fit in any of the previously mentioned integer types. The difference between these two types is the maximum size of bits they can hold. Look at the following lines to learn how to use these two types:
 
 ```go
 var float32 float32 = 2147483647
@@ -90,7 +90,7 @@ var float64 float64 = 9223372036854775807
 println(float32, float64)
 ```
 
-You can find the limits of these two types in the `math` package using the `math.MaxFloat32` and `math.MaxFloat64` constants. Use the following code to print in the command prompt the maximum floating-point values:
+You can find the limits of these two types by using the `math.MaxFloat32` and `math.MaxFloat64` constants, which are available in the `math` package. Use the following code to print the maximum floating-point values in the command prompt:
 
 ```go
 package main
@@ -102,7 +102,7 @@ func main() {
 }
 ```
 
-Besides the size, floating-point numbers are useful when you need to use decimal numbers. For instance, you could write something like this:
+Floating-point types are also useful when you need to use decimal numbers. For example, you could write something like this code:
 
 ```go
 const e = 2.71828
@@ -114,21 +114,21 @@ Notice that with the previous code, Go infers the data types from the values use
 
 ## Booleans
 
-A boolean type has only two possible values, `true` or `false`, and you declare a boolean type using the keyword `bool`. Unlike other programming languages, in Go, you **can't convert implicitly** a boolean type to either 0 or 1; you'll have to do it explicitly.
+A boolean type has only two possible values: `true` and `false`. You declare a boolean type by using the keyword `bool`. Go is different from other programming languages in that in Go you can't implicitly convert a boolean type to either 0 or 1. You have to do it explicitly.
 
-So to declare a boolean variable, you can do it like this:
+So you can declare a boolean variable like this:
 
 ```go
 var featureFlag bool = true
 ```
 
-We'll use boolean data types in the upcoming module when we talk about control flow statements in Go and in further modules.
+We'll use boolean data types in the upcoming module when we talk about control flow statements in Go. We'll also use them in later modules.
 
 ## Strings
 
-Lastly, let's look at the most common data type in any programming language, strings. In Go, the keyword `string` is used to represent a string data type. To initialize a string variable, you need to define its value within double quotes (`" `). Otherwise, single quotes (`'`) are used for single characters (or runes, as we saw in a previous section)
+Finally, let's look at the most common data type in any programming language: string. In Go, the keyword `string` is used to represent a string data type. To initialize a string variable, you need to define its value within double quotation marks (`"`). Single quotation marks (`'`) are used for single characters (and for runes, as we saw in a previous section).
 
-For instance, the following code shows you two ways of declaring and initializing a string variable:
+For example, the following code shows two ways to declare and initialize a string variable:
 
 ```go
 var firstName string = "John"
@@ -136,16 +136,16 @@ lastName := "Doe"
 println(firstName, lastName)
 ```
 
-Additionally, there are going to be times where you need to escape characters. To do so, in Go, you use a backslash (`\`) before the character. For instance, the most common examples are the following ones:
+You'll sometimes need to escape characters. To do so in Go, you use a backslash (`\`) before the character. For instance, here are the most common examples of using escape characters:
 
 - `\n` for new lines
 - `\r` for carriage returns
 - `\t` for tabs
-- `\" for single quotes
-- `\"` for double quotes
-- `\\` for backslash
+- `\'` for single quotation marks
+- `\"` for double quotation marks
+- `\\` for backslashes
 
-Use the following code snippet to test escaping characters:
+Use the following code snippet to test escape characters:
 
 ```go
 fullName := "John Doe \t(alias \"Foo\")\n"
@@ -161,16 +161,16 @@ John Doe        (alias "Foo")
 
 ## Default values
 
-At this point, almost every time we declare a variable, we initialize it with a value. However, unlike other programming languages, **all data types have a default value** when you don't initialize a variable. This feature comes in handy as you don't have to check if a variable has been initialized before using it.
+So far, almost every time we've declared a variable, we've initialized it with a value. But in Go, unlike in other programming languages, all data types have a default value when you don't initialize a variable. This feature comes in handy because you don't have to check if a variable has been initialized before you use it.
 
 Here's a list of a few default values for the types we've explored so far:
 
-- `0` for `int` types (and all its subtypes like `int64`)
+- `0` for `int` types (and all of its subtypes, like `int64`)
 - `+0.000000e+000` for `float32` and `float64` types
 - `false` for `bool` types
-- A string type has an empty value
+- An empty value for `string` types
 
-Run the following code snippet to confirm the above default values list:
+Run the following code snippet to confirm the default values listed previously:
 
 ```output
 var defaultInt int
@@ -181,11 +181,11 @@ var defaultString string
 println(defaultInt, defaultBool, defaultFloat32, defaultFloat64, defaultString)
 ```
 
-You could use something like the previous code to determine the default value for a data type we didn't explore here.
+You could use code like this code to determine the default value for a data type we didn't explore here.
 
 ## Type conversions
 
-In a previous section, we confirmed that implicit casting doesn't work in Go. And the reason for that it's because, in Go, casting needs to be done explicitly (as we've said a few times already). Go offers some native ways for converting one data type to a different data type. For instance, one way is by simply using the built-in function for each type, like this:
+In a previous section, we confirmed that implicit casting doesn't work in Go. In Go, casting needs to be done explicitly. Go offers some native ways for converting one data type to a different data type. For example, one way is to use the built-in function for each type, like this:
 
 ```go
 var integer16 int16 = 127
@@ -193,7 +193,7 @@ var integer32 int32 = 32767
 println(int32(integer16) + integer32)
 ```
 
-Another approach for casting in Go is by using the [strconv package](https://golang.org/pkg/strconv/). For instance, to convert a `string` to an `int`, and vice-versa, you could do it like this:
+Another approach for casting in Go is to use the [strconv package](https://golang.org/pkg/strconv/). For example, to convert a `string` to an `int`, and vice-versa, you could use this code:
 
 ```go
 package main
@@ -207,6 +207,6 @@ func main() {
 }
 ```
 
-Run the above code, confirm that it runs, and prints `-42` two times.
+Run the preceding code, and confirm that it runs and prints `-42` two times.
 
-Notice that there's a `_` as the name of a variable from the above code. In Go, that means that we're not going to use that variable's value, and we want to ignore it. Otherwise, the program won't compile as we need to use all variables we declare. We'll come back to this topic, and you'll learn what the typically `_` represents in the upcoming modules.
+Notice that there's an underscore (`_`) used as the name of a variable in the preceding code. In Go, that means we're not going to use that variable's value, and that we want to ignore it. Otherwise, the program won't compile because we need to use all variables that we declare. We'll come back to this topic, and you'll learn what the `_` typically represents in the upcoming modules.
