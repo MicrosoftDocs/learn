@@ -1,5 +1,3 @@
-# Use pipes and filters to put it all together
-
 So far, you've been introduced to commands to inspect files, regular expressions, and the stream editor.
 
 We also know now that commands such as `cat` and `grep` have the monitor screen as standard output. In many cases, you'll want to redirect the output to another file, by using the `>` redirect operator, or even to another program that transforms data for further processing. In UNIX, we call these programs [filters](http://www.linfo.org/filters.html).
@@ -45,7 +43,6 @@ Let's see some examples of pipes and filters by using the commands you've alread
     ```bash
     grep -m10 'NASA' NASA-logs-1995.txt | sort -r | sed -n s'/NASA/National Aerospace Agency/p'
     ```
-
 As you can see in the preceding examples, we can build many different pipelines with just a few commands. This module briefly introduced you to different kinds of tools and commands. But this introduction should be enough to get you started with data wrangling in the UNIX shell.
 
 ## Summary

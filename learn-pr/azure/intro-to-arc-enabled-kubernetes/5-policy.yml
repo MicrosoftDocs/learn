@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.5-policy
+metadata:
+  title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Policy for Kubernetes
+  description: In this unit, you'll learn what is Azure Policy for Kubernetes and how to implement it.
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Policy for Kubernetes
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-policy.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which Kubernetes component is used to implement the Azure Policy for Kubernetes agents"
+    choices:
+    - content: "service"
+      isCorrect: false
+      explanation: "A service provides internal or external inbound connectivity, not applicable in this case."
+    - content: "admission controller"
+      isCorrect: true
+      explanation: "Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open-source admission controller Kubernetes-based implementation of OPA."
+    - content: "ingress controller"
+      isCorrect: false
+      explanation: "An ingress controller provides inbound connectivity, not applicable in this case."
+    - content: "namespace"
+      isCorrect: false
+      explanation: "A namespace is not capable of running an agent."
+  - content: "Which of the following types of Kubernetes lacks support by Azure Policy"
+    choices:
+    - content: "Azure Kubernetes Service running on Azure Stack HCI"
+      isCorrect: false
+      explanation: "This is supported."
+    - content: "Azure Arc enabled Kubernetes"
+      isCorrect: false
+      explanation: "This is supported."
+    - content: "AKS Engine"
+      isCorrect: false
+      explanation: "This is supported."
+    - content: "OpenShift"
+      isCorrect: true
+      explanation: "This is unsupported directly, although it is supported if the cluster has the Azure Arc enabled Kubernetes installed."

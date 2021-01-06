@@ -75,6 +75,7 @@ Identify the subtasks of *Use the Unix shell to wrangle log data*
 
     **Knowledge check**
 
+
     What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
 
     - Question type

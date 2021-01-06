@@ -1,5 +1,3 @@
-# Use the grep command
-
 So far, you've learned about basic file inspection and regular expressions. In this unit, you'll be introduced to the `grep` command. The `grep` command searches specified files or `stdin` for patterns that match a given regular expression. As with other commands we've seen before, the `grep` command has many flags to control the output and its behavior. We'll learn more about these flags later on in this unit.
 
 Let's get started with the basic usage of `grep`. The basic syntax for `grep` is:
@@ -9,6 +7,7 @@ grep 'pattern' [file_to_search]
 ```
 
 Let's say you want to find all the lines that contain the pattern `*.novo.dk` in the `NASA-logs-1995.txt` file. We know from the previous unit that the regular expression for this pattern is `\*\.novo\.dk`. Notice how we're escaping the special symbols with a back slash (`\`).
+
 
 Run the following command to match the regular expression by using `grep`:
 

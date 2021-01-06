@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
-uid:
+
+uid: learn.advocates.unix-shell-wrangle-data.2-cat-tool
 metadata:
   title: Basic file manipulation with the cat command
   description: This unit describes how you can use the cat command to display the content of files and create or concatenate files.

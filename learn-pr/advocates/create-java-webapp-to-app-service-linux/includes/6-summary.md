@@ -1,16 +1,16 @@
-In this module, you learned how to create a Java Web application, how to use the `Maven Plugin for Azure Web Apps` and how to deploy your application to Azure App Service.
+In this module, you learned how to create a Java web application, how to use the `Maven Plugin for Azure Web Apps`, and how to deploy your application to Azure App Service.
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. You need to clean up these resources so that you'll not continue to be charged for them. Run the following command to delete all the resources.
+In this module, you created resources using your Azure subscription. You need to clean up these resources so that you won't continue to be charged for them. Run the following command to delete all the resources.
 
 ```azurecli
 az group delete --name <name of your resource>
 ```
 
-## Other Resources
+## Other resources
 
-### Microsoft Azure Related
+### Microsoft Azure-related resources
 
 * [Azure App Service](https://docs.microsoft.com/azure/app-service/)
 * [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/azure-monitor/app/azure-web-apps?tabs=java)
@@ -21,10 +21,10 @@ az group delete --name <name of your resource>
 * [Azure App Service Hybrid Connections](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)
 * [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux/)
 
-### Java Related
+### Java-related resources
 
 * [W3C: XHTML™ 1.0 The Extensible HyperText Markup Language (Second Edition)](http://www.w3.org/TR/xhtml1/#a_dtd_XHTML-1.0-Transitional)
-* [JavaServer Faces(JSF)](http://www.javaserverfaces.org/)
+* [JavaServer Faces (JSF)](http://www.javaserverfaces.org/)
 * [JSF 2.3](https://jakarta.ee/specifications/faces/2.3/)
 * [Expression Language](https://jakarta.ee/specifications/expression-language/3.0/)
 * [Project Lombok](https://projectlombok.org/)

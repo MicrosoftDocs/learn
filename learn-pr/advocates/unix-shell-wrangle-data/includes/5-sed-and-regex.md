@@ -1,5 +1,3 @@
-# Introduction to the stream editor (`sed`)
-
 The stream editor (`sed`) is a useful text parsing and manipulation tool. It can be used to do transformations on text that comes from the standard input or a file. The `sed` tool edits the text line by line and in a noninteractive way. In this way, you make the decisions as you call the command. These directions are executed automatically. This capability makes `sed` a powerful and fast tool to transform text.
 
 ## Basic usage
@@ -42,6 +40,7 @@ where the `s` is the substitute command and the three forward slashes `/` are us
 
 Imagine you have the URL https://www.nasa.gov/about/sites/index.html. You want to replace `index.html` with `home`. You can make this replacement by using the following command:
 
+
 ```bash
 echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
 ```
@@ -54,10 +53,10 @@ https://www.nasa.gov/about/sites/homes
 
 Let's replace the `NASA` occurrences for *National Aerospace Agency* in the `NASA-software-API.txt` file:
 
-
 ```bash
  sed 's/NASA/National Aerospace Agency/' NASA-software-API.txt
 ```
+
 
 You'll notice that the substitution happened on all matches for NASA, but the command `sed` printed out all the lines in the file. This behavior is the default for the `sed` tool.
 

@@ -1,5 +1,3 @@
-# Inspect files in the UNIX shell
-
 Have you ever wanted to take data from one format into another? It's likely that you have or that you'll have to do it in the future. The process is called *data wrangling* and is a common task faced by developers. Before we learn how to wrangle data, we need some data files to work with.
 
 As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to your sandbox environment.
@@ -75,6 +73,7 @@ The `nl` filter reads lines from files or from the `stdin`. The output is printe
 
 Let's use `nl` with the flag `-s` to use `=` as a delimiter.
    
+
 ```bash
 nl -s = NASA-software-API.txt
 ```
@@ -87,10 +86,11 @@ The word count command `wc` counts the number of lines, words (separated by whit
 
 Use the command `wc` to see the number of lines, words, and characters in `NASA-software-API.txt`.
 
+
 ```bash
 wc NASA-software-API.txt
 ```
-    
+
 Your output should look like this:
 
 ```output

@@ -1,6 +1,6 @@
 Here we'll use the command `cat` to display, create, and concatenate files. This command is useful when you do complex data wrangling.
 
-# The `cat` command
+## The `cat` command
 
 The `cat` command is one of the most basic yet useful commands for working with files. It has three main functions when it comes to text files: display their content, create new files, and combine copies.
 

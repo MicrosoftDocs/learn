@@ -52,4 +52,4 @@ After you have created a set of credentials, to open the log stream, run the fol
 curl -u {username} https://{sitename}.scm.azurewebsites.net/api/logstream
 ```
 
-To close the log stream session, press Ctrl +C t.
+To close the log stream session, press Ctrl +C.

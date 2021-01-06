@@ -41,6 +41,10 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --vnet-name MyVNet1
     ```
 
+  > [!NOTE] 
+  >  If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks. 
+
+
 1. To deploy a VM in **FrontendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
@@ -99,7 +103,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --resource-group $RG
     ```
 
-1. To create an NSG configuration mistake that prevents communication between the VMs, run this command.
+1. To create an NSG **configuration mistake that prevents communication** between the VMs, run this command.
 
     ```azurecli
     az network nsg rule create \
@@ -116,6 +120,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --direction Inbound \
         --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
+
 
 1. To associate a network security group with a subnet, run this command.
 
@@ -134,17 +139,17 @@ Now, to set up Network Watcher in the same region as the infrastructure, let's u
 To enable Network Watcher, run this command.
 
 ```azurecli
-az network watcher configure \ 
---resource-group $RG \ 
---location <location> \ 
---enabled true
+az network watcher configure \
+--locations westus \
+--enabled true \
+--resource-group $RG
 ```
 
 ## Use Network Watcher to show the topology
 
 Now, you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS and the RDP protocol between the two VMs. First, investigate the network topology:
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) by using the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure portal menu, select **All services**. Then, go to **Networking** > **Network Watcher**.
 

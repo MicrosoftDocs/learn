@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid:
+uid: learn.advocates.unix-shell-wrangle-data.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Test your knowledge.
@@ -12,8 +12,8 @@ title: Knowledge check
 durationInMinutes: 1
 content: |
   [!include[](includes/7-knowledge-check.md)]
+  Choose the best response for each question. Then select **Check your answers**.
 quiz:
-  title: Check your knowledge
   questions:
     - content: "In our current directory, we want to find the three files with the least number of lines. Which command listed here would work?"
       choices:
@@ -33,6 +33,7 @@ quiz:
       choices:
         - content: "French, France, Frence, Franch"
           isCorrect: true
+
           explanation: "The way this regular expression is constructed, it will match misspellings such as Frence and Franch."
         - content: "Frenche, Franceh, Frenceh, Franche"
           isCorrect: false

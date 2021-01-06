@@ -1,7 +1,5 @@
 In this unit, you're introduced to regular expressions. Regular expressions are handy to do text pattern matching. They're equally used by developers and data scientists.
 
-# Introduction to regular expressions
-
 Regular expressions (regex) are tremendously helpful, and chances are you've come across them at some point. This esoteric, miniature language can help with complex pattern matching and might look a bit intimidating at first. But regular expressions can be found in most text editors and languages, along with tools such as Python, SQL, Go, and Scala, among many others. They're definitely worth learning about.
 
 A useful online tool to have in your bookmarks is [Regular Expressions 101](https://regex101.com/), which allows you to test a regex against test inputs.
@@ -42,6 +40,7 @@ So far you've learned that you can use regex to make a literal matching of chara
 
 You already know that all versions should start with `v`, so you can enclose the rest of the search in brackets (`[]`). The brackets mean "any character in this list." For example:
 
+
 ```bash
 v[12345]
 ```
@@ -51,6 +50,7 @@ Using regex like this one is simple enough to do because we only have five digit
 You can define a consecutive range of letters or numbers. For example, for all digits, you would create a range [0-9]. For lowercase alphabetic characters, you can write [a-z].
 
 For example, if you wanted to find all versions that contain any digits, you would modify the regex to:
+
 
 ```bash
 v[1-9]
@@ -82,6 +82,7 @@ You can now write a regex that will match numbers at the beginning of a line, `^
 
 Let's say we want to find lines in which a period (`.`) is the last character. We know the dollar sign (`$`) is the end-of-line anchor, so we might enter something like this:
 
+
 ```bash
 .$
 ```
@@ -93,6 +94,7 @@ How do you prevent a special character from doing its regex function when you wa
 ## Regex cheat sheet
 
 This unit was a brief introduction to regular expressions and what you can accomplish with them. There are many other complex patterns you can build with regular expressions. In the meantime, here's a handy regex cheat sheet for you:
+
 
 ```output
 ^        Matches the beginning of a line
