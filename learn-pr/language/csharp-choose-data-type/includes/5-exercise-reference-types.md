@@ -26,7 +26,7 @@ At this point, `data` is merely a variable that could hold a reference, or rathe
 
 ### Step 3 - Create an instance of `int` array using the `new` keyword
 
-Modify the code from step 3 to create and assign a new instance of `int` array using the following code.
+Modify the code from step 2 to create and assign a new instance of `int` array using the following code.
 
 ```csharp-interactive
 int[] data;
@@ -37,7 +37,7 @@ The `new` keyword informs .NET Runtime to create an instance of `int` array, and
 
 ### Step 4 - Modify the code example to perform both operations in a single line of code
 
-The two lines of code in Step 3 are typically shortened to a single line of code to both declare the variable, and create a new instance of the `int` array. Modify the code from step 3 to the following.
+The two lines of code in step 3 are typically shortened to a single line of code to both declare the variable, and create a new instance of the `int` array. Modify the code from step 3 to the following.
 
 ```csharp-interactive
 int[] data = new int[3];

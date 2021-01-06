@@ -37,7 +37,7 @@ For more information, see the [documentation](https://github.com/Azure/azure-sdk
 
 ::: zone-end
 
-## Handling secrets in an app
+## Handle secrets in an app
 
 After a secret is loaded into your app, it's up to your app to handle it securely. In the app you build in this module, you'll write your secret value out to the client response, and to demonstrate that it has been loaded successfully, you'll view it in a web browser. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you'll use secrets to do things like initialize client libraries for databases or remote APIs.
 
@@ -63,6 +63,7 @@ code .
 After the editor loads, to add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies, in the Azure Cloud Shell, run the following commands.
 
 ```console
+dotnet add package Azure.Identity
 dotnet add package Azure.Extensions.AspNetCore.Configuration.Secrets
 dotnet restore
 ```
@@ -74,6 +75,7 @@ To demonstrate good usage of Key Vault, we will modify our app to load secrets f
 First, the app startup: Open `Program.cs`, delete the contents and replace them with the following code:
 
 ```csharp
+using Azure.Identity;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -101,14 +103,14 @@ namespace KeyVaultDemoApp
 
                     // Use VaultName from the configuration to create the full vault URL.
                     var vaultName = builtConfig["VaultName"];
-                    Uri vaultUrl = new Uri($"https://{vaultName}.vault.azure.net/");
+                    Uri vaultUri = new Uri($"https://{vaultName}.vault.azure.net/");
 
                     // Load all secrets from the vault into configuration. This will automatically
                     // authenticate to the vault using a managed identity. If a managed identity
                     // is not available, it will check if Visual Studio and/or the Azure CLI are
                     // installed locally and see if they are configured with credentials that can
                     // access the vault.
-                    config.AddAzureKeyVault(vaultUrl, new DefaultAzureCredential());
+                    config.AddAzureKeyVault(vaultUri, new DefaultAzureCredential());
                 });
     }
 }

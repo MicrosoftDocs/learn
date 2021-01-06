@@ -13,10 +13,13 @@ The Azure Activity Log provides insight into subscription-level events that have
 There is a single Activity Log for each Azure subscription. It provides data about the operations on a resource from the outside. Diagnostic Logs are emitted by a resource and provide information about the operation of that resource. You must enable diagnostic settings for each resource.
 
 1. Sign in to the Azure portal.
-1. Go to **Monitor**, then select **Activity log**.
-1. Ensure that a **Log Profile** is set.
-1. If not, Click on **Export** to Event Hub.
+
+1. Go to **Monitor**, and then select **Activity log**.
+
+1. Ensure that a **Log Profile** is set. If not, select **Export** to Event Hub.
+
 1. Configure the setting.
+
 1. Select **Save**.
 
 ![Screenshot the activity log profile setting pane](../media/6-export-log.png)
@@ -25,18 +28,23 @@ There is a single Activity Log for each Azure subscription. It provides data abo
 
 Setting the Retention (days) to 0 retains the data forever.
 
-1. Follow the steps listed above. Adjust the **Retention days** slider bar.
+1. Follow the previous steps. Adjust the **Retention days** slider bar.
 
 ### Create an activity log alert for "Creating a policy assignment" - Level 1
 
  Monitoring when a policy is created illustrates who has that privilege. This may help detect a breach or misconfiguration.
 
 1. Sign in to the Azure portal.
-1. Go to **Monitor**, then select **Alerts**.
+
+1. Go to **Monitor**, and then select **Alerts**.
+
 1. Select **+ New alert rule**.
-1. Click on **Resource**.
-1. Select **Policy** from the **Filter by resource type** pull down.
-1. Click **Done**.
+
+1. Select **Resource**.
+
+1. Select **Policy** from the **Filter by resource type** dropdown.
+
+1. Select **Done**.
 
 ![Screenshot the activity log profile setting pane](../media/6-resource.png)
 
@@ -45,22 +53,32 @@ Setting the Retention (days) to 0 retains the data forever.
 By default, no monitoring alerts are created when NSGs are created/updated/deleted. Changing or deleting a security group can allow internal resources to be accessed from improper sources, or for unexpected outbound network traffic.
 
 1. Sign in to the Azure portal.
-1. Go to **Monitor**, then select **Alerts**.
+
+1. Go to **Monitor**, and then select **Alerts**.
+
 1. Select **+New alert rule**.
-1. Click on **Resource type**.
-1. Select **Network security group** from the **Filter by resource type** pull down.
-1. Click **Done**
+
+1. Select **Resource type**.
+
+1. Select **Network security group** from the **Filter by resource type** dropdown.
+
+1. Select **Done**.
 
 ### Create an activity log alerts for "Creating or updating an SQL Server firewall rule" - Level 1
 
 Monitoring for **Create or update SQL Server Firewall Rule** events gives insight into network access changes and may reduce the time it takes to detect suspicious activity.
 
 1. Sign in to the Azure portal.
-1. Go to **Monitor**, then select **Alerts**.
+
+1. Go to **Monitor**, and then select **Alerts**.
+
 1. Select **+New alert rule**.
-1. Click on **Resource type**.
-1. Select **SQL servers** from the **Filter by resource type** pull down.
-1. Click **Done**
+
+1. Select **Resource type**.
+
+1. Select **SQL servers** from the **Filter by resource type** dropdown.
+
+1. Select **Done**.
 
 ![Screenshot the activity log profile setting pane](../media/6-sql-server.png)
 
