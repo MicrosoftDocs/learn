@@ -76,7 +76,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > [!div class="centered"]
 > ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training** on your compute cluster.
+2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-diabetes-training** on your compute cluster.
 3. Wait for the run to finish - this may take a few minutes.
 
 ## View the transformed data

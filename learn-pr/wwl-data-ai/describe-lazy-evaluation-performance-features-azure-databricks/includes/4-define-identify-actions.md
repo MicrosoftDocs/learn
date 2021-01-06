@@ -1,6 +1,6 @@
-In your Azure Databricks workspace, open the **04-Working-With-Dataframes** folder that you imported within your user folder.
+In your Azure Databricks workspace, open the **05-Lazy-Evaluation-and-Performance** folder that you imported within your user folder.
 
-Open the **2.Actions-and-transformations** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
+Open the **05-Lazy-Evaluation-and-Performance folder** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
 
 Within the notebook, you will:
 

@@ -2,8 +2,8 @@
 uid: learn.wwl.describe-performance-monitoring
 metadata:
   title: Describe performance monitoring
-  description: "Compare Azure and on-premises tools for monitoring and measuring performance. Determine critical metrics. Understand the purpose of a baseline for comparative analysis."
-  ms.date: 10/15/2020
+  description: "Describe performance monitoring"
+  ms.date: 12/30/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -36,6 +36,7 @@ units:
 - learn.wwl.describe-performance-monitoring.describe-critical-performance-metrics
 - learn.wwl.describe-performance-monitoring.establish-baseline-metrics
 - learn.wwl.describe-performance-monitoring.describe-azure-intelligent-insights
+- learn.wwl.describe-performance-monitoring.exercise
 - learn.wwl.describe-performance-monitoring.knowledge-check
 - learn.wwl.describe-performance-monitoring.summary
 badge:

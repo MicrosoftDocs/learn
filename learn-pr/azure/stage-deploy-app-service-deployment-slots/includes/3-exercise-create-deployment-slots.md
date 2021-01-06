@@ -66,7 +66,7 @@ Now you'll set up the git client in Console for the left-hand menu and use it to
     ```bash
     mkdir demoapp
     ```
-    
+
      ```bash
     cd demoapp
     ```
@@ -84,11 +84,11 @@ To use git to deploy the source code to the web app's production slot, set up yo
 
 1. In the Azure portal, on the web app's **Overview** page, next to **Git clone url**, select the **Copy** button. Note that the URL contains your deployment username.
 
-:::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL."::: 
+    :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL.":::
 
-> [!NOTE]
-> If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
-    
+    > [!NOTE]
+    > If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
+
 1. In the Azure portal, on the web app's Overview page, next to Git clone url, select the Copy button. Note that the URL contains your deployment username.
 
 1. In Console, run the following command to configure the URL as a git remote named "production". Replace `git-clone-url` with the URL from the previous step.
@@ -107,7 +107,7 @@ To use git to deploy the source code to the web app's production slot, set up yo
     git push production
     ```
 
-1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page and then select **URL**. You can double click of copy and paste. 
+1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page, and then select **URL**. You can double click to copy and paste.
 
     ![The web app in the production slot](../media/3-web-app-production-slot.png)
 
@@ -184,7 +184,7 @@ Next, make a small change to the web app and then use git to deploy the new vers
     <h1>Web App Version 2</h1>
     ```
 
-1. To save your changes, press CTRL+S.
+1. To save your changes, press Ctrl+S.
 
 1. In the Console, enter the following commands to commit the new version of the app to git and deploy it to the staging slot. Enter your deployment password when you're prompted.
 

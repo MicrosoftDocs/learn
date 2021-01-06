@@ -18,7 +18,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 ## Select the source database
 
-1. In the **Connect to source server** area, for the source server, enter **admsdemovm**. Leave the other settings at their default values, and select **Connect**.
+1. In the **Connect to source server** area, for **Server name**, enter **admsdemovm**. Leave the other settings at their default values, and select **Connect**.
 
 1. After you're connected, you'll see a list of databases. In the list, you can select only one database to migrate. In this case, you have only the **Social** database.
 
@@ -42,7 +42,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. For **Authentication type**, select **SQL Server Authentication**.
 
-1. In the username field, enter **azuresqladmin**, and enter the password that you specified for this account.
+1. In the **Username** field, enter **azuresqladmin**, and enter the password that you specified for this account.
 
 1. Select **Connect**.
 
@@ -54,7 +54,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 ## Select objects to migrate and deploy the schema
 
-In this step, you can select the database objects that you want to migrate and deselect the ones you don't. In this exercise, you only have one object, the table `dbo.Twitters`.
+In this step, you can select the database objects that you want to migrate, and clear the ones you don't. In this exercise, you only have one object, the table `dbo.Twitters`.
 
 1. Select the **dbo.Twitters** line, and you'll see there are no issues found for this object. This is in part because you fixed any issues during the assessment phase of the migration.
 
@@ -64,7 +64,7 @@ In this step, you can select the database objects that you want to migrate and d
 
     :::image type="content" source="../media/6-05-deploy-schema.png" alt-text="Generated script for a schema." loc-scope="azure-database-migration":::
 
-1. To deploy the schema to the target server, select **Deploy Schema**.
+1. To deploy the schema to the target server, select **Deploy schema**.
 
     After the target database is updated, it displays the results on the right.
 

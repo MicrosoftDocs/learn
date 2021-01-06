@@ -121,19 +121,19 @@ for env_name in env_names:
 
 ### Retrieving and using an environment
 
-You can retrieve a registered environment by using the **get** method of the **Environment** class, and then assign it to a **ScriptRunConfig** or **Estimator**.
+You can retrieve a registered environment by using the **get** method of the **Environment** class, and then assign it to a **ScriptRunConfig**.
 
-For example, the following code sample retrieves the *training_environment* registered environment, and assigns it to an estimator:
+For example, the following code sample retrieves the *training_environment* registered environment, and assigns it to a script run configuration:
 
 ```python
-from azureml.core import Environment
-from azureml.train.estimator import Estimator
+
+from azureml.core import Environment, ScriptRunConfig
 
 training_env = Environment.get(workspace=ws, name='training_environment')
-estimator = Estimator(source_directory='experiment_folder'
-                      entry_script='training_script.py',
-                      compute_target='local',
-                      environment_definition=training_env)
+
+script_config = ScriptRunConfig(source_directory='my_dir',
+                                script='script.py',
+                                environment=env)
 ```
 
 When an experiment based on the estimator is run, Azure Machine Learning will look for an existing environment that matches the definition, and if none is found a new environment will be created based on the registered environment specification.

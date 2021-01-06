@@ -2,9 +2,9 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.deploy-azure-rm-template
 title: Deploy an Azure Resource Manager template
 metadata:
-  title: Deploy an Azure RM template
-  description: "Deploy an Azure RM template"
-  ms.date: 09/18/2020
+  title: Deploy an Azure Resource Manager template
+  description: "Deploy an Azure Resource Manager template"
+  ms.date: 12/15/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

@@ -2,7 +2,7 @@ In this exercise, you add a password to Azure Key Vault. A password is an exampl
 
 In practice, there are several ways to add secrets to and read secrets from Key Vault. You can use the Azure portal, the Azure CLI, or Azure PowerShell. By using your favorite programming language, your applications can also securely access the secrets that they need.
 
-Here, you create a secret in Key Vault by using the Azure portal. You then access the secret from the portal and from the Azure CLI in Azure Cloud Shell. 
+Here, you create a secret in Key Vault by using the Azure portal. You then access the secret from the portal and from the Azure CLI in Azure Cloud Shell.
 
 The Azure CLI is a way to work with Azure resources from the command line or from scripts. Cloud Shell is a browser-based shell experience to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
 
@@ -37,7 +37,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 1. Note some of the details about your key vault.
 
-    For example, the **DNS name** field shows the URI that your application can use to access your vault from the REST API.
+    For example, the **Vault URI** field shows the URI that your application can use to access your vault from the REST API.
 
     Here's an example for a key vault that's named **my-kv-1234**:
 
@@ -88,7 +88,7 @@ Here, you access the password from Key Vault two times. First, you access it fro
 
     ```azurecli
     az keyvault secret show \
-      --name "MyPassword" \
+      --name MyPassword \
       --vault-name $(az keyvault list --query [0].name --output tsv) \
       --query value \
       --output tsv
