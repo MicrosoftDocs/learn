@@ -1,17 +1,15 @@
-Error handling is the process of handling the possibility of failure.
+Error handling is the process of anticipating and working with the possibility of failure.
 
-For example, failing to read a file and then continuing to use that bad input would clearly be
-problematic. Noticing and explicitly managing those errors saves the rest of the program from
-various pitfalls.
+For example, a program's failure to read a file, followed by its continuing use of that bad input, would clearly produce problematic errors. Your ability to notice and explicitly manage those errors can save the program from various additional pitfalls.
 
-## Learning Objectives
+## Learning objectives
 
-In this module, you will begin to discover various ways to deal with errors in Rust:
-
-- `panic!` for dealing with unrecoverable errors.
-- The `Option` enum for when a value is optional or when the lack of a value is not an error condition.
-- The `Result` enum when there is a chance that things do go wrong and the caller has to deal with the problem.
+In this module, you'll learn how to:
+- Use `panic!` to deal with unrecoverable errors.
+- Use the `Option` enum when a value is optional or the lack of a value is not an error condition.
+- Use the `Result` enum when things could go wrong and a caller might have to deal with the problem.
 
 ## Prerequisites
 
-- You should have your Rust development environment already set up and know how to create, edit, and execute Rust code with Cargo.
+- A Rust development environment
+- Familiarity with creating, editing, and executing Rust code by using Cargo
