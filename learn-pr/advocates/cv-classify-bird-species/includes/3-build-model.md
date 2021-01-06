@@ -1,14 +1,18 @@
 Let's build our model! We'll download the dataset, create our Azure service, upload the data, and then train the model.
 
 > [!NOTE]
-> The sandbox sign-in process runs outside the learning module. You're automatically returned to the module after you sign in. 
+> The sandbox sign-in process runs outside the learning module. You're automatically returned to the module after you sign in.
+>
+> To sign in to the sandbox:
+>
 > 1. Select **Sign in to activate Sandbox**.
 > 1. Enter your credentials and provide authentication as prompted.
 > 1. After you authenticate, if prompted, select **Review permissions**.
->     :::image type="content" source="../media/sandbox-review-permission.png" alt-text="Screenshot that shows the Review Permissions button selected.":::     
->    
-> 1. In the dialog box, select the permission settings you want to use, and then select **Accept**.
->     :::image type="content" sou:::image type="content" source="../media/download-dataset-from-github.png" alt-text="":::rce="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows permissions details and the Accept button selected.":::
+>     :::image type="content" source="../media/sandbox-review-permission.png" alt-text="Screenshot that shows the Review Permissions button selected.":::
+> 
+> 1. Select the permission settings you want to use, and then select **Accept**.
+> 
+>    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows permissions details and the Accept button selected.":::
 >
 >The message **Sandbox activated!** is shown, and you can continue with the learning module.
 >
@@ -24,19 +28,19 @@ Download the zip file that contains the dataset:
    :::image type="content" source="../media/download-dataset-from-github.png" alt-text="Screenshot that shows the dataset zip file in GitHub, with the Download button selected.":::   
 
    The zip file is copied to your computer and stored in your default location for downloaded files. 
-1. When the download is finished, unzip the file. Note the folder location because you’ll need it for a later step.
+1. When the download is finished, unzip the file. Note the folder location because you’ll need it in a later step.
 
 ## Create a Custom Vision API resource
 
 Next, we'll create an API resource in Azure Cognitive Services Custom Vision:
 
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), select **Create a resource**.
-1. Search for **Custom Vision**, and then select **Create**.
+1. Search for **custom vision**. In the **Custom Vision** card in the search results, select **Create**.
+   :::image type="content" source="../media/create-new-custom-vision-resource.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
 1. On the **Basics** tab, enter or select the required values:
    1. Select your Azure subscription.
    1. Create a new resource group.
       1. For the resource group name, enter *BirdResourceGroup*.
-          :::image type="content" source="../media/resource-group-search.jpg" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
       1. Make sure **Location** is set to *South Central US*, and then select **Create resource group**.
           :::image type="content" source="../media/create-new-custom-vision-resource.png" alt-text="Screenshot that shows elements to select in the Azure portal to create a new Custom Vision resource.":::
        The new resource group information is added in **Create New Resource**. 
