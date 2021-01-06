@@ -27,7 +27,10 @@ $$
 $$
 
 which can only be true for the proper value of $x$. 
-While this can be easily solved by a classical computer (not to mention by hand), let's assume that it cannot be. 
+
+Clearly this can be easily solved by a classical computer (not to mention by hand), but let's assume that it cannot be and consider how we might solve it with a quantum computer.
+Toy problems such as these, while clearly not demonstrating a scenario where quantum computing would be beneficial, are often useful in developing our understanding of various problems and approaches that may be taken. 
+Then, when such a problem is at too large a scale to handle classically, you will already have the knowledge and tools to begin tackling it with a quantum computer.
 
 To find the value of $x$ with a quantum computer, Grover's algorithm can be used with an oracle that checks whether the above equation is satisfied.
 In the rest of this unit, you will create and document this oracle in a new Q# project using the Standard and Numerics libraries.

@@ -22,7 +22,7 @@ We provide a full list of the possible headers below, but first let's document t
     ///
     /// # Description
     /// Allocates a "flag" qubit and puts it in the state |-> to be used by the oracle in 
-    /// flagging the solution states. This is deallocated at the end of the call. 
+    /// flagging the solution states. This qubit is deallocated at the end of the call. 
     ///
     /// # Input
     /// ## missingDigitReg

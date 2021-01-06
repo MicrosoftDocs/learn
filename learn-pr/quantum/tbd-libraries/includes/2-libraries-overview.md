@@ -7,9 +7,8 @@ Since these are always defined within namespaces in Q#, we could consider a libr
 
 When such a library has been made available to a Q# project, its namespaces can then be accessed via standard `open NamespaceName;` statements at the beginning of your Q# file, and thus its operations, functions, and types can be utilized.
 
-> [!NOTE]
-> Namespaces can be also be partially defined in each of several different libraries.
-> In this case, the compiler will still recognize the namespace regardless, but if you try to call a function from a particular library that is missing, an error will be raised that the function is not found in the namespace. 
+Note that namespaces essentially just provide the fully qualified names of the particular callables or types contained in them.
+Therefore it's possible for callables/types from distinct libraries or packages (installable units of library code) to ultimately belong to the same namespace.
 
 ## How are Q# libraries distributed?
 

@@ -1,5 +1,6 @@
 When working with nearly any programming language, one of the most important development tools at your disposal is the API documentation itself.
-API documentation is essentially the reference manual for a language, containing the specifics about how all the puzzle pieces fit together; for example, all types or classes as well as functions and any required/optional inputs.
+API documentation is essentially the reference manual for a language, containing the specifics about how all the puzzle pieces fit together; for example, all types and functions along with any required/optional inputs.
+Such documentation often includes both nitty-gritty details as well as bigger-picture context—e.g. the accepted input types to a function along with a conceptual description of what the function actually does.
 
 In this unit, you will familiarize yourself with the Q# API documentation: where to find it and how to read it. 
 
