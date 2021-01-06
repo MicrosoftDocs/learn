@@ -1,5 +1,5 @@
 
-An Azure Cache for Redis instance can be created either using [the Azure portal](https://portal.azure.com/?WT.mc_id=java-11981-judubois) or [the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-11981-judubois). As this takes a few minutes to create, we'll first run those commands and let them run in the background, before we explain more about Azure Cache for Redis.
+An Azure Cache for Redis instance can be created either using [the Azure portal](https://portal.azure.com/?WT.mc_id=java-11981-judubois) or [the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-11981-judubois). As this resource takes a few minutes to create, we'll first run those commands and let them run in the background, before we explain more about Azure Cache for Redis.
 
 ## Set up the Azure CLI
 
@@ -26,7 +26,7 @@ az account set --subscription <SUBSCRIPTION_ID>
 
 ## Create an Azure Cache for Redis instance
 
-In this section, you'll create our Azure Cache for Redis instance using Azure CLI. It's possible to do exactly the same configuration using the Azure portal. For this, you'll need to set up three environment variables:
+In this section, you'll create our Azure Cache for Redis instance using Azure CLI. It's possible to do exactly the same configuration using the Azure portal. For this configuration, you'll need to set up three environment variables:
 
 - You need to create a resource group. To limit typing, set the variable `AZ_RESOURCE_GROUP` to the name of the resource group you want to create.
 - You also need to set the variable `AZ_LOCATION` to the name of the Azure data center you want to use. Default location is `eastus`, but you can choose a region closer to you for better performance (use `az account list-locations` to list all available regions).
