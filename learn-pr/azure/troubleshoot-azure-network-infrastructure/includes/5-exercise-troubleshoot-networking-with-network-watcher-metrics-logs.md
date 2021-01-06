@@ -12,7 +12,7 @@ NSG flow logging requires the *Microsoft.Insights* provider. to register for tha
 
 1. In the Azure portal, search for and select **Subscriptions**. When **Subscriptions** appears in the search results, select it.
 
-1. Select the your subscription. Then under **Settings**, select **Resource providers**.
+1. Select your subscription. Then under **Settings**, select **Resource providers**.
 
 1. In the search bar, enter **microsoft.insights**.
 

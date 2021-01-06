@@ -72,7 +72,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. In the **Publish** window, select **Azure**, and then select **Next**.
 
-    :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Public target window. The user has chosen the Azure option." loc-scope="vs":::
+    :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Publish target window. The user has chosen the Azure option." loc-scope="vs":::
 
 1. The **Publish** window reappears. In the **Subscription** dropdown, select **Concierge Subscription**. In the **View** dropdown, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
 

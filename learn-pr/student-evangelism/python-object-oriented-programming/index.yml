@@ -1,43 +1,43 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.python-object-oriented-programming
 metadata:
-  title: Object-oriented programming in Python
-  description: Learn more about object-oriented programming with this next-steps module in Python.
-  ms.date: 03/11/2020
-  author: shanamatthews
+  title: Introduction to object-oriented programming with Python
+  description: This module will teach you how to model problems by using object-oriented programming (OOP) concepts.
+  ms.date: 12/01/2020
+  author: softchris
   ms.author: shanama
   ms.topic: interactive-tutorial
-  ms.prod: learning-python
-title: Object-oriented programming in Python
-summary: Learn more about object-oriented programming with this next-steps module in Python.
-abstract:  | 
-  In this module, you will:
-  - Write classes in Python
-  - Add attributes to a class
-  - Add methods to a class
-  - Learn how to inherit classes
-  - Add methods and attributes to an inherited class
-  - Override methods inherited from a base class
-prerequisites:  |
-  A basic knowledge of programming and Python.
+  ms.prod: learning-azure
+title: Introduction to object-oriented programming with Python
+summary: This module will teach you how to model problems by using object-oriented programming (OOP) concepts. You'll also learn to turn your model into working code by using OOP concepts like classes, attributes, and methods.
+abstract: |
+  After completing this module, you'll be able to:
+  - Model problems by using OOP concepts.
+  - Describe the basic concepts involved in OOP.
+  - Distinguish classes from objects.
 iconUrl: /learn/achievements/student-evangelism/python-object-oriented-programming-badge.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
-- student
+  - developer
+  - student
 products:
-- azure
+  - vs
+prerequisites: |
+  - Basic knowledge of Python - syntax, writing and invoking functions, creating variables, reading inputs, and generating outputs from the Python console
+  - Familiarity with using a text editor or IDE  
+  - Knowledge on how to execute a Python program
+  - Python keywords
+  - Knowing how to raise exceptions in Python
 units:
-- learn.student-evangelism.python-object-oriented-programming.0-introduction
-- learn.student-evangelism.python-object-oriented-programming.1-oop
-- learn.student-evangelism.python-object-oriented-programming.2-exercise-classes
-- learn.student-evangelism.python-object-oriented-programming.3-attributes
-- learn.student-evangelism.python-object-oriented-programming.4-exercise-add-attributes
-- learn.student-evangelism.python-object-oriented-programming.5-methods
-- learn.student-evangelism.python-object-oriented-programming.6-exercise-add-methods
-- learn.student-evangelism.python-object-oriented-programming.7-exercise-inheritance
-- learn.student-evangelism.python-object-oriented-programming.8-summary
+  - learn.student-evangelism.python-object-oriented-programming.1-introduction
+  - learn.student-evangelism.python-object-oriented-programming.2-what-is-oop
+  - learn.student-evangelism.python-object-oriented-programming.3-model-your-game
+  - learn.student-evangelism.python-object-oriented-programming.4-exercise-model-your-game
+  - learn.student-evangelism.python-object-oriented-programming.5-game-transitions-with-methods
+  - learn.student-evangelism.python-object-oriented-programming.6-exercise-game-transitions-with-methods
+  - learn.student-evangelism.python-object-oriented-programming.7-exercise-extend-game
+  - learn.student-evangelism.python-object-oriented-programming.8-knowledge-check
+  - learn.student-evangelism.python-object-oriented-programming.9-summary
 badge:
   uid: learn.student-evangelism.python-object-oriented-programming.badge
-  

@@ -77,6 +77,7 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
     | Resource Group            | Select **Use existing** and then select **<rgn>Sandbox resource group</rgn>** |
     | OS                        | **Windows**                                                             |
     | Publish                   | **Code**                                                                |
+    | Runtime Stack             | **.Net Core 2.1 (LTS)**                                                  |
     | App Service plan/Location | Click **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** then select **Apply**.                                                        |
     | Application Insights      | See the steps that follow.                                                             |
 

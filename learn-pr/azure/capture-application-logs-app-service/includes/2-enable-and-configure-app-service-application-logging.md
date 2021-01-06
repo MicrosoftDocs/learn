@@ -8,7 +8,7 @@ App logging has scale limitations, primarily because ***files*** are being used 
 
 The types of logging available through the Azure App Service depends on the code framework of the app, and on whether the app is running on a Windows or Linux app host.
 
-### ASP.NET Windows apps
+### ASP.NET
 
 ASP.NET apps only run on Windows app services. To log information to the app diagnostics log, use the `System.Diagnostics.Trace` class. There are four trace levels you can use, and these correlate with `error`, `warning`, `information`, and `verbose` logging levels shown in the Azure portal.
 
