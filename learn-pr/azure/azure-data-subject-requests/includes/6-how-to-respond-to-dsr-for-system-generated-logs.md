@@ -65,7 +65,7 @@ In the event that Contoso were to have a global presence in one or more national
 
 ## Tools used for DSR for system-generated logs
 
-The following table lists tool that you can use for executing DSRs for system-generated logs in the Microsoft Cloud.
+The following table lists tools that you can use for executing DSRs for system-generated logs in the Microsoft Cloud.
 
 |Tool Name|Description|
 |------|------|
