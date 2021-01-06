@@ -40,7 +40,7 @@ Let's take a look at this function signature:
 - `(dividend: u32, divisor: u32)`: This function's parameter list. It states that two unsigned 32-bit integers are expected as input values.
 - `-> bool`: The arrow points to the type of value this function will always return.
 
-The `is_divisible_by` function accepts two integers as inputs and outputs a Boolean value.
+The `is_divisible_by` function accepts two integers as inputs and outputs a boolean value.
 
 Now let's look closer at this function's body:
 
@@ -52,7 +52,7 @@ if divisor == 0 {
 
 All this part of the function is trying to do is prevent a classic programming error, the division by zero error.
 
-We still haven't covered *conditional expressions* yet, but this snippet is simple. The `if` keyword checks if the value held by the `divisor` variable is zero. If it is, the code inside the following block is executed. If it isn't, the function will return the Boolean value `false` by using the keyword `return` followed by the value to be returned.
+We still haven't covered *conditional expressions* yet, but this snippet is simple. The `if` keyword checks if the value held by the `divisor` variable is zero. If it is, the code inside the following block is executed. If it isn't, the function will return the boolean value `false` by using the keyword `return` followed by the value to be returned.
 
 The last line in our function's body is an expression without the `return` keyword:
 

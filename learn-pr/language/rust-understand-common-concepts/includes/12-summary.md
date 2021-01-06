@@ -2,7 +2,7 @@ In this module, you learned:
 
 - How to declare variables, both mutable and immutable.
 - How Rust's type system works.
-- How to identify the primitive types in the Rust standard library.
+- How to differentiate between and use primitive types in the Rust standard library.
 - How to declare your own types with structs and enums.
 - How to write your own functions.
 - How to use the tuple, array, vector, and hash map collection types.

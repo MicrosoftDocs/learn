@@ -15,7 +15,7 @@ if 1 == 2 {
 ```
 
 In the preceding example, the condition of `if` is the expression `1 == 2`, which evaluates into a
-Boolean type with the value *false*.
+boolean type with the value *false*.
 
 Unlike in most languages, `if` blocks can also act as expressions. Remember that all branches must return the same type for our code to compile.
 
@@ -87,7 +87,7 @@ returns `()` *(an empty tuple)*.
 
 A `while` expression loops until a predicate is false.
 
-A `while` loop begins by evaluating the Boolean loop conditional expression. If the loop conditional expression evaluates to `true`, the loop body block executes. Control then returns to the loop conditional expression. If the loop conditional expression evaluates to `false`, the `while` expression completes.
+A `while` loop begins by evaluating the boolean loop conditional expression. If the loop conditional expression evaluates to `true`, the loop body block executes. Control then returns to the loop conditional expression. If the loop conditional expression evaluates to `false`, the `while` expression completes.
 
 The following code loops until the predicate evaluates to `true`:
 

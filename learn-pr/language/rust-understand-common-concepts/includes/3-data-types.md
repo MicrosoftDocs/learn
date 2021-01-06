@@ -35,7 +35,7 @@ You can interact with the preceding code in this [Rust Playground link](https://
 
 ## Rust built-in data types
 
-Rust comes with some built-in data types to express numbers, text, and truthfulness. We'll cover each
+Rust comes with some built-in data types to express numbers, text, and truthiness. We'll cover each
 one of them in the following subtopics.
 
 ## Numbers
@@ -44,11 +44,11 @@ Integers in Rust can be identified by bit size and the signed property. Signed i
 
 | Length  | Signed | Unsigned |
 |---------|:------:|:--------:|
-| 8 bit   | i8     | u8       |
-| 16 bit  | i16    | u16      |
-| 32 bit  | i32    | u32      |
-| 64 bit  | i64    | u64      |
-| 128 bit | i128   | u128     |
+| 8-bit   | i8     | u8       |
+| 16-bit  | i16    | u16      |
+| 32-bit  | i32    | u32      |
+| 64-bit  | i64    | u64      |
+| 128-bit | i128   | u128     |
 | arch    | isize  | usize    |
 
 Additionally, the `isize` and `usize` types depend on the kind of computer your program is running

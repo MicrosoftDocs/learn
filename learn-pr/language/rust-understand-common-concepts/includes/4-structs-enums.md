@@ -1,6 +1,6 @@
 A struct is a type that's composed of other types. Like tuples, the pieces of a struct can be different types, but you can name each piece of data so it's clear what the values mean.
 
-Structs in Rust come in three flavors. There are structs with named fields, tuple structs, and unit structs.
+Structs in Rust come in three flavors. There are classic structs, tuple structs, and unit structs.
 
 ```rust
 // A struct with named fields
@@ -17,8 +17,8 @@ struct Point2D(u32, u32);
 struct Unit;
 ```
 
-- **Structs with named fields** are the most commonly used. Each field defined within them has a name and a type. After they're defined, they can be accessed by using `example_struct.field` syntax.
-- **Tuple structs** are similar to regular structs, but their fields have no names. For accessing individual variables, the same syntax is used as with regular tuples, namely, `foo.0`, `foo.1`, and so on, starting at zero.
+- **Classic [C structs](https://en.wikipedia.org/wiki/Struct_(C_programming_language))** are the most commonly used. Each field defined within them has a name and a type. After they're defined, they can be accessed by using `example_struct.field` syntax.
+- **Tuple structs** are similar to classic structs, but their fields have no names. For accessing individual variables, the same syntax is used as with regular tuples, namely, `foo.0`, `foo.1`, and so on, starting at zero.
 - **Unit structs** are most commonly used as markers. They're useful when you need to implement a trait on something but don't need to store any data inside it.
 
 ## Instantiate structs
@@ -28,7 +28,7 @@ values for each of the fields.
 
 ```rust
 fn main() {
-    // Instantiate a regular struct, with named fields. Order does not matter.
+    // Instantiate a classic struct, with named fields. Order does not matter.
     let person = Person {
         name: String::from("Adam"),
         likes_oranges: true,
