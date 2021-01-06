@@ -42,7 +42,7 @@ The instructions here are specifically for Q# via the command line in VS Code, b
 We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \bmod 11$.
 To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a quantum register. 
 
-Fortunately, the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger) from the Artithmetic namespace of the Standard Library can be used to do just that. 
+Fortunately, the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger) from the `Microsoft.Quantum.Artithmetic` namespace of the Standard Library can be used to do just that. 
 It implements the map
 $$
 \ket{x}\ket{b} \mapsto \ket{x}\ket{(b + a \cdot x) \bmod N}
@@ -52,7 +52,7 @@ for a given modulus $N$ and constant integer multiplier $a$.
 To implement our map specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
 Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
-Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit scratch register ($\ket{b}$) and preparing it in the number state $\ket{9}$ (this can be done using [ApplyXorInPlace](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
+Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit scratch register ($\ket{b}$) and preparing it in the number state $\ket{9}$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
 $$
 \ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
 $$
@@ -107,13 +107,13 @@ The following code defines the operation `ApplyIsbnOracle`, where `flagQubit` is
     }
 ```
 
-As a part of the full Grover operation, this operation will be nested inside an operation which allocates the ancilla `flagQubit`. This is handled by the following `ReflectAboutCorrectDigit` operation. It takes only the data register as input, allocates `flagQubit` and puts it in the $\ket{-}$, and then provides both as arguments to `ApplyIsbnOracle`.
+As a part of the full Grover operation, this operation will be nested inside an operation which allocates the auxillary `flagQubit`. This is handled by the following `ReflectAboutCorrectDigit` operation. It takes only the data register as input, allocates `flagQubit` and puts it in the $\ket{-}$, and then provides both as arguments to `ApplyIsbnOracle`.
 
 ```qsharp
     operation ReflectAboutCorrectDigit(missingDigitReg : LittleEndian) : Unit is Adj + Ctl {
         using (flagQubit = Qubit()) {
             within {
-                // put flagQubit in |->
+                // put flagQubit in |−⟩
                 X(flagQubit);
                 H(flagQubit);
             } apply {
@@ -135,7 +135,7 @@ So, what exactly does that operation consist of?
 As mentioned above, we can take a register in $\ket{0}$, initialize it to the number state $\ket{9}$, and then perform the mapping using `MultiplyAndAddByModularInteger`.
 But instead of doing this directly to the target register, we make use of another scratch register, performing the work on it before transferring it's state to the target register and de-allocating it.
 
-The code to do this is shown below. After allocating the scratch register, it is initialized to $\ket{9}$ using `ApplyXorInPlace, and the mapping leaves it in the state $\ket{(9 + 6 \cdot x) \text{mod} 11}$. Then, it's state is transferred to the target register `targetReg` via the `CNOT` gates.
+The code to do this is shown below. After allocating the scratch register, it is initialized to $\ket{9}$ using `ApplyXorInPlace`, and the mapping leaves it in the state $\ket{(9 + 6 \cdot x) \text{mod} 11}$. Then, it's state is transferred to the target register `targetReg` via the `CNOT` gates.
 
 ```qsharp
     operation ComputeIsbnCheck(missingDigitReg : LittleEndian, targetReg : LittleEndian) : Unit is Adj + Ctl {
