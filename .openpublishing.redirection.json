@@ -4524,6 +4524,71 @@
       "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/8-summary.md",
       "redirect_url": "/learn/modules/python-object-oriented-programming/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/10-define-azure-cost-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/3-explore-factors-affecting-costs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/9-explore-minimizing-costs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/5-explore-pricing-calculator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/7-explore-total-cost-of-ownership-calculator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/4-identify-zones-for-billing-purposes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/2-purchase-azure-products-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/6-walkthrough-use-azure-pricing-calculator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/8-walkthrough-use-azure-tco-calculator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
     }
   ]
 }
