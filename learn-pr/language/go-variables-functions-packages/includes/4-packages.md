@@ -8,13 +8,13 @@ As you might have noticed, even the most straightforward program in Go has to be
 
 In other words, when you use the `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file with an .a extension).
 
-By convention, the package name is the same as the last element of the import path. For example, to import the `math/rand` package, you need to import it like so:
+By convention, the package name is the same as the last element of the import path. For example, to import the `math/rand` package, you need to import it like this:
 
 ```go
 import "math/rand"
 ```
 
-And to refer to objects in the package, you do it like so:
+And to refer to objects in the package, you do it like this:
 
 ```go
 rand.Int()
@@ -110,7 +110,7 @@ To reference this package in other programs, you need to import it by using the 
 
 Now let's use the package. We'll continue with the sample application we've been using. This time, instead of having the `sum` function in the `main` package, let's use the one we created earlier in the `calculator` package.
 
-The tree file structure now should look like so:
+The tree file structure now should look like this:
 
 ```output
 src/
@@ -135,7 +135,7 @@ func main() {
 }
 ```
 
-Notice that the import statement uses the name of the package you created: `calculator`. To call the `Sum` function from that package, you need to specify the package name like so: `calculator.Sum`. Finally, you now also have access to the `Version` variable. You call it like this: `calculator.Version`.
+Notice that the import statement uses the name of the package you created: `calculator`. To call the `Sum` function from that package, you need to specify the package name as `calculator.Sum`. Finally, you now also have access to the `Version` variable. You call it like this: `calculator.Version`.
 
 If you try to run the program now, it won't work. You need to inform Go that you're using modules to reference other packages. To do so, run this command in the `$GOPATH/src/helloworld` directory:
 
@@ -143,7 +143,7 @@ If you try to run the program now, it won't work. You need to inform Go that you
 go mod init helloworld
 ```
 
-In the above command, `helloworld` is the name of the project. This command creates a new `go.mod` file, so now the tree directory looks like so:
+In the above command, `helloworld` is the name of the project. This command creates a new `go.mod` file, so now the tree directory looks like this:
 
 ```output
 src/
@@ -163,7 +163,7 @@ module helloworld
 go 1.14
 ```
 
-Because you're referencing a local copy of the module, you need to inform Go that you don't want to use a remote location. So you need to manually modify the `go.mod` file to include the reference, like so:
+Because you're referencing a local copy of the module, you need to inform Go that you don't want to use a remote location. So you need to manually modify the `go.mod` file to include the reference, like this:
 
 ```output
 module helloworld
@@ -217,14 +217,14 @@ For example, if you want to publish your `calculator` package to your GitHub acc
 https://github.com/myuser/calculator
 ```
 
-You'll version your packages by tagging your repository, like so:
+You'll version your packages by tagging your repository, like this:
 
 ```output
 git tag v0.1.0
 git push origin v0.1.0
 ```
 
-Developers who want to use your package (including you) would reference it like so:
+Developers who want to use your package (including you) would reference it like this:
 
 ```output
 import "github.com/myuser/calculator"
@@ -254,7 +254,7 @@ func main() {
 }
 ```
 
-If you're using Visual Studio Code, the `go.mod` file is updated when you save the file. It now looks like so:
+If you're using Visual Studio Code, the `go.mod` file is updated when you save the file. It now looks like this:
 
 ```output
 module helloworld
@@ -277,7 +277,7 @@ Run the program again by using this command:
 go run main.go
 ```
 
-The output should look like so:
+The output should look like this:
 
 ```output
 8
