@@ -13,7 +13,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- A Go environment that's ready to create applications.
-- [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
-- The ability to create and modify `.go` files.
-- The ability to run Go applications by using the terminal.
+- A Go environment that's ready to create applications
+- [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed
+- The ability to create and modify `.go` files
+- The ability to run Go applications by using the terminal
