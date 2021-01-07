@@ -1,10 +1,10 @@
 ## Excersize of Azure Database for MySQL
 
-`Azure Database for MySQL` is a Relational Database Service in the Microsoft Azure. Since now, We will create and deploy a Sample Java Web Applications which communicate with the MySQL DB.
+In this section, you will create an `Azure Database for MySQL` using custom shell script.
 
 ## Get Sample Application and script
 
-First, please get the sample application and script from the GitHub repository.
+First, please get the sample application and shell script from the GitHub repository.
 
 ```bash
 git clone https://*****
@@ -62,7 +62,7 @@ az login
 
 ## Create an Instance of Azure Database for MySQL
 
-We will create an instance of `Azure  Database for MySQL Flexsible Server`. In order to create the MySQL DB intance, You can execute the Bash script as `setup_mysql.sh` in the direcotry. 
+In order to create the MySQL DB intance, You can execute the Bash Shell Script as `setup_mysql.sh` in the direcotry. 
  
 Please execute the following command.
 
@@ -98,6 +98,32 @@ Then you can see following result. The following information is important and we
 > [!NOTE]
 > Please execute the above command on IPv4 environment, if your environment has IPv6 address, this command will fail because firewall configuration of azure cli command doesn't support the IPv6 address now.
 
+
+## Get an Example Database from MySQL Official Site
+
+In this module, you will use a Sample World DataBase from official site of MySQL.
+You can get the original data from following URL.
+`https://downloads.mysql.com/docs/world.sql.zip`
+
+In order to get the Sample Database, please execute following command.
+
+```bash
+curl -o world.sql.zip https://downloads.mysql.com/docs/world.sql.zip
+```
+
+After donwload the file, please un-archive the file as follows.
+
+```bash
+unzip world.sql.zip
+```
+
+Then you will get the SQL file.
+
+```bash
+ls -l world.sql
+-rw-r--r--  1 ******  wheel  398635  1  7 12:25 world.sql
+```
+
 ## Login to the MySQL DB
 
 After you created the MySQL DB, you can access to the MySQL DB using `mysql` client command.  
@@ -122,12 +148,6 @@ mysql>
 ```
 
 ## Create a Database and Tables for Application
-
-In this time, we will use a Sample World DataBase from official site of MySQL.
-You can get the original data from following URL.
-`https://downloads.mysql.com/docs/world.sql.zip`
-
-In this project, We already got and unarchive the data. So you can see the `world.sql` file in your project.  
 
 Please execute the following mysql  command.
 
