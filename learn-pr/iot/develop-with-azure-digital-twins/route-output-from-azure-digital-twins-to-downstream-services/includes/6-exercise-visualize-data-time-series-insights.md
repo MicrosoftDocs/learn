@@ -37,7 +37,7 @@ Data should be flowing into your Time Series Insights instance now, ready to be 
 
 1. Next, you'll address the scenario that was presented earlier to *Visualize Vibration events in the past ~2 minutes and check if there are unusual spikes or dips to ensure the process meets manufacturing quality standards*. In the Time Series Insights explorer page, you'll see one twin from Azure Digital Twins shown on the left. Select **GrindingStep**, then select **Vibration**, and finally, select **Add**.
 
-    :::image type="content" source="../media/add-grindingStep-vibration-visualization.png" alt-text="Screenshot showing how to visualize vibration events in Azure Time Series Insights based on data ingested from the Digital Twin":::
+    :::image type="content" source="../media/add-grinding-step-vibration-visualization.png" alt-text="Screenshot showing how to visualize vibration events in Azure Time Series Insights based on data ingested from the Digital Twin":::
 
 You should now be seeing the Vibration readings from a device named "GrindingStep:"
 
