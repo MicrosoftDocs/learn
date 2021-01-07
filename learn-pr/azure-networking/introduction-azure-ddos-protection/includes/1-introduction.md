@@ -38,6 +38,4 @@ To get the best learning experience from this module, you should have:
 
   - the zero-trust security model,
   - Botnets,
-  - role-based access controls.
-<!-- Add "RBAC" after "Role-Based Access Control". Unfortunately, a lot of people know the acronym "RBAC", what RBAC does, but they might not necessarily know what it stands for. -->
-
+  - role-based access controls (RBAC)
