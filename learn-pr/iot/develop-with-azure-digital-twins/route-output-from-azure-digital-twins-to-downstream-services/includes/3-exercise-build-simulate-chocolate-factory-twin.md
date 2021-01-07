@@ -53,7 +53,7 @@ This step is required to re-provision the resources created in [Module 3: Ingest
 
 Additionally, you have provisioned the IoT Hub and an Azure function that is connected and configured to ingest telemetry from the IoT Hub.
 
-## Create a device and Send data from a simulated local client
+## Create a device and send data from a simulated local client
 
 1. In Azure portal, go to the resource group you created for these exercises. Select your IoT Hub and navigate to IoT devices.
 
@@ -105,7 +105,7 @@ Additionally, you have provisioned the IoT Hub and an Azure function that is con
     az dt twin show -n $dtname --twin-id GrindingStep
     ```
 
-## Challenge: simulate Fanning/Roasting and Molding devices
+## Challenge: Simulate fanning, roasting and molding devices
 
 The Sensor.js script can be edited to send data as other devices. The Azure Function has logic that evaluates the device type specified in the payload. Change the value stored in the deviceType and deviceConnection string to send as Fanning and Molding sensors.
 

@@ -10,7 +10,7 @@ Also, you may need to gather historical data that can be used for postmortem roo
 
 **The main chocolate manufacturing processes in scope: roasting, grinding, and molding.**
 
-## Solution Architecture
+## Solution architecture
 
 To visualize and query data, you'll attach Time Series Insights to Azure Digital Twins using the pattern illustrated in the following diagram:
 
