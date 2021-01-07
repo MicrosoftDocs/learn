@@ -14,7 +14,7 @@ content: |
   Answer the following questions to demonstrate what you've learned:
 quiz:
   questions:
-  - content: "Which of the following attempts will NOT cause a Rust program to panic?"
+  - content: "Which of the following attempts will *not* cause a Rust program to panic?"
     choices:
     - content: "Accessing an out-of-bounds index of a vector with `vector[index]` notation."
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Accessing a non-existent key of a hash map with `HashMap[key]` notation."
       isCorrect: false
       explanation: "Incorrect. Directly accessing a hash map value through index notation might cause a panic if the key does not exist in the hash map."
-  - content: "How can you represent the possibility of absence of a value of a given type `T` in Rust?"
+  - content: "How can you represent the possibility of absence of a value of a given type, `T`, in Rust?"
     choices:
     - content: "The `Option<T>` type."
       isCorrect: true
@@ -42,7 +42,7 @@ quiz:
     - content: "An empty tuple: `()`."
       isCorrect: false
       explanation: "Incorrect. The empty tuple doesn't represent anything."
-  - content: "How can you represent the possibility of input/output (I/O) failure when you're obtaining a value of a given type `T`?"
+  - content: "How can you represent the possibility of input/output (I/O) failure when you're obtaining a value of a given type, `T`?"
     choices:
     - content: "The `Option<T>` type."
       isCorrect: false
