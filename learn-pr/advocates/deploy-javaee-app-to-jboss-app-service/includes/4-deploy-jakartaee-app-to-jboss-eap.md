@@ -25,7 +25,7 @@ This module uses the sample application that exists on GitHub, but the deploymen
 
 ###  Configure the Project for deploying by using Azure App Service Maven Plugin
 
-Microsoft provides 'Azure App Service Maven Plugin' to deploy Java Web Applications to Azure App Service. By using this plug-in, you can easily configure settings to configure instances of App Service.
+Microsoft provides `Azure App Service Maven Plugin` to deploy Java Web Applications to Azure App Service. By using this plug-in, you can easily configure settings to configure instances of App Service.
 
 You can configure the following items by using the Maven Plugin.
 
@@ -36,21 +36,21 @@ You can configure the following items by using the Maven Plugin.
 |  AppName  |  Application Instance Name for Web Container |
 |  Pricing Tier  |  VM Selection to Run |
 |  Region  |  Regions to Deploy |
-|  Runtime OS | Operating System to Run |
-|  Runtime Java Version | JVM Version for Web Container up and running |
-|  Runtime Web Container | Web Container |
+|  Runtime OS | Operating System to Run [Linux]|
+|  Runtime Java Version | JVM Version for Web Container up and running [Java 8]|
+|  Runtime Web Container | Web Container [JBoss EAP 7]|
 
-In this module, You will deploy an application to the JBoss EAP environment. So please select 'Java 8' for the Java version and 'Jbosseap 7.2' for Web Container for Runtime.
+In this module, You will deploy an application to the JBoss EAP environment. So please select `Java 8` for the Java version and `Jbosseap 7.2` for Web Container for Runtime.
 
 ###  Compile & Create Java Package for Deploy
 
-After you configure 'Azure App Service Maven Plugin', please execute 'mvn package' command. Then it compile the Java source code and create a Java package as (.war) to deploy to JBoss EAP.   
+After you configure `Azure App Service Maven Plugin`, please execute `mvn package` command. Then it compile the Java source code and create a Java package as (.war) to deploy to JBoss EAP.   
 If you want to see them work in your local environment before deploying to Azure, you can use an artifacts under the 'target' directory to deploy to your local JBoss EAP environment to verify their behavior.
 
 ###  Deploy Java EE App to JBoss EAP 
 
-After you create an artifact, You can execute the 'deploy' command of 'Azure App Service Maven Plugin' to deploy the application to JBoss EAP.  The deployment command creates a Resource Group and an Instance of JBoss EAP based on the plug-in settings above. 
-It does everything from creating instances to deploying Java Web applications with only one 'deploy' command.
+After you create an artifact, You can execute the `deploy` command of `Azure App Service Maven Plugin` to deploy the application to JBoss EAP.  The deployment command creates a Resource Group and an Instance of JBoss EAP based on the plug-in settings above. 
+It does everything from creating instances to deploying Java Web applications with only one `deploy` command.
 
 ###  Configure DB Connection from JBoss EAP
 
@@ -59,7 +59,7 @@ Now You had been deployed the Java EE application. But if you access to the Web 
 In order to connect to the Database from JBoss EAP, You need configure a `Datasource`.
 A `Datasource` is a component used to connect to a Database. Through the DataSource, an Application can persist or query the data. A DataSource can configure for any Database by using JDBC Drivers.  
 
-You will configure the `DataSource` to connect to the 'Azure Database for MySQL' created in the previous section.
+You will configure the `DataSource` to connect to the `Azure Database for MySQL` created in the previous section.
 
 ###  Access to the Application
 
