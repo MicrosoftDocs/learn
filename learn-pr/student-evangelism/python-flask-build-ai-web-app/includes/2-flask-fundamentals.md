@@ -1,182 +1,50 @@
-Every Flask application begins with a file named **app.py** that Flask automatically looks for when an application starts. The following **app.py** file implements the simplest possible website: a single page that displays "Hello, world" to the user.
+Flask is an open-source web "micro-framework". When the creators use the term "micro-framework", they mean that the framework will perform the required tasks of a web framework, but that it doesn't include advanced features, or other specific requirements that your application must follow to work correctly. This approach allows Flask to be extremely flexible, and perfect for use as a front end to existing back ends or APIs - like Cognitive Services!
 
-```python
-from flask import Flask
+When creating a web application with any framework, there are a couple of core concepts we need to understand - routing, methods, and templating. Let's explore these concepts before we write our code.
 
-app = Flask(__name__)
+## Responding to user requests with routes
 
-@app.route("/")
-def index():
-    return "<h1>Hello, world</h1>"
-```
+When a user uses a web application, they indicate what they want to do, or the information they're seeking, by browsing to different uniform resource locators (or URLs). They might type out an address directly (say `https://adventure-works.com`), or select a link, or a button that includes the appropriate URL. On an e-commerce site you might have URLs that look like the following:
 
-The first statement imports a class named `Flask` from the `flask` package installed with pip. The second statement instantiates that class to create a Flask app and assigns it to the variable named `app`.
+- `https://adventure-works.com/` for the main page
+- `https://adventure-works.com/products/widget` for details on a Widget
+- `https://adventure-works.com/cart/buy` to complete a purchase
 
-The fourth and fifth statements define a method that's called when the user requests the site's home page, such as https:\//www\.contoso\.com/. The preceding statement, `@app.route("/")`, is a *decorator* that maps the route ("/") to the method. The method name is unimportant, but `index` is commonly used as the name for the method that renders the site's home page.
+As a developer, we actually don't need to worry about the first part of the URL, or the domain (**adventure-works.com** in our example). Our application is put into action based on whatever comes after the domain name, starting with the **/**. The portion after the domain name is what's known as a **route**.
 
-If you want to use a name other than **app.py** for the Python file, identify the file to run with a `FLASK_APP` environment variable. Flask will run the app that you specify rather than running **app.py**.
+A **route** is a path to an action. Similar to tapping on a button in a mobile app, a route indicates the action the user wants to perform. We'll register different routes in our web application to respond to the various requests our application supports.
 
-## Routing in Flask
+In our application, we indicate how we want to respond to a particular route request by providing a function. A route is a map to a function. When we think about writing code in general, this concept is relatively natural. When we want to perform a particular action, we call a function. Our users will do the exact same thing! They'll just do it a little differently, by accessing a route.
 
-Suppose your website contains several pages rather than just one. You can use `@app.route()` to map all the routes that the site supports to methods that render the corresponding pages:
+## Methods or verbs
 
-```python
-from flask import Flask
+Routes can be accessed in many ways, through what are known as methods or verbs (the two terms mean the same thing and can be used interchangeably). How the route is accessed provides additional context about the state of the user request and what action the user wants to perform.
 
-app = Flask(__name__)
+There are many methods available when creating a web application, but the two most common (and the only two we'll focus on) are **GET** and **POST**. **GET** typically indicates that the user is requesting information, while **POST** indicates that the user needs to send us something **and** receive a response.
 
-# Define a route for the app's home page
-@app.route("/")
-def index():
-    return "<h1>This is the home page</h1>"
+> [!NOTE]
+> Regardless of the verb used, information can **always** be returned to the user.
 
-# Define a route for the app's About page
-@app.route("/about")
-def about():
-    return "<h1>This is the About page</h1>"
+A common application flow that uses **GET** and **POST** revolves around using a form. Let's say we create an application where the user wants to register for a mailing list:
 
-# Define a route for the app's Contact Us page
-@app.route("/contact")
-def contact():
-    return "<h1>This is the Contact Us page</h1>"
-```
+1. The user accesses the sign-up form via **GET**
+1. The user completes the form and selects the submit button
+1. The information from the form is sent back to the server by using **POST**
+1. A "success" message is returned to the user
 
-If the app is hosted at https\:\//www\.contoso\.com, it now supports the following URLs:
+As you might suspect, the user doesn't directly indicate the verb they want to use, it is controlled by the application. Generally speaking, if the user navigates to a URL directly, by typing it in or by selecting a link, they access the page by using **GET**. When they select a button for a form, they typically send the information via **POST**.
 
-- https\:\//www\.contoso\.com\/
-- https\:\//www\.contoso\.com\/about
-- https\:\//www\.contoso\.com\/contact
+> [!NOTE]
+> We're keeping this conversation relatively high level, because a full discussion of methods is beyond the scope of this module.
 
-You can continue to add routes and methods until all the pages that your site supports are accessible by URL. Once more, the method names are unimportant. It's the routes that count.
+## Templates
 
-## HTML templates
+Hypertext Markup Language, or HTML, is the language used to structure the information displayed on a browser, while Cascading Style Sheets, or CSS, is used to manage the style and layout. When creating an application, most of the HTML will be static, meaning it won't change. However, to make our pages dynamic we need to be able to programmatically put information into an HTML page. Nearly every web framework supports this requirement through templates.
 
-You typically don't want to include inline HTML in the methods that render your site's pages. Instead, define those pages in HTML files.
-
-Flask contains a method named `render_template()` that looks for HTML files in a subdirectory named **templates** and renders the files to the page. The following example produces the same output as the previous example. It assumes that the directory in which **app.py** is located has a subdirectory named **templates**. The subdirectory contains HTML files named **index.html**, **about.html**, and **contact.html**.
-
-```python
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-# Define a route for the app's home page
-@app.route("/")
-def index():
-    return render_template("index.html")
-
-# Define a route for the app's About page
-@app.route("/about")
-def about():
-    return render_template("about.html")
-
-# Define a route for the app's Contact Us page
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
-```
-
-Why is the method named `render_template()`? In fact, the method can do more than simply load static HTML files. It also allows you to pass in user-defined variables and inject these values into the page at runtime. As an example, you could place a file named **master.html** in the **templates** subdirectory and include the following markup in the HTML file:
+A template allows you to write the core HTML (or a template) and indicate placeholders for the dynamic information. Probably the most common syntax for placeholders is `{{ }}`. Jinja, the templating engine for Flask, uses this syntax.
 
 ```html
-<h1>{{ message }}</h1>
+<h1>Welcome, {{ name }}</h1>
 ```
 
-You could then write **app.py** this way:
-
-```python
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-# Define a route for the app's home page
-@app.route("/")
-def index():
-    return render_template("master.html", message="This is the home page")
-
-# Define a route for the app's About page
-@app.route("/about")
-def about():
-    return render_template("master.html", message="This is the About page")
-
-# Define a route for the app's Contact Us page
-@app.route("/contact")
-def contact():
-    return render_template("master.html", message="This is the Contact Us page")
-```
-
-In effect, **master.html** becomes a template for output. You customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template by using `{{ ... }}` expressions. For more information about how to use templates in Flask, see [Templates](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/?azure-portal=true).
-
-## Control-of-flow expressions
-
-Expressions delimited by `{{` and `}}` aren't the only special ones that Flask supports. It also supports control-of-flow statements enclosed in `{%` and `%}`. For example, the following HTML template displays a default message on a page if the `message` variable isn't defined:
-
-```html
-{% if message %}
-    <h1>{{ message }}</h1>
-{% else %}
-    <h1>No message specified</h1>
-{% endif %}
-```
-
-Expressions such as these can even be used to conditionally run JavaScript code:
-
-```html
-{% if message %}
-    <h1>{{ message }}</h1>
-{% else %}
-    <script type="text/javascript">
-        window.alert("No message specified");
-    </script>
-{% endif %}
-```
-
-Control-of-flow statements are frequently used in conjunction with the Flask `flash()` function to display error messages. Let's say you come across an error condition in **app.py** and want to display a message to the user in a JavaScript alert box. The following example shows the code for the **app.py** file. There's a statement to initialize the app's `secret_key` property with a random number, which is required for flashing messages.
-
-```python
-import os
-from flask import Flask, render_template, flash
-
-app = Flask(__name__)
-app.secret_key = os.urandom(1)
-
-# Define a route for the app's home page
-@app.route("/")
-def index():
-    flash("This is an error message")
-    return render_template("index.html", message="This is the home page")
-```
-
-And here's the code for the **index.html** file:
-
-```html
-{% with messages = get_flashed_messages() %}
-    {% if messages %}
-        <script type="text/javascript">
-            window.alert("{{ messages[0] }}");
-        </script>
-    {% endif %}
-{% endwith %}
-```
-
-This example assumes that just one error message was flashed, but you can call `flash()` multiple times to queue several messages and enumerate them with a `{% for message in messages %}` statement. For more information about how to use message flashing in Flask, see [Message Flashing](https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/?azure-portal=true).
-
-## Static files
-
-Most websites contain images, style sheets, and other static files that don't change as the application runs. Flask looks for these files in a special subdirectory named **static**.
-
-Let's say your site includes a style sheet named **main.css** and a banner named **banner.jpg**. You can store these files in the **static** subdirectory and reference them with HTML:
-
-```html
-<link rel="stylesheet" href="/static/main.css">
-<img src="/static/banner.jpg">
-```
-
-You can also use the Flask `url_for()` function to resolve these URLs:
-
-```html
-<link rel="stylesheet" href="url_for('static', filename='main.css')">
-<img src="url_for('static', filename='banner.jpg')">
-```
-
-A benefit of using `url_for()` is that the resulting URLs are absolute. The absolute URLs help to sidestep issues that can arise when browsers handle relative URLs in inconsistent ways.
+In the preceding example, we have our HTML of `h1` (a header), with the text we want to display. The `{{ name }}` indicates that we want to display a variable named `name` right after **Welcome**. By using this syntax we can write our HTML with our existing skills, and inject the dynamic information as needed.

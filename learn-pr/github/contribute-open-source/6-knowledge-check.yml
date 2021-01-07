@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.github.contribute-opensource.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/13/2020
+  author: sinedied
+  ms.author: yolasors
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+quiz:
+  title: Contribute to an open-source project using GitHub
+  questions:
+    - content: What is the best place on a GitHub repository to find where you can help a project?
+      choices:
+        - content: The README file
+          isCorrect: false
+          explanation: "The README provides information on how to use the project."
+        - content: The issues list
+          isCorrect: true
+          explanation: "Existing issues with the project are listed here. They're also labeled according to help needed."
+        - content: The search bar
+          isCorrect: false
+          explanation: "The search bar allows you to find repositories and topics in GitHub."
+        - content: The LICENSE file
+          isCorrect: false
+          explanation: "The LICENSE file describes how you can use, redistribute, and modify the project."
+    - content: What is the preferred way to ask for help or reviews on a pull request?
+      choices:
+        - content: Send a negative or disrespectful comment to the project's maintainers via social media.
+          isCorrect: false
+          explanation: "Always be courteous when you communicate with maintainers, and keep in mind that most open-source projects are run on their free time."
+        - content: Create an issue
+          isCorrect: false
+          explanation: "Issues are useful to open up a discussion about a new subject or raise a bug, but you already have a place for doing that with your pull request."
+        - content: Add comment in the pull request
+          isCorrect: true
+          explanation: "You can either directly request a review or add a comment to your pull request to discuss anything about it."
+        - content: Send an email to a random committer on the project
+          isCorrect: false
+          explanation: "Contacting maintainers via their private inbox isn't an effective means of discussing an open-source project. Always use the public communication channels indicated by the project."
+    - content: What is needed before you can create a pull request on GitHub?
+      choices:
+        - content: Send a patch file to maintainers via email
+          isCorrect: false
+          explanation: "Sending contributions via email is not an effective way to contribute to open-source projects. Use the provided tools on GitHub."
+        - content: Clone a repo, commit changes, and force push
+          isCorrect: false
+          explanation: "While you can clone any public GitHub repository, by default you don't have the right to push any modifications. Fork the repository to create your own copy first."
+        - content: Get accepted as a team member
+          isCorrect: false
+          explanation: "You don't need to be part of the project's team to propose a pull request."
+        - content: Fork a repo, clone it, commit changes, and push to your fork
+          isCorrect: true
+          explanation: "While you can clone any public GitHub repository, by default you don't have the right to push any modifications. Fork the repository to create your own copy first."

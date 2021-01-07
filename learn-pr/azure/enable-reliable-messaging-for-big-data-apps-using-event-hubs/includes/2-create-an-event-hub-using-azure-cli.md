@@ -52,7 +52,6 @@ An Event Hubs namespace is a containing entity for managing one or more Event Hu
 
     Keep the following aspects in mind:
     
-    - You can't change the throughput unit after you set it.
     - You must balance your configuration against your Azure budget expectations.
     - You might consider configuring different Event Hubs for different throughput requirements. For example, if you have a sales data app and you're planning for two Event Hubs, it would make sense to use a separate namespace for each hub.  
     

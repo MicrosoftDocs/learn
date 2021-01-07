@@ -37,7 +37,7 @@ Let's take a closer look at the most commonly used categories:
 
 ### Compute
 
-Compute services are often one of the primary reasons why companies move to the Azure platform. Azure provides a range of options for hosting applications and services. Here are some examples of compute services in Azure:
+Compute services are often one of the primary reasons why companies move to the Azure platform. Azure provides a range of options for hosting applications and services. Here are some examples of computing services in Azure:
 
 > [!div class="mx-tableFixed"]
 > | Service name | Service function |
@@ -111,14 +111,14 @@ Azure provides multiple database services to store a wide variety of data types 
 > | Service name | Service function |
 > |--------------|------------------|
 > | Azure Cosmos DB            | Globally distributed database that supports NoSQL options                                       |
-> | Azure SQL Database         | Fully managed relational database with auto-scale, integral intelligence, and robust security    |
->| Azure Database for MySQL   | Fully managed and scalable MySQL relational database with high availability and security        |
->| Azure Database for PostgreSQL   | Fully managed and scalable PostgreSQL relational database with high availability and security   |
+> | Azure SQL Database         | Fully-managed relational database with auto-scale, integral intelligence, and robust security    |
+>| Azure Database for MySQL   | Fully-managed and scalable MySQL relational database with high availability and security        |
+>| Azure Database for PostgreSQL   | Fully-managed and scalable PostgreSQL relational database with high availability and security   |
 > | SQL Server on VMs  | Host enterprise SQL Server apps in the cloud     |
-> | Azure Synapse Analytics | Fully managed data warehouse with integral security at every level of scale at no extra cost    |
+> | Azure Synapse Analytics | Fully-managed data warehouse with integral security at every level of scale at no extra cost    |
 > | Azure Database Migration Service    | Migrates your databases to the cloud with no application code changes                  |
 > | Azure Cache for Redis      | Caches frequently used and static data to reduce data and application latency                   |
-> | Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security        |
+> | Azure Database for MariaDB | Fully-managed and scalable MariaDB relational database with high availability and security        |
 
 ### Web
 
@@ -130,15 +130,15 @@ Having a great web experience is critical in today's business world. Azure inclu
 > | Azure App Service | Quickly create powerful cloud web-based apps |
 > | Azure Notification Hubs |Send push notifications to any platform from any back end. |
 > | Azure API Management | Publish APIs to developers, partners, and employees securely and at scale. |
-> | Azure Cognitive Search | Fully managed search as a service. |
+> | Azure Cognitive Search | Fully-managed search as a service. |
 > | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale. |
 > | Azure SignalR Service | Add real-time web functionalities easily. |
 
 ### Internet of Things
 
-People are able to access more information than ever before. It began with personal digital assistants (PDAs), then morphed into smartphones. Now there are smart watches, smart thermostats, even smart refrigerators. Personal computers used to be the norm. Now the internet allows any item that's online-capable to access valuable information. This ability for devices to garner and then relay information for data analysis is referred to as the Internet of Things (IoT).
+People can access more information than ever before. It began with personal digital assistants (PDAs), then morphed into smartphones. Now there are smartwatches, smart thermostats, even smart refrigerators. Personal computers used to be the norm. Now the internet allows any item that's online-capable to access valuable information. This ability for devices to garner and then relay information for data analysis is referred to as the Internet of Things (IoT).
 
-There are a number of services that can assist and drive end-to-end solutions for IoT on Azure.
+Several services can assist and drive end-to-end solutions for IoT on Azure.
 
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
@@ -158,7 +158,7 @@ Open source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure Synapse Analytics | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
+> | Azure Databricks | Collaborative Apache Spark-based analytics service that can be integrated with other Big Data services in Azure. |
 
 ### Artificial Intelligence
 
@@ -172,22 +172,22 @@ Some of the most common Artificial Intelligence and Machine Learning service typ
 > | Service Name | Description |
 > |--------------|-------------|
 > | Azure Machine Learning Service | Cloud-based environment you can use to develop, train, test, deploy, manage, and track machine learning models. It can auto-generate a model and auto-tune it for you. It will let you start training on your local machine, and then scale out to the cloud |
-> | Azure Machine Learning Studio | Collaborative, drag-and-drop visual workspace where you can build, test, and deploy machine learning solutions using pre-built machine learning algorithms and data-handling modules |
+> | Azure Machine Learning Studio | Collaborative, a drag-and-drop visual workspace where you can build, test, and deploy machine learning solutions using pre-built machine learning algorithms and data-handling modules |
 
-A closely related set of products are the _cognitive services_. These are pre-built APIs you can leverage in your applications to solve complex problems.
+A closely related set of products are _cognitive services_. These are pre-built APIs you can leverage in your applications to solve complex problems.
 
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
 > |--------------|-------------|
 > | Vision | Image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos. |
 > | Speech | Convert spoken audio into text, use voice for verification, or add speaker recognition to your app. |
-> | Knowledge mapping | Map complex information and data in order to solve tasks such as intelligent recommendations and semantic search. |
+> | Knowledge mapping | Map complex information and data to solve tasks such as intelligent recommendations and semantic search. |
 > | Bing Search | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call. |
-> | Natural Language processing | Allow your apps to process natural language with pre-built scripts, evaluate sentiment and learn how to recognize what users want. |
+> | Natural Language processing | Allow your apps to process natural language with pre-built scripts, evaluate sentiment, and learn how to recognize what users want. |
 
 ### DevOps
 
-DevOps (Development and Operations) brings together people, processes, and technology, automating software delivery to provide continuous value to your users. Azure DevOps Services allows you to create _build_ and _release_ pipelines that provide continuous integration, delivery, and deployment for your applications. You can integrate repositories and application tests, perform application monitoring, and work with build artifacts. You can also work with and backlog items for tracking, automate infrastructure deployment and integrate a range of third-party tools and services such as Jenkins and Chef. All of these functions and many more are closely integrated with Azure to allow for consistent, repeatable deployments for your applications to provide streamlined build and release processes.
+DevOps (Development and Operations) brings together people, processes, and technology, automating software delivery to provide continuous value to your users. Azure DevOps Services allows you to create _build_ and _release_ pipelines that provide continuous integration, delivery, and deployment for your applications. You can integrate repositories and application tests, perform application monitoring, and work with build artifacts. You can also work with and backlog items for tracking, automate infrastructure deployment, and integrate a range of third-party tools and services such as Jenkins and Chef. All of these functions and many more are closely integrated with Azure to allow for consistent, repeatable deployments for your applications to provide streamlined build and release processes.
 
 Some of the main DevOps services available with Azure are Azure DevOps Services and Azure DevTest Labs.
 

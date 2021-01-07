@@ -10,7 +10,7 @@ A database account is a container for multiple Azure Cosmos DB databases.
     export COSMOS_NAME=cosmos$RANDOM
     ```
 
-1. Create an Azure Cosmos DB account by using the following command:
+1. Create an Azure Cosmos DB account using the following command.
 
     ```azurecli
     az cosmosdb create \
@@ -18,9 +18,15 @@ A database account is a container for multiple Azure Cosmos DB databases.
         --name $COSMOS_NAME
     ```
 
-The database account can take 4 to 5 minutes to provision. Keep reading while the account is being created.
+The database account can take 10 minutes to provision. You can continue reading this unit while the account is being created.
 
 ## Azure Cosmos DB concepts
+
+Azure Cosmos DB concepts consist of:
+
+- Resources
+- Partitioning
+- Indexing
 
 ### Resources
 
@@ -38,7 +44,7 @@ An effective partitioning strategy distributes data and access evenly across par
 
 You choose how to partition your data at design time. The partitioning configuration can't be changed after a collection is provisioned.
 
-We examine partitioning concepts and examples in detail in units 4 and 5.
+We examine partitioning concepts and examples in detail in subsequent units.
 
 ### Indexing
 
@@ -46,7 +52,7 @@ An index is a catalog of document properties and their values. It includes links
 
 Unlike partitioning, you can change indexing at runtime.
 
-We look at indexing in units 6 and 7.
+We look at indexing in subsequent units.
 
 ## Set environment variables for endpoint and keys
 
@@ -126,7 +132,7 @@ We look at indexing in units 6 and 7.
 
 ## Populate your collections
 
-We'll use an open-source C# console application to populate your collections. This application generates random order documents and inserts them into your collections. We'll also use this application in later units to query the collections.
+We'll use an open-source C# console application to populate your collections. This application generates random order documents and inserts them into your collections. We'll also use this application in subsequent units to query the collections.
 
 1. Clone the console application repository from GitHub. Run the following command in the sandbox environment.
 

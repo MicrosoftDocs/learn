@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.train-local-model-with-azure-mls.script-parameters
-title: Using script parameters
+title: Use script parameters
 metadata:
-  title: Using script parameters
-  description: "Learn how to use script parameters to create flexible training experiments"
-  ms.date: 07/16/2020
+  title: Use script parameters
+  description: "Use script parameters"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
