@@ -66,40 +66,7 @@ The following table lists the groups in CRS 3.1. This table should give you a se
 |REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION     |Detects application exploits that use session-fixation attacks         |
 |REQUEST-944-APPLICATION-ATTACK-SESSION-JAVA     |Detects application exploits that use JAVA attacks         |
 
-Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the following table lists the specific rules in the REQUEST-942-APPLICATION-ATTACK-SQLI rule group of CRS 3.1. This rule group detects and prevents various SQL injections exploits.
-
-|Rule ID     |Detects   |
-|---------|---------|
-|942100     |SQL injection attack: detection comes via libinjection, an open-source SQL injection detection library         |
-|942110     |SQL injection attack: common injection         |
-|942130     |SQL injection attack: SQL tautology         |
-|942140     |SQL injection attack: Common database names         |
-|942150     |SQL injection attack         |
-|942160     |Blind SQLi tests using sleep() or benchmark()         |
-|942170     |SQL benchmark and sleep injection attempts including conditional queries         |
-|942190     |MSSQL code execution and information gathering attempts         |
-|942200     |MySQL comment-/space-obfuscated injections and backtick termination         |
-|942230     |Conditional SQL injection attempts         |
-|942260     |Basic SQL authentication bypass attempts 2/3         |
-|942251     |HAVING injections         |
-|942270     |Basic SQL injection: Common attack string for mysql oracle and others         |
-|942290     |Basic MongoDB SQL injection attempts         |
-|942300     |MySQL comments, conditions, and chr/char injections         |
-|942310     |Chained SQL injection attempts 2/2         |
-|942320     |MySQL and PostgreSQL stored procedure/function injections         |
-|942330     |Classic SQL injection probings 1/2         |
-|942340     |Basic SQL authentication bypass attempts 3/3         |
-|942350     |MySQL UDF injection and other data/structure manipulation attempts         |
-|942360     |Concatenated basic SQL injection and SQLLFI (SQL local file inclusion) attempts         |
-|942370     |Classic SQL injection probings 2/2         |
-|942410     |SQL injection attack         |
-|942430     |Restricted SQL character anomaly (args): number of special characters exceeded (12)         |
-|942440     |SQL comment sequence         |
-|942450     |SQL hex encoding         |
-|942460     |Meta-character anomaly-repetitive non-word characters         |
-
-The rules in the preceding table are examples of the managed rules that are created, maintained, and updated by Microsoft.
-Don't worry if the descriptions of these rules seem obscure. The point is to show the depth of protection offered by Azure Web Application Firewall.
+Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the REQUEST-942-APPLICATION-ATTACK-SQLI rule group of CRS 3.1 contains more than two dozens rules that enable Azure Web Application Firewall to detect and prevent various SQL injection exploits. Each of those rules are managed rules that are created, maintained, and updated by Microsoft.
 
 ## Custom rules
 
@@ -136,7 +103,9 @@ You deploy Azure Web Application Firewall as part of an Azure front-end solution
 - Any custom rules you want to add
 - Which mode you want to use
 
-For deployment, you have two choices:
+For deployment, you can use either of the services listed in the following table.
 
-- Azure Front Door. When you create your Azure Web Application Firewall policy, you associate it with an existing Azure Front Door profile.
-- Azure Application Gateway. You configure your application gateway to use Azure Web Application Firewall. You can choose a Web Application Firewall tier when you create your application gateway. Alternatively, you can upgrade an existing application gateway to use a Web Application Firewall tier. You then associate your Web Application Firewall policy with your application gateway.
+|Service  |Description  |
+|---------|---------|
+|Azure Front Door  |When you create your Azure Web Application Firewall policy, you associate it with an existing Azure Front Door profile.|
+|Azure Application Gateway |You configure your application gateway to use Azure Web Application Firewall. You can choose a Web Application Firewall tier when you create your application gateway. Alternatively, you can upgrade an existing application gateway to use a Web Application Firewall tier. You then associate your Web Application Firewall policy with your application gateway.|
