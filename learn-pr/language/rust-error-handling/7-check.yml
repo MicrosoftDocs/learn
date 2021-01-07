@@ -14,45 +14,45 @@ content: |
   Answer the following questions to demonstrate what you've learned:
 quiz:
   questions:
-  - content: "Which of the following attempts will NOT cause a Rust program to panic?"
+  - content: "Which of the following attempts will *not* cause a Rust program to panic?"
     choices:
-    - content: "Access an out-of-bounds index of a Vector with `vector[index]` notation."
+    - content: "Accessing an out-of-bounds index of a vector with `vector[index]` notation."
       isCorrect: false
-      explanation: "Directly accessing a vector element through index notation will cause a panic if the index is out of bounds"
-    - content: "Access an out-of-bounds index of a Vector with `vector.get(index)` notation."
+      explanation: "Incorrect. Directly accessing a vector element through index notation will cause a panic if the index is out of bounds."
+    - content: "Accessing an out-of-bounds index of a vector with `vector.get(index)` notation."
       isCorrect: true
       explanation: "Correct. Using the `Vector.get` method will return an `Option` type and will never panic."
-    - content: "Access an out-of-bounds index of an Array with `array[index]` notation."
+    - content: "Accessing an out-of-bounds index of an array with `array[index]` notation."
       isCorrect: false
-      explanation: "Directly accessing an array element through index notation will cause a panic if the index is out of bounds."
-    - content: "Access a non-existing key of a HashMap with `hashmap[key]` notation."
+      explanation: "Incorrect. Directly accessing an array element through index notation will cause a panic if the index is out of bounds."
+    - content: "Accessing a non-existent key of a hash map with `HashMap[key]` notation."
       isCorrect: false
-      explanation: "Directly accessing a hashmap value through index notation might cause a panic if the key does not exist in the hashmap."
-  - content: "How can we represent the possibility of absence of a value of a given type `T` in Rust?"
+      explanation: "Incorrect. Directly accessing a hash map value through index notation might cause a panic if the key does not exist in the hash map."
+  - content: "How can you represent the possibility of absence of a value of a given type, `T`, in Rust?"
     choices:
     - content: "The `Option<T>` type."
       isCorrect: true
-      explanation: "Correct. The `Option::None` variant can express the absence of a value, while the `Option::Some(value)` can represent its presence."
+      explanation: "Correct. The `Option::None` variant can express the absence of a value, and the `Option::Some(value)` can represent its presence."
     - content: "The `Result<T, bool>` type."
       isCorrect: false
-      explanation: "The `Result` type is used to express *failure*, not *absence*."
+      explanation: "Incorrect. The `Result` type is used to express *failure*, not *absence*."
     - content: "A `false` value of the `bool` type."
       isCorrect: false
-      explanation: "The `bool` type represents the truth about something, nut not absence of value."
+      explanation: "Incorrect. The `bool` type represents the truth about something, not the absence of a value."
     - content: "An empty tuple: `()`."
       isCorrect: false
-      explanation: "The empty tuple doesn't represent anything."
-  - content: "How can we represent the possibility of I/O failure when obtaining a value of a given type `T`?"
+      explanation: "Incorrect. The empty tuple doesn't represent anything."
+  - content: "How can you represent the possibility of input/output (I/O) failure when you're obtaining a value of a given type, `T`?"
     choices:
     - content: "The `Option<T>` type."
       isCorrect: false
-      explanation: "The `Option` type couldn't represent the cause of failure in a unsuccessful I/O operation."
+      explanation: "Incorrect. The `Option` type couldn't represent the cause of failure in an unsuccessful I/O operation."
     - content: "The `Result<T, io::Error>` type."
       isCorrect: true
-      explanation: "Correct. The `Result` type is used to represent failure, while the `io::Err` type represents all the possible outcomes of a failed I/O operation."
+      explanation: "Correct. The `Result` type is used to represent failure, and the `io::Err` type represents all the possible outcomes of a failed I/O operation."
     - content: "An empty `Vec<T>`."
       isCorrect: false
-      explanation: "An empty vector doesn't convey meaning about a failed I/O operation."
+      explanation: "Incorrect. An empty vector doesn't convey meaning about a failed I/O operation."
     - content: "An empty tuple: `()`."
       isCorrect: false
-      explanation: "An empty tuple doesn't convey meaning about a failed I/O operation."
+      explanation: "Incorrect. An empty tuple doesn't convey meaning about a failed I/O operation."

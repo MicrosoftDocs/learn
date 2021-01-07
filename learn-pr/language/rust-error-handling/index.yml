@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.language.rust-error-handling
 metadata:
-  title: Deal with errors in Rust
-  description: Discover ways to deal with errors in Rust.
+  title: Handle errors in Rust
+  description: In this module, you'll learn about ways to handle errors in Rust.
   ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deal with errors in Rust
-summary: Discover ways to deal with errors in Rust. 
+title: Handle errors in Rust
+summary: In this module, you'll learn about ways to handle errors in Rust. 
 abstract:  |
-  In this module, you will learn how to:
+  In this module, you'll learn how to:
   - Use `panic!` to deal with unrecoverable errors.
-  - Use the `Option` enum when a value is optional or when the lack of a value is not an error condition.
+  - Use the `Option` enum when a value is optional or the lack of a value is not an error condition.
   - Use the `Result` enum when things could go wrong and a caller might have to deal with the problem.
 prerequisites: | 
   - A Rust development environment 
-  - Know how to create, edit, and run Rust code by using Cargo
+  - Familiarity with creating, editing, and executing Rust code by using Cargo
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner

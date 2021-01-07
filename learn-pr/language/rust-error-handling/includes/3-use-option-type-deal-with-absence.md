@@ -1,6 +1,6 @@
-Rust standard library provides the `Option<T>` enum to be used when the absence of a value is a possibility. It is widely used in Rust code because it encodes the very common scenario in which a value could be something or it could be nothing.
+The Rust standard library provides an `Option<T>` enum to be used when the absence of a value is a possibility. `Option<T>` is widely used in Rust code because it encodes the very common scenario in which a value could be something or it could be nothing.
 
-It manifests itself as one of two "options":
+`Option<T>` manifests itself as one of two "options":
 
 ```rust
 enum Option<T> {
@@ -9,17 +9,11 @@ enum Option<T> {
 }
 ```
 
-The `<T>` part in the `Option<T>` enum declaration states that the type `T` is generic, and will be
-associated with the `Some` variant of the `Option` enum.
+The `<T>` part of the `Option<T>` enum declaration states that the type `T` is generic and will be associated with the `Some` variant of the `Option` enum.
 
-In the previous unit, we mentioned that a trying to access a Vector's non-existing index would cause
-our program to `panic`, but we could avoid that by using the `Vec::get` method, that returns us an
-`Option` type instead of panicking. If the value exists at the given index, it is wrapped in the
-`Option::Some(value)` variant. If the index is out of bounds, it would return a `Option::None` value
-instead.
+In the preceding unit, we mentioned that trying to access a vector's non-existent index would cause the program to `panic`, but you could avoid that by using the `Vec::get` method, which returns an `Option` type instead of panicking. If the value exists at a specified index, it's wrapped in the `Option::Some(value)` variant. If the index is out of bounds, it would return a `Option::None` value instead.
 
-Let's give it a try. You can run the code below either locally or via this
-[Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=14dcb7b524b0448c946b85ef9b28908c?azure-portal=true).
+Let's give it a try. You can run the following code below locally or on the [Rust playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=14dcb7b524b0448c946b85ef9b28908c?azure-portal=true).
 
 ```rust
 let fruits = vec!["banana", "apple", "coconut", "orange", "strawberry"];
@@ -37,7 +31,7 @@ let non_existent = fruits.get(99);
 println!("{:?}", non_existent);
 ```
 
-The output will be:
+The output shows:
 
 ```output
 Some("banana")
@@ -45,13 +39,13 @@ Some("coconut")
 None
 ```
 
-The printed messages tells us that the first two attempts at accessing existing indexes in our `fruits` array resulted in `Some("banana")` and `Some("coconut")`, but our attempt of fetching the 99th element returned a `None` value *(which isn't associated with any data)* instead of panicking.
+The printed message says that the first two attempts at accessing the existing indexes in the `fruits` array resulted in `Some("banana")` and `Some("coconut")`, but the attempt to fetch the 99th element returned a `None` value (which isn't associated with any data) instead of panicking.
 
-In practice, we must decide how our program behaves depending on what variant of a enum it gets. But how can we access the data inside a `Some(data)` variant?
+In practice, you must decide how your program behaves depending on what enum variant it gets. But how can we access the data inside a `Some(data)` variant?
 
-## Pattern Matching
+## Pattern matching
 
-Rust has an extremely powerful control flow operator called `match` that allows you to compare a value against a series of patterns and then execute code based on which pattern matches.
+Rust has an extremely powerful control flow operator called `match`, which you can use to compare a value against a series of patterns and then execute code based on which pattern matches.
 
 ```rust
 let fruits = vec!["banana", "apple", "coconut", "orange", "strawberry"];
@@ -63,10 +57,9 @@ for &index in [0, 2, 99].iter() {
 }
 ```
 
-You can try running this example in the
-[Rust Playground](https://play.rust-lang.org/?version=nightly&mode=debug&edition=2018&gist=bf5526cc6a1b8d02f90b790e5ae2844d?azure-portal=true).
+You can try running this example on the [Rust playground](https://play.rust-lang.org/?version=nightly&mode=debug&edition=2018&gist=bf5526cc6a1b8d02f90b790e5ae2844d?azure-portal=true).
 
-The output will be:
+The output shows:
 
 ```output
     It's a delicious banana!
@@ -74,11 +67,11 @@ The output will be:
     There is no fruit! :(
 ```
 
-In the code above, we iterate through the same indexes from our previous example (0, 2 and 99) and use each one to retrieve a value from the `fruits` vector using the `fruits.get(*index)` expression.
+In the preceding code, we iterate through the same indexes from our previous example (0, 2, and 99) and then use each one to retrieve a value from the `fruits` vector by using the *fruits.get(index)* expression.
 
-Since our `fruits` vector contains `&str` elements, we know that the result of this expression is of type `Option<&str>`. We then use a `match` expression against the `Option` value and define a course of action for each of its variants. Rust refers to those branches as "match arms", and each arm can handle one possible outcome for the matched value.
+Because  the `fruits` vector contains `&str` elements, we know that the result of this expression is of type `Option<&str>`. You then use a *match* expression against the `Option` value and define a course of action for each of its variants. Rust refers to those branches as *match arms*, and each arm can handle one possible outcome for the matched value.
 
-We can even refine our `match` expression even further to also act differently depending on the values inside a `Some` variant . Suppose we wan't to stress the fact that coconuts are awesome:
+You can refine your *match* expression even further to act differently, depending on the values inside a `Some` variant. For example, you could stress the fact that coconuts are awesome by running the following:
 
 ```rust
 let fruits = vec!["banana", "apple", "coconut", "orange", "strawberry"];
@@ -91,10 +84,9 @@ for &index in [0, 2, 99].iter() {
 }
 ```
 
-You can try running this example in the
-[Rust Playground](https://play.rust-lang.org/?version=nightly&mode=debug&edition=2018&gist=bf5526cc6a1b8d02f90b790e5ae2844d?azure-portal=true).
+You can try running this example on the [Rust playground](https://play.rust-lang.org/?version=nightly&mode=debug&edition=2018&gist=bf5526cc6a1b8d02f90b790e5ae2844d?azure-portal=true).
 
-The output will be:
+The output shows:
 
 ```output
     It's a delicious banana!
@@ -102,19 +94,18 @@ The output will be:
     There is no fruit! :(
 ```
 
-Notice that when the string value is `"coconut"` the first arm will be matched and then used to
-determine the flow of execution.
+Note that when the string value is `"coconut"`, the first arm is matched and then used to determine the flow of execution.
 
-Whenever you use the `match` expression, keep the following rules in mind:
+Whenever you use the *match* expression, keep the following rules in mind:
 
-1. match arms are evaluated top-to-bottom, so specific cases must be defined earlier than generic cases, or they will never be matched and evaluated!
-2. match arms must cover every possible value of the input type could possibly have. You'll get a compiler error if you try to match against a non-exhaustive pattern list.
+* `match` arms are evaluated from top to bottom. Specific cases must be defined earlier than generic cases or they'l never be matched and evaluated.
+* `match` arms must cover every possible value that the input type could have. You'll get a compiler error if you try to match against a non-exhaustive pattern list.
 
-## The `if let` expression
+## The *if let* expression
 
-Rust offers a convenient way to test if a a value conforms with a single pattern.
+Rust offers a convenient way to test whether a value conforms with a single pattern.
 
-Consider the example below that matches on an `Option<u8>` value but only wants to execute code if the value is **7**.
+Consider the following example, which matches on an `Option<u8>` value but wants to execute code only if the value is *7*.
 
 ```rust
 let some_number: Option<u8> = Some(7);
@@ -124,9 +115,9 @@ match some_number {
 }
 ```
 
-We want to do something with the `Some(7)` match but ignore other `Some<u8>` values or the `None` variant. The underscore `_` wildcard pattern can be added after all other patterns to match "anything else", and it is used to satisfy the compiler demands for exhausting match arms.
+We want to do something with the `Some(7)` match but ignore other `Some<u8>` values or the `None` variant. You can add the `_` (underscore) wildcard pattern after all other patterns to match *anything else*, and it's used to satisfy the compiler demands for exhausting match arms.
 
-We could write this in a shorter way using `if let`. The following code behaves the same as the previous one:
+You could write this in a shorter way by using an *if let* expression. The following code behaves the same as the previous one:
 
 ```rust
 if let Some(7) = some_u8_value {
@@ -134,12 +125,11 @@ if let Some(7) = some_u8_value {
 }
 ```
 
-A `if let` expression takes a pattern and an expression separated by an equal sign. If the pattern matches, the `if` block is executed. The nice thing about `if let` expressions is that you don't need all the boilerplate code of a `match` expression for when you're interested in a single pattern
-to match against.
+An *if let* expression takes a pattern and an expression separated by an equal sign. If the pattern matches, the *if* block is executed. The nice thing about *if let* expressions is that you don't need all the boilerplate code of a *match* expression when you're interested in a single pattern to match against.
 
-## Using `unwrap` and `expect`
+## Use `unwrap` and `expect`
 
-You can try to access the inner value of an `Option` type directly using the `unrwap` method, but be careful as this method will panic if the variant is a `None`.
+You can try to access the inner value of an `Option` type directly by using the `unwrap` method. Be careful, though, because this method will panic if the variant is a `None`.
 
 For instance:
 
@@ -151,21 +141,22 @@ let empty_gift: Option<&str> = None;
 assert_eq!(empty_gift.unwrap(), "candy"); // This will panic!
 ```
 
-In the case above, the code would panic with the following output:
+In this case, the code would panic with the following output:
 
 ```output
     thread 'main' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:6:27
 ```
 
-Because this function may panic, its use is generally discouraged. Instead, prefer to use pattern matching and handle the `None` case explicitly, or call similar non-panicking methods, such as `unwrap_or`, which returns a default value if the variant is `None` or the inner value if the variant is `Some(value)` :
+Because this function might panic, we don't recommend using it. Instead, consider either of the following approaches:
+* Use pattern matching and handle the `None` case explicitly.
+* Call similar non-panicking methods, such as `unwrap_or`, which returns a default value if the variant is `None` or the inner value if the variant is `Some(value)`.
 
 ```rust
 assert_eq!(Some("dog").unwrap_or("cat"), "dog");
 assert_eq!(None.unwrap_or("cat"), "cat");
 ```
 
-The `expect` method does the same as `unrwap` but provides a custom panic message provided by its
-second argument.
+The `expect` method does the same as `unwrap`, but it provides a custom panic message that's provided by its second argument:
 
 ```rust
 let a = Some("value");
@@ -175,7 +166,7 @@ let b: Option<&str> = None;
 b.expect("fruits are healthy"); // panics with `fruits are healthy`
 ```
 
-The output will show:
+The output shows:
 
 ```output
     thread 'main' panicked at 'fruits are healthy', src/main.rs:6:7
