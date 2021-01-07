@@ -4,13 +4,13 @@ Imagine you're an infrastructure manager and have been asked to provision resour
 
 ![Build, Deploy and Provision Pipelines.](../media/1-pipelines.png)
 
-Typically there are three steps to deliver application resources:
+As an Infrastructure Manager, you aim to achieve automation of both infrastructure and application build/deploy using three pipelines:
 
-1. Provision the Account – Provision an Azure subscription.
+1. Account – Azure subscriptions, resource groups, vnets, subnets, express route circuits…
 
-1. Provision the Infrastructure - Provision a database and Azure App Service.
+1. Infrastructure - Databases and Azure App Service instances.
 
-1. Provision the Application – Build and deploy the application and configure it.
+1. Application – Build and deploy your applications and configure them.
 
 For step 1, you'll use a personal Azure account.
 For step 2, you'll use Terraform and GitHub Actions to provision the Azure infrastructure.
