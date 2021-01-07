@@ -8,7 +8,7 @@ DevOps requires a fundamental mindset change from the top down. Organizations ca
 
 In this module, we'll focus only on the Microsoft tools that can help accomplish some of the DevOps objectives.  Alternately, organizations that aren't ready to fully embrace the power of DevOps can support technical teams in their cloud development activities.  If you're interested in learning more about DevOps in general, Microsoft Learn has [several learning paths and modules](https://docs.microsoft.com/learn/browse/?terms=DevOps&azure-portal=true) that can help you.
 
-Microsoft offers tools to enable source-code management, continuous integration and continuous delivery (CI/CD), and automating the creation of testing environments.  Sometimes it seems as though these tools overlap in functionality, so in this module you'll learn about several product options and when to choose one product over another.
+Microsoft offers tools to enable source-code management, continuous integration and continuous delivery (CI/CD), and automating the creation of testing environments.  Sometimes, it seems as though these tools overlap in functionality, so in this module you'll learn about several product options, and when to choose one product over another.
 
 ## Product options
 

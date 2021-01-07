@@ -24,18 +24,28 @@ After you have installed the three previously listed items, follow these steps t
 > Make sure you are using the conda environment that you set up earlier.
 
 Your environment should look like this: 
- 
-![Local Visual Studio Code environment example.](../media/vscode-sample-return.png)
+
+:::image type="content" source="../media/vscode-sample-return.png" alt-text="Screenshot that shows an example of a local Visual Studio Code environment.":::
 
 ## Collect and import data
 
 The data that you'll explore during this module is a file full of all the samples collected from the six Apollo missions that landed on the Moon. The [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file was created using information from the [Lunar Sample and Photo Catalog](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true). 
 
-Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file and save it to your data folder. Your Visual Studio Code environment should look like this:
+Download the [*rocksamples.csv*](https://aka.ms/LearnWithDrG/OverTheMoon/Data2?azure-portal=true) file and save it to your data folder.
 
-![Local environment folder structure with data.](../media/vscode-data.png)
+> [!TIP]
+> To download a CSV file in GitHub:
+> 1. In the list of files in the GitHub repository, select the file.
+> 1. In the upper-right corner, select **Raw**. The file opens as a raw CSV file in your browser.
+> 1. Right-click anywhere in the browser window, and then select **Save as**.
+> 1. In the **File save as** dialog box, you can choose the file name (*rocksamples*), the file type (*CSV*), and where to download the file to (your project data folder).
+>
 
-In the first Python cell in your *sample-return.ipynb* file, import pandas and read the data file in it as a dataframe:
+After you download the CSV file and save it to your data folder, your Visual Studio Code environment should look like this:
+
+:::image type="content" source="../media/vscode-data.png" alt-text="Screenshot that shows an example of a local environment folder structure with data.":::
+
+In the first Python cell in your *sample-return.ipynb* file, import pandas and read the data file in it as a pandas DataFrame:
 
 ```python
 import pandas as pd 
@@ -43,13 +53,13 @@ import pandas as pd
 rock_samples = pd.read_csv('data/rocksamples.csv') 
 ```
 
-To make sure that everything is loaded in correctly, print the top five lines of the new dataframe by using `head()` and the information summary by using `info()`:
+To make sure that everything is loaded in correctly, print the top five lines of the new DataFrame by using `head()` and the information summary by using `info()`:
 
 ```python
 rock_samples.head()
 ```
 
-|   | ID | Mission | Type | Subtype | Weight(g) | Pristine(%) |
+|   | ID | Mission | Type | Subtype | Weight (g) | Pristine (%) |
 |---|---|---|---|---|---|---|
 | 0 | 10001 | Apollo11 | Soil | Unsieved | 125.8 | 88.36 |
 | 1 | 10002 | Apollo11 | Soil | Unsieved | 5629.0 | 93.73 |
@@ -80,5 +90,5 @@ From this output, we can see that 2,229 samples were collected from the Apollo m
 - *Mission* - The mission responsible for retrieving the sample.
 - *Type* - The type of sample (type of rock or other classification).
 - *Subtype* - A more specific type classification.
-- *Weight(g)* - The original weight of the sample, in grams.
-- *Pristine(%)* - The percentage of the sample that remains (some sample is used up during research).
+- *Weight (g)* - The original weight of the sample, in grams.
+- *Pristine (%)* - The percentage of the sample that remains (some sample is used up during research).
