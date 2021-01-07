@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-javaee-app-to-appservice.6-admin-jboss-eap
-title: Exercise - Deploy Java EE (Jakarta EE) App to JBoss EAP on Azure App Service
+title: Access the JBoss EAP admin tool and application logs
 metadata:
-  title: Exercise - Deploy Java EE (Jakarta EE) App to JBoss EAP on Azure App Service
-  description: Deploy your Java EE (Jakarta EE) Application to JBoss EAP on Azure App Service.
+  title: Access the JBoss EAP admin tool and application logs
+  description: In this section, You will lean the overview of access the JBoss EAP admin tool and application logs
   author: yoshioterada
   ms.author: yoterada
   ms.date: 11/25/2020

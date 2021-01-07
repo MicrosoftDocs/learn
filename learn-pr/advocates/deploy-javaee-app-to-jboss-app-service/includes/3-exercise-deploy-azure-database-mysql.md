@@ -1,7 +1,3 @@
-## Excersize of Azure Database for MySQL
-
-In this section, you will create an `Azure Database for MySQL` using custom shell script.
-
 ## Get Sample Application and script
 
 First, please get the sample application and shell script from the GitHub repository.

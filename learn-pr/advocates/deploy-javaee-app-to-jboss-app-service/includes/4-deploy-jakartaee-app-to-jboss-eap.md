@@ -1,5 +1,3 @@
-You created a MySQL database in the previous section, this section you will learn the overview how to create a Java application that connects to MySQL and deploy it to `JBoss EAP on Azure App Service`.
-
 ## Deployment Procedure
 
 The deployment procedure is as follows.
