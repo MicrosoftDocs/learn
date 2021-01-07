@@ -2,8 +2,6 @@ Imagine you're an infrastructure manager and have been asked to provision resour
 
 ### Provisioning pipelines
 
-![Build, Deploy and Provision Pipelines.](../media/1-pipelines.png)
-
 As an Infrastructure Manager, you aim to achieve automation of both infrastructure and application build/deploy using three pipelines - Account, Infrastructure and Application:
 
 1. Account – Azure subscriptions, resource groups, vnets, subnets, express route circuits…
