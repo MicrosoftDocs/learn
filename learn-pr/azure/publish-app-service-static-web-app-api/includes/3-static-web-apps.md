@@ -72,7 +72,7 @@ Azure Static Web Apps supports custom routing rules defined in an optional _rout
 
 ## Route file location
 
-Azure Static Web Apps expects your _routes.json_ file to be in the `app_artifact_location` by default. If your build process copies your _routes.json_ file to the `app_artifact_location`, then there is nothing else you need to do.
+Azure Static Web Apps expects your _routes.json_ file to be in the `output_location` by default. If your build process copies your _routes.json_ file to the `output_location`, then there is nothing else you need to do.
 
 ::: zone pivot="angular"
 
