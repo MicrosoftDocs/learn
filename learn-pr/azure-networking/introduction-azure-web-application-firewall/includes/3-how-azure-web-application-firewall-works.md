@@ -66,7 +66,7 @@ The following table lists the groups in CRS 3.1. This table should give you a se
 |REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION     |Detects application exploits that use session-fixation attacks         |
 |REQUEST-944-APPLICATION-ATTACK-SESSION-JAVA     |Detects application exploits that use JAVA attacks         |
 
-Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the REQUEST-942-APPLICATION-ATTACK-SQLI rule group of CRS 3.1 contains more than two dozens rules that enable Azure Web Application Firewall to detect and prevent various SQL injection exploits. Each of those rules are managed rules that are created, maintained, and updated by Microsoft.
+Each group is a collection of rules designed to detect and thwart a specific exploit. For example, the REQUEST-942-APPLICATION-ATTACK-SQLI rule group of CRS 3.1 contains more than two dozen rules that enable Azure Web Application Firewall to detect and prevent various SQL injection exploits. Each of those rules are managed rules that are created, maintained, and updated by Microsoft.
 
 ## Custom rules
 
