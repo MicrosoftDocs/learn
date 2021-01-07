@@ -1,4 +1,8 @@
 In this unit, you'll configure GitHub actions to provision your Terraform resources.
+You'll provision an Azure app Service instance and a MySQL for Azure database.
+Once your infrastructure is ready, you'll use GitHub Actions to deploy a Spring Boot sample application.
+
+# Part 1 - provision the Infrastructure
 
 ## Fork the sample application
 
@@ -80,7 +84,7 @@ This file is a GitHub workflow and will use the secret we configured above to de
 
 In that file, you'll see the following content:
 
-```yaml
+```yml
 name: CI
 
 on:
@@ -135,9 +139,9 @@ Then, select the "Terraform" workflow. Notice how the "Terraform Init", "Terrafo
 Expand the "Terraform Apply" step. Terraform has created the resources and displayed the Azure Instance URL.
 Verify your Azure App Instance is publicly available.
 
-## Use the Deployment Center to deploy the sample action using CI/CD and GitHub Actions
+# Part 2 - Deploy the sample application
 
-The App Service Deployment Center will automatically generate a workflow file based on your application stack and commit it to your GitHub repository in the correct directory.
+The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory.
 
 1. Navigate to your webapp in the Azure portal
 1. On the left side, select **Deployment Center**
@@ -150,7 +154,7 @@ This configuration will commit the workflow file to the repository, and immediat
 
 Your Workflow file will be created similar to the below (You'll have a different app name and publishing profile).
 
-```java
+```yml
 name: Build and deploy JAR app to Azure Web App - spring-petclinic-app
 
 on:
