@@ -143,16 +143,12 @@ Verify your Azure App Instance is publicly available.
 
 The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory.
 
-1. Navigate to your webapp in the Azure portal
-1. On the left side, select **Deployment Center**
-1. Under **Continuous Deployment (CI / CD)**, select **GitHub**
-1. Next, select **GitHub Actions**
-1. Use the dropdowns to select your GitHub repository, branch, and application stack **Java** and version **Java 8**.
-1. On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. If the selections are correct, select **Finish**
-
-This configuration will commit the workflow file to the repository, and immediately start to build and deploy your app.
-
-Your Workflow file will be created similar to the below (You'll have a different app name and publishing profile).
+- Navigate to your webapp in the Azure portal
+- On the left side, select **Deployment Center**
+- Under **Continuous Deployment (CI / CD)**, select **GitHub**
+- Next, select **GitHub Actions**
+- Use the dropdowns to select your GitHub repository, branch, and **JAVA 8** as the application stack
+- On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. Your Workflow file will be created similar to the below (You'll have a different app name and publishing profile).
 
 ```yml
 name: Build and deploy JAR app to Azure Web App - spring-petclinic-app
@@ -185,6 +181,9 @@ jobs:
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
         package: '${{ github.workspace }}/target/*.jar'
 ```
+
+- If the Workflow is correct, select **Finish**
+- This configuration will commit the workflow file to the repository, and immediately start to build and deploy your app.
 
 ## Next steps
 
