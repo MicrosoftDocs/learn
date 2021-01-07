@@ -27,13 +27,13 @@ To use the DMA to migrate the database, follow these steps:
 1. In the **Restore options** section, change the **Data** path for **Restore as on target server** to:
 
     ```cmd
-    C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\AWMigrate2017.mdf
+    C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\AWMigrate2019.mdf
     ```
 
 1. Change the **Log** path for **Restore as on target server** to:
 
     ```cmd
-    C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\AWMigrate2017_log.LDF
+    C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\AWMigrate2019_log.LDF
     ```
 
 1. Select **Next**, on the **Select logins** tab, ensure no logins are selected, and then select **Start Migration**.
@@ -56,7 +56,7 @@ Before you make the upgrade, find out the original compatibility level for the d
 
 1. Select **Start**, type **`SSMS`**, and then press Enter.
 1. In the **Connect to Server** dialog box, select **Connect**.
-1. In Object Explorer, expand **Databases**. You should now see the migrated **AWMigrate2017** database. Right-click **AWMigrate2017**, and then select **Properties**.
+1. In Object Explorer, expand **Databases**. You should now see the migrated **AWMigrate2019** database. Right-click **AWMigrate2019**, and then select **Properties**.
 1. In the **Database Properties - AWMigrate2019** window, under **Select a page**, select **Options**.
 1. The **Compatibility level** should be set to **SQL Server 2008 (100)**, and then select **Cancel**.
 
@@ -64,12 +64,12 @@ Before you make the upgrade, find out the original compatibility level for the d
 
 Now you can upgrade the compatibility level for the Adventure Works database:
 
-1. In Object Explorer, right-click **AWMigrate2017**, and then select **New Query**.
+1. In Object Explorer, right-click **AWMigrate2019**, and then select **New Query**.
 1. In the query window, type the following code, and then select **Execute**:
 
     ```sql
-    ALTER DATABASE AWMigrate2017
-    SET COMPATIBILITY_LEVEL = 140
+    ALTER DATABASE AWMigrate2019
+    SET COMPATIBILITY_LEVEL = 150
     ```
 
 1. In Object Explorer, right-click **AWMigrate2019**, and then select **Properties**.
