@@ -3,7 +3,7 @@ uid: learn.wwl.perform-windows-server-secure-administration
 metadata:
   title: Perform Windows Server secure administration
   description: "Perform Windows Server secure administration"
-  ms.date: 11/25/2020
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -33,10 +33,10 @@ products:
 - windows-server
 units:
 - learn.wwl.perform-windows-server-secure-administration.introduction
-- learn.wwl.perform-windows-server-secure-administration.what-is-least-privilege-administration
+- learn.wwl.perform-windows-server-secure-administration.define-least-privilege-administration
 - learn.wwl.perform-windows-server-secure-administration.implement-delegated-privileges
-- learn.wwl.perform-windows-server-secure-administration.how-can-i-use-privileged-access-workstations
-- learn.wwl.perform-windows-server-secure-administration.how-can-i-use-jump-servers
+- learn.wwl.perform-windows-server-secure-administration.use-privileged-access-workstations
+- learn.wwl.perform-windows-server-secure-administration.use-jump-servers
 - learn.wwl.perform-windows-server-secure-administration.knowledge-check
 - learn.wwl.perform-windows-server-secure-administration.summary
 badge:
