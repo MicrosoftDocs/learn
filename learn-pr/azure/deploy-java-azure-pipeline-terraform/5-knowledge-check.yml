@@ -37,7 +37,7 @@ quiz:
     - content: Plain Text Passwords
       isCorrect: false
       explanation: "A Password is an insecure mechanism."
-  - content: "Which of the following options isn't a valid GitHub Actions Type?"
+  - content: "Which of the following options isn't a valid GitHub Action Type?"
     choices:
     - content: "JavaScript"
       isCorrect: false
