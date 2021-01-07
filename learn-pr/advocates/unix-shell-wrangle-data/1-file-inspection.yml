@@ -8,7 +8,7 @@ metadata:
   ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Perform file inspection in the UNIX Shell
+title: Perform file inspection in the UNIX shell
 durationInMinutes: 4
 content: |
   [!include[](includes/1-file-inspection.md)]

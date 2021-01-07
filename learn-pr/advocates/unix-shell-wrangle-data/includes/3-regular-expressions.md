@@ -20,7 +20,7 @@ INPUT: ZSH
 MATCH: false
 ```
 
-If you completed the previous module, you should now have a sample of the open dataset `NASA-software-API.txt`. We'll use this dataset to do some pattern matching with regex in Visual Studio Code.
+If you completed the previous unit, you should now have a sample of the open dataset `NASA-software-API.txt`. We'll use this dataset to do some pattern matching with regex in Visual Studio Code.
 
 First, open the `NASA-software-API.txt` file in Visual Studio Code. Next, open the search box by using the key combinations <kbd>Cmd+F</kbd> in macOS or <kbd>Ctrl+F</kbd> in Windows and Linux.
 

@@ -4,7 +4,7 @@ We also know now that commands such as `cat` and `grep` have the monitor screen 
 
 You might have started to guess by now it's possible to construct a *pipeline of commands* by stringing together multiple filters. To do so, we can use [pipes](http://www.linfo.org/pipes.html). Pipes are a form of redirection, which allows us to send the output of one program (or filter) to another program for further processing.
 
-For example, you might want to merge the `stdout` and `stderr` streams, and then display them on the terminal. You also might want to save the results to a file to examine build issues. You can take these actions by using pipes and filters.
+For example, you might want to merge the `stdout` and `stderr` streams and then display them on the terminal. You also might want to save the results to a file to examine build issues. You can take these actions by using pipes and filters.
 
 Let's see some examples of pipes and filters by using the commands you've already learned in the previous units.
 
@@ -50,9 +50,9 @@ As you can see in the preceding examples, we can build many different pipelines 
 Some of the key takeaways from this module are:
 
 - The `cat` command allows you to display, concatenate, and append files.
-- Pipes `|` send the output of one command as input of another command.
+- Pipes (`|`) send the output of one command as input of another command.
 - A filter takes input from one command, does some processing, and gives an output.
-- Regular expressions, or regex, are used for pattern matching and can be used by other commands and tools, such as `sed` and `grep`.
+- Regular expressions (regex) are used for pattern matching and can be used by other commands and tools, such as `sed` and `grep`.
 - The `grep` command can be used to find strings and values in a text file.
-- Piping through grep has to be one of the most common uses.
+- Piping through `grep` is one of the most common uses.
 - The most common use of the stream editor (`sed`) is text substitution.

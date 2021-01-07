@@ -36,9 +36,9 @@ The basic syntax for text substitution is:
 sed s'/old_text/new_text/'
 ```
 
-where the `s` is the substitute command and the three forward slashes `/` are used to separate the text fields.
+where the `s` is the substitute command and the three forward slashes (`/`) are used to separate the text fields.
 
-Imagine you have the URL https://www.nasa.gov/about/sites/index.html. You want to replace `index.html` with `home`. You can make this replacement by using the following command:
+Imagine that you have the URL https://www.nasa.gov/about/sites/index.html, and you want to replace `index.html` with `home`. You can make this replacement by using the following command:
 
 
 ```bash

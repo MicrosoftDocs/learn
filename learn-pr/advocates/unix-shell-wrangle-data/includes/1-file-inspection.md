@@ -22,7 +22,7 @@ You should see a `NASA-software-API.txt` file and a `NASA-logs-1995.txt` file.
 
 The first file, `NASA-Software-API.txt`, is an open dataset that lists all the software in use by NASA. For more information on the original dataset, see [NASA Open Source and General Resource Software API](https://data.nasa.gov/Management-Operations/NASA-Open-Source-And-General-Resource-Software-API/4tfb-za6v). The second dataset contains all the logged requests to the NASA Kennedy Space Center server.
 
-## Peek into your files' contents
+## Peek into the contents of your files
 
 Recall that in UNIX, by default, a terminal has three streams: an input stream and two output-based streams. The input stream is referred to as `stdin` for standard input and is mapped to the keyboard. The standard output stream, or `stdout`, generally prints to the terminal or might be consumed by another program or process. The other output stream, `stderr`, is primarily used for status reporting and usually prints to the terminal like `stdout`.
 

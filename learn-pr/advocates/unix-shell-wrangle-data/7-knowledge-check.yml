@@ -12,7 +12,6 @@ title: Knowledge check
 durationInMinutes: 1
 content: |
   [!include[](includes/7-knowledge-check.md)]
-  Choose the best response for each question. Then select **Check your answers**.
 quiz:
   questions:
     - content: "In our current directory, we want to find the three files with the least number of lines. Which command listed here would work?"

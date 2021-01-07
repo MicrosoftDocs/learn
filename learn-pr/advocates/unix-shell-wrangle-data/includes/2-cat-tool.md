@@ -1,4 +1,4 @@
-Here we'll use the command `cat` to display, create, and concatenate files. This command is useful when you do complex data wrangling.
+Here we'll use the `cat` command to display, create, and concatenate files. This command is useful when you do complex data wrangling.
 
 ## The `cat` command
 

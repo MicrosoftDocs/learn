@@ -45,5 +45,5 @@ You'll get many more results than in the previous search because we passed two f
 - `grep -n`: Indicates the line number and the matched pattern.
 - `grep -i`: Allows case-insensitive matches.
 - `grep -w`: Matches entire words.
-- `grep -H`: Includes filenames, which is useful when you're passing multiple files.
+- `grep -H`: Includes file names, which are useful when you're passing multiple files.
 - `grep -m<max number lines>`: Limits the number of matches to be displayed. For example, to limit to only the first four matches, you would use `-m4`.
