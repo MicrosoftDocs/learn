@@ -1,29 +1,25 @@
-Rust provides the `Result<T, E>` enum for returning and propagating errors. By convention, the
-`Ok(T)` variant represents a success and contains a value, while the variant `Err(E)` represents an
-error and contains an error value.
+Rust provides the `Result<T, E>` enum for returning and propagating errors. By convention, the `Ok(T)` variant represents a success and contains a value, and the variant `Err(E)` represents an error and contains an error value.
 
-It is prominently used for I/O operations, such as parsing strings into other types, attempts at acquiring network connections, file access and data validation.
+The `Result<T, E>` enum is principally used for input/output (I/O) operations, such as parsing strings into other types, attempts at acquiring network connections, file access, and data validation.
 
-It is defined as:
+The `Result<T, E>` enum is defined as:
 
 ```rust
 enum Result<T, E> {
     Ok(T):  // A value T was obtained.
-    Err(E): // An error of type E was encountered, instead.
+    Err(E): // An error of type E was encountered instead.
 }
 ```
 
-In contrast to the `Option` type, that describes the possibility of *absence*, the `Result` type is
-best suited whenever *failures* are expected.
+In contrast to the `Option` type, which describes the possibility of the *absence* of a value, the `Result` type is best suited whenever *failures* are expected.
 
-The `Result` type also has the `unwrap` and `expect` methods, that will return the value inside the
-`Ok` variant, if it is the case, or cause the program to panic if the variant is a `Err`.. Use
-pattern matching
+The `Result` type also has the `unwrap` and `expect` methods, which do either of the following:
+* Return the value inside the `Ok` variant, if this is the case.
+* Cause the program to panic, if the variant is an `Err`.
 
-Let's see `Result` in action. In the example below there is an implementation for a `safe_division`
-function, that returns a `Result` value with an `Ok` variant carrying the result of a successful
-division or an `Err` variant carrying an atomic struct `DivisionByZeroError`, signaling a
-unsuccessfull division.
+Let's see `Result` in action. In the following example code, there's an implementation for a `safe_division` function that returns either of following:
+* A `Result` value with an `Ok` variant that carries the result of a successful division.
+* An `Err` variant that carries an atomic struct `DivisionByZeroError`, which signals an unsuccessful division.
 
 ```rust
 #[derive(Debug)]
@@ -44,10 +40,9 @@ fn main() {
 }
 ```
 
-You can check this program in the
-[Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=4aca69ce1eb3e647997a38b6c92ace04?azure-portal=true).
+To check this program, go to the [Rust playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=4aca69ce1eb3e647997a38b6c92ace04?azure-portal=true).
 
-The output of this program will be:
+The output shows:
 
 ```output
     Ok(3.0)
@@ -55,6 +50,4 @@ The output of this program will be:
     Ok(0.0)
 ```
 
-The `#[derive(Debug)]` part above the `DivisionByZeroError` struct is a macro that tells the Rust
-compiler to make our type printable for debugging purposes. We will cover this in depth when we
-reach the Traits module.
+The `#[derive(Debug)]` part that precedes the `DivisionByZeroError` struct is a macro that tells the Rust compiler to make the type printable for debugging purposes. We'll cover this concept in depth later, in the Traits module.
