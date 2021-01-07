@@ -30,7 +30,7 @@ As the configuration changes, Terraform can determine what changed and create in
 
 ## Hashicorp Configuration Language (HCL)
 
-Terraform uses its own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
+Terraform configuration files use there own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
 You create configuration files using HCL (HashiCorp Configuration Language) syntax.
 HCL is declarative, describing an intended goal rather than the steps to reach that goal.
 The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure.
@@ -42,7 +42,7 @@ The HCL syntax allows you to specify the cloud provider - such as Azure - and th
 
 ### Modules
 
-A module is a set of configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more.tf files is a module.
+Terraform modules are sets of configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more ".tf" files is a module.
 
 - Organize configuration
 - Encapsulate configuration

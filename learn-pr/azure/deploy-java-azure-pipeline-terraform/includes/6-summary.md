@@ -4,7 +4,7 @@ Your company wanted to learn how they could provision their existing Spring Boot
 
 1. You accessed a sample Spring Boot web application and configured it.
 
-1. You use Terraform to provision a MySQL database, and an Azure App Service.
+1. Provisioned a MySQL database, and an Azure App Service using Terraform.
 
 1. Configured your GIT repository to use GitHub actions to provision and deploy its resources on demand.
 

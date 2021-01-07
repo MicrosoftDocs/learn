@@ -4,7 +4,7 @@ Imagine you're an infrastructure manager and have been asked to provision resour
 
 ![Build, Deploy and Provision Pipelines.](../media/1-pipelines.png)
 
-As an Infrastructure Manager, you aim to achieve automation of both infrastructure and application build/deploy using three pipelines:
+As an Infrastructure Manager, you aim to achieve automation of both infrastructure and application build/deploy using three pipelines - Account, Infrastructure and Application:
 
 1. Account – Azure subscriptions, resource groups, vnets, subnets, express route circuits…
 
@@ -12,9 +12,11 @@ As an Infrastructure Manager, you aim to achieve automation of both infrastructu
 
 1. Application – Build and deploy your applications and configure them.
 
-For step 1, you'll use a personal Azure account.
-For step 2, you'll use Terraform and GitHub Actions to provision the Azure infrastructure.
-For step 3, you'll use Maven and GitHub Actions to build and deploy the sample application.
+There are several tools available to help you achieve these goals. However, since you're already using GitHub for your code repository, you decide to investigate GitHub Actions to see if it provides the automation you need.
+
+- For step 1, you'll use a personal Azure account.
+- For step 2, you'll use Terraform and GitHub Actions to provision the Azure infrastructure.
+- For step 3, you'll use Maven and GitHub Actions to build and deploy the sample application.
 
 > [!IMPORTANT]
 > More information on using Terraform to also deploy and build using external State can be located in the summary unit of this module.

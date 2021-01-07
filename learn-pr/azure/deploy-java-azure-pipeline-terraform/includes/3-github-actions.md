@@ -3,9 +3,15 @@ In this unit, you'll learn about GitHub actions and how they integrate with Terr
 # GitHub actions
 
 GitHub actions allow you to run Continuous Integration and Deployments (CI/CD) linked to your GitHub repositories.
-You can keep everything in source control, so you can track what has changed.
 
-There are two types of GitHub Actions, container actions and JavaScript actions. With container actions, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages. JavaScript actions don't include the environment in the code.
+GitHub Actions are composed of the following components:
+
+- Workflows: Automated processes added to your repository.
+- Events: An activity that triggers a workflow.
+- Jobs: A set of steps that execute on a runner.
+- Steps: A task that can run one or more commands (actions).
+- Actions: Standalone commands that can be combined into steps. Multiple steps can be combined to create a job.
+- Runners: Server that has the GitHub Actions runner application installed.
 
 ## GitHub Actions workflow
 
@@ -15,15 +21,13 @@ To create a workflow, you add actions to a .yml file in the .github/workflows di
 
 ## Terraform with GitHub Actions
 
-The `hashicorp/setup-terraform` action is a JavaScript action that sets up Terraform CLI in your GitHub Actions workflow by:
+The `hashicorp/setup-terraform` action sets up Terraform CLI in your GitHub Actions workflow by:
 
 - Downloading a specific version of Terraform CLI and adding it to the `PATH`.
 - Configuring the Terraform CLI configuration file with a Terraform Cloud/Enterprise hostname and API token.
 - Installing a wrapper script to wrap later calls of the `terraform` binary and expose its STDOUT, STDERR, and exit code as outputs named `stdout`, `stderr`, and `exitcode` respectively.
 
-## Connecting to Azure
-
-Cloud Shell is automatically authenticated under the Microsoft account you used to log into the Azure portal. If your account has multiple Azure subscriptions, you can switch to one of your other subscriptions.
+## Connecting GitHub Actions to Azure
 
 Terraform supports several options for authenticating to Azure:
 
@@ -32,10 +36,6 @@ Terraform supports several options for authenticating to Azure:
 
 An Azure service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources.
 
-This access is restricted by the roles assigned to the service principal, giving you control over which resources can be accessed and at which level.
-
-When you create a Service Principal for GitHub Actions, it requires Contributor access to an Azure subscription.
-
 ## Next steps
 
-In the next unit, we'll set up your project to use GitHub Actions.
+In the next unit, we'll set up a sample project and use GitHub Actions to deploy to Azure.
