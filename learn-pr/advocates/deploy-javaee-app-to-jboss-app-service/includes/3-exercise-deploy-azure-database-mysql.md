@@ -163,7 +163,7 @@ Then automatically, `world` database and some tables will be created on your MyS
 
 In order to confirm the databases in your server, please execute the following mysql command.
 
-```bash
+```mysql
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -213,7 +213,7 @@ So we will show the above data using SQL query.
 In order to get the Continent Informations, please execute following command.  
 Then you will see following result.
 
-```bash
+```mysql
 mysql> select distinct Continent from country ;
 +---------------+
 | Continent     |
@@ -233,7 +233,7 @@ mysql> select distinct Continent from country ;
 In order to get Country Name and  Country Code in Continent, please execute following command.  
 Then you will see following result.
 
-```bash
+```mysql
 mysql> select code,name from country where Continent='Asia';
 +------+----------------------+
 | code | Name                 |
