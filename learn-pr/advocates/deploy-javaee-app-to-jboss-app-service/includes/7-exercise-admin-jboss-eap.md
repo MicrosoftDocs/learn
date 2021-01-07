@@ -1,8 +1,4 @@
 
-## Access to the JBoss EAP Admin Tool (CLI & Web Console)
-
-In order to manage or monitor the  JBoss EAP Application Server, sometimes you may want to access to the server and you want to confirm or configure the Server. In order to do it, Azure App Service provide the command. In this section, we will confirm it.
-
 ### Create a TCP Tunnel for connecting  to Remote Server
 
 In order to access to the remote server, You can create a TCP Tunnel between remote server and your local machine. Please execute the following command?
