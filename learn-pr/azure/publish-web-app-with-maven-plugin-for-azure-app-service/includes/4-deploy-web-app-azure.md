@@ -6,31 +6,7 @@ In this unit, you'll look at the options for your company to host its apps on Az
 
 The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure. Your project code is running in the cloud; you don't have to provision or configure any infrastructure. Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is globally available, it scales automatically, has security and compliance built-in, and you only pay for the resources you use.
 
-### Features
-
 Azure App Service supports multiple programming languages, which allows developers to continue writing their applications using the languages where they're most comfortable. Java is a first-class citizen, along with other languages like .NET Core, Python, Node.js, etc. The web apps you create can be hosted on Linux, Windows, or inside a docker container. Before you deploy your web app to Azure, you'll create an App Service plan on Azure that specifies the OS and the pricing tier, which determines the size of the provisioned compute resources that your app needs.
-
-There are three categories of pricing tier:
-
- - **Free and Shared**
- 
-     This tier is only for development and testing. The resources are shared with other Azure customers, and apps can't be scaled out.
-
- - **Basic, Standard, Premium, and Premium V2**
- 
-     Apps have dedicated resources. Apps in the same App Service plan can share the same compute resources. Scale-out can be done, with more options available at the higher price tiers.
-
-- **Isolated**
-
-    This plan includes network and compute isolation. This tier has the maximum scale-out capabilities.
-
-### Why use an App Service?
-
-Azure has lots of different options if you need to run your application code in the cloud. Azure App Service is one of those options, but if your code has different requirements, you might choose a different option. For example, you might want to use Azure App Service when you don't need full control of the hosting environment.
-
-The following flowchart can help you decide if using an Azure App Service is the best solution for your application code.
-
-![Flowchart on how to decide to use an App Service](../media/4-compute-decision-tree.png)
 
 ## Maven workflows
 
@@ -47,28 +23,25 @@ However, when you're using the Maven Plugin for Azure App Service, you won't use
 
 ## Adding the Maven Plugin for Azure App Service to your project
 
-To add the Maven Plugin for Azure App Service to your web app, you would add the XML for `azure-webapp-maven-plugin` to your project's `pom.xml` file following the same steps that you used in the previous exercise when you added the Tomcat server.
-
-The following excerpt illustrates the XML elements that you need to add to your project's `pom.xml` file:
+To add the Maven Plugin for Azure App Service to your web app, you would add the XML for `azure-webapp-maven-plugin` to your project's `pom.xml` file like the following"
 
 ```xml
 <plugin>
   <groupId>com.microsoft.azure</groupId>
   <artifactId>azure-webapp-maven-plugin</artifactId>
-  <version>1.9.0</version>
+  <version>1.12.0</version>
 </plugin>
 ```
 
-> [!NOTE]
-> Please check the [Maven Plugin for Azure App Service documention](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App), or the [Maven Central Repository](https://search.maven.org/artifact/com.microsoft.azure/azure-webapp-maven-plugin/), for information on the latest version of the Maven plugin.
-
-After you've added the plugin to your project's `pom.xml` file, you can run the following command to complete the plugin setup interactively.
+However, the plugin provides a convinent and interactive way to add configurations to your pom file:
 
 ```bash
-mvn azure-webapp:config
+mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
+The plugin will prompt you for the information that is required to configure the App Service plan. After you've confirmed your choices, the plugin adds the above plugin element and requisite settings to your project's `pom.xml` file that configure your web app to run in Azure App Service.
 
-The plugin will prompt you for the information that is required to configure the App Service plan. After you've confirmed your choices, the plugin adds the requisite settings to your project's `pom.xml` file that configure your web app to run in Azure App Service.
+> [!NOTE]
+> Please check the [Maven Plugin for Azure App Service documention](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App), or the [Maven Central Repository](https://search.maven.org/artifact/com.microsoft.azure/azure-webapp-maven-plugin/), for information on the latest version of the Maven plugin.
 
 ### Configuration options
 
@@ -80,7 +53,7 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the s
 <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.9.0</version>
+    <version>1.12.0</version>
     <configuration>
         <schemaVersion>v2</schemaVersion>
         <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>
