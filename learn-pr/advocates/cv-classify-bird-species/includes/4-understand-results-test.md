@@ -26,11 +26,11 @@ The warning indicates that you don't have an even number of samples for each cla
 
 ### Overfitting
 
-If you don't have enough data or your data isn't diverse enough, your model can become overfitted. When a model is overfitted, it knows the dataset that is provided well, and it is overfitted to the patterns in that data. The model  performs well on the training data, but it will perform poorly on new data that it hasn't seen before. This is why we always test our models by using new data!
+If you don't have enough data or your data isn't diverse enough, your model can become overfitted. When a model is overfitted, it knows the provided dataset well, and it's overfitted to the patterns in that data. The model performs well on the training data, but it performs poorly on new data that it hasn't seen before. For this reason, we always use new data to test a model!
 
 ### Test by using training data
 
-As in overfitting, if you test the model by using the same data that you trained the model with, the model will appear to perform well, but when you deploy the model to production, it most likely will do poorly.
+As in overfitting, if you test the model by using the same data that you used to train the model, the model appears to perform well. But, when you deploy the model to production, it most likely perform poorly.
 
 ### Bad data
 
@@ -40,11 +40,16 @@ Another common mistake is training by using bad data. There are ways that your d
 
 According to the metrics that Custom Vision provides, our model is performing well enough. Let's test our model and see how it performs on unseen data.
 
-### Test in the portal UI
+### Test in the Custom Vision portal
 
 To test the model in the Custom Vision portal:
 
-1. Select **Quick Test** in the upper-right corner.
-1. Search for an image of a bird that matches one of the species you trained the model to recognize. Grab the URL for the image and paste it in **Image URL** to test the model's accuracy. The prediction is shown in the window.
+1. In the top navigation in the Custom Vision portal, at the right, select **Quick Test**.
+1. In **Quick Test**, select **Browse local files**.
+1. In the **Open files** dialog box, search for a bird image from one of the species that you trained the model to recognize. Select the image, and then select **Open**.
+
+Custom Vision opens the image, and then analyzes the image to test the model's accuracy. The prediction results are shown in the window.
+
+:::image type="content" source="../media/quick-test-prediction-results.png" alt-text="Screenshot that shows the prediction results after testing an image in the Custom Vision project.":::
 
 In the next step, we'll deploy the model. After the model is deployed, we can do more testing with the endpoint we create.

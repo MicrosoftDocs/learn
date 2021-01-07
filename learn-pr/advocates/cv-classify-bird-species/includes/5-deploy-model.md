@@ -6,51 +6,61 @@ You can deploy to an endpoint by getting the prediction URL or by consuming the 
 
 ### Get the prediction URL
 
-To get the prediction URL:
-
-1. In the Custom Vision portal, select **Performance**.
+1. In the top navigation in the Custom Vision portal, select **Performance**.
 1. Select **Publish**.
-1. Select **Prediction Url**. This value is the URL you use to post images to get predictions.
+1. In the **Publish Model** dialog, expand the **Prediction resource** drop-down. Under your subscription, select the name of the prediction for your Custom Vision project. Select **Publish**.
+    :::image type="content" source="../media/deploy-model-publish-prediction.png" alt-text="Screenshot that shows how to publish a trained Custom Vision model."::: 
+    After the model is published, the actions for the model are changed in the Custom Vision portal. 
+1. Now select  **Prediction URL**. A popup dialog displays.
+1. The **How to use the prediction API** dialog shows two options, one for if you have an image URL and another for if you have an image file.
+1. To get the prediction URL, copy and save the value in the **If you have an image URL** box, and then select **Got it**.
+    :::image type="content" source="../media/deploy-model-get-prediction-url.png" alt-text="Screenshot that shows how to get the prediction U R L for a published Custom Vision model.":::
 
 ### Consume the API in a Python app
 
 When the model is trained and performing with a satisfactory accuracy, the model is ready for you to use in your app.
 
-1. Go to the resource group that contains the Custom Vision resource. You should see a resource named **YourCustomVisionResourceName_Prediction**.
-1. Select **Quick Start**.
-1. Select **API Reference** from the list of helpful links. 
+1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), go to the resource group that contains your Custom Vision resource. On this page, you should see a resource named **<YourCustomVisionResourceName>-Prediction**.
+    :::image type="content" source="../media/deploy-model-open-resource-group-prediction.png" alt-text="Screenshot that shows how to open the prediction resource.":::
+1. Select the prediction name to open the **Quick start** page. This page has links for resources to learn more about how to call the API to get predictions from the model. 
+1. Scroll to the section labeled **3** to "Make a web API call." This section has links to code samples in multiple languages to help get you started.
+    :::image type="content" source="../media/deploy-model-prediction-quickstart-section-3.png" alt-text="Screenshot that shows quick start resources to learn how to call the API to get predictions from the model.":::
+1. In section **3**, select the link for the **Python Quickstart**. The corresponding [Azure Cognitive Services quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true) opens. Under the quickstart title, select the programming language you're using.
 
-A page that has documents about how to call the API to get predictions from the model opens. Scroll to the bottom of the page for a list of code samples in multiple languages to get you started. 
+    Here's an example of the sample code for calling the prediction API in Python. For the complete code, see [Azure Cognitive Services quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true).
 
-Here's the example code for calling the prediction API in Python:
+   ```python
+    from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
+    
+    # Create variables for your resource; replace with valid values.
+    prediction_key = "<YourKey>"
+    endpoint = "<YourEndpoint>"
+    base_image_url = "<BasePathToImageFolder>"
+    
+    # An example of a default iteration name is "Iteration1".
+    publish_iteration_name = "<PublishedIterationName>"
+    
+    # You can find the project ID in the settings of the Custom Vision project in the portal.
+    project.id = "<CustomVisionProjectId>"
+    
+    # Now there's a trained endpoint you can use to make a prediction.
+    prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
+    
+    predictor = CustomVisionPredictionClient(endpoint, prediction_credentials)
+    
+    with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents:
+        results = predictor.classify_image(
+            project.id, publish_iteration_name, image_contents.read())
+    
+        # Display the results.
+        for prediction in results.predictions:
+            print("\t" + prediction.tag_name +
+                  ": {0:.2f}%".format(prediction.probability * 100))
 
-```python
-from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
-
-# Now, there's a trained endpoint you can use to make a prediction.
-prediction_key = "<YourKey>"
-endpoint = "<YourEndpoint>"
-base_image_url = "<BasePathToImageFolder>"
-# An example of a default iteration name is "Iteration1".
-publish_iteration_name = "<PublishedIterationName>"
-# You can find the project ID in the settings of the Custom Vision project in the portal.
-project_id = "<CustomVisionProjectId>"
-
-predictor = CustomVisionPredictionClient(prediction_key, endpoint=endpoint)
-
-with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents:
-    results = predictor.classify_image(
-        project_id, publish_iteration_name, image_contents.read())
-
-    # Display the results.
-    for prediction in results.predictions:
-        print("\t" + prediction.tag_name +
-              ": {0:.2f}%".format(prediction.probability * 100))
-```
 
 When you post to the published endpoint, you get a result that looks like the following example. The probability of each tag the Custom Vision model was trained on is shown, sorted by the highest score. The model recognizes only the type of birds it was trained to recognize. If you post an image of a bird that the model wasn't trained to recognize, the model predicts one of the bird species it was trained on as the species of the new bird.
 
-```
+```output
 	American Crow: 99.18%
 	Common Grackle: 25.34%
 	Red-tailed Hawk (Dark morph): 4.09%
