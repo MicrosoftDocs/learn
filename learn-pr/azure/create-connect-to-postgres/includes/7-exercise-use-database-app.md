@@ -11,6 +11,8 @@ In this exercise, we’ll:
 
 ## Download the data and webapp
 
+If your Shell is still connected to the database, you can exit with `\q`
+
 1. In the Azure Cloud Shell window on the right side of your screen, run the following command to download the data files and application code.
 
     ```bash
@@ -175,7 +177,7 @@ Now let's add to the application the code to retrieve user data from the databas
 
     * **On line 14**, Replace the value of the string **_connectionString_** with the value from the clipboard.
         * Make sure you leave the quotation marks around your connection string.
-    * In the connection string, **replace the text:
+    * In the connection string, **replace the text**:
         * **`{your_password}` with the password for the database**
         * **`{your_database}` with `paymentapp`**.
 
@@ -222,8 +224,8 @@ Now let's add to the application the code to retrieve user data from the databas
         {
             string userID = reader.GetInt32(0).ToString();
             string userName = reader.GetString(1);
-            int moduleSequence = reader.GetInt32(2);
-            Users user = new Users(userID, userName, moduleSequence);
+            int userAge = reader.GetInt32(2);
+            Users user = new Users(userID, userName, userAge);
             userList.Add(user);
         }
                     }
@@ -348,7 +350,7 @@ The application can now retrieve the course data. Now, update the app to display
                 @Html.DisplayFor(userName => user.UserName)
             </td>
             <td>
-                Html.DisplayFor(userAge => user.UserAge)
+                @Html.DisplayFor(userAge => user.UserAge)
             </td>
         </tr>
     }
