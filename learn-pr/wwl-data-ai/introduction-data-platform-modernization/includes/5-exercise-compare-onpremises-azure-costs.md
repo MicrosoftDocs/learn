@@ -88,7 +88,7 @@ Here, you will calculate the Total Cost of Ownership (TCO) of migrating to Azure
 1. On the **View report** page, note that the **Timeframe** defaults to **5 years**.
 1. Scroll down the report and investigate the estimated breakdown of costs for on-premises systems and Azure. Make a note of this information:
 
-    - Where is the majority of the costs for on-Premises?
+    - Where is the majority of the costs for on-premises?
     - What are the largest cost saving if you decide to migrate to Azure?
 
 1. Expand each section in turn and investigate the breakdown of costs.
