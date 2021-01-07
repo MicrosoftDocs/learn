@@ -50,17 +50,17 @@ Use Visual Studio Code to create a local Azure Functions project. Later in this 
         { 
             [FunctionName("ProcessDTUpdatetoTSI")]
             public static async Task Run(
-                [EventHubTrigger("twins-event-hub", Connection = "EventHubAppSet-ting-Twins")]EventData myEventHubMessage, 
+                [EventHubTrigger("twins-event-hub", Connection = "EventHubAppSetting-Twins")]EventData myEventHubMessage, 
                 [EventHub("tsi-event-hub", Connection = "EventHubAppSetting-TSI")]IAsyncCollector<string> outputEvents, 
                 ILogger log)
             {
-                JObject message = (JOb-ject)JsonConvert.DeserializeObject(Encoding.UTF8.GetString(myEventHubMessage.Body));
+                JObject message = (JObject)JsonConvert.DeserializeObject(Encoding.UTF8.GetString(myEventHubMessage.Body));
                 log.LogInformation("Reading event:" + message.ToString());
     
                 // Read values that are replaced or added
-                Dictionary<string, object> tsiUpdate = new Dictionary<string, ob-ject>();
+                Dictionary<string, object> tsiUpdate = new Dictionary<string, object>();
                 foreach (var operation in message["patch"]) {
-                    if (operation["op"].ToString() == "replace" || opera-tion["op"].ToString() == "add")
+                    if (operation["op"].ToString() == "replace" || operation["op"].ToString() == "add")
                     {
                         //Convert from JSON patch path to a flattened property for TSI
                         //Example input: /Front/Temperature
@@ -72,8 +72,8 @@ Use Visual Studio Code to create a local Azure Functions project. Later in this 
                 }
                 //Send an update if updates exist
                 if (tsiUpdate.Count>0){
-                    tsiUpdate.Add("$dtId", myEventHubMes-sage.Properties["cloudEvents:subject"]);
-                    await out-putEvents.AddAsync(JsonConvert.SerializeObject(tsiUpdate));
+                    tsiUpdate.Add("$dtId", myEventHubMessage.Properties["cloudEvents:subject"]);
+                    await outputEvents.AddAsync(JsonConvert.SerializeObject(tsiUpdate));
                 }
             }
         }

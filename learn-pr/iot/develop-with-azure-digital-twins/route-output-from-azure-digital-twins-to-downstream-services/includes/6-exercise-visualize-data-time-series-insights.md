@@ -41,11 +41,11 @@ Data should be flowing into your Time Series Insights instance now, ready to be 
 
 You should now be seeing the Vibration readings from a device named "GrindingStep:"
 
-:::image type="content" source="../media/visualization-diagram.png" alt-text="Screenshot showing Digital Twin vibration events data visualized in Azure Time Series Insights":::
+:::image type="content" source="../media/visualization-diagram.png" alt-text="Screenshot showing Digital Twin vibration events data visualized in Azure Time Series Insights" lightbox="../media/visualization-diagram.png":::
 
 If you allow the simulation to run for much longer, your visualization will eventually look something like the following screenshot:
 
-:::image type="content" source="../media/prolonged-visualization-diagram.png" alt-text="Screenshot showing prolonged Digital Twin vibration events data visualized in Azure Time Series Insights":::
+:::image type="content" source="../media/prolonged-visualization-diagram.png" alt-text="Screenshot showing prolonged Digital Twin vibration events data visualized in Azure Time Series Insights" lightbox="../media/prolonged-visualization-diagram.png":::
 
 > [!TIP]
 > If you don't see data or if it says there are no events to display:
@@ -56,6 +56,6 @@ If you allow the simulation to run for much longer, your visualization will even
 
 You can select the desired time range (2 minutes) by dragging the handles of the availability picker or using the date-time selector in the top-right corner:
 
-:::image type="content" source="../media/edit-time-range.png" alt-text="Screenshot showing how to change the time range in Azure Time Series Insights":::
+:::image type="content" source="../media/edit-time-range.png" alt-text="Screenshot showing how to change the time range in Azure Time Series Insights" lightbox="../media/edit-time-range.png":::
 
 Review events during the time window. You may expand the time range to get a broader understanding of the Vibration events. Based on the data input, the vibration events pattern in the past 2 minutes appear normal without unusual spikes or dips; no further analysis or action is required at this stage.
