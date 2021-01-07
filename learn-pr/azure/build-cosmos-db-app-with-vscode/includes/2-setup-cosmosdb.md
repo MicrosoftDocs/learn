@@ -47,7 +47,7 @@ Now let's create a new database and collection for your customers.
 1. In the Azure: Cosmos DB pane, right-click your new account, and then click **Create Database**.
 1. In the input palette at the top of the screen, type `Users` for the database name and press Enter.
 1. Enter `WebCustomers` for the collection name and press Enter.
-1. Enter userid for paretition key.
+1. Enter userid for partition key.
 1. Expand the account in the **Azure: Cosmos DB** pane, and the new **Users** database and **WebCustomers** collection are displayed.
 
     ![Animation showing the above instructions run through the Azure Cosmos DB extension in Visual Studio Code.](../media/2-setup/vs-code-azure-cosmos-db-extension.gif)
