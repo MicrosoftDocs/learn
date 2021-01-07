@@ -37,7 +37,7 @@ Azure Digital Twins will emit the following events (notifications and telemetry 
 | Notification type                    | Routing source name   | Generated from...  |
 |--------------------------------------|-----------------------|--------------------|
 | Digital Twin Change Notification     | Digital Twin Change Notification | Any digital twin property change |
-| Digital Twin Lifecycle Notification  | Digital Twin Lifecycle Notification | Any digital twin create or delete operation |
+| Digital Twin Lifecycle Notification  | Digital Twin Lifecycle Notification | Any digital twins create or delete operation |
 | Digital Twin Relationship Change Notification  | Digital Twin Relationship Change Notification  | Any digital twin relationship change |
 | Digital Twin Telemetry Messages      | Telemetry Messages        | Any telemetry message |
 
@@ -90,8 +90,8 @@ In this module, you will:
   - It is recommended to install AZ CLI locally 
   - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
 - macOS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
-- Windows OS: PowerShell is built-in
-- Access to an Azure subscription where you have the Global Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
+- Windows OS: PowerShell is built in
+- Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory Tenant to complete the exercise units
 - It is recommended that you have some experience working with Time Series Insights, you can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/) module 
 - [Node.js](https://nodejs.org/en/download/) to run the device simulator application  
 - [Git](https://git-scm.com/downloads)

@@ -1,7 +1,7 @@
 ---
 metadata:
   title: Summary
-  description: This unit summarizes the Learn module and provides links to additional resources
+  description: This unit summarizes the Learn module and provides links to more resources
   ms.date: 11/30/2020
   author: raniabayoumy
   ms.author: rabayoum
@@ -13,7 +13,7 @@ durationInMinutes: 3
 
 In this module, you learned how to integrate Azure Digital Twins with Azure Time Series Insights.
 
-The scenario described in this module covered how you can gather and analyze near real-time, as well as historical data, about your IoT solution. Azure Digital Twins is a great fit for feeding data into Time Series Insights, as it allows you to correlate multiple data streams and standardize your information before sending it to Time Series Insights.
+The scenario described in this module covered how you can gather and analyze near real-time, and historical data, about your IoT solution. Azure Digital Twins is a great fit for feeding data into Time Series Insights, as it allows you to correlate multiple data streams and standardize your information before sending it to Time Series Insights.
 
 In this module, you learned how to:
 
@@ -25,7 +25,7 @@ In this module, you learned how to:
 
 ## Learn more
 
-For more information on how to use Time Series Insights and visualize and query data, see the additional resources:
+For more information on how to use Time Series Insights and visualize and query data, see more resources:
 
 - [What is Azure Time Series Insights Gen2](https://docs.microsoft.com/azure/time-series-insights/overview-what-is-tsi)
 

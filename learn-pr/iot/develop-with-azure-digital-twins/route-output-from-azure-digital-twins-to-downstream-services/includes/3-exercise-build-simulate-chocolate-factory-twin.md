@@ -149,7 +149,7 @@ Additionally, you have provisioned the IoT Hub and an Azure function that is con
     az dt twin show -n $dtname --twin-id GrindingStep
     ```
 
-## Challenge: Simulate fanning, roasting and molding devices
+## Challenge: Simulate fanning, roasting, and molding devices
 
 The Sensor.js script can be edited to send data as other devices. The Azure Function has logic that evaluates the device type specified in the payload. Change the value stored in the deviceType and deviceConnection string to send as Fanning and Molding sensors.
 
