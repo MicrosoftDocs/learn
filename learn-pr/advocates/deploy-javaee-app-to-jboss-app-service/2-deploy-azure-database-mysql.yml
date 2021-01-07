@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-javaee-app-to-appservice.2-deploy-azure-database-mysql
-title: Java EE (Jakarta EE) App on JBoss EAP
+title: Deploy Azure Database for MySQL
 metadata:
-  title: Java EE (Jakarta EE) App on JBoss EAP
-  description: Get an overview of a typical Java EE (Jakarta EE) App and JBoss EAP.
+  title: Deploy Azure Database for MySQL
+  description: You will learn how to deploy Azure Database for MySQL
   author: yoshioterada
   ms.author: yoterada
   ms.date: 11/25/2020
