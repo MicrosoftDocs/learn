@@ -1,18 +1,18 @@
-Data Platform Modernization can streamline your database systems and remove barriers to profitability but it is complex and must be understood fully to be successful.
+Data platform modernization can streamline your database systems and remove barriers to profitability but it is complex and must be understood fully to be successful.
 
-In you global retailer, you've been asked to prepare a initial report for the board that will explain why they should finance a Data Platform Modernization project. The board want to understand the return on investment and efficiencies that such a project might realize.
+In you global retailer, you've been asked to prepare a initial report for the board that will explain why they should finance a data platform modernization project. The board want to understand the return on investment and efficiencies that such a project might realize.
 
 Here, you'll learn what tasks system architects and database administrators must complete during a typical modernization project.
 
-## What is Data Platform Modernization?
+## What is data platform modernization?
 
 With the growth of cloud computing, and as IT hardware comes to end of life within a business, many organizations take stock and look at how the cloud can help bring new efficiencies, transform their working practices, and in some cases disrupt entire industries with new business models.
 
 At the heart of this transformation is data; it drives business success. To that end, database administrators or data engineers within IT departments must modernize existing data platform technologies to help businesses realize their transformation goals, while minimizing downtime and data loss.
 
-Data Platform Modernization focuses on selecting and migrating to the right data platform technology. In some cases, the modernization may involve an organization just upgrading an existing on-premises SQL Server to a newer version. More and more, organizations are choosing to take advantage of the elastic nature and economies of scale that the cloud brings. They can also gain technological benefits through the wider range of technologies available in Azure.
+Data platform modernization focuses on selecting and migrating to the right data platform technology. In some cases, the modernization may involve an organization just upgrading an existing on-premises SQL Server to a newer version. More and more, organizations are choosing to take advantage of the elastic nature and economies of scale that the cloud brings. They can also gain technological benefits through the wider range of technologies available in Azure.
 
-Data Platform Modernization is also more than that, it's also about designing and implementing a process that ensures that the Data Platform Modernization takes place almost seamlessly. The process consists of five stages:
+Data platform modernization is also more than that, it's also about designing and implementing a process that ensures that the data platform modernization takes place almost seamlessly. The process consists of five stages:
 
 :::image type="content" border="false" source="../media/2-five-stages-data-modernization.png" alt-text="A diagram of the five stages of data modernization, discover, assess, plan, transform, and validate.":::
 
@@ -42,13 +42,13 @@ Microsoft Azure provides a number of fully managed SQL based data platform techn
 
 - **Encryption capabilities** - Data is automatically encrypted on disk to make it highly secure; you also have encrypting connections to the data.
 
-## The 7 R Considerations to Migration
+## The 7 R considerations to migration
 
-Within the planning phase of the Data Platform Modernization process, there are seven terms to describe how you can handle application and data transitioning from an existing on-premises environment to a new cloud-based environment (either public or private).
+Within the planning phase of the Data Platform modernization process, there are seven terms to describe how you can handle application and data transitioning from an existing on-premises environment to a new cloud-based environment (either public or private).
 
 :::image type="icon" source="../media/2-modernization-plan.png" border="false" alt-text="Diagram of the planning phase, showing the seven Rs":::
 
-These terms can be used to help formulate the strategy that an organization would want to take when undertaking a Data Platform Modernization project. As the table below shows, the strategy can range from doing nothing at all to a complete replacement of a Data Platform solution and application.
+These terms can be used to help formulate the strategy that an organization would want to take when undertaking a data platform modernization project. As the table below shows, the strategy can range from doing nothing at all to a complete replacement of a Data Platform solution and application.
 
 |#|Phase|Description|Benefit|
 |-|-|-|-|

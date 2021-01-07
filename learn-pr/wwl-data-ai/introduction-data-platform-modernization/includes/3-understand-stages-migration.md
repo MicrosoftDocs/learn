@@ -1,4 +1,4 @@
-A Data Platform Modernization project has five stages that are usually completed in order.
+A data platform modernization project has five stages that are usually completed in order.
 
 In your global retailer, your board have approved the modernization project and you are beginning to organize staff and other resources. To set up and assign tasks optimally, you need to understand the project phases in depth.
 
@@ -8,7 +8,7 @@ In this unit, you'll explore each of the five stages in more detail.
 
 ## Initiate and discover
 
-Initiation of a Data Platform Modernization project typically is driven by a wider business or legal requirement. For example, ensuring that an organization uses a technology that is GDPR-compliant, or has a feature that brings about an improved business benefit. That's why it's important that projects account for these types of need to obtain project support from senior management in the business. Assuming this, the first step of the project is to complete a discovery exercise that consists of the following considerations:
+Initiation of a data platform modernization project typically is driven by a wider business or legal requirement. For example, ensuring that an organization uses a technology that is GDPR-compliant, or has a feature that brings about an improved business benefit. That's why it's important that projects account for these types of need to obtain project support from senior management in the business. Assuming this, the first step of the project is to complete a discovery exercise that consists of the following considerations:
 
 - **Taking stock of the current environment**
 
@@ -99,7 +99,7 @@ The planning stage of a data platform modernization project is used to determine
 
 Your assessment and planning would have identified aspects of your applications and database that would require post migration work that either transforms or optimizes a feature to ensure a successful migration. Transformation typically involves work that requires you to fix or change an aspect of a database. Optimization typically involves making a modification to the migrated database to take advantage of a feature, or optimizes its usage within Azure.
 
-- **Transformation**
+- **Transform**
 
     There may be one or more of the following changes that need to be made to a database to ensure that it works successfully post migration.
 
@@ -137,7 +137,7 @@ Your assessment and planning would have identified aspects of your applications 
 
 This phase involves the migration itself, and importantly the validation steps and remediation steps required to confirm a successful migration. The previous planning, assessment, and transformations stages will have ensured everything is ready to be migrated and functioning correctly once moved to Azure. All that's left to do is prepare the migration tools required, complete the migration, and run post migration functional and performance validations.
 
-### Migration, validation and remediation considerations
+### Migration, validation, and remediation considerations
 
 There are a wide range of tools that can be used to do the migration to the selected target platform. These tools will be covered in later modules. But you should consider the following when completing the migration.
 

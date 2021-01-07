@@ -1,6 +1,6 @@
 The discovery and assessment phase should have given you a clear understanding of your current environment and the workloads that operate within it. You should also understand what you are striving for in your data modernization outcomes. With a clear understanding of these topics, you can select an appropriate data platform technology to support your workloads.
 
-In your global retailer, you've completed the Initiate and Discover and Assessment phases of your Data Platform Modernization project. Now, in the Planning phase, you want to choose the best database technologies to migrate your data estate to. You've decided to host data in the cloud, but you know there are several different technologies in Azure that you can use.
+In your global retailer, you've completed the Initiate and Discover and Assessment phases of your data platform modernization project. Now, in the Planning phase, you want to choose the best database technologies to migrate your data estate to. You've decided to host data in the cloud, but you know there are several different technologies in Azure that you can use.
 
 Here, you'll learn about the structured data hosting services that you can use in Azure.
 

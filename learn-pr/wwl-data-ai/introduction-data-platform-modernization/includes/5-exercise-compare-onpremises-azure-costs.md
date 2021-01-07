@@ -68,7 +68,11 @@ Here, you will calculate the Total Cost of Ownership (TCO) of migrating to Azure
     > You can use the links in the **Software Assurance** section to learn more about the assurance that is available. There are similar links in subsequent sections.
 
 1. Under **Geo-redundant storage (GRS)**, ensure that **GRS replicates your data to a secondary region that is hundreds of miles away from the primary region** is not enabled.
-1. Under **Virtual Machine costs**, ensure that **Enable this for the Calculator to not recommend B-series virtual machines** is not enabled.
+1. Under **Virtual Machine costs**, ensure that **Enable this for the Calculator to not recommend Bs-series virtual machines** is enabled.
+
+    > [!NOTE]
+    > The burstable B-series virtual machines don't have the memory-to-vCore ratio of 8 that is recommended for SQL Server workloads.
+
 1. Under **Electricity costs**, in the **Price per KW hour** textbox, enter a realistic value for your location.
 
     > [!NOTE]
