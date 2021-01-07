@@ -4,7 +4,7 @@ Machine learning models must be trained with existing data. In this case, you'll
 
 In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*.
 
-1. in [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page (under **Assets**), and create a new dataset ***from web files*** with the following settings:
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page (under **Assets**), and create a new dataset ***from web files*** with the following settings:
     - **Basic Info**:
         - **Web URL**: https://aka.ms/bike-rentals
         - **Name**: bike-rentals
