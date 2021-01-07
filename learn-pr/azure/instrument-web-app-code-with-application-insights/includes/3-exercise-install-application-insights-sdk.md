@@ -67,18 +67,18 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Then select **Web** > **Web App**.
+1. Select **Web** > **Web App**.
 
 1. In the **Web App** window, enter these settings:
 
     | Setting                   | Value                                                                 |
     |---------------------------|-----------------------------------------------------------------------|
     | App name                  | Choose a unique name. Make a note of it. You'll need it later on.     |
-    | Subscription              | **Concierge Subscription**                                              |
+    | Subscription              | **Concierge Subscription**                                            |
     | Resource Group            | Select **Use existing**, and then select **<rgn>Sandbox resource group</rgn>** |
     | OS                        | **Windows**                                                             |
     | Publish                   | **Code**                                                                |
-    | App Service plan/Location | Select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1**, and  then select **Apply**. |
+    | App Service plan/Location | Select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1**, and  then select **Apply**.    |
     | Application Insights      | See the steps that follow. |
 
 1. Select **Application Insights**.
