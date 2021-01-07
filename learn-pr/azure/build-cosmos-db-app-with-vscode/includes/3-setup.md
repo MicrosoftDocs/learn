@@ -45,6 +45,10 @@ In this unit, you will create a basic console app using the integrated terminal,
 
 1. At the top of the Explorer pane, click **Program.cs** to open the file.
 
+> [!NOTE] 
+>  If you do not show the **Program.cs** in Explorer pane, click file > open file > and open it from file explorer.  
+
+
 1. Add the following using statements after `using System;`.
 
     ```csharp
