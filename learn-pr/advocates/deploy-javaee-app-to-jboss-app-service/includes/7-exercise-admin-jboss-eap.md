@@ -136,19 +136,19 @@ http://127.0.0.1:9990/console
 
 Then you will see following Login Screen and you can login with previous user name and password.
 
-![Admin Console Login Auth Window](../media/jboss-admin-console1.png)
+:::image type="content" source="../media/jboss-admin-console1.png" alt-text="Admin Console Login Auth Window":::
 
 After Login to the Web Console, you can see like following screen.
 
-![Admin Console Top Page](../media/jboss-admin-console2.png)
+:::image type="content" source="../media/jboss-admin-console2.png" alt-text="Admin Console Top Page":::
 
 You can confirm created Datasource from `Configuration` -> `Subsystems` -> `Datasources & Drivers` -> `Datasources`.
 
-![Admin Console DataSources List](../media/jboss-admin-console3.png)
+:::image type="content" source="../media/jboss-admin-console3.png" alt-text="Admin Console DataSources List":::
 
 You can also confirm your RESTful endpoint of application from `Runtime` -> `system` -> `JAX-RS` -> `Your Application`.
 
-![Admin Console RESTful Endpoint](../media/jboss-admin-console4.png)
+:::image type="content" source="../media/jboss-admin-console4.png" alt-text="Admin Console RESTful Endpoint":::
 
 > [!NOTE]
 > If you directly access to the Remote Server via JBoss CLI command or Web Console and add or update some configurations, the configuration will be clear and deleted after the container is rebooted due to some reason. So if you need persist the configuration, please configure in the Start up script. For example, we created the `createMySQLDataSource.sh` in previous section as a startup script. 

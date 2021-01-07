@@ -326,7 +326,7 @@ https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 
 If you have the curl command, please execute following command. Then you can get all of the Continent Area infomation as JSON format.
 
-![REST Endpoint Area](../media/rest-endpoint-area.png)
+:::image type="content" source="../media/rest-endpoint-area.png" alt-text="REST Endpoint Area":::
 
 ```bash
 $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area
@@ -335,7 +335,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area
 
 And if you specify the Cotinent in the URL, you can get all of the countries in the specified continent like follows.
 
-![REST Endpoint Continent](../media/rest-endpoint-continent.png)
+:::image type="content" source="../media/rest-endpoint-continent.png" alt-text="REST Endpoint Continent":::
 
 ```bash
 $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
@@ -423,7 +423,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia 
 
 Finally, if you specify the Country Code after the `/countries`, you will be able to get all of the cities which has the population over 1 million persons in the Country.
 
-![REST Endpoint Cities](../media/rest-endpoint-cities.png)
+:::image type="content" source="../media/rest-endpoint-cities.png" alt-text="REST Endpoint Cities":::
 
 ```bash
 $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/JPN | jq '.[].name'

@@ -4,8 +4,7 @@ In order to manage or monitor the  JBoss EAP Application Server, sometimes you m
 
 For example, if you access to Admin Web Console, you can see like follwoing Screen.
 
-![Admin Console Top Page](../media/jboss-admin-console2.png)
-
+:::image type="content" source="../media/jboss-admin-console2.png" alt-text="Admin Console Top Page":::
 
 ## Azure App Service Log stream
 
