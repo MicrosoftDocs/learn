@@ -1,8 +1,8 @@
-You can increase the flexibility of script-based experiments by using parameters to set variables in the script.
+You can increase the flexibility of script-based experiments by using arguments to set variables in the script.
 
-## Working with Script Arguments
+## Work with script arguments
 
-To use parameters in a script, you must use a library such as **argparse** to read the arguments passed to the script and assign them to variables. For example, the following code reads an argument named **reg_rate**, which is used to set the regularization rate hyperparameter for the logistic regression algorithm used to train a model.
+To use parameters in a script, you must use a library such as `argparse` to read the arguments passed to the script, and assign them to variables. For example, the following script reads an argument named `--reg-rate`, which is used to set the regularization rate hyperparameter for the logistic regression algorithm used to train a model.
 
 ```Python
 from azureml.core import Run
@@ -18,9 +18,9 @@ run = Run.get_context()
 
 # Set regularization hyperparameter
 parser = argparse.ArgumentParser()
-parser.add_argument('--reg_rate', type=float, dest='reg', default=0.01)
+parser.add_argument('--reg-rate', type=float, dest='reg_rate', default=0.01)
 args = parser.parse_args()
-reg = args.reg
+reg = args.reg_rate
 
 # Prepare the dataset
 diabetes = pd.read_csv('data.csv')
@@ -42,22 +42,14 @@ joblib.dump(value=model, filename='outputs/model.pkl')
 run.complete()
 ```
 
-## Passing Script Arguments to an Estimator
+## Pass arguments to an experiment script
 
-To pass parameter values to a script being run by an estimator, you need to provide a **script_params** value containing a dictionary of arguments, like this:
+To pass parameter values to a script being run in an experiment, you need to provide an **arguments** value containing a list of comma-separated arguments and their values to the **ScriptRunConfig**, like this.
 
 ```Python
-from azureml.train.sklearn import SKLearn
-from azureml.core import Experiment
-
-# Create an estimator
-estimator = SKLearn(source_directory='experiment_folder',
-                    entry_script='training_script.py',
-                    script_params = {'--reg_rate': 0.1},
-                    compute_target='local'
-                    )
-
-# Create and run an experiment
-experiment = Experiment(workspace = ws, name = 'training_experiment')
-run = experiment.submit(config=estimator)
+# Create a script config
+script_config = ScriptRunConfig(source_directory='training_folder',
+                                script='training.py',
+                                arguments = ['--reg-rate', 0.1],
+                                environment=sklearn_env) 
 ```

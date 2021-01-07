@@ -3,8 +3,8 @@ uid: learn.wwl.monitor-models-with-azure-machine-learning.capturing-viewing-tele
 title: Capture and view telemetry
 metadata:
   title: Capture and view telemetry
-  description: "Learn how to capture and view telemetry in an Azure Machine Learning service."
-  ms.date: 07/16/2020
+  description: "Capture and view telemetry"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

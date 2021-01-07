@@ -39,7 +39,7 @@ quiz:
     - content: "A person collection"
       isCorrect: false
       explanation: "A collection of friends, although technically a collection, is called a *person group*. A person group is list or collection of people (persons)."
-    - content: "A people group"
+    - content: "A faces collection"
       isCorrect: false
       explanation: "A collection of friends, although technically a collection, is called a *person group*. A person group is list or collection of people (persons)."
   - content: "In both the Face API and the Emotion API, which of the following terms describes the rectangular coordinates of a face that's detected in an image? (Choose one.):"

@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: 'True'
       isCorrect: false
-      explanation: "An Azure Service Bus queue message must be larger than 64 KB but smaller than 256 KB."
+      explanation: "An Azure Storage queue message must be smaller than 64 KB. A service bus queue can be up to 256 KB for standard tier, and 1MB for the premium tier."
     - content: 'False'
       isCorrect: true
-      explanation: "An Azure Service Bus queue message must be larger than 64 KB but smaller than 256 KB."
+      explanation: "An Azure Storage queue message must be smaller than 64 KB. A service bus queue can be up to 256 KB for standard tier, and 1MB for the premium tier."
 
       
 

@@ -44,7 +44,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
     :::image type="content" source="../media/5-WebPageLive.png" alt-text="Live site." loc-scope="vs":::
 
     > [!NOTE]
-    > If you can't locate the URL from the output, navigate to https://&lt;AppName&gt;.azurewebsites.net, where &lt;AppName&gt; is the name you provided earlier. For example, **https://alpineskihouse123.azurewebsites.net/**.
+    > If you can't locate the URL from the output, navigate to https://&lt;AppName&gt;.azurewebsites.net, where &lt;AppName&gt; is the name you provided earlier. For example, **"https://alpineskihouse123.azurewebsites.net/"**.
 
 You now have a live web app! Your Azure App Service plan has been created and the app is running and ready to accept updates.
   

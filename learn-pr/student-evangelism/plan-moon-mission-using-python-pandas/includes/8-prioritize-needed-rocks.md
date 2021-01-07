@@ -1,23 +1,22 @@
-Determining which types of samples to collect from the Moon definitely requires expertise, but we can start to make some assumptions for the purpose of learning how to clean and manipulate data.
+Determining which types of samples to collect from the Moon requires expertise, but we can start to make some assumptions to learn how to clean and manipulate data.
 
 First, we can determine how much remains of each sample that was returned from the Apollo missions, given the amount that was originally collected and the percentage of remaining pristine sample.
 
 ```python
-rock_samples['Remaining(kg)'] = rock_samples['Weight(kg)'] * (rock_samples['Pristine(%)'] * .01)
+rock_samples['Remaining (kg)'] = rock_samples['Weight (kg)'] * (rock_samples['Pristine (%)'] * .01)
 rock_samples.head()
 ```
 
 > [!NOTE]
-> You need to multiply the **Pristine(%)** column by 0.01, because it was being represented as a whole number.
+> You need to multiply the **Pristine (%)** column by 0.01, because it was being represented as a whole number.
 
-Looking at the `head()` or `info()` of the `rock_samples` dataframe isn't actually useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
+Looking at the `head()` or `info()` of the `rock_samples` DataFrame isn't useful at this point. With over 2,000 samples, it's difficult to get an understanding of what the values are. For that, you can use the `describe()` function:
 
 ```python
 rock_samples.describe()
 ```
 
-
-| ID | Weight(kg) | Pristine(%) | Remaining(kg) |
+| ID | Remaining (kg) | Weight (kg) | Pristine (%) |  |
 |---|---|---|---|---|
 | count | 2229.000000 | 2229.000000 | 2229.000000 | 2229.000000 |
 | mean | 52058.432032 | 0.168253 | 84.512764 | 0.138103 |
@@ -31,11 +30,11 @@ rock_samples.describe()
 This helps us see that, on average, each sample weighs about .16 kg and has about 84% of the original amount remaining. We can use this knowledge to extract only the samples that are likely running low, which means that they have been used a lot by researchers.
 
 ```python
-low_samples = rock_samples.loc[(rock_samples['Weight(kg)'] >= .16) & (rock_samples['Pristine(%)'] <= 50)]
+low_samples = rock_samples.loc[(rock_samples['Weight (kg)'] >= .16) & (rock_samples['Pristine (%)'] <= 50)]
 low_samples.head()
 ```
 
-| Index | ID | Mission | Type | Subtype	Weight(kg) | Pristine(%) | Remaining(kg) |
+| Index | ID | Mission | Type | Subtype	weight (kg) | Pristine (%) | Remaining (kg) |
 |---|---|---|---|---|---|---|---|
 | 11 | 10017 | Apollo11 | Basalt | Ilmenite | 0.973 | 43.71 | 0.425298 |
 | 14 | 10020 | Apollo11 | Basalt | Ilmenite | 0.425 | 27.88 | 0.118490 |
@@ -54,12 +53,12 @@ low_samples.info()
  1   Mission        27 non-null     object 
  2   Type           27 non-null     object 
  3   Subtype        27 non-null     object 
- 4   Weight(kg)     27 non-null     float64
- 5   Pristine(%)    27 non-null     float64
- 6   Remaining(kg)  27 non-null     float64
+ 4   Weight (kg)     27 non-null     float64
+ 5   Pristine (%)    27 non-null     float64
+ 6   Remaining (kg)  27 non-null     float64
  ```
 
-Twenty-seven samples seems like a small amount to base a recommendation on. We can probably find some other samples that are needed for more research here on Earth. To discover them, we can use the `unique()` function to see how many unique types we have across the `low_samples` and `rock_samples` dataframes.
+Twenty-seven samples seem like a small amount to base a recommendation on. We can probably find some other samples that are needed for more research here on Earth. To discover them, we can use the `unique()` function to see how many unique types we have across the `low_samples` and `rock_samples` DataFrames.
 
 ```python
 low_samples.Type.unique()
@@ -77,13 +76,14 @@ rock_samples.Type.unique()
 array(['Soil', 'Basalt', 'Core', 'Breccia', 'Special', 'Crustal'], dtype=object)
 ```
 
-We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` dataframe, how many of each type are actually considered low?
+We can see that, although six unique types were collected across all samples, the samples that are running low are from only four unique types. But this doesn't tell us everything about the samples we might want to focus on. For example, in our `low_samples` DatFrame, how many of each type are considered low?
 
 ```python
-low_samples.groupby('Type')['Weight(kg)'].count()
+low_samples.groupby('Type')['Weight (kg)'].count()
 ```
+
 > [!NOTE]
-> Here we are using the **Weight(kg)** column to count the number of rows for each type that we've grouped by. The actual weight has no impact.
+> Here we are using the **Weight (kg)** column to count the number of rows for each type that we've grouped by. The actual weight has no impact.
 
 ```output
 Type
@@ -91,7 +91,7 @@ Basalt     14
 Breccia     8
 Core        1
 Soil        4
-Name: Weight(kg), dtype: int64
+Name: Weight (kg), dtype: int64
 ```
 
 Notice that there are more Basalt and Breccia type rocks with low samples than those of Core and Soil. Additionally, because the likelihood is high that every mission has some Core and Soil collection requirements, we can focus on the Basalt and Breccia rock types for the samples that we need to have collected:
@@ -108,9 +108,9 @@ needed_samples.info()
  1   Mission        22 non-null     object 
  2   Type           22 non-null     object 
  3   Subtype        22 non-null     object 
- 4   Weight(kg)     22 non-null     float64
- 5   Pristine(%)    22 non-null     float64
- 6   Remaining(kg)  22 non-null     float64
+ 4   Weight (kg)     22 non-null     float64
+ 5   Pristine (%)    22 non-null     float64
+ 6   Remaining (kg)  22 non-null     float64
 ```
 
-But are Basalt and Breccia really the only two types of rocks we want to look for?
+But are Basalt and Breccia the only two types of rocks we want to look for?

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-meteor-showers-using-python.9-knowledge-ch
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/20/2020
+  ms.date: 11/24/2020
   author: sguthals
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -13,46 +13,47 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Meteor showers happen only once every two years. True or false?"
+  - content: "How often do we see meteor showers on Earth?"
     choices:
-    - content: "True. Meteor showers happen only when Earth aligns with certain planets or moons."
+    - content: "Only when Earth aligns with certain planets or moons."
       isCorrect: false
-      explanation: "False. Earth's location in its orbit matters in relation to meteor showers. But alignment with other planets or moons doesn't affect meteor showers."
-    - content: "True. Meteor showers originate from Mars, which has about a two-year orbit around the sun."
+      explanation: "Incorrect. Earth's location in its orbit matters in relation to meteor showers. But alignment with other planets or moons doesn't affect meteor showers."
+    - content: "Meteor showers originate from Mars, which has about a two-year orbit around the Sun."
       isCorrect: false
-      explanation: "False. Meteor showers originate from debris left by comets, asteroids, and sometimes planets or moons. But they don't depend on planetary orbits."
-    - content: "False. Meteor showers happen only every 76 years, when the Halley comet orbits near the sun."
-      isCorrect: false
-      explanation: "False. Debris from the Halley comet is left behind every 76 years. But that debris can enter our atmosphere every time we pass its location in space."
-    - content: "False. Meteor showers happen every night. It is just harder to see them on some nights."
+      explanation: "Incorrect. Meteor showers originate from debris left by comets, asteroids, and sometimes planets or moons. But they don't depend on planetary orbits."
+    - content: "Meteor showers happen every night."
       isCorrect: true
-      explanation: "True. Debris is always being brought into our atmosphere. Most of it burns before it passes through the atmosphere."
+      explanation: "Correct. Debris is always being brought into our atmosphere. Most of it burns before it passes through the atmosphere."
+    - content: "Every 76 years, when the Halley comet orbits near the Sun."
+      isCorrect: false
+      explanation: "Incorrect. Debris from the Halley comet is left behind every 76 years. But that debris can enter our atmosphere every time we pass its location in space."
   - content: "Where can you find meteorites on Earth?"
     choices:
     - content: "Antarctica"
       isCorrect: false
-      explanation: "It is typically easier to spot meteorites in Antarctica because of the high-contrast black rocks on white ice. But meteorites can be found elsewhere as well."
+      explanation: "Incorrect. It's typically easier to spot meteorites in Antarctica because of the high-contrast black rocks on white ice. But meteorites also can be found in other places."
     - content: "The desert"
       isCorrect: false
-      explanation: "It is typically easier to spot meteorites in the desert because of the high-contrast black rocks on light sand. But meteorites can be found elsewhere as well."
+      explanation: "Incorrect. It's typically easier to spot meteorites in the desert because of the high-contrast black rocks on light sand. But meteorites also can be found in other places."
     - content: "Your backyard"
       isCorrect: false
-      explanation: "It is typically extremely difficult to spot meteorites in your backyard because of the rocks and other debris scattered around. But meteorites can be found here and elsewhere as well."
+      explanation: "Incorrect. It's typically extremely difficult to spot meteorites in your backyard because of the rocks and other debris scattered around. But meteorites can be found here and elsewhere."
     - content: "All of the above"
       isCorrect: true
-      explanation: "Yes, meteorites can land anywhere on Earth. It is just much harder to find them when there is low contrast between the meteorites and their surroundings."
+      explanation: "Correct. Meteorites can land anywhere on Earth. It's just much harder to find them when there is low contrast between the meteorites and their surroundings."
   - content: "What would the following code return?
       `some_return_value = friends.loc[(friends['location'] == my_location) & (friends['hunger'] >= my_hunger), 'favorite_food'].tolist()`"
     choices:
+    - content: "A list of all the favorite foods of my friends who were with me and who were at least as hungry as I was."
+      isCorrect: true
+      explanation: "Correct. This code first grabs the rows of the friends who were with you and who were at least as hungry as you. Then, it grabs the <code>favorite_foods</code> column and creates a list."
     - content: "A list of my friends, sorted from least hungry to most hungry, who were with me and had the same favorite food as me."
       isCorrect: false
-      explanation: "False. This code looks for friends who were with you and who were at least as hungry as you. But it doesn't return a list of friends."
+      explanation: "Incorrect. This code looks for friends who were with you and who were at least as hungry as you. But it doesn't return a list of friends."
     - content: "A list of the locations of my friends who were at least as hungry as I was and who had a favorite food."
       isCorrect: false
-      explanation: "False. This code looks for friends who were with you and who were at least as hungry as you. But it doesn't return a list of locations."
-    - content: "A list of all of my friends who were with me, who were at least as hungry as I was, and who had the same favorite food as me. "
+      explanation: "Incorrect. This code looks for friends who were with you and who were at least as hungry as you. But it doesn't return a list of locations."
+    - content: "A list of all my friends who were with me, who were at least as hungry as I was, and who had the same favorite food as me. "
       isCorrect: false
-      explanation: "False. This code looks for friends who were with you and who were at least as hungry as you. But it doesn't return a list of friends."
-    - content: "A list of all of the favorite foods of my friends who were with me and who were at least as hungry as I was."
-      isCorrect: true
-      explanation: "True. This code first grabs the rows where your friends were with you and were at least as hungry as you were. Then it grabs the favorite_foods column and creates a list."
+      explanation: "Incorrect. This code looks for friends who were with you and who were at least as hungry as you. But it doesn't return a list of friends."
+

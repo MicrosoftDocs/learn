@@ -82,9 +82,9 @@ Let's enable Advanced Data Security on our database. Advanced Data Security is a
 
 1. Back in the portal, navigate to your SQL server. In the search bar at the top of the portal, search for **serverNNNN**, then select the server.
 
-1. In the left menu, in the **Security** section, select the **Advanced Data Security** option.
+1. In the left menu, in the **Security** section, select the **Security Center** option.
 
-1. Click the **ON** button to enable Advanced Data Security.
+1. Click the **ON** button to enable Azure Defender for SQL.
 
 1. In the **Vulnerability Assessment Settings** box, will see a default storage account that will be used to store the results of scans.
 

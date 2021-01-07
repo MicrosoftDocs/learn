@@ -49,7 +49,7 @@ The following commands show you how to move a resource by using the Azure CLI.
 1. Return all the resources in your resource group to verify your resource moved.
 
     ```azurecli
-    az group show --name <destination resource group name> 
+    az resource list --resource-group <destination resource group name> --query [].type --output tsv | uniq
    ```
 
 1. Update the resource IDs in any tools and scripts that reference your resources.

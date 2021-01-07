@@ -20,7 +20,7 @@ Let's start by creating a new virtual machine in the Azure portal.
     | **Name** | vm1 |
     | **Region** | Select a region near you |
     | **Availability options** | No infrastructure redundancy required |
-    | **Image** | Windows Server 2019 Datacenter |
+    | **Image** | Windows Server 2019 Datacenter-Gen1 |
     | **Azure Spot instance** | No |
     | **Size** | Standard DS1 v2 |
     | **Username** | vmadmin |

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-remote-reboot-device
-title: How to remotely reboot your Azure Sphere device with Azure IoT direct method
+title: How to remotely restart your Azure Sphere device with an Azure IoT Hub direct method
 metadata:
-  title: How to remotely reboot your Azure Sphere device with Azure IoT direct method
-  description: In this section, we remotely reboot Azure Sphere with Azure IoT direct method.
+  title: How to remotely restart your Azure Sphere device with an Azure IoT Hub direct method
+  description: In this section, we remotely restart the Azure Sphere with an Azure IoT Hub direct method.
   ms.date: 6/29/2020
   author: leestott
   ms.author: leestott
