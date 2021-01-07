@@ -43,13 +43,13 @@ We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9
 To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a quantum register. 
 
 Fortunately, the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger) from the `Microsoft.Quantum.Artithmetic` namespace of the Standard Library can be used to do just that. 
-It implements the map
+It implements the mapping
 $$
 \ket{x}\ket{b} \mapsto \ket{x}\ket{(b + a \cdot x) \bmod N}
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 
-To implement our map specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
+To implement our mapping specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
 Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
 Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit scratch register ($\ket{b}$) and preparing it in the number state $\ket{9}$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
@@ -63,7 +63,7 @@ In the next unit, you will put it all together and finally find the book you've 
 ### Flag the correct state by applying the oracle
 
 Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, i.e. those which are a solution to the search problem.
-This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` gate is applied to the $\ket{-}$ state, the $\ket{-}$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
+This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` operation is applied to the $\ket{-}$ state, the $\ket{-}$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 
 Supposing we have in hand the search register `missingDigitReg` and a `flagQubit` initialized to $\ket{-}$, how would we go about getting that phase factor on strictly the state $\ket{x}$ in `missingDigitReg` which satisfies $(9 + 6 \cdot x) \bmod 11 = 0$?
 
@@ -76,7 +76,7 @@ $$
 \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\ket{-}.
 $$
 
-Finally, we can apply a controlled `X` gate on the $\ket{-}$ flag qubit, controlled by the target register's being in the $\ket{0}$ number state (for four qubits, technically this is $\ket{0000}$).
+Finally, we can apply a controlled `X` operation on the $\ket{-}$ flag qubit, controlled by the target register's being in the $\ket{0}$ number state (for four qubits, technically this is $\ket{0000}$).
 Thus the state of `missingDigitReg` which satisfies the equation acquires the phase factor as
 $$
 -1*\ket{x_{good}} \ket{0} \ket{-}
@@ -86,7 +86,7 @@ $$
 \ket{x_{bad}} \ket{\neq 0} \ket{-}.
 $$
 
-After this, the target register can be uncomputed (handled by our `apply-within` statements) and de-allocated, having served its purpose. 
+After this, the target register can be uncomputed (handled by our `apply`/`within` statements) and de-allocated, having served its purpose. 
 
 The following code defines the operation `ApplyIsbnOracle`, where `flagQubit` is our qubit in $\ket{-}$, and `ComputeIsbnCheck` is the operation which performs the arithmetic mapping to the target register.
 

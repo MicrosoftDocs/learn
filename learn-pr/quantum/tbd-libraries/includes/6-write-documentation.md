@@ -86,4 +86,4 @@ The following names are recognized as documentation comment headers.
 ## Learn more
 
 This is precisely the documentation format used in the Q# source code to generate the official API documentation you explored earlier in the module.
-You can find more details and examples on the official [Q# documentation page](https://docs.microsoft.com/en-us/quantum/user-guide/language/programstructure/comments?view=qsharp-preview), including the ability to cross-reference other callables and write examples. 
+You can find more details and examples on the official [Q# documentation page](https://docs.microsoft.com/quantum/user-guide/language/programstructure/comments), including the ability to cross-reference other callables and write examples. 

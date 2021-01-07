@@ -5,7 +5,7 @@ Recall that the general process of Grover's algorithm works by applying a certai
 - applying the oracle, which reflects the state about the bad solutions, and
 - reflecting about the uniform superposition of states.
 
-The first step is handled by the `ReflectAboutCorrectDigit` operation which you also defined previously (simply allocating the ancilla $\ket{-}$ before passing it all on to `ApplyIsbnOracle`).
+The first step is handled by the `ReflectAboutCorrectDigit` operation which you also defined previously (simply allocating the auxiliary qubit $\ket{-}$ before passing it all on to `ApplyIsbnOracle`).
 The second step is *not* as problem specific as the oracle, but can be somewhat optimized for our situation. We implement it in the following. 
 
 ## Reflection about uniform superposition
@@ -103,7 +103,7 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
     }
 ```
 
-The `DumpMachine` call will allow us to see the full four-qubit quantum state, and the return will be the measurement result--hopefully the digit you need!
+The `DumpMachine` call will allow us to see the full four-qubit quantum state, and the return will be the measurement result---hopefully the digit you need!
 
 ### Full file
 

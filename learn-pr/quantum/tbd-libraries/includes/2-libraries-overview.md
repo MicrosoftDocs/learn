@@ -19,7 +19,7 @@ A NuGet *package* is essentially a ZIP file containing compiled code and related
 
 The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package.
 Naturally only those packages meant for use with Q# can be used, such as those containing Q# libraries, new/custom simulators, or new magic commands for Q# Jupyter Notebooks.
-Since they are all hosted through NuGet, users can easily use the Q# libraries produced by Microsoft, as well as other third-party libraries that are not released as part of the QDK. 
+Since they are all hosted through NuGet, users can easily use the Q# libraries produced by Microsoft, as well as other third-party Q# libraries that are not released as part of the QDK. 
 
 As you will learn further below, the simple process of adding these libraries to your projects is the same regardless.
 
@@ -53,7 +53,7 @@ Below, we only describe the methods to do so interactively.
 
 
 
-### [Q# applications or .NET interopability](#tab/tabid-csproj)
+### [Q# applications or .NET interoperability](#tab/tabid-csproj)
 
 **Command prompt or Visual Studio Code:** Using the command prompt on its own or from within Visual Studio Code, you can use the `dotnet` command to add a NuGet package reference to your project.
 

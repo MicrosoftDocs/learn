@@ -6,7 +6,7 @@ In this unit, you will familiarize yourself with the Q# API documentation: where
 
 ## Where is it?
 
-The official documentation for the Q# libraries can be found from the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum) homepage, under the **API reference** tab in the table of contents:
+The official documentation for the Q# libraries provided with the Quantum Development Kit can be found from the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum) homepage, under the **API reference** tab in the table of contents:
 
 ![Screengrab showing Q# libraries API location](../media/3-api-location.png)
 
