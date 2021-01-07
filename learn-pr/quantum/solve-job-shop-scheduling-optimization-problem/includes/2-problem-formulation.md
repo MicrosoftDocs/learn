@@ -4,9 +4,11 @@ Each job consists of a set of operations, and the operations must be performed i
 
 To illustrate the scenario, we are going to return to our spaceship, where a disaster is brewing...
 
-![PLACEHOLDER IMAGE: Spaceship cross-section showing warnings for the navigation module, life support and reactor areas.](../media/spaceship_emergency_placeholder.png)
+![Image showing a cross-section of the spaceship, with rooms such as life support, the reactor and the cockpit.](../media/spaceship-core.png)
 
 Back onboard the spaceship, warning lights are flashing and alarms are blaring. You have been hit by the electromagnetic fallout from a coronal mass ejection event of a nearby star and are experiencing multiple failures across different critical systems!
+
+![Image showing a failure in the life support system](../media/life-support-room-alert.png) | ![Image showing the cockpit, where the navigation system needs recalibration](../media/cockpit-room-alert.png) | ![Image showing a blown transformer in the reactor room](../media/reactor-room-alert.png)
 
 Fortunately, you have the tools, team, and expertise on board to fix all the issues, however it's important that you follow procedure to ensure the repairs are successful. Below is the list of repair tasks that you must complete:
 
@@ -115,7 +117,7 @@ $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}
 > [!NOTE]
 > Because $x_{i, t}$ can take the value of either $0$ or $1$, this is known as a binary optimization problem. More generally, this is called a polynomial unconstrained binary optimization (or PUBO) problem. You may also see these PUBO problems referred to as Higher Order Binomial Optimization (HOBO) problems - these terms both refer to the same thing.
 
-$t$ is used to represent the simulation time. It goes from time $0$ to $T - 1$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the max simulation time):
+$t$ is used to represent the simulation time. It goes from time $0$ to $T - 1$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the maximum allowed **makespan**):
 
 $$0 \leq t < T$$
 
@@ -147,7 +149,78 @@ For $t = 0 \rightarrow t < T$ for every operation, you define an index $x_{i + t
 
 The operation starts at the value of $t$ for which $x_{i + t}$ equals 1.
 
-In the next units, you will construct mathematical representations of the penalty terms and use these to build the cost function, which will be of the format:
+### Defining problem parameters in code
+
+Now that you've defined the problem parameters mathematically, you can transform this information to code. Below, you can see the code representation of the problem parameters: the maximum allowed makespan `T`, the operation runtimes `p`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
+
+```python
+# Set problem parameters
+## Time to allow for all jobs to complete 
+T = 20 
+
+## Processing time for each operation
+p = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
+
+## Assignment of operations to jobs (job ID: [operation IDs])
+### Operation IDs within a job must be in ascending order
+jobs_ops_map = {
+    0: [0, 1],
+    1: [2, 3],
+    2: [4, 5]
+}
+
+## Assignment of operations to machines
+### Three jobs, two machines
+machines_ops_map = {
+    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the multi-tool)
+    1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
+}
+
+## Inverse mapping of jobs to operations
+ops_jobs_map, T = process_config(jobs_ops_map, machines_ops_map, p, T)
+```
+
+The helper function `process_config` (seen above) is defined as follows:
+
+```python
+def process_config(jobs_ops_map:dict, machines_ops_map:dict, p:dict, T:int):
+    """
+    Process & validate problem parameters (config) and generate inverse dict of operations to jobs.
+
+    Keyword arguments:
+    
+    jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
+    machines_ops_map(dict): Mapping of operations to machines, e.g.:
+        machines_ops_map = {
+            0: [0,1],          # Operations 0 & 1 assigned to machine 0
+            1: [2,3]           # Operations 2 & 3 assigned to machine 1
+        }
+    """
+
+    # Problem cannot take longer to complete than all operations executed sequentially
+    ## Sum all operation processing times to calculate the maximum makespan
+    T = min(sum(p.values()), T) 
+
+    # Ensure operation assignments to machines are sorted in ascending order
+    for m, ops in machines_ops_map.items():
+        machines_ops_map[m] = sorted(ops)
+    ops_jobs_map = {}
+
+    for job, ops in jobs_ops_map.items():
+        # Fail if operation IDs within a job are out of order
+        assert (ops == sorted(ops)), f"Operation IDs within a job must be in ascending order. Job was: {job}: {ops}"
+
+        for op in ops:
+            # Fail if there are duplicate operation IDs
+            assert (op not in ops_jobs_map.keys()), f"Operation IDs must be unique. Duplicate ID was: {op}"
+            ops_jobs_map[op] = job
+
+    return ops_jobs_map, T
+```
+
+#### Next steps
+
+In the following units, you will construct mathematical representations of the penalty terms and use these to build the cost function, which will be of the format:
 
 $$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x),$$
 

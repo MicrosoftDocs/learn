@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.6-putting-it-together
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.7-putting-it-together
 title: Putting it all together
 metadata:
   title: Putting it all together
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-putting-it-together.md)]
+  [!include[](includes/7-putting-it-together.md)]

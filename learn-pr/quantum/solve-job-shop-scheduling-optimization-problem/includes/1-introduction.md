@@ -2,7 +2,7 @@ Throughout the [quantum computing fundamentals learning path](https://docs.micro
 
 This is an example of the **job shop scheduling** problem. Job shop scheduling is a common and important problem in many industries. For example, in the automobile industry manufacturing a car involves many different types of operations. These operations are performed by a number of specialized machines - optimizing the production line to minimize manufacturing time can make for significant cost savings.
 
-The job shop scheduling problem is defined as follows: we have a set of jobs $J_1, J_2, J_3,\dots, J_n$ which have various processing times and need to be processed using a set of machines $m_1, m_2, \dots, m_n$. The goal is to complete all jobs in the shortest time possible.
+The job shop scheduling problem is defined as follows: we have a set of jobs $J_1, J_2, J_3,\dots, J_n$ which have various processing times and need to be processed using a set of machines $m_1, m_2, \dots, m_n$. The goal is to complete all jobs in the shortest time possible. This is called minimizing the **makespan**.
 Each job consists of a set of operations, and the operations must be performed in the correct order to complete that job.
 
 In this module, we'll introduce the necessary concepts and tools for describing this problem in terms of a penalty model, and then solve an example problem using the Azure Quantum Optimization service.

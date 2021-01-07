@@ -122,46 +122,64 @@ $$= \left(x + y - 1\right)^2$$
 $$= (x + y - 1)\cdot(x + y - 1)$$
 $$= x^2 + y^2 + 2xy - 2x - 2y + 1$$
 
-If $T$ was larger, you would have more terms. The form of the equation would be the same however: still quadratic.
+The final step simplifies things a little. Because this is a binary optimization problem, $x$ and $y$ can only take the values of $0$ or $1$. Because of this, the following holds true:
+$$x^2 = x$$
+$$y^2 = y,$$
+
+as
+$$0^2 = 0$$
+and
+$$1^2 = 1$$
+
+This means that the quadratic terms in the penalty function can combine with the two linear terms, giving the following formulation of the penalty function:
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = x^2 + y^2 + 2xy - 2x - 2y + 1 $$
+$$= x + y + 2xy - 2x - 2y + 1 $$
+$$= 2xy - x - y + 1 $$
+
+If $T$ was larger, you would have more terms ($z$ and so on, for example).
 
 ### Code
 
 You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the weight term `w` is included, to be assigned a value later on:
 
 ```python
-def operation_once_constraint(n: int, o: int, T:int, w:float):
+# Reminder of the relevant parameters
+## Time to allow for all jobs to complete
+T = 20 
+
+## Assignment of operations to jobs (operation ID: job ID)
+ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
+
+def operation_once_constraint(ops_jobs_map:dict, T:int, w:float):
     """
-    Construct penalty terms for the operation-once constraint.
-    Penalty function is of form: x^2 + y^2 + 2xy - 2x - 2y + 1
-
+    Construct penalty terms for the operation once constraint.
+    Penalty function is of form: 2xy - x - y + 1
+    
     Keyword arguments:
-
-    n (int): Total number of jobs
-    o (int): Number of operations per job
+    
+    ops_jobs_map (dict): Map of operations to jobs {op: job}
     T (int): Time allowed to complete all operations
     w (float): Relative weight of this constraint
     """
-
+    
     terms = []
-
-    # x^2 + y^2 + 2xy - 2x - 2y parts of the constraint function
+    
+    # 2xy - x - y parts of the constraint function
     # Loop through all operations
-    for i in range(n*o):
+    for op in ops_jobs_map.keys():
         for t in range(T):
-            # x^2 + y^2 terms
-            terms.append(Term(w=w*1, indices=[i*T+t, i*T+t]))
 
-            # - 2x - 2y terms
-            terms.append(Term(w=w*-2, indices=[i*T+t]))
-
+            # - x - y terms
+            terms.append(Term(w=w*-1, indices=[op*T+t]))
+            
             # + 2xy term
             # Loop through all other start times for the same job
             # to get the cross terms
             for s in range(t+1, T):
-                terms.append(Term(w=w*2, indices=[i*T+t, i*T+s]))
-
+                terms.append(Term(w=w*2, indices=[op*T+t, op*T+s]))
+    
     # + 1 term
     terms.append(Term(w=w*1, indices=[]))
-
+    
     return terms
 ```

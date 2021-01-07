@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.10-summary
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.12-summary
 title: Summary
 metadata:
   title: Summary
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/12-summary.md)]
