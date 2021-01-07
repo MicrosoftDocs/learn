@@ -35,14 +35,6 @@ In this exercise, we’ll:
 
     This file contains the following comma-separated data. It includes a user_id, user_name, age_in_years for each user that we're going to load into the database.
 
-    ```
-    user_id ,user_name, age_in_years
-    3,Charles,39
-    4,Dakota,90
-    5,Dylan,33
-    ...
-    ```
-
 ## Load the CSV data into the payment_users table
 
 Let's connect to our database again, and load the CSV data into the database.
@@ -170,7 +162,7 @@ Now let's add to the application the code to retrieve user data from the databas
 
     The data for each user will be _userID_, _userName_, and _userAge_.
 
-3. Leave the code editor open, and switch to the Azure portal.
+3. Leave the code editor open, and switch to the Azure portal in a new tab.
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -179,7 +171,13 @@ Now let's add to the application the code to retrieve user data from the databas
 
 5. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
-6. Return to the code editor. Replace the value of the **_connectionString_ variable on line 14** with the value from the clipboard. In the connection string, **replace the text `{your_password}` with the password for the database** and **replace the text {your_database} with `paymentapp`**. Leave the quotation marks around your connection string.
+6. Return to the code editor.
+
+    * **On line 14**, Replace the value of the string **_connectionString_** with the value from the clipboard.
+        * Make sure you leave the quotation marks around your connection string.
+    * In the connection string, **replace the text:
+        * **`{your_password}` with the password for the database**
+        * **`{your_database}` with `paymentapp`**.
 
     The payment string will read:
 
@@ -199,11 +197,11 @@ Now let's add to the application the code to retrieve user data from the databas
 
     This code creates a new `NpgsqlConnection` object that connects to the database, using your connection string.
 
-8. Replace the comment `// TODO: Specify the SQL query to run` with the following statements.
+8. Replace the comment `// TODO: Specify the SQL query to run` on line 26 with the following statements.
 
     ```C#
     conn.Open();
-    using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
+    using (var command = new NpgsqlCommand("SELECT * FROM payment_users", conn))
                     {
     ```
 
@@ -217,7 +215,7 @@ Now let's add to the application the code to retrieve user data from the databas
 
     These statements open the connection to the database and run the SQL statement. You can use the `SqlDataReader` object to fetch the results one row at a time.
 
-10. Replace the comment `// TODO: Read the data a row at a time` with the following block of code.
+10. Replace the comment `// TODO: Read the data a row at a time` on line 24 with the following block of code.
 
     ```C#
     while (reader.Read())
@@ -264,7 +262,7 @@ Now let's add to the application the code to retrieve user data from the databas
                         Console.Out.WriteLine("Opening connection");
                     // TODO: Specify the SQL query to run
                         conn.Open();
-                        using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
+                        using (var command = new NpgsqlCommand("SELECT * FROM payment_users", conn))
                         {
                     // TODO: Execute the query
                             var reader = command.ExecuteReader();
@@ -274,8 +272,8 @@ Now let's add to the application the code to retrieve user data from the databas
                             {
                                 string userID = reader.GetInt32(0).ToString();
                                 string userName = reader.GetString(1);
-                                int moduleSequence = reader.GetInt32(2);
-                                Users user = new Users(userID, userName, moduleSequence);
+                                int userAge = reader.GetInt32(2);
+                                Users user = new Users(userID, userName, userAge);
                                 userList.Add(user);
                             }
                         }
@@ -420,7 +418,7 @@ With the application fully configured to retrieve and display the course data to
 
     ```bash
     az webapp up \
-        --resource-group postgres \
+        --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
         --name $WEBAPPNAME
     ```
 
