@@ -33,7 +33,15 @@ In these cases, where the solutions are completely random, then no algorithm can
 
 ## How do we write a cost function?
 
-TODO
+As mentioned above, the cost function represents the quantity that you want to minimize. Its main purpose is to map each configuration of a problem to a single number. This allows the optimizer to easily compare potential solutions and determine which is better.
+
+The key to generating a cost function for your problem is in recognizing what parameters of your system affect the chosen cost. In your mining mission, the cost is the weight difference between two containers. The parameters affecting this cost then are the assignments of each mineral chunk to a container.
+
+In principle, the cost function could be any mathematical function $f = f(x_0, x_1, \dots)$, where the function variables $x_1, x_2, \dots$ encode the different configurations. The smooth landscape shown above could for example be generated using a quadratic function of two continuous variables $f(x, y) = x^2 + y^2$. However, certain optimization methods may expect the cost function to be in a particular form. For instance, the Azure Quantum solvers expect a *Binary Optimization Problem*. For this problem type, configurations must be expressed via binary variables with $x_i \in \{0, 1\}$. Many problems are naturally suited to be expressed in this form, such as whether a certain mineral chunk is loaded on the first or the second container.
+
+The term **Polynomial Unconstrained Binary Optimization** (PUBO) refers to cost functions that are polynomials of the binary variables. *Unconstrained* implies that we do not impose additional restrictions on which variable assignments are valid, which simplifies the solver's task. [Module 11](TODO link) will teach you how to get around this restriction and express constraints in a PUBO setting. A special subset of PUBO problems are the **Quadratic Unconstrained Binary Optimization** (QUBO) problems, which employ polynomial cost functions of degree 2. The Azure Quantum solvers natively work on PUBOs of any degree, but other providers available on Azure may only work with QUBO problems for example.
+
+You may also have come across problems referred to as **Ising** problems. Sometimes, it is more convenient to give our binary variables the values $\{-1, 1\}$ instead of $\{0, 1\}$. Otherwise, these problems function in an identical way to PUBO problems.
 
 ## Summary
 
@@ -43,4 +51,4 @@ To summarize, here are the necessary conditions for QIO to perform well, compare
 
 - Optimization landscapes should be rugged but structured. Such landscapes occur frequently in real-world problems.
 - If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with hundreds of variables, QIO has achieved orders of magnitude improvement over previously used methods.
-- TODO - cost function summary
+- Problem parameters that affect the chosen cost metric must be represented via the variables of a cost function. Express cost functions as polynomials over binary variables to obtain a PUBO problem.

@@ -6,10 +6,9 @@ We may want to optimize a particular task regarding the time it takes to be done
 
 Your superior has told you about one problem the galactic trade federation is facing with. As you know, there are rare mineral exploitation mines in a recently discovered asteroid in a near cluster. The space fleet is dealing with the problem of transporting the mineral. To illustrate the optimization method, let's look at how the logistics division efficiently loads cargo vessels.
 
-![An illustration that shows two space ships that need to be loaded with minerals as evenly as possible](../media/mineral_loading.svg)
+![An illustration that shows two containers that need to be loaded with minerals as evenly as possible](../media/mineral_loading.svg)
 
-Two competing galactic shipping companies have laid claim to the asteroid, and the executive board of trade federation is discussing pros and cons of each of them. They have to chose a fair candidate if they want to avoid a political crisis at all costs. To resolve this conundrum, you decide to split the shipping between both companies. A 
-freighter ship from each company will arive to the asteroid and they must be loaded with the mineral as evenly as possible. Taking into account that the mineral is mined in massive chunks of various sizes, so we can't easily divide in half them between the ships, how can you optimize the distribution of the mineral and avert an intergalactic crisis?
+Two competing galactic shipping companies have laid claim to the asteroid, and the executive board of trade federation is discussing pros and cons of each of them. They have to chose a fair candidate if they want to avoid a political crisis at all costs. To resolve this conundrum, you decide to split the shipping between both companies. A freighter ship from each company will arive to the asteroid and they must be loaded with the mineral as evenly as possible. Taking into account that the mineral is mined in massive chunks of various sizes, so we can't easily divide in half them between the ships, how can you optimize the distribution of the mineral and avert an intergalactic crisis?
 
 ## Learning objectives
 

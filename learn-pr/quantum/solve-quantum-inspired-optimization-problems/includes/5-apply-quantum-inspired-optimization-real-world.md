@@ -9,27 +9,27 @@ This short animation shows one possible way an optimizer might distribute the mi
 In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although it is classified as NP-hard, in practice there exist other efficient algorithms able to provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight ship problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. In a later [module](https://docs.microsoft.com/learn/modules/solve-job-shop-scheduling-optimization-problem?azure-portal=true), we'll tackle a more challenging problem where QIO might provide a practical advantage.
+> This problem is known as a *number partitioning problem*. Although it is classified as NP-hard, in practice there exist other efficient algorithms able to provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. In a later [module](https://docs.microsoft.com/learn/modules/solve-job-shop-scheduling-optimization-problem?azure-portal=true), we'll tackle a more challenging problem where QIO might provide a practical advantage.
 
 ## Express the problem
 
-Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the mineral chunks on the ship. This sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
+Let's start by coming up with an equation for the weight of a given container, which is the sum of all the mineral chunks it contains. This sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
 
 ![An equation that shows the sum of mineral weights](../media/costfun-1.svg)
 
-Ideally, we look for a solution where the weight difference between the ships $\Delta$ is as small as possible.
+Ideally, we want a solution where the weight difference between the containers $\Delta$ is as small as possible.
 
-![An equation that subtracts the total weights on one ship from the total weights on the other ship to produce a cost function](../media/costfun-2.svg)
+![An equation that subtracts the total weights on one container from the total weights on the other container to produce a cost function](../media/costfun-2.svg)
 
-This equation subtracts the sum of weights on ship *B* from the sum of weights on ship *A*.
+This equation subtracts the sum of weights on container *B* from the sum of weights on container *A*.
 
 The letter *H* is used to represent a cost function. This notation originates from the model we are using to define our optimization problem, known as the *Ising model*. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
 
 ## Refine the problem
 
-Next, we introduce a variable, $x_i$, to represent whether an individual mineral chunk *i* is assigned to ship *A* or ship *B*.
+Next, we introduce a variable, $x_i$, to represent whether an individual mineral chunk *i* is assigned to container *A* or container *B*.
 
-Because we can assign the chunk *i* to either ship, the variable $x_i$ can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the mineral chunk is placed on ship *A*, and *-1* represents that the chunk is placed on ship *B*. Because of our decision to make $x_i$ be either *1* or *-1*, our optimization problem is called an *Ising problem*.
+Because we can assign the chunk *i* to either container, the variable $x_i$ can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the mineral chunk is placed on container *A*, and *-1* represents that the chunk is placed on container *B*. Because of our decision to make $x_i$ be either *1* or *-1*, our optimization problem is called an *Ising problem*.
 
 By introducing this variable $x_i$, we can simplify the equation as follows:
 
@@ -39,14 +39,14 @@ By introducing this variable $x_i$, we can simplify the equation as follows:
 
 There's one last change we need to make before we can solve our problem.
 
-If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to ship *B* by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
+If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to container *B* by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
 ![An equation that squares the previous computation to ensure that the cost function is not negative](../media/costfun-4.svg)
 
 This final model gives us a cost function with the required properties.
 
-- If all the mineral is on one ship, the function is at its highest value. This is the least optimal solution.
-- If the freight ships are perfectly balanced, the value of the summation inside the square is *0*. This means the function is at its lowest, or optimal, value.
+- If all the mineral is on one container, the function is at its highest value. This is the least optimal solution.
+- If the freight containers are perfectly balanced, the value of the summation inside the square is *0*. This means the function is at its lowest, or optimal, value.
 
 ## Solving the Problem with Azure Quantum
 
@@ -97,7 +97,7 @@ def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
             )
 
     # Return an Ising-type problem
-    return Problem(name="Ship Sample Problem", problem_type=ProblemType.ising, terms=terms)
+    return Problem(name="Freight Balancing Problem", problem_type=ProblemType.ising, terms=terms)
 ```
 
 Let us instantiate a problem by defining a list of mineral chunks via their weights:
@@ -143,44 +143,44 @@ Notice that the solver returned the results in the form of a Python dictionary, 
 ```python
 def printResultSummary(result):
     # Print a summary of the result
-    shipAWeight = 0
-    shipBWeight = 0
+    containerAWeight = 0
+    containerBWeight = 0
     for chunk in result['configuration']:
         chunkAssignment = result['configuration'][chunk]
         chunkWeight = mineralWeights[int(chunk)]
-        ship = ''
+        container = ''
         if chunkAssignment == 1:
-            ship = 'A'
-            shipAWeight += chunkWeight
+            container = 'A'
+            containerAWeight += chunkWeight
         else:
-            ship = 'B'
-            shipBWeight += chunkWeight
+            container = 'B'
+            containerBWeight += chunkWeight
 
-        print(f'Mineral chunk {chunk} with weight {chunkWeight} was placed on Ship {ship}')
+        print(f'Mineral chunk {chunk} with weight {chunkWeight} was placed on Container {container}')
 
-    print(f'\nTotal weights: \n\tShip A: {shipAWeight} tons \n\tShip B: {shipBWeight} tons')
+    print(f'\nTotal weights: \n\tContainer A: {containerAWeight} tons \n\tContainer B: {containerBWeight} tons')
 
 printResultSummary(result)
 ```
 
 ```output
-Chunk 0 with weight 1 was placed on Ship A
-Chunk 1 with weight 5 was placed on Ship B
-Chunk 2 with weight 9 was placed on Ship A
-Chunk 3 with weight 21 was placed on Ship A
-Chunk 4 with weight 35 was placed on Ship B
-Chunk 5 with weight 5 was placed on Ship B
-Chunk 6 with weight 3 was placed on Ship B
-Chunk 7 with weight 5 was placed on Ship B
-Chunk 8 with weight 10 was placed on Ship A
-Chunk 9 with weight 11 was placed on Ship A
+Chunk 0 with weight 1 was placed on Container A
+Chunk 1 with weight 5 was placed on Container B
+Chunk 2 with weight 9 was placed on Container A
+Chunk 3 with weight 21 was placed on Container A
+Chunk 4 with weight 35 was placed on Container B
+Chunk 5 with weight 5 was placed on Container B
+Chunk 6 with weight 3 was placed on Container B
+Chunk 7 with weight 5 was placed on Container B
+Chunk 8 with weight 10 was placed on Container A
+Chunk 9 with weight 11 was placed on Container A
 
 Total weights:
-    Ship a: 52 tons
-    Ship b: 53 tons
+    Container a: 52 tons
+    Container b: 53 tons
 ```
 
-Great! The solver found a partition such that the ships are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution does not exist for this problem instance.
+Great! The solver found a partition such that the containers are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution does not exist for this problem instance.
 
 ## Improving the Cost Function
 
@@ -221,7 +221,7 @@ def createSimplifiedProblemForMineralWeights(mineralWeights: List[int]) -> Probl
             )
 
     # Return an Ising-type problem
-    return Problem(name="Ship Sample Problem (Simplified)", problem_type=ProblemType.ising, terms=terms)
+    return Problem(name="Freight Balancing Problem (Simplified)", problem_type=ProblemType.ising, terms=terms)
 ```
 
 Let's check that this creates a smaller problem:
@@ -252,20 +252,20 @@ printResultSummary(simplifiedResult)
 Submitting simplified problem...
 ......
 Result in 21.3847393989563 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -1026.0, 'parameters': {'all_betas': [0.00040816326530612246, 0.002006369056545571, 0.009862516138105735, 0.048480225637982856, 0.00040816326530612246, 0.0008283262589495933, 0.0016810047586003002, 0.0034114299382712347, 0.006923153646170291, 0.014049843401670412, 0.028512742848146536, 0.05786374135870263, 0.11742863820077845, 0.00040816326530612246, 0.0006433203910121752, 0.001013959757455542, 0.0015981374197104284, 0.0025188802548612886, 0.003970095224652018, 0.00625740587008283, 0.009862516138105737, 0.015544656458908674, 0.024500476454672904, 0.03861605742737167, 0.060864118050637114, 0.0959300641462203, 0.15119872762210523, 0.00040816326530612246, 0.0005707278344641172, 0.0007980391395286468, 0.0011158847173059405, 0.001560322847138076, 0.0021817732150494, 0.0030507368206765485, 0.004265794027002447, 0.005964788098887627, 0.00834046295705291, 0.011662329186672137, 0.01630723890971679, 0.022802138115127556, 0.03188384652361621, 0.044582646767983895, 0.062339165739196796, 0.08716780780834711, 0.12188528075433366, 0.17043013972803087, 0.00040816326530612246, 0.0005322267924038292, 0.0006940001284535482, 0.0009049453826219594, 0.0011800086368191764, 0.0015386789188685584, 0.002006369056545571, 0.002616216249991688, 0.0034114299382712343, 0.004448353313213404, 0.005800455397657764, 0.007563536538403329, 0.009862516138105733, 0.012860283556576787, 0.0167692392934654, 0.021866344178522693, 0.02851274284814652, 0.03717935188832539, 0.04848022563798284, 0.06321606371647785, 0.08243094290953187, 0.1074862930319301, 0.1401573581710174, 0.18275897786933026], 'replicas': 70, 'sweeps': 600}}
-Chunk 0 with weight 1 was placed on Ship A
-Chunk 1 with weight 5 was placed on Ship B
-Chunk 2 with weight 9 was placed on Ship A
-Chunk 3 with weight 21 was placed on Ship A
-Chunk 4 with weight 35 was placed on Ship B
-Chunk 5 with weight 5 was placed on Ship B
-Chunk 6 with weight 3 was placed on Ship B
-Chunk 7 with weight 5 was placed on Ship B
-Chunk 8 with weight 10 was placed on Ship A
-Chunk 9 with weight 11 was placed on Ship A
+Chunk 0 with weight 1 was placed on Container A
+Chunk 1 with weight 5 was placed on Container B
+Chunk 2 with weight 9 was placed on Container A
+Chunk 3 with weight 21 was placed on Container A
+Chunk 4 with weight 35 was placed on Container B
+Chunk 5 with weight 5 was placed on Container B
+Chunk 6 with weight 3 was placed on Container B
+Chunk 7 with weight 5 was placed on Container B
+Chunk 8 with weight 10 was placed on Container A
+Chunk 9 with weight 11 was placed on Container A
 
 Total weights:
-    Ship A: 52 tonnes
-    Ship B: 53 tonnes
+    Container A: 52 tons
+    Container B: 53 tons
 ```
 
-As you can see, the quality of the solution is the same for both cost functions - the ships are loaded within 1 tonne of each other. This reveals an important fact about using QIO solvers: it is often possible (and necessary) to optimize the cost function in order to generate more optimal solutions more quickly.
+As you can see, the quality of the solution is the same for both cost functions - the containers are loaded within 1 ton of each other. This reveals an important fact about using QIO solvers: it is often possible (and necessary) to optimize the cost function in order to generate more optimal solutions more quickly.
