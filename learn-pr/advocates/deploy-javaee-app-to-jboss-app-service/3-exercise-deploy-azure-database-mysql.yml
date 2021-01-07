@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-javaee-app-to-appservice.3-azure-database-mysql
+uid: learn.azure.deploy-javaee-app-to-appservice.3-exercise-deploy-azure-database-mysql
 title: What is Azure Database for MySQL
 metadata:
   title: What is Azure Database for MySQL
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-azure-database-mysql.md)]
+  [!include[](includes/3-exercise-deploy-azure-database-mysql.md)]

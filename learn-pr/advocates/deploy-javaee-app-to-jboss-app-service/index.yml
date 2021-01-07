@@ -33,11 +33,14 @@ prerequisites: |
   - [Bash](https://www.gnu.org/software/bash/)
 units:
   - learn.azure.deploy-javaee-app-to-appservice.1-introduction
-  - learn.azure.deploy-javaee-app-to-appservice.2-javaee-on-jboss
-  - learn.azure.deploy-javaee-app-to-appservice.3-azure-database-mysql
-  - learn.azure.deploy-javaee-app-to-appservice.4-exercise-deploy-javaee-app-to-app-service
-  - learn.azure.deploy-javaee-app-to-appservice.5-knowledge-check
-  - learn.azure.deploy-javaee-app-to-appservice.6-summary
+  - learn.azure.deploy-javaee-app-to-appservice.2-deploy-azure-database-mysql
+  - learn.azure.deploy-javaee-app-to-appservice.3-exercise-deploy-azure-database-mysql
+  - learn.azure.deploy-javaee-app-to-appservice.4-deploy-jakartaee-app-to-jboss-eap
+  - learn.azure.deploy-javaee-app-to-appservice.5-exercise-deploy-jakartaee-app-to-jboss-eap
+  - learn.azure.deploy-javaee-app-to-appservice.6-admin-jboss-eap
+  - learn.azure.deploy-javaee-app-to-appservice.7-exercise-admin-jboss-eap
+  - learn.azure.deploy-javaee-app-to-appservice.8-knowledge-check
+  - learn.azure.deploy-javaee-app-to-appservice.9-summary
 
 badge:
   uid: learn.azure.deploy-javaee-app-to-appservice.badge

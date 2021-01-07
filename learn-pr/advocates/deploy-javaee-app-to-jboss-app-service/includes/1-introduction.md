@@ -1,6 +1,8 @@
-Java EE applications have been widely used and provided as standard technologies in the field of utilizing various enterprise businesses such as purchase management, manufacturing management and CRM until Java EE 8.
-Even after the transfer from Java EE to the Jakarta EE project in Eclipse, the technology that supports Jakarta EE is very important, and we can continue to develop the effectively utilize the assets developed in the past and be able to create cloud-native modern applications in combination with MicroProfile. It is one of the notable technologies even now.
-In this module, you can learn how to deploy a Java EE (Jakarta EE) application that works with a general DB to JBoss EAP on Azure App Service and work with MySQL.
+Java EE applications have been widely used and provided as standard technologies in the field of utilizing various enterprise businesses such as purchase management, manufacturing management and CRM until Java EE 8.  
+For example, if you provide a freight delivery system, you must receive the package and register the shipping address information. At that time, it is necessary to obtain regional information, country information, and even town information from the database and register the delivery address.
+In this way, many enterprise services create services that query and update data from databases.
+
+In this module, you will craete a sample database on `Azure Database for MySQL`. You will create and deploy a `Java EE (Jakarta EE) Application` to `JBoss EAP on Azure App Service`. Finally you will learn how to manage the `JBoss EAP on Azure App Service`.
 
 ## Learning Objectives
 
@@ -19,5 +21,6 @@ By the end of this module, you can:
 - [git command](https://git-scm.com/downloads)
 - [Maven command](https://maven.apache.org/download.cgi)
 - [MySQL client command](https://dev.mysql.com/downloads/shell/)
+- [MySQL Example World Database](https://dev.mysql.com/doc/index-other.html)
 - [jq command](https://stedolan.github.io/jq/)
 - [Bash](https://www.gnu.org/software/bash/)
