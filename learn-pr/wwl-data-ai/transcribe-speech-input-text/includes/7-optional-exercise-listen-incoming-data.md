@@ -16,27 +16,27 @@ Another potential use for Speech-to-Text is to perform the translation operation
 1. Create a new file in your folder called **microphoneinput.py**.
 1. Paste the following code into the newly created file.
 
-```python
-import azure.cognitiveservices.speech as speechsdk
+    ```python
+    import azure.cognitiveservices.speech as speechsdk
 
-speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
-speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+    speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
+    speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
-speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
+    speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
 
-print("Begin speaking...")
+    print("Begin speaking...")
 
-result = speech_recognizer.recognize_once()
-if result.reason == speechsdk.ResultReason.RecognizedSpeech:
-    print("Recognized: {}".format(result.text))
-elif result.reason == speechsdk.ResultReason.NoMatch:
-    print("No speech could be recognized: {}".format(result.no_match_details))
-elif result.reason == speechsdk.ResultReason.Canceled:
-    cancellation_details = result.cancellation_details
-    print("Speech Recognition canceled: {}".format(cancellation_details.reason))
-    if cancellation_details.reason == speechsdk.CancellationReason.Error:
-        print("Error details: {}".format(cancellation_details.error_details))
-```
+    result = speech_recognizer.recognize_once()
+    if result.reason == speechsdk.ResultReason.RecognizedSpeech:
+        print("Recognized: {}".format(result.text))
+    elif result.reason == speechsdk.ResultReason.NoMatch:
+        print("No speech could be recognized: {}".format(result.no_match_details))
+    elif result.reason == speechsdk.ResultReason.Canceled:
+        cancellation_details = result.cancellation_details
+        print("Speech Recognition canceled: {}".format(cancellation_details.reason))
+        if cancellation_details.reason == speechsdk.CancellationReason.Error:
+            print("Error details: {}".format(cancellation_details.error_details))
+    ```
 
 1. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Codespaces and select it to run the code.
 1. Begin speaking so the application can collect the streaming audio.
