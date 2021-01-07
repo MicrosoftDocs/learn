@@ -1,6 +1,6 @@
 Suppose you work at a chocolate manufacturing factory as a technical specialist to support the factory line operators. You're commissioned to launch a new, near real-time dashboard to monitor the running operations for the ***roasting***, ***grinding*** and ***molding*** processes, which will enable line operators to answer questions such as:
 
-- *find all-time windows when the temperature during roasting is greater than 150°F during the past 24 hours, and trace back events in Azure Digital Twins correlating to these time windows*
+- *find all time windows when the temperature during roasting is greater than 150°F during the past 24 hours, and trace back events in Azure Digital Twins correlating to these time windows*
 - *Visualize vibration readings in the past ~2 minutes and check if there are unusual spikes or dips to ensure the process meets manufacturing quality standards* ***(this is the scenario you'll focus on throughout the exercises in this module)***
 - *Find all incidents with an unusual, higher than normal molding temperature in the previous five days*
 
