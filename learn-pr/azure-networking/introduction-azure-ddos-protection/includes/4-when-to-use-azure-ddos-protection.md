@@ -1,5 +1,5 @@
 
-### Build DDoS-resilient services on Azure
+## Build DDoS-resilient services on Azure
 
 Every deployed service in Azure is automatically protected by Azure's DDoS (Basic) Protection at no additional cost. DDoS Protection Basic requires no application or user configuration changes.
 

@@ -2,6 +2,8 @@
 <!-- A short video like the following example to explain what a DDoS attack is and the various types of DDoS attacks.
 [DDoS Attack Explained](https://www.youtube.com/watch?v=ilhGh9CEIwM) -->
 
+## Azure DDoS Basic or Standard Protection
+
 Microsoft offers DDoS Basic protection to all Azure customers for free. Microsoft also offers additional services in their DDoS Standard protection.
 
 You’re investigating the benefits for Contoso to upgrade to Azure Standard Denial of Service protection for your services running in Azure.

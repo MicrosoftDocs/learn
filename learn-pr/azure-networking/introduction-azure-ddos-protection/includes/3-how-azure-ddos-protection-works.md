@@ -3,6 +3,8 @@ In evaluating, whether Contoso should upgrade to DDoS Protection Standard, you n
 
 In this unit, you’ll learn how Azure DDoS Protection Standard works.
 
+## Features Azure standard DDoS Protection
+
 As outlined in the previous unit, Azure DDoS Protection Standard provides additional capabilities compared to Basic tier. When enabling Azure DDoS Protection Standard, the first step is to create a DDoS Protection Plan and associating Virtual Networks to that plan. Only services with a public IP address on the Virtual Networks are protected. For example, the public IP of an Azure Web Application Firewall (WAF), available in Azure Application Gateway, deployed for layer 7 protections, is protected. Any systems using Non-Routeable IP address on the protected Virtual Network, are not included in the Protection Plan. This is a customer benefit since these systems are not Internet facing, there is no charge for their protection.
 
 To simplify deployment, you can configure one DDoS protection plan for your organization and link virtual networks from multiple subscriptions to the same plan.
