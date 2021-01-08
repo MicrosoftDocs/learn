@@ -17,7 +17,6 @@ You can deploy to an endpoint by getting the prediction URL or by consuming the 
 
 1. Select  **Prediction URL**.
 
-
 1. **How to use the prediction API** shows two options: one for if you have an image URL and another for if you have an image file.
 
 1. To get the prediction URL, copy and save the value in the **If you have an image URL** box, and then select **Got it**.
@@ -35,14 +34,14 @@ When the model is trained and performing with a satisfactory accuracy, the model
 1. Select the prediction name to open the **Quick start** page. This page has links for resources to learn more about how to call the API to get predictions from the model. 
 
 1. Scroll to the section labeled **3** to _Make a web API call_. This section has links to code samples in multiple languages to help get you started.
- 
+
    :::image type="content" source="../media/deploy-model-prediction-quickstart.png" alt-text="Screenshot that shows quick start resources to learn how to call the API to get predictions from the model.":::
 
 1. In section **3**, select the link for the **Python Quickstart**. The corresponding [Azure Cognitive Services quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true) opens. Under the quickstart title, select the programming language you're using.
 
     Here's an example of the sample code for calling the prediction API in Python. For the complete code, see [Azure Cognitive Services quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true).
 
-   ```python
+    ```python
     from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
     
     # Create variables for your resource; replace with valid values.
@@ -69,7 +68,7 @@ When the model is trained and performing with a satisfactory accuracy, the model
         for prediction in results.predictions:
             print("\t" + prediction.tag_name +
                   ": {0:.2f}%".format(prediction.probability * 100))
-
+    ```
 
 When you post to the published endpoint, you get a result that looks like the following example. The probability of each tag the Custom Vision model was trained on is shown, sorted by the highest score. The model recognizes only the type of birds it was trained to recognize. If you post an image of a bird that the model wasn't trained to recognize, the model predicts one of the bird species it was trained on as the species of the new bird.
 

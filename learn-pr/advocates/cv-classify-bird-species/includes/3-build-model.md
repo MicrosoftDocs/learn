@@ -10,9 +10,9 @@ Let's build our model! We'll download the dataset, create our Azure service, upl
 > 1. If prompted, select **Review permissions**.
 >
 >     :::image type="content" source="../media/review-permissions-sandbox.png" alt-text="Screenshot that shows the Review Permissions button selected.":::
-> 
+>
 > 1. Verify the permission settings, and select **Accept**.
-> 
+>
 >    :::image type="content" source="../media/accept-permissions-sandbox.png" alt-text="Screenshot that shows permissions details and the Accept button.":::
 >
 >The message **Sandbox activated!** is shown, and you can continue with the learning module.
@@ -42,7 +42,7 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
 1. Search for **custom vision**. In the **Custom Vision** card in the search results, select **Create**.
 
-   :::image type="content" source="../media/create-resource-azure-portal.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
+    :::image type="content" source="../media/create-resource-azure-portal.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
 
 1. On the **Basics** tab, enter or select the required values:
 
@@ -62,7 +62,7 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
       1. Set **Training location** to *(US) South Central US*.
 
-      1.  Set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
+      1. Set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
 
    1. Under **Prediction Resource**:
 
@@ -83,6 +83,7 @@ When the deployment finishes, select **Go to resource**.
 ## Upload images
 
 Now, it's time to upload the images that we'll use to train the machine learning model. There are two ways to upload images:
+
 - In the Custom Vision portal, browse to, upload, and then tag images.
 - In a tool like Jupyter Notebook, use the images that are included in the SDK. 
 
@@ -104,15 +105,16 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
       1. For **Project Types**, select **Classification**.
 
-     1. For  **Classification Types**, select **Multiclass (Single tag per image)**.
+      1. For  **Classification Types**, select **Multiclass (Single tag per image)**.
 
       1. For **Domains**, select **General**.
 
       1. Select **Create project**.
-         :::image type="content" source="../media/create-project-custom-vision.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
 
-      > [!NOTE]
-      > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
+          :::image type="content" source="../media/create-project-custom-vision.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
+
+    > [!NOTE]
+    > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
 
 1. Add images and tags:
 
@@ -129,8 +131,8 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
       :::image type="content" source="../media/select-photos-folder-custom-vision.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
 
    1. In **Image upload**, add a description in **My Tags** to indicate the species for the birds shown in the photos.
- 
-  1. Select **Upload \<number\> files**.
+
+   1. Select **Upload \<number\> files**.
 
        :::image type="content" source="../media/tag-photos-custom-vision.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
 
@@ -164,7 +166,7 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
 
 1. Now use the following code to create the Custom Vision project. Before your run the code, replace the `<endpoint>` and `<key>` placeholders with the values for your Custom Vision resource.
 
-   To get the Custom Vision resource values:<br /><br />
+   To get the Custom Vision resource values:
 
    1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), go to your Custom Vision resource.
 
@@ -173,7 +175,7 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
    1. Copy the value from the **Endpoint** box. In the code, replace the `<endpoint>` placeholder with this value.
 
    1. For **KEY 1**, select the copy icon to copy the key. In the code, replace the `<key>` placeholder with this value.
- 
+
       :::image type="content" source="../media/sdk-upload-endpoint-key-values.png" alt-text="Screenshot that shows how to locate the endpoint and key values for a Custom Vision resource in the Azure portal.":::
 
    Your code will look like this example:
@@ -265,12 +267,12 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
          ```
 
 1. Now, we’ll add the code for our main method. For each tag, the method calls the three functions we created. We loop through each tag (folder name) in the `tags` collection that we created from the folders in the bird-photos/custom-photos directory. Here are the steps in the `for` loop:
- 
-  1. Call the `createTag` function to create the class `tag` in the Custom Vision project.
- 
-  1. Call the `createImageList` function and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
- 
-  1. Call the `imageList` function to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision time outs if we try to upload the entire dataset all at once.
+
+   1. Call the `createTag` function to create the class `tag` in the Custom Vision project.
+
+   1. Call the `createImageList` function and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
+
+   1. Call the `imageList` function to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision time outs if we try to upload the entire dataset all at once.
 
        ```python
        for tag in tags: 
