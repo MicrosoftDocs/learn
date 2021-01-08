@@ -2,7 +2,7 @@ In this unit, we look at Terraform configuration and scripting.
 
 # Why Terraform?
 
-Terraform is an open-source tool for provisioning and managing cloud infrastructure. Terraform manages "infrastructure as code" in configuration files that describe the topology of cloud resources.
+As an infrastructure manager you need a tool for provisioning and managing cloud infrastructure. You would also like to use "infrastructure as code" in configuration files that describe the topology of your cloud resources.
 Terraform is great at deploying infrastructure across cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition.
 
 ## Automate infrastructure management
@@ -30,7 +30,7 @@ As the configuration changes, Terraform can determine what changed and create in
 
 ## Hashicorp Configuration Language (HCL)
 
-Terraform configuration files use there own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
+Terraform configuration files use their own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
 You create configuration files using HCL (HashiCorp Configuration Language) syntax.
 HCL is declarative, describing an intended goal rather than the steps to reach that goal.
 The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure.
@@ -42,24 +42,26 @@ The HCL syntax allows you to specify the cloud provider - such as Azure - and th
 
 ### Modules
 
-Terraform modules are sets of configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more ".tf" files is a module.
+Terraform modules are sets of configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more ".tf" files.
 
-- Organize configuration
-- Encapsulate configuration
-- Reuse configuration
-- Provide consistency and ensure good practices
+A module has many benefits:
+
+- They organize your project
+- Encapsulate complexity
+- Allow you to reuse common tasks
+- And provide consistency and ensure good practices
 
 ![Module structure for Terraform.](../media/3-modules.png)
 
 ### State
 
-Terraform state is used to reconcile deployed resources with Terraform configurations. State allows Terraform to know what Azure resources to add, update, or delete. By default, Terraform state is stored locally when you run the terraform apply command. This configuration isn't ideal for the following reasons:
+State allows Terraform to know what Azure resources to add, update, or delete.
 
-- Local state doesn't work well in a team or collaborative environment.
-- Terraform state can include sensitive information.
-- Storing state locally increases the chance of inadvertent deletion.
+Terraform uses this state to create plans and make changes to your infrastructure. Before any operation, Terraform does a refresh to update the state with the real infrastructure.
 
-Terraform supports the persisting of state in remote storage. For More information on managing remote state, see the Summary unit.
+State is stored by default in a local text file named "terraform.tfstate". Terraform manages these files using the workflow actions you define in your modules.
+
+State can also be stored remotely, which works better in a team environment. For more information on managing remote state, see the Summary unit.
 
 ### Configuration Files
 
