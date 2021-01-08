@@ -11,7 +11,7 @@ Even if you're new to quantum computing, you may have heard the terms _qubit_ an
 
 A _qubit_ (quantum bit) is a basic unit of quantum information, analogous to a bit in classical computing.
 
-While a bit (binary digit) can have a value of either zero or one, a qubit in _superposition_ has a combination of both the zero and one states, with some probability of being zero or one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
+While a bit (binary digit) can have a value of either zero or one, a qubit is in a state of _superposition_ of both the zero and one states, with some probability of being zero and some probability of being one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
 
 ## What's in a Q# program?
 

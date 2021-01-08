@@ -2,9 +2,12 @@ Welcome to the world of quantum computing!
 
 Whether you're a developer or simply someone who wants to get a feel for what quantum programming is all about, this is a great place to start exploring quantum computing.
 
+You won’t be alone in this journey. We will instruct you step by step through each of the different modules. 
+
+Imagine yourself on a space exploration mission. The spaceship is equipped with a computer that has access to the Azure Quantum servers on Earth and you can use the power of quantum computing to complete the different tasks. The crew members, each expert on their own domains, will work with you to master quantum computing to achieve your mission.
 In this module, you'll write your very first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally, with a simulator, on standard hardware. You can, when it's generally available, run the same quantum program on quantum hardware through the Azure Quantum service.
 
-The quantum program you'll write in this module generates random numbers. A random number generator is not only easy to write, but it will help you understand the basics of quantum computing.
+Of course, the first thing you will do before using your quantum computer is logging into it. You would like to use a randomized password so no galactic hacker can jeopardize space fleet security. You will write a quantum program in this module to generate random numbers. A random number generator is not only easy to write, but it will help you understand the basics of quantum computing.
 
 ## Learning objectives
 
