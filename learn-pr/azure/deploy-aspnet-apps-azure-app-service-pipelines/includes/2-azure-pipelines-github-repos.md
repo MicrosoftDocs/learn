@@ -1,4 +1,4 @@
-DevOps has been an emerging trend in the software lifecycle management over the past several years. Its basic idea is to facilitate convergence between development and operational practices to optimize the process of developing, deploying, and maintaining software. As an IT professional with a programming background and operational support experience, you’re familiar with DevOps principles, but want to find more about the proper way to put them into practice.
+DevOps has been an emerging trend in the software lifecycle management over the past several years. Its basic idea is to facilitate convergence between development and operational practices to optimize the process of developing, deploying, and maintaining software. As an IT professional with a programming background and operational support experience, you're familiar with DevOps principles, but want to find more about the proper way to put them into practice.
 
 ## What are Azure Pipelines and GitHub repositories?
 
@@ -7,12 +7,12 @@ To accomplish your objective, you are considering leveraging a mix of vendor-spe
 Source control, also referred to as version control, is the practice of tracking and managing changes to code. Source control management systems, such as GitHub, maintain a history of code updates and facilitate conflict resolution when merging changes from multiple sources. Source control is an essential tool for multi-developer projects, allowing individuals and teams to collaborate when developing software within the same code repository. At the same time, to accommodate separation between development efforts, source control management systems allow for creation of different, independently tracked and maintained code repositories.
 
 > [!NOTE]
-> Collaborative software development typically involves the use of branches, which facilitate working simultaneously on multiple versions of the same code. This topic is outside of the scope of the current module. Instead, you’ll be working exclusively with a single version of code and committing changes directly into the single, *main* branch.
+> Collaborative software development typically involves the use of branches, which facilitate working simultaneously on multiple versions of the same code. This topic is outside of the scope of the current module. Instead, you'll be working exclusively with a single version of code and committing changes directly into the single, *main* branch.
 
 With GitHub serving the role of code repository, you plan to use Azure Pipelines to build software packages (also referred to as artifacts) based on that code and deploy them to a target environment. While you choose to target Azure in your deployments, you realize that Azure Pipelines can deploy software to any environment with internet connectivity. 
 
 > [!NOTE]
-> While GitHub and Azure Pipelines support close integration, they’re independent of each other and each has its own organization and user management. GitHub's structure consists of organizations and user accounts that contain repositories. Azure DevOps' structure consists of organizations that contain projects. 
+> While GitHub and Azure Pipelines support close integration, they're independent of each other and each has its own organization and user management. GitHub's structure consists of organizations and user accounts that contain repositories. Azure DevOps' structure consists of organizations that contain projects. 
 
 ## What is continuous integration and continuous deployment?
 
@@ -24,7 +24,7 @@ Continuous integration (CI) is the process of automating the build and testing o
 
 When authoring Azure Pipelines, you have a choice between using the classic and YAML-based approach:
 
-- With the classic approach, you rely on the visual designer included in the Azure DevOps web-based portal to define a build pipeline that builds your code, tests it, and publishes resulting artifacts. You also use a similar, graphical interface to define a release pipeline that consumes and deploys these artifacts to deployment targets. Neither of these pipelines resides in the code repository, but instead, it’s hosted by Azure Pipelines.
+- With the classic approach, you rely on the visual designer included in the Azure DevOps web-based portal to define a build pipeline that builds your code, tests it, and publishes resulting artifacts. You also use a similar, graphical interface to define a release pipeline that consumes and deploys these artifacts to deployment targets. Neither of these pipelines resides in the code repository, but instead, it's hosted by Azure Pipelines.
 
 > [!NOTE]
 > When using the visual designer, you have the option of displaying the corresponding YAML content. 
@@ -37,13 +37,13 @@ When authoring Azure Pipelines, you have a choice between using the classic and 
 ## What are the basic structure and components of an Azure pipeline?
 
 > [!NOTE]
-> This is not a comprehensive list of Azure Pipelines components. Its purpose is to introduce components that you’ll be using throughout the exercises in this module.
+> This is not a comprehensive list of Azure Pipelines components. Its purpose is to introduce components that you'll be using throughout the exercises in this module.
 
 Pipelines allow you to create a well-defined structure that represents the build, test, and deployment processes. At a high level, that structure consists of stages, jobs, and tasks. Each stage consists of one or more jobs, with each job including one or more tasks.
 
 ### Stages, tasks, and jobs
 
-When you plan a pipeline, you usually begin by identifying its stages. While typically a stage maps to an environment, this isn’t required. In the context of Azure Pipelines, an environment represents one or more deployment targets, such groups of development, testing, and production Azure App Service instances. 
+When you plan a pipeline, you usually begin by identifying its stages. While typically a stage maps to an environment, this isn't required. In the context of Azure Pipelines, an environment represents one or more deployment targets, such groups of development, testing, and production Azure App Service instances. 
 
 > [!NOTE]
 > Typically, you promote changes from one stage to the next as part of your release management strategy. Within each stage, you deploy build artifacts to the environment associated with that stage.
@@ -55,7 +55,7 @@ To implement individual execution steps within an Azure pipeline, you use tasks.
 A job is a series of tasks that execute sequentially on the same underlying host. Azure Pipelines identifies the appropriate operating system and software to be included on this host based on the job's setting that you specify. 
 
 > [!NOTE]
-> You can export reusable elements of your pipeline into templates. Azure Pipelines include several predefined templates. For example, in this module, you’ll generate the build pipeline by using the **ASP.NET** template.
+> You can export reusable elements of your pipeline into templates. Azure Pipelines include several predefined templates. For example, in this module, you'll generate the build pipeline by using the **ASP.NET** template.
 
 ### Variables
 

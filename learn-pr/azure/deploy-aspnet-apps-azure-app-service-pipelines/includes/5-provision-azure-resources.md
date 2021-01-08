@@ -1,4 +1,4 @@
-With the build artifacts successfully generated and published into Azure Pipelines, you’re ready to proceed to the next step. This step isn’t dependent on the build, instead it involves provisioning of the Azure resources into which you will deploy artifacts.Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you’ll now modify, as your first set of deployment steps. This deployment follows the concept of *Infrastructure as code*. 
+With the build artifacts successfully generated and published into Azure Pipelines, you're ready to proceed to the next step. This step isn't dependent on the build, instead it involves provisioning of the Azure resources into which you will deploy artifacts.Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you'll now modify, as your first set of deployment steps. This deployment follows the concept of *Infrastructure as code*. 
 
 ## What is Infrastructure as code?
 
@@ -52,7 +52,7 @@ Azure SQL Database is a PaaS relational database offering. It provides a highly 
 
 Before you provision a target infrastructure and deploy your software, you need to first authorize access from Azure Pipelines to the target environment. When targeting Azure App Service and Azure SQL Database, that environment is an Azure subscription. 
 
-Azure Pipelines provides several different methods for providing authenticated access to Azure subscriptions. In the upcoming exercise, you’ll use an Azure Active Directory (Azure AD) service principal for this purpose, which you can generate automatically from within the Azure DevOps portal. Within an Azure DevOps project, that service principal is represented by a service connection, which you can make available to any pipeline within the project.
+Azure Pipelines provides several different methods for providing authenticated access to Azure subscriptions. In the upcoming exercise, you'll use an Azure Active Directory (Azure AD) service principal for this purpose, which you can generate automatically from within the Azure DevOps portal. Within an Azure DevOps project, that service principal is represented by a service connection, which you can make available to any pipeline within the project.
 
 ### Provisioning the target environment
 
@@ -61,14 +61,12 @@ To implement the target environment, you decided to use an Azure CLI script, sin
 The second of these two points is important because, to deploy an Azure logical SQL server and an Azure App Service web app you need to assign to each a globally unique name. You can identify such names prior to the first deployment, store them by using a variable group, and reference them during pipeline execution across multiple stages. 
 
 > [!NOTE]
-> To reference a variable group from within a pipeline, you need to configure the variable group access setting and link the variable group to the pipeline. You’ll step through this process in the upcoming exercise.
+> To reference a variable group from within a pipeline, you need to configure the variable group access setting and link the variable group to the pipeline. You'll step through this process in the upcoming exercise.
 
 ### Connectivity to the target environment
 
 Both Azure App Service and Azure SQL Database implement public endpoints. There is, however, one additional consideration that you must account for in order for your solution to work. The logical Azure SQL server includes a built-in firewall, which, by default, blocks all incoming traffic. To allow Azure App Service web apps to access any of its databases, you need to add a firewall rule that allows traffic originating from Azure.
 
-<!--  Marcin, can you please doublecheck the next heading? It doesn’t make sense to me -- are we missing an “and”? Should it be “Azure Pipelines and Azure resource deployment agents”  -->
-
-## Azure Pipelines Azure resource deployment agents
+## Azure Pipelines agents for deployment of Azure resources
 
 To perform deployment of Azure resources, you have more flexibility due to multi-platform support for Azure CLI. This allows you to choose any of the Microsoft-hosted agents, including those running Ubuntu or macOS.

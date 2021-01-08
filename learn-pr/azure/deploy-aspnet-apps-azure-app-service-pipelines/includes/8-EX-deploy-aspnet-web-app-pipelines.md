@@ -1,10 +1,10 @@
-As you near the end of your research, you want to investigate the last steps of deploying apps into the Azure App Service. In this exercise, you'll complete the deployment process by using an Azure DevOps release pipeline to deploy the artifacts generated in the second exercise of this module into the Azure App Service web app you provisioned in the previous exercise. 
+To complete your testing you need to validate the last steps of the process of deploying apps into the Azure App Service. In this exercise, you'll use an Azure DevOps release pipeline to deploy the artifacts generated in the first exercise of this module into the Azure App Service web app you provisioned in the previous exercise. 
 
 ## Configure the Azure Pipeline to deploy the sample ASP.NET web app to the Azure App Service web app
 
-Now, it's time to configure the Azure Pipeline you used to provision Azure resources to deploy the sample ASP.NET web app. To start, you’ll add another stage named **DeployASPNETApp**, which will contain tasks to deploy the ASP.NET into the Azure App Service web app deployed during the **DeployAzureResources** stage.
+Now, it's time to configure the Azure Pipeline you used to provision Azure resources to deploy the sample ASP.NET web app. To start, you'll add another stage named **DeployASPNETApp**, which will contain tasks to deploy the ASP.NET into the Azure App Service web app deployed during the **DeployAzureResources** stage.
 
-1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you’re using in this lab, and then select **Edit**.
+1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you're using in this lab, and then select **Edit**.
 2. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and press the **Enter** key to start a new line. 
 3. On the **azure-pipelines.yml** editor pane, add the following code to create the **DeployASPNETApp** stage and job elements:
 
@@ -202,7 +202,7 @@ Verify that the sample ASP.NET web app has been successfully deployed to the Azu
 
 To validate the DevOps CI/CD functionality, you will reenable continuous integration.
 
-1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you’re using in this lab, and then select **Edit**.
+1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you're using in this lab, and then select **Edit**.
 1. On the **azure-pipelines.yml** editor pane, replace the `trigger: none` entry with the following content:
 
    ```yaml
@@ -215,11 +215,11 @@ To validate the DevOps CI/CD functionality, you will reenable continuous integra
    > [!NOTE]
    > This will automatically trigger a new deployment.
 
-1. Within the browser window displaying the Azure DevOps portal, navigate back to the **Pipelines** pane, select the pipeline you’re using in this lab, then select the entry representing the current pipeline run, and monitor its progress until successful completion.
+1. Within the browser window displaying the Azure DevOps portal, navigate back to the **Pipelines** pane, select the pipeline you're using in this lab, then select the entry representing the current pipeline run, and monitor its progress until successful completion.
 
 ## Trigger continuous integration and continuous deployment
 
-To conclude this exercise, you’ll trigger integration and deployment by modifying the code hosted in the GitHub repository.
+To conclude this exercise, you'll trigger integration and deployment by modifying the code hosted in the GitHub repository.
 
 1. Within the web browser window displaying the Azure DevOps portal, switch to the browser tab displaying the fork of the GitHub repository you created in the first exercise of this lab.
 1. Within the web browser window displaying the GitHub repository you created in the first exercise of this lab, select the **Code** tab header.
@@ -227,7 +227,7 @@ To conclude this exercise, you’ll trigger integration and deployment by modify
 1. On the page displaying the content of **_Layout.cshtml**, select the **Edit this file** pencil-shaped icon.
 1. Change the content of line **27** from `<p>&copy; @DateTime.Now.Year - MS Learn Sample ASP.NET Application</p>` to `<p>&copy; @DateTime.Now.Year - MS Learn Sample Azure ASP.NET Application</p>` and select **Commit changes**.
 1. Within the web browser window displaying the GitHub repository, switch back to the web browser tab displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry.
-1. Within the browser window displaying the Azure DevOps portal, on the **Pipelines** pane, select the pipeline you’re using in this lab, then select the entry representing the current pipeline run, and monitor its progress until successful completion.
+1. Within the browser window displaying the Azure DevOps portal, on the **Pipelines** pane, select the pipeline you're using in this lab, then select the entry representing the current pipeline run, and monitor its progress until successful completion.
 1. Within the web browser window displaying the Azure DevOps portal, switch to the web browser tab displaying the sample ASP.NET web app page.
 1. Refresh the web browser page and verify that the footer of the page changed according to the change you made in the GitHub repository.
 
@@ -235,3 +235,35 @@ To conclude this exercise, you’ll trigger integration and deployment by modify
 
 ## Results
 In this exercise you used an Azure DevOps release pipeline to deploy artifacts into the Azure App Service web app.
+
+## Clean up your environment
+
+You successfully completed all exercises in this module. To clean up your lab environment, you should delete the Azure DevOps project and the Azure resources you provisioned in the first two exercises.
+
+> [!NOTE]
+> Remember to remove any Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+### Delete the Azure DevOps project
+
+1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the gearwheel icon representing **Project settings**.
+1. On the **Project details** pane, scroll down to the bottom and select **Delete**.
+1. In the **Delete project** popup window, in the confirmation textbox, type the project name, and select **Delete**.
+
+### Delete the Azure resources
+
+1. Within the browser window, on the browser tab displaying the Azure DevOps project, switch to the web browser tab displaying the Azure portal.
+1. Within the web browser window displaying the Azure portal, open the **Bash** session within the **Cloud Shell** pane by selecting the toolbar icon next to the search textbox.
+1. Within the web browser window displaying the Azure portal, in the Bash session on the **Cloud Shell** pane, run the following code to verify the name of the resource group you created in the second exercise of this module:
+
+   ```bash
+   az group show --resource-group 'aspdevops-rg' --query name --output tsv
+   ```
+
+1. Within the web browser window displaying the Azure portal, in the Bash session on the **Cloud Shell** pane, run the following code to delete the resource group you created in the second exercise of this module, along with its resources:
+
+   ```bash
+   az group show --resource-group 'aspdevops-rg' --query name --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'
+   ```
+
+> [!NOTE]
+> The command executes asynchronously (as determined by the --nowait parameter), so while you will be able to run another Azure CLI command immediately afterwards within the same Bash session, it will take a few minutes before the resource group is actually removed.

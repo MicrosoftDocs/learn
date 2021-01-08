@@ -1,8 +1,6 @@
-With the artifacts built and published into Azure Pipelines and the required Azure resources provisioned, you’re ready for the last part of the deployment process. That part involves deploying the package containing the sample ASP.NET web app into Azure App Service, setting up its data store, and configuring a connection string allowing the web app to access the data store. Your implementation will comprise a separate Azure Pipeline stage containing Azure App Service deployment and configuration tasks.
+With the artifacts built and published into Azure Pipelines and the required Azure resources provisioned, you're ready for the last part of the deployment process. That part involves deploying the package containing the sample ASP.NET web app into Azure App Service, setting up its data store, and configuring a connection string allowing the web app to access the data store. Your implementation will comprise a separate Azure Pipeline stage containing Azure App Service deployment and configuration tasks.
 
 ## Azure Pipelines ASP.NET web app deployment tasks
-
-<!--  Marcin, please check the edits in the next sentence.  -->
 
 Use the following process to deploy ASP.NET app build artifacts:
 

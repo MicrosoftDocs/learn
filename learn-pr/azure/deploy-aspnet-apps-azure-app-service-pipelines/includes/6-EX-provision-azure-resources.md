@@ -1,13 +1,11 @@
-You’re progress in investigating Azure Pipelines is helping your company as they consider migrating their ASP.NET applications to Azure App Service. You now want to learn more about provisioning Azure resources. 
-
-In this exercise, you'll configure and run an Azure DevOps pipeline to provision Azure web and database resources, including:
+To proceed with testing the use of Azure Pipelines for deployment of your company's ASP.NET applications to Azure App Service, you next need to provision the target Azure environment. In this exercise, you'll configure and run an Azure DevOps pipeline that implements Azure web and database resources, including:
 
 - an Azure logical SQL server
 - an Azure SQL database
 - an Azure App Service plan
 - an Azure App Service web app
 
-These resources will host the sample ASP.NET app that you’ll deploy by using the same Azure DevOps pipeline in the next exercise.
+These resources will host the sample ASP.NET app that you'll deploy by using the same Azure DevOps pipeline in the next exercise.
 
 To allow the Azure App Service web app to access the Azure SQL database, you'll also modify default firewall settings of the Azure logical SQL server.
 
@@ -20,9 +18,9 @@ Every Azure resource that has a public endpoint requires a globally unique name.
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**. 
 
    > [!NOTE]
-   > If this is the first time you’re starting **Cloud Shell**, you’ll be presented with the **You have no storage mounted** message. To mount storage, select the subscription you’re using in this exercise and select **Create storage**. 
+   > If this is the first time you're starting **Cloud Shell**, you'll be presented with the **You have no storage mounted** message. To mount storage, select the subscription you're using in this exercise and select **Create storage**. 
 
-1. In the Azure portal, in the Bash session on the **Cloud Shell** pane, run the following code to identify an available name you can assign to the Azure logical SQL server that you’ll provision in this exercise. Replace the `<sqlserver_name>` placeholder with any name likely to be unique that consists of between 1 and 63 lowercase letters or digits, including non-leading and non-trailing hyphens.
+1. In the Azure portal, in the Bash session on the **Cloud Shell** pane, run the following code to identify an available name you can assign to the Azure logical SQL server that you'll provision in this exercise. Replace the `<sqlserver_name>` placeholder with any name likely to be unique that consists of between 1 and 63 lowercase letters or digits, including non-leading and non-trailing hyphens.
 
    ```bash
    SQLSVRNAME=<sqlserver_name>
@@ -30,7 +28,7 @@ Every Azure resource that has a public endpoint requires a globally unique name.
    ```
 
 1. If the **dig** utility does not return any output, you can use the name you specified. Otherwise, choose a different name and repeat the previous step until you find an available name. 
-1. In the Azure portal, in the Bash session on the **Cloud Shell** pane, run the following code to identify an available name you can assign to the Azure App Service web app that you’ll provision in this exercise. Replace the `<webapp_name>` placeholder with any name likely to be unique that consists of between 2 and 60 lowercase letters or digits, including non-leading and non-trailing hyphens.
+1. In the Azure portal, in the Bash session on the **Cloud Shell** pane, run the following code to identify an available name you can assign to the Azure App Service web app that you'll provision in this exercise. Replace the `<webapp_name>` placeholder with any name likely to be unique that consists of between 2 and 60 lowercase letters or digits, including non-leading and non-trailing hyphens.
 
    ```bash
    WEBAPPNAME=<webappname_name>
@@ -41,7 +39,7 @@ Every Azure resource that has a public endpoint requires a globally unique name.
 
 ## Configure Azure Pipeline group variables 
 
-Next, configure Azure Pipeline variables that you’ll use subsequently when provisioning Azure resources.
+Next, configure Azure Pipeline variables that you'll use subsequently when provisioning Azure resources.
 
 1. Within the web browser window displaying the Azure portal, switch to the web browser tab displaying the DevOps project. In the vertical menu bar along the left edge of the project page, in the **Pipelines** section, select **Library**.
 2. On the **Library** page, select **+ Variable group**.
@@ -79,7 +77,7 @@ Before you add a task to the existing pipeline that provisions Azure resources r
 - Divide the pipeline into separate stages, including **Build** and **DeployAzureResources**. 
 
   > [!NOTE]
-  > In the next exercise, you’ll add another stage named **DeployASPNETApp**, which will contain tasks to deploy ASP.NET into the Azure App Service web app deployed during the **DeployAzureResources** stage.
+  > In the next exercise, you'll add another stage named **DeployASPNETApp**, which will contain tasks to deploy ASP.NET into the Azure App Service web app deployed during the **DeployAzureResources** stage.
 
 1. Within the browser window, on the browser tab displaying the Azure DevOps project, in the vertical menu bar along the left edge of the project page, in the **Pipelines** section, select **Pipelines**. On the **Pipelines** pane, select the entry representing the autogenerated pipeline, and then select **Edit**.
 2. On the **azure-pipelines.yml** editor pane, directly above the `trigger: none` entry, add the following section to allow for referencing variables included in the **AzureResourcesVariableGroup** variable group you created earlier in this exercise:
@@ -99,7 +97,7 @@ Before you add a task to the existing pipeline that provisions Azure resources r
    ```
 
    > [!NOTE]
-   > YAML requires proper indentation of its content. You’ll need to indent all existing content following the newly defined stage and job elements by four spaces (equivalent to two tabs). 
+   > YAML requires proper indentation of its content. You'll need to indent all existing content following the newly defined stage and job elements by four spaces (equivalent to two tabs). 
 
    > [!NOTE]
    > Any syntactically invalid elements of the YAML file will be underlined with a wavy line.
@@ -121,7 +119,7 @@ For the Azure DevOps pipeline to access your Azure subscription, you need to set
 
 Now, it's time to configure the Azure Pipeline you created in the previous exercise to provision Azure resources.
 
-1. Within the browser window displaying the **Project Settings** pane in the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select **Pipelines**. On the **Pipelines** pane, select the pipeline you’re using in this lab, and then select **Edit**.
+1. Within the browser window displaying the **Project Settings** pane in the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select **Pipelines**. On the **Pipelines** pane, select the pipeline you're using in this lab, and then select **Edit**.
 1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and press the **Enter** key to start a new line. 
 1. On the **azure-pipelines.yml** editor pane, add the following content to create the **DeployAzureResources** stage and job elements:
 
@@ -234,7 +232,7 @@ Now, it's time to configure the Azure Pipeline you created in the previous exerc
 
 ## Run the Azure Pipeline to provision Azure resources
 
-With the new stage of the Azure Pipeline created, you can now invoke execution of its tasks. You can target this specific stage separately, since it doesn’t have any dependencies on the artifacts generated by the build. 
+With the new stage of the Azure Pipeline created, you can now invoke execution of its tasks. You can target this specific stage separately, since it doesn't have any dependencies on the artifacts generated by the build. 
 
 1. On the **azure-pipelines.yml** editor pane, select **Run**.
 1. On the **Run pipeline** pane, select **Stages to run**. On the **Stages to run** pane, uncheck the **Build** checkbox, and select **Use select stages**. 
@@ -270,5 +268,6 @@ In this exercise you configured and ran an Azure DevOps pipeline to provision Az
 - an Azure App Service plan
 - an Azure App Service web app
 
-## Keep your browser windows open if continuing the module exercises
-If you plan to perform the next exercises in this module, keep your browser windows open for easier continuation.
+## Keep your web browser windows open if continuing the module exercises
+
+If you plan to perform the next exercises in this module, keep your web browser windows open.
