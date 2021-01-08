@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.module-name.4-case-study-quantum-computing
-title: Title of the unit
+title: Case study for quantum computing
 metadata:
-  title: Title of the unit
-  description: Description of the unit.
+  title: Case study for quantum computing
+  description: Discover how Azure Quantum can be implemented to research pioneer applications.
   ms.date: 01/01/2021
   author: KittyYeungQ
   ms.author: kitty
