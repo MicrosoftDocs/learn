@@ -1,4 +1,4 @@
-In this module, you will finally implement Grover's search algorithm end-to-end - from the oracle definition for the vertex coloring problem to the logic of dealing with the randomized nature of the algorithm. After training examples you are more than prepared so don't hesitate and let's get to work! 
+In this module, you will finally implement Grover's search algorithm end-to-end - from the oracle definition for the graph coloring problem to the logic of dealing with the randomized nature of the algorithm. 
 
 > [!NOTE]
 > Out of necessity, the overall code in this example is rather long, as it includes not only the generic Grover's algorithm implementation but also the problem-specific oracle implementation. 
