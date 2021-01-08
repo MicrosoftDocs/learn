@@ -18,7 +18,7 @@ Each replica is an instance of Azure Database for MySQL/PostgreSQL in its own ri
 > [!NOTE]
 > If you're using Azure Database for MySQL, read replicas are only available in the General Purpose and Memory Optimized pricing tiers. Additionally, read replicas aren't available in Azure Database for PostgreSQL, Hyperscale (Citus).
 
-### Creating replicas
+### Create replicas
 
 The simplest way to add replicas to a server is through the **Replication** page for the server in the Azure portal. On this page, select **+ Add Replica**.
 
@@ -46,7 +46,7 @@ az postgres server replica create \
   --source-server northwind101
 ```
 
-### Removing a replica
+### Remove a replica
 
 To remove a replica, select the replica on the **Replication** page, and select **Stop Replication**. The replica server will detach from the master and be converted into a read-write server instead. The replica won't be deleted, and you'll continue to be charged for the resources it consumes. If you need to delete the replica, use the **Delete Replica** command instead.
 

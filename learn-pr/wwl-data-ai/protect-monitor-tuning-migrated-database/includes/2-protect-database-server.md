@@ -16,7 +16,7 @@ However, Azure provides additional protection to your servers. This protection o
 
 The following sections discuss these items in more detail.
 
-### Filtering traffic with firewall rules
+### Filter traffic with firewall rules
 
 Azure Database for MySQL or PostgreSQL runs inside a firewall managed by Microsoft. By default, nothing can pass through this firewall. You add firewall rules to enable traffic from designated blocks of IP addresses, as described in the previous modules. It's recommended that you actively review the IP addresses that are allowed to send traffic at frequent intervals, and remove the IP addresses for clients that are no longer required.
 
@@ -70,13 +70,13 @@ To enable access to Azure services, create a firewall rule with a `start-ip-addr
 
 You create and manage virtual network rules in a similar manner, using the `az msysql server vnet-rule` commands.
 
-### Protecting traffic using SSL
+### Protect traffic using SSL
 
 SSL protection for Azure Database for MySQL or PostgreSQL is enabled by default. You can disable and re-enable SSL using the **Enforce SSL connection** setting on the **Connection security** page for your Azure Database for MySQL or PostgreSQL service in the Azure portal:
 
 ![Image highlighting the **Enforce SSL connection** setting on the **Connection security** page for Azure Database for MySQL or PostgreSQL](../media/5-ssl-settings.png)
 
-### Protecting the server using Azure Advanced Threat Protection
+### Protect the server using Azure Advanced Threat Protection
 
 Advanced Threat Protection is an additional layer of security provided by Azure. Advanced Threat Protection monitors access to your server and looks for patterns of unusual or potentially malicious behavior. When such behavior is detected, you arrange for an alert to be sent to specified email addresses.
 
@@ -91,7 +91,7 @@ You can enable Advanced Threat Protection from the **Advanced Threat Protection*
 
 ![Image showing the **Advanced Threat Protection** page for Azure Database for MySQL or PostgreSQL](../media/5-configure-apt.png)
 
-## Backing up and restoring a server
+## Back up and restore a server
 
 The Azure Database for MySQL or PostgreSQL service automatically backs up your server according to the following schedule:
 
@@ -101,13 +101,13 @@ The Azure Database for MySQL or PostgreSQL service automatically backs up your s
 
 The entire server is backed up. You can't back up individual databases, and you can't manually force a backup.
 
-### Setting backup options
+### Set backup options
 
 You use these backups to restore to any point in time for which you have retained the backup files. By default, backups are held for seven days, but you can keep them for up to 35 days. You also specify how the backups are stored—locally redundant backups are held within the same region as the server, and geo-redundant backups are copied to data centers in other regions. The geo-redundant option is only available to servers in the General Purpose and Memory Optimized pricing tiers. You set the backup options on the **Pricing Tiers** page for your server in the Azure portal:
 
 ![Image showing the backup configuration section of the pricing tiers page for Azure Database for MySQL or PostgreSQL](../media/5-backup-options.png)
 
-### Restoring a server
+### Restore a server
 
 Azure Database for MySQL or PostgreSQL supports two types of server restore operations—point-in-time, and geo-restore. In both cases, the restore action creates a new server. The original server remains available. If you want applications to use the restored data, you must reconfigure them to use the new server. Additionally, you must remember to open the firewall of the new server to allow clients and services to connect.
 

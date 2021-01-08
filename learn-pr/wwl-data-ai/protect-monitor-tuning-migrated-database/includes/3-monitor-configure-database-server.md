@@ -53,7 +53,7 @@ The *Replica Lag* metric shows the time, in seconds, since the latest transactio
 
 Azure Database for MySQL has the *Replication lag in seconds* metric. This metric, which you can only monitor from a replica, shows the number of seconds by which the replica is lagging behind the master.
 
-### Creating charts and alerts to monitor performance
+### Create charts and alerts to monitor performance
 
 The **Metrics** page for a server in the Azure portal enables you to create charts that track metric values. Metrics are gathered at one-minute intervals. For each metric, you specify an aggregation that determines how to report that metric. 
 
