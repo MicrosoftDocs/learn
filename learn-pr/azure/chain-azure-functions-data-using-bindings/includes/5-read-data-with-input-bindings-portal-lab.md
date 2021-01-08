@@ -216,9 +216,9 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="javascript"
 
-1. From the **Integration** page, in the **Function** box, you should see your **HTTPTrigger**. Select it. At the top, select **Test/Run**. The **Test** panel appears.
+1. From the **Integration** page, in the **Function** box, you should see your **HTTPTrigger**. Select it. At the left hand select **Code+Test**.
 
-1. Replace all code in **Body** with the code from the following snippet, and then select **Save**.
+1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
 
    [!code-javascript[](../code/find-bookmark-single.js)]
 
@@ -226,9 +226,9 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="powershell"
 
-1. To select your function, select **Integration**. Under **Function**, you should see your **HTTPTrigger**. Select it. At the top, select **Test/Run**.
+1. To select your function, select **Integration**. Under **Function**, you should see your **HTTPTrigger**. At the left hand select **Code+Test**.
 
-1. Replace all code in **Body** with the code from the following snippet, and select **Run**.
+1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
 
     ```powershell
     using namespace System.Net
@@ -258,7 +258,7 @@ An incoming HTTP request triggers the function, and an `id` query parameter is p
 
 ## Try it out
 
-1. At the top right of the **Code + test** page, select **Get function URL**, and then select **default (Function key)**. To copy the function's URL, select the *Copy to clipboard* icon.
+1. At the left hand select **Code + test**, select **Get function URL**, and then select **default (Function key)**. To copy the function's URL, select the *Copy to clipboard* icon.
 
 2. Paste the function URL you copied into your browser's address bar. Add the query string value `&id=docs` to the end of this URL, and to execute the request, press `Enter`. You should see a response that includes a URL to that resource.
 
