@@ -1,4 +1,6 @@
-You are probably already familiar with libraries in other programming languages. Q# as a quantum language is not different in this case. The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without worrying about the details of actual implementation on target machines, e.g. whether it will be run on a trapped ion, superconducting qubit, or a simulated quantum computer. 
+You are probably already familiar with libraries in other programming languages. 
+Q# as a language for quantum programming is not different in this case. 
+The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without worrying about the details of actual implementation on target machines, e.g. whether it will be run on a trapped ion, superconducting qubit, or a simulated quantum computer. 
 
 ## What is a Q# library?
 
@@ -50,7 +52,6 @@ Instead, you can interactively add packages directly in your Notebook workspace 
 
 Note that IQ# also supports using project files to define packages, so the instructions for Q# applications also apply in that scenario.
 Below, we only describe the methods to do so interactively. 
-
 
 
 ### [Q# applications or .NET interoperability](#tab/tabid-csproj)

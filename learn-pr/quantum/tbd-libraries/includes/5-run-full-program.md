@@ -95,28 +95,24 @@ Thus our full program will simply repeat Grover's algorithm until this condition
 
 ## Run the full program
 
-Before you can run the whole program, note that some of the operations we implement require the Numerics library. 
-Go ahead and add that by entering in the command line
-```dotnet
-dotnet add package Microsoft.Quantum.Numerics
-```
+Next, you will need to have access to all the operations, so be sure to include the `open` statements (we include the corresponding operations they provide in case you were curious): 
 
-Next, you will need to have access to all the operations, so be sure to include the `open` statements:
 ```qsharp
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Arithmetic;
-    open Microsoft.Quantum.Arrays;
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Preparation;
-    open Microsoft.Quantum.Diagnostics;
+    open Microsoft.Quantum.Canon; // ApplyControlledOnInt, ApplyToEachCA
+    open Microsoft.Quantum.Intrinsic; // X, H, Z
+    open Microsoft.Quantum.Arithmetic; 
+    // ApplyXorInPlace, MultiplyAndAddByModularInteger, LittleEndian, MeasureInteger
+    open Microsoft.Quantum.Arrays; // ConstantArray, Most, Tail, Enumerated
+    open Microsoft.Quantum.Convert; // IntAsDouble
+    open Microsoft.Quantum.Math; // ArcSin, Sqrt, Round, PI, ComplexPolar
+    open Microsoft.Quantum.Preparation; // PrepareArbitraryStateCP
+    open Microsoft.Quantum.Diagnostics; // EqualityFactI, DumpMachine
 ```
 
 To perform the full search, define the operation `SearchForMissingDigit` as below. Be sure to include the `@EntryPoint()` attribute before it, which will let you run it from the command line.
 
 ```qsharp
-@EntryPoint()
+    @EntryPoint()
     operation SearchForMissingDigit() : Int {
         
         // get the number of Grover iterations required for 10 possible results and 1 solution
@@ -125,8 +121,10 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
         // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
         using (digitReg = Qubit[4]) {
             mutable missingDigit = 0;
+
             // Repeat the algorithm until the result forms a valid ISBN
             repeat{
+
                 // Initialize a uniform superposition over all possible digit states
                 PrepareUniformSuperpositionOverDigits(digitReg);
 
@@ -134,13 +132,13 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
                 for (idxIteration in 1..numIterations) {
                     // Apply the oracle
                     isbnOracle(digitReg);
+
                     // Reflect about the uniform superposition
                     ReflectAboutUniform(digitReg);
                 }
-                // Print the resulting state of the system
-                DumpMachine(); 
 
-                // Measure the answer
+                // Print the resulting state of the system and then measure
+                DumpMachine(); 
                 set missingDigit = MeasureInteger(LittleEndian(digitReg));
             } 
             until (IsIsbnValid([0, 3, 0, 6, missingDigit, 0, 6, 1, 5, 2]));
@@ -177,6 +175,7 @@ namespace ISBNGrover {
         MultiplyAndAddByModularInteger(6, 11, LittleEndian(digitReg), LittleEndian(targetReg));
     }
 
+
     operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
@@ -194,9 +193,11 @@ namespace ISBNGrover {
         }
     }
 
+
     operation PrepareUniformSuperpositionOverDigits(digitReg : Qubit[]) : Unit is Adj + Ctl {
         PrepareArbitraryStateCP(ConstantArray(10, ComplexPolar(1.0, 0.0)), LittleEndian(digitReg));
     }
+
 
     operation ReflectAboutUniform(digitReg : Qubit[]) : Unit {
         within {
@@ -211,11 +212,13 @@ namespace ISBNGrover {
         }
     }
 
+
     function NIterations(nItems : Int) : Int {
         let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
         let nIterations = Round(0.25 * PI() / angle - 0.5);
         return nIterations;
     }
+
 
     function IsIsbnValid(digits : Int[]) : Bool {
         EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
@@ -227,6 +230,7 @@ namespace ISBNGrover {
         return acc == 0;
     }
 
+
     @EntryPoint()
     operation SearchForMissingDigit() : Int {
         
@@ -236,8 +240,10 @@ namespace ISBNGrover {
         // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
         using (digitReg = Qubit[4]) {
             mutable missingDigit = 0;
+
             // Repeat the algorithm until the result forms a valid ISBN
             repeat{
+
                 // Initialize a uniform superposition over all possible digit states
                 PrepareUniformSuperpositionOverDigits(digitReg);
 
@@ -245,13 +251,13 @@ namespace ISBNGrover {
                 for (idxIteration in 1..numIterations) {
                     // Apply the oracle
                     isbnOracle(digitReg);
+
                     // Reflect about the uniform superposition
                     ReflectAboutUniform(digitReg);
                 }
-                // Print the resulting state of the system
-                DumpMachine(); 
 
-                // Measure the answer
+                // Print the resulting state of the system and then measure
+                DumpMachine(); 
                 set missingDigit = MeasureInteger(LittleEndian(digitReg));
             } 
             until (IsIsbnValid([0, 3, 0, 6, missingDigit, 0, 6, 1, 5, 2]));

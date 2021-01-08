@@ -1,4 +1,4 @@
-In the previous unit you successfully used your quantum program to find the missing digit of an ISBN, and thus you can access the book you need!
+﻿In the previous unit you successfully used your quantum program to find the missing digit of an ISBN, and thus you can access the book you need!
 
 But what if other space explorers find themselves in a similar predicament? 
 You can share your code on the Galactic Information Technology Hub, but they would certainly appreciate it being nicely documented. 
@@ -13,32 +13,38 @@ Documentation comments for a declared callable or type, however, are written dif
 To be recognized as documentation by the compiler, these utilize three slashes (`///`) and are written *before* the declaration.
 
 Within the comments, the text is formatted as [Markdown](https://daringfireball.net/projects/markdown/syntax) and different parts of the documentation are indicated by different specially-named headers---each provided as an "H1" header with a single `#` preceding it.
-We provide a full list of the possible headers below, but first let's document the oracle reflection operation as an example:
+We provide a full list of the possible headers below, but first let's document the oracle operation as an example:
 
 ```qsharp
     /// # Summary
-    /// Given an input four-qubit register, applies the oracle operation to flag the 
-    /// "good" states with a factor of -1. 
+    /// Given an input four-qubit register, flags the "good" states with a phase factor of -1. 
+    /// Those are the states |x⟩ such that (9 + 6x) mod 11 = 0.
     ///
     /// # Description
-    /// Allocates a "flag" qubit and puts it in the state |-> to be used by the oracle in 
-    /// flagging the solution states. This qubit is deallocated at the end of the call. 
+    /// Allocates 1) a "flag" qubit puts it in the state |-⟩ to be used for phase kickback,  
+    /// and 2) a qubit register of the same size as the input. 
+    /// Both are deallocated at the end of the call. 
+    /// The latter serves as the target for the arithmetic mapping 
+    /// |x⟩|0⟩ -> |x⟩ |(9 + 6x) mod 11 ⟩ handled in `ComputeIsbnCheck`. Then, the target register
+    /// being in number state |0⟩ controls an X operation on the flag qubit, providing the phase 
+    /// factor to the proper states.
     ///
     /// # Input
-    /// ## missingDigitReg
+    /// ## digitReg
     /// The input four-qubit register which will be operated on.
-    ///
-    /// # Remarks
-    /// The oracle operation applies the oracle using a four-qubit scratch register.
-    operation ReflectAboutCorrectDigit(missingDigitReg : LittleEndian) : Unit is Adj + Ctl {
-        using (flagQubit = Qubit()) {
+    operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+        // Allocate target register for oracle mapping, flag qubit for phase kickback
+        using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
-                // put flagQubit in |->
+                // Initialize flag qubit to |-⟩ 
                 X(flagQubit);
                 H(flagQubit);
+                // Map targetReg to |(9 + 6x) mod 11 ⟩, where |x⟩ is the state of digitReg
+                ComputeIsbnCheck(digitReg, targetReg);
             } apply {
-                // uses phase kickback to flag the good solutions with a -1 phase
-                ApplyIsbnOracle(missingDigitReg, flagQubit);
+                // States where targetReg is in |0⟩ number state will be flagged with a -1
+                // phase due to controlled X they apply to the flag qubit in the |-⟩ state.  
+                ApplyControlledOnInt(0, X, targetReg, flagQubit);
             }
         }
     }
@@ -52,7 +58,7 @@ The QDK makes this even easier by enabling help functions in various editors.
 For example, if you are using VS Code, IntelliSense enables autocomplete functionality and you can see the overview of your callable by simply hovering the mouse over it:
 ![VS Code IntelliSense mouseover](../media/6-mouseover.png)
 
-If using Q# with Jupyter Notebooks, for example, this works with the `?` magic functions. 
+If using Q# with Jupyter Notebooks, for example, this works with the `?` magic commands. 
 That is, running a cell with `<OperationName>?` returns the API reference and other related information.
 
 ## Additional documentation headers
