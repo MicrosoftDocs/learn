@@ -17,10 +17,8 @@ After completing this module, you’ll be able to:
 
 ## Prerequisites
 
-<!--Richard, please review edits to the following list. Our format for prereqs is to specify the level of knowledge/experience students should have with each item.-->
-
-- Intermediate knowledge of GDPR for organizations that provide services to people in the European Union (EU)
-- Intermediate knowledge of the California Consumer Privacy Act (CCPA), which provides privacy rights and obligations to Californian consumers
+- Basic knowledge of GDPR for organizations that provide services to people in the European Union (EU)
+- Basic knowledge of the California Consumer Privacy Act (CCPA), which provides privacy rights and obligations to Californian consumers
 - Intermediate experience with Azure Active Directory (Azure AD) services 
 - Intermediate experience with Microsoft Office 365 or Microsoft 365
 
