@@ -38,11 +38,11 @@ units:
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.1-introduction
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.2-azure-pipelines-github-repos
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.3-build-aspnet-web-apps-pipelines
-- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.4-EX-build-aspnet-web-apps-pipelines
+- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.4-ex-build-aspnet-web-apps-pipelines
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.5-provision-azure-resources
-- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.6-EX-provision-azure-resources
+- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.6-ex-provision-azure-resources
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.7-deploy-aspnet-web-app-pipelines
-- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.8-EX-deploy-aspnet-web-app-pipelines
+- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.8-ex-deploy-aspnet-web-app-pipelines
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.9-knowledge-check
 - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.10-summary
 badge:
