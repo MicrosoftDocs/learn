@@ -32,7 +32,7 @@ roles:
 - risk-practitioner
 - security-engineer
 products:
-- azure-private-link
+- azure-ddos-protection
 units:
 - learn.introduction-azure-ddos-protection.1-introduction
 - learn.introduction-azure-ddos-protection.2-what-is-azure-ddos-protection

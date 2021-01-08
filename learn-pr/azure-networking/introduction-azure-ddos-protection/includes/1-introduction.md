@@ -38,4 +38,4 @@ To get the best learning experience from this module, you should have:
 
   - the zero-trust security model,
   - Botnets,
-  - role-based access controls (RBAC)
+  - Azure Role-Based Access Controls (RBAC)

@@ -34,7 +34,7 @@ quiz:
     - content: "DDoS Basic Protection"
       isCorrect: false
       explanation: "This is incorrect. DDoS Basic Protection does not include DDoS rapid response support."
-    - content: "This service is not offered with DDoS Basic or DDoS Standard.
+    - content: "This service is not offered with DDoS Basic or DDoS Standard."
       isCorrect: false
       explanation: "This is incorrect.DDoS rapid response support is included in DDoS Standard Protection."
   - content: "What should be done to the data logged during a DDoS attack?" 
