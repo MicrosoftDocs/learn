@@ -70,8 +70,15 @@ You will now fulfill the DSR by deleting the data subject's user account.
 After completing this exercise, you will have successfully reviewed and executed a DSR for customer data in in Azure. This meets your requirement to validate the DSR process in Azure.
 
 ## Clean up the resources
+>**Note**: If you have completed all the steps in this lab you will not have any resources that need to be cleaned up. However, if you have only partially completed the lab then complete the following steps.
 
-<!-- IMPORTANT, advise learners to shutdown or delete any Azure services to avoid incurring further cost in their subscription.  -->
+1. In the Azure portoal, search for Azure Active Directory.
+2. Select All Users.
+3. Search for and select **Avery Howard**.
+4. Select **Delete user** and then select **Yes** to confirm. 
+5. In the **Deleted users** blade, select the check-box next to the data subject's user account.
+6. Select **Delete permanently** and then select **Yes** to confirm. 
+
 
 
 
