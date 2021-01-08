@@ -1,4 +1,4 @@
-Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated to it, and we would like to partition these weights into two sets: $W_A$ and $W_B$.
+Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated to it, and you would like to partition these weights into two sets: $W_A$ and $W_B$.
 
 Those two sets correspond to whether a mineral chunk is loaded onto container *A* or container *B*, and we define $\Delta$ as the weight difference between the two containers.
 
@@ -17,7 +17,7 @@ Let's start by coming up with an equation for the weight of a given container, w
 
 ![An equation that shows the sum of mineral weights](../media/costfun-1.svg)
 
-Ideally, we want a solution where the weight difference between the containers is as small as possible.
+Ideally, we want a solution where the weight difference between the containers, $\Delta$, is as small as possible.
 
 ![An equation that subtracts the total weights on one container from the total weights on the other container to produce a cost function](../media/costfun-2.svg)
 
