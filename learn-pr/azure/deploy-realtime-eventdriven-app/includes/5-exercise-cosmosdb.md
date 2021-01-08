@@ -2,6 +2,8 @@ A function can listen to events of the specific namespace in the Azure Event Hub
 
 ## Create an Azure Cosmos DB
 
+To create the Cosmos DB, use the 'az cosmosdb create' command. You have to create a Cosmos DB account, a database, and a sql container.
+
 ```bash
 az cosmosdb create \
     --resource-group $RESOURCE_GROUP \
@@ -17,6 +19,8 @@ az cosmosdb sql container create \
     --name TelemetryInfo \
     --partition-key-path '/temperatureStatus'
 ```
+
+For our scenario is the temperature interesting. So we define 'temperatureStatus' as the partition key.
 
 ## Retrieve the Cosmos DB Connection String
 
