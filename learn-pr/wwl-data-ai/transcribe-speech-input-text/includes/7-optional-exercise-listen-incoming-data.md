@@ -1,33 +1,31 @@
-Another potential use for Speech-to-Text is to perform the translation operation on incoming speech that is being heard from a microphone. This scenario can present itself in a presentation venue where the Speech Service provides the speech-to-text translation of the person(s) speaking, and then displays it as captions on a project screen. In this exercise, you'll see an example of listening for speech from a microphone and translating it to text output.
+Another potential use for Speech-to-Text is to perform the translation operation on incoming speech that is being heard from a microphone.  This scenario can present itself in a presentation venue where the Speech Service provides the speech-to-text translation of the person(s) speaking, and then displays it as captions on a project screen.  In this exercise, you will see an example of listening for speech from a microphone and translating it to text output.
 
 >[!Note]
->This exercise assumes you have completed the previous exercise on converting speech from an audio file. If you have not completed that exercise, you'll need to import the appropriate packages into the C# or Python project. See the previous exercise described, for instruction about adding the packages.
+>This exercise assumes you have completed the previous exercise on converting speech from an audio file. If you have not completed that exercise, you will need to import the appropriate packages into the C# or Python project. See the previous exercise mentioned, for instruction on adding the packages.
 
 >[!Note]
 >This exercise requires you to have a working microphone connected to the computer.
 
-## Exercise - Convert audio from a microphone
+## Exercise - convert audio from a microphone
 
-1. Create a local folder where you'll store the project for this exercise.
-
-1. Start Visual Studio Code, and open the folder you created in step 1.
+1. Create a local folder where you will store the project for this exercise.
+2. Start Visual Studio Code and open the folder you created in step 1.
 
 ::: zone pivot="python"
 
 3. Create a new file in your folder called **microphoneinput.py**.
-
-4. Paste the following code into the newly-created file.
+4. Paste the following code into the newly created file.
 
     ```python
     import azure.cognitiveservices.speech as speechsdk
-    
+
     speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
-    
+
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
-    
+
     print("Begin speaking...")
-    
+
     result = speech_recognizer.recognize_once()
     if result.reason == speechsdk.ResultReason.RecognizedSpeech:
         print("Recognized: {}".format(result.text))
@@ -40,27 +38,20 @@ Another potential use for Speech-to-Text is to perform the translation operation
             print("Error details: {}".format(cancellation_details.error_details))
     ```
 
-5. Select **Run Python File in Terminal** in the upper right corner of VS Code Codespaces to run the code.
-
+5. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Codespaces and select it to run the code.
 6. Begin speaking so the application can collect the streaming audio.
-
 7. When you finish, you should see transcribed text output in the terminal.
 
 ::: zone-end
 
 ::: zone pivot="csharp"
 
-3. Open a terminal window in VS Code by pressing CTRL+` (the Control key plus the back tick). Optionally, you can select **View** menu, and then select **Terminal**.
-
-4. Enter the command ```dotnet new console```, and press <kbd>Enter</kbd>.
-
-5. A project structure is created for you in the folder, and a Program.cs file is also added.
-
-6. In the terminal window, enter the following command, ```dotnet add package Microsoft.CognitiveServices.Speech```, and press <kbd>Enter</kbd>.
-
-7. The necessary package will be added to your project, and is required to access the Speech SDK.
-
-8. Paste the following code into Program.cs to replace the existing code.
+3. Open a terminal window in VS Code by pressing CTRL+`, the Control key plus the back tick.   Optionally, you can choose the View menu and then Terminal.
+4. type the command ```dotnet new console``` and press Enter.
+5. A project structure is created for you in the folder and a Program.cs file is also added.
+6. In the terminal window, enter the following command, ```dotnet add package Microsoft.CognitiveServices.Speech```, and press Enter.
+7. The necessary package will be added to your project and is required to access the Speech SDK.
+8. Paste the following code into Program.cs, replacing the existing code.
 
     ```csharp
     //
@@ -119,20 +110,14 @@ Another potential use for Speech-to-Text is to perform the translation operation
     ```
 
 9. Replace **"YourSubscriptionKey"** with the key from your Speech Service you created in this module.
-
 10. Replace **"YourServiceRegion"** with the region in which you created your Speech Service, such as *westus*.
-
-11. Ensure you have a microphone connected to your local computer ,and that it is working.
-
-12. In the terminal, enter ```dotnet run``` to start the application.
-
+11. Ensure you have a microphone connected to your local computer and that it is working.
+12. In the terminal, type ```dotnet run``` to start the application.
 13. Begin speaking so the application can collect the streaming audio.
-
 14. When you finish, you should see transcribed text output in the terminal.
-
 15. When prompted, press <kbd>Enter</kbd> to quit the application.
 
 ::: zone-end
 
 >[!Tip]
->The main difference between this optional exercise and the exercise about converting from an audio file, revolves around not requiring the **AudioConfig** class to handle the audio file formats. This code in this exercise assumes input from an attached microphone.
+>The main difference between this optional exercise and the exercise on converting from an audio file, revolves around not requiring the **AudioConfig** class to handle the audio file formats. This code in this exercise assumes input from an attached microphone.
