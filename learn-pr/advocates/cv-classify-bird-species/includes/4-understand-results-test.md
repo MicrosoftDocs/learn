@@ -30,7 +30,7 @@ If you don't have enough data or your data isn't diverse enough, your model can 
 
 ### Test by using training data
 
-As in overfitting, if you test the model by using the same data that you used to train the model, the model appears to perform well. But, when you deploy the model to production, it most likely perform poorly.
+As in overfitting, if you test the model by using the same data that you used to train the model, the model appears to perform well. But, when you deploy the model to production, it most likely performs poorly.
 
 ### Bad data
 
@@ -38,14 +38,16 @@ Another common mistake is training by using bad data. There are ways that your d
 
 ## Test the model
 
-According to the metrics that Custom Vision provides, our model is performing well enough. Let's test our model and see how it performs on unseen data.
+According to the metrics that Custom Vision provides, our model is performing at a satisfactory level. Let's test our model and see how it performs on unseen data.
 
 ### Test in the Custom Vision portal
 
 To test the model in the Custom Vision portal:
 
 1. In the top menu bar in the Custom Vision portal, select **Quick Test**.
+
 1. In **Quick Test**, select **Browse local files**.
+
 1. In  **Open**, search for a bird image from one of the species that you trained the model to recognize. Select the image, and then select **Open**.
 
 Custom Vision opens the image, and then analyzes the image to test the model's accuracy. The prediction results are shown in the window.

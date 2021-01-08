@@ -8,7 +8,7 @@ Happy bird watching!
 
 ## Helpful articles
 
-Here are some helpful articles that go into more detail about some of the concepts we covered:
+Here are some helpful articles that offer more detailed information about some of the concepts we covered:
 
 [Quickstart: Search for images by using the Bing Image Search SDK for Node.js](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/image-search-sdk-node-quickstart?WT.mc_id=birds-learn-cassieb)
 

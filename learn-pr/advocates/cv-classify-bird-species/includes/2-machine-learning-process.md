@@ -22,16 +22,16 @@ The way transfer learning works with the Custom Vision service in Azure is to ad
 
 To better understand the model building process, here's a step-by-step overview of the process and how we'll complete the process to create a model:
 
-1. *Ask a pointed question.* Our question is, can we identify the species of a bird from an image of a bird, to help document different trends and patterns of bird habits?
+1. *Ask a pointed question.* Our question is, can we identify a bird's species from an image of a bird, to help document different trends and patterns of bird habits?
 
-2. *Prepare data.* We have a dataset of bird images from the CLO that's clean and prepared, so this step is taken care of for us. If you built a different model, you would need to find and prepare data for training the model. You would want to find data that would help you answer the pointed question (step 1) that you're interested in.
+1. *Prepare data.* We have a dataset of bird images from the CLO that's clean and prepared, so this step is taken care of for us. If you built a different model, you would need to find and prepare data for training the model. You would want to find data that would help you answer the pointed question (step 1) that you're interested in.
 
-3. *Select an algorithm.* The Custom Vision service in Azure uses a *convolutional neural network (CNN)*, so we don't have to worry about this step. A CNN is a type of deep learning that's commonly used to analyze images. Having the algorithm already created saves us a *lot* of time!
+1. *Select an algorithm.* The Custom Vision service in Azure uses a *convolutional neural network (CNN)*, so we don't have to worry about this step. A CNN is a type of deep learning that's commonly used to analyze images. Having the algorithm already created saves us a *lot* of time!
 
-4. *Select a candidate model.* The Custom Vision service gives us helpful graphs and data to help us determine whether our model is performing well enough to satisfactorily answer our question. When we think the model is performing well enough, we move to the next step: test.
+1. *Select a candidate model.* The Custom Vision service gives us helpful graphs and data to help us determine whether our model is performing well enough to satisfactorily answer our question. When we think the model is performing well enough, we move to the next step: test.
 
-5. *Test the model by using unseen (new) data.* It's important to test our model by adding new data. We'll do an internet search and find some test images to see how it performs with data it wasn't trained with. We'll discuss later in the module why testing this way is important.
+1. *Test the model by using unseen (new) data.* It's important to test our model by adding new data. We'll do an internet search and find some test images to see how it performs with data it wasn't trained with. We'll discuss later in the module why testing this way is important.
 
-6. *Deploy the model.* Custom Vision gives us some options here. We can deploy to an endpoint to integrate the model, or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option.
+1. *Deploy the model.* Custom Vision gives us some options here. We can deploy to an endpoint to integrate the model, or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option.
 
 Let's get started building our model!

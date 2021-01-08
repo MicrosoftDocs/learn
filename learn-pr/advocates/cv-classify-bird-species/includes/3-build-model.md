@@ -6,7 +6,9 @@ Let's build our model! We'll download the dataset, create our Azure service, upl
 > To sign in to the sandbox:
 >
 > 1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
+>
 > 1. If prompted, select **Review permissions**.
+>
 >     :::image type="content" source="../media/review-permissions-sandbox.png" alt-text="Screenshot that shows the Review Permissions button selected.":::
 > 
 > 1. Verify the permission settings, and select **Accept**.
@@ -23,10 +25,13 @@ The first thing we need to create our model is data! To train our model, we'll u
 Download the zip file that contains the dataset:
 
 1. In your web browser, go to the [dataset](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/blob/master/bird-photos.zip?azure-portal=true) in GitHub.
+
 1. Select **Download**. 
+
    :::image type="content" source="../media/download-dataset-github.png" alt-text="Screenshot that shows the dataset zip file and the Download button in GitHub.":::   
 
    The zip file is copied to your computer and stored in your default location for downloaded files. 
+
 1. When the download is finished, unzip the file. Note the folder location because you’ll need it in a later step.
 
 ## Create a Custom Vision API resource
@@ -34,23 +39,41 @@ Download the zip file that contains the dataset:
 Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), select **Create a resource**.
+
 1. Search for **custom vision**. In the **Custom Vision** card in the search results, select **Create**.
+
    :::image type="content" source="../media/create-resource-azure-portal.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
+
 1. On the **Basics** tab, enter or select the required values:
+
    1. Select your Azure subscription.
+
    1. Create a new resource group:
+
       1. Beside **Resource group**, select the **Create new** link. 
+
       1. In the dialog box, enter *BirdResourceGroup*, and then select **OK**.
+
       :::image type="content" source="../media/create-resource-group-azure-portal.png" alt-text="Screenshot that shows creating a new resource group the Azure portal."::: 
+
    1. Enter a name for your new Custom Vision service resource (for example, *BirdCustomVisionService*).
+
    1. Under **Training Resource**:
+
       1. Set **Training location** to *(US) South Central US*.
+
       1.  Set **Training pricing tier** to *Free F0 (2 Transactions per second…)*.
+
    1. Under **Prediction Resource**:
+
       1. Set **Prediction location** to *(US) South Central US*.
+
       1. Set **Prediction pricing tier** to *Free F0 (2 Transactions per second…)*.
+
 1. Select **Review + create**.
+
 1. Select **Create**.
+
    :::image type="content" source="../media/create-resource-details-azure-portal.png" alt-text="Screenshot that shows elements to select in the Azure portal to create a new Custom Vision resource.":::
 
 When the deployment finishes, select **Go to resource**.
@@ -70,13 +93,21 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 1. Create a project in the Custom Vision portal:
 
    1. Go to [https://www.customvision.ai/projects](https://www.customvision.ai/projects?azure-portal=true) and sign in. Select **New project**.
+
    1. In **Create new project**:
+
       1. For **Name**, enter a project name of your choice.
+
       1. For **Description**, enter a short description of the model.
+
       1. For **Resource group**, Select the resource group you created in the Azure portal.
+
       1. For **Project Types**, select **Classification**.
-      1. For  **Classification Types**, select **Multiclass (Single tag per image)**.
+
+     1. For  **Classification Types**, select **Multiclass (Single tag per image)**.
+
       1. For **Domains**, select **General**.
+
       1. Select **Create project**.
          :::image type="content" source="../media/create-project-custom-vision.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
 
@@ -86,13 +117,21 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 1. Add images and tags:
 
    1. In your Custom Vision project, select **Add images**.
+
        :::image type="content" source="../media/add-images-custom-vision.png" alt-text="Screenshot that shows Add images selected in a Custom Vision portal project.":::
+
    1. In **Open**, go to the *birds-photo* folder where you extracted the images files from the dataset .zip file. 
+
    1. Open a bird species folder.
+
    1. Select Ctrl + A to select all the images in the species folder, and then select **Open**.
+
       :::image type="content" source="../media/select-photos-folder-custom-vision.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
+
    1. In **Image upload**, add a description in **My Tags** to indicate the species for the birds shown in the photos.
-   1. Select **Upload \<number\> files**.
+ 
+  1. Select **Upload \<number\> files**.
+
        :::image type="content" source="../media/tag-photos-custom-vision.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
 
 ### Upload images option 2: SDK
@@ -128,10 +167,14 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
    To get the Custom Vision resource values:<br /><br />
 
    1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), go to your Custom Vision resource.
+
    1. In the resource menu, under **Resource Management**, select **Keys and Endpoint**.
+
    1. Copy the value from the **Endpoint** box. In the code, replace the `<endpoint>` placeholder with this value.
+
    1. For **KEY 1**, select the copy icon to copy the key. In the code, replace the `<key>` placeholder with this value.
-       :::image type="content" source="../media/sdk-upload-endpoint-key-values.png" alt-text="Screenshot that shows how to locate the endpoint and key values for a Custom Vision resource in the Azure portal.":::
+ 
+      :::image type="content" source="../media/sdk-upload-endpoint-key-values.png" alt-text="Screenshot that shows how to locate the endpoint and key values for a Custom Vision resource in the Azure portal.":::
 
    Your code will look like this example:
 
@@ -222,9 +265,12 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
          ```
 
 1. Now, we’ll add the code for our main method. For each tag, the method calls the three functions we created. We loop through each tag (folder name) in the `tags` collection that we created from the folders in the bird-photos/custom-photos directory. Here are the steps in the `for` loop:
-   1. Call the `createTag` function to create the class `tag` in the Custom Vision project.
-   1. Call the `createImageList` function and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
-   1. Call the `imageList` function to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision time outs if we try to upload the entire dataset all at once.
+ 
+  1. Call the `createTag` function to create the class `tag` in the Custom Vision project.
+ 
+  1. Call the `createImageList` function and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
+ 
+  1. Call the `imageList` function to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision time outs if we try to upload the entire dataset all at once.
 
        ```python
        for tag in tags: 
@@ -249,8 +295,11 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
 We've created our dataset in Custom Vision. Now, we can train our model. You could train the model by using the SDK, but we'll use the Custom Vision portal instead.
 
 1. Go to [customvision.ai](https://www.customvision.ai/?azure-portal=true).
+
 1. Select the **Bird Classification** project.
+
 1. In the top menu bar, select **Train**.
+
 1. In **Choose Training Type**, select **Quick Training**, and then select **Train**.
 
 :::image type="content" source="../media/train-quick-test-custom-vision.png" alt-text="Screenshot of creating a quick test in the Custom Vision portal.":::
