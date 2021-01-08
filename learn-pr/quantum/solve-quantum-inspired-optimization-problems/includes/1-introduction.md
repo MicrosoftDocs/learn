@@ -8,7 +8,7 @@ Your superior has told you about one problem the galactic trade federation is fa
 
 ![An illustration that shows two containers that need to be loaded with minerals as evenly as possible](../media/mineral_loading.svg)
 
-Two competing galactic shipping companies have laid claim to the asteroid, and the executive board of trade federation is discussing pros and cons of each of them. They have to chose a fair candidate if they want to avoid a political crisis at all costs. To resolve this conundrum, you decide to split the shipping between both companies. A freighter ship from each company will arive to the asteroid and they must be loaded with the mineral as evenly as possible. Taking into account that the mineral is mined in massive chunks of various sizes, so we can't easily divide in half them between the ships, how can you optimize the distribution of the mineral and avert an intergalactic crisis?
+Your spaceship is transporting a rare mineral from a recently discovered asteroid. However, two competing galactic federations have laid claim to the asteroid. They have to split equally the minerals to avoid a political crisis. Your crew has to make two deliveries so that both federations get approximately the same amount. Taking into account that the mineral is mined in massive chunks of various sizes, you can't easily divide them. How can you optimize the distribution of the mineral and avert an intergalactic crisis?
 
 ## Learning objectives
 
