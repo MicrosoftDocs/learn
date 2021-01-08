@@ -69,6 +69,9 @@ Configuration files are stored in plain text files with a ".tf" file extension.
 ![Main.tf structure.](../media/3-main.png)
 
 Your **main.tf** file will contain the main set of configuration for your module.
+This file is often called a Terraform _plan_. Your Terraform plan specifies the infrastructure resources that you need.
+You can name this file whatever you want, but it's often named *main.tf*.
+
 The following **main.tf** sections define your module's configuration:
 
 - Provider: A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
