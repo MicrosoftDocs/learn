@@ -10,7 +10,7 @@ Using database backups and restoring them on the target instance is an option fo
 
 Azure Migrate provides a dashboard for a suite of migration tools. From the portal you can find documentation and download links to **Assess and migrate servers**, **Assess and migrate databases**, and **Explore more scenarios**.
 
-:::image type="content" source="../media/2-azure-migrate.png" alt-text="Azure Migrate":::
+:::image type="content" source="../media/2-azure-migrate.png" alt-text="Azure Migrate" lightbox="../media/2-azure-migrate.png":::
 
 ### Assess and migrate servers
 
@@ -31,9 +31,9 @@ To assess and migrate databases, a link is provided to install Data Migration As
 
 ### Explore more scenarios
 
-**Explore more** includes links to tools to assess and migrate WebApps, Virtual Desktop Infrastructure, and data using Data Box. Azure Data Box is a ruggedised physical storage device with 100 TB capacity. The device is sent to a customer, the customer backs up their data to the device, and then the customer returns the Data Box device to Microsoft. When transferring many terabytes of data, physically sending the data is the most reliable and least expensive method.
+**Explore more** includes links to tools to assess and migrate WebApps, Virtual Desktop Infrastructure, and data using Data Box. Azure Data Box is a ruggedized physical storage device with 100 TB capacity. The device is sent to a customer, the customer backs up their data to the device, and then the customer returns the Data Box device to Microsoft. When transferring many terabytes of data, physically sending the data is the most reliable and least expensive method.
 
-:::image type="content" source="../media/2-explore-more.png" alt-text="Explore more":::
+:::image type="content" source="../media/2-explore-more.png" alt-text="Explore more" lightbox="../media/2-explore-more.png":::
 
 ## What is the Microsoft Data Migration Assistant?
 
