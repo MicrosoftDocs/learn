@@ -82,6 +82,8 @@ The following **main.tf** sections define your module's configuration:
 The easiest way to get started is to copy the recommended Terraform workflow.
 When running Terraform in automation, this workflow focuses on the core plan/apply cycle, which runs all of Terraform's CI/CD actions on new and updated source control pull requests.
 
+The core actions for in this workflow are:
+
 - Init: Initialize a working directory with Terraform configuration files.
 - Plan: Produce a plan for changing resources to match the current configuration.
 - Apply: Apply the changes described by the plan.
