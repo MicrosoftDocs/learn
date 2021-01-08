@@ -420,7 +420,7 @@ With the application fully configured to retrieve and display the course data to
 
     ```bash
     az webapp up \
-        --resource-group postgres \
+        --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
         --name $WEBAPPNAME
     ```
 
