@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.4-EX-build-aspnet-web-apps-pipelines
+uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.4-ex-build-aspnet-web-apps-pipelines
 title: Exercise: Build a data-driven ASP.NET web app by using Azure Pipelines
 metadata:
   title: Exercise: Build a data-driven ASP.NET web app by using Azure Pipelines
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-EX-build-aspnet-web-apps-pipelines.md)]
+  [!include[](includes/4-ex-build-aspnet-web-apps-pipelines.md)]
