@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Provide an overview of App Services and Azure SQL Database. 
   - Describe core components of continuous integration and continuous deployment (CI/CD).
-  - Describe the process of automated deployment process of App Services and Azure SQL Database.
+  - Describe the automated deployment process of App Services and Azure SQL Database.
   - Build and deploy data-driven ASP.NET web apps into Azure by using Azure Pipelines.
 prerequisites: | 
   - Core Azure App Service and Azure SQL Database concepts
