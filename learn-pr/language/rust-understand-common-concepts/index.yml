@@ -2,24 +2,24 @@
 uid: learn.language.rust-understand-common-concepts
 metadata:
   title: Understand common concepts in Rust
-  description: Learn about Rust concepts such as variables, data types, structs, enums, functions, indexing, hashmaps, and flow control.
+  description: Learn about Rust concepts such as variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
   ms.date: 12/14/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand common concepts in Rust
-summary: Learn the basics of Rust. Explore variables, data types, structs, enums, functions, indexing, hashmaps, and flow control.
+summary: Learn the basics of Rust. Explore variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
 abstract:  |
   In this module, you will:
   - Use the `let` statement to assign values to variables.
-  - Learn how to comment your code in order to make it more descriptive.
-  - Discover the basic data types that exist in the Rust's standard library.
+  - Learn how to comment your code to make it more descriptive.
+  - Discover the basic data types that exist in the Rust standard library.
   - Write your own functions.
   - Use collections to store multiple values in a single structure.
   - Learn how to use conditional statements and loops in your code.
 prerequisites: | 
-  - A Rust development environment 
+  - Have your Rust development environment already set up.
   - Know how to create, edit, and run Rust code by using Cargo.
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
