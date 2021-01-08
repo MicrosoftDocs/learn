@@ -1,10 +1,7 @@
-Welcome back space explorer! So far you have learned the basic concepts of quantum computing and how quantum algorithms can solve some of our problems such as security threat through passwords or tracing delivery routes to different stations and planets. Humans and in particular, the space fleet, are interested in other kind of problems, named optimization problems. An optimization problem is the problem of finding the best solution from all feasible solutions.
+If you took some of the earlier modules in the [learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/), you might have learned the basic concepts of quantum computing and how quantum algorithms can solve some of our problems such as security or delivery-route searching. 
 
-In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms inspired from quantum computing that are applied to solve optimization problems on traditional hardware. Throughout the [learning path](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/?azure-portal=true),
+In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms inspired by quantum computing that are applied to solve optimization problems on traditional hardware. Throughout the [learning path](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/?azure-portal=true), you have been working on a spaceship. One of your missions is an asteroid mining. To illustrate the optimization method, let's look at how the logistics division efficiently loads cargo vessels.
 
-We may want to optimize a particular task regarding the time it takes to be done, the number of people we need to complete it, the material cost, the total cost, etc. So you wonder why the space fleet care about optimization problem, it is all about saving cost and effectiveness. 
-
-Your superior has told you about one problem the galactic trade federation is facing with. As you know, there are rare mineral exploitation mines in a recently discovered asteroid in a near cluster. The space fleet is dealing with the problem of transporting the mineral. To illustrate the optimization method, let's look at how the logistics division efficiently loads cargo vessels.
 
 ![An illustration that shows two containers that need to be loaded with minerals as evenly as possible](../media/mineral_loading.svg)
 
