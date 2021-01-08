@@ -4,6 +4,15 @@ In this unit, you'll learn what you need to get started with Maven archetypes. Y
 
 ## Getting started with Maven archetypes and Azure Functions
 
+### Using Maven to automate building Java web apps
+
+Maven is the most used Java build tool that can be used for building and managing any Java-based project. It helps streamline the processes for how developers build Java projects with a standard way to build the projects, a clear definition of what the project consisted of, an easy way to publish project information, and a way to share JARs across several projects. Maven's goals are to:
+
+- Make the build process easier
+- Transparently migrate to new features
+- Provide a uniform build system
+- Implement guidelines about best practice in development
+
 As a Java developer, you're already familiar with using Maven to create and compile your applications. When you're setting up your development environment, you probably keep up with the latest versions of Maven. As you complete the exercises in this module, you'll use the Azure Cloud Shell in the Learn sandbox, which has all of the necessary pieces in place for you to build Java applications with Maven that are ready to deploy to Azure.
 
 > [!NOTE]
