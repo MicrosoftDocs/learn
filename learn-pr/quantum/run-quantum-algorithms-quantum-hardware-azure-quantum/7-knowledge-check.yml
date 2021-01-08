@@ -29,7 +29,7 @@ quiz:
       explanation: "This sentence is true. You just submitted a Q# program to IonQ's trapped ion quantum computer!"
     - content: 'Azure Quantum only allows you to run algorithms in quantum computers, but for simulations you need them to run locally in your computer.'
       isCorrect: true
-      explanation: "This sentence is false. Azure Quantum also let's you test your Q# programs in different simulators."
+      explanation: "This sentence is false. Azure Quantum also lets you test your Q# programs in different simulators."
 
   - content: 'A trapped ion quantum computer is:'
     choices:
