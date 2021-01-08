@@ -35,8 +35,6 @@ You create configuration files using HCL (HashiCorp Configuration Language) synt
 HCL is declarative, describing an intended goal rather than the steps to reach that goal.
 The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure.
 
-![Hashicorp Configuration Language.](../media/3-content.png)
-
 > [!IMPORTANT]
 > More information on the HCL language syntax is provided at the end of the Module in the Summary unit
 
@@ -52,8 +50,6 @@ A module has many benefits:
 - Allow you to reuse common tasks
 - And provide consistency and ensure good practices
 
-![Module structure for Terraform.](../media/3-modules.png)
-
 ### Configuration Files
 
 Configuration files are stored in plain text files with a ".tf" file extension.
@@ -66,11 +62,9 @@ Configuration files are stored in plain text files with a ".tf" file extension.
 
 ### Main.tf
 
-![Main.tf structure.](../media/3-main.png)
-
 Your **main.tf** file will contain the main set of configuration for your module.
 This file is often called a Terraform _plan_. Your Terraform plan specifies the infrastructure resources that you need.
-You can name this file whatever you want, but it's often named *main.tf*.
+You can name this file whatever you want, but it's often named **main.tf**.
 
 The following **main.tf** sections define your module's configuration:
 
