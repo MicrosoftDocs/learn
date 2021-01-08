@@ -1,7 +1,7 @@
-Modern classical computers are based on transistor technologies made from
-semiconductors to implement classical logic operations. Quantum computers take
-radically different approaches to exploit the properties of quantum systems to
-implement qubits and quantum operations.
+Modern classical computers are based on transistor technologies made from semiconductors to implement classical logic operations. Quantum computers take
+radically different approaches to exploit the properties of quantum systems, to implement qubits and quantum operations.
+
+In this unit, you will learn about different challenges we face to build a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed. 
 
 ## Harnessing quantum systems to make computations
 
@@ -33,7 +33,7 @@ general, a functional quantum computer should fulfill the following criteria:
   the measurement affects the state of the register. It's often performed only
   at the end of the computation.
 
-These five criteria are often known as the Divicenzo criteria for quantum
+These five criteria are often known as the *Divicenzo* criteria for quantum
 computation.
 
 Building devices that meet these five criteria is one of the most demanding

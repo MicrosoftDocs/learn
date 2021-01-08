@@ -1,4 +1,8 @@
-Azure Quantum offers two different types of services: *optimization* solutions,
+Welcome, space explorer! As part of your training, you need to learn what components a quantum computer has and what requirements they must meet. Our quantum computers are located in the space fleet headquarters, back on Earth, and you can connect to it through the Azure Quantum cloud service. 
+
+If you took some of the earlier modules in the [learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/), you might have focused on the theoretical aspect of quantum computing. At this point you're ready to connect to Earth and start using real quantum computers to implement your Q# quantum programs. 
+
+Azure Quantum is a cloud service that offers two different types of services: *optimization* solutions,
 where you can run first class optimization algorithms in classical hardware to
 address optimization problems; and *quantum computing* solutions, where you have
 access to quantum computing targets where you can run Q# quantum programs in
@@ -6,8 +10,7 @@ real or simulated quantum devices.
 
 In this module, you'll explore the quantum computing options in Azure Quantum and manage the submissions.
 
-You'll also learn the basic principles behind quantum hardware and the different
-kinds of target devices that you have access to in Azure Quantum.
+You'll also learn the basic principles behind quantum hardware and the different kinds of target devices that you have access to in Azure Quantum.
 
 ## Learning objectives
 
