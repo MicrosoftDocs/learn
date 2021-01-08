@@ -1,7 +1,7 @@
 Modern classical computers are based on transistor technologies made from semiconductors to implement classical logic operations. Quantum computers take
-radically different approaches to exploit the properties of quantum systems to implement qubits and quantum operations.
+radically different approaches to exploit the properties of quantum systems, to implement qubits and quantum operations.
 
-In this part you will learn about different challenges we face to build a quantum computer. If it were easy, humans would have used quantum computers a long time ago and the human space fleet would have presence in other galaxies across the universe. You will also learn the differente types of particles we use as qubits and how we designed quantum devices for them. 
+In this unit, you will learn about different challenges we face to build a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed. 
 
 ## Harnessing quantum systems to make computations
 
