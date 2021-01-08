@@ -3,10 +3,8 @@ It's easy to install the **Database Experimentation Assistant (DEA)**, and it ca
 You're upgrading several CRM databases to SQL Server 2019. These databases include versions from SQL Server 2008 R2 through to SQL Server 2016. The databases are critical to your organization's business, so you must identify any potential performance issues, before the upgraded databases go live into production. You've chosen to use the DEA to help with this task. First, you need to install DEA.
 
 In this exercise, you'll install the DEA on the virtual machine you created earlier.
-
 > [!NOTE]
 > Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if DEA is right for your task**.
-
 
 ## Download the RDP connection file from Azure
 

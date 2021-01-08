@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.output-from-adt-to-downstream-services.summary
+metadata:
+  title: Summary
+  description: This unit summarizes the Learn module and provides links to more resources
+  ms.date: 11/30/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]
