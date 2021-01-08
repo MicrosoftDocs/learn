@@ -1,4 +1,4 @@
-Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Two companies are commissioned to transport and deliver mineral cargo across the galaxy. As member of the quantum space exploration team, you have to study the logistics of this project and optimize how it equally distributes the mineral chunks between two space ships. You can denote the spaceships as ship *A* and ship *B*. If each chunk has a weight, $w$, associated to it, there are two sets of weights, $W_A$ and $W_B$, depending on whether a mineral chunk is loaded onto ship *A* or ship *B*.
+Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated to it, and you would like to partition these weights into two sets: $W_A$ and $W_B$.
 
 We define $\Delta$ as the weight difference between the two ships.
 
