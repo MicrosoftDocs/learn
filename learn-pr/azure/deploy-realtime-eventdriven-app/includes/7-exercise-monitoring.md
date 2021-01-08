@@ -12,7 +12,7 @@ Performance:
 
 / Screenshot
 
-## Set alarms
+## Set alerts
 
 / Content
 

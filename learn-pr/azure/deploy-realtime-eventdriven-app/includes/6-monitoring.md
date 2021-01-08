@@ -7,7 +7,7 @@ We learned that in real-time systems tasks fulfill their function within prescri
 1. Define every individual task of the system.
 2. Predefine the deadlines for each functionality of our application.
 3. Monitor and check the deadlines regularly.
-4. Have alarms specified and strategies set up if the tasks miss the deadlines.
+4. Have alerts specified and strategies set up if the tasks miss the deadlines.
 5. Try to automate!
 
 > [!IMPORTANT]
