@@ -32,9 +32,9 @@ The probability amplitude is an important difference from classical computing. I
 
 How do we describe a quantum state?
 
-A handy notation to write quantum states is the *Dirac bra-ket* notation. In this notation, we describe the possible states of quantum systems by using symbols called kets $| \rangle$.
+A handy notation to write quantum states is the *Dirac bra-ket* notation. In this notation, we describe the possible states of quantum systems by using symbols called _kets_ $| \rangle$.
 
-For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states respectively, and they are two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ always produces `One` when we measure it.
+For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states, respectively, and they are two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
 
 > [!NOTE]
 > There are many interpretations of the concept of *measurement* in
@@ -50,7 +50,7 @@ For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states respectively
 
 ## What are linear operators?
 
-We can perform measurements on quantum states, but we can also make changes to them. For example we can transform a $|0\rangle$ state into a $|1\rangle$ state, or we can put $|0\rangle$ in superposition.
+We can perform measurements on quantum states, but we can also make changes to them. For example, we can transform a $|0\rangle$ state into a $|1\rangle$ state.
 
 An *operator* is a function that acts on a state of a quantum system and transforms it to another state. 
 
@@ -78,7 +78,7 @@ Remember that in the module [Create your first Q# program by using the Quantum
 Development
 Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
 you used superposition to create a quantum random number generator. You used the operation `H` to put a qubit that's in the state $|0\rangle$ into superposition.
-Mathematically, this equation is $$  H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle.$$ So `H` is a linear operator that creates superposition.
+Mathematically, this equation is $$  H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle.$$
 
 Linearity is a fundamental property of quantum mechanics and therefore of quantum computing.
 
