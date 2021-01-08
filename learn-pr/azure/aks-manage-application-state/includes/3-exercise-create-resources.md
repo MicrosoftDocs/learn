@@ -81,6 +81,7 @@ Now you're going to deploy the AKS cluster so you can push your application imag
         --node-count 3 \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
+        --enable-managed-identity \
         --location eastus \
         --enable-addons http_application_routing
     ```

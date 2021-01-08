@@ -88,7 +88,7 @@ First, create a table and load it with some account data.
 1. In the Cloud Shell window, run the following query to create a table called `payment_users`:
 
     ```sql
-    CREATE OR REPLACE TABLE payment_users (
+    CREATE TABLE payment_users (
     	user_id serial PRIMARY KEY,
     	user_name VARCHAR(50),
     	age_in_years INTEGER

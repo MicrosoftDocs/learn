@@ -29,7 +29,7 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct. Azure Database for PostgreSQL manages applying patches, making backups, and managing virtual machines for you. With IaaS, you have to take care of these responsibilities yourself."
-  - content: 'How long do the automatic Azure Database for PostgreSQL backups last for?'
+  - content: 'What is the longest time the automatic backups can last for?'
     choices:
     - content: "7 days"
       isCorrect: false
