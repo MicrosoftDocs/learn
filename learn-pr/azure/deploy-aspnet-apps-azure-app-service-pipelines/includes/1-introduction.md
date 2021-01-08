@@ -1,4 +1,4 @@
-Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you'll focus on using them to implement existing ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store. 
+Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you'll focus on using them to implement existing ASP.NET apps on the Web Apps feature of Azure App Service with Azure SQL Database as their data store. 
 
 To provide some context, imagine that you're a member of the IT team at a mid-sized financial services company. You have a programming background, but over the last few years, you've been managing platform services and operational support of internally developed applications. Your familiarity with software development, deployment, and maintenance gives you a unique perspective, providing you insight into both aspects of DevOps.
 
@@ -14,7 +14,7 @@ After completing this module, you'll be able to:
 
 - Provide an overview of App Services and Azure SQL Database. 
 - Describe core components of continuous integration and continuous deployment (CI/CD).
-- Describe the process of automated deployment process of App Services and Azure SQL Database.
+- Describe the automated deployment process of App Services and Azure SQL Database.
 - Build and deploy data-driven ASP.NET web apps into Azure by using Azure Pipelines.
 
 ## Prerequisites
