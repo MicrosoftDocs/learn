@@ -1,4 +1,4 @@
-Quantum computing promises to enable algorithms that are much faster than their classical counterparts for certain types of problems. This is one of the main reasons the space fleet desires to implement quantum computing, as it offers a computational speedup in certain problems againts our adversaries. 
+Quantum computing promises to enable algorithms that are much faster than their classical counterparts for certain types of problems. This is one of the main reasons the space fleet desires to implement quantum computing, as it offers a computational speedup in certain problems. 
 
 However, not all problems are suitable for quantum computers. Identifying the problems for which a quantum speedup is possible and coming up with algorithms that offer it is an area of ongoing research.
 
@@ -7,7 +7,7 @@ The problem it solves is often referred to as "searching a database", but it is 
 This formulation seems rather mathematical at first, but it is powerful enough to express a broad class of problems. 
 The core idea of Grover's algorithm also turns out to be an important building block of other, more complex quantum algorithms.
 
-Get ready! Your first real task is here! In this module, we'll introduce the necessary concepts and tools for implementing Grover's algorithm and applying it to solve a problem that has driven space pilots and dealers crazy. We talk about finding the best route among space stations in terms of cost effectiveness. Then you'll demonstrate the implementation in Q#.
+Get ready! Your first real task is here! In this module, we'll introduce the necessary concepts and tools for implementing Grover's algorithm and applying it to solve a problem that has driven space pilots crazy - finding the best route between space stations for cost effectiveness. Then you'll demonstrate the implementation in Q#.
 
 Finally, we'll outline some practical aspects of using Grover's algorithm for solving problems.
 

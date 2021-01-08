@@ -23,7 +23,7 @@ Here are some examples:
 
 Some of these problems are better suited to benefit from using Grover's algorithm than the others. 
 
-The problem you have been tasked with is the following. You need to prepare a route to deliver specific supplies to different space fleet stations so space pilots can follow that route. We supply our battleships and space stations with differents materials and you have to make sure that two connected stations don't receive the same type of supply. 
+The problem you have been tasked with is the following. You need to prepare a route to deliver specific supplies to different space fleet stations so space pilots can follow that route. We supply our spaceships and space stations with different materials and you have to make sure that two connected stations don't receive the same type of supply. 
 
 This problem is an instance of the graph coloring problem.
 
@@ -31,7 +31,7 @@ We'll use the graph coloring problem as an example throughout this module. In th
 
 ## Graph coloring problem
 
-The graph coloring problem, more precisely known as the [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring), is formulated as follows: given a graph and a set of $k$ labels ("colors"), assign a label to each of the graph's vertices such that no two vertices that share a common edge, that is they are connected,  have the same label. Using colors as labels is a good visual aid in the graphic representation. In practice these labels can be anything: a list of jobs to be assigned, a list of the radio frequencies we use to communicate between space stations, or a list of different supplies we deliver to space stations. 
+The graph coloring problem, more precisely known as the [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring), is formulated as follows: given a graph and a set of $k$ labels ("colors"), assign a label to each of the graph's vertices such that no two vertices that are connected have the same label. Using colors as labels is a good visual aid in the graphic representation. In practice these labels can be anything: a list of jobs to be assigned, a list of the radio frequencies we use to communicate between space stations, or a list of different supplies we deliver to space stations. 
 
 Here is an example graph with five vertices and seven edges:
 

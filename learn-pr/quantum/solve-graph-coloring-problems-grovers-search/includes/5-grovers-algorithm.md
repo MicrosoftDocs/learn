@@ -1,11 +1,9 @@
 
-In the previous units, we introduced the search problem and you learned to implement its instances as quantum oracles. 
+In the previous units, you learned about the search problem and to implement its instances as quantum oracles. 
 
-Preliminaries are over! Prepare yourself for your first real mission! In this unit, you will need to implement Grover's search algorithm for solving a problem we struggle with. It is not necesaary to dive deep into the gate-level implementation details but you will focus the discussion on the high-level logic instead.
+Preliminaries are over! Prepare yourself for your first real mission! In this unit, you will implement Grover's search algorithm. It is not necessary to dive deep into the gate-level implementation details but you will focus the discussion on the high-level logic instead.
 
-The captain has assigned this particular task to you. Part of our spacecrafts are in charge of transporting and delivering supplies to the different space stations which belong to our space fleet. We provide different types of supplies, but unfortunately we haven't got enough resources to reach every single space station. For a strategic delivery you have to make sure that two connected station, that is two stations that are close to each other, don't receive the same type of supply. If two stations are close, a smaller spaceship can travel from one to the other to deliver supplies. 
-
-You have to prepare a route to deliver to different space stations following those indications. To do that, you implement Grover's algorithm in Q#.
+For a strategic delivery, you have to make sure that two connected stations don't receive the same type of supply. You have to prepare a route to deliver to different space stations according to this requirement. 
 
 ## Algorithm outline
 
