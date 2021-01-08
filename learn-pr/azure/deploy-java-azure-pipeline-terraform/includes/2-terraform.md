@@ -88,7 +88,8 @@ Configuration files are stored in plain text files with a ".tf" file extension.
 
 ![Terraform Worflow.](../media/3-workflow.png)
 
-When running Terraform in automation, the focus is usually on the core plan/apply cycle.
+The easiest way to get started is to copy the recommended Terraform workflow.
+When running Terraform in automation, this workflow focuses on the core plan/apply cycle, which runs all of Terraform's CI/CD actions on new and updated source control pull requests.
 
 - Init: Initialize a working directory with Terraform configuration files.
 - Plan: Produce a plan for changing resources to match the current configuration.
