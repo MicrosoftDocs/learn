@@ -13,7 +13,7 @@ In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 ## Express the problem
 
-Let's start by coming up with an equation for the weight of a given container, which is the sum of all the mineral chunks it contains. This sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
+Let's start by coming up with an expression for the weight of a given container. This is simply the sum of all the mineral chunks it contains. The sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
 
 ![An equation that shows the sum of mineral weights](../media/costfun-1.svg)
 
@@ -23,15 +23,15 @@ Ideally, we want a solution where the weight difference between the containers, 
 
 This equation subtracts the sum of weights on container *B* from the sum of weights on container *A*.
 
-The letter *H* is used to represent a cost function. This notation originates from the model we are using to define our optimization problem, known as the *Ising model*. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
+The letter *H* is used to represent a cost function. This notation originates from the model we're using to define our optimization problem, known as the *Ising model*. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
 
 ## Refine the problem
 
-Next, we introduce a variable, $x_i$, to represent whether an individual mineral chunk *i* is assigned to container *A* or container *B*.
+We now introduce a variable, $x_i$, to represent whether an individual mineral chunk *i* is assigned to container *A* or container *B*.
 
-Because we can assign the chunk *i* to either container, the variable $x_i$ can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the mineral chunk is placed on container *A*, and *-1* represents that the chunk is placed on container *B*. Because of our decision to make $x_i$ be either *1* or *-1*, our optimization problem is called an *Ising problem*.
+Because we assign the chunk *i* to either of two containers, the variable $x_i$ can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* corresponds the mineral chunk being placed on container *A*, and *-1* to the chunk being placed on container *B*. Because of our decision to make $x_i$ be either *1* or *-1*, our optimization problem is called an *Ising problem*.
 
-By introducing this variable $x_i$, we can simplify the equation as follows:
+By introducing the variable $x_i$, we can simplify the equation as follows:
 
 ![An equation that introduces a binary variable to simplify the calculation of the cost function](../media/costfun-3.svg)
 
@@ -50,11 +50,11 @@ This final model gives us a cost function with the required properties.
 
 ## Solving the Problem with Azure Quantum
 
-Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we are ready to invoke a QIO solver to compute solutions for us. We will use Python to connect to the Azure Quantum services. As you make your way through the rest of this section, copy the code sequences into a Jupyter notebook to execute them. Feel free to play with the problem parameters and observe how the results change.
+Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we're ready to invoke a QIO solver to compute solutions for us. We'll use Python to connect to the Azure Quantum services. As you make your way through the rest of this section, copy the code sequences into a Jupyter notebook to execute them. Feel free to play with the problem parameters and observe how the results change.
 
 ### Setup
 
-First, we must instantiate a `Workspace` object which allows you to connect to the workspace you've previously deployed in Azure. Refer back to the [How to create an Azure Quantum workspace](//TODO link) module if you don't have a workspace set up yet. Be sure to fill in the settings below which can be retrieved by running `az quantum workspace show`.
+First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [How to create an Azure Quantum workspace](//TODO link) module if you don't have a workspace set up yet. Be sure to fill in the settings below which can be retrieved by running `az quantum workspace show`.
 
 ```python
 from azure.quantum import Workspace
@@ -112,10 +112,10 @@ problem = createProblemForMineralWeights(mineralWeights)
 
 ### Submit to Azure Quantum
 
-We are ready to submit our problem to Azure using the `ParallelTempering` solver:
+We're ready to submit our problem to Azure using the `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. You can refer to the [Microsoft Quantum Solution provider](//TODO) for more information on available solvers, however, solver selection and tuning is beyond the scope of this module.
+> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. For more information about available solvers, see the [Microsoft Quantum Solution provider](//TODO) page. However, solver selection and tuning is beyond the scope of this module.
 
 ```python
 from azure.quantum.optimization import ParallelTempering
@@ -138,7 +138,7 @@ Submitting problem...
 Result in 35.41556143760681 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -2052.0, 'parameters': {'all_betas': [0.00020408163265306123, 0.0010031845282727856, 0.004931258069052868, 0.024240112818991428, 0.00020408163265306123, 0.00041416312947479666, 0.0008405023793001501, 0.0017057149691356173, 0.0034615768230851457, 0.007024921700835206, 0.014256371424073268, 0.028931870679351317, 0.058714319100389226, 0.00020408163265306123, 0.0003216601955060876, 0.000506979878727771, 0.0007990687098552142, 0.0012594401274306443, 0.001985047612326009, 0.003128702935041415, 0.0049312580690528685, 0.007772328229454337, 0.012250238227336452, 0.019308028713685834, 0.030432059025318557, 0.04796503207311015, 0.07559936381105262, 0.00020408163265306123, 0.0002853639172320586, 0.0003990195697643234, 0.0005579423586529702, 0.000780161423569038, 0.0010908866075247, 0.0015253684103382742, 0.0021328970135012235, 0.0029823940494438134, 0.004170231478526455, 0.0058311645933360684, 0.008153619454858395, 0.011401069057563778, 0.015941923261808107, 0.022291323383991948, 0.031169582869598398, 0.043583903904173556, 0.06094264037716683, 0.08521506986401543, 0.00020408163265306123, 0.0002661133962019146, 0.0003470000642267741, 0.0004524726913109797, 0.0005900043184095882, 0.0007693394594342792, 0.0010031845282727856, 0.001308108124995844, 0.0017057149691356171, 0.002224176656606702, 0.002900227698828882, 0.0037817682692016645, 0.004931258069052867, 0.006430141778288393, 0.0083846196467327, 0.010933172089261346, 0.01425637142407326, 0.018589675944162696, 0.02424011281899142, 0.031608031858238926, 0.04121547145476594, 0.05374314651596505, 0.0700786790855087, 0.09137948893466513], 'replicas': 70, 'sweeps': 600}}
 ```
 
-Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the function below to print out a summary of what the solution means:
+Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the function below to print a summary of what the solution means:
 
 ```python
 def printResultSummary(result):
@@ -180,7 +180,7 @@ Total weights:
     Container b: 53 tons
 ```
 
-Great! The solver found a partition such that the containers are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution does not exist for this problem instance.
+Great! The solver found a partition such that the containers are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution doesn't exist for this problem instance.
 
 ## Improving the Cost Function
 
@@ -196,13 +196,13 @@ The problem has 90 terms for 10 mineral chunks:
 [{'c': 5, 'ids': [0, 1]}, {'c': 9, 'ids': [0, 2]}, {'c': 21, 'ids': [0, 3]}, {'c': 35, 'ids': [0, 4]}, {'c': 5, 'ids': [0, 5]}, {'c': 3, 'ids': [0, 6]}, {'c': 5, 'ids': [0, 7]}, {'c': 10, 'ids': [0, 8]}, {'c': 11, 'ids': [0, 9]}, {'c': 5, 'ids': [1, 0]}, {'c': 45, 'ids': [1, 2]}, {'c': 105, 'ids': [1, 3]}, {'c': 175, 'ids': [1, 4]}, {'c': 25, 'ids': [1, 5]}, {'c': 15, 'ids': [1, 6]}, {'c': 25, 'ids': [1, 7]}, {'c': 50, 'ids': [1, 8]}, {'c': 55, 'ids': [1, 9]}, {'c': 9, 'ids': [2, 0]}, {'c': 45, 'ids': [2, 1]}, {'c': 189, 'ids': [2, 3]}, {'c': 315, 'ids': [2, 4]}, {'c': 45, 'ids': [2, 5]}, {'c': 27, 'ids': [2, 6]}, {'c': 45, 'ids': [2, 7]}, {'c': 90, 'ids': [2, 8]}, {'c': 99, 'ids': [2, 9]}, {'c': 21, 'ids': [3, 0]}, {'c': 105, 'ids': [3, 1]}, {'c': 189, 'ids': [3, 2]}, {'c': 735, 'ids': [3, 4]}, {'c': 105, 'ids': [3, 5]}, {'c': 63, 'ids': [3, 6]}, {'c': 105, 'ids': [3, 7]}, {'c': 210, 'ids': [3, 8]}, {'c': 231, 'ids': [3, 9]}, {'c': 35, 'ids': [4, 0]}, {'c': 175, 'ids': [4, 1]}, {'c': 315, 'ids': [4, 2]}, {'c': 735, 'ids': [4, 3]}, {'c': 175, 'ids': [4, 5]}, {'c': 105, 'ids': [4, 6]}, {'c': 175, 'ids': [4, 7]}, {'c': 350, 'ids': [4, 8]}, {'c': 385, 'ids': [4, 9]}, {'c': 5, 'ids': [5, 0]}, {'c': 25, 'ids': [5, 1]}, {'c': 45, 'ids': [5, 2]}, {'c': 105, 'ids': [5, 3]}, {'c': 175, 'ids': [5, 4]}, {'c': 15, 'ids': [5, 6]}, {'c': 25, 'ids': [5, 7]}, {'c': 50, 'ids': [5, 8]}, {'c': 55, 'ids': [5, 9]}, {'c': 3, 'ids': [6, 0]}, {'c': 15, 'ids': [6, 1]}, {'c': 27, 'ids': [6, 2]}, {'c': 63, 'ids': [6, 3]}, {'c': 105, 'ids': [6, 4]}, {'c': 15, 'ids': [6, 5]}, {'c': 15, 'ids': [6, 7]}, {'c': 30, 'ids': [6, 8]}, {'c': 33, 'ids': [6, 9]}, {'c': 5, 'ids': [7, 0]}, {'c': 25, 'ids': [7, 1]}, {'c': 45, 'ids': [7, 2]}, {'c': 105, 'ids': [7, 3]}, {'c': 175, 'ids': [7, 4]}, {'c': 25, 'ids': [7, 5]}, {'c': 15, 'ids': [7, 6]}, {'c': 50, 'ids': [7, 8]}, {'c': 55, 'ids': [7, 9]}, {'c': 10, 'ids': [8, 0]}, {'c': 50, 'ids': [8, 1]}, {'c': 90, 'ids': [8, 2]}, {'c': 210, 'ids': [8, 3]}, {'c': 350, 'ids': [8, 4]}, {'c': 50, 'ids': [8, 5]}, {'c': 30, 'ids': [8, 6]}, {'c': 50, 'ids': [8, 7]}, {'c': 110, 'ids': [8, 9]}, {'c': 11, 'ids': [9, 0]}, {'c': 55, 'ids': [9, 1]}, {'c': 99, 'ids': [9, 2]}, {'c': 231, 'ids': [9, 3]}, {'c': 385, 'ids': [9, 4]}, {'c': 55, 'ids': [9, 5]}, {'c': 33, 'ids': [9, 6]}, {'c': 55, 'ids': [9, 7]}, {'c': 110, 'ids': [9, 8]}]
 ```
 
-That's a lot of terms for just 10 chunks! On closer inspection, you'll note that there are essentially duplicated terms that result from having squared the right hand side of the equation when building our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of it: `{'w': 110, 'ids': [8, 9]}`.
+That's a lot of terms for just 10 chunks! On closer inspection, you'll note that there are essentially duplicate terms. These terms are the result of having squared the right-hand side of the equation when we built our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of it: `{'w': 110, 'ids': [8, 9]}`.
 
 This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms as follows:
 
 ![An equation that reduces the number of terms in the previous cost function](../media/costfun-5.svg)
 
-Notice that we've expanded the square in our previous cost function to a summation over two indices $i$ and $j$. With the constraint $i<j$ we exclude symmetric copies of terms (as well as "constant" $i=j$ terms).
+Notice that we've expanded the square in our previous cost function to a summation over two indices, $i$ and $j$. With the constraint $i<j$, we exclude the symmetric copies of terms mentioned above. As a bonus, "constant" $i=j$ terms are excluded as well, which don't contribute to the solution.
 
 Modify your `createProblemForMineralWeights` function as follows to implement the improved cost function:
 
