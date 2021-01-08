@@ -15,7 +15,7 @@ prerequisites: |
   - Ability to use the Azure CLI
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/generic-trophy2.svg
 levels:
 - intermediate
 roles:
@@ -24,7 +24,6 @@ roles:
 - technology-manager
 products:
 - azure
-- kubernetes
 modules:
 - learn.aks-deploy-container-app
 - learn.app-package-management-using-helm
@@ -34,4 +33,4 @@ modules:
 - learn.aks-optimize-compute-costs
 
 trophy:
-  uid: learn.generic-trophy.trophy
+  uid: learn.generic-trophy2.trophy
