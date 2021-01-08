@@ -5,12 +5,11 @@ Let's build our model! We'll download the dataset, create our Azure service, upl
 >
 > To sign in to the sandbox:
 >
-> 1. Select **Sign in to activate Sandbox**.
-> 1. Enter your credentials and provide authentication as prompted.
-> 1. After you authenticate, if prompted, select **Review permissions**.
+> 1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
+> 1. If prompted, select **Review permissions**.
 >     :::image type="content" source="../media/review-permissions-sandbox.png" alt-text="Screenshot that shows the Review Permissions button selected.":::
 > 
-> 1. Select the permission settings you want to use, and then select **Accept**.
+> 1. Verify the permission settings, and select **Accept**.
 > 
 >    :::image type="content" source="../media/accept-permissions-sandbox.png" alt-text="Screenshot that shows permissions details and the Accept button selected.":::
 >
@@ -32,7 +31,7 @@ Download the zip file that contains the dataset:
 
 ## Create a Custom Vision API resource
 
-Next, we'll create an API resource in Azure Cognitive Services Custom Vision:
+Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), select **Create a resource**.
 1. Search for **custom vision**. In the **Custom Vision** card in the search results, select **Create**.
@@ -42,7 +41,7 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision:
    1. Create a new resource group:
       1. Beside **Resource group**, select the **Create new** link. 
       1. In the dialog box, enter *BirdResourceGroup*, and then select **OK**.
-         :::image type="content" source="../media/create-resource-group-azure-portal.png" alt-text="Screenshot that shows creating a new resource group the Azure portal."::: 
+      :::image type="content" source="../media/create-resource-group-azure-portal.png" alt-text="Screenshot that shows creating a new resource group the Azure portal."::: 
    1. Enter a name for your new Custom Vision service resource (for example, *BirdCustomVisionService*).
    1. Under **Training Resource**:
       1. Set **Training location** to *(US) South Central US*.
@@ -56,17 +55,17 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision:
 
 When the deployment finishes, select **Go to resource**.
 
-![An animated image file that demonstrates how to create a Custom Vision project.](../media/create-custom-vision-service.gif)
+:::image type="content" source="../media/deployment-finished-azure-portal.png" alt-text="Screenshot that shows the deployment finished page in the Azure portal, with Go to resource selected.":::
 
-## Upload data
+## Upload images
 
-Now, it's time to upload the data that we'll use to train the machine learning model. There are two ways to upload data:
+Now, it's time to upload the images that we'll use to train the machine learning model. There are two ways to upload images:
 - In the Custom Vision portal, browse to, upload, and then tag images.
-- In a Command Prompt window, use the images that are included in the SDK. 
+- In a tool like Jupyter Notebook, use the images that are included in the SDK. 
 
-When you have a large amount of data, image classes, and tags to upload, it's faster to use the SDK. However, you can choose one of the options that are described in the next sections. Complete the steps to upload data the way that works best for you. 
+When you have a large amount of data, image classes, and tags to upload, it's faster to use the SDK. However, you can choose one of the options that are described in the next sections. Complete the steps to upload the images in the dataset the way that works best for you. 
 
-### Upload data option 1: Custom Vision portal upload
+### Upload images option 1: Custom Vision portal
 
 1. Create a project in the Custom Vision portal:
 
@@ -84,21 +83,19 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
       > [!NOTE]
       > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
 
-1. Add and tag images:
+1. Add images and tags:
 
    1. In your Custom Vision project, select **Add images**.
        :::image type="content" source="../media/add-images-custom-vision-portal.png" alt-text="Screenshot that shows Add images selected in a Custom Vision portal project.":::
-   1. In the **Open file** dialog box, go to the *birds-photo* folder where you extracted the images files from the dataset .zip file. 
-   1. Go to a bird species folder.
-   1. To select all the images in the species folder, select Ctrl + A, and then select **Open**.
+   1. In **Open**, go to the *birds-photo* folder where you extracted the images files from the dataset .zip file. 
+   1. Open a bird species folder.
+   1. Select Ctrl + A to select all the images in the species folder, and then select **Open**.
       :::image type="content" source="../media/select-photos-folder-custom-vision-portal.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
    1. In **Image upload**, add a description in **My Tags** to indicate the species for the birds shown in the photos.
-       :::image type="content" source="../media/unit-3-upload-photos-from-ui-3.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
    1. Select **Upload \<number\> files**.
+       :::image type="content" source="../media/tag-photos-custom-vision-portal.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
 
-   ![An animated GIF that demonstrates how to upload photos in Custom Vision](../media/upload-custom-vision-photos.gif)
-
-### Upload data option 2: SDK upload
+### Upload images option 2: SDK
 
 The Custom Vision SDK is available in the following programming languages: Python, .NET, Node.js, Go, and Java. We'll use Python and Jupyter Notebook. If you don't already have these tools installed, we recommend that you get them with an Anaconda installation. You get Python and Jupyter Notebook when you [download Anaconda](https://www.anaconda.com/?azure-portal=true).
 
@@ -116,24 +113,25 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
    !pip install azure-cognitiveservices-vision-customvision
    ```
 
-1. Import the packages that are needed to run the script:
+1. Import the packages that you need to run the script:
 
-   ```python
-   from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
-   from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateEntry
-   from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateBatch
-   from msrest.authentication import ApiKeyCredentials import numpy as np
-   ```
+    ```python
+    from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
+    from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateEntry
+    from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateBatch
+    from msrest.authentication import ApiKeyCredentials 
+    import numpy as np
+    ```
 
 1. Now use the following code to create the Custom Vision project. Before your run the code, replace the `<endpoint>` and `<key>` placeholders with the values for your Custom Vision resource.
 
-   To get the Custom Vision resource values:
+   To get the Custom Vision resource values:<br /><br />
 
    1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), go to your Custom Vision resource.
-   1. On the resource menu, under **Resource Management**, select **Keys and Endpoint**.
+   1. In the resource menu, under **Resource Management**, select **Keys and Endpoint**.
    1. Copy the value from the **Endpoint** box. In the code, replace the `<endpoint>` placeholder with this value.
-   1. To the right of the **KEY 1** box, select the copy icon. The key 1 value is copied to your clipboard. In the code, replace the `<key>` placeholder with this value.
-   :::image type="content" source="../media/unit-3-sdk-upload-endpoint-key-values.png" alt-text="Screenshot that shows how to locate the endpoint and key values for a Custom Vision resource in the Azure portal.":::
+   1. For **KEY 1**, select the copy icon to copy the key. In the code, replace the `<key>` placeholder with this value.
+       :::image type="content" source="../media/sdk-upload-endpoint-key-values.png" alt-text="Screenshot that shows how to locate the endpoint and key values for a Custom Vision resource in the Azure portal.":::
 
    Your code will look like this example:
 
@@ -152,7 +150,6 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
    project = trainer.create_project("Bird Classification")
         
    print("Project created!")
-
    ```
 
 1. Unzip your downloaded *bird-photos.zip* file to the same directory where you saved your Jupyter Notebook file. Add the following code to change to the directory for the bird photos in your project.
@@ -183,19 +180,19 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
 
    1. In your Jupyter notebook file, add the `createTag` function code. The function creates an image name tag in the Custom Vision project.
 
-      ```python
-      tag_id = createTag(tag)
-      print(f"tag creation done with tag id {tag_id}")
-      image_list = createImageList(tag, tag_id)
-      print("image_list created with length " + str(len(image_list)))
+       ```python
+       tag_id = createTag(tag)
+       print(f"tag creation done with tag id {tag_id}")
+       image_list = createImageList(tag, tag_id)
+       print("image_list created with length " + str(len(image_list)))
 
-      # Break list into lists of 25 and upload in batches
-      for i in range(0, len(image_list), 25):
-          batch = ImageFileCreateBatch(images=image_list[i:i + 25])
-          print(f'Upload started for batch {i} total items {len(image_list)} for tag {tag}...')
-          uploadImageList(batch)
-          print(f"Batch {i} Image upload completed. Total uploaded {len(image_list)} for tag {tag}")
-      ```
+       # Break list into lists of 25 and upload in batches
+       for i in range(0, len(image_list), 25):
+           batch = ImageFileCreateBatch(images=image_list[i:i + 25])
+           print(f'Upload started for batch {i} total items {len(image_list)} for tag {tag}...')
+           uploadImageList(batch)
+           print(f"Batch {i} Image upload completed. Total uploaded {len(image_list)} for tag {tag}")
+       ```
 
    1. Next, add the code for the `createImageList` function. The function takes two parameters: a `tag` name from the list of folder names and the `tag_id` from the tag we created in the Custom Vision project. The function uses the `base_image_url` value to set the directory to the folder that contains the images for the `tag` we created from the folder names. Then, we append each image to the list, which we’ll use to upload in batches to the created `tag`:
   
@@ -241,21 +238,21 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
             print(f'Upload started for batch {i} total items {len  (image_list)} for tag {tag}...')
             uploadImageList(batch)
             print(f"Batch {i} Image upload completed. Total uploaded  {len(image_list)} for tag {tag}")
-         ```
+       ```
 
         > [!Warning]
         > Run the code in this cell only once. If you attempt to run the cell more than once without also deleting your Custom Vision project, the cell run fails.
 
 ## Train the model
 
-We've created our dataset in Custom Vision, and now we can train our model. You can train the model by using the SDK, but we'll use the Custom Vision portal instead:
+We've created our dataset in Custom Vision. Now, we can train our model. You could train the model by using the SDK, but we'll use the Custom Vision portal instead.
 
 1. Go to [customvision.ai](https://www.customvision.ai/?azure-portal=true).
 1. Select the **Bird Classification** project.
-1. In the top navigation in the Custom Vision portal, at the right, select **Train**.
+1. In the top menu bar, select **Train**.
 1. In **Choose Training Type**, select **Quick Training**, and then select **Train**.
 
-During the training process, an **Iterations** section appears on the left. **Training…** indicates that the training is in progress. When the training finishes, information about how the model performed for the training iteration is shown.
+During the training process, an **Iterations** section appears on the left. A **Training…** notification indicates that the training is in progress. When the training finishes, information about how the model performed for the training iteration is shown.
 
 :::image type="content" source="../media/train-model-iteration-metrics.png" alt-text="Screenshot that shows the metrics for a training iteration of the Custom Vision project.":::
 

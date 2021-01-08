@@ -17,7 +17,7 @@ quiz:
       choices:
         - content: "To build Skynet"
           isCorrect: false
-          explanation: "Incorrect! Skynet is from a movie and isn't real."
+          explanation: "Incorrect. Skynet is from a movie and isn't real."
         - content: "To mimic human intelligence by using a computer."
           isCorrect: true
           explanation: "Correct!"

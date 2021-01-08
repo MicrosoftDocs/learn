@@ -10,11 +10,11 @@ The data is provided by the CLO, with a special thanks to photographers, contrib
 
 In this module, you will:
 
-- Get an introduction to machine learning.
-- Learn how to use pretrained machine learning models in Azure Cognitive Services.
-- Learn how to use the Custom Vision service in Azure.
-- Build a custom machine learning model.
-- Deploy the model created by using Custom Vision.
+- Get an introduction to machine learning
+- Learn how to use pretrained machine learning models in Azure Cognitive Services
+- Learn how to use the Custom Vision service in Azure
+- Build a custom machine learning model
+- Deploy the model created by using Custom Vision
 - 
 - ## Prerequisites
 
