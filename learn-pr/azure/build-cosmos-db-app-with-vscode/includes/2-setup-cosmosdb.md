@@ -26,7 +26,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
     > [!NOTE]
     > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.
 
-1. Click the **Database** > right click **Concierge Subscription** and select **Create Server** to start creating an Azure Cosmos DB account. You will be asked to select the subscription if you have more than one.
+1. Click the **Database** > right click **Concierge Subscription** and select **Create Server** to start creating an Azure Cosmos DB account. You will be asked to select the subscription if you have more than one. Select **Core** for thee DB option.
 
 1. In the text box at the top of the screen, enter a unique name for your Azure Cosmos DB account, and then press enter. The account name can contain only lowercase letters, numbers and the '-' character, and must be between 3 and 31 characters.
 
@@ -47,6 +47,7 @@ Now let's create a new database and collection for your customers.
 1. In the Azure: Cosmos DB pane, right-click your new account, and then click **Create Database**.
 1. In the input palette at the top of the screen, type `Users` for the database name and press Enter.
 1. Enter `WebCustomers` for the collection name and press Enter.
+1. Enter userid for partition key.
 1. Expand the account in the **Azure: Cosmos DB** pane, and the new **Users** database and **WebCustomers** collection are displayed.
 
     ![Animation showing the above instructions run through the Azure Cosmos DB extension in Visual Studio Code.](../media/2-setup/vs-code-azure-cosmos-db-extension.gif)
