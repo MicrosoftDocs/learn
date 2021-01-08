@@ -1,4 +1,4 @@
-In unit 2, we mention that there are plenty of problems that can be formulated as a search problem, meaning that they can be solved using Grover's algorithm. Now that you're familiar with Grover's search algorithm and its implementation, let's revisit the question. Can all search problems benefit from the quantum speedup offered by Grover's algorithm? Once we have solved one problem, in our case the problem of finding the best delivery route, can we use that solution to solve any search problem?
+In unit 2, you learned that there are plenty of problems that can be formulated as a search problem, therefore be solved using Grover's algorithm. Now that you're familiar with Grover's search algorithm and its implementation, let's revisit the question. Can all search problems benefit from the quantum speedup offered by Grover's algorithm? 
 
 The answer, unfortunately, is no. In this unit, we look at the types of problems that can be a good fit for Grover's algorithm.
 

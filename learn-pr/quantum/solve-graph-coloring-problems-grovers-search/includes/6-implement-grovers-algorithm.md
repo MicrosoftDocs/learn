@@ -34,8 +34,8 @@ Instead, the operation takes a qubit array as one of the inputs, and the code th
 
 
 Now you are ready to put together everything you've learned so far and solve the problem of preparing a route to deliver specific supplies to different space stations.
-Recall that this problem is an instance of the graph coloring problem we introduced in the second unit, where color stands for type of supply. Those can be fuel, food, water, 
-construction materials, weapons or clothing. We strongly recommend that you start solving a smaller version of the problem and consider only 4 types of supplies. 
+Recall that this problem is an instance of the graph coloring problem we introduced in the second unit, where a color stands for a type of supply. It can be fuel, food, water, 
+construction materials, clothing, etc. We strongly recommend that you start solving a smaller version of the problem and consider only 4 types of supplies. 
 
 Here is the full code.
 
@@ -73,7 +73,7 @@ Vertex 2 - color 1
 Vertex 3 - color 3
 Vertex 4 - color 2
 ```
-If we deliver 4 types of supplies to our stations, we have to send a spaceship to a route based on the results you got here. 
+If you deliver 4 types of supplies to our stations, you have to send a spaceship to a route based on the results you got here. 
 
 ## Watching the amplitudes
 
@@ -83,4 +83,4 @@ Now let's take a look at the behavior of the amplitudes of the basis states at t
 
 Congratulations! You've implemented your first quantum search algorithm and used it to solve a small problem.
 
-In the next unit, we consider other examples and we take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
+In the next unit, you consider other examples and you take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
