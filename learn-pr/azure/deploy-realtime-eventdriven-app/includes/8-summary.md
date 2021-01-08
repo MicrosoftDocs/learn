@@ -2,15 +2,15 @@ Congratulations! You've completed a full event-driven scenario!
 
 Your application is sending event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub. You followed these steps:
 
-1. Create.
+1. Create an Azure Function to simulate telemetry data.
 
-2. Create.
+2. Send the telemetry data towards an event hub.
 
-3. Verify.
+3. Read the events with a function, process them and store them in a database.
 
-4. Add Maven Plugin.
+4. Add monitoring.
 
-5. Update.
+5. Verify the timings set to ensure your workload gets handled in real time.
 
 You're now confident that you can handle real-time workloads on Azure.
 
