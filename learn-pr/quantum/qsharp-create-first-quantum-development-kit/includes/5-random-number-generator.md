@@ -1,4 +1,4 @@
-In this part, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number to use as a valid and secure password. This phase builds on the random bit generator that you already created. You will need to write some classical code for this phase.
+In this part, you implement the second part of your quantum random number generator: combining multiple random bits to form a larger number to use as a valid and secure password. This phase builds on the random bit generator that you already created. You will need to write some classical code for this part.
 
 First, let's see how classical code fits in with Q#.
 
