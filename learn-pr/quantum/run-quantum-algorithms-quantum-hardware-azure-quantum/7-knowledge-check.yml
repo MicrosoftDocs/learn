@@ -41,7 +41,7 @@ quiz:
       explanation: 'This is false. There are other working technologies available today, like superconducting qubit quantum computers.'
     - content: 'A quantum computer that only allows a certain set of transformations that is not universal.'
       isCorrect: false
-      explanation: 'This sentence is false. With ion trapped quantum computers possible to get qubits entangled and apply an universal set of quantum operations.'
+      explanation: 'This sentence is false. With ion trapped quantum computers it is possible to get qubits entangled and apply an universal set of quantum operations.'
       
   - content: 'Which of the following sentences is **true**?'
     choices:
