@@ -1,48 +1,55 @@
-﻿In the previous unit, you defined the operation `ApplyIsbnOracle`, which takes as an argument the qubit register for our search space, as well as an ancilla qubit in $\ket{-}$ to be used by the oracle to flag the correct states. 
-This process is handled by the `ComputeIsbnCheck` operation run within `ApplyIsbnOracle`.
+﻿In the previous unit, you defined the operation `isbnOracle`, which takes as an argument the qubit register for our search space and ultimately applies a phase factor of -1 to the number state $\ket{x}$ which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
+To do so, you also defined the operation `ComputeIsbnCheck`, which is used inside `isbnOracle` and performs the necessary arithmetic mapping to a second qubit register.
 
-Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations," each of which consists of
-- applying the oracle, which reflects the state about the bad solutions, and
-- reflecting about the uniform superposition of states.
+Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations," each of which consists of:
+1. applying the oracle,
+2. reflecting about the uniform superposition of states.
 
-The first step is handled by the `ReflectAboutCorrectDigit` operation which you also defined previously (simply allocating the auxiliary qubit $\ket{-}$ before passing it all on to `ApplyIsbnOracle`).
-The second step is *not* as problem specific as the oracle, but can be somewhat optimized for our situation. We implement it in the following. 
+The first step is precisely what we defined in the previous unit with `isbnOracle`.
+
+The second step---sometimes referred to as *reflection about the mean* or *diffusion*---is *not* as problem specific as the oracle.
+Nonetheless, it can be somewhat optimized for our situation. 
+We implement it in the following. 
 
 ## Reflection about uniform superposition
 
 In the [previous module using Grover's](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. 
+In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
+
 However, since we are only interested in the number states $0 - 9$, we have no use for the remaining states $10-15$ which our 4 qubits can represent.
 Therefore, we will only utilize and reflect about the uniform superposition $\sum_{i=0}^9 \ket{i}$.
 
-To prepare this on a qubit register `digit`, we define the operation `PrepareUnifromSuperpositionOverDigits` as
+To prepare this on qubit register `digitReg`, we define the operation `PrepareUnifromSuperpositionOverDigits` as
 
 ```qsharp
-    operation PrepareUniformSuperpositionOverDigits(digit : LittleEndian) : Unit is Adj + Ctl {
-        PrepareArbitraryStateCP(ConstantArray(10, ComplexPolar(1.0, 0.0)), digit);
+    operation PrepareUniformSuperpositionOverDigits(digitReg : Qubit[]) : Unit is Adj + Ctl {
+        PrepareArbitraryStateCP(ConstantArray(10, ComplexPolar(1.0, 0.0)), LittleEndian(digitReg));
     }
 ```
 
-Next, the reflection about this state is handled by `ReflectAboutUniform`:
+You can think of this as analagous to the previous module's use of `ApplyToEachA(H, register)` to do prepare the uniform superposition over all possible number states.
+There, the operation used both in preparing the initial superposition of the algorithm and in the operation corresponding to reflection about that superposition---the same is true here.
+
+The full step is then implemented by `ReflectAboutUniform`:
 
 ```qsharp
-    operation ReflectAboutUniform(digit : LittleEndian) : Unit {
+    operation ReflectAboutUniform(digitReg : Qubit[]) : Unit {
         within {
             // Transform the uniform superposition to all-zero.
-            Adjoint PrepareUniformSuperpositionOverDigits(digit);
+            Adjoint PrepareUniformSuperpositionOverDigits(digitReg);
             // Transform the all-zero state to all-ones
-            ApplyToEachCA(X, digit!);
+            ApplyToEachCA(X, digitReg);
         } apply {
-            // Now that we've transformed the uniform superposition to the
-            // all-ones state, reflect about the all-ones state, then let
+            // Reflects about that all-ones state, then let
             // the within/apply block transform us back.
-            Controlled Z(Most(digit!), Tail(digit!));
+            Controlled Z(Most(digitReg), Tail(digitReg));
         }
     }
 ```
 
 ## Grover iterations
 
-Each Grover iteration will consist of one application of `ReflectAboutCorrectDigit` followed by `ReflectAboutUniform`.
+Each Grover iteration will consist of one application of `isbnOracle` followed by `ReflectAboutUniform`.
 
 The ideal number of Grover iterations to perform is provided by the number of possible solutions and the total number of states.
 In this case, we have a single possible solution, so we define the function `NIterations` which takes the total number of states as an argument:
@@ -56,6 +63,35 @@ In this case, we have a single possible solution, so we define the function `NIt
 ```
 Since we only consider the 10 possible digits as our search space, we will provide this an argument of 10.
 
+## Checking result
+
+Recall that in most situations Grover's algorithm is probabilistic.
+Although it typically returns a correct answer with a very high probability, there is often a finite chance that the measurement results in an incorrect solution. 
+This is because it merely amplifies the amplitude of the "good" states, and therefore the "bad" states will often still retain small amplitudes.
+To account for this, we simply check whether the result is correct and then repeat the algorithm if not.
+
+In our scenario, we define the classical *function* `IsIsbnValid` to check whether the returned missing digit $x$ provides a valid ISBN. 
+To keep things a little more general, let's use the general form for the ISBN validity (introduced at the beginning of the previous unit):
+$$
+\left ( \sum_{i=0}^{9} (10-i) x_i \right ) \bmod 11 = 0
+$$
+
+Our function will take an array of integers corresponding to our ISBN---in our case, 0-306-$x$0615-2 with $x$ the missing digit returned by the algorithm---and returns `True` if the equation is satisfied, `False` if not.
+
+```qsharp
+    function IsIsbnValid(digits : Int[]) : Bool {
+        // ensure array is 10 digits
+        EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
+        
+        mutable acc = 0;
+        for ((idx, digit) in Enumerated(digits)) {
+            set acc = (acc + (10 - idx) * digit) % 11;
+        }
+        return acc == 0;
+    }
+```
+
+Thus our full program will simply repeat Grover's algorithm until this condition is met, indicating the returned digit correctly completes the ISBN. 
 
 ## Run the full program
 
@@ -80,30 +116,41 @@ Next, you will need to have access to all the operations, so be sure to include 
 To perform the full search, define the operation `SearchForMissingDigit` as below. Be sure to include the `@EntryPoint()` attribute before it, which will let you run it from the command line.
 
 ```qsharp
-    @EntryPoint()
+@EntryPoint()
     operation SearchForMissingDigit() : Int {
-        using (raw = Qubit[4]) {
-            let digit = LittleEndian(raw);
+        
+        // get the number of Grover iterations required for 10 possible results and 1 solution
+        let numIterations = NIterations(10);
 
-            // Initialize a uniform superposition over all possible inputs.
-            PrepareUniformSuperpositionOverDigits(digit);
+        // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
+        using (digitReg = Qubit[4]) {
+            mutable missingDigit = 0;
+            // Repeat the algorithm until the result forms a valid ISBN
+            repeat{
+                // Initialize a uniform superposition over all possible digit states
+                PrepareUniformSuperpositionOverDigits(digitReg);
 
-            // The search itself consists of repeatedly reflecting about the
-            // marked state and our start state, which we can write out in Q#
-            // as a for loop.
-            for (idxIteration in 0..NIterations(10) - 1) {
-                ReflectAboutCorrectDigit(digit);
-                ReflectAboutUniform(digit);
-            }
+                // The Grover iterations
+                for (idxIteration in 1..numIterations) {
+                    // Apply the oracle
+                    isbnOracle(digitReg);
+                    // Reflect about the uniform superposition
+                    ReflectAboutUniform(digitReg);
+                }
+                // Print the resulting state of the system
+                DumpMachine(); 
 
-            // Measure and return the answer.
-            DumpMachine();
-            return MeasureInteger(digit);
+                // Measure the answer
+                set missingDigit = MeasureInteger(LittleEndian(digitReg));
+            } 
+            until (IsIsbnValid([0, 3, 0, 6, missingDigit, 0, 6, 1, 5, 2]));
+
+            return missingDigit;
         }
     }
 ```
 
-The `DumpMachine` call will allow us to see the full four-qubit quantum state, and the return will be the measurement result---hopefully the digit you need!
+The `DumpMachine` call will allow us to see the full four-qubit quantum state, and the return will be your missing digit!
 
 ### Full file
 
@@ -120,46 +167,47 @@ namespace ISBNGrover {
     open Microsoft.Quantum.Preparation;
     open Microsoft.Quantum.Diagnostics;
 
-    operation ComputeIsbnCheck(missingDigitReg : LittleEndian, targetReg : LittleEndian) : Unit is Adj + Ctl {
-        using (rawScratch = Qubit[Length(missingDigitReg!)]) {
-            let scratchReg = LittleEndian(rawScratch);
-            
-            within {
-                ApplyXorInPlace(9, scratchReg);
-                MultiplyAndAddByModularInteger(6, 11, missingDigitReg, scratchReg);
-            } apply {
-                ApplyToEachCA(CNOT, Zipped(scratchReg!, targetReg!));
-            }
-            
-        }
+
+    operation ComputeIsbnCheck(digitReg : Qubit[], targetReg : Qubit[]) : Unit is Adj + Ctl {
+        // Being freshly allocated, targetReg will be in |0⟩ when this operation is called.
+        // We first intialize it to |9⟩:
+        ApplyXorInPlace(9, LittleEndian(targetReg));
+
+        // Apply the mapping |x⟩|9⟩ -> |x⟩ |(9 + 6x) mod 11 ⟩ where |x⟩ is the state of digitReg
+        MultiplyAndAddByModularInteger(6, 11, LittleEndian(digitReg), LittleEndian(targetReg));
     }
 
-    operation ApplyIsbnOracle(missingDigitReg : LittleEndian, flagQubit : Qubit) : Unit is Adj + Ctl {
-        // Allocate an additional register for the check digit.
-        using (rawTarget = Qubit[Length(missingDigitReg!)]) {
-            let targetReg = LittleEndian(rawTarget);
-            
+    operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+        // Allocate target register for oracle mapping, flag qubit for phase kickback
+        using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
-                ComputeIsbnCheck(missingDigitReg, targetReg);
-            } apply {
-                // The flag qubit will be already initialized in |-> when this is applied.
-                // Thus those states where targetReg is in |0> number state (the good solutions)
-                // will be flagged with a -1 phase due to the controlled X they apply to the |-> state.  
-                ApplyControlledOnInt(0, X, targetReg!, flagQubit);
-            }
-        }
-    }
-
-    operation ReflectAboutCorrectDigit(missingDigitReg : LittleEndian) : Unit is Adj + Ctl {
-        using (flagQubit = Qubit()) {
-            within {
-                // put flagQubit in |->
+                // Initialize flag qubit to |-⟩ 
                 X(flagQubit);
                 H(flagQubit);
+                // Map targetReg to |(9 + 6x) mod 11 ⟩, where |x⟩ is the state of digitReg
+                ComputeIsbnCheck(digitReg, targetReg);
             } apply {
-                // uses phase kickback to flag the good solutions with a -1 phase
-                ApplyIsbnOracle(missingDigitReg, flagQubit);
+                // States where targetReg is in |0⟩ number state will be flagged with a -1
+                // phase due to controlled X they apply to the flag qubit in the |-⟩ state.  
+                ApplyControlledOnInt(0, X, targetReg, flagQubit);
             }
+        }
+    }
+
+    operation PrepareUniformSuperpositionOverDigits(digitReg : Qubit[]) : Unit is Adj + Ctl {
+        PrepareArbitraryStateCP(ConstantArray(10, ComplexPolar(1.0, 0.0)), LittleEndian(digitReg));
+    }
+
+    operation ReflectAboutUniform(digitReg : Qubit[]) : Unit {
+        within {
+            // Transform the uniform superposition to all-zero.
+            Adjoint PrepareUniformSuperpositionOverDigits(digitReg);
+            // Transform the all-zero state to all-ones
+            ApplyToEachCA(X, digitReg);
+        } apply {
+            // Reflects about that all-ones state, then let
+            // the within/apply block transform us back.
+            Controlled Z(Most(digitReg), Tail(digitReg));
         }
     }
 
@@ -169,46 +217,51 @@ namespace ISBNGrover {
         return nIterations;
     }
 
-    operation PrepareUniformSuperpositionOverDigits(digit : LittleEndian) : Unit is Adj + Ctl {
-        PrepareArbitraryStateCP(ConstantArray(10, ComplexPolar(1.0, 0.0)), digit);
-    }
-
-    operation ReflectAboutUniform(digit : LittleEndian) : Unit {
-        within {
-            // Transform the uniform superposition to all-zero.
-            Adjoint PrepareUniformSuperpositionOverDigits(digit);
-            // Transform the all-zero state to all-ones
-            ApplyToEachCA(X, digit!);
-        } apply {
-            // Now that we've transformed the uniform superposition to the
-            // all-ones state, reflect about the all-ones state, then let
-            // the within/apply block transform us back.
-            Controlled Z(Most(digit!), Tail(digit!));
+    function IsIsbnValid(digits : Int[]) : Bool {
+        EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
+        
+        mutable acc = 0;
+        for ((idx, digit) in Enumerated(digits)) {
+            set acc = (acc + (10 - idx) * digit) % 11;
         }
+        return acc == 0;
     }
 
     @EntryPoint()
     operation SearchForMissingDigit() : Int {
-        using (raw = Qubit[4]) {
-            let digit = LittleEndian(raw);
+        
+        // get the number of Grover iterations required for 10 possible results and 1 solution
+        let numIterations = NIterations(10);
 
-            // Initialize a uniform superposition over all possible inputs.
-            PrepareUniformSuperpositionOverDigits(digit);
+        // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
+        using (digitReg = Qubit[4]) {
+            mutable missingDigit = 0;
+            // Repeat the algorithm until the result forms a valid ISBN
+            repeat{
+                // Initialize a uniform superposition over all possible digit states
+                PrepareUniformSuperpositionOverDigits(digitReg);
 
-            // The search itself consists of repeatedly reflecting about the
-            // marked state and our start state, which we can write out in Q#
-            // as a for loop.
-            for (idxIteration in 0..NIterations(10) - 1) {
-                ReflectAboutCorrectDigit(digit);
-                ReflectAboutUniform(digit);
-            }
+                // The Grover iterations
+                for (idxIteration in 1..numIterations) {
+                    // Apply the oracle
+                    isbnOracle(digitReg);
+                    // Reflect about the uniform superposition
+                    ReflectAboutUniform(digitReg);
+                }
+                // Print the resulting state of the system
+                DumpMachine(); 
 
-            // Measure and return the answer.
-            DumpMachine();
-            return MeasureInteger(digit);
+                // Measure the answer
+                set missingDigit = MeasureInteger(LittleEndian(digitReg));
+            } 
+            until (IsIsbnValid([0, 3, 0, 6, missingDigit, 0, 6, 1, 5, 2]));
+
+            return missingDigit;
         }
     }
+
 }
+
 ```
 
 
