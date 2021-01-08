@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.4a-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/07/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which SQL Server Azure licensing model lets you pay the per-second cost of running the Azure VM including the cost of the SQL Server license?"
+    choices:
+    - content: "Pay-as-you-go (PAYG)."
+      isCorrect: true
+      explanation: "That's correct. This is what PAYG means."
+    - content: "Bring-your-own-license (BYOL)."
+      isCorrect: false
+      explanation: "That's incorrect. This license also known as the Azure Hybrid Benefit (AHB), allows you to use your own SQL Server license with a VM running SQL Server. You now only pay for the VM usage."
+    - content: "On-premises-hybrid-license (OPHL)."
+      isCorrect: false
+      explanation: "That's incorrect. This isn't a valid license option."
+  - content: "What is the best way to migrate a multi-terabyte transactional database from your remote backup site with a poor internet connection?"
+    choices:
+    - content: "Backup and restore a database."
+      isCorrect: false
+      explanation: "That's incorrect. This is the second best option, but when you have very large databases to migrate over an unreliable internet connection there's a better option."
+    - content: "Azure Database Migration Service (DMS)."
+      isCorrect: false
+      explanation: "That's incorrect. This is a good option for smaller databases lets you monitor the migration all in the Azure portal."
+    - content: "The Azure Import/Export Service."
+      isCorrect: true
+      explanation: "That's correct. This option allows you to physically ship hard drives to Azure data centers and have the database files loaded into Azure Blob Storage."
+  - content: "Which post migration step can you do to improve your database availability?"
+    choices:
+    - content: "Update maintenance scripts, rebuild indexes, and update statistics."
+      isCorrect: false
+      explanation: "That's incorrect. These steps won't improve database availability."
+    - content: "Add failover groups in your SQL Database Managed Instance."
+      isCorrect: true
+      explanation: "That's correct. Failover groups replicate SQL Sever databases into multiple regions to improve availability."
+    - content: "Run the SQL Server Query Optimizer."
+      isCorrect: false
+      explanation: "That's incorrect. These steps won't improve database availability."
