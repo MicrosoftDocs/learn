@@ -17,7 +17,7 @@ Let's start by coming up with an equation for the weight of a given container, w
 
 ![An equation that shows the sum of mineral weights](../media/costfun-1.svg)
 
-Ideally, we want a solution where the weight difference between the containers $\Delta$ is as small as possible.
+Ideally, we want a solution where the weight difference between the containers, $\Delta$, is as small as possible.
 
 ![An equation that subtracts the total weights on one container from the total weights on the other container to produce a cost function](../media/costfun-2.svg)
 
