@@ -50,64 +50,34 @@ The preceding section of this unit demonstrated using the Maven Plugin for Azure
 The following annotated excerpt from a `pom.xml` file demonstrates some of the settings that are required:
 
 ```xml
-<plugin>
-    <groupId>com.microsoft.azure</groupId>
-    <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.12.0</version>
-    <configuration>
-        <schemaVersion>v2</schemaVersion>
-        <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>
-        <appName>${WEBAPP_NAME}</appName>
-        <region>${REGION}</region>
-        <pricingTier>P1V2</pricingTier>
-
-        <!-- Reference <serverId> in Maven's settings.xml to authenticate with Azure -->
-        <!-- You don't need to authenticate when running Maven in the Cloud Shell -->
-        <authentication>
-          <serverId>${AZURE_AUTH}</serverId>
-        </authentication>
-
-        <!-- Choose OS either linux, windows, or docker -->
-        <!-- Choose your java version on webserver version -->
-        <runtime>
-            <os>linux</os>
-            <javaVersion>java11</javaVersion>
-            <webContainer>TOMCAT 9.0</webContainer>
-        </runtime>
-
-        <!-- App specific settings -->
-        <appSettings>
-            <property>
-            <!-- Tell Azure which port you want to use, required for springboot jar applications -->
-              <name>PORT</name>
-              <value>8081</value>
-            </property>
-            <!-- JVM OPTIONS -->
-            <property>
-              <name>JAVA_OPTS</name>
-              <value>-Xmx512m -Xms512m</value>
-            </property>
-        </appSettings>
-
-        <!-- Specify the location of the WAR file to deploy -->
-        <deployment>
-            <resources>
-                <resource>
-                    <directory>${project.basedir}/target</directory>
-                    <includes>
-                        <include>*.war</include>
-                    </includes>
-                </resource>
-            </resources>
-        </deployment>
-  
-        <!-- Deployment Slot settings -->
-        <deploymentSlotSetting>
-            <name>${SLOT_NAME}</name>
-            <configurationSource>parent</configurationSource>
-        </deploymentSlotSetting>
-    </configuration>
-</plugin>
+<plugin> 
+  <groupId>com.microsoft.azure</groupId>  
+  <artifactId>azure-webapp-maven-plugin</artifactId>  
+  <version>1.12.0</version>  
+  <configuration> 
+    <schemaVersion>v2</schemaVersion>  
+    <subscriptionId>b7aef7d5-cb67-46b2-b7e3-464cdfc6a6f5</subscriptionId>  
+    <resourceGroup>learn-9c627899-58ae-4ef5-9630-3336ec7bce0c</resourceGroup>  
+    <appName>MyWebApp-1610102860270</appName>  
+    <pricingTier>F1</pricingTier>  
+    <region>westus</region>  
+    <runtime> 
+      <os>Linux</os>  
+      <javaVersion>Java 8</javaVersion>  
+      <webContainer>Tomcat 8.5</webContainer> 
+    </runtime>  
+    <deployment> 
+      <resources> 
+        <resource> 
+          <directory>${project.basedir}/target</directory>  
+          <includes> 
+            <include>*.war</include> 
+          </includes> 
+        </resource> 
+      </resources> 
+    </deployment> 
+  </configuration> 
+</plugin> 
 ```
 
 Some of the relevant configuration options are in the table below. For a full list of options, see the Maven Plugin for Azure App Service documentation.
@@ -117,11 +87,6 @@ Some of the relevant configuration options are in the table below. For a full li
 | `<javaVersion>` | For Linux, versions 8 and 11 are supported<br/>For Windows, version 1.7 up to 11 are supported |
 | `<webContainer>` | For Linux, Tomcat, Wildfly, and Java SE are supported<br/>For Windows, Tomcat and Jetty are supported |
 | `<resource>` | Specifies where the WAR or JAR is located in the project |
-| `<authentication>` | Specifies the authentication method to use – three different methods are supported |
-| `<appSettings>` | Specifies settings for Spring Boot apps |
-| `<deploymentSlotSetting>` | Specifies an existing deployment slot |
-| `<allowTelemetry>` | Specifies whether to allow the plugin to send telemetry data to Microsoft – this option is enabled by default |
-| `<stopAppDuringDeployment>` | Allows you to stop the target web app, which may prevent deployment failures on Windows with IIS locking files |
 
 ### Deployment options
 
