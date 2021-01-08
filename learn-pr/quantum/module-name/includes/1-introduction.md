@@ -2,7 +2,8 @@ Welcome to Azure Quantum!
 
 Azure Quantum is a cloud service for quantum computing and optimization applications. 
 
-In the [Quantum Computing Foundations learning path](), the quantum space exploration crew has been using quantum algorithms to solve some of the decisive problems the space fleet had been facing for many years. Those problems are finding the more suitable route among space stations or support the mining mission in the many-worlds. But the algorithms had been run on a simulator enabled by the [Quantum Development Kit](). You are finally establishing communication with Earth and need to connect to the hardware through Azure Quantum on Earth to run your algorithms for the mission. 
+In the [Quantum Computing Foundations learning path](), the quantum space exploration crew has been using quantum algorithms to solve some of the decisive problems, such as finding the more suitable route among space stations or supporting the mining mission. But the algorithms had been run on a simulator enabled by the [Quantum Development Kit](). You are finally establishing communication with Earth and need to connect to the hardware through Azure Quantum on Earth to run your algorithms for the mission. 
+
 
 In this module, you'll set up your access to Azure Quantum and run your first quantum program on hardware through the cloud. Azure Quantum offers two different types of services: optimization solutions, and quantum computing solutions. Different divisions of the quantum space crew will need one of the two different types of solutions that Azure Quantum offers:
 

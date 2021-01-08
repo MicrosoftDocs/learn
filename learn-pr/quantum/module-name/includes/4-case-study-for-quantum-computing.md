@@ -1,6 +1,7 @@
 Azure Quantum offers quantum computing solutions, where a spedific division of the space crew have access to quantum computing targets where they can run Q# quantum programs in real or simulated quantum devices. In particular, the navigation division will run the Grover's algorithm in Q# for routing between space stations. However search problem like this are not the only problems you can study. 
 
-In this part we present to you other problems of interest which are case of study in quantum computing. 
+In this part, you will learn about several case studies in quantum computing. 
+
 
 
 
