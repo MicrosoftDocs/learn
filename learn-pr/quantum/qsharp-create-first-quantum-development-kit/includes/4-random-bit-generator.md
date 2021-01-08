@@ -1,4 +1,4 @@
-Now that you understand some of the basics, it's your turn to build a small quantum program. 
+Now that you understand some of the basics, it's your turn to build a quantum random number generator. 
 
 Before using quantum computers to solve decisive problems, the captain of the space fleet has command to implement quantum physics in our system as a test. Your first task consists of improving current security protocols. 
 
