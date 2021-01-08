@@ -33,7 +33,7 @@ To do so, you:
 > * Add code that uses the `H` operation to put a qubit into superposition and then measure its value.
 > * Run the program.
 
-In the next chapter, you build out the second phase, which combines random bits to form a larger number.
+In the next section, you build out the second phase, which combines random bits to form a larger number.
 
 > [!NOTE]
 > Keep in mind that because you're using the simulator to run your Q# program, you still get pseudorandom results. But after you verify your program through the simulator, you can run the same program on a quantum computer to get truly random results that measure fundamental physical processes.
