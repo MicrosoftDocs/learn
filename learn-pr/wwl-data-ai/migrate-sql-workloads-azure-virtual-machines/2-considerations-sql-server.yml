@@ -4,7 +4,7 @@ title: Considerations of SQL Server to Azure virtual machine migrations
 metadata:
   title: Considerations of SQL Server to Azure virtual machine migrations
   description: "Considerations of SQL Server to Azure virtual machine migrations"
-  ms.date: 03/31/2020
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-considerations-sql-server.md)]
-quiz:
-  title: "Knowledge check"
-  questions:
-  - content: "You work as a data engineer at Adventureworks who have an Enterprise Agreement that covers the SQL Servers that are currently installed on their network. You want to migrate one of your servers to a SQL Server hosted on an Azure VM. Which licensing model should you select when you provision the virtual machine?"
-    choices:
-    - content: "pay-as-you-go"
-      isCorrect: false
-      explanation: "That's incorrect. As there's already an Enterprise Agreement that covers the SQL Servers, there is a more cost-efficient way of licensing SQL Server."
-    - content: "Software assurance"
-      isCorrect: false
-      explanation: "That's incorrect. As there's already an Enterprise Agreement that covers the SQL Servers, there is a more cost-efficient way of licensing SQL Server."
-    - content: "bring-your-own-license"
-      isCorrect: true
-      explanation: "That's correct. Should your organization already have licenses in place for existing on-premises SQL Servers, and you intend to decommission those servers. The best option is to use the bring-your-own-license model."
-  - content: "One of Adventureworks SQL 2008 databases has been identified as business-critical and can't experience any downtime. What is the most appropriate tool or approach to migrate the data?"
-    choices:
-    - content: "Azure Data Migration Service (DMS)"
-      isCorrect: false
-      explanation: "That's incorrect. DMS can only migrate offline data. Therefore this isn't an appropriate solution in this example."
-    - content: "Transactional replication"
-      isCorrect: true
-      explanation: "That's correct. SQL Server transactional replication allows you to keep the source database live and replicate all the current and changed data to the SQL Server running on your Azure VM. The only downtime required is when you change your applications connections."
-    - content: "Data Migration Assistant (DMA)"
-      isCorrect: false
-      explanation: "That's incorrect. Using this tool involves some small downtime, there's a better choice in this example."
