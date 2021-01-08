@@ -33,8 +33,8 @@ products:
 units:
 - learn.azure.intro-to-migrating-aspnet-apps-azure.1-introduction
 - learn.azure.intro-to-migrating-aspnet-apps-azure.2-what-is-asp-net-app-migration
-- learn.azure.intro-to-migrating-aspnet-apps-azure.3-investigate-migration-assistants-and-options
-- learn.azure.intro-to-migrating-aspnet-apps-azure.4-evaluate-migration-considerations
+- learn.azure.intro-to-migrating-aspnet-apps-azure.3-evaluate-migration-considerations
+- learn.azure.intro-to-migrating-aspnet-apps-azure.4-investigate-migration-assistants-and-options
 - learn.azure.intro-to-migrating-aspnet-apps-azure.5-knowledge-check
 - learn.azure.intro-to-migrating-aspnet-apps-azure.6-summary
 badge:
