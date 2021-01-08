@@ -2,29 +2,41 @@ You are the administrator for Contoso, Ltd. You have been asked to evaluate the 
 
 ## Setup
 
-1. Download datasubject01.csv file <!--- Isn't there additional step needed, to populate .csv file that you downloaded with customers? After that you upload the .csv file, which bulk creates customers. ---> 
-2. Bulk create customers in default Azure Active Directory domain
+1. Sign into https://aad.portal.azure.com 
+2. Select **All Services**, select **Azure Active Directory**, and then select the **Overview** blade if it is not already active.
+3. In the **Tenant information** tile for the Default Directory, copy or write down the **Primary domain** value (for example yourprimarydomain.onmicrosoft.com).
+4. Download [datasubject01.csv](https://github.com/RichardLuckett/learn-pr/blob/NEW-azure-data-subject-requests/learn-pr/azure/azure-data-subject-requests/media/datasubject01.csv)  
+5. Using Excel or Notepad, open the **datasubject01.csv** file and edit the **User name [userPrincipalName] Required** field for Avery. Replace **@contoso.com** with **@_yourprimarydomain_.onmicrosoft.com**.
+>**Important:** The next step will fail if you do not use a valid domain name from your Azure Active Directory. Optionaly, you can search and replace @contoso.com with @yourprimarydomain.onmicrosoft.com in the file.
+6. Save and close the file.
+7. Select **All Services** and then select **Users**.
+8. Drop down the **Bulk operations** list and select **Bulk create**.
+9. In the Bulk create user dialog box click **select a file**.
+10. In the **Open** dialog box, navigate to path where datasubject01.csv was downloaded, select **datasubject01.csv** and the click **Open**.
+11. Click on the **Submit** button and verify that the creation was successful.
+12. Close the confirmation.
+
 
 ## Review a DSR and determine appropriate process
 
-1. Review DSR
+13. Review DSR
 	- DSR form received today
 	- Identity verified today
-		- Avery Howard is a financial planning client that resides in the Netherlands.
+		- Avery Howard is a financial planning client that resides in the United Kingdom.
 		- Avery was contacted and was able to provide national ID card verification.
 
 |||
 |---|---|
 |Subject's Name|Avery Howard|
 |Date of Birth|11-18-1999|
-|Address|van Milboulevard 2973, Schipluiden, Bilzen, 6222VD|
-|Telephone|+31 655 5592 98|
-|Email|averyh@contoso.com|
-|With regard to|Right to erasure 'right to be forgotten'  <!--- Will it be clear to the readers that this is single right? (I know that it was discussed in earlier topics. Would it make sense to put 'right to be forgoten' in brackets, ('right to be forgoten')? ---> | 
+|Address|123 Park Square, Bristol, BS12 3CD, UNITED KINGDOM|
+|Telephone|+44 07123 456789|
+|Email|avery@_yourprimarydomain_.microsoftonline.com|
+|With regard to|Right to erasure (right to be forgotten)| 
 |Preferred feedback method|In writing to address|
 
 
-2. Identify the steps that you will use in DSR process and then execute the DSR.
+14. Identify the steps that you will use in DSR process and then execute the DSR.
     * Discover
     * Access
     * Rectify
@@ -32,10 +44,14 @@ You are the administrator for Contoso, Ltd. You have been asked to evaluate the 
     * Delete
     * Export / Receive
 
+
+> **Answer:** >!Discover and then Delete
+
+
 ## Use Azure portal to connect to Azure AD. 
 Introduction paragraph <!--- This should probably be replaced with actual content/paragraph. ---> 
 
-3. Discover
+15. Discover
     * Sign into the Azure portal
     * Navigate to Azure Active Directory and select **Users**
     * Locate the user account in the **All users** blade.
