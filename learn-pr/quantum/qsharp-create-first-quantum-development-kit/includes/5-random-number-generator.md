@@ -17,13 +17,13 @@ Let's see how we can use Q# features to build a complete random number generator
 Before we proceed, let's outline what the logic of a random number generator should be, provided we have a random bit generator:
 
 1. Define `max` as the maximum number you want to generate.
-1. Define the number of random bits that we need to generate.
+1. Define the number of random bits that you need to generate.
     This is done by calculating how many bits, `nBits`, we need to express integers up to `max`.
 1. Generate a random bit string that's `nBits` in length.
 1. If the bit string represents a number greater than `max`, go back to step three.
 1. Otherwise, the process is complete. Return the generated number as an integer.
 
-As an example, let's set `max` to 12. That is, 12 is the larger number you want to use as a seccure password.
+As an example, let's set `max` to 12. That is, 12 is the largest number you want to use as a seccure password.
 
 You need ${\lfloor ln(12) / ln(2) + 1 \rfloor}$, or four bits to represent a number between zero and 12. (For brevity, we'll skip how to derive this equation.)
 

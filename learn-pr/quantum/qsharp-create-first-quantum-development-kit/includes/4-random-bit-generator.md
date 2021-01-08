@@ -18,7 +18,7 @@ Let's say you run your QRNG four times, generating this sequence of binary digit
 
 $${0, 1, 1, 0}$$
 
-If you concatenate, or combine, these bits into a bit string, you can form a decimal number. In this example, the bit sequence ${0110}$ is equivalent to six in decimal.
+If you concatenate, or combine, these bits into a bit string, you can form a larger number. In this example, the bit sequence ${0110}$ is equivalent to six in decimal.
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
