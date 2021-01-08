@@ -148,7 +148,7 @@ Now that we've provisioned our Azure resources we can deploy the sample Spring B
 ![Deployment Center.](../media/4-deployment.png)
 
 We'll use the built-in CI/CD that is available in the Azure App Service portal - The **Deployment Center**.
-The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory.
+The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory. It will also link your GitHub Action to an Azure App Service publishing profile.
 
 - Navigate to your Azure App Service webapp in the Azure portal
 - On the left side, select **Deployment Center**
@@ -194,6 +194,12 @@ jobs:
 
 ## Next steps
 
-Congratulations! Each time you `git push` your code, your TerraForm provisioned resources are created (if not created already) and your application is deployed to production.
+Congratulations! You now have two GitHub actions setup - a provisioning action and a build/deploy action.
+Each time you `git push` your code, your TerraForm provisioned resources are created (if not created already) and your application is deployed.
+
+> [!IMPORTANT]
+> Re-running your provision action will not recreate your resources if they already exist. You will need to delete your resource group or resources manually and then re-run the action.
+> Re-running your build/deploy action will replace your application.
+> If you delete your provisioning action or your resources you will need to also re-create your build/deploy action as this action is linked to an Azure App Service publishing profile.
 
 In the next unit, we'll summarize what we learnt about Terraform.
