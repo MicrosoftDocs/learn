@@ -1,4 +1,4 @@
-As we mention before, for some computational tasks, quantum computing provides exponential speedups. These speedups are possible thanks to three phenomena from
+For some computational tasks, quantum computing provides exponential speedups. These speedups are possible thanks to three phenomena from
 quantum mechanics: superposition, interference, and entanglement.
 
 In the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this part, you'll learn more about superposition.
