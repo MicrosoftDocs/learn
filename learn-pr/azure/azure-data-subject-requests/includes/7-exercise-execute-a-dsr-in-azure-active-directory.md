@@ -2,7 +2,7 @@ You are the administrator for Contoso, Ltd. You have been asked to evaluate the 
 
 ## Setup
 
-1. Sign into https://aad.portal.azure.com 
+1. Sign into https://aad.portal.azure.com <!--- Would it make sense to say something as: Sign into Azure Active Directory portal at following URL:  https://aad.portal.azure.com (or make Azure Active Directory portal clickable and use aad.portal.azure.com link). ---> 
 2. Select **All Services**, select **Azure Active Directory**, and then select the **Overview** blade if it is not already active. <!--- Is there any reason why we are directing readers to click **All Services**, while **Azure Active Directory** is available directly on the main dashboard? ---> 
 3. In the **Tenant information** tile for the Default Directory, copy or write down the **Primary domain** value (for example yourprimarydomain.onmicrosoft.com).
 4. Download [datasubject01.csv](https://github.com/RichardLuckett/learn-pr/blob/NEW-azure-data-subject-requests/learn-pr/azure/azure-data-subject-requests/media/datasubject01.csv)  <!--- I was not able to download .csv file, I got 404 error. I assume that .csv file will be moved to some other location, which does not incude author alias when module is released? ---> 
