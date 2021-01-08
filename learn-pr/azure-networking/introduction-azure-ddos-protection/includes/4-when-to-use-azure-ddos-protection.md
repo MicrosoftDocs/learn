@@ -1,11 +1,13 @@
 
+Here we compare the services offered by DDoS Basic Protection as compared to DDoS Standard Protection. But first we discuss building resiliency against DDoS attacks into your applications.
+
 ## Build DDoS-resilient services on Azure
 
 Every deployed service in Azure is automatically protected by Azure's DDoS (Basic) Protection at no additional cost. DDoS Protection Basic requires no application or user configuration changes.
 
 When deciding to upgrade your Azure DDoS Basic Protect to Azure DDoS Standard protection, it is important to do a risk analysis for a DDoS attack on your key Azure resources. Even with the builtin DDoS services that are available, it makes good sense not to relay only on post deployment protection. Building an application that is resilient and tested to withstand, or quickly recovery from a denial of service attack is important.  
 
-The Azure team has published the Fundamental Framework for best practices. This framework is a collection of guiding principles, that if followed, can improve quality of a workload. When building or deploying your workload, it is important to:
+The Azure team has published a framework for best practices. This framework is a collection of guiding principles, that if followed, can improve quality of a workload. When building or deploying your workload, it is important to:
 
 - **Design for security** - Identify and document security requirements early in the development life cycle. This process  will help to ensure that security is a priority throughout the entire lifecycle of an application. Poorly designed applications, can have inefficient routines that use excessive amount of resources. This design can cause a service outage, even with a low request rate.
 
@@ -32,7 +34,7 @@ The following table outlines key features of the Azure DDoS Protection Standard 
 
 With DDoS protection standard, the traffic always remains within the Azure data center.
 
-Keeping the traffic data center helps with performance as well, because DDoS Standard Protection is doing the attack mitigation in an Azure data center. Azure DDoS Protection Standard mitigates the attack traffic closest to the application. But if Microsoft identities that the attack volume is significant, then Microsoft will will use the global scale of their Azure networking to defend the attack where it is originating.
+Keeping the traffic within the local data center helps with performance as well, because DDoS Standard Protection is doing the attack mitigation in an Azure data center. Azure DDoS Protection Standard mitigates the attack traffic closest to the application. But if Microsoft identities that the attack volume is significant, then Microsoft will will use the global scale of their Azure networking to defend the attack where it is originating.
 
  Your Azure services like Azure Front Door, and Azure Application Gateway, and your backend services are protected using this defense in-depth strategy.
 
