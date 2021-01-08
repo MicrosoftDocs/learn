@@ -4,7 +4,7 @@ In this Microsoft Learn module, you'll use the Azure Cognitive Services Custom V
 
 The data is provided by the CLO, with a special thanks to photographers, contributors, and visitors to [All About Birds](https://www.allaboutbirds.org/news/?azure-portal=true). This material is based on work that is supported by the National Science Foundation under grant #1010818. This module includes a subset of the full dataset. You can [download the full dataset](https://dl.allaboutbirds.org/nabirds?azure-portal=true). For specific details about the dataset, you can [download a PDF file](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Horn_Building_a_Bird_2015_CVPR_paper.pdf?azure-portal=true) from the Computer Vision Foundation.
 
-![A panel of six photos of birds](../media/birds.png)
+:::image type="content" source="../media/birds.png" alt-text="Panel of six photos of birds.":::
 
 ## Learning objectives
 
@@ -15,8 +15,8 @@ In this module, you will:
 - Learn how to use the Custom Vision service in Azure
 - Build a custom machine learning model
 - Deploy the model created by using Custom Vision
-- 
-- ## Prerequisites
 
--  An Azure account
+## Prerequisites
+
+- An Azure account
 - A basic understanding of how to create resources in Azure

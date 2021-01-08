@@ -11,7 +11,7 @@ Let's build our model! We'll download the dataset, create our Azure service, upl
 > 
 > 1. Verify the permission settings, and select **Accept**.
 > 
->    :::image type="content" source="../media/accept-permissions-sandbox.png" alt-text="Screenshot that shows permissions details and the Accept button selected.":::
+>    :::image type="content" source="../media/accept-permissions-sandbox.png" alt-text="Screenshot that shows permissions details and the Accept button.":::
 >
 >The message **Sandbox activated!** is shown, and you can continue with the learning module.
 >
@@ -78,7 +78,7 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
       1. For  **Classification Types**, select **Multiclass (Single tag per image)**.
       1. For **Domains**, select **General**.
       1. Select **Create project**.
-         :::image type="content" source="../media/create-project-custom-vision-portal.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
+         :::image type="content" source="../media/create-project-custom-vision.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
 
       > [!NOTE]
       > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
@@ -86,14 +86,14 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 1. Add images and tags:
 
    1. In your Custom Vision project, select **Add images**.
-       :::image type="content" source="../media/add-images-custom-vision-portal.png" alt-text="Screenshot that shows Add images selected in a Custom Vision portal project.":::
+       :::image type="content" source="../media/add-images-custom-vision.png" alt-text="Screenshot that shows Add images selected in a Custom Vision portal project.":::
    1. In **Open**, go to the *birds-photo* folder where you extracted the images files from the dataset .zip file. 
    1. Open a bird species folder.
    1. Select Ctrl + A to select all the images in the species folder, and then select **Open**.
-      :::image type="content" source="../media/select-photos-folder-custom-vision-portal.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
+      :::image type="content" source="../media/select-photos-folder-custom-vision.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
    1. In **Image upload**, add a description in **My Tags** to indicate the species for the birds shown in the photos.
    1. Select **Upload \<number\> files**.
-       :::image type="content" source="../media/tag-photos-custom-vision-portal.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
+       :::image type="content" source="../media/tag-photos-custom-vision.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
 
 ### Upload images option 2: SDK
 
@@ -157,13 +157,13 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
    ```python
    # Change to the directory for the bird photos
    import os
-   os.chdir('./bird_photos/custom_photos')
+   os.chdir('./bird-photos/custom-photos')
    ```
 
    > [!Warning]
    > Run the code in this cell only once. If you attempt to run the cell more than once without also restarting your Python kernel, the cell run fails.
 
-1. Add the following code to get the list of bird type tags. The tags are created based on the folder names in the bird-photos/custom_photos directory:
+1. Add the following code to get the list of bird type tags. The tags are created based on the folder names in the bird-photos/custom-photos directory:
 
    ```python
    # Create a tag list from folders in bird directory
@@ -196,9 +196,10 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
 
    1. Next, add the code for the `createImageList` function. The function takes two parameters: a `tag` name from the list of folder names and the `tag_id` from the tag we created in the Custom Vision project. The function uses the `base_image_url` value to set the directory to the folder that contains the images for the `tag` we created from the folder names. Then, we append each image to the list, which we’ll use to upload in batches to the created `tag`:
   
-      ```python
-      def createImageList(tag, tag_id):
-          # Set directory to current tag
+       ```python
+       def createImageList(tag, tag_id):
+       
+       # Set directory to current tag.
           base_image_url = f"./{tag}/"
           photo_name_list = os.listdir(base_image_url)
           image_list = []
@@ -212,32 +213,32 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
 
        ```python
        def uploadImageList(image_list):
-        upload_result = trainer.create_images_from_files(project_id=project.id, batch=image_list)
-        if not upload_result.is_batch_successful:
-            print("Image batch upload failed.")
-            for image in upload_result.images:
-                print("Image status: ", image.status)
-            exit(-1)
+             upload_result = trainer.create_images_from_files(project_id=project.id, batch=image_list)
+             if not upload_result.is_batch_successful:
+                print("Image batch upload failed.")
+                for image in upload_result.images:
+                     print("Image status: ", image.status)
+                exit(-1)
          ```
 
-1. Now, we’ll add the code for our main method. For each tag, the method calls the three functions we created. We loop through each tag (folder name) in the `tags` collection that we created from the folders in the bird-photos/custom_photos directory. Here are the steps in the `for` loop:
+1. Now, we’ll add the code for our main method. For each tag, the method calls the three functions we created. We loop through each tag (folder name) in the `tags` collection that we created from the folders in the bird-photos/custom-photos directory. Here are the steps in the `for` loop:
    1. Call the `createTag` function to create the class `tag` in the Custom Vision project.
    1. Call the `createImageList` function and with the `tag` name and `tag_id` values returned from Custom Vision. The function returns the list of images to upload.
    1. Call the `imageList` function to upload the images from the `image_list` in batches of 25. We upload in batches of 25 because Custom Vision time outs if we try to upload the entire dataset all at once.
 
        ```python
        for tag in tags: 
-       tag_id = createTag(tag)
-       print(f"tag creation done with tag id {tag_id}")
-         image_list = createImageList(tag, tag_id)
-        print("image_list created with length " + str(len(image_list)))
-    
-        # Break list into lists of 25 and upload in batches
+             tag_id = createTag(tag)
+             print(f"tag creation done with tag id {tag_id}")
+             image_list = createImageList(tag, tag_id)
+             print("image_list created with length " + str(len(image_list)))
+
+       # Break list into lists of 25 and upload in batches.
         for i in range(0, len(image_list), 25):
-            batch = ImageFileCreateBatch(images=image_list[i:i + 25])
-            print(f'Upload started for batch {i} total items {len  (image_list)} for tag {tag}...')
-            uploadImageList(batch)
-            print(f"Batch {i} Image upload completed. Total uploaded  {len(image_list)} for tag {tag}")
+             batch = ImageFileCreateBatch(images=image_list[i:i + 25])
+             print(f'Upload started for batch {i} total items {len  (image_list)} for tag {tag}...')
+             uploadImageList(batch)
+             print(f"Batch {i} Image upload completed. Total uploaded  {len(image_list)} for tag {tag}")
        ```
 
         > [!Warning]
@@ -252,8 +253,10 @@ We've created our dataset in Custom Vision. Now, we can train our model. You cou
 1. In the top menu bar, select **Train**.
 1. In **Choose Training Type**, select **Quick Training**, and then select **Train**.
 
+:::image type="content" source="../media/train-quick-test-custom-vision.png" alt-text="Screenshot of creating a quick test in the Custom Vision portal.":::
+
 During the training process, an **Iterations** section appears on the left. A **Training…** notification indicates that the training is in progress. When the training finishes, information about how the model performed for the training iteration is shown.
 
-:::image type="content" source="../media/train-model-iteration-metrics.png" alt-text="Screenshot that shows the metrics for a training iteration of the Custom Vision project.":::
+:::image type="content" source="../media/train-model-iteration-metrics-custom-vision.png" alt-text="Screenshot that shows the metrics for a training iteration of the Custom Vision project.":::
 
 The information is displayed through metrics called _precision_, _recall_, and _average precision_ (AP). The metrics are shown for the whole model and for each class (tag). In the next unit, we'll learn more about these metrics.

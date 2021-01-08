@@ -46,7 +46,7 @@ To test the model in the Custom Vision portal:
 
 1. In the top menu bar in the Custom Vision portal, select **Quick Test**.
 1. In **Quick Test**, select **Browse local files**.
-1. In the **Open files** dialog box, search for a bird image from one of the species that you trained the model to recognize. Select the image, and then select **Open**.
+1. In  **Open**, search for a bird image from one of the species that you trained the model to recognize. Select the image, and then select **Open**.
 
 Custom Vision opens the image, and then analyzes the image to test the model's accuracy. The prediction results are shown in the window.
 
