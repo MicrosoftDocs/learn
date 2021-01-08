@@ -1,4 +1,4 @@
-The first Quantum Space Exploration Team is going to be released! You have been chosen as member of the small crew. Before you begin working on the many problems of the galaxy, you need to know the tools you will use. 
+As a new member of the space crew, you first need to know the tools you will be using. 
 
 In this part, you prepare your development environment so you can begin writing quantum programs.
 
