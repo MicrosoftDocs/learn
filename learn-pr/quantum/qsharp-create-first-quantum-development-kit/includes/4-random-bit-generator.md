@@ -1,14 +1,10 @@
 Now that you understand some of the basics, it's your turn to build a quantum random number generator. 
 
-Before using quantum computers to solve decisive problems, the captain of the space fleet has command to implement quantum physics in our system as a test. Your first task consists of improving current security protocols. 
+Before using quantum computers to solve decisive problems, your first task consists of improving current security protocols creating random passwords.
 
-Humans may have good diplomatic relations, but we need to take care of invaders and space pirates. Good relations don’t mean not to be careful! Every member of the space fleet has a personal and non-transferable password. These passwords change every hour thanks to a random number generator (RNG) to ensure security.
+You're likely already familiar with the concept of a random number generator (RNG). Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
 
-You're likely already familiar with the concept of a random number generator (RNG). On classical computers, most RNG don't produce truly random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates the same sequence of numbers based on some initial value, called a _seed_. 
-
-We say it is pseudorandom because after a certain number of iterations, called _period_, the RNG returns the seed and the same sequence of numbers starts all over again. To better approximate random values, this seed is often the current time from the CPU's clock.
-
-You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers and thus, jeopardize space fleet security. To do so you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and unbreakable. 
+You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers and thus, jeopardize space fleet security. To do so you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and more secure.
 
 A QRNG is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
 
