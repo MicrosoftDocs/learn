@@ -44,8 +44,7 @@ You are the administrator for Contoso, Ltd. You have been asked to evaluate the 
     * Delete
     * Export / Receive
 
-
-> **Answer:** >!Discover and then Delete
+[Answer:](Discover and then Delete) 
 
 
 ## Use Azure portal to connect to Azure AD. 
