@@ -13,51 +13,51 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 ## Create a recovery services vault
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
+
 1. Select **+ Create a resource** option on the top-left hand side of the portal.
-1. Under the **Azure Marketplace**, select **IT & Management Tools**, then select **Backup and Site Recovery**.
-1. Select **east-coast-rg** for the **Resource Group**.
-1. Set the **Vault name** to **asr-vault**.
-1. Set the **Region** to **East US 2**.
-1. Select. **Review + create**, and then on the Summary page, select **Create**.
-1. Once deployed, view the resource.
+
+1. Under **Azure Marketplace**, select **IT & Management Tools**, and then select **Backup and Site Recovery**.
+
+1. On the **Backup and Site Recovery** pane, select **Create**.
+
+    | Setting | Value |
+    |---------|---------|
+    | On the **Basics** tab, under **Project Details** section: |
+    | Subscription | *your subscription* |
+    | Resource group | Select **Create new**, enter **east-coast-rg**, and then select **OK**. |
+    | Under **Instance Details** section: |
+    | Vault name | **asr-vault** |
+    | Region | **East US 2** |
+
+1. Select. **Review + create**, and then on the *Summary* page, select **Create**. Once deployed, select **Go to resource** to view the resource.
 
 ## Enable replication
 
-1. In the Recovery Services vault pane, select **+ Replicate**.
+1. In the Recovery Services vault pane, under **Protected items** category n left nav bar, select **Replicated items**.
+
+1. Select **+ Replicate**, and from the dropdown, select **Azure virtual machines**. Complete the following fields.
 
     ![Screenshot showing the source options for replication](../media/4-enable-replication-source.png)
 
-1. Select **Azure** as your source in the pane that opens.
-1. Select **West US 2** in the source location to select the original location.
-1. Select **west-coast-rg** in the **Source resource group**.
-1. Select **OK** at the bottom of the pane.
+    | Setting | Value |
+    |---------|---------|
+    | On the **Source** tab: |
+    | Source location | **West US 2** |
+    | Source resource group | **west-coast-rg**. Select **Next.** |
+    | On the **Virtual machines** tab: |
+    | Select both VMs | **hr-records** and **patient-records**. Select **Next**. |
+    | On the **Replication settings** tab: |
+    | Target location | **East US 2**. |
+    | **Customize**. Select it. The **Customize target settings** page appears. |
+    | Target resource group | **east-coast-rg** |
+    | For each VM | From the dropdown, change the **Cache storage** to **asrcacheXXXX**, where **XXXX** is a random number. Select **OK**. |
+    | Select **Enable replication**. |
 
-    ![Screenshot showing the vm selection pane](../media/4-select-vms.png)
-
-1. On the **Select virtual machines** pane, select both virtual machines.
-1. Select **OK**.
-
-    ![Screenshot of the configure settings pane, and where to select customize.](../media/4-customize-settings.png)
-
-1. Select **Customize**.
-
-    ![Screenshot sowing selecting the east coast resource group](../media/4-customize-target.png)
-
-1. In the **Target resource group**, change it to **east-coast-rg**.
-
-1. For each VM, change the cache storage to **asrcacheXXXX**, where **XXXX** is a random number.
-
-1. Select **OK**.
-
-1. Select **Create target resources**. Wait for the target resources to be created.
-
-    ![Screenshot showing the enable replication option](../media/4-enable-replication.png)
-
-1. Once the resources have been created, you can select **Enable replication**. This step can take up to 15 minutes. Continue to the next steps to monitor the progress.
+Continue to the next steps to monitor the progress.
 
 ## Monitor replication progress
 
-1. Select **Home** on the top breadcrumb menu of the page to return to the portal's home page.
+1. Select **Home** on the top menu to return to the portal's home page.
 
 1. Select **All resources**.
 
