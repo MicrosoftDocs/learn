@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-migrating-aspnet-apps-azure.4-evaluate-migration-considerations
+uid: learn.azure.intro-to-migrating-aspnet-apps-azure.3-evaluate-migration-considerations
 title: Evaluate migration considerations
 metadata:
   title: Evaluate migration considerations
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-evaluate-migration-considerations.md)]
+  [!include[](includes/3-evaluate-migration-considerations.md)]
