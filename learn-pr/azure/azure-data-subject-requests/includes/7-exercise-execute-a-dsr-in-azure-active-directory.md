@@ -5,7 +5,7 @@ You are the administrator for Contoso, Ltd. You have been asked to evaluate the 
 1. Sign into [Azure Active Directory portal](https://aad.portal.azure.com).
 2. Select **Azure Active Directory**, and then select the **Overview** blade if it is not already active.  
 3. In the **Tenant information** tile for the Default Directory, copy or write down the **Primary domain** value (for example yourprimarydomain.onmicrosoft.com).
-4. Download [datasubject01.csv](https://github.com/RichardLuckett/learn-pr/blob/NEW-azure-data-subject-requests/learn-pr/azure/azure-data-subject-requests/media/DataSubject01.csv)
+4. Download [datasubject01.csv](https://github.com/RichardLuckett/learn-pr/blob/NEW-azure-data-subject-requests/learn-pr/azure/azure-data-subject-requests/media/DataSubject01.csv).
 5. Using Excel or Notepad, open the **datasubject01.csv** file and edit the **User name [userPrincipalName] Required** field for Avery. Replace **@contoso.com** with the primary domain value that you copied earlier in step 2 (**@_yourprimarydomain_.onmicrosoft.com**). 
 >**Important:** The next step will fail if you do not use a valid domain name from your Azure Active Directory. Optionaly, you can search and replace @contoso.com with @yourprimarydomain.onmicrosoft.com in the file.
 6. Save and close the file.
@@ -56,7 +56,7 @@ You will now use the Azure Active Directory admin center to discover the persona
 18. Review and confirm that the personal information contained in the profile matches the subject's information in the DSR. 
     
 
-## Fulfill DSR. 
+## Fulfill DSR
 You will now fulfill the DSR by deleting the data subject's user account. 
 
 19. In the **All users** blade, select the check-box next to the data subject's user account (Avery Howard).  
