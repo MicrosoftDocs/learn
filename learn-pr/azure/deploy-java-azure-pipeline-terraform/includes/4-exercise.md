@@ -198,8 +198,8 @@ Congratulations! You now have two GitHub actions setup - a provisioning action a
 Each time you `git push` your code, your TerraForm provisioned resources are created (if not created already) and your application is deployed.
 
 > [!IMPORTANT]
-> Re-running your provision action will not recreate your resources if they already exist. You will need to delete your resource group or resources manually and then re-run the action.
-> Re-running your build/deploy action will replace your application.
-> If you delete your provisioning action or your resources you will need to also re-create your build/deploy action as this action is linked to an Azure App Service publishing profile.
+> Re-running your provision GitHub action will not recreate your resources if they already exist. You will need to delete your resource group or resources manually and then re-run the GitHub action.
+> Re-running your build/deploy GitHub action will replace your application.
+> If you delete your provisioning GitHub action or your resources you will need to also re-create your build/deploy GitHub action as this action is linked to an Azure App Service publishing profile.
 
 In the next unit, we'll summarize what we learnt about Terraform.
