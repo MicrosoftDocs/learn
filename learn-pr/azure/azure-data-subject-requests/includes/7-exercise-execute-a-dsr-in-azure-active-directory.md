@@ -72,7 +72,7 @@ After completing this exercise, you will have successfully reviewed and executed
 ## Clean up the resources
 >**Note**: If you have completed all the steps in this lab you will not have any resources that need to be cleaned up. However, if you have only partially completed the lab then complete the following steps.
 
-1. In the Azure portoal, search for Azure Active Directory.
+1. In the Azure portal, search for Azure Active Directory.
 2. Select All Users.
 3. Search for and select **Avery Howard**.
 4. Select **Delete user** and then select **Yes** to confirm. 
