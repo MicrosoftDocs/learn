@@ -141,9 +141,16 @@ Verify your Azure App Instance is publicly available.
 
 # Part 2 - Deploy the sample application
 
+Now that we have provisioned our Azure resources we can deploy the sample Spring Boot application. 
+
+## Setup your Maven Build/Deploy GitHub Action
+
+![Deployment Center.](../media/4-deployment.png)
+
+We will use the build in CI/CD wizard that is available in the Azure App Service portal - The Deployment Center.
 The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory.
 
-- Navigate to your webapp in the Azure portal
+- Navigate to your Azure App Service webapp in the Azure portal
 - On the left side, select **Deployment Center**
 - Under **Continuous Deployment (CI / CD)**, select **GitHub**
 - Next, select **GitHub Actions**
