@@ -10,6 +10,10 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
 1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
+  > [!NOTE] 
+  >  If you need to find the location name, you can use the following command: az account list-locations -o table
+
+
     ```azurecli
     RG=<resource group name>
 
@@ -27,15 +31,15 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --subnet-prefix 10.0.1.0/24
     ```
 
-1. Download the script that creates the virtual machines with the following command:
+1. To download the script that creates the virtual machines, run the following command.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway module-files
     ```
 
-1. Run the following commands to create and configure the virtual machines for the web servers. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server. An administrative user account is created for each virtual machine, with the login name `azureuser`. Each virtual machine has the vehicle registration web app installed.
+1. To create and configure the virtual machines for the web servers, run the following commands. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server. An administrative user account is created for each virtual machine, with the login name `azureuser`. Each virtual machine has the vehicle registration web app installed.
 
-    The first command runs asynchronously to allow both virtual machines to be created simultaneously.
+    The first command runs asynchronously to enable both virtual machines to be created simultaneously.
 
     ```azurecli
     az vm create \
@@ -50,7 +54,9 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --nsg "" \
       --custom-data module-files/scripts/vmconfig.sh \
       --no-wait
-
+    ```
+    
+    ```azurecli
     az vm create \
       --resource-group $RG \
       --name webServer2 \
@@ -64,7 +70,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --custom-data module-files/scripts/vmconfig.sh
     ```
 
-1. Run the following command to confirm both virtual machines were created successfully.
+1. To confirm both virtual machines were created successfully, run the following command.
 
     ```azurecli
     az vm list \
@@ -73,7 +79,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --output table
     ```
 
-    You should see output similar to the following. Ensure the **PowerState** is **VM running** for both virtual machines before continuing.
+    You should see output similar to the following. Before continuing, ensure the **PowerState** is **VM running** for both virtual machines.
 
     ```output
     Name          ResourceGroup      PowerState    PublicIps    Fqdns    Location        Zones
@@ -86,13 +92,13 @@ You've now created the virtual machines running the vehicle registration web app
 
 ## Create App Service and deploy the license renewal site
 
-1. To start, run the following command to generate a unique name for the web site.
+1. To start, to generate a unique name for the website, run the following command.
 
     ```bash
     APPSERVICE="licenserenewal$RANDOM"
     ```
 
-1. Next, run the following command to create the app service plan the web app will use.
+1. Next, to create the App Service plan the web app will use, run the following command.
 
     ```azurecli
     az appservice plan create \
@@ -109,7 +115,7 @@ You've now created the virtual machines running the vehicle registration web app
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway \
-        --deployment-source-branch appService
+        --deployment-source-branch appService --runtime "DOTNETCORE|2.1" 
     ```
 
-Now let's take a closer look at configuring Application Gateway.
+Now, let's take a closer look at configuring Application Gateway.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hyperscale.4-design-a-distributed-database
+title: How to design a distributed database
+metadata:
+  title: How to design a distributed database
+  description: Review the common tools for connecting to a database for development
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-design-a-distributed-database.md)]

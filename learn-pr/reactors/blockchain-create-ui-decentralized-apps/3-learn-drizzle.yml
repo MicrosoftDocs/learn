@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-create-ui-decentralized-apps.3-learn-drizzle
+metadata:
+  title: Learn about Drizzle
+  description: Understand what Drizzle is and how its architecture works.
+  ms.date: 11/30/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about Drizzle
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-learn-drizzle.md)]

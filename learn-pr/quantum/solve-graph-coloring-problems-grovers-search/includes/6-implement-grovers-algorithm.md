@@ -79,8 +79,9 @@ If you deliver 4 types of supplies to our stations, you have to send a spaceship
 
 Now let's take a look at the behavior of the amplitudes of the basis states at the key points during the algorithm execution.
 
-![Figure 1. The amplitudes of the basis states at the key points during Grover's algorithm execution](../media/6-grovers-algorithm.svg)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JQ8E]
 
 Congratulations! You've implemented your first quantum search algorithm and used it to solve a small problem.
 
 In the next unit, you consider other examples and you take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
+

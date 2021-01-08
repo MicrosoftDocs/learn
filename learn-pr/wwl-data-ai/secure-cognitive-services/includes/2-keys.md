@@ -139,8 +139,8 @@ var keyVaultUri = new Uri($"https://{keyVaultName}.vault.azure.net/");
 // Now you can authenticate with DefaultAzureCredential and retrieve the subscription key from Azure Key Vault. 
 // The DefaultAzureCredential() instance is using the Service Principal environment variables you configured previously: 
 // AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET.
-var keyVaultClient = new SecretClient(keyVaultUri, new DefaultAzureCredential());
-KeyVaultSecret subscriptionKey = keyVaultClient.GetSecret("cognitive-services-subscription-key");
+var secretClient = new SecretClient(keyVaultUri, new DefaultAzureCredential());
+KeyVaultSecret subscriptionKey = secretClient.GetSecret("cognitive-services-subscription-key");
 
 // Here you are using the subscription key which was retrieved from Key Vault to authenticate a Cognitive Services client.
 AzureKeyCredential credentials = new AzureKeyCredential(subscriptionKey.Value);

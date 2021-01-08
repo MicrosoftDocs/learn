@@ -169,7 +169,7 @@ Let's now look at connecting to a Data Lake Storage Gen2 account. Before you can
        --location westus2 \
        --sku Standard_LRS \
        --kind StorageV2 \
-       --hierarchical-namespace true
+       --hns
    ```
 
 ## Connect to your Data Lake Gen2 storage account

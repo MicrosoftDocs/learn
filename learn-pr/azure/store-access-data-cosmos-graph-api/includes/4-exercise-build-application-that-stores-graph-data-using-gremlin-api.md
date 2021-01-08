@@ -1,10 +1,10 @@
-In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database, and graph (container) using the Azure portal. You then build and run a console app using an open-source Gremlin driver.
+In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database, and graph (container) using the Azure portal. You'll then build and run a console app using an open-source Gremlin driver.
 
 [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 ## Create an Azure Cosmos DB account
 
-Start by creating the database in Azure, by adding an Azure Cosmos DB account that uses the Graph API.
+Start by creating the database in <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>, by adding an Azure Cosmos DB account that uses the Graph API.
 
 1. On the Azure portal menu, select **Create a resource**.
 
@@ -22,16 +22,15 @@ Start by creating the database in Azure, by adding an Azure Cosmos DB account th
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
    | Account name | Use a globally unique value for your Azure Cosmos DB account. |
    | API | Gremlin (graph) |
-   | Apache Spark | None |
    | Location | Choose a region near you from the above list. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
 
-   ![Screenshot showing creating a new Azure Cosmos DB Account](../media/5-azure-cosmos-db-create-new-account.png)
+   ![Screenshot showing creating a new Azure Cosmos DB Account](../media/4-azure-cosmos-db-create-new-account.png)
 
 1. Select **Review + Create**, then **Create**.
 
-It might take a few minutes for Azure to create your new Azure Cosmos DB account. When you account has been created, the portal will display **Congratulations! Your Azure Cosmos DB account was created**.
+It might take a few minutes for Azure to create your new Azure Cosmos DB account. When your account has been created, the portal will display **Congratulations! Your Azure Cosmos DB account was created**.
 
 ## Add a graph
 
@@ -41,9 +40,9 @@ It might take a few minutes for Azure to create your new Azure Cosmos DB account
 
    ![Screenshot showing how to copy the Gremlin Endpoint](../media/5-copy-gremlin-endpoint.png)
 
-1. Click **Data Explorer**, and then click **New Graph**.
+1. Select **Data Explorer**, and then select **New Graph**.
 
-1. In the **Add graph** page, enter the settings for your new graph. Take note of the values that you choose for the **Database ID** and **Graph ID**; you'll use these values when you create your application in the next section.
+1. In the **Add Graph** panel, enter the settings for your new graph. Take note of the values that you choose for the **Database ID** and **Graph ID**. You'll use these values when you create your application in the next section.
 
    | Setting| Suggested value | Description |
    | --- | --- | --- |
@@ -54,9 +53,9 @@ It might take a few minutes for Azure to create your new Azure Cosmos DB account
 
    ![Screenshot showing creating a new Graph](../media/5-azure-cosmosdb-data-explorer-graph.png)
 
-1. Click **OK** to add the graph to your database.
+1. Select **OK** to add the graph to your database.
 
-1. Click **Keys**, then copy the value for the **PRIMARY KEY**; you'll use this value when you create your application in the next section.
+1. In the left nav, under **Settings**, select **Keys**, then copy the value for the **PRIMARY KEY**. You'll use this value when you create your application in the next section.
 
    ![Screenshot showing how to copy the access key](../media/5-copy-gremlin-key.png)
 
@@ -124,7 +123,6 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
 1. Open your Program.cs file in the editor, and add the following `using` statements to the beginning of the file.
 
    ```csharp
-   using System;
    using System.Threading.Tasks;
    using Gremlin.Net.Driver;
    using Gremlin.Net.Driver.Exceptions;

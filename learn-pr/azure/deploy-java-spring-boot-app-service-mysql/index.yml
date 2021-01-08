@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.deploy-java-spring-boot-app-service-mysql
+metadata:
+  title: Deploy a Spring Boot app to Azure
+  description: Create a Spring Boot application, connect it to a MySQL database, and then deploy to Azure App Service.
+  ms.date: 11/16/2020
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a Spring Boot app to Azure
+summary: Create a Spring Boot application, connect it to a MySQL database, and then deploy to Azure App Service.
+abstract: |
+  In this module, you will:
+  - Develop a Spring Boot web application.
+  - Connect your application to a MySQL database.
+  - Deploy the web application to Azure App Service.
+prerequisites: | 
+  - An Azure subscription
+  - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-app-service
+- azure-app-service-web
+- azure-database-mysql
+units:
+- learn.azure.deploy-java-spring-boot-app-service-mysql.1-introduction
+- learn.azure.deploy-java-spring-boot-app-service-mysql.2-build
+- learn.azure.deploy-java-spring-boot-app-service-mysql.3-exercise-build
+- learn.azure.deploy-java-spring-boot-app-service-mysql.4-deploy
+- learn.azure.deploy-java-spring-boot-app-service-mysql.5-exercise-deploy
+- learn.azure.deploy-java-spring-boot-app-service-mysql.6-knowledge-check
+- learn.azure.deploy-java-spring-boot-app-service-mysql.7-summary
+badge:
+  uid: learn.azure.deploy-java-spring-boot-app-service-mysql.badge

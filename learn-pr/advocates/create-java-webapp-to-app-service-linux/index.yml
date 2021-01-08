@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.build-webapp-java-tomcat
+metadata:
+  title: Deploy a Java web app to Azure App Service
+  description: You'll learn how to create a Java web application and deploy it to Azure App Service.
+  ms.date: 12/04/2020
+  author: yoshioterada
+  ms.author: yoterada
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a Java web app to Azure App Service
+summary: In this module, you'll look at practices to create and deploy a Java web application on Azure App Service.
+abstract: |
+  After you complete this module, you will be able to:
+  - Create a PrimeFaces Java web application.
+  - Configure your Java project to deploy to Azure App Service.
+  - Deploy your Java web application to Azure App Service.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+prerequisites: |
+  - Your own Azure subscription
+  - The [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada) installed on your computer
+  - [JDK 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) and [Tomcat 9.0.x](https://tomcat.apache.org/download-90.cgi) installed on your computer
+units:
+  - learn.azure.build-webapp-java-tomcat.1
+  - learn.azure.build-webapp-java-tomcat.2
+  - learn.azure.build-webapp-java-tomcat.3
+  - learn.azure.build-webapp-java-tomcat.4
+  - learn.azure.build-webapp-java-tomcat.5
+  - learn.azure.build-webapp-java-tomcat.6
+
+badge:
+  uid: learn.azure.build-webapp-java-tomcat.badge
