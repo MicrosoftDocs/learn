@@ -1,4 +1,9 @@
-The navigation division will run the Grover's algorithm in Q# for routing between space stations.
+Azure Quantum offers quantum computing solutions, where a spedific division of the space crew have access to quantum computing targets where they can run Q# quantum programs in real or simulated quantum devices. In particular, the navigation division will run the Grover's algorithm in Q# for routing between space stations. However search problem like this are not the only problems you can study. 
+
+In this part, you will learn about several case studies in quantum computing. 
+
+
+
 
 Research team at university trying to test quantum algorithms on actual hardware.
 
