@@ -20,5 +20,6 @@ After completing this module, you’ll be able to:
 - Basic knowledge of GDPR for organizations that provide services to people in the European Union (EU)
 - Basic knowledge of the California Consumer Privacy Act (CCPA), which provides privacy rights and obligations to Californian consumers
 - Intermediate experience with Azure Active Directory (Azure AD) services 
-- Intermediate experience with Microsoft Office 365 or Microsoft 365 
+- Intermediate experience with Microsoft Office 365 or Microsoft 365
+
 
