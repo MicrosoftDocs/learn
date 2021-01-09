@@ -18,7 +18,7 @@ Many organizations choose to manage their user identities in on-premises deploym
 
 - Microsoft Exchange hybrid deployments. Mailboxes exist both on-premises and in the cloud for an organization.
 - Microsoft SharePoint hybrid deployments. An organization uses on-premises SharePoint servers, on-premises files servers, Skype for Business Online, and  Microsoft OneDrive for Business accounts.
-- Identity management. On-premises Active Directory is synchronized with Azure AD by using Azure AD Connect.
+- Hybrid Identity management. Identities are manged on-premises with Active Directory and the accounts are synchronized with Azure AD by using Azure AD Connect. This also facilitates single sign on scenarios for hybrid deployments.
 
 In a hybrid deployment, the scope will vary based on the data that is responsive to a specific data subject's DSR. It’ll be up to the controller to determine if the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. Refer to the summary unit for more information. 
 
@@ -68,7 +68,7 @@ The applications where in-app functionality is used in Office 365 are:
 
 - Microsoft Access
 - Education
-- Microsoft Power Automate <!--Richard please validate - (Microsoft Flow was renamed to Power Automate in November 2019.)-->
+- Microsoft Power Automate
 - Business App for Office 365
 - Microsoft Forms
 - Kaizala
@@ -117,21 +117,26 @@ The fulfillment of a DSR for system-generated logs can include the following ste
 
 National clouds are isolated from other clouds by design. Administrators need to follow the guidance from the cloud that contains the responsive data for the DSR they receive. In the case of the request for system-generated logs the following will need to be performed:
 
-- Office 365 Germany: <!--Richard, if not too long, could you add the steps here again for easier access?-->Perform the same steps as Microsoft 365/Office 365.
+- Office 365 Germany: Perform the same steps as Microsoft 365/Office 365:
+	1. Accessing and exporting
+	2. Notifying about DSR execution issues
+	3. Deleting 
 - Office 365 US Government: Go to the Microsoft 365 admin center and submit a request to Microsoft Support.
 - Office 365 operated by 21Vianet (China): Go to the Microsoft 365 admin center operated by the 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.
 
 ### Part four: Additional resources for DSRs
 
 The following table lists some additional resources that are available for other DSR scenarios that might occur in the Microsoft cloud.<!--Richard, this table is a bit unclear. Are the “Resources” a mix of URLs and generic information? Could we make this less specific and provide a generic paragraph instead? -->
+<!--Lakshmy, I had URLs here but removed them based on TR comments. I included these URLs in the summary unit. I have revised for clarity.-->
 
-|Customer Data location|Resource|
-|---|---|
-|Microsoft Support|Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA|
-|Microsoft is the data controller|Overview of optional connected experiences in Office|
-|Personal accounts|Microsoft Privacy Dashboard|
-|Third-party products|Third-party directly|
-|Azure DevOps|Azure DevOps Services Data Subject Requests for the GDPR and CCPA|
-|Dynamics 365|Dynamics 365 Data Subject Requests for the GDPR and CCPA|
-|Intune|Intune Data Subject Requests for the GDPR and CCPA|
-|Visual Studio|Visual Studio Family Data Subject Requests for the GDPR and CCPA|
+The follwoing scenarios require specific technical steps to fulfull a DSR. 
+- Microsoft Support
+- Microsoft is the data controller
+- Personal accounts
+- Third-party products
+- Azure DevOps
+- Dynamics 365 
+- Intune
+- Visual Studio
+
+Microsoft has povides additional guidance on how to fulfull DSR when one or more of these products or services were used by a data subject. Links to the specific guidance for each of these procducts and servcies can be found in the Summary unit for this module.
