@@ -126,8 +126,8 @@ National clouds are isolated from other clouds by design. Administrators need to
 
 ### Part four: Additional resources for DSRs
 
-The following table lists some additional resources that are available for other DSR scenarios that might occur in the Microsoft cloud.<!--Richard, this table is a bit unclear. Are the “Resources” a mix of URLs and generic information? Could we make this less specific and provide a generic paragraph instead? -->
-<!--Lakshmy, I had URLs here but removed them based on TR comments. I included these URLs in the summary unit. I have revised for clarity.-->
+<!--Richard, this table is a bit unclear. Are the “Resources” a mix of URLs and generic information? Could we make this less specific and provide a generic paragraph instead? -->
+<!--Lakshmy, I had URLs here but removed them based on TR comments. I included these URLs in the summary unit. I removed the table and I have revised for clarity.-->
 
 The follwoing scenarios require specific technical steps to fulfull a DSR. 
 - Microsoft Support
