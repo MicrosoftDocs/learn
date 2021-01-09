@@ -27,7 +27,7 @@ A customer of Contoso who resides in France has called into the toll-free number
    
 #### Task two: Delete
 
-1. In Azure AD, select **Users**. <Richard, I deleted the first step as they seem to be in Azure AD already from step 1.>
+1. In Azure AD, select **Users**.
 2. In the **All users** blade, select the check box next to the data subject's user account.
 3. Select **Delete user** and then select **Yes** to confirm. 
 4. In the **Deleted users** blade, select the check box next to the data subject's user account.
