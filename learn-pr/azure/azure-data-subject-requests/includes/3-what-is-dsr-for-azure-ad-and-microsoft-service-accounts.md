@@ -2,9 +2,9 @@ Many Microsoft enterprise customers will be required to respond to DSRs under GD
 
 ## Scope of DSR for Azure AD and Microsoft service accounts
 
-The following image depicts three scenarios where a Microsoft customer receives a DSR. <!--Richard, could you add a couple of short sentences to the alt-text to explain what the image is conveying? What are the the differences between each scenario?-->
+The following image depicts three scenarios where a Microsoft customer receives a DSR.
 
-:::image type="content" source="../media/4-dsr-scope.png" alt-text="Three scenarios depicting the scope of Microsoft DSR fulfillment." border="false":::
+:::image type="content" source="../media/4-dsr-scope.png" alt-text="Three scenarios depicting the scope of Microsoft DSR fulfillment. 1. An enterprise customer receives a DSR. 2. A Microsoft service account with an Azure Active Directory tenant receives a DSR. 3. A Microsoft service account outside an Azure Active Directory tenant receives a DSR." border="false":::
 
 ### Scenario 1
 
