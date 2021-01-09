@@ -22,4 +22,4 @@ You can learn more by reviewing the following articles:
 
 - [Visual Studio Family Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-visual-studio-family?azure-portal=true)
 
-  
+ 
