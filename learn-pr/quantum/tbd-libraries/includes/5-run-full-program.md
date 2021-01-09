@@ -1,4 +1,4 @@
-﻿In the previous unit, you defined the operation `isbnOracle`, which takes as an argument the qubit register for our search space and ultimately applies a phase factor of -1 to the number state $\ket{x}$ which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
+In the previous unit, you defined the operation `isbnOracle`, which takes as an argument the qubit register for our search space and ultimately applies a phase factor of -1 to the number state $\ket{x}$ which satisfies the condition $(9 + 6 \cdot x) \bmod 11 = 0$. 
 To do so, you also defined the operation `ComputeIsbnCheck`, which is used inside `isbnOracle` and performs the necessary arithmetic mapping to a second qubit register.
 
 Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations," each of which consists of:
@@ -19,7 +19,7 @@ In that case, the creation of the superposition is straightforwardly handled by 
 However, since we are only interested in the number states $0 - 9$, we have no use for the remaining states $10-15$ which our 4 qubits can represent.
 Therefore, we will only utilize and reflect about the uniform superposition $\sum_{i=0}^9 \ket{i}$.
 
-To prepare this on qubit register `digitReg`, we define the operation `PrepareUnifromSuperpositionOverDigits` as
+To prepare this state on qubit register `digitReg`, we define the operation `PrepareUnifromSuperpositionOverDigits` as
 
 ```qsharp
     operation PrepareUniformSuperpositionOverDigits(digitReg : Qubit[]) : Unit is Adj + Ctl {
@@ -27,7 +27,7 @@ To prepare this on qubit register `digitReg`, we define the operation `PrepareUn
     }
 ```
 
-You can think of this as analagous to the previous module's use of `ApplyToEachA(H, register)` to do prepare the uniform superposition over all possible number states.
+You can think of this as analagous to the previous module's use of `ApplyToEachA(H, register)` to prepare the uniform superposition over all possible number states.
 There, the operation used both in preparing the initial superposition of the algorithm and in the operation corresponding to reflection about that superposition---the same is true here.
 
 The full step is then implemented by `ReflectAboutUniform`:
@@ -67,7 +67,7 @@ Since we only consider the 10 possible digits as our search space, we will provi
 
 Recall that in most situations Grover's algorithm is probabilistic.
 Although it typically returns a correct answer with a very high probability, there is often a finite chance that the measurement results in an incorrect solution. 
-This is because it merely amplifies the amplitude of the "good" states, and therefore the "bad" states will often still retain small amplitudes.
+This is because it amplifies the amplitude of the "good" states, but the "bad" states will often still retain small amplitudes.
 To account for this, we simply check whether the result is correct and then repeat the algorithm if not.
 
 In our scenario, we define the classical *function* `IsIsbnValid` to check whether the returned missing digit $x$ provides a valid ISBN. 
