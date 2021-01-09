@@ -1,5 +1,5 @@
 When working with nearly any programming language, one of the most important development tools at your disposal is the API documentation itself.
-API documentation is essentially the reference manual for a language, containing the specifics about how all the puzzle pieces fit together; for example, all types and functions along with any required/optional inputs.
+API documentation is essentially the reference manual for the libraries of a language, containing the specifics about how all the puzzle pieces fit together; for example, all types and functions along with any required/optional inputs.
 Such documentation often includes both nitty-gritty details as well as bigger-picture context—e.g. the accepted input types to a function along with a conceptual description of what the function actually does.
 
 Besides checking QDK libraries, quantum space crew members can contribute to its growth and add their own programs and consideration to the documentation. 
@@ -19,7 +19,7 @@ Alongside **Q# libraries**, notice there are a few other sets of API documentati
 We won't focus on them here, but note that they concern various other parts of the QDK:
 - *.NET libraries* contains references for the trace simulator target machine and the *.NET* quantum chemistry library (those parts of the quantum chemistry library which are represented outside the Q# program).
 - *Python libraries* contains details regarding integration with Python as a host program.
-- *IQ# magic commands* contains the magic commands that can be used in Jupyter Notebooks (e.g. the [`%package` command](xref:microsoft.quantum.iqsharp.magic-ref.package) used to add a package to the workspace).
+- *IQ# magic commands* contains the magic commands that can be used in Jupyter Notebooks (e.g. the [`%package` command](https://docs.microsoft.com/qsharp/api/iqsharp-magic/package) used to add a package to the workspace).
 
 ### Q# library API references
 

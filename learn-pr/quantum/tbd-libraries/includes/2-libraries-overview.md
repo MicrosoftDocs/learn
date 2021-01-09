@@ -20,7 +20,7 @@ It enables developers to produce, share, and consume useful code.
 A NuGet *package* is essentially a ZIP file containing compiled code and related files.
 
 The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package.
-Naturally only those packages meant for use with Q# can be used, such as those containing Q# libraries, new/custom simulators, or new magic commands for Q# Jupyter Notebooks.
+Naturally only those packages meant for use with Q# can be used, such as those containing Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter?tabs=tabid-conda).
 Since they are all hosted through NuGet, users can easily use the Q# libraries produced by Microsoft, as well as other third-party Q# libraries that are not released as part of the QDK. 
 
 As you will learn further below, the simple process of adding these libraries to your projects is the same regardless.

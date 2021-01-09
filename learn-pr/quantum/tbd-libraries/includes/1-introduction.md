@@ -9,11 +9,11 @@ By implementing Grover's algorithm with the Q# Standard Library you will determi
 In this module you will:
 
 - Learn about libraries in Q#, specifically how they are distributed and how to add them to your projects
-- Use Q# to express quantum algorithms at a high level
+- Use the Q# Standard Library to express quantum algorithms at a high level
 - Get to know the API documentation and integrated help capabilities to more efficiently find and use Q# functionality
 - Write API documentation comments to help document and explain your Q# programs
 
 ## Prerequisites
 
 - A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/), you are all set, but otherwise the overview can be found at the [Grover's Search Algorithm unit](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) therein.
-- A functioning QDK environment, preferably in VS Code for command-line applications or in Jupyter Notebook and IQ#.
+- A functioning QDK environment, preferably in [VS Code for command-line applications](https://docs.microsoft.com/quantum/quickstarts/install-command-line?tabs=tabid-vscode) or in [Q# Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter?tabs=tabid-conda).

@@ -17,6 +17,18 @@ quiz:
   title: Check your knowledge
   questions:
 
+  - content: "What are the domain-specific Q# libraries provided with the QDK?" 
+    choices:
+    - content: "The Standard library, Chemistry, Numerics, and Machine Learning."
+      isCorrect: false
+      explanation: "The domain-specific libraries are Chemistry, Numerics, and Machine Learning. They must be explicitly added to Q# projects, whereas the contents of the Standard library are automatically accessible." 
+    - content: "Arithmetic, Preparation, Diagnostics"
+      isCorrect: false
+      explanation: "Those are `Microsoft.Quantum.<>` namespaces. The domain-specific libraries are Chemistry, Numerics, and Machine Learning." 
+    - content: "Chemistry, Numerics, and Machine Learning" 
+      isCorrect: true
+      explanation: "Correct!"
+
   - content: "How can I use additional Q# libraries besides the Standard library?" 
     choices:
     - content: "Simply create my Q# project and get started programming."
