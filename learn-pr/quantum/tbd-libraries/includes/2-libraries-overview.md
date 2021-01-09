@@ -37,9 +37,9 @@ Firstly, the *standard library* provides much of Q#'s primary functionality and 
 Then, there are three libraries focused on more domain-specific functionality: 
 - The *quantum chemistry library*, which provides a data model for loading representations of fermionic Hamiltonians (e.g. molecular systems) and casting them to a representation that can be mapped to a quantum computer's physical qubits, as well as operations to reveal system properties and simulate dynamics. 
 - The *quantum machine learning library*, which provides an implementation of a hybrid quantum-classical algorithm that makes use of quantum computing to encode and process the data. 
-    This library is not meant to be ready for production but as a research environment for those interested in running experiments to explore the use of quantum computing in machine learning.
+    This library is not meant to be ready for production, but rather is a research environment for those interested in exploring the use of quantum computing in machine learning.
 - The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer.
-    Many quantum algorithms require some level of arithmetic manipulation for the information encoded in the qubit registers, and the operations implemented in this library provide you the necessary arithmetic operations to implement algorithms like Shor's factoring algorithm.
+    Many quantum algorithms require some level of arithmetic manipulation for the information encoded in the qubit registers, and this library provides you the necessary arithmetic operations to implement algorithms like Shor's factoring algorithm.
 
 
 ## How can I add a Q# library to my project?

@@ -1,22 +1,22 @@
-You are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their Interstellar Standard Book Number, or ISBN, a sequence of numbers which uniquely identify every book. 
-You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteriod field,  one of the digits is now illegible.
+You are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their International Standard Book Number, or ISBN, a sequence of numbers which uniquely identify every book. 
+You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field,  one of the digits is now illegible.
 The online library only allows three attempts when searching for a book, so you need to somehow determine the missing digit without guessing.
 
 In the next few units you will write a Q# program to do just that using Grover's algorithm.
 
 ## ISBN check digits
 
-Fortunately, ISBNs are not simply a random sequence of numbers. 
+Fortunately, an ISBN is not simply a random sequence of digits. 
 Instead, they utilize check digits, a type of redundancy check historically used to detect simple errors when digits are input manually.
-In the ISBN 10 system, each ISBN is a ten-digit sequence and the last digit serves as the check---specifically such that the full sequence $(x_0, x_1, \ldots, x_9)$ satisfies the weighted sum 
+In the ISBN 10 system, each ISBN is a ten-digit sequence and the last digit serves as the check: the full sequence $(x_0, x_1, \ldots, x_9)$ should satisfy the following condition: 
 
 $$
 \left ( \sum_{i=0}^{9} (10-i) x_i \right ) \bmod 11 = 0.
 $$
 
-That is, the sum of the digits weighted by their position from the right must be equal to zero modulo 11.
+That is, the sum of the digits weighted by their position from the right must be divisible by 11.
 The last term of the sum is simply $1\cdot x_9$, and thus we see why this is referred to as the check digit---if any of the digits are incorrect, then the equation will not be satisfied.
-Beyond merely detecting errors, if any of the digits are entirely missing, this property can also be leveraged to determine it. 
+Beyond merely detecting errors, if any one digit is entirely missing, this property can also be leveraged to determine it. 
 
 Now, the digits you see on your sticky note are ISBN 0-306-$x$0615-2, where $x$ is just a coffee smudge where the fifth digit used to be. Since it *was* a valid ISBN, we have the equation
 
@@ -38,7 +38,7 @@ In the rest of this unit, you will create and document this oracle in a new Q# p
 Then, in the next unit, you will put it all together into Grover's algorithm and finally find that book you need. 
 The instructions here are specifically for Q# via the command line in VS Code, but easily extend to other environments. 
 
-## Grover oracle
+## Implementing the oracle
 
 We need an oracle that checks whether a given $x$ satisfies the equation $0 = (9 + 6\cdot x) \bmod 11$.
 To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a quantum register. 
@@ -50,15 +50,16 @@ $$
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 
+To implement our mapping specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
 Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
-To implement this mapping as an oracle on the four-qubit data register $\ket{x}$, we first allocate a four-qubit target register (i.e., $\ket{b}$ above) and prepare it in the number state $\ket{9}$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then perform the mapping above by providing $N=11$ and $a=6$, so
+Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit target register (i.e. $\ket{b}$ above) and preparing it in the number state $\ket{9}$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
 $$
 \ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
 $$
 
-In the remainder of this unit you will learn how to explicitly implement this operation as an oracle while defining the corresponding Q# operations. 
-In the next unit, you will put it all together and finally find the book you've been needing!
+In the remainder of this unit you will learn how to explicitly implement this mapping as a Q# operation. 
+In the next unit, you will put it all together and finally find the book you need!
 
 ### Flag the correct state by applying the oracle
 
@@ -69,29 +70,29 @@ Supposing we have in hand the search register `digitReg` and a `flagQubit` initi
 
 Well, we can add a secondary target register initialized to $\ket{9}$, leaving the full state of the form
 $$
-\ket{x}\ket{9}\_{\text{target}}\ket{-},
+\ket{x}\ket{9}_{\text{target}}\ket{-},
 $$
 and then apply the mapping, yielding
 $$
-\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\_{\text{target}}\ket{-}.
+\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}_{\text{target}}\ket{-}.
 $$
 
-Finally, we can apply a controlled `X` operation on the $\ket{-}$ flag qubit, controlled by the target register's being in the $\ket{0}$ number state (for four qubits, technically this is $\ket{0000}$).
+Finally, we can apply a controlled `X` operation on the $\ket{-}$ flag qubit, controlled by the target register being in the $\ket{0}$ number state (for four qubits this is represented as $\ket{0000}$).
 Thus the state of `digitReg` which satisfies the equation acquires the phase factor as
 $$
--1*\ket{x_{good}} \ket{0}\_{\text{target}} \ket{-}
+-1*\ket{x_{good}} \ket{0}_{\text{target}} \ket{-}
 $$
 and the non-solution states do not:
 $$
-\ket{x_{bad}} \ket{\neq 0}\_{\text{target}} \ket{-}.
+\ket{x_{bad}} \ket{\neq 0}_{\text{target}} \ket{-}.
 $$
 
-After this, the target register and the flag qubit can be uncomputed (handled by our `apply`/`within` statements) and de-allocated, having both served their purpose. 
+After this, the target register and the flag qubit can be uncomputed (handled by Q# `apply`/`within` statements) and de-allocated, having both served their purpose. 
 
-The following code defines the operation `IsbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
+The following code defines the operation `isbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
 
 ```qsharp
-    operation IsbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+    operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
@@ -109,12 +110,12 @@ The following code defines the operation `IsbnOracle`, which implements the full
     }
 ```
 
-Note that upon allocation, `targetReg` will be in the state $\ket{0}$. Therefore, `ComputeIsbnCheck` will need to first initialize it to $\ket{9}$ before applying the `digitReg`-dependent arithmetic mapping.
+Note that upon allocation, `targetReg` will be in the state $\ket{0}$. Therefore, `ComputeIsbnCheck` will need to first initialize
 
 
 ### Apply the arithmetic mapping to target state
 
-We just described how the oracle itself is implemented using the `ComputeIsbnCheck` operation, which itself performs the mapping
+We just described how the oracle is implemented using the `ComputeIsbnCheck` operation, which performs the mapping
 $$
 \ket{x}\ket{0}_{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
 $$
