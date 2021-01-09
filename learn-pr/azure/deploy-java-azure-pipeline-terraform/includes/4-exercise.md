@@ -18,7 +18,7 @@ https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
 
 Inside the project directory, you'll see a directory called `terraform` and a file called `main.ts` in it.
 
-<!-->Todo explain the main.ts sections<!-->
+<!--Todo explain the main.ts sections-->
 
 The following **main.tf** sections define your module's configuration:
 
