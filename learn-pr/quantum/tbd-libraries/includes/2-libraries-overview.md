@@ -1,6 +1,10 @@
 You are probably already familiar with libraries in other programming languages. 
 Q# as a language for quantum programming is not different in this case. 
-The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without worrying about the details of actual implementation on target machines, e.g. whether it will be run on a trapped ion, superconducting qubit, or a simulated quantum computer. 
+
+The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without having to worry about the low-level implementation details.
+For example, many languages provide some form of `a + b` to simply add two numbers, and because you don't have to think about the binary representation and implementation of that addition, you can write better programs faster by only worrying about the important part, the logic of what you're doing with those numbers. 
+The same is true for the Q# libraries---by providing complex quantum operations and frequently-used components of quantum algorithms through simple callables and types, they free you up to focus on the logic of your quantum program and therefore start developing more impactful programs sooner.
+
 
 ## What is a Q# library?
 
