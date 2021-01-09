@@ -32,7 +32,7 @@ We provide a full list of the possible headers below, but first let's document t
     /// # Input
     /// ## digitReg
     /// The input four-qubit register which will be operated on.
-    operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+    operation IsbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {

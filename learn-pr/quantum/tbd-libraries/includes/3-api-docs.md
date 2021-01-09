@@ -30,7 +30,7 @@ In the **Q# libraries** dropdown, you find the documentation for all of the Q# l
 
 ### Looking for something in particular?
 
-Looking for a specific callable or type? 
+Looking for a specific function, operation, or type? 
 Use the *Filter by title* box above the table of contents—it includes the API references and can take you straight to the right page.
 We'll be using the `ControlledOnInt` function later in the module, so lets take it as our example:
 

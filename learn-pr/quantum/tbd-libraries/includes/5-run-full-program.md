@@ -1,11 +1,11 @@
-﻿In the previous unit, you defined the operation `isbnOracle`, which takes as an argument the qubit register for our search space and ultimately applies a phase factor of -1 to the number state $\ket{x}$ which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
-To do so, you also defined the operation `ComputeIsbnCheck`, which is used inside `isbnOracle` and performs the necessary arithmetic mapping to a second qubit register.
+﻿In the previous unit, you defined the operation `IsbnOracle`, which takes as an argument the qubit register for our search space and ultimately applies a phase factor of -1 to the number state $\ket{x}$ which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
+To do so, you also defined the operation `ComputeIsbnCheck`, which is used inside `IsbnOracle` and performs the necessary arithmetic mapping to a second qubit register.
 
 Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations," each of which consists of:
 1. applying the oracle,
 2. reflecting about the uniform superposition of states.
 
-The first step is precisely what we defined in the previous unit with `isbnOracle`.
+The first step is precisely what we defined in the previous unit with `IsbnOracle`.
 
 The second step---sometimes referred to as *reflection about the mean* or *diffusion*---is *not* as problem specific as the oracle.
 Nonetheless, it can be somewhat optimized for our situation. 
@@ -49,7 +49,7 @@ The full step is then implemented by `ReflectAboutUniform`:
 
 ## Grover iterations
 
-Each Grover iteration will consist of one application of `isbnOracle` followed by `ReflectAboutUniform`.
+Each Grover iteration will consist of one application of `IsbnOracle` followed by `ReflectAboutUniform`.
 
 The ideal number of Grover iterations to perform is provided by the number of possible solutions and the total number of states.
 In this case, we have a single possible solution, so we define the function `NIterations` which takes the total number of states as an argument:
@@ -131,7 +131,7 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
                 // The Grover iterations
                 for (idxIteration in 1..numIterations) {
                     // Apply the oracle
-                    isbnOracle(digitReg);
+                    IsbnOracle(digitReg);
 
                     // Reflect about the uniform superposition
                     ReflectAboutUniform(digitReg);
@@ -176,7 +176,7 @@ namespace ISBNGrover {
     }
 
 
-    operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+    operation IsbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
@@ -250,7 +250,7 @@ namespace ISBNGrover {
                 // The Grover iterations
                 for (idxIteration in 1..numIterations) {
                     // Apply the oracle
-                    isbnOracle(digitReg);
+                    IsbnOracle(digitReg);
 
                     // Reflect about the uniform superposition
                     ReflectAboutUniform(digitReg);

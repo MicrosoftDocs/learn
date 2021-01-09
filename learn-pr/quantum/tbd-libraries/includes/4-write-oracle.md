@@ -1,4 +1,4 @@
-You are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their International Standard Book Number, or ISBN, a sequence of numbers which uniquely identify every book. 
+You are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their Interstellar Standard Book Number, or ISBN, a sequence of numbers which uniquely identify every book. 
 You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteriod field,  one of the digits is now illegible.
 The online library only allows three attempts when searching for a book, so you need to somehow determine the missing digit without guessing.
 
@@ -50,10 +50,9 @@ $$
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 
-To implement our mapping specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
 Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
-Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit target register (i.e. $\ket{b}$ above) and preparing it in the number state $\ket{9}$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
+To implement this mapping as an oracle on the four-qubit data register $\ket{x}$, we first allocate a four-qubit target register (i.e., $\ket{b}$ above) and prepare it in the number state $\ket{9}$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then perform the mapping above by providing $N=11$ and $a=6$, so
 $$
 \ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
 $$
@@ -70,29 +69,29 @@ Supposing we have in hand the search register `digitReg` and a `flagQubit` initi
 
 Well, we can add a secondary target register initialized to $\ket{9}$, leaving the full state of the form
 $$
-\ket{x}\ket{9}_{\text{target}}\ket{-},
+\ket{x}\ket{9}\_{\text{target}}\ket{-},
 $$
 and then apply the mapping, yielding
 $$
-\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}_{\text{target}}\ket{-}.
+\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\_{\text{target}}\ket{-}.
 $$
 
 Finally, we can apply a controlled `X` operation on the $\ket{-}$ flag qubit, controlled by the target register's being in the $\ket{0}$ number state (for four qubits, technically this is $\ket{0000}$).
 Thus the state of `digitReg` which satisfies the equation acquires the phase factor as
 $$
--1*\ket{x_{good}} \ket{0}_{\text{target}} \ket{-}
+-1*\ket{x_{good}} \ket{0}\_{\text{target}} \ket{-}
 $$
 and the non-solution states do not:
 $$
-\ket{x_{bad}} \ket{\neq 0}_{\text{target}} \ket{-}.
+\ket{x_{bad}} \ket{\neq 0}\_{\text{target}} \ket{-}.
 $$
 
 After this, the target register and the flag qubit can be uncomputed (handled by our `apply`/`within` statements) and de-allocated, having both served their purpose. 
 
-The following code defines the operation `isbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
+The following code defines the operation `IsbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
 
 ```qsharp
-    operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+    operation IsbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
@@ -110,7 +109,7 @@ The following code defines the operation `isbnOracle`, which implements the full
     }
 ```
 
-Note that upon allocation, `targetReg` will be in the state $\ket{0}$. Therefore, `ComputeIsbnCheck` will need to first initialize
+Note that upon allocation, `targetReg` will be in the state $\ket{0}$. Therefore, `ComputeIsbnCheck` will need to first initialize it to $\ket{9}$ before applying the `digitReg`-dependent arithmetic mapping.
 
 
 ### Apply the arithmetic mapping to target state
