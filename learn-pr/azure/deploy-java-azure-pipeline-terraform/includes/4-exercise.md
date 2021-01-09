@@ -20,6 +20,15 @@ Inside the project directory, you'll see a directory called `terraform` and a fi
 
 <!-->Todo explain the main.ts sections<!-->
 
+The following **main.tf** sections define your module's configuration:
+
+- Provider: A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
+- Terraform: Terraform version
+- Data: Get data from already existing services
+- Locals: Generates new variables using functions and expressions
+- Resource: Describes resources & dependencies
+- Module: Reusability & complexity abstraction
+
 ```yml
 provider "azurerm" {
   version = "=2.20.0"
