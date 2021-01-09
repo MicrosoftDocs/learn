@@ -41,9 +41,13 @@ To get these reports, download the [*AzureADSignins.omsview* file](https://githu
 You can choose to download and install one or both of these prebuilt views in your Log Analytics workspace.  You'll be using the one to which you previously directed the audit and sign-in data streams.
 
 1. In the Azure portal, select **All services**, enter **Log Analytics**, and then select the Log Analytics workspace that you created earlier.
-1. Select **View Designer**.
-1. Select **Import**, select **Choose file**, and then browse to the location where you downloaded both views. 
+
+1. Select **Workbooks**.
+
+1. Select **Import**, select **Choose file**, and then browse to the location where you downloaded both views.
+
 1. Select the **Azure AD Account Provisioning Events** file, and select **Save**.
+
 1. Repeat the preceding steps, but select the **Sign-ins Events** file instead, and then select **Save**.
 
 You've now imported both prebuilt views to your Log Analytics workspace.
@@ -77,7 +81,7 @@ Now that you've created a dashboard, you need to add a query report to it. It mi
 
 ### Build a dashboard query
 
-From the Log Analytics workspace, create a new query. Let's suppose you want to identify the most common user event for the last week. You would use a query like this one:
+From the Log Analytics workspace, create a new query. Let's suppose you want to identify the most common user event for the last week. You would use a query like this one.
 
 ```kusto
 AuditLogs
@@ -93,17 +97,21 @@ It's good practice to check any query by running it. When the query returns a va
 When the **Save query** control pane appears, do the following:
 
 1. Give the query a meaningful **Name**, such as *Common User Events Last 7 days*.
+
 1. For **Category**, select **Dashboards**.
+
 1. Select **Save**. By saving queries, you can build a library of the ones you use most often.
+
 1. Select **Pin to dashboard**, and then select the dashboard that you created earlier.
 
-Now that you've pinned the query to the dashboard, you can return to the security dashboard that you created earlier.  When you open **Security Dashboard**, the analytics result is displayed.
+Now that you've pinned the query to the dashboard, you can return to the security dashboard that you created earlier. When you open **Security Dashboard**, the analytics result appears.
 
 The name of the report could be improved, so consider renaming it to something more specific.
 
 ![Screenshot of the updated dashboard, with a new name and the "Edit" (pencil icon) button.](../media/4-log-analytics-modify-dashboard.png)
 
-1. To change the dashboard name, select the **Edit** (pencil icon) button. A more specific title might be **Top User Events past seven days**. 
+1. To change the dashboard name, select **Edit** (pencil icon). A more specific title might be **Top User Events past seven days**.
+
 1. When you've made all your changes, select **Update**.
 
 ## Export reports
@@ -123,13 +131,19 @@ Power BI lets you build complex and dynamic reports and dashboards from the data
 1. Select **Save** to save the report text file to your local computer.
 
 1. Open the saved file in a text editor. In a moment, you'll copy the content to Power BI.
+
 1. Open Power BI Desktop.
+
 1. Select **Get Data**, and then select **Blank Query**.
 
-   The Power BI query editor is displayed.
+   The Power BI query editor appears.
+
 1. Select the **View** menu option, and then select **Advanced Editor**.
+
 1. Copy the content from the saved Power BI (M) file.
+
 1. Paste the **M Language script** into the editor pane.
+
 1. Select **Done**.
 
 Because this query originated in Azure, you'll need to use the **Organizational account** option and your Azure authentication credentials to grant Power BI access to your Azure instance.

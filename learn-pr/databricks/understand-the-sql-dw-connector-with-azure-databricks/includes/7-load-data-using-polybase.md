@@ -1,14 +1,14 @@
-PolyBase is a technology that accesses data outside of a database via the T-SQL language. In Azure SQL Data Warehouse, you can import and export data to and from Azure Blob storage and Azure Data Lake Store.
+PolyBase is a technology that accesses data outside of a database via the T-SQL language. In Azure Synapse Analytics, you can import and export data to and from Azure Blob storage and Azure Data Lake Store.
 
-In this unit, you'll learn how to load data from Azure Blob storage into SQL Data Warehouse by using PolyBase.
+In this unit, you'll learn how to load data from Azure Blob storage into Azure Synapse Analytics by using PolyBase.
 
 ## Make a connection to SQL Data Warehouse
 
 1. Open Azure Data Studio.
 
-1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection that you made to the SQL Data Warehouse database and select **New Query**.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection that you made to the Azure Synapse Analytics database, and select **New Query**.
 
-    ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
+    ![Right-click the Azure Synapse Analytics connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
 ## Create an external data source
 
@@ -39,9 +39,9 @@ Replace the token `<Name_Of_Storage_Account>` with the name of the Azure storage
 
 ## Define the external file format
 
-A definition of the external file format helps SQL Data Warehouse parse the format of the external file to be loaded. It defines the field terminator, string delimiter, and date field format. These properties help with capturing the fields in a file.
+A definition of the external file format helps Azure Synapse Analytics parse the format of the external file to be loaded. It defines the field terminator, string delimiter, and date field format. These properties help with capturing the fields in a file.
 
-- Clear the query window and execute these statements to define the external file format:
+- Clear the query window and execute these statements to define the external file format.
 
     ```sql
     CREATE EXTERNAL FILE FORMAT TextFileFormat
@@ -66,7 +66,7 @@ A definition of the external file format helps SQL Data Warehouse parse the form
 
 ## Create a schema for the external table
 
-- Clear the query window and run this statement to create a schema for the external table:
+- Clear the query window and run this statement to create a schema for the external table.
 
     ```sql
     CREATE SCHEMA [asb];
@@ -74,9 +74,9 @@ A definition of the external file format helps SQL Data Warehouse parse the form
 
 ## Create the external table
 
-External tables refer to data from an external data source. Data isn't stored in SQL Data Warehouse.
+External tables refer to data from an external data source. Data isn't stored in Azure Synapse Analytics.
 
-1. Clear the query window and run these statements to define an external table:
+1. Clear the query window, and run these statements to define an external table.
 
     ```sql
     CREATE EXTERNAL TABLE [asb].[Transaction]
@@ -124,9 +124,9 @@ External tables refer to data from an external data source. Data isn't stored in
 
   - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `REJECT_VALUE`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `REJECT_VALUE`. The percentage of failed rows is calculated at intervals.
 
-    In the above statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
+    In the previous statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
 
-2. Clear the query window and run this statement to get data from the external table:
+1. Clear the query window, and run this statement to get data from the external table.
 
     ```sql
     SELECT * FROM [asb].[Transaction]
@@ -134,19 +134,19 @@ External tables refer to data from an external data source. Data isn't stored in
 
 ## Create a schema for the table
 
-- Clear the query window and run this statement to create a schema for tables:
+- Clear the query window, and run this statement to create a schema for tables.
 
     ```sql
     CREATE SCHEMA [cso];
     ```
 
-## Create a SQL Data Warehouse table and load data
+## Create an Azure Synapse Analytics table and load data
 
-Create a table in SQL Data Warehouse by using the CREATE TABLE AS SELECT (CTAS) statement. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
+Create a table in Azure Synapse Analytics by using the CREATE TABLE AS SELECT (CTAS) statement. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
 
-In this exercise, the CTAS statement is used to create a table in SQL Data Warehouse that's based on the external table that you defined earlier. CTAS doesn't just create tables. It also loads data obtained via the SELECT statement.
+In this exercise, the CTAS statement is used to create a table in Azure Synapse Analytics that's based on the external table that you defined earlier. CTAS doesn't just create tables. It also loads data obtained via the SELECT statement.
 
-- Clear the query window and run this statement to create a table in SQL Data Warehouse:
+- Clear the query window, and run this statement to create a table in Azure Synapse Analytics.
 
     ```sql
     CREATE TABLE [cso].[Transaction]
@@ -159,6 +159,6 @@ In this exercise, the CTAS statement is used to create a table in SQL Data Wareh
     OPTION (LABEL = 'CTAS : Load [cso].[Transaction]');
     ```
 
-   - DISTRIBUTION = `[ HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE ]`. The CTAS statement requires a distribution option. This option doesn't have a default value. The table in this example is created by using the `HASH` distribution method on the `TransactionId` column.
+  - DISTRIBUTION = `[ HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE ]`. The CTAS statement requires a distribution option. This option doesn't have a default value. The table in this example is created by using the `HASH` distribution method on the `TransactionId` column.
 
-   - LABEL. This option labels the query, which makes it easy to identify.
+  - LABEL. This option labels the query, which makes it easy to identify.

@@ -1,16 +1,16 @@
-In this unit, you'll learn how to use Azure Data Factory to load data into SQL Data Warehouse.
+In this unit, you'll learn how to use Azure Data Factory to load data into Azure Synapse Analytics.
 
-[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) is a cloud-based data integration service. It lets you create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. Data Factory supports various data sources; for this exercise, we'll use Azure SQL Database as the data source.
+[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) is a cloud-based data integration service. It lets you create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. Data Factory supports various data sources. For this exercise, we'll use Azure SQL Database as the data source.
 
-The steps in this unit show you how to load data from a table in Azure SQL Database to a table in SQL Data Warehouse.
+The steps in this unit show you how to load data from a table in Azure SQL Database to a table in Azure Synapse Analytics.
 
 ## Access the data warehouse
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Locate the SQL Data Warehouse instance that you created earlier and select it to open it.
+1. Locate the Azure Synapse Analytics instance that you created earlier and select it to open it.
 
-    ![SQL Data Warehouse instance](../media/sql-dw.png)
+    ![Azure Synapse Analytics instance](../media/sql-dw.png)
 
 ## Open Data Factory
 
@@ -28,7 +28,7 @@ The steps in this unit show you how to load data from a table in Azure SQL Datab
 
     ![Select Create new data factory](../media/sql-dw-load-data-create-df-link.png)
 
-1. In the **New Data Factory** window, enter the following values and then select **Create** at the bottom of the window.
+1. In the **New Data Factory** window, enter the following values, and then select **Create** at the bottom of the window.
 
     - _Data Factory name_: Enter a name for the data factory, or use the default name.
     - _Subscription_: Select the subscription that you used to create the resources for this module.
@@ -37,9 +37,9 @@ The steps in this unit show you how to load data from a table in Azure SQL Datab
 
     ![New Data Factory window](../media/sql-dw-load-data-create-df.png)
 
-1. Wait until the data factory is created and you're returned to the **Select Data Factory** window.
+1. Wait until the data factory is created, and you're returned to the **Select Data Factory** window.
 
-1. On the **Select Data Factory** window, select **Load data** and then select **Next**.
+1. On the **Select Data Factory** window, select **Load data**, and then select **Next**.
 
     ![Select Load data](../media/sql-dw-load-data-create-df-load-link.png)
 
@@ -47,7 +47,7 @@ The steps in this unit show you how to load data from a table in Azure SQL Datab
 
 On the data factory configuration page, you'll provide details for the source and destination databases.
 
-- On the **Properties** tab, enter the following values and then select **Next** to move to the next tab.
+- On the **Properties** tab, enter the following values, and then select **Next** to move to the next tab.
 
     - _Task name_: Enter a name for the task, or use the default value.
     - _Task description_: Provide a description for the task, if you want. This field is optional.
@@ -58,11 +58,11 @@ On the data factory configuration page, you'll provide details for the source an
 
 ## Select the source
 
-1. On **Source** tab, select **Azure SQL Database** as the source and then select **Next**.
+1. On **Source** tab, select **Azure SQL Database** as the source, and then select **Next**.
 
     ![Select Azure SQL Database](../media/sql-dw-load-data-source-select.png)
 
-1. On the **Specify the Azure SQL database** page, enter the following values to set up the source database and then select **Next**.
+1. On the **Specify the Azure SQL database** page, enter the following values to set up the source database, and then select **Next**.
 
     - _Connection name_: Enter a name for the Azure SQL Database connection, or use the default name.
     - _Server / database selection method_: Select **From Azure subscriptions**.
@@ -80,29 +80,29 @@ On the data factory configuration page, you'll provide details for the source an
 
 ## Select the destination
 
-On the **Destination** tab, you'll provide details about the SQL Data Warehouse instance.
+On the **Destination** tab, you'll provide details about the Azure Synapse Analytics instance.
 
-1. Enter the following values and then select **Next**.
+1. Enter the following values, and then select **Next**.
 
-    - _Connection name_: Enter a name for the connection to SQL Data Warehouse, or use the default name.
+    - _Connection name_: Enter a name for the connection to Azure Synapse Analytics, or use the default name.
     - _Server / database selection method_: Select **From Azure subscriptions**.
     - _Azure subscription_: Select the Azure subscription that you used to create the resources in this module.
     - _Server name_: Select the name of the SQL Server instance that you created earlier in this module.
-    - _Database name_: Select the SQL Data Warehouse instance that you created in earlier in this module.
+    - _Database name_: Select the Azure Synapse Analytics instance that you created in earlier in this module.
     - _User name_: Enter **dwlab**. This is the user name that you entered when you created the SQL Server instance.
     - _Password_: Enter the password that you entered when you created the SQL Server instance.
 
     ![Specify the destination values](../media/sql-dw-load-data-destination.png)
 
-1. On **Table mapping** tab, you'll set the mapping between the source and destination tables. You can map the source table to an existing destination table, or you can create a new destination table. For this exercise, we'll create a new destination table and load data into it. *Keep the default mapping* as shown in the following image. Click **Next** to continue.
+1. On **Table mapping** tab, you'll set the mapping between the source and destination tables. You can map the source table to an existing destination table, or you can create a new destination table. For this exercise, we'll create a new destination table, and load data into it. *Keep the default mapping* as shown in the following image. Select **Next** to continue.
 
-    The table `[dbo].[AnalyzeCampaigns]` will be created in the new SQL data warehouse.
+    The table `[dbo].[AnalyzeCampaigns]` will be created in the new Azure Synapse Analytics.
 
     ![Leave the default mapping](../media/sql-dw-load-data-destination-mapping.png)
 
 1. On the **Schema mapping** tab, you'll set the mapping between the source and destination columns.
 
-    Because we're creating new a destination table in SQL Data Warehouse, the destination table will be created with the source schema.
+    Because we're creating new a destination table in Azure Synapse Analytics, the destination table will be created with the source schema.
 
     You can specify whether a column in the source table is included in the destination table by selecting the box under **Include this column**. Make sure all columns are selected, and then select **Next**.
 
@@ -156,19 +156,19 @@ The **Deployment** tab provides the status of various deployment activities. You
 
 We can verify the copy activity by checking whether the table was created in SQL Data Warehouse.
 
-1. Access SQL Data Warehouse in Azure Data Studio.
+1. Access Azure Synapse Analytics in Azure Data Studio.
 
-1. Expand the SQL Data Warehouse node under **Servers** to connect, and then expand the **Tables** node. You'll see the new **dbo.AnalyzeCampaigns** table.
+1. Expand the Azure Synapse Analytics node under **Servers** to connect, and then expand the **Tables** node. You'll see the new **dbo.AnalyzeCampaigns** table.
 
-1. Right-click the **dbo.AnalyzeCampaigns** table and click **Select Top 1000**.
+1. Right-click the **dbo.AnalyzeCampaigns** table, and select **Select Top 1000**.
 
-    ![Right-click the new table and click Select Top 1000](../media/sql-dw-load-data-verify.png)
+    ![Right-click the new table, and select Select Top 1000](../media/sql-dw-load-data-verify.png)
 
 1. The new query window will automatically execute the SELECT statement. You should see results from the new table.
 
     ![Query results](../media/sql-dw-load-data-verify-results.png)
 
-      Alternatively, you can run this query in a new query window:
+      Alternatively, you can run this query in a new query window.
 
     ```sql
        SELECT * FROM [dbo].[AnalyzeCampaigns]
