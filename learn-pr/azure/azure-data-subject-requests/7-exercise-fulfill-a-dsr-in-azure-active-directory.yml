@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-data-subject-requests.7-exercise-fulfill-a-dsr-in-azure-active-directory
-title:  Exercise-Fulfill a DSR in Azure Active Directory
+title: Exercise-Fulfill a DSR in Azure Active Directory
 metadata:
-  title:  Exercise: Fulfill a DSR in Azure Active Directory
+  title: Exercise-Fulfill a DSR in Azure Active Directory
   description:  Fulfill a DSR in Azure Active Directory.
   ms.date: 11/13/2020
   author: micrum
