@@ -89,10 +89,10 @@ $$
 
 After this, the target register and the flag qubit can be uncomputed (handled by Q# `apply`/`within` statements) and de-allocated, having both served their purpose. 
 
-The following code defines the operation `isbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
+The following code defines the operation `IsbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
 
 ```qsharp
-    operation isbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+    operation IsbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
@@ -117,7 +117,7 @@ Note that upon allocation, `targetReg` will be in the state $\ket{0}$. Therefore
 
 We just described how the oracle is implemented using the `ComputeIsbnCheck` operation, which performs the mapping
 $$
-\ket{x}\ket{0}_{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}_{\text{target}}.
+\ket{x}\ket{0}\_{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\_{\text{target}}.
 $$
 So, what exactly does that operation consist of?
 As mentioned above, we can straightforwardly bring the target register from $\ket{0}$ to the number state $\ket{9}$ using `ApplyXorInPlace`. 
