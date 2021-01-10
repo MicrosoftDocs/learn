@@ -13,7 +13,7 @@ After completing this module, you’ll be able to:
 - Describe DSRs.
 - Identify DSR processes and terminology for Microsoft products and services.
 - Describe the response process to a DSR.
-- List the DSR admin tools used to execute a DSR.
+- List the DSR admin tools used to fulfill a DSR.
 
 ## Prerequisites
 
