@@ -12,7 +12,7 @@ The first step for all scenarios is to perform discovery and locate the personal
 |Right to be forgotten|Discover|Delete|
 |Right of portability|Discover|Export/Receive|
 
-Some DSRs might be more complex than others. There might even be multiple requests from the same person. Data controllers have the right to validate the identity of the data subject prior to executing their DSR. However, the data subject does not have to specify the reason for the DSR.
+Some DSRs might be more complex than others. There might even be multiple requests from the same person. Data controllers have the right to validate the identity of the data subject prior to fulfilling their DSR. However, the data subject does not have to specify the reason for the DSR.
 
 ### Example one: DSR against customer data in Azure
 
