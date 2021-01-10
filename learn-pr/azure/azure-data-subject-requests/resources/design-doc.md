@@ -49,9 +49,9 @@ Learn about Data Subject Requests (DSRs) and how to complete a DSR using Microso
 
 **(Not applicable for conceptual-only “Introduction to” modules)** 
 
-- Exercise title: Execute a DSR in Azure AD
+- Exercise title: Fulfill a DSR in Azure AD
 
-- Description of what students would do in the exercise: Use the Azure portal to access Azure AD and execute a DSR against customer data.
+- Description of what students would do in the exercise: Use the Azure portal to access Azure AD and fulfill a DSR against customer data.
 
 - Feasibility questions or concerns? Can a script be used to populate data in a student's account that the DSR can be performed against?
 
@@ -60,7 +60,7 @@ Learn about Data Subject Requests (DSRs) and how to complete a DSR using Microso
 - Describe DSRs.
 - Identify DSR processes and terminology for Microsoft products and services.
 - Describe the response process to a DSR.
-- List the DSR admin tools used to execute a DSR.
+- List the DSR admin tools used to fulfill a DSR.
 
 # Estimate module duration
 
@@ -84,7 +84,7 @@ In this section provide a summary list of the units for the module.
 
 6. How to respond to DSR for system-generated logs
 
-7. Exercise: Execute a DSR in Azure Active Directory
+7. Exercise: Fulfill a DSR in Azure Active Directory
 
 8. Knowledge check
 
@@ -171,7 +171,7 @@ Introduce the following topics:
 Introduce the following topics:
 
 - Scenarios for DSR in Azure and Office 365 for customer data
-<!--List the DSR admin tools used to execute a DSR-->
+<!--List the DSR admin tools used to fulfill a DSR-->
 - Tools used for DSR for customer data
 
 ### Unit 6: How to respond to DSR for system-generated logs
@@ -188,11 +188,11 @@ Introduce the following topics:
 
 - Scenarios for DSR in Azure and Office 365 for system-generated logs
 
-<!--List the DSR admin tools used to execute a DSR-->
+<!--List the DSR admin tools used to fulfill a DSR-->
 
 - Tools used for DSR for system-generated logs
 
-### Unit 7: Exercise&#8212;Execute a DSR in Azure Active Directory
+### Unit 7: Exercise&#8212;Fulfill a DSR in Azure Active Directory
 <!--LM: You can use Azure AD after the full term was spelled out on first mention.-->
 **Type of unit:** Exercise unit
 
@@ -214,7 +214,7 @@ List the main steps of the exercise which apply the learning content from previo
 
 2. Use Azure portal to connect to Azure AD.
 
-3. Execute DSR.
+3. Fulfill DSR.
 
 ### Unit 8: Knowledge check
 
