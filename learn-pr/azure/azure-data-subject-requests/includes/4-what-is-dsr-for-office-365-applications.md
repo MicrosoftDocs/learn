@@ -14,11 +14,11 @@ National clouds are isolated from the Office 365 cloud and might have notable di
 
 ### Hybrid deployments
 
-Many organizations choose to manage their user identities in on-premises deployments of Active Directory. Hybrid deployments combine cloud-based services and on-premises server products. In a hybrid deployment, an organization can share accounts and resources. For example, a user can sign in with their on-premises user account and access their mailbox in the cloud. Some of the most common hybrid deployments include<!--Richard, please review edits below. Also, the third bullet, identity management doesn’t match the list type - could you reword to match the “hybrid deployment type” list?-->:
+Many organizations choose to manage their user identities in on-premises deployments of Active Directory. Hybrid deployments combine cloud-based services and on-premises server products. In a hybrid deployment, an organization can share accounts and resources. For example, a user can sign in with their on-premises user account and access their mailbox in the cloud. Some of the most common hybrid deployments include:
 
 - Microsoft Exchange hybrid deployments. Mailboxes exist both on-premises and in the cloud for an organization.
 - Microsoft SharePoint hybrid deployments. An organization uses on-premises SharePoint servers, on-premises files servers, Skype for Business Online, and  Microsoft OneDrive for Business accounts.
-- Hybrid Identity management. Identities are manged on-premises with Active Directory and the accounts are synchronized with Azure AD by using Azure AD Connect. This also facilitates single sign on scenarios for hybrid deployments.
+- Hybrid identity management. Identities are managed on-premises with Active Directory and the accounts are synchronized with Azure AD by using Azure AD Connect. This also facilitates single sign-on scenarios for hybrid deployments.
 
 In a hybrid deployment, the scope will vary based on the data that is responsive to a specific data subject's DSR. It’ll be up to the controller to determine if the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. Refer to the summary unit for more information. 
 
@@ -110,26 +110,23 @@ GDPR might require an organization to provide system-generated logs when they co
 The fulfillment of a DSR for system-generated logs can include the following steps:
 
 1. Accessing and exporting
-2. Notifying about DSR execution issues
+2. Notifying about DSR fulfillment issues
 3. Deleting
 
 #### National clouds
 
-National clouds are isolated from other clouds by design. Administrators need to follow the guidance from the cloud that contains the responsive data for the DSR they receive. In the case of the request for system-generated logs the following will need to be performed:
+National clouds are isolated from other clouds by design. Administrators need to follow the guidance from the cloud that contains the responsive data for the DSR they receive. In the case of the request for system-generated logs, you need to perform the following steps:
 
 - Office 365 Germany: Perform the same steps as Microsoft 365/Office 365:
 	1. Accessing and exporting
-	2. Notifying about DSR execution issues
+	2. Notifying about DSR fulfillment issues
 	3. Deleting 
 - Office 365 US Government: Go to the Microsoft 365 admin center and submit a request to Microsoft Support.
 - Office 365 operated by 21Vianet (China): Go to the Microsoft 365 admin center operated by the 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.
 
 ### Part four: Additional resources for DSRs
 
-<!--Richard, this table is a bit unclear. Are the “Resources” a mix of URLs and generic information? Could we make this less specific and provide a generic paragraph instead? -->
-<!--Lakshmy, I had URLs here but removed them based on TR comments. I included these URLs in the summary unit. I removed the table and I have revised for clarity.-->
-
-The follwoing scenarios require specific technical steps to fulfull a DSR. 
+The following scenarios require specific technical steps to fulfill a DSR. 
 - Microsoft Support
 - Microsoft is the data controller
 - Personal accounts
@@ -139,4 +136,5 @@ The follwoing scenarios require specific technical steps to fulfull a DSR.
 - Intune
 - Visual Studio
 
-Microsoft has povides additional guidance on how to fulfull DSR when one or more of these products or services were used by a data subject. Links to the specific guidance for each of these procducts and servcies can be found in the Summary unit for this module.
+> [!NOTE]
+> Microsoft provides additional guidance on how to fulfill DSRs when a data subject uses one or more of these products or services. You can find links to the specific guidance for each of these products and services in the Summary unit for this module.
