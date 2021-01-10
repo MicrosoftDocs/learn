@@ -1,4 +1,4 @@
-Regulations provide rights to people (data subjects and consumers) to manage their personal data that organizations or employers (data controllers or controllers) have collected from them. In the EU, the GDPR provides these rights. In the United States of America, the CCPA provides these rights to Californian consumers. The following table lists some of the differences between the GDPR and the CCPA.
+Regulations provide rights to people (data subjects and consumers) to manage their personal data that organizations or employers (data controllers or controllers) have collected from them. In the EU, the GDPR provides these rights. In the United States of America, the CCPA provides these rights to Californian consumers. The following table describes some of the differences between the GDPR and the CCPA.
 
 |GDPR|CCPA|
 |----|----|
@@ -46,9 +46,6 @@ You can use Microsoft products and service and administrative tools to respond t
 
 The following list defines terms that are relevant to DSR:
 
- <!--Richard, this next sentence doesn’t read properly. The “, the controller, or the specific criteria” bit is confusing. Is there a typo?-->
- <!--Laskshmy, This terminology list was taken from Damir's Module 1, Unit 5 in this course so that we are consistent in our terminology. I just made a copy of the CE version of Module 1 and placed in here but I don't think the wording is any different.-->
- 
 - Controller. The natural or legal person, public authority, agency, or other body, which, alone or jointly with others, determines the purposes and means of the processing of personal data. The purposes and means of such processing are determined by Union or Member State law, the controller, or the specific criteria for its nomination might be provided by Union or Member State law.
 
 -	Personal data and data subject. Any information relating to an identified or identifiable natural person, or data subject. An identifiable natural person is one who can be identified, directly or indirectly, by referring to:
@@ -61,8 +58,8 @@ The following list defines terms that are relevant to DSR:
 
 - Customer data. All data, including text, sound, video, image files, or software that's provided by, or on behalf of, a customer through use of the enterprise service. Customer data includes:
 
-  - Identifiable information of end users; for example, usernames and contact information in Azure Active Directory (Azure AD).
+  - Identifiable information of end users; for example, usernames and contact information in Azure AD.
 
   - Customer content that a customer uploads to or creates in specific services. Examples include customer content in an Azure Storage account, customer content of an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
   
-- System-Generated Logs. Microsoft or other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers. This is typically a number that the system generates that cannot, on its own, identify an individual person, but is used to deliver the enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.
+- System-generated logs. Microsoft or other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers. This is typically a number that the system generates that cannot, on its own, identify an individual person, but is used to deliver the enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.
