@@ -4,7 +4,7 @@ Many Microsoft enterprise customers will be required to respond to DSRs under GD
 
 The following image depicts three scenarios where a Microsoft customer receives a DSR.
 
-:::image type="content" source="../media/4-dsr-scope.png" alt-text="Three scenarios depicting the scope of Microsoft DSR fulfillment. 1. An enterprise customer receives a DSR. 2. A Microsoft service account with an Azure Active Directory tenant receives a DSR. 3. A Microsoft service account outside an Azure Active Directory tenant receives a DSR." border="false":::
+:::image type="content" source="../media/4-dsr-scope.png" alt-text="Three scenarios depicting the scope of Microsoft DSR fulfillment. 1. An enterprise customer receives a DSR. 2. A Microsoft service account with an Azure AD tenant receives a DSR. 3. A Microsoft service account outside an Azure AD tenant receives a DSR." border="false":::
 
 ### Scenario 1
 
@@ -19,7 +19,7 @@ If a Microsoft service account receives a DSR and that Microsoft service account
 If a Microsoft service account receives a DSR and the account is outside of an Azure AD tenant, then the DSR fulfillment will occur in the consumer privacy portal. 
 
 > [!NOTE]
-> It is possible that a user submitting a DSR participates in multiple tenants. If this happens, the DSR is only fulfilled in the tenant that received the DSR.
+> It's possible that a user submitting a DSR participates in multiple tenants. If this happens, the DSR is only fulfilled in the tenant that received the DSR.
 
 ## DSR response processes for Azure
 
