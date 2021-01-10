@@ -37,12 +37,12 @@ You are the administrator for Contoso, Ltd. You’ve ve been asked to evaluate t
 |Preferred feedback method|In writing to address|
 
 2. Identify which of the following steps you’ll use in the DSR process, and then fulfill the DSR:
-    * Discover
-    * Access
-    * Rectify
-    * Restrict
-    * Delete
-    * Export / Receive
+    - Discover
+    - Access
+    - Rectify
+    - Restrict
+    - Delete
+    - Export / Receive
 
 > [!NOTE]
 > The first step you’ll use is Discover and the next step is Delete.
