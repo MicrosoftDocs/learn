@@ -6,7 +6,7 @@ HPC Storage Considerations
 
 - Solution Architect
 - Developer
-- Student
+- Students
 
 ## Level
 
