@@ -38,7 +38,7 @@ units:
 - learn.azure-data-subject-requests.4-what-is-dsr-for-office-365-applications
 - learn.azure-data-subject-requests.5-how-to-respond-to-dsr-for-customer-data
 - learn.azure-data-subject-requests.6-how-to-respond-to-dsr-for-system-generated-logs
-- learn.azure-data-subject-requests.7-exercise-execute-a-dsr-in-azure-active-directory
+- learn.azure-data-subject-requests.7-exercise-fulfill-a-dsr-in-azure-active-directory
 - learn.azure-data-subject-requests.8-knowledge-check
 - learn.azure-data-subject-requests.9-summary
 badge:
