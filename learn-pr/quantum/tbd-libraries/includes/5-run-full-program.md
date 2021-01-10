@@ -19,7 +19,7 @@ In that case, the creation of the superposition is straightforwardly handled by 
 However, since we are only interested in the number states $0 - 9$, we have no use for the remaining states $10-15$ which our 4 qubits can represent.
 Therefore, we will only utilize and reflect about the uniform superposition $\sum_{i=0}^9 \ket{i}$.
 
-To prepare this on qubit register `digitReg`, we define the operation `PrepareUnifromSuperpositionOverDigits` as
+To prepare this state on qubit register `digitReg`, we define the operation `PrepareUnifromSuperpositionOverDigits` as
 
 ```qsharp
     operation PrepareUniformSuperpositionOverDigits(digitReg : Qubit[]) : Unit is Adj + Ctl {

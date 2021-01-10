@@ -70,21 +70,21 @@ Supposing we have in hand the search register `digitReg` and a `flagQubit` initi
 
 Well, we can add a secondary target register initialized to $\ket{9}$, leaving the full state of the form
 $$
-\ket{x}\ket{9}_{\text{target}}\ket{-},
+\ket{x}\ket{9}\_{\text{target}}\ket{-},
 $$
 and then apply the mapping, yielding
 $$
-\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}_{\text{target}}\ket{-}.
+\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\_{\text{target}}\ket{-}.
 $$
 
 Finally, we can apply a controlled `X` operation on the $\ket{-}$ flag qubit, controlled by the target register being in the $\ket{0}$ number state (for four qubits this is represented as $\ket{0000}$).
 Thus the state of `digitReg` which satisfies the equation acquires the phase factor as
 $$
--1*\ket{x_{good}} \ket{0}_{\text{target}} \ket{-}
+-1*\ket{x\_{good}} \ket{0}\_{\text{target}} \ket{-}
 $$
 and the non-solution states do not:
 $$
-\ket{x_{bad}} \ket{\neq 0}_{\text{target}} \ket{-}.
+\ket{x\_{bad}} \ket{\neq 0}\_{\text{target}} \ket{-}.
 $$
 
 After this, the target register and the flag qubit can be uncomputed (handled by Q# `apply`/`within` statements) and de-allocated, having both served their purpose. 
@@ -117,7 +117,7 @@ Note that upon allocation, `targetReg` will be in the state $\ket{0}$. Therefore
 
 We just described how the oracle is implemented using the `ComputeIsbnCheck` operation, which performs the mapping
 $$
-\ket{x}\ket{0}_{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
+\ket{x}\ket{0}_{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}_{\text{target}}.
 $$
 So, what exactly does that operation consist of?
 As mentioned above, we can straightforwardly bring the target register from $\ket{0}$ to the number state $\ket{9}$ using `ApplyXorInPlace`. 
