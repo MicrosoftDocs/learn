@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.hpc-storage-considerations
+metadata:
+  title: HPC Storage Considerations
+  description: Understand factors that influence HPC storage selection in Azure
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand factors that influence HPC storage selection in Azure
+summary: Understand factors that influence HPC storage selection in Azure
+abstract: |
+  In this module, you will:
+    - Identify selection criteria for your HPC file system solution
+    - Understand HPC storage options available in Azure today
+prerequisites: None
+iconUrl: /learn/achievements/hpc-storage-considerations.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-storage
+units:
+- learn.hpc-storage-considerations.1-introduction
+- learn.hpc-storage-considerations.2-file-access
+- learn.hpc-storage-considerations.3-performance-considerations
+- learn.hpc-storage-considerations.4-scale-considerations
+- learn.hpc-storage-considerations.5-authentication-and-authorization-considerations
+- learn.hpc-storage-considerations.6-hybrid-file-access-requirements
+- learn.hpc-storage-considerations.7-consolidating-your-requirements
+- learn.hpc-storage-considerations.8-next-steps-knowledge-check
+badge:
+  uid: learn.hpc-storage-considerations.badge

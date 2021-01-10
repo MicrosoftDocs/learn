@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.5-authentication-and-authorization-considerations
+title: File system authentication and authorization considerations
+metadata:
+  title: File system authentication and authorization considerations
+  description: File system authentication and authorization considerations
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-authentication-and-authorization-considerations.md)]
