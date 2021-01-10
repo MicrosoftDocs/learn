@@ -45,7 +45,7 @@ quiz:
     choices:
     - content: "DSR fulfillment is performed in every tenant in the Microsoft cloud that the data subject's personal information resides in."
       isCorrect: false
-      explanation: "That's incorrect. DSR fulfillment is only perfomed by the enterprise customer (tenant) that receives the request and does not have affect any other tenants."
+      explanation: "That's incorrect. DSR fulfillment is only performed by the enterprise customer (tenant) that receives the request and doesn't affect any other tenants."
     - content: "A user that subscribed to Azure outside of an enterprise customer tenant should use the data privacy dashboard to submit their DSR."
       isCorrect: true
       explanation: "That's correct. A user that uses their own managed service account outside of an enterprise customer tenant will need to contact Microsoft directly with their DSR."
@@ -69,10 +69,10 @@ quiz:
     choices:
     - content: "A part-time employee uses their account to access OneDrive for Business."
       isCorrect: false
-      explanation: "That's incorrect. Whether a user is a part-time or fulltime employee, when they sign in with their their employeer's Azure AD tenant. the employer will be the data controller."
+      explanation: "That's incorrect. Whether a user is a part-time or full-time employee, when they sign in with their employer's Azure AD tenant. the employer will be the data controller."
     - content: "A customer sends an email to their financial institution, which is a Microsoft enterprise customer, regarding their loan."
       isCorrect: false
-      explanation: "That's incorrect. The email recieved from the customer containing personal information is stored in the enterprise customer's Exchange Online mailboxes."
+      explanation: "That's incorrect. The email received from the customer containing personal information is stored in the enterprise customer's Exchange Online mailboxes."
     - content: "A developer in an organization creates a free Azure account to experiment with Azure DevOps."
       isCorrect: true
       explanation: "That's correct. When an individual purchases services from Microsoft outside of their organization, they'll need to initiate a DSR directly with Microsoft, and not their employer."
