@@ -25,6 +25,7 @@ A customer of Contoso that resides in Spain has submitted a DSR form on the corp
     - Select **All services** and then select **Policy**
     - In the **Policy blade**, choose **User privacy**, choose **Manage User Requests**, and then select **Add export request**
     - On the **New export data request** form, provide the following details, and then select **Create**:
+    
       - User
       - Subscription
       - Storage account
@@ -37,7 +38,7 @@ A customer of Contoso that resides in Spain has submitted a DSR form on the corp
 
 ### Example two: DSR for system-generated logs in Office 365 and Microsoft 365
 
-A customer of Contoso that resides in the Netherlands has submitted a DSR form on the corporate website to delete their personal data stored in system-generated logs. To execute the DSR, you’ll perform the following tasks:
+A customer of Contoso that resides in the Netherlands has submitted a DSR form on the corporate website to delete their personal data stored in system-generated logs. To fulfill the DSR, you’ll perform the following tasks:
 
 1. Sign into the Azure portal.
 2. Navigate to Azure AD and select **Users**.
@@ -59,13 +60,13 @@ In the event that Contoso were to have a global presence in one or more national
 
 |National Cloud|Export Steps|
 |---|---|
-|Office 365 Germany|	1. Accessing and exporting, 2. Notifying about DSR execution issues, and 3. Deleting |
+|Office 365 Germany|Follow the same steps described previously, which are accessing and exporting, notifying about DSR fulfillment issues, and deleting. |
 |Office 365 US Government|Go to the Microsoft 365 admin center and submit a request to Microsoft Support|
 |Office 365 operated by 21Vianet (China)|Go to the Microsoft 365 admin center operated by 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.|
 
 ## Tools used for DSR for system-generated logs
 
-The following table lists tools that you can use for executing DSRs for system-generated logs in the Microsoft Cloud.
+The following table lists tools that you can use for fulfilling DSRs for system-generated logs in the Microsoft Cloud.
 
 |Tool Name|Description|
 |------|------|
