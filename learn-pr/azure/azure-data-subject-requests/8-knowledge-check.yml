@@ -20,59 +20,59 @@ quiz:
     choices:
     - content: "General Data Protection Regulation (GDPR) only"
       isCorrect: false
-      explanation: "That is incorrect. The GDPR provides the right to erasure also known as the right to be forgotten but so does CCPA"
+      explanation: "That's incorrect. The GDPR provides the right to erasure, which is also known as the right to be forgotten, but so does the CCPA. "
     - content: "California Consumer Privacy Act (CCPA) only"
       isCorrect: false
-      explanation: "That's incorrect. The CCPA provides the right to be forgotten but so does GDPR"
-    - content: "General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA)"
+      explanation: "That's incorrect. The CCPA provides the right to be forgotten, but so does the GDPR."
+    - content: "GDPR and CCPA"
       isCorrect: true
-      explanation: "That's is correct. Both GDPR and CCPA provide right to be forgotten"
+      explanation: "That's correct. Both GDPR and CCPA provide the right to be forgotten."
   
   - content: "Which of the following are supported DSRs for system-generated logs?"
     choices:
     - content: "Access"
       isCorrect: true
-      explanation: "That's correct. This is a supported DSR for system-generated logs"
+      explanation: "That's correct. Access is a supported DSR for system-generated logs."
     - content: "Rectify"
       isCorrect: false
-      explanation: "That's incorrect. This is not a supported DSR for system-generated logs"
+      explanation: "That's incorrect. Rectify isn't a supported DSR for system-generated logs."
     - content: "Restrict"
       isCorrect: false
-      explanation: "That's incorrect. This is not a supported DSR for system-generated logs"
+      explanation: "That's incorrect. Restrict isn't a supported DSR for system-generated logs."
 
 
-  - content: "Which of the following statements is accurate regarding the scope of DSR execution for a Microsoft enterprise customer?"
+  - content: "Which of the following statements is accurate regarding the scope of DSR fulfillment for a Microsoft enterprise customer?"
     choices:
-    - content: "DSR execution is performed in every tenant in the Microsoft cloud that the data subject's personal information resides in"
+    - content: "DSR fulfillment is performed in every tenant in the Microsoft cloud that the data subject's personal information resides in."
       isCorrect: false
-      explanation: "That's incorrect. DSR execution is only perfomed by the enterprise customer (tenant) that receives the request and does not have not affect on any other tenants"
-    - content: "A user that subscribed to Azure outside of enterprise customer should use the data privacy dashboard to submit their DSR"
+      explanation: "That's incorrect. DSR fulfillment is only perfomed by the enterprise customer (tenant) that receives the request and does not have affect any other tenants."
+    - content: "A user that subscribed to Azure outside of an enterprise customer tenant should use the data privacy dashboard to submit their DSR."
       isCorrect: true
-      explanation: "That's correct. A user that uses their own MSA outside of an enterpirse customer tenant will need to contact Microsoft directly with their DSR."
-    - content: "A data subject's customer data can only reside in a single Azure Active Directory tenant"
+      explanation: "That's correct. A user that uses their own managed service account outside of an enterprise customer tenant will need to contact Microsoft directly with their DSR."
+    - content: "A data subject's customer data can only reside in a single Azure AD tenant."
       isCorrect: false
-      explanation: "That's incorrect. The data subject may participate in multiple Azure Active Diretory tenants."
+      explanation: "That's incorrect. The data subject may participate in multiple Azure AD tenants."
 
-  - content: "Based on Microsoft's estimation, 90% of an organization data is stored where in the Microsoft Cloud?"
+  - content: "Based on Microsoft's estimation,  where in the Microsoft Cloud is 90 percent of an organization data stored?"
     choices:
-    - content: "Access Databases"
+    - content: "Access databases"
       isCorrect: false
-      explanation: "That's incorrect. Office documents like Word, Excel, PowerPoint, and OneNote are not likely stored here."
-    - content: "Dynamics365"
+      explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents are likely to be stored in an Access database."
+    - content: "Dynamics 365"
       isCorrect: false
-      explanation: "That's incorrect. Office documents like Word, Excel, PowerPoint, and OneNote are not likely stored here."
+      explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents are not likely to be stored in Dynamics 365."
     - content: "Exchange Online"
       isCorrect: true
-      explanation: "That's correct. Office documents like Word, Excel, PowerPoint, OneNote, documents and Outlook messages are likely stored here."
+      explanation: "That's correct. Office documents such as Word, Excel, PowerPoint, OneNote, documents and Outlook messages are likely stored in Exchange Online."
 
   - content: "In which of the following scenarios would Microsoft be considered the data controller and not the data processor?"
     choices:
     - content: "A part-time employee uses their account to access OneDrive for Business."
       isCorrect: false
-      explanation: "That's incorrect. Weither a user a part-time or fulltime, when a user signs in with their their employeer's Azure Active Directory tenant will be the data controller."
-    - content: "A customer sends an email to their financial institution, which is a Microsoft enterprise customer, regarding their loan"
+      explanation: "That's incorrect. Whether a user is a part-time or fulltime employee, when they sign in with their their employeer's Azure AD tenant. the employer will be the data controller."
+    - content: "A customer sends an email to their financial institution, which is a Microsoft enterprise customer, regarding their loan."
       isCorrect: false
-      explanation: "That's incorrect. The email recieved from the customer containing personal information is stored in the enterprise customers Exchange Online mailboxes"
-    - content: "A developer in an organization creates a free azure account to experiment with Azure DevOps."
+      explanation: "That's incorrect. The email recieved from the customer containing personal information is stored in the enterprise customer's Exchange Online mailboxes."
+    - content: "A developer in an organization creates a free Azure account to experiment with Azure DevOps."
       isCorrect: true
-      explanation: "That's correct. When an individual purchases services from Microsoft outside of their organization will need to initiate a DSR directly to Microsoft and not their employer"
+      explanation: "That's correct. When an individual purchases services from Microsoft outside of their organization, they'll need to initiate a DSR directly with Microsoft, and not their employer."
