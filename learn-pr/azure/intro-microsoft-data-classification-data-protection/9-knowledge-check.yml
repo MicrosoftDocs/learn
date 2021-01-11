@@ -53,7 +53,7 @@ questions:
       isCorrect: false
       explanation: "That's not correct. Azure Information Protection scanner can work on local file servers and discover files that contain sensitive information types."
 
-   - content: "You need to discover applications in your local network that work with cloud services and are not under control of your IT department. What solution should you choose?"
+   - content: "You need to discover applications in your local network that work with cloud services and are not under the control of your IT department. What solution should you choose?"
     choices:
     - content: "Azure Information Protection"
       isCorrect: false
