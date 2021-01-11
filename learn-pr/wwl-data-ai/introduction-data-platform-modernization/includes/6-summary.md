@@ -6,5 +6,5 @@ Databases are business-critical and complex systems. Unless you execute your mod
 
 ## Learn more
 
-- [Data Platform Modernization & Mission Critical Applications](https://www.microsoft.com/sites/partner-hub/data-platform-modernization.aspx)
+- [Five Steps to Modernizing Your Data](https://azure.microsoft.com/resources/five-steps-to-modernizing-your-data/)
 - [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator/)
