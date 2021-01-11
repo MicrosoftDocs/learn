@@ -37,14 +37,13 @@ quiz:
     - content: Plain Text Passwords
       isCorrect: false
       explanation: "A Password is an insecure mechanism."
-  - content: "Which of the following options isn't a valid GitHub Action Type?"
+  - content: "Which of the following options are benefits of Automating infrastructure?"
     choices:
-    - content: "JavaScript"
+    - content: "Lowers the potential for human errors while deploying and managing infrastructure."
       isCorrect: false
-      explanation: "JavaScript actions can run directly on a runner machine, and separate the action code from the environment used to run the code."
-    - content: "Container"
+    - content: "Deploys the same template multiple times to create identical development, test, and production environments."
       isCorrect: false
-      explanation: "Docker containers package the environment with the GitHub Actions code."
-    - content: "Kubernetes"
+    - content: "Reduces the cost of development and test environments by creating them on-demand."
+      isCorrect: false
+    - content: All of the Above
       isCorrect: true
-      explanation: "This action isn't a valid GitHub Action Type."
