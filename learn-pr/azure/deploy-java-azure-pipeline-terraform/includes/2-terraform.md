@@ -35,9 +35,6 @@ You create configuration files using HCL (HashiCorp Configuration Language) synt
 HCL is declarative, describing an intended goal rather than the steps to reach that goal.
 The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure.
 
-> [!IMPORTANT]
-> More information on the HCL language syntax is provided at the end of the Module in the Summary unit
-
 ### Modules
 
 The main purpose of the Terraform language is declaring resources. A group of resources can be grouped into a module, which creates a larger unit of configuration.

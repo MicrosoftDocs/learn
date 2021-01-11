@@ -151,7 +151,7 @@ variable "location" {
 ```
 
 > [!IMPORTANT]
-> Make sure the name of your resource group and application name are unique.
+> Make sure the name of your application name is unique.
 
 ## Set Up up your workflow
 
@@ -316,6 +316,10 @@ Each time you `git push` your code, your TerraForm provisioned resources are cre
 > [!IMPORTANT]
 > Re-running your provision GitHub action will not recreate your resources if they already exist. You will need to delete your resource group or resources manually and then re-run the GitHub action.
 > Re-running your build/deploy GitHub action will replace your application.
-> If you delete your provisioning GitHub action or your resources you will need to also re-create your build/deploy GitHub action as this action is linked to an Azure App Service publishing profile.
+> If you re-create your App Service Instance you will need to also change to the new publishing profile  - the following is the only line that needs to be changed:
+
+```yml
+publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
+```
 
 In the next unit, we'll summarize what we learnt about Terraform.
