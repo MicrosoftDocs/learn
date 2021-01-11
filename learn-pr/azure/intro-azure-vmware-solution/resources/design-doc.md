@@ -32,19 +32,10 @@ By the end of this module, the learner will be able to:
 ### Product(s)
 
 - Azure VMware Solution
-- Azure ExpressRoute
-- Azure Hybrid Benefit
 
 ## Create context for your module with a real-world scenario
 
-Imagine you work for a healthcare company who runs much of their production workloads on a VMware platform. IT operations are spread between a number of different offices and there are a few trends that have surfaced in recent months. A number of different offices have equipment nearing end of life, so hardware refresh decisions need to be made in short order. Additionally, your company is not able to procure new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in involves migrating VMware workloads to the cloud without changing virtualization platforms or altering existing operational patterns.
-
-
-1. **Introduction**
-
-Azure VMware Solution lets you migrate entire VMware clusters intact to Azure, and take advantage of the depth and breadth of Azure without requiring a wholesale change of operational processes.
-
-Imagine you work for a healthcare company. IT operations are spread between a number of different offices and there are a few trends that have surfaced in recent months. A number of different offices have equipment nearing end of life, so hardware refresh decisions need to be made in short order. Additionally, your company is not able to procure new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in exploring involves Azure VMware Solution. You've been tasked with determining if this solution is a viable option for both migration and future expansion.
+Imagine you work for a healthcare company who runs much of their production workloads on a VMware platform. IT operations are spread between a number of different offices and there are a few trends that have surfaced in recent months, and some locations have equipment nearing end of life, so hardware refresh decisions need to be made in short order. Additionally, your company is not able to procure new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in exploring involves migrating VMware workloads to the cloud without changing virtualization platforms or altering existing operational patterns.
 
 In this module, you will explore the business value of Azure VMware Solution and learn about the use cases that drive its adoption. You will learn the basic components of the service and the options for inter-datacenter connectivity, and will evaluate the impact of the service on existing licensing using the Azure Hybrid Benefits.  
 
@@ -83,19 +74,21 @@ Outline the content that will enable the learner to achieve the task:
 
     - "Which of the following is a key feature of Azure VMware Service?"
         - "Seamlessly modernize apps over time with Azure services." isCorrect: true
-        - "Most cost-efficient way to run Windows Server and SQL Server." isCorrect: true
+        - "Least cost-efficient way to run Windows Server and SQL Server." isCorrect: false
         - "Fastest way to force a move to Azure-centric operational processes." isCorrect: false
+
     - "What are two core Azure services that are included as part of the Azure VMware Service?"
-        - "Azure Portal" isCorrect: true
+        - "Azure DataBricks" isCorrect: false
         - "Azure Monitor" isCorrect: true
         - "Azure Storage" isCorrect: false
 
 **Knowledge check - How Azure VMware Solution Works**
 
     - "What are two benefits to the migration process using Azure VMware Solution?"
-        - "Minimal downtime is required." isCorrect: true
+        - "Extensive downtime is required." isCorrect: faalse
         - "It eliminates the need and cost of reskilling." isCorrect: true
         - "It encourages the creation of new skills and the learning of new tools." isCorrect: false
+
     - "Which of the AVS Security Building Blocks includes patch management and audit trails?"
         - "Azure Inherited Security" isCorrect: false
         - "VMware Inherited Security" isCorrect: false
@@ -107,9 +100,11 @@ Outline the content that will enable the learner to achieve the task:
         - "10%-20%" isCorrect: false
         - "30%-50%" isCorrect: true
         - "60%-90%" isCorrect: false
+
     - "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
         - "James is responsible for doing it himself." isCorrect: false
         - "Microsoft support is responsible for the ESXi Hosts and Host Patching." isCorrect: true
+        - "VMware support is responsible for the ESXi Hosts and Host Patching." isCorrect: false
 
 **Knowledge check - When to use the Azure VMware Solution**
 
@@ -117,6 +112,7 @@ Outline the content that will enable the learner to achieve the task:
         - "Rehost" isCorrect: true
         - "Refactor" isCorrect: false
         - "Rearchitect" isCorrect: false
+
     - "Emily needs to add Azure Storage Services to her AVS environment. Which of the options available to her includes automatic synchronization and tiering?"
         - "Blob Storage" isCorrect: false
         - "Azure Files" isCorrect: false
