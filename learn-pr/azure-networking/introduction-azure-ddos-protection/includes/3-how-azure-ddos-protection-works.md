@@ -45,4 +45,4 @@ Testing and validating are crucial to understand how a system will perform durin
 - Help train your security personnel.
 
 > [!NOTE] 
-> You can find more information on this service in **Future Learning Links** at the end of this course.
+> You can find more information on this service by reviewing the reference links in the summary unit.
