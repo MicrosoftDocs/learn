@@ -29,7 +29,6 @@ We'll assume an AKS cluster is already created and running. To create your AKS c
 
 ```azurecli-interactive
 RESOURCE_GROUP=learn-ship-manager
-echo $RESOURCE_GROUP
 az group create -n $RESOURCE_GROUP -l eastus
 CLUSTER_NAME=ship-manager
 ```
