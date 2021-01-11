@@ -8,7 +8,7 @@ By the end of this module, you'll be able to migrate an on-premises database on 
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you'll be able to:    
 
 - Describe the features and services available in Azure for hosting an open-source database.
 - Explain the key considerations for implementing a migration project.  
