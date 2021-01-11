@@ -1,4 +1,4 @@
-You need to upgrade several CRM databases to SQL Server 2019. These databases include versions from SQL Server 2008R2 through to SQL Server 2016. You've chosen the **Microsoft Data Migration Assistant (DMA)** to help with these upgrades. 
+In your law firm, you need to upgrade several CRM databases used by different teams to SQL Server 2019. These databases include versions from SQL Server 2008R2 through to SQL Server 2016. You've chosen the **Microsoft Data Migration Assistant (DMA)** to help with these upgrades. 
 
 In this exercise, you'll install the Data Migration Assistant.
 

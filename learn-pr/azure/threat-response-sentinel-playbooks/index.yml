@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.threat-response-sentinel-playbooks
+metadata:
+  title: Threat response with Azure Sentinel playbooks
+  description: Provide an introduction to implementing threat response with Azure Sentinel playbooks.
+  ms.date: 12/17/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Threat response with Azure Sentinel playbooks
+summary: This module describes how to create Azure Sentinel playbooks to respond to security threats.
+abstract: |
+  In this module you will:
+  - Explain Azure Sentinel SOAR capabilities.
+  - Explore the Azure Sentinel Logic Apps connector.
+  - Create a playbook to automate an incident response.
+  - Run a playbook on demand in response to an incident.
+prerequisites: |
+  - Automation and monitoring
+  - Azure Monitor and its Log Analytics workspace
+  - Azure Logic Apps
+iconUrl: /learn/achievements/threat-response-sentinel-playbooks.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.threat-response-sentinel-playbooks.1-introduction
+- learn.azure.threat-response-sentinel-playbooks.2-exercise-setup
+- learn.azure.threat-response-sentinel-playbooks.3-playbook-overview
+- learn.azure.threat-response-sentinel-playbooks.4-playbook-trigger
+- learn.azure.threat-response-sentinel-playbooks.5-playbook-on-demand
+- learn.azure.threat-response-sentinel-playbooks.6-exercise-create-playbook
+- learn.azure.threat-response-sentinel-playbooks.7-summary
+badge:
+  uid: learn.azure.threat-response-sentinel-playbooks.badge
+

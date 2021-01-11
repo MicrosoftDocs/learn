@@ -10,9 +10,9 @@ Using the Bot Framework Composer presents some advantages when compared to creat
 
 ## Install the Composer
 
-Before you can begin to work with the Bot Framework Composer, you will need to install the correct desktop application for your operating system. The Composer is available for [Windows](https://aka.ms/bf-composer-download-win), [macOS](https://aka.ms/bf-composer-download-mac), and [Linux](https://aka.ms/bf-composer-download-linux).
+Before you can begin to work with the Bot Framework Composer, you will need to [download](https://docs.microsoft.com/composer/install-composer) the correct desktop application for your operating system..
 
-You will also need to install the [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/releases/latest) and ensure that you have [.NET Core SDK 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) or later installed as well.
+You will also need to install the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md) and ensure that you have [.NET Core SDK 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) or later installed as well.
 
 ## Explore the Bot Framework Composer
 
@@ -26,9 +26,9 @@ After reviewing the product tour, you have some knowledge of the different aspec
 
 ### Home Screen
 
-On the Home screen, you can create a new bot, open an existing bot on your computer, view some tutorial videos, and also examine some example bots created using the Composer. The Home screen can be accessed at any time by selecting **Home** from the left navigation bar. Selecting the three lines, or hamburger menu, will expand or collapse the **Navigation** menu.
+On the Home screen, you can create a new bot, open an existing bot on your computer, view some tutorial videos, and also examine some example bots created using the Composer. The Home screen can be accessed at any time by selecting **Home** from the **&#9776;** menu.
 
-The **Navigation** menu provides options for designing and working on your bot. The **Design** option opens up the visual designer where you will lay out the conversation and navigation flow of your bot. If you have a bot project open, selecting *Navigation** will open the designer for that bot.
+The **&#9776;** menu provides options for designing and working on your bot. The **Design** option opens up the visual designer where you will lay out the conversation and navigation flow of your bot. If you have a bot project open, selecting *Navigation** will open the designer for that bot.
 
 **Bot Responses** is the option where you can view and select the various options that the Composer provides for responding to users.  Here you will find common response types such as single or multi-line text options as well as some language generation options that allow you to integrate variables in the response.
 
@@ -44,51 +44,50 @@ The **Navigation** menu provides options for designing and working on your bot. 
 
 The Application settings portion allows you to configure Composer-specific behaviors. You can select a custom runtime option as well in the **Settings** for the Composer. We will not cover custom runtime configs.
 
-## Create a basic bot with Composer
+## Create a basic bot
 
-1. Ensure that you have installed the prerequisites and the Bot Framework Composer.
+Now you're ready to use Composer to create a bot. Throughout this module, you'll develop a bot that retrieves information about local weather conditions.
+
+### Before you start
+
+1. Ensure you have installed the [Bot Framework Emulator](https://github.com/Microsoft/BotFramework-Emulator/blob/master/README.md) and the [Bot Framework Composer](https://docs.microsoft.com/composer/install-composer).
+2. You will require an API key for the service to work so visit the [OpenWeather site](https://openweathermap.org/price) to create a user account and get a free API key before you start.
+
+### Create a bot and customize the "welcome" dialog flow
+
 1. Start the Bot Framework Composer.
-1. On the **Home** screen, select **New**.
-1. Select the radio button for **Create from scratch**.
-1. Select **Next**.
-1. In the **Define conversation objective** dialog, change the default **Name** to **MyFirstBot**, or a name of your choosing.
-1. Select the **Location** on your computer to store the bot.
-1. Provide a **Description** of the bot.
-1. Select **OK**.
-1. The Composer will generate some framework aspects of your bot and then open the bot in the interface.
+1. On the **Home** screen, select **New**. Then create a new bot from scratch; naming it **WeatherBot** and saving it in a local folder.
 
-    [![New bot with Composer](../media/new-bot.png)](../media/new-bot.png#lightbox)
+    Close the **Welcome** dialog box and leave the tour if prompted.
 
-1. Under **Filter Dialog**, select **Greeting**.
-1. The designer opens in the middle of the Composer interface with some content already populated. This content in the designer, represents the *ConversationUpdate** activity that is called when a user joins a conversation with the bot. The designer shows that the bot will loop for each item (members added), includes a branch segment that will handle recipient IDs, and then a response item.
-1. You can edit the title of **Greeting** by selecting the word **Greeting** in the properties pane on the right and typing in a new value.  Select the **Greeting** text and change it to **WelcomeUsers**.
+1. In the navigation pane on the left, select **Greeting** to open the authoring canvas and show the ConversationUpdate activity that is called when a user initially joins a conversation with the bot. The activity consists of a flow of actions.
+1. In the properties pane on the right, edit the title of **Greeting** by selecting the word **Greeting** at the top of the properties pane on the right and changing it to **WelcomeUsers**.
+1. In the authoring canvas, select the **Send a response** action. Then, in the properties pane, change the default text in the **Language Generation** box from *- ${WelcomeUser()}*  to **- Hi! I'm WeatherBot.** (including the preceding "-" dash).
+1. In the authoring canvas, select the final **+** symbol just above the circle at the end of the dialog flow, and add a new **Ask a question** action for a **Text** response.
 
-    :::image type="content" source="../media/change-greeting.png" alt-text="Editing Greeting text in properties pane":::
+    The new action creates two nodes in the dialog flow. The first node defines a prompt for the bot to ask the user a question, and the second node represents the response that will be received from the user. In the properties pane, these nodes have corresponding **Bot asks** and **User input** tabs.
 
-1. In the designer pane, select the **Send a response** component.
-1. In the **Properties** pane on the right, change the default text *${WelcomeUser()}*  to **Welcome to our basic bot.**
-1. In the **Designer** pane, locate the **+** symbol just above the circle in the bottom of the diagram and select it.
+1. In the properties pane, on the **Bot Asks** tab, set the **Prompt for text** value to **- What's your name?**. Then, on the **User Input** tab, set the **Property** value to **user&period;name** to define a variable that you can access later in the bot conversation.
+1. Back in the authoring canvas, select the **+** symbol under the **User Input(Text)** action you just added, and add a **Send a response** action.
+1. Select the newly added **Send a response** action and in the properties pane, set the **Language generation** value to **- Hello ${user&period;name}, nice to meet you!**.
 
-    :::image type="content" source="../media/plus-symbol.png" alt-text="plus symbol at bottom of designer diagram":::
+    The completed activity flow should look like this:
 
-1. A list of components is displayed.  Select **Ask a question** from the list.
-1. In the designer, select the **Bot Asks (Text)** component.
-1. In the **Properties** pane on the right, enter the text, **Enter your first name** in the **Prompt for text** section.
-1. In the **Properties** pane, select the **User Input** option next to **Bot Asks** and enter **user.name**. The option will set up a variable that you can access later in the bot conversation.
+    ![A dialog flow welcoming a users and asking for their name](../media/welcomeusers.png)
 
-    :::image type="content" source="../media/user-input.png" alt-text="User input option with user.name entered":::
+### Test the bot
 
-1. Back in the **Designer** pane, select the **+** symbol under the **User Input(Text)** component.
-1. Select the **Send a response** option.
-1. In the **Designer** pane, select the newly added **Send a response** component.
-1. In the **Properties** pane, enter the following text, **Hello ${user.name}, nice to meet you**.
-1. Your simple bot is complete so now let's test it.
-1. Select the **Start Bot** button in the upper right-hand corner of Composer.
-1. You will notice **Reloading** indicated next to the button as the bot is compiled and started.
-1. When it completes, a **Test in Emulator** option is available next to the button. 
-1. A Windows Firewall dialog may display. Select both check boxes on the **Windows Firewall** dialog and select **OK**.
-1. In the Bot Framework Composer, select **Test in Emulator**.
-1. Wait for the Bot Emulator to start and watch the log window.  You will notice the URL and port that the bot is listening on.
-1. After a short pause, you will see the welcome message and the prompt to enter your first name.  Enter you first name and press **Enter**.
-1. The bot should respond with the **Hello *firstname*, nice to meet you**.
-1. You have created your first simple bot with the Bot Framework Composer and tested it with the Bot Framework Emulator.
+Your basic bot is complete so now let's test it.
+
+1. Select **Start Bot** in the upper right-hand corner of Composer, and wait a minute or so while your bot is compiled and started. After a few minutes, a **Test in Emulator** option is available next to the button.
+
+    * If a Windows Firewall message is displayed, enable access for all networks.
+
+1. In the Bot Framework Composer, select **Test in Emulator**. Then wait for the Bot Framework Emulator to start.
+
+    *If the emulator doesn't start, and you are prompted to search the Windows store for an app. Copy the URL for your bot in the the **Local bot runtime manager** pane. Then start the Bot Framework Emulator manually and open your bot using the URL.*
+
+1. In the Bot Framework Emulator, after a short pause, you will see the welcome message and the prompt to enter your first name.  Enter you first name and press **Enter**.
+1. The bot should respond with the **Hello *your_first_name*, nice to meet you!**.
+1. Close the emulator.
+1. In Composer, in the **Local bot runtime manager** pane. use the ⏹ icon to stop the bot.

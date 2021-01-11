@@ -102,12 +102,12 @@ templateFile="azuredeploy.json"
 today=$(date +"%d-%b-%Y")
 DeploymentName="blanktemplate-"$today
 
-az deployment group create \
+az group deployment create \
  --name $DeploymentName \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **blanktemplate** with the date as a suffix.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az group deployment create``` deploys the template to Azure. Notice that the deployment name is **blanktemplate** with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
@@ -235,7 +235,7 @@ templateFile="azuredeploy.json"
 today=$(date +"%d-%b-%Y")
 DeploymentName="addstorage-"$today
 
-az deployment group create \
+az group deployment create \
   --name $DeploymentName \
   --template-file $templateFile
 ```
