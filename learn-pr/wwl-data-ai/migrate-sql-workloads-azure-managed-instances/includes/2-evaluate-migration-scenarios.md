@@ -8,7 +8,7 @@ Here, you'll learn about the key features of managed instances, and how they mak
 
 Azure SQL Database managed instance is the newest SQL-based platform as a service (PaaS) capability that's part of the Azure SQL Database. The Azure SQL Database family includes the single Azure SQL Database, Azure SQL Database elastic pools, and Azure SQL Database managed instance. The goal of Azure SQL managed instance is to provide SQL Server applications with a fully managed PaaS experience in the Azure cloud. Azure SQL Database managed instance is also a fully featured SQL PaaS experience with all the critical features and capabilities of the SQL Server platform.
 
-Azure SQL Database managed instance is designed to enable a "lift and shift" solution for customers. The managed instancee looks to bring applications, databases, and supporting technologies to Azure PaaS. Previously, without Azure SQL Database managed instance, migration scenarios where an organization’s application required access to any technology outside of the database (for example SQL Agent jobs, cross database joins, and SQL Server Integration Services) would be prevented from moving to the cloud. The only way a DBA or developer could migrate an on-premises application would be to employ one of the following approaches:
+Azure SQL Database managed instance is designed to enable a "lift and shift" solution for customers. The managed instance looks to bring applications, databases, and supporting technologies to Azure PaaS. Previously, without Azure SQL Database managed instance, migration scenarios where an organization’s application required access to any technology outside of the database (for example SQL Agent jobs, cross database joins, and SQL Server Integration Services) would be prevented from moving to the cloud. The only way a DBA or developer could migrate an on-premises application would be to employ one of the following approaches:
 
 - Move the database and supporting technologies to an infrastructure as a service (IaaS) model. 
 - Rewrite the application with a fully PaaS model on Azure SQL Database, with additional development to address migration blockers.
@@ -115,7 +115,7 @@ Create an Azure SQL Database managed instance by following these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and then select **Create a resource** in the upper-left corner.
 1. Search for **managed instance**, select **Azure SQL managed instance**, and then select **Create**.
 
-    ![Create a managed instance in the Azure portal](../media/2-create-managed-instance.png)
+    ![Iage showing Create a managed instance in the Azure portal](../media/2-create-managed-instance.png)
 
 1. Fill out the SQL managed instance form using the information in the following table:
 
@@ -125,8 +125,8 @@ Create an Azure SQL Database managed instance by following these steps:
     |**managed instance name**|Any valid name.||
     |**managed instance admin login**|Any valid username. Don't use "serveradmin" because that's a reserved server-level role.|
     |**Password**|Any password longer than 16 characters and meeting the complexity requirements.|
-    |**Time zone**|The time zone to be observed by your managed instancee.|
-    |**Collation**|The collation you want to use for the managed instancee. If you migrate databases from SQL Server, check the source collation by using SELECT SERVERPROPERTY(N'Collation') and use that value. |
+    |**Time zone**|The time zone to be observed by your managed instance.|
+    |**Collation**|The collation you want to use for the managed instance. If you migrate databases from SQL Server, check the source collation by using SELECT SERVERPROPERTY(N'Collation') and use that value. |
     |**Location**|The Azure region in which you want to create the managed instance.|
     |**Virtual network**|Select either "Create new virtual network" or a valid virtual network and subnet.|
     |**Enable public endpoint**|Check this option to enable a public endpoint, which then helps clients outside Azure to access the database. |
@@ -134,7 +134,7 @@ Create an Azure SQL Database managed instance by following these steps:
     |**Connection type**|Choose between a Proxy and a Redirect connection type.|
     |**Resource group**|A new or existing resource group.|
 
-    ![Configuring managed instancee performance in the Azure portal](../media/2-configure-managed-instance-performance.png)
+    ![Configuring managed instance performance in the Azure portal](../media/2-configure-managed-instance-performance.png)
 
 1. Select **Pricing tier** to size compute and storage resources, and to review the pricing tier options. 
 1. When you're finished, select **Apply** to save your selection, and then select **Create** to deploy the managed instance.

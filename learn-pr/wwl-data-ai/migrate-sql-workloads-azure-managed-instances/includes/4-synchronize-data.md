@@ -46,7 +46,7 @@ SSIS is primarily used for extract, transform, and load (ETL) tasks, but its con
 
 ### Azure Data Factory (ADF)
 
-ADF is built for data movement and orchestration, with the focus on ingestion. ADF has the integration runtime support to run SSIS packages, and the public internet support for SQL Database managed instancee.
+ADF is built for data movement and orchestration, with the focus on ingestion. ADF has the integration runtime support to run SSIS packages, and the public internet support for SQL Database managed instance.
 
 ### Transactional replication 
 

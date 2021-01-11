@@ -305,7 +305,7 @@ The final configuration task is to review your setup:
 1. On the **Migration summary** screen, in the **Activity name** text box, specify a name for the migration activity.
 1. Review and verify the details associated with the migration project.
 
-    ![Migration summary screen](../media/3-migration-summary.png)
+    ![Image of Migration summary screen](../media/3-migration-summary.png)
 
 ## Run and monitor the migration
 
