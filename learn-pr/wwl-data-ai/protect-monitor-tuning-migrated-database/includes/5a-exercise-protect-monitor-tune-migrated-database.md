@@ -12,38 +12,38 @@ In this exercise, you'll perform the following tasks:
 
 Run these Azure CLI commands in the Cloud Shell to create an Azure database for PostgreSQL, with a copy of the adventureworks database. The last commands will print the server name.
 
-    ```azurecli
-    SERVERNAME="adventureworks$((10000 + RANDOM % 99999))"
-    PUBLICIP=$(wget http://ipecho.net/plain -O - -q)
-    git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git workshop
+```azurecli
+SERVERNAME="adventureworks$((10000 + RANDOM % 99999))"
+PUBLICIP=$(wget http://ipecho.net/plain -O - -q)
+git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git workshop
 
-    az postgres server create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name $SERVERNAME \
-        --location westus \
-        --admin-user awadmin \
-        --admin-password Pa55w.rdDemo \
-        --version 10 \
-        --storage-size 5120
+az postgres server create \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name $SERVERNAME \
+    --location westus \
+    --admin-user awadmin \
+    --admin-password Pa55w.rdDemo \
+    --version 10 \
+    --storage-size 5120
 
-    az postgres db create \
-        --name azureadventureworks \
-        --server-name $SERVERNAME \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+az postgres db create \
+    --name azureadventureworks \
+    --server-name $SERVERNAME \
+    --resource-group <rgn>[sandbox resource group name]</rgn>
 
-    az postgres server firewall-rule create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --server $SERVERNAME \
-        --name AllowMyIP \
-        --start-ip-address $PUBLICIP --end-ip-address $PUBLICIP
+az postgres server firewall-rule create \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --server $SERVERNAME \
+    --name AllowMyIP \
+    --start-ip-address $PUBLICIP --end-ip-address $PUBLICIP
 
-    PGPASSWORD=Pa55w.rdDemo psql -h $SERVERNAME.postgres.database.azure.com -U awadmin@$SERVERNAME -d postgres -f workshop/migration_samples/setup/postgresql/adventureworks/create_user.sql
-    
-    PGPASSWORD=Pa55w.rd psql -h $SERVERNAME.postgres.database.azure.com -U azureuser@$SERVERNAME -d azureadventureworks -f workshop/migration_samples/setup/postgresql/adventureworks/adventureworks.sql 2> /dev/null
+PGPASSWORD=Pa55w.rdDemo psql -h $SERVERNAME.postgres.database.azure.com -U awadmin@$SERVERNAME -d postgres -f workshop/migration_samples/setup/postgresql/adventureworks/create_user.sql
 
-    echo "Your PostgreSQL server name is:\n"
-    echo $SERVERNAME.postgres.database.azure.com
-    ```
+PGPASSWORD=Pa55w.rd psql -h $SERVERNAME.postgres.database.azure.com -U azureuser@$SERVERNAME -d azureadventureworks -f workshop/migration_samples/setup/postgresql/adventureworks/adventureworks.sql 2> /dev/null
+
+echo "Your PostgreSQL server name is:\n"
+echo $SERVERNAME.postgres.database.azure.com
+```
 
 ### Configure Azure metrics for your Azure Database for PostgreSQL service
 
@@ -335,7 +335,3 @@ Run these Azure CLI commands in the Cloud Shell to create an Azure database for 
 1. Return to the Cloud Shell and press enter, to stop the app.
 
 You have now seen how to monitor server activity using the tools available in the Azure portal. You have also learned how to configure replication, and seen how creating read-only replicas can distribute the workload in read-intensive data scenarios.
-
-
-Microsoft.DBForPostgreSQL/servers
-Microsoft.DBforPostgreSQL/servers
