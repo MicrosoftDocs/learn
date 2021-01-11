@@ -1,10 +1,10 @@
-Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you'll focus on using them to implement existing ASP.NET apps on the Web Apps feature of Azure App Service with Azure SQL Database as their data store. 
+Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you'll focus on using them to implement existing ASP.NET apps on the Web Apps feature of Azure App Service with Azure SQL Database as their data store.
 
-To provide some context, imagine that you're a member of the IT team at a mid-sized financial services company. You have a programming background, but over the last few years, you've been managing platform services and operational support of internally developed applications. Your familiarity with software development, deployment, and maintenance gives you a unique perspective, providing you insight into both aspects of DevOps.
+To provide context, imagine that you're a member of the IT team at a mid-sized financial services company. You have a programming background, but over the last few years, you've been managing platform services and operational support of internally developed applications. Your familiarity with software development, deployment, and maintenance gives you a unique perspective, providing you insight into both aspects of DevOps.
 
-As part of the modernization of its computing environment, your company is considering migrating its ASP.NET applications and their associated database to the Azure App Service and Azure SQL Database. You welcome the change because you've learned of the benefits of Azure PaaS offerings. You're eager to experience them firsthand. 
+As part of the modernization of its computing environment, your company is considering migrating its ASP.NET applications and their associated database to the Azure App Service and Azure SQL Database. You welcome the change because you've learned of the benefits of Azure PaaS offerings. You're eager to experience them firsthand.
 
-However, you're concerned about the deployment methodology and approach to maintaining application updates. You realize that without a sensible DevOps strategy, your company won't be able to take full advantage of the cloud capabilities. 
+However, you're concerned about the deployment methodology and approach to maintaining application updates. You realize that without a sensible DevOps strategy, your company won't be able to take full advantage of the cloud capabilities.
 
 To address your concerns, you decided to reach out to management. You ask them to allow you to investigate the best approach to deploying data-driven ASP.NET applications to Azure App Services. Your intention is to evaluate the role that Azure Pipelines can serve in optimizing the efficiency and the functionality of that approach.
 
@@ -12,7 +12,7 @@ To address your concerns, you decided to reach out to management. You ask them t
 
 After completing this module, you'll be able to:
 
-- Provide an overview of App Services and Azure SQL Database. 
+- Provide an overview of App Services and Azure SQL Database.
 - Describe core components of continuous integration and continuous deployment (CI/CD).
 - Describe the automated deployment process of App Services and Azure SQL Database.
 - Build and deploy data-driven ASP.NET web apps into Azure by using Azure Pipelines.

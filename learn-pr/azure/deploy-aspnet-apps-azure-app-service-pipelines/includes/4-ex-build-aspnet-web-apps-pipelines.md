@@ -1,8 +1,8 @@
-As your company considers deploying their ASP.NET applications to the Azure App Service, you decide to test the process. In this exercise, you'll set up prerequisites for the deployment and build artifacts necessary to deploy a sample ASP.NET web app to an Azure App Service web app. 
+As your company considers deploying their ASP.NET applications to the Azure App Service, you decide to test the process. In this exercise, you'll set up prerequisites for the deployment and build artifacts necessary to deploy a sample ASP.NET web app to an Azure App Service web app.
 
 ## Set up a GitHub account, an Azure DevOps organization, and create an Azure DevOps project
 
-You'll start by creating a GitHub account, an Azure DevOps organization, and an Azure DevOps project. 
+You'll start by creating a GitHub account, an Azure DevOps organization, and an Azure DevOps project.
 
 > [!NOTE]
 > You will need a valid email address, such as one associated with a Microsoft LiveID user account.
@@ -10,13 +10,13 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 > [!NOTE]
 > You can skip this task if you already have an existing Azure DevOps organization and a corresponding GitHub account that you can use for exercises in this module.
 
-1. From your computer, start a web browser in the **private** mode and browse to [https://github.com](https://github.com). 
+1. From your computer, start a web browser in the **private** mode and browse to [https://github.com](https://github.com).
 1. On the GitHub home page, select **Sign up**.
 
    > [!NOTE]
-   > The name of the **private** mode depends on the browser (e.g. *InPrivate* for Microsoft Edge, *Private* for Firefox, or *Incognito* for Chrome).
+   > The name of the **private** mode depends on the browser (such as *InPrivate* for Microsoft Edge, *Private* for Firefox, or *Incognito* for Chrome).
 
-1. On the **Create your account** page, specify a username, email address, and a password you want to associate with your new GitHub account, and select **Create account**. 
+1. On the **Create your account** page, specify a username, email address, and a password you want to associate with your new GitHub account, and select **Create account**.
 1. On the **Welcome to GitHub** page, select **Complete setup**.
 1. Open another web browser tab, sign in to your email account, locate the GitHub verification email, and follow instructions in the email to complete the email account verification process.
 1. Open another web browser tab and browse to [https://dev.azure.com](https://dev.azure.com).
@@ -24,12 +24,12 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 1. On the **Authorize Microsoft-Corporation** page, select **Authorize Microsoft-corp**.
 1. If you're using a Microsoft account, on the **Link your GitHub credentials to your Microsoft account**, select **Next**, when prompted, enter the code included in another email delivered to your email account, select **Sign in**, and, to complete the setup, select **Got it**.
 1. When prompted to set up your Azure DevOps organization details, verify your name, email address, and location and select **Continue**.
-1. On the **Get started with Azure DevOps** page, select **Continue**. 
-1. On the **Create a project to get started** page, in the **Project name** textbox, type **Deploy ASP.NET web apps with Azure Pipelines**, leave the visibility set to **Private**, and select **+ Create project**.
+1. On the **Get started with Azure DevOps** page, select **Continue**.
+1. On the **Create a project to get started** page, in the **Project name** text box, enter **Deploy ASP.NET web apps with Azure Pipelines**, leave the visibility set to **Private**, and select **+ Create project**.
 
-## Fork a GitHub repository and generate an Azure DevOps build pipeline 
+## Fork a GitHub repository and generate an Azure DevOps build pipeline
 
-Next, you will create a fork of an existing GitHub repository, containing the sample ASP.NET app, into your GitHub account and then generate an Azure DevOps build pipeline using it as its source. 
+Next, you will create a fork of an existing GitHub repository, containing the sample ASP.NET app, into your GitHub account and then generate an Azure DevOps build pipeline using it as its source.
 
 1. Within the browser window displaying the Azure DevOps portal, open another tab and navigate to the [repository hosting the sample ASP.NET app](https://github.com/liveid239/todo2036) you'll be using throughout the exercises in this module.
 1. On the [repository hosting the sample ASP.NET app](https://github.com/liveid239/todo2036) page, select **Fork** to generate a fork of the sample repository to the repository within your own GitHub account.
@@ -41,21 +41,21 @@ Next, you will create a fork of an existing GitHub repository, containing the sa
 1. On the **Select a repository** pane, select the repository hosting the fork you created earlier in this exercise. You will be automatically redirected to [github.com](github.com).
 1. On the **Approve & Install Azure Pipelines** pane, accept the **Only select repositories** option, then select the **Approve & Install** button. When prompted to authenticate, type the password of your GitHub user account, then, when prompted again, authenticate with the Azure DevOps user account.
 1. If prompted, on the **Azure Pipelines by Microsoft would like permission to** page, select **Authorize Azure Pipelines**.
-1. Back in the Azure DevOps portal, on the **Select a repository** pane, select the repository hosting the fork you created earlier in this exercise. 
-1. In the Azure DevOps portal, on the **Configure your pipeline** pane, select **ASP.NET**. 
+1. Back in the Azure DevOps portal, on the **Select a repository** pane, select the repository hosting the fork you created earlier in this exercise.
+1. In the Azure DevOps portal, on the **Configure your pipeline** pane, select **ASP.NET**.
 
-## Review the autogenerated ASP.NET build pipeline 
+## Review the autogenerated ASP.NET build pipeline
 
-Now spend a few minutes reviewing the build pipeline generated based on the **ASP.NET** template. 
+Now spend a few minutes reviewing the build pipeline generated based on the **ASP.NET** template.
 
 On the **Review your pipeline YAML** pane, scroll down to the **steps:** section and review the list of autogenerated tasks by hovering with the mouse pointer over task headers and identify the purpose of each task:
+<!--LM: Please check that the following revision makes sense. -->
+- **NuGetToolInstaller@1** acquires a specific version of NuGet from the internet or the tools cache, and adds it to the PATH. You can use this task to change the version of NuGet used in the NuGet tasks.
+- **NuGetCommand@2** performs restore of NuGet packages from NuGet.org.
+- **VSBuild@1** leverages MSBuild to perform build and set the Visual Studio version property.
+- **VSTest@2** leverages Visual Studio Test runner to perform unit and functional tests.
 
-- **NuGetToolInstaller@1**: NuGet tool installer, which acquires a specific version of NuGet from the internet or the tools cache and adds it to the PATH. You can use this task to change the version of NuGet used in the NuGet tasks.
-- **NuGetCommand@2**: performs restore of NuGet packages from NuGet.org.
-- **VSBuild@1**: leverages MSBuild to perform build and set the Visual Studio version property. 
-- **VSTest@2**: leverages Visual Studio Test runner to perform unit and functional tests.
-
-## Customize the autogenerated ASP.NET build pipeline 
+## Customize the autogenerated ASP.NET build pipeline
 
 Next, you'll customize the autogenerated pipeline to provide the additional functionality that will facilitate setting up the Azure DevOps pipeline that deploys the sample ASP.NET app.
 
@@ -82,10 +82,10 @@ Next, you'll customize the autogenerated pipeline to provide the additional func
    > Next, you will add a step that will publish artifacts generated by the build.
 
 3. On the **Review your pipeline YAML** pane, select **Show assistant**.
-4. Place the mouse pointer after the last task in the autogenerated pipeline, in the **Search tasks** textbox, type **Publish build artifacts**, in the list of results, select the **Publish build artifacts**, and on the **Publish build artifacts** pane, select **Add**.
+4. Place the mouse pointer after the last task in the autogenerated pipeline, in the **Search tasks** text box, enter **Publish build artifacts**, in the list of results, select the **Publish build artifacts**, and on the **Publish build artifacts** pane, select **Add**.
 
    > [!NOTE]
-   > At this point, the pipeline should have the following content. 
+   > At this point, the pipeline should have the following content.
 
    ```yaml
    # ASP.NET
@@ -124,9 +124,9 @@ Next, you'll customize the autogenerated pipeline to provide the additional func
        publishLocation: 'Container'
    ```
 
-## Run the autogenerated ASP.NET build pipeline 
+## Run the autogenerated ASP.NET build pipeline
 
-1. On the **Review your pipeline YAML** pane, in the toolbar, select **Save & run** and, on the **Save and run ** pane, select **Save and run**.
+1. On the **Review your pipeline YAML** pane, in the toolbar, select **Save & run** and, on the **Save and run** pane, select **Save and run**.
 1. On the pipeline run pane, in the **Jobs** section, select **Job** and track the execution of individual tasks of the newly created pipeline.
 1. Verify that all tasks completed successfully.
 

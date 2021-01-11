@@ -16,11 +16,11 @@ quiz:
   title: Check your knowledge
   questions:
   
-  - content: "What is one of the primary benefits of using YAML-based authoring of Azure Pipelines comparing with the classic approach?"
+  - content: "What is one of the primary benefits of using YAML-based authoring of Azure Pipelines compared with the classic approach?"
     choices:
     - content: "Version control functionality"
       isCorrect: true
-      explanation: "That's correct. Since the pipeline is part of your code, you benefit from the version control functionality, allowing you to track pipeline changes and simplifying identifying potential issues related to these changes."
+      explanation: "That's correct. Because the pipeline is part of your code, you benefit from the version control functionality, allowing you to track pipeline changes and simplify identifying potential issues related to these changes."
     - content: "The support of visual designer"
       isCorrect: false
       explanation: "That's incorrect. The visual designer is available with the classic approach."
@@ -37,8 +37,8 @@ quiz:
       explanation: "That's incorrect. A stage can consist of multiple jobs. Each job can run on a different host."
     - content: "task"
       isCorrect: false
-      explanation: "That's incorrect. A task does not support specifying the host to be used for its execution. This is configurable on the job level."
-  - content: "Which method can you use in order to provision Azure resources in an Azure Pipeline in the imperative manner?"
+      explanation: "That's incorrect. A task doesn't support specifying the host to be used for its execution. This is configurable on the job level."
+  - content: "Which method can you use to provision Azure resources in an Azure Pipeline in the imperative manner?"
     choices:
     - content: "Azure CLI"
       isCorrect: true

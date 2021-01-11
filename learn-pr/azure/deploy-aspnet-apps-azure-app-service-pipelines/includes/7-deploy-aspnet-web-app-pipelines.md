@@ -18,7 +18,7 @@ To implement these steps, use the following Azure Pipelines tasks:
 > Alternatively, you could set the connection string directly in the **Azure App Service deploy** task by using its XML transformation functionality.
 
 > [!NOTE]
-> You need to ensure that the download path of the **Download build artifacts** task matches the package location specified in the **Azure App Service deploy** task. 
+> You need to ensure that the download path of the **Download build artifacts** task matches the package location specified in the **Azure App Service deploy** task.
 
 To simplify implementing these tasks with the YAML-based approach, you can use the task assistant. To target the same Azure resources provisioned in the previous exercise, you should reference the variables in the same variable group you used during Azure resource provisioning stage.
 
