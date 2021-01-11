@@ -1,5 +1,5 @@
 In this unit, you'll configure GitHub actions to provision your Terraform resources.
-You'll provision an Azure app Service instance and a MySQL for Azure database.
+In Part 1, you'll provision an Azure app Service instance and a MySQL for Azure database.
 Once your infrastructure is ready, you'll use GitHub Actions to deploy a Spring Boot sample application.
 
 # Part 1 - provision the Infrastructure
@@ -29,12 +29,15 @@ The following **main.tf** sections define your module's configuration:
 - Resource: Describes resources & dependencies
 - Module: Reusability & complexity abstraction
 
+In your **main.tf** file, you'll see the following content:
+
 ```yml
 provider "azurerm" {
   version = "=2.20.0"
   features {}
 }
 
+# This creates a resource group
 resource "azurerm_resource_group" "main" {
   name     = var.resource_group
   location = var.location
@@ -131,7 +134,7 @@ resource "azurerm_app_service" "main" {
 ## Customize the workflow
 
 In your forked repository you need to customize your application, and resource group name.
-Using the build in GitHub Text editor or your editor of choice, edit and commit `terraform/variables.tf` and change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name:
+Using the built-in GitHub Text editor or your editor of choice, edit and commit `terraform/variables.tf` and change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name:
 
 ```yaml
 variable "resource_group" {
@@ -314,8 +317,11 @@ Congratulations! You now have two GitHub actions setup - a provisioning action a
 Each time you `git push` your code, your TerraForm provisioned resources are created (if not created already) and your application is deployed.
 
 > [!IMPORTANT]
+
 > Re-running your provision GitHub action will not recreate your resources if they already exist. You will need to delete your resource group or resources manually and then re-run the GitHub action.
+
 > Re-running your build/deploy GitHub action will replace your application.
+
 > If you re-create your App Service Instance you will need to also change to the new publishing profile  - the following is the only line that needs to be changed:
 
 ```yml

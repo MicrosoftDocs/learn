@@ -25,15 +25,22 @@ Terraform enables users to validate and preview infrastructure changes before ap
 ## Terraform Configuration
 
 Configuration files generate an execution plan and what it will do to reach the wanted state. Terraform can then build the described infrastructure.
-
 As the configuration changes, Terraform can determine what changed and create incremental execution plans.
-
-### Hashicorp Configuration Language (HCL)
 
 Terraform configuration files use their own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
 You create configuration files using HCL (HashiCorp Configuration Language) syntax.
 HCL is declarative, describing an intended goal rather than the steps to reach that goal.
 The HCL syntax allows you to specify the cloud provider - such as Azure - and the elements that make up your cloud infrastructure.
+
+### Configuration Files
+
+Configuration files are stored in plain text files with a ".tf" file extension.
+
+- main.tf (Required): Main structure to deploy the complete infrastructure directly or through calls to modules
+- output.tf: Identify each return value of a Terraform module
+- variables.tf: Define variables required (or not) in main.tf
+
+![Config structure for Terraform.](../media/3-config.png)
 
 ### Modules
 
@@ -46,16 +53,6 @@ A module has many benefits:
 - Encapsulate complexity
 - Allow you to reuse common tasks
 - And provide consistency and ensure good practices
-
-### Configuration Files
-
-Configuration files are stored in plain text files with a ".tf" file extension.
-
-- main.tf (Required): Main structure to deploy the complete infrastructure directly or through calls to modules
-- output.tf: Identify each return value of a Terraform module
-- variables.tf: Define variables required (or not) in main.tf
-
-![Config structure for Terraform.](../media/3-config.png)
 
 ### Main.tf
 
