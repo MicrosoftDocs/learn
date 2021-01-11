@@ -22,7 +22,7 @@ The protection process on the client works as follows:
 7. The Azure Information Protection client signs the policy with the user’s certificate.
 8. The policy is embedded into a file with the body of the document previously encrypted.
 9. The policy stays with the encrypted document if it stays encrypted.
-10. Now the user can store the document virtually anywhere or share it by using  any method.
+10. Now the user can store the document virtually anywhere or share it by using any method.
 
 When a user wants access to a protected document, the Azure Information Protection client starts by using the following process to request access to the Azure Information Protection service:
 
