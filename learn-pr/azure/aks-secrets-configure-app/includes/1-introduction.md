@@ -32,13 +32,19 @@ RESOURCE_GROUP=learn-ship-manager
 echo $RESOURCE_GROUP
 az group create -n $RESOURCE_GROUP -l eastus
 CLUSTER_NAME=ship-manager
-echo $CLUSTER_NAME
+```
+
+```azurecli-interactive
 az aks create \
  -g $RESOURCE_GROUP \
  -n $CLUSTER_NAME \
  --node-count 1 \
  --node-vm-size Standard_B2s \
+ --generate-ssh-keys \
  --enable-addons http_application_routing
+```
+
+```azurecli-interactive
 az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
 ```
 
