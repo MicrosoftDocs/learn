@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-azure-vmware-solution.what-is-azure-vmware-solution
+title: What is the Azure VMware Solution?
+metadata:
+  title: What is the Azure VMware Solution?
+  description: What is the Azure VMware Solution?
+  ms.date: 01/11/2021
+  author: jdooley-clt
+  ms.author: jedooley
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-azure-vmware-solution.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a key feature of Azure VMware Service?"
+    choices:
+    - content: "Seamlessly modernize apps over time with Azure services"
+      isCorrect: true
+      explanation: "Data Box allows up to an 80-TB transfer. Two Data Box Disk orders allow up to 70 TB."
+    - content: "Least cost-efficient way to run Windows Server and SQL Server"
+      isCorrect: false
+      explanation: "Data Box Edge is an online physical appliance that needs a significant amount of dedicated network bandwidth."
+    - content: "Fastest way to force a move to Azure-centric operational processes"
+      isCorrect: false
+      explanation: "XYZ"
+  - content: "What are two core Azure services that are included as part of the Azure VMware Service?"
+    choices:
+    - content: "Azure DataBricks"
+      isCorrect: false
+      explanation: "Data Box Edge is an online physical appliance that provides for data preprocessing and machine learning before transfer to the cloud."
+    - content: "Azure Monitor"
+      isCorrect: true
+      explanation: "Data Box Gateway is an online virtual appliance that doesn't provide for data preprocessing and machine learning."
+    - content: "Azure Storage"
+      isCorrect: false
+      explanation: "Data Box Heavy allows for up to 800 TB of data transfer, but it doesn't provide for data preprocessing and machine learning."

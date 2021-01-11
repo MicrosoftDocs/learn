@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-azure-vmware-solution.when-azure-vmware-solution
+title: When to use Azure VMware Solution
+metadata:
+  title: When to use Azure VMware Solution
+  description: When to use Azure VMware Solution
+  ms.date: 01/11/2021
+  author: jdooley-clt
+  ms.author: jedooley
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-when-azure-vmware-solution.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which cloud migration strategy does the Azure VMware Solution support?"
+    choices:
+    - content: "Re-host"
+      isCorrect: true
+      explanation: "Data Box Gateway is ideally suited to continuous ingestion scenarios."
+    - content: "Refactor"
+      isCorrect: false
+      explanation: "Data Box Edge requires a dedicated high-bandwidth connection. It enables preprocessing of data, which isn't needed in this case."
+    - content: "Re-architect"
+      isCorrect: false
+      explanation: "Data Box Disk enables regular imports, but not continuous ingestion."
+  - content: "Emily needs to add Azure Storage Services to her AVS environment. Which of the options available to her includes automatic synchronization and tiering?"
+    choices:
+    - content: "Blob storage"
+      isCorrect: true
+      explanation: "35 TB is the maximum amount of transferable data for a single Data Box Disk order."
+    - content: "Azure Files"
+      isCorrect: false
+      explanation: "Data Box Disk Heavy allows for up to 800 TB of data transfer and would be a candidate for this scenario."
+    - content: "Azure File Sync"
+      isCorrect: false
+      explanation: "This transfer is not possible with a single Data Box Disk order."
