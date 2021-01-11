@@ -10,7 +10,7 @@ Github Actions let you build, test, and deploy your code right from GitHub. You 
 
 ## What are GitHub Actions?
 
-![GitHub Actions components.](../media/3-vocab.png)
+![GitHub Actions workflow.](../media/3-actions.png)
 
 Let's look at the different GitHub Actions components:
 
@@ -19,10 +19,6 @@ Let's look at the different GitHub Actions components:
 - Jobs: A set of steps that execute on a runner.
 - Steps: A task that can run one or more commands (actions).
 - Actions: Standalone commands that can be combined into steps. Multiple steps can be combined to create a job.
-
-## GitHub Actions workflow
-
-![GitHub Actions workflow.](../media/3-actions.png)
 
 A Workflow is a collection of jobs and steps to automate software development life-cycle tasks.
 
