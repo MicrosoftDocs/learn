@@ -65,10 +65,10 @@ You can name this file whatever you want, but it's often named **main.tf**.
 
 ## Workflow
 
-![Terraform Worflow.](../media/3-workflow.png)
+![Terraform Workflow.](../media/3-workflow.png)
 
-The easiest way to get started is to copy the recommended Terraform workflow.
-When running Terraform in automation, this workflow focuses on the core plan/apply cycle, which runs all of Terraform's CI/CD actions on new and updated source control pull requests.
+The easiest way to get started is to use the recommended Terraform workflow.
+This workflow focuses on the core plan/apply cycle, which runs all of Terraform's CI/CD actions on new and updated source control pull requests.
 
 The core actions for this workflow are:
 
