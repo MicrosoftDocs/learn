@@ -15,7 +15,7 @@ Introduction to Azure VMware Solution
 
 ### Prerequisites
 
-- Basic knowledge of VMware infrastructure products
+- Experience managing a VMware infrastructure.
 
 ### Summary
 
