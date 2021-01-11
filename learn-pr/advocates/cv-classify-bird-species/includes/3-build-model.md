@@ -9,18 +9,18 @@ Let's build our model! We'll download the dataset, create our Azure service, upl
 >
 > 1. If prompted, select **Review permissions**.
 >
->     :::image type="content" source="../media/review-permissions-sandbox.png" alt-text="Screenshot that shows the Review Permissions button selected.":::
+>     :::image type="content" source="../media/sandbox-review-permissions.png" alt-text="Screenshot that shows the Review Permissions button selected in the sandbox.":::
 >
-> 1. Verify the permission settings, and select **Accept**.
+> 1. Verify the permissions settings, and select **Accept**.
 >
->    :::image type="content" source="../media/accept-permissions-sandbox.png" alt-text="Screenshot that shows permissions details and the Accept button.":::
+>    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows permissions details and the Accept button in the sandbox.":::
 >
 >The message **Sandbox activated!** is shown, and you can continue with the learning module.
 >
 
 ## Download the data
 
-The first thing we need to create our model is data! To train our model, we'll use a subset of the NABirds dataset from the CLO. 
+Data is the first thing we need to create a machine learning model. We'll use a subset of the NABirds dataset from the CLO to train our model. 
 
 Download the zip file that contains the dataset:
 
@@ -28,7 +28,7 @@ Download the zip file that contains the dataset:
 
 1. Select **Download**. 
 
-   :::image type="content" source="../media/download-dataset-github.png" alt-text="Screenshot that shows the dataset zip file and the Download button in GitHub.":::   
+   :::image type="content" source="../media/github-download-dataset.png" alt-text="Screenshot that shows the dataset zip file and the Download button in GitHub."::: 
 
    The zip file is copied to your computer and stored in your default location for downloaded files. 
 
@@ -42,7 +42,7 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
 1. Search for **custom vision**. In the **Custom Vision** card in the search results, select **Create**.
 
-    :::image type="content" source="../media/create-resource-azure-portal.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
+    :::image type="content" source="../media/azure-portal-create-resource.png" alt-text="Screenshot that shows searching for Custom Vision resource templates in the Azure portal."::: 
 
 1. On the **Basics** tab, enter or select the required values:
 
@@ -54,7 +54,7 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
       1. In the dialog box, enter *BirdResourceGroup*, and then select **OK**.
 
-      :::image type="content" source="../media/create-resource-group-azure-portal.png" alt-text="Screenshot that shows creating a new resource group the Azure portal."::: 
+      :::image type="content" source="../media/azure-portal-create-resource-group.png" alt-text="Screenshot that shows creating a new resource group the Azure portal."::: 
 
    1. Enter a name for your new Custom Vision service resource (for example, *BirdCustomVisionService*).
 
@@ -74,11 +74,11 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
 1. Select **Create**.
 
-   :::image type="content" source="../media/create-resource-details-azure-portal.png" alt-text="Screenshot that shows elements to select in the Azure portal to create a new Custom Vision resource.":::
+   :::image type="content" source="../media/azure-portal-create-resource-details.png" alt-text="Screenshot that shows elements to select in the Azure portal to create a new Custom Vision resource.":::
 
 When the deployment finishes, select **Go to resource**.
 
-:::image type="content" source="../media/deployment-finished-azure-portal.png" alt-text="Screenshot that shows the deployment finished page in the Azure portal, with Go to resource selected.":::
+:::image type="content" source="../media/azure-portal-deployment-finished.png" alt-text="Screenshot that shows the deployment finished page in the Azure portal, with Go to resource selected.":::
 
 ## Upload images
 
@@ -111,7 +111,7 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
       1. Select **Create project**.
 
-          :::image type="content" source="../media/create-project-custom-vision.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
+          :::image type="content" source="../media/custom-vision-create-project.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
 
     > [!NOTE]
     > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
@@ -120,7 +120,7 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
    1. In your Custom Vision project, select **Add images**.
 
-       :::image type="content" source="../media/add-images-custom-vision.png" alt-text="Screenshot that shows Add images selected in a Custom Vision portal project.":::
+       :::image type="content" source="../media/custom-vision-add-images.png" alt-text="Screenshot that shows Add images selected in a Custom Vision portal project.":::
 
    1. In **Open**, go to the *birds-photo* folder where you extracted the images files from the dataset .zip file. 
 
@@ -128,13 +128,13 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
    1. Select Ctrl + A to select all the images in the species folder, and then select **Open**.
 
-      :::image type="content" source="../media/select-photos-folder-custom-vision.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
+      :::image type="content" source="../media/custom-vision-select-photos-folder.png" alt-text="Screenshot that shows how to select all images in a species folder.":::
 
    1. In **Image upload**, add a description in **My Tags** to indicate the species for the birds shown in the photos.
 
    1. Select **Upload \<number\> files**.
 
-       :::image type="content" source="../media/tag-photos-custom-vision.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
+       :::image type="content" source="../media/custom-vision-tag-photos.png" alt-text="Screenshot that shows how to add a tag description to the uploaded photos.":::
 
 ### Upload images option 2: SDK
 
@@ -304,10 +304,10 @@ We've created our dataset in Custom Vision. Now, we can train our model. You cou
 
 1. In **Choose Training Type**, select **Quick Training**, and then select **Train**.
 
-:::image type="content" source="../media/train-quick-test-custom-vision.png" alt-text="Screenshot of creating a quick test in the Custom Vision portal.":::
+:::image type="content" source="../media/custom-vision-train-quick-test.png" alt-text="Screenshot of creating a quick test in the Custom Vision portal.":::
 
 During the training process, an **Iterations** section appears on the left. A **Training…** notification indicates that the training is in progress. When the training finishes, information about how the model performed for the training iteration is shown.
 
-:::image type="content" source="../media/train-model-iteration-metrics-custom-vision.png" alt-text="Screenshot that shows the metrics for a training iteration of the Custom Vision project.":::
+:::image type="content" source="../media/custom-vision-train-model-iteration-metrics.png" alt-text="Screenshot that shows the metrics for a training iteration of the Custom Vision project.":::
 
 The information is displayed through metrics called _precision_, _recall_, and _average precision_ (AP). The metrics are shown for the whole model and for each class (tag). In the next unit, we'll learn more about these metrics.

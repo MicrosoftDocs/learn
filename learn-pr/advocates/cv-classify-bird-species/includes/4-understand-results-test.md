@@ -1,4 +1,4 @@
-With our model created, let's take a look at how it's performing. We'll also test the model.
+We've created a machine learning model! Let's take a look at how it's performing. We'll also test the model.
 
 ## Understand model performance
 
@@ -8,7 +8,7 @@ The following metrics are provided for the entire model and for each class:
 
 | Metric | Description |
 | ---- | ---- |
-| `precision` | If a tag is predicted by your model, this metric indicates how likely the tag is to be correct. |
+| `precision` | If your model predicts a tag, this metric indicates how likely the tag is to be correct. |
 | `recall` | Of the tags that should be predicted correctly, this metric indicates the percentage of tags your model found correctly. |
 | `average precision` | This metric measures model performance by computing the precision and recall at different thresholds. |
 
@@ -20,13 +20,13 @@ Let's talk about some of the "rookie mistakes" that can happen when you first st
 
 ### Unbalanced data
 
-You might see this warning: *Unbalanced data detected. The distribution of images per tag should be uniform to ensure model performance.*
+You might see this warning when you deploy your model: `Unbalanced data detected. The distribution of images per tag should be uniform to ensure model performance.`
 
-The warning indicates that you don't have an even number of samples for each class of data. There are different ways to solve unbalanced data; one way is by using *Synthetic Minority Over-sampling Technique (SMOTE)*. SMOTE duplicates training examples from our existing training pool. In our model, we don't see this warning, but it's something to watch for in a  machine learning model.
+This warning indicates that you don't have an even number of samples for each class of data. Although you have multiple options, a common way to resolve unbalanced data is to use *Synthetic Minority Over-sampling Technique (SMOTE)*. SMOTE duplicates training examples from your existing training pool. In our model, we don't see this warning, but it's something to watch for in any machine learning model.
 
-### Overfit the model
+### Overfitted model
 
-If you don't have enough data or your data isn't diverse enough, your model can become overfitted. When a model is overfitted, it knows the provided dataset well, and it's overfitted to the patterns in that data. The model performs well on the training data, but it performs poorly on new data that it hasn't seen before. For this reason, we always use new data to test a model!
+If you don't have enough data or if your data isn't diverse enough, your model can become overfitted. When a model is overfitted, it knows the provided dataset well, and it's overfitted to the patterns in that data. In this case, the model performs well on the training data, but it performs poorly on new data that it hasn't seen before. For this reason, we always use new data to test a model!
 
 ### Test by using training data
 
@@ -34,7 +34,7 @@ As in overfitting, if you test the model by using the same data that you used to
 
 ### Bad data
 
-Another common mistake is training by using bad data. There are ways that your data can actually hurt your model and accuracy. For example, data that is "noisy" can cause issues: too much information that isn't useful is provided, and the information causes model confusion. More data is better only if the data is good data. You might need to throw out bad data or features to improve your model accuracy.
+Another common mistake is using bad data to train the model. Some data can actually hurt your model and accuracy. For example, data that is "noisy" can cause issues. In noisy data, too much information that isn't useful is provided, and the information causes model confusion. More data is better only if the data is good data. You might need to throw out bad data or features to improve your model accuracy.
 
 ## Test the model
 
@@ -50,8 +50,8 @@ To test the model in the Custom Vision portal:
 
 1. In  **Open**, search for a bird image from one of the species that you trained the model to recognize. Select the image, and then select **Open**.
 
-Custom Vision opens the image, and then analyzes the image to test the model's accuracy. The prediction results are shown in the window.
+Custom Vision opens the image, and then analyzes the image to test the model's accuracy. The prediction results are shown in the Custom Vision portal.
 
-:::image type="content" source="../media/quick-test-prediction-results.png" alt-text="Screenshot that shows the prediction results after testing an image in the Custom Vision project.":::
+:::image type="content" source="../media/custom-vision-quick-test-prediction-results.png" alt-text="Screenshot that shows the prediction results after testing an image in the Custom Vision project.":::
 
 In the next step, we'll deploy the model. After the model is deployed, we can do more testing with the endpoint we create.
