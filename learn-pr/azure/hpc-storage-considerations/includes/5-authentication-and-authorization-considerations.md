@@ -28,8 +28,7 @@
     export rules and policies
     RFC2307 mapping
 
-**Quota Management**
+**Home Directories considerations**
 
-
-
-
+    permissions
+    quota management
