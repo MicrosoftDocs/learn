@@ -9,7 +9,6 @@ metadata:
   ms.author: jedooley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-vmware-solution-works.md)]
