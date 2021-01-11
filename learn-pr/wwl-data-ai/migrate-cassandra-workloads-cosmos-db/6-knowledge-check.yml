@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/07/2021
+  ms.date: 01/11/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -57,3 +57,14 @@ quiz:
     - content: "Replicate data within your region."
       isCorrect: false
       explanation: "That's incorrect. It's not possible to replicate your data within a region inside a single Cosmos DB. There is a better answer."
+  - content: "Database level throughput is most appropriate for most migrations, but you have identified that collection level throughput is most appropriate long term. How should you configure your throughput?"
+    choices:
+    - content: "Specify database throughput."
+      isCorrect: false
+      explanation: "That's incorrect. You should choose the most appropriate setting for the expected use of the database."
+    - content: "Specify collection throughput, but temporarily change to database throughput for the migration."
+      isCorrect: false
+      explanation: "That's incorrect. You can't change the throughput after a database has been created.."
+    - content: "Specify collection throughput."
+      isCorrect: true
+      explanation: "That's correct. Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."

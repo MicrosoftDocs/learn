@@ -2,23 +2,11 @@ In this exercise, you'll migrate two datasets from Cassandra to Cosmos DB. You'l
 
 The scenario for this lab concerns an ecommerce system. Customers can place orders for goods. The customer and order details are recorded in a Cassandra database.
 
-### Create a Resource Group
+### Create a Virtual Network
 
 First, you'll create the Cassandra database for holding the customer and order data.
 
 1. In your Internet browser, navigate to [https://portal.azure.com](https://portal.azure.com) and sign in.
-1. In the Azure portal, select **Resource groups**, and then select **+Add**.
-1. On the **Create a resource group page**, enter the following details, and then select **Review + create**:
-
-    | Property  | Value  |
-    |---|---|
-    | Resource Group | **cassandradbrg** |
-    | Region | Select your nearest location |
-
-1. Select **Create**, and wait for the resource group to be created.
-
-### Create a Virtual Network
-
 1. In the left-hand pane of the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Virtual Network**, and press Enter.
 1. On the **Virtual Network** page, select **Create**.
@@ -26,7 +14,7 @@ First, you'll create the Cassandra database for holding the customer and order d
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **cassandradbrg** |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
     | Name | **databasevnet** |
     | Region | Select the same location that you specified for the resource group |
 
@@ -53,7 +41,7 @@ First, you'll create the Cassandra database for holding the customer and order d
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **cassandradbrg** |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
     | Virtual machine name | **cassandraserver** |
     | Region | Select the same location that you specified for the resource group |
     | Availability options | **No infrastructure redundancy required** |
@@ -219,7 +207,7 @@ In the next steps you'll migrate the same data you just created. You'll use Spar
     | Pricing Tier | **Standard** |
 
 1. On the **Review + create** page, select **Create** and then wait for the Databricks Service to be deployed.
-1. In the left-hand pane, select **Resource groups**, select **cassandradbrg**, and then select the **CassandraMigration** Databricks Service.
+1. In the left-hand pane, select **Resource groups**, select **<rgn>[sandbox resource group name]</rgn>**, and then select the **CassandraMigration** Databricks Service.
 1. On the **CassandraMigration** page, select **Launch Workspace**.
 1. On the **Azure Databricks** page, under **Common Tasks**, select **New Cluster**.
 1. On the **New Cluster** page, enter the following settings, and then select **Create Cluster**:
