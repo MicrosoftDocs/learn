@@ -10,7 +10,9 @@ Github Actions let you build, test, and deploy your code right from GitHub. You 
 
 ## What are GitHub Actions?
 
-GitHub Actions are composed of the following components:
+![GitHub Actions components.](../media/3-vocab.png)
+
+Let's look at the different GitHub Actions components:
 
 - Workflows: Automated processes added to your repository.
 - Events: An activity that triggers a workflow.
@@ -20,9 +22,11 @@ GitHub Actions are composed of the following components:
 
 ## GitHub Actions workflow
 
-A Workflow is a process to automate software development life-cycle tasks.
+![GitHub Actions workflow.](../media/3-actions.png)
 
-Each workflow is made up of individual actions that run after a specific event (like a pull request) occurs. The individual actions are packaged scripts that automate software development tasks.
+A Workflow is a collection of jobs and steps to automate software development life-cycle tasks.
+
+Each step is made up of individual actions that run after a specific event (like a pull request) occurs. The individual actions are packaged scripts that automate software development tasks.
 
 To create a workflow, you add actions to a .yml file in the .github/workflows directory in your GitHub repository.
 
