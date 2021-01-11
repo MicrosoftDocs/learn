@@ -84,11 +84,11 @@ You select the generation of the Azure SQL Database managed instance, and a serv
 
 To support older databases on new versions of the database engine, SQL Server uses database compatibility levels. Identify the latest supported compatibility level of the application that's using SQL Server. Match that to the compatibility level of the database that the application queries. SQL Server 2000 has a compatibility level of 80, and each next version of SQL Server has +10 compatibility by default, up to 150 for SQL Server 2019.
 
-SQL Server 2017 supports compatibility levels from 100 (default for SQL Server 2008) to 140 (default for SQL Server 2017). If your application requires compatibility level 100, and you use SQL Server 2014, you can safely move to SQL Database managed instance. But if you use an application with compatibility level 80, running on SQL Server 2008, you can't move it to SQL Database managed instance as it supports compatibility levels of 100 and newer. In this situation, you'll have to migrate from compatibility level 80 to 100 before you can move the database to an Azure SQL Databasemanaged instance.
+SQL Server 2017 supports compatibility levels from 100 (default for SQL Server 2008) to 140 (default for SQL Server 2017). If your application requires compatibility level 100, and you use SQL Server 2014, you can safely move to SQL Database managed instance. But if you use an application with compatibility level 80, running on SQL Server 2008, you can't move it to SQL Database managed instance as it supports compatibility levels of 100 and newer. In this situation, you'll have to migrate from compatibility level 80 to 100 before you can move the database to an Azure SQL Database managed instance.
 
 ### Networking
 
-Azure SQL Database managed instancem must be deployed within an Azure virtual network, with the subnet dedicated to managed instances only. SQL Database managed instance is fully isolated. The compute and storage are placed in a virtual cluster that's fully isolated from all other tenants in Azure. 
+Azure SQL Database managed instance must be deployed within an Azure virtual network, with the subnet dedicated to managed instances only. SQL Database managed instance is fully isolated. The compute and storage are placed in a virtual cluster that's fully isolated from all other tenants in Azure. 
 
 Connect your on-premises resources using VPN tunneling or a route gateway to SQL Database managed instances. You can then use these instances as any others in your network. By connecting on-premises resources to SQL Database managed instance like this, you use managed instance as an extension of your on-premises datacenter.
 

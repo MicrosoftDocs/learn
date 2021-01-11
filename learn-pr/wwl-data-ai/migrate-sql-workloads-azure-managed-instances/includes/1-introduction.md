@@ -4,7 +4,7 @@ Suppose you work for a sports clothing retail company. Your organization has bee
 
 You want to evaluate Azure's database hosting solutions, choose the best one to host your database, and do the migration. You'd prefer to migrate with as little database administrator and developer time as possible to keep the project budget low.
 
-In this module, you'll learn about Azure SQL Database wanaged instance, how it differs from other database solutions available in Azure, and how to choose the best cloud database solution for your project.
+In this module, you'll learn about Azure SQL Database managed instance, how it differs from other database solutions available in Azure, and how to choose the best cloud database solution for your project.
 
 By the end of this module, you'll know how to plan and execute a database migration project to Azure SQL Database managed instance.
 
