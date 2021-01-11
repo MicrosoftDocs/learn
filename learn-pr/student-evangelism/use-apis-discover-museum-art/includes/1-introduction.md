@@ -2,8 +2,14 @@ You're a web developer with a passion for the art world. You'd love to create a 
 
 ## Learning objectives
 
-In this module, you'll learn about one type of API, a RESTful API, by building one yourself. You'll also learn various strategies for connecting to external APIs. Your task: to discover art and design by querying two different museums' public APIs.
+In this module, you will:
+- Learn about RESTful APIs.
+- Build your own simple API.
+- Learn various strategies to connect to external APIs.
+- Learn how to query two different museum APIs.
 
 ## Prerequisites
 
-You'll need an internet-connected web browser like Microsoft Edge, and npm and Node.js installed locally.
+- An internet-connected browser, like Microsoft Edge.
+- Node.js, installed locally.
+- npm, installed locally.
