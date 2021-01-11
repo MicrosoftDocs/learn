@@ -75,7 +75,6 @@ The core actions for this workflow are:
 - Init: Initialize a working directory with Terraform configuration files.
 - Plan: Produce a plan for changing resources to match the current configuration.
 - Apply: Apply the changes described by the plan.
-- Destroy: Remove the Terraform managed infrastructure
 
 ### State
 
