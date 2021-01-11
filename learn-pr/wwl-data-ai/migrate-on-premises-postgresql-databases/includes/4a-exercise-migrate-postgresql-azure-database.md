@@ -6,70 +6,70 @@ You work as a database developer for the AdventureWorks organization. AdventureW
 
 Run these Azure CLI commands in the Cloud Shell to create a virtual machine, running PostgreSQL, with a copy of the adventureworks database. The last commands will print the IP address of the new virtual machine.
 
-    ```azurecli
-    az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name postgresqlvm \
-        --admin-username azureuser \
-        --admin-password Pa55w.rdDemo \
-        --image UbuntuLTS \
-        --public-ip-address-allocation static \
-        --public-ip-sku Standard \
-        --vnet-name postgresqlvnet \
-        --nsg ""
-    
-    az vm run-command invoke \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name postgresqlvm \
-        --command-id RunShellScript \
-        --scripts "
-    # Install PostgreSQL
-    sudo echo deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main > /etc/apt/sources.list.d/pgdg.list
-    sudo wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-    sudo apt-get -y update
-    sudo apt-get -y install postgresql-10
-    # Clone exercise code
-    sudo git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git /home/azureuser/workshop    
-    # Configure PostgreSQL
-    sudo service postgresql stop
-    sudo bash << EOF
-        printf \"listen_addresses = '*'\nwal_level = logical\nmax_replication_slots = 5\nmax_wal_senders = 10\n\" >> /etc/postgresql/10/main/postgresql.conf
-        printf \"host    all             all             0.0.0.0/0               md5\n\" >> /etc/postgresql/10/main/pg_hba.conf
-    EOF
-    sudo service postgresql start
-    
-    # Add the azureuser role and adventure works
-    sudo bash << EOF
-    su postgres << EOC
-    printf \"create role azureuser with login;alter role azureuser createdb;alter role azureuser password 'Pa55w.rd';alter role azureuser superuser;create database adventureworks;grant all privileges on database adventureworks to azureuser; \" | psql
-    EOC
-    EOF
+```azurecli
+az vm create \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name postgresqlvm \
+    --admin-username azureuser \
+    --admin-password Pa55w.rdDemo \
+    --image UbuntuLTS \
+    --public-ip-address-allocation static \
+    --public-ip-sku Standard \
+    --vnet-name postgresqlvnet \
+    --nsg ""
 
-    PGPASSWORD=Pa55w.rd psql -h localhost -U azureuser adventureworks -E -q -f /home/azureuser/workshop/migration_samples/setup/postgresql/adventureworks/adventureworks.sql
-    "
+az vm run-command invoke \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name postgresqlvm \
+    --command-id RunShellScript \
+    --scripts "
+# Install PostgreSQL
+sudo echo deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main > /etc/apt/sources.list.d/pgdg.list
+sudo wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get -y update
+sudo apt-get -y install postgresql-10
+# Clone exercise code
+sudo git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git /home/azureuser/workshop    
+# Configure PostgreSQL
+sudo service postgresql stop
+sudo bash << EOF
+    printf \"listen_addresses = '*'\nwal_level = logical\nmax_replication_slots = 5\nmax_wal_senders = 10\n\" >> /etc/postgresql/10/main/postgresql.conf
+    printf \"host    all             all             0.0.0.0/0               md5\n\" >> /etc/postgresql/10/main/pg_hba.conf
+EOF
+sudo service postgresql start
 
-    az vm open-port \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name postgresqlvm \
-        --priority 200 \
-        --port '22'
-    
-    az vm open-port \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name postgresqlvm \
-        --priority 300 \
-        --port '5432'
-    
-    echo Setup Complete
-    
-    SQLIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name postgresqlvm \
-        --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
-        --output tsv)"
+# Add the azureuser role and adventure works
+sudo bash << EOF
+su postgres << EOC
+printf \"create role azureuser with login;alter role azureuser createdb;alter role azureuser password 'Pa55w.rd';alter role azureuser superuser;create database adventureworks;grant all privileges on database adventureworks to azureuser; \" | psql
+EOC
+EOF
 
-    echo $SQLIP
-    ```
+PGPASSWORD=Pa55w.rd psql -h localhost -U azureuser adventureworks -E -q -f /home/azureuser/workshop/migration_samples/setup/postgresql/adventureworks/adventureworks.sql
+"
+
+az vm open-port \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name postgresqlvm \
+    --priority 200 \
+    --port '22'
+
+az vm open-port \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name postgresqlvm \
+    --priority 300 \
+    --port '5432'
+
+echo Setup Complete
+
+SQLIP="$(az vm list-ip-addresses \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name postgresqlvm \
+    --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
+    --output tsv)"
+
+echo $SQLIP
+```
 
 These commands will take approximately 5 minutes to complete. You don't need to wait, you can continue with the steps below.
 
