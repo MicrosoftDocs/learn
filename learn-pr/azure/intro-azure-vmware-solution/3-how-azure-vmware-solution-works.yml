@@ -16,28 +16,47 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What method would you use to unlock the disks you've received?"
+  - content: "What are two benefits to the migration process using Azure VMware Solution?"
     choices:
-    - content: "Get the passkey from the **Device Details** page in the Azure portal."
-      isCorrect: true
-      explanation: "The passkey is shown on the **Device Details** page in the Azure portal."
-    - content: "Look on the reverse side of the Data Box Disk device for the passkey."
+    - content: "Extensive downtime is required."
       isCorrect: false
+      explanation: "The passkey is shown on the **Device Details** page in the Azure portal."
+    - content: "It eliminates the need and cost of re-skilling."
+      isCorrect: true
       explanation: "The security key is too sensitive to be displayed on the device."
-    - content: "Use the passkey in the root folder of the Data Box Disk device."
+    - content: "It encourages the creation of new skills and the learning of new tools."
       isCorrect: false
       explanation: "The device is encrypted, so you can't get the passkey from the device itself."
-  - content: "You want to copy a virtual hard disk in the VHDX format to an Azure Data Box Disk. What folder do you copy the VHDX to?"
+  - content: "Which of the AVS Security Building Blocks includes patch management and audit trails?"
     choices:
-    - content: "PageBlob folder"
-      isCorrect: true
+    - content: "Azure Inherited Security"
+      isCorrect: false
       explanation: "The PageBlob folder is the correct place to copy the VHDX."
-    - content: "BlockBlob folder"
+    - content: "VMware Inherited Security"
       isCorrect: false
       explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
-    - content: "AzureFiles folder"
+    - content: "Private Cloud Security"
+      isCorrect: true
+      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
+  - content: "Shannon is considering leveraging Reserved Instances to reduce the cost of dedicated nodes. What discount level should she expect to see over standard pricing?"
+    choices:
+    - content: "10%-20%"
+      isCorrect: false
+      explanation: "The PageBlob folder is the correct place to copy the VHDX."
+    - content: "30%-50%"
+      isCorrect: true
+      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
+    - content: "60%-90%"
       isCorrect: false
       explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
-    - content: "ManagedDisk folder"
+  - content: "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
+    choices:
+    - content: "James is responsible for doing it himself."
       isCorrect: false
-      explanation: "Use the ManagedDisk folder to migrate virtual hard disks that are in the VHD format."
+      explanation: "The PageBlob folder is the correct place to copy the VHDX."
+    - content: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
+      isCorrect: true
+      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
+    - content: "VMware support is responsible for the ESXi Hosts and Host Patching."
+      isCorrect: false
+      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
