@@ -1,11 +1,11 @@
 In this unit, we look at Terraform configuration and scripting.
 
-# Why Terraform?
+## Why Terraform?
 
 As an infrastructure manager you need a tool for provisioning and managing cloud infrastructure. You would also like to use "infrastructure as code" in configuration files that describe the topology of your cloud resources.
 Terraform is great at deploying infrastructure across cloud providers. It enables developers to use consistent tooling to manage each infrastructure definition.
 
-## Automate infrastructure management
+### Automate infrastructure management
 
 Terraform's template-based configuration files enable you to define, provision, and configure Azure resources in a repeatable and predictable manner. Automating infrastructure has several benefits:
 
@@ -13,7 +13,7 @@ Terraform's template-based configuration files enable you to define, provision, 
 - Deploys the same template multiple times to create identical development, test, and production environments.
 - Reduces the cost of development and test environments by creating them on-demand.
 
-## Understand infrastructure changes before being applied
+### Understand infrastructure changes before being applied
 
 As a resource topology becomes complex, understanding the meaning and impact of infrastructure changes can be difficult.
 
@@ -22,13 +22,13 @@ Terraform enables users to validate and preview infrastructure changes before ap
 - Team members can collaborate more effectively by quickly understanding proposed changes and their impact.
 - Unintended changes can be caught early in the development process
 
-# Terraform Configuration
+## Terraform Configuration
 
 Configuration files generate an execution plan and what it will do to reach the wanted state. Terraform can then build the described infrastructure.
 
 As the configuration changes, Terraform can determine what changed and create incremental execution plans.
 
-## Hashicorp Configuration Language (HCL)
+### Hashicorp Configuration Language (HCL)
 
 Terraform configuration files use their own configuration language, similar to YAML, designed to allow descriptions of infrastructure.
 You create configuration files using HCL (HashiCorp Configuration Language) syntax.
@@ -63,7 +63,7 @@ Your **main.tf** file will contain the main set of configuration for your module
 This file is often called a Terraform _plan_. Your Terraform plan specifies the infrastructure resources that you need.
 You can name this file whatever you want, but it's often named **main.tf**.
 
-## Workflow
+## Terraform Workflow
 
 ![Terraform Workflow.](../media/3-workflow.png)
 

@@ -1,6 +1,6 @@
 Imagine you're an infrastructure manager and have been asked to provision resources using Terraform. Once you've created your project, you plan to provision your resources with GitHub Actions.
 
-### Provisioning pipelines
+## Provisioning pipelines
 
 As an Infrastructure Manager, you aim to achieve automation of both infrastructure and application build/deploy using three pipelines - Account, Infrastructure and Application:
 

@@ -1,6 +1,6 @@
 In this unit, you'll learn about GitHub actions and how they integrate with Terraform and Azure.
 
-# GitHub actions
+## GitHub actions
 
 As an infrastructure Manager, you need your build and deployment workflows part of your GitHub repository, and use the same version control as your project.
 
