@@ -26,7 +26,8 @@ quiz:
       explanation: "Data Box Edge is an online physical appliance that needs a significant amount of dedicated network bandwidth."
     - content: "Fastest way to force a move to Azure-centric operational processes"
       isCorrect: false
-      explanation: "What are two core Azure services that are included as part of the Azure VMware Service?"
+      explanation: "XYZ"
+  - content: "What are two core Azure services that are included as part of the Azure VMware Service?"
     choices:
     - content: "Azure DataBricks"
       isCorrect: false
