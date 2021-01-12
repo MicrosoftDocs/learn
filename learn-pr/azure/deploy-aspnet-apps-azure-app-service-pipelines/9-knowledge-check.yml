@@ -45,7 +45,7 @@ quiz:
       explanation: "That's correct. Azure CLI supports imperative deployment of Azure resources."
     - content: "Azure Resource Manager templates"
       isCorrect: false
-      explanation: "That's incorrect. "Azure Resource Manager templates support declarative deployment of Azure resources."
+      explanation: "That's incorrect. Azure Resource Manager templates support declarative deployment of Azure resources."
     - content: "Terraform"
       isCorrect: false
       explanation: "That's incorrect. Terraform supports declarative deployment of Azure resources."
