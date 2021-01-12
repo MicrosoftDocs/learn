@@ -12,7 +12,7 @@ When you assign a sensitivity label to a document or email, it's like a stamp th
 
 In Office apps, a sensitivity label appears like a tag to users on an email or document. Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single retention label applied to it.
 
-:::image type="content" source="../media/3-sensitivity-not-set-callout.png" alt-text="Image shows how sensitivity label is selected in the Office app.":::
+:::image type="content" source="../media/3-sensitivity-not-set-callout.png" alt-text="Image shows how sensitivity label is selected in the Office app.":::
 
 After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
