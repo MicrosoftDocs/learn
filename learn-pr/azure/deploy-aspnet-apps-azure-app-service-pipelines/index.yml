@@ -25,12 +25,12 @@ levels:
 - intermediate
 roles:
 - administrator
-- app maker
-- database administrator
+- app-maker
+- database-administrator
 - developer
-- devOps engineer
-- functional consultant
-- solution architect
+- devops-engineer
+- functional-consultant
+- solution-architect
 - student
 products:
 - azure
