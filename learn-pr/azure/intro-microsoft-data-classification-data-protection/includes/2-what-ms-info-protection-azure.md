@@ -4,7 +4,7 @@ You can use a set of Microsoft solutions for data classification and data protec
 
 ## How Azure Information Protection works
 
-You can use the clouc-based Azure Information Protection to discover, classify, and protect documents and emails by applying labels to content and by encrypting the content. Azure Information Protection is part of the Microsoft Information Protection (MIP) solution and extends the labeling and classification functionality provided by Microsoft 365.
+You can use the cloud-based Azure Information Protection to discover, classify, and protect documents and emails by applying labels to content and by encrypting the content. Azure Information Protection is part of the Microsoft Information Protection (MIP) solution and extends the labeling and classification functionality provided by Microsoft 365.
 
 The Azure Information Protection service (and Microsoft Information Protection services) don’t perceive or store your data as part of the information protection process. To help protect information, data is never sent or stored in Azure unless you intentionally store it there or use another cloud service that stores it in Azure.
 You use Azure Information Protection to encrypt your data at the application level and it includes a policy that defines the authorized use for that document. It decrypts the document and enforces the rights that are defined in the policy if a legitimate user or an authorized service accesses the data. It can also track document usage, so you can monitor both successful and unsuccessful attempts to use a document.
