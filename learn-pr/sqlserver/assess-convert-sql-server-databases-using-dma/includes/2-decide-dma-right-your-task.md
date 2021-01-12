@@ -1,10 +1,39 @@
-You're a database administrator, and you've compiled a list of the SQL Server databases in your organization. You've identified those databases that require upgrading to SQL Server 2019. All the databases are hosted on-premises. However, the CTO asks you to move a selection of databases to the cloud, to prepare for some infrastructure changes. The CTO also wants a report detailing the changes required, so they can allocate the resources needed to do the upgrades.
+In your law firm, you've compiled a list of the SQL Server databases in your organization. You've identified those databases that require upgrading to SQL Server 2019. All the databases are hosted on-premises. However, the CTO asks you to move a selection of databases to the cloud, to prepare for some infrastructure changes. The CTO also wants a report detailing the changes required, so they can allocate the resources needed to do the upgrades.
 
-You realize it will be impossible to do the necessary checks and create a report in time for the CTO's deadline. After searching for a solution, you think the **Microsoft Data Migration Assistant (DMA)** tool might help. You now need to decide if the DMA is the most appropriate tool for your task.
+You realize it will be impossible to do the necessary checks and create a report in time for the CTO's deadline. After searching for a solution, you think the **Azure Migrate** and **Microsoft Data Migration Assistant (DMA)** tools might help. You now need to decide if the DMA is the most appropriate tool for your task.
 
 ## Using backup and restore to upgrade/migrate SQL Server
 
 Using database backups and restoring them on the target instance is an option for migrating older versions of SQL Server to SQL Server 2019. However, if you need to migrate a large number of databases, this process is likely to be lengthy. If you manually migrate databases, you'll need to migrate user logins separately.
+
+## What is Azure Migrate?
+
+Azure Migrate provides a dashboard for a suite of migration tools. From the portal you can find documentation and download links to **Assess and migrate servers**, **Assess and migrate databases**, and **Explore more scenarios**.
+
+:::image type="content" source="../media/2-azure-migrate.png" alt-text="Azure Migrate" lightbox="../media/2-azure-migrate.png":::
+
+### Assess and migrate servers
+
+To assess and migrate servers, you should first discover machines in your on-premises or cloud environment. To perform the discovery, you must install the Azure Migrate appliance to a machine in the same domain as the machines that you wish to discover.
+
+:::image type="content" source="../media/2-discover-machines.png" alt-text="Discover machines":::
+
+The machine that runs the Azure Migrate appliance has the following requirements:
+
+- Windows Server 2016
+- 32 GB RAM
+- 8 vCPUs
+- 80 GB of free disk space
+
+### Assess and migrate databases
+
+To assess and migrate databases, a link is provided to install Data Migration Assistant.
+
+### Explore more scenarios
+
+**Explore more** includes links to tools to assess and migrate WebApps, Virtual Desktop Infrastructure, and data using Data Box. Azure Data Box is a ruggedized physical storage device with 100 TB capacity. The device is sent to a customer, the customer backs up their data to the device, and then the customer returns the Data Box device to Microsoft. When transferring many terabytes of data, physically sending the data is the most reliable and least expensive method.
+
+:::image type="content" source="../media/2-explore-more.png" alt-text="Explore more" lightbox="../media/2-explore-more.png":::
 
 ## What is the Microsoft Data Migration Assistant?
 
@@ -81,3 +110,6 @@ You'll be using a virtual machine in later exercises. Run these commands to set 
         --name SQL2019Server \
         --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
+
+> [!WARNING]
+> Do not deactivate the sandbox. This sandbox will continue to be used in following units.

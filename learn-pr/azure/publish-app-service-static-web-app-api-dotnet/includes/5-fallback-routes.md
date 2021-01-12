@@ -30,8 +30,8 @@ Routing rules run in the order they appear in the _routes.json_ file's routes ar
 
 ## Route file location
 
-Azure Static Web Apps expects your _routes.json_ file to be in the `app_artifact_location` by default. If your build process copies your _routes.json_ file to the `app_artifact_location`, then there is nothing else you need to do.
+Azure Static Web Apps expects your _routes.json_ file to be in the `output_location` by default. If your build process copies your _routes.json_ file to the `output_location`, then there is nothing else you need to do.
 
-However, if you want to control where you put your _routes.json_ file, Azure Static Web Apps supports this too. Being explicit about the location of your _routes.json_ file is particularly important if your front-end framework build step doesn't move this file to the `app_artifact_location` by default.
+However, if you want to control where you put your _routes.json_ file, Azure Static Web Apps supports this too. Being explicit about the location of your _routes.json_ file is particularly important if your front-end framework build step doesn't move this file to the `output_location` by default.
 
 You can customize the action that builds and deploys your app to look for the _routes.json_ in any folder in your repository. The `routes_location` property defines the directory location where the _routes.json_ file is found. This location is relative to the root of your repository.

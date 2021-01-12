@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.ingest-data-into-azure-digital-twins.set-up-models
+title: Create Azure Digital Twins models
+metadata:
+  title: Create Azure Digital Twins models
+  description: Add models to Azure digital twins and instantiate models
+  ms.date: 10/30/2020
+  author: teodelas
+  ms.author: teodelas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-set-up-models.md)]
