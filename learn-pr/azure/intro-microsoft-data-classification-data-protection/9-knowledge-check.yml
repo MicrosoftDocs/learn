@@ -50,7 +50,7 @@ questions:
     - content: "Sensitivity labels"
       isCorrect: false
       explanation: "That's not correct. Azure Information Protection scanner can work on local file servers and discover files that contain sensitive information types."
-   - content: "You need to discover applications in your local network that work with cloud services and are not under the control of your IT department. What solution should you choose?"
+  - content: "You need to discover applications in your local network that work with cloud services and are not under the control of your IT department. What solution should you choose?"
     choices:
     - content: "Azure Information Protection"
       isCorrect: false
@@ -61,7 +61,7 @@ questions:
     - content: "Cloud App Security"
       isCorrect: true
       explanation: "That's correct. You should use Cloud App Security for this."
-   - content: "What is the primary purpose of data encryption with customer key?"
+  - content: "What is the primary purpose of data encryption with customer key?"
     choices:
     - content: "To replace Bitlocker encryption."
       isCorrect: false
