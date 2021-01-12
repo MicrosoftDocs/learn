@@ -104,12 +104,6 @@ First you'll create the MongoDB database for holding the data captured from the 
 
 1. At the prompt, type **yes** to continue connecting.
 1. Enter the password **Pa55w.rdPa55w.rd**.
-1. To import the MongoDB public GPG key, enter this command. The command should return **OK**:
-
-    ```bash
-    wget -qO - https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -
-    ```
-
 1. To create a list of packages, enter this command:
 
     ```bash
@@ -127,7 +121,7 @@ First you'll create the MongoDB database for holding the data captured from the 
 1. To install MongoDB, enter this command:
 
     ```bash
-    sudo apt-get install -y mongodb-org
+    sudo apt-get install -y mongodb
     ```
 
     The installation should proceed with messages about installing, preparing, and unpacking packages. It can take a few minutes for the installation to complete.
@@ -139,22 +133,15 @@ By default, the Mongo DB instance is configured to run without authentication. I
 1. To open the MongoDB configuration file, run this command:
 
     ```bash
-    sudo nano /etc/mongod.conf
+    sudo nano /etc/mongodb.conf
     ```
 
 1. In the file, locate the **bindIp** setting, and set it to **0.0.0.0**.
-1. Add the following setting. If there is already a `security` section, replace it with this code. Otherwise add the code on two new lines:
-
-    ```bash
-    security:
-        authorization: 'enabled'
-    ```
-
 1. To save the configuration file, press <kbd>Esc</kbd> and then press <kbd>CTRL + X</kbd>. Press <kbd>y</kbd> and then <kbd>Enter</kbd> to save the modified buffer.
 1. To restart the MongoDB service and apply your changes, enter this command:
 
     ```bash
-    sudo service mongod restart
+    sudo service mongodb restart
     ```
 
 1. To connect to the MongoDB service, enter this command:
@@ -194,7 +181,7 @@ By default, the Mongo DB instance is configured to run without authentication. I
 1. To connect to MongoDB with the new administrator's account, run this command:
 
     ```bash
-    mongo -u "administrator" -p "Pa55w.rd"
+    mongo admin -u "administrator" -p "Pa55w.rd"
     ```
 
 1. To switch to the **DeviceData** database, execute this command:
@@ -224,13 +211,13 @@ By default, the Mongo DB instance is configured to run without authentication. I
 1. Run the following command restart the mongodb service. Verify that the service restarts without any error messages:
 
     ```bash
-    sudo service mongod restart
+    sudo service mongodb restart
     ```
 
 1. Run the following command to verify that you can now log in to mongodb as the deviceadmin user:
 
     ```bash
-    mongo -u "deviceadmin" -p "Pa55w.rd" --authenticationDatabase DeviceData
+    mongo DeviceData -u "deviceadmin" -p "Pa55w.rd"
     ```
 
 1. At the **>** prompt, run the following command to quit the mongo shell:
