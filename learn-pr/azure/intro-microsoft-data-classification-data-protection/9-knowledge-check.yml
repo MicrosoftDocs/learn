@@ -14,8 +14,7 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: Check your knowledge
-
-questions:
+  questions:
 
   - content: "You're planning to use sensitivity labels. Select one thing that you cannot do with sensitivity labels."
     choices:
