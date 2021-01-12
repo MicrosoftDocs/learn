@@ -28,7 +28,7 @@ Download the zip file that contains the dataset:
 
 1. Select **Download**. 
 
-   :::image type="content" source="../media/github-download-dataset.png" alt-text="Screenshot that shows Github in a web browser, with the dataset zip file and the Download button highlighted."::: 
+   :::image type="content" source="../media/github-download-dataset.png" alt-text="Screenshot that shows GitHhub in a web browser, with the dataset zip file and the Download button highlighted."::: 
 
    The zip file is copied to your computer and stored in your default location for downloaded files. 
 

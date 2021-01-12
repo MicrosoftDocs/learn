@@ -8,9 +8,9 @@ It's likely that you've heard of AI, machine learning, or deep learning. Let's i
 
 - **Machine learning**: Machine learning is a subset of AI. Machine learning uses techniques to train machines based on *experience*. Think of experience as a dataset, with right and wrong answers already given. In machine learning, the computer uses the answers that are supplied to improve how the computer completes specific tasks. The field of machine learning also includes *deep learning*.
 
-- **Deep learning**: Deep learning is a subset of machine learning that's based on *artificial neural networks (ANNs)*. The learning process is *deep* because ANNs consists of multiple layers: input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure enables a machine to learn through its own data processing.
+- **Deep learning**: Deep learning is a subset of machine learning that's based on *artificial neural networks (ANNs)*. The learning process is *deep* because ANNs consists of multiple layers: input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a specific predictive task. The neural network structure enables a machine to learn through its own data processing.
 
-   :::image type="content" source="../media/machine-learning-types.png" alt-text="A graphical depiction of the relationship between A I, machine learning, and deep learning." border="false":::
+   :::image type="content" source="../media/machine-learning-types.png" alt-text="A graphical depiction of the nested relationship between A I, machine learning, and deep learning." border="false":::
 
 When we build a model, we're trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
 
@@ -26,7 +26,7 @@ To better understand the process of building a machine learning model, here's a 
 
 1. *Ask a pointed question.* Our question is, can we identify a bird's species from an image of a bird, to help document different trends and patterns of bird habits?
 
-1. *Prepare data.* We have a dataset of bird images from the CLO that's clean and prepared, so this step is taken care of for us. If you built a different model, you would need to find and prepare data for training the model. You would want to find data that would help you answer the pointed question that you're interested in.
+1. *Prepare data.* We have a dataset of bird images from the Cornell Lab that's clean and prepared, so this step is taken care of. If you built a different model, you would need to find and prepare data for training your model. You would want to find data that would help you answer the pointed question that you're interested in.
 
 1. *Select an algorithm.* The Custom Vision service in Azure uses a *convolutional neural network (CNN)*, so we don't have to worry about this step. A CNN is a type of deep learning that's commonly used to analyze images. Having the algorithm already created saves us a *lot* of time!
 
@@ -34,8 +34,8 @@ To better understand the process of building a machine learning model, here's a 
 
 1. *Test the model by using unseen (new) data.* It's important to test our model by adding new data. We'll do an internet search and find some test images to see how the models performs with data it wasn't trained with. We'll discuss later in the module why testing this way is important.
 
-1. *Deploy the model.* Custom Vision gives us some options when it's time to deploy our model. We can deploy to an endpoint to integrate the model, or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option.
+1. *Deploy the model.* Custom Vision gives us some options when it's time to deploy our model. We can deploy to an endpoint to integrate the model or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option that's available in the Custom Vision portal.
 
-   :::image type="content" source="../media/machine-learning-process.png" alt-text="A graphical depiction of the process of building a machine learning model." border="false":::
+   :::image type="content" source="../media/machine-learning-process.png" alt-text="A graphical depiction of six steps in the process of building a machine learning model." border="false":::
 
 Let's get started building our model!
