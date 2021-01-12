@@ -44,7 +44,7 @@ public class SessionReplicationController {
     }
 
     @GetMapping("/session")
-    public int session(HttpSession session) {
+    public String session(HttpSession session) {
         Integer test = (Integer) session.getAttribute("test");
         if (test == null) {
             test = 0;
@@ -52,7 +52,7 @@ public class SessionReplicationController {
             test++;
         }
         session.setAttribute("test", test);
-        return test;
+        return "[" + session.getId() + "]-" + test;
     }
 }
 ```
