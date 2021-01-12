@@ -18,7 +18,7 @@ When someone sends an email message that matches an encryption mail flow rule, t
 
 Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Outlook.com, Gmail, and Yahoo accounts receive a wrapper mail that directs them to the OME portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
 
-:::image type="content" source="../media/8-One-Time-Passcode.png" alt-text="Screenshot of wrapper mail for recipient of encrypted message.":::
+:::image type="content" source="../media/8-One-Time-Passcode.png" alt-text="Screenshot of wrapper mail for recipient of encrypted message.":::
 
 End users that read encrypted or rights-protected mail on clients other than Outlook also use the OME portal to observe encrypted and rights-protected messages that they receive.
 
