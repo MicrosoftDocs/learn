@@ -118,9 +118,9 @@ To get an idea of costs associated with scaling the app, you can increase the co
 
 Continue to modify the options on this pane to evaluate the monthly costs associated with the Azure App Service.
 
-The updated Premium v3 (Pv3) offering, which leverages the latest Azure Dv4 Virtual Machine (VM) hardware to deliver improved performance and scalability is available for customers to utilize as well. A cost comparison of Premium v2 and Premium v3 shows the App Service monthly cost comparisons.
+The updated Premium v3 (Pv3) offering, which leverages the latest Azure Dv4 Virtual Machine (VM) hardware to deliver improved performance and scalability is available for customers to utilize as well. A cost comparison of Premium v2 and Premium v3 depicts the App Service monthly cost comparisons.
 
-:::image type="content" source="../media/3-v2-v3-compare.png" alt-text="A comparison of Premium v2 and Premium v3 showing cost of $147 USD for v2 and $113 USD for v3 for monthly.":::
+:::image type="content" source="../media/3-v2-v3-compare.png" alt-text="A comparison of Premium v2 and Premium v3 depicting cost of $147 USD for v2 and $113 USD for v3 for monthly.":::
 
 ### Determine Azure SQL Database costs
 
