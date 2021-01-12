@@ -1,4 +1,4 @@
-With the artifacts built and published into Azure Pipelines and the required Azure resources provisioned, you're ready for the last part of the deployment process. That part involves deploying the package containing the sample ASP.NET web app into Azure App Service, setting up its data store, and configuring a connection string allowing the web app to access the data store. Your implementation will comprise a separate Azure Pipeline stage containing Azure App Service deployment and configuration tasks.
+You've built and published the artifacts into Azure Pipelines and the required Azure resources are provisioned. You're now ready for the last part of the deployment process. That part involves deploying the package that contains the sample ASP.NET web app into Azure App Service, setting up its data store, and configuring a connection string that allows the web app to access the data store. Your implementation will comprise a separate Azure Pipeline stage containing Azure App Service deployment and configuration tasks.
 
 ## Azure Pipelines ASP.NET web app deployment tasks
 
@@ -20,11 +20,11 @@ To implement these steps, use the following Azure Pipelines tasks:
 > [!NOTE]
 > You need to ensure that the download path of the **Download build artifacts** task matches the package location specified in the **Azure App Service deploy** task.
 
-To simplify implementing these tasks with the YAML-based approach, you can use the task assistant. To target the same Azure resources provisioned in the previous exercise, you should reference the variables in the same variable group you used during Azure resource provisioning stage.
+To simplify implementing these tasks with the YAML-based approach, you can use the task assistant. To target the same Azure resources that you provisioned in the previous exercise, you should reference the variables in the same variable group you used during the Azure resource provisioning stage.
 
 ## Azure Pipelines ASP.NET web app deployment agents
 
-As the Azure resource deployment stage of the pipeline, this stage does not have specific operating system dependencies. Effectively, you have the option of using self-hosted agents or any of the Microsoft-hosted agents, including those running Ubuntu or macOS X.
+As the Azure resource deployment stage of the pipeline, this stage does not have specific operating system dependencies. Effectively, you have the option of using self-hosted agents or any of the Microsoft-hosted agents, which include those running Ubuntu or macOS X.
 
 ## Continuous integration and continuous deployment
 
