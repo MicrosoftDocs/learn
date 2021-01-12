@@ -4,13 +4,15 @@ In this module, you learned that Azure Web Application Firewall creates a barrie
 
 Yes, it's possible to write frontend and backend code to deter the many vulnerabilities that plague modern web apps. However, there are hundreds of possible exploits to consider. Writing the code to handle just a single vulnerability takes a great deal of time and requires specialized expertise. And with threat actors constantly inventing new exploits, protecting web apps in-house requires a significant commitment and a large budget.
 
-You can deploy Azure Web Application Firewall in minutes and your web apps are instantly protected from hundreds of common exploits. Microsoft's security experts manage your core rule set and you can tweak the protection as needed with custom rules. You recommend Azure Web Application Firewall to Contoso IT management as a way of providing immediate and cost-effective protection to all your web apps.
+<!--  Paul, per the MS Style link about security (I included in unit 2), do we need to soften the word “protected” below?  -->
+
+You can deploy Azure Web Application Firewall in minutes and your web apps are instantly protected from hundreds of common exploits. Microsoft's security experts manage your core rule set and you can adjust the protection as needed with custom rules. You recommend Azure Web Application Firewall to Contoso IT management as a way to help provide immediate and cost-effective protection to all your web apps.
 
 ## Learn more
 
-Here are some links to more information about Azure Web Application Firewall:
+To learn more about Azure Web Application Firewall, refer to the following articles:
 
-- [Azure Web Application Firewall product page](https://azure.microsoft.com/services/web-application-firewall/)
+- [Azure Web Application Firewall](https://azure.microsoft.com/services/web-application-firewall/)
 - [Tutorial: Create an application gateway with a Web Application Firewall using the Azure portal](https://docs.microsoft.com/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal)
 - [Tutorial: Create a Web Application Firewall policy on Azure Front Door using the Azure portal](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal)
 - [Azure Web Application Firewall pricing](https://azure.microsoft.com/pricing/details/web-application-firewall)
