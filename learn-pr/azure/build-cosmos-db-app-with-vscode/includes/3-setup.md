@@ -6,9 +6,9 @@ In this unit, you will create a basic console app using the integrated terminal,
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named `learning-module` in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named `learning-module` in the location of your choice, and then select **Select Folder**.
 
-1. Ensure that file auto-save is enabled by clicking on the File menu and checking **Auto Save** if it is blank. You will be copying in several blocks of code, and this will ensure you are always operating against the latest edits of your files.
+1. Ensure that file auto-save is enabled by selecting the File menu and checking **Auto Save** if it is blank. You will be copying in several blocks of code, and this will ensure you are always operating against the latest edits of your files.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
@@ -43,7 +43,7 @@ In this unit, you will create a basic console app using the integrated terminal,
     dotnet restore
     ```
 
-1. At the top of the Explorer pane, click **Program.cs** to open the file.
+1. At the top of the Explorer pane, select **Program.cs** to open the file.
 
 > [!NOTE] 
 >  If you do not show the **Program.cs** in Explorer pane, click file > open file > and open it from file explorer.  
@@ -61,7 +61,7 @@ In this unit, you will create a basic console app using the integrated terminal,
     using Newtonsoft.Json;
     ```
 
-    If you get a message about adding required missing assets, click **Yes**.
+1. If you get a message about adding required missing assets, select **Yes**.
 
 1. Create a new file named App.config in the `learning-module` folder, and add the following code.
 
@@ -75,7 +75,7 @@ In this unit, you will create a basic console app using the integrated terminal,
     </configuration>
     ```
 
-1. Copy your connection string by clicking the Azure icon on the left, expanding your Concierge Subscription, right-clicking your new Azure Cosmos DB account, and then clicking **Copy Connection String**.
+1. Copy your connection string by selecting the Azure icon on the left, expanding your Concierge Subscription, right-clicking your new Azure Cosmos DB account, and then selecting **Copy Connection String**.
 
 1. Paste the connection string into the end of the App.config file, and then copy the **AccountEndpoint** portion from the connection string into the **accountEndpoint** value in App.config.
 
@@ -84,7 +84,6 @@ In this unit, you will create a basic console app using the integrated terminal,
     ```xml
     <add key="accountEndpoint" value="https://<account-name>.documents.azure.com:443/" />
     ```
-
 
     Your final App.config file looks similar to this.
 
@@ -162,7 +161,7 @@ Now it's time to create an instance of the `DocumentClient`, which is the client
     }
     ```
 
-1. In the integrated terminal, again, type the following command to run the program to ensure it runs.
+1. In the integrated terminal, again, run the following command to ensure the program runs.
 
     ```bash
     dotnet run

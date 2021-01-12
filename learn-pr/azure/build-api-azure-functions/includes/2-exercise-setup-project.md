@@ -18,9 +18,9 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. To open the Command Palette in Visual Studio Code, press <kbd>F1</kbd>.
 
-1. In the prompt, enter "clone".
+1. In the prompt, enter *clone*.
 
-1. From the Command Palette, select "Git: Clone".
+1. From the Command Palette, select **Git: Clone**.
 
 1. Enter the following repo URL.
 
@@ -38,13 +38,13 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 Two projects will appear in Visual Studio Code: "frontend" and "api". The "frontend" project contains the web app. The "api" project is where you will be building the serverless API with Azure Functions.
 
-## Run the front-end project
+## Run the frontend project
 
 1. To open the integrated terminal in Visual Studio Code, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
 1. Select "frontend".
 
-1. To run the front-end project in the browser, from the integrated terminal, run the `npm start` command.
+1. To run the frontend project in the browser, from the integrated terminal, run the `npm start` command.
 
    ```bash
    npm start
