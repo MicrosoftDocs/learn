@@ -30,28 +30,46 @@ _1. Event: Alex buys a coffee._
 
 _2. Event Alex buys a cappuccino._
 
-One Barista would have to listen carefully to all events to get the whole order of Alex. But two Batistas could also prepare and serve the beverages independently.
+One Barista would have to listen carefully to all events to get the whole order of Alex. But two Baristas could also prepare and serve the beverages independently.
 
 ### Event Carried State Transfer
 
-With Event Carried State Transfer all the needed information are stored in the single event. That comes handy, if a event got lost or your service is not listening to all the events. For our example the events would look like this:
+With Event Carried State Transfer, all the needed information is stored in the single event. That comes handy, if an event got lost or your service is not listening to all the events. For our example, the events would look like this:
 
 _1. Event: Alex buys a coffee._
 
 _2. Event Alex buys, additionally to the coffee, a cappuccino._
 
-For one Barista listening only to the second event could already be enough. For two Baristas, the second one would have look at the first one which would allow to serve the order together but might lead into a longer process than doing it completely decoupled.
+For one Barista listening only to the second event, could already be enough. For two Baristas, the second one would have look at the first one, which would allow to serve the order together but might lead into a longer process than doing it completely decoupled.
 
 ### Event Sourcing
 
-With Event Souring the event storage comes into focus. As you can see, the events are the same as in the first example. But the Barista is important for this concept. In the moment, when the Barista receives an event, he or she would think about all corresponding events to get the current state. So for us, all the orders "Alex" has made. Getting the second order, the Barista would know, that Alex' order consists of a coffee, from remembering the first order, and a cappuccino, as this one just got ordered. Working in parallel with a second Barista isn't as easily possible. But when we add a waiter to receive the orders and serve the beverages, we can let all Baristas work independently preparing the drinks without having to know anything about the customers. Event Sourcing adds another layer of complexity but also decoupling.
+With Event Souring, the event storage comes into focus. As you can see, the events are the same as in the first example. But the Barista is important for this concept. In the moment, when the Barista receives an event, and then thinks about all corresponding events, to get the current state. So for us, all the orders "Alex" has made. Getting the second order, the Barista would know, that Alex' order consists of a coffee, from remembering the first order, and a cappuccino, as this one just got ordered. Working in parallel with a second Barista isn't as easily possible. But when we add a server to receive the orders and serve the beverages, we can let all Baristas work independently preparing the drinks without having to know anything about the customers. The server is the so called Event Store, persisting the events, in that scenario. In summary, Event Sourcing adds another layer of complexity but also decoupling.
 
 _1. Event: Alex buys a coffee._
 
-_Waiter: (First) order (for Alex): Coffee_
+_Server: (First) order (for Alex): Coffee_
 
 _2. Event Alex buys a cappuccino._
 
-_Waiter: (Second) order (for Alex): Cappuccino_
+_Server: (Second) order (for Alex): Cappuccino_
 
-### CQRS
+### Command and Query Responsibility Segregation (CQRS) pattern
+
+The Command and Query Responsibility Segregation (CQRS) pattern separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.
+
+CQRS separates reads and writes into different models, using commands to update data, and queries to read data.
+
+Commands should be task based, rather than data centric. ("Book hotel room", not "set ReservationStatus to Reserved").
+Commands may be placed on a queue for asynchronous processing, rather than being processed synchronously.
+Queries never modify the database. A query returns a DTO that does not encapsulate any domain knowledge.
+
+ In a CQRS context, one benefit of Event Sourcing is that the same events can be used to notify other components — in particular, to notify the read model. The read model uses the events to create a snapshot of the current state, which is more efficient for queries. However, Event Sourcing adds complexity to the design.
+
+Benefits of CQRS include:
+
+- __Independent scaling.__ CQRS allows the read and write workloads to scale independently, and may result in fewer lock contentions.
+- __Optimized data schemas.__ The read side can use a schema that is optimized for queries, while the write side uses a schema that is optimized for updates.
+- __Security.__ It's easier to ensure that only the right domain entities are performing writes on the data.
+- __Separation of concerns.__ Segregating the read and write sides can result in models that are more maintainable and flexible. Most of the complex business logic goes into the write model. The read model can be relatively simple.
+- __Simpler queries.__ By storing a materialized view in the read database, the application can avoid complex joins when querying.

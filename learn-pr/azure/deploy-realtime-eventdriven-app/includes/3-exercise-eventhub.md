@@ -1,4 +1,4 @@
-For our example, we want to build a function, which is simulating telemetric data and send it to an Event Hub. Later, another function can listen to this event, process, and store it into a Cosmos DB.
+For our example, we'll use Event Sourcing in a CQRS context. So let's build a function, which is simulating telemetric data and send it to an Event Hub. Later, another function can listen to this event, process, and store it into a Cosmos DB.
 
 ## Prepare your environment
 
