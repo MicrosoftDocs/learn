@@ -30,90 +30,148 @@ First you'll create the MongoDB database for holding the data captured from the 
 ### Create a MongoDB database server
 
 1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
-1. In the **Search the Marketplace** box, type ***MongoDB**, and then press Enter.
-1. On the **Marketplace** page, select **MongoDB Certified by Bitnami **.
-1. On the **MongoDB Certified by Bitnami ** page select **Create**.
-1. On the **Create a virtual machine** page, enter the following details, and then select **Next: Disks \>**.
+1. In the **Search the Marketplace** box, type **Ubuntu**, and then press Enter.
+1. On the **Marketplace** page, select **Ubuntu Server 18.04 LTS**. 
+1. On the **Ubuntu Server 18.04 LTS** page, select **Create**.
+1. On the **Create a virtual machine** page, enter the following details:
 
     | Property  | Value  |
     |---|---|
     | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
-    | Virtual machine name | **mongodbserver** |
+    | Virtual machine name | mongodbserver | 
     | Region | Select the same location that you specified for the resource group |
-    | Availability options | **No infrastructure redundancy required** |
-    | Image | **MongoDB Community 4.0 on Ubuntu - Gen 1** |
-    | Azure Spot instance | **No** |
-    | Size | **Standard A1_v2** |
-    | Authentication type | **Password** |
-    | Username | **azureuser** |
-    | Password | **Pa55w.rdPa55w.rd** |
-    | Confirm password | **Pa55w.rdPa55w.rd** |
+    | Availability options | No infrastructure redundancy required |
+    | Image | Ubuntu Server 18.04 LTS - Gen1 |
+    | Azure Spot instance | Unchecked |
+    | Size | Standard A1_v2 |
+    | Authentication type | Password |
+    | Username | azureuser |
+    | Password | Pa55w.rdPa55w.rd |
+    | Confirm password | Pa55w.rdPa55w.rd |
+    | Public inbound ports | Allow selected ports |
+    | Select inbound ports | SSH (22) |
+
+1. Select **Next: Disks \>**.
+1. On the **Disks** page, leave the settings at their default, and then select **Next: Networking \>**.
+1. On the **Networking** page, enter the following details:
+
+    | Property  | Value  |
+    |---|---|
+    | Virtual network | databasevnet |
+    | Subnet | default (10.0.0.0/28) |
+    | Public IP | (new) mongodbserver-ip |
+    | NIC network security group | Advanced |
+    | Configure network security group | (new) mongodbserver-nsg |
+    | Accelerated networking | Unchecked |
+    | Load balancing | Unchecked |
 
 1. Select **Review + create \>**.
 1. On the validation page, select **Create**.
-1. Wait for the virtual machine to be deployed before continuing.
-
-### Update the Network Security Group
-
+1. Wait for the virtual machine to be deployed before continuing
 1. In hamburger menu of the Azure portal, select **All resources**.
 1. On the **All resources** page, select **mongodbserver-nsg**.
 1. On the **mongodbserver-nsg** page, under **Settings**, select **Inbound security rules**.
 1. On the **mongodbserver-nsg - Inbound security rules** page, select **+ Add**.
-1. In the **Add inbound security rule** pane, enter the following details, and then select **Add**:
+1. In the **Add inbound security rule** pane, enter the following details:
 
     | Property  | Value  |
     |---|---|
-    | Source | **Any** |
-    | Source port ranges | **\*** |
-    | Destination | **Any** |
-    | Destination port ranges | **27017** |
-    | Protocol | **Any** |
-    | Action | **Allow** |
-    | Priority | **1030** |
-    | Name | **Mongodb-port** |
-    | Description | **Port that clients use to connect to MongoDB** |
+    | Source | Any |
+    | Source port ranges | * |
+    | Destination | Any |
+    | Destination port ranges | 27017 |
+    | Protocol | Any |
+    | Action | Allow |
+    | Priority | 1030 |
+    | Name | Mongodb-port |
+    | Description | Port that clients use to connect to MongoDB |
 
-### Restart MongoDB to run under a user account
+1. Select **Add**.
 
-By default, the Mongo DB instance is configured to run without authentication. In this task, you'll enable authentication and create the necessary user account to perform migration. You'll also add an account that a test application can use to query the database.
+### Task 3: Install MongoDB
 
 1. In the hamburger menu the Azure portal, select **All resources**.
-1. On the **All resources** page, select **mongodbserver**.
-1. On the left, under **Support + troubleshooting**, select **Boot Diagnostics**.
-1. Select the **Serial log** tab.
-
-    :::image type="content" source="../media/6-copy-mongodb-root-password.png" alt-text="Screenshot of copying the MongoDB password":::
-
-1. Scroll down through the diagnostics messages until you see the `########## Setting Bitnami application password` section.
-1. Make a note of the password inside the quotes, this is the root password for MongoDB and you'll need it in later steps.
-1. On the left, select **Overview**.
-1. Copy the **Public IP address**.
-
-    :::image type="content" source="../media/6-copy-public-ipaddress.png" alt-text="Screenshot of copying the public IP address":::
-
-1. Return to the Cloud Shell, enter the following command to connect to the mongodbserver virtual machine. Replace *\<ip address\>* with the value of the  IP address you just copied:
+1. On the **All resources** page, select **mongodbserver-ip**.
+1. On the **mongodbserver-ip** page, make a note of the **IP address**.
+1. In the toolbar at the top of the Azure portal, select **Cloud Shell**.
+1. If the **You have no storage mounted** message box appears, select **Create storage**.
+1. When the Cloud Shell starts, in the drop-down list above the Cloud Shell window, select **Bash**.
+1. In the Cloud Shell, enter the following command to connect to the mongodbserver virtual machine. Replace *\<ip address\>* with the value of the **mongodbserver-ip** IP address:
 
     ```bash
     ssh azureuser@<ip address>
     ```
 
 1. At the prompt, type **yes** to continue connecting.
-1. Enter the password **Pa55w.rdPa55w.rd**
-
-### Configure the MongoDB database
-
-1. Run the following command to connect to the MongoDB service:
+1. Enter the password **Pa55w.rdPa55w.rd**.
+1. To import the MongoDB public GPG key, enter this command. The command should return **OK**:
 
     ```bash
-    mongo admin --username root --password ROOTPASSWORD
+    wget -qO - https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -
     ```
 
-1. Replace the ROOTPASSWORD with the Bitnami password you noted above.
+1. To create a list of packages, enter this command:
 
-1. At the **>** prompt, run the following commands. These commands create a new user named **administrator** that has administrative and monitoring rights over the database server:
+    ```bash
+    echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+    ```
 
-    ```mongosh
-    use admin
+    The command should return text similar to `deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.0 multiverse`. This indicates that the package list has been successfully created.
+
+1. To reload the package database, enter this command:
+
+    ```bash
+    sudo apt-get update
+    ```
+
+1. To install MongoDB, enter this command:
+
+    ```bash
+    sudo apt-get install -y mongodb-org
+    ```
+
+    The installation should proceed with messages about installing, preparing, and unpacking packages. It can take a few minutes for the installation to complete.
+
+### Task 4: Configure the MongoDB database
+
+By default, the Mongo DB instance is configured to run without authentication. In this task, you'll configure MongoDB to bind to the local network interface so that it can accept connections from other computers. You'll also enable authentication and create the necessary user account to perform migration. Finally, you'll add an account that a test application can use to query the database.
+
+1. To open the MongoDB configuration file, run this command:
+
+    ```bash
+    sudo nano /etc/mongod.conf
+    ```
+
+1. In the file, locate the **bindIp** setting, and set it to **0.0.0.0**.
+1. Add the following setting. If there is already a `security` section, replace it with this code. Otherwise add the code on two new lines:
+
+    ```bash
+    security:
+        authorization: 'enabled'
+    ```
+
+1. To save the configuration file, press <kbd>Esc</kbd> and then press <kbd>CTRL + X</kbd>. Press <kbd>y</kbd> and then <kbd>Enter</kbd> to save the modified buffer.
+1. To restart the MongoDB service and apply your changes, enter this command:
+
+    ```bash
+    sudo service mongod restart
+    ```
+
+1. To connect to the MongoDB service, enter this command:
+
+    ```bash
+    mongo
+    ```
+
+1. At the **>** prompt, to switch to the **admin** database, run this command:
+
+    ```bash
+    use admin;
+    ```
+
+1. To create a new user named **administrator**, run the following command. You can enter the command on one line or across multiple lines for better readability. The command is executed when the `mongo` program reaches the semicolon:
+
+    ```bash
     db.createUser(
         {
             user: "administrator",
@@ -124,13 +182,30 @@ By default, the Mongo DB instance is configured to run without authentication. I
                 "readWriteAnyDatabase"
             ]
         }
-    )
+    );
     ```
 
-1. Run the following commands to create another user named **deviceadmin** for a database named **DeviceData**. After running the `db.shutdownserver();` command you will receive some errors that you can ignore:
+1. To exit the `mongo` program, enter this command;
 
-    ```mongosh
-    use DeviceData;
+    ```bash
+    exit;
+    ```
+
+1. To connect to MongoDB with the new administrator's account, run this command:
+
+    ```bash
+    mongo -u "administrator" -p "Pa55w.rd"
+    ```
+
+1. To switch to the **DeviceData** database, execute this command:
+
+    ```bash
+    use DeviceData;    
+    ```
+
+1. To create a user named **deviceadmin**, which the app will use to connect to the database, run this command:
+
+    ```bash
     db.createUser(
         {
             user: "deviceadmin",
@@ -138,11 +213,21 @@ By default, the Mongo DB instance is configured to run without authentication. I
             roles: [ { role: "readWrite", db: "DeviceData" } ]
         }
     );
-    use admin;
+    ```
+
+1. To exit the `mongo` program, enter this command;
+
+    ```bash
     exit;
     ```
 
-1. Run the following command to verify that you can now sign in to mongodb as the deviceadmin user:
+1. Run the following command restart the mongodb service. Verify that the service restarts without any error messages:
+
+    ```bash
+    sudo service mongod restart
+    ```
+
+1. Run the following command to verify that you can now log in to mongodb as the deviceadmin user:
 
     ```bash
     mongo -u "deviceadmin" -p "Pa55w.rd" --authenticationDatabase DeviceData
@@ -150,7 +235,7 @@ By default, the Mongo DB instance is configured to run without authentication. I
 
 1. At the **>** prompt, run the following command to quit the mongo shell:
 
-    ```mongosh
+    ```bash
     exit;
     ```
 
