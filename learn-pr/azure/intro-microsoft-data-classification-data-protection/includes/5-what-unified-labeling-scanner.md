@@ -10,7 +10,7 @@ You can run the Azure Information Protection scanner in discovery mode only; you
 
 The following image shows the Azure Information Protection scanner architecture, where the scanner discovers files across your on-premises and SharePoint servers.
 
-:::image type="content" source="../media/5-ul-scanner-arch.png" alt-text="Image displays unified labeling scanner architecture.":::
+:::image type="content" source="../media/5-ul-scanner-arch.png" alt-text="Image displays unified labeling scanner architecture.":::
 
 ## How to configure Azure Information Protection scanner
 
