@@ -73,7 +73,8 @@ Identify the subtasks of *Use the Unix shell to wrangle log data*
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
 
-1. **Knowledge check**
+    **Knowledge check**
+
 
     What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
 
