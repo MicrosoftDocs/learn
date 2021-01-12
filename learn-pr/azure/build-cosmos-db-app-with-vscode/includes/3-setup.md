@@ -157,7 +157,7 @@ Now it's time to create an instance of the `DocumentClient`, which is the client
     }
     ```
 
-1. In the integrated terminal, again, type the following command to run the program to ensure it runs.
+1. In the integrated terminal, again, run the following command to ensure the program runs.
 
     ```bash
     dotnet run
