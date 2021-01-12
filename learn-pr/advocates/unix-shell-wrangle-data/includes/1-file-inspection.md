@@ -6,7 +6,8 @@ As a developer, you'll often need to extract information from logs. In this modu
 
     ```bash
     mkdir data
-    wget
+    wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
+    wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
     ```
 
 1. Verify that you have the correct files by using the command `ls`.
