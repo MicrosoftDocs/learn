@@ -57,7 +57,7 @@ In this unit, you will create a basic console app using the integrated terminal,
     using Newtonsoft.Json;
     ```
 
-    If you get a message about adding required missing assets, select **Yes**.
+1. If you get a message about adding required missing assets, select **Yes**.
 
 1. Create a new file named App.config in the `learning-module` folder, and add the following code.
 
@@ -80,7 +80,6 @@ In this unit, you will create a basic console app using the integrated terminal,
     ```xml
     <add key="accountEndpoint" value="https://<account-name>.documents.azure.com:443/" />
     ```
-
 
     Your final App.config file looks similar to this.
 

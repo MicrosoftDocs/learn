@@ -34,7 +34,7 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 
 1. Azure Storage encryption is enabled for all new and existing storage accounts and cannot be disabled.
 
-![Screenshot the storage setting pane](../media/4-storage-encryption.png)
+    ![Screenshot the storage setting pane](../media/4-storage-encryption.png)
 
 ### Periodically regenerate access keys - Level 1
 
@@ -52,13 +52,13 @@ When you create a storage account, Azure generates two 512-bit storage access ke
 
 1. Select **Apply**.
 
-![Screenshot the storage setting pane](../media/4-storage-timespan.png)
+    ![Screenshot the storage setting pane](../media/4-storage-timespan.png)
 
 1. To regenerate storage access keys for a specific storage account if you are not using Azure Key Vault with key rotation:
 
-```http
-POST https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/regenerateKey?api-version=2019-04-01
-```
+    ```http
+    POST https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}/regenerateKey?api-version=2019-04-01
+    ```
 
 ### Require Shared Access Signature (SAS) tokens to expire within an hour - Level 1
 
@@ -83,7 +83,7 @@ Shared access signature tokens should be allowed only over https protocol.
 
 Both SAS features follow.
 
-![Screenshot the storage setting pane](../media/4-storage-SAS.png)
+    ![Screenshot the storage setting pane](../media/4-storage-SAS.png)
 
 ### Enable Azure Files encryption - Level 1
 
@@ -99,7 +99,7 @@ Azure Disk Encryption is used to encrypt the OS and data disks in IaaS Virtual M
 
 1. Azure Storage encryption is enabled for all new and existing storage accounts and cannot be disabled.
 
-![Screenshot the storage setting pane](../media/4-storage-encryption.png)
+    ![Screenshot the storage setting pane](../media/4-storage-encryption.png)
 
 ### Require only private access to blob containers - Level 1
 
@@ -113,7 +113,7 @@ You can enable anonymous, public read access to a container and its blobs in Azu
 
 1. Ensure that **Public access level** to **Private**.
 
-![Screenshot the storage setting pane](../media/4-storage-blob.png)
+    ![Screenshot the storage setting pane](../media/4-storage-blob.png)
 
-> [!TIP]
-> Remember to select **Save** if you make changes to any of the settings.
+    > [!TIP]
+    > Remember to select **Save** if you make changes to any of the settings.

@@ -1,7 +1,7 @@
 Logging and monitoring are a critical requirement when trying to identify, detect, and mitigate security threats. Having a proper logging policy can ensure you can determine when a security violation has occurred, but also potentially identify the culprit responsible. Azure Activity logs provide data about both external access to a resources and diagnostic logs, which provide information about the operation of that specific resource.
 
-> [!NOTE]
-> An Azure activity log is a subscription log that provides insight into subscription-level events that have occurred in Azure. Using the activity log, you can determine the what, the who, and the when for any write operations taken on the resources in your subscription.
+    > [!NOTE]
+    > An Azure activity log is a subscription log that provides insight into subscription-level events that have occurred in Azure. Using the activity log, you can determine the what, the who, and the when for any write operations taken on the resources in your subscription.
 
 ## Logging policy recommendations
 
@@ -22,13 +22,13 @@ There is a single Activity Log for each Azure subscription. It provides data abo
 
 1. Select **Save**.
 
-![Screenshot the activity log profile setting pane](../media/6-export-log.png)
+    ![Screenshot the activity log profile setting pane](../media/6-export-log.png)
 
 ### Ensure that activity log retention is set to 365 days or more - Level 1
 
 Setting the Retention (days) to 0 retains the data forever.
 
-1. Follow the previous steps. Adjust the **Retention days** slider bar.
+- Follow the previous steps. Adjust the **Retention days** slider bar.
 
 ### Create an activity log alert for "Creating a policy assignment" - Level 1
 
@@ -46,7 +46,7 @@ Setting the Retention (days) to 0 retains the data forever.
 
 1. Select **Done**.
 
-![Screenshot the activity log profile setting pane](../media/6-resource.png)
+    ![Screenshot the activity log profile setting pane](../media/6-resource.png)
 
 ### Create an activity log alert for "Creating, updating, or deleting a Network Security Group" - Level 1
 
@@ -80,7 +80,7 @@ Monitoring for **Create or update SQL Server Firewall Rule** events gives insigh
 
 1. Select **Done**.
 
-![Screenshot the activity log profile setting pane](../media/6-sql-server.png)
+    ![Screenshot the activity log profile setting pane](../media/6-sql-server.png)
 
-> [!TIP]
-> Remember to select **Save** if you make changes to any of the settings.
+    > [!TIP]
+    > Remember to select **Save** if you make changes to any of the settings.

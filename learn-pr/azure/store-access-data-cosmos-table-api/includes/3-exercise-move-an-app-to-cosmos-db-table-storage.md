@@ -88,7 +88,7 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
 
 1. Install the specified framework and/or SDK at:
 
-- [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
+    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
 
 1. To create and populate a table, run this command.
 
@@ -269,7 +269,9 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    ```bash
    dotnet run DisplayTable
    ```
+
    There should be no entries in the table, because you have not yet migrated the data.
+   
    ```
    DisplayTable
    Reading the contents of the Lenses table...
@@ -286,8 +288,7 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
 
 1. Install the specified framework and/or SDK at:
 
-- [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
-
+    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
 
 1. In the Cloud Shell, to create and populate a table, run the following command.
 
@@ -300,6 +301,7 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
    ```bash
    dotnet run DisplayTable
    ```
+
    You should see a table displayed like you saw with the Azure Storage Table.
 
 1. To add your own lens to the table, run a command like the following example.
@@ -342,7 +344,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
 
-## Investigate the contents of the Cosmos Database
+## Investigate the contents of the Cosmos database
 
 Now that you have changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
 

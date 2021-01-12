@@ -6,10 +6,12 @@ Here are the security recommendations to set Azure SQL Server policies. Included
 
 ### Enable auditing - Level 1
 
-Auditing for Azure SQL Database and SQL Data Warehouse tracks database events and writes them to an audit log in your Azure storage account, OMS workspace or Event Hubs. Auditing also:
+Auditing for Azure SQL Database and Azure Synapse Analytics tracks database events and writes them to an audit log in your Azure storage account, OMS workspace or Event Hubs. Auditing also:
 
 - Helps you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations.
 - Enables and facilitates adherence to compliance standards, although it doesn't guarantee compliance.
+
+To turn on Auditing:
 
 1. Sign in to the Azure portal.
 
@@ -19,7 +21,7 @@ Auditing for Azure SQL Database and SQL Data Warehouse tracks database events an
 
 1. Ensure that Auditing is set to **On**.
 
-![Screenshot the SQL Server setting pane](../media/5-auditing.png)
+    ![Screenshot the SQL Server setting pane](../media/5-auditing.png)
 
 ### Enable a threat detection service - Level 1
 
@@ -33,7 +35,7 @@ Threat detection for single and pooled databases detects anomalous activities in
 
 1. Select **Enable Advanced Data Security on the server**.
 
-![Screenshot the SQL Server setting pane](../media/5-enable_ads.png)
+    ![Screenshot the SQL Server setting pane](../media/5-enable_ads.png)
 
 ### Enable all threat detection types - Level 1
 
@@ -41,7 +43,7 @@ Advanced data security (ADS) provides a set of advanced SQL security capabilitie
 
 Advanced Threat Protection is part of the advanced data security (ADS) offering, which is part of the defense in depth SQL security strategy. Advanced Threat Protection can be accessed and managed via the central SQL ADS portal.
 
-![Screenshot the SQL Server setting pane](../media/5-auditing.png)
+    ![Screenshot the SQL Server setting pane](../media/5-auditing.png)
 
 ### Enable the option to send security alerts - Level 1
 
@@ -59,7 +61,7 @@ You can receive notifications about the detected threats via email notifications
 
 1. Ensure that **Send alerts** is set as appropriate.
 
-![Screenshot the SQL Server setting pane](../media/5-ads-email.png)
+    ![Screenshot the SQL Server setting pane](../media/5-ads-email.png)
 
 ### Enable the email service and co-administrators - Level 1
 
@@ -73,7 +75,7 @@ Providing the email address to receive alerts ensures that any detection of anom
 
 1. Under **Advanced Threat Protection Setting**, select **Email service and co-administrators**.
 
-![Screenshot the SQL Server setting pane](../media/5-ads-email2.png)
+    ![Screenshot the SQL Server setting pane](../media/5-ads-email2.png)
 
 ### Configure audit retention for more than 90 days - Level 1
 
@@ -87,7 +89,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 1. Select you Audit log destination, and then select **Configure**.
 
-![Screenshot the SQL Server auditing setting pane](../media/5-auditing2.png)
+    ![Screenshot the SQL Server auditing setting pane](../media/5-auditing2.png)
 
     The **Storage settings** pane appears.
 
@@ -95,7 +97,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 1. Select **OK**.
 
-![Screenshot the SQL Server auditing setting pane](../media/5-90days.png)
+    ![Screenshot the SQL Server auditing setting pane](../media/5-90days.png)
 
 ### Configure threat detection retention for more than 90 days - Level 1
 
@@ -117,7 +119,7 @@ A retention of zero days means logs are kept forever. Otherwise, the value can b
 
 1. Select **Save**.
 
-![Screenshot the SQL Server auditing setting pane](../media/5-90days2.png)
+    ![Screenshot the SQL Server auditing setting pane](../media/5-90days2.png)
 
-> [!TIP]
-> Remember to select **Save** if you make changes to any of the settings.
+    > [!TIP]
+    > Remember to select **Save** if you make changes to any of the settings.

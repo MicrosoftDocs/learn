@@ -66,11 +66,11 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 1. Select the **Enable Monitoring in Azure Security Center** link.
 
     ![Screenshot of the Security policy Azure security Center pane](../media/3-asc-enable-system-updates.png)
-    
+
 1. In this example, the ASC agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** appears. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** appears.
 
     ![Screenshot of the Security policy AuditIfNotExists](../media/3-asc-enable-auditing.png)
-    
+
     If enabled, **Audit** is displayed. If deployed but disabled, **Disabled** appears.
 
     ![Screenshot of the Security policy AuditIfNotExists](../media/3-state-of-audit.png)
@@ -87,8 +87,8 @@ Azure Security Center monitors security configurations by applying a set of over
 
 1. Check that **Vulnerabilities in security configuration on your virtual machine scale sets should be remediated** is one of the policies.
 
-> [!NOTE]
-> All of the following policies that have a (\*) in their title are listed in the **Security policies** pane as described above
+    > [!NOTE]
+    > All of the following policies that have a (\*) in their title are listed in the **Security policies** pane as described above
 
 ### Enable Endpoint Protection (\*) - Level 1
 
@@ -135,8 +135,9 @@ Azure Security Center will recommend that you enable Transparent Data Encryption
 Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already. This information will be used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your customer data has been accessed by an unlawful or unauthorized party. MSRC performs select security monitoring of the Azure network and infrastructure and receives threat intelligence and abuse complaints from third parties.
 
 1. Sign in to the Azure portal.
-1. Select **Cost Management + Billing** on the right side of the main menu.
-1. The **Contact info** screen is displayed.
+
+1. Select **Cost Management + Billing** on the right side of the main menu. The **Contact info** screen appears.
+
 1. Enter or validate the contact information displayed.
 
     ![Screenshot of the Contact information Azure security Center pane](../media/3-contact-info.png)
@@ -161,7 +162,7 @@ Azure Security Center will recommend that you provide security contact details f
 
 Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already.
 
-1. Using the previous **Email notifications** form; additional emails can be added separated by commas.
+- Using the previous **Email notifications** form; additional emails can be added separated by commas.
 
-> [!TIP]
-> Remember to select **Save** if you make changes to any of the settings.
+    > [!TIP]
+    > Remember to select **Save** if you make changes to any of the settings.
