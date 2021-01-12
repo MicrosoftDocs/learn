@@ -110,3 +110,6 @@ You'll be using a virtual machine in later exercises. Run these commands to set 
         --name SQL2019Server \
         --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
+
+> [!WARNING]
+> Do not deactivate the sandbox. This sandbox will continue to be used in following units.
