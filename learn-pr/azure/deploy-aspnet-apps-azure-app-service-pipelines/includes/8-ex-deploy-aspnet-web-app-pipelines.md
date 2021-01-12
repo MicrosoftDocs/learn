@@ -196,8 +196,8 @@ Verify that the sample ASP.NET web app has been successfully deployed to the Azu
 1. On the **Todos** page, select **Create New** and step through the process of creating a few **To do** entries.
 
 :::image type="content" source="../media/8-todos-aspnet-app.png" alt-text="A web browser displaying the sample ASP.NET app deployed into an Azure web app.":::
-<!--LM: Please remove the hyphen from "Reenable" in the heading.-->
-## Re-enable continuous integration
+
+## Reenable continuous integration
 
 To validate the DevOps CI/CD functionality, you'll reenable continuous integration.
 
