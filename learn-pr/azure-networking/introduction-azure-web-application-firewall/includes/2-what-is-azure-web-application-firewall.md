@@ -4,10 +4,6 @@ Here, you learn the basics of Azure Web Application Firewall. This overview will
 
 You might you think malicious users won't bother with your web apps. However, tests have shown that bots or malicious actors probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.
 
-<!--  Paul, the sentence below sort-of sounds like these exploits (such as SQL ingection) are vulnerabilities, rather than something that takes advantage of vulnerabilities. Instead, would it perhaps be more correct to say something like, “Most malicious tests of web apps check for the presence of vulnerabilities that could be exploited by one or more of the following common exploits:”  
-
-Cecily: Good point. I've revised the sentence. -->
-
 Most malicious tests of web apps check for the presence of one or more common vulnerabilities. If found, a threat actor could use these vulnerabilities to run attacks such as the following exploits:
 
 - SQL injection
@@ -20,10 +16,6 @@ A common task in the web app development cycle involves writing code to close th
 Azure Web Application Firewall is an Azure service that provides centralized protection of Azure-hosted web apps. Azure Web Application Firewall protects web apps from common threats such as SQL injection and cross-site scripting.
 
 :::image type="content" source="../media/2-web-application-firewall-description.png" alt-text="Network diagram showing an Azure virtual network that includes a web app and an instance of Azure Web Application Firewall. Bots and threats are blocked from the app, while legitimate requests are allowed.":::
-
-<!--  Paul, I wonder if the word “protected” below needs to be softened (would “blocked” be better?) Using your V- account you can see this guidance about using security terms: https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=26894. 
-
-Cecily: Thanks for the link. The page suggests (among others) to use "get powerful protection" in place of "protected", so I went with that.-->
 
 You can deploy Azure Web Application Firewall in minutes. Your web apps immediately get powerful protection from known threats, all without writing a single line of security code.
 
