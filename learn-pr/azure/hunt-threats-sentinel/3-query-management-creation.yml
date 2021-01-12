@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which code syntax is used for Azure Sentinel hunting queries?"
     choices:
-    - content: "T-SQL"
+    - content: "T-SQL (Transact-SQL)"
       isCorrect: false
-      explanation: "Azure Sentinel hunting queries are built using Azure Data Explorer syntax"
-    - content: "Azure Data Explorer"
+      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax"
+    - content: "Kusto Query Language (KQL)"
       isCorrect: true
-      explanation: "Azure Sentinel hunting queries are built using Azure Data Explorer syntax"
+      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax"
     - content: "JavaScript Object Notation (JSON)"
       isCorrect: false
-      explanation: "Azure Sentinel hunting queries are built using Azure Data Explorer syntax"
+      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax"

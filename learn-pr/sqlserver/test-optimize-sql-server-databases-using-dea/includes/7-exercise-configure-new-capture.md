@@ -95,4 +95,3 @@ Now run the trace files from your DEA capture against both the Target 1 and Targ
 1. Click to agree, **Yes, I have manually restored the database(s).**
 1. In the **Database name (optional)** field, type `Target_2`. Unclick **Encrypt connection**, and click **Start**. This takes you to the Replay window, where you will see the progress of the replay as before.
 1. When the replay has completed, you will see the message **This replay trace is ready for analysis**.
-

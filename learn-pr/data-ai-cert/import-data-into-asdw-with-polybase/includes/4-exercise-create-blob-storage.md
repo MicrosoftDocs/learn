@@ -9,7 +9,7 @@ Next, let's create an Azure Storage account and Blob storage container to hold t
 
 1. Select **Create a Resource**.
 
-1. Select **Storage**, search for and select **Storage account**. Select **Create**.
+1. In the left nav bar, select **Storage**, then search for and select **Storage account**. Select **Create**.
 
 1. In the **Create storage account** panel, enter the following settings:
 
@@ -34,7 +34,7 @@ Next, create a blob container that holds the source data.
 
 1. Select **Containers** in the **Overview** page.
 
-    ![Creating a container in the storage account option](../media/4-exercise-create-blob-storage-blobs.png)
+    ![Creating a container in the storage account option](../media/4-exercise-create-blob-storage-blob.png)
 
    The **Containers** panel appears.
 
