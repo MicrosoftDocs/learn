@@ -39,7 +39,7 @@ There's no limit to the number of sensitivity labels that you can create and pub
 ### Automatically apply a sensitivity label to content
 When you create a sensitivity label, you can automatically assign that label to content when it matches conditions that you specify. As a result, the protection associated with that label is automatically applied.
 
-:::image type="content" source="../media/4-sensitivity-labels-conditions.png" alt-text="Image displays automatic labeling configuration.":::
+:::image type="content" source="../media/4-sensitivity-labels-conditions.png" alt-text="Image displays automatic labeling configuration.":::
 
 The ability to apply sensitivity labels to content automatically is important because you don’t need to:
 
