@@ -36,10 +36,6 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
     > [!NOTE]
     > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment—for example, it blocks legitimate traffic to your web app—you can disable the rule.
 
-<!--  Paul, the text “problem you’re having” below is a little vague, and sounds almost personal. Would “problem in your environment” or “traffic problem” be correct? 
-
-Cecily: Great point! I changed "problem you're having" to "specific threat to your web application" -->
-
 - Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific threat to your web application, you can create a custom rule.
 - Modes. Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
 - Exclusion lists. You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
