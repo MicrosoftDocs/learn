@@ -1,8 +1,8 @@
-Congratulations! You created a Custom Vision machine learning model that will help you identify and document birds and better protect endangered bird species!
+Congratulations! You created a Custom Vision machine learning model that can help you identify and document birds and better protect endangered bird species!
 
 In this module, we covered an introduction to machine learning and the Azure Cognitive Services Custom Vision service. Then, we built a fully functioning machine learning model.
 
-Don't let the learning stop here! There are many more Microsoft Learn machine learning modules to help you learn more about building models.
+Don't let the learning stop here! There are many more Microsoft Learn machine learning modules to help you learn more about building and using models.
 
 Happy bird watching!
 

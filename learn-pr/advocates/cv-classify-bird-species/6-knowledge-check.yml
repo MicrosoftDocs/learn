@@ -21,7 +21,7 @@ quiz:
         - content: "To mimic human intelligence by using a computer."
           isCorrect: true
           explanation: "Correct!"
-    - content: "Which of the following options *isn't* an indicator that Custom Vision provides to help you understand how well the model performs?"
+    - content: "Which of the following options *isn't* an indicator that Custom Vision provides to help you understand how well a machine learning model performs?"
       choices:
         - content: "A confusion matrix"
           isCorrect: true
