@@ -70,8 +70,11 @@ Each group is a collection of rules designed to detect and thwart a specific exp
 
 ## Custom rules
 
-<!--   Paul, here again, might be good to replace “problem you’re having” below with something less personal sounding.  -->
-The managed rules offered by Azure Web Application Firewall might not cover a specific problem you're having. If so, you can create a custom rule. You build custom rules by creating conditions that include the following components:
+<!--   Paul, here again, might be good to replace “problem you’re having” below with something less personal sounding. 
+
+Cecily: I made the same change (more or less) as I did in unit 2. -->
+
+The managed rules offered by Azure Web Application Firewall might not cover a specific threat that your web applications are experiencing. If so, you can create a custom rule. You build custom rules by creating conditions that include the following components:
 
 - Variables such as RequestHeader or QueryString.
 - HTTP/HTTPS request methods such as POST or PUT.

@@ -26,25 +26,25 @@ quiz:
     - content: "Exclusions"
       isCorrect: false
       explanation: "Incorrect. Exclusions are an Azure Web Application Firewall feature that enables you to ignore specified HTTP/HTTPS request attributes."
-  - content: "Suppose a company wants to deploy Azure networking infrastructure that includes a suite of web apps protected by Azure Web Application Firewall. Which of the following Azure services should the company not consider?"
+  - content: "Suppose a company wants to deploy Azure Web Application Firewall to protect a web application that accepts user data from a form. Which of the following best describes how Azure Web Application Firewall protects the app?"
     choices:
-    - content: "Application Gateway"
+    - content: "Custom rules"
       isCorrect: false
-      explanation: "Incorrect. Application Gateway is an application delivery controller that operates within a single region and has built-in support for Azure Web Application Firewall."
-    - content: "Front Door"
+      explanation: "Incorrect. A custom rule is a user-defined firewall rule that helps protect an app from a threat not covered by the managed rules offered by Azure Web Application Firewall."
+    - content: "Remote file inclusion"
       isCorrect: false
-      explanation: "Incorrect. Azure Front Door is an application delivery network that operates across regions and has built-in support for Azure Web Application Firewall."
-    - content: "Virtual WAN"
+      explanation: "Incorrect. Remote file inclusion is an exploit where an attacker sends the server specially configured text that passes a remote file to a script's `include` statement."
+    - content: "Sanitizing input"
       isCorrect: true
-      explanation: "Correct. Virtual WAN optimizes and automates branch-to-branch connectivity, but it's not a web application front end."
+      explanation: "Correct. Sanitizing input refers to removing or disabling dangerous text elements of user-generated input."
   - content: "Suppose a company wants to deploy a web app and is trying to decide whether to use in-house developers to code against common exploits. Which of the following scenarios isn't an argument in favor of using Azure Web Application Firewall?" 
     choices:
     - content: "Your web app includes user accounts and stores sensitive or proprietary data."
       isCorrect: false
       explanation: "Incorrect. User credentials, sensitive personal information, and proprietary company data are coveted by malicious users, so Azure Web Application Firewall is a good choice for protecting that data."
-    - content: "Your web app is made available to employees, customers, and vendors using Azure Private Link."
+    - content: "Your web app is made available to employees, customers, and vendors using a private network connection."
       isCorrect: true
-      explanation: "Correct. Azure Private Link provides private access to the virtual network where the web app resides. App traffic never goes over the public internet, so there is no need to protect the app against common web exploits. "
+      explanation: "Correct. Private access to the virtual network where the web app resides means that app traffic never goes over the public internet. There is no need to protect the app against common web exploits. "
     - content: "Your web app development team lacks security expertise, time, and money."
       isCorrect: false
       explanation: "Incorrect. A lack of expertise, time, and money can prevent your team from covering all possible exploits, which can leave your app vulnerable. Azure Web Application Firewall protects against all OWASP exploits and can be deployed quickly and cost-effectively."
