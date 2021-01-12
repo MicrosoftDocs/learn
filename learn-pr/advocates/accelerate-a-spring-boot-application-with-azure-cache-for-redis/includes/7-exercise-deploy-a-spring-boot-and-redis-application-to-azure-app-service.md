@@ -37,8 +37,8 @@ In your project's `pom.xml` file, add a new plugin in the `<plugins>` section:
     <version>1.12.0</version>
     <configuration>
         <schemaVersion>V2</schemaVersion>
-        <resourceGroup>xxxxxxx</resourceGroup>
-        <appName>xxxxxxx</appName>
+        <resourceGroup>${env.AZ_RESOURCE_GROUP}</resourceGroup>
+        <appName>${env.AZ_WEBAPP_NAME}</appName>
         <deployment>
             <resources>
                 <resource>
@@ -54,10 +54,9 @@ In your project's `pom.xml` file, add a new plugin in the `<plugins>` section:
 ```
 
 > [!NOTE]
-> In the above configuration, you'll need to change the two **xxxxxxx** variables.
-> The first one if the name of the resource group, which you have stored in the **$AZ_RESOURCE_GROUP** variable.
-> The second one is the name of your Azure App Service instance, which was set as **$AZ_REDIS_NAME-webapp** earlier.
-> We recommend you hard-code those values, as they might not be used in an environment where those variables are accessible.
+> In the above configuration, you'll re-use the environment variables you have configured earlier.
+> For this configuration to work, your **$AZ_RESOURCE_GROUP** and **$AZ_REDIS_NAME-webapp** variables need
+> to be correctly setup.
 
 You can now package your application and deploy it to Azure:
 
