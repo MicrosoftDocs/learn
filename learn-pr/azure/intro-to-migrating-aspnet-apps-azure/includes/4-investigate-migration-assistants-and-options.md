@@ -84,7 +84,7 @@ Azure Hybrid Benefit is a model that helps reduce your licensing costs for runni
 
 This graph demonstrates an example of a SQL Server Enterprise savings.
 
-:::image type="content" source="../media/4-azure-sql-hybrid-savings.png" alt-text="SQL hybrid savings graph showing enterprise at $3.97 per hour and hybrid at $0.598 per hour. It represents an 85% savings.":::
+:::image type="content" source="../media/4-azure-sql-hybrid-savings.png" alt-text="SQL hybrid savings graph depicting enterprise at $3.97 per hour and hybrid at $0.598 per hour. It represents an 85% savings.":::
 
 ## What are migration assistance tools?
 
