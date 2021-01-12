@@ -28,7 +28,6 @@ questions:
     - content: "Synchronize content between locations"
       isCorrect: true
       explanation: "That's correct. You cannot use sensitivity labels to synchronize content."
-
   - content: "You created sensitivity labels to protect content. You configured permissions and the protection level. What should you do before your users start to use these sensitivity labels?"
     choices:
     - content: "Copy sensitivity labels"
@@ -40,7 +39,6 @@ questions:
     - content: "Send sensitivity labels to your users."
       isCorrect: false
       explanation: "That's not correct. You should publish sensitivity labels."
-
    - content: "You want to use Azure Information Protection to protect files on your local file servers. Before protection, you need to discover files that contain sensitive information types. What solution should you use?"
     choices:
     - content: "Azure Information Protection scanner"
@@ -52,7 +50,6 @@ questions:
     - content: "Sensitivity labels"
       isCorrect: false
       explanation: "That's not correct. Azure Information Protection scanner can work on local file servers and discover files that contain sensitive information types."
-
    - content: "You need to discover applications in your local network that work with cloud services and are not under the control of your IT department. What solution should you choose?"
     choices:
     - content: "Azure Information Protection"
@@ -64,7 +61,6 @@ questions:
     - content: "Cloud App Security"
       isCorrect: true
       explanation: "That's correct. You should use Cloud App Security for this."
-
    - content: "What is the primary purpose of data encryption with customer key?"
     choices:
     - content: "To replace Bitlocker encryption."
@@ -77,5 +73,3 @@ questions:
       isCorrect: false
       explanation: "That's not correct. Data encryption with customer key's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
 
-
-  
