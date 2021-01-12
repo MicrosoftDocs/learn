@@ -38,7 +38,7 @@ Next, you will create a fork of an existing GitHub repository, containing the sa
 
    :::image type="content" source="../media/4-where-is-your-code-github-yaml.png" alt-text="The New pipeline pane displaying the option to use the GitHub repository as the source for a YAML pipeline.":::
 
-1. On the **Select a repository** pane, select the repository hosting the fork you created earlier in this exercise. You will be automatically redirected to [github.com](github.com).
+1. On the **Select a repository** pane, select the repository hosting the fork you created earlier in this exercise. You will be automatically redirected to [https://github.com/?azureportal=new](github.com).
 1. On the **Approve & Install Azure Pipelines** pane, accept the **Only select repositories** option, then select the **Approve & Install** button. When prompted to authenticate, type the password of your GitHub user account, then, when prompted again, authenticate with the Azure DevOps user account.
 1. If prompted, on the **Azure Pipelines by Microsoft would like permission to** page, select **Authorize Azure Pipelines**.
 1. Back in the Azure DevOps portal, on the **Select a repository** pane, select the repository hosting the fork you created earlier in this exercise.
