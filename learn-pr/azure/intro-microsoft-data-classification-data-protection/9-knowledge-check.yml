@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "Copy sensitivity labels"
       isCorrect: false
-      explanation: "That's not correct. You should publish sensitivity labels."
+      explanation: "That's not correct. You must publish sensitivity labels before your users can use them."
     - content: "Publish sensitivity labels"
       isCorrect: true
-      explanation: "That's correct. You should publish sensitivity labels."
+      explanation: "That's correct. You must publish sensitivity labels before your users can use them."
     - content: "Send sensitivity labels to your users."
       isCorrect: false
-      explanation: "That's not correct. You should publish sensitivity labels."
+      explanation: "That's not correct. You must publish sensitivity labels before your users can use them."
   - content: "You want to use Azure Information Protection to protect files on your local file servers. Before protection, you need to discover files that contain sensitive information types. What solution should you use?"
     choices:
     - content: "Azure Information Protection scanner"
@@ -53,13 +53,13 @@ quiz:
     choices:
     - content: "Azure Information Protection"
       isCorrect: false
-      explanation: "That's not correct. You should use Cloud App Security for this."
+      explanation: "That's not correct. You should use Cloud App Security to discover these applications."
     - content: "Azure Identity Protection"
       isCorrect: false
-      explanation: "That's not correct. You should use Cloud App Security for this."
+      explanation: "That's not correct. You should use Cloud App Security to discover these applications."
     - content: "Cloud App Security"
       isCorrect: true
-      explanation: "That's correct. You should use Cloud App Security for this."
+      explanation: "That's correct. You should use Cloud App Security to discover these applications."
   - content: "What is the primary purpose of data encryption with customer key?"
     choices:
     - content: "To replace Bitlocker encryption."
