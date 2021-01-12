@@ -39,7 +39,7 @@ questions:
     - content: "Send sensitivity labels to your users."
       isCorrect: false
       explanation: "That's not correct. You should publish sensitivity labels."
-   - content: "You want to use Azure Information Protection to protect files on your local file servers. Before protection, you need to discover files that contain sensitive information types. What solution should you use?"
+  - content: "You want to use Azure Information Protection to protect files on your local file servers. Before protection, you need to discover files that contain sensitive information types. What solution should you use?"
     choices:
     - content: "Azure Information Protection scanner"
       isCorrect: true
