@@ -1,8 +1,10 @@
-Here, you learn the basic of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network security strategy.
+Here, you learn the basics of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network security strategy.
 
 ## Overview of Azure Web Application Firewall
 
 You might you think malicious users won't bother with your web apps. However, tests have shown that bots or malicious actors probe new web apps for weaknesses within minutes of deployment. If you put an app on the web, assume that threat actors will test the app for vulnerabilities almost immediately. You can also assume such probes will continue for the lifetime of the app.
+
+<!--  Paul, the sentence below sort-of sounds like these exploits (such as SQL ingection) are vulnerabilities, rather than something that takes advantage of vulnerabilities. Instead, would it perhaps be more correct to say something like, “Most malicious tests of web apps check for the presence of vulnerabilities that could be exploited by one or more of the following common exploits:”  -->
 
 Most malicious tests of web apps check for the presence of one or more common vulnerabilities, such as the following exploits:
 
@@ -17,6 +19,8 @@ Azure Web Application Firewall is an Azure service that provides centralized pro
 
 :::image type="content" source="../media/2-web-application-firewall-description.png" alt-text="Network diagram showing an Azure virtual network that includes a web app and an instance of Azure Web Application Firewall. Bots and threats are blocked from the app, while legitimate requests are allowed.":::
 
+<!--  Paul, I wonder if the word “protected” below needs to be softened (would “blocked” be better?) Using your V- account you can see this guidance about using security terms: https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=26894. -->
+
 You can deploy Azure Web Application Firewall in minutes. Your web apps are immediately protected from known threats, all without writing a single line of security code.
 
 ## Key features of Azure Web Application Firewall
@@ -26,7 +30,9 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 - Managed rules. The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a core rule set (described below) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
     > [!NOTE]
-    > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for you—for example, it blocks legitimate traffic to your web app—you can disable the rule.
+    > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment—for example, it blocks legitimate traffic to your web app—you can disable the rule.
+
+<!--  Paul, the text “problem you’re having” below is a little vague, and sounds almost personal. Would “problem in your environment” or “traffic problem” be correct?  -->
 
 - Custom rules. If the managed rules offered by Azure Web Application Firewall don't cover a specific problem you're having, you can create a custom rule.
 - Modes. Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
@@ -37,19 +43,20 @@ To help you evaluate Azure Web Application Firewall, here are some of its import
 
 ## Common attacks prevented by Azure Web Application Firewall
 
-The following table describes the most common types of malicious threats that Azure Web Application Firewall protects against.
+The following table describes the most common types of malicious threats that Azure Web Application Firewall helps protect against.
 
 |Threat     |Description   |
 |---------|---------|
 |Cross-site scripting|A threat actor uses a web application to send malicious code to another user's web browser. The browser runs the code, which gives the script access to the user's session data, cookies, and other sensitive information.   |
 |Local file inclusion   |An attacker exploits vulnerabilities in a server's handling of `include` statements, most often in PHP scripts. By passing specially configured text to a script's `include` statement, the attacker can include files that are locally present on the server. The attacker might then be able to access sensitive information and run server commands.   |
 |PHP injection   |The attacker inserts text specially configured to trick the server into running PHP commands. These commands let the attacker run local or remote PHP code. The attacker might then be able to access sensitive data and run commands on the server.   |
-|Protocol attacks   |An attacker inserts specially configured text into an HTTP/HTTPS request header. Depending on the specific text injected into the header, the attacker can fool the server into displaying sensitive data or running code.   |
+|Protocol attacks   |An attacker inserts specially configured text into an HTTP/HTTPS request header. Depending on the specific text injected into the header, the attacker can deceive the server into displaying sensitive data or running code.   |
 |Remote command execution   |The attacker tricks a server into running commands associated with the server's operating system. On a UNIX system, for example, the attacker might have the server run `ls` to get a directory listing,   |
-|Remote file inclusion   |The same as local file inclusion, except the attacker passes the server specially configured text that pass a remote file—that is, a file on a remote server controlled by the attacker—to a script's `include` statement.   |
-|Session fixation   |An attacker exploits a web app vulnerability that allows the attacker to obtain a valid session ID. The attacker fools a user into authenticating a new session with that ID. The attacker then hijacks this user-validated session.   |
+|Remote file inclusion   |The same as local file inclusion, except the attacker passes the server specially configured text that passes a remote file—that is, a file on a remote server controlled by the attacker—to a script's `include` statement.   |
+|Session fixation   |An attacker exploits a web app vulnerability that allows the attacker to obtain a valid session ID. The attacker deceives a user into authenticating a new session with that ID. The attacker then hijacks this user-validated session.   |
 |SQL injection   |In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands. These commands allow the attacker to access sensitive data, insert, update, or delete data, or run SQL operations.  |
 
-All the exploits listed in the above table are only possible when the server trusts whatever input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. And the above table represents only a small fraction of the possible exploits a web app can face. Azure Web Application Firewall is designed to prevent these attacks and many more.
+All the exploits listed in the previous table are only possible when the server trusts the input it receives. Writing code that checks for and sanitizes just these exploits would be difficult and time-consuming. Only a small fraction of the possible exploits a web app can face are represented in the previous table. Azure Web Application Firewall is designed to prevent these attacks and many more.
 
 <!-- Insert concept video here -->
+
