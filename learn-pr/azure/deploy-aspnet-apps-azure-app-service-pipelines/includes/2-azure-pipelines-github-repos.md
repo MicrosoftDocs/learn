@@ -60,6 +60,6 @@ A job is a series of tasks that execute sequentially on the same underlying host
 ### Variables
 
 Azure Pipeline variables serve the same role as in a standard programming language, allowing you to define values once and refer to them multiple times throughout the pipeline. The substitution of the variable name with its value takes place dynamically during pipeline execution. Azure Pipelines provides several built-in variables, which designate, for example, location of artifacts. You can also define your own variables. If you want to share variables across multiple stages and pipelines within the same project, you can use *variable groups*. Azure Pipelines support secret variables, for which content is automatically encrypted.
-<!--LM: Please ensure that the previous edit makes sense or reword.-->
+
 > [!NOTE]
 > When using inline scripts, reference variables by using the **$VARIABLE_NAME** syntax. For secret variables, use the **$(VARIABLE_NAME)** syntax.
