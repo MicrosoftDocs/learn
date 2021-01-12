@@ -38,7 +38,7 @@ In your project's `pom.xml` file, add a new plugin in the `<plugins>` section:
     <configuration>
         <schemaVersion>V2</schemaVersion>
         <resourceGroup>${env.AZ_RESOURCE_GROUP}</resourceGroup>
-        <appName>${env.AZ_WEBAPP_NAME}</appName>
+        <appName>${env.AZ_REDIS_NAME}-webapp</appName>
         <deployment>
             <resources>
                 <resource>
@@ -55,7 +55,7 @@ In your project's `pom.xml` file, add a new plugin in the `<plugins>` section:
 
 > [!NOTE]
 > In the above configuration, you'll re-use the environment variables you have configured earlier.
-> For this configuration to work, your **$AZ_RESOURCE_GROUP** and **$AZ_REDIS_NAME-webapp** variables need
+> For this configuration to work, your **$AZ_RESOURCE_GROUP** and **$AZ_REDIS_NAME** variables need
 > to be correctly setup.
 
 You can now package your application and deploy it to Azure:
@@ -79,22 +79,19 @@ Using the URL from the previous section, you can now use the cURL commands that 
 To retrieve data:
 
 ```bash
-curl https://<xxxx>.azurewebsites.net
+curl https://$AZ_REDIS_NAME-webapp.azurewebsites.net
 ```
-
-> [!NOTE]
-> Change **<xxxx>** by the name of your Application Service instance in the command above, as well as the two below.
 
 To add an item:
 
 ```bash
-curl -d '{"description":"a description", "details":"some details"}' -H "Content-Type: application/json" -X POST https://<xxxx>.azurewebsites.net
+curl -d '{"description":"a description", "details":"some details"}' -H "Content-Type: application/json" -X POST https://$AZ_REDIS_NAME-webapp.azurewebsites.net
 ```
 
 And to increment your session:
 
 ```bash
-curl -b cookie.txt -c cookie.txt https://<xxxx>.azurewebsites.net/session
+curl -b cookie.txt -c cookie.txt https://$AZ_REDIS_NAME-webapp.azurewebsites.net/session
 ```
 
 > [!NOTE]
