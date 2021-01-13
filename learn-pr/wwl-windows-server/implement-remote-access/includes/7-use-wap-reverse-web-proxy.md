@@ -8,7 +8,7 @@ Before you install Web Application Proxy, you must deploy AD FS as a prerequisit
 
 Placing the Web Application Proxy server in the perimeter network between two firewall devices is a typical configuration. The AD FS server and applications that are published are located on the corporate network, and together with domain controllers and other internal servers, are protected by the second firewall. This scenario provides secure access to corporate applications for users located on the internet, and at the same time protects the corporate IT infrastructure from security threats on the internet.
 
-:::image type="content" source="../media/m15-web-application-proxy.png" alt-text="A diagram that displays a typical WAP architecture." border="false":::
+:::image type="content" source="../media/m15-web-application-proxy.png" alt-text="A diagram that displays a typical WAP architecture." border="false":::
 
 ## Authentication options for Web Application Proxy
 

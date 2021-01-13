@@ -46,7 +46,7 @@ A network policy is a set of conditions, constraints, and settings that enable y
 > [!IMPORTANT]
 > When you first deploy the NPS role, the two default network policies deny remote access to all connection attempts. You can then configure additional network policies to manage connection attempts.
 
-:::image type="content" source="../media/m15-nps-1.png" alt-text="A screenshot of the Network Policy Server dialog box. The administrator has created a policy called Contoso Policy. The default policies are also visible." border="false" :::
+:::image type="content" source="../media/m15-nps-1.png" alt-text="A screenshot of the Network Policy Server dialog box. The administrator has created a policy called Contoso Policy. The default policies are also visible.":::
 
 When NPS authorizes a connection request, it compares the request with each network policy in the ordered list of policies, starting with the first policy and moving to the next item on the list. If NPS finds a policy in which the conditions match the connection request, NPS uses the matching policy and the dial-in properties of the user account to authorize the request. If you configure the dial-in properties of the user account to grant or control access through network policy, and the connection request is authorized, NPS applies the settings that you configure in the network policy to the connection:
 
@@ -55,4 +55,4 @@ When NPS authorizes a connection request, it compares the request with each netw
 
 This is summarized in the following diagram.
 
-:::image type="content" source="../media/m15-nps-flow.png" alt-text="A diagram displays the flow process that NPS uses to determine user access based on policies." border="false":::
+:::image type="content" source="../media/m15-nps-flow.png" alt-text="A diagram displays the flow process that NPS uses to determine user access based on policies." border="false":::
