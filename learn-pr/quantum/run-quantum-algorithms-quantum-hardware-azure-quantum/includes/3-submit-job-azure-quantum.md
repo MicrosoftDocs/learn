@@ -37,7 +37,7 @@ select the providers you desire to use. To do it follow these steps:
      the default values.
 
    ![Properties for the Azure Quantum
-   Workspace](..media/azure-quantum-preview-properties.png)
+   Workspace](..media/3-azure-quantum-preview-properties.png)
 
    > [!NOTE]
    > You must be an Owner of the selected resource group to create a
@@ -58,7 +58,7 @@ select the providers you desire to use. To do it follow these steps:
    selected providers. If everything is correct, click on **Create** to create
    your Quantum Workspace.
 
-   ![Review and create the Workspace](..media/azure-quantum-preview-terms.png)
+   ![Review and create the Workspace](..media/3-azure-quantum-preview-terms.png)
 
 ## Setup the project and write your program
 
