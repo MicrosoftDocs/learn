@@ -6,7 +6,7 @@ In this unit, we'll create a web app and add the Application Insights SDK to it.
 
 To create a web app, we'll use a quickstart template that's included with the ASP.NET Core command-line tools.
 
-Run the following command in the Azure Cloud Shell terminal window on the right:
+Run the following command in the Azure Cloud Shell terminal window on the right.
 
 ```bash
 dotnet new mvc -o videowebapp
