@@ -19,95 +19,95 @@ quiz:
       choices:
       - content: "SQL Server in an Azure virtual machine."
         isCorrect: false
-        explanation: "While this would technically work, a PaaS offering may be a better fit and less management overhead."
+        explanation: "Although this would technically work, a PaaS offering might be a better fit and have less management overhead."
       - content: "Azure SQL Managed Instance."
         isCorrect: true
-        explanation: "Since the customer is using CLR, which is an instance-scoped feature, Azure SQL Managed Instance will allow them to move to a PaaS offering without having to rewrite the CLR applications."
+        explanation: "Because the customer is using CLR, which is an instance-scoped feature, Azure SQL Managed Instance will allow them to move to a PaaS offering without having to rewrite the CLR applications."
       - content: "Azure SQL Database - single database."
         isCorrect: false
-        explanation: "Hint: Consider their need for CLR."
+        explanation: "Hint: Consider the customer's need for CLR."
       - content: "Azure SQL Database - elastic pool."
         isCorrect: false
-        explanation: "There's no indication from the information provided that many databases or a pooling system would be necessary. Hint: Consider their need for CLR."
-    - content: "How will they scale over multiple regions with multiple queries happening at the same time, while isolating read workloads from write workloads?"
+        explanation: "There's no indication from the provided information that many databases or a pooling system would be necessary. Hint: Consider the customer's need for CLR."
+    - content: "How will the customer scale over multiple regions with multiple queries happening at the same time, while isolating read workloads from write workloads?"
       choices:
-      - content: "Select General purpose service tier and deploy auto-failover groups."
+      - content: "Select the General Purpose service tier and deploy auto-failover groups."
         isCorrect: false
-        explanation: "While this solution will enable them to isolate read and write workloads, since the secondary server in the auto-failover group can be used as a read-only endpoint, they will not be able to isolate read and write workloads in the primary region. Is there a better option?"
-      - content: "Select General purpose service tier and deploy geo-replication."
+        explanation: "Although this solution will enable them to isolate read and write workloads, because the secondary server in the auto-failover group can be used as a read-only endpoint, the customer won't be able to isolate read and write workloads in the primary region. Is there a better option?"
+      - content: "Select the General Purpose service tier and deploy geo-replication."
         isCorrect: false
-        explanation: "They can leverage the geo-replicated database(s) as readable secondaries, and they can deploy multiple geo-replicated databases across the globe, including in their existing region. However, Azure SQL Managed Instance does not support geo-replication currently."
-      - content: "Select Business critical service tier and deploy auto-failover groups."
+        explanation: "The customer can use the geo-replicated databases as readable secondaries, and it can deploy multiple geo-replicated databases across the globe, including in its existing region. However, Azure SQL Managed Instance does not support geo-replication currently."
+      - content: "Select the Business Critical service tier and deploy auto-failover groups."
         isCorrect: true
-        explanation: "The Business critical tier will enable them to get a readable secondary, and an auto-failover group can help them scale over two regions."
-      - content: "Select Business critical service tier and deploy geo-replication."
+        explanation: "The Business Critical tier will enable them to get a readable secondary, and an auto-failover group can help them scale over two regions."
+      - content: "Select the Business Critical service tier and deploy geo-replication."
         isCorrect: false
-        explanation: "They can leverage the geo-replicated database(s) as readable secondaries, and they can deploy multiple geo-replicated databases across the globe, including in their existing region. However, geo-replication isn't currently available in Azure SQL Managed Instance."
+        explanation: "The customer can use the geo-replicated databases as readable secondaries, and it can deploy multiple geo-replicated databases across the globe, including in its existing region. However, geo-replication isn't currently available in Azure SQL Managed Instance."
     - content: "Which authentication method would you recommend for the application on an Azure VM?"
       choices:
       - content: "Azure AD authentication: integrated authentication."
         isCorrect: false
-        explanation: "Is there a password-less option available for Azure resources?"
+        explanation: "Is there a passwordless option available for Azure resources?"
       - content: "Azure AD authentication: client ID/certificate."
         isCorrect: false
-        explanation: "Is there a password-less option available for Azure resources?"
-      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)."
+        explanation: "Is there a passwordless option available for Azure resources?"
+      - content: "Azure AD authentication: interactive with multifactor authentication."
         isCorrect: false
-        explanation: "Is there a password-less option available for Azure resources?"
+        explanation: "Is there a passwordless option available for Azure resources?"
       - content: "Azure AD authentication: managed identity."
         isCorrect: true
-        explanation: "Managed identities for Azure resources are, in general, the recommended form of password-less authentication for applications running on Azure virtual machines."
+        explanation: "Managed identities for Azure resources are, in general, the form of passwordless authentication that we recommend for applications running on Azure virtual machines."
       - content: "SQL authentication: username and password."
         isCorrect: false
         explanation: "Consider Azure AD."
-    - content: "Which authentication method would you recommend for the application on a non-Azure machine?"
+    - content: "Which authentication method would you recommend for the application on a non-Azure machine that is domain-joined?"
       choices:
       - content: "Azure AD authentication: integrated authentication."
         isCorrect: true
-        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
+        explanation: "Integrated authentication via Azure Active Directory is the authentication method that we recommend for apps running on domain-joined machines outside Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine that's hosting your application, you at least avoid hard-coding an application secret in the application code or configuration. (You'll need to configure the app with the certificate thumbprint.)"
       - content: "Azure AD authentication: client ID/certificate."
         isCorrect: false
-        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
-      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)."
+        explanation: "Integrated authentication via Azure Active Directory is the authentication method that we recommend for apps running on domain-joined machines outside Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine that's hosting your application, you at least avoid hard-coding an application secret in the application code or configuration. (You'll need to configure the app with the certificate thumbprint.)"
+      - content: "Azure AD authentication: interactive with multifactor authentication."
         isCorrect: false
         explanation: "Not the best option for an application."
       - content: "Azure AD authentication: managed identity."
         isCorrect: false
-        explanation: "Not for an application outside of Azure."
+        explanation: "Not for an application outside Azure."
       - content: "SQL authentication: username and password."
         isCorrect: false
         explanation: "Consider Azure AD."
-    - content: "Which authentication method would you recommend for SQL admin tools (SSMS, PowerShell) on a non-Azure machine?"
+    - content: "Which authentication method would you recommend for SQL admin tools (SSMS, PowerShell) on a non-Azure machine that is not domain-joined?"
       choices:
       - content: "Azure AD authentication: integrated authentication."
-        isCorrect: true
-        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD-Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
+        isCorrect: false
+        explanation: "You can eliminate the use of passwords with SQL tools by using Azure AD integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support."
       - content: "Azure AD authentication: client ID/certificate."
         isCorrect: false
-        explanation: "Is there a password-less option?"
-      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)."
-        isCorrect: false
-        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD-Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
+        explanation: "Is there a passwordless option?"
+      - content: "Azure AD authentication: interactive with multifactor authentication."
+        isCorrect: true
+        explanation: "You can eliminate the use of passwords with SQL tools by using Azure AD integrated authentication, if the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment doesn't meet the prerequisites for integrated authentication, we recommend that you use Azure AD interactive authentication with multifactor authentication, which most SQL tools support."
       - content: "Azure AD authentication: managed identity."
         isCorrect: false
         explanation: "Available only for Azure resources."
       - content: "SQL authentication: username and password."
         isCorrect: false
         explanation: "Consider Azure AD."
-    - content: "Which authentication method would you recommend for the application on legacy application where you can't change the driver/connection string on a non-Azure machine?"
+    - content: "Which authentication method would you recommend for an older application where you can't change the driver/connection string on a non-Azure machine?"
       choices:
       - content: "Azure AD authentication: integrated authentication."
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
+        explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
       - content: "Azure AD authentication: client ID/certificate."
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
-      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)."
+        explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
+      - content: "Azure AD authentication: interactive with multifactor authentication."
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
+        explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
       - content: "Azure AD authentication: managed identity."
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
+        explanation: "Not possible for applications that use old drivers or SQL authentication and can't be modified."
       - content: "SQL authentication: username and password."
         isCorrect: true
-        explanation: "No option exists today for eliminating passwords for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
+        explanation: "No option exists today for eliminating passwords for applications that use old drivers or SQL authentication and can't be modified."

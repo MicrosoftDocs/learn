@@ -55,16 +55,16 @@ quiz:
     choices:
     - content: "This is just an inherent problem of public clouds, where you have to share resources with untrusted entities, which could impact you in unpredictable ways. Cloud providers should add features like outbound spam monitoring to protect their own reputation. Services like Spamhaus should continue unchanged."
       isCorrect: false
-      explanation: "Incorrect. As many services move to the clouds, anti-spam agents like Spamhaus cannot continue to broadly block IP addresses. Consider the techniques used by Spamhaus to blacklist spam sources. Do they translate well to public cloud infrastructure?"
+      explanation: "Incorrect. As many services move to the clouds, anti-spam agents like Spamhaus cannot continue to broadly block IP addresses. Consider the techniques used by Spamhaus to block spam sources. Do they translate well to public cloud infrastructure?"
     - content: "You should never host an email server on the public cloud because the Massive Surveillance Bureau will be tracking it."
       isCorrect: false
-      explanation: "Incorrect. Public clouds can be an extremely secure place to store data if used properly, and the Massive Surveillance Bureau is something we made up. Consider the techniques used by Spamhaus to blacklist spam sources. Do they translate well to public cloud infrastructure?"
+      explanation: "Incorrect. Public clouds can be an extremely secure place to store data if used properly, and the Massive Surveillance Bureau is something we made up. Consider the techniques used by Spamhaus to block spam sources. Do they translate well to public cloud infrastructure?"
     - content: "Both Spamhaus and cloud providers need to adapt to this new type of problem."
       isCorrect: true
       explanation: "Correct! This is an evolving problem due to the complex and ever-changing patterns of spam."
     - content: "This problem is due to IP reputation systems only. These systems broadly categorize large subnets of IP addresses as spammers, even if only a few of them actually contribute to spam traffic. Instead, reputation-based blocking should be done for each IP address. The cloud provider cannot take any action to protect itself."
       isCorrect: false
-      explanation: "Incorrect. Reputation-based blocking can't be done per IP address because this technique is not scalable. IP addresses can be easily changed. Consider the techniques used by Spamhaus to blacklist spam sources. Do they translate well to public cloud infrastructure?"
+      explanation: "Incorrect. Reputation-based blocking can't be done per IP address because this technique is not scalable. IP addresses can be easily changed. Consider the techniques used by Spamhaus to block spam sources. Do they translate well to public cloud infrastructure?"
 
 # Did I get this block question 4
   - content: "Some service providers offer dedicated VM instances as an added security measure. Such instances are guaranteed to run on dedicated hardware that will not be shared with other users of the cloud service. Which of the following threats will you be protected against on a dedicated VM?"

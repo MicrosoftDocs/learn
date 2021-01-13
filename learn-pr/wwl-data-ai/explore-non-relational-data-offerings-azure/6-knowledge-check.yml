@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/26/2020
+  ms.date: 01/06/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -29,34 +29,34 @@ quiz:
       explanation: "That's incorrect. Rows aren't numbered. The elements for an Azure Table storage Key are the partition key and row key."
   - content: "When should you use a block blob, and when should you use a page blob?"
     choices:
-    - content: "Use a block blob for unstructured data that requires random access to perform reads and writes. Use a page blob for discrete objects that rarely change"
+    - content: "Use a block blob for unstructured data that requires random access to perform reads and writes. Use a page blob for discrete objects that rarely change."
       isCorrect: false
       explanation: "That's incorrect. Use a block blob for discrete objects that change rarely, and a page blob for data that requires random read and write access."
     - content: "Use a block blob for active data stored using the Hot data access tier, and a page blob for data stored using the Cool or Archive data access tiers."
       isCorrect: false
       explanation: "That's incorrect. Use a block blob for discrete objects that change rarely, and a page blob for data that requires random read and write access. The data access tier is irrelevant to the choice of which type of blob to use."
-    - content: "Use a page block for blobs that require random read and write access. Use a block blob for discrete objects that change infrequently"
+    - content: "Use a page block for blobs that require random read and write access. Use a block blob for discrete objects that change infrequently."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. Use a page block for blobs that require random read and write access. Use a block blob for discrete objects that change infrequently."
   - content: "Why might you use Azure File storage?"
     choices:
-    - content: "To share files that are stored on-premises with users located at other sites"
+    - content: "To share files that are stored on-premises with users located at other sites."
       isCorrect: false
       explanation: "That's incorrect. To share files with remote users, you create a file share using Azure File storage, and upload the file to the file share."
-    - content: "To enable users at different sites to share files"
+    - content: "To enable users at different sites to share files."
       isCorrect: true
       explanation: "That's correct. You can create a file share in Azure File storage, upload files to this file share, and grant access to the file share to remote users."
-    - content: "To store large binary data files containing images or other unstructured data"
+    - content: "To store large binary data files containing images or other unstructured data."
       isCorrect: false
       explanation: "That's incorrect. Large binary data files are best stored as blobs in Azure Blob storage."
   - content: "You are building a system that monitors the temperature throughout a set of office blocks, and sets the air conditioning in each room in each block to maintain a pleasant ambient temperature. Your system has to manage the air conditioning in several thousand buildings spread across the country/region, and each building typically contains at least 100 air-conditioned rooms. What type of NoSQL data store is most appropriate for capturing the temperature data to enable it to be processed quickly?"
     choices:
-    - content: "Send the data to an Azure Cosmos DB database and use Azure Functions to process the data"
+    - content: "Send the data to an Azure Cosmos DB database and use Azure Functions to process the data."
       isCorrect: true
       explanation: "That's correct. Cosmos DB can ingest large volumes of data rapidly. A thermometer in each room can send the data to a Cosmos DB database. You can arrange for an Azure Function to run as each item is stored. The function can examine the temperature, and kick off a remote process to configure the air conditioning in the room."
     - content: "Store the data in a file stored in a share created using Azure File Storage."
       isCorrect: false
       explanation: "That's incorrect. You would require separate processes in each building or room to record the data in the file. Although multiple processes can read data from a file stored in Azure File Storage simultaneously, multiple writers can be more problematic, and can result in the writes made by one process being overwritten by those of another, losing data."
-    - content: "Write the temperatures to a blob in Azure Blob storage"
+    - content: "Write the temperatures to a blob in Azure Blob storage."
       isCorrect: false
       explanation: "That's incorrect. Blob storage is not an appropriate choice for this scenario."

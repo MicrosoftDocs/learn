@@ -4,12 +4,12 @@ title: Explain execute as user
 metadata:
   title: Explain execute as user
   description: "Explain execute as user"
-  ms.date: 08/02/2020
+  ms.date: 12/30/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 4
+durationInMinutes: 10
 content: |
   [!include[](includes/6-explain-execute-user.md)]

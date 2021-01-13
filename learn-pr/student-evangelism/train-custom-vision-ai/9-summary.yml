@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-custom-vision-ai.9-summary
+metadata:
+  title: Summary
+  description: This unit wraps up the Custom Vision module for the *Over the Moon* learning path.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

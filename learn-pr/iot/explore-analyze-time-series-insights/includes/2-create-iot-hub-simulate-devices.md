@@ -29,7 +29,7 @@ In a second step, we'll code and execute a program to simulate data coming from 
 
     > [!NOTE]
     > Across the module you will have to execute command like the above one in the Azure Shell that might take some time to execute. Be patient as Azure creates and configures resources for you.
-4. Open a text file, copy the following code in. Replace `{your iot hub name}` with the name you've picked up in the previous step. Then, run this command to create the three devices.
+4. Run this command to create the three devices.
 
     ```Azure CLI
     az iot hub device-identity create --hub-name $iotHubName --device-id TruckDevice
@@ -40,9 +40,9 @@ In a second step, we'll code and execute a program to simulate data coming from 
 5. Run this command to get connection string for the three devices. Don't close or clean the window, as you'll need these values in the next step. You can copy them in a text file for convenience.
 
     ```Azure CLI
-    az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id TruckDevice --output tsv
-    az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id AirplaneDevice --output tsv
-    az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id ContainerDevice --output tsv
+    az iot hub device-identity connection-string show --hub-name $iotHubName --device-id TruckDevice --output tsv
+    az iot hub device-identity connection-string show --hub-name $iotHubName --device-id AirplaneDevice --output tsv
+    az iot hub device-identity connection-string show --hub-name $iotHubName --device-id ContainerDevice --output tsv
 
     ```
 

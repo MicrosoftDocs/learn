@@ -124,8 +124,8 @@ In this unit, we reviewed several ways to improve our bot and provide a robust c
 [TextAnalytics]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/
 [PersonalityChat]: https://aischool.microsoft.com/conversational/learning-paths/advanced-conversational-ai/ttmb-implementing-project-personality-chat
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
-[LangDetection]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-detect?pivots=programming-language-csharp
-[Translation]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate?pivots=programming-language-csharp
+[LangDetection]: https://docs.microsoft.com/azure/cognitive-services/Face/quickstarts/csharp
+[Translation]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translator
 [MiddleWare]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0
 [BotTranslateSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/17.multilingual-bot
 [BotDialogs]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0

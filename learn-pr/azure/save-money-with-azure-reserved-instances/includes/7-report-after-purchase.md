@@ -33,7 +33,7 @@ Cost analysis shows charges as they appear on your bill. The charges are shown a
 
 ## Create a chargeback report from usage details data
 
-You can create a charge back reservation report to charge internal cost centers at different grains: subscription, resource groups, or tags. The information needed to perform chargeback is contained in your usage data. Amortized cost data provides the monetary value of a reservation's utilization for the following data types:
+You can create a charge back reservation report to charge internal cost centers at different grains: subscription, resource groups, or tags. The information needed to perform chargeback is contained in your usage data. The amortized cost of a reservation is the consumption value based on the discounted price for any instances that are covered by reservations. Amortized cost data provides the monetary value of a reservation's utilization for the following data types:
 
 - Resources, such as a VM
 - Resource group

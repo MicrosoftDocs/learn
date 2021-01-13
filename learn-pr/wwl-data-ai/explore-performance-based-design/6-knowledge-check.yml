@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/07/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
@@ -16,36 +16,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What type of index is best used on a data warehouse fact table?"
+  - content: "What type of database design should you use for a data warehouse when you want to reduce the data volume of your dimensions?"
     choices:
-    - content: "Clustered Columnstore"
+    - content: "Snowflake schema"
       isCorrect: true
-      explanation: "That's correct. A clustered columnstore index will provide the best performance for a data warehouse fact table."
-    - content: "Nonclustered Columnstore"
+      explanation: "That's correct. Snowflake schema would reduce the data volume."
+    - content: "Star Schema"
       isCorrect: false
-      explanation: "That's incorrect. Nonclustered columnstore indexes will consume unnecessary space."
-    - content: "Clustered b-tree"
+      explanation: "That's incorrect. Star schema would increase the size of your data volume."
+    - content: "3rd normal form"
       isCorrect: false
-      explanation: "That's incorrect. A b-tree index will not match the performance of a columnstore index for scan operations."
-  - content: "Which DMV provides information about server level wait statistics?"
+      explanation: "That's incorrect. 3rd normal form would not be a good fit for a data warehouse structure."
+  - content: "What is the minimum number of rows you need to bulk insert into a columnstore index?"
     choices:
-    - content: "sys.dm_db_index_physical_stats"
-      isCorrect: false
-      explanation: "That's incorrect. This view shows fragmentation for indexes."
-    - content: "sys.dm_os_wait_stats"
+    - content: "102,400"
       isCorrect: true
-      explanation: "That's correct. This shows the wait stats across the server."
-    - content: "sys.dm_exec_session_wait_stats"
+      explanation: "That's correct. 102,400 is the minimum number of rows to bulk insert into a columnstore index, fewer rows will use a normal insert operation."
+    - content: "1,000,000"
       isCorrect: false
-      explanation: "That's incorrect. This DMV shows waits for a given session, but not across sessions."
-  - content: "Which DMV can you use to capture the last Actual Execution Plan for a given query?"
+      explanation: "That's incorrect. While this row count would be bulk inserted it is well above the minimum."
+    - content: "1000"
+      isCorrect: false
+      explanation: "That's incorrect. This row count would not be bulk loaded."
+  - content: "Which compression type offers the highest level of compression?"
     choices:
-    - content: "sys.dm_exec_cached_plans"
-      isCorrect: false
-      explanation: "That's incorrect. This DMV has the information needed to retrieve the plan from cache."
-    - content: "sys.dm_exec_query_plan"
-      isCorrect: false
-      explanation: "That's incorrect. This DMV just has the estimated execution plans that are in the plan cache."
-    - content: "sys.dm_exec_query_plan_stats"
+    - content: "Columnstore Archival"
       isCorrect: true
-      explanation: "That's correct. In SQL Server 2019 you can query sys.dm_exec_query_plan_stats to get the last actual execution plan for a query."
+      explanation: "That's correct. Columnstore archival provides the highest level of compression in SQL Server."
+    - content: "Page Compression"
+      isCorrect: false
+      explanation: "That's incorrect. Page compression, while compressing more than row compression will not compress more than columnstore archival."
+    - content: "Row Compression"
+      isCorrect: false
+      explanation: "That's incorrect. Row compression will not deduplicate data which means it has a lower rate of compression."

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.8-exercise-advanced-data-security
 metadata:
-  title: Exercise - Security management and advanced data security
-  description: Exercise - Security management and advanced data security
+  title: Exercise - Manage security and Azure Defender
+  description: Exercise - Manage security and Azure Defender
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Security management and advanced data security
+title: Exercise - Manage security and Azure Defender
 durationInMinutes: 10
 azureSandbox: true
 content: |

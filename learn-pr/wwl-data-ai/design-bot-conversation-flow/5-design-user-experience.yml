@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-bot-conversation-flow.design-user-experience
+title: Design the user experience
+metadata:
+  title: Design the user experience
+  description: "Design the user experience"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-design-user-experience.md)]

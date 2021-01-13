@@ -51,7 +51,7 @@ To help you consider how to leverage governance and external engagements in your
 To learn more about our perspective on responsible AI as well as the impact of AI on our future, read our book [The Future Computed](https://blogs.microsoft.com/uploads/2018/02/The-Future-Computed_2.8.18.pdf).
 
 * [Download PDF](https://aka.ms/AA62hpf) of Responsible AI: Establishing a governance and external engagement model to share with others.
-* Understand your organization’s AI Maturity by taking Microsoft’s [AI Ready Assessment](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html).
+* [Download PDF](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4DIvg) of "AI Maturity and organizations: Understanding AI maturity."
 
 ## References
 

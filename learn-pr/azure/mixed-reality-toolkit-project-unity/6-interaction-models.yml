@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.mixed-reality-toolkit-project-unity.6-interaction-models
+title: Interaction models
+metadata:
+  title: Interaction models
+  description: Interaction models for interacting with holograms.
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 08/11/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-interaction-models.md)]

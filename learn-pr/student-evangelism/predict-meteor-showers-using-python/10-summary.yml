@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-meteor-showers-using-python.10-summary
+metadata:
+  title: Summary
+  description: Summary for the Predict meteor showers module.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]

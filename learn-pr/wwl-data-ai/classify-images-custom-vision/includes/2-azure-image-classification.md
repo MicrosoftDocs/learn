@@ -7,7 +7,7 @@ Creating an image classification solution with Custom Vision consists of two mai
 
 For each of these tasks, you need a resource in your Azure subscription. You can use the following types of resource:
 
-- **Custom Vision**: A dedicated resource for the custom vision service, which can be either a *training* or a *prediction* resource.
+- **Custom Vision**: A dedicated resource for the custom vision service, which can be *training*, a *prediction*, or *both* resources.
 - **Cognitive Services**: A general cognitive services resource that includes Custom Vision along with many other cognitive services. You can use this type of resource for *training*, *prediction*, or both.
 
 The separation of training and prediction resources is useful when you want to track resource utilization for model training separately from client applications using the model to predict image classes. However, it can make development of an image classification solution a little confusing.
@@ -28,10 +28,10 @@ One of the key considerations when using images for classification, is to ensure
 
 ## Model evaluation
 
-Model training process is an iterative process in which the Custom Vision service repeatedly trains the model using some of the data, but holds some back to evaluates the model. At the end of the training process, the performance for the trained model is indicated by the following evaluation metrics:
+Model training process is an iterative process in which the Custom Vision service repeatedly trains the model using some of the data, but holds some back to evaluate the model. At the end of the training process, the performance for the trained model is indicated by the following evaluation metrics:
 
-- **Precision**: What percentage of class predictions did the model correctly identify? For example, if there are 10 images of apples, and the model found 7 of them, then the precision is 0.7 (70%).
-- **Recall**: What percentage of the class predictions made by the model were correct? For example, if the model predicted that 10 images are oranges, of which eight were actually oranges, then the recall is 0.8 (80%).
+- **Precision**: What percentage of the class predictions made by the model were correct? For example, if the model predicted that 10 images are oranges, of which eight were actually oranges, then the precision is 0.8 (80%).
+- **Recall**: What percentage of class predictions did the model correctly identify? For example, if there are 10 images of apples, and the model found 7 of them, then the recall is 0.7 (70%).
 - **Average Precision (AP)**: An overall metric that takes into account both precision and recall).
 
 ## Using the model for prediction

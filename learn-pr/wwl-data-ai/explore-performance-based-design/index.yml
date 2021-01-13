@@ -3,7 +3,7 @@ uid: learn.wwl.explore-performance-based-design
 metadata:
   title: Explore performance-based design
   description: "Evaluate possible changes to indexes. Determine the impact of changes to queries and indexes. Explore relevant Dynamic Management Objects."
-  ms.date: 08/07/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Basic understanding of structure and usage of SQL Server indexes.
   - Basic understanding of relational database concepts.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/explore-performance-based-design.svg
 levels:
 - intermediate
 roles:

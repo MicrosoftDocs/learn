@@ -2,8 +2,8 @@
 uid: learn.wwl.automate-tasks-sql-server
 metadata:
   title: Automate tasks in SQL Server
-  description: Scripting repetitive tasks in Azure SQL for regular maintenance jobs and multi-instance administration. Automation of error and resource alerts. Configuration of notifications for failures.
-  ms.date: 08/07/2020
+  description: Automate tasks in SQL Server
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   - Experience creating and configuring resources using the Azure portal
 summary: |
   Scripting repetitive tasks in Azure SQL for regular maintenance jobs and multi-instance administration. Automation of error and resource alerts. Configuration of notifications for failures.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/automate-tasks-in-sql-server.svg
 levels:
 - intermediate
 roles:

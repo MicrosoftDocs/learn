@@ -17,7 +17,8 @@ abstract: |
   - Deploy an app from Visual Studio to Android and/or iOS
   - Dial a number from within the app
 prerequisites: |
-  [!include[](../../includes/prerequisites.md)]
+  - Visual Studio 2019 (any edition)
+  - Familiarity with C# and .NET
 iconUrl: /learn/achievements/xamarin/create-a-mobile-app-with-xamarin-forms-badge.svg
 levels:
 - beginner

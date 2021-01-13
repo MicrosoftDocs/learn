@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.cosmos-db-java-app.2-setup
+metadata:
+  title: Exercise - Set up your Java app by using Maven
+  description: Exercise - Set up your Java app by using Maven
+  ms.date: 11/02/2020
+  author: anfeldma-ms
+  ms.author: anfeldma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: cosmos-db-programming-model-java-spring
+title: Exercise - Set up your Java app by using Maven
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-setup.md)]

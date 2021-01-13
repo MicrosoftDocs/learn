@@ -5,7 +5,7 @@ Imagine you work for Contoso Aircraft Engines. The engines your employer manufac
 You want to use historic sensor data to find patterns in the sensor readings that indicate engine failure is likely to happen soon. You want the real-time sensor readings to be compared against these failure patterns. You can then warn users in near real time if an engine is showing worrisome readings.
 
 ## What is Azure Event Hubs?
-Event Hubs is an intermediary for the publish-subscribe communication pattern. Unlike Event Grid, however, it is optimized for extremely high throughput, a large number of publishers, security, and resiliency.
+[Event Hubs](https://azure.microsoft.com/services/event-hubs/) is an intermediary for the publish-subscribe communication pattern. Unlike [Event Grid](https://azure.microsoft.com/services/event-grid/), however, it is optimized for extremely high throughput, a large number of publishers, security, and resiliency.
 
 #### What is an Event Hub?
 
@@ -19,7 +19,7 @@ As Event Hubs receives communications, it divides them into partitions. Partitio
 The buffers are called partitions because the data is divided amongst them. Every event hub has at least two partitions, and each partition has a separate set of subscribers.
 
 #### Capture
-Event Hubs can send all your events immediately to Azure Data Lake or Azure Blob storage for inexpensive, permanent persistence.
+Event Hubs can send all your events immediately to Azure [Data Lake](https://azure.microsoft.com/services/storage/data-lake-storage/) or Azure Blob storage for inexpensive, permanent persistence.
 
 #### Authentication
 All publishers are authenticated and issued a token. This means Event Hubs can accept events from external devices and mobile apps, without worrying that fraudulent data from pranksters could ruin our analysis. 

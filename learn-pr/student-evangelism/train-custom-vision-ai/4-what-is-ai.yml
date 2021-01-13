@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-custom-vision-ai.4-what-is-ai
+metadata:
+  title: Understand artificial intelligence and Custom Vision
+  description: This unit is a high-level explanation of artificial intelligence as it applies to object recognition within images.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand artificial intelligence and Custom Vision
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-what-is-ai.md)]

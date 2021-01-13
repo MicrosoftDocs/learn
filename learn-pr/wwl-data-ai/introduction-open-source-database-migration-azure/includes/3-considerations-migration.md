@@ -146,7 +146,7 @@ Your databases might contain sensitive data, such as product details, personal s
 
 ### Firewall protection
 
-In an internet-connected application, database servers are usually protected by at least two firewalls. The first firewall separates the internet from the front-end servers—if these servers host websites or web APIs, for example. Only TCP port 80 should be open on the outer firewall, but this port must be open for all source IP addresses, except blacklisted addresses.
+In an internet-connected application, database servers are usually protected by at least two firewalls. The first firewall separates the internet from the front-end servers—if these servers host websites or web APIs, for example. Only TCP port 80 should be open on the outer firewall, but this port must be open for all source IP addresses, except blocked addresses.
 
 The second firewall separates the front-end servers from the database servers. It's recommended to publish the database service on a private port number that's not known to the outside world. On the second firewall, open this port number only for the IP addresses of the front-end servers. This arrangement prevents any direct communication from a malicious internet user to the database servers.
 

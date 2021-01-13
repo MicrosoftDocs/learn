@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.basic-python-nasa.7a-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  Answer the following questions to see what you've learned.
+quiz:
+  questions:
+  - content: "Which of the following terms is not a variable type?"
+    choices:
+    - content: "Integer"
+      isCorrect: false
+      explanation: "Integers are variables that store numbers."
+    - content: "Float"
+      isCorrect: false
+      explanation: "Floats are variables that function as decimals."
+    - content: "String"
+      isCorrect: false
+      explanation: "String is actually a variable that stores words."
+    - content: "Decimal"
+      isCorrect: true
+      explanation: "Correct! Decimals are called floats."
+  - content: "Which statement is correct?"
+    choices:
+    - content: "Lists can store only one type of data."
+      isCorrect: false
+      explanation: "Incorrect. Lists can store all types of data."
+    - content: "Lists can store all types of data."
+      isCorrect: true
+      explanation: "Correct! Lists can store all types of data."
+  - content: "Which of the following is the correct way to print the value of a variable and text?"
+    choices:
+    - content: "print(\"This is a variable\"; variable)"
+      isCorrect: false
+      explanation: "The semicolon (;) should be a comma."
+    - content: "print(\"This is a variable\", variable)"
+      isCorrect: true
+      explanation: "Correct! This is how to correctly print a variable and text."
+    - content: "print(\"This is a variable\": variable)"
+      isCorrect: false
+      explanation: "The colon (:) should be a comma."
+    - content: "print(\"This is a variable\"~ variable)"
+      isCorrect: false
+      explanation: "The tilde (~) should be a comma."

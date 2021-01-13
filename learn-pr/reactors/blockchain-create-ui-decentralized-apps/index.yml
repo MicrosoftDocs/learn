@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.reactors.blockchain-create-ui-decentralized-apps
+metadata:
+  title: Create a user interface with decentralized apps
+  description: Learn about decentralized apps and how to build your own.
+  ms.date: 11/30/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a user interface with decentralized apps
+summary: Learn about decentralized apps and how to build your own.
+abstract:  |
+ By the end of this module, you'll be able to:
+
+ - Explain what decentralized apps are
+ - Identify the technology needed to create decentralized apps
+ - Explain how to use Drizzle to create apps
+ - Build your own decentralized apps
+prerequisites: | 
+  - <a href="https://docs.microsoft.com/learn/modules/intro-to-blockchain/" target="_blank">Fundamental knowledge of blockchain</a>
+  - <a href="https://docs.microsoft.com/learn/modules/blockchain-learning-solidity/" target="_blank">Solidity programming knowledge</a>
+  - <a href="https://docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/" target="_blank">Knowledge of Ethereum smart contracts</a>
+  - Previous experience with a programming language like C, Python, or JavaScript
+  - Basic knowledge of programming concepts
+  - Familiarity with the command line to create new directories and install programs
+  - Node.js installed
+  - Truffle and Ganache CLI installed
+  - Visual Studio Code installed
+  - Blockchain Development Kit for Ethereum installed
+iconUrl: /learn/achievements/reactors/blockchain-create-ui-decentralized-apps.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.reactors.blockchain-create-ui-decentralized-apps.1-introduction
+- learn.reactors.blockchain-create-ui-decentralized-apps.2-learn-dapps
+- learn.reactors.blockchain-create-ui-decentralized-apps.3-learn-drizzle
+- learn.reactors.blockchain-create-ui-decentralized-apps.4-drizzle-dapps
+- learn.reactors.blockchain-create-ui-decentralized-apps.5-shipping-dapp
+- learn.reactors.blockchain-create-ui-decentralized-apps.6-knowledge-check
+- learn.reactors.blockchain-create-ui-decentralized-apps.7-summary
+badge:
+  uid: learn.reactors.blockchain-create-ui-decentralized-apps.badge

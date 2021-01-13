@@ -1,0 +1,63 @@
+The Data Science Virtual Machine (DSVM) is a virtual machine that runs on the Azure cloud platform. There are Data Science Virtual Machine images for:
+
+- Windows Server 2019
+- Ubuntu Server 18.04 LTS
+
+You can choose to run the Data Science Virtual Machine on different Azure virtual machine series and sizes. Common choices for the Data Science Virtual Machine are:
+
+
+| Common series | Use case | 
+| --- | --- | 
+| General purpose | Balanced CPU/memory ratios |
+| Memory-optimized E series | In-memory data analytics | 
+| N-series GPU compute | Machine learning experimentation and inferencing |
+
+N-series virtual machines feature the NVIDIA Tesla accelerated platform and NVIDIA GRID 2.0 technology. The Data Science Virtual Machine tools and libraries that can use GPU acceleration are preconfigured with the appropriate drivers and library versions.
+
+## How the Data Science Virtual Machine works
+
+After you've specified an operating system and hardware platform, Azure creates the virtual machine and related resources. The related resources include such things as a storage account and a network security group. 
+
+When you start the virtual machine, Azure restores the image to the specified hardware type and starts the operating system. You can then connect, as you'll learn how to do in this module. After you're connected, you use the virtual machine in the same way you'd use any other machine. After you're done, you shut down the machine by using either the operating system facilities or the Azure portal. 
+
+Your charges are based on the type of hardware (compute power, RAM, and storage) that you specified. You're charged only for time that the virtual machine is running, at a half-minute granularity.  
+
+## When to use the Data Science Virtual Machine
+
+The goal of the Data Science Virtual Machine is a friction-free, preconfigured environment for data science and machine learning. The experience is familiar and usable by data professionals of all skill levels. 
+
+Instead of rolling out a comparable workspace on your own, you can provision a Data Science Virtual Machine. That choice can save you days or even _weeks_ on the processes of installation, configuration, and package management. After your Data Science Virtual Machine is allocated, you can immediately begin working on your data science project.
+
+## Sample use cases
+
+The Data Science Virtual Machine is a good fit in several use cases.
+
+### Moving data science workloads to the cloud
+
+The Data Science Virtual Machine provides a baseline configuration for data science teams. This configuration ensures that all the data scientists on a team have a consistent setup with which to verify experiments and promote collaboration. It also lowers costs by reducing the sysadmin burden. This burden reduction saves on the time needed to evaluate, install, and maintain software packages for advanced analytics.
+
+### Data science training and education
+
+Enterprise trainers and educators who teach data science classes usually provide a virtual machine image. The image ensures that students have a consistent setup and that the samples work predictably. 
+
+The Data Science Virtual Machine creates an on-demand environment with a consistent setup that eases the support and compatibility challenges. Cases where these environments need to be built frequently, especially for shorter training classes, benefit substantially.
+
+### On-demand elastic capacity for large-scale projects
+
+Data science hackathons/competitions or large-scale data modeling and exploration require scaled-out hardware capacity, typically for short duration. The Data Science Virtual Machine can help replicate the data science environment quickly on demand. These replicated environments can then run on high-powered computing resources as your scenario demands.
+
+### Short-term experimentation and evaluation
+
+You can use the Data Science Virtual Machine to evaluate or learn new data science tools. The Data Science Virtual Machine has samples and walkthroughs preinstalled.
+
+### Deep learning with GPUs
+
+In the Data Science Virtual Machine, your training models can use deep learning algorithms on hardware that's based on graphics processing units (GPUs). By taking advantage of the VM scaling capabilities of the Azure platform, the Data Science Virtual Machine helps you use GPU-based hardware in the cloud. 
+
+You can switch to a GPU-based VM when you're training large models, or when you need high-speed computations while keeping the same OS disk. You can choose any of the N series GPU-enabled virtual machine SKUs with the Data Science Virtual Machine. Note that Azure free accounts don't support GPU-enabled virtual machine SKUs.
+
+The Data Science Virtual Machine is configured with the proper drivers, framework versions and configurations, and GPU tools for those tools and frameworks that support GPU acceleration. If you use Python, there are several conda environments configured to avoid confusion. For instance, PyTorch and TensorFlow are in separate environments. 
+
+You can also deploy the Ubuntu or Windows edition of the Data Science Virtual Machine to an Azure virtual machine that isn't based on GPUs. In this case, all the deep learning frameworks will fall back to the CPU model.
+
+Our scenario, where you're investigating bank data to help predict trends, touches on several of these use cases: collaboration, capacity, and exploration. You decide that an Ubuntu Data Science Virtual Machine is a good choice, because it will allow you to use familiar tools like RStudio and your existing data disk. And it won't require you to invest in learning new technologies until you've worked with your data for a while. 

@@ -55,7 +55,7 @@ In this exercise, you will use code to add the single **facet** entity to the ap
    await AddEntities(client, appInfo);
    ```
 
-1. You will expand on this code in later units so do not delete your codespace.
+1. You will expand on this code in later units.
 
 :::zone-end
 
@@ -76,6 +76,6 @@ In this exercise, you will use code to add the single **facet** entity to the ap
    add_entities(app_id, app_version)
    ```
 
-1. You will expand on this code in later units so do not delete your codespace.
+1. You will expand on this code in later units.
 
 :::zone-end

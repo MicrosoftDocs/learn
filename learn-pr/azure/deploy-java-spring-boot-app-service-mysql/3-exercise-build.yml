@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-spring-boot-app-service-mysql.3-exercise-build
+title: Exercise - Create Azure resources and a Java Spring application
+metadata:
+  title: Exercise - Create Azure resources and a Java Spring application
+  description: Create Azure resources and a Java Spring application.
+  ms.date: 11/16/2020
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-build.md)]

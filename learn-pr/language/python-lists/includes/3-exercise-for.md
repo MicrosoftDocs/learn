@@ -63,7 +63,7 @@ Tokyo
 
 The `for` statement has features similar to the `while` statement, which we explored in another module.
 
-The `break` statement allows you to break out of the `for` iteration.  In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out, we can filter the original list.
+The `break` statement allows you to break out of the `for` iteration.  In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out of the loop, we can filter the original list.
 
 Comment out the code from the previous section. Then add the following code listing:
 
@@ -119,6 +119,7 @@ When you execute the code, you might see something like the following output. Yo
 29
 49
 No numbers greater than 90
+Complete
 ```
 
 If one of the random numbers is 90 or greater, you see something like the following output. Again, your output will differ because the generated numbers are random.
@@ -150,15 +151,17 @@ for value in values:
     continue
   equipment.append(value)
 
-print(equipment)
+print(value)
 ```
 When you execute the code, you should see the following output:
 
 ```output
-laptop
-phone
-dslr
+['laptop', 'phone', 'dslr']
 ```
+
+> [!NOTE]
+> In the output for this step, we're printing the entire array of values that were filtered. Python displays these values as an array of strings using square brackets, commas, and single quotes.  If you want each individual item to print on a new line without all the extra characters, you must use the `print()` **inside** of the for loop.  See the other code listings on this page for examples of how to do this.
+
 ## Step 7 - Create nested `for` loops
 
 Nesting one `for` loop inside of another `for` loop is a common way to generate a combination of values.

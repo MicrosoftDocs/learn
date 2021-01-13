@@ -26,7 +26,7 @@ products:
 - azure-clis
 modules:
 - learn.provision-azure-sql-db
-#TODO - learn.migrate-sql-server-relational-data  (POST-IGNITE)
+- learn.migrate-sql-server-relational-data
 - learn.create-azure-db-for-postgresql
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn.secure-your-azure-sql-database

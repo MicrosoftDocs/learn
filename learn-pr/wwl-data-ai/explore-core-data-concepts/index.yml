@@ -3,7 +3,7 @@ uid: learn.wwl.explore-core-data-concepts
 metadata:
   title: Explore core data concepts
   description: "Explore core data concepts"
-  ms.date: 06/24/2020
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -25,7 +25,6 @@ roles:
 - administrator
 - business-user
 - data-engineer
-- student
 products:
 - azure
 units:

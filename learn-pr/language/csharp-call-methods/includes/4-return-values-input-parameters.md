@@ -21,7 +21,7 @@ Other methods are designed to accept one or more input parameters.  The input pa
 
 When calling methods, you separate each input parameter with a `,` symbol.
 
-In the following line of code, the two input parameters define the upper and lower boundaries, respectively, for the `Next()` method as it generates a new random number.
+In the following line of code, the two input parameters define the lower and upper boundaries, respectively, for the `Next()` method as it generates a new random number.
 
 ```csharp
 int roll = dice.Next(1, 7);
@@ -67,8 +67,8 @@ int roll2 = dice.Next(101);
 int roll3 = dice.Next(50, 101);
 
 Console.WriteLine($"First roll: {roll1}");
-Console.WriteLine($"First roll: {roll2}");
-Console.WriteLine($"First roll: {roll3}");
+Console.WriteLine($"Second roll: {roll2}");
+Console.WriteLine($"Third roll: {roll3}");
 ```
 
 The first version of the `Next()` method doesn't set an upper and lower boundary, so the method will return values ranging from `0` to `2,147,483,647`, which is the maximum value an `int` can store.

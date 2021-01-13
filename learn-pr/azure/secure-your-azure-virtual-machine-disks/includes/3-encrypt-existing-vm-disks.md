@@ -54,22 +54,22 @@ An Azure Key Vault is a resource that can be created in the [Azure portal](https
     - You can choose either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for Hardware-encryption backed keys.
 
 1. You must change the Access policies to support Disk Encryption. By default it adds _your_ account to the policy.
-    - Select **Access policies**
-    - Click **Advanced access policies**.
+    - Select **Access policies**.
+    - Select **Advanced access policies**.
     - Check the **Enable access to Azure Disk Encryption for volume encryption**.
     - You can remove your account if you like, it's not necessary if you only intend to use the Key Vault for disk encryption.
-    - Click **OK** to save the changes.
+    - To save the changes, select **OK**.
 
     ![Screenshot showing the advanced properties for Key Vault with the Azure Disk Encryption option checked and highlighted](../media/3-configure-access-policy.png)
 
-1. Click **Create** to create the new Key Vault.
+1. To create the new Key Vault, select **Create**.
 
-## Enabling access policies in the key vault
-Azure needs access to the encryption keys or secrets in your key vault to make them available to the VM for booting and decrypting the volumes. We covered this for the portal when we changed the **Advanced access policies** above.
+## Enable access policies in the key vault
+Azure needs access to the encryption keys or secrets in your key vault to make them available to the VM for booting and decrypting the volumes. This was covered for the portal which you previously changed the **Advanced access policies**.
 
 There are three policies you can enable.
 1. **Disk encryption** - Required for Azure Disk encryption.
-1. **Deployment** - (Optional) Enables the Microsoft.Compute resource provider to retrieve secrets from this key vault when this key vault is referenced in resource creation, for example when creating a virtual machine.
+1. **Deployment** - (Optional) Enables the Microsoft.Compute resource provider to retrieve secrets from this key vault when this key vault is referenced in resource creation, for example when creating a VM.
 1. **Template deployment** - (Optional) Enables Azure Resource Manager to get secrets from this key vault when this key vault is referenced in a template deployment.
 
 Here's how to enable the disk encryption policy. The other two are similar but use different flags.
@@ -82,14 +82,14 @@ Set-AzKeyVaultAccessPolicy -VaultName <keyvault-name> -ResourceGroupName <resour
 az keyvault update --name <keyvault-name> --resource-group <resource-group> --enabled-for-disk-encryption "true"
 ```
 
-## Encrypting an existing VM disk
+## Encrypt an existing VM disk
 
-Once you have the Key Vault setup, you can encrypt the VM using either Azure CLI or Azure PowerShell. The first time you encrypt a Windows VM, you can choose to encrypt either all disks or the OS disk only. On some Linux distributions, only the data disks may be encrypted. To be eligible for encryption, your Windows disks must be formatted as NTFS volumes.
+After you have the Key Vault set up, you can encrypt the VM using either Azure CLI or Azure PowerShell. The first time you encrypt a Windows VM, you can choose to encrypt either all disks or the OS disk only. On some Linux distributions, only the data disks may be encrypted. To be eligible for encryption, your Windows disks must be formatted as NTFS volumes.
 
 > [!WARNING]
-> You must take a snapshot or a backup of managed disks before you can turn on encryption. The `SkipVmBackup` flag specified below tells the tool that the backup is complete on managed disks. Without the backup, you will be unable to recover the VM if the encryption fails for some reason.
+> Before you can turn on encryption, you must take a snapshot or a backup of managed disks. The following `SkipVmBackup` flag tells the tool that the backup is complete on managed disks. Without the backup, you will be unable to recover the VM if the encryption fails for some reason.
 
-With PowerShell, use the `Set-AzVmDiskEncryptionExtension` cmdlet to enable encryption.
+With PowerShell, to enable encryption, run the `Set-AzVmDiskEncryptionExtension` cmdlet.
 
 ```powershell
 
@@ -102,17 +102,17 @@ Set-AzVmDiskEncryptionExtension `
      -SkipVmBackup
 ```
 
-For the Azure CLI, use the `az vm encryption enable` command to enable encryption.
+For the Azure CLI, to enable encryption, run the `az vm encryption enable` command.
 
 ```azurecli
 az vm encryption enable \
     --resource-group <resource-group> \
     --name <vm-name> \
     --disk-encryption-keyvault <keyvault-name> \
-    --volume-type [all | os | data] \
+    --volume-type [all | os | data]
 ```
 
-## Viewing the status of the disk
+## View the status of the disk
 
 You can check whether specific disks are encrypted or not.
 
@@ -128,19 +128,19 @@ Both of these commands will return the status of each disk attached to the speci
 
 ## Decrypting drives
 
-You can reverse the encryption through PowerShell using `Disable-AzVMDiskEncryption`.
+To reverse the encryption through PowerShell, use `Disable-AzVMDiskEncryption`.
 
 ```powershell
 Disable-AzVMDiskEncryption -ResourceGroupName <resource-group> -VMName <vm-name>
 ```
 
-For the Azure CLI, use the `vm encryption disable` command.
+For the Azure CLI, run the `vm encryption disable` command.
 
 ```azurecli
 az vm encryption disable --resource-group <resource-group> --name <vm-name>
 ```
 
-These commands disable encryption for volumes of type all for the specified virtual machine. Just like the encrypt version, you can specify a `-VolumeType` parameter `[All | OS | Data]` to decide what disks to decrypt. It defaults to `All` if not supplied.
+These commands disable encryption for volumes of type all for the specified VM. Just like the encrypt version, to decide what disks to decrypt, you can specify a `-VolumeType` parameter `[All | OS | Data]`. It defaults to `All`, if not supplied.
 
 > [!WARNING]
 > Disabling data disk encryption on Windows VM when both OS and data disks have been encrypted doesn't work as expected. You must disable encryption on all disks instead.

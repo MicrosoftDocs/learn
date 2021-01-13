@@ -1,8 +1,8 @@
-We can fail over protected resources in three ways. Using the portal, using PowerShell, or automating the failover with an Azure Automation runbook.
+You can fail over protected resources in three ways: using the portal, using PowerShell, or automating the failover with an Azure Automation runbook.
 
-With all our resources protected, we'd like to run a real failover of our patient-records VM. With the disaster recovery drill complete, we'll do the failover with PowerShell and the portal. Once completed, we'll be in a better position to recommend which approach our company should use.
+With all your resources protected, you can run a real failover of your patient-records VM. With the DR drill complete, you'll do the failover with PowerShell and the portal. After completion, you'll be in a better position to recommend which approach your company should use.
 
-In this exercise, we'll complete failover for a VM using PowerShell, and failback the VM using the Azure portal.
+In this exercise, you'll complete failover for a VM using PowerShell, and fail back the VM using the Azure portal.
 
 ## Fail over a VM to a secondary region using PowerShell
 
@@ -10,7 +10,7 @@ In this exercise, we'll complete failover for a VM using PowerShell, and failbac
 
 1. Start a Cloud Shell and switch it to PowerShell.
 
-1. Run the following commands.
+1. Run the following commands:
 
     ```powershell
         $vault = Get-AzRecoveryServicesVault -Name "asr-vault"
@@ -31,15 +31,15 @@ In this exercise, we'll complete failover for a VM using PowerShell, and failbac
         Get-ASRJob -Job $CommitFailoverJob
     ```
 
-    The PowerShell commands above:
-    - Store the Azure Site Recovery vault in a variable
-    - Set the context for the session to your vault
-    - Store the protected patient-records from the vault
-    - Get a list of all the recovery points
-    - Trigger a failover for the latest recovery point
-    - Show the result of the failover
+    These PowerShell commands:
+    - Store the Azure Site Recovery vault in a variable.
+    - Set the context for the session to your vault.
+    - Store the protected patient records from the vault.
+    - Get a list of all the recovery points.
+    - Trigger a failover for the latest recovery point.
+    - Show the result of the failover.
 
-1. The failover can take a couple of minutes. While the script is running, leave the cloud shell open and navigate to the _asr-vault_.
+1. The failover can take a couple of minutes. While the script is running, leave the Cloud Shell open, and navigate to the _asr-vault_.
 
 1. On the left, under **Monitoring**, select **Site Recovery jobs**.
 
@@ -52,7 +52,7 @@ In this exercise, we'll complete failover for a VM using PowerShell, and failbac
 
 ## Reprotect the VM using PowerShell
 
-1. Once the failover has completed successfully, we can reprotect the VM.
+1. After the failover has completed successfully, you can reprotect the VM.
 
 1. Run the following commands.
 
@@ -60,28 +60,28 @@ In this exercise, we'll complete failover for a VM using PowerShell, and failbac
     $RecoveryFabric = Get-AsrFabric -Name "asr-a2a-default-eastus2"
     $RecoveryProtContainer = Get-ASRProtectionContainer -Fabric $RecoveryFabric
     $ProtectionContainerMapping = Get-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainer $RecoveryProtContainer -Name eastus2-westus2-24-hour-retention-policy
-    $StorageAccount = New-AzStorageAccount -ResourceGroupName "east-coast-rg" -AccountName "reprotectcache" -Location eastus2 -SkuName Standard_GRS
+    $StorageAccount = New-AzStorageAccount -ResourceGroupName "east-coast-rg" -AccountName "reprotectcache$(Get-Random)" -Location eastus2 -SkuName Standard_GRS
     $ResourceGroup = Get-AzResourceGroup -Name "west-coast-rg"
 
     $ReprotectJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -ProtectionContainerMapping $ProtectionContainerMapping -ReplicationProtectedItem $ReplicationProtectedItem -LogStorageAccountId $StorageAccount.ID -RecoveryResourceGroupId $ResourceGroup.ResourceId
     ```
 
-    The PowerShell commands above:
-    - Setup variables that will be used by the Update-AzRecoveryServicesAsrProtectionDirection command
-    - A storage account is needed to store the reprotected logs and data. This storage needs to be in the same region as the VM that is being protected
-    - The last line starts the reprotect job, and stores a reference to it
+    These PowerShell commands:
+    - Set up variables that will be used by the Update-AzRecoveryServicesAsrProtectionDirection command.
+    - Require a storage account to store the reprotected logs and data. This storage needs to be in the same region as the VM that is being protected.
+    - Start the reprotect job using the last line, and store a reference to it.
 
 ## Monitor and test using PowerShell
 
 The job to reprotect the VM can take around approximately 10 minutes to complete.
 
-1. We can monitor the job using this PowerShell command:
+1. You can monitor the job using this PowerShell command:
 
     ```powershell
     Get-AzRecoveryServicesAsrJob -Job $ReprotectJob
     ```
 
-1. This command will return the status of the job. The output will look like this example:
+1. This command returns the status of the job. The output looks like this example:
 
     ```powershell
     Name             : 0993fa3c-6ac1-4d96-920d-df06830d49f2
@@ -108,30 +108,30 @@ The job to reprotect the VM can take around approximately 10 minutes to complete
 
 ## Failback to the West US region using the portal
 
-1. Close the Cloud Shell so that we can use the Azure portal more easily.
+1. Close the Cloud Shell to use the Azure portal more easily.
 
-1. Select **All resources** in the upper left-hand side of the portal.
+1. In the upper left-hand side of the portal. select **All resources**.
 
-1. Select the **Recovery Services vault** by selecting **asr-vault**.
+1. Select **asr-vault**. and then select the **Recovery Services vault**.
 
 1. Under **Protected items**, select **Replicated items**.
 
 1. Select the **patient-records**.
 
-    We can't failback the VM until the replication has completed, and synchronization is 100% completed. Please note that the synchronization process can take several minutes to complete.
+    You can't fail back the VM until the replication has completed, and synchronization is 100% completed. The synchronization process can take several minutes to complete.
 
-1. Once synchronization completes, select **failover**.
+1. After synchronization completes, select **failover**.
 
-1. Select the latest processed (low RTO) for the Recovery Point.
+1. For the Recovery Point, select the latest processed (low RTO).
 
-1. Select **OK** to begin the failback.
+1. To begin the failback, select **OK**.
 
 ## Monitor the failback
 
-1. Select **All resources** in the upper left-hand side of the portal.
+1. In the upper left-hand side of the portal, select **All resources**.
 
-1. Select the **Recovery Services vault** by selecting **asr-vault**.
+1. Select **asr-vault**, and then select the **Recovery Services vault**.
 
 1. Under **Monitoring**, select **Site Recovery jobs**.
 
-1. Select the in progress **Failover** job.
+1. Select the in-progress **Failover** job.

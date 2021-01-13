@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.securing-you-basics-beyond.5-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 05/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-summary.md)]

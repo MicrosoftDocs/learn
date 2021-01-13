@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-cloud-governance-strategy-azure.10-govern-subscriptions-azure-blueprints
+title: Govern multiple subscriptions by using Azure Blueprints
+metadata:
+  description: Explore how Azure Blueprints enables governance at scale across multiple Azure subscriptions.
+  ms.date: 09/14/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-govern-subscriptions-azure-blueprints.md)]

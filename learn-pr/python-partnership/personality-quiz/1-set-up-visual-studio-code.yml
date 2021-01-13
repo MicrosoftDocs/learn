@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.personality-quiz.set-up-visual-studio-code
+metadata:
+  title: Ensure that Visual Studio Code is ready to create a personality quiz
+  description: This unit ensures that learners have Visual Studio Code ready to write the quiz code.
+  ms.date: 9/21/20
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Ensure that Visual Studio Code is ready to create a personality quiz
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-set-up-visual-studio-code.md)]

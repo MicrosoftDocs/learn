@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.student-evangelism.intermediate-python-nasa
+metadata:
+  title: Code control statements in Python
+  description: Learn more advanced topics of Python.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Code control statements in Python
+summary: Learn more advanced topics of Python.
+abstract: |
+  In this module, you'll learn:
+  - How to write and when to use conditionals
+  - How to write and when to use while and for loops
+  - How to make your own functions
+  - How to call your own functions
+  - How to use parameters and global variables
+prerequisites: |
+  - Visual Studio Code installed
+  - Python Installed
+  - Python extension installed
+  - Basic knowledge of Python
+iconUrl: /learn/achievements/student-evangelism/intermediate-python-nasa.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+units:
+- learn.student-evangelism.intermediate-python-nasa.1-introduction
+- learn.student-evangelism.intermediate-python-nasa.2-conditions
+- learn.student-evangelism.intermediate-python-nasa.3-if-statements
+- learn.student-evangelism.intermediate-python-nasa.4-iterations
+- learn.student-evangelism.intermediate-python-nasa.5-functions
+- learn.student-evangelism.intermediate-python-nasa.6-read-text-file
+- learn.student-evangelism.intermediate-python-nasa.7-parameters
+- learn.student-evangelism.intermediate-python-nasa.7a-knowledge-check
+- learn.student-evangelism.intermediate-python-nasa.8-summary
+badge:
+  uid: learn.student-evangelism.intermediate-python-nasa.badge

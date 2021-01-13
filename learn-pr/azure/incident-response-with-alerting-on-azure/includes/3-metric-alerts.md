@@ -36,14 +36,14 @@ There's no hard threshold in dynamic metrics. However, you'll need to define two
 
 Until now, the assessed metric alerts have focused on a single target instance. Azure Monitor supports dimensions, which enable monitoring data to be supplied from multiple target instances.
 
-You use dimensions to define one metric alert rule and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your application. You can then receive an individual notification for each server instance when the rule conditions are triggered.
+You use dimensions to define one metric alert rule and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your app. You can then receive an individual notification for each server instance when the rule conditions are triggered.
 
-You can define the dimensions by naming each target instance specifically. Or you can define the dimensions by using the asterisk (\*) wildcard, which will use all available instances.
+You can define the dimensions by naming each target instance specifically. Or, you can define the dimensions by using the asterisk (\*) wildcard, which will use all available instances.
 
 ## Scaling metric alerts
 
 Azure Monitor supports the creation of metric alerts that, like dimensions, monitor multiple resources. Scaling is currently limited to Azure virtual machines. However, a single metric alert can monitor resources in one Azure region.
 
-The creation of scaling metric alert rules to monitor multiple resources is no different from creating any other metric alert rule. You just select all the resources that you want to monitor.
+Creating scaling metric alert rules to monitor multiple resources is no different than creating any other metric alert rule. You just select all the resources that you want to monitor.
 
 Like dimensions, a scaling metric alert is individual to the resource that triggered it.

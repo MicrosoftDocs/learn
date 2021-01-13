@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.basic-python-nasa.6-lists
+metadata:
+  title: Exercise - Create lists of data in Python code
+  description: Lists in Python.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create lists of data in Python code
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-lists.md)]

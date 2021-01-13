@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.7a-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Contains interactive questions that validate whether the learner accomplished the learning objectives.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "What is a neural network?"
+    choices:
+    - content: "A computer system that's modeled on the human brain and nervous system."
+      isCorrect: true
+      explanation: "Correct! A neural network is a computer system that's modeled on the human brain and nervous system."
+    - content: "An intricate system of linked computing servers."
+      isCorrect: false
+      explanation: "Incorrect. A neural network isn't a network of computers or servers."
+    - content: "A bundle of software that's installed on a computer."
+      isCorrect: false
+      explanation: "Incorrect. A neural network isn't software."      
+  - content: "What does accuracy in an AI model refer to?"
+    choices:
+    - content: "The percentage of time a model made an incorrect prediction."
+      isCorrect: false
+      explanation: "Incorrect. This answer doesn't address the measurement of accuracy."
+    - content: "The percentage of time the model made a correct prediction."
+      isCorrect: true 
+      explanation: "Correct! Accuracy in this context refers to how often the model was correct in its predictions."
+    - content: "The number of images you need to train the model for the model to be perfect."
+      isCorrect: false
+      explanation: "Incorrect. The accuracy of an AI model doesn't refer to the details of testing, only to the success rate of predictions."
+  - content: "How can you increase the accuracy of an AI model?"
+    choices:
+    - content: "By training the model an additional five times."
+      isCorrect: false
+      explanation: "Incorrect. Training the model more times won't necessarily increase the accuracy of the model."
+    - content: "By decreasing the number of epochs."
+      isCorrect: false
+      explanation: "Incorrect. Decreasing the number of epochs during training won't necessarily increase the accuracy of the model."
+    - content: "By adding more images and increasing the number of epochs."
+      isCorrect: true
+      explanation: "Correct! You can increase the accuracy of an AI model by adding more images and epochs when you train the model."
+
+

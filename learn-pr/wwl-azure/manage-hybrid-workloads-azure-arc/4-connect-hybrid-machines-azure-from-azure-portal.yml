@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.connect-hybrid-machines-to-azure-from-azure-portal
+title: Connect hybrid machines to Azure from the Azure portal
+metadata:
+  title: Connect hybrid machines to Azure from the Azure portal
+  description: "Connect hybrid machines to Azure from the Azure portal"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-connect-hybrid-machines-azure-from-azure-portal.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "In the video, at time index 2:05, what does the script do in the Azure onboarding process?"
+    choices:
+    - content: "At that point, the script is onboarding the VM."
+      isCorrect: false
+      explanation: "That's incorrect. The script first downloads the agent, then installs it, and then onboards the device into Azure Arc."
+    - content: "At that point, the script is downloading the required agent on the VM."
+      isCorrect: true
+      explanation: "That's correct. The script first downloads the agent, then installs it, and then onboards the device into Azure Arc."
+    - content: "At that point, the script is installing the required agent on the VM."
+      isCorrect: false
+      explanation: "That's incorrect. The script first downloads the agent, then installs it, and then onboards the device into Azure Arc."

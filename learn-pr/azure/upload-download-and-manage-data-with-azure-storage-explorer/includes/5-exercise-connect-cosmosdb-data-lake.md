@@ -4,6 +4,9 @@ You've seen how simple it is to create and manage blob and queue resources in yo
 
 Here, you'll learn how to create a new Storage Explorer connection to Azure Cosmos DB, create a database, and populate it with content. Finally, you'll see how to connect to an Azure Data Lake Storage Gen2 account, create a container, and upload data into it. 
 
+> [!NOTE]
+> The Azure Cosmos DB integration with Storage Explorer has been deprecated. Any existing functionality will not be removed for a minimum of one year from this release. You should use the [Azure Portal](https://portal.azure.com/?azure-portal=true), [Azure Portal desktop app](https://portal.azure.com/App/Download?azure-portal=true) or the standalone [Azure Cosmos explorer](https://cosmos.azure.com/?azure-portal=true) instead. The alternative options contain many new features that aren’t currently supported in Storage Explorer.
+
 ## Create a Cosmos DB account
 
 Before you use Storage Explorer to connect to Azure Cosmos DB with a connection string, you need to create an account.
@@ -32,27 +35,35 @@ Next, obtain the primary master key for your Cosmos DB account. You'll use that 
     az cosmosdb keys list \
         --name $NAME \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
-        --type keys
+        --type connection-strings
     ```
 
     The command returns a response similar to this JSON:
 
     ```json
-    {
-      "primaryMasterKey": "9xuqPVI9AlJgSnOtJKspKGWtKxJRNZgXk5JLoXiaoMJJCGRBmxrspjmJv577W9eSPOQDuniBvgCwogWmr7z6vw==",
-      "primaryReadonlyMasterKey": "NzllFVsC64Z9EPxAIIdb9gIDtUoGaIoI2rolLKRf62CgdOjQIKUt33va1YfByju1oYFMyBpQeumJt6TyiwM2TA==",  
-      "secondaryMasterKey": "RsALCKV6YbAASu8ZdNPoYXVJYhU9bZsOdZhOKxkgDaEjYcsNEu4XXLPc02CwgMzlx8R6768Oy2Bx8bGK37dYAA==",
-      "secondaryReadonlyMasterKey": "9OZNISEi1CW5VYW2viVZ8S0PbQQyHNWw1vBFwCqGrfqO81SN56CscmovqCH8MdXTO5zhp08xp8Y2VNH9bK1Aaw"
+        {
+      "connectionStrings": [
+        {
+          "connectionString": "AccountEndpoint=https://cosmos10632.documents.azure.com:443/;AccountKey=iEMq9yqfmjvrm1yGjbMdhebv6cv6FSFr5C2qAZSHzXmAQTBmP5vvyjdR7kdR3sV054JvAS2HREdYkRXT3xuHmA==;",
+          "description": "Primary SQL Connection String"
+        },
+        {
+          "connectionString": "AccountEndpoint=https://cosmos10632.documents.azure.com:443/;AccountKey=igsE0P0EJtq68X374aDXvbVS7d3ELcebxxGLMs42uSyjNpAXbnSsVT5zviC3lgre5eYmzXzcC6YqxtodNHCwAA==;",
+          "description": "Secondary SQL Connection String"
+        },
+        {
+          "connectionString": "AccountEndpoint=https://cosmos10632.documents.azure.com:443/;AccountKey=iskqlnpSh9w9Vndzj8acic5KpFXot7oapHxu53HKowKtLwokpXwT2upimu2hytc8KDQ45tM2jgVWzeR1q1SOGQ==;",
+          "description": "Primary Read-Only SQL Connection String"
+        },
+        {
+          "connectionString": "AccountEndpoint=https://cosmos10632.documents.azure.com:443/;AccountKey=bngJ453xU0otnkMALdbuTnKGFzL4NX4ppCEWPu5tOdmWRkipelwHa7bIf35E4VIyzvt5VLWwRRpI6Rja9bkePA==;",
+          "description": "Secondary Read-Only SQL Connection String"
+        }
+      ]
     }
     ```
 
-    Make a note of the primary master key because you'll need it next.
-
-1. You can now build your connection string. Use the following template. Replace `<YOUR-COSMOS-DB-NAME>` with the name of your Azure Cosmos DB account. Replace `<PRIMARY-MASTER-KEY>` with the primary master key that you obtained.
-
-    ```plaintext
-    AccountEndpoint=https://<YOUR-COSMOS-DB-NAME>.documents.azure.com:443/;AccountKey=<PRIMARY-MASTER-KEY>;
-    ```
+    Make a note of the **Primary SQL Connection String** because you'll need it next.
 
 ### Connect to Azure Cosmos DB by using a connection string
 
@@ -68,15 +79,9 @@ Next, connect Storage Explorer to Azure Cosmos DB through a connection string.
 
     ![Screenshot that shows the Connect to Cosmos DB option on the shortcut menu](../media/5-cosmos-db-connect-string-option.png)
 
-1. The connection wizard needs the connection string to Azure Cosmos DB.
+1. The connection wizard needs the connection string to Azure Cosmos DB. Copy and paste the **Primary SQL Connection String** you generated earlier into the **Connection string** box. 
 
-    ![Screenshot that shows the Azure Cosmos DB connection wizard](../media/5-cosmos-db-connect-string-connect.png)
-
-    Copy the following connection string and paste it into the **Connection string** box. Then, replace `<YOUR-COSMOS-DB-NAME>` with the name of your Cosmos DB account. Replace `<PRIMARY-MASTER-KEY>` with the primary master key that you obtained earlier.
-
-    ```plaintext
-    AccountEndpoint=https://<YOUR-COSMOS-DB-NAME>.documents.azure.com:443/;AccountKey=<PRIMARY-MASTER-KEY>;
-    ```
+    ![Screenshot that shows the Azure Cosmos DB connection wizard](../media/5-cosmos-db-connect-string-connect.png)  
 
 1. You'll now see a **Summary** view that shows the **Account** label and name, the account endpoint, and the account key. Verify that they're correct, and then select **Connect**. Select **Next**.
 
@@ -114,7 +119,7 @@ Now that you have a Cosmos DB database, it's time to create a collection. When y
 
 1. Select **OK**.
 
-You now see that the region's collection is added under the production database. You can add as many collections as you want.
+You now see that the region's collection is added under the **products** database. You can add as many collections as you want.
 
 ### Create documents in a Cosmos DB database collection
 
@@ -164,7 +169,7 @@ Let's now look at connecting to a Data Lake Storage Gen2 account. Before you can
        --location westus2 \
        --sku Standard_LRS \
        --kind StorageV2 \
-       --hierarchical-namespace true
+       --hns
    ```
 
 ## Connect to your Data Lake Gen2 storage account

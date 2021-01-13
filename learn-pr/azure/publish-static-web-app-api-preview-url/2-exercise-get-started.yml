@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-api-preview-url.2-exercise-get-started
+metadata:
+  title: Exercise - Get started
+  description: Get started by running and deploying a static web app
+  ms.date: 09/25/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
+azureSandbox: true
+title: Exercise - Get started
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-get-started.md)]

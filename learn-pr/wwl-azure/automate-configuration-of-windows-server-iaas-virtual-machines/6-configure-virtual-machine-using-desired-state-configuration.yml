@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.configure-vm-by-using-dsc
+title: Configure a Virtual Machine by using DSC
+metadata:
+  title: Configure a Virtual Machine by using DSC
+  description: "Configure a Virtual Machine by using DSC"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-configure-virtual-machine-using-desired-state-configuration.md)]

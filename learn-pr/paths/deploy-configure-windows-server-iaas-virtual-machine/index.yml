@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-configure-windows-server-iaas-vm
+metadata:
+  title: Deploy and configure Windows Server IaaS Virtual Machine
+  description: In this learning path, you’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads. After completing the learning path, you’ll know how to plan, deploy, and upgrade Windows Server Azure Virtual Machines.
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy and configure Windows Server IaaS Virtual Machine
+prerequisites: |
+  - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
+  - Experience with common Windows Server management tools (implied by the first prerequisite).
+  - Basic knowledge of core Microsoft compute, storage, networking, and virtualization technologies (implied by the first prerequisite).
+  - Basic knowledge of on-premises resiliency Windows Server-based compute and storage technologies (Failover Clustering, Storage Spaces).
+  - Basic experience with implementing and managing IaaS services in Microsoft Azure.
+  - Basic knowledge of Azure Active Directory.
+  - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR).
+  - Basic knowledge of PowerShell scripting.
+  - An understanding of the following concepts as related to Windows Server technologies:
+    - High Availability and Disaster Recovery
+    - Automation
+    - Monitoring
+summary: |
+  In this learning path, you’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads. After completing the learning path, you’ll know how to plan, deploy, and upgrade Windows Server Azure Virtual Machines.
+iconUrl: /learn/achievements/deploy-and-configure-windows-server-iaas-vm.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+- azure-clis
+- azure-cloud-shell
+- azure-portal
+- azure-storage
+- azure-virtual-machines
+modules:
+- learn.wwl.plan-deploy-windows-server-iaas-vms
+- learn.wwl.customize-windows-server-iaas-vm-images
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
+trophy:
+  uid: learn.wwl.deploy-configure-windows-server-iaas-vm.trophy

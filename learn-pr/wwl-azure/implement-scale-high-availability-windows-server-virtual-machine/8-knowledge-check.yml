@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about Azure Site Recovery is true?"
+    choices:
+    - content: "Site Recovery creates Recovery Services vaults."
+      isCorrect: true
+      explanation: "That's correct. Recovery Services vaults are used to store backup data, VM configuration settings, and workloads."
+    - content: "Site Recovery creates Docker containers using storage accounts."
+      isCorrect: false
+      explanation: "That's incorrect. Docker containers aren't used. Instead, Site Recovery uses Recovery Services vaults to store backup data, VM configuration settings, and workloads."
+    - content: "Site Recovery creates and stores managed disks."
+      isCorrect: false
+      explanation: "That's incorrect. Managed disks aren't used. Instead, Site Recovery uses Recovery Services vaults to store backup data, VM configuration settings, and workloads."
+  - content: "Which of the following statement about external load balancers is correct?"
+    choices:
+    - content: "They have a private, front-facing IP address."
+      isCorrect: false
+      explanation: "That's incorrect. External load balancers have public IP addresses."
+    - content: "They don't have a listener IP address."
+      isCorrect: false
+      explanation: "That's incorrect. External load balancers have a lister IP."
+    - content: "They have a public IP address."
+      isCorrect: true
+      explanation: "That's correct. External load balancers have public IP addresses."
+  - content: "Which four ways does Site Recovery protect VM infrastructure?"
+    choices:
+    - content: "It implements an organization's BCDR, enables automatic failover and recovery; failed-over machines are automatically protected; and it automatically manages backup storage."
+      isCorrect: false
+      explanation: "That's incorrect. Failover and failback are manual, not automatic. Using Site Recovery can help meet an organizations BCDR, but can't implement it as a whole. The backup and syncing<!-- Andy, of what? VMs? --> are automatic."
+    - content: "It creates snapshots and recovery points; it replicates VMs to a secondary region; it supports DR drills; and it enables flexible failover/failback."
+      isCorrect: true
+      explanation: "That's correct. These are the four main features of Site Recovery that will protect your VMs."
+    - content: "It backs up VM disks locally and to a different region; it automatically manages backup storage; it creates a Microsoft Azure Backup Server (MABS); and it mirrors workloads between primary and secondary regions."
+      isCorrect: false
+      explanation: "That's incorrect. These are features provided by Azure Backup, not Site Recovery."

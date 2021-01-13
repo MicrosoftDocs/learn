@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-data-azure-data-factory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which Azure Data Factory component orchestrates a transformation job or runs a data movement command?"
+    choices:
+    - content: "Linked Services"
+      isCorrect: false
+      explanation: "Incorrect. Linked Services are objects that are used to define the connection to data stores or compute resources in Azure."
+    - content: "Datasets"
+      isCorrect: false
+      explanation: "Incorrect. Datasets represent data structures within the data store that is being referenced by the Linked Service object."
+    - content: "Activities"
+      isCorrect: true
+      explanation: "Correct. Activities contains the transformation logic or the analysis commands of the Azure Data Factory’s work."
+  - content: "You are moving data from an Azure Data Lake Gen2 store to Azure Synapse Analytics. Which Azure Data Factory integration runtime would be used in a data copy activity?"
+    choices:
+    - content: "Azure-SSIS"
+      isCorrect: false
+      explanation: "Incorrect. Azure-SSIS IR is used when you lift and shift existing SSIS workload."
+    - content: "Azure"
+      isCorrect: true
+      explanation: "Correct. When moving data between Azure data platform technologies, the Azure Integration runtime is used when copying data between two Azure data platform."
+    - content: "Self-hosted"
+      isCorrect: false
+      explanation: "Incorrect. Self-hosted IR is used when working with data movement from private networks to the cloud and vice versa."

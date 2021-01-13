@@ -28,7 +28,7 @@ The storage-specific provisions for Azure VMs hosting SAP workloads are as follo
 
 Additionally, Azure Standard HDD storage-based managed disks are not supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment and using Azure Premium SSD storage for all other Azure VMs DBMS workloads.
 
-The use cases for the Standard and Premium storage. Premium storage is required for all database-related files with exception of the follwA-series VM SKUs (including Standard_A5, Standard_A6, Standard_A7, Standard_A8, Standard_A9, Standard_A10, Standard_A11) and D-series VM SKUs (including Standard_D11, Standard_D12, Standard_D13, and Standard_D14). 
+The use cases for the Standard and Premium storage. Premium storage is required for all database-related files with exception of the following A-series VM SKUs (including Standard_A5, Standard_A6, Standard_A7, Standard_A8, Standard_A9, Standard_A10, Standard_A11) and D-series VM SKUs (including Standard_D11, Standard_D12, Standard_D13, and Standard_D14). 
 
 SAP recommends using Azure Premium Storage for all SAP production systems in Azure VMs. Even for non-production systems, which require reliable and predictable performance. Azure Premium Storage should be used instead of Azure Standard Storage for storing DBMS files.
 

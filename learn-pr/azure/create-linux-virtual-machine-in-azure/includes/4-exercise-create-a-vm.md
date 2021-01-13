@@ -47,7 +47,7 @@ It's considered best practice to standardize your resource names, so you can qui
 1. Moving on to the **Administrator account** section, for **Authentication type** select the **SSH public key** option.
 
 1. Enter a **username** you'll use to sign in with SSH. Choose something you can remember or write it down.
-
+1. For **SSH public key source**, select **Use existing public key**.
 1. Paste the SSH key from your public key file you created in the previous unit into the **SSH public key** field. It should look similar to the example shown in unit 3 with no additional whitespace or line-feed characters.
 
 1. In the **INBOUND PORT RULES** section, first select **Allow selected ports**. Since this is a Linux VM, we want to be able to access the VM using SSH remotely. Scroll the **Select inbound ports** list if necessary until you find **SSH (22)** and enable it.
@@ -68,7 +68,7 @@ Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). L
 
     ![Screenshot of the Azure portal showing the Create a new disk pane.](../media/3-add-data-disk.png)
 
-1. You can take all the defaults: **Premium SSD**, the auto-generated name, size of **1023** GiB, and **None (empty disk)** for **Source type**, although notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
+1. You can take all the defaults: **Premium SSD**, the auto-generated name, size of **1024** GiB, and **None (empty disk)** for **Source type**, although notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
 
 1. Click **OK** to create the disk and go back to the **Data disks** section.
 

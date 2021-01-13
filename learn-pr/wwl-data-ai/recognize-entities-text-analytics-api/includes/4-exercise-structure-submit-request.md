@@ -1,33 +1,36 @@
 This exercise will involve the creation of a client application to perform entity recognition using Cognitive Services. You must have an active [Azure subscription](https://azure.microsoft.com/free/search/?&OCID=AID2000128_SEM_XrxJTQAABTwX01UH:20200513142357:s&msclkid=93282274b4261e4f2f987cc8fd3320f5&ef_id=XrxJTQAABTwX01UH:20200513142357:s&dclid=CKLGnKzIsekCFdgXrQYdssEIxw) and either a [multi-service](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Cwindows#tabpanel_CeZOj-G++Q_multiservice) Cognitive Services resource, or a [Text Analytics](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account?tabs=singleservice%2Cwindows#tabpanel_CeZOj-G++Q_singleservice) resource.
 
+## Environment setup
+
+The environment for this exercise will make use of Visual Studio Code as the editor. Depending on the programming language you choose, the setup will differ. Follow the steps outlined here to configure your local computer for completion of the exercises.
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/) for your operating system.
+
+### Python
+
+1. If you will be completing your coding with Python, ensure you have a [Python environment](https://www.python.org/downloads/) installed locally.
+1. Once you have Python installed, you will need to [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for VS Code.
+
+### C#
+
+1. If you will be using C# as your code language, start by installing the latest [.NET Core](https://docs.microsoft.com/dotnet/core/install/windows?tabs=netcore31) package for your platform. You can choose Windows, Linux, or macOS from the drop-down on this page.
+1. Once you have .NET Core installed, you will need to add the C# Extension to VS Code. Select the **Extensions** option in the left nav pane, or press **CTRL+SHIFT+X** and enter C# in the search dialog.
+
+With your environment setup, you are now ready to begin the coding exercise.
+
 :::zone pivot="csharp"
 
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespace](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
+1. Start by opening Visual Studio Code.
+1. Create a new folder with a name of your choosing, example **EntityRecCsharp**.
+1. Right-click the **EntityRecCsharp** folder and choose **Open in Integrated Terminal**.
 
-    > [!NOTE]
-    > At this time, Safari is not a supported browser for the preview of Visual Studio Codespace.
+   >[!Note]
+   >Visual Studio Code may have different menu options depending on the packages you have installed.  You are looking for a terminal window at the bottom of Visual Studio Code that offers a command prompt/terminal.
 
-    An Azure subscription is required to create an environment for Visual Studio Codespace.
-1. Select the **Get started** button.
-1. Sign in using the Microsoft Account that is linked to your Azure subscription.
-1. The first time you use Visual Studio Codespace, you need to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Codespace**.
-1. Select your Subscription in the **Select Billing** pane and choose a location for the service.
-1. Select **Create**.
-1. Once your plan is created, you can then create your first environment.  
-1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
-1. Enter an environment name of your choosing, example **EntityExtractCS**.
-1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your Cognitive Service in the Azure portal and copy one of your keys.
-1. Once the environment indicates that it is available, select the hamburger menu in the upper left corner and choose **Terminal, New Terminal**.
-1. Once the new terminal opens, verify your prompt is **vsonline:~/workspace$**.
-1. Type in the command ``` dotnet new console ```.
-1. Codespace will create a skeleton .NET Core application for you.
-1. We will do our work inside of the Program.cs class so select the **Program.cs** file in the file panel to open it in the editor.
-1. To get a larger space in which to work, close the **Welcome** and **Creation Log** tabs.
-1. You may be prompted to install the C# extension.  Select **Install** when prompted, then select **Reload Required** to apply the extension to the environment.
-1. The next prompt asks you to install required assets.  Select **Yes** to install these assets.
-1. You can now start to enter some code for the application.
+1. We will be using C# and .NET Core for this exercise so type in the command ```dotnet new console``` and press Enter.
+1. A new C# dotnet core project structure is set up for you complete with a Program.cs file, a workspace.csproj file, and the obj folder.
+1. Open the **Program.cs** file to edit the contents.
+1. At the top of **Program.cs**, add the following using statements immediately following the existing one.
 1. You will require several libraries for the Text Analytics functionality so paste these **using** statements into your **Program.cs** file.
 
     ```csharp
@@ -141,33 +144,18 @@ This exercise will involve the creation of a client application to perform entit
 
 :::zone pivot="python"
 
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
+If you do not already have Python and Visual Studio Code installed on your local computer. Follow these instructions in the **Environment Setup** section above, to get your environment ready for the exercise.
 
-    > [!NOTE]
-    > At this time, Safari is not a supported browser for the preview of Visual Studio Codespace.
-
-    You need an Azure subscription to create an environment for Visual Studio Codespace.
-1. Select the **Get started** button.
-1. Sign in using the Microsoft Account that is linked to your Azure subscription.
-1. The first time you use Visual Studio Codespace, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Codespace**.
-1. Select your Subscription in the **Select Billing** pane and choose a location for the service.
-1. Select **Create**.
-1. Once your plan is created, you can then create your first environment.  
-1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
-1. Enter an environment name of your choosing, example **EntityExtractPy**.
-1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your Cognitive Service in the Azure portal and copy one of your keys.
-1. Once the environment is created, close the **Welcome** and **Creation Log** tabs.
-1. Create a new file and call it **entity.py**.
-1. Visual Studio Codespace will prompt you to install the Python extension, choose **Install**.
-1. Select the **Reload Required** button in the Extensions pane.
-1. You can also choose to install **pylint** when prompted.
+1. Create a folder to store the project in by using your local file system, **EntityRecPython**.
+1. In Visual Studio Code, select the File icon. Then open the folder you created.
+1. Create a new file in this folder, and call it **entity.py**.
 1. Select the hamburger menu and choose **Terminal, New Terminal**.
-1. In the Terminal window, install pip using the command ``` curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" ```.
-1. Follow that with the command ``` python3 get-pip.py ```.
 1. The exercise will use REST to access the service so once pip is updated, install the requests library with this command, ``` sudo pip install --upgrade requests ```.
-1. In your entity.py file, add the following code at the top.
+
+    >[!Note]
+    >Depending on your Python environment, the above command may not be appropriate. You may have to use just ```pip install``` or ```python3 install```
+
+1. In your **entity.py** file, add the following code at the top.
 
     ```python
     from pip._vendor import requests

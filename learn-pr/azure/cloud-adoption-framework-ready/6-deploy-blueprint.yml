@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-ready.6-deploy-blueprint
+title: Deploy the CAF Migration landing zone blueprint to start small
+metadata:
+  title: Deploy the CAF Migration landing zone blueprint to start small
+  description: Starting small allows for a rapid landing zone deployment that can later be expanded to meet your needs.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-deploy-blueprint.md)] 

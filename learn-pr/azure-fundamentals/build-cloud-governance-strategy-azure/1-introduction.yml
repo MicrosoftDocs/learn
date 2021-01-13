@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-cloud-governance-strategy-azure.1-introduction
+title: Introduction
+metadata:
+  description: Introduction
+  ms.date: 09/14/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

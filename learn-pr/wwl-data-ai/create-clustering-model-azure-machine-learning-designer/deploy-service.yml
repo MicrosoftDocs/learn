@@ -4,9 +4,9 @@ title: Deploy a predictive service
 metadata:
   title: Deploy a predictive service
   description: "Deploy a predictive service"
-  ms.date: 07/30/2020
+  ms.date: 12/30/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

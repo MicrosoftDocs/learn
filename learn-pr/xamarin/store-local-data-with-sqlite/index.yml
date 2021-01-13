@@ -23,7 +23,6 @@ levels:
 - intermediate
 roles: 
 - developer
-- student
 products:
 - xamarin
 - dotnet

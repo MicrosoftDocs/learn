@@ -4,23 +4,19 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 
 1. Open Visual Studio 2019 on your local machine.
 
-1. From the Visual Studio landing page under **Get started**, click **Create a new project**.
+1. From the Visual Studio landing page under **Get started**, select **Create a new project**.
 
 1. In the search box, enter **Web**.
 
 1. From the search results, select **ASP.NET Core Web Application**.
 
-1. Select the **Next** button.
+1. Select **Next**.
 
 1. In the new project dialog, set the **Name** field to **AlpineSkiHouse**.
 
 1. Select a **Location** for your new solution.
 
-1. Click the **Create** button to create your project.
-
-1. In the **Create a new ASP.NET Core web application** dialog box, you'll see a selection of starting templates. For this exercise, select **Web Application**, and then click **Create** to create your project.
-
-    :::image type="content" source="../media/3-aspnet-templates.png" alt-text="New Project Dialog." loc-scope="vs":::
+1. Select **Create** to create your project.
 
     > [!NOTE]
     > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you can also select the version of ASP.NET Core. You should select ASP.NET Core 3.1 or later.
@@ -31,7 +27,7 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 
 Now, let's build and test your application on your local machine before deploying to Azure.
 
-1. Run the app
+1. Run the app:
 
     Press <kbd>F5</kbd> to build the project and run in debug mode.
 
@@ -49,4 +45,4 @@ Now, let's build and test your application on your local machine before deployin
     > [!IMPORTANT]
     > You might notice the section at the top of the web page that provides a place for your privacy and cookie use policy. Select **Accept** to consent to tracking. This app doesn't track personal information. The template-generated code includes assets to help meet General Data Protection Regulation (GDPR).
 
-You've now created a web application from the sample template and it's running locally. The next step is to deploy it to Azure
+You've now created a web application from the sample template and it's running locally. The next step is to deploy it to Azure.

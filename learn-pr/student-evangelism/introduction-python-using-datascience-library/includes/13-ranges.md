@@ -14,10 +14,12 @@ A range always includes its `start` value, but does not include its
 `end` value. It counts up by `step`, and it stops before it gets to the
 `end`.
 
+``` python
     np.arange(end): An array starting with 0 of increasing consecutive integers, stopping before end.
+```
 
 ``` python
-np.arange(5)
+    np.arange(5)
 ```
 
 ``` output
@@ -27,23 +29,26 @@ np.arange(5)
 Notice how the array starts at 0 and goes only up to 4, not to the end
 value of 5.
 
+``` python
     np.arange(start, end): An array of consecutive increasing integers from start, stopping before end.
+```
 
 ``` python
-np.arange(3, 9)
+    np.arange(3, 9)
 ```
 
 ``` output
     array([3, 4, 5, 6, 7, 8])
+```
 
 
 
-
+``` python
     np.arange(start, end, step): A range with a difference of step between each pair of consecutive values, starting from start and stopping before end.
 ```
 
 ``` python
-np.arange(3, 30, 5)
+    np.arange(3, 30, 5)
 ```
 
 ``` output
@@ -57,7 +62,7 @@ When you specify a step, the start, end, and step can all be either
 positive or negative and may be whole numbers or fractions.
 
 ``` python
-np.arange(1.5, -2, -0.5)
+    np.arange(1.5, -2, -0.5)
 ```
 
 ``` output

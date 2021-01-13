@@ -2,53 +2,27 @@ Companies that have a business continuity and disaster recovery (BCDR) plan typi
 
 In this unit, you'll learn about the options for restoring an Azure VM from a previous backup.
 
-## Restore options
+## Restore types
 
-You have three options when you're restoring a machine from backup:
+Azure Backup provides a number of ways to restore a VM. As explained earlier, you can either instantly restore from the snapshot tier (optimal for operational recoveries) or from the vault tier.
 
-- **Create a new VM**
-  - This is the quickest method to get a virtual machine up and running with default settings from a restore point.
-  - You can choose the name, resource group, virtual network, and storage type before doing the restore.
-- **Restore disk**
-  - Restore the backed-up disk so that it can be used to create a new virtual machine. The portal provides a template to help you customize the new machine.
-  - The restore copies the virtual hard disk (VHD) to your chosen storage account. The VHD should be in the same location as the Recovery Services vault you're using. You can also attach the restored disk to an existing virtual machine.
-- **Replace existing**
-  - Restore a disk and use it to replace the disk on an existing virtual machine.
-  - Azure Backup takes a snapshot of the virtual machine before the recovered disk is attached. It stores the snapshot in a staging location that you specify. The Recovery Services vault stores the snapshot according to your retention policy.
-  - This option supports only unencrypted managed virtual machines.
-
-Each of these restore options can be useful in certain situations. For example:
-
-- **Create a new VM** can be used to quickly create a development server from the live version's backup.
-- **Restore disk** can be used to create a new virtual machine. This option allows for customization of the virtual machine before it's created. You can add configuration settings, like extra network adapters or an increased memory size. Using this option also allows for customization through PowerShell.
-- **Replace existing** allows a disk to be restored and replaced on an existing virtual machine. This option can be useful if an operating system disk has failed during an update operation and can be recovered only with a restore.
+|Restore option |Details |
+|---------|---------|
+|**Create a new VM**    | Quickly creates and gets a basic VM up and running from a restore point. The new VM must be created in the same region as the source VM.        |
+|**Restore disk**  |  Restores a VM disk, which can then be used to create a new VM. The disks are copied to the Resource Group you specify. Azure Backup provides a template to help you customize and create a VM. Alternatively, you can attach the disk to an existing VM, or create a new VM.<br><br> This option is useful if you want to customize the VM, add configuration settings that weren't there at the time of backup, or add settings that must be configured using the template or PowerShell. |
+|**Replace existing**    |   You can restore a disk and use it to replace a disk on the existing VM. Azure Backup takes a snapshot of the existing VM before replacing the disk and stores it in the staging location you specify. Existing disks connected to the VM are replaced with the selected restore point. The current VM must exist. If it's been deleted, this option can't be used.      |
+|**Cross Region (secondary region)**   |   Cross Region restore can be used to restore Azure VMs in the secondary region, which is an Azure paired region.<br> This feature is available for the options below:<br> <li> Create a VM <li> Restore Disks<br> We don't currently support the Replace existing disks option. |
 
 ## Recover files from a backup
 
-Files and folders are available for recovery from Azure virtual machines if the backup was created with the Microsoft Azure Recovery Services (MARS) agent. You can restore data to the same machine that it was originally backed up from, or to a different machine in your subscription.
-
-Use **Instant Restore** to restore data on the target machine by using the Azure Backup snap-in. After the snap-in is loaded, you can select the original server where the backup was created. Then, specify whether to restore individual files, folders, or a whole volume.
-
-If you need to restore the data to the same server where it was backed up, select **This server**. If it's a different server, choose that machine instead.
-
-To mount the recovery point as a drive on the local machine, select the date to restore, and then select **Mount**. You can copy the data to a new location.
+You can also recover individual files from a recovery point by mounting the snapshot on the target machine using the iSCSI initiator in the machine. The steps to do so are listed [here](https://docs.microsoft.com/azure/backup/backup-azure-restore-files-from-vm).
 
 ## Restore an encrypted virtual machine
 
-Azure Backup supports the backup and restore of machines encrypted through Azure Disk Encryption. Disk Encryption works with Azure Key Vault to manage the relevant secrets that are associated with the encrypted disk. For an additional layer of security, you can use *key vault encryption keys (KEKs)* to encrypt the secrets before they're written to the key vault.
+Azure Backup supports the backup and restore of machines encrypted through Azure Disk Encryption. Disk Encryption works with Azure Key Vault to manage the relevant secrets that are associated with the encrypted disk. For an additional layer of security, you can use key vault encryption keys (KEKs) to encrypt the secrets before they're written to the key vault.
 
 Certain limitations apply when you restore encrypted virtual machines:
 
-- Virtual machines can be backed up and restored only to the same subscription and region that they're a member of. The subscription and region have to be the same as the Recovery Services vault that you use.
 - Azure Backup supports only standalone key encryption. Any key that's part of a certificate isn't supported currently.
 - File-level or folder-level restores are not supported with encrypted virtual machines. To restore to that level of granularity, the whole virtual machine has to be restored. You can then manually copy the file or folders.
 - The **Replace existing VM** option isn't available for encrypted virtual machines.
-
-## Soft delete for virtual machines 
-
-**Soft delete** provides the ability to protect cloud backups for IaaS virtual machines from accidental as well as malicious deletion of backups. Key features include: 
-
-- **14 days extended retention of data**. With soft delete, even if a user deletes the backup (all the recovery points) of a VM, the backup data is retained for 14 additional days, allowing the recovery with no data loss.
-- **Native built-in protection at no additional cost**. The backup data protection with soft delete is offered at no additional cost. This security feature is natively built-in for all the recovery services vaults. 
-- **Intuitive recovery of 'soft deleted' data**. Recover soft deleted backup items using an ‘Undelete’ operation, and then restore them to any recovery point that existed before the deletion.
-

@@ -17,4 +17,5 @@ In this module, you will:
 
 ## Prerequisites
 
-[!include[](../../../includes/prerequisites.md)]
+- Visual Studio 2019 (any edition)
+- Familiarity with C# and .NET

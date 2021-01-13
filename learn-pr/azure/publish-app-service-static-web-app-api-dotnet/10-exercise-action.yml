@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api-dotnet.10-exercise-action
+metadata:
+  title: Exercise - Publish the API with GitHub Actions
+  description: Exercise - Publish the API with GitHub Actions
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Publish the API with GitHub Actions
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-exercise-action.md)]

@@ -19,7 +19,7 @@ The best solution is external admin takeover. Unfortunately, that's not an optio
 |----|----|
 |SharePoint              | Internal admin takeover |
 |OneDrive                | Internal admin takeover |
-|Office 365              | Internal admin takeover |
+|Microsoft 365              | Internal admin takeover |
 |Power BI                | External admin takeover |
 |Azure Rights Management | External admin takeover |
 |Exchange Online         | External admin takeover |
@@ -33,7 +33,7 @@ After you add your custom domain to your managed organization, all the following
 - Subscriptions
 - License assignments
 
-Internal admin takeovers are more complex and involve signing up for a Power BI account for the unmanaged organization. After you sign up, use Office 365 to verify the domain name. No users or service plans migrate during an internal takeover.
+Internal admin takeovers are more complex and involve signing up for a Power BI account for the unmanaged organization. After you sign up, use Microsoft 365 to verify the domain name. No users or service plans migrate during an internal takeover.
 
 ## Domain name verification isn't working
 

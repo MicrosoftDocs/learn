@@ -71,4 +71,8 @@ The confusion matrix shows the total number of cases where:
 
 The cells in the confusion matrix are often shaded so that higher values have a deeper shade. This makes it easier to see a strong diagonal trend from top-left to bottom-right, highlighting the cells where the predicted value and actual value are the same.
 
-From these core values, you can calculate a range of other metrics that can help you evaluate the performance of the model.
+From these core values, you can calculate a range of other metrics that can help you evaluate the performance of the model. For example:
+
+- **Accuracy**: (TP+TN)/(TP+TN+FP+FN) - in other words, out all of the predictions, how many were correct?
+- **Recall**: TP/(TP+FN) - in other words, of all the cases that *are* positive, how many did the model identify?
+- **Precision**: TP/(TP+FP) - in other words, of all the cases that the model predicted to be positive, how many actually *are* positive?

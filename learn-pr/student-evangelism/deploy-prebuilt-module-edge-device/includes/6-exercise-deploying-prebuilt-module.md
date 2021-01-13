@@ -1,31 +1,42 @@
-To deploy the Simulated temperature sensor module from the Azure Marketplace, use the following steps:
+To deploy the "Simulated Temperature Sensor" module from the Azure Marketplace, use the following steps:
 
-1. In the Azure portal, enter Simulated Temperature Sensor into the search and open the Marketplace result.
+1. In the Azure portal, enter "Simulated Temperature Sensor" into the search and open the **Marketplace** result.
 
-2. Choose an IoT Edge device to receive this module. On the Target Devices for IoT Edge Module page, provide the following information: Subscription: select the subscription that contains the IoT hub you're using; IoT Hub: select the name of the IoT hub you're using; IoT Edge Device Name:  as selected before  
+1. Choose an IoT Edge device to receive this module. On the "Target Devices for IoT Edge Module" page, provide the following information:
+    * **Subscription:** Select the subscription containing the IoT hub you're using
+    * **IoT Hub:** Select the name of the IoT hub you're using
+    * **IoT Edge Device Name:** As selected before  
 
-3. Select Create.
+1. Click "Create".
 
-4. Using the three-step wizard, define exactly how to deploy the module. In the **Add Modules** step of the wizard, the SimulatedTemperatureSensor module should be is autopopulated.  In the **Specify Routes step** of the wizard, you define how messages are passed between modules and to IoT Hub. If this setting isn't autopopulated to $upstream, add the following code:
+1. Using the three-step wizard, define precisely how to deploy the module.
+    * **Add Modules**: The "Simulated Temperature Sensor" module should be auto-populated.
+    * **Specify Routes**: Define how messages are passed between modules and to IoT Hub. If this setting isn't auto-populated to `$upstream`, add the following code:
 
-   ```
+    ```JSON
     {
-    	"routes": {
-        	       "route": "FROM /messages/* INTO $upstream"
-        	       }
-    	}
-   ```
+      "routes": {
+        "route": "FROM /messages/* INTO $upstream"
+      }
+    }
+    ```
 
+    * **Review Deployment:** preview the deployment manifest JSON file that defines all the modules deployed to your IoT Edge device. Ensure it includes the "Simulated Temperature Sensor" module.  
 
-In the Review Deployment step of the wizard, preview the JSON file that defines all the modules that get deployed to your IoT Edge device. Ensure that the  SimulatedTemperatureSensor module is included.  
+1. Select your device from the list of IoT Edge devices to see its details.
+    * On the device details page, scroll down to the Modules section.
+    * Three modules should be listed: `$edgeAgent`, `$edgeHub`, and `SimulatedTemperatureSensor`. The list should look similar to the screenshot below.
 
-5. Select your device from the list of IoT Edge devices to see its details. On the device details page, scroll down to the Modules section. Three modules should be listed: $edgeAgent, $edgeHub, and SimulatedTemperatureSensor. If one or more of the modules are listed as specified in deployment but not reported by the device, your IoT Edge device is still starting them. Wait a few moments and select Refresh at the top of the page.
+    > [!IMPORTANT]
+    > If a **module is listed as "in deployment"** but not reported by the device, your IoT Edge device is still starting it. **Wait a few moments and click "Refresh"** at the top of the page.
 
-![Deployed modules at the edge](../media/deployed-modules.png)
+    ![Deployed modules at the edge](../media/deployed-modules.png)
 
+1. Open the command prompt on your IoT Edge device, or use the SSH connection from Azure CLI.
+1. Confirm that the module deployed from the cloud is running on your IoT Edge device using the `sudo iotedge list` command.
+1. View the messages being sent from the temperature sensor module using the command `sudo iotedge logs SimulatedTemperatureSensor -f`. 
 
-6. Open the command prompt on your IoT Edge device again, or use the SSH connection from Azure CLI. Confirm that the module deployed from the cloud is running on your IoT Edge device using the command **sudo iotedge list**
+    > [!IMPORTANT]
+    > Note that IoT Edge commands are case-sensitive when referring to module names.
 
-7. View the messages being sent from the temperature sensor module using the command **sudo iotedge logs SimulatedTemperatureSensor -f.** Note that IoT Edge commands are case-sensitive when referring to module names.
-
-8. Clean up resources
+1. Clean up resources

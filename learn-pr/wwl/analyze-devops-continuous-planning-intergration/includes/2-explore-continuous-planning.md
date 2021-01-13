@@ -2,10 +2,6 @@
 
 Continuous Planning is one of the eight DevOps capabilities.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Planning: Strategy & portfolio planning, Lean product planning, Release planning, Sprint planning, Agile requirement management, Security requirement, Architecture design, Capacity planning, UX architecture design, Threat modeling, and Value stream mapping.](../media/3-2-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Planning is necessary
 
 Let’s walk through a case study of a software application developed by a government agency between 2000 and 2005. The project wasn’t close to completion when it was officially abandoned in January 2005, having turned into a complete fiasco. In addition to wasting at least $100 million, the failure brought widespread criticism to the agency and its director.

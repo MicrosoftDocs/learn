@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-bot-with-bot-framework-composer.integrate-language-generation-library
+title: Integrate with the Bot Framework language generation library
+metadata:
+  title: Integrate with the Bot Framework language generation library
+  description: "Integrate with the Bot Framework language generation library"
+  ms.date: 12/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-integrate-language-generation-library.md)]

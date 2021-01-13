@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-cognitive-search-solution.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your learning."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You want to find information in Microsoft Word documents that are stored in an Azure Storage blob container. What should you do to ensure the files can be accessed by Azure Cognitive Search?"
+    choices:
+    - content: "Add a JSON file that defines an Azure Cognitive Search index to the blob container"
+      isCorrect: false
+      explanation: "Incorrect. Adding an index file to the blob container does not help Azure Cognitive Search access the data."
+    - content: "Enable anonymous access for the blob container"
+      isCorrect: false
+      explanation: "Incorrect. Anonymous access is not required for Azure Cognitive Search to access documents in a blob container."
+    - content: "In an Azure Cognitive Services resource, and add a data source that references the container where the files are stored"
+      isCorrect: true
+      explanation: "Correct. To search files in a blob container, you should create a data source"
+  - content: "You are creating an index that includes a field named modified_date. You want to ensure that the modified_date field can be included in search results. Which attribute must you apply to the modified_date field in the index definition?"
+    choices:
+    - content: "searchable"
+      isCorrect: false
+      explanation: "Incorrect. Making a field searchable means that it can be queried for search terms. It does not mean the field can be included in the results."
+    - content: "filterable"
+      isCorrect: false
+      explanation: "Incorrect. Making a field filterable means that it can be used to apply a filter expression. It does not mean the field can be included in the results."
+    - content: "retrievable"
+      isCorrect: true
+      explanation: "Correct. To enable a field to be included in the results, you must make it retrievable."
+  - content: "You have created a data source and an index. What must you create to map the data values in the data source to the fields in the index?"
+    choices:
+    - content: "A synonym map"
+      isCorrect: false
+      explanation: "Incorrect. A synonym map does not map data to index fields."
+    - content: "An indexer"
+      isCorrect: true
+      explanation: "Correct. Use an indexer to map data to index fields."
+    - content: "A suggester"
+      isCorrect: false
+      explanation: "Incorrect. A suggester does not map data to index fields."
+  - content: "You want your search solution to show results in descending order of the file_size field value. What is the simplest way to accomplish this goal?"
+    choices:
+    - content: "Create a scoring profile that boosts results based on the file_size field"
+      isCorrect: false
+      explanation: "Incorrect. A scoring profile calculates a relevancy score based on factors like term-frequency. You can boost scores based on a field, such as file_size; but other factors are also considered in the overall score."
+    - content: "Make the file_size field facetable, and include a facet parameter that specifies the file_size field in queries."
+      isCorrect: false
+      explanation: "Incorrect. Making a field facetable has no effect on the ordering of search results."
+    - content: "Make the file_size field sortable, and include an orderby parameter that specifies the file_size field in queries."
+      isCorrect: true
+      explanation: "Correct. Making a field sortable enables you to apply an orderby parameter to sort results by that field."
+  - content: "You have created a search solution. Users want to be able to enter a partial search expression and have the user interface automatically complete the input. What should you add to the index?"
+    choices:
+    - content: "A suggester"
+      isCorrect: true
+      explanation: "Correct. A suggester makes it possible to implement autocomplete and suggestions."
+    - content: "A synonym map."
+      isCorrect: false
+      explanation: "Incorrect. A synonym map does not enable you to implement autocomplete."
+    - content: "A scoring profile."
+      isCorrect: false
+      explanation: "Incorrect. A scoring profile does not enable you to implement autocomplete."

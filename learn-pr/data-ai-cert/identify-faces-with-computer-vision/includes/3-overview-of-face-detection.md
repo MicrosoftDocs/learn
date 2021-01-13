@@ -14,7 +14,7 @@ A *face location* is another term for a collection of _face coordinates_. The lo
 
 *Face landmarks* are a collection of detailed points on a face. These points identify common facial elements such as a pupil, nose, or eyebrow by using pixel coordinates. The Face API can return up to 27 landmarks for each identified face that you can use for analysis.
 
-![A chart of Face API landmarks](../media/3-face-recognition-landmarks.png)
+:::image type="content" source="../media/3-face-recognition-landmarks.png" alt-text="A chart of Face API landmarks":::
 
 ## Attributes
 

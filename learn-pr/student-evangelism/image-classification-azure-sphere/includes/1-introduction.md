@@ -19,6 +19,7 @@ In this module, you will:
 
 ## Prerequisites
 
+- A PC running Windows 10
 - Basic knowledge of Azure Sphere
 - USB cable to connect Azure Sphere to the computer
 - USB-to-serial adapter

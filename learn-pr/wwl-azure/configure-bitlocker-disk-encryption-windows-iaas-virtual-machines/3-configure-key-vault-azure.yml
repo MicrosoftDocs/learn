@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.configure-key-vault-for-azure
+title: Configure Key Vault for Azure Disk Encryption
+metadata:
+  title: Configure Key Vault for Azure Disk Encryption
+  description: "Configure Key Vault for Azure Disk Encryption"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-configure-key-vault-azure.md)]

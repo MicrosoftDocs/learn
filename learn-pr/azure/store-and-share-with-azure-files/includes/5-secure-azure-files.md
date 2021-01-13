@@ -14,7 +14,7 @@ When you mount Azure file shares, Windows needs to communicate over port 445. Or
 
 ### Configure IP-based firewall rules
 
-To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the Azure portal or by using a PowerShell command:
+To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the Azure portal or by using a PowerShell command.
 
 ```powershell
 Add-AzStorageAccountNetworkRule `
@@ -25,8 +25,8 @@ Add-AzStorageAccountNetworkRule `
 
 Or you could use a CLI command:
 
-```azurelci
-az storage account network-rule add \
+```azurecli
+"az storage account network-rule add \"
     --resource-group "myresourcegroup" \
     --account-name "mystorageaccount" \
     --ip-address "NNN.NNN.NNN.NNN"
@@ -38,9 +38,9 @@ Where `NNN.NNN.NNN.NNN` is your public-facing IP address.
 
 Using the commands in the previous exercise creates an Azure storage account with secure transfer enabled by default. If your file shares were created without this feature enabled, it's easy to do that in the portal.
 
-![Screenshot of the configuration page of storage accounts](../media/5-secure-transfer.png)
+:::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 
-Or you can automate it with a PowerShell command:
+Or you can automate it with a PowerShell command.
 
 ```powershell
 Set-AzStorageAccount `
@@ -49,7 +49,7 @@ Set-AzStorageAccount `
     -EnableHttpsTrafficOnly $True
 ```
 
-Or you could use an Azure CLI command:
+Or you could use an Azure CLI command.
 
 ```azurecli
 az storage account update \
@@ -84,4 +84,4 @@ The snapshots are easy to create in the Azure portal or with the REST API, clien
 
 Snapshots are at the root level of a file share and apply to all the folders and files contained in it.
 
-![Screenshot showing the Create Snapshot option](../media/5-create-snapshot.png)
+:::image type="content" source="../media/5-create-snapshot.png" alt-text="Screenshot showing the Create Snapshot option.":::

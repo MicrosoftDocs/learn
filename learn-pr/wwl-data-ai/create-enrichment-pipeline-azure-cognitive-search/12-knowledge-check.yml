@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your learning."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You want to create a search solution that uses a built-in AI skill to determine the language in which each indexed document is written, and enrich the index with a field indicating the language. Which kind of Azure Cognitive Search object must you create?"
+    choices:
+    - content: "Synonym map"
+      isCorrect: false
+      explanation: "Incorrect. A synonym map does not integrate AI skills into the indexing process."
+    - content: "Skillset"
+      isCorrect: true
+      explanation: "Correct. A skillset enables you to define an enrichment pipeline composed of AI skills."
+    - content: "Scoring Profile"
+      isCorrect: false
+      explanation: "Incorrect. A scoring profile does not integrate AI skills into the indexing process."
+  - content: "You want to enrich an index by extracting any geographical locations mentioned in text content into an index field. Which built-in skill should you use?"
+    choices:
+    - content: "Entity Recognition"
+      isCorrect: true
+      explanation: "Correct. The entity recognition skill can be used to extract locations mentioned in text."
+    - content: "Image Analysis"
+      isCorrect: false
+      explanation: "Incorrect. The image analysis skill does not extract information from text content."
+    - content: "Key Phrase Extraction"
+      isCorrect: false
+      explanation: "Incorrect. The key phrase extraction skill does not identify location entities."
+  - content: "You plan to use the OCR skill to extract text from scanned letters that are embedded in PDF documents? What should you do?"
+    choices:
+    - content: "Save each image as a JPEG in a subfolder and create a separate data source for the image files."
+      isCorrect: false
+      explanation: "Incorrect. You do not need to manually separate the image data from the documents to be indexed."
+    - content: "Use an Image Analysis skill to extract an image description, and then use the OCR skill to read the text in the extracted captions"
+      isCorrect: false
+      explanation: "Incorrect. The Image Analysis skill does not extract text from images - it generates an AI-based description of the image; and the OCR skill doesn't accept text as an input, only images."
+    - content: "Configure the indexer with an imageAction parameter of generateNormalizedImages"
+      isCorrect: true
+      explanation: "Correct. Setting the imageAction to generateNormalizedImages in the indexer causes it to extract the image data for processing by skills, such as the OCR skill."
+  - content: "You have implemented a custom skill as an Azure function. You want to include the custom skill in your Azure Cognitive Search indexing process. What should you do?"
+    choices:
+    - content: "Add a WebApiSkill to a skillset, referencing the Azure function's URI"
+      isCorrect: true
+      explanation: "Correct. To integrate an Azure function custom skill into an indexing process, you must define a skillset containing a WebApiSkill with the URI for the function."
+    - content: "Create a JSON document with the input schema for your function, and save it in the folder where the documents to be indexed are stored."
+      isCorrect: false
+      explanation: "Incorrect. Creating a JSON document with the function schema does not include the function in the indexing pipeline."
+    - content: "Submit each document to the function, and store the output in a separate data source. Then use the Merge skill to add the results to the index."
+      isCorrect: false
+      explanation: "Incorrect. The merge skill merges document fields within a single enrichment pipeline. It does not merge data from multiple data sources."

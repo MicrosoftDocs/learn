@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/21/2020
+  author: deanobalino
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+
+  - content: 'What does Azure Sentinel provide?'
+    choices:
+    - content: 'A solution for checking your security posture in the cloud'
+      isCorrect: false
+      explanation: 'Being aware of your security posture in the cloud is important. But Azure Security Center, not Azure Sentinel, is a product that helps you to understand your security posture.'
+    - content: 'An end-to-end solution for security operations'
+      isCorrect:  true
+      explanation: 'Yes, Azure Sentinel gives you an end-to-end solution for security operations. The solution includes visibility, analytics, hunting, incident management, and automation.'
+    - content: 'A solution for securely storing keys and secrets in the cloud'
+      isCorrect: false
+      explanation: 'Azure Key Vault helps you store keys and secrets. Azure Sentinel is focused on security operations.'
+
+  - content: 'Which language is used to query data within Azure Sentinel?'
+    choices:
+    - content: 'SQL'
+      isCorrect: false
+      explanation: 'Structured Query Language (SQL) is used to query SQL-based relational databases.'
+    - content: 'GraphQL'
+      isCorrect: false
+      explanation: 'GraphQL is a specification for querying API data.'
+    - content: 'KQL'
+      isCorrect: true
+      explanation: 'Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Azure Sentinel holds its data.'
+
+  - content: 'Which Azure service stores the log data that is ingested into Azure Sentinel?'
+    choices:
+    - content: 'Azure Data Factory'
+      isCorrect: false
+      explanation: 'Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+    - content: 'Log Analytics'
+      isCorrect: true
+      explanation: 'Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+    - content: 'Azure Monitor'
+      isCorrect: false
+      explanation: 'Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+
+  - content: 'Within Azure Sentinel, which Azure product is used to run automated playbooks in response to alerts?'
+    choices:
+    - content: 'Log Analytics'
+      isCorrect: false
+      explanation: 'Log Analytics is the underlying system that stores log data within Azure Sentinel.'
+    - content: 'Azure Monitor'
+      isCorrect: false
+      explanation: 'Azure Monitor is used for performance management for infrastructure and applications.'
+    - content: 'Azure Logic Apps'
+      isCorrect: true
+      explanation: 'Azure Logic Apps is a serverless, no-code solution for automating workflows. It integrates with hundreds of other services, making it a powerful solution for security orchestration, automation, and response (SOAR).'

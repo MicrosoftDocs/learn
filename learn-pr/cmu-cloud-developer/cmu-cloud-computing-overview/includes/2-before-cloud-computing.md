@@ -51,7 +51,7 @@ Some examples of internet-scale systems include:
 - **Online retail services** like Amazon that maintain a global inventory of millions of products, which are sold to over 200 million customers, with net sales volumes of almost $90 billion annually.
 - **Rich, streaming multimedia applications** that allow people to watch and share videos and other forms of rich content. One such example, YouTube, handles uploads of 300 minutes of video per second.
 - **Real-time communications systems** for audio, video, and text chatting like Skype, which clock more than 50 billion minutes of calls per month.
-- **Productivity and collaboration suites** that serve millions of documents to many concurrent users, allowing real-time, persistent updates. For example, Office 365 claims to support 50 million monthly active collaborators.
+- **Productivity and collaboration suites** that serve millions of documents to many concurrent users, allowing real-time, persistent updates. For example, Microsoft 365 claims to support 50 million monthly active collaborators.
 - **CRM applications** by providers like Salesforce that are deployed at over a hundred thousand organizations. Large CRMs now provide intuitive dashboards to track status, analytics to find the customers that generate the most business, and revenue forecasting to predict future growth.
 - **Data mining and business intelligence** applications that analyze the usage of other services (like those above) to find inefficiencies and opportunities for monetization.
 

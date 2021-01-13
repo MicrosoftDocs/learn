@@ -4,9 +4,9 @@ title: Describe blocking and locking in SQL Server
 metadata:
   title: Describe blocking and locking in SQL Server
   description: "Describe blocking and locking in SQL Server"
-  ms.date: 08/03/2020
+  ms.date: 12/10/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

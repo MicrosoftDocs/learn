@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.perform-of-premises-workloads
+title: Perform backup and restore of on-premises workloads
+metadata:
+  title: Perform backup and restore of on-premises workloads
+  description: "Perform backup and restore of on-premises workloads"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-perform-premises-workloads.md)]

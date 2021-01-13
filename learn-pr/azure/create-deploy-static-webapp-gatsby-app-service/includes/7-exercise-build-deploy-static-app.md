@@ -12,11 +12,11 @@ Run the following command from your project directory:
 gatsby build
 ```
 
-This command will create a *production build*. All your files will end up in a sub directory `build/`.
+This command will create a *production build*. All your files will end up in a sub directory `public/`.
 
-Once the process finishes building, you can go to your `build/` directory and open up the files in a browser. You can explore your build as it would be hosted in the web with `http-server`, a command-line tool that serves up local files over HTTP so you can see them in a browser.  
+Once the process finishes building, you can go to your `public/` directory and open up the files in a browser. You can explore your build as it would be hosted in the web with `http-server`, a command-line tool that serves up local files over HTTP so you can see them in a browser.  
 
-Now you'll serve up the whole application from a local web server. `cd` your terminal to the `build/` directory and type the following command:
+Now you'll serve up the whole application from a local web server. `cd` your terminal to the `public/` directory and type the following command:
 
 ```bash
 npx http-server -p 5000
@@ -30,7 +30,7 @@ You should now see the following content rendered:
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
-Going into your `build/` directory now locate your rendered `about` component at `build/about/index.html`. Because of an optimization process, all whitespace have been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
+Going into your `public/` directory now locate your rendered `about` component at `public/about/index.html`. Because of an optimization process, all whitespace have been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
 
 ```html
 // excerpt from about/index.html
@@ -45,28 +45,13 @@ To prepare the app for deployment, we need to take the following steps:
 1. Initialize a Git repository
 2. Create a GitHub repository and push to the local Git repository to it
 
-### Create a Git repository
+### Add the About page
 
-In the console, navigate to root of your project, then run the following command to initialize a Git repository and commit all of your files to it:
-
-```bash
-git init
-```
-
-Next, create a file called `.gitignore` in the root of your project and give it the following content:
-
-```bash
-node_modules
-build
-```
-
-The above configuration will prevent the `build/` and `node_modules` directories from being added to our repository. The `build/` directory changes every time we build, and the `node_modules/` directory is only needed at build time and can be large from all the libraries it contains.
-
-Finally, add the code to the repository index and commit it.
+In the console, navigate to root of your project, then add the code to the repository index and commit it.
 
 ```bash
 git add .
-git commit -m "adding Gatsby project"
+git commit -m "adding About page to site"
 ```
 
 ### Create a GitHub repo and push the code
@@ -129,21 +114,15 @@ Next, configure your new app and link it to your GitHub repository.
    | _Repository_   | **gatsby-app**                              |
    | _Branch_       | **master**                                               |
 
-1. Click the **Next: Build >** button to edit the build configuration
+1. Use the **Build Details** use the drop down list to select **Gatsby** to populate the build information.
 
-   :::image type="content" source="../media/next-build-button.png" alt-text="Go to build menu":::
+    | Setting                 | Value                |
+    | ----------------------- | -------------------- |
+    | _App location_          |  *Leave default*     |
+    | _Api location_          |  *Leave default*     |
+    | _App artifact location_ | **public**           |
 
-### Build
-
-Next, add configuration details specific to your preferred front-end framework.
-
-| Setting                 | Value                |
-| ----------------------- | -------------------- |
-| _App location_          |  *Leave default*     |
-| _Api location_          |  *Leave default*     |
-| _App artifact location_ | **public**           |
-
-Click the **Review + create** button
+1. Click the **Review + create** button
 
 :::image type="content" source="../media/review-create-button.png" alt-text="Click review + create":::
 

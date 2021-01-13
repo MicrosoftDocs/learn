@@ -16,7 +16,12 @@ abstract: |
   - Use tags to organize resources
   - Apply policies to enforce standards in your Azure environments
   - Use resource locks to protect critical Azure resources from accidental deletion
+  > [!NOTE]
+  > This module has been updated to [Build a cloud governance strategy on Azure](https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
 iconUrl: /learn/achievements/control-and-organize-with-resource-manager.svg
+hidden: true
 levels:
 - intermediate
 prerequisites: |
@@ -24,7 +29,6 @@ prerequisites: |
 roles:
 - solution-architect
 - administrator
-- student
 products:
 - azure
 - azure-resource-manager

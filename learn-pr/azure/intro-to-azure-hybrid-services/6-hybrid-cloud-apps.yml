@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-hybrid-services.6-hybrid-cloud-apps
+metadata:
+  title: Hybrid cloud applications
+  description: Hybrid cloud applications
+  ms.date: 09/21/2020
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Hybrid cloud applications
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-hybrid-cloud-apps.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Tailwind Traders has several multitiered apps that it will migrate to its hybrid cloud. The apps currently exist with the web tiers on the Tailwind Traders perimeter network and the database tier on virtual machines in the Sydney datacenter. The new application architecture will have web apps running in Azure. Which of the following technologies should Tailwind Traders use to allow communication between the web app tier in Azure and the database tier running on VMs in the Sydney datacenter?"
+    choices:
+    - content: "Azure Relay"
+      isCorrect: false
+      explanation: "Use Azure Relay when you want to securely expose an application running on an internal network to clients on the internet."
+    - content: "Azure App Service Hybrid Connection"
+      isCorrect: true
+      explanation: "Use Azure App Service Hybrid Connection to configure a connection between a web app running in an App Service in Azure and a back-end service running on a protected internal network."
+    - content: "Azure AD Application Proxy"
+      isCorrect: false
+      explanation: "Use Azure AD Application Proxy as a way of publishing internal applications that use Azure AD authentication to hosts on the internet."
+
+
+  - content: "Tailwind Traders wants to publish an application that uses Active Directory Domain Services accounts for authentication so that it's accessible to hosts on the internet. Tailwind Traders has configured Azure AD Connect to synchronize the on-premises identities that will be used with this application to Azure AD. Which of the following hybrid technologies would you use to publish this application to hosts on the internet so that they can access it with these synchronized identities?"
+    choices:
+    - content: "Azure Relay"
+      isCorrect: false
+      explanation: "Use Azure Relay when you want to securely expose an application running on an internal network to clients on the internet. Use this option when you don't have an identity synchronization solution in place."
+    - content: "Azure App Service Hybrid Connection"
+      isCorrect: false
+      explanation: "Use Azure App Service Hybrid Connection to configure a connection between a web app running in an App Service in Azure and a back-end service running on a protected internal network."
+    - content: "Azure AD Application Proxy"
+      isCorrect: true
+      explanation: "Use Azure AD Application Proxy as a way of publishing internal applications that use Azure AD authentication to hosts on the internet. This is possible in this scenario because of the deployment of Azure AD Connect."

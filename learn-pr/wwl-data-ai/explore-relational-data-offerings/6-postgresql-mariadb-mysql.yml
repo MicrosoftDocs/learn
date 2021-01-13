@@ -4,12 +4,12 @@ title: PostgreSQL, MariaDB, and MySQL
 metadata:
   title: PostgreSQL, MariaDB, and MySQL
   description: "PostgreSQL, MariaDB, and MySQL"
-  ms.date: 07/17/2020
+  ms.date: 12/28/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/6-postgresql-mariadb-mysql.md)]

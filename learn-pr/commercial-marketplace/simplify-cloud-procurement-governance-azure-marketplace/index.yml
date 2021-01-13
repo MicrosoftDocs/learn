@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.simplify-cloud-procurement-governance-azure-marketplace
+metadata:
+  title: Simplify cloud procurement and governance with Azure Marketplace
+  description: Overview of using Azure Marketplace for cloud procurement and governance for customers
+  ms.date: 09/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Simplify cloud procurement and governance with Azure Marketplace
+summary: Overview of using Azure Marketplace for cloud procurement and governance for customers
+abstract: |
+  In this module, you will:
+  - Develop a basic understanding of Azure Marketplace
+  - Learn what kinds of products and services are sold in Azure Marketplace
+  - Learn how to find and try software in Azure Marketplace
+  - Discover the benefits of buying cloud software through Microsoft
+  - Learn how to manage your organization's software procurement with Azure Marketplace
+iconUrl: /learn/achievements/ccc-commercial-marketplace/simplify-cloud-procurement-governance-azure-marketplace.svg
+levels:
+- beginner
+prerequisites: |
+  - None
+roles:
+- business-owner
+- technology-manager
+- administrator
+- developer
+products:
+- azure
+units:
+- learn.simplify-cloud-procurement-governance-azure-marketplace.1-introduction
+- learn.simplify-cloud-procurement-governance-azure-marketplace.2-find-try-software-azure-marketplace
+- learn.simplify-cloud-procurement-governance-azure-marketplace.3-buy-software-azure-marketplace
+- learn.simplify-cloud-procurement-governance-azure-marketplace.4-manage-software-procurement-azure-marketplace
+- learn.simplify-cloud-procurement-governance-azure-marketplace.5-knowledge-check
+- learn.simplify-cloud-procurement-governance-azure-marketplace.6-summary
+badge:
+  uid: learn.simplify-cloud-procurement-governance-azure-marketplace.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.1-introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 08/04/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

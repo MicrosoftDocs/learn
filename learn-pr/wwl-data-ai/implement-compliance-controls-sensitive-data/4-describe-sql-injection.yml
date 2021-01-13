@@ -4,12 +4,12 @@ title: Describe SQL injection
 metadata:
   title: Describe SQL injection
   description: "Describe SQL injection"
-  ms.date: 08/02/2020
+  ms.date: 12/14/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/4-describe-sql-injection.md)]

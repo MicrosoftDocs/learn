@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Answer questions to see what you've learned. 
+  ms.date: 07/28/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  Answer the following questions to see what you've learned.  
+quiz:
+  questions:
+  - content: "Will computers always be more accurate than humans at data analysis? Why or why not?"
+    choices:
+    - content: "Yes, because computers are purely logical. They don't make mistakes."
+      isCorrect: false
+      explanation: "Incorrect, because computers must be programmed by humans."
+    - content: "Yes, because computers can process significantly more data than humans, and faster."
+      isCorrect: false
+      explanation: "Incorrect. Computers can process more data, faster. But, they aren't more accurate than humans."
+    - content: "No, because computers can't understand context, so they can't be accurate all the time."
+      isCorrect: false
+      explanation: "Incorrect. Machine learning makes it possible for computers to understand context."
+    - content: "No, because computers are as accurate as the software built by humans can make them."
+      isCorrect: true
+      explanation: "Correct! Computers are only accurate if the programming is accurate."
+  - content: "What are the four steps in the data science lifecycle?"
+    choices:
+    - content: "Business understanding, data gathering and preparation, model training and testing, model deployment"
+      isCorrect: true
+      explanation: "Correct! These are the exact four steps."
+    - content: "Data gathering, data validation, machine learning, result visualization"
+      isCorrect: false
+      explanation: "Incorrect. The data science lifecycle doesn't include these four steps."
+    - content: "Data identification, model training until 100% accurate, model deployment, business understanding"
+      isCorrect: false
+      explanation: "Incorrect. The data science lifecycle doesn't include these four steps."
+    - content: "Machine learning algorithm coding, data exploration, algorithm modifications, report generation"
+      isCorrect: false
+      explanation: "Incorrect. The data science lifecycle doesn't include these four steps."
+      

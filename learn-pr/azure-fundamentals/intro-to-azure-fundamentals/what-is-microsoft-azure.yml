@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-fundamentals.what-is-microsoft-azure
+title: What is Azure?
+metadata:
+  title: What is Azure?
+  description: In this unit, you'll learn about Azure.
+  ms.date: 09/14/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/what-is-microsoft-azure.md)]

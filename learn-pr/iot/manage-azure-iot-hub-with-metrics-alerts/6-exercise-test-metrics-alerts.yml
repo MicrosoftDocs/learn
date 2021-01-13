@@ -5,7 +5,7 @@ metadata:
   description: With the device app running, test your metrics and rules are working as expected.
   ms.date: 2/2/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Test IoT Hub metrics and alerts

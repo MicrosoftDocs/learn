@@ -25,5 +25,5 @@ quiz:
        isCorrect: false
      - content: This feature is important for user acquisition
        isCorrect: false
-       content: This feature does offer any value and isn't important
+     - content: This feature does offer any value and isn't important
        isCorrect: false

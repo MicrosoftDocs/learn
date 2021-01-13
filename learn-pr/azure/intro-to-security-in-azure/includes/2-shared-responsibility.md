@@ -16,7 +16,7 @@ The first shift you'll make is from on-premises data centers to infrastructure a
 
 Moving to platform as a service (PaaS) outsources several security concerns. At this level, Azure is taking care of the operating system and of most foundational software like database management systems. Everything is updated with the latest security patches and can be integrated with Azure Active Directory for access controls. PaaS also comes with many operational advantages. Rather than building whole infrastructures and subnets for your environments by hand, you can "point and click" within the Azure portal or run automated scripts to bring complex, secured systems up and down, and scale them as needed. Contoso Shipping uses Azure Event Hubs for ingesting telemetry data from drones and trucks &mdash; as well as a web app with an Azure Cosmos DB back end with its mobile apps &mdash; which are all examples of PaaS.
 
-With software as a service (SaaS), you outsource almost everything. SaaS is software that runs with an internet infrastructure. The code is controlled by the vendor but configured to be used by the customer. Like so many companies, Contoso Shipping uses Office 365, which is a great example of SaaS!
+With software as a service (SaaS), you outsource almost everything. SaaS is software that runs with an internet infrastructure. The code is controlled by the vendor but configured to be used by the customer. Like so many companies, Contoso Shipping uses Microsoft 365 (formerly Office 365), which is a great example of SaaS!
 
 :::image type="complex" source="../media/2-shared_responsibilities.png" alt-text="Illustration showing how cloud providers and customers share security responsibilities under different types of compute service implementation: on-premises, infrastructure as a service, platform as a service, and software as a service.":::
     Responsibilities shift from customer to Microsoft moving from on-prem to IaaS to PaaS to SaaS. In on-prem, all boxes are customer. In IaaS, physical hosts, network, and datacenter are now Microsoft. In PaaS, additional responsibility moves to or becomes shared by Microsoft: operating system is entirely Microsoft; network controls, application, and identity & directory infrastructure are shared responsibility. In SaaS, network controls and application become entirely the responsibility of Microsoft.
@@ -54,7 +54,7 @@ In almost all cases, attackers are after data:
 
 - Stored in a database
 - Stored on disk inside virtual machines
-- Stored on a SaaS application such as Office 365
+- Stored on a SaaS application such as Microsoft 365
 - Stored in cloud storage
 
 It's the responsibility of those storing and controlling access to data to ensure that it's properly secured. Often, there are regulatory requirements that dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.

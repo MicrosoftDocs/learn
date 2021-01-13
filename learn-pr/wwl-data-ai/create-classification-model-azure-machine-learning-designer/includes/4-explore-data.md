@@ -31,12 +31,12 @@ To get started with Azure Machine Learning designer, first you must create a pip
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Diabetes Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
 3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the **aml-cluster** compute cluster you created previously.
-4. On the left side of the designer, select the **Datasets** (&#8981;) tab, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
-5. Select the **diabetes-data** dataset on the canvas, and view its settings (the settings pane for the dataset may open automatically and cover the canvas). On the **outputs** tab, select the **Visualize** icon (which looks like a column chart).
+4. On the left side of the designer, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
+5. Right-click (Ctrl+click on a Mac) the **diabetes-data** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 7. Scroll to the right and select the column heading for the **Diabetic** column, and note that it contains two values **0** and **1**. These values represent the two possible classes for the *label* that your model will predict, with a value of **0** meaning that the patient does not have diabetes, and a value of **1** meaning that the patient is diabetic.
 8. Scroll back to the left and review the other columns, which represent the *features* that will be used to predict the label. Note that most of these columns are numeric, but each feature is on its own scale. For example, **Age** values range from 21 to 77, while **DiabetesPedigree** values range from 0.078 to 2.3016. When training a machine learning model, it is sometimes possible for larger values to dominate the resulting predictive function, reducing the influence of features that on a smaller scale. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
-9. Close the **diabetes-data result visualization** window, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon so that you can see the dataset on the canvas like this:
+9. Close the **diabetes-data result visualization** window so that you can see the dataset on the canvas like this:
 
 > [!div class="centered"]
 > ![The diabetes-data dataset on the designer canvas](../media/diabetes-data.png)
@@ -45,7 +45,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 
 Before you can train a model, you typically need to apply some preprocessing transformations to the data.
 
-1. In the pane on the left, view the **Modules** (&#8862;) tab and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
+1. In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
 2. Drag a **Normalize Data** module to the canvas, below the **diabetes-data** dataset. Then connect the output from the bottom of the **diabetes-data** dataset to the input at the top of the **Normalize Data** module, like this:
 
 > [!div class="centered"]
@@ -76,7 +76,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > [!div class="centered"]
 > ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training** on your compute cluster.
+2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-diabetes-training** on your compute cluster.
 3. Wait for the run to finish - this may take a few minutes.
 
 ## View the transformed data

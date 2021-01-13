@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api-dotnet.3-static-web-apps
+metadata:
+  title: Plan your Azure Static Web App
+  description: Plan your Azure Static Web App
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan your Azure Static Web App
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-static-web-apps.md)]

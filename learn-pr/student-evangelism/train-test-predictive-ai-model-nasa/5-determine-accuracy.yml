@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.5-determine-accuracy
+metadata:
+  title: Exercise - Determine the accuracy of a neural network in classifying space rocks
+  description: Learn how to determine accuracy in an AI model, and then run code to find the accuracy of the AI model you created.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Determine the accuracy of a neural network in classifying space rocks
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-determine-accuracy.md)]

@@ -62,7 +62,7 @@ To install the latest Azure PowerShell module, run the following commands:
 1. Type the following command, and then press Enter:
 
     ```powershell
-    Install-Module -Name Az -AllowClobber
+    Install-Module -Name Az -AllowClobber -SkipPublisherCheck
     ```
 
 This installs the module for all users by default (controlled by the scope parameter).
@@ -209,8 +209,10 @@ You can only be in one subscription at a time. Use the `Get-AzContext` cmdlet to
 2. Change the subscription by passing the name of the one to select.
 
 ```powershell
-Select-AzSubscription -Subscription "Visual Studio Enterprise"
+Select-AzSubscription -SubscriptionId '53dde41e-916f-49f8-8108-558036f826ae'
 ```
+If you need to look up the **Subscription ID** > open Azure, and on the home page, select **Subscriptions**.
+
 
 ### Get a list of all Resource Groups
 

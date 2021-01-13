@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-cognitive-services.monitor-services-using-diagnostics-logging
+title: Monitor services using diagnostics and logging
+metadata:
+  title: Monitor services using diagnostics and logging
+  description: "Monitor services using diagnostics and logging"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-monitor-services-using-diagnostics-logging.md)]

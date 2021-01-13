@@ -4,6 +4,7 @@ You were looking for a containerization solution that provides maximum compatibi
 
 Finally, Azure provides various deployment options to host Docker containers. In Azure, containers can be integrated with other Azure services to extend your product or exchange data with other services.
 
-## Learn more with a Channel 9 video series
+## Learn more
 
-- [Docker and .NET Core 101](https://channel9.msdn.com/Series/Docker-and-NET-Core-101/?WT.mc_id=Educationcontainers-c9-shyboyer&azure-portal=true)
+- [Get started with Docker remote containers on WSL 2: Use a Linux command line with Docker Desktop for Windows](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)
+- [Channel 9 video series: Docker and .NET Core 101](https://channel9.msdn.com/Series/Docker-and-NET-Core-101/?WT.mc_id=Educationcontainers-c9-shyboyer&azure-portal=true)

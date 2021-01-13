@@ -2,7 +2,7 @@
 
 An **AI app** is simply a web or mobile application that is infused with AI capabilities, such as vision or language processing. For example, a financial services app that uses facial recognition as part of its mobile login process is a mobile application infused with AI capabilities. An **AI agent** is a machine program that uses AI capabilities to interact with a human user. For example, a chat bot used by a company to manage live, web-based customer service requests is an example of an AI agent. Microsoft delivers intelligent AI app services with Azure Cognitive Services and develops AI agents with Azure Bot Services. Our AI models that power these intelligent apps and agents can be customized to your business using your own data and can be deployed anywhere.
 
-Microsoft delivers breakthrough experiences in your apps with Azure Cognitive Services and Azure Bot Service. Leading AI models are being used across industries, and across a variety of different products today, such as Office 365, Xbox, and Bing.
+Microsoft delivers breakthrough experiences in your apps with Azure Cognitive Services and Azure Bot Service. Leading AI models are being used across industries, and across a variety of different products today, such as Microsoft 365, Xbox, and Bing.
 
 |  |  |
 | ------------ | -------------| 
@@ -70,7 +70,7 @@ Flow through the above:
 
 ### Enterprise productivity bot
 
-You can combine Azure Bot Service with Language Understanding to build powerful enterprise productivity bots. These allow you to streamline common work activities by integrating external systems, such as Office 365 calendar, customer cases stored in Dynamics CRM, and much more.
+You can combine Azure Bot Service with Language Understanding to build powerful enterprise productivity bots. These allow you to streamline common work activities by integrating external systems, such as Microsoft 365 calendar, customer cases stored in Dynamics CRM, and much more.
 
 ![ Diagram reviewing the following steps](../media/ic-gm06-ai-diagram3.png)
 
@@ -78,7 +78,7 @@ Flow through the above:
 
 1. A user accesses the Enterprise Productivity Bot.
 2. Azure Active Directory validates the user’s identity.
-3. The bot queries the employee’s Office 365 calendar via the Azure Graph.
+3. The bot queries the employee’s Microsoft 365 calendar via the Azure Graph.
 4. Using data from the calendar, the bot accesses case information in Dynamics CRM.
 5. Information is returned to the employee who can filter the data without leaving the Bot.
 6. Application insights gathers runtime telemetry to help developers improve bot performance and usage.

@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms
+metadata:
+  title: Configure BitLocker disk encryption for Windows IaaS Virtual Machines
+  description: "You'll be able to configure Azure Disk Encryption for Windows IaaS VMs and back up and recover encrypted data."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure BitLocker disk encryption for Windows IaaS Virtual Machines
+summary: You'll be able to configure Azure Disk Encryption for Windows IaaS VMs and back up and recover encrypted data.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe Azure Disk Encryption.
+  - Configure Key Vault to support Azure Disk Encryption.
+  - Explain how to encrypt Azure IaaS VM hard disks.
+  - Back up and recover encrypted data from IaaS VM hard disks.
+prerequisites: |
+  In order to get the best learning experience from this module, you should have knowledge and experience of the following:
+  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing IaaS services in Microsoft Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies (firewalls, encryption, multi-factor authentication)
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/configure-bitlocker-disk-encryption-for-windows-iaas-vms.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.introduction
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.describe-azure
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.configure-key-vault-for-azure
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.encrypt-azure-iaas-vm-hard-disks
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.back-up-recover-data-from-encrypted-disks
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.create-encrypt-windows-vm
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.knowledge-check
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.summary
+badge:
+  uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.badge

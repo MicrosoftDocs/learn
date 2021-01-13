@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.audit-security-of-windows-server-iaas-vms
+metadata:
+  title: Audit the security of Windows Server IaaS Virtual Machines
+  description: "You'll learn about Azure Security Center and how to onboard Windows Server computers to Security Center. You'll also learn about Azure Sentinel, security information and event management (SIEM), and security orchestration, automation and response (SOAR)."
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Audit the security of Windows Server IaaS Virtual Machines
+summary: You'll learn about Azure Security Center and how to onboard Windows Server computers to Security Center. You'll also learn about Azure Sentinel, security information and event management (SIEM), and security orchestration, automation and response (SOAR).
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Azure Security Center.
+  - Enable Azure Security Center in hybrid environments.
+  - Onboard Windows Server computers to Azure Security Center.
+  - Implement and assess security policies.
+  - Describe Azure Sentinel.
+  - Implement SIEM and SOAR.
+  - Protect your resources with Azure Security Center.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server–based compute and storage technologies
+  - Implementing and managing ​​infrastructure as a service (IaaS) services in Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies (firewalls, encryption, multi-factor authentication)
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/audit-the-security-of-windows-server-iaas-vms.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.audit-security-of-windows-server-iaas-vms.introduction
+- learn.wwl.audit-security-of-windows-server-iaas-vms.describe-azure-security-center
+- learn.wwl.audit-security-of-windows-server-iaas-vms.enable-azure-security-center-hybrid-environments
+- learn.wwl.audit-security-of-windows-server-iaas-vms.implement-assess-security-policies
+- learn.wwl.audit-security-of-windows-server-iaas-vms.protect-your-resources-with-azure-security-center
+- learn.wwl.audit-security-of-windows-server-iaas-vms.implement-azure-sentinel
+- learn.wwl.audit-security-of-windows-server-iaas-vms.knowledge-check
+- learn.wwl.audit-security-of-windows-server-iaas-vms.summary
+badge:
+  uid: learn.wwl.audit-security-of-windows-server-iaas-vms.badge

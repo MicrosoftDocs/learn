@@ -1,12 +1,12 @@
-The "fs" module in Node.js can also be used to write data to files and read data from files.
+You can also use the *fs* module in Node.js to write data to files and read data from files.
 
-You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any given directory, finds all ".json" files, and creates a "totals.txt" file.
+You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any directory, finds all .json files, and creates a *totals.txt* file.
 
-In this exercise, you'll complete the project by reading the ".json" files, adding up the store totals, and writing the grand total to the "totals.txt" file.
+In this exercise, you'll complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
-## Create method to calculate sales totals
+## Create a method to calculate sales totals
 
-1. At the top of `index.js`, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
+1. At the top of index.js, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
 
    ```javascript
    async function calculateSalesTotal(salesFiles) {
@@ -18,7 +18,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
    }
    ```
 
-1. Within that method, replace the "// READ FILES LOOP" with a loop that iterates over the "salesFiles" array, reads the file, parses the content as JSON, and then increments the "salesTotal" variable with the "total" value from the file.
+1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles` array, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file.
 
    ```javascript
    async function calculateSalesTotal(salesFiles) {
@@ -53,7 +53,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
      // find paths to all the sales files
      const salesFiles = await findSalesFiles(salesDir);
 
-     // read through each sales file to cacluate the sales total
+     // read through each sales file to calculate the sales total
      const salesTotal = await calculateSalesTotal(salesFiles);
 
      // write the total to the "totals.txt" file
@@ -61,9 +61,9 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
    }
    ```
 
-## Write the total to the "totals.txt" file
+## Write the total to the totals.txt file
 
-1. In the `main` function, modify the `fs.writeFile` a block to write the value of the `salesTotal` variable to the "totals.txt" file.
+1. In the `main` function, modify the `fs.writeFile` block to write the value of the `salesTotal` variable to the *totals.txt* file.
 
    ```javascript
    async function main() {
@@ -80,7 +80,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
      // find paths to all the sales files
      const salesFiles = await findSalesFiles(salesDir);
 
-     // read through each sales file to cacluate the sales total
+     // read through each sales file to calculate the sales total
      const salesTotal = await calculateSalesTotal(salesFiles);
 
      // write the total to the "totals.json" file
@@ -92,35 +92,35 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
    }
    ```
 
-1. Press <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the `index.js` file.
+1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the *index.js* file.
 
-## Execute the program
+## Run the program
 
-1. Execute the program from the terminal.
+1. Run the program from the terminal.
 
    ```bash
    node index.js
    ```
 
-   There is no output from the program. If you look in the "salesTotals/totals.txt", you will see the total of all the sales from the "sales.json" files.
+   There is no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
 
-1. Execute the program from the terminal again.
+1. Run the program from the terminal again.
 
    ```bash
    node.index.js
    ```
 
-1. Select the "index.js" file.
+1. Select the *index.js* file.
 
-1. Select the "salesTotals/totals.txt" file.
+1. Select the *salesTotals/totals.txt* file.
 
-   There is now a second line in the "totals.txt" file. Every time you run the program, the totals are added up again and a new line is written to the file.
+   The *totals.txt* file now has a second line. Every time you run the program, the totals are added up again and a new line is written to the file.
 
-Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores sales every night. You make this stuff look easy. In the next section, we'll review what you learned, and a few tips to remember as you head on your merry way.
+Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores' sales every night. In the next section, we'll review what you learned and a few tips to remember.
 
 ## Got stuck?
 
-If you got stuck during this exercise, here is the full code for this project.
+If you got stuck during this exercise, here's the full code for this project.
 
 ```javascript
 const fs = require("fs").promises;
@@ -181,7 +181,7 @@ async function main() {
   // find paths to all the sales files
   const salesFiles = await findSalesFiles(salesDir);
 
-  // read through each sales file to cacluate the sales total
+  // read through each sales file to calculate the sales total
   const salesTotal = await calculateSalesTotal(salesFiles);
 
   // write the total to the "totals.json" file

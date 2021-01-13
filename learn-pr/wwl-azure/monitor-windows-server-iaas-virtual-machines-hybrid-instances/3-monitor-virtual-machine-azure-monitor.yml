@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.monitor-azure-vm-with-azure-monitor
+title: Monitor an Azure Virtual Machine with Azure Monitor
+metadata:
+  title: Monitor an Azure Virtual Machine with Azure Monitor
+  description: "Monitor an Azure Virtual Machine with Azure Monitor"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-monitor-virtual-machine-azure-monitor.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "In the video demonstration, at time index 00:42, what's the purpose of the Log Analytics workspace?"
+    choices:
+    - content: "The Log Analytics workspace stores all the data from monitoring."
+      isCorrect: true
+      explanation: "That's correct. You can choose an appropriate workspace, or select to create a new one at this point in the process."
+    - content: "The Log Analytics workspace is used to define who has access to the logged data."
+      isCorrect: false
+      explanation: "That's incorrect. The workspace is used to gather and store data from monitored VMs."
+    - content: "The Log Analytics workspace is used to retrieve monitoring settings for the VM."
+      isCorrect: false
+      explanation: "That's incorrect. The workspace is used to gather and store data from monitored VMs."

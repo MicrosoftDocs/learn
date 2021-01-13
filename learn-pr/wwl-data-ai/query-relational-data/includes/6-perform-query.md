@@ -66,6 +66,9 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     > [!div class="mx-imgBorder"]
     >![The SQL Database Query Editor](../media/6-simple-ui-query.png)
 
+> [!TIP]
+> Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7,  disable any VPN connections or add the additional IP address manually from any errors displayed.
+
 ## Run queries against the database
 
 1. Copy the following SQL statement into the editor. Select **Run**, to check everything is working. You should see a list of four inventory items

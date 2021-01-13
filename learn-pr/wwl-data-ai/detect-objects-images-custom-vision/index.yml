@@ -3,7 +3,7 @@ uid: learn.wwl.detect-objects-images-custom-vision
 metadata:
   title: Detect objects in images with the Custom Vision service
   description: "Object detection is a form of computer vision in which artificial intelligence (AI) agents can identify and locate specific types of object in an image or camera feed."
-  ms.date: 08/06/2020
+  ms.date: 09/13/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

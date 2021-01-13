@@ -2,9 +2,9 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.migrate-sql-database-managed-instance
 title: Migrate to SQL Database Managed Instance
 metadata:
-  title: 'Migrate to SQL Database Managed Instance '
+  title: Migrate to SQL Database Managed Instance
   description: "Migrate to SQL Database Managed Instance"
-  ms.date: 03/31/2020
+  ms.date: 01/12/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 25
 content: |
   [!include[](includes/3-migrate-managed-instance.md)]
-quiz:
-  title: "Knowledge check"
-  questions:
-  - content: "Before creating the Database Migration Service, which resource provider should you register in your subscription?"
-    choices:
-    - content: "Microsoft.DataMigration"
-      isCorrect: true
-      explanation: "That is correct. The Microsoft.DataMigration resource provider should be registered in your subscription before you create the Database Migration Service."
-    - content: "Microsoft.Cache"
-      isCorrect: false
-      explanation: "That is incorrect. The Microsoft.Cache resource provider is not required in your subscription before you create the Database Migration Service."
-    - content: "Microsoft.Data"
-      isCorrect: false
-      explanation: "That is incorrect. The Microsoft.Data resource provider is not required in your subscription before you create the Database Migration Service."
-  - content: "Which of these tools would be the best to find compatibility issues between the on-premises SQL Server and Azure SQL Database Managed Instance?"
-    choices:
-    - content: "Azure Migrate Service"
-      isCorrect: false
-      explanation: "That is incorrect. The Azure Migrate Service isn't the best tool to use to detect any compatibility issues between the on-premises SQL Server and Azure SQL Database Managed Instance."
-    - content: "Data Migration Assistant"
-      isCorrect: true
-      explanation: "That is correct. The Data Migration Assistant would be the best tool to use to detect any compatibility issues between the on-premises SQL Server and Azure SQL Database Managed Instance."
-    - content: "Microsoft Planning and Assessment"
-      isCorrect: false
-      explanation: "That is incorrect. Microsoft Planning and Assessment isn't the best tool to use to detect any compatibility issues between the on-premises SQL Server and Azure SQL Database Managed Instance."

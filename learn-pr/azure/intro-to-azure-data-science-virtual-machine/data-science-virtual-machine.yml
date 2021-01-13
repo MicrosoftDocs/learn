@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine
+metadata:
+  title: What is the Data Science Virtual Machine?
+  description: Details the composition and intended use of the Data Science Virtual Machine.
+  ms.date: 08/28/2020
+  author: lobrien
+  ms.author: laobri
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+title: What is the Data Science Virtual Machine?
+durationInMinutes: 4
+content: |
+  [!include[](includes/data-science-virtual-machine.md)]

@@ -2,7 +2,7 @@
 uid: learn.aks-deploy-container-app.7-exercise-expose-app
 metadata:
   title: Exercise - Enable network access to an application
-  description: In this exercise, you create and deploy a service to expose your application on the AKS cluster. You then create and deploy an ingress to allow clients can reach the application from the internet.
+  description: In this exercise, you create and deploy a service to expose your application on the Azure Kubernetes Service cluster. You then create and deploy an ingress to allow clients to reach the application from the internet.
   ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan

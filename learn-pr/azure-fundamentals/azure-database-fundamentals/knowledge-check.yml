@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-database-fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/14/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your development team is interested in writing Graph-based applications that take advantage of the Gremlin API. Which option would be ideal for that scenario?"
+    choices:
+    - content: "Azure Cosmos DB"
+      isCorrect: true
+      explanation: "Azure Cosmos DB supports SQL, MongoDB, Cassandra, Tables, and Gremlin APIs."
+    - content: "Azure SQL Database"
+      isCorrect: false
+    - content: "Azure Databricks"
+      isCorrect: false
+    - content: "Azure Database for PostgreSQL"
+      isCorrect: false
+  - content: "Tailwind Traders uses the LAMP stack for several of its websites. Which option would be ideal for migration?"
+    choices:
+    - content: "Azure Cosmos DB"
+      isCorrect: false
+    - content: "Azure Database for MySQL"
+      isCorrect: true
+      explanation: "Azure Database for MySQL is the logical choice for existing LAMP stack applications."
+    - content: "Azure SQL Database"
+      isCorrect: false
+    - content: "Azure Database for PostgreSQL"
+      isCorrect: false
+  - content: "Tailwind Traders has millions of log entries that it wants to analyze. Which option would be ideal for analysis?"
+    choices:
+    - content: "Azure Cosmos DB"
+      isCorrect: false
+    - content: "Azure SQL Database"
+      isCorrect: false
+    - content: "Azure Database for PostgreSQL"
+      isCorrect: false
+    - content: "Azure Synapse Analytics"
+      isCorrect: true
+      explanation: "Azure Synapse Analytics is the logical choice for analyzing large volumes of data."

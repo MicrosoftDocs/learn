@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.basic-python-nasa.4-variables
+metadata:
+  title: Exercise - Create variables in Python Notebooks for future data analysis
+  description: Variables in programming.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create variables in Python Notebooks for future data analysis
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-variables.md)]

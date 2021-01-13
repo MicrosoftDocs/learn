@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-updates.view-update-assessments
+title: View update assessments
+metadata:
+  title: View update assessments
+  description: "View update assessments"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-view-update-assessments.md)]
+quiz:
+  title: "Quick quiz"
+  questions:
+  - content: "When planning to configure Update Management in Azure, what's the first task an administrator should do?"
+    choices:
+    - content: "Onboard the VMs."
+      isCorrect: false
+      explanation: "That's incorrect. Before you can onboard the VMs, you must configure the Update Management service."
+    - content: "Create a Log Analytics workspace."
+      isCorrect: false
+      explanation: "That's incorrect. You will need a Log Analytics workspace, but this is not the first step."
+    - content: "Create an Automation Account."
+      isCorrect: true
+      explanation: "That's correct. This is the first step. You can configure everything else within the context of this account."

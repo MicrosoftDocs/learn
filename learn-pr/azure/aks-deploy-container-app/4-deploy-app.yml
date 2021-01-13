@@ -1,40 +1,40 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deploy-container-app.4-deploy-app
 metadata:
-  title: Deploy an application on your AKS cluster
-  description: Explore the concepts needed to create and deploy an application to you AKS cluster. You'll see how to deploy an application as container from a container registry using a declarative manifest file.
+  title: Deploy an application on your Azure Kubernetes Service cluster
+  description: Explore the concepts needed to create and deploy an application to your Azure Kubernetes Service cluster. You'll see how to deploy an application as a container from a container registry by using a declarative manifest file.
   ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy an application on your AKS cluster
+title: Deploy an application on your Azure Kubernetes Service cluster
 durationInMinutes: 10
 content: |
   [!include[](includes/4-deploy-app.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is a Container Registry?"
+    - content: "What is a container registry?"
       choices:
-        - content: "A remote storage where we can store our images safely so Kubernetes can download and run them."
+        - content: "Remote storage where we can store our images safely so Kubernetes can download and run them."
           isCorrect: true
-          explanation: "CRs are remote storages for our container images outside our local machine."
+          explanation: "Container registries are remote storage for our container images outside our local machine."
         - content: "An index of where Kubernetes can find an image source to download and execute."
           isCorrect: false
-          explanation: "Despite being called 'registries', CRs are not indexes."
-        - content: "Version control system for container images allowing us to switch between versions."
+          explanation: "Despite being called registries, container registries aren't indexes."
+        - content: "A version control system for container images that allows us to switch between versions."
           isCorrect: false
-          explanation: "It's possible to store several image versions using image tags, but this is not the main purpose of this resource."
+          explanation: "It's possible to store several image versions by using image tags, but this isn't the main purpose of this resource."
 
     - content: "What is a manifest file?"
       choices:
-        - content: "Files that manifest Kubernetes' intentions in your computer."
+        - content: "Files that manifest the intentions of Kubernetes in your computer."
           isCorrect: false
-          explanation: "Manifest files are no related to Kubernetes' intentions."
-        - content: "Describe exactly how the cluster can be accessed through contexts."
+          explanation: "Manifest files aren't related to the intentions of Kubernetes."
+        - content: "Describes exactly how the cluster can be accessed through contexts."
           isCorrect: false
           explanation: "This is the .kube/config file."
-        - content: "Describe everything needed to create and manage a workload."
+        - content: "Describes everything needed to create and manage a workload."
           isCorrect: true
           explanation: "Manifests describe what kind of workloads you want to create."

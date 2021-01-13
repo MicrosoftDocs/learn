@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.implement-scaling
+title: Implement scaling
+metadata:
+  title: Implement scaling
+  description: "Implement scaling"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-implement-scale.md)]

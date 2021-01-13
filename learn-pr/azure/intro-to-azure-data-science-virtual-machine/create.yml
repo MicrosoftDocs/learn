@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-data-science-virtual-machine.create
+metadata:
+  title: "Create a Data Science Virtual Machine"
+  description: Create an Ubuntu Data Science Virtual Machine.
+  ms.date: 08/28/2020
+  author: lobrien
+  ms.author: laobri
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+title: "Create a Data Science Virtual Machine"
+durationInMinutes: 5
+content: |
+  [!include[](includes/create.md)]

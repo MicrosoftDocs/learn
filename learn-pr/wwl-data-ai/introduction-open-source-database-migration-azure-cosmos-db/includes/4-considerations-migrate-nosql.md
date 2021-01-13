@@ -1,4 +1,8 @@
-A business system running on-premises can have an architecture that's coupled to other services operating within the same environment. It's important to understand the relationships between a system you wish to migrate, and the other applications and services your organization is currently using.  
+A business system running on-premises can have an architecture that's coupled to other services operating within the same environment. It's important to understand the relationships between a system you wish to migrate, and the other applications and services your organization is currently using.
+
+In your IoT technology company, you've identified Azure Cosmos DB as a database system that can host all your telemetry databases with the minimum of software recoding. Now, you want to plan the migration project to Cosmos DB.
+
+Here, you'll learn how to decide key aspects of a migration project, such as whether to perform an offline or online migration, how to fall back if problems arise, and how to maintain security.
 
 ### Investigate dependencies
 
@@ -146,7 +150,7 @@ Your databases might contain sensitive data, such as product details, personal s
 
 ### Firewall protection
 
-In an internet-connected application, database servers are usually protected by at least two firewalls. The first firewall separates the internet from the front-end servers—if these servers host websites or web APIs, for example. Only TCP port 80 should be open on the outer firewall, but this port must be open for all source IP addresses, except blacklisted addresses.
+In an internet-connected application, database servers are usually protected by at least two firewalls. The first firewall separates the internet from the front-end servers—if these servers host websites or web APIs, for example. Only TCP port 80 should be open on the outer firewall, but this port must be open for all source IP addresses, except blocked addresses.
 
 The second firewall separates the front-end servers from the database servers. It's recommended to publish the database service on a private port number that's not known to the outside world. On the second firewall, open this port number only for the IP addresses of the front-end servers. This arrangement prevents any direct communication from a malicious internet user to the database servers.
 

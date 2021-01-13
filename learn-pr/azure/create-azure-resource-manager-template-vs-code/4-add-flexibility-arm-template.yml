@@ -3,7 +3,7 @@ uid: learn.azure.create-resource-manager-template-vs-code.4-add-flexibility-arm-
 title: Add flexibility to your Azure Resource Manager template by using parameters and outputs
 metadata:
   title: Add flexibility to your Azure Resource Manager template by using parameters and outputs
-  description: Make your Azure Resource Manager template reusable by adding parameters and add value with outputs.
+  description: Make your Azure Resource Manager template reusable by adding parameters, and add value with outputs.
   ms.date: 07/08/2020
   author: jamcneil
   ms.author: jumcn

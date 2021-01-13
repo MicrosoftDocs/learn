@@ -12,7 +12,7 @@ Azure Machine Learning studio is a web-based tool for managing an Azure Machine 
 - *Automated Machine Learning*: A wizard interface that enables you to train a model using a combination of algorithms and data preprocessing techniques to find the best model for your data.
 
 > [!NOTE]
-> A previously released tool named Azure Machine Learning Studio provided a free service for drag and drop machine learning model development. The studio interface for the Azure Machine Learning service includes this capability in the *Designer* tool, as well as other workspace asset management capabilities.
+> A previously released tool named Azure Machine Learning Studio provided a free service for drag and drop machine learning model development. The studio interface for the Azure Machine Learning service includes this capability in the *designer* tool, as well as other workspace asset management capabilities.
 
 To use Azure Machine Learning studio, use a a web browser to navigate to [https://ml.azure.com](https://ml.azure.com) and sign in using credentials associated with your Azure subscription. You can then select the subscription and workspace you want to manage.
 
@@ -38,7 +38,7 @@ You can install the Azure Machine Learning SDK for Python by using the `pip` pac
 pip install azureml-sdk
 ```
 
-The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks extra include widgets for displaying detailed output in Jupyter Notebooks, the **automl** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
+The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks** extra include widgets for displaying detailed output in Jupyter Notebooks, the **AutoML** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
 
 ```bash
 pip install azureml-sdk[notebooks,automl,explain]
@@ -59,7 +59,7 @@ After installing the SDK package in your Python environment, you can write code 
 ```
 
 > [!TIP]
-> You can download a configuration file for a workspace from the **Overview** page of its blade in the Azure portal.
+> You can download a configuration file for a workspace from the **Overview** page of its blade in the Azure portal or from Azure Machine Learning studio.
 
 To connect to the workspace using the configuration file, you can use the **from_config** method of the **Workspace** class in the SDK, as shown here:
 
@@ -128,13 +128,13 @@ Azure Machine Learning includes the ability to create *Compute Instances* in a w
 
 Compute Instances include Jupyter Notebook and JupyterLab installations that you can use to write and run code that uses the Azure Machine Learning SDK to work with assets in your workspace.
 
-You can choose a VM image that provides the compute specification you need, from small CPU-only VMs to large GPU-enabled workstations. Because the VMs are hosted in Azure, you only pay for the compute resources when they are running; so you can create a VM to suit your needs, and stop it when your workload has completed to minimize costs.
+You can choose a compute instance image that provides the compute specification you need, from small CPU-only VMs to large GPU-enabled workstations. Because compute instances are hosted in Azure, you only pay for the compute resources when they are running; so you can create a compute instance to suit your needs, and stop it when your workload has completed to minimize costs.
 
-You can store notebooks independently in workspace storage, and open them in any VM.
+You can store notebooks independently in workspace storage, and open them in any compute instance.
 
 ## Visual Studio Code
 
-Visual Studio Code is a lightweight code editing environment for Microsoft Windows, Apple macOS, and Linux. It provides a visual interface for many kinds of code, including Microsoft C#, Javascript, Python and others; as well as intellisense and syntax formatting for common data formats such as JSON and XML.
+Visual Studio Code is a lightweight code editing environment for Microsoft Windows, Apple macOS, and Linux. It provides a visual interface for many kinds of code, including Microsoft C#, JavaScript, Python and others; as well as intellisense and syntax formatting for common data formats such as JSON and XML.
 
 Visual Studio Code's flexibility is based on the ability to install modular *extensions* that add syntax checking, debugging, and visual management interfaces for specific workloads. For example, the Microsoft Python extension for Visual Studio Code adds support for writing and running Python code in scripts or notebooks within the Visual Studio Code interface.
 
@@ -142,4 +142,5 @@ Visual Studio Code's flexibility is based on the ability to install modular *ext
 
 The Azure Machine Learning Extension for Visual Studio Code provides a graphical interface for working with assets in an Azure Machine Learning workspace. You can combine the capabilities of the Azure Machine Learning and Python extensions to manage a complete end-to-end machine learning workload in Azure Machine Learning from the Visual Studio Code environment.
 
-> **More Information**: For more information about using the Azure Machine Learning extension for Visual Studio Code, see the [documentation](/azure/machine-learning/tutorial-setup-vscode-extension).
+> **More Information**: For more information about using the Azure Machine Learning extension for Visual Studio Code, see the [documentation](https://docs.microsoft.com/azure/machine-learning/how-to-manage-resources-vscode).
+ 

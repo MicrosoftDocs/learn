@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-custom-vision-ai.5-choose-pictures
+metadata:
+  title: Choose the right images to train AI
+  description: This unit describes how to choose images to use for training the Custom Vision service and discusses the ethics of AI.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose the right images to train AI
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-choose-pictures.md)]

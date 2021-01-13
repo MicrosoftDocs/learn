@@ -1,5 +1,9 @@
 If you have a functional on-premises database, why should you consider moving it into a cloud service, such as Azure? Similarly, why consider implementing a new database system in Azure? Many companies perform this migration because it's easy and cheap to create a highly available and scalable service in the cloud.
 
+In your IoT technology company, you're spending a lot of administrative time running NoSQL databases on various on-premises systems, including Cassandra and MongoDB. You think you can reduce that work by migrating the databases into Azure, but you want to know more about the support Azure has for semi-structured data and how much work would be required to complete the migration. You don't want to modify the IoT devices' software to support this migration, other than simple reconfiguration.
+
+Here, you will learn about the features and technologies in Azure that you can use to host NoSQL databases.
+
 ### Availability
 
 The availability guaranteed by Azure service-level agreements (SLAs) depends on the precise details of your implementation—but they're always high. For example, for Azure Cosmos DB in a single region, Microsoft guarantees 99.99% availability with no additional cost. If deployed in multiple regions, Microsoft increases this guarantee to 99.999% for both read and write availability.
@@ -29,7 +33,7 @@ Azure Cosmos DB is a cloud-based multi-model, globally distributed database syst
 
 As well as hosting data close to users with more than 54 regions in the public cloud, you can add further Azure regions to your Cosmos DB solution at any time. By adding regions, you will then have automatic replication and the ability to host data close to users even if that user base is globally distributed. This replication uses a multi master model and so there does not need to be a publisher and subscribers. The model will appear to users as if they are all using a single centralized database.
 
-By integrating with Azure and replicating across multiple regions, Cosmos DB provides a service level agreement (SLA) for 99.999% availability. Cosmos DB is used by many Microsoft products and services including Skype, Xbox, and Office 365, and has therefore been thoroughly tested over a long period of time since its inception as Project Florence in 2010 and then public availability as Azure DocumentDB.
+By integrating with Azure and replicating across multiple regions, Cosmos DB provides a service level agreement (SLA) for 99.999% availability. Cosmos DB is used by many Microsoft products and services including Skype, Xbox, and Microsoft 365, and has therefore been thoroughly tested over a long period of time since its inception as Project Florence in 2010 and then public availability as Azure DocumentDB.
 
 Cosmos DB has a choice of APIs to interact with your data. These APIs include SQL, MongoDB, Cassandra, Gremlin, and Azure Table Storage and are likely to be joined by more APIs in the future.
 

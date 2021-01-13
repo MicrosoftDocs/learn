@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug.8-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  author: jongalloway
+  ms.author: jogallow
+  ms.date: 10/28/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

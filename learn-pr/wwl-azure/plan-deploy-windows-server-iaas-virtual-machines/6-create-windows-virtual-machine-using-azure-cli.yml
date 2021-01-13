@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-deploy-windows-server-iaas-vms.create-windows-vm-using-azure-cli
+title: Create a windows Virtual Machine using Azure CLI
+metadata:
+  title: Create a windows Virtual Machine using Azure CLI
+  description: "Create a windows Virtual Machine using Azure CLI"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-create-windows-virtual-machine-using-azure-cli.md)]

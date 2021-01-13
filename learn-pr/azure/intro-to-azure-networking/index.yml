@@ -15,6 +15,10 @@ abstract: |
   - Learn how virtual networking helps you isolate network and compute resources
   - Learn how Azure Load Balancer helps improve resiliency, or the ability to recover when your service goes down
   - Learn how Traffic Manager can route traffic to different endpoints, including the endpoint with the lowest latency to the user
+  > [!NOTE]
+  > This module has been updated to [Explore Azure networking services](https://docs.microsoft.com/learn/modules/azure-networking-fundamentals/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
 prerequisites: None
 iconUrl: /learn/achievements/intro-to-azure-networking.svg
 levels:

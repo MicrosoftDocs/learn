@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.contribute-opensource.3-contribute
+title: Contribute to an open-source repository
+metadata:
+  title: Contribute to an open-source repository
+  description: Learn how to create a pull request on a GitHub repository and communicate with the project maintainers.
+  author: sinedied
+  ms.author: yolasors
+  ms.date: 11/20/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-contribute.md)]

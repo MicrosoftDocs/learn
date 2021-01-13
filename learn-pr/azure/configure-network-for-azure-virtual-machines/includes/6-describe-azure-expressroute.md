@@ -4,7 +4,7 @@ Here, we'll go beyond connections that run over the Internet to dedicated lines 
 
 ## Azure ExpressRoute
 
-Microsoft Azure ExpressRoute enables organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the Internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Office 365 and Dynamics 365.
+Microsoft Azure ExpressRoute enables organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the Internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Microsoft 365 and Dynamics 365.
 
 Advantages that ExpressRoute provides include:
 
@@ -68,33 +68,24 @@ An ExpressRoute circuit is the logical connection between your on-premises infra
 
 An ExpressRoute circuit isn't equivalent to a network connection or a network device. Each circuit is defined by a GUID, called a _service_ or _s-key_. This s-key provides the connectivity link between Microsoft, your connectivity provider, and your organization - it isn't a cryptographic secret. Each s-key has a one-to-one mapping to an Azure ExpressRoute circuit.
 
-Each circuit can have up to three peerings, which are a pair of BGP sessions that are configured for redundancy. They are:
+Each circuit can have up to two peerings, which are a pair of BGP sessions that are configured for redundancy. They are:
 
 - Azure private
-- Azure public
 - Microsoft
 
 ### Routing domains
 
-ExpressRoute circuits then map to routing domains, with each ExpressRoute circuit having multiple routing domains. These domains are the same as the three peerings listed above. In an active-active configuration, each pair of routers would have each routing domain configured identically, thus providing high availability. The Azure public and Azure private peering names represent the IP addressing schemes.
+ExpressRoute circuits then map to routing domains, with each ExpressRoute circuit having multiple routing domains. These domains are the same as the two peerings listed above. In an active-active configuration, each pair of routers would have each routing domain configured identically, thus providing high availability. The Azure private peering names represent the IP addressing schemes.
 
 #### Azure private peering
 
 Azure private peering connects to Azure compute services such as virtual machines and cloud services that are deployed with a virtual network. As far as security goes, the private peering domain is simply an extension of your on-premises network into Azure. You then enable bidirectional connectivity between that network and any Azure virtual networks, making the Azure VM IP addresses visible within your internal network.
 
-> [!NOTE]
-> You can connect only one virtual network to the private peering domain.
-
-#### Azure public peering
-
-Azure public peering enables private connections to services that are available on public IP addresses, such as Azure Storage, Azure SQL databases, and Azure web services. With public peering, you can connect to those service public IP addresses without your traffic being routed over the Internet. Connectivity is always from your WAN to Azure, not the other way around. This is also an all-or-nothing approach, as you can't select the services for which you want public peering enabled.
-
-> [!NOTE]
-> For Azure PaaS services, it's recommended to use Microsoft peering rather than public peering.
+You can connect only one virtual network to the private peering domain.
 
 #### Microsoft peering
 
-Microsoft peering supports connections to cloud-based SaaS offerings, such as Office 365 and Dynamics 365. This peering option provides bi-directional connectivity between your company's WAN and Microsoft cloud services.
+Microsoft peering supports connections to cloud-based SaaS offerings, such as Microsoft 365 and Dynamics 365. This peering option provides bi-directional connectivity between your company's WAN and Microsoft cloud services.
 
 ### ExpressRoute health
 

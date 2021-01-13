@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-monitor
+metadata:
+  title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Monitor
+  description: In this unit you'll learn what is Azure Monitor for containers and how to implement it.
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Monitor
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-integrate-azure-monitor.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What component is used to implement Azure Monitor for containers?"
+    choices:
+    - content: "omsagent"
+      isCorrect: true
+      explanation: "Azure Monitor for containers relies on a containerized version of the Log Analytics agent for Linux named omsagent, running in the monitored cluster."
+    - content: "Flux"
+      isCorrect: false
+      explanation: "Flux is used to implement Azure Policy for Azure Arc enabled Kubernetes"
+    - content: "Istio"
+      isCorrect: false
+      explanation: "Istio is an open source service mesh platform that provides a way to control how microservices share data with one another. It is not used directly by Azure Arc enabled Kubernetes functionality to implement Azure Monitor."
+    - content: "CoreDNS"
+      isCorrect: false
+      explanation: "CoreDNS provides name resolution in Kubernetes clusters. It is not used directly by Azure Arc enabled Kubernetes functionality to implement Azure Monitor."
+  - content: "What Azure resource do you have to provision first before you implement Azure Monitor for Containers"
+    choices:
+    - content: "Automation account"
+      isCorrect: false
+      explanation: "Azure Monitor for Containers does not depend on an Automation account"
+    - content: "Key vault"
+      isCorrect: false
+      explanation: "Azure Monitor for Containers does not depend on a Key vault"
+    - content: "Storage account"
+      isCorrect: false
+      explanation: "Azure Monitor for Containers does not depend on a Storage account"
+    - content: "Log Analytics workspace"
+      isCorrect: true
+      explanation: "An Azure Log Analytics workspace is a prerequisite since this is where Kubernetes cluster telemetry will reside."

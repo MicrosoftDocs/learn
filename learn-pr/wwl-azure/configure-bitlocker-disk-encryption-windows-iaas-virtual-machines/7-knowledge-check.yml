@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When you enable Azure Disk Encryption on a Windows VM, what technology does it use on the VM to encrypt the data on your VHDs?"
+    choices:
+    - content: "DM-Crypt."
+      isCorrect: false
+      explanation: "That's incorrect. DM-Crypt is used on Linux virtual machines."
+    - content: "BitLocker."
+      isCorrect: true
+      explanation: "That's correct. Windows VMs are encrypted using BitLocker."
+    - content: "Key Vault."
+      isCorrect: false
+      explanation: "That's incorrect. Key Vault is integrated with Azure Disk Encryption to manage the disk-encryption keys and secrets."
+  - content: "To use Key Vault with Azure Disk Encryption, what policy must an administrator set?"
+    choices:
+    - content: "Configure an access policy to permit at least one security principal."
+      isCorrect: false
+      explanation: "That's incorrect. The administrator doesn't need to configure a security principal for Azure Disk Encryption."
+    - content: "Create an access policy to allow template deployment."
+      isCorrect: false
+      explanation: "That's incorrect. The template deployment access policy allows Azure Resource Manager to get secrets from the key vault when the key vault is referenced in a template deployment."
+    - content: "Set the key vault access policy to support disk encryption."
+      isCorrect: true
+      explanation: "That's correct. The support disk encryption access policy allows Azure to get secrets from the key vault when the key vault is referenced for disk encryption."
+  - content: "Suppose an administrator creates a new VM with a single operating system disk and a single data disk. They use the default options when they create the VM. They don't have a key vault set up in their subscription. Which option most accurately describes the encryption state of those disks?"
+    choices:
+    - content: "Both disks are encrypted using server-side encryption."
+      isCorrect: true
+      explanation: "That's correct. All disks are encrypted using server-side encryption by default. With server-side encryption, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+    - content: "Both disks are unencrypted."
+      isCorrect: false
+      explanation: "That's incorrect. Server-side encryption is enabled by default for new VHDs. With server-side encryption, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+    - content: "The operating system disk is encrypted using server-side encryption. The data disk is unencrypted."
+      isCorrect: false
+      explanation: "That's incorrect. Server-side encryption is enabled by default for new VHDs. With server-side encryption, Azure manages the keys and automatically decrypts data for any read operations, without impacting performance."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms.encrypt-azure-iaas-vm-hard-disks
+title: Encrypt Azure IaaS Virtual Machine hard disks
+metadata:
+  title: Encrypt Azure IaaS Virtual Machine hard disks
+  description: "Encrypt Azure IaaS Virtual Machine hard disks"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-encrypt-azure-iaas-virtual-machine-hard-disks.md)]

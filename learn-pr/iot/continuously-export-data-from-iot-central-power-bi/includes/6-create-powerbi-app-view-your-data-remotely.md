@@ -6,7 +6,7 @@ Let's first go over some of the concepts behind Power Apps.
 
 By using Power Apps, you can build your application without any coding. You use a web portal to select components, inputs, outputs, and so on. Your app is built almost as a drag-and-drop process. You might select a _template_, if one of the available templates matches your ideas. If there's no suitable template, you can build your app from scratch.
 
-Power Apps can be built to ingest data either from an underlying data platform, known as Common Data Service or, as in our scenario, from an external data source. This data source can be SharePoint, Excel, Office 365, or many others. In our scenario, we'll use Azure Blob storage for our data source. Fortunately, this option is available.
+Power Apps can be built to ingest data either from an underlying data platform, known as Common Data Service or, as in our scenario, from an external data source. This data source can be SharePoint, Excel, Microsoft 365, or many others. In our scenario, we'll use Azure Blob storage for our data source. Fortunately, this option is available.
 
 With Power Apps, the key concept is _rapid development_. You can build a functional, useful app in just a few minutes.
 

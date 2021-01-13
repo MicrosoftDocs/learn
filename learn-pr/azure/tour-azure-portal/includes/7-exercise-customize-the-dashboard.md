@@ -59,18 +59,14 @@ You now want to create a similar dashboard for some other customers.
 
 ## Share a dashboard
 
-You now want to make this dashboard available to other users. To make this dashboard available, carry out the following steps:
+You now want to make this dashboard available to other users. In the sandbox environment, you won't be able to publish a shared dashboard. But you can see how you'd share a dashboard by completing the following steps.
 
 1. From the Azure AD Admin dashboard, select the **Share** button at the top. The **Sharing and access control** panel that appears.
-1. Uncheck the **Publish to the 'dashboards' resource group** checkbox.
+1. To publish to a specific resource group, uncheck the **Publish to the 'dashboards' resource group** checkbox.
 1. Select the resource group <rgn>[sandbox resource group name]</rgn> from the **Resource group** dropdown.
-
 1. Select **Publish**.
+1. At this point in the sandbox environment, you'll receive an error. That's ok. 
 1. Close the **Sharing + access control** pane.
-
-1. After a short while, a _Shared dashboard_ will appear in the **All resources** tile on your dashboard.
-
-1. Repeat steps 1 to 3 to share the Customer Dashboard.
 
 ## Edit a dashboard.json file
 
@@ -97,54 +93,6 @@ To show how you can download and edit a dashboard file, carry out the following 
 1. In the **Open** dialog box, browse to the Downloads folder, and double-click *Customer Dashboard.json*.
 
     The clocks have resized to one row high, and the bottom clock has moved up one row.
-
-## Select a shared dashboard
-
-You've realized that you don't like the smaller clocks, and you want to return to the earlier shared version of the Customer Dashboard. You can do that either by editing the file and uploading it again or by accessing the shared version. To do that, carry out the following steps:
-
-1. Select the down arrow next to **Customer Dashboard**.
-
-1. Select **Browse all dashboards**.
-
-1. On the **All dashboards** pane, under **TYPE**, select **Shared dashboards**.
-
-1. Select **Customer Dashboard**.
-
-1. Close the **All dashboards** pane.
-
-    The clocks have returned to their original size.
-
-## Switch to full screen
-
-1. Select the down arrow next to **Customer Dashboard**.
-
-    There is now another Customer Dashboard, without the shared symbol next to it. Select that version of Customer Dashboard, and the clocks become small again.
-
-1. Switch back to the shared Customer Dashboard.
-
-1. Select the **Full Screen** button. The browser menus and bars have all disappeared.
-
-1. Select the **Exit Full Screen** to return to the standard screen.
-
-## Unshare a dashboard
-
-If you want to prevent a shared dashboard from being available for selection, you can _unshare_ it. To unshare a dashboard, carry out the following steps:
-
-1. Select the **Unshare** button. The **Sharing + access control** pane appears.
-
-1. Select the **Unpublish** button.
-
-1. In the confirmation message box, select **OK**.
-
-1. Select the down arrow next to **Customer Dashboard**.
-
-1. Select **Browse all dashboards**.
-
-1. On the **All dashboards** pane, under **TYPE**, select **Shared dashboards**.
-
-    **Customer Dashboard** no longer appears in the list of available dashboards.
-
-1. Close the **All dashboards** pane.
 
 ## Delete a dashboard
 
@@ -174,4 +122,4 @@ If you want to prevent a shared dashboard from being available for selection, yo
 
 1. Close your browser.
 
-Congratulations! You have now created and edited dashboards, shared them, altered them as **JSON** files, unshared, and finally, reset them to the default state. You should now be able to see what powerful tools dashboards can be and how you can use them to create efficient interfaces for differing roles within an organization.
+Congratulations! You have now created and edited dashboards, shared them, altered them as **JSON** files, and finally, reset them to the default state. You should now be able to see what powerful tools dashboards can be and how you can use them to create efficient interfaces for differing roles within an organization.

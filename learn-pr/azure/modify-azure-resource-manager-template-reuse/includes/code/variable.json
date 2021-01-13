@@ -30,7 +30,9 @@
         "name": "[variables('uniqueStorageName')]",
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2019-06-01",
-        "tags": "[variables('uniqueStorageName')]",
+        "tags": {
+            "displayName": "[variables('uniqueStorageName')]"
+        },
         "location": "[resourceGroup().location]",
         "kind": "StorageV2",
         "sku": {

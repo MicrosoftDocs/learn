@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/31/2020
+  ms.date: 11/04/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: "You have a NumPy array with the shape (2,20). What does this tell you about the elements in the array?"
     choices:
-    - content: "The array is two dimensional, and each dimension has 20 elements"
+    - content: "The array is two dimensional, consisting of two arrays each with 20 elements"
       isCorrect: true
-      explanation: "That is correct. A shape of (2,20) indicates a multidimensional array with two dimensions, each containing 20 elements."
+      explanation: "That is correct. A shape of (2,20) indicates a multidimensional array with two arrays, each containing 20 elements."
     - content: "The array contains 2 elements, with the values 2 and 20"
       isCorrect: false
-      explanation: "That is incorrect. A shape of (2,20) indicates a multidimensional array with two dimensions, each containing 20 elements."
+      explanation: "That is incorrect. A shape of (2,20) indicates a multidimensional array with two arrays, each containing 20 elements."
     - content: "The array contains 20 elements, all with the value 2"
       isCorrect: false
-      explanation: "That is incorrect. A shape of (2,20) indicates a multidimensional array with two dimensions, each containing 20 elements."
+      explanation: "That is incorrect. A shape of (2,20) indicates a multidimensional array with two arrays, each containing 20 elements."
   - content: "You have a Pandas DataFrame named df_sales containing daily sales data. The DataFrame contains the following columns: year, month, day_of_month, sales_total. You want to find the average sales_total value. Which code should you use?"
     choices:
     - content: "df_sales['sales_total'].avg()"

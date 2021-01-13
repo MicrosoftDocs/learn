@@ -1,0 +1,63 @@
+### YamlMime:LearningPath
+uid: learn.explore-space-using-python
+metadata:
+  title: Explore space with Python and Visual Studio Code; inspired by Netflix's Over the Moon
+  description: Description.
+  brand: vs-code
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore space with Python and Visual Studio Code; inspired by Netflix's Over the Moon
+summary: | 
+  Learning to code sometimes feels out of reach. But if we've learned anything from 
+  the people who have burst through our atmosphere, orbited our Earth, or walked on
+  the Moon, goals that seem out of reach simply require determination and passion. 
+  That's the goal of this [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw?azure-portal=true)–inspired learning path. 
+ 
+  <i>Over the Moon</i> is a film about Fei Fei, a young girl who builds a rocket to the Moon 
+  on a mission to prove the existence of a legendary Moon Goddess. Fei Fei is fueled 
+  by the memories and love of her mother to use her determination and imagination to 
+  accomplish something beyond this world: reach the Moon. Although the story takes place 
+  in a beautifully drawn universe, it's directly related to the types of problems 
+  real-life engineers face as they prepare and execute missions to the Moon and beyond.
+
+  These modules were inspired by Fei Fei's story and the story of real NASA
+  engineers and astronauts. Tying together principles of data science, machine learning, and
+  artificial intelligence with tools like Python, Visual Studio Code, and Azure, these modules
+  guide you through upskilling in tech while imagining how to solve space travel–related 
+  challenges. And don't forget
+  to watch [Over the Moon](https://www.youtube.com/watch?v=26DIABx44Tw?azure-portal=true) on Netflix today!
+  
+  Through these modules, you will learn how to:
+    - Gather data from multiple sources 
+    - Aggregate data into pandas DataFrames
+    - Use Python and pandas to explore data 
+    - Use smart strategies to cleanse and manipulate your data
+    - Create a good dataset of images for training AIs
+    - Ensure ethical practices throughout AI development
+    - Hypothesize how much rock sample astronauts should collect
+    - Identify and predict meteor showers
+    - Train a Custom Vision AI model on a particular animal
+
+  > [!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
+prerequisites: None
+iconUrl: /learn/achievements/explore-space-using-python.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- developer
+- student
+products:
+- azure-custom-vision
+- vs-code
+modules:
+- learn.student-evangelism.plan-moon-mission-using-python-pandas
+- learn.student-evangelism.predict-meteor-showers-using-python
+- learn.student-evangelism.train-custom-vision-ai
+trophy:
+  uid: learn.explore-space-using-python.trophy

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.search-updated-index
+title: Search the updated index
+metadata:
+  title: Search the updated index
+  description: "Search the index and see results from your custom skill."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-search-updated-index.md)]

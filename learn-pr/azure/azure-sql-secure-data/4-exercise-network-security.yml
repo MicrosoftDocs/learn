@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.4-exercise-network-security
 metadata:
-  title: Exercise - Network security
-  description: Exercise - Network security
+  title: Exercise - Secure your network
+  description: Exercise - Secure your network
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Network security
+title: Exercise - Secure your network
 durationInMinutes: 10
 interactive: powershell
 azureSandbox: true

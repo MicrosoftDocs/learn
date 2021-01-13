@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-cognitive-search-solution.search-index
+title: Search an index
+metadata:
+  title: Search an index
+  description: "Use a web application to search your index."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-search-index.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.install-code-tools-python-nasa.8-install-extensions
+metadata:
+  title: Exercise - Install Visual Studio Code extensions needed for data exploration
+  description: Install the necessary extensions in Visual Studio Code.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Install Visual Studio Code extensions needed for data exploration
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-install-extensions.md)]

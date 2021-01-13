@@ -5,9 +5,9 @@ Azure Storage provides a REST API to work with the containers and data stored in
 - **Tables** for structured storage of key/values.
 - **Files** for traditional SMB file shares.
 
-## Using the REST API
+## Use the REST API
 
-The Storage REST APIs are accessible from anywhere on the Internet, by any application that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
+The Storage REST APIs are accessible from anywhere on the Internet, by any app that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
 
 For example, if you wanted to list all the blobs in a container, you would send something like:
 
@@ -67,13 +67,13 @@ This would return an XML block with data specific to the account:
 
 However, this approach requires a lot of manual parsing and the creation of HTTP packets to work with each API. For this reason, Azure provides pre-built _client libraries_ that make working with the service easier for common languages and frameworks.
 
-## Using a client library
+## Use a client library
 
-Client libraries can save a significant amount of work for application developers because the API is tested and it often provides nicer wrappers around the data models sent and received by the REST API.
+Client libraries can save a significant amount of work for app developers because the API is tested and it often provides nicer wrappers around the data models sent and received by the REST API.
 
 :::row:::  
     :::column:::  
-    Microsoft has Azure client libraries that support a number of languages and frameworks including:
+    Microsoft has Azure client libraries that support a number of languages and frameworks, including:
     - .NET
     - Java
     - Python
@@ -88,31 +88,29 @@ Client libraries can save a significant amount of work for application developer
 For example, to retrieve the same list of blobs in C#, we could use the following code snippet:
 
 ```csharp
-CloudBlobDirectory directory = ...;
-foreach (IEnumerable<IListBlobItem> blob in directory.ListBlobs(
-                useFlatBlobListing: true,
-                blobListingDetails: BlobListingDetails.All))
+string containerName = "...";
+BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
+
+var blobs = container.GetBlobs();
+foreach (var blob in blobs)
 {
-    // Work with blob item .. could be page blob, block blob, etc.
+    Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:YYYY-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
 }
 ```
 
 Or in JavaScript:
 
 ```javascript
-const containerName = "...";
-const blobService = storage.createBlobService();
+const containerName = '...';
+const containerClient = blobServiceClient.getContainerClient(containerName);
 
-blobService.listBlobsSegmented(containerName, null, function (error, results) {
-    if (results) {
-        for (var i = 0, blob; blob = results.entries[i]; i++) {
-            // Work with blob item .. could be page blob, block blob, etc.
-        }
-    }
-});
+let blobs = containerClient.listBlobsFlat();
+for await (const blob of blobs) {
+  console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
+}
 ```
 
 > [!NOTE]
-> The client libraries are just thin _wrappers_ over the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. See the Additional Resources section at the end of this module for links to the source code for these libraries on GitHub.
+> The client libraries are just thin _wrappers_ over the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. For links to the source code for these libraries on GitHub, at the end of this module, see the *Additional Resources* section.
 
-Let's add client library support to our application.
+Let's add client library support to your app.

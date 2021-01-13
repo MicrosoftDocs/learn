@@ -1,4 +1,4 @@
-Stop all processes produced by the .NET Core app:
+Stop all processes produced by the .NET app:
 
 ```bash
 kill $(pidof dotnet)

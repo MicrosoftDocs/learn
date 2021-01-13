@@ -55,7 +55,7 @@ Service Trust Portal is a companion feature to the Trust Center, and allows you 
 
 ## Compliance Manager
 
-**Compliance Manager** is a workflow-based risk assessment dashboard within the Service Trust Portal that enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services such as Office 365, Dynamics 365, and Azure.
+**Compliance Manager** is a workflow-based risk assessment dashboard within the Service Trust Portal that enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services such as Microsoft 365, Dynamics 365, and Azure.
 
 Compliance Manager provides the following features:
 

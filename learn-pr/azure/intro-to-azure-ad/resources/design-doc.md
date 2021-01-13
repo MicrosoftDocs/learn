@@ -46,7 +46,7 @@ Identify the subtasks of *Secure your identities with Azure Active Directory*
 
 1. **Introduction**
 
-    You work for an organization that has an Active Directory environment on-premises. Your organization is moving to Office 365 and Azure, and you're aware that Azure AD has a number of features that could be beneficial in several use cases. You'd like to learn more about the features available to help you secure your organization's identities.
+    You work for an organization that has an Active Directory environment on-premises. Your organization is moving to Microsoft 365 and Azure, and you're aware that Azure AD has a number of features that could be beneficial in several use cases. You'd like to learn more about the features available to help you secure your organization's identities.
 
 1. **What is Azure AD?**
 
@@ -94,7 +94,7 @@ Identify the subtasks of *Secure your identities with Azure Active Directory*
 
    **Knowledge Check**
    1. Which of these if a valid Azure AD licensing plan?
-       A: Office 365
+       A: Microsoft 365
    1. Which licensing plan supports Identity protection?
        A: Premium 2
 

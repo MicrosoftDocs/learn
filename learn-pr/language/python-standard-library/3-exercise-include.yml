@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-standard-library.exercise-include
-title: Exercise - Use an include statement to utilize a standard library module
+title: Exercise - Use an import statement to utilize a standard library module
 metadata:
-  title: Exercise - Use an include statement to utilize a standard library module
-  description: Use an include statement to utilize a standard library module.
+  title: Exercise - Use an import statement to utilize a standard library module
+  description: Use an import statement to utilize a standard library module.
   ms.date: 02/19/2020
   author: bobtabor-msft
   ms.author: rotabor

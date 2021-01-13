@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory
+metadata:
+  title: Execute existing SSIS packages in Azure Data Factory
+  description: "Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline
+summary: In this module, you will see how you can integrate SQL Server Integration Services packages into an Azure Data Factory solution
+abstract: |
+  * Introduction
+  * Describe SQL Server Integration Services
+  * Understand the Azure-SIS integration runtime
+  * Set-up Azure-SIS  integration runtime
+  * Run SSIS packages in Azure Data Factory
+  * Migrate SSIS packages to Azure Data Factory
+  * Knowledge check
+  * Summary
+prerequisites: |
+  The student should be able to:
+  - Log into the Azure portal
+  - Explain and create resource groups
+  - Describe Azure Data Factory and it's core components
+  - Ingest data into Azure Data Factory using the Copy Activity
+iconUrl: /learn/achievements/execute-existing-ssis-packages-azure-data-factory.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-data-factory
+- azure-synapse-analytics
+units:
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.introduction
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.describe-sql-server-integration-services
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.understand-azure-ssis-integration-runtime
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.set-up-azure-ssis-integration-runtime
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.run
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.migrate
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.knowledge-check
+- learn.wwl.execute-existing-ssis-packages-azure-data-factory.summary
+badge:
+  uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.badge

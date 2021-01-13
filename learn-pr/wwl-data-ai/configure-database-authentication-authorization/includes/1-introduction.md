@@ -15,7 +15,7 @@ In this module you will learn about:
 
 ## Pre-requisites
 
-- Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based
+- Ability to use tools for running queries against a Microsoft SQL database, either on-premises or cloud-based
 - Understanding of why security is a crucial part of database system planning
 - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
 - Experience creating and configuring resources using the Azure portal

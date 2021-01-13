@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.describe-azure-migrate
+title: Describe Azure Migrate
+metadata:
+  title: Describe Azure Migrate
+  description: "Describe Azure Migrate"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-azure-migrate.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.mitigate-with-fairlearn
+title: Mitigate unfairness with Fairlearn
+metadata:
+  title: Mitigate unfairness with Fairlearn
+  description: "Mitigate unfairness with Fairlearn"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-mitigate-with-fairlearn.md)]

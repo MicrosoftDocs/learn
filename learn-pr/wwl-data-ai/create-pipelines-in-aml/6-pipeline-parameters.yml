@@ -3,8 +3,8 @@ uid: learn.wwl.create-pipelines-in-aml.pipeline-parameters
 title: Use pipeline parameters
 metadata:
   title: Use pipeline parameters
-  description: "Learn how to parameterize pipelines."
-  ms.date: 07/19/2020
+  description: "Use pipeline parameters"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

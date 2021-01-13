@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-meteor-showers-using-python.6-start-search
+metadata:
+  title: 'Write a predictor function - Part 1'
+  description: Learn how to write a function to predict meteor showers by using data stored in pandas DataFrames.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Write a predictor function - Part 1'
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-start-search.md)]

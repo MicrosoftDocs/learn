@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-bot-with-bot-framework-composer.provide-ability-to-get-help-cancel
+title: Provide the ability to get help
+metadata:
+  title: Provide the ability to get help
+  description: "Provide the ability to get help"
+  ms.date: 12/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-provide-ability-get-help-cancel.md)]

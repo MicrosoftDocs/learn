@@ -98,7 +98,7 @@ There are a number of ways you can use Ansible on Azure.
 
 On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
-* [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/azure-oss.ansible?azure-portal=true), published by Microsoft.
+* [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/redhat.ansible-tower?tab=Overview), published by Microsoft.
 
     You can use this image to bring up a control machine, which includes Ansible, the Azure CLI, and other tools, to manage your fleet.
 
@@ -302,7 +302,7 @@ There are a number of ways you can use Puppet on Azure.
 
 On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
-* [Puppet Agent](https://azuremarketplace.microsoft.com/marketplace/apps/Puppet.puppet-agent-windows-arm?azure-portal=true), published by Puppet, is a virtual machine extension that installs the Puppet agent on your Windows VM.
+* [Puppet Agent](https://puppet.com/docs/puppet/5.5/install_windows.html), published by Puppet, is a virtual machine extension that installs the Puppet agent on your Windows VM.
 
 * [Puppet Enterprise](https://azuremarketplace.microsoft.com/marketplace/apps/puppet.puppet-enterprise-201818?azure-portal=true), published by Puppet, enables you to automate the entire lifecycle of your infrastructure.
 

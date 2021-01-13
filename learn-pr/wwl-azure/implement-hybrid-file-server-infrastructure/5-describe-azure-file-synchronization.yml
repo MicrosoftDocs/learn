@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-file-server-infrastructure.describe-azure-file-sync
+title: Describe Azure File Sync
+metadata:
+  title: Describe Azure File Sync
+  description: "Describe Azure File Sync"
+  ms.date: 11/27/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/5-describe-azure-file-synchronization.md)]

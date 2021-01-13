@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.iot-fundamentals.use-azure-sphere
+title: Use Azure Sphere
+metadata:
+  title: Use Azure Sphere to help build a secure IoT infrastructure
+  description: Analyze a scenario that requires secure IoT devices.
+  ms.date: 09/14/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+azureSandbox: false
+content: |
+  [!include[](includes/6-use-azure-sphere.md)]

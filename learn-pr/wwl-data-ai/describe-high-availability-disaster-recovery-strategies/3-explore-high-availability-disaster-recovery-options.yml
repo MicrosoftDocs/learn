@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-ha-dr-options
-title: Explore HA-DR options
+title: Explore high availability and disaster recovery options
 metadata:
-  title: Explore HA-DR options
-  description: "Explore HA-DR options"
-  ms.date: 08/07/2020
+  title: Explore high availability and disaster recovery options
+  description: "Explore high availability and disaster recovery options"
+  ms.date: 08/23/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

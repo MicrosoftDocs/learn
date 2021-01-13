@@ -15,11 +15,11 @@ In this exercise, you'll use the example scenario from the previous unit to lear
         | Property | Suggested value | Description |
         |---|---|---|
         | **Subscription** | _Concierge subscription_ | Specifies the subscription under which this new function app is created. |
-        | **Resource Group**| Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
-	| **Function App name** | _[Globally unique name]_ | Specifies the name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+        | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
+        | **Function App name** | _[Globally unique name]_ | Specifies the name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
         | **Publish** | _Code_ | Specifies that the function will use code instead of a container. |
         | **Runtime Stack** | _Node.js_ | Specifies that the sample code in this module is written in JavaScript. |
-        | **Version** | _12_ | Specifies the version of the runtime stack. |
+        | **Version** | _12 LTS_ | Specifies the version of the runtime stack. |
         | **Region** | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
 
         **Sandbox regions**
@@ -30,8 +30,8 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
         | Property | Suggested value | Description |
         |---|---|---|
-        | **Storage account** | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
-	| **Operating system** | _Windows_ | Specifies the operating system that hosts the function app. |
+        | **Storage account** | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
+        | **Operating system** | _Windows_ | Specifies the operating system that hosts the function app. |
         | **Plan type** | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
     1. On the **Monitoring** tab, specify the following option:
@@ -50,58 +50,59 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. Click the **Platform Features** tab.
+1. Under **Development Tools**, click **App Service Editor**.
 
-1. On the **Platform Features** tab, under **Development Tools**, click **Advanced tools (Kudu)**.
+1. When the App Service Editor opens in a new browser window or tab, highlight the **wwwroot** folder.
 
-    This action starts the Kudu console. You can use this console to access the web server that hosts your functions, and write the code for your functions.
+1. Click **Open Console** on left menu.
 
-1. In the top menu of the Kudu console, select **Debug console**, then click **CMD**. 
+    This action starts console. You can use this console to access the web server that hosts your functions, and write the code for your functions.
 
-    A command prompt appears. This command prompt window is running on the web server. Additionally, the console should display the directory structure of the function app. An Explorer window also appears above the command line, showing the folder and file hierarchy on the web server.
+1. Create a new _package.json_ file:
 
-1. In the Explorer window, navigate to the **site** folder, and then select the **wwwroot** folder.
+    1. Enter the following commands in the console to create the new JSON file and open it in the editor:
 
-1. Click the **+** icon next to **wwwroot**, then select **New file**.
+        ```bash
+        touch package.json
+        open package.json
+        ```
 
-    1. Name the file _package.json_, then click the **Edit** icon to open the file in the editor.
-
-    1. Enter the following JSON code, replacing the value for `name` with the globally unique name that you specified for you **Function App name** earlier.
+    1. Add the following code:
 
         ```json
         {
           "name": "example",
           "version": "1.0.0"
         }
-        ````
+        ```
+        
+        Where `example` should be replaced with the name of your package. For example, you could use the globally unique name that you specified for your function earlier.
+    
+    1. Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
 
-    1. Click **Save**.
+1. In the console window, enter the following command:
 
-1. In the command prompt window, verify that you're in the **D:\home\site\wwwroot** folder, then run the following command:
-
-    ```command-prompt
+    ```bash
     npm install durable-functions
     ```
 
     This command instructs the node package manager to install the durable-functions package and any dependencies that are required. This may take a few minutes to complete, and the node package manager may display some warnings, which you can ignore.
 
-1. Wait until all packages have finished installing, then close the Kudu window and return to the Function App page in the Azure portal.
+1. Wait until all packages have finished installing, then switch back to your browser window with the Azure portal.
 
-1. Click the **Overview** tab, then click **Restart**. Wait for the restart to complete before continuing.
+1. Click **Overview**, then click **Restart**, and then click **Yes** when prompted to restart. Wait for the restart to complete before continuing.
 
 ## Create the client function for submitting a design proposal
 
-1. Expand your function app and select the **+** button next to **Functions**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. In the **Azure Functions for JavaScript - getting started** page, select **In-portal**, and then select **Continue**.
-
-1. Select **More templates**, and then select **Finish and view templates**.
+1. In the Azure portal, under **Functions**, click **Functions**, and then click **+ Add**.
 
 1. Select the **Durable Functions HTTP starter** template. This template creates a durable function that runs in response to an HTTP request.
 
-1. Name the function **HttpStart**, select **Function** authorization level, and then click **Create**.
+1. Name the function **HttpStart**, select **Function** authorization level, and then click **Add**.
 
-1. When the function is created, the code for the **index.js** file appears in the editor. Your file should resemble the following example:
+1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Your file should resemble the following example:
 
     ```javascript
     const df = require("durable-functions");
@@ -116,57 +117,52 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     };
     ```
 
-    The JavaScript code in this file runs when the user visits the web site hosting the function. It invokes an orchestration function (which you'll define shortly).
-
-1. In the right-hand panel, select **View Files**. You might have to scroll horizontally to the right in order to see this menu. 
-
-1. Select **function.json** to view the bindings associated with your new function. This information specifies any authentication requirements, together with the HTTP methods that can trigger the function. This file also specifies that the function is a client that starts the orchestration process. Your file should resemble the following example:
+1. In the drop-down menu for the files in your function, select **function.json** to view the bindings associated with your new function. This information specifies any authentication requirements, together with the HTTP methods that can trigger the function. This file also specifies that the function is a client that starts the orchestration process. Your file should resemble the following example:
 
     ```json
     {
-        "bindings": [
-            {
-                "authLevel": "function",
-                "name": "req",
-                "type": "httpTrigger",
-                "direction": "in",
-                "route": "orchestrators/{functionName}",
-                "methods": [
-                    "post",
-                    "get"
-                ]
-            },
-            {
-                "name": "$return",
-                "type": "http",
-                "direction": "out"
-            },
-            {
-                "name": "starter",
-                "type": "orchestrationClient",
-                "direction": "in"
-            }
-        ],
-        "disabled": false
+      "bindings": [
+        {
+          "authLevel": "function",
+          "name": "req",
+          "type": "httpTrigger",
+          "direction": "in",
+          "route": "orchestrators/{functionName}",
+          "methods": [
+            "post",
+            "get"
+          ]
+        },
+        {
+          "name": "$return",
+          "type": "http",
+          "direction": "out"
+        },
+        {
+          "name": "starter",
+          "type": "orchestrationClient",
+          "direction": "in"
+        }
+      ]
     }
     ```
 
     > [!NOTE]
     > A binding associates resources and other items with a trigger. It is a declarative mechanism that removes the need to hard-code references to other services and functions in your code.
 
-2. Select **Save** to save your new client function. 
-
 ## Create the orchestrator function
 
-1. Expand your function app and select the **+** button next to **Functions**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
+
+1. In the Azure portal, under **Functions**, click **Functions**, and then click **+ Add**.
 
 1. Select the **Durable Functions orchestrator** template. This template creates a durable function that orchestrates the execution of functions.
 
-1. Name the new function **OrchFunction**, and then select **Create**.
+1. Name the new function **OrchFunction**, and then select **Add**.
 
-1. When the function is created, the **index.js** file appears in the editor for this function. Replace the existing code with the following code:
+1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code:
 
-    ```JavaScript
+    ```javascript
     const df = require("durable-functions");
 
     module.exports = df.orchestrator(function* (context) {
@@ -191,13 +187,15 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 ## Create the activity function
 
-1. Expand your function app and select the **+** button next to **Functions**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. Select the **Durable Functions activity** template.
+1. In the Azure portal, under **Functions**, click **Functions**, and then click **+ Add**.
 
-1. Name the function **Approval**, and then select **Create**.
+1. Select the **Durable Functions activity** template. This template creates a durable function that is run when an Activity is called by an orchestrator function.
 
-1. Replace the existing code in the **index.js** field with the following code:
+1. Name the function **Approval**, and then select **Add**.
+
+1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code:
 
     ```javascript
     module.exports = async function (context) {
@@ -208,6 +206,8 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     This function returns a message indicating the status of the proposal. The expression `context.bindings.name` will either be `Accepted` or `Rejected`, depending on the parameter passed to the function from the orchestrator. In a real world scenario, you would add the logic that handles the accept or reject operations in this function.
 
 1. Select **Save** to save your new function. 
+
+<!--
 
 ## Enable Azure Functions version 2 compatibility mode
 
@@ -223,20 +223,23 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
 
 1. Select **Save** to persist the change.
 
+-->
+
 ## Verify that the durable functions workflow starts
 
-1. In the **Function Apps** pane, navigate to your **HttpStart** function.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. Click **</> Get function URL**, and copy the URL. Your URL should resemble the following example:
+1. In the Azure portal, under **Functions**, click **Functions**, and then click your **HttpStart** function.
+
+1. Click **Get Function URL**, and copy the URL. Your URL should resemble the following example:
 
     ```
     https://example.azurewebsites.net/api/orchestrators/{functionName}?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-    You'll use this URL to run the **HttpStart** function.
+    You'll use this URL to run your functions.
 
-1. Open a new browser window and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**
-
+1. Open a new browser window and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example:
 
     ```
     https://example.azurewebsites.net/api/orchestrators/OrchFunction?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
@@ -255,15 +258,19 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
     }
     ```
 
-1. Copy the **statusQueryGetUri** value, and use the web browser to navigate to this URL. You should see a response message that resembles the following example:
+1. Copy the **statusQueryGetUri** value, and use your web browser to navigate to this URL. You should see a response message that resembles the following example:
 
     ```json
     {
+      "name": "OrchFunction",
       "instanceId": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
       "runtimeStatus": "Completed",
       "input": null,
       "customStatus": null,
-      "output": ["Your project design proposal has been -  Approved!", "Your project design proposal has been -  Rejected!"],
+      "output": [
+        "Your project design proposal has been -  Approved!",
+        "Your project design proposal has been -  Rejected!"
+      ],
       "createdTime": "2019-04-16T15:23:03Z",
       "lastUpdatedTime": "2019-04-16T15:23:35Z"
     }

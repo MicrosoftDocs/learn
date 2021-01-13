@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.understand-windows-server-iaas-vm-cost-management
+metadata:
+  title: Understand Windows Server IaaS Virtual Machine cost management
+  description: "You'll be able to use the Pricing calculator to assess likely costs, use Azure Advisor to monitor actual costs for Azure resources, implement Spot VMs and Azure Reservations, and describe benefits of Azure Hybrid licensing."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand Windows Server IaaS Virtual Machine cost management
+summary: You'll be able to use the Pricing calculator to assess likely costs, use Azure Advisor to monitor actual costs for Azure resources, implement Spot VMs and Azure Reservations, and describe benefits of Azure Hybrid licensing.
+abstract: |
+  After completing this module, you'll be able to:
+  - Use the Azure pricing calculator to estimate VM costs.
+  - Monitor and limit Azure resource costs.
+  - Implement Spot VMs and Azure Reservations.
+  - Describe the Azure Hybrid Benefit licensing offer.
+prerequisites: |
+  In order to get the best learning experience from this module, you should have knowledge and experience of the following:
+  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing IaaS services in Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies (firewalls, encryption, multi-factor authentication)
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/understand-windows-server-iaas-vm-cost-management.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.introduction
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.use-azure-pricing-calculator-to-estimate-costs
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.monitor-limit-resource-costs
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.implement-spot-vms-azure-reservations
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.describe-azure-hybrid-license-benefits
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.manage-costs-azure
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.knowledge-checks
+- learn.wwl.understand-windows-server-iaas-vm-cost-management.summary
+badge:
+  uid: learn.wwl.understand-windows-server-iaas-vm-cost-management.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.describe-azure-site-recovery
+title: Describe Azure Site Recovery
+metadata:
+  title: Describe Azure Site Recovery
+  description: "Describe Azure Site Recovery"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-describe-azure-site-recovery.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.exercise-use-fairlearn
+title: Exercise - Use Fairlearn with Azure Machine Learning
+metadata:
+  title: Exercise - Use Fairlearn with Azure Machine Learning
+  description: "Exercise - Use Fairlearn with Azure Machine Learning"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise-use-fairlearn.md)]

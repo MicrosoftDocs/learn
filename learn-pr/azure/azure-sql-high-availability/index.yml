@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure-sql-high-availability
 metadata:
-  title: Deploy highly available solutions with Azure SQL
-  description: Deploy highly available solutions with Azure SQL
+  title: Deploy highly available solutions by using Azure SQL
+  description: In this module, you'll learn how to deploy highly available solutions by using Azure SQL. You'll also look at architectures and how they affect availability.
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy highly available solutions with Azure SQL
-summary: Depending on the SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you will learn how to translate your knowledge of backup/restore, failover cluster instances, and Always On Availability Groups to the options for business continuity in Azure SQL. You'll also take a peek under the hood at the architectures and how they affect availability.
+title: Deploy highly available solutions by using Azure SQL
+summary: Whatever SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you'll learn how to translate your knowledge of backup and restore, failover cluster instances, and Always On availability groups to the options for business continuity in Azure SQL. You'll also peek under the hood at the architectures and how they affect availability.
 abstract: | 
-  In this module, you will learn how to:
-  - Create a backup/restore strategy for your organization
+  In this module, you'll learn how to:
+  - Create a backup and restore strategy for your organization
   - Evaluate the architectures associated with each service tier
   - Compare options for getting higher availability
-  - Describe how availability and consistency applies to Azure SQL
+  - Describe how availability and consistency apply to Azure SQL
   - Configure and monitor availability
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server

@@ -1,24 +1,24 @@
-Tailwind Traders are impressed with your first Web Application and want you to improve it. Tailwind Traders are interested in building Web Applications in the form of APIs. Therefore they would like you to build an API that you can write to and read from. Additionally they would like you to consider that data at Tailwind Traders might be stored in a database and may contain millions of records. For that reason they would like to see an app using different techniques to limit how much data is asked for.
+The online retailer is impressed with your first web application. Now they want you to build an API that you can read and write from. Their data might be stored in a database and might contain millions of records. For that reason, the retailer wants to see an app that uses different techniques that limit how much data is asked for.
 
-## Implement support for reading and writing data
+## Implement support to read and write data
 
-When building an API, it's common to construct it so that you have a number of resources. Each resource may have a number of operations available on them for reading and writing. Organizing by resource and by operations like read/write is referred to as CRUD or **C**reate, **R**ead, **U**pdate, **D**elete. You will implement such an API on the resource `products`.
+It's common to construct an API with a number of resources. Each resource can have a several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the resource **products**:
 
-1. Clone the repo at `https://github.com/MicrosoftDocs/node-essentials` with the following command:
+1. Clone the repo at https://github.com/MicrosoftDocs/node-essentials by using this command:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials
    ```
 
-   Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
+   This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you cloned. Type the following command to navigate to the files you need:
+1. To inspect the repo you cloned and go to the files you need, enter this command:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
    ```
 
-   The outline of the directory should look like so:
+   The outline of the directory should look like this:
 
    ```bash
    -| app.js
@@ -30,15 +30,15 @@ When building an API, it's common to construct it so that you have a number of r
    -| package.json
    ```
 
-   The `package.json` file contains a dependency `express`. Type the following command in the terminal to install that:
+1. The **package.json** file contains a dependency **express**. In the terminal, enter the following command to install it:
 
    ```bash
    npm install
    ```
 
-   `npm` reads from the `dependencies` section in our `package.json` and you should be ready to continue.
+   **npm** reads from the **dependencies** section in the **package.json**.
 
-1. Time to inspect `app.js`. Open up said file. It should look like this:
+1. Open **app.js** to inspect it. The file should look like this:
 
    ```javascript
    const express = require('express')
@@ -68,9 +68,13 @@ When building an API, it's common to construct it so that you have a number of r
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
-   What you are getting above is a skeleton of a program. Your job is to implement the routes. You will do so by adding a little code and testing it out, method by method until you have a fully functional API. Let's begin.
+   The **app.js** file shows a skeleton of a program. Your next job is to implement the routes.
 
-1. First you will support reading from the API. Locate the part of the code looking like this:
+### Implement the routes
+
+To implement the routes, add a little code, and then test it. Do this method by method until you have a fully functional API.
+
+1. First support reading from the API. Locate the part of the code that looks like this:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -78,7 +82,7 @@ When building an API, it's common to construct it so that you have a number of r
    })
    ```
 
-   Replace the above with this code:
+1. Replace that code with this code:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -86,13 +90,13 @@ When building an API, it's common to construct it so that you have a number of r
    })
    ```
 
-   Let's verify that this code works by starting up the API with this command:
+1. To check that the code works, start the API by using this command:
 
    ```bash
    node app.js
    ```
 
-   In a separate terminal type:
+1. In a separate terminal enter:
 
    ```javascript
    node client-get.js
@@ -105,9 +109,11 @@ When building an API, it's common to construct it so that you have a number of r
    Connection closed
    ```
 
-    The API responds with an empty array because you haven't written any data to it yet. Lets change that up next.
+The API responds with an empty array because you haven't written any data to it yet. Lets change that up next.
 
-1. Let' implement writing. Locate the part in the code looking like this:
+### Implement writing
+
+1. To implement writing, locate this code:
 
    ```javascript
    app.post('/products', function(req, res) {
@@ -115,7 +121,7 @@ When building an API, it's common to construct it so that you have a number of r
    });
    ```
 
-   Replace it with this code:
+1. Replace that code with this code:
 
    ```javascript
    app.post('/products', function(req, res) {
@@ -125,15 +131,15 @@ When building an API, it's common to construct it so that you have a number of r
    });
    ```
 
-   Note how the above reads incoming data from `req.body` and constructs a JavaScript object from it. Next, it's added to the array `products`. Finally the new product is returned back to the user.
+   The code reads incoming data from **req.body** and constructs a JavaScript object from it. Next, it's added to the array **products**. Finally the new product is returned back to the user.
 
-   Let's test out this code by first running the server program with the following command:
+1. To test the code, run the server program by using this command:
 
    ```bash
    node app.js
    ```
 
-   In a separate terminal run this command:
+1. In a separate terminal run this command:
 
    ```bash
    node client-post.js
@@ -146,7 +152,7 @@ When building an API, it's common to construct it so that you have a number of r
    Closed connection
    ```
 
-   To verify that the data has been written to the API, enter the following command:
+1. To check that the data is written to the API, enter the following command:
 
    ```bash
    node client-get.js
@@ -159,15 +165,17 @@ When building an API, it's common to construct it so that you have a number of r
    Connection closed
    ```
 
-   The above response tells you that when you ran `client-post.js` you successfully managed to write data to the API. By running `client-get.js`, you queried the API for data and it responded with the data you just wrote to it.
+   The response tells you that when you ran **client-post.js** you wrote data to the API. Also, you ran **client-get.js** to query the API for data. The API responded with the data that you just wrote to it.
 
-1. Next thing you want to implement is the ability to update your data. Locate the part of your code looking like this:
+### Implement the ability to update data
+
+1. To implement the ability to update your data, locate the code that looks like this:
 
    ```javascript
    app.put('/products', function(req, res) {});
    ```
 
-   Replace the above with the following code:
+1. Replace that code with this code:
 
    ```javascript
    app.put('/products', function(req, res) {
@@ -183,19 +191,21 @@ When building an API, it's common to construct it so that you have a number of r
    });
    ```
 
-   What the above does is to locate the record in the `products` array that matches on the `id` property and update that record. Let's test out this code by starting the server application:
+   The code locates the record in the **products** array that matches the **id** property and updates that record.
+
+1. To test the code, start the server application:
 
    ```bash
    node app.js
    ```
 
-   In the other terminal run this command:
+1. In the other terminal run this command to create a record:
 
    ```bash
    node client-post.js
    ```
 
-   This command will create a record. Next run this command to update the newly created record:
+1. Run this command to update the newly created record:
 
    ```bash
    node client-put.js
@@ -208,7 +218,7 @@ When building an API, it's common to construct it so that you have a number of r
    Closed connection
    ```
 
-   Let's verify that this update has worked by running this command as well:
+1. To check that the updates works, run this command:
 
    ```bash
    node client-get.js
@@ -221,13 +231,15 @@ When building an API, it's common to construct it so that you have a number of r
    Connection closed
    ```
 
-1. There's one thing left to do and that is to implement delete. Locate the part of the code that looks like this:
+### Implement delete
+
+1. To implement delete, locate the code that looks like this:
 
    ```javascript
    app.delete('/products/:id', function(req, res) {});
    ```
 
-   Now replace it with this code:
+1. Replace that code with this code:
 
    ```javascript
    app.delete('/products/:id', function(req, res) {
@@ -237,34 +249,34 @@ When building an API, it's common to construct it so that you have a number of r
    });
    ```
 
-   The above code finds the product item to be deleted. Then it filters out that item from the `products` array and responds with a filtered version of `products`.
+   The code finds the product item to be deleted. Then it filters out that item from the **products** array and responds with a filtered version of **products**.
 
-   Let's try out this code by starting the server application with this command:
+1. To test the code, start the server application:
 
    ```bash
    node app.js
    ```
 
-   In a separate terminal, run this command to create a record:
+1. In a separate terminal, run this command to create a record:
 
    ```bash
    node client-post.js
    ```
 
-   Now run this command to remove the record:
+1. Run this command to remove the record:
 
    ```bash
    node client-delete.js
    ```
 
-   The above should give the following output:
+   You should see the following output:
 
    ```output
    Received data {"name":"product","id":1}
    Connection closed
    ```
   
-   Verify by running this command:
+1. To check the code, run this command:
 
    ```bash
    node client-get.js
@@ -277,9 +289,13 @@ When building an API, it's common to construct it so that you have a number of r
    Connection closed
    ```
 
-Congratulations, you've managed to implement a resource `products` where you are able to do a full CRUD, that is **C**reate, **R**ead, **U**pdate, and **D**elete data.
+   Congratulations, you've managed to implement a resource **products** by using a full CRUD.
 
-1. Implementing *CRUD* for a resource is common thing to do. Express has a method `route()` meant just for this purpose. By using `route()` method, your code will be grouped so that it's easier to read. So let's replace all the code you have in `app.js` with this code:
+### Implement CRUD
+
+Implementing CRUD for a resource is common thing to do. Express has a method **route()** meant just for this purpose. By using the **route()** method, your code is grouped so that it's easier to read.
+
+1. To implement CRUD, replace the code in **app.js** with this code:
 
    ```javascript
    const express = require('express')
@@ -320,25 +336,25 @@ Congratulations, you've managed to implement a resource `products` where you are
    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
-1. Let's test out this new implementation. First restart the server with this command:
+1. To test this new implementation, restart the server with this command:
 
    ```bash
    node app.js
    ```
 
-   In a separate terminal window run this command:
+1. In a separate terminal window run this command:
 
    ```bash
    node client-post.js
    ```
 
-   Then run this command to delete the record:
+1. Then run this command to delete the record:
 
    ```bash
    node client-delete-route.js
    ```
 
-   Now run this command to verify that the record has been removed:
+1. To check that the record is removed, run this command:
 
    ```bash
    node client-get.js
@@ -351,27 +367,39 @@ Congratulations, you've managed to implement a resource `products` where you are
    Connection closed
    ```
 
-   Note how you are using `client-delete-route.js` instead of `client-delete.js`. What's the difference? The difference lies in how the route is implemented. The first version of `app.js` relied on deletions being done towards a route like this `/products/<id>`, with the unique identifier being sent as a route parameter. When you use the `route()` method, it implements the deletion route differently and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route - you do you.
+   You used **client-delete-route.js** instead of **client-delete.js** in the previous exercise. The difference lies in how the route is implemented. The first version of **app.js** relies on deletions being done toward a route like this **/products/<id>**, with the unique identifier being sent as a route parameter.
 
-## Leverage route parameters and query parameters to limit response size
+   When you use the **route()** method, it implements the deletion route differently and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
 
-Data usually resides in a database or an endpoint. The size of that data can potentially be enormous. When a user then asks for all the data for a specific resource, that could be a huge response like thousands or even millions of records. A request like this can cause a massive strain on a database but it would also take a long time to serve that response. To avoid that scenario, it's considered good practice to *limit* the size of the response. A way to do that is by using route parameters so you can ask for specific records. Another way is to use query parameters to specify a subset of records. You will be taught both these techniques in this exercise.  
+## Leverage route and query parameters to limit response size
 
-1. Clone the repo at URL with the following command (no need to this again if you completed the exercise above):
+Data usually resides in a database or an endpoint. The size of the data can be enormous. When a user asks for all the data for a specific resource, the response can be thousands or even millions of records. A request like this can cause a massive strain on a database. It also takes a long time to serve the response.
+
+To avoid that scenario, it's good practice to *limit* the size of the response.
+
+- Use route parameters to ask for specific records.
+- Use query parameters to specify a subset of records.
+
+Both techniques are taught in this exercise.  
+
+1. Clone the repo at the URL with the following command:
+
+    > [!NOTE]
+    > If you completed the previous exercise, you don't need to do this again.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials
    ```
 
-   Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
+   This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you cloned. Type the following command:
+1. To inspect the repo you cloned, enter the following command:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-routing/parameters
    ```
 
-   The outline of the directory should look like so:
+   The outline of the directory should look like this:
 
    ```bash
    -| app.js
@@ -379,15 +407,15 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    -| package-lock.json
    ```
 
-   The `package.json` file contains a dependency `express`. Type the following command in the terminal to install that:
+ 1. The **package.json** file contains the dependency **express**. In the terminal, enter the following command to install it:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-   `npm` reads from the `dependencies` section in our `package.json` and you should be ready to continue.
+    **npm** reads from the **dependencies** section in the **package.json**.
 
-1. Time to inspect `app.js`. Open up said file. You should be seeing the following code:
+1. Open **app.js** to inspect it. The file should look like this:
 
    ```javascript
    const express = require('express')
@@ -423,9 +451,14 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
-   The above code contains an Express application. What you need to do is to implement two routes `/products/:id` and `/products`. The first route should only return a single product while the other one should return all products or as many products that are asked for by query parameters.
+### Implement two routes
 
-1. Implement the route `/products/:id` by replacing this code:
+The code contains an Express application. The next step is to implement two routes:
+
+- **/products/:id**: This route should return a single product.
+- **/products**: The route should return all products, or as many products that are asked for by query parameters.
+
+1. Implement the route **/products/:id** by replacing this code:
 
    ```javascript
    app.get("/products/:id", (req, res) => {});
@@ -439,13 +472,13 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    });
    ```
 
-1. Try running the app by typing the following command in the terminal:
+1. In the terminal, enter the following command to run the app:
 
    ```output
    node app.js
    ```
 
-   Then navigate to `http://localhost:3000/products/1` in the Browser. You should now see the following output:
+1. Open a browser and go to http://localhost:3000/products/1. You should see the following output:
 
    ```bash
    {
@@ -455,15 +488,15 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    }
    ```
 
-   Great, you implemented the route correctly. It's using the route parameter `id` to find a specific product.
+   Great, you implemented the route correctly. The app uses the route parameter **id** to find a specific product.
 
-1. Next, let's implement the route `/products`. Locate the following code:
+1. To implement the route **/products**, locate the following code:
 
    ```javascript
    app.get('/products', (req, res) => {})
    ```
 
-   Replace it with this code:
+1. Replace that code with this code:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -480,13 +513,13 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    })
    ```
 
-1. Lets test out this code by first starting our app by typing the following command in the terminal:
+1. In the terminal, enter the following command to start the app and test the code:
 
    ```bash
    node app.js
    ```
 
-1. Start up a Browser and navigate to `http://localhost:3000/products?page=1&pageSize=2`. You should see the following output in the browser:
+1. Open a browser and go to http://localhost:3000/products?page=1&pageSize=2. You should see the following output in the browser:
 
    ```output
    [{
@@ -501,7 +534,9 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    }]
    ```
 
-   What you see is the first two records out of the total three. This response means the query parameters `page` and `pageSize` is working to filter down the response size. Change the URL to `http://localhost:3000/products?page=2&pageSize=2`. Now you've changed page from one to two. The response should now look like this:
+   The response shows the first two of three records. This response means the query parameters, **page** and **pageSize**, filtered down the response size.
+
+1. Change the URL to http://localhost:3000/products?page=2&pageSize=2 to change the number of pages from 1 to 2. The response should look like this:
 
    ```output
    [{
@@ -511,4 +546,4 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    }]
    ```
 
-   As there are only three records in total, the second page should only contain one record so what you see is correct. Congrats you successfully applied query parameters and used that to limit the response.
+   Because there are only three records, the second page should only contain one record. Congratulations. You successfully applied query parameters to limit the response.

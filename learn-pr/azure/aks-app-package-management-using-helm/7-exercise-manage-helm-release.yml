@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.app-package-management-using-helm.exercise-manage-helm-release
+title: Exercise - Manage a Helm release
+metadata:
+  description: In this exercise, you'll manage a Helm release by installing, upgrading, and rolling back a Helm release for a custom-built ASP.NET Core web application.
+  title: Exercise - Manage a Helm release
+  author: cryophobia
+  ms.author: chrvaw
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 9/30/2020
+
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-manage-helm-release.md)]

@@ -4,12 +4,12 @@ title: Explain dynamic data masking
 metadata:
   title: Explain dynamic data masking
   description: "Explain dynamic data masking"
-  ms.date: 08/02/2020
+  ms.date: 12/14/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/6-explain-dynamic-data-masking.md)]

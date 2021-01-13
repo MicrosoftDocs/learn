@@ -1,25 +1,27 @@
-Development teams in your company are embracing AKS as a development platform. You realize you need to manage costs by enforcing business rules that define workload resource limits. You want to make sure developers can only deploy workloads within specific CPU and memory allocation limits. The system must prevent workloads that exceed the limits of running.
+Azure Policy for Kubernetes helps organizations meet governance and legal requirements, implement best practices, and establish organizational conventions for cloud environments.
 
-In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You want to limit the resources requested by workloads deployed by your development teams. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceeds the policy's resource parameters.
+Development teams in your company are embracing Azure Kubernetes Service (AKS) as a development platform. You realize you need to manage costs by enforcing business rules that define workload-resource limits. You want to make sure developers can deploy workloads only within specific limits for CPU and memory allocation. The system must prevent workloads that exceed those limits.
+
+In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceed the policy's resource parameters.
 
 ## Enable the ContainerService and PolicyInsights resource providers
 
-1. Sign in to Azure Cloud Shell with your Azure Account. Select the Bash version of Cloud Shell.
+1. Sign in to Azure Cloud Shell by using your Azure account. Select the Bash version of Cloud Shell.
 
     >[!div class="nextstepaction"]
     >[Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     >[!CAUTION]
     >
-    >This exercise makes use of preview features. Once you enable some preview features in Azure, defaults may be used for all AKS cluster created in the subscription. Test preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
+    >This exercise uses preview features. After you enable some preview features in Azure, defaults might be used for all AKS clusters created in the subscription. Test any preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
 
-1. Azure Policy for AKS requires the cluster version to be 1.14 or above. Run the following script to validate your AKS cluster version:
+1. Azure Policy for AKS requires the cluster version to be 1.14 or later. Run the following script to validate your AKS cluster version:
 
     ```azurecli
     az aks list
     ```
 
-    Make sure that the reported cluster version is >= 1.14
+    Make sure that the reported cluster version is 1.14 or later.
 
 1. Register the Azure Kubernetes Service provider by running the `az provider register` command:
 
@@ -39,15 +41,15 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     az feature register --namespace Microsoft.ContainerService --name AKS-AzurePolicyAutoApprove
     ```
 
-1. Check that the registration is successful by querying the feature list table using the `az feature list` command. The feature's registration can take several minutes to complete, and you'll have to check the result periodically.
+1. Check that the registration is successful by querying the feature-list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you'll have to check the result periodically.
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/AKS-AzurePolicyAutoApprove')].   {Name:name,State:properties.state}"
     ```
 
-    If the Cloud Shell session times out, then you can track the registration process via the Azure portal using the [preview onboarding page](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
+    If the Cloud Shell session times out, you can track the registration process via the Azure portal by using the [preview onboarding pane](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
 
-1. Run the `az provider register` command to propagate the update once you confirmed the feature list query command shows 'Registered'
+1. Run the `az provider register` command to propagate the update after you confirm that the feature-list query command shows 'Registered'.
 
     ```azurecli
     az provider register -n Microsoft.ContainerService
@@ -55,7 +57,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
 
 ## Install the Azure CLI preview extensions
 
-1. To work with this preview, you have to use the `aks-preview` Azure CLI preview extension for AKS. You can ignore the step if you've completed it in the previous exercise.
+1. To work with this preview, you have to use the `aks-preview` Azure CLI preview extension for AKS. (You can ignore this step if you completed it in the previous exercise.)
 
     Install the latest version of the Azure CLI preview extension by running the `az extension add` command:
 
@@ -69,7 +71,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     az extension show --name aks-preview --query [version]
     ```
 
-    You can update the extension by running the `az extension update` command if you've previously installed the extension and need to update to a newer version.
+    If you've previously installed the extension and need to update it to a newer version, run the `az extension update` command:
 
     ```azurecli
     az extension update --name aks-preview
@@ -77,7 +79,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
 
 ## Enable the Azure Policy Add-on
 
-1. Run the `az aks enable-addons` command to enable the `azure-policy` addon for your cluster.
+1. Run the `az aks enable-addons` command to enable the `azure-policy` add-on for your cluster:
 
     ```azurecli
     az aks enable-addons \
@@ -86,13 +88,13 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
         --resource-group $RESOURCE_GROUP
     ```
 
-1. You can verify that the azure-policy pod is installed in the kube-system namespace and gatekeeper pod is installed in the gatekeeper-system namespace by running the following `kubectl get pods` commands:
+1. Verify that the azure-policy pod is installed in the `kube-system` namespace and that the gatekeeper pod is installed in the `gatekeeper-system` namespace. To do so, run the following `kubectl get pods` commands:
 
     ```bash
     kubectl get pods -n kube-system
     ```
 
-    Here is an example of the output result generated by the command:
+    Here's an example of the output from the command:
 
     ```output
     NAME                                    READY   STATUS    RESTARTS   AGE
@@ -105,7 +107,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     kubectl get pods -n gatekeeper-system
     ```
 
-    Here is an example of the output result generated by the command:
+    Here's an example of the output from the command:
 
     ```output
     NAME                                            READY   STATUS    RESTARTS   AGE
@@ -113,7 +115,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     ...
     ```
 
-1. Finally, verify that the latest add-on is installed by running `az aks show` command to retrieve the configuration information for your cluster.
+1. Finally, verify that the latest add-on is installed by running `az aks show` command. This command retrieves the configuration information for your cluster.
 
     ```azurecli
     az aks show \
@@ -128,108 +130,110 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     v2
     ```
 
-    You're now ready to switch to the Azure portal to configure the **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy.
+    You're now ready to switch to the Azure portal to configure the policy named **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster**.
 
 ## Assign a built-in policy definition
 
-You configure the new Azure Policy using the Policy service in the Azure portal.
+To configure the new Azure Policy, use the Policy service in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. To locate the *Policy* service in the Azure portal, enter the term "policy" in the search bar at the top of the portal. **Select** the **Policy** service from the list of services, as shown in the example below.
+1. Locate the **Policy** service in the Azure portal. To do so, enter the term "policy" in the search bar at the top of the portal.
 
-    :::image type="content" source="../media/7-search-result.png" alt-text="Screenshot of the general Azure portal search box with a result that shows the Azure policy service.":::
+1. Select the **Policy** service from the list of services, as shown here:
 
-1. The Policy dashboard opens with an overview that shows all your assigned policies and the status of resources and how policies affect them. I've you haven't assigned any policies then the dashboard will be empty.
+    :::image type="content" source="../media/7-search-result.png" alt-text="Screenshot of the general Azure portal search box with a result that shows the Azure Policy service.":::
 
-1. Select the **Assignments** option under the Authoring section from the Policy service's navigation panel.
+    The Policy dashboard opens with an overview that shows all your assigned policies, the status of resources, and how the policies affect them. If you haven't assigned any policies, the dashboard will be empty.
+
+1. Select the **Assignments** option in the **Authoring** section of the **Policy** navigation panel:
 
     :::image type="content" source="../media/7-assignment-option.png" alt-text="Screenshot of the Policy service navigation panel that shows the location of the Assignments option.":::
 
-1. Recall from earlier that you have two options to create a policy assignment. You assign either an initiative or a policy. Select the **Assign policy** option.
+1. Recall from earlier discussion that you have two options to create a policy assignment: you assign either an initiative or a policy. Select the **Assign policy** option:
 
     :::image type="content" source="../media/7-assign-policy.png" alt-text="Screenshot that shows the new policy assignment option." lightbox="../media/7-assign-policy.png":::
 
-1. You create a policy by completing sets of information presented in the familiar Azure tab navigation view. The first tab captures basic information.
+1. Create your policy by completing sets of information presented in the familiar Azure tab navigation view. The first tab, **Basics**, captures basic information:
 
     | Option | Value |
     | --- | --- |
-    | **Scope** | Use the ellipses button to open the **Scope** panel. Select the **subscription** that holds your resource group. Then select the **akscostsavinggrp** resource group. |
+    | **Scope** | Use the ellipsis button to open the **Scope** panel. Select the **subscription** that holds your resource group. Then, select the **akscostsavinggrp** resource group. |
     | **Exclusions** | Leave this value empty. |
-    | **Policy definition** | Use the ellipses button to open the **Available Definitions** panel. Filter the selection using *CPU* as the term to search in the search box. Select the **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy from the list of options. |
-    | **Assignment name** | Leave this value as set by default. |
+    | **Policy definition** | Use the ellipsis button to open the **Available Definitions** panel. Filter the selection by using "CPU" as the term in the search box. Select the **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy from the list of options. |
+    | **Assignment name** | Leave this value set to the default. |
     | **Description** | Leave this value empty for this exercise. |
     | **Policy enforcement** | Make sure this option is enabled. |
     | **Assigned by** | Leave this value set to the default. |
 
-    Here is an example of the completed **Basics** tab.
+    Here's an example of the completed **Basics** tab:
 
-    :::image type="content" source="../media/7-complete-basic-tab.png" alt-text="Screenshot that shows the information captured in the basic tab.":::
+    :::image type="content" source="../media/7-complete-basic-tab.png" alt-text="Screenshot that shows the information captured in the Basics tab.":::
 
 1. Select the **Parameters** tab to specify the parameters for the policy.
 
-1. Set the following values for each of the parameter options.
+1. Set the following values for each of the parameter options:
 
     | Option | Value
     | --- | --- |
-    | **Max allowed CPU units** | Set the value to **200m**. The policy matches this value to both the workload resource request value and the workload limit value as specified in the workload manifest file. |
-    | **Max allowed memory bytes** | Set the value to **256Mi**. The policy matches this value to the workload resource request and limit values specified in the workload's manifest file. |
+    | **Max allowed CPU units** | Set the value to **200m**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
+    | **Max allowed memory bytes** | Set the value to **256Mi**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
     | **Effect** | Set the value to **deny**. |
-    | **Namespace exclusions** | Leave the **default** values as set as *kube-system; gatekeeper-system;azure-arc*. |
+    | **Namespace exclusions** | Leave the default values set to **kube-system;gatekeeper-system;azure-arc**. |
 
-    Here is an example of the completed **Parameters** tab.
+    Here's an example of the completed **Parameters** tab:
 
-    :::image type="content" source="../media/7-complete-parameters-tab.png" alt-text="Screenshot that shows the information captured in the parameters tab.":::
+    :::image type="content" source="../media/7-complete-parameters-tab.png" alt-text="Screenshot that shows the information captured in the Parameters tab.":::
 
-1. Select the **Remediation** tab. This tab allows you to select how the new policy impacts resources that already exist. By default, only newly created resources are affected by the new policy. Leave the default configuration as is on this tab.
+1. Select the **Remediation** tab. In this tab, you select how the new policy impacts resources that already exist. By default, only newly created resources are affected by the new policy. Leave the default configuration as it is on this tab.
 
-    Here is an example of the completed **Parameters** tab.
+    Here's an example of the completed **Remediation** tab:
 
-    :::image type="content" source="../media/7-complete-remediation-tab.png" alt-text="Screenshot that shows the information captured in the remediation tab.":::
+    :::image type="content" source="../media/7-complete-remediation-tab.png" alt-text="Screenshot that shows the information captured in the Remediation tab.":::
 
-1. Select the **Review + save** tab. Review the values selected and click on **Save**.
+1. Select the **Review + save** tab. Review the values you've chosen, and then select **Save**.
 
 ## Test resource requests
 
-The final step is to test the new policy by deploying a test workload with resource requests and limits set that violates the new policy.
+The final step is to test the new policy. You'll deploy a test workload that includes resource requests and limits that violate the new policy.
 
-1. Open the Azure Cloud Shell and make sure the Bash version of Cloud Shell is selected.
+1. Open Azure Cloud Shell and be sure to select the Bash version of Cloud Shell.
 
-1. Create a manifest file for the Kubernetes deployment called `test-policy.yaml` by using the integrated editor.
+1. Create a manifest file for the Kubernetes deployment by using the integrated editor. Call the file `test-policy.yaml`:
 
     ```bash
     code test-policy.yaml
     ```
 
     > [!TIP]
-    > Azure Cloud Shell includes an [integrated file editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, launch the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To directly open a file for quick editing, run `code test-policy.yaml` to open the editor without the file explorer.
+    > Cloud Shell includes an [integrated file editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, start the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To open your manifest file directly for quick editing, run `code test-policy.yaml`. Ths command opens the editor without the file explorer.
 
-1. Paste the following text in the file.
+1. Paste the following text into the file:
 
     ```yml
     apiVersion: v1
     kind: Pod
     metadata:
-        name: nginx
-        labels:
-            env: test
+      name: nginx
+      labels:
+        env: test
     spec:
-        containers:
-            - name: nginx
-              image: nginx
-              imagePullPolicy: IfNotPresent
-              resources:
-                requests:
-                    cpu: 500m
-                    memory: 256Mi
-                limits:
-                    cpu: 1000m
-                    memory: 500Mi
+      containers:
+      - name: nginx
+        image: nginx
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            cpu: 500m
+            memory: 256Mi
+          limits:
+            cpu: 1000m
+            memory: 500Mi
     ```
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. Select <kbd>Ctrl</kbd>+<kbd>Q</kbd> to close the editor.
 
-1. Apply the configuration by using the `kubectl apply` command and deploy the application in the `costsavings` namespace.
+1. Use the `kubectl apply` command to apply the configuration and deploy the application in the `costsavings` namespace:
 
     ```bash
     kubectl apply \
@@ -237,7 +241,7 @@ The final step is to test the new policy by deploying a test workload with resou
     -f test-policy.yaml
     ```
 
-    You'll see an output like this example.
+    You'll see output like this:
 
     ```output
     Error from server (
@@ -249,40 +253,40 @@ The final step is to test the new policy by deploying a test workload with resou
     [denied by azurepolicy-container-limits-52f2942767eda208f8ac3980dc04b548c4a18a2d1f7b0fd2cd1a7c9e50a92674] container <nginx> cpu limit <1> is higher than the maximum allowed of <200m>
     ```
 
-    Notice how the *admission webhook* `validation.gatekeeper.sh` denied the request to schedule the pod.
+    Notice how the admission webhook, `validation.gatekeeper.sh`, denied the request to schedule the pod.
 
-1. Open the manifest file and fix the resource request.
+1. Open the manifest file and fix the resource request:
 
     ```bash
     code test-policy.yaml
     ```
 
-    Paste the following text in the file.
+    Paste the following text in the file:
 
     ```yml
     apiVersion: v1
     kind: Pod
     metadata:
-        name: nginx
-        labels:
-            env: test
+      name: nginx
+      labels:
+        env: test
     spec:
-        containers:
-            - name: nginx
-              image: nginx
-              imagePullPolicy: IfNotPresent
-              resources:
-                requests:
-                    cpu: 200m
-                    memory: 256Mi
-                limits:
-                    cpu: 200m
-                    memory: 256Mi
+      containers:
+      - name: nginx
+        image: nginx
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            cpu: 200m
+            memory: 256Mi
+          limits:
+            cpu: 200m
+            memory: 256Mi
     ```
 
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
+1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. Select <kbd>Ctrl</kbd>+<kbd>Q</kbd> to close the editor.
 
-1. Apply the configuration by using the `kubectl apply` command and deploy the application in the `costsavings` namespace.
+1. Use the `kubectl apply` command to apply the configuration and deploy the application in the `costsavings` namespace:
 
     ```bash
     kubectl apply \
@@ -290,19 +294,19 @@ The final step is to test the new policy by deploying a test workload with resou
     -f test-policy.yaml
     ```
 
-    You'll see an output like this example.
+    You'll see output like this:
 
     ```output
     pod/nginx created
     ```
 
-1. You can *watch* the pods rolling out using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `costsavings` namespace.
+1. Use the `kubectl get pods` command to view the newly created pod. Make sure to query for pods in the `costsavings` namespace.
 
     ```bash
     kubectl get pods --namespace costsavings
     ```
 
-    In a few seconds, you'll see the pods transition to the `Running` state. Select `CTRL+C` to stop watching.
+    In a few seconds, you'll see the pods transition to the `Running` state. Select <kbd>CTRL</kbd>+<kbd>C</kbd>` to stop watching.
 
     ```output
     NAME    READY   STATUS    RESTARTS   AGE

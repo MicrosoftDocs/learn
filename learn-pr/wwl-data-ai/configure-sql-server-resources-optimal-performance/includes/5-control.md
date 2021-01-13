@@ -27,7 +27,7 @@ A workload group is a container for session requests based on their classificati
 
 ## Classifier function
 
-The classifier function is run at the time a connection is established to the SQL Server instance and classifies each connection into a given workload group. If the function returns a NULL, default, or the name of the non-existent workload group the session is transferred into the default workload group. Since the classifier is run at every connection, it should be tested for efficiency. Exhibit 1 shows a sample classifier function that classifies users based on their user name.
+The classifier function is run at the time a connection is established to the SQL Server instance and classifies each connection into a given workload group. If the function returns a NULL, default, or the name of the non-existent workload group the session is transferred into the default workload group. Since the classifier is run at every connection, it should be tested for efficiency. The following image shows a sample classifier function that classifies users based on their user name.
 
 ```SQL
 CREATE FUNCTION dbo.RGClassifier()

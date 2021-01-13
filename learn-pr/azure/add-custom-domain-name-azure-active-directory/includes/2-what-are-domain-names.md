@@ -1,4 +1,4 @@
-Domain names give you access to networked resources. The most obvious resources are websites on the internet. You can also associate services like Exchange Server, Office 365, and Azure Active Directory (Azure AD) with a domain name.
+Domain names give you access to networked resources. The most obvious resources are websites on the internet. You can also associate services like Exchange Server, Microsoft 365, and Azure Active Directory (Azure AD) with a domain name.
 
 Before you start to create company Azure apps and teach employees to use them, you want to see how Azure AD supports custom names.
 
@@ -14,7 +14,7 @@ Azure provides the default domain name onmicrosoft.com to all Azure AD organizat
 
 You can associate a domain name that your company owns with Azure AD to make the sign-in names more memorable and identifiable for your organization. In Azure AD, you add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users sign in with names in the format *username*@proseware.com.
 
-After users sign in, Azure AD's access management features control their access to external Microsoft services. Such services include Office 365 and the Azure portal. With Azure AD, users can also access your company's internal resources like intranets and cloud apps developed in-house.
+After users sign in, Azure AD's access management features control their access to external Microsoft services. Such services include Microsoft 365 and the Azure portal. With Azure AD, users can also access your company's internal resources like intranets and cloud apps developed in-house.
 
 ## Buy a domain name
 
@@ -22,9 +22,9 @@ You can buy a domain name by using Azure App Service domains or another domain n
 
 ## Add a domain name to Azure
 
-If your organization already added a custom domain for a Microsoft Office 365 subscription, you likely don't need to add it to Azure AD. The domain is listed and available to use as the primary domain.
+If your organization already added a custom domain for a Microsoft 365 subscription, you likely don't need to add it to Azure AD. The domain is listed and available to use as the primary domain.
 
-If you set up Office 365 in an organization different than your Azure subscription, or if you want to use a different domain, you might need to add a custom domain to Azure AD.
+If you set up Microsoft 365 in an organization different than your Azure subscription, or if you want to use a different domain, you might need to add a custom domain to Azure AD.
 
 You can add up to 900 managed domain names to your Azure AD organization.
 

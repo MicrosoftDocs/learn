@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.create-manage-cognitive-services
+metadata:
+  title: Create and manage Cognitive Services
+  description: "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and manage Cognitive Services
+summary: Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.
+abstract: |
+  After completing this module, students will be able to:
+  Create Cognitive Services accounts
+  Manage Cognitive Services
+prerequisites: |
+  Active Azure account
+  Ability to navigate the Azure portal
+iconUrl: /learn/achievements/create-and-manage-cognitive-services.svg
+levels:
+- beginner
+roles:
+- administrator
+- ai-engineer
+- data-scientist
+- developer
+- devops-engineer
+- solution-architect
+- student
+products:
+- azure
+- azure-cognitive-services
+- azure-container-instances
+- azure-container-registry
+units:
+- learn.wwl.create-manage-cognitive-services.introduction-to-accounts
+- learn.wwl.create-manage-cognitive-services.create-an-account
+- learn.wwl.create-manage-cognitive-services.keys
+- learn.wwl.create-manage-cognitive-services.service-resources
+- learn.wwl.create-manage-cognitive-services.monitor-services-using-diagnostics-logging
+- learn.wwl.create-manage-cognitive-services.knowledge-check
+- learn.wwl.create-manage-cognitive-services.summary
+badge:
+  uid: learn.wwl.create-manage-cognitive-services.badge

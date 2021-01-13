@@ -2,10 +2,10 @@
 uid: learn.wwl.detect-language-text-analytics-api
 metadata:
   title: Detect language with the text analytics API
-  description: "Language detection is useful for content stores that collect arbitrary text, where language is unknown. You can parse the results of this analysis to determine which language is used in the input document."
-  ms.date: 07/24/2020
+  description: "Detect language with the text analytics API"
+  ms.date: 01/05/2021
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Detect language with the text analytics API
@@ -18,7 +18,7 @@ prerequisites: |
   - Knowledge of navigating the Azure portal
   - Knowledge of at least one programming language such as C#, Python, or JavaScript
   - Basic understanding of REST APIs and JSON
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/detect-language-with-the-text-analytics-api.svg
 levels:
 - intermediate
 roles:

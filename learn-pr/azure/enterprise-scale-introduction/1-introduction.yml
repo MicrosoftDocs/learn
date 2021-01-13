@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-introduction.1-introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 09/30/2020
+  author: JefferyMitchell
+  ms.author: jemitche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -32,7 +32,7 @@ You can use Azure Active Directory Connect (Azure AD Connect) to perform synchro
 
 When you run Azure AD Connect, the following occurs:
 
-- New users, groups, and contact objects in on-premises AD DS are added to Azure AD. However, licenses for cloud services such as Office 365 are not automatically assigned to these objects.
+- New users, groups, and contact objects in on-premises AD DS are added to Azure AD. However, licenses for cloud services such as Microsoft 365 are not automatically assigned to these objects.
 - Attributes of existing users, groups, or contact objects that are modified in on-premises AD DS are modified in Azure AD. However, not all on-premises AD DS attributes are synchronized to Azure AD. You can configure a set of attributes that synchronize to Azure AD by using Synchronization Manager component of Azure AD Connect.
 - Existing users, groups, and contact objects that are deleted from the on-premises AD DS are deleted from Azure AD.
 - Existing user objects that are disabled on-premises are disabled in Azure. However, licenses are not automatically unassigned.

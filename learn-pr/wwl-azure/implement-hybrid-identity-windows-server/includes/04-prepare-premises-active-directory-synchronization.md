@@ -1,5 +1,5 @@
 
-Before IT staff at Contoso deploys Azure AD Connect, it's essential that they check the on-premises AD DS and related technologies for potential issues, and any issues that are discovered are remediated. This is especially important if they implement directory synchronization as an identity service for Office 365.
+Before IT staff at Contoso deploys Azure AD Connect, it's essential that they check the on-premises AD DS and related technologies for potential issues, and any issues that are discovered are remediated. This is especially important if they implement directory synchronization as an identity service for Microsoft 365.
 
 ## Pre-deployment checks
 
@@ -8,10 +8,10 @@ Pre-deployment checks should include:
 - Analyzing the on-premises environment for invalid characters in AD DS object attributes, and for incorrect user principal names (UPNs).
 - Performing domain email discovery and user counts.
 - Identifying domain-functional levels and schema extensions, and identifying custom attributes in use.
-- Identifying proxy servers used for Microsoft Exchange or Skype for Business, if you deploy Azure AD Connect as a part of an Office 365 deployment.
-- Identifying Microsoft SharePoint domains, if you deploy Azure AD Connect as part of an Office 365 deployment.
+- Identifying proxy servers used for Microsoft Exchange or Skype for Business, if you deploy Azure AD Connect as a part of a Microsoft 365 deployment.
+- Identifying Microsoft SharePoint domains, if you deploy Azure AD Connect as part of a Microsoft 365 deployment.
 - Evaluating client for SSO readiness.
-- Recording network port use, and DNS records related to Office 365 (if you deploy Azure AD Connect as part of an Office 365 deployment).
+- Recording network port use, and DNS records related to Microsoft 365 (if you deploy Azure AD Connect as part of a Microsoft 365 deployment).
 
 After you complete these checks, key remediation tasks include:
 - Removing duplicate `proxyAddress` and `userPrincipalName` attributes.
@@ -20,7 +20,7 @@ After you complete these checks, key remediation tasks include:
 
 UPNs that are used for SSO can contain letters, numbers, periods, dashes, and underscores; no other character types are allowed.
 
-If you're deploying Office 365 and your deployment includes plans for SSO, you should ensure that UPN names meet this requirement before SSO is rolled out. Domains used for SSO and directory synchronization must be routable, which means that you cannot use local domain names, such as Contoso.local.
+If you're deploying Microsoft 365 and your deployment includes plans for SSO, you should ensure that UPN names meet this requirement before SSO is rolled out. Domains used for SSO and directory synchronization must be routable, which means that you cannot use local domain names, such as Contoso.local.
 
 ## Active Directory health-check tools
 
@@ -28,7 +28,7 @@ To have directory synchronization work properly, you must ensure that on-premise
 
 ### IdFix tool
 
-The Microsoft Office 365 IdFix tool enables you to identify and remediate the majority of object synchronization errors in Active Directory, including common issues such as duplicate or malformed `proxyAddresses` and `userPrincipalName`.
+The Microsoft 365 IdFix tool enables you to identify and remediate the majority of object synchronization errors in Active Directory, including common issues such as duplicate or malformed `proxyAddresses` and `userPrincipalName`.
 
 You can select the OUs that you want IdFix to check, and you can fix common errors within the tool itself. Common errors might include problems such as invalid characters that might have been introduced during scripted user imports to attributes such as `proxyAddresses` and `mailNickname`.
 

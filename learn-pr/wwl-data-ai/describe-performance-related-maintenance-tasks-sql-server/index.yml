@@ -2,8 +2,8 @@
 uid: learn.wwl.describe-performance-related-maintenance-tasks-sql-server
 metadata:
   title: Describe performance-related maintenance tasks in SQL Server
-  description: "Implement tasks for both IaaS and PaaS to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database."
-  ms.date: 08/02/2020
+  description: "Describe performance-related maintenance tasks in SQL Server"
+  ms.date: 12/10/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
   - Basic understanding of structure and usage of SQL Server indexes.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/describe-performance-related-maintenance-tasks-in-sqlserver.svg
 levels:
 - intermediate
 roles:
@@ -35,6 +35,7 @@ units:
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.maintain-indexes
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.maintain-statistics
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.describe-automatic-tuning
+- learn.wwl.describe-performance-related-maintenance-tasks-sql-server.exercise
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.knowledge-check
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.summary
 badge:

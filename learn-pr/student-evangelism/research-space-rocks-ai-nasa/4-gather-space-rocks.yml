@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.research-space-rocks-ai-nasa.4-gather-space-rocks
+metadata:
+  title: The challenges of collecting space rocks
+  description: Learn about the challenges for scientists to gather space rocks and some of the techniques they use.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: The challenges of collecting space rocks
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-gather-space-rocks.md)]

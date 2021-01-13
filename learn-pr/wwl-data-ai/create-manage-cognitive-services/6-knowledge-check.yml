@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-cognitive-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You have an Azure Cognitive Service resource created. You want to prevent users from changing the properties. Which lock would you use?"
+    choices:
+    - content: "Read-Only"
+      isCorrect: true
+      explanation: "Correct. Authorized users are able to read properties on the resource but they cannot modify or delete the resource."
+    - content: "Locked"
+      isCorrect: false
+      explanation: "Incorrect. There is no Locked type of lock to add on a resource."
+    - content: "Delete"
+      isCorrect: false
+      explanation: "Incorrect. Authorized users are able to read and modify the resource, but they cannot delete the resource."
+  - content: "What is the purpose of a metric on an Azure Cognitive Service resource?"
+    choices:
+    - content: "They provide severity levels for alerts."
+      isCorrect: false
+      explanation: "Incorrect. Metrics are not used to provide severity levels."
+    - content: "They are numerical values that describe some aspect of a system at a point in time."
+      isCorrect: true
+      explanation: "Correct. Metrics are numerical values that describe some aspect of a system at a point in time. Azure Monitor can capture metrics in near real time. The metrics are collected at regular intervals and are useful for alerting because of their frequent sampling."
+    - content: "They notify users when events happen."
+      isCorrect: false
+      explanation: "Incorrect. Metrics may be used as part of an alerting system, but they do not provide notification functionality by themselves."
+  - content: "How do you log time-stamped information for your resource?"
+    choices:
+    - content: "Link the resource to a CosmosDB instance."
+      isCorrect: false
+      explanation: "Incorrect. While you might be able to use a CosmosDB instance for logging purposes, there is no automatic logging through a simple linking process."
+    - content: "Create a metric and point the datasource property to an Azure blob storage location."
+      isCorrect: false
+      explanation: "Incorrect. This is not the correct way to log time-stamped information for your resource."
+    - content: "Create a Log Analytics Workspace."
+      isCorrect: true
+      explanation: "Correct. You log data from Azure Monitor in a Log Analytics workspace. Azure provides an analysis engine and a rich query language."

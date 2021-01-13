@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.describe-controls
+title: Describe adaptive application control
+metadata:
+  title: Describe adaptive application control
+  description: "Describe adaptive application control"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-controls.md)]

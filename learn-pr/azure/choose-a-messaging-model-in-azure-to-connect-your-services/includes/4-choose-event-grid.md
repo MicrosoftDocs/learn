@@ -3,7 +3,7 @@ Many applications use a publish-subscribe model to notify distributed components
 In this architecture, the publisher of the sound file doesn't need to know about any of the subscribers interested in the shared music. Also, we want to have a one-to-many relationship where we can have multiple subscribers who can optionally decide whether they are interested in this new song. Azure Event Grid is a perfect solution for this sort of architecture.
 
 ## What is Azure Event Grid?
-Azure Event Grid is a fully-managed event routing service running on top of Azure Service Fabric. Event Grid distributes _events_ from different sources, such as Azure Blob storage accounts or Azure Media Services, to different handlers, such as Azure Functions or Webhooks. Event Grid was created to make it easier to build event-based and serverless applications on Azure.
+Azure [Event Grid](https://azure.microsoft.com/services/event-grid/) is a fully-managed event routing service running on top of Azure [Service Fabric](https://azure.microsoft.com/services/service-fabric/). Event Grid distributes _events_ from different sources, such as Azure [Blob storage accounts](https://azure.microsoft.com/services/storage/blobs/) or Azure [Media Services](https://azure.microsoft.com/services/media-services/), to different handlers, such as Azure [Functions](https://azure.microsoft.com/services/functions/) or Webhooks. Event Grid was created to make it easier to build event-based and serverless applications on Azure.
 
 Event Grid supports most Azure services as a publisher or subscriber and can be used with third-party services. It provides a dynamically scalable, low-cost, messaging system that allows publishers to notify subscribers about a status change. The following illustration shows Azure Event Grid receiving messages from multiple sources and distributing them to event handlers based on subscription.
 
@@ -95,7 +95,7 @@ The following object types in Azure can receive and handle events from Event Gri
 - **Azure Functions:** Custom code that runs in Azure, without the need for explicit configuration of a host virtual server or container. Use an Azure function as an event handler when you want to code a custom response to the event.
 - **Webhooks:** A webhook is a web API that implements a push architecture.
 - **Azure Logic Apps:** An Azure logic app hosts a business process as a workflow.
-- **Microsoft Flow:** Flow also hosts workflows, but it is easier for non-technical staff to use.
+- **Microsoft Power Automate:** Flow also hosts workflows, but it is easier for non-technical staff to use.
 
 ## Should you use Event Grid?
 Use Event Grid when you need these features:

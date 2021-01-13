@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-networking.2-ip-addressing
+metadata:
+  title: Enterprise-scale IP address planning
+  description: Enterprise-scale IP address planning
+  ms.date: 09/21/2020
+  author: jknightly
+  ms.author: joknight
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enterprise-scale IP address planning
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-ip-addressing.md)]

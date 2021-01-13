@@ -1,22 +1,22 @@
-The Node.js "path" module and `__dirname` global variable are two ways to define and compose file system paths.
+The Node.js *path* module and `__dirname` global variable are two ways to define and compose file system paths.
 
-In the previous exercise, you wrote a _stunning_ program that iterates through a folder to find any of the "sales.json" files inside.
+In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files inside.
 
-In this exercise, you'll use the "path" module and `__dirname` global variable to improve that program so that it will find any file with a ".json" extension.
+In this exercise, you'll use the *path* module and `__dirname` global variable to improve the program so that it will find any file with a .json extension.
 
-## Include the "path" module
+## Include the path module
 
-1. At the very top of the `index.js` file, include the "path" module.
+At the top of the *index.js* file, include the *path* module.
 
-   ```javascript
-   const path = require("path");
-   ```
+```javascript
+const path = require("path");
+```
 
-## Using the current directory
+## Use the current directory
 
-In the current "index.js" code, you're passing the static location of the "stores" folder. We'll change that code to use the `__dirname` value instead of passing a static folder name.
+In the current index.js code, you're passing the static location of the *stores* folder. We'll change that code to use the `__dirname` value instead of passing a static folder name.
 
-1. In the `main` method, create a variable to store a path to the "stores" directory, using the `__dirname` constant.
+1. In the `main` method, create a variable to store a path to the *stores* directory by using the `__dirname` constant.
 
    ```javascript
    async function main() {
@@ -27,15 +27,15 @@ In the current "index.js" code, you're passing the static location of the "store
    }
    ```
 
-1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
+1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
 
-1. Execute the program from the command-line
+1. Run the program from the command line.
 
    ```bash
    node index.js
    ```
 
-   Notice that the path that is now listed for the files is the full system path. This is because the `__dirname` constant returns the full path to the current location.
+   Notice that the path that's now listed for the files is the full system path. This is because the `__dirname` constant returns the full path to the current location.
 
    ```bash
    [
@@ -46,20 +46,20 @@ In the current "index.js" code, you're passing the static location of the "store
    ]
    ```
 
-## Joining paths
+## Join paths
 
-Instead of concatenating folder names to make a new path to search, you'll change the code to use the `path.join` method so that this code will work across operating systems.
+Instead of concatenating folder names to make a new path to search, you'll change the code to use the `path.join` method. This code will then work across operating systems.
 
-1. In the "findFiles" method, change the `findFiles` method to use `path.join`.
+1. Change the `findFiles` method to use `path.join`.
 
    ```javascript
    // search this directory for files (this is recursion!)
    await findFiles(path.join(folderName, item.name));
    ```
 
-1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
+1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
 
-1. Execute the program from the command-line
+1. Run the program from the command line.
 
    ```bash
    node index.js
@@ -67,17 +67,17 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
    The output will be the same as the previous step, but the program is now more robust because it uses `path.join` instead of concatenating strings.
 
-## Finding all .json files
+## Find all .json files
 
-Instead of looking for just `sales.json` files, this program needs to search for any file with an extension of ".json". To do that, use the `path.extname` method to check the file extension.
+Instead of looking for just *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `path.extname` method to check the file name extension.
 
-1. Execute the following command in the terminal to rename the "stores/201/sales.json" file to "stores/sales/totals.json".
+1. Run the following command in the terminal to rename the *stores/201/sales.json* file to *stores/sales/totals.json*.
 
    ```bash
    mv stores/201/sales.json stores/201/totals.json
    ```
 
-1. In the `findFiles` method, change the `if` statement to check just the file extension. Use the `path.join` method to compose the full path to the file.
+1. In the `findFiles` method, change the `if` statement to check just the file name extension. Use the `path.join` method to compose the full path to the file.
 
    ```javascript
    if (path.extname(item.name) === ".json") {
@@ -86,15 +86,15 @@ Instead of looking for just `sales.json` files, this program needs to search for
    }
    ```
 
-1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
+1. Select the <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> keys to save the file.
 
-1. Execute the program from the command-line
+1. Run the program from the command line.
 
    ```bash
    node index.js
    ```
 
-   The output now shows all of .json files that are in any of the store ID directories.
+   The output now shows all the .json files in any of the store ID directories.
 
    ```bash
    [
@@ -105,11 +105,11 @@ Instead of looking for just `sales.json` files, this program needs to search for
    ]
    ```
 
-Great job! You've used the "path" and `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
+Great job! You've used the *path* module and the `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here is the completed code. Remove everything in `index.js` and replace it with this solution.
+If you got stuck at any point in this exercise, here's the completed code. Remove everything in *index.js* and replace it with this solution.
 
 ```javascript
 const fs = require("fs").promises;

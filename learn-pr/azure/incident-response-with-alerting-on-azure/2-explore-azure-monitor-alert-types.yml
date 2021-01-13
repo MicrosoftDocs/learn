@@ -21,7 +21,7 @@ quiz:
           explanation: Incorrect. Log and alert type are not part of the composition of an alert rule.
         - content: Metrics, logs, application, operating system
           isCorrect: false
-          explanation: Incorrect. None of these make up an alert rule.
+          explanation: Incorrect. None of these elements make up an alert rule.
         - content: Resource, condition, actions, alert details
           isCorrect: true
           explanation: Correct. These elements make up an alert rule.

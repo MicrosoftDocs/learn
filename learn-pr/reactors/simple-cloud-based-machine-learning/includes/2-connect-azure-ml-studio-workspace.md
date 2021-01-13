@@ -23,7 +23,7 @@ Let's take a look at the data we uploaded to Azure Machine Learning. The data is
 ***
 References
 
-1. _Moro, S., Cortez, P., and Rita, P. (June 2014) [A Data-Driven Approach to Predict the Success of Bank Telemarketing](http://media.salford-systems.com/video/tutorial/2015/targeted_marketing.pdf). Decision Support Systems, Elsevier, 62:22-31_.
+1. _Moro, S., Cortez, P., and Rita, P. (June 2014) [A Data-Driven Approach to Predict the Success of Bank Telemarketing](http://repositorium.sdum.uminho.pt/bitstream/1822/30994/1/dss-v3.pdf). Decision Support Systems, Elsevier, 62:22-31_.
 
 
-[^1]: <http://media.salford-systems.com/video/tutorial/2015/targeted_marketing.pdf> "Moro, S., Cortez, P., and Rita, P. (June 2014), *A Data-Driven Approach to Predict the Success of Bank Telemarketing*. Decision Support Systems, Elsevier, 62:22-31"
+[^1]: <http://repositorium.sdum.uminho.pt/bitstream/1822/30994/1/dss-v3.pdf> "Moro, S., Cortez, P., and Rita, P. (June 2014), *A Data-Driven Approach to Predict the Success of Bank Telemarketing*. Decision Support Systems, Elsevier, 62:22-31"
