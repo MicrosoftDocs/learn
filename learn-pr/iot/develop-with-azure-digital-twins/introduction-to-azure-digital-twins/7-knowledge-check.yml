@@ -58,7 +58,7 @@ quiz:
       explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into an IoT hub.
  
 
-  - content: 'After you create a knowledge graph of your digital twin models and connect the models with relationships, what's the best method of gaining insights into the future of your business?'
+  - content: "After you create a knowledge graph of your digital twin models and connect the models with relationships, what's the best method of gaining insights into the future of your business?"
     choices: 
     - content: 'A. Connect the telemetry output from an IoT hub, via event routes, to the knowledge graph.'
       isCorrect: false
@@ -80,7 +80,7 @@ quiz:
     choices: 
     - content: 'C#'
       isCorrect: false
-      explanation: C# might well be used to write a client app for digital twins, but it isn't the language used to create a model.
+      explanation: C# might be used to write a client app for digital twins, but it isn't the language used to create a model.
     - content: 'SQL'
       isCorrect: false
       explanation: The digital twin query language is SQL-like, but it isn't the language used to create a model.
