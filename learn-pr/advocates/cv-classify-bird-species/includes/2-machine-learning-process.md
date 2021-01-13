@@ -4,13 +4,13 @@ We'll use the Azure Cognitive Services Custom Vision service to create a machine
 
 It's likely that you've heard of AI, machine learning, or deep learning. Let's identify the terms, so we understand how they're different.
 
-:::image type="content" source="../media/machine-learning-types.png" alt-text="A graphical depiction of the nested relationship between A I, machine learning, and deep learning." border="false":::
-
 - **Artificial intelligence (AI)**: AI is the process of programming a computer to mimic human intelligence. AI includes *machine learning*. The idea of AI is as simple as using a machine to mimic human intelligence, but AI offers many different techniques. The technique this module focuses on is machine learning.
 
 - **Machine learning**: Machine learning is a subset of AI. Machine learning uses techniques to train machines based on *experience*. Think of experience as a dataset, with right and wrong answers already given. In machine learning, the computer uses the answers that are supplied to improve how the computer completes specific tasks. The field of machine learning also includes *deep learning*.
 
 - **Deep learning**: Deep learning is a subset of machine learning that's based on *artificial neural networks (ANNs)*. The learning process is *deep* because ANNs consists of multiple layers: input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a specific predictive task. The neural network structure enables a machine to learn through its own data processing.
+
+  :::image type="content" source="../media/machine-learning-types.png" alt-text="A graphical depiction of the nested relationship between A I, machine learning, and deep learning." border="false":::
 
 When we build a model, we're trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
 
@@ -24,6 +24,8 @@ In the Custom Vision service in Azure, transfer learning works by adding a layer
 
 To better understand the process of building a machine learning model, here's a step-by-step overview of the process. We'll complete this process to create a machine learning model.
 
+:::image type="content" source="../media/machine-learning-process.png" alt-text="A graphical depiction of six steps in the process of building a machine learning model." border="false":::
+
 1. *Ask a pointed question.* Our question is, can we identify a bird's species from an image of a bird, to help document different trends and patterns of bird habits?
 
 1. *Prepare data.* We have a dataset of bird images from the Cornell Lab that's clean and prepared, so this step is taken care of. If you built a different model, you would need to find and prepare data for training your model. You would want to find data that would help you answer the pointed question that you're interested in.
@@ -35,7 +37,5 @@ To better understand the process of building a machine learning model, here's a 
 1. *Test the model by using unseen (new) data.* It's important to test our model by adding new data. We'll do an internet search and find some test images to see how the model performs with data it wasn't trained with. We'll discuss later in the module why testing this way is important.
 
 1. *Deploy the model.* Custom Vision gives us some options when it's time to deploy our model. We can deploy to an endpoint to integrate the model or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option that's available in the Custom Vision portal.
-
-   :::image type="content" source="../media/machine-learning-process.png" alt-text="A graphical depiction of six steps in the process of building a machine learning model." border="false":::
 
 Let's get started building our model!

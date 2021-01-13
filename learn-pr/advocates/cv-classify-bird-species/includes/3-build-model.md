@@ -84,10 +84,10 @@ When the deployment finishes, select **Go to resource**.
 
 Now, it's time to upload the images that we'll use to train the machine learning model. There are two ways to upload images:
 
-- In the Custom Vision portal, go to, upload, and then tag images.
-- In a tool like Jupyter Notebook, use the images that are included in the SDK. 
+- In the Custom Vision portal, select, upload, and then tag images.
+- In a tool like Jupyter Notebook, use the images that are included in the Custom Vision SDK. 
 
-When you have a large amount of data, image classes, and tags to upload, it's faster to use the SDK. However, you can choose one of the options that are described in the next sections. Complete the steps to upload the images in the dataset the way that works best for you. 
+When you have a large amount of data, image classes, and tags to upload, it's faster to use the Custom Vision SDK. However, you can choose one of the options that are described in the next sections. Complete the steps to upload the images in the dataset the way that works best for you. 
 
 ### Upload images option 1: Custom Vision portal
 
@@ -116,7 +116,7 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
     > [!NOTE]
     > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
 
-1. Add images and tags for a bird species folder:
+1. Add images and tags for a bird species:
 
    1. In your Custom Vision project, select **Add images**.
 
@@ -136,9 +136,9 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
        :::image type="content" source="../media/custom-vision-tag-photos.png" alt-text="Screenshot that shows elements to select to add a tag description to uploaded photos in Custom Vision.":::
 
-1. Repeat the preceding steps to upload the photos in each bird species folder.
+1. Repeat the preceding step to upload the photos in each bird species folder in the downloaded dataset.
 
-### Upload images option 2: SDK
+### Upload images option 2: Custom Vision SDK
 
 The Custom Vision SDK is available in the following programming languages: Python, .NET, Node.js, Go, and Java. We'll use Python and Jupyter Notebook. If you don't already have these tools installed, we recommend that you get them with an Anaconda installation. You get Python and Jupyter Notebook when you [download Anaconda](https://www.anaconda.com/?azure-portal=true).
 
