@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

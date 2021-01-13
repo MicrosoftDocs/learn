@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.tbd-libraries.4-write-oracle
-title: Write an oracle to determine a missing digit
+title: Write an oracle to validate ISBNs
 metadata:
-  title: Write an oracle to determine a missing digit
-  description: TBD.
+  title: Write an oracle to validate ISBNs
+  description: Write the oracle for later use in Grover's algorithm which performs an arithmetic mapping to a target register in order to flag the states corresponding to a valid ISBN.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 12
 content: |
   [!include[](includes/4-write-oracle.md)]

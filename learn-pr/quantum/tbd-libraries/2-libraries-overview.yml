@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.tbd-libraries.2-libraries-overview
-title: "Q# Libraries"
+title: Q# Libraries
 metadata:
-  title: "Q# Libraries"
-  description: "Describes what Q# libraries are, how they are distributed, and how to add/use them to specific Q# projects."
+  title: Q# Libraries
+  description: Describes what Q# libraries are, how they are distributed, and how to add/use them to specific Q# projects.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/2-libraries-overview.md)]

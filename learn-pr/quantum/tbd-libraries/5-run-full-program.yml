@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.tbd-libraries.5-run-full-program
-title: "Run Grover's algorithm"
+title: Run Grover's algorithm
 metadata:
-  title: "Run Grover's algorithm"
+  title: Run Grover's algorithm
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/5-run-full-program.md)]

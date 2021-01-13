@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.tbd-libraries.6-write-documentation
-title: "Write your own documentation"
+title: Write your own documentation
 metadata:
-  title: "Write your own documentation"
+  title: Write your own documentation
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/6-write-documentation.md)]

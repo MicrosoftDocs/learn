@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.tbd-libraries.3-api-docs
-title: "Using the Q# API documentation" 
+title: Using the Q# API documentation
 metadata:
-  title: "Using the Q# API documentation"
-  description: "Describes how to find and use the Q# API reference documentation."
+  title: Using the Q# API documentation
+  description: Describes how to find and use the Q# API reference documentation.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/3-api-docs.md)]

@@ -2,6 +2,10 @@
 
 But what if other space explorers find themselves in a similar predicament? 
 You can share your code on the Galactic Information Technology Hub, but they would certainly appreciate it being nicely documented. 
+
+The ability to write documentation allows quantum space crew members to contribute to the growth of the QDK and the Q# libraries with their own programs and insights. 
+By doing so, other space crew members can more easily solve similar problems, saving both time and resources for future missions. 
+
 In this unit you will learn how to write API documentation comments for your Q# operations, functions, and user-defined types. 
 
 ## Documentation comments
