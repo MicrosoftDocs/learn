@@ -1,10 +1,10 @@
-In this module you have learned about some common identity security threats, as well as the basic identity concepts. You learned about identity as the new security perimeter, as well as authentication, authorization, and the role of Active Directory. You also looked at the concept of federated services to access resources that belong to another organization.
+In this module, you have learned about some common identity security threats and basic identity concepts. You learned about identity as the new security perimeter, and authentication, authorization, and the role of Active Directory. You also looked at the concept of federated services to access resources that belong to another organization.
 
 Now that you have completed this module, you will be able to:
 
 - Describe the concept of identity as a security perimeter.
 - Learn about authentication and authorization.
-- Describe identity related services.
+- Describe identity-related services.
 
 ## Learn More
 
