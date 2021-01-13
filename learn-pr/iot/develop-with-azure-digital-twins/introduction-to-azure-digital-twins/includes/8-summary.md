@@ -16,5 +16,5 @@ In this module, you learned about:
   - [Deep Dive: Azure Digital Twins Updated Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Azure-Digital-Twins-Updated-Capabilities)
   - [Ansys Twin Builder Integration with Azure Digital Twins](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Ansys-Twin-Builder-Integration-with-Azure-Digital-Twins)
   - [Bentley iTwin and iModel.js Integration with Azure Digital Twins](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Bentley-iTwin-and-iModeljs-Integration-with-Azure-Digital-Twins)
-  - [Deep Dive: Integrating 3D Models and IoT data with iTwin and Azure Digital Twins](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Integrating-3D-Models-and-IoT-data-with-iTwin-and-Azure-Digital-Twins)
+  - [Deep Dive: Integrating 3D Models and IoT Data with iTwin and Azure Digital Twins](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Integrating-3D-Models-and-IoT-data-with-iTwin-and-Azure-Digital-Twins)
   - [Azure Digital Twins technical deep dive video featuring the WillowTwin solution](https://aka.ms/live/deepdive/azure-digital-twins-WillowTwin)
