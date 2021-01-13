@@ -11,13 +11,13 @@ In this step, you'll use Azure CLI to retrieve file system logs to your cloud sh
 
 1. In the Azure Cloud Shell, to download the logs to **contosofashions.zip** in the cloud share storage, replacing **\<_your-number_\>** with the random number that was generated to uniquely identify your app, run the following command.
 
-   ```azurecli
+    ```azurecli
    az webapp log download --log-file contosofashions.zip  --resource-group <rgn>[sandbox resource group name]</rgn> --name contosofashions<your-number>
    ```
 
 1. In the Azure Cloud Shell, to show the log files contained in the downloaded **contosofashions.zip** file, run the following command.
 
-   ```
+    ```
    zipinfo -1 contosofashions.zip
    ```
 
@@ -39,7 +39,7 @@ In this step, you'll use Azure CLI to retrieve file system logs to your cloud sh
 
 In this step, to download file system logs to your computer, you'll use the Kudu console.
 
-1. On the Azure portal menu or from the **Home** page, select **App Services**.
+1. On the Azure portal menu, or from the **Home** page, select **App Services**.
 
 1. In the **App Services** list, select **contosofashions\<_your-number_\>**.
 

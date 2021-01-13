@@ -39,7 +39,6 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
     | Under **Network connectivity** section: |
     | Connectivity method | **Public endpoint** (*default*) |
 
-
     :::image type="content" source="../media/tab.png" alt-text="Screenshot of the Networking tab of the Create SQL Database pane with settings selected.":::
 
 1. Select **Next : Additional settings**, and configure the following settings.
