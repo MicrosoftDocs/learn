@@ -44,6 +44,6 @@ quiz:
     - content: "A server installed with the NPS server role."
       isCorrect: false
       explanation: "That's incorrect. This device acts as either a RADIUS server or RADIUS proxy."
-    - content: "A VPN server.{That's correct. A VPN server, and devices such as wireless access points, RD Gateway servers, are known as RADIUS clients.}}"
+    - content: "A VPN server."
       isCorrect: true
-      explanation: "correct choice"
+      explanation: "That's correct. A VPN server, and devices such as wireless access points, RD Gateway servers, are known as RADIUS clients."
