@@ -23,7 +23,7 @@
 
 ## Summary
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+First, you'll learn about all the pre-requisites that need to be factored in for the Azure VMware Solution deployment. From there, you'll learn how to deploy an Azure VMware Solution resource plus all steps required to ensure the service is configured correctly. Once the Azure VMware Solution is ready and properly configured, you'll learn how to configure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment directly to Azure VMware Solution. Learning all these steps will prepare your company to meet the demands of the business.
 
 ## Learning objectives
 
@@ -47,7 +47,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Imagine you work for a healthcare company who runs many of their production workloads on a VMware platform. IT operations are spread between a number of different offices. There are a few trends that have surfaced in recent months, as some locations have equipment nearing end of life, so hardware refresh decisions need to be made in short order. Additionally, your company is not able to procure new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in exploring involves migrating VMware workloads to the cloud without changing virtualization platforms or altering existing operational patterns. In this module, you will learn how to plan, deploy, and connect Azure VMware Solution to your existing VMware infrastructure on-premises.
+    Imagine you work for a healthcare company who runs many of their production workloads on a VMware platform. IT operations are spread between many different offices. There are a few trends that have surfaced in recent months. Some locations have equipment nearing end of life, so hardware refresh decisions need to be made in short order. Additionally, your company isn't able to get new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in exploring involves migrating VMware workloads to the cloud without changing virtualization platforms or altering existing operational patterns. In this module, you'll learn how to plan, deploy, and connect Azure VMware Solution to your existing VMware infrastructure on-premises.
 
 1. **Plan Azure VMware Solution Deployment**
 
@@ -56,7 +56,7 @@ Identify the subtasks of *module title*
         - Eligibility criteria: EA, CSP, register provider
         - Migration assessment: Azure Migrate
         - Network planning: VNet/ExpressRoute considerations, routing/subnet configurations, required ports, DHCP/DNS resolution considerations
-        - Solution components: software versions, nodes, private clouds, clusters, host maintenance and lifecycle management
+        - Solution components: software versions, nodes, private clouds, clusters, host maintenance, and lifecycle management
 
     **Knowledge check**
 
@@ -66,7 +66,7 @@ Identify the subtasks of *module title*
         - /30 - false
         - /31 - false
         
-    - What is the minimum amount of nodes that can be deployed for Azure VMware Solution?
+    - What is the minimum number of nodes that can be deployed for Azure VMware Solution?
 
         - 4 - false
         - 8 - false
@@ -90,7 +90,7 @@ Identify the subtasks of *module title*
         - Owner - false
         - Contributor - true
 
-    - If DHCP on your NSX-T segments is required, what is one of the ways you can configure this within your environment?
+    - If DHCP on your NSX-T segments is required, what is one of the ways to configure within your environment?
 
         - Create a DHCP server and relay traffic to that server - true
         - Create a NAT rule - false
