@@ -93,8 +93,7 @@ transistors you use junctions of semiconductors to represent controllable bits,
 in transmons you use junctions of superconductors to represent controllable
 qubits.
 
-[FIGURE TRANSISTOR VS TRANSMON: I want to put a figure here comparing a
-transitor representing a bit, and a transmon representing a qubit]
+![alt_text=Diagram comparing a transmon with a transistor. The transmon can be prepared in a quantum superposition while the transistor only admits discrete classical levels.](../media/2-transmon-vs-transistor.png)
 
 There are other variants of superconducting circuits that don't use transmons
 but similar technologies. However, transmons are the key component in most
@@ -105,7 +104,7 @@ temperatures imply more noise, these quantum computers work at very low
 temperatures, near absolute zero. This is why these chips are usually contained
 in big cryostats.
 
-[FIGURE OF CRYOSTATE QUANTUM COMPUTER]
+![alt_text=Simplified diagram of the cryostat of a superconducting quantum computer.](../media/2-superconducting-quantum-computer.png)
 
 ### Other types of quantum computers
 
@@ -133,7 +132,7 @@ Azure Quantum is a cloud computing hub where you can connect to different
 industry leading providers to use their most advanced quantum computers.
 
 ![Alt_text=Diagram of the Azure Quantum
-service](../media/azure-quantum-flow-diagram.png)
+service](../media/2-azure-quantum-flow-diagram.png)
 
 You just need an Azure subscription to start submitting quantum computing jobs
 to Azure Quantum. These jobs will be queued by the provider to be run in the
