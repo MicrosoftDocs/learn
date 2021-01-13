@@ -1,6 +1,6 @@
 Your team has decided to use the capabilities of Azure Event Hubs to manage and process the increasing transaction volumes coming through your system.
 
-An Event Hub is an Azure resource, so your first step is to create a new hub in Azure and configure it to meet the specific requirements of your apps.
+An Event Hub is an Azure resource, so your first step is to create a new hub in Azure, and configure it to meet the specific requirements of your apps.
 
 ## What is an Azure Event Hub?
 
@@ -38,7 +38,7 @@ An Event Hub **consumer group** represents a specific view of an Event Hub data 
 
 There are three pricing tiers for Azure Event Hubs: Basic, Standard, and Dedicated. The tiers differ in terms of supported connections, the number of available Consumer groups, and throughput. When using Azure CLI to create an Event Hubs namespace, if you don't specify a pricing tier, the default of **Standard** (20 Consumer groups, 1000 Brokered connections) is assigned.
 
-## Create and configure a new Azure Event Hubs
+## Create and configure new Azure Event Hubs
 
 There are two main steps when creating and configuring new Azure Event Hubs. The first step is to define the Event Hubs **namespace**. The second step is to create an Event Hub in that namespace.
 
@@ -46,21 +46,20 @@ There are two main steps when creating and configuring new Azure Event Hubs. The
 
 An Event Hubs namespace is a containing entity for managing one or more Event Hubs. Creating an Event Hubs namespace typically involves the following configuration:
 
-1. Define namespace-level settings.
-    
-    Certain settings such as namespace capacity (configured using **throughput units**), pricing tier, and performance metrics are defined at the namespace level. These settings apply to all the Event Hubs within that namespace. If you don't define these settings, a default value is used: *1* for capacity and *Standard* for pricing tier.
+### Define namespace-level settings
 
-    Keep the following aspects in mind:
-    
-    - You can't change the throughput unit after you set it.
-    - You must balance your configuration against your Azure budget expectations.
-    - You might consider configuring different Event Hubs for different throughput requirements. For example, if you have a sales data app and you're planning for two Event Hubs, it would make sense to use a separate namespace for each hub.  
-    
-        You'll configure one namespace for high throughput collection of real-time sales data telemetry and one namespace for infrequent event log collection. This way, you only need to configure (and pay for) high throughput capacity on the telemetry hub.
+  Certain settings such as namespace capacity (configured using **throughput units**), pricing tier, and performance metrics are defined at the namespace level. These settings apply to all the Event Hubs within that namespace. If you don't define these settings, a default value is used: *1* for capacity and *Standard* for pricing tier.
+
+  Keep the following aspects in mind:
+
+- You must balance your configuration against your Azure budget expectations.
+- You might consider configuring different Event Hubs for different throughput requirements. For example, if you have a sales data app, and you're planning for two Event Hubs, it would make sense to use a separate namespace for each hub.  
+
+  You'll configure one namespace for high throughput collection of real-time sales data telemetry and one namespace for infrequent event log collection. This way, you only need to configure (and pay for) high throughput capacity on the telemetry hub.
 
 1. Select a unique name for the namespace. The namespace is accessible through this URL: *_namespace_.servicebus.windows.net*
 
-1. Defining the following optional properties:
+1. Define the following optional properties:
 
     - Enable Kafka. This option enables Kafka apps to publish events to the Event Hub.
     - Make this namespace zone redundant. Zone-redundancy replicates data across separate data centers with their independent power, networking, and cooling infrastructures.
@@ -82,9 +81,9 @@ After you create the Event Hubs namespace, you can create an Event Hub. When cre
 The following parameters are required to create an Event Hub:
 
 - **Event Hub name** - Event Hub name that is unique within your subscription and:
-  - Is between 1 and 50 characters long
-  - Contains only letters, numbers, periods, hyphens, and underscores
-  - Starts and ends with a letter or number
+  - Is between 1 and 50 characters long.
+  - Contains only letters, numbers, periods, hyphens, and underscores.
+  - Starts and ends with a letter or number.
 - **Partition Count** -  The number of partitions required in an Event Hub (between 2 and 32). The partition count should be directly related to the expected number of concurrent consumers and can't be changed after the hub has been created. The partition separates the message stream so that consumer or receiver apps only need to read a specific subset of the data stream. If not defined, this value defaults to *4*.
 - **Message Retention** - The number of days (between 1 and 7) that messages will remain available if the data stream needs to be replayed for any reason. If not defined, this value defaults to *7*.
 
@@ -92,7 +91,7 @@ You can also optionally configure an Event Hub to stream data to an Azure Blob s
 
 ### Azure CLI commands to create an Event Hub
 
-To create a new Event Hub with the Azure CLI, you'll use the `az eventhubs eventhub` command set. Here's a brief description of the subcommands we'll be using:
+To create a new Event Hub with the Azure CLI, you'll run the `az eventhubs eventhub` command set. Here's a brief description of the subcommands we'll be using.
 
 | Command | Description |
 |---------|-------------|
@@ -101,4 +100,4 @@ To create a new Event Hub with the Azure CLI, you'll use the `az eventhubs event
 
 ## Summary
 
-To deploy Azure Event Hubs, you must configure an Event Hubs namespace and then configure the Event Hub itself. In the next section, you'll go through the detailed configuration steps to create a new namespace and Event Hub.
+To deploy Azure Event Hubs, you must configure an Event Hubs namespace, and then configure the Event Hub itself. In the next unit, you'll go through the detailed configuration steps to create a new namespace and Event Hub.
