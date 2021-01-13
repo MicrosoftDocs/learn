@@ -16,11 +16,7 @@ When you execute code, Spark SQL uses Catalyst's general tree transformation fra
 
 1. Physical planning
 
-<<<<<<< HEAD
-1. Generating code to compile parts of the query to Java bytecode
-=======
 1. Generating code to compile parts of the query to Java bytecode.
->>>>>>> dd4ef9aafcfec760d2aac4bff9b22d0dda34c33c
 
 In the physical planning phase, Catalyst may generate multiple plans, and compare them based on cost. All other phases are purely rule-based.
 
