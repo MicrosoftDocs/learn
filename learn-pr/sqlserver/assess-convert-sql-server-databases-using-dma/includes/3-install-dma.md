@@ -1,6 +1,6 @@
 **Microsoft Data Migration Assistant (DMA)** allows companies to check the compatibility of their databases, before doing upgrades.
 
-Suppose you're a database administrator, and need to upgrade databases in your main office location, and in regional offices. After installing the DMA on your local machine, you can connect to local SQL Servers, and the ones in each remote office.
+In your law firm, you need to upgrade databases in your main office location, and in regional offices. Because there are many diverse databases, and because you want to consider migrating to database solutions in Azure, you've decided to use DMA to investigate the compatibility issues. After installing the DMA on your local machine, you can connect to local SQL Servers, and the ones in each remote office and assess them for migration.
 
 In this unit, you'll see how to install the DMA on your local machine.
 
@@ -18,4 +18,4 @@ After installing DMA, you'll need credentials and network access to the SQL Serv
 - When doing an upgrade, DMA requires credentials for the source and target servers
 - For database upgrades, the account for the source server must have the **CONTROL SERVER** permission, and the credentials for the target server must be a member of the **sysadmin** server role
 
-The DMA should be installed on your client machine. You can then connect to your on-premises SQL Server instances and cloud-based Azure SQL Databases. In practice, you'll ideally run the DMA against the databases in your development or test environments, before upgrading your production databases.
+The DMA should be installed on your client machine. You can then connect to your on-premises SQL Server instances and cloud-based Azure SQL Databases. In practice, you'll ideally run the DMA against the databases in your development or test environments, before upgrading your production databases. 

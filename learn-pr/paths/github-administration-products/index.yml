@@ -11,7 +11,7 @@ metadata:
 title: GitHub fundamentals - Administration basics and product features.
 summary: In this learning path, learn the basics of GitHub administration and discover the products that GitHub offers.
 prerequisites: Familiarity with personal and organizational authentication technologies and processes would be helpful
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/github-administration-products.svg
 levels:
 - intermediate
 roles:
@@ -25,4 +25,4 @@ modules:
 - learn.github.github-introduction-administration
 - learn.github.github-introduction-products
 trophy:
-  uid: learn.generic-trophy.trophy
+  uid: learn.github-administration-products.trophy

@@ -56,7 +56,7 @@ Several tools and services are available to help you plan and complete the four 
 
 ### Deploy cloud infrastructure targets
 
-You'll need destination systems and services on Azure to migrate to. The scope of your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to create the resources in Azure beforehand. The two tools you'll use to do the migration, Azure Site Recovery and the Azure Database Migration Service, will create the required Azure resources for you.
+You'll need destination systems and services on Azure to migrate to. The scope of your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to create the resources in Azure beforehand. The two tools you'll use to do the migration, Azure Migrate and the Azure Database Migration Service, will create the required Azure resources for you.
 
 In other situations, you may need to set up resources in Azure to have them available as a migration destination.
 
