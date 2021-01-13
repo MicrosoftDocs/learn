@@ -39,7 +39,7 @@ control the computation flow with an `if` statement. However, this statement can
 be used in a BMF target as long as you don't include any `return` or `set`
 statement within the `if` block.
 
-For example, the operation above could be used in a BMF target, but de following
+For example, the operation above could be used in a BMF target, but the following
 cannot:
 
 ```qsharp

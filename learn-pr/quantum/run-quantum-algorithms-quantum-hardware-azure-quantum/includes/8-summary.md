@@ -9,7 +9,7 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 systems to represent the qubits.
 * Trapped ion and superconducting qubit quantum computers are the two most prominent platforms for quantum computing nowadays.
 * You can use the Azure Quantum CLI to submit and manage jobs to quantum computers.
-* The Azure Quantum system offers three different kinds of profiles, Full, No Control Flow, and Basic Measurement Feedback to handle the control flow limitations of early quantum computers.
+* The Azure Quantum system offers three different kinds of profiles to handle the control flow limitations of early quantum computers: Full, No Control Flow, and Basic Measurement Feedback.
 
 ## Learn more
 
