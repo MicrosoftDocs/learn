@@ -4,7 +4,7 @@ title: SQL workloads to Azure virtual machine migration options
 metadata:
   title: SQL workloads to Azure virtual machine migration options
   description: "SQL workloads to Azure virtual machine migration options"
-  ms.date: 03/31/2020
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-azure-virtual-machine-migration-options.md)]
-quiz:
-  title: "Knowledge check"
-  questions:
-  - content: "You've a SQL Server 2012 instance with a database that contains over 1.2TB of compressed data. You want to perform a backup of the database so that it can be used as part of a database migration. What type of disk volume should the backup be made to?"
-    choices:
-    - content: "A dynamic volume"
-      isCorrect: false
-      explanation: "That's incorrect. The maximum size of a virtual machine disk is 1 TB, so you can't use a dynamic volume."
-    - content: "A striped volume"
-      isCorrect: true
-      explanation: "That's correct. The maximum size of a virtual machine disk is 1 TB, so a striped volume should be used to restore the data too."
-    - content: "A mirrored volume"
-      isCorrect: false
-      explanation: "That's incorrect. The maximum size of a virtual machine disk is 1 TB, so you can't use a mirrored volume."
-  - content: "You want to do a migration that needs to move over 50 TB of data, over a slow network connection, and downtime isn't a consideration. Which migration approach should you use?"
-    choices:
-    - content: "Attach and detach database"
-      isCorrect: false
-      explanation: "That's incorrect. You could use this approach, there's a better option when the size of the databases is very large."
-    - content: "Always On availability groups"
-      isCorrect: false
-      explanation: "That's incorrect. This answer is correct if nearly zero downtime is required, you're running on SQL Server 2014 or higher, and you have a fast network connection."
-    - content: "Import and export service"
-      isCorrect: true
-      explanation: "That's correct. The Import/Export service is specifically designed for this scenario and lets you ship hard drives to your nearest Azure data center."

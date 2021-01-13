@@ -8,7 +8,7 @@ Some of the examples include:
 
 Among the most powerful components of Spark are Spark SQL. At its core lies the Catalyst optimizer. This extensible query optimizer supports both rule-based and cost-based optimization.
 
-When you execute code, Spark SQL uses Catalyst's general tree transformation framework in four phases, as follows:
+When you execute code, Spark SQL uses Catalyst's general tree transformation framework in four phases, as follows.
 
 1. Analyzing a logical plan to resolve references
 
