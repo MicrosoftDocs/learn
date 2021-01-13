@@ -1,7 +1,7 @@
 Modern classical computers are based on transistor technologies made from semiconductors to implement classical logic operations. Quantum computers take
 radically different approaches to exploit the properties of quantum systems, to implement qubits and quantum operations.
 
-In this unit, you will learn about different challenges we face to build a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed. 
+In this unit, you will learn about different challenges we face to build a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed.
 
 ## Harnessing quantum systems to make computations
 
@@ -39,7 +39,7 @@ computation.
 Building devices that meet these five criteria is one of the most demanding
 engineering challenges ever faced by humankind. However, in the recent years
 astounding advances in condensed matter physics and quantum optics are allowing
-companies and universities to build the first working version of quantum
+companies and universities to build the first working versions of quantum
 computers. Microsoft is partnering with some of the best-in-class quantum computer
 manufacturers around the world to give you access to the latest quantum
 computing solutions through Azure Quantum. Let's see an overview of the

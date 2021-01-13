@@ -12,7 +12,7 @@ For example, you can use Q# and Azure Quantum to verify the validity of quantum 
 
 Although the reduced number of qubits may be a limitation to run practical quantum applications today, these early quantum computers are a very useful tools to test the working principle of quantum algorithms.
 
-Sometimes, hardware results differ from those of the simulations since simulators often take assumptions that don't hold in the real systems. These differences need to be taken in account in the programs to make them runnable in real quantum computers.
+Sometimes, hardware results differ from those of the simulations since simulators often take assumptions that don't hold in real systems. These differences need to be taken in account in the programs to make them runnable in real quantum computers.
 
 Testing simplified versions of quantum algorithms in hardware helps to discover these limitations and adapt the programs to overcome them. By testing your algorithms in the quantum computers of today, you can prepare your programs for the future.
 

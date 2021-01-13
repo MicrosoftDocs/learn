@@ -1,8 +1,7 @@
 
 You are ready to connect to Earth and start solving problems on a real quantum computer. The programs you create in Q# such as the quantum random number generator (QRNG) for secure passwords will run using real qubits rather than simulated ones like you did in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/).
 
-To do so in this part you learn how to submit a job to Azure Quantum. 
-
+To do so in this part you learn how to submit a job to Azure Quantum.
 
 ## Create a quantum workspace
 
