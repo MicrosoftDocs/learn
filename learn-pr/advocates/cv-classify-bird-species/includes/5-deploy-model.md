@@ -73,7 +73,7 @@ When the model is trained and performing with satisfactory accuracy, the model i
 
 When you post to the published endpoint, you get a result that looks like the following example. The probability of each tag the Custom Vision model was trained on is shown, sorted by the highest score. The model recognizes only the type of birds it was trained to recognize. If you post an image of a bird that the model wasn't trained to recognize, the model predicts one of the bird species it was trained on as the species of the new bird.
 
-```Python
+```output
 American Crow: 99.18%
 Common Grackle: 25.34%
 Red-tailed Hawk (Dark morph): 4.09%
