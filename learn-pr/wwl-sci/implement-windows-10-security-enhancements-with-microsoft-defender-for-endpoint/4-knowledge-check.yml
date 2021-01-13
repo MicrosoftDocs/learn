@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/13/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which solution is used to control that the applications must earn trust in order to run."
+    choices:
+    - content: "Exploit protection"
+      isCorrect: false
+      explanation: "Incorrect. Application control is used for trust."
+    - content: "[Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/controlled-folders)"
+      isCorrect: false
+      explanation: "Incorrect. Application control is used for trust."
+    - content: "Application control"
+      isCorrect: true
+      explanation: "Correct. Application control is used for trust."
+  - content: "Which option below is not a configurable ASR rule."
+    choices:
+    - content: "Block PowerShell from executing."
+      isCorrect: true
+      explanation: "Correct.  PowerShell execution can't be blocked with an ASR rule."
+    - content: "Block process creations originating from PSExec and WMI commands"
+      isCorrect: false
+      explanation: "Incorrect.  This option is a configurable ASR rule."
+    - content: "Block executable content from email client and webmail"
+      isCorrect: false
+      explanation: "Incorrect.  This option is a configurable ASR rule."
+  - content: "Which of the following is not a deployment option."
+    choices:
+    - content: "PowerShell"
+      isCorrect: false
+      explanation: "Incorrect. This is a valid deployment option."
+    - content: "ASRConfig.exe"
+      isCorrect: true
+      explanation: "Correct.  This is not a valid option."
+    - content: "Microsoft Endpoint Configuration Manager"
+      isCorrect: false
+      explanation: "Incorrect. This is a valid deployment option."
