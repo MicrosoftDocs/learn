@@ -6,13 +6,13 @@ Azure AD allows you to define two different types of groups.
 
 1. **Microsoft 365 groups**. These groups provide collaboration opportunities by giving members access to a shared mailbox, calendar, files, SharePoint site, and more. This option also lets you give people outside of your organization access to the group. This option is available to users as well as admins.
 
-## Viewing available groups
+## View available groups
 
-You can view all groups through the **Groups** item under the **Manage** section from the Azure AD dashboard. A new Azure AD install won't have any groups defined.
+You can view all groups by selecting **Groups** under the **Manage** section from the Azure AD dashboard. A new Azure AD install won't have any groups defined.
 
 ![Screenshot that depicts all the existing groups.](../media/M1-Groups1.png)
 
-## Adding groups to Azure AD
+## Add groups to Azure AD
 
 The same options are available to create groups in Azure AD as we saw with users. The Azure portal is the easiest way to create groups. You must select the group type (Security or Microsoft 365), assign a unique group name, description and a _membership type_.
 
@@ -28,7 +28,7 @@ The membership type field can be one of three values:
 
 Finally, you can select group owner(s) that can administer the group, and member(s) that will belong to the group. Both of these can contain other groups as well as individual users.
 
-### Scripting group creation
+### Script group creation
 
 You can also use Azure PowerShell to add a group using the **New-AzureADGroup** command as shown below.
 
@@ -36,7 +36,7 @@ You can also use Azure PowerShell to add a group using the **New-AzureADGroup** 
 New-AzureADGroup -Description "Marketing" -DisplayName "Marketing" -MailEnabled $false -SecurityEnabled $true -MailNickName "Marketing"
 ```
 
-## Changing the membership for a group
+## Change membership for a group
 
 Once a group is created, you can add or remove users (or groups) from it by editing the group membership by selecting the group and using the options under the **Manage** section.
 
