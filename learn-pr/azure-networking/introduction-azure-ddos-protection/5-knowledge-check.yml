@@ -45,6 +45,6 @@ quiz:
     - content: "Use this data to analyze the attack."
       isCorrect: true
       explanation: "That's correct. You should use the logged data to analyze the attack."
-    - content: "Immediately clear your logs during the attack"
+    - content: "Immediately clear your logs during the attack."
       isCorrect: false
       explanation: "That's incorrect. You shouldn't clear your logs during the attack."
