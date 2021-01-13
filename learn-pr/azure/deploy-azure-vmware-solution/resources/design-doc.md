@@ -1,22 +1,25 @@
 # Title
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+- Onboard Azure VMware Solution and connect to an existing VMware vSphere environment on-premises
 
 ## Role(s)
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+- Administrator
+- Solution Architect
 
 ## Level
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+- Intermediate
 
 ## Product(s)
 
-- *Add the product(s)*
+- Azure VMware Solution
+- Azure Virtual Networking
 
 ## Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+- Experience managing VMware infrastructure.
+- Basic knowledge of network concepts.
 
 ## Summary
 
@@ -24,63 +27,106 @@
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+1. Plan for an Azure VMware Solution deployment
+1. Deploy Azure VMware Solution
+1. Connect Azure VMware Solution to an on-premises network
 
 ## Chunk your content into subtasks
 
 Identify the subtasks of *module title*
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+| Unit Task   | Conceptual unit title | Practice unit title |
+| :---------- | :-------------------- | :------------------ |
+| 1. Scenario | Introduction          | N/A                 |
+| 2. Plan | Plan Azure VMware Solution Deployment | N/A |
+| 3. Deploy | Deploy Azure VMware Solution | N/A |
+| 4. Connect | Connect to on-premises VMware vSphere environment | N/A |
+| 5. Summary  | Summary               | N/A                 |
 
 ## Outline the units
 
-*Add more units as needed for your content*
-
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+    Imagine you work for a healthcare company who runs many of their production workloads on a VMware platform. IT operations are spread between a number of different offices. There are a few trends that have surfaced in recent months, as some locations have equipment nearing end of life, so hardware refresh decisions need to be made in short order. Additionally, your company is not able to procure new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in exploring involves migrating VMware workloads to the cloud without changing virtualization platforms or altering existing operational patterns. In this module, you will learn how to plan, deploy, and connect Azure VMware Solution to your existing VMware infrastructure on-premises.
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+1. **Plan Azure VMware Solution Deployment**
 
-1. **Learning-content unit title**
-
-    List the content that will enable the learner to *subtask*:
-
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+    - Plan deployment
+        - Azure components: subscription, resource group, number of nodes, vCenter/NSX-T admin passwords
+        - Eligibility criteria: EA, CSP, register provider
+        - Migration assessment: Azure Migrate
+        - Network planning: VNet/ExpressRoute considerations, routing/subnet configurations, required ports, DHCP/DNS resolution considerations
+        - Solution components: software versions, nodes, private clouds, clusters, host maintenance and lifecycle management
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    - At a minimum, which CIDR block does Azure VMware Solution private clouds require?
 
-    - Question type
-    - Question type
+        - /22 - true
+        - /30 - false
+        - /31 - false
+        
+    - What is the minimum amount of nodes that can be deployed for Azure VMware Solution?
 
-1. **Exercise - exercise unit title**
+        - 4 - false
+        - 8 - false
+        - 3 - true
 
-    List the steps which apply the learning content from previous unit:
+1. **Deploy Azure VMware Solution**
 
-    1. Step
-    1. Step
-    1. Step
+    - Deploy AVS resource
+    - Create Bastion or a jump host
+    - Connect to VNet with ExpressRoute
+    - Verify network routes are advertised
+    - Connect and sign into vCenter and NSX-T from the Bastion host
+    - Confirm NSX-T configurations: advertised NSX-T segment, DHCP services to NSX-T segment(optional), add VM on NSX-T segment, verify connectivity
+    - Placeholder: video/demo showing the creation of AVS and methods to ensure all settings are configured correctly.
+
+    **Knowledge check**
+
+    - At a minimum, which role is required at the subscription level to deploy Azure VMware Solution?
+
+        - Virtual Machine Contributor - false
+        - Owner - false
+        - Contributor - true
+
+    - If DHCP on your NSX-T segments is required, what is one of the ways you can configure this within your environment?
+
+        - Create a DHCP server and relay traffic to that server - true
+        - Create a NAT rule - false
+        - Set a static MAC address on a virtual machine - false
+
+1. **Connect to on-premises VMware vSphere environment**
+    - Establish ExpressRoute Global Reach connection
+    - Create an ExpressRoute authorization key for the AVS private cloud
+    - Peer private cloud to on-premises using authorization key
+    - Verify on-premises network connectivity
+    - Placeholder: video/demo showing the configurations required to connect AVS in Azure to an on-premises environment.
+
+    **Knowledge check**
+
+    - In order for on-premises network traffic to reach Azure VMware Solution, which component is required?
+
+        - VPN - false
+        - ExpressRoute Global Reach - true
+        - Load Balancer - false
+
+    - Which resource is required to peer the Azure VMware Solution private cloud to on-premises?
+
+        - Customer provided ExpressRoute - true
+        - Application Gateway - false
+        - Network Virtual Appliance - false
 
 1. **Summary**
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+    In this module, you learned how to effectively onboard Azure VMware Solution and connect the Azure deployment to an on-premises VMware vSphere environment. First, you examined all pre-requisites to deploy Azure VMware Solution. From there, you learned about all the steps involved with deploying Azure VMware Solution in Azure. Lastly, you learned how to connect the Azure VMware Solution private cloud to your on-premises VMware vSphere environment. Knowing how to successfully build and configure Azure VMware Solution will help your company out
 
 ## Notes
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
+[Azure VMware Solution](https://azure.microsoft.com/services/azure-vmware/)
+
+[Azure VMware Solution documentation](https://docs.microsoft.com/azure/azure-vmware/)
+
+[Azure VMware Solution - VMware documentation] (https://cloud.vmware.com/azure-vmware-solution)
+
+Placeholder: Azure VMware Solution Learn path URL
