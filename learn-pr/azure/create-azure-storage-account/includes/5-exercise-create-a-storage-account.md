@@ -53,15 +53,16 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Property | Value |
     |---|---|
     | Under **Recovery** section: |
-    | Turn on soft delete for blobs | *disable*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
-    | Turn on soft delete for file shares | *disable*. File share soft delete lets you recover your blob data more easily at the folder level. |
-
+    | Turn on soft delete for blobs | *Disabled*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
+    | Turn on soft delete for file shares | *Disabled*. File share soft delete lets you recover your blob data more easily at the folder level. |
+    
 1. Select **Next : Advanced**. Enter the following information.
 
     | Property | Value |
     |---|---|
     | Under **Security** section: |
-    | Secure transfer required | *Enabled*.  This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *Enabled* as using HTTPS over the network is considered a best practice. |
+    | Secure transfer required | *Enabled*. This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
+    | Blob public access | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
     | Minimum TLS version | *Version 1.2* from dropdown. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
     | Under **Blob storage** section: |
     | Allow Blob public access | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
@@ -82,13 +83,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. After you've reviewed the settings, select **Create** to provision the storage account.
 
-1. Select **Next : Tags**. Here, you associate key/value pairs to the account for your categorization and determine if a feature is available to any Azure resource.
-
-1. Select **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here.
-
-1. After you've reviewed the settings, select **Create** to provision the storage account.
-
-    It will take a few minutes to deploy the account.
+   It will take a few minutes to deploy the account.
 
 1. Select the **Storage accounts** link in the left sidebar.
 
