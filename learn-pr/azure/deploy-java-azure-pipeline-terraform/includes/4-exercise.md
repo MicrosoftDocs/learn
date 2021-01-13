@@ -12,11 +12,9 @@ https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
 
 ## Workflow
 
-Inside the project directory, you'll see a directory called `terraform` and a file called `main.ts` in it.
+Inside the project directory, you'll see a directory called `terraform` and a file called `main.tf` in it.
 
-<!--Todo explain the main.ts sections-->
-
-The following **main.tf** sections define your module's configuration:
+Lets look at some sections that define your module's configuration:
 
 - Provider: A Terraform configuration file starts off with the specification of the provider. When using Azure, you'll specify the Azure provider (azurerm) in the provider block
 - Terraform: Terraform version
@@ -25,7 +23,8 @@ The following **main.tf** sections define your module's configuration:
 - Resource: Describes resources & dependencies
 - Module: Reusability & complexity abstraction
 
-In your **main.tf** file, you'll see the following content:
+Lets look at which sections we need in our **main.tf** file:
+(The comments in green highlight the different sections and their roles in our module)
 
 ```yml
 provider "azurerm" {
@@ -115,10 +114,10 @@ resource "azurerm_app_service" "main" {
     linux_fx_version = "JAVA|8-jre8"
   }
 
+  # Application specific environment variables
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
 
-    # These are app specific environment variables
     "SPRING_PROFILES_ACTIVE"     = "mysql"
     "SPRING_DATASOURCE_URL"      = "jdbc:mysql://${azurerm_mysql_server.main.fqdn}:3306/${azurerm_mysql_database.main.name}?useUnicode=true&characterEncoding=utf8&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
     "SPRING_DATASOURCE_USERNAME" = "${azurerm_mysql_server.main.administrator_login}@${azurerm_mysql_server.main.name}"
