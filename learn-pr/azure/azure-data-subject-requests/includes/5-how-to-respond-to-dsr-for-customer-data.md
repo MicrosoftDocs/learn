@@ -2,7 +2,7 @@ Once a data controller receives a DSR, they must provide a response as soon as p
 
 ## Scenarios for DSR in Azure and Office 365 for customer data
 
-The first step for all scenarios is to perform discovery and locate the personal information in question. The action requested in the DSR will determine the next step. The location of the personal information and the data type will determine the technical process and tools you can use to fulfill the DSR. 
+The first step for all scenarios is to perform discovery and locate the personal information in question. The action requested in the DSR will determine the next step. The location of the personal information and the data type will determine the technical process and tools you can use to fulfill the DSR.
 
 |Request type|Step 1|Step 2|
 |------|------|------|
@@ -12,33 +12,33 @@ The first step for all scenarios is to perform discovery and locate the personal
 |Right to be forgotten|Discover|Delete|
 |Right of portability|Discover|Export/Receive|
 
-Some DSRs might be more complex than others. There might even be multiple requests from the same person. Data controllers have the right to validate the identity of the data subject prior to fulfilling their DSR. However, the data subject does not have to specify the reason for the DSR.
+Some DSRs might be more complex than others. There might even be multiple requests from the same person. Data controllers have the right to validate the identity of the data subject prior to fulfilling their DSR. However, the data subject doesn't have to specify the reason for the DSR.
 
 ### Example one: DSR against customer data in Azure
 
-A customer of Contoso who resides in France has called into the toll-free number established for DSRs. They want to enact their "**right to erasure**", which is also known as their "right to be forgotten". You need to remove all of their personal information from Azure. To accomplish this, you’ll perform the following tasks for this DSR:
+A customer of Contoso who resides in France has called into the toll-free number established for DSRs. They want to enact their "**right to erasure**", which is also known as their "right to be forgotten". You need to remove all their personal information from Azure. To accomplish this, you’ll perform the following tasks for this DSR:
 
 #### Task one: Discover
 
 1. Sign into the Azure portal.
-2. Navigate to Azure AD and select **Users**.
+2. Navigate to Azure AD, and select **Users**.
 3. Locate the user account in the **All users** blade.
 4. Select **Profile** to review the personal data and confirm that this is the data subject.
-   
+
 #### Task two: Delete
 
 1. In Azure AD, select **Users**.
-2. In the **All users** blade, select the check box next to the data subject's user account.
-3. Select **Delete user** and then select **Yes** to confirm. 
-4. In the **Deleted users** blade, select the check box next to the data subject's user account.
-5. Select **Delete permanently** and then select **Yes** to confirm.
+2. In the **All users** blade, select the check box for the data subject's user account.
+3. Select **Delete user**, and then select **Yes** to confirm.
+4. In the **Deleted users** blade, select the check box for the data subject's user account.
+5. Select **Delete permanently**, and then select **Yes** to confirm.
 
 > [!NOTE]
 > Deleting this data also means deleting the user from the tenant. Users are initially soft-deleted, which means that within 30 days of being marked for soft-delete, a tenant admin can recover the account. After 30 days, the account is automatically, and permanently, deleted from the tenant. Prior to those 30 days, you can manually delete a soft-deleted user from the recycle bin.
 
 ### Example two: DSR against customer data in Office 365
 
-A customer of Contoso that resides in California has submitted a DSR form on the company website. They want to gain access to their personal information that they provided to Contoso in the form of emails and documents. You need to search for their personal information and, if appropriate, provide them with access to that information or an explanation of why the information cannot be provided. To accomplish this, you’ll perform the following tasks for this DSR:
+A customer of Contoso that resides in California has submitted a DSR form on the company website. They want to gain access to their personal information that they provided to Contoso in the form of emails and documents. You need to search for their personal information and, if appropriate, provide them with access to that information or an explanation of why the information can't be provided. To accomplish this, you’ll perform the following tasks for this DSR:
 
 #### Task one: Discover
 
@@ -57,7 +57,7 @@ A customer of Contoso that resides in California has submitted a DSR form on the
 
 3. Search for data in SharePoint Online and OneDrive for Business with queries such as:
 
-    - datasubject@contoso.com AND filetype="docx" 
+    - datasubject@contoso.com AND filetype="docx"
     - (11-18-1990) AND (kind="email")
     - Save the content search for additional steps
 
@@ -65,19 +65,19 @@ A customer of Contoso that resides in California has submitted a DSR form on the
 
 1. Provide access by retrieving a copy of the document or item that contains responsive data, by using preview and downloading items:
 
-    - In the Compliance Center, open **Content Search**.
-    - Select **Preview results**.
-    - Select an item.
-    - Select **Download original file**.
+    1. In the Compliance Center, open **Content Search**.
+    1. Select **Preview results**.
+    1. Select an item.
+    1. Select **Download original file**.
 
 2. Determine which of the following is appropriate to provide:
 
-    - The actual document.
-    - Appropriately redacted version.
-    - Screenshot of portions deemed appropriate to share.
+    - The actual document
+    - Appropriately redacted version
+    - Screenshot of portions deemed appropriate to share
 
 > [!NOTE]
-> When providing a copy to the data subject, you might have to remove or redact personal information about other data subjects and also any confidential information.
+> When providing a copy to the data subject, you might have to remove or redact personal information about other data subjects and any confidential information.
 
 ## Tools for DSR for customer data
 
@@ -94,7 +94,7 @@ The following table lists tool that you can use for fulfilling DSRs for customer
 
 Office 365 includes many applications that can store user data. Knowing which applications the data subject uses helps you narrow down what’s in-scope for the DSR response. Depending on the application, you might be able to use the Content Search tool to respond. In some cases, however, you'll have to use the in-app functionality to get to the data.
 
-One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for Business subscription. Use the Microsoft 365 admin center to locate the user's account. In the properties for the user account, you can review their product licensing. 
+One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for Business subscription. Use the Microsoft 365 admin center to locate the user's account. In the properties for the user account, you can review their product licensing.
 
 ## Compliance boundaries
 

@@ -1,4 +1,4 @@
-The definition of *personal data* is open to broad interpretation, and the logs that Microsoft generates could contain data that is deemed personal. System-generated logs are an integral part of the service provided in Microsoft cloud products. As such, you cannot restrict or rectify data in these logs. Only the tenant administrator can administer DSRs for system-generated logs for an enterprise customer.
+The definition of *personal data* is open to broad interpretation, and the logs that Microsoft generates could contain data that is deemed personal. System-generated logs are an integral part of the service provided in Microsoft cloud products. As such, you can't restrict or rectify data in these logs. Only the tenant administrator can administer DSRs for system-generated logs for an enterprise customer.
 
 ## Scenarios for DSR in Azure and Office 365 for system-generated logs
 
@@ -21,17 +21,17 @@ A customer of Contoso that resides in Spain has submitted a DSR form on the corp
 1. Notify the tenant administrator of the request for system-generated logs.
 2. The tenant administrator will use the Azure portal to create an export request:
 
-    - Open the Azure portal,
-    - Select **All services** and then select **Policy**
-    - In the **Policy blade**, choose **User privacy**, choose **Manage User Requests**, and then select **Add export request**
-    - On the **New export data request** form, provide the following details, and then select **Create**:
-    
+    1. Open the Azure portal.
+    1. Select **All services**, and then select **Policy**.
+    1. In the **Policy blade**, select **User privacy**, select **Manage User Requests**, and then select **Add export request**.
+    1. On the **New export data request** form, provide the following details, and then select **Create**:
+
       - User
       - Subscription
       - Storage account
       - Container
 
-3. Tenant administrator exports the data and sends the file to the data subject.
+3. Tenant administrator exports the data, and then sends the file to the data subject.
 
 > [!NOTE]
 > Personal data can come from multiple systems, so the export process might take up to one month to complete.
@@ -43,26 +43,26 @@ A customer of Contoso that resides in the Netherlands has submitted a DSR form o
 1. Sign into the Azure portal.
 2. Navigate to Azure AD and select **Users**.
 
-    - In the **All users** blade, select the check box next to the data subject's user account.
-    - Select **Delete user** and then select **Yes** to confirm. 
-    - In the **Deleted users** blade, select the check box next to the data subject's user account.
-    - Select **Delete permanently** and then select **Yes** to confirm.
+    1. In the **All users** blade, select the data subject's user account check box.
+    1. Select **Delete user**, and then select **Yes** to confirm.
+    1. In the **Deleted users** blade, select the data subject's user account check box.
+    1. Select **Delete permanently**, and then select **Yes** to confirm.
 
 > [!NOTE]
-> In example two, you used the same process that you used to fulfill the delete requests for personal data in Azure. The user’s personal data in the system-generated logs will be deleted, along with the user account, as long as it doesn’t negatively impact the security or integrity of the Microsoft cloud products. This usually happens within 30 days of the user account deletion.
+> In example two, you used the same process that you used to fulfill the delete requests for personal data in Azure. The user’s personal data in the system-generated logs will be deleted, along with the user account, providing it doesn’t negatively impact the security or integrity of the Microsoft cloud products. This usually happens within 30 days of the user account deletion.
 
 > [!NOTE]
-> The exception to the 30-day period is the user's mailbox in Exchange Online. To prevent accidental data loss, Exchange Online places data in a holding state for up to 60 days after permanent deletion of a user account. You’ll need to contact Microsoft Support if the mailbox data must be removed outside the automated delete timeline. 
+> The exception to the 30-day period is the user's mailbox in Exchange Online. To prevent accidental data loss, Exchange Online places data in a holding state for up to 60 days after permanent deletion of a user account. You’ll need to contact Microsoft Support if the mailbox data must be removed outside the automated delete timeline.
 
 ### National clouds
 
-In the event that Contoso were to have a global presence in one or more national clouds, their tenant admin will need to perform the following steps to fulfill an export request for system-generated logs.
+If Contoso were to have a global presence in one or more national clouds, their tenant admin will need to perform the following steps to fulfill an export request for system-generated logs.
 
 |National Cloud|Export Steps|
 |---|---|
 |Office 365 Germany|Follow the same steps described previously, which are accessing and exporting, notifying about DSR fulfillment issues, and deleting. |
-|Office 365 US Government|Go to the Microsoft 365 admin center and submit a request to Microsoft Support|
-|Office 365 operated by 21Vianet (China)|Go to the Microsoft 365 admin center operated by 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.|
+|Office 365 US Government|Refer to the Microsoft 365 admin center and submit a request to Microsoft Support|
+|Office 365 operated by 21Vianet (China)|Refer to the Microsoft 365 admin center operated by 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.|
 
 ## Tools used for DSR for system-generated logs
 
