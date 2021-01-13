@@ -3,12 +3,13 @@ uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma.3-install-dma
 title: Install the DMA
 metadata:
   title: Install the DMA
-  description: Install the DMA
-  ms.date: 01/31/2019
-  author: markohot
+  description: "Install the DMA"
+  ms.date: 01/13/2021
+  author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
+azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-install-dma.md)]

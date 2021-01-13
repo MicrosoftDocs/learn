@@ -4,7 +4,7 @@ You're now ready to create a new Event Hub. After creating the Event Hub, you'll
 
 Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud shell.
 
-1. First, set default values for the Azure CLI in the Cloud Shell. This will keep you from having to type these in every time. In particular, let's set the _resource group_ and _location_. Type the following command into the Azure CLI, feel free to replace the location with one close to you.
+1. First, set default values for the Azure CLI in the Cloud Shell. This will keep you from having to enter these values every time. In particular, let's set the _resource group_ and _location_. Type the following command into the Azure CLI, feel free to replace the location with one close to you.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -12,7 +12,7 @@ Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud s
     az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2
     ```
 
-1. Create the Event Hubs namespace using the `az eventhubs namespace create` command. Use the following parameters.
+1. Create the Event Hubs namespace running the `az eventhubs namespace create` command. Use the following parameters.
 
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
@@ -35,9 +35,9 @@ Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud s
     ```
 
     > [!NOTE]
-    > Azure will validate the name you enter and the CLI returns **Bad Request** if the name exists or is invalid. Try a different name by changing your environment variable and reissuing the command.
+    > Azure will validate the name you enter, and the CLI returns **Bad Request** if the name exists or is invalid. Try a different name by changing your environment variable and reissuing the command.
 
-1. Fetch the connection string for your Event Hubs namespace using the following command. You'll need this to configure applications to send and receive messages using your Event Hub.
+1. Fetch the connection string for your Event Hubs namespace running the following command. You'll need this to configure applications to send and receive messages using your Event Hub.
 
     ```azurecli
     az eventhubs namespace authorization-rule keys list \
@@ -62,7 +62,7 @@ Now let's create your new Event Hub.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Create a new Event Hub using the `eventhub create` command. It needs the following parameters:
+1. Create a new Event Hub running the `eventhub create` command. It needs the following parameters.
 
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
@@ -81,7 +81,7 @@ Now let's create your new Event Hub.
     az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME
     ```
 
-1. View the details of your Event Hub using the `eventhub show` command. It takes:
+1. View the details of your Event Hub running the `eventhub show` command. It needs the following parameters.
 
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
@@ -104,9 +104,9 @@ Next, let's see what this looks like in the Azure portal.
 
 1. Select **Event Hubs namespace** under the **ENTITIES** section.
 
-1. Click **Event Hubs**.
+1. Select **Event Hubs**.
 
-    Your Event Hub displays with a status of **Active**, and default values for **Message Retention** (*7*) and **Partition Count** of (*4*).
+    Your Event Hub appears with a status of **Active**, and default values for **Message Retention** (*7*) and **Partition Count** of (*4*).
 
     ![Event Hub displayed in the Azure portal](../media/3-event-hub.png)
 

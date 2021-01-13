@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.ingest-data-into-azure-digital-twins.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned
+  ms.date: 10/30/2020
+  author: teodelas
+  ms.author: teodelas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What Azure Active Directory role is required to modify Azure Digital Twins?"
+    choices:
+    - content: Azure Digital Twins Data Owner."
+      isCorrect: true
+      explanation: "Gives full access over Azure Digital Twins resources."
+    - content: "Azure Administrator."
+      isCorrect: false
+      explanation: "An Azure Administrator can create instances of Azure Digital Twin services but cannot modify, write, and so on."
+
+  - content: 'Which of the items below can publish data directly to Azure Digital Twins?'
+    choices:
+    - content: Event Grid
+      isCorrect: false
+      explanation: "Event Grid enables event-based architectures. IoT services such as IoT Hub and Azure digital twins can publish their events (that is, messages) to Event Grid."
+    - content: Event Hub
+      isCorrect: false
+      explanation: "Event Hub is a message ingestion service used to publish or subscribe to messages generated from other services."
+    - content: IoT Hub
+      isCorrect: false
+      explanation: "IoT Hub enables communication with IoT devices and applications.  IoT Hub supports messages routing to various Azure messaging services such as Event Grid and Event Hub."
+    - content: SDK / APIs
+      isCorrect: true
+      explanation: "Azure Digital Twins support message ingestion through API calls. Developers can use the REST APIs or the SDKs to interact with the APIs."
+
+  - content: 'What is the recommended pattern for IoT Hub to publish data to Azure Digital Twins in real time?'
+    choices:
+    - content: Event Grid and Azure Functions
+      isCorrect: true
+      explanation: "IoT Hub can publish telemetry events to Event Grid, which triggers Azure Functions running the Azure digital twins SDK. The SDK is used to update Azure digital twins."
+    - content: Virtual Machines
+      isCorrect: false
+      explanation: "While virtual machines could be used as 'external compute', this would be an overly complex and costly approach."
+    - content: Azure Storage
+      isCorrect: false
+      explanation: "IoT Hub can send telemetry data to Azure Storage however this pattern would be complex and would not result in real-time data updates."
+    - content: Azure Data Pipeline
+      isCorrect: false
+      explanation: "Azure Data Pipeline does not provide integration with IoT Hub or Azure Digital Twins."

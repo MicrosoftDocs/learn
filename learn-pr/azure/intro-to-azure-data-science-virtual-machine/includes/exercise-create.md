@@ -36,7 +36,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
 | Username | Enter a string from 1 to 64 characters long. |
 | Password | Enter a strong password. |
 
-![Screenshot that shows the details filled out for V M configuration.](../media/create-new-resource.png)
+![Screenshot that shows the details filled out for V M configuration](../media/create-new-resource.png)
 
 1. You can explore several other tabs to see the settings that you can influence during the VM creation. On the **Disks** tab, for example, you can specify your data disks. After you're finished exploring, select **Review + create** to review and validate the settings.
 

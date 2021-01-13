@@ -6,10 +6,10 @@ In this example, we're going to upload the following image to our Azure Storage 
 
 If you're working on your local machine, right-click on this image, and save it to the same folder as where you have your application.
 
-If you are working in the Microsoft Learn Sandbox environment, run the following command in the same folder as you have your application to download the image into your sandbox.
+If you're working in the Microsoft Learn Sandbox environment, run the following command in the same folder as you have your application to download the image into your sandbox.
 
 ```bash
-wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true > docs-and-friends-selfie-stick.png
+wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
 ```
 
 In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_

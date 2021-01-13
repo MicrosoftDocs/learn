@@ -4,7 +4,7 @@ title: Load and Move data to SQL Database Managed Instance
 metadata:
   title: Load and Move data to SQL Database Managed Instance
   description: "Load and Move data to SQL Database Managed Instance"
-  ms.date: 03/31/2020
+  ms.date: 01/12/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,17 +13,3 @@ azureSandbox: false
 durationInMinutes: 15
 content: |
   [!include[](includes/4-synchronize-data.md)]
-quiz:
-  title: "Knowledge check"
-  questions:
-  - content: "You're considering your connectivity choices between your work premises and Azure datacenters. You want to create private and secure connections between Azure datacenters and on-premises infrastructure. What's the best option?"
-    choices:
-    - content: "Site-to-Site"
-      isCorrect: false
-      explanation: "That is incorrect. Site-to-Site connections go over the public internet and should not be considered completely private and secure."
-    - content: "Point-to-Site"
-      isCorrect: false
-      explanation: "That is incorrect. That is incorrect. Point-to-Site connections go over the public internet and should not be considered completely private and secure."
-    - content: "ExpressRoute"
-      isCorrect: true
-      explanation: "That is correct. Azure ExpressRoute enables you to create private connections between Azure datacenters and on-premises infrastructure, or infrastructure in a colocation environment. ExpressRoute connections don't go over the public internet."
