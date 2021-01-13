@@ -15,7 +15,7 @@ For the Owner role, that means all actions, indicated by an asterisk (*); no den
 You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. Try entering the following command into the Cloud Shell on the right.
 
 ```powershell
-Get-AzureRmRoleDefinition -Name Owner
+Get-AzRmRoleDefinition -Name Owner
 ```
 
 This code should produce the following output:
@@ -38,10 +38,14 @@ Try the same for the **Contributor** and **Reader** roles to see the actions all
 
 Next, let's explore some of the other built-in roles.
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true)
-1. Select **Resource groups** from the left sidebar.
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. Select **Resource groups** from the left nav bar.
+
 1. Select the resource group.
+
 1. Select the **Access control (IAM)** item from the sidebar menu.
+
 1. Select the **Roles** tab as shown below to see the list of available roles.
 
     ![Screenshot showing the roles in the portal](../media/5-list-roles.png)

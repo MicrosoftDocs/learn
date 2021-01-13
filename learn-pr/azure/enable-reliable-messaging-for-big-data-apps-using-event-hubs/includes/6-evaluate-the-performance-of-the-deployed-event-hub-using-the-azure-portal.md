@@ -12,11 +12,11 @@ The Azure portal > Overview page for your Event Hub shows message counts. These 
 
 ## How can you test Event Hub resilience?
 
-Azure Event Hubs keeps received messages from your sender application even when the hub is unavailable. Messages received before the hub become unavailable are successfully transmitted to our application as soon as the hub becomes available.
+Azure Event Hubs keeps received messages from your sender application, even when the hub is unavailable. Messages received after the hub becomes unavailable are successfully transmitted to our application as soon as the hub becomes available.
 
 To test this functionality, you can use the Azure portal to disable your Event Hub.
 
-When you re-enable your Event Hub, you can rerun your receiver application and use Event Hubs metrics for your namespace to check whether all sender messages are successfully transmitted and received.
+When you re-enable your Event Hub, you can rerun your receiver application, and use Event Hubs metrics for your namespace to check whether all sender messages are successfully transmitted and received.
 
 Other useful metrics available in the Event Hubs include:
 
