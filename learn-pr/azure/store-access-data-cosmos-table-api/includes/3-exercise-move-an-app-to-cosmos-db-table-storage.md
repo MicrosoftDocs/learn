@@ -60,7 +60,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Under **Settings**, select **Access Keys**.
 
-1. Select **Show keys**, and to the right of the **key1 Connection string** textbox, select the **Copy** button. Save this in a note pad for later use.
+1. Select **Show keys**, and to the right of the **key1 Connection string** textbox, select **Copy**. Save this in a note pad for later use.
 
    ![Copy the storage account connection string](../media/3-copy-storage-account-connection.png)
 
@@ -80,11 +80,15 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run the lenses app to populate the lenses table
 
 We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's use it to populate a table with lenses and then add our own lens entry.
+
+1. Install the specified framework and/or SDK at:
+
+    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
 
 1. To create and populate a table, run this command.
 
@@ -103,7 +107,9 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
    ```bash
    dotnet run DisplayTable
    ```
+
    You should see a display that is similar to the following.
+
    ```
    DisplayTable
    Reading the contents of the Lenses table...
@@ -152,7 +158,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Paste in the value of the connection string to the right of the equals sign on the first line.
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run the lenses app to populate the lenses table
 
@@ -181,7 +187,9 @@ Let's use the app to populate a table with lenses and then add our own lens entr
    ```bash
    node app.js DisplayTable
    ```
+
    You should see a display that is similar to the following.
+
    ```
    DisplayTable
    Reading the contents of the Lenses table...
@@ -236,11 +244,11 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. Under **Settings**, select **Connection String**.
 
-1. To the right of the **PRIMARY CONNECTION STRING** textbox, select the **Copy** button.
+1. To the right of the **PRIMARY CONNECTION STRING** textbox, select **Copy**.
 
     ![Copy the Azure Cosmos DB connection string](../media/3-copy-cosmos-connection.png)
 
-1. In the Cloud Shell on the right, to start the code editor, type this command.
+1. In the Cloud Shell on the right, to start the code editor, run this command.
 
     ```bash
     code .
@@ -250,7 +258,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Investigate the contents of the Cosmos Database
 
@@ -261,7 +269,9 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    ```bash
    dotnet run DisplayTable
    ```
+
    There should be no entries in the table, because you have not yet migrated the data.
+   
    ```
    DisplayTable
    Reading the contents of the Lenses table...
@@ -276,6 +286,10 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
 
 Finally, let's populate the table in Azure Cosmos DB and view the results.
 
+1. Install the specified framework and/or SDK at:
+
+    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
+
 1. In the Cloud Shell, to create and populate a table, run the following command.
 
    ```bash
@@ -287,6 +301,7 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
    ```bash
    dotnet run DisplayTable
    ```
+
    You should see a table displayed like you saw with the Azure Storage Table.
 
 1. To add your own lens to the table, run a command like the following example.
@@ -329,7 +344,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
 
-## Investigate the contents of the Cosmos Database
+## Investigate the contents of the Cosmos database
 
 Now that you have changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
 
@@ -338,8 +353,10 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    ```bash
    node app.js DisplayTable
    ```
+
    The app will display an error: you have not created the table in Cosmos DB yet, so there is nothing there to query.
-   ```
+
+   ````
    Reading the contents of the Lenses table...
    Error: The specified resource does not exist.
    RequestID:a45f5e70-d387-11e9-9fe4-7d2558c62514
@@ -364,6 +381,7 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
    ```bash
    node app.js DisplayTable
    ```
+
    You should see a table displayed like you saw with the Azure Storage table.
 
 1. To add your own lens to the table, run a command like the following example.

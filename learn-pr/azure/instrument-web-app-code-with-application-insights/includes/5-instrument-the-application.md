@@ -30,6 +30,7 @@ On the main page of the app, let's add the button and action.
    ```
 
 1. To open *Controllers/HomeController.cs*, use the file navigator.
+
 1. To add an action that will run in response to the button click, add the following method inside the `HomeController` class.
 
    ```csharp
@@ -43,7 +44,7 @@ On the main page of the app, let's add the button and action.
 
 ## Instantiate the TelemetryClient object and track metrics
 
-Now that you have a button in your app and some code that will run when a user selects it, to send telemetry, you can add code that uses the Application Insights SDK.
+Now that you have a button in your app, and some code that will run when a user selects it, to send telemetry, you can add code that uses the Application Insights SDK.
 
 1. Still working in *HomeController.cs*, at the top of the code file, add the `ApplicationInsights` using statement.
 
@@ -92,21 +93,27 @@ In the Cloud Shell from within the *videowebapp* folder, to build the applicatio
 ## Run the app and generate telemetry data
 
 1. When the deployment is complete, switch to the Azure portal. To navigate to your web app, use the **All resources** view.
+
 1. On the **Overview** page for your web app, select **Browse**. The web app opens in a new tab.
+
 1. Near the bottom of the page, select **Like**. The page will reload and display the "Thank you for your response" message. To simulate multiple clicks entering the app, select the **Like** button a few more times.
+
 1. Close the browser tab and return to the Azure portal.
 
 ## View information in the Azure portal
 
-To locate and display the events you just created, use the Application Insights search tool. Take the following steps:
+To locate and display the events you just created, use the Application Insights search tool. Perform the following steps.
 
-1. On the navigation menu of the window for your web app, select **Application Insights**. In the window that opens, to go to the app's Application Insights resource, select **View Application Insights data**.
-1. On the navigation menu, select **Search**.
+1. On the navigation menu of the window for your web app, select **Application Insights**. In the window that opens, to go to the app's Application Insights resource, select **Application Dashboard** from the top menu.
+
+1. On the nav bar, under **Investigate**, select **Transaction search**.
 
     ![Access the search tool in Application Insights](../media/5-access-search-in-app-insights.png)
 
-1. At the top of the window, select **Filters**, and then select **Clear filters**.
+1. At the top of the window, select the **Filters** icon, and then select **Clear filters**.
+
 1. In the **Filter** window, scroll down to the **Properties** section, and then expand **Event name**.
+
 1. Select **LikeClicked**, and then select **Done**.
 
     ![Searching for LikeClicked events](../media/5-search-for-likeclicked-event.png)
