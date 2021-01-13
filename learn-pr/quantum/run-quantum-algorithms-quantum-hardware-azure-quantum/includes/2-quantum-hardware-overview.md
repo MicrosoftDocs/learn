@@ -93,7 +93,7 @@ transistors you use junctions of semiconductors to represent controllable bits,
 in transmons you use junctions of superconductors to represent controllable
 qubits.
 
-![alt_text=Diagram comparing a transmon with a transistor. The transmon can be prepared in a quantum superposition while the transistor only admits discrete classical levels.](../media/2-transmon-vs-transistor.png)
+![alt_text=Diagram comparing a transmon with a transistor. The transmon can be prepared in a quantum superposition while the transistor only admits discrete classical levels.](../media/2-transmon-vs-transistor.jpg)
 
 There are other variants of superconducting circuits that don't use transmons
 but similar technologies. However, transmons are the key component in most
@@ -104,7 +104,7 @@ temperatures imply more noise, these quantum computers work at very low
 temperatures, near absolute zero. This is why these chips are usually contained
 in big cryostats.
 
-![alt_text=Simplified diagram of the cryostat of a superconducting quantum computer.](../media/2-superconducting-quantum-computer.png)
+![alt_text=Simplified diagram of the cryostat of a superconducting quantum computer.](../media/2-superconducting-quantum-computer.jpg)
 
 ### Other types of quantum computers
 
