@@ -1,22 +1,22 @@
 Let's build our model! We'll download the dataset, create our Azure service, upload the data, and then train the model.
 
-> [!NOTE]
-> The sandbox sign-in process runs outside the learning module. You're automatically returned to the module after you sign in.
->
-> To sign in to the sandbox:
->
-> 1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
->
-> 1. If prompted, select **Review permissions**.
->
->     :::image type="content" source="../media/sandbox-review-permissions.png" alt-text="Screenshot that shows the sandbox, with the Review Permissions button highlighted.":::
->
-> 1. Verify the permissions settings, and select **Accept**.
->
->    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows the sandbox, with permissions details and the Accept button highlighted.":::
->
->The message **Sandbox activated!** is shown, and you can continue with the learning module.
->
+### Sign in to the sandbox
+
+The sandbox sign-in process runs outside the learning module. You're automatically returned to the module after you sign in.
+
+To sign in to the sandbox:
+
+1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
+
+1. If prompted, select **Review permissions**.
+
+    :::image type="content" source="../media/sandbox-review-permissions.png" alt-text="Screenshot that shows the sandbox, with the Review Permissions button highlighted.":::
+
+1. Verify the permissions settings, and select **Accept**.
+
+    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows the sandbox, with permissions details and the Accept button highlighted.":::
+
+The message **Sandbox activated!** is shown, and you can continue with the learning module.
 
 ## Download the data
 
@@ -116,7 +116,7 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
     > [!NOTE]
     > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
 
-1. Add images and tags:
+1. Add images and tags for a bird species folder:
 
    1. In your Custom Vision project, select **Add images**.
 
@@ -135,6 +135,8 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
    1. Select **Upload \<number\> files**.
 
        :::image type="content" source="../media/custom-vision-tag-photos.png" alt-text="Screenshot that shows elements to select to add a tag description to uploaded photos in Custom Vision.":::
+
+1. Repeat the preceding steps to upload the photos in each bird species folder.
 
 ### Upload images option 2: SDK
 
@@ -223,7 +225,7 @@ Follow these steps to create the Jupyter notebook and paste code into the notebo
 
    To create the three functions:
 
-   1. In your Jupyter notebook file, add the `createTag` function code. The function creates an image name tag in the Custom Vision project.
+   1. In your Jupyter Notebook file, add the `createTag` function code. The function creates an image name tag in the Custom Vision project.
 
        ```python
        tag_id = createTag(tag)

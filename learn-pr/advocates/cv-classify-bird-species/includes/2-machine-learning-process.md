@@ -2,15 +2,15 @@ We'll use the Azure Cognitive Services Custom Vision service to create a machine
 
 ## What is machine learning?
 
-It's likely that you've heard of AI, machine learning, or deep learning. Let's identify the terms, so we understand how they're different:
+It's likely that you've heard of AI, machine learning, or deep learning. Let's identify the terms, so we understand how they're different.
+
+:::image type="content" source="../media/machine-learning-types.png" alt-text="A graphical depiction of the nested relationship between A I, machine learning, and deep learning." border="false":::
 
 - **Artificial intelligence (AI)**: AI is the process of programming a computer to mimic human intelligence. AI includes *machine learning*. The idea of AI is as simple as using a machine to mimic human intelligence, but AI offers many different techniques. The technique this module focuses on is machine learning.
 
 - **Machine learning**: Machine learning is a subset of AI. Machine learning uses techniques to train machines based on *experience*. Think of experience as a dataset, with right and wrong answers already given. In machine learning, the computer uses the answers that are supplied to improve how the computer completes specific tasks. The field of machine learning also includes *deep learning*.
 
 - **Deep learning**: Deep learning is a subset of machine learning that's based on *artificial neural networks (ANNs)*. The learning process is *deep* because ANNs consists of multiple layers: input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a specific predictive task. The neural network structure enables a machine to learn through its own data processing.
-
-   :::image type="content" source="../media/machine-learning-types.png" alt-text="A graphical depiction of the nested relationship between A I, machine learning, and deep learning." border="false":::
 
 When we build a model, we're trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
 

@@ -22,9 +22,7 @@ You can deploy to an endpoint by getting the prediction URL or by consuming the 
 
 1. Select  the **Prediction URL** tab.
 
-1. **How to use the prediction API** shows two options: an option if you have an image URL and an option if you have an image file.
-
-1. To get the prediction URL, copy and save the value in the text box under **If you have an image URL**, and then select **Got it**.
+1. In **How to use the prediction API**, in the text box under **If you have an image URL**, copy and save the value, and then select **Got it**.
 
     :::image type="content" source="../media/custom-vision-get-prediction-url.png" alt-text="Screenshot that highlights the prediction U R L for a published Custom Vision model.":::
 
@@ -42,38 +40,36 @@ When the model is trained and performing with satisfactory accuracy, the model i
 
    :::image type="content" source="../media/azure-portal-prediction-quickstart.png" alt-text="Screenshot that shows quick start resources that describe how to call the A P I to get predictions from the model.":::
 
-1. Under the quickstart title, select the programming language you're using.
+   Here's an example of the sample code for calling the prediction API in Python. For the complete code, see the [quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true).
 
-    Here's an example of the sample code for calling the prediction API in Python. For the complete code, see the [quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true).
-
-    ```python
-    from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
+   ```python
+   from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
     
-    # Create variables for your resource; replace variables with valid values.
-    prediction_key = "<YourKey>"
-    endpoint = "<YourEndpoint>"
-    base_image_url = "<BasePathToImageFolder>"
+   # Create variables for your resource; replace variables with valid values.
+   prediction_key = "<YourKey>"
+   endpoint = "<YourEndpoint>"
+   base_image_url = "<BasePathToImageFolder>"
     
-    # An example of a default iteration name is "Iteration1".
-    publish_iteration_name = "<PublishedIterationName>"
+   # An example of a default iteration name is "Iteration1".
+   publish_iteration_name = "<PublishedIterationName>"
     
-    # You can find the project ID in the settings of the Custom Vision project in the portal.
-    project.id = "<CustomVisionProjectId>"
+   # You can find the project ID in the settings of the Custom Vision project in the portal.
+   project.id = "<CustomVisionProjectId>"
     
-    # Now, you have a trained endpoint that you can use to make a prediction.
-    prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
+   # Now, you have a trained endpoint that you can use to make a prediction.
+   prediction_credentials = ApiKeyCredentials(in_headers={"Prediction-key": prediction_key})
     
-    predictor = CustomVisionPredictionClient(endpoint, prediction_credentials)
+   predictor = CustomVisionPredictionClient(endpoint, prediction_credentials)
     
-    with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents:
-        results = predictor.classify_image(
-            project.id, publish_iteration_name, image_contents.read())
+   with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents:
+       results = predictor.classify_image(
+           project.id, publish_iteration_name, image_contents.read())
     
-    # Display the results.
-    for prediction in results.predictions:
-        print("\t" + prediction.tag_name +
-             ": {0:.2f}%".format(prediction.probability * 100))
-    ```
+   # Display the results.
+   for prediction in results.predictions:
+       print("\t" + prediction.tag_name +
+            ": {0:.2f}%".format(prediction.probability * 100))
+   ```
 
 When you post to the published endpoint, you get a result that looks like the following example. The probability of each tag the Custom Vision model was trained on is shown, sorted by the highest score. The model recognizes only the type of birds it was trained to recognize. If you post an image of a bird that the model wasn't trained to recognize, the model predicts one of the bird species it was trained on as the species of the new bird.
 
