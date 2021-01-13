@@ -35,3 +35,6 @@ If you’re the Azure administrator for your organization, you’ll ne
 :::image type="content" source="../media/4-interactive-guide-place-holder.png" alt-text="Image showing the video title page. Select the link below the image. ":::
 
 [Interactive Guide](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M02%20-%20Use%20Azure%20secure%20score%20to%20improve%20your%20security%20posture/index.html)
+
+
+[![test image](../media/4-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M02%20-%20Use%20Azure%20secure%20score%20to%20improve%20your%20security%20posture/index.html){:target="_blank"}
