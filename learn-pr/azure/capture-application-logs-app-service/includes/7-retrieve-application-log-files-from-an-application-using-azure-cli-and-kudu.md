@@ -6,8 +6,8 @@ In this unit, you'll retrieve log files ready for later offline analysis.
 
 In this step, you'll use Azure CLI to retrieve file system logs to your cloud share storage, and then view these logs.
 
-   >[!NOTE]
-   >The full Azure Cloud Shell has a toolbar that includes a file download and upload tool, and you could use this option to download contosofashions.zip to your local computer. This functionality is not currently available in the Microsoft Learn sandbox shell. So, in this exercise, to view the logs from within the Cloud Shell file share, you'll use some Bash tools.
+   > [!NOTE]
+   > The full Azure Cloud Shell has a toolbar that includes a file download and upload tool, and you could use this option to download contosofashions.zip to your local computer. This functionality is not currently available in the Microsoft Learn sandbox shell. So, in this exercise, to view the logs from within the Cloud Shell file share, you'll use some Bash tools.
 
 1. In the Azure Cloud Shell, to download the logs to **contosofashions.zip** in the cloud share storage, replacing **\<_your-number_\>** with the random number that was generated to uniquely identify your app, run the following command.
 

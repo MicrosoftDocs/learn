@@ -14,21 +14,20 @@ In this exercise, you'll complete the steps needed to run a disaster recovery dr
 
 1. Under **Manage**, select **Recovery Plans (Site Recovery)**.
 
-1. Select **+ Recovery Plan**.
+1. Select **+ Recovery Plan**. The **Create recovery plan** window appears.
 
-1. Enter **asr-dr-drill** in the **Name** field on the _Create recovery plan_ pane.
-
-1. Select **West US 2** as the **Source** value.
-
-1. Select **East US 2** as the **Target** value.
-
-1. Select **Resource Manager** as the **Allow items with deployment model**.
+    | Setting | Value |
+    |---|---|
+    | **Name** | asr-dr-drill |
+    | **Source** | West US 2 |
+    | **Target** | East US 2 |
+    | **Allow items with deployment model** | Resource Manager from the dropdown. |
 
     ![Screenshot showing the create recovery plan panes, including the selection screen for virtual machines](../media/6-create-recovery-plan.png)
 
-1. Click **Select items**, choose your company's two VMs, and then select **OK**.
+1. Select **Select items**, and select your company's two VMs, and then select **OK**.
 
-1. At the bottom of the pane, select **OK**.
+1. At the bottom of the pane, select **Create**.
 
     > [!NOTE]
     > It can happen that the configuration fails. If the configuration fails, delete the plan and create a new plan.
@@ -46,18 +45,15 @@ In this exercise, you'll complete the steps needed to run a disaster recovery dr
     > [!IMPORTANT]
     > The network configuration failover support for each VM can take several minutes to auto configure as each VM also needs to complete an initial synchronization. Running a failover test may not be available immediately.
 
-1. In the **From** region field, select **West US 2**.
-
-1. In the **To** region field, select **East US 2**.
-
-1. Under **Recovery Point**, in the **Choose a recovery point** field, select **Latest app-consistent**.
-
-1. In the **Azure virtual network** field, select **asr-vnet-asr**.
+    | Setting | Value |
+    |---|---|
+    | **From** | West US 2 |
+    | **To** | East US 2 |
+    | **Recovery Point** | In **Choose a recovery point** field, select **Latest app-consistent**; in **Azure virtual network** field, select **asr-vnet-asr**. |
 
 1. To begin the failover, select **OK**.
 
     ![Screenshot of the test failover options](../media/6-starting-dr-drill.png)
-
 
 ## Monitor failover progress
 
@@ -69,7 +65,7 @@ In this exercise, you'll complete the steps needed to run a disaster recovery dr
 
     ![Screenshot of the list of Site Recovery jobs](../media/6-dr-drill-job-list.png)
 
-1.  The **Test failover** page appears and you view the status of the jobs.
+1. The **Test failover** page appears and you view the status of the jobs.
 
     ![Screenshot of the test failover jobs showing their status](../media/6-dr-drill-results.png)
 

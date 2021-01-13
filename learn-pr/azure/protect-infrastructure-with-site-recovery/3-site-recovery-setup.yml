@@ -36,6 +36,6 @@ quiz:
     - content: "Creates snapshots and recovery points, replicates VMs to a secondary region, supports DR drills, and enables flexible failover/failback."
       isCorrect: true
       explanation: "These are the four main features of Site Recovery that will protect your VMs."
-    - content: "Backs up VM disks locally and to a different region, automatically manages backup storage, creates a Microsoft Azure Backup Server (MABS), and mirrors workloads between primary and secondary regions"
+    - content: "Backs up VM disks locally and to a different region, automatically manages backup storage, creates a Microsoft Azure Backup Server (MABS), and mirrors workloads between primary and secondary regions."
       isCorrect: false
       explanation: "These are features provided by Azure Backup, not Site Recovery."  

@@ -173,7 +173,7 @@ If you open a second command shell session, for example, by browsing to <https:/
     curl http://127.0.0.1:1337/
     ```
 
-    You should see the following displayed:
+    You should see the following.
 
     ```html
     <html><body><h1>Hello World!</h1></body></html>
@@ -187,7 +187,7 @@ If you open a second command shell session, for example, by browsing to <https:/
 
 To create a starter web application, we'll use the web application framework Flask.
 
-1. Run the following commands to set up a virtual environment and install Flask in your profile.
+1. Run the following commands to set up a virtual environment, and install Flask in your profile.
 
     ```bash
     python3 -m venv venv

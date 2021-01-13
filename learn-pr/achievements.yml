@@ -267,3 +267,8 @@ achievements:
   title: Examine privacy, compliance, and data protection standards
   summary: Being able to trust in your cloud, trust in your solutions, and being able to use Azure, even when in a government role, are all key factors to picking your cloud provider.
   iconUrl: /learn/achievements/examine-privacy-compliance-data-protection-standards.svg
+- uid: learn.wwl.review-planning-managing-costs.badge
+  type: badge
+  title: Review planning and managing Azure costs
+  summary: Review planning and managing Azure costs
+  iconUrl: /learn/achievements/review-planning-managing-costs.svg
