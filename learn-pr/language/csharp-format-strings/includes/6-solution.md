@@ -14,7 +14,7 @@ decimal newProfit = 63000000.0m;
 
 Console.WriteLine($"Dear {customerName},");
 Console.WriteLine($"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n");
-Console.WriteLine($"Currently, you own {currentShares:N} shares at a return of {currentReturn:P}.\n");
+Console.WriteLine($"Currently, you own {currentShares:C} shares at a return of {currentReturn:P}.\n");
 Console.WriteLine($"Our new product, {newProduct} offers a return of {newReturn:P}.  Given your current volume, your potential profit would be {newProfit:C}.\n");
 
 Console.WriteLine("Here's a quick comparison:\n");
