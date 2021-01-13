@@ -132,133 +132,22 @@ To perform a migration with DMS, you complete these tasks:
 
 Azure DMS is a good tool to use for online migrations, in which the original database remains available while the migration executes. Users continue to make changes to data in the source database. Azure DMS uses replication to synchronize these changes with the migrated database. Once migration is complete, you reconfigure the user applications to connect to the migrated database.
 
-## Migrate MySQL to Azure SQL Database
+## Migrate MySQL or MariaDB to Azure SQL Database
 
 If you want to move a database that's hosted on-premises on a MySQL database server into the Azure cloud—and you don't need the cloud database to run MySQL—consider migrating to Azure SQL Database. Azure SQL Database is a PaaS implementation of Microsoft's industry-leading SQL Server database engine. It includes enterprise-level availability, scalability, and security, and is easy to monitor and manage.
 
-Azure SQL Database is more fully-featured than Azure Database for MySQL.
+Similarly, if your on-premises database server runs MariaDB, you can consider migrating to Azure SQL Database. The process is very similar because MariaDB is a fork of MySQL.
 
-> [!NOTE]
-> You might need to modify any applications that connect to your migrated database—because Azure SQL Database uses different data types, different database objects, and a different API from MySQL. Consult your developers to determine how much work is required to port a client application from an on-premises MySQL database to a cloud Azure SQL database.
+Azure SQL Database is more fully-featured than Azure Database for MySQL and Azure Database for MariaDB.
 
-### SQL Server Migration Assistant for MySQL
+> [NOTE]
+> You might need to modify any applications that connect to your migrated database—because Azure SQL Database uses different data types, different database objects, and a different API from MySQL and MariaDB. Consult your developers to determine how much work is required to port a client application from an on-premises MySQL or MariaDB database to a cloud Azure SQL database.
 
-If you decide to migrate to Azure SQL Database, you can use a specialized tool: **SQL Server Migration Assistant for MySQL**. This GUI tool connects to a source MySQL database and a SQL Server database, which can be a database in the Azure SQL Database service.
+## SQL Server Migration Assistant for MySQL
+
+If you decide to migrate from MySQL to Azure SQL Database, you can use a specialized tool: **SQL Server Migration Assistant for MySQL**. This GUI tool connects to a source MySQL database and a SQL Server database, which can be a database in the Azure SQL Database service.
 
 When it's connected, the assistant copies the complete schema to Azure SQL Database, and converts any data types to their SQL Server equivalents. It also migrates views, procedures, triggers, and other objects. You can then start to migrate the data from MySQL to Azure SQL Database.
 
-## Migrate MariaDB databases to Azure Database for MariaDB
-
-You can migrate your MariaDB databases through dump and restore using `mysqldump`, or through phpMyAdmin. You'll need to make sure you have: 
-
-- An Azure Database for MariaDB server on Azure.
-- `mysqldump` command-line tool installed on a client machine.
-- MySQL Workbench or any other MySQL tool that lets you use dump and restore commands.
-- Ensured SSL encryption is enabled for Azure Database for MariaDB (enabled by default).
-
-### Considerations for dump and restore
-
-Here's some things you should take into account for dump and restore: 
-
-- Ensure that all the tables in your database are using the InnoDB storage engine to load data into Azure Database for MariaDB. If your tables are using any other engine, you'll need to convert them to InnoDB engine before migrating. You can use the `ENGINE=InnDB` clause when creating a new table to set the engine to InnoDB, and then move your data into that table before the restore.
-- Make sure that you use the same version of MariaDB across both the source and destination servers. For example, if you're on MariaDB server version 10.2 on your on-premises server, then you need to make sure you've configured Azure Database for MariaDB to run on version 10.2 as well before you migrate to it. You can do this by:
-
-    -  First dumping your older version database into a newer version of MariaDB in your own environment
-    - Then running the `mysql_upgrade` command before migrating to Azure Database for MariaDB.
-
-Additionally, there are some performance considerations you should take into account, including the following:
-
-- Make sure to use the `exclude-triggers` option in `mysqldump` when dumping the database. This prevents triggers being included in dump files, and so helps prevents trigger commands running during restore.
-- Use the `disable-keys` option in `mysqldump` to ensure foreign key constraints are disabled before load. This means foreign key checks won't take place, which will give you some performance gains.
-- Use partition tables whenever appropriate.
-- Copy your backup files into Azure blob storage first, and do the restore from there. This will be faster than doing the restore over the internet.
-
-For more performance considerations read the [documentation](https://docs.microsoft.com/azure/mariadb/howto-migrate-dump-restore#performance-considerations).
-
-### Perform a dump and restore
-
-Here's how you can migrate using dump and restore:
-
-#### Create a backup file
-
-You can back up your existing MariaDB database in your environment using `mysqldump`. For example, to back up a database named `source_database` with the username `root` to a file called `source_database_backup.sql` you can run:
-
-```bash
-mysqldump -u root -p source_database > source_database_backup.sql
-```
-
-The backup file contains SQL statements that will re-create the database.
-
-You can choose specific tables to back up by listing those tables:  
-
- ```bash
-mysqldump -u root -p source_database table1 table2 > source_database_tables_backup.sql
- ```
-
-You can also backup multiple databases by using the `--databases` option and listing them: 
-
-```bash
-mysqldump -u root -p --databases source_database1 source_database3 source_database5 > source_database135_backup.sql
-```
-
-#### Create a database on the target server
-
-Next, you create an empty database in Azure Database for MariaDB. You can do this by copying the connection details for your Azure Database for MariaDB from the Azure portal: 
-
-:::image type="content" source="../media/M01_L03_Img-01-get-connection-details-maria.png" alt-text="Get server connection details":::
-
-You can then use that information to connect to your server using MySQL Workbench:
-
-:::image type="content" source="../media/M01_L03_Img-02-mysql-workbench-connect.png" alt-text="MySQLWorkbench connection":::
-
-Or by executing the following command in a tool like the `mysql` command-line utility: 
-
-```bash
-mysql --host your-server.mariadb.database.azure.com --user your_username@your-server -p
-```
-
-Once connected, you can create your database by executing the following SQL query in MySQL Workbench or the `mysql` command-line tool: 
-
-```bash
-CREATE DATABASE target-db;
-```
-
-Your target database can have the same name as your source database, or it can have a different name.
-
-#### Restore your database
-
-Once your target database has been created, you can restore data into it using the dump file through MySQL Workbench or using the `mysql` command-line tool. For example, to restore using the command-line tool, you can run: 
-
-```bash
-mysql -h your-server.mariadb.database.azure.com -u your_username@your-server -p target-db < source_database_backup.sql
-```
-
-### Import and export with phpMyAdmin
-
-You can also perform a migration with phpMyadmin. First you'll need to export your database:
-
-1. Start phpMyAdmin.
-1. Select your source database by selecting the database name in the list on the left.
-1. Select the **Export** at the top. A new page will appear.
-
-    :::image type="content" source="../media/M01_L03_Img-03-php-my-admin.png" alt-text="phpMyAdmin home page":::
-
-1. In the Export method section of this page, select the **Custom - display all possible options** to choose the tables in your database.
-1. In the Output section select **Save output to file** and the matching compression type.
-1. In the Format-specific options section, select the options that are appropriate for your use case.
-1. Select **Go**.
-
-Once your file has been exported, you can import it into your Azure SQL Database for MariaDB. 
-
-1. In phpMyAdmin, connect to your Azure Database for MariaDB server using the connection details from the Azure portal:
-
-    :::image type="content" source="../media/M01_L03_Img-04-remote-phpmyadmin.png" alt-text="Connect to your Azure Database for MariaDB":::
-
-1. Select **Go** to connect. 
-1. Create a target database by selecting **New** on the left in phpMyAdmin.
-1. Once you've created your target database, select **Import** on the top menu.
-
-    :::image type="content" source="../media/M01_L03_Img-05-import-phpmyadmin.png" alt-text="Import your exported file":::
-
-1. Select **Choose File** to upload your exported file.
-1. Select **Go** at the bottom of the page to import your file to Azure Database for MariaDB and recreate the database.
+> [!NOTE]
+> SQL Server Migration Assistant for MySQL is not tested for migrating MariaDB databases to Azure SQL Database.
