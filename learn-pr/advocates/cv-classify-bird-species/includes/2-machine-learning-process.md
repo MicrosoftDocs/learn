@@ -32,7 +32,7 @@ To better understand the process of building a machine learning model, here's a 
 
 1. *Select a candidate model.* The Custom Vision service gives us helpful graphs and data to help us determine whether our model is performing well enough to satisfactorily answer our question. When we think the model is performing at a satisfactory level, we move to the next step: test.
 
-1. *Test the model by using unseen (new) data.* It's important to test our model by adding new data. We'll do an internet search and find some test images to see how the models performs with data it wasn't trained with. We'll discuss later in the module why testing this way is important.
+1. *Test the model by using unseen (new) data.* It's important to test our model by adding new data. We'll do an internet search and find some test images to see how the model performs with data it wasn't trained with. We'll discuss later in the module why testing this way is important.
 
 1. *Deploy the model.* Custom Vision gives us some options when it's time to deploy our model. We can deploy to an endpoint to integrate the model or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option that's available in the Custom Vision portal.
 

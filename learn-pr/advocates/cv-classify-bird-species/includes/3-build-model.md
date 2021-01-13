@@ -1,10 +1,10 @@
 Let's build our model! We'll download the dataset, create our Azure service, upload the data, and then train the model.
 
-### Sign in to the sandbox
+### Activate the sandbox
 
-The sandbox sign-in process runs outside the learning module. You're automatically returned to the module after you sign in.
+The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
 
-To sign in to the sandbox:
+To activate the sandbox:
 
 1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
 
@@ -16,7 +16,7 @@ To sign in to the sandbox:
 
     :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows the sandbox, with permissions details and the Accept button highlighted.":::
 
-The message **Sandbox activated!** is shown, and you can continue with the learning module.
+The message **Sandbox activated!** appears, and you can continue with the learning module.
 
 ## Download the data
 
@@ -28,7 +28,7 @@ Download the zip file that contains the dataset:
 
 1. Select **Download**. 
 
-   :::image type="content" source="../media/github-download-dataset.png" alt-text="Screenshot that shows GitHhub in a web browser, with the dataset zip file and the Download button highlighted."::: 
+   :::image type="content" source="../media/github-download-dataset.png" alt-text="Screenshot that shows GitHub in a web browser, with the dataset zip file and the Download button highlighted."::: 
 
    The zip file is copied to your computer and stored in your default location for downloaded files. 
 
