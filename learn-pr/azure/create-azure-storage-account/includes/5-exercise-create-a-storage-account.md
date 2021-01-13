@@ -38,6 +38,23 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     > [!NOTE]
     > This free Resource Group has been provided by Microsoft as part of the learning experience. When you create an account for a real application, you'll want to create a new Resource Group in your subscription to hold all the resources for the app.
 
+1. Select **Next : Networking**. Enter the following information.
+
+    | Property | Value |
+    |---|---|
+    | Under **Network connectivity** section: |
+    | Connectivity method | *Public endpoint (all networks)*.  We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
+    | Under **Network routing** section: |
+    | Routing preference | *Microsoft network routing (default)*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
+
+1. Select **Next : Data protection**. Enter the following information.
+
+    | Property | Value |
+    |---|---|
+    | Under **Recovery** section: |
+    | Turn on soft delete for blobs | *disable*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
+    | Turn on soft delete for file shares | *disable*. File share soft delete lets you recover your blob data more easily at the folder level. |
+    
 1. Select **Next : Advanced**. Enter the following information.
 
     | Property | Value |
@@ -55,23 +72,6 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     > [!WARNING]
     > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
-
-1. Select **Next : Networking**. Enter the following information.
-
-    | Property | Value |
-    |---|---|
-    | Under **Network connectivity** section: |
-    | Connectivity method | *Public endpoint (all networks)*.  We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
-    | Under **Network routing** section: |
-    | Routing preference | *Microsoft network routing (default)*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
-
-1. Select **Next : Data protection**. Enter the following information.
-
-    | Property | Value |
-    |---|---|
-    | Under **Recovery** section: |
-    | Turn on soft delete for blobs | *disable*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
-    | Turn on soft delete for file shares | *disable*. File share soft delete lets you recover your blob data more easily at the folder level. |
 
 1. Select **Next : Tags**. Here, you associate key/value pairs to the account for your categorization and determine if a feature is available to any Azure resource.
 
