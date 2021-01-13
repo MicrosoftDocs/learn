@@ -16,13 +16,13 @@ select the providers you desire to use. To do it follow these steps:
    service.
 
    ![Tile for the Azure Quantum (preview)
-   service](../media/azure-quantum-preview-search.png)
+   service](../media/3-azure-quantum-preview-search.png)
 
 1. Click **Azure Quantum** and then click **Create**. This opens a
    form to create a Quantum Workspace.
 
    ![Create resource for the Azure Quantum (preview)
-   service](../media/azure-quantum-preview-create.png)
+   service](../media/3-azure-quantum-preview-create.png)
 
 1. Fill out the details of your Workspace:
    - **Subscription:** The subscription that you want to associate with this
@@ -37,7 +37,7 @@ select the providers you desire to use. To do it follow these steps:
      the default values.
 
    ![Properties for the Azure Quantum
-   Workspace](..media/3-azure-quantum-preview-properties.png)
+   Workspace](../media/3-azure-quantum-preview-properties.png)
 
    > [!NOTE]
    > You must be an Owner of the selected resource group to create a
@@ -58,7 +58,7 @@ select the providers you desire to use. To do it follow these steps:
    selected providers. If everything is correct, click on **Create** to create
    your Quantum Workspace.
 
-   ![Review and create the Workspace](..media/3-azure-quantum-preview-terms.png)
+   ![Review and create the Workspace](../media/3-azure-quantum-preview-terms.png)
 
 ## Setup the project and write your program
 
