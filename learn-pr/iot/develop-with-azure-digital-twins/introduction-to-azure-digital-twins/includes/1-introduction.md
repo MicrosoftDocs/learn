@@ -6,7 +6,7 @@ And how can Microsoft help?
 
 On completing this module, you will be able to:
 
-- Describe how Microsoft defines digital twins, the core concepts, and building blocks to implement a digital twin solution.
+- Describe how Microsoft defines digital twins, the core concepts, and the building blocks to implement a digital twin solution.
 - List customer goals for digital twin applications.
 - Discuss the outcomes businesses can achieve through digital twins.
 - Understand the value of a digital twin and how it can be used to support business goals in various industry verticals.

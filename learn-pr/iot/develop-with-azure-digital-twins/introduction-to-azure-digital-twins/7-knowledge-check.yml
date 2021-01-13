@@ -2,7 +2,7 @@
 uid: learn.iot.introduction-to-azure-digital-twins.knowledge-check
 metadata:
   title: Knowledge check
-  description: Check that you understand the introduction to Azure Digital Twins
+  description: Check that you understand the introduction to Azure Digital Twins.
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
@@ -15,7 +15,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'True or false: Digital twins is a good technology to represent equipment and processes, but it isn't suitable for representing people.'
+  - content: "True or false: Digital twins is a good technology to represent equipment and processes, but it isn't suitable for representing people."
     choices: 
     - content: 'True'
       isCorrect: false
