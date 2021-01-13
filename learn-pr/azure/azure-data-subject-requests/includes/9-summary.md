@@ -5,21 +5,11 @@ In this module, you've learned about DSRs and the process of responding to them.
 You can learn more by reviewing the following articles:
 
 - [General Data Protection Regulation Summary](https://docs.microsoft.com/microsoft-365/compliance/gdpr?view=o365-worldwide?azure-portal=true)
-
 - [Data Subject Requests and the GDPR and CCPA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests?view=o365-worldwide?azure-portal=true)
-
 - [GDPR for Office on-premises Servers](https://docs.microsoft.com/compliance/regulatory/gdpr-for-office-servers?azure-portal=true)
-
 - [Overview of optional connected experiences in Office](https://docs.microsoft.com/DeployOffice/privacy/optional-connected-experiences?azure-portal=true)
-
 - [Microsoft Support and Professional Services Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-prof-services?azure-portal=true)
-
 - [Azure DevOps Services Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-vsts?azure-portal=true)
-
 - [Dynamics 365 Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-dynamics365?azure-portal=true)
-
 - [Intune Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-intune?azure-portal=true)
-
 - [Visual Studio Family Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/compliance/regulatory/gdpr-dsr-visual-studio-family?azure-portal=true)
-
- 

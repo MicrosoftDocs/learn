@@ -1,8 +1,8 @@
-Like the Azure DSR response, the Office 365 DSR response has a scope to it. Office 365 services are available in different environments that can impact the scope. For example, a DSR that an Office 365 customer receives in Germany would be fulfilled in a national cloud called Office 365 Germany. Another similarity between the DSR responses for Azure and Office 365 is that the process of responding consists of different parts, for ease of fulfillment. 
+Like the Azure DSR response, the Office 365 DSR response has a scope to it. Office 365 services are available in different environments that can impact the scope. For example, a DSR that an Office 365 customer receives in Germany would be fulfilled in a national cloud called Office 365 Germany. Another similarity between the DSR responses for Azure and Office 365 is that the process of responding consists of different parts, for ease of fulfillment.
 
 ## Scope of DSR for Office 365 applications
 
-In general, the actions performed when fulfilling a DSR for Office 365 applications will be the same, regardless of the environment. However, there are some exceptions based on isolated clouds and cross-premises scenarios. 
+In general, the actions performed when fulfilling a DSR for Office 365 applications will be the same, regardless of the environment. However, there are some exceptions based on isolated clouds and cross-premises scenarios.
 
 ### Office 365 national clouds
 
@@ -20,12 +20,11 @@ Many organizations choose to manage their user identities in on-premises deploym
 - Microsoft SharePoint hybrid deployments. An organization uses on-premises SharePoint servers, on-premises files servers, Skype for Business Online, and  Microsoft OneDrive for Business accounts.
 - Hybrid identity management. Identities are managed on-premises with Active Directory and the accounts are synchronized with Azure AD by using Azure AD Connect. This also facilitates single sign-on scenarios for hybrid deployments.
 
-In a hybrid deployment, the scope will vary based on the data that is responsive to a specific data subject's DSR. It’ll be up to the controller to determine if the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. Refer to the summary unit for more information. 
+In a hybrid deployment, the scope will vary based on the data that is responsive to a specific data subject's DSR. It’ll be up to the controller to determine if the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, there is additional guidance available for responding to DSRs on-premises. Refer to the summary unit for more information.
 
 ## DSR response processes for Office 365 applications
 
 The guidance for fulfilling a DSR in Office 365 consists of four parts. The high-level fulfillment tasks differ based on the data type, application, and the request type. The first three parts detail the technical capabilities available to an organization to respond to a DSR. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. The fourth part provides guidance on how data subjects can submit DSRs to Microsoft.
-
 
 ### Part One: Responding to DSRs for customer data
 
@@ -98,6 +97,7 @@ The fulfillment of a DSR for MyAnalytics or Workplace Analytics includes the fol
 4. Delete
 
 ### Part three: Responding to DSRs for system-generated logs
+
 GDPR might require an organization to provide system-generated logs when they contain a data-subject's personal information.  Some examples include:
 
 - Product and service usage data (user logs)
@@ -105,7 +105,7 @@ GDPR might require an organization to provide system-generated logs when they co
 - Data that a product or service generates as a result of system functionality and interaction by users or other systems
 
 > [!NOTE]
-> You cannot restrict or rectify data in system-generated logs. Doing so could expose the Microsoft cloud to fraud and increased security risks. This is because system-generated logs contain a historical record of the actions within the Microsoft cloud. Any changes to these logs would break their integrity. 
+> You can't restrict or rectify data in system-generated logs. Doing so could expose the Microsoft cloud to fraud and increased security risks. This is because system-generated logs contain a historical record of the actions within the Microsoft cloud. Any changes to these logs would break their integrity.
 
 The fulfillment of a DSR for system-generated logs can include the following steps:
 
@@ -118,21 +118,26 @@ The fulfillment of a DSR for system-generated logs can include the following ste
 National clouds are isolated from other clouds by design. Administrators need to follow the guidance from the cloud that contains the responsive data for the DSR they receive. In the case of the request for system-generated logs, you need to perform the following steps:
 
 - Office 365 Germany: Perform the same steps as Microsoft 365/Office 365:
-	1. Accessing and exporting
-	2. Notifying about DSR fulfillment issues
-	3. Deleting 
-- Office 365 US Government: Go to the Microsoft 365 admin center and submit a request to Microsoft Support.
-- Office 365 operated by 21Vianet (China): Go to the Microsoft 365 admin center operated by the 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.
+  1. Accessing and exporting
+  2. Notifying about DSR fulfillment issues
+  3. Deleting
+
+- Office 365 US Government: Open the Microsoft 365 admin center and submit a request to Microsoft Support.
+- Office 365 operated by 21Vianet (China):
+    1. Open the Microsoft 365 admin center operated by the 21Vianet admin portal.
+    1. Select **Commerce**, select **Subscription**, and then select **Privacy**.
+    1. Select **GDPR**, and then enter the required information.
 
 ### Part four: Additional resources for DSRs
 
-The following scenarios require specific technical steps to fulfill a DSR. 
+The following scenarios require specific technical steps to fulfill a DSR:
+
 - Microsoft Support
 - Microsoft is the data controller
 - Personal accounts
 - Third-party products
 - Azure DevOps
-- Dynamics 365 
+- Dynamics 365
 - Intune
 - Visual Studio
 

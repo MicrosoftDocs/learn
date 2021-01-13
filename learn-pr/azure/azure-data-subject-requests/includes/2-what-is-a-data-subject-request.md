@@ -21,7 +21,7 @@ The CCPA additionally provides for:
 - Protections against discrimination
 - Opt-out/opt-in requirements for sales-related data transfers
 
-When a data controller receives a DSR, they are obligated to promptly consider it and provide an appropriate response, either by taking the requested action, or by explaining why they can't fulfill the DSR. Controllers should consult their legal or compliance experts for each DSR. Fulfilling a DSR could entail multiple steps that are subject to an organization's GDPR or CCPA compliance rules. 
+When a data controller receives a DSR, they are obligated to promptly consider it and provide an appropriate response, either by taking the requested action, or by explaining why they can't fulfill the DSR. Controllers should consult their legal or compliance experts for each DSR. Fulfilling a DSR could entail multiple steps that are subject to an organization's GDPR or CCPA compliance rules.
 
 ## DSR process
 
@@ -48,9 +48,9 @@ The following list defines terms that are relevant to DSR:
 
 - Controller. The natural or legal person, public authority, agency, or other body, which, alone or jointly with others, determines the purposes and means of the processing of personal data. The purposes and means of such processing are determined by Union or Member State law, the controller, or the specific criteria for its nomination might be provided by Union or Member State law.
 
--	Personal data and data subject. Any information relating to an identified or identifiable natural person, or data subject. An identifiable natural person is one who can be identified, directly or indirectly, by referring to:
+- Personal data and data subject. Any information relating to an identified or identifiable natural person, or data subject. An identifiable natural person is one who can be identified, directly or indirectly, by referring to:
 
-    - An identifier such as a name, an identification number, location data, or an online identifier.
+  - An identifier such as a name, an identification number, location data, or an online identifier.
   
     - One or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
   
@@ -62,4 +62,4 @@ The following list defines terms that are relevant to DSR:
 
   - Customer content that a customer uploads to or creates in specific services. Examples include customer content in an Azure Storage account, customer content of an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
   
-- System-generated logs. Microsoft or other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers. This is typically a number that the system generates that cannot, on its own, identify an individual person, but is used to deliver the enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.
+- System-generated logs. Microsoft or other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers. This is typically a number that the system generates that can't, on its own, identify an individual person, but is used to deliver the enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.

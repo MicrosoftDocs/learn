@@ -2,21 +2,21 @@
 uid: learn.azure-data-subject-requests
 metadata:
   title: Manage Data Subject Requests 
-  description: Learners should know and be able to understand and describe data subject requests, and how to handle DSRs on various Microsoft services.
+  description: Learners should know, understand, and be able to describe data subject requests. They also should know how to manage DSRs on various Microsoft services.
   ms.date: 11/13/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage Data Subject Requests 
-summary: Learners should know and be able to understand and describe data subject requests, and how to handle DSRs on various Microsoft services.
+summary: Learners should know, understand, and be able to describe data subject requests. They also should know how to manage DSRs on various Microsoft services.
 abstract: |
-  By the end of this module, you will be able to answer:
-  - What is Data Subject Request?
-  - Use DSR in Azure AD
-  - Use DSR for Microsoft accounts
-  - Use DSR for Office 365 apps
-  - Use DSR for consumer data and logs
+  By the end of this module, you will be able to:
+  - Understand DSRs
+  - Use a DSR in Azure AD
+  - Use a DSR for Microsoft accounts
+  - Use a DSR for Office 365 apps
+  - Use a DSR for consumer data and logs
 prerequisites: |
   -Basic experience with Azure services
 iconUrl: /learn/achievements/generic-badge.svg

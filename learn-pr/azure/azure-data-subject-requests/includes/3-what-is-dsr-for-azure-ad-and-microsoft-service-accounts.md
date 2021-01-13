@@ -1,4 +1,4 @@
-Many Microsoft enterprise customers will be required to respond to DSRs under GDPR and/or CCPA. Cloud-based services such as Azure host multiple tenants. Therefore, it’s important to understand the scope or boundaries to any DSR response when the data subject's personal information is stored in a Microsoft cloud-based service. Responses to DSRs should be timely and having a response process in place will help expedite the process. 
+Many Microsoft enterprise customers will be required to respond to DSRs under GDPR and/or CCPA. Cloud-based services such as Azure host multiple tenants. Therefore, it’s important to understand the scope or boundaries to any DSR response when the data subject's personal information is stored in a Microsoft cloud-based service. Responses to DSRs should be timely and having a response process in place will help expedite the process.
 
 ## Scope of DSR for Azure AD and Microsoft service accounts
 
@@ -16,7 +16,7 @@ If a Microsoft service account receives a DSR and that Microsoft service account
 
 ### Scenario 3
 
-If a Microsoft service account receives a DSR and the account is outside of an Azure AD tenant, then the DSR fulfillment will occur in the consumer privacy portal. 
+If a Microsoft service account receives a DSR and the account is outside of an Azure AD tenant, then the DSR fulfillment will occur in the consumer privacy portal.
 
 > [!NOTE]
 > It's possible that a user submitting a DSR participates in multiple tenants. If this happens, the DSR is only fulfilled in the tenant that received the DSR.
@@ -27,7 +27,7 @@ The process for fulfilling a DSR in Azure consists of two parts. The high-level 
 
 ### Part one: Customer data
 
-For customer data, the high-level fulfillment tasks are: 
+For customer data, the high-level fulfillment tasks are:
 
 1. Discover
 2. Access
@@ -38,10 +38,8 @@ For customer data, the high-level fulfillment tasks are:
 
 ### Part two: System-generated logs
 
-For system-generated logs, the high-level fulfillment tasks are: 
+For system-generated logs, the high-level fulfillment tasks are:
 
 1. Access
 2. Delete
 3. Export
-
- 
