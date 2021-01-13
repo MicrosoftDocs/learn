@@ -14,7 +14,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. In the Search box, search for **Web App**. The Web App resource appears. Select **Create.**
 
-1. Fill out the wizard with the following values:
+1. Enter the following values.
 
     | Field | Value | Details |
     |---|---|---|

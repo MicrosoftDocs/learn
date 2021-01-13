@@ -18,4 +18,4 @@ After installing DMA, you'll need credentials and network access to the SQL Serv
 - When doing an upgrade, DMA requires credentials for the source and target servers
 - For database upgrades, the account for the source server must have the **CONTROL SERVER** permission, and the credentials for the target server must be a member of the **sysadmin** server role
 
-The DMA should be installed on your client machine. You can then connect to your on-premises SQL Server instances and cloud-based Azure SQL Databases. In practice, you'll ideally run the DMA against the databases in your development or test environments, before upgrading your production databases.
+The DMA should be installed on your client machine. You can then connect to your on-premises SQL Server instances and cloud-based Azure SQL Databases. In practice, you'll ideally run the DMA against the databases in your development or test environments, before upgrading your production databases. 

@@ -18,7 +18,7 @@ You can use all of these HPC instances with Azure Batch. When you set up a Batch
 
 ### HC-series VMs
 
-*HC-series* VMs are optimized for applications driven by dense computation, such as implicit finite element analysis, reservoir simulation, and computational chemistry. HC VMs have 44 Intel Xeon Platinum 8168 processor cores, with 8 GB of RAM per CPU core and 352 GB of memory overall. HC-series VMs support Intel software tools such as the Intel Math Kernel Library, and feature an all-cores clock speed greater than 3 GHz for most workloads.
+*HC-series* VMs are optimized for applications driven by dense computation, such as implicit finite element analysis, reservoir simulation, and computational chemistry. HC VMs have 44 Intel Xeon Platinum 8168 processor cores, with 8 GB of RAM per CPU core and 352 GB of memory overall. This CPU has 22 cores and 44 threads (when hyper-threading (HT) is enabled). HC-series VMs support Intel software tools such as the Intel Math Kernel Library, and feature an all-cores clock speed greater than 3 GHz for most workloads.
 
 ## Remote Direct Memory Access
 
@@ -32,7 +32,7 @@ Ask your developers if they're using MPI. If the answer is yes, you should ensur
 
 InfiniBand is a data interconnect hardware standard for HPC. It's often used to accelerate communications between components, both within a single server and between servers. It has been designed to support the highest speeds and the lowest latency for messages between CPUs, and between processors and storage components.
 
-Both HC- and HB-series VMs use a 100 GB/sec Mellanox EDR InfiniBand interconnect in a non-blocking tree configuration to boost hardware performance.
+Both HC- and HB-series VMs use a router offering 100 GB/sec Mellanox EDR InfiniBand interconnect in a non-blocking tree configuration to boost hardware performance.
 
 ## N-series VMs
 
