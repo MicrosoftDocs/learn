@@ -35,7 +35,7 @@ quiz:
         - content: "Precision"
           isCorrect: false
           explanation: "Incorrect. The precision metric is provided."
-    - content: "What's a common rookie mistake when using machine learning models?"
+    - content: "What's a common beginner's mistake when using machine learning models?"
       choices:
         - content: "Using bad data."
           isCorrect: true
