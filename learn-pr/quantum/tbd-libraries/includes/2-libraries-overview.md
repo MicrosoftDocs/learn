@@ -46,69 +46,17 @@ Then, there are three libraries focused on more domain-specific functionality:
 
 The standard library is included in every Q# project by default, but accessing other libraries---including the domain-specific libraries discussed above---requires adding their respective packages to the project.
 
-Depending on your Q# development setup, the method will vary. 
+Depending on your Q# development setup, the method of doing so will vary. 
+Specifics for can be found at [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries) in the official documentation.
+Regardless of the your environment, though, the process is very straightforward.
 
-For Q# applications for the command line interface or with .NET interoperability, each Q# project includes a `.csproj` project file, which, among other things, defines any NuGet packages that have been added to the project.
-In this case, adding packages is as simple as running a single command.
-
-For the situations based on IQ#, Q# Jupyter Notebooks or interoperability with Python, project files are not a necessary part of the workflow.
-Instead, you can interactively add packages directly in your Notebook workspace or from the Python host file.
-
-Note that IQ# also supports using project files to define packages, so the instructions for Q# applications also apply in that scenario.
-Below, we only describe the methods to do so interactively. 
-
-
-### [Q# applications or .NET interoperability](#tab/tabid-csproj)
-
-**Command prompt or Visual Studio Code:** Using the command prompt on its own or from within Visual Studio Code, you can use the `dotnet` command to add a NuGet package reference to your project.
-
-For example, to add the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) package, run the following command:
+For example, if you are working with Q# command-line applications in Visual Studio Code, you can simply use the `dotnet` command to add a NuGet package reference to your project.
+Adding the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) package would then require only running the following command:
 
 ```dotnetcli
 dotnet add package Microsoft.Quantum.Numerics
 ```
 
-Before adding any new packages, your project file will look similar to 
-![Project file before adding package](../media/2-project-file-before.png)
-
-After running the command and adding a package, you will see the corresponding update in the project file:
-![Project file after adding package](../media/2-project-file-after.png)
-
-### [IQ# Notebooks](#tab/tabid-notebook)
-
-You can make additional packages available for use in an IQ# Notebook by using the [`%package` magic command](https://docs.microsoft.com/qsharp/api/iqsharp-magic/package).
-For example, to add the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) package for use in an IQ# Notebook, run the following command in a notebook cell:
-
-```
-%package Microsoft.Quantum.Numerics
-```
-
-Following this command, the package is available to any cells within the notebook.
-To make the package available from Q# code in the current workspace, reload the workspace after adding your package:
-
-```
-%workspace reload
-```
-
-### [Python interoperability](#tab/tabid-python)
-
-
-You can make additional packages available for use in a Python host program by using the [`qsharp.packages.add`](https://docs.microsoft.com/python/qsharp-core/qsharp.packages.packages) method.
-For example, to add the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) package for use in an IQ# Notebook, run the following Python code:
-
-```python
-import qsharp
-qsharp.packages.add("Microsoft.Quantum.Numerics")
-```
-
-Following this command, the package will be made available to any Q# code compiled using `qsharp.compile`.
-To make the package available from Q# code in the current workspace, reload the workspace after adding your package:
-
-```python
-qsharp.reload()
-```
-
-***
 
 ## What's next?
 

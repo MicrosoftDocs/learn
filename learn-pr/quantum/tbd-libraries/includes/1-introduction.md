@@ -15,4 +15,4 @@ In this module you will:
 ## Prerequisites
 
 - A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/), you are all set, but otherwise the overview can be found at the [Grover's Search Algorithm unit](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) therein.
-- A functioning QDK environment, preferably in [VS Code for command-line applications](https://docs.microsoft.com/quantum/quickstarts/install-command-line?tabs=tabid-vscode) or in [Q# Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter?tabs=tabid-conda).
+- A functioning QDK environment in [Visual Studio Code for command-line applications](https://docs.microsoft.com/quantum/quickstarts/install-command-line?tabs=tabid-vscode).

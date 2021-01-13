@@ -30,9 +30,9 @@ In the **Q# libraries** dropdown, you find the documentation for all of the Q# l
 
 ### Looking for something in particular?
 
-Looking for a specific callable or type? 
+Looking for a specific operation, function, or type? 
 Use the *Filter by title* box above the table of contents—it includes the API references and can take you straight to the right page.
-We'll be using the `ControlledOnInt` function later in the module, so let's use it as an example:
+Suppose we wanted to find the `ControlledOnInt` function:
 
 ![Screengrab showing filter by title ControlledOnInt](../media/3-filter-by-title.png)
 
@@ -43,8 +43,9 @@ The source code of the Q# libraries is located in the [microsoft/QuantumLibrarie
 
 Later in the module, you'll learn more about how the documentation is embedded in the source code when you write documentation comments for your own operations.
 
-For now though, we'll take you through an example to show you what you can expect and learn from the documentation of a function. 
-Let's keep getting familiar with [`ControlledOnInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint?view=qsharp-preview).
+For now though, we'll take you through an example to show you what you can expect and learn from the documentation. 
+Since it will be the centerpiece of our oracle in the next unit, let's check out the [`MultiplyAndAddByModularInteger` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger). 
+Although this is an operation, note that the pages for functions and types are laid out in the same fashion.
 
 ## What does it tell me?
 
@@ -53,4 +54,4 @@ Video explanation talking through the page goes here.
 ### What's next?
 
 In the next unit, we change gears to actually start using the Q# libraries.
-You'll use the Standard and Numerics libraries to define an oracle and use Grover's algorithm to determine the missing digit of the ISBN of a book you desperately need to save your spaceship.
+You'll use the Standard library to define an oracle and use Grover's algorithm to determine the missing digit of the ISBN of a book you desperately need to save your spaceship.

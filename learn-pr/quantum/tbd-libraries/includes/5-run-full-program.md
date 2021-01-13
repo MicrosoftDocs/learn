@@ -1,5 +1,7 @@
 ﻿In the previous unit, you defined the operation `IsbnOracle`, which takes as an argument the qubit register for our search space and ultimately applies a phase factor of -1 to the number state $\ket{x}$ which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
 To do so, you also defined the operation `ComputeIsbnCheck`, which is used inside `IsbnOracle` and performs the necessary arithmetic mapping to a second qubit register.
+In addition, we wrote the function `GetIsbnCheckConstants` to determine the check condition constants $a$ and $b$ for $(b + a \cdot x) \bmod 11$ from any arbitrary ISBN with a single digit missing. 
+We will continue below with our use of the generalized code, passing these constants to the oracle.
 
 Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations," each of which consists of:
 1. applying the oracle,
@@ -76,7 +78,7 @@ $$
 \left ( \sum_{i=0}^{9} (10-i) x_i \right ) \bmod 11 = 0
 $$
 
-Our function will take an array of integers corresponding to our ISBN---in our case, 0-306-$x$0615-2 with $x$ the missing digit returned by the algorithm---and returns `True` if the equation is satisfied, `False` if not.
+Our function will take an array of integers corresponding to our ISBN---in our example, 0-306-$x$0615-2 with $x$ the missing digit returned by the algorithm---and returns `True` if the equation is satisfied, `False` if not.
 
 ```qsharp
     function IsIsbnValid(digits : Int[]) : Bool {
@@ -92,6 +94,27 @@ Our function will take an array of integers corresponding to our ISBN---in our c
 ```
 
 Thus our full program will simply repeat Grover's algorithm until this condition is met, indicating the returned digit correctly completes the ISBN. 
+
+### Generalizing for any ISBN
+
+Recall that the incomplete ISBNs will be provided as 10-integer arrays with the missing digit indicated by `-1`.
+To create the reuslting ISBN array to check with `IsIsbnValid`, we also write the function `MakeResultIsbn` which replaces that `-1` with the `missingDigit` output by the algorithm:
+
+```qsharp
+    function MakeResultIsbn(missingDigit : Int, inputISBN : Int[]) : Int[] {
+        mutable resultISBN = new Int[Length(inputISBN)];
+        for (i in 0..Length(inputISBN) - 1) {
+            if (inputISBN[i] < 0) {
+                set resultISBN w/= i <- missingDigit;
+            }
+            else {
+                set resultISBN w/= i <- inputISBN[i];
+            }
+        }
+        return resultISBN;
+    }
+```
+
 
 ## Run the full program
 
@@ -115,12 +138,21 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
     @EntryPoint()
     operation SearchForMissingDigit() : Int {
         
+        // define the incomplete ISBN, missing digit at -1
+        let inputISBN = [0, 3, 0, 6, -1, 0, 6, 1, 5, 2];
+        let constants = GetIsbnCheckConstants(inputISBN);
+        let (a, b) = constants;
+
+        Message($"ISBN with missing digit: {inputISBN}");
+        Message($"Oracle validates: ({b} + {a}x) mod 11 = 0 \n");
+
         // get the number of Grover iterations required for 10 possible results and 1 solution
         let numIterations = NIterations(10);
 
         // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
         using (digitReg = Qubit[4]) {
             mutable missingDigit = 0;
+            mutable resultISBN = new Int[10];
 
             // Repeat the algorithm until the result forms a valid ISBN
             repeat{
@@ -131,7 +163,7 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
                 // The Grover iterations
                 for (idxIteration in 1..numIterations) {
                     // Apply the oracle
-                    IsbnOracle(digitReg);
+                    IsbnOracle(digitReg, constants);
 
                     // Reflect about the uniform superposition
                     ReflectAboutUniform(digitReg);
@@ -140,9 +172,12 @@ To perform the full search, define the operation `SearchForMissingDigit` as belo
                 // Print the resulting state of the system and then measure
                 DumpMachine(); 
                 set missingDigit = MeasureInteger(LittleEndian(digitReg));
+                set resultISBN = MakeResultIsbn(missingDigit, inputISBN);
             } 
-            until (IsIsbnValid([0, 3, 0, 6, missingDigit, 0, 6, 1, 5, 2]));
+            until (IsIsbnValid(resultISBN));
 
+            Message($"Missing digit: {missingDigit}");
+            Message($"Full ISBN: {resultISBN}");
             return missingDigit;
         }
     }
@@ -156,41 +191,68 @@ Your program file should look like the following:
 
 ```qsharp
 namespace ISBNGrover {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Arithmetic;
-    open Microsoft.Quantum.Arrays;
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Preparation;
-    open Microsoft.Quantum.Diagnostics;
+    open Microsoft.Quantum.Canon; // ApplyControlledOnInt, ApplyToEachCA
+    open Microsoft.Quantum.Intrinsic; // X, H, Z
+    open Microsoft.Quantum.Arithmetic; 
+    // ApplyXorInPlace, MultiplyAndAddByModularInteger, LittleEndian, MeasureInteger
+    open Microsoft.Quantum.Arrays; // ConstantArray, Most, Tail, Enumerated
+    open Microsoft.Quantum.Convert; // IntAsDouble
+    open Microsoft.Quantum.Math; // ArcSin, Sqrt, Round, PI, ComplexPolar
+    open Microsoft.Quantum.Preparation; // PrepareArbitraryStateCP
+    open Microsoft.Quantum.Diagnostics; // EqualityFactI, DumpMachine
 
 
-    operation ComputeIsbnCheck(digitReg : Qubit[], targetReg : Qubit[]) : Unit is Adj + Ctl {
+    operation ComputeIsbnCheck(digitReg : Qubit[], targetReg : Qubit[], constants : (Int, Int)) : Unit is Adj + Ctl {
+        let (a, b) = constants;
+
         // Being freshly allocated, targetReg will be in |0⟩ when this operation is called.
-        // We first intialize it to |9⟩:
-        ApplyXorInPlace(9, LittleEndian(targetReg));
+        // We first intialize it to |b⟩:
+        ApplyXorInPlace(b, LittleEndian(targetReg));
 
-        // Apply the mapping |x⟩|9⟩ -> |x⟩ |(9 + 6x) mod 11 ⟩ where |x⟩ is the state of digitReg
-        MultiplyAndAddByModularInteger(6, 11, LittleEndian(digitReg), LittleEndian(targetReg));
+        // Apply the mapping |x⟩|b⟩ -> |x⟩ |(b + a*x) mod 11 ⟩ where |x⟩ is the state of digitReg
+        MultiplyAndAddByModularInteger(a, 11, LittleEndian(digitReg), LittleEndian(targetReg));
     }
 
 
-    operation IsbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
+    operation IsbnOracle(digitReg : Qubit[], constants : (Int, Int)) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
                 // Initialize flag qubit to |-⟩ 
                 X(flagQubit);
                 H(flagQubit);
-                // Map targetReg to |(9 + 6x) mod 11 ⟩, where |x⟩ is the state of digitReg
-                ComputeIsbnCheck(digitReg, targetReg);
+                // Map targetReg to |(b + a*x) mod 11 ⟩, where |x⟩ is the state of digitReg
+                ComputeIsbnCheck(digitReg, targetReg, constants);
             } apply {
                 // States where targetReg is in |0⟩ number state will be flagged with a -1
                 // phase due to controlled X they apply to the flag qubit in the |-⟩ state.  
                 ApplyControlledOnInt(0, X, targetReg, flagQubit);
             }
         }
+    }
+
+
+    function GetIsbnCheckConstants(digits : Int[]) : (Int, Int) {
+        EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
+        // |(b + a x) mod 11 ⟩
+        mutable a = 0;
+        mutable b = 0;
+        for ((idx, digit) in Enumerated(digits)) {
+            if (digit < 0) {
+                set a = 10 - idx;
+            }
+            else {
+                set b += (10 - idx) * digit;
+            } 
+        }
+        return (a, b % 11);
+    }
+
+
+    function NIterations(nItems : Int) : Int {
+        let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
+        let nIterations = Round(0.25 * PI() / angle - 0.5);
+        return nIterations;
     }
 
 
@@ -206,17 +268,10 @@ namespace ISBNGrover {
             // Transform the all-zero state to all-ones
             ApplyToEachCA(X, digitReg);
         } apply {
-            // Reflects about that all-ones state, then let
-            // the within/apply block transform us back.
+            // Reflects about that all-ones state, then let the within/apply
+            // block transform the state back to the initial basis.
             Controlled Z(Most(digitReg), Tail(digitReg));
         }
-    }
-
-
-    function NIterations(nItems : Int) : Int {
-        let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
-        let nIterations = Round(0.25 * PI() / angle - 0.5);
-        return nIterations;
     }
 
 
@@ -225,21 +280,44 @@ namespace ISBNGrover {
         
         mutable acc = 0;
         for ((idx, digit) in Enumerated(digits)) {
-            set acc = (acc + (10 - idx) * digit) % 11;
+            set acc += (10 - idx) * digit;
         }
-        return acc == 0;
+        return acc % 11 == 0;
+    }
+
+
+    function MakeResultIsbn(missingDigit : Int, inputISBN : Int[]) : Int[] {
+        mutable resultISBN = new Int[Length(inputISBN)];
+        for (i in 0..Length(inputISBN) - 1) {
+            if (inputISBN[i] < 0) {
+                set resultISBN w/= i <- missingDigit;
+            }
+            else {
+                set resultISBN w/= i <- inputISBN[i];
+            }
+        }
+        return resultISBN;
     }
 
 
     @EntryPoint()
     operation SearchForMissingDigit() : Int {
         
+        // define the incomplete ISBN, missing digit at -1
+        let inputISBN = [0, 3, 0, 6, -1, 0, 6, 1, 5, 2];
+        let constants = GetIsbnCheckConstants(inputISBN);
+        let (a, b) = constants;
+
+        Message($"ISBN with missing digit: {inputISBN}");
+        Message($"Oracle validates: ({b} + {a}x) mod 11 = 0 \n");
+
         // get the number of Grover iterations required for 10 possible results and 1 solution
         let numIterations = NIterations(10);
 
         // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
         using (digitReg = Qubit[4]) {
             mutable missingDigit = 0;
+            mutable resultISBN = new Int[10];
 
             // Repeat the algorithm until the result forms a valid ISBN
             repeat{
@@ -250,7 +328,7 @@ namespace ISBNGrover {
                 // The Grover iterations
                 for (idxIteration in 1..numIterations) {
                     // Apply the oracle
-                    IsbnOracle(digitReg);
+                    IsbnOracle(digitReg, constants);
 
                     // Reflect about the uniform superposition
                     ReflectAboutUniform(digitReg);
@@ -259,9 +337,12 @@ namespace ISBNGrover {
                 // Print the resulting state of the system and then measure
                 DumpMachine(); 
                 set missingDigit = MeasureInteger(LittleEndian(digitReg));
+                set resultISBN = MakeResultIsbn(missingDigit, inputISBN);
             } 
-            until (IsIsbnValid([0, 3, 0, 6, missingDigit, 0, 6, 1, 5, 2]));
+            until (IsIsbnValid(resultISBN));
 
+            Message($"Missing digit: {missingDigit}");
+            Message($"Full ISBN: {resultISBN}");
             return missingDigit;
         }
     }
@@ -276,30 +357,33 @@ namespace ISBNGrover {
 In the command line, enter `dotnet run` and your should see the following output:
 
 ```output
+ISBN with missing digit: [0,3,0,6,-1,0,6,1,5,2]
+Oracle validates: (9 + 6x) mod 11 = 0 
+
 # wave function for qubits with ids (least to most significant): 0;1;2;3
 ∣ 0❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
-∣ 1❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
+∣ 1❭:   -0.012649 +  0.000000 i  ==     *                    [ 0.000160 ] ---     [  3.14159 rad ]
 ∣ 2❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
 ∣ 3❭:   -0.012649 +  0.000000 i  ==     *                    [ 0.000160 ] ---     [  3.14159 rad ]
 ∣ 4❭:    0.999280 +  0.000000 i  ==     ******************** [ 0.998560 ]     --- [  0.00000 rad ]
-∣ 5❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
-∣ 6❭:   -0.012649 +  0.000000 i  ==     *                    [ 0.000160 ] ---     [  3.14159 rad ]
+∣ 5❭:   -0.012649 +  0.000000 i  ==     *                    [ 0.000160 ] ---     [  3.14159 rad ]
+∣ 6❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
 ∣ 7❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
 ∣ 8❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
-∣ 9❭:   -0.012649 + -0.000000 i  ==     *                    [ 0.000160 ]     --- [ -3.14159 rad ]
-∣10❭:   -0.000000 +  0.000000 i  ==     *                    [ 0.000000 ]  \      [  2.23582 rad ]
-∣11❭:   -0.000000 +  0.000000 i  ==     *                    [ 0.000000 ] ---     [  3.13413 rad ]
+∣ 9❭:   -0.012649 +  0.000000 i  ==     *                    [ 0.000160 ] ---     [  3.14159 rad ]
+∣10❭:    0.000000 +  0.000000 i  ==     *                    [ 0.000000 ]      /  [  0.63970 rad ]
+∣11❭:   -0.000000 +  0.000000 i  ==     *                    [ 0.000000 ] ---     [  2.94946 rad ]
 ∣12❭:   -0.000000 + -0.000000 i  ==     *                    [ 0.000000 ]     --- [ -3.14159 rad ]
-∣13❭:    0.000000 +  0.000000 i  ==     *                    [ 0.000000 ]     --- [  0.00000 rad ]
+∣13❭:    0.000000 + -0.000000 i  ==     *                    [ 0.000000 ]     --- [ -0.00000 rad ]
 ∣14❭:    0.000000 +  0.000000 i  ==     *                    [ 0.000000 ]     --- [  0.00000 rad ]
-∣15❭:   -0.000000 +  0.000000 i  ==     *                    [ 0.000000 ] ---     [  3.14159 rad ]
+∣15❭:   -0.000000 + -0.000000 i  ==     *                    [ 0.000000 ]     --- [ -3.14159 rad ]
+Missing digit: 4
+Full ISBN: [0,3,0,6,4,0,6,1,5,2]
 4
 ```
 
 As expected, we see that the Grover iterations left only one basis state with a significant amplitude; precisely that one corresponding to our missing digit: $\ket{4}$.
 Hence the returned measurement result is 4.
-
-A quick double check: $6\cdot 4 = 24$, so $(9 + 6\cdot 4) = 33 = 0 \text{ mod } 11$, and indeed this is a valid ISBN. 
 
 You've got the book you need!
 

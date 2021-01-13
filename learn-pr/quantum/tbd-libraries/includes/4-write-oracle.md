@@ -135,6 +135,76 @@ The code to do this is shown below.
     }
 ```
 
+## Generalize to arbitrary ISBNs
+
+Our discussion above was simplified by only considering the specific ISBN check of 
+$$
+0 = (9 + 6\cdot x) \bmod 11
+$$
+which resulted from the incomplete ISBN of 0-306-$x$0615-2.
+
+But what about any future space explorers who also forget to properly secure their coffee cups around their notes from the librarian?
+Surely they would appreciate a program which would let them find any one missing digit from any arbitrary ISBN.
+
+With them in mind, we can write a function `GetIsbnCheckConstants` to return the constants $a$ and $b$ of the corresponding check equation:
+$$
+0 = (b + a\cdot x) \bmod 11.
+$$
+Assuming we will represent the incomplete ISBN as a 10-integer array with the missing digit indicated by a `-1`, we define this function as
+
+```qsharp
+    function GetIsbnCheckConstants(digits : Int[]) : (Int, Int) {
+        EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
+        // |(b + a x) mod 11 ⟩
+        mutable a = 0;
+        mutable b = 0;
+        for ((idx, digit) in Enumerated(digits)) {
+            if (digit < 0) {
+                set a = 10 - idx;
+            }
+            else {
+                set b += (10 - idx) * digit;
+            } 
+        }
+        return (a, b % 11);
+    }
+```
+As expected, this returns a tuple `(6, 9)` if given our example as `[0, 3, 0, 6, -1, 0, 6, 1, 5, 2]`.
+
+Now, we redefine `ComputeIsbnCheck` and `IsbnOracle` to take these constants as inputs:
+
+```qsharp
+    operation ComputeIsbnCheck(digitReg : Qubit[], targetReg : Qubit[], constants : (Int, Int)) : Unit is Adj + Ctl {
+        let (a, b) = constants;
+
+        // Being freshly allocated, targetReg will be in |0⟩ when this operation is called.
+        // We first intialize it to |b⟩:
+        ApplyXorInPlace(b, LittleEndian(targetReg));
+
+        // Apply the mapping |x⟩|b⟩ -> |x⟩ |(b + a*x) mod 11 ⟩ where |x⟩ is the state of digitReg
+        MultiplyAndAddByModularInteger(a, 11, LittleEndian(digitReg), LittleEndian(targetReg));
+    }
+
+
+    operation IsbnOracle(digitReg : Qubit[], constants : (Int, Int)) : Unit is Adj + Ctl {
+        // Allocate target register for oracle mapping, flag qubit for phase kickback
+        using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
+            within {
+                // Initialize flag qubit to |-⟩ 
+                X(flagQubit);
+                H(flagQubit);
+                // Map targetReg to |(b + a*x) mod 11 ⟩, where |x⟩ is the state of digitReg
+                ComputeIsbnCheck(digitReg, targetReg, constants);
+            } apply {
+                // States where targetReg is in |0⟩ number state will be flagged with a -1
+                // phase due to controlled X they apply to the flag qubit in the |-⟩ state.  
+                ApplyControlledOnInt(0, X, targetReg, flagQubit);
+            }
+        }
+    }
+```
+
+
 ## What's next?
 
 In the next unit, you will put all this together and run Grover's algorithm to find the missing digit.
