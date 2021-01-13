@@ -60,11 +60,12 @@ The Command and Query Responsibility Segregation (CQRS) pattern separates read a
 
 CQRS separates reads and writes into different models, using commands to update data, and queries to read data.
 
-Commands should be task based, rather than data centric. ("Book hotel room", not "set ReservationStatus to Reserved").
+Commands should be task-based, rather than data centric. ("Book hotel room", not "set ReservationStatus to Reserved").
 Commands may be placed on a queue for asynchronous processing, rather than being processed synchronously.
 Queries never modify the database. A query returns a DTO that does not encapsulate any domain knowledge.
 
- In a CQRS context, one benefit of Event Sourcing is that the same events can be used to notify other components — in particular, to notify the read model. The read model uses the events to create a snapshot of the current state, which is more efficient for queries. However, Event Sourcing adds complexity to the design.
+In a CQRS context, one benefit of Event Sourcing is that the same events can be used to notify other components - in particular, to notify the read model. The read model uses the events to create a snapshot of the current state, which is more efficient for queries. In conclusion, events can be seen as the reaction of a command or as a change in the view. So you have the commands, which trigger something, queries to get the current status and the events, who inform about any changes or happenings.
+However, Event Sourcing adds complexity to the design.
 
 Benefits of CQRS include:
 

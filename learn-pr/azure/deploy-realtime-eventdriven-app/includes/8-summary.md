@@ -6,7 +6,7 @@ Your application is sending event based telemetric data in real time to Cosmos D
 
 2. Send the telemetry data towards an event hub.
 
-3. Read the events with a function, process them and store them in a database.
+3. Consuming the events with a function, process them and store them in a database.
 
 4. Add monitoring.
 
@@ -31,9 +31,10 @@ This command might take a minute to run.
 > [!IMPORTANT]
 > Deprovision the Azure resources you used in this module to avoid unwanted charges.
 
-## Extra resources
+## Additional resources
 
-Resources
 [Tutorial: Create a function in Java with an Event Hub trigger and an Azure Cosmos DB output binding](https://docs.microsoft.com/azure/azure-functions/functions-event-hub-cosmos-db?WT.mc_id=java-9741-sakriema)
 
-[An introduction to Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=java-9741-sakriema)
+[An introduction to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction?WT.mc_id=java-9741-sakriema)
+
+[Best practices for Azure Functions](https://docs.microsoft.com/azure/azure-functions/storage-considerations?WT.mc_id=java-9741-sakriema)

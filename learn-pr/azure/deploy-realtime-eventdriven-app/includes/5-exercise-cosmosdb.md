@@ -2,7 +2,7 @@ A function can listen to events of the specific namespace in the Azure Event Hub
 
 ## Create an Azure Cosmos DB
 
-To create the Cosmos DB, use the 'az cosmosdb create' command. You have to create a Cosmos DB account, a database, and a sql container.
+To create the Cosmos DB, use the 'az cosmosdb create' command. You'll use a Cosmos DB account, a database, and an sql container.
 
 ```bash
 az cosmosdb create \
@@ -20,7 +20,29 @@ az cosmosdb sql container create \
     --partition-key-path '/temperatureStatus'
 ```
 
-For our scenario is the temperature interesting. So we define 'temperatureStatus' as the partition key.
+For our scenario, the temperature is interesting. So we define 'temperatureStatus' as the partition key.
+
+### Build, Configure, and Deploy another Azure Function
+
+With Event Hubs, you can start with data streams in megabytes, and grow to gigabytes or terabytes. The Auto-inflate feature is one of the many options available to scale the number of throughput units to meet your usage needs.
+
+The consuming applications to each have a separate view of the event stream. They read the stream independently at their own pace and with their own offsets.
+
+For our scenario, you'll create one consuming Azure function as an example. To create the function, following the best practices, you'll create it independent, with its own storage account, and bindings. That leads into loose coupling, and scalability.
+
+``` bash
+az storage account create \
+    --resource-group $RESOURCE_GROUP \
+    --name $STORAGE_ACCOUNT"-consumer" \
+    --sku Standard_LRS
+az functionapp create \
+    --resource-group $RESOURCE_GROUP \
+    --name $FUNCTION_APP"-consumer"\
+    --storage-account $STORAGE_ACCOUNT"-consumer" \
+    --consumption-plan-location $LOCATION \
+    --runtime java \
+    --functions-version 2
+```
 
 ## Retrieve the Cosmos DB Connection String
 

@@ -2,7 +2,7 @@ For our example, we'll use Event Sourcing in a CQRS context. So let's build a fu
 
 ## Prepare your environment
 
-Let's define some environment variables to keep the following commands as short and understandable as possible.
+Let's define some environment variables to keep all following commands as short and understandable as possible.
 
 ```bash
 RESOURCE_GROUP=<value>
@@ -54,17 +54,17 @@ az eventhubs eventhub authorization-rule create \
 
 ### Build, Configure, and Deploy the Azure Function
 
-To make this example as realistic as possible, you'll create an Azure Functions and simulate telemetric data. You could also bind an IoT device to your Azure Function, which would then take real data.
+To make this example as realistic as possible, you'll create an Azure Function and simulate telemetric data. You could also bind an IoT device to your Azure Function, which would then take real data.
 
 ``` bash
 az storage account create \
     --resource-group $RESOURCE_GROUP \
-    --name $STORAGE_ACCOUNT \
+    --name $STORAGE_ACCOUNT"-producer" \
     --sku Standard_LRS
 az functionapp create \
     --resource-group $RESOURCE_GROUP \
-    --name $FUNCTION_APP \
-    --storage-account $STORAGE_ACCOUNT \
+    --name $FUNCTION_APP"-producer"\
+    --storage-account $STORAGE_ACCOUNT"-producer" \
     --consumption-plan-location $LOCATION \
     --runtime java \
     --functions-version 2
@@ -80,7 +80,7 @@ To retrieve the connection strings for the storage account and the Event Hub, we
 ```bash
 AZURE_WEB_JOBS_STORAGE=$( \
     az storage account show-connection-string \
-        --name $STORAGE_ACCOUNT \
+        --name $STORAGE_ACCOUNT"-producer" \
         --query connectionString \
         --output tsv)
 echo $AZURE_WEB_JOBS_STORAGE
@@ -100,7 +100,7 @@ These connection strings need to be stored in the application settings at your A
 ```bash
 az functionapp config appsettings set \
     --resource-group $RESOURCE_GROUP \
-    --name $FUNCTION_APP \
+    --name $FUNCTION_APP"-producer" \
     --settings \
         AzureWebJobsStorage=$AZURE_WEB_JOBS_STORAGE \
         EventHubConnectionString=$EVENT_HUB_CONNECTION_STRING
@@ -114,7 +114,7 @@ Next, create a local functions project with Maven.
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId=com.microsoft.azure \
     -DarchetypeArtifactId=azure-functions-archetype \
-    -DappName=$FUNCTION_APP \
+    -DappName=$FUNCTION_APP"-producer" \
     -DresourceGroup=$RESOURCE_GROUP \
     -DgroupId=com.learn \
     -DartifactId=telemetry-functions
