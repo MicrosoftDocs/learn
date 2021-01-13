@@ -16,24 +16,24 @@ quiz:
   questions:
   - content: "Which VPN tunneling protocol provides the best features for Contoso's mobile users?"
     choices:
-    - content: "PPTP."
+    - content: "PPTP"
       isCorrect: false
       explanation: "That's incorrect. This is not the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
-    - content: "S2TP."
+    - content: "S2TP"
       isCorrect: false
       explanation: "That's incorrect. This is not the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
-    - content: "IKEv2."
+    - content: "IKEv2"
       isCorrect: true
       explanation: "That's correct. IKEv2 supports mobility, making it a good protocol choice for a mobile workforce."
   - content: "A Contoso network administrator configures their VPN server to use IP addresses from a DHCP server on their private network to assign those addresses to remote clients. How many IP addresses is it going to lease at a time?"
     choices:
-    - content: "2."
+    - content: "2"
       isCorrect: false
       explanation: "That's incorrect. It leases more addresses at a time."
-    - content: "10."
+    - content: "10"
       isCorrect: true
       explanation: "That's correct. The remote access VPN server will lease a block of 10 addresses at a time from the DHCP server and then assign those addresses to remote clients"
-    - content: "25."
+    - content: "25"
       isCorrect: false
       explanation: "That's incorrect. It leases fewer addresses at a time."
   - content: "Which of the following is a RADIUS client?"
