@@ -21,7 +21,7 @@ In an on-premises datacenter, you have responsibility for everything from physic
 
 ### Infrastructure as a Service (IaaS)
 
-Of all cloud services, IaaS requires the most management by the cloud customer. With IaaS, you are using the cloud provider’s computing infrastructure. The cloud customer is not responsible for the physical components such as computers and the network, or the physical security of the datacenter. However, the cloud customer still has responsibility for software components such as operating systems, network controls, applications, and protecting data.
+Of all cloud services, IaaS requires the most management by the cloud customer. With IaaS, you're using the cloud provider’s computing infrastructure. The cloud customer isn't responsible for the physical components such as computers and the network, or the physical security of the datacenter. However, the cloud customer still has responsibility for software components such as operating systems, network controls, applications, and protecting data.
 
 ### Platform as a Service (PaaS)
 
@@ -29,9 +29,9 @@ PaaS provides an environment for building, testing, and deploying software appli
 
 ### Software as a Service (SaaS)
 
-SaaS is software that is hosted and managed by the cloud provider, for the customer. It is usually licensed through a monthly or annual subscription. Microsoft 365, Skype, and Dynamics CRM Online are all examples of SaaS software.  SaaS requires the least amount of management by the cloud customer. The cloud provider is responsible for managing everything except data, devices, and accounts and identities.
+SaaS is software that is hosted and managed by the cloud provider, for the customer. It's usually licensed through a monthly or annual subscription. Microsoft 365, Skype, and Dynamics CRM Online are all examples of SaaS software.  SaaS requires the least amount of management by the cloud customer. The cloud provider is responsible for managing everything except data, devices, and accounts and identities.
 
-For all cloud deployment types you, the cloud customer, own your data and identities. You are responsible for protecting the security of your data and identities, and on-premises resources.
+For all cloud deployment types you, the cloud customer, own your data and identities. You're responsible for protecting the security of your data and identities, and on-premises resources.
 
 In summary, responsibilities always retained by the customer organization include:
 
