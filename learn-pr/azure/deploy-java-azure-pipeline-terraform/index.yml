@@ -33,7 +33,8 @@ units:
 - learn.azure.deploy-java-azure-pipeline-terraform.2-terraform
 - learn.azure.deploy-java-azure-pipeline-terraform.3-github-actions
 - learn.azure.deploy-java-azure-pipeline-terraform.4-exercise
-- learn.azure.deploy-java-azure-pipeline-terraform.5-knowledge-check
-- learn.azure.deploy-java-azure-pipeline-terraform.6-summary
+- learn.azure.deploy-java-azure-pipeline-terraform.5-exercise
+- learn.azure.deploy-java-azure-pipeline-terraform.6-knowledge-check
+- learn.azure.deploy-java-azure-pipeline-terraform.7-summary
 badge:
   uid: learn.azure.deploy-java-azure-pipeline-terraform.badge

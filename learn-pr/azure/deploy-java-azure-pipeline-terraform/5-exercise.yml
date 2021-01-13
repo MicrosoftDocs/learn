@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-azure-pipeline-terraform.4-exercise
-title: Provision exercise
+uid: learn.azure.deploy-java-azure-pipeline-terraform.5-exercise
+title: Deploy exercise
 metadata:
-  title: Provision exercise
-  description: In this exercise, you'll configure GitHub actions to provision your Terraform resources.
+  title: Deploy exercise
+  description: In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
   ms.date: 09/18/2020
   author: roryp
   ms.author: ropreddy
