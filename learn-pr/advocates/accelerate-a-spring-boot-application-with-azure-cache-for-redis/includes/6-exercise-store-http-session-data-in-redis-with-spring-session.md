@@ -76,6 +76,8 @@ curl -b cookie.txt -c cookie.txt http://127.0.0.1:8080/session
 > [!NOTE]
 > This command line will save your cookie in a file called `cookie.txt`.
 
+![HTTP Session replication](../media/6-http-session.png)
+
 To check if sessions are correctly persisted, you can restart your server, and verify that your session data wasn't lost.
 
 In the next unit, we'll go further and cluster HTTP sessions between your local machine and a cloud service.
