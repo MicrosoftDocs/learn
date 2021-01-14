@@ -17,7 +17,7 @@ A typical orchestrator performs the tasks in the following table.
 |Service discovery|Enables containers to locate each other automatically even as they move between host machines and change IP addresses.|
 |Coordinated application upgrades|Manages container upgrades to reduce application downtime and facilitates rollback if something goes wrong.|
 
-The following image is an example of some of the elements involved in orchestrating applications with containers and how they might interact. This image has various application types and container images. Applications are applied to container images and deployed to a cluster as a running container, with multiple containers running in each deployment instance. A separate host acts to co-ordinate some of these actions and tasks.
+The following image is an example of some of the elements involved in orchestrating applications with containers and how they might interact. This image has various application types and container images. Applications are applied to container images and deployed to a cluster as a running container, with multiple containers running in each deployment instance. A separate host acts to coordinate some of these actions and tasks.
 
 :::image type="content" source="../media/m26-orchestration.png" alt-text="The components of a typical orchestration solution with representations for container images, a host server virtual machine, container images, containerized applications, container instances, and clusters of containers." border="false":::
 
