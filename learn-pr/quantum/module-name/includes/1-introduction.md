@@ -7,9 +7,11 @@ In the [Quantum Computing Foundations learning path](), the quantum space explor
 
 In this module, you'll set up your access to Azure Quantum and run your first quantum program on hardware through the cloud. Azure Quantum offers two different types of services: optimization solutions, and quantum computing solutions. Different divisions of the quantum space crew will need one of the two different types of solutions that Azure Quantum offers:
 
-- Quantum computing targets to run quantum algorithms in real or simulated quantum devices. The navigation division will run the Grover's algorithm in Q# for routing between space stations.
+- Quantum computing solutions to run quantum algorithms in real or simulated quantum devices. The navigation division will run the Grover's algorithm in Q# for routing between space stations.
 
-- Solvers to address optimization problems using classical hardware. The logistics and maintenance divisions will need this optimization service for cargo vessel loading and job scheduling prioritization. 
+
+- Optimization solutions to address optimization problems using classical hardware. The logistics and maintenance divisions will need this for optimal cargo vessel loading and job scheduling prioritization. 
+
 
 You will be carrying out these tasks in the upcoming modules.
 
@@ -24,6 +26,7 @@ In this module you'll:
 ## Prerequisites
 
 - None for users in the Optimization path.
-- TBD to confirm if we can use Sandbox: [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
+[Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
+
 - TBD if users need to download this: The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true) 
 - TBD if users need to download this:[Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
