@@ -6,9 +6,9 @@ Having a public endpoint means that the resource is assigned a public IP address
 
 The problem is that your Azure SQL database is exposed to the internet via its public IP address. That exposure creates multiple security risks. The same security risks are present when an Azure resource is accessed via a public IP address from the following locations:
 
-* A peered Azure virtual network.
-* An on-premises network that connects to Azure using ExpressRoute and Microsoft peering.
-* A customer's Azure virtual network that connects to an Azure service offered by your company.
+* A peered Azure virtual network
+* An on-premises network that connects to Azure using ExpressRoute and Microsoft peering
+* A customer's Azure virtual network that connects to an Azure service offered by your company
 
 :::image type="content" source="../media/2-private-link-description.png" alt-text="Network diagram of an Azure virtual network, an Azure peered virtual network, and an on-premises network accessing an Azure SQL database via the internet.":::
 
