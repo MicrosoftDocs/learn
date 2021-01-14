@@ -6,14 +6,14 @@ In this unit, you're going to use Azure CLI and Curl commands to view the live l
 
 The ASP.NET app that you've deployed includes the following code for the home page:
 
-    ```csharp
-    logger.LogInformation("Information message from OnGet method on Index.cshtml page");
-    logger.LogDebug("Debug message from OnGet method on Index.cshtml page");
-    logger.LogError("Error message from OnGet method on Index.cshtml page");
-    logger.LogWarning("Warning message from OnGet method on Index.cshtml page");
-    logger.LogTrace("Trace message from OnGet method on Index.cshtml page");
-    logger.LogCritical("Critical message from OnGet method on Index.cshtml page");
-    ```
+```csharp
+logger.LogInformation("Information message from OnGet method on Index.cshtml page");
+logger.LogDebug("Debug message from OnGet method on Index.cshtml page");
+logger.LogError("Error message from OnGet method on Index.cshtml page");
+logger.LogWarning("Warning message from OnGet method on Index.cshtml page");
+logger.LogTrace("Trace message from OnGet method on Index.cshtml page");
+logger.LogCritical("Critical message from OnGet method on Index.cshtml page");
+```
 
 Similar code is included on the other pages. Each time a page is loaded, a log entry will be generated for every log level that has been enabled in the app service. So, because you enabled **Error**-level logging for the file system, you will only see **LogError** and **LogCritical** messages.
 
