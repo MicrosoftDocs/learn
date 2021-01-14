@@ -26,4 +26,3 @@ By the end of this module, you can:
 - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
 - [jq Utility](https://stedolan.github.io/jq/)
 - [Bash Shell](https://www.gnu.org/software/bash/)
-
