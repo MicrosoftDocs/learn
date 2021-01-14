@@ -79,7 +79,7 @@ First you'll create the MongoDB database for holding the data captured from the 
     | Source | Any |
     | Source port ranges | * |
     | Destination | Any |
-    | Destination port ranges | 27017 |
+    | Destination port ranges | 8080 |
     | Protocol | Any |
     | Action | Allow |
     | Priority | 1030 |
@@ -87,6 +87,9 @@ First you'll create the MongoDB database for holding the data captured from the 
     | Description | Port that clients use to connect to MongoDB |
 
 1. Select **Add**.
+
+> [!NOTE]
+> You'll configure MongoDB to use port 8080 in this exercise. You only need to do this due to security constraints in this environment. You would normally use the default MongoDB port of **27017**.
 
 ### Task 3: Install MongoDB
 
@@ -104,14 +107,6 @@ First you'll create the MongoDB database for holding the data captured from the 
 
 1. At the prompt, type **yes** to continue connecting.
 1. Enter the password **Pa55w.rdPa55w.rd**.
-1. To create a list of packages, enter this command:
-
-    ```bash
-    echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
-    ```
-
-    The command should return text similar to `deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.0 multiverse`. This indicates that the package list has been successfully created.
-
 1. To reload the package database, enter this command:
 
     ```bash
@@ -136,7 +131,8 @@ By default, the Mongo DB instance is configured to run without authentication. I
     sudo nano /etc/mongodb.conf
     ```
 
-1. In the file, locate the **bindIp** setting, and set it to **0.0.0.0**.
+1. In the file, locate the **bind_ip** setting, and set it to **0.0.0.0**.
+1. Locate the **port** setting, and set it to **8080**.
 1. To save the configuration file, press <kbd>Esc</kbd> and then press <kbd>CTRL + X</kbd>. Press <kbd>y</kbd> and then <kbd>Enter</kbd> to save the modified buffer.
 1. To restart the MongoDB service and apply your changes, enter this command:
 
@@ -147,7 +143,7 @@ By default, the Mongo DB instance is configured to run without authentication. I
 1. To connect to the MongoDB service, enter this command:
 
     ```bash
-    mongo
+    mongo --host 127.0.0.1:8080
     ```
 
 1. At the **>** prompt, to switch to the **admin** database, run this command:
@@ -181,7 +177,7 @@ By default, the Mongo DB instance is configured to run without authentication. I
 1. To connect to MongoDB with the new administrator's account, run this command:
 
     ```bash
-    mongo admin -u "administrator" -p "Pa55w.rd"
+    mongo admin -u "administrator" -p "Pa55w.rd" --host 127.0.0.1:8080
     ```
 
 1. To switch to the **DeviceData** database, execute this command:
@@ -217,7 +213,7 @@ By default, the Mongo DB instance is configured to run without authentication. I
 1. Run the following command to verify that you can now log in to mongodb as the deviceadmin user:
 
     ```bash
-    mongo DeviceData -u "deviceadmin" -p "Pa55w.rd"
+    mongo DeviceData -u "deviceadmin" -p "Pa55w.rd" --host 127.0.0.1:8080
     ```
 
 1. At the **>** prompt, run the following command to quit the mongo shell:
@@ -277,8 +273,11 @@ You have now created a MongoDB server and database. The next step is to demonstr
     code App.config
     ```
 
-    This file contains the settings for connecting to the MongoDB database. Set the value for the **Address** key to the IP address of the MongoDB server that you recorded earlier, and then save the file and close the editor.
+    This file contains the settings for connecting to the MongoDB database. 
 
+1. Set the value for the **Address** key to the IP address of the MongoDB server that you recorded earlier.
+1. Change the port the app uses to **8080**.
+1. Save the file and close the editor using <kbd>CTRL</kbd> + <kbd>s/kbd>, and then <kbd>CTRL</kbd> + <kbd>q</kbd>.
 1. Run the following command to rebuild the application:
 
     ```bash
@@ -300,7 +299,7 @@ You have now created a MongoDB server and database. The next step is to demonstr
 1. Move to the ***DP160T00A-Migrating-your-Database-to-Cosmos-DB/MongoDeviceDataCapture/DeviceDataQuery** folder:
 
     ```bash
-    cd ~/*DP160T00A-Migrating-your-Database-to-Cosmos-DB/MongoDeviceDataCapture/DeviceDataQuery
+    cd ~/migration-workshop-apps/MongoDeviceDataCapture/DeviceDataQuery
     ```
 
     This folder contains another application that you can use to analyze the data captured by each device.
@@ -325,8 +324,9 @@ You have now created a MongoDB server and database. The next step is to demonstr
     code App.config
     ```
 
-    As before, set the value for the **Address** key to the IP address of the MongoDB server that you recorded earlier, and then save the file and close the editor.
-
+1. Set the value for the **Address** key to the IP address of the MongoDB server that you recorded earlier.
+1. Change the port the app uses to **8080**.
+1. Save the file and close the editor using <kbd>CTRL</kbd> + <kbd>s/kbd>, and then <kbd>CTRL</kbd> + <kbd>q</kbd>.
 1. Build and run the application:
 
     ```bash
@@ -608,14 +608,3 @@ The final step is to reconfigure your existing MongoDB applications to connect t
 1. Test the application with other device numbers. Enter **Q** to finish.
 
 You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured an existing MongoDB application to connect to the Cosmos DB database.
-
-Microsoft.Compute/disks
-Microsoft.Compute/virtualMachines
-Microsoft.Compute/virtualMachines/extensions
-Microsoft.DataMigration/services
-Microsoft.DevTestLab/schedules
-Microsoft.DocumentDb/databaseAccounts
-Microsoft.Network/networkInterfaces
-Microsoft.Network/networkSecurityGroups
-Microsoft.Network/publicIPAddresses
-Microsoft.Network/virtualNetworks
