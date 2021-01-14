@@ -4,7 +4,7 @@ In this exercise, you'll configure GitHub actions to provision your Terraform re
 
 In this module, we'll be checking out an existing project that contains all the code for our Terraform provisioning.
 
-Create a GitHub template the following GitHub repository:
+Create a GitHub template from the following GitHub repository:
 
 ```html
 https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
@@ -12,7 +12,7 @@ https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
 
 - On GitHub, navigate to the main page of the repository.
 
-- Above the file list, click Use this template.
+- Above the file list, select "Use this template".
 
 ![Github template.](../media/4-template.png)
 
