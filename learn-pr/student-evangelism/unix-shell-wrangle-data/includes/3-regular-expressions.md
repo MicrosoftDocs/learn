@@ -26,11 +26,11 @@ First, open the `NASA-software-API.txt` file in Visual Studio Code. Next, open t
 
 Make sure that the `regex` option is switched on, as shown in the following screenshot.
 
-:::image type="content" source="../media/clair_vscode_screenshot.png" alt-text="Screenshot showing Visual Studio Code search box and regex option.":::
+:::image type="content" source="../media/clair-vscode-screenshot.png" alt-text="Screenshot showing Visual Studio Code search box and regex option.":::
 
 If you enter the words **Open Source** in the search box, Visual Studio Code will match all the string instances. You can use the arrow keys to navigate to the matches in the file.
 
-:::image type="content" source="../media/NASA-software-capability.png" alt-text="Screenshot showing Visual Studio Code search results in a text file.":::
+:::image type="content" source="../media/nasa-software-capability.png" alt-text="Screenshot showing Visual Studio Code search results in a text file.":::
 
 This technique might not seem any different from any other use of a search box. But the true power of regex comes when we start using special characters, ranges, and anchors.
 
