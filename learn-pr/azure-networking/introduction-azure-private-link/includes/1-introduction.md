@@ -2,7 +2,7 @@ Azure Private Link provides access to Azure services privately over the Microsof
 
 Suppose you work at Contoso, Ltd., a financial services company in Seattle with major offices located throughout the world. Your company has an Azure virtual network that connects to several Azure platform as a service (PaaS) services. Your company also connects to these Azure PaaS services via several peered virtual networks and an on-premises network that uses Azure ExpressRoute. Contoso also offers company-created Azure services that Contoso customers connect to from their own Azure virtual networks.
 
-However, Contoso IT staff are concerned that these connections require the public internet, which they consider a security risk. IT would like these connections to not use a public IP address.
+However, Contoso IT staff are concerned that these connections require the public internet, which they consider a security risk. It would like these connections to not use a public IP address.
 
 You're a network engineer at Contoso. You’re responsible for finding a way to enable employees and customers to privately access services on the Azure platform. In particular, you want to evaluate Azure Private Link as a method for bypassing the internet and offering private connections.
 
