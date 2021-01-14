@@ -17,8 +17,10 @@ You'll use the sample code as a reference or basis to create a client applicatio
 > [!TIP]
 > The **Sample Code** entry contains samples in C#, Python, and R.
 
-To view the sample code: 
+To view the sample code:
 
 1. Scroll all the way to the bottom of the web service API documentation window.
-2. Select the tab of the language you're most familiar with. Then review the code to see what it's doing.
-3. Notice the placeholder for the API key. You'll need to replace the value **abc123** with a valid API key.
+
+1. Select the tab of the language you're most familiar with. Then review the code to see what it's doing.
+
+1. Notice the placeholder for the API key. You'll need to replace the value **abc123** with a valid API key.
