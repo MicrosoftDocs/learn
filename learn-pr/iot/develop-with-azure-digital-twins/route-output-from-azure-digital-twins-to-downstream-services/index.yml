@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.iot.output-from-adt-to-downstream-services
 metadata:
-  title: Output from Azure Digital Twins to Downstream Services
-  description: In this module, you will get to learn about how Azure Digital twins use event routes to send data to consumers outside the service.
+  title: Output from Azure Digital Twins to downstream services
+  description: In this module, you'll learn about how Azure Digital Twins uses event routes to send data to consumers outside the service.
   ms.date: 11/30/2020
   author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Output from Azure Digital Twins to Downstream Services
+title: Output from Azure Digital Twins to downstream services
 summary: |
-  In this module, you will get to learn about how Azure Digital Twins uses event routes to send data to consumers outside the service.
-  It's also the fun part of this learning journey as you can finally start experiencing the ‘outcome’ of the hard work you invested earlier in the form of insights, dashboards, visualizations, and more!
+  In this module, you'll learn about how Azure Digital Twins uses event routes to send data to consumers outside the service.
+  It's the fun part of this learning path because you can finally start to experience the outcome of the hard work you invested earlier in the form of insights, dashboards, visualizations, and more.
 abstract: |
   In this module, you will:
   - Build and simulate the chocolate factory twin

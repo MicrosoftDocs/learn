@@ -2,7 +2,7 @@
 uid: learn.iot.output-from-adt-to-downstream-services.exercise-visualize-data-time-series-insights
 metadata:
   title: Visualize your data in Time Series Insights
-  description: This unit shows how to visualize the data ingested from Azure Digital Twins into Time Series Insights
+  description: This unit shows how to visualize the data ingested into Time Series Insights from Azure Digital Twins.
   ms.date: 11/30/2020
   author: raniabayoumy
   ms.author: rabayoum

@@ -2,7 +2,7 @@
 uid: learn.iot.output-from-adt-to-downstream-services.introduction
 metadata:
   title: Introduction
-  description: This unit introduces the types of events and data emitted by Azure Digital Twins
+  description: This unit introduces the types of events and data emitted by Azure Digital Twins.
   ms.date: 11/30/2020
   author: raniabayoumy
   ms.author: rabayoum
@@ -16,41 +16,41 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which services are used by event routes to drive your desired data flows?'
+  - content: 'Which services are used by event routes to drive your data flows?'
     choices: 
-    - content: 'Event Hub, Event Grid, Service Bus'
+    - content: 'Event Hubs, Event Grid, Service Bus'
       isCorrect: true
-      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are: Event Grid, EventHub, and Service Bus.'
-    - content: 'Azure Data Lake, Azure Synapse Analytics, Logic Apps'
+      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are Event Hubs, Event Grid, and Service Bus.'
+    - content: 'Azure Data Lake, Azure Synapse Analytics, Azure Logic Apps'
       isCorrect: false
-      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are: Event Grid, EventHub, and Service Bus.'
-    - content: 'Time Series Insights, Azure Maps, Azure Functions'
+      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are Event Hubs, Event Grid, and Service Bus.'
+    - content: 'Azure Time Series Insights, Azure Maps, Azure Functions'
       isCorrect: false
-      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are: Event Grid, EventHub, and Service Bus.'
+      explanation: 'An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are Event Hubs, Event Grid, and Service Bus.'
 
-  - content: 'Event routes are defined using data plane APIs. A route definition contains:'
+  - content: 'Event routes are defined via data plane APIs. A route definition contains:'
     choices: 
-    - content: 'The desired route ID'
+    - content: 'A route ID'
       isCorrect: false
-      explanation: 'Event routes are defined using data plane APIs. A route definition contains: the desired route ID, desired endpoint ID, and a filter that defines which events are sent to the endpoint.'
-    - content: 'The desired endpoint ID'
+      explanation: 'Event routes are defined via data plane APIs. A route definition contains a route ID, an endpoint ID, and a filter that defines which events are sent to the endpoint.'
+    - content: 'An endpoint ID'
       isCorrect: false
-      explanation: 'Event routes are defined using data plane APIs. A route definition contains: the desired route ID, desired endpoint ID, and a filter that defines which events are sent to the endpoint.'
+      explanation: 'Event routes are defined via data plane APIs. A route definition contains a route ID, an endpoint ID, and a filter that defines which events are sent to the endpoint.'
     - content: 'A filter that defines which events are sent to the endpoint'
       isCorrect: false
-      explanation: 'Event routes are defined using data plane APIs. A route definition contains: the desired route ID, desired endpoint ID, and a filter that defines which events are sent to the endpoint.'
+      explanation: 'Event routes are defined via data plane APIs. A route definition contains a route ID, an endpoint ID, and a filter that defines which events are sent to the endpoint.'
     - content: 'All of the above'
       isCorrect: true
-      explanation: 'Event routes are defined using data plane APIs. A route definition contains: the desired route ID, desired endpoint ID, and a filter that defines which events are sent to the endpoint.'
+      explanation: 'Event routes are defined via data plane APIs. A route definition contains a route ID, an endpoint ID, and a filter that defines which events are sent to the endpoint.'
   
-  - content: 'The function will send the JSON objects and eventually connect to Time Series Insights using:'
+  - content: 'The function will send the JSON objects and eventually connect to Time Series Insights by using:'
     choices: 
-    - content: 'An IoT Hub'
+    - content: 'An IoT hub'
       isCorrect: false
-      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
-    - content: 'An Event Hub'
+      explanation: 'The Azure function will convert twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins. It will then send the JSON objects it creates to an event hub to connect to Time Series Insights.'
+    - content: 'An event hub'
       isCorrect: true
-      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
-    - content: 'A Service Bus'
+      explanation: 'The Azure function will convert twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins. It will then send the JSON objects it creates to an event hub to connect to Time Series Insights.'
+    - content: 'A service bus'
       isCorrect: false
-      explanation: 'The Azure Function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins. Then it will send the JSON objects it creates to an event hub to connect to Time Series Insights.'
+      explanation: 'The Azure function will convert twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins. It will then send the JSON objects it creates to an event hub to connect to Time Series Insights.'
