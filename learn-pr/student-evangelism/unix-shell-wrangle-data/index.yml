@@ -22,7 +22,7 @@ abstract: |
   - Use pipes and filters for data wrangling.
 prerequisites: |
   - Basic knowledge of the command line and basic shell commands
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/student-evangelism/unix-shell-wrangle-data.svg
 levels:
   - beginner
 roles:
@@ -43,4 +43,4 @@ units:
   - learn.student-evangelism.unix-shell-wrangle-data.7-knowledge-check
   - learn.student-evangelism.unix-shell-wrangle-data.8-summary
 badge:
-  uid: learn.student-evangelism.data-wrangling-shell.badge
+  uid: learn.student-evangelism.unix-shell-wrangle-data.badge
