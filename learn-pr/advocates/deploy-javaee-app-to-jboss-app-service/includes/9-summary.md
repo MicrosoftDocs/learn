@@ -30,7 +30,7 @@ az group delete --name <name of your JBoss EAP on Azure App Service resource>
 * [Jakarta Contexts and Dependency Injection](https://projects.eclipse.org/projects/ee4j.cdi)
 * [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
 
-### MySQL 
+### MySQL
 
 * [MySQL Community Edition](https://www.mysql.com/products/community/)
 * [MySQL Connector/J](https://mvnrepository.com/artifact/mysql/mysql-connector-java)

@@ -1,8 +1,8 @@
 ## JBoss EAP Admin Tools (CLI & Web Console)
 
-In order to manage or monitor the  JBoss EAP Application Server, sometimes you may want to access to the server and you want to confirm or configure the Server. In order to do it, Azure App Service provide both Graphical User Interface and Command Line Interface. 
+In order to manage or monitor the  JBoss EAP Application Server, sometimes you may want to access to the server and you want to confirm or configure the Server. In order to do it, Azure App Service provide both Graphical User Interface and Command Line Interface.
 
-For example, if you access to Admin Web Console, you can see like follwoing Screen.
+For example, if you access to Admin Web Console, you can see like following Screen:
 
 :::image type="content" source="../media/jboss-admin-console2.png" alt-text="Admin Console Top Page":::
 

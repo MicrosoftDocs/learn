@@ -149,7 +149,6 @@ Then you can see following in the terminal.
 [INFO] ------------------------------------------------------------------------
 ```
 
-
 ### Deploy Java EE App to JBoss EAP on Azure App Service
 
 After compile and package the code, you can deploy it to the JBoss EAP on Azure App Service. In order to deploy the application, please execute the following command.
@@ -285,7 +284,6 @@ Please confirm the following file.
 ```
 
 And, you need to check if the name of the `DataSource` is equal to the name used in the configuration. In the above step, we created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`. So we added a DataSource reference as `java:jboss/datasources/JPAWorldDataSource` in `<jta-data-source>` XML element as follows.
-
 
 ```xml
   <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
@@ -441,4 +439,3 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/
 ```
 
 You have now validated the application REST endpoints and how the application got the data from the configured MySQL database.
-

@@ -130,7 +130,7 @@ Not only terminal login, you can also access to the Admin Web Console. Before ac
 
 Then you can access to the Web Console from your Local environment. Please open the browser and access to the following URL.
 
-```
+```html
 http://127.0.0.1:9990/console
 ```
 
