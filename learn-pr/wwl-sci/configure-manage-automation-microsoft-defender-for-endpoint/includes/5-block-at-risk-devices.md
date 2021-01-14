@@ -1,8 +1,5 @@
 Contain a threat by not letting risky devices access your corporate resources through Conditional Access.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about conditional access with Microsoft Defender.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4byD1?rel=0]
 
