@@ -1,4 +1,4 @@
-In this module, you learned how to create `Azure DataBase for MySQL`,  how to use the `Maven Plugin for Azure Web Apps` and how to deploy your Java EE (Jakarta EE) application to `JBoss EAP on Azure App Service` and how to manage JBoss EAP.
+In this module, you learned how to create `Azure DataBase for MySQL`, how to use the `Maven Plugin for Azure Web Apps` and how to deploy your Java EE (Jakarta EE) application to `JBoss EAP on Azure App Service` and how to manage JBoss EAP.
 
 ## Clean up resources
 
