@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-records-management
+title: Describe Records Management
+metadata:
+  title: Describe Records Management
+  description: "Describe Records Management"
+  ms.date: 01/14/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-describe-records-management.md)]
