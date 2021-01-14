@@ -2,8 +2,8 @@
 uid: learn.azure.capture-application-logs-app-service.6-retrieve-application-log-files-from-an-application
 title: Retrieve application log files
 metadata:
-  title: Retrieve application log Files
-  description: Retrieve Application Log files
+  title: Retrieve application log files
+  description: Retrieve application log files
   ms.date: 03/20/2019
   author: nickwalkmsft
   ms.author: nickwalk
