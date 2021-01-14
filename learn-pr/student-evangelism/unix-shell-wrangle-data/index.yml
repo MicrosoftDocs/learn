@@ -41,6 +41,6 @@ units:
   - learn.student-evangelism.unix-shell-wrangle-data.5-sed-and-regex
   - learn.student-evangelism.unix-shell-wrangle-data.6-pipes-and-filters
   - learn.student-evangelism.unix-shell-wrangle-data.7-knowledge-check
-  - learn.advocates.unix-shell-wrangle-data.8-summary
+  - learn.student-evangelism.unix-shell-wrangle-data.8-summary
 badge:
   uid: learn.student-evangelism.data-wrangling-shell.badge
