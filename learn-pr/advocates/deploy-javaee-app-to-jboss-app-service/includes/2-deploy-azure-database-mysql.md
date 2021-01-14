@@ -1,27 +1,33 @@
+In this unit, you'll create and configure an Azure Database for MySql.
+
 ## Deploy Azure Database for MySQL
 
-`Azure Database for MySQL` is a relational database service powered by the MySQL community edition. It's a fully managed database as a service offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
+`Azure Database for MySQL` is a relational database service powered by the MySQL community edition. It's a fully managed database as a service offering that can handle mission-critical workloads with predictable performance and dynamic scale.
 
-
-You can use either Single Server or Flexible Server (Preview) to host a MySQL database in Azure. 
-
-* Single Server
-* Flexible Server (Preview)
+You can use either Single Server or Flexible Server (Preview) to host a MySQL database in Azure.
 
 ### Azure Database for MySQL Flexible Server
-Flexible Server is a fully managed database service designed to provide more granular control and flexibility over database management functions and configuration settings. In general, the service provides more flexibility and server configuration customizations compared to the single server deployment based on the user requirements. The flexible server architecture allows users to opt for high availability within a single availability zone and across multiple availability zones. Flexible servers also provide better cost optimization controls with the ability to start/stop your server and burstable SKUs, ideal for workloads that do not need full compute capacity continuously.Flexible servers are best suited for:* Application development requiring better control and customizations of MySQL engine.* Zone redundant high availability* Managed maintenance windows
 
+A flexible server provides better control of database servers, more options for high availability, and cost optimization controls.
+
+Flexible Server offers control through maintenance windows and configuration parameters for tuning. It allows for zone redundant high availability and controls the timing for patches and upgrades.
+
+Flexible servers are best suited for:
+
+* Application development requiring better control and customizations of MySQL engine.
+* Zone redundant high availability
+* Managed maintenance windows
 
 ### How to create Azure Database for MySQL Flexible Server
 
-In order to create a MySQL on Azure, you need execute following steps.
+To create a MySQL on Azure, you need to execute following steps.
 
-1. Login to Azure
-2. Craete Resource Group
-3. Create MySQL DB Instance
-4. Create Firewall Rule
+1. Sing in to Azure
+2. Create a Resource Group
+3. Create a MySQL DB Instance
+4. Create a firewall Rule
 
-At first, you must create a `Resource Group` for creating the MySQL Resource. After creating the resource group, you can create a `Azure Database for MySQL` instance in the resource group. Finally in order to access to the MySQL instance, you need configure the Firewall Rule for it.
+At first, you must create a `Resource Group` for creating the MySQL Resource. After creating the resource group, you can create a `Azure Database for MySQL` instance in the resource group. Finally to access to the MySQL instance, you need configure a Firewall Rule for it.
 
 For example, you can create the following shell script.
 
@@ -233,11 +239,10 @@ yellowEcho  "[INFO] "
 yellowEcho  "[INFO] 3. Clean up Resource (Delete MySQL DB)"
 yellowEcho  "[INFO] az group delete -n $MYSQL_RES_GRP_NAME"
 yellowEcho  "[INFO] -------------------------------------------------------"
-``` 
+```
 
 And you can execute the script like follows.
 
 ```bash
  ./setup_mysql.sh flexible
 ```
-
