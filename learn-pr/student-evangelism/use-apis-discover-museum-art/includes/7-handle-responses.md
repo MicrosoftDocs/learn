@@ -21,5 +21,5 @@ Common access codes you might come across include:
 
 It's useful to learn about [status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes?azure-portal=true) so that you can handle them well in your client-side code. Normally, a `200` code means "all is well" and that you can continue to display the query results. It's also useful to be able to triage errors and display appropriate messages to handle them.
 
->[!Tip] 
->[HTTP Cats](https://http.cat?azure-portal=true) by Tomomi Imuri is a memorable way to match status codes with errors. You'll never forget that `200` means OK!
+> [!Tip] 
+> [HTTP Cats](https://http.cat?azure-portal=true) by Tomomi Imura is a memorable way to match status codes with errors. You'll never forget that `200` means OK!
