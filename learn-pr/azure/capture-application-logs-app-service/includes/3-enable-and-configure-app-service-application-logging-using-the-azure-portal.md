@@ -50,7 +50,7 @@ In this step, you're going to use the Azure portal to enable app logging to the 
 
 1. In the **App Services** list, select **contosofashions\<_your-number_\>**.
 
-1. In the **Overview** section, to open the home page for the **Contoso Fashions** website in a new browser tab, select the URL string (https&#58;//contosofashions\<_your-number\ >.azurewebsites.net).
+1. In the **Overview** section, to open the home page for the **Contoso Fashions** website in a new browser tab, select the URL string (https&#58;//contosofashions\<_your-number_\>.azurewebsites.net).
 
 You'll now set up the app logging.
 
