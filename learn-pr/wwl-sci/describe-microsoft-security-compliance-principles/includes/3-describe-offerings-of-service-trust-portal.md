@@ -19,11 +19,11 @@ The Service Trust Portal provides information, tools, and other resources about 
 ## Task 1: Save a document to My Library
 
 1. Go to The Service Trust Portal and sign in with your Microsoft Azure cloud services account.
-2. Widen the screen so you can see all the available options on the Main Menu.
+1. Widen the screen so you can see all the available options on the Main Menu.
 
-:::image type="content" source="../media/3-service-trust-portal-main-menu.png" alt-text="Service Trust Portal main menu":::
+    [![Service Trust Portal main menu](../media/3-service-trust-portal-main-menu.png)](../media/3-service-trust-portal-main-menu.png#lightbox)
 
-1. Scroll down and select **View all Audit Report** >. The Audit Reports page is displayed
+1. Scroll down and select **View all Audit Report**. The Audit Reports page is displayed
 1. Sign in again with your Microsoft Azure cloud service account.
 1. Click the down arrow next to Cloud Service and select **Azure**.
 1. Click to select the displayed document.
