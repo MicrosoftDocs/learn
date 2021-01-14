@@ -39,7 +39,6 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
     | Under **Network connectivity** section: |
     | Connectivity method | **Public endpoint** (*default*) |
 
-
     :::image type="content" source="../media/tab.png" alt-text="Screenshot of the Networking tab of the Create SQL Database pane with settings selected.":::
 
 1. Select **Next : Additional settings**, and configure the following settings.
@@ -59,7 +58,7 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
 
 1. After validation succeeds, on the **Create SQL Database** window, select **Create** to deploy the server and database.
 
-    It can take approximately two to five minutes to create the server and deploy the sample database.
+    It can take approximately two to fives minutes to create the server and deploy the sample database.
 
 1. Select **Go to resource**.
 
