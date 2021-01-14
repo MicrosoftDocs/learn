@@ -165,44 +165,42 @@ To manage the ASR rules with PowerShell:
 
 1. Enter the following cmdlet:
     
-```powershell
-Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
+    ```powershell
+    Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
 
-```
-{:start="3"}
+    ```
+
 1. To enable ASR rules in audit mode, use the following cmdlet:
 
-```powershell
-Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+    ```powershell
+    Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 
-```
-{:start="4"}
+    ```
+
 1. To turn off ASR rules, use the following cmdlet:
 
-```powershell
-Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled
+    ```powershell
+    Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled
 
-```
+    ```
 
-{:start="5"}
 1. You must specify the state individually for each rule, but you can combine rules and states in a comma-separated list.
 1. In the following example, the first two rules will be enabled, the third rule will be disabled, and the fourth rule will be enabled in audit mode:
->
 
-```powershell
-Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID 1>,<rule ID 2>,<rule ID 3>,<rule ID 4> -AttackSurfaceReductionRules_Actions Enabled, Enabled, Disabled, AuditMode
+    ```powershell
+    Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID 1>,<rule ID 2>,<rule ID 3>,<rule ID 4> -AttackSurfaceReductionRules_Actions Enabled, Enabled, Disabled, AuditMode
 
-```
-{:start="7"}
+    ```
+
 1. You can also use the Add-MpPreference PowerShell verb to add new rules to the existing list.
 1. Set-MpPreference will always overwrite the existing set of rules. If you want to add to the existing set, you should use Add-MpPreference instead. You can obtain a list of rules and their current state by using Get-MpPreference.
 1. To exclude files and folders from ASR rules, use the following cmdlet:
 
-```powershell
-Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
+    ```powershell
+    Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
 
-```
-{:start="10"}
+    ```
+
 1. Continue to use Add-MpPreference -AttackSurfaceReductionOnlyExclusions to add more files and folders to the list.
 
 > [!IMPORTANT]
