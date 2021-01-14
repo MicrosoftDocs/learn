@@ -11,6 +11,8 @@ In this exercise, we’ll:
 
 ## Download the data and webapp
 
+If your Shell is still connected to the database, you can exit with `\q`
+
 1. In the Azure Cloud Shell window on the right side of your screen, run the following command to download the data files and application code.
 
     ```bash
@@ -35,14 +37,6 @@ In this exercise, we’ll:
 
     This file contains the following comma-separated data. It includes a user_id, user_name, age_in_years for each user that we're going to load into the database.
 
-    ```
-    user_id ,user_name, age_in_years
-    3,Charles,39
-    4,Dakota,90
-    5,Dylan,33
-    ...
-    ```
-
 ## Load the CSV data into the payment_users table
 
 Let's connect to our database again, and load the CSV data into the database.
@@ -53,9 +47,9 @@ Let's connect to our database again, and load the CSV data into the database.
     psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
     ```
 
-    Type in your password and select enter.
+    Enter your password, and press <kbd>Enter</kbd>.
 
-2. At the prompt, we'll **connect directly** to the **paymentapp** database by executing the `\c` command:
+2. At the prompt, we'll connect directly to the **paymentapp** database by executing the `\c` command:
 
     ```sql
     \c paymentapp
@@ -98,7 +92,7 @@ Now we have more data to query, we'll deploy our webapp, then connect it to our 
         --name $WEBAPPNAME
     ```
 
-    When the webapp has been deployed, the output will show an *App_url* with the URL of the web site. **Open the URL in a new tab**.
+    When the webapp has been deployed, the output will show an *App_url* with the URL of the web site. Open the URL in a new tab.
 
     > [!NOTE]
     > If you select the URL directly from the Azure Cloud Shell, there may be an extra `"` on the end of the URL, causing the website to not connect. If you remove the `"` from the end of the URL, you will connect to the website.
@@ -121,7 +115,7 @@ Now let's add to the application the code to retrieve user data from the databas
     code DataAccessController.cs
     ```
 
-    This file contains an empty class that's named `DataAccessController`, with the code below:
+    This file contains an empty class that's named `DataAccessController`, with the following code.
 
     ```C#
         using Microsoft.Extensions.Options;
@@ -170,7 +164,7 @@ Now let's add to the application the code to retrieve user data from the databas
 
     The data for each user will be _userID_, _userName_, and _userAge_.
 
-3. Leave the code editor open, and switch to the Azure portal.
+3. Leave the code editor open, and switch to the Azure portal in a new tab.
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -179,7 +173,13 @@ Now let's add to the application the code to retrieve user data from the databas
 
 5. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
-6. Return to the code editor. Replace the value of the **_connectionString_ variable on line 14** with the value from the clipboard. In the connection string, **replace the text `{your_password}` with the password for the database** and **replace the text {your_database} with `paymentapp`**. Leave the quotation marks around your connection string.
+6. Return to the code editor.
+
+    * **On line 14**, Replace the value of the string **_connectionString_** with the value from the clipboard.
+        * Make sure you leave the quotation marks around your connection string.
+    * In the connection string, **replace the text**:
+        * **`{your_password}` with the password for the database**
+        * **`{your_database}` with `paymentapp`**.
 
     The payment string will read:
 
@@ -190,7 +190,6 @@ Now let's add to the application the code to retrieve user data from the databas
     > [!NOTE]
     > We are including the connection string in the source code to make this exercise easy and understandable. Best practice, however, is to keep your connection string in a configuration file.
 
-
 7. After the comment `//TODO: Connect to the database`, replace the commented-out `//using ()` statement on line 22 with the following code.
 
     ```C#
@@ -199,11 +198,11 @@ Now let's add to the application the code to retrieve user data from the databas
 
     This code creates a new `NpgsqlConnection` object that connects to the database, using your connection string.
 
-8. Replace the comment `// TODO: Specify the SQL query to run` with the following statements.
+8. Replace the comment `// TODO: Specify the SQL query to run` on line 26 with the following statements.
 
     ```C#
     conn.Open();
-    using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
+    using (var command = new NpgsqlCommand("SELECT * FROM payment_users", conn))
                     {
     ```
 
@@ -217,15 +216,15 @@ Now let's add to the application the code to retrieve user data from the databas
 
     These statements open the connection to the database and run the SQL statement. You can use the `SqlDataReader` object to fetch the results one row at a time.
 
-10. Replace the comment `// TODO: Read the data a row at a time` with the following block of code.
+10. Replace the comment `// TODO: Read the data a row at a time` on line 24 with the following block of code.
 
     ```C#
     while (reader.Read())
         {
             string userID = reader.GetInt32(0).ToString();
             string userName = reader.GetString(1);
-            int moduleSequence = reader.GetInt32(2);
-            Users user = new Users(userID, userName, moduleSequence);
+            int userAge = reader.GetInt32(2);
+            Users user = new Users(userID, userName, userAge);
             userList.Add(user);
         }
                     }
@@ -264,7 +263,7 @@ Now let's add to the application the code to retrieve user data from the databas
                         Console.Out.WriteLine("Opening connection");
                     // TODO: Specify the SQL query to run
                         conn.Open();
-                        using (var command = new NpgsqlCommand("SELECT * FROM users", conn))
+                        using (var command = new NpgsqlCommand("SELECT * FROM payment_users", conn))
                         {
                     // TODO: Execute the query
                             var reader = command.ExecuteReader();
@@ -274,8 +273,8 @@ Now let's add to the application the code to retrieve user data from the databas
                             {
                                 string userID = reader.GetInt32(0).ToString();
                                 string userName = reader.GetString(1);
-                                int moduleSequence = reader.GetInt32(2);
-                                Users user = new Users(userID, userName, moduleSequence);
+                                int userAge = reader.GetInt32(2);
+                                Users user = new Users(userID, userName, userAge);
                                 userList.Add(user);
                             }
                         }
@@ -289,7 +288,7 @@ Now let's add to the application the code to retrieve user data from the databas
 
     Later, if your program doesn't properly query the user data, come back to this file and replace the entire contents with the code block above, with your connection string and password, and save.
 
-    Save the file, and close the **Code** editor.
+    Save the file, and close the **Code Editor**.
 
 ## Add code to the web app to display the data
 
@@ -309,7 +308,7 @@ The application can now retrieve the course data. Now, update the app to display
     code Index.cshtml
     ```
 
-    This file contains the display logic for the webpage. Our data is delivered by the `UsersModel` - It will return a list, containing the user information.
+    This file contains the display logic for the webpage. Our data is delivered by the `UsersModel`. It will return a list, containing the user information.
 
     Currently, the page just displays the table headings. The table body (`<tbody>`) is empty.
 
@@ -350,7 +349,7 @@ The application can now retrieve the course data. Now, update the app to display
                 @Html.DisplayFor(userName => user.UserName)
             </td>
             <td>
-                Html.DisplayFor(userAge => user.UserAge)
+                @Html.DisplayFor(userAge => user.UserAge)
             </td>
         </tr>
     }
@@ -404,7 +403,7 @@ The application can now retrieve the course data. Now, update the app to display
     </div>
     ```
 
-    Save the file, and close the code editor.
+    Save the file, and close the **Code Editor**.
 
 ## Deploy and test the updated web app
 
@@ -420,7 +419,7 @@ With the application fully configured to retrieve and display the course data to
 
     ```bash
     az webapp up \
-        --resource-group postgres \
+        --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
         --name $WEBAPPNAME
     ```
 

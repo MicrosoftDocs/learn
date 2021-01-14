@@ -124,6 +124,14 @@ First, look at overall resource usage. For a standard SQL Server deployment you 
 
     This DMV behaves just like `sys.dm_db_resource_stats`, but it's used to see resource usage for the SQL Managed Instance for CPU, memory, and I/O. This DMV also takes a snapshot every 15 seconds.
 
+- `sys.dm_user_db_resource_governance`
+
+    For Azure SQL Database, this DMV returns the actual configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool.
+
+- `sys.dm_instance_resource_governance`
+
+    For Azure SQL Managed Instance, this DMV returns similar information as `sys.dm_user_db_resource_governance` but for the current SQL Managed Instance.
+
 #### Running
 
 If you have determined the problem is high CPU utilization, this is called a running scenario. A running scenario can involve queries that consume resources through compilation or execution. Use the following tools for further analysis:
