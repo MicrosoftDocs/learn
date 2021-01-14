@@ -6,9 +6,9 @@ Functions are hosted in an execution context called a **function app**. You defi
 
 ### Choose a service plan
 
-Function apps may use one of two types of service plans. The first service plan is the **Consumption service plan**. This is the plan that you choose when using the Azure serverless application platform. The Consumption service plan provides automatic scaling and bills you when your functions are running. The Consumption plan comes with a configurable timeout period for the execution of a function. By default, it is 5 minutes, but may be configured to have a timeout as long as 10 minutes.
+Function apps may use one of two types of service plans. The first service plan is the **Consumption service plan**. The plan that you choose when using the Azure serverless application platform. The Consumption service plan provides automatic scaling and bills you when your functions are running. The Consumption plan comes with a configurable timeout period for the execution of a function. By default, it is 5 minutes, but may be configured to have a timeout as long as 10 minutes.
 
-The second plan is called the **Azure App Service plan**. This plan allows you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you are responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously or if your functions require more processing power or execution time than the Consumption plan can provide.
+The second plan is called the **Azure App Service plan**. The plan allows you to avoid timeout periods by having your function run continuously on a VM that you define. When using an App Service plan, you are responsible for managing the app resources the function runs on, so this is technically not a serverless plan. However, it may be a better choice if your functions are used continuously or if your functions require more processing power or execution time than the Consumption plan can provide.
 
 ### Storage account requirements
 
@@ -41,7 +41,7 @@ Let's create a function app in the Azure portal.
     | Subscription | Concierge Subscription |
     | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
     | Under the **Instance Details** section: |
-    | Function App name  | Enter a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
+    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
     | Version | *default* |
@@ -55,12 +55,12 @@ Let's create a function app in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as you activated for the sandbox.
 
-1. From the Azure portal menu, select **Resource groups**. You should then see a resource group named --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
+1. From the Azure portal menu, select **Resource groups**. You should then see a resource group named  "<rgn>[Sandbox resource group name]</rgn>"
  in the list of available groups.
 
     ![Screenshot of the Azure resource groups](../media/3-resource-group.png)
 
-1. Select the resource group **learn-627e4f72-e5dc-4174-9182-44bce1f70176**. You should then see a resource list like the following list.
+1. Select the resource group **learn-5a18d3de-af3e-481e-add8-2715dff3255e**. You should then see a resource list like the following list.
 
     ![Screenshot of the Azure resource list](../media/3-resource-list.png)
 
