@@ -1,6 +1,5 @@
-Azure Quantum is a Microsoft Azure service for running quantum computing programs and solving optimization problems in the cloud. In this unit, the crew will familiarize with the basic elements of the Azure Quantum platform.  
+Azure Quantum is a Microsoft Azure cloud service for running quantum computing programs and solving optimization problems. In this unit, the crew will familiarize with the basic elements of the Azure Quantum platform. You will learn how to use the quantum services, how to create your own projects and submit them to the cloud to use the hardware available. 
 
-**Mike** Do we want to explan a couple more concepts? It shouldn't be an exact copy of the documentation.
 
 ## What is an Azure subscription?
 

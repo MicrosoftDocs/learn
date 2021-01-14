@@ -48,4 +48,4 @@ You can use the Azure Quantum service by adding a **quantum workspace** resource
    > Your jobs will be uploaded to the Azure storage account created above and will be subject to storage charges.
 
 Congratulations, you are set up to start using the Azure Quantum service. Let's see
-some case studies of things can you do with Azure Quantum.
+some case studies of what you can do with Azure Quantum.
