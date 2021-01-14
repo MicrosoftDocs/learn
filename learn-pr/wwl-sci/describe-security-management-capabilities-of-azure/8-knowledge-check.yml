@@ -16,36 +16,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your organization has deployed Microsoft 365 applications to all employees. Who is responsible for the security of the personally identifiable information relating to your employees?"
+  - content: "Your organization is looking to improve the security of its cloud environment. What tool would they use to automatically assess their systems and alert the security staff when a vulnerability is found?"
     choices:
-    - content: "Your organization."
+    - content: "Cloud security posture management (CSPM)."
       isCorrect: true
-      explanation: "That's correct. In the shared responsibility model, the customer organization always has responsibility for their data, including personally identifiable information relating to employees."
-    - content: "Microsoft, the SaaS provider."
+      explanation: "That's correct. CSPM is a new class of tool that improves your cloud security management using automated tools to check and generate alerts when vulnerabilities are found."
+    - content: "Azure security center."
       isCorrect: false
-      explanation: "That's incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on, the cloud customer is responsible for data, including personally identifiable information."
-    - content: "The shared responsibility between your organization and Microsoft."
+      explanation: "That's incorrect. Azure security center provides infrastructure level security management to protect your data."
+    - content: "Azure Defender."
       isCorrect: false
-      explanation: "That's incorrect. The shared responsibility model shows that the cloud customer always retains responsibility for data, including personally identifiable information."
-  - content: "Your organization has adopted the defense in-depth security methodology. Which of the following measures might you implement?"
+      explanation: "That's incorrect. Azure Defender provides threat protection for worloads running on Azure."
+  - content: "Your organization is using Security Center to assess your resources, subscriptions, and organization for security issues. Your organizations overall secure score is low and needs to improved.  How would you go about improving the score?"
     choices:
-    - content: "Locating servers at different locations in your organization."
+    - content: "Close old security recommendations."
       isCorrect: false
-      explanation: "That's incorrect. Defense in-depth requires layered security, including physical security. Locating servers at different locations in your organization makes it difficult to provide adequate physical security."
-    - content: "Multi-factor authentication for all users."
+      explanation: "That's incorrect. Closing old issues will not improve the score."
+    - content: "Remediate security recommendations."
       isCorrect: true
-      explanation: "That's correct. Multi-factor authentication is an example of defense in-depth at the identity and access layer."
-    - content: "Ensuring there's no segmentation of your corporate network."
+      explanation: "That's correct. To improve your secure score, remediate security recommendations from your recommendations list."
+    - content: "Move security recommendations to resolved."
       isCorrect: false
-      explanation: "That's incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
-  - content: "You've been advised that your department must protect employee training data. Which security mechanism would you use?"
-    choices:
-    - content: "Hashing."
-      isCorrect: false
-      explanation: "That's  incorrect. Hashing uses a one-way algorithm to store data in an encrypted state. However, you would not be able to read the employee training data, making it an unsuitable method to protect the data."
-    - content: "Digital signing."
-      isCorrect: false
-      explanation: "That's incorrect. Digital signing is a mechanism to show that a message has come from the correct sender, and has not been tampered with, making it an inappropriate method to protect the data."
-    - content: "Encryption at rest."
-      isCorrect: true
-      explanation: "That's correct. Encryption at rest could be part of a security strategy to protect employee training data."
+      explanation: "That's incorrect. Moving recommendations will not improve your security score."
