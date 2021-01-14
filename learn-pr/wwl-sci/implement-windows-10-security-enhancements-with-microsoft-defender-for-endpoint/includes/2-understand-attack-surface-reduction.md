@@ -27,7 +27,7 @@ Description
 :::row:::
 :::column:::
 
-[Attack surface reduction](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+Attack surface reduction
 
 :::column-end:::
 :::column:::
@@ -39,7 +39,7 @@ Reduce vulnerabilities (attack surfaces) in your applications with intelligent r
 :::row:::
 :::column:::
 
-[Hardware-based isolation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
+Hardware-based isolation
 
 :::column-end:::
 :::column:::
@@ -51,7 +51,7 @@ Protect and maintain the integrity of a system as it starts and while it's runni
 :::row:::
 :::column:::
 
-[Application control](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+Application control
 
 :::column-end:::
 :::column:::
@@ -63,7 +63,7 @@ Use application control so that your applications must earn trust in order to ru
 :::row:::
 :::column:::
 
-[Exploit protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)
+Exploit protection
 
 :::column-end:::
 :::column:::
@@ -75,7 +75,7 @@ Help protect operating systems and apps your organization uses from being exploi
 :::row:::
 :::column:::
 
-[Network protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/network-protection)
+Network protection
 
 :::column-end:::
 :::column:::
@@ -87,7 +87,7 @@ Extend protection to your network traffic and connectivity on your organization'
 :::row:::
 :::column:::
 
-[Web protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/web-protection-overview)
+Web protection
 
 :::column-end:::
 :::column:::
@@ -99,7 +99,7 @@ Secure your devices against web threats and help you regulate unwanted content.
 :::row:::
 :::column:::
 
-[Controlled folder access](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/controlled-folders)
+Controlled folder access
 
 :::column-end:::
 :::column:::
@@ -111,7 +111,7 @@ Help prevent malicious or suspicious apps (including file-encrypting ransomware 
 :::row:::
 :::column:::
 
-[Network firewall](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+Network firewall
 
 :::column-end:::
 :::column:::
