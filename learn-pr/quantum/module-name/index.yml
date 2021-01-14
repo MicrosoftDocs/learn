@@ -17,9 +17,7 @@ abstract: |
   - B
   - C
   - D
-prerequisites: In order to use the Azure Quantum service, you will need an active Azure subscription.
-For more information about creating an Azure account and subscription, see the Microsoft Learn module [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/).
-
+prerequisites: In order to use the Azure Quantum service, you will need an active Azure subscription. For more information about creating an Azure account and subscription, see the Microsoft Learn module [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/).
 iconUrl: /learn/achievements/quantum/module-name.svg
 ratingEnabled: true
 levels:
