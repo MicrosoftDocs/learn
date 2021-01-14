@@ -2,7 +2,7 @@ Organizations need to know their data so that they can identify important inform
 
 ## Sensitive information types
 
-With Microsoft 365 Compliance Center, admins can identify and protect sensitive information types.  Sensitive information types have set patterns that can be used to identify them.  For example, an identification number in a country may be based on a specific pattern, like this:
+With Microsoft 365 Compliance Center, admins can identify and protect sensitive information types.  Sensitive information types have set patterns that can be used to identify them.  For example, an identification number in a country/region may be based on a specific pattern, like this:
 
 *123-456-789-ABC*
 
