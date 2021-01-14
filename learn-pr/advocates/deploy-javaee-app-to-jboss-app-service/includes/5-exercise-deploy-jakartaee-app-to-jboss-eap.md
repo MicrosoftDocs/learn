@@ -1,19 +1,28 @@
-In this page, You will learn how to deploy  a Java EE (Jakarta EE) Application to JBoss EAP on Azure App Service.  
-
+In this unit, you will learn how to deploy  a Java EE (Jakarta EE) Application to JBoss EAP on Azure App Service.  
 
 ## Configure App and Deploy to JBoss EAP on Azure App Service
 
-You already clone the GitHub repository in the previous section, so you already have source code of Sample Application. 
+In this section, at first we will configure the project to prepare the deployment by using  `Maven Plugin for Azure App Service`.  After that we will compile the application and create a WAR package. Finally, we will deploy the WAR package to JBoss EAP on Azure App Service.
 
-In this section, at first we will configure the project to prepare the deployment by using `Azure App Service Maven Plugin`. After that we will compile the source code and create an artifact as WAR file. Finally we will deploy the artifact to JBoss EAP on Azure App Service.
+### Configure the App with Maven Plugin for Azure App Service
 
-### Configure the App with Azure App Service Maven Plugin
-
-In order to configure the Application to deploy to JBoss EAP on Azure App Service, please execute the following command.
+You can configure the application project to deploy to JBoss EAP on App Service by executing the config goal in the Maven plugin for Azure App Service.
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
+
+In the command, you need input the following value.   
+Especially in this time, we will deploy the application to JBoss EAP, so please select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`.
+
+|  Input Element  |  Value  |
+| ---- | ---- |
+|  Please choose a Web Container Web App [<create>]: |  `1: <create>`  |
+|  Define value for OS [Linux]:  |  `Linux`  |
+|  Define value for pricingTier [P1v2]:  |  `P1v2`  |
+|  Define value for javaVersion [Java 8]:  |  `1: Java 8`  |
+|  Define value for runtimeStack:  |  `1: Jbosseap 7.2`  |
+|  Confirm (Y/N) [Y]: | `y` |
 
 Then you can see following messages in the terminal.
 
@@ -79,19 +88,6 @@ Confirm (Y/N) [Y]: y
 [INFO] ------------------------------------------------------------------------
 ```
 
-In the command messages, you need input the following value.   
-Especially in this time, we will deploy the application to JBoss EAP, so please select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`.
-
-|  Input Element  |  Value  |
-| ---- | ---- |
-|  Please choose a Web Container Web App [<create>]: |  `1: <create>`  |
-|  Define value for OS [Linux]:  |  `Linux`  |
-|  Define value for pricingTier [P1v2]:  |  `P1v2`  |
-|  Define value for javaVersion [Java 8]:  |  `1: Java 8`  |
-|  Define value for runtimeStack:  |  `1: Jbosseap 7.2`  |
-|  Confirm (Y/N) [Y]: | `y` |
-
-
 After finshed the command, You can see following entry is added in `pom.xml`.
 
 ```xml
@@ -127,7 +123,7 @@ After finshed the command, You can see following entry is added in `pom.xml`.
     </plugins>
 ```
 
-### Compile & Create Java Package for Deploy
+### Build the Java EE App
 
 After configure the Azure App Service Deployment settings, you need to compile and package the source code. In order to compile and package the code, please execute the following command?
 
@@ -184,19 +180,18 @@ Then you can see following message in the terminal.
 [INFO] ------------------------------------------------------------------------
 ```
 
-Especially following line is very important. It showes the URL of the EndPoint for your service. So in order to access to your service in following step, please remember it.
+Please note down the URL of the deployed application, particularly the following line in the Maven output:
 
 ```text
 [INFO] Successfully deployed the artifact to  
 https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 ```
 
-
 ## Configure DB Connection from JBoss EAP
 
-In our Sample Application, it will communicate with MySQL DB to show the data. In order to access to the `Azure Database for MySQL`, you need configure the `DataSource` in JBoss EAP, and you need specify the JNDI name into your source code.
+In our sample application, it will communicate with MySQL DB to show the data. In order to access to the `Azure Database for MySQL`, you need configure the `DataSource` in JBoss EAP, and you need specify the JNDI name into your source code.
 
-In this module, we will connect to MySQL Database. If you deploy the Sample Application, you already include a MySQL JDBC Driver in your deployment package `(ROOT.war)`. Bacause in the Maven Project Configuration in `pom.xml`, we specify the MySQL JDBC Driver as follows.
+In this module, we will connect to MySQL Database. If you deploy the sample application, you already include a MySQL JDBC Driver in your deployment package `(ROOT.war)`. Because in the Maven project configuration in `pom.xml`, we specify the MySQL JDBC Driver as follows.
 
 ```xml
     <dependency>
@@ -206,7 +201,7 @@ In this module, we will connect to MySQL Database. If you deploy the Sample Appl
     </dependency>
 ```
 
-As a result, JBoss EAP automatically install the JDBC Driver during the Deployment. And you can refer the name of MySQL JDBC Driver as follows.
+As a result, JBoss EAP automatically installs the JDBC Driver during the Deployment. And you can refer the name of MySQL JDBC Driver as follows.
 
 ```text
 ROOT.war_com.mysql.cj.jdbc.Driver_8_0
@@ -216,7 +211,8 @@ ROOT.war_com.mysql.cj.jdbc.Driver_8_0
 
 In order to create a MySQL `DataSource` in JBoss EAP, we created a startup shell script file as `createMySQLDataSource.sh` under the `/WEB-INF` directory. 
 
-In the code, we created a MySQL DataSource using JBoss CLI command. And the variable in the script like connection string, user name and password will get from the Environment Variables as `MYSQL_CONNECTION_URL`, `MYSQL_USER` and `MYSQL_PASSWORD`.
+In the code, we created a MySQL DataSource using the JBoss CLI command. And the variable in the script like connection string, user name, and password will be hydrated from operation systems environment variables as `MYSQL_CONNECTION_URL`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
+
 
 ```shell
 #!/usr/bin/bash
@@ -247,8 +243,8 @@ exit
 EOF
 ```
 
-In order to invoke the script during the start up of JBoss EAP, please execute the following command.  
-After executed it, the script will be invoke every times when the Application Server restarted.
+In order to invoke the startup script at the start of JBoss EAP, let us configure App Service instance to invoke the startup script.  
+After executed it, the script will be invoke every times when the application server is restarted.
 
 ```azurecli
 az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
@@ -256,12 +252,11 @@ az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/crea
 -g ${RESOURCEGROUP_NAME}
 ```
 
-> [!WARNING]
-> If your deployment artifact is not "ROOT.war", you need change the "--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0" value too.
+If your deployment artifact is not "ROOT.war", you need change the "--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0" value too.
 
 ### Configure the Environment Variables for Connecting to MySQL
 
-After specify the script file, you need to configure the Environment Variables in the Azure App Service. In order to configure the Environment Variables, please execute the following command.
+After you configured a startup script, you need to configure app settings in App service to hydrate necessary environment variable.
 
 ```azurecli
 az webapp config appsettings set \
@@ -273,11 +268,11 @@ az webapp config appsettings set \
 ```
 
 > [!TIP]
-> The value of "MYSQL_CONNECTION_URL", "MYSQL_USER" and "MYSQL_PASSWORD" was already got in the previous section.
+> The values of `MYSQL_CONNECTION_URL`, `MYSQL_USER` and `MYSQL_PASSWORD` were set from the previous unit.
 
 ### Confirm the DataSource Reference in the Code
 
-Finally, in order to access to the MySQL from Your Application Code, You need configure the `DataSource` reference in Your Project. In this time, we implemented the DB access code by using `Java Persistence API (JPA)`. So we added the configuration for the `DataSource` reference in the `persistence.xml` which is the configuration file of the JPA.
+Finally, in order to access the MySQL database from your application, you need to configure the data source reference in your application project. In this time, we implemented the DB access code by using `Java Persistence API (JPA)`. So we added the configuration for the `DataSource` reference in the `persistence.xml` which is the configuration file of the JPA.
 
 Please confirm the following file.
 
@@ -289,7 +284,8 @@ Please confirm the following file.
 │   │   │       └── persistence.xml
 ```
 
-And You need check whether the name of the `DataSource` equal to the previous configuration or not. In the above step, we created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`. So we added a DataSource reference as `java:jboss/datasources/JPAWorldDataSource` in `<jta-data-source>` XML element as follows.
+And, you need to check if the name of the `DataSource` is equal to the name used in the configuration. In the above step, we created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`. So we added a DataSource reference as `java:jboss/datasources/JPAWorldDataSource` in `<jta-data-source>` XML element as follows.
+
 
 ```xml
   <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
@@ -302,7 +298,7 @@ And You need check whether the name of the `DataSource` equal to the previous co
 </persistence>
 ```
 
-Then you can access to the MySQL DB referenced by the `Persisntence Unit` name in your  JPA code like follows.
+Then you can access the MySQL database referenced in the `PersistenceContext` unit name as follows:
 
 ```java
 @Transactional(REQUIRED)
@@ -313,18 +309,19 @@ public class CityService {
     EntityManager em;
 ```
 
-## Access to the Application
+## Access the application
 
-In this Sample Application, we implemented three RESTful endpoints. So we will confirm whether the three endpoint is available or not by using `curl` command or Web browser.
+In the sample application, we implemented three REST endpoint. Let's access the application and validate these endpoints using a Web browser or `curl` command.
 
-In order to access to the  Application, you need specify the Web Server name in the URL. For the URL, You already got in the previous section like follows. So please specify it. 
+To access the application, you need to reference the application URL which you got from the previous section.
 
 ```text
 [INFO] Successfully deployed the artifact to  
 https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 ```
 
-If you have the curl command, please execute following command. Then you can get all of the Continent Area infomation as JSON format.
+If you have the curl command, please execute following command. Then you can get all of the continent information as JSON format.
+
 
 :::image type="content" source="../media/rest-endpoint-area.png" alt-text="REST Endpoint Area":::
 
@@ -333,7 +330,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area
 ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]$ 
 ```
 
-And if you specify the Cotinent in the URL, you can get all of the countries in the specified continent like follows.
+And if you specify the continent in the URL, you can get all of the countries in the specified continent like follows.
 
 :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="REST Endpoint Continent":::
 
@@ -421,7 +418,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia 
 ....
 ```
 
-Finally, if you specify the Country Code after the `/countries`, you will be able to get all of the cities which has the population over 1 million persons in the Country.
+Finally, if you specify a country code after the `/countries`, you can get all the cities which have population greater than a million within the county.
 
 :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="REST Endpoint Cities":::
 
@@ -443,4 +440,5 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/
 "Kitakyushu"
 ```
 
-Then you could finish the confirmation of the Application. Exactlly you get the data from `Azure Database for MySQL`.
+You have now validated the application REST endpoints and how the application got the data from the configured MySQL database.
+

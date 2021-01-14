@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-javaee-app-to-appservice
 metadata:
-  title: Deploy Java EE (Jakarta EE) app to Azure
+  title: Deploy a Java EE (Jakarta EE) App to Azure
   description: You'll learn how to create a Java web application and deploy it to Azure App Services.
   ms.date: 11/25/2020
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy Java EE (Jakarta EE) app to Azure
+title: Deploy a Java EE (Jakarta EE) App to Azure
 summary: In this module, you can learn how to deploy a general Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
 abstract: |
   After completing this module, you can:
-  - Create and manage Azure Database for MySQL Flexible Server
-  - How to deploy your Java EE App to JBoss EAP on Azure App Service
-  - How to create DataSource and configure the Database Binding for your Apps.
-  - How to access and manage the Admin Tool of JBoss
+  - Create and manage Azure Database for MySQL
+  - Deploy a Java EE app to JBoss EAP on App Service
+  - Create a data source and bind the Java EE app to MySQL
+  - Access and manage the Java EE app on JBoss
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -24,13 +24,14 @@ roles:
 products:
   - azure
 prerequisites: |
+  - Azure Subscription
   - [Azure CLI command]((https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada))
   - [Java SE 8 (or 11)]((https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html))
-  - [git command](https://git-scm.com/downloads)
-  - [Maven command](https://maven.apache.org/download.cgi)
-  - [MySQL client command](https://dev.mysql.com/downloads/shell/)
-  - [jq command](https://stedolan.github.io/jq/)
-  - [Bash](https://www.gnu.org/software/bash/)
+  - [Git CLI](https://git-scm.com/downloads)
+  - [Maven](https://maven.apache.org/download.cgi)
+  - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
+  - [jq Utility](https://stedolan.github.io/jq/)
+  - [Bash Shell](https://www.gnu.org/software/bash/)
 units:
   - learn.azure.deploy-javaee-app-to-appservice.1-introduction
   - learn.azure.deploy-javaee-app-to-appservice.2-deploy-azure-database-mysql

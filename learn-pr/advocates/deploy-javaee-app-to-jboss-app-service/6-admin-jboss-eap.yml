@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-javaee-app-to-appservice.6-admin-jboss-eap
-title: Access the JBoss EAP admin tool and application logs
+title: Manage the application and view logs
 metadata:
-  title: Access the JBoss EAP admin tool and application logs
+  title: Manage the application and view logs
   description: In this section, You will lean the overview of access the JBoss EAP admin tool and application logs
   author: yoshioterada
   ms.author: yoterada

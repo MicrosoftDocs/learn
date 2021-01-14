@@ -6,7 +6,7 @@ First, please get the sample application and shell script from the GitHub reposi
 git clone https://*****
 ```
 
-After you got the project, you will see like following directories and files.
+After you cloned the project, you will see like following directories and files.
 
 ```text
 ├── Azure-MySQL-Setup-For-Sample-App.md
@@ -31,7 +31,6 @@ After you got the project, you will see like following directories and files.
 │   │   │                       └── WorldServiceEndpoint.java
 │   │   ├── resources
 │   │   │   └── META-INF
-│   │   │       ├── microprofile.properties
 │   │   │       └── persistence.xml
 │   │   └── webapp
 │   │       └── WEB-INF
@@ -50,7 +49,7 @@ After you got the project, you will see like following directories and files.
 
 ## Login to Azure
 
-Before executing the following steps, at first you need login to Azure.
+First, you need to login to Azure
 
 ```azurecli
 az login
@@ -58,7 +57,7 @@ az login
 
 ## Create an Instance of Azure Database for MySQL
 
-In order to create the MySQL DB intance, You can execute the Bash Shell Script as `setup_mysql.sh` in the direcotry. 
+In order to create the MySQL DB instance, You can execute the Bash Shell Script as `setup_mysql.sh` in the directory. 
  
 Please execute the following command.
 
@@ -66,7 +65,7 @@ Please execute the following command.
  ./setup_mysql.sh flexible
 ```
 
-Then you can see following result. The following information is important and we will use them to the following steps. So please copy the value to some places.
+Please record key values from the output of creating a MySQL instance. Those values will be used in subsequent steps.
 
 ```text
 [INFO] -------------------------------------------------------
@@ -91,23 +90,22 @@ Then you can see following result. The following information is important and we
 [INFO] -------------------------------------------------------
 ```
 
-> [!NOTE]
-> Please execute the above command on IPv4 environment, if your environment has IPv6 address, this command will fail because firewall configuration of azure cli command doesn't support the IPv6 address now.
+Please execute the above command on IPv4 environment, if your environment has IPv6 address, this command will fail because firewall configuration of azure cli command doesn't support the IPv6 address now.
 
 
-## Get an Example Database from MySQL Official Site
+## Get a sample database for MySQL
 
 In this module, you will use a Sample World DataBase from official site of MySQL.
 You can get the original data from following URL.
 `https://downloads.mysql.com/docs/world.sql.zip`
 
-In order to get the Sample Database, please execute following command.
+Download the `world` sample database:
 
 ```bash
 curl -o world.sql.zip https://downloads.mysql.com/docs/world.sql.zip
 ```
 
-After donwload the file, please un-archive the file as follows.
+After download the file, please unzip the file as follows.
 
 ```bash
 unzip world.sql.zip
@@ -122,8 +120,7 @@ ls -l world.sql
 
 ## Login to the MySQL DB
 
-After you created the MySQL DB, you can access to the MySQL DB using `mysql` client command.  
-Please copy & paste the string in the previous result of `2`.
+After you created the MySQL database, you can access the database using `mysql` command line tool.
 
 ```bash
 mysql -u azureuser -h mysqlserver-qtrfennwvy.mysql.database.azure.com -p [Enter]
@@ -159,7 +156,7 @@ mysql>
 
 ### Evaluate the created DB and TABLES
 
-Then automatically, `world` database and some tables will be created on your MySQL.
+The `world` database and its tables are automatically created in your MySQL database.
 
 In order to confirm the databases in your server, please execute the following mysql command.
 
@@ -184,7 +181,7 @@ mysql> use world;
 Database changed
 ```
 
-Then you can operate the `world` DB. In order to confirme the tables in the `world` DB, please execute the following command. Then you can see following result.
+Then you can operate the `world` DB. In order to confirm the tables in the `world` DB, please execute the following command. Then you can see following result.
 
 ```mysql
 mysql> show tables;
@@ -200,17 +197,15 @@ mysql> show tables;
 
 ## Query for Sample Database
 
-In the Sample Application, we would like to show the following data.
+You can view the contents of the `world` database.
 
-1. Get all of the Continent Informations
-2. List the Name of Country and Country Code in Continent
-3. Get Cities which has the population over 1 million
+1. Get all continent information2. List all the names of country and their country codes in each continent3. Get cities which have population greater than 1 million
 
 So we will show the above data using SQL query.
 
-### Get All of the Continent Informations
+### Get all the continent information
 
-In order to get the Continent Informations, please execute following command.  
+In order to get the continent information, please execute following command.  
 Then you will see following result.
 
 ```mysql
@@ -228,7 +223,7 @@ mysql> select distinct Continent from country ;
 +---------------+
 ```
 
-### List Country Name and Country Code in Continent
+### Get names of countries and country codes by continent
 
 In order to get Country Name and  Country Code in Continent, please execute following command.  
 Then you will see following result.
@@ -264,7 +259,7 @@ mysql> select code,name from country where Continent='Asia';
 51 rows in set (0.02 sec)
 ```
 
-### Get the cites which has the population over 1 million
+### Get all cities with population greater than million
 
 In order to get the cities which has the population over 1 million, please execute following command.  
 Then you will see following result.
@@ -291,9 +286,9 @@ mysql> select * from city where CountryCode='JPN' AND Population > 1000000 ORDER
 
 ## Finally
 
-We created a MySQL database flexible server on Azure and created the databases and tables which will be used by the application in this. Then We stored the data in the created table.
+We created a MySQL database flexible server on Azure and created the databases and tables which will be used by the application in this. Then, we stored the data in the created table.
 
-We also executed some SQL queries with the mysql command to see if the data could be available and if the SQL statements written in the application could be executed.  
+Also, we executed a few SQL queries using MySQL command line tool to validate data and SQL queries.
 
 Now we completed the setup and preparation for MySQL Server which is required to deploy a Java EE (Jakarta EE) application in next Chapter.  
 Next, we will deploy the Java EE(Jakarta EE) application to JBoss EAP on Azure App Service and configure it so that it can connect to the MySQL created here.

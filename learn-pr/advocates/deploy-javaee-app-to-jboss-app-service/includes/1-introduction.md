@@ -1,4 +1,4 @@
-Java EE applications have been widely used and provided as standard technologies in the field of utilizing various enterprise businesses such as purchase management, manufacturing management and CRM until Java EE 8.  
+Java EE applications have been widely used and proven as standard technologies in the field of utilizing various enterprise businesses such as purchase management, manufacturing management and CRM until Java EE 8.  
 For example, if you provide a freight delivery system, you must receive the package and register the shipping address information. At that time, it is necessary to obtain regional information, country information, and even town information from the database and register the delivery address.
 In this way, many enterprise services create services that query and update data from databases.
 
@@ -8,19 +8,19 @@ In this module, you will craete a sample database on `Azure Database for MySQL`.
 
 By the end of this module, you can:
 
-  - Create and manage Azure Database for MySQL Flexible Server
-  - How to deploy your Java EE App to JBoss EAP on Azure App Service
-  - How to create DataSource and configure the Database Binding for your Apps.
-  - How to access and manage the Admin Tool of JBoss
+  - Create and manage Azure Database for MySQL
+  - Deploy a Java EE app to JBoss EAP on App Service
+  - Create a data source and bind the Java EE app to MySQL
+  - Access and manage the Java EE app on JBoss
 
 ## Prerequisites
 
-- Your Own Azure Subscription
+- Azure Subscription
 - [Azure CLI command]((https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada))
 - [Java SE 8 (or 11)]((https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html))
-- [git command](https://git-scm.com/downloads)
-- [Maven command](https://maven.apache.org/download.cgi)
-- [MySQL client command](https://dev.mysql.com/downloads/shell/)
-- [MySQL Example World Database](https://dev.mysql.com/doc/index-other.html)
-- [jq command](https://stedolan.github.io/jq/)
-- [Bash](https://www.gnu.org/software/bash/)
+- [Git CLI](https://git-scm.com/downloads)
+- [Maven](https://maven.apache.org/download.cgi)
+- [MySQL CLI](https://dev.mysql.com/downloads/shell/)
+- [jq Utility](https://stedolan.github.io/jq/)
+- [Bash Shell](https://www.gnu.org/software/bash/)
+
