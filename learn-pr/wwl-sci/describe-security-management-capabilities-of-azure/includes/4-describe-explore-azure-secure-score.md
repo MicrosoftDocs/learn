@@ -33,5 +33,5 @@ Use secure score to keep an eye on your security posture, and easily implement
 If you’re the Azure administrator for your organization, you’ll need to be aware of the security of your Azure environment and improve your security posture accordingly. The following interactive clickthrough demonstrates how you can do this using Azure secure score.  Click on the image below to get started.
 
 
-[![Interactive guide](../media/4-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M02%20-%20Use%20Azure%20secure%20score%20to%20improve%20your%20security%20posture/index.html)
+[![Interactive guide](../media/4-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M02%20-%20Use%20Azure%20secure%20score%20to%20improve%20your%20security%20posture/index.html?azure-portal=true)
 
