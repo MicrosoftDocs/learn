@@ -10,7 +10,7 @@ Example layers of security might include:
 - *Application* layer security ensures that applications are secure and free of security vulnerabilities.
 - *Data* layer security controls access to business and customer data, as well encryption to protect data.
 
-:::image type="content" source="../media/4-defense-in-depth.png" alt-text="Defense in depth uses multiple layers of security to protect sensitive data":::
+:::image type="content" source="../media/4-defense-depth.png" alt-text="Defense in depth uses multiple layers of security to protect sensitive data":::
 
 ## Confidentiality, Integrity, Availability (CIA)
 

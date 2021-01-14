@@ -4,7 +4,7 @@ title: Describe ways encryption hashing and signing can secure your data
 metadata:
   title: Describe ways encryption hashing and signing can secure your data
   description: "Describe ways encryption hashing and signing can secure your data"
-  ms.date: 01/13/2021
+  ms.date: 01/14/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-describe-ways-encryption-hashing-signing-can-secure-your-data.md)]
+  [!include[](includes/6-describe-ways-encryption-hashing-signing-secure-data.md)]
