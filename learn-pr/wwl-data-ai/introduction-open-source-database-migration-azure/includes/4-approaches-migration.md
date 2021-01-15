@@ -140,7 +140,7 @@ Similarly, if your on-premises database server runs MariaDB, you can consider mi
 
 Azure SQL Database is more fully-featured than Azure Database for MySQL and Azure Database for MariaDB.
 
-> [NOTE]
+> [!NOTE]
 > You might need to modify any applications that connect to your migrated database—because Azure SQL Database uses different data types, different database objects, and a different API from MySQL and MariaDB. Consult your developers to determine how much work is required to port a client application from an on-premises MySQL or MariaDB database to a cloud Azure SQL database.
 
 ## SQL Server Migration Assistant for MySQL
