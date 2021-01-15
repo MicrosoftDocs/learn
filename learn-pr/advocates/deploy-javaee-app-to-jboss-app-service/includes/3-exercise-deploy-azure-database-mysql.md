@@ -5,7 +5,7 @@ In this exercise, we'll look at creating and our Azure for MySql Database and lo
 First, lets get the sample application and shell script from its GitHub repository.
 
 ```bash
-git clone https://*****
+git clone https://github.com/yoshioterada/Deploy-Jakarta-EE-8-App-to-JBoss-EAP.git
 ```
 
 After you cloned the project, you'll see the following directories and files.
