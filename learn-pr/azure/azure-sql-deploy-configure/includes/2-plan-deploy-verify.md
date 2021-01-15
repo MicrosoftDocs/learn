@@ -7,7 +7,7 @@ Before you start deploying things in Azure, it's important to understand what yo
 * Deployment method: Azure portal or command-line interface?
 * Deployment option: virtual machine (VM), database, elastic pool, managed instance, or instance pool?
 * Purchasing model (Azure SQL Database only): DTU or vCore?
-* Service tier (service-level objective): General Purpose, Business Critical, or Hyperscale?
+* Service tier: General Purpose, Business Critical, or Hyperscale?
 * Hardware: Gen5, or something new?
 * Sizing: number of vCores and **Data max size**?  
 
@@ -19,6 +19,8 @@ The Azure SQL introduction module discussed limits, rates, and capabilities (lik
 
 * Memory
 * Max log size
+* Transaction log rate
+* Data IOPS
 * Size of tempdb
 * Max concurrent workers
 * Backup retention
