@@ -43,7 +43,7 @@ The Azure SQL Managed Instance and Azure SQL Database services restrict the foll
 * You can't stop or restart servers.
 * You can't use:
   * Instant file initialization.
-  * Locked pages in memory.
+  * Locked pages in memory (we may configure Locked pages in some SLO deployments)
   * `FILESTREAM` and availability groups. (We use availability groups internally.)
   * Server collation. (In SQL Managed Instance, you can select this during deployment but not change it.)
   * Startup parameters.
