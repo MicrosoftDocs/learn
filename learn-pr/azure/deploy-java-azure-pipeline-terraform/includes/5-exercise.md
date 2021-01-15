@@ -63,7 +63,7 @@ jobs:
   - Terraform has deployed the Java Web App and displayed the Azure Instance URL.
 - Verify your Java application is deployed and working.
 
-![Maven GitHubAction.](../media/4-maven_run.png)
+![Maven GitHubAction run.](../media/4-maven_run.png)
 
 ## Next steps
 

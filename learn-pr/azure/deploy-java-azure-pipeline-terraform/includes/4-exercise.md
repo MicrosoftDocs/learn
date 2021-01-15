@@ -271,7 +271,7 @@ Commit your changes.
 - Go to the "Actions" tab on your repository, then select the "TERRAFORM" workflow.
   - Confirm the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
 
-![Maven GitHubAction.](../media/4-terraform_run.png)
+![Maven GitHubAction run.](../media/4-terraform_run.png)
 
 - Expand the "Terraform Apply" step.
   - Terraform has created the resources and displayed the Azure Instance URL.
