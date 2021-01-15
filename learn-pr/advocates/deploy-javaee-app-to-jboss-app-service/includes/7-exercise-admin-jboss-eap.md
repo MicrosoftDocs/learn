@@ -1,7 +1,9 @@
+In this exercise, we access the JBoss Admin graphical interface and stream its logs
 
 ### Create a TCP Tunnel for connecting  to Remote Server
 
-In order to access to the remote server, You can create a TCP Tunnel between remote server and your local machine. Please execute the following command?
+To access to the remote server, you can create a TCP Tunnel between your remote server and your local machine.
+Execute the following command:
 
 ```azurecli
 $ az webapp create-remote-connection -n jakartaee-app-on-jboss-1606464084546 \
@@ -14,7 +16,7 @@ SSH is available { username: root, password: Docker! }
 Ctrl + C to close
 ```
 
-Then you will get like the following information from the command result.
+Then you'll get the following information from the command result:
 
 |  Required Information  |  Value  |
 | ---- | ---- |
@@ -22,19 +24,19 @@ Then you will get like the following information from the command result.
 |  username  |  root  |
 |  password  |  Docker!  |
 
+### SSH with TCP Tunnel
 
-### SSH Login by TCP Tunnel
-
-Then you can Login to the Server by using `ssh` command. Please open a new command terminal and execute the  following commnand.
+Then you can sign in to the Server by using `ssh` command.
+Open a new command terminal and execute the following command.
 
 ```bash
 ssh  root@127.0.0.1  -L 9990:localhost:9990 -p $PORT_NUMBER (ex. 59445)
 ```
 
 > [!TIP]
-> If you would like to access to the JBoss EAP Admin Web Concole, please specify the `-L 9990:localhost:9990` options. Then you can access to the `http://localhost:9990/console` for Web Console. If you don't need to login the JBoss Web Console, you can remove the "-L" option.
+> If you would like to access to the JBoss EAP Admin Web Console, please specify the `-L 9990:localhost:9990` options. Then you can access to the `http://localhost:9990/console` for Web Console. If you don't need to login the JBoss Web Console, you can remove the "-L" option.
 
-Then you can see following messages and you could login to the Server.
+Then you can see following messages and you could sign in to the Server:
 
 ```bash
 The authenticity of host '[127.0.0.1]:59445 ([127.0.0.1]:59445)' can't be established.
@@ -61,16 +63,16 @@ Documentation: http://aka.ms/webapp-linux
 
 ### Execute JBoss CLI Command
 
-After login to the remote server, you can execute JBoss EAP Admin CLI Tool as `jboss-cli.sh`. The CLI command is located on `/opt/eap/bin/` directory. So you can connect to JBoss EAP by using following command.
+After signing in to the remote server, you can execute the JBoss EAP Admin CLI Tool as `jboss-cli.sh`.
+The CLI command is located on `/opt/eap/bin/` directory.
+Connect to JBoss EAP by using following command:
 
 ```bash
 -bash-4.2# /opt/eap/bin/jboss-cli.sh --connect
 Picked up JAVA_TOOL_OPTIONS: -Xmx2402M -Djava.net.preferIPv4Stack=true 
 ```
 
-After connected to the JBoss EAP Server, you can execute the JBoss CLI command like follows. 
-
-You can get the Product Information from following command.
+After connecting to the JBoss EAP Server, execute the JBoss CLI command to get the Product Information:
 
 ```bash
 [standalone@localhost:9990 /] :product-info
@@ -103,14 +105,14 @@ ipo)",
 }
 ```
 
-You can get all of the deployed Applications from following command.
+Get all of the deployed Applications from following command:
 
 ```bash
 [standalone@localhost:9990 /] ls deployment
 ROOT.war          activemq-rar.rar  
 ```
 
-You can test DB connection availabiilty from following command.
+Test the DB connection with the following command:
 
 ```bash
 [standalone@localhost:9990 /] /subsystem=datasources/data-source="JPAWorldDataSourceDS":test-connection-in-pool
@@ -120,50 +122,53 @@ You can test DB connection availabiilty from following command.
 }
 ```
 
-### Access to the JBoss EAP Admin Web Console
+### Access the JBoss EAP Admin Web Console
 
-Not only terminal login, you can also access to the Admin Web Console. Before accessing to the Web Concole, please create admin user and password for authentication.
+You can also access the JBossAdmin Web Console.
+First, create an admin user and password for authentication:
 
 ```bash
 -bash-4.2# /opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
 ```
 
-Then you can access to the Web Console from your Local environment. Please open the browser and access to the following URL.
+Then you can access to the Web Console from your Local environment.
+Using a browser, access the following URL:
 
-```
+```html
 http://127.0.0.1:9990/console
 ```
 
-Then you will see following Login Screen and you can login with previous user name and password.
+Then you'll see the following Sign-on Screen and you can sign in with the previously created user name and password:
 
-:::image type="content" source="../media/jboss-admin-console1.png" alt-text="Admin Console Login Auth Window":::
+:::image type="content" source="../media/jboss-admin-console1.png" alt-text="Admin Console Auth Window":::
 
-After Login to the Web Console, you can see like following screen.
+After signing in to the Web Console, you'll see the following screen:
 
 :::image type="content" source="../media/jboss-admin-console2.png" alt-text="Admin Console Top Page":::
 
-You can confirm created Datasource from `Configuration` -> `Subsystems` -> `Datasources & Drivers` -> `Datasources`.
+You can confirm your created Datasource from `Configuration` -> `Subsystems` -> `Datasources & Drivers` -> `Datasources`.
 
 :::image type="content" source="../media/jboss-admin-console3.png" alt-text="Admin Console DataSources List":::
 
-You can also confirm your RESTful endpoint of application from `Runtime` -> `system` -> `JAX-RS` -> `Your Application`.
+You can also confirm your RESTful endpoints of your application from `Runtime` -> `system` -> `JAX-RS` -> `Your Application`.
 
 :::image type="content" source="../media/jboss-admin-console4.png" alt-text="Admin Console RESTful Endpoint":::
 
 > [!NOTE]
-> If you directly access to the Remote Server via JBoss CLI command or Web Console and add or update some configurations, the configuration will be clear and deleted after the container is rebooted due to some reason. So if you need persist the configuration, please configure in the Start up script. For example, we created the `createMySQLDataSource.sh` in previous section as a startup script. 
+> If you directly access to the Remote Server via JBoss CLI command or Web Console and add or update some configurations, the configuration will be clear and deleted after the container is rebooted. To persist the configuration, configure this in the Start up script.
+For example, we created the `createMySQLDataSource.sh` in previous section as a startup script.
 
 ## Open a Log stream
 
-If you login to the server, you can confirm the Application log. However Azure CLI provide very useful functionality to confirm the log without login to the remote server.
-In order to confirm the Application Log on your local machine, you can execute following command.
+Next let's sign in to the server and access the Application log.
+You can access the Application sign in your local machine, by executing the following command:
 
 ```azurecli
 az webapp log tail --name ${WEBAPP_NAME} \
  --resource-group ${RESOURCEGROUP_NAME}
 ```
 
-If you executed the command you can see the log look like follows.
+After executing the above command, you'll get your log output:
 
 ```azurecli
 az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
@@ -180,6 +185,7 @@ az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
 
 ## Exercise Summary
 
-In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) Application to JBoss EAP on Azure App Service. Then we created `DataSource` for accessing from MySQL to  JBoss EAP in the startup script. And learned how to access to the Remote Server both CLI and GUI by TCP Tunnel. Finally we confimed how to see the log file from local machine.
-
-This is the general step to deploy your Java EE (Jakarta EE) application to JBoss EAP which communicate with MySQL.  
+In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) Application to JBoss EAP on Azure App Service.
+Then we created a `DataSource` for connecting MySQL to JBoss EAP in a startup script.
+We also learned how to access to the Remote Server from both CLI and GUI by a TCP Tunnel.
+Finally, we accessed the log file from our local machine.
