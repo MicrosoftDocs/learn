@@ -16,7 +16,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. In the left-hand **Azure Marketplace** nav bar, select **Storage**.
 
-1. In the searchbox, select **Storage account**.
+1. In the search box, select **Storage account**.
 
     :::image type="content" source="../media/5-portal-storage-select.png" border="true" alt-text="Screenshot of the Azure portal showing the Create a resource pane with the Storage category and Storage account option highlighted.":::
 
