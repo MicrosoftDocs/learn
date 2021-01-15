@@ -23,79 +23,76 @@ In this module, you'll learn how to route events to Time Series Insights to quer
 
 ## Azure Digital Twins events
 
-In many cases, data from Azure Digital Twins needs to be sent to downstream services for further analysis, integration, simulation, or processing. In this module, you'll explore how to send data to a Time Series Insights instance to record time-series data of manufacturing process events for bulk analytics.
+In many cases, you need to send data from Azure Digital Twins to downstream services for further analysis, integration, simulation, or processing. In this module, you'll explore how to send data to a Time Series Insights instance to record time series data of manufacturing process events for bulk analytics.
 
-You handle data egress by using event routes. An event route lets you send event data (like telemetry events, life-cycle events, and property change events) from twins to defined endpoints in your subscriptions (such as an event hub, event grid, or a service bus).
+You handle data egress by using event routes. An event route lets you send event data (like telemetry events, lifecycle events, and property-change events) from twins to defined endpoints in your subscriptions (like an event hub, event grid, or service bus).
 
-Azure Digital Twins will emit the following events (notifications and telemetry messages) and they'll be routed to custom endpoints:
+Azure Digital Twins will emit the following events (notifications and telemetry messages). They'll be routed to custom endpoints.
 
-- Digital Twin Change Notification
-- Digital Twin Lifecycle Notification
-- Digital Twin Relationship Change Notification
-- Digital Twin Telemetry Messages
 
 | Notification type                    | Routing source name   | Generated from...  |
 |--------------------------------------|-----------------------|--------------------|
 | Digital Twin Change Notification     | Digital Twin Change Notification | Any digital twin property change |
-| Digital Twin Lifecycle Notification  | Digital Twin Lifecycle Notification | Any digital twins create or delete operation |
+| Digital Twin Lifecycle Notification  | Digital Twin Lifecycle Notification | Any digital twin create or delete operation |
 | Digital Twin Relationship Change Notification  | Digital Twin Relationship Change Notification  | Any digital twin relationship change |
 | Digital Twin Telemetry Messages      | Telemetry Messages        | Any telemetry message |
 
-For more information about the different notification types displayed in the above table, see [the Azure Digital Twins event data article](https://docs.microsoft.com/azure/digital-twins/how-to-interpret-event-data).
+For more information about the notification types in this table, see [the Azure Digital Twins event data article](https://docs.microsoft.com/azure/digital-twins/how-to-interpret-event-data).
 
 ## Endpoints
 
-To define an event route, developers first must define **endpoints**. An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are:
+To define an event route, developers first must define endpoints. An endpoint is a connection to a destination outside of Azure Digital Twins. Supported destinations are as follows:
 
-- EventGrid
-- EventHub
-- ServiceBus
+- Event Grid
+- Event Hubs
+- Service Bus
 
-:::image type="content" source="../media/event-data-flow.png" alt-text="The diagram illustrates the flow of event data through a larger IoT solution with an Azure Digital Twins aspect":::
+:::image type="content" source="../media/event-data-flow.png" alt-text="Diagram that illustrates the flow of event data through a large IoT solution.":::
 
-**The diagram illustrates the flow of event data through a larger IoT solution (a railway monitoring system) with an Azure Digital Twins aspect.**
+**The flow of event data through a large IoT solution (a railway monitoring system).**
 
 ## Routes
 
-**Event routes** are defined using data plane APIs. A route definition contains:
+You define event routes by using data plane APIs. A route definition contains:
 
-- The desired route ID
-- The desired endpoint ID
-- A filter that defines which events are sent to the endpoint
+- The route ID.
+- The endpoint ID.
+- A filter that defines which events are sent to the endpoint.
 
-Some of the services you can tap into using routes:
+Here are some use cases for routes:
 
-- Storing Azure Digital Twins data in [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
-- Analyzing Azure Digital Twins data with [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is), or other Microsoft data analytics tools
-- Integrating larger workflows with Logic Apps
-- Connecting Azure Digital Twins to Time Series Insights to track the time series history of each twin
-- Aligning a Time Series Model in Time Series Insights with a source in Azure Digital Twins
-- Route events to compute services like Azure Functions for advanced simulation or data processing
+- Store Azure Digital Twins data in [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
+- Analyze Azure Digital Twins data with [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is) or other Microsoft data analytics tools.
+- Integrate larger workflows with Azure Logic Apps.
+- Connect Azure Digital Twins to Time Series Insights to track the time series history of each twin.
+- Align a time series model in Time Series Insights with a source in Azure Digital Twins.
+- Route events to compute services like Azure Functions for advanced simulation or data processing.
 
 ## Learning objectives
 
 In this module, you will:
 
 - Build and simulate the chocolate factory twin
-- Create a route and filter to twin update notifications
+- Create a route and filter for twin update notifications
 - Create and configure an Azure function, and send telemetry to an event hub
-- Create and connect a Time Series Insights instance
+- Create a Time Series Insights instance and connect it to Azure Digital Twins
 - Visualize and query your data in Time Series Insights
 
 ## Prerequisites
 
-- It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) Learning Path
-- A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended 
-- [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-  - It is recommended to install AZ CLI locally 
-  - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
-- macOS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
-- Windows OS: PowerShell is built in
-- Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory Tenant to complete the exercise units
-- It is recommended that you have some experience working with Time Series Insights, you can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/) module 
-- [Node.js](https://nodejs.org/en/download/) to run the device simulator application  
-- [Git](https://git-scm.com/downloads)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [.NET Core 3.1](https://dotnet.microsoft.com/download)
-- [C# VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
-- [Azure Function VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+- (Recommended.) Introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) learning path.
+- A basic understanding of the Azure CLI. We recommend that you complete the [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module. 
+- [The Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+  - We recommend that you install Azure CLI locally. 
+  - We don't recommend that you use Azure Cloud Shell. It will time out because the length of the lab.
+- PowerShell. 
+  - On Windows, PowerShell is built in.
+  - On macOS, you need to install [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6).
+- (For the exercise units.) Access to an Azure subscription in which you have the Global Administrator role for your account and an Azure Active Directory tenant.
+- (Recommended.) Some experience working with Time Series Insights. You can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/) module.
+- [Node.js](https://nodejs.org/en/download/) to run the device simulator application.  
+- [Git](https://git-scm.com/downloads).
+- [Visual Studio Code](https://code.visualstudio.com/).
+- [.NET Core 3.1](https://dotnet.microsoft.com/download).
+- [C# Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
+- [Azure Functions Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).

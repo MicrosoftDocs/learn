@@ -16,7 +16,7 @@ abstract: |
   In this module, you will:
   - Build and simulate the chocolate factory twin
   - Create a route and filter for twin update notifications
-  - Create and configure an Azure function, and send system-generated messages to an event hub
+  - Create and configure an Azure function, and send telemetry messages to an event hub
   - Create an Azure Time Series Insights instance and connect it to Azure Digital Twins
   - Visualize and query your data in Time Series Insights
 prerequisites: |

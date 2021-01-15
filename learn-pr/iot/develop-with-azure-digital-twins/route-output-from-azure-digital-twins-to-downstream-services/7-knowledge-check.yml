@@ -23,7 +23,7 @@ quiz:
     - content: 'Convert Azure Digital Twins models from DTDL v1 to DTDL v2'
       isCorrect: false
       explanation: 'The Azure function converts twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins.'
-    - content: 'Convert system-generated messages to twin updates'
+    - content: 'Convert telemetry messages to twin updates'
       isCorrect: false
       explanation: 'The Azure function converts twin update events from their original form as JSON Patch documents to JSON objects that contain only updated and added values from your twins.'
 
