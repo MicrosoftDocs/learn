@@ -1,6 +1,6 @@
 We've created our dataset in Custom Vision. Now, we can train our model. 
 
-## Build the model: Train the model
+## Train the model
 
 You could train the model by using the SDK, but we'll use the Custom Vision portal to train our model.
 

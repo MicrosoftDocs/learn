@@ -1,6 +1,6 @@
 The next step is to upload the images that we'll use to train the machine learning model.
 
-## Build the model: Upload images
+## Upload images
 
 Now, it's time to upload the images that we'll use to train the machine learning model. There are two ways to upload images:
 

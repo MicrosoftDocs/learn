@@ -18,7 +18,7 @@ To activate the sandbox:
 
 The message **Sandbox activated!** appears, and you can continue with the learning module.
 
-## Build the model: Download the dataset
+## Download the dataset
 
 Data is the first thing we need to create a machine learning model. We'll use a subset of the NABirds dataset from the Cornell Lab to train our model. 
 
