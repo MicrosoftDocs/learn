@@ -230,9 +230,7 @@ This workflow does the following actions:
 
 - Check whether the configuration is formatted properly
 - generate a plan for every pull requests
-- apply the configuration when you update the GitHub branch
-
-Your workflow will be triggered whenever code is pushed to the repository.
+- trigger the configuration when you update files in the "terraform" directory
 
 > [!NOTE]
 > You also trigger the GitHub Actions workflow by going to "Actions", then select the terraform workflow and "Re-run Jobs".
@@ -264,12 +262,11 @@ variable "location" {
 
 ## Confirm the GitHub Action build
 
-Go to the "Actions" tab on your repository , then select the "TERRAFORM" workflow.
-Confirm the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
-
-Expand the "Terraform Apply" step.
-Terraform has created the resources and displayed the Azure Instance URL.
-Verify your Azure App Instance is publicly available.
+- Go to the "Actions" tab on your repository , then select the "TERRAFORM" workflow.
+  - Confirm the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
+- Expand the "Terraform Apply" step.
+  - Terraform has created the resources and displayed the Azure Instance URL.
+- Verify your Azure App Instance is publicly available.
 
 ## Next Steps
 
