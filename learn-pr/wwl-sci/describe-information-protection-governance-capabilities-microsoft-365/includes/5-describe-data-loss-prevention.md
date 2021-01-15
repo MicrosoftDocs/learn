@@ -56,6 +56,6 @@ Data loss prevention capabilities have been extended to Microsoft Teams chat and
 
 The user can then find out more information about why their message was blocked by selecting the "What can I do?" link, so they can take appropriate action:
 
-:::image type="content" source="../media/5-policy-tip-more-info.png" alt-text="The user can find more information about why their message was blocked, and take recommended actions.":::
+:::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="The user can find more information about why their message was blocked, and take recommended actions.":::
 
 With DLP policies, Microsoft Teams can help users across organizations to collaborate securely and in a way that is in line with compliance requirements.
