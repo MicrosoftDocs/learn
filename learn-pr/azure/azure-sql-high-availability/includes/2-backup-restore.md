@@ -16,7 +16,7 @@ Retention for PITR varies between 1 and 35 days. By default, the retention perio
 
 ### Long-term retention (LTR)
 
-If 35 days isn't long enough to meet your organization's needs or compliance requirements, you can choose long-term retention (LTR). This option enables you to automatically create full database backups that are stored in RA-GRS storage for up to 10 years. For Azure SQL Database, LTR is generally available. For Azure SQL Managed Instance, LTR is available in a limited public preview.
+If 35 days isn't long enough to meet your organization's needs or compliance requirements, you can choose long-term retention (LTR). This option enables you to automatically create full database backups that are stored in RA-GRS, ZRS, or LRS storage for up to 10 years. For Azure SQL Database, LTR is generally available. For Azure SQL Managed Instance, LTR is available in a limited public preview.
 
 ### Geo-restore
 
