@@ -18,7 +18,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
     [![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)](../media/refrigerated-trucks-vscode.png#lightbox)
 
-1. Back in the terminal, load the libraries you need with the following commands:
+1. Back in the terminal, load the libraries you need with the following commands.
 
     ```CLI
     npm install azure-iot-device@1.17.0
@@ -29,18 +29,18 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     npm install chalk
     ```
 
-1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the `RefrigeratedTruck` folder is the current folder of the terminal, when you run the app.
+1. After you've entered the following code into the app.js file, run it from the terminal by entering `node app.js`. When you run the app, ensure that the `RefrigeratedTruck` folder is the current folder of the terminal.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-1. Open a terminal in Visual Studio Code, and create a folder called "RefrigeratedTruck" (enter `mkdir RefrigeratedTruck`). Navigate to the folder, by entering `cd RefrigeratedTruck`.
+1. Open a terminal in Visual Studio Code, and create a folder called "RefrigeratedTruck" (enter `mkdir RefrigeratedTruck`). Navigate to the folder by entering `cd RefrigeratedTruck`.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
 
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
-1. In the terminal, install the required libraries:
+1. In the terminal, install the required libraries.
 
     ```CLI
     dotnet add package AzureMapsRestToolkit
@@ -52,7 +52,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
-1. After you've entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the `RefrigeratedTruck` folder.
+1. After you've entered the following code into the Program.cs file, you can run the app with the command `dotnet run`. This command runs the Program.cs file in the current folder, so ensure you are in the `RefrigeratedTruck` folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -61,7 +61,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
     [![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
-1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
+1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages**.
 
 1. In the dialog that follows, search for and install the following libraries:
 
@@ -76,7 +76,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Delete the default contents of the app.js file.
 
-1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
+1. When you've entered the following code, you'll be able to run the app with the **Start Without Debugging** or **Start Debugging** options. In the latter case, you can set breakpoints, examine data, and perform other debugging tasks.
 
 ::: zone-end
 ::: zone pivot="vs-csharp"
@@ -86,6 +86,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 1. Give the project a friendly name, such as "RefrigeratedTruck".
 
 1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+
     * **AzureMapsRestToolkit**
     * **Microsoft.Azure.Devices.Client**
     * **Microsoft.Azure.Devices.Provisioning.Client**
@@ -104,7 +105,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 In the blank app.js file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
 
    > [!NOTE]
-   > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of app.js from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the app.js file of your project. If you copy this code (and replace the connection and subscription strings) then go straight to the next unit, and start testing!
+   > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of app.js from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the app.js file of your project. If you copy this code (and replace the connection and subscription strings), go straight to the next unit, and start testing.
 
 1. Add code to connect to Azure IoT Central, and Azure Maps, replacing the four `<your...>` strings with your own strings. Do not change any other lines of code.
 
@@ -327,7 +328,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > It's important to grasp the asynchronous nature of calls to Azure Maps, the call to the `calculateRouteDirections` function will end immediately after it's called while your app is waiting for the results from Azure Maps. When the results are returned from Azure Maps, the method passed in to `results.then(...)` will be called with the resulting route.
+    > It's important to grasp the asynchronous nature of calls to Azure Maps. The call to the `calculateRouteDirections` function will end immediately after it's called while your app is waiting for the results from Azure Maps. When the results are returned from Azure Maps, the method passed in to `results.then(...)` will be called with the resulting route.
 
 1. Add the command to deliver to a customer.
 
@@ -728,7 +729,7 @@ In the blank app.js file, insert the following code. Each additional section of 
 In the blank Program.cs file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
 
    > [!NOTE]
-   > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of Program.cs from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the Program.cs file of your project. If you copy this code (and replace the connection and subscription strings) then go straight to the next unit, and start testing!
+   > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of Program.cs from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the Program.cs file of your project. If you copy this code (and replace the connection and subscription strings), go straight to the next unit, and start testing.
 
 1. Add the `using` statements, including for Azure IoT Central and Azure Maps.
 
@@ -1433,7 +1434,7 @@ In the blank Program.cs file, insert the following code. Each additional section
     ```
 
     > [!NOTE]
-    > Direct methods are set in the client using statements such as `s_deviceClient.SetMethodHandlerAsync("cmdGoTo", CmdGoToCustomer, null).Wait();`.
+    > Direct methods are set in the client using statements, such as `s_deviceClient.SetMethodHandlerAsync("cmdGoTo", CmdGoToCustomer, null).Wait();`.
 
 ::: zone-end
 
