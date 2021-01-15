@@ -259,7 +259,7 @@ variable "location" {
 }
 ```
 
-Change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name.
+Change "**CHANGE_ME_RESOURCE_GROUP**" to your intended resource group name and "**CHANGE_ME_APP_NAME**" to your intended application name.
 
 Commit your changes.
 
