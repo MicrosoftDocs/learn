@@ -53,10 +53,22 @@ jobs:
 - If the Workflow is correct, select **Finish**
 - This configuration will commit the workflow file to the repository, and immediately start to build and deploy your app.
 
+> [!NOTE]
+> You also trigger the GitHub Actions workflow by going to "Actions", then select the "build-and-deploy" workflow and "Re-run Jobs".
+
+## Confirm the GitHub Action build
+
+- Go to the "Actions" tab on your repository, then select the "build-and-deploy" workflow.
+- Expand the "Deploy to Azure Web App" step.
+  - Terraform has deployed the Java Web App and displayed the Azure Instance URL.
+- Verify your Java application is deployed and working.
+
+![Maven GitHubAction.](../media/4-maven_run.png)
+
 ## Next steps
 
 Congratulations! You now have two GitHub actions setup - a provisioning action and a build/deploy action.
-Each time you `git push` your code, your TerraForm provisioned resources are created (if not created already) and your application is deployed.
+Each time you `git push` your code, your build/deploy is triggered and your application is deployed.
 
 > [!IMPORTANT]
 
