@@ -9,7 +9,7 @@ To build quantum computers, we need full access to the controllable quantum
 systems to represent the qubits that we use to store the quantum information. In
 general, a functional quantum computer should fulfill the following criteria:
 
-- **Scalability of qubits:** since quantum computers are based in the
+- **Scalability of qubits:** since quantum computers are based on the
   manipulation of quantum information by using qubits, we need a system that allows scalability to a large number of qubits. A qubit can be represented by any
   physical system with **two** *states* or *levels* that can be prepared in a
   quantum superposition.
@@ -116,7 +116,7 @@ example:
 - **Quantum dot computers:** quantum dots are small cumulus of semiconductor
   atoms that behave like macroscopic atoms and can be prepared into superposed
   states. They can be used to represent qubits.
-- **Photonic quantum computers:** they use polarized photons to represent qubits
+- **Photonic quantum computers:** use polarized photons to represent qubits
   and light guides to implement quantum operations.
 - **Topological quantum computers:** a theoretical proposal for quantum
   computers that use a new type of material called *anyons* to create qubits

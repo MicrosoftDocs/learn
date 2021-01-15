@@ -91,7 +91,7 @@ Next, you'll use Visual Studio Code to create a Q# Project.
     </Project>
     ```
 
-   with `yy.yy.yyyyyyyy` being the number of the last version of the Quantum
+   with `yy.yy.yyyyyyyy` being the number of the latest version of the Quantum
    Development Kit.
 
 1. Replace the contents of `Program.qs` with the program:
