@@ -4,4 +4,4 @@ In this module, you will be introduced to both core and advanced auditing capabi
 At the end of this module, you should be able to:
 
 - Describe the core audit capabilities of Microsoft 365.
-- Describe the purpose and value of Advanced Auditing.
+- Describe the purpose and value of Advanced Auditing. 
