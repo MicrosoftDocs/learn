@@ -237,8 +237,9 @@ This workflow does the following actions:
 
 ## Trigger the workflow
 
-In your forked repository you need to customize your application, and resource group name and trigger the Action.
-Using the built-in GitHub Text editor or your editor of choice, edit and commit `terraform/variables.tf` and change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name:
+In your forked repository you now need to trigger the GitHub Action.
+
+Using the built-in GitHub Text editor or your editor of choice, edit `terraform/variables.tf`
 
 ```yaml
 variable "resource_group" {
@@ -256,6 +257,10 @@ variable "location" {
   default     = "westeurope"
 }
 ```
+
+Change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name.
+
+Commit your changes.
 
 > [!IMPORTANT]
 > Make sure the name of your application name is unique.
