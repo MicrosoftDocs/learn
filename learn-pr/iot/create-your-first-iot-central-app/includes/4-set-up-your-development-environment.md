@@ -22,7 +22,7 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
 1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You will find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your "Truck keys.txt" document, with a note that it applies to Azure Maps.
 
-1. You can (optionally) verify your Azure Maps key works. Save the following HTML to an .html file. Replace the **&lt;your Azure Maps key&gt;** entry with your own key. Then, load the file into a web browser. 
+1. You can (optionally) verify your Azure Maps key works. Save the following HTML to an .html file. Replace the **&lt;your Azure Maps key&gt;** entry with your own key. Then, load the file into a web browser.
 
     ```html
     <!DOCTYPE html>
@@ -74,6 +74,7 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
     </html>
     ```
+
 1. Do you see a map of the world? Can you zoom in and out, and scroll the map?
 
 ## Next steps

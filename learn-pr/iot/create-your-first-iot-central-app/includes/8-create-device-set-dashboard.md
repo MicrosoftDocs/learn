@@ -4,11 +4,11 @@ Feel free to skip this unit, completing it is optional!
 
 ## Add multiple devices to the IoT Central app
 
-1. To add multiple devices, start in the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app, clicking **Devices** in the left-hand menu.
+1. To add multiple devices, start in the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app, and select **Devices** in the left-hand menu.
 
-1. Click **RefrigeratedTruck** in the **Devices** menu, to ensure the device we create uses this device template. The device template you select will be shown in bold text.
+1. In the **Devices** menu, select **RefrigeratedTruck** to ensure the device we create uses this device template. The device template you select will appear in bold text.
 
-1. Click **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
+1. Select **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
 
 1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck2".
 
@@ -16,19 +16,19 @@ Feel free to skip this unit, completing it is optional!
 
 1. Leave the **Simulated** setting at **Off**.
 
-1. Click **Create**.
+1. Select **Create**.
 
 Repeat this process to create as many devices as you want.
 
 ## Provision the new devices
 
-1. Double-click on **RefrigeratedTruck - 2**, and then click **Connect** (top right of your IoT Central screen).
+1. Double-click on **RefrigeratedTruck - 2**, and then select **Connect** (top right of your IoT Central screen).
 
-1. In the **Device Connection** screen, copy the **Device ID** and the **Primary Key** to your text file, noting that they are for the second truck. There's no need to copy the **ID Scope**, as this value is identical to the value for the first truck (this ID identifies your app, not an individual device).
+1. In the **Device Connection** screen, copy the **Device ID** and the **Primary key** to your text file, noting that they are for the second truck. There's no need to copy the **ID scope**, as this value is identical to the value for the first truck (this ID identifies your app, not an individual device).
 
-1. Click **Close**.
+1. Select **Close**.
 
-1. Back on the **Devices** page, repeat the process for any other devices you created, copying their **Device ID** and **Primary Key** to your text file.
+1. On the **Devices** page, repeat the process for any other devices you created, copying their **Device ID** and **Primary key** to your text file.
 
 1. When you have completed connecting all the new trucks, notice that the **Provisioning Status** is still **Registered**. Not until you make the connection will this change.
 
