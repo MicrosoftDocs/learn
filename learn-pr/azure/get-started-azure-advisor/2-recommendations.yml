@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-azure-advisor.2-recommendations
+title: Advisor recommendations and how to remediate issues
+metadata:
+  title: Advisor recommendations and how to remediate issues
+  description: 
+  TBA
+  ms.date: 02/01/2021
+  author: Jak-MS
+  ms.author: darasera
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-recommendations.md)]

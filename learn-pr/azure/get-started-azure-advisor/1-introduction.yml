@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-azure-advisor.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: TBA
+  ms.date: 02/01/2021
+  author: Jak-MS
+  ms.author: darasera
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
