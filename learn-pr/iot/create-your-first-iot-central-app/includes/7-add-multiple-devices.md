@@ -4,9 +4,9 @@ In this unit, we complete the app testing.
 
 Now for the best fun of all.
 
-1. Click the **Commands** title for the device. This control should be under the truck name, and right of the **Truck view** control.
+1. Select the **Commands** title for the device. This control should be under the truck name, and right of the **Truck view** control.
 
-1. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
+1. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and select **Run**.
 
 1. In the console for the device app, you should see both a **New customer** event, and a **Route found** message.
 
@@ -27,7 +27,7 @@ Great progress! Take a moment to just watch the map update, and your truck deliv
 
 ### 5. Confirm the command to recall the truck works as expected
 
-1. When the truck returns to base, and is reloaded with contents, it's state will be **ready**. Try issuing another delivery command. Choose another customer ID.
+1. When the truck returns to base, and is reloaded with contents, its state will be **ready**. Try issuing another delivery command. Choose another customer ID.
 
 1. Issue a recall command before the truck reaches its customer, to check the truck responds to this command.
 
@@ -43,9 +43,9 @@ To test a conflict event, send a command that you know doesn't make sense.
 
 1. The simplest test is to check the **Truck ID** tile. This tile should have picked up the **Truck number 1** message when the apps were started.
 
-1. The next test is to check the writable property, **OptimalTemperature**. To change this value, click on the **Set properties** view.
+1. The next test is to check the writable property, **OptimalTemperature**. To change this value, select the **Set properties** view.
 
-1. Set the optimal temperature to any value, say -8. Click **Save**, and note the **Pending** status.
+1. Set the optimal temperature to any value, for example, -8. Select **Save**, and note the **Pending** status.
 
     [![Screenshot showing the console view with a conflict event](../media/set-properties-pending.png)](../media/set-properties-pending.png#lightbox)
 
@@ -53,7 +53,7 @@ To test a conflict event, send a command that you know doesn't make sense.
 
     [![Screenshot showing the console view with a conflict event](../media/set-properties-accepted.png)](../media/set-properties-accepted.png#lightbox)
 
-1. Navigate back to your truck view. Verify **Optimal temperature** has been set to -8, in the tile on the dashboard.
+1. Navigate back to your truck view. Verify **Optimal temperature** has been set to -8 in the tile on the dashboard.
 
     [![Screenshot showing the dashboard tile showing the new optimal temperature](../media/refrigerated-trucks-optimal-temp.png)](../media/refrigerated-trucks-optimal-temp.png#lightbox)
 

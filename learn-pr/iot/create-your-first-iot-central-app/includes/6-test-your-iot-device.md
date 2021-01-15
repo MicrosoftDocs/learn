@@ -15,7 +15,7 @@ To fully test the refrigerated truck device, it helps to break down the testing 
 1. Check customer and conflict events are transmitted correctly.
 1. Check the truck properties, and change the optimal temperature.
 
-In addition to this list, there are edge-cases you could also investigate. One such case is what happens when the truck's contents start to melt? This state is left up to chance in our simulation, with the use of random numbers in our code.
+In addition to this list, there are edge cases you could also investigate. One such case is what happens when the truck's contents start to melt? This state is left up to chance in our simulation, with the use of random numbers in our code.
 
 To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the device app.
 
@@ -51,11 +51,11 @@ If all goes well, go straight into the second test.
 
 1. A console message should appear every five seconds, with the contents temperature.
 
-1. Watch the telemetry for a short while, and mentally prepare for the main test of this module!
+1. Watch the telemetry for a short while, and mentally prepare for the main test of this module.
 
 ### 3. Confirm the data is picked up correctly by IoT Central
 
-1. To verify the data is being received at IoT Central, make sure your IoT Central app is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
+1. To verify the data is being received at IoT Central, make sure your IoT Central app is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**) in the list of devices.
 
 1. Locate the **Contents temperature** tile, and verify, approximately, that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
 
