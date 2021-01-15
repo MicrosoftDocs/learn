@@ -136,11 +136,11 @@ Then you can see following output in the terminal:
 
 ```text
 [INFO] Packaging webapp
-[INFO] Assembling webapp [jakartaee-app-on-jboss] in [/Users/********/Desktop/microprofile-samples/MySQL/jakartaee-app-on-jboss/target/ROOT]
+[INFO] Assembling webapp [jakartaee-app-on-jboss] in [/Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/ROOT]
 [INFO] Processing war project
-[INFO] Copying webapp resources [/Users/********/Desktop/microprofile-samples/MySQL/jakartaee-app-on-jboss/src/main/webapp]
+[INFO] Copying webapp resources [/Users/********/Desktop/MySQL/jakartaee-app-on-jboss/src/main/webapp]
 [INFO] Webapp assembled in [276 msecs]
-[INFO] Building war: /Users/********/Desktop/microprofile-samples/MySQL/jakartaee-app-on-jboss/target/ROOT.war
+[INFO] Building war: /Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/ROOT.war
 [INFO] WEB-INF/web.xml already added, skipping
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
@@ -169,7 +169,7 @@ Then you'll see the following message in the terminal:
 [INFO] Successfully created App Service Plan.
 [INFO] Successfully created Web App.
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource to /Users/********/Desktop/microprofile-samples/MySQL/jakartaee-app-on-jboss/target/azure-webapp/jakartaee-app-on-jboss-1606464084546-c16ffb02-b9f4-4673-907a-7719393772cd
+[INFO] Copying 1 resource to /Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/azure-webapp/jakartaee-app-on-jboss-1606464084546-c16ffb02-b9f4-4673-907a-7719393772cd
 [INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1606464084546...
 [INFO] Deploying the war file ROOT.war...
 [INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
