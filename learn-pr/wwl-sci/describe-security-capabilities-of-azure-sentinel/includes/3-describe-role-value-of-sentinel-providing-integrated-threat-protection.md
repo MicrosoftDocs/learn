@@ -56,7 +56,7 @@ Use Azure Sentinel's powerful hunting search-and-query tools, based on the MITRE
 
 Threat protection is a continuously evolving battle front, with cybercriminals looking for any vulnerability they can exploit to either steal, damage, or extort company data, assets, and resources. Microsoft provides a suite of tools, which provide extended detection and response (XDR) through Microsoft 365 Defender and Azure Defender.
 
-:::image type="content" source="../media/3-m365-defender-azure-defender.png" alt-text="Diagram showing Microsoft 365 Defender and Azure Defender.":::
+:::image type="content" source="../media/3-defender-azure-defender.png" alt-text="Diagram showing Microsoft 365 Defender and Azure Defender.":::
 
 Both tools seamlessly integrate with Azure Sentinel to provide a complete and thorough threat protection capability for your organization.
 
