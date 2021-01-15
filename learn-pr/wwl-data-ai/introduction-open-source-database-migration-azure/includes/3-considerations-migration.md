@@ -1,4 +1,8 @@
-A business system running on-premises can have an architecture that's coupled to other services operating within the same environment. It's important to understand the relationships between a system you wish to migrate, and the other applications and services your organization is currently using.  
+A business system running on-premises can have an architecture that's coupled to other services operating within the same environment. It's important to understand the relationships between a system you wish to migrate, and the other applications and services your organization is currently using.
+
+In your technology start-up company, the supplier database is used to ensure components are always in stock and arrive just-in-time for their use in the manufacturing process. Stock controllers use mobile devices to update this database as consignments arrive and buyers use a website to monitor stock levels and identify the best time to order. Managers use a set of business-critical reports to monitor the process and improve efficiency. You want to ensure that none of these users are negatively affected by the migration to Azure.
+
+Here, you'll learn how to plan and execute a smooth database migration into the cloud.
 
 ### Investigate dependencies
 
@@ -150,14 +154,14 @@ In an internet-connected application, database servers are usually protected by 
 
 The second firewall separates the front-end servers from the database servers. It's recommended to publish the database service on a private port number that's not known to the outside world. On the second firewall, open this port number only for the IP addresses of the front-end servers. This arrangement prevents any direct communication from a malicious internet user to the database servers.
 
-If you plan to migrate database servers to Azure virtual machines, use a virtual network with Network Security Groups (NSGs) to replicate firewall rules. If you use **Azure Database for MySQL** or **Azure Database for PostgreSQL**, you can create firewall rules to protect the database using the **Connection security** page for the server in the Azure portal.  
+If you plan to migrate database servers to Azure virtual machines, use a virtual network with Network Security Groups (NSGs) to replicate firewall rules. If you use **Azure Database for MySQL**, **Azure Database for MariaDB**, or **Azure Database for PostgreSQL**, you can create firewall rules to protect the database using the **Connection security** page for the server in the Azure portal.  
 
 ### Authentication and authorization
 
-In most databases, you need to closely control who accesses and modifies which data. This control requires that users are positively identified when they connect to the database. This process is called **authentication** and is usually done with a username and password. Database systems such as MySQL and PostgreSQL provide their own authentication mechanisms. You must ensure that you continue to authenticate users securely when you migrate your systems to the cloud. 
+In most databases, you need to closely control who accesses and modifies which data. This control requires that users are positively identified when they connect to the database. This process is called **authentication** and is usually done with a username and password. Database systems such as MySQL, MariaDB, and PostgreSQL provide their own authentication mechanisms. You must ensure that you continue to authenticate users securely when you migrate your systems to the cloud. 
 
 > [!NOTE]
-> The **Azure Database for MySQL** and **Azure Database for PostgreSQL** services emulate traditional MySQL and PostgreSQL authentication.
+> The **Azure Database for MySQL**, **Azure Database for MariaDB**, and **Azure Database for PostgreSQL** services emulate traditional MySQL, MariaDB, and PostgreSQL authentication.
 
 When you know who the user is, you must assign them permissions to complete the tasks that are part of their job. This process is called **authorization**.
 
@@ -189,11 +193,11 @@ For a database migration project, you have to make sure that users are authorize
     ```
 
 > [!IMPORTANT]
-> Neither Azure Database for MySQL nor Azure Database for PostgreSQL currently support user accounts in Azure Active Directory. If you're using Active Directory to store user accounts on-premises, you must migrate those user accounts to another store in the cloud.
+> Neither Azure Database for MySQL, Azure Database for MariaDB, nor Azure Database for PostgreSQL currently support user accounts in Azure Active Directory. If you're using Active Directory to store user accounts on-premises, you must migrate those user accounts to another store in the cloud.
 
 ### Encryption
 
-As data is sent across the network, it might be intercepted by a so-called "man-in-the-middle" attack. To prevent this, both **Azure Database for MySQL** and **Azure Database for PostgreSQL** support Secure Sockets Layer (SSL) to encrypt communications. SSL is enforced by default, and it's highly recommended that you don't change this setting.
+As data is sent across the network, it might be intercepted by a so-called "man-in-the-middle" attack. To prevent this, both **Azure Database for MySQL**, **Azure Database for MariaDB**, and **Azure Database for PostgreSQL** support Secure Sockets Layer (SSL) to encrypt communications. SSL is enforced by default, and it's highly recommended that you don't change this setting.
 
 You might need to amend your client applications' connection settings to use SSL encryption. Discuss this topic with your developers to determine the changes, if any, that are necessary.
 
@@ -215,7 +219,7 @@ Bear in mind that Azure includes a set of performance monitoring tools, and coll
 
 Your database administrators use preferred tools to change the schema and content of the database on-premises. If they use the same tools after migration, you can continue to benefit from their expertise. Start by assessing whether the existing set of tools is compatible with the proposed cloud-hosted database. Many tools will be compatible because they're based on widely adopted standards such as SQL—but it's important to verify that compatibility. If the current management tools won't work after migration, try to identify alternatives with your administrators.
 
-Azure includes several tools that you could use to administer MySQL and PostgreSQL databases:
+Azure includes several tools that you could use to administer MySQL, MariaDB, and PostgreSQL databases:
 
 - **The Azure portal**. This website has powerful facilities that you use to configure, monitor, and manage databases—and all other resources that you might create in the Azure cloud.
   

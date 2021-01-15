@@ -4,11 +4,11 @@ Hyperscale turns PostgreSQL into a distributed database. It’s based on a Postg
 
 ## Growing with Hyperscale
 
-Relational databases can’t always be scaled for modern workloads. Hyperscale ensures you won’t have any difficulties scaling, allowing PostgreSQLpostgres to "scale out" by managing multiple servers for you. increasing memory, compute, and storage space on a single server. This scale provides:
+Relational databases can’t always be scaled for modern workloads. Hyperscale ensures you won’t have any difficulties scaling, allowing PostgreSQL to "scale out" by managing multiple servers for you, increasing memory, compute, and storage space compared to a single server. This scale provides:
 
 * Faster responses on large datasets
 * Better performance across multiple regions
-* The ability to “scale up” far more compute and storage than a single server can provide
+* The ability to scale far more compute and storage than a single server can provide
 
 All without the need for application rewrites or manual optimization. Changes are kept transparent, so servers, compute, and storage can be added or removed as needed.
 
