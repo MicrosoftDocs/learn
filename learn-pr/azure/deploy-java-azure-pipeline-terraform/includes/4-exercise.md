@@ -136,31 +136,6 @@ resource "azurerm_app_service" "main" {
 }
 ```
 
-## Customize the workflow
-
-In your forked repository you need to customize your application, and resource group name.
-Using the built-in GitHub Text editor or your editor of choice, edit and commit `terraform/variables.tf` and change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name:
-
-```yaml
-variable "resource_group" {
-  description = "The resource group"
-  default = "CHANGE_ME_RESOURCE_GROUP"
-}
-
-variable "application_name" {
-  description = "The Spring Boot application name"
-  default     = "CHANGE_ME_APP_NAME"
-}
-
-variable "location" {
-  description = "The Azure location where all resources in this example should be created"
-  default     = "westeurope"
-}
-```
-
-> [!IMPORTANT]
-> Make sure the name of your application name is unique.
-
 ## Set Up up your workflow
 
 You now need to allow access from your GitHub workflow to your Azure account.
@@ -209,7 +184,7 @@ This file is a GitHub workflow and will use the secret we configured above to de
 In that file, you'll see the following content:
 
 ```yml
-name: CI
+name: TERRAFORM
 
 on:
   push:
@@ -255,12 +230,41 @@ This workflow does the following actions:
 
 Your workflow will be triggered whenever code is pushed to the repository.
 
-## Test the GitHub Action
+> [!NOTE]
+> You also trigger the GitHub Actions workflow by going to "Actions", then select the terraform workflow and "Re-run Jobs".
 
-You can now manually trigger the GitHub Actions workflow by going to "Actions", then select the terraform workflow.
-Then, select the "Terraform" workflow. Notice how the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered.
+## Trigger the workflow
 
-Expand the "Terraform Apply" step. Terraform has created the resources and displayed the Azure Instance URL.
+In your forked repository you need to customize your application, and resource group name and trigger the Action.
+Using the built-in GitHub Text editor or your editor of choice, edit and commit `terraform/variables.tf` and change **CHANGE_ME_RESOURCE_GROUP** to your intended resource group name and **CHANGE_ME_APP_NAME** to your intended application name:
+
+```yaml
+variable "resource_group" {
+  description = "The resource group"
+  default = "CHANGE_ME_RESOURCE_GROUP"
+}
+
+variable "application_name" {
+  description = "The Spring Boot application name"
+  default     = "CHANGE_ME_APP_NAME"
+}
+
+variable "location" {
+  description = "The Azure location where all resources in this example should be created"
+  default     = "westeurope"
+}
+```
+
+> [!IMPORTANT]
+> Make sure the name of your application name is unique.
+
+## Confirm the GitHub Action build
+
+Go to the "Actions" tab on your repository , then select the "TERRAFORM" workflow.
+Confirm the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
+
+Expand the "Terraform Apply" step.
+Terraform has created the resources and displayed the Azure Instance URL.
 Verify your Azure App Instance is publicly available.
 
 ## Next Steps
