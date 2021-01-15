@@ -189,8 +189,12 @@ name: TERRAFORM
 on:
   push:
     branches: [ main ]
+    paths:
+    - 'terraform/**'
   pull_request:
     branches: [ main ]
+    paths:
+    - 'terraform/**'
 
   workflow_dispatch:
 jobs:
