@@ -10,9 +10,6 @@ In general, to onboard devices to the service:
 
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about onboarding clients.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr?rel=0]
 
@@ -20,7 +17,7 @@ In Settings, Device Management, Onboarding select operating system dropdown to s
 
 ![Supported Operating Systems.](../media/onboarding.png)
 
-After selecting the operating system option, the supported deployment options are outlined.   This is an example of the Windows 10 options shows the supported deployment options:
+After selecting the operating system option, the supported deployment options are outlined.   Here is a list of the Windows 10 supported deployment options:
 
 - Group Policy
 
@@ -34,7 +31,7 @@ After selecting the operating system option, the supported deployment options ar
 
 ![Windows 10 Deployment options](../media/onboardwindows.png)
 
-As you can see, there are many different configuration options.  
+As you can see, there are many configuration options.  
 
 ## Offboarding Devices
 

@@ -1,4 +1,4 @@
-The Advanced Features area in General Settings area provides many an on/off switch for features within the product.  Some of these features you will learn about in later modules.  The following are settings that are environment focused.
+The Advanced Features area in the General Settings area provides many on/off switches for features within the product.  Some of these features you will learn about in later modules.  The following are settings that are environment focused.
 
 | Feature| Description|
 | :--- | :--- |
@@ -14,7 +14,7 @@ The Advanced Features area in General Settings area provides many an on/off swit
 
 ### Show user details
 
-Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
+Turn on this feature to see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
 - Security operations dashboard
 
@@ -24,7 +24,7 @@ Turn on this feature so that you can see user details stored in Azure Active Dir
 
 ### Skype for Business integration
 
-Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
+Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be helpful when you need to communicate with the user and mitigate risks.
 
 ### Azure Advanced Threat Protection integration
 

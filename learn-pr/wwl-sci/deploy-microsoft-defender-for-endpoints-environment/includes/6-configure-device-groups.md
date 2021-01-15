@@ -14,7 +14,7 @@ You can create device groups in the context of role-based access (RBAC) to contr
 
 As part of the process of creating a device group, you'll:
 
-- Set the automated remediation level for that group. For more information on remediation levels, see Use Automated investigation to investigate and remediate threats.
+- Set the automated remediation level for that group.
 
 - Specify the matching rule that determines which device group belongs to the group based on the device name, domain, tags, and OS platform. If a device is also matched to other groups, it is added only to the highest ranked device group.
 
@@ -26,11 +26,10 @@ As part of the process of creating a device group, you'll:
 
 To create a device group:
 
-In the navigation pane, select Settings > Device groups.
-
-1. Click **Add** device group.
-1. - Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See How the automated investigation starts.
-1. - Preview several devices that will be matched by this rule. If you are satisfied with the rule, select the User access tab.
-1. - Assign the user groups that can access the device group you created.  You can only grant access to Azure AD user groups that have been assigned to RBAC roles.
-1. - Click **Close**. The configuration changes are applied.
+1. In the navigation pane, select Settings > Device groups.
+1. Select **Add** device group.
+1. Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See How the automated investigation starts.
+1. Preview several devices that will be matched by this rule. If you are satisfied with the rule, select the User access tab.
+1. Assign the user groups that can access the device group you created.  You can only grant access to Azure AD user groups that have been assigned to RBAC roles.
+1. Select **Close**. The configuration changes are applied.
 

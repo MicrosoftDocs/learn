@@ -1,8 +1,5 @@
 Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do.  The following video explains the use of Role-Based Access Control (RBAC) and Device Groups (Machine Groups).
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about RBAC with Defender for Endpoint.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bJ2a?rel=0]
 
@@ -18,5 +15,5 @@ Defender for Endpoint RBAC is designed to support your tier- or role-based model
 
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 
-Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.  When you first sign in to Microsoft Defender Security Center, you're granted either full access or read-only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. read-only access is granted to users with a Security Reader role in Azure AD. Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments
+Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.  When you first sign-in to Microsoft Defender Security Center, you're granted either full access or read-only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. read-only access is granted to users with a Security Reader role in Azure AD. Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments
 
