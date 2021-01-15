@@ -18,56 +18,56 @@ quiz:
   questions:
   - content: "Which part of the concept of know your data, protect your data, and prevent data loss addresses the need for organizations to automatically retain, delete, store data and records in a compliant manner?"
     choices:
-    - content: "Know your data{​​​{This component helps to address the need for organizations to understand their data landscape and identify important data across on-premises, cloud, and hybrid environments. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​​​}​​​}​​​"
+    - content: "Know your data{​​​{This component helps to address the need for organizations to understand their data landscape and identify important data across on-premises, cloud, and hybrid environments. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​}}​​​​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Prevent data loss{​​​{This component helps to address the need for organizations to detect risky behavior and prevent accidental oversharing of sensitive information. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​​​}​​​}​​​"
+    - content: "Prevent data loss{​​​{This component helps to address the need for organizations to detect risky behavior and prevent accidental oversharing of sensitive information. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​​​}}​​​​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Govern your data{​​​{Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.​​​}​​​}​​​"
+    - content: "Govern your data{​​​{Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.​​​}}​​​​​​"
       isCorrect: true
       explanation: "correct choice"
   - content: "As part of a new data loss prevention policy you need to be able to identify important information such as credit card numbers across the organization. How would you do this?"
     choices:
-    - content: "Use activity explorer{​​​{​​​Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use sensitive information types to identify sensitive information like credit card numbers.}​​​}​​​"
+    - content: "Use activity explorer{​​​{​​​Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use sensitive information types to identify sensitive information like credit card numbers.}}​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Use sensitivity labels{​​​{Sensitivity labels enable you to apply to content like emails and documents, much like different stamps can be applied to physical documents. Instead, use sensitive information types to identify specific types of information such as credit card numbers.​​​}​​​}​​​"
+    - content: "Use sensitivity labels{​​​{Sensitivity labels enable you to apply to content like emails and documents, much like different stamps can be applied to physical documents. Instead, use sensitive information types to identify specific types of information such as credit card numbers.​​​}}​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Use sensitive information types{​​​{​​​Microsoft provides built-in sensitive information types that you can use to identify data such as credit card numbers.}​​​}​​​"
+    - content: "Use sensitive information types{​​​{​​​Microsoft provides built-in sensitive information types that you can use to identify data such as credit card numbers.}}​​"
       isCorrect: true
       explanation: "correct choice"
   - content: "Your organization has many users that perform different job roles. Some emails should be encrypted so that only authorized users can read them. How can you implement this?"
     choices:
-    - content: "Use the content explorer{​​​{​​​Content explorer enables admins to get a current snapshot of individual items that have been classified across the organization. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.}​​​}​​​"
+    - content: "Use the content explorer{​​​{​​​Content explorer enables admins to get a current snapshot of individual items that have been classified across the organization. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.}}​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Use sensitivity labels{​​​{​​​Sensitivity labels help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.}​​​}​​​"
+    - content: "Use sensitivity labels{​​​{​​​Sensitivity labels help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.}}​​​"
       isCorrect: true
       explanation: "correct choice"
-    - content: "Use Records Management{​​​{​​​You don't use Record Management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.}​​​}​​​"
+    - content: "Use Records Management{​​​{​​​You don't use Record Management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.}}​​​"
       isCorrect: false
       explanation: "incorrect choice"
   - content: "Your organization users Microsoft Teams to collaborate on all projects. As the admin, you want to prevent users from accidentally share sensitive information in a Microsoft Teams chat session. How would you do this?"
     choices:
-    - content: "Use data loss prevention policies{​​​{With data loss prevention policies, administrators can now define policies that can prevent users from sharing sensitive information in a Microsoft Teams chat session or Teams channel, whether this information is in a message, or in a file.​​​}​​​}​​​"
+    - content: "Use data loss prevention policies{​​​{With data loss prevention policies, administrators can now define policies that can prevent users from sharing sensitive information in a Microsoft Teams chat session or Teams channel, whether this information is in a message, or in a file.​​​}}​​​"
       isCorrect: true
       explanation: "correct choice"
-    - content: "Use Records Management capabilities{​​​{​​​Records Management won't let you do this. Instead, use data loss prevention policies.}​​​}​​​"
+    - content: "Use Records Management capabilities{​​​{​​​Records Management won't let you do this. Instead, use data loss prevention policies.}}​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Use retention policies{​​​{​​​Retention policies won't let you do this. Instead, use data loss prevention policies.}​​​}​​​"
+    - content: "Use retention policies{​​​{​​​Retention policies won't let you do this. Instead, use data loss prevention policies.}}​​​"
       isCorrect: false
       explanation: "incorrect choice"
   - content: "You understand that, due to a certain regulation, your organization must now keep hold of all documents in a specific SharePoint site that contains customer information for five years. How would you implement it?"
     choices:
-    - content: "Use sensitivity labels{​​​{​​​You don't use sensitivity labels to define data retention. Instead, use retention policies.}​​​}​​​"
+    - content: "Use sensitivity labels{​​​{​​​You don't use sensitivity labels to define data retention. Instead, use retention policies.}}​​​​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Use the content explorer{​​​{Content explorer won't let you define data retention. Instead, use retention policies.​​​}​​​}​​​"
+    - content: "Use the content explorer{​​​{Content explorer won't let you define data retention. Instead, use retention policies.​​​}}​​​​​​"
       isCorrect: false
       explanation: "incorrect choice"
-    - content: "Use retention policies{​​​{You can use retention policies to define data retention for all documents in a SharePoint site.​​​}​​​}​​​"
+    - content: "Use retention policies{​​​{You can use retention policies to define data retention for all documents in a SharePoint site.​​​}}​​​"
       isCorrect: true
       explanation: "correct choice"

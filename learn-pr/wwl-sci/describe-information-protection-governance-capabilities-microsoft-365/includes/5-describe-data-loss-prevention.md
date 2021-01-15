@@ -27,7 +27,7 @@ Here are some scenarios data loss prevention policies can help address:
 
 A policy can contain one or more rules, and each rule consists of conditions and actions at a minimum. For each rule, when the conditions are met, the actions are taken automatically. Rules can be grouped into one policy, to help simplify management and reporting.  The diagram below shows how multiple rules, each with their own conditions and actions, are grouped into a single policy:
 
-:::image type="content" source="../media/5-dlp-rules.png" alt-text="Diagram showing how a single policy can consist of multiple rules.":::
+:::image type="content" source="../media/5-data-loss-prevention-rules.png" alt-text="Diagram showing how a single policy can consist of multiple rules.":::
 
 The rules inside the policy are prioritized in how they’re implemented. For example, in the above diagram, rule one will be prioritized before rule two, and so on.
 
@@ -44,7 +44,7 @@ Endpoint data loss prevention is how the protection and activity monitoring capa
 
 Information about what users are doing with sensitive content is viewable in the activity explorer:
 
-:::image type="content" source="../media/5-activity-explorer-endpoint-dlp.png" alt-text="The activity explorer show activities monitored through endpoint DLP.":::
+:::image type="content" source="../media/5-activity-explorer-endpoint-data-loss-prevention.png" alt-text="The activity explorer show activities monitored through endpoint DLP.":::
 
 Admins can use this information to enforce protective actions for content through controls and policies.
 
@@ -52,7 +52,7 @@ Admins can use this information to enforce protective actions for content throug
 
 Data loss prevention capabilities have been extended to Microsoft Teams chat and channel messages, including messages in private channels. With DLP, administrators can now define policies that can prevent users from sharing sensitive information in a Teams chat session or Teams channel, whether this information is in a message, or in a file. Just like with Exchange, Outlook, SharePoint, and OneDrive for Business, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot below shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number:
 
-:::image type="content" source="../media/5-dlp-policy-tip.png" alt-text="A policy tip is shown in Microsoft Teams so that the user knows why their message was blocked.":::
+:::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A policy tip is shown in Microsoft Teams so that the user knows why their message was blocked.":::
 
 The user can then find out more information about why their message was blocked by selecting the "What can I do?" link, so they can take appropriate action:
 
