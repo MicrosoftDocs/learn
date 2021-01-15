@@ -86,4 +86,4 @@ The value of understanding what actions are being taken with sensitive content i
 
 The video below gives you a detailed tour and additional information on the various data classification capabilities available in the Compliance Center:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx8x]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
