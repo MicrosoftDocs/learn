@@ -42,15 +42,15 @@ Another common mistake is using bad data to train the model. Some data might act
 
 ## Test the model
 
-According to the metrics that Custom Vision provides, our model is performing at a satisfactory level. Let's test our model and see how it performs on unseen data.
+According to the metrics that Custom Vision provides, our model is performing at a satisfactory level. Let's test our model and see how it performs on unseen data. We'll use an image of a bird from an internet search.
+
+1. In your web browser, search for an image of a bird that matches one of the species you trained the model to recognize. Copy the URL for the image.
 
 1. In the [Custom Vision portal](https://www.customvision.ai/?azure-portal=true), select the **Bird Classification** project.
 
 1. In the top menu bar, select **Quick Test**.
 
-1. In **Quick Test**, select **Browse local files**.
-
-1. In  **Open**, go to one of the bird image files in the dataset that you trained the model to recognize. Select the image file, and then select **Open**.
+1. In **Quick Test**, paste the URL in **Image URL** and then press Enter to test the model's accuracy. The prediction is shown in the window.
 
 Custom Vision analyzes the image to test the model's accuracy and displays the results:
 
