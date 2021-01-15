@@ -154,7 +154,7 @@ You can also confirm your RESTful endpoints of your application from `Runtime` -
 
 :::image type="content" source="../media/jboss-admin-console4.png" alt-text="Admin Console RESTful Endpoint":::
 
-> [!NOTE]
+> [!WARN]
 > If you directly access to the Remote Server via JBoss CLI command or Web Console and add or update some configurations, the configuration will be clear and deleted after the container is rebooted. To persist the configuration, configure this in the Start up script.
 For example, we created the `createMySQLDataSource.sh` in previous section as a startup script.
 
