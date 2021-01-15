@@ -34,7 +34,7 @@ Repeat this process to create as many devices as you want.
 
 Each truck is simulated by one running copy of the device app. So multiple versions of this app need to run simultaneously.
 
-1. Create multiple projects by repeating the steps in the [**Create a programming project for a real device**](../5-create-real-device-nodejs.yml) exercise for each new device. Copy and paste the entire app from your current working project. In the code, replace `DeviceID` and `PrimaryKey` with new values. You don't need to change `ScopeID` or `AzureMapsKey`. These values are identical for all devices.
+1. Create multiple projects by repeating the steps in the [Create a programming project for a real device](../5-create-real-device-nodejs.yml) exercise for each new device. Copy and paste the entire app from your current working project. In the code, replace `DeviceID` and `PrimaryKey` with new values. You don't need to change `ScopeID` or `AzureMapsKey`. These values are identical for all devices.
 
 1. Add the necessary libraries to each new project.
 
