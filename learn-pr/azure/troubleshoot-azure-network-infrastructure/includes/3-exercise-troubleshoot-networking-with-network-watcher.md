@@ -239,7 +239,7 @@ Run the same tests in the opposite direction.
 
 1. Examine the results.
 
-The results should show that, because the NSG is associated to the back-end subnet, no traffic flows from the front-end VM to the bac-end VM.
+The results should show that, because the NSG is associated with the back-end subnet, no traffic flows from the front-end VM to the back-end VM.
 
 ## Use IP flow verify to test the connection
 
