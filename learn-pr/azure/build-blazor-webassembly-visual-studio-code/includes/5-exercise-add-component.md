@@ -48,7 +48,7 @@ Here you'll set up the route for your new page and add a link to your side menu.
 
 1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 
-1. In a web browser, go to https://localhost:5001.
+1. In a web browser, go to https://localhost:5000.
 
     ![Screenshot showing the Blazor app running in a browser](../media/create-new-component.png)
 
@@ -91,4 +91,4 @@ Add an HTML table to your calculator UI.
 
 1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 
-1. In a web browser, go to **https://localhost:5001**.
+1. In a web browser, go to **https://localhost:5000**.
