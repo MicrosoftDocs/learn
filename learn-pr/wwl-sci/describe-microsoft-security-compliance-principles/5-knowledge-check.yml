@@ -37,14 +37,3 @@ quiz:
     - content: "Microsoft Compliance Manager."
       isCorrect: false
       explanation: "This is incorrect. Microsoft Compliance Manager measures your progress in reducing risk."
-  - content: "One of Microsoft’s six Privacy Principles is Strong Legal Protections. What benefit does this principle provide to your organization?"
-    choices:
-    - content: "You're assured that Microsoft will pay your legal fees if your company has a data breach."
-      isCorrect: false
-      explanation: "This is incorrect. Microsoft respects local privacy laws, you but are responsible for your data and legal costs."
-    - content: "You're assured that Microsoft has good legal teams that can defend lawsuits brought against them."
-      isCorrect: false
-      explanation: "This is incorrect. This privacy principle refers to Microsoft adhering to privacy laws in all locales in which they operate."
-    - content: "You're assured that Microsoft respects privacy laws in your locale."
-      isCorrect: true
-      explanation: "This is correct. Strong Legal Protections means respecting local privacy laws."
