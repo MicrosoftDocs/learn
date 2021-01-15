@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-concepts-methodologies.describe-defense-depth
+title: Describe defense in depth
+metadata:
+  title: Describe defense in depth
+  description: "Describe defense in depth"
+  ms.date: 01/15/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-describe-defense-depth.md)]

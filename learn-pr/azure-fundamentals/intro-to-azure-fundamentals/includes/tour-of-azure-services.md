@@ -172,7 +172,7 @@ Here are some of the most common AI and machine learning service types in Azure.
 > | Service name | Description |
 > |--------------|-------------|
 > | Azure Machine Learning Service | Cloud-based environment you can use to develop, train, test, deploy, manage, and track machine learning models. It can auto-generate a model and auto-tune it for you. It will let you start training on your local machine, and then scale out to the cloud. |
-> | Azure Machine Learning Studio | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules. |
+> | Azure ML Studio | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules. |
 
 A closely related set of products are the _cognitive services_. You can use these prebuilt APIs in your applications to solve complex problems.
 
