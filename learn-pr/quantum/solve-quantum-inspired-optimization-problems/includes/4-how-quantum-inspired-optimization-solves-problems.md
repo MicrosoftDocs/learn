@@ -2,7 +2,7 @@ Before we get down to business, let's discuss two common methods for finding the
 
 ## Simulated annealing
 
-For optimization problems in search spaces that are too large to solve by exhaustive search and with cost functions that are rugged, one of the most successful and commonly used heuristics is simulated annealing. A *heuristic* is a technique for finding an approximate solution. Heuristics are useful in situations where finding an exact solution can take too long. You can think of the technique as a random walk through the solution space, where each person or particle creates a path through the optimization landscape.
+For optimization problems in search spaces that are too large to solve by exhaustive search and with cost functions that are rugged, one of the most successful and commonly used heuristics is simulated annealing. A *heuristic* is a technique for finding an approximate solution. Heuristics are useful in situations where finding an exact solution can take too long. You can think of the technique as a random walk through the solution space, where each walker creates a path through the optimization landscape.
 
 ### How does simulated annealing work?
 
@@ -12,7 +12,7 @@ Simulated annealing is similar to gradient descent. The algorithm simulates a wa
 
 In this graph, notice that this uphill move is described as a *thermal jump*. That's because simulated annealing is an algorithm from physics that mimics the behavior of materials as they are slowly cooled. The walker is like an atom in a metal that's driven by temperature to reconfigure itself. These changes are random but moves to lower-energy configurations are more likely than moves to higher-energy configurations. That is why we say the walker follows a biased random walk.
 
-Simulated annealing isn't a QIO method, since it uses only thermal effects. However it's a technique that's commonly used for solving combinatorial problems like the ones we use QIO methods on. Problems can be formulated in the same way.
+Simulated annealing isn't a QIO method, since it only uses thermal effects. However, it's a technique that's commonly used for solving combinatorial problems like the ones we use QIO methods on, and the problems can be formulated in the same way.
 
 ## Quantum annealing
 
