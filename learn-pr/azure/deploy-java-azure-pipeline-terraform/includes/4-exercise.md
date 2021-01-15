@@ -164,11 +164,14 @@ This command will return JSON - copy it and keep it safe as we'll use it in the 
 
 Once you have the required ID and Secrets, the next step is to add them the secret store in your GitHub project.
 
-GitHub repositories have a feature known as Secrets that allow you to store sensitive information related to a project. For this exercise, store three secrets – `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET`, `AZURE_SUBSCRIPTION_ID`, and `AZURE_TENANT_ID`.
-You'll create these secrets because they'll be used by Terraform to authenticate to Azure.
+GitHub repositories have a feature known as Secrets that allow you to store sensitive information used by Terraform to authenticate to Azure.
 
+For this exercise, we need to store the secrets – `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET`, `AZURE_SUBSCRIPTION_ID`, and `AZURE_TENANT_ID`.
 To create the secrets, navigate to your forked GitHub repository, select the `Settings` menu and then on `Secrets`.
 Create a GitHub secret for each of four secrets using the values returned the Azure service principal.
+
+ > [!IMPORTANT]
+> Create each Secret without the "" (quotes) - XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX and NOT "XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXXX"
 
 The result will be something like this:
 
