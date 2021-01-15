@@ -235,9 +235,9 @@ This workflow does the following actions:
 
 ## Trigger the workflow
 
-In your forked repository you now need to trigger the GitHub Action.
+In your forked repository, you now need to trigger the GitHub Action.
 
-Using the built-in GitHub Text editor or your editor of choice, edit `terraform/variables.tf`
+Using the built-in GitHub Text editor, or an editor of choice, edit `terraform/variables.tf`
 
 ```yaml
 variable "resource_group" {
@@ -265,7 +265,7 @@ Commit your changes.
 
 ## Confirm the GitHub Action build
 
-- Go to the "Actions" tab on your repository , then select the "TERRAFORM" workflow.
+- Go to the "Actions" tab on your repository, then select the "TERRAFORM" workflow.
   - Confirm the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
 - Expand the "Terraform Apply" step.
   - Terraform has created the resources and displayed the Azure Instance URL.
