@@ -19,14 +19,14 @@ In this unit, you'll create a device template for a refrigerated truck.
 
 1. Select **Next: Review**. Then select **Create**.
 
-1. For **Create a capability model**, select **Custom**. Your view should now look similar to the following image.
+1. In the **Create a model** area, select **Custom model**. Your view should now look similar to the following image.
 
     [![Screenshot showing the most important controls for creating a device template.](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
 
     > [!TIP]
-    > In the image, notice that the template is in **Draft** form. Also notice the locations of the **Add component**, **Views**, and **Publish** controls.
+    > In the image, notice that the template is in **Draft** form. Also notice the locations of the controls for **Add interface**, **Views**, and **Publish**.
 
-1. You're now ready to add details for the device template. Select **Add component**. Then select **Custom** to start building from a blank interface.
+1. You're now ready to add details for the device template. Select **Add an inherited interface**. Then select **Custom** to start building from a blank interface.
 
 Components are interfaces made up of other interfaces. Interfaces define a set of capabilities. You'll need to create several capabilities to define a refrigerated truck.
 
@@ -71,7 +71,7 @@ States are important. They let the operator know what's happening. A state in Io
     | Semantic type | State |
     | Value schema | String |
 
-1. Select the plus sign (**+**). For **Display name** and **Value**, enter *empty*. The **Name** field should automatically be populated with **empty**. So all three fields are identical, containing **empty**.
+1. Select **Add**. For **Display name** and **Value**, enter *empty*. The **Name** field should be populated automatically with **empty**. So all three fields are identical, containing **empty**.
 
 1. Add two more state values: _full_ and _melting_. Again, the same text should appear in the fields for **Display name**, **Name**, and **Value**.
 
@@ -81,7 +81,7 @@ States are important. They let the operator know what's happening. A state in Io
 
 1. To add some uncertainty to the simulation, add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably. 
  
-    To add _on_, _off_, and _failed_ entries for the cooling system, start by selecting **Add capability**. Then add another state.
+    Add _on_, _off_, and _failed_ entries for the cooling system. Start by selecting **Add capability**. Then add another state.
 
     | Entry summary | Value |
     | --- | --- |
@@ -91,7 +91,7 @@ States are important. They let the operator know what's happening. A state in Io
     | Semantic type | State |
     | Value schema | String |
 
-1. Add three values: _on_, _off_, and _failed_. Make sure that each word appears in the **Display name**, **Name**, and **Value** fields.
+1. Add three values: _on_, _off_, and _failed_. Make sure that each word appears in the fields for **Display name**, **Name**, and **Value**.
 
     [![Screenshot showing how to create the cooling system state for the simulated device.](../media/refrigerated-trucks-cooling.png)](../media/refrigerated-trucks-cooling.png#lightbox)
 
@@ -111,11 +111,11 @@ States are important. They let the operator know what's happening. A state in Io
 
 Events are issues triggered by the device and communicated to the IoT Central app. Events can be one of three types: _error_, _warning_, or _informational_.
 
-One event a device might trigger is a conflicting command. An example might be when a truck returning empty from a customer receives a command to deliver its contents to another customer. If a conflict occurs, the device should trigger an event to warn the operator of the IoT Central app.
+One event a device might trigger is a conflicting command. An example might be when an empty truck that's returning from a customer receives a command to deliver its contents to another customer. If a conflict occurs, the device should trigger an event to warn the operator of the IoT Central app.
 
 Another event might just acknowledge and record the customer ID that a truck is to deliver to.
 
-Select **Add capability**. Then create an event as follows.
+To create an event, select **Add capability**. Then fill in the following information.
 
 | Entry summary | Value |
 | --- | --- |
@@ -131,7 +131,7 @@ Select **Add capability**. Then create an event as follows.
 
 A location is probably the most important and easiest measurement to add to a device template. It measures the device's latitude, longitude, and an optional altitude.
 
-Select **Add capability** and add a location for the truck.
+To add a location for the truck, select **Add capability**. Then fill in the following information.
 
 | Entry summary | Value |
 | --- | --- |
@@ -215,8 +215,6 @@ To add the commands:
     | Display name | Recall |
     | Name | Recall |
     | Capability type | Command |
-
-    This time the command requires no other parameters, so leave **Request** off.
 
 1. Make sure your two commands match the following image.
 

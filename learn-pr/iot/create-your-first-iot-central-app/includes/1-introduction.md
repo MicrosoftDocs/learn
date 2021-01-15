@@ -37,27 +37,26 @@ In this module, you'll build the app you see in this image.
 
 ## Create a custom IoT Central app
 
-1. Right-click [Azure IoT Central](https://apps.azureiotcentral.com) and then select **Open in a new window**. It's a good idea to bookmark this URL. It's the home for all your IoT Central apps.
+1. Right-click [Azure IoT Central](https://apps.azureiotcentral.com?azure-portal=true) and then select **Open in a new window**. It's a good idea to bookmark this URL. It's the home for all your IoT Central apps.
 
-1. In the menu on the left, select **Build** and then select **Custom apps**.
+1. In the menu on the left, select **Build** and then select **Custom apps**. The **New application** form appears. Fill in the following information.
 
-1. Your **Application name** can be any friendly name, such as *Refrigerated Trucks*. However, the **URL** _must_ be unique. So add a unique ID to the end of the app's URL. For example, for *refrigerated-trucks-\<your id>*, replace *\<your id>* with a unique ID.
-
-1. For **Application template**, leave the selection **Custom application**.
-
-1. For **Pricing plan**, select **Free**. Seven days is plenty of time to complete the scenario.
+    | Setting  | Value  |
+    |---------|---------|
+    |**Application name** | any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why you'll add a unique ID to the end of the URL for the app. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with some unique ID. |
+    |**URL**     | *default*  |
+    |**Application template**     | *Custom application*  |
+    | **Pricing plan**: **Free** | Seven days is plenty of time to complete the scenario. |
 
     [![Screenshot showing how to create a new IoT Central app by using the IoT Central portal.](../media/refrigerated-trucks-new-app.png)](../media/refrigerated-trucks-new-app.png#lightbox)
 
     > [!TIP]
     > In this module, select any image to display an enlarged view.
 
-1. Add your contact info and then select **Create**. Wait a few seconds while the app resource is built.
+1. Fill out the **Billing info**, and then select **Create**. Wait a few seconds while the app resource is built.
 
     > [!NOTE]
     > If you get the error "Subdomain already in use," your URL isn't unique. To resolve the error, change your URL.
-
-You should now see a dashboard that includes a few default tiles.
 
 The next time you visit your Azure IoT Central home page, in the menu on the left, select **My Apps**. An icon for your **Refrigerated Trucks** app should appear.
 

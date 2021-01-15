@@ -44,7 +44,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
 1. Enter `dotnet restore`. This command gives your app access to the required .NET packages.
 
-1. Install the required libraries:
+1. Install the required libraries.
 
     ```bash
     dotnet add package AzureMapsRestToolkit
@@ -108,7 +108,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 In the blank _app.js_ file, insert the following code. Add each section of code to the end of the file, in order.
 
 > [!NOTE]
-> If you want to skip this unit and load all of the code into your app, download all of the contents of _app.js_ from the [GitHub location](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) and copy it into your project's _app.js_ file. Be sure to replace the connection and subscription strings. Then go straight to the next unit and start testing!
+> If you want to skip this unit and load all of the code into your app, download all of the contents of _app.js_ from the [GitHub location](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app). Then copy the contents into your project's _app.js_ file. Be sure to replace the connection and subscription strings. Then go straight to the next unit and start testing!
 
 1. Add the following code to connect to Azure IoT Central and Azure Maps. Replace the four `<your...>` strings with your own strings. Don't change any other lines of code.
 

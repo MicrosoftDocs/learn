@@ -4,9 +4,15 @@ In this unit, you'll finish testing the app.
 
 Now for the best fun of all.
 
+<<<<<<< HEAD
 1. Select the device's **Commands** tab. This control should be under the truck name, to the right of the **Truck view** control.
 
 1. Enter a customer ID, say _1_. (Numerals 0 through 9 are valid customer IDs.) Then select **Run**.
+=======
+1. Select the **Commands** title for the device. This control should be under the truck name, and right of the **Truck view** control.
+
+1. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and select **Run**.
+>>>>>>> 126b5f2194e56832aefb9042864a6d49b07c9d64
 
     In the console for the device app, you see both a **New customer** event and a **Route found** message.
 
@@ -27,7 +33,11 @@ Great progress! Take a moment to watch the map update as your truck delivers its
 
 ### 5. Confirm that the command to recall the truck works as expected
 
+<<<<<<< HEAD
 1. When the truck returns to base and is reloaded with contents, its state is **ready**. Try issuing another delivery command. Choose another customer ID.
+=======
+1. When the truck returns to base, and is reloaded with contents, its state will be **ready**. Try issuing another delivery command. Choose another customer ID.
+>>>>>>> 126b5f2194e56832aefb9042864a6d49b07c9d64
 
 1. Before the truck reaches the customer, make a recall command to check whether the truck responds.
 
@@ -42,6 +52,19 @@ To test a conflict event, send a command that doesn't make sense. For example, w
 1. The simplest test is to check the **Truck ID** tile. This tile should have picked up the **Truck number 1** message when the apps were started.
 
 1. The next test is to check the writable property, **OptimalTemperature**. To change this value, select the **Set properties** view.
+<<<<<<< HEAD
+=======
+
+1. Set the optimal temperature to any value, for example, -8. Select **Save**, and note the **Pending** status.
+
+    [![Screenshot showing the console view with a conflict event](../media/set-properties-pending.png)](../media/set-properties-pending.png#lightbox)
+
+1. After a short time, the status should change to **Accepted**.
+
+    [![Screenshot showing the console view with a conflict event](../media/set-properties-accepted.png)](../media/set-properties-accepted.png#lightbox)
+
+1. Navigate back to your truck view. Verify **Optimal temperature** has been set to -8 in the tile on the dashboard.
+>>>>>>> 126b5f2194e56832aefb9042864a6d49b07c9d64
 
     1. Set the optimal temperature to any value, say `-8`. Select **Save** and then notice the **Pending** status.
     

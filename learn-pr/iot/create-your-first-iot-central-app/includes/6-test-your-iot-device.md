@@ -15,7 +15,11 @@ To fully test the refrigerated truck device, we'll break down the testing into s
 1. The customer events and conflict events are transmitted correctly.
 1. The truck properties are correct, and the optimal temperature can be changed.
 
+<<<<<<< HEAD
 In addition to this list, you could also investigate edge cases. One such case is what happens when the truck's contents start to melt. Our simulation leaves this state to chance by using random numbers in the code.
+=======
+In addition to this list, there are edge cases you could also investigate. One such case is what happens when the truck's contents start to melt? This state is left up to chance in our simulation, with the use of random numbers in our code.
+>>>>>>> 126b5f2194e56832aefb9042864a6d49b07c9d64
 
 To begin testing, open the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app in a browser. Then run the device app.
 
@@ -51,11 +55,19 @@ If all goes well, go straight into the second test.
 
 A console message appears every 5 seconds, providing the temperature of the contents. Watch the telemetry for a while to mentally prepare for the main test of this module!
 
+<<<<<<< HEAD
 ### 3. Confirm IoT Central correctly picks up the data 
+=======
+1. Watch the telemetry for a short while, and mentally prepare for the main test of this module.
+>>>>>>> 126b5f2194e56832aefb9042864a6d49b07c9d64
 
 To verify the data is being received at the IoT Central app: 
 
+<<<<<<< HEAD
 1. Make sure your IoT Central app is open and the device is selected. If the device isn't selected, in the menu on the left, select **Devices**. In the list of devices, double-click the real device, **RefrigeratedTruck - 1**.
+=======
+1. To verify the data is being received at IoT Central, make sure your IoT Central app is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**) in the list of devices.
+>>>>>>> 126b5f2194e56832aefb9042864a6d49b07c9d64
 
 1. On the **Contents temperature** tile, check the temperatures that the device app sends to the console window. These temperatures should approximately match the data shown in the telemetry view of the IoT Central app.
 

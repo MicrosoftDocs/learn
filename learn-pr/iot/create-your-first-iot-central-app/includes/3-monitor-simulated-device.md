@@ -2,7 +2,7 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
 ## Create a rich dashboard
 
-1. On the dashboard menu, select **Views**. Then select **Visualizing the device**.
+1. Select **Views**. Then select **Visualizing the device**.
 
     [![Screenshot showing how to create a new view.](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
@@ -19,13 +19,13 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
     We're going for function over form here. We can make the dashboard pretty later. For now, we just want a dashboard that will confirm all the telemetry that our remote device sends. There's no need to add the commands to the dashboard, though that option exists.
 
     > [!TIP]
-    > To save dashboard space, select the check boxes for two or more telemetry values, and then select **Add tile**. All the values will appear in _one_ tile.
+    > To save dashboard space, select two or more telemetry values, and then select **Add tile**. All the values will appear in _one_ tile.
 
 1. After you add all the tiles, explore your dashboard. Look at the wording on the tiles.
 
     [![Screenshot showing some sample dashboard tiles.](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
 
-    If you drag tiles around, the portal will try to rearrange them neatly.
+    If you move the tiles around, the portal will try to rearrange them neatly.
 
 1. Select **Save** to save this view.
 
@@ -53,11 +53,11 @@ The next step is to create a device.
 
 ## Create a real device
 
-By "real" device, we mean IoT Central understands that a remote app is running. The app can be in a real device, taking input from real sensors. Or the app can run a simulation. Both options are treated as a connection to a _real_ device.
+By *real* device, we mean IoT Central understands that a remote app is running. The app can be in a real device, taking input from real sensors. Or the app can run a simulation. Both options are treated as a connection to a _real_ device.
 
 1. On the menu on the left, select **Devices**.
 
-1. To ensure the new device uses this device template, on the **Devices** menu, select **RefrigeratedTruck**.
+1. To ensure the new device uses this device template, in the **Devices** menu, select **RefrigeratedTruck**.
 
 1. Select **New**. In the **Create a new device** dialog box, verify that the device template is **RefrigeratedTruck**.
 
@@ -75,7 +75,7 @@ By "real" device, we mean IoT Central understands that a remote app is running. 
 
 1. Select **RefrigeratedTruck - 1**. You see the live dashboard. It includes lots of **Waiting for data** messages.
 
-1. In the bar that includes **Truck view**, select **Commands**. Notice that the two commands you entered are ready to run.
+1. On the bar that includes **Truck view**, select **Commands**. Notice that the two commands you entered are ready to run.
 
 The next step is to create the keys that will allow a remote device to communicate with this app.
 
@@ -87,7 +87,7 @@ The next step is to create the keys that will allow a remote device to communica
  
     Paste this information in a text file. For example, use a tool like Notepad to save the text file with a meaningful name, such as _Truck keys.txt_.   
 
-1. Leave the **Connect method** setting as **Shared access signature (SAS)**.
+1. Leave the **Authentication type** setting as **Shared access signature (SAS)**.
 
 1. After you save the IDs and the key, select **Close** on the dialog box.
 
