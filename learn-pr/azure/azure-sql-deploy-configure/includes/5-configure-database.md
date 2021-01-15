@@ -43,7 +43,7 @@ The Azure SQL Managed Instance and Azure SQL Database services restrict the foll
 * You can't stop or restart servers.
 * You can't use:
   * Instant file initialization.
-  * Locked pages in memory.
+  * Locked pages in memory (we may configure Locked pages in some SLO deployments)
   * `FILESTREAM` and availability groups. (We use availability groups internally.)
   * Server collation. (In SQL Managed Instance, you can select this during deployment but not change it.)
   * Startup parameters.
@@ -58,7 +58,7 @@ Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) off
 
 ## Storage management
 
-For Azure SQL Managed Instance, there is a maximum storage allowed for the instance. The number of vCores affects the maximum storage. (For example, the Business Critical tier has a lower maximum storage.) If you reach the maximum, you might get Message 1105 for a managed database or Message 1133 for the instance.
+For Azure SQL Managed Instance, there is a possible maximum storage size allowed for the instance based on your chosen SLO. You choose a maximum storage for the instance up to this possible maximum size. If you reach the maximum storage, you might get Message 1105 for a managed database or Message 1133 for the instance.
 
 Just like SQL Server, the size of any new database will be based on the size of the model database. The model database is a 100-Mb data file and an 8-Mb log file. Also like SQL Server, the size of model is configurable. You can alter the size and the number of files, but you don't have control over the physical location of them. Microsoft has commitments on I/O performance based on your deployment choice. Additionally, because remote storage is used in the General Purpose service tier, the data file and log file size can affect performance.
 
