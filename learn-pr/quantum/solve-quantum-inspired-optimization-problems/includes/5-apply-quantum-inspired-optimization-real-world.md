@@ -71,7 +71,48 @@ workspace.login()
 
 ### Problem instantiation
 
-Next, we'll define a function that takes an array of mineral weights and returns a `Problem` object that represents the cost function.
+In order to submit a problem to the Azure Quantum services, we first need to create a `Problem` instance. This is a Python object that stores all the required information, such as the cost function details and what kind of problem we are modeling.
+
+Some problem types were already introduced in a previous unit, such as the PUBO, QUBO, or Ising problem types. In this example, we'll be using the Ising type, which is available via `ProblemType.ising`.
+
+To represent cost functions, we'll make use of a formulation using `Term` objects. Ultimately, any polynomial cost function can be written as a simple sum of products. That is, the function can be rewritten to have the following form, where $p_k$ indicates a product over the problem variables $x_0, x_1, \dots$:
+
+$$ H(x) = \sum_k \alpha_k \cdot p_k(x_0, x_1, \dots) $$
+
+$$ \text{e.g. ~~} H(x) = 5 \cdot (x_0) + 2 \cdot (x_1 \cdot x_2) - 3 \cdot ({x_3}^2) $$
+
+In this form, every term in the sum has a coefficient $\alpha_k$ and a product $p_k$. In the `Problem` instance, each term in the sum is represented by a `Term` object, with parameters `w` - corresponding to the coefficient, and `indices` - corresponding to the product. Specifically, the `indices` parameter is populated with the indices of all variables appearing in the term. For instance, the term $2 \cdot (x_1 \cdot x_2)$ translates to the following object: `Term(w=2, indices=[1,2])`.
+
+Let's run through an example using the cost function we derived earlier, which we show again below. For $n$ mineral chunks, the index $i$ runs from $0$ to $n-1$ :
+
+$$ H(x) = \left(\sum_{i} w_{i} \cdot x_{i}\right)^2 $$
+
+After expanding the square we get a double summation, where $j$ also indexes the $n$ chunks:
+
+$$ H(x) = \sum_i \sum_j (w_i \cdot w_j) \cdot (x_i \cdot x_j) $$
+
+While it may not look like it, this double sum is just another way to write a large sum with $n^2$ terms. Using the transformation $k=i \cdot n + j$, with $\alpha_k = w_i \cdot w_j$ and $p_k(x_0, \cdots, x_{n-1}) = x_i \cdot x_j$, we would indeed obtain the single summation form:
+
+$$ H(x) = \sum_{k=0}^{n^2-1} \alpha_k \cdot p_k(x_0, \cdots, x_{n-1}) $$
+
+Let's plug in some numbers! We will use 3 mineral chunks with the weights $w_i \in [2,4,7]$, and thus with indices $i,j \in \{0,1,2\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
+
+$$ \begin{align} H(x) &= (2 \cdot 2) \cdot (x_0 \cdot x_0) + (2 \cdot 4) \cdot (x_0 \cdot x_1) + (2 \cdot 7) \cdot (x_0 \cdot x_2) \\ &+ (4 \cdot 2) \cdot (x_1 \cdot x_0) + (4 \cdot 4) \cdot (x_1 \cdot x_1) + (4 \cdot 7) \cdot (x_1 \cdot x_2) \\ &+ (7 \cdot 2) \cdot (x_2 \cdot x_0) + (7 \cdot 4) \cdot (x_2 \cdot x_1) + (7 \cdot 7) \cdot (x_2 \cdot x_2) $$
+
+Because this is an Ising problem, the variables $x_i$ can take on a value of either $1$ or $-1$, which implies that $x_i^2$ will always equal $1$. As we do not care what the actual value of $H$ is, only that it is minimized, we can safely remove these terms. The final form, now containing six instead of nine terms, is then given by:
+
+$$ H(x) = 8 \cdot (x_0 \cdot x_1) + 14 \cdot (x_0 \cdot x_2) + 8 \cdot (x_1 \cdot x_0) + 28 \cdot (x_1 \cdot x_2) + 14 \cdot (x_2 \cdot x_0) + 28 \cdot (x_2 \cdot x_1) $$
+
+In Python, we would thus introduce the following `Terms`:
+
+- `Term(w = 8 , indices=[0, 1])`
+- `Term(w = 14, indices=[0, 2])`
+- `Term(w = 8 , indices=[1, 0])`
+- `Term(w = 28, indices=[1, 2])`
+- `Term(w = 14, indices=[2, 0])`
+- `Term(w = 28, indices=[2, 1])`
+
+The function below generalizes the `Term` creation for any number of weights using some for loops. It takes an array of mineral weights and returns a `Problem` object containing the cost function.
 
 ```python
 from typing import List
@@ -84,9 +125,7 @@ def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
     for i in range(len(mineralWeights)):
         for j in range(len(mineralWeights)):
             if i == j:
-                # Skip the terms where i == j as they form constant terms in an Ising problem and can be disregarded:
-                # w_i∗w_j∗x_i∗x_j = w_i*w_j∗(x_i)^2 = w_i∗w_j
-                # for x_i = x_j, x_i ∈ {1, -1}
+                # Skip the terms where i == j as they form constant terms in an Ising problem and can be disregarded.
                 continue
 
             terms.append(
@@ -100,7 +139,7 @@ def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
     return Problem(name="Freight Balancing Problem", problem_type=ProblemType.ising, terms=terms)
 ```
 
-Let us instantiate a problem by defining a list of mineral chunks via their weights:
+Before submission to Azure Quantum, we instantiate a problem by defining a list of mineral chunks via their weights:
 
 ```python
 # This array contains the weights of all the mineral chunks
