@@ -4,7 +4,7 @@ In this unit, you'll finish testing the app.
 
 Now for the best fun of all.
 
-1. Select the device's **Commands** title. This control should be under the truck name, to the right of the **Truck view** control.
+1. Select the device's **Commands** tab. This control should be under the truck name, to the right of the **Truck view** control.
 
 1. Enter a customer ID, say _1_. (Numerals 0 through 9 are valid customer IDs.) Then select **Run**.
 

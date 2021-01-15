@@ -2,7 +2,7 @@ In this unit, you'll create a programming project to simulate a sensor device in
 
 IoT Central treats this simulation as real. The communication code between the device app and the IoT Central app is the same for a real truck. 
 
-In other words, if you actually run a refrigerated truck company, you would start with simulation code like the code in this unit. After this code works to your satisfaction, you would replace the simulation code with code that receives sensor data. Because the final code replacement is limited, learning to write the following code is a valuable experience.
+In other words, if you actually run a refrigerated truck company, you would start with simulation code like the code in this unit. After this code works to your satisfaction, you would replace the simulation code with code that receives sensor data. Because the final code replacement is a simple switch, learning to write the following code is a valuable experience.
 
 ## Create the device app
 
@@ -24,7 +24,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
 1. Back in the terminal, load the libraries you need by using the following commands.
 
-    ```cli
+    ```bash
     npm install azure-iot-device@1.17.0
     npm install azure-iot-device-mqtt@1.15.0
     npm install azure-iot-provisioning-device-mqtt@1.7.4
@@ -46,7 +46,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
 1. Install the required libraries:
 
-    ```cli
+    ```bash
     dotnet add package AzureMapsRestToolkit
     dotnet add package Microsoft.Azure.Devices.Client
     dotnet add package Microsoft.Azure.Devices.Provisioning.Client
@@ -258,7 +258,7 @@ In the blank _app.js_ file, insert the following code. Add each section of code 
             ++truckOnSection;
         }
 
-        // Ensure remainder is 0 to 1, because the interval may take count over what is needed. 
+        // Ensure remainder is less than or equal to 1, because the interval may take count over what is needed. 
         var remainderFraction = Math.min(1, (timeOnCurrentTask - truckSectionsCompletedTime) / timeOnPath[truckOnSection]);
 
         // The path should be one entry longer than the timeOnPath array. 
@@ -914,7 +914,7 @@ In the blank _Program.cs_ file, insert the following code. Add each section of c
                     ++truckOnSection;
                 }
     
-                // Ensure remainder is 0 to 1 because interval may take count over what is needed.
+                // Ensure remainder is less than or equal to 1, because interval may take count over what is needed.
                 var remainderFraction = Math.Min(1, (timeOnCurrentTask - truckSectionsCompletedTime) / timeOnPath[truckOnSection]);
     
                 // The path should be one entry longer than the timeOnPath array.

@@ -24,11 +24,11 @@ In this unit, you'll create a device template for a refrigerated truck.
     [![Screenshot showing the most important controls for creating a device template.](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
 
     > [!TIP]
-    > In the image, notice that the template is in **Draft** form. Also notice the locations of the **Add interface**, **Views**, and **Publish** controls.
+    > In the image, notice that the template is in **Draft** form. Also notice the locations of the **Add component**, **Views**, and **Publish** controls.
 
-1. You're now ready to add details for the device template. Select **Add interface**. Then select **Custom** to start building from a blank interface.
+1. You're now ready to add details for the device template. Select **Add component**. Then select **Custom** to start building from a blank interface.
 
-An interface defines a set of _capabilities_. You'll need to create several capabilities to define a refrigerated truck.
+Components are interfaces made up of other interfaces. Interfaces define a set of capabilities. You'll need to create several capabilities to define a refrigerated truck.
 
 ### Add sensor telemetry
 

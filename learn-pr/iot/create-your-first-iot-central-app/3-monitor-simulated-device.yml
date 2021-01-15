@@ -69,4 +69,4 @@ quiz:
       explanation: Incorrect. The Views control is used to create dashboards.
     - content: 'Delete'
       isCorrect: false
-      explanation: Incorrect. Delete is a useful key.
+      explanation: Incorrect. The Delete control deletes the device template from the application.
