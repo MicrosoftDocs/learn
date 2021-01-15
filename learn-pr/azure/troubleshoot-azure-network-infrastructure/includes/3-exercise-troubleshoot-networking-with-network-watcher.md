@@ -199,7 +199,7 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. Examine the results.
 
-The results should show that no traffic flows from the back-end VM to the front-end VM.
+The results should show that, because the NSG is associated to the back-end subnet, traffic flows without issues from the back-end VM to the front-end VM.
 
 ## Use Connection Monitor to run tests from the front end to the back end
 
@@ -239,7 +239,7 @@ Run the same tests in the opposite direction.
 
 1. Examine the results.
 
-The results should show that traffic flows without problems from the front-end VM to the back-end VM.
+The results should show that, because the NSG is associated with the back-end subnet, no traffic flows from the front-end VM to the back-end VM.
 
 ## Use IP flow verify to test the connection
 

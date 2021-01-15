@@ -1,4 +1,4 @@
-As we previously mentioned in the ["Before We Start"](https://docs.microsoft.com/learn/modules/aks-manage-app-configuration-and-secrets/1-introduction.md#before-we-start) step, we'll assume there's an AKS cluster already created. So now you'll create the needed resources to support the application's backend.
+As we previously mentioned in the ["Before We Start"](https://docs.microsoft.com/learn/modules/aks-secrets-configure-app/1-introduction) step, we'll assume there's an AKS cluster already created. So now you'll create the needed resources to support the application's backend.
 
 ## Create the Secret
 
@@ -19,7 +19,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
 
     ```azurecli-interactive
     az cosmosdb keys list \
-      --type connection-string \
+      --type connection-strings \
       -g $RESOURCE_GROUP \
       -n $DATABASE_NAME \
       -o tsv \
