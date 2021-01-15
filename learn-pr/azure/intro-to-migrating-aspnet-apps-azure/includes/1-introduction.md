@@ -19,7 +19,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Core Azure concepts such as Infrastructure as a Service (IaaS), Platform as Service (PaaS), and Software as a Service (SaaS)
+- Core Azure concepts such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)
 - Common Windows Server management tools
 - Core Microsoft computer, storage, network, and virtualization technologies
 - On-premises resiliency Windows Server-based compute and storage technologies
