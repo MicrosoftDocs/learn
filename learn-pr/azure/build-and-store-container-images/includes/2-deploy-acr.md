@@ -4,15 +4,15 @@ In this unit, you'll create an Azure container registry using the Azure CLI.
 
 ## Create an Azure container registry
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
+1. Open the Azure Cloud Shell from the Azure portal selecting the Cloud Shell icon.
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
 1. Create a new resource group with the name **learn-deploy-acr-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example *centralus*.
 
-    Before running the command, replace the `<choose-a-location>` with the region of your choice.
+    Before running the following command, replace the `<choose-a-location>` with the region of your choice.
 
     ```azurecli
     az group create --name learn-deploy-acr-rg --location <choose-a-location>
