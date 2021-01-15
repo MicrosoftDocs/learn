@@ -38,7 +38,7 @@ You might have to choose IaaS for various reasons. Three of the more common reas
 
 ### PaaS
 
-Though the IaaS option is often the quickest and easiest method to move an application to a cloud-hosted environment, PaaS offers more benefits. By using PaaS, you offload the responsibility of maintaining system software, OS, hardware, and more, to the hosting provider. You are responsible for your applications. PaaS provides the database server for your data that supports the applications.
+Though the IaaS option is often the quickest and easiest method to move an application to a cloud-hosted environment, PaaS offers more benefits. By using PaaS, you offload the responsibility of maintaining system software, OS, hardware, and more to the hosting provider. You are responsible for your applications. PaaS provides the database server for your data that supports the applications.
 
 In the scenario for this module, your application is the ASP.NET app and the data that resides in the on-premises SQL Server database. You’ll migrate the data to a SQL Azure database instance. The hosting provider will manage the SQL Azure database and the security for it.
 
