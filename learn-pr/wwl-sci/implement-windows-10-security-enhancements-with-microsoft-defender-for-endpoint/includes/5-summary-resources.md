@@ -1,10 +1,12 @@
-Now that you have reviewed this module, you should be able to:
+You learned that Microsoft Defender for Endpoint gives you various tools to eliminate risks by reducing the surface area for attacks without blocking user productivity.
 
-- Understand Attack Surface Reduction
+You should now be able to:
 
-- Enable Attack Surface Reduction rules
+- Explain Attack Surface Reduction (ASR)
 
-- Configure Attack Surface Reduction rules
+- Enable ASR rules on Windows 10 devices
+
+- Configure ASR rules
 
 ## Learn more
 
