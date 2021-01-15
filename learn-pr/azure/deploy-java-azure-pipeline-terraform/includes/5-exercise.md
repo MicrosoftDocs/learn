@@ -80,4 +80,4 @@ Each time you `git push` your code, your build/deploy is triggered and your appl
 publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
 ```
 
-In the next unit, we'll summarize what we learnt.
+In the next unit, we'll do a knowledge check and then summarize what we learnt.
