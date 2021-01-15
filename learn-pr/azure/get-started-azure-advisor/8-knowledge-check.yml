@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-azure-advisor.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned.
+  ms.date: 01/15/2021
+  author: Jak-MS
+  ms.author: darasera
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Question 1?"
+    choices:
+    - content: "Answer A"
+      isCorrect: true
+      explanation: "Correct, here's why."
+    - content: "Answer B"
+      isCorrect: false
+      explanation: "Incorrect, here's why."
+    - content: "Answer C"
+      isCorrect: false
+      explanation: "Incorrect, here's why."
+  - content: "Question 2?"
+    choices:
+    - content: "Answer A"
+      isCorrect: false
+      explanation: "Incorrect, here's why."
+    - content: "Answer B"
+      isCorrect: true
+      explanation: "Correct, here's why."
+    - content: "Answer C"
+      isCorrect: false
+      explanation: "Incorrect, here's why."
+  - content: "Question 3?"
+    choices:
+    - content: "Answer A"
+      isCorrect: false
+      explanation: "Incorrect, here's why."
+    - content: "Answer B"
+      isCorrect: false
+      explanation: "Incorrect, here's why."
+    - content: "Answer C"
+      isCorrect: true
+      explanation: "Correct, here's why."
+

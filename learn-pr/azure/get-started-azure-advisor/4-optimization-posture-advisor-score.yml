@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-azure-advisor.4-optimization-posture-advisor-score
+title: Understand optimization posture with Advisor score
+metadata:
+  title: Understand optimization posture with Advisor score
+  description: TBA
+  ms.date: 01/15/2021
+  author: Jak-MS
+  ms.author: darasera
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-optimization-posture-advisor-score.md)]
