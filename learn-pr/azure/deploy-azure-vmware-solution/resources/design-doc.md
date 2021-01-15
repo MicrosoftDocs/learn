@@ -1,6 +1,6 @@
 # Title
 
-- Onboard Azure VMware Solution and connect to an existing VMware vSphere environment on-premises
+- Deploy Azure VMware Solution to connect to an existing VMware environment on-premises
 
 ## Role(s)
 
@@ -23,13 +23,12 @@
 
 ## Summary
 
-First, you'll learn about all the pre-requisites that need to be factored in for the Azure VMware Solution deployment. From there, you'll learn how to deploy an Azure VMware Solution resource plus all steps required to ensure the service is configured correctly. Once the Azure VMware Solution is ready and properly configured, you'll learn how to configure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment directly to Azure VMware Solution. Learning all these steps will prepare your company to meet the demands of the business.
+First, you'll learn how to plan for the Azure VMware Solution deployment. From there, you'll learn how to deploy an Azure VMware Solution resource. Additionally, you'll learn about the steps required to ensure the service is configured correctly. After Azure VMware Solution is deployed, you'll learn how to configure ExpressRoute Global Reach. ExpressRoute Global Reach allows you to connect your on-premises VMware vSphere environment directly to Azure VMware Solution. Learning all these steps will prepare your company to meet the migration demands for your business.
 
 ## Learning objectives
 
-1. Plan for an Azure VMware Solution deployment
-1. Deploy Azure VMware Solution
-1. Connect Azure VMware Solution to an on-premises network
+1. Evaluate an Azure VMware Solution deployment.
+1. Create an Azure VMware Solution resource to connect to an on-premises VMware environment.
 
 ## Chunk your content into subtasks
 
@@ -47,7 +46,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Imagine you work for a healthcare company who runs many of their production workloads on a VMware platform. IT operations are spread between many different offices. There are a few trends that have surfaced in recent months. Some locations have equipment nearing end of life, so hardware refresh decisions need to be made in short order. Additionally, your company isn't able to get new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company is interested in exploring involves migrating VMware workloads to the cloud without changing virtualization platforms or altering existing operational patterns. In this module, you'll learn how to plan, deploy, and connect Azure VMware Solution to your existing VMware infrastructure on-premises.
+    Imagine you work for a healthcare company who runs production workloads on a VMware platform. IT operations are spread between different offices. There are a few trends that have surfaced in recent months. Some locations have equipment nearing end of life, so hardware refresh decisions need to be made soon. Additionally, your company isn't able to get new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company has decided to move forward with involves migrating existing VMware workloads to Azure VMware Solution. By using Azure VMware Solution, your company does not have to change virtualization platforms or alter existing operational patterns. In this module, you'll learn how to plan, deploy, and connect Azure VMware Solution to your existing VMware infrastructure on-premises.
 
 1. **Plan Azure VMware Solution Deployment**
 
@@ -59,6 +58,12 @@ Identify the subtasks of *module title*
         - Solution components: software versions, nodes, private clouds, clusters, host maintenance, and lifecycle management
 
     **Knowledge check**
+
+    - Which planning step is not required to deploy Azure VMware Solution in the Azure portal?
+    
+        - Create a new support request if an Enterprise Agreement customer - false
+        - Register the Microsoft.AVS resource provider - false
+        - A service principal - true
 
     - At a minimum, which CIDR block does Azure VMware Solution private clouds require?
 
@@ -81,6 +86,8 @@ Identify the subtasks of *module title*
     - Connect and sign into vCenter and NSX-T from the Bastion host
     - Confirm NSX-T configurations: advertised NSX-T segment, DHCP services to NSX-T segment(optional), add VM on NSX-T segment, verify connectivity
     - Placeholder: video/demo showing the creation of AVS and methods to ensure all settings are configured correctly.
+    - Possible video: https://www.youtube.com/embed/gng7JjxgayI
+    - Possible demo: https://bjd52q.axshare.com/#id=q3ewtk&p=dashboard&g=1
 
     **Knowledge check**
 
@@ -119,7 +126,7 @@ Identify the subtasks of *module title*
 
 1. **Summary**
 
-    In this module, you learned how to effectively onboard Azure VMware Solution and connect the Azure deployment to an on-premises VMware vSphere environment. First, you examined all pre-requisites to deploy Azure VMware Solution. From there, you learned about all the steps involved with deploying Azure VMware Solution in Azure. Lastly, you learned how to connect the Azure VMware Solution private cloud to your on-premises VMware vSphere environment. Knowing how to successfully build and configure Azure VMware Solution will help your company out
+    In this module, you learned how to deploy and connect Azure VMware Solution to an on-premises VMware environment. First, you learned about all necessary planning to deploy Azure VMware Solution. From there, you learned about how to deploy Azure VMware Solution in Azure. Lastly, you learned how to connect the Azure VMware Solution private cloud to your on-premises VMware environment. Knowing how to successfully build and configure Azure VMware Solution will help out your company with future server migrations.
 
 ## Notes
 
@@ -127,6 +134,6 @@ Identify the subtasks of *module title*
 
 [Azure VMware Solution documentation](https://docs.microsoft.com/azure/azure-vmware/)
 
-[Azure VMware Solution - VMware documentation] (https://cloud.vmware.com/azure-vmware-solution)
+[Azure VMware Solution - VMware documentation](https://cloud.vmware.com/azure-vmware-solution)
 
 Placeholder: Azure VMware Solution Learn path URL
