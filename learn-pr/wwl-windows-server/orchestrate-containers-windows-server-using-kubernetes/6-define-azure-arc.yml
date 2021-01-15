@@ -4,12 +4,12 @@ title: Define Azure Arc
 metadata:
   title: Define Azure Arc
   description: "Define Azure Arc"
-  ms.date: 01/14/2021
+  ms.date: 01/15/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/6-define-azure-arc.md)]
