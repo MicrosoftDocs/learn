@@ -142,12 +142,10 @@ You now need to allow access from your GitHub workflow to your Azure account.
 Create a service principal with the Azure CLI:
 
 > [!IMPORTANT]
-> Make sure you assign the name of your resource group to the variable `AZ_RESOURCE_GROUP` or substitute the value for it in the commands below.
 > Replace `yourServicePrincipalName` with a name of your service principal you choose.
 
 ```azurecli
-RESOURCE_ID=$(az group show --name "$AZ_RESOURCE_GROUP" --query id -o tsv)
-az ad sp create-for-rbac --name "yourServicePrincipalName" --role contributor --scopes "$RESOURCE_ID" --sdk-auth
+az ad sp create-for-rbac --name "yourServicePrincipalName" --role contributor --sdk-auth
 ```
 
 This command will return JSON - copy it and keep it safe as we'll use it in the next step:

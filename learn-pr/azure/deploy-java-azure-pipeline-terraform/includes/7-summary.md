@@ -15,7 +15,8 @@ You're confident that you can recommend Terraform to provision your Spring Boot 
 In the preceding steps, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group by running the following command in the Cloud Shell:
 
 ```azurecli
-az group delete --name <your resource group name> --yes
+az group delete --name <your Resource Group Name> --yes
+az ad sp delete --id <your Service Principal Name>
 ```
 
 This command may take a minute to run.
