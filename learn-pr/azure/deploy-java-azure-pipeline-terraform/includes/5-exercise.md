@@ -2,7 +2,7 @@ In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample appli
 
 ## Set up your Maven Build/Deploy GitHub Action
 
-Now that we've provisioned our Azure resources we can deploy the sample Spring Boot application.
+Now that we've provisioned our Azure resources we can deploy your sample Spring Boot application.
 To create our Maven GitHub workflow, we'll use the built-in CI/CD wizard tool that is available in the Azure App Service portal - The **Deployment Center**.
 
 ![Deployment Center.](../media/4-deployment.png)
