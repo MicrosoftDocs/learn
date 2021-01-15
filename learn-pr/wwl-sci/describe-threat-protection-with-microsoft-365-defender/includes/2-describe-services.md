@@ -6,7 +6,7 @@ This short 3-minute video provides an essential overview of Microsoft 365 Defend
 
 Microsoft 365 Defender allows admin’s to assess threat signals from applications, email, and identity to determine any attack's scope and impact. It gives greater insight into how the threat occurred, what systems have been affected, and can take automated action to prevent or stop the attack.
 
-:::image type="content" source="../media/2-four-aspects-m365-defender.png" alt-text="Diagram that shows the four aspects that make up the Microsoft 365 Defender suite: identity, endpoints, apps, and email.":::
+:::image type="content" source="../media/2-four-aspects-microsoft-365-defender.png" alt-text="Diagram that shows the four aspects that make up the Microsoft 365 Defender suite: identity, endpoints, apps, and email.":::
 
 Microsoft 365 Defender suite protects:
 
