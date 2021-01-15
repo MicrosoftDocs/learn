@@ -66,7 +66,7 @@ For Azure SQL Database, there is a possible maximum size of database files based
 
 To understand this idea of **Data max size** versus **Maxsize**, let's consider an example where a 1-TB (**Data max size**) General Purpose database is deployed. When you do this, your database requires only ~500 GB, not 1 TB. As your database grows and approaches **Data max size**, **Maxsize** for database files will also grow up to the 1-TB level.
 
-The transaction log is in addition to the data size. It's truncated regularly due to automatic backups because Accelerated Database Recovery is on by default. The log's maximum size is always 30 percent of **Data max size**. For example, if **Data max size** is 1 TB, then the maximum transaction log size is 0.3 TB, and the total of **Data max size** and log size is 1.3 TB.
+The transaction log is in addition to the data size and is included in what you pay for storage. It's truncated regularly due to automatic backups because Accelerated Database Recovery is on by default. The log's maximum size is always 30 percent of **Data max size**. For example, if **Data max size** is 1 TB, then the maximum transaction log size is 0.3 TB, and the total of **Data max size** and log size is 1.3 TB.
 
 The Azure SQL Database Hyperscale tier is different from the other service tiers in that it creates a database that's initially 40 GB and grows automatically in size to the limit of 100 TB. The transaction log has a fixed size restriction of 1 TB.  
 
