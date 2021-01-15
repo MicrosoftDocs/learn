@@ -1,14 +1,12 @@
 In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
 
-## Deploy the sample application
+## Set up your Maven Build/Deploy GitHub Action
 
 Now that we've provisioned our Azure resources we can deploy the sample Spring Boot application.
-
-## Set up your Maven Build/Deploy GitHub Action
+To create our Maven GitHub workflow, we'll use the built-in CI/CD wizard tool that is available in the Azure App Service portal - The **Deployment Center**.
 
 ![Deployment Center.](../media/4-deployment.png)
 
-To create our Maven GitHub workflow, we'll use the built-in CI/CD wizard tool that is available in the Azure App Service portal - The **Deployment Center**.
 The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory. It will also link your GitHub Action to an Azure App Service publishing profile.
 
 - Navigate to your Azure App Service webapp in the Azure portal
@@ -16,7 +14,7 @@ The Azure App Service Deployment Center will automatically generate a GitHub Act
 - Under **Continuous Deployment (CI / CD)**, select **GitHub**
 - Next, select **GitHub Actions**
 - Use the dropdowns to select your GitHub repository, branch, and **JAVA 8** as the application stack
-- On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. Your Workflow file will be created similar to the below (You'll have a different app name and publishing profile).
+- On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. Your Workflow file will be created similar to the below (You'll have a different app name and publishing profile):
 
 ```yml
 name: Build and deploy JAR app to Azure Web App - spring-petclinic-app
@@ -61,13 +59,13 @@ jobs:
 - Go to the "Actions" tab on your repository, then select the "build-and-deploy" workflow.
 - Expand the "Deploy to Azure Web App" step.
   - Terraform has deployed the Java Web App and displayed the Azure Instance URL.
-- Verify your Java application is deployed and working.
+- Verify your Java application is deployed, connection to your MySQL database, and returning data.
 
 ![Maven GitHubAction run.](../media/4-maven_run.png)
 
 ## Next steps
 
-Congratulations! You now have two GitHub actions setup - a provisioning action and a build/deploy action.
+Congratulations! You now have two GitHub actions workflows - a provisioning action and a build/deploy action.
 Each time you `git push` your code, your build/deploy is triggered and your application is deployed.
 
 > [!IMPORTANT]

@@ -2,9 +2,9 @@ In this exercise, you'll configure GitHub actions to provision your Terraform re
 
 ## Access the sample application
 
-In this module, we'll be checking out an existing project that contains all the code for our Terraform provisioning.
+In this exercise, we'll be creating a GitHub repository from a template that contains all the code for our Terraform provisioning.
 
-Create a GitHub template from the following GitHub repository:
+Create a GitHub repository from the following GitHub template:
 
 ```html
 https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
@@ -34,7 +34,7 @@ Lets look at some sections that define your module's configuration:
 - Module: Reusability & complexity abstraction
 
 Lets look at which sections we need in our **main.tf** file:
-(The comments in green highlight the different sections and their roles in our module)
+(The comments in green explain the different sections and their roles in our module)
 
 ```yml
 provider "azurerm" {
@@ -138,7 +138,7 @@ resource "azurerm_app_service" "main" {
 
 ## Set Up up your workflow
 
-You now need to allow access from your GitHub workflow to your Azure account.
+Let's now allow your GitHub workflow, access to your Azure account.
 Create a service principal with the Azure CLI:
 
 > [!IMPORTANT]
@@ -162,7 +162,7 @@ This command will return JSON - copy it and keep it safe as we'll use it in the 
 
 ## GitHub Secrets
 
-Once you have the required ID and Secrets, the next step is to add them the secret store in your GitHub project.
+Once you have the required ID and Secrets, the next step is to add them the Secret store in your GitHub project.
 
 GitHub repositories have a feature known as Secrets that allow you to store sensitive information used by Terraform to authenticate to Azure.
 
@@ -234,11 +234,11 @@ This workflow does the following actions:
 - trigger the configuration when you update files in the "terraform" directory
 
 > [!NOTE]
-> You also trigger the GitHub Actions workflow by going to "Actions", then select the terraform workflow and "Re-run Jobs".
+> You also trigger the GitHub Actions workflow by going to "Actions", then select the terraform workflow and "Re-run existing Jobs".
 
 ## Trigger the workflow
 
-In your forked repository, you now need to trigger the GitHub Action.
+Next, in your repository, let's trigger your GitHub Action.
 
 Using the built-in GitHub Text editor, or an editor of choice, edit `terraform/variables.tf`
 
@@ -269,7 +269,7 @@ Commit your changes.
 ## Confirm the GitHub Action build
 
 - Go to the "Actions" tab on your repository, then select the "TERRAFORM" workflow.
-  - Confirm the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
+  - Verify the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
 
 ![Maven GitHubAction run.](../media/4-terraform_run.png)
 

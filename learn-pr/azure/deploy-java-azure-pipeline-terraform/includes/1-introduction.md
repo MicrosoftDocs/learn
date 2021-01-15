@@ -12,9 +12,9 @@ As an Infrastructure Manager, you aim to achieve automation of both infrastructu
 
 There are several tools available to help you achieve these goals. However, since you're already using GitHub for your code repository, you decide to investigate GitHub Actions to see if it provides the automation you need.
 
-- For step 1, you'll use a personal Azure account.
-- For step 2, you'll use Terraform and GitHub Actions to provision the Azure infrastructure.
-- For step 3, you'll use Maven and GitHub Actions to build and deploy the sample application.
+- For pipeline 1, you'll use a personal Azure account.
+- For pipeline 2, you'll use Terraform and GitHub Actions to provision the Azure infrastructure.
+- For pipeline 3, you'll use Maven and GitHub Actions to build and deploy the sample application.
 
 ## Learning Goals
 
@@ -26,4 +26,4 @@ By the end of this module, you can:
 
 ## Prerequisites
 
-As you complete the exercises in this module, you'll use a personal Azure account and a GitHub account.
+As you complete the exercises in this module, you'll use a personal Azure and GitHub account.

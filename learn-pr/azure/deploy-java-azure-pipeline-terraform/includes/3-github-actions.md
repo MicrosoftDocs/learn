@@ -39,7 +39,7 @@ The `hashicorp/setup-terraform` action sets up Terraform CLI in your GitHub Acti
 Terraform supports several options for authenticating with Azure:
 
 - When using Terraform interactively, authenticating via Microsoft account is recommended.
-- When using Terraform from code, authenticating via Azure service principal is one recommended way.
+- When using Terraform from code or automation, authenticating via Azure service principal is the recommended way.
 
 An Azure service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources.
 
