@@ -5,7 +5,7 @@ azureSandbox: true
 metadata:
   title: 'Exercise - Build the model: Train the model'
   description: 'Build the model: Train the model'
-  ms.date: 01/19/2021
+  ms.date: 01/15/2021
   author: cassieview
   ms.author: cassieb
   ms.topic: interactive-tutorial
