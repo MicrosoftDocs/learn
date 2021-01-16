@@ -16,7 +16,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. In the left-hand **Azure Marketplace** nav bar, select **Storage**.
 
-1. In the searchbox, select **Storage account**.
+1. In the search box, select **Storage account**.
 
     :::image type="content" source="../media/5-portal-storage-select.png" border="true" alt-text="Screenshot of the Azure portal showing the Create a resource pane with the Storage category and Storage account option highlighted.":::
 
@@ -34,10 +34,10 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Account kind | StorageV2 (general purpose v2) |
     | Redundancy | Locally redundant storage (LRS). In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
 
-    [!include][(../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+[!INCLUDE [Sandbox Regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-    > [!NOTE]
-    > This free Resource Group has been provided by Microsoft as part of the learning experience. When you create an account for a real application, you'll want to create a new Resource Group in your subscription to hold all the resources for the app.
+> [!NOTE]
+> This free Resource Group has been provided by Microsoft as part of the learning experience. When you create an account for a real application, you'll want to create a new Resource Group in your subscription to hold all the resources for the app.
 
 1. Select **Next : Networking**. Enter the following information.
 
