@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse
 metadata:
-  title: Publish a web app to Azure by using Azure Toolkit for Eclipse
+  title: Develop Java web app on Azure using Eclipse
   description: Create a web app in Eclipse and deploy the app to Azure by using Azure Toolkit for Eclipse.
   ms.date: 02/01/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Publish a web app to Azure by using Azure Toolkit for Eclipse
+title: Develop Java web app on Azure using Eclipse
 summary: Create a web app in Eclipse and deploy the app to Azure by using Azure Toolkit for Eclipse.
 abstract: | 
   In this module, you will:

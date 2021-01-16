@@ -16,7 +16,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. In the left-hand **Azure Marketplace** nav bar, select **Storage**.
 
-1. In the searchbox, select **Storage account**.
+1. In the search box, select **Storage account**.
 
     :::image type="content" source="../media/5-portal-storage-select.png" border="true" alt-text="Screenshot of the Azure portal showing the Create a resource pane with the Storage category and Storage account option highlighted.":::
 
@@ -36,6 +36,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     > [!NOTE]
     > This free Resource Group has been provided by Microsoft as part of the learning experience. When you create an account for a real application, you'll want to create a new Resource Group in your subscription to hold all the resources for the app.
+
 
 1. Select **Next : Networking**. Enter the following information.
 
