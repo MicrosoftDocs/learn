@@ -118,7 +118,7 @@ $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}
 > [!NOTE]
 > Because $x_{i, t}$ can take the value of either $0$ or $1$, this is known as a binary optimization problem. More generally, this is called a polynomial unconstrained binary optimization (or PUBO) problem. You may also see these PUBO problems referred to as Higher Order Binomial Optimization (HOBO) problems - these terms both refer to the same thing.
 
-$t$ is used to represent the simulation time. It goes from time $0$ to $T - 1$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the maximum allowed **makespan**):
+$t$ is used to represent the time. It goes from time $0$ to $T - 1$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the maximum allowed **makespan**):
 
 $$0 \leq t < T$$
 
@@ -129,7 +129,7 @@ $$\text{If } O_{i+1} \text{ starts at time } \textit{s} \text{, it will finish a
 
 Now that the terms have been defined, you can move on to formulating the problem.
 
-The first step is to represent the constraints mathematically. This will be done using a penalty model - every time the optimizer suggests a solution that violates one or more constraints, you need to give that solution a penalty:
+The first step is to represent the constraints mathematically. This will be done using a penalty model - every time the optimizer explores a solution that violates one or more constraints, you need to give that solution a penalty:
 
 | Constraint | Penalty condition |
 |---|---|
@@ -249,6 +249,3 @@ Term(w: float, indices: [int, int, int, ...])
 ```
 
 In the following units, you will explore how to formulate each of these constraints mathematically, and how this translates to code.
-
-> [!NOTE]
-> For this sample, penalties have not been added for operations that overrun the total simulation time $T$ - it is assumed that as long as an operation is started before the end of the simulation, it runs to completion.

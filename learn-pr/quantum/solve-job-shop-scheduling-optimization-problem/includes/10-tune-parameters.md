@@ -34,6 +34,6 @@ If instead one constraint is consistently broken, you probably need to increase 
 
 ### Further adjustments
 
-You may also come across situations in which constraints are being broken without a particular preference for which. In this case, make sure the simulation time $T$ was chosen high enough. If chosen too small, there may not even exist a valid solution, or the solver is too constrained to feasibly find one.
+You may also come across situations in which constraints are being broken without a particular preference for which. In this case, make sure the time $T$ given a large enough value. If $T$ is too small, there may not even exist a valid solution, or the solver could be too constrained to feasibly find one.
 
 Optionally, if you're looking for better solutions than the ones obtained so far, you may always try to lower the value of $T$, or increase the importance of the makespan component $\delta$. A tighter bound on the makespan can help the solver find a more optimal solution, as can increasing the weight $\delta$. You may also find that doing so increases the speed at which a solution is found. If any problems pop up with broken constraints, you went too far and need to change the parameters in the other direction again.

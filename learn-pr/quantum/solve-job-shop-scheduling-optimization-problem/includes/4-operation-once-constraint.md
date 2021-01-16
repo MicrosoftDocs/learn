@@ -19,9 +19,9 @@ Recall the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-According to this constraint, $x_{i,t}$ for a specific operation should equal 1 **once and only once** during the entire simulation, from $t = 0 \rightarrow T - 1$ (because it should start once and only once during the allowed time).
+According to this constraint, $x_{i,t}$ for a specific operation should equal 1 **once and only once** from $t = 0 \rightarrow T - 1$ (because it should start once and only once during the allowed time).
 
-So in this case, you need to assign a penalty if the sum of $x_{i,t}$ for each operation across the full simulation time doesn’t equal exactly 1.
+So in this case, you need to assign a penalty if the sum of $x_{i,t}$ for each operation across all allowed times doesn’t equal exactly 1.
 
 Let’s take $O_{2}$ as an example again:
 
@@ -57,7 +57,7 @@ In the last example, you see an instance where $O_{2}$ has not been scheduled at
 |$\sum_t {x_{2,t}} =$|0|
 |**Valid configuration?**|✘|
 
-In this example, none of the $x_{2,t}$ values equal 1 for any time in the simulation, meaning the operation is never scheduled. This means that the sum of $x_{2,t}$ values over all $t$ is 0 - the constraint is once again violated and you must allocate a penalty.
+In this example, none of the $x_{2,t}$ values equal 1 for any time step, meaning the operation is never scheduled. This means that the sum of $x_{2,t}$ values over all $t$ is 0 - the constraint is once again violated and you must allocate a penalty.
 
 In summary:
 
@@ -81,7 +81,7 @@ Let's break that down:
 
 - $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$
 
-  As you saw in the sum row of the tables in the worked example, $\sum_{0\leq t < T} x_{i,t}$ should always equal exactly 1 (meaning that an operation must be scheduled **once and only once** during the simulation). This means that $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$ should always give 0. This means there is no penalty assigned when the constraint is not violated.
+  As you saw in the sum row of the tables in the worked example, $\sum_{0\leq t < T} x_{i,t}$ should always equal exactly 1 (meaning that an operation must be scheduled **once and only once** during the allowed time). This means that $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$ should always give 0. This means there is no penalty assigned when the constraint is not violated.
   
   In the case where $\sum_{0\leq t < T} x_{i,t} > 1$ (meaning an operation is scheduled to start more than once, like in the second example above), you now have a positive, non-zero penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 > 0$.
   

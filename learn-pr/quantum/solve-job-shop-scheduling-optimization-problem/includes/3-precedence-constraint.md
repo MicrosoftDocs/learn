@@ -16,7 +16,7 @@ Let's take job 1 ($J_{1}$) as an example:
 
 Let's formulate the penalty conditions for $O_{2}$ and $O_{3}$: you want to add a penalty if $O_{3}$ starts before $O_{2}$ finishes. First, you'll define the terms and set some of their values:
 
-$$\text{Total simulation time } T = 4$$
+$$\text{Total allowed time } T = 4$$
 $$O_{2} \text{ processing time: } p_{2} = 2$$
 $$O_{2} \text{ starts at time } \textit{t} \text{, and finishes at time } t+p_{2}$$
 

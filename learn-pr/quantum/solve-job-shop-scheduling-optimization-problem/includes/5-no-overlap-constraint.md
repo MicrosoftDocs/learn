@@ -31,7 +31,7 @@ One example of a valid configuration is shown below:
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|0|
 |||**Valid configuration?**|✔|
 
-As you can see, when you compare $x_{i,t}$ values pairwise at each time in the simulation, their product always equals 0. Further to this, you can see that $O_{3}$ starts two time steps after $O_{2}$, which means that there is no overlap.
+As you can see, when you compare $x_{i,t}$ values pairwise at each time step, their product always equals 0. Further to this, you can see that $O_{3}$ starts two time steps after $O_{2}$, which means that there is no overlap.
 
 Below, you see a configuration that violates the constraint:
 
@@ -136,7 +136,7 @@ def no_overlap_constraint(T:int, p:dict, ops_jobs_map:dict, machines_ops_map:dic
         for i in ops:
             # Loop over each operation k requiring this machine 
             for k in ops:
-                # Loop over simulation time
+                # Loop over allowed time
                 for t in range(T):
                     # When i != k (when scheduling two different operations)
                     if i != k:

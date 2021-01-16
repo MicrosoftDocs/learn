@@ -55,12 +55,12 @@ J_{2} &: ~~ p_6 + p_7 + p_8 + p_9 = 1 + 2 + 3 + 2 = 8 \\
 \end{align}
 $$
 
-Finally, the makespan is upper-bounded by the sequential execution time of all jobs, 6 + 7 + 8 = 21 in this case. The simulation time T should never exceed this upper bound. Regardless of whether this is the case or not, we need to include penalties for all time steps up to T, or else larger time steps without a penalty will be favored over smaller ones!
+Finally, the makespan is upper-bounded by the sequential execution time of all jobs, 6 + 7 + 8 = 21 in this case. The time T should never exceed this upper bound. Regardless of whether this is the case or not, we need to include penalties for all time steps up to T, or else larger time steps without a penalty will be favored over smaller ones!
 
 To summarize:
 
 - Makespan penalty terms are only added for the last operation in every job $\{O_{k_0-1}, O_{k_1-1}, \dots, O_{k_{n-1}-1}\}$
-- The makespan is lower-bounded by the longest job $\Rightarrow$ only include terms for simulation time steps $M_{lb} < t < T$
+- The makespan is lower-bounded by the longest job $\Rightarrow$ only include terms for time steps $M_{lb} < t < T$
 
 #### Implementing the penalty terms
 
