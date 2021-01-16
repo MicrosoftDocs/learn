@@ -1,9 +1,9 @@
-In this section, you'll be creating an Azure Digital Twins event route that will direct these update events to Azure Event Hubs for further processing through an Azure Function.
+In this unit, you'll create an Azure Digital Twins event route that will direct the update events to Azure Event Hubs for further processing via an Azure function.
 
 1. Create an event hub namespace, which will receive events from your Azure Digital Twins instance:
 
     ```powershell
-    #Create an Event Hubs namespace leveraging the pre-defined variables.
+    #Create an event hubs namespace leveraging the pre-defined variables.
     $ehnamespace = $dtname + "ehnamespace"
 
     az eventhubs namespace create --name $ehnamespace --resource-group $rgname -l $location
