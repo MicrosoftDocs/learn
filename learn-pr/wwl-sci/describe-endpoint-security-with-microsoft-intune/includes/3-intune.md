@@ -8,7 +8,7 @@ From this view, you can select devices to drill in for more information like whi
 
 For more information, see [Manage devices with endpoint security in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security-manage-devices).
 
-## Manage Security baselines
+## Manage security baselines
 
 Intune includes [security baselines](https://docs.microsoft.com/mem/intune/protect/endpoint-security#manage-security-baselines) for Windows devices and a growing list of applications, including Microsoft Edge, Microsoft Defender for Endpoint (previously Microsoft Defender Advanced Threat Protection), and more. Security baselines are pre-configured groups of Windows settings that help admins apply recommended security. As an example, the MDM Security Baseline automatically enables BitLocker for removable drives, automatically requires a password to unlock a device, and automatically disables basic authentication. Admins can also customize the baselines to enforce only those settings and values that are required.
 

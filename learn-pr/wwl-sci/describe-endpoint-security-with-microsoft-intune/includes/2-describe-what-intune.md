@@ -20,7 +20,7 @@ When devices are enrolled and managed in Intune, administrators can:
 - See reports on users and devices that are compliant, and not compliant.
 - Remove organization data if a device is lost, stolen, or not used anymore.
 
-Visit [Mange devices](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune#manage-apps) to learn more.
+Visit [Manage devices](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune#manage-devices) to learn more.
 
 ### Mobile application management (MAM)
 
@@ -35,4 +35,4 @@ When apps are managed in Intune, administrators can:
 - See reports on which apps are used and track their usage.
 - Do a selective wipe by removing only organization data from apps.
 
-Visit [Manage apps](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune%23manage-apps) to learn more.
+Visit [Manage apps](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune#manage-apps) to learn more.

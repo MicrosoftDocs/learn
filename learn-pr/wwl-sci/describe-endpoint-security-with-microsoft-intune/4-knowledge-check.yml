@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/15/2021
+  ms.date: 01/16/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your employees are allowed to bring and use their cell phones at work. Your employees don't want their phone to be under full corporate control, but you want to allow users to read emails and use Teams while protecting corporate data. Which of the following will allow you to accomplish these goals?"
+  - content: "Employees are allowed to bring and use their cell phones at work. The employees don't want their phone to be under full corporate control, but admins want to allow users to read emails and use Teams while protecting corporate data. Which of the following will allow admins to accomplish these goals?"
     choices:
     - content: "Mobile Application Management (MAM)."
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Role-based access control (RBAC)."
       isCorrect: false
       explanation: "That's incorrect. RBAC is out of scope for this requirement."
-  - content: "Your organization uses different kinds of devices types, including Windows, iOS, and Android devices. You've created a security baseline profile in Intune that you want to apply across the devices. Which of following devices can you apply the profile to?"
+  - content: "An organization uses different types of devices, including Windows, iOS, and Android devices. Admins for that organization have created a security baseline profile in Intune that they want to apply across the devices. To which devices can the securit baseline profile be applied?"
     choices:
     - content: "Android devices."
       isCorrect: false
