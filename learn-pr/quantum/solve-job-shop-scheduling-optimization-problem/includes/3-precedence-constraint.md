@@ -82,7 +82,7 @@ Let's break that down:
 
 ### Code
 
-Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the weight term `w` included in this code snippet - this will be assigned a value later on when we call the function:
+Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the coefficient (weight) term `c` included in this code snippet - this will be assigned a value later on when we call the function:
 
 ```python
 # Reminder of the relevant parameters
@@ -99,7 +99,7 @@ jobs_ops_map = {
     2: [4, 5]
 }
 
-def precedence_constraint(jobs_ops_map:dict, T:int, p:dict, w:float):
+def precedence_constraint(jobs_ops_map:dict, T:int, p:dict, c:float):
     """
     Construct penalty terms for the precedence constraint.
 
@@ -108,7 +108,7 @@ def precedence_constraint(jobs_ops_map:dict, T:int, p:dict, w:float):
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     T (int): Time allowed to complete all operations
     p (dict): Operation processing times
-    w (float): Relative weight of this constraint
+    c (float): Relative weight of this constraint (the coefficient)
     """
     
     terms = []
@@ -121,7 +121,7 @@ def precedence_constraint(jobs_ops_map:dict, T:int, p:dict, w:float):
                 # Loop over times that would violate the constraint:
                 for s in range(0, min(t + p[ops[i]], T)):
                     # Assign penalty
-                    terms.append(Term(w = w, indices = [ops[i]*T+t, (ops[i+1])*T+s]))
+                    terms.append(Term(c=c, indices=[ops[i]*T+t, (ops[i+1])*T+s]))
 
     return terms
 ```

@@ -70,7 +70,7 @@ workspace.login()
 
 ### Problem formulation
 
-Now that you have set up our development environment, you can start to formulate the problem.
+Now that you have set up your development environment, you can start to formulate the problem.
 
 The first step is to take the constraints identified above and formulate them as mathematical equations that you can work with.
 
@@ -137,6 +137,8 @@ The first step is to represent the constraints mathematically. This will be done
 |**Operation-once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
 |**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
 
+You will also need to define an objective function, which will minimize the time taken to complete all operations (the **makespan**).
+
 ### Expressing a cost function using the Azure Quantum Optimization SDK
 
 As you will see during the exploration of the cost function and its constituent penalty terms below, the overall cost function is quadratic (because the highest order polynomial term you have is squared). This makes this problem a **Quadratic Unconstrained Binary Optimization (QUBO)** problem, which is a specific subset of **Polynomial Unconstrained Binary Optimization (PUBO)** problems (which allow for higher-order polynomial terms than quadratic). Fortunately, the Azure Quantum Optimization service is set up to accept PUBO (and Ising) problems, which means you don't need to modify the above representation to fit the solver.
@@ -156,7 +158,7 @@ Now that you've defined the problem parameters mathematically, you can transform
 
 ```python
 # Set problem parameters
-## Time to allow for all jobs to complete 
+## Allowed time (jobs can only be scheduled below this limit)
 T = 20 
 
 ## Processing time for each operation
@@ -223,29 +225,30 @@ def process_config(jobs_ops_map:dict, machines_ops_map:dict, p:dict, T:int):
 
 In the following units, you will construct mathematical representations of the penalty terms and use these to build the cost function, which will be of the format:
 
-$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x),$$
+$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \delta \cdot k(x) $$
 
 where:
 
 $$f(x) \text{, } g(x) \text{ and } h(x) \text{ represent the penalty functions.}$$
-$$\alpha, \beta \text{ and } \gamma \text{ represent the different weights assigned to the penalties.}$$
+$$k(x) \text{ represents the objective function.}$$
+$$\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weights we assign to the penalties.}$$
 
-The weights represent how important each penalty function is, relative to all the others. In the following units, you will learn how to build these penalty functions, combine them to form the cost function $H(x)$, and solve the problem using Azure Quantum.
+The weights represent how important each penalty function is, relative to all the others. In the following units, you will learn how to build these penalty and objective functions, combine them to form the cost function $H(x)$, and solve the problem using Azure Quantum.
 
 From these mathematical representations, you will build out Python code which will output an array of terms, where each `Term` is an object that looks like:
 
 ```python
-Term(w: float, indices: []) # Constant terms like +1
-Term(w: float, indices: [int]) # Linear terms like x
-Term(w: float, indices: [int, int]) # Quadratic terms like x^2
+Term(c: float, indices: []) # Constant terms like +1
+Term(c: float, indices: [int]) # Linear terms like x
+Term(c: float, indices: [int, int]) # Quadratic terms like x^2
 ```
 
-The `w` element represents the weight for each term, and the `indices` array represents the indices $i + t$ of the $x_{i+t}$ values.
+The `c` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i + t$ of the $x_{i+t}$ values.
 
 If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
 
 ```python
-Term(w: float, indices: [int, int, int, ...])
+Term(c: float, indices: [int, int, int, ...])
 ```
 
 In the following units, you will explore how to formulate each of these constraints mathematically, and how this translates to code.

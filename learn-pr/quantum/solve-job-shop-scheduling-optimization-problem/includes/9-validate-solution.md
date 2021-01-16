@@ -38,7 +38,7 @@ As you can see from the visual above:
 
 In this particular instance, you can also tell that the solver scheduled the repair tasks in such a way that the **total time to complete them all (the makespan) was minimized** - both machines are continuously in operation, with no time gaps between scheduled operations. This is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
 
-Depending on how well the cost function is defined and the weights are tuned, the solver will have varying degrees of success. This reinforces the importance of verifying and evaluating returned solutions, to enable tuning of the problem definition in order to improve solution quality.
+Depending on how well the cost function is defined and the weights are tuned, the solver will have varying degrees of success. This reinforces the importance of verifying and evaluating returned solutions, to enable tuning of the problem definition and parameters (such as weights/coefficients) in order to improve solution quality.
 
 For larger or more complex problems, it will not always be possible to verify the solution by eye. It is therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, as well as evaluating how good the solutions are (at least relative to solutions returned previously). This capability is also useful when it comes to tuning weights and penalty functions.
 
@@ -175,13 +175,13 @@ The final step in solving this problem is to map this solution back to your repa
 |Repair task|Required tool|Order|
 |---|---|---|
 |**$J_{0}$: Restart life support**||
-|$O_{0}$: Open wall panel in the life support module (*2 minutes*)|Universal multi-tool|1|
-|$O_{1}$: Replace fuse (*1 minute*)|Universal multi-tool|2|
+|$O_{0}$: Open wall panel in the life support module (*2 minutes*)|Universal multi-tool|0|
+|$O_{1}$: Replace fuse (*1 minute*)|Universal multi-tool|3|
 |**$J_{1}$: Recalibrate navigation system**||
-|$O_{2}$: Reboot the system (*2 minutes*)|Ship computer|1|
-|$O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|Ship computer|2|
+|$O_{2}$: Reboot the system (*2 minutes*)|Ship computer|2|
+|$O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)|Ship computer|4|
 |**$J_{2}$: Replace power transformer in the reactor**||
-|$O_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|3|
+|$O_{4}$: Detach old transformer module (*1 minute*)|Universal multi-tool|2|
 |$O_{5}$: Install new transformer module (*2 minutes*)|Universal multi-tool|4|
 
 Congratulations, you can now start the repairs and avoid disaster!

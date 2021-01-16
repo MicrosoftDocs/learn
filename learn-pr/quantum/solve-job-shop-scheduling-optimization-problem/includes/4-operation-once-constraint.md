@@ -45,7 +45,7 @@ In the example below, you see an instance where $O_{2}$ is scheduled more than o
 |$\sum_t {x_{2,t}} =$|2|
 |**Valid configuration?**|✘|
 
-You can see from the above that $O_{2}$ has been scheduled to start at both time 1 and time 2, so the sum of $x_{i,t}$ values over all $t$ is now greater than 1. This violates the constraint and thus you must apply a penalty.
+You can see from the above that $O_{2}$ has been scheduled to start at both time 1 and time 2, so the sum of $x_{2,t}$ values over all $t$ is now greater than 1. This violates the constraint and thus you must apply a penalty.
 
 In the last example, you see an instance where $O_{2}$ has not been scheduled at all:
 
@@ -140,19 +140,26 @@ If $T$ was larger, you would have more terms ($z$ and so on, for example).
 
 ### Code
 
-You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the weight term `w` is included, to be assigned a value later on:
+You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the coefficient (weight) term `c` is included, to be assigned a value later on:
 
 ```python
-def operation_once_constraint(n: int, o: int, T:int, w:float):
-    """
-    Construct penalty terms for the operation-once constraint.
-    Penalty function is of form: 2xy - x - y + 1
     # Reminder of the relevant parameters
     ## Time to allow for all jobs to complete
     T = 20 
     
     ## Assignment of operations to jobs (operation ID: job ID)
     ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
+
+def operation_once_constraint(n: int, o: int, T:int, c:float):
+    """
+    Construct penalty terms for the operation once constraint.
+    Penalty function is of form: 2xy - x - y + 1
+    
+    Keyword arguments:
+    
+    ops_jobs_map (dict): Map of operations to jobs {op: job}
+    T (int): Time allowed to complete all operations
+    c (float): Relative weight of this constraint (the coefficient)
     """
     
     terms = []
@@ -163,16 +170,16 @@ def operation_once_constraint(n: int, o: int, T:int, w:float):
         for t in range(T):
 
             # - x - y terms
-            terms.append(Term(w=w*-1, indices=[op*T+t]))
+            terms.append(Term(c=c*-1, indices=[op*T+t]))
             
             # + 2xy term
             # Loop through all other start times for the same job
             # to get the cross terms
             for s in range(t+1, T):
-                terms.append(Term(w=w*2, indices=[op*T+t, op*T+s]))
+                terms.append(Term(c=c*2, indices=[op*T+t, op*T+s]))
     
     # + 1 term
-    terms.append(Term(w=w*1, indices=[]))
+    terms.append(Term(c=c*1, indices=[]))
     
     return terms
 ```

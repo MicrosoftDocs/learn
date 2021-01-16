@@ -19,7 +19,7 @@ Recall once more the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-$O_{2}$ and $O_{3}$ must be completed using the same machine - the ship computer. You can't do two things at the same time using the same machine, so to avoid violating the no-overlap constraint you must ensure that $O_{2}$ and $O_{3}$ begin at different times: $x_{2,t}$ and $x_{3,t}$ must not equal 1 at the same time. You must also make sure that the operations don't overlap, just like you saw in the precedence constraint. This means that if $O_{2}$ starts at time $t$, $O_{3}$ must not start at times where $s < t + p_{2}$ (before $O_{2}$ has been completed using the machine).
+$O_{2}$ and $O_{3}$ must be completed using the same machine - the ship computer. You can't do two things at the same time using the same machine, so to avoid violating the no-overlap constraint you must ensure that $O_{2}$ and $O_{3}$ begin at different times: $x_{2,t}$ and $x_{3,t}$ must not equal 1 at the same time. You must also make sure that the operations don't overlap, just like you saw in the precedence constraint. This means that if $O_{2}$ starts at time $t$, $O_{3}$ must not start at times where $t \leq s < t + p_{2}$ (after $O_{2}$ has started but before it has been completed using the machine).
 
 One example of a valid configuration is shown below:
 
@@ -43,7 +43,7 @@ Below, you see a configuration that violates the constraint:
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|1|
 |||**Valid configuration?**|✘|
 
-In this instance, $O_{2}$ and $O_{3}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ we have: $x_{3,1} \cdot x_{4,1} = 1$.
+In this instance, $O_{2}$ and $O_{3}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ we have: $x_{2,1} \cdot x_{3,1} = 1$.
 
 Another example of an invalid configuration is demonstrated below:
 
@@ -91,7 +91,7 @@ Let's break that down:
   
 ### Code
 
-Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the weight `w` is included in our definition of the `Term` objects:
+Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the coefficient `c` is included in our definition of the `Term` objects:
 
 ```python
 # Reminder of the relevant parameters
@@ -111,7 +111,7 @@ machines_ops_map = {
     1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
 }
 
-def no_overlap_constraint(T:int, p:dict, ops_jobs_map:dict, machines_ops_map:dict, w:float):
+def no_overlap_constraint(T:int, p:dict, ops_jobs_map:dict, machines_ops_map:dict, c:float):
     """
     Construct penalty terms for the no overlap constraint.
 
@@ -119,7 +119,7 @@ def no_overlap_constraint(T:int, p:dict, ops_jobs_map:dict, machines_ops_map:dic
     
     T (int): Time allowed to complete all operations
     p (dict): Operation processing times
-    w (float): Relative weight of this constraint (the coefficient)
+    c (float): Relative weight of this constraint (the coefficient)
     ops_jobs_map (dict): Map of operations to jobs {op: job}
     machines_ops_map(dict): Mapping of operations to machines, e.g.:
         machines_ops_map = {
@@ -136,24 +136,24 @@ def no_overlap_constraint(T:int, p:dict, ops_jobs_map:dict, machines_ops_map:dic
         for i in ops:
             # Loop over each operation k requiring this machine 
             for k in ops:
-                # Loop over allowed time
+                # Loop over simulation time
                 for t in range(T):
                     # When i != k (when scheduling two different operations)
                     if i != k:
                         # t = s meaning two operations are scheduled to start at the same time on the same machine
-                        terms.append(Term(w = w*1, indices = [i*T+t, k*T+t]))
+                        terms.append(Term(c=c*1, indices=[i*T+t, k*T+t]))
                         
                         # Add penalty when operation runtimes overlap
                         for s in range(t, min(t + p[i], T)):
-                            terms.append(Term(w = w*1, indices = [i*T+t, k*T+s]))  
+                            terms.append(Term(c=c*1, indices=[i*T+t, k*T+s]))  
 
-                        # If operations are in the same job, penalize for the extra time 0 -> t (operations scheduled out of order)
+                        # If operations are in the same job, penalise for the extra time 0 -> t (operations scheduled out of order)
                         if ops_jobs_map[i] == ops_jobs_map[k]:
                             for s in range(0, t):
                                 if i < k:
-                                    terms.append(Term(w = w*1, indices = [i*T+t, k*T+s]))  
+                                    terms.append(Term(c=c*1, indices=[i*T+t, k*T+s]))  
                                 if i > k:
-                                    terms.append(Term(w = w*1, indices = [i*T+s, k*T+t]))  
+                                    terms.append(Term(c=c*1, indices=[i*T+s, k*T+t]))  
 
     return terms
 ```

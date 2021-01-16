@@ -37,7 +37,7 @@ The weights represent how important each penalty function is, relative to all th
 
 ### Code
 
-As a reminder, below you again see the code representation of the problem parameters: the maximum allowed makespan `T`, the operation runtimes `p`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`). 
+As a reminder, below you again see the code representation of the problem parameters: the maximum allowed makespan `T`, the operation runtimes `p`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
 
 ```python
 # Set problem parameters
@@ -116,16 +116,16 @@ delta = 0.001  # Makespan minimization (objective function)
 
 ## Build terms
 ### Constraints:
-w1 = precedence_constraint(jobs_ops_map, T, p, alpha)
-w2 = operation_once_constraint(ops_jobs_map, T, beta)
-w3 = no_overlap_constraint(T, p, ops_jobs_map, machines_ops_map, gamma)
+c1 = precedence_constraint(jobs_ops_map, T, p, alpha)
+c2 = operation_once_constraint(ops_jobs_map, T, beta)
+c3 = no_overlap_constraint(T, p, ops_jobs_map, machines_ops_map, gamma)
 
 ### Objective function
-w4 = makespan_objective(T, p, jobs_ops_map, len(machines_ops_map), delta)
+c4 = makespan_objective(T, p, jobs_ops_map, len(machines_ops_map), delta)
 
 ### Combine terms:
 terms = []
-terms = w1 + w2 + w3 + w4
+terms = c1 + c2 + c3 + w4
 ```
 
 > [!NOTE]

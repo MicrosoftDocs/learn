@@ -1,24 +1,24 @@
 Great! You've learned how to model a cost function, run a solver, and verify the solution of an optimization problem using Azure Quantum. Using your knowledge, you successfully repaired your ship! However, you may have been wondering how exactly the weights that appear in the cost function were chosen. Let's take a look at a general method that can help you balance the different components that make up a cost function.
 
-If you recall, our cost function is made up of four components, one for each constraint and one to minimize the makespan:
+If you recall, the cost function is made up of four components, one for each constraint and one to minimize the makespan:
 
-$$ H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \delta \cdot k(x) $$.
+$$ H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \delta \cdot k(x) $$
 
-The importance attributed to each term can be adjusted using the weights $\alpha, \beta, \gamma, \text{ and } \delta$. We refer to the process of adjusting these weights as *parameter tuning*. In general, there's no absolute rule to determine the optimal value for each weight, and you might have to use some trial and error to figure out what works best for your problem. However, the guidelines below can help you get good starting point.
+The importance attributed to each term can be adjusted using the weights (coefficients) $\alpha, \beta, \gamma, \text{ and } \delta$. The process of adjusting these weights is referred to as *parameter tuning*. In general, there's no absolute rule to determine the optimal value for each weight, and you might have to use some trial and error to figure out what works best for your problem. However, the guidelines below can help you get good starting point.
 
 ### Adjusting the optimization term weight
 
 Intuitively, it should be clear that satisfying the constraints is more important than minimizing the makespan. An invalid solution, even with a very small makespan, would be useless to you. The weights of the cost function can be used to reflect this fact. As a rule of thumb, breaking a single constraint should be around 5-10x more expensive than any valid solution.
 
-Let's start with an upper bound on the value of the cost function for any valid solution. At worst, a valid solution (meaning that $f(x) = g(x) = h(x) = 0$) contributes at most $m*w_{T-1+max(p_i)}$ to the cost function. This is the case when $m$ operations, all taking $max(p_i)$ to complete, are scheduled at the last time step $T-1$. For convenience, let's say that this should result in a cost function value of $1$. We can compute what the value of $\delta$ should be to achieve this value. The code example we've been working with uses the following parameters:
+Let's start with an upper bound on the value of the cost function for any valid solution. At worst, a valid solution (meaning that $f(x) = g(x) = h(x) = 0$) contributes at most $m*w_{T-1+max(p_i)}$ to the cost function. This is the case when $m$ operations, all taking $max(p_i)$ to complete, are scheduled at the last time step $T-1$. For convenience, let's say that this should result in a cost function value of $1$. You can compute what the value of $\delta$ should be to achieve this value. The code example you've been working with uses the following parameters:
 
-$$ m = 2, ~ T = 13, ~ max(p_i) = 2, ~ M_{lb} = 4, ~ w_t = \frac{m^{t-M_{lb}}}{m-1} $$
+$$ m = 2, ~ T = 10, ~ max(p_i) = 2, ~ M_{lb} = 4, ~ w_t = \frac{m^{t-M_{lb}}}{m-1} $$
 
-Then, we calculate the upper bound to be:
+Then, you calculate the upper bound to be:
 
-$$ m*w_{T-1+max(p_i)} = 2*\left( \frac{2^{(13-1+2)-4} - 1}{2-1} \right) = 2046 $$
+$$ m \times w_{T-1+max(p_i)} = 2\times\left( \frac{2^{(13-1+2)-4} - 1}{2-1} \right) = 2046 $$
 
-To obtain the desired value of $1$, we can approximately set the weight to:
+To obtain the desired value of $1$, you can approximately set the weight to:
 
 $$ \delta = 0.0005 $$
 
