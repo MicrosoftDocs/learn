@@ -1,28 +1,28 @@
 
-In this unit, you set up an Azure Maps account. This account is used to calculate the best route from A to B. Route finding takes into account the vehicle, traffic, road regulations, and many other factors.
+In this unit, you'll set up an Azure Maps account. This account is used to calculate the best route from point A to point B. Route finding takes into account the vehicle, traffic, road regulations, and many other factors.
 
-Before we set up the Azure Maps account, install the right language systems. You may have already installed these for an earlier project.
+Before you set up the Azure Maps account, install the right language systems. You might have already installed these systems for an earlier project.
 
 ::: zone pivot="vs-node,vscode-node"
 
-- To use Node.js as a development language, you'll need to install the [Node.js runtime system](https://nodejs.org/).
+To use Node.js as a development language, install the [Node.js runtime system](https://nodejs.org/).
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-- To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+To use C# in Visual Studio Code, ensure that both [.NET Core](https://dotnet.microsoft.com/download) and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
 ::: zone-end
 
 ## Create a free Azure Maps account
 
-If you do not already have an Azure Maps account, you'll need to create one.
+If you don't already have an Azure Maps account, create one: 
 
-1. Right click on [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true), and select **Open in new window**.
+1. Right-click [Azure Maps](https://azure.microsoft.com/services/azure-maps), and then select **Open in new window**.
 
-1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You will find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your "Truck keys.txt" document, with a note that it applies to Azure Maps.
+1. Follow the prompts to create a free account. When your account is set up, you'll need the _primary key_ for the account. In the menu for your Azure Maps resource, find this key by selecting **Authentication**. Copy the primary key and paste it into your _Truck keys.txt_ document. Add a note that it applies to Azure Maps.
 
-1. You can (optionally) verify your Azure Maps key works. Save the following HTML to an .html file. Replace the **&lt;your Azure Maps key&gt;** entry with your own key. Then, load the file into a web browser.
+1. Optionally, verify that your Azure Maps key works. Save the following code snippet in an HTML file. In the code, replace `<your Azure Maps key>` with your own key. Then load the file in a web browser. 
 
     ```html
     <!DOCTYPE html>
@@ -74,11 +74,10 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
     </html>
     ```
-
-1. Do you see a map of the world? Can you zoom in and out, and scroll the map?
+Do you see a map of the world? Can you zoom in and out and move around on the map?
 
 ## Next steps
 
-You've now completed the preparatory steps of connecting your first IoT Central app to real devices. Good work!
+You've now completed the preparatory steps to connect your first IoT Central app to real devices. Good work!
 
 The next step is to create the device app.
