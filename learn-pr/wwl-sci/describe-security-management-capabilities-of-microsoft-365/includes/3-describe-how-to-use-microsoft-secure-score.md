@@ -32,7 +32,7 @@ Both the Azure and Microsoft secure score provide a list of steps you can take t
 
 Use Microsoft Secure Score to understand and rapidly improve your organization’s security posture.
 
-## Interactive Guide
+## Interactive guide
 
 As the Microsoft 365 admin for your organization, you need to monitor and work on the security of your organization's Microsoft 365 identities, apps, data, and devices. The following interactive clickthrough demonstrates how Microsoft Secure Score can help you do this.
 
