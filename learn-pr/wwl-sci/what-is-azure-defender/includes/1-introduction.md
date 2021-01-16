@@ -1,14 +1,6 @@
-In this module, you will learn the purpose of Azure Defender, Azure Defender's relationship to Azure Security Center, and how to enable Azure Defender.
+Azure Defender, integrated with Azure Security Center, provides Azure and hybrid cloud workload protection and security.
 
-In this module, you will learn about:
+You are a Security Operations Analyst working at a company that uses Azure Security Center for Cloud Security Posture Management.  You are responsible for implementing cloud workload protections provided by Azure Defender.  
 
-- Describe Azure Defender features
-
-- Describe Azure Security Center features
-
-## Prerequisites
-
-- Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
-
-- Familiarity with Azure virtual machines and virtual networking.
+You need an overview of what resources can be protected by Azure Defender.  As Azure Defender is integrated with Azure Security Center, you also want to have a basic understanding of the features provided by Azure Security Center.
 

@@ -1,8 +1,8 @@
 Azure Defender is the Cloud workload protection feature of Azure Security Center.  Azure Security Center's features cover the two broad pillars of cloud security:
 
-**Cloud security posture management (CSPM)** - Security Center is available for free to all Azure users. The free experience includes CSPM features such as secure score, detection of security misconfigurations in your Azure machines, asset inventory, and more. Use these CSPM features to strengthen your hybrid cloud posture and track compliance with built-in policies.
+**Cloud Security Posture Management (CSPM)** - Security Center is available for free to all Azure users. The free experience includes CSPM features such as secure score, detection of security misconfigurations in your Azure machines, asset inventory, and more. Use these CSPM features to strengthen your hybrid cloud posture and track compliance with built-in policies.
 
-**Cloud workload protection (CWP)** - Security Center's integrated cloud workload protection platform (CWPP), Azure Defender, brings advanced, intelligent protection to your Azure and hybrid resources and workloads. Enabling Azure Defender brings a range of extra security features. In addition to the built-in policies, when you've enabled any Azure Defender plan, you can also add custom policies and initiatives.
+**Cloud Workload Protection (CWP)** - Security Center's integrated cloud workload protection platform (CWPP), Azure Defender, brings advanced, intelligent protection to your Azure and hybrid resources and workloads. Enabling Azure Defender brings a range of extra security features. In addition to the built-in policies, when you've enabled any Azure Defender plan, you can also add custom policies and initiatives.
 
 The Azure Defender dashboard in Security Center provides visibility and control of the CWP features for your environment:
 

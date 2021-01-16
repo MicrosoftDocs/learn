@@ -8,9 +8,9 @@ To get started with Security Center, you must have a subscription to Microsoft A
 
 To start Azure Security Center:
 
-- Sign in to the Azure portal.
+1. Sign in to the Azure portal.
 
-- From the portal's menu, select Security Center.
+1. From the portal's menu, select **Security Center**.
 
 The Security Center's overview page opens.
 
@@ -34,20 +34,19 @@ From Security Center's sidebar, select Getting started:
 
 ![Security Center Getting Started page](../media/get-started-upgrade-tab.png)
 
-The Upgrade tab lists subscriptions and workspaces eligible for onboarding.
+The Upgrade tab lists subscriptions and workspaces eligible for onboarding. To upgrade a workspace do the following:
 
-- From the Select workspaces to enable Azure Defender on list, select the workspaces to upgrade.
+1. From the Select workspaces to enable Azure Defender on list, select the workspaces to upgrade.
 
-  - If you select subscriptions and workspaces that aren't eligible for trial, the next step will upgrade them, and charges will begin.
+    - If you select subscriptions and workspaces that aren't eligible for trial, the next step will upgrade them, and charges will begin.
 
-  - If you select a workspace that's eligible for a free trial, the next step will begin a trial.
+    - If you select a workspace that's eligible for a free trial, the next step will begin a trial.
 
-- Select Upgrade to enable Azure Defender.
+1. Select **Upgrade** to enable Azure Defender.
 
 You can protect an entire Azure subscription with Azure Defender, and all resources will inherit the protections within the subscription.
 
 Below is the pricing page for an example subscription. You'll notice that each plan in Azure Defender is priced separately and can be individually set to on or off.
 
-![Azure Defender Plans](../media/defender plans.png)
-
+![Azure Defender Plans](../media/defenderplans.png)
 
