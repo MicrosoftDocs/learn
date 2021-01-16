@@ -6,13 +6,13 @@ The surf report site lets users upload photos and videos of local beach conditio
 - The site must handle unexpected spikes in upload volume.
 - Outdated content must be removed as surf conditions change so the site always shows current conditions.
 
-To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
+To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing, and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
 
 ## Create a storage account using Azure portal
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
 1. In the left-hand **Azure Marketplace** nav bar, select **Storage**.
 
@@ -23,10 +23,10 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 1. For **Storage account**, select **Create**. The **Create a storage account** window appears. Enter the following information.
 
     | Property | Value |
-    |---|---|
+    | ---- | ---- |
     | In the **Basics** tab, under **Project details** section: |
     | Subscription | Concierge Subscription |
-    | Resource group | ("**<rgn>[sandbox resource group name]</rgn>**") from the dropdown. |
+    | Resource group | ("<rgn>[sandbox resource group name]</rgn>") from the dropdown. |
     | Under **Instance details**, section: |
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
     | Location | Select a location near to you in the dropdown from the previous list |
@@ -40,7 +40,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 1. Select **Next : Networking**. Enter the following information.
 
     | Property | Value |
-    |---|---|
+    | ---- | ---- |
     | Under **Network connectivity** section: |
     | Connectivity method | *Public endpoint (all networks)*.  We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
     | Under **Network routing** section: |
@@ -49,7 +49,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 1. Select **Next : Data protection**. Enter the following information.
 
     | Property | Value |
-    |---|---|
+    | ---- | ---- |
     | Under **Recovery** section: |
     | Turn on soft delete for blobs | *Disabled*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
     | Turn on soft delete for file shares | *Disabled*. File share soft delete lets you recover your blob data more easily at the folder level. |
@@ -57,7 +57,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 1. Select **Next : Advanced**. Enter the following information.
 
     | Property | Value |
-    |---|---|
+    | ---- | ---- |
     | Under **Security** section: |
     | Secure transfer required | *Enabled*. This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
     | Blob public access | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
