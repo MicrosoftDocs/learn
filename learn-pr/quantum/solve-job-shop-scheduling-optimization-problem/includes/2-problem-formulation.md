@@ -146,9 +146,9 @@ As introduced above, the binary variable you are optimizing for here is $x_{i,t}
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-For $t = 0 \rightarrow t < T$ for every operation, you define an index $x_{i + t}$, which means that every operation in a job contributes to $T$ indices.
+For $t = 0 \rightarrow t < T$ for every operation, you define an indexed binary variable $x_{i*T + t}$, which means that every operation in a job contributes to $T$ indices.
 
-The operation starts at the value of $t$ for which $x_{i + t}$ equals 1.
+The operation starts at the value of $t$ for which $x_{i*T + t}$ equals 1.
 
 ### Defining problem parameters in code
 
@@ -235,9 +235,9 @@ The weights represent how important each penalty function is, relative to all th
 From these mathematical representations, you will build out Python code which will output an array of terms, where each `Term` is an object that looks like:
 
 ```python
-(w: float, indices: []) # Constant terms like +1
-(w: float, indices: [int]) # Linear terms like x
-(w: float, indices: [int, int]) # Quadratic terms like x^2
+Term(w: float, indices: []) # Constant terms like +1
+Term(w: float, indices: [int]) # Linear terms like x
+Term(w: float, indices: [int, int]) # Quadratic terms like x^2
 ```
 
 The `w` element represents the weight for each term, and the `indices` array represents the indices $i + t$ of the $x_{i+t}$ values.
@@ -245,7 +245,7 @@ The `w` element represents the weight for each term, and the `indices` array rep
 If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
 
 ```python
-(w: float, indices: [int, int, int, ...])
+Term(w: float, indices: [int, int, int, ...])
 ```
 
 In the following units, you will explore how to formulate each of these constraints mathematically, and how this translates to code.

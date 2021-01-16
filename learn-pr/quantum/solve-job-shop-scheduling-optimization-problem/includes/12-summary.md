@@ -6,9 +6,12 @@ In this module, you have learned:
 
 - What the job shop scheduling problem is and why it matters
 - How to represent constraints in the form of penalty functions
-- How to combine these penalty functions and assign weights to form a cost function
+- How to define an objective function
+- How to combine these penalty and objective functions and assign weights to form a cost function
 - How to submit the cost function to Azure Quantum
 - How to understand & parse the results
+- How to validate the results
+- How to tune the problem parameters
 
 ### Next steps
 
@@ -21,9 +24,7 @@ Now that you understand the problem scenario and how to define the cost function
     - Change machine assignments
     - Add/remove machines
 - Rewrite the penalty functions to improve their efficiency
-- Implement the solution verifier as described in the previous unit
-- Implement a solution quality evaluator to enable parameter tuning
-- Change the values of the weights and see how this affects the solution quality
+- Tune the parameters
 - Try using a different solver (such as `ParallelTempering`)
 
 You can find this tutorial in Jupyter notebook format [here](TODO) - this will allow you to modify and experiment with the code.

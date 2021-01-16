@@ -2,10 +2,10 @@ Recall your results from the previous unit:
 
 ```console
 Config dict:
-{'0': 1, '10': 0, '11': 0, '1': 0, '12': 0, '2': 0, '13': 1, '3': 0, '14': 0, '4': 0, '15': 0, '5': 0, '16': 0, '6': 0, '17': 0, '7': 0, '18': 0, '8': 0, '19': 0, '9': 0, '20': 0, '30': 0, '31': 0, '21': 0, '32': 0, '22': 1, '33': 0, '23': 0, '34': 1, '24': 0, '35': 0, '25': 0, '36': 0, '26': 0, '37': 0, '27': 0, '38': 0, '28': 0, '39': 0, '29': 0, '40': 0, '50': 0, '41': 0, '51': 0, '42': 1, '52': 0, '43': 0, '53': 0, '44': 0, '54': 1, '45': 0, '55': 0, '46': 0, '56': 0, '47': 0, '57': 0, '48': 0, '58': 0, '49': 0, '59': 0}
+{'0': 0, '10': 0, '11': 0, '1': 1, '12': 0, '2': 0, '13': 1, '3': 0, '14': 0, '4': 0, '15': 0, '5': 0, '16': 0, '6': 0, '17': 0, '7': 0, '18': 0, '8': 0, '19': 0, '9': 0, '20': 1, '30': 0, '31': 0, '21': 0, '32': 1, '22': 0, '33': 0, '23': 0, '34': 0, '24': 0, '35': 0, '25': 0, '36': 0, '26': 0, '37': 0, '27': 0, '38': 0, '28': 0, '39': 0, '29': 0, '40': 1, '50': 0, '41': 0, '51': 0, '42': 0, '52': 0, '43': 0, '53': 0, '44': 0, '54': 1, '45': 0, '55': 0, '46': 0, '56': 0, '47': 0, '57': 0, '48': 0, '58': 0, '49': 0, '59': 0}
 
 Config array:
-[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 
            Job ID: [0, 0, 1, 1, 2, 2]
      Operation ID: [0, 1, 2, 3, 4, 5]
@@ -14,26 +14,29 @@ Operation runtime: [2, 1, 2, 2, 1, 2]
 
 Operation matrix:
     t: 0 1 2 3 4 5 6 7 8 9
-x_0,t: 1 0 0 0 0 0 0 0 0 0
+x_0,t: 0 1 0 0 0 0 0 0 0 0
 x_1,t: 0 0 0 1 0 0 0 0 0 0
-x_2,t: 0 0 1 0 0 0 0 0 0 0
-x_3,t: 0 0 0 0 1 0 0 0 0 0
-x_4,t: 0 0 1 0 0 0 0 0 0 0
+x_2,t: 1 0 0 0 0 0 0 0 0 0
+x_3,t: 0 0 1 0 0 0 0 0 0 0
+x_4,t: 1 0 0 0 0 0 0 0 0 0
 x_5,t: 0 0 0 0 1 0 0 0 0 0
 
 Operation start times (grouped into jobs):
-[[0, 3], [2, 4], [2, 4]]
+[[1, 3], [0, 2], [0, 4]]
 
 Makespan (time taken to complete all operations): 6
 ```
 
-By inspection, you can tell that the solution above is valid (it does not violate any of the constraints defined previously):
+In this instance, it is possible to visually verify that the solution does not validate any constraints. The Gantt chart shown below demonstrates this:
 
+![Gantt chart showing the start times for all operations and their assigned machines](../media/gantt-chart.png)
+
+As you can see from the visual above:
 - Operations belonging to the same job happen in order
 - Operations are started once and only once
 - Each machine only has one operation running at a time
 
-In this particular instance, you can also tell by inspection that the solver scheduled the repair tasks in such a way that the **total time to complete them all (the makespan) was minimized**. This is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
+In this particular instance, you can also tell that the solver scheduled the repair tasks in such a way that the **total time to complete them all (the makespan) was minimized** - both machines are continuously in operation, with no time gaps between scheduled operations. This is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
 
 Depending on how well the cost function is defined and the weights are tuned, the solver will have varying degrees of success. This reinforces the importance of verifying and evaluating returned solutions, to enable tuning of the problem definition in order to improve solution quality.
 
