@@ -25,11 +25,9 @@ $$ w_{t} = \epsilon * \frac{m^t-1}{m-1} $$
 
 Great! You now have a formula for the coefficients of the makespan penalty terms that increase with time while taking into account that operations can be scheduled in parallel. Before implementing the new terms, let's try to limit the amount of new terms you're adding as much as possible. To illustrate, recall the job shop example you've been working on:
 
-$$
-J_{0} &= \{O_{0}, O_{1}\} \\
-J_{1} &= \{O_{2}, O_{3}\} \\
-J_{2} &= \{O_{4}, O_{5}\} \\
-$$
+$$J_{0} = \{O_{0}, O_{1}\}$$
+$$J_{1} = \{O_{2}, O_{3}\}$$
+$$J_{2} = \{O_{4}, O_{5}\}$$
 
 First, consider that you only need the last operation in every job, as the precedence constraint guarantees that all other operations are completed before it. Given $n$ jobs, you thus consider only the operations $\{O_{k_0-1}, O_{k_1-1}, \dots, O_{k_{n-1}-1}\}$, where the indices $k_j$ denotes the number of operations up to and including job $j$. In this example, you only add terms for the following operations:
 
@@ -43,13 +41,11 @@ $$ M_{lb} = \max\limits_{0 \leq j \lt n} \{ \sum_{i = k_j}^{k_{j+1}-1} p_i \} \l
 
 For the processing times given in this example, you get:
 
-$$
-J_{0} &: ~~ p_0 + p_1 = 2 + 1 = 3 \\
-J_{1} &: ~~ p_2 + p_3 = 2 + 2 = 4 \\
-J_{2} &: ~~ p_4 + p_5 = 1 + 2 = 3 \\
-\\
-&\Rightarrow M_{lb} = 4
-$$
+$$J_{0}: p_0 + p_1 = 2 + 1 = 3 $$
+$$J_{1}: p_2 + p_3 = 2 + 2 = 4 $$
+$$J_{2}: p_4 + p_5 = 1 + 2 = 3 $$
+
+$$&\Rightarrow M_{lb} = 4$$
 
 Finally, the makespan is upper-bounded by the sequential execution time of all jobs, $3 + 4 + 3 = 10$ in this case. The time T should never exceed this upper bound. Regardless of whether this is the case or not, you need to include penalties for all time steps up to $T$, or else larger time steps without a penalty will be favored over smaller ones!
 

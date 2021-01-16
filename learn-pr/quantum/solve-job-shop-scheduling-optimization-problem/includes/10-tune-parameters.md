@@ -20,7 +20,7 @@ $$ m \times w_{T-1+max(p_i)} = 2\times\left( \frac{2^{(13-1+2)-4} - 1}{2-1} \rig
 
 To obtain the desired value of $1$, you can approximately set the weight to:
 
-$$ \delta = 0.0005 $$
+$$ \delta = \frac{1}{m \times w_{T-1+max(p_i)}} = \frac{1}{2046} = 0.0005 $$
 
 ### Adjusting the constraint weights
 
