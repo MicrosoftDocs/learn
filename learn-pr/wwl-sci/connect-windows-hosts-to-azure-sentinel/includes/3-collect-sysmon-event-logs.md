@@ -4,19 +4,19 @@ Installing and configuring Sysmon is out of the scope of this module.  Because S
 
 After connecting the agent to the windows machine:
 
-- Select the Settings page.
+1. Select the **Settings** page.
 
-- Select Workspace Settings.
+1. Select **Workspace Settings**.
 
-- In the Log Analytics Workspace Settings area, select Advanced Settings
+1. In the Log Analytics Workspace Settings area, select **Advanced Settings**.
 
-- Select Data.
+1. Select **Data**.
 
-- Make sure Windows Event Logs is selected
+1. Make sure Windows Event Logs is selected
 
-- In the "Collect events from the following log events" textbox, enter: Microsoft-Windows-Sysmon/Operation
+1. In the "Collect events from the following log events" textbox, enter: *Microsoft-Windows-Sysmon/Operation*
 
-- Then press the +
+1. Then select the **+**
 
 Once configured, the Sysmon events will be available in the Event table.
 

@@ -23,43 +23,43 @@ The following list provides a complete breakdown of the Security and App Locker 
 
 To view the connector page:
 
-- Select Data connectors page.
+1. Select **Data connectors page**.
 
-- Select Security Events.
+1. Select **Security Events**.
 
-- Then select the Open connector page on the preview pane.
+1. Then select the **Open connector** page on the preview pane.
 
-- Verify that you have the appropriate permissions as described under Prerequisites.
+1. Verify that you have the appropriate permissions as described under Prerequisites.
 
-- Select Install agent on Azure Windows Virtual Machine, and then on the link that appears below.
+1. Select **Install agent on Azure Windows Virtual Machine**, and then on the link that appears below.
 
-- For each virtual machine that you want to connect, select its name in the list that appears on the right, and then select Connect.
+1. For each virtual machine that you want to connect, select its name in the list that appears on the right, and then select **Connect**.
 
-- Select which event set ([All, Common, or Minimal](https://docs.microsoft.com/en-us/azure/sentinel/connect-windows-security-events)) you want to stream.
+1. Select which event set ([All, Common, or Minimal](https://docs.microsoft.com/en-us/azure/sentinel/connect-windows-security-events?azure-portal=true)) you want to stream.
 
-- Select Update.
+1. Select **Update**.
 
 ## Connect non-Azure Windows Machines
 
 To view the connector page:
 
-- Select Data connectors page.
+1. Select **Data connectors** page.
 
-- Select Security Events.
+1. Select **Security Events**.
 
-- Then select the Open connector page on the preview pane.
+1. Then select the **Open connector** page on the preview pane.
 
-- Verify that you have the appropriate permissions as described under Prerequisites.
+1. Verify that you have the appropriate permissions as described under Prerequisites.
 
-- Select Install agent on non-Azure Windows Machine, and then on the link that appears below.
+1. Select **Install agent on non-Azure Windows Machine**, and then on the link that appears below.
 
-- Select the appropriate download links that appear on the right, under Windows Computers.
+1. Select the appropriate download links that appear on the right, under Windows Computers.
 
-- Using the downloaded executable file, install the agent on the Windows systems of your choice, and configure it using the Workspace ID and Keys that appear below the download links mentioned above.
+1. Using the downloaded executable file, install the agent on the Windows systems of your choice, and configure it using the Workspace ID and Keys that appear below the download links mentioned above.
 
-- Select which event set (All, Common, or Minimal) you want to stream.
+1. Select which event set (All, Common, or Minimal) you want to stream.
 
-- Select Update.
+1. Select **Update**.
 
 ![Log Analytics agent download](../media/agentdownload.png)
 
