@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-logs-azure-sentinel.understand-microsoft-365-defender-tables
+title: Understand microsoft 365 defender tables
+metadata:
+  title: Understand microsoft 365 defender tables
+  description: "Understand microsoft 365 defender tables"
+  ms.date: 01/16/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-understand-microsoft-365-defender-tables.md)]

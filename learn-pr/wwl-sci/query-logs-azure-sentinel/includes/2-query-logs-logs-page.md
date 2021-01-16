@@ -1,0 +1,2 @@
+KQL is the language used to query the log data in the Log Analytics workspace.  In Azure Sentinel, the Logs page provides access to the query window.  The query window allows you to run queries, save queries, run saved queries, create a new alert rule, and export.  The left side provides a list of tables and related table fields.  To run a query, enter the query text and press the run button.  Query results appear in the bottom section of the form.
+
