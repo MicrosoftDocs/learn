@@ -24,7 +24,7 @@ $$ \delta = 0.0005 $$
 
 ### Adjusting the constraint weights
 
-As mentioned in the previous section, breaking a single constraint should incur a penalty roughly 5-10x higher than that of the worst valid solution. Assuming that breaking one constraint adds a value of $1$ to the cost function, we can set the remaining weights to:
+As mentioned in the previous section, breaking a single constraint should incur a penalty roughly 5-10x higher than that of the worst valid solution. Assuming that breaking one constraint adds a value of $1$ to the cost function, you can set the remaining weights to:
 
 $$ \alpha = \beta = \gamma = 5 $$
 

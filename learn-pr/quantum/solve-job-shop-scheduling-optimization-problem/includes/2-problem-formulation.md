@@ -231,7 +231,7 @@ where:
 
 $$f(x) \text{, } g(x) \text{ and } h(x) \text{ represent the penalty functions.}$$
 $$k(x) \text{ represents the objective function.}$$
-$$\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weights we assign to the penalties.}$$
+$$\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weights assigned to the penalties.}$$
 
 The weights represent how important each penalty function is, relative to all the others. In the following units, you will learn how to build these penalty and objective functions, combine them to form the cost function $H(x)$, and solve the problem using Azure Quantum.
 

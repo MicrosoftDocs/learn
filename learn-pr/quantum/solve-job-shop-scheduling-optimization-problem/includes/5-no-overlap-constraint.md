@@ -43,7 +43,7 @@ Below, you see a configuration that violates the constraint:
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|1|
 |||**Valid configuration?**|✘|
 
-In this instance, $O_{2}$ and $O_{3}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ we have: $x_{2,1} \cdot x_{3,1} = 1$.
+In this instance, $O_{2}$ and $O_{3}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ you have: $x_{2,1} \cdot x_{3,1} = 1$.
 
 Another example of an invalid configuration is demonstrated below:
 

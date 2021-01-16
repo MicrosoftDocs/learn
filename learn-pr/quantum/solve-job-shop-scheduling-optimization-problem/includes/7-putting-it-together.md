@@ -28,7 +28,7 @@ As you saw earlier, combining the penalty functions is straightforward - all you
 
 $$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \delta \cdot k(x) $$
 
-$$\text{where }\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weights we assign to the penalties.}$$
+$$\text{where }\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weights assigned to the penalties.}$$
 
 The weights represent how important each penalty function is, relative to all the others.
 

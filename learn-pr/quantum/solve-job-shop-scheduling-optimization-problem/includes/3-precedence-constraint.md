@@ -82,7 +82,7 @@ Let's break that down:
 
 ### Code
 
-Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the coefficient (weight) term `c` included in this code snippet - this will be assigned a value later on when we call the function:
+Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the coefficient (weight) term `c` included in this code snippet - this will be assigned a value later on when you call the function:
 
 ```python
 # Reminder of the relevant parameters
