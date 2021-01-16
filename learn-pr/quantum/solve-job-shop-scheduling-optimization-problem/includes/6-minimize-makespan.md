@@ -19,19 +19,19 @@ Recall once more the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-$O_{2}$ and $O_{3}$ must be completed using the same machine - the ship computer. You can't do two things at the same time using the same machine, so to avoid violating the no-overlap constraint you must ensure that $O_{2}$ and $O_{3}$ begin at different times: $x_{2,t}$ and $x_{3,t}$ must not equal 1 at the same time. You must also make sure that the operations don't overlap, just like you saw in the precedence constraint. This means that if $O_{2}$ starts at time $t$, $O_{3}$ must not start at times where $s < t + p_{2}$ (before $O_{2}$ has been completed using the machine).
+Let's say that $O_{2}$ and $O_{3}$ must be completed using the same machine. To avoid violating the no overlap constraint, you must ensure that $O_{2}$ and $O_{3}$ begin at different times: i.e. $x_{2,t}$ and $x_{2,t}$ must not equal 1 at the same time. You must also make sure that the operations don't overlap, just like you saw in the precedence constraint. This means that if $O_{2}$ starts at time $t$, $O_{3}$ must not start at times where $t \leq s < t + p_{2}$ (after $O_{2}$ has started but before it has been completed using the machine).
 
 One example of a valid configuration is shown below:
 
 |$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
 |---|---|---|---|
 |0|1|0|0|
-|1|0|0|0|
-|2|0|1|0|
+|1|0|1|0|
+|2|0|0|0|
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|0|
 |||**Valid configuration?**|✔|
 
-As you can see, when you compare $x_{i,t}$ values pairwise at each time in the simulation, their product always equals 0. Further to this, you can see that $O_{3}$ starts two time steps after $O_{2}$, which means that there is no overlap.
+As you can see, when you compare $x_{i,t}$ values pairwise at each time in the simulation, their product always equals 0.
 
 Below, you see a configuration that violates the constraint:
 
@@ -50,8 +50,8 @@ Another example of an invalid configuration is demonstrated below:
 |$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
 |---|---|---|---|
 |0|1|0|0|
-|1|0|1|0|
-|2|0|0|0|
+|1|0|0|0|
+|2|0|1|0|
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|0|
 |||**Valid configuration?**|✘|
 

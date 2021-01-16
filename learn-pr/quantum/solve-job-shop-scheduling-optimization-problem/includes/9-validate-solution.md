@@ -1,28 +1,30 @@
 Recall your results from the previous unit:
 
 ```console
-    Config dict:
-    {'0': 1, '5': 0, '6': 0, '1': 0, '7': 1, '2': 0, '8': 0, '3': 0, '9': 0, '4': 0, '10': 1, '15': 0, '16': 0, '11': 0, '17': 1, '12': 0, '18': 0, '13': 0, '19': 0, '14': 0, '20': 0, '21': 0, '22': 0, '23': 1, '24': 0, '25': 0, '26': 0, '27': 0, '28': 0, '29': 1}
+Config dict:
+{'0': 1, '10': 0, '11': 0, '1': 0, '12': 0, '2': 0, '13': 1, '3': 0, '14': 0, '4': 0, '15': 0, '5': 0, '16': 0, '6': 0, '17': 0, '7': 0, '18': 0, '8': 0, '19': 0, '9': 0, '20': 0, '30': 0, '31': 0, '21': 0, '32': 0, '22': 1, '33': 0, '23': 0, '34': 1, '24': 0, '35': 0, '25': 0, '36': 0, '26': 0, '37': 0, '27': 0, '38': 0, '28': 0, '39': 0, '29': 0, '40': 0, '50': 0, '41': 0, '51': 0, '42': 1, '52': 0, '43': 0, '53': 0, '44': 0, '54': 1, '45': 0, '55': 0, '46': 0, '56': 0, '47': 0, '57': 0, '48': 0, '58': 0, '49': 0, '59': 0}
 
-    Config array:
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1]
+Config array:
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 
-               Job ID: [0, 0, 1, 1, 2, 2]
-         Operation ID: [0, 1, 2, 3, 4, 5]
-    Operation runtime: [2, 1, 2, 2, 1, 2]
-     Assigned machine: [0, 0, 1, 1, 0, 0]
+           Job ID: [0, 0, 1, 1, 2, 2]
+     Operation ID: [0, 1, 2, 3, 4, 5]
+Operation runtime: [2, 1, 2, 2, 1, 2]
+ Assigned machine: [0, 0, 1, 1, 0, 0]
 
-    Operation matrix:
-        t: 0 1 2 3 4
-    x_0,t: 1 0 0 0 0
-    x_1,t: 0 0 1 0 0
-    x_2,t: 1 0 0 0 0
-    x_3,t: 0 0 1 0 0
-    x_4,t: 0 0 0 1 0
-    x_5,t: 0 0 0 0 1
+Operation matrix:
+    t: 0 1 2 3 4 5 6 7 8 9
+x_0,t: 1 0 0 0 0 0 0 0 0 0
+x_1,t: 0 0 0 1 0 0 0 0 0 0
+x_2,t: 0 0 1 0 0 0 0 0 0 0
+x_3,t: 0 0 0 0 1 0 0 0 0 0
+x_4,t: 0 0 1 0 0 0 0 0 0 0
+x_5,t: 0 0 0 0 1 0 0 0 0 0
 
-    Operation start times (grouped into jobs):
-    [[0, 2], [0, 2], [3, 4]]
+Operation start times (grouped into jobs):
+[[0, 3], [2, 4], [2, 4]]
+
+Makespan (time taken to complete all operations): 6
 ```
 
 By inspection, you can tell that the solution above is valid (it does not violate any of the constraints defined previously):
@@ -40,14 +42,16 @@ For larger or more complex problems, it will not always be possible to verify th
 You can perform this validation using the following code snippet, which checks the solution against all three constraints before declaring the solution valid or not. If any of the constraints are violated, the solution will be marked as invalid. An example of an invalid solution has also been included, for comparison.
 
 ```python
-def check_precedence(p: List[int], jobs: List[List[int]]):
-    """
-    Check if a solution has violated the precedence constraint.
-
+def check_precedence(p, jobs):
+    """    
+    Check if the solution violates the precedence constraint.
+    Returns True if the constraint is violated.       
+    
     Keyword arguments:
-    p (List[int]): List of job processing times
-    jobs (List[List[int]]): Mapping of operations to jobs
+    p (dict): Operation processing times
+    jobs (List[List[int]]): List of operation start times, grouped into jobs
     """
+
     op_id = 0
     for job in jobs:
         for i in range(len(job) - 1):
@@ -56,11 +60,12 @@ def check_precedence(p: List[int], jobs: List[List[int]]):
             op_id += 1
         op_id += 1
     return False
-
-def check_operation_once(matrix: List[List[int]]):
-    """
-    Check if a solution has violated the operation-once constraint.
-
+    
+def check_operation_once(matrix):
+    """    
+    Check if the solution violates the operation once constraint.
+    Returns True if the constraint is violated.       
+    
     Keyword arguments:
     matrix (List[List[int]]): Matrix of x_i,t values
     """
@@ -69,68 +74,72 @@ def check_operation_once(matrix: List[List[int]]):
             return True
     return False
 
-def check_no_overlap(jobs: List[List[int]], ops_machines_map: List[List[int]], p: List[int]):
-    """
-    Check if a solution has violated the no-overlap constraint.
-
+def check_no_overlap(op_start_times:list, machines_ops_map:dict, p:dict):
+    """    
+    Check if the solution violates the no overlap constraint.
+    Returns True if the constraint is violated.       
+    
     Keyword arguments:
-    jobs (List[List[int]]): Mapping of operations to jobs
-    ops_machine_map(List[List[int]]): Mapping of operations to machines
-    p (List[int]): List of job processing times
+    op_start_times (list): Start times for the operations
+    machines_ops_map(dict): Mapping of machines to operations
+    p (dict): Operation processing times
     """
+    pvals = list(p.values())
+
     # For each machine
-    op_start_times = [ op for job in jobs for op in job]
-    for m in range(len(ops_machines_map)):
-        # Get operations assigned to this machine
-        ops = ops_machines_map[m]
+    for ops in machines_ops_map.values():
         machine_start_times = [op_start_times[i] for i in ops]
+        machine_pvals = [pvals[i] for i in ops]
 
         # Two operations start at the same time on the same machine
         if len(machine_start_times) != len(set(machine_start_times)):
             return True
-
-        # Operation i + 1 starts on machine m before operation i has finished
-        for op_id in range(len(ops) - 1):
-            if op_start_times[op_id] + p[op_id] < op_start_times[op_id + 1]:
+        
+        # There is overlap in the runtimes of two operations assigned to the same machine
+        machine_start_times, machine_pvals = zip(*sorted(zip(machine_start_times, machine_pvals)))
+        for i in range(len(machine_pvals) - 1):
+            if machine_start_times[i] + machine_pvals[i] > machine_start_times[i+1]:
                 return True
+
     return False
-
-def validate_solution(matrix, ops_machines_map, p, jobs):
-    """
-    Check if a solution has violated any of the problem constraints.
-
+    
+def validate_solution(matrix:dict, machines_ops_map:dict, p:dict, jobs_ops_map:dict):
+    """    
+    Check that solution has not violated any constraints. 
+    Returns True if the solution is valid.       
+    
     Keyword arguments:
     matrix (List[List[int]]): Matrix of x_i,t values
-    ops_machine_map(List[List[int]]): Mapping of operations to machines
-    p (List[int]): List of job processing times
-    jobs (List[List[int]]): Mapping of operations to jobs
+    machines_ops_map(dict): Mapping of machines to operations
+    p (dict): Operation processing times
+    jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     """
+
+    jobs, op_start_times = extract_start_times(jobs_ops_map, matrix)
+
+    # Check if constraints are violated
     precedence_violated = check_precedence(p, jobs)
     operation_once_violated = check_operation_once(matrix)
-    no_overlap_violated = check_no_overlap(jobs, ops_machines_map, p)
-
+    no_overlap_violated = check_no_overlap(op_start_times, machines_ops_map, p)
+    
     if not precedence_violated and not operation_once_violated and not no_overlap_violated:
         print("Solution is valid.\n")
     else:
         print("Solution not valid. Details:")
         print(f"\tPrecedence constraint violated: {precedence_violated}")
-        print(f"\tOperation-once constraint violated: {operation_once_violated}")
-        print(f"\tNo-overlap constraint violated: {no_overlap_violated}\n")
+        print(f"\tOperation once constraint violated: {operation_once_violated}")
+        print(f"\tNo overlap constraint violated: {no_overlap_violated}\n")
 
-# Validate the solution returned by the Azure Quantum Optimization SDK
-print_problem_details(n, o, p, ops_machines_map)
+print_problem_details(ops_jobs_map, p, machines_ops_map)
+
 print("Azure Quantum solution:")
 print_matrix(T, matrix)
-validate_solution(matrix, ops_machines_map, p, jobs)
 
-# Create an example of an invalid solution matrix
-bad_matrix = [[1, 0, 0, 0, 1], [1, 0, 0, 0, 0], [1, 0, 0, 0, 0], [0, 1, 0, 0, 0], [0, 0, 0, 1, 0], [0, 0, 1, 0, 0]]
-bad_jobs = extract_jobs(n, o, bad_matrix)
+print("Operation start times (grouped into jobs):")
+print(jobs)
+print()
 
-# Test if the validation code correctly identifies the invalid solution
-print("Example invalid solution:")
-print_matrix(T, bad_matrix)
-validate_solution(bad_matrix, ops_machines_map, p, bad_jobs)
+validate_solution(matrix, machines_ops_map, p, jobs_ops_map)
 ```
 
 When you run this code, you will see the following in the output window:
@@ -142,32 +151,21 @@ Operation runtime: [2, 1, 2, 2, 1, 2]
  Assigned machine: [0, 0, 1, 1, 0, 0]
 
 Azure Quantum solution:
-    t: 0 1 2 3 4
-x_0,t: 1 0 0 0 0
-x_1,t: 0 0 1 0 0
-x_2,t: 1 0 0 0 0
-x_3,t: 0 0 1 0 0
-x_4,t: 0 0 0 1 0
-x_5,t: 0 0 0 0 1
+    t: 0 1 2 3 4 5 6 7 8 9
+x_0,t: 1 0 0 0 0 0 0 0 0 0
+x_1,t: 0 0 0 1 0 0 0 0 0 0
+x_2,t: 0 0 1 0 0 0 0 0 0 0
+x_3,t: 0 0 0 0 1 0 0 0 0 0
+x_4,t: 0 0 1 0 0 0 0 0 0 0
+x_5,t: 0 0 0 0 1 0 0 0 0 0
+
+Operation start times (grouped into jobs):
+[[0, 3], [2, 4], [2, 4]]
 
 Solution is valid.
-
-Example invalid solution:
-    t: 0 1 2 3 4
-x_0,t: 1 0 0 0 1
-x_1,t: 1 0 0 0 0
-x_2,t: 1 0 0 0 0
-x_3,t: 0 1 0 0 0
-x_4,t: 0 0 0 1 0
-x_5,t: 0 0 1 0 0
-
-Solution not valid. Details:
-    Precedence constraint violated: True
-    Operation-once constraint violated: True
-    No-overlap constraint violated: True
 ```
 
-As you can see, the result returned by the Azure Quantum solver has been confirmed as valid, and the dummy invalid solution is correctly identified.
+As you can see, the result returned by the Azure Quantum solver has been confirmed as valid (it does not violate any of the constraints).
 
 The final step in solving this problem is to map this solution back to your repair tasks - below is shown the order in which your repair tasks should be completed to finish as quickly (and safely) as possible. If two tasks have the same order number, they can be performed at the same time by different crew members using different tools:
 
@@ -185,4 +183,4 @@ The final step in solving this problem is to map this solution back to your repa
 
 Congratulations, you can now start the repairs and avoid disaster!
 
-![PLACEHOLDER IMAGE: Spaceship cross-section showing the navigation module, life support and reactor areas with check marks to indicate they have been repaired.](../media/spaceship_repairs_placeholder.png)
+![Image showing a cross-section of the spaceship, with rooms such as life support, the reactor and the cockpit.](../media/spaceship-core.png)

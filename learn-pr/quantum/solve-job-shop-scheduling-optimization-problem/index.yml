@@ -34,10 +34,12 @@ units:
 - learn.quantum.solve-job-shop-scheduling-optimization-problem.3-precedence-constraint
 - learn.quantum.solve-job-shop-scheduling-optimization-problem.4-operation-once-constraint
 - learn.quantum.solve-job-shop-scheduling-optimization-problem.5-no-overlap-constraint
-- learn.quantum.solve-job-shop-scheduling-optimization-problem.6-putting-it-together
-- learn.quantum.solve-job-shop-scheduling-optimization-problem.7-solve-problem
-- learn.quantum.solve-job-shop-scheduling-optimization-problem.8-validate-solution
-- learn.quantum.solve-job-shop-scheduling-optimization-problem.9-knowledge-check
-- learn.quantum.solve-job-shop-scheduling-optimization-problem.10-summary
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.6-minimize-makespan
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.7-putting-it-together
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.8-solve-problem
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.9-validate-solution
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.10-tune-parameters
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.11-knowledge-check
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.12-summary
 badge:
   uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.badge

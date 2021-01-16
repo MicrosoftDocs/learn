@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.8-validate-solution
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.9-validate-solution
 title: Validate the solution
 metadata:
   title: Validate the solution
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-validate-solution.md)]
+  [!include[](includes/9-validate-solution.md)]

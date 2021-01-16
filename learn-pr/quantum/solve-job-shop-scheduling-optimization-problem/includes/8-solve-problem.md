@@ -23,8 +23,8 @@ print(config)
 ```
 
 ```console
-    .....
-    {'0': 1, '5': 0, '6': 0, '1': 0, '7': 1, '2': 0, '8': 0, '3': 0, '9': 0, '4': 0, '10': 1, '15': 0, '16': 0, '11': 0, '17': 1, '12': 0, '18': 0, '13': 0, '19': 0, '14': 0, '20': 0, '21': 0, '22': 0, '23': 1, '24': 0, '25': 0, '26': 0, '27': 0, '28': 0, '29': 1}
+...
+{'0': 1, '10': 0, '11': 0, '1': 0, '12': 0, '2': 0, '13': 1, '3': 0, '14': 0, '4': 0, '15': 0, '5': 0, '16': 0, '6': 0, '17': 0, '7': 0, '18': 0, '8': 0, '19': 0, '9': 0, '20': 0, '30': 0, '31': 0, '21': 0, '32': 0, '22': 1, '33': 0, '23': 0, '34': 1, '24': 0, '35': 0, '25': 0, '36': 0, '26': 0, '37': 0, '27': 0, '38': 0, '28': 0, '39': 0, '29': 0, '40': 0, '50': 0, '41': 0, '51': 0, '42': 1, '52': 0, '43': 0, '53': 0, '44': 0, '54': 1, '45': 0, '55': 0, '46': 0, '56': 0, '47': 0, '57': 0, '48': 0, '58': 0, '49': 0, '59': 0}
 ```
 
 ### Run job asynchronously
@@ -54,7 +54,7 @@ This code snippet contains several helper functions, which are used to parse the
 def create_op_array(config: dict):
     """
     Create array from returned config dict.
-
+    
     Keyword arguments:
     config (dictionary): config returned from solver
     """
@@ -64,42 +64,33 @@ def create_op_array(config: dict):
         variables.insert(int(key), val)
     return variables
 
-def print_problem_details(n: int, o: int, p: List[int], ops_machines_map: List[List[int]]):
+def print_problem_details(ops_jobs_map:dict, p:dict, machines_ops_map:dict):
     """
-    Print problem details e.g. operation runtimes and machine assignments.
-
+    
+    Print problem details e.g. operation runtimes and machine assignments.        
+    
     Keyword arguments:
-    n (int): Total number of jobs
-    o (int): Number of operations per job
-    p (List[int]): List of job processing times
-    ops_machine_map(List[List[int]]): Mapping of operations to machines
+    ops_jobs_map (dict): Map of operations to jobs {operation: job}
+    p (dict): Operation processing times
+    machines_ops_map(dict): Mapping of machines to operations
     """
 
-    job = 0
-    jobs = []
-    ops = []
-    machines = []
+    machines = [None] * len(ops_jobs_map)
 
-    for i in range(o * n):
-        jobs.append(job)
-        ops.append(i)
-
-        if (i + 1) % o == 0:
-            job += 1
-    for i in range(len(ops_machines_map)):
-        for j in range(len(ops_machines_map[i])):
-            machines.insert(ops_machines_map[i][j], i)
-
-    print(f"           Job ID: {jobs}")
-    print(f"     Operation ID: {ops}")
-    print(f"Operation runtime: {p}")
+    for m, ops in machines_ops_map.items():
+        for op in ops:
+          machines[op] = m
+    
+    print(f"           Job ID: {list(ops_jobs_map.values())}")
+    print(f"     Operation ID: {list(ops_jobs_map.keys())}")
+    print(f"Operation runtime: {list(p.values())}")
     print(f" Assigned machine: {machines}")
     print()
-
-def split_array(T: int, array: List[int]):
+    
+def split_array(T:int, array:List[int]):
     """
-    Split array into rows representing the rows of the operation matrix.
-
+    Split array into rows representing the rows of our operation matrix.
+        
     Keyword arguments:
     T (int): Time allowed to complete all operations
     array (List[int]): array of x_i,t values generated from config returned by solver
@@ -113,10 +104,10 @@ def split_array(T: int, array: List[int]):
         i = i + T
     return ops
 
-def print_matrix(T: int, matrix: List[List[int]]):
+def print_matrix(T:int, matrix:List[List[int]]):
     """
-    Print final output matrix.
-
+    Print final output matrix.        
+    
     Keyword arguments:
     T (int): Time allowed to complete all operations
     matrix (List[List[int]]): Matrix of x_i,t values
@@ -126,7 +117,7 @@ def print_matrix(T: int, matrix: List[List[int]]):
     for t in range(0, T):
         labels += f" {t}"
     print(labels)
-
+    
     idx = 0
     for row in matrix:
         print("x_" + str(idx) + ",t: ", end="")
@@ -134,29 +125,29 @@ def print_matrix(T: int, matrix: List[List[int]]):
         idx += 1
     print()
 
-def print_jobs(n: int, o: int, matrix: List[List[int]]):
+def extract_start_times(jobs_ops_map:dict, matrix:List[List[int]]):
     """
-    Group operations into jobs & print.
-
+    Extract operation start times & group them into jobs.
+    
     Keyword arguments:
-    n (int): Total number of jobs
-    o (int): Number of operations per job
+    jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     matrix (List[List[int]]): Matrix of x_i,t values
     """
-
-    i = 0
-    jobs = []
-    while i < o * n:
-        x = []
-        for j in range (i, i + o):
+    #jobs = {}
+    jobs = [None] * len(jobs_ops_map)
+    op_start_times = []
+    for job, ops in jobs_ops_map.items(): 
+        x = [None] * len(ops)
+        for i in range(len(ops)):
             try :
-                index = matrix[j].index(1)
+                x[i] = matrix[ops[i]].index(1)
+                op_start_times.append(matrix[ops[i]].index(1))
             except ValueError:
-                index = -1
-            x.append(index)
-        jobs.append(x)
-        i += o
-    print(jobs)
+                x[i] = -1
+                op_start_times.append(-1)
+        jobs[job] = x
+
+    return jobs, op_start_times
 ```
 
 ### Results
@@ -165,48 +156,57 @@ Finally, you take the config returned by the solver and read out the results.
 
 ```python
 # Produce 1D array of x_i,t = 0, 1 representing when each operation starts
-op_array = create_op_array(config)
+op_array = create_op_array(config) 
 
 # Print config details:
 print(f"Config dict:\n{config}\n")
 print(f"Config array:\n{op_array}\n")
 
 # Print problem setup
-print_problem_details(n, o, p, ops_machines_map)
+print_problem_details(ops_jobs_map, p, machines_ops_map)
 
 # Print final operation matrix, using the returned config
 print("Operation matrix:")
-matrix = split_array(T, op_array)
+matrix = split_array(T, op_array) 
 print_matrix(T, matrix)
 
 # Find where each operation starts (when x_i,t = 1) and return the start time
 print("Operation start times (grouped into jobs):")
-print_jobs(n, o, matrix)
+jobs, op_start_times = extract_start_times(jobs_ops_map, matrix)
+print(jobs)
+
+# Calculate makespan (time taken to complete all operations - the objective you are minimizing)
+op_end_times = [op_start_times[i] + p[i] for i in range(len(op_start_times))]
+makespan = max(op_end_times)
+
+print(f"\nMakespan (time taken to complete all operations): {makespan}")
 ```
 
 ```console
-    Config dict:
-    {'0': 1, '5': 0, '6': 0, '1': 0, '7': 1, '2': 0, '8': 0, '3': 0, '9': 0, '4': 0, '10': 1, '15': 0, '16': 0, '11': 0, '17': 1, '12': 0, '18': 0, '13': 0, '19': 0, '14': 0, '20': 0, '21': 0, '22': 0, '23': 1, '24': 0, '25': 0, '26': 0, '27': 0, '28': 0, '29': 1}
+Config dict:
+{'0': 1, '10': 0, '11': 0, '1': 0, '12': 0, '2': 0, '13': 1, '3': 0, '14': 0, '4': 0, '15': 0, '5': 0, '16': 0, '6': 0, '17': 0, '7': 0, '18': 0, '8': 0, '19': 0, '9': 0, '20': 0, '30': 0, '31': 0, '21': 0, '32': 0, '22': 1, '33': 0, '23': 0, '34': 1, '24': 0, '35': 0, '25': 0, '36': 0, '26': 0, '37': 0, '27': 0, '38': 0, '28': 0, '39': 0, '29': 0, '40': 0, '50': 0, '41': 0, '51': 0, '42': 1, '52': 0, '43': 0, '53': 0, '44': 0, '54': 1, '45': 0, '55': 0, '46': 0, '56': 0, '47': 0, '57': 0, '48': 0, '58': 0, '49': 0, '59': 0}
 
-    Config array:
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1]
+Config array:
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 
-               Job ID: [0, 0, 1, 1, 2, 2]
-         Operation ID: [0, 1, 2, 3, 4, 5]
-    Operation runtime: [2, 1, 2, 2, 1, 2]
-     Assigned machine: [0, 0, 1, 1, 0, 0]
+           Job ID: [0, 0, 1, 1, 2, 2]
+     Operation ID: [0, 1, 2, 3, 4, 5]
+Operation runtime: [2, 1, 2, 2, 1, 2]
+ Assigned machine: [0, 0, 1, 1, 0, 0]
 
-    Operation matrix:
-        t: 0 1 2 3 4
-    x_0,t: 1 0 0 0 0
-    x_1,t: 0 0 1 0 0
-    x_2,t: 1 0 0 0 0
-    x_3,t: 0 0 1 0 0
-    x_4,t: 0 0 0 1 0
-    x_5,t: 0 0 0 0 1
+Operation matrix:
+    t: 0 1 2 3 4 5 6 7 8 9
+x_0,t: 1 0 0 0 0 0 0 0 0 0
+x_1,t: 0 0 0 1 0 0 0 0 0 0
+x_2,t: 0 0 1 0 0 0 0 0 0 0
+x_3,t: 0 0 0 0 1 0 0 0 0 0
+x_4,t: 0 0 1 0 0 0 0 0 0 0
+x_5,t: 0 0 0 0 1 0 0 0 0 0
 
-    Operation start times (grouped into jobs):
-    [[0, 2], [0, 2], [3, 4]]
+Operation start times (grouped into jobs):
+[[0, 3], [2, 4], [2, 4]]
+
+Makespan (time taken to complete all operations): 6
 ```
 
 For this small problem instance, the solver quickly returned a solution. For bigger, more complex problems you may need to run the job asynchronously, as shown earlier in this unit.

@@ -1,6 +1,6 @@
 Congratulations! You saved the day and completed all the repair tasks before disaster occurred.
 
-![PLACEHOLDER IMAGE: Spaceship cross-section showing the navigation module, life support and reactor areas with check marks to indicate they have been repaired.](../media/spaceship_fixed_placeholder.png)
+![Image showing a cross-section of the spaceship, with rooms such as life support, the reactor and the cockpit.](../media/spaceship-core.png)
 
 In this module, you have learned:
 

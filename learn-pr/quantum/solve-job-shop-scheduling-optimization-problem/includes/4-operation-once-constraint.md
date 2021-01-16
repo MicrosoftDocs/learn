@@ -132,9 +132,11 @@ and
 $$1^2 = 1$$
 
 This means that the quadratic terms in the penalty function can combine with the two linear terms, giving the following formulation of the penalty function:
-$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = x + y + 2xy - 2x - 2y + 1 = 2xy - x - y + 1$$
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = x^2 + y^2 + 2xy - 2x - 2y + 1 $$
+$$= x + y + 2xy - 2x - 2y + 1 $$
+$$= 2xy - x - y + 1 $$
 
-If $T$ was larger, you would have more terms (for example, $z$ and so on).
+If $T$ was larger, you would have more terms ($z$ and so on, for example).
 
 ### Code
 
@@ -145,32 +147,32 @@ def operation_once_constraint(n: int, o: int, T:int, w:float):
     """
     Construct penalty terms for the operation-once constraint.
     Penalty function is of form: 2xy - x - y + 1
-
-    Keyword arguments:
-
-    n (int): Total number of jobs
-    o (int): Number of operations per job
-    T (int): Time allowed to complete all operations
-    w (float): Relative weight of this constraint
+    # Reminder of the relevant parameters
+    ## Time to allow for all jobs to complete
+    T = 20 
+    
+    ## Assignment of operations to jobs (operation ID: job ID)
+    ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
     """
-
+    
     terms = []
-
+    
     # 2xy - x - y parts of the constraint function
     # Loop through all operations
-    for i in range(n*o):
+    for op in ops_jobs_map.keys():
         for t in range(T):
-            # - x - y terms
-            terms.append(Term(w=w*-1, indices=[i*T+t]))
 
+            # - x - y terms
+            terms.append(Term(w=w*-1, indices=[op*T+t]))
+            
             # + 2xy term
             # Loop through all other start times for the same job
             # to get the cross terms
             for s in range(t+1, T):
-                terms.append(Term(w=w*2, indices=[i*T+t, i*T+s]))
-
+                terms.append(Term(w=w*2, indices=[op*T+t, op*T+s]))
+    
     # + 1 term
     terms.append(Term(w=w*1, indices=[]))
-
+    
     return terms
 ```
