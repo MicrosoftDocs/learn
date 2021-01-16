@@ -1,6 +1,6 @@
 Security Center continually assesses your resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level. 
 
-The secure score is shown in the Azure portal pages as a percentage value. Still, the underlying values are also clearly presented:
+The secure score is shown in the Azure Portal pages as a percentage value. Still, the underlying values are also clearly presented:
 
 :::image type="content" source="../media/4-overall-secuire-score.png" alt-text="Section of the Azure Portal showing the Overall Secure Score.":::
 
