@@ -1,159 +1,110 @@
-In this unit, the no-overlap constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, you will learn how to minimize the makespan of the solution (the time taken to complete all operations).
 
-The no-overlap constraint is defined as follows:
+### Minimizing the makespan
 
-| Constraint | Penalty condition |
-|---|---|
-|**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
+So far you've learned how to represent constraints of your optimization problem with a penalty model, which allows you to obtain *valid* solutions to your problem from the optimizer. Remember however that our end goal is to obtain an *optimal* (or close to optimal) solution. In our case, we're looking for a schedule with the fastest completion time of all jobs.
 
-### Worked example
+The makespan $M$ is defined as the total time required to run all jobs, or alternatively, the finishing time of the last job, which we want to minimize. To this end, we will be adding a fourth component to our cost function that penalizes a solution the larger the makespan is:
 
-For this final constraint, $J_{1}$ will once again be used as an example:
+$$ H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \mathbf{\boldsymbol{\delta} \cdot k(x)} $$
 
-- $J_{1}$: Recalibrate navigation system
-  - $O_{2}$: Reboot the system (*2 minutes*)
-  - $O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
+Let's come up with terms that increase the value of the cost function the further out the last job is completed. Remember that the completion time of a job depends solely on the completion time of its final operation. However, since we have no way of knowing in advance what the last job will be, or at which time the last operation will finish, we'll need to include a term for each operation and time step. These terms need to scale with the time parameter $t$, and consider the operation processing time, in order to penalize large makespans over smaller ones.
 
-Recall once more the variable $x_{i,t}$:
+Some care is required in determining the penalty values, or *coefficients*, of these terms. Recall that we are given a set of operations $\{O_i\}$, which each take time $p_i$ to complete. An operation scheduled at time $t$ will then *complete* at time $t+p_i$. Let's define the coefficient $w_t$ as the penalty applied to the cost function for an operation to finish at time $t$. As operations can be scheduled in parallel, we don't know how many might complete at any given time, but we do know that this number is at most equal to the number of available machines $m$. The sum of all penalty values for operations completed at time $t$ are thus in the range $[0, ~m \cdot w_t]$. We want to avoid situations were completing a single operation at time $t+1$ is less expensive than m operations at time $t$. Thus, the penalty values cannot follow a simple linear function of time.
 
-$$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
-$$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
+Precisely, we want our coefficients to satisfy:
+$$ w_{t+1} > m*w_{t} $$
 
-Let's say that $O_{2}$ and $O_{3}$ must be completed using the same machine. To avoid violating the no overlap constraint, you must ensure that $O_{2}$ and $O_{3}$ begin at different times: i.e. $x_{2,t}$ and $x_{2,t}$ must not equal 1 at the same time. You must also make sure that the operations don't overlap, just like you saw in the precedence constraint. This means that if $O_{2}$ starts at time $t$, $O_{3}$ must not start at times where $t \leq s < t + p_{2}$ (after $O_{2}$ has started but before it has been completed using the machine).
+For a suitable parameter $\epsilon > 0$, we can then solve the following recurrence relation:
+$$ w_{t+1} = m*w_{t}+\epsilon $$
 
-One example of a valid configuration is shown below:
+The simplest solution is given by the function:
+$$ w_{t} = \epsilon * \frac{m^t-1}{m-1} $$
 
-|$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
-|---|---|---|---|
-|0|1|0|0|
-|1|0|1|0|
-|2|0|0|0|
-|||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|0|
-|||**Valid configuration?**|✔|
+#### Limiting the number of terms
 
-As you can see, when you compare $x_{i,t}$ values pairwise at each time in the simulation, their product always equals 0.
+Great! We now have a formula for the coefficients of the makespan penalty terms that increase with time while taking into account that operations can be scheduled in parallel. Before implementing the new terms, let's try to limit the amount of new terms we're adding as much as possible. To illustrate, recall the job shop example we've been working on:
 
-Below, you see a configuration that violates the constraint:
+$$
+\begin{align}
+J_{0} &= \{O_{0}, O_{1}, O_{2}\} \\
+J_{1} &= \{O_{3}, O_{4}, O_{5}\} \\
+J_{2} &= \{O_{6}, O_{7}, O_{8}, O_{9}\} \\
+\end{align}
+$$
 
-|$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
-|---|---|---|---|
-|0|0|0|0|
-|1|1|1|1|
-|2|0|0|0|
-|||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|1|
-|||**Valid configuration?**|✘|
+First, consider that we only need the last operation in every job, as the precendece constraint guarantees that all other operations are completed before it. Given $n$ jobs, we thus consider only the operations $\{O_{k_0-1}, O_{k_1-1}, \dots, O_{k_{n-1}-1}\}$, where the indices $k_j$ denotes the number of operations up to and including job $j$. In our example, we only add terms for the following operations:
 
-In this instance, $O_{2}$ and $O_{3}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ we have: $x_{3,1} \cdot x_{4,1} = 1$.
+$$ \{O_2, O_5, O_9\} $$
 
-Another example of an invalid configuration is demonstrated below:
+$$ \text{with } k_0 = 3, k_1 = 6, k_2 = 10 $$
 
-|$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
-|---|---|---|---|
-|0|1|0|0|
-|1|0|0|0|
-|2|0|1|0|
-|||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|0|
-|||**Valid configuration?**|✘|
+Next, we can find a lower bound for the makespan and only penalize makespans that are greater than this minimum. A simple lower bound is given by the longest job, as each operation within a job must execute sequentially. We can express this lower bound as follows:
 
-In the above scenario, the two operations' running times have overlapped ($t \leq s < t + p_{2}$), and therefore this configuration is not valid.
+$$ M_{lb} = \max\limits_{0 \leq j \lt n} \{ \sum_{i = k_j}^{k_{j+1}-1} p_i \} \leq M $$
 
-You can now use this knowledge to mathematically formulate the constraint.
+For the processing times given in our example, we get:
 
-### Penalty formulation
+$$
+\begin{align}
+J_{0} &: ~~ p_0 + p_1 + p_2 = 2 + 1 + 3 = 6 \\
+J_{1} &: ~~ p_3 + p_4 + p_5 = 2 + 2 + 3 = 7 \\
+J_{2} &: ~~ p_6 + p_7 + p_8 + p_9 = 1 + 2 + 3 + 2 = 8 \\
+\\
+&\Rightarrow M_{lb} = 8
+\end{align}
+$$
 
-As you saw from the tables in the worked example, for the configuration to be valid, the sum of pairwise products of $x_{i,t}$ values for a machine $m$ at any time $t$ must equal 0. This gives you the penalty function:
+Finally, the makespan is upper-bounded by the sequential execution time of all jobs, 6 + 7 + 8 = 21 in this case. The simulation time T should never exceed this upper bound. Regardless of whether this is the case or not, we need to include penalties for all time steps up to T, or else larger time steps without a penalty will be favored over smaller ones!
 
-$$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \textit{m}$$
+To summarize:
 
-Let's break that down:
+- Makespan penalty terms are only added for the last operation in every job $\{O_{k_0-1}, O_{k_1-1}, \dots, O_{k_{n-1}-1}\}$
+- The makespan is lower-bounded by the longest job $\Rightarrow$ only include terms for simulation time steps $M_{lb} < t < T$
 
-- $\sum_{i,t,k,s}$
+#### Implementing the penalty terms
 
-  For operation $i$ starting at time $t$, and operation $k$ starting at time $s$, you need to sum over all possible start times $0 \leq t < T$ and $0 \leq s < T$. This indicates the need for another nested `for` loop, like you saw for the precedence constraint.
-  
-  For this summation, $i \neq k$ (you should always be scheduling two different operations).
-  
-  For two operations happening on a single machine, $t \neq s$ or the constraint has been violated. If $t = s$ for the operations, they have been scheduled to start on the same machine at the same time, which isn't possible.
+We are ready to add the makespan terms to the cost function. Recall that all terms contain a coefficient and one (or multiple) binary decision variables $x_{i,t}$. Contrary to the coefficients $w_t$ we defined above, where $t$ refers to the completion time of an operation, the variables $x_{i,t}$ determine if an operation $i$ is *scheduled* at time t. To account for this difference, we'll have to shift the variable index by the operation's processing time $p_i$. All makespan terms can then be expressed as follows:
 
+$$ k(x) = \sum_{i \in \{k_0-1, \dots, k_{n-1}-1\}} \left( \sum_{M_{lb} < t < T+p_i} w_t \cdot x_{i, ~t-p_i} \right) $$
 
-- $x_{i,t}\cdot x_{k,s}$
+Lastly, we make a small modification to the coefficient function so that the first value $w_{M_{lb}+1}$ always equals one. With $\epsilon = 1$ and $t_0 = M_{lb}$ we get:
 
-  This is the product you saw explicitly calculated in the rightmost columns of the tables from the worked example. If two different operations $i$ and $k$ start at the same time ($t = s$), this product will equal 1. Otherwise, it will equal 0.
-  
+$$ w_{t} = \frac{m^{t-t_0}-1}{m-1} $$
 
-- $\sum(\dots) = 0 \text{ for each machine } \textit{m}$
+#### Code
 
-  This sum is performed for each machine $m$ independently.
-  
-  If all $x_{i,t} \cdot x_{k,s}$ products in the summation equal 0, the total sum comes to 0. This means no operations have been scheduled to start at the same time on this machine and thus the constraint has not been violated. You can see an example of this in the bottom row of the first table from the worked example, above.
-  
-  If any of the $x_{i,t} \cdot x_{k,s}$ products in the summation equal 1, this means that $t = s$ for those operations and therefore two operations have been scheduled to start at the same time on the same machine. The sum now returns a value greater than 1, which gives us a penalty every time the constraint is violated. You can see an example of this in the bottom row of the second table from the worked example.
-  
-### Code
-
-Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the weight `w` is included in our definition of the `Term` objects:
+The code below implements the ideas discussed above by generating the necessary `Term` objects required by the solver.
 
 ```python
-# Reminder of the relevant parameters
-## Time to allow for all jobs to complete 
-T = 20 
+def calc_penalty(t:int, m:int, t0:int): 
+    assert m>1                           # Ensure we don't divide by 0 
+    return (m**(t-t0) - 1)/float(m - 1)
 
-## Processing time for each operation
-p = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
-
-## Assignment of operations to jobs (operation ID: job ID)
-ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
-
-## Assignment of operations to machines
-### Three jobs, two machines
-machines_ops_map = {
-    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the multi-tool)
-    1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
-}
-
-def no_overlap_constraint(T:int, p:dict, ops_jobs_map:dict, machines_ops_map:dict, w:float):
+def makespan_objective(T:int, p:dict, jobs_ops_map:dict, m:int, w:float):
     """
-    Construct penalty terms for the no overlap constraint.
+    Construct makespan minimization terms.
 
     Keyword arguments:
     
     T (int): Time allowed to complete all operations
     p (dict): Operation processing times
+    jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
+    m (int): Number of machines
     w (float): Relative weight of this constraint (the coefficient)
-    ops_jobs_map (dict): Map of operations to jobs {op: job}
-    machines_ops_map(dict): Mapping of operations to machines, e.g.:
-        machines_ops_map = {
-            0: [0,1],          # Operations 0 & 1 assigned to machine 0
-            1: [2,3]           # Operations 2 & 3 assigned to machine 1
-        }
     """
     
     terms = []
     
-    # For each machine
-    for ops in machines_ops_map.values():
-        # Loop over each operation i requiring this machine
-        for i in ops:
-            # Loop over each operation k requiring this machine 
-            for k in ops:
-                # Loop over simulation time
-                for t in range(T):
-                    # When i != k (when scheduling two different operations)
-                    if i != k:
-                        # t = s meaning two operations are scheduled to start at the same time on the same machine
-                        terms.append(Term(w = w*1, indices = [i*T+t, k*T+t]))
-                        
-                        # Add penalty when operation runtimes overlap
-                        for s in range(t, min(t + p[i], T)):
-                            terms.append(Term(w = w*1, indices = [i*T+t, k*T+s]))  
-
-                        # If operations are in the same job, penalize for the extra time 0 -> t (operations scheduled out of order)
-                        if ops_jobs_map[i] == ops_jobs_map[k]:
-                            for s in range(0, t):
-                                if i < k:
-                                    terms.append(Term(w = w*1, indices = [i*T+t, k*T+s]))  
-                                if i > k:
-                                    terms.append(Term(w = w*1, indices = [i*T+s, k*T+t]))  
+    lower_bound = max([sum([p[i] for i in job]) for job in jobs_ops_map.values()])
+    upper_bound = T
+    
+    # Loop through the final operation of each job
+    for job in jobs_ops_map.values():
+        i = job[-1]
+        # Loop through each time step the operation could be completion at
+        for t in range(lower_bound+1, T+p[i]):
+            terms.append(Term(w = w*(calc_penalty(t,m,lower_bound)), indices = [i*T+(t-p[i])]))
 
     return terms
 ```

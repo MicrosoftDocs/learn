@@ -1,4 +1,4 @@
-The job shop scheduling problem is defined as follows: you have a set of jobs $J_1, J_2, J_3,\dots, J_n$ which have various processing times and need to be processed using a set of machines $m_1, m_2, \dots, m_n$. The goal is to complete all jobs in the shortest time possible (this is called minimizing the **makespan**).
+The job shop scheduling problem is defined as follows: you have a set of jobs $J_0, J_1, J_2, \dots, J_{n-1}$ which have various processing times and need to be processed using a set of machines $m_0, m_1, m_2, \dots, m_{n-1}$. The goal is to complete all jobs in the shortest time possible (this is called minimizing the **makespan**).
 
 Each job consists of a set of operations, and the operations must be performed in the correct order to complete that job.
 
@@ -61,7 +61,8 @@ from azure.quantum import Workspace
 workspace = Workspace (
     subscription_id = "",  # Add your subscription_id
     resource_group = "",   # Add your resource_group
-    name = ""              # Add your workspace name
+    name = "",             # Add your workspace name
+    location = ""          # Add your workspace location (for example, "westus")
     )
 
 workspace.login()

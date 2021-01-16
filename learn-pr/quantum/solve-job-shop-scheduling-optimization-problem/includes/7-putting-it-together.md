@@ -1,4 +1,4 @@
-Now that you have penalty terms to represent all of the constraints, you can finally assemble the cost function, $H(x)$!
+Now that you have penalty terms to represent all of the constraints and the makespan minimization terms, you can finally assemble the cost function, $H(x)$!
 
 As a reminder, here are the penalty terms:
 
@@ -20,16 +20,20 @@ $$g(x) = \sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2$$
 
 $$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \textit{m}$$
 
+- **Makespan minimization**:
+
+$$k(x) = \sum_{i \in \{k_0-1, \dots, k_{n-1}-1\}} \left( \sum_{M_{lb} < t < T+p_i} w_t \cdot x_{i, ~t-p_i} \right)$$
+
 As you saw earlier, combining the penalty functions is straightforward - all you need to do is assign each term a weight and add all the weighted terms together, like so:
 
-$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) $$
+$$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \delta \cdot k(x) $$
 
-$$\text{where }\alpha, \beta \text{ and } \gamma \text{ represent the different weights you assign to the penalties.}$$
+$$\text{where }\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weights we assign to the penalties.}$$
 
 The weights represent how important each penalty function is, relative to all the others.
 
 > [!NOTE]
-> Along with modifying your cost function (how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success.
+> Along with modifying your cost function (how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success. [Unit 10](xref:learn.quantum.solve-job-shop-scheduling-optimization-problem.10-tune-parameters) dives a little deeper into parameter tuning.
 
 ### Code
 
@@ -37,8 +41,8 @@ As a reminder, below you again see the code representation of the problem parame
 
 ```python
 # Set problem parameters
-## Time to allow for all jobs to complete 
-T = 20 
+## Simulation time (jobs can only be scheduled below this limit)
+T = 20
 
 ## Processing time for each operation
 p = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
@@ -52,7 +56,7 @@ jobs_ops_map = {
 }
 
 ## Assignment of operations to machines
-### Three jobs, two machines
+### Eight jobs, two machines
 machines_ops_map = {
     0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the multi-tool)
     1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
@@ -105,9 +109,9 @@ The following code snippet shows how you assign weight values and assemble the p
 ```python
 # Generate terms to submit to solver using functions defined previously
 ## Assign penalty term weights:
-alpha = 0.6  # Precedence constraint
-beta = 0.2   # Operation once constraint
-gamma = 0.4  # No overlap constraint
+alpha = 1  # Precedence constraint
+beta = 1   # Operation once constraint
+gamma = 1  # No overlap constraint
 delta = 0.001  # Makespan minimization (objective function)
 
 ## Build terms
@@ -117,7 +121,7 @@ w2 = operation_once_constraint(ops_jobs_map, T, beta)
 w3 = no_overlap_constraint(T, p, ops_jobs_map, machines_ops_map, gamma)
 
 ### Objective function
-w4 = makespan_objective(jobs_ops_map, T, p, len(machines_ops_map), delta)
+w4 = makespan_objective(T, p, jobs_ops_map, len(machines_ops_map), delta)
 
 ### Combine terms:
 terms = []
