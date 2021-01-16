@@ -19,7 +19,6 @@ Azure provides scaling options for web apps and for your SQL databases. Scaling 
 - Scale out. Increase the number of VM instances that run your app. You can scale out to as many as 30 instances, depending on your pricing tier.
 
 > [!NOTE]
-
 > The App Service will not automatically scale related resources such as an Azure SQL Database. Those resources are not managed by the App Service Plan. However, it’s easy to configure scaling on these other resources as well.
 
 Azure SQL Database and Azure SQL Managed Instance enable you to dynamically add more resources to your database with minimal downtime. By adding more resources, you can quickly react when your database reaches the current resource limits and needs more power to manage the incoming workload. Azure SQL Database also enables you to scale-down the resources when they’re not needed to lower the cost.  Single databases in Azure SQL Database support manual dynamic scalability, but not autoscale. For a more automatic experience, consider using elastic pools, which allow databases to share resources in a pool based on individual database needs.

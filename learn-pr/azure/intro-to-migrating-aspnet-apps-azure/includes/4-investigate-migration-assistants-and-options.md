@@ -162,6 +162,6 @@ You might also access applications running on-premises using Active Directory fo
 
 Similar to taking an inventory of your on-premises environment for apps and hardware, you should also map out your existing security requirements and implementation, so that you can perform a proper security assessment for the migration scenario. You want to ensure that a cloud-hosted environment will still meet your organization's security needs.
 
-## Explore DevOps pipelines for a migration scenario
+## Explore Azure Pipelines for a migration scenario
 
 Many organizations are adopting DevOps practices for more agile development and faster deployments. One of the key areas that makes this possible in a cloud environment is the native integration between the tools that developers use. Microsoft Visual Studio, GitHub, and App Service integration enable your developers to build and ship changes faster. For ASP.NET applications, remote and live-site debugging provide greater benefit to developers for diagnosing issues in your production environment.

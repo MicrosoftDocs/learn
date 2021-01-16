@@ -18,7 +18,7 @@ Microsoft currently offers three main hosting service options. You can choose fr
 
 :::image type="content" source="../media/2-hosting-graphic.png" alt-text="Hosting responsibilities for an on-premises model as compared to IaaS, PaaS, and SaaS.":::
 
-### On-Premises
+### On-premises
 
 As you might expect, the on-premises model places all the responsibility of management on the organization. You are responsible for acquiring and installing all the hardware and software. You will set up and control the networking and security for the servers and hosted applications. You are also responsible for updates, patches, and licensing.
 
