@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In Threat Intelligence, indicators are considered as?"
+  - content: "In Threat Intelligence, indicators are considered as which of the following?"
     choices:
     - content: "Strategic"
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "Tactical"
       isCorrect: true
       explanation: "Correct.  Indicators are considered Tactical Threat Intelligence."
-  - content: "An example of a Threat indicator is"
+  - content: "Which of these items is an example of a Threat indicator?"
     choices:
     - content: "Threat Actor Name"
       isCorrect: false
@@ -43,7 +43,7 @@ quiz:
     - content: "Indicator"
       isCorrect: false
       explanation: "Incorrect. ThreatIntelligenceIndicator stores the indicators."
-    - content: "TIIndicator"
+    - content: "TI Indicator"
       isCorrect: false
       explanation: "Incorrect. ThreatIntelligenceIndicator stores the indicators."
     - content: "ThreatIntelligenceIndicator"
