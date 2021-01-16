@@ -20,37 +20,37 @@ quiz:
 
   - content: 'What keys are required to connect an app to IoT Central?'
     choices: 
-    - content: 'Device ID and Primary Key'
+    - content: 'Device ID and primary key'
       isCorrect: false
-      explanation: Both of these values are needed, but more information is required to complete a connection.
-    - content: 'ID Scope, Device ID, and Primary Key'
+      explanation: Incorrect. Both of these values are needed, but a connection requires more information.
+    - content: 'ID scope, device ID, and primary key'
       isCorrect: true
-      explanation: These three strings identify the app, the device, and permission to communicate with IoT Central.
-    - content:  'ID Scope, Device ID, Primary Key, and Secondary Key'
+      explanation: Correct. These three strings identify the app, the device, and permission to communicate with IoT Central.
+    - content:  'ID scope, device ID, primary key, and secondary key'
       isCorrect: false
-      explanation: Secondary Key isn't needed.
+      explanation: Incorrect. The secondary key isn't needed.
       
   - content: 'In our scenario, what states can the cooling fan be in?'
     choices: 
-    - content: 'On, Off, and Failed'
+    - content: 'On, off, and failed'
       isCorrect: true
-      explanation: A failing cooling fan triggers a series of events, melting contents, truck recalls, that is helpful to simulate.
-    - content: 'On, Off, and Melting.'
+      explanation: Correct. A failing cooling fan triggers a series of events that are useful to simulate. These events include melting contents and truck recalls.
+    - content: 'On, off, and melting'
       isCorrect: false
-      explanation: A melting cooling fan would be bad, but isn't something that is simulated.
-    - content: 'On and Off.'
+      explanation: Incorrect. A melting cooling fan would be bad, but it isn't something that's simulated.
+    - content: 'On and off'
       isCorrect: false
-      explanation: Unfortunately, mechanical systems aren't this perfect.
+      explanation: Incorrect. Unfortunately, mechanical systems aren't perfect enough to have just these two states.
 
-  - content: 'In our scenario, the simulated time interval is 60 seconds, the actual time interval is 5 seconds. What does this mean?'
+  - content: 'In our scenario, the simulated time interval is 60 seconds. The actual time interval is 5 seconds. What does this mean?'
     choices:    
-    - content: 'The simulation runs in real time, with 12 sets of telemetry data communicated to IoT Central every minute.'
+    - content: 'The simulation runs in real time. Twelve sets of telemetry data are communicated to IoT Central every minute.'
       isCorrect: false
-      explanation: Telemetry data is sent 12 times per minute, but the simulation doesn't run in real time.
-    - content: 'The simulation runs at 60 times real time, with the telemetry reported every five seconds.'
+      explanation: Incorrect. Telemetry data is sent 12 times per minute, but the simulation doesn't run in real time.
+    - content: 'The simulation runs 60 times faster than real time. Telemetry is reported every five seconds.'
       isCorrect: false
-      explanation: The simulation doesn't run at 60 times real time.
-    - content: 'The simulation is run at 60/5 = 12 times real time.'
+      explanation: Incorrect. The simulation doesn't run 60 times faster than real time.
+    - content: 'The simulation runs 60/5 = 12 times faster than real time.'
       isCorrect: true
-      explanation: Many simulations are set to run faster than real time.
+      explanation: Correct. Many simulations are set to run faster than real time.
       
