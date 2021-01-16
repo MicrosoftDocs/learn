@@ -5,19 +5,26 @@ You are the administrator for Contoso, Ltd. You’ve been asked to evaluate the 
 1. Sign into the [Azure Active Directory portal](https://aad.portal.azure.com).
 2. Select **Azure Active Directory**, and then select the **Overview** blade if it's not already active.  
 3. In the **Tenant information** tile for the Default Directory, copy or record the **Primary domain** value (for example, yourprimarydomain.onmicrosoft.com).
-4. Download [datasubject01.csv](https://github.com/RichardLuckett/learn-pr/blob/NEW-azure-data-subject-requests/learn-pr/azure/azure-data-subject-requests/media/DataSubject01.csv).<!--Richard: this is not a link we can use-->.
-5. Using Excel or Notepad, open the **datasubject01.csv** file, and then edit the **User name [userPrincipalName] Required** field for Avery. Replace **@contoso.com** with the primary domain value that you copied earlier in step 2 (**@_yourprimarydomain_.onmicrosoft.com**).
+4. Select **Users**, click **New User**, verify that **Create user** radio button is selected.
+5. Enter the following information and then click **Create**:
+- User name: Avery@yourprimarydomain.onmicrosoft.com
+- Name: Avery Howard
+- First name: Avery
+- Last name: Howard
+- Password: Auto-generate passsword
+- Block sign in: No
+- Usage location: United Kingdom
+- Job title: B2C
+- Department: Finance
+- Company name: Contoso
+6. Click on Avery Howard in the user list to view the user's properties.
+7. Click **Edit**, use the following information to modify Avery's personal information and then click **Save**.
+- Street Address: 123 Park Square
+- State or province: Bristol
+- Country or region: United Kingdom
+- ZIP or postal code: BS12 3CD
+- Mobile phone: +44 07123 456789
 
-> [!IMPORTANT]
-> The next step will fail if you don't use a valid domain name from your Azure AD. Optionally, you can search and replace @contoso.com with @yourprimarydomain.onmicrosoft.com in the file.
-
-6. Save and close the file.
-1. Select **All Services**, and then select **Users**.
-1. In the **Bulk operations** list, select **Bulk create**.
-1. In the **Bulk create user** dialog box, select **Select a file**.  
-1. In the **Open** dialog box, navigate to the path where datasubject01.csv was downloaded<!--Richard: this might need an update-->, select **datasubject01.csv**, and then select **Open**.
-1. Select **Submit**, and then verify that the creation was successful.
-1. Close the confirmation.
 
 ## Review a DSR and determine appropriate process
 
