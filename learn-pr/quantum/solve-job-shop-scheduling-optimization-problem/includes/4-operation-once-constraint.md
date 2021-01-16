@@ -23,50 +23,50 @@ According to this constraint, $x_{i,t}$ for a specific operation should equal 1 
 
 So in this case, you need to assign a penalty if the sum of $x_{i,t}$ for each operation across the full simulation time doesn’t equal exactly 1.
 
-Let’s take $O_{3}$ as an example again:
+Let’s take $O_{2}$ as an example again:
 
-|$t$|$x_{3,t}$|
+|$t$|$x_{2,t}$|
 |---|---|
 |0|0|
 |1|1|
 |2|0|
-|$\sum_t {x_{3,t}} =$|1|
+|$\sum_t {x_{2,t}} =$|1|
 |**Valid configuration?**|✔|
 
-In the right-hand column, you see that $O_{3}$ starts at time 1 and no other time ($x_{3,t} = 1$ at time $t = 1$ and is $0$ otherwise). The sum of $x_{i,t}$ values over all $t$ for this example is therefore 1, which is what is expected! This is therefore a valid solution.
+In the right-hand column, you see that $O_{2}$ starts at time 1 and no other time ($x_{2,t} = 1$ at time $t = 1$ and is $0$ otherwise). The sum of $x_{i,t}$ values over all $t$ for this example is therefore 1, which is what is expected! This is therefore a valid solution.
 
-In the example below, you see an instance where $O_{3}$ is scheduled more than once ($x_{3,t} = 1$ more than once), in violation of the constraint:
+In the example below, you see an instance where $O_{2}$ is scheduled more than once ($x_{2,t} = 1$ more than once), in violation of the constraint:
 
-|$t$|$x_{3,t}$|
+|$t$|$x_{2,t}$|
 |---|---|
 |0|0|
 |1|1|
 |2|1|
-|$\sum_t {x_{3,t}} =$|2|
+|$\sum_t {x_{2,t}} =$|2|
 |**Valid configuration?**|✘|
 
-You can see from the above that $O_{3}$ has been scheduled to start at both time 1 and time 2, so the sum of $x_{i,t}$ values over all $t$ is now greater than 1. This violates the constraint and thus you must apply a penalty.
+You can see from the above that $O_{2}$ has been scheduled to start at both time 1 and time 2, so the sum of $x_{i,t}$ values over all $t$ is now greater than 1. This violates the constraint and thus you must apply a penalty.
 
-In the last example, you see an instance where $O_{3}$ has not been scheduled at all:
+In the last example, you see an instance where $O_{2}$ has not been scheduled at all:
 
-|$t$|$x_{3,t}$|
+|$t$|$x_{2,t}$|
 |---|---|
 |0|0|
 |1|0|
 |2|0|
-|$\sum_t {x_{3,t}} =$|0|
+|$\sum_t {x_{2,t}} =$|0|
 |**Valid configuration?**|✘|
 
-In this example, none of the $x_{3,t}$ values equal 1 for any time in the simulation, meaning the operation is never scheduled. This means that the sum of $x_{3,t}$ values over all $t$ is 0 - the constraint is once again violated and you must allocate a penalty.
+In this example, none of the $x_{2,t}$ values equal 1 for any time in the simulation, meaning the operation is never scheduled. This means that the sum of $x_{2,t}$ values over all $t$ is 0 - the constraint is once again violated and you must allocate a penalty.
 
 In summary:
 
-|$t$|$x_{3,t}$|$x_{3,t}$|$x_{3,t}$|
+|$t$|$x_{2,t}$|$x_{2,t}$|$x_{2,t}$|
 |---|---|---|---|
 |0|0|0|0|
 |1|1|1|0|
 |2|0|1|0|
-|$\sum_t {x_{3,t}} =$|1|2|0|
+|$\sum_t {x_{2,t}} =$|1|2|0|
 |**Valid configuration?**|✔|✘|✘|
 
 Now that you understand when to assign penalties, let's formulate the constraint mathematically.
@@ -101,28 +101,40 @@ Let's break that down:
   
 To translate this constraint to code form, you are going to need to expand the quadratic equation in the sum.
 
-To do this, you'll once again take $O_{3}$ as an example. You will set $T = 2$ so the $t$ values will be 0 and 1. The first step will be to substitute in our values:
+To do this, you'll once again take $O_{2}$ as an example. You will set $T = 2$ so the $t$ values will be 0 and 1. The first step will be to substitute in our values:
 
-$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{3,0} + x_{3,1} - 1\right)^2$$
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{2,0} + x_{2,1} - 1\right)^2$$
 
-For simplicity, the $x_{3,t}$ variables will be renamed as follows:
+For simplicity, the $x_{2,t}$ variables will be renamed as follows:
 
-$$x_{3,0} = x$$
-$$x_{3,1} = y$$
+$$x_{2,0} = x$$
+$$x_{2,1} = y$$
 
 Substituting these values in, you now have the following:
 
-$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{3,0} + x_{3,1} - 1\right)^2$$
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{2,0} + x_{2,1} - 1\right)^2$$
 $$=\left(x + y - 1\right)^2$$
 
 Next, you need to expand out the bracket and multiply each term in the first bracket with all terms in the other bracket:
 
-$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{3,0} + x_{3,1} - 1\right)^2$$
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{2,0} + x_{2,1} - 1\right)^2$$
 $$= \left(x + y - 1\right)^2$$
 $$= (x + y - 1)\cdot(x + y - 1)$$
 $$= x^2 + y^2 + 2xy - 2x - 2y + 1$$
 
-If $T$ was larger, you would have more terms. The form of the equation would be the same however: still quadratic.
+The final step simplifies things a little. Because this is a binary optimization problem, $x$ and $y$ can only take the values of $0$ or $1$. Because of this, the following holds true:
+$$x^2 = x$$
+$$y^2 = y,$$
+
+as
+$$0^2 = 0$$
+and
+$$1^2 = 1$$
+
+This means that the quadratic terms in the penalty function can combine with the two linear terms, giving the following formulation of the penalty function:
+$$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = x + y + 2xy - 2x - 2y + 1 = 2xy - x - y + 1$$
+
+If $T$ was larger, you would have more terms (for example, $z$ and so on).
 
 ### Code
 
@@ -132,7 +144,7 @@ You can now use this expanded version of the penalty function to build the penal
 def operation_once_constraint(n: int, o: int, T:int, w:float):
     """
     Construct penalty terms for the operation-once constraint.
-    Penalty function is of form: x^2 + y^2 + 2xy - 2x - 2y + 1
+    Penalty function is of form: 2xy - x - y + 1
 
     Keyword arguments:
 
@@ -144,15 +156,12 @@ def operation_once_constraint(n: int, o: int, T:int, w:float):
 
     terms = []
 
-    # x^2 + y^2 + 2xy - 2x - 2y parts of the constraint function
+    # 2xy - x - y parts of the constraint function
     # Loop through all operations
     for i in range(n*o):
         for t in range(T):
-            # x^2 + y^2 terms
-            terms.append(Term(w=w*1, indices=[i*T+t, i*T+t]))
-
-            # - 2x - 2y terms
-            terms.append(Term(w=w*-2, indices=[i*T+t]))
+            # - x - y terms
+            terms.append(Term(w=w*-1, indices=[i*T+t]))
 
             # + 2xy term
             # Loop through all other start times for the same job
