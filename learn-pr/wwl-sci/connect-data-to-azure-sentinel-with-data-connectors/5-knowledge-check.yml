@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/16/2021
+  ms.date: 01/17/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You can see the number of connected Windows hosts"
+  - content: "Where can you see the number of connected Windows hosts?"
     choices:
     - content: "On the CEF Connector page"
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "CEF"
       isCorrect: false
       explanation: "Incorrect.  The CEF connector provides parsed data."
-  - content: "Vendor-provided connectors primary use the"
+  - content: "The vendor-provided connectors primarily use which of the following?"
     choices:
     - content: "Azure Activity Connector"
       isCorrect: false

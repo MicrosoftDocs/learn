@@ -1,6 +1,6 @@
 ### Microsoft 365 Defender
 
-The Microsoft 365 Defender and related Data Connectors provide Alerts and Data that has already been normalized and used in the Microsoft 365 Defender Portal.
+The Microsoft 365 Defender and related data connectors provide alerts and data that has already been normalized and used in the Microsoft 365 Defender portal.
 
 The Microsoft 365 Defender products include:
 
@@ -77,9 +77,9 @@ To connect the CEF or Syslog Collector to Azure Sentinel, the agent must deploy 
 
 The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Azure Sentinel agent.
 
-![sending Syslog data to a dedicated Azure VM running](../media/lp5-sc-m01-01.png)
+![sending Syslog data to a dedicated Azure VM running](../media/lp5-01.png)
 
 Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Azure Sentinel agent.
 
-![on-premises systems sending Syslog data to a dedicated on-premises system](../media/lp5-sc-m01-02.png)
+![on-premises systems sending Syslog data to a dedicated on-premises system](../media/lp5-02.png)
 
