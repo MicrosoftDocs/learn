@@ -16,7 +16,7 @@ From Security Center's security alerts page:
 
 - Locate the specific alert you don't want to see anymore, and from the ellipsis menu (...) for the alert, select Create suppression rule:
 
-- OR
+OR
 
 - select the suppression rules link at the top of the page, and from the suppression rules page select Create new suppression rule:
 
