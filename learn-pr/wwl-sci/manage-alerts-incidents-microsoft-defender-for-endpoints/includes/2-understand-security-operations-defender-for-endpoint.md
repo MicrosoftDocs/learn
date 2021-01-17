@@ -6,10 +6,6 @@ Inspired by the "assume breach" mindset, Defender for Endpoint continuously coll
 
 The response capabilities give you the power to promptly remediate threats by acting on the affected entities.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about incident investigation|
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUV?rel=0]
 
 ## Defender for Endpoint Terminology

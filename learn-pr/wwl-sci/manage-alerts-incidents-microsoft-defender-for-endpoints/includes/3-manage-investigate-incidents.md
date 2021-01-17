@@ -13,11 +13,11 @@ You can assign incidents to yourself, change the status and classification, rena
 
 If an incident has not been assigned yet, you can select Assign to me to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.
 
-### Set status and classification
+## Set status and classification
 
 ### **Incident status**
 
-You can categorize incidents as Active or Resolved by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to incidents. For example, your SoC analyst can review the urgent Active incidents for the day, and decide to assign them to herself for investigation.  Alternatively, your SoC analyst might set the incident as Resolved if the incident has been remediated.
+You can categorize incidents as Active or Resolved by changing their status as your investigation progresses. This helps you organize and manage how your team can respond to incidents. For example, your security operations analyst can review the urgent Active incidents for the day, and decide to assign them to herself for investigation.  Alternatively, your security operations analyst might set the incident as Resolved if the incident has been remediated.
 
 ### **Classification**
 
@@ -61,7 +61,7 @@ You can investigate the alerts and see how they were linked together in an incid
 
 ### Devices
 
-You can also investigate the devices that are part of, or related to, a given incident. For more information, see Investigate devices.
+You can also investigate the devices that are part of, or related to, a given incident.
 
 ### Investigations
 

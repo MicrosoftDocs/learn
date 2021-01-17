@@ -2,13 +2,9 @@ Microsoft Threat Experts is a managed threat hunting service that provides Secur
 
 This new capability provides expert-driven insights and data through targeted attack notification and access to experts on demand.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about Microsoft threat experts.|
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qZ0B?rel=0]
 
-Microsoft Defenders for Endpoint customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand are an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
+Microsoft Defender for Endpoint customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand are an add-on service. Targeted Attack Notifications are always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.
 
 ## Targeted attack notification
 

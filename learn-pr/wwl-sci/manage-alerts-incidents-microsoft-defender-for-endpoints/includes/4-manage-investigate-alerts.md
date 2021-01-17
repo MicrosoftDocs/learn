@@ -118,10 +118,6 @@ Select an alert from the alerts queue to go to alert page. This view contains th
 
 From the alert page, begin your investigation by selecting the affected assets or any of the entities under the alert story tree view. The details pane automatically populates with further information about what you selected.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about ....|
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yiO5?rel=0]
 
 ### Investigate using the alert story
