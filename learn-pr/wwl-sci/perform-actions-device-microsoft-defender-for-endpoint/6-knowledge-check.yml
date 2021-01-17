@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/14/2021
+  ms.date: 01/17/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,18 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You need to send a file to the Live Response session device.  Which command do you use?"
-    choices:
-    - content: "putfile"
-      isCorrect: true
-      explanation: "Correct. putfile will transfere a file from the library to the device."
-    - content: "transfer"
-      isCorrect: false
-      explanation: "Incorrect. transfer is not a Live Response command."
-    - content: "getfile"
-      isCorrect: false
-      explanation: "Incorrect. getfile will transfer a file from the device."
-  - content: "Which type of information is not collected an an Investigation package?"
+  - content: "Which type of information is not collected in an Investigation package?"
     choices:
     - content: "Command History"
       isCorrect: true
@@ -38,7 +27,7 @@ quiz:
     - content: "Network Connections"
       isCorrect: false
       explanation: "Incorrect. Network connections are collected."
-  - content: "Which of the following is a a Device action?"
+  - content: "Which of the actions below is a Device action?"
     choices:
     - content: "Reboot"
       isCorrect: false
