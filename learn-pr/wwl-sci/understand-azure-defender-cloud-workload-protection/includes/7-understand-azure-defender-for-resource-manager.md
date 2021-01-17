@@ -20,15 +20,15 @@ Security alerts from Azure Defender for Resource Manager are based on threats de
 
 To investigate security alerts from Azure Defender for Resource Manager:
 
-- Open Azure Activity log.
+1. Open Azure Activity log.
 
-- Filter the events to:
+1. Filter the events to:
 
-  - The subscription mentioned in the alert
+    - The subscription mentioned in the alert
 
-  - The timeframe of the detected activity
+    - The timeframe of the detected activity
 
-  - The related user account (if relevant)
+    - The related user account (if relevant)
 
-- Look for suspicious activities.
+1. Look for suspicious activities.
 

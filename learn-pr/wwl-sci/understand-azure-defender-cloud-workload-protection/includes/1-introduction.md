@@ -1,16 +1,7 @@
-It is important for you to understand the protections and detections provided by Azure Defender for each cloud workload.
+Azure Defender brings advanced intelligent protection for your Azure and hybrid resources and workloads.  Enabling Azure Defender provides a range of extra security features.
 
-In this module, you will learn:
+You are a Security Operations Analyst working at a company that is in the process of implementing cloud workload protection with Azure Defender.
 
-- Explain which workloads are protected by Azure Defender
+You are the security operations team member working with the application and infrastructure teams designing the resource architecture for the new web application that uses containers and Azure SQL. You are responsible for ensuring the workloads are protected with Azure Defender and provide options for non-protected workloads.
 
-- Describe the benefits of the protections
-
-- Explain how the protections function
-
-## Prerequisites
-
-- Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
-
-- Familiarity with Azure virtual machines and virtual networking.
 
