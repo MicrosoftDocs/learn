@@ -1,14 +1,7 @@
-As a Security Operations Analyst you are required to perform containment and analysis of an endpoint. Microsoft Defender for Endpoint provides the remote capability to contain devices and collect forensics data.
+Microsoft Defender for Endpoint provides the remote capability to contain devices and collect forensics data.  The Live Response feature allows for a restricted remote access shell on the device.
 
-In this module, you will:
+You are a Security Operations Analyst working at a company that has implemented Microsoft Defender for Endpoint, and your primary job is to remediate incidents.  You are assigned an incident with alerts related to a suspicious PowerShell command line. You start by reviewing the incident and understand all the related alerts,  devices, and evidence.  
 
-- Perform Actions on a Device
+You open the alert page to review the Alert Story and decide to perform further analysis on the device.  You open the Device page and decide that you need remote access to the device to run a custom PowerShell script to collect more forensics information.  
 
-- Conduct forensics data Collection
-
-- Manage remote access to the Device
-
-## Prerequisites
-
-Intermediate understanding of Windows 10.
-
+You initiate a Live Response session from the Device page and execute a PowerShell script from your script library.  You download the file for use with forensics tools.  After reviewing the forensics data, you perform the device isolation action from the Device page.

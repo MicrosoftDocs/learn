@@ -1,4 +1,4 @@
-When investigating a device, you can perform actions, collected data, or remotely access the machine.  Defender for Endpoint provides the device control required.
+When investigating a device, you can perform actions, collect data, or remotely access the machine.  Defender for Endpoint provides the device control required.
 
 You can perform the following containment actions:
 
