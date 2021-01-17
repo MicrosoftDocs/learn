@@ -209,6 +209,3 @@ To manage the ASR rules with PowerShell:
 ### List of attack surface reduction events
 
 All attack surface reduction events are located under Applications and Services Logs > Microsoft > Windows in the Windows Event viewer.
-
-
-

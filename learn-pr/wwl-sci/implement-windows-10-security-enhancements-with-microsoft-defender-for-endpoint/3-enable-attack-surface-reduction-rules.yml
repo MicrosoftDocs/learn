@@ -4,12 +4,12 @@ title: Enable attack surface reduction rules
 metadata:
   title: Enable attack surface reduction rules
   description: "Enable attack surface reduction rules"
-  ms.date: 01/15/2021
+  ms.date: 01/17/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 17
 content: |
   [!include[](includes/3-enable-attack-surface-reduction-rules.md)]

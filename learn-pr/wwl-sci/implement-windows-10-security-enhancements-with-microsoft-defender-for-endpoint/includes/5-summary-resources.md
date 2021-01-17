@@ -2,11 +2,11 @@ You learned that Microsoft Defender for Endpoint gives you various tools to elim
 
 You should now be able to:
 
-- Explain Attack Surface Reduction (ASR)
+- Explain Attack Surface Reduction
 
-- Enable ASR rules on Windows 10 devices
+- Enable Attack Surface Reduction rules on Windows 10 devices
 
-- Configure ASR rules
+- Configure Attack Surface Reduction rules
 
 ## Learn more
 
