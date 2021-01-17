@@ -1,16 +1,5 @@
-Once you have your Azure Defender plans configured, you need to onboard your resources to Azure Security Center.
+Resource protection in Azure Defender can be automatically configured with auto-provisioning or manually deployed.
 
-In this module, you will:
+You are a Security Operations Analyst working at a company that is in the process of implementing cloud workload protection with Azure Defender. You need to ensure Azure Defender automatically covers the Azure resources.
 
-- Explore Assets
-
-- Configure auto provisioning
-
-- Describe manual provisioning
-
-## Prerequisites
-
-- Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
-
-- Familiarity with Azure virtual machines and virtual networking.
-
+You have a few Azure virtual machines that are not part of the auto-provisioning; you need to manually configure protection for the Azure resources.

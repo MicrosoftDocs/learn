@@ -8,8 +8,7 @@ Data is collected using:
 
 - Security extensions, such as the Azure Policy Add-on for Kubernetes, which can also provide data to Security Center regarding specialized resource types.
 
-![Auto provisioning
-](../media/auto-provisioning-options.png)
+![Auto provisioning](../media/auto-provisioning-options.png)
 
 ## Why use auto provisioning?
 
@@ -25,73 +24,72 @@ When automatic provisioning is on for the Log Analytics agent, Security Center d
 
 To enable auto provisioning of the Log Analytics agent:
 
-- From Security Center's menu, select Pricing & settings.
+1. From Security Center's menu, select **Pricing & settings**.
 
-- Select the relevant subscription.
+1. Select the relevant subscription.
 
-- In the Auto provisioning page, set the agent's status to On.
+1. In the Auto provisioning page, set the agent's status to **On**.
 
-- From the configuration options pane, define the workspace to use.
+1. From the configuration options pane, define the workspace to use.
 
 ![log analytics agent deploy options](../media/log-analytics-agent-deploy-options.png)
 
-  - Connect Azure VMs to the default workspace(s) created by Security Center - Security Center creates a new resource group and default workspace in the same geolocation and connects the agent to that workspace. If a subscription contains VMs from multiple geolocations, Security Center creates multiple workspaces to ensure compliance with data privacy requirements.
+Connect Azure VMs to the default workspace(s) created by Security Center - Security Center creates a new resource group and default workspace in the same geolocation and connects the agent to that workspace. If a subscription contains VMs from multiple geolocations, Security Center creates multiple workspaces to ensure compliance with data privacy requirements.
 
-  - The naming convention for the workspace and resource group is:
+The naming convention for the workspace and resource group is:
 
-    - Workspace: DefaultWorkspace-[subscription-ID]-[geo]
+- Workspace: DefaultWorkspace-[subscription-ID]-[geo]
+- Resource Group: DefaultResourceGroup-[geo]
 
-    - Resource Group: DefaultResourceGroup-[geo]
+Security Center automatically enables a Security Center solution on the workspace per the pricing tier set for the subscription.
 
-  - Security Center automatically enables a Security Center solution on the workspace per the pricing tier set for the subscription.
+Connect Azure VMs to a different workspace - From the dropdown list, select the workspace to store collected data. The dropdown list includes all workspaces across all of your subscriptions. You can use this option to collect data from virtual machines running in different subscriptions and store it all in your selected workspace.
 
-  - Connect Azure VMs to a different workspace - From the dropdown list, select the workspace to store collected data. The dropdown list includes all workspaces across all of your subscriptions. You can use this option to collect data from virtual machines running in different subscriptions and store it all in your selected workspace.
+If you already have an existing Log Analytics workspace, you might want to use the same workspace (requires read and write permissions on the workspace). This option is useful if you're using a centralized workspace in your organization and want to use it for security data collection. Learn more in Manage access to log data and workspaces in Azure Monitor.
 
-  - If you already have an existing Log Analytics workspace, you might want to use the same workspace (requires read and write permissions on the workspace). This option is useful if you're using a centralized workspace in your organization and want to use it for security data collection. Learn more in Manage access to log data and workspaces in Azure Monitor.
+If your selected workspace already has a Security or Security Center Free solution enabled, the pricing will be set automatically. If not, install a Security Center solution on the workspace:
 
-  - If your selected workspace already has a Security or Security Center Free solution enabled, the pricing will be set automatically. If not, install a Security Center solution on the workspace:
+1. From Security Center's menu, open Pricing & settings.
 
-    - From Security Center's menu, open Pricing & settings.
+1. Select the workspace to which you'll be connecting the agents.
 
-    - Select the workspace to which you'll be connecting the agents.
+1. Select **Azure Defender on** or **Azure Defender off**.
 
-    - Select Azure Defender on or Azure Defender off.
+From the Windows security events configuration, select the amount of raw event data to store:
 
-- From the Windows security events configuration, select the amount of raw event data to store:
+    - None – Disable security event storage. This is the default setting.
 
-  - None – Disable security event storage. This is the default setting.
+    - Minimal – A small set of events for when you want to minimize the event volume.
 
-  - Minimal – A small set of events for when you want to minimize the event volume.
+    - Common – A set of events that satisfies most customers and provides a full audit trail.
 
-  - Common – A set of events that satisfies most customers and provides a full audit trail.
+    - All events – For customers who want to make sure all events are stored.
 
-  - All events – For customers who want to make sure all events are stored.
+Select Apply in the configuration pane.
 
-- Select Apply in the configuration pane.
+Select Save. If a workspace needs to be provisioned, agent installation might take up to 25 minutes.
 
-- Select Save. If a workspace needs to be provisioned, agent installation might take up to 25 minutes.
+ou'll be asked if you want to reconfigure monitored VMs that were previously connected to a default workspace:
 
-- You'll be asked if you want to reconfigure monitored VMs that were previously connected to a default workspace:
+- No - your new workspace settings will only be applied to newly discovered VMs that don't have the Log Analytics agent installed.
 
-  - No - your new workspace settings will only be applied to newly discovered VMs that don't have the Log Analytics agent installed.
-
-  - Yes - your new workspace settings will apply to all VMs, and every VM currently connected to a Security Center created workspace will be reconnected to the new target workspace.
+- Yes - your new workspace settings will apply to all VMs, and every VM currently connected to a Security Center created workspace will be reconnected to the new target workspace.
 
 ## Enable auto provisioning of extensions
 
 To enable automatic provisioning of an extension other than the Log Analytics agent:
 
-- From Security Center's menu in the Azure portal, select Pricing & settings.
+1. From Security Center's menu in the Azure portal, select Pricing & settings.
 
-- Select the relevant subscription.
+1. Select the relevant subscription.
 
-- Select Auto provisioning.
+1. Select Auto provisioning.
 
-- If you're enabling auto provisioning for the Microsoft Dependency agent, ensure the Log Analytics agent is set to auto deploy too.
+1. If you're enabling auto provisioning for the Microsoft Dependency agent, ensure the Log Analytics agent is set to auto deploy too.
 
-- Toggle the status to On for the relevant extension.
+1. Toggle the status to On for the relevant extension.
 
-- Select Save. The Azure policy is assigned, and a remediation task is created.
+1. Select **Save**. The Azure policy is assigned, and a remediation task is created.
 
 ## Windows security event options for the Log Analytics agent
 
