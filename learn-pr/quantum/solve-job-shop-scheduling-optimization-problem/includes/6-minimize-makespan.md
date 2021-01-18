@@ -1,6 +1,6 @@
 In this unit, you will learn how to develop an objective function that minimizes the makespan of the solution (the time taken to complete all operations).
 
-### Minimizing the makespan
+### Minimize the makespan
 
 So far you've learned how to represent constraints of your optimization problem with a penalty model, which allows you to obtain *valid* solutions to your problem from the optimizer. Remember however that your end goal is to obtain an *optimal* (or close to optimal) solution. In this case, you're looking for the schedule with the fastest completion time of all jobs.
 
@@ -78,9 +78,9 @@ processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 
 ## Assignment of operations to jobs (job ID: [operation IDs])
 jobs_ops_map = {
-    0: [0, 1],
-    1: [2, 3],
-    2: [4, 5]
+    0: [0, 1], # Restart life support
+    1: [2, 3], # Recalibrate navigation system
+    2: [4, 5]  # Replace power transformer in the reactor
 }
 
 def calc_penalty(t:int, m_count:int, t0:int): 

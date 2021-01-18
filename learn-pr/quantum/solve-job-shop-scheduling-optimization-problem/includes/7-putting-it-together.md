@@ -50,15 +50,15 @@ processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 ## Assignment of operations to jobs (job ID: [operation IDs])
 ### Operation IDs within a job must be in ascending order
 jobs_ops_map = {
-    0: [0, 1],
-    1: [2, 3],
-    2: [4, 5]
+    0: [0, 1], # Restart life support
+    1: [2, 3], # Recalibrate navigation system
+    2: [4, 5]  # Replace power transformer in the reactor
 }
 
 ## Assignment of operations to machines
-### Eight jobs, two machines
+### Three jobs, two machines
 machines_ops_map = {
-    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the multi-tool)
+    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the universal multi-tool)
     1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
 }
 
@@ -114,7 +114,7 @@ The following code snippet shows how you assign weight values and assemble the p
 alpha = 1  # Precedence constraint
 beta = 1   # Operation once constraint
 gamma = 1  # No overlap constraint
-delta = 0.001  # Makespan minimization (objective function)
+delta = 0.004  # Makespan minimization (objective function)
 
 ## Build terms
 ### Constraints:

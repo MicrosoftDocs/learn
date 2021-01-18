@@ -107,7 +107,7 @@ ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
 ## Assignment of operations to machines
 ### Three jobs, two machines
 machines_ops_map = {
-    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the multi-tool)
+    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the universal multi-tool)
     1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
 }
 

@@ -94,9 +94,9 @@ processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 
 ## Assignment of operations to jobs (job ID: [operation IDs])
 jobs_ops_map = {
-    0: [0, 1],
-    1: [2, 3],
-    2: [4, 5]
+    0: [0, 1], # Restart life support
+    1: [2, 3], # Recalibrate navigation system
+    2: [4, 5]  # Replace power transformer in the reactor
 }
 
 def precedence_constraint(jobs_ops_map:dict, T:int, processing_time:dict, coefficient:float):
