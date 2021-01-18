@@ -6,7 +6,7 @@ Now that you've completed this module, you should be able to:
 - Describe how Azure Sentinel provides integrated threat protection
 - Describe the capabilities of Azure Sentinel
 
-## Learn More
+## Learn more
 
 To find out more about any of the topics covered in this module, please visit these links:
 

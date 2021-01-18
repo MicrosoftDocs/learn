@@ -36,7 +36,7 @@ This is where the power of Sentinel comes into play. Using the built-in analytic
 
 An incident is created when an alert that you've enabled is triggered. You can do standard incident management tasks like changing status or assigning incidents to individuals for investigation in Azure Sentinel. Azure Sentinel also has investigation functionality, so you can visually investigate incidents by mapping entities across log data along a timeline.
 
-### Security automation & orchestration
+### Security automation and orchestration
 
 With Azure Sentinel, you can automate some of your security operations and make your security operations center (SOC) more productive. Azure Sentinel integrates with Azure Logic Apps, enabling you to create automated workflows, or playbooks, in response to events. This functionality could be used for incident management, enrichment, investigation, or remediation.
 
@@ -62,8 +62,8 @@ Both tools seamlessly integrate with Azure Sentinel to provide a complete and th
 
 :::image type="content" source="../media/3-elements-threat-protection.png" alt-text="Diagram showing the three elements that make up the complete threat protection: Microsoft 365 and Azure Defender, and Azure Sentinel.":::
 
-### Azure Sentinel Video Presentation
+### Azure Sentinel video presentation
 
 In this nine-minute video, you’ll explore many of the key features available in Azure Sentinel, including incidents, workbooks, hunting, notebooks, analytics, and playbooks.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHLR]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LHLR]

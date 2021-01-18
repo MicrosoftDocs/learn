@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/16/2021
+  ms.date: 01/18/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As the lead admin, you want to convince your team to start using Azure Sentinel. You’ve put together a presentation. What are the four security operation areas of Azure Sentinel, you will cover?"
+  - content: "As the lead admin, it is important to convince your team to start using Azure Sentinel. You’ve put together a presentation. What are the four security operation areas of Azure Sentinel that cover this area?"
     choices:
     - content: "Collect, Detect, Investigate, and Redirect."
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "Collect, Detect, Investigate, and Repair."
       isCorrect: false
       explanation: "That's incorrect. Repair is not one of the four key aspects of a SIEM/SOAR solution."
-  - content: "Your estate has many different data sources where data is stored. Which tool will you use with Azure Sentinel to quickly gain insights across your data as soon as you connect a data source?"
+  - content: "Your estate has many different data sources where data is stored. Which tool should be used with Azure Sentinel to quickly gain insights across your data as soon as a data source is connected?"
     choices:
     - content: "Azure Monitor Workbooks."
       isCorrect: true
