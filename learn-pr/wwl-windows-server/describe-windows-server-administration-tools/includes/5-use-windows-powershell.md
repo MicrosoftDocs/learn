@@ -73,7 +73,7 @@ Get-ADUser -Filter 'Name -like "*"' -SearchBase "OU=Marketing,DC=Contoso,DC=Com"
 
 The ISE is a fully graphical environment that provides a script editor, debugging capabilities, an interactive console, and several tools that help you discover and learn new Windows PowerShell commands. This module provides a basic familiarity with how the ISE works.
 
-:::image type="content" source="../media/m2-powershell-ise.png" alt-text="A screenshot of Administrator: Windows PowerShell ISE. The administrator has enabled the Command preview window. The administrator has just run Get-localuser in the untitled script pane.":::
+:::image type="content" source="../media/m2-powershell-ise.png" alt-text="A screenshot of Administrator: Windows PowerShell ISE. The administrator has enabled the Command preview window. The administrator has just run Get-localuser in the untitled script pane.":::
 
 #### Panes
 

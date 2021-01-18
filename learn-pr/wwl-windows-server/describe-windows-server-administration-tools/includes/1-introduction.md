@@ -26,4 +26,4 @@ To get the best learning experience from this module, you should have knowledge 
 - Windows Server.
 - Basic security best practices.
 - Windows client operating systems such as Windows 10.
-- Working with command line tools.
+- Working with command-line tools.

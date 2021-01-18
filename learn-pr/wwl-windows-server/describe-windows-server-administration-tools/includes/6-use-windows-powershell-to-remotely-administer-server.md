@@ -102,7 +102,7 @@ Enter-PSSession $s
 
 Once you enter a session, the Windows PowerShell command prompt on your local computer changes to indicate the connection.
 
-:::image type="content" source="../media/m2-remoting.png" alt-text="A screenshot of the Administrator: Windows PowerShell dialog box. The administrator has connected remotely to SEA-DC1." ::: 
+:::image type="content" source="../media/m2-remoting.png" alt-text="A screenshot of the Administrator: Windows PowerShell dialog box. The administrator has connected remotely to SEA-DC1.":::
 
 The interactive session remains open until you close it. This enables you to run as many commands as needed. To end the interactive session, enter the following command:
 
