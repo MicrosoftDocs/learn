@@ -42,7 +42,7 @@ As a reminder, below you again see the code representation of the problem parame
 ```python
 # Set problem parameters
 ## Simulation time (jobs can only be scheduled below this limit)
-T = 20
+T = 10
 
 ## Processing time for each operation
 processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
@@ -111,9 +111,9 @@ The following code snippet shows how you assign weight values and assemble the p
 ```python
 # Generate terms to submit to solver using functions defined previously
 ## Assign penalty term coefficients (weights):
-alpha = 1  # Precedence constraint
-beta = 1   # Operation once constraint
-gamma = 1  # No overlap constraint
+alpha = 5  # Precedence constraint
+beta = 5   # Operation once constraint
+gamma = 5  # No overlap constraint
 delta = 0.004  # Makespan minimization (objective function)
 
 ## Build terms

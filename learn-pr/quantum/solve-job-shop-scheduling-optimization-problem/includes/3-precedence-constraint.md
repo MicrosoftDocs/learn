@@ -85,7 +85,7 @@ Using the mathematical formulation and the breakdown above, you can now translat
 ```python
 # Reminder of the relevant parameters
 ## Time to allow for all jobs to complete
-T = 20 
+T = 10 
 
 ## Processing time for each operation
 processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}

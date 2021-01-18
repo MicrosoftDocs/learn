@@ -71,7 +71,7 @@ The code below implements the ideas discussed above by generating the necessary 
 ```python
 # Reminder of the relevant parameters
 ## Allowed time (jobs can only be scheduled below this limit)
-T = 20 
+T = 10 
 
 ## Processing time for each operation
 processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}

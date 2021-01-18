@@ -143,7 +143,7 @@ You can now use this expanded version of the penalty function to build the penal
 ```python
     # Reminder of the relevant parameters
     ## Allowed time (jobs can only be scheduled below this limit)
-    T = 20 
+    T = 10
 
     ## Assignment of operations to jobs (operation ID: job ID)
     ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
