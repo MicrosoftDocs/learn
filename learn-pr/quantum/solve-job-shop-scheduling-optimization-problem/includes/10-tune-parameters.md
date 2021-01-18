@@ -10,17 +10,25 @@ The importance attributed to each term can be adjusted using the weights (coeffi
 
 Intuitively, it should be clear that satisfying the constraints is more important than minimizing the makespan. An invalid solution, even with a very small makespan, would be useless to you. The weights of the cost function can be used to reflect this fact. As a rule of thumb, breaking a single constraint should be around 5-10x more expensive than any valid solution.
 
-Let's start with an upper bound on the value of the cost function for any valid solution. At worst, a valid solution (meaning that $f(x) = g(x) = h(x) = 0$) contributes at most $m*w_{T-1+max(p_i)}$ to the cost function. This is the case when $m$ operations, all taking $max(p_i)$ to complete, are scheduled at the last time step $T-1$. For convenience, let's say that this should result in a cost function value of $1$. You can compute what the value of $\delta$ should be to achieve this value. The code example you've been working with uses the following parameters:
+Let's start with an upper bound on the value of the cost function for any valid solution. At worst, a valid solution (meaning that $f(x) = g(x) = h(x) = 0$) contributes at most $m \times w_{T-1+max(p_i)}$ to the cost function. This is the case when $m$ operations, all taking $max(p_i)$ to complete, are scheduled at the last time step $T-1$. For convenience, let's say that this should result in a cost function value of $1$. You can compute what the value of $\delta$ should be to achieve this value. The code example you've been working with uses the following parameters:
 
 $$ m = 2, ~ T = 10, ~ max(p_i) = 2, ~ M_{lb} = 4, ~ w_t = \frac{m^{t-M_{lb}}}{m-1} $$
 
-Then, you calculate the upper bound to be:
+Then, you calculate the upper bound as follows:
 
-$$ m \times w_{T-1+max(p_i)} = 2\times\left( \frac{2^{(13-1+2)-4} - 1}{2-1} \right) = 2046 $$
+First, calculate the latest time an operation could finish. This is given by the max time $T$ (minus one because you are using 0-based indexing), plus the longest processing time for any operation:
+$$ t_{max} = T - 1 + max(p_i) = 10 - 1 + 2 = 11$$
+
+Then, calculate $w_{t_{max}}$:
+$$ w_{t_{max}} = \frac{m ^ {t_max - M_{lb}}}{m - 1} = \frac{2^{11 - 4}}{2 - 1} = \frac{2^{7}}{1} = 128 $$
+
+The upper bound is then:
+
+$$ m \times w_{t_{max}} = 2 \times 128 = 256 $$
 
 To obtain the desired value of $1$, you can approximately set the weight to:
 
-$$ \delta = \frac{1}{m \times w_{T-1+max(p_i)}} = \frac{1}{2046} = 0.0005 $$
+$$ \delta = \frac{1}{m \times w_{t_{max}}} = \frac{1}{256} = 0.004 $$
 
 ### Adjusting the constraint weights
 

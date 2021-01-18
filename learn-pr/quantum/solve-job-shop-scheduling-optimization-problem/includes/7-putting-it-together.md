@@ -37,7 +37,7 @@ The weights represent how important each penalty function is, relative to all th
 
 ### Code
 
-As a reminder, below you again see the code representation of the problem parameters: the maximum allowed makespan `T`, the operation processing times `processing_time`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
+As a reminder, below you again see the code representation of the problem parameters: the maximum allowed time `T`, the operation processing times `processing_time`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`), and the assignment of operations to machines (`machines_ops_map`).
 
 ```python
 # Set problem parameters

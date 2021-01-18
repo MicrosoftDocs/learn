@@ -2,7 +2,7 @@ In this unit, you will learn how to develop an objective function that minimizes
 
 ### Minimizing the makespan
 
-So far you've learned how to represent constraints of your optimization problem with a penalty model, which allows you to obtain *valid* solutions to your problem from the optimizer. Remember however that your end goal is to obtain an *optimal* (or close to optimal) solution. In our case, you're looking for the schedule with the fastest completion time of all jobs.
+So far you've learned how to represent constraints of your optimization problem with a penalty model, which allows you to obtain *valid* solutions to your problem from the optimizer. Remember however that your end goal is to obtain an *optimal* (or close to optimal) solution. In this case, you're looking for the schedule with the fastest completion time of all jobs.
 
 The makespan $M$ is defined as the total time required to run all jobs, or alternatively the finishing time of the last job, which is what you want to minimize. To this end, you need to add a fourth component to the cost function that adds larger penalties for solutions with larger makespans:
 
@@ -13,13 +13,13 @@ Let's come up with terms that increase the value of the cost function the furthe
 Some care is required in determining the penalty values, or *coefficients*, of these terms. Recall that you are given a set of operations $\{O_i\}$, which each take processing time $p_i$ to complete. An operation scheduled at time $t$ will then *complete* at time $t + p_i$. Let's define the coefficient $w_t$ as the penalty applied to the cost function for an operation to finish at time $t$. As operations can be scheduled in parallel, you don't know how many might complete at any given time, but you do know that this number is at most equal to the number of available machines $m$. The sum of all penalty values for operations completed at time $t$ are thus in the range $[0, ~m \cdot w_t]$. You want to avoid situations were completing a single operation at time $t+1$ is less expensive than m operations at time $t$. Thus, the penalty values cannot follow a simple linear function of time.
 
 Precisely, you want your coefficients to satisfy:
-$$ w_{t+1} > m*w_{t} $$
+$$ w_{t+1} > m \times w_{t} $$
 
 For a suitable parameter $\epsilon > 0$, you can then solve the following recurrence relation:
-$$ w_{t+1} = m*w_{t}+\epsilon $$
+$$ w_{t+1} = m \times w_{t}+\epsilon $$
 
 The simplest solution is given by the function:
-$$ w_{t} = \epsilon * \frac{m^t-1}{m-1} $$
+$$ w_{t} = \epsilon \times \frac{m^t-1}{m-1} $$
 
 #### Limiting the number of terms
 
@@ -35,7 +35,7 @@ $$ \{O_1, O_3, O_5\} $$
 
 $$ \text{with } k_0 = 2, k_1 = 4, k_2 = 6 $$
 
-Next, you can find a lower bound for the makespan and only penalize makespans that are greater than this minimum. A simple lower bound is given by the longest job, as each operation within a job must execute sequentially. We can express this lower bound as follows:
+Next, you can find a lower bound for the makespan and only penalize makespans that are greater than this minimum. A simple lower bound is given by the longest job, as each operation within a job must execute sequentially. You can express this lower bound as follows:
 
 $$ M_{lb} = \max\limits_{0 \leq j \lt n} \{ \sum_{i = k_j}^{k_{j+1}-1} p_i \} \leq M $$
 

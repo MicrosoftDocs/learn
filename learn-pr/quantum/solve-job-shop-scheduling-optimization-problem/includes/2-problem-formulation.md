@@ -13,16 +13,16 @@ Back onboard the spaceship, warning lights are flashing and alarms are blaring. 
 Fortunately, you have the tools, team, and expertise on board to fix all the issues, however it's important that you follow procedure to ensure the repairs are successful. Below is the list of repair tasks that you must complete:
 
 - Restart life support
-  1. Open wall panel in the life support module (*2 minutes*)
-  2. Replace fuse (*1 minute*)
+  1. Open wall panel in the life support module (*2 minutes*) - **universal multi-tool**
+  2. Replace fuse (*1 minute*) - **universal multi-tool**
 
 - Recalibrate navigation system
-  1. Reboot the system (*2 minutes*)
-  2. Locate the three nearest stellar landmarks (*2 minutes*)
+  1. Reboot the system (*2 minutes*) - **ship computer**
+  2. Locate the three nearest stellar landmarks (*2 minutes*) - **ship computer**
 
 - Replace power transformer in the reactor
-  1. Detach old transformer module (*1 minute*)
-  2. Install new transformer module (*2 minutes*)
+  1. Detach old transformer module (*1 minute*) - **universal multi-tool**
+  2. Install new transformer module (*2 minutes*) - **universal multi-tool**
 
 Each step that makes up a task takes a specific amount of time, and must be completed in the correct order.
 
@@ -118,7 +118,7 @@ $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}
 > [!NOTE]
 > Because $x_{i, t}$ can take the value of either $0$ or $1$, this is known as a binary optimization problem. More generally, this is called a polynomial unconstrained binary optimization (or PUBO) problem. You may also see these PUBO problems referred to as Higher Order Binomial Optimization (HOBO) problems - these terms both refer to the same thing.
 
-$t$ is used to represent the time. It goes from time $0$ to $T - 1$ in integer steps. $T$ is the longest time the whole set of jobs can take in total (the maximum allowed **makespan**):
+$t$ is used to represent the time. It goes from time $0$ to $T - 1$ in integer steps. $T$ is the latest time an operation can be scheduled:
 
 $$0 \leq t < T$$
 
@@ -148,9 +148,9 @@ As introduced above, the binary variable you are optimizing for here is $x_{i,t}
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-For $t = 0 \rightarrow t < T$ for every operation, you define an indexed binary variable $x_{i*T + t}$, which means that every operation in a job contributes to $T$ indices.
+For $t = 0 \rightarrow t < T$ for every operation, you define an indexed binary variable $x_{i \times T + t}$, which means that every operation in a job contributes to $T$ indices.
 
-The operation starts at the value of $t$ for which $x_{i*T + t}$ equals 1.
+The operation starts at the value of $t$ for which $x_{i \times T + t}$ equals 1.
 
 ### Defining problem parameters in code
 
@@ -167,15 +167,15 @@ processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 ## Assignment of operations to jobs (job ID: [operation IDs])
 ### Operation IDs within a job must be in ascending order
 jobs_ops_map = {
-    0: [0, 1],
-    1: [2, 3],
-    2: [4, 5]
+    0: [0, 1], # Restart life support
+    1: [2, 3], # Recalibrate navigation system
+    2: [4, 5]  # Replace power transformer in the reactor
 }
 
 ## Assignment of operations to machines
 ### Three jobs, two machines
 machines_ops_map = {
-    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the multi-tool)
+    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the universal multi-tool)
     1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
 }
 
@@ -245,7 +245,7 @@ Term(c: float, indices: [int]) # Linear terms like x
 Term(c: float, indices: [int, int]) # Quadratic terms like x^2
 ```
 
-The `coefficient` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i + t$ of the $x_{i+t}$ values.
+The `coefficient` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i \times T + t$ of the $x_{i \times T + t}$ values.
 
 If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
 

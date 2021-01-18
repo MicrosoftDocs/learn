@@ -101,7 +101,7 @@ Let's break that down:
   
 To translate this constraint to code form, you are going to need to expand the quadratic equation in the sum.
 
-To do this, you'll once again take $O_{2}$ as an example. You will set $T = 2$ so the $t$ values will be 0 and 1. The first step will be to substitute in our values:
+To do this, you'll once again take $O_{2}$ as an example. You will set $T = 2$ so the $t$ values will be 0 and 1. The first step will be to substitute in these values:
 
 $$\sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2 = \left(x_{2,0} + x_{2,1} - 1\right)^2$$
 
@@ -140,7 +140,7 @@ If $T$ was larger, you would have more terms ($z$ and so on, for example).
 
 ### Code
 
-You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the coefficient term `coefficient` is included, to be assigned a value later on:
+You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the `coefficient` term is included, to be assigned a value later on:
 
 ```python
     # Reminder of the relevant parameters

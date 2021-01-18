@@ -11,8 +11,8 @@ The no-overlap constraint is defined as follows:
 For this final constraint, $J_{1}$ will once again be used as an example:
 
 - $J_{1}$: Recalibrate navigation system
-  - $O_{2}$: Reboot the system (*2 minutes*)
-  - $O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
+  - $O_{2}$: Reboot the system (*2 minutes*) - **ship computer**
+  - $O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*) - **ship computer**
 
 Recall once more the variable $x_{i,t}$:
 
@@ -91,7 +91,7 @@ Let's break that down:
   
 ### Code
 
-Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the coefficient `coefficient` is included in our definition of the `Term` objects:
+Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `coefficient` is included in the definition of the `Term` objects:
 
 ```python
 # Reminder of the relevant parameters
