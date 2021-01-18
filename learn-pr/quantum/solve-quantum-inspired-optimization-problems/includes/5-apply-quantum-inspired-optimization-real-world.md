@@ -81,7 +81,7 @@ $$ H(x) = \sum_k \alpha_k \cdot p_k(x_0, x_1, \dots) $$
 
 $$ \text{e.g. } H(x) = 5 \cdot (x_0) + 2 \cdot (x_1 \cdot x_2) - 3 \cdot ({x_3}^2) $$
 
-In this form, every term in the sum has a coefficient $\alpha_k$ and a product $p_k$. In the `Problem` instance, each term in the sum is represented by a `Term` object, with parameters `w` - corresponding to the coefficient, and `indices` - corresponding to the product. Specifically, the `indices` parameter is populated with the indices of all variables appearing in the term. For instance, the term $2 \cdot (x_1 \cdot x_2)$ translates to the following object: `Term(w=2, indices=[1,2])`.
+In this form, every term in the sum has a coefficient $\alpha_k$ and a product $p_k$. In the `Problem` instance, each term in the sum is represented by a `Term` object, with parameters `w` - corresponding to the coefficient, and `indices` - corresponding to the product. Specifically, the `indices` parameter is populated with the indices of all variables appearing in the term. For instance, the term $2 \cdot (x_1 \cdot x_2)$ translates to the following object: `Term(c=2, indices=[1,2])`.
 
 Let's run through an example using the cost function we derived earlier, which we show again below. For $n$ mineral chunks, the index $i$ runs from $0$ to $n-1$ :
 
@@ -105,12 +105,12 @@ $$ H(x) = 8 \cdot (x_0 \cdot x_1) + 14 \cdot (x_0 \cdot x_2) + 8 \cdot (x_1 \cdo
 
 In Python, we would thus introduce the following `Terms`:
 
-- `Term(w = 8 , indices = [0, 1])`
-- `Term(w = 14, indices = [0, 2])`
-- `Term(w = 8 , indices = [1, 0])`
-- `Term(w = 28, indices = [1, 2])`
-- `Term(w = 14, indices = [2, 0])`
-- `Term(w = 28, indices = [2, 1])`
+- `Term(c =  8, indices = [0, 1])`
+- `Term(c = 14, indices = [0, 2])`
+- `Term(c =  8, indices = [1, 0])`
+- `Term(c = 28, indices = [1, 2])`
+- `Term(c = 14, indices = [2, 0])`
+- `Term(c = 28, indices = [2, 1])`
 
 The function below generalizes the `Term` creation for any number of weights using some for loops. It takes an array of mineral weights and returns a `Problem` object containing the cost function.
 
@@ -130,7 +130,7 @@ def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
 
             terms.append(
                 Term(
-                    w = mineralWeights[i] * mineralWeights[j],
+                    c = mineralWeights[i] * mineralWeights[j],
                     indices = [i, j]
                 )
             )
