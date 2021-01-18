@@ -153,7 +153,7 @@ When you run this code, you will see the following in the output window:
 Operation runtime: [2, 1, 2, 2, 1, 2]
  Assigned machine: [0, 0, 1, 1, 0, 0]
 
-Azure Quantum solution:
+Operation matrix:
     t: 0 1 2 3 4 5 6 7 8 9
 x_0,t: 0 1 0 0 0 0 0 0 0 0
 x_1,t: 0 0 0 1 0 0 0 0 0 0
