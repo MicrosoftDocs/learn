@@ -7,7 +7,7 @@ Watch this video for more information about modern authentication and how it wor
 
 Watch this video for more information about modern authentication and how it works with a central identity provider.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Kdt9 ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Kdt9 ]
 
 As shown in the video, with modern authentication, the client communicates with the identity provider by providing an identity which can be authenticated. Once the identity (which can be a user or an application)  has been verified, the identity provider issues a *security token* which the client sends to the server. The server validates the security token through its *trust relationship* with the identity provider. By using the security token and the information that is contained within the token, the user or application can gain access to the required resources on the server. In this scenario, the token and the information contained in the token is stored and managed by the identity provider. The centralized identity provider is providing the authentication service.
 
