@@ -82,23 +82,21 @@ Let's break that down:
 - $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$
 
   As you saw in the sum row of the tables in the worked example, $\sum_{0\leq t < T} x_{i,t}$ should always equal exactly 1 (meaning that an operation must be scheduled **once and only once** during the allowed time). This means that $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$ should always give 0. This means there is no penalty assigned when the constraint is not violated.
-  
-  In the case where $\sum_{0\leq t < T} x_{i,t} > 1$ (meaning an operation is scheduled to start more than once, like in the second example above), you now have a positive, non-zero penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 > 0$.
-  
-  In the case where $\sum_{0\leq t < T} x_{i,t} = 0$ (meaning an operation is never scheduled to start, like in the last example above), you now have a $-1$ penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 = 0 - 1 = -1$.
 
+  In the case where $\sum_{0\leq t < T} x_{i,t} > 1$ (meaning an operation is scheduled to start more than once, like in the second example above), you now have a positive, non-zero penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 > 0$.
+
+  In the case where $\sum_{0\leq t < T} x_{i,t} = 0$ (meaning an operation is never scheduled to start, like in the last example above), you now have a $-1$ penalty term as $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1 = 0 - 1 = -1$.
 
 - $\left(\sum\dots\right)^2$
 
   Because the penalty terms must always be positive (otherwise you would be *reducing* the penalty when an operation isn't scheduled), you must square the result of $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$.
-  
+
   This ensures that the penalty term is always positive (as $(-1)^2 = 1$).
-  
 
 - $\sum_{i} \left((\dots)^2\right)$
 
   Lastly, you must sum all penalties accumulated across all operations $O_{i}$ from all jobs.
-  
+
 To translate this constraint to code form, you are going to need to expand the quadratic equation in the sum.
 
 To do this, you'll once again take $O_{2}$ as an example. You will set $T = 2$ so the $t$ values will be 0 and 1. The first step will be to substitute in these values:
@@ -146,7 +144,7 @@ You can now use this expanded version of the penalty function to build the penal
     # Reminder of the relevant parameters
     ## Allowed time (jobs can only be scheduled below this limit)
     T = 20 
-    
+
     ## Assignment of operations to jobs (operation ID: job ID)
     ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
 
@@ -154,31 +152,31 @@ def operation_once_constraint(ops_jobs_map:dict, T:int, coefficient:float):
     """
     Construct penalty terms for the operation once constraint.
     Penalty function is of form: 2xy - x - y + 1
-    
+
     Keyword arguments:
-    
+
     ops_jobs_map (dict): Map of operations to jobs {op: job}
     T (int): Allowed time (jobs can only be scheduled below this limit)
     coefficient (float): Relative importance of this constraint
     """
-    
+
     terms = []
-    
+
     # 2xy - x - y parts of the constraint function
     # Loop through all operations
     for op in ops_jobs_map.keys():
         for t in range(T):
             # - x - y terms
             terms.append(Term(c=coefficient*-1, indices=[op*T+t]))
-            
+
             # + 2xy term
             # Loop through all other start times for the same job
             # to get the cross terms
             for s in range(t+1, T):
                 terms.append(Term(c=coefficient*2, indices=[op*T+t, op*T+s]))
-    
+
     # + 1 term
     terms.append(Term(c=coefficient*1, indices=[]))
-    
+
     return terms
 ```

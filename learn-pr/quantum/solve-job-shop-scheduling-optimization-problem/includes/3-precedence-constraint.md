@@ -68,16 +68,14 @@ Let's break that down:
 
   This means you sum over all operations for a single job.
 
-
 - $s < t + p_{i}$
 
   This is the penalty condition - any operation that satisfies this condition is in violation of the precedence constraint.
-  
 
 - $x_{i, t}\cdot x_{i+1, s}$
-  
+
   This represents the table you saw in the example above, where $t$ is allowed to vary from $0 \rightarrow T - 1$ and you assign a penalty whenever the constraint is violated (when $s < t + p_{i}$).
-  
+
   This translates to a nested `for` loop: the outer loop has limits $0 \leq t < T$ and the inner loop has limits $0 \leq s < t + p_{i}$
 
 ### Code
@@ -104,13 +102,13 @@ def precedence_constraint(jobs_ops_map:dict, T:int, processing_time:dict, coeffi
     Construct penalty terms for the precedence constraint.
 
     Keyword arguments:
-    
+
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     T (int): Allowed time (jobs can only be scheduled below this limit)
     processing_time (dict): Operation processing times
     coefficient (float): Relative importance of this constraint
     """
-    
+
     terms = []
 
     # Loop through all jobs:

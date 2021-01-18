@@ -92,19 +92,19 @@ def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:i
     Construct makespan minimization terms.
 
     Keyword arguments:
-    
+
     T (int): Allowed time (jobs can only be scheduled below this limit)
     processing_time (dict): Operation processing times
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     m_count (int): Number of machines
     coefficient (float): Relative importance of this constraint
     """
-    
+
     terms = []
-    
+
     lower_bound = max([sum([processing_time[i] for i in job]) for job in jobs_ops_map.values()])
     upper_bound = T
-    
+
     # Loop through the final operation of each job
     for job in jobs_ops_map.values():
         i = job[-1]

@@ -70,25 +70,23 @@ Let's break that down:
 - $\sum_{i,t,k,s}$
 
   For operation $i$ starting at time $t$, and operation $k$ starting at time $s$, you need to sum over all possible start times $0 \leq t < T$ and $0 \leq s < T$. This indicates the need for another nested `for` loop, like you saw for the precedence constraint.
-  
-  For this summation, $i \neq k$ (you should always be scheduling two different operations).
-  
-  For two operations happening on a single machine, $t \neq s$ or the constraint has been violated. If $t = s$ for the operations, they have been scheduled to start on the same machine at the same time, which isn't possible.
 
+  For this summation, $i \neq k$ (you should always be scheduling two different operations).
+
+  For two operations happening on a single machine, $t \neq s$ or the constraint has been violated. If $t = s$ for the operations, they have been scheduled to start on the same machine at the same time, which isn't possible.
 
 - $x_{i,t}\cdot x_{k,s}$
 
   This is the product you saw explicitly calculated in the rightmost columns of the tables from the worked example. If two different operations $i$ and $k$ start at the same time ($t = s$), this product will equal 1. Otherwise, it will equal 0.
-  
 
 - $\sum(\dots) = 0 \text{ for each machine } \textit{m}$
 
   This sum is performed for each machine $m$ independently.
-  
+
   If all $x_{i,t} \cdot x_{k,s}$ products in the summation equal 0, the total sum comes to 0. This means no operations have been scheduled to start at the same time on this machine and thus the constraint has not been violated. You can see an example of this in the bottom row of the first table from the worked example, above.
-  
+
   If any of the $x_{i,t} \cdot x_{k,s}$ products in the summation equal 1, this means that $t = s$ for those operations and therefore two operations have been scheduled to start at the same time on the same machine. The sum now returns a value greater than 1, which gives us a penalty every time the constraint is violated. You can see an example of this in the bottom row of the second table from the worked example.
-  
+
 ### Code
 
 Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `coefficient` is included in the definition of the `Term` objects:
@@ -116,7 +114,7 @@ def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machin
     Construct penalty terms for the no overlap constraint.
 
     Keyword arguments:
-    
+
     T (int): Allowed time (jobs can only be scheduled below this limit)
     processing_time (dict): Operation processing times
     coefficient (float): Relative importance of this constraint
@@ -127,9 +125,9 @@ def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machin
             1: [2,3]           # Operations 2 & 3 assigned to machine 1
         }
     """
-    
+
     terms = []
-    
+
     # For each machine
     for ops in machines_ops_map.values():
         # Loop over each operation i requiring this machine
@@ -142,7 +140,7 @@ def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machin
                     if i != k:
                         # t = s meaning two operations are scheduled to start at the same time on the same machine
                         terms.append(Term(c=coefficient*1, indices=[i*T+t, k*T+t]))
-                        
+
                         # Add penalty when operation runtimes overlap
                         for s in range(t, min(t + processing_time[i], T)):
                             terms.append(Term(c=coefficient*1, indices=[i*T+t, k*T+s]))  

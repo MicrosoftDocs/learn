@@ -32,6 +32,7 @@ In this instance, it is possible to visually verify that the solution does not v
 ![Gantt chart showing the start times for all operations and their assigned machines](../media/gantt-chart.png)
 
 As you can see from the visual above:
+
 - Operations belonging to the same job happen in order
 - Operations are started once and only once
 - Each machine only has one operation running at a time
@@ -46,10 +47,10 @@ You can perform this validation using the following code snippet, which checks t
 
 ```python
 def check_precedence(processing_time, jobs):
-    """    
+    """
     Check if the solution violates the precedence constraint.
-    Returns True if the constraint is violated.       
-    
+    Returns True if the constraint is violated.
+
     Keyword arguments:
     processing_time (dict): Operation processing times
     jobs (List[List[int]]): List of operation start times, grouped into jobs
@@ -63,12 +64,12 @@ def check_precedence(processing_time, jobs):
             op_id += 1
         op_id += 1
     return False
-    
+
 def check_operation_once(matrix):
-    """    
+    """
     Check if the solution violates the operation once constraint.
-    Returns True if the constraint is violated.       
-    
+    Returns True if the constraint is violated.
+
     Keyword arguments:
     matrix (List[List[int]]): Matrix of x_i,t values
     """
@@ -78,10 +79,10 @@ def check_operation_once(matrix):
     return False
 
 def check_no_overlap(op_start_times:list, machines_ops_map:dict, processing_time:dict):
-    """    
+    """
     Check if the solution violates the no overlap constraint.
-    Returns True if the constraint is violated.       
-    
+    Returns True if the constraint is violated.
+
     Keyword arguments:
     op_start_times (list): Start times for the operations
     machines_ops_map(dict): Mapping of machines to operations
@@ -97,7 +98,7 @@ def check_no_overlap(op_start_times:list, machines_ops_map:dict, processing_time
         # Two operations start at the same time on the same machine
         if len(machine_start_times) != len(set(machine_start_times)):
             return True
-        
+
         # There is overlap in the runtimes of two operations assigned to the same machine
         machine_start_times, machine_pvals = zip(*sorted(zip(machine_start_times, machine_pvals)))
         for i in range(len(machine_pvals) - 1):
@@ -105,12 +106,12 @@ def check_no_overlap(op_start_times:list, machines_ops_map:dict, processing_time
                 return True
 
     return False
-    
+
 def validate_solution(matrix:dict, machines_ops_map:dict, processing_time:dict, jobs_ops_map:dict):
-    """    
+    """
     Check that solution has not violated any constraints. 
-    Returns True if the solution is valid.       
-    
+    Returns True if the solution is valid.
+
     Keyword arguments:
     matrix (List[List[int]]): Matrix of x_i,t values
     machines_ops_map(dict): Mapping of machines to operations
@@ -124,7 +125,7 @@ def validate_solution(matrix:dict, machines_ops_map:dict, processing_time:dict, 
     precedence_violated = check_precedence(processing_time, jobs)
     operation_once_violated = check_operation_once(matrix)
     no_overlap_violated = check_no_overlap(op_start_times, machines_ops_map, processing_time)
-    
+
     if not precedence_violated and not operation_once_violated and not no_overlap_violated:
         print("Solution is valid.\n")
     else:

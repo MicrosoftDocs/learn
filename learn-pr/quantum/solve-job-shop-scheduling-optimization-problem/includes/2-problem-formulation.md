@@ -191,7 +191,7 @@ def process_config(jobs_ops_map:dict, machines_ops_map:dict, processing_time:dic
     Process & validate problem parameters (config) and generate inverse dict of operations to jobs.
 
     Keyword arguments:
-    
+
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     machines_ops_map(dict): Mapping of operations to machines, e.g.:
         machines_ops_map = {

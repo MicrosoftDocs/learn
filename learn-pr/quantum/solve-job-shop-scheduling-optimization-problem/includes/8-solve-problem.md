@@ -54,7 +54,7 @@ This code snippet contains several helper functions, which are used to parse the
 def create_op_array(config: dict):
     """
     Create array from returned config dict.
-    
+
     Keyword arguments:
     config (dictionary): config returned from solver
     """
@@ -66,9 +66,9 @@ def create_op_array(config: dict):
 
 def print_problem_details(ops_jobs_map:dict, processing_time:dict, machines_ops_map:dict):
     """
-    
+
     Print problem details e.g. operation runtimes and machine assignments.        
-    
+
     Keyword arguments:
     ops_jobs_map (dict): Map of operations to jobs {operation: job}
     processing_time (dict): Operation processing times
@@ -80,17 +80,17 @@ def print_problem_details(ops_jobs_map:dict, processing_time:dict, machines_ops_
     for m, ops in machines_ops_map.items():
         for op in ops:
           machines[op] = m
-    
+
     print(f"           Job ID: {list(ops_jobs_map.values())}")
     print(f"     Operation ID: {list(ops_jobs_map.keys())}")
     print(f"Operation runtime: {list(processing_time.values())}")
     print(f" Assigned machine: {machines}")
     print()
-    
+
 def split_array(T:int, array:List[int]):
     """
     Split array into rows representing the rows of our operation matrix.
-        
+
     Keyword arguments:
     T (int): Time allowed to complete all operations
     array (List[int]): array of x_i,t values generated from config returned by solver
@@ -107,7 +107,7 @@ def split_array(T:int, array:List[int]):
 def print_matrix(T:int, matrix:List[List[int]]):
     """
     Print final output matrix.        
-    
+
     Keyword arguments:
     T (int): Time allowed to complete all operations
     matrix (List[List[int]]): Matrix of x_i,t values
@@ -117,7 +117,7 @@ def print_matrix(T:int, matrix:List[List[int]]):
     for t in range(0, T):
         labels += f" {t}"
     print(labels)
-    
+
     idx = 0
     for row in matrix:
         print("x_" + str(idx) + ",t: ", end="")
@@ -128,7 +128,7 @@ def print_matrix(T:int, matrix:List[List[int]]):
 def extract_start_times(jobs_ops_map:dict, matrix:List[List[int]]):
     """
     Extract operation start times & group them into jobs.
-    
+
     Keyword arguments:
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     matrix (List[List[int]]): Matrix of x_i,t values
