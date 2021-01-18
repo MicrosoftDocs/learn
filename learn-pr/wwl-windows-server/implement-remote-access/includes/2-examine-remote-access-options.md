@@ -12,7 +12,7 @@ From the user’s perspective, the VPN is a point-to-point connection between a 
 
 Windows Server supports a number of different configurations with VPNs, including site-to-site, and remote access, displayed in the following graphic.
 
-:::image type="content" source="../media/m15-vpn1.png" alt-text="A diagram displays a remote VPN client. The client has a secured connection through the internet a VPN server, and then onto the intranet. A number of server resources are displayed in the intranet." border="false":::
+:::image type="content" source="../media/m15-vpn-1.png" alt-text="A diagram displays a remote VPN client. The client has a secured connection through the internet a VPN server, and then onto the intranet. A number of server resources are displayed in the intranet." border="false":::
 
 ### Routing
 
