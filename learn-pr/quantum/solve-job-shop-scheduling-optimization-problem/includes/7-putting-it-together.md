@@ -22,7 +22,7 @@ $$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \text
 
 - **Makespan minimization**:
 
-$$k(x) = \sum_{i \in \{k_0-1, \dots, k_{n-1}-1\}} \left( \sum_{M_{lb} < t < T+p_i} w_t \cdot x_{i, ~t-p_i} \right)$$
+$$k(x) = \sum_{i \in \{k_0-1, \dots, k_{n-1}-1\}} \left( \sum_{M_{lb} < t < T+p_i} c_t \cdot x_{i, ~t-p_i} \right)$$
 
 As you saw earlier, combining the penalty functions is straightforward - all you need to do is assign each term a weight and add all the weighted terms together, like so:
 
@@ -110,7 +110,7 @@ The following code snippet shows how you assign weight values and assemble the p
 
 ```python
 # Generate terms to submit to solver using functions defined previously
-## Assign penalty term coefficients (weights):
+## Assign penalty term weights:
 alpha = 5  # Precedence constraint
 beta = 5   # Operation once constraint
 gamma = 5  # No overlap constraint

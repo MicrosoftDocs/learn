@@ -138,7 +138,7 @@ If $T$ was larger, you would have more terms ($z$ and so on, for example).
 
 ### Code
 
-You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the `coefficient` term is included, to be assigned a value later on:
+You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the `weight` argument is included, to be assigned a value later on:
 
 ```python
     # Reminder of the relevant parameters
@@ -148,7 +148,7 @@ You can now use this expanded version of the penalty function to build the penal
     ## Assignment of operations to jobs (operation ID: job ID)
     ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
 
-def operation_once_constraint(ops_jobs_map:dict, T:int, coefficient:float):
+def operation_once_constraint(ops_jobs_map:dict, T:int, weight:float):
     """
     Construct penalty terms for the operation once constraint.
     Penalty function is of form: 2xy - x - y + 1
@@ -157,7 +157,7 @@ def operation_once_constraint(ops_jobs_map:dict, T:int, coefficient:float):
 
     ops_jobs_map (dict): Map of operations to jobs {op: job}
     T (int): Allowed time (jobs can only be scheduled below this limit)
-    coefficient (float): Relative importance of this constraint
+    weight (float): Relative importance of this constraint
     """
 
     terms = []
@@ -167,16 +167,16 @@ def operation_once_constraint(ops_jobs_map:dict, T:int, coefficient:float):
     for op in ops_jobs_map.keys():
         for t in range(T):
             # - x - y terms
-            terms.append(Term(c=coefficient*-1, indices=[op*T+t]))
+            terms.append(Term(c=weight*-1, indices=[op*T+t]))
 
             # + 2xy term
             # Loop through all other start times for the same job
             # to get the cross terms
             for s in range(t+1, T):
-                terms.append(Term(c=coefficient*2, indices=[op*T+t, op*T+s]))
+                terms.append(Term(c=weight*2, indices=[op*T+t, op*T+s]))
 
     # + 1 term
-    terms.append(Term(c=coefficient*1, indices=[]))
+    terms.append(Term(c=weight*1, indices=[]))
 
     return terms
 ```

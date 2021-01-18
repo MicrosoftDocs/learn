@@ -10,18 +10,19 @@ $$ H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \mathbf{\de
 
 Let's come up with terms that increase the value of the cost function the further out the last job is completed. Remember that the completion time of a job depends solely on the completion time of its final operation. However, since you have no way of knowing in advance what the last job will be, or at which time the last operation will finish, you'll need to include a term for each operation and time step. These terms need to scale with the time parameter $t$, and consider the operation processing time, in order to penalize large makespans over smaller ones.
 
-Some care is required in determining the penalty values, or *coefficients*, of these terms. Recall that you are given a set of operations $\{O_i\}$, which each take processing time $p_i$ to complete. An operation scheduled at time $t$ will then *complete* at time $t + p_i$. Let's define the coefficient $w_t$ as the penalty applied to the cost function for an operation to finish at time $t$. As operations can be scheduled in parallel, you don't know how many might complete at any given time, but you do know that this number is at most equal to the number of available machines $m$. The sum of all penalty values for operations completed at time $t$ are thus in the range $[0, ~m \cdot w_t]$. You want to avoid situations were completing a single operation at time $t+1$ is less expensive than m operations at time $t$. Thus, the penalty values cannot follow a simple linear function of time.
+Some care is required in determining the penalty values, or *coefficients*, of these terms. Recall that you are given a set of operations $\{O_i\}$, which each take processing time $p_i$ to complete. An operation scheduled at time $t$ will then *complete* at time $t + p_i$. Let's define the coefficient $c_t$ as the penalty applied to the cost function for an operation to finish at time $t$. As operations can be scheduled in parallel, you don't know how many might complete at any given time, but you do know that this number is at most equal to the number of available machines $m$. The sum of all penalty values for operations completed at time $t$ are thus in the range $[0, ~m \cdot c_t]$. You want to avoid situations were completing a single operation at time $t+1$ is less expensive than m operations at time $t$. Thus, the penalty values cannot follow a simple linear function of time.
 
 Precisely, you want your coefficients to satisfy:
-$$ w_{t+1} > m \cdot w_{t} $$
+
+$$ c_{t+1} > m \cdot c_{t} $$
 
 For a suitable parameter $\epsilon > 0$, you can then solve the following recurrence relation:
 
-$$ w_{t+1} = m \cdot w_{t}+\epsilon $$
+$$ c_{t+1} = m \cdot c_{t}+\epsilon $$
 
 The simplest solution is given by the function:
 
-$$ w_{t} = \epsilon \cdot \frac{m^t-1}{m-1} $$
+$$ c_{t} = \epsilon \cdot \frac{m^t-1}{m-1} $$
 
 #### Limiting the number of terms
 
@@ -58,13 +59,13 @@ To summarize:
 
 #### Implementing the penalty terms
 
-You are now ready to add the makespan terms to the cost function. Recall that all terms contain a coefficient and one (or multiple) binary decision variables $x_{i,t}$. Contrary to the coefficients $w_t$ defined above, where $t$ refers to the completion time of an operation, the variables $x_{i,t}$ determine if an operation $i$ is *scheduled* at time t. To account for this difference, you'll have to shift the variable index by the operation's processing time $p_i$. All makespan terms can then be expressed as follows:
+You are now ready to add the makespan terms to the cost function. Recall that all terms contain a coefficient and one (or multiple) binary decision variables $x_{i,t}$. Contrary to the coefficients $c_t$ defined above, where $t$ refers to the completion time of an operation, the variables $x_{i,t}$ determine if an operation $i$ is *scheduled* at time t. To account for this difference, you'll have to shift the variable index by the operation's processing time $p_i$. All makespan terms can then be expressed as follows:
 
-$$ k(x) = \sum_{i \in \{k_0-1, \dots, k_{n-1}-1\}} \left( \sum_{M_{lb} < t < T+p_i} w_t \cdot x_{i, ~t-p_i} \right) $$
+$$ k(x) = \sum_{i \in \{k_0-1, \dots, k_{n-1}-1\}} \left( \sum_{M_{lb} < t < T+p_i} c_t \cdot x_{i, ~t-p_i} \right) $$
 
-Lastly, you need to make a small modification to the coefficient function so that the first value $w_{M_{lb}+1}$ always equals one. With $\epsilon = 1$ and $t_0 = M_{lb}$ you get:
+Lastly, you need to make a small modification to the coefficient function so that the first value $c_{M_{lb}+1}$ always equals one. With $\epsilon = 1$ and $t_0 = M_{lb}$ you get:
 
-$$ w_{t} = \frac{m^{t-t_0}-1}{m-1} $$
+$$ c_{t} = \frac{m^{t-t_0}-1}{m-1} $$
 
 #### Code
 
@@ -89,7 +90,7 @@ def calc_penalty(t:int, m_count:int, t0:int):
     assert m_count > 1                           # Ensure you don't divide by 0
     return (m_count**(t - t0) - 1)/float(m_count - 1)
 
-def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:int, coefficient:float):
+def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:int, weight:float):
     """
     Construct makespan minimization terms.
 
@@ -99,7 +100,7 @@ def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:i
     processing_time (dict): Operation processing times
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     m_count (int): Number of machines
-    coefficient (float): Relative importance of this constraint
+    weight (float): Relative importance of this constraint
     """
 
     terms = []
@@ -112,7 +113,7 @@ def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:i
         i = job[-1]
         # Loop through each time step the operation could be completion at
         for t in range(lower_bound + 1, T + processing_time[i]):
-            terms.append(Term(c=coefficient*(calc_penalty(t, m_count, lower_bound)), indices=[i*T + (t - processing_time[i])]))
+            terms.append(Term(c=weight*(calc_penalty(t, m_count, lower_bound)), indices=[i*T + (t - processing_time[i])]))
 
     return terms
 ```
