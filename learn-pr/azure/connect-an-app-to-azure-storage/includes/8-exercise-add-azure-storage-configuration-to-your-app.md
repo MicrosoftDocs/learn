@@ -61,6 +61,7 @@ In the command prompt section of the window, add a reference to the  **Microsoft
 dotnet add package Microsoft.Extensions.Configuration.Json
 ```   
 
+
 ```bash
 touch appsettings.json
 ```
