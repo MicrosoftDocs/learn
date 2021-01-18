@@ -2,11 +2,11 @@ Microsoft Cloud Adoption Framework for Azure consists of documentation, implemen
 
 View this two-minute video to learn more about the cloud adoption lifecycle.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4tyzr]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyzr]
 
-## Cloud Adoption Lifecycle
+## Understand the lifecycle
 
-The following describes the cloud adoption lifecycle.
+Each of the following steps is part of the cloud adoption lifecycle.
 
 :::image type="content" source="../media/5-cloud-adoption-lifecycle-inline.png" lightbox="../media/5-cloud-adoption-lifecycle-expanded.png" alt-text="The Cloud Adoption Lifecycle diagram.":::
 
