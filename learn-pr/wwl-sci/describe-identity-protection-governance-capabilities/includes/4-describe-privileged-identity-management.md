@@ -14,6 +14,6 @@ PIM reduces the chance of a malicious actor getting access by minimizing the num
 
 In this video you will find out what PIM is, and why you might use it:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ILbu ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ILbu ]
 
 The video showed how PIM mitigates the risk to organizations of elevated privileges. The video discussed the specific benefits of using PIM features, and when an organization would use them.
