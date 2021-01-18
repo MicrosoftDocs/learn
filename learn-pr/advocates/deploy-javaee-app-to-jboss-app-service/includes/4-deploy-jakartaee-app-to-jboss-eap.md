@@ -45,7 +45,7 @@ In this module, you'll deploy an application to the JBoss EAP environment. Selec
 
 ### Build the WAR package
 
-You can use `mvn package` command to build a WAR package.
+You can use `./mvnw package` command to build a WAR package.
 
 > [!NOTE]
 > Optionally, you can test the package by deploying to a local JBoss EAP environment.

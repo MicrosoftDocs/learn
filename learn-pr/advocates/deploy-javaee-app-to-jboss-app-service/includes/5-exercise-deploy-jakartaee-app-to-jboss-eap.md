@@ -9,7 +9,7 @@ In this section, at first we'll configure the project to prepare the deployment 
 Let's configure our application executing the config goal in the Maven plugin for Azure App Service:
 
 ```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
 In the command, you need input the following values.
@@ -129,7 +129,7 @@ After configuring the Azure App Service Deployment settings, you need to compile
 To compile and package the code, execute the following command:
 
 ```bash
-mvn clean package
+./mvnw clean package
 ```
 
 Then you can see following output in the terminal:
@@ -156,7 +156,7 @@ After compiling and packaging the code, you can deploy it to the JBoss EAP on Az
 To deploy the application, execute the following command:
 
 ```bash
-mvn azure-webapp:deploy
+./mvnw azure-webapp:deploy
 ```
 
 Then you'll see the following message in the terminal:
