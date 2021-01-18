@@ -28,10 +28,8 @@ prerequisites: |
   - [Azure CLI command]((https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada))
   - [Java SE 8 (or 11)]((https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html))
   - [Git CLI](https://git-scm.com/downloads)
-  - [Maven](https://maven.apache.org/download.cgi)
   - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
   - [jq Utility](https://stedolan.github.io/jq/)
-  - [Bash Shell](https://www.gnu.org/software/bash/)
 units:
   - learn.azure.deploy-javaee-app-to-appservice.1-introduction
   - learn.azure.deploy-javaee-app-to-appservice.2-deploy-azure-database-mysql
