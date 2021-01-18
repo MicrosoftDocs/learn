@@ -69,16 +69,16 @@ touch appsettings.json
 
 Now that we have added the required libraries to enable reading configuration, we need to enable that functionality within our console application.
 
-10. Select **Program.cs** in the editor.
+1. Select **Program.cs** in the editor.
 
-11. At the top of the file, a **using System;** line is present. Underneath that line, add the following lines of code:
+2. At the top of the file, a **using System;** line is present. Underneath that line, add the following lines of code:
 
 ```csharp
     using Microsoft.Extensions.Configuration;
     using System.IO;
 ```
 
-12. Replace the contents of the **Main** method with the following code. This code initializes the configuration system to read from the **appsettings.json** file.
+3. Replace the contents of the **Main** method with the following code. This code initializes the configuration system to read from the **appsettings.json** file.
 
 ```csharp
     var builder = new ConfigurationBuilder()
