@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-identity-formerly-azure-atp
+title: Describe Microsoft Defender for Identity (formerly Azure ATP)
+metadata:
+  title: Describe Microsoft Defender for Identity (formerly Azure ATP)
+  description: "Describe Microsoft Defender for Identity (formerly Azure ATP)"
+  ms.date: 01/18/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-identity-formerly-azure-advanced-threat-protection.md)]
