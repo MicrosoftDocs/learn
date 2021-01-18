@@ -43,6 +43,6 @@ With Azure Security Center’s threat protection, you can detect and prevent thr
 
 Security Center's threat protection automatically correlates alerts in your environment based on cyber kill-chain analysis, to help you better understand the full story of an attack campaign, where it started and what kind of impact it had on your resources.
 
-### Get Secure Faster
+### Get secure faster
 
 With Security Center, organizations can get secure faster through integration with other Microsoft security solutions. Also, integration with Azure and Azure resources means you can pull together a complete security story involving Azure Policy and built-in Security Center policies across all your Azure resources, and make sure that the whole thing is automatically applied to newly discovered resources as you create them in Azure.

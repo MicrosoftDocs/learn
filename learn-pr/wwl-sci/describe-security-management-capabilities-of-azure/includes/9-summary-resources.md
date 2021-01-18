@@ -8,7 +8,7 @@ Now that you've completed this module, you should be able to: 
 - Describe the benefits and use cases of Azure Defender
 - Understand CSPM and the security baseline.
 
-### Learn More
+### Learn more
 
 To find out more about any of the topics covered in this module, please visit these links:
 
