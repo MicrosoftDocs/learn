@@ -6,6 +6,9 @@ Here you'll run your application on a VM running on Azure. MEAN supports many di
 
 Normally, you create a _resource group_ before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. For this exercise, the Azure sandbox provides a resource group for you. However, when you are working in your own Azure subscription, you would use the following command to create a resource group in a location near you.
 
+> [!NOTE] 
+>  The below example code is for you to use with your own account, not this sandbox!
+
 ```azurecli 
 (Example)az group create \
   --name <resource-group-name> \
