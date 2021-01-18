@@ -165,9 +165,9 @@ In the command prompt section of the window, add a dependency to the  **dotenv**
 
 Now that we have added the required libraries to enable reading configuration, we need to enable that functionality within our application.
 
-9. Select **index.js** in the editor.
+1. Select **index.js** in the editor.
 
-10. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This code will make environment variables defined in our **.env** file available to the program.
+1. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This code will make environment variables defined in our **.env** file available to the program.
 
 ```javascript
     #!/usr/bin/env node
