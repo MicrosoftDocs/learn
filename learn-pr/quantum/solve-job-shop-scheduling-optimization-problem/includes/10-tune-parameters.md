@@ -4,7 +4,7 @@ If you recall, the cost function is made up of four components, one for each con
 
 $$ H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \delta \cdot k(x) $$
 
-The importance attributed to each term can be adjusted using the weights (coefficients) $\alpha, \beta, \gamma, \text{ and } \delta$. The process of adjusting these weights is referred to as *parameter tuning*. In general, there's no absolute rule to determine the optimal value for each weight, and you might have to use some trial and error to figure out what works best for your problem. However, the guidelines below can help you get good starting point.
+The importance attributed to each term can be adjusted using the weights $\alpha, \beta, \gamma, \text{ and } \delta$. The process of adjusting these weights is referred to as *parameter tuning*. In general, there's no absolute rule to determine the optimal value for each weight, and you might have to use some trial and error to figure out what works best for your problem. However, the guidelines below can help you get good starting point.
 
 ### Adjusting the optimization term weight
 

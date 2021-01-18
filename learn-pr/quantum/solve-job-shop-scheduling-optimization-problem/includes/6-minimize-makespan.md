@@ -90,7 +90,7 @@ def calc_penalty(t:int, m_count:int, t0:int):
     assert m_count > 1                           # Ensure you don't divide by 0
     return (m_count**(t - t0) - 1)/float(m_count - 1)
 
-def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:int, coefficient:float):
+def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:int, weight:float):
     """
     Construct makespan minimization terms.
 
@@ -100,7 +100,7 @@ def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:i
     processing_time (dict): Operation processing times
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     m_count (int): Number of machines
-    coefficient (float): Relative importance of this constraint
+    weight (float): Relative importance of this constraint
     """
 
     terms = []
@@ -113,7 +113,7 @@ def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:i
         i = job[-1]
         # Loop through each time step the operation could be completion at
         for t in range(lower_bound + 1, T + processing_time[i]):
-            terms.append(Term(c=coefficient*(calc_penalty(t, m_count, lower_bound)), indices=[i*T + (t - processing_time[i])]))
+            terms.append(Term(c=weight*(calc_penalty(t, m_count, lower_bound)), indices=[i*T + (t - processing_time[i])]))
 
     return terms
 ```

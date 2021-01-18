@@ -89,7 +89,7 @@ Let's break that down:
 
 ### Code
 
-Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `coefficient` is included in the definition of the `Term` objects:
+Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `weight` is included in the definition of the `Term` objects:
 
 ```python
 # Reminder of the relevant parameters
@@ -109,7 +109,7 @@ machines_ops_map = {
     1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
 }
 
-def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machines_ops_map:dict, coefficient:float):
+def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machines_ops_map:dict, weight:float):
     """
     Construct penalty terms for the no overlap constraint.
 
@@ -117,7 +117,7 @@ def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machin
 
     T (int): Allowed time (jobs can only be scheduled below this limit)
     processing_time (dict): Operation processing times
-    coefficient (float): Relative importance of this constraint
+    weight (float): Relative importance of this constraint
     ops_jobs_map (dict): Map of operations to jobs {op: job}
     machines_ops_map(dict): Mapping of operations to machines, e.g.:
         machines_ops_map = {
@@ -139,19 +139,19 @@ def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machin
                     # When i != k (when scheduling two different operations)
                     if i != k:
                         # t = s meaning two operations are scheduled to start at the same time on the same machine
-                        terms.append(Term(c=coefficient*1, indices=[i*T+t, k*T+t]))
+                        terms.append(Term(c=weight*1, indices=[i*T+t, k*T+t]))
 
                         # Add penalty when operation runtimes overlap
                         for s in range(t, min(t + processing_time[i], T)):
-                            terms.append(Term(c=coefficient*1, indices=[i*T+t, k*T+s]))  
+                            terms.append(Term(c=weight*1, indices=[i*T+t, k*T+s]))  
 
                         # If operations are in the same job, penalize for the extra time 0 -> t (operations scheduled out of order)
                         if ops_jobs_map[i] == ops_jobs_map[k]:
                             for s in range(0, t):
                                 if i < k:
-                                    terms.append(Term(c=coefficient*1, indices=[i*T+t, k*T+s]))  
+                                    terms.append(Term(c=weight*1, indices=[i*T+t, k*T+s]))  
                                 if i > k:
-                                    terms.append(Term(c=coefficient*1, indices=[i*T+s, k*T+t]))  
+                                    terms.append(Term(c=weight*1, indices=[i*T+s, k*T+t]))  
 
     return terms
 ```

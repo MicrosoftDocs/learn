@@ -110,7 +110,7 @@ The following code snippet shows how you assign weight values and assemble the p
 
 ```python
 # Generate terms to submit to solver using functions defined previously
-## Assign penalty term coefficients (weights):
+## Assign penalty term weights:
 alpha = 5  # Precedence constraint
 beta = 5   # Operation once constraint
 gamma = 5  # No overlap constraint
