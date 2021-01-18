@@ -143,14 +143,31 @@ You will also need to define an objective function, which will minimize the time
 
 As you will see during the exploration of the cost function and its constituent penalty terms below, the overall cost function is quadratic (because the highest order polynomial term you have is squared). This makes this problem a **Quadratic Unconstrained Binary Optimization (QUBO)** problem, which is a specific subset of **Polynomial Unconstrained Binary Optimization (PUBO)** problems (which allow for higher-order polynomial terms than quadratic). Fortunately, the Azure Quantum Optimization service is set up to accept PUBO (and Ising) problems, which means you don't need to modify the above representation to fit the solver.
 
-As introduced above, the binary variable you are optimizing for here is $x_{i,t}$, which can take a value of either 0 or 1, depending on if the operation $i$ starts at time $t$ or not:
+As introduced above, the binary variables over which you are optimizing are the operation starting times $x_{i,t}$. Instead of using two separate indices as in the mathematical formulation, you will need to define a singly-indexed binary variable $x_{i \cdot T + t}$. Given time steps $t \in [0, T)$, every operation $i$ contributes $T$ indices. The operation starts at the value of $t$ for which $x_{i \cdot T + t}$ equals 1.
 
-$$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
-$$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
+In order to submit a problem to the Azure Quantum services, you will first be creating a `Problem` instance. This is a Python object that stores all the required information, such as the cost function details and what kind of problem we are modeling.
 
-For $t = 0 \rightarrow t < T$ for every operation, you define an indexed binary variable $x_{i \cdot T + t}$, which means that every operation in a job contributes to $T$ indices.
+To represent cost functions, we'll make use of a formulation using `Term` objects. Ultimately, any polynomial cost function can be written as a simple sum of products. That is, the function can be rewritten to have the following form, where $p_k$ indicates a product over the problem variables $x_0, x_1, \dots$:
 
-The operation starts at the value of $t$ for which $x_{i \cdot T + t}$ equals 1.
+$$ H(x) = \sum_k \alpha_k \cdot p_k(x_0, x_1, \dots) $$
+
+$$ \text{e.g. } H(x) = 5 \cdot (x_0) + 2 \cdot (x_1 \cdot x_2) - 3 \cdot ({x_3}^2) $$
+
+In this form, every term in the sum has a coefficient $\alpha_k$ and a product $p_k$. In the `Problem` instance, each term in the sum is represented by a `Term` object, with parameters `c` - corresponding to the coefficient, and `indices` - corresponding to the product. Specifically, the `indices` parameter is populated with the indices of all variables appearing in the term. For instance, the term $2 \cdot (x_1 \cdot x_2)$ translates to the following object: `Term(c=2, indices=[1,2])`.
+
+More generally, `Term` objects take on the following form:
+
+```python
+Term(c: float, indices: []) # Constant terms like +1
+Term(c: float, indices: [int]) # Linear terms like x
+Term(c: float, indices: [int, int]) # Quadratic terms like x^2 or xy
+```
+
+If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
+
+```python
+Term(c: float, indices: [int, int, int, ...])
+```
 
 ### Defining problem parameters in code
 
@@ -237,20 +254,4 @@ $$\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weigh
 
 The weights represent how important each penalty function is, relative to all the others. In the following units, you will learn how to build these penalty and objective functions, combine them to form the cost function $H(x)$, and solve the problem using Azure Quantum.
 
-From these mathematical representations, you will build out Python code which will output an array of terms, where each `Term` is an object that looks like:
-
-```python
-Term(c: float, indices: []) # Constant terms like +1
-Term(c: float, indices: [int]) # Linear terms like x
-Term(c: float, indices: [int, int]) # Quadratic terms like x^2
-```
-
-The `coefficient` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i \cdot T + t$ of the $x_{i \cdot T + t}$ values.
-
-If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
-
-```python
-Term(c: float, indices: [int, int, int, ...])
-```
-
-In the following units, you will explore how to formulate each of these constraints mathematically, and how this translates to code.
+In the following units, you will explore how to formulate each of these constraints mathematically, and how to translate them to code.
