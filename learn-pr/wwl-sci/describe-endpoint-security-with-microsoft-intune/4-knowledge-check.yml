@@ -27,7 +27,7 @@ quiz:
     - content: "Role-based access control (RBAC)."
       isCorrect: false
       explanation: "That's incorrect. RBAC is out of scope for this requirement."
-  - content: "An organization uses different types of devices, including Windows, iOS, and Android devices. Admins for that organization have created a security baseline profile in Intune that they want to apply across the devices. To which devices can the securit baseline profile be applied?"
+  - content: "An organization uses different types of devices, including Windows, iOS, and Android devices. Admins for that organization have created a security baseline profile in Intune that they want to apply across the devices. To which devices can the security baseline profile be applied?"
     choices:
     - content: "Android devices."
       isCorrect: false
