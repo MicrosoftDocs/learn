@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-event-driven-real-time.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/22/2020
+  author: SandraAhlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "How fast is real time?"
+    choices:
+    - content: "Two seconds."
+      isCorrect: false
+      explanation: "Two seconds are too much for real-time requirements."
+    - content: "An instant, more properly defined by your specific use case."
+      isCorrect: true
+      explanation: "Correct. Real-time tasks are performing with almost no delay. The execution time should be defined in advanced and monitored properly."
+    - content: "Under 1 millisecond."
+      isCorrect: false
+      explanation: "Wow, that's fast. Could be, but the execution time depends on your specific use case."
+  - content: 'Which of the following databases are best to perform event driven workloads?'
+    choices:
+    - content: Cosmos DB
+      isCorrect: true
+      explanation: "Correct. Cosmos DB ensures single-digit millisecond response times, and automatic and instant scalability."
+    - content: MySQL
+      isCorrect: false
+      explanation: "MySQL doesn't support instant scalability."
+    - content: PostgreSQL
+      isCorrect: false
+      explanation: "PostgreSQL doesn't support instant scalability."
+  - content: "How should events be build?"
+    choices:
+    - content: "Events should be build generic."
+      isCorrect: false
+      explanation: "Generic events might look like a good idea for improved maintainability, but result to likely in large events and disable loose coupling."
+    - content: "Event should be precise and lightweight."
+      isCorrect: true
+      explanation: "Correct. All events should be as precise and lightweight as possible to save network load and simplicity."
+    - content: "Events should always follow a convention."
+      isCorrect: false
+      explanation: "Naming conventions might be helpful, but for the overall event building other things are more important."
+

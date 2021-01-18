@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-event-driven-real-time
 metadata:
-  title: Deploy Event-driven real-time app to Azure
+  title: Deploy Event-driven real-time apps to Azure
   description: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
   ms.date: 12/22/2020
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy Event-driven real-time app to Azure
+title: Deploy Event-driven real-time apps to Azure
 summary: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
 abstract: |
   By the end of this module, you'll be able to:
@@ -39,6 +39,7 @@ units:
 - learn.azure.deploy-event-driven-real-time.5-exercise-cosmosdb
 - learn.azure.deploy-event-driven-real-time.6-monitoring
 - learn.azure.deploy-event-driven-real-time.7-exercise-monitoring
-- learn.azure.deploy-event-driven-real-time.8-summary
+- learn.azure.deploy-event-driven-real-time.8-knowledge-check
+- learn.azure.deploy-event-driven-real-time.9-summary
 badge:
   uid: learn.azure.deploy-event-driven-real-time.badge

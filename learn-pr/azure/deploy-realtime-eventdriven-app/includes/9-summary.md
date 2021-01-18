@@ -6,7 +6,7 @@ Your application is sending event based telemetric data in real time to Cosmos D
 
 2. Send the telemetry data towards an event hub.
 
-3. Consuming the events with a function, process them and store them in a database.
+3. Consume the events with a function, process them and store them in a database.
 
 4. Add monitoring.
 
