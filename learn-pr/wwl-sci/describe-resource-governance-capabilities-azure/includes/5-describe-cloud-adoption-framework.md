@@ -10,13 +10,13 @@ Each of the following steps is part of the cloud adoption lifecycle.
 
 :::image type="content" source="../media/5-cloud-adoption-lifecycle-inline.png" lightbox="../media/5-cloud-adoption-lifecycle-expanded.png" alt-text="The Cloud Adoption Lifecycle diagram.":::
 
-- **Strategy**: define business justification and expected outcomes of adoption.
-- **Plan**: align actionable adoption plans to business outcomes.
-- **Ready**: Prepare the cloud environment for the planned changes.
-- **Adopt**
-  - **Migrate**: Migrate and modernize existing workloads.
-  - **Innovate**: Develop new cloud-native or hybrid solutions.
-- **Govern**: Govern the environment and workloads.
-- **Manage**: Operations management for cloud and hybrid solutions.
+1. **Strategy**: define business justification and expected outcomes of adoption.
+1. **Plan**: align actionable adoption plans to business outcomes.
+1. **Ready**: Prepare the cloud environment for the planned changes.
+1. **Adopt**
+    - **Migrate**: Migrate and modernize existing workloads.
+    - **Innovate**: Develop new cloud-native or hybrid solutions.
+1. **Govern**: Govern the environment and workloads.
+1. **Manage**: Operations management for cloud and hybrid solutions.
 
 When your enterprise's digital transformation involves the cloud, understanding these fundamental concepts will help you during each step of the process.
