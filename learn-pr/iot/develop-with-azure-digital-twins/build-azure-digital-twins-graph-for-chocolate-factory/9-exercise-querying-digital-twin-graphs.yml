@@ -15,7 +15,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What are the fields of an Azure Digital Twins Definition Language (DTDL) interface?'
+  - content: 'What are the fields of a Digital Twins Definition Language (DTDL) interface?'
     choices: 
     - content: '@type, name, schema'
       isCorrect: false

@@ -4,7 +4,7 @@ In this unit, you examine the Digital Twins Definition Language (DTDL) by going 
 
 DTDL is used to build *models*. The model defines the characteristics of a real-world object. The level of detail, and the size of the object, are entirely up to you. The object can be as small as a temperature sensor, as grand as a building or factory, and as diverse as a sensor, a person, a vehicle, or a process. It can be about anything relevant to your operations. Models have names, and later on in this module you'll create digital twins of the models.
 
-Within the DTDL language, the top-level type is an *interface*. This encapsulates the entire model, and the rest of the model is defined within the interface.
+Within the DTDL, the top-level type is an *interface*. This encapsulates the entire model, and the rest of the model is defined within the interface.
 
 Think of a model as analogous to the elements of a C# class. There are properties, events, data members contained within the class, and data members that reference other C# classes. These elements correspond to the four main parts of a DTDL model: *Properties*, *Telemetry*, *Components*, and *Relationships*. A model interface can have zero, one, or many, of each of these parts.
 
@@ -242,7 +242,7 @@ The definition of the thermostat shows another DTDL construct, `Enum`. Notice th
 
 The operation of this model is implied. If the `switch` property is set to offline, nothing happens. If set to online, the property generates telemetry values for temperature. You can also use the thermostat to set a desired temperature. This value is communicated to a model of type `furnace`, or similar, to actually alter the generation of heat or cooling air.
 
-You can write code to actually operate the thermostat, say as part of a simulation. The model helps structure the code that needs to be written. This implied structure is one of the key advantages of using the DTDL modeling language: it helps clearly define what's going to be simulated, and what's out of scope.
+You can write code to actually operate the thermostat, say as part of a simulation. The model helps structure the code that needs to be written. This implied structure is one of the key advantages of using the DTDL: it helps clearly define what's going to be simulated, and what's out of scope.
 
 ## Next step
 
