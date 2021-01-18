@@ -35,4 +35,4 @@ To keep users informed about account activity, admins can configure e-mail notif
 
 In this interactive guide, you'll enable self-service password reset for users in Azure Active Directory.
 
-[![Interactive guide](../media/5-azure-ad-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP02M03%20-%20Enable%20SSPR%20in%20Azure%20Active%20Directory/index.html?azure-portal=true)
+[![Interactive guide](../media/5-azure-active-directory-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP02M03%20-%20Enable%20SSPR%20in%20Azure%20Active%20Directory/index.html?azure-portal=true)

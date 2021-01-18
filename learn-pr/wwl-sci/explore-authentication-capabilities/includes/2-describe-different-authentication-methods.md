@@ -4,7 +4,7 @@ Multi-factor authentication dramatically improves the security of an identity, w
 
 The following video explains the problem with passwords, and why multi-factor authentication is so important.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4zhD7]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zhD7]
 
 Azure Active Directory Multi-Factor Authentication works by requiring:
 
