@@ -65,7 +65,7 @@ quiz:
       - content: 'In the Azure Digital Twins query language, you can only have one JOIN statement in the FROM clause, while in a SQL-type language, you can have multiple such statements.'
         isCorrect: false
         explanation: You can use an N amount of JOIN statements following the FROM statement in the Azure Digital Twins query language.
-      - content: 'In the Azure Digital Twins query language, each expression in a FROM clause isn't a table. Instead, the FROM clause expresses a cross-entity relationship traversal, and it's written with an Azure Digital Twins version of JOIN.'
+      - content: 'In the Azure Digital Twins query language, each expression in a FROM clause is not a table. Instead, the FROM clause expresses a cross-entity relationship traversal, and it is written with an Azure Digital Twins version of JOIN.'
         isCorrect: true
         explanation: This answer is correct. The distinction is that in a SQL-type language, each expression in a FROM clause is a separate table.
       - content: 'In the Azure Digital Twins query language, the FROM clause is used to specify which table to select data from, while in a SQL-type language, each expression in a FROM clause expresses a cross-entity relationship traversal.'
