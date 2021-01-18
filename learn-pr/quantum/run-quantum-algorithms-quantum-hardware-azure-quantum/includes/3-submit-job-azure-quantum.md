@@ -73,10 +73,10 @@ Next, you'll use Visual Studio Code to create a Q# Project.
 1. Select a directory to hold your project, such as your home directory. Enter
    `MyFirstJob` as the project name, then select **Create Project**.
 
-1. From the window that appears at the bottom, select Open new project.
+1. From the window that appears at the bottom, select **Open new project**.
 
-1. You should see two files: the project file and Program.qs, which contains
-   starter code. Open `Program.qs`.
+1. You should see two files: the project file and `Program.qs`, which contains
+   starter code.
 
 1. Start by opening the `MyFirstJob.csproj` file and adding the
    `ExecutionTarget` property, which will give you design-time feedback on the
@@ -92,7 +92,8 @@ Next, you'll use Visual Studio Code to create a Q# Project.
     ```
 
    with `yy.yy.yyyyyyyy` being the number of the last version of the Quantum
-   Development Kit.
+   Development Kit. If your QDK Visual Studio Code extension is updated, the
+   version should already be up to date.
 
 1. Replace the contents of `Program.qs` with the program:
 

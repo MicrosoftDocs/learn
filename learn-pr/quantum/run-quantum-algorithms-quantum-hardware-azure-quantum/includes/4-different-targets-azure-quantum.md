@@ -51,5 +51,4 @@ cannot:
     }
 ```
 
-In the next unit you will write different examples of programs that can be run
-in a NCF target.
+In the next unit you will run Grover's algorithm in a NCF target.
