@@ -37,7 +37,7 @@ The weights represent how important each penalty function is, relative to all th
 
 ### Code
 
-As a reminder, below you again see the code representation of the problem parameters: the maximum allowed makespan `T`, the operation runtimes `p`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
+As a reminder, below you again see the code representation of the problem parameters: the maximum allowed makespan `T`, the operation processing times `processing_time`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
 
 ```python
 # Set problem parameters
@@ -45,7 +45,7 @@ As a reminder, below you again see the code representation of the problem parame
 T = 20
 
 ## Processing time for each operation
-p = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
+processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 
 ## Assignment of operations to jobs (job ID: [operation IDs])
 ### Operation IDs within a job must be in ascending order
@@ -63,13 +63,13 @@ machines_ops_map = {
 }
 
 ## Inverse mapping of jobs to operations
-ops_jobs_map, T = process_config(jobs_ops_map, machines_ops_map, p, T)
+ops_jobs_map, T = process_config(jobs_ops_map, machines_ops_map, processing_time, T)
 ```
 
 The helper function `process_config` (seen above) is defined as follows:
 
 ```python
-def process_config(jobs_ops_map:dict, machines_ops_map:dict, p:dict, T:int):
+def process_config(jobs_ops_map:dict, machines_ops_map:dict, processing_time:dict, T:int):
     """
     Process & validate problem parameters (config) and generate inverse dict of operations to jobs.
 
@@ -81,11 +81,13 @@ def process_config(jobs_ops_map:dict, machines_ops_map:dict, p:dict, T:int):
             0: [0,1],          # Operations 0 & 1 assigned to machine 0
             1: [2,3]           # Operations 2 & 3 assigned to machine 1
         }
+    processing_time (dict): Operation processing times
+    T (int): Allowed time (jobs can only be scheduled below this limit)
     """
 
     # Problem cannot take longer to complete than all operations executed sequentially
     ## Sum all operation processing times to calculate the maximum makespan
-    T = min(sum(p.values()), T) 
+    T = min(sum(processing_time.values()), T) 
 
     # Ensure operation assignments to machines are sorted in ascending order
     for m, ops in machines_ops_map.items():
@@ -116,16 +118,16 @@ delta = 0.001  # Makespan minimization (objective function)
 
 ## Build terms
 ### Constraints:
-c1 = precedence_constraint(jobs_ops_map, T, p, alpha)
+c1 = precedence_constraint(jobs_ops_map, T, processing_time, alpha)
 c2 = operation_once_constraint(ops_jobs_map, T, beta)
-c3 = no_overlap_constraint(T, p, ops_jobs_map, machines_ops_map, gamma)
+c3 = no_overlap_constraint(T, processing_time, ops_jobs_map, machines_ops_map, gamma)
 
 ### Objective function
-c4 = makespan_objective(T, p, jobs_ops_map, len(machines_ops_map), delta)
+c4 = makespan_objective(T, processing_time, jobs_ops_map, len(machines_ops_map), delta)
 
 ### Combine terms:
 terms = []
-terms = c1 + c2 + c3 + w4
+terms = c1 + c2 + c3 + c4
 ```
 
 > [!NOTE]

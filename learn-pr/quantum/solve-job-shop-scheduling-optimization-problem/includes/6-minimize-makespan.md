@@ -45,7 +45,7 @@ $$J_{0}: p_0 + p_1 = 2 + 1 = 3 $$
 $$J_{1}: p_2 + p_3 = 2 + 2 = 4 $$
 $$J_{2}: p_4 + p_5 = 1 + 2 = 3 $$
 
-$$&\Rightarrow M_{lb} = 4$$
+$$\Rightarrow M_{lb} = 4$$
 
 Finally, the makespan is upper-bounded by the sequential execution time of all jobs, $3 + 4 + 3 = 10$ in this case. The time T should never exceed this upper bound. Regardless of whether this is the case or not, you need to include penalties for all time steps up to $T$, or else larger time steps without a penalty will be favored over smaller ones!
 
@@ -70,11 +70,11 @@ The code below implements the ideas discussed above by generating the necessary 
 
 ```python
 # Reminder of the relevant parameters
-## Time to allow for all jobs to complete
+## Allowed time (jobs can only be scheduled below this limit)
 T = 20 
 
 ## Processing time for each operation
-p = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
+processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 
 ## Assignment of operations to jobs (job ID: [operation IDs])
 jobs_ops_map = {
@@ -83,34 +83,34 @@ jobs_ops_map = {
     2: [4, 5]
 }
 
-def calc_penalty(t:int, m:int, t0:int): 
-    assert m > 1                           # Ensure you don't divide by 0
-    return (m**(t-t0) - 1)/float(m - 1)
+def calc_penalty(t:int, m_count:int, t0:int): 
+    assert m_count > 1                           # Ensure you don't divide by 0
+    return (m_count**(t - t0) - 1)/float(m_count - 1)
 
-def makespan_objective(T:int, p:dict, jobs_ops_map:dict, m:int, c:float):
+def makespan_objective(T:int, processing_time:dict, jobs_ops_map:dict, m_count:int, coefficient:float):
     """
     Construct makespan minimization terms.
 
     Keyword arguments:
     
-    T (int): Time allowed to complete all operations
-    p (dict): Operation processing times
+    T (int): Allowed time (jobs can only be scheduled below this limit)
+    processing_time (dict): Operation processing times
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
-    m (int): Number of machines
-    c (float): Relative weight of this constraint (the coefficient)
+    m_count (int): Number of machines
+    coefficient (float): Relative importance of this constraint
     """
     
     terms = []
     
-    lower_bound = max([sum([p[i] for i in job]) for job in jobs_ops_map.values()])
+    lower_bound = max([sum([processing_time[i] for i in job]) for job in jobs_ops_map.values()])
     upper_bound = T
     
     # Loop through the final operation of each job
     for job in jobs_ops_map.values():
         i = job[-1]
         # Loop through each time step the operation could be completion at
-        for t in range(lower_bound+1, T+p[i]):
-            terms.append(Term(c=c*(calc_penalty(t, m, lower_bound)), indices=[i*T+(t-p[i])]))
+        for t in range(lower_bound + 1, T + processing_time[i]):
+            terms.append(Term(c=coefficient*(calc_penalty(t, m_count, lower_bound)), indices=[i*T + (t - processing_time[i])]))
 
     return terms
 ```

@@ -82,7 +82,7 @@ Let's break that down:
 
 ### Code
 
-Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the coefficient (weight) term `c` included in this code snippet - this will be assigned a value later on when you call the function:
+Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the coefficient term `coefficient` included in this code snippet - this will be assigned a value later on when you call the function:
 
 ```python
 # Reminder of the relevant parameters
@@ -90,7 +90,7 @@ Using the mathematical formulation and the breakdown above, you can now translat
 T = 20 
 
 ## Processing time for each operation
-p = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
+processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 
 ## Assignment of operations to jobs (job ID: [operation IDs])
 jobs_ops_map = {
@@ -99,16 +99,16 @@ jobs_ops_map = {
     2: [4, 5]
 }
 
-def precedence_constraint(jobs_ops_map:dict, T:int, p:dict, c:float):
+def precedence_constraint(jobs_ops_map:dict, T:int, processing_time:dict, coefficient:float):
     """
     Construct penalty terms for the precedence constraint.
 
     Keyword arguments:
     
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
-    T (int): Time allowed to complete all operations
-    p (dict): Operation processing times
-    c (float): Relative weight of this constraint (the coefficient)
+    T (int): Allowed time (jobs can only be scheduled below this limit)
+    processing_time (dict): Operation processing times
+    coefficient (float): Relative importance of this constraint
     """
     
     terms = []
@@ -119,9 +119,9 @@ def precedence_constraint(jobs_ops_map:dict, T:int, p:dict, c:float):
         for i in range(len(ops) - 1):
             for t in range(0, T):
                 # Loop over times that would violate the constraint:
-                for s in range(0, min(t + p[ops[i]], T)):
+                for s in range(0, min(t + processing_time[ops[i]], T)):
                     # Assign penalty
-                    terms.append(Term(c=c, indices=[ops[i]*T+t, (ops[i+1])*T+s]))
+                    terms.append(Term(c=coefficient, indices=[ops[i]*T+t, (ops[i+1])*T+s]))
 
     return terms
 ```

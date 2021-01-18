@@ -45,20 +45,20 @@ For larger or more complex problems, it will not always be possible to verify th
 You can perform this validation using the following code snippet, which checks the solution against all three constraints before declaring the solution valid or not. If any of the constraints are violated, the solution will be marked as invalid. An example of an invalid solution has also been included, for comparison.
 
 ```python
-def check_precedence(p, jobs):
+def check_precedence(processing_time, jobs):
     """    
     Check if the solution violates the precedence constraint.
     Returns True if the constraint is violated.       
     
     Keyword arguments:
-    p (dict): Operation processing times
+    processing_time (dict): Operation processing times
     jobs (List[List[int]]): List of operation start times, grouped into jobs
     """
 
     op_id = 0
     for job in jobs:
         for i in range(len(job) - 1):
-            if job[i+1] - job[i] < p[op_id]:
+            if job[i+1] - job[i] < processing_time[op_id]:
                 return True
             op_id += 1
         op_id += 1
@@ -77,7 +77,7 @@ def check_operation_once(matrix):
             return True
     return False
 
-def check_no_overlap(op_start_times:list, machines_ops_map:dict, p:dict):
+def check_no_overlap(op_start_times:list, machines_ops_map:dict, processing_time:dict):
     """    
     Check if the solution violates the no overlap constraint.
     Returns True if the constraint is violated.       
@@ -85,9 +85,9 @@ def check_no_overlap(op_start_times:list, machines_ops_map:dict, p:dict):
     Keyword arguments:
     op_start_times (list): Start times for the operations
     machines_ops_map(dict): Mapping of machines to operations
-    p (dict): Operation processing times
+    processing_time (dict): Operation processing times
     """
-    pvals = list(p.values())
+    pvals = list(processing_time.values())
 
     # For each machine
     for ops in machines_ops_map.values():
@@ -106,7 +106,7 @@ def check_no_overlap(op_start_times:list, machines_ops_map:dict, p:dict):
 
     return False
     
-def validate_solution(matrix:dict, machines_ops_map:dict, p:dict, jobs_ops_map:dict):
+def validate_solution(matrix:dict, machines_ops_map:dict, processing_time:dict, jobs_ops_map:dict):
     """    
     Check that solution has not violated any constraints. 
     Returns True if the solution is valid.       
@@ -114,16 +114,16 @@ def validate_solution(matrix:dict, machines_ops_map:dict, p:dict, jobs_ops_map:d
     Keyword arguments:
     matrix (List[List[int]]): Matrix of x_i,t values
     machines_ops_map(dict): Mapping of machines to operations
-    p (dict): Operation processing times
+    processing_time (dict): Operation processing times
     jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
     """
 
     jobs, op_start_times = extract_start_times(jobs_ops_map, matrix)
 
     # Check if constraints are violated
-    precedence_violated = check_precedence(p, jobs)
+    precedence_violated = check_precedence(processing_time, jobs)
     operation_once_violated = check_operation_once(matrix)
-    no_overlap_violated = check_no_overlap(op_start_times, machines_ops_map, p)
+    no_overlap_violated = check_no_overlap(op_start_times, machines_ops_map, processing_time)
     
     if not precedence_violated and not operation_once_violated and not no_overlap_violated:
         print("Solution is valid.\n")
@@ -133,7 +133,7 @@ def validate_solution(matrix:dict, machines_ops_map:dict, p:dict, jobs_ops_map:d
         print(f"\tOperation once constraint violated: {operation_once_violated}")
         print(f"\tNo overlap constraint violated: {no_overlap_violated}\n")
 
-print_problem_details(ops_jobs_map, p, machines_ops_map)
+print_problem_details(ops_jobs_map, processing_time, machines_ops_map)
 
 print("Azure Quantum solution:")
 print_matrix(T, matrix)
@@ -142,7 +142,7 @@ print("Operation start times (grouped into jobs):")
 print(jobs)
 print()
 
-validate_solution(matrix, machines_ops_map, p, jobs_ops_map)
+validate_solution(matrix, machines_ops_map, processing_time, jobs_ops_map)
 ```
 
 When you run this code, you will see the following in the output window:
@@ -155,15 +155,15 @@ Operation runtime: [2, 1, 2, 2, 1, 2]
 
 Azure Quantum solution:
     t: 0 1 2 3 4 5 6 7 8 9
-x_0,t: 1 0 0 0 0 0 0 0 0 0
+x_0,t: 0 1 0 0 0 0 0 0 0 0
 x_1,t: 0 0 0 1 0 0 0 0 0 0
-x_2,t: 0 0 1 0 0 0 0 0 0 0
-x_3,t: 0 0 0 0 1 0 0 0 0 0
-x_4,t: 0 0 1 0 0 0 0 0 0 0
+x_2,t: 1 0 0 0 0 0 0 0 0 0
+x_3,t: 0 0 1 0 0 0 0 0 0 0
+x_4,t: 1 0 0 0 0 0 0 0 0 0
 x_5,t: 0 0 0 0 1 0 0 0 0 0
 
 Operation start times (grouped into jobs):
-[[0, 3], [2, 4], [2, 4]]
+[[1, 3], [0, 2], [0, 4]]
 
 Solution is valid.
 ```

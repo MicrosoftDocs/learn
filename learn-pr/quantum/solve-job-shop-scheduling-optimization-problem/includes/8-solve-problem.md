@@ -64,14 +64,14 @@ def create_op_array(config: dict):
         variables.insert(int(key), val)
     return variables
 
-def print_problem_details(ops_jobs_map:dict, p:dict, machines_ops_map:dict):
+def print_problem_details(ops_jobs_map:dict, processing_time:dict, machines_ops_map:dict):
     """
     
     Print problem details e.g. operation runtimes and machine assignments.        
     
     Keyword arguments:
     ops_jobs_map (dict): Map of operations to jobs {operation: job}
-    p (dict): Operation processing times
+    processing_time (dict): Operation processing times
     machines_ops_map(dict): Mapping of machines to operations
     """
 
@@ -83,7 +83,7 @@ def print_problem_details(ops_jobs_map:dict, p:dict, machines_ops_map:dict):
     
     print(f"           Job ID: {list(ops_jobs_map.values())}")
     print(f"     Operation ID: {list(ops_jobs_map.keys())}")
-    print(f"Operation runtime: {list(p.values())}")
+    print(f"Operation runtime: {list(processing_time.values())}")
     print(f" Assigned machine: {machines}")
     print()
     
@@ -163,7 +163,7 @@ print(f"Config dict:\n{config}\n")
 print(f"Config array:\n{op_array}\n")
 
 # Print problem setup
-print_problem_details(ops_jobs_map, p, machines_ops_map)
+print_problem_details(ops_jobs_map, processing_time, machines_ops_map)
 
 # Print final operation matrix, using the returned config
 print("Operation matrix:")
@@ -176,7 +176,7 @@ jobs, op_start_times = extract_start_times(jobs_ops_map, matrix)
 print(jobs)
 
 # Calculate makespan (time taken to complete all operations - the objective you are minimizing)
-op_end_times = [op_start_times[i] + p[i] for i in range(len(op_start_times))]
+op_end_times = [op_start_times[i] + processing_time[i] for i in range(len(op_start_times))]
 makespan = max(op_end_times)
 
 print(f"\nMakespan (time taken to complete all operations): {makespan}")

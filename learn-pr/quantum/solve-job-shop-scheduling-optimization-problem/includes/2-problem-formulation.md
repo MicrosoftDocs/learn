@@ -154,7 +154,7 @@ The operation starts at the value of $t$ for which $x_{i*T + t}$ equals 1.
 
 ### Defining problem parameters in code
 
-Now that you've defined the problem parameters mathematically, you can transform this information to code. Below, you can see the code representation of the problem parameters: the maximum allowed makespan `T`, the operation runtimes `p`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
+Now that you've defined the problem parameters mathematically, you can transform this information to code. Below, you can see the code representation of the problem parameters: the maximum allowed time `T`, the operation processing times `processing_time`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
 
 ```python
 # Set problem parameters
@@ -162,7 +162,7 @@ Now that you've defined the problem parameters mathematically, you can transform
 T = 20 
 
 ## Processing time for each operation
-p = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
+processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
 
 ## Assignment of operations to jobs (job ID: [operation IDs])
 ### Operation IDs within a job must be in ascending order
@@ -180,13 +180,13 @@ machines_ops_map = {
 }
 
 ## Inverse mapping of jobs to operations
-ops_jobs_map, T = process_config(jobs_ops_map, machines_ops_map, p, T)
+ops_jobs_map, T = process_config(jobs_ops_map, machines_ops_map, processing_time, T)
 ```
 
 The helper function `process_config` (seen above) is defined as follows:
 
 ```python
-def process_config(jobs_ops_map:dict, machines_ops_map:dict, p:dict, T:int):
+def process_config(jobs_ops_map:dict, machines_ops_map:dict, processing_time:dict, T:int):
     """
     Process & validate problem parameters (config) and generate inverse dict of operations to jobs.
 
@@ -198,11 +198,13 @@ def process_config(jobs_ops_map:dict, machines_ops_map:dict, p:dict, T:int):
             0: [0,1],          # Operations 0 & 1 assigned to machine 0
             1: [2,3]           # Operations 2 & 3 assigned to machine 1
         }
+    processing_time (dict): Operation processing times
+    T (int): Allowed time (jobs can only be scheduled below this limit)
     """
 
     # Problem cannot take longer to complete than all operations executed sequentially
     ## Sum all operation processing times to calculate the maximum makespan
-    T = min(sum(p.values()), T) 
+    T = min(sum(processing_time.values()), T) 
 
     # Ensure operation assignments to machines are sorted in ascending order
     for m, ops in machines_ops_map.items():
@@ -243,7 +245,7 @@ Term(c: float, indices: [int]) # Linear terms like x
 Term(c: float, indices: [int, int]) # Quadratic terms like x^2
 ```
 
-The `c` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i + t$ of the $x_{i+t}$ values.
+The `coefficient` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i + t$ of the $x_{i+t}$ values.
 
 If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
 
