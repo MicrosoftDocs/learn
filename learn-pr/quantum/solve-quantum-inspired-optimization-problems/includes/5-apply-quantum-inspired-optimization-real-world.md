@@ -79,7 +79,7 @@ To represent cost functions, we'll make use of a formulation using `Term` object
 
 $$ H(x) = \sum_k \alpha_k \cdot p_k(x_0, x_1, \dots) $$
 
-$$ \text{e.g. ~~} H(x) = 5 \cdot (x_0) + 2 \cdot (x_1 \cdot x_2) - 3 \cdot ({x_3}^2) $$
+$$ \text{e.g. } H(x) = 5 \cdot (x_0) + 2 \cdot (x_1 \cdot x_2) - 3 \cdot ({x_3}^2) $$
 
 In this form, every term in the sum has a coefficient $\alpha_k$ and a product $p_k$. In the `Problem` instance, each term in the sum is represented by a `Term` object, with parameters `w` - corresponding to the coefficient, and `indices` - corresponding to the product. Specifically, the `indices` parameter is populated with the indices of all variables appearing in the term. For instance, the term $2 \cdot (x_1 \cdot x_2)$ translates to the following object: `Term(w=2, indices=[1,2])`.
 
@@ -97,7 +97,7 @@ $$ H(x) = \sum_{k=0}^{n^2-1} \alpha_k \cdot p_k(x_0, \cdots, x_{n-1}) $$
 
 Let's plug in some numbers! We will use 3 mineral chunks with the weights $w_i \in [2,4,7]$, and thus with indices $i,j \in \{0,1,2\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
 
-$$ \begin{align} H(x) &= (2 \cdot 2) \cdot (x_0 \cdot x_0) + (2 \cdot 4) \cdot (x_0 \cdot x_1) + (2 \cdot 7) \cdot (x_0 \cdot x_2) \\ &+ (4 \cdot 2) \cdot (x_1 \cdot x_0) + (4 \cdot 4) \cdot (x_1 \cdot x_1) + (4 \cdot 7) \cdot (x_1 \cdot x_2) \\ &+ (7 \cdot 2) \cdot (x_2 \cdot x_0) + (7 \cdot 4) \cdot (x_2 \cdot x_1) + (7 \cdot 7) \cdot (x_2 \cdot x_2) \end{align} $$
+$$ \begin{align} H(x) & = (2 \cdot 2) \cdot (x_0 \cdot x_0) + (2 \cdot 4) \cdot (x_0 \cdot x_1) + (2 \cdot 7) \cdot (x_0 \cdot x_2) \\ & + (4 \cdot 2) \cdot (x_1 \cdot x_0) + (4 \cdot 4) \cdot (x_1 \cdot x_1) + (4 \cdot 7) \cdot (x_1 \cdot x_2) \\ & + (7 \cdot 2) \cdot (x_2 \cdot x_0) + (7 \cdot 4) \cdot (x_2 \cdot x_1) + (7 \cdot 7) \cdot (x_2 \cdot x_2) \end{align} $$
 
 Because this is an Ising problem, the variables $x_i$ can take on a value of either $1$ or $-1$, which implies that $x_i^2$ will always equal $1$. As we do not care what the actual value of $H$ is, only that it is minimized, we can safely remove these terms. The final form, now containing six instead of nine terms, is then given by:
 
@@ -105,12 +105,12 @@ $$ H(x) = 8 \cdot (x_0 \cdot x_1) + 14 \cdot (x_0 \cdot x_2) + 8 \cdot (x_1 \cdo
 
 In Python, we would thus introduce the following `Terms`:
 
-- `Term(w = 8 , indices=[0, 1])`
-- `Term(w = 14, indices=[0, 2])`
-- `Term(w = 8 , indices=[1, 0])`
-- `Term(w = 28, indices=[1, 2])`
-- `Term(w = 14, indices=[2, 0])`
-- `Term(w = 28, indices=[2, 1])`
+- `Term(w = 8 , indices = [0, 1])`
+- `Term(w = 14, indices = [0, 2])`
+- `Term(w = 8 , indices = [1, 0])`
+- `Term(w = 28, indices = [1, 2])`
+- `Term(w = 14, indices = [2, 0])`
+- `Term(w = 28, indices = [2, 1])`
 
 The function below generalizes the `Term` creation for any number of weights using some for loops. It takes an array of mineral weights and returns a `Problem` object containing the cost function.
 
