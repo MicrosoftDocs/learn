@@ -8,7 +8,7 @@ Now that you've completed this module, you should be able to:
 - Describe how Azure can protect your VMs
 - Describe how encryption on Azure can protect your data.  
 
-### Learn More
+### Learn more
 
 To find out more about any of the topics covered in this module, please visit these links:
 
