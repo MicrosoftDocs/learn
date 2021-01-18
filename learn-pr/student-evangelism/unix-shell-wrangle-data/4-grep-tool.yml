@@ -10,7 +10,5 @@ metadata:
   ms.prod: learning-azure
 title:  Use the grep command to match regular expressions
 durationInMinutes: 2
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/4-grep-tool.md)]

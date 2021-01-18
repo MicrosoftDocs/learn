@@ -10,7 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to regular expressions
 durationInMinutes: 5
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/3-regular-expressions.md)]
