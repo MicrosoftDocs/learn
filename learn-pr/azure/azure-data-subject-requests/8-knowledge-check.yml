@@ -18,7 +18,7 @@ quiz:
 
   - content: "Which regulation provides the right to be forgotten?"
     choices:
-    - content: "General Data Protection Regulation (GDPR) only"
+    - content: "GDPR only"
       isCorrect: false
       explanation: "That's incorrect. The GDPR provides the right to erasure, which is also known as the right to be forgotten, but so does the California Consumer Privacy Act (CCPA). "
     - content: "CCPA only"
