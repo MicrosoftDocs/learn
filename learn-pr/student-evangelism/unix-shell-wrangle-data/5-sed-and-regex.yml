@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to the stream editor
 durationInMinutes: 3
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/5-sed-and-regex.md)]
