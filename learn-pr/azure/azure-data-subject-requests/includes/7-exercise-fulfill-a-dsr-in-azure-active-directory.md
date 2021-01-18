@@ -11,7 +11,7 @@ You're the administrator for Contoso, Ltd. You’ve been asked to evaluate the D
    - Name: **Avery Howard**
    - First name: **Avery**
    - Last name: **Howard**
-   - Password: **Auto-generate passsword**
+   - Password: **Auto-generate password**
    - Block sign in: **No**
    - Usage location: **United Kingdom**
    - Job title: **B2C**
