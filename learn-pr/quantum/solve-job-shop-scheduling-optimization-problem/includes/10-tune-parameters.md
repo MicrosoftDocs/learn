@@ -16,11 +16,11 @@ $$ m = 2, ~ T = 10, ~ max(p_i) = 2, ~ M_{lb} = 4, ~ w_t = \frac{m^{t-M_{lb}}}{m-
 
 Then, you calculate the upper bound as follows:
 
-First, calculate the latest time an operation could finish. This is given by the max time $T$ (minus one because you are using 0-based indexing), plus the longest processing time for any operation:
+First, calculate the latest time an operation could finish. This is given by the max time $T$ (minus one because you are using 0-based indexing), plus the longest processing time for any operation ($max(p_i)$):
 $$ t_{max} = T - 1 + max(p_i) = 10 - 1 + 2 = 11$$
 
 Then, calculate $w_{t_{max}}$:
-$$ w_{t_{max}} = \frac{m ^ {t_max - M_{lb}}}{m - 1} = \frac{2^{11 - 4}}{2 - 1} = \frac{2^{7}}{1} = 128 $$
+$$ w_{t_{max}} = \frac{m ^ {t_{max} - M_{lb}}}{m - 1} = \frac{2^{11 - 4}}{2 - 1} = \frac{2^{7}}{1} = 128 $$
 
 The upper bound is then:
 
