@@ -25,7 +25,7 @@ To configure an application to receive messages from an Event Hub, provide the f
 
 If you have a receiver application that stores messages in Azure Blob Storage, you'll also need to configure a storage account.
 
-## Azure CLI commands for creating a general-purpose standard storage account
+## Azure CLI commands to create a general-purpose standard storage account
 
 The Azure CLI provides a set of commands you can use to create and manage a storage account. We'll work with them in the next unit, but here's a basic synopsis of the commands.
 
@@ -39,13 +39,13 @@ The Azure CLI provides a set of commands you can use to create and manage a stor
 | `storage account show-connection-string` | Retrieve the connection string for an Azure Storage account. |
 | `storage container create` | Creates a new container in a storage account. |
 
-## Shell command for cloning an application GitHub repository
+## Shell command to clone an application GitHub repository
 
 Git is a collaboration tool that uses a distributed version control model, and is designed for collaborative working on software and documentation projects. Git clients are available for multiple platforms, including Windows, and the Git command line is included in the Azure Bash cloud shell. GitHub is a web-based hosting service for Git repositories.
 
 If you have an application that is hosted as a project in GitHub, you can make a local copy of the project, by cloning its repository using the **git clone** command.
 
-## Editing files in the Cloud Shell
+## Edit files in the Cloud Shell
 
 You can use one of the built-in editors in the Cloud Shell to modify all the files that make up the application and add your Event Hub namespace, Event Hub name, shared access policy name, and primary key. 
 

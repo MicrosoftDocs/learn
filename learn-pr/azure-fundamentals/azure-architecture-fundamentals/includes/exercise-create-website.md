@@ -36,7 +36,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you used to activate the sandbox.
 
-1. On the top of the Azure portal left pane, select **Create a resource**.
+1. On the top left of the Azure portal pane, select **Create a resource**.
 
     [![Screenshot of the Azure portal showing the left pane with Create a resource option highlighted.](../media/create-resource.png)](../media/create-resource-expanded.png#lightbox)
 
@@ -86,7 +86,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     [![Screenshot of the Azure portal showing New App Service plan configuration with the Pricing tier button highlighted.](../media/new-service-plan-config.png)](../media/new-service-plan-config-expanded.png#lightbox)
 
-1. The **Spec Picker** allows us to select a new pricing tier for our application. This screen opens to the **Production** tab, with the S1 pricing tier selected. We'll select a new pricing tier from the **Dev / Test** tab for our website.
+1. The **Spec Picker** enables us to select a new pricing tier for our application. This screen opens to the **Production** tab, with the S1 pricing tier selected. We'll select a new pricing tier from the **Dev / Test** tab for our website.
 
     Select the **Dev / Test** tab, then select the **F1** pricing tier, and then select **Apply**.
 
@@ -96,8 +96,8 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Finally, select the **Create** button to start the deployment of your new site.
 
-> [!NOTE]
-> If you encounter an issue when you create the resources, verify you've selected the **F1** pricing tier in the new App Service plan. Using the F1 pricing tier is a requirement of the sandbox system when you create this WordPress site.
+    > [!NOTE]
+    > If you encounter an issue when you create the resources, verify you've selected the **F1** pricing tier in the new App Service plan. Using the F1 pricing tier is a requirement of the sandbox system when you create this WordPress site.
 
 ## Verify your website is running
 
@@ -127,6 +127,6 @@ We can track the progress of the deployment at any time.
 
 1. Copy the **URL** information by selecting the **Copy to clipboard** icon at the end of URL.
 
-1. Open a new tab in your browser, paste this URL, and press Enter to browse to your new WordPress site. You can now configure your WordPress site, and add content.
+1. Open a new tab in your browser, paste this URL, and press <kbd>Enter</kbd> to browse to your new WordPress site. You can now configure your WordPress site, and add content.
 
     :::image type="content" source="../media/configure-wordpress.png" alt-text="Screenshot showing preconfigured WordPress website waiting on language/location selection." loc-scope="third-party":::

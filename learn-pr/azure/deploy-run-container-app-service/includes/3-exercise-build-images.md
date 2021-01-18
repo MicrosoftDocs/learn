@@ -10,7 +10,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
-1. Choose **Create a resource**, select **Containers**, and then select **Container Registry**.
+1. Select **Create a resource**, then select **Containers**, and then select **Container Registry**.
 
    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/3-search-container-registry-annotated.png)
 
@@ -24,7 +24,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
    | Location | Select a location that is close to you. |
    | SKU | **Standard** |
 
-1. Click **Create**. Wait until the container registry has been created before you continue.
+1. Select **Create**. Wait until the container registry has been created before you continue.
 
 ## Build a Docker image and upload it to Azure Container Registry
 

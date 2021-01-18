@@ -33,7 +33,7 @@ The main characteristics of a relational database are:
 - A foreign key references rows in another, related table. For each value in the foreign key column, there should be a row with the same value in the corresponding primary key column in the other table.
 
 > [!NOTE]
-> Creating a relational database model for a large organization is not a trivial task. It can take several iterations to define tables to match the characteristics described above. Sometimes you have to split an entity into more than one table. This process is called [*normalization*](https://docs.microsoft.com/office/troubleshoot/access/database-normalization-description).
+> Creating a relational database model for a large organization is a not a trivial task. It can take several iterations to define tables to match the characteristics described above. Sometimes you have to split an entity into more than one table. This process is called [*normalization*](https://docs.microsoft.com/office/troubleshoot/access/database-normalization-description).
 
 Most relational databases support Structured Query Language (SQL). You use SQL to create tables, insert, update, and delete rows in tables, and to query data. You use the `CREATE TABLE` command to create a table, the `INSERT` statement to store data in a table, the `UPDATE` statement to modify data in a table, and the `DELETE` statement to remove rows from a table. The `SELECT` statement retrieves data from a table. The example query below finds the details of every customer from the sample database shown above. 
 
