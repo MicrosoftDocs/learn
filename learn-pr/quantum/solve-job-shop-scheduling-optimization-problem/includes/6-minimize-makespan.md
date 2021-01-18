@@ -15,11 +15,14 @@ Some care is required in determining the penalty values, or *coefficients*, of t
 Precisely, you want your coefficients to satisfy:
 $$ w_{t+1} > m \cdot w_{t} $$
 
+
 For a suitable parameter $\epsilon > 0$, you can then solve the following recurrence relation:
 $$ w_{t+1} = m \cdot w_{t}+\epsilon $$
 
+
 The simplest solution is given by the function:
 $$ w_{t} = \epsilon \cdot \frac{m^t-1}{m-1} $$
+
 
 #### Limiting the number of terms
 

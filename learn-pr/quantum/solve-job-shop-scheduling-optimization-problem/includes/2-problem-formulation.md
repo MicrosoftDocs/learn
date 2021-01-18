@@ -1,4 +1,4 @@
-The job shop scheduling problem is defined as follows: you have a set of jobs ($J_0, J_1, J_2, \dots, J_{a-1} \text{, where } a \text{ is the total number of jobs}$), which have various processing times and need to be processed using a set of machines ($m_0, m_1, m_2, \dots, m_{b-1}\text{, where } b \text{ is the total number of machines}$). The goal is to complete all jobs in the shortest time possible (this is called minimizing the **makespan**).
+The job shop scheduling problem is defined as follows: you have a set of jobs ($J_0, J_1, J_2, \dots, J_{a-1}$, where $a$ is the total number of jobs), which have various processing times and need to be processed using a set of machines ($m_0, m_1, m_2, \dots, m_{b-1}$, where $b$ is the total number of machines). The goal is to complete all jobs in the shortest time possible (this is called minimizing the **makespan**).
 
 Each job consists of a set of operations, and the operations must be performed in the correct order to complete that job.
 
