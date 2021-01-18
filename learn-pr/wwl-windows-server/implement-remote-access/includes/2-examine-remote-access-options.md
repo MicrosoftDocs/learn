@@ -83,7 +83,7 @@ After you configure the initial remote access settings, you can manage your remo
 | Remote Client Status | You can access detailed information on the status of the clients that are connecting to your remote access solution. |
 | Reporting            | You can generate historical reports on different parameters, such as remote access usage, access details, connection details, and server load statistics. |
 
-:::image type="content" source="../media/m15-ras1.png" alt-text="A screenshot of the Remote Access Management Console. The Dashboard is selected.":::
+:::image type="content" source="../media/m15-remote-access-management-console-1.png" alt-text="A screenshot of the Remote Access Management Console. The Dashboard is selected.":::
 
 ### Routing and Remote Access console
 
@@ -96,4 +96,4 @@ You can use the Routing and Remote Access console to configure a server running 
 | IPv4                                                         | You can configure the IPv4 settings such as NAT, IPv4 routing with static routes, and these routing protocols: RIP version 2, IGMP, and the DHCP Relay Agent. |
 | IPv6                                                         | You can configure IPv6 settings, such as IPv6 routing with static routes and the DHCP Relay Agent routing protocol. |
 
-:::image type="content" source="../media/m15-ras2.png" alt-text="A screenshot of the Routing and Remote Access console. SEA-ADM1 is setup as a VPN server.":::
+:::image type="content" source="../media/m15-remote-access-management-console-2.png" alt-text="A screenshot of the Routing and Remote Access console. SEA-ADM1 is setup as a VPN server.":::
