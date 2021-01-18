@@ -38,7 +38,7 @@ quiz:
     - content: 'Properties are expected to have storage, that can be written to if necessary. Telemetry is a stream of values.'
       isCorrect: true
       explanation: Typically telemetry is sent by a sensor (such as for temperature, humidity, or pressure). Properties might include ID, or date of last maintenance.
-    - content: 'Properties don't change, whereas telemetry changes continuously.'
+    - content: 'Properties do not change, whereas telemetry changes continuously.'
       isCorrect: false
       explanation: Telemetry might not change, and properties can be set as writable, and written to.
     - content: 'Telemetry is for IoT devices, whereas properties are for digital twins.'
