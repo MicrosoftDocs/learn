@@ -4,10 +4,12 @@ title: Use jump servers
 metadata:
   title: Use jump servers
   description: "Use jump servers"
-  ms.date: 01/07/2021
+  ms.date: 01/18/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-use-jump-servers.md)]
