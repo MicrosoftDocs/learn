@@ -13,13 +13,13 @@ Let's come up with terms that increase the value of the cost function the furthe
 Some care is required in determining the penalty values, or *coefficients*, of these terms. Recall that you are given a set of operations $\{O_i\}$, which each take processing time $p_i$ to complete. An operation scheduled at time $t$ will then *complete* at time $t + p_i$. Let's define the coefficient $w_t$ as the penalty applied to the cost function for an operation to finish at time $t$. As operations can be scheduled in parallel, you don't know how many might complete at any given time, but you do know that this number is at most equal to the number of available machines $m$. The sum of all penalty values for operations completed at time $t$ are thus in the range $[0, ~m \cdot w_t]$. You want to avoid situations were completing a single operation at time $t+1$ is less expensive than m operations at time $t$. Thus, the penalty values cannot follow a simple linear function of time.
 
 Precisely, you want your coefficients to satisfy:
-$$ w_{t+1} > m \times w_{t} $$
+$$ w_{t+1} > m \cdot w_{t} $$
 
 For a suitable parameter $\epsilon > 0$, you can then solve the following recurrence relation:
-$$ w_{t+1} = m \times w_{t}+\epsilon $$
+$$ w_{t+1} = m \cdot w_{t}+\epsilon $$
 
 The simplest solution is given by the function:
-$$ w_{t} = \epsilon \times \frac{m^t-1}{m-1} $$
+$$ w_{t} = \epsilon \cdot \frac{m^t-1}{m-1} $$
 
 #### Limiting the number of terms
 

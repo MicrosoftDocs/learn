@@ -148,9 +148,9 @@ As introduced above, the binary variable you are optimizing for here is $x_{i,t}
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-For $t = 0 \rightarrow t < T$ for every operation, you define an indexed binary variable $x_{i \times T + t}$, which means that every operation in a job contributes to $T$ indices.
+For $t = 0 \rightarrow t < T$ for every operation, you define an indexed binary variable $x_{i \cdot T + t}$, which means that every operation in a job contributes to $T$ indices.
 
-The operation starts at the value of $t$ for which $x_{i \times T + t}$ equals 1.
+The operation starts at the value of $t$ for which $x_{i \cdot T + t}$ equals 1.
 
 ### Defining problem parameters in code
 
@@ -245,7 +245,7 @@ Term(c: float, indices: [int]) # Linear terms like x
 Term(c: float, indices: [int, int]) # Quadratic terms like x^2
 ```
 
-The `coefficient` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i \times T + t$ of the $x_{i \times T + t}$ values.
+The `coefficient` element represents the coefficient (weight) for each term, and the `indices` array represents the indices $i \cdot T + t$ of the $x_{i \cdot T + t}$ values.
 
 If there were higher order terms (cubed, for example), you would just add more elements to the indices array, like so:
 
