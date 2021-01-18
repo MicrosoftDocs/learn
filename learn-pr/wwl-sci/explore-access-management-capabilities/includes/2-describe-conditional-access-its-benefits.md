@@ -6,7 +6,7 @@ A conditional access policy might state that IF a user belongs to a certain grou
 
 Watch the video to see how Conditional Access policies work.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4INyI]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4INyI]
 
 ## Conditional Access signals
 
@@ -41,4 +41,4 @@ Conditional Access is a feature of paid Azure AD editions.
 ## Interactive Guide
 In this interactive guide you will create a conditional access policy for a group of users.
 
-[![Interactive guide](../media/2-ca-interactive.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP02M04%20-%20Create%20a%20Conditional%20Access%20Policy/index.html?azure-portal=true)
+[![Interactive guide](../media/2-interactive.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP02M04%20-%20Create%20a%20Conditional%20Access%20Policy/index.html?azure-portal=true)
