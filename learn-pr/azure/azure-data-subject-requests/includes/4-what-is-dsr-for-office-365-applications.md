@@ -26,7 +26,7 @@ In a hybrid deployment, the scope will vary based on the data that is responsive
 
 The guidance for fulfilling a DSR in Office 365 consists of four parts. The high-level fulfillment tasks differ based on the data type, application, and the request type. The first three parts detail the technical capabilities available to an organization to respond to a DSR. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. The fourth part provides guidance on how data subjects can submit DSRs to Microsoft.
 
-### Part One: Responding to DSRs for customer data
+### Part one: Responding to DSRs for customer data
 
 Guidance on the fulfillment of a DSR for customer data consists of the following four sections:
 
