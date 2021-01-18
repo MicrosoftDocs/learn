@@ -21,7 +21,7 @@ quiz:
     - content: "The administrator should sign in using an account that belongs to Enterprise Admins."
       isCorrect: false
       explanation: "That's incorrect. Enterprise Admins can perform any administrative task in the entire AD DS forest. These are excessive rights for the required task."
-    - content: "The administrator should sign in using an account that belongs to the local Administrators group ."
+    - content: "The administrator should sign in using an account that belongs to the local Administrators group."
       isCorrect: false
       explanation: "That's incorrect. The local Administrators group members can perform all administrative tasks on the local workstation only. This is insufficient for the task required."
     - content: "The administrator should sign in using an account that belongs to the Domain Admins group."

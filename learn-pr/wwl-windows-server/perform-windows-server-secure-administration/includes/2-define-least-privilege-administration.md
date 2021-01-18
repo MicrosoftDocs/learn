@@ -37,7 +37,7 @@ Other built-in groups that have security privileges include:
 - Key Admins.
 - Enterprise Key Admins.
 
-:::image type="content" source="../media/m1-groups.png" alt-text="A screenshot of the Active Directory Administrative Center. The administrator has selected the Enterprise Admins group in Contoso (local)\Users. Also displayed are other groups in the Users folder. ":::
+:::image type="content" source="../media/m1-groups.png" alt-text="A screenshot of the Active Directory Administrative Center. The administrator has selected the Enterprise Admins group in Contoso (local)\Users. Also displayed are other groups in the Users folder.":::
 
 ## Modify group memberships
 
@@ -51,7 +51,7 @@ After you've determined which users and groups belong to administrative groups, 
 6. Add the members to the group or add the group to another group as a member.
 7. Select **OK** to complete the process.
 
-:::image type="content" source="../media/m1-group-policy.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has navigated to Computer Configuration, Policies, Windows Settings, Security Settings, Restricted Groups. The administrator has added a group called Administrators, and added as members Domain Admins, Enterprise Admins, and ContosoAdmin.":::
+:::image type="content" source="../media/m1-group-policy.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has navigated to Computer Configuration, Policies, Windows Settings, Security Settings, Restricted Groups. The administrator has added a group called Administrators, and added as members Domain Admins, Enterprise Admins, and ContosoAdmin.":::
 
 ## Determine currently assigned rights
 
@@ -69,7 +69,7 @@ You can use the **Local Security Policy** console to determine what rights are a
 3. In **Local Security Policy**, expand **Local Policies**, and then expand **User Rights Assignment**.
 4. Review, and if necessary, edit the **Security Setting** value for each **Policy** listed.
 
-:::image type="content" source="../media/m1-local-policy.png" alt-text="A screenshot of the Local Security Policy console. The administrator has selected the User Rights Assignment node, and displayed in the details pane are policies and security settings."::: 
+:::image type="content" source="../media/m1-local-policy.png" alt-text="A screenshot of the Local Security Policy console. The administrator has selected the User Rights Assignment node, and displayed in the details pane are policies and security settings.":::
 
 > [!TIP]
 > Always assign a policy to a group, and not directly to a user. This helps with ongoing management. When someone's job role changes, you need only change their group memberships rather than revisit all the user rights assignments you assigned to their user account.
@@ -87,7 +87,7 @@ You can control UAC prompts and behavior by using GPOs.
 2. For administrative accounts, open the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** setting, select **Define this policy setting**, and then select the required setting.
 3. For standard users, open the **User Account Control: Behavior of the elevation prompt for standard users** setting, select **Define this policy setting**, and then select the required setting.
 
-:::image type="content" source="../media/m1-security-options.png" alt-text="A screenshot of the Security Options node in Group Policy Management Editor. The User Account Control values are displayed."::: 
+:::image type="content" source="../media/m1-security-options.png" alt-text="A screenshot of the Security Options node in Group Policy Management Editor. The User Account Control values are displayed.":::
 
 ## Implement Just Enough Administration
 

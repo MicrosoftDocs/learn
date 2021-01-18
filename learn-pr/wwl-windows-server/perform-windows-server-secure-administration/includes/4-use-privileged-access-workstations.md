@@ -1,4 +1,4 @@
-When reviewing the security report produced by consultants for Contoso, you learned that malicious hackers will focus on workstations that are regularly used by administrators with high-level access to the infrastructure. Therefore, it's important to ensure that such workstations are very secure.
+When reviewing the security report produced by consultants for Contoso, you learned that malicious hackers will focus on workstations that are regularly used by administrators with high-level access to the infrastructure. Therefore, it's important to ensure that such workstations are secure.
 
 ## What is a privileged access workstation?
 
@@ -18,7 +18,7 @@ Microsoft recommends using Windows 10 Enterprise for your PAWs. This is because 
 |-|--|
 |Windows Defender Application Control|Moves away from the traditional application trust model where all applications are assumed trustworthy by default to one where applications must earn trust to run.|
 |Windows Defender Credential Guard|Protects NTLM password hashes, Kerberos ticket-granting tickets, and credentials stored by applications as domain credentials. Because they are no longer stored in the local security authority (LSA), credential theft can be blocked even on a compromised system.|
-|Windows Defender Device Guard|Combines the features of Windows Application Control with the ability to leverage the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code.|
+|Windows Defender Device Guard|Combines the features of Windows Application Control with the ability to use the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code.|
 |Windows Defender Exploit Guard| Enables administrators to define and manage policies for reducing surface attacks and exploits, network protection, and protecting suspicious apps from accessing folders commonly targeted.|
 
 ## PAW hardware profiles

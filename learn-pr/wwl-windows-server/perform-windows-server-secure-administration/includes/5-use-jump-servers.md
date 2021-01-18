@@ -28,7 +28,7 @@ By using jump servers, either with or without PAWs, you can create logical secur
 
 The following graphic depicts a typical jump server and PAW deployment. An administrative user uses a smart card to authenticate to a standard workstation using a standard account. The user can access standard apps to perform day-to-day office productivity tasks. The administrator also has an administrative account and uses a smart card to authenticate to their administrative PAW. This in turn connects to the configured administrative jump server, which has administrative access to the appropriate object.
 
-:::image type="content" border="false" source="../media/m1-jump.png" alt-text="A graphic displays the  scenario outlined in the preceding text" border="false"::: 
+:::image type="content" source="../media/m1-jump.png" alt-text="A graphic displays the  scenario outlined in the preceding text." border="false":::
 
 When you implement jump servers, there are a number of considerations. These include:
 

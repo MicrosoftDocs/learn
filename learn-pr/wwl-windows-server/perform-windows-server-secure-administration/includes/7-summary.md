@@ -1,6 +1,6 @@
 As a Windows Server administrator at Contoso, you're responsible for managing and maintaining the on-premises server infrastructure. Your first task was to determine how best to administer Windows Server using the principle of least privilege. 
 
-During this module, you learned which user accounts to use when performing administrative tasks, and you learned how best to perform Windows Server administration securely. You can now apply the principle of least privilege and identify built-in privileged accounts. You also understand when to use privileged access workstations.
+In this module, you learned which user accounts to use when performing administrative tasks, and how to perform Windows Server administration securely. You can now apply the principle of least privilege and identify built-in privileged accounts. You also understand when to use privileged access workstations.
 
 ## Learn more
 
