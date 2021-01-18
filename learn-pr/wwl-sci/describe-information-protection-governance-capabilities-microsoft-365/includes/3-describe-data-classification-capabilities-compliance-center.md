@@ -1,8 +1,8 @@
-Organizations need to know their data so that they can identify important information across their estate and ensure that data is handled in a way that is in line with compliance requirements. Admins can enable their organization to know its data through data classification capabilities and tools in the Microsoft 365 Compliance Center, such as sensitive information types, trainable classifiers, content explorer, and activity explorer.
+Organizations need to know their data so that they can identify important information across their estate and ensure that data is handled in a way that is in line with compliance requirements. Admins can enable their organization to know its data through data classification capabilities and tools in the Microsoft 365 compliance center, such as sensitive information types, trainable classifiers, content explorer, and activity explorer.
 
 ## Sensitive information types
 
-With Microsoft 365 Compliance Center, admins can identify and protect sensitive information types.  Sensitive information types have set patterns that can be used to identify them.  For example, an identification number in a country/region may be based on a specific pattern, like this:
+With Microsoft 365 compliance center, admins can identify and protect sensitive information types.  Sensitive information types have set patterns that can be used to identify them.  For example, an identification number in a country/region may be based on a specific pattern, like this:
 
 *123-456-789-ABC*
 
@@ -40,7 +40,7 @@ Once published, trainable classifiers can sort through items in locations like S
 
 ## Understand and explore the data
 
-Data classification can involve large numbers of documents and emails. To help administrators to easily derive insights and understanding, the overview section of the data classification pane in Compliance Center provides many details at a glance, including:
+Data classification can involve large numbers of documents and emails. To help administrators to easily derive insights and understanding, the overview section of the data classification pane in compliance center provides many details at a glance, including:
 
 - The number of items classified as sensitive information type and which classifications those are.
 - Details on the locations of data based on sensitivity.
@@ -50,7 +50,7 @@ Additionally, administrators can use the content and activity explorers to gain 
 
 ## What is the content explorer?
 
-The content explorer is available as a tab in the data classification pane of Compliance Center, and enables administrators to gain visibility into the content that has been summarized in the overview pane.
+The content explorer is available as a tab in the data classification pane of compliance center, and enables administrators to gain visibility into the content that has been summarized in the overview pane.
 Access to content explorer is highly restricted because it makes it possible to read the contents of scanned files.  There are two roles that grant access to content explorer:
 
 - Content explorer list viewer
@@ -82,8 +82,8 @@ Admins can use over 30 filters to filter the data including:
 
 The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they have already put into place, such as [data loss prevention policies](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide) are effective or not. For example, if it’s discovered that a large number of items that have been labeled *Highly Confidential*, have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
 
-## Compliance Center tour
+## Compliance center tour
 
-The video below gives you a detailed tour and additional information on the various data classification capabilities available in the Compliance Center:
+The video below gives you a detailed tour and additional information on the various data classification capabilities available in the compliance center:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
