@@ -1,30 +1,29 @@
-You are the administrator for Contoso, Ltd. You’ve been asked to evaluate the DSR process in the Microsoft cloud. You have created a use-case scenario for fulfilling a DSR.
+You're the administrator for Contoso, Ltd. You’ve been asked to evaluate the DSR process in the Microsoft cloud. You've created a use-case scenario for fulfilling a DSR.
 
 ## Setup
 
-1. Sign into the [Azure Active Directory portal](https://aad.portal.azure.com).
+1. Sign in to the [Azure Active Directory portal](https://aad.portal.azure.com).
 2. Select **Azure Active Directory**, and then select the **Overview** blade if it's not already active.  
 3. In the **Tenant information** tile for the Default Directory, copy or record the **Primary domain** value (for example, yourprimarydomain.onmicrosoft.com).
-4. Select **Users**, click **New User**, verify that **Create user** radio button is selected.
-5. Enter the following information and then click **Create**:
-- User name: Avery@yourprimarydomain.onmicrosoft.com
-- Name: Avery Howard
-- First name: Avery
-- Last name: Howard
-- Password: Auto-generate passsword
-- Block sign in: No
-- Usage location: United Kingdom
-- Job title: B2C
-- Department: Finance
-- Company name: Contoso
-6. Click on Avery Howard in the user list to view the user's properties.
-7. Click **Edit**, use the following information to modify Avery's personal information and then click **Save**.
-- Street Address: 123 Park Square
-- State or province: Bristol
-- Country or region: United Kingdom
-- ZIP or postal code: BS12 3CD
-- Mobile phone: +44 07123 456789
-
+4. Select **Users**, select **New User**, and verify that the **Create user** option is selected.
+5. Enter the following information and then select **Create**:
+  - User name: **Avery@yourprimarydomain.onmicrosoft.com**
+  - Name: **Avery Howard**
+  - First name: **Avery**
+  - Last name: **Howard**
+  - Password: **Auto-generate passsword**
+  - Block sign in: **No**
+  - Usage location: **United Kingdom**
+  - Job title: **B2C**
+  - Department: **Finance**
+  - Company name: **Contoso**
+6. Select **Avery Howard** in the user list to review the user's properties.
+7. Select **Edit**, use the following information to modify Avery's personal information, and then select **Save**:
+  - Street Address: **123 Park Square**
+  - State or province: **Bristol**
+  - Country or region: **United Kingdom**
+  - ZIP or postal code: **BS12 3CD**
+  - Mobile phone: **+44 07123 456789**
 
 ## Review a DSR and determine appropriate process
 
