@@ -55,7 +55,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Under **Recovery** section: |
     | Turn on soft delete for blobs | *Disabled*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
     | Turn on soft delete for file shares | *Disabled*. File share soft delete lets you recover your blob data more easily at the folder level. |
-    
+
 1. Select **Next : Advanced**. Enter the following information.
 
     | Property | Value |
