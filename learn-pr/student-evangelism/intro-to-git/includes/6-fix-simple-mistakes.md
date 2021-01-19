@@ -12,7 +12,9 @@ In the previous exercise, you updated the **index.html** file to modify the path
 
 Suppose you discover that you made an error when you entered the statement. Instead of specifying the folder path as `assets` plural, you entered `asset` singular:
 
+```html
 <link rel="stylesheet" href="asset/site.css">
+```
 
 When you refresh the page in your browser, you notice that your CSS style sheet isn't applied. After you investigate, you realize that you miss-entered the path values.
 
