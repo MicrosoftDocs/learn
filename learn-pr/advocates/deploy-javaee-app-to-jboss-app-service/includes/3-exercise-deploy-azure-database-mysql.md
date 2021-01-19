@@ -2,7 +2,7 @@ In this exercise, we'll look at creating and our Azure for MySql Database and lo
 
 ## Get Sample Application and script
 
-First, lets get the sample application and shell script from its GitHub repository.
+First, let us clone the sample application and shell script from its GitHub repository:
 
 ```bash
 git clone https://github.com/yoshioterada/Deploy-Jakarta-EE-8-App-to-JBoss-EAP.git
@@ -59,7 +59,9 @@ az login
 
 ## Create an Instance of Azure Database for MySQL
 
-After you've signed in, create the MySQL DB instance, by executing the Bash Shell Script `setup_mysql.sh`.
+After you've signed in, create your MySQL DB instance, by executing the Bash Shell Script `setup_mysql.sh`.
+
+> [!IMPORTANT] if you to change the Region in the Bash Shell script the following Azure regions are available for MySQL Flexible severs: "eastus2", "westus2", "europe-north", and "asia-pacific-southeast"
 
 Execute the following command:
 
@@ -67,7 +69,8 @@ Execute the following command:
  ./setup_mysql.sh flexible
 ```
 
-You'll need to record certain key values from the output of the MySQL instance creation. Those values will be used in later steps.
+> [!IMPORTANT]
+> You'll need to record certain key values from the output of the MySQL instance creation. Those values will be used in later steps.
 
 ```text
 [INFO] -------------------------------------------------------
@@ -123,10 +126,10 @@ ls -l world.sql
 
 ## Sign in to the MySQL DB
 
-After you created the MySQL database, you can access the database using the `mysql` command-line tool.
+After you created the MySQL database, you can access the database using the `mysql` command-line and password that was returned when you created your flexible server:
 
 ```bash
-mysql -u azureuser -h mysqlserver-qtrfennwvy.mysql.database.azure.com -p [Enter]
+mysql -u azureuser -h mysqlserver-<your instance>.mysql.database.azure.com -p [Enter]
 Enter password: [**********]
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 12
@@ -143,7 +146,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-## Create a Database and Tables for Application
+## Create a Database and Tables for your application
 
 Execute the following mysql command:
 
@@ -157,7 +160,7 @@ Query OK, 0 rows affected (0.01 sec)
 mysql>
 ```
 
-### Evaluate the created DB and TABLES
+### Evaluate the Database and Tables
 
 The `world` database and its tables are automatically created in your MySQL database.
 
