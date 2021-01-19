@@ -55,25 +55,25 @@ Outside of this module, you can use the Cloud Adoption Plan templates to plan an
 ## Deploy your first cloud adoption plan
 
 Once you've chosen your template, enter a name for the project (or plan) you want to deploy. I used "DemoForLearnModule" as my Project Name. You can do the same. Next, choose your DevOps Organization. If you don't have one, see the prerequisites above. Then click "Create Project".
-:::image type="content" source="../media/demo-generator-create-project.png" alt-text="Select the chosen template" border="false":::
+:::image type="content" source="../media/demo-generator-create-project.png" alt-text="Create a project from the template" border="false":::
 
 When your project is created, you will see a screen like the following. Click the "Navigate to project" button to open your new project template.
-:::image type="content" source="../media/demo-generator-project-created.png" alt-text="Select the chosen template" border="false":::
+:::image type="content" source="../media/demo-generator-project-created.png" alt-text="Open your new project template" border="false":::
 
 ## Review your new backlog
 
 When your new project opens, you will have access to a number of different DevOps related features. In this template, we will focus specifically on the backlog (or project plans).
-:::image type="content" source="../media/new-project-home.png" alt-text="Select the chosen template" border="false":::
+:::image type="content" source="../media/new-project-home.png" alt-text="Get familiar with your new project" border="false":::
 
-To open the project plan, hover on "Boards" in the left hand navigation. Then click on the "Backlogs" menu item. 
-:::image type="content" source="../media/new-project-backlogs.png" alt-text="Select the chosen template" border="false":::
+To open the project plan, hover on "Boards" in the left hand navigation. Then click on the "Backlogs" menu item.
+:::image type="content" source="../media/new-project-backlogs.png" alt-text="Open the backlog" border="false":::
 
 This will load all of the different tasks in the project. But there is a better way to look at the project as a whole. Click on the "Stories" tab in the upper right corner. Then click on "Epics" to view the full project hierarchy. All of the tasks in this project are now grouped to align to the CAF Methodologies, or the phases of cloud adoption that you may need throughout your adoption journey.
 
-:::image type="content" source="../media/new-project-epics.png" alt-text="Select the chosen template" border="false":::
+:::image type="content" source="../media/new-project-epics.png" alt-text="Change view to Epic hierarchy" border="false":::
 
-This new view is hierarchial. To drill into each phase, click the carrot next to any work item. That will expose it's child work items. 
-:::image type="content" source="../media/new-project-home.png" alt-text="Select the chosen template" border="false":::
+This new view is hierarchial. To drill into each phase, click the carrot next to any work item. That will expose it's child work items.
+:::image type="content" source="../media/new-project-home.png" alt-text="Expand nodes in the hierarchy" border="false":::
 
 The following list provides a quick translation of Azure DevOps terms to more traditional project terms:
 
