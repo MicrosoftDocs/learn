@@ -13,7 +13,7 @@ durationInMinutes: 5
 content: |
 quiz:
   title: Check your knowledge
-  # questions:
+  questions:
   #   - content: Mark all general features of managed data services
   #     choices:
   #       - content: Automatic scaling.
