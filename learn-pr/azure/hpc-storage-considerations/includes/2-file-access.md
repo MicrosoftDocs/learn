@@ -13,11 +13,11 @@ The data is assumed to reside in one or more storage solutions in your local env
 - Storage-Area Network (SAN) solution.
 - Network-attached Storage (NAS) solution.
 
-The data in question may be created locally by analysts, artists, researchers or scientists, or it may be periodically acquired from third parties and deposited in your local storage solution.
+The data in question may be created locally by analysts, artists, researchers or scientists, and it may also be periodically acquired from third parties and deposited in your local storage solution.
 
 Files are accessed by machines participating in the HPC cluster via either a direct disk or network export/share. In both cases the files are presented as a local path (such as /mnt/data).
 
-The code and scripts which make up the actual HPC job assume the files are accessible via a file system path, and will leverage the machine's file access capabilities to obtain the file. For example, a machine running Linux that needs to access a file located on a NAS would use the Network File System (NFS) protocol via NFS client packages.
+The code and scripts which make up the actual HPC job assume the files are accessible via this file system path, and will leverage the machine's file access capabilities to obtain the file. For example, a machine running Linux that needs to access a file located on a NAS would use the Network File System (NFS) protocol via NFS client packages.
 
 ## File Data and Metadata
 

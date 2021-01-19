@@ -1,10 +1,10 @@
-The performance requirements for HPC workloads may vary widely depending on a number of variables. The following section highlights the main aspects of file system performance that you must consider when determining your architecture.
+If you have run HPC workloads, chances are that you have run into the terms **operations**, **block size**, **IOPS**, **throughput** and **latency**. You most likely selected hard drives or NAS environments based on the combination of these factors. By the end of this section you should have a working understanding of these five performance factors and how they impact your HPC workloads.
 
 ## Factors contributing to File System Performance
 
 ### Operations
 
-**Operations** refers to any activity between the host/machine and the file system or disk. OS-level operations include the following list:
+**Operations** refers to any activity between the host/machine and the file system or disk. OS-level operations, those operations involving the Operating System and the local disk, are shown in the following list to provide context for what exactly an operation does.
 
 - File create
 - File delete
@@ -17,7 +17,7 @@ The performance requirements for HPC workloads may vary widely depending on a nu
 - set attribute
 - rename
 
-When using the NFS protocol, there are several key API calls that translate into multiple operations
+NFS represents the network level interaction between a file client and server. You'll notice that some of these operations look similar to the local operations. However, because this is a network API, a NFS operation may involve multiple local operations.
 
 - create (file or link)
 - mkdir
@@ -32,6 +32,8 @@ When using the NFS protocol, there are several key API calls that translate into
 - rmdir
 - write
 
+It is helpful to appreciate how operations impact your storage system. For example, if your HPC workload creates a large number of small files in nested directory structures, the required quantity of operations will be significantly greater than if your workload reads a few large sequential files. We will discuss these access patterns in the next unit, but for now note that a create involves multiple operations and so the more creating your workload does, the greater the impact.
+
 ### Block Size
 
 **Block Size** refers to the smallest size of a read or write, in bytes, of a file system. For our purposes, block size also refers to the payload size of a NFS data chunk (read/write) that can be transmitted between NFS clients and servers.
@@ -42,14 +44,20 @@ Block size may be explicitly configured on clients. Check the full `mount` state
 
 The two arguments used to configure NFS block size are `rsize` and `wsize`, configuring block sizes for reading and writing data respectively.
 
+If you have configured a small block size (or your choice of file systems has a small maximum block size), but your workload consists of large files, performance will suffer due to the additional chunking of those large files (to fit the block size).
+
 ### IOPS
 
-**IOPS** stands for "Input/Output operations per second", and is a key value when evaluating storage solutions. The number of IOPS will vary depending on the following attributes:
+**IOPS** stands for "Input/Output operations per second". The number of IOPS will vary depending on the following attributes:
 
 - the type of storage media (Hard Disk Drives (HDD) vs Solid-State Drives(SSD))
 - latency, usually introduced via network connectivity
 - the block size used by the file system
-- the amount of concurrent access to the file system (there is one set of IOPS for all clients)
+- the amount of concurrent access to the file system
+
+There is a single IOPS number for a storage solution. As an example, if you are using an Azure Managed Disk that states 5000 IOPS, this is the total for all read and write operations against that disk.
+
+IOPS are a *guide* to the possible maximum number of operations your disk or NAS environment can support. The measurements are typically broken down between **Random** and **Sequential** read and write operations. Random operations refer to the reading/writing of data at different, random points of a disk/file (for example, editing a specific range of bytes somewhere in a file), while sequential operations reflect the contiguous access of a disk/file.
 
 ### Throughput
 
@@ -57,7 +65,7 @@ The two arguments used to configure NFS block size are `rsize` and `wsize`, conf
 
 ### Latency
 
-**Latency** refers to the measured amount of time it takes to complete an operation. The higher the latency, the higher the likelihood of slower job runs. There can be multiple sources of latency within a single architecture, each contributing to an overall latency effect.
+**Latency** refers to the measured amount of time it takes to complete an operation. The higher the latency, the higher the likelihood of slower workload runs. There can be multiple sources of latency within a single architecture, each contributing to an overall latency impact.
 
 File system latency may occur under the following conditions:
 
