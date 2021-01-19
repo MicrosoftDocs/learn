@@ -2,11 +2,11 @@ Congratulations! In this module, you learned the basics of using Git.
 
 You learned:
 
-- how to configure Git
-- how to create repositories
-- how to track changes
-- how to recover from simple mistakes with Git
-- differences between Git and GitHub
+- How to configure Git.
+- How to create repositories.
+- How to track changes.
+- How to recover from simple mistakes with Git.
+- The differences between Git and GitHub.
 
 At this point, you know enough about Git to use version control by yourself on a little project. Where version control shines is collaboration with other developers. Check out the other modules in this Learning Path for more on using Git with others!
 

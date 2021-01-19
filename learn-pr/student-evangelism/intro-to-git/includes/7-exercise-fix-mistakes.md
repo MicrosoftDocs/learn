@@ -160,12 +160,6 @@ One solution to this problem is to revert the previous commit.
     This reverts commit 15d3bded388470c98881a632025bc15190fe9d17.
     ```
 
-1. Now use this familar command to restore **index.html**:
-
-    ```bash
-    git checkout -- index.html
-    ```
-
-1. Finally, open up **index.html** to make sure it's the correct version.
+1. Finally, open the **index.html** file to make sure the content is the correct version.
 
 Reverting isn't the only way to remedy this situation; you could simply edit **index.html** and commit the corrected file. That's harder if the changes you committed were extensive, and in any case, `git revert` is a good way to signal your intent.

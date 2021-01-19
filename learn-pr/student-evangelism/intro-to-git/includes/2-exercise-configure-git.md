@@ -36,7 +36,7 @@ Before you can create your first repo, you make sure Git is installed and config
     git config --list
     ```
 
-1. Confirm that the output includes four lines similar to the following. Your name and e-mail address will be different:
+1. Confirm the output includes two lines similar to the following example. Note that your name and e-mail address will be different from what's shown here:
 
     ```output
     user.name=Shana
@@ -86,7 +86,7 @@ inside it.
 
 You typically don't do anything with the ".git" directory directly. Git updates the metadata there as the status of the working tree changes to keep track of what's changed in your files. This directory is hands-off for you, but it's incredibly important to Git.
 
-## Getting help from Git
+## Get help from Git
 
 Git, like most command-line tools, has a built-in help function you can use to look up commands and keywords.
 
