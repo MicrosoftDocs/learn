@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-plan.3-exercise-cloud-adoption-plan
+title: Exercise - Deploy your first cloud adoption plan
+metadata:
+  title: Exercise - Deploy your first cloud adoption plan
+  description: Create a project plan (or backlog) to manage efforts related to cloud adoption
+  ms.date: 02/01/2021
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-exercise-cloud-adoption-plan.md)]
