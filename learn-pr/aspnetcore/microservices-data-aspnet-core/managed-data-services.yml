@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-data-aspnet-core.managed-data-services
+metadata:
+  title: Azure Managed Data Services
+  description: TODO
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 01/19/2021
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Azure Managed Data Services
+durationInMinutes: 10
+content: |
+  [!include[](includes/managed-data-services.md)]

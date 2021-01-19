@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-data-aspnet-core.deploy-cosmos-db
+metadata:
+  title: Exercise - Deploy Azure Cosmos DB
+  description: TODO
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 01/19/2021
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Exercise - Deploy Azure Cosmos DB
+durationInMinutes: 10
+content: |
+  [!include[](includes/deploy-cosmos-db.md)]

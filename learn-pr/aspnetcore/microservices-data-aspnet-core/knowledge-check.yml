@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-data-aspnet-core.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 01/19/2021
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Mark all general features of managed data services
+      choices:
+        - content: Automatic scaling.
+          isCorrect: false
+          explanation: TODO
+        - content: Scheduled updates.
+          isCorrect: true
+          explanation: TODO
+        - content: Pay only for what you use.
+          isCorrect: true
+          explanation: TODO
+        - content: High availability.
+          isCorrect: false
+          explanation: TODO
+    - content: Mark the features specific to Azure Cache for Redis
+      choices:
+        - content: Data persistence and high-availability cluster for Premium tier.
+          isCorrect: true
+          explanation: TODO
+        - content: Security via Firewall rules.
+          isCorrect: true
+          explanation: TODO
+        - content: Geo-replication for Premium tier.
+          isCorrect: true
+          explanation: TODO
+        - content: SQL API
+          isCorrect: false
+          explanation: TODO
+    - content: Mark the features specific to Azure CosmosDB
+      choices:
+        - content: Single-digit millisecond latencies.
+          isCorrect: true
+          explanation: TODO
+        - content: Guaranteed high availability.
+          isCorrect: true
+          explanation: TODO
+        - content: Apache Spark API.
+          isCorrect: false
+          explanation: TODO
+        - content: Global distribution.
+          isCorrect: true
+          explanation: TODO

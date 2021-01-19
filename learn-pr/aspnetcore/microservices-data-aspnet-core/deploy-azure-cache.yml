@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-data-aspnet-core.deploy-azure-cache
+metadata:
+  title: Exercise - Deploy Azure Cache for Redis
+  description: TODO
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 01/19/2021
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Exercise - Deploy Azure Cache for Redis
+durationInMinutes: 10
+content: |
+  [!include[](includes/deploy-azure-cache.md)]
