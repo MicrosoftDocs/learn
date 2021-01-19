@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-revocation
+title: Manage certificate revocation
+metadata:
+  title: Manage certificate revocation
+  description: "Manage certificate revocation"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/5-manage-certificate-revocation.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What is required to publish a CRL to a file share by using the Certification Authority console?"
+    choices:
+    - content: "Configure the Extensions settings of the CA."
+      isCorrect: true
+      explanation: "That's correct. You need to add a location from which users can obtain a CRL by modifying the Extension settings of the CA properties in the Certification Authority console."
+    - content: "Configure the Policy Module settings of the CA."
+      isCorrect: false
+      explanation: "That's incorrect. The Policy Module settings allow you to assign a policy module, however, not to specify the location where a CRL should be published."
+    - content: "Configure the Storage settings of the CA."
+      isCorrect: false
+      explanation: "That's incorrect. The Storage settings designate the location where the CA stores configuration data."

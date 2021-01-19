@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.implement-manage-active-directory-certificate-services
+metadata:
+  title: Implement and manage Active Directory Certificate Services
+  description: "Implement and manage Active Directory Certificate Services"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement and manage Active Directory Certificate Services
+summary: Learn about the Active Directory Certificate Services (AD CS) concepts and administration tasks, including types of certification authorities (CAs), the process of issuing and revoking certificates, and establishing certificate trusts.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the purpose of Public Key Infrastructure (PKI) and components of AD CS.
+  - Identify types of AD CS certification authorities and the process of implementing them.
+  - Manage certificate enrollment.
+  - Manage certificate revocation.
+  - Manage certificate trusts.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+  - Active Directory Domain Services (AD DS).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.implement-manage-active-directory-certificate-services.introduction
+- learn.wwl.implement-manage-active-directory-certificate-services.explore-fundamentals-of-pki-ad-cs
+- learn.wwl.implement-manage-active-directory-certificate-services.design-implement-ad-cs
+- learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-enrollment
+- learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-revocation
+- learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-trusts
+- learn.wwl.implement-manage-active-directory-certificate-services.knowledge-check
+- learn.wwl.implement-manage-active-directory-certificate-services.summary
+badge:
+  uid: learn.wwl.implement-manage-active-directory-certificate-services.badge
