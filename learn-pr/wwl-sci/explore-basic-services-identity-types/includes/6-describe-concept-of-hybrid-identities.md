@@ -9,6 +9,6 @@ When using the hybrid model, authentication can either be done by Azure AD, whic
 
 One of three authentication methods can be used:
 
-1. **Password hash synchronization**. This is the simplest way to enable authentication for on-premises directory objects in Azure AD. Users can use the same username and password that they use on-premises without any additional infrastructure being needed.
-1. **Pass-through authentication (PTA)**. Provides a simple password validation for Azure AD authentication services by using a software agent that runs on one or more on-premises servers.  The servers validate the users directly with an on-premises Active Directory, which ensures that the password validation doesn't happen in the cloud.
-1. **Federated authentication**. Azure AD hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password.
+* **Password hash synchronization**. This is the simplest way to enable authentication for on-premises directory objects in Azure AD. Users can use the same username and password that they use on-premises without any additional infrastructure being needed.
+* **Pass-through authentication (PTA)**. Provides a simple password validation for Azure AD authentication services by using a software agent that runs on one or more on-premises servers.  The servers validate the users directly with an on-premises Active Directory, which ensures that the password validation doesn't happen in the cloud.
+* **Federated authentication**. Azure AD hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password.
