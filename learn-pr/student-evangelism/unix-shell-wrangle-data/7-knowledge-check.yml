@@ -32,7 +32,6 @@ quiz:
       choices:
         - content: "French, France, Frence, Franch"
           isCorrect: true
-
           explanation: "The way this regular expression is constructed, it will match misspellings such as Frence and Franch."
         - content: "Frenche, Franceh, Frenceh, Franche"
           isCorrect: false

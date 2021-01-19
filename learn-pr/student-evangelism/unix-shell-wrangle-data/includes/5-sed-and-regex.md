@@ -6,11 +6,7 @@ The `sed` tool operates on text from the `stdin` or from a file. This behavior a
 
 Remember that `sed` outputs everything to `stdout` by default. If you want to save the edited text, you'll need to redirect the output by using the redirect operator (`>`) as we did with the `cat` command.
 
-The basic usage of `sed` is:
-
-```bash
-sed [options] commands [file-to-edit]
-```
+The basic usage of `sed` is `sed [options] commands [file-to-edit]`.
 
 For example, to use `sed` directly on the `NASA-software-API.txt` file, you would run the command as follows:
 
@@ -30,16 +26,9 @@ cat NASA-software-API.txt | sed ''
 
 Text substitution is perhaps the most well-known use for `sed`. As we learned before, `sed` can search for test patterns by using regular expressions. But `sed` can also replace the matched text with something else.
 
-The basic syntax for text substitution is:
-
-```bash
-sed s'/old_text/new_text/'
-```
-
-where the `s` is the substitute command and the three forward slashes (`/`) are used to separate the text fields.
+The basic syntax for text substitution is `sed s'/old_text/new_text/'`, where `s` is the substitute command and the three forward slashes (`/`) are used to separate the text fields.
 
 Imagine that you have the URL https://www.nasa.gov/about/sites/index.html, and you want to replace `index.html` with `home`. You can make this replacement by using the following command:
-
 
 ```bash
 echo "https://www.nasa.gov/about/sites/index.html" | sed s'/index.html/home/'
@@ -56,7 +45,6 @@ Let's replace the `NASA` occurrences for *National Aerospace Agency* in the `NAS
 ```bash
  sed 's/NASA/National Aerospace Agency/' NASA-software-API.txt
 ```
-
 
 You'll notice that the substitution happened on all matches for NASA, but the command `sed` printed out all the lines in the file. This behavior is the default for the `sed` tool.
 
