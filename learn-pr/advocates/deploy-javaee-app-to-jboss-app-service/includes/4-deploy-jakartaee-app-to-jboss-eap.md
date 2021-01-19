@@ -2,14 +2,14 @@ In this unit, we look at how to deploy our Java EE application to JBoss EAP on A
 
 ## Deployment Procedure
 
-The deployment procedure is as follows.
+To deploy your Java EE application and connect to your database, the deployment procedure is as follows:
 
-1. Create  a Java EE (Jakarta EE) Application
-2. Configure the application project for deploying to Azure using Maven
-3. Build the WAR package
-4. Deploy our Java EE App to JBoss EAP
+1. Create your Java EE (Jakarta EE) Application
+2. Configure your application project for deploying to Azure using Maven
+3. Build your WAR package
+4. Deploy your Java EE App to JBoss EAP
 5. Configure a DB Connection from JBoss EAP
-6. Access the application
+6. Access your application
 
 ### Create  a Java EE (Jakarta EE) Application
 
