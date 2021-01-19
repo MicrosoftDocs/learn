@@ -28,6 +28,22 @@ With Event Hubs, you can start with data streams in megabytes, and grow to gigab
 
 The consuming applications to each have a separate view of the event stream. They read the stream independently at their own pace and with their own offsets.
 
+For our scenario, you'll create one consuming Azure function as an example. To create the function, following the best practices, you'll create it independent, with its own storage account, and bindings. That leads into loose coupling, and scalability.
+
+``` bash
+az storage account create \
+    --resource-group $RESOURCE_GROUP \
+    --name $STORAGE_ACCOUNT"c" \
+    --sku Standard_LRS
+az functionapp create \
+    --resource-group $RESOURCE_GROUP \
+    --name $FUNCTION_APP"-c"\
+    --storage-account $STORAGE_ACCOUNT"c" \
+    --consumption-plan-location $LOCATION \
+    --runtime java \
+    --functions-version 3
+```
+
 ### Retrieve the Connection Strings
 
 The consumer function not only needs to be aware of its storage account and the Event Hub, but also of the Cosmos DB where is shall write the processed events into.
@@ -35,7 +51,7 @@ The consumer function not only needs to be aware of its storage account and the 
 ``` bash
 AZURE_WEB_JOBS_STORAGE=$( \
     az storage account show-connection-string \
-        --name $STORAGE_ACCOUNT"-consumer" \
+        --name $STORAGE_ACCOUNT"c" \
         --query connectionString \
         --output tsv)
 echo $AZURE_WEB_JOBS_STORAGE
@@ -68,7 +84,7 @@ These connection strings need to be stored in the application settings at your A
 ```bash
 az functionapp config appsettings set \
     --resource-group $RESOURCE_GROUP \
-    --name $FUNCTION_APP"-consumer" \
+    --name $FUNCTION_APP"-c" \
     --settings \
         AzureWebJobsStorage=$AZURE_WEB_JOBS_STORAGE \
         EventHubConnectionString=$EVENT_HUB_CONNECTION_STRING \
@@ -80,29 +96,17 @@ az functionapp config appsettings set \
 
 ### Create the functions application
 
-For our scenario, you'll create one consuming Azure function as an example. To create the function, following the best practices, you'll create it independent, with its own storage account, and bindings. That leads into loose coupling, and scalability.
+Before creating the next function, make sure you are in the correct folder.
 
 ``` bash
-az storage account create \
-    --resource-group $RESOURCE_GROUP \
-    --name $STORAGE_ACCOUNT"-consumer" \
-    --sku Standard_LRS
-az functionapp create \
-    --resource-group $RESOURCE_GROUP \
-    --name $FUNCTION_APP"-consumer"\
-    --storage-account $STORAGE_ACCOUNT"-consumer" \
-    --consumption-plan-location $LOCATION \
-    --runtime java \
-    --functions-version 2
-```
-
-``` bash
+cd ..
 mvn archetype:generate --batch-mode \
     -DarchetypeGroupId=com.microsoft.azure \
     -DarchetypeArtifactId=azure-functions-archetype \
-    -DappName=$FUNCTION_APP"-consumer" \
+    -DappName=$FUNCTION_APP"-c" \
     -DresourceGroup=$RESOURCE_GROUP \
-    -DgroupId=com.example \
+    -DappRegion=$LOCATION \
+    -DgroupId=com.learn \
     -DartifactId=telemetry-functions-consumer
 ```
 
@@ -116,8 +120,7 @@ rm -r src/test
 Update the local settings for local execution and debugging.
 
 ``` Bash
-cd telemetry-functions-consumer
-func azure functionapp fetch-app-settings $FUNCTION_APP"-consumer"
+func azure functionapp fetch-app-settings $FUNCTION_APP"-c"
 ```
 
 Next, open the `Functions.java` file and replace the content with the following code.
@@ -172,6 +175,65 @@ public class Function {
 }
 ```
 
+Create again a new file called TelemetryItem.java in the same location as Function.java and add the following code:
+
+``` Java
+package com.learn;
+
+public class TelemetryItem {
+
+    private String id;
+    private double temperature;
+    private double pressure;
+    private boolean isNormalPressure;
+    private status temperatureStatus;
+    static enum status {
+        COOL,
+        WARM,
+        HOT
+    }
+
+    public TelemetryItem(double temperature, double pressure) {
+        this.temperature = temperature;
+        this.pressure = pressure;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
+
+    public double getPressure() {
+        return pressure;
+    }
+
+    @Override
+    public String toString() {
+        return "TelemetryItem={id=" + id + ",temperature="
+            + temperature + ",pressure=" + pressure + "}";
+    }
+
+    public boolean isNormalPressure() {
+        return isNormalPressure;
+    }
+
+    public void setNormalPressure(boolean isNormal) {
+        this.isNormalPressure = isNormal;
+    }
+
+    public status getTemperatureStatus() {
+        return temperatureStatus;
+    }
+
+    public void setTemperatureStatus(status temperatureStatus) {
+        this.temperatureStatus = temperatureStatus;
+    }
+}
+```
+
 When the event hub receives the message, it generates an event. The `processSensorData` function runs when it receives the event. It then processes the event data and uses an Azure Cosmos DB output binding to send the results to Azure Cosmos DB. We'll use again the `TelemetryItem.java` class. The `TelemetryItem` objects can be seen as the Consumer Driven Contract between the participants of this event-driven system.
 
 ## Run locally
@@ -181,9 +243,17 @@ mvn clean package
 mvn azure-functions:run
 ```
 
+After the build and startup messages, you'll see the incoming events when the functions run:
+
+``` Output
+[2021-01-19T16:45:24.709Z] Executing 'Functions.processSensorData' (Reason='(null)', Id=87354afa-abf4-4963-bd44-0c1421048240)
+[2021-01-19T16:45:24.712Z] Event hub message received: TelemetryItem={id=null,temperature=21.653044570769897,pressure=36.061288095436126}
+[2021-01-19T16:45:24.712Z] Function "processSensorData" (Id: 87354afa-abf4-4963-bd44-0c1421048240) invoked by Java Worker
+```
+
 You can go to the Azure portal and navigate to your Azure Cosmos DB account. Select Data Explorer, expand TelemetryInfo, then select Items to view your data when it arrives.
 
-// Add Screenshot
+![TelemetryInfo in Cosmos DB Data Explorer](../media/5-cosmos-db.png)
 
 ## Deploy on Azure
 
