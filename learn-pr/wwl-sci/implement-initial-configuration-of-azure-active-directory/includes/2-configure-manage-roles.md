@@ -15,6 +15,8 @@ If you are new to Azure, you may find it a little challenging to understand all 
 - Azure Active Directory (Azure AD) roles
 
 ## How the roles are related
+Now is the time to publish
+
 
 To better understand roles in Azure, it helps to know some of the history. When Azure was initially released, access to resources was managed with just three administrator roles: Account Administrator, Service Administrator, and Co-Administrator. Later, Azure role-based access control (Azure RBAC) was added. Azure RBAC is a newer authorization system that provides fine-grained access management to Azure resources. Azure RBAC includes many built-in roles, can be assigned at different scopes, and allows you to create your own custom roles. To manage resources in Azure AD, such as users, groups, and domains, there are several Azure AD roles.
 
@@ -28,14 +30,8 @@ Azure RBAC is an authorization system built on Azure Resource Manager that provi
 
 | **Azure role**| **Permissions**| **Notes**|
 | :--- | :--- | :--- |
-| Owner| Full access to all resources
-
-Delegate access to others| The Service Administrator and Co-Administrators are assigned the Owner role at the subscription scopeApplies to all resource types.|
-| Contributor| Create and manage all of types of Azure resources
-
-Create a new tenant in Azure Active Directory
-
-Cannot grant access to others| Applies to all resource types.|
+| Owner| Full access to all resources - Delegate access to others| The Service Administrator and Co-Administrators are assigned the Owner role at the subscription scope - Applies to all resource types.|
+| Contributor| Create and manage all of types of Azure resources - Create a new tenant in Azure Active Directory - Cannot grant access to others| Applies to all resource types.|
 | Reader| View Azure resources| Applies to all resource types.|
 | User Access Administrator| Manage user access to Azure resources||
 
@@ -105,7 +101,8 @@ Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Admin
 A common way to assign Azure AD roles to a user is on the Assigned roles page for a user. You can also configure the user eligibility to be elevated just-in-time into a role using **Privileged Identity Management (PIM)**.
 
 > [!NOTE]
-> NoteIf you have an Azure AD Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
+> NoteIf you have an Azure AD Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
+
 ![Azure AD roles managed in PIM for users who already use PIM and have a Premium P2 license](../media/pim-manages-roles-for-p2.png)
 
 ## Create and assign a custom role in Azure Active Directory
