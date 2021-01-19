@@ -55,16 +55,32 @@ Let's create a function app in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as you activated for the sandbox.
 
-1. From the Azure portal menu, select **Resource groups**. You should then see a resource group named  "<rgn>[Sandbox resource group name]</rgn>"
- in the list of available groups.
+1. In the portal menu, select **Create a resource**.
 
-    ![Screenshot of the Azure resource groups](../media/3-resource-group.png)
+    [!include[](../../includes/functions-classic-workaround.md)]
 
-1. Select the resource group **learn-5a18d3de-af3e-481e-add8-2715dff3255e**. You should then see a resource list like the following list.
+    ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-    ![Screenshot of the Azure resource list](../media/3-resource-list.png)
 
-    Select your new Function App (identified with lightning bolt icon) to open the details about the new function. It has a public URL assigned to it. Select that link to open it in a browser. You should get a default web page that indicates your Function App is running.
+1. In the left nav bar, search for **Function App**.
+
+    ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
+
+    The **Create Function App** page appears. Complete the following fields.
+
+    | Field | Value  |
+    | ------ | ------- |
+    | In the **Basics** tab, under the **Project Details** section:  |
+    | Subscription | Concierge Subscription |
+    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
+    | Under the **Instance Details** section: |
+    | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
+    | Publish  | Code |
+    | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
+    | Version | *default* |
+    | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
+
+1. Select **Review + create**, and then select **Create**. Deployment will take a few minutes. You'll receive a notification when deployment is completed.
 
 ::: zone-end
 
