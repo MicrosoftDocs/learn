@@ -58,7 +58,7 @@ The following graphic displays an example deployment of IPAM using a centralized
 - The IPAM server. The server connects to a configured database to provide storage for IPAM. Scheduled tasks are also available on the IPAM server.
 - Managed servers. A collection of DNS, DHCP, NPS servers, and domain controllers are discovered and accessible by IPAM. 
 
-:::image type="content" source="../media/m14-ipam-architecture.png" alt-text="A diagram that displays IPAM components as discussed in the preceding text." border="false":::
+:::image type="content" source="../media/m14-ipam-architecture.png" alt-text="A diagram that depicts IPAM components as discussed in the preceding text." border="false":::
 
 ### Distributed topology
 

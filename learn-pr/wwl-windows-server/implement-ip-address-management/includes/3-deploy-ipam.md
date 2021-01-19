@@ -10,7 +10,7 @@ The IPAM server must meet the following requirements:
     > [!CAUTION]
     > If you install the IPAM server on a DHCP server, IPAM won't be able to detect other DHCP servers on the network.
 
-- The IPAM server needs access to a database. You can use WID on the IPAM server or a Microsoft SQL Server database. If you use a SQL Server database for IPAM, you have the option to use a database on a separate server.
+- The IPAM server needs access to a database. You can use WID on the IPAM server or a Microsoft SQL Server database. If you use a SQL Server database for IPAM, you can use a database on a separate server.
 
     > [!IMPORTANT]
     > If you use SQL Server to host your IPAM database, that must be the only SQL Server instance running on that server.
