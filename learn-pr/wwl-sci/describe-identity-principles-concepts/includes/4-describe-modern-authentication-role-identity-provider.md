@@ -13,7 +13,7 @@ As shown in the video, with modern authentication, the client communicates with 
 
 Microsoft Azure Active Directory is an example of a cloud-based identity provider.  Other examples of identity providers include Twitter, Google, Amazon, LinkedIn, and GitHub.
 
-## Single Sign-on
+## Single sign-on
 
 Another fundamental capability of an identity provider and “modern authentication” is the support for single sign-on (SSO). With SSO, the user logs in once and that credential is used to access multiple applications or resources.
 When you set up single sign-on to work between multiple identity providers, it is called federation.

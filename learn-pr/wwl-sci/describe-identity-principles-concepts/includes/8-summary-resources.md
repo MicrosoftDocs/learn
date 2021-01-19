@@ -6,7 +6,7 @@ Now that you have completed this module, you will be able to:
 - Learn about authentication and authorization.
 - Describe identity-related services.
 
-## Learn More
+## Learn more
 
 For more information on the topics covered in this module, see:
 
