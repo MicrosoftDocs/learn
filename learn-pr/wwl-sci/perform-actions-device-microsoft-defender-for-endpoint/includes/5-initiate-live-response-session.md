@@ -93,7 +93,7 @@ The following commands are available for user roles that are granted the ability
 | Command| Description|
 | :--- | :--- |
 | analyze| Analyses the entity with various incrimination engines to reach a verdict.|
-| getfile| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with <getfile> to automatically run the prerequisite command.|
+| "getfile"| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with [getfile] to automatically run the prerequisite command.|
 | run| Runs a PowerShell script from the library on the device.|
 | library| Lists files that were uploaded to the live response library.|
 | putfile| Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
@@ -106,13 +106,13 @@ The commands that you can use in the console follow similar principles as Window
 
 ### Get a file from the device
 
-For scenarios when you'd like to get a file from a device you're investigating, you can use the <getfile> command. This allows you to save the file from the device for further investigation.
+For scenarios when you'd like to get a file from a device you're investigating, you can use the [getfile] command. This allows you to save the file from the device for further investigation.
 
 The following file size limits apply:
 
-- getfile limit: 3 GB
+- "getfile" limit: 3 GB
 
-- fileinfo limit: 10 GB
+- [fileinfo] limit: 10 GB
 
 - library limit: 250 MB
 
@@ -174,19 +174,31 @@ Before you can run a PowerShell script, you must first upload it to the library.
 
 View the console help to learn about command parameters. To learn about an individual command, run:
 
-**help <command name>**
+```PowerShell
+help <command name>
+
+```
 
 When applying parameters to commands, parameters are handled based on a fixed order:
 
-**<command name> param1 param2**
+```PowerShell
+<command name> param1 param2
+
+```
 
 When specifying parameters outside of the fixed order, specify the name of the parameter with a hyphen before providing its value:
 
-**<command name> -param2_name param2**
+```PowerShell
+<command name> -param2_name param2
+
+```
 
 When using commands that have prerequisite commands, you can use flags:
 
-**<command name> -type file -id <file path> - auto or remediate file <file path> - auto.**
+```PowerShell
+<command name> -type file -id <file path> - auto or remediate file <file path> - auto.
+
+```
 
 ### Supported output types
 
@@ -250,7 +262,7 @@ Live response has the following limitations:
 
 - The following file size limits apply:
 
-  - getfile limit: 3 GB
+  - [getfile] limit: 3 GB
 
   - fileinfo limit: 10 GB
 
