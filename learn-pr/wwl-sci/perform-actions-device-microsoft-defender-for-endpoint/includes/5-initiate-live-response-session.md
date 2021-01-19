@@ -68,23 +68,23 @@ The following commands are available for user roles that are granted the ability
 
 | Command| Description|
 | :--- | :--- |
-| <cd>| Changes the current directory.|
-| <cls>| Clears the console screen.|
-| <connect>| Initiates a live response session to the device.|
-| <connections>| Shows all the active connections.|
-| <dir>| Shows a list of files and subdirectories in a directory.|
+| cd| Changes the current directory.|
+| cls| Clears the console screen.|
+| connect| Initiates a live response session to the device.|
+| connections| Shows all the active connections.|
+| dir| Shows a list of files and subdirectories in a directory.|
 | download <file_path> &| Downloads a file in the background.|
-| <drivers>| Shows all drivers installed on the device.|
+| drivers| Shows all drivers installed on the device.|
 | fg <command ID>| Returns a file download to the foreground.|
-| <fileinfo>| Get information about a file.|
-| <findfile>| Locates files by a given name on the device.|
-| <help>| Provides help information for live response commands.|
-| <persistence>| Shows all known persistence methods on the device.|
-| <processes>| Shows all processes running on the device.|
-| <registry>| Shows registry values.|
-| <scheduledtasks>| Shows all scheduled tasks on the device.|
-| <services>| Shows all services on the device.|
-| <trace>| Sets the terminal's logging mode to debug.|
+| fileinfo| Get information about a file.|
+| findfile| Locates files by a given name on the device.|
+| help| Provides help information for live response commands.|
+| persistence| Shows all known persistence methods on the device.|
+| processes| Shows all processes running on the device.|
+| registry| Shows registry values.|
+| scheduledtasks| Shows all scheduled tasks on the device.|
+| services| Shows all services on the device.|
+| trace| Sets the terminal's logging mode to debug.|
 
 ### Advanced commands
 
@@ -92,13 +92,13 @@ The following commands are available for user roles that are granted the ability
 
 | Command| Description|
 | :--- | :--- |
-| <analyze>| Analyses the entity with various incrimination engines to reach a verdict.|
-| <getfile>| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with <getfile> to automatically run the prerequisite command.|
-| <run>| Runs a PowerShell script from the library on the device.|
-| <library>| Lists files that were uploaded to the live response library.|
-| <putfile>| Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
-| <remediate>| Remediates an entity on the device. The remediation action will vary depending on the entity type. This command has a prerequisite command. You can use the -auto command with remediate to automatically run the prerequisite command.|
-| <Undo>| Restores an entity that was remediated.|
+| analyze| Analyses the entity with various incrimination engines to reach a verdict.|
+| getfile| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with <getfile> to automatically run the prerequisite command.|
+| run| Runs a PowerShell script from the library on the device.|
+| library| Lists files that were uploaded to the live response library.|
+| putfile| Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
+| remediate| Remediates an entity on the device. The remediation action will vary depending on the entity type. This command has a prerequisite command. You can use the -auto command with remediate to automatically run the prerequisite command.|
+| Undo| Restores an entity that was remediated.|
 
 ## Use live response commands
 
@@ -110,11 +110,11 @@ For scenarios when you'd like to get a file from a device you're investigating, 
 
 The following file size limits apply:
 
-- <getfile> limit: 3 GB
+- getfile limit: 3 GB
 
-- <fileinfo> limit: 10 GB
+- fileinfo limit: 10 GB
 
-- <library> limit: 250 MB
+- library limit: 250 MB
 
 ### Download a file in the background
 
@@ -159,7 +159,7 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 ### Automatically run prerequisite commands
 
-Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the download command without <fileinfo> will return an error. You can use the auto flag to automatically run prerequisite commands, for example:
+Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the download command without fileinfo will return an error. You can use the auto flag to automatically run prerequisite commands, for example:
 
 ```console
 getfile c:\Users\user\Desktop\work.txt -auto
@@ -250,9 +250,9 @@ Live response has the following limitations:
 
 - The following file size limits apply:
 
-  - <getfile> limit: 3 GB
+  - getfile limit: 3 GB
 
-  - <fileinfo> limit: 10 GB
+  - fileinfo limit: 10 GB
 
-  - <library> limit: 250 MB
+  - library limit: 250 MB
 
