@@ -4,10 +4,26 @@ title: Configure Server Core using Sconfig
 metadata:
   title: Configure Server Core using Sconfig
   description: "Configure Server Core using Sconfig"
-  ms.date: 01/18/2021
+  ms.date: 01/19/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
 durationInMinutes: 10
+content: |
+  [!include[](includes/3-configure-server-core-using-sconfig.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "An administrator at Contoso wants to connect to SEA-DC1 using Remote Desktop. The administrator can successfully connect to SEA-DC1 using Server Manager and also Windows Admin Center. However, when they open Remote Desktop Connection and enter the computer name and user credentials, the connection fails. What does the administrator need to do?"
+    choices:
+    - content: "The administrator must use the computer SEA-DC1's IP address to connect ."
+      isCorrect: false
+      explanation: "That's incorrect. Since the administrator can connect using other remote management tools, using the IP address will make no difference."
+    - content: "On SEA-DC1, the administrator should use Sconfig and select option 7, and enable Remote Desktop."
+      isCorrect: true
+      explanation: "That's correct. Explain."
+    - content: "On SEA-DC1, the administrator should use Sconfig and select option 8, and reconfigure Network Settings."
+      isCorrect: false
+      explanation: "That's incorrect. Since the administrator can connect using other remote management tools, reconfiguring the network settings will make no difference."
