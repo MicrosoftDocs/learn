@@ -58,7 +58,7 @@ New-AzResourceGroup -Name "MyResourceGroup" -Location $loc
 
 PowerShell has several loops: **For**, **Do...While**, **For...Each**, and so on. The **For** loop is the best match for our needs because we will execute a cmdlet a fixed number of times.
 
-The core syntax is shown below; the example runs for two iterations and prints the value of **i** each time. The comparison operators are written **-lt** for "less than", **-le** for "less than or equal", **eq** for "equal", **ne** for "not equal", etc.
+The core syntax is shown below; the example runs for two iterations and prints the value of **i** each time. The comparison operators are written **-lt** for "less than", **-le** for "less than or equal", **-eq** for "equal", **-ne** for "not equal", etc.
 
 ```powershell
 For ($i = 1; $i -lt 3; $i++)
