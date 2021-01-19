@@ -14,20 +14,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  #   - content: Mark all general features of managed data services
-  #     choices:
-  #       - content: Automatic scaling.
-  #         isCorrect: false
-  #         explanation: TODO
-  #       - content: Scheduled updates.
-  #         isCorrect: true
-  #         explanation: TODO
-  #       - content: Pay only for what you use.
-  #         isCorrect: true
-  #         explanation: TODO
-  #       - content: High availability.
-  #         isCorrect: false
-  #         explanation: TODO
+    - content: Mark all general features of managed data services
+      choices:
+        - content: Automatic scaling.
+          isCorrect: false
+          explanation: TODO
+        - content: Scheduled updates.
+          isCorrect: false
+          explanation: TODO
+        - content: Pay only for what you use.
+          isCorrect: true
+          explanation: TODO
+        - content: High availability.
+          isCorrect: false
+          explanation: TODO
   #   - content: Mark the features specific to Azure Cache for Redis
   #     choices:
   #       - content: Data persistence and high-availability cluster for Premium tier.
