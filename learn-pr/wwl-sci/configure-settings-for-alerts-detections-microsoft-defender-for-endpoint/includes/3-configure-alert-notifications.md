@@ -27,7 +27,7 @@ You can create rules that determine the devices and alert severities to send ema
     - Include device information - Includes the device name in the email alert body.
 
     - Devices - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or selected device groups. For more information, see Create and manage device groups.
- 
+
     - Alert severity - Choose the alert severity level.
 
 1. Select **Next**.

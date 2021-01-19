@@ -1,9 +1,5 @@
 Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of detection indicators and for blocking (prevention and response). Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken, the duration for when to apply the action, and the scope of the device group to apply it to.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about unified IOCs.|
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLVw?rel=0]
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender AV).
@@ -79,21 +75,21 @@ It's important to understand the following prerequisites prior to creating indic
 
 ### Create an indicator for files from the settings page
 
-In the navigation pane, select Settings > Indicators.
+1. In the navigation pane, select **Settings > Indicators**.
 
-- Select the File hash tab.
+1. Select the File hash tab.
 
-- Select Add indicator.
+1. Select **Add indicator**.
 
-- Specify the following details:
+1. Specify the following details:
 
-  - Indicator - Specify the entity details and define the expiration of the indicator.
+    - Indicator - Specify the entity details and define the expiration of the indicator.
 
-  - Action - Specify the action to be taken and provide a description.
+    - Action - Specify the action to be taken and provide a description.
 
-  - Scope - Define the scope of the machine group.
+    - Scope - Define the scope of the machine group.
 
-- Review the details in the Summary tab, then select Save.
+1. Review the details in the Summary tab, then select **Save**.
 
 ### Create a contextual indicator from the file details page
 
@@ -117,7 +113,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - Supported on machines on Windows 10, version 1709 or later.
 
-- Ensure that *Custom network indicators* is enabled in Microsoft Defender Security Center > Settings > Advanced features. For more information, see Advanced features.
+- Ensure that *Custom network indicators* are enabled in Microsoft Defender Security Center > Settings > Advanced features. For more information, see Advanced features.
 
 Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge uses Network Protection to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios use Network Protection for inspection and enforcement:
 
@@ -135,21 +131,21 @@ There may be up to 2 hours of latency (usually less) between the time the action
 
 ### Create an indicator for IPs, URLs, or domains from the settings page
 
-- In the navigation pane, select Settings > Indicators.
+1. In the navigation pane, select **Settings > Indicators**.
 
-- Select the IP addresses or URLs/Domains tab.
+1. Select the IP addresses or URLs/Domains tab.
 
-- Select Add item.
+1. Select **Add item**.
 
-- Specify the following details:
+1. Specify the following details:
 
-  - Indicator - Specify the entity details and define the expiration of the indicator.
+    - Indicator - Specify the entity details and define the expiration of the indicator.
 
-  - Action - Specify the action to be taken and provide a description.
+    - Action - Specify the action to be taken and provide a description.
 
-  - Scope - Define the scope of the machine group.
+    - Scope - Define the scope of the machine group.
 
-- Review the details in the Summary tab, then select Save.
+1.  Review the details in the Summary tab, then select **Save**.
 
 ## Create indicators based on certificates
 
@@ -173,27 +169,27 @@ It's important to understand the following requirements prior to creating indica
 
 - This feature currently supports entering .CER or .PEM file extensions.
 
-A valid leaf certificate is a signing certificate with a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').  The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality; only leaf certificates are supported.  Microsoft signed certificates cannot be blocked.
+A valid leaf certificate is a signing certificate with a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').  The children or parents of the allow/block certificate IOCs are not included in the allow/block IoC functionality; only leaf certificates are supported.  Microsoft signed certificates cannot be blocked.
 
 It can take up to 3 hours to create and remove a certificate IoC.
 
 ### Create an indicator for certificates from the settings page:
 
-- In the navigation pane, select Settings > Indicators.
+1. In the navigation pane, select **Settings > Indicators**.
 
-- Select the Certificate tab.
+1. Select the Certificate tab.
 
-- Select Add indicator.
+1. Select **Add indicator**.
 
-- Specify the following details:
+1. Specify the following details:
 
-  - Indicator - Specify the entity details and define the expiration of the indicator.
+    - Indicator - Specify the entity details and define the expiration of the indicator.
 
-  - Action - Specify the action to be taken and provide a description.
+    - Action - Specify the action to be taken and provide a description.
 
-  - Scope - Define the scope of the machine group.
+    - Scope - Define the scope of the machine group.
 
-- Review the details in the Summary tab, then select Save.
+1. Review the details in the Summary tab, then select **Save**.
 
 ## Import a list of IoCs
 
@@ -201,15 +197,15 @@ You can also choose to upload a CSV file that defines the attributes of indicato
 
 Download the sample CSV to know the supported column attributes.
 
-- In the navigation pane, select Settings > Indicators.
+1. In the navigation pane, select **Settings > Indicators**.
 
-- Select the tab of the entity type you'd like to import indicators for.
+1. Select the tab of the entity type you'd like to import indicators for.
 
-- Select Import > Choose file.
+1. Select **Import > Choose file**.
 
-- Select Import. Do this for all the files you'd like to import.
+1. Select **Import**. Do this for all the files you'd like to import.
 
-- Select Done.
+1.  Select **Done**.
 
 The following table shows the supported parameters.
 
@@ -225,5 +221,5 @@ The following table shows the supported parameters.
 | recommendedActions| String| TI indicator alert recommended actions. Optional|
 | rbacGroupNames| String| Comma-separated list of RBAC group names the indicator would be applied to. Optional|
 | category| String| Category of the alert. Examples include: Execution and credential access. Optional|
-| mitretechniques| String| MITRE techniques code/id (comma separated). For more information, see Enterprise tactics. Optional It is recommended to add a value in category when a MITRE technique.|
+| mitre techniques| String| MITRE techniques code/id (comma separated). For more information, see Enterprise tactics. Optional It is recommended to add a value in category when a MITRE technique.|
 

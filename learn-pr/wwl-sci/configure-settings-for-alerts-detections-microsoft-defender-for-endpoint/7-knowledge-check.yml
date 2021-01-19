@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/14/2021
+  ms.date: 01/19/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which file type can you use to upload Indicators"
+  - content: "Which file type can you use to upload Indicators?"
     choices:
     - content: "JSON"
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Domains"
       isCorrect: false
       explanation: "Incorrect.  Domains is an indicator type."
-  - content: "Which filter is not included as part of a Alert notification rule."
+  - content: "Which filter is not included as part of an Alert notification rule?"
     choices:
     - content: "Alert Severity"
       isCorrect: false

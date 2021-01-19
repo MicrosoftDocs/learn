@@ -2,7 +2,7 @@ There might be scenarios where you need to suppress alerts from appearing in the
 
 **View existing rules**
 
-You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off.
+You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off by completing these actions:
 
 1. In the navigation pane, select **Settings > Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
 
@@ -12,7 +12,7 @@ You can view a list of all the suppression rules and manage them in one place. Y
 
 **View rule details**
 
-View details of a suppression rule
+View details of a suppression rule by completing these actions:
 
 1. In the navigation pane, select **Settings > Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
 

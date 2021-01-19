@@ -1,8 +1,9 @@
-Now that you have reviewed this module, you should be able to:
+You should have learned how Microsoft Defender for Endpoint provides configuration options for alerts and detections. And that the configurations include notifications, custom indicators, and detection rules.
 
-- Alert settings
+You should now be able to:
 
-- Indicator management
+- Configure alert settings in Microsoft Defender for Endpoint
+- Manage indicators in Microsoft Defender for Endpoint
 
 ## Learn more
 
