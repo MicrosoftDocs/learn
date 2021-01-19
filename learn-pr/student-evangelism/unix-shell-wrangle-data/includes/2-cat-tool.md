@@ -28,12 +28,17 @@ Create new files by redirecting the standard output of the `cat` command by usin
 1. Enter some text, in this case, **NASA headquarters**. Then select <kbd>ENTER</kbd>.
 1. End the program and restore the command prompt by selecting <kbd>CTRL+D</kbd>. If `file1` exists, it will be overwritten.
 
-1. To append a line to the existing file without overwriting, you can use the `>>` operator. For example, to add `Goddard Space Flight Center` to `file1` you would run:
+1. To append a line to the existing file without overwriting, you can use the `>>` operator. For example, to add `Goddard Space Flight Center` to `file1` you would first run:
 
-    ```bash
-    cat >> file1
-    Goddard Space Flight Center
-    ```
+     ```bash
+     cat >> file1
+     ```
+
+1. Select <kbd>ENTER</kbd>, and then add the next line:
+
+     ```bash
+     Goddard Space Flight Center
+     ```
 
 1. Select <kbd>ENTER</kbd>, then <kbd>CTRL+D</kbd> to complete the command.
 
@@ -54,6 +59,12 @@ NASA headquarters
 Goddard Space Flight Center
 NASA headquarters
 Goddard Space Flight Center
+```
+
+If you run the command `ls` again, you'll see that the new files have been added to your directory:
+
+```output
+file1 file2 NASA-logs-1995.txt NASA-software-API.txt
 ```
 
 The contents of each file will be displayed on the `stdout` starting on a new line and in the order that the file names appear in the command. You can also redirect this output to a second file, `file2`.

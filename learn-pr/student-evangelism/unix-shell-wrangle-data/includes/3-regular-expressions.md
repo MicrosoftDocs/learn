@@ -32,11 +32,11 @@ If you completed the previous unit, you should now have a sample of the open dat
 
 1. Make sure that the **regex** option is switched on, as shown in the following screenshot.
 
-     :::image type="content" source="../media/cloud-shell-sandbox-search-regex-selected.png" alt-text="Screenshot showing the Cloud Shell search box and regex option selected.":::
+      :::image type="content" source="../media/cloud-shell-sandbox-search-regex-selected.png" alt-text="Screenshot showing the Cloud Shell search box and regex option selected.":::
 
-1. Enter the words **Open Source** in the search box. Cloud Shell matches all of the string instances. You can use the arrow keys to navigate to the matches in the file.
+1. Enter the words **Open Source** in the search box. Cloud Shell matches all of the string instances. You can use the keyboard arrow keys to navigate to the matches in the file.
 
-:::image type="content" source="../media/cloud-shell-sandbox-search-open-source.png" alt-text="Screenshot showing Cloud Shell search results in a text file.":::
+      :::image type="content" source="../media/cloud-shell-sandbox-search-open-source.png" alt-text="Screenshot showing Cloud Shell search results in a text file.":::
 
 This technique might not seem any different from any other use of a search box. But the true power of regex comes when we start using special characters, ranges, and anchors.
 

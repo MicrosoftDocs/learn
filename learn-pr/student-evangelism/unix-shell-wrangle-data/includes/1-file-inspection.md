@@ -7,13 +7,13 @@ As a developer, you'll often need to extract information from logs. In this modu
 >
 > The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so that your work is not lost.
 
-1. Make a new directory named `data`.
+1. Use the following command to make a new directory named `data`.
 
      ```bash
      mkdir data
      ```
 
-1. Download the dataset.
+1. Use the `wget` command to download the dataset.
 
      ```bash
      wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
@@ -58,7 +58,7 @@ We'll use the `tail` and `head` commands to display the last and first five rows
     tail -n 5  NASA-software-API.txt
     ```
 
-    Your output should look like thiscd :
+    Your output should look like this:
 
     ```output
    SSC-00393 SSC 2013-05-17T00:00:00.000 "General Public" "Software Suite to Support In-Flight Characterization of Remote Sensing Systems"
@@ -90,6 +90,15 @@ Let's use `nl` with the flag `-s` to use `=` as a delimiter.
 
 ```bash
 nl -s = NASA-software-API.txt
+```
+
+Your output should list each line in the file, ending with this:
+
+```output
+697=SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
+698=GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+699=GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
 ```
 
 The `nl` filter has flags that allow you to change the increment value (`-i`), change the numbering format (`ln, rn, rz`), or change the starting number (`-v`).
