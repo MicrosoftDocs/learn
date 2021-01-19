@@ -8,7 +8,7 @@ In this unit, you'll learn how to quickly deploy a backlog to Azure DevOps using
 
 ## Pre-requisites
 
-In Azure DevOps, users have different access levels - Basic, Stakeholder and Visual Studio Subscriber. Access levels determine what features are available to users. In order to provision projects using the demo generator, you need at least a Basic access level. This error indicates the user has a stakeholder license which does not grant permissions to writing shared queries
+In Azure DevOps, users have different access levels - Basic, Stakeholder, and Visual Studio Subscriber. Access levels determine what features are available to users. In order to provision projects using the demo generator, you need at least a Basic access level. This error indicates the user has a stakeholder license, which does not grant permissions to writing shared queries
 
 ### Create an Azure DevOps account
 
@@ -41,10 +41,10 @@ To deploy the cloud adoption plan, open the [Azure DevOps demo generator](https:
 The demo generator tool will require you to sign in with an account that has proper permissions, see pre-requisites above.
 :::image type="content" source="../media/demo-generator-sign-in.png" alt-text="Sign in to the demo generator" border="false":::
 
-Once you sign in, you'll be able to choose a template. There are a number of Azure DevOps Templates for various purposes including DevOps Labs for demos of cool features or Microsoft Learn templates which deploy projects you can leverage in other Learn Modules. The templates containing cloud adoption plans can be found in the "Cloud Adoption Framework" tab.
+Once you sign in, you'll be able to choose a template. There is a growing list of community-led Azure DevOps Templates for various purposes including DevOps Labs for demos of cool features or Microsoft Learn templates, which deploy projects you can use in other Learn Modules. The templates containing cloud adoption plans can be found in the "Cloud Adoption Framework" tab.
 :::image type="content" source="../media/demo-generator-choose-template.png" alt-text="Choose a template" border="false":::
 
-These templates help you plan out work required to implement some of the best practices found in CAF. In this case, choose the Cloud Adoption Plan template. This will load a template for server migration planning that we can use throughout this module.
+These templates help you plan out work required to implement some of the best practices found in CAF. In this case, choose the Cloud Adoption Plan template. This template will load a server migration planning that we can use throughout this module.
 :::image type="content" source="../media/demo-generator-select-template.png" alt-text="Select the chosen template" border="false":::
 
 Outside of this module, you can use the Cloud Adoption Plan templates to plan and manage work related to governance, SQL Migration, Knowledge mining, or a growing list of other cloud adoption activities.
@@ -68,7 +68,7 @@ When your new project opens, you will have access to a number of different DevOp
 To open the project plan, hover on "Boards" in the left hand navigation. Then click on the "Backlogs" menu item.
 :::image type="content" source="../media/new-project-backlogs.png" alt-text="Open the backlog" border="false":::
 
-This will load all of the different tasks in the project. But there is a better way to look at the project as a whole. Click on the "Stories" tab in the upper right corner. Then click on "Epics" to view the full project hierarchy. All of the tasks in this project are now grouped to align to the CAF Methodologies, or the phases of cloud adoption that you may need throughout your adoption journey.
+The backlog lists all of the different tasks in the project. But there is a better way to look at the project as a whole. Click on the "Stories" tab in the upper right corner. Then click on "Epics" to view the full project hierarchy. All of the tasks in this project are now grouped to align to the CAF Methodologies, or the phases of cloud adoption that you may need throughout your adoption journey.
 
 :::image type="content" source="../media/new-project-epics.png" alt-text="Change view to Epic hierarchy" border="false":::
 
@@ -77,8 +77,8 @@ This new view is hierarchial. To drill into each phase, click the carrot next to
 
 The following list provides a quick translation of Azure DevOps terms to more traditional project terms:
 
-- Epic: In this template an epic is a phase of your cloud adoption or digital transformation program.
-- Feature: In this template each feature is a project required to complete that phase of adoption.
+- Epic: In this template, an epic is a phase of your cloud adoption or digital transformation program.
+- Feature: In this template, each feature is a project required to complete that phase of adoption.
 - User story: Each User Story is a shared goal or deliverable you will need to be successful when that phase is complete.
 - Task: Each task is a unit of work that must be done to realize the goal or deliverable.
 
