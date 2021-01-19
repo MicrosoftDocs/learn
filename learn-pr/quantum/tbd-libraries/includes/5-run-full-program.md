@@ -11,7 +11,7 @@ The first step is precisely what we defined in the previous unit with `IsbnOracl
 
 The second step---sometimes referred to as *reflection about the mean* or *diffusion*---is *not* as problem specific as the oracle.
 Nonetheless, it can be somewhat optimized for our situation.
-We implement it in the following. 
+We implement it in the following.
 
 ## Reflection about uniform superposition
 
