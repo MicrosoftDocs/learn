@@ -1,4 +1,4 @@
-In this unit, you'll create and configure an Azure Database for MySql.
+In this unit, you'll look at how to create an Azure Database for MySql.
 
 ## Deploy Azure Database for MySQL
 
@@ -20,11 +20,11 @@ Flexible servers are best suited for:
 
 ### How to create Azure Database for MySQL Flexible Server
 
-To create a MySQL on Azure, at first, you must sign in to Azure. Then you create a `Resource Group` for creating the MySQL Resource. After creating the resource group, you can create a `Azure Database for MySQL` instance in the resource group. Finally to access to the MySQL instance, you need configure a Firewall Rule for it.
+To create a MySQL on Azure instance, first create a `Resource Group` then you create a `Azure Database for MySQL` instance in the resource group. Finally to access to the MySQL instance, you need configure a Firewall Rule for it.
 
 #### Sign in to Azure
 
-You can sign in to Azure with following command.
+You can sign in to Azure with following command:
 
 ```azurecli
 az login
@@ -32,7 +32,7 @@ az login
 
 #### Create a Resource Group
 
-You can create Azure Resource Group with following command.
+You can create Azure Resource Group with following command:
 
 ```azurecli
 az group create --name $MYSQL_RES_GRP_NAME --location $MYSQL_LOCATION
@@ -40,7 +40,7 @@ az group create --name $MYSQL_RES_GRP_NAME --location $MYSQL_LOCATION
 
 #### Create a MySQL DB Instance
 
-You can create Azure Database for MySQL Flexible Server with following command.
+You can create Azure Database for MySQL Flexible Server with following command:
 
 ```azurecli
 az mysql flexible-server create \
@@ -57,7 +57,7 @@ az mysql flexible-server create \
 
 #### Create a firewall Rule
 
-You can create Firewall Rule to MySQL Flexible Server with following command.
+You can create Firewall Rule to MySQL Flexible Server with following command:
 
 ```azurecli
 az mysql flexible-server firewall-rule create \

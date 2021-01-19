@@ -1,11 +1,13 @@
 In this unit, we'll introduce Java EE applications and the modules learning goals.
 
 Java EE applications are used in enterprises such as purchase management, manufacturing, and CRM.
-An example is a freight delivery system.
+An example is a freight delivery system:
 Your service receives a package and captures the shipping address information and register the delivery address.
 Many enterprises create similar services that query and update data from databases.
 
-In this module, you'll create a sample database on `Azure Database for MySQL`. You'll create and deploy a `Java EE (Jakarta EE) Application` to `JBoss EAP on Azure App Service`. Finally you'll learn how to manage the `JBoss EAP on Azure App Service`.
+In this module, you'll create a sample database on `Azure Database for MySQL`.
+You'll then create and deploy a `Java EE (Jakarta EE) Application` to `JBoss EAP on Azure App Service`.
+Finally you'll learn how to manage the `JBoss EAP on Azure App Service`.
 
 ## Learning Objectives
 
