@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft
+metadata:
+  title: Describe the compliance management capabilities in Microsoft
+  description: "Describe the compliance management capabilities in Microsoft"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Describe the compliance management capabilities in Microsoft
+summary: Learn where to go to find compliance documentation and how Microsoft Compliance center and the capabilities of compliance manager helps organizations meet their compliance needs.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore the Microsoft compliance center
+  - Describe the benefits of compliance manager
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/describe-compliance-management-capabilities.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+- m365
+units:
+- learn.wwl.describe-compliance-management-capabilities-microsoft.introduction
+- learn.wwl.describe-compliance-management-capabilities-microsoft.describe-common-compliance-needs
+- learn.wwl.describe-compliance-management-capabilities-microsoft.explore-compliance-center
+- learn.wwl.describe-compliance-management-capabilities-microsoft.manager
+- learn.wwl.describe-compliance-management-capabilities-microsoft.describe-use-benefits-of-compliance-score
+- learn.wwl.describe-compliance-management-capabilities-microsoft.knowledge-check
+- learn.wwl.describe-compliance-management-capabilities-microsoft.summary-resources
+badge:
+  uid: learn.wwl.describe-compliance-management-capabilities-microsoft.badge
