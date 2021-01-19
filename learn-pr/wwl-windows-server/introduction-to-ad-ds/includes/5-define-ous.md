@@ -1,6 +1,6 @@
 An OU is a container object within a domain that you can use to consolidate users, computers, groups, and other objects. You can link Group Policy Objects (GPOs) directly to an OU to manage the users and computers contained in the OU. You can also assign an OU manager and associate a COM+ partition with an OU.
 
-You can create new OUs in AD DS by using:
+You can create new OUs in AD DS by using: 
 
 - Active Directory Administrative Center.
 - Active Directory Users and Computers.
