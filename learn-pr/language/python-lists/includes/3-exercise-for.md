@@ -151,7 +151,7 @@ for value in values:
     continue
   equipment.append(value)
 
-print(value)
+print(equipment)
 ```
 When you execute the code, you should see the following output:
 
