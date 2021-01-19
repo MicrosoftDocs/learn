@@ -4,19 +4,19 @@ Git lets you make changes fearlessly, because it *always* offers a way to get ba
 
 ## Amend a commit with `--amend` flag
 
-In the previous exercise, you modified the path to the style sheet in **index.html**. Suppose you discover that you made an error. Rather than type this:
+In the previous exercise, you updated the **index.html** file to modify the path to the style sheet. You should have added the following statement:
 
 ```html
 <link rel="stylesheet" href="assets/site.css">
 ```
 
-You typed this:
+Suppose you discover that you made an error when you entered the statement. Instead of specifying the folder path as `assets` plural, you entered `asset` singular:
 
 ```html
-<link rel="stylesheet" href="assest/site.css">
+<link rel="stylesheet" href="asset/site.css">
 ```
 
-When you refresh the page in your browser, you notice that your CSS style sheet isn't applied. After investigating, you see why.
+When you refresh the page in your browser, you notice that your CSS style sheet isn't applied. After you investigate, you realize that you miss-entered the path values.
 
 So you update **index.html** with the correct path to the style sheet. At this point, you could simply commit the corrected version of **index.html**, but instead, you prefer to put it in the same commit as the original. The `--amend` option to `git commit` lets you change history (and how often does one get the chance to change history?):
 

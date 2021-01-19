@@ -14,3 +14,7 @@ In this module, you will:
 - Create a new Git project and configure it
 - Make and track changes to code using Git
 - Use Git to recover from simple mistakes
+
+## Prerequisites
+
+None.

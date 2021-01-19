@@ -26,7 +26,7 @@ To understand Git, you have to understand the terminology. Here is a short list 
 
 - **Repository (repo):** The directory, located at the top level of a working tree, where Git keeps all of the history and metadata for a project. Repositories are almost always referred to as *repos*. A *bare repository* is one that is not part of a working tree; it is used for sharing or backup. A bare repo is usually a directory with a name ending in **.git** — for example, **project.git**.
 
-- **Hash:** A number produced by a hash function that represents the contents of a file or other object to a fixed number of digits. Git uses hashes that are 160 bits long. One advantage to using hashes is that Git can tell whether a file has changed by hashing its contents and comparing the result to the previous hash. If the file's time-and-date stamp has changed but the file's contents have not, Git will know the hash has not changed.
+- **Hash:** A number produced by a hash function that represents the contents of a file or other object to a fixed number of digits. Git uses hashes that are 160 bits long. One advantage to using hashes is that Git can tell whether a file has changed by hashing its contents and comparing the result to the previous hash. If the file time-and-date stamp is changed, but the file hash isn't changed, Git knows the file contents aren't changed.
 
 - **Object:** A Git repo contains four types of "objects," each uniquely identified by an SHA-1 hash. A **blob** object contains an ordinary file. A **tree** object represents a directory; it contains names, hashes, and permissions. A **commit** object represents a specific version of the working tree. A **tag** is a name attached to a commit.
 
