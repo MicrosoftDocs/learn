@@ -32,10 +32,10 @@ quiz:
       explanation: "That's incorrect. VMs can run with less memory."
     - content: "512 MB"
       isCorrect: false
-      explanation: "That's incorrect. Although VMs can run with 512 MB, they require more memory to startup."
+      explanation: "That's incorrect. Although VMs can run with 512 MB, they require more memory to start."
     - content: "800 MB"
       isCorrect: true
-      explanation: "That's correct. VMs require at least 800 MB of RAM during installation which you can reduce to 512 MB when  installation is complete."
+      explanation: "That's correct. VMs require at least 800 MB of RAM during installation, which you can reduce to 512 MB when installation is complete."
   - content: "When working with MDT, what is the name and location of the original install image?"
     choices:
     - content: "*x:*\\Sources\\install.wim"
