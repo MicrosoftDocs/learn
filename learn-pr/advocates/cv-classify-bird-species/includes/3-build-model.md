@@ -54,7 +54,7 @@ Next, we'll create an API resource in Azure Cognitive Services Custom Vision.
 
       1. In the dialog box, enter *BirdResourceGroup*, and then select **OK**.
 
-      :::image type="content" source="../media/azure-portal-create-resource-group.png" alt-text="Screenshot that shows how to create a new resource group in the the Azure portal."::: 
+      :::image type="content" source="../media/azure-portal-create-resource-group.png" alt-text="Screenshot that shows how to create a new resource group in the Azure portal."::: 
 
    1. Enter a name for your new Custom Vision service resource (for example, *BirdCustomVisionService*).
 

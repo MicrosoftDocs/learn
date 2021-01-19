@@ -39,3 +39,4 @@ To better understand the process of building a machine learning model, here's a 
 1. *Deploy the model.* Custom Vision gives us some options when it's time to deploy our model. We can deploy to an endpoint to integrate the model or we can download the model. If you download the model, you can choose from multiple formats to deploy the way that works best for your project. In this module, we'll discuss how to use the quick-deploy option that's available in the Custom Vision portal.
 
 Let's get started building our model!
+
