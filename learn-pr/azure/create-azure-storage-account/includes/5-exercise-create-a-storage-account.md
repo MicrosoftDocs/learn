@@ -24,10 +24,10 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     | Property | Value |
     |---|---|
-    |**Basics** tab ||
+    |**Basics** ||
     | Subscription | Concierge Subscription |
     | Resource group | ("**<rgn>[sandbox resource group name]</rgn>**") from the dropdown. |
-    |**Instance details** tab||
+    |**Instance details**||
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
     | Location | Select a location near to you in the dropdown from the previous list |
     | Performance | Standard. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
