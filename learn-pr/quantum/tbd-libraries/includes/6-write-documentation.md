@@ -34,12 +34,12 @@ We provide a full list of the possible headers below, but first let's document t
     /// factor to the proper states.
     ///
     /// # Input
-    /// ## digitReg
-    /// The input four-qubit register which will be operated on.
     /// ## constants
     /// The tuple (a, b) of the values which result from the ISBN and which digit is missing. 
+    /// ## digitReg
+    /// The input four-qubit register which will be operated on.
     /// These imply the ISBN check equation 0 = b + a*x mod 11.
-    operation IsbnOracle(digitReg : Qubit[], constants : (Int, Int)) : Unit is Adj + Ctl {
+    operation IsbnOracle(constants : (Int, Int), digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {

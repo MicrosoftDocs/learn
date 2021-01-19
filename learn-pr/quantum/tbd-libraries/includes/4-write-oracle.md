@@ -46,16 +46,16 @@ To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a qu
 Fortunately, the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger) from the `Microsoft.Quantum.Artithmetic` namespace of the Standard Library can be used to do just that. 
 It implements the mapping
 $$
-\ket{x}\ket{b} \mapsto \ket{x}\ket{(b + a \cdot x) \bmod N}
+|x}|b\rangle \mapsto |x\rangle|(b + a \cdot x) \bmod N\rangle
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 
-To implement our mapping specifically then, we will need to set the $\ket{b}$ register to the number state $\ket{9}$. 
+To implement our mapping specifically then, we will need to set the $|b\rangle$ register to the number state $|9\rangle$. 
 Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
-Properly using this mapping as an oracle on the four-qubit data register $\ket{x}$  proceeds by first creating a four-qubit target register (i.e. $\ket{b}$ above) and preparing it in the number state $\ket{9}$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
+Properly using this mapping as an oracle on the four-qubit data register $|x\rangle$  proceeds by first creating a four-qubit target register (i.e. $|b\rangle$ above) and preparing it in the number state $|9\rangle$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace)), and then performing the mapping above by providing $N=11$ and $a=6$, so
 $$
-\ket{x}\ket{9} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}.
+|x\rangle|9\rangle \mapsto |x\rangle|(9 + 6 \cdot x) \bmod 11\rangle.
 $$
 
 In the remainder of this unit you will learn how to explicitly implement this mapping as a Q# operation. 
@@ -64,27 +64,27 @@ In the next unit, you will put it all together and finally find the book you nee
 ### Flag the correct state by applying the oracle
 
 Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, i.e. those which are a solution to the search problem.
-This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` operation is applied to the $\ket{-}$ state, the $\ket{-}$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
+This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` operation is applied to the $|-\rangle$ state, the $|-\rangle$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 
-Supposing we have in hand the search register `digitReg` and a `flagQubit` initialized to $\ket{-}$, how would we go about getting that phase factor on strictly the state $\ket{x}$ in `digitReg` which satisfies $(9 + 6 \cdot x) \bmod 11 = 0$?
+Supposing we have in hand the search register `digitReg` and a `flagQubit` initialized to $|-\rangle$, how would we go about getting that phase factor on strictly the state $|x\rangle$ in `digitReg` which satisfies $(9 + 6 \cdot x) \bmod 11 = 0$?
 
-Well, we can add a secondary target register initialized to $\ket{9}$, leaving the full state of the form
+Well, we can add a secondary target register initialized to $|9\rangle$, leaving the full state of the form
 $$
-\ket{x}\ket{9}\_{\text{target}}\ket{-},
+|x\rangle|9\rangle\_{\text{target}}|-\rangle,
 $$
 and then apply the mapping, yielding
 $$
-\ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\_{\text{target}}\ket{-}.
+|x\rangle|(9 + 6 \cdot x) \bmod 11}\_{\text{target}\rangle|-\rangle.
 $$
 
-Finally, we can apply a controlled `X` operation on the $\ket{-}$ flag qubit, controlled by the target register being in the $\ket{0}$ number state (for four qubits this is represented as $\ket{0000}$).
+Finally, we can apply a controlled `X` operation on the $|-\rangle$ flag qubit, controlled by the target register being in the $|0\rangle$ number state (for four qubits this is represented as $|0000\rangle$).
 Thus the state of `digitReg` which satisfies the equation acquires the phase factor as
 $$
--1*\ket{x\_{good}} \ket{0}\_{\text{target}} \ket{-}
+-1*|x\_{good}\rangle |0\rangle\_{\text{target}} |-\rangle
 $$
 and the non-solution states do not:
 $$
-\ket{x\_{bad}} \ket{\neq 0}\_{\text{target}} \ket{-}.
+|x\_{bad}\rangle |\neq 0\rangle\_{\text{target}} |-\rangle.
 $$
 
 After this, the target register and the flag qubit can be uncomputed (handled by Q# `apply`/`within` statements) and de-allocated, having both served their purpose. 
@@ -110,17 +110,17 @@ The following code defines the operation `IsbnOracle`, which implements the full
     }
 ```
 
-Note that upon allocation, `targetReg` will be in the state $\ket{0}$. Therefore, `ComputeIsbnCheck` will need to first initialize
+Note that upon allocation, `targetReg` will be in the state $|0\rangle$. Therefore, `ComputeIsbnCheck` will need to first initialize
 
 
 ### Apply the arithmetic mapping to target state
 
 We just described how the oracle is implemented using the `ComputeIsbnCheck` operation, which performs the mapping
 $$
-\ket{x}\ket{0}\_{\text{target}} \mapsto \ket{x}\ket{(9 + 6 \cdot x) \bmod 11}\_{\text{target}}.
+|x\rangle|0\rangle\_{\text{target}} \mapsto |x\rangle|(9 + 6 \cdot x) \bmod 11\rangle\_{\text{target}}.
 $$
 So, what exactly does that operation consist of?
-As mentioned above, we can straightforwardly bring the target register from $\ket{0}$ to the number state $\ket{9}$ using `ApplyXorInPlace`. 
+As mentioned above, we can straightforwardly bring the target register from $|0\rangle$ to the number state $|9\rangle$ using `ApplyXorInPlace`. 
 Then, the only step left to perform the mapping using `MultiplyAndAddByModularInteger`.
 The code to do this is shown below.
 
@@ -174,7 +174,7 @@ As expected, this returns a tuple `(6, 9)` if given our example as `[0, 3, 0, 6,
 Now, we redefine `ComputeIsbnCheck` and `IsbnOracle` to take these constants as inputs:
 
 ```qsharp
-    operation ComputeIsbnCheck(digitReg : Qubit[], targetReg : Qubit[], constants : (Int, Int)) : Unit is Adj + Ctl {
+    operation ComputeIsbnCheck(constants : (Int, Int), digitReg : Qubit[], targetReg : Qubit[]) : Unit is Adj + Ctl {
         let (a, b) = constants;
 
         // Being freshly allocated, targetReg will be in |0⟩ when this operation is called.
@@ -186,7 +186,7 @@ Now, we redefine `ComputeIsbnCheck` and `IsbnOracle` to take these constants as 
     }
 
 
-    operation IsbnOracle(digitReg : Qubit[], constants : (Int, Int)) : Unit is Adj + Ctl {
+    operation IsbnOracle(constants : (Int, Int), digitReg : Qubit[]) : Unit is Adj + Ctl {
         // Allocate target register for oracle mapping, flag qubit for phase kickback
         using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
             within {
@@ -203,7 +203,6 @@ Now, we redefine `ComputeIsbnCheck` and `IsbnOracle` to take these constants as 
         }
     }
 ```
-
 
 ## What's next?
 
