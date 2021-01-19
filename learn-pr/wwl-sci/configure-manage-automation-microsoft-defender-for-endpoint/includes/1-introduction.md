@@ -1,12 +1,6 @@
-When you configure automation in Microsoft Defender for Endpoint you set options in multiple areas that all rely on each other's settings.  First, you configure environment settings on the Advanced features page.  Next, you assign remediation levels to Device groups.  Device groups provide two primary functions; set the remediation level, set security access. Design Device groups to meet both of these functional requirements.
+Microsoft Defender for Endpoint provides automated investigation and remediation.  The automation configuration options allow for control of how the automation is applied to devices.
 
-In this module, you will:
-
-- Configure advanced features
-
-- Manage automation settings
-
-## Prerequisites
-
-Intermediate understanding of Windows 10.
+You are a Security Operations Analyst working at a company that is implementing Microsoft Defender for Endpoint. You have different remediation automation requirements for devices.  You plan to create device groups to manage remediation levels.
+ 
+Device groups provide two primary functions; set the remediation level, and set security access. You meet with your Security Operations team and design device groups to meet both of these functional requirements. You then configure the Remediation Level for each device group and assign the devices.
 

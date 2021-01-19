@@ -6,11 +6,11 @@ Enable the Memory Content Analysis capability if you would like Microsoft Defend
 
 ![Automation File upload settings](../media/automationuploads.png)
 
-### Add file extension names and attachment extension names.
+### Add file extension names and attachment extension names
 
 To configure file settings:
 
-- In the navigation pane, select Settings > Automation file uploads.
+- In the navigation pane, select **Settings > Automation file uploads**.
 
 - Toggle the content analysis setting between On and Off.
 

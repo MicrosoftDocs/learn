@@ -1,8 +1,9 @@
-Now that you have reviewed this module, you should be able to:
+You should have learned how Microsoft Defender for Endpoint provides automated investigation and remediation.  You should also have learned how the automation configuration options allow for control of how the automation is applied to devices.
 
-- Configure advanced features
+You should now be able to:
 
-- Manage automation settings
+- Configure advanced features of Microsoft Defender for Endpoint
+- Manage automation settings in Microsoft Defender for Endpoint
 
 ## Learn more
 

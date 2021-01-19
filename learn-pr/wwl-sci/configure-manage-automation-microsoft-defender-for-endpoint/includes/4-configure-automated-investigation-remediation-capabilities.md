@@ -12,19 +12,19 @@ As a global administrator or security administrator:
 
 ## Set up device groups
 
-1. - In the navigation pane, on the Settings page, under Permissions, select **Device groups**.
+1. In the navigation pane, on the Settings page, under Permissions, select **Device groups**.
 
-1. - Select **+ Add device group**.
+1. Select **+ Add device group**.
 
     - Create at least one device group, as follows:
 
-    - Specify a name and description for the device group.
+        - Specify a name and description for the device group.
 
-    - In the Automation level list, select a level, such as Full – remediate threats automatically. The automation level determines whether remediation actions are taken automatically or only upon approval. To learn more, see How threats are remediated.
+        - In the Automation level list, select a level, such as Full – remediate threats automatically. The automation level determines whether remediation actions are taken automatically or only upon approval. To learn more, see How threats are remediated.
 
-    - In the Members section, use one or more conditions to identify and include devices.
+        - In the Members section, use one or more conditions to identify and include devices.
 
-    - On the User access tab, select the Azure Active Directory groups that should have access to the device group you're creating.
+        - On the User access tab, select the Azure Active Directory groups that should have access to the device group you're creating.
 
 1. Select **Done** when you're finished setting up your device group.
 
@@ -40,13 +40,7 @@ With this level of semi-automation, approval is required for any remediation act
 
 **Semi - require approval for core folders remediation (also a type of semi-automation)**
 
-With this level of semi-automation, approval is required for any remediation actions needed on files or executables that are in core folders. Core folders include operating system directories, such as the Windows (\windows\*).
-
-Remediation actions can be taken automatically on files or executables that are in other (non-core) folders.
-
-Pending actions for files or executables in core folders can be viewed and approved in the Action Center, on the Pending tab.
-
-Actions that were taken on files or executables in other folders can be viewed in the Action Center, on the History tab.
+With this level of semi-automation, approval is required for any remediation actions needed on files or executables that are in core folders. Core folders include operating system directories, such as the Windows (\windows\*). Remediation actions can be taken automatically on files or executables that are in other (non-core) folders. Pending actions for files or executables in core folders can be viewed and approved in the Action Center, on the Pending tab. Actions that were taken on files or executables in other folders can be viewed in the Action Center, on the History tab.
 
 **Semi - require approval for non-temp folders remediation (also a type of semi-automation)**
 
@@ -70,11 +64,7 @@ Temporary folders can include the following examples:
 
 - \documents and settings\*\users\*
 
-Remediation actions can be taken automatically on files or executables that are in temporary folders.
-
-Pending actions for files or executables that are not in temporary folders can be viewed and approved in the Action Center, on the Pending tab.
-
-Actions that were taken on files or executables in temporary folders can be viewed and approved in the Action Center on the History tab.
+Remediation actions can be taken automatically on files or executables that are in temporary folders. Pending actions for files or executables that are not in temporary folders can be viewed and approved in the Action Center, on the Pending tab. Actions that were taken on files or executables in temporary folders can be viewed and approved in the Action Center on the History tab.
 
 **No automated response (also referred to as 'no automation')**
 

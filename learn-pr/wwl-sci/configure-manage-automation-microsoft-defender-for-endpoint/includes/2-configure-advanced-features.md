@@ -1,4 +1,4 @@
-The Advance features page in the Settings/General area provides the following automation-related settings:
+The Advanced features page in the Settings/General area provides the following automation-related settings:
 
 The Advanced features area in the General Settings area provides many an on/off switch for features within the product. The following are settings that are automation focused.
 
@@ -23,7 +23,9 @@ The result of the autoresolve action may influence the Device risk level calcula
 
 Blocking is only available if your organization fulfills these requirements:
 
-- Uses Microsoft Defender Antivirus as the active antimalware solution and,
+- Uses Microsoft Defender Antivirus as the active antimalware solution
+
+and
 
 - The cloud-based protection feature is enabled
 

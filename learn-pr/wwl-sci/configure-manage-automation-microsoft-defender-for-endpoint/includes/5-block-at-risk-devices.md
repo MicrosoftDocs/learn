@@ -47,7 +47,7 @@ Take the following steps to enable Conditional Access:
 
 ### Create the compliance policy in Intune
 
-1. - In the Azure portal, select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. In the Azure portal, select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 
 1. Select **Device compliance > Policies > Create policy**.
 
