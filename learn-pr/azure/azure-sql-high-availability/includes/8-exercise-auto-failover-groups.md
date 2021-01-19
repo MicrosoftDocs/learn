@@ -112,7 +112,7 @@ In this section, you'll use two ostress workloads to check the `Updateability` (
 1. You'll use the first Command Prompt window to check the status of your primary server in the failover group you created. Run this command, using your server name and password:
 
     ```cmd
-    .\ostress.exe -S"<server-name>-fg.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50 -oprimary
+    .\ostress.exe -S"<server-name>-fg.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r5000 -oprimary
     ```
 
     > [!NOTE]
@@ -121,7 +121,7 @@ In this section, you'll use two ostress workloads to check the `Updateability` (
 1. You'll use the second Command Prompt window to check the status of your secondary server in the failover group you created. Run this command, using your server name and password:  
 
     ```cmd
-    ostress.exe -S"<server-name>-fg.secondary.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50 -osecondary
+    ostress.exe -S"<server-name>-fg.secondary.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r5000 -osecondary
     ```
 
 The result of the first command should be `READ_WRITE` because it checks the primary failover group server and you haven't initiated any failovers.  
