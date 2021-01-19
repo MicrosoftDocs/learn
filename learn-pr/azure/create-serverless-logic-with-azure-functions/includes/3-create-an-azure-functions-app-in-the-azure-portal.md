@@ -31,8 +31,6 @@ Let's create a function app in the Azure portal.
 
 1. In the left nav bar, select **Compute**, and then select **Function App**.
 
-    ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
-
     The **Create Function App** page appears. Complete the following fields.
 
     | Field | Value  |
@@ -64,7 +62,6 @@ Let's create a function app in the Azure portal.
 
 1. In the left nav bar, search for **Function App**.
 
-    ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
 
     The **Create Function App** page appears. Complete the following fields.
 
