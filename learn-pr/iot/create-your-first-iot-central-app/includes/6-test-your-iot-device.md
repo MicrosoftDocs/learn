@@ -1,79 +1,79 @@
-Working through this unit is an exciting time in IoT Central development! Finally, you get to check whether all the moving parts you've created work together.
+In this unit, you finally get to check whether the moving parts you've created work together.
 
-  > [!TIP]
-  > It can be helpful to have multiple monitors available, to display all the browser windows and console screens that are active at the same time.
+> [!TIP]
+> It can be helpful to use multiple monitors to display all the active browser windows and console screens at the same time.
 
 ## Test the device app and IoT Central app together
 
-To fully test the refrigerated truck device, it helps to break down the testing into a number of discreet checks:
+To fully test the refrigerated truck device, we'll break down the testing into several checks:
 
 1. The device app connects to Azure IoT Central.
-1. The telemetry functions send data on the specified interval.
+1. The telemetry functions send data at the specified interval.
 1. The data is picked up correctly by IoT Central.
 1. The command to send the truck to a specified customer works as expected.
 1. The command to recall the truck works as expected.
-1. Check customer and conflict events are transmitted correctly.
-1. Check the truck properties, and change the optimal temperature.
+1. The customer events and conflict events are transmitted correctly.
+1. The truck properties are correct, and the optimal temperature can be changed.
 
-In addition to this list, there are edge cases you could also investigate. One such case is what happens when the truck's contents start to melt? This state is left up to chance in our simulation, with the use of random numbers in our code.
+In addition to this list, you could also investigate edge cases. One such case is what happens when the truck's contents start to melt. Our simulation leaves this state to chance by using random numbers in the code.
 
-To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the device app.
+To begin testing, open the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app in a browser. Then run the device app.
 
 ::: zone pivot="vs-csharp,vs-node"
 
-1. In Visual Studio, select **Debug/Start without Debugging**.
+In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
 ::: zone pivot="vscode-node"
 
-1. In the terminal, enter `node app.js`.
+In the terminal, enter `node app.js`.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-1. In the terminal, enter `dotnet run`.
+In the terminal, enter `dotnet run`.
 
 ::: zone-end
 
-A console screen should open, with the text: **Starting Truck number 1**.
+A console screen opens with the message **Starting Truck number 1**.
 
 ### 1. Confirm the device app connects to Azure IoT Central
 
-1. If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you've made the connection. If you do not get this message, it usually means either the IoT Central app isn't running, or the connection key strings aren't correct.
+If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you've made the connection. If you don't get this message, make sure the IoT Central app is running and that the connection key strings are correct.
 
-1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully.
+The connection message should be followed by some text verifying that the settings and properties were sent successfully.
 
-    [![Screenshot showing the connection to IoT Central from the device app was made correctly](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
+[![Screenshot showing that the device app correctly connected to I O T Central.](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
 
 If all goes well, go straight into the second test.
 
-### 2. Confirm the telemetry functions send data on the specified interval
+### 2. Confirm the telemetry functions send data at the specified interval
 
-1. A console message should appear every five seconds, with the contents temperature.
+A console message appears every 5 seconds, providing the temperature of the contents. Watch the telemetry for a while to mentally prepare for the main test of this module!
 
-1. Watch the telemetry for a short while, and mentally prepare for the main test of this module.
+### 3. Confirm IoT Central correctly picks up the data 
 
-### 3. Confirm the data is picked up correctly by IoT Central
+To verify the data is being received at the IoT Central app: 
 
-1. To verify the data is being received at IoT Central, make sure your IoT Central app is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**) in the list of devices.
+1. Make sure your IoT Central app is open and the device is selected. If the device isn't selected, in the menu on the left, select **Devices**. In the list of devices, double-click the real device, **RefrigeratedTruck - 1**.
 
-1. Locate the **Contents temperature** tile, and verify, approximately, that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
+1. On the **Contents temperature** tile, check the temperatures that the device app sends to the console window. These temperatures should approximately match the data shown in the telemetry view of the IoT Central app.
 
     | IoT Central | Device app |
     | --- | --- |
-    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
+    | [![Screenshot showing an I O T Central tile that records truck temperatures.](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app. The output shows the temperature of the truck contents.](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
 
     > [!NOTE]
-    > The screenshots in this module are taken from the C# version of the app. The Node.js app screens will be similar, but not identical.
+    > The screenshots in this module are taken from the C# version of the app. The Node.js app views are similar but not identical.
 
-1. Check the state tiles: **Truck state**, **Cooling system state**, and **Contents state** in the IoT Central app, to verify the truck and its contents are in the expected state.
+1. In the IoT Central app, check the state tiles **Truck state**, **Cooling system state**, and **Contents state**. Verify that the truck and its contents are in the expected states.
 
-1. Check the **Location** map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom out a bit.
+1. Check the **Location** map view for the device. A blue circle near Seattle, USA, shows the truck ready to go. You might have to zoom out a bit.
 
-    [![Screenshot showing the location of the truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
+    [![Screenshot showing the location of the truck at its base in Seattle.](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
 
-If all is well, this is great progress. The truck is at its base, in the correct state, and waiting for a command.
+If all is well, these checks show great progress. The truck is at its base, in the correct state, and waiting for a command.
 
 ## Next steps
 
-Before you move on to the next steps of the testing, there's a short knowledge check to help establish what you've learned in the past few units.
+Before you move on to the next steps of the testing, check your knowledge to help establish what you've learned in the past few units.

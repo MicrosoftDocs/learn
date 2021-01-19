@@ -32,7 +32,7 @@ Both of these values can be obtained from the Azure portal in the form of a comp
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or even Azure Key Vault to store the connection string.
 
-1. Run the following command in the CloudShell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
+1. Run the following command in the Cloud Shell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
