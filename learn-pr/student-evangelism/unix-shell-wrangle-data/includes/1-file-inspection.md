@@ -3,13 +3,14 @@ Have you ever wanted to take data from one format into another? It's likely that
 As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to the sandbox environment.
 
 > [!Note]
-> Activating the Sandbox takes you out of the module. You'll be brought back into the module when you finish.
+> The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
+>
+> The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so that your work is not lost.
 
 1. Make a new directory named `data`.
 
      ```bash
      mkdir data
-
      ```
 
 1. Download the dataset.
@@ -17,7 +18,6 @@ As a developer, you'll often need to extract information from logs. In this modu
      ```bash
      wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
      wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
-
      ```
 
 1. Change to the new directory by using the command `cd`.
@@ -52,13 +52,13 @@ The `head` and `tail` commands are used to examine the top (head) or bottom (tai
 
 We'll use the `tail` and `head` commands to display the last and first five rows of the `NASA-software-API.txt` file, respectively.
 
-1. Type the command `tail` with the `-n` flag.
+1. Type the command `tail` with the `-n` flag to display the last 5 rows in the file.
 
     ```bash
     tail -n 5  NASA-software-API.txt
     ```
 
-    Your output should look like so:
+    Your output should look like thiscd :
 
     ```output
    SSC-00393 SSC 2013-05-17T00:00:00.000 "General Public" "Software Suite to Support In-Flight Characterization of Remote Sensing Systems"
@@ -68,10 +68,9 @@ We'll use the `tail` and `head` commands to display the last and first five rows
    GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
     ```
 
-1. Type the command `head` with the `-n` flag.
+1. Type the command `head` with the `-n` flag to display the first 5 rows in the file.
 
      ```bash
-     # to display only the first 5 rows in the file
      head -n 5 NASA-software-API.txt
      ```
 
