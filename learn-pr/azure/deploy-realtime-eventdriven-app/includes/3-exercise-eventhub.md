@@ -71,7 +71,7 @@ az functionapp create \
 ```
 
 > [!NOTE]
-> In order to use Java for the Azure Functions application we need to use at least the functions-version 2.
+> In order to use Java for the Azure Functions application we need to use at least the functions-version 2, or the latest and greatest, version 3.
 
 When the `az functionapp create` command creates your function application, it also creates an Application Insights resource with the same name. We'll use that resource later for our monitoring.
 
@@ -131,15 +131,15 @@ This command generates several files inside a telemetry-functions folder:
 As we won't touch the test files in this learn module, feel free to delete it.
 
 ``` Bash
-cd telemetry-functions
+cd telemetry-functions-producer
 rm -r src/test
 ```
 
 For local execution, the application settings need to be retrieved and stored at the `local.settings.json` file. You can do that automatically by running the `fetch-app-settings` command.
 
 ``` Bash
-cd telemetry-functions
-func azure functionapp fetch-app-settings $FUNCTION_APP
+cd telemetry-functions-producer
+func azure functionapp fetch-app-settings $FUNCTION_APP"-producer"
 ```
 
 Next, open the `Functions.java` file and replace the content with the following code.
