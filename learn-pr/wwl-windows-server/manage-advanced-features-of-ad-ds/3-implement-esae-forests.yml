@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-advanced-features-of-ad-ds.implement-esae-forests
+title: Implement ESAE forests
+metadata:
+  title: Implement ESAE forests
+  description: "Implement ESAE forests"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-implement-esae-forests.md)]

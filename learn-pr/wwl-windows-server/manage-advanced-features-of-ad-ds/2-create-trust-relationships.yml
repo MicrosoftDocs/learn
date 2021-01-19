@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-advanced-features-of-ad-ds.create-trust-relationships
+title: Create trust relationships
+metadata:
+  title: Create trust relationships
+  description: "Create trust relationships"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-create-trust-relationships.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "When establishing a forest trust relationship and selecting the **This Domain Only** option, what information needs to be provided?"
+    choices:
+    - content: "Trust password"
+      isCorrect: true
+      explanation: "That's correct. On the Trust Password page, you need to enter a password that the administrators from both forests have agreed upon as the trust password."
+    - content: "Password of a Domain Admin account from the other forest"
+      isCorrect: false
+      explanation: "That's incorrect. You need to use a password that the administrators from both forests have agreed upon as the trust password."
+    - content: "The name of the domain controller hosting the Domain Naming master role in the other forest"
+      isCorrect: false
+      explanation: "That's incorrect. You need to use a password that the administrators from both forests have agreed upon as the trust password."
