@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-server-file-servers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following features isn't supported by ReFS?"
+    choices:
+    - content: "Data deduplication"
+      isCorrect: false
+      explanation: "That's incorrect. ReFS supports data deduplication."
+    - content: "Data compression"
+      isCorrect: true
+      explanation: "That's correct. ReFS doesn't support file-level compression and encryption."
+    - content: "The ability to remediate integrity issues online"
+      isCorrect: false
+      explanation: "That's incorrect. ReFS provides enhanced resiliency to data corruption through a more accurate detection mechanism and the ability to remediate integrity issues online."
+  - content: "If an administrator wants to automatically encrypt a file based on its classification property, which feature of FSRM should they use?"
+    choices:
+    - content: "File Screening Management"
+      isCorrect: false
+      explanation: "That's incorrect. File Screening Management helps control the types of files that users can store on a file server. However, it doesn't automatically encrypt them."
+    - content: "File management tasks"
+      isCorrect: true
+      explanation: "That's correct. This feature allows you to apply conditional policies and actions to files based on such criteria as classification properties. The actions that file management tasks support include the ability to encrypt files."
+    - content: "File Classification Infrastructure"
+      isCorrect: false
+      explanation: "That's incorrect. This feature automates the data classification process. However, it doesn't automatically encrypt files."
+  - content: "Which of the following features has been introduced in SMB 3.1.1?"
+    choices:
+    - content: "SMB Multichannel"
+      isCorrect: false
+      explanation: "That's incorrect. SMB Multichannel was introduced in SMB 3.0."
+    - content: "Preauthentication integrity"
+      isCorrect: true
+      explanation: "That's correct. Preauthentication integrity, introduced in SMB 3.1.1, provides improved protection from a man-in-the-middle attack that might tamper with the establishment and authentication of SMB connection messages."
+    - content: "SMB Transparent Failover"
+      isCorrect: false
+      explanation: "That's incorrect. SMB Transparent Failover was introduced in SMB 3.0."

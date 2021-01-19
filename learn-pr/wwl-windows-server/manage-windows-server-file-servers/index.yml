@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.manage-windows-server-file-servers
+metadata:
+  title: Manage Windows Server file servers
+  description: "Manage Windows Server file servers"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Manage Windows Server file servers
+summary: Learn about the core functionality of the Windows Server File Server role, and how to configure and manage that core functionality.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the Windows Server file system.
+  - Describe the benefits and use of File Server Resource Manager.
+  - Describe SMB and its security considerations.
+  - Manage SMB configuration.
+  - Describe Volume Shadow Copy Service.
+prerequisites: |
+  To get the best experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.manage-windows-server-file-servers.introduction
+- learn.wwl.manage-windows-server-file-servers.define-system
+- learn.wwl.manage-windows-server-file-servers.list-benefits-uses-of-file-server-resource-manager
+- learn.wwl.manage-windows-server-file-servers.define-smb-its-security-considerations
+- learn.wwl.manage-windows-server-file-servers.configure-smb-protocol
+- learn.wwl.manage-windows-server-file-servers.define-volume-shadow-copy-service
+- learn.wwl.manage-windows-server-file-servers.knowledge-check
+- learn.wwl.manage-windows-server-file-servers.summary
+badge:
+  uid: learn.wwl.manage-windows-server-file-servers.badge

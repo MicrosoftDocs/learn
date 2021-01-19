@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-server-file-servers.define-volume-shadow-copy-service
+title: Define Volume Shadow Copy Service
+metadata:
+  title: Define Volume Shadow Copy Service
+  description: "Define Volume Shadow Copy Service"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-define-volume-shadow-copy-service.md)]

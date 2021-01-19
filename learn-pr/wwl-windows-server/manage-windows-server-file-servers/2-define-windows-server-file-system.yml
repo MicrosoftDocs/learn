@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-server-file-servers.define-system
+title: Define the Windows Server file system
+metadata:
+  title: Define the Windows Server file system
+  description: "Define the Windows Server file system"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-define-windows-server-file-system.md)]
