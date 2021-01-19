@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/01/2020
+  ms.date: 01/18/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -13,47 +13,47 @@ azureSandbox: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "You have customers running applications that access your PostgreSQL database. The operations these applications perform are typically queries that generate reports. These customers are located in Australia, Europe, and the United States. Your corporate headquarters is in the United States—this is where you insert, update, and delete most of the data. How can you minimize query latency for your customers?"
+  - content: "You have customers running applications that access your PostgreSQL database. The operations these applications perform are typically queries that generate reports. These customers are located in Australia, Europe, and the United States. Your corporate headquarters is in the United States, this is where you insert, update, and delete most of the data. How can you minimize query latency for your customers?"
     choices:
     - content: "Run copies of the database using Azure Database for PostgreSQL in Australia, Europe, and America. At regular intervals, back up the data at each site, and restore it on the other two sites."
       isCorrect: false
-      explanation: "Read-only replication is the most suitable solution. The customer workloads in Australia and Europe are read-intensive with few updates. The application can connect to the database in the United States on the rare occasions that it modifies data."
+      explanation: "That's incorrect. This would work, but involves downtime and there's a better solution."
     - content: "Implement read replicas with Azure Database for PostgreSQL. Make the United States office the master server, and replicate the data to replicas running in Australia and Europe."
       isCorrect: true
-      explanation: "Read-only replication is the most suitable solution. The customer workloads in Australia and Europe are read-intensive with few updates. The application can connect to the database in the United States on the rare occasions that it modifies data."
+      explanation: "That's correct. Read-only replication is the most suitable solution. The customer workloads in Australia and Europe are read-intensive with few updates. The application can connect to the database in the United States on the rare occasions that it modifies data."
     - content: "Host your database in an instance of the Azure Database for PostgreSQL service, and scale up to the maximum number of virtual processor cores."
       isCorrect: false
-      explanation: "Read-only replication is the most suitable solution. The customer workloads in Australia and Europe are read-intensive with few updates. The application can connect to the database in the United States on the rare occasions that it modifies data."
+      explanation: "That's incorrect. You need to locate your data closer to your customers."
   - content: "You want to use the **pgAdmin** utility to monitor your database running in Azure Database for PostgreSQL. You're attempting to connect from your desktop computer. You're using the correct server name, protocol (SSL), username, and password, but you receive an error. What might the problem be?"
     choices:
     - content: "You can't use pgAdmin to monitor a database running in Azure Database for PostgreSQL."
       isCorrect: false
-      explanation: "The most likely cause is that the firewall for your instance of Azure Database for PostgreSQL is blocking connection requests from your desktop computer. You should make sure there's a firewall rule that permits traffic from your computer."
+      explanation: "That's incorrect. Azure Database for PostgreSQL supports all the tools you are used to."
     - content: "The computer running the pgAdmin utility must be in the same virtual network as the Azure Database for PostgreSQL service instance."
       isCorrect: false
-      explanation: "The most likely cause is that the firewall for your instance of Azure Database for PostgreSQL is blocking connection requests from your desktop computer. You should make sure there's a firewall rule that permits traffic from your computer."
+      explanation: "That's incorrect. You can use your own machine to connect to and use an Azure Database for PostgreSQL."
     - content: "Check that you've added a firewall rule to your Azure Database for PostgreSQL service that allows connections from your desktop computer."
       isCorrect: true
-      explanation: "The most likely cause is that the firewall for your instance of Azure Database for PostgreSQL is blocking connection requests from your desktop computer. You should make sure there's a firewall rule that permits traffic from your computer."
+      explanation: "That's correct. The most likely cause is that the firewall for your instance of Azure Database for PostgreSQL is blocking connection requests from your desktop computer. You should make sure there's a firewall rule that permits traffic from your computer."
   - content: "You want to perform an online migration of an on-premises PostgreSQL database to Azure Database for PostgreSQL. Which tools should you use?"
     choices:
     - content: "The Azure Database Migration Service, running using the Premium pricing tier."
       isCorrect: true
-      explanation: "The Azure Database Migration Service, Premium tier, transfers data from an active PostgreSQL database and uses the write-ahead log from the source database to ensure any changes that occur after the initial migration are applied to the target database."
+      explanation: "That's correct. The Azure Database Migration Service, Premium tier, transfers data from an active PostgreSQL database and uses the write-ahead log from the source database to ensure any changes that occur after the initial migration are applied to the target database."
     - content: "The pg_dump and pg_restore utilities."
       isCorrect: false
-      explanation: "The Azure Database Migration Service, Premium tier, transfers data from an active PostgreSQL database and uses the write-ahead log from the source database to ensure any changes that occur after the initial migration are applied to the target database."
+      explanation: "That's incorrect. This would be an offline migration."
     - content: "The pg_dump and psql utilities."
       isCorrect: false
-      explanation: "The Azure Database Migration Service, Premium tier, transfers data from an active PostgreSQL database and uses the write-ahead log from the source database to ensure any changes that occur after the initial migration are applied to the target database."
-  - content: "You need to configure applications so they connect to your databases in Azure Database for PostgreSQL. Where can you find this information?"
+      explanation: "That's incorrect. This would be an offline migration."
+  - content: "You need to configure applications so they connect to your databases in Azure Database for PostgreSQL. Where can you find this database connection information?"
     choices:
     - content: "On the **Connection security** page for your Azure Database for PostgreSQL service in the Azure portal."
       isCorrect: false
-      explanation: "The **Connections strings** page shows the relevant information for a variety of connectivity providers."
-    - content: "It will be the same as the connection information used to connect to databases in your on-premises PostgreSQL servers—but the server name will have the \"Azure\" prefix."
+      explanation: "That's incorrect. This isn't the location of the information."
+    - content: "It will be the same as the connection information used to connect to databases in your on-premises PostgreSQL servers, but the server name will have the \"Azure\" prefix."
       isCorrect: false
-      explanation: "The **Connections strings** page shows the relevant information for a variety of connectivity providers."
+      explanation: "That's incorrect.  This isn't the location of the information."
     - content: "On the **Connection strings** page for your Azure Database for PostgreSQL service in the Azure portal."
       isCorrect: true
-      explanation: "The **Connections strings** page shows the relevant information for a variety of connectivity providers."
+      explanation: "That's correct. The **Connections strings** page shows the relevant information for a variety of connectivity providers."
