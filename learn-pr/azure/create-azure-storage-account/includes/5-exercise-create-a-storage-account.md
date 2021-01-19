@@ -24,10 +24,10 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     | Property | Value |
     |---|---|
-    |**Basics** tab |In the **Basics** tab, under **Project details** section:|
+    |**Basics** tab ||
     | Subscription | Concierge Subscription |
     | Resource group | ("**<rgn>[sandbox resource group name]</rgn>**") from the dropdown. |
-    |**Instance details**|Under **Instance details**, section: |
+    |**Instance details** tab||
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
     | Location | Select a location near to you in the dropdown from the previous list |
     | Performance | Standard. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
@@ -42,16 +42,16 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     | Property | Value |
     |---|---|
-    |**Network connectivity**|Under **Network connectivity** section:|
+    |**Network connectivity**| |
     | Connectivity method | *Public endpoint (all networks)*.  We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
-    |**Network routing**|Under **Network routing** section:|
+    |**Network routing**| |
     | Routing preference | *Microsoft network routing (default)*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 
 1. Select **Next : Data protection**. Enter the following information.
 
     | Property | Value |
     |---|---|
-    |**Recovery**|Under **Recovery** section: |
+    |**Recovery**| |
     | Turn on soft delete for blobs | *Disabled*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
     | Turn on soft delete for file shares | *Disabled*. File share soft delete lets you recover your blob data more easily at the folder level. |
     
@@ -59,17 +59,17 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     | Property | Value |
     |---|---|
-    |**Security**|Under **Security** section: |
+    |**Security** | |
     | Secure transfer required | *Enabled*. This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
     | Blob public access | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
     | Minimum TLS version | *Version 1.2* from dropdown. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
-    |**Blob storage**|Under **Blob storage** section: |
+    |**Blob storage**| |
     | Allow shared access key | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
     | Blob access tier (default) | *Hot*. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data; the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
-    | Under **Data Lake Storage Gen 2** section: |Under **Data Lake Storage Gen 2** section:|
+    | Under **Data Lake Storage Gen 2** section: | |
     | Hierarchical namespace | *Disabled*. This is for big-data applications that aren't relevant to this module. |
     | Access tier | Hot. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
-    |**Azure files**|Under **Azure files** section:|
+    |**Azure files**| |
     | Enable large file shares | *Disabled*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
 
     > [!WARNING]
