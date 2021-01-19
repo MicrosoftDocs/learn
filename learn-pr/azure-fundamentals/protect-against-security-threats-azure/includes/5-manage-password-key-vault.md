@@ -37,7 +37,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 1. Note some of the details about your key vault.
 
-    For example, the **DNS name** field shows the URI that your application can use to access your vault from the REST API.
+    For example, the **Vault URI** field shows the URI that your application can use to access your vault from the REST API.
 
     Here's an example for a key vault that's named **my-kv-1234**:
 

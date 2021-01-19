@@ -4,7 +4,7 @@ There are two purchasing models to consider: DTU and vCore. This unit will focus
 
 ## General Purpose
 
-Databases and managed instances in the General Purpose service tier have the same availability architecture. Using the following figure as a guide, first consider the *application* and *control ring*. The application connects to the server name, which then connects to a gateway (GW) that points the application to the server to connect to, running on a VM. With General Purpose, the primary replica uses locally attached SSD for the tempdb. The data and log files are stored in Azure Premium Storage, which is locally redundant storage (multiple copies in one region). The backup files are then stored in Azure Standard Storage, which is considered RA-GRS. In other words, it's globally redundant storage (with copies in multiple regions).
+Databases and managed instances in the General Purpose service tier have the same availability architecture. Using the following figure as a guide, first consider the *application* and *control ring*. The application connects to the server name, which then connects to a gateway (GW) that points the application to the server to connect to, running on a VM. With General Purpose, the primary replica uses locally attached SSD for the tempdb. The data and log files are stored in Azure Premium Storage, which is locally redundant storage (multiple copies in one region). The backup files are then stored in Azure Standard Storage, which is RA-GRS by default. In other words, it's globally redundant storage (with copies in multiple regions).
 
 As we discussed in an earlier module in this learning path, all of Azure SQL is built on Azure Service Fabric, which serves as the Azure backbone. If Azure Service Fabric determines that a failover needs to occur, the failover will be similar to that of a failover cluster instance (FCI). The service fabric will look for a node with spare capacity and spin up a new SQL Server instance. The database files will then be attached, recovery will be run, and gateways will be updated to point applications to the new node. No virtual network or listener or updates are required. This capability is built in.
 
@@ -24,8 +24,7 @@ If any type of failure occurs and the service fabric determines a failover needs
 
 ## Hyperscale
 
-The Hyperscale service tier is available only in Azure SQL Database. It's in development for Azure SQL Managed Instance. This service tier has a unique architecture.
-
+The Hyperscale service tier is available only in Azure SQL Database. This service tier has a unique architecture because it uses a tiered layer of caches and page servers to expand the ability to quickly access database pages without having to access the data file directly.
 
 :::image type="content" source="../media/4-hyperscale-architecture-2.png" alt-text="Screenshot that shows the Hyperscale architecture.":::
 
@@ -35,4 +34,4 @@ It's interesting to note how the log service was pulled out in this architecture
 
 As in the other service tiers, an automatic failover will happen if service fabric determines it needs to. But the recovery time will depend on the existence of secondary replicas. For example, if you don't have replicas and a failover occurs, the scenario will be similar to that of the General Purpose service tier: the service fabric first needs to find spare capacity. If you have one or more replicas, recovery is faster and more closely aligns to that of the Business Critical service tier.
 
-Business Critical maintains the highest performance and availability for workloads with small log writes that need low latency. But the Hyperscale service tier allows you to get a higher log throughput in terms of MB/second. So you'll need to consider your workload when you choose between the two.
+Business Critical maintains the highest performance and availability for workloads with small log writes that need low latency. But the Hyperscale service tier allows you to get a higher log throughput in terms of MB/second, provides for the largest database sizes, and provides up to four secondary replicas for higher levels of read scale. So you'll need to consider your workload when you choose between the two.

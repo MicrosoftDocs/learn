@@ -4,8 +4,8 @@ metadata:
   title: Describe lazy evaluation and other performance features in Azure Databricks
   description: "Describe lazy evaluation and other performance features in Azure Databricks"
   ms.date: 05/15/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe lazy evaluation and other performance features in Azure Databricks
@@ -30,8 +30,7 @@ units:
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.introduction
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.describe-difference-between-eager-lazy-execution
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.describe-fundamentals-how-catalyst-optimizer-works
-- learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.define-identify-actions
-- learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.define-identify-transformations
+- learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.define-identify-actions-transformations
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.describe-performance-enhancements-enabled
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.knowledge-check
 - learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.summary

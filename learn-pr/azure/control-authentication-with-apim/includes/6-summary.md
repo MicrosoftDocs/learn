@@ -1,4 +1,4 @@
-In this module, you have learned about API management and how you can control authentication through subscriptions and certificate authentication. You have also learned how the authentication models can be divided into granular levels of restrictions, offering different authorization mechanisms to different clients.
+In this module, you have learned about API management and how you can control authentication through subscriptions and certificate authentication. You've also learned how the authentication models can be divided into granular levels of restrictions, offering different authorization mechanisms to different clients.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

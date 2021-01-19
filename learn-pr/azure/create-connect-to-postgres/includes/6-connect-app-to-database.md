@@ -1,4 +1,4 @@
-As you saw in the previous exercise, setting up an Azure Database for PostgreSQL instance is fairly straightforward. We can quickly create, develop, and manage databases through the Azure portal and Cloud Shell. With Azure taking care of the hosting and security, once you’re set up, you can focus on application development.
+As you saw in the previous exercise, setting up an Azure Database for PostgreSQL instance is fairly straightforward. We can quickly create, develop, and manage databases through the Azure portal and Cloud Shell. With Azure taking care of the hosting and security, after you’re set up, you can focus on application development.
 
 Another key feature of Azure Database for PostgreSQL is flexibility. It supports many different libraries and drivers that developers can use to develop applications. Nearly all popular programming languages have libraries to connect and develop PostgreSQL databases.
 
