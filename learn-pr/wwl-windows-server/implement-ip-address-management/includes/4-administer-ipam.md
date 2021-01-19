@@ -27,7 +27,8 @@ IPAM has several built-in role-based security groups that you can use for managi
 |IPAM Administrators|Members of this group have privileges to access all IPAM data and to perform all IPAM tasks.|
 |IPAM MSM Administrators|Members of this group can manage DHCP servers, scopes, policies, and DNS servers and associated zones and records.|
 |IPAM DNS Administrators|Members of this group can manage DNS servers and their associated DNS zones and resource records.|
-|DNS Record Administrators|Members of this group can manage DNS resource records.|IPAM ASM Administrators|Members of this group can perform IP address space tasks, in addition to common IPAM management tasks.|
+|DNS Record Administrators|Members of this group can manage DNS resource records.|
+|IPAM ASM Administrators|Members of this group can perform IP address space tasks, in addition to common IPAM management tasks.|
 |IP Address Record Administrators|Members of this group can manage IP addresses, including unallocated addresses. Members can create and delete IP address instances.|
 |IPAM DHCP Administrators|Members of this group can manage DHCP servers and their scopes.|
 |IPAM DHCP Scope Administrators|Members of this group can manage DHCP scopes.|
