@@ -29,11 +29,9 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
    ![Screenshot showing creating a new Azure Cosmos DB Account](../media/4-azure-cosmos-db-create-new-account.png)
 
-1. Select **Review + Create**, and after receiving *Validation Success* notification, select **Create**.
+1. Select **Review + Create**, and after receiving *Validation Success* notification, select **Create**. It may take a few minutes for Azure to deploy your new Azure Cosmos DB account. A notification appears after deployment is complete.
 
-It might take a few minutes for Azure to deploy your new Azure Cosmos DB account. A notification appears after deployment is complete.
-
-1. Select **Got to resource**. Your Azure Cosmos DB account appears.
+1. Select **Go to resource**. Your Azure Cosmos DB account appears.
 
 ## Add a graph
 
