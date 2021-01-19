@@ -20,7 +20,7 @@ Flexible servers are best suited for:
 
 ### How to create Azure Database for MySQL Flexible Server
 
-To create a MySQL on Azure instance, first create a `Resource Group` then you create a `Azure Database for MySQL` instance in the resource group. Finally to access to the MySQL instance, you need configure a Firewall Rule for it.
+To create a MySQL on Azure Flexible server, first create a `Resource Group` then create a flexible `Azure Database for MySQL` instance in the resource group. Finally to access to the MySQL instance, you need configure a Firewall Rule for it.
 
 #### Sign in to Azure
 
