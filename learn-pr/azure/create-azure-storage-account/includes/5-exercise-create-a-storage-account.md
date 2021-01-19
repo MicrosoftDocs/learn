@@ -66,7 +66,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     |**Blob storage**| |
     | Allow shared access key | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
     | Blob access tier (default) | *Hot*. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data; the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
-    | Under **Data Lake Storage Gen 2** section: | |
+    | **Data Lake Storage Gen 2**| |
     | Hierarchical namespace | *Disabled*. This is for big-data applications that aren't relevant to this module. |
     | Access tier | Hot. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
     |**Azure files**| |
