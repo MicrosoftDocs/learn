@@ -62,16 +62,14 @@ az login
 You can specify the Azure Data-Centre Region for your Flexible Database. 
 
 Currently the following Azure regions are available for MySQL Flexible severs: 
-
 "eastus2, westus2, brazilsouth, southeastasia, northeurope, australiaeast, japaneast, koreacentral, uksouth, westeurope, canadacentral, centralus, eastus"
-
 
 ```azurecli
 az configure --defaults location=japaneast
 ```
 
-> [!TIP]
-> If you change the region of your MySQL server, it's advisable to also change to the same region for your Java EE application.
+> [!NOTE]
+> It's advisable to also change to the same region for deploying your Java EE application.
 
 ## Create an Instance of Azure Database for MySQL
 
