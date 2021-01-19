@@ -104,7 +104,7 @@ The resulting matrix is a *feature map* of feature values that can be used to tr
 
 > **Note**: The values in the feature map can be greater than the maximum value for a pixel (255), so if you wanted to visualize the feature map as an image you would need to *normalize* the feature values between 0 and 255.
 
-IThe convolution process is shown in the animation below.
+The convolution process is shown in the animation below.
 
 ![A filter kernel is convolved across an image of a triangle, extracting features that emphasize the three edges and corners](../media/convolution.gif)
 
