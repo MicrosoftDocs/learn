@@ -24,8 +24,8 @@ quiz:
       explanation: "That's incorrect. This policy is superseded by more specific GPOs on the domain and OU."
     - content: "The Sales Desktop settings GPO"
       isCorrect: false
-      explanation: "That's incorrect. Although this is the most specific GPO, its settings are overridden by settings in the enforced Default Domain policy."
-  - content: "Which of the following contains the GPO settings?"
+      explanation: "That's incorrect. Although this GPO is the most specific, its settings are overridden by settings in the enforced Default Domain policy."
+  - content: "Which of the following options contains the GPO settings?"
     choices:
     - content: "The Group Policy container"
       isCorrect: false
@@ -33,11 +33,11 @@ quiz:
     - content: "The Group Policy template"
       isCorrect: true
       explanation: "That's correct. The Group Policy template contains the Group Policy settings."
-  - content: "IT staff in Adatum are deploying a new version of Microsoft Office in their on-premises environment. The administrator wants to configure settings with GPOs for Office. What should they do?"
+  - content: "The IT department in Adatum is deploying a new version of Microsoft Office in their on-premises environment. The administrator wants to configure settings with GPOs for Office. What should they do?"
     choices:
     - content: "Download and install new .adml files and then configure the desired settings in the Administrative Templates node in the appropriate GPO."
       isCorrect: false
-      explanation: "That's incorrect. .adml files store only language specific information and don't directly deal with GPO settings."
+      explanation: "That's incorrect. .adml files store only language-specific information and don't directly deal with GPO settings."
     - content: "Copy the content of the Windows\\PolicyDefinitions folder to the Central Store."
       isCorrect: false
       explanation: "That's incorrect. Although a Central Store makes managing Administrative Templates easier, Adatum administrators still need updated template files."
