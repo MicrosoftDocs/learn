@@ -1,38 +1,38 @@
-Next, you'll create an Event Hubs-triggered function inside a function app. This function will convert twin update events from their original form as JSON Patch documents to JSON objects, containing only updated, and added values from your twins.
+Next, you'll create an Event Hubs-triggered function inside a function app. This function will convert twin update events from their original form as JSON Patch documents to JSON objects. The objects will contain only updated and added values from your twins.
 
-## Create an Azure Function
+## Create an Azure function
 
-Run the following command in PowerShell:
+Run this command in PowerShell:
 
 ```powershell
 az functionapp create --resource-group $rgname --consumption-plan-location $location --runtime dotnet --functions-version 3 --name $twinupdatefunctionname --storage-account  $functionstorage
 ```
 
-## Create an Azure Functions app in Visual Studio Code for Event Hub
+## Create an Azure Functions app in Visual Studio Code
 
 Use Visual Studio Code to create a local Azure Functions project. Later in this unit, you'll publish your function code to Azure.
 
-1. Choose the Azure icon in the Activity bar, then in the **Azure: Functions** area, select the **Create new project** icon:
+1. Select the Azure icon in the Activity Bar. In the **Azure: Functions** menu, select the **Create new project** button:
 
-    :::image type="content" source="../media/create-azure-function-visual-studio-code.png" alt-text="Screenshot showing how to create a new Azure function project in Visual Studio Code":::
+    :::image type="content" source="../media/create-azure-function-visual-studio-code.png" alt-text="Screenshot that shows the Create new project button in Visual Studio Code.":::
 
-1. Choose a directory location for your project workspace and choose **Select**.
+1. Choose a directory location for your project workspace and then click **Select**.
 
 1. When prompted, provide the following information:
 
-    - **Select a language for your function project:** Choose C#
-    - **Select a template for your project's first function:** Choose "EventHubTrigger"
-    - **Provide a function name:** Type "TSIFunction"
-    - **Provide a namespace:** Type "TSIFunctionsApp"
-    - **Select setting from local.settings.json:** Hit Enter
-    - **Select subscription:** Select the subscription you're using
-    - **Select an event hub namespace:** Choose the event hub namespace that ends with "twinsnamespace"
-    - **Select an event hub:** Choose "twins-event-hub"
-    - **Select an event hub policy:** Choose "EHPolicy"
-    - **When prompted for a storage account:** Choose "Skip for now"
-    - **Select how you would like to open your project:** Choose "Add to workspace"
+    - **Select a language for your function project:** Select **C#**.
+    - **Select a template for your project's first function:** Select **EventHubTrigger**.
+    - **Provide a function name:** Enter **TSIFunction**.
+    - **Provide a namespace:** Enter **TSIFunctionsApp**.
+    - **Select setting from local.settings.json:** Select **Enter**.
+    - **Select subscription:** Select the subscription you're using.
+    - **Select an event hub namespace:** Select the event hub namespace that ends with **twinsnamespace**.
+    - **Select an event hub:** Select **twins-event-hub**.
+    - **Select an event hub policy:** Select **EHPolicy**.
+    - **When prompted for a storage account:** Select **Skip for now.**
+    - **Select how you would like to open your project:** Select **Add to workspace**.
 
-1. Open the "TSIFunction.cs" file and replace the code in it with the following code sample:
+1. Open the TSIFunction.cs file and replace the code in it with this code:
 
     ```csharp
     using Microsoft.Azure.EventHubs;
@@ -57,20 +57,20 @@ Use Visual Studio Code to create a local Azure Functions project. Later in this 
                 JObject message = (JObject)JsonConvert.DeserializeObject(Encoding.UTF8.GetString(myEventHubMessage.Body));
                 log.LogInformation("Reading event:" + message.ToString());
     
-                // Read values that are replaced or added
+                // Read values that are replaced or added.
                 Dictionary<string, object> tsiUpdate = new Dictionary<string, object>();
                 foreach (var operation in message["patch"]) {
                     if (operation["op"].ToString() == "replace" || operation["op"].ToString() == "add")
                     {
-                        //Convert from JSON patch path to a flattened property for TSI
-                        //Example input: /Front/Temperature
+                        // Convert from JSON patch path to a flattened property for TSI.
+                        // Example input: /Front/Temperature
                         //        output: Front.Temperature
                         string path = operation["path"].ToString().Substring(1);                    
                         path = path.Replace("/", ".");                    
                         tsiUpdate.Add(path, operation["value"]);
                     }
                 }
-                //Send an update if updates exist
+                // Send an update if updates exist.
                 if (tsiUpdate.Count>0){
                     tsiUpdate.Add("$dtId", myEventHubMessage.Properties["cloudEvents:subject"]);
                     await outputEvents.AddAsync(JsonConvert.SerializeObject(tsiUpdate));
@@ -80,44 +80,44 @@ Use Visual Studio Code to create a local Azure Functions project. Later in this 
     }
     ```
 
-1. In the VSCode function extension, click on **Deploy to Function App...**
+1. In the Azure Functions Visual Studio Code extension, select **Deploy to Function App**:
 
-    :::image type="content" source="../media/deploy-azure-function-visual-studio-code.png" alt-text="Screenshot showing how to deploy an Azure function app in Visual Studio Code":::
+    :::image type="content" source="../media/deploy-azure-function-visual-studio-code.png" alt-text="Screenshot that shows the Deploy to Function App button in Visual Studio Code.":::
 
-    - **Select subscription:** Choose your subscription
-    - **Select Function App in Azure:** Choose the function that ends in "twinupdatefunction"
-    - **If prompted to overwrite a previous deployment:** Click "Deploy"
+   Provide the following information:
 
-    :::image type="content" source="../media/overwrite-azure-function-visual-studio-code.png" alt-text="Screenshot of a Visual Studio Code prompt to overwrite the previous Azure function deployment":::
+    - **Select subscription:** Select your subscription.
+    - **Select Function App in Azure:** Select the function that ends in **twinupdatefunction**.
+    - **If you get a message about overwriting a previous deployment:** Select **Deploy**.
+
+    :::image type="content" source="../media/overwrite-azure-function-visual-studio-code.png" alt-text="Screenshot of a Visual Studio Code warning about overwriting the previous Azure function deployment.":::
 
 1. When the deployment finishes, you'll be prompted to start streaming logs:
 
-    :::image type="content" source="../media/azure-function-stream-logs-visual-studio-code.png" alt-text="Screenshot of a Visual Studio Code prompt to stream logs for the deployed Azure function":::
+    :::image type="content" source="../media/azure-function-stream-logs-visual-studio-code.png" alt-text="Screenshot of a Visual Studio Code prompt to stream logs for the deployed Azure function.":::
 
-    - Click on **Stream Logs** to see the twin update messages received by the Azure Function.
+    - Select **Stream logs** to see the twin update messages received by the Azure function.
 
-        - Alternatively, you can stream logs at a later time by right-clicking on the Azure Function in VSCode and choosing **Start Streaming Logs**:
+    - Or, to stream logs at a later time, right-click the Azure function in Visual Studio Code and select **Start Streaming Logs**:
 
-        :::image type="content" source="../media/azure-function-stream-logs-later-visual-studio-code.png" alt-text="Screenshot showing how to stream logs for an Azure function after it's been deployed in Visual Studio Code":::
+        :::image type="content" source="../media/azure-function-stream-logs-later-visual-studio-code.png" alt-text="Screenshot that shows how to stream logs for an Azure function in Visual Studio Code after the function is deployed.":::
 
 ## Send telemetry to an event hub
 
-You'll now create a second event hub and configure your function to stream its output to that event hub. This event hub will then be connected to Time Series Insights.
+You'll now create a second event hub and configure your function to stream its output to that event hub. You'll then connect the event hub to Time Series Insights.
 
 ### Create an event hub
 
-To create the second event hub, use the following PowerShell instructions:
+To create the second event hub, complete the following steps by using PowerShell:
 
-1. Prepare your *Event Hubs namespace* and *resource group* name from earlier in this module
-
-1. Create a new event hub:
+1. Create a new event hub. Use the Event Hubs namespace and resource group name that you recorded earlier in this module.
 
     ```powershell
-    # Create an event hub. Specify a name "tsi-event-hub" for the event hub. 
+    # Create an event hub. Specify the name "tsi-event-hub" for the event hub. 
     az eventhubs eventhub create --name "tsi-event-hub" --resource-group $rgname --namespace-name $ehnamespace
     ```
 
-1. Create an [authorization rule](https://docs.microsoft.com/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) with "send" and "receive" permissions:
+1. Create an [authorization rule](https://docs.microsoft.com/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) that has send and receive permissions:
 
     ```powershell
     # Create an authorization rule. Specify a name for the rule.
@@ -126,17 +126,17 @@ To create the second event hub, use the following PowerShell instructions:
 
 ## Configure your function
 
-Next, you'll need to set environment variables in your function app from earlier, containing the connection strings for the event hubs you've created:
+Next, you'll need to set environment variables in your function app from earlier. The variables will contain the connection strings for the event hubs you've created.
 
-### Set the Twins event hub connection string
+### Set the twins event hub connection string
 
-1. Get the Twins [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you created in the previous section for the Twins hub:
+1. Get the twins [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string) by using the authorization rules you created in the previous section for the twins hub:
 
     ```powershell
     $adtehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name twins-event-hub --name EHPolicy --query primaryConnectionString -o tsv)
     ```
 
-1. Use the connection string you get as a result to create an app setting in your function app that contains your connection string:
+1. Use the returned connection string to create an app setting in your function app that contains your connection string:
 
     ```powershell
     az functionapp config appsettings set --settings "EventHubAppSetting-Twins=$adtehconnectionstring" -g $rgname -n $twinupdatefunctionname
@@ -144,16 +144,16 @@ Next, you'll need to set environment variables in your function app from earlier
 
 ### Set the Time Series Insights event hub connection string
 
-1. Get the Time Series Insights [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string), using the authorization rules you created previously for the Time Series Insights hub:
+1. Get the Time Series Insights [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string) by using the authorization rules you created earlier for the Time Series Insights hub:
 
     ```powershell
     $tsiehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name tsi-event-hub --name EHPolicy --query primaryConnectionString -o tsv)
     ```
 
-1. In your function app, create an app setting containing your connection string:
+1. In your function app, create an app setting that contains your connection string:
 
     ```powershell
     az functionapp config appsettings set --settings "EventHubAppSetting-tsi=$tsiehconnectionstring" -g $rgname -n $twinupdatefunctionname 
     ```
 
-At this point, Azure Digital Twins should be sending the twin updates it receives to an Event Hub whose events are processed by the Azure Function. The Azure Function formats the events and publishes them to another Event Hub where they can be ingested by Time Series Insights.
+At this point, Azure Digital Twins should be sending the twin updates it receives to an event hub whose events are processed by the Azure function. The Azure function formats the events and publishes them to another event hub where they can be ingested by Time Series Insights.
