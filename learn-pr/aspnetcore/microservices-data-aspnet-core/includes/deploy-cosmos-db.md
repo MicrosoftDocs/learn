@@ -40,7 +40,7 @@ helm delete eshoplearn-nosqldata
 
 You should get something like this:
 
-:::image type="content" source="../media/delete-mongodb.png" alt-text="Displays: release "eshoplearn-nosqldata" uninstalled." lightbox="../media/delete-mongodb.png" border="true":::
+:::image type="content" source="../media/delete-mongodb.png" alt-text="Displays: release eshoplearn-nosqldata uninstalled." lightbox="../media/delete-mongodb.png" border="true":::
 
 ## Reconfigure the Coupon microservice to use Azure Cosmos DB
 
