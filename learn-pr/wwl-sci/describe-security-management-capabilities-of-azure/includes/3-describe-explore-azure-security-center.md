@@ -20,7 +20,7 @@ Also, Security Center protects non-Azure servers and virtual machines in the clo
 
 You can improve your security posture using Azure Security Center to identify and perform hardening tasks across your machines, data services, and applications. With Azure Security Center, you can manage and enforce security policies to ensure compliance across your virtual machines, non-Azure servers, and Azure PaaS services.
 
-### Continuous Assessment
+### Continuous assessment
 
 Security Center brings continuous assessment of your entire estate, discovering and reporting whether new and existing resources and assets are configured according to your security compliance requirements. You’ll get a prioritized list of recommendations of what needs to be fixed to maintain maximum protection. Security Center groups the recommendations into security controls and adds a secure score value to each control. This is crucial in enabling you to prioritize your security work.
 
