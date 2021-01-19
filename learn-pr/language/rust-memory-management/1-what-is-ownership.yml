@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: What is ownership?
+  description: Learn about how memory is managed through ownership.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is ownership?
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-what-is-ownership.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Learn about the Borrow Checker
+  description: Learn about one of Rust's most unique features, how to borrow mutable data.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about the Borrow Checker
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-learn-about-the-borrow-checker.md)]
