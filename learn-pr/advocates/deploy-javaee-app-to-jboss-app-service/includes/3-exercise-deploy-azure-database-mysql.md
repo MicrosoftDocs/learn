@@ -61,8 +61,8 @@ az login
 
 After you've signed in, create your MySQL DB instance, by executing the Bash Shell Script `setup_mysql.sh`.
 
-> [!IMPORTANT] Line 71 of the script allows you to specify the Region for your Flexible Database. Currently the following Azure regions are available for MySQL Flexible severs: "eastus2", "westus2", "northeurope", and "southeastasia".
-> If you change the region of the MySQL server is is advisable to also change change the region that your application will be deployed also.
+> [!IMPORTANT] Line 71 of the script allows you to specify the Azure Data-Centre Region for your Flexible Database. Currently the following Azure regions are available for MySQL Flexible severs: "eastus2", "westus2", "northeurope", and "southeastasia".
+> If you change the region of your MySQL server, it is advisable to also change the region for your application to the same region as your database.
 
 Execute the following command:
 
