@@ -22,7 +22,7 @@ The script takes care of:
 
 You should get something like this:
 
-![Image description follows in text.](media/create-azure-cosmos-db.png)
+:::image type="content" source="../media/create-azure-cosmos-db.png" alt-text="Image description follows in text." lightbox="../media/create-azure-cosmos-db.png" border="true":::
 
 The script displays some of the account and the database properties, along with the connection string.
 
@@ -40,7 +40,7 @@ helm delete eshoplearn-nosqldata
 
 You should get something like this:
 
-![Displays: release "eshoplearn-nosqldata" uninstalled.](media/delete-mongodb.png)
+:::image type="content" source="../media/delete-mongodb.png" alt-text="Displays: release "eshoplearn-nosqldata" uninstalled." lightbox="../media/delete-mongodb.png" border="true":::
 
 ## Reconfigure the Coupon microservice to use Azure Cosmos DB
 
@@ -82,12 +82,12 @@ After a few minutes, when you should see all services running in the `webstatus`
 
 You should also be able to apply discounts in the checkout page, as shown in the next image:
 
-![Shopping basket with discount coupon DISC-15 entered](media/coupon.png)
+:::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered" lightbox="../media/coupon.png" border="true":::
 
 ## Use the Azure Cosmos DB Data Explorer from the Azure portal
 
 Since you're now using Cosmos DB, you can use the data explorer in the Azure portal, to inspect, and even modify, the stored documents, as shown next:
 
-![Image description follows in text.](media/cosmos-db-data-explorer.png)
+:::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Image description follows in text." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
 
 In the image above you can see the document for coupon `DISC-15`, showing it's been used.

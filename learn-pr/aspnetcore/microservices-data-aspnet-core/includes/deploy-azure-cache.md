@@ -21,7 +21,7 @@ The preceding script:
 
 You should get something like this:
 
-![Image description follows in text.](media/create-azure-redis.png)
+:::image type="content" source="../media/create-azure-redis.png" alt-text="Image description follows in text." lightbox="../media/create-azure-redis.png" border="true":::
 
 In the above image you can see that the creation command returns rather quickly, but with status "Creating". Then the connection string is displayed and a loop begins with the message "Waiting for the Azure Cache for Redis creation to finish...". You'll get the resulting environment variables when the creation finishes.
 
@@ -37,7 +37,7 @@ helm delete eshoplearn-basketdata
 
 You should get something like this:
 
-![basketdata microservice delete confirmation from Helm](media/delete-basketdata.png)
+:::image type="content" source="../media/delete-basketdata.png" alt-text="basketdata microservice delete confirmation from Helm" lightbox="../media/delete-basketdata.png" border="true":::
 
 If you checked the `webstatus` microservice you should see Aggregator and the Basket microservice failing. Although it could take a little while to show.
 
