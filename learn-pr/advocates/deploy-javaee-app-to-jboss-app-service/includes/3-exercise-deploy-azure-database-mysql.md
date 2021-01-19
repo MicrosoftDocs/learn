@@ -61,7 +61,8 @@ az login
 
 After you've signed in, we'll create your MySQL DB instance, by using the Projects Script `setup_mysql.sh`.
 
-> [!IMPORTANT] Line 71 of `setup_mysql.sh` allows you to specify the Azure Data-Centre Region for your Flexible Database. Currently the following Azure regions are available for MySQL Flexible severs: "eastus2", "westus2", "northeurope", and "southeastasia".
+> [!IMPORTANT] 
+> Line 71 of `setup_mysql.sh` allows you to specify the Azure Data-Centre Region for your Flexible Database. Currently the following Azure regions are available for MySQL Flexible severs: "eastus2", "westus2", "northeurope", and "southeastasia".
 > If you change the region of your MySQL server, it's advisable to also change to the same region for your Java EE application.
 
 Execute the following command:
