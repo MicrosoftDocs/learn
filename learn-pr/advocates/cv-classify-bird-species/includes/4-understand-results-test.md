@@ -54,6 +54,6 @@ According to the metrics that Custom Vision provides, our model is performing at
 
 Custom Vision analyzes the image to test the model's accuracy and displays the results:
 
-:::image type="content" source="../media/custom-vision-quick-test-prediction-results.png" alt-text="Screenshot that shows prediction results after completing a quick test on an image in the Custom Vision project.":::
+:::image type="content" source="../media/custom-vision-quick-test-prediction-results.png" alt-text="Screenshot that shows prediction results after a quick test on an image in the Custom Vision project.":::
 
 In the next step, we'll deploy the model. After the model is deployed, we can do more testing with an endpoint we'll create.

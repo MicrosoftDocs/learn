@@ -16,7 +16,7 @@ You can deploy to an endpoint by getting the prediction URL or by consuming the 
 
 1. In **Publish Model**, select **Prediction resource**, and then select the name of the prediction for your Custom Vision project. Select **Publish**.
 
-    :::image type="content" source="../media/custom-vision-publish-prediction.png" alt-text="Screenshot that shows elements to select to publish a trained Custom Vision model.":::
+    :::image type="content" source="../media/custom-vision-publish-prediction.png" alt-text="Screenshot that shows how to publish a trained Custom Vision model.":::
  
     After the model is published, the actions for the model are changed in the Custom Vision portal. 
 
@@ -32,7 +32,7 @@ When the model is trained and performing with satisfactory accuracy, the model i
 
 1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), go to the resource group that contains your Custom Vision resource. A resource named **\<YourCustomVisionResourceName\>-Prediction** is shown with the original resource group.
 
-    :::image type="content" source="../media/azure-portal-open-resource-group-prediction.png" alt-text="Screenshot that shows elements to select to open the prediction resource in the Azure portal.":::
+    :::image type="content" source="../media/azure-portal-open-resource-group-prediction.png" alt-text="Screenshot that shows how to open the prediction resource in the Azure portal.":::
 
 1. Select the prediction name to open the **Quick start** page. This page has links to resources that can help you learn more about how to call the API to get predictions from the model. 
 

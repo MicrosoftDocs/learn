@@ -1,7 +1,3 @@
-The next step is to upload the images that we'll use to train the machine learning model.
-
-## Upload images
-
 Now, it's time to upload the images that we'll use to train the machine learning model. There are two ways to upload images:
 
 - In the Custom Vision portal, select, upload, and then tag images.
@@ -9,7 +5,7 @@ Now, it's time to upload the images that we'll use to train the machine learning
 
 When you have a large amount of data, image classes, and tags to upload, it's faster to use the Custom Vision SDK. However, you can choose one of the options that are described in the next sections. Complete the steps to upload the images in the dataset the way that works best for you. 
 
-### Upload images option 1: Custom Vision portal
+## Use the Custom Vision SDK to upload images
 
 1. Create a project in the Custom Vision portal:
 
@@ -31,7 +27,7 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
       1. Select **Create project**.
 
-          :::image type="content" source="../media/custom-vision-create-project.png" alt-text="Screenshot that shows elements to select to create a new resource in the Custom Vision portal.":::
+          :::image type="content" source="../media/custom-vision-create-project.png" alt-text="Screenshot that shows how to create a new resource in the Custom Vision portal.":::
 
     > [!NOTE]
     > If you want to export the model to deploy on a mobile device or in TensorFlow.js or IoT, under **Domains**, select a **compact** model option. You can change this option in settings after the project is created.
@@ -54,11 +50,11 @@ When you have a large amount of data, image classes, and tags to upload, it's fa
 
    1. Select **Upload \<number\> files**.
 
-       :::image type="content" source="../media/custom-vision-tag-photos.png" alt-text="Screenshot that shows elements to select to add a tag description to uploaded photos in Custom Vision.":::
+       :::image type="content" source="../media/custom-vision-tag-photos.png" alt-text="Screenshot that shows how to add a tag description to uploaded photos in Custom Vision.":::
 
 1. Repeat the preceding step to upload the photos in each bird species folder in the downloaded dataset.
 
-### Upload images option 2: Custom Vision SDK
+## Upload images option 2: Custom Vision SDK
 
 The Custom Vision SDK is available in the following programming languages: Python, .NET, Node.js, Go, and Java. We'll use Python and Jupyter Notebook. If you don't already have these tools installed, we recommend that you get them with an Anaconda installation. You get Python and Jupyter Notebook when you [download Anaconda](https://www.anaconda.com/?azure-portal=true).
 
