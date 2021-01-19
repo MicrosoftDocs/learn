@@ -5,7 +5,7 @@ To complete this optional exercise, you need access to an Azure subscription to 
 
 To deploy the prerequisites for the exercise, perform the following tasks.
 
-## Task 1: Deploy the Azure Resource Manager template for the exercise environment
+## Deploy the Azure Resource Manager template for the exercise environment
 
 1. Select the following link:
 
@@ -28,9 +28,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 1. Select **Review + create**, and then select **Create**.
 
     > [!NOTE]
-    > Wait for the deployment to finish. The deployment should take less than five minutes.
+    > Wait for the deployment to finish. The deployment should take less than 5 minutes.
 
-## Task 2: Check created resources
+## Check created resources
 
 1. In the Azure portal, search for **Resource groups**.
 2. Select **azure-sentinel-rg**.
@@ -39,14 +39,14 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
     | Name  | Type  | Description |
     |---|---|---|
-    | ***yourname*-sentinel** | Log Analytics workspace | Log Analytics workspace used by Azure Sentinel, where *yourname* represents the workspace name that you chose in Task 1. |
-    | **SecurityInsights(*yourname*-sentinel)** | Solution | Security insights for Azure Sentinel, where *yourname* represents the workspace name that you chose in Task 1. |
+    | ***yourname*-sentinel** | Log Analytics workspace | Log Analytics workspace used by Azure Sentinel, where *yourname* represents the workspace name that you chose in the previous task. |
+    | **SecurityInsights(*yourname*-sentinel)** | Solution | Security insights for Azure Sentinel, where *yourname* represents the workspace name that you chose in the previous task. |
     | **simple-vm**| Virtual machine | Virtual machine (VM) used in the demonstration. |
     | **simple-vmNetworkInterface** | Network interface | Network interface for the VM. |
     | **st1*xxxxx*** | Storage account | Storage account used by the VM, where *xxxxx* represents a random string generated to create a unique storage account name. |
     | **vnet1** | Virtual network | Virtual network for the VM. |
 
-## Task 3: Configure Azure Sentinel connectors
+## Configure Azure Sentinel connectors
 
 In this task, you'll deploy an Azure Sentinel connector to Azure Activity.
 
