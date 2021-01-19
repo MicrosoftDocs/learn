@@ -16,16 +16,18 @@ To summarize, in this module, you will:
 
 ## Prerequisites
 
-- Introductory knowledge of the purpose of Azure IoT
-- Ability to navigate the Azure IoT portal
-- Ability to use the Command Prompt and command-line windows
-- Ability to download and install software tools
-- Ability to use Visual Studio at the beginner level
-- A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended
-- [Azure Command Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli)
+- Familiarity with navigating the Azure portal
+- It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) Learning Path
+- A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended
+- [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
   - It is recommended to install AZ CLI locally
-  - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab
-- Access to an Azure subscription where you have Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
+  - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
+- macOS: [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
+- Windows OS: PowerShell is built-in
+- Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory Tenant to complete the exercise units
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET Core 3.1](https://dotnet.microsoft.com/download)
+- [C# VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 
 ## The scenario
 
@@ -33,7 +35,7 @@ A chocolate manufacturing company, Contoso Chocolate, has one factory and one pr
 
 For the sake of explanation, the production of chocolate has been simplified into three steps: *Roasting*, *Grinding*, and *Molding*. The following image shows the production line:
 
-:::image type="content" source="../media/chocolate-production-line.png" alt-text="Graphical representation of a chocolate production line" lightbox="../media/chocolate-production-line.png":::
+:::image type="content" source="../media/adt-chocolate-production-line.png" alt-text="Graphical representation of a chocolate production line" lightbox="../media/adt-chocolate-production-line.png":::
 
 Cocoa beans are the input to this production line and chocolate bars the output!
 
@@ -43,7 +45,7 @@ Cocoa beans are the input to this production line and chocolate bars the output!
 
 1. **Molding**: The molding process cools the cocoa butter in molds, giving the desired shape: chocolate bars, egg shells, and figures. The following image shows roasted cocoa nibs:
 
-:::image type="content" source="../media/chocolate-nibs.png" alt-text="Photograph of roasted chocolate nibs" lightbox="../media/chocolate-nibs.png":::
+:::image type="content" source="../media/adt-chocolate-nibs.png" alt-text="Photograph of roasted chocolate nibs" lightbox="../media/adt-chocolate-nibs.png":::
 
 You've been asked to advise on the correct growth path for the company. You have decided to use the power of Azure Digital Twins to build a software solution flexible enough that no matter what questions the company owners may ask, you'll have a scientific and robust answer.
 
