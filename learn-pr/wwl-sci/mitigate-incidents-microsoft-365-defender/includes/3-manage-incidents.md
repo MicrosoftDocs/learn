@@ -2,10 +2,6 @@ Microsoft 365 Defender provides a cross domain threat correlation and purpose-dr
 
 This short video gives an overview of incidents in Microsoft 365 Defender.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about incident management.|
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
 An incident is a collection of correlated alerts that make up the story of an attack. Microsoft 365 Defender automatically aggregates malicious and suspicious events that are found in different device, user, and mailbox entities in the network. Grouping related alerts into an incident gives security defenders a comprehensive view of an attack.

@@ -1,4 +1,5 @@
-Microsoft 365 security center ([https://security.microsoft.com/](https://security.microsoft.com/?azure-portal=tru)) is a specialized workspace designed to meet the needs of security teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
+
+The Microsoft 365 security center ([https://security.microsoft.com/](https://security.microsoft.com/?azure-portal=true)) is a specialized workspace designed to meet the needs of security teams. These solutions are integrated across Microsoft 365 services and provide actionable insights to help reduce risks and safeguard your digital estate.
 
 You can investigate the alerts that affect your network, understand what they mean, and collate evidence associated with the incidents so that you can devise an effective remediation plan.
 
