@@ -9,7 +9,7 @@ metadata:
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 2
 quiz:
   questions:
   - content: "How fast is real time?"
