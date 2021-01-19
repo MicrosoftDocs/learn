@@ -2,18 +2,20 @@ In this unit, you'll learn how to deploy a Java EE (Jakarta EE) Application to J
 
 ## Configure App and Deploy to JBoss EAP on Azure App Service
 
-In this section, at first we'll configure the project to prepare the deployment by using `Maven Plugin for Azure App Service`. We'll then compile the application and create a WAR package. Finally, we'll deploy the WAR package to JBoss EAP on Azure App Service.
+In this section, first we'll configure the project to prepare the deployment by using `Maven Plugin for Azure App Service`.
+Then we'll  compile the application and create a WAR package.
+Finally, we'll deploy the WAR package to JBoss EAP on Azure App Service.
 
 ### Configure the App with Maven Plugin for Azure App Service
 
-Let's configure our application executing the config goal in the Maven plugin for Azure App Service:
+Let's configure our application by executing the config goal in the Maven plugin for Azure App Service:
 
 ```bash
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
-In the command, you need input the following values.
-We'll deploy the application to JBoss EAP, so select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`:
+If you changed the region of your MySQL server, it's advisable to also change to the same region for your Java EE application.
+In the command, select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`:
 
 |  Input Element  |  Value  |
 | ---- | ---- |
@@ -125,8 +127,7 @@ After the command is completed, you can see following entry is added in your `po
 
 ### Build the Java EE App
 
-After configuring the Azure App Service Deployment settings, you need to compile and package the source code.
-To compile and package the code, execute the following command:
+After configuring the Azure App Service Deployment settings, compile and package the source code:
 
 ```bash
 ./mvnw clean package
@@ -152,8 +153,7 @@ Then you can see following output in the terminal:
 
 ### Deploy Java EE App to JBoss EAP on Azure App Service
 
-After compiling and packaging the code, you can deploy it to the JBoss EAP on Azure App Service.
-To deploy the application, execute the following command:
+After compiling and packaging the code, deploy the application by executing the following command:
 
 ```bash
 ./mvnw azure-webapp:deploy
