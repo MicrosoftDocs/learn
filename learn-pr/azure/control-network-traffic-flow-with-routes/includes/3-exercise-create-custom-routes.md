@@ -12,7 +12,7 @@ In this exercise, you'll create the route table, custom route, and subnets. You'
 
 The first task is to create a new routing table and then add a custom route for all traffic intended for the private subnet.
 
-1. On the right side of the Azure Cloud Shell window, run the following command to create a route table.
+1. In Azure Cloud Shell, run the following command to create a route table.
 
     ```azurecli
     az network vhub route-table create \
@@ -84,10 +84,10 @@ The final task in this exercise is to associate the route table with the **publi
 
 Run the following command to associate the route table with the public subnet.
 
-     ```azurecli
-     az network vnet subnet update \
-         --name publicsubnet \
-         --vnet-name vnet \
-         --resource-group <rgn>[sandbox resource group name]</rgn> \
-         --route-table publictable
-     ```
+    ```azurecli
+    az network vnet subnet update \
+        --name publicsubnet \
+        --vnet-name vnet \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --route-table publictable
+    ```
