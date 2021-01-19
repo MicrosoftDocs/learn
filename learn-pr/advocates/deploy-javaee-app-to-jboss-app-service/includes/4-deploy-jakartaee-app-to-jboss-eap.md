@@ -36,7 +36,7 @@ You can configure the following items by using the Maven Plugin:
 |  Resource Group |  The name of the Resource Group where Web Container is deployed |
 |  AppName  |  Application Instance Name for Web Container |
 |  Pricing Tier  |  VM Selection to Run |
-|  Region  |  Regions to Deploy |
+|  Region  |  Regions to Deploy (Same Location as MySQL installl location)|
 |  Runtime OS | Operating System to Run [Linux]|
 |  Runtime Java Version | JVM Version for Web Container up and running [Java 8]|
 |  Runtime Web Container | Web Container [JBoss EAP 7]|

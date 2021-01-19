@@ -125,6 +125,9 @@ After the command is completed, you can see following entry is added in your `po
     </plugins>
 ```
 
+> [!IMPORTANT]
+> Check the `<region>` element, if it is not the same install location as MySQL, please modify to the same location.
+
 ### Build the Java EE App
 
 After configuring the Azure App Service Deployment settings, compile and package the source code:
