@@ -60,7 +60,7 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
 
     In the output, note the name of the storage account. After the storage account is created, switch back to Storage Explorer.
 
-1. If it isn't currnently visible, toggle the **EXPLORER** view so that the pane is shown.
+1. If it isn't currently visible, toggle the **EXPLORER** view so that the pane is shown.
 
 1. In the **EXPLORER** pane, select **Refresh All**, then locate and expand **Concierge Subscription**.
 
