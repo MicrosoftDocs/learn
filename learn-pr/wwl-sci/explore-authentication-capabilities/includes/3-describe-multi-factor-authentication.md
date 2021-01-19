@@ -34,7 +34,7 @@ Software OATH tokens are typically applications such as the Microsoft Authentica
 
 OATH TOTP hardware tokens typically come with a secret key, pre-programmed in the token, which must be input into Azure AD.  Users are associated with a specific hardware token. The hardware token does a refresh of the code every 30 or 60 seconds.
 
-## Passwordless Authentication
+## Passwordless authentication
 
 Passwordless authentication is based on “something you are” rather than “something you know”. For example, a biometric facial scan used in Windows Hello for Business is an example of “something you are”. A fingerprint scan used by the Microsoft Authenticator app or a FIDO2 security device, is also “something you are”.
 

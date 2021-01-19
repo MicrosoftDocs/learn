@@ -31,7 +31,7 @@ When a user resets their password using self-service password reset, that passwo
 
 To keep users informed about account activity, admins can configure e-mail notifications to be sent when an SSPR event happens. These notifications can cover both regular user accounts and admin accounts. For admin accounts, this notification provides an additional layer of awareness when a privileged administrator account password is reset using SSPR. All global admins would be notified when SSPR is used on an admin account.
 
-## Interactive Guide
+## Interactive guide
 
 In this interactive guide, you'll enable self-service password reset for users in Azure Active Directory.
 
