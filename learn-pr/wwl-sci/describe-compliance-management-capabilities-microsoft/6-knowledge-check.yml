@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A new admin has joined your team. You want them to be able to access the Microsoft 365 Compliance Center. Which of the following roles could you use to access the Compliance Center, and show them how it works?"
+    choices:
+    - content: "Compliance Administrator role"
+      isCorrect: true
+      explanation: "This is one of the multiple roles you can use to access the Compliance Center.​​​"
+    - content: "Helpdesk Administrator role"
+      isCorrect: false
+      explanation: "This role is used to manage service requests and monitor service health. Instead use the global administrator role, which is one of the multiple roles you can use to access the Compliance Center.​​​"
+    - content: "User Administrator role"
+      isCorrect: false
+      explanation: "This role is used to add, remove, and manage users. Instead use the global administrator role, which is one of the multiple roles you can use to access the Compliance Center. ​​​"
+  - content: "Your new colleague on the admin team is unfamiliar with shared controls in Compliance Manager, how would you explain shared controls to them?"
+    choices:
+    - content: "Controls that both external regulators and Microsoft share responsibility for implementing."
+      isCorrect: false
+      explanation: "​​​External regulators aren’t responsible for shared controls. Shared controls are controls that both your organization and Microsoft share responsibility for implementing."
+    - content: "Controls that both your organization and external regulators share responsibility for implementing."
+      isCorrect: false
+      explanation: "External regulators aren’t responsible for shared controls. Shared controls are controls that both your organization and Microsoft share responsibility for implementing.​​​ ​​​"
+    - content: "Controls that both your organization and Microsoft share responsibility for implementing."
+      isCorrect: true
+      explanation: "Both your organization and Microsoft work together to implement these controls.​​​"
+  - content: "You want to do a presentation on how the Microsoft 365 Compliance Center can help improve your organization’s compliance posture. As part of this presentation, you’ll need to cover the Compliance Manager, and compliance score. What is the difference between Compliance Manager and compliance score?"
+    choices:
+    - content: "Compliance Manager is an end-to-end solution in Microsoft 365 Compliance Center to enable admins to manage and track compliance activities. Compliance score is a calculation of the overall compliance posture across the organization."
+      isCorrect: true
+      explanation: "Compliance Manager provides admins with the capabilities to understand and improve their compliance score so that they can ultimately improve the organization’s compliance posture and help it to stay in line with its compliance requirements.​​​"
+    - content: "Compliance Manager is an end-to-end solution in Microsoft 365 Compliance Center to enable admins to manage and track compliance activities. Compliance score is a score the organization receives from regulators for successful compliance."
+      isCorrect: false
+      explanation: "Compliance score isn't assigned by regulators. It is a calculation of the overall compliance posture across the organization available in the Compliance Manager.​​​"
+    - content: "Compliance Manager is the regulator who will manage your compliance activities. Compliance score is a calculation of the overall compliance posture across the organization."
+      isCorrect: false
+      explanation: "Compliance Manager is an end-to-end solution in Microsoft 365 Compliance Center to enable admins to manage and track compliance activities.​​​"

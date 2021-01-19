@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-resource-governance-capabilities-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As the admin in your organization, you want to make sure that users can use the resources they need. But you also want to ensure that they can’t accidentally delete resources. Which Azure resource lock level will you set to ensure that users can read and modify a resource, but can't delete the resource?"
+    choices:
+    - content: "ReadOnly"
+      isCorrect: false
+      explanation: "Users can't modify the resource with this lock level. Instead, use CanNotDelete.​​​"
+    - content: "CanNotDelete"
+      isCorrect: true
+      explanation: "This lock will ensure users can still read and modify the resource, without being able to delete it.​​​"
+    - content: "UpdateAndDelete"
+      isCorrect: false
+      explanation: "This option isn't valid for Azure resource locks. Instead, use CanNotDelete.​​​"
+  - content: "Which tool would you recommend to your organization's development team so they can rapidly provision and run new resources, in a repeatable way that is in line with the organization’s compliance requirements?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "You can't use Azure Policy to provision resources. Instead, use Azure Blueprints.​​​"
+    - content: "Azure Rapid Build"
+      isCorrect: false
+      explanation: "​​​Not a valid tool in Azure. Instead, use Azure Blueprints."
+    - content: "Azure Blueprints"
+      isCorrect: true
+      explanation: "​​​Azure Blueprint will enable your development teams to define a repeatable set of Azure resources, and achieve shorter development times and faster delivery."
+  - content: "One of your organization’s customers is moving to the cloud. You want to ensure that they know how to create and implement business and technology strategies in a way that will help them succeed in the cloud. What guidance do you recommend to the company?"
+    choices:
+    - content: "They should use Azure Policy for guidance on moving to the cloud."
+      isCorrect: false
+      explanation: "​​​Azure Policy isn’t guidance, but rather a solution that helps ensure resources stay compliant with business and regulatory requirements. Instead, use the Cloud Adoption Framework."
+    - content: "They should use the Microsoft Cloud Adoption Framework for guidance on moving to the cloud."
+      isCorrect: true
+      explanation: "The Cloud Adoption Framework has been carefully designed based on cloud adoption best practices from Microsoft employees, customers, and partners. It provides a proven and consistent methodology for implementing cloud technologies.​​​"
+    - content: "They should use the Azure Cloud Succeed Framework."
+      isCorrect: false
+      explanation: "This option doesn't exist. Instead, use the Cloud Adoption Framework.​​​"
+  - content: "As an admin, you understand that there are many users who will need to access Azure, and will need to perform different actions in Azure, across various scopes. You need to implement action management at all scopes across Azure for your organization. How would you do this?"
+    choices:
+    - content: "Use Azure role-based access control (RBAC)"
+      isCorrect: true
+      explanation: "Azure RBAC focuses on user action management at different scopes. If actions need to be controlled, then you would use Azure RBAC.​​​"
+    - content: "Use Azure Policy"
+      isCorrect: false
+      explanation: "Azure Policy doesn't enforce user action management at different scopes. If actions need to be controlled, then you should use Azure RBAC.​​​"
+    - content: "Use Azure action management (AM)"
+      isCorrect: false
+      explanation: "This option doesn't exist. Instead, use Azure RBAC because it focuses on user action management at different scopes. If actions need to be controlled, then you should use Azure RBAC.​​​"

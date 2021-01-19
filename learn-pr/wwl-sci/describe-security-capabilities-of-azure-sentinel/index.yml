@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.describe-security-capabilities-of-azure-sentinel
+metadata:
+  title: Describe security capabilities of Azure Sentinel
+  description: "Describe security capabilities of Azure Sentinel"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe security capabilities of Azure Sentinel
+summary: Learn about Microsoft Azure Sentinel a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand the concepts of SIEM, SOAR, and XDR
+  - Describe the role of SIEM to provide integrated threat protection
+  - Describe the capabilities of Sentinel
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/describe-security-capabilities-of-azure-sentinel.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure-sentinel
+units:
+- learn.wwl.describe-security-capabilities-of-azure-sentinel.introduction
+- learn.wwl.describe-security-capabilities-of-azure-sentinel.define-concepts-of-siem,-soar,-xdr
+- learn.wwl.describe-security-capabilities-of-azure-sentinel.describe-role-value-of-sentinel-providing-integrated-threat-protection
+- learn.wwl.describe-security-capabilities-of-azure-sentinel.understand-sentinel-costs
+- learn.wwl.describe-security-capabilities-of-azure-sentinel.knowledge-check
+- learn.wwl.describe-security-capabilities-of-azure-sentinel.summary-resources
+badge:
+  uid: learn.wwl.describe-security-capabilities-of-azure-sentinel.badge
