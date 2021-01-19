@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Perform file inspection in the UNIX shell
 durationInMinutes: 4
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/1-file-inspection.md)]
