@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-capabilities-of-microsoft-security-solutions
+metadata:
+  title: Describe the capabilities of Microsoft security solutions
+  description: Describe the capabilities of Microsoft security solutions
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe the capabilities of Microsoft security solutions
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+summary: |
+  Learn about security capabilities in Microsoft. Topics covered will include network and platform capabilities of Azure, Azure security management, and Sentinel. You’ll learn about threat protection with Microsoft 365 Defender and Microsoft 365 security management.
+iconUrl: /learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+- m365
+modules:
+- learn.wwl.describe-basic-security-capabilities-azure
+- learn.wwl.describe-security-management-capabilities-of-azure
+- learn.wwl.describe-security-capabilities-of-azure-sentinel
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365
+- learn.wwl.describe-endpoint-security-with-microsoft-intune
+trophy:
+  uid: learn.wwl.describe-capabilities-of-microsoft-security-solutions.trophy

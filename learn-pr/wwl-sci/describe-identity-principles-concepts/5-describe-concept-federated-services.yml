@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-principles-concepts.describe-concept-federated-services
+title: Describe the concept of Federated Services
+metadata:
+  title: Describe the concept of Federated Services
+  description: "Describe the concept of Federated Services"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-describe-concept-federated-services.md)]
