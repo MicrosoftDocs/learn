@@ -9,6 +9,6 @@ metadata:
   ms.date: 11/25/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-deploy-azure-database-mysql.md)]

@@ -188,12 +188,12 @@ Note down the URL of the deployed application, particularly the following line i
 https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 ```
 
-## Configure DB Connection from JBoss EAP
+## Configure Database Connection from JBoss EAP
 
-In our sample application, it will communicate with MySQL DB to show some data.
-To access to the `Azure Database for MySQL`, you need configure the `DataSource` in JBoss EAP, and you need to specify the JNDI name into your source code.
+In our sample application, it will communicate with MySQL Database to display data.
+To access to the `Azure Database for MySQL`, you need to configure the `DataSource` in JBoss EAP, and specify the JNDI name into your source code.
 
-In this module, we'll connect to our MySQL Database. If you deploy the sample application, you already include a MySQL JDBC Driver in your deployment package `(ROOT.war)`. In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC Driver as follows:
+In the sample application, there already includes a MySQL JDBC Driver in your deployment package `(ROOT.war)`. In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC Driver as follows:
 
 ```xml
     <dependency>
@@ -203,7 +203,8 @@ In this module, we'll connect to our MySQL Database. If you deploy the sample ap
     </dependency>
 ```
 
-As a result, JBoss EAP automatically installs the JDBC Driver during the Deployment. And you can refer the name of MySQL JDBC Driver as follows:
+As a result, JBoss EAP automatically installs the JDBC Driver during the Deployment. 
+You can refer the name of MySQL JDBC Driver as follows:
 
 ```text
 ROOT.war_com.mysql.cj.jdbc.Driver_8_0
@@ -211,7 +212,7 @@ ROOT.war_com.mysql.cj.jdbc.Driver_8_0
 
 ### Create the MySQL DataSource in JBoss EAP
 
-To create a MySQL `DataSource` in JBoss EAP, we created a startup shell script file as `createMySQLDataSource.sh` under the `/WEB-INF` directory.
+To create a MySQL `DataSource` in JBoss EAP, we created a startup shell script file `createMySQLDataSource.sh` under the `/WEB-INF` directory.
 
 In the code, we created a MySQL DataSource using the JBoss CLI command. And the variable in the script like connection string, user name, and password will use the environment variables `MYSQL_CONNECTION_URL`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
 
@@ -253,11 +254,11 @@ az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/crea
 -g ${RESOURCEGROUP_NAME}
 ```
 
-If your deployment artifact isn't the "ROOT.war", you need to change the "--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0" value too.
+If your deployment artifact isn't "ROOT.war", you need to change the "--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0" value too.
 
 ### Configure the Environment Variables for Connecting to MySQL
 
-After you configured a startup script, you need to configure app settings in the App service to use certain environment variables:
+After you configured your startup script, configure your App service to use certain environment variables:
 
 ```azurecli
 az webapp config appsettings set \
@@ -276,7 +277,7 @@ az webapp config appsettings set \
 To access the MySQL database from your application, you need to configure the data source reference in your application project. We implemented the DB access code by using `Java Persistence API (JPA)`.
 The configuration for the `DataSource` reference has been added in the `persistence.xml`, which is the configuration file of the JPA.
 
-Confirm the following file.
+Access the following file:
 
 ```text
 ├── src
@@ -362,62 +363,6 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia 
   "name": "Bangladesh",
   "code": "BGD"
 }
-{
-  "name": "Bahrain",
-  "code": "BHR"
-}
-{
-  "name": "Brunei",
-  "code": "BRN"
-}
-{
-  "name": "Bhutan",
-  "code": "BTN"
-}
-{
-  "name": "China",
-  "code": "CHN"
-}
-{
-  "name": "Cyprus",
-  "code": "CYP"
-}
-{
-  "name": "Georgia",
-  "code": "GEO"
-}
-{
-  "name": "Hong Kong",
-  "code": "HKG"
-}
-{
-  "name": "Indonesia",
-  "code": "IDN"
-}
-{
-  "name": "India",
-  "code": "IND"
-}
-{
-  "name": "Iran",
-  "code": "IRN"
-}
-{
-  "name": "Iraq",
-  "code": "IRQ"
-}
-{
-  "name": "Israel",
-  "code": "ISR"
-}
-{
-  "name": "Jordan",
-  "code": "JOR"
-}
-{
-  "name": "Japan",
-  "code": "JPN"
-}
 ....
 ```
 
@@ -442,5 +387,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/
 "Hiroshima"
 "Kitakyushu"
 ```
+
+## Exercise Summary
 
 You've now validated the application REST endpoints and tested that the application can get the data from the configured MySQL database.

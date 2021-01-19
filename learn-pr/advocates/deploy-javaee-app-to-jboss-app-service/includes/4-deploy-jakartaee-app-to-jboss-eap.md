@@ -28,7 +28,7 @@ In this module, you'll use a sample Java EE application that's prepared in advan
 
 Microsoft provides the tool `Maven Plugin for Azure App Service` to deploy your Java web applications to Azure App Service. By using this plug-in, you can easily configure settings to create and configure an App Service instance.
 
-You can configure the following items by using the Maven Plugin.
+You can configure the following items by using the Maven Plugin:
 
 |  Items  |  Description  |
 | ---- | ---- |
