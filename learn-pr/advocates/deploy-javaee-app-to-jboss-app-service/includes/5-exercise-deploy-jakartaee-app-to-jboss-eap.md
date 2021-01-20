@@ -14,7 +14,9 @@ Let's configure our application by executing the config goal in the Maven plugin
 ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
-If you changed the region of your MySQL server, it's advisable to also change to the same region for your Java EE application.
+> [!IMPORTANT]
+> If you changed the region of your MySQL server, it's advisable to also change to the same region for your Java EE application to minimize latency delays.
+
 In the command, select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`:
 
 |  Input Element  |  Value  |
