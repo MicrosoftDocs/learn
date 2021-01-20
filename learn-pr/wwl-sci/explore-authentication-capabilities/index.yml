@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.explore-authentication-capabilities-of-azure-ad
+metadata:
+  title: Explore the authentication capabilities of Azure AD
+  description: "Explore the authentication capabilities of Azure AD"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Explore the authentication capabilities of Azure AD
+summary: Learn about the different authentication capabilities of Azure AD.  Topics include multi-factor authentication, password protection and management.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the secure authentication methods of Azure AD
+  - Describe the password protection and management capabilities of Azure AD
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/explore-the-authentication-capabilities-of-azure-ad.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure-active-directory
+units:
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.introduction
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-different-authentication-methods
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-multi-factor-authentication-mfa
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-windows-hello-for-business
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-self-service-password-reset
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-password-protection-&amp;-management
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.knowledge-check
+- learn.wwl.explore-authentication-capabilities-of-azure-ad.summary-resources
+badge:
+  uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.badge
