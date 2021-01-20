@@ -114,7 +114,7 @@ using a Grover's task.
    [`ControledOnInt`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.canon.applycontrolledonint)
    from the Standard library.
 
-2. Since the general operation to run Grover's algorithm that you defined takes phase  oracles as inputs, you need to transform your marking oracle as a phase oracle using the phase kickback trick. We can use the very same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle). The operation is: 
+2. Since the general operation to run Grover's algorithm that you defined takes phase  oracles as inputs, you need to transform your marking oracle as a phase oracle using the phase kickback trick. We can use the very same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle). The operation is:
 
    ```qsharp
     operation ApplyMarkingOracleAsPhaseOracle(
@@ -131,46 +131,39 @@ using a Grover's task.
         }
     }
    ```
+
    These two operations combined invert the phase of the state that corresponds to the integer that you introduce. This is a crucial step of each iteration of the Grover's search.
+
+### Calculate the number of iterations
+
+The ideal number of Grover iterations to perform is provided by the number of
+possible solutions and the total number of states. In this case, we have a
+single possible solution, so we define the function `NIterations` that takes
+the number of qubits as input:
+
+```qsharp
+function NIterations(nQubits : Int) : Int {
+    let nItems = 1 <<< nQubits;
+    let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
+    let nIterations = Round(0.25 * PI() / angle - 0.5);
+    return nIterations;
+}
+```
 
 ### Create a runnable operation
 
 Now you just need define the main operation that you will run in Azure Quantum
 hardware. To do it, you need to flag the operation with the `@EntryPoint` label
 just before the operation. You can define here the inputs that will be
-introduced through the Azure CLI as arguments of your operation. 
+introduced through the Azure CLI as arguments of your operation.
 
-> [!NOTE] 
+> [!NOTE]
 > Keep in mind that for Azure Quantum targets the output of the main operation needs to be a `Result`, either a single result (`Result`) or an array of results (`Result[]`).
 
-1. Write the operation that uses the previous operations to perform the Grover's search.
-   ```qsharp
-        @EntryPoint()
-        operation GroversTest(nQubits : Int, idxMarked : Int) : Result[] {
-            // Define the oracle that for the factoring problem.
-            let markingOracle = markingNumber(idxMarked, _, _);
-            let phaseOracle = ApplyMarkingOracleAsPhaseOracle(markingOracle, _);
-            // Bit-size of the number to factorize.
-            // Estimate of the number of solutions.C:\Users\v-edsanc\Desktop\test azure quantum grovers mine\Program.qs
-            let nSolutions = 1;
-            // The number of iterations can be computed using the formula.
-            let nIterations = Round(PI() / 4.0 * Sqrt(IntAsDouble(PowI(2,nQubits)) / IntAsDouble(nSolutions)));
-    
-            // Initialize the register to run the algorithm
-            using (qubits = Qubit[nQubits]){
-                    RunGroversSearch(qubits, phaseOracle, nIterations);
-                    return ForEach(MResetZ, qubits);
-            }
-    }
-   
-   ```
-
-#### Wrap everything together
-
-Now you have all the code that you need to perform a Grover's search in Azure Quantum. The full code should be:
+The full code should be:
 
 ```qsharp
-namespace testazurequantumgroversmine {
+namespace AzureGrovers {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Measurement;
@@ -184,18 +177,25 @@ namespace testazurequantumgroversmine {
         // Define the oracle that for the factoring problem.
         let markingOracle = markingNumber(idxMarked, _, _);
         let phaseOracle = ApplyMarkingOracleAsPhaseOracle(markingOracle, _);
-        // Bit-size of the number to factorize.
-        // Estimate of the number of solutions.C:\Users\v-edsanc\Desktop\test azure quantum grovers mine\Program.qs
-        let nSolutions = 1;
-        // The number of iterations can be computed using the formula.
-        let nIterations = Round(PI() / 4.0 * Sqrt(IntAsDouble(PowI(2,nQubits)) / IntAsDouble(nSolutions)));
+        // Set the number of iterations of the algorithm
+        let nIterations = NIterations(nQubits);
 
         // Initialize the register to run the algorithm
         using (qubits = Qubit[nQubits]){
+                // Run the algorithm
                 RunGroversSearch(qubits, phaseOracle, nIterations);
+                // Obtain the results and reset the register
                 return ForEach(MResetZ, qubits);
         }
-}
+    }
+
+    function NIterations(nQubits : Int) : Int {
+        let nItems = 1 <<< nQubits;
+        let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
+        let nIterations = Round(0.25 * PI() / angle - 0.5);
+        return nIterations;
+    }
+
     operation markingNumber (
         idxMarked : Int,
         inputQubits : Qubit [],
