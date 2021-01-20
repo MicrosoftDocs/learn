@@ -6,12 +6,12 @@ NPS authenticates and authorizes a connection request before allowing or denying
 
 The following authentication methods are supported by NPS:
 
-1. PAP
-1. Shiva Password Authentication Protocol (SPAP)
-1. CHAP
-1. MS-CHAP
-1. MS-CHAP v2
-1. EAP
+* PAP
+* Shiva Password Authentication Protocol (SPAP)
+* CHAP
+* MS-CHAP
+* MS-CHAP v2
+* EAP
 
 > [!TIP]
 > When you choose EAP as the authentication method, the negotiation of the EAP type occurs between the access client and the NPS server.
