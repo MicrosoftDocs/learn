@@ -30,7 +30,7 @@ The following example creates the IPAM GPOs with a prefix of **IPAM** in the `co
 Invoke-IpamGpoProvisioning -Domain contoso.com -GpoPrefixName IPAM -IpamServerFqdn SEA-SVR2.contoso.com
 ```
 
-:::image type="content" source="../media/m14-ipam2.png" alt-text="A screenshot of the Group Policy Management console. In addition to the Default Domain GPO, three other GPOs are displayed, as described in the preceding table.":::
+:::image type="content" source="../media/m14-ipam-2.png" alt-text="A screenshot of the Group Policy Management console. In addition to the Default Domain GPO, three other GPOs are displayed, as described in the preceding table.":::
 
 The three GPOs are automatically linked to the root of the domain, but security filtering prevents them from applying to any servers. When you select a server for IPAM to manage, that server is added to the security filtering for the GPO, and then is given permission to apply the GPO. 
 

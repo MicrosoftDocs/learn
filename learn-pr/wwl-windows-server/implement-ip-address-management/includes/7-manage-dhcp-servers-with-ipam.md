@@ -1,6 +1,6 @@
 Contoso IT administrators can configure DHCP servers and DHCP scope information by using the IPAM administration interface. IPAM enables them to configure multiple DHCP servers and to use functionality such as DHCP Failover so that the servers work together in their DHCP implementation.
 
-:::image type="content" source="../media/m14-ipam4.png" alt-text="A screenshot of the IPAM console. The administrator has selected the DHCP Scopes tab. In the details pane, the Contoso scope is selected.":::
+:::image type="content" source="../media/m14-ipam-4.png" alt-text="A screenshot of the IPAM console. The administrator has selected the DHCP Scopes tab. In the details pane, the Contoso scope is selected.":::
 
 ## Configure DHCP servers
 

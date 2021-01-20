@@ -1,6 +1,6 @@
 Contoso IT administrators can use IPAM to manage, track, audit, and report Contoso's IPv4 and IPv6 address spaces. The IPAM IP ADDRESS SPACE node provides them with IP address utilization statistics and historical trend data so that they can make informed planning decisions for dynamic, static, and virtual address spaces. 
 
-:::image type="content" source="../media/m14-ipam5.png" alt-text="A screenshot of the IPAM IP address space pane in Server Manager. The administrator has selected the IP Address Blocks tab for IPv4. In the details pane, the network 172.16.0.0/16 subnet is selected.":::
+:::image type="content" source="../media/m14-ipam-5.png" alt-text="A screenshot of the IPAM IP address space pane in Server Manager. The administrator has selected the IP Address Blocks tab for IPv4. In the details pane, the network 172.16.0.0/16 subnet is selected.":::
 
 IPAM automatically discovers address spaces and utilization data from the DHCP servers that IPAM manages. Contoso can also import IP address information from CSV files. Administrators can use IPAM to detect overlapping IP address ranges that are defined on different DHCP servers. They can use this information to:
 

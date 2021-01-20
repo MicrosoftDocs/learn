@@ -71,7 +71,7 @@ The following graphic displays an example deployment of IPAM using a distributed
 - A corporate datacenter. This location supports many managed servers, and also has its own IPAM server. 
 - System admins, forensic admins, and network admins. These users, controlled through RBAC, can perform different management tasks on the managed servers throughout the organization. 
 
-:::image type="content" source="../media/m14-ipam-architecture2.png" alt-text="A diagram that displays IPAM components as discussed in the preceding text." border="false":::
+:::image type="content" source="../media/m14-ipam-architecture-2.png" alt-text="A diagram that displays IPAM components as discussed in the preceding text." border="false":::
 
 > [!TIP]
 > You can also use the distributed topology to enable separate locations or business units to administer their own IP addressing management.

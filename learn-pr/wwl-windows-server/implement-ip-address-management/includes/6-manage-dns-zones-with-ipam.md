@@ -2,7 +2,7 @@ Contoso can use IPAM to manage DNS servers and zones for all servers that the IP
 
 ## Perform DNS management
 
-:::image type="content" source="../media/m14-ipam3.png" alt-text="A screenshot of the IPAM console. The administrator has selected the DNS Zones tab. In the Details pane, the Contoso.com zone is selected.":::
+:::image type="content" source="../media/m14-ipam-3.png" alt-text="A screenshot of the IPAM console. The administrator has selected the DNS Zones tab. In the Details pane, the Contoso.com zone is selected.":::
 
 You can use IPAM to perform the following DNS management tasks:
 
