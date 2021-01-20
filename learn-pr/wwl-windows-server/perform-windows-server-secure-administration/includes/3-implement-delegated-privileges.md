@@ -48,7 +48,7 @@ Then use the following procedure:
 
 4. Select **Finish**.
 
-:::image type="content" source="../media/m1-delegate1.png" alt-text="A screenshot of the Tasks to Delegate page in the Delegation of Control Wizard. The administrator has selected the tasks that relate to user management.":::
+:::image type="content" source="../media/m1-delegate-1.png" alt-text="A screenshot of the Tasks to Delegate page in the Delegation of Control Wizard. The administrator has selected the tasks that relate to user management.":::
 
 > [!IMPORTANT]
 > After you have assigned delegated access, you can't use the **Delegation of Control Wizard** to review your settings.
@@ -59,7 +59,7 @@ To review previously configured delegated tasks:
 3. In the ***OU name* Properties** dialog box, select the **Security** tab, and then select **Advanced**. 
 4. Locate the security principal to which you delegated control and review the permissions. You can also change the delegated permissions here.
 
-:::image type="content" source="../media/m1-delegate2.png" alt-text="A screenshot of the Advanced Security Settings for IT dialog box. The administrator has selected the Permissions tab. Displayed are the permissions on the IT OU, including delegated permissions for ContosoAdmin.":::
+:::image type="content" source="../media/m1-delegate-2.png" alt-text="A screenshot of the Advanced Security Settings for IT dialog box. The administrator has selected the Permissions tab. Displayed are the permissions on the IT OU, including delegated permissions for ContosoAdmin.":::
 
 > [!NOTE]
 > The **Delegation of Control Wizard** provides a simple, wizard-driven interface for the configuration of AD DS permissions on AD DS objects.
