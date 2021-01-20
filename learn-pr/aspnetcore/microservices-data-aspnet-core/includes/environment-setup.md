@@ -14,7 +14,14 @@ Run the following command in the command shell. Be patient, as setup can take se
 
 The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
-<!-- TODO: add steps -->
+1. Installs the required version of the .NET Core SDK.
+1. Clones the *:::no-loc text="eShopOnContainers":::* app from a GitHub repository.
+1. Provisions AKS and Azure Container Registry (ACR) resources.
+1. Launches the Cloud Shell editor to view the code.
+1. Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
+1. Displays connection information upon completion.
+
+[!INCLUDE[Instructions for restoring the default Cloud Shell configuration](../../includes/microservices/revert-cloud-shell-configuration.md)]
 
 1. Go to the module #06 folder
 
