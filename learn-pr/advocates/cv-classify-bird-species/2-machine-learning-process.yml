@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.cv-classify-bird-species.2-machine-learning-process
-title: Understanding Custom Vision
+title: Understand Custom Vision
 metadata:
-  title: Understanding Custom Vision
-  description: Understanding Custom Vision
-  ms.date: 04/30/2020
+  title: Understand Custom Vision
+  description: Understand Custom Vision
+  ms.date: 01/19/2021
   author: cassieview
   ms.author: cassieb
   ms.topic: interactive-tutorial

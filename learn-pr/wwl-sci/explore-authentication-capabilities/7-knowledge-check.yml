@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "After hearing of a security breach at a competitor, you want to improve identity security within your organization. What should you implement immediately to provide the greatest protection to user identities?"
+    choices:
+    - content: "Multi-factor authentication."
+      isCorrect: true
+      explanation: "That's correct. Multi-factor authentication dramatically improves the security of an identity."
+    - content: "Require biometrics for all sign-in."
+      isCorrect: false
+      explanation: "That's incorrect. Whilst biometric sign-in is secure, there may be a hardware cost and so difficult to implement quickly."
+    - content: "Require strong passwords for all identities."
+      isCorrect: false
+      explanation: "That's  incorrect. Although strong passwords improve security, passwords alone are not as secure as multiple layers of security."
+  - content: "To improve identity security within your organization, you want to implement Windows Hello for Business. When explaining the benefits of Windows Hello for Business to your colleagues, which of the following is true?"
+    choices:
+    - content: "Windows Hello is an authentication feature built into Windows Server 2012 R26."
+      isCorrect: false
+      explanation: "That's incorrect. Windows Hello is an authentication feature built into Windows 10."
+    - content: "Windows Hello is an alternative to multi-factor authentication."
+      isCorrect: false
+      explanation: "That's incorrect. Windows Hello uses multi-factor authentication to authenticate users, such as a PIN and biometric data."
+    - content: "Windows Hello for Business is more secure because it uses PINs and biometric data to authenticate users."
+      isCorrect: true
+      explanation: "That's correct. Windows Hello for Business uses a PIN and biometric data to authenticate users and does not transmit data to an external server."
+  - content: "You've been asked to find ways to reduce IT costs, without compromising security. Which feature should you consider implementing?"
+    choices:
+    - content: "Self-service password reset."
+      isCorrect: true
+      explanation: "That's correct. Self-service password reset allows users to change or reset their own passwords, thereby reducing the cost of providing administrators and help desk personnel."
+    - content: "Biometric sign-in on all devices."
+      isCorrect: false
+      explanation: "That's incorrect. Biometric sign-in is secure but may involve up-grading hardware."
+    - content: "FIDO2."
+      isCorrect: false
+      explanation: "That's incorrect. FIDO2 may require the purchase of external keys such as a USB device, which may involve additional expense."
+  - content: "As a result of a recent security review, you've been asked to recommend the best way to ensure users set strong passwords. Which Azure AD feature should you implement?"
+    choices:
+    - content: "Windows Hello."
+      isCorrect: false
+      explanation: "That's correct. Windows Hello is a passwordless authentication feature."
+    - content: "Password Protection."
+      isCorrect: true
+      explanation: "That's incorrect. Password Protection is a feature of Azure AD which reduces the risk of users setting weak passwords."
+    - content: "User training."
+      isCorrect: false
+      explanation: "That's incorrect. Although user training will improve users’ awareness of the dangers of setting weak passwords, it is not the most efficient way to ensure users set strong passwords. It is also not a feature of Azure AD."

@@ -19,16 +19,18 @@ Face currently supports the following functionality:
 
 Face can return the rectangle coordinates for any human faces that are found in an image, as well as a series of attributes related to those faces such as:
 
-- the head pose - orientation in a 3D space
-- a guess at an age
-- what emotion is displayed
-- if there is facial hair or the person is wearing glasses
-- whether the face in the image has makeup applied
-- whether the person in the image is smiling
-- blur - how blurred the face is (which can be an indication of how likely the face is to be the main focus of the image)
-- exposure - aspects such as underexposed or over exposed and applies to the face in the image and not the overall image exposure
-- noise - refers to visual noise in the image.  If you have taken a photo with a high ISO setting for darker settings, you would notice this noise in the image.  The image looks grainy or full of tiny dots that make the image less clear
-- occlusion - determines if there may be objects blocking the face in the image
+- **Age**: a guess at an age
+- **Blur**: how blurred the face is (which can be an indication of how likely the face is to be the main focus of the image)
+- **Emotion**: what emotion is displayed
+- **Exposure**: aspects such as underexposed or over exposed and applies to the face in the image and not the overall image exposure
+- **Facial hair**: the estimated facial hair presence
+- **Glasses**: if the person is wearing glasses
+- **Hair**: the hair type and hair color
+- **Head pose**: the face's orientation in a 3D space
+- **Makeup**: whether the face in the image has makeup applied
+- **Noise**: refers to visual noise in the image.  If you have taken a photo with a high ISO setting for darker settings, you would notice this noise in the image.  The image looks grainy or full of tiny dots that make the image less clear
+- **Occlusion**: determines if there may be objects blocking the face in the image
+- **Smile**: whether the person in the image is smiling
 
 ## Azure resources for Face
 
@@ -50,6 +52,6 @@ Whichever type of resource you choose to create, it will provide two pieces of i
 There are some considerations that can help improve the accuracy of the detection in the images:
 
 - image format - supported images are JPEG, PNG, GIF, and BMP
-- file size - 4 MB or smaller
+- file size - 6 MB or smaller
 - face size range - from 36 x 36 up to 4096 x 4096.   Smaller or larger faces will not be detected
-- other issues - face detection can be impaired by extreme face angles, occlusion (objects blocking the face such as sunglasses or a hand).  Best results are obtained when the faces are full-frontal or as near as possible to full-frontal
+- other issues - face detection can be impaired by extreme face angles, occlusion (objects blocking the face such as sunglasses or a hand). Best results are obtained when the faces are full-frontal or as near as possible to full-frontal
