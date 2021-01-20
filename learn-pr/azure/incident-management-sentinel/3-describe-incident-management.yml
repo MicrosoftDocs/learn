@@ -22,25 +22,25 @@ quiz:
       explanation: "Incidents don't generate alerts. Rather, incidents are created from alerts."
     - content: "Analytic rules"
       isCorrect: true
-      explanation: "Analytic rules can be configured to generate alerts in Sentinel"
+      explanation: "Analytic rules can be configured to generate alerts in Sentinel."
     - content: "Data connectors"
       isCorrect: false
       explanation: "Data connectors don't generate alerts. They're used to gather event data from security-related services."
     - content: "Events"
       isCorrect: false
       explanation: "Events don't generate alerts. Events are stored in a Log Analytics workspace and contain the details of security-related activity that you want to monitor with Sentinel."
-  - content: "What is the primary goal of incident management in Sentinel"
+  - content: "What is the primary goal of incident management in Sentinel?"
     choices:
-    - content: "Understand the state of security health in Microsoft Azure"
+    - content: "Understand the state of security health in Microsoft Azure."
       isCorrect: false
-      explanation: "While incidents can help you understand your security environment, they're designed to help track and resolve security issues across all environments, including on-premises, Azure, and other cloud environments."
+      explanation: "Although incidents can help you understand your security environment, they're designed to help track and resolve security issues across all environments, including on-premises, Azure, and other cloud environments."
     - content: "Track and manage issues in Azure."
       isCorrect: false
       explanation: "Incident management in Sentinel is only for resolving security-related issues"
     - content: "Track and resolve security issues across your organization's environment."
       isCorrect: true
-      explanation: "Sentinel incident management is intended to help you track and resolve security issues across your organization's environment."
-    - content: "Manage security roles in your environment"
+      explanation: "Sentinel incident management helps you track and resolve security issues across your organization's environment."
+    - content: "Manage security roles in your environment."
       isCorrect: false
       explanation: "You can't directly manage security roles with incident management."
       
