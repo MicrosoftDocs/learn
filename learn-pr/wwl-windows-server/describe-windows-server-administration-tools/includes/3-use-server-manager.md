@@ -35,7 +35,7 @@ Server Manager has a section for properties of the local server. From the Local 
 - Time zone
 - Windows activation
 
-:::image type="content" source="../media/m2-server-manager2.png" alt-text="A screenshot of the Server Manager Local Server pane. Displayed are the options discussed in the preceding text.":::
+:::image type="content" source="../media/m2-server-manager-2.png" alt-text="A screenshot of the Server Manager Local Server pane. Displayed are the options discussed in the preceding text.":::
 
 This section also provides basic information about the hardware, such as:
 

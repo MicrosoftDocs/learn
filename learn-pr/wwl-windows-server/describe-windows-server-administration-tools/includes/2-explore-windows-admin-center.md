@@ -62,7 +62,7 @@ Where this is not the case, you must configure the target computers as trusted h
 > [!IMPORTANT]
 > When you install Windows Admin Center on a workgroup computer, you are prompted to allow Windows Admin Center to manage the local computer's TrustedHosts setting.  If you bypass this automated setting, you must configure TrustedHosts manually.
 
-:::image type="content" source="../media/m2-windows-admin-center2.png" alt-text="A screenshot of Windows Admin Center setup. The administrator has accepted the default port 6516 and the option to allow Windows Admin Center to modify the local machine's trusted host settings.":::
+:::image type="content" source="../media/m2-windows-admin-center-2.png" alt-text="A screenshot of Windows Admin Center setup. The administrator has accepted the default port 6516 and the option to allow Windows Admin Center to modify the local machine's trusted host settings.":::
 
 You can configure trusted hosts settings by using the following Windows PowerShell command in an elevated Windows PowerShell window. You can specify the remote hosts by IP, FQDN, or NetBIOS name.
 
