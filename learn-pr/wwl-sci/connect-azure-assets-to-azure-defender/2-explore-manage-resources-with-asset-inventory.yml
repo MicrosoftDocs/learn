@@ -4,7 +4,7 @@ title: Explore and manage your resources with asset inventory
 metadata:
   title: Explore and manage your resources with asset inventory
   description: "Explore and manage your resources with asset inventory"
-  ms.date: 01/17/2021
+  ms.date: 01/20/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-explore-manage-your-resources-with-asset-inventory.md)]
+  [!include[](includes/2-explore-manage-resources-with-asset-inventory.md)]
