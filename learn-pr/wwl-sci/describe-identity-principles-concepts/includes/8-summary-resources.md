@@ -10,8 +10,8 @@ Now that you have completed this module, you will be able to:
 
 For more information on the topics covered in this module, see:
 
-[Protecting your organization against password spray attacks](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/)
-[Identity protection risks](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-risks)
-[Authentication vs authorization](https://docs.microsoft.com/azure/active-directory/develop/authentication-vs-authorization)
-[Identity providers for External Identities](https://docs.microsoft.com/azure/active-directory/external-identities/identity-providers)
-[Compare Active Directory to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad)
+- [Protecting your organization against password spray attacks](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/)
+- [Identity protection risks](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-risks)
+- [Authentication vs authorization](https://docs.microsoft.com/azure/active-directory/develop/authentication-vs-authorization)
+- [Identity providers for External Identities](https://docs.microsoft.com/azure/active-directory/external-identities/identity-providers)
+- [Compare Active Directory to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad)
