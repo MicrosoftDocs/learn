@@ -2,7 +2,7 @@ A generic data type is a type that is defined in terms of other, partially unkno
 
 - The `Option<T>` enum is generic over the type `T`, which is the value contained by its `Some` variant.
 - The `Result<T, E>` is generic over both its success and failure type, contained by its `Ok` and `Err` variants, respectively.
-- The vector type `Vec<T>`, the array type `[T; n]` and the hashmap `HashMap<K, V>` are generic over the types they contain.
+- The vector type `Vec<T>`, the array type `[T; n]` and the hash map `HashMap<K, V>` are generic over the types they contain.
 
 When we use generic types, we can specify the operation we want without many concerns about some of the inner types held by the defined type.
 
@@ -75,4 +75,4 @@ Keep in mind that all of the `Point` types above have **different concrete types
 
 So you can't really mix those values directly with each other until you have implemented that kind of interaction in your code.
 
-In the next unit we're going to learn about Traits and discover how generic types can be useful in our code, allowing us to write generic functions that will operate on objects of different, but related related types.
+In the next unit we're going to learn about Traits and discover how generic types can be useful in our code, allowing us to write generic functions that will operate on objects of different, but related types.

@@ -2,7 +2,7 @@ Traits let us define functions that accept many different types, because when a 
 
 We can declare function arguments to be an anonymous type parameter where the callee must provide a type that has the bounds declared by the anonymous type parameter.
 
-Lets imagine that we are writing a web application and would like to have a interface for
+Lets imagine that we are writing a web application and would like to have an interface for
 serializing values to the JSON format. We could write a trait like this:
 
 ```rust
@@ -26,7 +26,7 @@ Instead of a concrete type for the `item` parameter, we specify the `impl` keywo
 name. This parameter accepts any type that implements the specified trait. Note that since the
 function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
 
-Another way to write the same function, but with a litte different syntax, that explicitly tells that T is a generic type that must implement the `AsJson` trait:
+Another way to write the same function, but with a little different syntax, that explicitly tells that T is a generic type that must implement the `AsJson` trait:
 
 ```rust
 fn send_data_as_json<T: AsJson>(value: &T) { ... }

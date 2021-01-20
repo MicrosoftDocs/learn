@@ -1,6 +1,6 @@
 We have already covered how we can iterate over collection types using the loop, but this time we will do a more in-depth review on how Rust handles the concept of iteration itself.
 
-In Rust, all iterators implement a trait named `Iterator` that is defined in the standard library and is used to implement iterators over collections such as ranges, arrays, vectors and hashmaps.
+In Rust, all iterators implement a trait named `Iterator` that is defined in the standard library and is used to implement iterators over collections such as ranges, arrays, vectors and hash maps.
 
 The core of that trait looks like this:
 
@@ -14,7 +14,7 @@ trait Iterator {
 An `iterator` has a method, `next`, which when called, returns an `Option<Item>`. `next` will return `Some(Item)` as long as there are elements, and once they've all been exhausted, will return `None` to indicate that iteration is finished.
 
 Notice this definition uses some new syntax: `type Item` and `Self::Item`, which are defining an
-associated type with this trait. This means that every implementation of the `Iterator` traits also requires the definition of the associated `Item` type, wich is used as the return type of the `next` method. In other words, the `Item` type will be the type returned from the iterator inside the `for` loop block.
+associated type with this trait. This means that every implementation of the `Iterator` traits also requires the definition of the associated `Item` type, which is used as the return type of the `next` method. In other words, the `Item` type will be the type returned from the iterator inside the `for` loop block.
 
 ## Implementing our own iterator
 

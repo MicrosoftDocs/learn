@@ -84,7 +84,7 @@ struct Point {
 ```
 
 Our code will still fail to compile because Rust's standard library does not provide automatic
-implementation for the `Display` trait, since it is meant for end-users, but if we comment out that line our code would now produce this output:
+implementation for the `Display` trait, since it is meant for end users, but if we comment out that line our code would now produce this output:
 
 ```output
     Point { x: 1, y: 2 }
@@ -103,7 +103,7 @@ impl fmt::Display for Point {
 }
 ```
 
-and our code wil then compile just fine:
+and our code will then compile just fine:
 
 ```output
     (1, 2)
