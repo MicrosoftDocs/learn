@@ -4533,8 +4533,6 @@
     {
       "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/8-summary.md",
       "redirect_url": "/learn/modules/python-object-oriented-programming/",
-<<<<<<< HEAD
-=======
       "redirect_document_id": false
     },
     {
@@ -4598,16 +4596,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions.yml",
-      "redirect_url": "/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/5-define-identify-transformations.yml",
-      "redirect_url": "/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/6-describe-performance-enhancements-enabled.yml",
       "redirect_url": "/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/5-describe-performance-enhancements-enabled",
       "redirect_document_id": false
@@ -4625,7 +4613,6 @@
     {
       "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/8-walkthrough-use-azure-tco-calculator.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
->>>>>>> d0050ddf2dd9e695ada8cac0c18550287f500569
       "redirect_document_id": false
     }
   ]
