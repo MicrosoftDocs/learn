@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.9-validate-solution
-title: Validate the solution
+title: Validating the solution
 metadata:
-  title: Validate the solution
+  title: Validating the solution
   description: Learn how to write code to check that the solution does not violate any constraints.
   ms.date: 11/25/2020
   author: anraman
