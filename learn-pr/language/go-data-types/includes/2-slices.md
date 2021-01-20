@@ -47,7 +47,7 @@ Go has support for the slice operator `s[i:j]`, where `s` represents the array, 
 
 For instance, let's say that you'd like to have four variables representing each quarter of the year. The following image illustrates how that looks in Go:
 
-:::image type="content" source="..media/go-slices-multiple.png" alt-text="Diagram showing how multiple Slices in Go look.":::
+:::image type="content" source="../media/go-slices-multiple.png" alt-text="Diagram showing how multiple slices in Go look.":::
 
 To represent in code what you saw in the image above, you could use the following code:
 
