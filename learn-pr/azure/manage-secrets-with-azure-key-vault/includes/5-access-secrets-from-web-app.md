@@ -2,7 +2,7 @@ Now that you know how enabling-managed identities for Azure resources creates an
 
 ::: zone pivot="csharp"
 
-## Reading secrets in an ASP.NET Core app
+## Read secrets in an ASP.NET Core app
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
@@ -17,7 +17,7 @@ The official Key Vault client for .NET Core is the `SecretClient` class in the A
 
 ::: zone pivot="javascript"
 
-## Reading secrets in a Node.js app
+## Read secrets in a Node.js app
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
@@ -52,7 +52,7 @@ To load the secret from our vault, you'll create a new ASP.NET Core web API, and
 
 ### Create the app
 
-In the Azure Cloud Shell terminal, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
+In the Azure Cloud Shell, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
 
 ```console
 dotnet new webapi -o KeyVaultDemoApp

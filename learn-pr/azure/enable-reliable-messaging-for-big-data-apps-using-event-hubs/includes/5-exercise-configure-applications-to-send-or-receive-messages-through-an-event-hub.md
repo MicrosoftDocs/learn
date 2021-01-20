@@ -54,7 +54,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
 1. Create a container called **messages** in your storage account running the following command. Use the **connectionString** you copied in the previous step.
 
     ```azurecli
-    az storage container create -name messages --connection-string "<connection string here>"
+    az storage container create --name messages --connection-string "<connection string here>"
     ```
 
 ## Clone the Event Hubs GitHub repository
@@ -74,7 +74,7 @@ Perform the following steps to clone the Event Hubs GitHub repository with `git`
 
 You're going to use the built-in Cloud Shell editor. You'll use the editor to modify the SimpleSend application, and add your Event Hubs namespace, Event Hub name, shared access policy name, and primary key. The main commands appear at the bottom of the editor window.
 
-You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then press <kbd>Enter</kbd> to confirm the output file name. Exit the editor pressing <kbd>Ctrl+X</kbd>. Alternatively, the editor has a "..." menu in the top/right corner for all the editing commands.
+You'll need to write out your edits by pressing <kbd>Ctrl+O</kbd>, and then pressing <kbd>Enter</kbd> to confirm the output file name. Exit the editor by pressing <kbd>Ctrl+X</kbd>. Alternatively, the editor has a "..." menu in the top/right corner for all the editing commands.
 
 1. Change to the **SimpleSend** folder.
 
@@ -214,7 +214,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
     java -jar ./target/eventprocessorsample-1.0.0-jar-with-dependencies.jar
     ```
 
-1. When messages stop appearing on the console, press <kbd>Enter</kbd> or <kbd>CTRL+C</kbd> to end the program.
+1. When messages stop appearing on the console, press <kbd>Enter</kbd> or press <kbd>CTRL+C</kbd> to end the program.
 
     ```output
     ...
