@@ -9,6 +9,6 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise.md)]
