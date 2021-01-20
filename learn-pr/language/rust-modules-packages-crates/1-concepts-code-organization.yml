@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.language.rust-modules-packages-crates.1-concepts-code-organization
 metadata:
   title: Understand concepts behind code organization
-  description: Learn more about how packages, crates, and modules work together in Rust programs.
-  ms.date: 
+  description: Learn about how packages, crates, and modules work together in Rust programs.
+  ms.date: 01/20/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -11,4 +11,4 @@ metadata:
 title: Understand concepts behind code organization
 durationInMinutes: 4
 content: |
-  [!include[](includes/1-understand-concepts-behind-code-organization.md)]
+  [!include[](includes/1-concepts-code-organization.md)]

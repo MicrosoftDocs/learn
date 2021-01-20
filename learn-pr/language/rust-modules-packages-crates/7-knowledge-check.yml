@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.language.rust-modules-packages-crates.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
@@ -13,7 +13,6 @@ durationInMinutes: 2
 content: |
   Answer the following questions to demonstrate what you've learned:
 quiz:
-  title: Check your knowledge
   questions:
   - content: "Each of the following, if true, describe **modules** in Rust, EXCEPT:?"
     choices:

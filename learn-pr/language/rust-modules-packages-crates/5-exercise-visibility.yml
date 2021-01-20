@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.language.rust-modules-packages-crates.5-exercise-visibility
 metadata:
   title: Exercise - Visibility
   description: Use what you've learned about visibility with modules to fix the code.
