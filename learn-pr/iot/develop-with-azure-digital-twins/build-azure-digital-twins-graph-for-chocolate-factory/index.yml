@@ -19,7 +19,7 @@ abstract: |
   - Create a graph of the models using the ADT Explorer sample
   - Query the graph using SQL-like queries
 prerequisites: |
-  - Familiarity with navigating the Azure portal
+  - Familiarity with the Azure portal
   - It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) Learning Path
   - A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended
   - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
@@ -50,6 +50,7 @@ units:
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-build-digital-twin-graph
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.querying-digital-twin-graphs
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-querying-digital-twin-graphs
+- learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.knowledge-check
 - learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.summary
 badge:
   uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.badge

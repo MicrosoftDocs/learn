@@ -16,7 +16,7 @@ To summarize, in this module, you will:
 
 ## Prerequisites
 
-- Familiarity with navigating the Azure portal
+- Familiarity with the Azure portal
 - It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) Learning Path
 - A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module is recommended
 - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
@@ -35,17 +35,17 @@ A chocolate manufacturing company, Contoso Chocolate, has one factory and one pr
 
 For the sake of explanation, the production of chocolate has been simplified into three steps: *Roasting*, *Grinding*, and *Molding*. The following image shows the production line:
 
-:::image type="content" source="../media/adt-chocolate-production-line.png" alt-text="Graphical representation of a chocolate production line" lightbox="../media/adt-chocolate-production-line.png":::
+:::image type="content" source="../media/chocolate-production-line.png" alt-text="Graphical representation of a chocolate production line" lightbox="../media/chocolate-production-line.png":::
 
 Cocoa beans are the input to this production line and chocolate bars the output!
 
-1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 degrees to 150 degrees C. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
+1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 to 150 degrees C. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
 
 1. **Grinding**: The grinding process takes the cocoa nibs that result from the roasting and crushes them to pieces, typically between steel plates, to create a liquid cocoa butter.
 
 1. **Molding**: The molding process cools the cocoa butter in molds, giving the desired shape: chocolate bars, egg shells, and figures. The following image shows roasted cocoa nibs:
 
-:::image type="content" source="../media/adt-chocolate-nibs.png" alt-text="Photograph of roasted chocolate nibs" lightbox="../media/adt-chocolate-nibs.png":::
+:::image type="content" source="../media/chocolate-nibs.png" alt-text="Photograph of roasted chocolate nibs" lightbox="../media/chocolate-nibs.png":::
 
 You've been asked to advise on the correct growth path for the company. You have decided to use the power of Azure Digital Twins to build a software solution flexible enough that no matter what questions the company owners may ask, you'll have a scientific and robust answer.
 

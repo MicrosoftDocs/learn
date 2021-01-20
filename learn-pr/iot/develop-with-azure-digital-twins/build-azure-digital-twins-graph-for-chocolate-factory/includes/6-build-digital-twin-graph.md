@@ -8,13 +8,13 @@ It's necessary to sign in and validate a digital twins instance. You'll need the
 
 After signing in, you'll probably want to either upload your models, or upload a graph you created previously. Looking at the following image, note the model import icon to the left, and the graph import icon in the center. The image also highlights the `localhost:3000` address, and the icon to save updates to your digital twins.
 
-:::image type="content" source="../media/adt-explorer-intro.png" alt-text="Screenshot showing the layout of the ADT Explorer sample" lightbox="../media/adt-explorer-intro.png":::
+:::image type="content" source="../media/explorer-intro.png" alt-text="Screenshot showing the layout of the ADT Explorer sample" lightbox="../media/explorer-intro.png":::
 
 ## Upload models and create twins
 
 The following image shows the factory model from the chocolate factory scenario. After uploading, typically use the `Create a twin` icon to create the twin. Creating the twin adds the circle representation of the model to the graph and a selection of properties to the **PROPERTY EXPLORER**. Not all properties are currently shown in the property explorer, there are some limitations to the ADT Explorer sample.
 
-:::image type="content" source="../media/adt-explorer-create-twin.png" alt-text="Screenshot showing the import of a model, and the creation of its digital twin" lightbox="../media/adt-explorer-create-twin.png":::
+:::image type="content" source="../media/explorer-create-twin.png" alt-text="Screenshot showing the import of a model, and the creation of its digital twin" lightbox="../media/explorer-create-twin.png":::
 
 Rather than upload one model at a time, typically you would upload a folder full of models.
 
@@ -28,7 +28,7 @@ Having spent a good amount of time creating a graph, it's good to know you can s
 
 The following example shows a more complex graph of models of electrical power components, forming a distribution grid:
 
-:::image type="content" source="../media/adt-explorer-graph-import.png" alt-text="Screenshot showing an electrical distribution grid, as a graph" lightbox="../media/adt-explorer-graph-import.png":::
+:::image type="content" source="../media/explorer-graph-import.png" alt-text="Screenshot showing an electrical distribution grid, as a graph" lightbox="../media/explorer-graph-import.png":::
 
 Note that the digital twin example of the chocolate factory has been deliberately simplified, as more robust uses of ADT like the electrical power components shown above can get complicated as more elements are added.
 
@@ -36,7 +36,7 @@ There are a range of options in the ADT Explorer sample for automatically laying
 
 Graphs, when exported, are stored in a human-readable Excel spreadsheet. The following image shows a section of the spreadsheet for the distribution grid example in this section:
 
-:::image type="content" source="../media/adt-distribution-grid.png" alt-text="Screenshot showing a section of an Excel spreadsheet containing the distribution grid graph" lightbox="../media/adt-distribution-grid.png":::
+:::image type="content" source="../media/distribution-grid.png" alt-text="Screenshot showing a section of an Excel spreadsheet containing the distribution grid graph" lightbox="../media/distribution-grid.png":::
 
 ## Next steps
 

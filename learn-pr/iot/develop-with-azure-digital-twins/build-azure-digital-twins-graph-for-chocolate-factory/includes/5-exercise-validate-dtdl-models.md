@@ -11,8 +11,8 @@ In this unit, you download the DTDL Validator sample. This is a command line sam
 1. In Visual Studio Code, open the project folder by navigating to "File" > "Open Folder..." (`CTRL`+`K` `CTRL`+`O`) and selecting the folder where you extracted the DTDL Validator sample application.
 
     > [!NOTE]
-    > You can disregard these messages about unresolved dependencies and missing assets:
-    > :::image type="content" source="../media/adt-visual-studio-code-messages.png" alt-text="Screenshot showing the messages that can be disregarded with the DTDL Validator sample open in Visual Studio Code":::
+    > If you receive messages about missing assets and unresolved dependencies, click "Yes" and "Restore" respectively:
+    > :::image type="content" source="../media/visual-studio-code-messages.png" alt-text="Screenshot showing the messages that can be disregarded with the DTDL Validator sample open in Visual Studio Code":::
 
 1. Open the terminal (if it's not already open) by navigating to "View" > "Terminal".
 

@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.knowledge-check
+metadata:
+  description: Check your knowledge of the Azure Digital Twins Definition Language (DTDL) and query language
+  ms.date: 10/1/2020
+  author: PeterTurcan
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What are the fields of a Digital Twins Definition Language (DTDL) interface?'
+    choices: 
+    - content: '@type, name, schema'
+      isCorrect: false
+      explanation: Good guess, but these are the attributes of the contents entry in a model.
+    - content: 'Property, Telemetry, Component, Relationship'
+      isCorrect: true
+      explanation: Properties are stored data, Telemetry are measurements, Components aid in organization, Relationships include contains, heats, cools, isBilledTo, and so on.
+    - content: '@id, @type, @context, displayName, contents'
+      isCorrect: false
+      explanation: Good guess, but these are the fields of a model, not the interface.
+    - content: 'primitive types, and Object, Map, Enum'
+      isCorrect: false
+      explanation: These are the schema values for model Property, or Telemetry.
+
+  - content: 'What is the difference between a DTDL property and DTDL telemetry?'
+    choices: 
+    - content: 'There is no significant difference.'
+      isCorrect: false
+      explanation: Properties and Telemetry are not interchangeable.
+    - content: 'Properties are expected to have storage, that can be written to if necessary. Telemetry is a stream of values.'
+      isCorrect: true
+      explanation: Typically telemetry is sent by a sensor (temperature, humidity, pressure). Properties might include ID, or date of last maintenance.
+    - content: 'Properties do not change, Telemetry changes continuously.'
+      isCorrect: false
+      explanation: Telemetry might not change, and properties can be set as writable, and written to.
+    - content: 'Telemetry is for IoT devices, Properties are for digital twins.'
+      isCorrect: false
+      explanation: IoT devices do send telemetry, and properties are an important component of digital twin models. But digital twin models can have telemetry components.
+
+  - content: 'You have a set of models, some of which contain a property called Temperature. Which of the following queries return all models with a temperature less than 65 degrees?'
+    choices: 
+    - content: 'SELECT * FROM DigitalTwins T WHERE T.Temp < 65'
+      isCorrect: false
+      explanation: Close, but Temp is not the correct name of the property.
+    - content: 'SELECT * FROM DigitalTwins T WHERE T.Temperature < 65'
+      isCorrect: true
+      explanation: The >, <, = and != are acceptable comparisons in a query.
+    - content: 'SELECT * FROM DigitalTwins WHERE IS_DEFINED(Temperature)'
+      isCorrect: false
+      explanation: This query would return all models with a Temperature property.
+    - content: 'if (Temperature < 65) return model.name;'
+      isCorrect: false
+      explanation: This answer does not have the right syntax.
+
+  - content: 'What is a distinction between a FROM clause in a SQL-type language and a FROM clause in the Azure Digital Twins query language?'
+    choices:
+      - content: 'In the ADT query language, you can only have one JOIN statement in the FROM clause, while in a SQL-type language, you can have multiple.'
+        isCorrect: false
+        explanation: You can use an N amount of JOIN statements following the FROM statement in the ADT query language.
+      - content: 'In the ADT query language, each expression in a FROM clause is not a table. Instead, the FROM clause expresses a cross-entity relationship traversal, and is written with an Azure Digital Twins version of JOIN.'
+        isCorrect: true
+        explanation: This answer is correct. The distinction is that in a SQL-type language, each expression in a FROM clause is a separate table.
+      - content: 'In the ADT query language, the FROM clause is used to specify which table to select data from, while in a SQL-type language, each expression in a FROM clause expresses a cross-entity relationship traversal.'
+        isCorrect: false
+        explanation: This answer is the other way around - in a SQL-type language, the FROM clause is used to specify which table to select data from. While in the ADT query language, each expression in a FROM clause expresses a cross-entity relationship traversal.
