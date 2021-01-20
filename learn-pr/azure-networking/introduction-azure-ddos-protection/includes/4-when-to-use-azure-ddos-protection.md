@@ -20,18 +20,7 @@ When building or deploying your workload, it’s important to design for:
 
 After addressing the considerations for building DDoS resilient applications, you now need to determine which features of Azure DDoS Protection you need. The following table compares the key features of DDoS Protection Standard and DDoS Protection Basic.
 
-|Feature|DDoS Protection Basic|DDoS Protection Standard|
-|--------|---------------------|----------------------------------------|
-|Active traffic monitoring and always-on detection|Yes|Yes|
-|Automatic attack mitigation|Yes|Yes|
-|Availability guarantee|Azure Region|Per application|
-|Cost Protection|No|Yes|
-|Mitigation policies tuned to customers application|No|Tuned for each applications traffic volume|
-|Metrics and alerts|No                    |Yes–Azure Monitor logs for attack metrics and diagnostics|
-|Mitigation reports|No|Yes–Post attack|
-|Mitigation flow logs| No| Yes|
-|DDoS rapid response support| No|Access  to Azure DDoS experts during an attack|
-|Service Level Agreement| Azure Region| Application guarantee and cost protection|
+:::image type="content" source="../media/4-ddos-compared.png" alt-text="A chart that compares the features of DDoS Basic to DDoS Standard.":::
 
 > [!NOTE]
 > DDoS Protection Standard offers more features than the DDoS Protection Basic. If you determine that certain applications are critical; for example, a high-volume, revenue-generating Ecommerce website, then DDoS standard Protection is a natural choice.

@@ -24,8 +24,6 @@ The following diagram depicts the data flow through the DDoS Protection Standard
 
 Each Azure application has its own traffic pattern, which is unique like a human fingerprint. In DDoS protection, the process is to detect the attack and then stop the attack. DDoS Protection Standard uses a proprietary machine learning algorithm, which identifies the traffic pattern (fingerprint) for your application and uses that pattern to build an application traffic profile.
 
-For example, the algorithm learns that at 9 AM on Mondays, the data traffic on your business-critical application is different from data traffic at 9 AM on Sundays. It learns how the traffic pattern changes every minute, and how it shifts every hour of the day, every week of the month, and every month of the year.
-
 In the event this application starts receiving traffic outside the standard range, your DDoS Protection Standard mitigation policy upper limit will be increased to support what might be a seasonal surge.
 
 If someone is trying to DDoS your application, the traffic would continue to grow. At that point, DDoS Protection Standard triggers alerts, because something seems anomalous with the traffic. The incoming traffic to the application will be inspected in real time to test for valid packets. Invalid packets will be dropped so they do not impact the availability and performance of your application.
@@ -36,7 +34,7 @@ In the previous example, shortly after the detection of an attack, DDoS Protecti
 
 ### Test your DDoS protection
 
-Testing and validating are crucial to understand how a system will perform during a DDoS attack. An attack simulator for testing how well your protected services will perform during a DDoS attack is available for Azure customers. You can use the simulator to:
+Testing and validating are crucial to understand how a system will perform during a DDoS attack. An attack simulator for testing how well your protected services will perform during a DDoS attack is available for Azure customers at [BreakingPoint Cloud](https://www.keysight.com/us/en/products/network-security/breakingpoint-cloud.html). You can use the simulator to:
 
 - Validate that your key services are protected during a DDoS attack.
 
