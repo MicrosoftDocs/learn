@@ -1,22 +1,9 @@
-Undestanding the artifacts in your environment and how these artifacts are related to other artifacts and alerts will provide you insight to understand the overall impact to your environment.  Defender for Endpoint provides specific observable pages for:
+Microsoft Defender for Endpoint provides information about forensic artifacts found in the environment. There are specific observable pages for Files, User Accounts,  IP Addresses, and Domains.
 
-- Files
+You are a Security Operations Analyst working at a company that has implemented Microsoft Defender for Endpoint, and your primary job is to remediate incidents.  You are assigned an incident with alerts related to a suspicious PowerShell command line. 
 
-- User Accounts
+You start by reviewing the incident and understand all the related alerts, devices, and evidence.  The evidence tab shows three files, six processes, and one persistence method.  One of the files has a name you have never seen before.  You open the file page to review everything known about the file.  
 
-- IP Addresses
+The file has never been seen in the organization other than this incident. If this is malware, it is good to know whether this file impacted only this machine.  You decide to submit a deep analysis on the file to see if the file performs any suspicious activities.  The results show suspicious activity; you then select Add Indicator from the file page to ensure Defender for Endpoint will use the indicator for detections.  
 
-- Domains
-
-In this module, you will:
-
-- Investigate Files
-
-- Investigate Domains and IP Addresses
-
-- Investigate User Accounts
-
-## Prerequisites
-
-Intermediate understanding of Windows 10.
 

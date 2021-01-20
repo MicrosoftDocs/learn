@@ -1,10 +1,10 @@
-Now that you have reviewed this module, you should be able to:
+You learned how Microsoft Defender for Endpoint provides information about forensic artifacts found in the environment.  How there are specific observable pages for Files, User Accounts, IP Addresses, and Domains.
 
-- Investigate Files
+You should now be able to:
 
-- Investigate Domains and IP Addresses
-
-- Investigate User Accounts
+- Investigate files in Microsoft Defender for Endpoint
+- Investigate domains and IP addresses in Microsoft Defender for Endpoint
+- Investigate user accounts in Microsoft Defender for Endpoint
 
 ## Learn more
 

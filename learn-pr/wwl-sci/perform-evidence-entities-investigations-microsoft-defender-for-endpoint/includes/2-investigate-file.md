@@ -1,6 +1,6 @@
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
-![File Page](../media/filepage.png)
+![File Page](../media/file-page.png)
 
 There are many ways to access the detailed profile page of a specific file. For example, you can use the search feature, select a link from the Alert process tree, Incident graph, Artifact timeline, or select an event listed in the Device timeline.  You can get information from the following sections in the file view:
 
@@ -65,10 +65,6 @@ The Deep analysis summary includes a list of observed behaviors, some of which c
 The deep analysis results are matched against threat intelligence, and any matches will generate appropriate alerts.
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the Deep analysis tab on the file's profile page.
-
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about deep analysis|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 

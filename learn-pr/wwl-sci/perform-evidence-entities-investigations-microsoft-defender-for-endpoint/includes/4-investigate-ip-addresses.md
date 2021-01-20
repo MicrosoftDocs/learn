@@ -36,11 +36,11 @@ The most recent observed devices with IP section provides a chronological view o
 
 Investigate an external IP:
 
-- Select IP from the Search bar drop-down menu.
+1. Select **IP** from the Search bar drop-down menu.
 
-- Enter the IP address in the Search field.
+1. Enter the IP address in the Search field.
 
-- Select the search icon or press Enter.
+1. Select the search icon or press Enter.
 
 Details about the IP address are displayed, including registration details (if available), reverse IPs (for example, domains), prevalence of devices in the organization that communicated with this IP Address (during the selected time period), and the devices in the organization that were observed communicating with this IP address.
 
