@@ -17,7 +17,7 @@ To create a WDS session, the Contoso infrastructure team must start the target s
 > [!NOTE]
 > This example assumes Contoso use multicast to distribute images from WDS, which is typical.
 
-:::image type="content" source="../media/m4-windows-deploy1.png" alt-text="A screenshot of the Windows Deployment Services console with the SEA-ADM1 Properties dialog box overlaid. The administrator has selected the PXE Response tab, and has selected Respond to all client computers (known and unknown).":::
+:::image type="content" source="../media/m4-windows-deploy-1.png" alt-text="A screenshot of the Windows Deployment Services console with the SEA-ADM1 Properties dialog box overlaid. The administrator has selected the PXE Response tab, and has selected Respond to all client computers (known and unknown).":::
 
 The WDS role in the Windows Server operating system is composed of two components: the Transport Server and the Deployment Server.
 
@@ -32,7 +32,7 @@ The transport server component provides three types of multicasting, described i
 |   Scheduled-Cast with point in time                |   When you specify a point in time, the server waits until the specified time and begins deployment to connected client computers.       |
 |    Auto-cast               |Auto-cast is a type of multicast that creates a new session automatically for each client connection received. A target can join an Auto-cast at any time, and the server repeats the transmission for as long as targets are connected.              |
 
-:::image type="content" source="../media/m4-windows-deploy2.png" alt-text="A screenshot of SEA-ADM1 Properties dialog box in Windows Deployment Services. The administrator has selected the Multicast tab, and a specified range of IPv4 and IPv6 addresses is selected.":::
+:::image type="content" source="../media/m4-windows-deploy-2.png" alt-text="A screenshot of SEA-ADM1 Properties dialog box in Windows Deployment Services. The administrator has selected the Multicast tab, and a specified range of IPv4 and IPv6 addresses is selected.":::
 
 ### Deployment Server
 
@@ -57,7 +57,7 @@ As mentioned, WDS uses two types of image. These are described in the following 
 |Boot images|Usually, you only need two boot images in Windows Deployment Services, one for computers running 32-bit processors, and one for computers running 64-bit processors. The boot image contains Windows PE, a scaled-down version of the Windows operating system. |
 |Install images| Install images contain the operating system you want to deploy to a given computer along with any applications, updates, roles, and settings configured on the original computer that created the image. Install images are a mirror of a hard drive you can apply on a Windows Deployment Services client computer. |
 
-:::image type="content" source="../media/m4-windows-deploy3.png" alt-text="A screenshot of SEA-ADM1 Properties dialog box in Windows Deployment Services. The administrator has selected the Boot tab. The Always continue PXE boot option is selected, and the x64 architecture boot image is boot.wim.":::
+:::image type="content" source="../media/m4-windows-deploy-3.png" alt-text="A screenshot of SEA-ADM1 Properties dialog box in Windows Deployment Services. The administrator has selected the Boot tab. The Always continue PXE boot option is selected, and the x64 architecture boot image is boot.wim.":::
 
 You also can use Windows Deployment Services in conjunction with other technologies to provide an even less interactive deployment, called zero-touch installation (ZTI). In a zero-touch installation, a designated server can use the Wake On LAN protocol to start computers by using PXE, and then join a session managed by Windows Deployment Services. That way, no interaction with the target computers is necessary.
 

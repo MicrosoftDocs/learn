@@ -39,14 +39,14 @@ Then restart the server. If connecting to Windows Update is not an option, then 
 1. Connect the Server Core to the network location and copy the ISO to a local folder.
 1. Mount the ISO from an elevated PowerShell session by using the following command:
 
-```powershell
-Mount-DiskImage -ImagePath drive_letter:\folder_where_ISO_is_saved\ISO_filename.iso
-```
+    ```powershell
+    Mount-DiskImage -ImagePath drive_letter:\folder_where_ISO_is_saved\ISO_filename.iso
+    ```
 
 5. Run the following command:
 
-```powershell
-Add-WindowsCapability -Online -Name ServerCore.AppCompatibility~~~~0.0.1.0 -Source <Mounted_Server_FOD_Drive> -LimitAccess
-```
+    ```powershell
+    Add-WindowsCapability -Online -Name ServerCore.AppCompatibility~~~~0.0.1.0 -Source <Mounted_Server_FOD_Drive> -LimitAccess
+    ```
 
 6. Restart the server
