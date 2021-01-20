@@ -15,7 +15,7 @@ In general, to onboard devices to the service:
 
 In Settings, Device Management, Onboarding select operating system dropdown to see the supported options.
 
-![Supported Operating Systems.](../media/onboarding.png)
+![Supported Operating Systems.](../media/onboard.png)
 
 After selecting the operating system option, the supported deployment options are outlined.   Here is a list of the Windows 10 supported deployment options:
 
@@ -29,11 +29,11 @@ After selecting the operating system option, the supported deployment options ar
 
 - VDI onboarding script for non-presistent devices
 
-![Windows 10 Deployment options](../media/onboardwindows.png)
+![Windows 10 Deployment options](../media/onboard-windows.png)
 
 As you can see, there are many configuration options.  
 
 ## Offboarding Devices
 
-In Settings, Device Management, **Offboarding** select operating system dropdown to see the direction to offboard devices.
+In Settings, Device Management, Offboarding, select operating system dropdown to see the direction to offboard devices.
 
