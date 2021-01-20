@@ -12,14 +12,13 @@ title: TODO
 summary: TODO
 abstract: |
   In this module, you will:
-  # - Review ASP.NET Core and Kubernetes app configuration concepts.
-  # - Implement real-time feature toggling with the .NET Feature Management library.
-  # - Implement a centralized Azure App Configuration store.
+  - Understand the creation of a basic Azure Cache for Redis instance.
+  - Understand the creation of a basic Azure Cosmos DB instance using the MongoDB API.
+  - Understand the configuration changes needed to use managed data services.  
 prerequisites: |
-  # - Familiarity with C# and ASP.NET Core development at the beginner level
-  # - Familiarity with RESTful service concepts at the beginner level
-  # - Conceptual knowledge of containers and AKS at the intermediate level
-  # - Access to an Azure subscription with **Owner** privilege
+  - Familiarity with C# and ASP.NET Core development at the beginner level
+  - Familiarity with basic data management concepts
+  - Access to an Azure subscription with **Owner** privilege
 levels:
   - intermediate
 roles:

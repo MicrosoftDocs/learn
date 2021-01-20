@@ -1,4 +1,4 @@
-In a microservices app, you usually need some sort of database to support the business operations, and you have two basic options:
+In a microservices app, you usually need a database to support the business operations. You have two basic options:
 
 - Set up your database servers yourself using virtual machines or database clusters for high availability.
 - Configure a managed database service.
@@ -17,13 +17,13 @@ In this module, you will:
 
 ## Learning objectives
 
-- Get to know some managed data services offered in Azure.
+- Review some managed data services offered in Azure.
 - Understand the creation of a basic Azure Cache for Redis instance.
 - Understand the creation of a basic Azure Cosmos DB instance using the MongoDB API.
 - Understand the configuration changes needed to use managed data services.
 
 ## Prerequisites
 
-- Familiarity with ASP.NET Core apps
+- Familiarity with C# and ASP.NET Core development at the beginner level
 - Familiarity with basic data management concepts
 - Access to an Azure subscription with **Owner** privilege
