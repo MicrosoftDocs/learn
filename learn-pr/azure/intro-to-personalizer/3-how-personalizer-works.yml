@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-personalizer.3-how-personalizer-works
+metadata:
+  title: How Personalizer works
+  description: Content
+  ms.date: 01/08/2021
+  author: gerryo
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-personalizer-works.md)]

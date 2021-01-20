@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-personalizer.2-what-is-personalizer
+metadata:
+  title: What is Personalizer?
+  description: Content
+  ms.date: 01/08/2021
+  author: gerryo
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-personalizer.md)]
