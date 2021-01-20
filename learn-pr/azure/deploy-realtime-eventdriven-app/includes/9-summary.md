@@ -8,9 +8,9 @@ Your application is sending event based telemetric data in real time to Cosmos D
 
 3. Consume the events with a function, process them and store them in a database.
 
-4. Add monitoring.
+4. Verify monitoring and the timings set to ensure your workload gets handled in real time.
 
-5. Verify the timings set to ensure your workload gets handled in real time.
+5. Set alerts to manage scaling and alert messages automatically.
 
 You're now confident that you can handle real-time workloads on Azure.
 
