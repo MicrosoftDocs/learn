@@ -181,7 +181,7 @@ func (t coloredTriangle) perimeter() int {
 }
 ```
 
-Notice that the receiver is `coloredTriangle`, calling the `perimeter()` method from the triangle field. The good news is that you don't need to create the above method (but you could). Go does that for your under the hood. We included the above just for learning purposes.
+Notice that the receiver is `coloredTriangle`, calling the `perimeter()` method from the triangle field. The good news is that you don't need to create the above method (but you could). Go does that for you under the hood. We included the above just for learning purposes.
 
 ## Overload methods
 

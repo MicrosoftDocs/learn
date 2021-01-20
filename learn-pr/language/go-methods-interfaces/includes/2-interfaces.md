@@ -126,7 +126,7 @@ type Stringer interface {
 }
 ```
 
-The `fmt.Printf` function use this interface to print out values, so that means you can write your custom `String()` method to print a custom string, something like this:
+The `fmt.Printf` function uses this interface to print out values, so that means you can write your custom `String()` method to print a custom string, something like this:
 
 ```go
 package main
