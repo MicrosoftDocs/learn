@@ -9,7 +9,7 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 2
 quiz:
   questions:
   - content: "Which of the following Terraform commands will initialize your directory to be used for Terraform?"
