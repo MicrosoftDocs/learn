@@ -58,7 +58,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
-1. In the left nav bar, select **Developer tools**, and then search for **API Management**.
+1. In the search bar, type **API Management**.
 
 1. In the **Create API Management** page, enter the following details, and then select **Create**.
 

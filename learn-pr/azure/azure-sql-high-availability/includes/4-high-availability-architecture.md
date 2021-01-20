@@ -24,8 +24,7 @@ If any type of failure occurs and the service fabric determines a failover needs
 
 ## Hyperscale
 
-The Hyperscale service tier is available only in Azure SQL Database. This service tier has a unique architecture.
-
+The Hyperscale service tier is available only in Azure SQL Database. This service tier has a unique architecture because it uses a tiered layer of caches and page servers to expand the ability to quickly access database pages without having to access the data file directly.
 
 :::image type="content" source="../media/4-hyperscale-architecture-2.png" alt-text="Screenshot that shows the Hyperscale architecture.":::
 
@@ -35,4 +34,4 @@ It's interesting to note how the log service was pulled out in this architecture
 
 As in the other service tiers, an automatic failover will happen if service fabric determines it needs to. But the recovery time will depend on the existence of secondary replicas. For example, if you don't have replicas and a failover occurs, the scenario will be similar to that of the General Purpose service tier: the service fabric first needs to find spare capacity. If you have one or more replicas, recovery is faster and more closely aligns to that of the Business Critical service tier.
 
-Business Critical maintains the highest performance and availability for workloads with small log writes that need low latency. But the Hyperscale service tier allows you to get a higher log throughput in terms of MB/second. So you'll need to consider your workload when you choose between the two.
+Business Critical maintains the highest performance and availability for workloads with small log writes that need low latency. But the Hyperscale service tier allows you to get a higher log throughput in terms of MB/second, provides for the largest database sizes, and provides up to four secondary replicas for higher levels of read scale. So you'll need to consider your workload when you choose between the two.
