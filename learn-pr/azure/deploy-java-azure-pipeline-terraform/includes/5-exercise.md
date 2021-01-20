@@ -66,7 +66,7 @@ jobs:
 ## Next steps
 
 Congratulations! You now have two GitHub actions workflows - a provisioning action and a build/deploy action.
-Each time you `git push` your code, your build/deploy is triggered and your application is deployed.
+Each time you `git push` your code, your build/deploy action is triggered and your application is deployed.
 
 > [!IMPORTANT]
 
@@ -74,7 +74,7 @@ Each time you `git push` your code, your build/deploy is triggered and your appl
 
 > Re-running your build/deploy GitHub action will replace your application.
 
-> If you re-create your App Service Instance you will need to also change to the new publishing profile  - the following is the only line that needs to be changed:
+> If you re-create your App Service Instance you will need to also change to the new publishing profile  - the following is the only line that needs to be changed to your new Publish Profile:
 
 ```yml
 publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
