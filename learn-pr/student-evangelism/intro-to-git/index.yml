@@ -3,7 +3,7 @@ uid: learn.student-evangelism.introduction-to-git
 metadata:
   title: Introduction to Git
   description: Use Git to track changes and collaborate with other developers
-  ms.date: 06/24/2019
+  ms.date: 01/30/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -35,6 +35,7 @@ units:
 - learn.student-evangelism.introduction-to-git.5-exercise-make-and-track-changes
 - learn.student-evangelism.introduction-to-git.6-fix-simple-mistakes
 - learn.student-evangelism.introduction-to-git.7-exercise-fix-mistakes
+- learn.student-evangelism.introduction-to-git.7a-knowledge-check
 - learn.student-evangelism.introduction-to-git.8-summary
 badge:
   uid: learn.student-evangelism.introduction-to-git.badge
