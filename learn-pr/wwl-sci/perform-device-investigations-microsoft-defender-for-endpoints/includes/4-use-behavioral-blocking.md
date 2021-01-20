@@ -14,7 +14,7 @@ With these capabilities, more threats can be prevented or blocked, even if they 
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-![Behavior block alert](../media/blocked-behav-alert.png)
+![Behavior block alert](../media/blocked-behavior-alert.png)
 
 ## Client behavioral blocking
 
@@ -64,10 +64,6 @@ With rapid protection in place, an attack can be stopped on a device, other devi
 
 When endpoint detection and response (EDR) in block mode is turned on, Defender for Endpoint blocks malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post-breach.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about Microsoft Defender for Endpoint.|
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HjW2?rel=0]
 
 EDR in block mode is also integrated with threat & vulnerability management. Your organization's security team will get a security recommendation to turn EDR in block mode on if it isn't already enabled.
@@ -78,5 +74,4 @@ When EDR in block mode is turned on and a malicious artifact is detected, blocki
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-![EDR in Block Mode Alert](../media/edr-in-block-mode-detection.png)
-
+![EDR in Block Mode Alert](../media/endpoint-detection-and-response-block-mode-detection.png)

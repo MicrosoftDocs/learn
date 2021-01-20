@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/14/2021
+  ms.date: 01/20/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "Flag"
       isCorrect: true
       explanation: "Correct. You can Flag events."
-  - content: "Which Behavioral blocking can be used with 3rd party antivirus?"
+  - content: "Which Behavioral blocking can be used with third-party antivirus?"
     choices:
     - content: "Client behavior blocking."
       isCorrect: false

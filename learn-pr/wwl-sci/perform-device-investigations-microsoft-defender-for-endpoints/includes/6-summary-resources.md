@@ -1,10 +1,10 @@
-Now that you have reviewed this module, you should be able to:
+You should have learned how Microsoft Defender for Endpoint provides detailed device information, including forensics information.
 
-- Use the Device page
+You should now be able to:
 
-- Understand Device forensics information
-
-- Understand behavioral blocking
+- Use the device page in Microsoft Defender for Endpoint
+- Describe device forensics information collected by Microsoft Defender for Endpoint
+- Describe behavioral blocking by Microsoft Defender for Endpoint
 
 ## Learn more
 

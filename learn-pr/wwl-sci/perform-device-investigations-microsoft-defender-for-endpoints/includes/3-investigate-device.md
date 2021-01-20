@@ -26,7 +26,7 @@ When you investigate a specific device, you'll see:
 
 - Cards (active alerts, logged on users, security assessment)
 
-![Device page](../media/devicepage.png)
+![Device page](../media/device-page.png)
 
 ## Device details
 
