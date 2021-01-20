@@ -18,8 +18,8 @@ After completing this module, you'll be able to:
 
 ### Prerequisites
 
-- The latest version of the [Azure Quantum Optimization SDK](TODO)
+- The latest version of the Azure Quantum Optimization SDK
 - [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html?azure-portal=true)
 - An Azure Quantum workspace
 
-If you don't have these tools yet, we recommend that you follow the [How to create an Azure Quantum workspace](TODO) module first.
+If you don't have these tools yet, we recommend that you follow the How to create an Azure Quantum workspace module first.

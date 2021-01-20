@@ -49,7 +49,7 @@ The idea is to make these invalid solutions so expensive that the solver can eas
 The Azure Quantum Optimization service is exposed via a Python SDK, which you will be making use of during the rest of this module. This means that before you get started with formulating the problem, you first need to import some Python modules and set up an Azure Quantum `Workspace`.
 
 > [!NOTE]
-> If you haven't created an Azure Quantum Workspace yet, you can learn more about how to do this in [Module X](TODO).
+> If you haven't created an Azure Quantum Workspace yet, you can learn more about how to do this in one of the previous modules from this series on Microsoft Quantum.
 
 You will need to enter your Azure Quantum workspace details in the cell below before you run it:
 

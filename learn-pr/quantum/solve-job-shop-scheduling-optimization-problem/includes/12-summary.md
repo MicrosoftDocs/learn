@@ -27,7 +27,7 @@ Now that you understand the problem scenario and how to define the cost function
 - Tune the parameters
 - Try using a different solver (such as `ParallelTempering`)
 
-You can find this tutorial in Jupyter notebook format [here](TODO) - this will allow you to modify and experiment with the code.
+You can find this tutorial in Jupyter notebook format in our samples repo - this will allow you to modify and experiment with the code.
 
 ### Learn more about Azure Quantum & the Quantum Development Kit
 

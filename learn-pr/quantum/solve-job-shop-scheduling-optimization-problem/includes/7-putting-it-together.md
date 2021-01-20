@@ -131,4 +131,4 @@ terms = c1 + c2 + c3 + c4
 ```
 
 > [!NOTE]
-> You can see the full Python script (including the code from all units in this module) [here](TODO), and an interactive Jupyter notebook of this sample can be found [here](TODO).
+> You can find the full Python script (including the code from all units in this module) and an interactive Jupyter notebook of this sample in our samples repo.
