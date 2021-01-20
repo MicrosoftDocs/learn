@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coupon-cm
+  labels:
+    app: eshop
+    service: coupon
+data:
+  # omitted for brevity
+  ConnectionString: mongodb://nosqldata
+  # omitted for brevity

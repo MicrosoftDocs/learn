@@ -11,7 +11,7 @@ In this exercise you will:
 Run this script:
 
 ```bash
-./create-azure-cosmos-db.sh
+./deploy/k8s/create-azure-cosmos-db.sh
 ```
 
 The script takes care of:
@@ -20,9 +20,43 @@ The script takes care of:
 - Creating a MongoDB database.
 - Getting the connection string.
 
-You should get something like this:
+A variation of the following output appears:
 
-:::image type="content" source="../media/create-azure-cosmos-db.png" alt-text="Image description follows in text." lightbox="../media/create-azure-cosmos-db.png" border="true":::
+```console
+Creating an Azure Cosmos DB instance
+====================================
+
+Creating Azure Cosmos DB account eshop-learn-20210120180516594 in RG eshop-learn-rg
+--------------------------------
+{
+  "DocumentEndpoint": "https://eshop-learn-20210120180516594.documents.azure.com:443/",
+  "Kind": "MongoDB",
+  "Location": "West US",
+  "Name": "eshop-learn-20210120180516594"
+}
+
+Creating MongoDB database  in RG eshop-learn-rg
+-------------------------
+{- Finished ..
+  "Name": "CouponDb",
+  "ResourceGroup": "eshop-learn-rg"
+}
+
+Retrieving Azure Cosmos DB connection string
+--------------------------------------------
+
+ConnectionString: mongodb://eshop-learn-20210120180516594:B2ZpcheCnOeM5KWXkBGztLHF5Vrg2LggF42e4bl4RfLVdoO5DyYGIqxLCfcV70AQrhpB9D9BRWlLQ2spp1g5ng==@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+
+
+Environment variables
+---------------------
+export ESHOP_COSMOSACCTNAME=eshop-learn-20210120180516594
+export ESHOP_COSMOSDBCONNSTRING=mongodb://eshop-learn-20210120180516594:B2ZpcheCnOeM5KWXkBGztLHF5Vrg2LggF42e4bl4RfLVdoO5DyYGIqxLCfcV70AQrhpB9D9BRWlLQ2spp1g5ng==@eshop-learn-20210120180516594.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+export ESHOP_IDTAG=20210120180516594
+
+Run the following command to update the environment
+eval $(cat ~/clouddrive/aspnet-learn/create-azure-cosmosdb-exports.txt)
+```
 
 The script displays some of the account and the database properties, along with the connection string.
 
@@ -38,31 +72,19 @@ You'll no longer need the MongoDB microservice in the cluster, so you can just d
 helm delete eshoplearn-nosqldata
 ```
 
-You should get something like this:
+The following output appears:
 
-:::image type="content" source="../media/delete-mongodb.png" alt-text="Displays: release eshoplearn-nosqldata uninstalled." lightbox="../media/delete-mongodb.png" border="true":::
+```console
+release "eshoplearn-nosqldata" uninstalled
+```
 
 ## Reconfigure the Coupon microservice to use Azure Cosmos DB
 
-In this case only the Coupon microservice uses MongoDB, so you just have to update one `configmap`.
+In this case, only the Coupon microservice uses MongoDB, so you just have to update one `configmap`.
 
-Update the `ConnectionString` parameter from `coupon` to the connection string displayed from the creation script, as shown in the next `.yaml` fragment:
+In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, Update the `ConnectionString` parameter from `mongodb://nosqldata` to the connection string displayed from the creation script, as shown in the next YAML fragment:
 
-- `deploy/k8s/helm-simple/coupon/templates/configmap.yaml`<br><br>
-
-    ```yml
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: coupon-cm
-      labels:
-        app: eshop
-        service: coupon
-    data:
-      #...
-      ConnectionString: mongodb://eshop-learn-###...#:PASSWORD...@eshop-learn-###...#.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
-      #...
-    ```
+:::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/templates/configmap.yaml" highlight="10":::
 
 ## Redeploy the Coupon microservice
 
@@ -72,15 +94,15 @@ You need to get the Load Balancer IP address from the initial deployment and you
 eval $(cat ~/clouddrive/source/deploy-application-exports.txt)
 ```
 
-Then just run the following script from the `deploy/k8s` folder:
+Then run the following script:
 
 ```bash
-./deploy-application.sh --charts coupon
+./deploy/k8s/deploy-application.sh --charts coupon
 ```
 
-After a few minutes, when you should see all services running in the `webstatus` microservice, you should be able to run the application just as you did before deleting the `nosqldata` microservice.
+After a few minutes, when you should see all services running in the `webstatus` microservice, you can run the application just as you did before deleting the `nosqldata` microservice.
 
-You should also be able to apply discounts in the checkout page, as shown in the next image:
+You can also apply discounts in the checkout page, as shown in the next image:
 
 :::image type="content" source="../media/coupon.png" alt-text="Shopping basket with discount coupon DISC-15 entered" lightbox="../media/coupon.png" border="true":::
 
@@ -90,4 +112,4 @@ Since you're now using Cosmos DB, you can use the data explorer in the Azure por
 
 :::image type="content" source="../media/cosmos-db-data-explorer.png" alt-text="Image description follows in text." lightbox="../media/cosmos-db-data-explorer.png" border="true":::
 
-In the image above you can see the document for coupon `DISC-15`, showing it's been used.
+In the preceding image, you can see the document for coupon `DISC-15`, showing it's been used.
