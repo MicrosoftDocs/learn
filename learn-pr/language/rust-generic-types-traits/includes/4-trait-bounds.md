@@ -1,5 +1,3 @@
-# Using trait bounds and generic functions
-
 Traits let us define functions that accept many different types, because when a type implements a trait it can be treated abstractly as that trait.
 
 We can declare function arguments to be an anonymous type parameter where the callee must provide a type that has the bounds declared by the anonymous type parameter.
@@ -121,6 +119,6 @@ The compiler raises the following error:
 
 This happened because we tried to use a type which doesn't implement the `AsJson` trait in a place which expected that trait: the `send_data_as_json` function.
 
-To view the code used in this unit, visit this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eb322a632e8eca7f39056fcc6c966163).
+To view the code used in this unit, visit this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eb322a632e8eca7f39056fcc6c966163&azure-portal=true).
 
 As an optional challenge, you can try to implement the `AsJson` trait for the `Cat` type.

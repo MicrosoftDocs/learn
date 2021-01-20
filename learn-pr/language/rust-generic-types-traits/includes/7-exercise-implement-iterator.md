@@ -1,5 +1,3 @@
-# Exercise - Implement an Iterator
-
 In this exercise you'll be requested to implement a iterator that returns equal items in a sequence grouped in vectors, such as:
 
 - **input:** `[ 1, 1, 2, 1, 3, 3 ]`
@@ -62,6 +60,6 @@ fn main() {
 }
 ```
 
-You can also view this exercise at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=74f513d95c9eab321ec4b71bee7058ca).
+You can also view this exercise at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=74f513d95c9eab321ec4b71bee7058ca&azure-portal=true).
 
-To find a solution for this exercise, check out this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ea40ee2c11b8fd3937e4a5a7362abea6).
+To find a solution for this exercise, check out this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ea40ee2c11b8fd3937e4a5a7362abea6&azure-portal=true).

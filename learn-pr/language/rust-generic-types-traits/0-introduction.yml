@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.language.rust-generic-types-traits.0-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 
+  ms.date: 01/20/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you learned:
 
 - How Rust deals with polymorphism using Traits and Generic types.

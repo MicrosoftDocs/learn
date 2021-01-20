@@ -13,7 +13,6 @@ durationInMinutes: 2
 content: |
   Answer the following questions to demonstrate what you've learned:
 quiz:
-  title: Check your knowledge
   questions:
   - content: "When are Rust traits useful?"
     choices:

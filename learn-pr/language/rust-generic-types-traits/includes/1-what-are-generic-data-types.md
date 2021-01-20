@@ -1,5 +1,3 @@
-# What are generic data types?
-
 A generic data type is a type that is defined in terms of other, partially unknown types. We've been using many generic data types since the beginning of this course, for example:
 
 - The `Option<T>` enum is generic over the type `T`, which is the value contained by its `Some` variant.

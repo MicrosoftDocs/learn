@@ -1,5 +1,3 @@
-# Using iterators
-
 We have already covered how we can iterate over collection types using the loop, but this time we will do a more in-depth review on how Rust handles the concept of iteration itself.
 
 In Rust, all iterators implement a trait named `Iterator` that is defined in the standard library and is used to implement iterators over collections such as ranges, arrays, vectors and hashmaps.
@@ -127,4 +125,4 @@ let powers_of_2: Vec<usize> = Counter::new(8).map(|n| 2usize.pow(n as u32)).coll
 assert_eq!(powers_of_2, vec![2, 4, 8, 16, 32, 64, 128, 256]);
 ```
 
-You can check the complete code example of this unit at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=36fb2b6f5acdb60f78c7fe3efda5f278).
+You can check the complete code example of this unit at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=36fb2b6f5acdb60f78c7fe3efda5f278&azure-portal=true).

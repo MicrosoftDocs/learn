@@ -1,5 +1,3 @@
-# How to use the derive trait
-
 You might have noticed that our custom types are a little difficult to use in practice. This simple `Point` struct cannot be compared to other `Point` instances or displayed in the terminal. Because of this, we might want to use the **derive** attribute to allow new items to automatically be generated for the struct.
 
 ## Downside of generic types
@@ -113,4 +111,4 @@ and our code wil then compile just fine:
     not equal!
 ```
 
-Check out the code of this example at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=83e972b28e9d02bd93540f9e292ad20b).
+Check out the code of this example at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=83e972b28e9d02bd93540f9e292ad20b&azure-portal=true).

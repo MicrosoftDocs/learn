@@ -1,5 +1,3 @@
-# Define shared behavior with traits
-
 A trait is a common interface that a group of types can implement. The Rust standard library has a lot of useful traits, such as:
 
 - `io::Read` for values that can read bytes from a source.
@@ -67,4 +65,4 @@ println!("Circle area: {}", circle.area());
 println!("Rectangle area: {}", rectangle.area());
 ```
 
-You can interact with this code at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=62d721bd992978bf8c822154b65c013f).
+You can interact with this code at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=62d721bd992978bf8c822154b65c013f&azure-portal=true).
