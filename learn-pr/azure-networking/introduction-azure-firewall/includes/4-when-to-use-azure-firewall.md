@@ -43,7 +43,7 @@ One solution is to peer the spoke networks with each other. That works for a few
 
 An easier and more secure solution is to use Azure Firewall to set up direct connectivity between spokes. You achieve this connectivity by first deploying an Azure Firewall instance in the hub. You then configure the spoke virtual networks with user-defined routes (UDRs) that specifically route data through the firewall and on to the other spoke.
 
-:::image type="content" source="../media/4-using-firewall.png" alt-text="Network diagram showing a spoke-to-spoke connection between a virtual machine and a SQL database via Azure Firewall.":::
+:::image type="content" source="../media/4-using-firewall.png" alt-text="Network diagram of a spoke-to-spoke connection between a virtual machine and a SQL database via Azure Firewall.":::
 
 ## You want to monitor incoming and outgoing traffic
 
