@@ -6,7 +6,7 @@ metadata:
   description: What we learned about scaling Java applications with Azure Cache for Redis.
   author: judubois
   ms.author: judubois
-  ms.date: 12/04/2020
+  ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

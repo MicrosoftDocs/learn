@@ -6,7 +6,7 @@ metadata:
   description: In this unit, we set up the Azure CLI and use it to create an Azure Cache for Redis instance.
   author: judubois
   ms.author: judubois
-  ms.date: 12/16/2020
+  ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

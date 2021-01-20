@@ -6,7 +6,7 @@ metadata:
   description: In this exercise, we create a Spring Boot application, and configure Spring Data Redis to store business data inside Redis.
   author: judubois
   ms.author: judubois
-  ms.date: 12/04/2020
+  ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

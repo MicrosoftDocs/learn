@@ -6,7 +6,7 @@ metadata:
   description: In this exercise, we add Spring Session to our Spring Boot application and configure it to store HTTP session data into Azure Cache for Redis.
   author: judubois
   ms.author: judubois
-  ms.date: 12/04/2020
+  ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

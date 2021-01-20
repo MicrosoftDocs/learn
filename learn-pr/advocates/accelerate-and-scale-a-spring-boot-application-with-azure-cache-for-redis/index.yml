@@ -5,10 +5,10 @@ metadata:
   description: In this module, you'll learn what Azure Cache for Redis is, and how to use it with a Java and Spring Boot application. You'll use it to cache some business data using Spring Data Redis, and also to store HTTP session data using Spring Session.
   author: judubois
   ms.author: judubois
-  ms.date: 12/04/2020
+  ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: How to use Azure Cache for Redis with a Java and Spring Boot application
+title: Accelerate and scale a Spring Boot application with Azure Cache for Redis
 summary: Explore Azure Cache for Redis, and learn how to use it with a Java and Spring Boot application.
 abstract: | 
  By the end of this tutorial, you'll be able to:
