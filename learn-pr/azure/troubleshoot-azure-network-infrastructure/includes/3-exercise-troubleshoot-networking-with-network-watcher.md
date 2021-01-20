@@ -41,9 +41,8 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --vnet-name MyVNet1
     ```
 
-  > [!NOTE]
-  > If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks.
-
+    > [!NOTE]
+    > If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks.
 
 1. To deploy a VM in **FrontendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
 
