@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Split Code into Modules
+  description: Organize your code better by splitting code into modules.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Split Code into Modules
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-split-code-into-modules.md)]
