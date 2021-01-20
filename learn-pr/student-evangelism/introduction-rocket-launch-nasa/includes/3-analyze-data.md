@@ -17,7 +17,7 @@ Some key factors that NASA takes into account regarding launches are:
 - Precipitation intensity
 - Rocket velocity
 
-The 45th Space Wing is a division of the United States Air Force that focuses on space exploration and weather relating to successful rocket launches. This division has created an [easy-to-follow graphic](https://www.patrick.af.mil/Portals/14/Weather/45WS%20Launch%20Forecast%20FAQ%20final.pdf?ver=2020-05-26-164030-040?azure-portal=true) that shows some of the critical criteria to consider for a safe launch.
+The 45th Space Wing is a division of the United States Air Force that focuses on space exploration and weather relating to successful rocket launches. This division has created an [easy-to-follow graphic](https://aka.ms/LearnWithDrG/LaunchForecastFAQ/?azure-portal=true) that shows some of the critical criteria to consider for a safe launch.
 
 ## The importance of clouds
 
