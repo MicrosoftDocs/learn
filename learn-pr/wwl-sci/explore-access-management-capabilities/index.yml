@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.explore-access-management-capabilities-of-azure-ad
+metadata:
+  title: Explore the access management capabilities of Azure AD
+  description: "Explore the access management capabilities of Azure AD"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Explore the access management capabilities of Azure AD
+summary: A key function of Azure AD is to manage access.  Learn about the access management capabilities, its use cases, and benefits.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe conditional access and its benefits
+  - Describe Azure role-based access control (RBAC)
+  - Describe the difference between Azure roles and Azure AD roles with RBAC
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/explore-the-access-management-capabilities-of-azure-ad.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+- azure-active-directory
+units:
+- learn.wwl.explore-access-management-capabilities-of-azure-ad.introduction
+- learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-conditional-access-its-benefits
+- learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-azure-role-based-access-control-rbac
+- learn.wwl.explore-access-management-capabilities-of-azure-ad.knowledge-check
+- learn.wwl.explore-access-management-capabilities-of-azure-ad.summary-resources
+badge:
+  uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.badge
