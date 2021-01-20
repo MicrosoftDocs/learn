@@ -25,3 +25,4 @@ Confidentiality, Integrity, Availability, or CIA, is a way to think about securi
 **Availability** refers to making data available to those who need it. In the case of customer data, it's important to the organization to keep customer data secure, but at the same time it must also be available to employees who deal with customers. Whilst it might be more secure to store the data in an encrypted format, employees need access to decrypted data.
 
 Whilst all sides of the CIA model are important, they also represent trade-offs that need to be made.
+
