@@ -15,7 +15,7 @@ $$
 $$
 
 That is, the sum of the digits weighted by their position from the right must be divisible by 11.
-The last term of the sum is simply $1\cdot x_9$, and thus we see why this is referred to as the check digit---if any of the digits are incorrect, then the equation will not be satisfied.
+The last term of the sum is simply $1\cdot x_9$, and thus we see why this is referred to as the check digit—if any of the digits are incorrect, then the equation will not be satisfied.
 Beyond merely detecting errors, if any one digit is entirely missing, this property can also be leveraged to determine it. 
 
 Now, the digits you see on your sticky note are ISBN 0-306-$x$0615-2, where $x$ is just a coffee smudge where the fifth digit used to be. Since it *was* a valid ISBN, we have the equation

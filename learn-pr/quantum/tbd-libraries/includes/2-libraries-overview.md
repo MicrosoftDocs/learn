@@ -44,7 +44,7 @@ Then, there are three libraries focused on more domain-specific functionality:
 
 ## How can I add a Q# library to my project?
 
-The standard library is included in every Q# project by default, but accessing other libraries---including the domain-specific libraries discussed above---requires adding their respective packages to the project.
+The standard library is included in every Q# project by default, but accessing other libraries—including the domain-specific libraries discussed above—requires adding their respective packages to the project.
 
 Depending on your Q# development setup, the method of doing so will vary. 
 Specifics for can be found at [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries) in the official documentation.
