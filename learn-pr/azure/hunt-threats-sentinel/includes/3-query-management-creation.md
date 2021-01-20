@@ -29,7 +29,7 @@ Azure Sentinel uses the MITRE ATT&CK framework to categorize and order queries b
 Selecting any tactic will filter the available queries by the selected tactic. Tactics include:
 
 - **Initial access**. Tactics that the adversary uses to gain entry to a network, by exploiting vulnerabilities or configuration weaknesses in public-facing systems. An example is targeted spear-phishing.
-- **Execution**. Tactics that result in an adversary running their code on a target system. For example, a malicious hacker might run a PowerShell script to download additional attacker tools and/or scan other systems.
+- **Execution**. Tactics that result in an adversary running their code on a target system. For example, a malicious hacker might run a PowerShell script to download more attacker tools and/or scan other systems.
 - **Persistence**. Tactics that allow an adversary to maintain access to a target system, even after restarts and credential changes. An example of a persistence technique is an attacker who creates a scheduled task that runs their code at a specific time or on restart.
 - **Privilege escalation**. Tactics that an adversary uses to gain higher-level privileges on a system, such as local administrator or root.
 - **Defense evasion**. Tactics that attackers use to avoid detection. Evasion tactics include hiding malicious code within trusted processes and folders, encrypting or obfuscating adversary code, or disabling security software.
@@ -66,4 +66,4 @@ The Azure Sentinel repository contains out-of-the-box detections, exploration qu
 
 The repo contains folders with contributed content for several areas of Azure Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Azure Sentinel workspace.
 
-Choose the best response for each of the following questions. Then select **Check your answers**.
+Choose the best response for the following question. Then select **Check your answers**.

@@ -1,4 +1,4 @@
-You can use the hunting livestream to test queries against live events, as they occur. Livestream provides interactive sessions that can notify you when Azure Sentinel finds matching events for your query.
+You can use the hunting livestream to test queries against live events as they occur. Livestream provides interactive sessions that can notify you when Azure Sentinel finds matching events for your query.
 
 A livestream is always based on a query. Typically, you use the query to narrow down streaming log events, so only the events that are related to your threat-hunting efforts appear. You can use a livestream to:
 
@@ -23,7 +23,7 @@ On the new **Livestream** page, specify a name for the livestream session and th
 
 ## Manage a livestream
 
-You can play the livestream to review results or save the livestream for later reference. Saved livestreams can be viewed from the **Livestream** tab on the hunting pane. You can also elevate events from a livestream session to an alert by selecting the events and then selecting **Elevate to alert** from the command bar.
+You can play the livestream to review results or save the livestream for later reference. Saved livestreams can be viewed from the **Livestream** tab on the hunting page. You can also elevate events from a livestream session to an alert by selecting the events and then selecting **Elevate to alert** from the command bar.
 
 You might use a livestream to track baseline activities for Azure resource deletion at Contoso and identify other Azure resources that should be tracked. For example, the following query will return any Azure Activity events that recorded a deleted resource:
 
@@ -39,4 +39,4 @@ You might use a livestream to track baseline activities for Azure resource delet
 
 If the query returns significant results, you can select **Create analytics rule** from the command bar to create an analytics rule based on the query. After the rule refines the query to identify the specific resources, it can generate alerts or incidents when the resources are deleted.
 
-Choose the best response for each of the following questions. Then select **Check your answers**.
+Choose the best response for the following question. Then select **Check your answers**.
