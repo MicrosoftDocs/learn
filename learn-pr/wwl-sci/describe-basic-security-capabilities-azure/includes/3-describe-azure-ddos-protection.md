@@ -1,6 +1,6 @@
 Any company, large or small, can become the target of a large-scale network attack. The nature of these attacks against your network might be simply to make a statement, or simply because the attacker wanted a challenge.
 
-## Distributed Denial of Service attacks
+## Distributed Denial of Service Attacks
 
 The aim of a Distributed Denial of Service (DDoS) attack is to overwhelm the resources on your applications and servers, making them unresponsive or slow for genuine users. A DDoS attack will usually target any public-facing endpoint that can be accessed through the Internet.
 
@@ -25,7 +25,7 @@ Azure DDoS Protection comes in two tiers:
 - **Basic**: The Basic service tier is automatically enabled, for every property in Azure, at no extra cost. as part of the Azure platform. Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft’s online services use. Azure’s global network is used to distribute and mitigate attack traffic across regions.
 - **Standard**: The Standard service tier provides extra mitigation capabilities that are tuned specifically to Microsoft Azure Virtual Network resources. DDoS Protection Standard is simple to enable and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses, which are associated with resources deployed in virtual networks, such as Azure Load Balancer and Application Gateway.
 
-## Azure DDoS Pricing
+## Azure DDoS pricing
 
 The DDoS Standard Protection service will have a fixed monthly charge. The fixed monthly charge includes protection for 100 resources. Protection for additional resources will be charged on a monthly per-resource basis.
 
