@@ -4,7 +4,7 @@ Enable the **File Content Analysis** capability so that certain files and email 
 
 Enable the Memory Content Analysis capability if you would like Microsoft Defender for Endpoint to automatically investigate memory content of processes. When enabled, memory content might be uploaded to Microsoft Defender for Endpoint during an Automated investigation.
 
-![Automation File upload settings](../media/automationuploads.png)
+![Automation File upload settings](../media/automation-uploads.png)
 
 ### Add file extension names and attachment extension names
 
