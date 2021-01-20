@@ -21,7 +21,7 @@ When you execute code, Spark SQL uses Catalyst's general tree transformation fra
 
 In the physical planning phase, Catalyst may generate multiple plans, and compare them based on cost. All other phases are purely rule-based.
 
-    ![Catalyst diagram](../media/catalyst-diagram.png)
+![Catalyst diagram](../media/catalyst-diagram.png)
 
 Catalyst is based on functional programming constructs in Scala, and designed with these key two purposes:
 
