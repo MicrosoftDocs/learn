@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-privileged-identity-management
+title: Describe the capabilities of Privileged identity Management
+metadata:
+  title: Describe the capabilities of Privileged identity Management
+  description: "Describe the capabilities of Privileged identity Management"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-describe-privileged-identity-management.md)]
