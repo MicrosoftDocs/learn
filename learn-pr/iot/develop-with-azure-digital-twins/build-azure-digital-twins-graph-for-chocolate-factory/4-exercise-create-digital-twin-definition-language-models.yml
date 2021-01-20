@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-create-digital-twin-definition-language-models
+metadata:
+  description: In this exercise, you create the chocolate factory production line models.
+  ms.date: 10/1/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create your Digital Twin Definition Language models
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-create-digital-twin-definition-language-models.md)]

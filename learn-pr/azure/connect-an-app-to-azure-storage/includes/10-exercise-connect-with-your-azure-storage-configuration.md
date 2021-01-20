@@ -1,15 +1,15 @@
 Let's add code to upload an image to our Azure Storage account.
 
-For this example, we are going to upload the following image to our Azure Storage container.  
+In this example, we're going to upload the following image to our Azure Storage container.  
 
 ![An image of the Microsoft Docs and Azure mascots taking a selfie](../media/docs-and-friends-selfie-stick.png)
 
-If you are working on your local machine, right-click on this image, and save it to the same folder as where you have your application.
+If you're working on your local machine, right-click on this image, and save it to the same folder as where you have your application.
 
-If you are working in the Microsoft Learn Sandbox environment, run the following command in the same folder as you have your application to download the image into your sandbox.
+If you're working in the Microsoft Learn Sandbox environment, run the following command in the same folder as you have your application to download the image into your sandbox.
 
 ```bash
-wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true > docs-and-friends-selfie-stick.png
+wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
 ```
 
 In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_
@@ -41,7 +41,7 @@ Add the following code to your program after the code you previously added.
 var blobs = container.GetBlobs();
 foreach (var blob in blobs)
 {
-    Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:YYYY-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
+    Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
 }
 ```
 
@@ -87,7 +87,7 @@ namespace PhotoSharingApp
             var blobs = container.GetBlobs();
             foreach (var blob in blobs)
             {
-                Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:YYYY-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
+                Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
             }
         }
     }
@@ -101,18 +101,22 @@ Build and run the application to verify everything works, and upload your image 
 > [!NOTE]
 > Make sure you're in the PhotoSharingApp directory.
 
-
 ``` csharp
     dotnet run
 ```  
+
 ::: zone-end
 
 ::: zone pivot="javascript"
+
 ```javascript
     dotnetcli
 ```
+
 ::: zone-end
+
 ::: zone pivot="csharp"
+
 ## Congratulations
 
 You have learned the essentials of working with **Azure Storage Blobs** SDK package and Azure Blob Storage. If you want, explore further by creating another container, uploading additional images to your storage account or deleting an image. You can learn more at the [Azure Storage Blobs client library for .NET GitHub page](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.Blobs_12.7.0/sdk/storage/Azure.Storage.Blobs).

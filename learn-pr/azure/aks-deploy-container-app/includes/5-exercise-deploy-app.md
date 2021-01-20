@@ -3,72 +3,6 @@ In this exercise, you'll deploy your company's website as a test app onto Azure 
 > [!NOTE]
 > The code for the web app is available in this [GitHub repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app) if you want to explore the source code further.
 
-## Create a container registry
-
-You need to create and push your container image to a container registry to deploy your app to your AKS cluster. Azure provides Azure Container Registry to store container images.
-
-1. Sign in to Azure Cloud Shell if you haven't done so already.
-
-    > [!div class="nextstepaction"]
-    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
-
-1. Create variables for the configuration values you'll reuse in this exercise.
-
-    ```bash
-    ACR_NAME=acrContosoVideo$RANDOM
-    ```
-
-1. Make a note of the generated container registry name by running the following command and writing down the value. You'll use this value in your manifest files.
-
-    ```bash
-    echo $ACR_NAME
-    ```
-
-1. Run the `az acr create` command to create a new container registry.
-
-    ```azurecli
-    az acr create \
-        --resource-group $RESOURCE_GROUP \
-        --name $ACR_NAME\
-        --sku Basic
-    ```
-
-    The container registry you're working with is a private container registry. You need to tell your AKS cluster to authenticate with that registry to download the stored images.
-
-1. Run the `az aks update` command to attach to your new container registry.
-
-    ```azurecli
-    az aks update \
-        --name $CLUSTER_NAME \
-        --resource-group $RESOURCE_GROUP \
-        --attach-acr $ACR_NAME
-    ```
-
-## Sign in and push a container image to Container Registry
-
-The new container registry requires authentication before you can push your container image. If you need this information in the future, you can access the container registry credentials in the [Azure portal](https://portal.azure.com). One of the benefits of using ACR is that we don't need to sign in to our registry once we are logged into our Azure account with Azure CLI.
-
-> [!TIP]
-> If you need to log in without Azure CLI, go to your newly created container registry and select the **Access keys** tab. On this tab, you'll find the registry name, login server, username, and password information. Then you can run `az acr login -n <registry-name>` command to authenticate with your registry, or `docker login <registry-name>` using the provided username and password.
-
-1. Clone the web app from the GitHub repository, and change into the `mslearn-aks-deploy-container-app` directory.
-
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app.git
-    cd mslearn-aks-deploy-container-app
-    ```
-
-1. Run the `az acr build` command to build and push the container image.
-
-    ```azurecli
-    az acr build \
-        --image contoso-website \
-        --registry $ACR_NAME \
-        --file Dockerfile .
-    ```
-
-    The `--image` parameter adds the `contoso-website` tag to the image. The image is automatically pushed to the registry after the build completes successfully.
-
 ## Create a deployment manifest
 
 You create a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
@@ -145,7 +79,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
 1. It's a good practice to define a minimum and a maximum amount of the resources the app is allowed to use from the cluster. You use the `resources` key to specify this information.
 
-    Update the `deployment.yaml` file to match the following YAML. Update the `<acr_name>` value in this code snippet with your container registry's name.
+    Update the `deployment.yaml` file to match the following YAML.
 
     ```yaml
     # deployment.yaml
@@ -160,7 +94,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
         spec:
           containers:
-            - image: <acr_name>.azurecr.io/contoso-website
+            - image: mcr.microsoft.com/mslearn/samples/contoso-website
               name: contoso-website
               resources:
                 requests: # Minimum amount of resources requested
@@ -175,7 +109,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
 1. The last step is to define the ports this container will expose externally through the `ports` key. The `ports` key is an array of objects, which means that a container in a pod can expose multiple ports with multiple names.
 
-    Update the `deployment.yaml` file to match the following YAML. Update the `<acr_name>` value in this code snippet with your container registry's name.
+    Update the `deployment.yaml` file to match the following YAML.
 
     ```yaml
     # deployment.yaml
@@ -190,7 +124,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
         spec:
           containers:
-            - image: <acr_name>.azurecr.io/contoso-website
+            - image: mcr.microsoft.com/mslearn/samples/contoso-website
               name: contoso-website
               resources:
                 requests:
@@ -208,7 +142,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
 1. Finally, add a selector section to define the workloads the deployment will manage. The `selector` key is placed inside the deployment specification section of the manifest file. Use the `matchLabels` key to list the labels for all the pods managed by the deployment.
 
-    Update the `deployment.yaml` file to match the following YAML. Update the `<acr_name>` value in this code snippet with your container registry's name.
+    Update the `deployment.yaml` file to match the following YAML.
 
     ```yaml
     # deployment.yaml
@@ -226,7 +160,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
             app: contoso-website
         spec:
           containers:
-            - image: <acr_name>.azurecr.io/contoso-website
+            - image: mcr.microsoft.com/mslearn/samples/contoso-website
               name: contoso-website
               resources:
                 requests:

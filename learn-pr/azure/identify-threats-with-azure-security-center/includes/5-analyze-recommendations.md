@@ -20,7 +20,7 @@ Each recommendation can be selected to get more details. For issues which need m
 
 ![Screenshot showing the remediation steps for VM should be migrated to new ARM](../media/4-mediation-steps.png)
 
-VMs are particularly important to protect as they often have a broader surface attack than other compute resources. Azure Security Center helps you safeguard your virtual machines in Azure by providing visibility _into_ the security settings on each VM. As shown earlier, ASC can examine OS-level settings through the use of a _monitor_ service that it installs into each Windows and Linux VM. With this feature enabled, Security Center can provide several safeguards including:
+VMs are particularly important to protect as they often have a  broader attack surface than other compute resources. Azure Security Center helps you safeguard your virtual machines in Azure by providing visibility _into_ the security settings on each VM. As shown earlier, ASC can examine OS-level settings through the use of a _monitor_ service that it installs into each Windows and Linux VM. With this feature enabled, Security Center can provide several safeguards including:
 
 - OS security settings with the recommended configuration rules
 - System security updates and critical updates that are missing

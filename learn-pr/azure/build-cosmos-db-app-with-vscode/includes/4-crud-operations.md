@@ -82,13 +82,13 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. In the integrated terminal, type the following command to run the program to ensure it runs.
+1. In the integrated terminal, run the following command to run the program to ensure it runs.
 
     ```bash
     dotnet run
     ```
 
-1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
+1. Copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
 
     ```csharp
     private async Task CreateUserDocumentIfNotExists(string databaseName, string collectionName, User user)
@@ -113,7 +113,7 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. Then, return to the **BasicOperations** method and add the following to the end of that method.
+1. Return to the **BasicOperations** method, and add the following to the end of that method.
 
     ```csharp
     User yanhe = new User
@@ -192,7 +192,7 @@ Once you have those classes created to represent your users, you'll create new u
     await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);
     ```
 
-1. In the integrated terminal, again, type the following command to run the program.
+1. In the integrated terminal, again, run the following command to run the program.
 
     ```bash
     dotnet run
@@ -211,7 +211,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 ## Read documents
 
-1. To read documents from the database, copy in the following code and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
+1. To read documents from the database, copy in the following code, and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
 
     ```csharp
     private async Task ReadUserDocument(string databaseName, string collectionName, User user)
@@ -241,7 +241,7 @@ Once you have those classes created to represent your users, you'll create new u
     await this.ReadUserDocument("Users", "WebCustomers", yanhe);
     ```
 
-1. In the integrated terminal, type the following command to run the program.
+1. In the integrated terminal, run the following command to run the program.
 
     ```bash
     dotnet run

@@ -1,10 +1,10 @@
-On Azure, hosting and using PostgreSQL is simple. Develop your application with your choice of open-source tools and frameworks, and let Azure take care of managing virtual machines and infrastructure.
+In Azure, hosting and using PostgreSQL is simple. Develop your application with your choice of open-source tools and frameworks, and let Azure take care of managing virtual machines and infrastructure.
 
 Azure Database for PostgreSQL runs the open-source, community edition of PostgreSQL. This means you can leverage decades of development by the Postgres community, and rely on Azure to make hosting a secure database easy.
 
 ### PostgreSQL on Azure
 
-Azure Database for PostgreSQL is a fully managed Platform as a Service (PaaS). The main benefit of this configuration is that Azure manages maintenance and security obligations.
+Azure Database for PostgreSQL is a fully-managed Platform as a Service (PaaS). The main benefit of this configuration is that Azure manages maintenance and security obligations.
 
 Alternatively, PostgreSQL Server workloads can also run as Infrastructure as a Service (IaaS) on either Azure or on-premises servers. These options offer full control over the database engine, should you require it. However, this control comes at the cost of added responsibility for many database administration (DBA) tasks, including:
 
@@ -27,7 +27,7 @@ In this scenario, you work for Woodgrove Bank, and you’ve been asked to develo
 
 You realize the trial will bring many new users and high volumes of new data. The on-premises server could become overloaded, causing slow transaction times or timeout errors. You understand that the database solution must be scaled, both for capacity and performance. For maximum utility and data redundancy, it’s also better to host data in more than one location, which will require a move away from the current on-premises database server - without compromising security.
 
-With this scenario in mind, over the rest of the module, we’ll set up an Azure Database for PostgreSQL instance and connect it to an ASP.NET app for development. We’ll go through the concepts that underlie how we’re going about doing this, and why.
+With this scenario in mind, over the course of this module, we’ll set up an Azure Database for PostgreSQL instance, and connect it to an ASP.NET app for development. We’ll go through the concepts that underlie how we’re going about doing this, and why.
 
 ## Prerequisites
 
@@ -38,5 +38,5 @@ With this scenario in mind, over the rest of the module, we’ll set up an Azure
 In this module, you will:
 
 * Create an Azure Database for PostgreSQL instance using the Azure portal
-* Develop and query the database in the Azure Cloud Shell using pgsql
+* Develop and query the database in the Azure Cloud Shell using psql
 * Query the PostgreSQL database from an ASP.NET app

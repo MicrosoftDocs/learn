@@ -33,7 +33,7 @@ Currently the pre-built receipt model is designed to recognize common receipts, 
 Use the following guidelines to get the best results when using a custom model.
 
 - Images must be JPEG, PNG, BMP, PDF, or TIFF formats
-- File size must be less than 20 MB
+- File size must be less than 50 MB
 - Image size between 50 x 50 pixels and 10000 x 10000 pixels
 - For PDF documents, no larger than 17 inches x 17 inches
 
