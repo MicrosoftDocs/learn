@@ -1,10 +1,10 @@
-Now that you have reviewed this module, you should be able to:
+You learned how Microsoft Defender for Endpoint provides a purpose-driven user interface to manage and investigate security incidents and alerts.
 
-- Investigate incidents
+You should now be able to:
 
-- Investigate alerts
-
-- Advanced hunting
+- Investigate incidents in Microsoft Defender for Endpoint
+- Investigate alerts in Microsoft Defender for Endpoint
+- Perform advanced hunting in Microsoft Defender for Endpoint
 
 ## Learn more
 

@@ -1,12 +1,12 @@
 You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device.  Selecting an alert in either of those places brings up the Alert management pane.
 
-![Alert Queue](../media/alertqueue.png)
+![Alert Queue](../media/alert-queue.png)
 
 ## Alert Management
 
 You can view and set metadata about the Alert preview or Alert details page.
 
-![Alert Page](../media/alertmanage.png)
+![Alert Page](../media/alert-manage.png)
 
 The metadata fields include and actions include:
 

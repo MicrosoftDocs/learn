@@ -62,19 +62,19 @@ The Defender for Endpoint portal pages provides preview information for most lis
 
 In this screenshot, the three highlighted areas are the circle, the greater than symbol, and the actual link.
 
-![Preview options from a list](../media/listnav1.png)
+![Preview options from a list](../media/list-navigate-1.png)
 
 ### Circle
 
 Selecting the circle will open a blade on the right side of the page with a preview of the line item with an option to open the full page of information.
 
-![Preview blade](../media/listnav3.png)
+![Preview blade](../media/list-navigate-3.png)
 
 ### Greater than symbol
 
 If related records can be displayed, selecting the greater than sign will display them below the current record.
 
-![Related records](../media/listnav2.png)
+![Related records](../media/list-navigate-2.png)
 
 ### Link
 

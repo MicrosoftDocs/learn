@@ -112,11 +112,11 @@ Full automation has proven to be reliable, efficient, and safe, and is recommend
 
 To view automated investigations, select the Automated investigations in the portal navigation.  You can preview the investigation or go to the investigation page.
 
-![Investigation Page](../media/air.png)
+![Investigation Page](../media/automated-investigation-remediation.png)
 
 You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the device that was investigated, and other information.
 
-![Investigation Detail](../media/airdetail.png)
+![Investigation Detail](../media/automated-investigation-remediation-detail.png)
 
 ### Investigation graph
 
