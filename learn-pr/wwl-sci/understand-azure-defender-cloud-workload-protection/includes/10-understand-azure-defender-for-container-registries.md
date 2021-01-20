@@ -30,5 +30,5 @@ The scan typically completes within 2 minutes, but it might take up to 15 minute
 
 Below is a high-level diagram of the components and benefits of protecting your registries with Security Center.
 
-![Azure Container Registry](../media/aks-acr-integration-detailed.png)
+![Azure Container Registry](../media/azure-container-registry-integration-detailed.png)
 
