@@ -14,7 +14,7 @@ To start Azure Security Center:
 
 The Security Center's overview page opens.
 
-![Security Center Overview](../media/overview.png)
+![Security Center Overview.](../media/overview.png)
 
 Security Center – Overview provides a unified view into the security posture of your hybrid cloud workloads, enabling you to discover and assess the security of your workloads and identify and mitigate risk. Security Center automatically, at no cost, enables any of your Azure subscriptions not previously onboarded by you or another subscription user.
 
@@ -48,5 +48,5 @@ You can protect an entire Azure subscription with Azure Defender, and all resour
 
 Below is the pricing page for an example subscription. You'll notice that each plan in Azure Defender is priced separately and can be individually set to on or off.
 
-![Azure Defender Plans](../media/defenderplans.png)
+![Azure Defender Plans.](../media/defender-plans.png)
 

@@ -38,11 +38,11 @@ Azure Security Center enables you to strengthen your security posture. This mean
 
 It's a security basic to know and make sure your workloads are secure, and it starts with having tailored security policies in place. Because all the Security Center policies are built on top of Azure Policy controls, you're getting the full range and flexibility of a world-class policy solution. In Security Center, you can set your policies to run on management groups, across subscriptions, and even for a whole tenant.
 
-![Security Center Dashboard](../media/sc-dashboard.png)
+![Security Center Dashboard.](../media/security-center-dashboard.png)
 
 Security Center helps you identify Shadow IT subscriptions. By looking at subscriptions labeled not covered in your dashboard, you can immediately know when there are newly created subscriptions and make sure they are covered by your policies and protected by Azure Security Center.
 
-![Compliance tile](../media/sc-policy-dashboard.png)
+![Compliance tile.](../media/security-center-policy-dashboard.png)
 
 ## Continuous assessments
 
@@ -50,13 +50,13 @@ Security Center continuously discovers new resources being deployed across your 
 
 To help you understand how important each recommendation is to your overall security posture, Security Center groups the recommendations into security controls and adds a secure score value to each control. This is crucial in enabling you to prioritize your security work.
 
-![Secure Score](../media/sc-secure-score.png)
+![Secure Score.](../media/security-center-secure-score.png)
 
 ## Network map
 
 One of the most powerful tools Security Center provides for continuously monitoring your network's security status is the Network map. The map enables you to see the topology of your workloads, so you can see if each node is properly configured. You can see how your nodes are connected, which helps you block unwanted connections that could potentially make it easier for an attacker to creep along your network.
 
-![Network map](../media/sc-net-map.png)
+![Network map.](../media/security-center-net-map.png)
 
 ## Optimize and improve security by configuring recommended controls
 
@@ -66,7 +66,7 @@ In this way, Security Center enables you not just to set security policies but t
 
 The recommendations help you to reduce the attack surface across each of your resources. That includes Azure virtual machines, non-Azure servers, and Azure PaaS services such as SQL and Storage accounts and more - where each type of resource is assessed differently and has its own standards.
 
-![Security Recommendations](../media/sc-recommendation-example.png)
+![Security Recommendations.](../media/security-center-recommendation-example.png)
 
 ## Protect against threats
 
