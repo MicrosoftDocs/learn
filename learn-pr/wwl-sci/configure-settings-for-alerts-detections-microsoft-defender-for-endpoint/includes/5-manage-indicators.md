@@ -221,5 +221,5 @@ The following table shows the supported parameters.
 | recommendedActions| String| TI indicator alert recommended actions. Optional|
 | rbacGroupNames| String| Comma-separated list of RBAC group names the indicator would be applied to. Optional|
 | category| String| Category of the alert. Examples include: Execution and credential access. Optional|
-| mitre techniques| String| MITRE techniques code/id (comma separated). For more information, see Enterprise tactics. Optional It is recommended to add a value in category when a MITRE technique.|
+| MITRE techniques| String| MITRE techniques code/id (comma separated). For more information, see Enterprise tactics. Optional It is recommended to add a value in category when a MITRE technique.|
 
