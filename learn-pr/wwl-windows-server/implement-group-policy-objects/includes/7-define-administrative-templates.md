@@ -7,7 +7,7 @@ You can use administrative templates to control the environment of an operating 
 - Computer-related settings
 - User-related settings
 
-:::image type="content" source="../media/m8-group-policy8.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has expanded the Administrative Templates node for both the Computer Configuration and User Configuration nodes.":::
+:::image type="content" source="../media/m8-group-policy-8.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has expanded the Administrative Templates node for both the Computer Configuration and User Configuration nodes.":::
 
 When you configure settings in the Administrative Templates node of the GPO, you make modifications to the registry. Administrative templates have the following characteristics:
 

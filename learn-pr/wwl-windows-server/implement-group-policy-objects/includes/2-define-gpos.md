@@ -9,11 +9,11 @@ Consequently, IT staff at Contoso can define, enforce, and update their entire c
 
 Group Policy is a framework in Windows operating systems with components that reside in AD DS, on domain controllers, and on each Windows Server and client. By using these components, you can manage configuration in an AD DS domain. You define Group Policy settings within a GPO. A GPO is an object that contains one or more policy settings that apply to one or more configuration settings for a user or a computer.
 
-:::image type="content" source="../media/m8-group-policy1.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Contoso.com domain. Displayed are three GPOs. Also displayed are the OUs in the domain, some of which have linked GPOs.":::
+:::image type="content" source="../media/m8-group-policy-1.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Contoso.com domain. Displayed are three GPOs. Also displayed are the OUs in the domain, some of which have linked GPOs.":::
 
 Group Policy is a powerful administrative tool. You can use GPOs to push various settings to a large number of users and computers. Because you can apply them to different levels, from the local computer to domain, you also can focus these settings precisely. Primarily, you use Group Policy to configure settings that you do not want users to configure. Additionally, you can use Group Policy to standardize desktop environments on all computers in an organizational unit (OU) or in an entire organization. You also can use Group Policy to provide additional security, to configure some advanced system settings, and for other purposes discussed in a subsequent demonstration unit.
 
-:::image type="content" source="../media/m8-group-policy2.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has expanded the Computer Configuration and User Configuration nodes to display the Policies and Preferences folders.":::
+:::image type="content" source="../media/m8-group-policy-2.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has expanded the Computer Configuration and User Configuration nodes to display the Policies and Preferences folders.":::
 
 ## What are GPOs?
 
@@ -26,7 +26,7 @@ Some settings affect a user, known as user configuration settings or user polici
 
 Group Policy manages various policy settings, and the Group Policy framework is extensible. You can manage almost any configurable setting with Group Policy.
 
-:::image type="content" source="../media/m8-group-policy3.png" alt-text="A screenshot of the Configure Automatic Updates dialog box in the Group Policy Management Editor. The setting is enabled. Other values are displayed.":::
+:::image type="content" source="../media/m8-group-policy-3.png" alt-text="A screenshot of the Configure Automatic Updates dialog box in the Group Policy Management Editor. The setting is enabled. Other values are displayed.":::
 
 To define a policy setting:
 
