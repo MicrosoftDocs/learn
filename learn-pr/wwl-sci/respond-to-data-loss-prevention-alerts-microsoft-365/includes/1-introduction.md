@@ -1,14 +1,6 @@
-As a Security Operations Analyst, you need to understand Compliance-related terminology and alerts.  The Data loss prevention (DLP) alerts will help you in your investigation to find the full scope of the incident.
+Microsoft 365 provides data loss prevention (DLP) protection to identify, monitor, and automatically protect sensitive information.
 
-After completion of this module, you will be able to:
+You are a Security Operations Analyst working at a company that implemented Microsoft 365 compliance solutions.  Based on recent security incidents in your organization, you have been assigned the responsibility to advise the compliance team on the types of information they should protect.  
 
-- Describe DLP Components
-
-- Investigate DLP alerts in Microsoft 365
-
-- Investigate DLP Alerts in Microsoft Cloud App Security
-
-## Prerequisites
-
-Intermediate understanding of Microsoft 365.
+To work with the compliance team, you need to learn about the data loss prevention components, including sensitive info types, sensitivity labels, DLP policies, and policy alerts. 
 

@@ -1,6 +1,6 @@
 To view DLP Alerts from DLP Policies created in Microsoft 365 Compliance do the following:
 
-1. In the Microsoft 365 compliance center, go to **Data Loss Prevention**.
+1. In the Microsoft 365 compliance center ([https://compliance.microsoft.com](https://compliance.microsoft.com?azure-portal=true)), go to **Data Loss Prevention**.
 
 1. Select the **Alerts** tab to view the DLP alerts dashboard.
 
