@@ -3,7 +3,7 @@ uid: learn.wwl.use-watchlists-azure-sentinel
 metadata:
   title: Use watchlists in Azure Sentinel
   description: "Use watchlists in Azure Sentinel"
-  ms.date: 01/16/2021
+  ms.date: 01/20/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -12,8 +12,8 @@ title: Use watchlists in Azure Sentinel
 summary: Learn how to create Azure Sentinel watchlists that are a named list of imported data.  Once created, you can easily use the named watchlist in KQL queries.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Create a watchlist
-  - Access the watchlist in KQL
+  - Create a watchlist in Azure Sentinel
+  - Use KQL to access the watchlist in Azure Sentinel
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -27,7 +27,6 @@ units:
 - learn.wwl.use-watchlists-azure-sentinel.introduction
 - learn.wwl.use-watchlists-azure-sentinel.plan-for-azure-watchlists
 - learn.wwl.use-watchlists-azure-sentinel.create-watchlist
-- learn.wwl.use-watchlists-azure-sentinel.use-watchlist
 - learn.wwl.use-watchlists-azure-sentinel.knowledge-check
 - learn.wwl.use-watchlists-azure-sentinel.summary-resources
 badge:
