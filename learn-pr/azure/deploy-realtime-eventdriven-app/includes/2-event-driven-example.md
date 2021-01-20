@@ -54,6 +54,8 @@ _2. Event Alex buys a cappuccino._
 
 _Server: (Second) order (for Alex): Cappuccino_
 
+![Event Sourcing for buying a coffee](../media/2-event-sourcing.png)
+
 ### Command and Query Responsibility Segregation (CQRS) pattern
 
 The Command and Query Responsibility Segregation (CQRS) pattern separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.
