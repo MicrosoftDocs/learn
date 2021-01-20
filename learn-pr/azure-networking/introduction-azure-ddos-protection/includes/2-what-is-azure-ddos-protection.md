@@ -6,7 +6,7 @@ Microsoft offers DDoS Basic protection to all Azure customers for free. Microsof
 
 You’re investigating the benefits for Contoso to upgrade to Azure DDoS Protection Standard for your services running in Azure. The motivation for evaluating this upgrade option, in the consensus of DDoS security experts, is the growing frequency and sophistication of DDoS attacks.
 
-The attack traffic doesn't have to be in the range of terabits per second to take an application down. Any specific targeted attack can impact the availability of an application running in Azure, which is receiving traffic from the public Internet.
+The attack traffic doesn't have to be in the range of terabits per second to take an application down. Any specific targeted attack can impact the availability of an application running in Azure, which is receiving traffic from the public internet.
 
 ### What is a DDoS attack?
 
@@ -57,7 +57,7 @@ The following list describes the features and benefits of DDoS Protection Standa
 - It helps secure layers 3 and 4 at the network layer and provide application (layer 7) protection with Azure Web Application Firewall, which is included with Azure Gateway. Because the Azure Gateway and Web Application Firewall are internet-facing, DDoS Protection Standard protects their network interfaces. This is an example of multilayered or defense-in-depth protection.
 - It provides detailed attack analytic reports during the attack in five-minute intervals and an after-action report for a complete summary of the event, when the attack ends.
 - It includes support for the integration of mitigation logs with Azure Security Center, Azure Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
-- Microsoft provides SLA guarantee that the application availability/performance will not be impacted during DDoS attack as well as cost protection in the form of Azure credits back for any scale of resources during an attack.
+- Microsoft provides an SLA guarantee that the application availability/performance will not be impacted during a DDoS attack as well as cost protection in the form of Azure credits back for any scale of resources during an attack.
 
 > [!NOTE]
 > Azure Monitor collects monitoring telemetry from DDoS Protection Standard for access to summarized attack metrics.
