@@ -1,6 +1,6 @@
 When a DNS server doesn't host a primary or secondary zone containing resource records in a DNS request, it needs a mechanism to find the required information. By default, each DNS server is configured with root hints that can be used to resolve DNS requests on the internet by finding the authoritative DNS servers. This works if the DNS server has access to the internet and the resource record being requested is available on the internet. Sometimes, both conditions aren't met. In those circumstances, you can enable forwarding.
 
-:::image type="content" source="../media/m12-dns3.png" alt-text="A screenshot of the SEA-DC1.Contoso.com Properties dialog. The administrator has selected the Forwarders tab. One forwarder is listed. Displayed behind this dialog box, the DNS Manager console. Displayed is the Conditional Forwarders node, with one domain record for Adatum.com.":::
+:::image type="content" source="../media/m12-dns-3.png" alt-text="A screenshot of the SEA-DC1.Contoso.com Properties dialog. The administrator has selected the Forwarders tab. One forwarder is listed. Displayed behind this dialog box, the DNS Manager console. Displayed is the Conditional Forwarders node, with one domain record for Adatum.com.":::
 
 ## Forwarders
 

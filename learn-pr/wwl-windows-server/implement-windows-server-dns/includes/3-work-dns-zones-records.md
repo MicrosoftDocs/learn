@@ -19,7 +19,7 @@ When the DNS server stores the zone in a file:
 
 *Forward lookup zones* can hold a wide variety of different resource records, but the most common record type is a *host (A) record*. A host record is used to resolve a hostname to an IP address. 
 
-:::image type="content" source="../media/m12-dns1.png" alt-text="A screenshot of the Contoso.com zone in DNS. Displayed are various resource records. Also displayed is a reverse lookup zone for 172.16.10.0/24.":::
+:::image type="content" source="../media/m12-dns-1.png" alt-text="A screenshot of the Contoso.com zone in DNS. Displayed are various resource records. Also displayed is a reverse lookup zone for 172.16.10.0/24.":::
 
 When using AD DS, the internal DNS servers for your organization have a zone that corresponds to the AD DS domain. For example, if the domain name for AD DS is `Contoso.com`, there also will be a `Contoso.com` DNS zone. AD DS stores resource records that Windows servers and clients use to locate network services.
 
@@ -37,7 +37,7 @@ You also have the option to host the zone on a third-party DNS service that spec
 
 *Reverse lookup zones* are used only for resolving an IP address to a name. A variety of apps, and sometimes administrators, use this functionality. For example, an administrator might notice a specific IP address in a log file and use a reverse lookup to identify the name of the computer that corresponds with the IP address.
 
-:::image type="content" source="../media/m12-dns2.png" alt-text="A screenshot of the 10.16.172.in-addr.arpa zone in DNS. Displayed are several PTR resource records. Also displayed is a forward lookup zone for Contoso.com.":::
+:::image type="content" source="../media/m12-dns-2.png" alt-text="A screenshot of the 10.16.172.in-addr.arpa zone in DNS. Displayed are several PTR resource records. Also displayed is a forward lookup zone for Contoso.com.":::
 
 You create reverse lookup zones only for IP address ranges for which you're responsible. 
 
