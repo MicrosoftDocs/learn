@@ -4491,6 +4491,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/0-introduction.md",
+      "redirect_url": "/learn/modules/python-object-oriented-programming/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/5-define-identify-transformations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
       "redirect_document_id": false
