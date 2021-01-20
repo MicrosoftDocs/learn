@@ -3,17 +3,17 @@ uid: learn.wwl.query-logs-azure-sentinel
 metadata:
   title: Query logs in Azure Sentinel
   description: "Query logs in Azure Sentinel"
-  ms.date: 01/16/2021
+  ms.date: 01/20/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query logs in Azure Sentinel
-summary: As a Security Operations Analyst, it is vital to understand the tables, fields, and data ingested in your workspace.  This module will provide an overview of the most used tables.
+summary: As a Security Operations Analyst, you must understand the tables, fields, and data ingested in your workspace.  Learn how to query the most used data tables in Azure Sentinel.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Use the Logs page to view tables
-  - Query the most used tables
+  - Use the Logs page to view data tables in Azure Sentinel
+  - Query the most used tables using Azure Sentinel
 prerequisites: |
   Basic knowledge of operational concepts such as monitoring, logging, and alerting
 iconUrl: /learn/achievements/generic-badge.svg
