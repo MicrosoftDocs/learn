@@ -25,7 +25,7 @@ After addressing the considerations for building DDoS resilient applications, yo
 > [!NOTE]
 > DDoS Protection Standard offers more features than the DDoS Protection Basic. If you determine that certain applications are critical; for example, a high-volume, revenue-generating Ecommerce website, then DDoS standard Protection is a natural choice.
 
-With DDoS Protection Standard, the traffic always remains within the Azure datacenter. Keeping the traffic within the local datacenter helps with performance as well, because DDoS Standard Protection is doing the attack mitigation in an Azure datacenter. Azure DDoS Protection Standard mitigates the attack traffic closest to the application. However, if Microsoft identifies that the attack volume is significant, then it will use the global scale of their Azure networking to defend the attack where it's originating.
+With DDoS Protection Standard, the traffic always remains within the Azure data center. Keeping the traffic within the local data center helps with performance as well, because DDoS Standard Protection is doing the attack mitigation in an Azure data center. Azure DDoS Protection Standard mitigates the attack traffic closest to the application. However, if Microsoft identifies that the attack volume is significant, then it will use the global scale of their Azure networking to defend the attack where it's originating.
 
 > [!NOTE]
 > Microsoft uses this defense-in-depth strategy to protect your backend services and your Azure services such as Azure Front Door and Azure Application Gateway.
