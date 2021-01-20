@@ -8,15 +8,111 @@ CNNs consist of multiple layers, each performing a specific task in extracting f
 
 ### Convolution layers
 
-One of the principle layer types is a *convolutional* layer that identifies important features in images. A convolutional layer works by applying a filter to images. The filter is defined by a *kernel* that consists of a matrix of weight values. The kernel is convolved across the image, and the weights are applied to the pixel values in the image to create a feature map of the results. This process is shown in the animation below.
+One of the principle layer types is a *convolutional* layer that extracts important features in images. A convolutional layer works by applying a filter to images. The filter is defined by a *kernel* that consists of a matrix of weight values.
+
+For example, a 3x3 filter might be defined like this:
+
+```
+ 1  -1   1
+-1   0  -1
+ 1  -1   1
+```
+
+An image is also just a matrix of pixel values. To apply the filter, you "overlay" it on an image and calculate a *weighted sum* of the corresponding image pixel values under the filter kernel. The result is then assigned to the center cell of an equivalent 3x3 patch in a new matrix of values that is the same size as the image. For example, suppose a 6 x 6 image  has the following pixel values:
+
+```
+255 255 255 255 255 255 
+255 255 100 255 255 255
+255 100 100 100 255 255
+100 100 100 100 100 255
+255 255 255 255 255 255
+255 255 255 255 255 255
+```
+
+Applying the filter to the top-left 3x3 patch of the image would work like this:
+
+```
+255 255 255      1  -1   1    (255 x 1)+(255 x -1)+(255 x 1) +
+255 255 100  x  -1   0  -1  = (255 x -1)+(255 x 0)+(100 x -1) +   = 155
+255 100 100      1  -1   1    (255 x1 )+(100 x -1)+(100 x 1)
+```
+
+The result is assigned to the corresponding pixel value in the new matrix like this:
+
+```
+ ?   ?   ?   ?   ?   ?  
+ ?  155  ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ```
+
+Now the filter is moved along (*convolved*), typically using a *step* size of 1 (so moving along one pixel to the right), and the value for the next pixel is calculated
+
+```
+255 255 255      1  -1   1    (255 x 1)+(255 x -1)+(255 x 1) +
+255 100 255  x  -1   0  -1  = (255 x -1)+(100 x 0)+(255 x -1) +   = -155
+200 100 100      1  -1   1    (100 x1 )+(100 x -1)+(100 x 1)
+```
+
+So now we can fill in the next value of the new matrix.
+
+```
+ ?   ?   ?   ?   ?   ?  
+ ?  155 -155 ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ?   ?   ?   ?   ?   ?
+ ```
+
+ The process repeats until we've applied the filter across all of the 3x3 patches of the image to produce a new matrix of values like this:
+
+ ```
+ ?   ?   ?    ?    ?   ?
+ ?  155 -155 155 -155  ?
+ ? -155 310 -155  155  ?
+ ?  310 155  310   0   ?
+ ? -155 -155 -155  0   ?
+ ?   ?   ?    ?    ?   ?
+ ```
+
+Because of the size of the filter kernel, we can't calculate values for the pixels at the edge; so we typically just apply a *padding* value (often 0):
+
+ ```
+ 0   0   0    0    0   0
+ 0  155 -155 155 -155  0
+ 0 -155 310 -155  155  0
+ 0  310 155  310   0   0
+ 0 -155 -155 -155  0   0
+ 0   0   0    0    0   0
+ ```
+
+The output of the convolution is typically passed to an activation function, which is often a *Rectified Linear Unit* (ReLU) function that ensures negative values are set to 0:
+
+ ```
+ 0   0   0    0    0   0
+ 0  155  0   155   0   0
+ 0   0  310   0   155  0
+ 0  310 155  310   0   0
+ 0   0   0    0    0   0
+ 0   0   0    0    0   0
+ ```
+
+The resulting matrix is a *feature map* of feature values that can be used to train a machine learning model.
+
+> **Note**: The values in the feature map can be greater than the maximum value for a pixel (255), so if you wanted to visualize the feature map as an image you would need to *normalize* the feature values between 0 and 255.
+
+The convolution process is shown in the animation below.
 
 ![A filter kernel is convolved across an image of a triangle, extracting features that emphasize the three edges and corners](../media/convolution.gif)
 
 1. An image is passed to the convolutional layer. In this case, the image is a simple geometric shape.
 2. The image is composed of an array of pixels with values between 0 and 255 (for color images, this is usually a 3-dimensional array with values for red, green, and blue channels).
-3. A filter kernel is initialized with random weights. This filter will be used to extract a feature map from the image data.
-4. The filter is convolved across the image, calculating feature values by applying a sum of the weights multiplied by their corresponding pixel values in each position. A Rectified Linear Unit (ReLU) activation function is usually applied to ensure negative values are set to 0.
-5. After convolution, the feature map contains the extracted feature values, which often emphasize key attributes of the image. In this case, the feature map highlights the edges and corners of the triangle in the image.
+3. A filter kernel is generally initialized with random weights (in this example, we've chosen values to highlight the effect that a filter might have on pixel values; but in a real CNN, the initial weights would typically be generated from a random Gaussian distribution). This filter will be used to extract a feature map from the image data.
+4. The filter is convolved across the image, calculating feature values by applying a sum of the weights multiplied by their corresponding pixel values in each position. A Rectified Linear Unit (ReLU) activation function is applied to ensure negative values are set to 0.
+5. After convolution, the feature map contains the extracted feature values, which often emphasize key visual attributes of the image. In this case, the feature map highlights the edges and corners of the triangle in the image.
 
 Typically, a convolutional layer applies multiple filter kernels. Each filter produces a different feature map, and all of the feature maps are passed onto the next layer of the network.
 
@@ -24,12 +120,21 @@ Typically, a convolutional layer applies multiple filter kernels. Each filter pr
 
 After extracting feature values from images, *pooling* (or *downsampling*) layers are used to reduce the number of feature values while retaining the key differentiating features that have been extracted.
 
-One of the most common kinds of pooling is *max pooling* in which a filter is applied to the image, and only the maximum pixel value within the filter area is retained. The animation below shows an example of max pooling.
+One of the most common kinds of pooling is *max pooling* in which a filter is applied to the image, and only the maximum pixel value within the filter area is retained. So for example, applying a 2x2 pooling kernel to the following patch of an image would produce the result **155**.
+
+```
+0   0
+0  155
+```
+
+Note that the effect of the 2x2 pooling filter is to reduce the number of values from 4 to 1.
+
+As with convolutional layers, pooling layers work by applying the filter across the whole feature map. The animation below shows an example of max pooling for an image map.
 
 ![A filter kernel is convolved across an image of a triangle, extracting features that emphasize the three edges and corners](../media/pooling.gif)
 
 1. The feature map extracted by a filter in a convolutional layer contains an array of feature values.
-2. A pooling kernel is used to reduce the number of features. In this case, the kernel size is 2x2, so it will produce an array with quarter the number of features.
+2. A pooling kernel is used to reduce the number of feature values. In this case, the kernel size is 2x2, so it will produce an array with quarter the number of feature values.
 3. The pooling kernel is convolved across the feature map, retaining only the highest pixel value in each position.
 
 ### Dropping layers
