@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.accelerate-a-spring-boot-application-with-azure-cache-for-redis.7-exercise-deploy-a-spring-boot-and-redis-application-to-azure-app-service
+uid: learn.accelerate-and-scale-a-spring-boot-application-with-azure-cache-for-redis.7-exercise-deploy-a-spring-boot-and-redis-application-to-azure-app-service
 title: Exercise - Deploy a Spring Boot and Redis application to Azure App Service
 metadata:
   title: Create an Azure App Service instance, and deploy to production in the cloud a Spring Boot and Redis application.
