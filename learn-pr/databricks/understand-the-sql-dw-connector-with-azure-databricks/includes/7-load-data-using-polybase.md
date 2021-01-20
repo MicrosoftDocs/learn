@@ -110,21 +110,21 @@ External tables refer to data from an external data source. Data isn't stored in
     );
     ```
 
-- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, need to match the data in the external files. If there's a mismatch, the file rows will be rejected when the data is queried.
+    - `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, need to match the data in the external files. If there's a mismatch, the file rows will be rejected when the data is queried.
 
-- LOCATION = `folder_or_filepath`. Specifies the folder or the file path and file name for the data in Hadoop or Azure Blob storage. The location starts at the *root folder*. The root folder is the data location specified in the external data source. In the previous statement, the `Transaction.txt` file contains the data. This file is in the container specified in the external data source.
+    - LOCATION = `folder_or_filepath`. Specifies the folder or the file path and file name for the data in Hadoop or Azure Blob storage. The location starts at the *root folder*. The root folder is the data location specified in the external data source. In the previous statement, the `Transaction.txt` file contains the data. This file is in the container specified in the external data source.
 
-- DATA_SOURCE = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure Blob storage. Here we're referring to the `LabAzureStorage` external data store that you defined earlier. This external data store points to the container in the Azure Blob storage account.
+    - DATA_SOURCE = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure Blob storage. Here we're referring to the `LabAzureStorage` external data store that you defined earlier. This external data store points to the container in the Azure Blob storage account.
 
-- FILE_FORMAT = `external_file_format_name`. Specifies the name of the external file format object that stores the file type and compression method for the external data. In the previous statement, `FILE_FORMAT` is set to the `TextFileFormat` object that you created earlier.
+    - FILE_FORMAT = `external_file_format_name`. Specifies the name of the external file format object that stores the file type and compression method for the external data. In the previous statement, `FILE_FORMAT` is set to the `TextFileFormat` object that you created earlier.
 
-- _Reject options_. You can specify reject parameters that determine how PolyBase will handle dirty records it retrieves from the external data source. A data record is considered *dirty* if its data types or the number of columns don't match the column definitions of the external table.
+    - _Reject options_. You can specify reject parameters that determine how PolyBase will handle dirty records it retrieves from the external data source. A data record is considered *dirty* if its data types or the number of columns don't match the column definitions of the external table.
 
-  - REJECT_TYPE = `value | percentage`. Specifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
+      - REJECT_TYPE = `value | percentage`. Specifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
 
-  - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `REJECT_VALUE`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `REJECT_VALUE`. The percentage of failed rows is calculated at intervals.
+      - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `REJECT_VALUE`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `REJECT_VALUE`. The percentage of failed rows is calculated at intervals.
 
-    In the previous statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
+      In the previous statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
 
 1. Clear the query window, and run this statement to get data from the external table.
 

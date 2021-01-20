@@ -4,7 +4,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
 ## Set up Azure Synapse Analytics
 
-1. In the [Azure portal](https://portal.azure.com), select **Create a resource**, enter **SAzure Synapse Analytics** in the **Search the Marketplace** box, select **Azure Synapse Analytics** in the results, and then select **Create**.
+1. In the [Azure portal](https://portal.azure.com), select **Create a resource**, enter **Azure Synapse Analytics** in the **Search the Marketplace** box, select **Azure Synapse Analytics** in the results, and then select **Create**.
 
 1. On the **Create Synapse workspace** pane, enter the following information.
 
