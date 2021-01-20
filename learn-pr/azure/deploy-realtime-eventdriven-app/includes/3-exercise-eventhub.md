@@ -117,6 +117,7 @@ mvn archetype:generate --batch-mode \
     -DappName=$FUNCTION_APP"-p" \
     -DresourceGroup=$RESOURCE_GROUP \
     -DappRegion=$LOCATION \
+    -DappServicePlanName=$LOCATION"plan" \
     -DgroupId=com.learn \
     -DartifactId=telemetry-functions-producer
 ```

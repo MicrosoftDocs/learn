@@ -6,14 +6,21 @@ Your functions now run in Azure, and continue to accumulate data in your Azure C
 
 Live Metrics Stream:
 
-/ Screenshot
+![Live Metrics Stream](../media/7-livemetrics.gif)
 
 Performance:
 
-/ Screenshot
+![Performance](../media/7-performance.gif)
 
 ## Set alerts
 
-You always want to be sure, that your system is up and running correctly. If something goes wrong or the behavior indicates that something might go wrong closely, you want to be alarmed automatically. Alerts are the solution. Set and review alerts for your services.
+You always want to be sure, that your system is up and running correctly. If something goes wrong or the behavior indicates that something might go wrong closely, you want to be alarmed automatically. Alerts are the solution. Set and review alerts for your services. You find the `Alerts` tab under `Monitoring`.
 
-/ Screenshot
+![Alerts](../media/7-alerts.png)
+
+Click on `New alert rule`, check the Scope, and choose the Condition.
+You can either choose a specific log using `Custom log search` or you benefit from one of the smart predefined ones.
+
+![Configure signal logic screenshot](../media/7-condition.png)
+
+For the performance the duration time is important. Think what's more important to you. Is the average duration enough or is it important that every request is in time and we need an alert for outliers as well? You can create as many alerts as needed. After the condition is chosen, specify the Action. For easier maintenance, you can organize them in action groups.
