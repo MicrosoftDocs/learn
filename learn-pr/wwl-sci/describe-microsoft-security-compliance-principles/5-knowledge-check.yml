@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/19/2021
+  ms.date: 01/20/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "Download each document."
       isCorrect: false
       explanation: "This is incorrect. Downloading the documents will not keep you notified of any updates to the documents."
-  - content: "A colleague has asked for your help in locating compliance and regulatory information relevant to your industry. You want to provide one link that will provide all the information they might need. Which Microsoft link should you send?"
+  - content: "A compliance admin is looking for regulatory information relevant to a specific region, which one link will provide the needed information?"
     choices:
     - content: "Microsoft Privacy Principles."
       isCorrect: false
