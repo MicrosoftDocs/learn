@@ -1,49 +1,34 @@
-To begin with this module you'll create an initial AKS deployment of the simplified version of eShopOnContainers with a simple public IP over HTTP. This step is mostly just running a script that usually needs no attention so, once you start the script, you can begin the next step, to review some key concepts.
+In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to AKS.
 
-To create an AKS cluster with a starter version of eShop-Learn complete the following steps:
+[!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
-1. Fork the repo <https://github.com/dotnet-architecture/eShop-Learn> in your GitHub account.
+## Run deployment script
 
-2. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal.
+Run the following command in the command shell. Be patient, as setup can take several minutes to complete. Continue reading while the script runs.
 
-    :::image type="content" source="../media/open-azure-cloud-shell.png" alt-text="Azure portal header highlighting the Cloud Shell link." lightbox="../media/open-azure-cloud-shell.png" border="true":::
+```bash
+. <(wget -q -O - https://aka.ms/microservices-data-aspnet-core-setup)
+```
 
-3. Create the base source directory
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-    ```bash
-    cd ~/clouddrive
-    mkdir source
-    cd source
-    ```
+The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
-4. Clone your repo
+<!-- TODO: add steps -->
 
-    ```bash
-    git clone https://github.com/{your-github-account}/eShop-Learn.git
-    ```
-
-    If asked for a GitHub Login, it's recommended that you generate a personal access token for your account from this page <https://github.com/settings/tokens> and use it as the password.
-
-    It's also recommended that you enable credentials caching with these commands:
-
-    ```bash
-    git config --global credential.helper cache
-    git config --global credential.helper 'cache --timeout=7200'
-    ```
-
-5. Go to the module #06 folder - **NOTE - This should be changed to the final module path**
+1. Go to the module #06 folder
 
     ```bash
     cd ~/clouddrive/source/module-06-data-services
     ```
 
-6. Start VS Code online, so it's easier for you to look at the scripts or code
+1. Start VS Code online, so it's easier for you to look at the scripts or code
 
     ```bash
     code .
     ```
 
-7. Run the quickstart script:
+1. Run the quickstart script:
 
     ```bash
     cd deploy/k8s
