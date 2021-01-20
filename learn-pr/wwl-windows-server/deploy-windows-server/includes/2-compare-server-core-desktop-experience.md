@@ -7,7 +7,7 @@ Server Core is an installation of Windows Server without the Desktop Experience.
 
 You can administer and configure Server Core on the server itself through PowerShell, the command line, or through the text-based tool called Sconfig.
 
-:::image type="content" source="../media/m4-sconfig1.png" alt-text="A screenshot of Sconfig in an elevated Command Prompt window.":::
+:::image type="content" source="../media/m4-sconfig-1.png" alt-text="A screenshot of Sconfig in an elevated Command Prompt window.":::
 
 Remote administration is the normal method of managing the server by using several tools such as PowerShell Remoting, the Remote Server Administration Tool (RSAT), and the Windows Admin Center. The following table describes the available tools locally.
 
