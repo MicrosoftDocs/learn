@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: signalr-cm
+  labels:
+    app: eshop
+    service: signalr
+data:
+  # omitted for brevity
+  SignalrStoreConnectionString: basketdata
+  # omitted for brevity

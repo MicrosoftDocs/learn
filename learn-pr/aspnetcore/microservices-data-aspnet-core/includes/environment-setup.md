@@ -23,30 +23,13 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 [!INCLUDE[Instructions for restoring the default Cloud Shell configuration](../../includes/microservices/revert-cloud-shell-configuration.md)]
 
-1. Go to the module #06 folder
+The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
 
-    ```bash
-    cd ~/clouddrive/source/module-06-data-services
-    ```
-
-1. Start VS Code online, so it's easier for you to look at the scripts or code
-
-    ```bash
-    code .
-    ```
-
-1. Run the quickstart script:
-
-    ```bash
-    cd deploy/k8s
-    ./quickstart.sh --resource-group eshop-learn-rg --location westus
-    ```
-
-    You can change the **resource group** and **location** if it suits you better.
+:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram showing the eShopOnContainers solution architecture." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
 When the script finishes you should see something like this:
 
-```txt
+```console
 Helm charts deployed
 NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS         CHART                    APP VERSION
 eshoplearn-backgroundtasks      default         1               2020-06-10 17:14:34.2354515 +0100 BST   deployed       backgroundtasks-0.1.0    1.0.0

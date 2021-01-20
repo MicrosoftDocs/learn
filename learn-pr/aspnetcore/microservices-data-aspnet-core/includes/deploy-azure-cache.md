@@ -1,4 +1,4 @@
-In this exercise you will:
+In this exercise, you will:
 
 - Create an Azure Redis Cache instance.
 - Remove the redis cache deployment from the cluster.
@@ -7,27 +7,59 @@ In this exercise you will:
 
 ## Create an Azure Redis Cache instance
 
-Run this script from the `deploy/k8s` folder:
+1. Run the following script:
 
-```bash
-./create-azure-redis.sh
-```
+    ```bash
+    ./deploy/k8s/create-azure-redis.sh
+    ```
 
-The preceding script:
+    The preceding script:
 
-- Starts the creation of the Azure Cache for Redis
-- Gets the connection string
-- Waits for the creation command to finish (It could take a few minutes)
+    - Starts the creation of the Azure Cache for Redis.
+    - Gets the connection string.
+    - Waits for the creation command to finish (it could take a few minutes).
 
-You should get something like this:
+    A variation of the following output appears:
 
-:::image type="content" source="../media/create-azure-redis.png" alt-text="Image description follows in text." lightbox="../media/create-azure-redis.png" border="true":::
+    ```console
+    Creating an Azure Cache for Redis instance
+    ==========================================
+    
+    Creating Azure Cache for Redis eshop-learn-20210120180516594 in RG eshop-learn-rg
+    ------------------------------
+    {- Finished ..
+      "HotsName": "eshop-learn-20210120180516594.redis.cache.windows.net",
+      "Location": "West US",
+      "Name": "eshop-learn-20210120180516594",
+      "ProvisioningState": "Creating",
+      "RedisVersion": "4.0.14"
+    }
+    
+    Retrieving Azure Cache for Redis connection string
+    --------------------------------------------------
+    
+    ConnectionString: eshop-learn-20210120180516594.redis.cache.windows.net:6380,password=ofiCJafSxzsxGgwYTKryxgM+ErwT+ViaSQa1PsHZaBM=,ssl=True,abortConnect=False
+    
+    Waiting for the Azure Cache for Redis creation to finish (Creating) - Ctrl+C to cancel...
+    
+    Environment variables
+    ---------------------
+    export ESHOP_REDISNAME=eshop-learn-20210120180516594
+    export ESHOP_REDISPRIMARYKEY=ofiCJafSxzsxGgwYTKryxgM+ErwT+ViaSQa1PsHZaBM=
+    export ESHOP_REDISCONNSTRING=eshop-learn-20210120180516594.redis.cache.windows.net:6380,password=ofiCJafSxzsxGgwYTKryxgM+ErwT+ViaSQa1PsHZaBM=,ssl=True,abortConnect=False
+    export ESHOP_IDTAG=20210120180516594
+    
+    Run the following command to update the environment
+    eval $(cat ~/clouddrive/aspnet-learn/create-azure-redis-exports.txt)
+    ```
 
-In the above image you can see that the creation command returns rather quickly, but with status "Creating". Then the connection string is displayed and a loop begins with the message "Waiting for the Azure Cache for Redis creation to finish...". You'll get the resulting environment variables when the creation finishes.
+    In the preceding output, you can see that the creation command returns rather quickly, but with status "Creating". Then the connection string is displayed and a loop begins with the message "Waiting for the Azure Cache for Redis creation to finish...". You'll get the resulting environment variables when the creation finishes.
+
+1. Copy the connection string in the preceding command's output.
 
 You can begin the next step while waiting for the script to finish.
 
-## Remove the redis microservice from the cluster
+## Remove the Redis microservice from the cluster
 
 Run the command:
 
@@ -35,98 +67,53 @@ Run the command:
 helm delete eshoplearn-basketdata
 ```
 
-You should get something like this:
+The following output appears:
 
-:::image type="content" source="../media/delete-basketdata.png" alt-text="basketdata microservice delete confirmation from Helm" lightbox="../media/delete-basketdata.png" border="true":::
+```console
+release "eshoplearn-basketdata" uninstalled
+```
 
-If you checked the `webstatus` microservice you should see Aggregator and the Basket microservice failing. Although it could take a little while to show.
+If you checked the `webstatus` microservice, you should see Aggregator and the Basket microservice failing. Although it could take a little while to show.
 
 ## Reconfigure the affected microservices
 
-Now you have to update the `configmaps` for the microservices that are using Redis:
+Now you have to update the `configmaps` for the following microservices that are using Redis:
 
 - Basket
 - Identity
 - SignalR
 - WebSPA
 
-You must update the ConnectionString (or similar) parameter from `basketdata` to the connection string displayed from the creation script, as shown in the next `.yaml` fragments:
+Apply the following changes in the *deploy/k8s/helm-simple* directory:
 
-- `deploy/k8s/helm-simple/basket/templates/configmap.yaml`<br><br>
+1. In *basket/templates/configmap.yaml*, update the `ConnectionString` parameter from `basketdata` to the connection string from the creation script:
 
-    ```yml
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: basket-cm
-      labels:
-        app: eshop
-        service: basket
-    data:
-      #...
-      ConnectionString: eshop-learn-###...#.redis.cache.windows.net:6380,password=XXX...,ssl=True,abortConnect=False
-      #...
-    ```
+  :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
-- `deploy/k8s/helm-simple/identity/templates/configmap.yaml`<br><br>
+1. In *identity/templates/configmap.yaml*, update the `ConnectionString` parameter to the connection string:
 
-    ```yml
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: identity-cm
-      labels:
-        app: eshop
-        service: identity
-    data:
-      #...
-      DPConnectionString: eshop-learn-###...#.redis.cache.windows.net:6380,password=XXX...,ssl=True,abortConnect=False
-      #...
-    ```
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/identity/templates/configmap.yaml" highlight="10":::
 
-- `deploy/k8s/helm-simple/signalr/templates/configmap.yaml`<br><br>
+1. In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` parameter to the connection string:
 
-    ```yml
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: signalr-cm
-      labels:
-        app: eshop
-        service: signalr
-    data:
-      #...
-      SignalrStoreConnectionString: eshop-learn-###...#.redis.cache.windows.net:6380,password=XXX...,ssl=True,abortConnect=False
-    ```
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/signalr/templates/configmap.yaml" highlight="10":::
 
-- `deploy/k8s/helm-simple/webspa/templates/configmap.yaml`<br><br>
+1. In *webspa/templates/configmap.yaml*, update the `DPConnectionString` parameter to the connection string:
 
-    ```yml
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: webspa-cm
-      labels:
-        app: eshop
-        service: webspa
-    data:
-      #...
-      DPConnectionString: eshop-learn-###...#.redis.cache.windows.net:6380,password=XXX...,ssl=True,abortConnect=False
-      #...
-    ```
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="10":::
 
 ## Redeploy the affected microservices
 
 You need to get the Load Balancer IP address from the initial deployment and you can get it into an environment variable by running the following command:
 
 ```bash
-eval $(cat ~/clouddrive/source/deploy-application-exports.txt)
+eval $(cat ~/clouddrive/aspnet-learn/deploy-application-exports.txt)
 ```
 
-Then just run the following script from the `deploy/k8s` folder:
+Then just run the following script:
 
 ```bash
-./deploy-application.sh --charts basket,identity,signalr,webspa
+./deploy/k8s/deploy-application.sh --charts basket,identity,signalr,webspa
 ```
 
-After a few minutes, when you should see all services running in the `webstatus` microservice, you should be able to run the application just as you did before deleting the `basketdata` microservice to check it's working as before.
+After a few minutes, when you should see all services running in the `webstatus` microservice, you can run the app as you did before deleting the `basketdata` microservice to confirm it's working as before.

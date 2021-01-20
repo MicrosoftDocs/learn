@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: identity-cm
+  labels:
+    app: eshop
+    service: identity
+data:
+  # omitted for brevity
+  ConnectionString: Server=sqldata;Database=Microsoft.eShopOnContainers.Service.IdentityDb;User Id=sa;Password=Pass@word
+  # omitted for brevity
+  

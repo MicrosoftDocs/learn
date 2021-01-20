@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: webspa-cm
+  labels:
+    app: eshop
+    service: webspa
+data:
+  # omitted for brevity
+  DPConnectionString: basketdata
+  # omitted for brevity

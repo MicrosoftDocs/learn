@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: basket-cm
+  labels:
+    app: eshop
+    service: basket
+data:
+  # omitted for brevity
+  ConnectionString: basketdata
+  # omitted for brevity
