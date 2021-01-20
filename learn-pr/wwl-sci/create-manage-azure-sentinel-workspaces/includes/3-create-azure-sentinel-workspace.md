@@ -1,4 +1,4 @@
-After designing the workspace architecture, log into the Azure portal. At the search bar, search for Sentinel, then select Azure Sentinel.  The Azure Sentinel Workspaces shows a list of the current workspaces.  Select the "+ add" button to start the creation process.
+After designing the workspace architecture, log into the Azure portal. At the search bar, search for Sentinel, then select **Azure Sentinel**.  The Azure Sentinel Workspaces shows a list of the current workspaces.  Select the **+ add** button to start the creation process.
 
 ## Azure Sentinel Installation Prerequisites
 
@@ -33,7 +33,7 @@ Select the newly created Log Analytics workspace. And select the **Add** button.
 
 The new Azure Sentinel workspace will now be the active screen.  The Azure Sentinel left navigation has three areas:  
 
-- General 
+- General
 - Threat Management
 - Configuration
 

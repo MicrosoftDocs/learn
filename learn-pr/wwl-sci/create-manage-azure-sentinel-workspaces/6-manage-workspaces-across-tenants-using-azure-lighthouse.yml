@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.manage-workspaces-across-tenants-using-azure-lighthouse
-title: Manage workspaces across tenants using azure lighthouse
+title: Manage workspaces across tenants using Azure Lighthouse
 metadata:
-  title: Manage workspaces across tenants using azure lighthouse
-  description: "Manage workspaces across tenants using azure lighthouse"
-  ms.date: 01/16/2021
+  title: Manage workspaces across tenants using Azure Lighthouse
+  description: "Manage workspaces across tenants using Azure Lighthouse"
+  ms.date: 01/20/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/6-manage-workspaces-across-tenants-using-azure-lighthouse.md)]
