@@ -24,18 +24,24 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     | Property | Value |
     |---|---|
+<<<<<<< HEAD
     | **Project details**| |
     | Subscription | Concierge Subscription |
     | Resource group | ("**<rgn>[sandbox resource group name]</rgn>**") from the dropdown. |
     | **Instance details**| |
+=======
+    |**Project details**| |
+    | Subscription | Concierge Subscription |
+    | Resource group | ("**<rgn>[sandbox resource group name]</rgn>**") from the dropdown. |
+    |**Instance details**| |
+>>>>>>> d611836395eb41e3504e3e778436f893256a79a9
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
     | Location | Select a location near to you in the dropdown from the previous list |
     | Performance | Standard. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Account kind | StorageV2 (general purpose v2) |
     | Redundancy | Locally redundant storage (LRS). In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
 
-    > [!NOTE]
-    > This free Resource Group has been provided by Microsoft as part of the learning experience. When you create an account for a real application, you'll want to create a new Resource Group in your subscription to hold all the resources for the app.
+  ![INCLUDE [Sandbox Regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Next : Networking**. Enter the following information.
 
