@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.cv-classify-bird-species.3a-upload-images
+title: Exercise - Upload the data
+azureSandbox: true
+metadata:
+  title: Exercise - Upload the data
+  description: Upload the data
+  ms.date: 01/19/2021
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3a-upload-images.md)]

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.describe-identity-principles-concepts
+metadata:
+  title: Describe identity principles and concepts
+  description: "Describe identity principles and concepts"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Describe identity principles and concepts
+summary: Learn about the basic identity concepts, including identity as a security perimeter, authentication, authorization, the role of active directory and the concept of federated services.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the concept of identity as a security perimeter.
+  - Learn about authentication and authorization.
+  - Describe identity related services.
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 36.
+iconUrl: /learn/achievements/describe-identity-principles-and-concepts.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure-active-directory
+units:
+- learn.wwl.describe-identity-principles-concepts.introduction
+- learn.wwl.describe-identity-principles-concepts.describe-common-identity-attacks
+- learn.wwl.describe-identity-principles-concepts.define-identity-as-primary-security-perimeter
+- learn.wwl.describe-identity-principles-concepts.describe-modern-authentication-role-identity-provider
+- learn.wwl.describe-identity-principles-concepts.describe-concept-federated-services
+- learn.wwl.describe-identity-principles-concepts.describe-concept-of-directory-services-active-directory
+- learn.wwl.describe-identity-principles-concepts.knowledge-check
+- learn.wwl.describe-identity-principles-concepts.summary-resources
+badge:
+  uid: learn.wwl.describe-identity-principles-concepts.badge
