@@ -4551,16 +4551,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions.yml",
-      "redirect_url": "/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/5-define-identify-transformations.yml",
-      "redirect_url": "/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/6-describe-performance-enhancements-enabled.yml",
       "redirect_url": "/learn/modules/describe-lazy-evaluation-performance-features-azure-databricks/5-describe-performance-enhancements-enabled",
       "redirect_document_id": false
