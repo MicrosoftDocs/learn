@@ -18,8 +18,8 @@
 
 ## Prerequisites
 
-- Experience managing VMware infrastructure.
-- Basic knowledge of network concepts.
+- Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN.
+- Basic knowledge of network concepts, such as classless inter-domain routing (CIDR), border gate protocol (BGP) routing, dynamic host configuration protocol (DHCP), and subnets.
 
 ## Summary
 
@@ -27,8 +27,8 @@ First, you'll learn how to plan for the Azure VMware Solution deployment. From t
 
 ## Learning objectives
 
-1. Evaluate an Azure VMware Solution deployment.
-1. Create an Azure VMware Solution resource to connect to an on-premises VMware environment.
+1. Plan a successful Azure VMware Solution deployment.
+1. Connect to an on-premises VMware environment.
 
 ## Chunk your content into subtasks
 
@@ -40,13 +40,14 @@ Identify the subtasks of *module title*
 | 2. Plan | Plan Azure VMware Solution Deployment | N/A |
 | 3. Deploy | Deploy Azure VMware Solution | N/A |
 | 4. Connect | Connect to on-premises VMware vSphere environment | N/A |
-| 5. Summary  | Summary               | N/A                 |
+| 5. Module Knowledge Check | Azure VMware Solution Deployment Knowledge Check | N/A
+| 6. Summary  | Summary               | N/A                 |
 
 ## Outline the units
 
 1. **Introduction**
 
-    Imagine you work for a healthcare company who runs production workloads on a VMware platform. IT operations are spread between different offices. There are a few trends that have surfaced in recent months. Some locations have equipment nearing end of life, so hardware refresh decisions need to be made soon. Additionally, your company isn't able to get new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company has decided to move forward with involves migrating existing VMware workloads to Azure VMware Solution. By using Azure VMware Solution, your company does not have to change virtualization platforms or alter existing operational patterns. In this module, you'll learn how to plan, deploy, and connect Azure VMware Solution to your existing VMware infrastructure on-premises.
+    Imagine you work for a healthcare company who runs production workloads on a VMware platform. IT operations are spread between different offices. There are a few trends that have surfaced in recent months. Some locations have equipment nearing end of life, so hardware refresh decisions need to be made soon. Additionally, your company isn't able to get new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company has decided to move forward with involves migrating existing VMware workloads to Azure VMware Solution. By using Azure VMware Solution, your company doesn't have to change virtualization platforms or alter existing operational patterns. In this module, you'll learn how to plan, deploy, and connect Azure VMware Solution to your existing VMware infrastructure on-premises.
 
 1. **Plan Azure VMware Solution Deployment**
 
@@ -61,7 +62,7 @@ Identify the subtasks of *module title*
 
     - Which planning step is not required to deploy Azure VMware Solution in the Azure portal?
     
-        - Create a new support request if an Enterprise Agreement customer - false
+        - Create a new support request if you're an Enterprise Agreement customer - false
         - Register the Microsoft.AVS resource provider - false
         - A service principal - true
 
@@ -114,7 +115,7 @@ Identify the subtasks of *module title*
 
     - In order for on-premises network traffic to reach Azure VMware Solution, which component is required?
 
-        - VPN - false
+        - Virtual Private Network - false
         - ExpressRoute Global Reach - true
         - Load Balancer - false
 
@@ -123,6 +124,26 @@ Identify the subtasks of *module title*
         - Customer provided ExpressRoute - true
         - Application Gateway - false
         - Network Virtual Appliance - false
+
+1. **Module Knowledge Check**
+
+    - When you try to deploy Azure VMware Solution, you receive an error stating "NoRegisteredProviderFound." What should you try next?
+
+        - Try to redeploy and see if the same error message displays. - false
+        - Register Microsoft.AVS resource provider for the subscription. - true
+        - Try deploying Azure VMware Solution in a different region. - false
+     
+    - If you can't connect to your Azure VMware Solution environment from on-premises, what would be a good configuration step to take or inspect?
+    
+        - Check to see if path prepends or local path preferences have been configured. - true
+        - Delete Azure VMware Solution deployment and redeploy service. - false
+        - Check permissions on the subscription and resource group. - false
+
+    -  When you try to deploy Azure VMware Solution, you receive an error message highlighting there are steps to take before node deployment. How do you resolve the error so you can continue with the deployment?
+
+        - Check permissions on the subscription and resource group. - false
+        - Use a different region. - false
+        - Open up a new support ticket to have hosts allocated. - true
 
 1. **Summary**
 
