@@ -9,6 +9,6 @@ metadata:
   ms.date: 11/25/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 4
 content: |
   [!include[](includes/4-deploy-jakartaee-app-to-jboss-eap.md)]

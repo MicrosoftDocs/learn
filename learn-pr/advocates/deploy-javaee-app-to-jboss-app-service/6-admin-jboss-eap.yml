@@ -9,6 +9,6 @@ metadata:
   ms.date: 11/25/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 2
 content: |
   [!include[](includes/6-admin-jboss-eap.md)]
