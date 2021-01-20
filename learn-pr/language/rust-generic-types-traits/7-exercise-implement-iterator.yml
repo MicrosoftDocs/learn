@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-generic-types-traits.7-exercise-implement-iterator
+metadata:
+  title: Exercise - Implement an iterator
+  description: Implement an iterator.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Implement an iterator
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-implement-iterator.md)]
