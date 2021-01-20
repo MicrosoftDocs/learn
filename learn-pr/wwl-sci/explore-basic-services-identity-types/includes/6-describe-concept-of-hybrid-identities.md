@@ -3,7 +3,7 @@ Organizations may use the hybrid identity model, or the cloud only identity mode
 
 With the hybrid model, with hybrid model, users accessing both on-premise and cloud apps are hybrid users managed in the on-premise Active Directory.  When you make an update in your on-premises AD DS, all updates to user accounts, groups, and contacts are synchronized to your Azure AD. The synchronization is managed with *Azure AD Connect*.
 
-:::image type="content" source="../media/azure-active-directory-connect-inline.png" lightbox="../media/azure-active-directory-connect-expanded.png" alt-text="Azure AD connect manages the synchronization to Azure Active Directory":::
+:::image type="content" source="../media/azure-active-directory-connect-expanded.png" alt-text="Azure AD connect manages the synchronization to Azure Active Directory":::
 
 When using the hybrid model, authentication can either be done by Azure AD, which is known as *managed authentication*. Or Azure AD redirects the client requesting authentication to another identity provider, which is known as *federated authentication*.
 
