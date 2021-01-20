@@ -32,7 +32,7 @@ After you connected your data sources to Azure Sentinel, you can monitor the dat
 
 This is where the power of Sentinel comes into play. Using the built-in analytics alerts within the Sentinel workspace, you’ll get notified when anything suspicious occurs. There are various types of alerts, some of which you can edit to your own needs. Other alerts are built on machine-learning models that are proprietary to Microsoft.
 
-### Managing incidents in Sentinel
+### Manage incidents in Sentinel
 
 An incident is created when an alert that you've enabled is triggered. You can do standard incident management tasks like changing status or assigning incidents to individuals for investigation in Azure Sentinel. Azure Sentinel also has investigation functionality, so you can visually investigate incidents by mapping entities across log data along a timeline.
 
