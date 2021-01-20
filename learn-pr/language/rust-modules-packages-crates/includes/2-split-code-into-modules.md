@@ -1,4 +1,4 @@
-Besides helping you to better organize your code, modules also provide privacy guarantees to your values, types and methods.
+Besides helping you to better organize your code, modules also provide privacy guarantees to your values, types, and methods.
 
 Take a look at this example, in which we model a simplified authentication API:
 
@@ -29,9 +29,9 @@ fn main() {
 }
 ```
 
-In the preceding code we can see that the `authentication` module provides the `User` struct with ith `User::new` method, since they're both public *(mind the `pub` keyword)*.
+In the preceding code, we can see that the `authentication` module provides the `User` struct with the `User::new` method, since they're both public *(mind the `pub` keyword)*.
 
-This code fails to compile because it tries to access the `username` and `password_hash` fields from the `User` struct, but thy are private. Running the code results in the following error:
+This code fails to compile because it tries to access the `username` and `password_hash` fields from the `User` struct, but they are private. Running the code results in the following error:
 
 ```output
     error[E0616]: field `username` of struct `User` is private

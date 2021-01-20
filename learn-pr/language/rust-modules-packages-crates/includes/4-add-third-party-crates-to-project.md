@@ -9,7 +9,7 @@ regex = "1.4.2"
 
 If your `Cargo.toml` doesn't already have a `[dependencies]` section, add that, then list the crate name and version that you would like to use.
 
-The next step is to run the command `cargo build`, and Cargo will fetch the new dependenciy and all of its dependencies, compile them all:
+The next step is to run the command `cargo build`, and Cargo will fetch the new dependency and all of its dependencies, compile them all:
 
 ```output
     $ cargo build
