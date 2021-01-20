@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft.describe-use-benefits-of-compliance-score
+title: Describe use and benefits of compliance score
+metadata:
+  title: Describe use and benefits of compliance score
+  description: "Describe use and benefits of compliance score"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-describe-use-benefits-of-compliance-score.md)]
