@@ -10,7 +10,7 @@ A slice has only three components:
 
 The image below represents what a slice is:
 
-:::image type="content" source="media\go-slices.jpg" alt-text="Diagram showing how slices in Go look.":::
+:::image type="content" source="media\go-slices.png" alt-text="Diagram showing how slices in Go look.":::
 
 Notice how the slice is only a subset of the underlying array. Let's see how you can represent the above image in code.
 
@@ -47,7 +47,7 @@ Go has support for the slice operator `s[i:j]`, where `s` represents the array, 
 
 For instance, let's say that you'd like to have four variables representing each quarter of the year. The following image illustrates how that looks in Go:
 
-:::image type="content" source="media\go-slices-multiple.jpg" alt-text="Diagram showing how multiple Slices in Go look.":::
+:::image type="content" source="media\go-slices-multiple.png" alt-text="Diagram showing how multiple Slices in Go look.":::
 
 To represent in code what you saw in the image above, you could use the following code:
 
