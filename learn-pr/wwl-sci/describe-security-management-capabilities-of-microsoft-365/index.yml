@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.describe-security-management-capabilities-of-microsoft-365
+metadata:
+  title: Describe security management capabilities of Microsoft 365
+  description: "Describe security management capabilities of Microsoft 365"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Describe security management capabilities of Microsoft 365
+summary: Learn about the security management capabilities of Microsoft 365.  Topics include Microsoft 365 Security Center, Secure score, incident management capabilities, and reports and dashboard.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the security management capabilities of Microsoft 365
+  - Explore the security reports and dashboards in the Microsoft 365 Security Center
+  - Describe incident management capabilities of Microsoft 365
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/describe-security-management-capabilities-of-microsoft-365.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- m365-security-score
+- m365-security-center
+units:
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365.introduction
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365.describe-explore-security-center
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365.describe-how-to-use-microsoft-secure-score
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365.explore-security-reports-dashboards
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365.describe-incidents-capabilities
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365.knowledge-check
+- learn.wwl.describe-security-management-capabilities-of-microsoft-365.summary-resources
+badge:
+  uid: learn.wwl.describe-security-management-capabilities-of-microsoft-365.badge
