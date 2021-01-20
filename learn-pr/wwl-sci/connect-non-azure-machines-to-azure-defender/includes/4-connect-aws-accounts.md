@@ -18,7 +18,7 @@ Onboarding your AWS account into Security Center, integrates AWS Security Hub an
 
 In the screenshot below, you can see AWS accounts displayed in Security Center's overview dashboard.
 
-![aws account overview](../media/aws-account-in-overview.png)
+![aws account overview](../media/aws-account-overview.png)
 
 
 ## Follow the steps below to create your AWS cloud connector.

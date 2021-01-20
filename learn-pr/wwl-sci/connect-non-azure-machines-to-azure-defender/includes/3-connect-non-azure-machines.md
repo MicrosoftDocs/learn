@@ -68,7 +68,7 @@ To add Linux machines, you need the WGET command from the Agents management page
 
 1. On your Linux computer, open the file with the WGET command. Select the entire content and copy and paste it into a terminal console.
 
-1. When the installation completes, you can validate that the *omsagent* is installed by running the *pgrep* command. The command will return the omsagent PID. The logs for the Agent can be found at: /var/opt/microsoft/omsagent/<workspace id>/log/ It might take up to 30 minutes for the new Linux machine to appear in Security Center.
+1. When the installation completes, you can validate that the *omsagent* is installed by running the <pgrep> command. The command will return the omsagent PID. The logs for the Agent can be found at: /var/opt/microsoft/omsagent/<workspace id>/log/ It might take up to 30 minutes for the new Linux machine to appear in Security Center.
 
 ### Onboard your Windows machines
 

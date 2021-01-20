@@ -10,7 +10,7 @@ Onboarding your GCP account into Security Center, integrates GCP Security Comman
 
 In the screenshot below, you can see GCP projects displayed in Security Center's overview dashboard.
 
-![gcp account in overview](../media/gcp-account-in-overview.png)
+![gcp account in overview](../media/gcp-account-overview.png)
 
 ## Follow the steps below to create your GCP cloud connector.
 
@@ -100,5 +100,5 @@ When the connector is successfully created and GCP Security Command Center has b
 
 - Security recommendations for your GCP resources will appear in the Security Center portal and the regulatory compliance dashboard 5-10 minutes after onboard completes:
 
-![gcp resources in recommendations](../media/gcp-resources-in-recommendations.png)
+![gcp resources in recommendations](../media/gcp-resources-recommendations.png)
 
