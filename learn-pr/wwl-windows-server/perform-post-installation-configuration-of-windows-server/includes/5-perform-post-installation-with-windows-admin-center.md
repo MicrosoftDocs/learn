@@ -4,7 +4,7 @@ In the past, managing and administrating the IT environment at Contoso involved 
 
 You can also use Windows Admin Center to perform post-installation configuration. The process begins when you add the newly deployed server to the Windows Admin Center console.
 
-:::image type="content" source="../media/m3-windows-admin-center1.png" alt-text="A screenshot of Windows Admin Center. The administrator has added and selected a newly deployed server. The Overview page is displayed.":::
+:::image type="content" source="../media/m3-windows-admin-center-1.png" alt-text="A screenshot of Windows Admin Center. The administrator has added and selected a newly deployed server. The Overview page is displayed.":::
 
 ### Authenticate to the target server
 
@@ -32,8 +32,8 @@ To connect to a server in Windows Admin Center, you must first add it. To do thi
 5. In the **Server name** box, enter the name of the target server and select **Add**.
 6. In the **Credentials needed** section, select **Use another account for this connection**, and then enter the credentials to connect to the server.
 
-> [!TIP]
-> It's likely the user account name will be **.\Administrator**, using whatever password you assigned during installation.
+    > [!TIP]
+    > It's likely the user account name will be **.\Administrator**, using whatever password you assigned during installation.
 
 7. Select **Add with credentials**. Your server is added to the All connections list.
 8. Select the new server in the **All connections** list.
@@ -46,7 +46,7 @@ After you've added and connected to your newly deployed server, you can use Wind
 2. On the **Edit computer ID** blade, enter the new computer name and then select **Domain**.
 3. Enter the domain name, and then select **Next**.
 
-:::image type="content" source="../media/m3-windows-admin-center2.png" alt-text="A screenshot of Windows Admin Center. The Overview page is displayed, along with the Edit computer ID blade. The administrator has updated the computer name and domain name.":::
+:::image type="content" source="../media/m3-windows-admin-center-2.png" alt-text="A screenshot of Windows Admin Center. The Overview page is displayed, along with the Edit computer ID blade. The administrator has updated the computer name and domain name.":::
 
 4. On the **Update computer name and domain** blade, enter the credentials of an account in the domain that has rights to add computers to the domain.
 5. Select the **Restart immediately** check box, and select **Save**. The computer restarts.

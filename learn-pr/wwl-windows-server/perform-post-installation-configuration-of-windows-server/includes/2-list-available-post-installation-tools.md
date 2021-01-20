@@ -35,7 +35,7 @@ If the computer is installed with Windows Server with Desktop Experience, then y
 
 ### Windows Admin Center
 
-:::image type="content" source="../media/m3-windows-admin-center1.png" alt-text="A screenshot of Windows Admin Center. The administrator has added and selected a newly deployed server. The Overview page is displayed.":::
+:::image type="content" source="../media/m3-windows-admin-center-1.png" alt-text="A screenshot of Windows Admin Center. The administrator has added and selected a newly deployed server. The Overview page is displayed.":::
 
 You can use Windows Admin Center to perform post-installation configuration for both Windows Server with Desktop Experience and Server Core installations.
 

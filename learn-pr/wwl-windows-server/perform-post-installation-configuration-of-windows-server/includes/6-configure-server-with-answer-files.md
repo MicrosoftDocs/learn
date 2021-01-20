@@ -17,7 +17,7 @@ Answer files are organized into two sections, as described in the following tabl
 
 The following graphic displays the default console for an untitled answer file project in Windows SIM.
 
-:::image type="content" source="../media/m3-windows-sim1.png" alt-text="A screenshot of Windows System Image Manager. An untitled answer file is open. Displayed are details of the Distribution Share,the Windows Image, the Answer File, and both the Properties and Messages panes.":::
+:::image type="content" source="../media/m3-windows-sim-1.png" alt-text="A screenshot of Windows System Image Manager. An untitled answer file is open. Displayed are details of the Distribution Share,the Windows Image, the Answer File, and both the Properties and Messages panes.":::
 
 > [!IMPORTANT]
 > Most settings that are relevant to post-installation configuration reside in the **specialize** installation phase.
@@ -63,7 +63,7 @@ After the catalog file is created, you can begin to configure the answer file. T
 
 Although there are many settings you can configure in an answer file, only a subset of these deal with post-installation configuration.
 
-:::image type="content" source="../media/m3-windows-sim2.png" alt-text="A screenshot of Windows System Image Manager. An answer file called Autounattend.xml is being edited. Numerous components are added to the Answer File section. The administrator is editing values in the Properties section.":::
+:::image type="content" source="../media/m3-windows-sim-2.png" alt-text="A screenshot of Windows System Image Manager. An answer file called Autounattend.xml is being edited. Numerous components are added to the Answer File section. The administrator is editing values in the Properties section.":::
 
 In the **Components** node, some of the more common settings are:
 
@@ -76,4 +76,4 @@ In the **Packages** node, add the **Product** settings to the answer file.
 
 The end result is a simple text file that contains the XML syntax required to customize your Windows Server installation.
 
-:::image type="content" source="../media/m3-windows-sim3.png" alt-text="A screenshot of a sample XML file in Notepad.":::
+:::image type="content" source="../media/m3-windows-sim-3.png" alt-text="A screenshot of a sample XML file in Notepad.":::

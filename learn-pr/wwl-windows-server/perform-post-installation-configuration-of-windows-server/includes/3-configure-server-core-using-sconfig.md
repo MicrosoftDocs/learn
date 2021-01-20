@@ -9,7 +9,7 @@ Sconfig is a text-based tool that allows you to do the basic configuration of Se
 
 You typically use Sconfig to perform the initial configuration directly after the installation completes, but you can run it at any time to change the settings as required.
 
-:::image type="content" source="../media/m3-sconfig1.png" alt-text="A screenshot of Sconfig in an elevated Command Prompt window. Available options are described in the following table.":::
+:::image type="content" source="../media/m3-sconfig-1.png" alt-text="A screenshot of Sconfig in an elevated Command Prompt window. Available options are described in the following table.":::
 
 Sconfig provides several options, which are described in the following table.
 
