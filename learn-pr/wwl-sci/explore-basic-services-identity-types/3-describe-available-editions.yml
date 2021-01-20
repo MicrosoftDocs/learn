@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-available-editions
+title: Describe the available Azure AD editions
+metadata:
+  title: Describe the available Azure AD editions
+  description: "Describe the available Azure AD editions"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-describe-available-editions.md)]

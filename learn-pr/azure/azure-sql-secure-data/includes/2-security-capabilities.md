@@ -175,9 +175,9 @@ Depending on how your organization has configured the Azure AD instance, you can
    *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL Database/Azure Synapse Analytics (formerly SQL DW) by using federated credentials.*  
 - **Azure Active Directory - Universal with Multi-Factor Authentication**: An interactive method that safeguards access to data while meeting an organization's demand for a single sign-in process with Azure AD Multi-Factor Authentication.
 
-For an Azure SQL managed instance, the method is similar to that for SQL Server: you can have SQL or Azure AD sign-ins, database users, and contained database users. 
+For an Azure SQL managed instance, the method is similar to that for SQL Server: you can have SQL or Azure AD logins, database users, and contained database users. 
 
-For Azure SQL Database instances, there are a few nuances. You can have SQL log-ins, database users, and even contained database users for Azure AD (recommended). Although the server admin for Azure SQL Database essentially has sysadmin rights, you can create more limited admins by using database level roles in the master of the Azure SQL Database logical server. Two roles are available:
+For Azure SQL Database instances, there are a few nuances. You can have SQL logins, database users, and even contained database users for Azure AD (recommended). Although the server admin for Azure SQL Database essentially has sysadmin rights, you can create more limited admins by using database level roles in the master of the Azure SQL Database logical server. Two roles are available:
 
 - **loginmanager**: A database-level role that allows members to create logins for the database server.
 - **dbmanager**: A database-level role that allows members to create and delete databases for the database server.
