@@ -113,7 +113,7 @@ Example:
 
 - OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions
 
-- Value: c:\path|e:\path|c:\Whitelisted.exe
+- Value: c:\path|e:\path|c:\wlisted.exe
 
 ### Microsoft Endpoint Configuration Manager
 
