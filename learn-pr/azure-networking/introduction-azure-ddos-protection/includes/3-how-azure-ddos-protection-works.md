@@ -2,7 +2,7 @@ To better evaluate whether Contoso should upgrade to DDoS Protection Standard, y
 
 ## Features of DDoS Protection Standard
 
-As outlined in the previous unit, Azure DDoS Protection Standard provides more capabilities than the Basic tier. When enabling DDoS Protection Standard, the first step is to create a DDoS Protection Plan and associating virtual networks to that plan. Only services with a public IP address on the virtual networks are protected. For example, the public IP of an Azure Web Application Firewall that's available in Azure Application Gateway and deployed for layer 7 protections, is protected. Any systems using non-routable IP addresses on the protected virtual network aren’t included in the Protection Plan. This is a customer benefit, because these systems are not internet-facing and there's no charge for their protection.
+As outlined in the previous unit, Azure DDoS Protection Standard provides more capabilities than the Basic tier. When enabling DDoS Protection Standard, the first step is to create a DDoS Protection Plan and associate virtual networks to that plan. Only services with a public IP address on the virtual networks are protected. For example, the public IP of an Azure Web Application Firewall that's available in Azure Application Gateway and deployed for layer 7 protections is protected. Any systems using non-routable IP addresses on the protected virtual network aren’t included in the Protection Plan. This is a customer benefit, because these systems are not internet-facing and there's no charge for their protection.
 
 > [!NOTE]
 > To simplify deployment, you can configure one DDoS protection plan for your organization and link virtual networks from multiple subscriptions to the same plan.
@@ -12,7 +12,7 @@ After configuring a DDoS protection plan, you need to assign a scope to the plan
 > [!NOTE]
 > Your DDoS policy is generated from the DDoS protection plan. It's autoconfigured and optimized by applying machine learning algorithms and using specific network traffic monitoring.
 
-DDoS Standard Protection monitors network traffic and constantly compares it to the limits defined in the DDoS Policy. When your traffic exceeds the maximum limit, DDoS mitigation is initiated automatically. During the mitigation, packets sent to a protected resource are rerouted by the DDoS protection service. Several checks are performed on this traffic, to help ensure that packets conform to internet specifications and are not malformed. Valid IP traffic is forwarded to the intended service. DDoS Standard Protection applies three autotuned mitigation policies&#8212;TCP SYN, TCP, and UDP&#8212;for each public IP address associated with a protected resource.
+DDoS Standard Protection monitors network traffic and constantly compares it to the limits defined in the DDoS policy. When your traffic exceeds the maximum limit, DDoS mitigation is initiated automatically. During the mitigation, packets sent to a protected resource are rerouted by the DDoS protection service. Several checks are performed on this traffic, to help ensure that packets conform to internet specifications and are not malformed. Valid IP traffic is forwarded to the intended service. DDoS Standard Protection applies three autotuned mitigation policies&#8212;TCP SYN, TCP, and UDP&#8212;for each public IP address associated with a protected resource.
 
 When traffic decreases to less than the applicable threshold, the mitigation is suspended. This protection doesn't apply to App Service environments.
 
@@ -34,11 +34,11 @@ In the previous example, shortly after the detection of an attack, DDoS Protecti
 
 ### Test your DDoS protection
 
-Testing and validating are crucial to understand how a system will perform during a DDoS attack. An attack simulator for testing how well your protected services will perform during a DDoS attack is available for Azure customers at [BreakingPoint Cloud](https://www.keysight.com/us/en/products/network-security/breakingpoint-cloud.html). You can use the simulator to:
+Testing and validating are crucial to understanding how a system will perform during a DDoS attack. An attack simulator for testing how well your protected services will perform during a DDoS attack is available for Azure customers at [BreakingPoint Cloud](https://www.keysight.com/us/en/products/network-security/breakingpoint-cloud.html). You can use the simulator to:
 
 - Validate that your key services are protected during a DDoS attack.
 
-- Practice your incident respond for a DDoS attack.
+- Practice your incident response to a DDoS attack.
 
 - Help train your security personnel.
 
