@@ -1,5 +1,5 @@
 Modern classical computers are based on transistor technologies made from semiconductors to implement classical logic operations. Quantum computers take
-radically different approaches to exploit the properties of quantum systems, to implement qubits and quantum operations.
+radically different approaches to exploit the properties of quantum systems to implement qubits and quantum operations.
 
 In this unit, you will learn about different challenges we face to build a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed.
 
@@ -101,8 +101,8 @@ cloud-available superconducting quantum computers.
 
 Since superconducting properties appear at very low temperatures and higher
 temperatures imply more noise, these quantum computers work at very low
-temperatures, near absolute zero. This is why these chips are usually contained
-in big cryostats.
+temperatures. This is why, with the aid of a cryostat, the superconducting chip
+is cooled to near absolute zero
 
 ![alt_text=Simplified diagram of the cryostat of a superconducting quantum computer.](../media/2-superconducting-quantum-computer.jpg)
 

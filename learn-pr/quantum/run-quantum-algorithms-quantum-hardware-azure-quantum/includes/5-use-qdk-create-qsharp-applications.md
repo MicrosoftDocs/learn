@@ -1,9 +1,7 @@
-THIS ARTICLE IS STILL IN PROGRESS
-
 Now let's see how you can use Azure Quantum to test quantum algorithms, first in
 a simulator, and then in real hardware.
 
-In [previous modules](todo) of this learning path, you created a version of
+In [previous modules](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm) of this learning path, you created a version of
 Grover's algorithm in Q# and run it in a local simulator. Now let's run the same
 algorithm in a trapped ion quantum computer.
 
@@ -99,6 +97,7 @@ using a Grover's task.
 1. First you need to implement a marking oracle that takes an integer as input
    and marks the register using a controlled operation. You can achieve it using
    the following operation:
+
    ```qsharp
         operation markingNumber (
             idxMarked : Int,
@@ -108,6 +107,7 @@ using a Grover's task.
             (ControlledOnInt(idxMarked, X))(inputQubits, target);
         }
    ```
+
    This operation takes as input your input integer and flips the state of the
    target qubit if the control register state corresponds to the input integer.
    To do it uses the operation
@@ -277,6 +277,7 @@ As you can see, this job only requires 3 qubits, since the `QubitCount` is 3. Al
 Now that you know what resources you need to run your job, you can test it again the simulator. To do it:
 
 1. Open the Azure CLI and submit the job using the following command:
+
    ```azcli
    az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1
    ```
@@ -287,6 +288,7 @@ Now that you know what resources you need to run your job, you can test it again
    ------------  ------------------------------------  --------  --------        --------------------------------
    MyGroversJob  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.simulator  2021-01-20T21:34:35.406875+00:00
    ```
+
 1. Track the status of your job using `az quantum job show` command. To check on
    the status, use the `az quantum job show` command, being sure to replace the
    `job-id` parameter with the `Id` output by the previous command:
@@ -316,21 +318,24 @@ In this particular case, Grover's algorithm theoretically succeeds with 100% of 
 
 To run your code against hardware, you just need to repeat the same steps as for the simulator but changing the target to `ionq.qpu`. You can also choose the number of `shots` to run your program, otherwise is defaulted to 500.
 
-For example, if you choose 10 shots using the following command:
+For example, if you choose 5 shots using the following command:
 
 ```azcli
-az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1 --shots 10
+az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1 --shots 5
 ```
 
 You may obtain a result similar to this:
 
 ```output
+--------  -----------  -------------------------
+[1,0]     0.60000000   ▐████████████           |
+[0,1]     0.40000000   ▐███████                |
 ```
 
 As you can see, the marked index can't be inferred reliably from the histogram, even though the algorithm theoretically succeeds with a 100% of probability. This is because real qubits are subjected to noise and errors can sometimes
 lead to incorrect computations. To account for this errors, is convenient to increase the number of shots to reduce the effect of noise and get a more accurate histogram.
 
-For example, if you choose 5000 shots, you should obtain something like this:
+For example, if you choose 1000 shots, you should obtain something like this:
 
 ```output
 Result    Frequency
@@ -342,6 +347,6 @@ Result    Frequency
 
 ```
 
-This is a more accurate statistical representation of the theoretical outcome of the program and enable us to infer the correct index.
+This is a more accurate statistical representation of the theoretical outcome of the program that enable you to infer the correct index.
 
 In the next section, you are going to see some ideas to continue exploring quantum computing with Azure Quantum.
