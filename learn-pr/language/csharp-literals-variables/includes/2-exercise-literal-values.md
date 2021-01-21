@@ -15,7 +15,7 @@ There are many data types in C#.  But as you're getting started you only need to
 > [!NOTE]
 > You may notice as you begin to work in the code window that it colors certain syntax in different colors to indicate keywords, operators, data types and more.  Begin to take notice of the colors.  It can help you spot syntax errors as you type and can help you understand the code more effectively.
 
-### Step 1: Write a char literal to the console.
+### Step 1: Write a char literal to the console
 
 If we only wanted a single alphanumeric character printed to screen, we could create a **char literal** by surrounding one alphanumeric character in single-quotes.  
 
@@ -43,7 +43,7 @@ Just like the string data type, you use char whenever you have a single alphanum
 
 The term *char* is short for *character*.  In C#, they're officially referred to as "char", but frequently referred to as a "character".
 
-### Step 2: Write an int literal to the console.
+### Step 2: Write an int literal to the console
 
 If you want to print a numeric whole number (no fractions) value to Output, you can use an **int literal**.  An `int` literal requires no additional operators like the `string` or `char`.  
 
@@ -61,7 +61,7 @@ If you run the code, you'll get the following output.
 
 The term *int* is short for integer, which you may recognize from studying math.  In C#, they're officially referred to as "int", but frequently known by their alter ego "integer".
 
-### Step 3: Write a decimal literal to the console.
+### Step 3: Write a decimal literal to the console
 
 If we wanted to print a number that includes values after the decimal point, we could use a **decimal literal**.
 
@@ -82,7 +82,7 @@ If you run the code, you'll get the following output.
 > [!NOTE]
 > You can use either a lower-case `m` or upper-case `M` as the literal suffix for a decimal.
 
-### Step 4: Write a bool literal to the console.
+### Step 4: Write a bool literal to the console
 
 If we wanted to print a value representing either `true` or `false`, we could use a **bool literal**.
 
