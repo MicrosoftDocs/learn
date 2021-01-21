@@ -73,7 +73,7 @@ There are two ways to test that sessions are working correctly here: you can poi
 curl -b cookie.txt -c cookie.txt http://127.0.0.1:8080/session
 ```
 
-This command should display your HTTP session id, with a number that get incremented after each
+This command should display your HTTP session ID, with a number that get incremented after each
 request. Here's an example of this output:
 
 ![HTTP Session replication](../media/6-http-session.png)

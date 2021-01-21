@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.accelerate-and-scale-a-spring-boot-application-with-azure-cache-for-redis.5-store-http-session-data-in-redis-with-spring-session
+uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.store-session-data
 title: Store HTTP session data in Redis with Spring Session
 metadata:
   title: Learn how to use Spring Session to store HTTP session data into Azure Cache for Redis.
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-store-http-session-data-in-redis-with-spring-session.md)]
+  [!include[](includes/5-store-session-data.md)]
