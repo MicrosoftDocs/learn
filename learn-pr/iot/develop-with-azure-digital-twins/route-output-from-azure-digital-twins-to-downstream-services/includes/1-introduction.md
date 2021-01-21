@@ -72,11 +72,11 @@ Here are some use cases for routes:
 
 In this module, you will:
 
-- Build and simulate the chocolate factory twin
-- Create a route and filter for twin update notifications
-- Create and configure an Azure function, and send telemetry to an event hub
-- Create a Time Series Insights instance and connect it to Azure Digital Twins
-- Visualize and query your data in Time Series Insights
+- Build and simulate the chocolate factory twin.
+- Create a route and filter for twin update notifications.
+- Create and configure an Azure function, and send telemetry to an event hub.
+- Create a Time Series Insights instance, and connect it to Azure Digital Twins.
+- Visualize and query your data in Time Series Insights.
 
 ## Prerequisites
 

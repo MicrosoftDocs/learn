@@ -39,10 +39,10 @@ Data should now be flowing into your Time Series Insights instance, ready to be 
 
 1. You'll now address the scenario that was presented earlier: 
 
-   - Visualize vibration events during approximately the past 2 minutes. 
+   - Visualize vibration events during approximately the past two minutes. 
    - Check if there are unusual spikes or dips to ensure the process meets manufacturing quality standards. 
 
-   On the left side of the Time Series Insights explorer page, you'll see one twin from Azure Digital Twins. Select **GrindingStep**, select **Vibration**, and then select **Add**:
+   On the left side of the Time Series Insights Explorer page, you'll see one twin from Azure Digital Twins. Select **GrindingStep**, select **Vibration**, and then select **Add**:
 
     :::image type="content" source="../media/add-grinding-step-vibration-visualization.png" alt-text="Screenshot that shows how to visualize vibration events in Azure Time Series Insights.":::
 
@@ -52,17 +52,17 @@ You should now see the vibration readings from a device named GrindingStep:
 
 If you allow the simulation to run for much longer, your visualization will eventually look something like this one:
 
-:::image type="content" source="../media/prolonged-visualization-diagram.png" alt-text="Screenshot that shows prolonged Digital Twin vibration events data visualized in Azure Time Series Insights" lightbox="../media/prolonged-visualization-diagram.png":::
+:::image type="content" source="../media/prolonged-visualization-diagram.png" alt-text="Screenshot that shows prolonged Azure Digital Twin vibration event data visualized in Azure Time Series Insights." lightbox="../media/prolonged-visualization-diagram.png":::
 
 > [!TIP]
-> If you don't see data or if it says there are no events to display:
+> If you don't see data or if a message says there are no events to display:
 >
-> - Make sure the simulated client is running for at least 2 minutes
-> - Ensure "TSIFunction" is deployed successfully with no errors
-> - Select refresh on the Time Series Insights Explorer toolbar
+> - Make sure the simulated client is running for at least 2 minutes.
+> - Be sure that TSIFunction is deployed successfully, with no errors.
+> - Select the refresh button on the Time Series Insights Explorer toolbar.
 
-You can select the desired time range (2 minutes) by dragging the handles of the availability picker or using the date-time selector in the top-right corner:
+You can select the time range (two minutes) by dragging the handles of the availability picker or by using the date/time selector in the upper-right corner:
 
-:::image type="content" source="../media/edit-time-range.png" alt-text="Screenshot showing how to change the time range in Azure Time Series Insights" lightbox="../media/edit-time-range.png":::
+:::image type="content" source="../media/edit-time-range.png" alt-text="Screenshot that shows how to change the time range in Azure Time Series Insights." lightbox="../media/edit-time-range.png":::
 
-Review events during the time window. You may expand the time range to get a broader understanding of the Vibration events. Based on the data input, the vibration events pattern in the past 2 minutes appear normal without unusual spikes or dips; no further analysis or action is required at this stage.
+Review events during the time window. You can expand the time range to get a broader understanding of the vibration events. Based on the data input, the vibration events pattern for the past two minutes appears normal, without unusual spikes or dips. No further analysis or action is required at this stage.
