@@ -8,7 +8,7 @@ In this unit, you'll:
 
 ## Build a query by using the query pane
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics workspaces**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics Workspace**. Select **Create**.
 
 1. Under **General**, select **Logs**. The **Queries** page should open. If it doesn't, in the upper-right corner of the logs editor, select **Queries**.
 
