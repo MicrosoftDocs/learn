@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-ethereum-networks.6-deploy-ropsten-network
+metadata:
+  title: Exercise - Deploy to the Ropsten test network
+  description: Deploy the todo list smart contract to the Ropsten network.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Deploy to the Ropsten test network
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-deploy-ropsten-network.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-ethereum-networks.3-private-networks
+metadata:
+  title: Learn about private Ethereum networks
+  description: Get an overview of the private networks available including development and consortium networks.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about private Ethereum networks
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-private-networks.md)]

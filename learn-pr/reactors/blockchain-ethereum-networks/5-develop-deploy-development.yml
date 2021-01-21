@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-ethereum-networks.5-develop-deploy-development
+metadata:
+  title: Exercise - Develop a todo list and deploy to development
+  description: Create a new Truffle project, add a smart contract for a todo list, and deploy.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Develop a todo list and deploy to development
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-develop-deploy-development.md)]

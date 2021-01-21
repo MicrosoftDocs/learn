@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.reactors.blockchain-ethereum-networks
+metadata:
+  title: Connect and deploy to Ethereum networks
+  description: Learn about and use multiple networks that Ethereum has available for development, testing, and production.
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect and deploy to Ethereum networks
+summary: Learn about and use multiple networks that Ethereum has available for development, testing, and production.
+abstract:  |
+ By the end of this module, you will be able to:
+ 
+ - Identify the public and private networks available in Ethereum.
+ - Explain what is required to prepare a solution for the mainnet
+ - Know how to use Metamask with Infura to connect a solution to networks
+prerequisites: | 
+  - [Fundamental knowledge about blockchain](https://docs.microsoft.com/learn/modules/intro-to-blockchain/?azure-portal=true)
+  - [Solidity programming knowledge](https://docs.microsoft.com/learn/modules/blockchain-learning-solidity/?azure-portal=true)
+  - [Ethereum smart contract knowledge](https://docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
+  - Previous experience with a programming language like C, Python, or JavaScript
+  - Basic knowledge of programming concepts
+  - Familiarity with the command line to create new directories and install programs
+  - Node.js installed
+  - Truffle and Ganache CLI installed
+  - Visual Studio Code installed
+  - Blockchain Development Kit for Ethereum installed
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.reactors.blockchain-ethereum-networks.1-introduction
+- learn.reactors.blockchain-ethereum-networks.2-public-networks
+- learn.reactors.blockchain-ethereum-networks.3-private-networks
+- learn.reactors.blockchain-ethereum-networks.4-prepare-for-mainnet
+- learn.reactors.blockchain-ethereum-networks.5-develop-deploy-development
+- learn.reactors.blockchain-ethereum-networks.6-deploy-ropsten-network
+- learn.reactors.blockchain-ethereum-networks.7-knowledge-check
+- learn.reactors.blockchain-ethereum-networks.8-summary
+badge:
+  uid: learn.reactors.blockchain-ethereum-networks.badge
