@@ -155,7 +155,7 @@ You can edit the Sensor.js script so that it sends data as other devices. The Az
 :::image type="content" source="../media/sensor-type.png" alt-text="Screenshot that shows the script value to change to simulate sending data as a different sensor type.":::
 
 ```javascript
-// String containing host name, device ID, device key in the following formats:
+// String containing host name, device ID, and device key in the following formats:
 // "HostName=<iothub_host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>"
 const deviceConnectionString = "";
 let sendInterval;
