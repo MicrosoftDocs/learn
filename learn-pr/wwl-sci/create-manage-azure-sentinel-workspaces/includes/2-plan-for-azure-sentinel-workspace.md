@@ -8,7 +8,7 @@ The three implementation options:
 
 - Multi-Tenant
 
-## Single-Tenant single workspace
+## Single-tenant single workspace
 
 The single-tenant with a single Azure Sentinel workspace will be the central repository for logs across all resources within the same tenant.
 
@@ -16,7 +16,7 @@ This workspace receives logs from resources in other regions within the same ten
 
 ![Single Tenant Workspace](../media/lp5-se-m02-01.png)
 
-Single-Tenant with a single workspace pros and cons
+Single-Tenant with a single workspace pros and cons include:
 
 | Pros| Cons|
 | :--- | :--- |
@@ -26,7 +26,7 @@ Single-Tenant with a single workspace pros and cons
 | Azure Log Analytics RBAC to control data access||
 | Azure Sentinel RBAC for service RBAC||
 
-## Single-Tenant with regional Azure Sentinel workspaces
+## Single-tenant with regional Azure Sentinel workspaces
 
 The single-tenant with regional Azure Sentinel workspaces will have multiple Sentinel workspaces requiring the creation and configuration of multiple Azure Sentinel and Log Analytics workspaces.
 
@@ -49,7 +49,7 @@ TableName
 
 ```
 
-## Multi-Tenant Workspaces
+## Multi-tenant workspaces
 
 If you are required to manage an Azure Sentinel workspace, not in your tenant, you implement Multi-Tenant workspaces using Azure Lighthouse.  This security configuration grants you access to the tenants.  The tenant configuration within the tenant (regional or multi-regional) is the same consideration as before.
 
