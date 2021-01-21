@@ -7,10 +7,10 @@ Answer files are .xml text files that contain settings that enable you to custom
 
 Answer files are organized into two sections, as described in the following table.
 
-| Section    | Description                                                  |
-| ---------- | ------------------------------------------------------------ |
-| Components | Contains all the component settings that your answer file applies during setup. This section is further divided into configuration passes, each of which represents a different setup phase. These phases are: windowsPE, offlineServicing, generalize, specialize, auditSystem, auditUser, and oobeSystem. |
-| Packages   | Defines the packages that are used to distribute updates and language packs. You use this section to enable or disable selected Windows features. |
+|Section|Description|
+|--|--|
+|Components|Contains all the component settings that your answer file applies during setup. This section is further divided into configuration passes, each of which represents a different setup phase. These phases are: windowsPE, offlineServicing, generalize, specialize, auditSystem, auditUser, and oobeSystem.|
+|Packages|Defines the packages that are used to distribute updates and language packs. You use this section to enable or disable selected Windows features.|
 
 > [!TIP]
 > When you create your answer file, you can specify to which setup phase to add your settings.

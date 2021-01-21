@@ -8,11 +8,11 @@ One of the other server administrators at Contoso is experienced with Windows Po
 
 DSC is a PowerShell-based management platform that you can use to manage your servers and related IT infrastructure. DSC consists of three components, described in the following table.
 
-| Component      | Description                                                  |
-| -------------- | ------------------------------------------------------------ |
-| Configurations | Declarative PowerShell scripts that configure and define your resources. When the configuration runs, DSC applies the configuration as defined. This ensures that the target resource, in this case, a server, is in the defined state. It is the Local Configuration Manager (LCM) which applies and maintains these configurations. |
-| Resources      | Contain the code that defines and applies the desired configuration state of the resource. |
-| LCM            | Is the engine that DSC uses to apply the configurations. Periodically, the LCM verifies the state of the system, and where necessary, calls to the code in resources to reapply the desired state. |
+|Component|Description|
+|--|--|
+|Configurations|Declarative PowerShell scripts that configure and define your resources. When the configuration runs, DSC applies the configuration as defined. This ensures that the target resource, in this case, a server, is in the defined state. It is the Local Configuration Manager (LCM) which applies and maintains these configurations.|
+|Resources|Contain the code that defines and applies the desired configuration state of the resource.|
+|LCM|Is the engine that DSC uses to apply the configurations. Periodically, the LCM verifies the state of the system, and where necessary, calls to the code in resources to reapply the desired state.|
 
 > [!NOTE]
 > You don't need to install anything to use DSC; PowerShell DSC is included in Windows.
@@ -36,10 +36,10 @@ Every time the LCM runs, it completes the following steps:
 
 You can deploy DSC configuration in either push mode or pull mode, as described in the following table.
 
-| Mode | Description                                                  |
-| ---- | ------------------------------------------------------------ |
-| Push | In this mode, you manually send, or *push*, the desired configurations toward one or more managed computers. The LCM component makes sure that the state on each managed computer matches what your configuration specifies. |
-| Pull | In this mode, a *pull server* holds your configuration information. The LCM component on each managed computer polls the pull server periodically (the default is 15 minutes intervals), to get the latest configuration details. The pull server then sends the details about any configuration changes back to each managed computer. |
+|Mode|Description|
+|--|--|
+|Push|In this mode, you manually send, or *push*, the desired configurations toward one or more managed computers. The LCM component makes sure that the state on each managed computer matches what your configuration specifies.|
+|Pull|In this mode, a *pull server* holds your configuration information. The LCM component on each managed computer polls the pull server periodically (the default is 15 minutes intervals), to get the latest configuration details. The pull server then sends the details about any configuration changes back to each managed computer.|
 
 > [!TIP]
 > Although you can setup a Windows Server as a pull server, you can also use Azure Automation Desired State Configuration.

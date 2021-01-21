@@ -4,16 +4,16 @@ Contoso is in the process of deploying Windows Server 2019 server computers thro
 
 When you install Windows Server using the defaults from the local installation media, a number of settings are configured automatically, as described in the following table.
 
-| Setting                      | Description                                                  |
-| ---------------------------- | ------------------------------------------------------------ |
-| Computer name                | The computer name is automatically generated. You'll need to change the name to something meaningful, and unique, within your organization. |
-| Workgroup                    | The server is added to a workgroup called WORKGROUP. Typically, you'll want your server computers to be part of your Active Directory Domain Services (AD DS) domain. |
-| Network settings             | By default, both IPv4 and IPv6 are enabled and bound to the installed network interface cards (NICs). In the case of IPv4, a Dynamic Host Configuration Protocol (DHCP) configuration is assigned. For IPv6, stateless autoconfiguration is enabled. Both these defaults are probably suitable. |
-| Time zone                    | The time zone defaults to the (UTC-08:00) Pacific Time (US & Canada) unless your installation media was based on a different locale. You'll need to change the time zone, and the computer's time and date, to those which are appropriate for your location. |
-| Locale and language settings | The initial values are specified during an interactive installation, or are implied by the installation media locale. You'll need to update these settings to those which are appropriate for the server's physical location. |
-| Roles and features           | Very few roles or features are enabled by default in a standard installation. Typically, the Storage Services role service, and a number of features are enabled. These features include: elements of .NET Framework, Windows Defender Antivirus, and some elements of Windows PowerShell, including Windows PowerShell 5.1 and Windows PowerShell ISE. |
-| Firewall settings           | The Windows Defender Firewall is enabled by default. Until you define them as otherwise, all NICs are assigned to the Public network location profile - which is generally more restrictive that Private network connections. |
-| Activation | Typically, the server will not be activated. |
+|Setting|Description|
+|--|--|
+|Computer name|The computer name is automatically generated. You'll need to change the name to something meaningful, and unique, within your organization.|
+|Workgroup|The server is added to a workgroup called WORKGROUP. Typically, you'll want your server computers to be part of your Active Directory Domain Services (AD DS) domain.|
+|Network settings|By default, both IPv4 and IPv6 are enabled and bound to the installed network interface cards (NICs). In the case of IPv4, a Dynamic Host Configuration Protocol (DHCP) configuration is assigned. For IPv6, stateless autoconfiguration is enabled. Both these defaults are probably suitable.|
+|Time zone|The time zone defaults to the (UTC-08:00) Pacific Time (US & Canada) unless your installation media was based on a different locale. You'll need to change the time zone, and the computer's time and date, to those which are appropriate for your location.|
+|Locale and language settings|The initial values are specified during an interactive installation, or are implied by the installation media locale. You'll need to update these settings to those which are appropriate for the server's physical location.|
+|Roles and features|Very few roles or features are enabled by default in a standard installation. Typically, the Storage Services role service, and a number of features are enabled. These features include: elements of .NET Framework, Windows Defender Antivirus, and some elements of Windows PowerShell, including Windows PowerShell 5.1 and Windows PowerShell ISE.|
+|Firewall settings|The Windows Defender Firewall is enabled by default. Until you define them as otherwise, all NICs are assigned to the Public network location profile - which is generally more restrictive that Private network connections.|
+|Activation|Typically, the server will not be activated. |
 
 After you have installed the server, you'll need to reconfigure some of these settings.
 

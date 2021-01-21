@@ -13,22 +13,22 @@ You typically use Sconfig to perform the initial configuration directly after th
 
 Sconfig provides several options, which are described in the following table.
 
-| Option                       | Description                                                  |
-| - |  |
-| Domain/Workgroup             | Join the domain or workgroup of choice                       |
-| Computer Name                | Set the computer name                                        |
-| Add Local Administrator      | Add users to the local Administrators group       |
-| Configure Remote Management  | Remote management is enabled by default. This setting allows you to enable or disable remote management and configure the server to respond to a ping. |
-| Windows Update Settings      | Configure the server to use automatic, download only or manual updates. |
-| Download and Install Updates | Perform an immediate search for all updates or only recommended updates. |
-| Network Settings             | Configure the IP address to be assigned automatically by a Dynamic Host Configuration Protocol (DHCP) Server or you can assign a static IP address manually. This option also allows you to configure Domain Name System (DNS) Server settings for the server. |
-| Date and Time                | Brings up the GUI for changing the date, time, and time zone. It also has tabs to add clocks and choose an Internet time server to sync with. |
-| Telemetry Settings           | Allows Windows to periodically collect and upload statistical information about the server and upload it to Microsoft. |
-| Windows Activation           | Provides three options—Display license info, Activate Windows, and Install product key |
-| Log Off User                 | Signs out the current user                                    |
-| Restart Server               | Restarts the server                                          |
-| Shut Down Server             | Shuts down the server                                        |
-| Exit to Command Line         | Returns to the command prompt                                |
+|Option|Description|
+|--|--|
+|Domain/Workgroup|Join the domain or workgroup of choice|
+|Computer Name|Set the computer name|
+|Add Local Administrator|Add users to the local Administrators group|
+|Configure Remote Management|Remote management is enabled by default. This setting allows you to enable or disable remote management and configure the server to respond to a ping.|
+|Windows Update Settings|Configure the server to use automatic, download only or manual updates.|
+|Download and Install Updates|Perform an immediate search for all updates or only recommended updates.|
+|Network Settings|Configure the IP address to be assigned automatically by a Dynamic Host Configuration Protocol (DHCP) Server or you can assign a static IP address manually. This option also allows you to configure Domain Name System (DNS) Server settings for the server.|
+|Date and Time|Brings up the GUI for changing the date, time, and time zone. It also has tabs to add clocks and choose an Internet time server to sync with.|
+|Telemetry Settings|Allows Windows to periodically collect and upload statistical information about the server and upload it to Microsoft.|
+|Windows Activation|Provides three options—Display license info, Activate Windows, and Install product key|
+|Log Off User|Signs out the current user|
+|Restart Server|Restarts the server|
+|Shut Down Server|Shuts down the server|
+|Exit to Command Line|Returns to the command prompt|
 
 ## Demonstration
 
