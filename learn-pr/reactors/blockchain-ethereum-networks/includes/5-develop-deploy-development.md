@@ -90,7 +90,7 @@ For this tutorial, we'll use:
     },
    ```
 
-1. Open a terminal window within VS COde and start up a development blockchain using ganache-cli by typing `ganache-cli`.
+1. Open a terminal window within VS Code and start up a development blockchain using ganache-cli by typing `ganache-cli`.
 
 1. In Visual Studio Code, open a terminal window to compile and migrate the TodoList contract to the development network by running the following:
 

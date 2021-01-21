@@ -206,4 +206,4 @@ Go to [ropsten.etherscan.io](https://ropsten.etherscan.io), enter the contract a
 
 :::image type="content" source="../media/ropsten-etherscan-with-deployed-contract.png" alt-text="Screenshot showing the contract deployed in Etherscan .":::
 
-You can also open a new terminal window within Visual Studio Code and similar to interacting with your contract on the ganache development blockchain, you can interact with your contract with the **truffle console**. The sample code below displays two networks which are active. Continue to interact with and inspect transactions using *truffle console* and *Ropsten Etherscan*.
+You can also open a new terminal window within Visual Studio Code and similar to interacting with your contract on the Ganache development blockchain, you can interact with your contract with the **truffle console**. The sample code below displays two networks which are active. Continue to interact with and inspect transactions using *truffle console* and *Ropsten Etherscan*.
