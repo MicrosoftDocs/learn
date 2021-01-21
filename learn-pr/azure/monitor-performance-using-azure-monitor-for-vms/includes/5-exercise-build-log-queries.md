@@ -14,17 +14,17 @@ In this unit, you'll:
 
     :::image type="content" source="../media/4-queries-logs-pane.png" alt-text="Screenshot showing where to select Queries from within the log editor pane." lightbox="../media/4-queries-logs-pane.png":::
 
-1. Clear the **Log Analytics workspaces** filter at the top.
+1. Locate **Category** on the upper left.
 
-    :::image type="content" source="../media/5-clear-log-analytics-filter.png" alt-text="Screenshot of where to clear Log Analytics workspaces filter." lightbox="../media/5-clear-log-analytics-filter.png":::
+    :::image type="content" source="../media/5-locate-category.png" alt-text="Screenshot of where Category shows up in the queries pane." lightbox="../media/5-locate-category.png":::
 
-1. Select **Virtual Machine Scale Sets** on the far left, under **All Queries**.
+1. Change the filter on the top left from **Category** to **Resource Type** and select **Virtual Machine Scale Sets** on the far left under **All Queries**.
 
-    :::image type="content" source="../media/5-virtual-machine-scale-set-queries.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-virtual-machine-scale-set-queries.png":::
+    :::image type="content" source="../media/5-resource-type-vmss.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-resource-type-vmss.png":::
 
 1. Select the **Chart CPU usage trends by computer** query.
 
-     :::image type="content" source="../media/5-cpu-usage-trends.png" alt-text="Screenshot showing what query to select for charting CPU trends." lightbox="../media/5-cpu-usage-trends.png":::
+     :::image type="content" source="../media/5-resource-type-vmss-chart-cpu.png" alt-text="Screenshot showing what query to select for charting CPU trends." lightbox="../media/5-resource-type-vmss-chart-cpu.png":::
 
 1. Select **Run**.
 
