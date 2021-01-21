@@ -33,7 +33,7 @@ Azure DevOps includes these features:
 The high-level steps to configure and run a performance test by using the Azure portal are outlined here.
 
 > [!IMPORTANT]
-> On March 31, 2020, we’ll retire cloud-based load testing in Microsoft Visual Studio and cloud-based load testing in Azure DevOps, the performance testing feature of App Service and Application Insights in the Azure portal. See [cloud-based load testing features to be retired](https://azure.microsoft.com/en-us/updates/cloud-based-load-testing-features-will-be-retired-on-march-31-2020/).
+> On March 31, 2020, we’ll retire cloud-based load testing in Microsoft Visual Studio and cloud-based load testing in Azure DevOps, the performance testing feature of App Service and Application Insights in the Azure portal. See [cloud-based load testing features to be retired](https://azure.microsoft.com/updates/cloud-based-load-testing-features-will-be-retired-on-march-31-2020/).
 
 ### 1. Open your web app
 
