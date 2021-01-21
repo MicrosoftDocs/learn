@@ -28,18 +28,18 @@ quiz:
     - content: "When we need our values to continue valid even past their lifetime scope."
       isCorrect: false
       explanation: "Incorrect. This statement describes a characteristic of modules."
-  - content: "Each of the following, if true, describes **third party modules** in Rust, EXCEPT:"
+  - content: "Each of the following, if true, describes *third-party modules* in Rust, EXCEPT:"
     choices:
     - content: "Dependencies can be fetched and compiled by Cargo."
       isCorrect: false
       explanation: "Incorrect. This describes a characteristic of third-party modules."
-    - content: "Third party crates and their intended versions should be declared in the `src/main.rs` file."
+    - content: "Third-party crates and their intended versions should be declared in the `src/main.rs` file."
       isCorrect: true
-      explanation: "Correct. Third party crates should be declared in the `Cargo.toml` file."
+      explanation: "Correct. Third-party crates should be declared in the `Cargo.toml` file."
     - content: "Dependencies are normally fetched from the Crates.io repository."
       isCorrect: false
       explanation: "Incorrect. This describes a characteristic of third-party modules."
-    - content: "Only public items can be accessed from third party crates."
+    - content: "Only public items can be accessed from third-party crates."
       isCorrect: false
       explanation: "Incorrect. This describes a characteristic of third-party modules."
   - content: "Which of the following statements best describes a crate?"
