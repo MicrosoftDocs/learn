@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.language.go-errors-logs
+metadata:
+  title: Implement error handling and logging in Go
+  description: Understand how to handle errors and log helpful information in your Go programs.
+  ms.date: 01/21/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement error handling and logging in Go
+summary: Understand how to handle errors and log helpful information in your Go programs.
+abstract:  |
+  In this module, you will learn about:
+  - Go's approach for error handling
+  - Error handling strategies
+  - The `log` standard package for logging
+  - Logging frameworks
+prerequisites: |
+  - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [VS Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
+  - Be able to create and modify `.go` files
+  - Be able to run Go applications using the terminal prompt
+  - Have knowledge of basic data types like `string`, `int`, and `boolean`
+  - Have knowledge of how to write basic data control flows like `if` and `for` statements
+  - Have knowledge of how to write functions with multiple return values
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.language.go-errors-logs.0-introduction
+- learn.language.go-errors-logs.1-errors
+- learn.language.go-errors-logs.2-logs
+- learn.language.go-errors-logs.3-knowledge-check
+- learn.language.go-errors-logs.4-summary
+badge:
+  uid: learn.language.go-errors-logs.badge

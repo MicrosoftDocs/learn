@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-errors-logs.3-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/21/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Answer these questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's the idiomatic way of handling errors in Go?"
+    choices:
+    - content: "Using a try/catch block."
+      isCorrect: false
+      explanation: "Incorrect, Go doesn't support the try/catch block."
+    - content: "Using an `if` condition for a function that returns multiple values, in which case the last value would be the error."
+      isCorrect: true
+      explanation: "Correct, the simplest way in Go for handling an error is by using an `if` condition."
+    - content: "Using an `if` condition and check if the response is `nil`."
+      isCorrect: false
+      explanation: "Incorrect, you should check if the error value is `nil` which is usually the last return value."
+    - content: "Simply letting the program to terminate."
+      isCorrect: false
+      explanation: "Incorrect, you should always check for errors."
+  - content: "What's the function you could use to create an error variable?"
+    choices:
+    - content: "errors.New('Employee not found!')."
+      isCorrect: true
+      explanation: "Correct. You should create an error variable if you're planning to re-use the error message."
+    - content: "fmt.Errorf('Employee not found!')."
+      isCorrect: false
+      explanation: "Incorrect, the proper way to create an error variable is with errors.New('error message')."
+    - content: "error.New('Employee not found!')."
+      isCorrect: false
+      explanation: "Incorrect, the proper way to create an error variable is with errors.New('error message')."
+    - content: "log.Error('Employee not found!'')."
+      isCorrect: false
+      explanation: "Incorrect, the proper way to create an error variable is with errors.New('error message')."  
+  - content: "Which are the functions from the log package??"
+    choices:
+    - content: "log.Print, log.Error, log.Info."
+      isCorrect: false
+      explanation: "Incorrect, log.Error and log.Info doesn't exist."
+    - content: "log.Fatal, log.Print, log.Panic."
+      isCorrect: true
+      explanation: "Correct, these are functions that exist in the log package."
+    - content: "log.Info, log.Warn, log.Fatal."
+      isCorrect: false
+      explanation: "Incorrect, log.Info and log.Warn doesn't exist."
+    - content: "log.Printf, log.Warning, log.Error."
+      isCorrect: false
+      explanation: "Incorrect, log.Warning and log.Error doesn't exist."
+  - content: "What's the function you could use to configure logging to a file?"
+    choices:
+    - content: "log.SetOutputFile(file)."
+      isCorrect: false
+      explanation: "Incorrect, the function to configure the output file is log.SetOutput(file)."
+    - content: "log.SetFilePath(file)."
+      isCorrect: false
+      explanation: "Incorrect, the function to configure the output file is log.SetOutput(file)."
+    - content: "log.SetPath(file)."
+      isCorrect: false
+      explanation: "Incorrect, the function to configure the output file is log.SetOutput(file)."
+    - content: "log.SetOutput(file)."
+      isCorrect: true
+      explanation: "Correct, the function to configure the output file is log.SetOutput(file)."
+  - content: "Why would you want to use a logging framework?"
+    choices:
+    - content: "To configure logging levels, multiple outputs, global contexts."
+      isCorrect: true
+      explanation: "Correct, the standard log package doesn't offer this type of functionality that you might need as your codebase grows."
+    - content: "To make your programs run slower."
+      isCorrect: false
+      explanation: "Incorrect, although this might be true to some extent, this is not accurate."
+    - content: "To simply configure structured logging."
+      isCorrect: false
+      explanation: "Incorrect, although you can structure logs, this is not the primary purpose."
+    - content: "To write less code."
+      isCorrect: false
+      explanation: "Incorrect, although you might end up writing less code, this is not the primary purpose."    
