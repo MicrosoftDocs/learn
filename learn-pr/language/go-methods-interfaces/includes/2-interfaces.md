@@ -393,4 +393,4 @@ func main() {
 }
 ```
 
-Another use case for interfaces in a server API can be found when using the `http.Handle` function. You can find more information about it at the ["Writing Web Applications"](https://golang.org/doc/articles/wiki/) post from the Go site.
+Another use case for interfaces in a server API can be found when using the `http.Handle` function. You can find more information about it at the ["Writing Web Applications"](https://golang.org/doc/articles/wiki?azure-portal=true) post from the Go site.
