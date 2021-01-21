@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-vmware-solution.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 01/21/2021
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

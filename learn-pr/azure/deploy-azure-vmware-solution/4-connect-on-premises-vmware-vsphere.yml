@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-vmware-solution.connect-on-premises-vmware
+metadata:
+  title: Connect to an on-premises VMware vSphere environment
+  description: Connect to an on-premises VMware vSphere environment
+  ms.date: 01/21/2021
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect to an on-premises VMware vSphere environment
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-connect-on-premises-vmware-vsphere.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which criteria does Application Gateway use to route requests to a web server?"
+    choices: 
+    - content: "The IP address of the web server that is the target of the request"
+      isCorrect: false
+      explanation: "The listener routes requests based on the hostname, port, and path in the URL of the request"
+    - content: "The region in which the servers hosting the web application are located."
+      isCorrect: false
+      explanation: "The listener routes requests based on the hostname, port, and path in the URL of the request"
+    - content: "The hostname, port, and path in the URL of the request"
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "Which load balancing strategy does Application Gateway implement?"
+    choices:
+    - content: "Application Gateway selects the server in the backend pool that currently has the lightest load."
+      isCorrect: false
+      explanation: "The Application Gateway load balancer uses a round robin strategy to distribute requests."
+    - content: "Application Gateway polls each server in the backend pool in turn, and sends the request to the first server that responds."
+      isCorrect: false
+      explanation: "The Application Gateway load balancer uses a round robin strategy to distribute requests."
+    - content: "Application Gateway follows a round-robin approach, distributing requests to each available server in a backend pool in turn."
+      isCorrect: true
+      explanation: "Correct!"

@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.deploy-azure-vmware-solution
+metadata:
+  title: Prepare to migrate VMware workloads to Azure by deploying Azure VMware solution
+  description: Plan and deploy Azure VMware Solution to migrate VMware workloads to Azure.
+  ms.date: 01/21/2021
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to migrate VMware workloads to Azure by deploying Azure VMware solution
+summary: Learn how to plan an Azure VMware Solution deployment by reviewing the requirements and assessing your migration. Prepare for the VMware workload migration by deploying an Azure VMware Solution resource. After Azure VMware Solution is deployed, configure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment to Azure VMware Solution.
+abstract: |
+  By the end of this module, you will be able to:
+  - Plan a successful Azure VMware Solution deployment
+  - Connect to an on-premises VMware environment
+prerequisites: |
+  - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN
+  - Basic knowledge of network concepts, such as classless inter-domain routing (CIDR), border gate protocol (BGP) routing, dynamic host configuration protocol (DHCP), and subnets
+iconUrl: /learn/achievements/deploy-azure-vmware-solution.svg
+badge:
+  uid: learn.deploy-azure-vmware-solution.badge
+levels: 
+- intermediate
+roles: 
+- solution-architect
+- administrator
+products:
+- azure-vmware-solution
+units:
+- learn.deploy-azure-vmware-solution.introduction
+- learn.deploy-azure-vmware-solution.plan-azure-vmware-solution
+- learn.deploy-azure-vmware-solution.deploy-azure-vmware-solution
+- learn.deploy-azure-vmware-solution.connect-on-premises-vmware
+- learn.deploy-azure-vmware-solution.knowledge-check
+- learn.deploy-azure-vmware-solution.summary
