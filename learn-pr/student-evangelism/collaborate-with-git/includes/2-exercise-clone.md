@@ -18,9 +18,9 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 1. Then execute a `git init` command to initialize the repository:
 
-     ```bash
-     git init
-     ```
+    ```bash
+    git init
+    ```
 
 1. Configure Git by adding your credentials, replacing `<USER_NAME>` and `<USER_EMAIL>` with your own information (for example, "Shana" and "shana@email.com")
 
@@ -36,7 +36,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     mkdir CSS
     touch CSS/site.css
     git add .
-    git commit index.html -m "Create empty index.html, site.css files"
+    git commit -m "Create empty index.html, site.css files"
     ```
 
 1. Now add some HTML to your file using Cloud Shell's code editor, which you can open with the `code` command. Open **index.html** in the online editor by typing `code index.html` at the terminal prompt:
