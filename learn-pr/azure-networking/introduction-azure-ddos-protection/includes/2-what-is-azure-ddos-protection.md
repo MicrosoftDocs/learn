@@ -33,10 +33,7 @@ DDoS protection is similar to a secure and functioning backup system. A backupâ€
 
 ### DDoS  Protection Basic
 
-Azure provides continuous protection against DDoS attacks. At no additional cost, Azure DDoS Protection Basic protects every Azure service that uses public IPv4 and IPv6 addresses. This DDoS protection service helps to protect all Azure services, including platform as a service (PaaS) services such as Azure DNS. DDoS Protection Basic requires no user configuration or application changes.
-
-> [!NOTE]
-> DDoS protection does not store customer data.
+Azure provides continuous protection against DDoS attacks. DDoS protection does not store customer data. At no additional cost, Azure DDoS Protection Basic protects every Azure service that uses public IPv4 and IPv6 addresses. This DDoS protection service helps to protect all Azure services, including platform as a service (PaaS) services such as Azure DNS. DDoS Protection Basic requires no user configuration or application changes.
 
 DDoS Protection Basic provides:
 
@@ -58,9 +55,7 @@ The following list describes the features and benefits of DDoS Protection Standa
 - It provides detailed attack analytic reports during the attack in five-minute intervals and an after-action report for a complete summary of the event, when the attack ends.
 - It includes support for the integration of mitigation logs with Azure Security Center, Azure Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
 - Microsoft provides an SLA guarantee that the application availability/performance will not be impacted during a DDoS attack as well as cost protection in the form of Azure credits back for any scale of resources during an attack.
-
-> [!NOTE]
-> Azure Monitor collects monitoring telemetry from DDoS Protection Standard for access to summarized attack metrics.
+- Azure Monitor collects monitoring telemetry from DDoS Protection Standard for access to summarized attack metrics.
 
 Cost guarantee and DDoS rapid response support are two of the other important DDoS Standard Protection features.
 
@@ -73,11 +68,10 @@ At the beginning of a DDoS attack, the attack often triggers the automatic scale
 
 ### DDoS rapid response support
 
-Microsoft has created a DDoS Protection rapid response team. You can contact this team for help during a DDoS attack and request a post-attack analysis. You can notify the team by opening a support request on the Azure portal. Contact the team if:
+Microsoft has created a DDoS Protection rapid response team. You can contact this team for help during a DDoS attack and request a post-attack analysis. The DDoS Protection rapid response team follows the Azure Rapid Response support model.
+
+You can notify the team by opening a support request on the Azure portal. Contact the team if:
 
 - Your company is planning a virtual event that's expected to significantly increase your network traffic.
 - There's an attack that's severely degrading the performance of a protected critical business system.
 - Your security team determines that protected resources are under attack, but DDoS Protection Standard isnâ€™t mitigating the attack effectively.
-
-> [!NOTE]
-> The DDoS Protection rapid response team follows the Azure Rapid Response support model.
