@@ -1,5 +1,3 @@
-# Validate references with lifetimes
-
 Lifetimes are Rust’s answer to the question of memory safety. They allow Rust to ensure memory safety without the performance costs of garbage collection.
 
 The main goal of lifetimes is to prevent dangling references, which cause a program to reference data other than the data it’s intended to reference.
@@ -117,7 +115,7 @@ fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-You can try this code at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=39c0e9eab0903d6b16f97e712709426a) link.
+You can try this code at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=39c0e9eab0903d6b16f97e712709426a&azure-portal=true) link.
 
 Generic lifetime parameters are annotated inside angle brackets between the function name and the parameter list. Since the constraint we want to express in this signature is *that all the references in the parameters and the return value must have the same lifetime*, we used the same lifetime name `'a` and then add it to each reference in the function signature.
 
@@ -145,7 +143,7 @@ fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-You'll find this snippet at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8624616d4aede430f4c74d168dcfba01) link.
+You'll find this snippet at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8624616d4aede430f4c74d168dcfba01&azure-portal=true) link.
 
 If you guessed that this code is broken, you were right. The error we see this time is this:
 
@@ -186,7 +184,7 @@ fn main() {
 }
 ```
 
-The code above is available at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e992388f5a562abf9301a3bd6c6bdc0d) link.
+The code above is available at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e992388f5a562abf9301a3bd6c6bdc0d&azure-portal=true) link.
 
 We declare the name of the generic lifetime parameter inside angle brackets after the name of the
 struct so we can use the lifetime parameter in the body of the struct definition. This annotation
@@ -229,4 +227,4 @@ fn main() {
 }
 ```
 
-This failing code snippet can be found at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d858080a07ef5e0bc460dc382734e7a3) link.
+This failing code snippet can be found at this [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d858080a07ef5e0bc460dc382734e7a3&azure-portal=true) link.

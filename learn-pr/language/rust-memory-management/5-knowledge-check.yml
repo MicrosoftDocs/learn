@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.languages.rust-memory-management.5-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 
+  ms.date: 01/21/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -15,7 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the meaning of the `<'a>` segment in the following struct declaration? `struct Nominee<'a> { person: &'a Person }`" 
+  - content: "What is the meaning of the `<'a>` segment in the following struct declaration?
+  
+     ```rust
+     struct Nominee<'a> {
+       person: &'a Person 
+     }
+     ```
+     "
     choices:
     - content: "It means that the `Nominee` struct will live no longer than the `Person` value it borrows from."
       isCorrect: true

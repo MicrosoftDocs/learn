@@ -1,5 +1,3 @@
-# Learn about the Borrow Checker
-
 If you take a closer look at the previous compiler error, you'll see a hint about changing our reference to be **mutable** by changing our type parameter from `&String` to `&mut String`. We also need to declare our original value as mutable:
 
 ```rust

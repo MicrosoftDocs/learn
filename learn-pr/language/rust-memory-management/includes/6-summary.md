@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you learned:
 
 - How values are passed around via moves, borrows, and immutable borrows.

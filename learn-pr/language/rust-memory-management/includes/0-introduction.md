@@ -1,5 +1,3 @@
-# Introduction
-
 In this module we are going to discover one of Rust's most powerful features: the Borrow Checker.
 
 It enables Rust to make memory safety guarantees without needing a garbage collector, unlike many other languages.

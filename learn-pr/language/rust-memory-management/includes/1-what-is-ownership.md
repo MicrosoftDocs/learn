@@ -1,5 +1,3 @@
-# What is ownership?
-
 In Rust, memory is managed through an ownership system, which is a set of rules checked at compile time. None of the ownership features slow down your program while it’s running.
 
 To understand ownership, we must first take a look at Rust's *scoping rules* and *move semantics*.
@@ -39,7 +37,7 @@ println!("{}", mascot);
       |                    ^^^^^^ not found in this scope
 ```
 
-You can run this example online at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1fc552675319bd4a6954339519513f6e).
+You can run this example online at this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1fc552675319bd4a6954339519513f6e&azure-portal=true).
 
 ## Move Semantics
 

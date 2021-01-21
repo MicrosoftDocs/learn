@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.languages.rust-memory-management.0-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 
+  ms.date: 01/21/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

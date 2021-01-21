@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.languages.rust-memory-management.1-what-is-ownership
 metadata:
   title: What is ownership?
   description: Learn about how memory is managed through ownership.
-  ms.date: 
+  ms.date: 01/21/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

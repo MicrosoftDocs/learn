@@ -1,5 +1,3 @@
-# Knowledge Check
-
 What is the meaning of the `<'a>` segment in the following struct declaration?
 
 ```rust
