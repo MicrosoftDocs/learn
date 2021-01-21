@@ -64,7 +64,7 @@ Goddard Space Flight Center
 If you run the command `ls` again, you'll see that the new files have been added to your directory:
 
 ```output
-file1 file2 NASA-logs-1995.txt NASA-software-API.txt
+file1 NASA-logs-1995.txt NASA-software-API.txt
 ```
 
 The contents of each file will be displayed on the `stdout` starting on a new line and in the order that the file names appear in the command. You can also redirect this output to a second file, `file2`.
