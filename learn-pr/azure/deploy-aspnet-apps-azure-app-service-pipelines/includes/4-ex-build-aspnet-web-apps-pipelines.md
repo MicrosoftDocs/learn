@@ -27,7 +27,7 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 1. On the **Get started with Azure DevOps** page, select **Continue**.
 1. On the **Create a project to get started** page, in the **Project name** text box, enter **Deploy ASP.NET web apps with Azure Pipelines**, leave the visibility set to **Private**, and select **+ Create project**.
 
-## Creat a GitHub repository from a template and generate an Azure DevOps build pipeline
+## Create a GitHub repository from a template and generate an Azure DevOps build pipeline
 
 Next, you will create your own repository from a GitHub template repository, containing the sample ASP.NET app, into your GitHub account and then generate an Azure DevOps build pipeline using it as its source.
 
@@ -39,7 +39,7 @@ Next, you will create your own repository from a GitHub template repository, con
    :::image type="content" source="../media/4-where-is-your-code-github-yaml.png" alt-text="The New pipeline pane displaying the option to use the GitHub repository as the source for a YAML pipeline.":::
 
 1. On the **Select a repository** pane, select the newly created repository. You will be automatically redirected to [Github.com](https://github.com/?azureportal=true).
-1. On the **Approve & Install Azure Pipelines** pane, accept the **Only select repositories** option, then select the **Approve & Install** button. When prompted to authenticate, type the password of your GitHub user account, then, when prompted again, authenticate with the Azure DevOps user account.
+1. On the **Approve & Install Azure Pipelines** pane, accept the **Only select repositories** option, then select the **Approve & Install** button. When prompted to authenticate, enter the password of your GitHub user account, then, when prompted again, authenticate with the Azure DevOps user account.
 1. If prompted, on the **Azure Pipelines by Microsoft would like permission to** page, select **Authorize Azure Pipelines**.
 1. Back in the Azure DevOps portal, on the **Select a repository** pane, select the newly created repository.
 1. In the Azure DevOps portal, on the **Configure your pipeline** pane, select **ASP.NET**.
