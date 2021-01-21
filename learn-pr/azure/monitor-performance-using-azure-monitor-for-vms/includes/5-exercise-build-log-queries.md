@@ -20,11 +20,11 @@ In this unit, you'll:
 
 1. Change the filter on the top left from **Category** to **Resource Type** and select **Virtual Machine Scale Sets** on the far left under **All Queries**.
 
-    :::image type="content" source="../media/5-resource-type-vmss.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-resource-type-vmss.png":::
+    :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-resource-type-virtual-machine-scale-set.png":::
 
 1. Select the **Chart CPU usage trends by computer** query.
 
-     :::image type="content" source="../media/5-resource-type-vmss-chart-cpu.png" alt-text="Screenshot showing what query to select for charting CPU trends." lightbox="../media/5-resource-type-vmss-chart-cpu.png":::
+     :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png" alt-text="Screenshot showing what query to select for charting CPU trends." lightbox="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png":::
 
 1. Select **Run**.
 
