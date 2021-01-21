@@ -6,17 +6,15 @@ Now that everything is set up, the only thing left to do is to make Twilio call 
 
 1. Log in to [Twilio](https://www.twilio.com?azure-portal=true).
 
-1. On the left pane, select the ellipsis (**...**).
+1. In the left menu, select the ellipsis (**...**).
 
-    > [!div class="mx-imgBorder"]
-    > ![A screenshot showing the ellipsis button on the left pane](../media/twilio-elipses.png)
+    :::image type="content" source="../media/twilio-elipses.png" alt-text="Screenshot that shows the ellipsis button highlighted in the left menu."::: 
 
 1. Select **Super Network** > **Phone Numbers** > **Manage Numbers** > **Active Numbers**, and then select your phone number.
 
-1. In the **Messaging** section, paste the function endpoint URL that you copied from the previous unit as the webhook destination for arriving messages.
+1. In the **Messaging** section, paste the function endpoint URL that you copied from the last unit as the webhook destination for arriving messages.
 
-    > [!div class="mx-imgBorder"]
-    > ![A screenshot showing the webhook destination](../media/twilio-webhook.png)
+    :::image type="content" source="../media/twilio-webhook.png" alt-text="Screenshot that shows the webhook destination.":::
 
 1. For the webhook request method, select **HTTP Post**.
 
@@ -26,5 +24,4 @@ Now that everything is set up, the only thing left to do is to make Twilio call 
 
 You can now get started using the application by sending a text message to your Twilio phone number. Send a text message that contains your location and a temperature range. Every 10 minutes you'll receive a reply that contains the temperature ranges for the next five days if the forecast is below or above your specified temperature range.
 
-> [!div class="mx-imgBorder"]
-> ![A screenshot of text messages sent to and received by our application](../media/text-message.png)
+:::image type="content" source="../media/text-message.png" alt-text="Screenshot of text messages sent to and received by our application.":::

@@ -3,10 +3,10 @@ uid: learn.advocates.send-crop-weather-alerts.5-create-twilio-account
 title: Exercise - Create a Twilio account for sending and receiving text messages
 metadata:
   title: Exercise - Create a Twilio account for sending and receiving text messages
-  description: In this unit, you'll create a free Twilio account for sending and retrieving text messages programmatically.
+  description: Create a free Twilio account for sending and retrieving text messages programmatically.
   author: berndverst
   ms.author: beverst
-  ms.date: 05/07/2020
+  ms.date: 01/27/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

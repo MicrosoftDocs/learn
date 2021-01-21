@@ -6,8 +6,7 @@ In the developed world, widespread access to the internet via computers and smar
 
 In this module, you'll work with an application that lets farmers use text messaging to set up temperature alerts for specific locations. These alerts help farmers know when to plant, when to water, or when to protect their crops.
 
-> [!div class="mx-imgBorder"]
-> ![A screenshot of text messages sent to and received by our application](../media/text-message.png)
+:::image type="content" source="../media/text-message.png" alt-text="Screenshot of text messages sent to and received by our application.":::
 
 The temperature and location services needed by this app will use Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing.
 
@@ -19,11 +18,11 @@ In this module, you will:
 
 - Learn about using the Azure Maps APIs to get a location's weather forecast.
 - Create and configure a Twilio account with a programmable phone number to send and receive text messages.
-- Deploy an existing application to an Azure function app by using Twilio and Azure Maps to manage and send temperature alerts for specific locations.
+- Deploy an existing application to a function app in Azure by using Twilio and Azure Maps to manage and send temperature alerts for specific locations.
 
 ## Prerequisites
 
 - Basic familiarity with Azure Functions.
 
     > [!TIP]
-    > Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/).
+    > Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/?azure-portal=true).

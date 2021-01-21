@@ -16,15 +16,14 @@ To send and receive text messages programmatically, you'll need a Twilio account
 
 1. Twilio will send you a verification code via text message. On the **Verify Your Identity** page, verify your phone number by entering that code, and then select **Verify**.
 
-    > [!div class="mx-imgBorder"]
-    > ![A screenshot of the phone verification step in Twilio sign-up process](../media/twilio-verify-phone.png)
+    :::image type="content" source="../media/twilio-verify-phone.png" alt-text="Screenshot of the phone verification step in Twilio sign-up process.":::
 
 1. Work through the introductory questions until you get to the dashboard. These questions are used to create a first Twilio project for you to use.
 
 1. On your account dashboard, select the **Get a Trial Number** button. Twilio assigns you a phone number to use to send messages.
 
     > [!NOTE]
-    > Assigned numbers might not be able to send messages in some countries. To learn which countries have restrictions, see [Twilio international phone number availability and their capabilities](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities). For more information about restrictions, see [Using Twilio when SMS numbers are unavailable in your country](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country).
+    > Assigned numbers might not be able to send messages in some countries. To learn which countries have restrictions, see [Twilio international phone number availability and their capabilities](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities?azure-portal=true). For more information about restrictions, see [Using Twilio when SMS numbers are unavailable in your country](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country?azure-portal=true).
 
 1. On your dashboard, copy and store the following values:
 
@@ -32,9 +31,8 @@ To send and receive text messages programmatically, you'll need a Twilio account
    - Account SID
    - Auth Token
 
-    > [!div class="mx-imgBorder"]
-    > ![A screenshot of the Twilio dashboard, showing the values to be copied and stored](../media/twilio-dashboard.png)
-
+    :::image type="content" source="../media/twilio-dashboard.png" alt-text="Screenshot of the Twilio dashboard, showing the values to be copied and stored.":::
+   
    You'll need these values later in this module.
 
 In this unit, you created a Twilio account that you'll use to send and receive text messages. Next, you'll learn how to create and deploy an Azure function app.

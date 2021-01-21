@@ -1,30 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.send-crop-weather-alerts.8-summary
-title: Summary and knowledge check
+title: Summary
 metadata:
-  title: Summary and knowledge check
-  description: This page summarizes what you have learned in this module, describes some next steps, and finishes with a short knowledge check.
+  title: Summary
+  description: Summary of what you learned in the module and next steps for learning.
   author: berndverst
   ms.author: beverst
-  ms.date: 05/07/2020
+  ms.date: 01/27/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]
-
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: 'Which HTTP request method was used to connect Twilio to your app?'
-    choices:  
-    - content: 'GET'
-      isCorrect: false
-      explanation: Incorrect. It was not a GET request.
-    - content: 'HEAD'
-      isCorrect: false
-      explanation: Incorrect. HEAD requests cannot send data such as the contents of text messages.
-    - content: 'POST'
-      isCorrect: true
-      explanation: Correct! It was a POST request.

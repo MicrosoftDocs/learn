@@ -30,17 +30,17 @@ An Azure storage account name must be globally unique among all storage accounts
 
 ## Create a function app
 
-The Azure function app name must be globally unique. To make a unique name, include information like the date or your name. This name can be the same as your storage account name, as long as it's unique across all Azure function apps.
+The name of the function app that's created in Azure Functions must be globally unique. To make a unique name, include information like the date or your name. This name can be the same as your storage account name, as long as it's unique across all function apps in Azure.
 
-1. To create an environment variable for the name of the Azure function app, run the following command. This environment variable will be used by other commands later in this unit.
+1. To create an environment variable for the name of the function app, run the following command. This environment variable will be used by other commands later in this unit.
 
     ```azurecli
-    export FUNCTIONS_APP_NAME=<YOUR-FUNCTION-APP-NAME>
+    export FUNCTION_APP_NAME=<YOUR-FUNCTION-APP-NAME>
     ```
 
-    Replace *<YOUR-FUNCTION-APP-NAME>* with the name you want to use for your functions app (for example, *cropweatheralert20100519*).
+    Replace *<YOUR-FUNCTION-APP-NAME>* with the name you want to use for your function app (for example, *cropweatheralert20100519*).
 
-1. To create a new Azure function app, run this command:
+1. To create a new function app, run this command:
 
     ```azurecli
     az functionapp create \
@@ -48,7 +48,7 @@ The Azure function app name must be globally unique. To make a unique name, incl
       --os-type Linux \
       --consumption-plan-location westus \
       --runtime python \
-      --name $FUNCTIONS_APP_NAME \
+      --name $FUNCTION_APP_NAME \
       --storage-account $STORAGE_ACCOUNT_NAME \
       --functions-version 2
     ```
@@ -62,7 +62,7 @@ After your application is deployed, it will require the Azure Maps key, the Twil
     ```azurecli
     az functionapp config appsettings set \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --name $FUNCTIONS_APP_NAME \
+      --name $FUNCTION_APP_NAME \
       --settings "AZURE_MAPS_SUBSCRIPTION_KEY=<YOUR-MAPS-KEY-HERE>" "TWILIO_PHONE_NUMBER=<YOUR-TWILIO-NUMBER-HERE, for example +12324345678>" "TwilioAccountSID=<YOUR-TWILIO-ACCOUNTSID>" "TwilioAuthToken=<YOUR-TWILIO-AUTHTOKEN>"
     ```
 
@@ -70,16 +70,16 @@ After your application is deployed, it will require the Azure Maps key, the Twil
 
     Replace *<YOUR-TWILIO-NUMBER-HERE>* with your Twilio trial phone number, which you copied in the preceding unit.
 
-    Replace *<YOUR-TWILIO-ACCOUNTSID>* with your Twilio Account SID, which you copied in the preceding unit.
+    Replace *<YOUR-TWILIO-ACCOUNTSID>* with your Twilio account SID, which you copied in the preceding unit.
 
-    Replace *<YOUR-TWILIO-AUTHTOKEN>* with your Twilio Auth Token, which you copied in the preceding unit.
+    Replace *<YOUR-TWILIO-AUTHTOKEN>* with your Twilio auth token, which you copied in the preceding unit.
 
 1. To verify that the app settings were created and have the correct value, run this command:
 
     ```azurecli
     az functionapp config appsettings list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --name $FUNCTIONS_APP_NAME \
+      --name $FUNCTION_APP_NAME \
       --output table
     ```
 
@@ -120,7 +120,7 @@ The function app's source code lives in a repository on GitHub.
 
 1. Save the file by selecting Ctrl+O, and then select Enter to overwrite the existing file.
 
-1. Close the **nano** editor by selecting Ctrl+X.
+1. To close the nano editor, select Ctrl+X.
 
 ## Deploy the application to the function app
 
@@ -129,7 +129,7 @@ You're now ready to deploy your application to the function app.
 1. To publish the code, run this command:
 
     ```azurecli
-    func azure functionapp publish $FUNCTIONS_APP_NAME --python
+    func azure functionapp publish $FUNCTION_APP_NAME --python
     ```
 
 ## Obtain the HTTP trigger endpoint
@@ -139,7 +139,7 @@ One of our functions is configured to respond to HTTP requests, which will be ma
 1. To obtain the full endpoint URL, run this command:
 
     ```azurecli
-    func azure functionapp list-functions $FUNCTIONS_APP_NAME --show-keys
+    func azure functionapp list-functions $FUNCTION_APP_NAME --show-keys
     ```
 
 1. Find the `SetupAlert` URL in the output:
@@ -156,4 +156,4 @@ One of our functions is configured to respond to HTTP requests, which will be ma
 
     The full URL is displayed after *Invoke url:*. Copy and store it for later use.
 
-In this unit, you created an Azure function app, deployed code to this app, and configured all required environment variables for the app, also known as app settings. Finally, you obtained the endpoint URL for one of the functions to be called by Twilio. Next, you'll connect the function app to Twilio.
+In this unit, you created an function app in Azure, deployed code to the app, and configured all required environment variables for the app, also known as app settings. Finally, you obtained the endpoint URL for one of the functions to be called by Twilio. Next, you'll connect the function app to Twilio.
