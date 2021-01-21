@@ -9,8 +9,8 @@ In this module, you will:
 
 - Deploy a base version of *:::no-loc text="eShopOnContainers":::* to an AKS instance in your subscription.
 - Create an Azure Cache for Redis instance.
-- Create an Azure Cosmos DB instance
-- Switch eShopOnContainers to use the above managed services instead of the Redis and MongoDB services in the initial cluster.
+- Create an Azure Cosmos DB instance.
+- Switch *:::no-loc text="eShopOnContainers":::* to use the above managed services instead of the Redis and MongoDB services in the initial cluster.
 
 > [!IMPORTANT]
 > This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.

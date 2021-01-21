@@ -100,7 +100,7 @@ Then run the following script:
 ./deploy/k8s/deploy-application.sh --charts coupon
 ```
 
-After a few minutes, when you should see all services running in the `webstatus` microservice, you can run the application just as you did before deleting the `nosqldata` microservice.
+After a few minutes, when you should see all services running in the `webstatus` microservice, you can run the app just as you did before deleting the `nosqldata` microservice.
 
 You can also apply discounts in the checkout page, as shown in the next image:
 

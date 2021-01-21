@@ -85,7 +85,7 @@ A little while after the `seq` container becomes ready (1/1) you should be able 
 
 :::image type="content" source="../media/startup-errors-logging.png" alt-text="Seq home page view, showing typical startup errors." lightbox="../media/startup-errors-logging.png" border="true":::
 
-You can also check the general application status at `http://###.###.###.###/webstatus/` until all health icons are green.
+You can also check the general app status at `http://###.###.###.###/webstatus/` until all health icons are green.
 
 :::image type="content" source="../media/eshop-learn-webstatus.png" alt-text="WebStatus home page view, showing all services OK." lightbox="../media/eshop-learn-webstatus.png" border="true":::
 

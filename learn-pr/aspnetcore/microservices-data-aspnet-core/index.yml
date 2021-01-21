@@ -12,8 +12,8 @@ title: TODO
 summary: TODO
 abstract: |
   In this module, you will:
-  - Understand the creation of a basic Azure Cache for Redis instance.
-  - Understand the creation of a basic Azure Cosmos DB instance using the MongoDB API.
+  - Understand the creation of an Azure Cache for Redis instance.
+  - Understand the creation of an Azure Cosmos DB instance using the MongoDB API.
   - Understand the configuration changes needed to use managed data services.  
 prerequisites: |
   - Familiarity with C# and ASP.NET Core development at the beginner level
