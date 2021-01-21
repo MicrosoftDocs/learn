@@ -29,7 +29,7 @@ All traffic to and from the internet is denied by default. Traffic is only allow
 
 ### Key features of Azure Firewall
 
-The following table lists key features of Azure Firewall:
+The following table lists key features of Azure Firewall.
 
 |Feature  |Description  |
 |---------|---------|
@@ -51,9 +51,9 @@ Azure Firewall Manager provides a central point of configuration and management 
 
 The configuration of a single Azure Firewall can be complicated. For example, the firewall might be configured with multiple rule collections. A *collection* is a combination of any or all of the following items:
 
-- One or more network address translation (NAT) rules.
-- One or more network rules.
-- One or more application rules.
+- One or more network address translation (NAT) rules
+- One or more network rules
+- One or more application rules
 
 When you include other firewall settings such as custom DNS and threat intelligence rules, configuring just a single firewall can be a burden. Adding to that burden are two common network security scenarios:
 
@@ -66,7 +66,7 @@ The key point here is that Azure offers a resource called Firewall Policy. A fir
 
 ### Key features of Azure Firewall Manager
 
-The following table lists key features of Azure Firewall Manager:
+The following table lists key features of Azure Firewall Manager.
 
 |Feature  |Description  |
 |---------|---------|
