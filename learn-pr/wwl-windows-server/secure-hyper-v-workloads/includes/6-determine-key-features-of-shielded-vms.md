@@ -52,7 +52,7 @@ A shielding data file can contain secrets such as:
 
 You must complete the following steps to deploy a shielded VM:
 
-1. Deploy a HGS server.
+1. Deploy an HGS server.
 1. Set up a guarded host.
 1. Prepare a signed template disk (.vhdx file).
 1. Create a shielding data file.
@@ -66,7 +66,7 @@ The following table provides examples of common attack types and how shielded VM
 
 |Attack type|Protection provided by shielded VMs|
 |--|--|
-|*Unauthorized access to the .vhdx files for all VMs on a single host*|A host's administrator typically has access to the .vhdx files for all the VMs on a host. However, by implementing full disk encryption on the .vhdx files, the files in a shielded VMs are protected against malicious administrators.|
+|*Unauthorized access to the .vhdx files for all VMs on a single host*|A host's administrator typically has access to the .vhdx files for all the VMs on a host. However, by implementing full disk encryption on the .vhdx files, the files in a shielded VM are protected against malicious administrators.|
 |*Compromised VM templates*|The HGS attests to the health and identity of shielded VMs to ensure that the hosts aren't modified without your knowledge. Shielded VMs can only be started on the guarded hosts in an approved fabric. This ensures that your .vhdx files for your shielded VMs can't be started (or modified) by an actor outside of your trusted environment.|
 |*Compromised VM secrets*|The PDK file provides assurances that the VM will be created according to the intend specification. For example, if the HGS administrator configures the shielding data file to contain an answer file, the fabric administrator can't access or make changes to the answer file. Similarly, the fabric administrator can't substitute a different .vhdx file when creating the shielded VM, because the shielding data file contains the signatures of the trusted disks that shielded VMs can be created from. A fabric administrator can use the shielding data file to help create a shielded VM, but cannot access the file information directly.|
 
@@ -74,7 +74,7 @@ The following table provides examples of common attack types and how shielded VM
 
 Hyper-V includes support for provisioning Linux shielded VMs. You can provision a Linux shielded VM in a guarded fabric with System Center VMM as follows:
 
-1. Deploy a HGS server and set up a guarded host
+1. Deploy an HGS server and set up a guarded host
 1. Prepare a template disk.
 1. Sign the template disk.
 1. Copy the template disk and the signed image to the VMM library.

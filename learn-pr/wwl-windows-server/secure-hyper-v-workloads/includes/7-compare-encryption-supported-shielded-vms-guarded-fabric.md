@@ -1,4 +1,4 @@
-To help you to plan and configure the security of the Contoso infrastructure effectively, you should understand the following differences between the types of VMs that are supported by a Hyper-V guarded fabric.
+To plan and configure the security of the Contoso infrastructure effectively, you should understand the differences between the types of VMs that are supported by a Hyper-V guarded fabric.
 
 ## Guarded fabric-supported VM types
 
@@ -13,7 +13,7 @@ In Hyper-V, guarded fabrics can run VMs in the following ways:
 
 ### Encryption-supported VMs
 
-Encryption-supported VMs are intended for use where the fabric administrators are fully trusted members of an organizational enterprise. For example, an enterprise might deploy a guarded fabric to ensure that VM disks are encrypted at-rest for compliance purposes. Fabric administrators can continue to use the management features that Hyper-V provides, such VM console connections, VMConnect, PowerShell Direct, and other fabric management and troubleshooting tools.
+Encryption-supported VMs are intended for use where the fabric administrators are fully trusted members of an organizational enterprise. For example, an enterprise might deploy a guarded fabric to ensure that VM disks are encrypted at-rest for compliance purposes. Fabric administrators can continue to use the management features that Hyper-V provides, such as VM console connections, VMConnect, PowerShell Direct, and other fabric management and troubleshooting tools.
 
 ### Shielded VMs
 
@@ -25,9 +25,9 @@ The following table summarizes the differences and similarities between encrypti
 
 |Capability|Encryption-supported VMs|Shielded VMs|Description of the capability|
 |--|--|--|--|
-|Secure Boot|Yes, required but configurable|Yes, required and enforced|*Secure Boot* verifies that the boot loader is signed by a trusted authority in the UEFI database to help prevent unauthorized firmware, operating systems, or UEFI drivers from running when the VM starts up.|
-|Virtual TPM|Yes, required but configurable|Yes, required and enforced|*Virtual TPM* emulates the signature of physical TPM hardware chip to allow a VM to use encryption.|
-|Encrypt VM state and live migration traffic|Yes, required but configurable|Yes, required and enforced|A VM's saved state file is encrypted at rest, and in transit when you live migrate a VM to another host.|
+|Secure Boot|Yes, required but configurable|Yes, required, and enforced|*Secure Boot* verifies that the boot loader is signed by a trusted authority in the UEFI database to help prevent unauthorized firmware, operating systems, or UEFI drivers from running when the VM starts up.|
+|Virtual TPM|Yes, required but configurable|Yes, required, and enforced|*Virtual TPM* emulates the signature of physical TPM hardware chip to allow a VM to use encryption.|
+|Encrypt VM state and live migration traffic|Yes, required but configurable|Yes, required, and enforced|A VM's saved state file is encrypted at rest, and in transit when you live migrate a VM to another host.|
 |Integration components|Configurable by fabric admin|Certain integration components blocked, for example data exchange; also known as *Key-Value pair exchange*|*Integration components* are sets of drivers and services that provide Hyper-V VMs with synthetic devices to improve their performance and help them to maintain a more consistent state.|
 |VMConnect, human interface devices (keyboard, mouse)|On, can't be disabled|Enabled on hosts beginning with Windows Server version 1803; disabled on earlier hosts|*VMConnect* is a console tool for interacting with a VM's guest OS remotely.|
 |COM ports|Supported|Disabled (can't be enabled)|A *COM port* provides an interface for serial communications. COM ports aren't visible by Generation 2 VMs, which are required for encryption-supported and shielded VMs, by default. If COM ports are needed on Gen 2 VMs, you must configure them by using Windows PowerShell.|
