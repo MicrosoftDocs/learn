@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 quiz:
-  title: Check your knowledge
+  title: Answer the following questions to see what you've learned in this module.
   questions:
   - content: 'Which one of the following is NOT a common use case for version control systems?'
     choices:
@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "Git lets you work with one or more local branches and push them to a remote repository. GitHub acts as the 'remote repository,' which is accessed through a website or command-line tools."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct!"
     - content: "Git is a distributed version control system (DVCS) that runs in the cloud. GitHub is an interface layer that provides access to Git technology."
       isCorrect: false
       explanation: "Incorrect. Users have access to both Git and GitHub. GitHub is a cloud platform that uses the Git DVCS."
