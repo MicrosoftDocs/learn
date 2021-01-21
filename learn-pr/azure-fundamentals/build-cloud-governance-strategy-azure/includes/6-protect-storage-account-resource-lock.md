@@ -80,7 +80,7 @@ Here, you add a storage account to your resource group and see how the lock from
 
 1. Select **Storage accounts**. Then select **+ New**. The **Create storage account** page appears.
 
-1. In the **Basics** tab, Fill in the following fields.
+1. In the **Basics** tab, fill in the following fields.
 
     > [!NOTE]
     > Replace **NNN** with a series of numbers. The numbers help to ensure that your storage account name is unique.
