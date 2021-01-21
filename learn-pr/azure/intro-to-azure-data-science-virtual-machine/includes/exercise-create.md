@@ -14,18 +14,18 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu Da
 
     ![Screenshot that shows a search box with Data Science Virtual Machine Ubuntu Server 18.04 highlighted](../media/search-dsvm.png)
 
-1. Select **Create** to open the **Create a virtual machine** page. Notice the wizard-based approach that we can use to configure the VM.
+1. Select **Create**. The **Create a virtual machine** page appears. Notice the wizard-based approach that we can use to configure the VM.
 
 ### Configure the VM
 
-We need to configure the basic parameters of our Ubuntu virtual machine.
+1. To configure the basic parameters of our Ubuntu virtual machine, in the **Basics** tab, fill in the following fields.
 
     | Setting | Value |
     | --- | --- |
-    | On the **Basics** tab, under **Project details** section: |
+    | **Project details**| |
     | Subscription | *Concierge Subscription* |
     | Resource group | <rgn>[sandbox resource group name]</rgn>. (This is the sandbox resource group.) |
-    | Under **Instance details** section: |
+    | **Instance details**| |
     | Virtual machine name | test-ubuntu-dsvm |
     | Region | Select a region near you. It should be the same as that of the resource group. |
     | Availability options | No infrastructure redundancy required |
@@ -35,7 +35,11 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
     | Authentication type | Password |
     | Username | Enter a string from 1 to 64 characters long. |
     | Password | Enter a strong password. |
-    
+    | **Administrator account**| |
+    | Authentication type | Password |
+    | Username | Enter a string from 1 to 64 characters long. |
+    | Password | Enter a strong password. |
+
     ![Screenshot that shows the details filled out for V M configuration](../media/create-new-resource.png)
 
 1. You can explore several other tabs to see the settings that you can influence during the VM creation. On the **Disks** tab, for example, you can specify your data disks. After you're finished exploring, select **Review + create** to review and validate the settings.
