@@ -57,8 +57,8 @@ If you allow the simulation to run for much longer, your visualization will even
 > [!TIP]
 > If you don't see data or if a message says there are no events to display:
 >
-> - Make sure the simulated client is running for at least 2 minutes.
-> - Be sure that TSIFunction is deployed successfully, with no errors.
+> - Make sure the simulated client is running for at least two minutes.
+> - Make sure TSIFunction is deployed successfully, with no errors.
 > - Select the refresh button on the Time Series Insights Explorer toolbar.
 
 You can select the time range (two minutes) by dragging the handles of the availability picker or by using the date/time selector in the upper-right corner:

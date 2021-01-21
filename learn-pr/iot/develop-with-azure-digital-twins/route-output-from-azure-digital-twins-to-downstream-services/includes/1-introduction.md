@@ -23,7 +23,7 @@ In this module, you'll learn how to route events to Time Series Insights to quer
 
 ## Azure Digital Twins events
 
-In many cases, you need to send data from Azure Digital Twins to downstream services for further analysis, integration, simulation, or processing. In this module, you'll explore how to send data to a Time Series Insights instance to record time series data of manufacturing process events for bulk analytics.
+In many cases, you need to send data from Azure Digital Twins to downstream services for further analysis, integration, simulation, or processing. In this module, you'll explore how to send data to a Time Series Insights instance to record time series data of manufacturing-process events for bulk analytics.
 
 You handle data egress by using event routes. An event route lets you send event data (like telemetry events, lifecycle events, and property-change events) from twins to defined endpoints in your subscriptions (like an event hub, event grid, or service bus).
 
@@ -74,8 +74,8 @@ In this module, you will:
 
 - Build and simulate the chocolate factory twin.
 - Create a route and filter for twin update notifications.
-- Create and configure an Azure function, and send telemetry to an event hub.
-- Create a Time Series Insights instance, and connect it to Azure Digital Twins.
+- Create and configure an Azure function and send telemetry to an event hub.
+- Create a Time Series Insights instance and connect it to Azure Digital Twins.
 - Visualize and query your data in Time Series Insights.
 
 ## Prerequisites
@@ -84,7 +84,7 @@ In this module, you will:
 - A basic understanding of the Azure CLI. We recommend that you complete the [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module. 
 - [The Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
   - We recommend that you install Azure CLI locally. 
-  - We don't recommend that you use Azure Cloud Shell. It will time out because the length of the lab.
+  - We don't recommend that you use Azure Cloud Shell. It will time out because of the length of the lab.
 - PowerShell. 
   - On Windows, PowerShell is built in.
   - On macOS, you need to install [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6).

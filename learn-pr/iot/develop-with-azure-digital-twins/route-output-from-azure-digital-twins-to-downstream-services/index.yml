@@ -11,13 +11,13 @@ metadata:
 title: Output from Azure Digital Twins to downstream services
 summary: |
   In this module, you'll learn about how Azure Digital Twins uses event routes to send data to consumers outside the service.
-  It's the fun part of this learning path. You can finally start to experience the outcome of the hard work you invested earlier in the form of insights, dashboards, visualizations, and more.
+  It's the fun part of this learning path. You can finally start to experience the outcome of your hard work in the form of insights, dashboards, visualizations, and more.
 abstract: |
   In this module, you will:
   - Build and simulate the chocolate factory twin.
   - Create a route and filter for twin update notifications.
-  - Create and configure an Azure function, and send telemetry messages to an event hub.
-  - Create an Azure Time Series Insights instance, and connect it to Azure Digital Twins.
+  - Create and configure an Azure function and send telemetry messages to an event hub.
+  - Create an Azure Time Series Insights instance and connect it to Azure Digital Twins.
   - Visualize and query your data in Time Series Insights.
 prerequisites: |
   - (Recommended.) Introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) learning path.

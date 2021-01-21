@@ -12,11 +12,11 @@ az functionapp create --resource-group $rgname --consumption-plan-location $loca
 
 Use Visual Studio Code to create a local Azure Functions project. Later in this unit, you'll publish your function code to Azure.
 
-1. Select the Azure icon in the Activity Bar. In the **Azure: Functions** menu, select the **Create new project** button:
+1. Select the Azure icon in the Activity Bar. On the **Azure: Functions** menu, select the **Create new project** button:
 
     :::image type="content" source="../media/create-azure-function-visual-studio-code.png" alt-text="Screenshot that shows the Create new project button in Visual Studio Code.":::
 
-1. Choose a directory location for your project workspace and then click **Select**.
+1. Choose a directory location for your project workspace, and then click **Select**.
 
 1. When prompted, provide the following information:
 
@@ -88,7 +88,7 @@ Use Visual Studio Code to create a local Azure Functions project. Later in this 
 
     - **Select subscription:** Select your subscription.
     - **Select Function App in Azure:** Select the function that ends in **twinupdatefunction**.
-    - **If you get a message about overwriting a previous deployment:** Select **Deploy**.
+    - **If you get a message about overwriting a previous deployment:** Select **Deploy**:
 
     :::image type="content" source="../media/overwrite-azure-function-visual-studio-code.png" alt-text="Screenshot of a Visual Studio Code warning about overwriting the previous Azure function deployment.":::
 
