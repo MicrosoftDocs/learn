@@ -136,12 +136,12 @@ Now, to set up Network Watcher in the same region as the infrastructure, let's u
 
 To enable Network Watcher, run this command.
 
-    ```azurecli
-    az network watcher configure \
+```azurecli
+az network watcher configure \
     --locations "" (*Match the creation of the resource group*) \
     --enabled true \
     --resource-group $RG
-    ```
+```
 
 ## Use Network Watcher to show the topology
 
