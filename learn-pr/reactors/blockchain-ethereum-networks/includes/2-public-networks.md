@@ -6,7 +6,7 @@ The [Ethereum](https://ethereum.org/?azure-portal=true) protocol is made up of m
 
 Once deployed, the applications can leverage the full potential of decentralized blockchain. There is no centralized authority and mainnet is fully decentralized. There can be different types of tokens and applications deployed to mainnnet. Once deployed on the mainnet, transactions are immutable and cannot be changed. In addition, each transaction has real costs associated with it which requires actual Ether (ETH). All blocks on the Ethereum mainnet can be viewed using [Etherscan](https://etherscan.io/) which shows the latest mined blocks and transactions. All blocks can be inspected.
 
-:::image type="content" source="media\etherscan.png" alt-text="Screenshot showing the homepage of Etherscan":::
+:::image type="content" source="../media/etherscan.png" alt-text="Screenshot showing the homepage of Etherscan.":::
 
 ## Ethereum testnets
 

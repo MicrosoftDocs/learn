@@ -3,7 +3,7 @@ uid: learn.reactors.blockchain-ethereum-networks
 metadata:
   title: Connect and deploy to Ethereum networks
   description: Learn about and use multiple networks that Ethereum has available for development, testing, and production.
-  ms.date: 
+  ms.date: 01/20/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

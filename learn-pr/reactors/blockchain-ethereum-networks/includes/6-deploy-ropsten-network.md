@@ -8,7 +8,7 @@ For this tutorial, we will deploy to Ropsten using MetaMask with test ether. The
 
 ### Set up Metamask
 
-If you haven’t done so already, install and set up Metamask by visiting [www.metamask.io](www.metamask.io) and following the prompts. Once you are signed into your account in the browser, you can move on to the next step.
+If you haven’t done so already, install and set up Metamask by visiting [metamask.io](https://metamask.io) and following the prompts. Once you are signed into your account in the browser, you can move on to the next step.
 
 ### Add Ether to Metatmask Ropsten test network
 
@@ -200,11 +200,9 @@ Summary
 
 Inspect Metamask to verify that the Ether used to deploy the contract.
 
-:::image type="content" source="../media/metamask-balance-after-deploying-to-ropsten.png" alt-text="Screenshot showing the Metamask balance after deploying to Ropsten.":::
-
 ### On Ropsten Etherscan
 
-Go to [ropsten.etherscan.io](ropsten.etherscan.io), enter the contract address, and then inspect your contract.
+Go to [ropsten.etherscan.io](https://ropsten.etherscan.io), enter the contract address, and then inspect your contract.
 
 :::image type="content" source="../media/ropsten-etherscan-with-deployed-contract.png" alt-text="Screenshot showing the contract deployed in Etherscan .":::
 
