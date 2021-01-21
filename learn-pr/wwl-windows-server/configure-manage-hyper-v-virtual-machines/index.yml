@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.configure-manage-hyper-v-virtual-machines
+metadata:
+  title: Configure and manage Hyper-V virtual machines
+  description: "Configure and manage Hyper-V virtual machines"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Configure and manage Hyper-V virtual machines
+summary: Learn about configuring and managing Hyper-V virtual machines in Windows Server 2019.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe settings, configuration, and generation versions available for VMs in Windows Server 2019.
+  - Identify virtual hard disk (VHD) formats and types.
+  - Create and configure a VM.
+  - Determine storage options for VMs.
+  - Describe shared VHDs and VHD Sets.
+  - Describe host and guest clustering with shared VHDs.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Working with virtualization technologies.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.configure-manage-hyper-v-virtual-machines.introduction
+- learn.wwl.configure-manage-hyper-v-virtual-machines.list-virtual-machine-configuration-versions
+- learn.wwl.configure-manage-hyper-v-virtual-machines.list-virtual-machine-generation-versions
+- learn.wwl.configure-manage-hyper-v-virtual-machines.list-available-vhd-formats-types
+- learn.wwl.configure-manage-hyper-v-virtual-machines.create-configure-vms
+- learn.wwl.configure-manage-hyper-v-virtual-machines.determine-storage-options-for-vms
+- learn.wwl.configure-manage-hyper-v-virtual-machines.define-shared-vhds-vhd-sets
+- learn.wwl.configure-manage-hyper-v-virtual-machines.implement-guest-clusters-using-shared-vhdx
+- learn.wwl.configure-manage-hyper-v-virtual-machines.knowledge-check
+- learn.wwl.configure-manage-hyper-v-virtual-machines.summary
+badge:
+  uid: learn.wwl.configure-manage-hyper-v-virtual-machines.badge

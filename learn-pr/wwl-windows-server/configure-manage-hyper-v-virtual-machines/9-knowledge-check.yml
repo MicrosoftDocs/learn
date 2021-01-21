@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-hyper-v-virtual-machines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Nested virtualization is supported in which VM configuration versions?"
+    choices:
+    - content: "Version 6.0 and later"
+      isCorrect: false
+      explanation: "That's incorrect. Nested virtualization is supported in Hyper-V configuration versions 8.0 and later."
+    - content: "Version 7.0 and later"
+      isCorrect: false
+      explanation: "That's incorrect. Nested virtualization is supported in Hyper-V configuration versions 8.0 and later."
+    - content: "Version 8.0 and later"
+      isCorrect: true
+      explanation: "That's correct. Nested virtualization is supported in Hyper-V configuration versions 8.0 and later."
+  - content: "Which storage option provides an alternative to storing VMs on iSCSI or Fibre Channel SAN devices?"
+    choices:
+    - content: "SMB 3.0 file shares"
+      isCorrect: true
+      explanation: "That's correct. SMB 3.0 file shares provide an alternative to storing VM files on iSCSI or Fibre Channel SAN devices."
+    - content: "SMB 2.0 file shares"
+      isCorrect: false
+      explanation: "That's incorrect. SMB 2.0 file shares don't provide an alternative to storing VM files on iSCSI or Fibre Channel SAN devices."
+    - content: "NFS file shares"
+      isCorrect: false
+      explanation: "That's incorrect. NFS file shares don't provide an alternative to storing VM files on iSCSI or Fibre Channel SAN devices."
+  - content: "When creating shared drives for use in a guest cluster, the virtual hard disk drive can have one of two disk formats. Which of the following are the two possible disk formats?"
+    choices:
+    - content: ".vhd and .vhdx"
+      isCorrect: false
+      explanation: "That's incorrect. Shared virtual hard disks can be .vhdx format, but they can't be .vhd format."
+    - content: ".vhdx and .vhds"
+      isCorrect: true
+      explanation: "That's correct. Shared virtual hard disks can be either .vhdx or a VHD Set, which is .vhds format."
+    - content: "Differencing and Dynamically expanding"
+      isCorrect: false
+      explanation: "That's incorrect. Shared drives can be Dynamically expanding drives but can't be Differencing drives. Additionally, neither of these are disk formats; they are disk types."
