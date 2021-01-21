@@ -3,6 +3,18 @@ You are ready to connect to Earth and start solving problems on a real quantum c
 
 To do so in this part you learn how to submit a job to Azure Quantum.
 
+## Install the quantum extension
+
+Azure Quantum uses the Azure CLI quantum extension to enable submitting Q# programs from the command line. Now you are going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
+
+1. Ensure you have installed the latest version of [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.5.0 or higher).
+
+1. Open a command prompt, and then run the following command:
+
+```Azure CLI
+az extension add --source https://msquantumpublic.blob.core.windows.net/az-quantum-cli/quantum-latest-py3-none-any.whl
+```
+
 ## Create a quantum workspace
 
 First, you need to create a Quantum Workspace in your Azure subscription and
