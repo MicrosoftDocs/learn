@@ -1,8 +1,8 @@
-Knowing your target IOPS, throughput and latency numbers is the important first step, but you must also determine how your hpc jobs will interact with the file system to optimize performance. The next step is to quantify the traffic scale and mix your file system will need to support.
+Knowing your target IOPS, throughput and latency numbers is the important first step, but you must also determine how your hpc workloads will interact with the file system to optimize performance. The next step is to quantify the traffic scale and mix your file system will need to support.
 
 ## Traffic mix considerations
 
-**Traffic mix** refers to the makeup of the HPC job traffic, in terms of:
+**Traffic mix** refers to the makeup of the HPC workload traffic, in terms of:
 
 - Ratio of read traffic to write traffic (e.g., 100% read, 50% read/write, 100% write)
 - Random vs sequential read/write
@@ -10,11 +10,13 @@ Knowing your target IOPS, throughput and latency numbers is the important first 
 - Concurrency
 - File quantity and size
 
+In the rest of this unit, we'll see how this mix of traffic types impacts your storage choices.
+
 ### Read traffic vs write traffic vs create/delete
 
 IOPS are consumed equally whether the operation is read or write. However, the file system you choose may apply high-availability to incoming write traffic, which translates into a slower, but resilient, write throughput. 
 
-Further, if your HPC workload does a large number of metadata-heavy operations, such as creating files, renaming directory structures or deleting files. A create may consume several ops (checking to see if the file exists, create the file handle, update the directory entry, and so on).
+Further, performance may be impacted if your HPC workload does a large number of metadata-heavy operations, such as creating files, renaming directory structures or deleting files. A create may consume several ops (checking to see if the file exists, create the file handle, update the directory entry, and so on).
 
 Your HPC workload may be largely focused on transforming data, and so the amount of write traffic may be significant. In this case you will want to optimize your write performance as the priority.
 
@@ -41,3 +43,5 @@ The same job may then stop requiring any concurrent access, or may require burst
 The number and average size of the files must also be considered when selecting file storage. A workload that consumes 2TB of data will have different performance characteristics if that 2TB consists of 100 20GB files versus 10000 200MB files. Especially if those 10,000 files are nested in deep directory structures.
 
 The recommendation is to identify the most likely **working set** of data. Working set refers to the most likely maximum file count and file size you would require. You should try to identify the maximum and the average working set definitions and use those to guide your planning.
+
+It isn't always easy to define working set, especially for an environment as opposed to a single HPC job. For example, one day you may need to create a small simulation against a static set of data, and the next day scale up to do a much larger analysis with intermediate outputs and checkpointing.

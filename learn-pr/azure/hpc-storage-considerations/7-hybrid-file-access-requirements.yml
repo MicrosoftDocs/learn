@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.hpc-storage-considerations.6-hybrid-file-access-requirements
+uid: learn.hpc-storage-considerations.7-hybrid-file-access-requirements
 title: Hybrid file access requirements
 metadata:
   title: Hybrid file access requirements
@@ -14,4 +14,4 @@ durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/6-hybrid-file-access-requirements.md)]
+  [!include[](includes/7-hybrid-file-access-requirements.md)]

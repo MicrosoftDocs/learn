@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.6-nfs-overview
+title: NFS Overview
+metadata:
+  title: NFS Overview
+  description: NFS Overview
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-nfs-overview.md)]

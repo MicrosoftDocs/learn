@@ -29,8 +29,8 @@ units:
 - learn.hpc-storage-considerations.3-performance-considerations
 - learn.hpc-storage-considerations.4-scale-considerations
 - learn.hpc-storage-considerations.5-authentication-and-authorization-considerations
-- learn.hpc-storage-considerations.6-hybrid-file-access-requirements
-- learn.hpc-storage-considerations.7-consolidating-your-requirements
+- learn.hpc-storage-considerations.6-nfs-overview
+- learn.hpc-storage-considerations.7-hybrid-file-access-requirements
 - learn.hpc-storage-considerations.8-next-steps-knowledge-check
 badge:
   uid: learn.hpc-storage-considerations.badge
