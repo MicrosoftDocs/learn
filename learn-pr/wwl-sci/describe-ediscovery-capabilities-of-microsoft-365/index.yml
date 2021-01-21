@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
+metadata:
+  title: Describe the eDiscovery capabilities of Microsoft 365
+  description: "Describe the eDiscovery capabilities of Microsoft 365"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Describe the eDiscovery capabilities of Microsoft 365
+summary: Learn how eDiscovery capabilities of Microsoft 365 helps organizations find relevant data quickly.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the purpose of eDiscovery.
+  - Describe how eDiscovery workflow process.
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- m365
+units:
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.introduction
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-purpose-of-ediscovery
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-content-search-tool
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-core-ediscovery-workflow
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-advanced-ediscovery-workflow
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.knowledge-check
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.summary-resources
+badge:
+  uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.badge
