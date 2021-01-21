@@ -51,7 +51,7 @@ Deploying IPAM servers begins with the installation of the IPAM Server feature. 
 
 1. Configure and run server discovery. You must configure the scope of discovery for servers that you're going to manage. Selecting the domain or domains on which the IPAM server will run discovery determines the discovery scope. You can also manually add a server in the IPAM management console by specifying the fully qualified domain name (FQDN) of the server that you want to manage.
 
-    ​:::image type="content" source="../media/m14-ipam1.png" alt-text="A screenshot of the Configure Server Discovery dialog box. The Contoso.com domain is added.":::
+    ​:::image type="content" source="../media/m14-ipam-1.png" alt-text="A screenshot of the Configure Server Discovery dialog box. The Contoso.com domain is added.":::
 
 1. Choose and manage the discovered servers. After discovery completes, and after you manually add any servers that weren't discovered, choose the servers that you want to manage. Do this by editing the server properties in the IPAM console and changing the Manageability Status to **Managed**. After setting the management permission for a server, note the status indicator displaying **IPAM Access Unblocked** in the IPAM server inventory.
 
