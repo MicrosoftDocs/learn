@@ -2,7 +2,7 @@ As more business data is being accessed away locations outside of the traditiona
 
 This module introduces some important security concepts and methodologies. You'll learn about the Zero-trust model, the shared responsibility model, and defense in depth. You'll also cover common cyber security threats. Finally, the module introduces encryption, hashing, and signing as ways to protect data.
 
-After completing this module, you will be able to:
+After completing this module, you will be able to: 
 
 - Describe the Zero-Trust and shared responsibility models.
 - Describe common security threats and ways to protect through the defense in-depth security model.
