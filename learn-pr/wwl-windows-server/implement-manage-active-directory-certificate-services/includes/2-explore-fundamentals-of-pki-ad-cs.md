@@ -12,8 +12,8 @@ The AD CS role includes the following role services:
 
 - Certification Authority. The main purposes of CAs are to issue certificates, to revoke certificates, and to publish authority information access (AIA) and revocation information. The first CA you deploy becomes the root of your internal PKI. Subsequently, you can deploy subordinate CAs, positioned within the PKI hierarchy, with the root CA at its top. Subordinate CAs implicitly trust the root CA and, by implication, certificates it issues.
 
-> [!NOTE]
-> You have the option of deploying multiple internal CA hierarchies, each with its own root.
+   > [!NOTE]
+   > You have the option of deploying multiple internal CA hierarchies, each with its own root.
 
 - Certification Authority Web Enrollment. This component provides a method to issue and renew certificates in scenarios where users use devices that are not joined to the domain or are running operating systems other than Windows.
 - Online Responder. You can use this component to configure and manage Online Certificate Status Protocol (OCSP) validation and revocation checking. An Online Responder decodes revocation status requests for specific certificates, evaluates the status of those certificates, and returns a signed response that has the requested certificate status information.
