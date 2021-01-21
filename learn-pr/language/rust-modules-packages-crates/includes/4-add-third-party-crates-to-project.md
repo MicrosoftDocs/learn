@@ -1,4 +1,4 @@
-In this module, we'll learn how to add third party crates to your project. Rust standard library doesn't have a module for **regular expressions**, so lets add the `regex` crate that is available in the [Crates.io](https://crates.io/) website, which is the Rust community's central package registry that serves as a location to discover and download packages.
+In this module, we'll learn how to add third party crates to your project. Rust standard library doesn't have a module for **regular expressions**, so lets add the `regex` crate that is available in the [Crates.io](https://crates.io?azure-portal=true) website, which is the Rust community's central package registry that serves as a location to discover and download packages.
 
 Whenever we want to add dependent crates to our project, we can rely on Cargo to do all the heavy-lifting for us. To depend on a library hosted on crates.io, add it to your `Cargo.toml` file:
 
