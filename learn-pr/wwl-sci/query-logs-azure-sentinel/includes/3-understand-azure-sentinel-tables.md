@@ -1,7 +1,8 @@
-Azure Sentinel has Analytic Rules that will generate Alerts and Incidents based on querying the tables within Log Analytics.   The primary tables to manage alerts and incidents are SecurityAlert and SecurityIncident.  Azure Sentinel provides tables to be a repository of indicators and watchlists.
+Azure Sentinel has Analytic Rules that will generate Alerts and Incidents based on querying the tables within Log Analytics.  The primary tables to manage alerts and incidents are SecurityAlert and SecurityIncident.  Azure Sentinel provides tables to be a repository of indicators and watchlists.
 
 > [!NOTE]
-> Some of the Sentinel Data Connectors will ingest alerts directly.  
+> Some of the Sentinel Data Connectors will ingest alerts directly.  
+
 The table below is the Azure Sentinel feature related tables.
 
 | Table| Description|

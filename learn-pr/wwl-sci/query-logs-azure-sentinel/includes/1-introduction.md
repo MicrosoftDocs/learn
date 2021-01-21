@@ -4,3 +4,11 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 You need to have a basic understanding of the provided tables and their intended purpose. For example, the "SecurityEvents" table is designed for Windows Security Event log data.  With this knowledge, you will be able to query the required tables to use in your search for malicious activity. 
 
+After completing this module, you will be able to:
+
+- Use the Logs page to view data tables in Azure Sentinel
+- Query the most used tables using Azure Sentinel
+
+## Prerequisites
+
+Basic knowledge of operational concepts such as monitoring, logging, and alerting
