@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365.management-solution
+title: Describe the insider risk management solution
+metadata:
+  title: Describe the insider risk management solution
+  description: "Describe the insider risk management solution"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-management-solution.md)]
