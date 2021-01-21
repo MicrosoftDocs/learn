@@ -2,7 +2,7 @@ You needed to support a whole operating platform by managing the application sta
 
 By creating a new instance of Azure Cosmos DB, you delegated the management of the database to Azure. This way, you don't need to worry about availability, because Azure Cosmos DB better supports multiple-region and multiple-master deployments. The application can grow across many regions in the world without any added complexity.
 
-Along with that, you were able to understand and better secure the managed application state by using secrets to keep the connection string safe and still deploy your application without any problems. Now your cluster has a better handling of application states. Your cluster is also scalable to the point where you can handle multiple users without needing to configure the database.
+Along with that, you were able to understand the managed application state by using connection strings as environment variables and deploy your application without any problems. Now your cluster has a better handling of application states. Your cluster is also scalable to the point where you can handle multiple users without needing to configure the database.
 
 ## Clean up resources
 

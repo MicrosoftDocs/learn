@@ -81,6 +81,7 @@ Now you're going to deploy the AKS cluster so you can push your application imag
         --node-count 3 \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
+        --enable-managed-identity \
         --location eastus \
         --enable-addons http_application_routing
     ```
@@ -331,7 +332,7 @@ To create the front-end interface, you'll do a similar process:
       config.js: |
         const config = (() => {
           return {
-            'VUE_APP_BACKEND_BASE_URL': 'http://ship-manager-backend.8e47302a30cb4f899899.eastus.aksapp.io/',
+            'VUE_APP_BACKEND_BASE_URL': 'YOUR_BACKEND_URL',
           }
         })()
     ```
@@ -408,7 +409,7 @@ Next, you'll create the networking resources that this application needs to be o
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: contoso-ship-manager.8e47302a30cb4f899899.eastus.aksapp.io
+        - host: contoso-ship-manager.some-zone.eastus.aksapp.io
           http:
             paths:
               - path: /

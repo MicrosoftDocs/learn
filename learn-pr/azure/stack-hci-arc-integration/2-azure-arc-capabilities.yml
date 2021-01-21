@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.stack-hci-arc-integration.2-azure-arc-capabilities
+metadata:
+  title: Characteristics and capabilities of Azure Arc
+  description: Azure Arc serves as the core component that facilitates integration of non-Azure resources with Azure, helping companies like Contoso to bridge the gap between the administrative model of on-premises and cloud services. In this unit, you will learn about the basic characteristics of Azure Arc and the range of scenarios it supports.
+  ms.date: 12/09/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Characteristics and capabilities of Azure Arc
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-azure-arc-capabilities.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What component is required in order to establish a logical connection between an Arc enabled resource and Azure?"
+    choices:
+    - content: "The Log Analytics agent."
+      isCorrect: false
+      explanation: "That's incorrect. The Log Analytics agent is not required when using Azure Arc, although it is recommended since it allows you to implement a rang of Azure hybrid services, such as Azure Monitor or Azure Security Center."
+    - content: "The Microsoft Dependency agent."
+      isCorrect: false
+      explanation: "That's incorrect. The Microsoft Dependency agent is not required when using Azure Arc, although it is recommended, since it facilitates identifying internal and external dependencies of server workloads."
+    - content: "The Connected Machine agent."
+      isCorrect: true
+      explanation: "That's correct. In each of the Azure Arc enabled scenarios, Azure Arc leverages the locally installed Connected Machine agents to establish a logical connection between the local resource and Azure."
+  - content: "What is necessary in order to integrate an Azure Stack HCI cluster with Azure Arc?"
+    choices:
+    - content: "Install the Connected Machine agent on each Azure Stack HCI cluster node."
+      isCorrect: false
+      explanation: "That's incorrect. In case of Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes, so there is no need to install it."
+    - content: "Install the Microsoft Dependency agent on each Azure Stack HCI cluster node."
+      isCorrect: false
+      explanation: "That's incorrect. The Microsoft Dependency agent is not required when integrating Azure Stack HCI with Azure Arc."
+    - content: "Register the Azure Stack HCI cluster with Azure."
+      isCorrect: true
+      explanation: "That's correct. To integrate an Azure Stack HCI cluster with Azure, the administrator needs to register it with Azure."

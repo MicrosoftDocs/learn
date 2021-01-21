@@ -23,7 +23,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. Confirm that the classification was successfully added by viewing the **Overview** tab, and confirm that MiddleName is now displayed in the list of classified columns under the SalesLT schema. 
 
-1. Select **X** to close the **Add classification** pane.  
+1. On the left pane, select **Overview** to go back to the overview of your database.  
 
    Dynamic Data Masking (DDM) is available in both Azure SQL and SQL Server. DDM limits data exposure by masking sensitive data to nonprivileged users at the SQL Server level instead of at the application level where you have to code those types of rules. Azure SQL recommends items for you to mask, or you can add masks manually. 
    

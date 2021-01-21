@@ -32,7 +32,7 @@ quiz:
     - content: Azure Data Explorer
       isCorrect: false
       explanation: Azure Data Explorer is a fast and highly scalable data exploration Azure service for log and telemetry data.
-    - content: A series of tables logically grouped together which allow for an easy understanding behind how Log Analytics stores logs.
+    - content: A series of tables logically grouped together, which allow for an easy understanding behind how Log Analytics stores logs
       isCorrect: true
       explanation: The schema provides a simple way to understand data organization in Log Analytics.
     - content: Metrics

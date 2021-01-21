@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.3-failover-clustering
+metadata:
+  title: What is Failover Clustering? 
+  description: Describe Windows Server Failover Clustering and its components
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+title: What is Failover Clustering?
+content: |
+  [!include[](includes/3-failover-clustering.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is the maximum number of nodes supported by Windows Server 2019 Failover Clustering?"
+    choices:
+    - content: "4"
+      isCorrect: false
+      explanation: "That's incorrect. A Windows Server failover cluster can consist of up to 64 nodes."
+    - content: "64"
+      isCorrect: true
+      explanation: "That's correct. A Windows Server failover cluster can consist of up to 64 nodes."
+    - content: "256"
+      isCorrect: false
+      explanation: "That's incorrect. A Windows Server failover cluster can consist of up to 64 nodes."
+
+  - content: "Which quorum witness can an administrator implement by using the USB drive in Windows Server 2019 failover clustering?"
+    choices:
+    - content: "Disk Witness"
+      isCorrect: false
+      explanation: "That's incorrect. Disk Witness uses a clustered disk resource in the same failover cluster."
+    - content: "Cloud Witness"
+      isCorrect: false
+      explanation: "That's incorrect. Cloud Witness uses a blob in an Azure Storage account."
+    - content: "File Share Witness"
+      isCorrect: true
+      explanation: "That's correct. File Share Witness uses an external file share. Starting with Windows Server 2019, it is possible to implement it by using a USB drive attached to a network network device accessible to all cluster nodes."

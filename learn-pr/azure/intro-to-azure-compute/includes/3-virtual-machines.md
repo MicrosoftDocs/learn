@@ -45,12 +45,13 @@ _Unplanned maintenance events_ involve a hardware failure in the data center, su
 
 With an availability set, you get:
 
-- Up to three fault domains that each have a server rack with dedicated power and network resources
-- Five logical update domains which then can be increased to a maximum of 20
+- Up to three fault domains that each have a server rack with dedicated power and network resources.
+- Five logical update domains which then can be increased to a maximum of 20.
 
-Your VMs are then sequentially placed across the fault and update domains. The following diagram shows an example where you have six VMs in two availability sets distributed across the two fault domains and five update domains.
+Your VMs are then sequentially placed across the fault and update domains. The following diagram shows an example where you have six VMs in two availability sets distributed across the two fault domains and six update domains.
 
 :::image type="complex" source="../media/3-availability-sets.png" alt-text="Diagram showing availability sets update and fault domains that are duplicated across servers.":::
+
 Two outlines surround fault domain 1 and fault domain 2. Fault domain 1 contains a rack with virtual machine 1 inside update domain 1, virtual machine 3 inside update domain 3, and virtual machine 5 inside update domain 5. Fault domain 2 contains a rack with virtual machine 2 inside update domain 2, virtual machine 4 inside update domain 4, and virtual machine 6 as part of update domain 1. Virtual machine 1 from fault domain 1 and virtual machine 2 from fault domain 2 are part of an availability set. Virtual machine 3 and 5 from fault domain 1 and virtual machine 4 and 6 from fault domain 2 are part of a separate availability set.
 :::image-end:::
 

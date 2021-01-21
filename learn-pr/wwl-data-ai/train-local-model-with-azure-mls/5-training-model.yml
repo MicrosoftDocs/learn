@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.train-local-model-with-azure-mls.training-model
-title: Exercise - Training and registering a model
+title: Exercise - Train and register a model
 metadata:
-  title: Exercise - Training and registering a model
-  description: "Use this hands-on exercise to learn how to train and register a model"
-  ms.date: 07/16/2020
+  title: Exercise - Train and register a model
+  description: "Exercise - Train and register a model"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

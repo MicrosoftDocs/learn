@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks
+metadata:
+  title: Create a web app that uses data to make decisions on the basketball court
+  description: "Create a web app by using JavaScript, Azure, GitHub, and Visual Studio Code to help the Tune Squad coach use data to make decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
+  ms.date: 12/14/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a web app that uses data to make decisions on the basketball court
+summary: "Use JavaScript, Azure, GitHub, and Visual Studio Code to write a web app that helps the Tune Squad coach make data-based decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
+abstract:  |
+  In this module, you will begin to discover:
+  - Python, pandas, and machine learning
+  - Visual Studio Code notebooks for data science
+  - Data preparation for application use
+  - Static Web Apps in Azure
+  - GitHub Actions for deploying web apps
+  - CodeTour for code writing guidance
+  - JavaScript to create functionality for your app
+
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
+
+  © 2020 Warner Bros. Ent. All Rights Reserved.
+prerequisites: |
+  - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode)
+  - [Azure Static Web Apps (Preview) extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
+  - [CodeTour extension for Visual Studio Code](https://aka.ms/codetour-mslearn)
+  - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
+  - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
+  - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github/)
+iconUrl: /learn/achievements/student-evangelism/optimize-basketball-player-rest-breaks.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- developer
+- student
+products:
+- vs-code
+- azure
+- azure-app-service-static
+- github
+units:
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.1-introduction
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.2-set-up-local-environment
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.3-prepare-data
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.4-create-machine-learning-model
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.5-machine-learning-create-data
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.6-create-starter-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.7-codetour
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.8-initialize-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.9-add-players-to-bench
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.10-add-stats-to-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.11-move-players
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.12-update-stats
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.13-finalize-web-app
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.14-knowledge-check
+- learn.student-evangelism.optimize-basketball-player-rest-breaks.15-summary
+badge:
+  uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.badge

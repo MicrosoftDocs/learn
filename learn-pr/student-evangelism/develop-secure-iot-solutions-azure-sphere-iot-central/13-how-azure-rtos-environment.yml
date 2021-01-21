@@ -3,7 +3,7 @@ uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-azure-rtos-e
 title: How to deploy an Azure RTOS real-time sensor application to monitor the room environment
 metadata:
   title: How to deploy an Azure RTOS real-time sensor application to monitor the room environment
-  description: In this section, we will deploy an Azure RTOS Real-time sensor application to monitor the room environment
+  description: In this section, we will deploy an Azure RTOS real-time sensor application to monitor the room environment
   ms.date: 11/10/2020
   author: leestott
   ms.author: leestott

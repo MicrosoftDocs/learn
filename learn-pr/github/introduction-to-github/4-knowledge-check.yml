@@ -56,6 +56,6 @@ quiz:
     - content: "Clone the project to your local machine and push updates directly to the project repository."
       isCorrect: false
       explanation: "You can't push updates to a repository unless you are the owner or have write access."
-    - content: "Use git commands to make a copy of the project so that you can work locally. Submit and issue to get your changes into the target repository."
+    - content: "Use git commands to make a copy of the project so that you can work locally. Submit an issue to get your changes into the target repository."
       isCorrect: false
       explanation: "Although you can clone the target repository to your local machine, you won't be able to push any changes back to it without write access. That's why GitHub provides forking functionality. Although you could submit an issue to the project's repository, using GitHub's fork workflow provides a much better way to contribute to a project."

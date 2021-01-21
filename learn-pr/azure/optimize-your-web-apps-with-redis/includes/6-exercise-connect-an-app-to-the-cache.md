@@ -3,7 +3,7 @@
 Now that we have a Redis cache created in Azure, let's create an application to use it. Make sure you have your connection string information from the Azure portal.
 
 > [!NOTE]
-> The integrated Cloud Shell is available on the right. You can use that command prompt to create and run the example code we are building here, or perform these steps locally if you have a .NET Core development environment setup.
+> The integrated Cloud Shell is available on the right. You can use that command prompt to create and run the example code we are building here, or perform these steps locally if you have a .NET Core development environment set up.
 
 ## Create a Console Application
 
@@ -14,13 +14,13 @@ We'll use a simple Console Application so we can focus on the Redis implementati
     ```bash
     dotnet new console --name SportsStatsTracker
     ```
-    
+
 1. Change the current directory to the folder for the new project.
 
     ```bash
     cd SportsStatsTracker
     ```
-    
+
 ## Add the connection string
 
 Let's add the connection string we got from the Azure portal into the code. Never store credentials like this in your source code. To keep this sample simple, we're going to use a configuration file. A better approach for a server-side application in Azure would be to use Azure Key Vault with certificates.
@@ -31,9 +31,9 @@ Let's add the connection string we got from the Azure portal into the code. Neve
     touch appsettings.json
     ```
 
-1. Open the code editor by typing `code .` in the project folder. If you are working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
+1. Open the code editor by entering `code .` in the project folder. If you are working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
 
-1. Select the **appsettings.json** file in the editor and add the following text. Paste your connection string into the **value** of the setting.
+1. Select the **appsettings.json** file in the editor, and add the following text. Paste your connection string into the **value** of the setting.
 
     ```json
     {
@@ -46,9 +46,9 @@ Let's add the connection string we got from the Azure portal into the code. Neve
     > [!IMPORTANT]
     > Whenever you paste or change code into a file in the editor, make sure to save afterwards using the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-1. Click on the **SportsStatsTracker.csproj** file in the editor to open it.
+1. Select the **SportsStatsTracker.csproj** file in the editor to open it.
 
-1. Add the following `<ItemGroup>` configuration block into the root `<Project>` element to include the new file in the project and copy it to the output folder. This ensures that the app configuration file is placed in the output directory when the app is compiled/built.
+1. Add the following `<ItemGroup>` configuration block into the root `<Project>` element to include the new file in the project, and copy it to the output folder. This ensures that the app configuration file is placed in the output directory when the app is compiled/built.
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -61,13 +61,13 @@ Let's add the connection string we got from the Azure portal into the code. Neve
     </Project>
     ```
 
-1. Save the file. (Make sure you do this or you will lose the change when you add the package below!)
+1. Save the file. (Make sure you do this or you will lose the change when you add the package later.)
 
 ## Add support to read a JSON configuration file
 
 A .NET Core application requires additional NuGet packages to read a JSON configuration file.
 
-1. In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
+In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
 
     ```bash
     dotnet add package Microsoft.Extensions.Configuration.Json
@@ -79,7 +79,7 @@ Now that we have added the required libraries to enable reading configuration, w
 
 1. Select **Program.cs** in the editor.
 
-1. At the top of the file, a `using System` line is present. Underneath that line, add the following lines of code:
+1. At the top of the file, a `using System` line is present. Underneath that line, add the following lines of code.
 
     ```csharp
     using Microsoft.Extensions.Configuration;
@@ -95,37 +95,38 @@ Now that we have added the required libraries to enable reading configuration, w
         .Build();
     ```
 
-Your **Program.cs** file should now look like the following example:
+Your **Program.cs** file should now look like the following example.
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-
-namespace SportsStatsTracker
-{
-    class Program
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    
+    namespace SportsStatsTracker
     {
-        static void Main(string[] args)
+        class Program
         {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .Build();
+            static void Main(string[] args)
+            {
+                var config = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+            }
         }
     }
-}
-```
+    ```
 
 ## Get the connection string from configuration
 
-1. In **Program.cs**, at the end of the **Main** method, use the new **config** variable to retrieve the connection string and store it in a new variable named **connectionString**.
-    - The **config** variable has an indexer where you can pass in a string to retrieve from your **appSettings.json** file.
+In **Program.cs**, at the end of the **Main** method, use the new **config** variable to retrieve the connection string, and store it in a new variable named **connectionString**.
+
+The **config** variable has an indexer where you can pass in a string to retrieve from your **appSettings.json** file.
 
     ```csharp
     string connectionString = config["CacheConnection"];
     ```
-    
+
 ## Add support for the Redis cache .NET client
 
 Next, let's configure the console application to use the **StackExchange.Redis** client for .NET.
@@ -136,13 +137,13 @@ Next, let's configure the console application to use the **StackExchange.Redis**
     dotnet add package StackExchange.Redis
     ```
 
-1. Select **Program.cs** in the editor and add a `using` for the namespace **StackExchange.Redis**
+1. Select **Program.cs** in the editor, and add a `using` for the namespace **StackExchange.Redis**
 
     ```csharp
     using StackExchange.Redis;
     ```
-    
-Once the installation is completed, the Redis cache client is available to use with your project.
+
+After the installation is completed, the Redis cache client is available to use with your project.
 
 ## Connect to the cache
 
@@ -152,7 +153,7 @@ Let's add the code to connect to the cache.
 
 1. Create a `ConnectionMultiplexer` using `ConnectionMultiplexer.Connect` by passing it your connection string. Name the returned value **cache**.
 
-1. Since the created connection is _disposable_, wrap it in a `using` block. Your code should look something like:
+1. Because the created connection is _disposable_, wrap it in a `using` block. Your code should look something like the following.
 
     ```csharp
     string connectionString = config["CacheConnection"];
@@ -164,7 +165,7 @@ Let's add the code to connect to the cache.
     ```
 
 > [!NOTE] 
-> The connection to Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. This class should be shared and reused throughout your client application. We do _not_ want to create a new connection for each operation. Instead, we want to store it off as a field in our class and reuse it for each operation. Here we are only going to use it in the **Main** method, but in a production application, it should be stored in a class field, or a singleton.
+> The connection to Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. This class should be shared and reused throughout your client application. We do _not_ want to create a new connection for each operation. Instead, we want to store it off as a field in our class, and reuse it for each operation. Here, we are only going to use it in the **Main** method, but in a production application, it should be stored in a class field, or a singleton.
 
 ## Add a value to the cache
 
@@ -177,7 +178,8 @@ Now that we have the connection, let's add a value to the cache.
     ```
 
 1. Call `StringSet` on the `IDatabase` object to set the key "test:key" to the value "some value".
-    - the return value from `StringSet` is a `bool` indicating whether the key was added.
+
+The return value from `StringSet` is a `bool` indicating whether the key was added.
 
 1. Display the return value from `StringSet` onto the console.
 
@@ -185,7 +187,7 @@ Now that we have the connection, let's add a value to the cache.
     bool setValue = db.StringSet("test:key", "some value");
     Console.WriteLine($"SET: {setValue}");
     ```
-    
+
 ## Get a value from the cache
 
 1. Next, retrieve the value using `StringGet`. This takes the key to retrieve and returns the value.
@@ -196,8 +198,8 @@ Now that we have the connection, let's add a value to the cache.
     string getValue = db.StringGet("test:key");
     Console.WriteLine($"GET: {getValue}");
     ```
-    
-1. Your code should look like this:
+
+1. Your code should look like this.
 
     ```csharp
     using System;
@@ -232,15 +234,15 @@ Now that we have the connection, let's add a value to the cache.
         }
     }
     ```
-    
-1. Run the application to see the result. Type `dotnet run` into the terminal window below the editor. Make sure you are in the project folder or it won't find your code to build and run.
-    
+
+1. Run the application to see the result. Enter `dotnet run` in the terminal window below the editor. Make sure you are in the project folder or it won't find your code to build and run.
+
     ```bash
     dotnet run
     ```
-    
+
 > [!TIP] 
-> If the program doesn't do what you expect, but compiles, it may be because you have not saved changes in the editor. Always remember to save changes as you switch between the terminal and the editor windows 
+> If the program doesn't do what you expect, but compiles, it may be because you have not saved changes in the editor. Always remember to save changes as you switch between the terminal and the editor windows.
 
 ## Use the async versions of the methods
 
@@ -255,7 +257,7 @@ C#'s `async` and `await` keywords were not valid keywords in **Main** methods un
 1. Open the **SportsStatsTracker.csproj** file in the editor.
 
 1. Add `<LangVersion>7.1</LangVersion>` into the first `PropertyGroup` in the build file. It should look like the following when you are finished.
-    
+
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
     
@@ -266,40 +268,42 @@ C#'s `async` and `await` keywords were not valid keywords in **Main** methods un
       </PropertyGroup>
     ...
     ```
-    
+
 ### Apply the async keyword
 
 Next, apply the `async` keyword to the **Main** method. We will have to do three things.
 
 1. Add the `async` keyword onto the **Main** method signature.
+
 1. Change the return type from `void` to `Task`.
+
 1. Add a `using` statement to include `System.Threading.Tasks`.
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using StackExchange.Redis;
-using System.Threading.Tasks;
-
-namespace SportsStatsTracker
-{
-    class Program
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    using StackExchange.Redis;
+    using System.Threading.Tasks;
+    
+    namespace SportsStatsTracker
     {
-        static async Task Main(string[] args)
+        class Program
         {
-        ...
-```
+            static async Task Main(string[] args)
+            {
+            ...
+    ```
 
 ### Get and set values asynchronously
 
-We can leave the synchronous methods in place, let's add a call to the `StringSetAsync` and `StringGetAsync` methods to add another value to the cache. Set "counter" to the value "100".  
+We can leave the synchronous methods in place. Let's add a call to the `StringSetAsync` and `StringGetAsync` methods to add another value to the cache. Set "counter" to the value "100".  
 
 1. Use the `StringSetAsync` and `StringGetAsync` methods to set and retrieve a key named "counter". Set the value to "100".
 
 1. Apply the `await` keyword to get the results from each method.
 
-1. Output the results to the console window - just as you did with the synchronous versions.
+1. Output the results to the console window, just as you did with the synchronous versions.
 
     ```csharp
     // Simple get and put of integral data types into the cache
@@ -309,13 +313,15 @@ We can leave the synchronous methods in place, let's add a call to the `StringSe
     getValue = await db.StringGetAsync("test");
     Console.WriteLine($"GET: {getValue}");
     ```
-    
-1. Run the application again - it should still work and now have two values.
+
+1. Run the application again. It should still work and now have two values.
 
 #### Increment the value
 
-1. Use the `StringIncrementAsync` method to increment your **counter** value. Pass the number **50** to add to the counter.
+1. Use the `StringIncrementAsync` method to increment your **counter** value. Pass the number **50** to add to the counter:
+
     - Notice that the method takes the key _and_ either a `long` or `double`.
+
     - Depending on the parameters passed, it either returns a `long` or `double`.
 
 1. Output the results of the method to the console.
@@ -324,70 +330,71 @@ We can leave the synchronous methods in place, let's add a call to the `StringSe
     long newValue = await db.StringIncrementAsync("counter", 50);
     Console.WriteLine($"INCR new value = {newValue}");
     ```
-    
+
 ## Other operations
 
 Finally, let's try executing a few additional methods with the `ExecuteAsync` support.
 
 1. Execute "PING" to test the server connection. It should respond with "PONG".
+
 1. Execute "FLUSHDB" to clear the database values. It should respond with "OK".
 
-```csharp
-var result = await db.ExecuteAsync("ping");
-Console.WriteLine($"PING = {result.Type} : {result}");
+    ```csharp
+    var result = await db.ExecuteAsync("ping");
+    Console.WriteLine($"PING = {result.Type} : {result}");
+    
+    result = await db.ExecuteAsync("flushdb");
+    Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
+    ```
+    
+The final code should look something like the following.
 
-result = await db.ExecuteAsync("flushdb");
-Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
-```
-
-The final code should look something like:
-
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using StackExchange.Redis;
-using System.Threading.Tasks;
-
-namespace SportsStatsTracker
-{
-    class Program
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    using StackExchange.Redis;
+    using System.Threading.Tasks;
+    
+    namespace SportsStatsTracker
     {
-        static async Task Main(string[] args)
+        class Program
         {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .Build();
-
-            string connectionString = config["CacheConnection"];
-
-            using (var cache = ConnectionMultiplexer.Connect(connectionString))
+            static async Task Main(string[] args)
             {
-                IDatabase db = cache.GetDatabase();
-
-                bool setValue = db.StringSet("test:key", "some value");
-                Console.WriteLine($"SET: {setValue}");
-
-                string getValue = db.StringGet("test:key");
-                Console.WriteLine($"GET: {getValue}");
-
-				setValue = await db.StringSetAsync("test", "100");
-				Console.WriteLine($"SET: {setValue}");
-
-				getValue = await db.StringGetAsync("test");
-				Console.WriteLine($"GET: {getValue}");
-
-                var result = await db.ExecuteAsync("ping");
-				Console.WriteLine($"PING = {result.Type} : {result}");
-				
-				result = await db.ExecuteAsync("flushdb");
-				Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
+                var config = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+    
+                string connectionString = config["CacheConnection"];
+    
+                using (var cache = ConnectionMultiplexer.Connect(connectionString))
+                {
+                    IDatabase db = cache.GetDatabase();
+    
+                    bool setValue = db.StringSet("test:key", "some value");
+                    Console.WriteLine($"SET: {setValue}");
+    
+                    string getValue = db.StringGet("test:key");
+                    Console.WriteLine($"GET: {getValue}");
+    
+                    setValue = await db.StringSetAsync("test", "100");
+                    Console.WriteLine($"SET: {setValue}");
+    
+                    getValue = await db.StringGetAsync("test");
+                    Console.WriteLine($"GET: {getValue}");
+    
+                    var result = await db.ExecuteAsync("ping");
+                    Console.WriteLine($"PING = {result.Type} : {result}");
+                    
+                    result = await db.ExecuteAsync("flushdb");
+                    Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
+                }
             }
         }
     }
-}
-```
+    ```
 
 ## Challenge
 
@@ -418,7 +425,7 @@ Now that we have a Redis cache created in Azure, let's create an application to 
 
 We'll use a simple console application so we can focus on the Redis implementation.
 
-1. In the Cloud Shell, create a new directory called `redisapp` and initialize a new Node.js app there.
+1. In the Cloud Shell, create a new directory called `redisapp`, and initialize a new Node.js app there.
 
     ```bash
     mkdir redisapp
@@ -433,7 +440,7 @@ We'll use a simple console application so we can focus on the Redis implementati
     - **bluebird**: Used to convert the callback-style methods in the `redis` package to awaitable Promises.
     - **dotenv**: Loads environment variables from a `.env` file, which is where we'll store our Redis connectivity information.
 
-    Let's install them now. Run this command to add them to our app:
+    Let's install them now. Run this command to add them to our app.
 
     ```bash
     npm install redis bluebird dotenv
@@ -449,9 +456,9 @@ Let's add the connection information we got from the Azure portal into a `.env` 
     touch .env
     ```
 
-1. Open the code editor by typing `code .` in the project folder. If you are working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
+1. Open the code editor by entering `code .` in the project folder. If you are working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
 
-1. Select the **.env** file in the editor and paste in the following text.
+1. Select the **.env** file in the editor, and paste in the following text.
 
     ```
     REDISHOSTNAME=
@@ -459,7 +466,7 @@ Let's add the connection information we got from the Azure portal into a `.env` 
     REDISPORT=
     ```
 
-1. Paste in the hostname, primary key, and port after the equals sign on each respective line. The complete file will look similar to the following example:
+1. Paste in the hostname, primary key, and port after the equals sign on each respective line. The complete file will look similar to the following example.
 
     ```
     REDISHOSTNAME=myredishost.redis.cache.windows.net
@@ -475,21 +482,21 @@ Now it's time to write the code for our application.
 
 1. Select **app.js** in the editor.
 
-1. First, we'll add our `require` statements. Paste in the following code at the top of the file:
+1. First, we'll add our `require` statements. Paste in the following code at the top of the file.
 
     ```javascript
     var Promise = require("bluebird");
     var redis = require("redis");
     ```
 
-1. Next, we'll load our `.env` configuration, and use bluebird's `promisifyAll` function to convert the `redis` package's functions and methods to awaitable Promises. Paste in the following code next:
+1. Next, we'll load our `.env` configuration, and use bluebird's `promisifyAll` function to convert the `redis` package's functions and methods to awaitable Promises. Paste in the following code.
 
     ```javascript
     require("dotenv").config();
     Promise.promisifyAll(redis);
     ```
 
-1. Now we'll initialize a Redis client. Paste in the boilerplate code from the previous unit (using `process.env` to access our host name, port and key) to create the client:
+1. Now, we'll initialize a Redis client. Paste in the boilerplate code from the previous unit (using `process.env` to access our host name, port and key) to create the client.
 
     ```javascript
     const client = redis.createClient(
@@ -497,7 +504,7 @@ Now it's time to write the code for our application.
       process.env.REDISHOSTNAME,
       {
         password: process.env.REDISKEY,
-        tls: { servername: process.env.REDISCACHEHOSTNAME }
+        tls: { servername: process.env.REDISHOSTNAME }
       }
     );
     ```
@@ -516,7 +523,7 @@ We're ready to write code to interact with our Redis cache.
     })();
     ```
 
-1. Add a value to the cache with the `setAsync` method, and read it back with `getAsync`:
+1. Add a value to the cache with the `setAsync` method, and read it back with `getAsync`.
 
     ```javascript
     console.log("Adding value to the cache");
@@ -526,26 +533,26 @@ We're ready to write code to interact with our Redis cache.
     console.log(await client.getAsync("myKey"));
     ```
 
-1. Send a ping to the cache with `pingAsync`:
+1. Send a ping to the cache with `pingAsync`.
 
     ```javascript
     console.log("Pinging the cache");
     console.log(await client.pingAsync());
     ```
 
-1. Delete all the keys in the cache with `flushdbAsync`:
+1. Delete all the keys in the cache with `flushdbAsync`.
 
     ```javascript
     await client.flushdbAsync();
     ```
 
-1. Finally, close the connection with `quitAsync`:
+1. Finally, close the connection with `quitAsync`.
 
     ```javascript
     await client.quitAsync();
     ```
 
-    Save the file. Your finished application should look like this:
+1. Save the file. Your finished application should look like this.
 
     ```javascript
     var Promise = require("bluebird");
@@ -560,7 +567,7 @@ We're ready to write code to interact with our Redis cache.
     process.env.REDISHOSTNAME,
     {
       password: process.env.REDISKEY,
-      tls: { servername: process.env.REDISCACHEHOSTNAME }
+      tls: { servername: process.env.REDISHOSTNAME }
     }
     );
 
@@ -575,14 +582,14 @@ We're ready to write code to interact with our Redis cache.
       await client.quitAsync();
     })();
     ```
-    
-1. Run the application. In the Cloud Shell, execute the following command:
-    
+
+1. Run the application. In the Cloud Shell, execute the following command.
+
     ```bash
     node app.js
     ```
 
-    You'll see the following results:
+    You'll see the following results.
 
     ```output
     Adding value to the cache
@@ -591,6 +598,5 @@ We're ready to write code to interact with our Redis cache.
     Pinging the cache
     PONG
     ```
-
 
 ::: zone-end
