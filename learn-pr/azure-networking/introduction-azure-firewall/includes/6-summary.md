@@ -12,7 +12,7 @@ Here are some links to more information about Azure Firewall and Azure Firewall 
 
 - [Azure Firewall](https://azure.microsoft.com//services/azure-firewall/)
 - [Azure Firewall pricing](https://azure.microsoft.com/pricing/details/azure-firewall/)
-- [FQDN tags overview for Azure Firewall](https://docs.microsoft.com/azure/firewall/fqdn-tags)
+- [FQDN tags overview](https://docs.microsoft.com/azure/firewall/fqdn-tags)
 - [Azure service tags overview](https://docs.microsoft.com/azure/virtual-network/service-tags-overview#available-service-tags)
 - [Azure Firewall threat intelligence-based filtering](https://docs.microsoft.com/azure/firewall/threat-intel)
 - [Tutorial: Deploy and configure Azure Firewall using the Azure portal](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal?azure-portal=true)
