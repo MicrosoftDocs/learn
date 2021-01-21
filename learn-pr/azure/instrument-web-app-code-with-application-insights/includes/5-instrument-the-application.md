@@ -1,6 +1,6 @@
 You can generate custom events and metrics from an app by using the `TelemetryClient` object from the Application Insights SDK.
 
-For the video app, the development team has added and initialized the SDK in their code and is ready to start adding logic to generate data about application-specific events and measurements.
+For the video app, the development team has added and initialized the SDK in their code, and is ready to start adding logic to generate data about application-specific events and measurements.
 
 In this exercise, you'll instrument your code with a custom event, run it to generate event occurrences, and view the results in the Azure portal.
 
@@ -16,7 +16,9 @@ On the main page of the app, let's add the button and action.
    cd videowebapp
    code .
    ```
+
 1. To open *Views/Home/Index.cshtml*, use the file navigator of the Azure Cloud Shell editor.
+
 1. At the bottom of the file, paste the following code to add a button.
 
    ```html
@@ -58,7 +60,7 @@ Now that you have a button in your app, and some code that will run when a user 
    private TelemetryClient aiClient;
    ```
 
-1. Add a constructor to the `HomeController` class that accepts a `TelemetryClient` object, and assign it to your `aiClient` field:
+1. Add a constructor to the `HomeController` class that accepts a `TelemetryClient` object, and assign it to your `aiClient` field.
 
    ```csharp
    public HomeController(TelemetryClient aiClient)
@@ -104,9 +106,9 @@ In the Cloud Shell from within the *videowebapp* folder, to build the applicatio
 
 To locate and display the events you just created, use the Application Insights search tool. Perform the following steps.
 
-1. On the navigation menu of the window for your web app, select **Application Insights**. In the window that opens, to go to the app's Application Insights resource, select **Application Dashboard** from the top menu.
+1. On the left nav bar, under **Settings**, select **Application Insights**. In the Application Insights window, to go to the app's Application Insights resource, select **Application Dashboard** from the top menu.
 
-1. On the nav bar, under **Investigate**, select **Transaction search**.
+1. On the left nav bar, under **Investigate**, select **Transaction search**.
 
     ![Access the search tool in Application Insights](../media/5-access-search-in-app-insights.png)
 
