@@ -18,6 +18,6 @@ Testing simplified versions of quantum algorithms in hardware helps to discover 
 
 ## Exploit your creativity to get the maximum value from the hardware
 
-Working with few qubits is a daunting task, but it encourages creativity to exploit the resources available optimally. Do you have an algorithm in mind but it needs many qubits? Try to optimize it so that the qubits are used wisely to save resources.
+Working with few qubits is a daunting task, but it encourages creativity to exploit the available resources optimally. Do you have an algorithm in mind but it needs many qubits? Try to optimize it so that the qubits are used wisely to save resources.
 
 In the next section you are going to take a test to check what you have learned in this module.

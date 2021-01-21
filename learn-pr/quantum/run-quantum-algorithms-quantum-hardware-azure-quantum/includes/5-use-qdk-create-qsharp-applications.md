@@ -18,7 +18,7 @@ Use Visual Studio Code to create a Q# Project.
 1. Select **Standalone console application**.
 
 1. Select a directory to hold your project, such as your home directory and name
-   your project. For example, enter `GroversJob` as the project name and select
+   your project. For example, enter `MyGroversJob` as the project name and select
    **Create Project**.
 
 1. From the window that appears at the bottom, select **Open new project**.
@@ -163,7 +163,7 @@ introduced through the Azure CLI as arguments of your operation.
 The full code should be:
 
 ```qsharp
-namespace AzureGrovers {
+namespace MyGroversJob {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Measurement;
@@ -240,7 +240,108 @@ namespace AzureGrovers {
 
 ## Submit your job to Azure Quantum
 
+Now you have your code ready to submit the job to Azure Quantum. First you will evaluate the resources that your code requires. Then you will try your code in the IonQ's simulator, and then you will run it against hardware.
+
+In this example we will set the number of qubits to 2, and the marked index is going to be 1.
+
+### Estimate the resources for your job
+
+To estimate the resources of the job, the Quantum Development Kit offers you the `ResourcesEstimator` tool that was presented in the module [Explore the key concepts of quantum computing by using Q#](https://docs.microsoft.com/learn/modules/qsharp-explore-key-concepts-quantum-computing/7-explore-entanglement-qsharp).
+
+To use `ResourcesEstimator`:
+
+1. Run your program from the command line, and select `ResourcesEstimator` as your simulator.
+
+   ```dotnetcli
+   dotnet run -- --n-qubits 2 --idx-marked --simulator ResourcesEstimator
+   ```
+
+1. Review the printed list of the quantum resources that are required to run the job.
+   ```output
+   Metric          Sum     Max
+   CNOT            11      11
+   QubitClifford   20      20
+   R               0       0
+   Measure         2       2
+   T               7       7
+   Depth           5       5
+   Width           3       3
+   QubitCount      3       3
+   BorrowedWidth   0       0
+   ```
+
+As you can see, this job only requires 3 qubits, since the `QubitCount` is 3. Also, we can see that uses 11 `CNOT` gates and 20 `QubitClifford` gates. This information might be useful to estimate the cost of running the job in different providers.
+
 ### Test the code in the simulator
+
+Now that you know what resources you need to run your job, you can test it again the simulator. To do it:
+
+1. Open the Azure CLI and submit the job using the following command:
+   ```azcli
+   az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1
+   ```
+   You should obtain something like this:
+
+   ```output
+   Name          Id                                    Status    Target          Submission time
+   ------------  ------------------------------------  --------  --------        --------------------------------
+   MyGroversJob  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.simulator  2021-01-20T21:34:35.406875+00:00
+   ```
+1. Track the status of your job using `az quantum job show` command. To check on
+   the status, use the `az quantum job show` command, being sure to replace the
+   `job-id` parameter with the `Id` output by the previous command:
+
+   ```dotnetcli
+    az quantum job show -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy 
+   ```
+
+1. Eventually, you will see the `Status` in the above table change to `Succeeded`.
+   Once that happens you can get the results from the job by running `az quantum job output`:
+
+   ```dotnetcli
+   az quantum job output -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy 
+   ```
+
+   And the output should be:
+
+   ```output
+    Result    Frequency
+    --------  -----------  -------------------------
+    [1,0]     1.00000000   ▐████████████████████   |
+   ```
+
+In this particular case, Grover's algorithm theoretically succeeds with 100% of probability.
 
 ### Run your code against hardware
 
+To run your code against hardware, you just need to repeat the same steps as for the simulator but changing the target to `ionq.qpu`. You can also choose the number of `shots` to run your program, otherwise is defaulted to 500.
+
+For example, if you choose 10 shots using the following command:
+
+```azcli
+az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1 --shots 10
+```
+
+You may obtain a result similar to this:
+
+```output
+```
+
+As you can see, the marked index can't be inferred reliably from the histogram, even though the algorithm theoretically succeeds with a 100% of probability. This is because real qubits are subjected to noise and errors can sometimes
+lead to incorrect computations. To account for this errors, is convenient to increase the number of shots to reduce the effect of noise and get a more accurate histogram.
+
+For example, if you choose 5000 shots, you should obtain something like this:
+
+```output
+Result    Frequency
+--------  -----------  -------------------------
+[0,0]     0.07220000   ▐█                      |
+[1,0]     0.80560000   ▐████████████████       |
+[0,1]     0.04500000   ▐█                      |
+[1,1]     0.07720000   ▐██                     |
+
+```
+
+This is a more accurate statistical representation of the theoretical outcome of the program and enable us to infer the correct index.
+
+In the next section, you are going to see some ideas to continue exploring quantum computing with Azure Quantum.

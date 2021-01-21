@@ -215,7 +215,7 @@ command `az quantum job submit`.
    `job-id` parameter with the `Id` output by the previous command:
 
    ```dotnetcli
-    az quantum job show -o table --job-id 5aa8ce7a-25d2-44db-bbc3-87e48a97249c 
+    az quantum job show -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy 
 
    Name        Id                                    Status    Target    Submission time
    ----------  ------------------------------------  --------  --------  ---------------------------------
@@ -248,8 +248,8 @@ argument `--shots`. For example, if you want to run the program only once:
 
 1. Set the number of shots to 1:
 
-```dotnetcli
-az quantum job submit --target-id ionq.simulator --shots 1 -o table
+```azcli
+az quantum job submit --target-id ionq.qpu --shots 1 -o table
 ```
 
 1. After the status of the job changes to `Succeeded`, extract the output of the job:
