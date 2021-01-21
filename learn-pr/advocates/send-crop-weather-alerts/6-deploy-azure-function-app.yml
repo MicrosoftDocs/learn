@@ -6,7 +6,7 @@ metadata:
   description: Create and deploy your existing application to a function app in Azure.
   author: berndverst
   ms.author: beverst
-  ms.date: 01/27/2021
+  ms.date: 01/21/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True

@@ -37,7 +37,7 @@ units:
 - learn.advocates.send-crop-weather-alerts.5-create-twilio-account
 - learn.advocates.send-crop-weather-alerts.6-deploy-azure-function-app
 - learn.advocates.send-crop-weather-alerts.7-connect-twilio-azure-functions
-- learn.advocates.send-crop-weather-alerts.7a-knowledge-check
+- learn.advocates.send-crop-weather-alerts.3-knowledge-check
 - learn.advocates.send-crop-weather-alerts.8-summary
 
 badge:
