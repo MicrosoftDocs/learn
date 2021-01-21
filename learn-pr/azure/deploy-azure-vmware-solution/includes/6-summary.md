@@ -1,3 +1,10 @@
-In this module, you learned how to deploy and connect Azure VMware Solution to an on-premises VMware environment. First, you learned about all necessary planning to deploy Azure VMware Solution. From there, you learned about how to deploy Azure VMware Solution in Azure. Lastly, you learned how to connect the Azure VMware Solution private cloud to your on-premises VMware environment. Knowing how to successfully build and configure Azure VMware Solution will help out your company with future server migrations.
+In this module, you learned about the first steps to prepare and migrate your on-premises VMware workloads to Azure VMware Solution. These steps include:
+
+- Plan your the Azure VMware Solution deployment by reviewing the requirements.
+- Assess your migration by using Azure Migrate.
+- Deploy Azure VMware Solution.
+- Connect Azure VMware solution to an on-premises VMware environment by using ExpressRoute. 
+
+Now that you know how to successfully build and configure Azure VMware Solution, you can migrate your VMware workloads to Azure VMware Solution.
 
 ## Learn more
