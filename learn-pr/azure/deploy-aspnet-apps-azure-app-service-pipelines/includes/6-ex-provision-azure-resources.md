@@ -43,7 +43,7 @@ Next, configure Azure Pipeline variables that you'll use subsequently when provi
 
 1. Within the web browser window displaying the Azure portal, switch to the web browser tab displaying the DevOps project. In the vertical menu bar along the left edge of the project page, in the **Pipelines** section, select **Library**.
 2. On the **Library** page, select **+ Variable group**.
-3. On the properties page of the variable group, in the **Variable group name** textbox, type **AzureResourcesVariableGroup**, ensure that the **Allow access to all pipelines** switch is selected, and, in the **Variables** section, use the **+ Add** link to add the following variables with the corresponding values (replace the `<Azure_region>` placeholder with the name of the Azure region into which you want to deploy Azure resources):
+3. On the properties page of the variable group, in the **Variable group name** textbox, enter **AzureResourcesVariableGroup**, ensure that the **Allow access to all pipelines** switch is selected, and, in the **Variables** section, use the **+ Add** link to add the following variables with the corresponding values (replace the `<Azure_region>` placeholder with the name of the Azure region into which you want to deploy Azure resources):
 
    > [!NOTE]
    > To identify the names of Azure regions, in the **Cloud Shell**, at the PowerShell prompt, run `az account list-locations --query "sort_by([].{DisplayName:displayName, Name:name}, &DisplayName)" --output table`.
@@ -113,7 +113,7 @@ For the Azure DevOps pipeline to access your Azure subscription, you need to set
 1. On the **Service connections** pane, select **New service connection**.
 1. On the **New service connection** pane, select the **Azure Resource Manager** option and select **Next**.
 1. On the **New Azure service connection** pane, ensure that the **Service principal (automatic)** option is selected and select **Next**.
-1. On the **New Azure service connection** pane, ensure that the **Scope level** is set to **Subscription**. The target subscription you intend to use in this exercise appears in the **Subscription** dropdown list. In the **Service connection name**, type **labAzureSubscription**, verify that the **Grant access permissions to all pipelines** check box is selected, and select **Save**.
+1. On the **New Azure service connection** pane, ensure that the **Scope level** is set to **Subscription**. The target subscription you intend to use in this exercise appears in the **Subscription** dropdown list. In the **Service connection name**, enter **labAzureSubscription**, verify that the **Grant access permissions to all pipelines** check box is selected, and select **Save**.
 
 ## Configure the Azure Pipeline to provision Azure resources
 
