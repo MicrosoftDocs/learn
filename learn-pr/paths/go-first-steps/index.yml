@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.languages.go-first-steps
+metadata:
+  title: Take your first steps with Go
+  description: Take your first steps with Go.
+  brand: azure
+  ms.date: 01/21/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Take your first steps with Go
+summary: In this learning path, you'll take your first steps with Go.
+prerequisites: |
+  - Programming basics in general
+  - Knowledge with at least one programming language
+  - Download / Install Software from the Internet
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+modules:
+- learn.language.go-get-started
+- learn.language.go-control-flow
+- learn.language.go-variables-functions-packages
+- learn.language.go-data-types
+- learn.language.go-errors-logs
+- learn.language.go-methods-interfaces
+trophy:
+  uid: learn.languages.go-first-steps.trophy
