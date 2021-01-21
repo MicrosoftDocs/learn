@@ -4614,6 +4614,11 @@
       "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/8-walkthrough-use-azure-tco-calculator.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/2-describe-cloud-security-posture-management-cspm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/2-describe-cloud-security-posture-management",
+      "redirect_document_id": false
     }
   ]
 }
