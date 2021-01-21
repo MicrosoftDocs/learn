@@ -11,22 +11,20 @@ metadata:
   ms.prod: learning-git
   ROBOTS: NOINDEX
 durationInMinutes: 10
-content: |
-  [!include[](includes/7a-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is a version control system?'
+  - content: 'Which one of the following is NOT a common use case for version control systems?'
     choices:
-    - content: "A program or set of programs that lets you control file versions."
+    - content: "Rolling back changes to a project or file."
       isCorrect: false
-      explanation: "Incorrect. Version control is used to track changes to files."    
-    - content: "A program or set of programs that lets you track changes to a collection of files."
+      explanation: "Incorrect. Version control systems are great for retrieving past versions of a file or entire project."    
+    - content: "Gathering and communicating feature requirements for a large project to stakeholders."
       isCorrect: true
-      explanation: "Correct!"
-    - content: "A program or set of programs that lets you control software versions."
+      explanation: "Correct! Although some teams use tools like GitHub to collaborate, version control systems are less well-suited for this type of work."            
+    - content: "Making experimental changes to your project in an isolated branch."
       isCorrect: false
-      explanation: "Incorrect. Version control is used to track changes to files."      
+      explanation: "Incorrect. Using branches to create different sets of changes to a project is a key use case for version control."
   - content: 'What is another name for version control system?'
     choices:
     - content: "Version management software (VMS)"
