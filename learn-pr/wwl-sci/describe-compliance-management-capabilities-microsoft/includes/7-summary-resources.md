@@ -4,9 +4,9 @@ Without these tools, organizations wouldn’t be able to manage compliance, and 
 
 Now that you’ve completed this module, you should be able to:
 
-- Explore the Microsoft compliance center
-- Describe the benefits of compliance manager
-- Know where to go to find compliance documentation
+- Explore the Microsoft compliance center.
+- Describe the benefits of compliance manager.
+- Know where to go to find compliance documentation.
 
 ## Learn more:
 
