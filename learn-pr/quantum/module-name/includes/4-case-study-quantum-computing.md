@@ -1,7 +1,10 @@
 One of the services Azure Quantum offers is solutions to quantum computing in real or simulated quantum devices. 
 
 Quantum mechanics is the underlying "operating system" of our universe. It describes how the fundamental building blocks of nature behave. In order to understand nature's behaviors, such as chemical reactions, biological reactions, material formations, etc., which often involve many-body quantum interactions, we rely on being able to simulate them with state-of-the-art computation. Classical computing, using binary states, finds it increasingly challenging as the size of the system grows. As we have seen throughout the [learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/), quantum computing, in contrast, makes use of quantum mechanical phenomena such as _superposition_, _interference_ and _entanglement_. For simulating intrinsically quantum mechanical problems, quantum computing holds promises, as quantum states can be used to represent the natural states in question. 
+ 
+![Figure Azure Quantum Computing With QDK](../media/4-azure-quantum-computing-with-qdk.png)
 
+ 
 Superposition enables other quantum mechanical effects such as interference and entanglement, which in turn empower [quantum algorithms]( https://en.wikipedia.org/wiki/Shor%27s_algorithm ) for faster searching, better optimization, and greater security. When designed to scale, quantum systems will have capabilities that exceed our most powerful supercomputers. As the global community of quantum researchers, scientists, engineers, and business leaders continue to collaborate to advance the quantum ecosystem, we expect to see quantum impact accelerate across every industry. 
 
 
@@ -26,9 +29,16 @@ We are living a quantum revolution. When we can implement algorithms on a fault-
 Quantum researchers at Microsoft are studying quantum computer applications and how to accomplish them on a large-scale quantum computer. One of the applications they are focusing on is in chemistry to help address one of the world’s biggest challenges: climate change. In the context of climate change, a main issue is to find an efficient catalyst for [carbon fixation](https://en.wikipedia.org/wiki/Carbon_fixation#:~:text=Carbon%20fixation%20or%20%D1%81arbon%20assimilation,as%20structure%20for%20other%20biomolecules.), a natural process by which carbon dioxide is turned into valuable chemicals usually used to store energy. The most prominent example of carbon fixation is photosynthesis: a form of carbon fixation used by plant to convert carbon dioxide into glucose. 
 
 A synthetic carbon fixation process can help reduce carbon dioxide in the atmosphere by converting $CO_2$ into other useful chemical compounds. Simulation of synthetic catalytic processes requires testing thousands of molecular combinations. 
+ 
+ 
+![Protocol of quantum computing enhanced computational catalysis workflow.](../media/4-carbon-fixation.png)
+*Figure 1: Protocol of quantum computing enhanced computational catalysis workflow. The energies of all species in the catalytic reaction cycle can be evaluated through the quantum computer using the output parameters of classical computers (upper right).*
 
 Microsoft Quantum researchers have teamed up with researchers at [ETH Zurich](https://ethz.ch/en.html) to develop a new quantum algorithm to simulate catalytic processes. They have focused on a well-known catalytic process based on transition metal Ruthenium to convert carbon dioxide into methanol. This process is extremely inefficient, so this case of study offers an opportunity for testing quantum algorithms and finding ways to optimize these simulations on a quantum computer. 
 Problems that involved calculating molecular energies require a very large number of time steps as well as handling tons of information. This can be a challenging task, even for a quantum computer, so we need to reduce the cost of computation before executing our quantum algorithms. The natural approach should be to reduce information to be loaded, that is reducing the size of the input.  In their [paper](https://www.microsoft.com/en-us/research/publication/quantum-computing-enhanced-computational-catalysis/) published in 2020, they use a particular representation of the energy of the quantum system, the so-called “double-factorized” Hamiltonian. Here they propose a quantum algorithm based on compression properties of the double-factorized Hamiltonian to reduce runtime by orders of magnitude for obtaining reliable results in comparison to unfactorized or single-factorized forms. Their algorithm is 10,000 times faster than the [previous one](https://dx.doi.org/10.1073/pnas.1619152114) they proposed for this task, and this is the first time a quantum algorithm is analyzed on a specific chemical reaction along the entire reaction pathway. 
+
+
+
 It is important to remark that the results obtained from this work are not restricted to chemistry and climate change applications. In fact, knowing more about the quantum algorithms and boosting calculations opens the door to even more questions about large-scale quantum computers, and exploring additional ways algorithms can be more effective. 
 
 
