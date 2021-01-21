@@ -42,3 +42,17 @@ quiz:
     - content: "Only public items can be accessed from third party crates."
       isCorrect: false
       explanation: "Incorrect. This describes a characteristic of third-party modules."
+  - content: "Which of the following statements best describes a crate?"
+    choices:
+    - content: "A compilation unit, which is the smallest amount of code that the Rust compiler can operate on."
+      isCorrect: true
+      explanation: "Correct. This best describes a crate."
+    - content: "A crate contains a Cargo.toml file that describes how to build it."
+      isCorrect: false
+      explanation: "Incorrect. This best describes a package."
+    - content: "A collection of items including: constants, type aliases, functions, structs, and more."
+      isCorrect: false
+      explanation: "Incorrect. This best describes a module."
+    - content: "Crates control the privacy of items and if they can be used by outside code."
+      isCorrect: false
+      explanation: "Incorrect. This best describes a module."
