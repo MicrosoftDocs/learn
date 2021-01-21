@@ -14,7 +14,7 @@ The Hyper-V Manager GUI has the panes listed in the following table.
 |Details|When a VM or checkpoint is selected, summary details about the VM or checkpoint are listed in the Details pane.|
 |Actions|The Actions pane contains a menu of actions that you can perform on each Hyper-V host, VM, or checkpoint.|
 
-:::image type="content” source="../media/m22-hyper-v-manager.png" alt-text="The Hyper-V Manager GUI with its five panes: navigation, Virtual Machines, Checkpoints, Details, and Actions." :::
+:::image type="content" source="../media/m22-hyper-v-manager.png" alt-text="The Hyper-V Manager GUI with its five panes: navigation, Virtual Machines, Checkpoints, Details, and Actions.":::
 
 ## General features and functionality of Hyper-V Manager
 

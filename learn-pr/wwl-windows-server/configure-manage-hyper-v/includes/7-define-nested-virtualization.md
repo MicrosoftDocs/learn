@@ -2,11 +2,11 @@ Nested virtualization is a Hyper-V feature that you can use to install and run H
 
 The following diagram depicts Hyper-V in a non-nested scenario. The Hyper-V hypervisor takes full control of the hardware virtualization capabilities and doesn't expose them to the guest OS. Also, in this non-nested scenario, the VM does not directly interact with the host hardware.
 
-:::image type="content" source="../media/m22-nested-virtualization-1.svg" alt-text="A non-nested virtualization architecture diagram in which the Windows operating system and Hyper-V Guest operating system have to access the hardware on the host via a Hyper-V hypervisor layer." :::
+:::image type="content" source="../media/m22-nested-virtualization-1.svg" alt-text="A non-nested virtualization architecture diagram in which the Windows operating system and Hyper-V Guest operating system have to access the hardware on the host via a Hyper-V hypervisor layer." border="false":::
 
 In contrast, the following diagram depicts Hyper-V with nested virtualization enabled. With nested virtualization enabled, a guest VM can install its own hypervisor and run its own guest VM. VM access to the host hardware must go through the second hypervisor and then through the first hypervisor.
 
-:::image type="content" source="../media/m22-nested-virtualization-2.svg" alt-text=“A nested virtualization architecture diagram in which there is an additional hypervisor present, which sits above the initial hypervisor, creating two hypervisor layers. Any VMs created above this additional hypervisor access host hardware through the two hypervisors in succession." :::
+:::image type="content" source="../media/m22-nested-virtualization-2.svg" alt-text="A nested virtualization architecture diagram in which there is an additional hypervisor present, which sits above the initial hypervisor, creating two hypervisor layers. Any VMs created above this additional hypervisor access host hardware through the two hypervisors in succession." border="false":::
 
 ## Configure networks with nested virtualization
 
@@ -50,7 +50,8 @@ The second option uses NAT. This approach is best suited for cases where MAC add
 
 To use NAT, create a virtual NAT switch in the host VM. Assign an IP address to the network adapter and ensure that each nested VM has an IP address and gateway assigned to it.
 
->[!Note] There's more configuration required with the NAT option than the MAC address spoofing option.
+> [!NOTE] 
+> There's more configuration required with the NAT option than the MAC address spoofing option.
 
 ### Features that become disabled when you enable nested virtualization
 

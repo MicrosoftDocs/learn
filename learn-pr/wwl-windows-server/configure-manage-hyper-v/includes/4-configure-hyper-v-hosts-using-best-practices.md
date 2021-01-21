@@ -8,7 +8,7 @@ The Contoso Hyper-V administrator needs to plan for the deployment of various wo
 - Run the Best Practices Analyzer and use resource metering.
 - Use generation 2 VMs if the guest OS supports them.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > These are critical decisions that need to be determined prior to deployment. Failure to correctly determine best practices for your deployments can result in poor performing VMs.
 
 ## Provision the host with adequate hardware
@@ -25,8 +25,8 @@ The host server's OS and the VM files should be stored on separate disks, becaus
 
 You should use SSDs where possible because SSDs have faster read-write speeds and consume less power than standard HDDs.
 
->[!TIP]
->You can further improve performance if you deploy to a disk that uses striping, such as a Redundant Array of Independent Disks (RAID) 1+0 array.
+> [!TIP]
+> You can further improve performance if you deploy to a disk that uses striping, such as a Redundant Array of Independent Disks (RAID) 1+0 array.
 
 Also, when using shared storage, you can provision multiple VMs on the same logical unit number (LUN) if you use CSVs. However, choosing between separate LUNs for each VM or a shared LUN depends on the VM workload and host configuration.
 
@@ -34,8 +34,8 @@ Also, when using shared storage, you can provision multiple VMs on the same logi
 
 You should ensure that Hyper-V is the only server role installed on the host server. Don't install the Hyper-V role with other roles such as the domain controller or the file server role. Each role you deploy on a server requires resources. When you deploy Hyper-V, you want to ensure that each VM has access to as many of the host's resources as possible.
 
->[!TIP]
->If you have a requirement to locate multiple roles on the same hardware, deploy the roles as VMs instead of installing them onto the physical host.
+> [!TIP]
+> If you have a requirement to locate multiple roles on the same hardware, deploy the roles as VMs instead of installing them onto the physical host.
 
 ## Manage Hyper-V remotely
 
@@ -50,7 +50,8 @@ Managing Hyper-V by using the Server Core configuration provides the following b
 - The Server Core configuration of Windows Server minimizes hardware-resource utilization for the host OS. As a result, more hardware resources are made available to the hosted VMs.
 - The Server Core requires fewer software updates, which in turn requires fewer restarts.
 
->[!tip] During a restart, a Hyper-V host is unavailable, so all of the VMs that the server hosts become unavailable, also. To minimize downtime, consider using a clustered environment to fail over any VMs needing to be restarted from the host. When the original host is available again, you can then live migrate the VMs that the server hosts back to the original host.
+> [!TIP] 
+> During a restart, a Hyper-V host is unavailable, so all of the VMs that the server hosts become unavailable, also. To minimize downtime, consider using a clustered environment to fail over any VMs needing to be restarted from the host. When the original host is available again, you can then live migrate the VMs that the server hosts back to the original host.
 
 ## Run Best Practices Analyzer and use resource metering
 

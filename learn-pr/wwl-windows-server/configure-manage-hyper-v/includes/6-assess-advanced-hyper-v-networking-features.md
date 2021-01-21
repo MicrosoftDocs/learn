@@ -18,11 +18,16 @@ Windows Server 2016 and newer provides additional networking features to support
 
 - Switch Embedded Teaming (SET). SET is a NIC Teaming option that you can use for Hyper-V networks. Hyper-V can integrate with SET to provide faster performance and better fault tolerance than traditional teams. Unlike traditional teams, with SET you can add multiple Remote Direct Memory Access (RDMA) network adapters.
 - RDMA with Hyper-V. Also known as *Server Message Block (SMB) Direct*, *RDMA with Hyper-V* is a feature that requires hardware support in the network adapter. A network adapter with RDMA functions at full speed with low resource utilization. Effectively, this means that there's higher throughput, which is an important consideration for busy servers with high-speed network adapters such as 10 Gbps.
-    >[!note] RDMA services can  use Hyper-V switches. You can enable this feature with or without SET.
+
+    > [!NOTE] 
+    > RDMA services can  use Hyper-V switches. You can enable this feature with or without SET.
+
 - Virtual Machine Multi-Queue (VMMQ). *VMMQ* improves on VMQ by allocating multiple queues per VM and by spreading traffic across the queues.
 - Converged network adapters. A converged network adapter supports using a single network adapter or a team of network adapters to manage multiple forms of management, RDMA, and VM traffic. This reduces the number of specialized adapters that each host needs.
 - Network address translation (NAT) object. Windows Server includes a *NAT* object that translates an internal network address to an external address. This can be useful to IP address management, particularly when there are many VMs that require access to the internet. However, there's no requirement for communication to be initiated from the internet back to the internal VMs.
-    >[!tip]  You can use the `New-NetNat` Windows PowerShell cmdlet to create a NAT object.
+
+    > [!TIP]
+    > You can use the `New-NetNat` Windows PowerShell cmdlet to create a NAT object.
 
 ## Additional networking features in Windows Server 2019
 

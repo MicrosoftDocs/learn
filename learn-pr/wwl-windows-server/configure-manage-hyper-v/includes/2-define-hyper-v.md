@@ -25,7 +25,7 @@ The following diagram depicts a system architecture  with the Hyper-V hypervisor
 
 The Hyper-V hypervisor takes full control of the hardware virtualization capabilities and doesn't expose them to the guest operating system (guest OS).
 
-:::image type="content" source="../media/m22-nested-virtualization-1.svg" alt-text="A non-nested virtualization architecture diagram in which the Windows operating system and Hyper-V virtual machine guest operating system have to access the hardware on the host via a Hyper-V hypervisor layer." :::
+:::image type="content" source="../media/m22-nested-virtualization-1.svg" alt-text="A non-nested virtualization architecture diagram in which the Windows operating system and Hyper-V virtual machine guest operating system have to access the hardware on the host via a Hyper-V hypervisor layer." border="false":::
 
 ## Guest operating systems supported by Hyper-V
 
@@ -57,7 +57,8 @@ Before you deploy production workloads to Hyper-V, to plan appropriately, you sh
 - Intel Virtualization Technology (Intel VT) or AMD Virtualization (AMD-V) enabled
 - Hardware-enforced Data Execution Prevention (DEP) enabled (Intel XD bit, AMD NX bit)
 
-    > [!TIP] To verify that a system meets the requirements for Hyper-V, you can run `Systeminfo.exe`.
+    > [!TIP] 
+    > To verify that a system meets the requirements for Hyper-V, you can run `Systeminfo.exe`.
 
 The following is a list of hardware resources that the host needs to run VMs:
 
@@ -66,7 +67,7 @@ The following is a list of hardware resources that the host needs to run VMs:
 - Storage. Ensure your host has enough storage for the virtual hard disks (VHDs) used by your VMs. The storage subsystem also requires high throughput to support multiple VMs concurrently accessing the storage.
 - Network. The Hyper-V host must allocate sufficient network capacity to each VM. In some cases, you might need to allocate different network adapters in the host for dedicated purposes.
 
-    >[!TIP]
+    > [!TIP]
     > Profile the workloads before deployment to Hyper-V or if migrating to or from Azure. Profile a workload or application for a number of days to identify peaks and troughs for resources. This will give you a data-based understanding of what you require.
 
 ## Installation methods for Hyper-V Server role

@@ -17,9 +17,11 @@ A virtual switch is used to control how network traffic flows between the VMs ho
 |External|An *external virtual switch*  is used to map a network to a specific network adapter or network adapter team. Hyper-V also supports mapping an external network to a wireless network adapter. To map an external network to a wireless adapter, install the Wireless local area network (LAN) service on the Hyper-V host server and ensure that the Hyper-V Server has a compatible network adapter.|
 |Private|A *private switch* facilitates communication between the VMs on the same Hyper-V host. Private switches can't be used to communicate between the Hyper-V host and VMs.|
 
->[!tip] When configuring a virtual network, you can also configure a virtual LAN (VLAN) ID, and then associate the ID with the network. Use this configuration to extend existing VLANs on an external network to VLANs within the Hyper-V host's network switch.
+> [!TIP] 
+> When configuring a virtual network, you can also configure a virtual LAN (VLAN) ID, and then associate the ID with the network. Use this configuration to extend existing VLANs on an external network to VLANs within the Hyper-V host's network switch.
 
->[!tip] You can use VLANs to partition network traffic. VLANs function as separate logical networks. Traffic can pass only from one VLAN to another if it passes through a router.
+> [!TIP] 
+> You can use VLANs to partition network traffic. VLANs function as separate logical networks. Traffic can pass only from one VLAN to another if it passes through a router.
 
 ### Create and manage virtual switches for Hyper-V
 
