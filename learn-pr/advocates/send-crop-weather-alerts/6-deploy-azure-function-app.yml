@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-azure-function-app.md)]

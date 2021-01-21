@@ -1,6 +1,4 @@
-Our application has many components, and it's designed to implement a variety of features. In this unit, we'll review these features. 
-
-You'll learn that:
+In this unit, we'll look at our existing application. It has many components and is designed to implement a variety of features. Here’s a summary of the capabilities: 
 
 - The application has a standardized way to request text-message temperature alerts for a location if the temperature goes outside a given range.
 - For each location, the application can retrieve the low and high temperatures for an upcoming daily weather forecast.
@@ -17,7 +15,7 @@ The code sets up text message alerts in the following format:
 location maxTemp minTemp
 ```
 
-For example, you might want to send "1 Microsoft Way, Redmond, WA 5C 25C" as an alert for the Microsoft campus if the temperature will be below 5 degrees Celsius or above 25 degrees Celsius.
+For example, you might want to send "1 Microsoft Way, Redmond, WA 5C 25C" as an alert for the Microsoft corporate headquarters if the temperature will be below 5 degrees Celsius or above 25 degrees Celsius.
 
 ## Normalize the location to coordinates (geocoding)
 
@@ -33,4 +31,4 @@ Azure Functions is an event-based service that runs code when it is triggered. T
 
 When you send a text message to Twilio to subscribe to temperature notifications, Twilio can make a web request to another Azure function that uses an HTTP trigger.
 
-In this unit, you looked at the features of the application. Next, let's do a quick knowledge check to see what you've learned so far.
+In this unit, you looked at the features of the application. Next, we create an Azure Maps account and set it up to get geocoding and location information for our application.

@@ -7,11 +7,11 @@ Before you can use the two Azure Maps APIs for geocoding and weather forecasting
 1. To create a new Azure Maps account, run this command:
 
     ```azurecli
-    az maps account create \
-      --name weatherservice \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --accept-tos
+    az maps account create --name weatherservice --resource-group learn-bebf51a1-70fb-465f-9064-67f082b10f41 --accept-tos
     ```
+
+    > [!NOTE]
+    > The output message that's shown after you running this command is informative. You don’t need to take any additional action.
 
 ## Get the primary key
 

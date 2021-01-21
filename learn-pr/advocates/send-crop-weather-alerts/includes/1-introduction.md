@@ -22,7 +22,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- Basic familiarity with Azure Functions.
-
-    > [!TIP]
-    > Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/?azure-portal=true).
+- Basic familiarity with Azure Functions, similar to what's covered in [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/?azure-portal=true).
