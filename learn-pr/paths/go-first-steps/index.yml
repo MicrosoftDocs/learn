@@ -26,8 +26,6 @@ modules:
 - learn.language.go-get-started
 - learn.language.go-control-flow
 - learn.language.go-variables-functions-packages
-- learn.language.go-data-types
-- learn.language.go-errors-logs
-- learn.language.go-methods-interfaces
+
 trophy:
   uid: learn.languages.go-first-steps.trophy
