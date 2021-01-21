@@ -26,15 +26,15 @@ Windows Admin Center has two main components:
 
 The following table describes the benefits of Windows Admin Center:
 
-| Benefit                        | Description                                                  |
-|  |  |
-| Easy to install and use        | You can download and install it on Windows 10 or Windows Server through a single Windows Installer (MSI) and access it from a supported web browser. |
-| Compliments existing solutions | It does not replace but compliments existing solutions such as Remote Server Administration Tools, System Center, and Azure Monitor. |
-| Manage from the internet       | It can be securely published to the public internet so you can connect to and manage servers from anywhere. |
-| Enhanced security              | Role-based access control lets you fine-tune which administrators have access to which management features. Gateway authentication provides support for local groups, Active Directory groups, and Azure Active Directory groups. |
-| Azure integration              | You can easily get to the proper tool within Windows Admin Center, then launch it to the Azure portal for full management of Azure services. |
-| Extensibility                  | A Software Development Kit (SDK) will allow Microsoft and other partners to develop new tools and solutions for more products. |
-| No external dependencies       | Windows Admin Center doesn't require internet access or Microsoft Azure. There is no requirement for IIS or SQL server and there are no agents to deploy. The only dependency is to the requirement of Windows Management Framework 5.1 on managed servers. |
+|Benefit|Description|
+|--|--|
+|Easy to install and use|You can download and install it on Windows 10 or Windows Server through a single Windows Installer (MSI) and access it from a supported web browser.|
+|Compliments existing solutions|It does not replace but compliments existing solutions such as Remote Server Administration Tools, System Center, and Azure Monitor.|
+|Manage from the internet|It can be securely published to the public internet so you can connect to and manage servers from anywhere.|
+|Enhanced security|Role-based access control lets you fine-tune which administrators have access to which management features. Gateway authentication provides support for local groups, Active Directory groups, and Azure Active Directory groups.|
+|Azure integration|You can easily get to the proper tool within Windows Admin Center, then launch it to the Azure portal for full management of Azure services.|
+|Extensibility|A Software Development Kit (SDK) will allow Microsoft and other partners to develop new tools and solutions for more products.|
+|No external dependencies|Windows Admin Center doesn't require internet access or Microsoft Azure. There is no requirement for IIS or SQL server and there are no agents to deploy. The only dependency is to the requirement of Windows Management Framework 5.1 on managed servers.|
 
 ## Supported platforms and browsers
 
