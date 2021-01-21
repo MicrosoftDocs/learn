@@ -75,4 +75,4 @@ The following video demonstrates how to use the **Delegation of Control Wizard**
 5. Assign the **Sales Managers** group the **Reset user passwords and force password change at next logon** permission on the **Sales** OU.
 6. Sign in as a member of the **Sales Managers** group and verify that the user can reset a password for users in the **Sales** OU but not in the **Research** OU.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4McI8]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McI8]

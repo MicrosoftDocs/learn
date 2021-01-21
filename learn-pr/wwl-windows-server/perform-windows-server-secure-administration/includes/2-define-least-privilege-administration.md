@@ -21,7 +21,7 @@ The problem, of course, is that administrators typically don't want to sign in w
 In an on-premises environment, you should determine which security principals (users and groups) belong to administrative groups. In Active Directory Domain Services (AD DS), there are a number of sensitive administrative groups. These are described in the following table.
 
 |Group|Description|
-|--| |
+|--|--|
 |Enterprise Admins|This universal security group resides in the Users folder of the AD DS forest root domain. Members can perform any administrative task anywhere in the forest. There are few management tasks that require Enterprise Admins membership. By default, only the Administrator user account from the forest root domain belongs to Enterprise Admins.|
 |Domain Admins|This global security group resides in the Users folder of every domain in your AD DS forest. Members can perform any administrative task anywhere in the local domain. By default, only the Administrator user account from the local domain belongs to Domain Admins.|
 |Schema Admins|This universal security group resides in the Users folder of the forest root domain. Members can modify the properties of the AD DS schema. Schema changes are infrequent, but very significant in their effect. By default, only the Administrator user account from the forest root domain belongs to Schema Admins.|
