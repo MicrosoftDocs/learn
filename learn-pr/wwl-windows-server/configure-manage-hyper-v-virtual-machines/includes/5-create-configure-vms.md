@@ -59,7 +59,7 @@ Use management settings to configure how a VM behaves on a Hyper-V host. The VM 
 |Name|Use this setting to configure the display name of the VM on a Hyper-V host. Doing this doesn't alter the actual VM's computer name.|
 |Integration Services|Determine how a VM communicates with the host with settings for various components such as Heartbeat, Time synchronization and more. Use this setting to configure which VM integration settings are enabled and available in a VM.|
 |Checkpoints|Checkpoints allow you to save a VM's state at a specific point in time, which you can later restore. Use this setting to enable or disable checkpoints, specify the type of checkpoint that will be created and also a location for where the configuration and checkpoint saved state files should be stored.|
-|Smart Paging File Location|Smart Paging is used to assist with VM start up. It allows the allocation of additional memory during startup time to ensure a VM starts smoothly, where the minimum memory assigned is less than what is required during startup. You can configure the location where the Smart Paging files are stored for a VM.|
+|Smart Paging File Location|Smart Paging is used to assist with VM startup. It allows the allocation of additional memory during startup time to ensure a VM starts smoothly, where the minimum memory assigned is less than what is required during startup. You can configure the location where the Smart Paging files are stored for a VM.|
 |Automatic Start Action|Use this setting to manage how a VM responds when a Hyper-V host turns on.|
 |Automatic Stop Action|Use this setting to manage how a VM responds when a Hyper-V host shuts down gracefully.|
 

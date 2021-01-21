@@ -43,7 +43,7 @@ In this scenario, all VM files, including the shared .vhdx files, are stored on 
 
 - Scenario 2: Hyper-V failover cluster using file-based storage in a separate SOFS. This scenario uses Server Message Block (SMB) file-based storage as the location of the shared .vhdx files. You must deploy a SOFS and create an SMB file share as the storage location. You also need a separate Hyper-V failover cluster.
 
-:::image type="content" source="../media/m23-csv-vs-filebased-storage.png" alt-text="Diagram of CSV-based storage versus file based storage." border="false":::
+:::image type="content" source="../media/m23-csv-vs-filebased-storage.png" alt-text="Diagram of CSV-based storage versus file-based storage." border="false":::
 
 ### Steps for deploying a guest cluster by using a shared VHD
 

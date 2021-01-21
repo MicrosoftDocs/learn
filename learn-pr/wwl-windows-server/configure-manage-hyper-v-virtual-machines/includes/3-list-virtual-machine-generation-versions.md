@@ -55,6 +55,6 @@ The main steps in the process are:
 > You can get a full list of property values available with  a Windows PowerShell cmdlet by using the pipe symbol `|` and the `get-member` cmdlet combined with the `get-vm` cmdlet. For example, use the cmdlet `get-vm | get-member` or `get-vm | gm`.
 
 > [!IMPORTANT]
-> When using the `New-VM` Windows Powershell cmdlet to create a new VM, Generation 2 VMs do not support Floppy, LegacyNetworkAdapter, or IDE. Using these values in a Windows PowerShell cmdlet causes an error.
+> When using the `New-VM` Windows PowerShell cmdlet to create a new VM, Generation 2 VMs do not support Floppy, LegacyNetworkAdapter, or IDE. Using these values in a Windows PowerShell cmdlet causes an error.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MC7h]
