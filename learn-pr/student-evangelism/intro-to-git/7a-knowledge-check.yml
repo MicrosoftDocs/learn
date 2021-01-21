@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-to-git.7a-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review what you've learned in the Introduction to Git module.
+  ms.date: 01/30/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/7a-knowledge-check.md)]
+quiz:
+  title: ''
+  questions:
+  - content: 'Which one of the following is NOT a common use case for version control systems?'
+    choices:
+    - content: "Rolling back changes to a project or file."
+      isCorrect: false
+      explanation: "Incorrect. Version control systems are great for retrieving past versions of a file or entire project."    
+    - content: "Gathering and communicating feature requirements for a large project to stakeholders."
+      isCorrect: true
+      explanation: "Correct! Although some teams use tools like GitHub to collaborate, version control systems are less well-suited for this type of work."            
+    - content: "Making experimental changes to your project in an isolated branch."
+      isCorrect: false
+      explanation: "Incorrect. Using branches to create different sets of changes to a project is a key use case for version control."
+  - content: 'What is another name for version control system?'
+    choices:
+    - content: "Version management software (VMS)"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Software control management (SCM)"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Software configuration management (SCM)"
+      isCorrect: true
+      explanation: "Correct!"
+  - content: 'What’s the difference between Git and GitHub?'
+    choices:
+    - content: "Git lets you work with one or more local branches and push them to a remote repository. GitHub acts as the 'remote repository,' which is accessed through a website or command-line tools."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Git is a distributed version control system (DVCS) that runs in the cloud. GitHub is an interface layer that provides access to Git technology."
+      isCorrect: false
+      explanation: "Incorrect. Users have access to both Git and GitHub. GitHub is a cloud platform that uses the Git DVCS."
+    - content: "Git is used by an individual contributor. GitHub is used by multiple contributors to simplify group development."
+      isCorrect: false
+      explanation: "Incorrect. Both Git and GitHub are used by individual contributors and by teams to facilitate working together."            
+  - content: 'What Git command gives information about how to use Git?'
+    choices:
+    - content: "`git init`"
+      isCorrect: false
+      explanation: "Incorrect. The command `git init` is used to initialize a new Git repository."    
+    - content: "`git status`"
+      isCorrect: false
+      explanation: "Incorrect. The command `git status` lets you see which changes are currently being tracked by Git."
+    - content: "`git help`"
+      isCorrect: true
+      explanation: "Correct!"
+  - content: 'What Git commands can be used to correct mistakes?'
+    choices:
+    - content: "`git reset` and `git recover`"
+      isCorrect: false
+      explanation: "Incorrect. `git recover` is not a recognized command."
+    - content: "`git reset` and `git revert`"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "`git revert` and `git remove`"
+      isCorrect: false
+      explanation: "Incorrect. `git remove` is not a recognized command. The recognized command to remove a commit is `git rm`."      
