@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-hyper-v.assess-advanced-networking-features
+title: Assess advanced Hyper-V networking features
+metadata:
+  title: Assess advanced Hyper-V networking features
+  description: "Assess advanced Hyper-V networking features"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-assess-advanced-hyper-v-networking-features.md)]
