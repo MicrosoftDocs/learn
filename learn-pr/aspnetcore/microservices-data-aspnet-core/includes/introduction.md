@@ -17,10 +17,10 @@ In this module, you will:
 
 ## Learning objectives
 
-- Review some managed data services offered in Azure.
-- Understand the creation of a basic Azure Cache for Redis instance.
-- Understand the creation of a basic Azure Cosmos DB instance using the MongoDB API.
-- Understand the configuration changes needed to use managed data services.
+- Review fully managed data service offerings in Azure.
+- Provision an Azure Cache for Redis instance.
+- Provision an Azure Cosmos DB instance using the MongoDB API.
+- Modify an existing microservices app to use the managed data services.
 
 ## Prerequisites
 
