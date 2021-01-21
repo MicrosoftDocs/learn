@@ -1,14 +1,6 @@
-To start working with Azure Sentinel, you first create a workspace.  You need to understand an Azure Sentinel workspace's architecture to ensure you configure the workspace properly to meet your security operations centers requirements.
+Deploying the Azure Sentinel environment involves designing a workspace configuration to meet your security and compliance requirements.  The provisioning process includes creating a Log Analytics workspace and configuring the Azure Sentinel options.
 
-After completing this module, you will be able to:
+You're a Security Operations Analyst working at a company that is implementing Azure Sentinel.  You're responsible for setting up the Azure Sentinel environment to meet the company requirement to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.  
 
-- Describe Azure Sentinel Workspace Architecture
-
-- Complete installation steps
-
-- Manage the workspace
-
-## Prerequisites
-
-Basic experience with Azure services.
+You start by understanding the Azure Sentinel workspace's architecture. After you have decided on your workspace implementation options, you create your first Azure Sentinel workspace.
 
