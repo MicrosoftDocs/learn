@@ -240,7 +240,7 @@ In this exercise you used an Azure DevOps release pipeline to deploy artifacts i
 You successfully completed all exercises in this module. To clean up your lab environment, you should delete the Azure DevOps project and the Azure resources you provisioned in the first two exercises.
 
 > [!NOTE]
-> Remember to remove any Azure resources that you no longer use. Removing unused resources ensures you won't see unexpected charges.
+> Remember to remove any Azure resources that you no longer use. Removing unused resources avoids unexpected charges.
 
 ### Delete the Azure DevOps project
 
