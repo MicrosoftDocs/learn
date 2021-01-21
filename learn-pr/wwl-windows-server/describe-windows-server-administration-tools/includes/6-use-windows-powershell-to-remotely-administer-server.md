@@ -42,12 +42,12 @@ Several cmdlets have a *ComputerName* parameter that enables you to retrieve obj
 
 The following table provides more information about the ComputerName parameter.
 
-| **Command**                                        | **Description**                                              |
-| -- |  |
-| `Get-Command –ParameterName ComputerName` | Finds cmdlets that use the ComputerName parameter.|
-| `Get-Help <cmdlet-name> -parameter ComputerName` | Determine whether the ComputerName parameter requires Windows PowerShell remoting.|
+|**Command**|**Description**|
+|--|--|
+|`Get-Command –ParameterName ComputerName`|Finds cmdlets that use the ComputerName parameter.|
+|`Get-Help <cmdlet-name> -parameter ComputerName` | Determine whether the ComputerName parameter requires Windows PowerShell remoting.|
 
-### Processing Remote Commands
+### Processing remote commands
 
 When you connect to a remote computer and send it a remote command, the command transmits across the network to a Windows PowerShell instance on the remote computer, and then runs on it. The command results are sent back to the local computer and display in the Windows PowerShell session on the local computer.
 

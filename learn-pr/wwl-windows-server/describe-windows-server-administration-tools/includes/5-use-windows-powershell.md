@@ -6,7 +6,7 @@ Windows PowerShell is a command-line and scripting environment that you can use 
 
 You can also use Windows PowerShell to remotely connect to other computers, and even run Windows PowerShell cmdlets against a list of computers, enabling  you to perform actions against multiple computers by using a single command-line instruction.
 
-### Windows PowerShell Commands and Cmdlets
+### Windows PowerShell commands and cmdlets
 
 Commands are building blocks that you piece together by using the Windows PowerShell scripting language. They provide Windows PowerShell’s main functionality. By using commands, you can create custom solutions for complex administrative problems.
 
@@ -16,13 +16,13 @@ Cmdlets are the fundamental components of commands. There are thousands of  Wind
 
 The verb portion of the cmdlet name indicates what the cmdlet does. There is a set of approved verbs that cmdlet creators use, which provides consistency in cmdlet names. Common verbs are described in the following table.
 
-| Verb   | Explanation                                                  |
-| ------ | ------------------------------------------------------------ |
-| Get    | Retrieves a resource, such as a file or a user.              |
-| Set    | Changes the data associated with a resource, such as a file or user property. |
-| New    | Creates a resource, such as a file or user.                  |
-| Add    | Adds a resource to a container of multiple resources.        |
-| Remove | Deletes a resource from a container of multiple resources.   |
+|Verb|Explanation|
+|--|--|
+|Get|Retrieves a resource, such as a file or a user.|
+|Set|Changes the data associated with a resource, such as a file or user property.|
+|New|Creates a resource, such as a file or user.|
+|Add|Adds a resource to a container of multiple resources.|
+|Remove|Deletes a resource from a container of multiple resources.|
 
 #### Cmdlet nouns
 
@@ -88,7 +88,7 @@ Other ISE features include:
 - The ability to load add-ins created by Microsoft or by third parties that provide additional functionality.
 - Integration with Windows PowerShell’s debugging capabilities.
 
-## Windows PowerShell Remoting
+## Windows PowerShell remoting
 
 The purpose of Windows PowerShell remoting is to connect to remote computers so that you can run commands on them, and then direct the results back to your local computer. This enables you to run Windows PowerShell commands on multiple computers on your network from your client computer, rather than using creating a connection to each computer.
 
