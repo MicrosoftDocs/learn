@@ -53,12 +53,12 @@ A DNS resolver is a client—such as a Windows client—that needs to resolve DN
 
 It's worth noting that DNS isn't the only way in which host computers running Windows can resolve names. A Windows 10 computer can use the following methods, depending on configuration:
 
-1. Check DNS resolver cache.
-1. Check Hosts file located in C:\Windows\System32\Drivers\etc.
-1. Petition configured DNS server.
-1. Broadcast a NetBIOS name query.
-1. Check LMHOSTS file located in C:\Windows\System32\Drivers\etc.
-1. Use a configured NetBIOS name resolution service, such as Windows Internet Name Service (WINS).
+* Check DNS resolver cache.
+* Check Hosts file located in C:\Windows\System32\Drivers\etc.
+* Petition configured DNS server.
+* Broadcast a NetBIOS name query.
+* Check LMHOSTS file located in C:\Windows\System32\Drivers\etc.
+* Use a configured NetBIOS name resolution service, such as Windows Internet Name Service (WINS).
 
   > [!TIP]
   > You can install the WINS server feature on Windows Server if your organization requires NetBIOS name resolution to support a specific app.
