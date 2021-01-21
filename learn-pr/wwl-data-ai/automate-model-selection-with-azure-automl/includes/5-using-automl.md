@@ -1,6 +1,6 @@
 Now it's your chance to use Azure Machine Learning'a automated machine learning capabilities to train a machine learning model.
 
-In this exercise, you will:
+In this exercise, you'll:
 
 - Run an automated machine learning experiment.
 - Review the best performing model.

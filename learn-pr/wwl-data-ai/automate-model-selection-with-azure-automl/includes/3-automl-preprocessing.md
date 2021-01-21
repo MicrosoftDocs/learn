@@ -6,7 +6,7 @@ Automated machine learning applies scaling and normalization to numeric data aut
 
 ## Optional featurization
 
-You can choose to have automated machine learning apply preprocessing transformations such as:
+You can choose to have automated machine learning apply preprocessing transformations, such as:
 
 * Missing value imputation to eliminate nulls in the training dataset.
 * Categorical encoding to convert categorical features to numeric indicators.
@@ -14,4 +14,4 @@ You can choose to have automated machine learning apply preprocessing transforma
 * Feature engineering (for example, deriving individual date parts from DateTime features)
 * Others...
 
-> **More Information**: For more information about the preprocessing support in automated machine learning , see [What is automated machine learning](https://aka.ms/AA70rrt) in the documentation.
+    **More Information**: For more information about the preprocessing support in automated machine learning, see [What is automated machine learning](https://aka.ms/AA70rrt).
