@@ -11,8 +11,10 @@ metadata:
   ms.prod: learning-git
   ROBOTS: NOINDEX
 durationInMinutes: 10
+content: |
+  [!include[](includes/7a-knowledge-check.md)]
 quiz:
-  title: Answer the following questions to see what you've learned in this module.
+  title: ''
   questions:
   - content: 'Which one of the following is NOT a common use case for version control systems?'
     choices:
