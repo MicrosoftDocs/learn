@@ -88,7 +88,7 @@ Apply the following changes in the *deploy/k8s/helm-simple* directory:
 
 1. In *basket/templates/configmap.yaml*, update the `ConnectionString` parameter from `basketdata` to the connection string from the creation script:
 
-  :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
 1. In *identity/templates/configmap.yaml*, update the `ConnectionString` parameter to the connection string:
 
