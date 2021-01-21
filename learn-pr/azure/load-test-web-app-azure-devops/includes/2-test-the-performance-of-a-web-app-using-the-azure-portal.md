@@ -32,6 +32,9 @@ Azure DevOps includes these features:
 
 The high-level steps to configure and run a performance test by using the Azure portal are outlined here.
 
+> [!IMPORTANT]
+> On March 31, 2020, we’ll retire cloud-based load testing in Microsoft Visual Studio and cloud-based load testing in Azure DevOps, the performance testing feature of App Service and Application Insights in the Azure portal. See [cloud-based load testing features to be retired](https://azure.microsoft.com/en-us/updates/cloud-based-load-testing-features-will-be-retired-on-march-31-2020/).
+
 ### 1. Open your web app
 
 Open your web app in the Azure portal, and then open the performance test page:
@@ -69,7 +72,7 @@ After you've configured your test, simply select **Run test**. Your test is plac
 
 ![Queued performance test](../media/2-queued-test.png)
 
-### 5. Running the test again
+### 5. Run the test again
 
 You might want to repeat your test several times in case the first results were not representative. You should also repeat your test after you make changes to your app.
 

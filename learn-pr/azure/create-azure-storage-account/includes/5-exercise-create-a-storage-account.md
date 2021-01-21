@@ -6,13 +6,13 @@ The surf report site lets users upload photos and videos of local beach conditio
 - The site must handle unexpected spikes in upload volume.
 - Outdated content must be removed as surf conditions change so the site always shows current conditions.
 
-To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
+To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing, and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
 
 ## Create a storage account using Azure portal
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
 1. In the left-hand **Azure Marketplace** nav bar, select **Storage**.
 
@@ -23,10 +23,10 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 1. For **Storage account**, select **Create**. The **Create a storage account** window appears. In the **Basics** tab, enter the following information.
 
     | Property | Value |
-    |---|---|
+    | ---- | ---- |
     | **Project details**| |
     | Subscription | Concierge Subscription |
-    | Resource group | ("**<rgn>[sandbox resource group name]</rgn>**") from the dropdown. |
+    | Resource group | ("<rgn>[sandbox resource group name]</rgn>") from the dropdown. |
     | **Instance details**| |
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
     | Location | Select a location near to you in the dropdown from the previous list |

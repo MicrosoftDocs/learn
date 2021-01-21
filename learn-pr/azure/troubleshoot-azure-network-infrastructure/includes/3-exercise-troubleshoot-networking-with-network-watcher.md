@@ -41,9 +41,8 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --vnet-name MyVNet1
     ```
 
-  > [!NOTE] 
-  >  If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks. 
-
+    > [!NOTE]
+    > If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks.
 
 1. To deploy a VM in **FrontendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
 
@@ -121,7 +120,6 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
 
-
 1. To associate a network security group with a subnet, run this command.
 
     ```azurecli
@@ -140,9 +138,9 @@ To enable Network Watcher, run this command.
 
 ```azurecli
 az network watcher configure \
---locations westus \
---enabled true \
---resource-group $RG
+    --locations "" (*Match the creation of the resource group*) \
+    --enabled true \
+    --resource-group $RG
 ```
 
 ## Use Network Watcher to show the topology
@@ -151,11 +149,11 @@ Now, you can use Network Watcher to troubleshoot connectivity between two VMs in
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the Azure portal menu, select **All services**. Then, go to **Networking** > **Network Watcher**.
+1. On the Azure portal menu, select **All services**. Then, search for **Network Watcher**. The **Network Watcher** page appears.
 
-1. In the **Monitoring** section, select **Topology**.
+1. In the left nav bar, in the **Monitoring** section, select **Topology**.
 
-1. In the dropdowns, select the subscription and resource group. Network Watcher displays your network topology:
+1. In the dropdowns, select the **Subscription** and **Resource Group**. Network Watcher displays your network topology:
 
     [![](../media/3-network-topology.png "A screenshot that shows the exercise network topology")](../media/3-network-topology-expanded-1.png#lightbox)
 
@@ -163,7 +161,7 @@ Now, you can use Network Watcher to troubleshoot connectivity between two VMs in
 
 The topology appears to be correct. To get more information, let's set up some tests in Connection Monitor. Start by creating two tests from the back end VM to the front end VM:
 
-1. Under **Monitoring**, select **Connection Monitor**, and then select **+ Add**.
+1. Under **Monitoring**, select **Connection Monitor**, and then select **+ Create**. The **Create Connection Monitor** page appears.
 
 1. Configure Connection Monitor with these values, and then select **Add**.
 
@@ -263,7 +261,7 @@ Let's use the IP flow verify tool to get more information.
     | Remote port | 3389 |
     | | |
 
-    ![A screenshot that shows an IP flow test](../media/3-ip-flow-test.png)
+    ![Screenshot that shows an IP flow test](../media/3-ip-flow-test.png)
 
 1. Examine the results. They show that access is denied because of NSG and security rules.
 
