@@ -35,10 +35,6 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu Da
     | Authentication type | Password |
     | Username | Enter a string from 1 to 64 characters long. |
     | Password | Enter a strong password. |
-    | **Administrator account**| |
-    | Authentication type | Password |
-    | Username | Enter a string from 1 to 64 characters long. |
-    | Password | Enter a strong password. |
 
     ![Screenshot that shows the details filled out for V M configuration](../media/create-new-resource.png)
 
