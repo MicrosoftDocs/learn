@@ -143,6 +143,7 @@ az network watcher configure \
     --resource-group $RG
 ```
 
+
 ## Use Network Watcher to show the topology
 
 Now, you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS and the RDP protocol between the two VMs. First, investigate the network topology:

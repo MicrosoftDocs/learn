@@ -46,7 +46,7 @@ from azureml.train.automl.utilities import get_primary_metrics
 get_primary_metrics('classification')
 ```
 
-    **More Information**: You can find a full list of primary metrics and their definitions in [Understand automated machine learning results](https://aka.ms/AA70rrw).
+**More Information**: You can find a full list of primary metrics and their definitions in [Understand automated machine learning results](https://aka.ms/AA70rrw).
 
 ## Submit an automated machine learning experiment
 
