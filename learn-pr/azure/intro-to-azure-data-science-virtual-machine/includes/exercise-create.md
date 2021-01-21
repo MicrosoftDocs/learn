@@ -31,10 +31,6 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu Da
     | Availability options | No infrastructure redundancy required |
     | Image | Data Science Virtual Machine - Ubuntu 18.04 - Gen1 |
     | Size | Standard_DS1_v2. If that's not the selected value: Select **See all sizes** link; Enter **DS1\_** in the search box; Select the **DS1\_v2** row; Select **Select** to choose that size and return to the configuration screen. |
-    | Under **Administrator account** section: |
-    | Authentication type | Password |
-    | Username | Enter a string from 1 to 64 characters long. |
-    | Password | Enter a strong password. |
     | **Administrator account**| |
     | Authentication type | Password |
     | Username | Enter a string from 1 to 64 characters long. |
