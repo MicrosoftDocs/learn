@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/19/2021
+  ms.date: 01/21/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "Govern your data"
       isCorrect: true
       explanation: "Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.​​​​​​"
-  - content: "As part of a new data loss prevention policy you need to be able to identify important information such as credit card numbers across the organization. How would you do this?"
+  - content: "As part of a new data loss prevention policy, the compliance admin needs to be able to identify important information such as credit card numbers, across the organization's data. How can the admin address this requirement?"
     choices:
     - content: "Use activity explorer"
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Use sensitive information types"
       isCorrect: true
       explanation: "​​​Microsoft provides built-in sensitive information types that you can use to identify data such as credit card numbers.​​"
-  - content: "Your organization has many users that perform different job roles. Some emails should be encrypted so that only authorized users can read them. How can you implement this?"
+  - content: "Within the organization, some emails are confidential and should be encrypted so that only authorized users can read them. How can this requirement be implemented?"
     choices:
     - content: "Use the content explorer"
       isCorrect: false
@@ -49,7 +49,7 @@ quiz:
     - content: "Use Records Management"
       isCorrect: false
       explanation: "​​​You don't use Record Management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
-  - content: "Your organization users Microsoft Teams to collaborate on all projects. As the admin, you want to prevent users from accidentally share sensitive information in a Microsoft Teams chat session. How would you do this?"
+  - content: "Your organization uses Microsoft Teams to collaborate on all projects. The compliance admin wants to prevent users from accidentally sharing sensitive information in a Microsoft Teams chat session. What capability can address this requirement?"
     choices:
     - content: "Use data loss prevention policies"
       isCorrect: true
@@ -60,7 +60,7 @@ quiz:
     - content: "Use retention policies"
       isCorrect: false
       explanation: "​​​Retention policies won't let you do this. Instead, use data loss prevention policies.​​​"
-  - content: "You understand that, due to a certain regulation, your organization must now keep hold of all documents in a specific SharePoint site that contains customer information for five years. How would you implement it?"
+  - content: "Due to a certain regulation, your organization must now keep hold of all documents in a specific SharePoint site that contains customer information for five years. How can this requirement be implemented?"
     choices:
     - content: "Use sensitivity labels"
       isCorrect: false
