@@ -8,13 +8,13 @@ Even though this showcases how easy it is to mix and match databases in a micros
 
 Kubernetes was designed primarily for stateless workloads, which is precisely not the case for a database service. Kubernetes can also be used to handle stateful workloads but it requires some extra work. You can also deploy a [SQL Server High Availability (HA) solution in a container on AKS](https://docs.microsoft.com/sql/linux/tutorial-sql-server-containers-kubernetes?view=sql-server-ver15).
 
-In production environments you typically handle the databases as services outside the cluster. You have the option to configure a separate Virtual Machine (VM) or, more probably, a dedicated database High Availability cluster for each microservice.
+In production environments, you typically handle the databases as services outside the cluster. You can configure a separate Virtual Machine (VM) or, more probably, a dedicated database High Availability cluster for each microservice.
 
-However, considering that each microservice should have an independent database server, it's easy to see that handling the required infrastructure can get complicated quite fast.
+However, considering that each microservice should have an independent database server, it's easy to see that handling the required infrastructure can get complicated.
 
-In this scenario the Azure Managed Database Services can be a very efective solution that ensures your databases are in top-notch condition, with the latest security patches, can scale to adapt to any workload automatically, and can be configured quite easily.
+In this scenario, the Azure Managed Database Services can be an effective solution that ensures your databases are in top-notch condition, with the latest security patches, can scale to adapt to any workload automatically, and can be configured quite easily.
 
-In this module we'll explore how simple it is to switch an application like eShopOnContainers to use managed data services. In this case we'll focus on switching from Redis to Azure Cache for Redis, and from MongoDB to Azure Cosmos DB.
+In this module, we'll explore how simple it is to switch an application like eShopOnContainers to use managed data services. In this case we'll focus on switching from Redis to Azure Cache for Redis, and from MongoDB to Azure Cosmos DB.
 
 ## Azure Cache for Redis
 
@@ -42,7 +42,7 @@ Redis is used in eShopOnContainers for:
 
 Azure Cosmos DB is a [multi-model database](https://docs.microsoft.com/azure/cosmos-db/relational-nosql) and supports document, key-value, graph, and columnar data models. It [automatically indexes data](https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf) without requiring you to deal with schema and index management.
 
-You can quickly create and query document, key/value, and graph databases, all of which benefit from the global distribution and horizontal scale capabilities at the core of Azure Cosmos DB.
+You can quickly create and query document, key-value, and graph databases, all of which benefit from the global distribution and horizontal scale capabilities at the core of Azure Cosmos DB.
 
 Multi-model means Azure Cosmos DB can have several "impersonations" that can implement both NoSQL and relational databases. This means that Azure Cosmos DB can look, from an API point of view, like:
 
