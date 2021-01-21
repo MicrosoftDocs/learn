@@ -10,9 +10,7 @@ Kubernetes was designed primarily for stateless workloads, which is precisely no
 
 In production environments, you typically handle the databases as services outside the cluster. You can configure a separate Virtual Machine (VM) or, more probably, a dedicated database High Availability cluster for each microservice.
 
-However, considering that each microservice should have an independent database server, it's easy to see that handling the required infrastructure can get complicated.
-
-In this scenario, the Azure Managed Database Services can be an effective solution that ensures your databases are in top-notch condition, with the latest security patches, can scale to adapt to any workload automatically, and can be configured quite easily.
+Consider that each microservice should have an independent database server. It's easy to see that handling the required infrastructure can get complicated. In this scenario, the Azure-managed database services can be an effective solution. The managed services are updated with the latest security patches, scale to adapt to any workload automatically, and are fully configurable.
 
 In this module, you'll explore how to modify the *:::no-loc text="eShopOnContainers":::* app to use managed data services. You'll replace Redis and MongoDB with Azure Cache for Redis and Azure Cosmos DB, respectively.
 
@@ -49,7 +47,7 @@ Redis is used in *:::no-loc text="eShopOnContainers":::* for:
 
 Azure Cosmos DB is a [multi-model database](https://docs.microsoft.com/azure/cosmos-db/relational-nosql) that supports document, key-value, graph, and columnar data models. It [automatically indexes data](https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf) without requiring you to deal with schema and index management.
 
-You can quickly create and query document, key-value, and graph databases. All of these database types benefit from the global distribution and horizontal scale capabilities at the core of Azure Cosmos DB.
+You can quickly create and query document, key-value, and graph databases. Each database type benefits from the global distribution and horizontal scale capabilities at the core of Cosmos DB.
 
 Multi-model means Azure Cosmos DB can have several "impersonations" that can implement both NoSQL and relational databases. From an API perspective, Cosmos DB can look like:
 
