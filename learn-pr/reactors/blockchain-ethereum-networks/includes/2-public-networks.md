@@ -2,20 +2,20 @@ The [Ethereum](https://ethereum.org/?azure-portal=true) protocol is made up of m
 
 ## An overview of mainnet
 
-[Mainnet](https://ethereum.org/en/glossary/#mainnet), short for "main network" is the real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
+[Mainnet](https://ethereum.org/en/glossary/#mainnet), short for "main network" is the one real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
 
-Once deployed, the applications can use the full potential of decentralized blockchain. There's no centralized authority and mainnet is fully decentralized. There can be different types of tokens and applications deployed to mainnnet. Once deployed on the mainnet, transactions are immutable and can't be changed. Each transaction also has real costs associated with it, which requires actual Ether (ETH). All blocks on the Ethereum mainnet can be viewed by using [Etherscan](https://etherscan.io/), which shows the latest mined blocks and transactions. All blocks can be inspected.
+Once deployed, the applications can use the full potential of decentralized blockchain. There's no centralized authority and mainnet is fully decentralized. There might be different types of tokens and applications deployed to mainnnet. Once deployed on the mainnet, transactions are immutable and can't be changed. Each transaction also has real costs associated with it, which requires actual Ether (ETH). All blocks on the Ethereum mainnet can be viewed by using [Etherscan](https://etherscan.io/), which shows the latest mined blocks and transactions. All blocks can be inspected.
 
 :::image type="content" source="../media/etherscan.png" alt-text="Screenshot showing the homepage of Etherscan.":::
 
 ## Ethereum testnets
 
-There are four public testnets, each with a different deployment method and process. They're used to stage and test applications in a live public environment before the applications are deployed to the mainnet.
+There are four public testnets, each with a different deployment method and process. They stage and test applications in a live public environment before they deploy the applications to the mainnet.
 
-Testnets use either [Proof of Work (PoW)](https://www.investopedia.com/terms/p/proof-work.asp?azure-portal=true) or [Proof of Authority (PoA)](https://academy.binance.com/en/articles/proof-of-authority-explained/?azure-portal=true) consensus protocols to determine how new blocks of transactions are added to the network. Here's a quick overview of each protocol:
+Testnets use either [Proof of Work (PoW)](https://www.investopedia.com/terms/p/proof-work.asp?azure-portal=true) or [Proof of Authority (PoA)](https://academy.binance.com/en/articles/proof-of-authority-explained/?azure-portal=true) consensus protocols to determine how to add new blocks of transactions to the network. Here's a quick overview of each protocol:
 
-- **PoW**: A mining rig solves a cryptographic hashing problem in order to mine a new block and decide which transactions are part of that block.
-- **PoA**: Block validators verify their identity on a network in order to decide which transactions become part of the next block in the chain.
+- **PoW**: A mining rig solves a cryptographic hashing problem to mine a new block and decide which transactions are part of that block.
+- **PoA**: Block validators verify their identity on a network to decide which transactions become part of the next block in the chain.
 
  And testnets require **test ether**, which is free and can be accessed from what are called *faucets*. You provide faucets with an account address to receive a certain amount of test ether. Using faucets has become the primary way to acquire test ether for a specific testnet. The community manages these public test networks for the benefit of developers and testing. Using a faucet protects the testnet from spam attacks since the ether is controlled by trusted parties.
 
@@ -75,7 +75,7 @@ Ropsten is said to be the testnet most similar to mainnet and was historically t
 
 ## Clients and APIs for deploying to **Testnets** and **Mainnet**
 
-Ethereum is designed to offer different clients, developed by different teams using different programming languages. This makes the network stronger and more diverse. The ideal goal is to achieve diversity without any client dominating to reduce any single points of failure.
+Ethereum is designed to offer different clients, developed by different teams using different programming languages. This variety makes the network stronger and more diverse. The ideal goal is to achieve diversity without any client dominating to reduce any single points of failure.
 
 ### Clients
 
@@ -101,6 +101,6 @@ The Infura API suite provides instant access over HTTPS and WebSockets to the Et
 
 [MetaMask](https://metamask.io/?azure-portal=true)
 
-When deploying to either a testnet or mainnet, the MetaMask client provides a robust interface and wallet for connecting to and interacting with Ethereum blockchains.
+When deploying to either a testnet or mainnet, the MetaMask client provides a robust interface and wallet that connects to and interacts with Ethereum blockchains.
 
 Using MetaMask to send Ether and tokens on a testnet is straightforward. As we've seen in previous tutorials, the client provides an easy interface to select and use different Ethereum networks. For interacting with development networks, it's simple with MetaMask to connect to Localhost 8545 or Custom RPC to connect with Ganache and Truffle. Similarly, MetaMask has predefined connections to the public testnets and mainnet. If connecting to mainnet, be careful to secure your private key since real Ether is being used.

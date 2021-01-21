@@ -1,4 +1,4 @@
-An Ethereum network is private if its nodes are isolated and not connected to a public network such as mainnet or a testnet. Private networks include development networks, or consortium networks.
+An Ethereum network is private if its nodes are isolated and not connected to a public network, such as mainnet or a testnet. Private networks include development networks, or consortium networks.
 
 ## Development networks
 

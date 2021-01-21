@@ -29,17 +29,17 @@ quiz:
     - content: "Görli."
       isCorrect: false
       explanation: "Incorrect. Görli supports multiple clients like Geth, Nethermind, and OpenEthereum"
-  - content: "Which of the following is necessary to prepare for mainnet deployment?"
+  - content: "Which of the following actions is necessary to prepare for mainnet deployment?"
     choices:
     - content: "Verifying source code."
       isCorrect: true
-      explanation: "Correct. You should submit source code to be verified by a service like Etherscan."
+      explanation: "Correct. Submit source code to be verified by a service like Etherscan."
     - content: "Smart contract testing."
       isCorrect: false
-      explanation: "Incorrect. Smart contract testing should happen during development, but it is not required."
+      explanation: "Incorrect. Smart contract testing should happen during development, but it isn't required."
     - content: "Key distribution to project managers"
       isCorrect: false
-      explanation: "Incorrect. Keys should be stored securely and only shared with those who govern or administrate the project."
+      explanation: "Incorrect. Keys should be stored securely and only shared with whoever governs or administrates the project."
     - content: "Documentation for smart contracts and dapps."
       isCorrect: false
       explanation: "Incorrect. Documentation for the blockchain solution is helpful, but not required."
