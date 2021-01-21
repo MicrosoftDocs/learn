@@ -8,7 +8,8 @@ Data is collected using:
 
 - Security extensions, such as the Azure Policy Add-on for Kubernetes, which can also provide data to Security Center regarding specialized resource types.
 
-![Auto provisioning](../media/auto-provisioning-options.png)
+>[!div class="mx-imgBorder"]
+>![Auto provisioning.](../media/auto-provisioning-options.png)
 
 ## Why use auto provisioning?
 
@@ -32,7 +33,8 @@ To enable auto provisioning of the Log Analytics agent:
 
 1. From the configuration options pane, define the workspace to use.
 
-![log analytics agent deploy options](../media/log-analytics-agent-deploy-options.png)
+>[!div class="mx-imgBorder"]
+>![log analytics agent deploy options.](../media/log-analytics-agent-deploy-options.png)
 
 Connect Azure VMs to the default workspace(s) created by Security Center - Security Center creates a new resource group and default workspace in the same geolocation and connects the agent to that workspace. If a subscription contains VMs from multiple geolocations, Security Center creates multiple workspaces to ensure compliance with data privacy requirements.
 
@@ -146,7 +148,8 @@ You can define the level of security event data to store at the workspace level.
 
 - Select the relevant workspace. The only data collection events for a workspace are the Windows security events described on this page.
 
-![event collection workspace.png](../media/event-collection-workspace.png)
+>[!div class="mx-imgBorder"]
+>![event collection workspace.](../media/event-collection-workspace.png)
 
 - Select the amount of raw event data to store and select Save.
 

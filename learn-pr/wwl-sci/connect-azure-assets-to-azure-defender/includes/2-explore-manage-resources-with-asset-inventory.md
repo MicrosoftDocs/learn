@@ -28,9 +28,7 @@ The inventory page provides the following tools:
 
   - Unmonitored resources: Resources with agent monitoring issues - they have the Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
 
-- **Filters** - The multiple filters at the top of the page provide a way to quickly refine the list of resources according to the question you're trying to answer. For example, if you wanted to answer the question: Which of my machines with the tag 'Production' are missing the Log Analytics agent? you could combine the Agent monitoring filter with the Tags filter as shown in the following clip:
-
-![Inventory List](../media/filtering-to-prod-unmonitored.gif.png)
+- **Filters** - The multiple filters at the top of the page provide a way to quickly refine the list of resources according to the question you're trying to answer. For example, if you wanted to answer the question: Which of my machines with the tag 'Production' are missing the Log Analytics agent? 
 
 - As soon as you've applied filters, the summary values are updated to relate to the query results.
 
