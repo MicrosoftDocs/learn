@@ -56,7 +56,7 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
 
 1. Select **Review + create**.
 
-1. After validation succeeds, on the **Create SQL Database** window, select **Create** to deploy the server and database.
+1. After validation success, on the **Create SQL Database** window, select **Create** to deploy the server and database.
 
     It can take approximately two to five minutes to create the server and deploy the sample database.
 
