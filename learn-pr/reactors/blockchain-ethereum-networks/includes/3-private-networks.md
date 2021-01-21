@@ -14,7 +14,7 @@ Consortiums are permissioned and require an invite to participate. They ensure s
 
 [Hyperledger Besu](https://besu.hyperledger.org/en/stable/?azure-portal=true) is an open-source Ethereum client developed under the Apache 2.0 license and written in Java.
 
-Besu is used to develop enterprise applications requiring secure, high-performance transaction processing in a private network. Besu has a command-line interface and JSON-RPC API for running, maintaining, debugging, and monitoring nodes in an Ethereum network. The API supports typical Ethereum functionalities such as:
+Besu is used to develop enterprise applications requiring secure, high-performance transaction processing in a private network. Besu has a command-line interface and JSON-RPC API. It runs, maintains, debugs, and monitors nodes in an Ethereum network. The API supports typical Ethereum functionalities such as:
 
 - Ether mining
 - Smart contract development
