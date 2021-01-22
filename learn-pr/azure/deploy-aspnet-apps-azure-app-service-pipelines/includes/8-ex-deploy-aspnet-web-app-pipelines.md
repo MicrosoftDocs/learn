@@ -191,7 +191,8 @@ With the new stage of the Azure Pipeline created, you can now invoke execution o
 
 Verify that the sample ASP.NET web app has been successfully deployed to the Azure App Service web app.
 
-1. Within the browser window, on the browser tab displaying the Azure DevOps project, switch to the web browser tab displaying the Azure portal.
+
+Switch to the web browser tab displaying the Azure portal.
 1. In the Azure portal, on the **aspdevops-rg** resource group blade, select the entry representing the App Service web app.
 1. On the App Service web app blade, select the **URL** link. This will automatically open a new web browser tab displaying the sample ASP.NET web app **Todos** interface.
 1. On the **Todos** page, select **Create New** and step through the process of creating a few **To do** entries.
