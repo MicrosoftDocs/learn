@@ -2,29 +2,21 @@ The Log Analytics agent for Linux will only collect events with the facilities a
 
 To configure the Log Analytics agent for syslog facilities:
 
-- To Access the Log Analytics Workspace Advanced Settings page:
+1. Access the Log Analytics Workspace Advanced Settings page:
 
-  - From the Syslog Data connector page
+    - From the Syslog Data connector page, select Open your workspace advanced settings configuration.
 
-    - Select Open your workspace advanced settings configuration >
+    - From the Azure Sentinel portal, select **Settings** in the Configuration area. Select **Workspace Settings** Tab. Select **Advanced settings** in the Settings area.
 
-  - From the Azure Sentinel portal
+1. Select **Data**.
 
-    - Select Settings in the Configuration area.
+1. Select **Syslog**.
 
-    - Select Workspace Settings Tab.
+1. Select the option **Apply below configuration to my machines**.
 
-    - Select Advanced settings in the Settings area.
+1. Enter the facility name and select **+** for each facility.
 
-- Select Data.
-
-- Select Syslog.
-
-- Select the option Apply below configuration to my machines.
-
-- Enter the facility name and select + for each facility.
-
-![Syslog configuration](../media/syslogfac.png)
+![Syslog configuration.](../media/syslog-facility.png)
 
 By default, all configuration changes are automatically pushed to all agents. If you want to configure Syslog manually on each Linux agent, then uncheck the box *Apply below configuration to my machines*.
 

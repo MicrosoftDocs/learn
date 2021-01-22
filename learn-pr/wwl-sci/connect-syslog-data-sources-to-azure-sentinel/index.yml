@@ -3,7 +3,7 @@ uid: learn.wwl.connect-syslog-data-sources-to-azure-sentinel
 metadata:
   title: Connect Syslog data sources to Azure Sentinel
   description: "Connect Syslog data sources to Azure Sentinel"
-  ms.date: 01/16/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -12,10 +12,10 @@ title: Connect Syslog data sources to Azure Sentinel
 summary: Learn about the Syslog connector's configuration options which will enable you to parse Syslog data.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Describe the Syslog connector deployment options
-  - Run the deployment script for the connector
-  - Configure the Log Analytics agent
-  - Create a parse
+  - Describe the Syslog connector deployment options in Azure Sentinel
+  - Run the connector deployment script to send data to Azure Sentinel
+  - Configure the Log Analytics agent integration for Azure Sentinel
+  - Create a parse using KQL in Azure Sentinel
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - Basic knowledge of Linux

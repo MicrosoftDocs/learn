@@ -1,40 +1,40 @@
 To view the connector page:
 
-- Select Data connectors page.
+1. Select **Data** connectors page.
 
-- Select Syslog.
+1. Select **Syslog**.
 
-- Then select the Open connector page on the preview pane.
+1. Then select the Open connector page on the preview pane.
 
-- Verify that you have the appropriate permissions as described under Prerequisites.
+1. Verify that you have the appropriate permissions as described under Prerequisites.
 
-- Select the Choose where to install the agent option to expand the instructions.
+1. Select the Choose where to install the agent option to expand the instructions.
 
-![Syslog connector page](../media/syslogconnector.png)
+![Syslog connector page.](../media/syslog-connector.png)
 
 ## **For an Azure Linux VM:**
 
-To install the agent on an Azure Linux virtual machine
+To install the agent on an Azure Linux virtual machine:
 
-- Install agent on Azure Linux Virtual Machine.
+1. Install agent on Azure Linux Virtual Machine.
 
-- Click the link Download & install agent for Azure Linux Virtual machines.
+1. Select the link Download & install agent for Azure Linux Virtual machines.
 
-- Select Connect on the row of the Linux VM.
+1. Select **Connect** on the row of the Linux VM.
 
 ## **For any other Linux machine:**
 
-To install the agent on non-Azure Linux virtual hosts
+To install the agent on non-Azure Linux virtual hosts:
 
-- Install agent on a non-Azure Linux Machine.
+1. Install agent on a non-Azure Linux Machine.
 
-- Select the link Download & install agent for non-Azure Linux machines.
+1. Select the link Download & install agent for non-Azure Linux machines.
 
-- In the Agents management blade, click the Linux servers tab.
+1. In the Agents management blade, select the Linux servers tab.
 
-- Copy the command for Download and onboard agent for Linux and run it on your Linux machine.
+1. Copy the command for Download and onboard agent for Linux and run it on your Linux machine.
 
-- The page also displays your Workspace ID, primary key, and secondary key.
+1. The page also displays your Workspace ID, primary key, and secondary key.
 
-![Agent Management for Linux hosts](../media/syslogagentmanagement.png)
+![Agent Management for Linux hosts.](../media/syslog-agent-management.png)
 
