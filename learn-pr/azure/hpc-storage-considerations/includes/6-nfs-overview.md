@@ -44,7 +44,7 @@ NFSv3 does not offer support for data encryption. It was originally designed for
 
 NFSv4.x introduces some key improvements to NFS. For our purposes we will focus on the some main ones.
 
-## NFSv4 and Kerberos ##
+### NFSv4 and Kerberos ###
 
 NFSv4 introduced full support for the use of Kerberos for authentication of users and encryption of all NFS traffic. There was an attempt to integrate Kerberos with NFSv3 but due to the use of NLM/NSM and other external protocols only the data packets were actually encrypted.
 
@@ -56,11 +56,11 @@ The use authentication and encryption via Kerberos requires the deployment of a 
 
 A key consideration here is that not all NFSv4-compatible services support Kerberos. Without Kerberos you are still able to use other features of NFSv4 but will not authenticate or encrypt data. When choosing your solution be sure to verify whether or not you need this capability and if the options support Kerberos.
 
-## NFSv4 and network ports ##
+### NFSv4 and network ports ###
 
 One advantage of NFSv4 over NFSv3 is that NFSv4 uses a single TCP port (port 2049) for all traffic. If you have a NFSv4 environment in an Azure vnet or located in your datacenter and need to provide access between firewalls, it is much simpler to support NFSv4.
 
-## NFSv4 and ACLs ##
+### NFSv4 and ACLs ###
 
 Say you have a file/folder and you want to offer read-write access to group 1, read-only access to group 2 and append-data to a specific machine account.  NFSv3 permissions (mode bits) cannot satisfy the requirement because v3 permissions do not have the level of granularity desired in this example.
 
@@ -68,3 +68,17 @@ NFSv4 introduced the concept of Access Control Lists (ACLs). Each file/folder ca
 
 If your current environment leverages NFSv4 ACLs, you will need to determine which storage solution best matches this requirement.
 
+## Summary ##
+
+We've scratched the surface of NFS protocol considerations. The items listed above represent the key factors you would consider as part of choosing your storage solution.
+
+You will need to evaluate your current environment, determine your group management requirements, your networking requirements and security requirements to determine the appropriate storage solution.
+
+The table below is a comparison of the items above:
+
+| Capability | NFSv3 | NFSv4 |
+| :------------- | :----------: | -----------: |
+| File/Folder Permissions | Mode bits | Mode bits and/or ACLs |
+| Encryption | None | Kerberos |
+| Network Ports | TCP or UDP, portmapper required  | TCP port 2049|
+| File Locking | Advisory NLM | Active lock support |
