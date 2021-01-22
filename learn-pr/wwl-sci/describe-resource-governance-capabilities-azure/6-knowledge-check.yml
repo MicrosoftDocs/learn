@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/19/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As the admin in your organization, you want to make sure that users can use the resources they need. But you also want to ensure that they can’t accidentally delete resources. Which Azure resource lock level will you set to ensure that users can read and modify a resource, but can't delete the resource?"
+  - content: "The compliance admin for the organization wants to ensure that users can access the resources they need, but not accidentally delete resources. Which Azure resource lock level can the admin set to ensure that users can read and modify a resource, but can't delete the resource?"
     choices:
     - content: "ReadOnly"
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "UpdateAndDelete"
       isCorrect: false
       explanation: "This option isn't valid for Azure resource locks. Instead, use CanNotDelete.​​​"
-  - content: "Which tool would you recommend to your organization's development team so they can rapidly provision and run new resources, in a repeatable way that is in line with the organization’s compliance requirements?"
+  - content: "Which tool can enable an organization's development team to rapidly provision and run new resources, in a repeatable way that is in line with the organization’s compliance requirements?"
     choices:
     - content: "Azure Policy"
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Azure Blueprints"
       isCorrect: true
       explanation: "​​​Azure Blueprint will enable your development teams to define a repeatable set of Azure resources, and achieve shorter development times and faster delivery."
-  - content: "One of your organization’s customers is moving to the cloud. You want to ensure that they know how to create and implement business and technology strategies in a way that will help them succeed in the cloud. What guidance do you recommend to the company?"
+  - content: "An organization is moving their IT infrastructure to the cloud. They want to know how to create and implement business and technology strategies in a way that will help them succeed in the cloud. What guidance can they use to help them transition to the cloud?"
     choices:
     - content: "They should use Azure Policy for guidance on moving to the cloud."
       isCorrect: false
@@ -49,7 +49,7 @@ quiz:
     - content: "They should use the Azure Cloud Succeed Framework."
       isCorrect: false
       explanation: "This option doesn't exist. Instead, use the Cloud Adoption Framework.​​​"
-  - content: "As an admin, you understand that there are many users who will need to access Azure, and will need to perform different actions in Azure, across various scopes. You need to implement action management at all scopes across Azure for your organization. How would you do this?"
+  - content: "Within an organization there are many users who will need to access Azure, and perform different actions across various scopes. The admin wants implement action management at all scopes across Azure for the organization. What can the admin use to address this need?"
     choices:
     - content: "Use Azure role-based access control (RBAC)"
       isCorrect: true
