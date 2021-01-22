@@ -31,5 +31,3 @@ In this module you'll:
 
 
 - Any Python development environment.
-
-- TBD if users need to download this:[Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
