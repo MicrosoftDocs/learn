@@ -72,17 +72,17 @@ Each group is a collection of rules designed to detect and thwart a specific exp
 
 The managed rules offered by Azure Web Application Firewall might not cover a specific threat that your web applications are experiencing. If so, you can create a custom rule. You build custom rules by creating conditions that include the following components:
 
-- Variables such as RequestHeader or QueryString.
-- HTTP/HTTPS request methods such as POST or PUT.
-- Operators such as **Equal** or **Contains**.
-- An action such as **Allow** or **Block**.
+- Variables such as RequestHeader or QueryString
+- HTTP/HTTPS request methods such as POST or PUT
+- Operators such as **Equal** or **Contains**
+- An action such as **Allow** or **Block**
 
 > [!TIP]
 > Azure Web Application Firewall custom rules support a GeoMatch operator, which you can use to match the two-letter country/region code of the requesting entity.
 
 ## Detection mode vs prevention mode
 
-Azure Web Application Firewall can operate in one of two modes. The mode you choose depends on how you want the firewall the deal with incoming HTTP/HTTPS requests that match one of its rules:
+Azure Web Application Firewall can operate in one of two modes. The mode you choose depends on how you want the firewall to deal with incoming HTTP/HTTPS requests that match one of its rules:
 
 - Detection mode. Logs the request but allows the request to go through.
 - Prevention mode. Logs the request but doesn't allow the request to go through.
