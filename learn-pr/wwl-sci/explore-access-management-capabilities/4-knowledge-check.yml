@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You've been asked to consider the feasibility of implementing conditional access for your organization. What must you do to implement conditional access?"
+  - content: "Your organization plans to implement conditional access. What do admins need to do?"
     choices:
     - content: "Create policies that enforce organizational rules."
       isCorrect: true
@@ -38,7 +38,7 @@ quiz:
     - content: "The probability that the user is authorized to view data from a particular application."
       isCorrect: false
       explanation: "That's incorrect. Sign in risk does not calculate the probability that a user is authorized to view data."
-  - content: "You've been asked to review Azure AD roles assigned to users to improve organizational security. Which of the following should you implement?"
+  - content: "IT admins have been asked to review Azure AD roles assigned to users, to improve organizational security. Which of the following should they implement?"
     choices:
     - content: "Remove all Global Admin roles assigned to users."
       isCorrect: false
