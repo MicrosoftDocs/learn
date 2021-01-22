@@ -25,7 +25,7 @@ prerequisites: |
   - Know how to declare and initialize variables.
   - Know how to create functions.
   
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/go-control-flow.svg
 levels: # TBC
 - beginner
 roles: # TBC
