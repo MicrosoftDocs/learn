@@ -14,14 +14,8 @@ The following default permissions for member users can be restricted in the foll
 
 | **Permission**| **Setting explanation**|
 | :--- | :--- |
-| Users can register application| By default, member users can register applications.
-
-Setting this option to No prevents users from creating application registrations. The ability can then be granted back to specific individuals by adding them to the Application Developer role.|
-| Restrict access to Azure AD administration portal| Setting this option to No lets non-administrators use the Azure AD administration portal to read and manage Azure AD resources. Yes restricts all non-administrators from accessing any Azure AD data in the administration portal.
-
-**Note**: This setting does not restrict access to Azure AD data using PowerShell or other clients such as Visual Studio. When set to Yes, to grant a specific non-admin user the ability to use the Azure AD administration portal assign any administrative role such as the Directory Readers role.
-
-This role allows reading basic directory information, which member users have by default (guests and service principals do not).|
+| Users can register application| <ul><li>By default, member users can register applications.</li> <li>Setting this option to No prevents users from creating application registrations. The ability can then be granted back to specific individuals by adding them to the Application Developer role.</li></ul>|
+| Restrict access to Azure AD administration portal| <ul><li>Setting this option to No lets non-administrators use the Azure AD administration portal to read and manage Azure AD resources. Yes restricts all non-administrators from accessing any Azure AD data in the administration portal.</li> <li>**Note**: This setting does not restrict access to Azure AD data using PowerShell or other clients such as Visual Studio. When set to Yes, to grant a specific non-admin user the ability to use the Azure AD administration portal assign any administrative role such as the Directory Readers role.</li> <li>This role allows reading basic directory information, which member users have by default (guests and service principals do not).</li></ul>|
 
 ### Sign in with LinkedIn
 

@@ -85,10 +85,14 @@ Before you can add a custom domain name, create your domain name with a domain r
 After you get your domain name, you can create your first Azure AD directory. Sign into the Azure portal for your directory, using an account with the **Owner** role for the subscription, to create your new directory.
 
 > [!IMPORTANT]
-> Important> The person who creates the tenant is automatically the Global administrator for that tenant. The Global administrator can add additional administrators to the tenant.
+> Important
+> The person who creates the tenant is automatically the Global administrator for that tenant. The Global administrator can add additional administrators to the tenant.
+
 > [!TIP]
-> Tip> If you plan to federate your on-premises Windows Server AD with Azure AD, then you need to select I plan to configure this domain for single sign-on with my local Active Directory when you run the Azure AD Connect tool to synchronize your directories.
-You also need to register the same domain name you select for federating with your on-premises directory in the Azure AD Domain step in the wizard. To see what that setup looks like, see [Verify the Azure AD domain selected for federation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom). If you don't have the Azure AD Connect tool, you can [download it here](https://go.microsoft.com/fwlink/?LinkId=615771).
+> Tip
+> If you plan to federate your on-premises Windows Server AD with Azure AD, then you need to select I plan to configure this domain for single sign-on with my local Active Directory when you run the Azure AD Connect tool to synchronize your directories.
+
+You also need to register the same domain name you select for federating with your on-premises directory in the Azure AD Domain step in the wizard. To see what that setup looks like, see [Verify the Azure AD domain selected for federation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom). If you don't have the Azure AD Connect tool, you can [download it here](https://go.microsoft.com/fwlink/?LinkId=615771).
 
 ### Add your custom domain name to Azure AD
 
@@ -105,7 +109,9 @@ After you create your directory, you can add your custom domain name.
 ![Custom domain names page, with Add custom domain page](../media/add-custom-domain-blade.png)
 
 > [!IMPORTANT]
-> Important> You must include .com, .net, or any other top-level extension for this to work properly.
+> Important
+> You must include .com, .net, or any other top-level extension for this to work properly.
+
 The unverified domain is added. The contoso.com page appears showing your DNS information. Save this information; you will need it later to create a TXT record to configure DNS.
 
 ![Contoso page with DNS entry information](../media/contoso-blade-with-dns-info.png)
@@ -117,7 +123,9 @@ After you add your custom domain name to Azure AD, you must return to your domai
 Go back to your domain registrar and create a new TXT record for your domain based on your copied DNS information. Set the time to live (TTL) to 3600 seconds (60 minutes), and then save the record.
 
 > [!IMPORTANT]
-> Important> You can register as many domain names as you want. However, each domain gets its own TXT record from Azure AD. Be careful when you enter the TXT file information at the domain registrar. If you enter the wrong or duplicate information by mistake, you'll have to wait until the TTL times out (60 minutes) before you can try again.
+> Important
+> You can register as many domain names as you want. However, each domain gets its own TXT record from Azure AD. Be careful when you enter the TXT file information at the domain registrar. If you enter the wrong or duplicate information by mistake, you'll have to wait until the TTL times out (60 minutes) before you can try again.
+
 ### Verify your custom domain name
 
 After you register your custom domain name, make sure it's valid in Azure AD. The propagation from your domain registrar to Azure AD can be instantaneous or it can take a few days, depending on your domain registrar.

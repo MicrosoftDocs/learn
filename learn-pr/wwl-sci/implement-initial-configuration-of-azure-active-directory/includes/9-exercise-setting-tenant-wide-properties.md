@@ -46,7 +46,7 @@ Microsoft strongly recommends you add both your global privacy contact and your 
 
 > [!NOTE]
 > Note
-For information about viewing or deleting personal data, see [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-azure). For more information about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+For information about viewing or deleting personal data, see [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure). For more information about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 You add your organization's privacy information in the **Properties** area of Azure AD. To access the Properties area and add your privacy information:
 

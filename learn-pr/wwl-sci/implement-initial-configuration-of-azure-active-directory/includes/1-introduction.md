@@ -4,13 +4,13 @@ In this module you will learn how to configure and manage Azure Active Directory
 
 In this module, you will:
 
-- Configure and manage Azure Active Directory roles
+- Configure and manage Azure Active Directory roles.
 
-- Configure and manage custom domains
+- Configure and manage custom domains.
 
-- Configure and manage device registration options
+- Configure and manage device registration options.
 
-- Configure delegation by using administrative units
+- Configure delegation by using administrative units.
 
 - Configure tenant-wide settings
 

@@ -96,11 +96,11 @@ For even finer-grained app access delegation, you can assign ownership to indivi
 
 ## Develop a security plan
 
-Azure AD provides an extensive guide to planning and executing a security plan on your Azure AD admin roles, [Securing privileged access for hybrid and cloud deployments](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-planning).
+Azure AD provides an extensive guide to planning and executing a security plan on your Azure AD admin roles, [Securing privileged access for hybrid and cloud deployments](https://docs.microsoft.com/azure/active-directory/roles/security-planning).
 
 ## Establish emergency accounts
 
-To maintain access to your identity management store when issue arises, prepare emergency access accounts according to [Create emergency-access administrative accounts](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-emergency-access).
+To maintain access to your identity management store when issue arises, prepare emergency access accounts according to [Create emergency-access administrative accounts](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
 
 ## Secure your administrator roles
 
