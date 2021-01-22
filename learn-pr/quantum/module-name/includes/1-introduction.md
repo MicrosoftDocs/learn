@@ -21,7 +21,8 @@ In this module you'll:
 
 - Discover what the Azure Quantum service has to offer: Quantum computing and Optimization
 - Prepare your Azure account to use Azure Quantum.
-- Create a Quantum Workspace.
+- Create a Quantum workspace.
+
 
 ## Prerequisites
 
