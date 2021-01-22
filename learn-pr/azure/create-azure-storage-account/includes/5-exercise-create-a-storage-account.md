@@ -80,7 +80,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. After you've reviewed the settings, select **Create** to provision the storage account.
 
-   It will take a few minutes to deploy the account.
+   It may take two minutes to deploy the account.
 
 1. Select the **Storage accounts** link in the left sidebar.
 
