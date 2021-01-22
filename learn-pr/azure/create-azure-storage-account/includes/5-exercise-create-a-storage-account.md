@@ -6,13 +6,13 @@ The surf report site lets users upload photos and videos of local beach conditio
 - The site must handle unexpected spikes in upload volume.
 - Outdated content must be removed as surf conditions change so the site always shows current conditions.
 
-To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
+To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing, and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
 
 ## Create a storage account using Azure portal
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
 1. In the left-hand **Azure Marketplace** nav bar, select **Storage**.
 
@@ -23,10 +23,10 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 1. For **Storage account**, select **Create**. The **Create a storage account** window appears. In the **Basics** tab, enter the following information.
 
     | Property | Value |
-    |---|---|
+    | ---- | ---- |
     | **Project details**| |
     | Subscription | Concierge Subscription |
-    | Resource group | ("**<rgn>[sandbox resource group name]</rgn>**") from the dropdown. |
+    | Resource group | ("<rgn>[sandbox resource group name]</rgn>") from the dropdown. |
     | **Instance details**| |
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
     | Location | Select a location near to you in the dropdown from the previous list |
@@ -34,8 +34,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Account kind | StorageV2 (general purpose v2) |
     | Redundancy | Locally redundant storage (LRS). In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
 
-    > [!NOTE]
-    > This free Resource Group has been provided by Microsoft as part of the learning experience. When you create an account for a real application, you'll want to create a new Resource Group in your subscription to hold all the resources for the app.
+    [!INCLUDE [Sandbox Regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Next : Networking**. Enter the following information.
 
@@ -81,7 +80,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. After you've reviewed the settings, select **Create** to provision the storage account.
 
-   It will take a few minutes to deploy the account.
+   It may take two minutes to deploy the account.
 
 1. Select the **Storage accounts** link in the left sidebar.
 
