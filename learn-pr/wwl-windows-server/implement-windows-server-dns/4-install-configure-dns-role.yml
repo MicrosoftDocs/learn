@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-dns.install-configure-dns-role
+title: Install and configure the DNS role
+metadata:
+  title: Install and configure the DNS role
+  description: "Install and configure the DNS role"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-install-configure-dns-role.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Which of the following tasks should an administrator perform first when deploying DNS?"
+    choices:
+    - content: "Create the required DNS zones."
+      isCorrect: false
+      explanation: "That's incorrect. The zones can't be created until the DNS servers to host them are deployed."
+    - content: "Install the required DNS servers."
+      isCorrect: false
+      explanation: "That's incorrect. The administrator should consider which zones are needed first."
+    - content: "Plan the DNS infrastructure."
+      isCorrect: true
+      explanation: "That's correct. An administrator must plan the DNS infrastructure, including determining which DNS zones and what type of zones are needed, before starting deployment."
