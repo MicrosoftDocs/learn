@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-server-file-servers.list-benefits-uses-of-file-server-resource-manager
+title: List the benefits and uses of File Server Resource Manager
+metadata:
+  title: List the benefits and uses of File Server Resource Manager
+  description: "List the benefits and uses of File Server Resource Manager"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-list-benefits-uses-of-file-server-resource-manager.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What tool allows the creation of a new file of an arbitrary size?"
+    choices:
+    - content: "fsutil"
+      isCorrect: true
+      explanation: "That's correct. You use fsutil with the **file createnew** switches to create a file of an arbitrary size."
+    - content: "File Explorer"
+      isCorrect: false
+      explanation: "That's incorrect. You can create new files with File Explorer. However, you can't set their size."
+    - content: "FSRM"
+      isCorrect: false
+      explanation: "That's incorrect. FSRM allows you to trigger actions in response to file creation. However, not to create files of arbitrary sizes."
