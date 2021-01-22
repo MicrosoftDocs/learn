@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,33 +16,33 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Admins in the organization are using the Microsoft 365 security center on a daily basis. They want to quickly get an understanding of your organization's current security posture. Which section in the Microsoft 365 Security Center will they use?"
+  - content: "Admins in the organization are using the Microsoft 365 security center every day. They want to quickly get an understanding of the organization's current security posture. Which section in the Microsoft 365 security center will they use?"
     choices:
     - content: "Reports."
       isCorrect: false
-      explanation: "That's incorrect. Reports will provide you with targeted information but doesn't provide a snap-shot of your organization's security posture."
-    - content: "Secure score."
+      explanation: "That's incorrect. Reports will provide targeted information but doesn't give a snapshot of an organization's security posture."
+    - content: "Secure Score."
       isCorrect: true
-      explanation: "That's correct. Secure score in the M365 Security Center will give you a snapshot of your organization’s security posture, and provide you with details on how to improve it."
+      explanation: "That's correct. Secure Score, in the M365 security center, will give a snapshot of an organization’s security posture, and provide details on how to improve it."
     - content: "Policies."
       isCorrect: false
-      explanation: "That's incorrect. You will not be able to find a snap-shot of your current security posture from the Policies option."
-  - content: "Which of the following describes what an admin would need to select to view security cards grouped by risk, detection trends, configuration and health, and other?"
+      explanation: "That's incorrect. A snapshot of an organization's current security posture can't be found in the Policies option."
+  - content: "Which of the following describes what an admin would need to select to view security cards grouped by risk, detection trends, configuration, and health, among others?"
     choices:
     - content: "Group by topic."
       isCorrect: true
-      explanation: "That's correct. You'd use this filter to view security cards grouped by risk, detection trends, configuration and health, amongst others."
+      explanation: "That's correct. Use this filter to view security cards grouped by risk, detection trends, configuration, and health, among others."
     - content: "Group by risk."
       isCorrect: false
-      explanation: "That's incorrect. This is not the correct filter to get the right view."
+      explanation: "That's incorrect. This isn't the filter to get the correct view."
     - content: "Group by category."
       isCorrect: false
-      explanation: "That's incorrect. This is not the correct filter to get the right view."
-  - content: "An admin wants to get a comprehensive view of an attack, including where the attack started, what tactics were used, and how far the attack has gone in the network. What can the admin use to view this type of information?"
+      explanation: "That's incorrect. This isn't the filter to get the correct view."
+  - content: "An admin wants to get a comprehensive view of an attack including where it started, what tactics were used, and how far it has gone in the network. What can the admin use to view this type of information?"
     choices:
     - content: "Alerts"
       isCorrect: false
-      explanation: "That's incorrect. Although alerts provide valuable clues about an on-going attack, piecing them together to get a comprehensive view is challenging.  An Incident is a collection of correlated alerts that make up the story of an attack."
+      explanation: "That's incorrect. Although alerts provide valuable clues about an ongoing attack, piecing them together to get a comprehensive view is challenging.  An incident is a collection of correlated alerts that make up the story of an attack."
     - content: "Reports"
       isCorrect: false
       explanation: "That's incorrect. Reports provide status and trends for the compliance of your Microsoft 365 devices, data, identities, apps, and infrastructure."
