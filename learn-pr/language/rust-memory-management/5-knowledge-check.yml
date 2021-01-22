@@ -15,10 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the meaning of the `<'a>` segment in the following struct declaration?\
-     `struct Nominee<'a> {`\
-     `  person: &'a Person`\
-     `}`"
+  - content: "What is the meaning of the `<'a>` segment in the following struct declaration? `struct Nominee<'a> { person: &'a Person }`"
     choices:
     - content: "It means that the `Nominee` struct will live no longer than the `Person` value it borrows from."
       isCorrect: true
