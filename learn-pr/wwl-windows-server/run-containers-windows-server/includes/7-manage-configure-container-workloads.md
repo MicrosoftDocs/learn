@@ -29,7 +29,8 @@ A large part of a container image is the base OS layer, which contains OS elemen
 > [!NOTE]
 > It's possible to run Linux containers on Windows 10 using Docker CE for Windows for Windows, and then use Docker to switch between the Windows and Linux modes.
 
-> [!CAUTION] In Windows Server 2019, you can use an experimental feature to run Linux containers on Windows Server. This is not recommended for production environments or critical workloads.
+> [!CAUTION] 
+> In Windows Server 2019, you can use an experimental feature to run Linux containers on Windows Server. This is not recommended for production environments or critical workloads.
 
 ## Demonstration
 
