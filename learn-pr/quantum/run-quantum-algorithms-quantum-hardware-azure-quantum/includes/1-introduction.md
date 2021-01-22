@@ -10,7 +10,7 @@ In this module, you'll explore the quantum computing options in Azure Quantum an
 
 You'll also learn the basic principles behind quantum hardware and the different kinds of target devices that you have access to in Azure Quantum.
 
-![Alt_text=Diagram of the different parts of the service for quantum computing of Azure Quantum](../media/1-azure-quantum-illustration).
+![Alt_text=Diagram of the different parts of the service for quantum computing of Azure Quantum](../media/1-azure-quantum-illustration.png).
 
 ## Learning objectives
 
