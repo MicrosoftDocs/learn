@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-entity-behavior-analytics-azure-sentinel.understand-user-entity-behavior-analytics
+title: Understand user and entity behavior analytics
+metadata:
+  title: Understand user and entity behavior analytics
+  description: "Understand user and entity behavior analytics"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-user-entity-behavior-analytics.md)]

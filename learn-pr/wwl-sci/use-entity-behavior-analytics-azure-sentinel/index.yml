@@ -3,19 +3,19 @@ uid: learn.wwl.use-entity-behavior-analytics-azure-sentinel
 metadata:
   title: Use entity behavior analytics in Azure Sentinel
   description: "Use entity behavior analytics in Azure Sentinel"
-  ms.date: 01/16/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use entity behavior analytics in Azure Sentinel
-summary: Learn about how to use entity behavior analytics in Azure Sentinel to identify threats inside your organization.
+summary: Learn how to use entity behavior analytics in Azure Sentinel to identify threats inside your organization.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Design User and Entity Behavior Analytics (UEBA)
-  - Explore entities
+  - Explain User and Entity Behavior Analytics in Azure Sentinel
+  - Explore entities in Azure Sentinel
 prerequisites: |
-  Basic knowledge of operational concepts such as monitoring, logging, and alerting
+  Knowledge of security incident management in Azure Sentinel
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -26,10 +26,9 @@ products:
 - azure-sentinel
 units:
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel.introduction
-- learn.wwl.use-entity-behavior-analytics-azure-sentinel.understand-user-ueba
+- learn.wwl.use-entity-behavior-analytics-azure-sentinel.understand-user-entity-behavior-analytics
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel.explore-entities
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel.display-information
-- learn.wwl.use-entity-behavior-analytics-azure-sentinel.integration-with-investigation-graph
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel.knowledge-check
 - learn.wwl.use-entity-behavior-analytics-azure-sentinel.summary-resources
 badge:

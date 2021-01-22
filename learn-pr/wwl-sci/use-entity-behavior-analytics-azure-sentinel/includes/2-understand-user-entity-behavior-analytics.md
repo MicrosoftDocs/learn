@@ -6,19 +6,19 @@ As Azure Sentinel collects logs and alerts from all of its connected data source
 
 ### Architecture overview
 
-![UEBA Architecture ](../media/euba1.png)
+![UEBA Architecture.](../media/euba-1.png)
 
 ### Security-driven analytics
 
 Inspired by Gartner’s paradigm for UEBA solutions, Azure Sentinel provides an "outside-in" approach, based on three frames of reference:
 
-**Use cases:** By prioritizing for relevant attack vectors and scenarios based on security research aligned with the MITRE ATT&CK framework of tactics, techniques, and subtechniques that puts various entities as victims, perpetrators, or pivot points in the kill chain; Azure Sentinel focuses specifically on the most valuable logs each data source can provide.
+**Use cases:** By prioritizing for relevant attack vectors and scenarios based on security research aligned with the MITRE ATT&CK framework of tactics, techniques, and subtechniques that put various entities as victims, perpetrators, or pivot points in the kill chain; Azure Sentinel focuses specifically on the most valuable logs each data source can provide.
 
 **Data Sources:** While first and foremost supporting Azure data sources, Azure Sentinel thoughtfully selects third-party data sources to provide data that matches our threat scenarios.
 
 **Analytics:** Using various machine learning (ML) algorithms, Azure Sentinel identifies anomalous activities and presents evidence clearly and concisely in the form of contextual enrichments, some examples of which appear below.
 
-![Security Driven Analytics](../media/euba2.png)
+![Security Driven Analytics.](../media/euba-2.png)
 
 Azure Sentinel presents artifacts that help your security analysts get a clear understanding of anomalous activities in context, and in comparison with the user's baseline profile. Actions performed by a user (or a host, or an address) are evaluated contextually, where a "true" outcome indicates an identified anomaly:
 
@@ -30,7 +30,7 @@ Azure Sentinel presents artifacts that help your security analysts get a clear u
 
 - as compared to organization's behavior.
 
-![UEBA Context](../media/euba3.png)
+![UEBA Context.](../media/euba-3.png)
 
 ### Scoring
 
