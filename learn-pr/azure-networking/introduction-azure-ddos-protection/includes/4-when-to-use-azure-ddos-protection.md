@@ -6,7 +6,7 @@ Azure DDoS Protection Basic automatically protects every deployed service in Azu
 
 When deciding to upgrade from Azure DDoS Protection Basic to Azure DDoS Protection Standard, it’s important to do a risk analysis for a DDoS attack on your key Azure resources. Even with the built-in DDoS services that are available, it's preferable not to rely only on post-deployment protection. Building an application that's resilient and tested to withstand or quickly recover from a denial-of-service attack is important.  
 
-### The Azure framework
+### The Azure framework for workload resiliency
 
 The Azure team has published a framework for designing your workload for resiliency. This framework is a collection of guiding principles that you can follow to improve the quality of a workload.
 
