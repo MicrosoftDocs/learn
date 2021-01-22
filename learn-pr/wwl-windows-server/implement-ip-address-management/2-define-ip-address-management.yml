@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-ip-address-management.define-ipam
-title: Define IPAM
+title: Define IP Address Management
 metadata:
-  title: Define IPAM
-  description: "Define IPAM"
-  ms.date: 01/21/2021
+  title: Define IP Address Management
+  description: "Define IP Address Management"
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-define-ipam.md)]
+  [!include[](includes/2-define-ip-address-management.md)]
