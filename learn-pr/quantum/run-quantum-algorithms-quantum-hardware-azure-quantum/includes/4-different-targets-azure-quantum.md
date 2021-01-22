@@ -25,13 +25,7 @@ as having one of three profiles:
 
 For example, this operation cannot be run on a No Control Flow target:
 
-```qsharp
-    operation SetQubitState(desired : Result, q : Qubit) : Result {
-        if (desired != M(q)) {
-            X(q);
-        }
-    }
-```
+:::code language="qsharp" source="code/4-program-1.qs":::
 
 If you try to run this operation on a No Control Flow target (like `ionq.qpu`) it will fail
 because it evaluates a comparison between two results—`desired != M(q)`—to
@@ -42,13 +36,7 @@ statement within the `if` block.
 For example, the operation above could be used in a Basic Measurement Feedback target, but the following
 cannot:
 
-```qsharp
-    operation SetQubitState(desired : Result, q : Qubit) : Result {
-        if (desired != M(q)) {
-            X(q);
-            return M(q);
-        }
-    }
-```
+:::code language="qsharp" source="code/4-program-2.qs":::
+
 
 In the next unit you will run Grover's algorithm in a No Control Flow target.

@@ -56,30 +56,13 @@ Open the file `Program.qs` and add the following content:
 
 1. First, add the Grover's diffusion operation:
 
-   ```qsharp
-       operation ReflectAboutUniform(inputQubits : Qubit[]) : Unit {
-               within {
-                   ApplyToEachCA(H, inputQubits);
-                   ApplyToEachCA(X, inputQubits);
-               } apply {
-                   Controlled Z(Most(inputQubits), Tail(inputQubits));
-               }
-           }
-       }
-   ```
+   :::code language="qsharp" source="code/5-program-1.qs":::
+
 
 1. Now, write the full Grover's search operation that takes a phase oracle as
    input:
 
-    ```qsharp
-    operation RunGroversSearch(register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
-        ApplyToEachCA(H, register);
-        for (_ in 1 .. iterations) {
-            phaseOracle(register);
-            ReflectAboutUniform(register);
-        }
-    }
-   ```
+   :::code language="qsharp" source="code/5-program-2.qs":::
 
    Recall that the number of iterations is given by the formula:
    $N_{\text{iterations}}=\frac{\pi}{4}\sqrt{\frac{N}{M}}$, where $N$ is the
@@ -94,15 +77,7 @@ to give an integer as input to the oracle, and then use the quantum computer to 
    and marks the basis state that corresponds to that integer. You can do this using
    the following operation:
 
-   ```qsharp
-        operation markingNumber (
-            idxMarked : Int,
-            inputQubits : Qubit [],
-            target : Qubit
-        ) : Unit is Adj+Ctl {
-            (ControlledOnInt(idxMarked, X))(inputQubits, target);
-        }
-   ```
+   :::code language="qsharp" source="code/5-program-3.qs":::
 
    This operation takes as input the integer to be marked and flips the state of the
    target qubit if the control register state corresponds to the input integer.
@@ -112,21 +87,7 @@ to give an integer as input to the oracle, and then use the quantum computer to 
 
 2. Since the general operation to run Grover's algorithm that you defined takes a phase oracle as an input, you need to transform your marking oracle into a phase oracle using the phase kickback trick. We can use the same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle):
 
-   ```qsharp
-    operation ApplyMarkingOracleAsPhaseOracle(
-        markingOracle : ((Qubit[], Qubit) => Unit is Adj), 
-        register : Qubit[]
-    ) : Unit is Adj {
-        using (target = Qubit()) {
-            within {
-                X(target);
-                H(target);
-            } apply {
-                markingOracle(register, target);
-            }
-        }
-    }
-   ```
+   :::code language="qsharp" source="code/5-program-4.qs":::
 
    These two operations combined flip the phase of the basis state that corresponds to the input integer. This is a crucial step of each iteration of the Grover's search.
 
@@ -137,14 +98,7 @@ correct solutions and the total number of possible states. In this case, we have
 single correct solution, so we define the function `NIterations` that takes
 the number of qubits as input:
 
-```qsharp
-function NIterations(nQubits : Int) : Int {
-    let nItems = 1 <<< nQubits;
-    let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
-    let nIterations = Round(0.25 * PI() / angle - 0.5);
-    return nIterations;
-}
-```
+:::code language="qsharp" source="code/5-program-5.qs":::
 
 ### Create a runnable operation
 
@@ -158,81 +112,7 @@ provided through the Azure CLI as command line arguments of the job submission.
 
 The full code should be:
 
-```qsharp
-namespace MyGroversJob {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Measurement;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Arithmetic;
-    open Microsoft.Quantum.Arrays;
-
-    @EntryPoint()
-    operation GroversTest(nQubits : Int, idxMarked : Int) : Result[] {
-        // Define the oracle that for the factoring problem.
-        let markingOracle = markingNumber(idxMarked, _, _);
-        let phaseOracle = ApplyMarkingOracleAsPhaseOracle(markingOracle, _);
-        // Set the number of iterations of the algorithm
-        let nIterations = NIterations(nQubits);
-
-        // Initialize the register to run the algorithm
-        using (qubits = Qubit[nQubits]){
-                // Run the algorithm
-                RunGroversSearch(qubits, phaseOracle, nIterations);
-                // Obtain the results and reset the register
-                return ForEach(MResetZ, qubits);
-        }
-    }
-
-    function NIterations(nQubits : Int) : Int {
-        let nItems = 1 <<< nQubits;
-        let angle = ArcSin(1. / Sqrt(IntAsDouble(nItems)));
-        let nIterations = Round(0.25 * PI() / angle - 0.5);
-        return nIterations;
-    }
-
-    operation markingNumber (
-        idxMarked : Int,
-        inputQubits : Qubit [],
-        target : Qubit
-    ) : Unit is Adj+Ctl {
-        (ControlledOnInt(idxMarked, X))(inputQubits, target);
-    }
-
-    operation ApplyMarkingOracleAsPhaseOracle(
-        markingOracle : ((Qubit[], Qubit) => Unit is Adj), 
-        register : Qubit[]
-    ) : Unit is Adj {
-        using (target = Qubit()) {
-            within {
-                X(target);
-                H(target);
-            } apply {
-                markingOracle(register, target);
-            }
-        }
-    }
-
-    operation RunGroversSearch(register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
-        ApplyToEachCA(H, register);
-        for (_ in 1 .. iterations) {
-            phaseOracle(register);
-            ReflectAboutUniform(register);
-        }
-    }
-
-    operation ReflectAboutUniform(inputQubits : Qubit[]) : Unit {
-        within {
-            ApplyToEachCA(H, inputQubits);
-            ApplyToEachCA(X, inputQubits);
-        } apply {
-            Controlled Z(Most(inputQubits), Tail(inputQubits));
-        }
-    }
-    
-}
-```
+   :::code language="qsharp" source="code/5-program-6.qs":::
 
 ## Submit your job to Azure Quantum
 

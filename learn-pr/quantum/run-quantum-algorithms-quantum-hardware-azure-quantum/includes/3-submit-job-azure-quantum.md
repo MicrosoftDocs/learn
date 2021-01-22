@@ -109,21 +109,8 @@ Next, you'll use Visual Studio Code to create a Q# Project, similar to how you d
 
 1. Replace the contents of `Program.qs` with the program:
 
-    ```qsharp
-    namespace MyFirstJob {
-        open Microsoft.Quantum.Intrinsic;
-        open Microsoft.Quantum.Measurement;
-        open Microsoft.Quantum.Canon;
-    
-        @EntryPoint()
-        operation TestSuperposition() : Result {
-            using (q = Qubit())  {
-                H(q);
-                return M(q);
-            }
-        }
-    }
-    ```
+    :::code language="qsharp" source="code/3-program-1.qs":::
+
 
 This program prepares a qubit in an even superposition and then measures it,
 similar to the random bit generator you wrote in the earlier module. It's simple
