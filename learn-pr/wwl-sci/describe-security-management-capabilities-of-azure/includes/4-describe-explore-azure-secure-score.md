@@ -26,7 +26,7 @@ To improve your secure score, remediate security recommendations from your recom
 
 Use secure score to keep an eye on your security posture, and easily implement actions to improve your security posture.  
 
-### Interactive Guide
+### Interactive guide
 
 If you’re the Azure administrator for your organization, you’ll need to be aware of the security of your Azure environment and improve your security posture accordingly. The following interactive clickthrough demonstrates how you can do this using Azure secure score.  Click on the image below to get started.
 

@@ -18,6 +18,7 @@ The first task is to create a new routing table and then add a custom route for 
     az network vhub route-table create \
         --name publictable \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --vhub-name \
         --disable-bgp-route-propagation false
     ```
 

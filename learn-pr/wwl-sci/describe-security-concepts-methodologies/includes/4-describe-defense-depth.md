@@ -2,13 +2,13 @@ Defense in depth uses a layered approach to security, rather than relying on a s
 
 Example layers of security might include:
 
-- *Physical* security such as limiting access to a datacenter to only authorized personnel.
-- *Identity & access* security controlling access to infrastructure and change control.
-- *Perimeter* security including distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
-- *Network* security can limit communication between resources using segmentation and access controls. 
-- The *compute* layer can secure access to virtual machines either on-premises or in the cloud by closing certain ports.
-- *Application* layer security ensures that applications are secure and free of security vulnerabilities.
-- *Data* layer security controls access to business and customer data, as well encryption to protect data.
+- ***Physical*** security such as limiting access to a datacenter to only authorized personnel.
+- ***Identity & access*** security controlling access to infrastructure and change control.
+- ***Perimeter*** security including distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
+- ***Network*** security can limit communication between resources using segmentation and access controls. 
+- The ***compute*** layer can secure access to virtual machines either on-premises or in the cloud by closing certain ports.
+- ***Application*** layer security ensures that applications are secure and free of security vulnerabilities.
+- ***Data*** layer security controls access to business and customer data, as well encryption to protect data.
 
 :::image type="content" source="../media/4-defense-depth.png" alt-text="Defense in depth uses multiple layers of security to protect sensitive data":::
 
@@ -25,3 +25,4 @@ Confidentiality, Integrity, Availability, or CIA, is a way to think about securi
 **Availability** refers to making data available to those who need it. In the case of customer data, it's important to the organization to keep customer data secure, but at the same time it must also be available to employees who deal with customers. Whilst it might be more secure to store the data in an encrypted format, employees need access to decrypted data.
 
 Whilst all sides of the CIA model are important, they also represent trade-offs that need to be made.
+
