@@ -3,8 +3,8 @@ uid: learn.introduction-azure-private-link.2-what-is-azure-private-link
 title: What is Azure Private Link?
 metadata:
   title: What is Azure Private Link?
-  description: TBD
-  ms.date: 02/28/2021
+  description: Introduces Azure Private Link, Private Endpoint, and Private Link Service.
+  ms.date: 12/28/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial

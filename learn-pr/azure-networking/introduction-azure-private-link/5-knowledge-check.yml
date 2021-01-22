@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 02/28/2021
+  ms.date: 12/28/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Suppose a company wants clients in their Azure virtual network to have secure and non-public access to a particular Azure resource. Which of the following technologies should their IT staff add to their virtual network?"
     choices:
-    - content: "A"
+    - content: "Azure Service Endpoint"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "That's incorrect. When using Service Endpoint, access to the resource still uses the resource's public IP address."
+    - content: "Azure Private Endpoint"
       isCorrect: true
-      explanation: "."
-    - content: "C"
+      explanation: "That's correct. Adding a Private Endpoint to a virtual network enables clients to access an Azure resource privately."
+    - content: "Azure Firewall"
       isCorrect: false
-      explanation: "."
-  - content: "TBD"
+      explanation: "That's incorrect. Implementing a firewall doesn't change resource access from public to private."
+  - content: "Suppose a company wants to give private access to Azure resources via an Azure virtual network. How does Azure Private Endpoint map an Azure resource to offer private access?"
     choices:
-    - content: "A"
+    - content: "By using an IP address from a subnet of an Azure virtual network."
       isCorrect: true
-      explanation: "."
-    - content: "B"
+      explanation: "That's correct. Private Endpoint maps an unused IP address from the address space of the subnet in which it resides."
+    - content: "By using a private IP address supplied by Azure."
       isCorrect: false
-      explanation: "."
-    - content: "C"
+      explanation: "That's incorrect. Azure doesn't supply an IP address to Private Endpoint."
+    - content: "By using Azure ExpressRoute private peering."
       isCorrect: false
-      explanation: "."
-  - content: "TBD" 
+      explanation: "That's incorrect. ExpressRoute private peering is a technology that peers an on-premises network to an Azure virtual network."
+  - content: "Suppose a company wants to offer private access to a custom Azure services via Azure Private Link Service. Which of the following technologies is a requirement for implementing Private Link Service?" 
     choices:
-    - content: "A"
+    - content: "Azure Application Gateway"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "That's incorrect. Application Gateway isn't a requirement for using Private Link Service."
+    - content: "Azure Basic Load Balancer"
+      isCorrect: false
+      explanation: "That's incorrect. Azure's basic version of its load balancer doesn't support Private Link Service."
+    - content: "Azure Standard Load Balancer"
       isCorrect: true
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
+      explanation: "That's correct. Azure's standard version of its load balancer is the one you must use for Private Link Service."

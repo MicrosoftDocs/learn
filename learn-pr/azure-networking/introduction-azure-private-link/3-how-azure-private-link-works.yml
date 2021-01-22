@@ -3,8 +3,8 @@ uid: learn.introduction-azure-private-link.3-how-azure-private-link-works
 title: How Azure Private Link works
 metadata:
   title: How Azure Private Link works
-  description: TBD.
-  ms.date: 02/28/2021
+  description: Learn how Private Link fits into an Azure virtual network, how Azure Private Endpoint works, and how Azure Private Link Service works.
+  ms.date: 12/28/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial

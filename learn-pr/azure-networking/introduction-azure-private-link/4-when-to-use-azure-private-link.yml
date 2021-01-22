@@ -3,8 +3,8 @@ uid: learn.introduction-azure-private-link.4-when-to-use-azure-private-link
 title: When to use Azure Private Link
 metadata:
   title: When to use Azure Private Link
-  description: TBD.
-  ms.date: 02/28/2021
+  description: Learn how to evaluate if Azure Private Link is a suitable choice for you.
+  ms.date: 12/28/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
