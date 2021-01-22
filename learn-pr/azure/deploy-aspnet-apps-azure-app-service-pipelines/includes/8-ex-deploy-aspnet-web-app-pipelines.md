@@ -5,8 +5,8 @@ To complete your testing, you need to validate the last steps of the process of 
 Now, it's time to configure the Azure Pipeline you used to provision Azure resources to deploy the sample ASP.NET web app. To start, you'll add another stage named **DeployASPNETApp**, which will contain tasks to deploy the ASP.NET into the Azure App Service web app deployed during the **DeployAzureResources** stage.
 
 1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you're using in this lab, and then select **Edit**.
-2. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
-3. On the **azure-pipelines.yml** editor pane, add the following code to create the **DeployASPNETApp** stage and job elements:
+1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
+1. On the **azure-pipelines.yml** editor pane, add the following code to create the **DeployASPNETApp** stage and job elements:
 
    ```yaml
    - stage: DeployASPNETApp
@@ -16,30 +16,30 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
          vmImage: 'windows-latest'
        steps:
    ```
-4. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
-5. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **Download build artifacts**, and in the list of results, select the **Download build artifacts** task entry.
-6. On the **Download build artifacts** pane, in the **Artifact name**, enter **drop**, and then select **Add**.
+
+1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
+1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **Download build artifacts**, and in the list of results, select the **Download build artifacts** task entry.
+1. On the **Download build artifacts** pane, in the **Artifact name**, enter **drop**, and then select **Add**.
 
    :::image type="content" source="../media/8-download-build-artifacts-task.png" alt-text="The azure-pipelines.yml editor pane including the download build artifacts task with its parameters set.":::
 
-7. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
-8. On the **azure-pipelines.yml** editor pane, replace the last line `downloadPath: '$(System.ArtifactsDirectory)'` of the newly added task with `downloadPath: '$(System.DefaultWorkingDirectory)'`
+1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
+1. On the **azure-pipelines.yml** editor pane, replace the last line `downloadPath: '$(System.ArtifactsDirectory)'` of the newly added task with `downloadPath: '$(System.DefaultWorkingDirectory)'`
 
    > [!NOTE]
    > This is necessary to match the artifact location referenced by the next task you add to the pipeline.
 
-9. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
-10. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and in the list of results, select the **Azure App Service deploy** task entry.
-11. On the **Azure App Service deploy** pane, ensure that the **labAzureSubscription** appears in the **Azure subscription** dropdown list, in the **App Service name** dropdown list, enter **$(WEBAPPNAME)**, and select **Add**.
+1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
+1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and in the list of results, select the **Azure App Service deploy** task entry.
+1. On the **Azure App Service deploy** pane, ensure that the **labAzureSubscription** appears in the **Azure subscription** dropdown list, in the **App Service name** dropdown list, enter **$(WEBAPPNAME)**, and select **Add**.
 
    > [!NOTE]
    > This is one of the variables designating the name of the Azure App Service web app that's included in the **AzureResourcesVariableGroup** you created in the previous exercise of this module.
 
-12. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
-13. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
-14. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and, in the list of results, select the **Azure App Service Settings** task entry.
-15. On the **Azure App Service Settings** pane, in the **Azure subscription** dropdown list, select the **labAzureSubscription** entry. In the **App Service name** dropdown list, enter **$(WEBAPPNAME)**. In the **Resource group** dropdown list, enter **$(RESOURCEGROUPNAME)**. In the **Connection Strings** text box, enter the following text, and then select **Add**.
-
+1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
+1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
+1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and, in the list of results, select the **Azure App Service Settings** task entry.
+1. On the **Azure App Service Settings** pane, in the **Azure subscription** dropdown list, select the **labAzureSubscription** entry. In the **App Service name** dropdown list, enter **$(WEBAPPNAME)**. In the **Resource group** dropdown list, enter **$(RESOURCEGROUPNAME)**. In the **Connection Strings** text box, enter the following text, and then select **Add**.
 
    ```json
    [
@@ -54,10 +54,10 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 
    :::image type="content" source="../media/8-azure-app-service-settings-task.png" alt-text="The azure-pipelines.yml editor pane including the azure app service settings task with its parameters set.":::
 
-16. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
+1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
 
    > [!NOTE]
-   > At this point, the pipeline should have the following content:
+   > At this point, the pipeline should have the content which resembles the following listing:
 
    ```yaml
    # ASP.NET
@@ -112,7 +112,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 
        - task: AzureCLI@2
          inputs:
-           azureSubscription: 'Azure Pass - Sponsorship(c788d895-700e-4ce4-b89e-dbb85fac2154)'
+           azureSubscription: 'Azure Pass - Sponsorship(11111111-1111-1111-1111-111111111111)'
            scriptType: 'bash'
            scriptLocation: 'inlineScript'
            inlineScript: |
@@ -166,7 +166,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
              ]
    ```
 
-17. On the **azure-pipelines.yml** editor pane, select **Save**, and on the **Save** pane, select **Save**.
+1. On the **azure-pipelines.yml** editor pane, select **Save**, and on the **Save** pane, select **Save**.
 
 ## Run the Azure Pipeline to provision Azure resources
 
@@ -237,6 +237,7 @@ To conclude this exercise, you'll trigger integration and deployment by modifyin
 :::image type="content" source="../media/8-todos-azure-aspnet-app.png" alt-text="A web browser displaying the sample ASP.NET app deployed into an Azure web app following changes to the GitHub repo.":::
 
 ## Results
+
 In this exercise you used an Azure DevOps release pipeline to deploy artifacts into the Azure App Service web app.
 
 ## Clean up your environment

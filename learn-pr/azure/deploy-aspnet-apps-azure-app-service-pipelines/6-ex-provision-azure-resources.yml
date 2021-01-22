@@ -9,6 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/6-ex-provision-azure-resources.md)]

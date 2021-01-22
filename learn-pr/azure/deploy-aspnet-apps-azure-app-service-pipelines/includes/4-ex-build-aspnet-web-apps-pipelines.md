@@ -16,14 +16,16 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
    > [!NOTE]
    > The name of the **private** mode depends on the browser (such as *InPrivate* for Microsoft Edge, *Private* for Firefox, or *Incognito* for Chrome).
 
-1. On the **Create your account** page, specify a username, email address, and a password you want to associate with your new GitHub account, and select **Create account**.
+1. On the **Create your account** page, specify a username, email address, a password you want to associate with your new GitHub account, and any additional information neessary to complete this step, and select **Create account**.
 1. On the **Welcome to GitHub** page, select **Complete setup**.
 1. Open another web browser tab, sign in to your email account, locate the GitHub verification email, and follow instructions in the email to complete the email account verification process.
 1. Open another web browser tab and browse to [https://dev.azure.com](https://dev.azure.com).
 1. On the **Azure DevOps** page, select **Start free with GitHub**.
 1. On the **Authorize Microsoft-Corporation** page, select **Authorize Microsoft-corp**.
-1. If you're using a Microsoft account, on the **Link your GitHub credentials to your Microsoft account**, select **Next**, when prompted, enter the code included in another email delivered to your email account, select **Sign in**, and, to complete the setup, select **Got it**.
-1. When prompted to set up your Azure DevOps organization details, verify your name, email address, and location and select **Continue**.
+1. If you're using a Microsoft account, on **Link your GitHub credentials to your Microsoft account**, select **Next**. When prompted, enter the code included in another email delivered to your email account, select **Sign in**, and, to complete the setup, select **Got it**.
+
+   > ![NOTE] If prompted to set up your Azure DevOps organization details, verify your name, email address, and location, and then select **Continue**.
+
 1. On the **Get started with Azure DevOps** page, select **Continue**.
 1. On the **Create a project to get started** page, in the **Project name** text box, enter **Deploy ASP.NET web apps with Azure Pipelines**, leave the visibility set to **Private**, and select **+ Create project**.
 
@@ -31,17 +33,22 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 
 Next, you will create your own repository from a GitHub template repository, containing the sample ASP.NET app, into your GitHub account and then generate an Azure DevOps build pipeline using it as its source.
 
-1. Within the browser window displaying the Azure DevOps portal, open another tab and navigate to the [repository hosting the sample ASP.NET app](https://github.com/liveid239/todo2036) you'll be using throughout the exercises in this module.
+1. Within the browser window displaying the Azure DevOps portal, open another tab and navigate to the [repository hosting the sample ASP.NET app](https://github.com/liveid239/todo2036) that you'll be using throughout the exercises in this module.
 1. On the [repository hosting the sample ASP.NET app](https://github.com/liveid239/todo2036) page, follow instructions describing [Creating a repository from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 1. Switch to the browser tab displaying the **Deploy ASP.NET web apps with Azure Pipelines** Azure DevOps project, in the vertical menu bar along the left edge of the project page, select the **Pipelines** icon and, on the **Create your first Pipeline** pane, select **Create Pipeline**.
 1. On the **Where is your code?** pane, select **GitHub YAML**.
 
    :::image type="content" source="../media/4-where-is-your-code-github-yaml.png" alt-text="The New pipeline pane displaying the option to use the GitHub repository as the source for a YAML pipeline.":::
 
-1. On the **Select a repository** pane, select the newly created repository. You will be automatically redirected to [Github.com](https://github.com/?azureportal=true).
-1. On the **Approve & Install Azure Pipelines** pane, accept the **Only select repositories** option, then select the **Approve & Install** button. When prompted to authenticate, enter the password of your GitHub user account, then, when prompted again, authenticate with the Azure DevOps user account.
-1. If prompted, on the **Azure Pipelines by Microsoft would like permission to** page, select **Authorize Azure Pipelines**.
-1. Back in the Azure DevOps portal, on the **Select a repository** pane, select the newly created repository.
+   > [!NOTE]
+   > If prompted, select the **Authorize Azure Pipelines** button.
+
+1. On the **Select a repository** pane, select the newly created repository.
+1. On the **Approve & Install Azure Pipelines** pane, accept the **Only select repositories** option, and then select the **Approve & install** button. 
+
+   > [!NOTE]
+   > If prompted to authenticate, enter the username and password for your GitHub and Azure DevOps user accounts.
+
 1. In the Azure DevOps portal, on the **Configure your pipeline** pane, select **ASP.NET**.
 
 ## Review the autogenerated ASP.NET build pipeline
@@ -81,8 +88,8 @@ Next, you'll customize the autogenerated pipeline to provide the additional func
    > [!NOTE]
    > Next, you will add a step that will publish artifacts generated by the build.
 
-3. On the **Review your pipeline YAML** pane, select **Show assistant**.
-4. Place the mouse pointer after the last task in the autogenerated pipeline, in the **Search tasks** text box, enter **Publish build artifacts**, in the list of results, select the **Publish build artifacts**, and on the **Publish build artifacts** pane, select **Add**.
+1. On the **Review your pipeline YAML** pane, select **Show assistant**.
+1. Position the cursor after the last task in the autogenerated pipeline. In the **Search tasks** text box, enter **Publish build artifacts**. From the list of results, select **Publish build artifacts** and then, on the **Publish build artifacts** pane, select **Add**.
 
    > [!NOTE]
    > At this point, the pipeline should have the following content.
@@ -127,12 +134,13 @@ Next, you'll customize the autogenerated pipeline to provide the additional func
 ## Run the autogenerated ASP.NET build pipeline
 
 1. On the **Review your pipeline YAML** pane, in the toolbar, select **Save & run** and, on the **Save and run** pane, select **Save and run**.
-1. On the pipeline run pane, in the **Jobs** section, select **Job** and track the execution of individual tasks of the newly created pipeline.
+1. On the pipeline run pane, in the **Jobs** section, select **Job**, and then track the execution of the individual tasks in the newly created pipeline.
 1. Verify that all tasks completed successfully.
 
 :::image type="content" source="../media/4-completed-build-job.png" alt-text="The Azure DevOps Pipeline job execution logs displaying a successfully completed job.":::
 
 ## Results
+
 In this exercise, you set up prerequisites and built artifacts necessary to deploy a sample ASP.NET web app to an Azure App Service web app.
 
 ## Keep your web browser windows open if continuing the module exercises
