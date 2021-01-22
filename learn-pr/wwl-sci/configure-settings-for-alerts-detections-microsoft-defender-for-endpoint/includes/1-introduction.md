@@ -6,3 +6,11 @@ Your threat hunting team has provided you a CSV file with indicators they would 
 
 Your manager asks for alert notifications for a specific device group and with the severity of high.  In the Settings page, General area, you select Alert notifications.  You then create an alert notification rule to meet the manager’s request.
 
+After completing this module, you will be able to:
+
+- Configure alert settings in Microsoft Defender for Endpoint
+- Manage indicators in Microsoft Defender for Endpoint
+
+## Prerequisites
+
+Intermediate understanding of Windows 10.

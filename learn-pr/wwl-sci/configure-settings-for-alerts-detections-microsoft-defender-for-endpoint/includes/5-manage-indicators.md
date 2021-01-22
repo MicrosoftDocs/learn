@@ -56,7 +56,7 @@ There are two ways you can create indicators for files:
 
 ### Prerequisites
 
-It's important to understand the following prerequisites prior to creating indicators for files:
+Before you create indicators for files you should understand the following prerequisites:
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see Manage cloud-based protection.
 
@@ -73,7 +73,7 @@ It's important to understand the following prerequisites prior to creating indic
 > Trusted signed files will be treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
 > Typically, file blocks are enforced within a couple of minutes but can take upwards of 30 minutes.
 
-### Create an indicator for files from the settings page
+### Create an indicator for files
 
 1. In the navigation pane, select **Settings > Indicators**.
 
@@ -105,7 +105,7 @@ By creating indicators for IPs and URLs or domains, you can now allow or block I
 
 ### Prerequisites
 
-It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
+You should understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
 
 - URL/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see Enable network protection.
 
@@ -129,7 +129,7 @@ Only external IPs can be added to the indicator list. Indicators cannot be creat
 
 There may be up to 2 hours of latency (usually less) between the time the action is taken and the URL and IP being blocked.
 
-### Create an indicator for IPs, URLs, or domains from the settings page
+### Create an indicator for IPs, URLs, or domains
 
 1. In the navigation pane, select **Settings > Indicators**.
 
@@ -157,7 +157,7 @@ You can create indicators for certificates. Some common use cases include:
 
 ### Prerequisites
 
-It's important to understand the following requirements prior to creating indicators for certificates:
+You should understand the following requirements prior to creating indicators for certificates:
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see Manage cloud-based protection.
 
@@ -173,7 +173,7 @@ A valid leaf certificate is a signing certificate with a valid certification pat
 
 It can take up to 3 hours to create and remove a certificate IoC.
 
-### Create an indicator for certificates from the settings page:
+### Create an indicator for certificates:
 
 1. In the navigation pane, select **Settings > Indicators**.
 

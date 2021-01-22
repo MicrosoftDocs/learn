@@ -21,7 +21,7 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 Turning on this feature allows you to create indicators for IP addresses, domains, or URLs, which determine whether they will be allowed or blocked based on your custom indicator list.
 
-### Share endpoint alerts with Microsoft Compliance Center
+### Share endpoint alerts with Microsoft compliance center
 
 Forwards endpoint security alerts and their triage status to Microsoft Compliance Center, allowing you to enhance insider risk management policies with alerts and remediate internal risks before they cause harm. Forwarded data is processed and stored in the same location as your Office 365 data.  After configuring the Security policy violation indicators in the insider risk management settings, Defender for Endpoint alerts will be shared with insider risk management for applicable users.
 

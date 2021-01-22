@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which file type can you use to upload Indicators?"
+  - content: "Which file type can be used to upload Indicators?"
     choices:
     - content: "JSON"
       isCorrect: false
@@ -27,25 +27,25 @@ quiz:
     - content: "CSV"
       isCorrect: true
       explanation: "Correct.  CSV file format is supported."
-  - content: "Which type is not an accepted indicator type?"
+  - content: "Which type is an accepted indicator type?"
     choices:
     - content: "Certificates"
-      isCorrect: false
-      explanation: "Incorrect.  Certificates is an indicator type."
-    - content: "Email subject line"
       isCorrect: true
-      explanation: "Correct.  Email subject line is not an indicator type."
-    - content: "Domains"
+      explanation: "correct.  Certificates are an indicator type."
+    - content: "Email subject line"
       isCorrect: false
-      explanation: "Incorrect.  Domains is an indicator type."
-  - content: "Which filter is not included as part of an Alert notification rule?"
+      explanation: "InCorrect.  Email subject line is not an indicator type."
+    - content: "Code data"
+      isCorrect: false
+      explanation: "InCorrect.  Code data is not an indicator type."
+  - content: "Which filter is included as part of an Alert notification rule?"
     choices:
     - content: "Alert Severity"
-      isCorrect: false
-      explanation: "Incorrect. Alert Severity is a filter option for the rule."
-    - content: "Account"
       isCorrect: true
-      explanation: "Correct. User account is not a filter option for the rule."
-    - content: "Device"
+      explanation: "Correct. Alert Severity is a filter option for the rule."
+    - content: "Account"
       isCorrect: false
-      explanation: "Incorrect. Device is a filter option for the rule."
+      explanation: "Incorrect. User account is not a filter option for the rule."
+    - content: "Subject IDs"
+      isCorrect: false
+      explanation: "Incorrect. Subject IDs are not a filter option for the rule."
