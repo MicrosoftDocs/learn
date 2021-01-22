@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-anomaly-detector.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/14/2021
+  author: gerryo
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+quiz:
+  questions:
+  - content: "What is meant by seasonable data?"
+    choices:
+    - content: "Data based on the time or year it was recorded."
+      isCorrect: false
+      explanation: "Incorrect. Seasonal does not refer to the seasons of the year, in this case."
+    - content: "How far apart the values are by default for each recorded period."
+      isCorrect: false
+      explanation: "Incorrect. Seasonal data is not concerned with how far apart values are."
+    - content: "Data occurring at regular intervals."
+      isCorrect: true
+      explanation: "Correct. Seasonal times series is considered to be a pattern in your data, that occurs at regular intervals. Examples would be hourly, daily, or monthly patterns."
+  - content: "What is the purpose of specifying granularity in your JSON data object?"
+    choices:
+    - content: "It is used to indicate the recording pattern of the data."
+      isCorrect: true
+      explanation: "Correct. Granularity would be specified as hourly, daily, weekly, etc."
+    - content: "It tells the service how to chunk up the results that are returned for review, independent of the time series data pattern."
+      isCorrect: false
+      explanation: "Incorrect. Granularity is not used to modify the results returned by the service."
+    - content: "It is used to indicate the range of acceptable values."
+      isCorrect: false
+      explanation: "Incorrect. Boundaries are used to set acceptable values that impact whether a point is an anomaly."
+  - content: "How does the Anomaly Detector API evaluate real-time data for anomalies?"
+    choices:
+    - content: "It collects all the values in a window of time and evaluates them all at once.."
+      isCorrect: false
+      explanation: "Incorrect. This is an example of batch processing, not real-time."
+    - content: "It evaluates the current value against the previous value."
+      isCorrect: true
+      explanation: "Correct. It evaluates previously seen data points to determine if your latest one is an anomaly."
+    - content: "It uses interpolation based on the current value and the previous value to predict what the expected value should be."
+      isCorrect: false
+      explanation: "Incorrect. It does not use interpolation to evaluate an expected value."
