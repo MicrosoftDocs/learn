@@ -14,5 +14,5 @@ You can integrate threat intelligence (TI) into Azure Sentinel through the follo
 
 - Perform threat hunting with your imported threat intelligence.
 
-![Threat Intelligence uses in Azure Sentinel](../media/lp5-se-m05-01.png)
+![Threat Intelligence uses in Azure Sentinel](../media/threat-intelligence-uses.png)
 
