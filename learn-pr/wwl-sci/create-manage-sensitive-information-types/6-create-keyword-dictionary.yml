@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-sensitive-information-types.create-keyword-dictionary
+title: Create keyword dictionary
+metadata:
+  title: Create keyword dictionary
+  description: "Create keyword dictionary"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-create-keyword-dictionary.md)]

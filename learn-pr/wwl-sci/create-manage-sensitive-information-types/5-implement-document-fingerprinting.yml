@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-sensitive-information-types.implement-document-fingerprinting
+title: Implement document fingerprinting
+metadata:
+  title: Implement document fingerprinting
+  description: "Implement document fingerprinting"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-implement-document-fingerprinting.md)]
