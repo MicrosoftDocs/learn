@@ -2,7 +2,7 @@ There are different types of security threats. Some aim to steal data, some aim 
 
 ## Data breach
 
-A data breach is when data is stolen, this includes personal data. Personal data means any information related to an individual that can be used to identify them directly or indirectly. A personal data breach is *'a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed.’*
+A data breach is when data is stolen, this includes personal data. Personal data means any information related to an individual that can be used to identify them directly or indirectly. 
 
 Common security threats that can result in a breach of personal data include phishing, spear phishing, tech support scams, SQL injection, malware designed to steal passwords or bank details, etc.
 
