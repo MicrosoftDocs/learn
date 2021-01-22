@@ -30,12 +30,12 @@ roles:
 products:
 - azure
 units:
-- learn.go-to-market-commercial-marketplace.1-introduction
-- learn.go-to-market-commercial-marketplace.2-what-is-saas-offer
-- learn.go-to-market-commercial-marketplace.3-get-ready-create-saas-offer
-- learn.go-to-market-commercial-marketplace.4-saas-offer-technical-configuration
-- learn.go-to-market-commercial-marketplace.5-publish-saas-offer-partner-center
-- learn.go-to-market-commercial-marketplace.6-knowledge-check
-- learn.go-to-market-commercial-marketplace.7-summary
+- learn.create-saas-offer-commercial-marketplace.1-introduction
+- learn.create-saas-offer-commercial-marketplace.2-what-is-saas-offer
+- learn.create-saas-offer-commercial-marketplace.3-get-ready-create-saas-offer
+- learn.create-saas-offer-commercial-marketplace.4-saas-offer-technical-configuration
+- learn.create-saas-offer-commercial-marketplace.5-publish-saas-offer-partner-center
+- learn.create-saas-offer-commercial-marketplace.6-knowledge-check
+- learn.create-saas-offer-commercial-marketplace.7-summary
 badge:
   uid: learn.create-saas-offer-commercial-marketplace.badge
