@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad
+metadata:
+  title: Explore the services and identity types of Azure AD
+  description: "Explore the services and identity types of Azure AD"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Explore the services and identity types of Azure AD
+summary: Learn about Azure Active Directory, what it is and the types of identities it supports.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe what Azure AD does.
+  - Describe the types identities Azure AD supports.
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/explore-basic-services-identity-types-azure-active-directory.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure-active-directory
+units:
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.introduction
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-available-editions
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-identity-types
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-external-identities
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-concept-of-hybrid-identities
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.summary-resources
+badge:
+  uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.badge
