@@ -1,4 +1,4 @@
-In this unit, we'll look at our existing application. It has many components and is designed to implement various features. Here’s a summary of the capabilities: 
+In this unit, we'll look at the application that you'll create in this module. It has many components and is designed to implement various features. Here’s a summary of the capabilities: 
 
 - The application has a standardized way to request text message temperature alerts for a location if the temperature goes outside a specified range.
 - For each location, the application can retrieve the low and high temperatures for an upcoming daily weather forecast.
@@ -11,7 +11,7 @@ The following image demonstrates how the application works:
 
 ## Receive text messages
 
-Some cell phone users might have access to only a basic phone. To support the most users around the world, the application interface uses text messaging. Twilio is a third-party service that can create programmable phone numbers for sending and receiving text messages. Every time a text message is sent to our application's phone number, custom code in Azure is triggered, with the help of the Azure Functions service. The code tracks all the locations and temperature ranges that farmers want to know about. The code keeps the information in a table in Azure Storage.
+Some cell phone users might have access to only a basic phone. To support the most users around the world, the application interface uses text messaging. Twilio is a third-party service that can create programmable phone numbers for sending and receiving text messages. Every time a text message is sent to your application's phone number, custom code in Azure is triggered, with the help of the Azure Functions service. The code tracks all the locations and temperature ranges that farmers want to know about. The code keeps the information in a table in Azure Storage.
 
 The code sets up text message alerts in the following format:
 
@@ -31,7 +31,7 @@ Azure Maps has an API called [Weather - Get Daily Forecast](https://docs.microso
 
 ## Check the forecast every 12 hours
 
-Azure Functions is an event-based service that runs code when it's triggered. A function in Azure Functions can be triggered by various actions, including web requests, timers, and items that are added to queues or databases. Our application can use a time trigger to check the weather every 12 hours.
+Azure Functions is an event-based service that runs code when it's triggered. A function in Azure Functions can be triggered by various actions, including web requests, timers, and items that are added to queues or databases. Your application can use a time trigger to check the weather every 12 hours.
 
 When you send a text message to Twilio to subscribe to temperature notifications, Twilio can make a web request to another function that uses an HTTP trigger.
 

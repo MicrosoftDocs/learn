@@ -4,7 +4,7 @@ In this unit, you'll create and deploy an existing application to the function a
 
 The function app requires a storage account for storing the application code and other information. The app also requires a table called *alerts* inside the storage account to track the locations, phone numbers, and temperature ranges to create alerts for.
 
-An Azure storage account name must be globally unique among all storage account names in Azure. An Azure storage accounts can be accessed over the web. The storage account name forms part of the URL. To make a unique name, include information like the date or your name. This name must contain between 3 and 24 characters and can contain only lowercase letters and numbers.
+An Azure storage account name must be globally unique among all storage account names in Azure. An Azure storage account can be accessed over the web. The storage account name forms part of the URL. To make a unique name, include information like the date or your name. This name must contain between 3 and 24 characters and can contain only lowercase letters and numbers.
 
 1. Create an environment variable for the name of the storage account. The variable will be used in other command in this module.
 
@@ -98,7 +98,7 @@ The function app's source code lives in a repository on GitHub.
     git clone https://github.com/MicrosoftDocs/mslearn-send-crop-weather-alerts.git
     ```
 
-    This code contains a timer trigger that runs at 12-hour intervals. This is perfect for a final app, but for testing purposes, 12 hours is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox period will have ended and the app will be deleted.
+    This code contains a timer trigger that runs at 12-hour intervals. The interval is perfect for a final app, but for testing purposes, 12 hours is too long for testing the application in the module sandbox.
 
     To view results faster, change this trigger to run every 10 minutes.
 
@@ -139,7 +139,7 @@ Now you're ready to deploy your application to the function app.
 
 ## Get the HTTP trigger endpoint
 
-One of the functions in the functinon app is configured to respond to HTTP requests. Twilio will make HTTP requests in the application.
+One of the functions in the function app is configured to respond to HTTP requests. Twilio will make HTTP requests in the application.
 
 1. To get the full endpoint URL, run this command:
 

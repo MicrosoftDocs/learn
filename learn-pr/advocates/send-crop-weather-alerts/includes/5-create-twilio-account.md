@@ -20,7 +20,7 @@ To send and receive text messages programmatically, you'll need to get a Twilio 
 
 1. Respond to introductory questions until you get to the dashboard. These questions are used to create a first Twilio project for you to use.
 
-   Any settings that you choose won’t impact how we’re going to use Twilio in this module.
+   Any settings that you choose won’t affect how we'll use Twilio in this module.
 
 1. On your account dashboard, select the **Get a Trial Number** button. Twilio assigns you a phone number to use to send messages.
 
