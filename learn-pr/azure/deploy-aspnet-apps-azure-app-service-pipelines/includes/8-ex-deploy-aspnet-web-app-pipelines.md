@@ -203,7 +203,8 @@ Switch to the web browser tab displaying the Azure portal.
 
 To validate the DevOps CI/CD functionality, you'll reenable continuous integration.
 
-1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you're using in this lab, and then select **Edit**.
+1. Within the browser tab displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you're using in this exercise, and then select **Edit**.
+
 1. On the **azure-pipelines.yml** editor pane, replace the `trigger: none` entry with the following content:
 
    ```yaml
