@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/18/2021
+  ms.date: 01/21/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A team that collaborates on project through Microsoft Teams reports that they're unable to use team features that they've been using last week. As the admin, you want to investigate whether a user might have changed settings for the team in Microsoft Teams. How would you do this?"
+  - content: "A team that collaborates on a project through Microsoft Teams reports that they're unable to use features that they were using last week. The admin will investigate whether a user might have changed settings in Microsoft Teams. What capability can the admin use?"
     choices:
     - content: "Turn on Microsoft Teams settings search and ensure you've been assigned the appropriate role to perform the search."
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "Block Microsoft Teams from being used and ensure that you've been assigned the appropriate role to perform the search."
       isCorrect: false
       explanation: "Doesn't address the problem. You need to turn on audit log search and ensure that you've been assigned the appropriate role to perform the search."
-  - content: "As the admin, you've been asked to help the audit team who want to conduct compliance investigations across emails. They need access to crucial events, such as when mail items were accessed, when mail items were replied to and forwarded. How will you help them?"
+  - content: "The audit team needs to conduct compliance investigations across emails. They need access to crucial events, such as when mail items were accessed, when mail items were replied to and forwarded. What capability can the team use?"
     choices:
     - content: "Use Advanced Auditing so that you access and investigate those events."
       isCorrect: true
