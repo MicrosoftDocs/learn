@@ -1,6 +1,6 @@
 When accessing your Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com/?azure-portal=true)) for the first time, a wizard will guide you through some initial steps. You must be a global administrator or security administrator for the tenant. On the Set up preferences page, you can set the:
 
-**Data storage location** - It's important to set this up correctly. Determine where you want to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation.
+**Data storage location** - Determine where you want to be primarily hosted: US, EU, or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation.
 
 **Data retention** - The default is six months.
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -27,17 +27,17 @@ quiz:
     - content: "Three months"
       isCorrect: false
       explanation: "Incorrect.  The default is six months."
-  - content: "Which is not a deployment option for Windows 10?"
+  - content: "Which is a deployment option for Windows 10?"
     choices:
     - content: "Group policy"
-      isCorrect: false
-      explanation: "Incorrect. Group policy is a valid deployment option."
-    - content: "Microsoft Store"
       isCorrect: true
-      explanation: "Correct.  There is not an option in the Microsoft store."
-    - content: "Local script"
+      explanation: "Correct. Group policy is a valid deployment option."
+    - content: "Microsoft Store"
       isCorrect: false
-      explanation: "Incorrect. A local script is a valid deployment option."
+      explanation: "Incorrect.  There is not an option in the Microsoft store."
+    - content: "General install package"
+      isCorrect: false
+      explanation: "Incorrect. This is not a valid deployment option."
   - content: "Which security permission allows the configuration of storage settings?"
     choices:
     - content: "Manage security settings in Security Center"
