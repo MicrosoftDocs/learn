@@ -2,8 +2,8 @@
 uid: learn.quantum.module-name.3-create-quantum-workspace
 title: Create your first quantum workspace
 metadata:
-  title: Create your first quantum workspace
-  description: Learn to create a quantum workspace in Azure Quantum.
+  title: Create your first Quantum workspace
+  description: Learn to create an Azure Quantum workspace.
   ms.date: 01/01/2021
   author: KittyYeungQ
   ms.author: kitty
