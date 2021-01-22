@@ -30,18 +30,18 @@ quiz:
     choices:
     - content: "origin"
       isCorrect: false
-      explanation: "That's not quite right. Git uses the name _origin_ to refer to the original repository, but it's not the reference itself."
+      explanation: "That's not quite right. Git uses the name \"origin\" to refer to the original repository, but it's not the reference itself."
     - content: "repo"
       isCorrect: false
-      explanation: "Incorrect. The term 'repo' is just an abbreviation for _repository_."
+      explanation: "Incorrect. The term \"repo\" is just an abbreviation for _repository_."
     - content: "remote"
       isCorrect: true
-      explanation: "Correct! When you clone (copy) a repository, Git creates a reference to the original repo called a _remote_. Git uses the name _origin_ to refer to the remote repo."
+      explanation: "Correct! When you clone (copy) a repository, Git creates a reference to the original repo called a \"remote\". Git uses the name \"origin\" to refer to the remote repo."
   - content: 'What Git command is used to make a copy of an existing repository?'
     choices:
     - content: "`git clone <repo-name>`"
       isCorrect: false
-      explanation: "That's not quite right. The `git clone` command takes a different parameter as input. Review the description in the [second unit](../1-collaborate-using-pull.md?azure-portal=true)."
+      explanation: "That's not quite right. The `git clone` command takes a different parameter as input. Review the description in the [second unit](1-collaborate-using-pull?azure-portal=true)."
     - content: "`git clone <repo-path>`"
       isCorrect: true
       explanation: "Correct! The `git clone` command takes a URL or path to an existing repository as a parameter."
@@ -61,16 +61,19 @@ quiz:
       explanation: "Incorrect. You can learn more about how to use Git with the `git help` command."
   - content: 'Suppose you have a project with 10 files in your local working branch of the repo. You recently updated three of the files: toc.yml, intro.txt, and exercise.json. Now you want to create a pull request for only the changes to the JSON file. What set of Git commands should you use to create the pull request for only these changes?'
     choices:
-    - content: "`git add .` <br> `git commit -m \"my changes for the exercise\"` <br> `git push origin <working-branch>` <br>"
+    - content: "`git add .`
+    `git commit -m \"my changes for the exercise\"`
+    `git push origin <working-branch>`
+    "
       isCorrect: false
       explanation: "That's not quite right. Check the syntax for the `git add` command. The parameter \".\" causes all changes that aren't yet committed (or stashed) to be included in the pull request. How can you modify the syntax so only the file that you want to include is added?"
-    - content: "`git add exercise.json` <br> `git commit -c 'my changes for the exercise'` <br> `git push origin <working-branch>` <br>"
+    - content: "`git add exercise.json` <br> `git commit -c 'my changes for the exercise'` <br> `git push origin <working-branch>` <br><br>"
       isCorrect: false
       explanation: "Incorrect. Check the syntax for the `git commit` command. The correct flag is \"-m\" and the comment text needs to be enclosed in double quotes."
-    - content: "`git add exercise.json` <br> `git commit -m \"my changes for the exercise\"` <br> `git push origin <working-branch>` <br>"
+    - content: "`git add exercise.json` <br> `git commit -m \"my changes for the exercise\"` <br> `git push origin <working-branch>` <br><br>"
       isCorrect: true
-      explanation: "Correct! To push all your current changes, you specify \".\" after `git add`. To push changes for only one file, or a set of files, you enter the specific file names after `git add`."
-    - content: "`git add exercise` <br> `git commit -m \"my changes for the exercise\"` <br> `git push remote <working-branch>` <br>"
+      explanation: "Correct! To push all your current changes, you specify \".\" after `git add`. To push changes for only one file, or a set of files, you enter the specific file name(s)."
+    - content: "`git add exercise` <br> `git commit -m \"my changes for the exercise\"` <br> `git push remote <working-branch>` <br><br>"
       isCorrect: false
       explanation: "Incorrect. Check the syntax for the `git add` and `git push` commands. For the `git add` command, be sure to specify the full file name with the extension type (`exercise.json`). For the `git push` command, supply the name of the remote (`origin`) rather than the reference (`remote`)."  
   
