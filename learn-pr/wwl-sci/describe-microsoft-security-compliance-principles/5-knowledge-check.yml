@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "Save the documents to your My Library."
       isCorrect: true
-      explanation: "This is correct. By saving the documents to your My Library you will be prompted to say when you want to be notified of updates."
+      explanation: "That's correct. By saving the documents to your My Library you will be prompted to say when you want to be notified of updates."
     - content: "Print each document so you can easily refer to them."
       isCorrect: false
-      explanation: "This is incorrect. Printing the documents will not inform you of any changes to the documents."
+      explanation: "That's incorrect. Printing the documents will not inform you of any changes to the documents."
     - content: "Download each document."
       isCorrect: false
-      explanation: "This is incorrect. Downloading the documents will not keep you notified of any updates to the documents."
+      explanation: "That's incorrect. Downloading the documents will not keep you notified of any updates to the documents."
   - content: "A compliance admin is looking for regulatory information relevant to a specific region, which one link will provide the needed information?"
     choices:
     - content: "Microsoft Privacy Principles."
       isCorrect: false
-      explanation: "This is incorrect. Microsoft’s Privacy Principles set out the guiding principles for security decisions but do not provide compliance and regulatory documentation."
+      explanation: "That's incorrect. Microsoft’s Privacy Principles set out the guiding principles for security decisions but do not provide compliance and regulatory documentation."
     - content: "Service Trust Portal."
       isCorrect: true
-      explanation: "This is correct. From the Service Trust Portal there are links to different sites containing compliance and regulatory documentation."
+      explanation: "That's correct. From the Service Trust Portal there are links to different sites containing compliance and regulatory documentation."
     - content: "Microsoft Compliance Manager."
       isCorrect: false
-      explanation: "This is incorrect. Microsoft Compliance Manager measures your progress in reducing risk."
+      explanation: "That's incorrect. Microsoft Compliance Manager measures your progress in reducing risk."
