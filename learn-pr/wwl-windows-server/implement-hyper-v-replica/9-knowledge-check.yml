@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hyper-v-replica.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You have primary and replica Hyper-V servers which are both members of the same AD DS forest. To allow replication between the Hyper-V servers, which Hyper-V Replica authentication can you use?"
+    choices:
+    - content: "Kerberos authentication only"
+      isCorrect: false
+      explanation: "That's incorrect. Kerberos is a valid authentication method when Hyper-V primary and replica serves are members of the same AD DS forest; however, it isn't the only authentication type that can be used."
+    - content: "Certificate-based authentication only"
+      isCorrect: false
+      explanation: "That's incorrect. Certificate is a valid authentication when Hyper-V primary and replica serves are members of the same AD DS forest; however, it isn't the only authentication type that can be used."
+    - content: "Either Kerberos or Certificate-based authentication"
+      isCorrect: true
+      explanation: "That's correct. Either Kerberos or Certificate-based authentication can be used when Hyper-V primary and replica serves are members of the same AD DS forest."
+  - content: "Performing extended replication involves replicating a VM from which Hyper-V VM?"
+    choices:
+    - content: "The primary VM"
+      isCorrect: false
+      explanation: "That's incorrect. Extended replication is only possible from the replica VM."
+    - content: "The replica VM"
+      isCorrect: true
+      explanation: "That's correct. Extended replication is only possible from the replica VM."
+    - content: "Either primary or replica VM"
+      isCorrect: false
+      explanation: "That's incorrect. Extended replication is only possible from the replica VM."
+  - content: "During replication between two on-premises locations, customer data takes which route to the secondary site?"
+    choices:
+    - content: "From the primary site through Azure to the secondary site"
+      isCorrect: false
+      explanation: "That's incorrect. During replication between two on-premises locations, customer data is never transferred via Azure."
+    - content: "The shortest route, even if that involves transferring via Azure"
+      isCorrect: false
+      explanation: "That's incorrect. During replication between two on-premises locations, customer data is never transferred via Azure."
+    - content: "From the primary site directly to the secondary site over LAN/WAN or VPN"
+      isCorrect: true
+      explanation: "That's correct. During replication between two on-premises locations, customer data is transferred from the primary site directly to the secondary site over LAN/WAN or VPN, and never via Azure."

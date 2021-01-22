@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hyper-v-replica.implement-site-recovery-from-premises-site-to-azure
+title: Implement Site Recovery from on-premises site to Azure
+metadata:
+  title: Implement Site Recovery from on-premises site to Azure
+  description: "Implement Site Recovery from on-premises site to Azure"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-implement-site-recovery-from-premises-site-to-azure.md)]
