@@ -1,51 +1,28 @@
-(from https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal )
+Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources in:
 
-## Introduction
+- External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
 
-In Azure Active Directory (Azure AD), if one of your users needs permission to manage Azure AD resources, you must assign them to a role that provides the permissions they need.
+- Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization.
 
-(The following content is from https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
+## Who uses Azure AD?
 
-If you are new to Azure, you may find it a little challenging to understand all the different roles in Azure. This section helps explain the following roles and provides additional information on Azure roles and Azure Active Directory (Azure AD) roles:
+Azure AD is intended for:
+
+- **IT admins.** As an IT admin, you can use Azure AD to control access to your apps and your app resources, based on your business requirements. For example, you can use Azure AD to require multi-factor authentication when accessing important organizational resources. Additionally, you can use Azure AD to automate user provisioning between your existing Windows Server AD and your cloud apps, including Microsoft 365. Finally, Azure AD gives you powerful tools to automatically help protect user identities and credentials and to meet your access governance requirements.
+
+- **App developers.** As an app developer, you can use Azure AD as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's pre-existing credentials. Azure AD also provides APIs that can help you build personalized app experiences using existing organizational data.
+
+- **Microsoft 365, Office 365, Azure, or Dynamics CRM Online subscribers.** As a subscriber, you're already using Azure AD. Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant. You can immediately start to manage access to your integrated cloud apps.
+
+In Azure AD, if one of your users needs permission to manage Azure AD resources, you must assign them to a role that provides the permissions they need.
+
+If you are new to Azure, you may find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Azure AD roles:
 
 - Classic subscription administrator roles
 
 - Azure roles
 
-- Azure Active Directory (Azure AD) roles
-
-## How the roles are related
-Now is the time to publish
-
-
-To better understand roles in Azure, it helps to know some of the history. When Azure was initially released, access to resources was managed with just three administrator roles: Account Administrator, Service Administrator, and Co-Administrator. Later, Azure role-based access control (Azure RBAC) was added. Azure RBAC is a newer authorization system that provides fine-grained access management to Azure resources. Azure RBAC includes many built-in roles, can be assigned at different scopes, and allows you to create your own custom roles. To manage resources in Azure AD, such as users, groups, and domains, there are several Azure AD roles.
-
-The following diagram is a high-level view of how the classic subscription administrator roles, Azure roles, and Azure AD roles are related.
-
-![The different roles in Azure and how they relate to each other](../media/rbac-admin-roles.png)
-
-## Azure roles
-
-Azure RBAC is an authorization system built on Azure Resource Manager that provides fine-grained access management to Azure resources, such as compute and storage. Azure RBAC includes over 70 built-in roles. There are four fundamental Azure roles. The first three apply to all resource types:
-
-| **Azure role**| **Permissions**| **Notes**|
-| :--- | :--- | :--- |
-| Owner| Full access to all resources - Delegate access to others| The Service Administrator and Co-Administrators are assigned the Owner role at the subscription scope - Applies to all resource types.|
-| Contributor| Create and manage all of types of Azure resources - Create a new tenant in Azure Active Directory - Cannot grant access to others| Applies to all resource types.|
-| Reader| View Azure resources| Applies to all resource types.|
-| User Access Administrator| Manage user access to Azure resources||
-
-The rest of the built-in roles allow management of specific Azure resources. For example, the Virtual Machine Contributor role allows the user to create and manage virtual machines. For a list of all the built-in roles, see [Azure built-in roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).
-
-Only the Azure portal and the Azure Resource Manager APIs support Azure RBAC. Users, groups, and applications that are assigned Azure roles cannot use the Azure classic deployment model APIs.
-
-In the Azure portal, role assignments using Azure RBAC appear on the **Access control (IAM)** blade. This blade can be found throughout the portal, such as management groups, subscriptions, resource groups, and various resources.
-
-![Graphical user interface of the Access control (IAM) blade in the Azure portal](../media/access-control-role-assignments.png)
-
-When you click the **Roles** tab, you will see the list of built-in and custom roles.
-
-![Some of the built-in roles on the Access control (IAM) blade in the Azure portal](../media/roles-list.png)
+- Azure AD roles
 
 ## Azure AD roles
 
@@ -53,11 +30,7 @@ Azure AD roles are used to manage Azure AD resources in a directory such as crea
 
 | **Azure AD role**| **Permissions**| **Notes**|
 | :--- | :--- | :--- |
-| Global Administrator| Manage access to all administrative features in Azure Active Directory, as well as services that federate to Azure Active Directory
-
-Assign administrator roles to others
-
-Reset the password for any user and all other administrators| The person who signs up for the Azure Active Directory tenant becomes a Global Administrator.|
+| Global Administrator| <ul><li>Manage access to all administrative features in Azure Active Directory, as well as services that federate to Azure Active Directory</li><li>Assign administrator roles to others</li><li>Reset the password for any user and all other administrators</li></ul>| The person who signs up for the Azure Active Directory tenant becomes a Global Administrator.|
 | User Administrator| Create and manage all aspects of users and groups
 
 Manage support tickets
@@ -79,14 +52,14 @@ In the Azure portal, you can see the list of Azure AD roles on the **Roles and a
 
 ## Differences between Azure roles and Azure AD roles
 
-At a high level, Azure roles control permissions to manage Azure resources, while Azure AD roles control permissions to manage Azure Active Directory resources. The following table compares some of the differences.
+At a high level, Azure roles control permissions to manage Azure resources, while Azure AD roles control permissions to manage Azure AD resources. The following table compares some of the differences.
 
 | **Azure roles**| **Azure AD roles**|
 | :--- | :--- |
-| Manage access to Azure resources| Manage access to Azure Active Directory resources|
+| Manage access to Azure resources| Manage access to Azure AD resources|
 | Supports custom roles| Supports custom roles|
 | Scope can be specified at multiple levels (management group, subscription, resource group, resource)| Scope is at the tenant level|
-| Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API| Role information can be accessed in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, AzureAD PowerShell|
+| Role information can be accessed in Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API| Role information can be accessed in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell|
 
 ### Do Azure roles and Azure AD roles overlap?
 
@@ -101,13 +74,13 @@ Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Admin
 A common way to assign Azure AD roles to a user is on the Assigned roles page for a user. You can also configure the user eligibility to be elevated just-in-time into a role using **Privileged Identity Management (PIM)**.
 
 > [!NOTE]
-> NoteIf you have an Azure AD Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
+> Note If you have an Azure AD Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
 ![Azure AD roles managed in PIM for users who already use PIM and have a Premium P2 license](../media/pim-manages-roles-for-p2.png)
 
 ## Create and assign a custom role in Azure Active Directory
 
-This section describes how to create new custom roles in Azure Active Directory (Azure AD). For the basics of custom roles, see the [custom roles overview](https://docs.microsoft.com/en-us/azure/active-directory/roles/custom-overview). The role can be assigned either at the directory-level scope or an app registration resource scope only.
+This section describes how to create new custom roles in Azure AD. For the basics of custom roles, see the [custom roles overview](https://docs.microsoft.com/en-us/azure/active-directory/roles/custom-overview). The role can be assigned either at the directory-level scope or an app registration resource scope only.
 
 Custom roles can be created in the [Roles and administrators](https://portal.azure.com/) tab on the Azure AD overview page.
 
@@ -137,7 +110,7 @@ Your custom role will show up in the list of available roles to assign.
 
 ## Assign a custom role scoped to a resource
 
-Like built-in roles, custom roles are assigned by default at the default organization-wide scope to grant access permissions over all app registrations in your organization. But unlike built-in roles, custom roles can also be assigned at the scope of a single Azure AD resource. This allows you to give the user the permission to update credentials and basic properties of a single app without having to create a second custom role.
+Like built-in roles, custom roles are assigned by default at the default organization-wide scope to grant access permissions over all app registrations in your organization. But unlike built-in roles, custom roles can also be assigned at the scope of a single Azure AD resource. This approach allows you to give the user the permission to update credentials and basic properties of a single app without having to create a second custom role.
 
 1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com/) with Application developer permissions in the Azure AD organization.
 

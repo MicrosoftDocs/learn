@@ -1,10 +1,14 @@
 Now that you have reviewed this module, you should be able to:
 
-- Repeat the title page learning objectives in this list.
+- Configure and manage Azure Active Directory roles
 
-- xxx
+- Configure and manage custom domains
 
-- xxx
+- Configure and manage device registration options
+
+- Configure delegation by using administrative units
+
+- Configure tenant-wide settings
 
 ## Resources
 

@@ -1,5 +1,3 @@
-( from https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/domains-manage )
-
 A domain name is an important part of the identifier for many Azure Active Directory (Azure AD) resources: it's part of a user name or email address for a user, part of the address for a group, and is sometimes part of the app ID URI for an application. A resource in Azure AD can include a domain name that's owned by the organization that contains the resource. Only a Global Administrator can manage domains in Azure AD.
 
 ## Set the primary domain name for your Azure AD organization
@@ -76,8 +74,6 @@ An error is returned when:
 
 ## Add your custom domain name using the Azure Active Directory portal
 
-(from https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-custom-domain?context=azure/active-directory/users-groups-roles/context/ugr-context )
-
 Every new Azure AD tenant comes with an initial domain name, *<domainname>.onmicrosoft.com*. You can't change or delete the initial domain name, but you can add your organization's names. Adding custom domain names helps you to create user names that are familiar to your users, such as *alain@contoso.com*.
 
 ### Before you begin
@@ -110,7 +106,7 @@ After you create your directory, you can add your custom domain name.
 
 > [!IMPORTANT]
 > Important> You must include .com, .net, or any other top-level extension for this to work properly.
-The unverified domain is added. The contoso.com page appears showing your DNS information. Save this information. You need it later to create a TXT record to configure DNS.
+The unverified domain is added. The contoso.com page appears showing your DNS information. Save this information; you will need it later to create a TXT record to configure DNS.
 
 ![Contoso page with DNS entry information](../media/contoso-blade-with-dns-info.png)
 

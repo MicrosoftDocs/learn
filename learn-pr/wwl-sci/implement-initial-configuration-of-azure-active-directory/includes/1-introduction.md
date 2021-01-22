@@ -1,22 +1,18 @@
-Learn to create your initial Azure Active Directory configuration to ensure that all the identity solutions you need are available. This module explores how to build and configure your first Azure AD system.
-
-In this module, you will:
-
-- xxx
-
-- xxx
-
-- xxx
+In this module you will learn how to configure and manage Azure Active Directory (Azure AD) roles, custom domains, and device registration options. In addition, you will learn how to configure delegation by using administrative units and configure tenant-wide settings.
 
 ## Learning objectives
 
-- Implement initial configuration of Azure Active Directory
+In this module, you will:
 
-- Create, configure, and manage identities
+- Configure and manage Azure Active Directory roles
 
-- Implement and manage external identities (excluding B2C scenarios)
+- Configure and manage custom domains
 
-- Implement and manage hybrid identity
+- Configure and manage device registration options
+
+- Configure delegation by using administrative units
+
+- Configure tenant-wide settings
 
 ## Prerequisites
 

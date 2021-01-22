@@ -3,7 +3,7 @@ uid: learn.wwl.implement-initial-configuration-of-azure-active-directory
 metadata:
   title: Implement initial configuration of Azure Active Directory
   description: "Implement initial configuration of Azure Active Directory"
-  ms.date: 01/19/2021
+  ms.date: 01/21/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -29,13 +29,13 @@ products:
 units:
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.introduction
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-roles
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-create-azure-account
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-manage-users-roles
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-custom-domains
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-device-registration
-- learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-bulk-device-enrollment
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-delegation-by-using-administrative-units
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-tenant-wide-setting
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-setting-tenant-wide-properties
-- learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-enable-security-defaults
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.knowledge-check
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.summary-resources
 badge:

@@ -1,6 +1,4 @@
-(from https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units, https://docs.microsoft.com/en-us/azure/active-directory/roles/concept-delegation, https://docs.microsoft.com/en-us/azure/active-directory/roles/delegate-app-roles)
-
-Administrative units are Azure AD resources that can be containers for other Azure AD resources. An administrative unit can contain only users and groups.
+Administrative units are Azure Active Directory (Azure AD) resources that can be containers for other Azure AD resources. An administrative unit can contain only users and groups.
 
 Administrative units restrict permissions in a role to any portion of your organization that you define. You could, for example, use administrative units to delegate the Helpdesk Administrator role to regional support specialists, so they can manage users only in the region that they support.
 
@@ -117,8 +115,4 @@ Attackers who get control of privileged accounts can do tremendous damage, so pr
 - Conditional Access administrator
 
 - Security administrator
-
-## Elevate privilege temporarily
-
-For most day-to-day activities, not all users need global administrator rights, and not all of them should be permanently assigned to the Global Administrator role. When users need the permissions of a Global Administrator, they should activate the role assignment in Azure AD Privileged Identity Management on either their own account or an alternate administrative account.
 
