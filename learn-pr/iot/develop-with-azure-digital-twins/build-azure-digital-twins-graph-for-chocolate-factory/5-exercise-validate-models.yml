@@ -10,4 +10,4 @@ metadata:
 title: Exercise - Validate your DTDL models
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-validate-dtdl-models.md)]
+  [!include[](includes/5-exercise-validate-models.md)]
