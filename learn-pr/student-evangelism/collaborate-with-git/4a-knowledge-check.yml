@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "`git clone <repo-name>`"
       isCorrect: false
-      explanation: "That's not quite right. The `git clone` command takes a different parameter as input. Review the description in the [second unit](1-collaborate-using-pull?azure-portal=true)."
+      explanation: "That's not quite right. The `git clone` command takes a different parameter as input. Review the description in the [second unit](./1-collaborate-using-pull.yml?azure-portal=true)."
     - content: "`git clone <repo-path>`"
       isCorrect: true
       explanation: "Correct! The `git clone` command takes a URL or path to an existing repository as a parameter."
