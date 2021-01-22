@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-containers-windows-server.define-hyper-v-containers-isolation-modes
+title: Define Windows Server and Hyper-V containers and isolation modes
+metadata:
+  title: Define Windows Server and Hyper-V containers and isolation modes
+  description: "Define Windows Server and Hyper-V containers and isolation modes"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-define-hyper-v-containers-isolation-modes.md)]
