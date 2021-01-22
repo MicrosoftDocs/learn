@@ -1,8 +1,15 @@
-Now that you have reviewed this module, you should be able to:
+You should have learned how to connect Threat Intelligence Indicators to the Azure Sentinel workspace using the provided data connectors.
 
-- Configure the TAXII connector
+You should now be able to:
 
-- Configure the Threat Intelligence Platform connector
+- Configure the TAXII connector in Azure Sentinel
+- Configure the Threat Intelligence Platform connector in Azure Sentinel
+- View threat indicators in Azure Sentinel
 
-- View your indicators
+## Learn more
 
+You can learn more by reviewing the following.
+
+[Become and Azure Sentinel Ninja)](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310?azure-portal=true)
+
+[Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)

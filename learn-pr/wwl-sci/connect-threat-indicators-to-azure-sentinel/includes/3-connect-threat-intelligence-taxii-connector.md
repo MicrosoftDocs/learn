@@ -4,27 +4,26 @@ In the Azure portal, navigate to Azure Sentinel > Data connectors and then selec
 
 To view the connector page:
 
-- Select Data connectors page.
+1. Select Data connectors page.
 
-- Select Threat intelligence - TAXII.
+1. Select **Threat intelligence - TAXII**.
 
-- Then select the Open connector page on the preview pane.
+1. select the Open connector page on the preview pane.
 
-- Specify the required and optional information in the text boxes.
+1. Specify the required and optional information in the text boxes.
 
-- Friendly name (for server)
+    - Friendly name (for server)
 
-- API root URL
+    - API root URL
 
-- Collection ID
+    - Collection ID
 
-- Username
+    - Username
 
-- Password
+    - Password
 
-- Select Add to enable the connection.
+1. Select **Add** to enable the connection.
 
 The List of Configure TAXII servers shows the currently connected TAXII Servers and the Last indicator received time. The ellipse at the end of the configured server provides the option to remove the server configuration.
 
-![The TAXII Connector page](../media/taxiiconnector.png)
-
+![The TAXII Connector page.](../media/taxii-connector.png)

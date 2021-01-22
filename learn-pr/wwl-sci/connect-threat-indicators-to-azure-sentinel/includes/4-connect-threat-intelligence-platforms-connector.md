@@ -12,5 +12,5 @@ To view the connector page:
 
 - Then select Connect.
 
-![Threat Intelligence Platform connector page](../media/tipconnector.png)
+![Threat Intelligence Platform connector page.](../media/threat-intelligence-platform-connector.png)
 
