@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.hunt-threats-sentinel.5-livestream
 metadata:
-  title: Observe threats over time with livestreams
-  description: Observe threats over time with livestreams
+  title: Observe threats over time with livestream
+  description: Observe threats over time with livestream
   ms.date: 12/15/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Observe threats over time with livestreams
+title: Observe threats over time with livestream
 durationInMinutes: 5
 content: |
   [!include[](includes/5-livestream.md)]

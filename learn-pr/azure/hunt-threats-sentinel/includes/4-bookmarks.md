@@ -4,7 +4,7 @@ To hunt for threats to Contoso's environment, you have to review large amounts o
 
 Bookmarks in Azure Sentinel can help you hunt for threats by preserving the queries you ran in Azure Sentinel, along with the query results that you deem relevant. You can also record your contextual observations and reference your findings by adding notes and tags. Bookmarked data is visible to you and your teammates for easy collaboration.
 
-You can revisit your bookmarked data at any time on the **Bookmarks** tab of the hunting page. You can use filtering and search options to quickly find specific data for your current investigation. Alternatively, you can review your bookmarked data directly in the **HuntingBookmark** table in your Log Analytics workspace.
+You can revisit your bookmarked data at any time on the **Bookmarks** tab of the **Hunting** page. You can use filtering and search options to quickly find specific data for your current investigation. Alternatively, you can review your bookmarked data directly in the **HuntingBookmark** table in your Log Analytics workspace.
 
 >[!NOTE]
 >Bookmarked events contain standard event information but can be used in different ways throughout the Azure Sentinel interface.
@@ -19,7 +19,7 @@ Incidents that you create from bookmarks can be managed from the **Incidents** p
 
 ## Use the investigation graph to explore bookmarks
 
-You can investigate bookmarks in the same way that you'd investigate incidents in Azure Sentinel. From the hunting page, select **Investigate** to open the investigation graph for the incident. The investigation graph is a visual tool that helps to identify entities involved in the attack and the relationships between those entities. If the incident involves multiple alerts over time, you can also review the alert timeline and correlations between alerts.
+You can investigate bookmarks in the same way that you'd investigate incidents in Azure Sentinel. From the **Hunting** page, select **Investigate** to open the investigation graph for the incident. The investigation graph is a visual tool that helps to identify entities involved in the attack and the relationships between those entities. If the incident involves multiple alerts over time, you can also review the alert timeline and correlations between alerts.
 
 :::image type="content" source="../media/4-investigation-graph.png" alt-text="Screenshot of the investigation graph page for a deleted virtual machine incident.":::
 

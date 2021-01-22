@@ -9,12 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat hunting with Azure Sentinel
-summary: In this module, you'll learn to proactively identify threat behaviors by using Azure Sentinel queries. You'll also learn to use bookmarks and livestreams to hunt threats.
+summary: In this module, you'll learn to proactively identify threat behaviors by using Azure Sentinel queries. You'll also learn to use bookmarks and livestream to hunt threats.
 abstract: |
   In this module, you will:
   - Use queries to hunt for threats.
   - Save key findings with bookmarks.
-  - Observe threats over time with livestreams.
+  - Observe threats over time with livestream.
 prerequisites: |
   - Familiarity with security operations in an organization.
   - Basic experience with Azure services.

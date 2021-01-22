@@ -4,7 +4,7 @@ Contoso, Ltd., is a midsize financial services company in London with a New York
 
 As part of the Security Operations Center team, you've been tasked with using Azure Sentinel to identify security threats within Contoso's Azure environment.
 
-By the end of this module, you'll be able to hunt for threats by using the tools available in Azure Sentinel. Specifically, you'll be able to proactively identify threat behaviors by using Azure Sentinel queries. You'll also be able to use bookmarks and livestreams to identify specific account usage patterns for Contoso's Azure environment.
+By the end of this module, you'll be able to hunt for threats by using the tools available in Azure Sentinel. Specifically, you'll be able to proactively identify threat behaviors by using Azure Sentinel queries. You'll also be able to use bookmarks and livestream to identify specific account usage patterns for Contoso's Azure environment.
 
 ## Learning objectives
 
@@ -12,7 +12,7 @@ After completing this module, you'll be able to:
 
 - Use queries to hunt for threats.
 - Save key findings with bookmarks.
-- Observe threats over time with livestreams.
+- Observe threats over time with livestream.
 
 ## Prerequisites
 

@@ -19,7 +19,7 @@ In this task, you'll create and manage threat-hunting queries to review events r
 
 1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Azure Sentinel** page, on the menu bar, in the **Threat management** section, select **Hunting**.
-3. On the hunting page, select **New Query**.
+3. On the **Hunting** page, select **New Query**.
 4. On the **Create custom query** page, provide the following inputs, and then select **Create**.
 
    - **Name**. Enter **Deleted VMs**.
@@ -36,7 +36,7 @@ In this task, you'll create and manage threat-hunting queries to review events r
   
    - **Tactics**. Select **Impact**.
 
-5. On the hunting page, on the **Queries** tab, enter **Deleted VMs** in the **Search queries** field.
+5. On the **Hunting** page, on the **Queries** tab, enter **Deleted VMs** in the **Search queries** field.
 6. In the list of queries, select the star icon beside **Deleted VMs** to mark the query as a favorite.
 7. Select the **Deleted VMs** query. Then, in the details pane, select **View Results**.
 
@@ -53,7 +53,7 @@ In this task, you'll use bookmarks to save events and do more hunting.
 1. On the **Logs** page, in the **Results** section, select the check box beside the listed event. Then select **Add bookmark**.
 2. On the **Add bookmark** pane, select **Create**.
 3. At the top of the page, select **Azure Sentinel** on the breadcrumb trail.
-4. On hunting page, select the **Bookmarks** tab.
+4. On **Hunting** page, select the **Bookmarks** tab.
 5. In the list of bookmarks, select the bookmark that begins with **Deleted VMs**.
 6. On the details page, select **Investigate**.
 7. On the **Investigation** page, select **Deleted VMs** and observe the details of the incident.

@@ -10,7 +10,7 @@ Livestream queries refresh every 30 seconds and generate Azure notifications of 
 
 ## Create a livestream
 
-To create a livestream from the hunting page in Azure Sentinel, select the **Livestream** tab and then select **New livestream** from the toolbar.  
+To create a livestream from the **Hunting** page in Azure Sentinel, select the **Livestream** tab and then select **New livestream** from the toolbar.  
 
 >[!NOTE]
 >Livestream queries run continuously against your live environment, so you can't use time parameters in a livestream query.
@@ -23,7 +23,7 @@ On the new **Livestream** page, specify a name for the livestream session and th
 
 ## Manage a livestream
 
-You can play the livestream to review results or save the livestream for later reference. Saved livestreams can be viewed from the **Livestream** tab on the hunting page. You can also elevate events from a livestream session to an alert by selecting the events and then selecting **Elevate to alert** from the command bar.
+You can play the livestream to review results or save the livestream for later reference. Saved livestream sessions can be viewed from the **Livestream** tab on the **Hunting** page. You can also elevate events from a livestream session to an alert by selecting the events and then selecting **Elevate to alert** from the command bar.
 
 You might use a livestream to track baseline activities for Azure resource deletion at Contoso and identify other Azure resources that should be tracked. For example, the following query will return any Azure Activity events that recorded a deleted resource:
 
