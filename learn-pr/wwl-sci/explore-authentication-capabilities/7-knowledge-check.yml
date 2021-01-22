@@ -49,14 +49,3 @@ quiz:
     - content: "FIDO2."
       isCorrect: false
       explanation: "That's incorrect. FIDO2 may require the purchase of external keys such as a USB device, which may involve additional expense."
-  - content: "As a result of a recent security review, you've been asked to recommend the best way to ensure users set strong passwords. Which Azure AD feature should you implement?"
-    choices:
-    - content: "Windows Hello."
-      isCorrect: false
-      explanation: "That's correct. Windows Hello is a passwordless authentication feature."
-    - content: "Password Protection."
-      isCorrect: true
-      explanation: "That's incorrect. Password Protection is a feature of Azure AD which reduces the risk of users setting weak passwords."
-    - content: "User training."
-      isCorrect: false
-      explanation: "That's incorrect. Although user training will improve users’ awareness of the dangers of setting weak passwords, it is not the most efficient way to ensure users set strong passwords. It is also not a feature of Azure AD."
