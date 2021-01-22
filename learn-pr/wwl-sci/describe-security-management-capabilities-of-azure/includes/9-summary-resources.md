@@ -8,14 +8,13 @@ Now that you've completed this module, you should be able to: 
 - Describe the benefits and use cases of Azure Defender
 - Understand CSPM and the security baseline.
 
-### Learn More
+### Learn more
 
 To find out more about any of the topics covered in this module, please visit these links:
 
-- [Spreadsheet showing a walkthrough for the security center unit](https://techcommunity.microsoft.com/t5/azure-security-center/ignite-2020-introducing-azure-defender-and-azure-security-center/ba-p/1708769) 
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction)  
 - [Azure secure score](https://docs.microsoft.com/azure/security-center/secure-score-security-controls)  
 
 - [Azure Defender](https://docs.microsoft.com/azure/security-center/azure-defender)  
-- [Cloud security posture management](https://docs.microsoft.com/azure/security-center/) and [Secure score controls](https://docs.microsoft.com/azure/security-center)
+- [Cloud Security Posture Management (CSPM) with Azure Security Center](https://azure.microsoft.com/resources/videos/azure-friday-cloud-security-posture-management-cspm-with-azure-security-center/)
 - [Security Baselines](https://docs.microsoft.com/azure/security/benchmarks/security-baselines-overview)  
