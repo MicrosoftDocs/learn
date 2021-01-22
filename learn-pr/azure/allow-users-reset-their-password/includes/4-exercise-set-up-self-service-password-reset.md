@@ -70,7 +70,7 @@ To test your configuration, create an account that's not associated with an admi
 Now you're ready to enable SSPR for the group.
 
 1. In your Azure AD organization, under **Manage**, select **Password reset**. 
-1. If the **Password reset** page still displays the message **Get a free Premium trial to use this feature**, wait for a few minutes and then refresh the page.
+1. If the **password reset** page still displays the message **Get a free Premium trial to use this feature**, wait for a few minutes and then refresh the page.
 1. On the **Properties** page, select **Selected**. Select the **SSPRTesters** group, and then select **Save**.
 
     ![Screenshot of the Password Reset properties panel wwith SSPR enabled and selected group set to SSPRTesters.](../media/4-choose-sspr-group.png)
