@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/21/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A new admin has joined your team. You want them to be able to access the Microsoft 365 Compliance Center. Which of the following roles could you use to access the Compliance Center, and show them how it works?"
+  - content: "A new admin has joined the team and needs to be able to access the Microsoft 365 Compliance Center. Which of the following roles could the admin use to access the Compliance Center?"
     choices:
     - content: "Compliance Administrator role"
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "User Administrator role"
       isCorrect: false
       explanation: "This role is used to add, remove, and manage users. Instead use the global administrator role, which is one of the multiple roles you can use to access the Compliance Center. ​​​"
-  - content: "Your new colleague on the admin team is unfamiliar with shared controls in Compliance Manager, how would you explain shared controls to them?"
+  - content: "Your new colleagues on the admin team are unfamiliar with the concept of shared controls in Compliance Manager. How would the concept of shared controls be expalined?"
     choices:
     - content: "Controls that both external regulators and Microsoft share responsibility for implementing."
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Controls that both your organization and Microsoft share responsibility for implementing."
       isCorrect: true
       explanation: "Both your organization and Microsoft work together to implement these controls.​​​"
-  - content: "You want to do a presentation on how the Microsoft 365 Compliance Center can help improve your organization’s compliance posture. As part of this presentation, you’ll need to cover the Compliance Manager, and compliance score. What is the difference between Compliance Manager and compliance score?"
+  - content: "A customer has requested a presentation on how the Microsoft 365 Compliance Center can help improve their organization’s compliance posture. The presentation will need to cover Compliance Manager and compliance score. What is the difference between Compliance Manager and compliance score?"
     choices:
     - content: "Compliance Manager is an end-to-end solution in Microsoft 365 Compliance Center to enable admins to manage and track compliance activities. Compliance score is a calculation of the overall compliance posture across the organization."
       isCorrect: true

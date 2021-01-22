@@ -1,14 +1,14 @@
-You wanted to understand the various tools provided by Microsoft to manage compliance for your organization. You explored how Compliance Center and Compliance Manager can help organizations to manage compliance.
+You wanted to understand the various tools provided by Microsoft to manage compliance for your organization. You explored how compliance center and Compliance Manager can help organizations to manage compliance.
 
-Without these tools, organizations wouldn’t be able to manage compliance, and they would be at risk of not meeting required legal and regulatory standards. Instead, with these tools, they’re able to stay in line with compliance requirements.
+Without these tools, organizations couldn't manage compliance, and they would be at risk of not meeting required legal and regulatory standards. With these tools, they can stay in line with compliance requirements.
 
-Now that you’ve completed this module, you should be able to:
+Now you’ve completed this module, you should be able to:
 
 - Explore the Microsoft compliance center.
-- Describe the benefits of compliance manager.
+- Describe the benefits of Compliance Manager.
 - Know where to go to find compliance documentation.
 
-## Learn more:
+## Learn more
 
 - [Explore the Microsoft compliance center](https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft-365/3-explore-compliance-center)
 - [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide)
