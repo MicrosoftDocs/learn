@@ -9,11 +9,11 @@ The cloud is a powerful place that hosts many moving parts. To use the Microsoft
 
 ## How to use quantum services on Azure?
 
-Azure Quantum is a service on Azure. To use it, you'll create a *Quantum Workspace* in your subscription, which is a resource that stores all the quantum programs and optimization problems (called *Jobs*) that you submit to the service.
+Azure Quantum is a service on Azure. To use it, you create a *Quantum Workspace*, which is an Azure resource that stores all the quantum programs and optimization problems (called *Jobs*) that you submit to the Azure Quantum service.
 
-The Quantum Workspace will also contain a list of providers and targets that you've selected. *Providers* publish a set of *Targets*, each of which allows you to either run a quantum program or solve an optimization problem. Simulators, quantum computers, and optimization solvers are examples of targets.
+The workspace also contains a list of *providers* and *targets* that you've selected. Every provider publishes a set of targets, each of which allows you to run either a quantum program or solve an optimization problem. Simulators, quantum computers, and optimization solvers are examples of targets.
 
-In the next section of this module you'll create a Quantum Workspace.
+In the next section of this module you'll create an Azure Quantum workspace.
 
 
 ## Storage Account
@@ -37,4 +37,4 @@ the job type and the provider and target that you configure for the Workspace.  
 
 Once you create a job, you'll also find various metadata available about its state and run history.
 
-In the next unit, you will create a Quantum Workspace.
+In the next unit, you will create an Azure Quantum workspace.
