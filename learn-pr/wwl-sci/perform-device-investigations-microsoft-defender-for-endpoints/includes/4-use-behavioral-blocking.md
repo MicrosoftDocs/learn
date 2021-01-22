@@ -14,13 +14,13 @@ With these capabilities, more threats can be prevented or blocked, even if they 
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-![Behavior block alert](../media/blocked-behavior-alert.png)
+:::image type="content" source="../media/blocked-behavior-alert.png" alt-text="Behavior block alert":::
 
 ## Client behavioral blocking
 
 Client behavioral blocking is a component of behavioral blocking and containment capabilities in Defender for Endpoint. As suspicious behaviors are detected on devices (also referred to as clients or endpoints), artifacts (such as files or applications) are blocked, checked, and remediated automatically.
 
-![pre execution and post execution detection engines.png](../media/pre-execution-and-post-execution-detection-engines.png)
+:::image type="content" source="../media/pre-execution-post-execution-detection-engines.png" alt-text="pre execution and post execution detection engines":::
 
 ### How client behavioral blocking works
 
@@ -60,7 +60,7 @@ When a suspicious behavior or file is detected, such as by Microsoft Defender An
 
 With rapid protection in place, an attack can be stopped on a device, other devices in the organization, and devices in other organizations, as an attack attempts to broaden its foothold.
 
-## EDR in block mode
+## Endpoint detection and response in block mode
 
 When endpoint detection and response (EDR) in block mode is turned on, Defender for Endpoint blocks malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post-breach.
 
@@ -74,4 +74,4 @@ When EDR in block mode is turned on and a malicious artifact is detected, blocki
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-![EDR in Block Mode Alert](../media/endpoint-detection-and-response-block-mode-detection.png)
+:::image type="content" source="../media/endpoint-detection-response-block-mode-detection.png" alt-text="EDR in Block Mode Alert":::

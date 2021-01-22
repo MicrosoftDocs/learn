@@ -26,7 +26,7 @@ When you investigate a specific device, you'll see:
 
 - Cards (active alerts, logged on users, security assessment)
 
-![Device page](../media/device-page.png)
+:::image type="content" source="../media/device-page.png" alt-text="Device page display":::
 
 ## Device details
 
@@ -150,7 +150,7 @@ The Software inventory tab lets you view software on the device, along with any 
 
 The Discovered vulnerabilities tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities will show a description and details.
 
-### Missing KBs
+### Missing knowledge bases
 
 The Missing KBs tab lists the missing security updates for the device.
 
