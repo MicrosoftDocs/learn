@@ -12,13 +12,13 @@ Such software behaviors are sometimes seen in legitimate applications; however, 
 
 Each Site Recovery rule contains one of three settings:
 
-- **Not configured**: Disable the ASR rule
+- **Not configured**: Disable the attack surface reduction rule
 
 - **Block**: Enable the Azure Site Recovery rule
 
-- **Audit**: Evaluate how the ASR rule would impact your organization if enabled
+- **Audit**: Evaluate how the attack surface reduction rule would impact your organization if enabled
 
-## Attack Surface Reduction Rules
+## Attack surface reduction rules
 
 Site Recovery currently supports all of the rules below:
 
@@ -38,11 +38,11 @@ Site Recovery currently supports all of the rules below:
 - Block Adobe Reader from creating child processes
 - Block persistence through WMI event subscription
 
-## Exclude files and folders from ASR rules
+## Exclude files and folders from attack surface reduction rules
 
-You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an ASR rule determines the file or folder contains malicious behavior, it will not block the file from running, which also means potentially unsafe files are allowed to run and infect your devices.
+You can exclude files and folders from being evaluated by most attack surface reduction rules. This means that even if an attack surface reduction rule determines the file or folder contains malicious behavior, it will not block the file from running, which also means potentially unsafe files are allowed to run and infect your devices.
 
-You exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators.
+You exclude attack surface reduction rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators.
 
 You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
@@ -54,9 +54,9 @@ Use audit mode to evaluate how attack surface reduction rules would impact your 
 
 Whenever a rule is triggered, a notification will be displayed on the device. You can customize the notification with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
 
-## Configure ASR rules
+## Configure attack surface reduction rules
 
-You can set ASR rules for devices running any of the following editions and versions of Windows:
+You can set these rules for devices running any of the following editions and versions of Windows:
 
 - Windows 10 Pro, version 1709 or later
 - Windows 10 Enterprise, version 1709 or later
@@ -75,21 +75,21 @@ Enterprise-level management such as Intune or Microsoft Endpoint Configuration M
 
 ### Intune
 
-To manage the ASR rules in Intune:
+To manage the Attack Surface Reduction rules in Intune:
 
 1. Select **Device configuration > Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For Profile type, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
-1. In the Endpoint protection pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
+1. In the Endpoint protection pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**. Select the desired setting for each rule.
 
-1. Under Attack Surface Reduction exceptions, enter individual files and folders. You can also select Import to import a CSV file that contains files and folders to exclude from ASR rules. Each line in the CSV file should be formatted as follows:
+1. Under Attack Surface Reduction exceptions, enter individual files and folders. You can also select Import to import a CSV file that contains files and folders to exclude from attack surface reduction rules. Each line in the CSV file should be formatted as follows:
 
-C:\folder, %ProgramFiles%\folder\file, C:\path
+    C:\folder, %ProgramFiles%\folder\file, C:\path
 
 1. Select **OK** on the three configuration panes. Then select Create if you're creating a new endpoint protection file or Save if you're editing an existing one.
 
 ### MDM
 
-To manage the ASR rules in MDM:
+To manage the attack surface reduction rules in MDM:
 
 - Use the ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules configuration service provider (CSP) to individually enable and set the mode for each rule.
 
@@ -103,7 +103,7 @@ To manage the ASR rules in MDM:
 
   - Disable = 0
 
-  - Block (enable ASR rule) = 1
+  - Block (enable attack surface reduction rule) = 1
 
   - Audit = 2
 
@@ -117,7 +117,7 @@ Example:
 
 ### Microsoft Endpoint Configuration Manager
 
-To manage the ASR rules in Microsoft Endpoint Configuration Manager:
+To manage the attack surface reduction rules in Microsoft Endpoint Configuration Manager:
 
 1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance > Endpoint Protection > Windows Defender Exploit Guard**.
 
@@ -131,9 +131,9 @@ To manage the ASR rules in Microsoft Endpoint Configuration Manager:
 
 1. After the policy is created select **Close**.
 
-### Group Policy
+### Group policy
 
-To manage the ASR rules in Group Policy:
+To manage the attack surface reduction rules in Group Policy:
 
 > [!WARNING]
 > If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
@@ -148,15 +148,15 @@ To manage the ASR rules in Group Policy:
 
 1. Select Show... and enter the rule ID in the Value name column and your chosen state in the Value column as follows:
 
-Disable = 0
-Block (enable ASR rule) = 1
-Audit = 2
+    Disable = 0
+    Block (enable attack surface reduction rule) = 1
+    Audit = 2
 
-1. To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the Value name column. Enter **0** in the Value column for each item.
+1. To exclude files and folders from attack surface reduction rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the Value name column. Enter **0** in the Value column for each item.
 
 ### PowerShell
 
-To manage the ASR rules with PowerShell:
+To manage the attack surface reduction rules with PowerShell:
 
 > [!WARNING]
 > If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
@@ -170,14 +170,14 @@ To manage the ASR rules with PowerShell:
 
     ```
 
-1. To enable ASR rules in audit mode, use the following cmdlet:
+1. To enable attack surface reduction rules in audit mode, use the following cmdlet:
 
     ```powershell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 
     ```
 
-1. To turn off ASR rules, use the following cmdlet:
+1. To turn off attack surface reduction rules, use the following cmdlet:
 
     ```powershell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled
@@ -194,7 +194,7 @@ To manage the ASR rules with PowerShell:
 
 1. You can also use the Add-MpPreference PowerShell verb to add new rules to the existing list.
 1. Set-MpPreference will always overwrite the existing set of rules. If you want to add to the existing set, you should use Add-MpPreference instead. You can obtain a list of rules and their current state by using Get-MpPreference.
-1. To exclude files and folders from ASR rules, use the following cmdlet:
+1. To exclude files and folders from attack surface reduction rules, use the following cmdlet:
 
     ```powershell
     Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"

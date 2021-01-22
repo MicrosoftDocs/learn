@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -27,25 +27,25 @@ quiz:
     - content: "Application control"
       isCorrect: true
       explanation: "Correct. Application control is used for trust."
-  - content: "Which option below is not an attack surface reduction rule that can be configured?"
+  - content: "Which option below is an attack surface reduction rule that can be configured?"
     choices:
     - content: "Block PowerShell from executing"
-      isCorrect: true
-      explanation: "Correct.  PowerShell execution can't be blocked with an attack surface reduction rule."
+      isCorrect: false
+      explanation: "Incorrect.  PowerShell execution can't be blocked with an attack surface reduction rule."
     - content: "Block process creations originating from PSExec and WMI commands"
+      isCorrect: true
+      explanation: "Correct.  This option is an attack surface reduction rule that can be configured."
+    - content: "Block content from mobile devices"
       isCorrect: false
-      explanation: "Incorrect.  This option is an attack surface reduction rule that can be configured."
-    - content: "Block executable content from email client and webmail"
-      isCorrect: false
-      explanation: "Incorrect.  This option is an attack surface reduction rule that can be configured."
-  - content: "Which of the following is not a deployment option?"
+      explanation: "Incorrect.  This option is not an attack surface reduction rule that can be configured."
+  - content: "Which of the following is a deployment option?"
     choices:
     - content: "PowerShell"
-      isCorrect: false
-      explanation: "Incorrect. This is a valid deployment option."
-    - content: "ASRConfig.exe"
       isCorrect: true
-      explanation: "Correct.  This is not a valid option."
-    - content: "Microsoft Endpoint Configuration Manager"
+      explanation: "Correct. This is a valid deployment option."
+    - content: "ASRConfig.exe"
       isCorrect: false
-      explanation: "Incorrect. This is a valid deployment option."
+      explanation: "Incorrect.  This is not a valid option."
+    - content: "Microsoft Deployment System"
+      isCorrect: false
+      explanation: "Incorrect. This is not a valid deployment option."
