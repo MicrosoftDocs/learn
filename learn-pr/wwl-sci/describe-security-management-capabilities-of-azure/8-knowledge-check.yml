@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-management-capabilities-of-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization is looking to improve the security of its cloud environment. What tool would they use to automatically assess their systems and alert the security staff when a vulnerability is found?"
+    choices:
+    - content: "Cloud security posture management (CSPM)."
+      isCorrect: true
+      explanation: "That's correct. CSPM is a new class of tool that improves your cloud security management using automated tools to check and generate alerts when vulnerabilities are found."
+    - content: "Azure security center."
+      isCorrect: false
+      explanation: "That's incorrect. Azure security center provides infrastructure level security management to protect your data."
+    - content: "Azure Defender."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Defender provides threat protection for workloads running on Azure."
+  - content: "Your organization is using Security Center to assess your resources, subscriptions, and organization for security issues. Your organizations overall secure score is low and needs to improved.  How would a security admin go about improving the score?"
+    choices:
+    - content: "Close old security recommendations."
+      isCorrect: false
+      explanation: "That's incorrect. Closing old issues will not improve the score."
+    - content: "Remediate security recommendations."
+      isCorrect: true
+      explanation: "That's correct. To improve your secure score, remediate security recommendations from your recommendations list."
+    - content: "Move security recommendations to resolved."
+      isCorrect: false
+      explanation: "That's incorrect. Moving recommendations will not improve your security score."

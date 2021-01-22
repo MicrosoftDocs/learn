@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-windows-server-administration-tools.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]
