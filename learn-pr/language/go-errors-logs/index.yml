@@ -23,7 +23,7 @@ prerequisites: |
   - Have knowledge of basic data types like `string`, `int`, and `boolean`
   - Have knowledge of how to write basic data control flows like `if` and `for` statements
   - Have knowledge of how to write functions with multiple return values
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/go-errors-logs.svg
 levels:
 - beginner
 roles:
