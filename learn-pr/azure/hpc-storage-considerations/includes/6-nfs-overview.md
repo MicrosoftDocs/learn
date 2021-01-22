@@ -42,7 +42,34 @@ NFSv3 does not offer support for data encryption. It was originally designed for
 
 **NFSv4.x**
 
-NFSv4.x
+NFSv4.x introduces some key improvements to NFS. For our purposes we will focus on the some main ones.
+
+**NFSv4 and Kerberos**
+
+NFSv4 introduced full support for the use of Kerberos for authentication of users and encryption of all NFS traffic. There was an attempt to integrate Kerberos with NFSv3 but due to the use of NLM/NSM and other external protocols only the data packets were actually encrypted.
+
+Using Kerberos, you can now authenticate based on trusted machines. NFSv3 assumed all accesses were trusted unless explicitly blocked by export policies.
+
+Encryption of all NFS traffic is supported.  The implication is that you can encrypt all traffic from NFS client to NFS server (rather than just at specific network segments).
+
+The use authentication and encryption via Kerberos requires the deployment of a Kerberos environment.
+
+A key consideration here is that not all NFSv4-compatible services support Kerberos. Without Kerberos you are still able to use other features of NFSv4 but will not authenticate or encrypt data. When choosing your solution be sure to verify whether or not you need this capability and if the options support Kerberos.
+
+**NFSv4 and network ports**
+
+One advantage of NFSv4 over NFSv3 is that NFSv4 uses a single TCP port (port 2049) for all traffic. If you have a NFSv4 environment in an Azure vnet or located in your datacenter and need to provide access between firewalls, it is much simpler to support NFSv4.
+
+**NFSv4 and ACLs**
+
+Say you have a file/folder and you want to offer read-write access to group 1, read-only access to group 2 and append-data to a specific machine account.  NFSv3 permissions (mode bits) cannot satisfy the requirement because v3 permissions do not have the level of granularity desired in this example.
+
+NFSv4 introduced the concept of Access Control Lists (ACLs). Each file/folder can have an ACL applied to it. Each ACL consists of one or more Access Control Entries (ACEs). This model is very familiar to Windows NTFS administrators as it follows the same model.
+
+If your current environment leverages NFSv4 ACLs, you will need to determine which storage solution best matches this requirement.
+
+
+
 
 
 
