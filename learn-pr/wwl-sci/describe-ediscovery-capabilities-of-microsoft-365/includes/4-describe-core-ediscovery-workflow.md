@@ -6,7 +6,7 @@ You start by creating an eDiscovery case, which starts from within **Microsoft 3
 
 The workflow consists of creating holds, searching for content, and exporting and downloading search results.
 
-:::image type="content" source="../media/4-Core-eDiscovery-workflow-inline.png" lightbox="../media/4-Core-eDiscovery-workflow-expanded.png" alt-text="The Core eDiscovery workflow.":::
+:::image type="content" source="../media/4-core-ediscovery-workflow-inline.png" lightbox="../media/4-core-ediscovery-workflow-expanded.png" alt-text="The Core eDiscovery workflow.":::
 
 ## Create an eDiscovery hold
 
