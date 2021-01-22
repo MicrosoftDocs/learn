@@ -18,6 +18,8 @@ abstract: |
 prerequisites: | 
   - An Azure Subscription
   - A GitHub account
+  - Basic knowledge of Software Development
+  - Basic knowledge of managing and provisioning Azure Resources
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
