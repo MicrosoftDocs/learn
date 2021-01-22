@@ -61,10 +61,7 @@ quiz:
       explanation: "Incorrect. You can learn more about how to use Git with the `git help` command."
   - content: 'Suppose you have a project with 10 files in your local working branch of the repo. You recently updated three of the files: toc.yml, intro.txt, and exercise.json. Now you want to create a pull request for only the changes to the JSON file. What set of Git commands should you use to create the pull request for only these changes?'
     choices:
-    - content: "`git add .`
-    `git commit -m \"my changes for the exercise\"`
-    `git push origin <working-branch>`
-    "
+    - content: "`git add .` <br> `git commit -m \"my changes for the exercise\"` <br> `git push origin <working-branch>` <br><br>"
       isCorrect: false
       explanation: "That's not quite right. Check the syntax for the `git add` command. The parameter \".\" causes all changes that aren't yet committed (or stashed) to be included in the pull request. How can you modify the syntax so only the file that you want to include is added?"
     - content: "`git add exercise.json` <br> `git commit -c 'my changes for the exercise'` <br> `git push origin <working-branch>` <br><br>"
