@@ -8,7 +8,7 @@ Every alert from Azure Defender for Key Vault includes the following elements:
 
 - User Principal Name or IP Address of the suspicious resource
 
-**Contact**
+### Contact
 
 - Verify whether the traffic originated from within your Azure tenant. If the key vault firewall is enabled, it's likely that you've provided access to the user or application that triggered this alert.
 
@@ -16,7 +16,7 @@ Every alert from Azure Defender for Key Vault includes the following elements:
 
 - If you can identify the source of the traffic in your tenant, contact the user or owner of the application.
 
-**Immediate mitigation**
+### Immediate mitigation
 
 If you don't recognize the user or application, or if you think the access shouldn't have been authorized:
 
@@ -38,7 +38,7 @@ If you don't recognize the user or application, or if you think the access shoul
 
   - Determine whether there's a need to reduce or revoke Azure Active Directory permissions.
 
-**Identify impact**
+### Identify impact
 
 When the impact has been mitigated, investigate the secrets in your key vault that were affected:
 
@@ -48,7 +48,7 @@ When the impact has been mitigated, investigate the secrets in your key vault th
 
 1. Optionally, if you have key vault diagnostic logs enabled, review the previous operations for the corresponding caller IP, user principal, or object ID.
 
-**Take action**
+### Take action
 
 When you've compiled your list of the secrets, keys, and certificates that the suspicious user or application accessed, you should immediately rotate those objects.
 
@@ -64,7 +64,7 @@ When you've compiled your list of the secrets, keys, and certificates that the s
 
 When you receive an alert from Azure Defender for DNS, we recommend you investigate and respond to the alert as described below. Azure Defender for DNS protects all connected resources, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
 
-**Contact**
+### Contact
 
 Contact the resource owner to determine whether the behavior was expected or intentional.
 
@@ -72,7 +72,7 @@ Contact the resource owner to determine whether the behavior was expected or int
 
 - If the activity is unexpected, treat the resource as potentially compromised and mitigate as described in the next step.
 
-**Immediate mitigation**
+### Immediate mitigation
 
 Isolate the resource from the network to prevent lateral movement.
 
@@ -88,7 +88,7 @@ Isolate the resource from the network to prevent lateral movement.
 
 When you receive an alert from Azure Defender for Resource Manager, we recommend you investigate and respond to the alert as described below. Azure Defender for Resource Manager protects all connected resources, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
 
-**Contact**
+### Contact
 
 Contact the resource owner to determine whether the behavior was expected or intentional.
 
@@ -96,7 +96,7 @@ Contact the resource owner to determine whether the behavior was expected or int
 
 - If the activity is unexpected, treat the related user accounts, subscriptions, and virtual machines as compromised and mitigate as described in the following step.
 
-**Immediate mitigation**
+### Immediate mitigation
 
 - Remediate compromised user accounts:
 

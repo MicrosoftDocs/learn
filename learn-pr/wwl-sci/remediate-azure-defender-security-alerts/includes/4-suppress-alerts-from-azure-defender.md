@@ -6,8 +6,6 @@ The various Azure Defender plans detect threats in any area of your environment 
 
 Your suppression rules define the criteria for which alerts should be automatically dismissed.  Suppression rules can only dismiss alerts that have already been triggered on the selected subscriptions.
 
-![Create a suppression rule](../media/create-suppression-rule.png)
-
 ## Create a suppression rule
 
 To create a rule directly in the Azure portal:
