@@ -6,9 +6,11 @@ real or simulated quantum devices.
 
 If you took some of the earlier modules in the [learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/), you might have focused on the theoretical aspects of quantum computing. In this learning path, you are a member of a space mission on a spaceship with access to Azure Quantum servers. At this point you're ready to connect to Earth and start using real quantum computers to implement your Q# quantum programs.
 
-In this module, you'll explore the quantum computing options in Azure Quantum and manage the submissions.
+In this module, you'll explore the quantum computing options in Azure Quantum and manage submissions of quantum computing jobs.
 
 You'll also learn the basic principles behind quantum hardware and the different kinds of target devices that you have access to in Azure Quantum.
+
+![Alt_text=Diagram of the different parts of the service for quantum computing of Azure Quantum](../media/1-azure-quantum-illustration).
 
 ## Learning objectives
 
