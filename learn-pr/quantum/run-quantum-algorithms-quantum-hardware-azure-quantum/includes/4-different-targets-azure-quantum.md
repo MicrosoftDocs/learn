@@ -1,12 +1,12 @@
 Azure Quantum offers a variety of quantum solutions. At this time, due to the
 early development stage of the field, these devices have some limitations and
 requirements for programs that run on them. The Quantum Development Kit and
-Azure Quantum take care of these requirements in the background so that your Q#
-code can run seamlessly on all of the Azure Quantum targets.
+Azure Quantum will keep track of these requirements in the background so that
+you can run your Q# programs on Azure Quantum targets.
 
 ## Target profiles
 
-Quantum devices, however, are still an emerging technology, and not all of them
+Quantum devices are still an emerging technology, and not all of them
 can run every Q# program. As such, you need to keep some restrictions in mind
 when developing programs for different targets. Currently, we classify targets
 as having one of three profiles:

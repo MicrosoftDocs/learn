@@ -1,4 +1,4 @@
-Modern classical computers are based on transistor technologies made from semiconductors to implement classical logic operations. Quantum computers take
+Modern classical computers are based on transistors made from semiconductors to implement classical logic operations. Quantum computers take
 radically different approaches to exploit the properties of quantum systems to implement qubits and quantum operations.
 
 In this unit, you will learn about the challenges of building a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed.
@@ -6,13 +6,13 @@ In this unit, you will learn about the challenges of building a quantum computer
 ## Harnessing quantum systems to perform computations
 
 To build quantum computers, we need full access to the controllable quantum
-systems that will represent the qubits we'll use to store and process the quantum information. In
+systems that will represent the qubits we'll use to store and process the
+quantum information. A qubit can be represented by any physical system with
+**two** *states* or *levels* that can be prepared in a quantum superposition. In
 general, a functional quantum computer should fulfill the following criteria:
 
 - **Scalability:** since quantum computers are based on the
-  manipulation of quantum information by using qubits, we need a system that allows scalability to a large number of qubits. A qubit can be represented by any
-  physical system with **two** *states* or *levels* that can be prepared in a
-  quantum superposition.
+  manipulation of quantum information by using qubits, we need a system that allows scalability to a large number of qubits.
 - **Ability to initialize the qubits in a specific state:** having many qubits
   isn't useful if we can't trust their initial state. A fundamental
   characteristic of a quantum computer is its ability to initialize the qubits
@@ -27,8 +27,8 @@ general, a functional quantum computer should fulfill the following criteria:
   computing, any quantum algorithm can be decomposed as the application of
   a sequence of operations from a universal set of basic operations. This set is
   not unique, but a quantum computer should be able to reliably perform all the
-  operations of a specific universal set.
-- **Qubit specific reliable measurements:** to obtain the results of quantum
+  operations of the chosen universal set.
+- **Reliable measurements:** to obtain the results of quantum
   computations we need to measure of each qubit with high precision. Note that
   the measurement affects the state of the register. It's often performed only
   at the end of the computation.
@@ -50,22 +50,21 @@ different technologies used to create quantum computers.
 ### Trapped ion quantum computers
 
 Trapped ion quantum computers use *ions* (electrically charged atoms) suspended
-in an electromagnetic field in vacuum as the basic element to represent
-qubits.
+in an electromagnetic field in vacuum as the basic building block.
 
 ![alt_text=todo](../media/2-trapped-ion-quantum-computer.png)
 
-In particular, these computers use chains of trapped ions and each ion
-represents a qubit. They use the vibrational motion of the chain to induce
-operations in the qubit states. The qubit states are stored in the internal
-states of each ion. In particular, the qubit states are often stored in two
-hyperfine levels of the ion.
+In particular, these computers use chains of trapped ions and each ion represents a
+qubit. They use lasers to induce controlled vibrations on the chain to
+accomplish operations in the qubit states. The qubit states are stored in the
+internal states of each ion. In particular, the qubit states are often stored in
+two hyperfine levels of the ion.
 
 > [!NOTE]
 > The hyperfine levels of an atom arise from the different possible
 > configurations of the spin orientations of the electron and the nucleus.
-> Generally, the state with the lower energy, the ground state, is associated
-> with the state $|0\rangle$, and the first excited state is associated with the
+> Generally, the state with the lower energy, is associated
+> with the state $|0\rangle$, and the state with higher energy is associated with the
 > qubit state $|1\rangle$.
 
 These computers use lasers and electromagnetic pulses to cause
@@ -81,9 +80,9 @@ this kind of devices.
 
 ### Superconducting quantum computers
 
-Superconducting quantum computers are based in superconducting electronic
+Superconducting quantum computers are based on superconducting electronic
 circuits. While classical computers use circuits of transistors to represent
-bits and perform classical computations, superconducting qubits use *transmons*
+bits and perform classical computations, superconducting quantum computers use *transmons*
 to represent qubits and perform quantum operations.
 
 If certain materials are cooled below a critical temperature, their electric
@@ -111,22 +110,24 @@ is cooled to near absolute zero
 ### Other types of quantum computers
 
 Trapped ion and superconducting quantum computers aren't the only options for
-quantum computing, although are the most advanced so far. In general, any
-controllable quantum system with two levels can be used to represent qubits. For
-example:
+quantum computing, although they are the most advanced so far. Here are several
+other approaches that are currently subject of active research:
 
-- **Quantum dot computers:** quantum dots are small cumulus of semiconductor
+- **Quantum dot computers:** quantum dots are small clusters of semiconductor
   atoms that behave like macroscopic atoms and can be prepared into superposed
-  states. They can be used to represent qubits.
+  states.
 - **Photonic quantum computers:** use polarized photons to represent qubits
   and light guides to implement quantum operations.
 - **Topological quantum computers:** a theoretical proposal for quantum
   computers that use a new type of particles called *anyons* to create qubits
-  very resilient to noise.
+  very resilient to noise. 
 
 There many other proposals for quantum computers since the field is still under
 development. With Azure Quantum you have access to an ever-growing collection
-of quantum computers to run your own quantum algorithms.
+of quantum computers to run your own quantum algorithms. 
+
+You can learn about Microsoft latest efforts on advancing quantum computing
+technologies in [our research page](https://www.microsoft.com/research/research-area/quantum-computing/?facet%5Btax%5D%5Bmsr-research-area%5D%5B%5D=243138&sort_by=most-recent&facet%5Btax%5D%5Bmsr-content-type%5D%5B%5D=3).
 
 ### Azure Quantum for cloud quantum computing
 
@@ -137,7 +138,7 @@ industry leading providers of quantum hardware to use their most advanced quantu
 service](../media/2-azure-quantum-flow-diagram.png)
 
 You just need an Azure subscription to start submitting quantum computing jobs
-to Azure Quantum. These jobs will be queued by the provider to be run in the
+to Azure Quantum. These jobs will be queued by the provider to be run on the
 target device you select. Through Azure Quantum you can manage your jobs and
 monitor their status, as well as get the results once they are completed.
 

@@ -1,13 +1,13 @@
 
-You are ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q#  in previous modules, such as the quantum random number generator, will run using real qubits rather than simulated ones like you did in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/).
+You are ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q#  in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/).
 
 To do so, in this part you learn how to submit a job to Azure Quantum.
 
 ## Install the quantum extension
 
-Azure Quantum uses the Azure CLI quantum extension to enable submitting Q# programs from the command line. Now you are going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
+Azure Quantum uses the quantum extension for the Azure Command-line interface (Azure CLI) to enable submitting Q# programs from the command line. Now you are going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you have installed the latest version of [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.5.0 or higher).
+1. Ensure you have installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
@@ -74,7 +74,7 @@ select the providers you desire to use, in case you haven't already. To do it fo
 
 ## Setup the project and write your program
 
-Next, you'll use Visual Studio Code to create a Q# Project.
+Next, you'll use Visual Studio Code to create a Q# Project, similar to how you did in the previous modules.
 
 1. In VS Code open the **View** menu, and select **Command Palette**.
 
@@ -125,8 +125,9 @@ Next, you'll use Visual Studio Code to create a Q# Project.
     }
     ```
 
-This program prepares a qubit in an even superposition and then measures
-it. It's simple but enough to show how to submit a job.
+This program prepares a qubit in an even superposition and then measures it,
+similar to the random bit generator you wrote in the earlier module. It's simple
+but enough to show how to submit a job.
 
 ## Prepare the Azure CLI
 
@@ -172,7 +173,7 @@ you created.
     > When you submit a job in Azure Quantum it will wait in a queue
     > until the provider is ready to run your program. The `Average Queue Time`
     > column of the target list command shows you how long other jobs which have
-    > been run recently waited to be execute. This can give you an idea of how
+    > been run recently waited to be run. This can give you an idea of how
     > long you might have to wait.
 
 In this case, we see that IonQ has two different targets, a quantum processing

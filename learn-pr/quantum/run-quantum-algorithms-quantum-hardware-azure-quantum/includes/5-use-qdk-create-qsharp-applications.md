@@ -1,5 +1,5 @@
-Now let's see how you can use Azure Quantum to test quantum algorithms, first in
-a simulator, and then in real hardware.
+Now let's see how you can use Azure Quantum to test quantum algorithms, first on
+a simulator, and then on real hardware.
 
 In [previous modules](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm) of this learning path, you created a version of
 Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same
@@ -48,10 +48,11 @@ algorithm, so you can easily adapt the Q# code of previous modules to run on
 IonQ's targets.
 
 For the moment, we have a limited number of qubits available, so you will run a
-very simple version of Grover's algorithm. Open the file `Program.qs` and add
-the following content:
+very simple version of Grover's algorithm.
 
 ### Write the core part of Grover's algorithm
+
+Open the file `Program.qs` and add the following content:
 
 1. First, add the Grover's diffusion operation:
 
@@ -66,10 +67,6 @@ the following content:
            }
        }
    ```
-
-   Recall that this operation is called `ReflectAboutUniform`
-   because it can be geometrically interpreted as a reflection in the ket space
-   about the uniform superposition state.
 
 1. Now, write the full Grover's search operation that takes a phase oracle as
    input:
@@ -90,9 +87,8 @@ the following content:
 
 ### Implement an oracle
 
-This is just a demonstration we are going to solve a trivial task. You are going
-to give an integer as input to then use the quantum computer to find such integer
-using the Grover's search algorithm.
+Since this is just a demonstration, we are going to solve a trivial task. You are going
+to give an integer as input to the oracle, and then use the quantum computer to find this integer.
 
 1. First you need to implement a marking oracle that takes an integer as input
    and marks the basis state that corresponds to that integer. You can do this using
@@ -289,8 +285,7 @@ Now that you know what resources you need to run your job, you can test it on th
    MyGroversJob  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.simulator  2021-01-20T21:34:35.406875+00:00
    ```
 
-1. Track the status of your job using `az quantum job show` command. To check on
-   the status, use the `az quantum job show` command, being sure to replace the
+1. To check on the status, use the `az quantum job show` command, being sure to replace the
    `job-id` parameter with the `Id` output by the previous command:
 
    ```dotnetcli
