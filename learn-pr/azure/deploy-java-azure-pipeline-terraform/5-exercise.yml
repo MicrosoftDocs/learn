@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-azure-pipeline-terraform.5-exercise
-title: Deploy exercise
+title: Exercise - Deploy a sample Spring Boot application
 metadata:
-  title: Deploy Exercise
+  title: Exercise - Deploy a sample Spring Boot application
   description: In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
   ms.date: 09/18/2020
   author: roryp
