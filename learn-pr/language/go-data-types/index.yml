@@ -23,7 +23,7 @@ prerequisites: |
   - Be able to run Go applications using the terminal prompt
   - Have knowledge of basic data types like `string`, `int`, and `boolean`
   - Have knowledge of how to write basic data control flows like `if` and `for` statements
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/go-data-types.svg
 levels:
 - beginner
 roles:
