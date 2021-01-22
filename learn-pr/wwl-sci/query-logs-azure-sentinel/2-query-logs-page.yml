@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-logs-azure-sentinel.logs-page
+title: Query logs in the logs page
+metadata:
+  title: Query logs in the logs page
+  description: "Query logs in the logs page"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-query-logs-page.md)]

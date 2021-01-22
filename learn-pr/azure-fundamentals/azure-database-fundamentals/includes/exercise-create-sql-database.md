@@ -52,7 +52,7 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
     | Under **Azure Defender for SQL** section: |
     | Enable Azure Defender for SQL | **Not now** |
 
-    ![Screenshot of the Additional settings tab of the Create SQL Database pane with settings selected.](../media/additional-settings-tab.png)
+    :::image type="content" source="../media/additional-settings-tab.png" alt-text="Screenshot of the Additional settings tab of the Create SQL Database pane with settings selected.":::
 
 1. Select **Review + create**.
 
