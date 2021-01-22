@@ -10,7 +10,8 @@ Onboarding your GCP account into Security Center, integrates GCP Security Comman
 
 In the screenshot below, you can see GCP projects displayed in Security Center's overview dashboard.
 
-![gcp account in overview](../media/gcp-account-overview.png)
+>[!div class="mx-imgBorder"]
+>![gcp account in overview.](../media/gcp-account-overview.png)
 
 ## Follow the steps below to create your GCP cloud connector.
 
@@ -62,7 +63,7 @@ When you first enable Security Health Analytics, it might take several hours for
 
 1. Specify the Role as **Security Center Admin Viewer** and then select **Save**.
 
-**Create a private key for the dedicated service account**
+### Create a private key for the dedicated service account
 
 Switch to project level.
 
@@ -76,7 +77,7 @@ Switch to project level.
 
 1. Save this JSON file for later use.
 
-**Connect GCP to Security Center**
+### Connect GCP to security center
 
 1. From Security Center's menu, select **Cloud connectors**.
 
@@ -92,7 +93,7 @@ Switch to project level.
 
 1. In the Private key file box, browse to the JSON file you downloaded in the previous step. Create a private key for the dedicated service account.
 
-**Confirmation**
+### Confirmation
 
 When the connector is successfully created and GCP Security Command Center has been configured properly:
 
@@ -100,5 +101,6 @@ When the connector is successfully created and GCP Security Command Center has b
 
 - Security recommendations for your GCP resources will appear in the Security Center portal and the regulatory compliance dashboard 5-10 minutes after onboard completes:
 
-![gcp resources in recommendations](../media/gcp-resources-recommendations.png)
+>[!div class="mx-imgBorder"]
+>![gcp resources in recommendations.](../media/gcp-resources-recommendations.png)
 

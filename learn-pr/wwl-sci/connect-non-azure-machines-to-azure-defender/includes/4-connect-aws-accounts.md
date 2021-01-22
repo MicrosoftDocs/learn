@@ -18,12 +18,13 @@ Onboarding your AWS account into Security Center, integrates AWS Security Hub an
 
 In the screenshot below, you can see AWS accounts displayed in Security Center's overview dashboard.
 
-![aws account overview](../media/aws-account-overview.png)
+>[!div class="mx-imgBorder"]
+>![aws account overview.](../media/aws-account-overview.png)
 
 
 ## Follow the steps below to create your AWS cloud connector.
 
-**Set up AWS Security Hub:**
+### Set up AWS Security Hub:
 
 To view security recommendations for multiple regions, repeat the following steps for each relevant region. If you're using an AWS master account, repeat the following three steps to configure the master account and all connected member accounts across all relevant regions
 
@@ -97,7 +98,8 @@ From Security Center's menu, select Multi cloud connectors.
 
 Select Add AWS account.
 
-![add aws account](../media/add-aws-account.png)
+>[!div class="mx-imgBorder"]
+>![add aws account.](../media/add-aws-account.png)
 
 Configure the options in the AWS authentication tab:
 

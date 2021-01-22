@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is not an option to connect your non-Azure computers?"
+  - content: "Which is an option to connect your non-Azure computers?"
     choices:
     - content: "Windows Store"
-      isCorrect: true
-      explanation: "Correct.  Windows Store doesn't provide a connector."
+      isCorrect: false
+      explanation: "Incorrect.  Windows Store doesn't provide a connector."
     - content: "Using Azure Arc enabled servers"
+      isCorrect: true
+      explanation: "Correct. Using Azure Arc enabled servers is an option to connect."
+    - content: "From an Excel spreadsheet"
       isCorrect: false
-      explanation: "Incorrect. Using Azure Arc enabled servers is an option to connect."
-    - content: "From Security Center's pages"
-      isCorrect: false
-      explanation: "Incorrect. Security Center's pages is an option to connect."
+      explanation: "Incorrect. This is not an option to connect."
   - content: "Which resource can Azure Defender protect in a hybrid environment?"
     choices:
     - content: "Word Documents"
