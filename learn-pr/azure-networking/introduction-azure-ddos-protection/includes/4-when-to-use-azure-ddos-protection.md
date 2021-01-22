@@ -18,7 +18,7 @@ When building or deploying your workload, it’s important to design for:
 
 These measures can help you enhance security and meet regulatory requirements. After addressing the considerations for building DDoS resilient applications, you now need to determine which features of Azure DDoS Protection you need. The following table compares the key features of DDoS Protection Standard and DDoS Protection Basic.
 
-| Feature                                            | DDoS Basic | DDoS Standard |
+| Feature                                            | DDoS Protection Basic | DDoS Protection Standard |
 | -------------------------------------------------- | :--------: | :-----------: |
 | Active traffic monitoring & always  on detection   |   Yes      |     Yes       |
 | Automatic attack mitigation                        |   Yes      |     Yes       |
