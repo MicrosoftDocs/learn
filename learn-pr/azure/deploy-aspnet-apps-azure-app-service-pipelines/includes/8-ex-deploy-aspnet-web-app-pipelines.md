@@ -226,7 +226,8 @@ To conclude this exercise, you'll trigger integration and deployment by modifyin
 1. Within the repository hierarchy, navigate to the **/DotNetAppSqlDb/Views/Shared/_Layout.cshtml** file.
 1. On the page displaying the content of **_Layout.cshtml**, select the **Edit this file** pencil-shaped icon.
 1. Change the content of line **27** from `<p>&copy; @DateTime.Now.Year - MS Learn Sample ASP.NET Application</p>` to `<p>&copy; @DateTime.Now.Year - MS Learn Sample Azure ASP.NET Application</p>` and select **Commit changes**.
-1. Within the web browser window displaying the GitHub repository, switch back to the web browser tab displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry.
+1. Switch back to the web browser tab displaying the Azure DevOps portal. In the vertical menu bar along the left edge of the project page, select the **Pipelines** entry.
+
 1. Within the browser window displaying the Azure DevOps portal, on the **Pipelines** pane, select the pipeline you're using in this lab, then select the entry representing the current pipeline run, and monitor its progress until successful completion.
 1. Within the web browser window displaying the Azure DevOps portal, switch to the web browser tab displaying the sample ASP.NET web app page.
 1. Refresh the web browser page and verify that the footer of the page changed according to the change you made in the GitHub repository.
