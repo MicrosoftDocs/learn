@@ -27,7 +27,7 @@ The following diagram is a design proposal for a solution. It uses three core co
 
 The idea is that text documents containing user feedback are placed into a queue that we've named *new-feedback-q* in the preceding diagram. The arrival of a message containing the text document into the queue will trigger, or start, function execution. The function reads messages containing new documents from the input queue and sends them for analysis to the Text Analytics API. Based on the results that the API returns, a new message containing the document is placed into an output queue for further processing.
 
-The result we get back for each document is a sentiment score. The output queues are used to store feedback sorted into positive, neutral, and negative. Hopefully, the negative queue will always be empty! :-) Once we've bucketed each incoming piece of feedback into an output queue based on sentiment, you can imagine adding logic to take action on the messages in each queue.
+The result we get back for each document is a sentiment score. The output queues are used to store feedback sorted into positive, neutral, and negative. Hopefully, the negative queue will always be empty! After we've bucketed each incoming piece of feedback into an output queue based on sentiment, you can imagine adding logic to take action on the messages in each queue.
 
 Let's look at a flowchart next to see what the function logic needs to do.
 
