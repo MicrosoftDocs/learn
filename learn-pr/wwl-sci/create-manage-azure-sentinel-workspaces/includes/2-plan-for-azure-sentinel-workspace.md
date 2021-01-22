@@ -14,7 +14,7 @@ The single-tenant with a single Azure Sentinel workspace will be the central rep
 
 This workspace receives logs from resources in other regions within the same tenant.  Because the log data (when collected) will travel across regions and stored in another region, this creates two possible concerns.  First, it can incur a bandwidth cost. Second, if there is a data governance requirement to keep data in a specific region, the single workspace option would not be an implementation option.
 
-![Single Tenant Workspace](../media/lp5-se-m02-01.png)
+![Single Tenant Workspace](../media/single-tenant-workspace.png)
 
 Single-Tenant with a single workspace pros and cons include:
 
@@ -30,7 +30,7 @@ Single-Tenant with a single workspace pros and cons include:
 
 The single-tenant with regional Azure Sentinel workspaces will have multiple Sentinel workspaces requiring the creation and configuration of multiple Azure Sentinel and Log Analytics workspaces.
 
-![Single Tenant Regional Workspace](../media/lp5-se-m02-02.png)
+![Single Tenant Regional Workspace](../media/single-tenant-regional-workspace.png)
 
 | Pros| Cons|
 | :--- | :--- |
@@ -53,5 +53,5 @@ TableName
 
 If you are required to manage an Azure Sentinel workspace, not in your tenant, you implement Multi-Tenant workspaces using Azure Lighthouse.  This security configuration grants you access to the tenants.  The tenant configuration within the tenant (regional or multi-regional) is the same consideration as before.
 
-![Multi-Tenant Workspaces](../media/lp5-se-m02-03.png)
+![Multi-Tenant Workspaces](../media/multi-tenant-workspaces.png)
 
