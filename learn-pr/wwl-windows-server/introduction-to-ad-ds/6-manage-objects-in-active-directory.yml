@@ -4,7 +4,7 @@ title: Manage objects and their properties in AD DS
 metadata:
   title: Manage objects and their properties in AD DS
   description: "Manage objects and their properties in AD DS"
-  ms.date: 01/19/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,12 +18,12 @@ quiz:
   questions:
   - content: "Which PowerShell command could you use to add a user?"
     choices:
-    - content: "Get-ADUser."
+    - content: "Get-ADUser"
       isCorrect: false
       explanation: "That's incorrect. Use this cmdlet to retrieve information about a user."
-    - content: "New-ADUser."
+    - content: "New-ADUser"
       isCorrect: true
       explanation: "That's correct. Use this cmdlet to create a new user account."
-    - content: "Set-ADUser."
+    - content: "Set-ADUser"
       isCorrect: false
       explanation: "That's incorrect. Use this cmdlet to change a user's properties."
