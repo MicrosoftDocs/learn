@@ -1,5 +1,5 @@
 Azure Quantum offers a variety of quantum solutions. At this time, due to the
-early development of the field, these devices have some limitations and
+early development stage of the field, these devices have some limitations and
 requirements for programs that run on them. The Quantum Development Kit and
 Azure Quantum take care of these requirements in the background so that your Q#
 code can run seamlessly on all of the Azure Quantum targets.

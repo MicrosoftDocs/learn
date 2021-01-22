@@ -1,10 +1,10 @@
 Azure Quantum is a cloud service that offers two different types of services: *optimization* solutions,
-where you can run first class optimization algorithms in classical hardware to
-address optimization problems; and *quantum computing* solutions, where you have
+which allow you to solve optimization problems by running optimization algorithms on classical hardware
+address optimization problems; and *quantum computing* solutions which allow you to run Q# quantum programs on real or simulated quantum devices.
 access to quantum computing targets where you can run Q# quantum programs in
 real or simulated quantum devices.
 
-If you took some of the earlier modules in the [learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/), you might have focused on the theoretical aspects of quantum computing. In this learning path, you are a member of a space mission on a spaceship with access to Azure Quantum servers. At this point you're ready to connect to Earth and start using real quantum computers to implement your Q# quantum programs.
+The earlier modules in this [learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/) focused on the theoretical aspects of quantum computing. In this module, you are a member of a space mission on a spaceship with access to Azure Quantum servers on Earth. At this point you're ready to start using real quantum computers to run your Q# quantum programs.
 
 In this module, you'll explore the quantum computing options in Azure Quantum and manage the submissions.
 

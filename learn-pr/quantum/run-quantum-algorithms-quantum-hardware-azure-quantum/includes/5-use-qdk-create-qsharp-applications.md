@@ -2,7 +2,7 @@ Now let's see how you can use Azure Quantum to test quantum algorithms, first in
 a simulator, and then in real hardware.
 
 In [previous modules](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm) of this learning path, you created a version of
-Grover's algorithm in Q# and run it in a local simulator. Now let's run the same
+Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same
 algorithm in a trapped ion quantum computer.
 
 ## Create the Q# project for IonQ
@@ -15,7 +15,7 @@ Use Visual Studio Code to create a Q# Project.
 
 1. Select **Standalone console application**.
 
-1. Select a directory to hold your project, such as your home directory and name
+1. Select a directory to hold your project, such as your home directory, and name
    your project. For example, enter `MyGroversJob` as the project name and select
    **Create Project**.
 
@@ -43,7 +43,7 @@ Use Visual Studio Code to create a Q# Project.
 
 ## Adapt Grover's algorithm to run in hardware
 
-Fortunately, you don't need control flow features to be implement Grover's
+Fortunately, you don't need control flow features to implement the basic variant of Grover's
 algorithm, so you can easily adapt the Q# code of previous modules to run on
 IonQ's targets.
 
@@ -67,7 +67,7 @@ the following content:
        }
    ```
 
-   Recall that this operation is called The operation `ReflectAboutUniform`
+   Recall that this operation is called `ReflectAboutUniform`
    because it can be geometrically interpreted as a reflection in the ket space
    about the uniform superposition state.
 
@@ -85,17 +85,17 @@ the following content:
    ```
 
    Recall that the number of iterations is given by the formula:
-   $N_{\text{iterations}}=\frac{pi}{4}\sqrt{\frac{N}{M}}$, where $M$ is the
+   $N_{\text{iterations}}=\frac{\pi}{4}\sqrt{\frac{N}{M}}$, where $N$ is the
    number of possible states and $M$ is the number of solutions.
 
 ### Implement an oracle
 
 This is just a demonstration we are going to solve a trivial task. You are going
 to give an integer as input to then use the quantum computer to find such integer
-using a Grover's task.
+using the Grover's search algorithm.
 
 1. First you need to implement a marking oracle that takes an integer as input
-   and marks the register using a controlled operation. You can achieve it using
+   and marks the basis state that corresponds to that integer. You can do this using
    the following operation:
 
    ```qsharp
@@ -108,13 +108,13 @@ using a Grover's task.
         }
    ```
 
-   This operation takes as input your input integer and flips the state of the
+   This operation takes as input the integer to be marked and flips the state of the
    target qubit if the control register state corresponds to the input integer.
-   To do it uses the operation
-   [`ControledOnInt`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.canon.applycontrolledonint)
+   To do this it uses the function
+   [`ControledOnInt`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint)
    from the Standard library.
 
-2. Since the general operation to run Grover's algorithm that you defined takes phase  oracles as inputs, you need to transform your marking oracle as a phase oracle using the phase kickback trick. We can use the very same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle). The operation is:
+2. Since the general operation to run Grover's algorithm that you defined takes a phase oracle as an input, you need to transform your marking oracle into a phase oracle using the phase kickback trick. We can use the same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle):
 
    ```qsharp
     operation ApplyMarkingOracleAsPhaseOracle(
@@ -132,13 +132,13 @@ using a Grover's task.
     }
    ```
 
-   These two operations combined invert the phase of the state that corresponds to the integer that you introduce. This is a crucial step of each iteration of the Grover's search.
+   These two operations combined flip the phase of the basis state that corresponds to the input integer. This is a crucial step of each iteration of the Grover's search.
 
 ### Calculate the number of iterations
 
-The ideal number of Grover iterations to perform is provided by the number of
-possible solutions and the total number of states. In this case, we have a
-single possible solution, so we define the function `NIterations` that takes
+The ideal number of Grover iterations to perform is defined by the number of
+correct solutions and the total number of possible states. In this case, we have a
+single correct solution, so we define the function `NIterations` that takes
 the number of qubits as input:
 
 ```qsharp
@@ -152,13 +152,13 @@ function NIterations(nQubits : Int) : Int {
 
 ### Create a runnable operation
 
-Now you just need define the main operation that you will run in Azure Quantum
-hardware. To do it, you need to flag the operation with the `@EntryPoint` label
-just before the operation. You can define here the inputs that will be
-introduced through the Azure CLI as arguments of your operation.
+Now you just need to define the main operation that you will run on Azure Quantum
+hardware. To do it, you need to annotate the operation with the `@EntryPoint` attribute
+just before the operation signature. The input parameters of the operation will be
+provided through the Azure CLI as command line arguments of the job submission.
 
 > [!NOTE]
-> Keep in mind that for Azure Quantum targets the output of the main operation needs to be a `Result`, either a single result (`Result`) or an array of results (`Result[]`).
+> Keep in mind that for Azure Quantum targets the output of the main operation needs to have a `Result` data type, either a single result (`Result`) or an array of results (`Result[]`).
 
 The full code should be:
 
@@ -240,9 +240,9 @@ namespace MyGroversJob {
 
 ## Submit your job to Azure Quantum
 
-Now you have your code ready to submit the job to Azure Quantum. First you will evaluate the resources that your code requires. Then you will try your code in the IonQ's simulator, and then you will run it against hardware.
+Now your code is ready to submit the job to Azure Quantum. First you will evaluate the resources that your code requires. Then you will try your code in the IonQ's simulator, and finally you will run it against hardware.
 
-In this example we will set the number of qubits to 2, and the marked index is going to be 1.
+In this example we will set the number of qubits to 2, and the marked integer is going to be 1.
 
 ### Estimate the resources for your job
 
@@ -274,11 +274,11 @@ As you can see, this job only requires 3 qubits, since the `QubitCount` is 3. Al
 
 ### Test the code in the simulator
 
-Now that you know what resources you need to run your job, you can test it again the simulator. To do it:
+Now that you know what resources you need to run your job, you can test it on the simulator.
 
 1. Open the Azure CLI and submit the job using the following command:
 
-   ```azcli
+   ```azurecli
    az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1
    ```
    You should obtain something like this:
@@ -298,7 +298,7 @@ Now that you know what resources you need to run your job, you can test it again
    ```
 
 1. Eventually, you will see the `Status` in the above table change to `Succeeded`.
-   Once that happens you can get the results from the job by running `az quantum job output`:
+   Once that happens, you can get the results from the job by running `az quantum job output`:
 
    ```dotnetcli
    az quantum job output -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy 
@@ -312,11 +312,12 @@ Now that you know what resources you need to run your job, you can test it again
     [1,0]     1.00000000   ▐████████████████████   |
    ```
 
-In this particular case, Grover's algorithm theoretically succeeds with 100% of probability.
+In this particular case, Grover's algorithm theoretically succeeds with 100% probability.
+Remember that the integer is represented as its binary notation in little endian (with the least significant bit written first), and binary result 10 is exactly the decimal 1 we used as the input.
 
 ### Run your code against hardware
 
-To run your code against hardware, you just need to repeat the same steps as for the simulator but changing the target to `ionq.qpu`. You can also choose the number of `shots` to run your program, otherwise is defaulted to 500.
+To run your code against hardware, you just need to repeat the same steps as for the simulator but changing the target to `ionq.qpu`. You can also choose the number of `shots` to run your program (the default value is 500).
 
 For example, if you choose 5 shots using the following command:
 
@@ -332,8 +333,8 @@ You may obtain a result similar to this:
 [0,1]     0.40000000   ▐███████                |
 ```
 
-As you can see, the marked index can't be inferred reliably from the histogram, even though the algorithm theoretically succeeds with a 100% of probability. This is because real qubits are subjected to noise and errors can sometimes
-lead to incorrect computations. To account for this errors, is convenient to increase the number of shots to reduce the effect of noise and get a more accurate histogram.
+As you can see, the marked integer can't be inferred reliably from the histogram, even though the algorithm theoretically succeeds with a 100% of probability. This is because real qubits are subject to noise, and errors can sometimes
+lead to incorrect computations. To account for these errors, it can be convenient to increase the number of shots so as to reduce the effect of noise and get a more accurate histogram.
 
 For example, if you choose 1000 shots, you should obtain something like this:
 
@@ -347,6 +348,6 @@ Result    Frequency
 
 ```
 
-This is a more accurate statistical representation of the theoretical outcome of the program that enable you to infer the correct index.
+This is a more accurate statistical representation of the theoretical outcome of the program that enables you to infer the correct result.
 
 In the next section, you are going to see some ideas to continue exploring quantum computing with Azure Quantum.
