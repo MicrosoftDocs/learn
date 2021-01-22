@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-azure-private-link.4-when-to-use-azure-virtual-wan
+uid: learn.introduction-azure-virtual-wan.4-when-to-use-azure-virtual-wan
 title: When to use Azure Virtual WAN
 metadata:
   title: When to use Azure Virtual WAN
-  description: TBD.
-  ms.date: 02/28/2021
+  description: After you complete this unit, you'll understand use cases for Azure Virtual WAN
+  ms.date: 12/24/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial

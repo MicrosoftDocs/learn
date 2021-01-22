@@ -4,47 +4,47 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 02/28/2021
+  ms.date: 12/24/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Who manages and maintains the components of an Azure Virtual WAN?"
     choices:
-    - content: "A"
+    - content: "The customer"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "That's incorrect. They're managed and maintained by Microsoft."
+    - content: "Microsoft"
       isCorrect: true
-      explanation: "."
-    - content: "C"
+      explanation: "That's correct. They're managed and maintained by Microsoft."
+    - content: "Both the customer and Microsoft"
       isCorrect: false
-      explanation: "."
-  - content: "TBD"
+      explanation: "That's incorrect. They're managed and maintained only by Microsoft."
+  - content: "What Microsoft service helps to simplify a hub-and-spoke virtual network WAN deployment?"
     choices:
-    - content: "A"
+    - content: "Azure Virtual WAN"
       isCorrect: true
-      explanation: "."
-    - content: "B"
+      explanation: "That's correct. Azure Virtual WAN with Virtual WAN hubs simplifies a complex virtual network WAN."
+    - content: "Virtual network peering"
       isCorrect: false
-      explanation: "."
-    - content: "C"
+      explanation: "That's incorrect. Azure Virtual WAN with Virtual WAN hubs simplifies a complex virtual network WAN."
+    - content: "IPsec forced tunneling"
       isCorrect: false
-      explanation: "."
-  - content: "TBD" 
+      explanation: "That's incorrect. Azure Virtual WAN with Virtual WAN hubs simplifies a complex virtual network WAN."
+  - content: "What Azure component is used to secure a Virtual WAN Hub?" 
     choices:
-    - content: "A"
+    - content: "Network Security Groups (NSG)"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "That's incorrect. To secure a Virtual Hub, use Azure Firewall and Azure Firewall Manager."
+    - content: "Azure Active Directory"
+      isCorrect: false
+      explanation: "That's incorrect. To secure a Virtual Hub, use Azure Firewall and Azure Firewall Manager."
+    - content: "Azure Firewall and Azure Firewall Manager"
       isCorrect: true
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
+      explanation: "That's correct. Use Azure Firewall and Azure Firewall Manager."
