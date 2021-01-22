@@ -55,24 +55,3 @@ _2. Event Alex buys a cappuccino._
 _Server: (Second) order (for Alex): Cappuccino_
 
 ![Event Sourcing for buying a coffee](../media/2-event-sourcing.png)
-
-### Command and Query Responsibility Segregation (CQRS) pattern
-
-The Command and Query Responsibility Segregation (CQRS) pattern separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.
-
-CQRS separates reads and writes into different models, using commands to update data, and queries to read data.
-
-Commands should be task-based, rather than data centric. ("Book hotel room", not "set ReservationStatus to Reserved").
-Commands may be placed on a queue for asynchronous processing, rather than being processed synchronously.
-Queries never modify the database. A query returns a DTO that does not encapsulate any domain knowledge.
-
-In a CQRS context, one benefit of Event Sourcing is that the same events can be used to notify other components - in particular, to notify the read model. The read model uses the events to create a snapshot of the current state, which is more efficient for queries. In conclusion, events can be seen as the reaction of a command or as a change in the view. So you have the commands, which trigger something, queries to get the current status and the events, who inform about any changes or happenings.
-However, Event Sourcing adds complexity to the design.
-
-Benefits of CQRS include:
-
-- __Independent scaling.__ CQRS allows the read and write workloads to scale independently, and may result in fewer lock contentions.
-- __Optimized data schemas.__ The read side can use a schema that is optimized for queries, while the write side uses a schema that is optimized for updates.
-- __Security.__ It's easier to ensure that only the right domain entities are performing writes on the data.
-- __Separation of concerns.__ Segregating the read and write sides can result in models that are more maintainable and flexible. Most of the complex business logic goes into the write model. The read model can be relatively simple.
-- __Simpler queries.__ By storing a materialized view in the read database, the application can avoid complex joins when querying.
