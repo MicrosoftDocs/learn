@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.advocates.send-crop-weather-alerts
 metadata:
-  title: Help remote farmers protect their crops with text message weather alerts by using Azure Functions
+  title: Help remote farmers protect crops with text message weather alerts
   description: In this module, you'll create an application that allows farmers to use text messaging to set up temperature alerts. These alerts can help farmers know when to plant, when to water, or when to protect their crops.
   ms.date: 01/21/2021
   author: berndverst
   ms.author: beverst
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Help remote farmers protect their crops with text message weather alerts by using Azure Functions
+title: Help remote farmers protect crops with text message weather alertss
 summary: In this module, you'll create an application that allows farmers to use text messaging to set up temperature alerts. These alerts can help farmers know when to plant, when to water, or when to protect their crops.
 abstract: |
   In this module you will:
