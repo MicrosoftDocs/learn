@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/16/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,29 +16,29 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The msticpy package does NOT provide the following fuctionality."
+  - content: "The msticpy package provides which of the following functionality?"
     choices:
-    - content: "Visualizing data"
+    - content: "Data wrangling"
       isCorrect: false
-      explanation: "Incorrect. The msticpy package does help security investigators and hunters visualize data."
+      explanation: "Incorrect. This is not a feature of the msticpy package."
     - content: "Analyzing data"
-      isCorrect: false
-      explanation: "Incorrect. The msticpy package has several functions that help security investigators and hunters analyze data."
+      isCorrect: true
+      explanation: "Correct. The msticpy package has several functions that help security investigators and hunters analyze data."
     - content: "Creating data"
-      isCorrect: true
-      explanation: "Correct. The msticpy package can acquire and enrich data, but it can not create data."
-  - content: "Which is NOT a component of notebooks?"
+      isCorrect: false
+      explanation: "Incorrect. The msticpy package can acquire and enrich data, but it can not create data."
+  - content: "Which is a component of notebooks in Azure Sentinel?"
     choices:
-    - content: "Browser-based interface"
+    - content: "Telemetry analyzer"
       isCorrect: false
-      explanation: "Incorrect. The browser-based interface is where the user enters and runs queries and code. It is also where the execution results are dsiplayed."
+      explanation: "Incorrect. This is not a component."
     - content: "Kernel"
-      isCorrect: false
-      explanation: "Incorrect. Notebooks use the Kernel to parse and execute the code within the notebook"
-    - content: "Workbook"
       isCorrect: true
-      explanation: "Correct. Workbooks are embedded in Azure Sentinel not in a notebook."
-  - content: "What coding language is most commonly used in the sample Notebooks."
+      explanation: "Correct. Notebooks use the Kernel to parse and execute the code within the notebook"
+    - content: "Workbook"
+      isCorrect: false
+      explanation: "Incorrect. Workbooks are embedded in Azure Sentinel not in a notebook."
+  - content: "What coding language is most commonly used in the sample Notebooks?"
     choices:
     - content: "Python"
       isCorrect: true
