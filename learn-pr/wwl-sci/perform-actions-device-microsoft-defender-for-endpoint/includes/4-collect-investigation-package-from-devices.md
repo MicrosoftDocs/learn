@@ -44,7 +44,7 @@ This folder contains a set of data points related to the connectivity informatio
 
 Windows Prefetch files are designed to speed up the application startup process. It can be used to track all the files recently used in the system and find traces for applications that might have been deleted but can still be found in the prefetch file list.
 
-- Prefetch folder – Contains a copy of the prefetch files from %SystemRoot%\Prefetch. NOTE: It is suggested to download a prefetch file viewer to view the prefetch files.
+- Prefetch folder – Contains a copy of the prefetch files from %SystemRoot%\Prefetch. It is suggested to download a prefetch file viewer to view the prefetch files.
 
 - PrefetchFilesList.txt – Contains the list of all the copied files that can be used to track if there were any copy failures to the prefetch folder.
 
@@ -68,15 +68,15 @@ Contains a .CSV file that lists services and their states.
 
 Lists shared access to files, printers, serial ports, and miscellaneous communications between nodes on a network. This can help identify data exfiltration or lateral movement. It also contains files for SMBInboundSessions and SMBOutboundSession.  If there are no sessions (inbound or outbound), you'll get a text file that tells you that there are no SMB sessions found.
 
-## System Information
+## System information
 
 Contains a SystemInformation.txt file that lists system information such as OS version and network cards.
 
-## Temp Directories
+## Temp directories
 
 Contains a set of text files that lists the files located in %Temp% for every user in the system.  This can help to track suspicious files that an attacker may have dropped on the system.  If the file contains the following message: “The system cannot find the path specified”, it means that there is no temp directory for this user, and might be because the user didn’t sign in to the system.
 
-## Users and Groups
+## Users and groups
 
 Provides a list of files that each represent a group and its members.
 

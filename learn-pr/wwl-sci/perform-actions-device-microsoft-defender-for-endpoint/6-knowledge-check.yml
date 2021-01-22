@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which type of information is not collected in an Investigation package?"
+  - content: "Which type of information is collected in an Investigation package?"
     choices:
     - content: "Command History"
-      isCorrect: true
-      explanation: "Correct. Command history is not collected."
+      isCorrect: false
+      explanation: "Incorrect. Command history is not collected."
     - content: "Prefetch Files"
+      isCorrect: true
+      explanation: "Correct. Prefetch files are collected."
+    - content: "Network transactions"
       isCorrect: false
-      explanation: "Incorrect. Prefetch files are collected."
-    - content: "Network Connections"
-      isCorrect: false
-      explanation: "Incorrect. Network connections are collected."
+      explanation: "Incorrect. Network transactions are not collected."
   - content: "Which of the actions below is a Device action?"
     choices:
     - content: "Reboot"

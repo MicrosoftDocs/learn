@@ -20,21 +20,21 @@ With live response, analysts can do all of the following tasks:
 
 Before you can initiate a session on a device, make sure you fulfill the following requirements:
 
-**Verify that you're running a supported version of Windows 10.**
+**Verify that you're running a supported version of Windows 10**
 
 Enable live response from the settings page.  You'll need to enable the live response capability in the Advanced features settings page.
 
 Only users with manage security or global admin roles can edit these settings.
 
-**Ensure that the device has an Automation Remediation level assigned to it.**
+**Ensure that the device has an Automation Remediation level assigned to it**
 
 You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
 
-**Enable live response unsigned script execution (optional).**
+**Enable live response unsigned script execution (optional)**
 
 Allowing the use of unsigned scripts may increase your exposure to threats.  Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the Advanced features settings page.
 
-**Ensure that you have the appropriate permissions.**
+**Ensure that you have the appropriate permissions**
 
 Only users who have been provisioned with the appropriate permissions can initiate a session.  The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.  Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
 
@@ -93,7 +93,7 @@ The following commands are available for user roles that are granted the ability
 | Command| Description|
 | :--- | :--- |
 | analyze| Analyses the entity with various incrimination engines to reach a verdict.|
-| "getfile"| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with [getfile] to automatically run the prerequisite command.|
+| getfile| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with getfile to automatically run the prerequisite command.|
 | run| Runs a PowerShell script from the library on the device.|
 | library| Lists files that were uploaded to the live response library.|
 | putfile| Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
@@ -110,9 +110,9 @@ For scenarios when you'd like to get a file from a device you're investigating, 
 
 The following file size limits apply:
 
-- "getfile" limit: 3 GB
+- getfile limit: 3 GB
 
-- [fileinfo] limit: 10 GB
+- fileinfo limit: 10 GB
 
 - library limit: 250 MB
 
@@ -120,7 +120,7 @@ The following file size limits apply:
 
 To enable your security operations team to continue investigating an impacted device, files can now be downloaded in the background.
 
-- To download a file in the background, in the live response command console, type **download <file_path> &.**
+- To download a file in the background, in the live response command console, type **download <file_path> &**.
 
 - If you are waiting for a file to be downloaded, you can move it to the background by using **Ctrl + Z**.
 
@@ -159,7 +159,7 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 ### Automatically run prerequisite commands
 
-Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the download command without fileinfo will return an error. You can use the auto flag to automatically run prerequisite commands, for example:
+Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the download command without *fileinfo* will return an error. You can use the auto flag to automatically run prerequisite commands, for example:
 
 ```console
 getfile c:\Users\user\Desktop\work.txt -auto
@@ -262,7 +262,7 @@ Live response has the following limitations:
 
 - The following file size limits apply:
 
-  - [getfile] limit: 3 GB
+  - getfile limit: 3 GB
 
   - fileinfo limit: 10 GB
 
