@@ -38,7 +38,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     git status
     ```
 
-1. Now, use the following commands to add the new file in the "assets" directory to the index and commit all changes:
+1. Now, use the following commands to add the new file in the "Assets" directory to the index and commit all changes:
 
     ```bash
     git add .

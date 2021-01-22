@@ -37,7 +37,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     cd Alice
     git clone ../Shared.git .
     git config user.name Alice
-    git config user.email aice@contoso.com
+    git config user.email alice@contoso.com
     ```
 
 1. Clone and configure the repo for Bob:
