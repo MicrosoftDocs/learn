@@ -6,7 +6,7 @@ Azure Defender is the Cloud workload protection feature of Azure Security Center
 
 The Azure Defender dashboard in Security Center provides visibility and control of the CWP features for your environment:
 
-![Azure Defender Dashboard](../media/sample-defender-dashboard.png)
+:::image type="content" source="../media/sample-defender-dashboard.png" alt-text="Azure Defender Dashboard.":::
 
 ## What resource types can Azure Defender secure?
 
