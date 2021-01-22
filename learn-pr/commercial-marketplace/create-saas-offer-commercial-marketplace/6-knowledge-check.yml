@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.create-saas-offer-commercial-marketplace.6-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Review of commercial marketplace SaaS offer concepts
+  ms.date: 01/22/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: 'Knowledge check'
+  questions:
+  - content: 'To do'
+    choices:
+    - content: 'To do'
+      isCorrect: false
+      explanation: 'To do'
+    - content: 'To do'
+      isCorrect: false
+      explanation: 'To do'
+    - content: 'To do'
+      isCorrect: true
+      explanation: 'To do'
+    - content: 'To do'
+      isCorrect: false
+      explanation: 'To do'

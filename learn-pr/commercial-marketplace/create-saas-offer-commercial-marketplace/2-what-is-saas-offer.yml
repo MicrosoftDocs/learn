@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-saas-offer-commercial-marketplace.2-what-is-saas-offer
+title: What is a SaaS offer?
+metadata:
+  title: What is a SaaS offer?
+  description: In this unit, we explain how SaaS applications are sold through the commercial marketplace
+  ms.date: 01/22/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-saas-offer.md)]
