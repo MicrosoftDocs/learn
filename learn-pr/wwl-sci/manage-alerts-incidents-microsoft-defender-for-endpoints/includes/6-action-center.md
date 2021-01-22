@@ -14,7 +14,7 @@ The action center consists of two main tabs: Pending actions and History.
 
 Select Automated Investigations, then Action center.
 
-![Action Center](../media/action-center.png)
+:::image type="content" source="../media/action-center.png" alt-text="action center detail":::
 
 When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be Malicious, Suspicious, or No threats found depending on:
 

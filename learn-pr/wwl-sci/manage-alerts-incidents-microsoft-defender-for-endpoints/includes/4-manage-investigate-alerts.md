@@ -1,12 +1,12 @@
 You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device.  Selecting an alert in either of those places brings up the Alert management pane.
 
-![Alert Queue](../media/alert-queue.png)
+:::image type="content" source="../media/alert-queue.png" alt-text="Alert Queue":::
 
-## Alert Management
+## Alert management
 
 You can view and set metadata about the Alert preview or Alert details page.
 
-![Alert Page](../media/alert-manage.png)
+:::image type="content" source="../media/alert-manage.png" alt-text="Alert page":::
 
 The metadata fields include and actions include:
 
@@ -110,7 +110,7 @@ You can choose not to set a classification or specify whether an alert is a true
 
 You can add comments and view historical events about an alert to see previous changes made to the alert.  Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.  Added comments instantly appear on the pane.
 
-## Alert Investigation
+## Alert investigation
 
 Investigate alerts that are affecting your network, understand what they mean, and how to resolve them.
 

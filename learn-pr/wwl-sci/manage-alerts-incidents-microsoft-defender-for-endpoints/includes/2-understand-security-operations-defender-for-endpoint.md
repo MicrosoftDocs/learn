@@ -8,7 +8,7 @@ The response capabilities give you the power to promptly remediate threats by ac
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUV?rel=0]
 
-## Defender for Endpoint Terminology
+## Defender for Endpoint terminology
 
 It is important for you to understand the different components and how they work together.
 
@@ -32,7 +32,7 @@ Based on the Alerts generated, Defender for Endpoint groups the Alerts into Inci
 
 Automated Investigation performed by Defender for Endpoint
 
-## Security Operations Dashboard
+## Security operations dashboard
 
 The Security operations dashboard provides a high-level overview of where detections were seen and highlights where response actions are needed.
 
@@ -56,25 +56,25 @@ The dashboard displays a snapshot of:
 
 - Suspicious activities
 
-## Preview information from Lists
+## Preview information from lists
 
 The Defender for Endpoint portal pages provides preview information for most list-related data.
 
 In this screenshot, the three highlighted areas are the circle, the greater than symbol, and the actual link.
 
-![Preview options from a list](../media/list-navigate-1.png)
+:::image type="content" source="../media/list-navigate-1.png" alt-text="Preview options from a list.":::
 
 ### Circle
 
 Selecting the circle will open a blade on the right side of the page with a preview of the line item with an option to open the full page of information.
 
-![Preview blade](../media/list-navigate-3.png)
+:::image type="content" source="../media/list-navigate-3.png" alt-text="Preview blade":::
 
 ### Greater than symbol
 
 If related records can be displayed, selecting the greater than sign will display them below the current record.
 
-![Related records](../media/list-navigate-2.png)
+:::image type="content" source="../media/list-navigate-2.png" alt-text="Related records":::
 
 ### Link
 
