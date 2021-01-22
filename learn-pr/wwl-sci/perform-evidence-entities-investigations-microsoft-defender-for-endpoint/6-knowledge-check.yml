@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following artifact types does not have an investigation page?"
+  - content: "Which of the following artifact types has an investigation page?"
     choices:
     - content: "Domain"
-      isCorrect: false
-      explanation: "Incorrect.  There is an investigation page for Domain."
-    - content: "File"
-      isCorrect: false
-      explanation: "Incorrect.  There is an investigation page for File."
-    - content: "Threat Actor"
       isCorrect: true
-      explanation: "Correct.  Threat Actor is not an forensic artifact that can be collected."
+      explanation: "correct. There is an investigation page for Domain."
+    - content: "Hunter"
+      isCorrect: false
+      explanation: "Incorrect. There is not an investigation page for Hunter."
+    - content: "Threat Actor"
+      isCorrect: false
+      explanation: "Incorrect. Threat Actor is not an forensic artifact that can be collected."
   - content: "What information is provided by a deep file analysis?"
     choices:
     - content: "Command history"
@@ -38,14 +38,14 @@ quiz:
     - content: "Code change history"
       isCorrect: false
       explanation: "Incorrect. The code change history is not reported."
-  - content: "Which information is not provided on the user account page?"
+  - content: "Which information is provided on the user account page?"
     choices:
     - content: "Associated alerts"
-      isCorrect: false
-      explanation: "Insert the first incorrect answer feedback in this cell."
-    - content: "Security groups"
       isCorrect: true
-      explanation: "Correct.  The security groups the user accounts belongs is not shown."
-    - content: "Observed in organization"
+      explanation: "Correct. This is provided."
+    - content: "Security groups"
       isCorrect: false
-      explanation: "Insert the second incorrect answer feedback in this cell."
+      explanation: "Incorrect.  The security groups the user accounts belongs is not shown."
+    - content: "Threat hunt ID"
+      isCorrect: false
+      explanation: "Incorrect.  The Threat hunt ID is not shown."

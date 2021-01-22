@@ -6,4 +6,12 @@ You start by reviewing the incident and understand all the related alerts, devic
 
 The file has never been seen in the organization other than this incident. If this is malware, it is good to know whether this file impacted only this machine.  You decide to submit a deep analysis on the file to see if the file performs any suspicious activities.  The results show suspicious activity; you then select Add Indicator from the file page to ensure Defender for Endpoint will use the indicator for detections.  
 
+After completing this module, you will be able to:
 
+- Investigate files in Microsoft Defender for Endpoint
+- Investigate domains and IP addresses in Microsoft Defender for Endpoint
+- Investigate user accounts in Microsoft Defender for Endpoint
+
+## Prerequisites
+
+Intermediate understanding of Windows 10.

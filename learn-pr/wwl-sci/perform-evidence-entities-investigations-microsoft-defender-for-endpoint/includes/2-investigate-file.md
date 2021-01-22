@@ -1,6 +1,6 @@
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
-![File Page](../media/file-page.png)
+:::image type="content" source="../media/file-page.png" alt-text="File page information":::
 
 There are many ways to access the detailed profile page of a specific file. For example, you can use the search feature, select a link from the Alert process tree, Incident graph, Artifact timeline, or select an event listed in the Device timeline.  You can get information from the following sections in the file view:
 
@@ -142,7 +142,7 @@ Response actions run along the top of the file page and include:
 
 - Action center
 
-### Stop and Quarantine File
+### Stop and quarantine file
 
 You can contain an attack in your organization by stopping the malicious process and quarantining the file where it was observed.
 
@@ -196,16 +196,16 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 - Open an elevated command-line prompt on the device:
 
-  - a. Go to Start and type cmd.
+  - Go to Start and type *cmd*.
 
-  - b. Right-click Command prompt and select Run as administrator.
+  - Right-click Command prompt and select **Run as administrator**.
 
 - Enter the following command, and press Enter:
 
-```powershell
-“%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+   ```powershell
+   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
 
-```
+   ```
 
 ### Add indicator to block or allow a file
 
@@ -223,7 +223,7 @@ When you add an indicator hash for a file, you can choose to raise an alert and 
 
 Selecting Download file from the response actions allows you to download a local, password-protected .zip archive containing your file.  When you select this action, a fly-out will appear. From the fly-out, you can record a reason as to why you are downloading the file. You can also set a password to open the file.  If a file is not already stored by Defender for Endpoint, you cannot download it. Instead, you will see a Collect file button in the same location. If a file has not been seen in the organization in the past 30 days, Collect file will be disabled.
 
-### Check activity details in Action center
+### Check activity details in the action center
 
 The Action center provides information on actions that were taken on a device or file. You’ll be able to view the following details:
 

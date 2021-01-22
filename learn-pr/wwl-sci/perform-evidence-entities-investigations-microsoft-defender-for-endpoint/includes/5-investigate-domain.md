@@ -40,13 +40,13 @@ You can view events from different periods of time by entering the dates into th
 
 Investigate a domain:
 
-1. Select URL from the Search bar drop-down menu.
+1. Select **URL** from the Search bar drop-down menu.
 
 1. Enter the URL in the Search field.
 
-1. Select the search icon or press Enter. Details about the URL are displayed. Note: search results will only be returned for URLs observed in communications from devices in the organization.
+1. Select the search icon or press Enter. Details about the URL are displayed. Search results will only be returned for URLs observed in communications from devices in the organization.
 
 1. Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all devices in the organization observed communicating with the URL, the file associated with the communication and the last date observed.
 
-1. Clicking any of the device names will take you to that device's view, where you can continue to investigate reported alerts, behaviors, and events.
+1. Selecting any of the device names will take you to that device's view, where you can continue to investigate reported alerts, behaviors, and events.
 

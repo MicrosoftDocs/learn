@@ -20,7 +20,7 @@ When you investigate a user account entity, you'll see:
 
 - Observed locations in the organization (devices logged on to)
 
-![User Account Page](../media/advanced-threat-protection-user-details-view.png)
+  ![User Account Page](../media/advanced-threat-protection-user-details-view.png)
 
 ### User details
 
