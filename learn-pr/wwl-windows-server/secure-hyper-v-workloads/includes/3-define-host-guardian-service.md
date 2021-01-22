@@ -25,7 +25,7 @@ The following steps and supplemental diagram provide an overview of how HGS is u
 1. The KPS sends the key to GH-1.
 1. GH-1 uses the key to unlock and start SVM-1.
 
-:::image type="content" source="../media/m24-hgs-in-action.png" alt-text="A diagram of the steps (listed in the text) that are required to power on a shield virtual machine in a guarded fabric." border="false":::
+:::image type="content" source="../media/m24-hgs-action.png" alt-text="A diagram of the steps (listed in the text) that are required to power on a shield virtual machine in a guarded fabric." border="false":::
 
 ## Requirements for a HGS server
 
