@@ -1,12 +1,12 @@
-Azure Quantum offers optimization solutions, where some divisions of the space team can run optimization algorithms using classical hardware. For example the logistics and maintenance divisions will need this optimization service for cargo vessel loading. There are other optimization problems of interest, such as optimizing traveling time between planets, job scheduling prioritization, or finding the equilibrium configuration of certain proteins of a recently discovered form of life.
+Azure Quantum offers optimization solutions, where some divisions of the space team can run optimization algorithms using classical hardware. For example, the logistics and maintenance divisions will need this optimization service for cargo vessel loading. There are other optimization problems of interest, such as optimizing traveling time between planets, job scheduling prioritization, or finding the equilibrium configuration of certain proteins of a recently discovered form of life.
 
 ![Figure Azure Quantum Optimizations Problems](../media/5-azure-quantum-optimization-solutions.png)
 
 
-Complex optimization problems exist across every industry, such as vehicle routing, supply chain management, portfolio optimization, power grid management and many others. Optimization algorithms are also at the core of many machine learning methods. These real-world problems are very valuable to solve in order to reduce costs, accelerate processes, or reduce risks. Many real-world optimization problems remain unsolvable by classical computing despite the remarkable advancement in both algorithms and computing power over the past decades.
+Complex optimization problems exist across every industry: vehicle routing, supply chain management, portfolio optimization, power grid management and many others. Optimization algorithms are also at the core of many machine learning methods. Solving these real-world problems results in high-value benefits, such as reduced costs, accelerated processes, or reduced risks. Many real-world optimization problems still remain unsolvable by classical computing despite the remarkable advancement in both algorithms and computing power over the past decades.
 
 Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run
-on classical hardware, also called quantum-inspired algorithms. These algorithms allow us to exploit some of the advantages of
+on classical hardware, also called *quantum-inspired* algorithms. These algorithms allow us to exploit some of the advantages of
 quantum computing approaches today on classical hardware, providing a speedup over traditional approaches. Using quantum solutions on classical hardware also prepares us for the future of quantum optimization on actual quantum hardware.
 
 ## Application case studies
@@ -16,8 +16,8 @@ quantum computing approaches today on classical hardware, providing a speedup ov
 Traffic congestion results in a significant time and cost burden in many metropolitan areas. Another important use
 case for vehicle routing is the efficient evacuation of large urban areas.
 
-An example of applying quantum-inspired optimization is to significantly reduce both congestion and travel time. Ford and Microsoft worked together on a solution that showed a more than 70% decrease in congestion, as well as a reduction of
-average travel time of approximately 8%  in preliminaries studies with up to 5,000 vehicles and compared to the best routes provided by Bing Maps. 
+One example of applying quantum-inspired optimization is to significantly reduce both traffic congestion and travel time. Ford and Microsoft have worked together on a solution that shows a more than 70% decrease in traffic congestion and a reduction of
+average travel time of approximately 8%,  in preliminary studies with up to 5,000 vehicles and compared to the best routes provided by Bing Maps. 
 
 [Traffic optimizations](https://arxiv.org/abs/1708.01625) of approximately 400 vehicles takes 20 seconds on a quantum annealing machine. In the case study, the
 quantum-inspired algorithms tackle a comparable problem in only 0.02 seconds on a single CPU core. Larger problems could also be
@@ -46,9 +46,9 @@ rotor models to simulate what turbulence looks like in the air. Azure Quantum ha
 minimum and maximum energy configurations, which helps Qubit Engineering apply quantum theories to calculate the optimum
 placement of windmills within a space.
 
-By understanding environmental factors and adding how each
-windmill might interact with each other, Qubit Engineering has created
-an abstract modeling scoring system to find optimal placement for
+By understanding environmental factors and adding how the
+windmills might interact with each other, Qubit Engineering has created
+an abstract modeling scoring system to find the optimal placement for
 maximum energy production under a variety of circumstances.
 
 ### Signal processing
@@ -60,11 +60,11 @@ Microsoft Quantum has teamed up with Case Western Reserve University to use besp
 
 When optimizing for speed, the pulse sequences generated are typically shorter, resulting in up to three times faster scans, and delivery of comparable image quality. 
 
-When optimizing for scan precision, these sequences can yield as much as 30% improvement in resolution, potentially
-leading to earlier diagnostics and treatment.
+When optimizing for scan precision, these sequences can yield as much as a 30% improvement in resolution, potentially
+leading to an earlier diagnosis and treatment.
 
-Faster imaging, as well as imaging with better precision at fixed scan time, can lead to new diagnostics tools that may help tackle today’s medical challenges while reducing the cost and side effects of the scans.
+Faster imaging, as well as imaging with better precision at a fixed scan time, can lead to new diagnostics tools that may help tackle today’s medical challenges while reducing the cost and side effects of the scans.
 
 Read more about applications of quantum-inspired optimizations in the [Quantum Impact case studies.](https://azure.microsoft.com/en-us/resources/whitepapers/search/?term=quantum).
 
-Understanding the power of quantum-inspired optimization, you will work with your crew in the [module 9]() to help the logistics division efficiently load cargo vessels and in the [module 11]() with the maintenance division to prioritize all kinds of jobs on the spaceship. 
+Understanding the power of quantum-inspired optimization, you will work with your crew in [module 9]() to help the logistics division efficiently load cargo vessels, and in [module 11]() with the maintenance division to prioritize different kinds of jobs on the spaceship. 
