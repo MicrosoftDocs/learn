@@ -3,7 +3,7 @@ uid: learn.wwl.connect-windows-hosts-to-azure-sentinel
 metadata:
   title: Connect Windows hosts to Azure Sentinel
   description: "Connect Windows hosts to Azure Sentinel"
-  ms.date: 01/16/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
