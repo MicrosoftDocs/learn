@@ -3,18 +3,18 @@ uid: learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
 metadata:
   title: Connect data to Azure Sentinel using data connectors
   description: "Connect data to Azure Sentinel using data connectors"
-  ms.date: 01/17/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect data to Azure Sentinel using data connectors
-summary: The primary approach to connect log data is using the Azure Sentinel provided data connectors.  This module provides an overview of the different data connectors.
+summary: The primary approach to connect log data is using the Azure Sentinel provided data connectors.  This module provides an overview of the available data connectors.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Explain the use of data connectors in Azure Sentinel
   - Describe the Azure Sentinel data connector providers
-  - Explain the CEF and Syslog option
+  - Explain the Common Event Format and Syslog connector differences in Azure Sentinel
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
