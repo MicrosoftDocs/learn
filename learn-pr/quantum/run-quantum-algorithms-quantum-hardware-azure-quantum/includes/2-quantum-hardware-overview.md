@@ -1,15 +1,15 @@
 Modern classical computers are based on transistor technologies made from semiconductors to implement classical logic operations. Quantum computers take
 radically different approaches to exploit the properties of quantum systems to implement qubits and quantum operations.
 
-In this unit, you will learn about different challenges we face to build a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed.
+In this unit, you will learn about the challenges of building a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed.
 
-## Harnessing quantum systems to make computations
+## Harnessing quantum systems to perform computations
 
 To build quantum computers, we need full access to the controllable quantum
-systems to represent the qubits that we use to store the quantum information. In
+systems that will represent the qubits we'll use to store and process the quantum information. In
 general, a functional quantum computer should fulfill the following criteria:
 
-- **Scalability of qubits:** since quantum computers are based on the
+- **Scalability:** since quantum computers are based on the
   manipulation of quantum information by using qubits, we need a system that allows scalability to a large number of qubits. A qubit can be represented by any
   physical system with **two** *states* or *levels* that can be prepared in a
   quantum superposition.
@@ -33,7 +33,7 @@ general, a functional quantum computer should fulfill the following criteria:
   the measurement affects the state of the register. It's often performed only
   at the end of the computation.
 
-These five criteria are often known as the *Divicenzo* criteria for quantum
+These five criteria are often known as the *DiVincenzo* criteria for quantum
 computation.
 
 Building devices that meet these five criteria is one of the most demanding
@@ -42,7 +42,9 @@ astounding advances in condensed matter physics and quantum optics are allowing
 companies and universities to build the first working versions of quantum
 computers. Microsoft is partnering with some of the best-in-class quantum computer
 manufacturers around the world to give you access to the latest quantum
-computing solutions through Azure Quantum. Let's see an overview of the
+computing solutions through Azure Quantum. 
+
+Here is an overview of the
 different technologies used to create quantum computers.
 
 ### Trapped ion quantum computers
@@ -119,17 +121,17 @@ example:
 - **Photonic quantum computers:** use polarized photons to represent qubits
   and light guides to implement quantum operations.
 - **Topological quantum computers:** a theoretical proposal for quantum
-  computers that use a new type of material called *anyons* to create qubits
+  computers that use a new type of particles called *anyons* to create qubits
   very resilient to noise.
 
 There many other proposals for quantum computers since the field is still under
-development. With Azure Quantum you have access to an ever-increasing collection
+development. With Azure Quantum you have access to an ever-growing collection
 of quantum computers to run your own quantum algorithms.
 
 ### Azure Quantum for cloud quantum computing
 
 Azure Quantum is a cloud computing hub where you can connect to different
-industry leading providers to use their most advanced quantum computers.
+industry leading providers of quantum hardware to use their most advanced quantum computers.
 
 ![Alt_text=Diagram of the Azure Quantum
 service](../media/2-azure-quantum-flow-diagram.png)
@@ -137,7 +139,7 @@ service](../media/2-azure-quantum-flow-diagram.png)
 You just need an Azure subscription to start submitting quantum computing jobs
 to Azure Quantum. These jobs will be queued by the provider to be run in the
 target device you select. Through Azure Quantum you can manage your jobs and
-monitor their status.
+monitor their status, as well as get the results once they are completed.
 
 In the next unit, you'll use Azure Quantum to submit your first job to a quantum
 computer.

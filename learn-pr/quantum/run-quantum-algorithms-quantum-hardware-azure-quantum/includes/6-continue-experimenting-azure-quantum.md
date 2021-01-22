@@ -1,6 +1,6 @@
 Now that you know how to submit your work to Azure Quantum, you are ready to start running your own experiments with real quantum hardware.
 
-Please have in mind that current quantum computers offer a limited number of qubits, but this number is expected to grow in the next years. Meanwhile, as a member of the quantum space explorer team, you will start by testing your quantum applications and preparing yourself for the quantum revolution. Let's see what you can do with current quantum devices.
+Please keep in mind that current quantum computers offer a very limited number of qubits, but this number is expected to grow in the next years. Meanwhile, as a member of the quantum space explorer team, you can start by testing your quantum applications and preparing yourself for the quantum revolution. Let's see what you can do with current quantum devices.
 
 ## Run tests of quantum mechanics
 
@@ -10,9 +10,9 @@ For example, you can use Q# and Azure Quantum to verify the validity of quantum 
 
 ## Implement and test early prototypes of quantum algorithms
 
-Although the reduced number of qubits may be a limitation to run practical quantum applications today, these early quantum computers are a very useful tools to test the working principle of quantum algorithms.
+Although the small number of qubits may not allow to run practical quantum applications today, the early quantum computers are very useful tools to test the working principle of quantum algorithms.
 
-Sometimes, hardware results differ from those of the simulations since simulators often take assumptions that don't hold in real systems. These differences need to be taken in account in the programs to make them runnable in real quantum computers.
+Sometimes, hardware results differ from those of the simulations, since simulators often take assumptions that don't hold in real systems. These differences need to be taken in account in the programs to make them runnable in real quantum computers.
 
 Testing simplified versions of quantum algorithms in hardware helps to discover these limitations and adapt the programs to overcome them. By testing your algorithms in the quantum computers of today, you can prepare your programs for the future.
 
