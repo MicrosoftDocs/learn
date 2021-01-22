@@ -1,4 +1,4 @@
-Sometimes a company may find themselves involved in litigation and they need to find electronic information to be used as evidence.
+Sometimes a company may become involved in litigation and need to find electronic information to be used as evidence.
 
 Electronic discovery or eDiscovery tools, can be used to search for content in Exchange Online mailboxes, Microsoft 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, Skype for Business conversations, and Yammer teams. You can search across mailboxes and sites in a single eDiscovery search by using the Content Search tool. And you can use Core eDiscovery cases to identify, hold, and export content found in mailboxes and sites.
 
@@ -9,4 +9,4 @@ Microsoft 365 provides the following eDiscovery tools:
 - Core eDiscovery
 - Advanced eDiscovery
 
-Each of these tools is described in the subsequent units.
+Each of these tools is described in the following units.
