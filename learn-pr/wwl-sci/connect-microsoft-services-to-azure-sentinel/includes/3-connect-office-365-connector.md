@@ -12,5 +12,5 @@ To view the connector page:
 
 - Select **Apply Changes**.
 
-![Office 365 Connector page](../media/office365.png)
+![Office 365 Connector page](../media/office-365.png)
 

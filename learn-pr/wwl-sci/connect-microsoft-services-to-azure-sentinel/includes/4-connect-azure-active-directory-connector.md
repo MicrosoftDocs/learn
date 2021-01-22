@@ -10,5 +10,5 @@ To view the connector page:
 
 - Mark the checkboxes next to the logs you want to stream into Azure Sentinel, and select **Connect**.
 
-![Azure Active Directory connector page](../media/aad.png)
+![Azure Active Directory connector page.](../media/azure-active-directory.png)
 
