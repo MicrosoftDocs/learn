@@ -31,10 +31,10 @@ quiz:
     choices: 
     - content: 'True'
       isCorrect: false
-      explanation: 'In the Azure portal, you can select the Time Series Insights Explorer URL to get visualization.'
+      explanation: 'In the Azure portal, you can select the Time Series Insights Explorer URL to get out-of-the-box visualization.'
     - content: 'False'
       isCorrect: true
-      explanation: 'In the Azure portal, you can select the Time Series Insights Explorer URL to get visualization.'
+      explanation: 'In the Azure portal, you can select the Time Series Insights Explorer URL to get out-of-the-box visualization.'
 
   - content: 'What kind of data storage is supported by Time Series Insights? Select all options that apply.'
     choices: 
