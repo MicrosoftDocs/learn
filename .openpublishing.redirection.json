@@ -4496,46 +4496,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/1-oop.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/2-exercise-classes.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/3-attributes.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/4-exercise-add-attributes.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/5-methods.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/6-exercise-add-methods.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/7-exercise-inheritance.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/python-object-oriented-programming/8-summary.md",
-      "redirect_url": "/learn/modules/python-object-oriented-programming/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
       "redirect_document_id": false
@@ -4613,6 +4573,11 @@
     {
       "source_path": "learn-pr/wwl-azure/review-planning-managing-costs/8-walkthrough-use-azure-tco-calculator.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/2-describe-cloud-security-posture-management-cspm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/2-describe-cloud-security-posture-management",
       "redirect_document_id": false
     }
   ]
