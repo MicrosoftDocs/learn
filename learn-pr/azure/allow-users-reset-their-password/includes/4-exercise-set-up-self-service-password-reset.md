@@ -84,7 +84,10 @@ Now you're ready to enable SSPR for the group.
 
 Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
 
-1. In a new browser window, go to https://aka.ms/ssprsetup.
+> [!NOTE] 
+>  If you get the message: The administrator has not enabled this feature. Use private/incognito mode in your web browser.   
+
+1. In a new browser window, go to https://aka.ms/ssprsetup. 
 1. Sign in with the user name balas@organization-domain-name.onmicrosoft.com and the password that you noted earlier.
 1. If you're asked to update your password, enter a new password of your choice. Make sure you note the new password.
 1. Next to **Authentication phone is not configured**, select **Set it up now**.
