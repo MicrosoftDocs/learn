@@ -14,17 +14,17 @@ The following types of alerts are ingested:
 
 - User restricted from sending email
 
-![Microsoft Defender for Office 365 connector page](../media/office365atp.png)
+![Microsoft Defender for Office 365 connector page.](../media/office-365-advanced-threat-protection.png)
 
 To view the connector page:
 
-- Select Data connectors page.
+1. Select Data connectors page.
 
-- Select Microsoft Defender for Office 365 (may still be called Office 365 Advanced Threat Protection).
+1. Select **Microsoft Defender for Office 365** (may still be called Office 365 Advanced Threat Protection).
 
-- Then select the Open connector page on the preview pane.
+1. Then select the Open connector page on the preview pane.
 
-- Select Connect to start streaming the alerts.
+1. Select **Connect** to start streaming the alerts.
 
-- Select whether alerts from Microsoft Defender for Office 365 automatically generate incidents by selecting Enable.
+1. Select whether alerts from Microsoft Defender for Office 365 automatically generate incidents by selecting Enable.
 

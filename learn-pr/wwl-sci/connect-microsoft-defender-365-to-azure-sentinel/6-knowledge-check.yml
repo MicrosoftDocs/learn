@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/16/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which connector would you use to connect the raw data from Microsoft Defender for Endpoint"
+  - content: "Which connector would you use to connect the raw data from Microsoft Defender for Endpoint?"
     choices:
     - content: "Microsoft Defender for Office 365"
       isCorrect: false

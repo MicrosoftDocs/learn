@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-microsoft-defender-365-to-azure-sentinel
 metadata:
-  title: Connect Microsoft Defender 365 to Azure Sentinel
-  description: "Connect Microsoft Defender 365 to Azure Sentinel"
-  ms.date: 01/16/2021
+  title: Connect Microsoft 365 Defender to Azure Sentinel
+  description: "Connect Microsoft 365 Defender to Azure Sentinel"
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Connect Microsoft Defender 365 to Azure Sentinel
-summary: Learn about the data provided by Azure Sentinel connectors for Microsoft 365 Defender and their configuration options.
+title: Connect Microsoft 365 Defender to Azure Sentinel
+summary: Learn about the configuration options and data provided by Azure Sentinel connectors for Microsoft 365 Defender.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Activate the Microsoft 365 Defender connector
-  - Activate the Microsoft Defender for Endpoint connector
-  - Activate the Microsoft Defender for Office 365
+  - Activate the Microsoft 365 Defender connector in Azure Sentinel
+  - Activate the Microsoft Defender for Endpoint connector in Azure Sentinel
+  - Activate the Microsoft Defender for Office 365 connector in Azure Sentinel
 prerequisites: |
   Intermediate understanding of Microsoft 365.
 iconUrl: /learn/achievements/generic-badge.svg
