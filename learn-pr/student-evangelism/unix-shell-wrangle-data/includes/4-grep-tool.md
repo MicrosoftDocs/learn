@@ -4,11 +4,13 @@ Let's get started with the basic usage of `grep`. The basic syntax for `grep` is
 
 Let's say you want to find all the lines that contain the pattern `*.novo.dk` in the `NASA-logs-1995.txt` file. We know from the previous unit that the regular expression for this pattern is `\*\.novo\.dk`. Notice how we're escaping the special symbols with a back slash (`\`).
 
-> [!Tip]
->
-> Close the Cloud Shell editor to see the entire output in the terminal.
+First, close the Cloud Shell editor so that you can see the entire output in the terminal. There are two ways to close the editor:
 
-Run the following command to match the regular expression by using `grep`:
+- Select <kbd>CTRL+q</kbd> on your keyboard.
+- Select the three dots icon, and then select **Close Editor**.
+     :::image type="content" source="../media/close-cloud-shell-sandbox-editor.png" alt-text="Screenshot showing the options icon and Close Editor option.":::
+
+Next, run the following command to match the regular expression by using `grep`:
 
 ```bash
 grep '\*\.novo\.dk' NASA-logs-1995.txt
