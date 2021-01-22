@@ -57,7 +57,7 @@ Managing Hyper-V by using the Server Core configuration provides the following b
 
 Use Best Practices Analyzer to identify configuration-specific issues that need to be addressed. You can also use resource metering to monitor how hosted VMs are utilizing their allocated server resources and to determine which VMs use a disproportionate amount of a host's resources.
 
->[!tip]
+>[!TIP]
 > If the performance of a VM has an adverse impact on the performance of another VM that's on the same Hyper-V host server, consider migrating the VMs to different hosts.
 
 ## Use generation 2 VMs if supported by the guest OS
