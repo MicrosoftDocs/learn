@@ -51,7 +51,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Use the browser to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
 1. Connect to your VM by using the remote desktop connection.
-1. Open thee file share in the Azure portal, upload the azcopy_windows file so it is avalibal on the VM. Copy to the desktop for easy use.
+1. Open the file share in the Azure portal, upload the azcopy_windows file so it is avalibal on the VM. Copy to the desktop for easy use.
 1. Open the folder that contains the zip file on the VM.
 
     ![Screenshot of expanding the AzCopy zip folder](../media/6-unzip-azcopy.png)
