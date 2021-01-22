@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When browsing Microsoft compliance documentation, you have found several documents that are specific to your industry. What is the best way of ensuing you keep up to date with the information they contain?"
+  - content: "What is the best way of staying current with Microsoft compliance documentation available through the Service Trust Portal?"
     choices:
     - content: "Save the documents to your My Library."
       isCorrect: true
