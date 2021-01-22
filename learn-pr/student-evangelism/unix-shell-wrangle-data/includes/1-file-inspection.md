@@ -24,14 +24,12 @@ As a developer, you'll often need to extract information from logs. In this modu
 
      ```bash
      cd data
-
      ```
 
 1. Verify that you have the correct files by using the command `ls`.
 
      ```bash
      ls
-
      ```
 
 You should see a `NASA-software-API.txt` file and a `NASA-logs-1995.txt` file.
