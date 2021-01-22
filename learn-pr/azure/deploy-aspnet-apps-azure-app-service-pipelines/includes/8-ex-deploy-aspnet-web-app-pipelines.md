@@ -38,7 +38,8 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 12. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
 13. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
 14. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and, in the list of results, select the **Azure App Service Settings** task entry.
-15. On the **Azure App Service deploy** pane, in the **Azure subscription** dropdown list, select the **labAzureSubscription** entry, in the **App Service name** dropdown list. Enter **$(WEBAPPNAME)**, in the **Resource group** dropdown list, enter **$(RESOURCEGROUPNAME)**, in the **Connection Strings** text box, enter the following text, and then select **Add**.
+15. On the **Azure App Service Settings** pane, in the **Azure subscription** dropdown list, select the **labAzureSubscription** entry. In the **App Service name** dropdown list, enter **$(WEBAPPNAME)**. In the **Resource group** dropdown list, enter **$(RESOURCEGROUPNAME)**. In the **Connection Strings** text box, enter the following text, and then select **Add**.
+
 
    ```json
    [
