@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.collaborate-with-git.4a-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review what you've learned in the Collaborate with Git module.
+  ms.date: 01/30/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+durationInMinutes: 10      
+content: |
+  [!include[](includes/4a-knowledge-check.md)]
+quiz:
+  title: ''
+  questions:
+  - content: 'What is the primary advantage of the distributed nature of Git?'
+    choices:
+    - content: "Multiple authors can contribute changes to a project from locations around the world. Git automatically merges the changes into a single project repo."
+      isCorrect: false
+      explanation: "That's not quite right. Multiple authors in different locations can work together on a project by using Git, but merging changes isn't automatic. Each contributor should use the commands supplied in Git to verify incoming changes before merging these with their own work."    
+    - content: "Multiple contributors can work together on a project without fear of overwriting each other's work. You can check changes from another contributor before merging them with your own."
+      isCorrect: true
+      explanation: "Correct! Git's distributed nature helps all contributors to ensure and maintain the validity of the project content."            
+    - content: "The Git technology consists of files and functions that are distributed to each contributor's machine across a wide-area network. This architecture provides highly-secure data storage and ensures that project repo data can't be corrupted."
+      isCorrect: false
+      explanation: "Incorrect. The Git platform is cloud-based, which enables global participation and ensures for the safest data storage via authenticated access."
+  - content: 'When you copy a repository, what term is used to describe the reference that Git sets up for the original repo?'
+    choices:
+    - content: "origin"
+      isCorrect: false
+      explanation: "That's not quite right. Git uses the name _origin_ to refer to the original repository, but it's not the reference itself."
+    - content: "repo"
+      isCorrect: false
+      explanation: "Incorrect. The term 'repo' is just an abbreviation for _repository_."
+    - content: "remote"
+      isCorrect: true
+      explanation: "Correct! When you clone (copy) a repository, Git creates a reference to the original repo called a _remote_. Git uses the name _origin_ to refer to the remote repo."
+  - content: 'What Git command is used to make a copy of an existing repository?'
+    choices:
+    - content: "`git clone <repo-name>`"
+      isCorrect: false
+      explanation: "That's not quite right. The `git clone` command takes a different parameter as input. Review the description in the [second unit](../1-collaborate-using-pull.md?azure-portal=true)."
+    - content: "`git clone <repo-path>`"
+      isCorrect: true
+      explanation: "Correct! The `git clone` command takes a URL or path to an existing repository as a parameter."
+    - content: "`git copy <repo-name>`"
+      isCorrect: false
+      explanation: "Incorrect. The command to use is `git clone`."
+  - content: 'What Git command can you use to save your current changes, but not use a pull request?'
+    choices:
+    - content: "`git stash`"
+      isCorrect: true
+      explanation: "Correct! The `git stash` command saves the state of your working tree and index by making a couple of temporary commits. This type of save process doesn't affect your repository history."
+    - content: "`git save`"
+      isCorrect: false
+      explanation: "Incorrect. You can learn more about how to use Git with the `git help` command."
+    - content: "`git store`"
+      isCorrect: false
+      explanation: "Incorrect. You can learn more about how to use Git with the `git help` command."
+  - content: 'Suppose you have a project with 10 files in your local working branch of the repo. You recently updated three of the files: toc.yml, intro.txt, and exercise.json. Now you want to create a pull request for only the changes to the JSON file. What set of Git commands should you use to create the pull request for only these changes?'
+    choices:
+    - content: "`git add .` <br> `git commit -m \"my changes for the exercise\"` <br> `git push origin <working-branch>` <br>"
+      isCorrect: false
+      explanation: "That's not quite right. Check the syntax for the `git add` command. The parameter \".\" causes all changes that aren't yet committed (or stashed) to be included in the pull request. How can you modify the syntax so only the file that you want to include is added?"
+    - content: "`git add exercise.json` <br> `git commit -c 'my changes for the exercise'` <br> `git push origin <working-branch>` <br>"
+      isCorrect: false
+      explanation: "Incorrect. Check the syntax for the `git commit` command. The correct flag is \"-m\" and the comment text needs to be enclosed in double quotes."
+    - content: "`git add exercise.json` <br> `git commit -m \"my changes for the exercise\"` <br> `git push origin <working-branch>` <br>"
+      isCorrect: true
+      explanation: "Correct! To push all your current changes, you specify \".\" after `git add`. To push changes for only one file, or a set of files, you enter the specific file names after `git add`."
+    - content: "`git add exercise` <br> `git commit -m \"my changes for the exercise\"` <br> `git push remote <working-branch>` <br>"
+      isCorrect: false
+      explanation: "Incorrect. Check the syntax for the `git add` and `git push` commands. For the `git add` command, be sure to specify the full file name with the extension type (`exercise.json`). For the `git push` command, supply the name of the remote (`origin`) rather than the reference (`remote`)."  
+  
