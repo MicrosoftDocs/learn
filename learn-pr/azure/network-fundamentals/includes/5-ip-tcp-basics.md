@@ -1,4 +1,4 @@
-When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles.
+When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles.4,293,967,296 (4.3 billion) 
 
 In this unit, you'll learn about the main aspects of network communications and why networks are built by using the Transmission Control Protocol/Internet Protocol (TCP/IP). You'll understand the differences between Internet Protocol address standards. Finally, you'll explore subnetting, the Domain Name System (DNS), ports, and the use and role of private IP addresses.
 
@@ -35,7 +35,7 @@ Today, there are two Internet Protocol versions that work within networks.
 
 ### IPv4
 
-Internet Protocol version 4 was released in 1983 and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,293,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose, for example, private networks, local hosts, internet relays, documentation, and subnets.
+Internet Protocol version 4 was released in 1983 and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,294,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose, for example, private networks, local hosts, internet relays, documentation, and subnets.
 
 ### Structure of an IPv4 address
 
