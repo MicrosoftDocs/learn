@@ -72,7 +72,7 @@ With no automation, the automated investigation does not run on your organizatio
 
 Using the no automation option is not recommended because it reduces the security posture of your organization's devices. Consider setting up your automation level to full automation (or at least semi-automation).
 
-## Quickly configure remediation levels on Device groups
+## Quickly configure remediation levels on device groups
 
 Another way to set or update remediation levels on Device groups is in the Settings, General, Auto remediation page.  The page provides a list of Device groups and the current remediation level for each.  Select the row will allow you to adjust the remediation setting.
 

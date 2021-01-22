@@ -4,3 +4,12 @@ You are a Security Operations Analyst working at a company that is implementing 
  
 Device groups provide two primary functions; set the remediation level, and set security access. You meet with your Security Operations team and design device groups to meet both of these functional requirements. You then configure the Remediation Level for each device group and assign the devices.
 
+After completing this module, you will be able to:
+
+- Configure advanced features of Microsoft Defender for Endpoint
+
+- Manage automation settings in Microsoft Defender for Endpoint
+
+## Prerequisites
+
+Intermediate understanding of Windows 10.

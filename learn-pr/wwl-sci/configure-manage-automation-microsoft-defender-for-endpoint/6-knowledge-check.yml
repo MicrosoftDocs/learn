@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/20/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "Semi - files only"
       isCorrect: false
       explanation: "Incorrect.  This is not a valid remediation level."
-  - content: "You need to exclude a custom executable file c:\\myapp\\myapp.exe, which exclusion type should you use?"
+  - content: "A security operations analyst needs to exclude a custom executable file c:\\myapp\\myapp.exe, which exclusion type should they use?"
     choices:
     - content: "File"
       isCorrect: true
@@ -38,7 +38,7 @@ quiz:
     - content: "Folder"
       isCorrect: false
       explanation: "Incorrect. Folder would exclude all files in a folder."
-  - content: "In advanced features, which setting should be turned on to block files even if a third-party antivirus is used."
+  - content: "In advanced features, which setting should be turned on to block files even if a third-party antivirus is used?"
     choices:
     - content: "Enable EDR in block mode"
       isCorrect: true
