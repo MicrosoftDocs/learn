@@ -15,7 +15,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: What's a service you can use to send and receive text messages?
+  - content: What is a service you can use to send and receive text messages?
     choices:  
     - content: Azure Message Bus
       isCorrect: false
@@ -27,26 +27,26 @@ quiz:
       isCorrect: true
       explanation: Correct! The third-party service Twilio can programmatically send and receive text messages.
     
-  - content: With Azure Maps, which is an API endpoint you can retrieve location coordinates from?
+  - content: Which is an Azure Maps API endpoint you can retrieve location coordinates from?
     choices:
     - content: Search - Get Search Address
       isCorrect: true
-      explanation: Correct! The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
+      explanation: Correct! The Search - Get Search Address API endpoint accepts arbitrary locations and returns their coordinates.
     - content: Location - Normalize
       isCorrect: false
-      explanation: The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
+      explanation: Location - Normalize isn't the name of an Azure Maps API endpoint.
     - content: Location - Geocode
       isCorrect: false
-      explanation: The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
+      explanation: Location - Geocode isn't the name of an Azure Maps API endpoint.
 
-  - content: Which HTTP request method was used to connect Twilio to your app?
+  - content: Which HTTP request method did you use to connect Twilio to your application?
     choices:  
     - content: GET
       isCorrect: false
-      explanation: Incorrect. It was not a GET request.
+      explanation: You didn't use a GET request when you set up Twilio to connect to your application.
     - content: HEAD
       isCorrect: false
-      explanation: Incorrect. HEAD requests cannot send data such as the contents of text messages.
+      explanation: You didn't use a HEAD request when you set up Twilio to connect to your application.
     - content: POST
       isCorrect: true
-      explanation: Correct! It was a POST request.
+      explanation: Correct! You used a POST request to connect Twilio to your application.
