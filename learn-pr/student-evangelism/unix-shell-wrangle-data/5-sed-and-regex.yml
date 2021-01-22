@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.unix-shell-wrangle-data.5-sed-and-regex
+uid: learn.student-evangelism.unix-shell-wrangle-data.5-sed-and-regex
 metadata:
   title: Introduction to the stream editor
   description: In this unit, you'll be introduced to the stream editor (`sed`). You'll also learn how to use `sed` with regular expressions to modify text files from the command line.
@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to the stream editor
 durationInMinutes: 3
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/5-sed-and-regex.md)]

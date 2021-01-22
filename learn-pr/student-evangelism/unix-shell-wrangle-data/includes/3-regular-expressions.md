@@ -20,17 +20,23 @@ INPUT: ZSH
 MATCH: false
 ```
 
-If you completed the previous unit, you should now have a sample of the open dataset `NASA-software-API.txt`. We'll use this dataset to do some pattern matching with regex in Visual Studio Code.
+If you completed the previous unit, you should now have a sample of the open dataset `NASA-software-API.txt`. We'll use this dataset to do some pattern matching with regex in the Azure Cloud Shell sandbox.
 
-First, open the `NASA-software-API.txt` file in Visual Studio Code. Next, open the search box by using the key combinations <kbd>Cmd+F</kbd> in macOS or <kbd>Ctrl+F</kbd> in Windows and Linux.
+1. Open the `NASA-software-API.txt` file in Cloud Shell by using `code <filename>`.
 
-Make sure that the `regex` option is switched on, as shown in the following screenshot.
+     ```bash
+     code NASA-software-API.txt
+     ```
 
-:::image type="content" source="../media/clair_vscode_screenshot.png" alt-text="Screenshot showing Visual Studio Code search box and regex option.":::
+1. Next, open the search box by using the key combinations <kbd>Cmd+F</kbd> in macOS or <kbd>Ctrl+F</kbd> in Windows and Linux.
 
-If you enter the words **Open Source** in the search box, Visual Studio Code will match all the string instances. You can use the arrow keys to navigate to the matches in the file.
+1. Make sure that the **regex** option is switched on, as shown in the following screenshot.
 
-:::image type="content" source="../media/NASA-software-capability.png" alt-text="Screenshot showing Visual Studio Code search results in a text file.":::
+      :::image type="content" source="../media/cloud-shell-sandbox-search-regex-selected.png" alt-text="Screenshot showing the Cloud Shell search box and regex option selected.":::
+
+1. Enter the words **Open Source** in the search box. Cloud Shell matches all of the string instances. You can use the keyboard arrow keys to navigate to the matches in the file.
+
+      :::image type="content" source="../media/cloud-shell-sandbox-search-open-source.png" alt-text="Screenshot showing Cloud Shell search results in a text file.":::
 
 This technique might not seem any different from any other use of a search box. But the true power of regex comes when we start using special characters, ranges, and anchors.
 
@@ -38,23 +44,13 @@ This technique might not seem any different from any other use of a search box. 
 
 So far you've learned that you can use regex to make a literal matching of characters. Let's say you want to find the versions of the software specified in the file. You're interested in those versions that have a format similar to `v1`.
 
-You already know that all versions should start with `v`, so you can enclose the rest of the search in brackets (`[]`). The brackets mean "any character in this list." For example:
-
-
-```bash
-v[12345]
-```
+You already know that all versions should start with `v`, so you can enclose the rest of the search in brackets (`[]`). The brackets mean "any character in this list." For example, `v[12345]`.
 
 Using regex like this one is simple enough to do because we only have five digits we're looking for (1-5) in the list. But how would you go about matching the entire alphabet or digits without having to write every single character?
 
-You can define a consecutive range of letters or numbers. For example, for all digits, you would create a range [0-9]. For lowercase alphabetic characters, you can write [a-z].
+You can define a consecutive range of letters or numbers. For example, for all digits, you would create a range `[0-9]`. For lowercase alphabetic characters, you can write `[a-z]`.
 
-For example, if you wanted to find all versions that contain any digits, you would modify the regex to:
-
-
-```bash
-v[1-9]
-```
+For example, if you wanted to find all versions that contain any digits, you would modify the regex to `v[1-9]`.
 
 ### Wildcards
 
@@ -80,39 +76,31 @@ You can now write a regex that will match numbers at the beginning of a line, `^
 
 ### Escaping characters
 
-Let's say we want to find lines in which a period (`.`) is the last character. We know the dollar sign (`$`) is the end-of-line anchor, so we might enter something like this:
-
-
-```bash
-.$
-```
+Let's say we want to find lines in which a period (`.`) is the last character. We know the dollar sign (`$`) is the end-of-line anchor, so we might enter `.$` in the search box.
 
 But this regex won't return what we want. As we covered earlier, the period (`.`) matches any single character. Because every line ends with a character, every line was returned in the results.
 
-How do you prevent a special character from doing its regex function when you want to search for that actual character? You use a backslash (`\`) to escape the character.
+How do you prevent a special character from doing its regex function when you want to search for that actual character? You use a backslash (`\`) to escape the character. For example, enter `\.$` in the search box.
 
 ## Regex cheat sheet
 
 This unit was a brief introduction to regular expressions and what you can accomplish with them. There are many other complex patterns you can build with regular expressions. In the meantime, here's a handy regex cheat sheet for you:
 
+| Regex | Definition |
+| --- | --- |
+| ^ | Matches the beginning of a line |
+| $ | Matches the end of the line |
+| . | Matches any character |
+| \s | Matches whitespace |
+| \S | Matches any non-whitespace character |
+| \* | Repeats a character zero or more times |
+| *? | Repeats a character zero or more times (non-greedy) |
+| + | Repeats a character one or more times |
+| +? | Repeats a character one or more times (non-greedy) |
+| [aeiou] | Matches a single character in the listed set |
+| [^XYZ] | Matches a single character not in the listed set |
+| [a-z0-9] | The set of characters can include a range |
+| ( | Indicates where string extraction is to start |
+| ) | Indicates where string extraction is to end |
 
-```output
-^        Matches the beginning of a line
-$        Matches the end of the line
-.        Matches any character
-\s       Matches whitespace
-\S       Matches any non-whitespace character
-*        Repeats a character zero or more times
-*?       Repeats a character zero or more times
-         (non-greedy)
-+        Repeats a character one or more times
-+?       Repeats a character one or more times
-         (non-greedy)
-[aeiou]  Matches a single character in the listed set
-[^XYZ]   Matches a single character not in the listed set
-[a-z0-9] The set of characters can include a range
-(        Indicates where string extraction is to start
-)        Indicates where string extraction is to end
-```
-
-You can also learn more about Visual Studio Code and regular expressions in the [Visual Studio Code documentation](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019).
+You can also learn more about Visual Studio Code and regular expressions in the [Visual Studio Code documentation](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019).

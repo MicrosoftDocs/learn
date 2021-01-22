@@ -1,21 +1,22 @@
 So far, you've learned about basic file inspection and regular expressions. In this unit, you'll be introduced to the `grep` command. The `grep` command searches specified files or `stdin` for patterns that match a given regular expression. As with other commands we've seen before, the `grep` command has many flags to control the output and its behavior. We'll learn more about these flags later on in this unit.
 
-Let's get started with the basic usage of `grep`. The basic syntax for `grep` is:
-
-```bash
-grep 'pattern' [file_to_search]
-```
+Let's get started with the basic usage of `grep`. The basic syntax for `grep` is `grep 'pattern' [file_to_search]`.
 
 Let's say you want to find all the lines that contain the pattern `*.novo.dk` in the `NASA-logs-1995.txt` file. We know from the previous unit that the regular expression for this pattern is `\*\.novo\.dk`. Notice how we're escaping the special symbols with a back slash (`\`).
 
+First, close the Cloud Shell editor so that you can see the entire output in the terminal. There are two ways to close the editor:
 
-Run the following command to match the regular expression by using `grep`:
+- Select <kbd>CTRL+q</kbd> on your keyboard.
+- Select the three dots icon, and then select **Close Editor**.
+     :::image type="content" source="../media/close-cloud-shell-sandbox-editor.png" alt-text="Screenshot showing the options icon and Close Editor option.":::
+
+Next, run the following command to match the regular expression by using `grep`:
 
 ```bash
-grep -i '\*\.novo\.dk' NASA-logs-1995.txt
+grep '\*\.novo\.dk' NASA-logs-1995.txt
 ```
 
-Your output should look something like this output:
+Your output should look something like this:
 
 ```output
 ***.novo.dk 805465029 GET /ksc.html 200 7067

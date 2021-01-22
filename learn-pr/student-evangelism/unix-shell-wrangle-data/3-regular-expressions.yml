@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.unix-shell-wrangle-data.3-regular-expressions
+uid: learn.student-evangelism.unix-shell-wrangle-data.3-regular-expressions
 metadata:
   title: Introduction to regular expressions
   description: In this unit, you'll be introduced to regular expressions. You'll learn about basic regular expressions that cover literal character matching, wildcards, ranges, and anchors.
@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to regular expressions
 durationInMinutes: 5
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/3-regular-expressions.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.unix-shell-wrangle-data.6-pipes-and-filters
+uid: learn.student-evangelism.unix-shell-wrangle-data.6-pipes-and-filters
 metadata:
   title: Use pipes and filters to put it all together
   description: In this unit, you'll be introduced to pipes. Pipes are handy operators that allow you to combine some of the commands we've checked before to build complex data processing pipelines.
@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Use pipes and filters to put it all together
 durationInMinutes: 2
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/6-pipes-and-filters.md)]

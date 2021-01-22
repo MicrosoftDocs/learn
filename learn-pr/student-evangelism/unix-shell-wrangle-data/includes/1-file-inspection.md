@@ -1,23 +1,36 @@
 Have you ever wanted to take data from one format into another? It's likely that you have or that you'll have to do it in the future. The process is called *data wrangling* and is a common task faced by developers. Before we learn how to wrangle data, we need some data files to work with.
 
-As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to your sandbox environment.
+As a developer, you'll often need to extract information from logs. In this module, we'll use NASA logs and the command line. To get started, you'll need to download the datasets to the sandbox environment.
 
-1. Make a directory called `data`, and download the dataset.
+> [!Note]
+> The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
+>
+> The sandbox is active for a limited amount of time. If you plan to complete this module in multiple sessions, consider using Cloud Shell in the Azure portal to test steps so that your work is not lost.
 
-    ```bash
-    mkdir data
-    wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
-    wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
-    ```
+1. Use the following command to make a new directory named `data`.
+
+     ```bash
+     mkdir data
+     ```
+
+1. Use the `wget` command to download the dataset.
+
+     ```bash
+     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-logs-1995.txt
+     wget -P data/ https://raw.githubusercontent.com/MicrosoftDocs/mslearn-data-wrangling-shell/main/NASA-software-API.txt
+     ```
+
+1. Change to the new directory by using the command `cd`.
+
+     ```bash
+     cd data
+     ```
 
 1. Verify that you have the correct files by using the command `ls`.
 
-   ```bash
-   # first we change to the data directory
-   cd data
-   # now we display its contents
-   ls
-   ```
+     ```bash
+     ls
+     ```
 
 You should see a `NASA-software-API.txt` file and a `NASA-logs-1995.txt` file.
 
@@ -37,13 +50,13 @@ The `head` and `tail` commands are used to examine the top (head) or bottom (tai
 
 We'll use the `tail` and `head` commands to display the last and first five rows of the `NASA-software-API.txt` file, respectively.
 
-1. Type the command `tail` with the `-n` flag.
+1. Type the command `tail` with the `-n` flag to display the last 5 rows in the file.
 
     ```bash
     tail -n 5  NASA-software-API.txt
     ```
 
-    Your output should look like so:
+    Your output should look like this:
 
     ```output
    SSC-00393 SSC 2013-05-17T00:00:00.000 "General Public" "Software Suite to Support In-Flight Characterization of Remote Sensing Systems"
@@ -53,13 +66,12 @@ We'll use the `tail` and `head` commands to display the last and first five rows
    GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
     ```
 
-1. Type the command `head` with the `-n` flag.
+1. Type the command `head` with the `-n` flag to display the first 5 rows in the file.
 
      ```bash
-     # to display only the first 5 rows in the file
      head -n 5 NASA-software-API.txt
      ```
-    
+
      ```output
      ARC-14136-1 ARC 2001-10-19T00:00:00.000 "Academic Worldwide" "Adaptive Relevance-Learning Software Component (ARNIE)"
      ARC-14293-1 ARC 2005-09-19T00:00:00.000 "Open Source" "Genetic Graphs (JavaGenes)"
@@ -73,10 +85,18 @@ We'll use the `tail` and `head` commands to display the last and first five rows
 The `nl` filter reads lines from files or from the `stdin`. The output is printed to `stdout`. By default, the filter `nl` counts lines in a file and uses a tab to separate the line number from the text.
 
 Let's use `nl` with the flag `-s` to use `=` as a delimiter.
-   
 
 ```bash
 nl -s = NASA-software-API.txt
+```
+
+Your output should list each line in the file, ending with this:
+
+```output
+697=SSC-00424 SSC 2013-09-06T00:00:00.000 "General Public" "SSC Site Status Mobile Application"
+698=GSC-14732-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Tool For Interactive Plotting, Sonification, And 3D Orbit Display (TIPSOD)"
+699=GSC-14730-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Space Physics Data Facility Web Services"
+700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"
 ```
 
 The `nl` filter has flags that allow you to change the increment value (`-i`), change the numbering format (`ln, rn, rz`), or change the starting number (`-v`).
@@ -86,7 +106,6 @@ The `nl` filter has flags that allow you to change the increment value (`-i`), c
 The word count command `wc` counts the number of lines, words (separated by white space), and characters in a file or from `stdin`. The output is printed to `stdout` and separated by tabs.
 
 Use the command `wc` to see the number of lines, words, and characters in `NASA-software-API.txt`.
-
 
 ```bash
 wc NASA-software-API.txt
@@ -98,7 +117,7 @@ Your output should look like this:
 703    8917   81115 NASA-software-API.txt
 ```
 
-You can see from the output that the file has 703 lines and 8,917 and 81,115 characters. Let's check the output from the previous command, `nl`. The last printed line is:
+You can see from the output that the file has 703 lines, 8,917 words, and 81,115 characters. Let's check the output from the previous command, `nl`. The last printed line is:
 
  ```output
  700=GSC-14726-1 GSFC 2004-06-09T00:00:00.000 "Open Source" "Earth Observing System (EOS) Clearinghouse (ECHO)"

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.advocates.unix-shell-wrangle-data
+uid: learn.student-evangelism.unix-shell-wrangle-data
 metadata:
   title: Use the UNIX shell to wrangle log data
   description: |
@@ -22,7 +22,7 @@ abstract: |
   - Use pipes and filters for data wrangling.
 prerequisites: |
   - Basic knowledge of the command line and basic shell commands
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/student-evangelism/unix-shell-wrangle-data.svg
 levels:
   - beginner
 roles:
@@ -33,14 +33,14 @@ roles:
 products:
   - vs-code
 units:
-  - learn.advocates.unix-shell-wrangle-data.0-introduction
-  - learn.advocates.unix-shell-wrangle-data.1-file-inspection
-  - learn.advocates.unix-shell-wrangle-data.2-cat-tool
-  - learn.advocates.unix-shell-wrangle-data.3-regular-expressions
-  - learn.advocates.unix-shell-wrangle-data.4-grep-tool
-  - learn.advocates.unix-shell-wrangle-data.5-sed-and-regex
-  - learn.advocates.unix-shell-wrangle-data.6-pipes-and-filters
-  - learn.advocates.unix-shell-wrangle-data.7-knowledge-check
-  - learn.advocates.unix-shell-wrangle-data.8-summary
+  - learn.student-evangelism.unix-shell-wrangle-data.0-introduction
+  - learn.student-evangelism.unix-shell-wrangle-data.1-file-inspection
+  - learn.student-evangelism.unix-shell-wrangle-data.2-cat-tool
+  - learn.student-evangelism.unix-shell-wrangle-data.3-regular-expressions
+  - learn.student-evangelism.unix-shell-wrangle-data.4-grep-tool
+  - learn.student-evangelism.unix-shell-wrangle-data.5-sed-and-regex
+  - learn.student-evangelism.unix-shell-wrangle-data.6-pipes-and-filters
+  - learn.student-evangelism.unix-shell-wrangle-data.7-knowledge-check
+  - learn.student-evangelism.unix-shell-wrangle-data.8-summary
 badge:
-  uid: learn.advocates.data-wrangling-shell.badge
+  uid: learn.student-evangelism.unix-shell-wrangle-data.badge
