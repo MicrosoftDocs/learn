@@ -1,7 +1,7 @@
-Auditing logs can help organizations meet regulatory requirements for the protection of records. Microsoft 365 offers both standard and advanced auditing capabilities, to enable organizations to do this goal.
-By retaining audit logs, organizations can respond to any investigation, both internal and external, to ensure that the organization can be in line with legal or government requirements.
+Auditing logs can help organizations meet regulatory requirements for the protection of records. Microsoft 365 offers both standard and advanced auditing capabilities, to enable organizations to achieve this goal.
+By retaining audit logs, organizations can respond to any investigation, both internal and external, to ensure they're in line with legal or government requirements.
 
-At the end of this module, you should be able to:
+After completing this module, you should be able to:
 - Describe the core audit capabilities of Microsoft 365.
 - Describe the purpose and value of Advanced Auditing. 
 
