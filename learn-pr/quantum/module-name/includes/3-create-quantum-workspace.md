@@ -40,7 +40,7 @@ You can use the Azure Quantum service by adding a **quantum workspace** resource
 1. After adding the providers that you want to use, click **Review + create**.
 
 1. Review the settings and approve the *Terms and Conditions of Use* of
-   the selected providers. If everything is correct, click on **Create** to create your Quantum Workspace.
+   the selected providers. If everything is correct, click **Create** to create your workspace.
 
    ![Review and create the Workspace](../media/3-azure-quantum-preview-terms.png)
 
