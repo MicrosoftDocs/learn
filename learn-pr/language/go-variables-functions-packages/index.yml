@@ -23,7 +23,7 @@ prerequisites: |
   - The ability to create and modify `.go` files.
   - The ability to run Go applications by using the terminal.
   
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/go-variables-functions-packages.svg
 levels:
 - beginner
 roles:
@@ -41,4 +41,4 @@ units:
 - learn.language.go-variables-functions-packages.5-knowledge-check
 - learn.language.go-variables-functions-packages.6-summary
 badge:
-  uid: learn.service-name.module-name.badge 
+  uid: learn.language.go-variables-functions-packages.badge 
