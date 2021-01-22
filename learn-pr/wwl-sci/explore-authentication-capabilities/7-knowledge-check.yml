@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/19/2021
+  ms.date: 01/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "After hearing of a security breach at a competitor, you want to improve identity security within your organization. What should you implement immediately to provide the greatest protection to user identities?"
+  - content: "After hearing of a security breach at a competitor, the security team wants to improve identity security within their organization. What should they implement immediately to provide the greatest protection to user identities?"
     choices:
     - content: "Multi-factor authentication."
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Require strong passwords for all identities."
       isCorrect: false
       explanation: "That's  incorrect. Although strong passwords improve security, passwords alone are not as secure as multiple layers of security."
-  - content: "To improve identity security within your organization, you want to implement Windows Hello for Business. When explaining the benefits of Windows Hello for Business to your colleagues, which of the following is true?"
+  - content: "To improve identity security within the organization, the security team wants to implement Windows Hello for Business. When explaining the benefits of Windows Hello for Business, which of the following is true?"
     choices:
     - content: "Windows Hello is an authentication feature built into Windows Server 2012 R26."
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Windows Hello for Business is more secure because it uses PINs and biometric data to authenticate users."
       isCorrect: true
       explanation: "That's correct. Windows Hello for Business uses a PIN and biometric data to authenticate users and does not transmit data to an external server."
-  - content: "You've been asked to find ways to reduce IT costs, without compromising security. Which feature should you consider implementing?"
+  - content: "Your company's IT organization has been asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
     choices:
     - content: "Self-service password reset."
       isCorrect: true
