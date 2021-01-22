@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.go-to-market-commercial-marketplace.2-get-organization-ready
-title: Get your organization ready
+uid: learn.create-saas-offer-commercial-marketplace.2-what-is-saas-offer
+title: What is a SaaS offer?
 metadata:
-  title: Get your organization ready
-  description: In this unit, we will explore some of the ways that you can prepare your organization to sell through the commercial marketplace
-  ms.date: 11/10/2020
+  title: What is a SaaS offer?
+  description: In this unit, we explain how SaaS applications are sold through the commercial marketplace
+  ms.date: 01/22/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 9
+durationInMinutes: 7
 content: |
-  [!include[](includes/2-get-organization-ready.md)]
+  [!include[](includes/2-what-is-saas-offer.md)]

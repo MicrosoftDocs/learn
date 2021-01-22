@@ -1,22 +1,23 @@
 ### YamlMime:Module
-uid: learn.go-to-market-commercial-marketplace
+uid: learn.create-saas-offer-commercial-marketplace
 metadata:
-  title: Go to market through the commercial marketplace
-  description: This module provides tips and best practices to help organizations create their business plan for success in the commercial marketplace
-  ms.date: 11/10/2020
+  title: Create a SaaS offer for the commercial marketplace
+  description: This module provides a high level overview of SaaS offers in the commercial marketplace
+  ms.date: 01/22/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Go to market through the commercial marketplace
-summary: This module provides tips and best practices to help you create your organization's unique plan for success in the commercial marketplace
+title: Create a SaaS offer for the commercial marketplace
+summary: This module provides a high level overview of SaaS offers in the commercial marketplace
 abstract: |
   In this module, you will:
-  - Identify ways to align the different departments in your organization
-  - Learn best practices for optimizing your commercial marketplace offer
-  - Learn about commercial marketplace sales channels
+  - Develop a basic understanding of how SaaS applications are sold through the commercial marketplace
+  - Explore the benefits of SaaS offers in the commercial marketplace
+  - Learn the key technical components of a SaaS offer
+  - Learn how to publish a SaaS offer in Partner Center
   - Learn how to access Marketplace Rewards benefits in Partner Center
-iconUrl: /learn/achievements/ccc-commercial-marketplace/go-to-market-commercial-marketplace.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 prerequisites: |
@@ -28,18 +29,13 @@ roles:
 - administrator
 products:
 - azure
-- dynamics-365
-- m365
-- office-365
-- power-platform
 units:
 - learn.go-to-market-commercial-marketplace.1-introduction
-- learn.go-to-market-commercial-marketplace.2-get-organization-ready
-- learn.go-to-market-commercial-marketplace.3-sales-channels
-- learn.go-to-market-commercial-marketplace.4-optimize-listing
-- learn.go-to-market-commercial-marketplace.5-lead-management
-- learn.go-to-market-commercial-marketplace.6-marketplace-rewards-program
-- learn.go-to-market-commercial-marketplace.7-knowledge-check
-- learn.go-to-market-commercial-marketplace.8-summary
+- learn.go-to-market-commercial-marketplace.2-what-is-saas-offer
+- learn.go-to-market-commercial-marketplace.3-get-ready-create-saas-offer
+- learn.go-to-market-commercial-marketplace.4-saas-offer-technical-configuration
+- learn.go-to-market-commercial-marketplace.5-publish-saas-offer-partner-center
+- learn.go-to-market-commercial-marketplace.6-knowledge-check
+- learn.go-to-market-commercial-marketplace.7-summary
 badge:
-  uid: learn.go-to-market-commercial-marketplace.badge
+  uid: learn.create-saas-offer-commercial-marketplace.badge

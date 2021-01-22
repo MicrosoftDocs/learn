@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.go-to-market-commercial-marketplace.4-optimize-listing
-title: Optimize your commercial marketplace listing
+uid: learn.create-saas-offer-commercial-marketplace.4-saas-offer-technical-configuration
+title: SaaS offer technical configuration
 metadata:
-  title: Optimize your commercial marketplace listing
-  description: In this module, we share best practices to make the most of your commercial marketplace listing in Microsoft AppSource or Azure Marketplace
-  ms.date: 11/10/2020
+  title: SaaS offer technical configuration
+  description: In this unit, we go over the technical information required to publish a transact SaaS offer
+  ms.date: 01/22/2023
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
-  [!include[](includes/4-optimize-listing.md)]
+  [!include[](includes/4-saas-offer-technical-configuration.md)]

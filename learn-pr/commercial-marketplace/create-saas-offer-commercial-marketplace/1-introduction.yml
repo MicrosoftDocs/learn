@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.go-to-market-commercial-marketplace.1-introduction
+uid: learn.create-saas-offer-commercial-marketplace.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this unit, we introduce concepts required to be successful in the commercial marketplace.
-  ms.date: 11/10/2020
+  description: In this unit, we introduce the concept of a SaaS application and the benefits for providers and their customers
+  ms.date: 01/22/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial

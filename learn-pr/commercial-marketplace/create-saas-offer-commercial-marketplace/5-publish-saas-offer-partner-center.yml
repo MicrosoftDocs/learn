@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.go-to-market-commercial-marketplace.5-lead-management
-title: Commercial marketplace lead management
+uid: learn.create-saas-offer-commercial-marketplace.5-publish-saas-offer-partner-center
+title: Publish your SaaS offer in Partner Center
 metadata:
-  title: Commercial marketplace lead management
-  description: Overview of receiving customer leads from your commercial marketplace listing, including resources to configure your CRM
-  ms.date: 11/10/2020
+  title: Publish your SaaS offer in Partner Center
+  description: Overview of the SaaS offer publishing process in Partner Center
+  ms.date: 01/22/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
-  [!include[](includes/5-lead-management.md)]
+  [!include[](includes/5-publish-saas-offer-partner-center.md)]
