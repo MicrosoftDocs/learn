@@ -147,5 +147,5 @@ Now, run the code.  You should see the following result.
 - Use operators like `+`, `-`, `*`, and `/` to perform basic mathematical operations.
 - The division of two `int` values will result in the truncation of any values after the decimal point.  To retain values after the decimal point, you need to cast the divisor or dividend (or both) to from `int` into a floating point number like `decimal` first, then the quotient must be of the same floating point type as well in order to avoid truncation.
 - Perform a cast operation to temporarily treat a value as if it were a different data type.
-- Use the `%` operator to capture the remainder after subtraction.
+- Use the `%` operator to capture the remainder after division.
 - The order of operations will follow the rules of the acronym PEMDAS.
