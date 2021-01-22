@@ -29,5 +29,7 @@ In this module you'll:
 - None for users in the Optimization path.
 [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
 
-- TBD if users need to download this: The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true) 
+
+- Any Python development environment.
+
 - TBD if users need to download this:[Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
