@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft.describe-common-compliance-needs
+title: Describe common compliance needs
+metadata:
+  title: Describe common compliance needs
+  description: "Describe common compliance needs"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-describe-common-compliance-needs.md)]
