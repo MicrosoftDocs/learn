@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 2
 
 quiz:
-  title: Answer the following questions to check your understanding.
+  title: Check your knowledge
   questions:
 
   - content: What's a service you can use to send and receive text messages?

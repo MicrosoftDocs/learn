@@ -1,23 +1,5 @@
 In this unit, you'll create and deploy an existing application to the function app.
 
-### Activate the sandbox
-
-The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
-
-To activate the sandbox:
-
-1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
-
-1. If prompted, select **Review permissions**.
-
-    :::image type="content" source="../media/sandbox-review-permissions.png" alt-text="Screenshot that shows the sandbox, with the Review Permissions button highlighted.":::
-
-1. Verify the permissions settings, and select **Accept**.
-
-    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows the sandbox, with permissions details and the Accept button highlighted.":::
-
-The message **Sandbox activated!** appears, and you can continue with the learning module.
-
 ## Create a storage account
 
 The function app requires a storage account for storing the application code and other information. Additionally, the app requires a table called `alerts` within the storage account to track the locations, phone numbers, and temperature ranges to create alerts for.
@@ -27,7 +9,7 @@ An Azure storage account name must be globally unique among all storage accounts
 1. To create an environment variable for the name of the storage account, a variable that will be used by other commands later in this unit, run the following command:
 
     ```azurecli
-    az storage table create --name alerts --account-name $STORAGE_ACCOUNT_NAME
+    export STORAGE_ACCOUNT_NAME=<YOUR-STORAGE-ACCOUNT-NAME>
     ```
 
     Replace *\<YOUR-STORAGE-ACCOUNT-NAME>* with the name you want to use for your storage account (for example, *cropweatheralert20100519*.
@@ -56,7 +38,7 @@ The name of the function app that's created in Azure Functions must be globally 
 1. To create an environment variable for the name of the function app, run the following command. This environment variable will be used by other commands later in this unit.
 
     ```azurecli
-    export FUNCTION_APP_NAME=<YOUR-FUNCTION-APP-NAME>
+    export FUNCTIONS_APP_NAME=<YOUR-FUNCTION-APP-NAME>
     ```
 
     Replace *<YOUR-FUNCTION-APP-NAME>* with the name you want to use for your function app (for example, *cropweatheralert20100519*).
@@ -64,7 +46,14 @@ The name of the function app that's created in Azure Functions must be globally 
 1. To create a new function app, run this command:
 
     ```azurecli
-    az functionapp create --resource-group [sandbox resource group name] --os-type Linux --consumption-plan-location westus --runtime python --name $FUNCTION_APP_NAME --storage-account $STORAGE_ACCOUNT_NAME --functions-version 2
+    az functionapp create \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --os-type Linux \
+      --consumption-plan-location westus \
+      --runtime python \
+      --name $FUNCTION_APP_NAME \
+      --storage-account $STORAGE_ACCOUNT_NAME \
+      --functions-version 2
     ```
     > [!NOTE]
     > Although your function app is now created, the app isn’t active until you publish content to the app from the Azure portal or by using the Functions Core Tools. You’ll learn how to publish content to your app in a later step.

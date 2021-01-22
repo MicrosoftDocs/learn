@@ -1,5 +1,23 @@
 Before you can use the two Azure Maps APIs for geocoding and weather forecasting, you'll need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account, and get a key that's required by the app to access the account.
 
+### Activate the sandbox
+
+The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
+
+To activate the sandbox:
+
+1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
+
+1. If prompted, select **Review permissions**.
+
+    :::image type="content" source="../media/sandbox-review-permissions.png" alt-text="Screenshot that shows the sandbox, with the Review Permissions button highlighted.":::
+
+1. Verify the permissions settings, and select **Accept**.
+
+    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows the sandbox, with permissions details and the Accept button highlighted.":::
+
+The message **Sandbox activated!** appears, and you can continue with the learning module.
+
 ## Create an Azure Maps account
 
 1. Activate the sandbox by using the button on this page. The sandbox will give you access to free Azure resources for the duration of this module.
@@ -7,7 +25,10 @@ Before you can use the two Azure Maps APIs for geocoding and weather forecasting
 1. To create a new Azure Maps account, run this command:
 
     ```azurecli
-    az maps account create --name weatherservice --resource-group learn-bebf51a1-70fb-465f-9064-67f082b10f41 --accept-tos
+    az maps account create \
+      --name weatherservice \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --accept-tos
     ```
 
     > [!NOTE]
@@ -25,6 +46,6 @@ Azure Maps accounts are secured by either an Azure Active Directory instance or 
       --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Note the value of the *"primaryKey"* for later use. The value does not include the quotation marks.
+1. Note the value of the *primaryKey* for later use. The value does not include the quotation marks.
 
 In this unit, you created an Azure Maps account and obtained the primary key. Next, you'll create a Twilio account.
