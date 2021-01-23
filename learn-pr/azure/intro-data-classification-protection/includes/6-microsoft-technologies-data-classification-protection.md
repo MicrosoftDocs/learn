@@ -12,21 +12,14 @@ The protection enhancement remains with the data. For example, when people email
 Azure Information Protection supports online and on-premises Microsoft server products. You can use Azure Information Protection in various scenarios and with various platforms and applications. Key characteristics of Azure Information Protection are:
 
 - Support for the Information Rights Management (IRM) capabilities in Microsoft online services such as Exchange Online, SharePoint Online, and Office 365.
-- Support for on-premises Microsoft server products such as Microsoft Exchange Server, Microsoft SharePoint Server, Office apps, and file servers that run Windows Server and File Classification Infrastructure.
-- Ability to share protected content among users within the same organization or across organizations when the users meet one of the following conditions:
-  - Have Office 365 or Azure Information Protection 
-  - Sign up for rights management for individuals without the need to build explicit trust relationships.
-- Availability of default rights policy templates and labels and the ability to create custom labels.
+- Support for on-premises Microsoft server products such as Microsoft Exchange Server, Microsoft SharePoint Server, Office apps and file servers. 
+- Ability to share protected content among users within the same organization or across organizations that also have Office 365 or Azure Information Protection.
 - Ability of users to define their own permission sets if the templates aren’t sufficient.
 - Support for all the Office apps for multiple operating systems and versions, including third-party operating systems.
 - Support for the Rights Management sharing app or Azure Information Protection client app on mobile devices and desktops, which enables sharing of files with people in another organization, document tracking, and email notifications.
 - Support for Cryptographic Mode 2 without additional configuration, which provides stronger security enhancements for key lengths and encryption algorithms.
 
-To integrate Azure Information Protection with your locally deployed servers, you should deploy the Microsoft Rights Management connector. This connector allows you to quickly enable existing on-premises servers to use their IRM functionality with the cloud-based Azure Information Protection service.
-
-> [!NOTE]
-
-> The Microsoft Rights Management connector requires an Azure Active Directory (Azure AD) Premium license and is available only with Azure AD Premium P1 or P2.
+To integrate Azure Information Protection with your locally deployed servers, you can deploy the Microsoft Rights Management connector. This connector allows you to quickly enable existing on-premises servers to use their IRM functionality with the cloud-based Azure Information Protection service.
 
 ## Microsoft Information Protection
 
