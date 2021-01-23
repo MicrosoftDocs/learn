@@ -2,9 +2,12 @@ Microsoft provides a set of technologies and tools that you can use to classify 
 
 ## Azure Information Protection
 
-Azure Information Protection is a cloud-based, information-protection solution for Microsoft 365 and Office 365 that is based on rights management technology. Traditional security controls, such as NTFS permissions, firewalls, and access control lists are not effective enough to meet the needs of users who share daily information through email, file-sharing sites, and cloud services.
+Azure Information Protection is a cloud-based, information-protection solution for Microsoft 365 and Office 365 that is based on rights management technology. 
+Traditional security controls, such as NTFS permissions, firewalls, and access control lists are not effective enough to meet the needs of users who share daily information through email, file-sharing sites, and cloud services.
+
 Azure Information Protection uses encryption, identity, and authorization policies to help protect information both within and outside your organization, and on almost any device. With Azure Information Protection, you can also use classification functionality to classify data before protection or use classification as a basis for the protection.
-The protection enhancement remains with the data. For example, when people email data to other users or store it in their personal cloud drives, Azure Information Protection helps to protect it. Azure Information Protection provides persistent protection enhancement, which helps to secure your organization’s data. Authorized users and services, such as search and indexing, can continue to observe and inspect the data that Azure Information Protection helps to protect. This is called *reasoning over data* and is a crucial element in maintaining control of your organization’s data.
+
+The protection enhancement remains with the data. For example, when people email data to other users or store it in their personal cloud drives, Azure Information Protection helps to protect it. Azure Information Protection provides persistent protection, which helps to secure your organization’s data. Authorized users and services, such as search and indexing, can continue to observe and inspect the data that Azure Information Protection helps to protect. This is called *reasoning over data* and is a crucial element in maintaining control of your organization’s data.
 
 Azure Information Protection supports online and on-premises Microsoft server products. You can use Azure Information Protection in various scenarios and with various platforms and applications. Key characteristics of Azure Information Protection are:
 
