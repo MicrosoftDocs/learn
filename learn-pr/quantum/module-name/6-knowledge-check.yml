@@ -29,26 +29,26 @@ quiz:
       isCorrect: false
       explanation: "Quantum computing and optimization address different kinds of problems."
 
-  - content: 'Which of the following affirmations about Azure Quantum is false?'
+  - content: 'Which of the following affirmations about Azure Quantum is **false**?'
     choices:
     - content: 'Simulators, quantum computers, and optimization solvers are examples of targets of Azure Quantum.'
       isCorrect: false
       explanation: "This affirmation is correct."
-    - content: 'Each job has ID that must be unique within the workspace.'
+    - content: 'Each job has an ID that must be unique within the workspace.'
       isCorrect: false
       explanation: "This affirmation is correct."
     - content: "You can submit jobs without an Azure Storage Account, however it's recommended to have one to keep your results."
       isCorrect: true
       explanation: "This affirmation is false. You must own an Azure storage account in order to create a quantum workspace to submit jobs."
 
-  - content: 'Mark which of the following sentences about quantum inspired optimization in Azure Quantum is true.'
+  - content: 'Which of the following sentences about quantum-inspired optimization in Azure Quantum is **true**?'
     choices:
     - content: 'Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run on classical hardware, also called quantum-inspired algorithms.'
       isCorrect: true
       explanation: "This sentence is correct. These algorithms allow us to exploit some of the advantages of quantum computing approaches today on classical hardware. "
-    - content: 'Azure Quantum only offers quantum inspired optimization solutions. For classical optimization, you should look into other Azure products.'
+    - content: 'Azure Quantum only offers quantum-inspired optimization solutions. For classical optimization, you should look into other Azure products.'
       isCorrect: false
       explanation: "This affirmation is false. Azure Quantum also offers many different optimization solvers that aren't quantum inspired."
-    - content: 'Quantum inspired optimization solutions in Azure Quantum are useful for machine learning.'
+    - content: 'Quantum-inspired optimization solutions in Azure Quantum are useful for machine learning.'
       isCorrect: false
       explanation: "This affirmation is false. Although machine learning problems can often be expressed as optimization problems, Azure Quantum optimization solvers are in general not suitable to solve machine learning problems."

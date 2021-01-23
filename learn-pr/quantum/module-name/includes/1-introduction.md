@@ -27,7 +27,5 @@ In this module you'll:
 ## Prerequisites
 
 - None for users in the Optimization path.
-[Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
-
-
+- [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/).
 - Any Python development environment.

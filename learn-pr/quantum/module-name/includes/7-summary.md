@@ -1,8 +1,8 @@
-In this module learned about the two main services Azure Quantum offers you, quantum computing and optimization solutions. You also reviewed some real-case applications. 
+In this module, you learned about the two main services Azure Quantum offers: quantum computing and optimization solutions. You also reviewed some real-case applications. 
 
-Quantum computing exploits quantum properties such as superposition and entanglement to perform computations. For simulating quantum mechanical systems such as molecules, quantum computing provides important speed-ups since qubits can be used to represent the quantum states of those systems.
+Quantum computing exploits quantum properties such as superposition, interference and entanglement to perform computations. For simulating quantum mechanical systems such as molecules, quantum computing provides important speedups.
 
-Optimization problems are very important to reduce costs, accelerate processes, and reduce risks. Using quantum-inspired solutions to address optimization problems on classical hardware provides a speedup over traditional approaches.
+Optimization problems are very important for reducing costs, accelerating processes, and reducing risks. Using quantum-inspired solutions to address optimization problems on classical hardware provides a speedup over traditional approaches.
 
 In this module, you learned how to create a quantum workspace to create and run your jobs on the Azure Quantum service. In the next modules, you will learn to submit and manage quantum computing and optimization jobs:
 
