@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 02/28/2021
+  ms.date: 12/28/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Suppose a company wants to allow external users to access an Azure virtual server with a remote desktop connection. Which one of the following items would you implement on Azure Firewall to allow these connections?"
     choices:
-    - content: "A"
+    - content: "Service tag"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "That's incorrect. A service tag is a group of IP address prefixes related to a specific Azure service."
+    - content: "Source network address translation"
+      isCorrect: false
+      explanation: "That's incorrect. You use SNAT to translate internal private IP addresses to the public IP address of Azure Firewall."
+    - content: "Destination network address translation"
       isCorrect: true
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
-  - content: "TBD"
+      explanation: "That's correct. You use DNAT to translate Azure Firewall's public IP address to the private IP address of the virtual server. "
+  - content: "Suppose a company wants to allow access to an Azure SQL Database instance. Which of the following network rules types should they use to configure Azure Firewall?"
     choices:
-    - content: "A"
+    - content: "Application"
       isCorrect: true
-      explanation: "."
-    - content: "B"
+      explanation: "That's correct. You use an application rule to filter traffic based on an FQDN such as server1.database.windows.net."
+    - content: "Network"
       isCorrect: false
-      explanation: "."
-    - content: "C"
+      explanation: "That's incorrect. You use a network rule to filter traffic based on one or more of the following items: IP address, port, and protocol."
+    - content: "NAT"
       isCorrect: false
-      explanation: "."
-  - content: "TBD" 
+      explanation: "That's incorrect. You use a NAT rule to translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number."
+  - content: "Suppose a company wants to deploy Azure Firewall Manager. Which of the following items is not an acceptable network architecture for Azure Firewall Manager?" 
     choices:
-    - content: "A"
-      isCorrect: false
-      explanation: "."
-    - content: "B"
+    - content: "Spoke virtual network"
       isCorrect: true
-      explanation: "."
-    - content: "C"
+      explanation: "That's correct. A spoke virtual network is not an acceptable network architecture for Azure Firewall Manager."
+    - content: "Hub virtual network"
       isCorrect: false
-      explanation: "."
+      explanation: "That's incorrect. A hub virtual network is a standard Azure virtual network where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager."
+    - content: "Secured virtual hub"
+      isCorrect: false
+      explanation: "That's incorrect. A secured virtual hub is an Azure Virtual WAN Hub where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager."
