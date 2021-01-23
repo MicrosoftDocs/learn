@@ -30,4 +30,4 @@ To implement the exercises included in this module, you should have or be able t
 - An Azure subscription in which you have the Owner role
 - An Azure Active Directory (Azure AD) tenant in which you have the Global Administrator role
 - An Azure DevOps organization in which you are the organization owner
-- An Azure GitHub account into which you can fork public GitHub repositories
+- An GitHub account into which you can fork public GitHub repositories
