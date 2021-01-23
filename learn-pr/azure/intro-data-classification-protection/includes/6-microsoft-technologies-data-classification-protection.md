@@ -30,7 +30,7 @@ To integrate Azure Information Protection with your locally deployed servers, yo
 
 ## Microsoft Information Protection
 
-Azure Information Protection is mostly based on classification and rights management technologies to enable data classification and protection. The Microsoft Information Protection platform provides an extension to Azure Information Protection, by providing additional technologies to implement additional controls and use existing encryption and DLP technologies.
+Azure Information Protection is mostly based on classification and rights management technologies to enable data classification and protection. This technology is also the part of Microsoft Information Protection platform that provides additional technologies to implement additional controls and use existing encryption and DLP technologies.
 
 ### Label-based information protection in Windows 10
 
