@@ -1,6 +1,6 @@
 Learn and understand the concepts of sensitive data and data classification, the most common types and methods of data classification, and data loss prevention (DLP). At a high level, describe the key Microsoft technologies for data classification and DLP.
 
-Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, while its cloud services are under evaluation.
+Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its environment runs on-premises on Windows Server, while its cloud services are under evaluation.
 
 Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring the capabilities of Microsoft Azure and the Microsoft 365 platform. They want to determine whether Contoso can use Azure services to help modernize its current operational model through automation and virtualization. They’re also considering the use of Microsoft 365 productivity services instead of locally deployed services, such as email, intranet portals, or storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection when using cloud services instead of locally deployed services.
 
@@ -12,15 +12,15 @@ In this module, you’ll learn about data classification, DLP, and the managemen
 
 After completing this module, you'll be able to:
 
-- Describe sensitive information.
+- Describe sensitive information
 
-- Describe data classification.
+- Describe data classification
 
-- Describe common scenarios for using data classification.
+- Describe common scenarios for using data classification
 
-- Describe DLP.
+- Describe DLP
 
-- Describe Microsoft technologies for data classification and protection, and DLP.
+- Describe Microsoft technologies for data classification and protection, and DLP
 
 ## Prerequisites
 
