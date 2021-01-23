@@ -1,4 +1,4 @@
-After you define the data that is sensitive for your organization or your business, you need to classify that data. Data classification is important as it allows you to differentiate various types of sensitive data and to prepare the data for the appropriate level and method of protection.
+After you define the data that is sensitive for your organization or your business, you need to classify that data. Data classification is important as it allows you to differentiate between various types of sensitive data and to prepare the data for the appropriate level and method of protection.
 
 ## What is data classification?
 
