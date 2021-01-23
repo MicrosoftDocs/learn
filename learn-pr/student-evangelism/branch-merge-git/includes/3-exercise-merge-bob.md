@@ -16,7 +16,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     unzip git-resources.zip
     ```
 
-1. Now, copy **bobcat2-317x240.jpg** into Bob's **Assets** directory, deleting the other files (we'll redownload and use them later):
+1. Now, move the **bobcat2-317x240.jpg** file into Bob's "Assets" directory. Delete the other files. You'll redownload these files and use them later.
 
     ```bash
     mv bobcat2-317x240.jpg Assets/bobcat2-317x240.jpg
@@ -24,7 +24,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     rm bombay-cat-180x240.jpg
     ```
 
-1. Now open **index.html** and replace the line that says "Eventually we will put cat pictures here" with the following line:
+1. Now open the **index.html** file and replace the line that says "Eventually we will put cat pictures here" with the following line:
 
     ```html
     <img src="Assets/bobcat2-317x240.jpg" />
@@ -45,7 +45,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     git commit -a -m "Add picture of Bob's cat"
     ```
 
-1. Bob now does as Alice did: they switch back to "master" and does a pull to see if anything has changed:
+1. Bob now does the same action that Alice did earlier. They switch back to the "master" branch and execute a pull to see if anything has changed:
 
     ```bash
     git checkout master
@@ -63,7 +63,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
        e81ae09..1d2bfea  master     -> origin/master
     Updating e81ae09..1d2bfea
     Fast-forward
-     assets/site.css | 3 ++-
+     Assets/site.css | 3 ++-
      1 file changed, 2 insertions(+), 1 deletion(-)
     ```
 
@@ -80,14 +80,14 @@ Bob didn't use the `--ff-only` option because he knew "master" had changed. A fa
 
 At this point, Bob has an up-to-date repo, but Alice doesn't. Alice needs to do a `git pull` from the shared repo to make sure she has the latest and greatest version of the site.
 
-1. Use the following commands to sync Alice's repo with the shared repo:
+Use the following commands to sync Alice's repo with the shared repo:
 
-    ```bash
-    cd ../Alice
-    git pull
-    ```
+```bash
+cd ../Alice
+git pull
+```
 
-Take a moment to verify that Alice's repo and Bob's repo are synced. Each of them should have a JPG file in the **assets** directory and an `<img>` element declared in **index.html**. The **site.css** file in each repo's **assets** folder should contain a line defining a CSS style named `cat` (the style that Alice added when they made their changes).
+Take a moment to verify that Alice's repo and Bob's repo are synced. Each of the repos should have a JPG file in the "Assets" directory and an `<img>` element declared in the **index.html** file. The **site.css** file in each repo's "Assets" folder should contain a line that defines a CSS style named **cat**. This style was added by Alice when they made their changes.
 
 If you open **index.html** in a browser, you would see:
 

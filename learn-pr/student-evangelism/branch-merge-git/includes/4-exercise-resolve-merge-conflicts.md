@@ -87,7 +87,7 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
 1. Open **index.html**, add a `class="cat"` attribute to the `<img>` element, and save the file:
 
     ```html
-    <img class="cat" src="assets/bobcat2-317x240.jpg" />
+    <img class="cat" src="Assets/bobcat2-317x240.jpg" />
     ```
 
 1. Now commit the change, switch back to "master," do a pull, and merge:
@@ -130,11 +130,7 @@ In this case, **index.html** in Bob's repo looks like this:
   <body>
     <nav><a href="./index.html">home</a></nav>
     <h1>Our Feline Friends</h1>
-<<<<<<< HEAD
     <img class="cat" src="Assets/bombay-cat-180x240.jpg">
-=======
-    <img class="cat" src="assets/bobcat2-317x240.jpg">
->>>>>>> style-cat
     <footer><hr>Copyright (c) 2019 Contoso Cats</footer>
   </body>
 </html>
