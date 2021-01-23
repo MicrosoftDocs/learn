@@ -1,4 +1,4 @@
-In a perfect world, all your employees understand the importance of information protection and work within your policies. In the real world, it's likely that a busy partner who often works with accounting information might inadvertently upload a sensitive document to a cloud repository with incorrect permissions. A week later, you realize that your enterprise's confidential information was leaked to your competitors.
+In a perfect world, all of your employees understand the importance of information protection and work within your policies. In the real world, it's likely that a busy partner who often works with accounting information might inadvertently upload a sensitive document to a cloud repository with incorrect permissions. A week later, you realize that your enterprise's confidential information was leaked to your competitors.
 
 ## What is sensitive data?
 
