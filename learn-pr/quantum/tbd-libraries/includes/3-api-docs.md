@@ -38,7 +38,6 @@ Suppose we wanted to find the `ControlledOnInt` function:
 ## Where does it come from?
 
 The API documentation is automatically generated from the documentation comments within the Q# source code. 
-The source code of the Q# libraries is located in the [microsoft/QuantumLibraries](https://github.com/microsoft/QuantumLibraries), [microsoft/qsharp-runtime](https://github.com/microsoft/qsharp-runtime), and [microsoft/quantum-nc](https://github.com/microsoft/quantum-nc) repositories on GitHub.
 
 Later in the module, you'll learn more about how the documentation is embedded in the source code when you write documentation comments for your own operations.
 

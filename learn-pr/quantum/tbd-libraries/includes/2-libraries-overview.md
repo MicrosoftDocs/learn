@@ -2,8 +2,8 @@ You are probably already familiar with libraries in other programming languages.
 Q# as a language for quantum programming is not different in this case. 
 
 The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without having to worry about the low-level implementation details.
-For example, many languages provide some form of `a + b` to simply add two numbers, and because you don't have to think about the binary representation and implementation of that addition, you can write better programs faster by only worrying about the important part, the logic of what you're doing with those numbers. 
-The same is true for the Q# libraries---by providing complex quantum operations and frequently-used components of quantum algorithms through simple callables and types, they free you up to focus on the logic of your quantum program and therefore start developing more impactful programs sooner.
+For example, many languages provide an expression to add numbers—e.g., `a+b`—so you don't have to worry about the binary representation and implementation of that addition. This way, you can write better programs faster and focus on the problem you want to solve.
+The same is true for the Q# libraries. By providing complex quantum operations and frequently-used components of quantum algorithms through simple callables and types, they free you up to focus on the logic of your quantum program and therefore start developing more impactful programs sooner.
 
 
 ## What is a Q# library?
@@ -13,8 +13,6 @@ Since these are always defined within namespaces in Q#, we could consider a libr
 
 When such a library has been made available to a Q# project, its namespaces can then be accessed via standard `open NamespaceName;` statements at the beginning of your Q# file, and thus its operations, functions, and types can be utilized.
 
-Note that namespaces essentially just provide the fully qualified names of the particular callables or types contained in them.
-Therefore it's possible for callables/types from distinct libraries or packages (installable units of library code) to ultimately belong to the same namespace.
 
 ## How are Q# libraries distributed?
 

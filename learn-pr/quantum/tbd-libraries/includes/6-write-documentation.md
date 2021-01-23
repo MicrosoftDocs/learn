@@ -66,35 +66,8 @@ For example, if you are using VS Code, IntelliSense enables autocomplete functio
 ![VS Code IntelliSense mouseover](../media/6-mouseover.png)
 
 
-## Additional documentation headers
-
-The following names are recognized as documentation comment headers.
-
-- **Summary**: A short summary of the behavior of a function or operation,
-  or of the purpose of a type. The first paragraph of the summary is used
-  for hover information. It should be plain text.
-- **Description**: A description of the behavior of a function or operation,
-  or of the purpose of a type. The summary and description are concatenated to
-  form the generated documentation file for the function, operation, or type.
-  The description may contain in-line LaTeX-formatted symbols and equations.
-- **Input**: A description of the input tuple for an operation or function.
-  May contain additional Markdown subsections indicating each individual
-  element of the input tuple.
-- **Output**: A description of the tuple returned by an operation or function.
-- **Type Parameters**: An empty section which contains one additional
-  subsection for each generic type parameter.
-- **Named Items**: A description of the named items in a user defined type.
-  May contain additional Markdown subsections with the description for each 
-  individual named item.
-- **Example**: A short example of the operation, function or type in use.
-- **Remarks**: Miscellaneous prose describing some aspect of the operation,
-  function, or type.
-- **See Also**: A list of fully qualified names indicating related functions,
-  operations, or user-defined types.
-- **References**: A list of references and citations for the item being
-  documented.
-
 ## Learn more
 
 This is precisely the documentation format used in the Q# source code to generate the official API documentation you explored earlier in the module.
-You can find more details and examples on the official [Q# documentation page](https://docs.microsoft.com/quantum/user-guide/language/programstructure/comments), including the ability to cross-reference other callables and write examples. 
+You can find a full list of the recognized documentation headers on the official [Q# documentation page](https://docs.microsoft.com/quantum/user-guide/language/programstructure/comments).
+There, you will also see more details and examples, including the ability to cross-reference other callables and add code examples to documentation. 

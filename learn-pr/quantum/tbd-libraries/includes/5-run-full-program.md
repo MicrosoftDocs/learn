@@ -121,7 +121,7 @@ Thus our full program will simply repeat Grover's algorithm until this condition
 ### Obtain the full ISBN
 
 Recall that the incomplete ISBNs will be provided as 10-integer arrays with the missing digit indicated by `-1`.
-To create the reuslting ISBN array to check with `IsIsbnValid`, we also write the function `MakeResultIsbn` which replaces that `-1` with the `missingDigit` output by the algorithm:
+To create the resulting ISBN array to check with `IsIsbnValid`, we also write the function `MakeResultIsbn` which replaces that `-1` with the `missingDigit` output by the algorithm:
 
 ```qsharp
     function MakeResultIsbn(missingDigit : Int, inputISBN : Int[]) : Int[] {
