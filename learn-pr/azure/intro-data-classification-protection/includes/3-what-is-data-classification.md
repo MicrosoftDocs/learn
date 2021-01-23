@@ -1,4 +1,4 @@
-After you define what data is sensitive for your organization or your business, you need to classify that data. Data classification is important as it allows you to differentiate various types of sensitive data and to prepare the data for the appropriate level and method of protection.
+After you define the data that is sensitive for your organization or your business, you need to classify that data. Data classification is important as it allows you to differentiate various types of sensitive data and to prepare the data for the appropriate level and method of protection.
 
 ## What is data classification?
 
@@ -6,7 +6,7 @@ Data classification provides one of the most basic ways for organizations to det
 
 > [!NOTE]
 
-> You can think of data classification as labeling. Many years ago, when organizations had important information in paper form, they were usually storing them in plastic folders and marking these folders with labels, for example, "Confidential contracts." After labeling these folders, they were usually stored at a safe location. Today, when you classify electronic form, you label them by adding metadata that specifies the classification and then use an appropriate technology to help protect the data.
+> You can think of data classification as kind of sorting and marking your documents. Many years ago, when organizations had important information in paper form, they were usually storing them in plastic folders and marking these folders with labels, for example, "Confidential contracts." After marking these folders, they were usually stored at a safe location. Today, when you classify electronic form, you mark them by adding metadata that specifies the classification and then use an appropriate technology to help protect the data.
 
 Large organizations such as Microsoft, governments, and military entities have been using data classification for decades to manage the integrity of their data.
 
@@ -22,10 +22,10 @@ Data can also be either structured or unstructured. Typical classification proce
 
 ## Data classification and compliance
 
-The purpose of data classification is not only to provide data labeling and prepare data for protection, but often also to aid in compliance, privacy, and data governance. For example, labelling data as *confidential* doesn’t serve only to mark this data for protection, but also to let other parties know how to manage that data. When an employee sends the data via email, and classifies that data as sensitive or confidential, the recipient of that email should treat the received data in the appropriate manner. Data protection regulations, such as GDPR, specify methods and best practices for treating, accessing, storing, using, and destroying sensitive data. Also, sometimes, relevant regulatory and industry-specific rules mandate the type of data classification. This might require the classification of different data attributes.
+The purpose of data classification is not only to provide meta data to your documents and prepare data for protection, but often also to aid in compliance, privacy, and data governance. For example, marking data as *confidential* doesn’t serve only to mark this data for protection, but also to let other parties know how to manage that data. When an employee sends the data via email, and classifies that data as sensitive or confidential, the recipient of that email should treat the received data in the appropriate manner. Data protection regulations, such as GDPR, specify methods and best practices for treating, accessing, storing, using, and destroying sensitive data. Also, sometimes, relevant regulatory and industry-specific rules mandate the type of data classification. This might require the classification of different data attributes.
 
 > [!NOTE]
 
 > For example, the Cloud Security Alliance requires that data and data objects must include data type, jurisdiction of origin and domicile, context, legal constraints, and sensitivity.
 
-Because of this, it's important that people who manage data understand what data classification really means and how it differs from data protection. It’s important that each organization works on raising awareness on data classification in the context of data governance, and not only technical data protection. Usually, data protection comes because of data classification. However, even protected data is sometimes accessed by the people who need it. People who access protected data need to know how to manage the data, not based on how data is protected, but how it's classified.
+Because of classification importance on several different levels, as we just discussed, it's important that people who manage data understand what data classification really means and how it differs from data protection. It’s important that each organization works on raising awareness on data classification in the context of data governance, and not only technical data protection. Usually, data protection comes because of data classification. However, even protected data is sometimes accessed by the people who need it. People who access protected data need to know how to manage the data, not based on how data is protected, but how it's classified.
