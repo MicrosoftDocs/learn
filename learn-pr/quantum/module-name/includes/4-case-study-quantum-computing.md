@@ -7,9 +7,9 @@ Quantum mechanics is the underlying "operating system" of our universe. It descr
  
 Superposition enables other quantum mechanical effects such as *interference* and *entanglement*, which in turn empower [quantum algorithms]( https://en.wikipedia.org/wiki/Shor%27s_algorithm ) for faster searching, better optimization, and greater security. When designed to scale, quantum systems will have capabilities that exceed our most powerful supercomputers. As the global community of quantum researchers, scientists, engineers, and business leaders continue to collaborate to advance the quantum ecosystem, we expect to see quantum impact accelerate across every industry. 
 
+## Application case studies
 
-
-## Quantum speedups
+### Quantum speedups
 
 One of the goals of quantum computing research is to study which problems can be solved by a quantum computer faster than a classical computer and how big the speedup can be. Two well-known examples are [Grover’s algorithm](https://en.wikipedia.org/wiki/Grover%27s_algorithm) and [Shor’s algorithm](https://en.wikipedia.org/wiki/Shor's_algorithm), as mentioned in module [Explore the key concepts of quantum computing by using Q#](https://docs.microsoft.com/en-us/learn/modules/qsharp-explore-key-concepts-quantum-computing/). These are quantum algorithms that yield a polynomial and exponential speedup, respectively, over their classical counterparts. 
 
@@ -22,7 +22,7 @@ The proof technique used in [Robin Kothari et al.](https://www.microsoft.com/en-
 
 Understanding the status quo of quantum computing and the future it promises, you will head back to the spaceship and work with the navigation division to run Grover's algorithm on Azure Quantum [Module 8](TODO) for routing between space stations. 
 
-## Using quantum computers to address climate change
+### Using quantum computers to address climate change
 
 We are living a quantum revolution. When we can implement algorithms on a fault-tolerant quantum computer, we can begin to solve some of the world's most challenging problems.  Quantum researchers at Microsoft are studying quantum computer applications and how to accomplish them on a large-scale quantum computer. One of the applications they are focusing on is in chemistry to help address one of those big challenges: climate change. 
 
@@ -44,7 +44,7 @@ Problems that involve calculating molecular energies can require a very large nu
 It is important to note that the results obtained from this work are not restricted to chemistry and climate change applications. In fact, knowing more about quantum algorithms and boosting calculations opens the door to even more questions about large-scale quantum computers, and exploring additional ways algorithms can be more effective. 
 
 
-## Quantum Cryptography
+### Quantum Cryptography
 
 Cryptography is the technique of concealing confidential information using physical or mathematical means, such as leveraging a computational difficulty of solving a particular task. The work of [Peter W. Shor]( https://ieeexplore.ieee.org/document/365700) uncovered the security threat that quantum computation posed to classical cryptographic schemes that are based on assumptions of the difficulty of factoring large numbers. One example of a cryptographic scheme is the [Rivest–Shamir–Adleman (RSA) scheme](https://en.wikipedia.org/wiki/RSA_(cryptosystem)), which is widely used in e-commerce for secure data transmission. It is based on the practical difficulty of factoring prime numbers using classical algorithms. 
 
