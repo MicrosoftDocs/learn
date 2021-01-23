@@ -1,16 +1,16 @@
-In this unit, you will learn how to develop an objective function that minimizes the makespan of the solution (the time taken to complete all operations).
+In this unit, you will learn how to develop an objective function that minimizes the makespan of the solution. The makespan is the time taken to complete all operations.
 
 ### Minimize the makespan
 
-So far you've learned how to represent constraints of your optimization problem with a penalty model, which allows you to obtain *valid* solutions to your problem from the optimizer. Remember however that your end goal is to obtain an *optimal* (or close to optimal) solution. In this case, you're looking for the schedule with the fastest completion time of all jobs.
+So far you've learned how to represent the constraints of your optimization problem with a penalty model, allowing you to compute *valid* solutions. Remember however that your end goal is to obtain an *optimal* (or close to optimal) solution. In this case, you're looking for the schedule with the fastest completion time of all jobs.
 
-The makespan $M$ is defined as the total time required to run all jobs, or alternatively the finishing time of the last job, which is what you want to minimize. To this end, you need to add a fourth component to the cost function that adds larger penalties for solutions with larger makespans:
+The makespan $M$ is defined as the total time required to run all jobs, or alternatively the finishing time of the last job. To minimize this quantity, you need to add a fourth component to the cost function that adds larger penalties to solutions with larger makespans:
 
 $$ H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \mathbf{\delta \cdot k(x)} $$
 
-Let's come up with terms that increase the value of the cost function the further out the last job is completed. Remember that the completion time of a job depends solely on the completion time of its final operation. However, since you have no way of knowing in advance what the last job will be, or at which time the last operation will finish, you'll need to include a term for each operation and time step. These terms need to scale with the time parameter $t$, and consider the operation processing time, in order to penalize large makespans over smaller ones.
+Let's come up with terms that increase the value of the cost function the further out the last job is completed. Remember that the completion time of a job depends solely on the completion time of its final operation. However, since you have no way of knowing in advance what the last job will be, or at which time the last operation will finish, you'll need to include a term for each operation and time step. These terms need to scale with the time parameter $t$, and consider the operation processing time, in order to penalize larger makespans over smaller ones.
 
-Some care is required in determining the penalty values, or *coefficients*, of these terms. Recall that you are given a set of operations $\{O_i\}$, which each take processing time $p_i$ to complete. An operation scheduled at time $t$ will then *complete* at time $t + p_i$. Let's define the coefficient $c_t$ as the penalty applied to the cost function for an operation to finish at time $t$. As operations can be scheduled in parallel, you don't know how many might complete at any given time, but you do know that this number is at most equal to the number of available machines $m$. The sum of all penalty values for operations completed at time $t$ are thus in the range $[0, ~m \cdot c_t]$. You want to avoid situations were completing a single operation at time $t+1$ is less expensive than m operations at time $t$. Thus, the penalty values cannot follow a simple linear function of time.
+Some care is required in determining the penalty values, or *coefficients*, of these terms. Recall that you have a set of operations $\{O_i\}$, each of which takes time $p_i$ to complete. An operation scheduled at time $t$ will then *complete* at time $t + p_i$. Let's define the coefficient $c_t$ as the penalty applied to the cost function for an operation to finish at time $t$. As operations can be scheduled in parallel, you don't know how many might complete at any given time. All you do know is that this number is at most equal to the number of available machines $m$. The sum of all penalty values for operations completed at time $t$ is then in the range $[0, ~m \cdot c_t]$. You want to avoid situations were completing a single operation at time $t+1$ is less expensive than m operations at time $t$. Thus, the penalty values cannot follow a simple linear function of time.
 
 Precisely, you want your coefficients to satisfy:
 
@@ -26,13 +26,13 @@ $$ c_{t} = \epsilon \cdot \frac{m^t-1}{m-1} $$
 
 #### Limiting the number of terms
 
-Great! You now have a formula for the coefficients of the makespan penalty terms that increase with time while taking into account that operations can be scheduled in parallel. Before implementing the new terms, let's try to limit the amount of new terms you're adding as much as possible. To illustrate, recall the job shop example you've been working on:
+Great! You now have a formula for the coefficients of the makespan penalty terms that increase with time while taking into account that operations can be scheduled in parallel. Before implementing the new terms, let's try to limit the number of new terms you're adding as much as possible. To illustrate, recall the job shop example you've been working on:
 
 $$J_{0} = \{O_{0}, O_{1}\}$$
 $$J_{1} = \{O_{2}, O_{3}\}$$
 $$J_{2} = \{O_{4}, O_{5}\}$$
 
-First, consider that you only need the last operation in every job, as the precedence constraint guarantees that all other operations are completed before it. Given $n$ jobs, you thus consider only the operations $\{O_{k_0-1}, O_{k_1-1}, \dots, O_{k_{n-1}-1}\}$, where the indices $k_j$ denotes the number of operations up to and including job $j$. In this example, you only add terms for the following operations:
+First, consider that you only need the last operation in every job, as the precedence constraint guarantees that all other operations are completed before it. Given $n$ jobs, you then only consider the operations $\{O_{k_0-1}, O_{k_1-1}, \dots, O_{k_{n-1}-1}\}$. The indices $k_j$ denote the number of operations up to and including job $j$. In this example, you only add terms for the following operations:
 
 $$ \{O_1, O_3, O_5\} $$
 
@@ -50,7 +50,7 @@ $$J_{2}: p_4 + p_5 = 1 + 2 = 3 $$
 
 $$\Rightarrow M_{lb} = 4$$
 
-Finally, the makespan is upper-bounded by the sequential execution time of all jobs, $3 + 4 + 3 = 10$ in this case. The time T should never exceed this upper bound. Regardless of whether this is the case or not, you need to include penalties for all time steps up to $T$, or else larger time steps without a penalty will be favored over smaller ones!
+Finally, the makespan is upper-bounded by the sequential execution time of all jobs, $3 + 4 + 3 = 10$ in this case. The simulation time $T$ should never exceed this upper bound! Regarding the penalty terms, you need to include terms for all time steps up to $T$, or else larger time steps without a penalty will be favored over smaller ones!
 
 To summarize:
 
