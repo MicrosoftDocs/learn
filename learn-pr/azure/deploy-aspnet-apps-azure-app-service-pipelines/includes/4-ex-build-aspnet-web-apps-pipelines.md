@@ -11,11 +11,11 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 > You can skip this task if you already have an existing Azure DevOps organization and a corresponding GitHub account that you can use for exercises in this module.
 
 1. From your computer, start a web browser in the **private** mode and browse to [https://github.com](https://github.com).
-1. On the GitHub home page, select **Sign up**.
 
    > [!NOTE]
    > The name of the **private** mode depends on the browser (such as *InPrivate* for Microsoft Edge, *Private* for Firefox, or *Incognito* for Chrome).
 
+1. On the GitHub home page, select **Sign up**.
 1. On the **Create your account** page, specify a username, email address, a password you want to associate with your new GitHub account, and any additional information necessary to complete this step, and select **Create account**.
 1. On the **Welcome to GitHub** page, select **Complete setup**.
 1. Open another web browser tab, sign in to your email account, locate the GitHub verification email, and follow instructions in the email to complete the email account verification process.
@@ -24,7 +24,8 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 1. On the **Authorize Microsoft-Corporation** page, select **Authorize Microsoft-corp**.
 1. If you're using a Microsoft account, on **Link your GitHub credentials to your Microsoft account**, select **Next**. When prompted, enter the code included in another email delivered to your email account, select **Sign in**, and, to complete the setup, select **Got it**.
 
-   > [!NOTE] If prompted to set up your Azure DevOps organization details, verify your name, email address, and location, and then select **Continue**.
+   > [!NOTE] 
+   > If prompted to set up your Azure DevOps organization details, verify your name, email address, and location, and then select **Continue**.
 
 1. On the **Get started with Azure DevOps** page, select **Continue**.
 1. On the **Create a project to get started** page, in the **Project name** text box, enter **Deploy ASP.NET web apps with Azure Pipelines**, leave the visibility set to **Private**, and select **+ Create project**.
@@ -67,7 +68,7 @@ On the **Review your pipeline YAML** pane, scroll down to the **steps:** section
 Next, you'll customize the auto-generated pipeline to provide the additional functionality that will facilitate setting up the Azure DevOps pipeline that deploys the sample ASP.NET app.
 
 > [!NOTE]
-> By default, the pipeline is configured with continuous integration enabled. This would trigger its execution whenever we modify the **azure-pipelines.yaml** file. You'll temporarily disable this functionality and re-enable it once you finalize changes to the pipeline.
+> By default, the pipeline is configured with continuous integration enabled. This would trigger its execution whenever you modify the **azure-pipelines.yaml** file. You'll temporarily disable this functionality and re-enable it once you finalize changes to the pipeline.
 
 1. On the **Review your pipeline YAML** pane, to temporarily disable continuous integration, replace the following content with `trigger: none`:
 
