@@ -1,10 +1,10 @@
-In the past, your company, following Microsoft best practices, has been relying extensively on ASP.NET Model View Controller (MVC) to develop its web apps, using the Entity Framework Code First approach to provide access to SQL Server-based data stores. The code of the apps already resides in GitHub repositories, you just set up an Azure DevOps organization and created your first Azure DevOps project. The next step you're considering is building artifacts that you can then use to deploy the apps to Azure. In this unit, you'll step through the process of setting up an Azure pipeline that will provide this functionality.
+In the past, your company, following Microsoft best practices, has been relying extensively on ASP.NET Model View Controller (MVC) to develop its web apps, using the Entity Framework Code First approach to provide access to SQL Server-based data stores. The code of the apps already resides in GitHub repositories; you just set up an Azure DevOps organization and created your first Azure DevOps project. The next step you're considering is building artifacts that you can then use to deploy the apps to Azure. In this unit, you'll step through the process of setting up an Azure pipeline that will provide this functionality.
 
 ## Azure Pipelines ASP.NET web app build tasks
 
-Use the following process to ASP.NET app artifacts:
+Use the following process to build ASP.NET app artifacts:
 
-1. Identify and update NuGet package dependencies. In this task you retrieve all packages required to perform the build.
+1. Identify and update NuGet package dependencies. In this task, you retrieve all packages required to perform the build.
 1. Build artifacts. This generates a compiled app that you can subsequently test and deploy.
 1. Run unit and functional tests. In this step, you verify functionality of the built app prior to its deployment.
 1. Index source code and publish symbols. This allows you to debug the app on another computer that doesn't have access to the source code.
