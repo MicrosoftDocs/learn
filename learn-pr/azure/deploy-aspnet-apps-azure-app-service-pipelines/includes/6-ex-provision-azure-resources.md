@@ -1,9 +1,9 @@
 To proceed with testing the use of Azure Pipelines for the deployment of your company's ASP.NET applications to Azure App Service, you next need to provision the target Azure environment. In this exercise, you'll configure and run an Azure DevOps pipeline that implements Azure web and database resources, including:
 
-- An Azure logical SQL server.
-- An Azure SQL database.
-- An Azure App Service plan.
-- An Azure App Service web app.
+- An Azure logical SQL server
+- An Azure SQL database
+- An Azure App Service plan
+- An Azure App Service web app
 
 These resources will host the sample ASP.NET app that you'll deploy by using the same Azure DevOps pipeline in the next exercise.
 
@@ -13,7 +13,7 @@ To allow the Azure App Service web app to access the Azure SQL database, you'll 
 
 Every Azure resource that has a public endpoint requires a globally unique name. Such resources include Azure logical SQL servers and Azure App Service web apps. Before you can provision them, you need to identify available names that you can use for their deployment.
 
-1. Within the web browser window displaying the Azure DevOps project, open another web browser tab and browse to [the Azure portal](https://portal.azure.com). If prompted, sign in with a user account that has the Owner role in the Azure subscription and the Global Administrator role in the Azure AD tenant associated with that subscription.
+1. Within the web browser window displaying the Azure DevOps project, open another web browser tab and browse to the [Azure portal](https://portal.azure.com). If prompted, sign in with a user account that has the Owner role in the Azure subscription and the Global Administrator role in the Azure AD tenant associated with that subscription.
 1. In the Azure portal, open the **Cloud Shell** pane by selecting the toolbar icon next to the search textbox.
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**.
 
@@ -117,7 +117,7 @@ For the Azure DevOps pipeline to access your Azure subscription, you need to set
 1. On the **Service connections** pane, select **New service connection**.
 1. On the **New service connection** pane, select the **Azure Resource Manager** option and select **Next**.
 1. On the **New Azure service connection** pane, ensure that the **Service principal (automatic)** option is selected and select **Next**.
-1. On the **New Azure service connection** pane, ensure that the **Scope level** is set to **Subscription**. The target subscription you intend to use in this exercise appears in the **Subscription** dropdown list. In the **Service connection name**, enter **labAzureSubscription**, verify that the **Grant access permissions to all pipelines** check box is selected, and select **Save**.
+1. On the **New Azure service connection** pane, ensure that the **Scope level** is set to **Subscription**. The target subscription you intend to use in this exercise appears in the **Subscription** drop-down list. In the **Service connection name**, enter **labAzureSubscription**, verify that the **Grant access permissions to all pipelines** check box is selected, and select **Save**.
 
 ## Configure the Azure Pipeline to provision Azure resources
 
@@ -138,8 +138,8 @@ Now, it's time to configure the Azure Pipeline you created in the previous exerc
 
 1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **Azure CLI**, and in the list of results, select the **Azure CLI** task entry.
-1. Select the newly added **Azure CLI** task. On the **Azure CLI** pane, in the **Azure Resource Manager connection** dropdown list, select the entry representing the **labAzureSubscription** service connection you created earlier in this exercise.
-1. On the **azure-pipelines.yml** editor pane, on the **Tasks** tab, on the **Azure CLI** pane, in the **Script type** dropdown list, select **Shell**. In the **Script Location** dropdown list, select **Inline script**, and in the **Inline script** enter the following script and select **Add**:
+1. Select the newly added **Azure CLI** task. On the **Azure CLI** pane, in the **Azure Resource Manager connection** drop-down list, select the entry representing the **labAzureSubscription** service connection you created earlier in this exercise.
+1. On the **azure-pipelines.yml** editor pane, on the **Tasks** tab, on the **Azure CLI** pane, in the **Script type** drop-down list, select **Shell**. In the **Script Location** drop-down list, select **Inline script**, and in the **Inline script** enter the following script and select **Add**:
 
    ```bash
    # create a resource group
@@ -160,7 +160,7 @@ Now, it's time to configure the Azure Pipeline you created in the previous exerc
 1. On the **azure-pipelines.yml** editor pane, select the newly added task, and select the **Tab** key twice to indent it within the **DeployAzureResources** stage and job section.
 
    > [!NOTE]
-   > At this point, the pipeline should have the content which resembles the following listing:
+   > At this point, the pipeline should have the content, which resembles the following listing:
 
    ```yaml
    # ASP.NET
@@ -258,19 +258,19 @@ With the new stage of the Azure Pipeline created, you can now invoke execution o
 To conclude this exercise, let's examine the outcome of the execution of the Azure Pipeline.
 
 1. Within the browser window, switch to the web browser tab displaying the Azure portal.
-1. In the Azure portal, use the **Search resources, services, and docs** textbox in the toolbar, to search for and navigate to the **aspdevops-rg** resource group blade.
+1. In the Azure portal, use the **Search resources, services, and docs** textbox in the toolbar to search for and navigate to the **aspdevops-rg** resource group blade.
 1. On the **aspdevops-rg** resource group blade, review the list of its resources and verify that it contains a SQL server, SQL database, App Service plan, and App Service.
 
 :::image type="content" source="../media/6-azure-resources.png" alt-text="The Azure portal displaying the list of Azure resources deployed by the pipeline.":::
 
 ## Results
 
-In this exercise you configured and ran an Azure DevOps pipeline to provision Azure web and database resources, including:
+In this exercise, you configured and ran an Azure DevOps pipeline to provision Azure web and database resources, including:
 
-- An Azure logical SQL server.
-- An Azure SQL database.
-- An Azure App Service plan.
-- An Azure App Service web app.
+- An Azure logical SQL server
+- An Azure SQL database
+- An Azure App Service plan
+- An Azure App Service web app
 
 ## Keep your web browser windows open if continuing the module exercises
 
