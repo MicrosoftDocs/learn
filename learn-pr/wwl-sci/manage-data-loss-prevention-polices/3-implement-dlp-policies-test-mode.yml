@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-loss-prevention-polices.manage-permissions-for-reports
+title: Implement DLP policies in test mode
+metadata:
+  title: Implement DLP policies in test mode
+  description: "Implement DLP policies in test mode"
+  ms.date: 01/24/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-dlp-policies-test-mode.md)]
