@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-data-loss-prevention-policies.implement-test-mode
+title: Combine DLP with Microsoft Cloud App Security
+metadata:
+  title: Combine DLP with Microsoft Cloud App Security
+  description: "Combine DLP with Microsoft Cloud App Security"
+  ms.date: 01/24/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-integrate-dlp-with-microsoft-cloud-app-security.md)]
