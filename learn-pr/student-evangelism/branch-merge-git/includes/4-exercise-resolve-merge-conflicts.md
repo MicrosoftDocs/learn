@@ -126,7 +126,7 @@ Option 3 is most often used. Git inserts *both* conflicting versions of content 
 
 Here's what we now see for the **index.html** file in Bob's repo. Notice the special formatting around the content where there are conflicts:
 
-:::code language="html" source="./resources/bob-index.html" range="1-18" highlight="11,13,15":::
+:::code language="html" source="../resources/bob-index.html" range="1-18" highlight="11,13,15":::
 
 <!-- HIDDEN
 ```
