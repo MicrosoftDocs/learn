@@ -105,11 +105,11 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
 
 And there it is: **the dreaded merge conflict**. The same line in the same file was changed by two people. Git sees the conflict and reports "Automatic merge failed." Git has no way of knowing whether the `src` attribute in the `<img>` element should reference the **bobcat2-317x240.jpg** file or the **bombay-cat-180x240.jpg** file:
 
-    ```output
-    Auto-merging index.html
-    CONFLICT (content): Merge conflict in index.html
-    Automatic merge failed; fix conflicts and then commit the result.
-    ```
+```output
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+```
 
 The output from Git identifies the **index.html** file as the source of the conflict.
 The question now is: What's Bob to do?
@@ -118,14 +118,17 @@ The question now is: What's Bob to do?
 ## Resolve the merge conflict
 
 Bob has a few options at this point:
-- Option 1: Use the `git merge --abort` command to restore the "master" branch to what it was before the attempted merge. Use the `pull` command to get Alice's changes. Then create a new branch, make their changes, and merge their branch into the "master" branch. Finally, push their changes.
+- Option 1: Use the `git merge --abort` command to restore the "master" branch to what it was before the attempted merge. Use the `pull` command to get Alice's changes. Then create a new branch, make their changes, and merge their branch into the "master" branch. Last, push their changes.
 - Option 2: Use the `git reset --hard` command to get back to where they were before they started the merge.
 - Option 3: Resolve the conflict manually by using information that Git inserts into the affected files.
 
 Option 3 is most often used. Git inserts *both* conflicting versions of content into the file. It uses special formatting to help you identify and resolve the conflict: left angle brackets `<<<<<<<`, double dashes (equal signs) `=======`, and right angle brackets `>>>>>>>`. The content above the line of dashes `=======` shows your changes in your branch. The content below the separator line shows the version of the content that's in the branch that you're trying to merge into.
 
-Here's what we now see for the **index.html** file in Bob's repo. Notice the special formatting for the areas of conflict:
+Here's what we now see for the **index.html** file in Bob's repo. Notice the special formatting around the content where there are conflicts:
 
+:::code language="html" source="./resources/bob-index.html" range="1-18" highlight="11,13,15":::
+
+<!-- HIDDEN
 ```
 <!DOCTYPE html>
 <html>
@@ -146,6 +149,7 @@ Here's what we now see for the **index.html** file in Bob's repo. Notice the spe
   </body>
 </html>
 ```
+-->
 
 Let's resolve the merge conflict by editing the **index.html** file. Because this is a quick fix, you'll make the change directly in the "master" branch even though you're still in the "Bob" directory.
 

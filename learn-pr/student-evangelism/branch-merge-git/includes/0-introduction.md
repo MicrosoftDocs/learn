@@ -17,7 +17,7 @@ In this module, you will:
 
 ## Prerequisites
   
-To work on this module, you should have a basic knowledge of Git, like:
+To work on this module, you should have the following understanding about Git:
 - Terminology like repository, working tree, index
 - Creating repos
 - Staging and committing changes
