@@ -155,7 +155,7 @@ Now, it's time to configure the Azure Pipeline you created in the previous exerc
    az webapp create -g $RESOURCEGROUPNAME -p $SVCPLANNAME -n $WEBAPPNAME
    ```
 
-   :::image type="content" source="../media/6-azure-cli-pipeline-task.png" alt-text="The azure-pipelines.yml editor pane including the azure cli task with its parameters set.":::
+   :::image type="content" source="../media/6-azure-cli-pipeline-task.png" alt-text="The azure-pipelines.yml editor pane including the Azure CLI task with its parameters set.":::
 
 1. On the **azure-pipelines.yml** editor pane, select the newly added task, and select the **Tab** key twice to indent it within the **DeployAzureResources** stage and job section.
 
