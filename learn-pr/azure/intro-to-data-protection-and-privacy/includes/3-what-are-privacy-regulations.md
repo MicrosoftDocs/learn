@@ -18,7 +18,7 @@ The various laws around the world describe the rights of persons and companies t
 
 Data protection policies that companies use internally mostly focus on the principles and procedures for data access management and data protection. At the same time, laws and regulations in this field strongly focus on data collection and data usage. Regulations very specifically define the who, when, and how of personal data collection. They also define how the data should be used and removed or deleted.
 
-Very often, organizations implement government-provided data privacy and protection regulations and internal data protection policies. Data protection officers should have a good understanding of the requirements according to their country/region’s laws and regulations and their organization’s internal policies. Based on this understanding, you should define procedures for data collection, storage, and protection and the use of technologies for their implementation.
+Very often, organizations implement government-provided data privacy and protection regulations and internal data protection policies. Data protection officers must have a good understanding of the requirements according to their country/region’s laws and regulations and their organization’s internal policies. Based on this understanding, define procedures for data collection, storage, and protection and the use of technologies for their implementation.
 
 > [!NOTE]
 
