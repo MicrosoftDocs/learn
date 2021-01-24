@@ -12,15 +12,15 @@ In this module, you’ll learn about data classification, DLP, and the managemen
 
 After completing this module, you'll be able to:
 
-- Describe sensitive information
+- Describe sensitive information.
 
-- Describe data classification
+- Describe data classification.
 
-- Describe common scenarios for using data classification
+- Describe common scenarios for using data classification.
 
-- Describe DLP
+- Describe DLP.
 
-- Describe Microsoft technologies for data classification and protection, and DLP
+- Describe Microsoft technologies for data classification and protection, and DLP.
 
 ## Prerequisites
 
