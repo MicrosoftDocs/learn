@@ -20,9 +20,7 @@ The message **Sandbox activated!** appears, and you can continue with the learni
 
 ## Create an Azure Maps account
 
-1. Activate the sandbox. The sandbox gives you access to free Azure resources to use during this module.
-
-1. To create a new Azure Maps account, run this command:
+1. In the sandbox, run the following command to create a new Azure Maps account:
 
     ```azurecli
     az maps account create \
@@ -36,7 +34,7 @@ The message **Sandbox activated!** appears, and you can continue with the learni
 
 ## Get the primary key
 
-Azure Maps accounts are secured by either an Azure Active Directory instance or a primary key. We'll run the following Azure CLI command to get the primary key. Later in this module, you'll use the key to give function app that's hosted in Azure Functions access to your Azure Maps account.
+Azure Maps accounts are secured by either an Azure Active Directory instance or a primary key. We'll run the following Azure CLI command to get the primary key. Later in this module, you'll use the key to give a function app that's hosted in Azure Functions access to your Azure Maps account.
 
 1. To view the keys list and get the primary key:
 

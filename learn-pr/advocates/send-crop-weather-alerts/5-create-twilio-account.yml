@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.send-crop-weather-alerts.5-create-twilio-account
-title: Exercise - Create a Twilio account for sending and receiving text messages
+title: Exercise - Create a Twilio account to send and receive text messages
 metadata:
-  title: Exercise - Create a Twilio account for sending and receiving text messages
-  description: Create a free Twilio account for sending and retrieving text messages programmatically.
+  title: Exercise - Create a Twilio account to send and receive text messages
+  description: Create a free Twilio account to send and receive text messages programmatically.
   author: berndverst
   ms.author: beverst
   ms.date: 01/21/2021

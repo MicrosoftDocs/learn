@@ -1,4 +1,4 @@
-In this unit, we'll look at the application that you'll create in this module. It has many components and is designed to implement various features. Here’s a summary of the capabilities: 
+In this unit, we look at the application that you'll create in this module. It has many components and is designed to implement a variety of features. Here’s a summary of the capabilities: 
 
 - The application has a standardized way to request text message temperature alerts for a location if the temperature goes outside a specified range.
 - For each location, the application can retrieve the low and high temperatures for an upcoming daily weather forecast.
@@ -35,4 +35,4 @@ Azure Functions is an event-based service that runs code when it's triggered. A 
 
 When you send a text message to Twilio to subscribe to temperature notifications, Twilio can make a web request to another function that uses an HTTP trigger.
 
-In this unit, you looked at the features of the application. Next, you'll create an Azure Maps account and set it up to get geocoding and location information for your application.
+In this unit, we looked at the features of the application. Next, you'll create an Azure Maps account and set it up to get geocoding and location information for your application.
