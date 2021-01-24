@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-azure-private-link.3-how-azure-web-application-firewall-works
+uid: learn.introduction-azure-web-application-firewall.3-how-azure-web-application-firewall-works
 title: How Azure Web Application Firewall works
 metadata:
   title: How Azure Web Application Firewall works
-  description: TBD.
-  ms.date: 02/28/2021
+  description: Learn how Azure Web Application Firewall works. In particular, learn about core rule sets and rule groups.
+  ms.date: 12/30/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
