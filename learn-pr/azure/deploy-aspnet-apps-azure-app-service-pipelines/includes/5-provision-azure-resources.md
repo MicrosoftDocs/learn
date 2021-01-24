@@ -1,8 +1,8 @@
-With the build artifacts successfully generated and published into Azure Pipelines, you're ready to proceed to the next step. This step isn't dependent on the build, instead it involves provisioning of the Azure resources into which you will deploy artifacts. Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you'll now modify, as your first set of deployment steps. This deployment follows the concept of *Infrastructure as code*.
+With the build artifacts successfully generated and published into Azure Pipelines, you're ready to proceed to the next step. This step isn't dependent on the build, instead it involves provisioning of the Azure resources into which you will deploy artifacts. Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you'll now modify, as your first set of deployment steps. This deployment follows the concept of *Infrastructure as Code*.
 
-## What is Infrastructure as code?
+## What is Infrastructure as Code?
 
-Infrastructure as code (IaC) applies DevOps principles to manage and maintain services that are traditionally the responsibility of infrastructure and platform teams within an IT organization. These services include compute, networking, and storage components that serve as the basis for deployment of software, which is the primary focus of development and operations teams. IaC started gaining prominence with the advent of cloud technologies, which practically eliminated dependency on physical, on-premises infrastructure.
+Infrastructure as Code (IaC) applies DevOps principles to manage and maintain services that are traditionally the responsibility of infrastructure and platform teams within an IT organization. These services include compute, networking, and storage components that serve as the basis for deployment of software, which is the primary focus of development and operations teams. IaC started gaining prominence with the advent of cloud technologies, which practically eliminated dependency on physical, on-premises infrastructure.
 
 IaC leverages automation to set up infrastructure services and control their configuration. By using IaC, you can automatically provision Azure App Service web apps and Azure SQL databases, into which you can subsequently deploy your apps and load your data. This approach offers a range of benefits, including consistency, scalability, agility, and repeatability.
 
@@ -30,7 +30,7 @@ Idempotency is a critical component of IaC. In scenarios more complex than the o
 
 ### IaC and Azure Pipeline stages
 
-Because IaC tasks provision infrastructure separately from artifacts that are deployed afterwards, you might consider encapsulating these tasks into a dedicated stage within an Azure pipeline. While, in general, it might make sense to still run all stages together, the multi-stage approach IaC will simplify testing artifact deployments separately from infrastructure provisioning.
+Because IaC tasks provision infrastructure separately from artifacts that are deployed afterwards, you might consider encapsulating these tasks into a dedicated stage within an Azure pipeline. While, in general, it might make sense to still run all stages together, the multi-stage approach of IaC will simplify testing artifact deployments separately from infrastructure provisioning.
 
 ## Target environment
 
@@ -58,7 +58,7 @@ Azure Pipelines provides several different methods for providing authenticated a
 
 To implement the target environment, you decided to use an Azure CLI script because you're familiar with Bash scripting. Based on your cursory overview of Azure CLI documentation, the commands to create an Azure resource group, an Azure App Service web app, and an Azure SQL database seemed straightforward. In addition, you verified that Azure Pipelines offer built-in Azure CLI tasks, which support Azure service connection and references to variable groups.
 
-The second of these two points is important because, to deploy an Azure logical SQL server and an Azure App Service web app you need to assign to each a globally unique name. You can identify such names prior to the first deployment, store them by using a variable group, and reference them during pipeline execution across multiple stages.
+The second of these two points is important because, to deploy an Azure logical SQL server and an Azure App Service web app, you need to assign to each a globally unique name. You can identify such names prior to the first deployment, store them by using a variable group, and reference them during pipeline execution across multiple stages.
 
 > [!NOTE]
 > To reference a variable group from within a pipeline, you need to configure the variable group access setting and link the variable group to the pipeline. You'll step through this process in the upcoming exercise.
