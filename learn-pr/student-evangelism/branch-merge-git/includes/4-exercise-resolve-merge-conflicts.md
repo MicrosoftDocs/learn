@@ -118,11 +118,11 @@ The question now is: What's Bob to do?
 ## Resolve the merge conflict
 
 Bob has a few options at this point:
-- Option 1: Use the `git merge --abort` command to restore the "master" branch to what it was before the attempted merge. Use the `pull` command to get Alice's changes. Then create a new branch, make their changes, and merge their branch into the "master" branch. Last, push their changes.
-- Option 2: Use the `git reset --hard` command to get back to where they were before they started the merge.
-- Option 3: Resolve the conflict manually by using information that Git inserts into the affected files.
+- Use the `git merge --abort` command to restore the "master" branch to what it was before the attempted merge. Use the `pull` command to get Alice's changes. Then create a new branch, make their changes, and merge their branch into the "master" branch. Last, push their changes.
+- Use the `git reset --hard` command to get back to where they were before they started the merge.
+- Resolve the conflict manually by using information that Git inserts into the affected files.
 
-Option 3 is most often used. Git inserts *both* conflicting versions of content into the file. It uses special formatting to help you identify and resolve the conflict: left angle brackets `<<<<<<<`, double dashes (equal signs) `=======`, and right angle brackets `>>>>>>>`. The content above the line of dashes `=======` shows your changes in your branch. The content below the separator line shows the version of the content that's in the branch that you're trying to merge into.
+Developers seem to prefer the last option. When Git detects a conflict in content versions, it inserts *both* versions of the content into the file. It uses special formatting to help you identify and resolve the conflict: left angle brackets `<<<<<<<`, double dashes (equal signs) `=======`, and right angle brackets `>>>>>>>`. The content above the line of dashes `=======` shows your changes in your branch. The content below the separator line shows the version of the content that's in the branch that you're trying to merge into.
 
 Here's what we now see for the **index.html** file in Bob's repo. Notice the special formatting that shows the content with conflicts:
 
