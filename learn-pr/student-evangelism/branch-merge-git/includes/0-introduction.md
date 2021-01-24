@@ -14,3 +14,15 @@ In this module, you will:
 - Create new branches and switch between branches
 - Merge branches together
 - Learn basic techniques for resolving merge conflicts
+
+## Prerequisites
+  
+To work on this module, you should have the following understanding about Git:
+- Terminology like repository, working tree, index
+- Creating repos
+- Staging and committing changes
+- Resetting and reverting from simple mistakes 
+- Cloning repositories
+- Pull requests
+- Stashing changes
+- Pushing changes and updating your repo by pulling

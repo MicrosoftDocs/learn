@@ -37,7 +37,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     cd Alice
     git clone ../Shared.git .
     git config user.name Alice
-    git config user.email aice@contoso.com
+    git config user.email alice@contoso.com
     ```
 
 1. Clone and configure the repo for Bob:
@@ -52,16 +52,16 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 ### Add base files
 
-As a final setup step, we will add our base website files and push them to the shared repo.
+As a final setup step, we'll add our base website files and push them to the shared repo. For these commands, we're still working in the "Bob" directory.
 
-1. Create some files with the Linux `touch` command, then stage them and commit using Git:
+1. Create some files with the Linux `touch` command, then stage them and commit by using Git:
 
     ```bash
     touch index.html
     mkdir Assets
     touch Assets/site.css
     git add .
-    git commit index.html -m "Create empty index.html, site.css files"
+    git commit -m "Create empty index.html, site.css files"
     ```
 
 1. Now add some HTML to your file using Cloud Shell's code editor, which you can open with the `code` command. Open **index.html** in the online editor by typing `code index.html` at the terminal prompt:
@@ -160,7 +160,7 @@ As a final setup step, we will add our base website files and push them to the s
 
 ## Create a branch for Alice
 
-Alice wants to create a _topic branch_ called "add-style" to do her work. Let's assume the role of Alice, create the branch, and add some code in that branch.
+Alice wants to create a _topic branch_ called "add-style" to do her work. Let's assume the role of Alice, and then create the branch and add some code into this branch.
 
 1. Navigate back to the **Alice** directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
 

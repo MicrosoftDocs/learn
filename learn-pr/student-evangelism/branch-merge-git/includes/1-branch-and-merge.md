@@ -4,7 +4,7 @@ _Branches_ make this easy. The work done "on a branch" doesn't have to be shared
 
 One of Git's advantages over older version-control systems is that creating a branch is extremely fast; it amounts to writing a 40-character hash into a file under ".git/heads." Switching branches is also fast, because Git stores whole files and just unzips them rather than trying to reconstruct them from lists of changes. Merging in Git isn't _quite_ that simple, but it's straightforward and often completely automatic. Let's learn what branches are, how they're used, and how they work.
 
-## Understanding branches
+## Understand branches
 
 A _branch_ is simply a chain of commits "branching off" from the main line of development, like a branch on a tree.
 
@@ -12,17 +12,13 @@ If you are switching to Git from another version-control system, you may be accu
 
 A branch usually starts with a commit on "master." It grows a separate history chain as commits are added. Eventually its changes can be merged back into "master." You will learn to do that shortly.
 
-Suppose you branch off of "master." Here's how to visualize what happens:
+Suppose you branch off of the "master" branch. Here's how to visualize what happens:
 
-```diagram
-master:  A---B---C---D
-              \
-branch:        E---F---G
-```
+![A simple tree graph that shows the relationship of the master branch and local branches.](../media/branch-tree.png)
 
 Each capital letter in the diagram represents a commit. Branches are given names such as "add-authentication" and "fix-css-bug," and branches can have branches of their own. The ultimate goal is to let developers do what they need to do without stepping on one another, and to wind up with a "master" branch representing the best efforts of everyone involved.
 
-## Creating and switching branches with `git branch` and `git checkout`
+## Create and switch branches with `git branch` and `git checkout`
 
 A common reason to create a new branch is to make changes to an existing feature. A branch for this purpose would commonly be called a _topic branch_ or _feature branch_.
 
@@ -30,7 +26,7 @@ You can create a new branch with the `git branch` command, and switch between br
 
 You have already encountered `checkout` as a way of replacing files in the working tree by getting them from the index. With no paths in the argument list, `checkout` updates *everything* in the working tree and the index to match the specified commit — in this case, the head of the branch.
 
-## Merging branches with `git merge`
+## Merge branches with `git merge`
 
 Once you've finalized some work, like a feature or bug fix, in a branch, you'll want to _merge_ that branch back into the "master" branch. You can use the `git merge` command to merge a given branch into your current branch.
 
