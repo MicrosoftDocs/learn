@@ -124,36 +124,13 @@ Bob has a few options at this point:
 
 Option 3 is most often used. Git inserts *both* conflicting versions of content into the file. It uses special formatting to help you identify and resolve the conflict: left angle brackets `<<<<<<<`, double dashes (equal signs) `=======`, and right angle brackets `>>>>>>>`. The content above the line of dashes `=======` shows your changes in your branch. The content below the separator line shows the version of the content that's in the branch that you're trying to merge into.
 
-Here's what we now see for the **index.html** file in Bob's repo. Notice the special formatting around the content where there are conflicts:
+Here's what we now see for the **index.html** file in Bob's repo. Notice the special formatting that shows the content with conflicts:
 
 :::code language="html" source="../resources/bob-index.html" range="1-18" highlight="11,13,15":::
 
-<!-- HIDDEN
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='UTF-8'>
-    <title>Our Feline Friends</title>
-    <link rel="stylesheet" href="CSS/site.css">
-  </head>
-  <body>
-    <nav><a href="./index.html">home</a></nav>
-    <h1>Our Feline Friends</h1>
-    <<<<<<< HEAD
-    <img class="cat" src="Assets/bombay-cat-180x240.jpg">
-    =======
-    <img class="cat" src="assets/bobcat2-317x240.jpg">
-    >>>>>>> style-cat
-    <footer><hr>Copyright (c) 2019 Contoso Cats</footer>
-  </body>
-</html>
-```
--->
-
 Let's resolve the merge conflict by editing the **index.html** file. Because this is a quick fix, you'll make the change directly in the "master" branch even though you're still in the "Bob" directory.
 
-1. Open the **index.html** file and delete these three lines:
+1. Open the **index.html** file and delete the special formatting lines. Don't remove any other statements. 
 
     ```html
     <<<<<<< HEAD
@@ -161,11 +138,11 @@ Let's resolve the merge conflict by editing the **index.html** file. Because thi
     >>>>>>> style-cat
     ```
 
-    Only remove the special formatting lines. Don't remove any other statements. Then save and close the file.
+    Save and close the file.
 
     The **index.html** file now has two `<img>` elements: one for Bob's cat picture and one for Alice's.
 
-    Come text editors feature Git integration and offer to help when they see text that represents merge conflicts. If you open the **index.html** file in Visual Studio Code, you'll see this:
+    Some text editors feature Git integration and offer to help when they see text that represents merge conflicts. If you open the **index.html** file in Visual Studio Code, you'll see this:
 
     ![Screenshot that shows how to resolve merge conflicts in Visual Studio Code.](../media/resolve-conflict.png)
 
@@ -195,4 +172,4 @@ Let's resolve the merge conflict by editing the **index.html** file. Because thi
     git pull
     ```
     
-    Now open Alice's **index.html** file and confirm that their version also has two `<img>` tags with cat pictures.
+    Now open Alice's **index.html** file and confirm their version also has two `<img>` tags with cat pictures.
