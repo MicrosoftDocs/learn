@@ -32,7 +32,6 @@ Data privacy defines:
 - The level of control you have over the retention and use of data.
 
 > [!NOTE]
-
 > In general, data protection is mostly technical control over data, while data privacy is more of a process or legal matter. Data protection does not ensure data privacy or vice versa. You should implement data protection and data privacy together as a proper control mechanism.
 
 ## Key principles for data protection
