@@ -222,7 +222,7 @@ To validate the DevOps CI/CD functionality, you'll re-enable continuous integrat
 
 To conclude this exercise, you'll trigger integration and deployment by modifying the code hosted in the GitHub repository.
 
-1. Within the web browser window displaying the Azure DevOps portal, switch to the browser tab displaying the fork of the GitHub repository you created in the first exercise of this lab.
+1. Within the web browser window displaying the Azure DevOps portal, switch to the browser tab displaying the GitHub repository you created in the first exercise of this lab.
 1. Within the web browser window displaying the GitHub repository you created in the first exercise of this lab, select the **Code** tab header.
 1. Within the repository hierarchy, navigate to the **/DotNetAppSqlDb/Views/Shared/_Layout.cshtml** file.
 1. On the page displaying the content of **_Layout.cshtml**, select the **Edit this file** pencil-shaped icon.

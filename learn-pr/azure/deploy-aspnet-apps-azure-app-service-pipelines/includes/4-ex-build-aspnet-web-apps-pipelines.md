@@ -24,7 +24,7 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 1. On the **Authorize Microsoft-Corporation** page, select **Authorize Microsoft-corp**.
 1. If you're using a Microsoft account, on **Link your GitHub credentials to your Microsoft account**, select **Next**. When prompted, enter the code included in another email delivered to your email account, select **Sign in**, and, to complete the setup, select **Got it**.
 
-   > ![NOTE] If prompted to set up your Azure DevOps organization details, verify your name, email address, and location, and then select **Continue**.
+   > [!NOTE] If prompted to set up your Azure DevOps organization details, verify your name, email address, and location, and then select **Continue**.
 
 1. On the **Get started with Azure DevOps** page, select **Continue**.
 1. On the **Create a project to get started** page, in the **Project name** text box, enter **Deploy ASP.NET web apps with Azure Pipelines**, leave the visibility set to **Private**, and select **+ Create project**.
