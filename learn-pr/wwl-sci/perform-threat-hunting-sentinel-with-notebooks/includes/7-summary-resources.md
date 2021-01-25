@@ -14,4 +14,4 @@ You can learn more by reviewing the following.
 
 [Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)
 
-[KQL quick reference](https://docs.microsoft.com/en-us/azure/data-explorer/kql-quick-reference?azure-portal=true)
+[KQL quick reference](https://docs.microsoft.com/azure/data-explorer/kql-quick-reference?azure-portal=true)
