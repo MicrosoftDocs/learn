@@ -12,11 +12,11 @@ For example, you created a file policy in MCAS to identify files including Tax I
 
 1. You should see three tabs at the top of the page:
 
-- Match now allows you to see currently existing matches for the file policy and use the filters at the top to refine the results.
+    - Match now allows you to see currently existing matches for the file policy and use the filters at the top to refine the results.
 
-- Quarantined allows you to see the files that have been quarantined because of a file policy governance action.
+    - Quarantined allows you to see the files that have been quarantined because of a file policy governance action.
 
-- History allows you to see former matches to the policy which have been resolved because of changes to the file or the policy itself.
+    - History allows you to see former matches to the policy which have been resolved because of changes to the file or the policy itself.
 
 Use this page to find patterns in your matches and decide if you need to take action. For example, you notice a high volume of matches, but they all originate from a single user. You should investigate the matches and identify if the user has a valid business reason to generate these matches.
 
