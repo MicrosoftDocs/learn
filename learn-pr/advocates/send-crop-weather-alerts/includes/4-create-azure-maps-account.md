@@ -18,7 +18,7 @@ To activate the sandbox:
 
 The message **Sandbox activated!** appears, and you can continue with the learning module.
 
-## Create an Azure Maps account
+### Create a Maps account
 
 In the sandbox, run the following command to create a new Azure Maps account:
 

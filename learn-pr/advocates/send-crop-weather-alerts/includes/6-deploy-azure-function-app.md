@@ -15,7 +15,7 @@ When you choose a name for your Azure storage account, keep this guidance in min
 
 To create a storage account in the sandbox:
 
-1. First, create an environment variable for the storage account name you will use. The variable will be used in other commands in this module.
+1. First, create an environment variable for the storage account name you'll use. The variable will be used in other commands in this module.
 
     To create the variable, in the following command, replace \<your-storage-account-name\> with the name you want to use for your storage account (for example, *cropweatheralert20200519*).
 

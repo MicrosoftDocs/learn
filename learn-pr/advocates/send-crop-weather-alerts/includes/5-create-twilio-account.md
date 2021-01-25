@@ -6,7 +6,7 @@ To send and receive text messages programmatically, you'll need to get a Twilio 
 
 1. Enter your name, contact information, and a password, and then select **Start your free trial**.
 
-1. Twilio will send you an email to verify your email address. In the email message, select **Confirm your email**, and then log in to Twilio with the email address and password that you entered in the preceding step.
+1. Twilio will send you an email to verify your email address. In the email message, select **Confirm your email**, and then sign in to Twilio with the email address and password that you entered in the preceding step.
 
 1. Enter your phone number for verification.
 

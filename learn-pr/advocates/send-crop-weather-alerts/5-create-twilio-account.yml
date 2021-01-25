@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.send-crop-weather-alerts.5-create-twilio-account
-title: Exercise - Create a Twilio account for a text messaging number
+title: Exercise - Create a Twilio account to send and receive text messages
 metadata:
-  title: Exercise - Create a Twilio account for a text messaging number
+  title: Exercise - Create a Twilio account to send and receive text messages
   description: Create a free Twilio account and get a phone number that can send and receive text messages.
   author: berndverst
   ms.author: beverst
