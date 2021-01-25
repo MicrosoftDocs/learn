@@ -47,7 +47,7 @@ The CCPA is the first comprehensive privacy law in the United States of America.
 
 The CCPA only applies to companies that do business in California and satisfy one or more of the following conditions:
 
-- Have a gross annual revenue of more than $25 million
+- Have a gross annual revenue of more than 25 million United States dollars (USD)
 
 - Derive more than 50% of their annual income from the sale of California consumer personal information
 
@@ -58,7 +58,7 @@ The CCPA only applies to companies that do business in California and satisfy on
 
 ### Enforcement by the California Attorney General
 
-The California Attorney General enforces the CCPA and has power to issue non-compliance fines. The CCPA also provides a private right of action, which is limited to data breaches. Under the private right of action, damages can come in between $100 and $750 per incident per consumer. The California Attorney General also can enforce the CCPA in its entirety with the ability to levy a civil penalty of not more than $2,500 per violation or $7,500 per intentional violation.
+The California Attorney General enforces the CCPA and has power to issue non-compliance fines. The CCPA also provides a private right of action, which is limited to data breaches. Under the private right of action, damages can come in between 100 USD and 750 USD per incident per consumer. The California Attorney General also can enforce the CCPA in its entirety with the ability to levy a civil penalty of not more than 2,500 USD per violation or 7,500 USD per intentional violation.
 
 > [!NOTE]
 > Many of the CCPA's rights afforded to Californians are similar to the rights the GDPR provides, including disclosure and data subject rights such as access, deletion, and portability. As such, customers can research already existing GDPR solutions to help them with their CCPA compliance.
