@@ -32,7 +32,7 @@ az maps account create \
 > [!NOTE]
 > The output message that's shown after you run this command is informative only. You don’t need to take any additional action.
 
-## Get the primary key
+### Get the primary key
 
 Azure Maps accounts are secured by either an Azure Active Directory instance or a primary key. We'll run the following Azure CLI command to get the primary key. Later in this module, you'll use the key to give a function app that's hosted in Azure Functions access to your Azure Maps account.
 

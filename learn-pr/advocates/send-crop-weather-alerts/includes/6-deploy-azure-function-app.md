@@ -1,8 +1,10 @@
 In this unit, you'll create and deploy an existing application to the function app.
 
-## Create a storage account
+The function app we'll create requires a storage account for storing the application code and other information. First, we'll create an Azure Storage account.
 
-The function app requires a storage account for storing the application code and other information. The function app also must have a table called *alerts* inside the storage account to track the locations, phone numbers, and temperature ranges to create alerts for.
+## Create an Azure Storage account
+
+The function app needs a storage account and a table called *alerts* inside the storage account to track the locations, phone numbers, and temperature ranges to create alerts for.
 
 When you choose a name for your Azure storage account, keep this guidance in mind:
 
@@ -13,10 +15,10 @@ When you choose a name for your Azure storage account, keep this guidance in min
 
 1. First, create an environment variable for the storage account name you will use. The variable will be used in other commands in this module.
 
-    To create the variable, in the following command, replace \<YOUR-STORAGE-ACCOUNT-NAME\> with the name you want to use for your storage account (for example, *cropweatheralert20200519*).
+    To create the variable, in the following command, replace \<your-storage-account-name\> with the name you want to use for your storage account (for example, *cropweatheralert20200519*).
 
     ```azurecli
-    export STORAGE_ACCOUNT_NAME=<YOUR-STORAGE-ACCOUNT-NAME>
+    export STORAGE_ACCOUNT_NAME=<your-storage-account-name>
     ```
 
    > [!NOTE]
@@ -36,16 +38,16 @@ When you choose a name for your Azure storage account, keep this guidance in min
       --account-name $STORAGE_ACCOUNT_NAME
     ```
 
-## Create a function app
+## Create an Azure Functions function app
 
 The name of the function app that you create in Azure Functions must be unique among all function app names in Azure. To make a unique name, include information like the date or your name. This name can be the same as your storage account name if it's unique.
 
 1. First, create an environment variable for the name of the function app by running the following command. The variable will be used in other commands later in this unit.
 
-    Replace \<YOUR-FUNCTION-APP-NAME\> with the name you want to use for your function app (for example, *cropweatheralert20200519*).
+    Replace \<your-function-app-name\> with the name you want to use for your function app (for example, *cropweatheralert20200519*).
 
     ```azurecli
-    export FUNCTION_APP_NAME=<YOUR-FUNCTION-APP-NAME>
+    export FUNCTION_APP_NAME=<your-function-app-name>
     ```
 
 1. To create a new function app, run this command:
@@ -63,7 +65,11 @@ The name of the function app that you create in Azure Functions must be unique a
     > [!NOTE]
     > Although your function app is now created, the app isn’t active until you publish content to the app from the Azure portal or by using the Functions Core Tools. You’ll learn how to publish content to your app in a later step.
 
-## Create environment variables
+## Configure and deploy the function app
+
+We need to do a couple more steps to configure and deploy the function app.
+
+### Create environment variables
 
 After your application is deployed, it requires the Azure Maps key, the Twilio phone number, the Twilio account SID, and the Twilio auth token. This information is provided to the application via environment variables that are known as *app settings*.
 
@@ -73,15 +79,15 @@ After your application is deployed, it requires the Azure Maps key, the Twilio p
     az functionapp config appsettings set \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name $FUNCTION_APP_NAME \
-      --settings "AZURE_MAPS_SUBSCRIPTION_KEY=<YOUR-MAPS-KEY>" "TWILIO_PHONE_NUMBER=<YOUR-TWILIO-NUMBER, for example +12324345678>" "TwilioAccountSID=<YOUR-TWILIO-ACCOUNT-SID>" "TwilioAuthToken=<YOUR-TWILIO-AUTH-TOKEN>"
+      --settings "AZURE_MAPS_SUBSCRIPTION_KEY=<your-Azure-Maps-key>" "TWILIO_PHONE_NUMBER=<your-Twilio-phone-number, for example +12324345678>" "TwilioAccountSID=<your-Twilio-account-SID>" "TwilioAuthToken=<your-Twilio-auth-token>"
     ```
 
     Before you run the code, make the following replacements with values you copied earlier:
 
-    - Replace \<YOUR-MAPS-KEY\> with the Azure Maps primary key.
-    - Replace \<YOUR-TWILIO-NUMBER\> with your Twilio trial phone number.
-   -  Replace \<YOUR-TWILIO-ACCOUNT-SID\> with your Twilio account SID.
-   -  Replace \<YOUR-TWILIO-AUTH-TOKEN\> with your Twilio auth token.
+    - Replace \<your-Azure-Maps-key\> with the Azure Maps primary key.
+    - Replace \<your-Twilio-phone-number\> with your Twilio trial phone number.
+   -  Replace \<your-Twilio-account-SID\> with your Twilio account SID.
+   -  Replace \<your-Twilio-auth-token\> with your Twilio auth token.
 
 1. To verify that the app settings were created and that they have the correct values, run this command:
 
@@ -92,7 +98,7 @@ After your application is deployed, it requires the Azure Maps key, the Twilio p
       --output table
     ```
 
-## Download the application code for the function app
+### Download the application code for the function app
 
 We'll get the function app's source code from a repository on GitHub.
 
@@ -133,7 +139,7 @@ We'll get the function app's source code from a repository on GitHub.
 
 1. To close the nano editor, select Ctrl+X.
 
-## Deploy the application to the function app
+### Deploy the application to the function app
 
 Now you're ready to deploy your application to the function app.
 
@@ -143,7 +149,7 @@ To publish the code, run this command:
 func azure functionapp publish $FUNCTION_APP_NAME --python
 ```
 
-## Get the HTTP trigger endpoint
+### Get the HTTP trigger endpoint
 
 One of the functions in the function app is configured to respond to HTTP requests. Twilio will make HTTP requests in the application.
 

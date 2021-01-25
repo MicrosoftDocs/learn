@@ -1,6 +1,6 @@
 In this unit, you'll connect your Twilio phone number to the function app to receive text messages.
 
-## Connect Twilio to the function app for incoming text messages
+## Connect Twilio to the function app
 
 Now that everything is set up, the only thing left to do is to make Twilio call the function app endpoint for incoming text messages.
 
