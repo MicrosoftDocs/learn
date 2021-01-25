@@ -87,13 +87,13 @@ To manage the Attack Surface Reduction rules in Intune:
 
 1. Select **OK** on the three configuration panes. Then select Create if you're creating a new endpoint protection file or Save if you're editing an existing one.
 
-### MDM
+### Mobile device management
 
-To manage the attack surface reduction rules in MDM:
+To manage the attack surface reduction rules in mobile device management:
 
 - Use the ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules configuration service provider (CSP) to individually enable and set the mode for each rule.
 
-- Follow the MDM reference in [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules?azure-portal=true) for using GUID values.
+- Follow the mobile device management reference in [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules?azure-portal=true) for using GUID values.
 
 - OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules
 
