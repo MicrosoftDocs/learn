@@ -21,5 +21,4 @@ Data protection policies that companies use internally mostly focus on the princ
 Very often, organizations implement government-provided data privacy and protection regulations and internal data protection policies. Data protection officers must have a good understanding of the requirements according to their country/region’s laws and regulations and their organization’s internal policies. Based on this understanding, define procedures for data collection, storage, and protection and the use of technologies for their implementation.
 
 > [!NOTE]
-
 > Microsoft provides compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
