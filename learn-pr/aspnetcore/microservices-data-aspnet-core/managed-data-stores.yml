@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-data-aspnet-core.managed-data-stores
 metadata:
-  title: Review Azure-managed data stores
+  title: Review managed data stores in Azure
   description: TODO
   author: scottaddie
   ms.author: scaddie
   ms.date: 01/19/2021
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
-title: Review Azure-managed data stores
+title: Review managed data stores in Azure
 durationInMinutes: 10
 content: |
   [!include[](includes/managed-data-stores.md)]

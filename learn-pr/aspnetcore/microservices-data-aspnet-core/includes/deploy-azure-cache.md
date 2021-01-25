@@ -1,7 +1,7 @@
 In this exercise, you will:
 
 - Create an Azure Redis Cache instance.
-- Remove the redis cache deployment from the cluster.
+- Remove the Redis cache deployment from the cluster.
 - Reconfigure the affected microservices to use the new Azure Redis Cache instance.
 - Redeploy the affected microservices.
 
@@ -73,11 +73,11 @@ The following output appears:
 release "eshoplearn-basketdata" uninstalled
 ```
 
-If you checked the `webstatus` microservice, you should see Aggregator and the Basket microservice failing. Although it could take a little while to show.
+If you checked the *WebStatus* dashboard, you should see the HTTP aggregator and basket service failing. Although it could take a little while to show.
 
 ## Reconfigure the affected microservices
 
-Now you have to update the `configmaps` for the following microservices that are using Redis:
+Now you have to update the ConfigMap files for the following microservices that are using Redis:
 
 - Basket
 - Identity
@@ -104,7 +104,7 @@ Apply the following changes in the *deploy/k8s/helm-simple* directory:
 
 ## Redeploy the affected microservices
 
-You need to get the Load Balancer IP address from the initial deployment and you can get it into an environment variable by running the following command:
+You need to get the load balancer's IP address from the initial deployment. You can save it to an environment variable by running the following command:
 
 ```bash
 eval $(cat ~/clouddrive/aspnet-learn/deploy-application-exports.txt)
@@ -116,4 +116,4 @@ Then just run the following script:
 ./deploy/k8s/deploy-application.sh --charts basket,identity,signalr,webspa
 ```
 
-After a few minutes, when you should see all services running in the `webstatus` microservice, you can run the app as you did before deleting the `basketdata` microservice to confirm it's working as before.
+After a few minutes, when you see all services running in the *WebStatus* dashboard, run the app as you did before deleting the `basketdata` service to confirm it's working.

@@ -9,7 +9,7 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Use managed data stores in a cloud-native ASP.NET Core microservices app
-summary: Implement Azure-managed data stores in an ASP.NET Core microservices app.
+summary: Modify a cloud-native ASP.NET Core microservices app to use managed data stores in Azure.
 abstract: |
   In this module, you will:
   - Review fully managed data service offerings in Azure.

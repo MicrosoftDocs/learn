@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: Mark all general features of managed data services
+    - content: Mark all general features of managed data services.
       choices:
         - content: Automatic scaling.
           isCorrect: false
@@ -28,7 +28,7 @@ quiz:
         - content: High availability.
           isCorrect: false
           explanation: TODO
-  #   - content: Mark the features specific to Azure Cache for Redis
+  #   - content: Mark the features specific to Azure Cache for Redis.
   #     choices:
   #       - content: Data persistence and high-availability cluster for Premium tier.
   #         isCorrect: true
@@ -42,7 +42,7 @@ quiz:
   #       - content: SQL API
   #         isCorrect: false
   #         explanation: TODO
-  #   - content: Mark the features specific to Azure CosmosDB
+  #   - content: Mark the features specific to Azure Cosmos DB.
   #     choices:
   #       - content: Single-digit millisecond latencies.
   #         isCorrect: true

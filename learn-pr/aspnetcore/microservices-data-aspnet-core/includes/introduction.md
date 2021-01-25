@@ -3,7 +3,7 @@ In a microservices app, you need a database to support the business operations. 
 1. Provision database servers yourself using virtual machines or database clusters for high availability.
 1. Configure a managed database service.
 
-The *:::no-loc text="eShopOnContainers":::* app uses in-cluster data services, deployed as containers/pods; however, that's a valid option just for a demo or dev/test environment.
+The *:::no-loc text="eShopOnContainers":::* app uses in-cluster data services, deployed as containers/pods; however, that's a valid option just for a demo or development/test environment.
 
 In this module, you will:
 

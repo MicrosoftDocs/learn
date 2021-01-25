@@ -18,7 +18,7 @@ In this module, you'll explore how to modify the *:::no-loc text="eShopOnContain
 
 [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) provides an in-memory data store based on the open-source software [Redis](https://redis.io/). When used as a cache, Redis improves the performance and scalability of systems that rely heavily on backend data stores. Frequently accessed data is copied to fast storage located close to the app. With Azure Cache for Redis, this fast storage is located in-memory instead of being loaded from disk by a database.
 
-Azure Cache for Redis can be used as a distributed data cache, a session store, and a message broker. App performance is improved by taking advantage of the Redis engine's low-latency, high-throughput performance.
+Azure Cache for Redis can be used as a distributed data cache, session store, and message broker. App performance is improved by taking advantage of the Redis engine's low-latency, high-throughput performance.
 
 Azure Cache for Redis offers access to a secure, dedicated Redis cache. It's managed by Microsoft, hosted on Azure, and accessible to any app within or outside of Azure.
 
