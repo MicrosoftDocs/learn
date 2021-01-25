@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/22/2021
+  ms.date: 01/25/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,36 +16,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "After hearing of a security breach at a competitor, the security team wants to improve identity security within their organization. What should they implement immediately to provide the greatest protection to user identities?"
+  - content: "After hearing of a breach at a competitor, the security team wants to improve identity security within their organization. What should they implement immediately to provide the greatest protection to user identities?"
     choices:
-    - content: "Multi-factor authentication."
+    - content: "Multifactor authentication."
       isCorrect: true
-      explanation: "That's correct. Multi-factor authentication dramatically improves the security of an identity."
-    - content: "Require biometrics for all sign-in."
+      explanation: "That's correct. Multifactor authentication dramatically improves the security of an identity."
+    - content: "Require biometrics for all sign-ins."
       isCorrect: false
-      explanation: "That's incorrect. Whilst biometric sign-in is secure, there may be a hardware cost and so difficult to implement quickly."
+      explanation: "That's incorrect. While biometric sign-in is secure, there may be a hardware cost that makes it difficult to implement quickly."
     - content: "Require strong passwords for all identities."
       isCorrect: false
-      explanation: "That's  incorrect. Although strong passwords improve security, passwords alone are not as secure as multiple layers of security."
-  - content: "To improve identity security within the organization, the security team wants to implement Windows Hello for Business. When explaining the benefits of Windows Hello for Business, which of the following is true?"
+      explanation: "That's  incorrect. Although strong passwords improve security, they're not as secure as multiple layers of security."
+  - content: "To improve identity security within the organization, the security team wants to implement Windows Hello for Business. When explaining the benefits of Windows Hello for Business, which of the following statements is true?"
     choices:
     - content: "Windows Hello is an authentication feature built into Windows Server 2012 R26."
       isCorrect: false
       explanation: "That's incorrect. Windows Hello is an authentication feature built into Windows 10."
-    - content: "Windows Hello is an alternative to multi-factor authentication."
+    - content: "Windows Hello is an alternative to multifactor authentication."
       isCorrect: false
-      explanation: "That's incorrect. Windows Hello uses multi-factor authentication to authenticate users, such as a PIN and biometric data."
+      explanation: "That's incorrect. Windows Hello uses multifactor authentication, such as a PIN and biometric data, to authenticate users."
     - content: "Windows Hello for Business is more secure because it uses PINs and biometric data to authenticate users."
       isCorrect: true
-      explanation: "That's correct. Windows Hello for Business uses a PIN and biometric data to authenticate users and does not transmit data to an external server."
-  - content: "Your company's IT organization has been asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
+      explanation: "That's correct. Windows Hello for Business uses a PIN and biometric data to authenticate users and doesn't transmit data to an external server."
+  - content: "A company's IT organization has been asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
     choices:
     - content: "Self-service password reset."
       isCorrect: true
       explanation: "That's correct. Self-service password reset allows users to change or reset their own passwords, thereby reducing the cost of providing administrators and help desk personnel."
     - content: "Biometric sign-in on all devices."
       isCorrect: false
-      explanation: "That's incorrect. Biometric sign-in is secure but may involve up-grading hardware."
+      explanation: "That's incorrect. Biometric sign-in is secure but may involve upgrading hardware."
     - content: "FIDO2."
       isCorrect: false
-      explanation: "That's incorrect. FIDO2 may require the purchase of external keys such as a USB device, which may involve additional expense."
+      explanation: "That's incorrect. FIDO2 may require the purchase of external keys such as a USB device, which might involve additional expense."
