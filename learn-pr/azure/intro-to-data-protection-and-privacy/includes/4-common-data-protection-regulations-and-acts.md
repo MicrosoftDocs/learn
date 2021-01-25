@@ -7,7 +7,6 @@ The GDPR introduces rules for organizations that offer goods and services to peo
 The GDPR is an EU regulation that updates and expands the earlier Data Protection Directive that was first enacted in 1995. The GDPR is concerned with the privacy of an individual's data. The individual could be a client, customer, employee, or business partner of an organization. The GDPR's goal is to strengthen personal data protection for EU citizens, whether they reside in the EU or elsewhere. The regulation sets out expectations and advises on how to achieve them. When the GDPR became enforceable in May 2018, organizations started having measures in place to satisfy the requirements of the GDPR.
 
 > [!NOTE]
-
 > The GDPR is all about data and how it's used. In the context of GDPR, you can think of data as having a lifecycle. The cycle starts when you collect data, continues as you store and use it (processing), and ends when you completely delete it from your systems.
 
 The GDPR deals with the following types of data:
@@ -40,7 +39,6 @@ When learning about GDPR, you'll often come across specific terms. It's importan
   - Ask not to be subject to automated decision-making, including profiling. The GDPR has strict rules about using data to profile people and automate decisions based on that profiling.
   
 > [!NOTE]
-  
 > It's important to understand that although the GDPR is a regulation that protects EU citizens, you can be affected by it even if you are not a citizen of EU. If your organization deals with EU citizens and companies, or hopes to in the future, you'll be affected. This applies to both citizens living in an EU state and those living elsewhere.
 
 ## Overview of CCPA
@@ -56,7 +54,6 @@ The CCPA only applies to companies that do business in California and satisfy on
 - Buy, sell, or share the personal information of more than 50,000 California consumers annually
 
 > [!NOTE]
-
 > The CCPA went into effect on January 1, 2020. However, enforcement by the California Attorney General started on July 1, 2020.
 
 ### Enforcement by the California Attorney General
@@ -64,5 +61,4 @@ The CCPA only applies to companies that do business in California and satisfy on
 The California Attorney General enforces the CCPA and has power to issue non-compliance fines. The CCPA also provides a private right of action, which is limited to data breaches. Under the private right of action, damages can come in between $100 and $750 per incident per consumer. The California Attorney General also can enforce the CCPA in its entirety with the ability to levy a civil penalty of not more than $2,500 per violation or $7,500 per intentional violation.
 
 > [!NOTE]
-
 > Many of the CCPA's rights afforded to Californians are similar to the rights the GDPR provides, including disclosure and data subject rights such as access, deletion, and portability. As such, customers can research already existing GDPR solutions to help them with their CCPA compliance.
