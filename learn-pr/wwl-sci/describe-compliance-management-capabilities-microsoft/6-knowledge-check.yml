@@ -27,7 +27,7 @@ quiz:
     - content: "User Administrator role"
       isCorrect: false
       explanation: "This role is used to add, remove, and manage users. Instead use the global administrator role, which is one of the multiple roles you can use to access the Compliance Center. ​​​"
-  - content: "Your new colleagues on the admin team are unfamiliar with the concept of shared controls in Compliance Manager. How would the concept of shared controls be expalined?"
+  - content: "Your new colleagues on the admin team are unfamiliar with the concept of shared controls in Compliance Manager. How would the concept of shared controls be explained?"
     choices:
     - content: "Controls that both external regulators and Microsoft share responsibility for implementing."
       isCorrect: false
