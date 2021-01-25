@@ -6,7 +6,7 @@ Microsoft offers DDoS Basic protection to all Azure customers for free. Microsof
 
 You’re investigating the benefits for Contoso to upgrade to Azure DDoS Protection Standard for your services running in Azure. The motivation for evaluating this upgrade option, in the consensus of DDoS security experts, is the growing frequency and sophistication of DDoS attacks.
 
-The attack traffic doesn't have to be in the range of terabits per second to take an application down. Any specific targeted attack can impact the availability of an application running in Azure, which is receiving traffic from the public internet.
+The attack traffic doesn't have to be in the range of terabits per second to take down an application. Any specific targeted attack can impact the availability of an application running in Azure, which is receiving traffic from the public internet.
 
 ### What is a DDoS attack?
 
