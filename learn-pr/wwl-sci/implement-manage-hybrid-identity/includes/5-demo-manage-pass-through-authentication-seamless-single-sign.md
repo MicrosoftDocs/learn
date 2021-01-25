@@ -1,4 +1,4 @@
-Azure AD seamless single sign-on (Seamless SSO) automatically signs in users when they are on their corporate desktops that are connected to your corporate network. Seamless SSO provides your users with easy access to your cloud-based applications without needing any additional on-premises components.
+Azure AD seamless single sign-on (Seamless SSO) automatically signs in users from their network-connected corporate desktops. Seamless SSO provides your users with easy access to cloud-based applications without needing any other on-premises components.
 
 |||
 | :--- | :--- |
