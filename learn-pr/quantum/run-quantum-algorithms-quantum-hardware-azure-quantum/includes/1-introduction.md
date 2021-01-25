@@ -4,6 +4,8 @@ to address optimization problems; and *quantum computing* solutions which allow 
 access to quantum computing targets where you can run Q# quantum programs in
 real or simulated quantum devices.
 
+![Alt_text=Diagram of the different parts of Azure Quantum](../media/1-azure-quantum-services.png)
+
 The earlier modules in this [learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/) focused on the theoretical aspects of quantum computing. If you went through the learning path thus far, you have experienced quantum computing as a member of a space mission on a spaceship. Now you are ready to access Azure Quantum servers on Earth. 
 
 In this module, you're ready to start using real quantum computers to run your Q# quantum programs. 
