@@ -137,7 +137,7 @@ industry leading providers of quantum hardware to use their most advanced quantu
 service](../media/2-azure-quantum-flow-diagram.png)
 
 You just need an Azure subscription to start submitting quantum computing jobs
-to Azure Quantum. These jobs will be queued by the provider to be run on the
+to Azure Quantum. These jobs will be queued by the provider to run on the
 target device you select. Through Azure Quantum you can manage your jobs and
 monitor their status, as well as getting the results once they are completed.
 
