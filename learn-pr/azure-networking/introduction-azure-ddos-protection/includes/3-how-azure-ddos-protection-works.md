@@ -33,9 +33,9 @@ In the previous example, shortly after the detection of an attack, DDoS Protecti
 
 ### Test your DDoS protection
 
-Testing and validating are crucial to understanding how a system will perform during a DDoS attack. An attack simulator for testing how well your protected services will perform during a DDoS attack is available for Azure customers at [BreakingPoint Cloud](https://www.keysight.com/us/en/products/network-security/breakingpoint-cloud.html?azure-portal=true).
+Testing and validating are crucial to understanding how a system will perform during a DDoS attack. Azure customers can use an attack simulator for testing the performance of your protected services during a DDoS attack. This simulator is available at the [BreakingPoint Cloud](https://www.keysight.com/us/en/products/network-security/breakingpoint-cloud.html?azure-portal=true) website.
 
-You can use the simulator to:
+You can use attack simulators to:
 
 - Validate that your key services are protected during a DDoS attack.
 
