@@ -1,7 +1,5 @@
 As a part of the general information protection strategy within a company or organization, you should consider not only data classification and data protection technologies, but also how to provide efficient DLP. DLP is not the same thing as data protection, although these two terms are often confused. With data protection, you protect data from being accessed by unauthorized persons, while with DLP, you can help prevent the improper use or sharing of your sensitive data. To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information such as credit card numbers, social security numbers, or health records.
 
-## What is DLP?
-
 DLP helps you prevent the unintentional or accidental sharing of sensitive information. For example, DLP examines email messages and files for sensitive information, such as a credit card number. DLP can also prevent users from sending sensitive information outside the company. By using DLP technologies, you can detect sensitive information, and take actions such as:
 
 - Logging the event for auditing purposes.
