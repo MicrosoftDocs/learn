@@ -11,6 +11,7 @@ Although you can choose to classify your data in many different ways, some of th
   - The person who created the document, for example, a manager.
   - The location in which the file was created or modified, for example, the marketing department building.
 - **User-based classification**. This classification approach relies on a user who creates, reviews, or modifies data. Because this classification type relies on user judgment, it is the least consistent classification type. Also, this classification type requires well-trained personnel and well-defined rules for classification. For example, you can apply this classification type for sending emails. After a user composes an email, they should choose the appropriate classification label before sending the email to the recipient.
+
 > [!NOTE]
 > It’s important to understand the difference between the classification type, which is also called the classification method, and the classification label. The classification type can be one of the four types that you just learned about, but the classification label is actually the metadata that you assign to classified data.
 
@@ -35,7 +36,7 @@ For example, the GDPR requires that organizations and companies that manage the 
 
 Data classification and data protection are two separate and very different processes. It is crucial to have a good understanding on outcomes and results of each process.
 
-As discussed before, the result of data classification usually provides information on how data is classified. That information lets you label data later. For example, this information can have a value of public, confidential, or restricted. However, in the technical context, classification and metadata don't provide data protection. They might provide protection in the human context, which means that a well-educated employee won’t share or misuse data classified as confidential. However, classification doesn't technically prevent a user from doing anything with the data.
+As discussed before, the result of data classification is metadata, which provides information on how data is classified and lets you label data later. For example, this information can have the value public, confidential, or restricted. However, in the technical context, classification and metadata do not provide data protection. They might provide protection in the human context, which means that a well-educated employee won’t share or misuse data that is classified as confidential. However, classification doesn't technically prevent a user from doing anything with the data.
 
 Conversely, data protection is a technology that provides specific technical context that in most cases, prevents access to data or data content. For example, you can help protect data by applying encryption, which prevents unauthorized users from accessing it, or by applying digital signatures, which prevent users from changing the content. Also, you can help protect data by applying a permission model that specifies who can access data, and what kind of access they will have. The NTFS file system provides this type of permission model.
 
