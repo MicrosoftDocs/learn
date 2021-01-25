@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.ingest-data-into-azure-digital-twins.set-up-iot-hub
-title: Set up IoT Hub
+title: Set up Azure IoT Hub
 metadata:
-  title: Set up IoT Hub
-  description: Create an IoT Hub and configure it to push telemetry to an Azure Function. Also set up an IoT client to generate data.
+  title: Set up Azure IoT Hub
+  description: Create an Azure IoT Hub instance and configure it to push telemetry to an Azure Functions instance. Also set up an IoT client to generate data.
   ms.date: 10/30/2020
   author: teodelas
   ms.author: teodelas
