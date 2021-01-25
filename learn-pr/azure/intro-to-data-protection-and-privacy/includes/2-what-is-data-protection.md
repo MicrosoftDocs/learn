@@ -4,8 +4,6 @@ Data protection, on any level, is important for companies and persons. People ne
 
 Another important consideration is that data is being accessed from everywhere. Individuals and organizations store ever-increasing amounts of data in the cloud and access it from various locations by using many different types of devices. These devices and locations also play an important role in Contoso’s data protection strategy.
 
-## What is data protection?
-
 *Data protection* represents a set of processes, procedures, and technologies that help safeguard important information from corruption, compromise, or loss. However, it’s also important to understand that there’s no single product or technology that you can use to protect data on any place or device. Rather, data protection is an ecosystem that consists of awareness, procedures, technologies, and products.
 
 To efficiently implement data protection, you should:
