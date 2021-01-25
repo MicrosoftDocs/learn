@@ -76,10 +76,10 @@ Before you implement groups in your organization, you must understand the scope 
 
 In a Windows Server enterprise network, there are two types of groups, described in the following table.
 
-| Group type   | Description                                                  |
-| ------------ | ------------------------------------------------------------ |
-| Security     | Security groups are security-enabled, and you use them to assign permissions to various resources. You can use security groups in permission entries in access control lists (ACLs) to help control security for resource access. If you want to use a group to manage security, it must be a security group. |
-| Distribution | Email applications typically use distribution groups, which are not security-enabled. You also can use security groups as a means of distribution for email applications. |
+|Group type|Description|
+|--|--|
+|Security|Security groups are security-enabled, and you use them to assign permissions to various resources. You can use security groups in permission entries in access control lists (ACLs) to help control security for resource access. If you want to use a group to manage security, it must be a security group.|
+|Distribution|Email applications typically use distribution groups, which are not security-enabled. You also can use security groups as a means of distribution for email applications.|
 
 > [!NOTE]
 > When you create a group, you choose the group type and scope. The group type determines the capabilities of the group.

@@ -49,13 +49,13 @@ You can install the consoles available within RSAT on computers running Windows 
 
 Other management tools that you'll use to perform AD DS administration are described in the following table.
 
-| Management tool                                | Description                                                  |
-| - |  |
-| Active Directory module for Windows PowerShell | The Active Directory module for Windows PowerShell supports AD DS administration, and it's one of the most important management components. Server Manager and the Active Directory Administration Center are based on Windows PowerShell and use cmdlets to perform their tasks. |
-| Active Directory Users and Computers           | Active Directory Users and Computers is a Microsoft Management Console (MMC) snap-in that manages most common resources, including users, groups, and computers. Although many administrators are familiar with this snap-in, the Active Directory Administrative Center replaces it and provides more capabilities. |
-| Active Directory Sites and Services            | The Active Directory Sites and Services MMC snap-in manages replication, network topology, and related services. |
-| Active Directory Domains and Trusts            | The Active Directory Domains and Trusts MMC snap-in configures and maintains trust relationships at the domain and forest functional levels. |
-| Active Directory Schema snap-in                | The Active Directory Schema MMC snap-in examines and modifies the definitions of AD DS attributes and object classes. You don't need to review or change it often. Therefore, by default, the Active Directory Schema snap-in is not registered. |
+|Management tool| Description|
+|--|--|
+|Active Directory module for Windows PowerShell|The Active Directory module for Windows PowerShell supports AD DS administration, and it's one of the most important management components. Server Manager and the Active Directory Administration Center are based on Windows PowerShell and use cmdlets to perform their tasks.|
+|Active Directory Users and Computers|Active Directory Users and Computers is a Microsoft Management Console (MMC) snap-in that manages most common resources, including users, groups, and computers. Although many administrators are familiar with this snap-in, the Active Directory Administrative Center replaces it and provides more capabilities.|
+|Active Directory Sites and Services|The Active Directory Sites and Services MMC snap-in manages replication, network topology, and related services.|
+|Active Directory Domains and Trusts|The Active Directory Domains and Trusts MMC snap-in configures and maintains trust relationships at the domain and forest functional levels.|
+|Active Directory Schema snap-in|The Active Directory Schema MMC snap-in examines and modifies the definitions of AD DS attributes and object classes. You don't need to review or change it often. Therefore, by default, the Active Directory Schema snap-in is not registered.|
 
 ## Demonstration
 

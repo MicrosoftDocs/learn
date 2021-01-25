@@ -34,13 +34,13 @@ Installing AD DS creates the Domain Controllers OU and several generic container
 
 There are several containers that you can review when you select Advanced Features. The following table describes the objects that are hidden by default.
 
-| Object       | Description                                                  |
-| ------------ | ------------------------------------------------------------ |
-| LostAndFound | This container holds orphaned objects.                       |
-| Program Data | This container holds Active Directory data for Microsoft applications, such as Active Directory Federation Services (AD FS). |
-| System       | This container holds the built-in system settings.           |
-| NTDS Quotas  | This container holds directory service quota data.           |
-| TPM Devices  | This container stores the recovery information for Trusted Platform Module (TPM) devices. |
+|Object|Description|
+|--|--|
+|LostAndFound|This container holds orphaned objects.|
+|Program Data|This container holds Active Directory data for Microsoft applications, such as Active Directory Federation Services (AD FS).|
+|System|This container holds the built-in system settings.|
+|NTDS Quotas| This container holds directory service quota data.|
+|TPM Devices| This container stores the recovery information for Trusted Platform Module (TPM) devices.|
 
 > [!NOTE]
 > Containers in an AD DS domain cannot have GPOs linked to them. To link GPOs to apply configurations and restrictions, create a hierarchy of OUs and then link the GPOs to them.

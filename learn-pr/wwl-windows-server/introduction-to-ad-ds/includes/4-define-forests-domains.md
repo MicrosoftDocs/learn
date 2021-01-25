@@ -55,11 +55,11 @@ The following graphic displays an AD DS domain. It contains users, computers, an
 
 The most commonly used objects are described in the following table:
 
-| Object            | Description                                                  |
-| ----------------- | ------------------------------------------------------------ |
-| User accounts     | User accounts contain information about users, including the information required to authenticate a user during the sign-in process and build the user's access token. |
-| Computer accounts | Each domain-joined computer has an account in AD DS. You can use computer accounts for domain-joined computers in the same way that you use user accounts for users. |
-| Groups            | Groups organize users or computers to simplify the management of permissions and Group Policy Objects in the domain. |
+|Object|Description|
+|--|--|
+|User accounts|User accounts contain information about users, including the information required to authenticate a user during the sign-in process and build the user's access token.|
+|Computer accounts|Each domain-joined computer has an account in AD DS. You can use computer accounts for domain-joined computers in the same way that you use user accounts for users.|
+|Groups|Groups organize users or computers to simplify the management of permissions and Group Policy Objects in the domain.|
 
 > [!NOTE]
 > AD DS allows a single domain to contain nearly two billion objects. This means that most organizations need only deploy a single domain.
