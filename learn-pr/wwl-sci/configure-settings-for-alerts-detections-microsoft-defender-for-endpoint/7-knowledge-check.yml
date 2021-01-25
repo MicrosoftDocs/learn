@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which file type can be used to upload Indicators?"
+    choices:
+    - content: "JSON"
+      isCorrect: false
+      explanation: "Incorrect.  JSON is not a supported file format."
+    - content: "XML"
+      isCorrect: false
+      explanation: "Incorrect.  XML is not a supported file format."
+    - content: "CSV"
+      isCorrect: true
+      explanation: "Correct.  CSV file format is supported."
+  - content: "Which type is an accepted indicator type?"
+    choices:
+    - content: "Certificates"
+      isCorrect: true
+      explanation: "correct.  Certificates are an indicator type."
+    - content: "Email subject line"
+      isCorrect: false
+      explanation: "InCorrect.  Email subject line is not an indicator type."
+    - content: "Code data"
+      isCorrect: false
+      explanation: "InCorrect.  Code data is not an indicator type."
+  - content: "Which filter is included as part of an Alert notification rule?"
+    choices:
+    - content: "Alert Severity"
+      isCorrect: true
+      explanation: "Correct. Alert Severity is a filter option for the rule."
+    - content: "Account"
+      isCorrect: false
+      explanation: "Incorrect. User account is not a filter option for the rule."
+    - content: "Subject IDs"
+      isCorrect: false
+      explanation: "Incorrect. Subject IDs are not a filter option for the rule."
