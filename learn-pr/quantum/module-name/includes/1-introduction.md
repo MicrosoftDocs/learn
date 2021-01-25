@@ -3,7 +3,7 @@ Welcome to Azure Quantum!
 Azure Quantum is a cloud service that enables both quantum computing applications and optimization solutions, backed by reliability and scale of Azure. On Azure Quantum, you can use the [Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/) to build Q# programs to run on quantum hardware, or to formulate problems for optimization solvers to run on classical hardware. 
 
 
-In the [Quantum Computing Foundations learning path](), the quantum space exploration crew has been using quantum algorithms to solve some of the decisive problems, such as finding the more suitable route among space stations or supporting the mining mission. But the algorithms had been run on a simulator enabled by the Quantum Development Kit. You are finally establishing communication with Earth and need to connect to the hardware through Azure Quantum on Earth to run your algorithms for the mission. 
+In the [Quantum Computing Foundations learning path](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/), the quantum space exploration crew has been using quantum algorithms to solve some of the decisive problems, such as finding the more suitable route among space stations or supporting the mining mission. But the algorithms had been run on a simulator enabled by the Quantum Development Kit. You are finally establishing communication with Earth and need to connect to the hardware through Azure Quantum on Earth to run your algorithms for the mission. 
 
 ![Figure Azure Quantum Services](../media/1-azure-quantum-services.png)
 
