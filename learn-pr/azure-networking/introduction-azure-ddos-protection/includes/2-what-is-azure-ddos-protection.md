@@ -14,7 +14,7 @@ In a DDoS attack, a perpetrator intentionally floods the system, like a server, 
 
 The following image depicts a typical DDoS attack from a botnet.
 
-:::image type="content" source="../media/2-ddos-attack.png" alt-text="Typical DDoS attack from a botnet that's controlling computers and sending a flood of service requests over the internet to the targeted website. This flood of malicious traffic is exhausting the resources of the website to the point where legitimate users cannot use the service.":::
+:::image type="content" source="../media/2-ddos-attack.png" alt-text="DDoS attack from a botnet that's controlling computers and sending malicious traffic to a website, which exhausts its resources and makes it unavailable to legitimate users.":::
 
 Some common DDoS attacks are:
 
