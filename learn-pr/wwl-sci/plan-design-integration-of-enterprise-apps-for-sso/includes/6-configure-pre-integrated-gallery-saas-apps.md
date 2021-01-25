@@ -6,7 +6,7 @@ To edit the application properties:
 
 1. In the Azure AD portal, select **Enterprise applications**. Then find and select the application you want to configure.
 
-2. In the **Manage** section, select **Properties** to open the** Properties** pane for editing.
+2. In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
 
 3. Take a moment to understand the options available. The options available will depend on how the app is integrated with Azure AD. For example, an app that uses SAML-based SSO will have fields such as *User access URL* whereas an app that uses OIDC-based SSO will not. Note that apps added through **Azure Active Directory > App registrations** are by default OIDC-based apps, while apps added **through Azure Active Directory > Enterprise applications** might use any of a number of SSO standards. All apps will have fields for configuring when an app appears and can be used. These fields are:
 
@@ -17,7 +17,6 @@ To edit the application properties:
 - **Visible to users?** determines whether users assigned to an app can see it in [My Apps](https://myapps.microsoft.com/) and Microsoft 365 app launcher. (See the waffle menu in the upper-left corner of a Microsoft 365 website.)
 
 > [!TIP]
-> Tip
 > Assigning users happens on the Users and groups section of navigation.
 
 The three options can be toggled independently of each other, and the resulting behavior is not always obvious. This table might help:
@@ -66,7 +65,7 @@ Yes
 :::column-end:::
 :::column:::
 
-Assigned users can see the app and sign in.Unassigned users cannot see the app and cannot sign in.
+Assigned users can see the app and sign in.Unassigned users cannot see the app and cannot sign in.
 
 :::column-end:::
 :::row-end:::
@@ -88,7 +87,7 @@ No
 :::column-end:::
 :::column:::
 
-Assigned uses cannot see the app but they can sign in.Unassigned users cannot see the app and cannot sign in.
+Assigned uses cannot see the app but they can sign in.Unassigned users cannot see the app and cannot sign in.
 
 :::column-end:::
 :::row-end:::
@@ -110,7 +109,7 @@ Yes
 :::column-end:::
 :::column:::
 
-Assigned users can see the app and sign in.Unassigned users cannot see the app but can sign in.
+Assigned users can see the app and sign in.Unassigned users cannot see the app but can sign in.
 
 :::column-end:::
 :::row-end:::
@@ -132,7 +131,7 @@ No
 :::column-end:::
 :::column:::
 
-Assigned users cannot see the app but can sign in.Unassigned users cannot see the app but can sign in.
+Assigned users cannot see the app but can sign in.Unassigned users cannot see the app but can sign in.
 
 :::column-end:::
 :::row-end:::
@@ -154,7 +153,7 @@ Yes
 :::column-end:::
 :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
 :::column-end:::
 :::row-end:::
@@ -176,7 +175,7 @@ No
 :::column-end:::
 :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
 :::column-end:::
 :::row-end:::
@@ -198,7 +197,7 @@ Yes
 :::column-end:::
 :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
 :::column-end:::
 :::row-end:::
@@ -220,7 +219,7 @@ No
 :::column-end:::
 :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
 :::column-end:::
 :::row-end:::
@@ -235,7 +234,7 @@ Assigned users cannot see the app and cannot sign in.Unassigned users cannot se
 
 1. In the Azure AD portal, select **Enterprise applications**. Then find and select the application you want to configure.
 
-1. In the **Manage** section, select **Properties **to open the **Properties **pane for editing.
+1. In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
 
 1. Select the icon to upload the logo.
 
@@ -245,7 +244,6 @@ Assigned users cannot see the app and cannot sign in.Unassigned users cannot se
 >!["Screenshot of the Properties screen that shows how to change the logo."](../media/change-logo.png)
 
 > [!NOTE]
-> Note
 > The thumbnail displayed on this Properties pane doesn't update right away. You can close and reopen the Properties pane to see the updated icon.
 
 ## Add notes
@@ -254,7 +252,7 @@ You can use the notes field to add any information that is relevant for the mana
 
 1. In the Azure AD portal, select **Enterprise applications**. Then find and select the application you want to configure.
 
-1. In the **Manage** section, select **Properties **to open the **Properties** pane for editing.
+1. In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
 
 1. Update the Notes field, select **Save**.
 

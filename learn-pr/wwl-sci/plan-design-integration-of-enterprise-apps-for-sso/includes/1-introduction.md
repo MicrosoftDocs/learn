@@ -1,4 +1,4 @@
-In this module, you will discover apps, design and implement access management and app management roles, and configure pre-integrated (gallery) SaaS apps.
+In this module, you will discover apps. You will also design and implement access management and app management roles. In addition, you will configure pre-integrated (gallery) SaaS apps.
 
 ## Learning objectives
 
