@@ -17,7 +17,7 @@ When traffic decreases to less than the applicable threshold, the mitigation is 
 
 The following diagram depicts the data flow through the DDoS Protection Standard.
 
-:::image type="content" source="../media/3-ddos-policy-traffic-flow.png" alt-text="A customer is deploying Azure services and subscribing to DDoS Protection Standard, which triggers the generation of a policy for DDoS protection. Once initiated, the deployed Azure services are monitored constantly. The second half of the image represents DDoS Protection Standard that's activated by data traffic anomalies, and the subsequent mitigation of the attack.":::
+:::image type="content" source="../media/3-ddos-policy-traffic-flow.png" alt-text="A customer subscribing to DDoS Protection Standard, which triggers a DDoS protection policy. Data traffic anomalies activate DDoS Protection Standard for attack mitigation.":::
 
 ### Azure DDoS Protection Adaptive Tuning
 
