@@ -4,11 +4,9 @@ You can perform various AD FS-related tasks in Azure AD Connect with minimal use
 
 Device writeback is used to enable device-based conditional access for ADFS-protected devices. This conditional access provides extra security and assurance that access to applications is granted only to trusted devices. Device writeback enables this security by synchronizing all devices registered in Azure back to the on-premises Active Directory. When configured during setup, the following operations are performed to prepare the AD forest:
 
-- If they do not exist already, create and configure new containers and objects under:
->>> CN=Device Registration Configuration,CN=Services,CN=Configuration,[forest-dn].
+- If they do not exist already, create and configure new containers and objects under: '>>> CN=Device Registration Configuration,CN=Services,CN=Configuration,[forest-dn].'
 
-- If they do not exist already, create and configure new containers and objects under:
->>> CN=RegisteredDevices,[domain-dn]. Device objects will be created in this container.
+- If they do not exist already, create and configure new containers and objects under: '>>> CN=RegisteredDevices,[domain-dn].'  Device objects will be created in this container.
 
 - Set necessary permissions on the Azure AD Connector account, to manage devices on your Active Directory.
 
