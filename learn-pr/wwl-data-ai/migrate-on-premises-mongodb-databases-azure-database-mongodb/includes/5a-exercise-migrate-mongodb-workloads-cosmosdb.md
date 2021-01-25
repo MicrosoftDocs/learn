@@ -2,13 +2,26 @@ You work for a utilities company that has IoT sensors that collect temperature d
 
 In this exercise, you'll take an existing MongoDB database and migrate it to Cosmos DB. You'll use the Azure Database Migration Service. You'll also see how to reconfigure existing applications that use the MongoDB database to connect to the Cosmos DB database instead.
 
+> [!IMPORTANT]
+> Azure Data Migration Service isn't supported in the free Azure sandbox environment. You can perform these steps in your own personal subscription, or just follow along to understand how to migrate your database.
+
 ## Create a MongoDB database on Azure
 
 First you'll create the MongoDB database for holding the data captured from the temperature devices.
 
-### Create a virtual network
+### Task 1: Create a Resource Group and Virtual Network
 
 1. Using a web browser, open a new tab and navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. In the Azure portal, select **Resource groups**, and then select **+Add**.
+1. On the **Create a resource group page**, enter the following details:
+
+    | Property  | Value  |
+    |---|---|
+    | Subscription | *\<your-subscription\>* |
+    | Resource Group | mongodbrg |
+    | Region | Select your nearest location |
+
+1. Select **Review + Create** and then select **Create**. Wait for the resource group to be created.
 1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Virtual Network**, and press Enter.
 1. On the **Virtual Network** page, select **Create**.
@@ -16,7 +29,7 @@ First you'll create the MongoDB database for holding the data captured from the 
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **mongodbrg** |
     | Name | **databasevnet** |
     | Region | Select the same location that you specified for the resource group |
 
@@ -37,7 +50,7 @@ First you'll create the MongoDB database for holding the data captured from the 
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **mongodbrg** |
     | Virtual machine name | mongodbserver | 
     | Region | Select the same location that you specified for the resource group |
     | Availability options | No infrastructure redundancy required |
@@ -277,7 +290,7 @@ You have now created a MongoDB server and database. The next step is to demonstr
 
 1. Set the value for the **Address** key to the IP address of the MongoDB server that you recorded earlier.
 1. Change the port the app uses to **8080**.
-1. Save the file and close the editor using <kbd>CTRL</kbd> + <kbd>s/kbd>, and then <kbd>CTRL</kbd> + <kbd>q</kbd>.
+1. Save the file and close the editor using <kbd>CTRL</kbd> + <kbd>s</kbd>, and then <kbd>CTRL</kbd> + <kbd>q</kbd>.
 1. Run the following command to rebuild the application:
 
     ```bash
@@ -296,7 +309,7 @@ You have now created a MongoDB server and database. The next step is to demonstr
 
 ### Build and run another app to query the MongoDB database
 
-1. Move to the ***DP160T00A-Migrating-your-Database-to-Cosmos-DB/MongoDeviceDataCapture/DeviceDataQuery** folder:
+1. Move to the **DP160T00A-Migrating-your-Database-to-Cosmos-DB/MongoDeviceDataCapture/DeviceDataQuery** folder:
 
     ```bash
     cd ~/migration-workshop-apps/MongoDeviceDataCapture/DeviceDataQuery
@@ -350,7 +363,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 
     | Property  | Value  |
     |---|---|
-    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource group | **mongodbrg** |
     | Account Name | **mongodb\*nnn\***, where *nnn* is a random number selected by you |
     | API | **Azure Cosmos DB for MongoDB API** |
     | Notebooks | **Off** |
@@ -383,12 +396,11 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 
 ### Create the Database Migration Service
 
-1. In the hamburger menu of the Azure portal, select **All services**.
-1. In the **All services** search box, type **Subscriptions**, and then press Enter.
-1. On the **Subscriptions** page, select your subscription.
-1. On your subscription page, under **Settings**, select **Resource providers**.
-1. In the **Filter by name** box, type **DataMigration**, and then select **Microsoft.DataMigration**.
-1. Select **Register**, and wait for the **Status** to change to **Registered**. It might be necessary to select **Refresh** to see the status change.
+1. Switch back to the Azure portal.
+1. Click **All services**, click **Subscriptions**, and then click your subscription.
+1. On your subscription page, under **Settings**, click **Resource providers**.
+1. In the **Filter by name** box, type **DataMigration**, and then click **Microsoft.DataMigration**.
+1. If the **Microsoft.DataMigration** isn't registered, click **Register**, and wait for the **Status** to change to **Registered**. It might be necessary to click **Refresh** to see the status change.
 1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Azure Database Migration Service**, and then press Enter.
 1. On the **Azure Database Migration Service** page, select **Create**.
@@ -396,7 +408,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 
     | Property  | Value  |
     |---|---|
-    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource group | **mongodbrg** |
     | Service Name | **MongoDBMigration** |
     | Location | Select the same location that you used previously |
     | Service mode | **Azure** |
@@ -409,8 +421,8 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 ### Create and run a new migration project
 
 1. In the hamburger menu of the Azure portal, select **Resource groups**.
-1. In the **Resource groups** window, select <rgn>[sandbox resource group name]</rgn>.
-1. In the <rgn>[sandbox resource group name]</rgn> window, select **MongoDBMigration**.
+1. In the **Resource groups** window, select mongodbrg.
+1. In the mongodbrg window, select **MongoDBMigration**.
 1. On the **MongoDBMigration** page, select **+ New Migration Project**.
 1. On the **New migration project** page, enter the following settings, and the select **Create and run activity**:
 
@@ -608,3 +620,15 @@ The final step is to reconfigure your existing MongoDB applications to connect t
 1. Test the application with other device numbers. Enter **Q** to finish.
 
 You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured an existing MongoDB application to connect to the Cosmos DB database.
+
+### Clean up the resources you've created
+
+> [!IMPORTANT]
+> If you've performed these steps in your own personal subscription, you can delete the resources individually or delete the resource group to delete the entire set of resources. Resources left running can cost you money.
+
+1. Using the Cloud Shell run this command to delete the resource group:
+
+```azurecli
+az group delete --name mongodbrg
+```
+
