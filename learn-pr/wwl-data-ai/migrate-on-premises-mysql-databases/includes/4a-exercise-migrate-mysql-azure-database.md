@@ -2,13 +2,22 @@ In this exercise, you'll migrate a MySQL database to Azure. You'll migrate an ex
 
 You work as a database developer for the AdventureWorks organization. AdventureWorks has been selling bicycles and bicycle parts directly to end-consumer and distributors for over a decade. Their systems store information in a database that currently runs using MySQL on an Azure VM. As part of a hardware rationalization exercise, AdventureWorks want to move the database to an Azure managed database. You have been asked to perform this migration.
 
+> [!IMPORTANT]
+> Azure Data Migration Service isn't supported in the free Azure sandbox environment. You can perform these steps in your own personal subscription, or just follow along to understand how to migrate your database.
+
 ### Setup the environment
 
 Run these Azure CLI commands in the Cloud Shell to create a virtual machine, running MySQL, with a copy of the Adventure works database. The last commands will print the IP address of the new virtual machine.
 
 ```azurecli
+az account list-locations -o table
+
+az group create \
+    --name migrate-mysql \
+    --location <CHOOSE A LOCATION FROM ABOVE NEAR YOU>
+
 az vm create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-mysql \
     --name mysqlvm \
     --admin-username azureuser \
     --admin-password Pa55w.rdDemo \
@@ -18,19 +27,19 @@ az vm create \
     --size Standard_B2ms 
 
 az vm open-port \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-mysql \
     --name mysqlvm \
     --priority 200 \
     --port '22'
 
 az vm open-port \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-mysql \
     --name mysqlvm \
     --priority 300 \
     --port '3306'
 
 az vm run-command invoke \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-mysql \
     --name mysqlvm \
     --command-id RunShellScript \
     --scripts "
@@ -55,7 +64,7 @@ az vm run-command invoke \
     sudo service mysql restart"
     
 MYSQLIP="$(az vm list-ip-addresses \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-mysql \
     --name mysqlvm \
     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
     --output tsv)"
@@ -78,7 +87,7 @@ The first phase of the project needs you create an Azure database for MySQL to h
 
     | Property  | Value  |
     |---|---|
-    | Resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Resource group | migrate-mysql |
     | Server name | **adventureworks*nnn***, where *nnn* is a suffix of your choice to make the server name unique |
     | Data source | **None** |
     | Location | Select your nearest location |
@@ -101,7 +110,7 @@ The first phase of the project needs you create an Azure database for MySQL to h
     az MySQL db create \
     --name azureadventureworks \
     --server-name adventureworks[nnn] \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group migrate-mysql
     ```
 
     If the database is created successfully, you should see a message similar to the following:
@@ -112,7 +121,7 @@ The first phase of the project needs you create an Azure database for MySQL to h
           "collation": "latin1_swedish_ci",
           "id": "/subscriptions/nnnnnnnnnnnnnnnnnnnnnnnnnnnnn/resourceGroups/nnnnnn/providers/Microsoft.DBforMySQL/servers/adventureworksnnnn/databases/azureadventureworks",
           "name": "azureadventureworks",
-          "resourceGroup": <rgn>[sandbox resource group name]</rgn>,
+          "resourceGroup": migrate-mysql,
           "type": "Microsoft.DBforMySQL/servers/databases"
     }
     ```
@@ -125,7 +134,7 @@ You'll now connect to your existing MySQL VM using the Cloud Shell to export you
 
     ```bash
     MYSQLIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group migrate-mysql \
         --name mysqlvm \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"
@@ -176,17 +185,17 @@ You'll now connect to your existing MySQL VM using the Cloud Shell to export you
 ### Perform an online migration using the Database Migration Service
 
 1. Switch back to the Azure portal.
-1. In the menu on the left, select **Subscriptions**, and then select your subscription.
-1. On your subscription page, under **Settings**, select **Resource providers**.
-1. In the **Filter by name** box, type **DataMigration**, and then select **Microsoft.DataMigration**.
-1. If the **Microsoft.DataMigration** isn't registered, select **Register**, and wait for the **Status** to change to **Registered**. It might be necessary to select **Refresh** to see the status change.
+1. Click **All services**, click **Subscriptions**, and then click your subscription.
+1. On your subscription page, under **Settings**, click **Resource providers**.
+1. In the **Filter by name** box, type **DataMigration**, and then click **Microsoft.DataMigration**.
+1. If the **Microsoft.DataMigration** isn't registered, click **Register**, and wait for the **Status** to change to **Registered**. It might be necessary to click **Refresh** to see the status change.
 1. Select **Create a resource**, in the **Search the Marketplace** box type **Azure Database Migration Service**, and then press Enter.
 1. On the **Azure Database Migration Service** page, select **Create**.
 1. On the **Create Migration Service** page, enter the following details, and then select **Next: Networking \>\>**.
 
     | Property  | Value  |
     |---|---|
-    | Select a resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Select a resource group | migrate-mysql |
     | Migration service name | **adventureworks_migration_service** |
     | Location | Select your nearest location |
     | Service mode | **Azure** |
@@ -275,18 +284,13 @@ You'll now connect to your existing MySQL VM using the Cloud Shell to export you
 
 1. Close the *mysql* utility with the **quit** command.
 
+### Clean up the resources you've created
 
---- TODO: Delete below once sandbox has been requested
-Microsoft.Compute/disks
-Microsoft.Compute/virtualMachines
-Microsoft.Compute/virtualMachines/extensions
-Microsoft.DBforMySQL/servers
-Microsoft.Network/networkInterfaces
-Microsoft.Network/networkSecurityGroups
-Microsoft.Network/publicIPAddresses
-Microsoft.Network/virtualNetworks
-Microsoft.DataMigration/services
-Microsoft.DataMigration/services/projects
-Microsoft.Network/networkInterfaces
+> [!IMPORTANT]
+> If you've performed these steps in your own personal subscription, you can delete the resources individually or delete the resource group to delete the entire set of resources. Resources left running can cost you money.
 
-VM size = Standard_B2ms
+1. Using the Cloud Shell run this command to delete the resource group:
+
+```azurecli
+az group delete --name migrate-mysql
+```
