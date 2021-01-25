@@ -75,7 +75,7 @@ On the Microsoft identity platform (requests made to the v2.0 endpoint), your ap
 > [!TIP]
 > Note:
 
-This permission appears on all consent screens today, even for flows that don't provide a refresh token (the [implicit flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
+This permission appears on all consent screens today, even for flows that don't provide a refresh token (the [implicit flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
 
 ## Requesting individual user consent
 

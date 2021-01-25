@@ -33,7 +33,7 @@ To create an app role by using the Azure portal's user interface:
 
 ## Assign users and groups to roles
 
-Once you've added app roles in your application, you can assign users and groups to the roles. Assign users and groups to roles through the portal's UI or programmatically using [Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/user-post-approleassignments). When the users assigned to the various app roles sign in to the application, their tokens will have their assigned roles in the roles claim.
+Once you've added app roles in your application, you can assign users and groups to the roles. Assign users and groups to roles through the portal's UI or programmatically using [Microsoft Graph](https://docs.microsoft.com/graph/api/user-post-approleassignments). When the users assigned to the various app roles sign in to the application, their tokens will have their assigned roles in the roles claim.
 
 To assign users and groups to roles by using the Azure portal:
 

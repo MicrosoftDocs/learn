@@ -102,7 +102,7 @@ Applications are able to note which permissions they require (both delegated and
 > [!TIP]
 > Note:
 
-Application permissions can only be requested through the use of [/.default](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent). If your app needs application permissions, make sure they're listed in the app registration portal.
+Application permissions can only be requested through the use of [/.default](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). If your app needs application permissions, make sure they're listed in the app registration portal.
 
 ### To configure the list of statically requested permissions for an application
 

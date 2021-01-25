@@ -18,7 +18,7 @@ Add applications to Azure AD to leverage one or more of the services it provides
 
 - Directory schema extension attributes: Extend the schema of service principal and user objects to store additional data in Azure AD.
 
-There are two representations of applications in Azure AD: [application objects](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals) and service principals. The next two sections explain each, as well as how they interact with one another in the Azure portal.
+There are two representations of applications in Azure AD: [application objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) and service principals. The next two sections explain each, as well as how they interact with one another in the Azure portal.
 
 ## What are application objects and where do they come from?
 
@@ -191,23 +191,23 @@ In the Azure portal, you can configure your app to be single-tenant or multi-ten
 :::row:::
 :::column span="3":::
 
-WHO CAN SIGN IN TO YOUR APP?
+**Who can sign in to your app?**
 :::column-end:::
 :::row-end:::
 :::row:::
 :::column:::
 
-Audience
+**Audience**
 
 :::column-end:::
 :::column:::
 
-Single/multi-tenant
+**Single/multi-tenant**
 
 :::column-end:::
 :::column:::
 
-Who can sign in
+**Who can sign in**
 
 :::column-end:::
 :::row-end:::
