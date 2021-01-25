@@ -57,3 +57,6 @@ Continue by using the installer to set up the Data Migration Assistant.
 1. On the **Privacy Statement** page, select **Read Microsoft privacy statement online**. Read through this statement, and then close Internet Explorer.
 1. In the **Microsoft Data Migration Assistant Setup** window, select **Install**.
 1. On the **Completed the Microsoft Data Migration Assistant Setup Wizard** page, when the installation has finished, select the **Launch Microsoft Data Migration Assistant** check box, and then select **Finish**. The **Data Migration Assistant** launches.
+
+> [!WARNING]
+> Do not deactivate the sandbox. This sandbox will continue to be used in the next unit.

@@ -1,6 +1,6 @@
 Have you ever wondered what cloud computing is? It's the delivery of computing services over the internet, which is otherwise known as the cloud. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud computing offers faster innovation, flexible resources, and economies of scale.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/What-is-Cloud-Computing/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LyBB]
 
 ## Why is cloud computing typically cheaper to use?
 
@@ -12,7 +12,7 @@ Cloud computing is the delivery of computing services over the internet by using
 
 To put it another way, cloud computing is a way to rent compute power and storage from someone else's datacenter. You can treat cloud resources like you would your resources in your own datacenter. When you're done using them, you give them back. You're billed only for what you use.
 
-Instead of maintaining CPUs and storage in your datacenter, you rent them for the time that you need them. The cloud provider takes care of maintaining the underlying infrastructure for you. The cloud enables you to quickly solve your toughest business challenges and bring cutting-edge solutions to your users.
+Instead of maintaining CPUs and storage in your datacenter, you rent them for the time that you need them. The cloud provider takes care of maintaining the underlying infrastructure for you. The cloud enables you to quickly solve your toughest business challenges, and bring cutting-edge solutions to your users.
 
 ## Why should I move to the cloud?
 
@@ -37,14 +37,14 @@ To power your services and deliver innovative and novel user experiences more qu
 
 There are several benefits that a cloud environment has over a physical environment. For example, cloud-based applications employ a myriad of related strategies:
 
-- **High availability**: Depending on the service-level agreement that you choose, your cloud-based applications can provide a continuous user experience with no apparent downtime even when things go wrong.
+- **Reliability**: Depending on the service-level agreement that you choose, your cloud-based applications can provide a continuous user experience with no apparent downtime even when things go wrong.
 
-- **Scalability**: Applications in the cloud can be scaled in two ways:
+- **Scalability**: Applications in the cloud can be scaled in two ways, while taking advantage of autoscaling:
 
    - *Vertically*: Computing capacity can be increased by adding RAM or CPUs to a virtual machine.
    - *Horizontally*: Computing capacity can be increased by adding instances of a resource, such as adding more virtual machines to your configuration.
 
-- **Elasticity**: Cloud-based applications can be configured to take advantage of autoscaling, so your applications will always have the resources they need.
+- **Elasticity**: Cloud-based applications can be configured to always have the resources they need.
 
 - **Agility**: Cloud-based resources can be deployed and configured quickly as your application requirements change.
 
@@ -89,4 +89,3 @@ There are three deployment models for cloud computing: *public cloud*, *private 
 The following image illustrates several of the cloud computing concepts that are presented in this unit. In this example, several factors are demonstrated when you're considering where to deploy a database server in a hybrid cloud environment. As your resources move from on-premises to off-premises, your costs are reduced, and your administration requirements decrease.
 
 ![Illustration showing the cloud computing continuum.](../media/cloud-computing-continuum.png)
-

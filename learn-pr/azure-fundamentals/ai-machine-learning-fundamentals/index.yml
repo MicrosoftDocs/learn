@@ -20,7 +20,7 @@ prerequisites: |
      - *Web API endpoint*: The location of the code library.
      - *REST API*: The design of the URL style that's used to expose the API's functionality.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
 levels:
 - beginner
 roles:

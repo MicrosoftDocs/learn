@@ -417,6 +417,7 @@ Let's connect to your VM and install the packages you specified in `package.json
 1. Run `npm install` to install the dependent packages.
 
     ```bash
+    sudo apt install npm
     npm install
     ```
 
