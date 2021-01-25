@@ -1,7 +1,5 @@
 To send and receive text messages programmatically, you'll need to get a Twilio account. In this unit, you'll create a free Twilio account.
 
-## Create a Twilio account
-
 1. Go to [Twilio](https://www.twilio.com?azure-portal=true).
 
 1. Select the red **Sign Up** button in the upper-right corner.

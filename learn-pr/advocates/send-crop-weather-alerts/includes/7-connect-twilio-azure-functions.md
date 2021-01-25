@@ -1,7 +1,5 @@
 In this unit, you'll set up your Twilio phone number to connect to the function app to receive text messages.
 
-## Connect Twilio with the function app
-
 The function app you created is configured to respond to HTTP requests. Twilio will make HTTP requests in the application by accessing an HTTP trigger endpoint in Azure.
 
 ### Get the HTTP trigger endpoint
@@ -30,7 +28,7 @@ The full URL is displayed after `Invoke url:`. Copy and save the URL to use in t
 
 Now that everything is set up, the only thing left to do is to make Twilio call the function app endpoint for incoming text messages.
 
-1. Log in to [Twilio](https://www.twilio.com?azure-portal=true).
+1. In a web browser, sign in to [Twilio](https://www.twilio.com?azure-portal=true).
 
 1. In the left menu, select the ellipsis (**...**).
 
