@@ -1,7 +1,5 @@
 After you define the data that is sensitive for your organization or your business, you need to classify that data. Data classification is important as it allows you to differentiate between various types of sensitive data and to prepare the data for the appropriate level and method of protection.
 
-## What is data classification?
-
 Data classification provides one of the most basic ways for organizations to determine and assign relative values to the data they possess. The process of data classification allows organizations to categorize their stored data by sensitivity and business impact. This categorization helps determine the risks associated with the data. After the process is complete, organizations can manage their data in ways that reflect its value to them instead of treating all data the same way. Data classification is a conscious, thoughtful approach that enables organizations to realize optimizations that might not be possible when all data is assigned the same value.
 
 > [!NOTE]
