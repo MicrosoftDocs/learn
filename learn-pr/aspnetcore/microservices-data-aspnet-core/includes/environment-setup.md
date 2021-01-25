@@ -93,7 +93,7 @@ You can also check the general app status at `http://###.###.###.###/webstatus/`
 
 All the services should be up and running in less than five minutes. Then you can browse to the home page and sign in using the credentials on the **LOGIN** page.
 
-:::image type="content" source="../media/home-page.png" alt-text="WebSPA home page view." lightbox="../media/home-page.png" border="true":::
+:::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshot of the WebSPA app's products catalog page." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 ## Discount coupon features
 
