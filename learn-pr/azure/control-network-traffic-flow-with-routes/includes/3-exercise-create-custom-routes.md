@@ -15,7 +15,7 @@ The first task is to create a new routing table and then add a custom route for 
 1. In Azure Cloud Shell, run the following command to create a route table.
 
     ```azurecli
-    az network vhub route-table create \
+    az network route-table create \
         --name publictable \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vhub-name \
@@ -25,7 +25,7 @@ The first task is to create a new routing table and then add a custom route for 
 1. Run the following command in Cloud Shell to create a custom route.
 
     ```azurecli
-    az network vhub route-table route create \
+    az network route-table route create \
         --route-table-name publictable \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name productionsubnet \
