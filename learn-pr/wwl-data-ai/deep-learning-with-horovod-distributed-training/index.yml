@@ -4,8 +4,8 @@ metadata:
   title: Deep learning with Horovod for distributed training
   description: "Deep learning with Horovod for distributed training"
   ms.date: 05/22/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deep learning with Horovod for distributed training

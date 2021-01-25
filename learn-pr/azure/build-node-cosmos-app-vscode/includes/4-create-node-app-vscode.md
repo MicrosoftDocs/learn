@@ -6,7 +6,7 @@ In this unit, you'll learn how to create a JavaScript application using Visual S
 
 You can create a new JavaScript application for Node.js from within Visual Studio Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
 
-Edit the **package.json** file and add a description to the **description** property. Also replace the text **main.js** in the **main** property with the name of the JavaScript file that will hold your application code.
+Edit the **package.json** file and add a description to the **description** property. Also, replace the text **main.js** in the **main** property with the name of the JavaScript file that will hold your application code.
 
 Create a new file for your application code. Save the file with the same name as the one you specified in the **package.json** file. Make sure you give the file a **.js** extension (for JavaScript)
 
@@ -29,7 +29,7 @@ Other IntelliSense features available in Visual Studio Code include:
 - Detecting unreachable code and unused variables. Statements that can never be run, and variables that are never used, are shown faded out in the editor.
 - Organizing imports. IntelliSense can quickly sort the imports that occur in a code file, and remove imports that aren't used.
 - Peeking definitions and references. The peek facility enables you to quickly view the definition of an object or function, even if it's in another file. Right-click a variable or function, and select **Peek Definition** or **Peek References**. The definition or references appear in a pop-up window.
-- Go to a variable, function, or type definition. This feature enables you to move directly to the definition of a variable, function, or type in your code. This is useful if you need to change the definition of an item, or modify a function. Right-click the code that references your variable or type, or that calls your function. Select **Go To Definition**, or **Go To Type Definition**.
+- Go to a variable, function, or type definition. This feature enables you to move directly to the definition of a variable, function, or type in your code. This is useful if you need to change the definition of an item or modify a function. Right-click the code that references your variable or type, or that calls your function. Select **Go To Definition**, or **Go To Type Definition**.
 - Suggesting possible refactoring of your code. An ellipsis (...) under an item indicates areas where IntelliSense has one or more suggestions. Click the ellipsis to view the suggestions. Select **Quick Fix** to implement the suggestion.
   
 ## Run and debug a Node.js application
@@ -40,7 +40,7 @@ You can use the native Node.js debugger (for example, `node inspect myapp`) from
 
 Before you use the Visual Studio Code debugger, you should configure it. For example, the Visual Studio Code debugger displays output in its own **Output** window in the IDE. However, this window can't handle terminal input. If your app expects to receive keyboard input, you must configure the debugger to use an external terminal.
 
-To edit the debugger configuration settings, on the **Debug** menu, click **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property and set it to **externalTerminal**.
+To edit the debugger configuration settings, on the **Debug** menu, click **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property, and set it to **externalTerminal**.
 
 ```json
 {
@@ -72,4 +72,4 @@ When the debugger reaches a breakpoint in your application, execution will pause
 
 :::image type="content" source="../media/4-debugger-at-breakpoint.png" alt-text="Screenshot of the Visual Studio Code debugger in action pausing at a breakpoint on some sample JavaScript code." loc-scope="vs-code":::
 
-The **Debug** toolbar appears above the editor window. This toolbar contains commands that enable you to single step through your code. If a statement contains a function call, you can step into that function, or step over it. The step out command continues execution until the function finishes. You can also continue running the application, either until the debugger reaches another breakpoint, or the application finishes.
+The **Debug** toolbar appears above the editor window. This toolbar contains commands that enable you to single-step through your code. If a statement contains a function call, you can step into that function, or step over it. The step-out command continues execution until the function finishes. You can also continue running the application, either until the debugger reaches another breakpoint or the application finishes.

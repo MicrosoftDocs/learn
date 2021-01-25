@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.extend-resource-manager-template-deployment-scripts
+metadata:
+  title: Extend ARM templates by using deployment scripts
+  description: Learn how to add custom steps to your Azure Resource Manager (ARM)
+    templates by using deployment scripts.
+  ms.date: 12/04/2020
+  author: smurawski
+  ms.author: stmuraws
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Extend ARM templates by using deployment scripts
+summary: Learn how to add custom steps to your Azure Resource Manager (ARM)
+  templates by using deployment scripts.
+abstract: |
+  After you finish this module, you'll be able to:
+  - Perform custom steps in your ARM templates by using a deployment script.
+  - Define parameters to make your deployment scripts more reusable.
+iconUrl: /learn/achievements/extend-resource-manager-template-deployment-scripts.svg
+levels:
+  - advanced
+roles:
+  - developer
+  - solution-architect
+  - administrator
+products:
+  - azure
+  - azure-resource-manager
+prerequisites: |
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource
+  groups, and resource definitions.
+units:
+  - learn.azure.extend-resource-manager-template-deployment-scripts.1-introduction
+  - learn.azure.extend-resource-manager-template-deployment-scripts.2-explore-deployment-scripts
+  - learn.azure.extend-resource-manager-template-deployment-scripts.3-exercise-add-deployment-script
+  - learn.azure.extend-resource-manager-template-deployment-scripts.4-parameterize-deployment-scripts
+  - learn.extend-azure-resource-manager-template-deployment-scripts.5-exercise-parameterize-deployment-script
+  - learn.azure.extend-resource-manager-template-deployment-scripts.6-knowledge-check-deployment-scripts
+  - learn.azure.extend-resource-manager-template-deployment-scripts.7-summary
+badge:
+  uid: learn.azure.extend-resource-manager-template-deployment-scripts.badge

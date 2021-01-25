@@ -13,58 +13,58 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "An organization has set up virtual machines (VMs) to act as jump boxes in each of their six virtual networks. Why should they consider using Azure Bastion?"
+  - content: "An organization has set up virtual machines (VMs) to act as jumpboxes in each of its six virtual networks. Why should the organization consider using Azure Bastion?"
     choices:
-    - content: They can eliminate the need to manage their virtual networks.
+    - content: The organization can eliminate the need to manage its virtual networks.
       isCorrect: false
-      explanation: Bastion is a fully managed platform PaaS service that supports connections to VMs in the same virtual network or a peered virtual network over the internet.
-    - content: They can eliminate all their VM management work.
+      explanation: Azure Bastion is a fully managed PaaS service that supports connections to VMs in the same virtual network or in a peered virtual network over the internet.
+    - content: The organization can eliminate all of its VM management work.
       isCorrect: false
-      explanation: Bastion simplifies the management of your internal VMs by providing a secure connection to those VMs over the internet without having to install anything.
-    - content: They can simplify the management of their VMs.
+      explanation: Azure Bastion simplifies the management of internal VMs by providing a secure connection to those VMs over the internet without requiring the installation of anything.
+    - content: The organization can simplify the management of its VMs.
       isCorrect: true
-      explanation: Bastion is a fully managed platform PaaS service. It provides seamless RDP/SSH access to VMs over the internet without having to install connection software like Remote Desktop. 
-  - content: "At what resource level or scope does a Bastion connection apply to?"
+      explanation: Azure Bastion is a fully managed PaaS service. It provides seamless RDP/SSH access to VMs over the internet without requiring the installation of connection software like Remote Desktop. 
+  - content: "At what resource level or scope does an Azure Bastion connection apply to?"
     choices:
     - content: Resource group
       isCorrect: false
-      explanation: A Bastion deployment doesn't apply to the resource group scope.
+      explanation: An Azure Bastion deployment doesn't apply to the resource group scope.
     - content: Virtual network or peered virtual networks
       isCorrect: true
-      explanation: A Bastion host support RDP and SSH connections for VMs within the same virtual network or a peered virtual network.
+      explanation: An Azure Bastion host supports RDP and SSH connections for VMs within the same virtual network or a peered virtual network.
     - content: Subscription
       isCorrect: false
-      explanation: A Bastion deployment doesn't apply to the subscription scope.
-  - content: "You decide to deploy Bastion to an existing virtual network by using Azure CLI. What resources do you need to create?"
+      explanation: An Azure Bastion deployment doesn't apply to the subscription scope.
+  - content: "You decide to deploy Azure Bastion to an existing virtual network by using the Azure CLI. What resources do you need to create?"
     choices:
-    - content: VM, public IP, and Bastion
+    - content: VM, public IP, and Azure Bastion
       isCorrect: false
-      explanation: You don't need a VM to deploy Bastion to a virtual network.
+      explanation: You don't need a VM to deploy Azure Bastion to a virtual network.
     - content: Subnet named AzureBastionSubnet and at least one VM
       isCorrect: false
-      explanation: You can't connect to the Bastion host without a public IP address.
-    - content: Subnet named AzureBastionSubnet, public IP, and Bastion
+      explanation: You can't connect to the Azure Bastion host without a public IP address.
+    - content: Subnet named AzureBastionSubnet, public IP, and Azure Bastion
       isCorrect: true
-      explanation: Create a subnet named AzureBastionSubnet for the virtual network; create a public IP; and then create the Bastion resource with the virtual network and public IP address information. 
-  - content: "Several of your peers are having trouble connecting to VMs by using Bastion. What isn't likely to cause the issue?"
+      explanation: Create a subnet named AzureBastionSubnet for the virtual network; create a public IP; and then create the Azure Bastion resource with the virtual network and public IP address information. 
+  - content: "Several of your peers are having trouble connecting to VMs by using Azure Bastion. What isn't likely to cause the problem?"
     choices:
     - content: The public IP address of the destination VM
       isCorrect: true
-      explanation: You connect to internal VMs by using the public IP of Bastion not a public IP on the destination VM.
+      explanation: You connect to internal VMs by using the public IP of Azure Bastion, not a public IP on the destination VM.
     - content: The number of current remote connections
       isCorrect: false
-      explanation: Bastion has a limit on the number of concurrent RDP and SSH connections it supports. Compare the number of sessions that are open for each protocol with the Bastion limits.
+      explanation: Azure Bastion has a limit on the number of concurrent RDP and SSH connections that it supports. Compare the number of sessions that are open for each protocol with the Azure Bastion limits.
     - content: Network security group rules
       isCorrect: false
-      explanation: Check to see if someone recently updated your network security group rules and compare the rules with the network access requirements for Bastion.
-  - content: "You want to add an extra layer of security to Bastion. Where can you start?"
+      explanation: Check to see if someone recently updated your network security group rules, and compare the rules with the network access requirements for Azure Bastion.
+  - content: "You want to add an extra layer of security to Azure Bastion. Where can you start?"
     choices:
-    - content: Deny all inbound TCP network traffic to the Bastion public IP
+    - content: Deny all inbound TCP network traffic to the Azure Bastion public IP
       isCorrect: false
-      explanation: For Bastion to work, your network security group needs to allow TCP access from the internet and from Azure Gateway Manager on ports 443 or 4443 to the Bastion public IP.
-    - content: Apply the least privilege role-based access controls (RBAC) to use and manage Bastion
+      explanation: For Azure Bastion to work, your network security group needs to allow TCP access from the internet and from Azure Gateway Manager on ports 443 or 4443 to the Azure Bastion public IP.
+    - content: Apply role-based access control (RBAC) and the least privilege to use and manage Azure Bastion
       isCorrect: true
-      explanation: Use Azure RBAC to apply the least privilege to use Bastion. Apply just the reader role on the Bastion resource, on the virtual machine, and on the NIC with private IP of the virtual machine.
+      explanation: Use Azure RBAC to apply the least privilege to use Azure Bastion. Apply just the reader role on the Azure Bastion resource, on the virtual machine, and on the NIC with the private IP of the virtual machine.
     - content: Remove the reader role on the Azure Bastion resource for all users
       isCorrect: false
-      explanation: For you to connect to the VM resource by using Bastion, you must have the reader role on the Bastion resource. You also need the reader role on the virtual machine, and on the NIC with private IP of the virtual machine.
+      explanation: For you to connect to the VM resource by using Azure Bastion, you must have the reader role on the Azure Bastion resource. You also need the reader role on the virtual machine, and on the NIC with the private IP of the virtual machine.

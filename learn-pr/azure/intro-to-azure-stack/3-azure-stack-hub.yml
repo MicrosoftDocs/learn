@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-stack.3-azure-stack-hub
+metadata:
+  title: What is Azure Stack Hub?
+  description: Describe the basic architecture of Azure Stack Hub, core capabilities of Azure Stack Hub, and the primary use cases of Azure Stack Hub.
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Azure Stack Hub?
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-azure-stack-hub.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which of the following PaaS services does Azure Stack Hub support?"
+    choices:
+    - content: "Key Vault."
+      isCorrect: true
+      explanation: "That's correct. Azure Stack Hub supports virtual machines, App Service web apps, API apps, and functions, Key Vault, SQL and MySQL databases, containers, Event Hubs, IoT Hubs, Service Fabric clusters and Kubernetes clusters."
+    - content: "Cosmos DB."
+      isCorrect: false
+      explanation: "That's incorrect. Cosmos DB is currently supported in Azure only."
+    - content: "Traffic Manager."
+      isCorrect: false
+      explanation: "That's incorrect. Traffic Manager is supported in Azure only."
+
+  - content: "Which of the following is the benefit of Azure Stack Hub?"
+    choices:
+    - content: "No need for infrastructure updates."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack Hub requires infrastructure updates."
+    - content: "A highly customizable infrastructure."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack Hub infrastructure is not highly customizable."
+    - content: "Support for Azure Resource Manager deployment model."
+      isCorrect: true
+      explanation: "That's correct. Azure Stack Hub supports Azure Resource Manager deployment model."

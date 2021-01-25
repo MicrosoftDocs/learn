@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure-spring-cloud-workshop
 metadata:
-  title: Azure Spring Cloud workshop
+  title: Deploy Spring microservices to Azure
   description: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Cloud (ASC).
   author: judubois
   ms.author: judubois
   ms.date: 03/03/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure Spring Cloud workshop
+title: Deploy Spring microservices to Azure
 summary: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Cloud (ASC).
 abstract: | 
  In this module, you will:

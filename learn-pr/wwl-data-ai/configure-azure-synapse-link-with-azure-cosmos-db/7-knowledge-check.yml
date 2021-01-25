@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Where do you enable Azure Synapse Link for Azure Cosmos DB?"
+    choices:
+    - content: "In Azure Synapse Analytics."
+      isCorrect: false
+      explanation: "Incorrect. When you enable Azure Synapse Link for Azure Cosmos DB it must be done in Azure Cosmos DB."
+    - content: "In Azure Synpase Link."
+      isCorrect: false
+      explanation: "Incorrect. The ROWSET is not a valid function."
+    - content: "In Azure Cosmos DB."
+      isCorrect: true
+      explanation: "Correct.  When you enable Azure Synapse Link for Azure Cosmos DB it must be done in Azure Cosmos DB."
+  - content: "How do you disable Azure Synapse Link for Azure Cosmos DB?"
+    choices:
+    - content: "Delete the Azure Cosmos DB container."
+      isCorrect: false
+      explanation: "Incorrect. Delete the Azure Cosmos DB container will not disable Azure Synpase Link for Cosmos DB."
+    - content: "Delete the Azure Cosmos DB account."
+      isCorrect: true
+      explanation: "Correct. Deleting the Azure Cosmos DB account with disable and remove Azure Synapse Link."
+    - content: "Set the Azure Synpase Link option to disable on the Azure Cosmos DB container."
+      isCorrect: false
+      explanation: "Incorrect. You cannot disable Azure Synpase Link on the Azure Cosmos DB container."

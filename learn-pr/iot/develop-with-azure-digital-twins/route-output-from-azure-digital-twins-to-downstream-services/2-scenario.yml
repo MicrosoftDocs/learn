@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.output-from-adt-to-downstream-services.scenario
+metadata:
+  title: The Scenario
+  description: This unit presents the scenario covered in this module.
+  ms.date: 11/30/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: The Scenario
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-scenario.md)]

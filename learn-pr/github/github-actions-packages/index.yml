@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.github-actions-packages
+metadata:
+  title: Leverage GitHub Actions to publish to GitHub Packages
+  description: Publish automatically and securely your code libraries or Docker images with GitHub Packages.
+  ms.date: 10/19/2020
+  author: cmaneu
+  ms.author: chmaneu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Leverage GitHub Actions to publish to GitHub Packages
+summary: Publish automatically and securely your code libraries or Docker images with GitHub Packages. You'll also locally run Docker images published into GitHub Packages.
+abstract: |
+  By the end of this module, you will be able to:
+  - Understand when to use a Package Repository
+  - Set up a Continuous Integration (CI) workflow with GitHub Actions
+  - Create a Dockerfile
+  - Build a container image in CI
+  - Run locally a container image hosted on GitHub Docker Registry
+prerequisites: |
+  - A GitHub account
+  - A basic knowledge about Docker and Docker Registry
+ratingEnabled: true
+iconUrl: /learn/achievements/github/github-actions-packages.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- developer
+- solution-architect
+products:
+- github
+units:
+- learn.github.github-actions-packages.introduction
+- learn.github.github-actions-packages.what-is-github-packages
+- learn.github.github-actions-packages.exercise-github-packages-docker-registry
+- learn.github.github-actions-packages.knowledge-check-1
+- learn.github.github-actions-packages.github-packages-code-packages
+- learn.github.github-actions-packages.knowledge-check-2
+- learn.github.github-actions-packages.summary
+
+badge:
+  uid: learn.github.github-actions-packages.badge

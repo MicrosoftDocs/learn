@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql.2-build
-title: Build your Spring Boot application
+title: Build a Spring Boot application
 metadata:
-  title: Build your Spring Boot application
-  description: Build your Spring Boot application, set up its Azure resources and connect it to a MySQL database
+  title: Build a Spring Boot application
+  description: Build a Spring Boot application, set up its Azure resources, and connect it to a MySQL database.
   ms.date: 11/16/2020
   author: roryp
   ms.author: ropreddy

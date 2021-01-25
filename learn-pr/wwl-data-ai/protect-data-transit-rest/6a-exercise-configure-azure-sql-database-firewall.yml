@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.exercise-configure-azure-sql-database-firewall
+title: 'Exercise: Configure a server-based firewall rule using the Azure portal'
+metadata:
+  title: 'Exercise: Configure a server-based firewall rule using the Azure portal'
+  description: "Exercise: Configure a server-based firewall rule using the Azure portal"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 85891
+durationInMinutes: 8
+content: |
+  [!include[](includes/6a-exercise-configure-azure-sql-database-firewall.md)]

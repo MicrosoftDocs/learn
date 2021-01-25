@@ -144,7 +144,7 @@ To create the Blob storage account:
     ```azurecli
     az storage account list \
       --resource-group tf-storage-rg \
-      --query [].name \
+      --query '[].name' \
       --output tsv
     ```
 

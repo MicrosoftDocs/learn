@@ -75,7 +75,7 @@ Vertex 4 - color 2
 
 Now let's take a look at the behavior of the amplitudes of the basis states at the key points during the algorithm execution.
 
-![Figure 1. The amplitudes of the basis states at the key points during Grover's algorithm execution](../media/6-grovers-algorithm.svg)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JQ8E]
 
 Congratulations! You've implemented your first quantum search algorithm and used it to solve a small problem.
 

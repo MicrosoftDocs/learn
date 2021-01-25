@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.5-azure-sql-database
-title: Exercise - Deploy an Azure SQL Database
+title: Exercise - Deploy a SQL database in Azure SQL Database
 metadata:
-  title: Exercise - Deploy an Azure SQL Database
-  description: Deploy an Azure SQL Database to record where polar bears are being spotted
-  ms.date: 04/28/2020
+  title: Exercise - Deploy a SQL database in Azure SQL Database
+  description: Deploy a SQL database in Azure SQL Database to record where cameras are spotting polar bears.
+  ms.date: 12/21/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

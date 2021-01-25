@@ -44,7 +44,7 @@ Our first step is to create our exercise environment. We'll run a script that cr
         --resource-group west-coast-rg
     ```
 
-Keep in mind that configuring the environment can take up to five minutes to complete. We're now ready to continue with the rest of this unit while the deployment completes.
+Configuring the environment can take up to five minutes to complete. We're now ready to continue with the rest of this unit while the deployment completes.
 
 ## Disaster recovery preparation with Azure Site Recovery
 
@@ -63,11 +63,11 @@ A Recovery Services vault enables Site Recovery to complete disaster recovery re
 
 ### What are the target resources?
 
-Target resources are all the Azure services that are created after your existing resources replicate. In this scenario, the West US region is the region where all your target resources get created. There are a few considerations to keep in mind when selecting the target resources region.
+Target resources are all the Azure services that are created after your existing resources replicate. In this scenario, the West US region is the region where all your target resources get created. There are a few considerations to keep in mind when selecting the target resources region:
 
 - The target resources for Site Recovery replication have to be in a different Azure region.
-- The storage account that stores the backed-up data must also be in a different region to the resources being protected.
-- The target region allows the creation of VMs, and has enough resources to match the size of the existing VMs.
+- The storage account that stores the backed-up data must also be in a different region than the resources being protected.
+- The target region creates VMs, and has enough resources to match the size of the existing VMs.
 
 ### Configure outbound network connectivity and URLs
 
@@ -83,7 +83,6 @@ Site Recovery doesn't support controlling network connectivity via an authentica
 | *.blob.core.windows.net | To write VM data to the source storage account cache. |
 | *.hypervrecoverymanager.windowsazure.com | For Site Recovery to communicate with the VM. |
 | *.servicebus.windows.net | For Site Recovery monitoring and diagnostic data from the VM. |
-|||
 
 If you prefer to control the connectivity using IP addresses instead, you'll need to add the IP address ranges for:
 
@@ -96,19 +95,18 @@ Every Azure VM you want to replicate has to register with Site Recovery. For a V
 
 ### Configure Account permissions
 
-By default, Site Recovery uses Role-Based Access Control (RBAC) in Azure. RBAC enables fine-grained access control and enables you to use several built-in Site Recovery roles:
+By default, Site Recovery uses role-based access control (RBAC) in Azure. RBAC enables fine-grained access control and enables you to use several built-in Site Recovery roles:
 
 | Role | Description |
 |---|---|
 | **Site Recovery Contributor** | A contributor has full permissions for Site Recovery operations in a Recovery Services vault, suitable for disaster recovery admins.|
 | **Site Recovery Operator** | An operator has permissions to run and administer Site Recovery failover and failback operations, suitable for disaster recovery operators.|
 | **Site Recovery Reader** | A reader has permissions to view Site Recovery operations, suitable for IT monitoring executives.|
-|  |  |
 
 To enable replication on a VM, a user must have permission to create a VM in both the virtual network and resource group.
 
 ### What is Azure Mobility Service?
 
-Azure Mobility Service needs to be installed on every VM that you replicate. This client is available for Windows and Linux VMs and will be installed and configured automatically by Site Recovery. If the automatic installation fails, you can install the service manually.
+Azure Mobility Service needs to be installed on every VM that you replicate. This client is available for Windows and Linux VMs, and will be installed and configured automatically by Site Recovery. If the automatic installation fails, you can install the service manually.
 
 The mobility service works in partnership with Site Recovery to keep an up-to-date cache of the VMs' data. The cache is replicated to the target environment's storage account. The replicated data will be used if Site Recovery fails over the environment.

@@ -1,4 +1,6 @@
-Azure SQL Database is the collective term for Microsoft's SQL Server platform as a service (PaaS) offering. It's fully managed and gives organizations a highly performing, reliable, and secure, general purpose relational database engine in the cloud.
+Azure SQL Database is the collective term for Microsoft's SQL Server Platform-as-a-Service (PaaS) offering. It's fully managed and gives organizations a highly performing, reliable, and secure, general purpose relational database engine in the cloud.
+
+In your bicycle manufacturing company, you've already identified and profiled the databases that you want to migrate to Azure SQL Database. Now, you want to plan the migration, considering data recoverability, disaster recovery, security, and other implementation details. You'd like to know if Microsoft provide tools to help with this process.
 
 In this module, the focus is on single databases and elastic pools. A single database has its own resources and is deployed to a logical SQL Database server where it's managed. Elastic pool databases are deployed onto a single SQL Database server where resources are shared between all databases.
 
@@ -92,24 +94,30 @@ To create an Azure SQL Database using the Azure portal, complete the following s
 1. Select **Create a resource** in the upper-left corner of the Azure portal.
 1. Locate the managed instance, and then select **SQL Database**.
 1. Select **Create**.
+1. On the **Basics** tab, in the **Project Details** section, type or select the following values: 
 
-1. On the **Basics** tab, in the **Project Details** section, type or select the following values:   - **Subscription**: Drop down and select the correct subscription, if it doesn't appear.   - **Resource group**: Select **Create new**, type **cto**, and select **OK**.
+    | Property | Value |
+    | --- | --- |
+    | Subscription | Select the correct subscription |
+    | Resource group | Select **Create new**, type **cto**, and select **OK** |
 
-1. In the **Database Details** section, type or select the following values:   - **Database name**: Enter **mySampleDatabase**.   - **Server**: Select **Create new**, enter the following values, and then select<!--CE: Is this correct?--> **Select**.       - **Server name**: Type **mysqlserver**, along with some numbers for uniqueness.       - **Server admin login**: Type **azureuser**.       - **Password**: Type a complex password that meets password requirements.       - **Location**: Choose a location from the drop-down, such as West US 2.
+1. In the **Database Details** section, type or select the following values:
 
-1. In the **"<!--CE: In the UI, does this have a question mark?-->Want to use SQL elastic pool"** section, select the **No** option.
+    | Property | Value |
+    | --- | --- |
+    | Database name | mySampleDatabase |
+    | Server | Select **Create new** |
+    | Server name | **mysqlserver**, along with some numbers for uniqueness. |
+    | Server admin login | azureuser |
+    | Password | Type a complex password that meets password requirements. |
+    | Location| Choose a location from the drop-down, such as West US 2. |
 
+1. In the **"Want to use SQL elastic pool"** section, select the **No** option.
 1. In **Compute + storage**, select **Configure database** and, for this quick start, select **vCore-based** purchasing options.
-
 1. Select **Serverless**.
    - Review the settings for **Max vCores, Min vCores, Autopause delay**, and **Data max size**, and change them if necessary   - Accept the preview terms and click **OK**   - Select **Apply**
-
 1. Select the **Additional settings** tab.
-
 1. In the **Data source** section, under **Use existing data**, select **None**.
-
 1. Leave the rest of the values as default and select **Review + Create** at the bottom of the form.
-
 1. Review the final settings and select **Create**.
-
 1. On the **SQL Database** form, select **Create** to deploy and provision the resource group, server, and database.

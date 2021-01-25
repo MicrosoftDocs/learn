@@ -10,9 +10,9 @@ NSG flow logging requires the *Microsoft.Insights* provider. to register for tha
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and log in to the directory with access to the subscription you created resources in.
 
-1. In the Azure portal, search for and select **Subscriptions**. When **Subscriptions** appears in the search results, select it.
+1. In the Azure portal, search for and select **Subscriptions**.
 
-1. Select the your subscription. Then under **Settings**, select **Resource providers**.
+1. Select your subscription. Then under **Settings**, select **Resource providers**.
 
 1. In the search bar, enter **microsoft.insights**.
 
@@ -24,42 +24,55 @@ NSG flow logging requires the *Microsoft.Insights* provider. to register for tha
 
 Now, create a storage account for the NSG flow logs.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then, select **Storage** > **Storage account**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then, select **Storage** > **Storage account**. Select **Create**.
 
 1. On the **Create storage account** page, fill in these settings:
 
     | Setting | Value |
     | --- | --- |
+    | On **Basics** tab, under **Project details** section: |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
+    | Under **Instance details** section: |
     | Storage account name | Create a unique name |
     | Location | Select the same region as your resource group |
     | Performance | Standard |
     | Account kind | StorageV2 |
     | Replication | Read-access geo-redundant storage |
-    | Access tier | Hot |
 
-1. Select **Review + create**, and then select **Create**.
-
-    ![A screenshot that shows how to create a storage account](../media/5-storage-account.png)
-
-## Create a Log Analytics workspace
-
-To view the NSG flow logs, you'll use Log Analytics. To install Log Analytics.
-
-1. In the Azure portal, search for and select **Log analytics workspaces**.
-1. Select **+ Add**, complete the page with these values, and then select **OK**:
+1. Go to the **Advanced** tab, and fill in this setting:
 
     | Setting | Value |
     | --- | --- |
-    | Log Analytics Workspace | testsworkspace |
+    | Under **Blob storage** section: |
+    | Blob access tier (default) | Hot |
+
+1. Select **Review + create**, and then select **Create**.
+
+## Create a Log Analytics workspace
+
+To view the NSG flow logs, you'll use Log Analytics.
+
+1. In the Azure portal, search for and select **Log Analytics Workspace**.
+
+1. Select **+ Create**, complete the page with these values, and then select **Review + Create**.
+
+    | Setting | Value |
+    | --- | --- |
+    | On **Basics** tab, under **Project details** section: |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
-    | Location | Select the same region as your resource group |
-    | Pricing tier | Per GB |
-    | | |
+    | Under **Instance details** section: |
+    | Name | testsworkspace |
+    | Region | Select the same region as your resource group |
 
-    ![A screenshot that shows how to create a Log Analytics workspace](../media/5-log-analytics-workspace.png)
+1. Select **Next : Pricing tier**.
+
+    | Setting | Value |
+    | --- | --- |
+    | On **Pricing tier** tab, under **Pricing tier** section: |
+    | Pricing tier | Pay-as-you-go (Per GB) |
+    | | |
 
 ## Enable flow logs
 
@@ -73,7 +86,7 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
 
 1. Under **Storage account**, select **Configure**. In the **Storage account** dropdown, select the storage account you created earlier. Then, select **OK**.
 
-1. Under **Traffic Analytics status**, select **On**. Then in the **Traffic Analytics processing interval** dropdown, select **Every 10 mins**.
+1. Under **Traffic Analytics status**, select **On**. In the **Traffic Analytics processing interval** dropdown, select **Every 10 mins**.
 
 1. Select **Log Analytics workspace**, and then select **testworkspace**.
 

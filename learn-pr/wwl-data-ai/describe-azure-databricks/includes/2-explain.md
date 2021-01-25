@@ -14,7 +14,7 @@ To address the problems seen on other Big Data platforms, Azure Databricks was o
 
 By providing an optimized, easy to provision and configure environment, Azure Databricks gives developers a performant, cost-effective platform that enables them to spend more time building applications, and less time focused on managing clusters and infrastructure.
 
-## Who is Databricks?
+## What is Databricks?
 
 Databricks was founded by the creators of Apache Spark, Delta Lake, and MLflow.
 
@@ -44,6 +44,8 @@ Spark is a unified processing engine that can analyze big data using SQL, machin
 - Spark ML provides high quality and finely tuned machine learning algorithms for processing big data.
 - The Graph processing API gives us an easily approachable API for modeling pairwise relationships between people, objects, or nodes in a network.
 - The Streaming APIs give us End-to-End Fault Tolerance, with Exactly-Once semantics, and the possibility for sub-millisecond latency.
+
+Spark is a distributed computing environment. Therefore, work is parallelized across executors. The first level of parallelization is the executor - a Java virtual machine running on a node, typically, one instance per node. Each executor has a number of slots to which parallelized tasks can be assigned to it by the driver.
 
 And it all works together seamlessly!
 

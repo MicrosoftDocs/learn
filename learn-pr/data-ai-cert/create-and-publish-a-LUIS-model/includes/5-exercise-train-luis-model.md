@@ -12,18 +12,18 @@ We're now ready to train our model. In this exercise, you will perform a simple 
 
     > [!NOTE]
     > The categories on the left pane may change as the portals are updated.  As a result, the keys and endpoints may fall under a different category than the one listed here.
-
+    
+    - **Settings**
     - **Publish settings**
     - **Azure Resources**
     - **Versions**
-    - **Collaborators**
 
 1. Select **Azure Resources**. This screen is used to manage the URL endpoints used to access the LUIS service.
 
     > [!NOTE]
     > An endpoint named **Starter_Key** is automatically created for testing purposes, and you could use that here - however to use the service in a production environment or inside of an application, you will always want to tie it to a real Language Understanding resource created in Azure.
 
-1. You should see a **Prediction Resource** and a **Starter_Key** resource already created.  If you see the **Prediction Resource**, advance to the next section on **Publish the app**.
+1. You should see a **Prediction Resource** with the name of the resource you created in the Azure portal, along with two keys.  If you see the **Prediction Resource**, advance to the next section on **Publish the app**.
 1. If you do not see an existing **Prediction Resource**, select **Add prediction resource**. The **Tenant** will already be selected.
 1. Select your subscription, and the resource you created in the Azure portal earlier and then select **Done** to connect the Language Understanding resource to the LUIS service.
 
@@ -44,7 +44,7 @@ We're now ready to train our model. In this exercise, you will perform a simple 
    |---------|---------|---------|
    | **Show me pictures of a local beach** | Returns the **SearchPics** intent with a score | Positive match |
    | **Hello** | Returns the **Greeting** intent with a score | Fairly positive match |
-   | **Send to Tom** | Returns the **Utilities** with a low score | Needs retraining or doesn't match any intents |
+   | **Send to Tom** | Returns an with a low score | Needs retraining or doesn't match any intents |
 
 To retrain the model for utterances with low scores, take the following steps:
 
