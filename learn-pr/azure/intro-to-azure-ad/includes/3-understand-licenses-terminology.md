@@ -10,7 +10,7 @@ You can use different features of Azure AD, depending on the type of license you
 
 - **Pay-as-you-go licenses for specific features**. You access specific Azure AD features, like Azure AD B2C, on a pay-as-you-go basis. Azure AD B2C lets you manage identity and access for consumer users and the applications they use.
 
--**Office 365 Apps**.  You get all of the free tier features, but you can also have custom login and logout pages, self-service password reset for cloud users and device write-back.
+- **Office 365 Apps**.  You get all of the free tier features, but you can also have custom login and logout pages, self-service password reset for cloud users and device write-back.
 
 - **Azure Active Directory Premium P1**. You get all the features from the free tier, but you can also let users access on-premises and cloud-based services and resources. You can use self-service group management or dynamic groups, where users are added and removed automatically, based on your criteria. This tier supports on-premises identity management suites like Microsoft Identity Manager. Self-service password reset is also supported for users who are based on-premises.
 
