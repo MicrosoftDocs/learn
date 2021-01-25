@@ -67,4 +67,4 @@ Faster imaging, as well as imaging with better precision at a fixed scan time, c
 
 Read more about applications of quantum-inspired optimizations in the [Quantum Impact case studies.](https://azure.microsoft.com/en-us/resources/whitepapers/search/?term=quantum).
 
-Understanding the power of quantum-inspired optimization, you will work with your crew in [module 9]() to help the logistics division efficiently load cargo vessels, and in [module 11]() with the maintenance division to prioritize different kinds of jobs on the spaceship. 
+Understanding the power of quantum-inspired optimization, you will work with your crew in [module 9](https://docs.microsoft.com/en-us/learn/modules/solve-quantum-inspired-optimization-problems/) to help the logistics division efficiently load cargo vessels, and in [module 11](TODO) with the maintenance division to prioritize different kinds of jobs on the spaceship. 
