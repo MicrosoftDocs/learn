@@ -26,7 +26,7 @@ When you investigate a specific device, you'll see:
 
 - Cards (active alerts, logged on users, security assessment)
 
-:::image type="content" source="../media/device-page.png" alt-text="Device page display":::
+:::image type="content" source="../media/device-page.png" alt-text="Device page display" lightbox="../media/device-page.png":::
 
 ## Device details
 

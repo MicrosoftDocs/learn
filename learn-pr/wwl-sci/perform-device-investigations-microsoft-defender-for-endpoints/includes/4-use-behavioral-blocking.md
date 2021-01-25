@@ -14,13 +14,13 @@ With these capabilities, more threats can be prevented or blocked, even if they 
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-:::image type="content" source="../media/blocked-behavior-alert.png" alt-text="Behavior block alert":::
+:::image type="content" source="../media/blocked-behavior-alert.png" alt-text="Behavior block alert" lightbox="../media/blocked-behavior-alert.png":::
 
 ## Client behavioral blocking
 
 Client behavioral blocking is a component of behavioral blocking and containment capabilities in Defender for Endpoint. As suspicious behaviors are detected on devices (also referred to as clients or endpoints), artifacts (such as files or applications) are blocked, checked, and remediated automatically.
 
-:::image type="content" source="../media/pre-execution-post-execution-detection-engines.png" alt-text="pre execution and post execution detection engines":::
+:::image type="content" source="../media/pre-execution-post-execution-detection-engines.png" alt-text="pre execution and post execution detection engines" lightbox="../media/pre-execution-post-execution-detection-engines.png":::
 
 ### How client behavioral blocking works
 
@@ -74,4 +74,4 @@ When EDR in block mode is turned on and a malicious artifact is detected, blocki
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="../media/endpoint-detection-response-block-mode-detection.png" alt-text="EDR in Block Mode Alert":::
+:::image type="content" source="../media/endpoint-detection-response-block-mode-detection.png" alt-text="EDR in Block Mode Alert" lightbox="../media/endpoint-detection-response-block-mode-detection.png":::
