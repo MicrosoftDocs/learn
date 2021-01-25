@@ -9,8 +9,7 @@ metadata:
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 25
 content: |
   [!include[](includes/5a-exercise-migrate-cassandra-workloads-cosmosdb.md)]
-interactive: bash
