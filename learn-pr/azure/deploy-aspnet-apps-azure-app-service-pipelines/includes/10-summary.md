@@ -1,4 +1,4 @@
-Your efforts have proven that Azure Pipelines can deliver the optimal efficiency and functionality when building data-driven ASP.NET web apps based on code hosted in GitHub repositories and deploying them to Azure App Service and Azure SQL Database. Following this approach allows you to create reusable CI/CD patterns, automate each step of your software release process, and deliver software updates to your customers as frequently as the business demands.
+Your efforts have proven that Azure Pipelines can deliver optimal efficiency and functionality when building data-driven ASP.NET web apps based on code hosted in GitHub repositories and deploying them to Azure App Service and Azure SQL Database. Following this approach allows you to create reusable CI/CD patterns, automate each step of your software release process, and deliver software updates to your customers as frequently as the business demands.
 
 Make sure to explore more options available when using multi-stage Azure Pipelines targeting Azure App Service resources. For example:
 
