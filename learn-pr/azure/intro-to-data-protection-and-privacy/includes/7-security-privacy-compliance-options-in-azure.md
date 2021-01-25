@@ -23,7 +23,6 @@ Azure Blueprints is a free service that helps customers build Azure applications
 It differs from Azure Resource Manager and Azure Policy in that Azure Blueprints is a package that contains different types of artifacts. These artifacts include Azure Resource Manager templates, resource groups, policy assignments, and role assignments, all in one container, so you can quickly and easily deploy all these components in a repeatable configuration. You can use the built-in blueprints or create your own custom blueprints.
 
 > [!NOTE]
-
 > You can create blueprints in the Azure portal or by using the REST API with tools such as PowerShell or the Azure portal. If you use the REST API, you can define blueprint parameters to prevent conflicts when reusing certain blueprints.
 
 ## Data protection in Azure
