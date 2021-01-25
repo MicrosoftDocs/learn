@@ -1,6 +1,8 @@
+In this unit, you'll learn how to visualize the data ingested into Time Series Insights from Azure Digital Twins.
+
 ## Create a Time Series Insights environment
 
-1. Enter the following command in PowerShell to create a storage account (needed by Time Series Insights) and provision the Time Series Insights environment:
+1. Enter this command in PowerShell to create a storage account (needed by Time Series Insights) and provision the Time Series Insights environment:
 
     ```powershell
     $storage="adtholtsitorage"+(get-random -maximum 10000)
@@ -10,7 +12,7 @@
     az timeseriesinsights environment longterm create -g $rgname -n $tsiname --location $location --sku-name L1 --sku-capacity 1 --data-retention 7 --time-series-id-properties '$dtId' --storage-account-name $storage --storage-management-key $key -l $location
     ```
 
-1. After the Time Series Insights environment is provisioned, you need to set up an event source. Use the Event Hub that receives the processed Twin Change events:
+1. After the Time Series Insights environment is provisioned, you need to set up an event source. Use the event hub that receives the processed twin change events:
 
     ```powershell
     $es_resource_id=$(az eventhubs eventhub show -n tsi-event-hub -g $rgname --namespace $ehnamespace --query id -o tsv)
@@ -18,7 +20,7 @@
     az timeseriesinsights event-source eventhub create -g $rgname --environment-name $tsiname -n tsieh --key-name RootManageSharedAccessKey --shared-access-key $shared_access_key --event-source-resource-id $es_resource_id --consumer-group-name '$Default' -l $location
     ```
 
-1. Finally, configure the permissions to access the data in the Time Series Insights environment. Make sure you replace "{sunscriptionId}" with your Azure Subscription ID:
+1. Configure the permissions for accessing the data in the Time Series Insights environment. Be sure to replace `{sunscriptionId}` with your Azure subscription ID.
 
     ```powershell
     $id=$(az ad user show --id {subscriptionId} --query objectId -o tsv)
@@ -27,35 +29,40 @@
 
 ## View Time Series Insights data
 
-Data should be flowing into your Time Series Insights instance now, ready to be analyzed. Refer to the following steps to explore the data coming in:
+Data should now be flowing into your Time Series Insights instance, ready to be analyzed. Follow these steps to explore the data coming in:
 
 1. Open your instance of [Time Series Insights](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.TimeSeriesInsights%2Fenvironments) in the Azure portal.
 
-1. Click on "Go to TSI Explorer" at the top of the page:
+1. At the top of the page, select **Go to TSI Explorer**:
 
-    :::image type="content" source="../media/azure-portal-time-series-insights-explorer.png" alt-text="Screenshot showing how to go to the Time Series Insights explorer in the Azure portal":::
+    :::image type="content" source="../media/azure-portal-time-series-insights-explorer.png" alt-text="Screenshot that shows the Go to TSI Explorer button in the Azure portal.":::
 
-1. Next, you'll address the scenario that was presented earlier to *Visualize Vibration events in the past ~2 minutes and check if there are unusual spikes or dips to ensure the process meets manufacturing quality standards*. In the Time Series Insights explorer page, you'll see one twin from Azure Digital Twins shown on the left. Select **GrindingStep**, then select **Vibration**, and finally, select **Add**.
+1. You'll now address the scenario that was presented earlier: 
 
-    :::image type="content" source="../media/add-grinding-step-vibration-visualization.png" alt-text="Screenshot showing how to visualize vibration events in Azure Time Series Insights based on data ingested from the Digital Twin":::
+   - Visualize vibration events during approximately the past two minutes. 
+   - Check if there are unusual spikes or dips to ensure the process meets manufacturing quality standards. 
 
-You should now be seeing the Vibration readings from a device named "GrindingStep:"
+   On the left side of the Time Series Insights Explorer page, you'll see one twin from Azure Digital Twins. Select **GrindingStep**, select **Vibration**, and then select **Add**:
 
-:::image type="content" source="../media/visualization-diagram.png" alt-text="Screenshot showing Digital Twin vibration events data visualized in Azure Time Series Insights" lightbox="../media/visualization-diagram.png":::
+    :::image type="content" source="../media/add-grinding-step-vibration-visualization.png" alt-text="Screenshot that shows how to visualize vibration events in Azure Time Series Insights.":::
 
-If you allow the simulation to run for much longer, your visualization will eventually look something like the following screenshot:
+You should now see the vibration readings from a device named GrindingStep:
 
-:::image type="content" source="../media/prolonged-visualization-diagram.png" alt-text="Screenshot showing prolonged Digital Twin vibration events data visualized in Azure Time Series Insights" lightbox="../media/prolonged-visualization-diagram.png":::
+:::image type="content" source="../media/visualization-diagram.png" alt-text="Screenshot that shows vibration event data visualized in Azure Time Series Insights." lightbox="../media/visualization-diagram.png":::
+
+If you allow the simulation to run for much longer, your visualization will eventually look something like this one:
+
+:::image type="content" source="../media/prolonged-visualization-diagram.png" alt-text="Screenshot that shows prolonged Azure Digital Twin vibration event data visualized in Azure Time Series Insights." lightbox="../media/prolonged-visualization-diagram.png":::
 
 > [!TIP]
-> If you don't see data or if it says there are no events to display:
+> If you don't see data or if a message says there are no events to display:
 >
-> - Make sure the simulated client is running for at least 2 minutes
-> - Ensure "TSIFunction" is deployed successfully with no errors
-> - Select refresh on the Time Series Insights Explorer toolbar
+> - Make sure the simulated client is running for at least two minutes.
+> - Make sure TSIFunction is deployed successfully, with no errors.
+> - Select the refresh button on the Time Series Insights Explorer toolbar.
 
-You can select the desired time range (2 minutes) by dragging the handles of the availability picker or using the date-time selector in the top-right corner:
+You can select the time range (two minutes) by dragging the handles of the availability picker or by using the date/time selector in the upper-right corner:
 
-:::image type="content" source="../media/edit-time-range.png" alt-text="Screenshot showing how to change the time range in Azure Time Series Insights" lightbox="../media/edit-time-range.png":::
+:::image type="content" source="../media/edit-time-range.png" alt-text="Screenshot that shows how to change the time range in Azure Time Series Insights." lightbox="../media/edit-time-range.png":::
 
-Review events during the time window. You may expand the time range to get a broader understanding of the Vibration events. Based on the data input, the vibration events pattern in the past 2 minutes appear normal without unusual spikes or dips; no further analysis or action is required at this stage.
+Review events during the time window. You can expand the time range to get a broader understanding of the vibration events. Based on the data input, the vibration events pattern for the past two minutes appears normal, without unusual spikes or dips. No further analysis or action is required at this stage.
