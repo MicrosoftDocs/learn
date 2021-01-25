@@ -6,7 +6,7 @@ In this module, you'll learn:
 
 - How to organize your code in files, modules and packages.
 - How those concepts interact.
-- How to use third-party packages from the [Crates.io](https://crates.io) repository.
+- How to use third-party packages from the [Crates.io](https://crates.io?azure-portal=true) repository.
 
 ## Prerequisites
 
