@@ -4,7 +4,7 @@ Microsoft 365 provides more than 100 built-in sensitive information types, that 
 
 While the built-in sensitive information types help organizations to quickly identify commonly used types of sensitive data, some sensitive information is organization-specific and require custom sensitive information types. For example, employee IDs, project numbers or other key values of intellectual property may be important to certain industry sectors. To find and protect this information, organizations can create a custom sensitive information type.
 
-## Sensitive Information Type parts
+## Sensitive information type parts
 
 The fundamental components of sensitive information types are the same for built-in and custom sensitive information types and described in the following table:
 
@@ -26,7 +26,7 @@ For example, the sensitive information type search pattern for a " U.S. social s
 > [!TIP]
 > Whenever possible, use the built-in sensitive information types first, because your organization will benefit from the Microsoft managed data matching patterns from the start.
 
-## Custom Sensitive Information Type Features
+## Custom sensitive information type features
 
 Typically, organizational requirements can be fulfilled using the built-in sensitive information types such as protecting customer credit card numbers or employees and customer personal information from accidental sharing. However, organizations may still need to protect custom sensitive data with custom sensitive information types. These requirements may include the need to protect exact data matches from spreadsheets or documents being shared.
 

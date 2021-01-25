@@ -28,7 +28,7 @@ For detailed steps see [Modifying an existing keyword dictionary](https://docs.m
 
 ## Keyword Dictionary as a Custom Sensitive Information Type
 
-1. Keyword dictionaries can be used in rule package definitions for a custom sensitive information type. They can be selected as sensitive information types when creating policies in the Microsoft 365 Compliance Center or via the Security & Compliance Center PowerShell module. When using the PowerShell module, the keyword dictionary must be specified with its ID.
+Keyword dictionaries can be used in rule package definitions for a custom sensitive information type. They can be selected as sensitive information types when creating policies in the Microsoft 365 Compliance Center or via the Security & Compliance Center PowerShell module. When using the PowerShell module, the keyword dictionary must be specified with its ID.
 
-1. For detailed instructions see [Create a keyword dictionary from a file using PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary?view=o365-worldwide).
+For detailed instructions see [Create a keyword dictionary from a file using PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary?view=o365-worldwide).
 
