@@ -33,7 +33,6 @@ The GDPR requires that controllers (such as organizations and developers using M
 - Provide sufficient guarantees to meet key requirements of the GDPR.
 
 > [!NOTE]
-
 > Microsoft has taken the proactive step of providing these commitments to all enterprise online service customers as part of their subscription agreements and to volume-licensing customers as part of their enterprise agreements. Customers of other available enterprise software that Microsoft or its affiliates have licensed, also enjoy the benefits of Microsoft’s GDPR commitments, to the extent the software processes personal data.
 
 Microsoft’s GDPR Terms reflect the commitments required of processors in Article 28 of the GDPR. Article 28 requires that processors commit to:
