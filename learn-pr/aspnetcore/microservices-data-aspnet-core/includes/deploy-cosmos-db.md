@@ -80,7 +80,7 @@ release "eshoplearn-nosqldata" uninstalled
 
 In this case, only the coupon service uses MongoDB. Update the service's ConfigMap file as follows.
 
-In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `ConnectionString` parameter from `mongodb://nosqldata` to the connection string displayed from the creation script, as shown in the next YAML fragment:
+In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `ConnectionString` key's value from `mongodb://nosqldata` to the connection string displayed from the creation script, as shown in the next YAML fragment:
 
 :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/templates/configmap.yaml" highlight="10":::
 

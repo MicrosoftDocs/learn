@@ -86,19 +86,19 @@ Now you have to update the ConfigMap files for the following microservices that 
 
 Apply the following changes in the *deploy/k8s/helm-simple* directory:
 
-1. In *basket/templates/configmap.yaml*, update the `ConnectionString` parameter from `basketdata` to the connection string from the creation script:
+1. In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value from `basketdata` to the connection string from the creation script:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
-1. In *identity/templates/configmap.yaml*, update the `ConnectionString` parameter to the connection string:
+1. In *identity/templates/configmap.yaml*, update the `ConnectionString` key's value to the connection string:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/identity/templates/configmap.yaml" highlight="10":::
 
-1. In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` parameter to the connection string:
+1. In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` key's value to the connection string:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/signalr/templates/configmap.yaml" highlight="10":::
 
-1. In *webspa/templates/configmap.yaml*, update the `DPConnectionString` parameter to the connection string:
+1. In *webspa/templates/configmap.yaml*, update the `DPConnectionString` key's value to the connection string:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="10":::
 
