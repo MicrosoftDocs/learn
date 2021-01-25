@@ -9,11 +9,13 @@ These steps are similar to the ones you followed to create the input. Start by c
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), create a new storage account, just like you did in the previous exercise.
 
-1. On the **Basics** tab, for **Resource group**, select the **Create new** link, and enter **mslearn-streamanalytics**.
-
-1. For the **Storage account name**, use the prefix **streamsink**, and add a numeric suffix. You might need to try a few combinations to find a unique name in Azure.
-
-1. Use default values for all other fields.
+    | Setting  | Value  |
+    |---|---|
+    | On the **Basics** tab, under **Project details** section: |
+    | Resource group | Select **Create new** link; enter **mslearn-streamanalytics** in the **Name** box. |
+    | Under **Instance details** section: |
+    | Storage account name | Enter the prefix **streamsink**, and add a numeric suffix. You might need to try a few combinations to find a unique name in Azure. |
+    | *remaining settings* | Leave *default*. |
 
     ![Screenshot that shows how to add the storage account name "streamsink"](../media/5-add-storage-account.png)
 
@@ -37,15 +39,14 @@ Next, connect the storage account as the destination for the Stream Analytics jo
 
 1. Select **+ Add**, and from the list, select **Blob storage/ADLS Gen2**. The **Blob storage/ADLS Gen2** panel appears.
 
-1. **Select storage from your subscriptions**: checked
-
-1. **Subscription**: Your subscription name
-
-1. **Storage account**: :awsastudxx:, where xx is your initials
-
-1. **Container**: **Use existing**: checked
-
-1. Leave the rest of the entries as default values.
+    | Setting  | Value  |
+    |---|---|
+    | Output alias | Your output alias name. |
+    | Select storage from your subscriptions | checked |
+    | Subscription | Your subscription name. |
+    | Storage account | :awsastudxx:, where xx is your initials. |
+    | Container | Use existing (checked) |
+    | *Remaining settings* | Leave *default* |
 
 1. Select **Save**.
 

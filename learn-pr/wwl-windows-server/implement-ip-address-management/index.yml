@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.implement-ip-address-management
+metadata:
+  title: Implement IP Address Management
+  description: "Implement IP Address Management"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement IP Address Management
+summary: Learn to implement IPAM to help manage your organization’s DHCP and DNS servers and to manage IP address space.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe IPAM.
+  - Deploy IPAM.
+  - Describe how to administer IPAM.
+  - Configure IPAM options.
+  - Manage DNS zones with IPAM.
+  - Manage DHCP servers with IPAM.
+  - Use IPAM to manage IP addressing.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Active Directory Domain Services concepts and technologies.
+  - Windows Server.
+  - Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
+  - Windows PowerShell basics.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.implement-ip-address-management.introduction
+- learn.wwl.implement-ip-address-management.define-ipam
+- learn.wwl.implement-ip-address-management.deploy-ipam
+- learn.wwl.implement-ip-address-management.administer-ipam
+- learn.wwl.implement-ip-address-management.configure-ipam-options
+- learn.wwl.implement-ip-address-management.manage-dns-zones-with-ipam
+- learn.wwl.implement-ip-address-management.manage-dhcp-servers-with-ipam
+- learn.wwl.implement-ip-address-management.use-ipam-to-manage-ip-addressing
+- learn.wwl.implement-ip-address-management.knowledge-check
+- learn.wwl.implement-ip-address-management.summary
+badge:
+  uid: learn.wwl.implement-ip-address-management.badge

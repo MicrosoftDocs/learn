@@ -54,11 +54,11 @@ The planning stage of a data platform modernization project is used to determine
 
 - **Choosing target platform by features**
 
-    - **Azure SQL Database** - Azure SQL Database would be appropriate for use if the application surface area is database scoped. If the application uses some SQL features listed below in Managed Instances, then Azure SQL Database may not be appropriate as not all are yet available.
+    - **Azure SQL Database** - Azure SQL Database would be appropriate for use if the application surface area is database scoped. If the application uses some SQL features listed below in managed instance, then Azure SQL Database may not be appropriate as not all are yet available.
 
-    - **Azure SQL Database Elastic Pools** - Azure SQL Database would be appropriate for use if the application surface area is database scoped. If the application uses some SQL features listed below in Managed Instances, then Azure SQL Database may not be appropriate as not all are yet available.
+    - **Azure SQL Database Elastic Pools** - Azure SQL Database would be appropriate for use if the application surface area is database scoped. If the application uses some SQL features listed below in managed instances, then Azure SQL Database may not be appropriate as not all are yet available.
 
-    - **Azure SQL Database Managed instance** - Would be appropriate for use if the application surface area is instance scoped and requires features not available in Azure SQL Database such as:
+    - **Azure SQL Database managed instance** - Would be appropriate for use if the application surface area is instance scoped and requires features not available in Azure SQL Database such as:
 
         - SQL Agent
         - MSDTC
@@ -71,7 +71,7 @@ The planning stage of a data platform modernization project is used to determine
         - Support for Linked Servers
         - Supports new Azure cloud services such as Threat Detection
 
-    - **SQL Server on Azure VMs** - Use if application surface area is instance scoped and requires features not available in Azure SQL Database Managed Instance.   Additionally, supports local instances of:
+    - **SQL Server on Azure VMs** - Use if application surface area is instance scoped and requires features not available in Azure SQL Database managed instance.   Additionally, supports local instances of:
 
         - SSRS
         - SSAS
@@ -85,7 +85,7 @@ The planning stage of a data platform modernization project is used to determine
 
     - **Azure SQL Database Elastic Pools** - Azure SQL Database Elastic Pools can offer considerable savings if used by multiple databases that have varying and unpredictable usage demands. The sharing of compute resources amongst all databases in the pool means that customers are not required to over-provision resources for all databases to meet their infrequent spikes in usage. Further savings are made on lowered server maintenance and administrative costs as most of the required work is completed silently in the background by Microsoft Operations.
 
-    - **Azure SQL Database Managed instance** - Managed Instances are offered to those customers who want a fully managed service offering, where they can easily lift and shift their on-premises environment with minimal configuration changes. The environment offers a minimum of 8 cores and up to 8 TB of storage and sits in an isolated virtual network. This offering is great for customers that want to quickly get to the cloud and want to avoid the overhead of virtual machines.
+    - **Azure SQL Database managed instance** - Managed instances are offered to those customers who want a fully managed service offering, where they can easily lift and shift their on-premises environment with minimal configuration changes. The environment offers a minimum of 8 cores and up to 8 TB of storage and sits in an isolated virtual network. This offering is great for customers that want to quickly get to the cloud and want to avoid the overhead of virtual machines.
 
     - **SQL Server on Azure VMs** - VMs impose higher compute, storage, and management costs over the Azure SQL Database offerings but grants greater control across the SQL Server and infrastructure.
 

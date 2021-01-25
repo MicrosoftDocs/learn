@@ -31,7 +31,7 @@ A database account is a container for managing one or more databases. Before we 
     | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
     | **Account Name** | Globally unique name | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
     | **API** | _Core (SQL)_ | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
-    | **Location** | _Central US_ | Choose the region nearest you. |
+    | **Location** | _Central US_ | Select the region nearest you. |
 
      Leave the default values for all of the other fields in this new account page.
 
@@ -54,7 +54,7 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
 1. From the left-hand side menu, select **Data Explorer**, and then select **New Container**.
 
     >[!TIP]
-    >The **Add Container** area appears on the far right. To see it, you may need to scroll right.
+    >The **Add Container** pane appears on the far right. To see it, you may need to scroll right.
 
     | Property | Suggested value | Description |
     |---|---|---|
@@ -71,7 +71,7 @@ You've defined a container in our database called **Bookmarks**. You want to sto
 
 You'll add data to the new container using Data Explorer.
 
-1. In Data Explorer, the new database appears in the Containers pane. Expand the **func-io-learn-db** database, expand the **Bookmarks** collection, select **Items**, and from the menu bar, select **New Item**.
+1. In Data Explorer, the new database appears in the SQL API nav column. Expand the **func-io-learn-db** database, expand the **Bookmarks** collection, select **Items**, and from the menu bar, select **New Item**.
 
 1. Replace the default content of the new item with the following JSON.
 
@@ -166,7 +166,7 @@ You can verify what we have done so far by testing our new function as follows:
 
 1. In your new function, at the top right, select **Get Function Url**, select **default (function key)**, and then select the *Copy to clipboard* icon at the end of the URL.
 
-1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` to the end of the URL, and to execute the request, press **Enter**. You should get a response from the Azure Function in the browser.
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` to the end of the URL, and to execute the request, press <kbd>Enter</kbd>. You should get a response from the Azure Function in the browser.
 
 Now that we have our skeletal function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our **Bookmarks** container.
 
@@ -260,7 +260,7 @@ An incoming HTTP request triggers the function, and an `id` query parameter is p
 
 1. At the left hand select **Code + test**, select **Get function URL**, and then select **default (Function key)**. To copy the function's URL, select the *Copy to clipboard* icon.
 
-2. Paste the function URL you copied into your browser's address bar. Add the query string value `&id=docs` to the end of this URL, and to execute the request, press `Enter`. You should see a response that includes a URL to that resource.
+2. Paste the function URL you copied into your browser's address bar. Add the query string value `&id=docs` to the end of this URL, and to execute the request, press <kbd>Enter</kbd>. You should see a response that includes a URL to that resource.
 
 3. Replace `&id=docs` with `&id=missing`, and observe the response.
 
