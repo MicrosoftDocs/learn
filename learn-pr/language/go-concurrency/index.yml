@@ -43,4 +43,4 @@ units:
 - learn.language.go-concurrency.6-knowledge-check
 - learn.language.go-concurrency.7-summary
 badge:
-  uid: learn.language.go-concurrency
+  uid: learn.language.go-concurrency.badge

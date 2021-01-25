@@ -40,7 +40,7 @@ func main(){
 
 To see this in action, let's write a simple concurrent program.
 
-## Write a Concurrent Program
+## Write a concurrent program
 
 Because we want to focus only on the concurrent part, let's use an existing program that checks if an API endpoint is responding or not. Here's the code you need to use:
 

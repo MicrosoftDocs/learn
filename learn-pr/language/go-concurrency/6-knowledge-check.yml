@@ -48,7 +48,7 @@ quiz:
     - content: "Channels that are dynamic, they can grow as you need automatically."
       isCorrect: false
       explanation: "Incorrect. The main feature from unbuffered channels is that they communicate synchronously, for every data you send, you need to have a way to receive the message; otherwise, the program will get blocked."
-    - content: "Sending and r eceiving data in channels are blocking operations."
+    - content: "Sending and receiving data in channels are blocking operations."
       isCorrect: true
       explanation: "Correct. Unbuffered channels communicate synchronously, for every data you send, you need to have a way to receive the message; otherwise, the program will get blocked."
     - content: "Channels that you can pass by reference only."

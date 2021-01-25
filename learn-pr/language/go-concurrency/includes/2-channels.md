@@ -1,6 +1,6 @@
 A channel in Go is a communication mechanism between goroutines, and this is why we said before that Go's approach for concurrency is: **"Do not communicate by sharing memory; instead, share memory by communicating."** So when you need to send a value from one goroutine to another, you use channels. Let's see how they work and how you can start using them to write concurrent Go programs.
 
-## Channels Syntax
+## Channels syntax
 
 Because a channel is a communication mechanism that sends and receives data, they also have a type, which means that you can only send data for the kind that the channel supports. You use the keyword `chan` as the data type for a channel, but you also need to specify the data type that will pass through the channel, like an `int` type.
 
@@ -74,7 +74,7 @@ Done! It took 0.007401217 seconds!
 
 Well, at least it's working without a call to a sleep function, right? But it's still not doing what we want to because we're seeing the output only from one of the goroutines, and we created five. Let's see why this program it's working this way in the next section.
 
-## Unbuffered Channels
+## Unbuffered channels
 
 When you create a channel using the `make()` function, you create an unbuffered channel, which is the default behavior. Unbuffered channels block the sending operation until there's someone ready to receive the data. This is why we said before that sending and receiving are blocking operations. This is also why the program from the previous section stopped as soon as it received the first message.
 
