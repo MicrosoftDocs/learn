@@ -20,7 +20,7 @@ prerequisites: |
   - An internet-connected browser, like Microsoft Edge.
   - Node.js, installed locally.
   - npm, installed locally.
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/use-apis-discover-museum-art.svg
 levels:
 - beginner
 roles:
