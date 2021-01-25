@@ -4,11 +4,11 @@ The *:::no-loc text="eShopOnContainers":::* app uses five different databases:
 - One MongoDB
 - One Redis
 
-This example demonstrates it's possible to mix and match databases in a microservices architecture, and it's okay for a sample app or for dev/test environment, it isn't so for a production environment.
+This example demonstrates it's possible to mix database types in a microservices architecture, and it's okay for a sample app or for dev/test environment, it isn't so for a production environment.
 
 Kubernetes was designed primarily for stateless workloads, which is precisely not the case for a database service. Kubernetes can also be used to handle stateful workloads, but it requires some extra work. You can also deploy a [SQL Server High Availability (HA) solution in a container on AKS](https://docs.microsoft.com/sql/linux/tutorial-sql-server-containers-kubernetes?view=sql-server-ver15).
 
-In production environments, you typically handle the databases as services outside the cluster. You can configure a separate Virtual Machine (VM) or, more probably, a dedicated database High Availability cluster for each microservice.
+In production environments, you typically handle the databases as services outside the cluster. You can configure a separate virtual machine (VM) or, more likely, a dedicated HA database cluster for each microservice.
 
 Consider that each microservice should have an independent database server. It's easy to see that handling the required infrastructure can get complicated. In this scenario, the Azure-managed database services can be an effective solution. The managed services are updated with the latest security patches, scale to adapt to any workload automatically, and are fully configurable.
 

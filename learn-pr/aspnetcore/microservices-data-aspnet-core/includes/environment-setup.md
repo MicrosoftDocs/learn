@@ -27,7 +27,7 @@ The script deploys a modified version of the *:::no-loc text="eShopOnContainers"
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram showing the eShopOnContainers solution architecture." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
-When the script finishes you should see something like this:
+When the script finishes, a variation of the following output appears:
 
 ```console
 Helm charts deployed
@@ -76,12 +76,14 @@ You can begin exploring these services (when ready):
 - Web SPA application       : http://51.124.84.102/
 ```
 
-> **NOTE**:
+> [!NOTE]
+> You may have missed the preceding output if the session timed out. You can see the relevant information by running the following command:
 >
-> If you miss the above screen because the session timed out or any other reason, you can get all the relevant information with this command: \
-> `cat ~/clouddrive/source/deploy-application-results.txt`
+> ```bash
+> cat ~/clouddrive/aspnet-learn/deploy-application-results.txt
+> ```
 
-A little while after the `seq` container becomes ready (1/1) you should be able to check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh` where you'll see all the transient errors that occur during the application startup, until they stop and all services are up and running.
+Shortly after the `seq` container becomes ready (1/1), you can check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh`. You'll see the transient errors that occur during the app startup, until they stop and all services are up and running.
 
 :::image type="content" source="../media/startup-errors-logging.png" alt-text="Seq home page view, showing typical startup errors." lightbox="../media/startup-errors-logging.png" border="true":::
 
@@ -89,11 +91,11 @@ You can also check the general app status at `http://###.###.###.###/webstatus/`
 
 :::image type="content" source="../media/eshop-learn-webstatus.png" alt-text="WebStatus home page view, showing all services OK." lightbox="../media/eshop-learn-webstatus.png" border="true":::
 
-All the services should be up and running in less than five minutes and then you should be able to browse to the home page and login using the credential in the login page.
+All the services should be up and running in less than five minutes. Then you can browse to the home page and sign in using the credential in the login page.
 
 :::image type="content" source="../media/home-page.png" alt-text="WebSPA home page view." lightbox="../media/home-page.png" border="true":::
 
-## Discount Coupon features
+## Discount coupon features
 
 - The user can apply a discount coupon code during the checkout (**DISC-##**, where ## is the discount amount to the order total. For $5, $10, $15, $20, $25, and $30).
 - The coupon service must confirm that the coupon is available and return the discount amount (REST API).
