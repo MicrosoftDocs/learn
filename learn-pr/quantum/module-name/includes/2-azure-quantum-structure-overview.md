@@ -3,7 +3,7 @@ Azure Quantum is a Microsoft Azure cloud service for running quantum computing p
 
 ## What is an Azure subscription?
 
-The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud, Azure, your crew needs to first have an account to access and manage Azure resources. A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. It has its own payment methods that are used to pay its invoice. [Link to creating a subscrption/account?](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/)
+The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud, Azure, your crew needs to first have an account to access and manage Azure resources. A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. It has its own payment methods that are used to pay its invoice. [Link to creating a subscription](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/).
 
 (TBD) Luckily, before leaving Earth, the Spaceship obtained a Sandbox Environment, which grants you access to Azure for X sessions without needing to create a subscription. 
 
