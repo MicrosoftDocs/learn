@@ -1,7 +1,7 @@
 Now let's see how you can use Azure Quantum to test quantum algorithms, first on
 a simulator, and then on real hardware.
 
-In [previous modules](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm) of this learning path, you created a version of
+If you took a [previous module](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm) of this learning path, you created a version of
 Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same
 algorithm in a trapped ion quantum computer.
 
@@ -81,7 +81,7 @@ to give an integer as input to the oracle, and then use the quantum computer to 
 
    This operation takes as input the integer to be marked and flips the state of the
    target qubit if the control register state corresponds to the input integer.
-   To do this it uses the function
+   To do this, it uses the function
    [`ControledOnInt`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint)
    from the Standard library.
 
@@ -103,7 +103,7 @@ the number of qubits as input:
 ### Create a runnable operation
 
 Now you just need to define the main operation that you will run on Azure Quantum
-hardware. To do it, you need to annotate the operation with the `@EntryPoint` attribute
+hardware. You need to annotate the operation with the `@EntryPoint` attribute
 just before the operation signature. The input parameters of the operation will be
 provided through the Azure CLI as command line arguments of the job submission.
 

@@ -1,7 +1,7 @@
 Modern classical computers are based on transistors made from semiconductors to implement classical logic operations. Quantum computers take
 radically different approaches to exploit the properties of quantum systems to implement qubits and quantum operations.
 
-In this unit, you will learn about the challenges of building a quantum computer. You will also learn the different types of physical systems used to make qubits and how quantum devices are designed.
+In this unit, you will learn about the challenges of building a quantum computer. You will also learn the different types of physical qubit systems and how quantum devices are designed.
 
 ## Harnessing quantum systems to perform computations
 
@@ -29,7 +29,7 @@ general, a functional quantum computer should fulfill the following criteria:
   not unique, but a quantum computer should be able to reliably perform all the
   operations of the chosen universal set.
 - **Reliable measurements:** to obtain the results of quantum
-  computations we need to measure of each qubit with high precision. Note that
+  computations we need to measure each qubit with high precision. Note that
   the measurement affects the state of the register. It's often performed only
   at the end of the computation.
 
@@ -45,7 +45,7 @@ manufacturers around the world to give you access to the latest quantum
 computing solutions through Azure Quantum. 
 
 Here is an overview of the
-different technologies used to create quantum computers.
+different technologies used to create quantum computers, accessible via Azure Quantum.
 
 ### Trapped ion quantum computers
 
@@ -97,30 +97,28 @@ qubits.
 ![alt_text=Diagram comparing a transmon with a transistor. The transmon can be prepared in a quantum superposition while the transistor only admits discrete classical levels.](../media/2-transmon-vs-transistor.jpg)
 
 There are other variants of superconducting circuits that don't use transmons
-but similar technologies. However, transmons are the key component in most
+but similar components. However, transmons are the key component in most
 cloud-available superconducting quantum computers.
 
 Since superconducting properties appear at very low temperatures and higher
 temperatures imply more noise, these quantum computers work at very low
 temperatures. This is why, with the aid of a cryostat, the superconducting chip
-is cooled to near absolute zero
+is cooled to near absolute zero.
 
 ![alt_text=Simplified diagram of the cryostat of a superconducting quantum computer.](../media/2-superconducting-quantum-computer.jpg)
 
 ### Other types of quantum computers
 
 Trapped ion and superconducting quantum computers aren't the only options for
-quantum computing, although they are the most advanced so far. Here are several
-other approaches that are currently subject of active research:
+quantum computing, although they are implemented the most in industry so far. Here are several
+other approaches that are currently subjected to active research:
 
 - **Quantum dot computers:** quantum dots are small clusters of semiconductor
   atoms that behave like macroscopic atoms and can be prepared into superposed
   states.
-- **Photonic quantum computers:** use polarized photons to represent qubits
-  and light guides to implement quantum operations.
-- **Topological quantum computers:** a theoretical proposal for quantum
-  computers that use a new type of particles called *anyons* to create qubits
-  very resilient to noise. 
+- **Photonic quantum computers:** polarized photons used to represent qubits
+  and photon waveguides to implement quantum operations.
+- **Topological quantum computers:** a new type of particles called *anyons*, first proposed theoretically, now in active research and development, to create qubits very resilient to noise.  
 
 There many other proposals for quantum computers since the field is still under
 development. With Azure Quantum you have access to an ever-growing collection
@@ -140,7 +138,7 @@ service](../media/2-azure-quantum-flow-diagram.png)
 You just need an Azure subscription to start submitting quantum computing jobs
 to Azure Quantum. These jobs will be queued by the provider to be run on the
 target device you select. Through Azure Quantum you can manage your jobs and
-monitor their status, as well as get the results once they are completed.
+monitor their status, as well as getting the results once they are completed.
 
 In the next unit, you'll use Azure Quantum to submit your first job to a quantum
 computer.

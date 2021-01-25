@@ -18,7 +18,7 @@ az extension add --source https://msquantumpublic.blob.core.windows.net/az-quant
 ## Create a quantum workspace
 
 First, you need to create a Quantum Workspace in your Azure subscription and
-select the providers you desire to use, in case you haven't already. To do it follow these steps:
+select the providers you desire to use, in case you haven't already. Follow these steps:
 
 1. Open the [Azure portal](https://ms.portal.azure.com/) and log in with your
    account.
@@ -259,7 +259,7 @@ is 500.
 
 ### Set the number of shots
 
-To change the number of shots you need to specify a different value for the
+To change the number of shots, you need to specify a different value for the
 argument `--shots`. For example, if you want to run the program only once:
 
 1. Set the number of shots to 1:
