@@ -30,7 +30,7 @@ Along the top of the profile page, above the file information cards. Actions you
 
 ## Detailed profile page
 
-### File details, Malware detection, and File prevalence
+### File details, malware detection, and file prevalence
 
 The file details, incident, malware detection, and file prevalence cards display various attributes about the file.  You'll see details such as the file’s MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file’s prevalence, both worldwide and within your organizations.
 
@@ -74,15 +74,15 @@ When the sample is collected, Defender for Endpoint runs the file in is a secure
 
 Submit files for deep analysis:
 
-- Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
+1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
 
-  - Alerts - select the file links from the Description or Details in the Artifact timeline
+    - Alerts - select the file links from the Description or Details in the Artifact timeline
 
-  - Devices list - select the file links from the Description or Details in the Device in the organization section
+    - Devices list - select the file links from the Description or Details in the Device in the organization section
 
-  - Search box - select File from the drop–down menu and enter the file name
+    - Search box - select File from the drop–down menu and enter the file name
 
-- In the Deep analysis tab of the file view, select Submit.
+1. In the Deep analysis tab of the file view, select Submit.
 
 Only PE files are supported, including *.exe* and *.dll* files.  A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
@@ -98,35 +98,35 @@ You can view the comprehensive report that provides details on the following sec
 
 The details provided can help you investigate if there are indications of a potential attack.
 
-- Select the file you submitted for deep analysis.
+1. Select the file you submitted for deep analysis.
 
-- Select the Deep analysis tab. If there are any previous reports, the report summary will appear in this tab.
+1. Select the Deep analysis tab. If there are any previous reports, the report summary will appear in this tab.
 
 ### Troubleshoot deep analysis
 
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 
-- Ensure that the file in question is a PE file. PE files typically have .exe or .dll extensions (executable programs or applications).
+1. Ensure that the file in question is a PE file. PE files typically have .exe or .dll extensions (executable programs or applications).
 
-- Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
+1. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
 
-- You can wait a short while and try to submit the file again if the queue is full or there was a temporary connection or communication error.
+1. You can wait a short while and try to submit the file again if the queue is full or there was a temporary connection or communication error.
 
-- If the sample collection policy is not configured, then the default behavior is to allow sample collection. If it is configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
+1. If the sample collection policy is not configured, then the default behavior is to allow sample collection. If it is configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
-  - Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
+    - Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 
-  - Name: AllowSampleCollection
+    - Name: AllowSampleCollection
 
-  - Type: DWORD
+    - Type: DWORD
 
-  - Hexadecimal value :
+    - Hexadecimal value :
 
-  - Value = 0 – block sample collection
+    - Value = 0 – block sample collection
 
-  - Value = 1 – allow sample collection
+    - Value = 1 – allow sample collection
 
-- Change the organizational unit through the Group Policy. 
+1. Change the organizational unit through the Group Policy.
 
 ## File response actions
 
@@ -158,54 +158,48 @@ The Stop and Quarantine File action includes stopping running processes, quarant
 
 **Stop and quarantine files**
 
-- Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
+1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-  - Alerts - select the corresponding links from the Description or Details in the Artifact timeline
+    - Alerts - select the corresponding links from the Description or Details in the Artifact timeline
 
-  - Search box - select File from the drop-down menu and enter the file name
+    - Search box - select File from the drop-down menu and enter the file name
 
-- Go to the top bar and select Stop and Quarantine File.
+1. Go to the top bar and select **Stop and Quarantine File**.
 
-- Image of stop and quarantine file action
+1. Image of stop and quarantine file action
 
-- Specify a reason, then select Confirm.
+1. Specify a reason, then select **Confirm**. Image of stop and quarantine file modal window.
 
-- Image of stop and quarantine file modal window
+The Action center shows the submission information: Image of stop and quarantine file action center
 
-- The Action center shows the submission information: Image of stop and quarantine file action center
+    - Submission time - Shows when the action was submitted.
 
-  - Submission time - Shows when the action was submitted.
+    - Success - Shows the number of devices where the file has been stopped and quarantined.
 
-  - Success - Shows the number of devices where the file has been stopped and quarantined.
+    - Failed - Shows the number of devices where the action failed and details about the failure.
 
-  - Failed - Shows the number of devices where the action failed and details about the failure.
+    - Pending - Shows the number of devices where the file is yet to be stopped and quarantined from. This can take time for cases when the device is offline or not connected to the network.
 
-  - Pending - Shows the number of devices where the file is yet to be stopped and quarantined from. This can take time for cases when the device is offline or not connected to the network.
+Select any of the status indicators to view more information about the action. For example, select Failed to see where the action failed.  When the file is removed from a device, the user receives a notification.
 
-- Select any of the status indicators to view more information about the action. For example, select Failed to see where the action failed.
-
-When the file is removed from a device, the user receives a notification.
-
-A new event is added for each device in the device timeline where a file was stopped and quarantined.
-
-For files widely used throughout an organization, a warning is shown before action is taken to validate that the operation is intended.
+A new event is added for each device in the device timeline where a file was stopped and quarantined. For files widely used throughout an organization, a warning is shown before action is taken to validate that the operation is intended.
 
 **Restore file from quarantine**
 
 You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each device where the file was quarantined.
 
-- Open an elevated command-line prompt on the device:
+1. Open an elevated command-line prompt on the device:
 
-  - Go to Start and type *cmd*.
+    - Go to Start and type *cmd*.
 
-  - Right-click Command prompt and select **Run as administrator**.
+    - Right-click Command prompt and select **Run as administrator**.
 
-- Enter the following command, and press Enter:
+1. Enter the following command, and press Enter:
 
-   ```powershell
-   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```powershell
+    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
 
-   ```
+    ```
 
 ### Add indicator to block or allow a file
 
