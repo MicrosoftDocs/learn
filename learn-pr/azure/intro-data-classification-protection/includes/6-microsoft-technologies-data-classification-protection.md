@@ -39,7 +39,7 @@ With label-based information protection, Windows 10 devices can now use Microsof
 
 This extends information protection on managed Windows devices and endpoints and helps protect labeled files from accidental leakage, with or without applying encryption. For example, Windows can understand that a Word document residing on a user’s computer has a label of “Confidential.” Also, because of the policy that the organization has defined, Windows can apply a Windows Information Protection policy to prevent the copying or sharing of the data to any non-work location from that device. The non-work locations could include personal email accounts and social media channels. The following screenshot depicts an example.
 
-:::image type="content" source="../media/6-information-protection.png" alt-text="Screenshot depicts how label-based information protection works in Windows 10. The 1 interrupted action dialog box notifies the user that their organization doesn’t allow them to place a file in their personal OneDrive folder." border="true":::
+:::image type="content" source="../media/6-information-protection.png" alt-text="Screenshot depicts label-based information protection in Windows 10. A dialog box notifies the user that their organization doesn’t allow placing a file in a personal OneDrive folder." border="true":::
 
 ### Office 365 Message Encryption
 
