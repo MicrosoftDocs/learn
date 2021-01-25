@@ -13,7 +13,7 @@ You'll explore the quantum computing options in Azure Quantum and manage submiss
 
 You'll also learn the basic principles behind quantum hardware and the different kinds of target devices that you have access to in Azure Quantum.
 
-![Alt_text=Diagram of the different parts of the service for quantum computing of Azure Quantum](../media/1-azure-quantum-illustration.png)
+![Alt_text=Diagram of the different parts of the service for quantum computing of Azure Quantum](../media/1-azure-quantum-computing-with-qdk.png)
 
 ## Learning objectives
 
@@ -26,5 +26,5 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Module [How to create an Azure Quantum workspace](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals)
+- Module [Get started with Azure Quantum](https://docs.microsoft.com/learn/modules/get-started-azure-quantum/)
 - Module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/)
