@@ -56,7 +56,7 @@ After the experiment has finished; you can review the best performing model that
     > [!div class="centered"]
     > ![Residuals histogram](../media/residual-histogram.png)
 
-5. Select the **Explanations** tab, and view the **Global Importance** chart. This shows how much each feature in the dataset influences the label prediction, like this:
+5. Select the **Explanations** tab. Click on the arrows >> next to **Explanation ID** to expand the explanations list. Select an explanation ID, select **View previous dashboard experience** on the right-hand side. Then select **Global Importance**. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
     > [!div class="centered"]
     > ![Feature importance](../media/feature-importance.png)
