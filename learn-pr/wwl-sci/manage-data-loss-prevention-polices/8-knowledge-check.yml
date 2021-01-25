@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/24/2021
+  ms.date: 01/25/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -23,10 +23,10 @@ quiz:
       explanation: "This is not correct. This report is used to identify items with a high volume of matches."
     - content: "DLP policy matches"
       isCorrect: true
-      explanation: "This is correct. This report shows you all rule matches and allows you to review the accuracy of matches for finetuning."
+      explanation: "This is correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning."
     - content: "DLP false positives and overrides"
       isCorrect: false
-      explanation: "This is not correct. This report allows you to finetune policies based on user input."
+      explanation: "This is not correct. This report allows you to fine-tune policies based on user input."
   - content: "You want to fine-tune your DLP policies based on user input. Which report do you use to gather information?"
     choices:
     - content: "DLP false positives and overrides"
@@ -37,18 +37,18 @@ quiz:
       explanation: "This is not correct. This report is used to identify items with a high volume of matches."
     - content: "DLP policy matches"
       isCorrect: false
-      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for finetuning but it is not based on user input."
+      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning but it is not based on user input."
   - content: "You want to identify items in your organization that might contain a high volume of sensitive information based on your DLP policies. Which report do you use to gather information?"
     choices:
     - content: "DLP false reports and overrides"
       isCorrect: false
-      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for finetuning but it is not based on user input."
+      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning but it is not based on user input."
     - content: "DLP incidents"
       isCorrect: true
       explanation: "This is correct. This report is used to identify items with a high volume of matches which can indicate a high volume of sensitive information."
     - content: "DLP policy matches"
       isCorrect: false
-      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for finetuning and to identify business processes"
+      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning and to identify business processes"
   - content: "Which default role can you assign if you want to grant someone read-only permissions on DLP reports without allowing them to make changes?"
     choices:
     - content: "Security Reader"

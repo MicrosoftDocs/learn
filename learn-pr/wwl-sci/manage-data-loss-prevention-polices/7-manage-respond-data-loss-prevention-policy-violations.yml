@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-data-loss-prevention-polices.manage-respond-dlp-policy-violations
+uid: learn.wwl.manage-data-loss-prevention-polices.manage-respond-data-loss-prevention-policy-violations
 title: Manage and respond to DLP policy violations
 metadata:
   title: Manage and respond to DLP policy violations
   description: "Manage and respond to DLP policy violations"
-  ms.date: 01/24/2021
+  ms.date: 01/25/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-manage-respond-dlp-policy-violations.md)]
+  [!include[](includes/7-manage-respond-data-loss-prevention-policy-violations.md)]

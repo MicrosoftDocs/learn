@@ -2,16 +2,8 @@ To view DLP reports in the Compliance center, you must be assigned to the:
 
 | **Role**| **Roles assigned to Role group:**| **Purpose**|
 | :--- | :--- | :--- |
-| Security Reader (Exchange)| Organization Management
-
-Security Reader| Assigning users to role groups containing this role grants them the same permissions as assigning those users to the Security & Compliance Center Security Reader role because permissions are synchronized between them.|
-| View-Only DLP Compliance Management| Compliance Administrator
-
-Organization Management
-
-Security Administrator
-
-Security Reader| This is a base role that grants read-only access to the DLP Reports in the Security & Compliance Center. Use it to create new role groups in your organization.|
+| Security Reader (Exchange)| Organization Management, Security Reader| Assigning users to role groups containing this role grants them the same permissions as assigning those users to the Security & Compliance Center Security Reader role because permissions are synchronized between them.|
+| View-Only DLP Compliance Management| Compliance Administrator, Organization Management, Security Administrator, Security Reader| This is a base role that grants read-only access to the DLP Reports in the Security & Compliance Center. Use it to create new role groups in your organization.|
 
 Members of your compliance team who read DLP policy reports need permissions to the Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Microsoft 365 Compliance center, without giving them all the permissions of a tenant admin. To do this, you should:
 
