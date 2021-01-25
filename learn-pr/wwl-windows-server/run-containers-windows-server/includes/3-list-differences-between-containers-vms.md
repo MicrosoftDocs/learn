@@ -44,7 +44,7 @@ The following graphic provides a comparison of isolation and efficiency between 
   - Processes share hardware, a kernel, and system resources.
   - PCs don't share any of these.
 
-:::image type="content" source="../media/m25-density-and-isolation.png" alt-text="Comparison of isolation and efficiency between PCs, VMs, containers, and processes." border="false":::
+:::image type="content" source="../media/m25-density-isolation.png" alt-text="Comparison of isolation and efficiency between PCs, VMs, containers, and processes." border="false":::
 
 > [!TIP]
 > For persistent storage, you can use a *bind mount* to mount a location on the local machine. Files within the location will be available when you restart a container, or if you want to share the files with multiple containers. If you want a container to run on multiple machines with access to the same files, then a named volume or SMB mount should be used instead.
