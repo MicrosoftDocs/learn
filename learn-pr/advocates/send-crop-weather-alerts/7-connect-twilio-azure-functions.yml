@@ -6,7 +6,7 @@ metadata:
   description: Connect your Twilio phone number to a function app to receive text messages.
   author: berndverst
   ms.author: beverst
-  ms.date: 01/21/2021
+  ms.date: 01/25/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

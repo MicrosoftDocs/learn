@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: berndverst
   ms.author: beverst
-  ms.date: 01/21/2021
+  ms.date: 01/25/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
@@ -19,10 +19,10 @@ quiz:
     choices:  
     - content: Azure Message Bus
       isCorrect: false
-      explanation: Azure Message Bus isn't a service that can programmatically send and receive text messages.
+      explanation: Incorrect. Azure Message Bus isn't a service that can programmatically send and receive text messages.
     - content: Azure Notification Hubs
       isCorrect: false
-      explanation: Azure Notification Hubs isn't a service that can programmatically send and receive text messages.
+      explanation: Incorrect. Azure Notification Hubs isn't a service that can programmatically send and receive text messages.
     - content: Twilio
       isCorrect: true
       explanation: Correct! The third-party service Twilio can programmatically send and receive text messages.
@@ -34,19 +34,19 @@ quiz:
       explanation: Correct! The Search - Get Search Address API endpoint accepts arbitrary locations and returns their coordinates.
     - content: Location - Normalize
       isCorrect: false
-      explanation: Location - Normalize isn't the name of an Azure Maps API endpoint.
+      explanation: Incorrect. Location - Normalize isn't the name of an Azure Maps API endpoint.
     - content: Location - Geocode
       isCorrect: false
-      explanation: Location - Geocode isn't the name of an Azure Maps API endpoint.
+      explanation: Incorrect. Location - Geocode isn't the name of an Azure Maps API endpoint.
 
   - content: Which HTTP request method did you use to connect Twilio to your application?
     choices:  
     - content: GET
       isCorrect: false
-      explanation: You didn't use a GET request when you set up Twilio to connect to your application.
+      explanation: Incorrect. You didn't use a GET request when you set up Twilio to connect to your application.
     - content: HEAD
       isCorrect: false
-      explanation: You didn't use a HEAD request when you set up Twilio to connect to your application.
+      explanation: Incorrect. You didn't use a HEAD request when you set up Twilio to connect to your application.
     - content: POST
       isCorrect: true
       explanation: Correct! You used a POST request to connect Twilio to your application.

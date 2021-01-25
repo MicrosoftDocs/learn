@@ -73,16 +73,15 @@ After your application is deployed, it requires the Azure Maps key, the Twilio p
     az functionapp config appsettings set \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name $FUNCTION_APP_NAME \
-      --settings "AZURE_MAPS_SUBSCRIPTION_KEY=<YOUR-MAPS-KEY-HERE>" "TWILIO_PHONE_NUMBER=<YOUR-TWILIO-NUMBER-HERE, for example +12324345678>" "TwilioAccountSID=<YOUR-TWILIO-ACCOUNTSID>" "TwilioAuthToken=<YOUR-TWILIO-AUTHTOKEN>"
+      --settings "AZURE_MAPS_SUBSCRIPTION_KEY=<YOUR-MAPS-KEY>" "TWILIO_PHONE_NUMBER=<YOUR-TWILIO-NUMBER, for example +12324345678>" "TwilioAccountSID=<YOUR-TWILIO-ACCOUNT-SID>" "TwilioAuthToken=<YOUR-TWILIO-AUTH-TOKEN>"
     ```
 
-    Replace \<YOUR-MAPS-KEY-HERE\> with the Azure Maps primary key that you copied earlier in this unit.
+    Before you run the code, make the following replacements with values you copied earlier:
 
-    Replace \<YOUR-TWILIO-NUMBER-HERE\> with your Twilio trial phone number, which you copied in the preceding unit.
-
-    Replace \<YOUR-TWILIO-ACCOUNTSID\> with your Twilio account SID, which you copied in the preceding unit.
-
-    Replace \<YOUR-TWILIO-AUTHTOKEN\> with your Twilio auth token, which you copied in the preceding unit.
+    - Replace \<YOUR-MAPS-KEY\> with the Azure Maps primary key.
+    - Replace \<YOUR-TWILIO-NUMBER\> with your Twilio trial phone number.
+   -  Replace \<YOUR-TWILIO-ACCOUNT-SID\> with your Twilio account SID.
+   -  Replace \<YOUR-TWILIO-AUTH-TOKEN\> with your Twilio auth token.
 
 1. To verify that the app settings were created and that they have the correct values, run this command:
 
