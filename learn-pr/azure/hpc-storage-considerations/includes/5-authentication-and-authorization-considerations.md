@@ -27,6 +27,7 @@ Linux OS uses *group identifiers* (GIDs) for group assignments. A user is associ
 Local authentication and authorization refers to the access of a local file system by a user/machine account that is also local to the machine. For example, I may create a user account that I then grant access to the `/data` directory located on my local file system. That user account is local, as is any grant of access to the directory. I may also use group assignment to control access. The combination of user and group authorization gives a user *effective* permissions over a file/folder.
 
 If you look at a typical output of `ls -al` directory command, you will see something like this:
+
 ```
 drwxr-xr-x  4 root root 4096 Dec 31 19:43.
 drwxr-xr-x 13 root root 4096 Dec 11 05:53 ..

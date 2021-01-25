@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.7-parallel-file-systems
+title: Parallel File Systems
+metadata:
+  title: Parallel File Systems
+  description: Parallel File Systems
+  ms.date: 12/29/2020
+  author: scjeschomsft
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/7-parallel-file-systems.md)]

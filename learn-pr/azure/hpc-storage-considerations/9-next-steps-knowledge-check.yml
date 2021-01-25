@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.hpc-storage-considerations.8-next-steps-knowledge-check
+uid: learn.hpc-storage-considerations.9-next-steps-knowledge-check
 title: Next steps and knowledge check
 metadata:
   title: Next steps and knowledge check
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-next-steps-knowledge-check.md)]
+  [!include[](includes/9-next-steps-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
