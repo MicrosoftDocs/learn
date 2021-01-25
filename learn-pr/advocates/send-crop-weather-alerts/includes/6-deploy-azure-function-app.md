@@ -64,6 +64,7 @@ The name of the function app that you create in Azure Functions must be unique a
       --storage-account $STORAGE_ACCOUNT_NAME \
       --functions-version 2
     ```
+
     > [!NOTE]
     > Although your function app is now created, the app isn’t active until you publish content to the app from the Azure portal or by using the Functions Core Tools. You’ll learn how to publish content to your app in a later step.
 
@@ -88,8 +89,8 @@ After your application is deployed, it requires the Azure Maps key, the Twilio p
 
     - Replace \<your-azure-maps-key\> with the Azure Maps primary key.
     - Replace \<your-twilio-phone-number\> with your Twilio trial phone number.
-   -  Replace \<your-twilio-account-sid\> with your Twilio account SID.
-   -  Replace \<your-twilio-auth-token\> with your Twilio auth token.
+    -  Replace \<your-twilio-account-sid\> with your Twilio account SID.
+    -  Replace \<your-twilio-auth-token\> with your Twilio auth token.
 
 1. To verify that the app settings were created and that they have the correct values, run this command:
 

@@ -1,22 +1,20 @@
-Let's look at the application that you'll create in this module. The application has many components and is designed to implement a variety of features. Here’s a summary of its capabilities: 
+Let's look at the application you'll create in this module. The application has many components and is designed to implement a variety of features. Here’s a summary of its capabilities: 
 
-- The application has a standardized way to request text message temperature alerts for a location if the temperature goes outside a specified range.
-- The application can retrieve the low and high temperatures for a location based on an upcoming daily weather forecast.
-- The application can check the forecast every 12 hours.
-- If the temperature in the location you're interested in is forecasted to be outside a specific range, the application can send an alert via text message.
+- The application can request a text message alert for a location if the temperature is forecasted outside a specified range.
+- The application can request a text message that reports a location's forecasted low and high temperatures.
+- The application can check a location's weather forecast every 12 hours.
 
 The following image demonstrates how the application works:
 
 :::image type="content" source="../media/twilio-text-function.png" alt-text="Image that demonstrates how the application works." border="false":::
 
-These are the steps we'll take to create the application:
+These are the resources we'll use to create the application:
 
-1. Create an Azure Maps account.
-1. Create a Twilio account.
-1.  Create an Azure Storage account.
-1. Create a function app in Azure Functions, and then configure it and deploy it.
-1. Set up Twilio to connect to the function app.
-1. Test the application.
+- An Azure Maps account
+- An Azure Storage account
+- A function app that's hosted in Azure Functions
+- An HTTP request endpoint
+- A Twilio account
 
 We'll do the work in a Microsoft-hosted sandbox, so you don't need to install software or have your own Azure account or subscription.
 
@@ -36,7 +34,7 @@ location maxTemp minTemp
 
 For example, you might want to send "1 Microsoft Way, Redmond, WA 5C 25C" as an alert for the Microsoft corporate headquarters if the temperature will be below 5 degrees Celsius or above 25 degrees Celsius.
 
-#### Normalize the location to map coordinates (geocoding)
+#### Convert a street address to map coordinates
 
 The Azure Maps [Search - Get Search Address](https://docs.microsoft.com/rest/api/maps/search/getsearchaddress?azure-portal=true) API provides address geocoding. Geocoding is the process of converting a street address to a geospatial location as longitude and latitude. For example, *1 Microsoft Way, Redmond, WA, USA* gives a longitude of *-122.1282593* and a latitude of *47.6393782*. You can then use this location to get the weather forecast for that address.
 
