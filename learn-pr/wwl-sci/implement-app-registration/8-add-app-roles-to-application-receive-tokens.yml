@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-app-registration.add-app-roles-to-application-receive-tokens
+title: Add app roles to application and receive tokens
+metadata:
+  title: Add app roles to application and receive tokens
+  description: "Add app roles to application and receive tokens"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-add-app-roles-to-application-receive-tokens.md)]
