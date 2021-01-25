@@ -62,7 +62,7 @@ select the providers you desire to use, in case you haven't already. Follow thes
    service, which can be quantum hardware, a quantum simulator, or an
    optimization service. In this case we are interested in quantum hardware and
    we will use the IonQ provider example, but the steps should be valid for
-   other quantum hardware provider.
+   other quantum hardware providers.
 
 1. Add at least the IonQ provider, then click **Review + create**.
 

@@ -11,8 +11,9 @@ quantum information. A qubit can be represented by any physical system with
 **two** *states* or *levels* that can be prepared in a quantum superposition. In
 general, a functional quantum computer should fulfill the following criteria:
 
-- **Scalability:** since quantum computers are based on the
-  manipulation of quantum information by using qubits, we need a system that allows scalability to a large number of qubits.
+- **Scalability:** since quantum computers are based on the manipulation of
+  quantum information by using qubits, we need a system that allows scalability
+  to a large number of qubits.
 - **Ability to initialize the qubits in a specific state:** having many qubits
   isn't useful if we can't trust their initial state. A fundamental
   characteristic of a quantum computer is its ability to initialize the qubits
@@ -21,8 +22,8 @@ general, a functional quantum computer should fulfill the following criteria:
   interaction with the environment can "contaminate" the state of the qubits and
   ruin our computations. Qubit registers needs to be able to remain in a
   consistent quantum state long enough for us to perform the computations. The
-  time a qubit can remain in a specific quantum state is often called *coherence
-  time*.
+  amount of time a qubit can remain in a specific quantum state is often called
+  *coherence time*.
 - **Ability to perform a universal set of operations:** like in classical
   computing, any quantum algorithm can be decomposed as the application of
   a sequence of operations from a universal set of basic operations. This set is
@@ -75,7 +76,7 @@ possible to get qubits entangled and apply an universal set of quantum
 operations.
 
 Azure Quantum provides access to trapped ion quantum devices through our
-partners IonQ and Honeywell. In this module you'll submit quantum operations to
+partners, IonQ and Honeywell. In this module, you'll submit quantum operations to
 this kind of devices.
 
 ### Superconducting quantum computers
@@ -88,8 +89,8 @@ to represent qubits and perform quantum operations.
 If certain materials are cooled below a critical temperature, their electric
 resistance drops to zero. These materials are called **superconductors**. By
 linking two superconductors with a thin insulating barrier, you can build
-*transmons*, an electronic device that can exist in a superposition of two
-states. Transmons can be considered analogous to transistors. While in
+*transmons*, an electronic device that possesses quantum states in superposition, with two of the
+states used as |0> and |1>.". Transmons can be considered analogous to transistors. While in
 transistors you use junctions of semiconductors to represent controllable bits,
 in transmons you use junctions of superconductors to represent controllable
 qubits.
