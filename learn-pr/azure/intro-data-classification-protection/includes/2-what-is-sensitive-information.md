@@ -36,7 +36,7 @@ The Microsoft approach to sensitive data protection consists of four phases that
 
 The following image depicts the Microsoft approach to information protection.
 
-:::image type="content" source="../media/2-data-loss-prevention-solutions.png" alt-text="The Microsoft approach to sensitive data includes the discover, classify, protect, and monitor phases. This approach improves data security across devices, apps, cloud services, and on-premises data." border="false":::
+:::image type="content" source="../media/2-data-loss-prevention-solutions.png" alt-text="Microsoft approach to sensitive data includes discover, classify, protect, and monitor phases. It improves security across devices, apps, and data in the cloud and on-premises." border="false":::
 
 You can use this approach to help ensure that all your sensitive data will be discovered, classified, protected, and monitored. Later in this module, you’ll also learn about specific technologies that you can use to:
 
