@@ -39,3 +39,6 @@ To export the results into a flexible file format, follow these steps:
 1. Minimize the **Data Migration Assistant** window, and on the **Desktop**, double-click the **AdventureWorks 2008-2019.csv** file.
 1. In the **How do you want to open this file?** dialog box, select **Notepad**, and then select **OK**.
 1. Scroll through the list of issues and recommendations to view the full results from the assessment. When you're finished, close Notepad.
+
+> [!WARNING]
+> Do not deactivate the sandbox. This sandbox will continue to be used in the next unit.

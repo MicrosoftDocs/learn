@@ -2,7 +2,7 @@ Now that your network and identity access are configured and secure, let's consi
 
 ## Data encryption
 
-Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the inbound Transport Layer Security (TLS) required minimum version (>1.0, >1.1, or >1.2). For an Azure SQL managed instance, a TLS version of >1.2 is forced for outbound connections, and you have the same options for inbound TLS as for an Azure SQL Database instance. The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust the server certificate as a best practice.
+Encrypted connections are forced by Azure SQL Database and Azure SQL Managed Instance, with the option to additionally specify the inbound Transport Layer Security (TLS) required minimum version (>1.0, >1.1, or >1.2). The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust the server certificate as a best practice.
 
 Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new Azure SQL Database instances. It can be configured for all deployment options via a switch in the Azure portal, as shown here:  
 
@@ -16,7 +16,7 @@ You can, alternately, use BYOK and take advantage of an Azure key vault. In this
 
 You can also take advantage of column-level encryption, which is supported in Azure SQL just as it is in SQL Server. Similarly, the Always Encrypted feature is supported just as it is in SQL Server. This process involves using client-side encryption of sensitive data, which uses keys that are never given to the database system. Additionally, the client driver transparently encrypts query parameters and decrypts the encrypted results. There is currently support on encrypted data for equality comparison, including `JOIN`, `GROUP BY`, and `DISTINCT` operators by deterministic encryption.
 
-The Always Encrypted feature with secure enclaves is not yet available in Azure SQL Database or Azure SQL Managed Instance.
+The Always Encrypted feature with secure enclaves is now avaialable in preview for Azure SQL Database but not yet supported for Azure SQL Managed Instance.
 
 ## Dynamic Data Masking
 

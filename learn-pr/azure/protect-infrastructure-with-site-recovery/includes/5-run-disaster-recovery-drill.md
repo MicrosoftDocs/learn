@@ -26,7 +26,7 @@ A test failover enables you to simulate a disaster and see its effects. Failover
 
 The steps are as follows:
 
-1. You'll create an isolated virtual network so that your production infrastructure isn't affected. On the target VMs' overview, select **Disaster recovery**.
+1. You'll create an isolated virtual network so that your production infrastructure isn't affected. On the target VMs' overview, in the nav bar, under the **Operations** category, select **Disaster recovery**.
 
     ![A screenshot that shows the Operations' disaster recovery option for a selected VM.](../media/5-vm-disaster.png)
 
@@ -38,7 +38,7 @@ The steps are as follows:
 
 1. After completion, the failed-over VM appears in the portal under **Virtual Machines**, in the recovery region. You can then check that the VM is running, is sized and connected correctly, and is mirroring the source VM but in a different Azure region.
 
-1. After you've validated everything has worked as expected, you can delete the replicated VM by selecting **Cleanup test failover**. at this point, it's a good idea to add notes about the test outcome.
+1. After you've validated everything has worked as expected, you can delete the replicated VM by selecting **Cleanup test failover**. At this point, it's a good idea to add notes about the test outcome.
 
 ## Flexible failover of multiple machines
 
@@ -54,4 +54,4 @@ Just like testing the single VMs, the same test cleanup is available for everyth
 
 Running a production failover in Site Recovery is similar to that of a test drill. There are some exceptions, the first being that **Failover** is selected, instead of **Test failover**. You can choose to shut down the source VM before starting the failover so that no data is lost during the switch. Site Recovery doesn't clean up the source environment after the failover is complete.
 
-When the failover is completed, validate the VM is working as expected. Site Recovery enables you to change the recovery point at this stage. If you're satisfied that the failover works, you'll **Commit** the failover. Site Recovery deletes all the source VM recovery points, and completes the failover. With your replicated infrastructure and data in the secondary region, you must remember that the new VM in the secondary region also needs protection.
+When the failover is complete, validate that the VM is working as expected. Site Recovery enables you to change the recovery point at this stage. If you're satisfied that the failover works, you'll **Commit** the failover. Site Recovery deletes all the source VM recovery points, and completes the failover. With your replicated infrastructure and data in the secondary region, you must remember that the new VM in the secondary region also needs protection.
