@@ -15,14 +15,14 @@ These are the steps we'll take to create the application:
 1. Create a Twilio account.
 1.  Create an Azure Storage account.
 1. Create a function app in Azure Functions, and then configure it and deploy it.
-1. Connect the function app to Twilio.
+1. Set up Twilio to connect to the function app.
 1. Test the application.
 
 We'll do the work in a Microsoft-hosted sandbox, so you don't need to install software or have your own Azure account or subscription.
 
 When the application is deployed, it can do these things:
 
-### Request a text message
+#### Request a text message
 
 Some cell phone users might have access to only a basic phone. To support the most users around the world, the application interface uses SMS text messaging. 
 
@@ -36,15 +36,15 @@ location maxTemp minTemp
 
 For example, you might want to send "1 Microsoft Way, Redmond, WA 5C 25C" as an alert for the Microsoft corporate headquarters if the temperature will be below 5 degrees Celsius or above 25 degrees Celsius.
 
-### Normalize the location to coordinates (geocoding)
+#### Normalize the location to map coordinates (geocoding)
 
 The Azure Maps [Search - Get Search Address](https://docs.microsoft.com/rest/api/maps/search/getsearchaddress?azure-portal=true) API provides address geocoding. Geocoding is the process of converting a street address to a geospatial location as longitude and latitude. For example, *1 Microsoft Way, Redmond, WA, USA* gives a longitude of *-122.1282593* and a latitude of *47.6393782*. You can then use this location to get the weather forecast for that address.
 
-### Retrieve a daily weather forecast
+#### Retrieve a daily weather forecast
 
 Azure Maps has an API called [Weather - Get Daily Forecast](https://docs.microsoft.com/rest/api/maps/weather/getdailyforecastpreview?azure-portal=true). If a geospatial location is specified as longitude and latitude, you can receive the forecast for that location for a specified number of days. We'll use five days as the standard forecast period to help farmers make decisions for the next few days.
 
-### Check the forecast every 12 hours
+#### Check the forecast every 12 hours
 
 Azure Functions is an event-based service that runs code when it's triggered. A function in Azure Functions can be triggered by various actions, including web requests, timers, and items that are added to queues or databases. Your application can use a time trigger to check the weather every 12 hours.
 

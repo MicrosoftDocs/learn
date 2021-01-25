@@ -38,7 +38,7 @@ When you choose a name for your Azure storage account, keep this guidance in min
       --account-name $STORAGE_ACCOUNT_NAME
     ```
 
-## Create an Azure Functions function app
+## Create a function app
 
 The name of the function app that you create in Azure Functions must be unique among all function app names in Azure. To make a unique name, include information like the date or your name. This name can be the same as your storage account name if it's unique.
 
@@ -65,7 +65,7 @@ The name of the function app that you create in Azure Functions must be unique a
     > [!NOTE]
     > Although your function app is now created, the app isn’t active until you publish content to the app from the Azure portal or by using the Functions Core Tools. You’ll learn how to publish content to your app in a later step.
 
-## Configure and deploy the function app
+## Configure the function app
 
 We need to do a couple more steps to configure and deploy the function app.
 
@@ -98,7 +98,7 @@ After your application is deployed, it requires the Azure Maps key, the Twilio p
       --output table
     ```
 
-### Download the application code for the function app
+### Download the function app code
 
 We'll get the function app's source code from a repository on GitHub.
 
@@ -139,9 +139,9 @@ We'll get the function app's source code from a repository on GitHub.
 
 1. To close the nano editor, select Ctrl+X.
 
-### Deploy the application to the function app
+## Deploy the function app
 
-Now you're ready to deploy your application to the function app.
+Now you're ready to deploy the function app.
 
 To publish the code, run this command:
 
@@ -149,28 +149,4 @@ To publish the code, run this command:
 func azure functionapp publish $FUNCTION_APP_NAME --python
 ```
 
-### Get the HTTP trigger endpoint
-
-One of the functions in the function app is configured to respond to HTTP requests. Twilio will make HTTP requests in the application.
-
-1. To get the full endpoint URL, run this command:
-
-    ```azurecli
-    func azure functionapp list-functions $FUNCTION_APP_NAME --show-keys
-    ```
-
-1. In the output, find the `SetupAlert` URL:
-
-    ```output
-    Functions in cropweatheralertjabenn:
-        CheckForecast - [timerTrigger]
-
-        ProcessAndNotify - [queueTrigger]
-
-        SetupAlert - [httpTrigger]
-            Invoke url: https://cropweatheralertjabenn.azurewebsites.net/api/setupalert?code=Secr3tC0de
-    ```
-
-    The full URL is displayed after `Invoke url:`. Copy and save the URL to use later.
-
-In this unit, you created a function app in Azure, deployed code to the function app, and configured all required environment variables for the function app. Finally, you obtained the endpoint URL for one of the functions to be called by Twilio. Next, you'll connect the function app to Twilio.
+In this unit, you created a function app in Azure, deployed code to the function app, and configured all required environment variables for the function app. Finally, you deployed the function app! The final step in creating the weather alert text message application is to set up Twilio to connect to the function app.

@@ -1,6 +1,32 @@
-In this unit, you'll connect your Twilio phone number to the function app to receive text messages.
+In this unit, you'll set up your Twilio phone number to connect to the function app to receive text messages.
 
-## Connect Twilio to the function app
+## Connect Twilio with the function app
+
+The function app you created is configured to respond to HTTP requests. Twilio will make HTTP requests in the application by accessing an HTTP trigger endpoint in Azure.
+
+### Get the HTTP trigger endpoint
+
+In the sandbox, to get the full endpoint URL, run this command:
+
+```azurecli
+func azure functionapp list-functions $FUNCTION_APP_NAME --show-keys
+```
+
+In the output, find the `SetupAlert` URL:
+
+```output
+Functions in cropweatheralertjabenn:
+    CheckForecast - [timerTrigger]
+
+    ProcessAndNotify - [queueTrigger]
+
+    SetupAlert - [httpTrigger]
+        Invoke url: https://cropweatheralertjabenn.azurewebsites.net/api/setupalert?code=Secr3tC0de
+```
+
+The full URL is displayed after `Invoke url:`. Copy and save the URL to use in the next section.
+
+### Set up Twilio to respond to function app requests
 
 Now that everything is set up, the only thing left to do is to make Twilio call the function app endpoint for incoming text messages.
 
