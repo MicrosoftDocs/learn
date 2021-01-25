@@ -3,7 +3,7 @@ uid: learn.advocates.use-azure-maps-to-track-air-pollution.7-visualize-pollution
 title: Exercise - Visualize air quality data on a map
 metadata:
   title: Exercise - Visualize air quality data on a map
-  description: In this unit, you'll get air quality data from an API, convert it to GeoJSON and show it on the map as a bubble layer.
+  description: Get air quality data from an API, convert it to GeoJSON, and show it on the map as a bubble layer.
   author: jimbobbennett
   ms.author: jabenn
   ms.date: 04/20/2020

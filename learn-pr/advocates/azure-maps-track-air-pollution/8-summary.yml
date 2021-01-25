@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.8-summary
-title: Summary and knowledge check
+title: Summary
 metadata:
-  title: Summary and knowledge check
-  description: Summarizes what you have learned in this module, describes some next steps, and finishes with a short knowledge check.
+  title: Summary
+  description: Summarizes what you have learned in this module and describes some next steps.
   author: jimbobbennett
   ms.author: jabenn
   ms.date: 04/20/2020

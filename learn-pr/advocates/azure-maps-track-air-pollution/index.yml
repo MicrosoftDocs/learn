@@ -39,10 +39,10 @@ units:
 - learn.advocates.use-azure-maps-to-track-air-pollution.1-introduction
 - learn.advocates.use-azure-maps-to-track-air-pollution.2-visualize-map-data
 - learn.advocates.use-azure-maps-to-track-air-pollution.3-create-account-azure-cli
-- learn.advocates.use-azure-maps-to-track-air-pollution.4-knowledge-check
 - learn.advocates.use-azure-maps-to-track-air-pollution.5-show-web-page
 - learn.advocates.use-azure-maps-to-track-air-pollution.6-describe-spatial-data-geojson
 - learn.advocates.use-azure-maps-to-track-air-pollution.7-visualize-pollution-data
+- learn.advocates.use-azure-maps-to-track-air-pollution.4-knowledge-check
 - learn.advocates.use-azure-maps-to-track-air-pollution.8-summary
 
 badge:

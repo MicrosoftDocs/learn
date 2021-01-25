@@ -3,7 +3,7 @@ uid: learn.advocates.use-azure-maps-to-track-air-pollution.6-describe-spatial-da
 title: Describe spatial data with GeoJSON
 metadata:
   title: Describe spatial data with GeoJSON
-  description: In this unit, you'll learn about the GeoJSON format and how it can be used to describe spatial data for use on a map.
+  description: Learn about the GeoJSON format and how to use it to describe spatial data on a map.
   author: jimbobbennett
   ms.author: jabenn
   ms.date: 04/20/2020

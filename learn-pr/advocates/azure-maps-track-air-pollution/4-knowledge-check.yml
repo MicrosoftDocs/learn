@@ -3,15 +3,13 @@ uid: learn.advocates.use-azure-maps-to-track-air-pollution.4-knowledge-check
 title: Knowledge Check - Azure Maps
 metadata:
   title: Knowledge Check - Azure Maps
-  description: Before we start using the Azure Maps web SDK, lets check what you have learned so far.
+  description: See what you've learned so far.
   author: jimbobbennett
   ms.author: jabenn
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
-content: |
-  [!include[](includes/4-knowledge-check.md)]
 
 quiz:
   title: Check your knowledge
@@ -40,3 +38,24 @@ quiz:
     - content: 'The height above sea level'
       isCorrect: false
       explanation: Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
+
+  - content: 'What GeoJSON object is used to render a layer on a map'
+    choices:  
+    - content: 'Geometry'
+      isCorrect: false
+      explanation: Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
+    - content: 'Feature'
+      isCorrect: false
+      explanation: Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
+    - content: 'Feature Collection'
+      isCorrect: true
+      explanation: Correct. Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
+
+  - content: 'How can you get the coordinates of the part of the map visible in the browser?'
+    choices:
+    - content: 'Get the bounds property from the maps camera'
+      isCorrect: true
+      explanation: Correct, the viewable area of the map is controlled by a camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
+    - content: 'Get the top, bottom, left, and right coordinates from the map control'
+      isCorrect: false
+      explanation: The viewable area of the map is controlled by a camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
