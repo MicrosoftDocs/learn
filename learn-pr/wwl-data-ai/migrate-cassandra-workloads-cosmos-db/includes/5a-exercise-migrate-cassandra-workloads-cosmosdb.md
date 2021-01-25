@@ -2,19 +2,30 @@ In this exercise, you'll migrate two datasets from Cassandra to Cosmos DB. You'l
 
 The scenario for this lab concerns an ecommerce system. Customers can place orders for goods. The customer and order details are recorded in a Cassandra database.
 
-### Create a Virtual Network
+> [!IMPORTANT]
+> You can perform these steps in your own personal subscription, or just follow along to understand how to migrate your database.
 
-First, you'll create the Cassandra database for holding the customer and order data.
+### Task 1: Create a Resource Group and Virtual Network
 
-1. In your Internet browser, navigate to [https://portal.azure.com](https://portal.azure.com) and sign in.
-1. In the left-hand pane of the Azure portal, select **+ Create a resource**.
+1. Using a web browser, open a new tab and navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. In the Azure portal, select **Resource groups**, and then select **+Add**.
+1. On the **Create a resource group page**, enter the following details:
+
+    | Property  | Value  |
+    |---|---|
+    | Subscription | *\<your-subscription\>* |
+    | Resource Group | **cassandradbrg** |
+    | Region | Select your nearest location |
+
+1. Select **Review + Create** and then select **Create**. Wait for the resource group to be created.
+1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Virtual Network**, and press Enter.
 1. On the **Virtual Network** page, select **Create**.
 1. On the **Basics** page, enter the following details, and then select **Next:IP Addresses**:
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **cassandradbrg** |
     | Name | **databasevnet** |
     | Region | Select the same location that you specified for the resource group |
 
@@ -41,7 +52,7 @@ First, you'll create the Cassandra database for holding the customer and order d
 
     | Property  | Value  |
     |---|---|
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | **cassandradbrg** |
     | Virtual machine name | **cassandraserver** |
     | Region | Select the same location that you specified for the resource group |
     | Availability options | **No infrastructure redundancy required** |
@@ -207,7 +218,7 @@ In the next steps you'll migrate the same data you just created. You'll use Spar
     | Pricing Tier | **Standard** |
 
 1. On the **Review + create** page, select **Create** and then wait for the Databricks Service to be deployed.
-1. In the left-hand pane, select **Resource groups**, select **<rgn>[sandbox resource group name]</rgn>**, and then select the **CassandraMigration** Databricks Service.
+1. In the left-hand pane, select **Resource groups**, select **cassandradbrg**, and then select the **CassandraMigration** Databricks Service.
 1. On the **CassandraMigration** page, select **Launch Workspace**.
 1. On the **Azure Databricks** page, under **Common Tasks**, select **New Cluster**.
 1. On the **New Cluster** page, enter the following settings, and then select **Create Cluster**:
@@ -451,3 +462,15 @@ In the next steps you'll migrate the same data you just created. You'll use Spar
 1. Finally, expand the **orderline** table, and then select **Rows**. Verify that the first 100 rows for this table appear.
 
 You have successfully migrated a Cassandra database to Cosmos DB by using Spark from a Databricks notebook.
+
+### Clean up the resources you've created
+
+> [!IMPORTANT]
+> If you've performed these steps in your own personal subscription, you can delete the resources individually or delete the resource group to delete the entire set of resources. Resources left running can cost you money.
+
+1. Using the Cloud Shell run this command to delete the resource group:
+
+```azurecli
+az group delete --name cassandradbrg
+```
+
