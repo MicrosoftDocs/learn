@@ -31,7 +31,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 
 1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and in the list of results, select the **Azure App Service deploy** task entry.
-1. On the **Azure App Service deploy** pane, ensure that the **labAzureSubscription** appears in the **Azure subscription** dropdown list, in the **App Service name** dropdown list, enter **$(WEBAPPNAME)**, and select **Add**.
+1. On the **Azure App Service deploy** pane, ensure that the **labAzureSubscription** appears in the **Azure subscription** drop-down list, in the **App Service name** drop-down list, enter **$(WEBAPPNAME)**, and select **Add**.
 
    > [!NOTE]
    > This is one of the variables designating the name of the Azure App Service web app that's included in the **AzureResourcesVariableGroup** you created in the previous exercise of this module.
@@ -39,7 +39,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
 1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and, in the list of results, select the **Azure App Service Settings** task entry.
-1. On the **Azure App Service Settings** pane, in the **Azure subscription** dropdown list, select the **labAzureSubscription** entry. In the **App Service name** dropdown list, enter **$(WEBAPPNAME)**. In the **Resource group** dropdown list, enter **$(RESOURCEGROUPNAME)**. In the **Connection Strings** text box, enter the following text, and then select **Add**.
+1. On the **Azure App Service Settings** pane, in the **Azure subscription** drop-down list, select the **labAzureSubscription** entry. In the **App Service name** drop-down list, enter **$(WEBAPPNAME)**. In the **Resource group** drop-down list, enter **$(RESOURCEGROUPNAME)**. In the **Connection Strings** text box, enter the following text, and then select **Add**.
 
    ```json
    [
@@ -57,7 +57,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
 
    > [!NOTE]
-   > At this point, the pipeline should have the content which resembles the following listing:
+   > At this point, the pipeline should have content which resembles the following listing:
 
    ```yaml
    # ASP.NET
@@ -237,7 +237,7 @@ To conclude this exercise, you'll trigger integration and deployment by modifyin
 
 ## Results
 
-In this exercise you used an Azure DevOps release pipeline to deploy artifacts into the Azure App Service web app.
+In this exercise, you used an Azure DevOps release pipeline to deploy artifacts into the Azure App Service web app.
 
 ## Clean up your environment
 
