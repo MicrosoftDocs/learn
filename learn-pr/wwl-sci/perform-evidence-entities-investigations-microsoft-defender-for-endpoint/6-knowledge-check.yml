@@ -26,7 +26,7 @@ quiz:
       explanation: "Incorrect. There is not an investigation page for Hunter."
     - content: "Threat Actor"
       isCorrect: false
-      explanation: "Incorrect. Threat Actor is not an forensic artifact that can be collected."
+      explanation: "Incorrect. Threat Actor is not a forensic artifact that can be collected."
   - content: "What information is provided by a deep file analysis?"
     choices:
     - content: "Command history"
