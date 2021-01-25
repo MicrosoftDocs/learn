@@ -121,17 +121,17 @@ First, follow these steps to create an example scope named Employees.Read.All:
 | User consent display name| A short description of the scope's purpose. Shown to users only if you set Who can consent to Admins and users.| Read-only access to your employee records|
 | User consent description| A more detailed description of the permission granted by the scope. Shown to users only if you set Who can consent to Admins and users.| Allow the application to have read-only access to your employee data.|
 
-1. Set the **State** to **Enabled**, and then select **Add scope**.
+7. Set the **State** to **Enabled**, and then select **Add scope**.
 
-1. (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can *pre-authorize* the client application to access your web API. Pre-authorize *only* those client applications you trust since your users won't have the opportunity to decline consent.
+8. (Optional) To suppress prompting for consent by users of your app to the scopes you've defined, you can *pre-authorize* the client application to access your web API. Pre-authorize *only* those client applications you trust since your users won't have the opportunity to decline consent.
 
    1. Under **Authorized client applications**, select **Add a client application.**
 
-   1. Enter the **Application (client) ID** of the client application you want to pre-authorize. For example, that of a web application you've previously registered.
+   2. Enter the **Application (client) ID** of the client application you want to pre-authorize. For example, that of a web application you've previously registered.
 
-   1. Under **Authorized scopes**, select the scopes for which you want to suppress consent prompting, then select **Add application**.
+   3. Under **Authorized scopes**, select the scopes for which you want to suppress consent prompting, then select **Add application**.
 
-   1. If you followed this optional step, the client app is now a pre-authorized client app (PCA), and users won't be prompted for their consent when signing into it.
+   4. If you followed this optional step, the client app is now a pre-authorized client app (PCA), and users won't be prompted for their consent when signing into it.
 
 ### Add a scope requiring admin consent
 

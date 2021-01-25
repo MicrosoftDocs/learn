@@ -72,10 +72,8 @@ The offline_access scope gives your app access to resources on behalf of the use
 
 On the Microsoft identity platform (requests made to the v2.0 endpoint), your app must explicitly request the offline_access scope to receive refresh tokens. This means that when you redeem an authorization code in the OAuth 2.0 authorization code flow, you'll receive only an access token from the /token endpoint. The access token is valid for a short time, usually expiring in one hour. At that point, your app needs to redirect the user back to the /authorize endpoint to get a new authorization code. During this redirect, depending on the type of app, the user might need to enter their credentials again or consent again to permissions.
 
-> [!TIP]
-> Note:
-
-This permission appears on all consent screens today, even for flows that don't provide a refresh token (the [implicit flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
+> [!NOTE]
+> This permission appears on all consent screens today, even for flows that don't provide a refresh token (the [implicit flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
 
 ## Requesting individual user consent
 
@@ -83,8 +81,7 @@ In an OpenID Connect or OAuth 2.0 authorization request, an app can request the 
 
 After the user enters their credentials, the Microsoft identity platform endpoint checks for a matching record of user consent. If the user has not consented to any of the requested permissions in the past, nor has an administrator consented to these permissions on behalf of the entire organization, the Microsoft identity platform endpoint asks the user to grant the requested permissions.
 
-> [!TIP]
-> Note:
+> [!NOTE]
 > At this time, the offline_access ("Maintain access to data you have given it access to") and user.read ("Sign you in and read your profile") permissions are automatically included in the initial consent to an application. These permissions are generally required for proper app functionality; offline_access gives the app access to refresh tokens, critical for native and web apps, while user.read gives access to the sub claim, allowing the client or app to correctly identify the user over time and access rudimentary user information.
 
 >[!div class="mx-imgBorder"]

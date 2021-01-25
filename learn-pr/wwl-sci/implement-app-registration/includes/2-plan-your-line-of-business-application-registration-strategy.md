@@ -164,8 +164,7 @@ To prevent users from consenting to applications on their own behalf:
 
 1. Change **Users can consent to apps accessing company data on their behalf** to **No**.
 
-> [!TIP]
-> Note:
+> [!NOTE]
 > If you decide to turn off user consent, an admin will be required to consent to any new application a user needs to use.
 
 To prevent users from registering their own applications:

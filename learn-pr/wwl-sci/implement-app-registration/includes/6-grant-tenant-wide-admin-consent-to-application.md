@@ -87,8 +87,7 @@ If the application is requesting application permissions and an administrator gr
 
 ## Using the admin consent endpoint
 
-> [!TIP]
-> Note:
+> [!NOTE]
 > After granting admin consent using the admin consent endpoint, you have finished granting admin consent and users do not need to perform any further additional actions. After granting admin consent, users can get an access token via a typical auth flow, and the resulting access token will have the consented permissions.
 
 When a Company Administrator uses your application and is directed to the authorize endpoint, Microsoft identity platform will detect the user's role and ask them if they would like to consent on behalf of the entire tenant for the permissions you have requested. However, there is also a dedicated admin consent endpoint you can use if you would like to proactively request that an administrator grants permission on behalf of the entire tenant. Using this endpoint is also necessary for requesting application permissions (which can't be requested using the authorize endpoint).
@@ -99,10 +98,8 @@ If you follow these steps, your app can request permissions for all users in a t
 
 Applications are able to note which permissions they require (both delegated and application) in the app registration portal. This allows use of the /.default scope and the Azure portal's "Grant admin consent" option. In general, it's best practice to ensure that the permissions statically defined for a given application are a superset of the permissions that it will be requesting dynamically/incrementally.
 
-> [!TIP]
-> Note:
-
-Application permissions can only be requested through the use of [/.default](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). If your app needs application permissions, make sure they're listed in the app registration portal.
+> [!NOTE]
+> Application permissions can only be requested through the use of [/.default](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). If your app needs application permissions, make sure they're listed in the app registration portal.
 
 ### To configure the list of statically requested permissions for an application
 

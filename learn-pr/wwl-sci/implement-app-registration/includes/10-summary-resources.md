@@ -4,9 +4,7 @@ Now that you have reviewed this module, you should be able to:
 
 - Implement application registrations.
 
-- Configure application permissions	.
+- Configure application permissions.
 
-## Resources
 
-Use these resources to discover more.
 
