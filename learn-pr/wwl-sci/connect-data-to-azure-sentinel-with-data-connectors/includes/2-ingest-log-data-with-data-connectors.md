@@ -1,10 +1,12 @@
 To collect log data, you need to connect your data sources with Azure Sentinel Connectors. The Data Connectors page displays a growing list of connectors provided by Azure Sentinel.
 
-![Azure Sentinel Connector page](../media/connector-page.png)
+>[!div class="mx-imgBorder"]
+>[ ![Azure Sentinel Connector page.](../media/connector-page.png) ](../media/connector-page.png#lightbox)
 
 After selecting the Open connector page, the detailed connector page has a left blade and a right blade.
 
-![Azure Sentinel Detailed Connector Page](../media/connector-page2.png)
+>[!div class="mx-imgBorder"]
+>[ ![Azure Sentinel Detailed Connector Page.](../media/connector-page2.png) ](../media/connector-page2.png#lightbox)
 
 The left blade provides information about the connector, the connector's status, and the last time a log was received if connected.  On the bottom section of the left blade is the Data Types.  The Data Types will list the table(s) that the connector will write to.
 
