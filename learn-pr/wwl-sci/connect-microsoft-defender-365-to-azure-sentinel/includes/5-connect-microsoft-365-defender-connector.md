@@ -8,11 +8,11 @@ With the integration of Microsoft Defender for Endpoint into the Microsoft 365 D
 
 - Store the logs with increased retention, beyond Microsoft Defender for Endpoint or Microsoft 365 Defender’s default retention of 30 days. You can do so by configuring the retention of your workspace or by configuring per-table retention in Log Analytics.
 
-![Microsoft 365 Defender connector page.](../media/microsoft-365-defender.png)
+:::image type="content" source="../media/microsoft-365-defender.png" alt-text="Microsoft 365 Defender connector page.":::
 
-To deploy the connector, do the following:
+To deploy the connector, do the following steps:
 
-1. Select Data connectors page.
+1. Select **Data connectors** page.
 
 1. Select Microsoft Defender for Endpoint (may still be called Microsoft Defender Advanced Threat Protection).
 
