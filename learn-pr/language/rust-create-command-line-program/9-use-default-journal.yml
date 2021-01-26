@@ -3,6 +3,7 @@ uid: learn.language.rust-create-command-line-program.use-default-journal
 metadata:
   title: Use a default journal file to store tasks
   description: Place tasks in a default journal file.
+  ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
