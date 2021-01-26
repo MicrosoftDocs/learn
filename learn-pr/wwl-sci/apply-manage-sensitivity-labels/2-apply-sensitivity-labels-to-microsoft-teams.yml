@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.describe-role-lifecycle-of
+title: Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites
+metadata:
+  title: Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites
+  description: "Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-apply-sensitivity-labels-to-microsoft-teams.md)]
