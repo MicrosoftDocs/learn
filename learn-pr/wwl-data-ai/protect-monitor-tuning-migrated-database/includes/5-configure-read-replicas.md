@@ -1,3 +1,11 @@
+Companies can use read-only replicas of their databases to scale performance globally. Replicas are useful when an organization has customers distributed globally, and have users in their millions trying to access their data. Once in place, they can also handle regional disaster recover.
+
+Your company has grown to an internationally renowned seller of bicycles. The CIO has asked your department to improve the responsiveness of your online shop for its users across the globe. You know that a quick and simple way to improve the performance is place read-only replicas of your databases in each geographical location.
+
+In this unit, you'll see how easy it is to create and manage read-only replicas of data stored in an Azure Database for MySQL/PostgreSQL.
+
+## How to use read replication
+
 You use read replication to copy data from one instance of Azure Database for MySQL/PostgreSQL (referred to as the *master*) to up to five replicas. Use replication to spread the load across servers for read-heavy workloads. Replication is one-way only, and each replica is read-only. Replication operates asynchronously, so there's a lag between the time the data changes on the master and the point at which it appears in each replica.
 
 Replicas can be in different regions from the master. You use replicas to place data close to the clients needing it, to reduce query latency. Cross-region replication also gives you a mechanism for handling regional disaster recovery.
@@ -10,7 +18,7 @@ Each replica is an instance of Azure Database for MySQL/PostgreSQL in its own ri
 > [!NOTE]
 > If you're using Azure Database for MySQL, read replicas are only available in the General Purpose and Memory Optimized pricing tiers. Additionally, read replicas aren't available in Azure Database for PostgreSQL, Hyperscale (Citus).
 
-### Creating replicas
+### Create replicas
 
 The simplest way to add replicas to a server is through the **Replication** page for the server in the Azure portal. On this page, select **+ Add Replica**.
 
@@ -38,7 +46,7 @@ az postgres server replica create \
   --source-server northwind101
 ```
 
-### Removing a replica
+### Remove a replica
 
 To remove a replica, select the replica on the **Replication** page, and select **Stop Replication**. The replica server will detach from the master and be converted into a read-write server instead. The replica won't be deleted, and you'll continue to be charged for the resources it consumes. If you need to delete the replica, use the **Delete Replica** command instead.
 
