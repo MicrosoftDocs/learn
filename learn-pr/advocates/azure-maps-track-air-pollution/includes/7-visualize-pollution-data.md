@@ -147,7 +147,7 @@ The Flask app will need to call the API to load the data for the visible portion
 
 1. Save the file
 
-This code implements an API call inside the Flask app that will load the AQI data from the API for a given set of coordinates. The AQI data will then be converted to a feature collection and returned as a JSON string. This API can then be called from the web page.
+This code implements an API call inside the Flask app that will load the AQI data from the API for a given set of coordinates. The AQI data will then be converted to a feature collection and returned as a JSON string. This API can then be called from the webpage.
 
 ### Show the air quality data on the map
 

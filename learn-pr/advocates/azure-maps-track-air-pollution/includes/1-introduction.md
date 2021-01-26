@@ -13,7 +13,7 @@ The Air Quality index looks at a few different pollutants:
 > [!TIP]
 > You can read more about the Air Quality index on the [AirNow AQI Basics page](https://www.airnow.gov/aqi/aqi-basics/).
 
-In this module, you'll get air pollution data using a free API, and plot this data on an interactive map on a web page using Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing. Azure Maps also has a web SDK to visualize a map on a web page.
+In this module, you'll get air pollution data using a free API, and plot this data on an interactive map on a webpage using Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing. Azure Maps also has a web SDK to visualize a map on a webpage.
 
 The app you'll create will look like this:
 
@@ -23,9 +23,9 @@ The app you'll create will look like this:
 
 In this module you'll:
 
-1. Learn about Azure Maps and the Maps Web SDK
+1. Learn about Azure Maps and the Maps web SDK
 1. Create an Azure Maps account
-1. Use the Azure Maps web SDK on a web page
+1. Use the Azure Maps web SDK on a webpage
 1. Learn about GeoJSON, the data format for spatial data
 1. Load air quality data from an API and show it on the map
 
@@ -35,7 +35,7 @@ In this module you'll:
 - Experience using Visual Studio Code, at the beginner level
 - Python 3.6 or higher installed, and available on your path
 - Visual Studio Code installed
-- Python tools for Visual Studio Code installed
+- Python extension for Visual Studio Code installed
 
 > [!TIP]
 > If you want to learn how to set up and configure Visual Studio Code for Python development, work through this Microsoft Learn module: [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/languages/python-install-vscode/)

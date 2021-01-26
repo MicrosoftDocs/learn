@@ -1,4 +1,4 @@
-In this unit, you'll create a Python app using Flask to show the Azure Maps web SDK on a web page
+In this unit, you'll use Flask to create a Python app that shows the Azure Maps web SDK on a webpage.
 
 ## Build the app
 
@@ -6,31 +6,31 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 1. Create a folder on your computer to store the code.
 
-1. Open Visual Studio Code, and open the folder you've created
+1. Open Visual Studio Code, and open the folder you've created.
 
-1. In this folder, create a new file called `app.py`. By creating this Python file, Visual Studio Code will activate the Python extension ready to build this python app. You can see the progress of the extension activation in the bottom status bar.
+1. At the root of your app code folder, create a new Python application file called *app.py*. By creating this Python file, Visual Studio Code will activate the Python extension, so it's ready to build this Python app. You can see the progress of the extension activation in the bottom status bar at the far left.
 
-1. Inside this folder, create a new folder called `templates`. This folder will hold HTML templates used by the Flask app.
+1. At the root of your app code folder, create a new folder named *templates*. This new folder will hold the HTML templates that are used by the Flask app.
 
 ### Configure the Python environment
 
 1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**.
 
-1. Create a python virtual environment:
+1. Create a Python virtual environment.
 
-    On Windows, use the following command
+    In Windows, use the following command:
 
-    ```sh
+    ```python
     python -m venv .venv
     ```
 
-    On Linux and macOS, use the following command
+    In Linux or macOS, use the following command:
 
-    ```sh
+    ```python
     python3 -m venv .venv
     ```
 
-    This command will create a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder. Select **Yes**.
+    This command creates a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder. Select **Yes**.
 
     ![The activate virtual env dialog](../media/activate-venv-dialog.png)
 
@@ -133,7 +133,7 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
         <!-- Ensures that IE and Edge uses the latest version and doesn't emulate an older version -->
         <meta http-equiv="x-ua-compatible" content="IE=Edge">
         <meta charset='utf-8'>
-        <!-- Ensures the web page looks good on all screen sizes. -->
+        <!-- Ensures the webpage looks good on all screen sizes. -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Import the Azure Maps control -->
         <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css">
@@ -184,7 +184,7 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     </html>
     ```
 
-    This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise it will use the location of the Microsoft campus in Redmond, Washington, USA.
+    This webpage will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise it will use the location of the Microsoft campus in Redmond, Washington, USA.
 
     > [!NOTE]
     > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
@@ -259,7 +259,7 @@ If you don't see any data on the map, but you do see the Microsoft logo, then yo
 
 ## 500 Internal server error
 
-If the web page gives a **500 Internal Server Error**, check the logs in the Visual Studio Code terminal. If you see the following:
+If the webpage gives a **500 Internal Server Error**, check the logs in the Visual Studio Code terminal. If you see the following:
 
 ```output
 jinja2.exceptions.TemplateNotFound: home.html

@@ -1,10 +1,10 @@
-You've successfully created a web page to show air quality data using Azure Maps.
+You've successfully created a webpage to show air quality data using Azure Maps.
 
 In this module you learned:
 
 * What Azure Maps is and how to create an account
 * The different mapping options in Azure Maps
-* How to show a map on a web page using the Azure Maps web SDK
+* How to show a map on a webpage using the Azure Maps web SDK
 * The GeoJSON format
 * How to show a GeoJSON feature collection on a map
 

@@ -1,8 +1,8 @@
-The Azure Maps web SDK has a whole host of different tools to visualize spatial data on an interactive map on a web page. Before getting started adding the map to a web page, lets look at some of the capabilities.
+The Azure Maps web SDK has a whole host of different tools to visualize spatial data on an interactive map on a webpage. Before getting started adding the map to a webpage, lets look at some of the capabilities.
 
 ## Render a map
 
-The Azure Maps web SDK has an interactive JavaScript map control that can be added to a web page. Maps are drawn, or rendered, using the **Spherical Mercator projection coordinate system**, the de facto standard for web-based mapping applications. This system stretches the map at both the North and South poles to create a square map that can be drawn on screen. This stretching does mean that the further away from the equator you get, the more stretched the map is. The end result is countries like Greenland appear substantially larger than they are in reality.
+The Azure Maps web SDK has an interactive JavaScript map control that can be added to a webpage. Maps are drawn, or rendered, using the **Spherical Mercator projection coordinate system**, the de facto standard for web-based mapping applications. This system stretches the map at both the North and South poles to create a square map that can be drawn on screen. This stretching does mean that the further away from the equator you get, the more stretched the map is. The end result is countries like Greenland appear substantially larger than they are in reality.
 
 Maps can be rendered in a number of different styles. These styles include:
 
