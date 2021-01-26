@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-command-line-program.display-friendly-error-messages
+metadata:
+  title: Display friendly error messages
+  description: Modify the program to display a friendly error message if the journal file isn't found.
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Display friendly error messages
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-display-friendly-error-messages.md)]

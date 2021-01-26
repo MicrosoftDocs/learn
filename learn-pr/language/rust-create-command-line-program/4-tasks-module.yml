@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-command-line-program.tasks-module
+metadata:
+  title: Create the tasks module
+  description: Implement the module that create and store tasks.
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create the tasks module
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-tasks-module.md)]
