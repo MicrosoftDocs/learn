@@ -12,7 +12,7 @@ Welcome aboard!
 
 In this module, you'll write your very first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally, with a simulator, on standard hardware. You can, when it's generally available, run the same quantum program on quantum hardware through the Azure Quantum service.
 
-Of course, the first thing you will do before using your quantum computer is logging into it. You would like to use a randomized password so no galactic hacker can jeopardize space fleet security. You will write a quantum program in this module to generate random numbers. A random number generator is not only easy to write, but it will help you understand the basics of quantum computing.
+Of course, the first thing you will do before using your quantum computer is logging into the system. You would like to generate a truly random password so no galactic hacker can jeopardize space fleet security. In this module you will write a quantum program to generate random numbers. A random number generator is not only easy to write, but it will help you understand the basics of quantum computing.
 
 ## Learning objectives
 
