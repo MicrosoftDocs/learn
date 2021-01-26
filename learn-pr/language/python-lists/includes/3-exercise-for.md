@@ -10,7 +10,7 @@ The `in` keyword allows us to iterate through each item in a list. But we can al
 
 What if we want to know if a certain number is part of a list of numbers?  We can iterate through each number and then use an `if` statement to see if we find the value. But a better approach uses the `in` or `not in` operators to test the item for inclusion.
 
-Add the following code to your new code file:
+Add the following code to your new code file.
 
 ```python
 numbers = [1, 3, 5]
@@ -21,7 +21,8 @@ print(8 in numbers)
 print(5 not in numbers)
 print(8 not in numbers)
 ```
-When you execute the code, you should see the following output:
+
+When you execute the code, you should see the following output.
 
 ```output
 True
@@ -41,7 +42,7 @@ The `for` statement allows us to iterate through each item in a list.  The `for`
 
 The part after the `for` statement is just as important. There, you define a code block that will be executed for each item in the list.  The current item's value is set to a variable in the `for` statement. It's available in the body of the code block.
 
-Comment out the code from the previous section. Then add the following code listing:
+Comment out the code from the previous section. Then add the following code listing.
 
 ```python
 cities = ["Chicago", "London", "Tokyo"]
@@ -49,9 +50,10 @@ cities = ["Chicago", "London", "Tokyo"]
 for city in cities:
   print(city)
 ```
+
 In this example, we merely print each item in the list, one item per line. But you can see the basic structure of the `for` loop and how all of the parts work.
 
-When you execute the code, you should see the following output:
+When you execute the code, you should see the following output.
 
 ```output
 Chicago
@@ -65,7 +67,7 @@ The `for` statement has features similar to the `while` statement, which we expl
 
 The `break` statement allows you to break out of the `for` iteration.  In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out of the loop, we can filter the original list.
 
-Comment out the code from the previous section. Then add the following code listing:
+Comment out the code from the previous section. Then add the following code listing.
 
 ```python
 numbers = [42, 77, 16, 101, 23, 8, 4, 15, 55]
@@ -76,7 +78,8 @@ for number in numbers:
     break
   print(number)
 ```
-When you execute the code, you should see the following output:
+
+When you execute the code, you should see the following output.
 
 ```output
 4
@@ -91,7 +94,7 @@ When you execute the code, you should see the following output:
 
 If you didn't break out of the loop and you want to execute code only after each item in the list has been processed, then you can use the `else` statement.  In the following example, we'll print the phrase `No numbers greater than 90` only if each number in our random list of five numbers is below the value `90`.
 
-Comment out the code from the previous section. Then add the following code listing:
+Comment out the code from the previous section. Then add the following code listing.
 
 ```python
 import random
@@ -110,6 +113,7 @@ else:
 
 print('Complete')
 ```
+
 When you execute the code, you might see something like the following output. Your output will differ because the generated numbers are random.
 
 ```output
@@ -140,7 +144,7 @@ Use the `continue` statement in a code block to skip the remaining logic and mov
 
 In this section, we build a short program that filters out a list.  The list contains both `int` and `string`. We want to create a new list that contains only the `str` values.  We use the `continue` statement to move to the next item in the list instead of adding the current item to the filtered list.
 
-Comment out the code from the previous section. Then add the following code listing:
+Comment out the code from the previous section. Then add the following code listing.
 
 ```python
 values = ["laptop", 7, "phone", 3, "dslr", 5]
@@ -151,9 +155,10 @@ for value in values:
     continue
   equipment.append(value)
 
-print(value)
+print(equipment)
 ```
-When you execute the code, you should see the following output:
+
+When you execute the code, you should see the following output.
 
 ```output
 ['laptop', 'phone', 'dslr']
@@ -168,7 +173,7 @@ Nesting one `for` loop inside of another `for` loop is a common way to generate 
 
 Suppose we're building a program for card playing. We want to create one card for each combination of a suit and a rank.  We could hard-code all 52 values in a deck of cards. Or we could generate a deck of cards by first creating a list of suits and a list of ranks and then using a nested `for` loop.
 
-Comment out the code from the previous section. Then add the following code listing:
+Comment out the code from the previous section. Then add the following code listing.
 
 ```python
 suits = ["Hearts", "Spades", "Clubs", "Diamonds"]
@@ -179,7 +184,7 @@ for  suit in suits:
     print(f'{rank} of {suit}') 
 ```
 
-When you execute the code, you should see the following output:
+When you execute the code, you should see the following output.
 
 ```output
 2 of Hearts
@@ -235,6 +240,7 @@ Queen of Diamonds
 King of Diamonds
 Ace of Diamonds
 ```
+
 This technique will come in handy when we work on a challenge later in this module.
 
 ## Step 8 - Choose randomly from a list
@@ -260,6 +266,7 @@ When you execute the code, you should see something like the following output. Y
 101
 [77, 4, 8]
 ```
+
 This technique will also prove useful when we work on a challenge later in this module.
 
 ### Recap
