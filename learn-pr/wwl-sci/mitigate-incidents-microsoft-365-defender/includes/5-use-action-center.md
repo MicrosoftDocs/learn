@@ -18,10 +18,6 @@ In the Action center, you'll see two tabs: Pending and History.
 
 Select an item in the list to view more details about an investigation. The investigation details view opens.
 
-- If the investigation pertains to email content (such as, the entity is a mailbox), investigation details open in the Security & Compliance Center [https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation?azure-portal=tru).
-
-- If the investigation involves a device, investigation details open in the security center [https://security.microsoft.com](https://security.microsoft.com?azure-portal=tru).
-
 ## Available actions
 
 As remediation actions are taken, they're listed on the History tab in the Action center. Such actions include the following:

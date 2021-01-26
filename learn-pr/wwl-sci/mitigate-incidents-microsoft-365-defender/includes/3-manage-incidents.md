@@ -84,19 +84,19 @@ The portal pages provide preview information for most list related data.
 
 In this screenshot, the three highlighted areas are the circle, the greater than symbol, and the actual link.
 
-![Preview options from a list](../media/dfnav1.png)
+![Preview options from a list](../media/dfnav-1.png)
 
 **Circle**
 
 Selecting the circle will open a blade on the right side of the page with a preview of the line item with an option to open the full page of information.
 
-![Preview blade](../media/incidentcircle.png)
+![Preview blade](../media/incident-circle.png)
 
 **Greater than symbol**
 
 If there are related records that can be displayed, selecting the greater than sign will display the records below the current record.
 
-![Related records](../media/greaterthan.png)
+![Related records](../media/greater-than.png)
 
 **Link**
 
