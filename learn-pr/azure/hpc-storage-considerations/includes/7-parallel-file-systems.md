@@ -31,3 +31,10 @@ Parallel file systems, by contrast, typically implement strategies to better sca
 ### Block Size ###
 
 ** Block Size ** was discussed earlier in the context of NFS. Parallel file system block sizes can be much larger than NFS. The default rsize/wsize for NFS clients is usually 64K; Lustre, as one example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. On the other hand, parallel file systems offer very little advantage when the file sizes are very small and the number those files is significantly high.
+
+### Complexity ###
+
+Distributed file system solutions running NFS are easy to set up and run for common use cases. Like any system, they can be tuned for performance, including manipulating client-server block sizes (rsize/wsize) based on workloads. 
+
+Parallel file systems typically operate against complex workloads in scale environments and are more likely to require configuration and tuning to ensure sufficient performance and scale.
+
