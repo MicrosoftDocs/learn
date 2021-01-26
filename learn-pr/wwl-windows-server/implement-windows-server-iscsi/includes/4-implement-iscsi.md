@@ -1,4 +1,4 @@
-Installing and configuring iSCSI Target on Windows Server is a relatively straightfoward process. However, it is important to point out that implementation must also include setting up highly performant and highly available network and storage components.
+Installing and configuring iSCSI Target on Windows Server is a relatively straightforward process. However, it is important to point out that implementation must also include setting up highly performant and highly available network and storage components.
 
 ## Implement iSCSI network and storage components
 

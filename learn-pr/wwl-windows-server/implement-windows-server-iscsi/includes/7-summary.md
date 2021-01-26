@@ -1,4 +1,4 @@
-Using the knowledge acquired in this module, you implemented iSCSI to allow connections from clients and applications that require iSCSI-based access. Your implementation considered the need for sufficient network bandwidth and provided additional resiliency in case of an isolated failure that affected network connectivity.
+Using the knowledge acquired in this module, you implemented iSCSI to allow connections from clients and applications that require iSCSI-based access. Your implementation considered the need for sufficient network bandwidth. It also provided more resiliency in case there was an isolated failure that affected network connectivity.
 
 ## Learn more
 
