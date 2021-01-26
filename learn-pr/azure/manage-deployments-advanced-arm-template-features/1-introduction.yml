@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/09/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

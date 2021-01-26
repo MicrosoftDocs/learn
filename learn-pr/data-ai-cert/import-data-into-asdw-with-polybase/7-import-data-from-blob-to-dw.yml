@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.import-data-into-asdw-with-polybase.import-data-from-blob-to-dw
-title: Exercise - import data from blob storage to Azure Synapse Analytics by using PolyBase
+title: Exercise - Import data from blob storage to Azure Synapse Analytics by using PolyBase
 metadata:
-  title: Exercise - import data from blob storage to Azure Synapse Analytics by using PolyBase
-  description: Exercise - import data from blob storage to Azure Synapse Analytics by using PolyBase
+  title: Exercise - Import data from blob storage to Azure Synapse Analytics by using PolyBase
+  description: Exercise - Import data from blob storage to Azure Synapse Analytics by using PolyBase
   ms.date: 01/31/2019
   author: wwlpublish
   ms.author: chtestao

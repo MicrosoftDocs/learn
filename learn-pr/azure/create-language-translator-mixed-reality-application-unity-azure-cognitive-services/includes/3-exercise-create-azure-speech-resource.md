@@ -1,4 +1,4 @@
-A Speech service resource must be created in Azure to integrate the Azure Cognitive Services Speech Translation service into a Mixed Reality app. The Speech service resource will later be used to translate speech and return a string to the app's UI. Here, you'll learn how to create a Speech service resource and locate the subscription keys and endpoint.
+A Speech service resource must be created in Azure to integrate the Azure Cognitive Services Speech Translation service into a mixed reality app. The Speech service resource will later be used to translate speech and return a string to the app's UI. Here, you'll learn how to create a Speech service resource and locate the subscription keys and endpoint.
 
 ## Create a Speech service resource
 

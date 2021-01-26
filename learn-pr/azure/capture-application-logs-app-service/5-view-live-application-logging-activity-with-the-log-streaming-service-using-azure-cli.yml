@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.capture-application-logs-app-service.5-view-live-application-logging-activity-with-the-log-streaming-service-using-azure-cli
-title: Exercise - View Live Application Logging with the Log Streaming Service using Azure CLI
+title: Exercise - View live application logging with the log streaming service using Azure CLI
 metadata:
-  title: Exercise - View Live Application Logging with the Log Streaming Service using Azure CLI
-  description: View Live Application Logging with the Log Streaming Service using Azure CLI
+  title: Exercise - View live application logging with the log streaming service using Azure CLI
+  description: View live application logging with the log streaming service using Azure CLI
   ms.date: 03/20/2019
   author: nickwalkmsft
   ms.author: nickwalk

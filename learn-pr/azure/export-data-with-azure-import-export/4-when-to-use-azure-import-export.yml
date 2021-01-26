@@ -38,6 +38,6 @@ quiz:
     - content: To use a Microsoft-supplied device instead of disks you supply
       isCorrect: false
       explanation: Data Box Family uses Microsoft-supplied devices to transfer data from your on-premises location to Azure Storage. 
-    - content: To export data from Azure Storage while you're offline
+    - content: To export data from Azure Blob storage while you're offline
       isCorrect: true
       explanation: Data Box Family doesn't support exporting data from Azure Storage. 

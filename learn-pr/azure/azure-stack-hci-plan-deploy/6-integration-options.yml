@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-plan-deploy.6-integration-options
+metadata:
+  title: Integrate Azure Stack HCI with Azure
+  description: An overview of the integration capabilities between Azure Stack HCI and Azure
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate Azure Stack HCI with Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-integration-options.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which functionality is not available in Azure Arc, provided in the Azure Stack HCI deployments?"
+    choices:
+    - content: "Searching and indexing by using Azure Resource Graph."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Arc does provides a single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph."
+    - content: "Deployment via Azure Resource Manager templates."
+      isCorrect: true
+      explanation: "That's correct. This functionality is not available with Azure Arc."
+    - content: "Azure Resource Manager tags."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Arc provides the ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags."
+
+  - content: "Which disaster recovery scenario is not supported with Azure Site Recovery in Azure Stack HCI scenarios?"
+    choices:
+    - content: "Disaster recovery of Hyper-V VMs managed by System Center Virtual Machine Manager (SCVMM) from an Azure Stack HCI cluster to Azure with Site Recovery-based replication."
+      isCorrect: false
+      explanation: "That's incorrect. This functionality is available."
+    - content: "Disaster recovery of Hyper-V VMs not managed by System Center Virtual Machine Manager (SCVMM) from an Azure Stack HCI cluster to Azure with Site Recovery-based replication."
+      isCorrect: false
+      explanation: "That's incorrect. This functionality is available."
+    - content: "Disaster recovery of Azure VMs to Azure Stack HCI by using Site Recovery-based replication"
+      isCorrect: true
+      explanation: "That's correct. ."

@@ -14,9 +14,9 @@ In the vCore model, you pay for:
 
 - Compute resources. (The service tier + the number of vCores and the amount of memory + the generation of hardware.)
 - The type and amount of data and log storage.
-- Backup storage. (Read-access geo-redundant storage, or RA-GRS).  
+- Backup storage location. (Read-access geo-redundant storage (RA-GRS), Zone-redundant storage (ZRS), or locally-redundant storage (LRS)).  
 
-The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity to save money. Neither of these options is available in the DTU model.
+The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity (pay in advance) to save money. Neither of these options is available in the DTU model.
 
 In this module, we'll focus on the vCore purchasing model.  
 
@@ -35,8 +35,8 @@ If you choose General Purpose and the vCore-based model, you have an additional 
 
 ### Hardware
 
-The default hardware generation at this time is referred to as *Gen5* hardware. Gen4 hardware exists but will reach end of life in 2020. As technology advances, you can expect the available hardware options to change as well. For example, Fsv2-series (compute-optimized) and M-series (memory-optimized) hardware options recently became available in public preview for SQL Database.
+The default hardware generation at this time is referred to as *Gen5* hardware. As technology advances, you can expect the available hardware options to change as well. For example, Fsv2-series (compute-optimized), M-series (memory-optimized), and DC-series (confidential computing) hardware options recently became available for SQL Database.
 
-If you choose General Purpose within SQL Database and want to use the serverless compute tier, Gen5 hardware is currently the only option. It can currently scale up to 16 vCores.  
+If you choose General Purpose within SQL Database and want to use the serverless compute tier, Gen5 hardware is currently the only option. It can currently scale up to 40 vCores.  
 
 The purchasing model, service tier, and hardware selections you make will have a significant impact on the performance, availability, and cost of your deployment.  

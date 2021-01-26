@@ -8,7 +8,7 @@ After completing this module, you will be able to:
 *	Sink a dataset into Azure Synapse Analytics using Azure Data Factory
 *	Publish a pipeline run in Azure Data Factory
 
-## Pre-requisite
+## Prerequisites
 
 Before taking this module, it is recommended that you complete the following modules:
 

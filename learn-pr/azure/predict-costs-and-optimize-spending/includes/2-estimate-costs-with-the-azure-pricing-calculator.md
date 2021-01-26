@@ -34,12 +34,12 @@ From our original scenario, let's imagine that this system will run on two Azure
 
 ![Illustration of described sample architecture: Application Gateway feeding to two virtual machines that take data from a single Azure SQL database.](../media/2-estimate-costs-architecture.png)
 
-We can use the Azure pricing calculator to figure out what the solution will cost and export our estimate to share with the team. From the **Example Scenarios** tab, you can add all the resources involved with a common solution to the problem you are trying to solve to estimate all the potential costs. You can also add individual products from the **Products** tab to create an estimate for your custom solution.
+We can use the Azure pricing calculator to figure out what the solution will cost and export our estimate to share with the team. To estimate all the potential costs, from the **Example Scenarios** tab, add all the resources involved with a common solution to the problem you are trying to solve. To create an estimate for your custom solution, from the **Products** tab, add individual products.
 
 > [!TIP]
 > Make sure you have a clean calculator with nothing listed in the estimate. If you have anything present in your estimate, click the trash can icon on each item to reset the estimate.
 
-In the **Products** tab of the Azure pricing calculator, add the following services to the estimate by clicking on them:
+In the **Products** tab of the Azure pricing calculator, add the following services to the estimate by clicking them:
 
 * **Virtual Machines** in the **Compute** category
 * **Azure SQL Database** in the **Databases** category

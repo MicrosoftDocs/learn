@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-sensitivity-labels-policies
+title: Describe sensitivity labels and policies
+metadata:
+  title: Describe sensitivity labels and policies
+  description: "Describe sensitivity labels and policies"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-describe-sensitivity-labels-policies.md)]

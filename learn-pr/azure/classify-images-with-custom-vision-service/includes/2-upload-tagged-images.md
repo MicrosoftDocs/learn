@@ -4,7 +4,7 @@ In this unit, you'll add images of famous paintings by Picasso, Pollock, and Rem
 
     :::image type="content" source="../media/2-add-tags.png" alt-text="Screenshot of the left-hand panel of the Artworks project with the plus sign highlighted." loc-scope="other"::: <!-- no-loc -->
 
-1. A dialog called **Create a new tag** is displayed. Type *painting* into the tag name field and select **Save**. This operation creates the tag *painting* in the tag list. Let's add some more. 
+1. A dialog called **Create a new tag** is displayed. Type *painting* into the tag name field, and select **Save**. This operation creates the tag *painting* in the tag list. Let's add some more. 
 
 1. Repeat steps 1 and 2 to add tags with the values *Picasso*, *Pollock*, and *Rembrandt*. The tag list will look like the following when you are finished.
 

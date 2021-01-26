@@ -250,23 +250,23 @@ You can now create the tables to store the data from the .csv files.
 1. Run the following command to import the data in the **courses.csv** file in the format that's specified by the amended **courses.fmt** file. The `-F 2` flag directs the `bcp` utility to start importing data from line 2 in the data file. The first line contains headers.
 
     ```bash
-    bcp "$DATABASE_NAME.dbo.courses" in courses.csv -f courses.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
+    bcp "[$DATABASE_NAME].[dbo].[courses]" in courses.csv -f courses.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
     ```
 
-    Verify that `bcp` utility imports 9 rows and doesn't report any errors.
+    Verify that `bcp` utility imports nine rows and doesn't report any errors.
 
 1. Run the following sequence of operations to import the data for the **dbo.Modules** table from the **modules.csv** file.
 
     1. Generate a format file.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.modules" format nul -c -f modules.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
+        bcp "[$DATABASE_NAME].[dbo].[modules]" format nul -c -f modules.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
         ```
 
     1. Import the data from the **modules.csv** file into the **Modules** table in the database.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.modules" in modules.csv -f modules.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
+        bcp "[$DATABASE_NAME].[dbo].[modules]" in modules.csv -f modules.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
         ```
 
         Verify that this command imports 16 rows.
@@ -276,13 +276,13 @@ You can now create the tables to store the data from the .csv files.
     1. Generate a format file.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.studyplans" format nul -c -f studyplans.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
+        bcp "[$DATABASE_NAME].[dbo].[studyplans]" format nul -c -f studyplans.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
         ```
 
     1. Import the data from the **studyplans.csv** file into the **StudyPlans** table in the database.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.studyplans" in studyplans.csv -f studyplans.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
+        bcp "[$DATABASE_NAME].[dbo].[studyplans]" in studyplans.csv -f studyplans.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
         ```
 
         Verify that this command imports 45 rows.
@@ -329,7 +329,7 @@ You can now create the tables to store the data from the .csv files.
     sqlcmd -S "$DATABASE_SERVER.database.windows.net" -d "$DATABASE_NAME" -U $AZURE_USER -P $AZURE_PASSWORD
     ```
 
-1. At the `1>` prompt, enter the following SQL command to fetch the data from the **StudyPlans** table.
+1. At the `1>` prompt, run the following SQL command to fetch the data from the **StudyPlans** table.
 
     ```SQL
     SELECT * FROM StudyPlans;  

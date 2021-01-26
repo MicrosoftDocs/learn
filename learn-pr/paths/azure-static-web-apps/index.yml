@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.azure-static-web-apps
+metadata:
+  title: Azure Static Web Apps
+  description: Azure Static Web Apps is a modern web app service that offers streamlined full-stack development from source code to global high availability.
+  brand: azure
+  ms.date: 11/30/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Static Web Apps
+summary: |
+  Azure Static Web Apps is a modern web app service that offers streamlined full-stack development from source code to global high availability.
+
+  Benefits include:
+    - Productivity from local development to GitHub native workflows for CI/CD
+    - Managed global availability for static content
+    - Dynamic scale for serverless APIs
+    - Streamlined management including custom domain configuration and authentication and authorization
+    - Seamless developer experience and CI/CD
+    - Tailored developer experience that includes a Visual Studio Code extension
+prerequisites: |
+  - [Node.js LTS and Git](https://nodejs.org/)
+  - [GitHub](https://github.com) account
+  - [Visual Studio Code](https://code.visualstudio.com)
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- solution-architect
+- student
+products:
+  - azure
+  - azure-app-service
+  - azure-app-service-static
+modules:
+- learn.azure.publish-static-web-app-and-api
+- learn.azure.publish-static-web-app-api-preview-url
+- learn.azure.publish-static-web-app-and-api-dotnet
+- learn.static-apps-gatsby
+trophy:
+  uid: learn.azure-static-web-apps.trophy

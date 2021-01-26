@@ -2,8 +2,8 @@
 uid: learn.data-ai.register-and-deploy-model-with-amls
 metadata:
   title: Deploy real-time machine learning services with Azure Machine Learning
-  description: "Learn how to register and deploy ML models as real-rim services with the Azure Machine Learning service."
-  ms.date: 09/06/2020
+  description: "Deploy real-time machine learning services with Azure Machine Learning"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

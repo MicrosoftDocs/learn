@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.connect-vm-with-azure-bastion
+metadata:
+  title: Connect to virtual machines through the Azure portal by using Azure Bastion
+  description: Learn how to deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal.
+  ms.date: 11/12/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect to virtual machines through the Azure portal by using Azure Bastion
+summary: Evaluate Azure Bastion. Deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal, to effectively replace an existing jumpbox solution. Monitor remote sessions by using diagnostic logs. Manage remote sessions by disconnecting a user session.
+abstract: | 
+  In this module, you will:
+  - Evaluate Azure Bastion as a replacement for a VM jumpbox solution
+  - Configure Bastion to securely connect to VMs
+  - Manage remote sessions by enabling diagnostic logs and monitoring remote sessions
+prerequisites: | 
+  - Experience managing remote connections to virtual machines
+  - Familiarity with networking concepts like virtual networks, public and private IPs, and network protocols SSH, RDP, and TLS
+  - (Optional) Access to an Azure subscription where you have permissions to create resources like VMs 
+iconUrl: /learn/achievements/connect-vm-with-azure-bastion.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-bastion
+units:
+- learn.connect-vm-with-azure-bastion.introduction
+- learn.connect-vm-with-azure-bastion.what-is-azure-bastion
+- learn.connect-vm-with-azure-bastion.how-does-azure-bastion-work
+- learn.connect-vm-with-azure-bastion.exercise-connect-to-vm-with-bastion
+- learn.connect-vm-with-azure-bastion.manage-remote-sessions
+- learn.connect-vm-with-azure-bastion.exercise-enable-diagnostic-logs-monitor-sessions
+- learn.connect-vm-with-azure-bastion.knowledge-check
+- learn.connect-vm-with-azure-bastion.summary
+badge:
+  uid: learn.connect-vm-with-azure-bastion.badge

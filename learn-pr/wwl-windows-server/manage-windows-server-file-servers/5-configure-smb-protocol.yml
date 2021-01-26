@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-server-file-servers.configure-smb-protocol
+title: Configure SMB protocol
+metadata:
+  title: Configure SMB protocol
+  description: "Configure SMB protocol"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-configure-smb-protocol.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What tool allows SMB encryption to be enforced on a file server?"
+    choices:
+    - content: "Windows Admin Center"
+      isCorrect: true
+      explanation: "That's correct. You can use Windows Admin Center to configure SMB encryption settings."
+    - content: "File Server Resource Manager"
+      isCorrect: false
+      explanation: "That's incorrect. File Server Resource Manager doesn't include the ability to enforce SMB encryption."
+    - content: "fsutil"
+      isCorrect: false
+      explanation: "That's incorrect. The fsutil command line tool operates on the file system level and doesn't include the ability to enforce SMB encryption."

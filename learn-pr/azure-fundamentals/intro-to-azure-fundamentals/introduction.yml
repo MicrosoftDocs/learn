@@ -9,6 +9,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/introduction.md)]

@@ -43,9 +43,9 @@ For more information about Azure SQL Transparent Data Encryption (TDE) with Brin
 
 If you're interested in using Azure Key Vault for BYOK, see [Always Encrypted: Protect sensitive data and store encryption keys in Azure Key Vault](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault?tabs=azure-powershell&azure-portal=true). This tutorial uses Azure PowerShell.
 
-#### Advanced Data Security
+#### Managing security
 
-For more information about what's included in Advanced Data Security and how to get the most out of it, see:  
+For more information about some of the features discussed for managing security, see:  
 
 * [Data Discovery & Classification](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification?azure-portal=true)  
 * [Vulnerability Assessment](https://docs.microsoft.com/azure/sql-database/sql-vulnerability-assessment?azure-portal=true)  

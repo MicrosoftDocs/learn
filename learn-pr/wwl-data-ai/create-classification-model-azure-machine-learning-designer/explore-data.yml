@@ -3,8 +3,8 @@ uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.
 title: Explore data
 metadata:
   title: Explore data
-  description: "How do you know if a classification model is accurate? Learn how to evaluate classification performance in this unit."
-  ms.date: 11/05/2020
+  description: "Explore data"
+  ms.date: 01/21/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

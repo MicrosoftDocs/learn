@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-for-servers.4-simplify-management-maintenance-azure-arc-servers
+title: How can you simplify management and maintenance of Azure Arc enabled servers?
+metadata:
+  title: How can you simplify management and maintenance of Azure Arc enabled servers?
+  description: How can you simplify the management and maintenance of Azure Arc enabled servers?
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-simplify-management-maintenance-azure-arc-servers.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content:  "What is the simplest method to identify the operating system of an Azure Arc enabled server?"
+    choices:
+    - content: "Integrate the server with Azure Monitor and run a Log Analytics query."
+      isCorrect: false
+      explanation: "That's incorrect. While it is possible to identify the required information, this would require extra administrative effort."
+    - content: "Use Windows Admin Center to connect to each server."
+      isCorrect: false
+      explanation: "That's incorrect. While it is possible to identify the required information, this would require extra administrative effort."
+    - content: "Use the Azure Arc enabled servers blade in the Azure portal."
+      isCorrect: true
+      explanation: "That's correct. The blade allows the administrator to readily identify server name, OS version, OS build, manufacturer, model, serial number, the number of CPU cores, and the amount of memory."
+
+  - content: "What is the primary Azure Monitor-related benefit of Azure Arc enabled servers comparing with servers which are not Azure Arc enabled?"
+    choices:
+    - content: "The ability to capture diagnostic logs."
+      isCorrect: false
+      explanation: "That's incorrect. This functionality is available for both Azure Arc enabled servers and those which are not Azure Arc enabled."
+    - content: "The ability to generate alerts."
+      isCorrect: false
+      explanation: "That's incorrect. This functionality is available for both Azure Arc enabled servers and those which are not Azure Arc enabled."
+    - content: "The ability to deploy and configure the Log Analytics agent via VM extensions."
+      isCorrect: true
+      explanation: "That's correct. VM extensions are not available for non-Azure servers which are not Azure Arc enabled."
