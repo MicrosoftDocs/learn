@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ip-address-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which IPAM security group can manage IP address blocks and IP address inventory?"
+    choices:
+    - content: "IPAM ASM Administrator"
+      isCorrect: true
+      explanation: "That's correct. The IPAM ASM Administrator group can also perform this task."
+    - content: "IPAM DHCP Administrator"
+      isCorrect: false
+      explanation: "That's incorrect. This group can't perform this task."
+    - content: "IPAM MSM Administrator"
+      isCorrect: false
+      explanation: "That's incorrect. This group can't perform this task."
+  - content: "When securing IPAM, which of the following can be used to determine which objects an IPAM administrator has access to?"
+    choices:
+    - content: "IPAM roles"
+      isCorrect: false
+      explanation: "That's incorrect. A role is a collection of IPAM operations."
+    - content: "IPAM access scopes"
+      isCorrect: true
+      explanation: "That's correct. An access scope determines the objects to which an administrator has access."
+    - content: "IPAM access policies"
+      isCorrect: false
+      explanation: "That's incorrect. An access policy combines a role with an access scope to assign permissions to a user or group."
+  - content: "An administrator chooses to use GPO provisioning in IPAM. Three GPOs are created and linked to the AD DS domain object. What must the administrator do to prevent the GPOs from applying to all computer objects in the domain?"
+    choices:
+    - content: "Enable WMI filtering on the GPOs."
+      isCorrect: false
+      explanation: "That's incorrect. WMI filtering is not used to control the scope of the application of IPAM GPOs."
+    - content: "Link the GPOs to an OU that contains managed servers."
+      isCorrect: false
+      explanation: "That's incorrect. The administrator doesn't need to relink GPOs."
+    - content: "Enable security filtering on the GPOs."
+      isCorrect: true
+      explanation: "That's correct. Security filtering prevents the GPOs from applying to all servers. When you select a server for IPAM to manage, that server is added to the security filtering for the GPO."
