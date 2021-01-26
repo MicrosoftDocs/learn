@@ -10,7 +10,7 @@ The ‘sell through Microsoft’ selection you make in this step determines the 
 
 ### Configuring your offer properties
 
-:::image type="content" source="../media/8-offer-properties.png" alt-text="Screen shot of the technical configuration fields required to publish a transact offer.":::
+:::image type="content" source="../media/8-offer-properties.png" alt-text="Screen shot of the offer properties fields that are required to publish any SaaS offer to the commercial marketplace.":::
 
 When you get to the properties tab of the publishing process, you’ll be asked to define the categories and industries that will be used to index your offering in the commercial marketplace. You’ll select your choices from a pre-populated list of options.
 
