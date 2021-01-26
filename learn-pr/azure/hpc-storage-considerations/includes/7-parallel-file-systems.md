@@ -10,13 +10,13 @@ Please note that parallel file systems have historically been a full class of ca
 
 ## Distributed NAS(NFS) vs Parallel File Systems ##
 
-Both Distributed NAS and Parallel File Systems are shared file systems; files can be read by multiple clients concurrently, files can be written to, locked, metadata can be modified, etc.
+Both Distributed NAS and parallel file systems are shared file systems; files can be read by multiple clients concurrently, files can be written to, locked, metadata can be modified, etc.
 
 They can both be scaled by adding or upgrading storage hardware technologies, adding "front-end" servers to scale client access, or improving network connectivity.
 
 ### Parallel I/O ###
 
-Parallel File Systems break files up into discrete blocks or stripes and distributes them across multiple storage nodes. While there are distributed file systems that stripe data, the difference is that Parallel File Systems then expose stripe access directly to clients, via communication with the hosting storage servers themselves. This allows for significant parallel I/O over a standard distributed NAS system. NFS clients running with the most common scale-out NAS environments must access a file via a single server. This causes issues when the number of *concurrent requests* grow beyond what that server can handle.
+Parallel file systems break files up into discrete blocks or stripes and distributes them across multiple storage servers. While there are distributed file systems that stripe data, the difference is that parallel file systems then expose stripe access directly to clients, via communication with the hosting storage servers themselves. This allows for significant parallel I/O over a standard distributed NAS system. NFS clients running with the most common scale-out NAS environments must access a file via a single server. This causes issues when the number of *concurrent requests* grow beyond what that server can handle.
 
 Two major parallel file systems are IBM's GPFS (known as Spectrum Scale) and Lustre (which is open source with some commercial implementations). These systems achieve parallel I/O differently, with GPFS leveraging servers known as Network Storage Devices (NSDs) that connect to a high-performance Storage Area Network (SAN), which means GPFS servers have raw disk I/O as their backing storage.
 
@@ -24,7 +24,7 @@ In both cases however, parallel file systems can scale by adding more storage se
 
 #### Metadata ####
 
-NFS clients interface directly with an NFS server, which provides metadata information and retrieves data on behalf of the clients. The server component must be sized according to the quantity of clients and the anticipated rate of traffic, and can become a bottleneck. 
+NFS clients interface directly with an NFS server, which provides metadata information and retrieves data on behalf of the clients. The server component must be sized according to the quantity of clients and the anticipated rate of traffic, and can become a bottleneck. NAS vendors can implement some metadata optimizations, but most NFS implementations do not recognize a separate metadata service.
 
 Parallel file systems, by contrast, typically implement strategies to better scale client data access. Lustre, for example, implements a separate metadata server (MDS) and clients retrieve all metadata from that system. Further, Lustre clients are then able to directly access the storage server where a given file is located, able to read/write multiple parallel threads. This approach allows the architecture to scale bandwidth based on the number of deployed storage servers. By contrast, GPFS stores metadata along with data and each client has direct access to this via the NSDs.
 
