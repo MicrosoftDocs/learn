@@ -16,11 +16,11 @@ They can both be scaled by adding or upgrading storage hardware technologies, ad
 
 ### Parallel I/O ###
 
-Parallel file systems break files up into discrete blocks or stripes and distributes them across multiple storage servers. While there are distributed file systems that stripe data, the difference is that parallel file systems then expose stripe access directly to clients, via communication with the hosting storage servers themselves. This allows for significant parallel I/O over a standard distributed NAS system. NFS clients running with the most common scale-out NAS environments must access a file via a single server. This causes issues when the number of *concurrent requests* grow beyond what that server can handle.
+Parallel file systems break files up into discrete blocks or stripes and distributes them across multiple storage servers. While there are distributed file systems that stripe data, the difference is that parallel file systems then expose stripe access directly to clients, via communication with the hosting storage servers themselves. This allows for significant parallel I/O over a standard distributed NAS system. NFS clients running with the most common scale-out NAS environments must access a file via a single server. This causes issues when the number of *concurrent requests* grow beyond what that server can handle. Further, parallel file systems approach to parallel access and striping makes them a great fit for workloads where the need to is access very large files across large numbers of concurrent clients.
 
 Two major parallel file systems are IBM's GPFS (known as Spectrum Scale) and Lustre (which is open source with some commercial implementations). These systems achieve parallel I/O differently, with GPFS leveraging servers known as Network Storage Devices (NSDs) that connect to a high-performance Storage Area Network (SAN), which means GPFS servers have raw disk I/O as their backing storage.
 
-In both cases however, parallel file systems can scale by adding more storage servers, which in turn offer more parallel I/O to clients.
+In both cases however, parallel file systems can scale by adding more storage servers, which in turn offer more parallel I/O to clients. It also means that total client count can be significant, ranging into the tens of thousands.
 
 #### Metadata ####
 
@@ -28,17 +28,6 @@ NFS clients interface directly with an NFS server, which provides metadata infor
 
 Parallel file systems, by contrast, typically implement strategies to better scale client data access. Lustre, for example, implements a separate metadata server (MDS) and clients retrieve all metadata from that system. Further, Lustre clients are then able to directly access the storage server where a given file is located, able to read/write multiple parallel threads. This approach allows the architecture to scale bandwidth based on the number of deployed storage servers. By contrast, GPFS stores metadata along with data and each client has direct access to this via the NSDs.
 
+### Block Size ###
 
-
-
-    profiling tool
-    MPI
-    significantly higher bandwidth
-    parallel writing to same file
-    larger blocksizes stripe size in lustre
-    MPI workloads
-
-
-
-deployment considerations
-
+** Block Size ** was discussed earlier in the context of NFS. Parallel file system block sizes can be much larger than NFS. The default rsize/wsize for NFS clients is usually 64K; Lustre, as one example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. On the other hand, parallel file systems offer very little advantage when the file sizes are very small and the number those files is significantly high.
