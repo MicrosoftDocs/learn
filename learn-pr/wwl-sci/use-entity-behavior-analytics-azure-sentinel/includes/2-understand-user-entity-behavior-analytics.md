@@ -6,7 +6,7 @@ As Azure Sentinel collects logs and alerts from all of its connected data source
 
 ### Architecture overview
 
-![UEBA Architecture.](../media/euba-1.png)
+:::image type="content" source="../media/entity-behavior-1.png" alt-text="EUBA architecture":::
 
 ### Security-driven analytics
 
@@ -18,7 +18,7 @@ Inspired by Gartner’s paradigm for UEBA solutions, Azure Sentinel provides an 
 
 **Analytics:** Using various machine learning (ML) algorithms, Azure Sentinel identifies anomalous activities and presents evidence clearly and concisely in the form of contextual enrichments, some examples of which appear below.
 
-![Security Driven Analytics.](../media/euba-2.png)
+:::image type="content" source="../media/entity-behavior-2.png" alt-text="Security Driven Analytics":::
 
 Azure Sentinel presents artifacts that help your security analysts get a clear understanding of anomalous activities in context, and in comparison with the user's baseline profile. Actions performed by a user (or a host, or an address) are evaluated contextually, where a "true" outcome indicates an identified anomaly:
 
@@ -30,7 +30,7 @@ Azure Sentinel presents artifacts that help your security analysts get a clear u
 
 - as compared to organization's behavior.
 
-![UEBA Context.](../media/euba-3.png)
+:::image type="content" source="../media/entity-behavior-3.png" alt-text="EUBA Context image":::
 
 ### Scoring
 

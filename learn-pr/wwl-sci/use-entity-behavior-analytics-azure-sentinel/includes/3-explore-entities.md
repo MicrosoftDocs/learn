@@ -60,7 +60,7 @@ Entity pages consist of three parts:
 
 ### The timeline
 
-![UEBA Timeline](../media/euba-4.png)
+:::image type="content" source="../media/entity-behavior-4.png" alt-text="Entity Behavior timeline":::
 
 The timeline is a major part of the entity page's contribution to behavior analytics in Azure Sentinel. It presents a story about entity-related events, helping you understand the entity's activity within a specific time frame.
 
@@ -94,5 +94,4 @@ Entity insights are queries defined by Microsoft security researchers to help yo
 
 Entity pages are designed to be part of multiple usage scenarios, and can be accessed from incident management, the investigation graph, bookmarks, or directly from the entity search page under **Entity behavior analytics** in the Azure Sentinel main menu.
 
-![Entity Page](../media/euba-5.png)
-
+:::image type="content" source="../media/entity-behavior-5.png" alt-text="Entity Page":::
