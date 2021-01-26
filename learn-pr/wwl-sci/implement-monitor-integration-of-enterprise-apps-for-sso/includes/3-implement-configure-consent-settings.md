@@ -11,7 +11,7 @@ By allowing users to grant apps access to data, users can easily acquire useful 
 
 App consent policies describe conditions that must be met before an app can be consented to. These policies might include conditions on the app requesting access, as well as the permissions the app is requesting.
 
-By choosing which app consent policies apply for all users, you can set limits on when end-users are allowed to grant consent to apps and when they will be required to request administrator review and approval.
+By choosing which app consent policies apply for all users, you can set limits on when end users are allowed to grant consent to apps and when they will be required to request administrator review and approval.
 
 - **Disable user consent** – Users cannot grant permissions to applications. Users can continue to sign into apps they had previously consented to or that are consented to by administrators on their behalf, but they will not be allowed to consent to new permissions or to new apps on their own. Only users who have been granted a directory role that includes the permission to grant consent will be able to consent to new apps.
 
@@ -19,7 +19,7 @@ By choosing which app consent policies apply for all users, you can set limits o
 
 - **Users can consent to all** **apps** – This option allows all users to consent to any permission that does not require administrator consent for any application.
 
-- **Custom app consent policy** – For even more options over the conditions governing when users consent, you can [create custom app consent polic](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies)ies, and configure those to apply for user consent.
+- **Custom app consent policy** – For even more options over the conditions governing when users consent, you can [create custom app consent policies](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies) and configure those to apply for user consent.
 
 > [!div class="mx-imgBorder"]
 >![alt: "User consent settings"](../media/setting-for-all-users.png)
@@ -33,7 +33,7 @@ Risk-based step-up consent helps reduce user exposure to malicious apps that mak
 
 When a risky consent request is detected, the consent prompt will display a message indicating that admin approval is needed. If the admin consent request workflow is enabled, the user can send the request to an administrator for further review directly from the consent prompt. If it is not enabled, the following message will be displayed:
 
-- **AADSTS90094:** <clientAppDisplayName> needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
+- **AADSTS90094:** <clientAppDisplayName> needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
 
 In this case, an audit event will also be logged with a Category of **ApplicationManagement**, an Activity Type of **Consent to application**, and a Status Reason of **Risky application detected.**
 
