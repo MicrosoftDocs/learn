@@ -10,7 +10,7 @@ To view the connector page:
 
 1. Select the Choose where to install the agent option to expand the instructions.
 
-:::image type="content" source="../media/syslog-connector.png" alt-text="Syslog connector page.":::
+:::image type="content" source="../media/syslog-connector.png" alt-text="Syslog connector page." lightbox="../media/syslog-connector.png":::
 
 ## **For an Azure Linux VM:**
 
