@@ -33,7 +33,7 @@ products:
 - azure-app-service-web
 # - azure-application-insights
 #- azure-automation
-#- azure-cache-redis
+- azure-cache-redis
 - azure-clis
 - azure-cosmos-db
 - azure-database-mysql
@@ -48,6 +48,7 @@ modules:
 - learn.azure.deploy-java-spring-boot-app-service-mysql
 - learn.azure.build-webapp-java-tomcat
 - learn.azure-spring-cloud-workshop
+- learn.accelerate-scale-spring-boot-application-azure-cache-redis
 - learn.cosmos-db-java-app
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 - learn.develop-azure-functions-app-with-maven-plugin
