@@ -14,7 +14,7 @@ The following types of alerts are ingested:
 
 - User restricted from sending email
 
-:::image type="content" source="../media/office-365-advanced-threat-protection.png" alt-text="Microsoft Defender for Office 365 connector page.":::
+:::image type="content" source="../media/office-365-advanced-threat-protection.png" alt-text="Microsoft Defender for Office 365 connector page." lightbox="../media/office-365-advanced-threat-protection.png":::
 
 To view the connector page do the following steps:
 
