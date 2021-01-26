@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-automated-tests.integration-tests
+metadata:
+  title: Write integration tests
+  description: Learn about what integration tests are write some test examples.
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write integration tests
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-integration-tests.md)]

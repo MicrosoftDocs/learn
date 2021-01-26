@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-automated-tests.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Answer the following questions to demonstrate what you've learned:
+quiz:
+  questions:
+  - content: "What is the expected outcome of a test function tagged with the `#[test]` attribute?"
+    choices:
+    - content: "This function should not be executed during tests."
+      isCorrect: false
+      explanation: "Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, is not applied to this function."
+    - content: "This function should panic during tests."
+      isCorrect: false
+      explanation: "Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, is not applied to this function."
+    - content: "This function should execute a test without any panic."
+      isCorrect: true
+      explanation: "Correct. The function marked with this attribute will run without any panic."
+    - content: "This function indicates the function is a test."
+      isCorrect: false
+      explanation: "Incorrect. This statement does indicate a test, but the expected outcome is that the test should be executed."
+  - content: "What is the expected outcome of a test function tagged with the `#[test]` and `#[should_panic]` attributes?"
+    choices:
+    - content: "This function should panic during tests."
+      isCorrect: true
+      explanation: "Correct. The `$[should_panic]` attribute indicates a test should generate a panic."
+    - content: "This function should not be executed during tests."
+      isCorrect: false
+      explanation: "Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, is not applied to this function."
+    - content: "This function should execute without any panic."
+      isCorrect: false
+      explanation: "Incorrect. The `$[should_panic]` attribute indicates a test should generate a panic."
+  - content: "What is the expected outcome of a test function tagged with the `#[test]` and `#[ignore]` attributes?"
+    choices:
+    - content: "This function should not be executed during tests."
+      isCorrect: true
+      explanation: "Correct. The `#[ignore]` attribute disables a test function during test execution."
+    - content: "This function should panic during tests."
+      isCorrect: false
+      explanation: "Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, is not applied to this function."
+    - content: "This function should execute without any panic."
+      isCorrect: false
+      explanation: "Incorrect. This function is marked with The `#[ignore]` attribute, that disables a test function during test execution."         
