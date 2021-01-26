@@ -9,7 +9,8 @@ metadata:
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
+azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/5a-exercise-protect-monitor-tune-migrated-database.md)]
+interactive: bash
