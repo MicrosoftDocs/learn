@@ -94,7 +94,7 @@ Restoring the entire OneDrive for Business content can be useful if mass changes
 
 ## Recovery options for administrators
 
-1. When a document is not present in the recycle bin anymore, but still retained by a retention policy, Administrators can access the preservation hold library and recover it directly. To access the preservation hold library of a site collection, the appropriate site-collection administrator permissions are required.
+When a document is not present in the recycle bin anymore, but still retained by a retention policy, Administrators can access the preservation hold library and recover it directly. To access the preservation hold library of a site collection, the appropriate site-collection administrator permissions are required.
 
 Perform the following steps from the Office 365 portal, to access the preservation hold library of a SharePoint Online site collection:
 

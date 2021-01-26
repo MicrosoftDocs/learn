@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/18/2021
+  ms.date: 01/26/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Preservation Hold Libraries"
       isCorrect: false
-      explanation: "This is not correct. Prsservation Hold Ligraries are used in SharePoint Online to retain documents and files."
+      explanation: "This is not correct. Preservation Hold Libraries are used in SharePoint Online to retain documents and files."
     - content: "Litigation Hold"
       isCorrect: false
       explanation: "This is not correct. Litigation Hold is used to retain all items of a user mailbox and prevent deletion."
