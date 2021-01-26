@@ -38,3 +38,7 @@ Distributed file system solutions running NFS are easy to set up and run for com
 
 Parallel file systems typically operate against complex workloads in scale environments and are more likely to require configuration and tuning to ensure sufficient performance and scale.
 
+## Deployment Considerations ##
+
+Today, Azure offers several roll-your-own parallel file system offerings. You can go to the Azure Marketplace to see the options, which include BeeGFS, Lustre (search for Whamcloud). You can also install Lustre on standard Linux Virtual Machines, or you can use of the ARM templates found at our Azure Quickstart site: https://azure.microsoft.com/en-us/resources/templates/?term=lustre
+
