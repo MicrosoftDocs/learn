@@ -143,7 +143,7 @@ You will also need to define an objective function, which will minimize the time
 
 As you will see during the exploration of the cost function and its constituent penalty terms below, the overall cost function is quadratic (because the highest order polynomial term you have is squared). This makes this problem a **Quadratic Unconstrained Binary Optimization (QUBO)** problem, which is a specific subset of **Polynomial Unconstrained Binary Optimization (PUBO)** problems (which allow for higher-order polynomial terms than quadratic). Fortunately, the Azure Quantum Optimization service is set up to accept PUBO (and Ising) problems, which means you don't need to modify the above representation to fit the solver.
 
-As introduced above, the binary variables over which you are optimizing are the operation starting times $x_{i,t}$. Instead of using two separate indices as in the mathematical formulation, you will need to define a singly-indexed binary variable $x_{i \cdot T + t}$. Given time steps $t \in [0, T)$, every operation $i$ contributes $T$ indices. The operation starts at the value of $t$ for which $x_{i \cdot T + t}$ equals 1.
+As introduced above, the binary variables over which you are optimizing are the operation starting times $x_{i,t}$. Instead of using two separate indices as in the mathematical formulation, you will need to define a singly-indexed binary variable $x_{i \cdot T + t}$. Given time steps $t \in [0, T-1]$, every operation $i$ contributes $T$ indices. The operation starts at the value of $t$ for which $x_{i \cdot T + t}$ equals 1.
 
 In order to submit a problem to the Azure Quantum services, you will first be creating a `Problem` instance. This is a Python object that stores all the required information, such as the cost function details and what kind of problem we are modeling.
 
@@ -254,4 +254,4 @@ $$\alpha, \beta, \gamma \text{ and } \delta \text{ represent the different weigh
 
 The weights represent how important each penalty function is, relative to all the others. In the following units, you will learn how to build these penalty and objective functions, combine them to form the cost function $H(x)$, and solve the problem using Azure Quantum.
 
-In the following units, you will explore how to formulate each of these constraints mathematically, and how to translate them to code.
+To do this, you will explore how to formulate each of these constraints mathematically, and how to translate them to code.
