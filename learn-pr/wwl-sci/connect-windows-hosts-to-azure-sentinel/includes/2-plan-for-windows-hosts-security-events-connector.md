@@ -10,7 +10,7 @@ The Security Events connector lets you stream all security events from your Wind
 
 - None - No security or AppLocker events. (This setting is used to disable the connector.)
 
-:::image type="content" source="../media/security-events-connector.png" alt-text="Security Events Connector Page.":::
+:::image type="content" source="../media/security-events-connector.png" alt-text="Security Events Connector Page." lightbox="../media/security-events-connector.png":::
 
 ## Connect Azure Windows Virtual Machines
 
@@ -54,4 +54,4 @@ To view the connector page:
 
 1. Select **Update**.
 
-:::image type="content" source="../media/agent-download.png" alt-text="Log Analytics agent download.":::
+:::image type="content" source="../media/agent-download.png" alt-text="Log Analytics agent download." lightbox="../media/agent-download.png":::
