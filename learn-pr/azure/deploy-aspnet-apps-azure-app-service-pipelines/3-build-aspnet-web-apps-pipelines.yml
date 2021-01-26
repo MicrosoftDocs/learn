@@ -3,9 +3,9 @@ uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.3-build-aspnet-w
 title: Build data-driven ASP.NET web apps by using Azure Pipelines
 metadata:
   title: Build data-driven ASP.NET web apps by using Azure Pipelines
-  description: Content
-  ms.date: 12/11/2020
-  author: mpolicht
+  description: Step through the process of setting up an Azure pipeline that builds an ASP.NET website.
+  ms.date: 01/26/2021
+  author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

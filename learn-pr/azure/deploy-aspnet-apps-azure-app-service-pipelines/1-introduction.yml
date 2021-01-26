@@ -3,9 +3,9 @@ uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to deploying ASP.NET web apps with Azure Pipelines
-  ms.date: 12/11/2020
-  author: mpolicht
+  description: Review the scenario, learning objectives and prerequisites for this module.
+  ms.date: 01/26/2021
+  author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

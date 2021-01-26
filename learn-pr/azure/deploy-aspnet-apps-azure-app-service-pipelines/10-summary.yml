@@ -3,9 +3,9 @@ uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.10-summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 12/11/2020
-  author: mpolicht
+  description: Review what you've learned about automatically deploying ASP.NET web apps from GitHub using Azure Pipelines.
+  ms.date: 01/26/2021
+  author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

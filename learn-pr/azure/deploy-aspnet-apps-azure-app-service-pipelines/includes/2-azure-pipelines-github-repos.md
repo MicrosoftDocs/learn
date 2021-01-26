@@ -26,13 +26,13 @@ When authoring Azure Pipelines, you have a choice between using either the class
 
 - With the classic approach, you rely on the visual designer included in the Azure DevOps web-based portal to define a build pipeline that builds your code, tests it, and publishes resulting artifacts. You also use a similar, graphical interface to define a release pipeline that consumes and deploys these artifacts to deployment targets. Neither of these pipelines resides in the code repository, but instead, it's hosted by Azure Pipelines.
 
-> [!NOTE]
-> When using the visual designer, you have the option of displaying the corresponding YAML content.
+    > [!NOTE]
+    > When using the visual designer, you have the option of displaying the corresponding YAML content.
 
 - With the YAML-based approach, your pipeline takes the form of a YAML-formatted file, which, by default, resides in the same repository as the code used to build deployable artifacts. You can define the build and deployment within the same file. Since the pipeline is part of your code, you benefit from the version control functionality, allowing you to track pipeline changes and simplifying the identification of potential issues related to these changes.
 
-> [!NOTE]
-> When using YAML-based authoring, you have access to the task assistant, which simplifies generating the task-specific YAML content.
+    > [!NOTE]
+    > When using YAML-based authoring, you have access to the task assistant, which simplifies generating the task-specific YAML content.
 
 ## What are the basic structure and components of an Azure pipeline?
 

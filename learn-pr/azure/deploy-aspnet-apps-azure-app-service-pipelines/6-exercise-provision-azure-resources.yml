@@ -3,12 +3,12 @@ uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.6-ex-provision-a
 title: Exercise - Provision Azure resources for data-driven ASP.NET apps
 metadata:
   title: Exercise - Provision Azure resources for data-driven ASP.NET apps
-  description: Content
-  ms.date: 12/11/2020
-  author: mpolicht
+  description: Configure and run an Azure DevOps pipeline that implements Azure web and database resources.
+  ms.date: 01/26/2021
+  author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-ex-provision-azure-resources.md)]
+  [!include[](includes/6-exercise-provision-azure-resources.md)]
