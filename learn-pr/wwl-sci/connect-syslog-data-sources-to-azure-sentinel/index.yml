@@ -32,7 +32,7 @@ units:
 - learn.wwl.connect-syslog-data-sources-to-azure-sentinel.plan-for-syslog-connector
 - learn.wwl.connect-syslog-data-sources-to-azure-sentinel.collect-data-from-linux-based-sources-using-syslog
 - learn.wwl.connect-syslog-data-sources-to-azure-sentinel.configure-log-analytics-agent
-- learn.wwl.connect-syslog-data-sources-to-azure-sentinel.parse-with-kql
+- learn.wwl.connect-syslog-data-sources-to-azure-sentinel.parse-syslog-data
 - learn.wwl.connect-syslog-data-sources-to-azure-sentinel.knowledge-check
 - learn.wwl.connect-syslog-data-sources-to-azure-sentinel.summary-resources
 badge:
