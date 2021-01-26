@@ -16,7 +16,7 @@ The first time you enable the password hash synchronization feature, it performs
 When you install Azure AD Connect by using the **Express Settings** option, password hash synchronization is automatically enabled. If you use custom settings when you install Azure AD Connect, password hash synchronization is available on the user sign-in page.
 
 > [!div class="mx-imgBorder"]
-> ![Enabling password hash synchronization](../media/usersignin2.png)
+> ![Enabling password hash synchronization](../media/user-sign-in-2.png)
 
 ### Password hash synchronization and FIPS
 

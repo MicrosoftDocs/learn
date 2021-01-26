@@ -20,7 +20,7 @@ Now that you have reviewed this module, you should be able to:
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about implementing and managing federation (excluding manual AD FS deployments).|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more about implementing and managing federation (excluding manual AD FS deployments).|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/9ffdb7ee-07bf-45ba-adec-f1acf576bd65]
 

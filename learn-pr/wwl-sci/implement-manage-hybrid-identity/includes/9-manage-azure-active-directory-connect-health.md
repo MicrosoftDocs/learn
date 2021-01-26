@@ -5,7 +5,7 @@ This section describes various operations you can perform by using Azure Active 
 You can configure the Azure AD Connect Health service to send email notifications when alerts indicate that your identity infrastructure is not healthy. This occurs when an alert is generated, and when it is resolved.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health email notification settings](../media/email_noti_discover.png)
+> ![Screenshot of Azure AD Connect Health email notification settings.](../media/email-notifications-discover.png)
 
 > [!NOTE]
 > Email notifications are enabled by default.
@@ -57,7 +57,7 @@ Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azu
 1. On the **Server** blade, from the action bar, click **Delete**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health delete server](../media/deleteserver2.png)
+> ![Screenshot of Azure AD Connect Health delete server.](../media/delete-server-2.png)
 
 1. Confirm by typing the server name in the confirmation box.
 
@@ -96,7 +96,7 @@ When you're deleting a service instance, be aware of the following:
 1. On the **Service** blade, from the action bar, click **Delete**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health delete service](../media/deleteserver.png)
+> ![Screenshot of Azure AD Connect Health delete service.](../media/delete-server.png)
 
 1. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
 
@@ -141,19 +141,19 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 1. From the **Configure** section, click **Users**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health resource sidebar](../media/startrbac.png)
+> ![Screenshot of Azure AD Connect Health resource sidebar](../media/start-rbac.png)
 
 1. Select **Add**.
 
 1. In the **Select a role** pane, select a role (for example, **Owner**).
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/rbac_add.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/rbac-add.png)
 
 1. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/rbac_select_users.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/rbac-select-users.png)
 
 1. Select **OK**.
 
@@ -172,7 +172,7 @@ Now the listed users and groups have access, according to their assigned roles.
 1. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/rbac_pin_blade.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/rbac-pin-blade.png)
 
 > [!NOTE]
 > A user with the Reader role assigned is not able to get Azure AD Connect Health extension from the Azure Marketplace. The user cannot perform the necessary "create" operation to do so. The user can still get to the blade by going to the preceding link. For subsequent usage, the user can pin the blade to the dashboard.
@@ -182,13 +182,13 @@ Now the listed users and groups have access, according to their assigned roles.
 You can remove a user or a group added to Azure AD Connect Health and Azure RBAC. Simply right-click the user or group, and select **Remove**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted](../media/rbac_remove.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted](../media/rbac-remove.png)
 
 ## Demo: Azure AD Connect Health monitors on-premises AD Domain Services
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about using Azure AD Connect Health for monitoring.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more about using Azure AD Connect Health for monitoring.|
 > [!VIDEO https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-AD-Connect-Health-monitors-on-premises-AD-Domain-Services?format=ny]
 
 ## Diagnose and remediate duplicated attribute sync errors

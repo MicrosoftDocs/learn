@@ -2,7 +2,7 @@ Azure AD seamless single sign-on (Seamless SSO) automatically signs in users fro
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about basic aspects of PTA and Seamless SSO.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more about basic aspects of PTA and Seamless SSO.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mzo1]
 

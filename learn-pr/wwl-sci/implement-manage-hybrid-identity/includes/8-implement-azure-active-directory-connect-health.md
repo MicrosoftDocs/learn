@@ -3,7 +3,7 @@ Azure Active Directory (Azure AD) Connect Health provides robust monitoring of y
 The information is presented in the [Azure AD Connect Health portal](https://aka.ms/aadconnecthealth). Use the Azure AD Connect Health portal to view alerts, performance monitoring, usage analytics, and other information. Azure AD Connect Health enables the single lens of health for your key identity components in one place.
 
 > [!div class="mx-imgBorder"]
-> ![What is Azure AD Connect Health](../media/aadconnecthealth2.png)
+> ![What is Azure AD Connect Health.](../media/azure-active-directory-connect-health-2.png)
 
 Using the Azure AD Connect Health feature requires an Azure AD Premium P1 license. 
 

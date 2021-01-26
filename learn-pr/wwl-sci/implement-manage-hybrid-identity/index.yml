@@ -20,7 +20,8 @@ abstract: |
   - Manage federation excluding manual ADFS deployments
   - Troubleshoot synchronization errors
   - Implement and manage Azure Active Directory Connect Health
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
@@ -32,9 +33,9 @@ products:
 - azure-active-directory
 units:
 - learn.wwl.implement-manage-hybrid-identity.introduction
-- learn.wwl.implement-manage-hybrid-identity.plan-design-implement-azure-ad-connect-aadc
-- learn.wwl.implement-manage-hybrid-identity.password-hash-synchronization-phs
-- learn.wwl.implement-manage-hybrid-identity.pass-through-authentication-pta
+- learn.wwl.implement-manage-hybrid-identity.plan-design-implement-azure-active-directory-connect
+- learn.wwl.implement-manage-hybrid-identity.password-hash-synchronization
+- learn.wwl.implement-manage-hybrid-identity.pass-through-authentication
 - learn.wwl.implement-manage-hybrid-identity.demo-manage-pass-through-authentication-seamless-single-sign
 - learn.wwl.implement-manage-hybrid-identity.federation
 - learn.wwl.implement-manage-hybrid-identity.trouble-shoot-synchronization-errors
