@@ -141,19 +141,19 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 1. From the **Configure** section, click **Users**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health resource sidebar](../media/start-rbac.png)
+> ![Screenshot of Azure AD Connect Health resource sidebar](../media/start-role-based-access-control.png)
 
 1. Select **Add**.
 
 1. In the **Select a role** pane, select a role (for example, **Owner**).
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/rbac-add.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/role-based-access-control-add.png)
 
 1. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/rbac-select-users.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/role-based-access-control-select-users.png)
 
 1. Select **OK**.
 
@@ -172,7 +172,7 @@ Now the listed users and groups have access, according to their assigned roles.
 1. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/rbac-pin-blade.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/role-based-access-control-pin-blade.png)
 
 > [!NOTE]
 > A user with the Reader role assigned is not able to get Azure AD Connect Health extension from the Azure Marketplace. The user cannot perform the necessary "create" operation to do so. The user can still get to the blade by going to the preceding link. For subsequent usage, the user can pin the blade to the dashboard.
@@ -182,7 +182,7 @@ Now the listed users and groups have access, according to their assigned roles.
 You can remove a user or a group added to Azure AD Connect Health and Azure RBAC. Simply right-click the user or group, and select **Remove**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted](../media/rbac-remove.png)
+> ![Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted](../media/role-based-access-control-remove.png)
 
 ## Demo: Azure AD Connect Health monitors on-premises AD Domain Services
 
@@ -210,7 +210,7 @@ Taking one step farther to highlight sync errors, Azure Active Directory (Azure 
 When **QuarantinedAttributeValueMustBeUnique** and **AttributeValueMustBeUnique** sync errors happen, it's common to see a **UserPrincipalName** or **Proxy Addresses** conflict in Azure AD. You might solve the sync errors by updating the conflicting source object from the on-premises side. The sync error will be resolved after the next sync. For example, this image indicates that two users have a conflict of their **UserPrincipalName**. Both are **Joe.J@contoso.com**. The conflicting objects are quarantined in Azure AD.
 
 > [!div class="mx-imgBorder"]
-> ![Diagnose sync error common scenario](../media/iidfixcommoncase.png)
+> ![Diagnose sync error common scenario](../media/identity-fix-common-case.png)
 
 ### Orphaned object scenario
 
@@ -221,7 +221,7 @@ When an existing user is a cloud-only object, you can also see the conflicting u
 As an example, the existing object in Azure AD preserves the license of Joe. A newly synchronized object with a different **Source Anchor** occurs in a duplicated attribute state in Azure AD. Changes for Joe in on-premises Active Directory won't be applied to Joe’s original user (existing object) in Azure AD.
 
 > [!div class="mx-imgBorder"]
-> ![Diagnose sync error orphaned object scenario](../media/iidfixorphanedcase.png)
+> ![Diagnose sync error orphaned object scenario](../media/identity-fix-orphaned-case.png)
 
 ## Diagnostic and troubleshooting steps in Connect Health
 
@@ -240,7 +240,7 @@ The diagnose feature supports user objects with the following duplicated attribu
 Follow the steps from the Azure portal to narrow down the sync error details and provide more specific solutions:
 
 > [!div class="mx-imgBorder"]
-> ![Sync error diagnosis steps](../media/iidfixsteps.png)
+> ![Sync error diagnosis steps](../media/identity-fix-steps.png)
 
 From the Azure portal, take a few steps to identify specific fixable scenarios:
 
