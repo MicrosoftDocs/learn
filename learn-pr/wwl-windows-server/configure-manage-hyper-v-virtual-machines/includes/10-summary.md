@@ -4,7 +4,7 @@ Using the knowledge acquired in this module, you’ll have determined what featu
 
 You can learn more by reviewing the following documents:
 
-- [HyperV Technology Overview](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview?azure-portal=true)
+- [Hyper-V Technology Overview](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview?azure-portal=true)
 - [Supported virtual machine configuration versions](https://docs.microsoft.com/windows-server/virtualization/hyper-v/deploy/upgrade-virtual-machine-version-in-hyper-v-on-windows-or-windows-server#supported-virtual-machine-configuration-versions?azure-portal=true)
 - [Should I create a generation 1 or 2 virtual machine in Hyper-V?](https://docs.microsoft.com/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v?azure-portal=true)
 - [Manage Hyper-V on Windows Server](https://docs.microsoft.com/windows-server/virtualization/hyper-v/manage/manage-hyper-v-on-windows-server?azure-portal=true)
