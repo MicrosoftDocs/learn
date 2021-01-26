@@ -4,11 +4,11 @@ title: Get ready to create your SaaS offer
 metadata:
   title: Get ready to create your SaaS offer
   description: Overview of concepts and considerations that will help publishers plan for their commercial marketplace SaaS offer
-  ms.date: 01/22/2021
+  ms.date: 01/25/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/3-get-ready-create-saas-offer.md)]
