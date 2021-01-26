@@ -2,7 +2,8 @@ Let’s assume you’ve set up multiple virtual networks that use a combination 
 
 In a traditional model, you’d need to expose the Remote Desktop Protocol (RDP) and Secure Shell (SSH) ports to the internet. These protocols can be used to gain remote access to your VMs.  This process creates a significant surface threat that can be exploited by attackers.  
 
-:::image type="content" source="../media/2-azure-bastion.png" alt-text="Diagram showing how a user can make a remote desktop connection to an Azure VM using Azure Bastion.":::
+> [!div class="mx-imgBorder"]
+> ![Diagram showing how a user can make a remote desktop connection to an Azure VM using Azure Bastion.](../media/2-azure-bastion.png)
 
 Azure Bastion provides secure and seamless RDP/SSH connectivity to your virtual machines directly from the Azure portal using Transport Layer Security (TLS). When you connect via Azure Bastion, your virtual machines don't need a public IP address, agent, or special client software.
 

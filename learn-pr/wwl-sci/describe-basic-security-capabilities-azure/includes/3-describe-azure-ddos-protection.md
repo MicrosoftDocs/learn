@@ -14,7 +14,8 @@ The three most frequent types of DDoS attack are:
 
 The Azure DDoS Protection service is designed to help protect your applications and servers by analyzing network traffic and discarding anything that looks like a DDoS attack.  
 
-:::image type="content" source="../media/2-network-flow.png" alt-text="Diagram showing network flow into Azure from both customers and attackers, and how  Azure DDoS Protection filters out DDoS attacks.":::
+> [!div class="mx-imgBorder"]
+> ![Diagram showing network flow into Azure from both customers and attackers, and how  Azure DDoS Protection filters out DDoS attacks.](../media/2-network-flow.png)
 
 In the diagram above, Azure DDoS Protection identifies an attacker's attempt to overwhelm the network. It blocks traffic from the attacker, ensuring that it doesn't reach Azure resources. Legitimate traffic from customers still flows into Azure without any interruption of service.
 
