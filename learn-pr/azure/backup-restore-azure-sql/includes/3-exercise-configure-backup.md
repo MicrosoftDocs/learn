@@ -8,7 +8,7 @@ Here, you'll create a database in Azure and then configure backups. You'll set t
 
 Let's use the Azure CLI to create a SQL Database server and a database.
 
-1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Database server. 
+1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Database server.
 
     ```powershell
     $serverName = "erpserver-$(Get-Random)"
@@ -16,10 +16,10 @@ Let's use the Azure CLI to create a SQL Database server and a database.
     $sqlAdmin = Get-Credential -credential dbadmin
 
     ```
-   This step creates a server name with a random number at the end to ensure that it's globally unique. We'll refer to the server name as `erpserver-NNNN` through the exercises, but replace this with the name of your server that's generated here. 
-   
-   This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials that you'll use to access the database server. When you're prompted, enter a complex password of your choice. 
 
+   This step creates a server name with a random number at the end to ensure that it's globally unique. We'll refer to the server name as `erpserver-NNNN` through the exercises, but replace this with the name of your server that's generated here.
+
+   This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials that you'll use to access the database server. When you're prompted, enter a complex password of your choice. 
 
 1. Run the `New-AzSqlServer` command to create a SQL Database server to store the database.
 
@@ -64,7 +64,7 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 1. At the top of the page, select **Add client IP**.
 
-1. Under **Allow access to Azure services**, select **ON**.
+1. Under **Allow Azure services and resources to access this server**, select **Yes**.
 
     ![Screenshot of Add a client IP address rule with a callout highlighting Allow access to Azure services option and the Save button.](../media/3-add-client-ip.png)
 
@@ -74,9 +74,9 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 Now let's add a table and a sample record to the database. It's helpful to have some data in the database to validate that our backups and restores work later in the module.
 
-1. In the **Settings** section, select **SQL databases**, and then select **sql-erp-database**.
+1. In the **Settings** section, select **SQL databases**, and then select **sql-erp-db**.
 
-1. Select **Query editor**, and then sign in with the **dbadmin** credentials and the password that you specified for this account.
+1. In the left nav bar, select **Query editor (preview)**, and then sign in with the **dbadmin** credentials and the password that you specified for this account.
 
 1. To create a table, in the **Query 1** window, enter this SQL command, and then select **Run**.
 

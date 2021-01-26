@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/18/2021
+  ms.date: 01/26/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You’re the Azure admin, and you want to increase the priority of a network security group, what five sources of information will you need to provide?"
+  - content: "The security admin wants to increase the priority of a network security group, what five sources of information will the admin need to provide?"
     choices:
     - content: "source, source port, destination, destination port, and network layer."
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "source, source port, destination, destination port, and target resource."
       isCorrect: false
       explanation: "That's incorrect. NSG security rules do not use the target resource as one of the five evaluation points."
-  - content: "You have an ever-growing list of resources in Azure. You want to protect your Azure resources from DDoS attacks, which Azure DDoS Protection tier will you use to target Azure Virtual Network resources?"
+  - content: "The security admin wants to protect Azure resources from DDoS attacks, which Azure DDoS Protection tier will the admin use to target Azure Virtual Network resources?"
     choices:
     - content: "Basic."
       isCorrect: false
@@ -38,14 +38,14 @@ quiz:
     - content: "Advanced."
       isCorrect: false
       explanation: "That's incorrect. Azure DDoS Protection is available in only two tiers. Advanced is not a valid tier."
-  - content: "You have several virtual machines in Azure. You want to deploy Azure Bastion to get secure access to your virtual machines in Azure. What limitation should you keep in mind?"
+  - content: "An organization has several virtual machines in Azure. The security admin wants to deploy Azure Bastion to get secure access to those VMs. What limitation should the admin keep in mind?"
     choices:
     - content: "Azure Bastion is deployed per virtual network."
       isCorrect: true
       explanation: "That's correct. Azure Bastion deployment is per virtual network, not per subscription/account or virtual machine."
     - content: "Azure Bastion is deployed per subscription."
       isCorrect: false
-      explanation: "That's incorrect. Azure Bastion deployment is not limited by subscription/account."
+      explanation: "That's incorrect. Azure Bastion deployment isn't limited by subscription/account."
     - content: "Azure Bastion is deployed per virtual machine."
       isCorrect: false
-      explanation: "That's incorrect. Azure Bastion deployment is not limited by virtual machine."
+      explanation: "That's incorrect. Azure Bastion deployment isn't limited by virtual machine."
