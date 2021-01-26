@@ -284,6 +284,146 @@ public class EmailServiceImpl implements EmailService {
 
 ```
 
+Additionally, we add the below **Thymeleaf** templates for the email body. These are placed under the `src/main/resources/emailTemplates` folder in the `spring-petclinic-communications-service` application.
+
+> [!NOTE]
+> Be sure to replace the <REPLACE_WITH_YOUR_API_GATEWAY_URL> with the URL specific to the API gateway for your microservices.
+>
+
+***OwnerCreatedEmailTemplates.html***
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p th:text="'Hi ' + ${recipientName} + ','"></p>
+    
+    Welcome to PetClinic!
+    
+    
+    You can perform the below operations
+    <ul>
+    <li><a th:href="@{'https://<REPLACE_WITH_YOUR_API_GATEWAY_URL>.azuremicroservices.io/#!/owners/details/' + ${ownerid}}" > View your profile </a> </li>
+    <li><a th:href="@{'https://<REPLACE_WITH_YOUR_API_GATEWAY_URL>.azuremicroservices.io/#!/owners/' + ${ownerid} + '/edit'}" > Edit your profile </a> </li>
+    <li><a th:href="@{'https://<REPLACE_WITH_YOUR_API_GATEWAY_URL>.azuremicroservices.io/#!/owners/' + ${ownerid} + '/new-pet'}" > Add a new pet </a> </li>
+    
+    <li><a th:href="@{https://<REPLACE_WITH_YOUR_API_GATEWAY_URL>.azuremicroservices.io/#!/vets}" > View the vets </a> </li>
+    
+    
+    
+    </ul>
+     <p>
+      Regards, <br />
+      <em>The PetClinic Team</em>
+    </p>
+  </body>
+</html>
+```
+
+***VisitRecordEmailTemplates.html***
+
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+        <p>Dear Pet Owner!</p>
+        
+        <p th:text="'Here is a summary of your recent visit on ' + ${date} + '!'"></p>
+        
+        <p th:text="${description}"></p>
+        <p>
+          Regards, <br />
+      <em>The PetClinic Team</em>
+    </p>
+  </body>
+</html>
+```
+
 ## Receive from Queues
 
+Now that we have the mechanism to send emails sorted out, we can proceed to receive from the Queues and proceed to send these emails.
+
+We do this by creating a JmsListener on the queue **CreatedOwner** (to which we sent messages from the `spring-petclinic-customers-service` in the previous section). Once a message lands on the queue, we retrieve it, parse the customer information and send an email to the customer.
+
+We start this by creating a new package `org.springframework.samples.petclinic.communication.listeners` under `org.springframework.samples.petclinic.communication`.
+
+We then create a `OwnerCreatedQueueListener` class and place the below code in the file.
+
+```java
+package org.springframework.samples.petclinic.communication.listeners;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.samples.petclinic.communication.email.EmailService;
+import org.springframework.stereotype.Component;
+
+@Component
+public class OwnerCreatedQueueListener {
+    
+    private static final String QUEUE_NAME = "CreatedOwner";
+    
+    @Autowired
+    private EmailService emailService;
+
+  
+    @JmsListener(destination = QUEUE_NAME, containerFactory = "jmsListenerContainerFactory")
+    public void receiveMessage(String ownerString) throws IOException, InterruptedException {
+        
+        // remove the header information
+        String refinedOwnerString = ownerString.substring(ownerString.indexOf("{"));
+        TimeUnit.SECONDS.sleep(1);
+        emailService.sendOwnerWelcomeEmail(refinedOwnerString);
+        
+    }
+    
+}
+
+```
+
 ## Receive from Topics
+
+Just like we received from the Queues, we can setup subscriptions on Topics and receive and process messages from those as well.
+
+In the below example, we will create a subscription on the topic **visitRecordTopic** (to which we sent messages from the `spring-petclinic-visits-service` in the previous section) by setting up a `JmsListener` on it. When the messages are sent by the `spring-petclinic-visits-service` to the **visitRecordTopic**, the jmslistener we define here will receive the message and send the email to the customer regarding their recent visit.
+
+To achieve this, we need to create a `VisitRecordTopicListener` class and place the below code in the file.
+
+```java
+package org.springframework.samples.petclinic.communication.listeners;
+
+import java.io.IOException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.samples.petclinic.communication.email.EmailService;
+import org.springframework.stereotype.Component;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Component
+public class VisitRecordTopicListener {
+
+    private static final String TOPIC_NAME = "visitRecordTopic";
+
+    @Autowired
+    private EmailService emailService;
+
+    @JmsListener(destination = TOPIC_NAME, subscription = "visitRecordSubscriber", containerFactory = "topicJmsListenerContainerFactory")
+    public void receiveMessage(String visitRecordString) throws IOException {
+        // remove the header information
+        String refinedVisitRecordString = visitRecordString.substring(visitRecordString.indexOf("{"));
+        
+        emailService.sendVisitRecordEmail(refinedVisitRecordString);
+    }
+}
+```
