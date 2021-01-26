@@ -76,10 +76,10 @@ quiz:
     choices:
     - content: "As an error"
       isCorrect: true
-      explanation: "Incorrect."
+      explanation: "Correct."
     - content: "As a warning"
       isCorrect: false
-      explanation: "Correct."
+      explanation: "Incorrect."
     - content: "As a tip"
       isCorrect: false
       explanation: "Incorrect."

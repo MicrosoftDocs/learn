@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
+metadata:
+  title: Connect data to Azure Sentinel using data connectors
+  description: "Connect data to Azure Sentinel using data connectors"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect data to Azure Sentinel using data connectors
+summary: The primary approach to connect log data is using the Azure Sentinel provided data connectors.  This module provides an overview of the available data connectors.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain the use of data connectors in Azure Sentinel
+  - Describe the Azure Sentinel data connector providers
+  - Explain the Common Event Format and Syslog connector differences in Azure Sentinel
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-sentinel
+units:
+- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.introduction
+- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.ingest-log-data
+- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.understand-data-connector-providers
+- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.view-connected-hosts
+- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.knowledge-check
+- learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.summary-resources
+badge:
+  uid: learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.badge

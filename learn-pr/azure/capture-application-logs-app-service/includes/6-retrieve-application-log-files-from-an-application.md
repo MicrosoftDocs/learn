@@ -8,20 +8,20 @@ The Azure infrastructure used to run Windows Web apps is not the same as that fo
 
 For Windows apps, file system log files are stored in a virtual drive that is associated with your Web app. This drive is addressable as **D:\Home**, and includes a **LogFiles** folder; within this folder are one or more subfolders:
 
-- **Application** - contains application-generated messages, if **File System** application logging has been enabled.
-- **DetailedErrors** - contains detailed Web server error logs, if **Detailed error messages have been enabled.
-- **http** - contains IIS-level logs, if **Web server logging** has been enabled.
-- **W3SVC\<_number_\>** - contains details of all failed http requests, if **Failed request tracing** has been enabled.
+- **Application** - Contains application-generated messages, if **File System** application logging has been enabled.
+- **DetailedErrors** - Contains detailed Web server error logs, if **Detailed** error messages have been enabled.
+- **http** - Contains IIS-level logs, if **Web server logging** has been enabled.
+- **W3SVC\<_number_\>** - Contains details of all failed http requests, if **Failed request tracing** has been enabled.
 
-Where storage to a Blob container has been enabled, logs are stored in year, month, date, and hour folders; for example:
+Where storage to a Blob container has been enabled, logs are stored in year, month, date, and hour folders, for example:
 
-```
-2019
- 01
-  10
-   08 - log entries for the period 08:00:00 to 08:59:59 on January 10th 2019
-   09 - log entries for the period 09:00:00 to 09:59:59 on January 10th 2019
-```
+   ```
+   2019
+     01
+      10
+       08 - log entries for the period 08:00:00 to 08:59:59 on January 10th 2019
+       09 - log entries for the period 09:00:00 to 09:59:59 on January 10th 2019
+   ```
 
 Within the hour folder, there will be one or more CSV files containing messages saved within that 60-minute period.
 
@@ -43,8 +43,8 @@ To download file system log files using the Azure CLI, first copy the log files 
 
 To download the zipped log files to your local computer, ready for opening in Microsoft Excel, or other apps, use the file download and upload tool on the Azure Cloud Shell toolbar. 
 
-> [!NOTE]
-> The Azure CLI download includes all app logs, except for failed request traces.
+   > [!NOTE]
+   > The Azure CLI download includes all app logs, except for failed request traces.
 
 ### Kudu
 
@@ -58,22 +58,20 @@ To download the log files from Windows apps:
 
 1. Select **Debug Console**, and then select **CMD**.
 
-     :::image type="content" source="../media/6-kudu-windows-logs-cmd.png" alt-text="Screenshot of Kudu's environment page with a callout highlighting the Debug Console cmd menu option." loc-scope="third-party"::: <!-- KUdo service, no-loc -->
+   :::image type="content" source="../media/6-kudu-windows-logs-cmd.png" alt-text="Screenshot of Kudu's environment page with a callout highlighting the Debug Console cmd menu option." loc-scope="third-party"::: <!-- KUdo service, no-loc -->
 
-1. Then, in the file explorer section, select **LogFiles**, and for the **Application** folder, select **Download**; the logs will be downloaded to your computer as **Application.zip**.
+1. In the file explorer section, select **LogFiles**, and for the **Application** folder, select **Download**; the logs will be downloaded to your computer as **Application.zip**.
 
    :::image type="content" source="../media/6-kudu-windows-logs-download.png" alt-text="Screenshot of Kudu's user interface displaying file and folder listing with a highlight next to the download icon for the Application folder." loc-scope="third-party"::: <!-- "Kudo service, no-loc -->
 
-For Linux apps, click the download link on the **Environment** page.
+   For Linux apps, select the download link on the **Environment** page.
 
-  ![Screenshot of Kudu's user environment page with a callout highlighting the link to download a zip file containing the current Docker logs.](../media/6-kudu-linux-logs.png)
-
+   ![Screenshot of Kudu's user environment page with a callout highlighting the link to download a zip file containing the current Docker logs.](../media/6-kudu-linux-logs.png)
 
 ### Azure Storage Explorer
+
 To access Windows logs saved to an Azure Blob Storage container, you can use the Azure portal; to view and download the contents of the log file container, select **Storage Explorer**. Open the relevant year, month, date, and hour folder, then double-click a CSV file to download it to your computer.
 
-
-![Screenshot of the Storage Explorer to download Windows app logs from blob containers.](../media/6-blob-logs.png)
-
+   ![Screenshot of the Storage Explorer to download Windows app logs from blob containers.](../media/6-blob-logs.png)
 
 If you have Microsoft Excel on your computer, the log file will automatically open as a worksheet; otherwise, you can open the file using a text editor such as Notepad.

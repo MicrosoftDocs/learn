@@ -42,7 +42,7 @@ az aks create \
 
 There are Docker containers ready for you to use in the Microsoft Container Registry. Each container provides a subset of Cognitive Services functionality. For example, not all features of the Text Analytics service are in a single container. Language detection, translation, and sentiment analysis are each separate container images. However, the setup steps are similar for each container.
 
-For the Text Analytics service, each of the 3 core features maps to a separate image:
+For the Text Analytics service, each of the three core features maps to a separate image:
 
 | Feature | Image |
 |---|---|
@@ -83,9 +83,9 @@ When configuring containers for Cognitive Services, you start with the images th
 
 ### Create a container image
 
-You create a Dockerfile to define a custom container image with your settings built-in. This file references the parent image in the FROM statement and then applies additional settings based on environment variables. The path you will use points to the language detection image in the Microsoft Container Registry. The ARG statements will let you pass in values during the build step. The steps would be similar for other Cognitive Services images.
+You create a Dockerfile to define a custom container image with your settings built in. This file references the parent image in the FROM statement, and then applies additional settings based on environment variables. The path you'll use points to the language detection image in the Microsoft Container Registry. The ARG statements will let you pass in values during the build step. The steps would be similar for other Cognitive Services images.
 
-Let’s build a docker image for language detection:
+Let’s build a docker image for language detection.
 
 1. Copy and paste the following text into a file named Dockerfile.
 
@@ -98,7 +98,7 @@ Let’s build a docker image for language detection:
     ENV eula=accept
     ```
 
-1. Set two environment variables, replacing <subscription_key> and <service-name> with your own values. You will use these each time you build your image.
+1. Set two environment variables, replacing '<subscription_key>' and '<service\-name>' with your own values. You'll use these each time you build your image.
 
     ```
     export COGNITIVE_SERVICE_KEY=<subscription_key>
@@ -108,7 +108,7 @@ Let’s build a docker image for language detection:
 1. Build the image from the Dockerfile, using the image name cog-svc-language which is used in the next section.
 
     ```bash
-    docker build --build-arg key=$COGNITIVE_SERVICE_KEY --build-arg billing_endpoint=$COGNITIVE_SERVICE_ENDPOINT -t cog-svc-language
+    docker build --build-arg key=$COGNITIVE_SERVICE_KEY --build-arg billing_endpoint=$COGNITIVE_SERVICE_ENDPOINT -t cog-svc-language .
     ```
 
     The output from the build statement will show the steps completed and end with success messages.
@@ -130,7 +130,7 @@ Now you can run a container using this image on your local machine. The docker r
 
 1. Open your browser and navigate to http://0.0.0.0:5000/swagger.
 
-1. Select **Post** on one of the V3 endpoints, then choose **Try it out**.
+1. Select **Post** on one of the V3 endpoints, and then select **Try it out**.
 
     :::image type="content" source="../media/03-container-reuse-swagger.png" alt-text="Screenshot of swagger UI with Post button and Try it Out highlighted.":::
 

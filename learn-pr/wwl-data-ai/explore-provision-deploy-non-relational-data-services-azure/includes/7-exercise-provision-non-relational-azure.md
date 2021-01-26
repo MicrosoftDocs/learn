@@ -187,7 +187,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     Contoso will use this container to hold product images.
 
     > [!NOTE]
-    > The container created for Data Lake Storage will also appear in the **Containers** page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images seperate from product quality data. 
+    > The container created for Data Lake Storage will also appear in the **Containers** page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images separate from product quality data. 
 
 ### Create a file share
 

@@ -18,7 +18,7 @@ Using your Metamask account, connect to the Ropsten test network. You can get so
 1. Connect to Ropsten.
 1. Copy the address of your account to the clipboard.
 
-    :::image type="content" source="../media/metamask-0-eth-connect.png" alt-text="Screenshot showing the Metamask browser extension to copy the account address.":::
+    :::image type="content" source="../media/metamask-0-ether-connect.png" alt-text="Screenshot showing the Metamask browser extension to copy the account address.":::
 
 1. Open a browser window or tab, and go to [https://faucet.ropsten.be/](https://faucet.ropsten.be/).
 1. Request Ether by entering your testnet account address and selecting the button **Send me test Ether**.

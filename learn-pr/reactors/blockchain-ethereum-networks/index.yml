@@ -27,7 +27,7 @@ prerequisites: |
   - Truffle and Ganache CLI installed
   - Visual Studio Code installed
   - Blockchain Development Kit for Ethereum installed
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/reactors/blockchain-ethereum-networks.svg
 levels:
 - beginner
 roles:

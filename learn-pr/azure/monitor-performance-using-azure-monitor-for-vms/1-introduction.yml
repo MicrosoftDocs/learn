@@ -2,7 +2,7 @@
 uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.introduction
 title: Introduction
 metadata:
-  description: 'Introduction to Monitor performance of virtual machines by using Azure Monitor for VMs'
+  description: 'Introduction to monitoring the performance of virtual machines by using Azure Monitor for VMs'
   title: Introduction
   author: sbkuehn
   ms.author: shkuehn

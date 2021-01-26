@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: 'Select categories and industries that are widely popular with customers, even if they do not apply to my product or service.'
       isCorrect: false
-      explanation: 'Make sure that the categories and industries you choose to describe your product are accurate. Customers often filter by category and industry when they browse Microsoft AppSource and Azure Marketplace, and you want to make sure they can find your solution easily.'
+      explanation: 'Make sure that the categories and industries you choose to describe your product are accurate. Customers often filter by category and industry when they browse Microsoft AppSource and Azure Marketplace, so you want to make sure they can find your solution easily.'
     - content: 'Write a new offer description centered on the value that my product or service provides to customers.'
       isCorrect: true
       explanation: 'Correct! Your offer description is a great opportunity to entice customers to learn more about your product or service. Your description should give customers an idea of the value they can get from using your product or service.'
     - content: 'Change the name of my offer to something more fun and eye-catching.'
       isCorrect: false
-      explanation: 'Your offer name should be based on the value your product drives for customers. You offer name should capture attention because it speaks to the issue your target customers are trying to solve.'
+      explanation: 'Your offer name should be based on the value your product drives for customers. Your offer name should capture attention because it speaks to the issue your target customers are trying to solve.'
     - content: 'Disable my free software trial or test drive so customers will need to contact me for a product demonstration.'
       isCorrect: false
       explanation: 'Free trials and test drives help you engage customers in the commercial marketplace. Customers often filter filter for applications that offer trials and test drives so they can test solutions at their own pace.'

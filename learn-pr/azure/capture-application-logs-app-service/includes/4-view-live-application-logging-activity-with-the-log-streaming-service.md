@@ -17,14 +17,8 @@ The live log stream connects to only one app instance, so is not useful if you h
 To enable live log streaming from the command line, run **Azure CLI** or **curl** commands.
 
 ### Azure CLI
-Use the following steps to open the Azure CLI:
 
-1.	From the Home page, navigate to Azure.
-1.	Select **App Services**.
-1.	Select contosofashions<your-number>.
-1.	Scroll down to Development tools, and select **Console**.
-
-To open the log stream using Azure CLI, run the following command.
+To open the log stream, run the following command.
 
 ```
 az webapp log tail --name <app name> --resource-group <resource group name>
@@ -58,4 +52,4 @@ After you have created a set of credentials, to open the log stream, run the fol
 curl -u {username} https://{sitename}.scm.azurewebsites.net/api/logstream
 ```
 
-To close the log stream session, press Ctrl +C t.
+To close the log stream session, press Ctrl +C.

@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-manage-application-state.3-exercise-create-resources
 metadata:
-  title: Host a new database by using Azure Cosmos DB
+  title: Exercise - Host a new database by using Azure Cosmos DB
   description: Host a new database by using Azure Cosmos DB, and create a new AKS cluster to save your API changes to the database
   ms.date: 10/31/2020
   author: khaosdoctor

@@ -56,7 +56,7 @@ In addition, your **code of conduct** is an important policy to express. The sta
 
 ### Preparing employees to maintain a repository
 
-Employees may not have experience working with the open-source community. To help them prepare, it is recommended that the company offer a set of guides the cover the key things everyone should know before they get started. These guides should be posted to an internal repository or portal that is only accessible to company employees and regularly maintained. A few of the most important guides are listed below.
+Employees may not have experience working with the open-source community. To help them prepare, it is recommended that the company offer a set of guides that cover the key things everyone should know before they get started. These guides should be posted to an internal repository or portal that is only accessible to company employees and regularly maintained. A few of the most important guides are listed below.
 
 - A **"Should we open-source this project?" guide** that provides a framework for deciding whether or not a candidate project should be open-sourced. This guide could be structured as a flowchart, set of questions, or list of considerations.
 

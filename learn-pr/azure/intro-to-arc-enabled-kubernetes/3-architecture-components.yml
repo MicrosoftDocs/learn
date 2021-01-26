@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.3-architecture-components
+metadata:
+  title: What are the architecture, components, and characteristics of Azure Arc Enabled Kubernetes?
+  description: In this unit you'll learn about the architecture of Azure Arc enabled Kubernetes and its benefits.
+  ms.date: 12/14/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What are the architecture, components, and characteristics of Azure Arc Enabled Kubernetes?
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-architecture-components.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which namespace hosts the Azure Arc enabled Kubernetes agents"
+    choices:
+    - content: "azure-arc"
+      isCorrect: true
+      explanation: "Azure Arc enabled Kubernetes agents run in the azure-arc namespace"
+    - content: "default"
+      isCorrect: false
+      explanation: "This namespace is used by application workloads"
+    - content: "kube-system"
+      isCorrect: false
+      explanation: "This namespace is used by core system workloads"
+    - content: "kube-public"
+      isCorrect: false
+      explanation: "This namespace is meant by shared application workloads"
+  - content: "Which of the following is NOT an advantage of Azure Arc enabled Kubernetes?"
+    choices:
+    - content: "GitOps-based configuration and workload management"
+      isCorrect: false
+      explanation: "GitOps-based configuration and workload management is the benefit of Azure Arc enabled Kubernetes"
+    - content: "Use of Azure Policy for Kubernetes"
+      isCorrect: false
+      explanation: "Azure Policy-based runtime policies is the benefit of Azure Arc enabled Kubernetes"
+    - content: "Use of Azure Monitor for Containers"
+      isCorrect: false
+      explanation: "Azure Monitor for Containers is a benefit provided by Azure Resource Manager"
+    - content: "Managing cluster creation"
+      isCorrect: true
+      explanation: "Azure Arc enabled Kubernetes does not provide the ability to manage cluster creation"
