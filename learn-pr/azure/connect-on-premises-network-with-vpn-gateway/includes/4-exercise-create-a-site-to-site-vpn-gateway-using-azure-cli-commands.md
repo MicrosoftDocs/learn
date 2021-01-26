@@ -21,8 +21,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-Azure-VNet-1 \
-        --public-ip-address PIP-VNG-Azure-VNet-1 \
-        --subnet-name GatewaySubnet \
+        --subnet-name GatewaySubnet 
     ```
 
 1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway.
@@ -59,7 +58,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-HQ-Network \
         --public-ip-address PIP-VNG-HQ-Network \
-        --subnet-name GatewaySubnet \
+        --subnet-name GatewaySubnet 
     ```
 
 1. Run these commands in Cloud Shell to create the **VNG-HQ-Network** virtual network gateway.
