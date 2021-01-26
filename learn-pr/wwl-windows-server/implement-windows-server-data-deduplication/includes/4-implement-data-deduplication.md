@@ -4,7 +4,7 @@ When you've identified volumes suitable for Data Deduplication, you can proceed 
 
 After completing your planning, use the following steps to deploy Data Deduplication to a server in your environment:
 
-1. Install Data Deduplication Windows Serer role service by using Windows Admin Center, Server Manager, or the **Add-WindowsFeature** Windows PowerShell cmdlet with the **-Name FS-Data-Deduplication** parameter.
+1. Install Data Deduplication Windows Server role service by using Windows Admin Center, Server Manager, or the **Add-WindowsFeature** Windows PowerShell cmdlet with the **-Name FS-Data-Deduplication** parameter.
 1. Enable Data Deduplication by using Windows Admin Center, Server Manager, or the ```Enable-DedupVolume``` Windows PowerShell cmdlet with the ```–Volume *VolumeLetter* –UsageType *StorageType*``` parameters. The ```StorageType``` placeholder represents the primary type of workload for the volume. The supported values include:
 
 - Hyper-V. A volume hosting Hyper-V storage.
