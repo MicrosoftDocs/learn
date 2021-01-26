@@ -37,7 +37,7 @@ Azure AD roles are used to manage Azure AD resources in a directory such as crea
 In the Azure portal, you can see the list of Azure AD roles on the **Roles and administrators** blade. 
 
 > [!div class="mx-imgBorder"]
-> ![Some of the Azure AD roles on the Roles and administrators blade in the Azure portal](../media/directory-admin-roles.png)
+> ![Some of the Azure AD roles on the Roles and administrators blade in the Azure portal.](../media/directory-admin-roles.png)
 
 ## Differences between Azure roles and Azure AD roles
 
@@ -57,7 +57,7 @@ By default, Azure roles and Azure AD roles do not span Azure and Azure AD. Howev
 Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Administrator and User Administrator roles. For example, if you are a member of the Global Administrator role, you have global administrator capabilities in Azure AD and Microsoft 365, such as making changes to Microsoft Exchange and Microsoft SharePoint. However, by default, the Global Administrator doesn't have access to Azure resources.
 
 > [!div class="mx-imgBorder"]
-> ![Azure roles and Azure AD roles](../media/azure-office-roles.png)
+> ![Azure roles and Azure AD roles.](../media/azure-office-roles.png)
 
 ## Assign roles
 
@@ -67,7 +67,7 @@ A common way to assign Azure AD roles to a user is on the Assigned roles page fo
 > If you have an Azure AD Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
 > [!div class="mx-imgBorder"]
-> ![Azure AD roles managed in PIM for users who already use PIM and have a Premium P2 license](../media/pim-manages-roles-for-p2.png)
+> ![Azure AD roles managed in PIM for users who already use PIM and have a Premium P2 license.](../media/privileged-identity-management-manages-roles-for-p2.png)
 
 ## Create and assign a custom role in Azure Active Directory
 
@@ -82,19 +82,19 @@ Custom roles can be created in the [Roles and administrators](https://portal.azu
 1. Select **Azure Active Directory** > **Roles and administrators** > **New custom role**.
 
 > [!div class="mx-imgBorder"]
-> ![Create or edit roles from the Roles and administrators page](../media/new-custom-role.png)
+> ![Create or edit roles from the Roles and administrators page.](../media/new-custom-role.png)
 
 1. On the **Basics** tab, provide a name and description for the role and then click **Next**.
 
 > [!div class="mx-imgBorder"]
-> ![provide a name and description for a custom role on the Basics tab](../media/basics-tab.png)
+> ![provide a name and description for a custom role on the Basics tab.](../media/basics-tab.png)
 
 1. On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
 
    1. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update `permission.
 
 > [!div class="mx-imgBorder"]
-> ![Select the permissions for a custom role on the Permissions tab](../media/permissions-tab.png)
+> ![Select the permissions for a custom role on the Permissions tab.](../media/permissions-tab.png)
 
    1. Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update `permission, and then click **Next**.
 
@@ -113,7 +113,7 @@ Like built-in roles, custom roles are assigned by default at the default organiz
 1. Select the app registration to which you are granting access to manage. You might have to select **All applications** to see the complete list of app registrations in your Azure AD organization.
 
 > [!div class="mx-imgBorder"]
-> ![Select the app registration as a resource scope for a role assignment](../media/appreg-all-apps.png)
+> ![Select the app registration as a resource scope for a role assignment.](../media/app-registration-all-apps.png)
 
 1. In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the [preceding procedure](https://docs.microsoft.com/azure/active-directory/roles/custom-create).
 

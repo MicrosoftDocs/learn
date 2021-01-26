@@ -26,7 +26,7 @@ The goal of Azure AD registered devices is to provide your users with support fo
 | Key capabilities| <ul><li>SSO to cloud resources</li> <li>Conditional Access when enrolled into Intune</li> <li>Conditional Access via App protection policy</li> <li>Enables Phone sign in with Microsoft Authenticator app</li></ul>|
 
 > [!div class="mx-imgBorder"]
-> ![Azure AD registered devices](../media/azure-ad-registered-device.png)
+> ![Azure AD registered devices.](../media/azure-active-directory-registered-device.png)
 
 Azure AD registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have an Azure AD account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Azure AD account and Conditional Access policies applied to the device identity.
 
@@ -90,7 +90,7 @@ The goal of Azure AD joined devices is to simplify:
 - Users to sign in to their devices with their Azure AD or synced Active Directory work or school accounts.
 
 > [!div class="mx-imgBorder"]
-> ![Azure AD joined devices](../media/azure-ad-joined-device.png)
+> ![Azure AD joined devices.](../media/azure-active-directory-joined-device.png)
 
 Azure AD Join can be deployed by using a number of different methods. The following  subsection focuses on the self-service experience method.
 
@@ -115,19 +115,19 @@ In addition, if your tenant is federated, your Identity provider MUST support WS
 1. Start by customizing your region and language. Then review and accept the Microsoft Software License Terms.
 
 > [!div class="mx-imgBorder"]
-> ![Customize for your region](../media/01.png)
+> ![Customize for your region.](../media/01.png)
 
 1. Select the network you want to use for connecting to the Internet.
 
 1. Click **This device belongs to my organization**.
 
 > [!div class="mx-imgBorder"]
-> ![Who owns this PC screen](../media/02.png)
+> ![Who owns this PC screen.](../media/02.png)
 
 1. Enter the credentials that were provided to you by your organization, and then click **Sign in**.
 
 > [!div class="mx-imgBorder"]
-> ![Sign-in screen](../media/03.png)
+> ![Sign-in screen.](../media/03.png)
 
 1. Your device locates a matching tenant in Azure AD. If you are in a federated domain, you are redirected to your on-premises Secure Token Service (STS) server, for example, Active Directory Federation Services (AD FS).
 
@@ -150,7 +150,7 @@ In addition, if your tenant is federated, your Identity provider MUST support WS
 To verify whether a device is joined to your Azure AD, review the **Access work or school** dialog on your Windows device. The dialog should indicate that you are connected to your Azure AD directory.
 
 > [!div class="mx-imgBorder"]
-> ![Access work or school screen](../media/13.png)
+> ![Access work or school screen.](../media/13.png)
 
 ## Hybrid Azure AD joined devices
 
@@ -176,7 +176,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 | Key capabilities| <ul><li>SSO to both cloud and on-premises resources</li> <li>Conditional Access through Domain join or through Intune if co-managed</li> <li>Self-service Password Reset and Windows Hello PIN reset on lock screen</li> <li>Enterprise State Roaming across devices</li></ul>|
 
 > [!div class="mx-imgBorder"]
-> ![Hybrid Azure AD joined devices](../media/azure-ad-hybrid-joined-device.png)
+> ![Hybrid Azure AD joined devices.](../media/azure-active-directory-hybrid-joined-device.png)
 
 ### Scenarios
 

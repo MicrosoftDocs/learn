@@ -6,7 +6,7 @@
 1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
 
 > [!div class="mx-imgBorder"]
-> ![Azure portal menu with Azure Active Directory selected](../media/azure-portal-menu-aad.png)
+> ![Azure portal menu with Azure Active Directory selected.](../media/azure-portal-menu-azure-active-directory.png)
 
 1. In the left navigation, in the Manage section, select **Properties**.
 
@@ -30,7 +30,7 @@ Just as the Country or region are found in the Azure Active Directory Properties
 1. In the **Properties** blade, under **Tenant properties**, locate **Location** and review the information.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image showing the Azure Active Directory Properties blade with the Country or region and Location settings highlighted](../media/azure-active-directory-properties-country-location.png)
+> ![Screen image showing the Azure Active Directory Properties blade with the Country or region and Location settings highlighted.](../media/azure-active-directory-properties-country-location.png)
 
 ### Finding the tenant ID
 
@@ -41,7 +41,7 @@ Azure subscriptions have a trust relationship with Azure Active Directory (Azure
 1. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted](../media/portal-tenant-id.png)
+> ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted.](../media/portal-tenant-id.png)
 
 ### Changing the Technical contact and adding your privacy info on Azure AD, including Global privacy contact and Privacy statement URL
 
@@ -55,7 +55,7 @@ You add your organization's privacy information in the **Properties** area of Az
 1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted](../media/properties-area.png)
+> ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted.](../media/properties-area.png)
 
 1. Add your privacy info for your employees:
 
@@ -69,7 +69,7 @@ You add your organization's privacy information in the **Properties** area of Az
 > If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, <your org name> has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
 
 > [!div class="mx-imgBorder"]
-> ![B2B Collaboration Review permissions box with message](../media/active-directory-no-privacy-statement-or-contact.png)
+> ![B2B Collaboration Review permissions box with message.](../media/active-directory-no-privacy-statement-or-contact.png)
 
 1. Select **Save**.
 

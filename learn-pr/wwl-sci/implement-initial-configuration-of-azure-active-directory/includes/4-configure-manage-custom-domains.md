@@ -11,14 +11,14 @@ When your organization is created, the initial domain name, such as ‘contoso.o
 1. Select **Custom domain names**.
 
 > [!div class="mx-imgBorder"]
-> ![Opening the user management page](../media/add-custom-domain.png)
+> ![Opening the user management page.](../media/add-custom-domain.png)
 
 1. Select the name of the domain that you want to be the primary domain.
 
 1. Select the **Make primary** command. Confirm your choice when prompted.
 
 > [!div class="mx-imgBorder"]
-> ![Make a domain name the primary](../media/make-primary-domain.png)
+> ![Make a domain name the primary.](../media/make-primary-domain.png)
 
 You can change the primary domain name for your organization to be any verified custom domain that isn't federated. Changing the primary domain for your organization won't change the user name for any existing users.
 
@@ -103,12 +103,12 @@ After you create your directory, you can add your custom domain name.
 1. Search for and select *Azure Active Directory* from any page. Then select **Custom domain names** > **Add custom domain**.
 
 > [!div class="mx-imgBorder"]
-> ![Custom domain names page, with Add custom domain shown](../media/add-custom-domain-name.png)
+> ![Custom domain names page, with Add custom domain shown.](../media/add-custom-domain-name.png)
 
 1. In **Custom domain name**, enter your organization's new name, in this example, *contoso.com*. Select **Add domain**.
 
 > [!div class="mx-imgBorder"]
-> ![Custom domain names page, with Add custom domain page](../media/add-custom-domain-blade.png)
+> ![Custom domain names page, with Add custom domain page.](../media/add-custom-domain-blade.png)
 
 > [!IMPORTANT]
 > You must include .com, .net, or any other top-level extension for this to work properly.
@@ -116,7 +116,7 @@ After you create your directory, you can add your custom domain name.
 The unverified domain is added. The contoso.com page appears showing your DNS information. Save this information; you will need it later to create a TXT record to configure DNS.
 
 > [!div class="mx-imgBorder"]
-> ![Contoso page with DNS entry information](../media/contoso-blade-with-dns-info.png)
+> ![Contoso page with DNS entry information.](../media/contoso-blade-with-dns-information.png)
 
 ### Add your DNS information to the domain registrar
 
@@ -140,12 +140,12 @@ To verify your custom domain name, follow these steps:
 1. In **Custom domain names**, select the custom domain name. In this example, select **contoso.com**.
 
 > [!div class="mx-imgBorder"]
-> ![Fabrikam - Custom domain names page, with contoso highlighted](../media/custom-blade-with-contoso-highlighted.png)
+> ![Fabrikam - Custom domain names page, with contoso highlighted.](../media/custom-blade-with-contoso-highlighted.png)
 
 1. On the **contoso.com** page, select **Verify** to make sure your custom domain is properly registered and is valid for Azure AD.
 
 > [!div class="mx-imgBorder"]
-> ![Contoso page with DNS entry information and the Verify button](../media/contoso-blade-with-dns-info-verify.png)
+> ![Contoso page with DNS entry information and the Verify button.](../media/contoso-blade-with-dns-information-verify.png)
 
 After you've verified your custom domain name, you can delete your verification TXT or MX file.
 
