@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which solution is used to control the applications that must earn trust to be run?"
+    choices:
+    - content: "Exploit protection"
+      isCorrect: false
+      explanation: "Incorrect. Application control is used for trust."
+    - content: "Controlled folder access"
+      isCorrect: false
+      explanation: "Incorrect. Application control is used for trust."
+    - content: "Application control"
+      isCorrect: true
+      explanation: "Correct. Application control is used for trust."
+  - content: "Which option below is an attack surface reduction rule that can be configured?"
+    choices:
+    - content: "Block PowerShell from executing"
+      isCorrect: false
+      explanation: "Incorrect.  PowerShell execution can't be blocked with an attack surface reduction rule."
+    - content: "Block process creations originating from PSExec and WMI commands"
+      isCorrect: true
+      explanation: "Correct.  This option is an attack surface reduction rule that can be configured."
+    - content: "Block content from mobile devices"
+      isCorrect: false
+      explanation: "Incorrect.  This option is not an attack surface reduction rule that can be configured."
+  - content: "Which of the following is a deployment option?"
+    choices:
+    - content: "PowerShell"
+      isCorrect: true
+      explanation: "Correct. This is a valid deployment option."
+    - content: "ASRConfig.exe"
+      isCorrect: false
+      explanation: "Incorrect.  This is not a valid option."
+    - content: "Microsoft Deployment System"
+      isCorrect: false
+      explanation: "Incorrect. This is not a valid deployment option."
