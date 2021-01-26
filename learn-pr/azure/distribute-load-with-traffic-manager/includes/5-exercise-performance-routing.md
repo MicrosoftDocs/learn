@@ -13,7 +13,7 @@ Your network architect would like to ensure customers have the best performance.
         --output table
     ```
 
-1. Create two new endpoints that that point to the public IP addresses of the virutal machines.
+1. Create two new endpoints that point to the public IP addresses of the virtual machines.
 
     ```azurecli
     WestId=$(az network public-ip show \

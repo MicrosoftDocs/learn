@@ -24,6 +24,5 @@ Speaking of build, the service actually does the build step for you so there's n
 
 Currently your code sits in a directory on your machine, so you'll need to do a few things to deploy Azure:
 
-1. **Initialize a Git repository**: Right now, your Gatsby project is in a directory that hasn't been initialized as a Git repository.
-2. **Create a GitHub repository and push to it**:  Once you initialize your repository, you'll push it to GitHub.
-3. **Create an Azure Static Web Apps instance**: When you use the Azure portal to create an Azure Static Web Apps instance, you'll provide the URL to your GitHub repository and the name for the sub directory where the static files live in your project. In Gatsby's case, this directory is called `public/`.
+1. **Create a GitHub repository and push to it**: Gatsby creates a Git repo for you, which will need to be pushed to GitHub.
+2. **Create an Azure Static Web Apps instance**: When you use the Azure portal to create an Azure Static Web Apps instance, you'll provide the URL to your GitHub repository and the name for the sub directory where the static files live in your project. In Gatsby's case, this directory is called `public/`.

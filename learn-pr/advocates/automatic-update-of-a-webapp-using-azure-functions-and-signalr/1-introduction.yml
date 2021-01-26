@@ -3,7 +3,7 @@ uid: learn.advocates.azure-functions-and-signalr.1-introduction
 metadata:
   title: Introduction
   description: Learn to update an application to implement automatic updates that are nearly instantaneous.
-  ms.date: 05/31/19
+  ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial

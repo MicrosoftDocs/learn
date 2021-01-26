@@ -2,6 +2,8 @@ In your first week on your new job, you've looked through the existing resources
 
 [!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
 
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-Resource-Manager/player?format=ny]
+
 ## What are resource groups?
 
 Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription like virtual machines, Application Gateways, and CosmosDB instances. All resources must be in a resource group and a resource can only be a member of a single resource group. Many resources can be moved between resource groups with some services having specific limitations or requirements to move. Resource groups can't be nested. Before any resource can be provisioned, you need a resource group for it to be placed in.

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.introduction-python-nasa
+metadata:
+  title: Introduction to Python for space exploration
+  description: Get an introduction to the types of space exploration problems that Python and data science can influence.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Python for space exploration
+summary: Get an introduction to the types of space exploration problems that Python and data science can influence.
+abstract: |
+  In this module, you will learn:
+  - What a programming language is
+  - How to install Visual Studio Code and the benefits of this code editor
+  - How to install extensions to enhance the Visual Studio Code experience
+  - How to install Python and why it is such a popular programming language
+  - How to run a basic Jupyter Notebook within Visual Studio Code
+prerequisites: |
+  - A Windows, Mac, or Linux computer
+  - Knowledge of how to download programs from the Internet
+iconUrl: /learn/achievements/student-evangelism/introduction-python-nasa.svg
+levels: 
+- beginner
+roles: 
+- student
+products: 
+- azure
+units:
+- learn.student-evangelism.introduction-python-nasa.1-introduction
+- learn.student-evangelism.introduction-python-nasa.2-artemis
+- learn.student-evangelism.introduction-python-nasa.3-artemis-continuation
+- learn.student-evangelism.introduction-python-nasa.4-nasa-stem
+- learn.student-evangelism.introduction-python-nasa.5-nasa-inspiration
+- learn.student-evangelism.introduction-python-nasa.6-why-coding
+- learn.student-evangelism.introduction-python-nasa.6a-knowledge-check
+- learn.student-evangelism.introduction-python-nasa.7-summary
+badge:
+  uid: learn.student-evangelism.introduction-python-nasa.badge

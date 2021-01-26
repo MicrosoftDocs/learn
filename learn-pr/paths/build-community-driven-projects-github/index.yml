@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.build-community-driven-projects-github
+metadata:
+  title: Build community-driven software projects on GitHub
+  description: Learn how GitHub enables you to build communities that foster communication and collaboration while reinforcing recommended guidelines, codes of conduct, and security best practices.
+  brand: github
+  ms.date: 07/02/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+title: Build community-driven software projects on GitHub
+summary: |
+  Whether you manage enterprise or open-source software projects, learn how GitHub enables you to build communities that foster communication and collaboration while reinforcing recommended guidelines, codes of conduct, and security best practices.
+
+  In this learning path, you'll learn how to:
+
+  - Build community involvement for both proprietary and open-source projects.
+  - Choose whether your idea is a good candidate for an open-source project.
+  - Move an existing project to GitHub from your personal computer or from a legacy version control system.
+  - Keep your GitHub repository secure.
+  - Contribute to an open-source project.
+prerequisites: |
+ - A [GitHub](https://github.com?azure-portal=true) account
+iconUrl: /learn/achievements/github/build-community-driven-projects-github.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- developer
+- solution-architect
+products:
+- github
+modules:
+- learn.github.introduction-to-github
+- learn.github.manage-innersource-program-github
+- learn.github.create-open-source-program-github
+- learn.github.upload-project-github
+- learn.github.migrate-repository-github
+- learn.github.maintain-secure-repository-github
+- learn.github.contribute-opensource
+trophy:
+  uid: learn.build-community-driven-projects-github.trophy

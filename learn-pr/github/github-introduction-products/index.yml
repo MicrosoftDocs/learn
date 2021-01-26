@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.github.github-introduction-products
+metadata:
+  title: Introduction to GitHub's Products
+  description: Overview GitHub's products, associated features, and licensing of per-use and metered features.
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to GitHub's Products
+summary: Overview GitHub's products, associated features, and licensing of per-use and metered features.
+abstract: |
+  After completing this module, you will be able to:
+  - Explain the difference between each GitHub product, and which features are available with each product.
+  - Make key distinctions between plans, account types, teams, repository permissions, organization permission levels, and so on.
+  - Describe licensing terms for GitHub Actions, GitHub Packages, and Codespaces.
+prerequisites: |
+  - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
+  - A high-level familiarity with GitHub's product plans and features would be helpful, but not required
+ratingEnabled: true
+iconUrl: /learn/achievements/github-introduction-products.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+- technology-manager
+products:
+- github
+units:
+- learn.github.github-introduction-products.introduction
+- learn.github.github-introduction-products.what-are-github-products
+- learn.github.github-introduction-products.how-licensing-works
+- learn.github.github-introduction-products.knowledge-check
+- learn.github.github-introduction-products.summary
+
+badge:
+  uid: learn.github.github-introduction-products.badge

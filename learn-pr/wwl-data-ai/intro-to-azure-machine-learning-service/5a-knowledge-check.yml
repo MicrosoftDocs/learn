@@ -3,8 +3,8 @@ uid: learn.data-ai.intro-to-azure-machine-learning-service.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge"
-  ms.date: 06/25/2020
+  description: "Knowledge check"
+  ms.date: 12/04/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "Which of the following descriptions accurately describes Azure Machine Learning?"
     choices:
-    - content: "A Python library that you can use as an alternative to common machine learning frameworks like Scikit-Learn, PyTorch, and Tensorflow"
+    - content: "A Python library that you can use as an alternative to common machine learning frameworks like Scikit-Learn, PyTorch, and Tensorflow."
       isCorrect: false
       explanation: "This is incorrect. Azure Machine Learning enables you to manage machine learning model data preparation, training, validation, and deployment. It supports existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
     - content: "A cloud-based platform for operating machine learning solutions at scale."
@@ -24,14 +24,6 @@ quiz:
     - content: "An application for Microsoft Windows that enables you to create machine learning models by using a drag and drop interface."
       isCorrect: false
       explanation: "This is incorrect. Azure Machine Learning enables you to manage machine learning model data preparation, training, validation, and deployment. It supports existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
-  - content: "Which edition of Azure Machine Learning workspace should you provision if you only plan to use the graphical Designer tool to train machine learning models?"
-    choices:
-    - content: "Basic"
-      isCorrect: false
-      explanation: "That is incorrect. The visual Designer tool is not available in Basic edition workspaces, so you must create an Enterprise workspace to use it."
-    - content: "Enterprise"
-      isCorrect: true
-      explanation: "That is correct. The visual Designer tool is not available in Basic edition workspaces, so you must create an Enterprise workspace to use it."
   - content: "You are using the Azure Machine Learning Python SDK to write code for an experiment. You must log metrics from each run of the experiment, and be able to retrieve them easily from each run. What should you do?"
     choices:
     - content: "Add print statements to the experiment code to print the metrics."
@@ -40,6 +32,6 @@ quiz:
     - content: "Save the experiment data in the outputs folder."
       isCorrect: false
       explanation: "That is incorrect. To record metrics in an experiment run, use the Run.log* methods."
-    - content: "Use the log* methods of the Run class to record named metrics."
+    - content: "Use the log\\* methods of the Run class to record named metrics."
       isCorrect: true
-      explanation: "That is correct. To record metrics in an experiment run, use the Run.log* methods."
+      explanation: "That is correct. To record metrics in an experiment run, use the Run.log\\* methods."

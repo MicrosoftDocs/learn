@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-related-maintenance-tasks-sql-server.maintain-indexes
+title: Maintain indexes
+metadata:
+  title: Maintain indexes
+  description: "Maintain indexes"
+  ms.date: 12/10/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-maintain-indexes.md)]

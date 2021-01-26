@@ -11,15 +11,16 @@ Before we go further, let's briefly define cloud computing.
      :::image type="icon" border="false" source="../media/2-cloud-computing.png":::
   :::column-end:::
     :::column span="3":::
+
 **What is cloud computing?**
 
-Cloud computing is the delivery of computing services over the Internet using a **pay-as-you-go** pricing model. Put another way; it's a way to rent compute power and storage from someone else's data center.
+Cloud computing is the delivery of computing services over the Internet using a **pay-as-you-go** pricing model. Put another way, renting computing power and storage from someone else's data center.
 
 Instead of maintaining CPUs and storage in your data center, you rent them for the time that you need them. The cloud provider takes care of maintaining the underlying infrastructure for you.
 
-You can treat cloud resources like you would your resources in your own data center. When you're done using them, you give them back. You're billed only for what you use.
+You can treat cloud resources like you would your resources in your own data center. When done using them, you give them back. You're billed only for what you use.
 
-While this approach is great, the real value of the cloud is that it enables you to quickly solve your toughest business challenges and bring cutting edge solutions to your users.
+This approach provides the real value of the cloud because it enables you to quickly solve your toughest business challenges and bring cutting edge solutions to your users.
 
   :::column-end:::
 :::row-end:::
@@ -28,6 +29,7 @@ While this approach is great, the real value of the cloud is that it enables you
      :::image type="icon" border="false" source="../media/2-why-cloud.png":::
   :::column-end:::
     :::column span="3":::
+
 **Why should I move to the cloud?**
 
 The cloud helps you move faster and innovate in ways that were once nearly impossible.
@@ -56,6 +58,7 @@ Let's see how Azure fits in with cloud computing.
      :::image type="icon" border="false" source="../media/2-azure.png":::
   :::column-end:::
     :::column span="3":::
+
 **What can I do on Azure?**
 
 Azure provides over 100 services that enable you to do everything from running your existing applications on virtual machines to exploring new software paradigms such as intelligent bots and mixed reality.

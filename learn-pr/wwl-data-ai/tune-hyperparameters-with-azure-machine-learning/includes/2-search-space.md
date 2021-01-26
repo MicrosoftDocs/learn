@@ -2,7 +2,7 @@ The set of hyperparameter values tried during hyperparameter tuning is known as 
 
 ## Discrete hyperparameters
 
-Some hyperparameters require *discrete* values - in other words, you must select the value from a particular set of possibilities. You can define a search space for a discrete parameter using a **choice** from a list of explicit values, which you can define as a Python **list** (`choice([10,20,30])`), a **range** (`choice(range(1,10)])`), or an arbitrary set of comma-separated values (`choice(30,50,100)`)
+Some hyperparameters require *discrete* values - in other words, you must select the value from a particular set of possibilities. You can define a search space for a discrete parameter using a **choice** from a list of explicit values, which you can define as a Python **list** (`choice([10,20,30])`), a **range** (`choice(range(1,10))`), or an arbitrary set of comma-separated values (`choice(30,50,100)`)
 
 You can also select discrete values from any of the following discrete distributions:
 

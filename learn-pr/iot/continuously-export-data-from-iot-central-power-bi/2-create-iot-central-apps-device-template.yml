@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.create-iot-central-apps-device-template
 metadata:
-  description: Download the source code and capability model. Import the capability model into the IoT Central app. Then, create a rich dashboard to visualize a real device, and create the real device itself.
+  description: In this unit, you download the source code and capability model, import the model into the IoT Central app, create a rich dashboard to visualize a real device, and then create the device itself.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.upload-project-github.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What kind of files are best stored in GitHub?"
+    choices:
+    - content: "Large binary files, like videos."
+      isCorrect: false
+      explanation: "It is not recommended that you use GitHub for the version control of large binary files. However, there are companion solutions like **git-lfs** that offer a better solution."
+    - content: "Binary project files, like spreadsheets and presentations."
+      isCorrect: false
+      explanation: "It is not recommended that you use GitHub for the version control of binary files like spreadsheets and presentations. You are better off using portal software that supports specialized versioning of these kinds of files."
+    - content: "Text files, like source code."
+      isCorrect: true
+      explanation: "GitHub is ideal for the version control of text files."
+  - content: "Why is a `.gitignore` file important to your repository?"
+    choices:
+    - content: "It defines which users are not allowed to participate in your repository discussions and pull requests."
+      isCorrect: false
+      explanation: "Project authorization is managed through **Manage Access** under the **Security** tab of your repository."
+    - content: "It helps you enforce policy around which files are not to be tracked by version control."
+      isCorrect: true
+      explanation: "It specifically defines which files and directories should be excluded from version control. This is useful for keeping sensitive data, build output, and other files out of your repository."
+    - content: "It's just a token file required by GitHub to make sure you're following the migration instructions closely. If you ignore it, your repository migration will fail."
+      isCorrect: false
+      explanation: "`.gitignore` is an optional file that helps you manage which files are ignored by version control."
+  - content: "Which of the following is **not** a valid way to upload new project files to GitHub?"
+    choices:
+    - content: "Email a password protected zip of your project to GitHub support along with instructions for the repository's creation. Be sure to include the zip password in the same email."
+      isCorrect: true
+      explanation: "This is not yet a supported option."
+    - content: "Use the `git` client or other Git-friendly tool."
+      isCorrect: false
+      explanation: "This is a great option that will help you build experience for future updates."
+    - content: "Use the browser interface at github.com."
+      isCorrect: false
+      explanation: "This is a good option for an initial import, but may become inconvenient over time. The `git` client or other Git-friendly tool is recommended."

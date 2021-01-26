@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-arc.6-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What must an administrator do to register Windows Server with Azure Arc?"
+    choices:
+    - content: "Install the Log Analytics agent on the server for onboarding."
+      isCorrect: false
+      explanation: "That's incorrect. This is an optional step."
+    - content: "Install Helm 3 on the server for onboarding."
+      isCorrect: false
+      explanation: "That's incorrect. This step is required for onboarding Kubernetes clusters."
+    - content: "The administrator must install the Azure Connected Machine agent on the server for onboarding."
+      isCorrect: true
+      explanation: "That's correct. The Azure Connected Machine agent enables you to manage both Windows and Linux computers that you host on-premises or with another cloud provider."
+
+
+  - content: "Which of the following Azure services must an organization implement to manage and evaluate compliance of its on-premises Windows Server computers?"
+    choices:
+    - content: "Azure Policy."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Policy can be used only with on-premises servers that are onboarded to Azure Arc."
+    - content: "Azure Arc."
+      isCorrect: true
+      explanation: "That's correct. Azure Arc provides a centralized, unified, and self-service approach to managing on-premises Windows Server computers."
+    - content: "Azure Monitor."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Monitor enables administrators to monitor their resources, such as onboarded servers."
+
+
+  - content: "Which of the following can an administrator use Azure Policy for when auditing Azure Arc resources?"
+    choices:
+    - content: "Configuring the time zone on the Windows operating system."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Policy can help audit the time zone configuration, but can't change it."
+    - content: "Validating settings such as configuration of the operating system, applications, and environment settings."
+      isCorrect: true
+      explanation: "That's correct. You can use Azure Policy with Azure Arc resources to perform this function."
+    - content: "Restricting access to Log Analytics data based on the permissions to the corresponding Azure resource."
+      isCorrect: false
+      explanation: "That's incorrect. This is a function of RBAC permissions in Azure Arc."
+
+  
+  - content: "Which Windows Server extension could an administrator use through Azure Arc to enable Azure Monitor Insights on servers?"
+    choices:
+    - content: "CustomScriptExtension."
+      isCorrect: false
+      explanation: "That's incorrect. This extension downloads and runs scripts on servers."
+    - content: "Log Analytics agent."
+      isCorrect: false
+      explanation: "That's incorrect. This extension installs the Log Analytics agent on servers and enrolls the servers into an existing Log Analytics workspace."
+    - content: "Microsoft Dependency Agent."
+      isCorrect: true
+      explanation: "That's correct. This extension installs the Dependency Agent to enable Azure Monitor Insights on servers."
+
+
+
+
+
+

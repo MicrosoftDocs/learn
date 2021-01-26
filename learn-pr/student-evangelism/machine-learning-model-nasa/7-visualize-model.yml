@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.machine-learning-model-nasa.7-visualize-model
+metadata:
+  title: Exercise - Visualize the machine learning model 
+  description: Use libraries to visualize the model you made.
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Visualize the machine learning model 
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-visualize-model.md)]

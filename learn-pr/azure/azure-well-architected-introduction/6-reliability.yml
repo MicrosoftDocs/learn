@@ -15,9 +15,9 @@ content: |
 quiz:
   title: Check your knowledge
   questions: 
-  - content: "Suppose you would like to increase the availability of your system to provide a better service-level agreement (SLA) to your customers. Which of the following is a guiding principle you can use?"
+  - content: "Suppose you want to increase the availability of your system to provide a better service-level agreement (SLA) to your customers. Which of the following is a guiding principle you can use?"
     choices:
-    - content: "Reduce your target for maximum duration of acceptable data loss."
+    - content: "Reduce your target for maximum duration of acceptable data loss"
       isCorrect: false
       explanation: "This can increase recoverability, not availability."
     - content: "Encrypt all data at rest"
@@ -26,17 +26,17 @@ quiz:
     - content: "Eliminate single point of failure"
       isCorrect: true
       explanation: "Reliability focuses on maintaining service despite temporary conditions and localized failures. Adding redundancy to eliminate single points of failure is a core strategy for improving availability."
-  - content: 'Which of the following would be impacted by your defined Recovery Point Objective (RPO)?'
+  - content: 'Which of the following would be affected by your defined recovery point objective (RPO)?'
     choices:
     - content: 'The frequency of database backups'
       isCorrect: true
-      explanation: 'Since the recovery point objective is concerned with the amount of data loss that is tolerable, the frequency of backups needs to be within this time window and is directly impacted by your defined RPO.'
+      explanation: 'Because the recovery point objective is concerned with the amount of data loss that is tolerable, the frequency of backups needs to be within this time window and is directly affected by your defined RPO.'
     - content: 'The number of regions that data is replicated to'
       isCorrect: false
-      explanation: 'The number of regions that data is replicated to is an important consideration, but is not impacted by your defined RPO.'
+      explanation: 'The number of regions that data is replicated to is an important consideration, but is not affected by your defined RPO.'
     - content: 'The number of instances in a database cluster'
       isCorrect: false
-      explanation: 'The number of instances in a database cluster can be an important decision, but is not impacted by your defined RPO.'
+      explanation: 'The number of instances in a database cluster can be an important decision, but is not affected by your defined RPO.'
     - content: 'The type of load-balancing technology used in your application'
       isCorrect: false
-      explanation: 'The type of load-balancing technology used in your application can be an important decision, but is not impacted by your defined RPO.'
+      explanation: 'The type of load-balancing technology used in your application can be an important decision, but is not affected by your defined RPO.'

@@ -8,9 +8,7 @@ Let's have a look at some of this information.
 
     ![Screenshot of Azure portal showing several resources in the all resources widget of a dashboard.](../media/5-dashboard-resources.png)
 
-1. Select the **App Service** with the name you chose it in the previous exercise.
-
-    ![Screenshot of Azure portal showing the dashboard all resources widget with the learn-blog App Service highlighted.](../media/5-select-app-service.png)
+1. Select the **App Service** with the name you chose in the previous exercise.
 
 1. By default, the app service's overview is displayed, if not select **Overview**.
 
@@ -46,7 +44,7 @@ The App Services has many configurable options available and groups these option
 
 The first section displayed is a group of common options you'd access to get a view of the health of your application. However, each following section provides additional functionality and information.
 
-For example, the **Settings** section gives you access to configure various aspects such as application settings, backups, custom domains, TLS/SSL settings, options to scale up the resources of the application, and so on.
+For example, the **Settings** section gives you access to configure various aspects such as application settings, backups, TLS/SSL settings, options to scale up the resources of the application, and so on.
 
 ![Screenshot of Azure portal showing App Service settings menu options.](../media/5-settings.png)
 

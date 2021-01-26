@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-architecture-fundamentals.regions-availability-zones
+title: Azure regions and availability zones
+metadata:
+  title: Azure regions and availability zones
+  description: In this unit, you'll learn about Azure regions and availability zones.
+  ms.date: 09/14/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/regions-availability-zones.md)]

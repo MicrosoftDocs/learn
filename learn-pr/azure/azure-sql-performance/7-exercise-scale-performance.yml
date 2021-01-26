@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-performance.7-exercise-scale-performance
+metadata:
+  title: Exercise - Scale the performance of your workload
+  description: Exercise - Scale the performance of your workload
+  ms.date: 08/05/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Scale the performance of your workload
+durationInMinutes: 10
+azureSandbox: false
+content: |
+  [!include[](includes/7-exercise-scale-performance.md)]

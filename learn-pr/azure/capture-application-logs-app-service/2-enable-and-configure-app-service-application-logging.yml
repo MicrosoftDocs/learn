@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.capture-application-logs-app-service.2-enable-and-configure-app-service-application-logging
-title: Enable and Configure App Service Application Logging
+title: Enable and configure App Service application logging
 metadata:
-  title: Enable and Configure App Service Application Logging
-  description: Enable and Configure App Service Application Logging
+  title: Enable and configure App Service application logging
+  description: Enable and configure App Service application logging
   ms.date: 03/20/2019
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/2-enable-and-configure-app-service-application-logging.md)]

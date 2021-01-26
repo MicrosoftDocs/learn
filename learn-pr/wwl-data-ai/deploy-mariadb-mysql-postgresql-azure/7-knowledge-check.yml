@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/16/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You are deploying a mission critical MySQL database to support an e-commerce site which depends on low latency. What should you configure your application to do in order to handle transient errors?"
+    choices:
+    - content: "Connection resiliency"
+      isCorrect: true
+      explanation: "That's correct. Connection resiliency should be built into your application to handle transient failures, like failover or database resizing."
+    - content: "Secure Socket Layer (SSL)"
+      isCorrect: false
+      explanation: "That's incorrect. Connection resiliency should be built into your application to handle transient failures, like failover or database resizing."
+    - content: "An Azure Virtual Network"
+      isCorrect: false
+      explanation: "That's incorrect. Connection resiliency should be built into your application to handle transient failures, like failover or database resizing."
+  - content: "Which of the following is a benefit of Azure Database for PostgreSQL?"
+    choices:
+    - content: "Managed automated backups"
+      isCorrect: true
+      explanation: "That's correct. Automated backup is a feature of the service."
+    - content: "Automatic Query Tuning"
+      isCorrect: false
+      explanation: "That's incorrect. Automated backup is a feature of the service."
+    - content: "Automated cross-region disaster recovery"
+      isCorrect: false
+      explanation: "That's incorrect. Automated backup is a feature of the service."
+  - content: "What's the process to upgrade a major version of Azure Database for MySQL?"
+    choices:
+    - content: "The Service performs the update for you"
+      isCorrect: false
+      explanation: "That's incorrect. It is required to create a backup and restore to upgrade to a new major version."
+    - content: "Create a dump and restore to a server at the higher version"
+      isCorrect: true
+      explanation: "That's correct. It is required to create a backup and restore to upgrade to a new major version."
+    - content: "Change the version of the server in the portal"
+      isCorrect: false
+      explanation: "That's incorrect. It is required to create a backup and restore to upgrade to a new major version."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-resource-manager-template-deployment-scripts.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: smurawski
+  ms.author: stmuraws
+  ms.date: 12/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.reactors.join-clean-data-deep-dive
+metadata:
+  title: 'Join and clean datasets: Deep dive'
+  description: Learn how to join and clean datasets and prepare your data for analysis.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: 'Join and clean datasets: Deep dive'
+summary: Learn how to join and clean datasets and prepare your data for analysis.
+abstract:  | 
+  In this module, you will:
+  - Learn ways to prepare data for analysis
+  - Dive deeper into cleaning and joining datasets
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Introduction to Python
+  - Beginners Data Science for Python Developers
+
+iconUrl: /learn/achievements/reactors/join-clean-data-deep-dive.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.join-clean-data-deep-dive.1-introduction
+- learn.reactors.join-clean-data-deep-dive.2-set-up
+- learn.reactors.join-clean-data-deep-dive.3-load-data
+- learn.reactors.join-clean-data-deep-dive.4-explore-clean-data
+- learn.reactors.join-clean-data-deep-dive.5-split-dataframe
+- learn.reactors.join-clean-data-deep-dive.6-join-dataframes
+- learn.reactors.join-clean-data-deep-dive.7-prepare-more-data
+badge:
+  uid: learn.reactors.join-clean-data-deep-dive.badge 

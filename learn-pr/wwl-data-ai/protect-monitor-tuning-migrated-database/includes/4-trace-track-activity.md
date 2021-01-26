@@ -1,3 +1,10 @@
+A large part of maintaining databases is performance tuning. The same log files you're used to reviewing on your on-premises databases are still available with Azure Database for MySQL/PostgreSQL.
+
+With your databases migrated to Azure, you need to continue reviewing the log files to ensure the performance of the databases are maintained.
+
+In this unit you'll see where the log files for PostgreSQL and MySQL are stored in Azure, and the level of detail they contain.
+## Use server logs to track database activity
+
 Azure Database for MySQL/PostgreSQL also records diagnostic information in the server logs. Server logs are the native message log files for MySQL and PostgreSQL (not the transaction log files, which are inaccessible in Azure Database for MySQL/PostgreSQL). These files contain messages, server status, and other error information that you use to debug problems with your databases. The server logs are retained for up to seven days (less, if the total size of the server log files exceeds 7 GB).
 
 Azure Database for MySQL and Azure Database for PostgreSQL record different details in the server logs. The following sections describe the server logs for each service separately.

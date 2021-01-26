@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-identity-with-windows-server.plan-azure-ad-integration
+title: Plan for Azure Active Directory integration
+metadata:
+  title: Plan for Azure Active Directory integration
+  description: "Plan for Azure Active Directory integration"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/03-plan-azure-active-directory-integration.md)]

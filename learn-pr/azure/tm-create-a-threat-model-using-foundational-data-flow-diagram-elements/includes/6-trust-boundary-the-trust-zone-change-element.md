@@ -1,24 +1,26 @@
-Trust Boundary Box:
+Trust boundary box
 
 ![Trust Boundary Box Element](../media/trust-boundary-box.png)
 
-Trust Boundary Line:
+<br>
+
+Trust boundary line
 
 ![Trust Boundary Line Element](../media/trust-boundary-line.png)
 
-## What Is It?
+Represented by dotted lines or squares, trust boundaries are used to describe data-flow as it crosses different trust zone levels.
 
-Represented by dotted lines or squares, trust boundaries are used to describe data-flow as it crosses different trust zone levels. Examples include:
+Examples include:
 
 - Firewalls
 - Connections to third-party services
 - Parts of your system only available to administrators
 
-Areas with changing trust zones are the most targeted by attackers and should be carefully designed. 
+Areas with changing trust zones are the most targeted by attackers and should be carefully designed.
 
-Microsoft has predefined trust zone requirements for engineers to use internally, which takes the guesswork out of which boundaries to apply. If you work at Microsoft, contact your security team to learn more.
+Microsoft has predefined trust zone requirements for engineers to use internally. It takes the guesswork out of which boundaries to apply. If you work at Microsoft, contact your security team to learn more.
 
-## When Should I Use the Data-Flow Element?
+## When to use the data-flow element
 
 Here are a few important points to remember about trust boundaries:
 
@@ -26,7 +28,7 @@ Here are a few important points to remember about trust boundaries:
 - Trust boundary **lines** are used to represent data flow as it crosses large environments, like the internet
 - Trust boundary **boxes** represent smaller environments, like sandbox environments and corporate networks
 
-## What Context Should I Include?
+## Include context
 
 Include the following context to each trust boundary element:
 

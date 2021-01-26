@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.reactors.unsupervised-learning-clustering
+metadata:
+  title: 'Unsupervised learning: Clustering'
+  description: Learn about k-means clustering - how to use it, the kinds of results to expect, and how to interpret the data.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: 'Unsupervised learning: Clustering'
+summary: Learn about k-means clustering - how to use it, the kinds of results to expect, and how to interpret the data.
+abstract:  | 
+  In this module, you will:
+  - Learn about the kinds of results obtained with the k-means algorithm
+  - Get basic knowledge about how to interpret those results
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Introduction to Python
+  - Beginners Data Science for Python Developers
+  - Join and clean datasets: Deep dive
+  - Supervised learning: Regression
+  - Predict numeric values with regression
+  - Predict categories with machine learning classification
+  
+iconUrl: /learn/achievements/reactors/unsupervised-learning-clustering.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.unsupervised-learning-clustering.1-introduction
+- learn.reactors.unsupervised-learning-clustering.2-load-prepare-data
+- learn.reactors.unsupervised-learning-clustering.3-fit-clustering-model
+- learn.reactors.unsupervised-learning-clustering.4-interpret-clustering-model
+- learn.reactors.unsupervised-learning-clustering.5-visualize-clustering-model
+- learn.reactors.unsupervised-learning-clustering.6-determine-cluster-numbers
+- learn.reactors.unsupervised-learning-clustering.7-run-outside-jupyter-notebooks
+- learn.reactors.unsupervised-learning-clustering.8-k-means-pca
+badge:
+  uid: learn.reactors.unsupervised-learning-clustering.badge 

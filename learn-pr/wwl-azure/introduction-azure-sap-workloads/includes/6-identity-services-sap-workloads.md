@@ -54,19 +54,19 @@ With Kerberos Authentication, NSS still uses LDAP, and works the same as with LD
 Winbind is a more complex solution, requiring a Winbind daemon to run on the Linux systems. Winbind provides more advanced technical capabilities, such as support for RPC and NTLM, and does not require any specific components (such as Services for UNIX) to be installed on authenticating AD DS domain controllers. Winbind is part of the Samba interoperability suite, which also provides file sharing capabilities using the SMB protocol. If you plan to use SMB, using Winbind is a logical choice.
 
 ## Azure Active Directory (Azure AD)
-Azure AD is a Microsoft-managed, cloud-based, identity and access management solution. It provides secure access for organizations and individuals to variety of cloud-resident services, including Azure, Office 365, Microsoft Dynamics CRM Online, and Microsoft Intune. It can also be used to facilitates seamless authentication to on-premises applications. 
+Azure AD is a Microsoft-managed, cloud-based, identity and access management solution. It provides secure access for organizations and individuals to variety of cloud-resident services, including Azure, Microsoft 365, Microsoft Dynamics CRM Online, and Microsoft Intune. It can also be used to facilitates seamless authentication to on-premises applications. 
 
 Azure AD offers multitenancy and scalability:
 
-* **Multitenancy**. Azure AD is multitenant by design, ensuring isolation between its individual directory instances. The term tenant in this context typically represents an individual, company, or organization that signed up for a subscription to a Microsoft cloud-based service such as Office 365, Windows Intune, or Microsoft Azure, each of which leverages Azure AD. However, from a technical standpoint, the term tenant represents an individual Azure AD instance. As an Azure customer, you can create multiple Azure AD tenants. Creating multiple Azure AD tenants is useful if you want to test Azure AD functionality in one without affecting the others. Each Azure AD tenant serves as a security boundary and a container for Azure AD objects such as users, groups, and applications.
+* **Multitenancy**. Azure AD is multitenant by design, ensuring isolation between its individual directory instances. The term tenant in this context typically represents an individual, company, or organization that signed up for a subscription to a Microsoft cloud-based service such as Microsoft 365, Windows Intune, or Microsoft Azure, each of which leverages Azure AD. However, from a technical standpoint, the term tenant represents an individual Azure AD instance. As an Azure customer, you can create multiple Azure AD tenants. Creating multiple Azure AD tenants is useful if you want to test Azure AD functionality in one without affecting the others. Each Azure AD tenant serves as a security boundary and a container for Azure AD objects such as users, groups, and applications.
 
 * **Scalability**. Azure AD is the world’s largest multitenant directory, hosting over a million directory services instances, with billions of authentication requests per week.
 
-Microsoft Online business services, such as Office 365 or Microsoft Azure, require Azure AD for sign-in and to help with identity protection. If you subscribe to any Microsoft Online business service, you automatically get Azure AD with access to all the free features.
+Microsoft Online business services, such as Microsoft 365 or Microsoft Azure, require Azure AD for sign-in and to help with identity protection. If you subscribe to any Microsoft Online business service, you automatically get Azure AD with access to all the free features.
 
 To enhance your Azure AD implementation, you can also add paid capabilities by upgrading to Azure Active Directory Basic, Premium P1, or Premium P2 licenses. Azure AD paid licenses are built on top of your existing free directory, providing self-service, enhanced monitoring, security reporting, and secure access for your mobile users.
 
-* **Azure Active Directory Free**. Provides user and group management, on-premises directory synchronization, basic reports, and single sign-on across Azure, Office 365, and many popular SaaS apps.
+* **Azure Active Directory Free**. Provides user and group management, on-premises directory synchronization, basic reports, and single sign-on across Azure, Microsoft 365, and many popular SaaS apps.
 
 * **Azure Active Directory Basic**. In addition to the Free features, Basic also provides cloud-centric app access, group-based access management, self-service password reset for cloud apps, and Azure AD Application Proxy, which lets you publish on-premises web apps using Azure AD.
 

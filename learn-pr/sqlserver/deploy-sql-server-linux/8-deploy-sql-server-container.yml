@@ -5,8 +5,8 @@ metadata:
   title: Deploy SQL Server on a container
   description: In this unit, you will learn how you can run a SQL Server database in a container.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 3

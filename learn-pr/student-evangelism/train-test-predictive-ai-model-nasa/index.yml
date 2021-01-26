@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.train-test-predictive-ai-model-nasa
+metadata:
+  title: Classify types of space rocks in random photos by using AI
+  description: Learn how to build and train an AI model to predict types of space rocks in photos, and then test the model.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Classify types of space rocks in random photos by using AI
+summary: Learn how to build and train an AI model to predict types of space rocks in photos, and then test the model.
+abstract: |
+ In this module, you will:
+ - Train an artificial intelligence model
+ - Test the model by using it to classify random photos of space rocks
+prerequisites: |
+ - Ability to write and run introductory Python programs
+ - Visual Studio Code, a Python extension, and Jupyter Notebook installed
+ - Artificial intelligence libraries installed
+iconUrl: /learn/achievements/student-evangelism/train-test-predictive-ai-model-nasa.svg
+levels:
+- beginner
+roles:
+- student
+- data-scientist
+products:
+- vs-code
+units:
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.1-introduction
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.2-extract-features
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.3-build-neural-network
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.4-train-program
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.5-determine-accuracy
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.6-predict-rock-types
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.7-analyze-predictions
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.7a-knowledge-check
+- learn.student-evangelism.train-test-predictive-ai-model-nasa.8-summary
+badge:
+  uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.badge

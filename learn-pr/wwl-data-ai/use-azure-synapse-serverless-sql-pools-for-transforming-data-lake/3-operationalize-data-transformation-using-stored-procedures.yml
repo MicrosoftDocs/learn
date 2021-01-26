@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.operationalize-data-transformation-with-using-stored-procedures
+title: Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures
+metadata:
+  title: Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures
+  description: "Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-operationalize-data-transformation-using-stored-procedures.md)]

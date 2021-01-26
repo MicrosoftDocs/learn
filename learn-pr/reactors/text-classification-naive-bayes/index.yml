@@ -18,11 +18,12 @@ abstract:  |
   - Use pandas to evaluate a dataset of email messages for spam or ham.
   - Use Matplotlib to generate a word cloud, and then use Natural Language Toolkit and scikit-learn for deeper analysis of the data.
   - Use the Naive Bayes classifier to classify the data in a spam dataset and improve the accuracy of a machine learning model.
-  Complementary content for Microsoft Reactor Workshops.
+  This is complementary content for Microsoft Reactor Workshops.
 prerequisites: |
   - Introduction to Python for data science
   
 iconUrl: /learn/achievements/reactors/text-classification-naive-bayes.svg
+hidden: true
 levels:
 - beginner
 roles:

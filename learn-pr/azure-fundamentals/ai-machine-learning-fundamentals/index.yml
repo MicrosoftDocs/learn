@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure.ai-machine-learning-fundamentals
+metadata:
+  title: Choose the best AI service for your needs
+  description: Examine Azure's AI services, and choose the right one for your company.
+  ms.date: 09/14/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose the best AI service for your needs
+summary: Examine Azure's AI services, and choose the right one for your company.
+abstract: |
+  After you've completed this module, you will be able to:
+  - Choose the Azure AI services that best address your company's business challenges.
+prerequisites: | 
+  - Familiarity with the concept of *application programming interfaces*, or APIs. Programmers use APIs to interact with the functionality that's contained in code libraries.
+  - Familiarity with the following additional concepts:
+     - *Web API*: An API that's accessible from servers that accept requests via HTTP. 
+     - *Web API endpoint*: The location of the code library.
+     - *REST API*: The design of the URL style that's used to expose the API's functionality.
+ratingEnabled: true
+iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-owner
+- student
+- technology-manager
+products:
+- azure
+- azure-cognitive-services
+- azure-machine-learning
+- azure-bot-service
+units:
+- learn.azure.ai-machine-learning-fundamentals.introduction
+- learn.azure.ai-machine-learning-fundamentals.identify-product-options
+- learn.azure.ai-machine-learning-fundamentals.analyze-decision-criteria
+- learn.azure.ai-machine-learning-fundamentals.use-machine-learning
+- learn.azure.ai-machine-learning-fundamentals.use-cognitive-services
+- learn.azure.ai-machine-learning-fundamentals.use-bot-services
+- learn.azure.ai-machine-learning-fundamentals.knowledge-check
+- learn.azure.ai-machine-learning-fundamentals.summary
+badge:
+  uid: learn.azure.ai-machine-learning-fundamentals.badge

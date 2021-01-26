@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-sql-database.deploy-elastic-pool
+title: Deploy SQL database elastic pool
+metadata:
+  title: Deploy SQL database elastic pool
+  description: "Deploy SQL database elastic pool"
+  ms.date: 12/17/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-deploy-elastic-pool.md)]

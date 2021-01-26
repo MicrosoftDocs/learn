@@ -21,23 +21,23 @@ quiz:
     - content: 'You have a workload that needs a VPN connection between Azure and an on-premises datacenter.'
       isCorrect: false
       explanation: 'VPN connections do not use reserved instances.'
-    - content: 'You have a web site that needs the flexibility to scale from hundreds to millions of users at any point in time.'
+    - content: 'You have a website that needs the flexibility to scale from hundreds to millions of users at any point in time.'
       isCorrect: false
       explanation: 'This scenario has a highly variable workload, and is not a good candidate for reserved instances.'
-    - content: 'You have an Enterprise Resource Planning (ERP) system with consistent resource utilization.'
+    - content: 'You have an enterprise resource planning (ERP) system with consistent resource utilization.'
       isCorrect: true
       explanation: 'This is a good candidate for reserved instances.'
-    - content: 'You have a small administrative task that uses PowerShell that you wish to run automatically.'
+    - content: 'You have a small administrative task that uses PowerShell that you want to run automatically.'
       isCorrect: false
       explanation: 'This is a good fit for another Azure service, Azure Logic Apps, but is not a good candidate for reserved instances.'
 
 # TODO: Could the PowerShell example also run in Azure Functions?
 
-  - content: 'Which of the following scenarios would be well-suited for spot instances?'
+  - content: 'Which of the following scenarios would be well suited for spot instances?'
     choices:
     - content: 'A database for a business-critical financial application.'
       isCorrect: false
-      explanation: 'This system would likely need to remain online at at all times and is not a good candidate for spot instances.'
+      explanation: 'This system would likely need to remain online at all times and is not a good candidate for spot instances.'
     - content: 'Virtual desktops for employees.'
       isCorrect: false
       explanation: 'Virtual desktops will need to remain online when in use and are not a good candidate for spot instances.'

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.secure-aad-users-with-mfa.azure-multi-factor-authentication
 metadata:
-  title: What is Azure Multi-Factor Authentication?
-  description: Learn about Azure MFA and how it helps protect user accounts.
+  title: What is Azure AD Multi-Factor Authentication?
+  description: Learn about Azure AD MFA and how it helps protect user accounts.
   ms.date: 10/02/2019
   author: adrianstevens
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: What is Azure Multi-Factor Authentication?
+title: What is Azure AD Multi-Factor Authentication?
 durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-multi-factor-authentication.md)]

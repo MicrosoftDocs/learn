@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-windows-server-iaas-vm-identity
+metadata:
+  title: Implement Windows Server IaaS VM Identity
+  description: After completing this learning path, you’ll know how to implement identity in Azure. You’ll be able to extend an existing on-premises Active Directory identity service into Azure.
+  ms.date: 10/01/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Windows Server IaaS VM Identity
+prerequisites: |
+  - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
+  - Experience with common Windows Server management tools (implied by the first prerequisite).
+  - Basic knowledge of core Microsoft compute, storage, networking, and virtualization technologies (implied by the first prerequisite).
+  - Basic knowledge of on-premises resiliency Windows Server-based compute and storage technologies (Failover Clustering, Storage Spaces).
+  - Basic experience with implementing and managing IaaS services in Microsoft Azure.
+  - Basic knowledge of Azure Active Directory.
+  - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR).
+  - Basic knowledge of PowerShell scripting.
+  - An understanding of the following concepts as related to Windows Server technologies:
+    - High Availability and Disaster Recovery
+    - Automation
+    - Monitoring
+summary: |
+  After completing this learning path, you’ll know how to implement identity in Azure. You’ll be able to extend an existing on-premises Active Directory identity service into Azure.
+iconUrl: /learn/achievements/implement-windows-server-iaas-vm-identity.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+modules:
+- learn.wwl.implement-hybrid-identity-with-windows-server
+- learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure
+trophy:
+  uid: learn.wwl.implement-windows-server-iaas-vm-identity.trophy

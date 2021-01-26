@@ -1,29 +1,41 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.7-knowledge-check-rbac
 metadata:
-  title: Knowledge check - Using RBAC
-  description: Knowledge check - Using RBAC
+  title: Knowledge check - Using Azure RBAC
+  description: Knowledge check - Using Azure RBAC
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Knowledge check - Using RBAC
+title: Knowledge check - Using Azure RBAC
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-
-  - content: "True or false: To grant a user access to Azure resources, you create a role assignment?"
+  - content: "Suppose a team member can't view resources in a resource group. Where would the administrator go to check the team member's access?"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
-    - content: "False"
+    - content: "Check the team member's permissions by going to their Azure profile > **My permissions**."
       isCorrect: false
-      explanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
-
+      explanation: "The Azure profile permissions show your permissions at the subscription scope. But you could view the list of assigned roles on their user profile in Active Directory.  "
+    - content: "Go to the resource group and select **Access control (IAM)** > **Role assignments**."
+      isCorrect: true
+      explanation: "Find the list of role of assignments on the resource group."
+    - content: "Go to one of the resources in the resource group and select **Role assignments**."
+      isCorrect: False
+      explanation: "The resource inherits permissions from the resource group so you could see their access to the specific resource. But you should go to the resource group to view and manage permissions at that scope."
+  - content: "Suppose an administrator in another department needs access to a virtual machine managed by your department. What's the best way to grant them access to just that resource?"
+    choices:
+    - content: "At the resource scope, create a role for them with the appropriate access."
+      isCorrect: false
+      explanation: "For this scenario, at the resource scope, assign one of the built-in roles like contributor or reader instead of creating a new role."
+    - content: "At the resource group scope, assign the role with the appropriate access."
+      isCorrect: false
+      explanation: "If you assign a role at the resource group scope, they'll have access to all resources in that resource group."
+    - content: "At the resource scope, assign the role with the appropriate access."
+      isCorrect: true
+      explanation: "For this scenario, at the virtual machine scope, assign one of the built-in roles that grants the appropriate access for the administrator."      
   - content: "Suppose a developer needs full access to a resource group. If you are following least-privilege best practices, what scope should you specify?"
     choices:
     - content: "Resource"
@@ -35,3 +47,14 @@ quiz:
     - content: "Subscription"
       isCorrect: false
       explanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
+  - content: "Suppose an administrator needs to generate a report of the role assignments for the last week. Where in the Azure portal would they generate that report?"
+    choices:
+    - content: "Search for **Activity log** and filter on the **Create role assignment (roleAssignments)** operation."
+      isCorrect: true
+      explanation: "In the Activity log, filter on the **Operation name** field to find role assignments."
+    - content: "At the appropriate scope, go to **Access control (IAM)** > **Download role assignments**."
+      isCorrect: false
+      explanation: "Downloading role assignments gives you a file with a list of the current role assignments."
+    - content: "At the appropriate scope, go to **Access control (IAM)** > **Role assignments**."
+      isCorrect: false
+      explanation: "The **Role assignments** page lists the current role assignments."    

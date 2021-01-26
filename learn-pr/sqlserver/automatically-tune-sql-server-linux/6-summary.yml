@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: In this unit, you will review what you have learned about tuning performance in SQL Server on Linux.
   ms.date: 06/11/2019
-  author: alistairmatthew
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 3

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-conversational-intelligence-luis.exercise-add-utterances
+title: Exercise – Add utterances
+metadata:
+  title: Exercise – Add utterances
+  description: "Exercise – Add utterances"
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-add-utterances.md)]

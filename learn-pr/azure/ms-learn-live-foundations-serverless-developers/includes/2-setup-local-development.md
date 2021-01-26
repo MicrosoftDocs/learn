@@ -12,9 +12,14 @@ Install and configure the tooling required to develop and execute Functions loca
 
 ## Required Components for the Functions Project
 
+> [!TIP]
+> If you want to verify your installation, you're invited to clone our [repository located on GitHub at https://aka.ms/learn-live-foundations-serverless-dev-repo](https://aka.ms/learn-live-foundations-serverless-dev-repo) and build both, the included (completed) functions project and the Angular based client.
+>
+> Note that we will be building the functions project from scratch during this course but we'll be using the completed Angular client to execute calls against the functions.
+
 Unfortunately, there is no single-package download that would install all the required components on your system.
 
-Download Visual Studio Code | [https://code.visualstudio.com/download](https://code.visualstudio.com/download) for your operating system and follow the installation instructions.
+Start by downloading Visual Studio Code [https://code.visualstudio.com/download](https://code.visualstudio.com/download) for your operating system and follow the installation instructions.
 
 ### Install Node.js
 
@@ -32,22 +37,7 @@ Find details about the extension at [https://marketplace.visualstudio.com/items?
 
 Azure Functions Core Tools lets you develop and test your functions on your local computer from the command prompt or terminal.
 
-The installation instructions are platform-specific. Follow the instructions for your platform at  [https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash)
-
-### Install "Cosmos DB client SDK"
-
-Our functions interact with a Cosmos DB database. Node.js supports Cosmos DB through an additional package.
-
-In your terminal, execute the following command:
-
-`npm install @azure/cosmos`
-
-### Access Configuration Files
-
-With the help of a separate Node.js package, our functions app can read configuration parameters from either a local configuration file or from Azure's application settings.
-In your terminal, execute the following command:
-
-`npm install @types/node`
+The installation instructions are platform-specific. Follow the instructions for your platform at  [https://docs.microsoft.com/azure/azure-functions/functions-run-local](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=learnlive-video-learn)
 
 ### Components Required to Run the Client App
 
@@ -61,18 +51,11 @@ You can find detailed installation instructions at [angular.io/guide/setup-local
 
 The short version of the instructions is straightforward: execute the following command in your terminal:
 
-`npm install @angular/cli`
-
-### Angular DevKit
-
-Install the Angular dev kit dependency by running the following command in your terminal: 
-
-`npm install --save-dev @angular-devkit/build-angular`
+`npm install -g @angular/cli`
 
 ### Optional: Debugger support
 
 If you are planning to dive a bit deeper and explore Angular, debugging support in Visual Studio Code is handy. There are extensions for different browsers.
-
 
 [Edge debugger for Angular](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge)
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.3-explore-superposition-qsharp
+title: Exercise - Explore superposition by using Q#
+metadata:
+  title: Exercise - Explore superposition by using Q#
+  description: Learn how to use Q# to build and inspect superpositions.
+  ms.date: 09/09/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-explore-superposition-qsharp.md)]

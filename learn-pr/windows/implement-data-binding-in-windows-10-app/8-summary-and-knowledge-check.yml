@@ -72,8 +72,8 @@ quiz:
           - content: Implement the System.ComponentModel.INotifyPropertyChanged interface, and raise the PropertyChanged event every time a new item has beed added to the collection.
             explanation: Although this works, this approach forces the UI to re-create the entire contents of the list, instead of just dealing with the one new item.
             isCorrect: false
-          - content: Use the System.Collections.ObjectModel.ObservableCollection<T> class to store the collection of items.
-            explanation: The ObservableCollection<T> class implements the System.Collections.Specialized.INotifyCollectionChanged interface that notifies the UI whenever items are added or removed.
+          - content: Use the `System.Collections.ObjectModel.ObservableCollection<T>` class to store the collection of items.
+            explanation: The `ObservableCollection<T>` class implements the System.Collections.Specialized.INotifyCollectionChanged interface that notifies the UI whenever items are added or removed.
             isCorrect: true
           - content: Implement the System.Collections.Specialized.INotifyCollectionChanged interface in your logic class, and raise the CollectionChanged event every time a new item has beed added to the collection.
             explanation: This interface should be implemented by the collection class, not your business logic class.

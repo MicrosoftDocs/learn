@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.implement-cicd-iot-edge.how-create-ci-pipeline-iot-edge
+title: How to create a CI pipeline with Azure DevOps
+metadata:
+  title: How to create a CI pipeline with Azure DevOps
+  description: In this section, we help the learner with how to create a CI pipeline using Azure DevOps.
+  ms.date: 06/23/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 4 
+content: |
+  [!include[](includes/3-how-create-ci-pipeline.md)]

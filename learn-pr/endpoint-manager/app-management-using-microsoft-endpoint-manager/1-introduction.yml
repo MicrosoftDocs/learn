@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.app-management-using-microsoft-endpoint-manager.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about managing apps with Microsoft Endpoint Manager. 
+  ms.date: 10/26/2020
+  author: ErikRe
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 16
+content: |
+  [!include[](includes/1-introduction.md)]

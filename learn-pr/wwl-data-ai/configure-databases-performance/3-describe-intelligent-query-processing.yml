@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-databases-for-performance.describe-intelligent-query-processing
+title: Describe intelligent query processing
+metadata:
+  title: Describe intelligent query processing
+  description: "Describe intelligent query processing"
+  ms.date: 08/23/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-describe-intelligent-query-processing.md)]

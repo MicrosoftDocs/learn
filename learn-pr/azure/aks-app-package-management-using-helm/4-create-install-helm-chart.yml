@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.app-package-management-using-helm.create-install-helm-chart
+title: Create and install a Helm chart
+metadata:
+  description: Explore how a Helm chart defines an application's deployment information and install a chart from a Helm repository.
+  title: Create and install a Helm chart
+  author: cryophobia
+  ms.author: chrvaw
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 9/30/2020
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-install-helm-chart.md)]

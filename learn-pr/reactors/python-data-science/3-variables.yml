@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.python-data-science.3-variables
+title: Variables
+metadata:
+  title: Variables in Python for data science
+  description: Learn how to use variables in Python for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-variables.md)] 

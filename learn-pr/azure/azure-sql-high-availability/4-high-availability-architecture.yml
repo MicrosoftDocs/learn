@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.4-high-availability-architecture
+metadata:
+  title: High availability by service tier
+  description: High availability by service tier
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: High availability by service tier
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-high-availability-architecture.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "Which service tier puts the data and log files on Azure Premium Storage?"
+      choices:
+      - content: "General Purpose"
+        isCorrect: true
+        explanation: "In General Purpose, tempdb is on direct-attached SSD, but the data and log files are in Azure Premium Storage."
+      - content: "Business Critical"
+        isCorrect: false
+        explanation: "In Business Critical, tempdb, data, and log files are on direct-attached SSD."
+      - content: "Hyperscale"
+        isCorrect: false
+        explanation: "Hyperscale has a different architecture. The data files are on Azure Standard Storage. For log files, the landing zone is in Azure Premium Storage, and the long-term log storage is in Azure Standard Storage."
+      - content: "All of the above"
+        isCorrect: false
+        explanation: "Review the unit to understand the architectures of each tier."
+    - content: "Which service tier has an Always On availability group deployed behind the scenes?"
+      choices:
+      - content: "General Purpose"
+        isCorrect: false
+        explanation: "Review the unit to understand the architectures of each tier."
+      - content: "Business Critical"
+        isCorrect: true
+        explanation: "Business Critical functionality is similar to that of Always On availability groups. You can even use one of the secondaries as a read-only endpoint."
+      - content: "Hyperscale"
+        isCorrect: false
+        explanation: "Review the unit to understand the architectures of each tier."
+      - content: "All of the above"
+        isCorrect: false
+        explanation: "Review the unit to understand the architectures of each tier."

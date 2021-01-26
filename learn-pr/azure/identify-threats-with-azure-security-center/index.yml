@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-security.identify-threats-with-azure-security-center
+hidden: true
 metadata:
   title: Identify security threats with Azure Security Center
   description: Master securing your Azure workloads with Azure Security Center. In this module, you’ll discover how to detect and respond to threats with Azure Security Center.

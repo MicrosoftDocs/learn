@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-sql-server-query-plans.explain-estimated-actual
+title: Explain estimated and actual query plans
+metadata:
+  title: Explain estimated and actual query plans
+  description: "Explain estimated and actual query plans"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-explain-estimated-actual.md)]

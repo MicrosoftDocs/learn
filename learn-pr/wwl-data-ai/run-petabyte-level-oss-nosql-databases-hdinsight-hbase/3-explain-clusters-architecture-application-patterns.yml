@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.explain-clusters-architecture-application-patterns
+title: Explain HDInsight HBase clusters architecture and application patterns
+metadata:
+  title: Explain HDInsight HBase clusters architecture and application patterns
+  description: "Explain HDInsight HBase clusters architecture and application patterns"
+  ms.date: 09/12/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explain-clusters-architecture-application-patterns.md)]

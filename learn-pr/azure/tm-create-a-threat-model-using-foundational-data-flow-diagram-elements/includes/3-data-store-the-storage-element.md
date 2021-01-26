@@ -1,29 +1,26 @@
 ![Data Store Element](../media/data-store.png)
 
-## What Is It?
+Depicted by parallel lines, this element represents data stored on a temporary or permanent basis.
 
-Depicted by parallel lines, this element represents data stored on a temporary or permanent basis. Examples include:
+Examples include:
 
 - Using the browser cache to store user session-related data
 - Adding a security log event to a database
 
-## When Should I Use the Data Store Element?
+## When to use the data store element
 
-- Use the data store element whenever you're storing data somewhere, like Azure DB or local cache
+- Whenever you're storing data somewhere, like Azure DB or local cache
 - If you're establishing communication between two data-stores, don't forget to add a process between them
 - Data stores and external entities start the data-flow, so verify you have either one in place
-- Avoid data-sinks by including Analytics Services and other processes to handle data post-storage
+- Make sure to include any post-processing of data, such as analytics services like Azure Analytics. This process is often missed.
 
-> [!TIP]
-> In threat modeling, the term **avoiding data-sinks** refers to how data is used after it is stored, and should be called out accordingly. Analytics services is an example.
-
-## What Context Should I Include?
+## Include context
 
 Include the following context to each data store element:
 
 |Context|Questions|
 |-------|---------|
 |Type|Does the system use Azure SQL, cookies, local or some other type of storage? If so, what is it?|
-|Function|How is the storage used? Is it used to share data, store Backups, Security logs, Credentials, Secrets?|
-|Permission Level|How is access control implemented? Who has read and write permissions?|
-|Additional Controls|Is data encrypted? What about the disk? Are digital signatures used?|
+|Function|How is the storage used? Is it used to share data, store backups, security logs, credentials, secrets?|
+|Permission level|How is access control implemented? Who has read and write permissions?|
+|Additional controls|Is data encrypted? What about the disk? Are digital signatures used?|

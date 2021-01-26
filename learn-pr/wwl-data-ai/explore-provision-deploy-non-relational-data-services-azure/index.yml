@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure
+metadata:
+  title: Explore provisioning and deploying non-relational data services in Azure
+  description: "Explore provisioning and deploying non-relational data services in Azure"
+  ms.date: 12/28/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore provisioning and deploying non-relational data services in Azure
+summary: Learn how to provision and configure Azure Cosmos DB, Azure Data Lake , Azure Blob Storage, and Azure File Storage.
+abstract: |
+  In this module, you will:
+  * Provision non-relational data services
+  * Configure non-relational data services
+  * Explore basic connectivity issues
+  * Explore data security components
+prerequisites: |
+  None
+iconUrl: /learn/achievements/explore-provision-deploy-non-relational-data-services-azure.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.introduction
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.describe-provisioning
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.provision-azure-cosmos-db
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.provision-other
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.describe-configuring
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.configure-azure-cosmos-db,-azure-storage
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.exercise-provision-non-relational-azure
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.knowledge-check
+- learn.wwl.explore-provision-deploy-non-relational-data-services-azure.summary
+badge:
+  uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.badge

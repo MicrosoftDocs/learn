@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sql-server-virtual-machine.describe-migration-options
+title: Describe SQL Server migration options
+metadata:
+  title: Describe SQL Server migration options
+  description: "Describe SQL Server migration options"
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-describe-migration-options.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.exercise-provision-non-relational-azure
+title: 'Exercise: Provision non-relational Azure data services'
+metadata:
+  title: 'Exercise: Provision non-relational Azure data services'
+  description: "Exercise: Provision non-relational Azure data services"
+  ms.date: 12/28/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-environment
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-provision-non-relational-azure.md)]

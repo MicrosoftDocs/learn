@@ -92,7 +92,11 @@ GO
     
 ALTER DATABASE [TutorialDB] SET QUERY_STORE=ON;
 GO
-    
+
+-- Switch to the TutorialDB database
+USE [TutorialDB]
+GO
+
 -- Create a new table called 'Customers' in schema 'dbo'
 -- Drop the table if it already exists
 IF OBJECT_ID('dbo.Customers', 'U') IS NOT NULL

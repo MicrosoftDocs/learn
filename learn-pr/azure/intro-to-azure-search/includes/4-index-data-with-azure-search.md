@@ -8,7 +8,7 @@ Now that the search service has been created, you'll look at how to load data in
 
 Azure Cognitive Search lets you create empty indexes. In order for indexes to be queried, data must be loaded. The search queries run over the content loaded and saved to an index. There are two approaches for loading data into an index:
 
-- **Pushing data**: JSON data is pushed into a search index via either the REST API or the .Net SDK. Pushing data has the most flexibility as it has no restrictions on the data source type, location, or frequency of execution.
+- **Pushing data**: JSON data is pushed into a search index via either the REST API or the .NET SDK. Pushing data has the most flexibility as it has no restrictions on the data source type, location, or frequency of execution.
 
 - **Pulling data**:  Search service indexers can pull data from popular Azure data sources, and if necessary, serialize that data into JSON. Indexers can be created using either the Azure Data Import wizard, or programmatically. When you provide a query or connection string, an indexer retrieves the data and loads JSON documents into the index. An indexer maps source fields to their matching fields in the index.
 

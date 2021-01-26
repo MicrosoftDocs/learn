@@ -1,0 +1,81 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-sentinel-deploy-connect.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  
+  - content: "How does Azure Sentinel use machine learning and AI?"
+    choices:
+    - content: "Feedback loop detection"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Sentinel uses machine learning and AI for threat hunting and alert detection."
+    - content: "Alert detection"
+      isCorrect: true
+      explanation: "That's correct. Azure Sentinel uses machine learning and AI for threat hunting and alert detection."
+    - content: "Security score"
+      isCorrect: false
+      explanation: "That's incorrect. The security score is a recommendation from Security Center."
+
+
+  - content: "Azure Sentinel hunting and search-and-query tools are based on which of the following?"
+    choices:
+    - content: "Center for Internet Security best practices"
+      isCorrect: false
+      explanation: "That's incorrect. Though an important security organization, Azure Sentinel doesn't use its tools."
+    - content: "MITRE ATT&CK framework"
+      isCorrect: true
+      explanation: "That's correct. Azure Sentinel hunting is based on the MITRE ATT&CK framework."
+    - content: "Microsoft Security Development Lifecycle (SDL)"
+      isCorrect: false
+      explanation: "That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for helping to build more secure products and services."
+
+
+  - content: "The Azure Sentinel agent is which of the following?" 
+    choices:
+    - content: "Log Analytics agent"
+      isCorrect: true
+      explanation: "That's correct. The Azure Sentinel agent is a Log Analytics agent."
+    - content: "REST API"
+      isCorrect: false
+      explanation: "That's incorrect. A REST API uses HTTP requests to GET, PUT, POST, and DELETE data."
+    - content: "Certificate"
+      isCorrect: false
+      explanation: "That's incorrect. A digital certificate is an electronic document used to prove the ownership of a public key."
+
+
+  - content: "Which of the following actions can the Azure Sentinel Reader role perform?"
+    choices:
+    - content: "Edit workbooks"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
+    - content: "Review data, incidents, workbooks, and other Azure Sentinel resources."
+      isCorrect: true
+      explanation: "That's correct. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
+    - content: "Create and run Azure Sentinel security playbooks"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure Sentinel Reader role can review data, incidents, workbooks, and other Azure Sentinel resources. But, it can't edit them."
+
+
+  - content: "Which of the following is required to connect Azure Sentinel to Azure AD?"
+    choices:
+    - content: "You need an Azure AD P1 or P2 license"
+      isCorrect: true
+      explanation: "That's correct. If you want to export sign-in data from Azure AD to Azure Sentinel, you must have an Azure AD P1 or P2 license."
+    - content: "You must use Azure AD Connect"
+      isCorrect: false
+      explanation: "That's incorrect. Azure AD Connect is a tool for connecting on-premises identity infrastructure to Microsoft Azure AD."
+    - content: "Azure AD Domain Services must be enabled"
+      isCorrect: false
+      explanation: "That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for connecting Azure Sentinel and Azure AD."

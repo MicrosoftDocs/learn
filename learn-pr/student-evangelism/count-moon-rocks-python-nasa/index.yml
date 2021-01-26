@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.student-evangelism.count-moon-rocks-python-nasa
+metadata:
+  title: Count the number of Moon rocks by type using Python
+  description: Use Python and Visual Studio Code to make a simple program to count the number of each type of space rock.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Count the number of Moon rocks by type using Python
+summary: Use Python and Visual Studio Code to make a simple program to count the number of each type of space rock.
+abstract: |
+  In this module, you'll learn:
+  - How to write variables in the context of a program
+  - How to use prebuilt functions to read data from a text file
+  - How to create a function and call it in the context of a program
+  - How to write conditionals and loops in the context of a program
+prerequisites: |
+  - Visual Studio Code installed
+  - Python extension installed in Visual Studio Code
+  - Python and Jupyter Notebooks installed
+  - Knowledge about introductory Python topics
+iconUrl: /learn/achievements/student-evangelism/count-moon-rocks-python-nasa.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+units:
+- learn.student-evangelism.count-moon-rocks-python-nasa.1-introduction
+- learn.student-evangelism.count-moon-rocks-python-nasa.2-set-up-program
+- learn.student-evangelism.count-moon-rocks-python-nasa.3-read-text-file
+- learn.student-evangelism.count-moon-rocks-python-nasa.4-write-function
+- learn.student-evangelism.count-moon-rocks-python-nasa.5-add-call-to-function
+- learn.student-evangelism.count-moon-rocks-python-nasa.6-output-and-summarize-data
+- learn.student-evangelism.count-moon-rocks-python-nasa.6a-knowledge-check
+- learn.student-evangelism.count-moon-rocks-python-nasa.7-summary
+badge:
+  uid: learn.student-evangelism.count-moon-rocks-python-nasa.badge

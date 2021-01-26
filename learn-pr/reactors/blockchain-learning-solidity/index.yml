@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.reactors.blockchain-learning-solidity
+metadata:
+  title: Learn how to use Solidity
+  description: Discover how Solidity can help you program smart contracts for the Ethereum blockchain platform.
+  ms.date: 10/05/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn how to use Solidity
+summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+abstract:  |
+  In this module, you will learn how to:
+  - Explain what Solidity is and how the features of the language work.
+  - Understand the components of a smart contract.
+  - Create a basic smart contract with Solidity.
+prerequisites: | 
+  - Blockchain fundamentals knowledge
+  - Ethereum platform knowledge
+  - Previous experience with any programming language like C, Python, or JavaScript
+  - Basic knowledge of programming concepts
+  - Familiarity with the command line to create new directories
+iconUrl: /learn/achievements/reactors/blockchain-learning-solidity.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.reactors.blockchain-learning-solidity.1-introduction
+- learn.reactors.blockchain-learning-solidity.2-what-is-solidity
+- learn.reactors.blockchain-learning-solidity.3-language-basics
+- learn.reactors.blockchain-learning-solidity.4-value-types
+- learn.reactors.blockchain-learning-solidity.5-reference-types
+- learn.reactors.blockchain-learning-solidity.6-exercise-write-first-contract
+- learn.reactors.blockchain-learning-solidity.7-knowledge-check
+- learn.reactors.blockchain-learning-solidity.8-summary
+badge:
+  uid: learn.reactors.blockchain-learning-solidity.badge

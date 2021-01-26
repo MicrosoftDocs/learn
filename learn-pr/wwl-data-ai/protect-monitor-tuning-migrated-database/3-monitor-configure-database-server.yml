@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.monitor-configure-database-server
-title: Monitoring and configure a database server
+title: Monitor and configure a database server
 metadata:
-  title: Monitoring and configure a database server
-  description: "Monitoring and configure a database server"
-  ms.date: 01/31/2020
+  title: Monitor and configure a database server
+  description: "Monitor and configure a database server"
+  ms.date: 01/25/2021
   author: wwlpublish
-  ms.author: v-gea
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

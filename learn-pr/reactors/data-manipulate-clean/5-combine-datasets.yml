@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.data-manipulate-clean.5-combine-datasets
+title: Combine datasets
+metadata:
+  title: Combine datasets
+  description: Combine datasets by using pandas `DataFrames`.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-combine-datasets.md)]

@@ -1,16 +1,26 @@
-Threat modeling is a great technique to help you find issues earlier in the development lifecycle. 
+Threat modeling is a great technique to help you find issues early in the development lifecycle. Choosing the right focused approach helps you tailor the threat modeling exercise. You'll find more actionable threats and ways to solve them.
 
-Choosing the right focused approach helps you tailor the threat modeling exercise to help you find more actionable threats and ways to solve them.
+## System-focused approach
 
-## What does the system focused approach look like?
+Your goal is to protect the entire system. You look at each process, data store, data-flow, external entity, and trust boundary. With this information, you'll select security controls to help protect your system.
 
-With the system focused approach, your goal is to protect the entire system. You look at each process, data store, data-flow, external entity, and trust boundary, and select security controls to help protect your system.
+The framework helps you analyze the system and how it affects other assets, which include:
 
-## What about the attacker focused approach?
+|Asset Type|Examples|
+|----------|--------|
+|Logical|Source code, APIs, and logical security controls|
+|Physical|Servers and physical security controls assets|
 
-With the attacker focused approach, you emphasize the attacker, their motive, means, and all the ways they can wreak havoc in your system. It looks at entry points, rather than the system as a whole.
+## Attacker-focused approach
+
+You emphasize the attacker, their motive, means, and all the ways they can wreak havoc in your system. It looks at entry points, rather than the system as a whole.
+
+This approach allows you to focus on critical assets holding highly confidential data for your system. Emphasis is placed on protecting those assets instead of the entire system.
+
+## Asset-focused approach
+
+Evaluates risk for each asset. This approach identifies critical assets based on things like classified data handling and focuses mostly on protecting those assets.
 
 > [!NOTE]
 > Microsoft engineers focus on protecting the system. Penetration testing teams focus on both protecting the system and understanding the attacker.
 
-Let's look at these approaches in the next few units.

@@ -10,99 +10,121 @@ Here, you'll troubleshoot connectivity between two VMs in different subnets.
 
 Let's start by creating the problematic infrastructure, which includes a configuration error:
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+1. In your browser, open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true), and log in to the directory with access to the subscription you want to create resources in.
 
-1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+1. To create a variable to store your resource group name, and a resource group for your resources, in the Bash Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
     ```azurecli
-    rg=<resource group name>
+    RG=<resource group name>
 
-    az group create --name $rg --location <location>
+    az group create --name $RG --location <location>
     ```
 
-1. In Azure Cloud Shell, run this command to create the virtual network **MyVNet1** and the subnet **FrontendSubnet**.
+1. To create the virtual network **MyVNet1** and the subnet **FrontendSubnet**, in Azure Cloud Shell, run this command.
 
     ```azurecli
     az network vnet create \
-        --resource-group $rg \
+        --resource-group $RG \
         --name MyVNet1 \
         --address-prefix 10.10.0.0/16 \
         --subnet-name FrontendSubnet \
-        --subnet-prefix 10.10.1.0/24 \
-        --location EastUS
+        --subnet-prefix 10.10.1.0/24
     ```
 
-1. Run this command to deploy a VM in **FrontendSubnet**. Replace `<password>` with a complex password of your choice.
-
-    ```azurecli
-    az vm create \
-        --resource-group $rg \
-        --no-wait \
-        --name FrontendVM \
-        --location EastUS \
-        --vnet-name MyVNet1 \
-        --subnet FrontendSubnet \
-        --image Win2012R2Datacenter \
-        --admin-username azureuser \
-        --admin-password <password>
-    ```
-
-1. Run this command to create the subnet called **BackendSubnet**.
+1. To create the subnet called **BackendSubnet**, run this command.
 
     ```azurecli
     az network vnet subnet create \
         --address-prefixes 10.10.2.0/24 \
         --name BackendSubnet \
-        --resource-group $rg \
+        --resource-group $RG \
         --vnet-name MyVNet1
     ```
 
-1. Run this command to deploy a virtual machine in **BackendSubnet**. Replace `<password>` with a complex password of your choice.
+    > [!NOTE]
+    > If you get an error, "partofthepassword: event not found; create a new password and avoid ! marks.
+
+1. To deploy a VM in **FrontendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
     az vm create \
-        --resource-group $rg \
-        --no-wait \
-        --name BackendVM \
-        --location EastUS \
+        --resource-group $RG \
+        --name FrontendVM \
         --vnet-name MyVNet1 \
-        --subnet BackendSubnet \
-        --image Win2012R2Datacenter \
+        --subnet FrontendSubnet \
+        --image Win2019Datacenter \
         --admin-username azureuser \
         --admin-password <password>
     ```
 
-1. Run this command to create a network security group (NSG).
+1. To install IIS on **FrontendVM**, run this command.
+
+    ```azurecli
+    az vm extension set \
+        --publisher Microsoft.Compute \
+        --name CustomScriptExtension \
+        --vm-name FrontendVM \
+        --resource-group $RG \
+        --settings '{"commandToExecute":"powershell.exe Install-WindowsFeature -Name Web-Server"}' \
+        --no-wait
+    ```
+
+1. To deploy a virtual machine in **BackendSubnet**, run this command. Replace `<password>` with a complex password of your choice.
+
+    ```azurecli
+    az vm create \
+        --resource-group $RG \
+        --name BackendVM \
+        --vnet-name MyVNet1 \
+        --subnet BackendSubnet \
+        --image Win2019Datacenter \
+        --admin-username azureuser \
+        --admin-password <password>
+    ```
+
+1. To install IIS on **BackendVM**, run this command.
+
+    ```azurecli
+    az vm extension set \
+        --publisher Microsoft.Compute \
+        --name CustomScriptExtension \
+        --vm-name BackendVM \
+        --resource-group $RG \
+        --settings '{"commandToExecute":"powershell.exe Install-WindowsFeature -Name Web-Server"}' \
+        --no-wait
+    ```
+
+1. To create a network security group (NSG), run this command.
 
     ```azurecli
     az network nsg create \
         --name MyNsg \
-        --resource-group $rg \
-        --location EastUS
+        --resource-group $RG
     ```
 
-1. Run this command to create an NSG configuration mistake that prevents communication between the VMs.
+1. To create an NSG **configuration mistake that prevents communication** between the VMs, run this command.
 
     ```azurecli
     az network nsg rule create \
-        --resource-group $rg \
+        --resource-group $RG \
         --name MyNSGRule \
         --nsg-name MyNsg \
         --priority 4096 \
         --source-address-prefixes '*' \
-        --source-port-ranges 80 443 3389 \
+        --source-port-ranges '*' \
         --destination-address-prefixes '*' \
         --destination-port-ranges 80 443 3389 \
         --access Deny \
         --protocol TCP \
+        --direction Inbound \
         --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
 
-1. Run this command to associate a network security group with a subnet.
+1. To associate a network security group with a subnet, run this command.
 
     ```azurecli
     az network vnet subnet update \
-        --resource-group $rg \
+        --resource-group $RG \
         --name BackendSubnet \
         --vnet-name MyVNet1 \
         --network-security-group MyNsg
@@ -110,36 +132,37 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
 ## Enable Network Watcher for your region
 
-Now let's use the Azure CLI to set up Network Watcher in the same region as the infrastructure.
+Now, to set up Network Watcher in the same region as the infrastructure, let's use the Azure CLI.
 
-To enable Network Watcher, run this command:
+To enable Network Watcher, run this command.
 
 ```azurecli
 az network watcher configure \
-    --resource-group $rg \
-    --locations EastUS \
-    --enabled
+    --locations "" (*Match the creation of the resource group*) \
+    --enabled true \
+    --resource-group $RG
 ```
+
 
 ## Use Network Watcher to show the topology
 
-Now you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS and the RDP protocol between the two VMs. First, investigate the network topology:
+Now, you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS and the RDP protocol between the two VMs. First, investigate the network topology:
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) by using the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the Azure portal menu, select **All services**. Then go to **Networking** > **Network Watcher**.
+1. On the Azure portal menu, select **All services**. Then, search for **Network Watcher**. The **Network Watcher** page appears.
 
-1. Select **Topology**.
+1. In the left nav bar, in the **Monitoring** section, select **Topology**.
 
-1. In the drop-down lists, select the subscription and resource group. Network Watcher displays your network topology:
+1. In the dropdowns, select the **Subscription** and **Resource Group**. Network Watcher displays your network topology:
 
     [![](../media/3-network-topology.png "A screenshot that shows the exercise network topology")](../media/3-network-topology-expanded-1.png#lightbox)
 
 ## Use Connection Monitor to run tests from the back end to the front end
 
-The topology appears to be correct. Let's set up some tests in Connection Monitor to get more information. Start by creating two tests from the back-end VM to the front-end VM:
+The topology appears to be correct. To get more information, let's set up some tests in Connection Monitor. Start by creating two tests from the back end VM to the front end VM:
 
-1. Under **Monitoring**, select **Connection Monitor**, and then select **+ Add**.
+1. Under **Monitoring**, select **Connection Monitor**, and then select **+ Create**. The **Create Connection Monitor** page appears.
 
 1. Configure Connection Monitor with these values, and then select **Add**.
 
@@ -175,7 +198,7 @@ The topology appears to be correct. Let's set up some tests in Connection Monito
 
 1. Examine the results.
 
-The results should show that no traffic flows from the back-end VM to the front-end VM.
+The results should show that, because the NSG is associated to the back-end subnet, traffic flows without issues from the back-end VM to the front-end VM.
 
 ## Use Connection Monitor to run tests from the front end to the back end
 
@@ -215,7 +238,7 @@ Run the same tests in the opposite direction.
 
 1. Examine the results.
 
-The results should show that traffic flows without problems from the front-end VM to the back-end VM.
+The results should show that, because the NSG is associated with the back-end subnet, no traffic flows from the front-end VM to the back-end VM.
 
 ## Use IP flow verify to test the connection
 
@@ -239,7 +262,7 @@ Let's use the IP flow verify tool to get more information.
     | Remote port | 3389 |
     | | |
 
-    ![A screenshot that shows an IP flow test](../media/3-ip-flow-test.png)
+    ![Screenshot that shows an IP flow test](../media/3-ip-flow-test.png)
 
 1. Examine the results. They show that access is denied because of NSG and security rules.
 

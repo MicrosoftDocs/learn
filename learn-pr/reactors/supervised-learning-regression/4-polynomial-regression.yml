@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.supervised-learning-regression.4-polynomial-regression
+title: Polynomial regression
+metadata:
+  title: Polynomial regression
+  description: Try polynomial regression models.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 17
+content: |
+  [!include[](includes/4-polynomial-regression.md)]

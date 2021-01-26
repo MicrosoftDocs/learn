@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-conversational-intelligence-luis.exercise-train-publish-luis-model
+title: Exercise - Train and publish the LUIS model
+metadata:
+  title: Exercise - Train and publish the LUIS model
+  description: "Exercise - Train and publish the LUIS model"
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-train-publish-language-understanding-intelligent-service-model.md)]

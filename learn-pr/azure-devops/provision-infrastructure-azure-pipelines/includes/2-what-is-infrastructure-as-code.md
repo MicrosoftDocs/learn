@@ -100,7 +100,7 @@ Infrastructure as code is a best practice in DevOps because it helps bring teams
 
 **Tim:** Sounds great. But I have one question first. You mentioned that we can run the provisioning process through Azure Pipelines. Won't the process re-create our existing environments? I don't think we would want that.
 
-**Andy:** They key here is *idempotency*.
+**Andy:** The key here is *idempotency*.
 
 ## What is idempotency?
 

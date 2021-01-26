@@ -3,12 +3,13 @@ uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma.4-identify-co
 title: Identify compatibility issues
 metadata:
   title: Identify compatibility issues
-  description: Identify compatibility issues
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: "Identify compatibility issues"
+  ms.date: 01/13/2021
+  author: wwlpublish
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
+azureSandbox: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-identify-compatibility-issues.md)]

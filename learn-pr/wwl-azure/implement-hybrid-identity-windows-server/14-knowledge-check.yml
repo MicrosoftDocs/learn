@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-identity-with-windows-server.knowledge-check-2
+title: Knowledge check 2
+metadata:
+  title: Knowledge check 2
+  description: "Knowledge check 2"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When planning to implement Azure AD DS, which of the following statements are true?"
+    choices:
+    - content: "It's possible to extend the schema for the Azure AD DS domain."
+      isCorrect: false
+      explanation: "That's incorrect. It is not possible to extend the schema in AD DS."
+    - content: "Nested OUs are supported."
+      isCorrect: false
+      explanation: "That's incorrect. Nested OUs are not supported."
+    - content: "It's not possible to target OUs with built-in GPOs."
+      isCorrect: true
+      explanation: "That's correct. Additionally, you cannot use WMI filters or security-group filtering."
+  - content: "Which role from the following groups in an Azure AD DS domain can administer DNS on the managed domain, create and administer custom OUs on the managed domain, and administer computers joined to the managed domain?"
+    choices:
+    - content: "AAD DC Administrators."
+      isCorrect: true
+      explanation: "That's correct. Members of the AAD DC Administrators group are granted administrator privileges on the Azure AD DS–managed domain."
+    - content: "Enterprise Admins."
+      isCorrect: false
+      explanation: "That's incorrect. Only members of the AAD DC Administrators group are granted administrator privileges on the Azure AD DS–managed domain."
+    - content: "Administrators."
+      isCorrect: false
+      explanation: "That's incorrect. Only members of the AAD DC Administrators group  are granted administrator privileges on the Azure AD DS–managed domain."
+  - content: "Which of the following tasks can Azure AD DS domain administrators perform?"
+    choices:
+    - content: "Add domain controllers to the managed domain."
+      isCorrect: false
+      explanation: "That's incorrect. This action is not possible with Azure AD DS."
+    - content: "Configure the built-in GPO for the AADDC Computers and AADDC Users containers in the managed domain."
+      isCorrect: true
+      explanation: "That's correct. Administrators, that is, members of the AAD DC Administrators group, can also create and administer custom OUs on both the managed domain and administer computers joined to the managed domain."
+    - content: "Connect to domain controllers for the managed domain using Remote Desktop."
+      isCorrect: false
+      explanation: "That's incorrect. You cannot use RDP to connect the domain controllers of the managed domain."

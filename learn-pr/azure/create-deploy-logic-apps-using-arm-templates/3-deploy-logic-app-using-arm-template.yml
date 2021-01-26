@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.logic-apps-and-arm-templates.deploy-logic-app-using-arm-template
-title: Deploy a Logic Apps workflow using an ARM template
+title: Deploy a Logic Apps workflow using an Azure Resource Manager template
 metadata:
-  title: Deploy a Logic Apps workflow using an ARM template
-  description: Deploy a Logic Apps workflow using an ARM template
+  title: Deploy a Logic Apps workflow using an Azure Resource Manager template
+  description: Deploy a Logic Apps workflow using an Azure Resource Manager template
   ms.date: 05/03/2019
   author: rmcmurray
   ms.author: robmcm

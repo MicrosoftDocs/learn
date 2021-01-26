@@ -16,32 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following types of data may need to have security protections?'
+  - content: 'Which of the following types of data might need to have security protections?'
     choices:
     - content: 'Customer data that contains personal information'
       isCorrect: false
       explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
-    - content: 'Financial data supporting business operations'
+    - content: 'Financial data that supports business operations'
       isCorrect: false
       explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
     - content: 'Intellectual property'
       isCorrect: false
       explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
-    - content: 'All of the above may need security protections'
+    - content: 'All of the above might need security protections'
       isCorrect: true
-      explanation: 'All of the above may merit additional security protections.'
+      explanation: 'All of the above might merit additional security protections.'
 
-  - content: 'Which of the following is an example of an attack you might see at the policies & access layer?'
+  - content: 'Which of the following is an example of an attack you might see at the policies and access layer?'
     choices:
     - content: 'Exposed credentials posted online'
       isCorrect: true
-      explanation: 'Exposed credentials are a huge risk to an organization and apply at the policies & access layer.'
+      explanation: 'Exposed credentials are a huge risk to an organization and apply at the policies and access layer.'
     - content: 'A SYN flood attack'
       isCorrect: false
-      explanation: 'SYN flood attacks are a type of denial-of-service attack that are commonly seen on the network perimeter.'
+      explanation: 'SYN flood attacks are a type of denial-of-service attack that is commonly seen on the network perimeter.'
     - content: 'Following an employee into a datacenter without presenting credentials'
       isCorrect: false
       explanation: 'Following an employee into a datacenter is a physical layer attack.'
     - content: 'Ransomware that encrypts the disks of a virtual machine'
       isCorrect: false
-      explanation: 'Ransomware attacks are a VM/compute layer attack.'
+      explanation: 'Ransomware attacks are at the VM or compute layer.'

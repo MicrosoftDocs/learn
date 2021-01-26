@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-performance.6-accelerate-tune-performance
+metadata:
+  title: Accelerate and tune performance
+  description: Accelerate and tune performance
+  ms.date: 08/05/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Accelerate and tune performance
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-accelerate-tune-performance.md)]

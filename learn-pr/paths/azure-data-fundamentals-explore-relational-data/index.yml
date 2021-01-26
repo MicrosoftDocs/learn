@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.azure-data-fundamentals-explore-relational-data
+metadata:
+  title: 'Azure Data Fundamentals: Explore relational data in Azure'
+  description: 'Azure Data Fundamentals: Explore relational data in Azure'
+  ms.date: 06/29/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Azure Data Fundamentals: Explore relational data in Azure'
+prerequisites: |
+  None
+summary: |
+  Learn the fundamentals of database concepts in a cloud environment, get basic skilling in cloud data services, and build your foundational knowledge of cloud data services within Microsoft Azure. You will explore relational data offerings, provisioning and deploying relational databases, and querying relational data through cloud data solutions with Microsoft Azure.
+iconUrl: /learn/achievements/azure-data-fundamentals-explore-relational-data.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+- student
+products:
+- azure
+modules:
+- learn.wwl.explore-relational-data-offerings
+- learn.wwl.explore-provision-deploy-relational-database-offerings-azure
+- learn.wwl.query-relational-data-azure
+trophy:
+  uid: learn.wwl.azure-data-fundamentals-explore-relational-data.trophy

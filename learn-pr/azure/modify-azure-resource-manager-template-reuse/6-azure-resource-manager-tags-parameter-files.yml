@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.resource-manager-template-reuse.6-azure-resource-manager-tags-parameter-files
+title: Maintain multiple Azure deployments by using Azure Resource Manager template tags and parameter files
+metadata:
+  title: Maintain multiple Azure deployments with Azure Resource Manager template tags and parameter files
+  description: Use Azure Resource Manager template tags to identify the resources of multiple Azure deployment environments. Use Azure Resource Manager template parameter files to manage the deployment of your templates to multiple Azure deployment environments.
+  ms.date: 07/10/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-azure-resource-manager-tags-parameter-files.md)]

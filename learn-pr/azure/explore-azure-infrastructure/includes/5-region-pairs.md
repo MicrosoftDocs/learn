@@ -6,7 +6,7 @@ Each Azure region is always paired with another region within the same geography
 
 Examples of region pairs in Azure are West US paired with East US, and SouthEast Asia paired with East Asia.
 
-![Image showing the relationship between geography, region pair, region, and datacenter](../media/5-region-pairs.png)
+![Diagram showing the relationship between geography, region pair, region, and datacenter. The geography box contains two region pairs. Each region pair contains two Azure regions. Each region contains three availability zones.](../media/5-region-pairs.png)
 
 Since the pair of regions is directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy. Some services offer automatic geo-redundant storage using region pairs.
 

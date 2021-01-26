@@ -3,8 +3,8 @@ uid: learn.wwl.monitor-data-drift-with-azure-machine-learning.creating-monitor
 title: Creating a data drift monitor
 metadata:
   title: Creating a data drift monitor
-  description: "Learn about data drift monitors and how to create them."
-  ms.date: 06/25/2020
+  description: "Creating a data drift monitor"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

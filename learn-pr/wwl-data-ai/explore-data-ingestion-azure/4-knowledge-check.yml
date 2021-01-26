@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-ingestion-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which component of an Azure Data Factory can be triggered to run data ingestion tasks?"
+    choices:
+    - content: "CSV File"
+      isCorrect: false
+      explanation: "That's incorrect. Even though a CSV file can be imported or exported, it cannot be run without an orchestration framework."
+    - content: "Pipeline"
+      isCorrect: true
+      explanation: "That's correct. Pipelines can be triggered to run activities for ingesting data."
+    - content: "Linked service"
+      isCorrect: false
+      explanation: "That's incorrect. A linked service specifies the connection parameters for connecting to an Azure service. It's not a task that you can run."
+  - content: "When might you use PolyBase?"
+    choices:
+    - content: "To query data from external data sources from Azure Synapse Analytics"
+      isCorrect: true
+      explanation: "That's correct. This is the purpose of PolyBase"
+    - content: "To ingest streaming data using Azure Databricks"
+      isCorrect: false
+      explanation: "That's incorrect. PolyBase enables you to access external static data in Azure SQL Database queries"
+    - content: "To orchestrate activities in Azure Data Factory"
+      isCorrect: false
+      explanation: "That's incorrect. You use Data Factory pipelines to orchestrate activities."
+  - content: "Which of these services can be used to ingest data into Azure Synapse Analytics?"
+    choices:
+    - content: "Azure Data Factory"
+      isCorrect: true
+      explanation: "That's correct. Azure Data Factory can be used to ingest data into Azure Synapse Analytics from almost any source."
+    - content: "Power BI"
+      isCorrect: false
+      explanation: "That's incorrect. Power BI is an analytics tool that can be used to report on the data within Azure Synapse Analytics."
+    - content: "Azure Active Directory"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Active Directory is an authentication mechanism, not a data ingestion framework."

@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-knowledge-mining-azure-cognitive-search
+metadata:
+  title: Implement knowledge mining with Azure Cognitive Search
+  description: Do you have information locked up in structured and unstructured data sources?  Using Azure Cognitive Search, you can extract key insights from this data, and enable applications to search and analyze them.
+  ms.date: 09/25/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement knowledge mining with Azure Cognitive Search
+prerequisites: |
+  - Familiarity with Microsoft Azure
+  - Application development experience with C# or Python
+summary: |
+  Do you have information locked up in structured and unstructured data sources?  Using Azure Cognitive Search, you can extract key insights from this data, and enable applications to search and analyze them.
+iconUrl: /learn/achievements/implement-knowledge-mining-with-azure-cognitive-search.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+products:
+- azure
+- azure-cognitive-services
+- azure-sdks
+- azure-cognitive-search
+modules:
+- learn.wwl.create-azure-cognitive-search-solution
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search
+- learn.wwl.create-knowledge-store-with-azure-cognitive-search
+trophy:
+  uid: learn.wwl.implement-knowledge-mining-azure-cognitive-search.trophy

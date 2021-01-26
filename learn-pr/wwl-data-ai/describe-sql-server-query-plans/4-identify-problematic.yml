@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-sql-server-query-plans.identify-problematic
+title: Identify problematic query plans
+metadata:
+  title: Identify problematic query plans
+  description: "Identify problematic query plans"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 23
+content: |
+  [!include[](includes/4-identify-problematic.md)]

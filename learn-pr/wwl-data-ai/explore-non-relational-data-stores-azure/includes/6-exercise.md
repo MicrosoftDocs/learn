@@ -30,11 +30,13 @@ You'll perform this exercise using the Azure portal and the command line.
     bash setup.sh
     ```
 
-    This command creates the Cosmos DB database and Azure Storage account. It takes a few minutes to run. When the script has finished, make a note of the values for the Cosmos DB account, database, container, and Storage account names.
+    This command creates the Cosmos DB database and Azure Storage account. It takes as long as 10 minutes to run. When the script has finished, make a note of the values for the Cosmos DB account, database, container, and Storage account names.
 
-4. Download the Data Migration tool for Azure Cosmos DB  from the following link: [Data Migration tool](https://www.microsoft.com/download/details.aspx?id=46436). Download and open the zip file, and extract the contents of the **drop** folder to a convenient folder on your computer.
+4. Download the Data Migration tool for Azure Cosmos DB  from the following link: [Data Migration tool](https://aka.ms/csdmtool). Download and open the zip file, and extract the contents of the **drop** folder to a convenient folder on your computer.
 
 5. Download [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) and run the installer. Use the default options to install the utility.
+
+6. Download [git for Windows](https://gitforwindows.org/). Run the installer, and accept the default options.
 
 ## Upload product data to Cosmos DB
 

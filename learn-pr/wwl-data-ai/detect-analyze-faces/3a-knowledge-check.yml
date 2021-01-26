@@ -3,8 +3,8 @@ uid: learn.wwl.detect-analyze-faces.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 06/07/2020
+  description: "Knowledge check"
+  ms.date: 01/18/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "You plan to use the Face service to detect human faces in an image. How does the service indicate the location of the faces it detects?"
+  - content: "You plan to use Face to detect human faces in an image. How does the service indicate the location of the faces it detects?"
     choices:
     - content: "A pair of coordinates for each face, indicating the center of the face"
       isCorrect: false
@@ -26,12 +26,23 @@ quiz:
       explanation: "Correct: The location of detected faces are indicated by a coordinates for a rectangular bounding box"
   - content: "What is one aspect that may impair facial detection?"
     choices:
-    - content: "Sunglasses"
+    - content: "Smile expression"
       isCorrect: false
-      explanation: "Incorrect: This is not listed as an impairment to detection.  The service can detect if a person is wearing glasses, but other landmarks can help detect a face, even with sunglasses on"
+      explanation: "Incorrect: This is not listed as an impairment to detection."
     - content: "Extreme angles"
       isCorrect: true
       explanation: "Correct: Best results are obtained when the faces are full-frontal or as near as possible to full-frontal"
     - content: "Fast shutter speed"
       isCorrect: false
       explanation: "Incorrect: This applies to video more than images however, faster shutter speeds tend to create a sharper image, which is beneficial to facial detection"
+  - content: "You want to use Face to identify named individuals. What must you do?"
+    choices:
+    - content: "Use the Computer Vision service - Face cannot perform facial recognition"
+      isCorrect: false
+      explanation: "Incorrect: Face can be used to recognize individual faces."
+    - content: "Use Face to retrieve age and emotional state for each person"
+      isCorrect: false
+      explanation: "Incorrect: Age and emotional state do not uniquely identify individuals"
+    - content: "Use Face to create a group containing multiple images of each named individual, and train a model based on the group"
+      isCorrect: true
+      explanation: "Correct: Creating a group that contains multiple images of named individuals enables you to train a facial recognition model."

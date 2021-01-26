@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.explore-data-ingestion-azure
+metadata:
+  title: Explore data ingestion in Azure
+  description: "Explore data ingestion in Azure"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore data ingestion in Azure
+summary: Explore the different data ingestion options available when you are building a data warehouse with Azure. See how to use Azure Data Factory to ingest data into a data warehouse.
+abstract: |
+  In this module, you will:
+  * Describe data ingestion in Azure
+  * Describe components of Azure Data Factory
+  * See how to use Azure Data Factory to load data into a data warehouse
+prerequisites: |
+  None
+iconUrl: /learn/achievements/explore-data-ingestion-azure.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.explore-data-ingestion-azure.introduction
+- learn.wwl.explore-data-ingestion-azure.describe-common-practices-for-data-loading
+- learn.wwl.explore-data-ingestion-azure.video-load-data-into-data-warehouse
+- learn.wwl.explore-data-ingestion-azure.knowledge-check
+- learn.wwl.explore-data-ingestion-azure.summary
+badge:
+  uid: learn.wwl.explore-data-ingestion-azure.badge

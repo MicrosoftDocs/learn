@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics
+metadata:
+  title: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics
+  description: "Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics"
+  ms.date: 12/23/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics
+summary: Learn how you can perform analytics against Azure Cosmos DB using Azure Synapse Link.
+abstract: |
+  After completing this module, you'll be able to:
+  - Query the Azure Cosmos DB analytical store
+  - Perform simple aggregations with analytical store data
+  - Perform cross container queries in Azure Cosmos DB
+  - Perform complex queries with JSON data
+  - Work with the windowing function and other aggregations
+  - Write data back to the Azure Cosmos DB transactional store
+  - Read data from the transactional store
+prerequisites: |
+  - Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.introduction
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.analytical-store
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.perform-simple-aggregations-with-analytical-store-data
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.perform-cross-container-queries
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.perform-complex-queries-with-json-data
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.work-with-windowing-function-other-aggregations
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.write-data-back-to-transactional-store
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.read-data-from-transactional-store
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.knowledge-check
+- learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.badge

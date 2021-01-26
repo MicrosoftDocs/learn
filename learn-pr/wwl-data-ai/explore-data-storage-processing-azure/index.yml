@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.explore-data-storage-processing-azure
+metadata:
+  title: Explore data storage and processing in Azure
+  description: "Explore data storage and processing in Azure"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore data storage and processing in Azure
+summary: Explore Azure services for performing data analytics, and explore the features of Azure Synapse Analytics.
+abstract: |
+  In this module, you will:
+  * Describe data processing options for performing analytics in Azure
+  * Explore Azure Synapse Analytics
+prerequisites: |
+  None
+iconUrl: /learn/achievements/explore-data-storage-processing-azure.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.explore-data-storage-processing-azure.introduction
+- learn.wwl.explore-data-storage-processing-azure.describe-with-azure
+- learn.wwl.explore-data-storage-processing-azure.explore-azure-synapse-analytics
+- learn.wwl.explore-data-storage-processing-azure.knowledge-check
+- learn.wwl.explore-data-storage-processing-azure.summary
+badge:
+  uid: learn.wwl.explore-data-storage-processing-azure.badge

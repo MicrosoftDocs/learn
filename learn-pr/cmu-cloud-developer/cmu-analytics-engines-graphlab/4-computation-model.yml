@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.4-computation-model
+title: Computational model
+metadata:
+  title: Computational model
+  description: Computational model
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-computation-model.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+# Original course uses interactive GUI not available in YAML. Converted choices to text.
+  - content: |
+      Complete the following sentence: <br><br>
+      GraphLab allows for vertex functions to be executed _______________.
+    choices:
+    - content: "asynchronously"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "both synchronously and asynchronously"
+      isCorrect: true
+      explanation: "Correct. GraphLab has different engines that can be used to execute vertex functions either synchronously or asynchronously."
+    - content: "synchronously"
+      isCorrect: false
+      explanation: "Incorrect."

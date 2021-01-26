@@ -2,9 +2,9 @@
 uid: learn.wwl.explore-non-relational-data-stores-azure.exercise-video
 title: 'Exercise: Upload, download, and query data in a non-relational data store'
 metadata:
-  title: Exercise
-  description: "Exercise"
-  ms.date: 06/26/2020
+  title: 'Exercise: Upload, download, and query data in a non-relational data store'
+  description: "Exercise: Upload, download, and query data in a non-relational data store"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: wwlpub
   ms.topic: interactive-tutorial

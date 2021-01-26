@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.machine-learning-model-nasa.6-score-model
+metadata:
+  title: Exercise - Score the machine learning model that predicts rocket launch success
+  description: See how accurate the model is.
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Score the machine learning model that predicts rocket launch success
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-score-model.md)]

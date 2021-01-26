@@ -3,8 +3,8 @@ uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.knowledge
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 06/27/2020
+  description: "Knowledge check"
+  ms.date: 01/21/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "Set Iterations to 3"
       isCorrect: false
       explanation: "That is incorrect. To create K clusters, you must set the number of centroids to K"
-  - content: "You use Azure Machine Learning designer to create a training pipeline for a classification model. Now you want to use the model in an inference pipeline. Which module should you use to infer cluster predictions from the model?"
+  - content: "You use Azure Machine Learning designer to create a training pipeline for a clustering model. Now you want to use the model in an inference pipeline. Which module should you use to infer cluster predictions from the model?"
     choices:
     - content: "Score Model"
       isCorrect: false

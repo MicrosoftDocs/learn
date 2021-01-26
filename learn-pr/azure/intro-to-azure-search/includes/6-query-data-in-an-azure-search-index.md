@@ -110,7 +110,7 @@ To support this experience, you limit the returned results with the `&$top=X` pa
 Can you construct the full query needed to return page 3 including the total number of results?
 
 ```
-search=*&$top=5$skip=10&$count=true
+search=*&$top=5&$skip=10&$count=true
 ```
 
 The above introduces a new parameter, `search`, which is where you put the query expression. The parameter is included here for clarity as the number of options increase. It can be omitted.

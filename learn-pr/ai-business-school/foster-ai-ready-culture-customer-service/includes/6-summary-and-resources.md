@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-Learn [how AI is helping businesses boost their team collaborations](https://info.microsoft.com/ww-landing-augment-the-employee-experience-website.html) and motivating employees to strengthen their existing skills, Check out this [e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html) for an introduction to AI and tips on how to implement intelligent technologies and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2FPpk).
+Learn [how AI is helping businesses boost their team collaborations](https://info.microsoft.com/ww-landing-augment-the-employee-experience-website.html) and motivating employees to strengthen their existing skills, Check out this [e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html) for an introduction to AI and tips on how to implement intelligent technologies and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in action the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CKw1).
 
 * [Download PDF](https://aka.ms/AIBSCULTCSECONDWL) of the case study introduction to share with others.
 * [Download PDF](https://aka.ms/AIBSCULTCSERESDWL) of the case study resolution to share with others.

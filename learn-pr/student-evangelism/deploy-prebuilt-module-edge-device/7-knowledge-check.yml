@@ -3,7 +3,7 @@ uid: learn.oxford.deploy-prebuilt-module-edge-device.7-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  description: In this unit, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 12/11/2019
   author: leestott
   ms.author: leestott
@@ -13,34 +13,34 @@ durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "A company has recently decided to explore industrial IoT solutions. They want to simulate the working of various machines in a production environment. Which alternative would you recommend in this situation:"
+  - content: "Your company has recently decided to explore industrial IoT solutions. You want to simulate the working of various machines in a production environment. Which alternative would you recommend in this situation?"
     choices:
-    - content: "The company can buy data from external source."
+    - content: "Buy data from external sources."
       isCorrect: false
       explanation: "Buying external data can be expensive and may not simulate exact conditions."
-    - content: "The company can simulate the working of an edge device through a module deployed to the edge."
+    - content: "Simulate the working of an edge device through a module deployed to the edge."
       isCorrect: true
       explanation: "Simulating the data through an edge module provides a flexible and a relatively inexpensive way to mimic the working of sensors in the field."
-    - content: "The company could use historical data."
+    - content: "Use historical data."
       isCorrect: false
       explanation: "While historical data may provide some insights, it may not simulate conditions accurately."
-  - content: "After the company deploys a module that simulates data to the edge, how will they ensure that the module is running:"
+  - content: "You deployed a module to the edge and expect it to simulate data. How do you ensure the module is running?"
     choices:
-    - content: "By viewing the generated data."
+    - content: "View the generated data."
       isCorrect: true
       explanation: "If the module is running, it should simulate data like any other sensor in the field."
-    - content: "By checking the status of the module."
+    - content: "Check the status of the module."
       isCorrect: false
       explanation: "Any status doesn't indicate if the module is running unless you see the simulated data."
-    - content: "By running a test for the module status"
+    - content: "Run a test for the module status."
       isCorrect: false
       explanation: "Any test does not indicate if the module is running unless you see the simulated data."
-  - content: " The company is able to view generated temperature data from a simulated device. What else could they look for apart from the temperature data:"
+  - content: "You're able to view generated temperature data from a simulated device. What else could you look for apart from the temperature data?"
     choices:
-    - content: "View data about the pressure."
+    - content: "Data about the pressure."
       isCorrect: false
       explanation: "It isn't known if pressure is relevant to the observations or not."
-    - content: "View for anomalies in temperature data."
+    - content: "Anomalies in temperature data."
       isCorrect: false
       explanation: "While anomalies could be useful, we do not know enough information about detecting anomalies from simulated data."
     - content: "Ensure that data about the ambient conditions is simulated."

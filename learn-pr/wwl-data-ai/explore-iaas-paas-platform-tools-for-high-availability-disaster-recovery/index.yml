@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr
+metadata:
+  title: Explore IaaS and PaaS platform tools for high availability and disaster recovery
+  description: "Explore IaaS and PaaS platform tools for high availability and disaster recovery"
+  ms.date: 12/16/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore IaaS and PaaS platform tools for high availability and disaster recovery
+summary: Deploy Windows Server Failover Cluster and availability groups in Azure and hybrid environments. Configure temporal tables, geo-replication, and auto-failover groups.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore options for deploying a WSFC in Azure
+  - Explore options for deploying an AG in Azure
+  - Implement Temporal Tables
+  - Plan active geo-replication and auto-failover groups
+prerequisites: |
+  - Experience creating and configuring resources using the Azure portal.
+  - Basic understanding of SQL Server file storage.
+iconUrl: /learn/achievements/explore-iaas-and-paas-platform-tools-for-ha-dr.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.introduction
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-failover-clustering-windows-server
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.configure-always-availability-groups
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-temporal-tables-azure-sql-database
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-active-geo-replication
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.explore-auto-failover-groups
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.exercise
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.knowledge-check
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.summary
+badge:
+  uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.badge

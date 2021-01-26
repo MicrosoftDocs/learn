@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.install-replica-active-directory-domain-controller-azure-virtual-machine
+title: Install a replica Active Directory domain controller in an Azure VM
+metadata:
+  title: Install a replica Active Directory domain controller in an Azure VM
+  description: "Install a replica Active Directory domain controller in an Azure VM"
+  ms.date: 10/30/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-install-replica-active-directory-domain-controller-azure-virtual-machine.md)]

@@ -2,7 +2,7 @@ Azure provides advanced logging, which lets you see both the users who have sign
 
 You've seen how to access the sign-in and audit logs, and how you might use them to search for unexpected user behavior.  Having access to this data is a significant first step in protecting your network, assets, and resources. Gathering and processing the log files can be labor-intensive. This process might identify suspicious user behavior after the event, but it still doesn't meet your security team's need for a real-time view of such behavior.
 
-Azure Monitor can provide the real-time views and alerting that your security team needs.  To reassure your team, you want to learn more about Azure Monitor and how it's used to identify suspicious sign-in behavior.
+Azure Monitor can provide the real-time views and alerting that your security team needs. To reassure your team, you want to learn more about Azure Monitor and how it's used to identify suspicious sign-in behavior.
 
 In this unit, you set up a Log Analytics workspace to hold and store the audit and sign-in log data. You then learn how to send the log files to Azure Monitor. Finally, you see how to create Azure Monitor alerts to notify the team when there's suspicious user behavior or activity.
 
@@ -22,17 +22,19 @@ To use the Log Analytics workspace and Azure Monitor logs, make sure that you ha
 
 ## The Log Analytics workspace
 
-You know that Azure collects user data in the form of audit and sign-in log files, but the data can't be directly imported into Azure Monitor.  First, it needs to be gathered in a Log Analytics workspace.  Each workspace is unique and has its own data repository and configuration. When you configure the workspace, you can analyze the data by using log searches and table-based queries.
+You know that Azure collects user data in the form of audit and sign-in log files, but the data can't be directly imported into Azure Monitor. First, it needs to be gathered in a Log Analytics workspace. Each workspace is unique and has its own data repository and configuration. When you configure the workspace, you can analyze the data by using log searches and table-based queries.
 
 Creating a Log Analytics workspace is straightforward.
 
-1. Sign in to your Azure portal or Sandbox instance.
+1. Sign in to your Azure portal or sandbox instance.
+
 1. Select **All service** and, in the **Search** box, enter **log analytics**.
+
 1. In the results list, select **Log Analytics workspaces**, and then select **Add** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
 
    a. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
    b. Select the subscription, and then select the workspace you want to use, such as an existing **Resource group**.
-   
+
    The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per-gigabyte (GB) cost.
 
 1. Select **OK** to create the workspace.
@@ -41,7 +43,7 @@ You've now created a Log Analytics workspace, where you can gather and do analyt
 
 ### Storage sizes for activity logs
 
-It's important to understand how much storage your workspace is likely to consume. A typical sign-in event log is about 4 kilobytes (KB) in size, and the audit log takes up about 2 KB. 
+It's important to understand how much storage your workspace is likely to consume. A typical sign-in event log is about 4 kilobytes (KB) in size, and the audit log takes up about 2 KB.
 
 To put that into some perspective, if your tenant has 1,000 users, your audit log would generate about 15,000 events each day. There would be a daily storage volume of about 30 megabytes (MB) per day, or 900 MB per month. The numbers are a little larger for the sign-in logs. Assuming an Azure tenant of 1,000 users, the sign-in logs will generate 34,800 events per day, which is about 140 MB per day, or 4 GB of storage per month.
 
@@ -61,6 +63,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you need t
 
    a. Select the **Configure** option, and then select the Log Analytics workspace you created earlier.  
    b. Decide which of the log files you want to stream to the workspace. You can select **Audit log**, **Sign-up log**, or both.
+
 1. Select **Save**.  
 
 You've now set up a data streaming process that will push audit and sign-in data to the Log Analytics workspace. Because this is a new service, it takes about 15 minutes for any data to appear in the workspace.
@@ -71,7 +74,7 @@ You've set up your Log Analytics workspace to receive user activity data. Now yo
 
 ### Log data schemas
 
-The data streams for both the audit and sign-in logs are stored in your Log Analytics workspace in two separate tables, **AuditLogs** and **SignInLogs**.  Each table has its own schema that you can use to query against.
+The data streams for both the audit and sign-in logs are stored in your Log Analytics workspace in two separate tables, **AuditLogs** and **SignInLogs**. Each table has its own schema that you can use to query against.
 
 | Audit log schema   | Sign-in log schema        |
 | ------------------ | ------------------------- |
@@ -108,7 +111,7 @@ The data streams for both the audit and sign-in logs are stored in your Log Anal
 
 With the audit logs stored in your workspace tables, you can now run queries against them. You can write two types of queries, *table-based* and *search-based*. The schema structures in the preceding section show you all the fields you can query against.
 
-The query language you use is Kusto.  It's designed to process data and return a result set.
+The query language you use is Kusto. It's designed to process data and return a result set.
 
 Each Kusto query follows a common pattern:
 
@@ -178,18 +181,18 @@ Alerts aren't dissimilar to queries, the principal difference being that they ru
 
    The **Create rule** page opens.
 
-   If you want to be alerted when more than 10 applications are used in the past week, you would run the following query:
+   If you want to be alerted when more than 10 applications are used in the past week, you would run the following query.
 
    ```kusto
    SignInLogs
-   | where CreatedDateTime >= ao(7d)
+   | where CreatedDateTime >= ago(7d)
    | summarize signInCount = count() by AppDisplayName
    | sort by signInCount desc
    ```
 
 1. Because this is an alert, indicate how often the query is to be run against the data. You can specify the frequency down to the minute, but you should consider both the volume of data and the time it takes to run the query.
 
-1. Assign the alert logic to specify the threshold limits that will trigger the alert:
+1. Assign the alert logic to specify the threshold limits that will trigger the alert.
 
    | Field     | Value                 |
    | --------- | --------------------- |
@@ -199,7 +202,7 @@ Alerts aren't dissimilar to queries, the principal difference being that they ru
 
 1. Give the alert a name and description, and assign the severity of the alert when it's triggered. Because this is a low-level alert, let's set it to **Informational**.
 
-1. Select the action group that will receive the alert.  This group could be your support team, your security team, or any other group that needs to be alerted when the threshold conditions are met.
+1. Select the action group that will receive the alert. This group could be your support team, your security team, or any other group that needs to be alerted when the threshold conditions are met.
 
 1. Select the type of alert you want. You can choose from a variety of alerting methods, from a simple email to text messages. Or you could link to more complex Azure resources, such as Azure functions, webhooks, or logic apps.
 

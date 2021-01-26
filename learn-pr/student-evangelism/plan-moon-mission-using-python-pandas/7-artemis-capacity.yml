@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.7-artemis-capacity
+metadata:
+  title: Predict Artemis sample capacity
+  description: Predict how much Moon rock the Artemis missions will be able to return based on information we have today.
+  ms.date: 11/24/2020
+  author: sguthals 
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Predict Artemis sample capacity
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-artemis-capacity.md)]

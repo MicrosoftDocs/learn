@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.create-bot-with-bot-framework-composer
+metadata:
+  title: Create a Bot with the Bot Framework Composer
+  description: "Create a Bot with the Bot Framework Composer"
+  ms.date: 12/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a Bot with the Bot Framework Composer
+summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
+abstract: |
+  After completing this module, you will be able to:
+  - Create a basic bot with the Bot Framework Composer
+  - Work with Dialogs
+  - Provide the ability to get help or cancel
+  - Integrate with the Bot Framework Language Generation library
+  - Use Cards in your Bot
+  - Integrate with Language Understanding
+prerequisites: |
+  Knowledge of how to use the Azure portal
+  Knowledge of REST and HTTPS requests
+iconUrl: /learn/achievements/create-a-bot-with-the-bot-framework-composer.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure-bot-service
+- azure-cognitive-services
+- azure-language-understanding
+units:
+- learn.wwl.create-bot-with-bot-framework-composer.introduction
+- learn.wwl.create-bot-with-bot-framework-composer.create-basic
+- learn.wwl.create-bot-with-bot-framework-composer.work-with-dialogs
+- learn.wwl.create-bot-with-bot-framework-composer.exercise-add-dialogs
+- learn.wwl.create-bot-with-bot-framework-composer.provide-ability-to-get-help-cancel
+- learn.wwl.create-bot-with-bot-framework-composer.integrate-language-generation-library
+- learn.wwl.create-bot-with-bot-framework-composer.use-cards-your-bot
+- learn.wwl.create-bot-with-bot-framework-composer.integrate-with-luis
+- learn.wwl.create-bot-with-bot-framework-composer.knowledge-check
+- learn.wwl.create-bot-with-bot-framework-composer.summary
+badge:
+  uid: learn.wwl.create-bot-with-bot-framework-composer.badge

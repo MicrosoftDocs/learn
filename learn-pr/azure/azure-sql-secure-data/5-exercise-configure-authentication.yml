@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-secure-data.5-exercise-configure-authentication
+metadata:
+  title: Exercise - Configure authentication
+  description: Exercise - Configure authentication
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Configure authentication
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-configure-authentication.md)]

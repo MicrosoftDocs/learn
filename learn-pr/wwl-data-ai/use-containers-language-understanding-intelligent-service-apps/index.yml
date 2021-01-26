@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.use-containers-language-understanding-intelligent-service-apps
+metadata:
+  title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
+  description: "Use containers for your Language Understanding Intelligent Service (LUIS) Apps"
+  ms.date: 12/04/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
+summary: The Language Understanding (LUIS) container loads your trained or published Language Understanding model. As a LUIS app, the docker container provides access to the query predictions from the container's API endpoints
+abstract: |
+  Upon completion of this module, you will be able to:
+  * Install and Run LUIS Containers
+  * Configure LUIS Containers
+  * Deploy your LUIS Container to Azure Container Instances
+  * Evaluate and Plan Around LUIS Container Limitations
+prerequisites: |
+  Knowledge of navigating the Azure portal
+  Knowledge of at least one programming language such as C#, Python, or JavaScript
+  Basic understanding of REST APIs and JSON
+iconUrl: /learn/achievements/use-containers-for-your-language-understanding-intelligent-service-luis-apps.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+products:
+- azure
+- azure-cognitive-services
+- azure-language-understanding
+units:
+- learn.wwl.use-containers-language-understanding-intelligent-service-apps.introduction
+- learn.wwl.use-containers-language-understanding-intelligent-service-apps.install-run-luis-containers
+- learn.wwl.use-containers-language-understanding-intelligent-service-apps.configure-luis-containers
+- learn.wwl.use-containers-language-understanding-intelligent-service-apps.evaluate-plan-around-luis-container-limitations
+- learn.wwl.use-containers-language-understanding-intelligent-service-apps.knowledge-check
+- learn.wwl.use-containers-language-understanding-intelligent-service-apps.summary
+badge:
+  uid: learn.wwl.use-containers-language-understanding-intelligent-service-apps.badge

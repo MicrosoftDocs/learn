@@ -9,7 +9,7 @@ There are some variable naming rules that are enforced by the C# compiler.
 - Variable names can contain alphanumeric characters and the underscore character.  Special characters like the pound `#`, the dash `-`, and the dollar sign `$` are not allowed.
 - Variable names must begin with an alphabetical letter or an underscore, not a number.  Developers use the underscore for a special purpose, so try to not use that for now.
 - Variable names must NOT be a C# keyword.  For example, these variable name declarations won't be allowed: `float float;` or `string string;`.
-- Variable names are case-sensitive, meaning that `string Value;` and `string value;` are two different variables.
+- Variable names are case-sensitive, meaning that `string MyValue;` and `string myValue;` are two different variables.
 
 ## Variable name conventions
 
@@ -20,7 +20,7 @@ Conventions are suggestions that are agreed upon by the software development com
 - Variable names should use **camel case**, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word.  For example: `string thisIsCamelCase;`.
 - Variable names should be descriptive and meaningful in your application.  You should choose a name for your variable that represents the kind of data it will hold.
 - Variable names should be one or more entire words appended together.  Don't use contractions because the name of the variable may be unclear to others who are reading your code.
-- Variable names shouldn't include the data type of the variable.  You might see some advice to use a style like `string strValue;`.  It was a popular style years ago.  However, most developers don't follow this advice any more.
+- Variable names shouldn't include the data type of the variable.  You might see some advice to use a style like `string strMyValue;`.  It was a popular style years ago.  However, most developers don't follow this advice any more.
 
 The example `string firstName;` follows all of these rules and conventions, assuming I want to use this variable to store data that represents someone's first name.
 

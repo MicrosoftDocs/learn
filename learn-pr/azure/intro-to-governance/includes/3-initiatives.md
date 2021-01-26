@@ -20,4 +20,4 @@ Under this initiative, you would have the following policy definitions:
 
 You can define initiatives using the Azure portal, or command-line tools. In the portal, you use the "Authoring" section.
 
-![Screenshot showing Azure portal defining initiatives and definitions](../media/3-define-initiatives.png)
+![Screenshot of Azure portal showing policy definition authoring pane with the authoring assignments and definitions sections highlighted and initiative and policy definition add buttons highlighted.](../media/3-define-initiatives.png)

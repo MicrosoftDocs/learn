@@ -12,15 +12,15 @@ To use the Azure Machine Learning designer, you create a *pipeline* that you wil
 
 In this module, you'll train a regression model that predicts the price of an automobile based on its characteristics. Azure Machine Learning includes a sample dataset that you can use for this model.
 
-1. On the left side of the designer, select the **Datasets** (&#8981;) tab, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
-2. Select the **Automobile price data (Raw)** dataset on the canvas, and view its settings (the settings pane for the dataset may open automatically and cover the canvas). On the **outputs** tab, select the **Visualize** icon (which looks like a column chart).
+1. On the left side of the designer, expand the **Sample datasets** section, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
+2. Right-click (Ctrl+click on a Mac) the **Automobile price data (Raw)** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
 3. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 4. Scroll to the right of the dataset until you see the **Price** column. This is the label your model will predict.
 5. Select the column header for the **price** column and view the details that are displayed in the pane to the right. These include various statistics for the column values, and a histogram showing the distribution of the column values.
 6. Scroll back to the left and select the **normalized-losses** column header. Then review the statistics for this column noting, there are quite a few missing values in this column. This will limit its usefulness in predicting the **price** label; so you might want to exclude it from training.
 7. View the statistics for the **bore**, **stroke**, and **horsepower** columns, noting the number of missing values. These columns have significantly fewer missing values than **normalized-losses**, so they may still be useful in predicting **price** if you exclude the rows where the values are missing from training.
 8. Compare the values in the **stroke**, **peak-rpm**, and **city-mpg** columns. These are all measured in different scales, and its possible that the larger values for **peak-rpm** might bias the training algorithm and create an over-dependency on this column compared to columns with lower values, such as **stroke**. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
-9. Close the **Automobile price data (Raw) result visualization** window, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon so that you can see the dataset on the canvas like this:
+9. Close the **Automobile price data (Raw) result visualization** window so that you can see the dataset on the canvas like this:
 
 > [!div class="centered"]
 > ![The Automobile price data (Raw) dataset on the designer canvas](../media/dataset.png)
@@ -29,7 +29,7 @@ In this module, you'll train a regression model that predicts the price of an au
 
 You typically apply data transformations to prepare the data for modeling. In the case of the automobile price data, you'll add transformations to address the issues you identified when exploring the data.
 
-1. In the pane on the left, view the **Modules** (&#8862;) tab and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
+1. In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
 2. Drag a **Select Columns in Dataset** module to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
 > [!div class="centered"]
@@ -86,7 +86,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > [!div class="centered"]
 > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training** on your compute cluster.
+2. Select **Submit**, and run the pipeline as a new experiment named **mslearn-auto-training** on your compute cluster.
 3. Wait for the run to finish. This may take 5 minutes or more. When the run has completed, the modules should look like this:
 
 > [!div class="centered"]

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.schedule-tasks-using-sql-server-agent
+metadata:
+  title: Schedule tasks using SQL Server Agent
+  description: "Schedule tasks using SQL Server Agent"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Schedule tasks using SQL Server Agent
+summary: Explore SQL automation for scheduled tasks and automatic alerts for SQL Server and Managed Instance. Configure extended event sessions for tracing activities.
+abstract: |
+  After completing this module, you will be able to:
+  - Schedule necessary maintenance activities for your databases
+  - Configure notifications and alerts on SQL Server Agent jobs and SQL Server
+  - Configure alerts based on performance monitor values
+  - Monitor for server/database configuration changes with Extended Events
+  - Use Extended Events for Performance Analysis
+prerequisites: |
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+iconUrl: /learn/achievements/schedule-tasks-using-sql-server-agent.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.schedule-tasks-using-sql-server-agent.introduction
+- learn.wwl.schedule-tasks-using-sql-server-agent.create-maintenance-plan
+- learn.wwl.schedule-tasks-using-sql-server-agent.describe-task-status-notifications
+- learn.wwl.schedule-tasks-using-sql-server-agent.describe-extended-events
+- learn.wwl.schedule-tasks-using-sql-server-agent.create-extended-events-session
+- learn.wwl.schedule-tasks-using-sql-server-agent.exercise-create-cpu-status-alert
+- learn.wwl.schedule-tasks-using-sql-server-agent.knowledge-check
+- learn.wwl.schedule-tasks-using-sql-server-agent.summary
+badge:
+  uid: learn.wwl.schedule-tasks-using-sql-server-agent.badge

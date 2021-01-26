@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.describe-configuring
+title: Describe configuring non-relational data services
+metadata:
+  title: Describe configuring non-relational data services
+  description: "Describe configuring non-relational data services"
+  ms.date: 12/28/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-describe-configure-non-relational-data-services.md)]

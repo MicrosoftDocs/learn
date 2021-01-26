@@ -8,7 +8,7 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
     > In order to paste code and commands in the Azure Shell terminal, you need to right click and select "Paste"
     
     ```Azure CLI
-    az extension add --name azure-cli-iot-ext
+    az extension add --name azure-iot
     ```
 
 1. Run this command to create a new IoT Hub instance

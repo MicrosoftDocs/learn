@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-language-model-with-luis.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Check your learning."
+  ms.date: 09/13/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-summary.md)]

@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/17/2020
+  ms.date: 01/07/2021
   author: wwlpublish
-  ms.author: v-gea
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -17,65 +17,65 @@ quiz:
     choices:
     - content: "Cosmos DB has multiple database engines, one for each system."
       isCorrect: false
-      explanation: "To support multiple data models, Cosmos DB uses an API for each data model. The APIs provide projections of containers and items as familiar objects to that data model."
+      explanation: "That's incorrect. Cosmos DB doesn't have multiple database engines."
     - content: "Cosmos DB is identical for each system, but has multiple APIs."
       isCorrect: true
-      explanation: "To support multiple data models, Cosmos DB uses an API for each data model. The APIs provide projections of containers and items as familiar objects to that data model."
+      explanation: "That's correct. To support multiple data models, Cosmos DB uses an API for each data model. The APIs provide projections of containers and items as familiar objects to that data model."
     - content: "Cosmos DB dynamically rewrites queries for each system."
       isCorrect: false
-      explanation: "To support multiple data models, Cosmos DB uses an API for each data model. The APIs provide projections of containers and items as familiar objects to that data model."
+      explanation: "That's incorrect. Cosmos DB doesn't dynamically rewrites queries."
   - content: "What is the most suitable API to create graph entities in Cosmos DB?"
     choices:
     - content: "Cassandra"
       isCorrect: false
-      explanation: "Gremlin is the Apache TinkerPop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
+      explanation: "That's incorrect. The Cassandra API is the most suitable API to access wide column store NoSQL data."
     - content: "Azure Table"
       isCorrect: false
-      explanation: "Gremlin is the Apache TinkerPop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
+      explanation: "That's incorrect. The Azure Table API is the most suitable API if you are using data in Azure Table Storage."
     - content: "Gremlin"
       isCorrect: true
-      explanation: "Gremlin is the Apache TinkerPop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
+      explanation: "That's correct. Gremlin is the Apache TinkerPop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
   - content: "Which Azure Cosmos DB deployment guarantees 99.999% availability?"
     choices:
     - content: "Cosmos DB systems with a local replica provide 99.999% availability."
       isCorrect: false
-      explanation: "Microsoft provides a service level agreement that Cosmos DB systems with multiple regions as writeable endpoints will provide 99.999% availability."
+      explanation: "That's incorrect. A local replica isn't enough to guarantee 99.999% availability."
     - content: "Cosmos DB systems with multiple regions as writeable endpoints provide 99.999% availability."
       isCorrect: true
-      explanation: "Microsoft provides a service level agreement that Cosmos DB systems with multiple regions as writeable endpoints will provide 99.999% availability."
+      explanation: "That's correct. Microsoft provides a service level agreement that Cosmos DB systems with multiple regions as writeable endpoints will provide 99.999% availability."
     - content: "Cosmos DB systems that are read-only provide 99.999% availability."
       isCorrect: false
-      explanation: "Microsoft provides a service level agreement that Cosmos DB systems with multiple regions as writeable endpoints will provide 99.999% availability."
+      explanation: "That's incorrect. Using a read-only system isn't enough to guarantee 99.999% availability."
   - content: "Latency is important to your organization. What is the guarantee for Cosmos DB read and write latency globally?"
     choices:
     - content: "< 0.1-ms"
       isCorrect: false
-      explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
+      explanation: "That's incorrect. Latency isn't less than 0.1-ms."
     - content: "< 1-ms"
       isCorrect: false
-      explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
+      explanation: "That's incorrect. Latency isn't less than 1-ms."
     - content: "< 10-ms"
       isCorrect: true
-      explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
+      explanation: "That's correct. Cosmos DB guarantees less than 10-ms latency for indexed reads and writes globally."
   - content: "What is the size limit of a logical partition?"
     choices:
     - content: "10-GB"
       isCorrect: true
-      explanation: "It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
+      explanation: "That's correct. It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
     - content: "100-GB"
       isCorrect: false
-      explanation: "It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
+      explanation: "That's incorrect. It's not as large as 100-GB."
     - content: "Unlimited"
       isCorrect: false
-      explanation: "It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
+      explanation: "That's incorrect. It's not unlimited."
   - content: "What are hot partitions?"
     choices:
     - content: "Partitions that have exceeded their storage limit."
       isCorrect: false
-      explanation: "Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."
+      explanation: "That's incorrect. If your partition has exceeded its storage limit you'll receive storage limit errors and no new data can be inserted."
     - content: "Partitions set to run in high-performance mode."
       isCorrect: false
-      explanation: "Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."
+      explanation: "That's incorrect. Cosmos DB doesn't have a high-performance mode."
     - content: "Partitions that are hit by a disproportionately high number of queries."
       isCorrect: true
-      explanation: "Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."
+      explanation: "That's correct. Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."

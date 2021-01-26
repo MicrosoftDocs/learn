@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your learning."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You want to create a skillset that includes a knowledge store definition. Which type of skill should you use to map the enriched fields extracted by your skillset to the desired structure for the knowledge store data?"
+    choices:
+    - content: "Merge"
+      isCorrect: false
+      explanation: "Incorrect. A merge skill is typically used to merge text extracted from images into the document content."
+    - content: "Shaper"
+      isCorrect: true
+      explanation: "Correct. A shaper skill enables you to define a custom document structure for your enriched fields."
+    - content: "Split"
+      isCorrect: false
+      explanation: "Incorrect. A split skill is used to split large volumes of content into subsections."
+  - content: "You want to create a knowledge store that contains JSON representations of the indexed documents. What kind of projection should you define?"
+    choices:
+    - content: "Object"
+      isCorrect: true
+      explanation: "Correct. Object projections are JSON representations of an indexed document."
+    - content: "File"
+      isCorrect: false
+      explanation: "Incorrect. File projection are not JSON representations of an indexed document."
+    - content: "Table"
+      isCorrect: false
+      explanation: "Incorrect. Table projections are not JSON representations of an indexed document."
+  - content: "You want to create a knowledge store that contains a relational schema for your enriched data. What kind of projection should you define?"
+    choices:
+    - content: "Object"
+      isCorrect: false
+      explanation: "Incorrect. Object projections do not define a relational schema of tables for your enriched data."
+    - content: "File"
+      isCorrect: false
+      explanation: "Incorrect. File projections do not define a relational schema of tables for your enriched data."
+    - content: "Table"
+      isCorrect: true
+      explanation: "Correct. Table projections define a relational schema of tables for your enriched data."
+  - content: "You want to create a knowledge store that contains the images extracted from your indexed documents. What kind of projection should you define?"
+    choices:
+    - content: "Object"
+      isCorrect: false
+      explanation: "Incorrect. Object projections do not contain image data extracted from a document."
+    - content: "File"
+      isCorrect: true
+      explanation: "Correct. File projections creates a .jpg file for each image extracted from a document."
+    - content: "Table"
+      isCorrect: false
+      explanation: "Incorrect. Table projections do not contain image data extracted from a document."

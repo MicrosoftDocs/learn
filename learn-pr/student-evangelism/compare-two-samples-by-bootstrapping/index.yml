@@ -3,7 +3,7 @@ uid: learn.student-evangelism.compare-two-samples-by-bootstrapping
 metadata:
   title: Compare two samples by bootstrapping
   description: Learn how to test hypothesis about samples using bootstrapping
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial

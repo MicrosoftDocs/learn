@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-custom-roles-rbac.manage-custom-roles
-title: Manage custom Azure roles
+title: Manage Azure custom roles
 metadata:
-  title: Manage custom Azure roles
-  description: Learn how to manage custom Azure roles
+  title: Manage Azure custom roles
+  description: Learn how to manage Azure custom roles
   ms.date: 02/10/2020
   author: cwatson-cat
   ms.author: cwatson

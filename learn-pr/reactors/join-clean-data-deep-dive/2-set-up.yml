@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.join-clean-data-deep-dive.2-set-up
+title: Get set up
+metadata:
+  title: Get set up
+  description: Get set up to prepare data for analysis.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-set-up.md)]

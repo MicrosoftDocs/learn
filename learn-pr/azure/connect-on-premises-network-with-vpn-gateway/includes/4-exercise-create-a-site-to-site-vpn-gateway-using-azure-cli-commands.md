@@ -15,6 +15,16 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
         --allocation-method Dynamic
     ```
 
+1. Run this command in Cloud Shell to create the virtual network gateway.
+
+    ```azurecli
+    az network vnet create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name VNG-Azure-VNet-1 \
+        --public-ip-address PIP-VNG-Azure-VNet-1 \
+        --subnet-name GatewaySubnet \
+    ```
+
 1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway.
 
     ```azurecli
@@ -42,6 +52,16 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --allocation-method Dynamic
     ```
 
+1. Run this command in Cloud Shell to create the virtual network gateway.
+
+    ```azurecli
+    az network vnet create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name VNG-HQ-Network \
+        --public-ip-address PIP-VNG-HQ-Network \
+        --subnet-name GatewaySubnet \
+    ```
+
 1. Run these commands in Cloud Shell to create the **VNG-HQ-Network** virtual network gateway.
 
     ```azurecli
@@ -56,7 +76,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --no-wait
     ```
 
-1. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
+1. Gateway creation will take several minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
 
     ```bash
     watch -d -n 5 az network vnet-gateway list \
@@ -64,13 +84,13 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --output table
     ```
 
-    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Press Ctrl+C to halt the command after the gateway is created.
+    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Press <kbd>Ctrl+C</kbd> to halt the command after the gateway is created.
 
     ```output
-    ActiveActive    EnableBgp    GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
-    --------------  -----------  -------------  --------------  ----------------  -------------------  -----------------------------  ------------------------------------  ----------
-    False           False        Vpn            southcentralus  VNG-Azure-VNet-1  Succeeded            <rgn>[sandbox resource group name]</rgn>  48dc714e-a700-42ad-810f-a8163ee8e001  RouteBased
-    False           False        Vpn            southcentralus  VNG-HQ-Network    Succeeded            <rgn>[sandbox resource group name]</rgn>  49b3041d-e878-40d9-a135-58e0ecb7e48b  RouteBased
+    ActiveActive    EnableBgp    EnablePrivateIpAddress   GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
+    --------------  -----------  ------------------------ -------------  --------------  ----------------  -------------------  -----------------------------  ------------------------------------  ----------
+    False           False        False                    Vpn            southcentralus  VNG-Azure-VNet-1  Succeeded            <rgn>[sandbox resource group name]</rgn>  48dc714e-a700-42ad-810f-a8163ee8e001  RouteBased
+    False           False        False                    Vpn            southcentralus  VNG-HQ-Network    Succeeded            <rgn>[sandbox resource group name]</rgn>  49b3041d-e878-40d9-a135-58e0ecb7e48b  RouteBased
     ```
 
 ## Update the local network gateway IP references
@@ -175,7 +195,7 @@ Let's confirm that the VPN tunnels are connected.
         --query '{Name:name,ConnectionStatus:connectionStatus}'
     ```
 
-    You should see output like below indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting`, wait a minute or two and rerun the command. The connections can take a few minutes to fully connect.
+    You should see output like below indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting` or `Unknown`, wait a minute or two and rerun the command. The connections can take a few minutes to fully connect.
 
     ```output
     Name                        ConnectionStatus

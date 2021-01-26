@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-related-maintenance-tasks-sql-server.describe-automatic-tuning
+title: Describe automatic tuning
+metadata:
+  title: Describe automatic tuning
+  description: "Describe automatic tuning"
+  ms.date: 12/10/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-describe-automatic-tuning.md)]

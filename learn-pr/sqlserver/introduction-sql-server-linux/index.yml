@@ -4,8 +4,8 @@ metadata:
   title: Introduction to SQL Server on Linux 
   description: In this module, you will learn about running SQL Server 2019 on Linux servers and containers.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Introduction to SQL Server on Linux

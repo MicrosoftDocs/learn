@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AI edge engineer/implement-cicd-for-iot-edge</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="125.699103%" x2="50%" y2="6.86796686%" id="linearGradient-8">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#22A5CB" offset="11%"></stop>
+            <stop stop-color="#29BADE" offset="23%"></stop>
+            <stop stop-color="#2EC9EB" offset="37%"></stop>
+            <stop stop-color="#31D1F3" offset="53%"></stop>
+            <stop stop-color="#32D4F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#E8F6FE" offset="0%"></stop>
+            <stop stop-color="#B6E5F9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#E8F6FE" offset="0%"></stop>
+            <stop stop-color="#B6E5F9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI-edge-engineer" transform="translate(-160.000000, -319.000000)">
+            <g id="AI-edge-engineer/implement-cicd-for-iot-edge" transform="translate(161.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icon-machinelearning-162-Cognitive-Services" transform="translate(19.000000, 19.000000)" fill="url(#linearGradient-8)" fill-rule="nonzero">
+                    <path d="M61.4852941,29.5048785 C61.3338783,22.8199301 56.2694947,17.2574927 49.5902941,16.4400719 C49.1864811,7.04715955 41.2562603,-0.277032572 31.7986275,0.00804713378 C24.2763249,-0.1540876 17.4646384,4.40293895 14.7864052,11.3892446 C6.74315515,12.360452 0.645559582,19.0651154 0.485294118,27.1141536 C0.834474209,36.2023106 8.51939579,43.2959045 17.6669608,42.9737513 L19.1580719,42.9737513 L46.9808497,42.9737513 C47.2281201,43.0087496 47.4791348,43.0087496 47.7264052,42.9737513 C55.2169506,42.9033429 61.3029249,36.9456516 61.4852941,29.5048785 Z" id="Path"></path>
+                </g>
+                <rect id="Rectangle" fill="#B3B3B3" fill-rule="nonzero" x="48.4852941" y="56" width="3" height="20"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-9)" fill-rule="nonzero" x="41.4852941" y="69" width="17" height="12" rx="0.73"></rect>
+                <g id="noun_Infinity_609609" transform="translate(36.000000, 37.000000)" fill="url(#linearGradient-10)" fill-rule="nonzero">
+                    <path d="M19.6875,0 C17.5095,0 15.5565,0.920769231 14.216625,2.37138462 C14.7015,3.03046154 15.087375,3.76061538 15.348375,4.54353846 C16.2315,3.12092308 17.83575,2.15384615 19.6875,2.15384615 C22.478625,2.15384615 24.75,4.32815385 24.75,7 C24.75,9.67184615 22.478625,11.8461538 19.6875,11.8461538 C17.83575,11.8461538 16.2315,10.8790769 15.348375,9.45646154 C14.8995,8.73276923 14.625,7.90030769 14.625,7 C14.625,5.63446154 14.20875,4.36476923 13.5,3.28676923 C13.28625,2.96261538 13.04775,2.65676923 12.783375,2.37138462 C11.4435,0.920769231 9.489375,0 7.3125,0 C3.2805,0 0,3.14030769 0,7 C0,10.8596923 3.2805,14 7.3125,14 C9.489375,14 11.4435,13.0803077 12.783375,11.6286154 C12.2985,10.9695385 11.912625,10.2393846 11.651625,9.45646154 C10.7685,10.8790769 9.163125,11.8461538 7.3125,11.8461538 C4.521375,11.8461538 2.25,9.67184615 2.25,7 C2.25,4.32815385 4.521375,2.15384615 7.3125,2.15384615 C9.163125,2.15384615 10.7685,3.12092308 11.651625,4.54353846 C12.1005,5.26723077 12.375,6.09969231 12.375,7 C12.375,8.36553846 12.79125,9.63523077 13.5,10.7132308 C13.712625,11.0373846 13.95225,11.3432308 14.216625,11.6286154 C15.5565,13.0803077 17.5095,14 19.6875,14 C23.7195,14 27,10.8596923 27,7 C27,3.14030769 23.7195,0 19.6875,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

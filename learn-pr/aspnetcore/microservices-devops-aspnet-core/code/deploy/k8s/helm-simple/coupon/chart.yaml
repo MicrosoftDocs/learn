@@ -1,0 +1,8 @@
+apiVersion: v2
+name: coupon
+
+# YAML omitted for brevity
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application.
+appVersion: 1.1.0

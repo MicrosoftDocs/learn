@@ -23,7 +23,7 @@ The following video shows how to create the Azure resources you'll need. Use the
 
 1. Wait for the storage account to be created.
 1. When you get the notification, select **Go to resource**.
-1. On the **Overview** page, under **Services**, select **Files**.
+1. On the **Overview** page, select **File shares**.
 1. Select **File share**.
 1. Enter these values:
 

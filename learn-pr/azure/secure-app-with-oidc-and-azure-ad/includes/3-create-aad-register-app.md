@@ -1,8 +1,8 @@
-Suppose you have decided to use OpenID Connect with your transportation company's app to allow users to authenticate by using the same credentials they use to access Office 365. These credentials are stored in Azure Active Directory (Azure AD). Let's look at the resources and configuration you'll need to set this up properly.
+Suppose you have decided to use OpenID Connect with your transportation company's app to allow users to authenticate by using the same credentials they use to access Microsoft 365. These credentials are stored in Azure Active Directory (Azure AD). Let's look at the resources and configuration you'll need to set this up properly.
 
 ## Create an Azure AD tenant
 
-A tenant is an instance of Azure AD that represents an organization. It's a dedicated instance of Azure AD that an organization or app developer receives when the organization or app developer creates a relationship with Microsoft, like signing up for Azure, Microsoft Intune, or Office 365.
+A tenant is an instance of Azure AD that represents an organization. It's a dedicated instance of Azure AD that an organization or app developer receives when the organization or app developer creates a relationship with Microsoft, like signing up for Azure, Microsoft Intune, or Microsoft 365.
 
 Each Azure AD tenant is distinct and separate from other Azure AD tenants. An Azure AD tenant has its own representation of work and school identities, and app registrations. An app registration inside your tenant can allow authentication from accounts only within your tenant or across all tenants.
 
@@ -51,7 +51,7 @@ services.Configure<OpenIdConnectOptions>(AzureADDefaults.OpenIdScheme, options =
     });
 ```
 
-You can use the authentication middleware to sign in users from a one or more Azure AD tenants. The middleware is initialized in the Startup.Auth.cs file, by passing it the client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
+You can use the authentication middleware to sign in users from one or more Azure AD tenants. The middleware is initialized in the Startup.Auth.cs file, by passing it the client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
 
 - Downloading the Azure AD metadata.
 - Processing OpenID Connect authentication responses.

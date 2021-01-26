@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-entities-text-analytics-api.introduction-entity-recognition
+title: Introduction to entity recognition
+metadata:
+  title: Introduction to entity recognition
+  description: "Introduction to entity recognition"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction-entity-recognition.md)]

@@ -26,7 +26,6 @@ roles:
 - developer
 - solution-architect
 - ai-engineer
-- student
 products:
 - azure
 - azure-sdks

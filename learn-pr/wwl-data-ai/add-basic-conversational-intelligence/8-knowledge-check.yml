@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-conversational-intelligence-luis.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "In a LUIS app, what's the purpose of an utterance?"
+    choices:
+    - content: "An utterance represents a task or action that the user wants to do."
+      isCorrect: false
+      explanation: "Incorrect. In LUIS terminology, an intent represents a task or action."
+    - content: "An utterance represents a word or phrase inside an intent."
+      isCorrect: false
+      explanation: "Incorrect. An entity represents a word or phrase inside an utterance. Entities are used to provide context for determining the user's intent."
+    - content: "Utterances are input from the user that your app needs to interpret."
+      isCorrect: true
+      explanation: "Correct. An utterance is a phrase a user might use to interact with the application, such as, \\\"Book a flight to New York\\\"."
+  - content: "What is the purpose of the None intent?"
+    choices:
+    - content: "The None intent is used when a user sends null requests."
+      isCorrect: false
+      explanation: "Incorrect. Null requests aren't technically relevant when interacting with a LUIS app."
+    - content: "Random utterances that don’t map to any of your intents can be mapped to None."
+      isCorrect: true
+      explanation: "Correct. The None intent serves as a catchall for utterances that don't map to existing intents."
+    - content: "The None intent is used to remove spaces from the beginnings and endings of utterances."
+      isCorrect: false
+      explanation: "Incorrect. There's no need to remove blank spaces from utterances that are sent to the application."
+  - content: "What is the preferred option when needing an entity to represent currency?"
+    choices:
+    - content: "Create a new entity and set the decimal places to high-precision."
+      isCorrect: false
+      explanation: "Incorrect. This is not an option in LUIS."
+    - content: "Use a prebuilt entity for currency."
+      isCorrect: true
+      explanation: "Correct. Rather than trying to manage common types of information yourself, you should use the prebuilt entities included with LUIS."
+    - content: "Select the Numbers prebuilt entity and choose the currency format."
+      isCorrect: false
+      explanation: "Incorrect. This is not an option in LUIS for prebuilt entities."

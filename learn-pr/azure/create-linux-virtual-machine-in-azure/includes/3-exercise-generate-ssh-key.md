@@ -29,7 +29,7 @@ Here is the minimum command necessary to generate the key pair for an Azure VM. 
 1. Copy this command into Cloud Shell:
 
    ```bash
-   ssh-keygen -t rsa -b 4096
+   ssh-keygen -m PEM -t rsa -b 4096
    ```
 
 2. Select the *Enter* key to accept the default location. The command creates two files: `id_rsa` and `id_rsa.pub` in the `~/.ssh` directory. The files are overwritten if they exist.

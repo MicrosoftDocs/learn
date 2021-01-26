@@ -31,7 +31,8 @@ units:
 - learn.cela-accessibility-features.windows-10-accessibility
 - learn.cela-accessibility-features.gaming-features-and-tools
 - learn.cela-accessibility-features.microsoft-365-features
-- learn.cela-accessibility-features.summary-resources
 - learn.cela-accessibility-features.knowledge-check
+- learn.cela-accessibility-features.summary-resources
+
 badge:
   uid: learn.accessibility-features.badge

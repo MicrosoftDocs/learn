@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge."
-  ms.date: 06/19/2020
+  ms.date: 09/13/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,17 +13,17 @@ azureSandbox: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "What is the maximum size for images sent to the OCR service?"
+  - content: "You want to extract text from images and then use the Text Analytics service to analyze the text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
     choices:
-    - content: "10000 x 10000 pixels"
+    - content: "Computer Vision"
       isCorrect: false
-      explanation: "Incorrect: The Read API supports images of this size, not the OCR API."
-    - content: "420 mm x 420 mm"
-      isCorrect: false
-      explanation: "Incorrect: This image size is not measured in millimeters (mm)."
-    - content: "4200 x 4200 pixels"
+      explanation: "Incorrect. This resource type only supports image analysis. A separate resource (with its own key and endpoint) would be required for text analytics."
+    - content: "Cognitive Services"
       isCorrect: true
-      explanation: "Correct: The OCR API supports image sizes from 50 x 50 to 4200 x 4200 in pixel units of measurement"
+      explanation: "Correct. A Cognitive Services resource support both Computer Vision for text extraction, and Text Analytics for text analysis."
+    - content: "Text Analytics"
+      isCorrect: false
+      explanation: "Incorrect. The Text Analytics service provides text analysis capabilities, but cannot extract text from images. A separate resource (with its own key and endpoint) would be required for text extraction."
   - content: "You plan to use the Computer Vision service to read text in a  large PDF document. Which API should you use?"
     choices:
     - content: "The Read API"
@@ -35,14 +35,3 @@ quiz:
     - content: "The Recognize Text API"
       isCorrect: false
       explanation: "Incorrect: The Recognize Text API is deprecated."
-  - content: "When using the free-tier subscription, what is an area of consideration in terms of text scanned?"
-    choices:
-    - content: "The free-tier only supports US English"
-      isCorrect: false
-      explanation: "Incorrect: Language is not a prime consideration of the free-tier."
-    - content: "Limited page scans"
-      isCorrect: true
-      explanation: "Correct: The free-tier will only scan the first two pages of PDF or TIFF documents."
-    - content: "Limited lines per page"
-      isCorrect: false
-      explanation: "Incorrect: While the paid subscriptions support up to 200 pages and 300 lines per page, the free-tier only limits the number of pages scanned, not the lines-per-page."

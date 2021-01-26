@@ -10,20 +10,21 @@ metadata:
   ms.prod: learning-python
   show_latex: true
   hidden: true
-title: 'Popular machine learning algorithms: Naives Bayes and PCA'
+title: 'Popular machine learning algorithms: Naive Bayes and PCA'
 summary: |
-  Welcome to the learning path for Popular Machine Learning Algorithms: Naive Bayes and PCA! The content in this learning path pairs with in-person workshops that run in Microsoft Reactor and are standalone learning resources (you don't have to come to a workshop to benefit from these modules).
-  Throughout this learning path, you will be encouraged to test out Python code in Visual Studio Code (VS Code) by using the Python extension and Jupyter Notebooks.
+  Welcome to the learning path for popular machine learning algorithms: Naive Bayes and PCA! The content in this learning path pairs with in-person workshops that run in Microsoft Reactor and are standalone learning resources. (You don't have to come to a workshop to benefit from these modules.)
+  Throughout this learning path, you'll be encouraged to test Python code in Visual Studio Code by using the Python extension and Jupyter Notebooks.
 
   In this learning path, you'll:
   - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning. 
   - Learn how to use principal component analysis to learn about the contents of a food nutrition dataset.
  
-  Complementary content for Microsoft Reactor Workshops.
+  This is complementary content for Microsoft Reactor Workshops.
   
 prerequisites: |
  - Introduction to Python for data science
 iconUrl: /learn/achievements/reactors/machine-learning-popular-algorithms.svg
+hidden: true
 levels:
 - beginner
 roles:

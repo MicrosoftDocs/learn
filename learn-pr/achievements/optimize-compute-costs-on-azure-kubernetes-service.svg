@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Develop and deploy applications on Kubernetes/optimize-compute-costs-on-azure-kubernetes-service</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-8">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#CCCCCC" offset="15%"></stop>
+            <stop stop-color="#707070" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="42.7695987%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#626F7B" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#E5E8E8" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="33.7619446%" x2="60.1440216%" y2="126.823975%" id="linearGradient-12">
+            <stop stop-color="#E9EBEB" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="42.8294556%" x2="0%" y2="91.3554932%" id="linearGradient-13">
+            <stop stop-color="#DADCDE" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-9.93901477%" x2="50%" y2="100%" id="linearGradient-14">
+            <stop stop-color="#D9DCDD" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-15">
+            <stop stop-color="#626F7B" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-16">
+            <stop stop-color="#E5E8E8" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-17">
+            <stop stop-color="#E5E8E8" offset="0%"></stop>
+            <stop stop-color="#8C8F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-18">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-19">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="99.8254799%" y2="50%" id="linearGradient-20">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.9009901%" x2="100%" y2="49.9009901%" id="linearGradient-21">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Develop-and-deploy-applications-on-Kubernetes" transform="translate(-159.000000, -319.000000)">
+            <g id="Develop-and-deploy-applications-on-Kubernetes/optimize-compute-costs-on-azure-kubernetes-service" transform="translate(160.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Computer" transform="translate(18.000000, 23.000000)" fill-rule="nonzero">
+                    <path d="M63.4,-1.59872116e-13 C63.7313708,-1.59932987e-13 64,0.26862915 64,0.6 L64.0006812,19.6409092 C61.6471403,18.2793047 58.9145783,17.5 56,17.5 C47.163444,17.5 40,24.663444 40,33.5 C40,37.7483822 41.6557813,41.610036 44.3572168,44.4748343 L0.6,44.4745763 C0.26862915,44.4745763 1.48387116e-15,44.2059471 0,43.8745763 L0,0.6 C-4.05812251e-17,0.26862915 0.26862915,-1.58367954e-13 0.6,-1.59872116e-13 L63.4,-1.59872116e-13 Z" id="Combined-Shape" fill="url(#linearGradient-8)"></path>
+                    <path d="M45.595426,58.081927 C39.1592945,57.0323242 38.9061882,52.2341399 38.9061882,44.4745763 L26.1423995,44.4745763 C26.1423995,52.2341399 25.9254512,57.0323242 19.4893198,58.081927 C17.6491107,58.2930288 16.2600225,59.9111157 16.2711864,61.8305085 L48.8135593,61.8305085 C48.8247232,59.9111157 47.435635,58.2930288 45.595426,58.081927 Z" id="Path" fill="url(#linearGradient-9)"></path>
+                </g>
+                <g id="Group-19" transform="translate(59.500000, 42.500000)">
+                    <circle id="Oval" stroke="url(#linearGradient-10)" stroke-width="1.5" fill="#7E848F" cx="14" cy="14" r="13.25"></circle>
+                    <circle id="Oval" stroke="url(#linearGradient-11)" stroke-width="0.5" cx="14" cy="14" r="9.75"></circle>
+                    <polygon id="Rectangle" fill="#7E848F" transform="translate(14.117269, 21.652041) rotate(-45.000000) translate(-14.117269, -21.652041) " points="8.11696517 16.0409201 20.1175718 15.686905 19.7191829 27.6171768 11.7508843 24.0535925"></polygon>
+                    <path d="M20.9517331,26.2141831 L18.1544296,20.8103529 C17.9028725,20.3647059 17.2928465,20 16.7987165,20 L11.0287001,20 C10.5345701,20 9.93667271,20.3717647 9.7003887,20.8263529 L6.91364452,26.0548486 C9.09904695,27.4609663 11.3077416,28 14.0551046,28 C16.7418245,28 18.7986738,27.5638301 20.9517331,26.2141831 Z" id="Fill-327" fill="url(#linearGradient-12)"></path>
+                    <polygon id="Path-6" fill="url(#linearGradient-13)" points="13.8754598 12.1374681 21.8754598 9.7127214 15.3519212 15.0460547"></polygon>
+                    <circle id="Oval" fill="url(#linearGradient-14)" cx="14" cy="14" r="3.33333333"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-15)" cx="14" cy="14" r="2"></circle>
+                    <line x1="14.1172685" y1="4.50548363" x2="14.1172685" y2="6.44591942" id="Path-7" stroke="url(#linearGradient-16)" stroke-width="0.5"></line>
+                    <line x1="20.8510263" y1="7.15283224" x2="19.478931" y2="8.52492754" id="Path-7" stroke="url(#linearGradient-11)" stroke-width="0.5"></line>
+                    <line x1="7.58955327" y1="7.09296248" x2="8.96164857" y2="8.46505778" id="Path-7" stroke="url(#linearGradient-11)" stroke-width="0.5"></line>
+                    <line x1="4.48545105" y1="13.8705767" x2="6.42588684" y2="13.8705767" id="Path-7" stroke="url(#linearGradient-17)" stroke-width="0.5"></line>
+                    <line x1="21.3333333" y1="13.8624001" x2="23.2737691" y2="13.8624001" id="Path-7" stroke="url(#linearGradient-17)" stroke-width="0.5"></line>
+                    <line x1="6.70391299" y1="20.5336605" x2="8.07600829" y2="19.1615652" id="Path-7" stroke="url(#linearGradient-11)" stroke-width="0.5"></line>
+                    <line x1="20.0418287" y1="19.1224857" x2="21.413924" y2="20.494581" id="Path-7" stroke="url(#linearGradient-11)" stroke-width="0.5"></line>
+                </g>
+                <g id="Icon-compute-23-Kubernetes-Services" transform="translate(21.500000, 29.000000)">
+                    <polygon id="Path" fill="url(#linearGradient-18)" fill-rule="nonzero" points="11.6 0.44 5.88 1.5 5.88 9.3 11.6 10.52 17.34 8.22 17.34 2.4"></polygon>
+                    <path d="M11.82,10.4 L17.06,8.28 C17.1808189,8.23131223 17.2703632,8.12684384 17.3,8 L17.3,2.72 C17.2890451,2.5602484 17.1882064,2.4206255 17.04,2.36 L11.74,0.56 L11.5,0.56 L6.3,1.52 C6.13281757,1.56272961 6.01188148,1.70785293 5.99990386,1.88 L5.99990386,8.94 C5.99592485,9.12222228 6.12180731,9.28167338 6.3,9.32 L11.56,10.42 C11.6471208,10.4312473 11.7356243,10.4244393 11.82,10.4 Z" id="Path"></path>
+                    <path d="M5.88,1.5 L5.88,9.3 L11.66,10.52 L11.66,0.52 L5.88,1.5 Z M8.32,8.7 L6.7,8.38 L6.7,2.38 L8.32,2.12 L8.32,8.7 Z M10.84,9.16 L8.98,8.86 L8.98,2 L10.84,1.68 L10.84,9.16 Z" id="Shape" fill="#341A6E" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="url(#linearGradient-19)" fill-rule="nonzero" points="23.98 0.54 18.26 1.6 18.26 9.4 23.98 10.62 29.7 8.3 29.7 2.5"></polygon>
+                    <path d="M18.26,1.6 L18.26,9.4 L24,10.62 L24,0.62 L18.26,1.6 Z M20.68,8.8 L19.06,8.48 L19.06,2.48 L20.68,2.22 L20.68,8.8 Z M23.2,9.26 L21.34,8.96 L21.34,2.1 L23.2,1.76 L23.2,9.26 Z" id="Shape" fill="#341A6E" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="url(#linearGradient-20)" fill-rule="nonzero" points="5.74 11.2 0.02 12.26 0.02 20.06 5.74 21.28 11.48 18.98 11.48 13.16"></polygon>
+                    <path d="M0,12.26 L0,20 L5.78,21.22 L5.78,11.22 L0,12.26 Z M2.42,19.48 L0.8,19.14 L0.8,13.14 L2.42,12.86 L2.42,19.48 Z M4.96,20 L3.1,19.7 L3.1,12.76 L4.96,12.44 L4.96,20 Z" id="Shape" fill="#341A6E" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="url(#linearGradient-21)" fill-rule="nonzero" points="18.08 11.12 12.36 12.18 12.36 19.98 18.08 21.22 23.8 18.9 23.8 13.08"></polygon>
+                    <path d="M12.36,12.18 L12.36,20 L18.12,21.22 L18.12,11.22 L12.36,12.18 Z M14.78,19.4 L13.16,19.06 L13.16,13.06 L14.78,12.78 L14.78,19.4 Z M17.3,19.84 L15.44,19.54 L15.44,12.68 L17.3,12.36 L17.3,19.84 Z" id="Shape" fill="#341A6E" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="url(#linearGradient-18)" fill-rule="nonzero" points="30.42 11.22 24.7 12.28 24.7 20.08 30.42 21.3 36.16 19 36.16 13.18"></polygon>
+                    <path d="M24.7,12.28 L24.7,20 L30.48,21.22 L30.48,11.22 L24.7,12.28 Z M27.14,19.5 L25.52,19.16 L25.52,13.16 L27.14,12.88 L27.14,19.5 Z M29.66,19.94 L27.8,19.64 L27.8,12.78 L29.66,12.46 L29.66,19.94 Z" id="Shape" fill="#341A6E" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="url(#linearGradient-18)" fill-rule="nonzero" points="11.46 22.08 5.74 23.12 5.74 30.92 11.46 32.16 17.2 29.84 17.2 24.04"></polygon>
+                    <path d="M11.68,32 L16.9,30 C17.0512311,29.946821 17.1490775,29.8000514 17.14,29.64 L17.14,24.44 C17.1705447,24.2498693 17.0612808,24.0649611 16.88,24 L11.6,22.2 C11.5226598,22.170826 11.4373402,22.170826 11.36,22.2 L6.16,23.14 C5.97383956,23.169752 5.83763753,23.3314919 5.83990386,23.52 L5.83990386,30.6 C5.83592485,30.7822223 5.96180731,30.9416734 6.14,30.98 L11.4,32 C11.4910657,32.0290959 11.5889343,32.0290959 11.68,32 Z" id="Path"></path>
+                    <path d="M5.74,23.12 L5.74,30.92 L11.52,32.16 L11.52,22 L5.74,23.12 Z M8.18,30.34 L6.56,30 L6.56,24 L8.18,23.72 L8.18,30.34 Z M10.7,30.8 L8.84,30.5 L8.84,23.62 L10.7,23.3 L10.7,30.8 Z" id="Shape" fill="#341A6E" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="url(#linearGradient-18)" fill-rule="nonzero" points="23.82 22.16 18.1 23.22 18.1 31.02 23.82 32.24 29.56 29.94 29.56 24.12"></polygon>
+                    <path d="M18.1,23.22 L18.1,31.02 L23.88,32.24 L23.88,22.24 L18.1,23.22 Z M20.54,30.44 L18.92,30.1 L18.92,24.1 L20.54,23.82 L20.54,30.44 Z M23.06,30.88 L21.2,30.58 L21.2,23.72 L23.06,23.4 L23.06,30.88 Z" id="Shape" fill="#341A6E" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

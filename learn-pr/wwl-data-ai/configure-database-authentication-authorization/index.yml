@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.configure-database-authentication-authorization
+metadata:
+  title: Configure database authentication and authorization
+  description: "Configure database authentication and authorization"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure database authentication and authorization
+summary: Contrast authentication using Azure Active Directory vs Windows Active Directory vs SQL Server authentication. Implement various security principals and configure permissions.
+abstract: |
+  After completing this module, you will be able to:
+  - Learn about authentication options for Azure SQL Database
+  - Create various security principals
+  - Configure permissions within a SQL database
+prerequisites: |
+  - Basic understanding of Active Directory.
+  - Understanding of why security is a crucial part of database system planning.
+  - Ability to write code in the SQL language, particular the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+iconUrl: /learn/achievements/configure-database-authentication-and-authorization.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-database-authentication-authorization.introduction
+- learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory
+- learn.wwl.configure-database-authentication-authorization.describe-authentication-identities
+- learn.wwl.configure-database-authentication-authorization.describe-security-principals
+- learn.wwl.configure-database-authentication-authorization.describe-database-object-permissions
+- learn.wwl.configure-database-authentication-authorization.explain-execute-as-user
+- learn.wwl.configure-database-authentication-authorization.explain-policy-of-least-privilege
+- learn.wwl.configure-database-authentication-authorization.exercise-authorize-access-sql-database-azure-active-directory
+- learn.wwl.configure-database-authentication-authorization.knowledge-check
+- learn.wwl.configure-database-authentication-authorization.summary
+badge:
+  uid: learn.wwl.configure-database-authentication-authorization.badge

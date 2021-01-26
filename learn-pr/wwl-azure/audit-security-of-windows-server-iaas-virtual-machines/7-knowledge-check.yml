@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-security-of-windows-server-iaas-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "To use the advanced capabilities of Security Center with on-premises resources, which of the following steps must you complete?"
+    choices:
+    - content: "You must upgrade the subscription to Standard pricing tier."
+      isCorrect: false
+      explanation: "That's incorrect. You must also upgrade the **Log Analytics** workspace to Standard pricing tier."
+    - content: "You must upgrade the subscription and the **Log Analytics** workspace to Standard pricing tier."
+      isCorrect: true
+      explanation: "That's correct. You must upgrade the subscription, and also any additional **Log Analytics** workspaces you want to use with Security Center."
+    - content: "You must upgrade the **Log Analytics** workspace to Standard pricing tier."
+      isCorrect: false
+      explanation: "That's incorrect. You must also upgrade the subscription to Standard pricing tier."
+  - content: "Which of the following recommendations relating to Secure management ports can be resolved by selecting the Quick Fix button?"
+    choices:
+    - content: "Internet-facing VMs should be protected with network security groups."
+      isCorrect: false
+      explanation: "That's incorrect. You must remediate this issue manually."
+    - content: "Management ports should be closed on your VMs."
+      isCorrect: false
+      explanation: "That's incorrect. You must remediate this issue manually."
+    - content: "Management ports of VMs should be protected with just-in-time network access control."
+      isCorrect: true
+      explanation: "That's correct. You can apply a quick fix to remediate this issue automatically."
+  - content: "You want to check for vulnerabilities in your deployed VMs. You have applied **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** on your VMs. Where in Security Center can you review discovered vulnerabilities?"
+    choices:
+    - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Vulnerabilities in your virtual machines should be remediated (powered by Qualys)** recommendation."
+      isCorrect: true
+      explanation: "That's correct. Security Center lists vulnerabilities discovered by this assessment in this recommendation."
+    - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Vulnerability assessment solution should be installed on your virtual machines** recommendation."
+      isCorrect: false
+      explanation: "That's incorrect. This vulnerability lists VMs that don't have the assessment installed."
+    - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** recommendation."
+      isCorrect: false
+      explanation: "That's incorrect. This vulnerability lists VMs where the assessment is not enabled."

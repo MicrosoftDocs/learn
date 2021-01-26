@@ -5,7 +5,7 @@ metadata:
   description: Learn how to embody diversity and inclusivity across marketing engines 
   ms.date: 04/16/2020
   author: asajohnson
-  ms.author: asajohnson
+  ms.author: asjohnso
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn inclusive marketing principles
@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 - m365
-- dynamics
+- dynamics-365
 units:
 - learn.azure.inclusive-marketing.1-introduction
 - learn.azure.inclusive-marketing.2-inclusive-marketing-overview

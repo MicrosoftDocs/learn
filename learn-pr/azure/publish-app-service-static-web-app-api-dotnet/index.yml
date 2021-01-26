@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.publish-static-web-app-and-api-dotnet
+metadata:
+  title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
+  description: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
+summary: Automatically deploy and update a Blazor web application and its API from a GitHub repository.
+abstract: |
+  In this module, you will:
+    - Clone and run an existing Blazor web app locally
+    - Create an API for the app with Azure Functions
+    - Publish the app and its API to Azure Static Web Apps
+prerequisites: |
+  - Basic knowledge of web app concepts
+  - C# .NET experience at a beginner level
+  - A GitHub account
+  - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/), including the _Azure_ and _ASP.NET and web development_ workloads
+  - Familiarity with basic Visual Studio operation, including interacting with Git repositories and basic debugging functions
+iconUrl: /learn/achievements/publish-static-web-app-and-api-dotnet.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+  - azure-functions
+  - azure-app-service
+  - azure-app-service-static
+units:
+  - learn.azure.publish-static-web-app-and-api-dotnet.1-introduction
+  - learn.azure.publish-static-web-app-and-api-dotnet.2-exercise-get-started
+  - learn.azure.publish-static-web-app-and-api-dotnet.3-static-web-apps
+  - learn.azure.publish-static-web-app-and-api-dotnet.4-exercise-static-web-apps
+  - learn.azure.publish-static-web-app-and-api-dotnet.5-fallback-routes
+  - learn.azure.publish-static-web-app-and-api-dotnet.6-exercise-fallback-routes
+  - learn.azure.publish-static-web-app-and-api-dotnet.7-build-api
+  - learn.azure.publish-static-web-app-and-api-dotnet.8-exercise-function-app
+  - learn.azure.publish-static-web-app-and-api-dotnet.9-action
+  - learn.azure.publish-static-web-app-and-api-dotnet.10-exercise-action
+  - learn.azure.publish-static-web-app-and-api-dotnet.11-knowledge-check
+  - learn.azure.publish-static-web-app-and-api-dotnet.12-summary
+badge:
+  uid: learn.azure.publish-static-web-app-and-api-dotnet.badge

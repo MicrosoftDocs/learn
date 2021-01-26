@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the unit of execution for your Azure Automation Account?"
+    choices:
+    - content: "Runbook"
+      isCorrect: true
+      explanation: "That's correct. Runbooks are the unit of execution in Azure Automation."
+    - content: "Schedule"
+      isCorrect: false
+      explanation: "That's incorrect. Schedules simply specific when a runbook is executed."
+    - content: "Container"
+      isCorrect: false
+      explanation: "That's incorrect. Containers are not used in this context."
+  - content: "What scope can Azure Policy be deployed to?"
+    choices:
+    - content: "Tenant"
+      isCorrect: false
+      explanation: "That's incorrect. In order to deploy policy to a tenant, management groups must be used."
+    - content: "Subscription"
+      isCorrect: true
+      explanation: "That's correct. A policy provides a level of governance over your Azure subscriptions which enforce rules and controls over your Azure resources."
+    - content: "User"
+      isCorrect: false
+      explanation: "That's incorrect. Policies can only be assigned to resources and users are not resources."
+  - content: "What is the name for the scope that you must define for a SQL Elastic Job?"
+    choices:
+    - content: "Target Group"
+      isCorrect: true
+      explanation: "That's correct. In elastic jobs you must define a target group, which can consist of a SQL Database server, an elastic pool, or one or more single databases."
+    - content: "Management Group"
+      isCorrect: false
+      explanation: "That's incorrect. A management group is an Azure concept, not a SQL concept."
+    - content: "Resource Group"
+      isCorrect: false
+      explanation: "That's incorrect. A resource group is an Azure concept, not a SQL concept."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 10/30/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/07-summary.md)]

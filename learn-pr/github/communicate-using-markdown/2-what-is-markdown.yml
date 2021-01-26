@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.communicate-using-markdown.2-what-is-markdown
+title: What is Markdown?
+metadata:
+  title: What is Markdown?
+  description: Learn to use common Markdown features to enhance your GitHub communications.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-markdown.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check - upgrade SQL Server tools
   description: Knowledge check - upgrade SQL Server tools
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 6

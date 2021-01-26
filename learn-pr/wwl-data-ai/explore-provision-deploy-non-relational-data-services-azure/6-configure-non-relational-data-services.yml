@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.configure-azure-cosmos-db,-azure-storage
+title: Configure Azure Cosmos DB, and Azure Storage
+metadata:
+  title: Configure Azure Cosmos DB, and Azure Storage
+  description: "Configure Azure Cosmos DB, and Azure Storage"
+  ms.date: 12/28/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-configure-non-relational-data-services.md)]

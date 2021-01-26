@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.nodejs-files.2-file-system
+title: Work with the file system
+metadata:
+  title: Work with the file system
+  description: Use the "fs" module to work with the file system.
+  author: burkeholland
+  ms.author: buhollan
+  ms.date: 04/20/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-file-system.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following can you do with the fs module?"
+      choices:
+        - content: "List the contents of a folder"
+          isCorrect: true
+          explanation: "The `readdir` and `readdirasync` methods list items in a directory"
+        - content: "Compose file and folder paths"
+          isCorrect: false
+          explanation: "The fs module is for reading files and folders, not for manipulating paths"

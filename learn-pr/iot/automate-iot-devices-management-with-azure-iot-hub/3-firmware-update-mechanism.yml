@@ -5,7 +5,7 @@ metadata:
   description: Before getting started with your first firmware update on an IoT device, let's discuss what it actually means to implement such an operation and how Azure IoT Hub helps making the process simpler and more scalable.
   ms.date: 12/17/2019
   author: olivierbloch
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Firmware update mechanism

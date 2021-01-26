@@ -4,7 +4,7 @@ title: Check Windows Server readiness
 metadata:
   title: Check Windows Server readiness
   description: Learn about the system requirements for Azure File Sync and how to run system checks by using Azure PowerShell.
-  ms.date: 05/18/20
+  ms.date: 05/18/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

@@ -14,4 +14,5 @@ In this module, you will:
 
 ## Prerequisites  
 
-None
+- Ability to navigate the Azure portal
+- Ability to use a command-line interface

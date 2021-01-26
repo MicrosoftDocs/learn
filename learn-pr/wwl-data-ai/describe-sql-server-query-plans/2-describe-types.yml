@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-sql-server-query-plans.describe-types-of
+title: Describe types of query plans
+metadata:
+  title: Describe types of query plans
+  description: "Describe types of query plans"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-describe-types.md)]

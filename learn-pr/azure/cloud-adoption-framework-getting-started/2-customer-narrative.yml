@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-getting-started.2-customer-narrative
+title: Customer narrative
+metadata:
+  title: Customer narrative
+  description: Tailwind Traders serves as a customer narrative throughout the Cloud Adoption Framework Learn modules. This unit shares the core narrative to establish context.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-customer-narrative.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which assets in the technology portfolio summary aren't compatible with Azure?
+    choices:
+    - content: VMware virtualization
+      isCorrect: false
+      explanation: The Azure VMware Solution deploys a VMware private cloud to Azure.
+    - content: Linux and other open-source servers
+      isCorrect: false
+      explanation: Azure loves open-source software. Azure Migrate is capable of migrating Linux and other open-source operating systems to Azure.
+    - content: Windows servers
+      isCorrect: false
+      explanation: Windows servers, including older versions like 2008 R2, are compatible with Azure.
+    - content: All of the above are compatible with Azure.
+      isCorrect: true
+      explanation: Azure can host VMware, Windows, Linux, and a variety of other technical assets.
+  - content: What risks could prevent Tailwind Traders be successful migrating two datacenters in the next 18 to 24 months?
+    choices:
+    - content: Effort and time to migrate the portfolio
+      isCorrect: false
+      explanation: Realistic expectations regarding the work, plans, and skills required are very important. This isn't the only risk to migration.
+    - content: Controls to operate the migrated assets
+      isCorrect: false
+      explanation: Governance, security, and operations controls are required to migrate whole datacenters. This isn't the only risk.
+    - content: Organization of people, teams, and responsibilities
+      isCorrect: false
+      explanation: Multiple functions are required to successfully migrate production workloads. As adoption continues, the alignment of teams will become more important.
+    - content: It depends; all of the above.
+      isCorrect: true
+      explanation: At different stages of cloud adoption, the risks and roadblocks will change. The next module in this series will help detect and address each of these common risks. 

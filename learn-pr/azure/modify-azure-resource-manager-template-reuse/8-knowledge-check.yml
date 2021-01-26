@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.resource-manager-template-reuse.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 07/10/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "If you want to track costs, which of the following should you add to a resource?"
+    choices:
+    - content: "The API version"
+      isCorrect: false
+      explanation: "A resource tag's value will be displayed in the overview page for that Azure resource and in cost reports."
+    - content: "Tags"
+      isCorrect: true
+      explanation: "A resource tag's value will be displayed in the overview page for that Azure resource and in cost reports."
+    - content: "A variable"
+      isCorrect: false
+      explanation: "A resource tag's value will be displayed in the overview page for that Azure resource and in cost reports."
+  - content: "A template expression always starts and ends with which characters?"
+    choices:
+    - content: "[]"
+      isCorrect: true
+      explanation: "A template expression always starts and ends with brackets: []."
+    - content: "{}"
+      isCorrect: false
+      explanation: "A template expression always starts and ends with brackets: []."
+    - content: "()"
+      isCorrect: false
+      explanation: "A template expression always starts and ends with brackets: []."
+  - content: "Template expressions can be used in which section or sections of a template?" 
+    choices:
+    - content: "The ```variables:{}``` section"
+      isCorrect: false
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "The ```parameters:[]``` section"
+      isCorrect: false
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "The ```resources:[]``` section"
+      isCorrect: false
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "The ```outputs:[]``` section"
+      isCorrect: false
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Template expressions can be used in any section of an ARM template."

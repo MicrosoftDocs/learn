@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 12/09/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: How do you create a dependency between two or more resources?
+      choices:
+        - content: Create a `resources` attribute on the parent resource. Add the child resource as a value of the `resources` attribute you created. 
+          isCorrect: false
+          explanation: What's described is a parent-child relationship. It doesn't create a dependency by itself. You still have to add a `dependsOn` construct on the child resource, and point to the parent resource.
+        - content: Create a `dependencies` attribute on the dependent resource. Add the resource you depend on as a value to the `dependencies` attribute.
+          isCorrect: false
+          explanation: There's no `dependencies` attribute.
+        - content: Add a `dependsOn` construct on a resource, and add the name or ID of the resource it depends on.
+          explanation: This is how you would create a dependency between one or many resources.
+          isCorrect: true
+    - content: "The condition element is used to:"
+      choices:
+        - content: Conditionally set values on a resource's attribute.
+          isCorrect: false
+          explanation: You use the `if()` function to conditionally set a value in a template. 
+        - content: Conditionally run shell commands in your ARM template.
+          isCorrect: false
+          explanation: You can run shell commands within a template. However, you can't use the `condition` element to control the running of shell commands.
+        - content: Conditionally deploy a resource.
+          isCorrect: true
+          explanation: Assigning a `condition` construct to a resource definition enables you to control whether to deploy this resource or not.
+    - content: How do you get the current index in a `copy` iteration?
+      choices:
+        - content: Refer to the `$index` field within the `copy` element.
+          explanation: There's no `$index` field.
+          isCorrect: false
+        - content: You use the `copyIndex()` function. 
+          isCorrect: true
+          explanation: That's how to get the current index of the iteration.
+        - content: There's a `currentIndex()` function that returns the current index value.
+          isCorrect: false
+          explanation: There's no `currentIndex()` function.

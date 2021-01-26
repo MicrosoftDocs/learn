@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about Azure VM network interfaces is true?"
+    choices:
+    - content: "Each network interface attached to a VM must exist in the same location as the VM, but can be in any subscription."
+      isCorrect: false
+      explanation: "That's incorrect. Each network interface attached to a VM must exist in the same location and the same subscription as the VM."
+    - content: "Each network interface attached to a VM must be connected to a virtual network that exists in the same Azure location and subscription as the network interface."
+      isCorrect: true
+      explanation: "That's correct."
+    - content: "You cannot change the subnet a VM is connected to after you create the VM, but you can change the virtual network."
+      isCorrect: false
+      explanation: "That's incorrect. You can change the subnet a VM is connected to after you create the VM, but you cannot change the virtual network."
+  - content: "When assigning private IPv4 addresses in a subnet with the address range 10.3.0.0/16, which of the following addresses are available for assignment dynamically?"
+    choices:
+    - content: "10.3.0.2"
+      isCorrect: false
+      explanation: "That's incorrect. Azure reserves the first four addresses in each subnet address range. You cannot assign these four addresses to your resources: 10.3.0.0-10.3.0.3."
+    - content: "10.3.255.255"
+      isCorrect: false
+      explanation: "That's incorrect. This is the subnet broadcast address, which<!-- Verify. --> is unavailable."
+    - content: "10.3.255.254"
+      isCorrect: true
+      explanation: "That's correct. Any address in the range 10.3.0.4 through 10.3.255.254 is available for assignment."
+  - content: "Which of the following statements about routing in Azure is true?"
+    choices:
+    - content: "You cannot create system routes, but you can override existing system routes."
+      isCorrect: false
+      explanation: "That's incorrect. You cannot create system routes, nor override existing system routes."
+    - content: "When the next hop type is **none**, traffic is dropped."
+      isCorrect: true
+      explanation: "That's correct. Traffic routed to the None next hop type is not routed outside the subnet, but is dropped."
+    - content: "You need to define gateways for Azure to route traffic between subnets."
+      isCorrect: false
+      explanation: "That's incorrect. You do not need to define gateways to route traffic between subnets."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-app-service-migration-assistant.understand-assessment
+title: Assess a web app with the Azure App Service Migration Assistant
+metadata:
+  title: Assess a web app with the Azure App Service Migration Assistant
+  description: Explore the reasons why you should move your web application to Azure App Service, potential migration hurdles, and the value of an assessment.
+  ms.date: 05/21/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+azureSandbox: false
+content: |
+  [!include[](includes/3-understand-assessment.md)]

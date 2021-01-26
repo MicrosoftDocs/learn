@@ -58,13 +58,13 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
 ### Create a policy assignment
 
-You've created the policy, but you haven't actually put it into effect yet. To enable the policy, you need to create an assignment. In this case, you'll assign it to the scope of our **msftlearn-core-infrastructure-rg** resource group, so that it applies to anything inside the resource group.
+You've created the policy, but you haven't actually put it into effect yet. To enable the policy, you need to create an assignment. In this case, you'll assign it to the scope of your **msftlearn-core-infrastructure-rg** resource group, so that it applies to anything inside the resource group.
 
 1. In the policy pane, select **Assignments** from the **Authoring** section on the left.
 
 1. Select **Assign policy** at the top.
 
-1. In the **Assign policy** pane, you'll assign our policy to our resource group. For **Scope**, click the blue **...**. Select your subscription and the **msftlearn-core-infrastructure-rg** resource group, then click **Select**.
+1. In the **Assign policy** pane, you'll assign your policy to your resource group. For **Scope**, click the blue **...**. Select your subscription and the **msftlearn-core-infrastructure-rg** resource group, then click **Select**.
 
 1. For **Policy definition**, click the blue **...**. In the **Type** drop-down, select **Custom**, select the **Enforce tag on resource** policy you created, then click **Select**.
 
@@ -76,14 +76,14 @@ You've created the policy, but you haven't actually put it into effect yet. To e
 
 ### Test out the policy
 
-Now that you have assigned the policy to our resource group, any attempts to create a resource without the **Department** tag should fail. Try this out.
+Now that you have assigned the policy to your resource group, any attempts to create a resource without the **Department** tag should fail. Try this out.
 
 > [!IMPORTANT]
 > Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed but the deployment will still fail. If this happens, allow for additional time and retry your deployment.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Search for **Storage Account** and select **Storage account - blob, file, table, queue** in the results. Select **Create**.
+1. Search for **Storage account** and select **Storage account** - in the results, select **Create**.
 
 1. Select your subscription, and the **msftlearn-core-infrastructure-rg** resource group.
 
@@ -107,10 +107,10 @@ Now that you have assigned the policy to our resource group, any attempts to cre
 
 ## Use policies to enforce standards
 
-You've seen how you could use policies to ensure that our resources have the tags that organize our resources. There are other ways policies can be used to our benefit.
+You've seen how you could use policies to ensure that your resources have the tags that organize your resources. There are other ways policies can be used to our benefit.
 
 You could use policy to restrict which Azure regions you can deploy resources to. For organizations that are heavily regulated or have legal or regulatory restrictions on where data can reside, policies help to ensure that resources aren't provisioned in geographic areas that would go against these requirements.
 
 You could use policy to restrict which types of virtual machine sizes can be deployed. You may want to allow large VM sizes in your production subscriptions, but maybe you'd like to ensure that you keep costs minimized in your dev subscriptions. By denying the large VM sizes through policy in your dev subscriptions, you can ensure they don't get deployed in these environments.
 
-You could also use policy to enforce naming conventions. If our organization has standardized on specific naming conventions, using policy to enforce the conventions helps us to keep a consistent naming standard across our Azure resources.
+You could also use policy to enforce naming conventions. If your organization has standardized on specific naming conventions, using policy to enforce the conventions helps us to keep a consistent naming standard across your Azure resources.

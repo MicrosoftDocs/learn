@@ -1,4 +1,4 @@
-A literal is *literally* a hard-coded value.  However, most application will require us to work with values that we don't know much about ahead of time.  In other words we'll need to work with data that comes from users, from files, or from across the network.  
+A literal is *literally* a hard-coded value.  However, most applications will require us to work with values that we don't know much about ahead of time.  In other words we'll need to work with data that comes from users, from files, or from across the network.  
 
 When we need to work with data from outside of our code, we'll declare a variable.
 

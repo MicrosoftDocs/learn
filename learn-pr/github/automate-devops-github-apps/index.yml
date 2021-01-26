@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.github.automate-devops-github-apps
+metadata:
+  title: "Automate DevOps processes by using GitHub Apps"
+  description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Automate DevOps processes by using GitHub Apps"
+summary: Get started with GitHub in about an hour.
+abstract: |
+  In this module, you will:
+  - Install Probot apps onto your repository
+  - Put GitHub webhooks to use
+  - Utilize GitHub's APIs
+  - Install GitHub Apps and work with them
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+  - Familiarity with pull requests
+iconUrl: /learn/achievements/github/automate-devops-github-apps.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.automate-devops-github-apps.1-introduction
+- learn.github.automate-devops-github-apps.2-what-are-github-apps
+- learn.github.automate-devops-github-apps.3-get-started-with-github-apps
+- learn.github.automate-devops-github-apps.4-knowledge-check
+- learn.github.automate-devops-github-apps.5-summary
+badge:
+  uid: learn.github.automate-devops-github-apps.badge

@@ -6,7 +6,7 @@ metadata:
   description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Mike is creating an Azure Data Lake Storage Gen2 account. He must configure this account to be able to processes analytical data workloads for best performance. Which option should he configure when creating the storage account?"
+  - content: "Mike is creating an Azure Data Lake Storage Gen2 account. He must configure this account to be able to process analytical data workloads for best performance. Which option should he configure when creating the storage account?"
     choices: 
     - content: "On the **Basic** tab, set the **Performance** option to **Standard**."
       isCorrect: false

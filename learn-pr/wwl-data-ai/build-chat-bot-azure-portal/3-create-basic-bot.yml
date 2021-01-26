@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-chat-bot-with-azure-portal.create-basic-bot
+title: Create a basic bot
+metadata:
+  title: Create a basic bot
+  description: "Create a basic bot"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-basic-bot.md)]

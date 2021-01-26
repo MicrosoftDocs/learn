@@ -36,7 +36,7 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
     **Admin Password or Key**: Enter a password of your choice.
 
-    When all fields have been filled in, select the checkbox at the bottom of the page to accept the terms and select "Purchase" to begin the deployment.
+    When all fields have been filled in, select **Review + create**, then **Create**, to begin the deployment.
 
 1. Verify that the deployment has completed successfully.  A virtual machine resource should have been deployed into the selected resource group.  Take note of the machine name, the value should be in the format `vm-0000000000000`. Also, take note of the associated **DNS Name**, which should be in the format `<dnsLabelPrefix>`.`<location>`.cloudapp.azure.com.
 

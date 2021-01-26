@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.azure.resource-manager-template-reuse
+metadata:
+  description: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.  
+  ms.date: 07/10/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Deploy to multiple Azure environments by using ARM template features"
+summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.
+abstract: |
+  In this module, you will:
+  - Create an expression for a unique value by using Azure Resource Manager template functions.
+  - Reuse your expression by storing it in an Azure Resource Manager template variable.
+  - Organize and track your deployed Azure resources by using resource tags.
+  - Manage multiple deployment parameters by using Azure Resource Manager template parameter files.
+prerequisites: |
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true), installed locally.
+  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension, installed locally.
+  - One of these tools:
+    - The latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools, installed locally.
+    - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true), installed locally.
+iconUrl: /learn/achievements/modify-azure-resource-manager-template-reuse.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- vs-code
+- azure-resource-manager
+- azure-storage-accounts
+units:
+- learn.azure.resource-manager-template-reuse.1-introduction
+- learn.azure.resource-manager-template-reuse.2-azure-resource-manager-functions
+- learn.azure.resource-manager-template-reuse.3-exercise-use-functions-create-expression
+- learn.azure.resource-manager-template-reuse.4-azure-resource-manager-variables
+- learn.azure.resource-manager-template-reuse.5-exercise-use-variables-store-expressions
+- learn.azure.resource-manager-template-reuse.6-azure-resource-manager-tags-parameter-files
+- learn.azure.resource-manager-template-reuse.7-exercise-use-tags-parameter-files
+- learn.azure.resource-manager-template-reuse.8-knowledge-check
+- learn.azure.resource-manager-template-reuse.9-summary
+badge:
+  uid: learn.azure.resource-manager-template-reuse.badge

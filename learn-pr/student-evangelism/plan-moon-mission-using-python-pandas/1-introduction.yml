@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.1-introduction
+metadata:
+  title: Introduction
+  description: Introduction to the Moon mission module for Over the Moon.
+  ms.date: 11/24/2020
+  author: sguthals 
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

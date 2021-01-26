@@ -28,6 +28,6 @@ As with input bindings, there are multiple types of output bindings. However not
 
 To create a binding as an output, you must define the `direction` as `out`. The parameters for each type of binding may vary.
 
-## Combining input and output bindings 
+## Combining input and output bindings
 
 It's possible to apply multiple bindings to a single function. This allows you to define both input and output bindings, and the input and output can even be the same binding type.

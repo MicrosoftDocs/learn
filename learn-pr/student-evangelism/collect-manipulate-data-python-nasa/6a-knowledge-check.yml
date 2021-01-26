@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.collect-manipulate-data-python-nasa.6a-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Answer questions to see what you've learned. 
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  Answer the following questions to see what you've learned.  
+quiz:
+  questions:
+  - content: "Why do we need to clean data?"
+    choices:
+    - content: "So others can read the data more easily"
+      isCorrect: false
+      explanation: "Although this is a beneficial result, it's not the main reason we clean data."
+    - content: "Computers get confused by inconsistent data"
+      isCorrect: true
+      explanation: "Correct! We must clean data so that computers can accurately use the data."
+    - content: "To create better visualizations with data"
+      isCorrect: false
+      explanation: "Although this is a beneficial result, it's not the main reason we clean data."
+  - content: "Which of the following is not a library we're using?"
+    choices:
+    - content: "PyTorch"
+      isCorrect: true
+      explanation: "Correct! PyTorch is a machine learning library, but we're not using it in this module."
+    - content: "pandas"
+      isCorrect: false
+      explanation: "We're using the pandas library."
+    - content: "Sklearn"
+      isCorrect: false
+      explanation: "Sklearn is the main library we're using for making the machine learning model."
+    - content: "NumPy"
+      isCorrect: false
+      explanation: "We're using the NumPy library."

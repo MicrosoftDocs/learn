@@ -57,7 +57,7 @@ You've been supplied with a **docker-compose.yml** file. You want to ensure that
 1. In the terminal, to change to the right folder, type the following command, and then press Enter:
 
     ```bash
-    cd ~/run-sql-server-linux-containers
+    cd ~/mslearn-run-sql-server-linux-containers
     ```
 
 1. To edit the **docker-compose.yml** file, type the following command, and then press Enter:
@@ -71,7 +71,7 @@ You've been supplied with a **docker-compose.yml** file. You want to ensure that
     > [!IMPORTANT]
     > Don't use dollar signs in this password as in previous units. This is because dollar signs are interpreted differently in a YAML file.
 
-1. To close the file, press Escape and then press ALT-X. To save the changes, press **y**, and then press **Enter**.
+1. To close the file, press <kbd>Escape</kbd>, and then press <kbd>CTRL</kbd>-<kbd>X</kbd>. To save the changes, press **y**, and then press **Enter**.
 1. To edit the password in the **db-init.sh** file, type the following command, and then press Enter:
 
     ```bash
@@ -79,7 +79,7 @@ You've been supplied with a **docker-compose.yml** file. You want to ensure that
     ```
 
 1. In the editor, replace the password **safePASSWORD123** with the password **Passw0rdSQL**.
-1. To close the file, press Escape, and then press ALT-X. To save the changes, press **y**, and then press **Enter**.
+1. To close the file, press <kbd>Escape</kbd>, and then press <kbd>CTRL</kbd>-<kbd>X</kbd>. To save the changes, press **y**, and then press **Enter**.
 
 ## Start the containers
 

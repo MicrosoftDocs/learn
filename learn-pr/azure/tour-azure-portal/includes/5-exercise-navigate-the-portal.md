@@ -14,7 +14,7 @@ The Azure portal has several features and services available; let's look at some
 
 1. Select **Virtual machines**. If you don't see it, use the search box. The **Virtual Machines** pane appears. You haven't created any virtual machines so there are no results.
 
-1. Select **+ Add**. The **Create a virtual machine** pane appears.
+1. Select **+ Add** > **Virtual machine**. The **Create a virtual machine** pane appears.
 
 1. Select the **X** in the top right-hand corner to close the **Create a virtual machine** pane.
 
@@ -81,7 +81,7 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Select the **Language & region** tab in the settings. Select **Language** and pick **Español**, and then select the **Apply** button. If a **Translate this page** dialog box appears, close the box. The whole portal is now in Spanish.
 
-1. To revert back to English, select the **Settings** (cog) icon in the top menu bar and switch to the **Idioma y región** settings. Select **Idioma** and pick **English**. Select the **Aplicar** button. The portal returns to English.
+1. To revert back to English, select the **Settings** (cog) icon in the top menu bar, and switch to the **Idioma y región** settings. Select **Idioma**, and pick **English**. Select the **Aplicar** button. The portal returns to English.
 
 ## Help pane
 
@@ -107,7 +107,7 @@ Support requests can only be created using an active paid subscription. Creating
 
 1. Review the features that have recently been released. Also note and explore the other **Help** menu options, such as:
 
-    - Azure roadmap
+    - Azure updates
     - Launch guided tour
     - Keyboard shortcuts
     - Show diagnostics
@@ -119,7 +119,7 @@ Support requests can only be created using an active paid subscription. Creating
 
 ## Feedback pane
 
-![Icon representing the feedback panel](../media/5-feedback-icon.png)
+![Icon re-representing the feedback panel from earlier in unit](../media/5-feedback-icon.png)
 
 1. Select the **Feedback** (smiley face) icon to open the **Send us feedback** pane.
 

@@ -20,4 +20,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Web/sites"
-  hint: "Make sure you have followed all the steps to create your Wordpress website."
+  hint: "Make sure you have followed all the steps to create your WordPress website."

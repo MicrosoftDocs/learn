@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.implement
+title: Implement File Integrity Monitoring
+metadata:
+  title: Implement File Integrity Monitoring
+  description: "Implement File Integrity Monitoring"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/05-implement-file-integrity-monitoring.md)]

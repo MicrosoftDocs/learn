@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following options are valid reasons to use Azure Migrate?"
+    choices:
+    - content: "Assess Azure readiness, migrate with confidence, and migrate databases."
+      isCorrect: false
+      explanation: "That's incorrect. Migrate databases isn't a feature of Azure Migrate. You use Azure Database Migration Service for database migration."
+    - content: "Assess Azure readiness, obtain VM size recommendations, and migrate with confidence."
+      isCorrect: true
+      explanation: "That's correct. All three are valid reasons to use Azure Migrate."
+    - content: "Obtain VM size recommendations, assess Azure readiness, and replicate identities to Azure AD."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Migrate isn't used to replicate identities to Azure AD. You can use Azure AD Connect to replicate your Active Directory to Azure AD."
+  - content: "Which of these source server configurations are supported by Azure Migrate: Server Migration?"
+    choices:
+    - content: "VMware VMs, physical Unix, and physical Windows Server."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Migrate: Server Migration doesn't support the migration of physical Unix hosts."
+    - content: "Azure VMs, physical Unix, and physical Sun Solaris."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Migrate: Server Migration doesn't support the migration of physical Unix hosts or Sun Solaris hosts."
+    - content: "Azure VMs, VMware VMs, Hyper-V VMs, and physical Windows Server."
+      isCorrect: true
+      explanation: "That's correct."
+  - content: "What service can an administrator use to migrate large quantities of data to Azure?"
+    choices:
+    - content: "Azure total cost of ownership (TCO) Calculator."
+      isCorrect: false
+      explanation: "That's incorrect. Azure TCO Calculator is used to estimate costs on Azure."
+    - content: "Azure Advisor."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Advisor recommends best practices to improve your environment."
+    - content: "Azure Data Box."
+      isCorrect: true
+      explanation: "That's correct. Azure Data Box can be used to migrate large amounts of data to Azure."

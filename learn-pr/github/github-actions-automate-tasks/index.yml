@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.github-actions-automate-tasks
 metadata:
-  title: "Automate development tasks by using GitHub Actions - Learn"
+  title: "Automate development tasks by using GitHub Actions"
   description: Create a basic GitHub Action and use that action in a workflow.
   ms.date: 05/19/2020
   author: jamcneil
