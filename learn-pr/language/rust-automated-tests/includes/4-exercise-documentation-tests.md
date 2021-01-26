@@ -1,12 +1,12 @@
-In this exercise you'll create documentation tests in the code snippet below for the functions `div` and `sub`.
+In this exercise, you'll create documentation tests in the code snippet below for the functions `div` and `sub`.
 
-For the `div` function write the following doctests:
+For the `div` function, write the following doctests:
 
   1. assert that `10` divided by `2` equals `5`
   2. assert that `6` divided by `3` equals `2`
   3. assert that `10` divided by `0` panics
 
-For the `sub` function write the following doctests:
+For the `sub` function, write the following doctests:
 
   1. assert that `9` subtracted by `2` equals `7`
   2. assert that `6` subtracted by `9` equals `-3`
@@ -60,7 +60,7 @@ pub fn sub(a: i32, b: i32) -> i32 {
 }
 ```
 
-Remember to create the project in your computer first, as documentation tests are only available for library crates. You can run the following commands in your terminal to accomplish this:
+Remember to create the project in your computer first, as documentation tests are only available for library crates. You can run the following commands in your terminal to accomplish this objective:
 
 ```sh
 $ cargo new --lib doctests_exercise

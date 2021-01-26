@@ -25,7 +25,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 ```
 
-Like unit tests, doc tests will pass if they run without panicking. To verify certain results, use an *assert!* macro to verify the actual output is as expected.  You can call the test suite for this code with the command `$ cargo test`, and the output would look like this:
+Like unit tests, doc tests will pass if they run without panicking. To verify certain results, use an `assert!` macro to verify the actual output is as expected.  You can call the test suite for this code with the command `$ cargo test`, and the output would look like this:
 
 ```output
 $ cargo test
