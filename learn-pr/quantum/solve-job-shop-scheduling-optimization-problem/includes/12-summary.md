@@ -33,14 +33,16 @@ You can find this tutorial in Jupyter notebook format in our samples repo - this
 
 If this has piqued your interest, be sure to check out our other Azure Quantum Learn Modules.
 
-If you're curious to learn more about quantum computing, be sure to check out the [Microsoft Quantum Documentation](/quantum/?azure-portal=true). There you'll find comprehensive reference material, including:
+If you're curious to learn more about quantum computing, be sure to check out the [Microsoft Quantum Documentation](https://docs.microsoft.com/en-us/quantum/).
+
+There you'll find comprehensive reference material, including:
 
 - Fundamental concepts around quantum computing.
 - Quickstarts and tutorials.
 - Q# language and API reference.
 - How to use Q# with C#, Python, and Jupyter notebooks.
 
-Once you're ready to dive deeper, you can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum computing with the Quantum Katas](/quantum/intro-to-katas?azure-portal=true).
+Once you're ready to dive deeper, you can [browse code samples](https://docs.microsoft.com/en-us/samples/browse/?WT.mc_id=launchblog-blog-QA&products=qdk) or [learn quantum computing with the Quantum Katas](https://docs.microsoft.com/en-us/quantum/tutorials/intro-to-katas).
 
 To learn about real-world usage of the QDK, check out this blog post on Microsoft Quantum's collaboration with Pacific Northwest National Laboratory (PNNL), [Simulating nature with the new Microsoft Quantum Development Kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/?azure-portal=true).
 
