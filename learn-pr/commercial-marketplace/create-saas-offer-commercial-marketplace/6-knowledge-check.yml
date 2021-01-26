@@ -32,9 +32,9 @@ quiz:
     - content: 'An offer landing page.'
       isCorrect: false
       explanation: 'When you publish a transact SaaS offer, you will have to provide a landing page URL. Your offer landing page is where customers are redirected to provide additional user information and activate their subscription.'
-    - content: 'The Azure Active Directory (AAD) identity your application will use when communicating with the commercial marketplace.'
+    - content: 'The Azure Active Directory (Azure AD) identity your application will use when communicating with the commercial marketplace.'
       isCorrect: false
-      explanation: 'When you choose to sell your SaaS offer through Microsoft, you will need to integrate your application with AAD. AAD makes SaaS offer purchases from the commercial marketplace easier and more secure.'
+      explanation: 'When you choose to sell your SaaS offer through Microsoft, you will need to integrate your application with Azure AD. Azure AD makes SaaS offer purchases from the commercial marketplace easier and more secure.'
     - content: 'A connection webhook.'
       isCorrect: false
       explanation: 'To create a transact offer, you will need to provide a connection webhook URL during the technical configuration in Partner Center. Your connection webhook facilitates communication about subscriptions between your organization and Microsoft.'

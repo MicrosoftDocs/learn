@@ -2,14 +2,14 @@
 uid: learn.create-saas-offer-commercial-marketplace
 metadata:
   title: Create a SaaS offer for the commercial marketplace
-  description: This module provides a high level overview of SaaS offers in the commercial marketplace
+  description: This module provides a high-level overview of SaaS offers in the commercial marketplace
   ms.date: 01/25/2021
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a SaaS offer for the commercial marketplace
-summary: This module provides a high level overview of SaaS offers in the commercial marketplace
+summary: This module provides a high-level overview of SaaS offers in the commercial marketplace
 abstract: |
   In this module, you will:
   - Develop a basic understanding of how SaaS applications are sold through the commercial marketplace

@@ -5,4 +5,4 @@ Now that you have a strong understanding of the SaaS offer basics, we encourage 
 - [Documentation to help you plan a SaaS offer for the commercial marketplace](https://docs.microsoft.com/azure/marketplace/plan-saas-offer)
 - [Documentation for creating a SaaS offer in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/create-new-saas-offer)
 - [Commercial marketplace samples index on GitHub](https://github.com/Azure-Samples/commercial-marketplace-samples)
- - [SaaS fulfillment APIs in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/partner-center-portal/pc-saas-fulfillment-apis)
+- [SaaS fulfillment APIs in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/partner-center-portal/pc-saas-fulfillment-apis)
