@@ -7,7 +7,8 @@ Azure AD simplifies the way organizations manage authorization and access by pro
 
 Azure AD also allows organizations to securely enable the use of personal devices, such as mobiles and tablets, and enable collaboration with business partners and customers.
 
-:::image type="content" source="../media/azure-active-directory-diagram-expanded.png" alt-text="Azure Active Directory works with cloud apps such as M365, devices, and on-premises applications":::
+
+![Image summarizing the role of Azure Data Factory for ingesting and processing data](../media/azure-active-directory-diagram-expanded.png)
 
 Azure AD is used by IT admins to control access to corporate apps and resources, based on business requirements. It can also be set up to require multi-factor authentication when accessing important organizational resources. Azure AD can be used to automate user provisioning between an existing Windows Server AD and cloud apps, including Microsoft 365. Finally, Azure AD provides powerful tools to automatically help protect user identities and credentials and to meet an organization’s access governance requirements.
 
