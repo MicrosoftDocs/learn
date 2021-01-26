@@ -5,7 +5,7 @@ workspace.
 
 You can use the Azure Quantum service by adding a **quantum workspace** resource to your Azure subscription in the Azure portal. A quantum workspace resource, or workspace for short, is a collection of assets associated with running quantum or optimization applications.
 
-1. Open the main page of the [Azure portal](https://ms.portal.azure.com/#home).
+1. Open the main page of the [Azure portal](https://ms.portal.azure.com/).
 
 1. Click **Create a resource**, type **Azure Quantum**, and press enter to see the search results. On the results page, you should see a tile for the **Azure Quantum (preview)** service.
 
