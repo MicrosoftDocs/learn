@@ -1,4 +1,3 @@
-- 2 minutes
 
 ## Change group license assignments
 
@@ -12,10 +11,12 @@
 
 1. Review the current assignments and then, on the menu, select **+ Assignments**.
 
-![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted](../media/lp1-mod2-change-group-license.png)
+> [!div class="mx-imgBorder"]
+> ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted](../media/lp1-mod2-change-group-license.png)
 
 > [!NOTE]
-> Note> If you have no licenses to add, you may choose to sign up for an Office 365 or Microsoft 365 trial subscription.
+> If you have no licenses to add, you may choose to sign up for an Office 365 or Microsoft 365 trial subscription.
+
 1. On the Update license assignments blade, select another license, clear the selection of an existing license, add or remove license options, or any combination.
 
 1. When complete, select **Save**.
@@ -36,19 +37,23 @@ When you're using group-based licensing the same errors can occur, but they happ
 
 1. Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
 
-![Group and error notifications message](../media/group-error-notification.png)
+> [!div class="mx-imgBorder"]
+> ![Group and error notifications message](../media/group-error-notification.png)
 
 1. Select the notification to open a list of all affected users. You can select each user individually to see more details.
 
-![list of users in group licensing error state](../media/list-of-users-with-errors.png)
+> [!div class="mx-imgBorder"]
+> ![list of users in group licensing error state](../media/list-of-users-with-errors.png)
 
 1. To find all groups that contain at least one error, on the **Azure Active Directory** blade select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
 
-![Overview and information about groups in error state](../media/group-errors-widget.png)
+> [!div class="mx-imgBorder"]
+> ![Overview and information about groups in error state](../media/group-errors-widget.png)
 
 1. Select the box to see a list of all groups with errors. You can select each group for more details.
 
-![Overview and list of groups with errors](../media/list-of-groups-with-errors.png)
+> [!div class="mx-imgBorder"]
+> ![Overview and list of groups with errors](../media/list-of-groups-with-errors.png)
 
 The following sections give descriptions of each potential problem and the way to resolve it.
 
@@ -97,13 +102,15 @@ To solve this problem, remove users from unsupported locations from the licensed
 **PowerShell:** PowerShell cmdlets report this error as *ProhibitedInUsageLocationViolation*.
 
 > [!NOTE]
-> Note> When Azure AD assigns group licenses, any users without a specified usage location inherit the location of the directory. We recommend that administrators set the correct usage location values on users before using group-based licensing to comply with local laws and regulations.
+> When Azure AD assigns group licenses, any users without a specified usage location inherit the location of the directory. We recommend that administrators set the correct usage location values on users before using group-based licensing to comply with local laws and regulations.
+
 ## Duplicate proxy addresses
 
 If you use Exchange Online, some users in your organization might be incorrectly configured with the same proxy address value. When group-based licensing tries to assign a license to such a user, it fails and shows “Proxy address is already being used.”
 
 > [!TIP]
-> Tip> To see if there is a duplicate proxy address, execute the following PowerShell cmdlet against Exchange Online:
+> To see if there is a duplicate proxy address, execute the following PowerShell cmdlet against Exchange Online:
+
 `Get-Recipient -ResultSize unlimited | where {$_.EmailAddresses -match "user@contoso.onmicrosoft.com"} | fL Name, RecipientType,`emailaddresses
 
 After you resolve any proxy address problems for the affected users, make sure to force license processing on the group to ensure that the licenses can now be applied.
@@ -139,7 +146,6 @@ Some Microsoft Online products you might own are *add-ons*. Add-ons require a pr
 Microsoft Workplace Analytics is an add-on product. It contains a single service plan with the same name. We can only assign this service plan to a user, or group, when one of the following prerequisites is also assigned:
 
 - Exchange Online (Plan 1)
-
 - Exchange Online (Plan 2)
 
 If we try to assign this product on its own to a group, the portal returns a notification message. If we select the item details, it shows the following error message:
@@ -151,13 +157,13 @@ To assign this add-on license to a group, we must ensure that the group also con
 It is also possible to create a standalone group that contains only the minimum required products to make the add-on work. It can then be used to license only selected users for the add-on product. Based on the previous example, you would assign the following products to the same group:
 
 - Office 365 Enterprise E3 with only the Exchange Online (Plan 2) service plan enabled
-
 - Microsoft Workplace Analytics
 
 From now on, any users added to this group consume one license of the E3 product and one license of the Workplace Analytics product. At the same time, those users can be members of another group that gives them the full E3 product, and they still consume only one license for that product.
 
 > [!TIP]
-> Tip> You can create multiple groups for each prerequisite service plan. For example, if you use both Office 365 Enterprise E1 and Office 365 Enterprise E3 for your users, you can create two groups to license Microsoft Workplace Analytics: one that uses E1 as a prerequisite and the other that uses E3. This lets you distribute the add-on to E1 and E3 users without consuming additional licenses.
+> You can create multiple groups for each prerequisite service plan. For example, if you use both Office 365 Enterprise E1 and Office 365 Enterprise E3 for your users, you can create two groups to license Microsoft Workplace Analytics: one that uses E1 as a prerequisite and the other that uses E3. This lets you distribute the add-on to E1 and E3 users without consuming additional licenses.
+
 ## Force group license processing to resolve errors
 
 Depending on what steps you've taken to resolve the errors, it might be necessary to manually trigger the processing of a group to update the user state.
@@ -214,7 +220,8 @@ Here is what the migration process could look like:
 
   - This is the expected user state during migration:
 
-![The expected user state during migration](../media/expected-user-state.png)
+> [!div class="mx-imgBorder"]
+> ![The expected user state during migration](../media/expected-user-state.png)
 
 This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
 
@@ -222,7 +229,8 @@ This confirms that the user has both direct and inherited licenses. We see that 
 
 1. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
 
-![Confirm that direct licenses are removed](../media/direct-licenses-removed.png)
+> [!div class="mx-imgBorder"]
+> ![Confirm that direct licenses are removed](../media/direct-licenses-removed.png)
 
 ## Change license assignments for a user or group in Azure Active Directory
 

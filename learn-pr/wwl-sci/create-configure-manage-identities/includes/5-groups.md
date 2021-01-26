@@ -10,5 +10,6 @@ Azure AD allows you to define two different types of groups.
 
 You can view all groups through the **Groups** item under the **Manage** group from the Azure AD dashboard. A new Azure AD install won't have any groups defined.
 
-![View all groups in Azure AD](../media/m1-groups1.png)
+> [!div class="mx-imgBorder"]
+> ![View all groups in Azure AD](../media/m1-groups1.png)
 

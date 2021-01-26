@@ -1,4 +1,3 @@
-- 5 minutes
 
 ## Create a new user in Azure Active Directory
 
@@ -40,7 +39,8 @@ You can skip creating this user if you have already created the same user in the
 | Owners| Assign your own administrator account as the group owner|
 | Members| Chris Green|
 
-![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](../media/lp1-mod2-create-group.png)
+> [!div class="mx-imgBorder"]
+> ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](../media/lp1-mod2-create-group.png)
 
 1. When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
@@ -57,8 +57,10 @@ You can skip creating this user if you have already created the same user in the
 1. Under **Review license** options, review the available options for the license you have selected.
 
 > [!TIP]
-> Tip> When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
-![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](../media/lp1-mod2-assign-license-group.png)
+> When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
+
+> [!div class="mx-imgBorder"]
+> ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](../media/lp1-mod2-assign-license-group.png)
 
 1. Select **Save**.
 
@@ -69,16 +71,14 @@ After you delete a user, the account remains in a suspended state for 30 days. D
 You can view your restorable users, restore a deleted user, or permanently delete a user using Azure Active Directory (Azure AD) in the Azure portal.
 
 > [!IMPORTANT]
-> Important> Neither you nor Microsoft customer support can restore a permanently deleted user.
+> Neither you nor Microsoft customer support can restore a permanently deleted user.
+
 ## Required permissions
 
 You must have one of the following roles to restore or permanently delete users.
 
 - Global administrator
-
 - Partner Tier1 Support
-
 - Partner Tier2 Support
-
 - User administrator
 

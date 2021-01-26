@@ -1,4 +1,3 @@
-- 2 minutes
 
 ## Create an Office 365 group in Azure Active Directory
 
@@ -18,7 +17,8 @@
 | Owners| Assign your own administrator account as the group owner|
 | Members| Assign a member of this group|
 
-![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](../media/lp1-mod2-create-o365-group.png)
+> [!div class="mx-imgBorder"]
+> ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](../media/lp1-mod2-create-o365-group.png)
 
 1. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
 

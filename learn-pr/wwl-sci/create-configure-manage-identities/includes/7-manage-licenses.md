@@ -34,8 +34,6 @@ Here are the main features of group-based licensing:
 
 - In some cases, licenses cannot be assigned to a user. For example, there might not be enough available licenses in the tenant, or conflicting services might have been assigned at the same time. Administrators have access to information about users for whom Azure AD could not fully process group licenses. They can then take corrective action based on that information.
 
-> [!NOTE]
-> Note
 Some Microsoft services are not available in all locations. Before assigning a license to a user, the administrator should specify usage location in the User Profile.
 
 For group license assignment, any users without a usage location specified inherit the location of the directory. If you have users in multiple locations, we recommend that you always set usage location as part of your user creation flow in Azure AD (for example, via AAD Connect configuration) - that ensures the result of license assignment is always correct and users do not receive services in locations that are not allowed.
