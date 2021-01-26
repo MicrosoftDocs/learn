@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.implement-windows-server-iscsi
+metadata:
+  title: Implement Windows Server iSCSI
+  description: "Implement Windows Server iSCSI"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement Windows Server iSCSI
+summary: Learn about the core functionality, benefits, use cases, and implementation of Internet Small Computer Systems Interface (iSCSI) in Windows Server 2019.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe iSCSI functionality, components, and use cases.
+  - Describe the considerations for implementing iSCSI.
+  - Implement iSCSI.
+  - Describe implementing high-availability iSCSI configurations.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+  - Fundamental knowledge of Windows Server File Server role.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.implement-windows-server-iscsi.introduction
+- learn.wwl.implement-windows-server-iscsi.list-functionalities-components-use-cases-of-iscsi
+- learn.wwl.implement-windows-server-iscsi.list-considerations-for-implementing-iscsi
+- learn.wwl.implement-windows-server-iscsi.implement-iscsi
+- learn.wwl.implement-windows-server-iscsi.configure-high-availability-for-iscsi
+- learn.wwl.implement-windows-server-iscsi.knowledge-check
+- learn.wwl.implement-windows-server-iscsi.summary
+badge:
+  uid: learn.wwl.implement-windows-server-iscsi.badge
