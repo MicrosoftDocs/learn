@@ -23,7 +23,6 @@ By the end of this module, you will be able to:
 - Send messages to an Azure Service Bus topics.
 - Receive messages from Azure Service Bus queues.
 - Receive messages from Azure Service Bus subscriptions.
-- Browse messages on an Azure Service Bus queue.
 
 ## Prerequisites
 
