@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/21/2021
+  ms.date: 01/25/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,25 +16,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your organization is looking to improve the security of its cloud environment. What tool would they use to automatically assess their systems and alert the security staff when a vulnerability is found?"
+  - content: "An organization is using Azure and wants to improve their security best practices. Which Azure specific benchmark would the IT security team need to consider?"
     choices:
-    - content: "Cloud security posture management (CSPM)."
+    - content: "Azure Security Benchmark."
       isCorrect: true
-      explanation: "That's correct. CSPM is a new class of tool that improves your cloud security management using automated tools to check and generate alerts when vulnerabilities are found."
-    - content: "Azure security center."
+      explanation: "That's correct. The Azure Security Benchmark provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure."
+    - content: "Center for Internet Security."
       isCorrect: false
-      explanation: "That's incorrect. Azure security center provides infrastructure level security management to protect your data."
-    - content: "Azure Defender."
+      explanation: "That's incorrect. CIS benchmarks are used with Azure security."
+    - content: "Microsoft cybersecurity group."
       isCorrect: false
-      explanation: "That's incorrect. Azure Defender provides threat protection for workloads running on Azure."
-  - content: "Your organization is using Security Center to assess your resources, subscriptions, and organization for security issues. Your organizations overall secure score is low and needs to improved.  How would a security admin go about improving the score?"
+      explanation: "That's incorrect. The Microsoft cybersecurity group are responsible for developing best practices."
+  - content: "An organization is using Security Center to assess its resources and subscriptions for security issues. The organization's overall secure score is low and needs to improve. How could a security admin try to improve the score?"
     choices:
     - content: "Close old security recommendations."
       isCorrect: false
-      explanation: "That's incorrect. Closing old issues will not improve the score."
+      explanation: "That's incorrect. Closing old issues won't improve the score."
     - content: "Remediate security recommendations."
       isCorrect: true
-      explanation: "That's correct. To improve your secure score, remediate security recommendations from your recommendations list."
+      explanation: "That's correct. To improve a secure score, remediate security recommendations from the recommendations list."
     - content: "Move security recommendations to resolved."
       isCorrect: false
-      explanation: "That's incorrect. Moving recommendations will not improve your security score."
+      explanation: "That's incorrect. Moving recommendations won't improve the security score."
+  - content: "An organization needs to continuously monitor the security status of its network. What Security Center tool would they use?"
+    choices:
+    - content: "Continuous assessment."
+      isCorrect: false
+      explanation: "That's incorrect. Continuous assessment is used to identify new and existing resources and assets."
+    - content: "Network map."
+      isCorrect: true
+      explanation: "That's correct. The network map provides a map of the topology of your network workloads, which lets you block unwanted connections."
+    - content: "Network assessment."
+      isCorrect: false
+      explanation: "That's incorrect. Network assessment is a by-product of using Secure Center. It is not a specific tool for continuously monitoring network status."
