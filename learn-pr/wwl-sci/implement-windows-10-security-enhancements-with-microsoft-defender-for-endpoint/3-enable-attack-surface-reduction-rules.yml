@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.enable-attack-surface-reduction-rules
+title: Enable attack surface reduction rules
+metadata:
+  title: Enable attack surface reduction rules
+  description: "Enable attack surface reduction rules"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 17
+content: |
+  [!include[](includes/3-enable-attack-surface-reduction-rules.md)]

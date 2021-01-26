@@ -67,4 +67,4 @@ The following table lists all the current actions for the Azure Sentinel connect
 > [!Note]
 > Actions that have **(V2)** or a higher number provide a new version of the action and might differ from the old functionality of the action.
 
-Some actions require integration with actions from another connectors. For example, if Contoso wants to identify all suspicious accounts returned in the alert from the defined entities, you must combine the **Entities - Get Accounts** action with the **For Each** action. Similarly, to get all individual hosts in an incident that detect suspicious hosts, you must combine the **Entities - Get Accounts** action with the **For Each** action.
+Some actions require integration with actions from another connectors. For example, if Contoso wants to identify all suspicious accounts returned in the alert from the defined entities, you must combine the **Entities - Get Accounts** action with the **For Each** action. Similarly, to get all individual hosts in an incident that detect suspicious hosts, you must combine the **Entities - Get Hosts** action with the **For Each** action.
