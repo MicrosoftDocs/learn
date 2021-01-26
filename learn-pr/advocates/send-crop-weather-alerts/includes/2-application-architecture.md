@@ -1,8 +1,8 @@
 Let's look at the application you'll create in this module. The application has many components and is designed to implement a variety of features. Here’s a summary of its capabilities: 
 
-- The application can request a text message alert for a location if the temperature is forecasted outside a specified range.
+- The application can request a text message alert for a location if a temperature outside a specific range is forecasted.
 - The application can request a text message that reports a location's forecasted low and high temperatures.
-- The application can check a location's weather forecast every 12 hours.
+- The application can check and report a location's weather forecast every 12 hours.
 
 The following image demonstrates how the application works:
 
@@ -16,7 +16,7 @@ These are the resources we'll use to create the application:
 - An HTTP request endpoint
 - A Twilio account
 
-We'll do the work in a Microsoft-hosted sandbox, so you don't need to install software or have your own Azure account or subscription.
+We'll do the work in a Microsoft-hosted instance of Azure CLI (a *sandbox*) that runs in this Learn module. You don't need to install software or have your own Azure account or subscription.
 
 When the application is deployed, it can do these things:
 

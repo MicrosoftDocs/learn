@@ -2,15 +2,19 @@ Farmers around the world must carefully watch the weather to guarantee optimal g
 
 In 2015, it was estimated that 2 billion people who live in the rural areas of developing nations were involved in subsistence farming, growing what they need to eat and trade for daily essentials. The failure of their crops can literally mean having nothing to eat.
 
-In the developed world, widespread access to the internet via computers and smartphones can provide detailed weather reports that help farmers plan how to best water or protect their crops. This data can be combined with sensors to track temperature, rainfall, and soil moisture. And it can be combined with complex AI models to make predictions or to provide guidance. In remote locations around the world, access to such technology is limited, although mobile phones with text messaging are common.
+In the developed world, widespread access to the internet via computers and smartphones can provide detailed weather reports that help farmers plan how to best water or protect their crops. This data can be combined with sensors to track temperature, rainfall, and soil moisture. And it can be combined with complex AI models to make predictions or to provide guidance. 
+
+    In remote locations around the world, access to such technology is limited, although mobile phones with text messaging are common.
 
 In this module, you'll create an application that lets farmers use text messaging to set up temperature alerts for specific locations. These alerts help farmers know when to plant, when to water, or when to protect their crops.
 
 :::image type="content" source="../media/text-message.png" alt-text="Screenshot of text messages sent to and received by the application.":::
 
-The temperature and location services that this app uses will use Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing.
+The temperature and location services that this app uses come from Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing.
 
-You'll use the third-party communications service Twilio to manage sending and receiving text messages. You'll coordinate app functionality by using Azure Functions.
+In your app, you'll use the third-party communications service Twilio to manage sending and receiving text messages. 
+
+You'll coordinate app functionality by using Azure Functions.
 
 ## Learning objectives
 
