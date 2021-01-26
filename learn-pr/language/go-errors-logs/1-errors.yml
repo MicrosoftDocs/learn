@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-errors-logs.1-errors
+metadata:
+  title: Learn how to handle errors in Go
+  description: Consider the possible ways programs can fail and discover how to manage errors.
+  ms.date: 01/21/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn how to handle errors in Go
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-errors.md)]
