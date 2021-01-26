@@ -10,7 +10,7 @@ In many cases, Data Duplication increases overall disk performance, because mult
 
 :::image type="content" source="../media/m18-data-deduplication-concept.png" alt-text="The concept of data deduplication, which replaces multiple copies of the same data with pointers to the chunk store, containing a single data instance." border="false":::
 
-## What are components of Data Deduplication?
+## What are the components of Data Deduplication?
 
 The Data Deduplication role service consists of the following components:
 
