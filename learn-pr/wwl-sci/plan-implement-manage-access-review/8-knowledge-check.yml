@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-manage-access-review.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Who should you engage when planning a technology project?"
+    choices:
+    - content: "Engage the right stakeholders."
+      isCorrect: true
+      explanation: "Correct. When technology projects fail, they typically do so due to mismatched expectations on impact, outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that project roles are clear.."
+    - content: "Start planning with a small team to avoid extra work for others."
+      isCorrect: false
+      explanation: "Incorrect. You should identify the correct stakeholders and engage them as early in the project as possible."
+    - content: "Keep your team small to avoid project creep."
+      isCorrect: false
+      explanation: "Incorrect. The size of the team is irrelevant as long as the proper stakeholders are involved."
+  - content: "What is one reason to regularly review Azure role assignments?"
+    choices:
+    - content: "To ensure naming conventions are properly applied."
+      isCorrect: false
+      explanation: "Incorrect. Naming conventions are important, however you should use naming policies to enforce account, group, resource, etc. naming."
+    - content: "To reduce the risk associated with stale role assignments."
+      isCorrect: true
+      explanation: "Correct. You should regularly review access of privileged Azure resource roles to reduce the risk associated with stale role assignments"
+    - content: "To eliminate extra distribution groups that are no longer used."
+      isCorrect: false
+      explanation: "Incorrect. Distribution groups are not role assignments."
+  - content: "What is an access package?"
+    choices:
+    - content: "An access package is a group of users with the access they need to work on a project or perform a task."
+      isCorrect: false
+      explanation: "Incorrect. An access package contains resources and not users."
+    - content: "An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task."
+      isCorrect: true
+      explanation: "Correct. An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task. For example, you may want to create an Access Package that includes all the applications that developers in your organization need, or all applications to which external users should have access."
+    - content: "An access package is a used to create a transitive trust between B2B organizations."
+      isCorrect: false
+      explanation: "Incorrect. An access package does not create any federation between organizations."
