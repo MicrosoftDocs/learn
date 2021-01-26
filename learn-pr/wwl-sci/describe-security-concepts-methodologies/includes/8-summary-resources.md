@@ -17,4 +17,3 @@ To learn more about the topics discussed in this module, see:
 - [Shared responsibility in the cloud](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)
 - [Digital signatures](https://docs.microsoft.com/windows/win32/seccrypto/digital-signatures)
 - [Azure defense in depth](https://azure.microsoft.com/resources/videos/defense-in-depth-security-in-azure/)
-
