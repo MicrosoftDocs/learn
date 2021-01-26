@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.plan-implement-privileged-access
+metadata:
+  title: Plan and implement privileged access
+  description: "Plan and implement privileged access"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan and implement privileged access
+summary: Ensuring that administrative roles are protected and managed to increase your Azure solution security is a must.  Explore how to use PIM to protect your data and resources.
+abstract: |
+  By the end of this module, you will be able to:
+  - Define a privileged access strategy for administrative users (resources, roles, approvals, and thresholds)
+  - Configure Privileged Identity Management for Azure AD roles
+  - Configure Privileged Identity Management for Azure resources
+  - Assign roles
+  - Manage PIM requests
+  - Analyze PIM audit history and reports
+  - Create and manage emergency access accounts
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-active-directory
+units:
+- learn.wwl.plan-implement-privileged-access.introduction
+- learn.wwl.plan-implement-privileged-access.define-strategy-for-administrative-users
+- learn.wwl.plan-implement-privileged-access.configure-privileged-identity-management-for-azure-resources
+- learn.wwl.plan-implement-privileged-access.configure-privileged-identity-management-for-azure-ad-roles
+- learn.wwl.plan-implement-privileged-access.assign-azure-ad-roles-privileged-identity-management
+- learn.wwl.plan-implement-privileged-access.assign-azure-resource-roles-privileged-identity-management
+- learn.wwl.plan-implement-privileged-access.analyze-privileged-identity-management-audit-history-reports
+- learn.wwl.plan-implement-privileged-access.create-manage-emergency-access-accounts
+- learn.wwl.plan-implement-privileged-access.knowledge-check
+- learn.wwl.plan-implement-privileged-access.summary-resources
+badge:
+  uid: learn.wwl.plan-implement-privileged-access.badge

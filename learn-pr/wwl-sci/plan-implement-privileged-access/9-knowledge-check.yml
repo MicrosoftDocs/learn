@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-privileged-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How can Discovery and insights for privileged identity management help an organization?"
+    choices:
+    - content: "Discovery and insights can find privileged role assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
+      isCorrect: true
+      explanation: "Correct. Discovery and insights can find privileged role assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
+    - content: "Discovery and insights can find when guest's access resources across Azure AD."
+      isCorrect: false
+      explanation: "Incorrect. Disocvery and insights finds priveleged role assignments and authorized guest user access."
+    - content: "Discovery and insights can find security group assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
+      isCorrect: false
+      explanation: "Incorrect. Disocvery and insights finds priveleged role assignments."
+  - content: "Whether to assign a role to a group instead of to individual users is a strategic decision. When planning, consider assigning a role to a group to manage role assignments when you want to delegate assigning the role and what else?"
+    choices:
+    - content: "You want to use conditional access policies."
+      isCorrect: false
+      explanation: "Incorrect. Although conditional access policies can use groups to assign a policy, it is not considered when assigned roles."
+    - content: "Many Azure resources need to be managed."
+      isCorrect: false
+      explanation: "Incorrect. Azure resources are managed by users or groups."
+    - content: "Many users are assigned to a role."
+      isCorrect: true
+      explanation: "Correct. Management of one group is much easier than management many individual users."
+  - content: "Which roles can only be assigned using Privileged Identity Management?"
+    choices:
+    - content: "Permanently active roles."
+      isCorrect: false
+      explanation: "Incorrect. Permanently active roles are the normal roles assigned through Azure Active Directory and Azure resources while eligible roles can only be assigned in Privileged Identity Management."
+    - content: "Eligible roles."
+      isCorrect: true
+      explanation: "Correct. Permanently active roles are the normal roles assigned through Azure Active Directory and Azure resources while eligible roles can only be assigned in Privileged Identity Management."
+    - content: "Transient roles."
+      isCorrect: false
+      explanation: "Incorrect. Transient roles are not a role assignment found in PIM."
