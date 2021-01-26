@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.rust-memory-management.5-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/21/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Answer the following questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the meaning of the `<'a>` segment in the following struct declaration? `struct Nominee<'a> { person: &'a Person }`"
+    choices:
+    - content: "It means that the `Nominee` struct will live no longer than the `Person` value it borrows from."
+      isCorrect: true
+      explanation: "Correct. The `Nominee` struct can't live longer than the `Person` value it borrows."
+    - content: "It means that the `Nominee` struct will live no longer than the `AwardKind` value it borrows from."
+      isCorrect: false
+      explanation: "Incorrect. The field `award` owns the `AwardKind` value, so no borrow occurs."
+    - content: "It means that the `Nominee` struct will live no longer than the `String` value it holds."
+      isCorrect: false
+      explanation: "Incorrect. The field `contribution` owns the `String` value, so no borrow occurs."
+    - content: "It means that the `Nominee` struct can have an optional value in its `person` field."
+      isCorrect: false
+      explanation: "Incorrect. The `person` field requires a reference to a `Person` value and it is not optional."
+  - content: "What type of aliasing is permitted in Rust?"
+    choices:
+    - content: "One mutable reference and multiple immutable references."
+      isCorrect: false
+      explanation: "Incorrect. The compiler won't allow any mutable reference to exist while immutable references are present."
+    - content: "One mutable reference or multiple immutable references."
+      isCorrect: true
+      explanation: "Correct. Rust forbids the combination of aliasing and mutation on the same location."
+    - content: "Many mutable references and no immutable references."
+      isCorrect: false
+      explanation: "Incorrect. The compiler won't allow many mutable references to the same value, even if there is no immutable references."
+    - content: "Many mutable and immutable references."
+      isCorrect: false
+      explanation: "Incorrect. The compiler won't allow many mutable references to the same value, let alone combining mutable with immutable references."
