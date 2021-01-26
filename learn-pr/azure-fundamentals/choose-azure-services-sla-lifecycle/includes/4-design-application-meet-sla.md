@@ -93,4 +93,4 @@ Consider how critical high availability is to your requirements before you add r
 
 ## Very high performance is difficult to achieve
 
-Performance targets above 99.99 percent are very difficult to achieve. Recall that an SLA of 99.99 percent means 1.01 minutes of downtime per week. It's difficult for humans to respond to failures quickly enough to meet SLA performance targets above 99.99 percent. Instead, your application must be able to self-diagnose and self-heal during an outage.
+Performance targets above 99.99 percent are very difficult to achieve. Recall that an SLA of 99.99 percent means 10.1 minutes of downtime per week. It's difficult for humans to respond to failures quickly enough to meet SLA performance targets above 99.99 percent. Instead, your application must be able to self-diagnose and self-heal during an outage.
