@@ -10,7 +10,7 @@ To view the connector page:
 
 1. Select the Choose where to install the agent option to expand the instructions.
 
-![Syslog connector page.](../media/syslog-connector.png)
+:::image type="content" source="../media/syslog-connector.png" alt-text="Syslog connector page.":::
 
 ## **For an Azure Linux VM:**
 
@@ -36,5 +36,4 @@ To install the agent on non-Azure Linux virtual hosts:
 
 1. The page also displays your Workspace ID, primary key, and secondary key.
 
-![Agent Management for Linux hosts.](../media/syslog-agent-management.png)
-
+:::image type="content" source="../media/syslog-agent-management.png" alt-text="Agent Management for Linux hosts.":::

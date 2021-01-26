@@ -16,7 +16,7 @@ To configure the Log Analytics agent for syslog facilities:
 
 1. Enter the facility name and select **+** for each facility.
 
-![Syslog configuration.](../media/syslog-facility.png)
+:::image type="content" source="../media/syslog-facility.png" alt-text="Syslog configuration.":::
 
 By default, all configuration changes are automatically pushed to all agents. If you want to configure Syslog manually on each Linux agent, then uncheck the box *Apply below configuration to my machines*.
 
