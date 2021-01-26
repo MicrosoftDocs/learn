@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ip-address-management.deploy-ipam
+title: Deploy IP Address Management
+metadata:
+  title: Deploy IP Address Management
+  description: "Deploy IP Address Management"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-deploy-ip-address-management.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "When installing IPAM, which of the following is an **invalid** option for storing IPAM data?"
+    choices:
+    - content: "Microsoft Access database"
+      isCorrect: true
+      explanation: "That's correct. You can't use Access to store IPAM data."
+    - content: "Windows Internal Database"
+      isCorrect: false
+      explanation: "That's incorrect. You can use the Windows Internal Database to store IPAM data."
+    - content: "Microsoft SQL Server database"
+      isCorrect: false
+      explanation: "That's incorrect. You can use a Microsoft SQL Server database to store IPAM data."

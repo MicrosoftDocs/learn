@@ -29,7 +29,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Resource group | ("<rgn>[sandbox resource group name]</rgn>") from the dropdown. |
     | **Instance details**| |
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
-    | Location | Select a location near to you in the dropdown from the previous list |
+    | Location | Select a location near to you in the dropdown from the following list. |
     | Performance | Standard. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Account kind | StorageV2 (general purpose v2) |
     | Redundancy | Locally redundant storage (LRS). In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
@@ -59,17 +59,14 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     |---|---|
     | **Security**| |
     | Secure transfer required | *Enabled*. This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
-    | Blob public access | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
     | Minimum TLS version | *Version 1.2* from dropdown. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
     | **Blob storage**| |
     | Allow Blob public access | *Enabled*. We'll allow clients to read data in that container without authorizing the request. |
-    | Blob access tier (default) | *Hot*. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data; the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
+    | Blob access tier (default) | *Hot*. This setting is only used for Blob storage. The *Hot Access Tier* is ideal for frequently accessed data; the *Cool Access Tier* is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
     | **Data Lake Storage Gen 2**| |
     | Hierarchical namespace | *Disabled*. This is for big-data applications that aren't relevant to this module. |
-    | **Blob storage settings**| |
-    | Access tier | Hot. This setting is only used for Blob storage. The **Hot Access Tier** is ideal for frequently accessed data, and the **Cool Access Tier** is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
-    | **Azure files**| |
-    | Enable large file shares | *Disabled*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
+    | **Azure Files**| |
+    | Large file shares | *Disabled*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
 
     > [!WARNING]
     > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
@@ -80,10 +77,8 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. After you've reviewed the settings, select **Create** to provision the storage account.
 
-   It will take a few minutes to deploy the account.
+   It may take two minutes to deploy the account.
 
-1. Select the **Storage accounts** link in the left sidebar.
-
-1. Locate the new storage account in the list to verify that creation succeeded.
+1. After validation succeeds, select **Go to resource** to view your newly-created storage account.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.

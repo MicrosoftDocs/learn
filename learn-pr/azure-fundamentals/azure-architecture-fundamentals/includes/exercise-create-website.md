@@ -65,14 +65,14 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     Your configuration should look like this example.
 
-    [![Screenshot of the Azure portal showing the new WordPress app service configured as instructed.](../media/config-info-create.png)](../media/config-info-create-expanded.png#lightbox)
+    :::image type="content" source="../media/config-info-create.png" alt-text="Screenshot of the Azure portal showing the new WordPress app service configured as instructed.":::
     
     > [!NOTE]
     > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in the preceding configuration.
 
 1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/Location**.
-
-    [![Screenshot of the Azure portal showing WordPress App Service creation with App Service plan/Location button highlighted.](../media/config-app-service-plan.png)](../media/config-app-service-plan-expanded.png#lightbox)
+    
+    :::image type="content" source="../media/config-app-service-plan.png" alt-text="Screenshot of the Azure portal showing WordPress App Service creation with App Service plan/Location button highlighted.":::
 
 1. In the **App Service plan** pane, select **Create new**.
 
@@ -92,9 +92,9 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     [![Screenshot of the Azure portal showing the App Service plan Spec Picker pane with the Dev / Test section selected and the free F1 tier and the Apply button highlighted.](../media/select-pricing-tier.png)](../media/select-pricing-tier-expanded.png#lightbox)
 
-1. Back on the **New App Service plan** pane, select **OK** to create the new plan, and close the pane.
+1. Back on the **New App Service Plan** pane, select **OK** to create the new plan.
 
-1. Finally, select the **Create** button to start the deployment of your new site.
+1. Finally, select **Create** to start the deployment of your new site.
 
     > [!NOTE]
     > If you encounter an issue when you create the resources, verify you've selected the **F1** pricing tier in the new App Service plan. Using the F1 pricing tier is a requirement of the sandbox system when you create this WordPress site.
