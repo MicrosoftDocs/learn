@@ -4,10 +4,12 @@ This section describes various operations you can perform by using Azure Active 
 
 You can configure the Azure AD Connect Health service to send email notifications when alerts indicate that your identity infrastructure is not healthy. This occurs when an alert is generated, and when it is resolved.
 
-![Screenshot of Azure AD Connect Health email notification settings](../media/email_noti_discover.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health email notification settings](../media/email_noti_discover.png)
 
 > [!NOTE]
-> Note> Email notifications are enabled by default.
+> Email notifications are enabled by default.
+
 ### To enable Azure AD Connect Health email notifications
 
 1. Open the **Alerts** blade for the service for which you want to receive email notification.
@@ -23,11 +25,14 @@ You can configure the Azure AD Connect Health service to send email notification
 1. To finalize the changes, click **Save**. Changes take effect only after you save.
 
 > [!NOTE]
-> Note> When there are issues processing synchronization requests in our back-end service, this service sends a notification email with the details of the error to the administrative contact email address(es) of your tenant. We heard feedback from customers that in certain cases the volume of these messages is prohibitively large so we are changing the way we send these messages.> Instead of sending a message for every sync error every time it occurs we will send out a daily digest of all errors the back-end service has returned. This enables customers to process these errors in a more efficient manner and reduces the number of duplicate error messages.
+> When there are issues processing synchronization requests in our back-end service, this service sends a notification email with the details of the error to the administrative contact email address(es) of your tenant. We heard feedback from customers that in certain cases the volume of these messages is prohibitively large so we are changing the way we send these messages.
+> Instead of sending a message for every sync error every time it occurs we will send out a daily digest of all errors the back-end service has returned. This enables customers to process these errors in a more efficient manner and reduces the number of duplicate error messages.
+
 ## Delete a server or service instance
 
 > [!NOTE]
-> Note> Azure AD premium license is required for the deletion steps.
+> Azure AD premium license is required for the deletion steps.
+
 In some instances, you might want to remove a server from being monitored. Here's what you need to know to remove a server from the Azure AD Connect Health service.
 
 When you're deleting a server, be aware of the following:
@@ -43,14 +48,16 @@ When you're deleting a server, be aware of the following:
 ### Delete a server from the Azure AD Connect Health service
 
 > [!NOTE]
-> Note> Azure AD premium license is required for the deletion steps.
+> Azure AD premium license is required for the deletion steps.
+
 Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azure AD Connect (Sync):
 
 1. Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
 
 1. On the **Server** blade, from the action bar, click **Delete**.
 
-![Screenshot of Azure AD Connect Health delete server](../media/deleteserver2.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health delete server](../media/deleteserver2.png)
 
 1. Confirm by typing the server name in the confirmation box.
 
@@ -88,7 +95,8 @@ When you're deleting a service instance, be aware of the following:
 
 1. On the **Service** blade, from the action bar, click **Delete**.
 
-![Screenshot of Azure AD Connect Health delete service](../media/deleteserver.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health delete service](../media/deleteserver.png)
 
 1. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
 
@@ -132,17 +140,20 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 
 1. From the **Configure** section, click **Users**.
 
-![Screenshot of Azure AD Connect Health resource sidebar](../media/startrbac.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health resource sidebar](../media/startrbac.png)
 
 1. Select **Add**.
 
 1. In the **Select a role** pane, select a role (for example, **Owner**).
 
-![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/rbac_add.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/rbac_add.png)
 
 1. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
 
-![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/rbac_select_users.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/rbac_select_users.png)
 
 1. Select **OK**.
 
@@ -151,10 +162,8 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 Now the listed users and groups have access, according to their assigned roles.
 
 > [!NOTE]
-> Note>
 >- Global administrators always have full access to all the operations, but global administrator accounts are not present in the preceding list.
 >- The Invite Users feature is not supported within Azure AD Connect Health.
->
 
 **Step 3: Share the blade location with users or groups**
 
@@ -162,23 +171,25 @@ Now the listed users and groups have access, according to their assigned roles.
 
 1. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
 
-![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/rbac_pin_blade.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/rbac_pin_blade.png)
 
 > [!NOTE]
-> Note> A user with the Reader role assigned is not able to get Azure AD Connect Health extension from the Azure Marketplace. The user cannot perform the necessary "create" operation to do so. The user can still get to the blade by going to the preceding link. For subsequent usage, the user can pin the blade to the dashboard.
+> A user with the Reader role assigned is not able to get Azure AD Connect Health extension from the Azure Marketplace. The user cannot perform the necessary "create" operation to do so. The user can still get to the blade by going to the preceding link. For subsequent usage, the user can pin the blade to the dashboard.
+
 ### Remove users or groups
 
 You can remove a user or a group added to Azure AD Connect Health and Azure RBAC. Simply right-click the user or group, and select **Remove**.
 
-![Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted](../media/rbac_remove.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted](../media/rbac_remove.png)
 
 ## Demo: Azure AD Connect Health monitors on-premises AD Domain Services
 
 |||
 | :--- | :--- |
 | ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about using Azure AD Connect Health for monitoring.|
-
->[!VIDEO https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-AD-Connect-Health-monitors-on-premises-AD-Domain-Services]
+> [!VIDEO https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-AD-Connect-Health-monitors-on-premises-AD-Domain-Services?format=ny]
 
 ## Diagnose and remediate duplicated attribute sync errors
 
@@ -198,7 +209,8 @@ Taking one step farther to highlight sync errors, Azure Active Directory (Azure 
 
 When **QuarantinedAttributeValueMustBeUnique** and **AttributeValueMustBeUnique** sync errors happen, it's common to see a **UserPrincipalName** or **Proxy Addresses** conflict in Azure AD. You might solve the sync errors by updating the conflicting source object from the on-premises side. The sync error will be resolved after the next sync. For example, this image indicates that two users have a conflict of their **UserPrincipalName**. Both are **Joe.J@contoso.com**. The conflicting objects are quarantined in Azure AD.
 
-![Diagnose sync error common scenario](../media/iidfixcommoncase.png)
+> [!div class="mx-imgBorder"]
+> ![Diagnose sync error common scenario](../media/iidfixcommoncase.png)
 
 ### Orphaned object scenario
 
@@ -208,7 +220,8 @@ When an existing user is a cloud-only object, you can also see the conflicting u
 
 As an example, the existing object in Azure AD preserves the license of Joe. A newly synchronized object with a different **Source Anchor** occurs in a duplicated attribute state in Azure AD. Changes for Joe in on-premises Active Directory won't be applied to Joe’s original user (existing object) in Azure AD.
 
-![Diagnose sync error orphaned object scenario](../media/iidfixorphanedcase.png)
+> [!div class="mx-imgBorder"]
+> ![Diagnose sync error orphaned object scenario](../media/iidfixorphanedcase.png)
 
 ## Diagnostic and troubleshooting steps in Connect Health
 
@@ -222,10 +235,12 @@ The diagnose feature supports user objects with the following duplicated attribu
 | OnPremiseSecurityIdentifier| AttributeValueMustBeUnique|
 
 > [!IMPORTANT]
->  Important> To access this feature, Global Admin permission, or Contributor permission from Azure RBAC, is required.
+> To access this feature, Global Admin permission, or Contributor permission from Azure RBAC, is required.
+
 Follow the steps from the Azure portal to narrow down the sync error details and provide more specific solutions:
 
-![Sync error diagnosis steps](../media/iidfixsteps.png)
+> [!div class="mx-imgBorder"]
+> ![Sync error diagnosis steps](../media/iidfixsteps.png)
 
 From the Azure portal, take a few steps to identify specific fixable scenarios:
 
@@ -238,7 +253,8 @@ From the Azure portal, take a few steps to identify specific fixable scenarios:
 | Pending Sync| A fix was applied. The portal is waiting for the next sync cycle to clear the error.|
 
 > [!IMPORTANT]
-> Important> The diagnostic status column will reset after each sync cycle.
+> The diagnostic status column will reset after each sync cycle.
+
 1. Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
 
 1. If a **Close** button appears at the end of the diagnostics, there's no quick fix available from the portal based on your answers. Refer to the solution shown in the last step. Fixes from on-premises are still the solutions. Select the **Close** button. The status of the current sync error switches to **Manual fix required**. The status stays during the current sync cycle.

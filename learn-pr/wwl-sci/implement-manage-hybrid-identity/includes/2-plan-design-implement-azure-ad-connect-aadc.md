@@ -12,9 +12,8 @@ Azure AD Connect is the Microsoft tool designed to meet and accomplish your hybr
 
 - Health monitoring - Azure AD Connect Health provides robust monitoring.
 
-![What is Azure AD Connect](../media/arch.png)
-
-![{1}](../media/{2})
+> [!div class="mx-imgBorder"]
+> ![What is Azure AD Connect](../media/arch.png)
 
 ## Why use Azure AD Connect?
 
@@ -80,15 +79,18 @@ The following diagrams outline the high-level architecture components required f
 
 - Simplicity of a password hash synchronization solution:
 
-![Azure AD hybrid identity with password hash synchronization](../media/azure-ad-authn-image2.png)
+> [!div class="mx-imgBorder"]
+> ![Azure AD hybrid identity with password hash synchronization](../media/azure-ad-authn-image2.png)
 
 - Agent requirements of pass-through authentication, using two agents for redundancy:
 
-![Azure AD hybrid identity with pass-through authentication](../media/azure-ad-authn-image3.png)
+> [!div class="mx-imgBorder"]
+> ![Azure AD hybrid identity with pass-through authentication](../media/azure-ad-authn-image3.png)
 
 - Components required for federation in your perimeter and internal network of your organization:
 
-![Azure AD hybrid identity with federated authentication](../media/azure-ad-authn-image4.png)
+> [!div class="mx-imgBorder"]
+> ![Azure AD hybrid identity with federated authentication](../media/azure-ad-authn-image4.png)
 
 ## Recommendations
 
@@ -179,7 +181,8 @@ This section describes various on-premises and Azure Active Directory (Azure AD)
 
 The following diagram shows a high-level architecture of provisioning engine connecting to a single forest, although multiple forests are supported. This architecture shows how the various components interact with each other.
 
-![Diagram shows how the connected cirectories and Azure AD Connect provisioning engine interact, including Connector Space and Metaverse components in an SQL Database](../media/azureadconnentinternal.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram shows how the connected cirectories and Azure AD Connect provisioning engine interact, including Connector Space and Metaverse components in an SQL Database](../media/azureadconnentinternal.png)
 
 The provisioning engine connects to each Active Directory forest and to Azure AD. The process of reading information from each directory is called Import. Export refers to updating the directories from the provisioning engine. Sync evaluates the rules of how the objects will flow inside the provisioning engine.
 
