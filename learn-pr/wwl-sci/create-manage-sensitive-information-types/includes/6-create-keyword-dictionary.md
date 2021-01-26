@@ -4,7 +4,7 @@ The source for keyword dictionaries can be several kinds of cleartext files, suc
 
 For detailed instructions see [Create a keyword dictionary](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary?view=o365-worldwide).
 
-## Keyword Dictionary Creation Best Practices
+## Keyword dictionary creation best practices
 
 Consider the following a best practice to create your initial source keyword dictionary:
 
@@ -20,13 +20,13 @@ Consider the following a best practice to create your initial source keyword dic
 
   - ​ Remember that you can edit the list, so you can improve your results by revising them regularly.
 
-## Keyword Dictionary Management
+## Keyword dictionary management
 
 After creating a new keyword dictionary and using it in a policy, the keywords can be modified in case your requirements have changed. For example, a keyword dictionary used to detect disease classifications in medical data or for other static keywords required for policies.
 
 For detailed steps see [Modifying an existing keyword dictionary](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary?view=o365-worldwide).
 
-## Keyword Dictionary as a Custom Sensitive Information Type
+## Keyword dictionary as a custom sensitive information type
 
 Keyword dictionaries can be used in rule package definitions for a custom sensitive information type. They can be selected as sensitive information types when creating policies in the Microsoft 365 Compliance Center or via the Security & Compliance Center PowerShell module. When using the PowerShell module, the keyword dictionary must be specified with its ID.
 

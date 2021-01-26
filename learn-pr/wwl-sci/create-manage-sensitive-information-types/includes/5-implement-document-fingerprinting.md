@@ -11,7 +11,7 @@ That's why uploading a form or template creates the most effective type of docum
 
 The following picture shows the basic functionality how document fingerprint functions.
 
-![fingerprint matching diagram](../media/document-fingerprint.png)
+![fingerprint matching diagram](../media/document-finger.png)
 
 In this example, the patent template document contains the blank fields "Patent title," "Inventors," and "Description" and descriptions for each of those fields, which is the word pattern. When the word pattern is converted into a document fingerprint, a small Unicode XML file with a unique hash value is generated, which represents the original text. 
 
