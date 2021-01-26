@@ -4,7 +4,7 @@ Security Center is offered in two modes:
 
 #### Azure Defender off
 
-Security Center without Azure Defender is enabled for free on all your Azure subscriptions when you visit the Azure Security Center dashboard in the Azure portal for the first time or if enabled programmatically via API.
+Security Center without Azure Defender is enabled free of charge on all your Azure subscriptions when you visit the Azure Security Center dashboard in the Azure portal for the first time, or if enabled programmatically via API.
 
 #### Azure Defender on
 
