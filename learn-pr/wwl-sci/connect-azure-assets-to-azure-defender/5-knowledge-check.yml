@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/22/2021
+  ms.date: 01/26/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is not a Windows security events configuration?"
+  - content: "Which is a Windows security events configuration?"
     choices:
-    - content: "Common"
+    - content: "Reasonable"
       isCorrect: false
-      explanation: "Incorrect. Common is a configuration option."
+      explanation: "Incorrect. Reasonable is not a configuration option."
     - content: "Maximum"
-      isCorrect: true
-      explanation: "Correct. Maximum is not a configuration option."
-    - content: "Minimal"
       isCorrect: false
-      explanation: "Incorrect. Minimal is a configuration option."
+      explanation: "Incorrect. Maximum is not a configuration option."
+    - content: "Minimal"
+      isCorrect: true
+      explanation: "Correct. Minimal is a configuration option."
   - content: "What should you install on a new Azure Windows VM if you are not using auto provisioning?"
     choices:
     - content: "Log Analytics Agent"
