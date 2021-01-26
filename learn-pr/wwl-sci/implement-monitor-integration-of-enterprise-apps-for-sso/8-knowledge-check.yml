@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "Who gave consent to an application"
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: ", The service that logged the occurrence"
     - content: "The top sign-in errors for each application"
       isCorrect: false
-      explanation: "Incorrect. The Enterprise application audit logs are used to identify who gave consent to an application."
+      explanation: "Incorrect. The Enterprise application audit logs are used to identify who gave consent to an application., The applications with the most failed sign-ins"
     - content: "The top used applications in your organization"
       isCorrect: true
-      explanation: "correct choice"
+      explanation: ", The top used applications in your organization"

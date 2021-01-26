@@ -10,7 +10,7 @@ With Azure AD reports, you can get the information needed to determine how your 
 
 1. Navigate to the [Azure portal](https://portal.azure.com/).
 
-1. Select the correct directory, then select **Azure Active Directory **and choose **Enterprise applications**.
+1. Select the correct directory, then select **Azure Active Directory** and choose **Enterprise applications**.
 
 1. From the **Activity** section, select **Usage & insights** to open the report.
 
