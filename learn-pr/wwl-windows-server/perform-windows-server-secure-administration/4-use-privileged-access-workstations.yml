@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-windows-server-secure-administration.use-privileged-access-workstations
+title: Use privileged access workstations
+metadata:
+  title: Use privileged access workstations
+  description: "Use privileged access workstations"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-use-privileged-access-workstations.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Which Windows 10 Enterprise feature helps to protect user credentials during the sign in process, and what is needed to enable this feature?"
+    choices:
+    - content: "Windows Defender Credential Guard provides this protection. To implement Windows Defender Credential Guard, you require the Hyper-V feature, and ideally a TPM and Unified Extensible Firmware Interface (UEFI) lock."
+      isCorrect: false
+      explanation: "That's incorrect. Windows Defender Credential Guard does provide this protection.  However, although a TPM and UEFI lock are optional but recommended, Secure boot is a requirement."
+    - content: "Windows Defender Device Guard provides this protection. To implement Windows Defender Device Guard, you require the Hyper-V feature, Secure boot, and ideally a TPM and UEFI lock."
+      isCorrect: false
+      explanation: "That's incorrect. Windows Defender Device Guard combines the features of Windows Defender Application Control with Hyper-V to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code."
+    - content: "Windows Defender Credential Guard provides this protection. To implement Windows Defender Credential Guard, you require the Hyper-V feature, Secure boot, and ideally a TPM and UEFI lock."
+      isCorrect: true
+      explanation: "That's correct. A TPM and UEFI lock are optional, but recommended."
