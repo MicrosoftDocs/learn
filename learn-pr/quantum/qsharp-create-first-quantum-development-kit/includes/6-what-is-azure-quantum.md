@@ -29,7 +29,7 @@ Solvers emulate certain processes from quantum physics by using classical hardwa
 
 For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
 
-![A diagram that lists companies who provide quantum hardware on Azure Quantum](../media/6-azure-quantum.png)
+![A diagram that lists companies who provide quantum hardware on Azure Quantum](../media/6-azure-quantum-hardware.png)
 
 ## What are Azure Quantum Workspaces?
 
