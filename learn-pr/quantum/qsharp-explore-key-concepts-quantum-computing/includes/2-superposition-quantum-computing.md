@@ -11,9 +11,9 @@ $$i \hbar \frac{\partial}{\partial t}\psi(t)= \hat H \psi(t).$$
 
 This equation captures the _wave function_, $\psi(t)$, which is the state of the quantum system, and the Hamiltonian, $\hat H$, which represents the energy of the system. Here, $t$ is time and $\hbar$ is the Planck constant.
 
-You may be thinking that you didn't join galactic adventures to learn about quantum mechanics and algebra in the first place. Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when they write quantum algorithms. But we can use the equation to help us understand some concepts of quantum computing.
+You may be thinking that you didn't choose the life of galactic adventures to learn about quantum mechanics and algebra in the first place. Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when they write quantum algorithms. But we can use the equation to help us understand some concepts of quantum computing.
 
-The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. That is, given a time $t$ the equation tell us the state of the system at that time. Each wave function $\psi$ is associated with an important concept in quantum computing: the *probability amplitude* of the wave function. The probability amplitude is a complex number that determines the probability of getting a certain outcome when we measure the system. 
+The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. That is, given a time $t$, the equation helps us find the state of the system at that time. Each wave function $\psi$ is associated with an important concept in quantum computing: the *probability amplitude* of the wave function. The probability amplitude is a complex number that determines the probability of getting a certain outcome when we measure the system. 
 
 
 The probability amplitude is an important difference from classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather, we describe bits by the probabilities of finding their states when we observe them.

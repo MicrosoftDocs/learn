@@ -23,7 +23,7 @@ Before we proceed, let's outline what the logic of a random number generator sho
 1. If the bit string represents a number greater than `max`, go back to step three.
 1. Otherwise, the process is complete. Return the generated number as an integer.
 
-As an example, let's set `max` to 12. That is, 12 is the largest number you want to use as a seccure password.
+As an example, let's set `max` to 12. That is, 12 is the largest number you want to use as a secure password.
 
 You need ${\lfloor ln(12) / ln(2) + 1 \rfloor}$, or four bits to represent a number between zero and 12. (For brevity, we'll skip how to derive this equation.)
 
@@ -33,7 +33,7 @@ Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${
 
 The QRNG will return number 6 as your password. In practice, you want to set a larger number as maximum since lower numbers are easy to crack. In fact, as a way to increase the difficulty of guessing or cracking your password, you could use ASCII code to convert binary to text and to generate a password with numbers, symbols and mixed-case letters. 
 
-Now you can be sure that your passwords are truly random. Space fleet data and their facilities are protected with the hightest security standards.
+Now you can be sure that your passwords are truly random. Space fleet data and their facilities are protected with the highest security standards.
 
 With our logic in place, you're now ready to build a complete random number generator.
 

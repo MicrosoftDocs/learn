@@ -1,14 +1,14 @@
 Now that you understand some of the basics, it's your turn to build a quantum random number generator. 
 
-Before using quantum computers to solve decisive problems, your first task consists of improving current security protocols creating random passwords.
+Before using quantum computers to solve important problems, your first task is to improve current security protocols by creating random passwords.
 
 You're likely already familiar with the concept of a random number generator (RNG). Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
 
-You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers and thus, jeopardize space fleet security. To do so you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and more secure.
+You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers used to generate passwords and thus jeopardize space fleet security. To do so you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and more secure.
 
 A QRNG is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
 
-You start by taking a qubit in a classical state, for example zero, as seed. The first step of the QRNG is to use an `H` operation to put the qubit \ket{0}$ into superposition. The measurement of this state results in a bit zero or a one with equal 50% probability each one. The value of this bit is truly random, there is no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger numbers to use as a valid password?
+You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there is no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger numbers to use as a valid password?
 
 Let's say you run your QRNG four times, generating this sequence of binary digits:
 
@@ -18,7 +18,7 @@ If you concatenate, or combine, these bits into a bit string, you can form a lar
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-If you repeat this process many times you can combine multiple bits to form any large number. Now you can provide your superior with that number as a seccure password since you can be sure that no space hacker could determine the results of the sequence of measurements. 
+If you repeat this process many times, you can combine multiple bits to form any large number. Now you can provide your superior with that number as a secure password, since you can be sure that no space hacker could determine the results of the sequence of measurements. 
 
 You build out your quantum random number generator in two phases. In this chapter, you build out the first phase, which is to generate a single random bit.
 
