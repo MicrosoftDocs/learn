@@ -27,7 +27,7 @@ Eventually, if the service still hasn't responded, your app needs to make the de
 Although it's possible to write your own retry logic in code, there are some open-source projects that have already codified the good practices above.
 
 ::: zone pivot="csharp"
-For C# there is [Polly](http://www.thepollyproject.org), it supports defining a retry policy, including random and exponential intervals. It allows for the reties to be stopped after a specified number or by using a circuit breaker. Finally for more permanent errors, fallback and caching can be used.
+For C# there is [Polly](https://dotnetfoundation.org/projects/polly), it supports defining a retry policy, including random and exponential intervals. It allows for the reties to be stopped after a specified number or by using a circuit breaker. Finally for more permanent errors, fallback and caching can be used.
 ::: zone-end
 ::: zone pivot="java"
 For Java there is [Resilience4j](https://github.com/resilience4j/resilience4j), it supports defining a retry policy, including random and exponential intervals. It allows for the reties to be stopped after a specified number or by using a circuit breaker. Finally for more permanent errors, fallback and caching can be used.

@@ -24,7 +24,7 @@ In the Zero Trust model, all elements work together to provide end-to-end securi
 - **Devices** create a large attack surface as data flows from devices to on-premises workloads and the cloud. Monitoring devices for health and compliance is an important aspect of security.
 - **Applications** are the way that data is consumed. This includes discovering all applications being used, sometimes called Shadow IT because not all applications are managed centrally. This pillar also includes managing permissions and access.
 - **Data** should be classified, labeled, and encrypted based on its attributes. Security efforts are ultimately about protecting data, and ensuring it remains safe when it leaves devices, applications, infrastructure, and networks that the organization controls.
-- **Infrastructure**, whether on-premises or cloud based, represent a threat vector. To improve security, assess for version, configuration, and JIT access, and use telemetry to detect attacks and anomalies. This allows you to automatically block or flag risky behavior and take protective actions.
-- **Networks** should be segmented, including deeper in-network micro segmentation. In addition, real-time threat protection, end-to-end encryption, monitoring, and analytics should be employed.
+- **Infrastructure**, whether on-premises or cloud based, represents a threat vector. To improve security, you assess for version, configuration, and JIT access, and use telemetry to detect attacks and anomalies. This allows you to automatically block or flag risky behavior and take protective actions.
+- **Networks** should be segmented, including deeper in-network micro segmentation. Also, real-time threat protection, end-to-end encryption, monitoring, and analytics should be employed.
 
 These six foundational pillars work together with the Zero Trust model to enforce organization security policies.
