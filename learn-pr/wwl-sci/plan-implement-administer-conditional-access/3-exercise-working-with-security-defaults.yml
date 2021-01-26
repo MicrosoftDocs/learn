@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan,-implement,-administer-conditional-access.exercise-working-with-security-defaults
+title: Exercise Working with Security Defaults
+metadata:
+  title: Exercise Working with Security Defaults
+  description: "Exercise Working with Security Defaults"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-working-with-security-defaults.md)]

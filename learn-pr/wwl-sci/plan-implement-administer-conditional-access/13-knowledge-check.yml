@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan,-implement,-administer-conditional-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does Conditional Access do?"
+    choices:
+    - content: "It is the component that enforces multifactor authentication policies for access."
+      isCorrect: false
+      explanation: "Incorrect. Although managing multifactor authentication is a component of Conditional Access, it encompasses all of the policies used to analyze signals and enforce organizational access policies."
+    - content: "It analyzes signals such as user, device, and location to enforce organizational access policies."
+      isCorrect: true
+      explanation: "Correct. Conditional Access is the tool used by Azure Active Directory to bring signals together, make decisions, and enforce organizational policies. Conditional Access is at the heart of the new identity-driven control plane."
+    - content: "It monitors and logs all access attempts."
+      isCorrect: false
+      explanation: "Incorrect. Conditional Access is the tool used by Azure Active Directory to bring signals together, make decisions, and enforce organizational policies. Conditional Access is at the heart of the new identity-driven control plane."
+  - content: "When would you use Mobile Application Management (MAM) without enrollment to protect sensitive data in a work or school-related app?"
+    choices:
+    - content: "Bring-your-own-device (BYOD) scenarios"
+      isCorrect: true
+      explanation: "Correct. MAM app protection policies allows you to manage and protect your organization's data within an application. With MAM without enrollment (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in BYOD scenarios."
+    - content: "Smart lockout policies"
+      isCorrect: false
+      explanation: "Incorrect. Smart lockout automatically locks user accounts after too many failed authentication attempts. Application controls are used to enable secure mobile device access."
+    - content: "Session management controls"
+      isCorrect: false
+      explanation: "Incorrect. Session management governs the frequency with which users must authenticate to a resource. Application controls are used to enable secure mobile device access."
+  - content: "What is user sign-in frequency?"
+    choices:
+    - content: "User sign-in frequency defines the time period before a user is asked to sign in again when attempting to access a resource."
+      isCorrect: true
+      explanation: "Correct. User sign-in frequency defines the time period before a user is asked to sign in again when attempting to access a resource."
+    - content: "User sign-in frequency defines the number of times a user signs in from a single device in a 24-hour period."
+      isCorrect: false
+      explanation: "Incorrect. User sign-in frequency defines the time period before a user is asked to sign in again when attempting to access a resource."
+    - content: "User sign-in frequency defines the number of devices a single user is signed in to."
+      isCorrect: false
+      explanation: "Incorrect. User sign-in frequency defines the time period before a user is asked to sign in again when attempting to access a resource."
