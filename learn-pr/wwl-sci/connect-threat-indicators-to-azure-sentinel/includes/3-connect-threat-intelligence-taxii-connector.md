@@ -24,6 +24,6 @@ To view the connector page:
 
 1. Select **Add** to enable the connection.
 
-The List of Configure TAXII servers shows the currently connected TAXII Servers and the Last indicator received time. The ellipse at the end of the configured server provides the option to remove the server configuration.
+The list of configure TAXII servers shows the currently connected TAXII servers and the last indicator received time. The ellipse at the end of the configured server provides the option to remove the server configuration.
 
-![The TAXII Connector page.](../media/taxii-connector.png)
+:::image type="content" source="../media/taxii-connector.png" alt-text="The TAXII Connector page":::

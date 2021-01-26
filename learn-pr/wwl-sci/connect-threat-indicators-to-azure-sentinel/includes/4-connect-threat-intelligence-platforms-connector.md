@@ -10,7 +10,6 @@ To view the connector page:
 
 - Follow the steps in the Connect your Threat Intelligence section
 
-- Then select Connect.
+- Then select **Connect**.
 
-![Threat Intelligence Platform connector page.](../media/threat-intelligence-platform-connector.png)
-
+:::image type="content" source="../media/tip-connector.png" alt-text="Threat Intelligence Platform connector page":::
