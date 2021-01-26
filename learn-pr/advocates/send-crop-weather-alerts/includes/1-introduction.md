@@ -4,7 +4,7 @@ In 2015, it was estimated that 2 billion people who live in the rural areas of d
 
 In the developed world, widespread access to the internet via computers and smartphones can provide detailed weather reports that help farmers plan how to best water or protect their crops. This data can be combined with sensors to track temperature, rainfall, and soil moisture. And it can be combined with complex AI models to make predictions or to provide guidance. 
 
-    In remote locations around the world, access to such technology is limited, although mobile phones with text messaging are common.
+In remote locations around the world, access to such technology is limited, although mobile phones with text messaging are common.
 
 In this module, you'll create an application that lets farmers use text messaging to set up temperature alerts for specific locations. These alerts help farmers know when to plant, when to water, or when to protect their crops.
 
