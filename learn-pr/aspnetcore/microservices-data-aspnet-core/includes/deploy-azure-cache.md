@@ -10,11 +10,13 @@ In this exercise, you will:
 1. Run the following script:
 
     ```bash
-    ./deploy/k8s/create-azure-redis.sh
+    cd ./deploy/k8s && \
+        ./create-azure-redis.sh
     ```
 
     The preceding script:
 
+    - Navigates to the directory containing the resource provisioning script.
     - Starts the creation of the Azure Cache for Redis.
     - Gets the connection string.
     - Waits for the creation command to finish (it could take a few minutes).
@@ -84,7 +86,7 @@ Now you have to update the ConfigMap files for the following microservices that 
 - SignalR
 - WebSPA
 
-Apply the following changes in the *deploy/k8s/helm-simple* directory:
+In the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor), apply the following changes in the *deploy/k8s/helm-simple* directory:
 
 1. In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value from `basketdata` to the connection string from the creation script:
 
@@ -113,7 +115,7 @@ eval $(cat ~/clouddrive/aspnet-learn/deploy-application-exports.txt)
 Then just run the following script:
 
 ```bash
-./deploy/k8s/deploy-application.sh --charts basket,identity,signalr,webspa
+./deploy-application.sh --charts basket,identity,signalr,webspa
 ```
 
 After a few minutes, when you see all services running in the *WebStatus* dashboard, run the app as you did before deleting the `basketdata` service to confirm it's working.
