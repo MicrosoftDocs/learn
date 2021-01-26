@@ -37,7 +37,7 @@ Windows Server supports an AD DS object, named a managed service account, which 
 - Simplified password management.
 - Simplified SPN management.
 
-### What Are Group Managed Service Accounts?
+### What are group managed service accounts?
 
 Group managed service accounts enable you to extend the capabilities of standard managed service accounts to more than one server in your domain. In server farm scenarios with Network Load Balancing (NLB) clusters or IIS servers, there often is a need to run system or program services under the same service account. Standard managed service accounts can't provide managed service account functionality to services that are running on more than one server. By using group managed service accounts, you can configure multiple servers to use the same managed service account and still retain the benefits that managed service accounts provide, like automatic password maintenance and simplified SPN management.
 

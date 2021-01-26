@@ -38,7 +38,7 @@ To use Windows Admin Center, you must first download and install it. You can dow
 
 RSAT is a collection of tools which enables you to manage Windows Server roles and features remotely.
 
-:::image type="content" source="../media/m6-enable-rsat.png" alt-text="A screenshot of the Add an optional feature dialog box. Displayed are a list of RSAT tools.":::
+:::image type="content" source="../media/m6-add-optional-feature-dialog-box.png" alt-text="A screenshot of the Add an optional feature dialog box. Displayed are a list of RSAT tools.":::
 
 > [!NOTE]
 > You no longer need to download RSAT. Instead, you enable it from the Settings app. In **Settings**, search for **Manage optional features**, select **Add a feature**, and then select the appropriate RSAT tools from the returned list. Select **Install** to add the feature.
