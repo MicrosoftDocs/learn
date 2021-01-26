@@ -8,7 +8,7 @@ To start with Notebooks, use the "Getting Started Guide For Azure Sentinel ML No
 
 1. In the Subscription box, select your subscription.
 
-1. Select **Create a new Resource group **and choose a name for your new resource group.
+1. Select **Create a new Resource group** and choose a name for your new resource group.
 
 1. In the Workspace details section:
 

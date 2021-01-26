@@ -10,7 +10,7 @@ In this snippet of code:
 
 - Next, display the first five rows with the .head() function.
 
-![Sample 1 Query](../media/th1.png)
+:::image type="content" source="../media/threat-hunt-1.png" alt-text="Sample 1 Query":::
 
 **Code Block**
 
@@ -26,7 +26,7 @@ In this snippet of code:
 
 - The new function returns the Severity of the IP address.
 
-![Sample 2 Query](../media/th2.png)
+:::image type="content" source="../media/threat-hunt-2.png" alt-text="Sample 2 Query":::
 
 **Code Block**
 
@@ -38,5 +38,4 @@ In this snippet of code:
 
 - Then, [qry_prov.exec_query()] returns  a pandas DataFrame that provides visualization features.  You then plot a bar graph with the unique IP addresses and how many times they were used in the first five entries of the Dataframe.
 
-![Sample 3 Query](../media/th3.png)
-
+:::image type="content" source="../media/threat-hunt-3.png" alt-text="Sample 3 Query":::
