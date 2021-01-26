@@ -78,7 +78,7 @@ If we peek inside the `test-journal.json` file we would see the following conten
 [{"text":"buy milk","created_at":1610134741},{"text":"water the plants","created_at":1610134762}]
 ```
 
-We can see that each `Task` is represented as a JSON Object, with each filed being one key. The task description is stored as a string and the timestamp is persisted as a number of seconds since [epoch](https://en.wikipedia.org/wiki/Epoch_(computing)).
+We can see that each `Task` is represented as a JSON Object, with each filed being one key. The task description is stored as a string and the timestamp is persisted as a number of seconds since [epoch](https://en.wikipedia.org/wiki/Epoch_(computing)?azure-portal=true).
 
 If we pretty-printed that JSON file, it would look like this:
 

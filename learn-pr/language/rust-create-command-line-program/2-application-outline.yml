@@ -8,7 +8,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+title: Outline the application
 durationInMinutes: 1
 content: |
   [!include[](includes/2-application-outline.md)]
