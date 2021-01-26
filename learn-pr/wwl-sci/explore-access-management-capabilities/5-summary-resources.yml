@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.summary-resources
+title: Summary & resources
+metadata:
+  title: Summary & resources
+  description: "Summary & resources"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary-resources.md)]

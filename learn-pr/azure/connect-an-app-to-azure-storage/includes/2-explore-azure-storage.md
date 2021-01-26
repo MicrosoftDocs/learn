@@ -1,6 +1,6 @@
 Let's start by taking a quick look at Azure storage services, data styles, and accounts. 
 
-Microsoft Azure Storage is a managed service that provides durable, secure, and scalable storage in the cloud. Let's break down these terms down.
+Microsoft Azure Storage is a managed service that provides durable, secure, and scalable storage in the cloud. Let's break these terms down.
 
 | | |
 |-|-|
