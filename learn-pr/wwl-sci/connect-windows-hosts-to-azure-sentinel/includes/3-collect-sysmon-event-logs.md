@@ -20,5 +20,5 @@ After connecting the agent to the windows machine:
 
 Once configured, the Sysmon events will be available in the Event table.
 
-![Sysmon configuration](../media/sysmon.png)
+:::image type="content" source="../media/sysmon.png" alt-text="Sysmon configuration":::
 

@@ -14,4 +14,4 @@ After completing this module, you will be able to:
 
 ## Prerequisites
 
-Basic knowledge of operational concepts such as monitoring, logging, and alerting
+Basic knowledge of operational concepts such as monitoring, logging, and alerting.
