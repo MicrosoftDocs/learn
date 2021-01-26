@@ -4,7 +4,7 @@ With the proliferation of devices of all shapes and sizes and the bring your own
 
 - Protect the organization's assets
 
-To protect assets, IT staff need to first manage the device identities. IT staff can build on the device identity with tools like Microsoft Intune to ensure standards for security and compliance are met. Azure Active Directory (Azure AD) enables single sign-on to devices, apps, and services from anywhere through these devices.
+To protect these assets, IT staff need to first manage the device identities. IT staff can build on the device identity with tools like Microsoft Intune to ensure standards for security and compliance are met. Azure Active Directory (Azure AD) enables single sign-on to devices, apps, and services from anywhere through these devices.
 
 - Your users get access to your organization's assets they need.
 
@@ -25,7 +25,8 @@ The goal of Azure AD registered devices is to provide your users with support fo
 | Device management| <ul><li>Mobile Device Management (example: Microsoft Intune)</li> <li>Mobile Application Management</li></ul>|
 | Key capabilities| <ul><li>SSO to cloud resources</li> <li>Conditional Access when enrolled into Intune</li> <li>Conditional Access via App protection policy</li> <li>Enables Phone sign in with Microsoft Authenticator app</li></ul>|
 
-![Azure AD registered devices](../media/azure-ad-registered-device.png)
+> [!div class="mx-imgBorder"]
+> ![Azure AD registered devices](../media/azure-ad-registered-device.png)
 
 Azure AD registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have an Azure AD account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Azure AD account and Conditional Access policies applied to the device identity.
 
@@ -88,7 +89,8 @@ The goal of Azure AD joined devices is to simplify:
 
 - Users to sign in to their devices with their Azure AD or synced Active Directory work or school accounts.
 
-![Azure AD joined devices](../media/azure-ad-joined-device.png)
+> [!div class="mx-imgBorder"]
+> ![Azure AD joined devices](../media/azure-ad-joined-device.png)
 
 Azure AD Join can be deployed by using a number of different methods. The following  subsection focuses on the self-service experience method.
 
@@ -112,17 +114,20 @@ In addition, if your tenant is federated, your Identity provider MUST support WS
 
 1. Start by customizing your region and language. Then review and accept the Microsoft Software License Terms.
 
-![Customize for your region](../media/01.png)
+> [!div class="mx-imgBorder"]
+> ![Customize for your region](../media/01.png)
 
 1. Select the network you want to use for connecting to the Internet.
 
 1. Click **This device belongs to my organization**.
 
-![Who owns this PC screen](../media/02.png)
+> [!div class="mx-imgBorder"]
+> ![Who owns this PC screen](../media/02.png)
 
 1. Enter the credentials that were provided to you by your organization, and then click **Sign in**.
 
-![Sign-in screen](../media/03.png)
+> [!div class="mx-imgBorder"]
+> ![Sign-in screen](../media/03.png)
 
 1. Your device locates a matching tenant in Azure AD. If you are in a federated domain, you are redirected to your on-premises Secure Token Service (STS) server, for example, Active Directory Federation Services (AD FS).
 
@@ -144,7 +149,8 @@ In addition, if your tenant is federated, your Identity provider MUST support WS
 
 To verify whether a device is joined to your Azure AD, review the **Access work or school** dialog on your Windows device. The dialog should indicate that you are connected to your Azure AD directory.
 
-![Access work or school screen](../media/13.png)
+> [!div class="mx-imgBorder"]
+> ![Access work or school screen](../media/13.png)
 
 ## Hybrid Azure AD joined devices
 
@@ -169,7 +175,8 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 | Device management| <ul><li>Group Policy</li> <li>Configuration Manager standalone or co-management with Microsoft Intune</li></ul>|
 | Key capabilities| <ul><li>SSO to both cloud and on-premises resources</li> <li>Conditional Access through Domain join or through Intune if co-managed</li> <li>Self-service Password Reset and Windows Hello PIN reset on lock screen</li> <li>Enterprise State Roaming across devices</li></ul>|
 
-![Hybrid Azure AD joined devices](../media/azure-ad-hybrid-joined-device.png)
+> [!div class="mx-imgBorder"]
+> ![Hybrid Azure AD joined devices](../media/azure-ad-hybrid-joined-device.png)
 
 ### Scenarios
 

@@ -43,8 +43,6 @@ Managing security can be difficult with common identity-related attacks like pas
 
 - Protecting privileged activities like access to the Azure portal.
 
-![{1}](../media/{2})
-
 ### Availability
 
 Microsoft is making security defaults available to everyone. The goal is to ensure that all organizations have a basic level of security enabled at no extra cost.
