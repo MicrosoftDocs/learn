@@ -114,20 +114,20 @@ In addition, if your tenant is federated, your Identity provider MUST support WS
 
 1. Start by customizing your region and language. Then review and accept the Microsoft Software License Terms.
 
-> [!div class="mx-imgBorder"]
-> ![Customize for your region.](../media/01.png)
+    > [!div class="mx-imgBorder"]
+    > ![Customize for your region.](../media/01.png)
 
 1. Select the network you want to use for connecting to the Internet.
 
 1. Click **This device belongs to my organization**.
 
-> [!div class="mx-imgBorder"]
-> ![Who owns this PC screen.](../media/02.png)
+    > [!div class="mx-imgBorder"]
+    > ![Who owns this PC screen.](../media/02.png)
 
 1. Enter the credentials that were provided to you by your organization, and then click **Sign in**.
 
-> [!div class="mx-imgBorder"]
-> ![Sign-in screen.](../media/03.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sign-in screen.](../media/03.png)
 
 1. Your device locates a matching tenant in Azure AD. If you are in a federated domain, you are redirected to your on-premises Secure Token Service (STS) server, for example, Active Directory Federation Services (AD FS).
 
