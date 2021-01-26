@@ -101,7 +101,7 @@ The first phase of the project needs you create an Azure database for MySQL to h
 1. When the service has been created, select **Go to resource**.
 1. Select **Connection security**.
 1. On the **Connection security page**, set **Allow access to Azure services** to **Yes**.
-1. In the list of firewall rules, add a rule named **VM**, and set the **START IP ADDRESS** and **END IP ADDRESS** to the IP address of the virtual machine running the MySQL server. It is the IP address listed as the last line in the cloud shell.
+1. In the list of firewall rules, add a rule named **VM**, and set the **START IP ADDRESS** and **END IP ADDRESS** to the IP address of the virtual machine running the MySQL server. It is the IP address listed as the last line in the Cloud Shell.
 1. Select **Add current client IP address**, to also enable your client machine to access the database.
 1. **Save**, and wait for the firewall rules to be updated.
 1. At the Cloud Shell prompt, run the following command to create a new database in your Azure Database for MySQL service. Replace *[nnn]* with the suffix you used when you created the Azure Database for MySQL service. Replace *[resource group]* with the name of the resource group you specified for the service:
