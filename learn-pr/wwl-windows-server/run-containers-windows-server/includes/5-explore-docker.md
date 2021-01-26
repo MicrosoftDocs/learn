@@ -4,7 +4,7 @@ The Contoso Windows Server administrator needs to understand Docker, Docker cont
 
 *Docker* is a collection of open-source tools, solutions, and cloud-based services that provide a common model for packaging (also known as *containerizing*) app code into a standardized unit for software development. This standardized unit, called a *Docker container*, is software wrapped in a complete file system that includes everything it needs to run: code, runtime, system tools, system libraries, and anything you can install on a server.
 
-Supporting the Docker container is the core of the Docker platform, called the *Docker Engine*. The Docker Engine is a lightweight runtime environment that runs on Linux, Mac OS, or Windows-based operating systems.
+Supporting the Docker container is the core of the Docker platform, called the *Docker Engine*. The Docker Engine is a lightweight runtime environment that runs on Linux, macOS, or Windows-based operating systems.
 
 Another component called the *Docker Client for Windows* can be used as a command-line interface (CLI) to integrate with the engine and run commands for building and managing the Docker containers provisioned on the host computer.
 
