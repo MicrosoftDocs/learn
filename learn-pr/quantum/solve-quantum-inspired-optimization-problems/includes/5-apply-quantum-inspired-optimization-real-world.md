@@ -4,7 +4,7 @@ Those two sets correspond to whether a mineral chunk is loaded onto container *A
 
 This short animation shows one possible way an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
-> [!VIDEO <https://channel9.msdn.com/Shows/Learn-Azure/Quantum-Optimization-Container-Demo/player?format=ny>]
+> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4MFtm>]
 
 In this next part, we'll use quantum-inspired optimization to solve the problem.
 
