@@ -27,9 +27,9 @@ To enable Azure Sentinel, you need contributor permissions to the subscription i
 
 The "Add Azure Sentinel to Workspace" screen will now appear after you've completed the previous steps.
 
-Wait for the newly created "Log Analytics Workspace" to appear in the list.  This could take a few minutes.
+ 1. Wait for the newly created "Log Analytics Workspace" to appear in the list.  This could take a few minutes.
 
-Select the newly created Log Analytics workspace. And select the **Add** button.
+ 2. Select the newly created Log Analytics workspace. And select the **Add** button.
 
 The new Azure Sentinel workspace will now be the active screen.  The Azure Sentinel left navigation has three areas:  
 
