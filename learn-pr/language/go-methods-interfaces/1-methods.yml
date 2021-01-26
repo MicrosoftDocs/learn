@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-methods-interfaces.1-methods
+metadata:
+  title: How to use methods
+  description: Learn how to use methods in Go.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: How to use methods
+durationInMinutes: 9
+content: |
+  [!include[](includes/1-methods.md)]
