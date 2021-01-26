@@ -128,9 +128,9 @@ public class AppConfig {
 
 ```
 
-## Write emailer script
+## Write email module
 
-Since the goal is to better engage with the customer by sending them emails when they sign up for the petclinic, or when they visit the clinic, we need to write a script that will send an email.
+Since the goal is to better engage with the customer by sending them emails when they sign up for the petclinic, or when they visit the clinic, we need to build a module that will send an email.
 
 To do that, we first create a new package `org.springframework.samples.petclinic.communication.email` under the `org.springframework.samples.petclinic.communication` package.
 
