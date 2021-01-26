@@ -32,7 +32,7 @@ units:
 - learn.wwl.create-configure-manage-identities.exercise-assign-licenses-to-users
 - learn.wwl.create-configure-manage-identities.exercise-restore-remove-deleted-users
 - learn.wwl.create-configure-manage-identities.groups
-- learn.wwl.create-configure-manage-identities.exercise-adding-groups-azure-ad
+- learn.wwl.create-configure-manage-identities.exercise-adding-groups-azure-active-directory
 - learn.wwl.create-configure-manage-identities.manage-licenses
 - learn.wwl.create-configure-manage-identities.exercise-change-group-license-assignments
 - learn.wwl.create-configure-manage-identities.exercise-change-user-license-assignments

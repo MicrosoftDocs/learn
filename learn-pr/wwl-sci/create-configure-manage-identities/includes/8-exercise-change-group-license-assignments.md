@@ -11,11 +11,11 @@
 
 1. Review the current assignments and then, on the menu, select **+ Assignments**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted](../media/lp1-mod2-change-group-license.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted.](../media/lp1-mod2-change-group-license.png)
 
-> [!NOTE]
-> If you have no licenses to add, you may choose to sign up for an Office 365 or Microsoft 365 trial subscription.
+    > [!NOTE]
+    > If you have no licenses to add, you may choose to sign up for an Office 365 or Microsoft 365 trial subscription.
 
 1. On the Update license assignments blade, select another license, clear the selection of an existing license, add or remove license options, or any combination.
 
@@ -37,23 +37,23 @@ When you're using group-based licensing the same errors can occur, but they happ
 
 1. Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
 
-> [!div class="mx-imgBorder"]
-> ![Group and error notifications message](../media/group-error-notification.png)
+    > [!div class="mx-imgBorder"]
+    > ![Group and error notifications message.](../media/group-error-notification.png)
 
 1. Select the notification to open a list of all affected users. You can select each user individually to see more details.
 
-> [!div class="mx-imgBorder"]
-> ![list of users in group licensing error state](../media/list-of-users-with-errors.png)
+    > [!div class="mx-imgBorder"]
+    > ![list of users in group licensing error state.](../media/list-of-users-with-errors.png)
 
 1. To find all groups that contain at least one error, on the **Azure Active Directory** blade select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
 
-> [!div class="mx-imgBorder"]
-> ![Overview and information about groups in error state](../media/group-errors-widget.png)
+    > [!div class="mx-imgBorder"]
+    > ![Overview and information about groups in error state.](../media/group-errors-widget.png)
 
 1. Select the box to see a list of all groups with errors. You can select each group for more details.
 
 > [!div class="mx-imgBorder"]
-> ![Overview and list of groups with errors](../media/list-of-groups-with-errors.png)
+> ![Overview and list of groups with errors.](../media/list-of-groups-with-errors.png)
 
 The following sections give descriptions of each potential problem and the way to resolve it.
 
@@ -192,11 +192,11 @@ The most important thing to keep in mind is that you should avoid a situation in
 
 1. Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.
 
-  - You can spot check individual users by looking at their license details. You will see that they have the same licenses assigned “directly” and “inherited” from groups.
+    - You can spot check individual users by looking at their license details. You will see that they have the same licenses assigned “directly” and “inherited” from groups.
 
-  - You can run a PowerShell script to [verify how licenses are assigned to users](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-group-advanced).
+    - You can run a PowerShell script to [verify how licenses are assigned to users](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-group-advanced).
 
-  - When the same product license is assigned to the user both directly and through a group, only one license is consumed by the user. Hence no additional licenses are required to perform migration.
+    - When the same product license is assigned to the user both directly and through a group, only one license is consumed by the user. Hence no additional licenses are required to perform migration.
 
 1. Verify that no license assignments failed by checking each group for users in error state.
 
@@ -212,16 +212,16 @@ Here is what the migration process could look like:
 
 1. Confirm that license assignment has completed for all users. Go to the overview page for the group, select **Licenses**, and check the processing status at the top of the **Licenses** blade.
 
-  - Look for “Latest license changes have been applied to all users" to confirm processing has completed.
+    - Look for “Latest license changes have been applied to all users" to confirm processing has completed.
 
-  - Look for a notification on top about any users for whom licenses may have not been successfully assigned. Did we run out of licenses for some users? Do some users have conflicting license plans that prevent them from inheriting group licenses?
+    - Look for a notification on top about any users for whom licenses may have not been successfully assigned. Did we run out of licenses for some users? Do some users have conflicting license plans that prevent them from inheriting group licenses?
 
 1. Spot check some users to verify that they have both the direct and group licenses applied. Go to the profile page for a user, select Licenses, and examine the state of licenses.
 
   - This is the expected user state during migration:
 
 > [!div class="mx-imgBorder"]
-> ![The expected user state during migration](../media/expected-user-state.png)
+> ![The expected user state during migration.](../media/expected-user-state.png)
 
 This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
 
@@ -230,7 +230,7 @@ This confirms that the user has both direct and inherited licenses. We see that 
 1. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
 
 > [!div class="mx-imgBorder"]
-> ![Confirm that direct licenses are removed](../media/direct-licenses-removed.png)
+> ![Confirm that direct licenses are removed.](../media/direct-licenses-removed.png)
 
 ## Change license assignments for a user or group in Azure Active Directory
 

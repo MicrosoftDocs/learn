@@ -11,13 +11,13 @@ You can skip creating this user if you have already created the same user in the
 
 1. Create a user using the following information:
 
-| **Setting**| **Value**|
-| :--- | :--- |
-| User name| Chris|
-| Name| Chris Green|
-| First name| Chris|
-| Last name| Green|
-| Password| Pass@word1|
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | User name| Chris|
+    | Name| Chris Green|
+    | First name| Chris|
+    | Last name| Green|
+    | Password| Pass@word1|
 
 1. When complete, verify the account for Chris Green is shown in the **All users** list.
 
@@ -31,16 +31,16 @@ You can skip creating this user if you have already created the same user in the
 
 1. Create a group using the following information:
 
-| **Setting**| **Value**|
-| :--- | :--- |
-| Group type| Security|
-| Group name| Marketing|
-| `Membership type| Assigned|
-| Owners| Assign your own administrator account as the group owner|
-| Members| Chris Green|
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | Group type| Security|
+    | Group name| Marketing|
+    | `Membership type| Assigned|
+    | Owners| Assign your own administrator account as the group owner|
+    | Members| Chris Green|
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](../media/lp1-mod2-create-group.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.](../media/lp1-mod2-create-group.png)
 
 1. When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
@@ -56,11 +56,11 @@ You can skip creating this user if you have already created the same user in the
 
 1. Under **Review license** options, review the available options for the license you have selected.
 
-> [!TIP]
-> When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
+    > [!TIP]
+    > When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](../media/lp1-mod2-assign-license-group.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](../media/lp1-mod2-assign-license-group.png)
 
 1. Select **Save**.
 

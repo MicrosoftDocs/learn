@@ -9,17 +9,17 @@
 
 1. Create a user using the following information:
 
-| **Setting**| **Value**|
-| :--- | :--- |
-| User name| Dominique|
-| Name| Dominique Koch|
-| First name| Dominique|
-| Last name| Koch|
-| Password| Pass@word1|
-| Usage location| Select your preferred usage location|
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | User name| Dominique|
+    | Name| Dominique Koch|
+    | First name| Dominique|
+    | Last name| Koch|
+    | Password| Pass@word1|
+    | Usage location| Select your preferred usage location|
 
-> [!WARNING]
-> To assign a license to a user, the user must be assigned a usage location.
+    > [!WARNING]
+    > To assign a license to a user, the user must be assigned a usage location.
 
 1. When complete, verify the account for Dominique Koch is shown in the **All users** list.
 
@@ -35,8 +35,8 @@
 
 1. On the Update license assignments blade, select the check box for a single or multiple licenses.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the Update license assignments page and license options highlighted](../media/lp1-mod2-assign-user-license-options.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the Update license assignments page and license options highlighted.](../media/lp1-mod2-assign-user-license-options.png)
 
 1. When complete, select **Save**.
 

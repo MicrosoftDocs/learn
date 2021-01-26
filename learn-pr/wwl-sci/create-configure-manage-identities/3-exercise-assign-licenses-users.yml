@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-exercise-assign-licenses-to-users.md)]
+  [!include[](includes/3-exercise-assign-licenses-users.md)]
