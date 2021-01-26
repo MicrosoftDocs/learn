@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.quantum.tbd-libraries
+uid: learn.quantum.use-qs-libraries
 metadata:
   title: Use the Q# libraries
   description: Learn about libraries in Q# and how to add them to your projects, discover the Q# API documentation, implement another application of Grover's algorithm using the Standard and Numerics libraries, and write documentation your own code.
@@ -28,13 +28,13 @@ products:
 - qdk
 - azure-quantum
 units:
-- learn.quantum.tbd-libraries.1-introduction
-- learn.quantum.tbd-libraries.2-libraries-overview
-- learn.quantum.tbd-libraries.3-api-docs
-- learn.quantum.tbd-libraries.4-write-oracle
-- learn.quantum.tbd-libraries.5-run-full-program
-- learn.quantum.tbd-libraries.6-write-documentation
-- learn.quantum.tbd-libraries.8-knowledge-check
-- learn.quantum.tbd-libraries.9-summary
+- learn.quantum.use-qs-libraries.1-introduction
+- learn.quantum.use-qs-libraries.2-libraries-overview
+- learn.quantum.use-qs-libraries.3-api-docs
+- learn.quantum.use-qs-libraries.4-write-oracle
+- learn.quantum.use-qs-libraries.5-run-full-program
+- learn.quantum.use-qs-libraries.6-write-documentation
+- learn.quantum.use-qs-libraries.8-knowledge-check
+- learn.quantum.use-qs-libraries.9-summary
 badge:
-  uid: learn.quantum.tbd-libraries.badge
+  uid: learn.quantum.use-qs-libraries.badge
