@@ -41,4 +41,4 @@ In this interactive guide, you'll explore some of the capabilities of the Micros
 
 :::image type="content" source="../media/3-compliance-center-interactive-guide-inline.png" lightbox="../media/3-compliance-center-interactive-guide-expanded.png" alt-text="Compliance Center interactive guide":::
 
-(Explore compliance center - interactive guide)[https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M02%20-%20Explore%20Compliance%20Center/index.html]
+[Explore compliance center - interactive guide](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M02%20-%20Explore%20Compliance%20Center/index.html)
