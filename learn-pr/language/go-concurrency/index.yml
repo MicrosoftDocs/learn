@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.language.go-concurrency
+metadata:
+  title: Learn how concurrency works in Go
+  description: Understand more about concurrency, one of the most unique features in Go.
+  ms.date: 01/25/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn how concurrency works in Go
+summary: Understand more about concurrency, one of the most unique features in Go.
+abstract:  |
+  In this module, you'll learn about:
+  - How concurrency works in Go
+  - The difference between concurrency and parallelism
+  - How communication works in a concurrent program by using channels
+  - How to write a program that runs faster by implementing concurrency
+  - How to write dynamic programs that can use buffers to take advantage of concurrency when one to launch a limited number of concurrent calls
+prerequisites: |
+  - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
+  - Be able to create and modify `.go` files
+  - Be able to run Go applications using the terminal prompt
+  - Have knowledge of basic data types like `string`, `int`, and `boolean`
+  - Have knowledge of how to write basic data control flows like `if` and `for` statements
+  - Have knowledge of how to write functions
+  - Have knowledge of how to use libraries like `net/http`
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.language.go-concurrency.0-introduction
+- learn.language.go-concurrency.1-goroutines
+- learn.language.go-concurrency.2-channels
+- learn.language.go-concurrency.3-buffered-channels
+- learn.language.go-concurrency.4-challenge
+- learn.language.go-concurrency.5-solution
+- learn.language.go-concurrency.6-knowledge-check
+- learn.language.go-concurrency.7-summary
+badge:
+  uid: learn.language.go-concurrency.badge

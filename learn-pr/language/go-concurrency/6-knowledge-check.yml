@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-concurrency.6-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 01/25/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Answer these questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's the correct syntax to create a goroutine?"
+    choices:
+    - content: "`func (){}()`."
+      isCorrect: false
+      explanation: "Incorrect: you need to use the `go` keyword before the method you want to execute as a goroutine."
+    - content: "`go launch()`."
+      isCorrect: true
+      explanation: "Correct: you need to use the `go` keyword before the method you want to execute as a goroutine."
+    - content: "goroutine launch()`."
+      isCorrect: false
+      explanation: "Incorrect: you need to use the `go` keyword before the method you want to execute as a goroutine."
+    - content: "`thread launch()`."
+      isCorrect: false
+      explanation: "Incorrect: you need to use the `go` keyword before the method you want to execute as a goroutine."
+  - content: "What's the purpose of using channels in Go?"
+    choices:
+    - content: "To communicate properly within goroutines and avoid sharing memory for communication purposes."
+      isCorrect: true
+      explanation: "This is why Go says that we don't have to communicate by sharing memory; instead, we should share memory by communicating."
+    - content: "It's just another way of creating goroutines."
+      isCorrect: false
+      explanation: "Incorrect: You create a goroutine by using the `go` keyword."
+    - content: "To send data when doing HTTP calls to another API."
+      isCorrect: false
+      explanation: "Incorrect: Channels are used for communication purposes among goroutines."
+    - content: "To communicate between classes."
+      isCorrect: false
+      explanation: "Incorrect. Channels help communicate properly within goroutines."
+  - content: "What's a particular feature of unbuffered channels?"
+    choices:
+    - content: "Channels that are dynamic, they can grow as you need automatically."
+      isCorrect: false
+      explanation: "Incorrect. The main feature from unbuffered channels is that they communicate synchronously, for every data you send, you need to have a way to receive the message; otherwise, the program will get blocked."
+    - content: "Sending and receiving data in channels are blocking operations."
+      isCorrect: true
+      explanation: "Correct. Unbuffered channels communicate synchronously, for every data you send, you need to have a way to receive the message; otherwise, the program will get blocked."
+    - content: "Channels that you can pass by reference only."
+      isCorrect: false
+      explanation: "Incorrect. The main feature from unbuffered channels is that they communicate synchronously, for every data you send, you need to have a way to receive the message; otherwise, the program will get blocked."  
+  - content: "How do you send data to a channel?"
+    choices:
+    - content: "`ch = \"Hi\"`."
+      isCorrect: false
+      explanation: "Incorrect. You need to place the `<-` operator after the channel variable to assign a value."
+    - content: "`ch <- \"Hi\"`."
+      isCorrect: true
+      explanation: "Correct. You need to place the `<-` operator after the channel variable to assign a value."
+    - content: "`send(ch, \"Hi\")`."
+      isCorrect: false
+      explanation: "Incorrect. You need to place the `<-` operator after the channel variable to assign a value."
+  - content: "How do you receive data from a channel?"
+    choices:
+    - content: "`res := <- ch`."
+      isCorrect: true
+      explanation: "Correct: you need to place the `<-` operator before the channel variable to read its value."
+    - content: "`res := get(ch)`."
+      isCorrect: false
+      explanation: "Incorrect: you need to place the `<-` operator before the channel variable to read its value."
+    - content: "`res := ch<-`."
+      isCorrect: false
+      explanation: "Incorrect. you need to place the `<-` operator before the channel variable to read its value."   
