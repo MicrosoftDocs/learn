@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are Entities"
+  - content: "What are Entities?"
     choices:
     - content: "Data elements"
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Alerts"
       isCorrect: false
       explanation: "Incorrect.  Alerts can be connected to Entities."
-  - content: "In the timeline of the Entity page, what type of items are an aggregation of notable events relating to the entity"
+  - content: "In the timeline of the Entity page, what type of items are an aggregation of notable events relating to the entity?"
     choices:
     - content: "Alerts"
       isCorrect: false
