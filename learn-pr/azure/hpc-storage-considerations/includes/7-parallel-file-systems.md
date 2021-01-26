@@ -41,4 +41,3 @@ Parallel file systems typically operate against complex workloads in scale envir
 ## Deployment Considerations ##
 
 Today, Azure offers several roll-your-own parallel file system offerings. You can go to the Azure Marketplace to see the options, which include BeeGFS, Lustre (search for Whamcloud). You can also install Lustre on standard Linux Virtual Machines, or you can use of the ARM templates found at our Azure Quickstart site: https://azure.microsoft.com/en-us/resources/templates/?term=lustre
-
