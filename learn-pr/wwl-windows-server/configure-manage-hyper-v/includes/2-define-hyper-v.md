@@ -105,4 +105,4 @@ The main steps in the process are:
 > [!NOTE]
 > If you install the Hyper-V Server role on a server that contains the Server Core installation option, the `-IncludeManagementTools` parameter will only install the Hyper-V Module for Windows PowerShell.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Mfsh]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfsh]

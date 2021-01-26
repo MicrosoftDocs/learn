@@ -75,4 +75,4 @@ The main steps in the process are:
 1. Use the **Windows PowerShell** `New-VMSwitch` cmdlet to create a new network switch.
 1. Use the **Windows PowerShell** `Get-VMSwitch` cmdlet to observe all Hyper-V network switches, including the one you just created.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MzHL]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MzHL]
