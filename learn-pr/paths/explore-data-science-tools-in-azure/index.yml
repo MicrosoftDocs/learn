@@ -21,7 +21,6 @@ roles:
 products:
 - azure
 - azure-portal
-- azure-machine-learning-service
 - azure-machine-learning-studio
 - azure-data-science-vm
 modules:
