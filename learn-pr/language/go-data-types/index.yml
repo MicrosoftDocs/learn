@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.language.go-data-types
+metadata:
+  title: Use data types and structs, arrays, slices, and maps in Go
+  description: Learn about structs, arrays, slices and maps. Understand the difference between them and when to use one type over the other.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use data types and structs, arrays, slices, and maps in Go
+summary: Learn about structs, arrays, slices and maps. Understand the difference between them and when to use one type over the other.
+abstract:  |
+  In this module, you'll learn about:
+  - The aggregate types in Go: arrays and slices
+  - The differences between arrays and slices
+  - Built-in functions to manipulate data
+  - How to use key/value data structures using maps
+  - How to write complex custom data types with structs
+prerequisites: | 
+  - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/).
+  - Be able to create and modify `.go` files
+  - Be able to run Go applications using the terminal prompt
+  - Have knowledge of basic data types like `string`, `int`, and `boolean`
+  - Have knowledge of how to write basic data control flows like `if` and `for` statements
+iconUrl: /learn/achievements/go-data-types.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.language.go-data-types.0-introduction
+- learn.language.go-data-types.1-arrays
+- learn.language.go-data-types.2-slices
+- learn.language.go-data-types.3-maps
+- learn.language.go-data-types.4-structs
+- learn.language.go-data-types.5-challenge
+- learn.language.go-data-types.6-solution
+- learn.language.go-data-types.7-knowledge-check
+- learn.language.go-data-types.8-summary
+badge:
+  uid: learn.language.go-data-types.badge

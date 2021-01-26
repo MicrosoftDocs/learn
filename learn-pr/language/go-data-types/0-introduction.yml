@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-data-types.0-introduction
+metadata:
+  title: Introduction
+  description: Introduction.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/0-introduction.md)]
