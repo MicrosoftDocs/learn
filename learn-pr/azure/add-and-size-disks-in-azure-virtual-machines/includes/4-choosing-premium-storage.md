@@ -63,12 +63,14 @@ There is more detail on disk performance below.
 
 The data in your Microsoft Azure storage account is automatically replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions.
 
-There are four types of replication:
+There are several types of replication:
 
 - **Locally redundant storage (LRS)** - Azure replicates the data within the same Azure data center. The data remains available if a node fails. However, if an entire data center fails, data may be unavailable.
 - **Geo-redundant storage (GRS)** - Azure replicates your data to a second region that is hundreds of miles away from the primary region. If your storage account has GRS enabled, then your data is durable even if there's a complete regional outage or a disaster in which the primary region isn't recoverable.
 - **Read-access geo-redundant storage (RA-GRS)** - Azure provides read-only access to the data in the secondary location, and geo-replication across two regions. If a data center fails, the data remains readable but can't be modified.
 - **Zone-redundant storage (ZRS)** - Azure replicates your data synchronously across three storage clusters in a single region. Each storage cluster is physically separated from the others and resides in its own availability zone (AZ). With this type of replication, you can still access and manage your data in the event that a zone becomes unavailable.
+- **Geo-zone-redundant storage (GZRS)** - Azure replicates your data synchronously across three availability zones in one region. Data is also replicated three times to another secondary region that's paired with it.
+- **Read-access geo-zone-redundant storage (RA-GZRS)** - Azure provides read-only access to the data in the secondary location. Geo-replication is across three availability zones in two region. If a data center fails, the data remains readable but can't be modified.
 
 Standard storage accounts support all replication types, but premium storage accounts only support locally redundant storage (LRS). Since VMs themselves run in a single region, this restriction isn't usually an issue for VHD storage.
 

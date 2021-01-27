@@ -13,7 +13,7 @@ The solution you will create for Margie's Travel requires the following resource
 
 A script containing Azure command-line interface (CLI) commands to create these resources has been provided. Use the following steps to run it.
 
-1. In the Codespace you created previously, right-click (Ctrl+click if using a Mac) the **02-Create-an-enrichment-pipeline** folder and select **Open in Integrated Terminal**. This will open a new bash terminal pane.
+1. In the **km** project in Visual Studio Code, right-click (Ctrl+click if using a Mac) the **02-Create-an-enrichment-pipeline** folder and select **Open in Integrated Terminal**. This will open a new bash terminal pane.
 
     > [!TIP]
     > You're going to open multiple terminal sessions during this module, each associated with a folder. They'll all be available in the same **Terminal** pane, and you can switch between them using the drop-down list (which will currently include the *bash* terminal you just opened).
@@ -24,7 +24,7 @@ A script containing Azure command-line interface (CLI) commands to create these 
     az login --output none
     ```
 
-3. When prompted, open `https://microsoft.com/devicelogin` in a new tab, enter the provided code, and sign into your Azure subscription. Then return to the Codespaces tab and wait for the sign-in process to complete.
+3. When prompted, open `https://microsoft.com/devicelogin`, enter the provided code, and sign into your Azure subscription. Then return to Visual Studio Code and wait for the sign-in process to complete.
 4. In the terminal pane, enter the following command to create the resources in the East US region. If you want to use a different region, change `eastus` to the region name of your choice - for example, `westus` or `northeurope` (for a full list of available regions, use the `az account list-locations -o table` command):
 
     ```bash

@@ -1,7 +1,0 @@
-Using an application built around the Azure Sphere, you can securely capture data and send it to the cloud. You firstly configure the Azure Sphere Application to connect to Azure IoT. When you execute an application, it connects and transmits data to the cloud. You can monitor the data being sent on the Azure IoT. You can send specific commands from the IoT Central to the device to control the device parameters. It can also send alerts messages to inform the authorized person.
-
-Consider our scenario of monitoring the environment parameters such as temperature, air pressure, humidity, and light within a laboratory setting. You want to build and automate a new solution within the lab. This solution will include the sensors deployed in the lab that will record the ambient environmental conditions and transmit them securely to the cloud.
-
-Without the Azure Sphere-based application, you would need to manually record these conditions at regular intervals and keep a record of it. And any variation in the Lab environment cannot be detected in real-time.
-
-Using our solution created with Azure Sphere, we'll have the ability to produce accurate and stable results in near real time.

@@ -49,7 +49,6 @@ You can find the **last sync time** by using the Azure portal, the Azure CLI, or
 
 :::image type="content" source="../media/4-portal-failover-confirm.png" alt-text="Screenshot of the failover confirmation page with the last sync time shown.":::
 
-
 ### Track Azure Storage service outage
 
 We recommend you track the health status of Azure Storage and other Azure services by using Azure Service Health. You can subscribe to these updates with your applications and configure applications to handle or report issues to you.

@@ -1,8 +1,10 @@
-Data is now easier to collect and cheaper to host, making it accessible to nearly every business. Data solutions include software technologies and platforms that can help facilitate the collection, analysis, and storage of valuable information. Every business would like to grow their revenues and make larger profits. In this competitive market, data is a valuable asset, and when analyzed properly can turn into a wealth of useful information and inform critical business decisions. 
+Data is now easier to collect and cheaper to host, making it accessible to nearly every business. Data solutions include software technologies and platforms that can help facilitate the collection, analysis, and storage of valuable information. Every business would like to grow their revenues and make larger profits. In this competitive market, data is a valuable asset. When analyzed properly, data provides a wealth of useful information and inform critical business decisions.  
 
 ## What is data?
 
-Data is a collection of facts such as numbers, descriptions, and observations used in decision making. You can classify data as structured, semi-structured, or unstructured. Structured data is typically tabular data that is represented by rows and columns in a database. Databases that hold tables in this form are called *relational databases* (the mathematical term *relation* refers to an organized set of data held as a table). Each row in a table has the same set of columns. The image below illustrates an example showing two tables in an ecommerce database. The first table contains the details of customers for an organization, and the second holds information about products that the organization sells. 
+Data is a collection of facts such as numbers, descriptions, and observations used in decision making. You can classify data as structured, semi-structured, or unstructured.
+
+Structured data is typically tabular data that is represented by rows and columns in a database. Databases that hold tables in this form are called *relational databases* (the mathematical term *relation* refers to an organized set of data held as a table). Each row in a table has the same set of columns. The image below illustrates an example showing two tables in an ecommerce database. The first table contains the details of customers for an organization, and the second holds information about products that the organization sells.
 
 > [!div class="mx-imgBorder"]
 > ![Image showing how structured data is represented in database tables](../media/2-tabular-diagram.png)
@@ -51,7 +53,11 @@ Data is a collection of facts such as numbers, descriptions, and observations us
 ```
 There are other types of semi-structured data as well. Examples include *key-value* stores and *graph* databases. 
 
-A key-value store is similar to a relational table, except that each row can have any number of columns. 
+A key-value store is similar to a relational table, except that each row can have any number of columns.
+The image below shows an example of key-value data.
+
+
+:::image type="content" source="../media/2-key-value.png" alt-text="Key-value data":::
 
 You can use a graph database to store and query information about complex relationships. A graph contains nodes (information about objects), and edges (information about the relationships between objects). The image below shows an example of how you might structure the data in a graph database.
 
@@ -60,7 +66,7 @@ You can use a graph database to store and query information about complex relati
 
 Not all data is structured or even semi-structured. For example, audio and video files, and binary data files might not have a specific structure. They're referred to as *unstructured* data.
 
-## How is data defined and stored in cloud computing?
+## How is data defined, stored, and accessed in cloud computing?
 
 Depending on the type of data such as structured, semi-structured, or unstructured, data will be stored differently. Structured data is typically stored in a relational database such as SQL Server or Azure SQL Database. Azure SQL Database is a service that runs in the cloud. You can use it to create and access relational tables. The service is managed and run by Azure, you just specify that you want a database server to be created. The act of setting up the database server is called *provisioning*.
 
@@ -75,6 +81,8 @@ After your service is provisioned, the service needs to be configured so that us
 - *Owner* privilege gives full access to the data including managing the security like adding new users and removing access to existing users.
 
 You can also define which users should be allowed to access the data in the first place. If the data is sensitive (or secret), you may want to restrict access to a few select users.
+
+In the example where you're a data analyst for a large consumer organization you have decided to give read-only access to the whole management team. The management team have no need to modify data, but have security clearance to see any data. Read-write access is given to the app that salespeople use to record sales. The individual users won't need to access the system directly, but will make edits via their app. Data analysts and data managers will have owner privileges because they need to manage the access of other users and administer the system.
 
 ## Describe data processing solutions
 

@@ -1,6 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.protect-against-security-threats-azure
 metadata:
+  title: Protect against security threats on Azure
   description: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
   ms.date: 09/14/2020
   author: tpetchel
@@ -18,7 +19,7 @@ abstract: |
   * Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
-  - Familiarity with cloud computing is helpful but isn't necessary.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/review-security-tools-features.svg
 levels:
 - beginner

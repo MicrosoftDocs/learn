@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-custom-vision-ai.3-set-up-azure
+metadata:
+  title: Set up the Custom Vision service
+  description: This unit walks you through setting up a Custom Vision resource in Azure.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set up the Custom Vision service
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-set-up-azure.md)]

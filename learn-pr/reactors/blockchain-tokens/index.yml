@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.reactors.blockchain-tokens
+metadata:
+  title: Create tokens using OpenZeppelin
+  description: Learn about the significance of tokens and how they are used in blockchain.
+  ms.date: 10/16/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create tokens using OpenZeppelin
+summary: Learn about the significance of tokens and how they are used in blockchain.
+abstract:  |
+ By the end of this module, you will be able to:
+
+ - Explain what tokens are
+ - Identify the different types of tokens
+ - Use the contracts library in OpenZeppelin
+ - Create a token smart contract
+prerequisites: |
+  - [Fundamental knowledge about blockchain](https://docs.microsoft.com/learn/modules/intro-to-blockchain/)
+  - [Solidity programming knowledge](https://docs.microsoft.com/learn/modules/blockchain-learning-solidity/)
+  - [Ethereum smart contract knowledge](https://docs.microsoft.com/learn/modules/blockchain-solidity-ethereum-smart-contracts/)
+  - Previous experience with a programming language like C, Python, or JavaScript
+  - Basic knowledge of programming concepts
+  - Familiarity with the command line to create new directories and install programs
+  - Node.js installed
+  - Truffle and Ganache CLI installed
+  - Visual Studio Code installed
+iconUrl: /learn/achievements/reactors/blockchain-tokens.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.reactors.blockchain-tokens.1-introduction
+- learn.reactors.blockchain-tokens.2-what-are-tokens
+- learn.reactors.blockchain-tokens.3-token-types
+- learn.reactors.blockchain-tokens.4-learn-open-zeppelin
+- learn.reactors.blockchain-tokens.5-set-up-project
+- learn.reactors.blockchain-tokens.6-write-token-project
+- learn.reactors.blockchain-tokens.7-knowledge-check
+- learn.reactors.blockchain-tokens.8-summary
+badge:
+  uid: learn.reactors.blockchain-tokens.badge

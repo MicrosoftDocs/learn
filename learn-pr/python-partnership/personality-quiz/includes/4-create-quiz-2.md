@@ -43,7 +43,7 @@ print( f"You chose {activity}.")
 
 if activity == "A":
     print( "Nice choice!" )
-else
+else:
     print( "Sounds fun!" )
 ```
 

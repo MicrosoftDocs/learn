@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-synapse-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which Azure Synapse Studio hub would you go to create Notebooks?"
+    choices:
+    - content: "Data."
+      isCorrect: false
+      explanation: "Incorrect. The Data hub is where you access your provisioned SQL pool databases and SQL serverless databases in your workspace."
+    - content: "Develop."
+      isCorrect: true
+      explanation: "Correct. The Develop hub is where you manage SQL scripts, Synapse notebooks, data flows, and Power BI reports."
+    - content: "Integrate."
+      isCorrect: false
+      explanation: "Incorrect. The Integrate hub is where you create data integration pipelines."
+  - content: "In Azure Synapse Studio, where would you view the contents of the primary data lake store?"
+    choices:
+    - content: "In the Integration section of the Monitor hub."
+      isCorrect: false
+      explanation: "Incorrect. The integration section of the monitor hub is where you monitor the execution of Azure Synapse pipelines."
+    - content: "In the workspace tab of the Data hub."
+      isCorrect: false
+      explanation: "Incorrect. The workspace tab of the data hub is where you can view the contents of the SQL and Spark pools."
+    - content: "In the linked tab of the Data tab."
+      isCorrect: true
+      explanation: "Correct. The linked tab of the data hub is where you can view the contents of the primary data lake store."
+  - content: "Which hub is where you can grant access to Synapse workspace and resources?"
+    choices:
+    - content: "Monitor hub."
+      isCorrect: false
+      explanation: "Incorrect. You cannot grant access to Synapse workspace in the monitor hub."
+    - content: "Manage hub."
+      isCorrect: true
+      explanation: "Correct. You can grant access to Synapse workspace in the integrate hub."
+    - content: "Integrate hub."
+      isCorrect: false
+      explanation: "Incorrect. You cannot grant access to Synapse workspace in the integrate hub."

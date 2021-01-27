@@ -8,6 +8,7 @@ metadata:
   ms.author: mamykhai
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
+  show_latex: true
 durationInMinutes: 10
 content: |
   [!include[](includes/7-grovers-algorithm-practice.md)]

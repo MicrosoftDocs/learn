@@ -140,15 +140,15 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     > [!div class="mx-imgBorder"]
     > ![The average packet count while the load balancer is in a healthy state](../media/4-packet-count-healthy.png)
 
-1. Select **Pin to dashboard** > **Select another dashboard**.
+1. Select **Pin to dashboard**.
 1. Select **Create new**, and use the following values:
 
     | Field | Value  |
     |---|---|
+    |Type|Private|
     | Dashboard name | dashboard-learn-ts-loadbalancer |
-    | Publish to the 'dashboards' resource group | Clear the check box.  |
-    | Resource group |learn-ts-loadbalancer-rg |
-1. Select **Apply**.
+
+1. Select **Create and pin**.
 1. Select **+ New Chart**, and add the following metric:
 
     | Property  | Value  |
@@ -169,8 +169,8 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 1. Select the **Finish editing** check box.
 1. Set the time range to **Last 30 minutes**. The chart should report both statistics at 100 percent.
 
-1. Select **Pin to dashboard** > **Select another dashboard** > **Browse dashboards**.
+1. Select **Pin to dashboard** > **Existing**.
 1. For a dashboard, select **dashboard-learn-ts-loadbalancer**.
-1. Select **Apply**.
+1. Select **Pin**.
 
 You now have a baseline set of metrics for the system when it's running correctly.

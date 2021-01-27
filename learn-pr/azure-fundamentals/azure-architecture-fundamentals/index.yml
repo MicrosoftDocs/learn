@@ -17,7 +17,7 @@ abstract: |
   - Azure regions, region pairs, and availability zones.
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
-  - Familiarity with cloud computing is helpful but isn't necessary.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/azure-architecture-fundamentals.svg
 levels:
 - beginner

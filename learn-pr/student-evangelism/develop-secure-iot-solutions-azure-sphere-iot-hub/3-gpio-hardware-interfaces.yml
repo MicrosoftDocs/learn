@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.gpio-hardware-interfaces
-title: Understand GPIO hardware interfaces
+title: Learn about Azure Sphere devices
 metadata:
-  title: Understand GPIO hardware interfaces
-  description: In this section, we help the learner to understand about gpio hardware interfaces.
+  title: Learn about Azure Sphere devices
+  description: In this section, you'll learn what Azure Sphere devices are supported by this learning module.
   ms.date: 6/28/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-hub
+  ms.prod: learning-azure-iot-hub
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/3-gpio-hardware-interfaces.md)]

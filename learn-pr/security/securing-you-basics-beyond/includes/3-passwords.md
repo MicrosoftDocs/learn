@@ -54,7 +54,7 @@ If you think you have a password that has never been used, you should know that 
 > [!TIP]
 > Any password or passphrase that you use should be at least 15 characters long. This number is easy to reach with a passphrase, especially if you use five words.
 
-:::image type="content" source="../media/3-password-cracking.svg" alt-text="Chart estimating the time needed to crack a password based on length and the types of characters used.":::
+:::image type="content" source="../media/3-password-cracking.png" alt-text="Chart estimating the time needed to crack a password based on length and the types of characters used.":::
 
 ## Creating a secure and complex password/passphrase
 

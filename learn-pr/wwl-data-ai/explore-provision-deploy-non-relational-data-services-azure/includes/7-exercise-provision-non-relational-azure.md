@@ -9,6 +9,9 @@ In this exercise, you'll provision and configure the Cosmos DB account, and test
 
 You'll perform this exercise using the Azure portal.
 
+> [!NOTE]
+> Azure can take as little a 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
+
 ## Provision and configure a Cosmos DB database and container
 
 ### Create a Cosmos DB account
@@ -30,14 +33,15 @@ You'll perform this exercise using the Azure portal.
     | Field | Value |
     |-|-|
     | Subscription | Concierge Subscription |
-    | Resource Group | <rng>[sandbox resource group]</rng> (this resource group will have been created for you in the sandbox) |
+    | Resource Group | <rgn>[sandbox resource group]</rgn> (this resource group will have been created for you in the sandbox) |
     | Account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *cosmosdbaccount*. For example, *jpws01012020cosmosdbaccount* |
     | API | Core (SQL) |
     | Notebooks | Off |
     | Location | Accept the default location |
+    | Capacity mode | Provisioned throughput |
     | Apply Free Tier Discount | Do Not Apply |
     | Account Type | Non-Production |
-    | Geo-Redundacy | Disable |
+    | Geo-Redundancy | Disable |
     | Multi-region Writes | Disable |
 
 5. Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue. 
@@ -183,7 +187,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     Contoso will use this container to hold product images.
 
     > [!NOTE]
-    > The container created for Data Lake Storage will also appear in the **Containers** page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images seperate from product quality data. 
+    > The container created for Data Lake Storage will also appear in the **Containers** page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images separate from product quality data. 
 
 ### Create a file share
 

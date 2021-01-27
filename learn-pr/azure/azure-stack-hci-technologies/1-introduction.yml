@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.1-introduction
+metadata:
+  title: Introduction
+  description: Provide an introduction to Azure Stack HCI core technologies.
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

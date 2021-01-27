@@ -20,22 +20,22 @@ quiz:
     choices:
     - content: 'Azure Front Door'
       isCorrect: false
-      explanation: 'Azure Front Door is not assigned to a network'
-    - content: 'Azure Private DNS Zones'
+      explanation: 'Azure Front Door is not assigned to a network.'
+    - content: 'Azure Private DNS zones'
       isCorrect: false
-      explanation: 'Private DNS zones are not a universal recommendation'
-    - content: 'DDoS Standard Enabled'
+      explanation: 'Private DNS zones are not a universal recommendation.'
+    - content: 'Azure DDoS Standard'
       isCorrect: true
-      explanation: 'DDoS Standard provides SLA backed DDoS protection with log data'
+      explanation: 'DDoS Standard provides SLA-backed DDoS protection with log data.'
 
-  - content: "Contoso needs multiple 10 Gbps circuits in a single peering location. Which of the following designs should they consider?"
+  - content: "Contoso needs multiple 10-Gbps circuits in a single peering location. Which of the following designs should the company consider?"
     choices:
-    - content: 'Azure VPN'
+    - content: 'VPN'
       isCorrect: false
       explanation: 'A single VPN tunnel does not reach the required throughput.'
-    - content: 'Colocate their servers inside Azure Datacenters'
+    - content: 'Colocate its servers inside Azure datacenters'
       isCorrect: false
-      explanation: 'This solution is not a possibility'
+      explanation: 'This solution is not a possibility.'
     - content: 'ExpressRoute Direct'
       isCorrect: true
-      explanation: "ExpressRoute Direct allows for a 100 Gbps connection to Microsoft's Enterprise Edge routers that can be carved into multiple 10 Gbps circuits"
+      explanation: "ExpressRoute Direct allows for a 100-Gbps connection to Microsoft's enterprise edge routers that can be carved into multiple 10-Gbps circuits."

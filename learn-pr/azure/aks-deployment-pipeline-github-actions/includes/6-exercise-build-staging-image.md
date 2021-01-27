@@ -1,26 +1,29 @@
-We talked about all the concepts behind the pipeline, CI, and Docker. Now it's time to put these concepts into practice.
+We talked about the concepts behind the pipeline, CI, and Docker. Now, it's time to put these concepts into practice.
 
-Let's recap our designed pipeline.
+Let's review our designed pipeline:
 
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="The designed pipeline":::
+:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 
-You'll build this pipeline using GitHub Actions workflow.
+You'll build this pipeline by using the GitHub Actions workflow.
 
-## Build the Action workflow
+In this exercise, you'll:
+- Build the Actions workflow
+- Create the trigger
+- Build and push the image
+- Set the secrets
+- Push the image
 
-1. To start building your pipeline, go to the fork of the sample repository in the GitHub website and select the **Actions** tab.
+## Build the Actions workflow
 
-    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Open the actions tab in the GitHub website":::
+1. To start building your pipeline, go to the fork of the sample repository in the GitHub website. Select the **Actions** tab.
 
-1. Select the "set up a workflow yourself" link just below the header. A new editor with a file in it should be opened
+1. Below the header, select **set up a workflow yourself**.
 
-    :::image type="content" source="../media/6-2-example-editor.png" alt-text="Example file being edited":::
+    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page on the GitHub website.":::
 
-    As you can see, the pipeline is just a file within the `.github/workflows` directory in your repository.
+    At this point, the pipeline is just a file in the .github/workflows directory in your repository. GitHub provides the prebuilt components that you need to build most of the pipelines. You'll have a workflow file that looks like this example:
 
-    GitHub provides you with the prebuilt components you need to build most of the pipelines. You'll have an example file like this:
-
-    ```yml
+    ```yaml
     # This is a basic workflow to help you get started with Actions
 
     name: CI
@@ -42,7 +45,7 @@ You'll build this pipeline using GitHub Actions workflow.
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
-          # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+          # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it
           - uses: actions/checkout@v2
 
           # Runs a single command using the runners shell
@@ -56,29 +59,35 @@ You'll build this pipeline using GitHub Actions workflow.
               echo test, and deploy your project.
     ```
 
-1. Rename the file from `main.yml` to `build-latest.yml` by typing on the top input panel
+1. Above the **Edit new file** pane, rename the file from **main.yml** to **build-staging.yml**.
 
-1. Change the `name` key to _"Build and push the latest build to staging"_, your file will look like this
+    :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-    ```yml
-    # This is a basic workflow to help you get started with Actions
+1. Change the `name` key to `Build and push the latest build to staging`. 
 
-    name: Build and push the latest build to staging
-    ```
+   Now, your file should look like this example:
 
-### Create the trigger
+   ```yaml
+   # This is a basic workflow to help you get started with Actions
 
-1. Next, change the default triggers in the `on` key.
+   name: Build and push the latest build to staging
+   ```
 
-    The default file comes with two triggers:
+## Create the trigger
 
-    1. Any push to the `main` branch
+The default file comes with two triggers:
 
-    1. Any pull request on the `main` branch
+* Any push to the main branch.
 
-    Remove the second part and leave just the `push` tags. The keys should be like this afterwards:
+* Any pull request on the main branch.
 
-    ```yml
+1. Change the default triggers in the `on` key.
+
+1. Remove the second trigger and leave only the `push` tags. 
+    
+    The keys should look like this example:
+
+    ```yaml
     name: Build and push the latest build to staging
 
     on:
@@ -86,23 +95,23 @@ You'll build this pipeline using GitHub Actions workflow.
         branches: [ main ]
     ```
 
-    This closes the second trigger in the designed diagram.
+    Running this command closes the second trigger in the pipeline design diagram.
 
-### Build and push the image
+## Build and push the image
 
-1. Now, let's work on the jobs you're going to run.
+Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps that are shown in the pipeline design diagram.
 
-    In this part, you'll address both the build and deploy steps from the diagram.
+GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
-    GitHub workflows are divided into jobs, and these jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
+The `jobs` key is already set to run on `ubuntu-latest`, which is the environment where you want this workflow to run.
 
-    The `jobs` key is already set to run on `ubuntu-latest`, which is the environment you want this workflow to run.
+1. Rename the `build` key `build_push_image`.
 
-1. Rename the `build` key to `build_push_image`.
+1. In the `steps` key, delete the last two commands, which are only examples from the template. 
 
-1. Jump into the `steps` key. Delete the last two commands, those are only examples from the template. Your file will be like the following.
+   Your file should look like this example:
 
-    ```yml
+    ```yaml
     name: Build and push the latest build to staging
 
     on:
@@ -117,23 +126,25 @@ You'll build this pipeline using GitHub Actions workflow.
           - uses: actions/checkout@v2
     ```
 
-    See that you already have a step using the `checkout` action. This action is responsible for cloning the repository into the job environment.
+    You already have a step that uses the `checkout` action. This action clones the repository into the job environment.
 
-    This is the equivalent to the first action in the "Build steps" in the diagram, so this is taken care of.
+    This step is equivalent to the first action (clone the repo) in the build steps in the pipeline design diagram.
 
-    Add another action to build your Docker image.
+    Next, add another action to build your Docker image.
 
-1. In the right panel, search for "Build and push docker images". Click on the first result published by **Docker**.
+1. In the right panel, search for **Build and push Docker images**. Select the first result published by **Docker**.
 
-    :::image type="content" source="../media/6-3-docker-action.png" alt-text="Select the action":::
+    :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
-    In the opened panel, click on the **copy icon** to copy the usage YAML
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
-    :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Copy the YAML":::
+    :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
 
-1. Paste the copied yaml below the `- uses: actions/checkout@v2` key. Your YAML file should be like the following
+1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. 
 
-    ```yml
+    Your YAML file should look like this example:
+
+    ```yaml
     name: Build and push the latest build to staging
 
     on:
@@ -148,23 +159,23 @@ You'll build this pipeline using GitHub Actions workflow.
           - uses: actions/checkout@v2
 
           - name: Build and push Docker images
-            # You may pin to the exact commit or the version.
+            # You can pin to the exact commit or the version.
             # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
             uses: docker/build-push-action@v1.1.1
             with:
-              # Username used to log in to a Docker registry. If not set then no login will occur
+              # Username used to log in to a Docker registry. If not set, no login occurs
               username: # optional
-              # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
+              # Password or personal access token used to log in to a Docker registry. If not set, no login occurs
               password: # optional
-              # Server address of Docker registry. If not set then will default to Docker Hub
+              # Server address of Docker registry. If not set, login defaults to Docker Hub
               registry: # optional
               # Docker repository to tag the image with
               repository:
-              # Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
+              # Comma-delimited list of tags. These are added to the registry/repository to form the image's tags
               tags: # optional
-              # Automatically tags the built image with the git reference as per the readme
+              # Automatically tags the built image with the Git reference as per the readme
               tag_with_ref: # optional
-              # Automatically tags the built image with the git short SHA as per the readme
+              # Automatically tags the built image with the Git short SHA as per the readme
               tag_with_sha: # optional
               # Path to the build context
               path: # optional, default is .
@@ -180,22 +191,22 @@ You'll build this pipeline using GitHub Actions workflow.
               cache_froms: # optional
               # Comma-delimited list of labels to add to the built image
               labels: # optional
-              # Adds labels with git repository information to the built image
+              # Adds labels with Git repository information to the built image
               add_git_labels: # optional
               # Whether to push the image
               push: # optional, default is true
     ```
 
     > [!IMPORTANT]
-    > Be mindful of the indentation when using YAML. The `name` key should be aligned with the previous `uses` key.
+    > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    This action gives us several options to tweak the usage. You can learn more about each one of them in the [documentation page](https://github.com/docker/build-push-action/tree/releases/v1).
+    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1?azure-portal=true).
 
-1. In the `name` key, rename the value to "Build and push staging image"
+1. Rename the `name` key `Build and push staging image`.
 
-1. You'll only use a handful of the parameters given by this action. Set them and delete the others.
+1. You'll use only a handful of the parameters that are available for this action. Set the following actions and delete the others.
 
-    Add the values according to the table below.
+    Add the values according to the following table:
 
     |Key name     |Value                                           |
     |-------------|------------------------------------------------|
@@ -205,9 +216,11 @@ You'll build this pipeline using GitHub Actions workflow.
     |repository   |contoso-website                                 |
     |tags         |latest                                          |
 
-    You can delete all the other keys since they'll not be used. Your file should be like the following:
+    You can delete all the other keys because we won't use them in this exercise.
+    
+    Your file should look like this example:
 
-    ```yml
+    ```yaml
     name: Build and push the latest build to staging
 
     on:
@@ -231,65 +244,66 @@ You'll build this pipeline using GitHub Actions workflow.
               tags: latest
     ```
 
-1. Commit the changes by clicking the green button on the top right. Give the commit a message and click the **Commit new file** button
+1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
 
-    :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Commit the workflow to the repo":::
+    :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file buttons in the Commit new file pane.":::
 
-You'll notice that, right after you commit the file, a new build will start on the **Actions** tab. This build will fail, because you haven't set the secrets yet!
+    Selecting the **Commit new file** button triggers a new build to start on the **Actions** tab. This build will fail because you haven't set the secrets yet!
 
-:::image type="content" source="../media/6-6-first-build.png" alt-text="First failed build":::
+    :::image type="content" source="../media/6-6-first-build.png" alt-text="Screenshot that shows the failed build results for build_push_image.":::
 
-### Set the secrets
+## Set the secrets
 
-1. Go to the **Settings** tab in the repository. Scroll down until you find a left menu called **Secrets**. Click on it.
+1. On the repository start page, select the **Settings** tab. In the menu, select **Secrets**.
 
-1. Click the **New secret** button on the top right
+1. Select **New secret**.
 
-1. Create `ACR_NAME` secret
+1. Create the `ACR_NAME` secret:
 
-    1. Put `ACR_NAME` in the **Name** field.
-    1. Run the following command in the Azure Cloud Shell to obtain the login server of the ACR you created earlier.
+    1. For **Name**, enter **ACR_NAME**.
 
-    ```azurecli-interactive
-    az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
-    ```
+    1. Run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
 
-    1. Put the value in the **Value** field of the secret
+       ```azurecli-interactive
+       az acr list --query "[?contains(resourceGroup, 'mslearn-gh-pipelines')].loginServer" -o table
+       ```
 
-1. Create `ACR_LOGIN` secret
+    1. For **Value**, enter value of the secret.
 
-    1. Put `ACR_LOGIN` in the **Name** field.
+1. Create the `ACR_LOGIN` secret:
 
-    1. If you saved the values presented to you in the end of the set-up script, copy the **ACR Login Username** value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
+    1. For **Name**, enter **ACR_LOGIN**.
 
-    ```azurecli-interactive
-    az acr credential show --name <ACR_NAME> --query "username" -o table
-    ```
+    1. If you saved the values that were shown at the end of the setup script, copy the **ACR Login Username** value. If you didn't save the values, run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
 
-    1. Put the value in the **Value** field of the secret
+       ```azurecli-interactive
+       az acr credential show --name <ACR_NAME> --query "username" -o table
+       ```
 
-1. Create `ACR_PASSWORD` secret
+    1. For **Value**, enter the value of the secret.
 
-    1. Put `ACR_PASSWORD` in the **Name** field.
+1. Create the `ACR_PASSWORD` secret:
 
-    1. If you saved the values presented to you in the end of the set-up script, copy the **ACR Login Password** value. If not, run the following command in the Azure Cloud Shell to obtain the login of the ACR you created earlier.
+    1. For **Name**, enter **ACR_PASSWORD**.
 
-    ```azurecli-interactive
-    az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
-    ```
+    1. Copy the **ACR Login Password** value or run the following command in Cloud Shell to get the sign-in information of the Container Registry instance you created earlier:
 
-    1. Put the value in the **Value** field of the secret
+       ```azurecli-interactive
+       az acr credential show --name <ACR_NAME> --query "passwords[0].value" -o table
+       ```
 
-### Push the image
+    1. For **Value**, enter the value of the secret.
 
-1. Go back to the **Actions** tab
+## Push the image
 
-1. Click the only execution in the list
+1. Select the **Actions** tab.
 
-1. Click on the **Re-run jobs** in the right-hand side of the screen and then "Re-run all jobs"
+1. Select the only execution in the list.
 
-    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Re-run all jobs":::
+1. On the right side, select **Rerun jobs**, and then select **Rerun all jobs**.
 
-1. Run `az acr repository list --name <ACR_NAME> -o table` in the Azure Cloud Shell to confirm there's a repository named `contoso-website` listed in the results
+    :::image type="content" source="../media/6-7-rerun-jobs.png" alt-text="Screenshot that shows the Rerun jobs and Rerun all jobs buttons.":::
+
+1. In Cloud Shell, run `az acr repository list --name <ACR_NAME> -o table` to confirm that a repository named `contoso-website` appears in the results.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)

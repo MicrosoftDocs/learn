@@ -3,7 +3,7 @@ uid: learn.azure.monitoring-fundamentals.use-azure-service-health
 title: Use Azure Service Health
 metadata:
   title: Use Azure Service Health for proactive maintenance
-  description: Analyze a scenario that requires a notifications of upcoming Azure outages and responses to incidents
+  description: Analyze a scenario that requires notifications of upcoming Azure outages and responses to incidents.
   ms.date: 09/14/2020
   author: bobtabor-msft
   ms.author: rotabor

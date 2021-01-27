@@ -1,132 +1,118 @@
-You'll make the changes to set the desired temperature from Azure Cloud Shell and to act upon the Azure Sphere device as a thermostat in a room. By doing this, you'll learn how to control an Azure Sphere application using Azure IoT Hub Device Twins.
+In this unit, you will learn how to control an Azure Sphere connected heating, ventilation, and air conditioning unit (HVAC) from Azure IoT Hub.
 
-## Azure IoT cloud to device communications
+## Understanding IoT Hub device twins
 
-The multiple communication times between the cloud and device are:
+Azure IoT Hub uses device twins to represent point-in-time values. IoT Hub can use device twins to set state on a device, for example, set the desired room temperature. A device can also use device twins to report its current state, for example, report the operating mode of an HVAC (Heating, Ventilation, and Air Conditioning) unit, is it currently heating, cooling, or turned off.
 
-- **Direct Methods** for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
-- **Device Twins** are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
-- **Cloud-to-device** messages are for one-way notifications to the device app.
+Device twins are JSON documents that Azure IoT Hub keeps in the cloud for all devices and is used for storing device information, including metadata, configurations, and conditions. IoT Hub device twins are often used for long-running commands intended to put the device into a certain state and return it to that state after a device restart. For example, setting the desired room temperature.
 
-This unit will cover **Azure IoT Device Twins** and explain **DeviceTwinBindings** to simplify the implementation of Azure IoT.
+Properties can be used in the following ways:
 
-## Azure IoT Device Twins
+- Cloud-to-device updates
+- Device-to-cloud updates
+- Querying reported properties
 
-Device twins are JSON documents that store device information, including metadata, configurations, and conditions. Azure IoT Hub keeps a device twin for each device that you connect to IoT Hub.
+## Controlling the heating, ventilation, and air conditioning unit (HVAC) using Azure IoT Hub device twins
 
-### Using Device twins
+From Azure IoT Explorer you can set the desired temperature twin. The device actions and acknowledges the request. Azure IoT Hub updates the device twin reported property and IoT Explorer then queries and display this reported property.
 
-You can use device twins as follows:
+![The illustration shows a cloud to device device twin configuration pattern.](../media/azure-device-twins-c2d-pattern.png)
 
-- Cloud to device updates.
+### Steps to controlling the HVAC unit from IoT Explorer
 
-   Typically an IoT Hub application would set the value of a device twin. For example, to set the temperature of the room. IoT Hub sends a desired property device twin message to the device. The device actions the desired property, and then the device responds with a reported property device twin message. Azure IoT Hub stores the reported property.
+The following steps outline how Azure IoT Explorer uses device twins to set properties on a device:
 
-- Device to cloud updates.
+1. You can set the desired room temperature from Azure IoT Explorer.
+1. Azure IoT Hub updates the device twin desired property and sends a device twin message to the device.
+1. The corresponding device twin handler function is called.
+1. The device implements the desired property; in this case, turn on the heater or cooler to bring the room to the desired temperature.
+1. The device acknowledges the updated configuration to Azure IoT Hub. Azure IoT Hub updates the device twin reported property.
+1. IoT Explorer queries and displays the device twin reported property data.
 
-   A device can send a reported property device twin message to Azure. For example, a device could report its firmware level on startup. Azure IoT Hub stores the reported property.
+## Getting started with device twin bindings
 
-- Querying reported properties.
+A device twin binding maps a device twin property name with a handler function that will be called to implement the action.
 
-   With device twins reported state stored in Azure, it is possible to query the stored device twin properties cloud side. For example, list all devices with a firmware version less than 2.0, as these devices require an update. Or, list all rooms with a temperature setting higher than 25 degrees Celsius.
+The following example declares a Device Twin Binding to set the desired room temperature. This declaration maps the Azure IoT Hub `DesiredTemperature` device twin with a handler function named `DeviceTwinSetTemperatureHandler`.
 
-## Setting properties on a device
-
-Examine how Azure IoT Hub device twins work
-
-![The illustration shows how Azure IoT Hub device twins work.](../media/device-twin-configuration-pattern.png)
-
-## Steps to set device properties
-
-The following outlines how Azure IoT Hub uses Device Twins to set properties on a device:
-
-1. Typically an Azure IoT Hub application sets the value of a device twin. For example, set the desired room temperature.
-2. Azure IoT Hub sends a desired property message to the device.
-3. The device implements the desired property; in this case, turn on the heater or cooler to bring the room to the desired temperature.
-4. The device sends a reported property message back to Azure IoT. In this example, the device would report the new desired temperate.
-5. Your application can then query the device twin report property cloud side.
-
-## Device Twin Bindings
-
-A Device Twin Bindings maps a device twin with a device property and a handler function that implements the action.
-
-### Cloud to Device Updates
-
-#### Define the desired temperature binding
-
-The following example declares a variable named **desiredTemperature** of type **LP_DEVICE_TWIN_BINDING**. This variable maps the Azure IoT Hub device twin **DesiredTemperature** with a handler function named **DeviceTwinSetTemperatureHandler**.
-
-```
-static LP_DEVICE_TWIN_BINDING desiredTemperature = { 
-	.twinProperty = "DesiredTemperature", 
-	.twinType = LP_TYPE_FLOAT, 
-	.handler = DeviceTwinSetTemperatureHandler 
-};
+```c
+static LP_DEVICE_TWIN_BINDING dt_desiredTemperature = {
+    .twinProperty = "DesiredTemperature",
+    .twinType = LP_TYPE_FLOAT,
+    .handler = DeviceTwinSetTemperatureHandler };
 ```
 
-#### Set the desired temperature
+### Setting the desired temperature
 
-The following is the implementation of the handler function **DeviceTwinSetTemperatureHandler**. The handler function is called when the device receives a **DesiredTemperature** desired property message from Azure IoT Hub.
+The following is the implementation of the handler function `DeviceTwinSetTemperatureHandler`. The handler function is called when the device receives a `DesiredTemperature` desired property message from Azure IoT Hub.
 
-```
+> [!NOTE]
+> As part of the [IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/concepts-convention?azure-portal=true) conventions, the device should acknowledge the device twin update with a call to **lp_deviceTwinAckDesiredState**.
+
+```c
 /// <summary>
 /// Device Twin Handler to set the desired temperature value
 /// </summary>
 static void DeviceTwinSetTemperatureHandler(LP_DEVICE_TWIN_BINDING* deviceTwinBinding)
 {
-	if (deviceTwinBinding->twinType == LP_TYPE_FLOAT)
-	{
-		desired_temperature = *(float*)deviceTwinBinding->twinState;
-		SetTemperatureStatusColour(last_temperature);
-	}
+    // validate data is sensible range before applying
+    if (deviceTwinBinding->twinType == LP_TYPE_FLOAT && *(float*)deviceTwinBinding->twinState >= -20.0f && *(float*)deviceTwinBinding->twinState <= 80.0f)
+    {
+        lp_deviceTwinAckDesiredState(deviceTwinBinding, deviceTwinBinding->twinState, LP_DEVICE_TWIN_COMPLETED);
+        SetHvacStatusColour((int)previous_temperature);
+    }
+    else {
+        lp_deviceTwinAckDesiredState(deviceTwinBinding, deviceTwinBinding->twinState, LP_DEVICE_TWIN_ERROR);
+    }
 }
 ```
 
-### Device to cloud updates
+## Reporting the current HVAC operating mode
 
-The following example declares an **actualTemperature** device twin property of type float. There is no handler function registered as this is a one-way device to cloud binding.
+The HVAC operating mode depends on the room temperature, it can be heating, or cooling, or turned off. We can use a device-to-cloud device twin update to report the current operating mode of the HVAC unit.
 
-```
-static LP_DEVICE_TWIN_BINDING actualTemperature = {
-		.twinProperty = "ActualTemperature",
-		.twinType = LP_TYPE_FLOAT 
-};
-```
+### Device-to-cloud updates
 
-#### Report the state of the temperature
+![The illustration shows a device to cloud device twin configuration pattern.](../media/azure-device-twins-d2c-pattern.png)
 
-The ActualTemperature reported property message is sent to IoT Hub by calling the DeviceTwinReportState function. You must pass a property of the correct type.
+1. The Azure Sphere detects the HVAC operating mode has changed.
+1. The Azure Sphere sends a device twin message to report the new operating mode of the HVAC to Azure IoT Hub.
+1. IoT Explorer queries and displays the updated operating mode of the HVAC unit.
 
-```
-lp_deviceTwinReportState(&actualTemperature, &last_temperature); // TwinType = LP_TYPE_FLOAT
-```
+The following example declares a **ReportedHvacState** device twin property of type **string**. A handler function is not required as this is a one-way device-to-cloud binding.
 
-------
-
-## Work with Device Twins
-
-Device twin bindings must be added to the **deviceTwinBindingSet**. When a device twin message is received from Azure, this set is checked for a matching *twinProperty* name. When a match is found, the corresponding handler function is called.
-
-```
-LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &desiredTemperature, &actualTemperature };
+```c
+static LP_DEVICE_TWIN_BINDING dt_reportedHvacState = {
+    .twinProperty = "ReportedHvacState",
+    .twinType = LP_TYPE_STRING };
 ```
 
-### Opening
+The device updates the **ReportedHvacState** property by calling the **lp_deviceTwinReportState** function. You must pass a property of the correct type.
 
-Sets are initialized in the **InitPeripheralsAndHandlers** function found in **main.c**.
-
-```
-lp_openDeviceTwinSet(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
+```c
+lp_deviceTwinReportState(&dt_reportedHvacState, (void*)hvacState[(int)current_led]);
 ```
 
-### Dispatching
+## How device twin messages are mapped to handlers
 
-When a Device Twin message is received, the deviceTwinBindingSet is checked for a matching **twinProperty** name. When a match is found, the corresponding handler function is called.
+All declared device twin bindings must be added by reference to the deviceTwinBindingSet array. When a device twin message is received by the device, it is checked for a matching *twinProperty* name in the deviceTwinBindingSet array. When a match is found, the corresponding handler function is called.
 
-### Closing
-
-Sets are closed in the **ClosePeripheralsAndHandlers** function found in **main.c**.
-
+```c
+LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &dt_desiredTemperature, &dt_reportedTemperature, &dt_reportedHvacState };
 ```
-lp_closeDeviceTwinSet();
+
+### Opening the device twin binding set
+
+The device twin binding set is initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
+
+```c
+lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
+```
+
+### Closing the device twin binding set
+
+The device twin bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+
+```c
+lp_deviceTwinSetClose();
 ```

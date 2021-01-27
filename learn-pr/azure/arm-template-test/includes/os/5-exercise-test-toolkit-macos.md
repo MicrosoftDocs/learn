@@ -1,4 +1,4 @@
-1. Follow the instructions in [Installing PowerShell on macOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true)
+1. Follow the instructions in [Installing PowerShell on macOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true).
 
 1. Run `pwsh` in the terminal, to verify the installation:
 
@@ -18,7 +18,7 @@
 
 ### Download the Test toolkit
 
-The test toolkit is located in a GitHub repo. You can either download the repository as a zip file or clone it using Git. Choose one of two actions below:
+The test toolkit is located in a GitHub repo. Choose one of the following actions:
 
    - Run `git clone` to clone the repo:
 
@@ -26,11 +26,11 @@ The test toolkit is located in a GitHub repo. You can either download the reposi
       git clone https://github.com/Azure/arm-ttk.git
       ```
 
-   - From your browser, [download the .zip file](https://github.com/Azure/arm-ttk/archive/master.zip?azure-portal=true).  
+   - From your browser, [download the repository as a .zip file](https://github.com/Azure/arm-ttk/archive/master.zip?azure-portal=true).  
 
-### Inspect the Test toolkit
+### Inspect the test toolkit
 
-You've just downloaded the test toolkit to a directory of your choosing. Let's have a look at your directory structure (ensure you have unzipped the file if you have opted to download the zip instead of running the `git clone command`). You should have a directory structure looking like so were you to navigate into the directory of the ARM Test toolkit:
+You've just downloaded the test toolkit to a directory of your choosing. Let's look at your directory structure. (Ensure that you've unzipped the file if you opted to download the .zip file instead of running the `git clone` command.) You should have a directory structure that looks like the following one if you go to the directory of the ARM test toolkit:
 
 ```output
 -| arm-ttk/
@@ -41,14 +41,14 @@ You've just downloaded the test toolkit to a directory of your choosing. Let's h
 -| SECURITY.md
 ```
 
-The test tool is located in the subdirectory */arm-ttk*.
+The test toolkit is in the subdirectory */arm-ttk*.
 
 ### Create the template file
 
-Select a directory of your choosing and create a file called *azuredeploy.json*.
+Choose a directory and create a file called *azuredeploy.json*.
 
 > [!WARNING]
-> Ensure the selected directory is an empty one with no sub directories
+> Ensure that the selected directory is empty with no subdirectories.
 
 Give it the following content:
 
@@ -71,33 +71,33 @@ Give it the following content:
 }
 ```
 
-Make a note of the location of your template file. You could run the command `pwd` in the terminal to output the path. You will use this path later as an argument to when running the test toolkit.
+Note the location of your template file. You can run the command `pwd` in the terminal to output the path. You'll use this path later as an argument when running the test toolkit.
 
-## Detect and fix issues on your template by running the Test toolkit
+## Detect and fix issues on your template by running the test toolkit
 
-It's recommended that you start Visual Studio Code and an integrated terminal.
+We recommend that you start Visual Studio Code and an integrated terminal.
 
-You will run the Test toolkit on a path containing a deployment template and fix any errors it detects by changing the template.
+You'll run the test toolkit on a path that contains a deployment template and fix any errors that it detects by changing the template.
 
 > [!WARNING]
-> In this exercise, you scan one template file. The Test Toolkit scans all files beneath the directory you specify. It does so because a deployment can be made up of several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
+> In this exercise, you scan one template file. The test toolkit scans all files beneath the directory that you specify. It does so because a deployment can contain several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
 
-1. In a terminal, navigate to the path where your `azuredeploy.json` file resides. Run the following command to start Visual Studio Code:
+1. In a terminal, go to the path where your *azuredeploy.json* file resides. Run the following command to start Visual Studio Code:
 
    ```bash
    code .
    ```
 
    > [!NOTE]
-   > open VS Code manually and open the template directory if Visual Studio Code isn't on the path
+   > Open Visual Studio Code manually and open the template directory if Visual Studio Code isn't on the path.
 
-1. From Visual Code, open the integrated terminal by selecting **Terminal > New Terminal** from the top menu. Run the following command in the terminal to start a PowerShell shell:
+1. From Visual Studio Code, open the integrated terminal by selecting **Terminal** > **New Terminal** from the top menu. Run the following command in the terminal to start a PowerShell shell:
 
    ```bash
    pwsh
    ```
 
-   You see an output looking similar to the below:
+   You see an output that looks similar to this one:
 
    ```output
    PowerShell 7.0.3
@@ -107,23 +107,23 @@ You will run the Test toolkit on a path containing a deployment template and fix
    Type 'help' to get help.
    ```
 
-## Analyze template
+## Analyze the template
 
 1. Run `Import-Module` to be able to run the tests from anywhere.  
 
    > [!NOTE]
-   > Before importing the module, replace *path/to/arm-ttk/arm-ttk.psd1* with the path to the downloaded Test toolkit.
+   > Before you import the module, replace *path/to/arm-ttk/arm-ttk.psd1* with the path to the downloaded test toolkit.
 
    ```powershell
    Import-Module path/to/arm-ttk/arm-ttk.psd1
    ```
 
    > [!TIP]
-   > If you downloaded or cloned the tool to your `Downloads` directory the path would look something like this */Users/\<user\>/Downloads/arm-ttk/arm-ttk/arm-ttk.psd1*.
+   > If you downloaded or cloned the tool to your *Downloads* directory, the path would look something like this: */Users/\<user\>/Downloads/arm-ttk/arm-ttk/arm-ttk.psd1*.
 
-   You are now ready to use the tool. As long as you are in the same PowerShell session there's no need to run the import command again.
+   You're now ready to use the tool. As long as you're in the same PowerShell session, there's no need to run the import command again.
   
-1. Run `Test-AzTemplate` with the flag `-TemplatePath` pointing to the location of your template file path (excluding the filename):
+1. Run `Test-AzTemplate` with the flag `-TemplatePath` pointing to the location of your template file path (excluding the file name):
 
    ```powershell
    Test-AzTemplate -TemplatePath .
@@ -159,9 +159,9 @@ You will run the Test toolkit on a path containing a deployment template and fix
        [+] VM Size Should Be A Parameter (3 ms)
    ```
 
-   The output above show how two tests are failing,  **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. A failing test is indicated by the prefix **[-]**.
+   The preceding output shows how two tests are failing: **Resources Should have Location** and  **Parameters Must Be Referenced**. The prefix **[-]** indicates a failing test.
 
-   To understand what's going on, open the *azuredeploy.json* file, it should look like so:
+   To understand what's going on, open the *azuredeploy.json* file. It should look like this:
 
    ```json
    {
@@ -184,32 +184,34 @@ You will run the Test toolkit on a path containing a deployment template and fix
 
    The tests are failing for two reasons:
 
-   - **The location parameter isn't used**. This error message might, for example, indicate that we have used it in the past and forgot to clean it up. Or that it should be used but we forgot to update our code.
-   - **The location property is set to the hardcoded string westus**. Using this option is not considered a good practice as you want to be able to control the location of a resource with input parameters when you are deploying.
+   - **The location parameter isn't used**. This error message might, for example, indicate that we used the parameter in the past and forgot to clean it up. Or maybe it should be used but we forgot to update our code.
+   - **The location property is set to the hardcoded string westus**. Using this option is not considered a good practice because you want to be able to control the location of a resource with input parameters when you're deploying.
 
-## Apply fix to template
+## Apply a fix to the template
 
-So how to fix the above failing tests?
+How do we fix the failing tests?
 
-As the test indicates, we could try replacing **westus** with the text **global**. However, that would only fix one of the problems. Most likely we want to use the **location** parameter and set the resources location to that value. The reason is two-fold, not only can the location parameter be set as an argument when deploying, it also has reasonable fallback of being set to the **resourceGroup().location** as *defaultValue* should you omit to set the **location** when running the deployment.
+As the test indicates, we could try replacing **westus** with the text **global**. However, that would fix only one of the problems. Most likely, we want to use the **location** parameter and set the resource's location to that value. 
 
-   1. Locate the first resource item in the **resources** array and replace the following content:
+The reason is twofold. Not only can the location parameter be set as an argument for deployment, it also has the reasonable fallback of being set to **resourceGroup().location** as **defaultValue** if you omit setting the **location** parameter when running the deployment.
 
-      ```json
-      "resources": [{
-        "location": "westus"
-      }]
-      ```
+1. Locate the first resource item in the **resources** array and replace the following content:
 
-      with this content:
+   ```json
+   "resources": [{
+     "location": "westus"
+   }]
+   ```
 
-      ```json
-      "resources": [{
-        "location": "[parameters('location')]"
-      }]
-      ```
+   with this content:
 
-1. Run the test tool  in the integrated terminal once again, to verify the fix:
+   ```json
+   "resources": [{
+     "location": "[parameters('location')]"
+   }]
+   ```
+
+1. Run the test tool in the integrated terminal once again, to verify the fix:
 
    ```powershell
    Test-AzTemplate -TemplatePath .
@@ -245,4 +247,4 @@ As the test indicates, we could try replacing **westus** with the text **global*
    [+] VM Size Should Be A Parameter (4 ms)
    ```
 
-Success, you've managed to run the test tool, locate, and fix errors.
+Success! You've run the test tool, located errors, and fixed them.

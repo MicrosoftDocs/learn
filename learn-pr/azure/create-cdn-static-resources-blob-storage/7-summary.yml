@@ -41,7 +41,7 @@ quiz:
       isCorrect: false
       explanation: "The edge server checks with other edge servers at the same POP. If the file is still not present, it then requests the file from the origin server, returns the file to the user and caches the file."
    
-  - content: "Which caching setting results in inefficient caching behavour with queries that use unique query strings?"
+  - content: "Which caching setting results in inefficient caching behavior with queries that use unique query strings?"
     choices:
     - content: "Ignore query strings"
       isCorrect: false

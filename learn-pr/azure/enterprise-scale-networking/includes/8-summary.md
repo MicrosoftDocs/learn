@@ -1,16 +1,18 @@
 
-To build highly resilient enterprise grade applications on Azure, a well-designed network is critical. Carefully plan the IP schema, being sure to not conflict with existing private IP space. Carefully choose the connectivity type, Virtual WAN or hub and spoke. Select ExpressRoute providers or ExpressRoute Direct and peering locations to get onto the Microsoft backbone with the least latency possible. Finally, plan segmentation and secure connectivity to PaaS services.
+To build highly resilient, enterprise-grade applications on Azure, a well-designed network is critical. Carefully plan the IP schema, so you don't conflict with existing private IP space. Carefully choose the connectivity type: Azure Virtual WAN or hub and spoke. Select Azure ExpressRoute providers or ExpressRoute Direct and peering locations to get onto the Microsoft backbone with the least latency possible. Finally, plan segmentation and secure connectivity to platform as a service (PaaS) services.
 
 ## Learn more
 
-To Learn more about enterprise-scale architecture networking design principles, visit the following articles:
+To Learn more about networking design principles for enterprise-scale architecture, see the following articles.
 
-[Full enterprise-scale landing zone networking documentation](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity?azure-portal=true)
+### Landing zone
+
+- [Full enterprise-scale landing zone networking documentation](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity?azure-portal=true)
 
 ### DNS
 
 - [Azure Private Endpoint DNS configuration](https://docs.microsoft.com/azure/private-link/private-endpoint-dns?azure-portal=true)
-- [Azure DNS Private zones scenarios](https://docs.microsoft.com/azure/dns/private-dns-scenarios?azure-portal=true)
+- [Azure DNS Private Zones scenarios](https://docs.microsoft.com/azure/dns/private-dns-scenarios?azure-portal=true)
 
 ### Topology
 
@@ -23,7 +25,7 @@ To Learn more about enterprise-scale architecture networking design principles, 
 
 - [ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction?azure-portal=true)
 - [ExpressRoute Direct](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about?azure-portal=true)
-- [Configure Network Performance Manager for ExpressRoute](https://docs.microsoft.com/azure/expressroute/how-to-npm?azure-portal=true)
+- [Configure Network Performance Monitor for ExpressRoute](https://docs.microsoft.com/azure/expressroute/how-to-npm?azure-portal=true)
 - [ExpressRoute connectivity partners and peering locations](https://docs.microsoft.com/azure/expressroute/expressroute-locations?azure-portal=true)
 
 ### Segmentation
@@ -33,4 +35,4 @@ To Learn more about enterprise-scale architecture networking design principles, 
 
 ### Encryption
 
-[Configure MACsec on ExpressRoute Direct ports](https://docs.microsoft.com/azure/expressroute/expressroute-howto-macsec?azure-portal=true)
+- [Configure MACsec on ExpressRoute Direct ports](https://docs.microsoft.com/azure/expressroute/expressroute-howto-macsec?azure-portal=true)

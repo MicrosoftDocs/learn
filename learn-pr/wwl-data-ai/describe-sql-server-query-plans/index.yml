@@ -2,10 +2,10 @@
 uid: learn.wwl.describe-sql-server-query-plans
 metadata:
   title: Describe SQL Server query plans
-  description: "Read and understand various forms of execution plans. Compare estimated vs actual plans. Learn how and why plans are generated."
-  ms.date: 09/11/2020
+  description: "Describe SQL Server query plans"
+  ms.date: 12/14/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe SQL Server query plans
@@ -33,6 +33,7 @@ units:
 - learn.wwl.describe-sql-server-query-plans.describe-types-of
 - learn.wwl.describe-sql-server-query-plans.explain-estimated-actual
 - learn.wwl.describe-sql-server-query-plans.identify-problematic
+- learn.wwl.describe-sql-server-query-plans.exercise-identify-issues-database-design
 - learn.wwl.describe-sql-server-query-plans.knowledge-check
 - learn.wwl.describe-sql-server-query-plans.summary
 badge:

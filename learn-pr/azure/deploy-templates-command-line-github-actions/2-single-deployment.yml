@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-templates-command-line-github-actions.2-single-deployment
-title: Deploying your ARM templates
+title: Deploy your ARM templates
 metadata:
-  title: Deploying your ARM templates
-  description: Whether you are deploying your templates in your test environment or in productions. The ability to deploying from a web interface or  a command line / terminal is crucial.  This unit will cover the ways to deploy your templates.
+  title: Deploy your ARM templates
+  description: Whether you're deploying your templates in your test environment or in production, the ability to deploy from a web interface or a command line is crucial. This unit will cover the ways to deploy your templates.
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer

@@ -6,7 +6,7 @@ You're going to learn how to set up a condition that allows you to inspect an ev
 
 ## Add a condition
 
-First, let's create a condition that runs the logic app only when a certain event is published.
+First, let's create a condition that runs the logic app only when a certain event is published. Select the Logic app you just created > Logic app designer from the left-hand menu. 
 
 1. In Logic App Designer, under the **Event Grid** trigger, select **New step**.
 

@@ -87,7 +87,7 @@ If you're interested in the details of this algorithm and want to implement it
 in Q#, see the [Quantum Katas tutorial for the Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true) and
 the [sample for the Deutsch-Jozsa algorithm](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/simple-algorithms/DeutschJozsa.qs?azure-portal=true).
 
-![Diagram summarizing the Deutsch-Jozsa algorithm.](../media/8-deutsch–jozsa.svg)
+![Diagram summarizing the Deutsch-Jozsa algorithm.](../media/8-deutsch-jozsa.svg)
 
 ## Shor's algorithm
 

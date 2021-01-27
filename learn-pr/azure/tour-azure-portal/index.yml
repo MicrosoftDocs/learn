@@ -16,7 +16,12 @@ abstract: |
   - Navigate the Azure portal
   - Customize the dashboard
   - Learn how to opt in to preview services and features
+  > [!NOTE]
+  > This module has been updated to [Choose the best tools for managing and configuring your Azure environment](https://docs.microsoft.com/learn/modules/management-fundamentals/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.  
 iconUrl: /learn/achievements/tour-azure-portal-features.svg
+hidden: true
 levels:
 - beginner
 prerequisites: |

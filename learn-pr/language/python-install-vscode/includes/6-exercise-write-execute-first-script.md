@@ -51,77 +51,10 @@ When the installation is complete, the button's text will change to **Uninstall*
 
 ::: zone-end
 
-## Install Pylint
 
-Pylint is one of the more popular Python linters. A *linter* is a useful tool that can check your code for possible bugs and coding style. If you install a linter, Visual Studio Code will check your code each time you save your code file. There are several linter tools available for Python.
+### Step 4 - Address pop-up messages
 
-The Python extension for Visual Studio Code will recommend that you install Pylint and will handle most of the installation details.
-
-To start installation, you'll create a file with a .py file extension, which will trigger a pop-up window with an install button. We'll begin that process in the next step.
-
-> [!NOTE]
-> In this module, we'll just create a file as a way to trigger the Python extension for Visual Studio Code to display a pop-up window to start the installation of Pylint. We won't use the file in this module, but you'll learn to write and run a code file in the next module, titled "Create your first Python program."
-
-### Step 1 - Open Explorer view in Visual Studio Code
-
-Open Explorer view. Go to **View** and select **Explorer**, or select the **Explorer** icon in the Activity Bar on the left side of Visual Studio Code.
-
-There are two sections in Explorer: 
-
-- **Open Editors**, which displays all the tabs visible in the main area
-- The name of the current working folder
-
-But because this is the first time you've opened Visual Studio Code, you'll see a section titled **No Folder Opened** instead. Below this header, you'll see the message "You have not yet opened a folder" and an **Open Folder** button.
-
-### Step 2 - Create a working folder
-
-Select **Open Folder** to open your operating system's Open dialog box.
-
-Create a folder called **hello** in your system's Documents folder. Select it.
-
-After you select the new **hello** folder, back in Explorer view, you should see the title of the section change to **hello**.
-
-### Step 3 - Create a file
-
-To create a script file in your **hello** folder, go to **File** and select **New File**.
-
-In the main area, the new file appears.
-
-You'll probably see one or more pop-up messages appear in the lower right corner of Visual Studio Code.
-
-### Step 4 - Start Pylint installation from the pop-up window
-
-In this step, we'll focus on the pop-up window with the message "Linter pylint is not installed."
-
-> [!NOTE]
-> Installation of Pylint is optional. If for some reason you don't want to install it, select the **x** to close the pop-up message.
-
-To install Pylint, select **Install**. The Visual Studio Code terminal window will open below your code file. You can use a command-line tool named pip to install Pylint.
-
-::: zone pivot="linux"
-
-> [!IMPORTANT]
-> If you see an error message stating that pip isn't installed, you can use this APT command in Linux to install pip:
->
-> ```bash
-> sudo apt-get install python3-pip
-> ```
-> If you run this command, some services might need to be restarted. We suggest you read the prompts and messages from your system and respond accordingly.
->
-> After you install pip, you can use the following command in Linux to try to install Pylint manually by using pip:
->
-> ```bash
-> sudo pip3 install pylint
-> ```
-
-::: zone-end
-
-
-### Step 5 - Address other pop-up messages
-
-You might see other pop-up messages.
-
-The most critical of these messages is this one: 
+When working with `.py` files which you will use to write Python code, you might see several pop-up messages.  The most critical of these messages is this one: 
 
 "No Python interpreter is selected.  You need to select a Python interpreter to enable features such as IntelliSense, linting, and debugging."
 

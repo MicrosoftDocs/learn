@@ -30,7 +30,7 @@ Inbound network security is achieved using NSG rules on the subnet in which the 
 
     ![Creating a Network Security Group](../media/05-Create-NSG.png)
 
-- Identify the region into which your HDInsight service is going to deployed and based on the region, identify the [service tags](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) that would need to be used. Depending on the region and level of restrictive permissions, there may be permutations and combinations of service tags that you would need to apply to achieve the objective. Click on Add to create additional Inbound Security rules on the Network Security Group and assign service tags based on the region of deployment. HDInsight.
+- Identify the region into which your HDInsight service is going to deployed and based on the region, identify the [service tags](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) that would need to be used. Depending on the region and level of restrictive permissions, there may be permutations and combinations of service tags that you would need to apply to achieve the objective. Click on Add to create additional Inbound Security rules on the Network Security Group and assign service tags based on the region of deployment.
 
     ![Creating a Network Security Group](../media/06-Create-Service-Tags.png)
 
@@ -51,11 +51,11 @@ From a security point of view, typically all public endpoints to the HDInsight c
 
 ![HDInsight cluster access with deployed with a VNet](../media/07-HDInsight-Cluster-VNET.png)
 
-In network path 1, access to the cluster is blocked over general public internet, but NSG rules can be created to allow specific clients external to Azure secure access to the cluster over a public endpoint using https over port 443 using https://<clustername>.azurehdinsight.net. 
+In network path 1, access to the cluster is blocked over general public internet, but NSG rules can be created to allow specific clients external to Azure secure access to the cluster over a public endpoint using https over port 443 using https://\<clustername\>.azurehdinsight.net. 
 
-In network path 2, to bypass the NSG, a jumpbox is created within the VNet in which the HDInsight subnet lies. Users can RDP into this jumpbox and then access the HDInsight private endpoint with <clustername> over port 443 using https://<clustername>.azurehdinsight.net.
+In network path 2, to bypass the NSG, a jumpbox is created within the VNet in which the HDInsight subnet lies. Users can RDP into this jumpbox and then access the HDInsight private endpoint with \<clustername\> over port 443 using https://\<clustername\>.azurehdinsight.net.
 
-In network path 3, NSG rules are modified for a client external to Azure to get ssh access to the cluster via the public endpoint over port 22 using https://<clustername>-ssh.azurehdinsight.net. 
+In network path 3, NSG rules are modified for a client external to Azure to get ssh access to the cluster via the public endpoint over port 22 using https://\<clustername\>-ssh.azurehdinsight.net. 
 
 ## Outbound security 
 

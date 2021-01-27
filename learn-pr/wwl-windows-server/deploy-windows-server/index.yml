@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-windows-server
+metadata:
+  title: Deploy Windows Server
+  description: "Deploy Windows Server"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Deploy Windows Server
+summary: Learn to install and deploy Windows Server 2019 using deployment accelerators, features on demand, and Windows Deployment Services (WDS).
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain the difference between Server Core and Desktop Experience.
+  - List the hardware requirements for Windows Server 2019.
+  - Describe the available Windows Server deployment options.
+  - Describe deployment accelerators.
+  - Enable features on demand.
+  - Deploy Windows Server using WDS.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server.
+  - Operating system installation procedures.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.deploy-windows-server.introduction
+- learn.wwl.deploy-windows-server.compare-server-core-desktop-experience
+- learn.wwl.deploy-windows-server.identify-hardware-requirements-for-2019
+- learn.wwl.deploy-windows-server.choose-deployment-option
+- learn.wwl.deploy-windows-server.explore-deployment-accelerators
+- learn.wwl.deploy-windows-server.install-features-demand
+- learn.wwl.deploy-windows-server.use-wds-to
+- learn.wwl.deploy-windows-server.knowledge-check
+- learn.wwl.deploy-windows-server.summary
+badge:
+  uid: learn.wwl.deploy-windows-server.badge

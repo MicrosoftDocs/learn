@@ -13,7 +13,7 @@ The folder _.github/workflows_ contains your GitHub Action file. The file contai
 ```yaml
 app_location: '/Client' # App source code path
 api_location: '/Api' # Api source code path - optional
-app_artifact_location: 'wwwroot' # Built app content directory - optional
+output_location: 'wwwroot' # Built app content directory - optional
 ```
 
 Your `api_location` is set to the correct value to point to your API in your _Api_ folder.

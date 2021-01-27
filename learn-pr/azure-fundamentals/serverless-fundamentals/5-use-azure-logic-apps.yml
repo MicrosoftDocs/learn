@@ -2,7 +2,7 @@
 uid: learn.azure.serverless-fundamentals.use-azure-logic-apps
 title: Use Azure Logic Apps
 metadata:
-  title: Use Azure Logic Apps for building workflows across well-known APIs
+  title: Use Azure Logic Apps to build workflows across well-known APIs
   description: Analyze a scenario that requires orchestration across popular business applications.
   ms.date: 09/14/2020
   author: bobtabor-msft

@@ -7,7 +7,7 @@ The overarching principle for network security of the Azure SQL Database offerin
 > [!NOTE]
 > An ACL contains a list of resources, and the objects (users, computers, and applications) that are allowed to access those resources. When an object attempts to use a resource that is protected by an ACL, if it's not in the list, it won't be given access.
 
-Items that implement network-based ACLs include routers and load balancers. You control traffic flow through these items is controlled by defining firewall rules.
+Items that implement network-based ACLs include routers and load balancers. You control traffic flow through these items by defining firewall rules.
 
 The following steps describe how a connection is established to an Azure SQL database:
 

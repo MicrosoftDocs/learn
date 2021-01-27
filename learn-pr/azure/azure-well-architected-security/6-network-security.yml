@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-security.6-network-security
 title: Network security
 metadata:
   title: Network security
-  description: In this unit we'll discuss how to secure your network infrastructure
+  description: In this unit, we'll discuss how to secure your network infrastructure
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -20,7 +20,7 @@ quiz:
     - content: 'Communication between Azure virtual machines and the internet'
       isCorrect: false
       explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
-    - content: 'Communication between Azure virtual machines within a VNet'
+    - content: 'Communication between Azure virtual machines within a virtual network'
       isCorrect: false
       explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
     - content: 'Communication between Azure virtual machines and systems in an on-premises network'
@@ -28,19 +28,19 @@ quiz:
       explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
     - content: 'All of the above'
       isCorrect: true
-      explanation: 'Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines.'
+      explanation: 'Network security groups are fully customizable, and they give you the ability to fully lock down network communication to and from your virtual machines.'
 
-  - content: 'Which of the following is not a method for protecting internet facing services from network attacks?'
+  - content: 'Which of the following is not a method for protecting internet-facing services from network attacks?'
     choices:
-    - content: 'Azure DDoS'
+    - content: 'Azure DDoS Protection'
       isCorrect: false
-      explanation: 'Azure DDoS can be used to protect your internet facing services from a DoS attack. '
+      explanation: 'Azure DDoS Protection can be used to protect your internet-facing services from a DoS attack.'
     - content: 'Azure Application Gateway WAF'
       isCorrect: false
-      explanation: 'Application Gateway WAF can be used to protect your internet facing services from attacks such as XSS and SQL injection.'
+      explanation: 'Application Gateway WAF can be used to protect your internet-facing services from attacks such as XSS and SQL injection.'
     - content: 'Azure Disk Encryption'
       isCorrect: true
-      explanation: 'Azure Disk Encryption protects your virtual machine VHDs from exposure, but does not provide protection from network based attacks.'
+      explanation: "Azure Disk Encryption protects your virtual machine VHDs from exposure, but it doesn't provide protection from network-based attacks."
     - content: 'A network virtual appliance'
       isCorrect: false
-      explanation: 'Network virtual appliances can provide customized network protection for your internet facing resources.'
+      explanation: 'Network virtual appliances can provide customized network protection for your internet-facing resources.'

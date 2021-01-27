@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-central
-durationInMinutes: 4 # dummy number at present
+durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/2-design-secure-iot-solution.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-files.9-exercise-read-write-files
+title: Exercise - Read and write to files
+metadata:
+  title: Exercise - Read and write to files
+  description: Exercise - Read data from a file to parse it and write the resulting data to a file.
+  ms.date: 10/28/2020
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 7
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/9-exercise-read-write-files.md)]

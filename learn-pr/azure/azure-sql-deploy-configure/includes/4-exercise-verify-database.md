@@ -31,9 +31,9 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
 
     :::image type="content" source="../media/4-azure-data-studio-servers.png" alt-text="Screenshot that compares SQL Server and SQL Database in Azure Data Studio.":::  
 
-1. To run queries in Azure Data Studio, it's similar to SSMS. Right-click a database or server name and select **New query**.
+1. To run queries in Azure Data Studio, it's similar to SSMS. Right-click a database or server name, and select **New query**.
 
-1. For Azure SQL Database, because you're not getting a full "server," **USE [DatabaseName]** is not supported to change the database context. You must either change the connection to specifically connect to the database that you want to run a query on or use the drop-down menu. Change to the context of your **AdventureWorks** database by selecting the drop-down box next to **master** and run `SELECT @@VERSION`.  
+1. For Azure SQL Database, because you're not getting a full "server," **USE [DatabaseName]** is not supported to change the database context. You must either change the connection to specifically connect to the database that you want to run a query on, or use the dropdown. Change to the context of your **AdventureWorks** database by selecting the dropdown next to **master** and run `SELECT @@VERSION`.  
 
     :::image type="content" source="../media/4-new-query-azure-data-studio.png" alt-text="Screenshot of querying in Azure Data Studio.":::
 
@@ -69,8 +69,8 @@ Both exercises contain the same commands and content, so you can choose the opti
 In this option, you'll walk through some common queries against system functions, dynamic management views (DMVs), and catalog views that you can use after deployment in SSMS. You'll see which ones work the same as SQL Server, which ones don't, and which ones are new to Azure SQL.
 
 1. Connect to your Azure SQL Database logical server in SSMS if you haven't already.
-1. Right-click the AdventureWorks database and select **New Query**.
-1. Check the version that you deployed by using the well-known system function ``@@VERSION``.
+1. Right-click the AdventureWorks database, and select **New Query**.
+1. Check the version that you deployed by executing the well-known system function ``@@VERSION``.
 
     ```sql
     SELECT @@VERSION
@@ -123,9 +123,9 @@ In this option, you'll walk through some common queries against system functions
 
     Two `VISIBLE ONLINE` schedulers are what you would expect when two vCores are available for the SQL Server instance where your SQL database is deployed.
 
-1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_os_sys_info and sys.dm_process_memory to see limits for CPU, memory, and workers. These DMVs are not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. So you can use the DMV sys.dm_user_db_resource_governance to review capacities and limits for your deployed SQL database. 
+1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_process_memory to see limits for CPU, memory, and workers. This DMV is not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. So you can use the DMV sys.dm_user_db_resource_governance (and sys.dm_instance_resource_governance in Azure SQL Managed Instance) to review capacities and limits for your deployed SQL database. 
 
-    Run and review the following query results. Compare this to your pricing tier and the limits documented for your deployed tier.
+    Run and review the following query results. Compare this to your pricing tier and the limits documented for your deployed tier. The `slo_name` is the Service Level Objective (SLO) which states the deployment option, service tier, hardware, and compute amount.  In addition, because Azure SQL Database uses Windows Job Objects for additional resource limits (such as memory), you can use the `sys.dm_os_job_object` DMV to see what resources are available for the deployment.
 
     ```sql
     SELECT * FROM sys.dm_user_db_resource_governance;

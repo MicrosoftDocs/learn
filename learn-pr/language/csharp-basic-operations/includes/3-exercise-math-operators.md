@@ -121,7 +121,7 @@ In math, PEMDAS is an acronym that helps students remember the order in which mu
 3. **M**ultiplication and **D**ivision (from left to right)
 4. **A**ddition and **S**ubtraction (from left to right)
 
-C# follows the same order as PEMDAS except for exponents.  While there's no exponent operator in C#, you can use the `System.Math.Pow()` method, which is available from the .NET Class Library.  The module "Execute methods in the .NET Class Library using C#" will feature this method and others.
+C# follows the same order as PEMDAS except for exponents.  While there's no exponent operator in C#, you can use the `System.Math.Pow()` method, which is available from the .NET Class Library.  The module "Call methods from the .NET Class Library using C#" will feature this method and others.
 
 ### Step 4 - Write code to exercise C#'s order of operations
 

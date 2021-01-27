@@ -3,14 +3,14 @@ uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.7-exercise-con
 title: Exercise - Configure a new capture with DEA
 metadata:
   title: Exercise - Configure a new capture with DEA
-  description: Exercise - Configure a new capture with DEA
-  ms.date: 01/31/2019
-  author: markohot
+  description: "Exercise - Configure a new capture with DEA"
+  ms.date: 01/07/2021
+  author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 azureSandbox: true
-interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-configure-new-capture.md)]
+interactive: bash

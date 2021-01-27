@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
  - Ability to write and run introductory Python programs
  - Visual Studio Code, a Python extension, and Jupyter Notebook installed
- - Artificial intelligence libraries installed
+ - [Artificial intelligence libraries](https://docs.microsoft.com/learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true) installed 
 iconUrl: /learn/achievements/student-evangelism/analyze-rock-images-ai-nasa.svg
 levels:
 - beginner

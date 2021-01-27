@@ -6,7 +6,7 @@ We've introduced an array of Azure technology that could be used to help build t
 
 The following diagram shows a simplified flow chart that you can use to choose the best technology to use for your business process:
 
-![Diagram of decision flow chart that will be described in depth in the text that follows.](../media/3-service-choice-flow-diagram.png)
+:::image type="content" source="../media/3-service-choice-flow-diagram.png" alt-text="Diagram of decision flow chart that will be described in depth in the text that follows.":::
 
 The first question to ask is whether you prefer to design the workflow in a GUI designer tool or by writing code. The following list has some  valid reasons for using a design-first tool:
 
@@ -36,6 +36,7 @@ Because of the extra features that are included with Azure Functions, including 
 
 - You have an existing Azure App Service application, and you want to model the workflow within the application. This requirement means that the workflow can also be managed as part of the application, for example in an Azure DevOps environment.
 - You have specific customizations that you want to make to the `JobHost` that are not supported by Azure Functions. For example, in a WebJob, you can create a custom retry policy for calls to external systems. This kind of policy can't be configured in an Azure Function.
+- Webjobs only supports C# on Microsoft Windows.
 
 ## Mixing Technologies
 

@@ -21,7 +21,7 @@ abstract: |
   * Enable governance at scale across multiple Azure subscriptions by using Azure Blueprints.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
-  - Familiarity with cloud computing is helpful but isn't necessary.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/describe-azure-governance-methodologies.svg
 levels:
 - beginner
