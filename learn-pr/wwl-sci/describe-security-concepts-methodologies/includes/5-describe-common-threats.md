@@ -1,6 +1,6 @@
 There are different types of security threats. Some aim to steal data, some aim to extort money, and others to disrupt normal operations, such as a denial of service attack. This unit looks at some of the common threats.
 
-## Data breach
+### Data breach
 
 A data breach is when data is stolen, and this includes personal data. Personal data means any information related to an individual that can be used to identify them directly or indirectly.
 
