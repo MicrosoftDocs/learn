@@ -1,4 +1,4 @@
-Although there are many laws and regulations for data protection worldwide, the most commonly used regulations are the GDPR and CCPA. The GDPR is commonly used in the European Union (EU) and the CCPA is the first comprehensive privacy law in the United States of America.
+Although there are many laws and regulations for data protection worldwide, the most commonly used regulations are the GDPR and CCPA. The GDPR is commonly used in the European Union (EU), and the CCPA is the first comprehensive privacy law in the United States of America.
 
 ## Overview of GDPR
 
