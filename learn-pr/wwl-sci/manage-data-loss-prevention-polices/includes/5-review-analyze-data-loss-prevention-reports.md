@@ -8,11 +8,11 @@ On the DLP Policy Matches report page and the DLP Incidents report page you will
 
 Familiarizing yourself with the available filters and options of the DLP reports will help you fine-tune your policies and reduce false positives and overrides.
 
-## Review DLP Policy Matches
+## Review data loss prevention policy matches
 
 When using the DLP policy matches report, you should use the filters to limit the report to specific policies. This will help you reduce the number of matches displayed and focus on the impact of selected policies in your organization.
 
-![Report in Microsoft 365 showing DLP matches.](../media/dlp-policy-matches-report.png)
+:::image type="content" source="../media/policy-matches-report.png" alt-text="Report in Microsoft 365 showing DLP matches":::
 
 Consider a scenario where you created a new policy to protect financial data a few days ago and currently have it set to test mode. You should set the start date in the filter close to the start date of the policy to avoid whitespace in your report from before the policy existed.
 
@@ -40,13 +40,13 @@ Consider a scenario where you created a new policy to protect financial data a f
 
 1. For example, a peak in the Exchange service for bank account numbers might indicate a leak, but it could also be the sign of a legitimate business process at odds with your new policy. Before adjusting the policy, you should investigate the situation.
 
-## Review DLP Incidents
+## Review data loss prevention incidents
 
 When using the DLP Incidents report to get a general overview of which items generate many matches you should not limit the report to specific policies. This will allow you to identify items that fall under the scope of multiple policies and see which action is applied in the end.
 
 Using the DLP incidents report you should keep the timeframe broad and drill-down if you identify any peaks at certain times.
 
-![Reports in Microsoft 365 screen example.](../media/jan-dlp-incidents.png)
+:::image type="content" source="../media/jan-incidents.png" alt-text="Reports in Microsoft 365 screen example.":::
 
 For example, you created a new set of DLP policies and prioritized them according to your DLP strategy. If you want to see if the priority you chose aligns with the reality of sensitive data in your organization, you should open the DLP incidents report page and follow these steps:
 
@@ -64,7 +64,7 @@ If you see any high peaks use the start date and end date filters to limit the s
 
 The DLP incidents report can not only be used to see items at odds with your policy priority but as a tool to find items that already generate a high volume of matches in general. This information allows you to consider other protective measures for these items in and outside of DLP policies. For example, you identify documents with four times as many policy matches as the next highest match count. Even though the protective action prevents these files from being shared you might consider storing them at a more secure location.
 
-## Review DLP false positives and overrides
+## Review data loss prevention false positives and overrides
 
 The false positives and overrides visible in this DLP report come from your users. You need to work with your users to make sure that they know how to report false positives to ensure the data in this report can be useful.
 

@@ -16,7 +16,7 @@ To enable test mode for your DLP policy, you need to edit the DLP policy and go 
 
 1. Select **Submit** after reviewing the policy.
 
-    ![Graphical user interface, text, application, email Description automatically generated](../media/test-policy.png)
+    :::image type="content" source="../media/test-policy.png" alt-text="test policy example":::
 
 1. Next you can review the content your policy matches by utilizing the reports dashboard.
 
@@ -24,7 +24,7 @@ To enable test mode for your DLP policy, you need to edit the DLP policy and go 
 
 1. On the Reports page, filter for the policy you created and review the results.
 
-    ![A screenshot of a computer Description automatically generated with medium confidence](../media/dlp-policy-matches-report.png)
+    :::image type="content" source="../media/policy-matches-report.png" alt-text="example of policy matching report":::
 
 > [!TIP]
 >DLP Policy reports might take up to 24 hours to show up in your display!
@@ -35,7 +35,7 @@ While a policy is implemented in test mode the actions are not executed. You can
 
 After you have monitored the alerts for some time and adjusted the sensitivity of your policy, you should keep the policy in test mode and activate the policy tips for some time.  This will allow your users' time to help refine the policy further by reporting false positives.
 
-## DLP rule: User notifications
+## Data loss prevention rule: user notifications
 
 User notifications inform users that a policy was triggered. Enabling these notifications should get users' to report false positives so you can adjust policy sensitivity. You can enable User notification on DLP rules using the following steps:
 
@@ -45,9 +45,9 @@ User notifications inform users that a policy was triggered. Enabling these noti
 
 1. In **Edit rule** pane, go down to the **User notifications** section, in **Use notifications to inform your users and help educate them on the proper use of sensitive info**, select **On**.
 
-![Graphical user interface, text, application, email Description automatically generated](../media/dlp-rule-user-notification.png)
+:::image type="content" source="../media/rule-user-notification.png" alt-text="user notifications rule example":::
 
-## DLP rule: Incident reports
+## Data loss prevention rule: incident reports
 
 When tuning policies in test mode you need to be informed about matches so you can adjust the sensitivity if matches are triggering a high number of false positives. In this case, we are monitoring each rule inside the policy for itself and not a general policy match.
 
@@ -59,5 +59,5 @@ The following steps describe how to configure Incident reports in your DLP rules
 
 1. Decide on the various other parameters available to fine-tune your incident reports.
 
-![Graphical user interface, text, application, email Description automatically generated](../media/dlp-rule-incident-report.png)
+:::image type="content" source="../media/rule-incident-report.png" alt-text="incident report rules":::
 

@@ -46,5 +46,4 @@ Set-DLPCompliancePolicy -Identity "EU Financial Data Policy" -Priority 1
 
 ```
 
-> It is prudent to prioritize policies with less restrictive actions below more restrictive policies. Also, rules with less restrictive actions should be prioritized below more restrictive rules to prevent the less restrictive rules from overwriting any block actions of the more restrictive rules and policies. 
-
+It is prudent to prioritize policies with less restrictive actions below more restrictive policies. Also, rules with less restrictive actions should be prioritized below more restrictive rules to prevent the less restrictive rules from overwriting any block actions of the more restrictive rules and policies.

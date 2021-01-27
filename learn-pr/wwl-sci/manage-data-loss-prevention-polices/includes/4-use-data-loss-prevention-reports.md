@@ -1,6 +1,6 @@
 After you create data loss prevention policies, administrators need to verify and monitor the performance of their DLP policies in production. This is an important recurring task for an organization to ensure they stay compliant with policies while minimizing impact on user productivity. 
 
-## DLP Reports in the Microsoft 365 Compliance center
+## Data loss prevention Reports in the Microsoft 365 compliance center
 
 The Microsoft 365 compliance center provides the following DLP reports that can be accessed in reports under organization data:
 
@@ -21,7 +21,7 @@ The following table provides an overview for each DLP report.
 > [!TIP]
 > All DLP reports can display data from the most recent four-month time period. The most recent data can take up to 24 hours to appear in the reports.
 
-## DLP alert management dashboard
+## Data loss prevention alert management dashboard
 
 Reports provide a quick overview of DLP events and can inform about an organization's trends.  DLP policies can be configured to trigger an alert when the conditions are met. Use the incident report to investigate events.
 
@@ -39,7 +39,7 @@ The DLP alert management dashboard in the Microsoft 365 Compliance center can be
 
 The remediation of MCAS DLP alerts is done through the MCAS dashboard.
 
-## DLP alerts in the MCAS Dashboard
+## Data loss prevention alerts in the Microsoft Cloud App Security dashboard
 
 You can also view a report for DLP alerts in the MCAS Dashboard. This report shows the alerts and matches of all your MCAS policies that are part of the DLP category. You can select each alert or match to gain information about:
 
@@ -53,7 +53,7 @@ You can also view a report for DLP alerts in the MCAS Dashboard. This report sho
 
 - The actions that have been taken to secure the matched file
 
-![Alerts screen example.](../media/dlp-alerts-report-mcas.png)
+![Alerts screen example.](../media/alerts-report-mcas.png)
 
 Use the MCAS DLP alerts report to view an overview of MCAS policy alerts. Since policies created on the MCAS side have different options and scopes compared to MCAS policies created in the Compliance center, it's prudent to be aware of alerts in both dashboards.
 
