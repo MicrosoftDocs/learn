@@ -1,4 +1,4 @@
-Microsoft provides a set of technologies and tools that you can use to classify your data, help protect your data, and prevent data loss. Most of these tools are provides within the Microsoft 365 platform, but some of them are also available as separate products. Keeping in mind that many customers keep their data both on locally deployed file servers and on cloud storage services, most of the Microsoft technologies for information protection are usable on data stored in any location.
+Microsoft provides a set of technologies and tools that you can use to classify your data, help protect your data, and prevent data loss. Most of these tools are provided within the Microsoft 365 platform, but some of them are also available as separate products. Keeping in mind that many customers keep their data both on locally deployed file servers and on cloud storage services, most of the Microsoft technologies for information protection are usable on data stored in any location.
 
 ## Azure Information Protection
 
@@ -12,7 +12,7 @@ The protection enhancement remains with the data. For example, when people email
 Azure Information Protection supports online and on-premises Microsoft server products. You can use Azure Information Protection in various scenarios and with various platforms and applications. Key characteristics of Azure Information Protection are:
 
 - Support for the Information Rights Management (IRM) capabilities in Microsoft online services such as Exchange Online, SharePoint Online, and Office 365.
-- Support for on-premises Microsoft server products such as Microsoft Exchange Server, Microsoft SharePoint Server, Office apps and file servers. 
+- Support for on-premises Microsoft server products such as Microsoft Exchange Server, Microsoft SharePoint Server, Office apps, and file servers. 
 - Ability to share protected content among users within the same organization or across organizations that also have Office 365 or Azure Information Protection.
 - Ability of users to define their own permission sets if the templates aren’t sufficient.
 - Support for all the Office apps for multiple operating systems and versions, including third-party operating systems.
@@ -57,4 +57,4 @@ When someone sends an email message that matches an encryption mail flow rule, t
 
 Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Outlook.com, Gmail, and Yahoo accounts receive a wrapper mail that directs them to the OME Portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
 
-End users that read encrypted or rights-protected mail on clients other than Outlook also use the OME portal to observe encrypted and rights-protected messages that they receive.
+End users that read encrypted or rights-protected mail on clients other than Outlook also use the OME Portal to observe encrypted and rights-protected messages that they receive.
