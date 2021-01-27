@@ -20,7 +20,7 @@ Microsoft 365 Defender applies correlation analytics and aggregates all related 
 
 The Incidents queue shows a collection of flagged incidents from across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.
 
-![Incident Queue](../media/incidents-queue.png)
+[ ![Incident Queue.](../media/incidents-queue.png) ](../media/incidents-queue.png#lightbox)
 
 By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days. The most recent incident is at the top of the list so that you can see it first.
 
@@ -78,31 +78,31 @@ The severity of an incident is indicative of the impact it can have on your asse
 
 You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
 
-## Preview Incidents
+## Preview incidents
 
 The portal pages provide preview information for most list related data.
 
 In this screenshot, the three highlighted areas are the circle, the greater than symbol, and the actual link.
 
-![Preview options from a list](../media/dfnav-1.png)
+[ ![Preview options from a list.](../media/preview-options-from-list.png) ](../media/preview-options-from-list.png#lightbox)
 
 **Circle**
 
 Selecting the circle will open a blade on the right side of the page with a preview of the line item with an option to open the full page of information.
 
-![Preview blade](../media/incident-circle.png)
+[ ![Preview blade.](../media/incident-circle.png) ](../media/incident-circle.png#lightbox)
 
 **Greater than symbol**
 
 If there are related records that can be displayed, selecting the greater than sign will display the records below the current record.
 
-![Related records](../media/greater-than.png)
+[ ![Related records.](../media/greater-than.png) ](../media/greater-than.png#lightbox)
 
 **Link**
 
 The link will navigate you to the full page for the line item.
 
-## Manage Incidents
+## Manage incidents
 
 Managing incidents is critical in ensuring that threats are contained and addressed. In Microsoft 365 Defender, you have access to managing incidents on devices, users, and mailboxes. You can manage incidents by selecting an incident from the Incidents queue.
 

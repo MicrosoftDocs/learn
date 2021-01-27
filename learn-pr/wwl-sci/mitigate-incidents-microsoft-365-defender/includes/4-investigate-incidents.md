@@ -4,7 +4,7 @@ The incident page provides the following information and navigation links.
 
 The overview page gives you a snapshot glance into the top things to notice about the incident.
 
-![Incident overview](../media/incidents-overview.png)
+[ ![Incident overview.](../media/incidents-overview.png) ](../media/incidents-overview.png#lightbox)
 
 The attack categories give you a visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the MITRE ATT&CK™ framework.
 
