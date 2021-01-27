@@ -27,7 +27,7 @@ If DLP finds keywords that match a credit card company’s name or date values t
 
 In other words, DLP is smart enough to recognize the difference between these two strings of text in an email:
 
-- "Can you order me a new laptop. Use my credit card number 1111-1111-1111-1111, expiry 11/22, and send me the estimated delivery date when you have it."
+- "Can you order me a new laptop? Use my credit card number 1111-1111-1111-1111, expiry 11/22, and send me the estimated delivery date when you have it."
 - "My laptop serial number is 2222-2222-2222-2222 and it was purchased on 11/2010. By the way, is my travel visa approved yet?"
 
 ## Achieve DLP with Microsoft tools
