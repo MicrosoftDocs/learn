@@ -68,3 +68,23 @@ az spring-cloud app show --name ${API_GATEWAY} | grep url
 ```
 
 Navigate to the URL provided by the previous command to open the Petclinic microservice application.
+
+## See the application in action
+
+### Create a new pet owner
+
+Click the **Owners** option from the top ribbon menu, and select **Register**.
+
+Once there add the relevant information and hit **Submit** to create the user.
+
+If the email functionality is activated, the email should reach your sample email account.
+
+### Log a new visit
+
+Click the **Owners** option from the top ribbon menu, and select **All**.
+
+Then, proceed to select one of the owners from the list, and see the list of **pets** for that owner. For any of the pets listed here, proceed to **Add visit**.
+
+Select the date and the description and then click **Add New Visit**.
+
+If the email functionality is activated, the email should reach your sample email account.
