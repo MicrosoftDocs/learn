@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.use-qsharp-libraries.5-run-full-program
+title: Exercise - Run Grover's algorithm
+metadata:
+  title: Exercise - Run Grover's algorithm
+  description: Use the previously written oracle to run Grover's algorithm and determine the missing ISBN digit
+  ms.date: 09/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-run-full-program.md)]

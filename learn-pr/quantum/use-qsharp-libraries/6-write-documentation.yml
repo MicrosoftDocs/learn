@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.use-qsharp-libraries.6-write-documentation
+title: Exercise - Write your own documentation
+metadata:
+  title: Exercise - Write your own documentation
+  description: Add documentation comments to newly written code and learn how they can help
+  ms.date: 09/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-write-documentation.md)]
