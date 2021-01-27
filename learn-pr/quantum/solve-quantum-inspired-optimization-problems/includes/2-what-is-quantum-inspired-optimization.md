@@ -1,6 +1,6 @@
 There are many types of quantum-inspired algorithms. Put simply, they are classical algorithms inspired by quantum algorithms, where the essential quantum phenomenon that would provide the speed-up can be classically emulated.
 
-Quantum-inspired optimization is a method based on emulating quantum tunneling as used in the adiabatic quantum optimization algorithm, explained later. A number of techniques have been developed to simulate this type of physics, and one such approach uses a concept from quantum physics known as [the adiabatic theorem](https://en.wikipedia.org/wiki/Adiabatic_theorem). When you apply that theorem to solve a problem, you:
+Quantum-inspired optimization is a method based on emulating quantum tunneling as used in the adiabatic quantum optimization algorithm, explained later. A number of techniques have been developed to simulate this type of physics, and one such approach uses a concept from quantum physics known as [the adiabatic theorem](https://en.wikipedia.org/wiki/Adiabatic_theorem/?azure-portal=true). When you apply that theorem to solve a problem, you:
 
 - First prepare a system and initialize it to its lowest energy state. For a simple system, one that we completely understand, this is easy to do.
 - Next, slowly transform that system into a more complex one that describes the problem you are trying to solve. The adiabatic theorem states that, as long as this transformation happens slowly enough, the system has time to adapt and will stay in that lowest energy configuration. When we're done with our transformations, we've solved our problem.
@@ -11,7 +11,7 @@ While this module focuses on quantum-inspired optimization, it's important to re
 
 ## Where can quantum-inspired optimization (QIO) be applied?
 
-[Optimization problems](https://en.wikipedia.org/wiki/Optimization_problem) are found in every industry, such as manufacturing, finance, and transportation. In fact, industries such as logistics are dedicated entirely to solving optimization problems. To solve these problems, we search through feasible solutions. The best solution is the one with the lowest cost. Adiabatic quantum algorithms are well suited to solving many optimization problems.
+[Optimization problems](https://en.wikipedia.org/wiki/Optimization_problem/?azure-portal=true) are found in every industry, such as manufacturing, finance, and transportation. In fact, industries such as logistics are dedicated entirely to solving optimization problems. To solve these problems, we search through feasible solutions. The best solution is the one with the lowest cost. Adiabatic quantum algorithms are well suited to solving many optimization problems.
 
 Today, we can emulate adiabatic quantum algorithms by using quantum-inspired techniques on classical hardware. These techniques can perform better than state-of-the-art classical optimization techniques:
 
