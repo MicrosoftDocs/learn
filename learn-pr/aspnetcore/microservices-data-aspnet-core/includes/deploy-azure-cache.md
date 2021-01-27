@@ -1,4 +1,4 @@
-In this exercise, you will:
+In this unit, you will:
 
 - Create an Azure Redis Cache instance.
 - Remove the Redis cache deployment from the cluster.
@@ -79,7 +79,7 @@ If you checked the *WebStatus* dashboard, you should see the HTTP aggregator and
 
 ## Reconfigure the affected microservices
 
-Now you have to update the ConfigMap files for the following microservices that are using Redis:
+Now update the ConfigMap files for the following microservices that are using Redis:
 
 - Basket
 - Identity
@@ -92,17 +92,33 @@ In the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor), apply 
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
+    The connection string is used in *src/Services/Basket/Basket.API/Startup.cs*. The `ConfigureServices` method calls the following extension method:
+
+    :::code language="csharp" source="../code/src/services/basket/basket-api/startup.cs" highlight="8":::
+
 1. In *identity/templates/configmap.yaml*, update the `ConnectionString` key's value to the connection string:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/identity/templates/configmap.yaml" highlight="10":::
+
+    The connection string is used in the `ConfigureServices` method of *src/Services/Identity/Identity.Api/Startup.cs*:
+
+    :::code language="csharp" source="../code/src/services/identity/identity-api/startup.cs" highlight="12":::
 
 1. In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` key's value to the connection string:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/signalr/templates/configmap.yaml" highlight="10":::
 
+    The connection string is used in the `ConfigureServices` method of *src/Services/Ordering/Ordering.SignalrHub/Startup.cs*:
+
+    :::code language="csharp" source="../code/src/services/ordering/ordering-signalrhub/startup.cs" highlight="9":::
+
 1. In *webspa/templates/configmap.yaml*, update the `DPConnectionString` key's value to the connection string:
 
     :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="10":::
+
+    The connection string is used in the `ConfigureServices` method of *src/Web/WebSPA/Startup.cs*:
+
+    :::code language="csharp" source="../code/src/web/webspa/startup.cs" highlight="12":::
 
 ## Redeploy the affected microservices
 

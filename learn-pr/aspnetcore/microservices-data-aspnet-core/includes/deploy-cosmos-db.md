@@ -1,4 +1,6 @@
-In this exercise, you will:
+Only the coupon service uses MongoDB. All other microservices in the solution use different data stores.
+
+In this unit, you will:
 
 - Create an Azure Cosmos DB instance.
 - Remove the MongoDB deployment from the cluster.
@@ -78,7 +80,7 @@ release "eshoplearn-nosqldata" uninstalled
 
 ## Reconfigure the coupon service to use Azure Cosmos DB
 
-In this case, only the coupon service uses MongoDB. Update the service's ConfigMap file as follows.
+The coupon service's ConfigMap file needs to be updated with the connection string for the Azure-managed database.
 
 In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `ConnectionString` key's value from `mongodb://nosqldata` to the connection string displayed from the creation script, as shown in the next YAML fragment:
 
@@ -92,7 +94,7 @@ In *deploy/k8s/helm-simple/coupon/templates/configmap.yaml*, update the `Connect
     eval $(cat ~/clouddrive/aspnet-learn/deploy-application-exports.txt)
     ```
 
-1. Then run the following script:
+1. Run the following script:
 
     ```bash
     ./deploy-application.sh --charts coupon
