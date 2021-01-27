@@ -2,7 +2,7 @@ Access to groups and applications for employees and guests changes over time. To
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about ....|
+| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about how to deploy and create access reviews.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAkF]
 
