@@ -23,4 +23,4 @@ Here are resources where you can learn more:
 
 ## Get started with quantum programming with Q\#
 
-To get started with writing quantum programs, check out [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). There, you'll build a basic program that measures qubits to generate random numbers.
+To get started with writing quantum programs, check out [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true). There, you'll build a basic program that measures qubits to generate random numbers.
