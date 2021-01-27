@@ -214,28 +214,33 @@ To configure debugging for your app:
 
 1. Select the **Run** tab from the activity bar, or select **View** > **Run**.
 
+    :::image type="content" source="../media/run-app.png" alt-text="w":::
+
 1. Select **create a launch.json file**.
 
+    :::image type="content" source="../media/create-launch-file.png" alt-text="w":::
+
 1. A dropdown will appear to select the debug configuration. Select ***Flask** Launch and debug a Flask web application*.
+
+    :::image type="content" source="../media/launch-debug-flask-app.png" alt-text="w":::
 
    > [!Note]
    > If you don’t see a new file named **launch.json** inside a folder named **.vscode** in your app code folder, you can manually create the configuration file.
    > Select the gear icon to the right of the **Run** drop-down box.
    > A new launch.json file should open. The file should be placed in the .vscode folder. The text in the **Run** drop-down box should change to "Python:Flask."
 
-
 1. After the text in the **Run** drop-down box changes to "Python:Flask," select the green triangle icon to run the application.
 
-![The run button](../media/run-flask-app.png)
+    :::image type="content" source="../media/run-flask-app.png" alt-text="w":::
 
-The app will start. Code output shows the local URL it's running on.
+    The app will start. Code output shows the local URL it's running on.
 
-```output
- * Serving Flask app "app.py"
- * Environment: development
- * Debug mode: off
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
+    ```output
+     * Serving Flask app "app.py"
+     * Environment: development
+     * Debug mode: off
+     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+    ```
 
 1. Position your cursor on the IP address link in the terminal output. Enter CTRL+click to open the application in your web browser. If you give the site permission to get your location it will center on you, otherwise it will center on the Microsoft Campus in Redmond, Washington, USA.
 
