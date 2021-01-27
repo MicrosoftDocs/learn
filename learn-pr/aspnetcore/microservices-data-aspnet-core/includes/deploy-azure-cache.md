@@ -2,8 +2,8 @@ In this unit, you will:
 
 - Create an Azure Redis Cache instance.
 - Remove the Redis cache deployment from the cluster.
-- Reconfigure the affected microservices to use the new Azure Redis Cache instance.
-- Redeploy the affected microservices.
+- Reconfigure the affected projects to use the new Azure Redis Cache instance.
+- Redeploy the affected projects.
 
 ## Create an Azure Redis Cache instance
 
@@ -77,7 +77,7 @@ release "eshoplearn-basketdata" uninstalled
 
 If you checked the *WebStatus* dashboard, you should see the HTTP aggregator and basket service failing. Although it could take a little while to show.
 
-## Reconfigure the affected microservices
+## Reconfigure the affected projects
 
 Update the ConfigMap files for the following projects that are using Redis:
 
