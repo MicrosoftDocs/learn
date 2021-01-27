@@ -23,7 +23,7 @@ Here are some examples:
 
 Some of these problems are better suited to benefit from using Grover's algorithm than the others. 
 
-The problem you have been tasked with is the following. You need to prepare a route to deliver specific supplies to different space fleet stations so space pilots can follow that route. We supply our spaceships and space stations with different materials and you have to make sure that two connected stations don't receive the same type of supply. 
+The problem you have been tasked with is the following. We supply our space stations with different materials, food, water, fuel, etc. We need to elaborate a list of the minimum number of supplies we need to carry in the spaceship, depending on the number of stations and how close they are between them. If two space stations are close enough we know they are connected and they can share supplies, so there is no need to delivery same type of supply twice.
 
 This problem is an instance of the graph coloring problem.
 
