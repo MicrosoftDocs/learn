@@ -161,13 +161,9 @@ You'll now complete the configuration by creating the connections from each VPN 
 > [!NOTE] 
 > Any set of number will work for a shared key in this example:  SHAREDKEY=123456789    It is recommended in production environments to use string of printable ASCII characters no longer than 128 characters.
     
-    ```bash
+  ```bash
     SHAREDKEY=<shared key>
-    ```
-    '''bash
-    SHAREDKEY=<shared key>
-    '''
-
+  ```
 1. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
 
     ```azurecli
