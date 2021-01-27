@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.configure-label-polices
+title: Configure on-premises labeling for the Unified Labeling Scanner
+metadata:
+  title: Configure on-premises labeling for the Unified Labeling Scanner
+  description: "Configure on-premises labeling for the Unified Labeling Scanner"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-on-premises-labeling-for-unified-labeling-scanner.md)]
