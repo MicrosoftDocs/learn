@@ -8,7 +8,7 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+title: How Anomaly Detector works
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-anomaly-detector-works.md)]
