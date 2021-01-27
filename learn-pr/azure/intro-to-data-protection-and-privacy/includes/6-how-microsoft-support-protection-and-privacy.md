@@ -8,7 +8,7 @@ Microsoft has designated an EU data protection officer (DPO) to be an independen
 
 Microsoft uses its own data categorization for online services. These categories are:
 
-- Customer data. Customer data is all data, including text, sound, video, or image files, and software that you provide to Microsoft directly, or through your use of Microsoft enterprise online services, excluding Microsoft Professional Services. It includes customer content, which is the data you upload for storage or processing and the apps you upload for distribution through a Microsoft enterprise cloud service. For example, customer content includes Microsoft Exchange Online email and attachments, Microsoft Power BI reports, Microsoft SharePoint Online site content, and instant messaging conversations.
+- Customer data. Customer data is all data, including text, sound, video, image files, and software that you provide to Microsoft directly, or through your use of Microsoft enterprise online services, excluding Microsoft Professional Services. It includes customer content, which is the data you upload for storage or processing and the apps you upload for distribution through a Microsoft enterprise cloud service. For example, customer content includes Microsoft Exchange Online email and attachments, Microsoft Power BI reports, Microsoft SharePoint Online site content, and instant messaging conversations.
 
 - Diagnostic data. Diagnostic data includes all the data that's collected or obtained from software that you locally install for use in connection with Microsoft enterprise online services. Microsoft uses diagnostic data to help ensure the client software is secure and performing properly. For example, Microsoft collects information about how long it takes to launch an app, add-in failures, and the number of sign-in attempts. Diagnostic data can also be referred to as telemetry data, and doesn't include names, email addresses, or file content.
 
@@ -20,7 +20,7 @@ Microsoft uses its own data categorization for online services. These categories
 
 - Payment data. Payment data is the information you provide when you buy a Microsoft product online. It might include a credit card number and security code, name, billing address, and other financial data. Microsoft uses payment data to complete transactions and to detect and prevent fraud.
 
-- Personal data. Personal Data includes any information relating to an identified or identifiable natural person. Microsoft uses the same GDPR definition for personal data. It includes pseudonymized data. In addition to being a subset of administrator data and payment data, personal data is a subset of each of the data categories presented in this list.
+- Personal data. Personal data includes any information relating to an identified or identifiable natural person. Microsoft uses the same GDPR definition for personal data. It includes pseudonymized data. In addition to being a subset of administrator data and payment data, personal data is a subset of each of the data categories presented in this list.
 
 ## Microsoft's GDPR commitments to customers
 
