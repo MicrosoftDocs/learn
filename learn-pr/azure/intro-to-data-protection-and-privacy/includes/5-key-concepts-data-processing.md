@@ -42,7 +42,7 @@ The following list defines terms that are relevant to data processing:
 
   - Customer content that a customer uploads to or creates in specific services. Examples include customer content in an Azure Storage account, customer content of an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
   
-- System-Generated Logs. Microsoft or other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers. This is typically a number that the system generates that cannot, on its own, identify an individual person, but is used to deliver the enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.
+- System-generated logs. Microsoft or other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, such as unique identifiers. This is typically a number that the system generates that cannot, on its own, identify an individual person, but is used to deliver the enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.
 
 ## Process of completing DSRs
 
