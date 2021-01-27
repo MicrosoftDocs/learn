@@ -1,4 +1,3 @@
-- 15 minutes
 
 ## Create an Azure account and add Azure Active Directory Premium P2 trial licenses
 

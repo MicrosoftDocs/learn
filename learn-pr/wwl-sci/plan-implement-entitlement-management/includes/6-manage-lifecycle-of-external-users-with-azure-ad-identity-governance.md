@@ -1,8 +1,6 @@
-- 2 minutes
-
 ## Manage the lifecycle of external users in Azure AD Identity Governance settings
 
-You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
+You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This situation can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
 
@@ -21,7 +19,7 @@ You can select what happens when an external user, who was invited to your direc
 
     When an external user loses their last assignment to any access packages, if you want to block them from signing in to this directory, set the **Block external user from signing in to this directory** to **Yes**.
 
-    If a user is blocked from signing in to the directory, the user will be unable to re-request the access package or request additional access in this directory. Do not configure blocking them from signing in if they will subsequently need to request access to other access packages.
+    If a user is blocked from signing in to the directory, the user will be unable to re-request the access package or request another access in this directory. Do not configure blocking them from signing in if they will later need to request access to other access packages.
 
 6. Once an external user loses their last assignment to any access packages, if you want to remove their guest user account in this directory, set **Remove external** user to **Yes**.
 

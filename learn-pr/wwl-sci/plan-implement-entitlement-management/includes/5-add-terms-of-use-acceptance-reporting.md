@@ -1,4 +1,3 @@
-- 20 minutes
 
 ## Add terms of use
 
@@ -25,7 +24,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 7. Select the **Terms of use document box**, browse to your finalized terms of use PDF and select it.
 
- For this exercise you can choose any PDF you may have or, using Microsoft Word, create a simple terms of use doc and then print to PDF.
+ For this exercise you can choose any PDF you may have or, using Microsoft Word, create a terms of use doc and then print to PDF.
 
 8. Select the language for your terms of use document.
 
@@ -35,10 +34,10 @@ Once you have finalized your terms of use document, use the following procedure 
 
 10. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **On**. Users may be required to install additional applications if this option is enabled.
 
->1. Warning
->1. Consent on every device will require users to register each device with Azure AD prior to getting access.
+> [!WARNING]
+> Consent on every device will require users to register each device with Azure AD prior to getting access.
 
-11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two additional schedule settings are displayed.
+11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.
 
 > [!div class="mx-imgBorder"]
 > ![Expire consents settings to set start date, frequency, and duration](../media/lp4-mod1-new-terms-of-use-create.png)
@@ -57,7 +56,7 @@ Once you have finalized your terms of use document, use the following procedure 
 | Alice | Jan 1             | Feb 1             | Mar 1              | Apr 1             |
 | Bob   | Jan 15            | Feb 1             | Mar 1              | Apr 1             |
 
-13. Use the **Duration before re-acceptance requires (days)** setting to specify the number of days before the user must reaccept the terms of use. This allows users to follow their own schedule. For example, if you set the duration to **30** days, here is how expirations might occur for two users:
+13. Use the **Duration before re-acceptance requires (days)** setting to specify the number of days before the user must reaccept the terms of use. This setting allows users to follow their own schedule. For example, if you set the duration to **30** days, here is how expirations might occur for two users:
 
 | User  | First accept date | First expire date | Second expire date | Third expire date |
 | ----- | ----------------- | ----------------- | ------------------ | ----------------- |
@@ -72,7 +71,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 | Template                                   | Description                                                                                        |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| **Custom policy**                          | Select the users, groups, and apps that this terms of use will be applied to.                      |
+| **Custom policy**                          | Select the users, groups, and apps that the terms of use will be applied to.                      |
 | **Create Conditional Access policy later** | This terms of use will appear in the grant control list when creating a Conditional Access policy. |
 
 > [!IMPORTANT]
@@ -188,7 +187,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
 5. On the top menu, select **Edit terms**.
 
-6. In the Edit terms of use pane, you can change the following:
+6. In the Edit terms of use pane, you can change the following settings:
 
   - **Name** – this is the internal name of the ToU that is not shared with end users
 
