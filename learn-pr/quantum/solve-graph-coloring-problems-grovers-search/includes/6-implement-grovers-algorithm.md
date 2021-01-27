@@ -33,7 +33,9 @@ Instead, the operation takes a qubit array as one of the inputs, and the code th
 ## Let's solve the graph coloring problem!
 
 
-Now you are ready to put together everything you've learned so far and solve the problem of making a list of the minimum number of differents supplies our spaceship needs to carry between space stations. The number of supplies will vary according to the number of stations and how close they are between them. Recall that this problem is an instance of the graph coloring problem, here color stands for a type of supply. It can be fuel, food, water, construction materials, clothing, etc. We strongly recommend that you start solving a smaller version of the problem and consider only 5 space stations connected as in the graph of unit 2. 
+Now you are ready to put together everything you've learned so far and calculate the minimum number of differents bandwitdths we need to assign to space stations. 
+
+The number of bandwitdths will vary according to the number of stations and how close they are between them. Recall that this problem is an instance of the graph coloring problem, here color stands for a specific bandwitdth. We strongly recommend that you start solving a smaller version of the problem and consider only 5 space stations connected as in the graph of unit 2. 
 
 Here is the full code.
 
@@ -71,7 +73,7 @@ Vertex 2 - color 1
 Vertex 3 - color 3
 Vertex 4 - color 2
 ```
-For 5 space stations with these characteristics, we need to carry at least 4 different types of supplies.
+For 5 space stations with these characteristics, we need to assign 4 different bandwitdths based on these results.
 
 ## Watching the amplitudes
 
