@@ -4,7 +4,7 @@ As a Contoso Windows server administrator, you need to assess what runtime scena
 
 The following graphic illustrates two on-premises environments, a primary site and an identical replica site, both with VMM private cloud environments with Hyper-V host servers running six VMs. The private clouds contain a VMM management server with the Azure Site Recovery Provider installed, and have a connection to Azure Site Recovery over HTTPS and port 443 which orchestrates the replication and failover. Replication traffic goes directly between the two on-premises environments sites over HTTPS port 8083 for Kerberos traffic and 8084 for certificate traffic. Azure Site Recovery orchestrates the replication and failover between the two sites but not VM data replicates to Azure.
 
-:::image type="content" source="../media/m27-hyper-v-to-hyper-v-architecture.png" alt-text="Replication of virtual machines from an on-premises primary site to an on-premises replica site with VMM, the replication process being orchestrated by Azure Site Recovery." border="false":::
+[![Replication of virtual machines from an on-premises primary site to an on-premises replica site with VMM, the replication process being orchestrated by Azure Site Recovery.](../media/m27-hyper-v-to-hyper-v-architecture.png)](../media/m27-hyper-v-to-hyper-v-architecture.png#lightbox)
 
 > [!IMPORTANT]
 > Data never replicates to Site Recovery during the replication between two on-premises locations. Site Recovery only monitors replication between sites and controls failover; data does **not** transfer to, or through, Azure.

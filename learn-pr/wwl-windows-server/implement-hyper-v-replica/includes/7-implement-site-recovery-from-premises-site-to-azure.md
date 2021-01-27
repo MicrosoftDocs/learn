@@ -28,7 +28,7 @@ Each usage scenario has its own use requirements. Two possible scenarios for imp
 
 The following graphic illustrates the replication of virtual machines from an on-premises site to Azure Site Recovery service in the cloud. The on-premises site has a Hyper-V server host with the Site Recovery Provider and Microsoft Azure Recovery Services Agent installed. There is replication traffic over HTTPS port 443 to Site Recovery, which in turn has Azure Storage present for storing replicated VMs.
 
-:::image type="content" source="../media/m27-site-recovery-hyper-v-to-azure.png" alt-text="An on-premises Hyper-V server host environment replicating VMs to the Azure Site Recovery service." border="false":::
+[![An on-premises Hyper-V server host environment replicating VMs to the Azure Site Recovery service.](../media/m27-site-recovery-hyper-v-to-azure.png)](../media/m27-site-recovery-hyper-v-to-azure.png#lightbox)
 
 #### Task 1: Complete Deployment planning
 
