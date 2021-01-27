@@ -3,25 +3,25 @@
 
 1. Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
 
-1. In the left navigation, under **Manage**, select **Groups**.
+2. In the left navigation, under **Manage**, select **Groups**.
 
-1. Select one of the available groups. For example, Marketing.
+3. Select one of the available groups. For example, Marketing.
 
-1. In the left navigation, under **Manage**, select **Licenses**.
+4. In the left navigation, under **Manage**, select **Licenses**.
 
-1. Review the current assignments and then, on the menu, select **+ Assignments**.
+5. Review the current assignments and then, on the menu, select **+ Assignments**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted.](../media/lp1-mod2-change-group-license.png)
+    > ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted.](../media/change-group-license.png)
 
     > [!NOTE]
     > If you have no licenses to add, you may choose to sign up for an Office 365 or Microsoft 365 trial subscription.
 
-1. On the Update license assignments blade, select another license, clear the selection of an existing license, add or remove license options, or any combination.
+6. On the Update license assignments blade, select another license, clear the selection of an existing license, add or remove license options, or any combination.
 
-1. When complete, select **Save**.
+7. When complete, select **Save**.
 
-1. On the group’s Licenses page, review the change.
+8. On the group’s Licenses page, review the change.
 
 ## Identify and resolve license assignment problems for a group in Azure Active Directory
 
@@ -40,36 +40,36 @@ When you're using group-based licensing the same errors can occur, but they happ
     > [!div class="mx-imgBorder"]
     > ![Group and error notifications message.](../media/group-error-notification.png)
 
-1. Select the notification to open a list of all affected users. You can select each user individually to see more details.
+2. Select the notification to open a list of all affected users. You can select each user individually to see more details.
 
     > [!div class="mx-imgBorder"]
     > ![list of users in group licensing error state.](../media/list-of-users-with-errors.png)
 
-1. To find all groups that contain at least one error, on the **Azure Active Directory** blade select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
+3. To find all groups that contain at least one error, on the **Azure Active Directory** blade select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
 
     > [!div class="mx-imgBorder"]
     > ![Overview and information about groups in error state.](../media/group-errors-widget.png)
 
-1. Select the box to see a list of all groups with errors. You can select each group for more details.
+4. Select the box to see a list of all groups with errors. You can select each group for more details.
 
-> [!div class="mx-imgBorder"]
-> ![Overview and list of groups with errors.](../media/list-of-groups-with-errors.png)
+    > [!div class="mx-imgBorder"]
+    > ![Overview and list of groups with errors.](../media/list-of-groups-with-errors.png)
 
 The following sections give descriptions of each potential problem and the way to resolve it.
 
 ## Not enough licenses
 
-**Problem:** There aren't enough available licenses for one of the products that's specified in the group. You need to either purchase more licenses for the product or free up unused licenses from other users or groups.
+**Problem**: There aren't enough available licenses for one of the products that's specified in the group. You need to either purchase more licenses for the product or free up unused licenses from other users or groups.
 
 To see how many licenses are available, go to **Azure Active Directory** > **Licenses** > **All products**.
 
 To see which users and groups are consuming licenses, select a product. Under **Licensed users**, you see a list of all users who have had licenses assigned directly or via one or more groups. Under **Licensed groups**, you see all groups that have that products assigned.
 
-**PowerShell:** PowerShell cmdlets report this error as *CountViolation*.
+**PowerShell**: PowerShell cmdlets report this error as *CountViolation*.
 
-## Conflicting service plans
+## Service plans that conflict
 
-**Problem:** One of the products that's specified in the group contains a service plan that conflicts with another service plan that's already assigned to the user via a different product. Some service plans are configured in a way that they can't be assigned to the same user as another, related service plan.
+**Problem**: One of the products that's specified in the group contains a service plan that conflicts with another service plan that's already assigned to the user via a different product. Some service plans are configured in a way that they can't be assigned to the same user as another, related service plan.
 
 Consider the following example. A user has a license for Office 365 Enterprise *E1* assigned directly, with all the plans enabled. The user has been added to a group that has the Office 365 Enterprise *E3* product assigned to it. The E3 product contains service plans that can't overlap with the plans that are included in E1, so the group license assignment fails with the “Conflicting service plans” error. In this example, the conflicting service plans are:
 
@@ -81,25 +81,25 @@ To solve this conflict, you need to disable two of the plans. You can disable th
 
 The decision about how to resolve conflicting product licenses always belongs to the administrator. Azure AD doesn't automatically resolve license conflicts.
 
-**PowerShell:** PowerShell cmdlets report this error as *MutuallyExclusiveViolation*.
+**PowerShell**: PowerShell cmdlets report this error as *MutuallyExclusiveViolation*.
 
 ## Other products depend on this license
 
-**Problem:** One of the products that's specified in the group contains a service plan that must be enabled for another service plan, in another product, to function. This error occurs when Azure AD attempts to remove the underlying service plan. For example, this can happen when you remove the user from the group.
+**Problem**: One of the products that's specified in the group contains a service plan that must be enabled for another service plan, in another product, to function. This error occurs when Azure AD attempts to remove the underlying service plan. For example, this can happen when you remove the user from the group.
 
 To solve this problem, you need to make sure that the required plan is still assigned to users through some other method or that the dependent services are disabled for those users. After doing that, you can properly remove the group license from those users.
 
-**PowerShell:** PowerShell cmdlets report this error as *DependencyViolation*.
+**PowerShell**: PowerShell cmdlets report this error as *DependencyViolation*.
 
 ## Usage location isn't allowed
 
-**Problem:** Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign a license to a user, you must specify the **Usage location** property for the user. You can specify the location under the **User** > **Profile** > **Edit** section in the Azure portal.
+**Problem**: Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign a license to a user, you must specify the **Usage location** property for the user. You can specify the location under the **User** > **Profile** > **Edit** section in the Azure portal.
 
 When Azure AD attempts to assign a group license to a user whose usage location isn't supported, it fails and records an error on the user.
 
 To solve this problem, remove users from unsupported locations from the licensed group. Alternatively, if the current usage location values don't represent the actual user location, you can modify them so that the licenses are correctly assigned next time (if the new location is supported).
 
-**PowerShell:** PowerShell cmdlets report this error as *ProhibitedInUsageLocationViolation*.
+**PowerShell**: PowerShell cmdlets report this error as *ProhibitedInUsageLocationViolation*.
 
 > [!NOTE]
 > When Azure AD assigns group licenses, any users without a specified usage location inherit the location of the directory. We recommend that administrators set the correct usage location values on users before using group-based licensing to comply with local laws and regulations.
@@ -108,22 +108,17 @@ To solve this problem, remove users from unsupported locations from the licensed
 
 If you use Exchange Online, some users in your organization might be incorrectly configured with the same proxy address value. When group-based licensing tries to assign a license to such a user, it fails and shows “Proxy address is already being used.”
 
-> [!TIP]
-> To see if there is a duplicate proxy address, execute the following PowerShell cmdlet against Exchange Online:
-
-`Get-Recipient -ResultSize unlimited | where {$_.EmailAddresses -match "user@contoso.onmicrosoft.com"} | fL Name, RecipientType,`emailaddresses
-
 After you resolve any proxy address problems for the affected users, make sure to force license processing on the group to ensure that the licenses can now be applied.
 
 ## Azure AD Mail and ProxyAddresses attribute change
 
-**Problem:** While updating license assignment on a user or a group, you might see that the Azure AD Mail and ProxyAddresses attribute of some users are changed.
+**Problem**: While updating license assignment on a user or a group, you might see that the Azure AD Mail and ProxyAddresses attribute of some users are changed.
 
 Updating license assignment on a user causes the proxy address calculation to be triggered, which can change user attributes.
 
 ## LicenseAssignmentAttributeConcurrencyException in audit logs
 
-**Problem:** User has LicenseAssignmentAttributeConcurrencyException for license assignment in audit logs. When group-based licensing tries to process concurrent license assignment of same license to a user, this exception is recorded on the user. This typically happens when a user is a member of more than one group with same assigned license. Azure AD will retry processing the user license and will resolve the issue. There is no action required from the customer to fix this issue.
+**Problem**: User has LicenseAssignmentAttributeConcurrencyException for license assignment in audit logs. When group-based licensing tries to process concurrent license assignment of same license to a user, this exception is recorded on the user. This typically happens when a user is a member of more than one group with same assigned license. Azure AD will retry processing the user license and will resolve the issue. There is no action required from the customer to fix this issue.
 
 ## More than one product license assigned to a group
 
@@ -150,7 +145,7 @@ Microsoft Workplace Analytics is an add-on product. It contains a single service
 
 If we try to assign this product on its own to a group, the portal returns a notification message. If we select the item details, it shows the following error message:
 
-"License operation failed. Make sure that the group has necessary services before adding or removing a dependent service. **The service Microsoft Workplace Analytics requires Exchange Online (Plan 2) to be enabled as well.**"
+"License operation failed. Make sure that the group has necessary services before adding or removing a dependent service. **The service Microsoft Workplace Analytics requires Exchange Online (Plan 2) to be enabled as well**."
 
 To assign this add-on license to a group, we must ensure that the group also contains the prerequisite service plan. For example, we might update an existing group that already contains the full Office 365 E3 product, and then add the add-on product to it.
 
@@ -164,33 +159,33 @@ From now on, any users added to this group consume one license of the E3 product
 > [!TIP]
 > You can create multiple groups for each prerequisite service plan. For example, if you use both Office 365 Enterprise E1 and Office 365 Enterprise E3 for your users, you can create two groups to license Microsoft Workplace Analytics: one that uses E1 as a prerequisite and the other that uses E3. This lets you distribute the add-on to E1 and E3 users without consuming additional licenses.
 
-## Force group license processing to resolve errors
+## Force the group license process to resolve errors
 
 Depending on what steps you've taken to resolve the errors, it might be necessary to manually trigger the processing of a group to update the user state.
 
 For example, if you free up some licenses by removing direct license assignments from users, you need to trigger the processing of groups that previously failed to fully license all user members. To reprocess a group, go to the group pane, open **Licenses**, and then select the **Reprocess** button on the toolbar.
 
-## Force user license processing to resolve errors
+## Force the user license process to resolve errors
 
 Depending on what steps you've taken to resolve the errors, it might be necessary to manually trigger the processing of a user to update the users state.
 
 For example, after you resolve duplicate proxy address problem for an affected user, you need to trigger the processing of the user. To reprocess a user, go to the user pane, open **Licenses**, and then select the **Reprocess** button on the toolbar.
 
-## How to migrate users with individual licenses to groups for licensing
+## How to migrate users with individual licenses to group licenses
 
 You may have existing licenses deployed to users in the organizations via direct assignment; that is, using PowerShell scripts or other tools to assign individual user licenses. Before you begin using group-based licensing to manage licenses in your organization, you can use this migration plan to seamlessly replace existing solutions with group-based licensing.
 
-The most important thing to keep in mind is that you should avoid a situation in which migrating to group-based licensing will result in users temporarily losing their currently assigned licenses. Any process that may result in removal of licenses should be avoided to remove the risk of users losing access to services and their data.
+Keep in mind that you should avoid a situation in which migrating to group-based licensing will result in users temporarily losing their currently assigned licenses. Any process that may result in removal of licenses should be avoided to remove the risk of users losing access to services and their data.
 
 ### Recommended migration process
 
 1. You have existing automation (for example, PowerShell) managing license assignment and removal for users. Leave it running as is.
 
-1. Create a new licensing group (or decide which existing groups to use) and make sure that all required users are added as members.
+2. Create a new licensing group (or decide which existing groups to use) and make sure that all required users are added as members.
 
-1. Assign the required licenses to those groups; your goal should be to reflect the same licensing state your existing automation (for example, PowerShell) is applying to those users.
+3. Assign the required licenses to those groups; your goal should be to reflect the same licensing state your existing automation (for example, PowerShell) is applying to those users.
 
-1. Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.
+4. Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.
 
     - You can spot check individual users by looking at their license details. You will see that they have the same licenses assigned “directly” and “inherited” from groups.
 
@@ -198,7 +193,7 @@ The most important thing to keep in mind is that you should avoid a situation in
 
     - When the same product license is assigned to the user both directly and through a group, only one license is consumed by the user. Hence no additional licenses are required to perform migration.
 
-1. Verify that no license assignments failed by checking each group for users in error state.
+5. Verify that no license assignments failed by checking each group for users in error state.
 
 Consider removing the original direct assignments. We recommend that you do it gradually, and monitor the outcome on a subset of users first. If you could leave the original direct assignments on users, but when the users leave their licensed groups they retain the directly assigned licenses, which might not be what you want.
 
@@ -210,33 +205,32 @@ Here is what the migration process could look like:
 
 1. Using the Azure portal, assign the Office 365 E3 license to the **All users** group in Azure AD.
 
-1. Confirm that license assignment has completed for all users. Go to the overview page for the group, select **Licenses**, and check the processing status at the top of the **Licenses** blade.
+2. Confirm that license assignment has completed for all users. Go to the overview page for the group, select **Licenses**, and check the processing status at the top of the **Licenses** blade.
 
     - Look for “Latest license changes have been applied to all users" to confirm processing has completed.
-
     - Look for a notification on top about any users for whom licenses may have not been successfully assigned. Did we run out of licenses for some users? Do some users have conflicting license plans that prevent them from inheriting group licenses?
 
-1. Spot check some users to verify that they have both the direct and group licenses applied. Go to the profile page for a user, select Licenses, and examine the state of licenses.
+3. Spot check some users to verify that they have both the direct and group licenses applied. Go to the profile page for a user, select Licenses, and examine the state of licenses.
 
-  - This is the expected user state during migration:
+    - This is the expected user state during migration:
 
-> [!div class="mx-imgBorder"]
-> ![The expected user state during migration.](../media/expected-user-state.png)
+    > [!div class="mx-imgBorder"]
+    > ![The expected user state during migration.](../media/expected-user-state.png)
 
 This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
 
-  - Select each license to see which services are enabled. To verify that the direct and group licenses enable exactly the same services for the user, select Assignments.
+    - Select each license to see which services are enabled. To verify that the direct and group licenses enable exactly the same services for the user, select Assignments.
 
-1. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
+4. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
 
-> [!div class="mx-imgBorder"]
-> ![Confirm that direct licenses are removed.](../media/direct-licenses-removed.png)
+    > [!div class="mx-imgBorder"]
+    > ![Confirm that direct licenses are removed.](../media/direct-licenses-removed.png)
 
 ## Change license assignments for a user or group in Azure Active Directory
 
 This section describes how to move users and groups between service license plans in Azure Active Directory (Azure AD). The goal Azure AD's approach is to ensure that there's no loss of service or data during the license change. Users should switch between services seamlessly. The license plan assignment steps in this section describe changing a user or group on Office 365 E1 to Office 365 E3, but the steps apply to all license plans. When you update license assignments for a user or group, the license assignment removals and new assignments are made simultaneously so that users do not lose access to their services during license changes or see license conflicts between plans.
 
-Before you update the license assignments, it's important to verify certain assumptions are true for all of the users or groups to be updated. If the assumptions aren't true for all of the users in a group, the migration might fail for some. As a result, some of the users might lose access to services or data. Ensure that:
+Before you update the license assignments, verify certain assumptions are true for all of the users or groups to be updated. If the assumptions aren't true for all of the users in a group, the migration might fail for some. As a result, some of the users might lose access to services or data. Ensure that:
 
 - Users have the current license plan that's assigned to a group and inherited by the user and not assigned directly.
 

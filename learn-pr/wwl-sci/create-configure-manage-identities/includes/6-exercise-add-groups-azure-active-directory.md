@@ -18,7 +18,7 @@
     | Members| Assign a member of this group|
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.](../media/lp1-mod2-create-office-365-group.png)
+    > ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.](../media/create-office-365-group.png)
 
 1. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
 

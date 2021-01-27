@@ -27,7 +27,7 @@
 
 1. Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
 
-1. In the left navigation, under **Manage**, select **Users.**
+1. In the left navigation, under **Manage**, select **Users**.
 
 1. In the Users blade, select **Dominique Koch**.
 
@@ -36,7 +36,7 @@
 1. On the Update license assignments blade, select the check box for a single or multiple licenses.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the Update license assignments page and license options highlighted.](../media/lp1-mod2-assign-user-license-options.png)
+    > ![Screen image displaying the Update license assignments page and license options highlighted.](../media/assign-user-license-options.png)
 
 1. When complete, select **Save**.
 

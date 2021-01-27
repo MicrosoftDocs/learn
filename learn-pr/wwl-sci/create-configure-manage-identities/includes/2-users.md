@@ -2,12 +2,12 @@ Every user who needs access to Azure resources needs an Azure user account. A us
 
 You use the **Azure Active Directory** dashboard in the Azure portal to work with user objects. Keep in mind that you can only work with a single directory at a time - but you can use the **Directory + Subscription** panel to switch directories. The dashboard also has a **Switch directory** button in the toolbar which makes it easy to switch to another available directory.
 
-## Viewing users
+## View users
 
 To view the Azure AD users, select the **Users** entry under the **Manage** group - this will open the **All Users** view. Take a minute to access the portal and view your users. Notice the **USER TYPE** and **SOURCE** columns, as the following figure depicts.
 
 > [!div class="mx-imgBorder"]
-> ![View all users in Azure AD.](../media/m1-azure-active-directory-users.png)
+> ![View all users in Azure AD.](../media/azure-active-directory-users.png)
 
 Typically, Azure AD defines users in three ways:
 

@@ -4,7 +4,7 @@ Until now, licenses could only be assigned at the individual user level, which c
 
 To address those challenges, Azure AD now includes group-based licensing. You can assign one or more product licenses to a group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. This licensing management eliminates the need for automating license management via PowerShell to reflect changes in the organization and departmental structure on a per-user basis.
 
-## Licensing requirements
+## License requirements
 
 You must have one of the following licenses to use group-based licensing:
 
@@ -26,7 +26,7 @@ Here are the main features of group-based licensing:
 
 - All Microsoft cloud services that require user-level licensing are supported. This support includes all Microsoft 365 products, Enterprise Mobility + Security, and Dynamics 365.
 
-- Group-based licensing is currently available only through the [Azure portal](https://portal.azure.com/). If you primarily use other management portals for user and group management, such as the [Microsoft 365 admin center](https://admin.microsoft.com/), you can continue to do so. But you should use the Azure portal to manage licenses at group level.
+- Group-based licensing is currently available only through the [Azure portal](https://portal.azure.com/).
 
 - Azure AD automatically manages license modifications that result from group membership changes. Typically, license modifications are effective within minutes of a membership change.
 

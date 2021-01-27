@@ -40,7 +40,7 @@ You can skip creating this user if you have already created the same user in the
     | Members| Chris Green|
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.](../media/lp1-mod2-create-group.png)
+    > ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.](../media/create-group.png)
 
 1. When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
@@ -60,11 +60,11 @@ You can skip creating this user if you have already created the same user in the
     > When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](../media/lp1-mod2-assign-license-group.png)
+    > ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](../media/assign-license-group.png)
 
 1. Select **Save**.
 
-## Restore or remove a recently deleted user using Azure Active Directory
+## Restore or remove a recently deleted user with Azure Active Directory
 
 After you delete a user, the account remains in a suspended state for 30 days. During that 30-day window, the user account can be restored, along with all its properties. After that 30-day window passes, the permanent deletion process is automatically started.
 

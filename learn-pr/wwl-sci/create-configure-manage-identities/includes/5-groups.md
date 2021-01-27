@@ -6,10 +6,10 @@ Azure AD allows you to define two different types of groups.
 
 - **Microsoft 365 groups**. These groups provide collaboration opportunities by giving members access to a shared mailbox, calendar, files, SharePoint site, and more. This option also lets you give people outside of your organization access to the group. This option is available to users as well as admins.
 
-## Viewing available groups
+## View available groups
 
 You can view all groups through the **Groups** item under the **Manage** group from the Azure AD dashboard. A new Azure AD install won't have any groups defined.
 
 > [!div class="mx-imgBorder"]
-> ![View all groups in Azure AD](../media/m1-groups1.png)
+> ![View all groups in Azure AD](../media/groups1.png)
 
