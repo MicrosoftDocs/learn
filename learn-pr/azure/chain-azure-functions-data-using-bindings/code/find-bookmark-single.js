@@ -1,7 +1,7 @@
 module.exports = function (context, req) {
-    
+
     var bookmark = context.bindings.bookmark
-    
+
     if(bookmark){
             context.res = {
             body: { "url": bookmark.url },
@@ -10,8 +10,8 @@ module.exports = function (context, req) {
             }
         };
     }
-    else {
-        
+    else { 
+
         context.res = {
             status: 404,
             body : "No bookmarks found",
