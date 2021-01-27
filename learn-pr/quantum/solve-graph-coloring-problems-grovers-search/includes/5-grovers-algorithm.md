@@ -3,7 +3,7 @@ In the previous units, you learned about the search problem and to implement its
 
 Preliminaries are over! Prepare yourself for your first real mission! In this unit, you will implement Grover's search algorithm. It is not necessary to dive deep into the gate-level implementation details but you will focus the discussion on the high-level logic instead.
 
-For a strategic delivery, you have to make sure that two connected stations don't receive the same type of supply. You have to make a list of the minimum number of differents supplies we deliver to space stations according to this requirement. 
+For effectiveness, you have to make sure that two connected stations don't use the same bandwidth. You have to calculate the minimum number of different bandwidths we assign to space stations according to this requirement. 
 
 ## Algorithm outline
 
@@ -122,4 +122,4 @@ In practical applications, you don't usually know how many solutions your proble
 To handle this issue, you can pick a small number, run the algorithm with that many iterations, and if it doesn't yield an answer, retry with a different, larger number of iterations. 
 An efficient strategy of gradually increasing the iteration number will still find the solution with an average number of iterations around $\sqrt{\frac{N}{M}}$.
 
-In the next unit, you will implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the inventory of supplies needed at space fleet stations!
+In the next unit, you will implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the interstellar communication problem!
