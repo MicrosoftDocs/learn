@@ -8,7 +8,7 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+title: How Personalizer works
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-personalizer-works.md)]
