@@ -6,8 +6,8 @@ Optimization problems are very important for reducing costs, accelerating proces
 
 In this module, you learned how to create a quantum workspace to create and run your jobs on the Azure Quantum service. In the next modules, you will learn to submit and manage quantum computing and optimization jobs:
 
-- If you want to learn how to submit quantum computing jobs to quantum hardware, check out [Run algorithms on quantum hardware by using Azure Quantum](todo).
-- If you want to learn how to solve optimization problems using Azure Quantum solvers, check out [QIO module](todo).
+- If you want to learn how to submit quantum computing jobs to quantum hardware, check out [Run algorithms on quantum hardware by using Azure Quantum](https://docs.microsoft.com/learn/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true).
+- If you want to learn how to solve optimization problems using Azure Quantum solvers, check out [Quantum Inspired Optimization module](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true).
 
 ## Learn more
 
@@ -15,6 +15,6 @@ In this module, you learned how to create a quantum workspace to create and run 
 * [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/?azure-portal=true)
 * [Align requirements with cloud types and service models in Azure](https://docs.microsoft.com/learn/modules/align-requirements-in-azure/?azure-portal=true)
 
-If you're interested in learning more about Azure Quantum, you can visit the official [website](https://azure.microsoft.com/en-us/services/quantum/).
+If you're interested in learning more about Azure Quantum, you can visit the official [website](https://azure.microsoft.com/en-us/services/quantum/?azure-portal=true).
 
-If you want to learn more about quantum research and quantum computing applications visit the [Microsoft Quantum Blog](https://cloudblogs.microsoft.com/quantum/).
+If you want to learn more about quantum research and quantum computing applications visit the [Microsoft Quantum Blog](https://cloudblogs.microsoft.com/quantum/?azure-portal=true).
