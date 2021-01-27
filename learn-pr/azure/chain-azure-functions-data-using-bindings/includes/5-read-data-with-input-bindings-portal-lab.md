@@ -221,19 +221,19 @@ Now that you have your binding defined, it's time to use it in your function.
 1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
 
      ```java
- module.exports = function (context, req) {
+ 	module.exports = function (context, req) {
     
-    var bookmark = context.bindings.bookmark
+    	var bookmark = context.bindings.bookmark
     
-    if(bookmark){
+    	if(bookmark){
             context.res = {
             body: { "url": bookmark.url },
             headers: {
             'Content-Type': 'application/json'
-            }
-        };
-    }
-    else {
+            	}
+        	};
+    	}
+    	else {
         
         context.res = {
             status: 404,
@@ -242,10 +242,10 @@ Now that you have your binding defined, it's time to use it in your function.
             'Content-Type': 'application/json'
             }
         };
-    }
+    	}
 
-    context.done();
-};
+    	context.done();
+	};
     ```
 
 ::: zone-end
