@@ -59,7 +59,7 @@ Get-AzSqlDatabase `
     | Get-AzSqlDatabaseLongTermRetentionPolicy
 ```
 
-To configure the policy, use the `Set-AzSqlDatabaseBackupLongTermRetentionPolicy` cmdlet. When you specify these policies in PowerShell, you must use ISO 8601 duration values. For example, to specify the `W=10` policy, pass the string `P10W` to the `-WeeklyRetention` parameter. To specify the `Y=3` policy, pass the string `P3Y` to the `--YearlyRetention` parameter.
+To configure the policy, use the `Set-AzSqlDatabaseBackupLongTermRetentionPolicy` cmdlet. When you specify these policies in PowerShell, you must use ISO 8601 duration values. For example, to specify the `W=10` policy, pass the string `P10W` to the `-WeeklyRetention` parameter. To specify the `Y=3` policy, pass the string `P3Y` to the `-YearlyRetention` parameter.
 
 ``` powershell
 Set-AzSqlDatabaseBackupLongTermRetentionPolicy `
