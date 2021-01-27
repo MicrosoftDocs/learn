@@ -30,7 +30,7 @@ Maps can be rendered in a number of different styles. These styles include:
 
     ![A high contrast map of Seattle](../media/high-contrast-dark.png)
 
-More styles are described in the [Azure Maps supported maps styles documentation](https://docs.microsoft.com/azure/azure-maps/supported-map-styles)
+More styles are described in the [Azure Maps supported maps styles documentation](https://docs.microsoft.com/azure/azure-maps/supported-map-styles?azure-portal=true)
 
 ## Navigate around the map
 
@@ -42,7 +42,7 @@ Navigation can also be done in code, such as setting the view to a specific loca
 
 Maps can be augmented with layers, visualizing data on top of the map. In a later unit in this module, you'll use a layer on a map to visualize air quality data.
 
-There are a number of different layer types available, and these layers all render data sources that contain either GeoJSON data or [MapBox vector tiles](https://github.com/mapbox/vector-tile-spec). GeoJSON will be covered in a later unit in this module
+There are a number of different layer types available, and these layers all render data sources that contain either GeoJSON data or [MapBox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). GeoJSON will be covered in a later unit in this module
 
 The different layer types include:
 

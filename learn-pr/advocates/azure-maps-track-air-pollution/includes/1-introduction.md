@@ -11,7 +11,7 @@ The Air Quality index looks at a few different pollutants:
 - Nitrogen dioxide
 
 > [!TIP]
-> You can read more about the Air Quality index on the [AirNow AQI Basics page](https://www.airnow.gov/aqi/aqi-basics/).
+> You can read more about the Air Quality index on the [AirNow AQI Basics page](https://www.airnow.gov/aqi/aqi-basics/?azure-portal=true).
 
 In this module, you'll get air pollution data using a free API, and plot this data on an interactive map on a webpage using Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing. Azure Maps also has a web SDK to visualize a map on a webpage.
 
@@ -38,4 +38,4 @@ In this module you'll:
 - Python extension for Visual Studio Code installed
 
 > [!TIP]
-> If you want to learn how to set up and configure Visual Studio Code for Python development, work through this Microsoft Learn module: [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/languages/python-install-vscode/)
+> If you want to learn how to set up and configure Visual Studio Code for Python development, work through this Microsoft Learn module: [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/languages/python-install-vscode/?azure-portal=true)

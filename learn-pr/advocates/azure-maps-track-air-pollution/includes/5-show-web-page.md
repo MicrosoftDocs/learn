@@ -2,6 +2,12 @@ In this unit, you'll use Flask to create a Python app that shows the Azure Maps 
 
 ## Build the app
 
+To build the app, first, we'll create project folders, configure the Python environment, and install the Pip packages we need.
+
+Then, we'll create an environment file and create the application Python file.
+
+Finally, we'll create a home.html file to show results.
+
 ### Create the folders for the Python app
 
 1. Create a folder on your computer to store the code.
@@ -16,15 +22,15 @@ In this unit, you'll use Flask to create a Python app that shows the Azure Maps 
 
 1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**.
 
-1. Create a Python virtual environment.
+1. In the terminal, enter the following command to create a Python virtual environment.
 
-    In Windows, use the following command:
+    On Windows:
 
     ```python
     python -m venv .venv
     ```
 
-    In Linux or macOS, use the following command:
+    On Linux or macOS:
 
     ```python
     python3 -m venv .venv
@@ -35,19 +41,19 @@ In this unit, you'll use Flask to create a Python app that shows the Azure Maps 
     ![The activate virtual env dialog](../media/activate-venv-dialog.png)
 
     > [!NOTE]
-    > If the dialog does not pop up asking to select the virtual environment, you can do it manually by selecting the Python interpreter version from the Visual Studio Code status bar, and selecting the Python version that is in the `./.venv/bin/python` folder.
+    > If you don’t see a popup dialog to select the virtual environment, you can manually select the Python interpreter version. In the Visual Studio Code status bar at the bottom, at the far left, select the Python version. The Python interpreter selection drop-down opens at the top of the window. In the drop-down, select the Python version that is in the *./.venv/bin/python* folder.
 
-1. Kill the current terminal by selecting the trash can button.
+1. Stop the virtual environment and close the terminal by selecting the trash can icon.
 
     ![The kill terminal button](../media/kill-terminal.png)
 
-1. Relaunch the terminal by selecting **Terminal > New terminal**, to ensure that your terminal is using the virtual environment.
+1. Relaunch the terminal by selecting **Terminal** > **New terminal**, to ensure that your terminal is using the virtual environment. When the terminal is running in a Python virtual environment, notice that the prompt shows "(.venv)" as a prefix.
 
 ### Install the necessary Pip packages
 
-1. Add a file called `requirements.txt` to the root folder, and add the following to this file:
+1. In Visual Studio code, create a new text file named *requirements.txt* at the root of your app code folder. Copy the following statements into the text file:
 
-    ```sh
+    ```console
     flask
     python-dotenv
     requests
@@ -59,29 +65,32 @@ In this unit, you'll use Flask to create a Python app that shows the Azure Maps 
     * `python-dotenv` - this package allows environment variables such as the maps key to be loaded from environment files
     * `requests` - this package makes it easy to make web requests, and will be used later to query air quality data
 
-1. Save the file
+1. Save the file.
 
     > [!TIP]
-    > If you don't want to have to remember to save files after every change, you can turn on Auto Save by selecting **File > Auto Save**
+    > If you to automatically save files after each change, select **File** > **Auto Save**.
 
-1. Install the Pip packages from the terminal using the following command:
+1. In the terminal, enter the following command to install the Pip packages:
 
-    ```sh
+    ```console
     pip install -r requirements.txt
     ```
 
+   > [!Note]
+   > You can disregard any warning messages about the pip version.
+
 ### Create an environment file
 
-The Flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control. Environment variables can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
+The Flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control. Environment variables can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file named **.env** at the root of your app code folder and load environment variables from this file.
 
 > [!TIP]
 > If you deploy this app to Azure using Azure App Services, the values in the `.env` file will need to be added to the Application Settings so that they are automatically set as environment variables that the app can use.
 
-1. Create a file in the root of the folder called `.env`
+1. Create a new environment file at the root of your app code folder named **.env.**
 
-1. Add the following to this file:
+1. Copy the following statement into the environment file:
 
-    ```sh
+    ```console
     MAP_KEY=<your map key>
     ```
 
@@ -91,9 +100,9 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
 
 ### Create the application Python file
 
-1. Open the  `app.py` file
+1. In Visual Studio Code, open the app.py file in your app code folder.
 
-1. Add the following code to this file
+1. Copy the following code into the application file:
 
     ```python
     import os, json
@@ -115,15 +124,15 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
         return render_template("home.html", data = data)
     ```
 
-    This code will handle requests to '/', so the root of the web site. When this page is loaded, the app will use the key from the `.env` file to create some data, which is used to render the `home.html` file as a parameter called `data`.
+    This code handles requests to '/', which is the root of the web site. When this web page is loaded, the app uses the key from your .env file to create some data. The data is used to render the home.html file as a parameter named `data`.
 
-1. Save the file
+1. Save the file.
 
 ### Create the home.html file
 
-1. Create a new file in the `templates` folder called `home.html`
+1. In Visual Studio Code, in the templates folder, create a new HTML file named **home.html**.
 
-1. Add the following to this file:
+1. Copy the following code into the HTML file:
 
     ```html
     <!doctype html>
@@ -187,13 +196,13 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     This webpage will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise it will use the location of the Microsoft campus in Redmond, Washington, USA.
 
     > [!NOTE]
-    > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
+    > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°.
 
-    The map control is then loaded into the div. The maps key is set to `{{ data.map_key }}`, and this notation is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
+    The map control is then loaded into the div. The Maps key is set to `{{ data.map_key }}`, and this notation is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
 
-    Once the control is ready, a **camera** is set up over the users' location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid).
+    When the control is ready, a camera is set up over the user's location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid?azure-portal=true).
 
-1. Save the file
+1. Save the file.
 
 ## Run the app
 
@@ -203,25 +212,23 @@ To configure debugging for your app:
 
 1. Ensure the `app.py` file is open in the editor. The debug options you can configure vary depending on what the active file is.
 
-1. Select the **Run** tab from the activity bar, or select **View > Run**
+1. Select the **Run** tab from the activity bar, or select **View** > **Run**.
 
-   ![The Run activity button](../media/run-activity.png)
-
-1. Select the **create a launch.json file** link
-
-   ![The Run and Debug button](../media/create-launch-json.png)
+1. Select **create a launch.json file**.
 
 1. A dropdown will appear to select the debug configuration. Select ***Flask** Launch and debug a Flask web application*.
 
-    ![The debug configuration dropdown](../media/select-debug-configuration.png)
+   > [!Note]
+   > If you don’t see a new file named **launch.json** inside a folder named **.vscode** in your app code folder, you can manually create the configuration file.
+   > Select the gear icon to the right of the **Run** drop-down box.
+   > A new launch.json file should open. The file should be placed in the .vscode folder. The text in the **Run** drop-down box should change to "Python:Flask."
 
-A new file will be created called `launch.json` inside a folder called `.vscode`. This folder contains configuration settings for Visual Studio Code to use for your app. This file will be opened in the editor, but you can just close it.
 
-To run your app, select the green run triangle from the **Run** activity pane.
+1. After the text in the **Run** drop-down box changes to "Python:Flask," select the green triangle icon to run the application.
 
 ![The run button](../media/run-flask-app.png)
 
-The app will start, and in the output you'll see the local URL it's running on.
+The app will start. Code output shows the local URL it's running on.
 
 ```output
  * Serving Flask app "app.py"
@@ -230,21 +237,21 @@ The app will start, and in the output you'll see the local URL it's running on.
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Open the URL in your web browser, and you'll see the map. If you give the site permission to get your location it will center on you, otherwise it will center on the Microsoft Campus in Redmond, Washington, USA.
+1. Position your cursor on the IP address link in the terminal output. Enter CTRL+click to open the application in your web browser. If you give the site permission to get your location it will center on you, otherwise it will center on the Microsoft Campus in Redmond, Washington, USA.
 
-![The map running in the Edge web browser](../media/map-in-edge.png)
+   ![The map running in the Edge web browser](../media/map-in-edge.png)
 
-Try navigating around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
+   Try navigating around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
 
-When you're finished, stop the app using the stop button on the debug toolbar in Visual Studio Code.
+   When you're finished, stop the app using the stop button on the debug toolbar in Visual Studio Code.
 
-![The stop button](../media/stop-button.png)
+   ![The stop button](../media/stop-button.png)
 
 ## Troubleshooting
 
 ### Exception has occurred: KeyError
 
-If your app stops as soon as it's run and shows an exception with the message `Exception has occurred: KeyError`, then your Azure Maps key hasn't been added to the `.env` file.
+If your app stops as soon as it's run and shows an exception with the message `Exception has occurred: KeyError`, your Azure Maps key hasn't been added to the `.env` file.
 
 ![Exception has occurred: KeyError](../media/key-error.png)
 
@@ -259,7 +266,7 @@ If you don't see any data on the map, but you do see the Microsoft logo, then yo
 
 ## 500 Internal server error
 
-If the webpage gives a **500 Internal Server Error**, check the logs in the Visual Studio Code terminal. If you see the following:
+If a **500 Internal Server Error** is returned, check the logs in the Visual Studio Code terminal. If you see the following:
 
 ```output
 jinja2.exceptions.TemplateNotFound: home.html

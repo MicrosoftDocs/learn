@@ -33,12 +33,12 @@ az maps account create --name pollution_map --resource-group <rgn>[sandbox resou
 
 Azure Maps accounts are secured by either Azure Active Directory or via a key. Later in this module, you'll use a key to give the web SDK access to the Maps account. The key can be retrieved using the Azure CLI.
 
-1. Run this command to view the keys
+Run this command to view the keys:
 
 ```azurecli
 az maps account keys list --name pollution_map --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
-Copy and save the value of `primaryKey` (without the quotation marks). You'll use this value later in the module.
+Copy and save the value of `primaryKey` without the quotation marks. You'll use this value later in the module.
 
-In this unit, you created an Azure Maps account and got the primary key. Next, let's .
+In this unit, you created an Azure Maps account and got the primary key. Next, let's build the app!
