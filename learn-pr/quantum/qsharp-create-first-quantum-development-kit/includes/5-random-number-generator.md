@@ -1,4 +1,4 @@
-In this part, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number. This phase builds on the random bit generator that you already created. You will need to write some classical code for this phase. 
+In this part, you implement the second part of your quantum random number generator: combining multiple random bits to form a larger number to use as a valid and secure password. This phase builds on the random bit generator that you already created. You will need to write some classical code for this part.
 
 First, let's see how classical code fits in with Q#.
 
@@ -16,20 +16,24 @@ Let's see how we can use Q# features to build a complete random number generator
 
 Before we proceed, let's outline what the logic of a random number generator should be, provided we have a random bit generator:
 
-1. Define `max` as the maximum number we want to generate.
-1. Define the number of random bits that we need to generate.
+1. Define `max` as the maximum number you want to generate.
+1. Define the number of random bits that you need to generate.
     This is done by calculating how many bits, `nBits`, we need to express integers up to `max`.
 1. Generate a random bit string that's `nBits` in length.
 1. If the bit string represents a number greater than `max`, go back to step three.
 1. Otherwise, the process is complete. Return the generated number as an integer.
 
-As an example, let's set `max` to 12.
+As an example, let's set `max` to 12. That is, 12 is the largest number you want to use as a secure password.
 
 You need ${\lfloor ln(12) / ln(2) + 1 \rfloor}$, or four bits to represent a number between zero and 12. (For brevity, we'll skip how to derive this equation.)
 
 Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent to ${13_{\ decimal}}$. Because 13 is greater than 12, you repeat the process.
 
 Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
+
+The QRNG will return number 6 as your password. In practice, you want to set a larger number as maximum since lower numbers are easy to crack. In fact, as a way to increase the difficulty of guessing or cracking your password, you could use ASCII code to convert binary to text and to generate a password with numbers, symbols and mixed-case letters. 
+
+Now you can be sure that your passwords are truly random. Space fleet data and their facilities are protected with the highest security standards.
 
 With our logic in place, you're now ready to build a complete random number generator.
 

@@ -1,4 +1,4 @@
-Now that we understand the classical problem that we're trying to solve, let's see how to convert this problem description into a quantum operation that can be used by Grover's search algorithm and run on a quantum computer.
+Now that you understand the classical problem that you're trying to solve, let's see how to convert this problem description into a quantum operation that can be used by Grover's search algorithm and run on a quantum computer.
 
 
 ## How to do computations on a superposition state?

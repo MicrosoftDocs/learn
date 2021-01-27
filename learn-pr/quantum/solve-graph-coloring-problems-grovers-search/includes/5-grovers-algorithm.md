@@ -1,7 +1,9 @@
-In the previous units, we introduced the search problem and learned to implement its instances as quantum oracles. 
 
-In this unit, we will learn Grover's search algorithm for solving search problems. 
-We won't dive deep into the gate-level implementation details but will focus the discussion on the high-level logic instead.
+In the previous units, you learned about the search problem and to implement its instances as quantum oracles. 
+
+Preliminaries are over! Prepare yourself for your first real mission! In this unit, you will implement Grover's search algorithm. It is not necessary to dive deep into the gate-level implementation details but you will focus the discussion on the high-level logic instead.
+
+For a strategic delivery, you have to make sure that two connected stations don't receive the same type of supply. You have to prepare a route to deliver to different space stations according to this requirement. 
 
 ## Algorithm outline
 
@@ -114,10 +116,10 @@ After that, the probability grows again and approaches 100% on iteration $3 R_{o
 
 ### But I don't know how many solutions my problem has!
 
-In our example, we have a small and easy to analyze problem, so we can calculate the number of solutions by hand. 
+In the example, you have a small and easy-to-analyze problem, so you could calculate the number of solutions by hand. 
 In practical applications, you don't usually know how many solutions your problem has before you solve it.
 
 To handle this issue, you can pick a small number, run the algorithm with that many iterations, and if it doesn't yield an answer, retry with a different, larger number of iterations. 
 An efficient strategy of gradually increasing the iteration number will still find the solution with an average number of iterations around $\sqrt{\frac{N}{M}}$.
 
-In the next unit, we will implement Grover's algorithm  in Q# and run it to solve our graph coloring problem!
+In the next unit, you will implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the best delivery route!

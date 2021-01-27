@@ -1,3 +1,5 @@
+As a new member of the space crew, you first need to learn the tools you'll use.
+
 In this part, you prepare your development environment so you can begin writing quantum programs.
 
 To set up your development environment, you:

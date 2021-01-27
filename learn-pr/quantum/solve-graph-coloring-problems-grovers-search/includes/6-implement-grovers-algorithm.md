@@ -1,4 +1,4 @@
-In this module, you will implement Grover's search algorithm end-to-end - from the oracle definition for the vertex coloring problem to the logic of dealing with the randomized nature of the algorithm.
+In this module, you will finally implement Grover's search algorithm end-to-end - from the oracle definition for the graph coloring problem to the logic of dealing with the randomized nature of the algorithm. 
 
 > [!NOTE]
 > Out of necessity, the overall code in this example is rather long, as it includes not only the generic Grover's algorithm implementation but also the problem-specific oracle implementation. 
@@ -32,7 +32,10 @@ Instead, the operation takes a qubit array as one of the inputs, and the code th
 
 ## Let's solve the graph coloring problem!
 
-Now we are ready to put together everything we've learned so far and solve the graph coloring problem we introduced in the second unit!
+
+Now you are ready to put together everything you've learned so far and solve the problem of preparing a route to deliver specific supplies to different space stations.
+Recall that this problem is an instance of the graph coloring problem we introduced in the second unit, where a color stands for a type of supply. It can be fuel, food, water, 
+construction materials, clothing, etc. We strongly recommend that you start solving a smaller version of the problem and consider only 4 types of supplies. 
 
 Here is the full code.
 
@@ -70,6 +73,7 @@ Vertex 2 - color 1
 Vertex 3 - color 3
 Vertex 4 - color 2
 ```
+If you deliver 4 types of supplies to our stations, you have to send a spaceship to a route based on the results you got here. 
 
 ## Watching the amplitudes
 
@@ -79,4 +83,5 @@ Now let's take a look at the behavior of the amplitudes of the basis states at t
 
 Congratulations! You've implemented your first quantum search algorithm and used it to solve a small problem.
 
-In the next unit, we take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
+In the next unit, you consider other examples and you take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
+
