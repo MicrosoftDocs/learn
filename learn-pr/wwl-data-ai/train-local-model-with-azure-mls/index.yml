@@ -3,7 +3,7 @@ uid: learn.data-ai.train-local-model-with-azure-mls
 metadata:
   title: Train a machine learning model with Azure Machine Learning
   description: "Train a machine learning model with Azure Machine Learning"
-  ms.date: 12/02/2020
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
