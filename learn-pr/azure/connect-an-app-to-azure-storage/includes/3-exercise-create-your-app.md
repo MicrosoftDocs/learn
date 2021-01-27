@@ -13,6 +13,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
     ```bash
     dotnet new console --name PhotoSharingApp
     ```
+
 1. Change into the application directory.
 
     ```bash
@@ -24,6 +25,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
     ```dotnetcli
     dotnet run
     ```
+
 ::: zone-end
 
 ::: zone pivot="javascript"
