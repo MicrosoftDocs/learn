@@ -31,7 +31,7 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
 
-> Important
+> [!IMPORTANT]
 > To use and configure Azure AD terms of use, you must have:
 >  - Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
 >    - If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.

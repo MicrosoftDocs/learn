@@ -64,8 +64,8 @@ Once you have finalized your terms of use document, use the following procedure 
 | Bob   | Jan 15            | Feb 14            | Mar 16             | Apr 15            |
 
 >
->1. Note
->1. It is possible to use the Expire consents and Duration before re-acceptance requires (days) settings together, but typically you use one or the other.
+> [!NOTE]
+> It is possible to use the Expire consents and Duration before re-acceptance requires (days) settings together, but typically you use one or the other.
 
 14. Under **Conditional Access**, select **Custom policy**.
 
@@ -75,7 +75,6 @@ Once you have finalized your terms of use document, use the following procedure 
 | **Create Conditional Access policy later** | This terms of use will appear in the grant control list when creating a Conditional Access policy. |
 
 > [!IMPORTANT]
-> Important
 > Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
 
 Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [Quickstart: Require terms of use to be accepted before accessing cloud apps](https://docs.microsoft.com/azure/active-directory/conditional-access/require-tou).
