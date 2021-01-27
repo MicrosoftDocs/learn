@@ -1,4 +1,4 @@
-Let's take a step back and see how Grover's algorithm works and why we can use it to solve our best-delivery-route problem. 
+Let's take a step back and see how Grover's algorithm works and why we can use it to solve our communication between space stations problem. 
 
 In this section, we define the problem solved by Grover's search algorithm — the so-called "search problem"  — and take a closer look at how various real-life problems can be represented in terms of this problem.
 
@@ -23,7 +23,7 @@ Here are some examples:
 
 Some of these problems are better suited to benefit from using Grover's algorithm than the others. 
 
-The problem you have been tasked with is the following. We supply our space stations with different materials, food, water, fuel, etc. We need to elaborate a list of the minimum number of supplies we need to carry in the spaceship, depending on the number of stations and how close they are between them. If two space stations are close enough we know they are connected and they can share supplies, so there is no need to delivery same type of supply twice.
+The space fleet has several space stations scattered throughout the galaxy. Noise and interference are problems communication division try to solve. Space stations need to communicate with others space stations, but if two stations are too close their messages intersect, and we cannot decode the information. For this reason, we need to assign a bandwidth to each space station. However, we cannot assign a unique bandwidth to each space station as available bandwidths are limit and the space fleet grows year by year. For effectiveness, two space stations may share the same bandwidth if they are far enough to not interfere. Based on this, you need to calculate the minimum number of different bandwitdths needed. 
 
 This problem is an instance of the graph coloring problem.
 
