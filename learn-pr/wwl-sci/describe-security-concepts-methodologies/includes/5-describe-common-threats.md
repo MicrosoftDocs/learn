@@ -1,4 +1,4 @@
-There are different types of security threats. Some aim to steal data, some aim to <!--CE: I think this is meant to say 'extort'-->exhort money, and others to disrupt normal operations, such as a denial of service attack. This unit looks at some of the common threats.
+There are different types of security threats. Some aim to steal data, some aim to extort money, and others to disrupt normal operations, such as a denial of service attack. This unit looks at some of the common threats.
 
 ## Data breach
 
