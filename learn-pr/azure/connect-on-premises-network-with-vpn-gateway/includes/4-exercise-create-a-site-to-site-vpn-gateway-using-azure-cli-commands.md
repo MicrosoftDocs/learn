@@ -160,7 +160,7 @@ You'll now complete the configuration by creating the connections from each VPN 
 
 > [!NOTE] 
 > Any set of number will work for a shared key in this example:  SHAREDKEY=123456789    It is recommended in production environments to use string of printable ASCII characters no longer than 128 characters.
-
+    
     ```azurecli
     SHAREDKEY=<shared key>
     ```
