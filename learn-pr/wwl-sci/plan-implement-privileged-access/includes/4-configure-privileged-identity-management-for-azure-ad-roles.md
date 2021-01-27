@@ -1,5 +1,3 @@
-- 15 minutes
-
 ## Configure Azure AD role settings
 
 ### Open role settings

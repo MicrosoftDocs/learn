@@ -60,8 +60,6 @@ When you need to assume an Azure AD role, you can request activation by opening 
 > [!div class="mx-imgBorder"]
 > ![Screen image displaying a popup to activate the compliance administrator](../media/lp4-mod3-pim-activate-role.png)
 
-> [!div class="mx-imgBorder"]
-> ![{1}](../media/{2})
 
 5. After you have completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the justification for activating this role.
 
