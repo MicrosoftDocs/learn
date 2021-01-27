@@ -20,7 +20,7 @@ Any Microsoft 365 tenant should be activated to use Azure RMS and IRM capabiliti
 
 1. Now run the following cmdlet with a sender inside your organization, to check if IRM data can be obtained for this recipient:
 
-   ```powershell
+    ```powershell
     Test-IRMConfiguration -Sender admin@contoso.com
 
     ```
@@ -32,9 +32,9 @@ Any Microsoft 365 tenant should be activated to use Azure RMS and IRM capabiliti
 
 If any of the tests fail, you may not fetch the RMS templates for a recipient or there may be issues with the utilized encryption keys.
 
-The *-IRMConfiguration and *-OmeConfiguration cmdlets allow you to configure how RMS content is used in a tenant and which key endpoints are in use. Administrators should become familiar with the available settings from these cmdlets.
+The IRM and OME configuration cmdlets allow you to configure how RMS content is used in a tenant and which key endpoints are in use. Administrators should become familiar with the available settings for these cmdlets.
 
-## Implement custom OME Settings
+## Implement custom Office Message Encryption settings
 
 OME is managed via configuration objects, or more precisely templates, which can be assigned and referenced. The default template for all users is named "OME Configuration" and any setting done in this configuration, is applied to all users. While the basic Office 365 Message Encryption allows only a single template, Office 365 Advanced Message Encryption provides more flexibility with multiple branding templates for different purposes.
 
@@ -45,7 +45,7 @@ The following examples provide a general description of which settings are avail
 
 | **To customize this feature of the encryption experience**| **Use these commands**|
 | :--- | :--- |
-| Control social IDs for sign in, such as Google account, a Yahoo account, or Microsoft accounts|    1. Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true|
+| Control social IDs for sign in, such as Google account, a Yahoo account, or Microsoft accounts|    Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true|
 | Activate one-time pass codes for recipients not using Outlook, to view protected content in the browser.| Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true|
 | Hide the Encrypt button for all users in Outlook on the web.| Set-IRMConfiguration -SimplifiedClientAccessEnabled $false|
 | Allow users to decrypt messages for legacy clients that do not support Azure RMS.| Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true|
@@ -74,7 +74,7 @@ You can also revert to the default look and feel at any time.
 
 The following image provides an overview of the customizable areas of a branding template:
 
-![Picture that shows which areas of the Office 365 OME portal can be edited.](../media/ome-branding-template.png)
+![Picture that shows which areas of the Office 365 OME portal can be edited.](../media/branding-template.png)
 
 Learn more about the PowerShell commands to modify these settings: [Modify and OME branding template](https://docs.microsoft.com/microsoft-365/compliance/add-your-organization-brand-to-encrypted-messages?view=o365-worldwide?azure-portal=true)
 

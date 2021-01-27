@@ -26,5 +26,7 @@ The list of templates includes default templates and options and any custom temp
 
 You can also perform this operation with Exchange Online PowerShell. If you use PowerShell you would not be using the RMS template named "Encrypt", but the OME Configuration name you want to configure instead. Use the following cmdlet to create a new mail flow rule to encrypt all messages sent to fabrikam.com:
 
-New-TransportRule -Name "Encrypt all mails to Fabrikam" -FromScope InOrganization -RecipientDomainIs "adatum.com" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
+  ```powershell
+    New-TransportRule -Name "Encrypt all mails to Fabrikam" -FromScope InOrganization -RecipientDomainIs "adatum.com" -ApplyRightsProtectionCustomizationTemplate "OME Configuration"
 
+    ```
