@@ -1,3 +1,5 @@
+In this unit, you'll follow steps to set up Azure Digital Twins and get ready to work with it.
+
 ## Download files
 
 First, clone a GitHub repo that contains some files you'll need:

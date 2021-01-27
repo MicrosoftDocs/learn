@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.ingest-data-into-azure-digital-twins.set-up-logic-app
-title: Set up Logic App
+title: Set up Azure Logic Apps
 metadata:
   title: Set up Azure Logic Apps
   description: Explore the configuration to push data into Azure Digital Twins by using Azure Logic Apps.

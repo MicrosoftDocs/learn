@@ -1,4 +1,4 @@
-You can ingest data into Azure Digital Twins through external compute resources. An example might be an Azure Functions instance that receives the data and uses the Digital Twins APIs to set properties.
+You can ingest data into Azure Digital Twins through external compute resources. An example might be a function app that receives the data and uses the Digital Twins APIs to set properties.
 
 ## Configure your environment
 
@@ -8,7 +8,7 @@ You'll use the following tools and extensions in this unit:
 - The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 - The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code.
 
-## Create an Azure Functions instance via the CLI
+## Create an function app via the CLI
 
 1. Create an Azure storage account:
 
@@ -16,7 +16,7 @@ You'll use the following tools and extensions in this unit:
     az storage account create --name $functionstorage --location $location --resource-group $rgname --sku Standard_LRS
     ```
 
-1. Create an Azure function app:
+1. Create a function app:
 
     ```azurecli
     az functionapp create --resource-group $rgname --consumption-plan-location $location --name $telemetryfunctionname --storage-account $functionstorage --functions-version 3
@@ -24,9 +24,9 @@ You'll use the following tools and extensions in this unit:
 
 ## Configure security access for the function app
 
-The Azure function skeleton from earlier examples requires that a bearer token be passed in order to authenticate with Digital Twins. To make sure that this bearer token is passed, you'll need to create a managed identity for the function app.
+The Azure function skeleton from earlier examples requires a bearer token to be passed in order to authenticate with Digital Twins. To make sure that this token is passed, you'll need to create a managed identity for the function app.
 
-In this section, we'll create a system-managed identity and assign the function app's identity to the **Azure Digital Twins Owner (Preview)** role for your Azure Digital Twins instance. The managed identity gives the function app permission in the instance to perform data-plane activities. We'll also provide the URL of Digital Twins instance to the function by setting an environment variable.
+In this section, we'll create a system-managed identity. We'll then assign the function app's identity to the **Azure Digital Twins Owner (Preview)** role for your Azure Digital Twins instance. The managed identity gives the function app permission in the instance to perform data-plane activities. We'll also provide the URL of the Digital Twins instance to the function by setting an environment variable.
 
 1. Use the following command to create the system-managed identity and save the *principalId* to a variable for later use:
 
@@ -155,18 +155,20 @@ namespace My.Function
 
 ## Publish the function app to Azure
 
-1. In the Visual Studio Code function extension, select **Deploy to Function App...**
+1. In the Azure Functions extension for Visual Studio Code, select **Deploy to Function App**:
 
-    ![Choose Deploy to Function App...](../media/deploy-to-function-app.png)
+    ![Partial screenshot showing selection of the icon for the Deploy to Function App command.](../media/deploy-to-function-app.png)
 
-    - **Select subscription**: Choose your subscription
-    - **Select Function App in Azure**: Choose `<name>twinfunction`.
+1. Make these selections:
+    - **Select subscription**: Select your subscription.
+    - **Select Function App in Azure**: Select `<name>twinfunction`.
 
-1. When the deployment finishes, you'll be prompted to Start Streaming Logs
+   When the deployment finishes, you'll be prompted to start streaming logs:
 
-     ![Stream Logs](../media/function-stream-logs.png)
+     ![Screenshot of dialog box showing three options: Stream logs, Upload settings, and View output.](../media/function-stream-logs.png)
 
-1. Select **Stream Logs** to see the messages received by the Azure Function after the IoT Hub set up in the next step. There won't be any messages received until the IoT Hub is set up and a device sends messages.
-1. Alternatively, you can Stream Logs at a later time by right-clicking on the Azure Function in VS Code and choosing **Start Streaming Logs**
+1. Select **Stream logs** to see the messages that are received by the Azure function after the IoT Hub setup in the next unit. No messages will be received until the IoT Hub is set up and a device sends messages.
 
-     ![Stream logs extension](../media/function-stream-logs-extension.png)
+    Or, you can choose to stream logs at a later time. Right-click the Azure function in Visual Studio Code and select **Start Streaming Logs**:
+
+     ![Partial screenshot showing the context menu for the function app in Visual Studio Code, including the command to Start Streaming Logs.](../media/function-stream-logs-extension.png)
