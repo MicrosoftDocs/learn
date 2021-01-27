@@ -1,4 +1,4 @@
-Before we get down to business, let's discuss two common methods for finding the global minimum of a cost function: *simulated annealing* and *quantum annealing*. Simulated annealing is based on ideas from thermal physics, whereas quantum annealing is a quantum algorithm.
+Before we get down to business, let's discuss two common methods for finding the global minimum of a cost function: *simulated annealing* and *quantum annealing*. [Simulated annealing](https://en.wikipedia.org/wiki/Simulated_annealing?azure-portal=true) is based on ideas from thermal physics, whereas [quantum annealing](https://en.wikipedia.org/wiki/Quantum_annealing?azure-portal=true) is a quantum algorithm.
 
 ## Simulated annealing
 
@@ -34,8 +34,8 @@ This parameter defines the radius of neighboring states we can move to. As time 
 
 In Azure Quantum we make available a range of physics-inspired and quantum-inspired techniques to solve discrete and combinatorial optimization problems:
 
-- **Simulated annealing**: A classical stochastic simulation method mimicking the slow cooling of a material (annealing) to remove imperfections [[1]](https://doi.org/10.1126/science.220.4598.671?azure-portal=true). A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.
-- **Parallel tempering**:  A related classical optimization approach, where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches [[2]](https://doi.org/10.1143/JPSJ.65.1604?azure-portal=true). It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.
-- **Quantum Monte Carlo**: A quantum-inspired optimization that mimics the quantum annealing method using [quantum Monte-Carlo](TODO link) simulations. Analogous to the temperature in simulated annealing, the quantum tunneling strength is reduced over time. Quantum tunneling effects assist in escaping from local minima in the search space.
+- **Simulated annealing**: A classical stochastic [simulation method](https://doi.org/10.1126/science.220.4598.671?azure-portal=true) mimicking the slow cooling of a material (annealing) to remove imperfections. A temperature is reduced according to a schedule. Thermal hops assist in escaping from local minima in the search space.
+- **Parallel tempering**:  A related [classical optimization approach](https://doi.org/10.1143/JPSJ.65.1604?azure-portal=true), where copies of a system are kept at different temperatures, automating the repeated heating and cooling in tempering approaches. It can be used to accelerate both classical and (simulated) quantum annealing, as well as many other heuristics.
+- **Quantum Monte Carlo**: A quantum-inspired optimization that mimics the quantum annealing method using [quantum Monte-Carlo](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.134305?azure-portal=true) simulations. Analogous to the temperature in simulated annealing, the quantum tunneling strength is reduced over time. Quantum tunneling effects assist in escaping from local minima in the search space.
 
-Note that this is just a small subset of available techniques [[3]](https://doi.org/10.1103/PhysRevA.94.022337?azure-portal=true) and we continue to develop and add new solvers to the service.
+Note that this is just a small subset of available technique and we continue to develop and add [new solvers to the service](https://doi.org/10.1103/PhysRevA.94.022337?azure-portal=true).
