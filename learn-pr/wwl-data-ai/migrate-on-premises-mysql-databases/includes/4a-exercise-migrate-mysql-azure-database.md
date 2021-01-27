@@ -47,10 +47,15 @@ az vm run-command invoke \
     sudo apt-get update && sudo apt-get upgrade -y
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 
-    # Enable Ubuntu Firewall and allow SSH & MySQL Ports
-    sudo ufw enable
-    sudo ufw allow 22
-    sudo ufw allow 3306
+    # Disable Ubuntu Firewall bind mysql
+    sudo ufw disable
+    sudo bash << EOF
+        echo "bind-address=0.0.0.0" >> /etc/mysql/mysql.conf.d/mysqld.cnf
+        echo "log-bin" >> /etc/mysql/mysql.conf.d/mysqld.cnf
+        echo "server-id=99" >> /etc/mysql/mysql.conf.d/mysqld.cnf
+    EOF
+    sudo service mysql stop
+    sudo service mysql start 
 
     # Clone exercise code
     sudo git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git /home/azureuser/workshop
