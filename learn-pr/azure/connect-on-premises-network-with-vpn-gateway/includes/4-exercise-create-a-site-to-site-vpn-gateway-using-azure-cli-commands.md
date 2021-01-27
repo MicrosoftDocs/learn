@@ -76,7 +76,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
 1. Gateway creation will take several minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
 
-    ```bash
+    ```azurecli
     watch -d -n 5 az network vnet-gateway list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --output table
@@ -103,6 +103,13 @@ az network vnet-gateway list \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query "[?provisioningState=='Succeeded']" \
     --output table
+```
+
+```output
+Name              Location    GatewayType    VpnType     VpnGatewayGeneration    EnableBgp    EnablePrivateIpAddress    Active    ResourceGuid                        ProvisioningState    ResourceGroup
+----------------  ----------  -------------  ----------  ----------------------  -----------  ------------------------  --------  ------------------------------------  -------------------  ------------------------------------------
+VNG-Azure-VNet-1  westus      Vpn            RouteBased  Generation1         False        False                     False     9a2e60e6-da57-4274-99fd-e1f8b2c0326d  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
+VNG-HQ-Network    westus      Vpn            RouteBased  Generation1         False        False                     False     c36430ed-e6c0-4230-ae40-cf937a102bcd  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
 ```
 
 Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
@@ -153,11 +160,10 @@ You'll now complete the configuration by creating the connections from each VPN 
 
 > [!NOTE] 
 > Any set of number will work for a shared key in this example:  SHAREDKEY=123456789    It is recommended in production environments to use string of printable ASCII characters no longer than 128 characters.
-
-    ```bash
+    
+  ```bash
     SHAREDKEY=<shared key>
-    ```
-
+  ```
 1. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
 
     ```azurecli
