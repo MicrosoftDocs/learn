@@ -76,7 +76,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
 1. Gateway creation will take several minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
 
-    ```bash
+    ```azurecli
     watch -d -n 5 az network vnet-gateway list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --output table
