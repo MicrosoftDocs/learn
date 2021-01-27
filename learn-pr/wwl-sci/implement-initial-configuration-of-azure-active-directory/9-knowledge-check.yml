@@ -20,24 +20,24 @@ quiz:
     choices:
     - content: "Yes, a domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "Correct. When an organization that contains and application or other resources, the domain can be included if it is owned by the same organization."
     - content: "A domain name can be included as part of the app ID URI for an application, but cannot be included as part of other resources."
       isCorrect: false
       explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
     - content: "No, a domain name cannot be included as part of an application or other resource."
       isCorrect: false
       explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
-  - content: "The proliferation of many types of devices and the bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and whenever. What is the other goal?"
+  - content: "The proliferation of many types of devices and bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and any time. What is the other goal?"
     choices:
-    - content: "Provide antimalware apps for a variety of devices."
+    - content: "Provide antimalware apps for a various devices."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Providing antimalware apps for a variety of devices is not a goal that IT professionals need to accommodate."
+      explanation: "Sorry, that's incorrect. Providing antimalware apps for a all devices is not a goal that IT professionals need to accommodate."
     - content: "Establish baseline security guidelines for users."
       isCorrect: false
       explanation: "Sorry, that's incorrect. Establishing baseline security guidelines is not a goal that IT professionals need to accommodate."
     - content: "Protect the organization's assets."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "Correct. Identity is new perimiter is a common security phrase these days, meaning that validation or both people and devices are required to protect company assets."
   - content: "Azure AD guest users have restricted directory permissions. Which of the following answers best describes guest users capabilities?"
     choices:
     - content: "They can manage their own profile, change their own password, and add other B2B guests to groups."
@@ -45,7 +45,7 @@ quiz:
       explanation: "Sorry, that's incorrect. Azure AD guest users cannot add other B2B guests to groups."
     - content: "They can manage their own profile, change their own password, and retrieve some information about other users, groups, and apps."
       isCorrect: true
-      explanation: "That's correct."
-    - content: "They can manage their own profile, change their own password, and identify group members as well as other directory objects."
+      explanation: "Correct.  Guest users can only manage aspects of their own profile information, like their password; and view available resource like apps."
+    - content: "They can manage their own profile, change their own password, and identify group members or other directory objects."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Azure AD guest users cannot identify group members as well as other directory objects."
+      explanation: "Sorry, that's incorrect. Azure AD guest users cannot identify group members and other directory objects."

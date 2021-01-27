@@ -8,11 +8,9 @@ Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and acce
 
 Azure AD is intended for:
 
-- **IT admins.** As an IT admin, you can use Azure AD to control access to your apps and your app resources, based on your business requirements. For example, you can use Azure AD to require multi-factor authentication when accessing important organizational resources. Additionally, you can use Azure AD to automate user provisioning between your existing Windows Server AD and your cloud apps, including Microsoft 365. Finally, Azure AD gives you powerful tools to automatically help protect user identities and credentials and to meet your access governance requirements.
-
-- **App developers.** As an app developer, you can use Azure AD as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's pre-existing credentials. Azure AD also provides APIs that can help you build personalized app experiences using existing organizational data.
-
-- **Microsoft 365, Office 365, Azure, or Dynamics CRM Online subscribers.** As a subscriber, you're already using Azure AD. Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant. You can immediately start to manage access to your integrated cloud apps.
+- **IT admins** - As an IT admin, you can use Azure AD to control access to your apps and your app resources, based on your business requirements. For example, you can use Azure AD to require multi-factor authentication when accessing important organizational resources. Additionally, you can use Azure AD to automate user provisioning between your existing Windows Server AD and your cloud apps, including Microsoft 365. Finally, Azure AD gives you powerful tools to automatically help protect user identities and credentials and to meet your access governance requirements.
+- **App developers** - As an app developer, you can use Azure AD as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's pre-existing credentials. Azure AD also provides APIs that can help you build personalized app experiences using existing organizational data.
+- **Microsoft 365, Office 365, Azure, or Dynamics CRM Online subscribers** - As a subscriber, you're already using Azure AD. Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant. You can immediately start to manage access to your integrated cloud apps.
 
 In Azure AD, if one of your users needs permission to manage Azure AD resources, you must assign them to a role that provides the permissions they need.
 
@@ -67,7 +65,7 @@ A common way to assign Azure AD roles to a user is on the Assigned roles page fo
 > If you have an Azure AD Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
 > [!div class="mx-imgBorder"]
-> ![Azure AD roles managed in PIM for users who already use PIM and have a Premium P2 license.](../media/privileged-identity-management-manages-roles-for-p2.png)
+> ![Azure AD roles managed in PIM for users who already use PIM and have a Premium P2 license.](../media/privileged-identity-management-manages-roles.png)
 
 ## Create and assign a custom role in Azure Active Directory
 
@@ -79,26 +77,26 @@ Custom roles can be created in the [Roles and administrators](https://portal.azu
 
 1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com/) with Privileged role administrator or Global administrator permissions in the Azure AD organization.
 
-1. Select **Azure Active Directory** > **Roles and administrators** > **New custom role**.
+2. Select **Azure Active Directory** > **Roles and administrators** > **New custom role**.
 
-> [!div class="mx-imgBorder"]
-> ![Create or edit roles from the Roles and administrators page.](../media/new-custom-role.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create or edit roles from the Roles and administrators page.](../media/new-custom-role.png)
 
-1. On the **Basics** tab, provide a name and description for the role and then click **Next**.
+3. On the **Basics** tab, provide a name and description for the role and then click **Next**.
 
-> [!div class="mx-imgBorder"]
-> ![provide a name and description for a custom role on the Basics tab.](../media/basics-tab.png)
+   > [!div class="mx-imgBorder"]
+   > ![provide a name and description for a custom role on the Basics tab.](../media/basics-tab.png)
 
-1. On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
+4. On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
 
-   1. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update `permission.
+5. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update `permission.
 
-> [!div class="mx-imgBorder"]
-> ![Select the permissions for a custom role on the Permissions tab.](../media/permissions-tab.png)
+   > [!div class="mx-imgBorder"]
+   > ![Select the permissions for a custom role on the Permissions tab.](../media/permissions-tab.png)
 
-   1. Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update `permission, and then click **Next**.
+6. Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update `permission, and then click **Next**.
 
-1. On the **Review + create** tab, review the permissions and select **Create**.
+7. On the **Review + create** tab, review the permissions and select **Create**.
 
 Your custom role will show up in the list of available roles to assign.
 
@@ -108,16 +106,16 @@ Like built-in roles, custom roles are assigned by default at the default organiz
 
 1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com/) with Application developer permissions in the Azure AD organization.
 
-1. Select **App registrations**.
+2. Select **App registrations**.
 
-1. Select the app registration to which you are granting access to manage. You might have to select **All applications** to see the complete list of app registrations in your Azure AD organization.
+3. Select the app registration to which you are granting access to manage. You might have to select **All applications** to see the complete list of app registrations in your Azure AD organization.
 
-> [!div class="mx-imgBorder"]
-> ![Select the app registration as a resource scope for a role assignment.](../media/app-registration-all-apps.png)
+   > [!div class="mx-imgBorder"]
+   > ![Select the app registration as a resource scope for a role assignment.](../media/app-registration-apps.png)
 
-1. In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the [preceding procedure](https://docs.microsoft.com/azure/active-directory/roles/custom-create).
+4. In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the [preceding procedure](https://docs.microsoft.com/azure/active-directory/roles/custom-create).
 
-1. Select the role to open the **Assignments** page.
+5. Select the role to open the **Assignments** page.
 
-1. Select **Add assignment** to add a user. The user will be granted any permissions over only the selected app registration.
+6. Select **Add assignment** to add a user. The user will be granted any permissions over only the selected app registration.
 

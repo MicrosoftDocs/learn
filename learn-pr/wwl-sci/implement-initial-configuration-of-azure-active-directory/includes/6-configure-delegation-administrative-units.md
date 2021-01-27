@@ -25,33 +25,23 @@ With organizational growth comes complexity. One common response is to reduce so
 In Azure AD, you can delegate Application creation and management permissions in the following ways:
 
 - Restricting who can create applications and manage the applications they create. By default in Azure AD, all users can register application registrations and manage all aspects of applications they create. This can be restricted to only allow selected people that permission.
-
 - Assigning one or more owners to an application. This is a simple way to grant someone the ability to manage all aspects of Azure AD configuration for a specific application.
-
 - Assigning a built-in administrative role that grants access to manage configuration in Azure AD for all applications. This is the recommended way to grant IT experts access to manage broad application configuration permissions without granting access to manage other parts of Azure AD not related to application configuration.
-
 - Creating a custom role defining very specific permissions and assigning it to someone either to the scope of a single application as a limited owner, or at the directory scope (all applications) as a limited administrator.
 
-It's important to consider granting access using one of the above methods for two reasons. First, delegating the ability to perform administrative tasks reduces global administrator overhead. Second, using limited permissions improves your security posture and reduces the potential for unauthorized access.
+When granting access use one of the above methods for two reasons. First, delegating the ability to perform administrative tasks reduces global administrator overhead. Second, using limited permissions improves your security posture and reduces the potential for unauthorized access.
 
-## Delegation planning
+## Plan for Delegation
 
 It's work to develop a delegation model that fits your needs. Developing a delegation model is an iterative design process, and we suggest you follow these steps:
 
 - Define the roles you need
-
 - Delegate app administration
-
 - Grant the ability to register applications
-
 - Delegate app ownership
-
 - Develop a security plan
-
 - Establish emergency accounts
-
 - Secure your administrator roles
-
 - Make privileged elevation temporary
 
 ## Define roles
@@ -59,7 +49,6 @@ It's work to develop a delegation model that fits your needs. Developing a deleg
 Determine the Active Directory tasks that are carried out by administrators and how they map to roles. Each task should be evaluated for frequency, importance, and difficulty. These criteria are vital aspects of task definition because they govern whether a permission should be delegated:
 
 - Tasks that you do routinely, have limited risk, and are trivial to complete are excellent candidates for delegation.
-
 - Tasks that you do rarely but have great impact across the organization and require high skill levels should be considered very carefully before delegating. Instead, you can temporarily elevate an account to the required role or reassign the task.
 
 ## Delegate app administration
@@ -67,7 +56,6 @@ Determine the Active Directory tasks that are carried out by administrators and 
 The proliferation of apps within your organization can strain your delegation model. If it places the burden for application access management on the Global Administrator, it's likely that model increases its overhead as time goes on. If you have granted people the Global Administrator role for things like configuring enterprise applications, you can now offload them to the following less-privileged roles. Doing so helps to improve your security posture and reduces the potential for unfortunate mistakes. The most-privileged application administrator roles are:
 
 - The **Application Administrator** role, which grants the ability to manage all applications in the directory, including registrations, single sign-on settings, user and group assignments and licensing, Application Proxy settings, and consent. It doesn't grant the ability to manage Conditional Access.
-
 - The **Cloud Application Administrator** role, which grants all the abilities of the Application Administrator, except it doesn't grant access to Application Proxy settings (because it has no on-premises permission).
 
 ## Delegate app registration
@@ -75,13 +63,11 @@ The proliferation of apps within your organization can strain your delegation mo
 By default, all users can create application registrations. To selectively grant the ability to create application registrations:
 
 - Set **Users can register applications** to No in **User settings**
-
 - Assign the user to the Application Developer role
 
 To selectively grant the ability to consent to allow an application to access data:
 
 - Set **Users can consent to applications accessing company data on their behalf** To No in **User settings**
-
 - Assign the user to the Application Developer role
 
 When an Application Developer creates a new application registration, they are automatically added as the first owner.
@@ -91,7 +77,6 @@ When an Application Developer creates a new application registration, they are a
 For even finer-grained app access delegation, you can assign ownership to individual enterprise applications. This complements the existing support for assigning application registration owners. Ownership is assigned on a per-enterprise application basis in the Enterprise Applications blade. The benefit is owners can manage only the enterprise applications they own. For example, you can assign an owner for the Salesforce application, and that owner can manage access to and configuration for Salesforce, and no other applications. An enterprise application can have many owners, and a user can be the owner for many enterprise applications. There are two app owner roles:
 
 - The **Enterprise Application Owner** role grants the ability to manage the ‘enterprise applications that the user owns, including single sign-on settings, user and group assignments, and adding additional owners. It doesn't grant the ability to manage Application Proxy settings or Conditional Access.
-
 - The **Application Registration Owner** role grants the ability to manage application registrations for app that the user owns, including the application manifest and adding additional owners.
 
 ## Develop a security plan
@@ -107,12 +92,8 @@ To maintain access to your identity management store when issue arises, prepare 
 Attackers who get control of privileged accounts can do tremendous damage, so protect these accounts first, using the [baseline access policy](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/22/baseline-security-policy-for-azure-ad-admin-accounts-in-public-preview/) that is available by default to all Azure AD organizations (in public preview). The policy enforces multi-factor authentication on privileged Azure AD accounts. The following Azure AD roles are covered by the Azure AD baseline policy:
 
 - Global administrator
-
 - SharePoint administrator
-
 - Exchange administrator
-
 - Conditional Access administrator
-
 - Security administrator
 

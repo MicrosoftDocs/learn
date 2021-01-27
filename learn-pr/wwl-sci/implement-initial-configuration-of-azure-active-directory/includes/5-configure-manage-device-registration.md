@@ -19,8 +19,8 @@ The goal of Azure AD registered devices is to provide your users with support fo
 | Definition| Registered to Azure AD without requiring organizational account to sign in to the device|
 | Primary audience| <ul><li>Applicable to all users with the following criteria:</li> <li>--Bring your own device (BYOD)</li> <li>--Mobile devices</li></ul>|
 | Device ownership| User or Organization|
-| Operating systems| Windows 10, iOS, Android, and MacOS|
-| Provisioning| <ul><li>Windows 10 – Settings</li> <li>iOS/Android – Company Portal or Microsoft Authenticator app</li> <li>MacOS – Company Portal</li></ul>|
+| Operating systems| Windows 10, iOS, Android, and macOS|
+| Provisioning| <ul><li>Windows 10 – Settings</li> <li>iOS/Android – Company Portal or Microsoft Authenticator app</li> <li>macOS – Company Portal</li></ul>|
 | Device sign in options| <ul><li>End-user local credentials</li> <li>Password</li> <li>Windows Hello</li> <li>PIN</li> <li>Biometrics or Pattern for other devices</li></ul>|
 | Device management| <ul><li>Mobile Device Management (example: Microsoft Intune)</li> <li>Mobile Application Management</li></ul>|
 | Key capabilities| <ul><li>SSO to cloud resources</li> <li>Conditional Access when enrolled into Intune</li> <li>Conditional Access via App protection policy</li> <li>Enables Phone sign in with Microsoft Authenticator app</li></ul>|
@@ -108,49 +108,48 @@ To join a Windows 10 device, the device registration service must be configured 
 
 In addition, if your tenant is federated, your Identity provider MUST support WS-Fed and WS-Trust username/password endpoint. This can be version 1.3 or 2005. This protocol support is required to both join the device to Azure AD and sign in to the device with a password.
 
-### Joining a Windows 10 device to Azure AD during FRX
+### Join a Windows 10 device to Azure AD
 
 1. When you turn on your new device and start the setup process, you should see the **Getting Ready** message. Follow the prompts to set up your device.
 
-1. Start by customizing your region and language. Then review and accept the Microsoft Software License Terms.
+2. Start by customizing your region and language. Then review and accept the Microsoft Software License Terms.
 
     > [!div class="mx-imgBorder"]
-    > ![Customize for your region.](../media/customize-for-your-region.png)
+    > ![Customize for your region.](../media/customize-region.png)
 
-1. Select the network you want to use for connecting to the Internet.
+3. Select the network you want to use for connecting to the Internet.
 
-1. Click **This device belongs to my organization**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Who owns this PC screen.](../media/who-owns-this-pc.png)
-
-1. Enter the credentials that were provided to you by your organization, and then click **Sign in**.
+4. Click **This device belongs to my organization**.
 
     > [!div class="mx-imgBorder"]
-    > ![Sign-in screen.](../media/sign-in-screen.png)
+    > ![Who owns this PC screen.](../media/who-owns-device.png)
 
-1. Your device locates a matching tenant in Azure AD. If you are in a federated domain, you are redirected to your on-premises Secure Token Service (STS) server, for example, Active Directory Federation Services (AD FS).
+5. Enter the credentials that were provided to you by your organization, and then click **Sign in**.
 
-1. If you are a user in a non-federated domain, enter your credentials directly on the Azure AD-hosted page.
+    > [!div class="mx-imgBorder"]
+    > ![Sign-in screen.](../media/signin-screen.png)
 
-1. You are prompted for a multi-factor authentication challenge.
+6. Your device locates a matching tenant in Azure AD. If you are in a federated domain, you are redirected to your on-premises Secure Token Service (STS) server, for example, Active Directory Federation Services (AD FS).
 
-1. Azure AD checks whether an enrollment in mobile device management is required.
+7. If you are a user in a non-federated domain, enter your credentials directly on the Azure AD-hosted page.
 
-1. Windows registers the device in the organization’s directory in Azure AD and enrolls it in mobile device management, if applicable.
+8. You are prompted for a multi-factor authentication challenge.
 
-1. If you are:
+9. Azure AD checks whether an enrollment in mobile device management is required.
 
-- A managed user, Windows takes you to the desktop through the automatic sign-in process.
+10. Windows registers the device in the organization’s directory in Azure AD and enrolls it in mobile device management, if applicable.
 
-- A federated user, you are directed to the Windows sign-in screen to enter your credentials.
+11. If you are:
+
+    - A managed user, Windows takes you to the desktop through the automatic sign-in process.
+    - A federated user, you are directed to the Windows sign-in screen to enter your credentials.
 
 ### Verification
 
 To verify whether a device is joined to your Azure AD, review the **Access work or school** dialog on your Windows device. The dialog should indicate that you are connected to your Azure AD directory.
 
-> [!div class="mx-imgBorder"]
-> ![Access work or school screen.](../media/access-work-or-school.png)
+    > [!div class="mx-imgBorder"]
+    > ![Access work or school screen.](../media/access-work-school.png)
 
 ## Hybrid Azure AD joined devices
 
@@ -175,8 +174,8 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 | Device management| <ul><li>Group Policy</li> <li>Configuration Manager standalone or co-management with Microsoft Intune</li></ul>|
 | Key capabilities| <ul><li>SSO to both cloud and on-premises resources</li> <li>Conditional Access through Domain join or through Intune if co-managed</li> <li>Self-service Password Reset and Windows Hello PIN reset on lock screen</li> <li>Enterprise State Roaming across devices</li></ul>|
 
-> [!div class="mx-imgBorder"]
-> ![Hybrid Azure AD joined devices.](../media/azure-active-directory-hybrid-joined-device.png)
+    > [!div class="mx-imgBorder"]
+    > ![Hybrid Azure AD joined devices.](../media/azure-active-directory-hybrid-joined-device.png)
 
 ### Scenarios
 
