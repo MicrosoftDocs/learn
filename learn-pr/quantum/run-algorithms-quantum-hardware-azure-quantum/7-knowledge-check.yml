@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.run-quantum-algorithms-hardware.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: geduardo
+  ms.author: v-edsanc
+  ms.date: 01/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which one of the following sentences is **false**?'
+    choices:
+    - content: 'Azure Quantum is a cloud hub that provides access to quantum computers in the cloud.'
+      isCorrect: false
+      explanation: "The sentence is true. Azure Quantum connects you with an increasing catalogue of first-class quantum computing manufacturers."
+    - content: 'Azure Quantum enables you to run your Q# programs in trapped ion quantum computers.'
+      isCorrect: false
+      explanation: "This sentence is true. You just submitted a Q# program to IonQ's trapped ion quantum computer!"
+    - content: 'Azure Quantum only allows you to run algorithms in quantum computers, but for simulations you need them to run locally in your computer.'
+      isCorrect: true
+      explanation: "This sentence is false. Azure Quantum also lets you test your Q# programs in different simulators."
+
+  - content: 'A trapped ion quantum computer is:'
+    choices:
+    - content: 'A quantum computer that uses ions suspended in a electromagnetic field in the vacuum as the basic element to represent qubits.'
+      isCorrect: true
+      explanation: 'Correct. These computers use chains of trapped ions and each ion represents a qubit.'
+    - content: 'The only existing type of quantum computers to date.'
+      isCorrect: false
+      explanation: 'This is false. There are other working technologies available today, like superconducting qubit quantum computers.'
+    - content: 'A quantum computer that only allows a certain set of transformations that is not universal.'
+      isCorrect: false
+      explanation: 'This is false. Ion trapped quantum computers allow to apply an universal set of quantum operations.'
+      
+  - content: 'Which of the following sentences is **true**?'
+    choices:
+    - content: 'This code **can** run in a target with the *No control flow* profile: `if (M(qubit) == One) { ... }`'
+      isCorrect: false
+      explanation: 'This sentence is false. For No Control Flow targets, values of type `Result` do not support equality comparison.'
+    - content: 'This code **cannot** run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One) { X(qubit); }`'
+      isCorrect: false
+      explanation: 'This sentence is false. For Basic Measurement Feedback targets, values of type `Result` do support equality comparisons as part of conditions within `if` statements in operations.'
+    - content: 'This code **cannot** run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One) { return M(qubit); }`'
+      isCorrect: true
+      explanation: "This statement is false. Although the Basic Measurement Feedback profile allows for comparison of values of type `Result` as part of conditions within `if` statements, it doesn't allow to return values within the `if` block."

@@ -5,8 +5,8 @@ metadata:
   title: Different targets in Azure Quantum
   description: Explore the different types of quantum computing targets available in Azure Quantum.
   ms.date: 01/01/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: geduardo
+  ms.author: v-edsanc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
