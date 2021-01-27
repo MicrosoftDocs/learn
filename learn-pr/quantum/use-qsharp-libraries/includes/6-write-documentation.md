@@ -16,7 +16,7 @@ The comment then extends from the slashes to the end of the line.
 Documentation comments for a declared callable or type, however, are written differently.
 To be recognized as documentation by the compiler, these utilize three slashes (`///`) and are written *before* the declaration.
 
-Within the comments, the text is formatted as [Markdown](https://daringfireball.net/projects/markdown/syntax) and different parts of the documentation are indicated by different specially-named headers---each provided as an "H1" header with a single `#` preceding it.
+Within the comments, the text is formatted as [Markdown](https://daringfireball.net/projects/markdown/syntax?azure-portal=true) and different parts of the documentation are indicated by different specially-named headers---each provided as an "H1" header with a single `#` preceding it.
 We provide a full list of the possible headers below, but first let's document the oracle operation as an example:
 
 :::code language="qsharp" source="code/6-program-1.qs":::
@@ -34,5 +34,5 @@ For example, if you are using VS Code, IntelliSense enables autocomplete functio
 ## Learn more
 
 This is precisely the documentation format used in the Q# source code to generate the official API documentation you explored earlier in the module.
-You can find a full list of the recognized documentation headers on the official [Q# documentation page](https://docs.microsoft.com/quantum/user-guide/language/programstructure/comments).
+You can find a full list of the recognized documentation headers on the official [Q# documentation page](https://docs.microsoft.com/quantum/user-guide/language/programstructure/comments?azure-portal=true).
 There, you will also see more details and examples, including the ability to cross-reference other callables and add code examples to documentation. 

@@ -15,7 +15,7 @@ We implement it in the following.
 
 ## Step 1. Reflection about uniform superposition
 
-In the [previous module using Grover's](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. 
+In the [previous module using Grover's](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), the uniform superposition was created over all the $2^n$ number states spanned by the $n$ qubits. 
 In that case, the creation of the superposition is straightforwardly handled by applying the `H` operation to each individual qubit.
 
 However, since we are only interested in the number states $0 - 9$, we have no use for the remaining states $10-15$ which our 4 qubits can represent.

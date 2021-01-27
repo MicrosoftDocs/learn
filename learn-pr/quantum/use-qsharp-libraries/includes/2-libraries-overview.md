@@ -1,7 +1,7 @@
 You are probably already familiar with libraries in other programming languages. 
 Q# as a language for quantum programming is not different in this case. 
 
-The Quantum Development Kit includes [several libraries](https://docs.microsoft.com/quantum/user-guide/libraries/) which allow you to develop high-level quantum applications in Q# without having to worry about the low-level implementation details.
+The Quantum Development Kit includes [several libraries](https://docs.microsoft.com/quantum/user-guide/libraries?azure-portal=true) which allow you to develop high-level quantum applications in Q# without having to worry about the low-level implementation details.
 For example, many languages provide an expression to add numbers—e.g., `a+b`—so you don't have to worry about the binary representation and implementation of that addition. This way, you can write better programs faster and focus on the problem you want to solve.
 The same is true for the Q# libraries. By providing complex quantum operations and frequently-used components of quantum algorithms through simple callables and types, they free you up to focus on the logic of your quantum program and therefore start developing more impactful programs sooner.
 
@@ -16,13 +16,13 @@ When such a library has been made available to a Q# project, its namespaces can 
 
 ## How are Q# libraries distributed?
 
-Libraries in Q# are distributed as [NuGet](https://www.nuget.org/) packages. 
+Libraries in Q# are distributed as [NuGet](https://www.nuget.org?azure-portal=true) packages. 
 NuGet is a package manager used for a variety of different platforms, and is the primary package manager used by most .NET languages.
 It enables developers to produce, share, and consume useful code. 
 A NuGet *package* is essentially a ZIP file containing compiled code and related files.
 
 The Quantum Development Kit uses NuGet to give Q# projects access to, and thus use the code from, any compatible package.
-Naturally only those packages meant for use with Q# can be used, such as those containing Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter?tabs=tabid-conda).
+Naturally only those packages meant for use with Q# can be used, such as those containing Q# libraries, new/custom simulators, or new magic commands for [Q# Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter?tabs=tabid-conda?azure-portal=true).
 Since they are all hosted through NuGet, users can easily use the Q# libraries produced by Microsoft, as well as other third-party Q# libraries that are not released as part of the QDK. 
 
 As you will learn further below, the simple process of adding these libraries to your projects is the same regardless.
@@ -45,16 +45,15 @@ Then, there are three libraries focused on more domain-specific functionality:
 The standard library is included in every Q# project by default, but accessing other libraries—including the domain-specific libraries discussed above—requires adding their respective packages to the project.
 
 Depending on your Q# development setup, the method of doing so will vary. 
-Specifics for can be found at [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries) in the official documentation.
+Specifics for can be found at [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries?azure-portal=true) in the official documentation.
 Regardless of the your environment, though, the process is very straightforward.
 
 For example, if you are working with Q# command-line applications in Visual Studio Code, you can simply use the `dotnet` command to add a NuGet package reference to your project.
-Adding the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) package would then require only running the following command:
+Adding the [**Microsoft.Quantum.Numerics**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics?azure-portal=true) package would then require only running the following command:
 
 ```dotnetcli
 dotnet add package Microsoft.Quantum.Numerics
 ```
-
 
 ## What's next?
 

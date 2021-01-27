@@ -8,7 +8,7 @@ In this unit, you will familiarize yourself with the Q# API documentation: where
 
 ## Where is it?
 
-The official documentation for the Q# libraries provided with the Quantum Development Kit can be found from the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum) homepage, under the **API reference** tab in the table of contents:
+The official documentation for the Q# libraries provided with the Quantum Development Kit can be found from the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum?azure-portal=true) homepage, under the **API reference** tab in the table of contents:
 
 ![Screengrab showing Q# libraries API location](../media/3-api-location.png)
 
@@ -18,7 +18,7 @@ Alongside **Q# libraries**, there are a few other sets of API documentation.
 We won't focus on them here, but note that they concern various other parts of the QDK:
 - *.NET libraries* contains references for the trace simulator target machine and the *.NET* quantum chemistry library (those parts of the quantum chemistry library which are represented outside the Q# program).
 - *Python libraries* contains details regarding integration with Python as a host program.
-- *IQ# magic commands* contains the magic commands that can be used in Jupyter Notebooks (e.g. the [`%package` command](https://docs.microsoft.com/qsharp/api/iqsharp-magic/package) used to add a package to the workspace).
+- *IQ# magic commands* contains the magic commands that can be used in Jupyter Notebooks (e.g. the [`%package` command](https://docs.microsoft.com/qsharp/api/iqsharp-magic/package?azure-portal=true) used to add a package to the workspace).
 
 ### Q# library API references
 
@@ -42,7 +42,7 @@ The API documentation is automatically generated from the documentation comments
 Later in the module, you'll learn more about how the documentation is embedded in the source code when you write documentation comments for your own operations.
 
 For now though, we'll take you through an example to show you what you can expect and learn from the documentation. 
-Since it will be the centerpiece of our oracle in the next unit, let's check out the [`MultiplyAndAddByModularInteger` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger). 
+Since it will be the centerpiece of our oracle in the next unit, let's check out the [`MultiplyAndAddByModularInteger` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true). 
 Although this is an operation, note that the pages for functions and types are laid out in the same fashion.
 
 ## What does it tell me?
