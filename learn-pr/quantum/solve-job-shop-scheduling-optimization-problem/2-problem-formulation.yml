@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.2-problem-formulation
+title: Problem Formulation
+metadata:
+  title: Problem Formulation
+  description: Learn how to represent the problem mathematically.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-problem-formulation.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.8-solve-problem
+title: Solving the problem
+metadata:
+  title: Solving the problem
+  description: Learn how to submit the problem to Azure Quantum and understand the results.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-solve-problem.md)]

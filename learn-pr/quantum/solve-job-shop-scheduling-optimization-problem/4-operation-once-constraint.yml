@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.4-operation-once-constraint
+title: The operation-once constraint
+metadata:
+  title: The operation-once constraint
+  description: Learn how to formulate the operation-once constraint.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-operation-once-constraint.md)]

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem
+metadata:
+  title: Solve the Job Shop Scheduling Optimization Problem with Azure Quantum
+  description: Learn how to use Azure Quantum's optimization service to solve a job shop scheduling problem.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Solve the Job Shop Scheduling Optimization Problem with Azure Quantum
+summary: Learn how to use Azure Quantum's optimization service to solve a job shop scheduling problem.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Identify and build problem constraints for the job shop scheduling problem
+  - Convert problem constraints to a penalty model
+  - Learn how to represent the penalty model using Azure Quantum
+  - Solve optimization problems using Azure Quantum
+prerequisites: 
+  The latest version of the Azure Quantum Optimization SDK
+  Visual Studio Code
+iconUrl: /learn/achievements/quantum/solve-job-shop-scheduling-optimization-problem.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-quantum
+units:
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.1-introduction
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.2-problem-formulation
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.3-precedence-constraint
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.4-operation-once-constraint
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.5-no-overlap-constraint
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.6-minimize-makespan
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.7-putting-it-together
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.8-solve-problem
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.9-validate-solution
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.10-tune-parameters
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.11-knowledge-check
+- learn.quantum.solve-job-shop-scheduling-optimization-problem.12-summary
+badge:
+  uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.badge

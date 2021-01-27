@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

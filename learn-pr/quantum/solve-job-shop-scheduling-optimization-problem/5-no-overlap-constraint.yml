@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.5-no-overlap-constraint
+title: The no-overlap constraint
+metadata:
+  title: The no-overlap constraint
+  description: Learn how to formulate the no-overlap constraint.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-no-overlap-constraint.md)]

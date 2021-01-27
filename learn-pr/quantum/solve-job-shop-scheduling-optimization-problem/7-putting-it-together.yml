@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-job-shop-scheduling-optimization-problem.7-putting-it-together
+title: Putting it all together
+metadata:
+  title: Putting it all together
+  description: Learn how to combine constraints and build an array of Terms to submit to the Azure Quantum solver.
+  ms.date: 11/25/2020
+  author: anraman
+  ms.author: anraman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-putting-it-together.md)]
