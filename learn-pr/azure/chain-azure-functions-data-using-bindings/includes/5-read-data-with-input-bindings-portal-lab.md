@@ -220,7 +220,27 @@ Now that you have your binding defined, it's time to use it in your function.
 
 1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
 
-   [!code-javascript[](../code/find-bookmark-single.js)]
+     ```java
+    using namespace System.Net
+
+    param($Request, $bookmark, $TriggerMetadata)
+
+    if ($bookmark) {
+        $status = [HttpStatusCode]::OK
+        $body = @{ url = $bookmark.url }
+	ContentType = "application/json"
+    }
+    else {
+        $status = [HttpStatusCode]::NotFound
+        $body = "No bookmarks found"
+	ContentType = "text/plain"
+    }
+
+    Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
+        StatusCode = $status
+        Body = $body
+    })
+    ```
 
 ::: zone-end
 
