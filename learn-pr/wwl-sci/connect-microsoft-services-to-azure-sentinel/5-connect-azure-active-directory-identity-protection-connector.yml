@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-azure-active-directory-identity-protection-connector
+title: Connect the Azure Active Directory identity protection connector
+metadata:
+  title: Connect the Azure Active Directory identity protection connector
+  description: "Connect the Azure Active Directory identity protection connector"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-connect-azure-active-directory-identity-protection-connector.md)]
