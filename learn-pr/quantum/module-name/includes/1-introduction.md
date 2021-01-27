@@ -1,9 +1,9 @@
 Welcome to Azure Quantum!
 
-Azure Quantum is a cloud service that enables both quantum computing applications and optimization solutions, backed by reliability and scale of Azure. On Azure Quantum, you can use the [Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/) to build Q# programs to run on quantum hardware, or to formulate problems for optimization solvers to run on classical hardware. 
+Azure Quantum is a cloud service that enables both quantum computing applications and optimization solutions, backed by reliability and scale of Azure. On Azure Quantum, you can use the [Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true) to build Q# programs to run on quantum hardware, or to formulate problems for optimization solvers to run on classical hardware. 
 
 
-In the [Quantum Computing Foundations learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/), the quantum space exploration crew has been using quantum algorithms to solve some of the decisive problems, such as finding the more suitable route among space stations or supporting the mining mission. But the algorithms had been run on a simulator enabled by the Quantum Development Kit. You are finally establishing communication with Earth and need to connect to the hardware through Azure Quantum on Earth to run your algorithms for the mission. 
+In the [Quantum Computing Foundations learning path](https://docs.microsoft.com/en-us/learn/paths/quantum-computing-fundamentals/?azure-portal=true), the quantum space exploration crew has been using quantum algorithms to solve some of the decisive problems, such as finding the more suitable route among space stations or supporting the mining mission. But the algorithms had been run on a simulator enabled by the Quantum Development Kit. You are finally establishing communication with Earth and need to connect to the hardware through Azure Quantum on Earth to run your algorithms for the mission. 
 
 ![Figure Azure Quantum Services](../media/1-azure-quantum-services.png)
 
@@ -27,5 +27,5 @@ In this module you'll:
 ## Prerequisites
 
 - None for users in the Optimization path.
-- [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/).
+- [Create an Azure account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/?azure-portal=true).
 - Any Python development environment.
