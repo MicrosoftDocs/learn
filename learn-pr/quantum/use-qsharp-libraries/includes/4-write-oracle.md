@@ -61,7 +61,7 @@ $$
 In the remainder of this unit you will learn how to explicitly implement this mapping as a Q# operation. 
 In the next unit, you will put it all together and finally find the book you need!
 
-### Flag the correct state by applying the oracle
+### Step 1. Flag the correct state by applying the oracle
 
 Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, i.e. those which are a solution to the search problem.
 This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` operation is applied to the $|-\rangle$ state, the $|-\rangle$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
@@ -91,29 +91,12 @@ After this, the target register and the flag qubit can be uncomputed (handled by
 
 The following code defines the operation `IsbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
 
-```qsharp
-    operation IsbnOracle(digitReg : Qubit[]) : Unit is Adj + Ctl {
-        // Allocate target register for oracle mapping, flag qubit for phase kickback
-        using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
-            within {
-                // Initialize flag qubit to |-⟩ 
-                X(flagQubit);
-                H(flagQubit);
-                // Map targetReg to |(9 + 6x) mod 11 ⟩, where |x⟩ is the state of digitReg
-                ComputeIsbnCheck(digitReg, targetReg);
-            } apply {
-                // States where targetReg is in |0⟩ number state will be flagged with a -1
-                // phase due to controlled X they apply to the flag qubit in the |-⟩ state.  
-                ApplyControlledOnInt(0, X, targetReg, flagQubit);
-            }
-        }
-    }
-```
+:::code language="qsharp" source="code/4-program-1.qs":::
 
 Note that upon allocation, `targetReg` will be in the state $|0\rangle$. Therefore, `ComputeIsbnCheck` will need to first initialize
 
 
-### Apply the arithmetic mapping to target state
+### Step 2. Apply the arithmetic mapping to target state
 
 We just described how the oracle is implemented using the `ComputeIsbnCheck` operation, which performs the mapping
 $$
@@ -124,18 +107,10 @@ As mentioned above, we can straightforwardly bring the target register from $|0\
 Then, the only step left to perform the mapping using `MultiplyAndAddByModularInteger`.
 The code to do this is shown below.
 
-```qsharp
-    operation ComputeIsbnCheck(digitReg : Qubit[], targetReg : Qubit[]) : Unit is Adj + Ctl {
-        // Being freshly allocated, targetReg will be in |0⟩ when this operation is called.
-        // We first intialize it to |9⟩:
-        ApplyXorInPlace(9, LittleEndian(targetReg));
+:::code language="qsharp" source="code/4-program-2.qs":::
 
-        // Apply the mapping |x⟩|9⟩ -> |x⟩ |(9 + 6x) mod 11 ⟩ where |x⟩ is the state of digitReg
-        MultiplyAndAddByModularInteger(6, 11, LittleEndian(digitReg), LittleEndian(targetReg));
-    }
-```
 
-## Generalize to arbitrary ISBNs
+## Step 3. Generalize to arbitrary ISBNs
 
 Our discussion above was simplified by only considering the specific ISBN check of 
 $$
@@ -152,57 +127,13 @@ $$
 $$
 Assuming we will represent the incomplete ISBN as a 10-integer array with the missing digit indicated by a `-1`, we define this function as
 
-```qsharp
-    function GetIsbnCheckConstants(digits : Int[]) : (Int, Int) {
-        EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
-        // |(b + a x) mod 11 ⟩
-        mutable a = 0;
-        mutable b = 0;
-        for ((idx, digit) in Enumerated(digits)) {
-            if (digit < 0) {
-                set a = 10 - idx;
-            }
-            else {
-                set b += (10 - idx) * digit;
-            } 
-        }
-        return (a, b % 11);
-    }
-```
+:::code language="qsharp" source="code/4-program-3.qs":::
+
 As expected, this returns a tuple `(6, 9)` if given our example as `[0, 3, 0, 6, -1, 0, 6, 1, 5, 2]`.
 
 Now, we redefine `ComputeIsbnCheck` and `IsbnOracle` to take these constants as inputs:
 
-```qsharp
-    operation ComputeIsbnCheck(constants : (Int, Int), digitReg : Qubit[], targetReg : Qubit[]) : Unit is Adj + Ctl {
-        let (a, b) = constants;
-
-        // Being freshly allocated, targetReg will be in |0⟩ when this operation is called.
-        // We first intialize it to |b⟩:
-        ApplyXorInPlace(b, LittleEndian(targetReg));
-
-        // Apply the mapping |x⟩|b⟩ -> |x⟩ |(b + a*x) mod 11 ⟩ where |x⟩ is the state of digitReg
-        MultiplyAndAddByModularInteger(a, 11, LittleEndian(digitReg), LittleEndian(targetReg));
-    }
-
-
-    operation IsbnOracle(constants : (Int, Int), digitReg : Qubit[]) : Unit is Adj + Ctl {
-        // Allocate target register for oracle mapping, flag qubit for phase kickback
-        using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
-            within {
-                // Initialize flag qubit to |-⟩ 
-                X(flagQubit);
-                H(flagQubit);
-                // Map targetReg to |(b + a*x) mod 11 ⟩, where |x⟩ is the state of digitReg
-                ComputeIsbnCheck(digitReg, targetReg, constants);
-            } apply {
-                // States where targetReg is in |0⟩ number state will be flagged with a -1
-                // phase due to controlled X they apply to the flag qubit in the |-⟩ state.  
-                ApplyControlledOnInt(0, X, targetReg, flagQubit);
-            }
-        }
-    }
-```
+:::code language="qsharp" source="code/4-program-4.qs":::
 
 ## What's next?
 

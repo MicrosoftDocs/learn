@@ -34,7 +34,7 @@ units:
 - learn.quantum.use-qsharp-libraries.4-write-oracle
 - learn.quantum.use-qsharp-libraries.5-run-full-program
 - learn.quantum.use-qsharp-libraries.6-write-documentation
-- learn.quantum.use-qsharp-libraries.8-knowledge-check
-- learn.quantum.use-qsharp-libraries.9-summary
+- learn.quantum.use-qsharp-libraries.7-knowledge-check
+- learn.quantum.use-qsharp-libraries.8-summary
 badge:
   uid: learn.quantum.use-qsharp-libraries.badge
