@@ -23,10 +23,10 @@ quiz:
       explanation: "Correct. Discovery and insights can find privileged role assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
     - content: "Discovery and insights can find when guest's access resources across Azure AD."
       isCorrect: false
-      explanation: "Incorrect. Disocovery and insights finds privileged role assignments and authorized guest user access."
+      explanation: "Incorrect. Discovery and insights finds privileged role assignments and authorized guest user access."
     - content: "Discovery and insights can find security group assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
       isCorrect: false
-      explanation: "Incorrect. Disocvery and insights finds priveleged role assignments."
+      explanation: "Incorrect. Discovery and insights finds privileged role assignments."
   - content: "Whether to assign a role to a group instead of to individual users is a strategic decision. When planning, consider assigning a role to a group to manage role assignments when you want to delegate assigning the role and what else?"
     choices:
     - content: "You want to use conditional access policies."
