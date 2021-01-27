@@ -1,6 +1,6 @@
 Q# provides you with an increasing number of libraries that will help you leverage existing functionalities to create advanced quantum algorithms.
 
-In previous modules, you learned how to use the basic features of the Quantum Development Kit for solving tasks of your space mission. Now, you are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their identifying number sequence (ISBN). You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field, one of the digits is now illegible.
+In previous modules, you learned how to use the basic features of the [Quantum Development Kit](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/) for solving tasks of your space mission. Now, you are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their identifying number sequence (ISBN). You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field, one of the digits is now illegible.
 By implementing Grover's algorithm with the Q# Standard Library you will determine the missing digit and save your space garden.
 
 ## Learning objectives
