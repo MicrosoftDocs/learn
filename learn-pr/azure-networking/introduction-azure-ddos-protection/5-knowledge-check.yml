@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 02/28/2021
+  ms.date: 01/4/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Which layers of the OSI model do DDoS Protocol attacks target?"
     choices:
-    - content: "A"
+    - content: "The Physical L1 and Data Link L2 layers"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "That's incorrect. A DDoS Protocol attack doesn't target the L1 and L2 layers."
+    - content: "The Network L3 and Transport L4 layers"
       isCorrect: true
-      explanation: "."
-    - content: "C"
+      explanation: "That's correct. A DDoS Protocol attack targets the L3 and L4 layers."
+    - content: "The Session L5 and the Presentation L6 layers"
       isCorrect: false
-      explanation: "."
-  - content: "TBD"
+      explanation: "That's incorrect. A DDoS Protocol attack doesn't target the L5 and L6 layers."
+  - content: "Which Azure DDoS Protection service offers DDoS rapid response support?"
     choices:
-    - content: "A"
+    - content: "DDoS Protection Standard"
       isCorrect: true
-      explanation: "."
-    - content: "B"
+      explanation: "That's correct. DDoS Protection Standard includes DDoS rapid response support."
+    - content: "DDoS Protection Basic"
       isCorrect: false
-      explanation: "."
-    - content: "C"
+      explanation: "That's incorrect. DDoS Protection Basic doesn't include DDoS rapid response support."
+    - content: "This service isn't offered with DDoS Protection Basic or DDoS Protection Standard."
       isCorrect: false
-      explanation: "."
-  - content: "TBD" 
+      explanation: "That's incorrect. DDoS Protection Standard includes DDoS rapid response support."
+  - content: "What should an administrator do with the data logged during a DDoS attack?" 
     choices:
-    - content: "A"
+    - content: "Discard this data when the attack is over."
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "That's incorrect. You shouldn't discard this data after the attack is over."
+    - content: "Use this data to analyze the attack."
       isCorrect: true
-      explanation: "."
-    - content: "C"
+      explanation: "That's correct. You should use the logged data to analyze the attack."
+    - content: "Immediately clear your logs during the attack."
       isCorrect: false
-      explanation: "."
+      explanation: "That's incorrect. You shouldn't clear your logs during the attack."
