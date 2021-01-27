@@ -1,6 +1,6 @@
 The installation and configuration of the Unified Labeling Scanner is done from the AIPService PowerShell module on a server that will act as the Unified Labeling Scanner in an environment.
 
-### Installation of the Unified Labeling scanner
+### Installation of the unified labeling scanner
 
 After fulfilling the requirements like service accounts and a SQL Server instance, it´s possible to install the Unified Labeling Scanner in the following steps:
 
@@ -21,11 +21,11 @@ After fulfilling the requirements like service accounts and a SQL Server instanc
 
 1. You can control the installation and operation in the Task Manager of the Windows Server, which is the host for the scanner.
 
-### Configuration of the Unified Labeling Scanner
+### Configuration of the unified labeling scanner
 
 The Unified label is installed on a Windows server and is connected to the SQL Server instance. In the next steps to configure the Scanner we need to connect the local instance with the Azure environment with an Azure AD Token and after it we can configure it to make the first run.
 
-### Acquire an Azure AD Token for the Scanner
+### Acquire an Azure AD Token for the scanner
 
 Perform the following steps to fetch an Azure AD Token for the Unified Labeling Scanner:
 
@@ -117,7 +117,7 @@ Moreover, it´s also possible to restart the scan and rescan all the files.
 > [!WARNING]
 > The Unified Labeling scanner does not scan and protect in real time. The crawler runs a cycle and repeat. 
 
-## Operational scenarios for the Unified Labeling Scanner
+## Operational scenarios for the unified labeling scanner
 
 The Unified labeling scanner can be used for different operational scenarios, some of them include:
 
@@ -131,8 +131,6 @@ The Unified labeling scanner can be used for different operational scenarios, so
 ## Learn more
 
 [Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
-
-[Cmdlets for the Unified Labeling Scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install%23list-of-cmdlets-for-the-scanner?azure-portal=true)
 
 [Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
 

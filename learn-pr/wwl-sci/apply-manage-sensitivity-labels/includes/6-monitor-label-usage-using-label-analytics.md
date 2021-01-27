@@ -59,7 +59,7 @@ After the workspace has been created, you can then use one of the following role
 
 The amount of data collected and stored in your Azure Information Protection workspace will vary significantly for each tenant, depending on factors such as how many Azure Information Protection clients and other supported endpoints you have, whether you're collecting endpoint discovery data, you've deployed scanners, the number of protected documents that are accessed, and so on.
 
-### Costs of Label Analytics
+### Costs of label analytics
 
 Azure Monitor Logs has a **Usage and estimated costs** feature to help you estimate and review the amount of data stored. You can also control the data retention period for your Log Analytics workspace.
 
@@ -89,7 +89,7 @@ It's possible to apply a sensitivity label to a file with these options:
 
 When using the native labeling functionality, assigning a label is different and works with the native ribbon button:
 
-![Graphical user interface, application](../media/labeling-native-client.png)
+:::image type="content" source="../media/labeling-native-client.png" alt-text="Graphical user interface, application":::
 
 Assigning a label is also possible with the mobile versions of Word like Word mobile app on iOS.
 

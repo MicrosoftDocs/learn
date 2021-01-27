@@ -20,7 +20,7 @@ Possible restrictions to configure via sensitivity labels:
 
 - Access from unmanaged devices (Allow full access/Allow limited, web-only access/Block access)
 
-## Options for applying a sensitivity label to Groups and SharePoint sites
+## Options for applying a sensitivity label to groups and SharePoint sites
 
 There are many ways to apply a label to a Group and SharePoint site.
 
@@ -52,7 +52,7 @@ As a SharePoint administrator you can use the SharePoint Admin center to change 
 
 1. For the selected site, navigate to **Policies**.
 
-    ![Graphical user interface, application](../media/sharepoint-site-policy.png)
+    ![SharePoint applications](../media/sharepoint-site-policy.png)
 
 1. Select **edit** to set the Sensitivity label
 
@@ -72,7 +72,7 @@ A Microsoft Teams Administrator can change or select a sensitivity label at the 
 
 1. Select **Sensitivity** and chose the desired label for the team.
 
-![Graphical user interface, application](../media/teams-sensitivity-label.png)
+![Teams application interface](../media/teams-sensitivity-label.png)
 
 ### Microsoft Teams creation controls for sensitivity labeling
 
@@ -115,7 +115,7 @@ In the default wizard, it´s possible to select a sensitivity label. This option
 
 1. Enter a meaningful **Site name**, **Group owner** for the required fields and enter the optional fields as required.
 
-    ![Graphical user interface, application](../media/sharepoint-site-sensitivity.png)
+:::image type="content" source="../media/sharepoint-site-sensitivity.png" alt-text="SharePoint sensitivity label":::
 
 1. Select the **Published sensitivity label**.
 
@@ -139,7 +139,7 @@ If the SharePoint Site is deployed, the label can be changed to handle a lifecyc
 
 The label will be displayed near to the site name after some time.
 
-![A screenshot of a computer](../media/sharepoint-site-sensitivity-user-displayed.png)
+:::image type="content" source="../media/sharepoint-site-sensitivity-user-displayed.png" alt-text="A screenshot of a computer":::
 
 > [!WARNING]
 > If the new label is displayed and has the option "no external user", this setting will only apply to new external uses. 
@@ -160,4 +160,4 @@ As a Microsoft Team's Owner you can change the label of a Microsoft Team to hand
 
 1. Select **done.**
 
-![Graphical user interface, application, Teams](../media/teams-sensitivity-owner-change.png)
+:::image type="content" source="../media/teams-sensitivity-owner-change.png" alt-text="Graphical user interface, application, Teams":::

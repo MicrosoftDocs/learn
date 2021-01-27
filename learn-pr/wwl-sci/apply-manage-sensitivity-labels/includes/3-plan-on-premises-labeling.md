@@ -28,7 +28,7 @@ The Unified Labeling Scanner enables you to label on-premises files. Here are so
 
 - Storing data only in a specific information protection system
 
-## Requirements and Best Practices for the Unified Labeling Scanner
+## Requirements and best practices for the unified labeling scanner
 
 The Azure Information Protection unified labeling scanner scans and protects files in on-premises environments like NAS storages, file shares, and local SharePoint servers.
 
@@ -49,7 +49,7 @@ To classify and protect your files, the scanner uses sensitivity labels configur
 
 - Microsoft 365 Security and Compliance Center
 
-### Requirements for the Unified Labeling Scanner
+### Requirements for the unified labeling scanner
 
 The following requirements must be fulfilled before installing the Unified Labeling Scanner:
 
@@ -65,7 +65,7 @@ The following requirements must be fulfilled before installing the Unified Label
 
 - Any Windows Server 2016 to Windows Server 2019 with UI.
 
-### Service Accounts needed
+### Service accounts needed
 
 For the installation and to run the scanner the following service accounts are needed:
 
@@ -80,8 +80,3 @@ For the installation and to run the scanner the following service accounts are n
 ## Learn more
 
 [Understanding the Azure Information Protection unified labeling scanner - AIP | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner?azure-portal=true)
-
-[alternative deployments for the AIP scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs%23deploying-the-scanner-with-alternative-configurations?azure-portal=true)
-
-[Service account requirements](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs%23service-account-requirements?azure-portal=true)
-
