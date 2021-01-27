@@ -16,10 +16,10 @@ quiz:
 
   - content: "What Azure Active Directory role is required to modify Azure Digital Twins?"
     choices:
-    - content: "Azure Digital Twins Data Owner."
+    - content: "Azure Digital Twins Data Owner"
       isCorrect: true
       explanation: "The Azure Digital Twins Data Owner has full control over Azure Digital Twins resources."
-    - content: "Azure Administrator."
+    - content: "Azure Administrator"
       isCorrect: false
       explanation: "An Azure Administrator can create instances of Azure Digital Twin services but can't modify or write."
 
