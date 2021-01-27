@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/26/2021
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -37,15 +37,15 @@ quiz:
       explanation: "Incorrect. Both manual and automatic user provisioning are allowed."
     - content: "Manual and automatic"
       isCorrect: true
-      explanation: "correct choice"
+      explanation: "Correct. Manual provisioning means there is no automatic Azure AD provisioning connector for the app yet. User accounts must be created manually, for example by adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app or contact the app developer to determine what mechanisms are available. Automatic means that an Azure AD provisioning connector has been developed for this application."
   - content: "Which of the following groups of information can be found in the Azure Active Direcotry Usage and insights report?"
     choices:
-    - content: "Who gave consent to an application"
+    - content: "The top used application in your organization - Who gave consent to an application - and The top sign-in errors for each application"
       isCorrect: false
-      explanation: ", The service that logged the occurrence"
-    - content: "The top sign-in errors for each application"
+      explanation: "Incorrect. The Enterprise application audit logs are used to identify who gave consent to an application."
+    - content: "The top used application in your orgnaization - The applications with the most failed sign-ins - The service that logged the occurence"
       isCorrect: false
-      explanation: "Incorrect. The Enterprise application audit logs are used to identify who gave consent to an application., The applications with the most failed sign-ins"
-    - content: "The top used applications in your organization"
+      explanation: "Incorrect. Information about a service that logged an occurrence is part of Audit logs and not usage and insights."
+    - content: "The top used applications in your organization - The application with the most failed sign-ins - The top sign-in errors for each application"
       isCorrect: true
-      explanation: ", The top used applications in your organization"
+      explanation: "Correct. With the usage and insights report, you can get an application-centric view of your sign-in data to find information about these three topics."
