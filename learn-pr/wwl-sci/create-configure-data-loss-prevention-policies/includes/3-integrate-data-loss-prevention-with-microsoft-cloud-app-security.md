@@ -22,7 +22,7 @@ You may need to activate the file monitoring in MCAS before creating file polici
 
 After selecting this setting, you can create file policies in MCAS.
 
-To use the capabilities of the Compliance center to monitor non-Microsoft cloud apps you need to connect these apps to MCAS. Afterwards they will be available as instances in the Microsoft Cloud app security location of your DLP policies. This is required to complete integration of MCAS into DLP.
+To use the capabilities of the Compliance center to monitor non-Microsoft cloud apps you need to connect these apps to Microsoft Cloud App Security. Afterwards they will be available as instances in the Microsoft Cloud app security location of your DLP policies. This is required to complete integration of MCAS into DLP.
 
 If you do not select a specific instance the policy will apply to all connected apps.
 
