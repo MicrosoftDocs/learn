@@ -33,7 +33,7 @@ $$\text{where }\alpha, \beta, \gamma \text{ and } \delta \text{ represent the di
 The weights represent how important each penalty function is, relative to all the others.
 
 > [!NOTE]
-> Along with modifying your cost function (how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success. [Unit 10](xref:learn.quantum.solve-job-shop-scheduling-optimization-problem.10-tune-parameters) dives a little deeper into parameter tuning.
+> Along with modifying your cost function (how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success. [Unit 10 in this module](https://docs.microsoft.com/en-us/learn/modules/solve-job-shop-scheduling-optimization-problem/10-tune-parameters/?azure-portal=true) dives a little deeper into parameter tuning. 
 
 ### Code
 
