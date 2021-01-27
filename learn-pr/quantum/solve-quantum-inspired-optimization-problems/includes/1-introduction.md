@@ -21,4 +21,4 @@ In this module you'll:
 2. [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html?azure-portal=true)
 3. An Azure Quantum workspace
 
-If you don't have these tools yet, we recommend that you follow the [Get Started with Azure Quantum module](https://docs.microsoft.com/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
+If you don't have these tools yet, we recommend that you follow the [Get Started with Azure Quantum](https://docs.microsoft.com/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
