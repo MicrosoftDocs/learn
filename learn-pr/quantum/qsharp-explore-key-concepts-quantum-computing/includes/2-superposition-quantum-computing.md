@@ -1,6 +1,8 @@
 For some computational tasks, quantum computing provides exponential speedups. These speedups are possible thanks to three phenomena from
 quantum mechanics: superposition, interference, and entanglement.
 
+A classical computer represents information using _bits_, which can be either '0's or '1's; a quantum computer will have the advantage of using zeros, ones and superpositions of zeros and ones. Where current computers may require an infeasible amount of time to solve some of the world’s most challenging problems, a fault-tolerant scalable quantum computer could find a solution [very quickly](https://www.microsoft.com/en-us/research/blog/problems-will-solve-quantum-computer/), with the correct algorithms. Just like a bit is the smallest unit of classical information, in quantum information theory we use quantum bits, or _qubits_. A quantum state with $n$ qubits is represented by a superposition of $2^n$ possibilities, implying that the computational capacity of a quantum processor grows exponentially with the number of qubits. 
+
 In the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this part, you'll learn more about superposition.
 
 ## Quantum computers are quantum systems

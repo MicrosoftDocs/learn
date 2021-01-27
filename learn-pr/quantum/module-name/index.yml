@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.quantum.module-name
+metadata:
+  title: Title of the module
+  description: Description of the module.
+  ms.date: 01/01/2021
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Title of the module
+summary: Summary of the module.
+abstract: |
+  After completing this module, you'll able to:
+
+  - A
+  - B
+  - C
+  - D
+prerequisites: In order to use the Azure Quantum service, you will need an active Azure subscription. For more information about creating an Azure account and subscription, see the Microsoft Learn module [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/).
+iconUrl: /learn/achievements/quantum/module-name.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+units:
+- learn.quantum.module-name.1-introduction
+- learn.quantum.module-name.2-azure-quantum-structure-overview
+- learn.quantum.module-name.3-create-quantum-workspace
+- learn.quantum.module-name.4-case-study-quantum-computing
+- learn.quantum.module-name.5-case-study-optimization
+- learn.quantum.module-name.6-knowledge-check
+- learn.quantum.module-name.7-summary
+badge:
+  uid: learn.quantum.module-name.badge

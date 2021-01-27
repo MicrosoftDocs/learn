@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.module-name.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.date: 01/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Azure Quantum offers two services: quantum computing and optimization solutions. What is the difference between them?'
+    choices:
+    - content: 'Quantum computing is only for simulating quantum systems like molecules and optimization use quantum computers to solve optimization problems.'
+      isCorrect: false
+      explanation: "Quantum computing is not restricted to simulating quantum systems. The optimization solutions don't use quantum computers."
+    - content: 'You can use quantum computing to run quantum algorithms in quantum hardware and optimization to solve optimization problems using classical hardware.'
+      isCorrect: true
+      explanation: "Quantum computing consist of running quantum algorithms such as Grover's algorithm in a real or simulated quantum device, while optimizations consists of solving optimization problems using classical computers."
+    - content: 'You use quantum computing to run quantum algorithms in quantum hardware and then you use optimization run those algorithms more efficiently.'
+      isCorrect: false
+      explanation: "Quantum computing and optimization address different kinds of problems."
+
+  - content: 'Which of the following affirmations about Azure Quantum is **false**?'
+    choices:
+    - content: 'Simulators, quantum computers, and optimization solvers are examples of targets of Azure Quantum.'
+      isCorrect: false
+      explanation: "This affirmation is correct."
+    - content: 'Each job has an ID that must be unique within the workspace.'
+      isCorrect: false
+      explanation: "This affirmation is correct."
+    - content: "You can submit jobs without an Azure Storage Account, however it's recommended to have one to keep your results."
+      isCorrect: true
+      explanation: "This affirmation is false. You must own an Azure storage account in order to create a quantum workspace to submit jobs."
+
+  - content: 'Which of the following sentences about quantum-inspired optimization in Azure Quantum is **true**?'
+    choices:
+    - content: 'Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run on classical hardware, also called quantum-inspired algorithms.'
+      isCorrect: true
+      explanation: "This sentence is correct. These algorithms allow us to exploit some of the advantages of quantum computing approaches today on classical hardware. "
+    - content: 'Azure Quantum only offers quantum-inspired optimization solutions. For classical optimization, you should look into other Azure products.'
+      isCorrect: false
+      explanation: "This affirmation is false. Azure Quantum also offers many different optimization solvers that aren't quantum inspired."
+    - content: 'Quantum-inspired optimization solutions in Azure Quantum are useful for machine learning.'
+      isCorrect: false
+      explanation: "This affirmation is false. Although machine learning problems can often be expressed as optimization problems, Azure Quantum optimization solvers are in general not suitable to solve machine learning problems."
