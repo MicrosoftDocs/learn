@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.9-summary
-title: Summary
+uid: learn.quantum.use-qsharp-libraries.1-introduction
+title: Introduction
 metadata:
-  title: Summary
-  description: Summary
+  title: Introduction
+  description: Introduction
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 2
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/1-introduction.md)]

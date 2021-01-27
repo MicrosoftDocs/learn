@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.4-write-oracle
+uid: learn.quantum.use-qsharp-libraries.4-write-oracle
 title: Exercise - Write an oracle to validate ISBNs
 metadata:
   title: Exercise - Write an oracle to validate ISBNs
