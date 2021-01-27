@@ -1,6 +1,6 @@
 As a Security Operations Analyst, you need to understand Compliance-related terminology and alerts.  The Data loss prevention (DLP) alerts will help you in your investigation to find the full scope of the incident.  DLP alerts can be generated from Microsoft 365 Compliance or Microsoft Cloud App Security.  You might not be the person creating the DLP Policies, but it is important for you to understand them so you can recommend changes.
 
-To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records.
+To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personal information such as credit card numbers, social security numbers, or health records.
 
 With a DLP policy, you can:
 
@@ -22,7 +22,7 @@ With a DLP policy, you can:
 
 - View DLP alerts and reports showing content that matches your organization’s DLP policies.
 
-## DLP Components
+## Data loss prevention Components
 
 If you have not worked with DLP, it is important to understand the underlying components.
 
@@ -36,7 +36,7 @@ Microsoft 365 compliance comes with built-in Sensitive information types like Cr
 
 Sensitivity labels specify the classification of a document.  These could be terms like public, private, or classified.  With these labels, more functionality can be applied to the document, like encryption.  Labels are applied to documents either manually by the user or automatically based on sensitive info types.
 
-### DLP Policy
+### Data loss prevention policy
 
 A DLP policy contains a few basic things:
 
@@ -48,7 +48,7 @@ A DLP policy contains a few basic things:
 
   - Actions that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification.
 
-### Cloud App Security File Policy
+### Cloud App Security file policy
 
 File policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Cloud App Security can monitor any file type based on more than 20 metadata filters.
 
