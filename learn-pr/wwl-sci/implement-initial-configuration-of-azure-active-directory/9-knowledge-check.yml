@@ -27,7 +27,7 @@ quiz:
     - content: "No, a domain name cannot be included as part of an application or other resource."
       isCorrect: false
       explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
-  - content: "The proliferation of many types of devices and bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and any time. What is the other goal?"
+  - content: "The proliferation of many types of devices and bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and anytime.  What is the other goal?"
     choices:
     - content: "Provide antimalware apps for a various devices."
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
       explanation: "Sorry, that's incorrect. Establishing baseline security guidelines is not a goal that IT professionals need to accommodate."
     - content: "Protect the organization's assets."
       isCorrect: true
-      explanation: "Correct. Identity is new perimiter is a common security phrase these days, meaning that validation or both people and devices are required to protect company assets."
+      explanation: "Correct. Identity is new perimeter is a common security phrase these days, meaning that validation or both people and devices are required to protect company assets."
   - content: "Azure AD guest users have restricted directory permissions. Which of the following answers best describes guest users capabilities?"
     choices:
     - content: "They can manage their own profile, change their own password, and add other B2B guests to groups."
