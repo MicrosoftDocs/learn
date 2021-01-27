@@ -53,7 +53,7 @@ A DLP policy contains information about:
 
 The following image depicts the main components of a DLP policy.
 
-:::image type="content" source="../media/5-data-loss-prevention.png" alt-text="Components of a DLP policy components, which include the locations to apply the policy in, and different rules, each of which contains conditions and actions." border="false":::
+:::image type="content" source="../media/5-data-loss-prevention.png" alt-text="Components of a DLP policy, which include the locations to apply the policy in, and different rules, each of which contains conditions and actions." border="false":::
 
 You can use a rule to meet a specific protection requirement, and then use a DLP policy to group together common protection requirements, such as all the rules needed to comply with a specific regulation. For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could:
 
