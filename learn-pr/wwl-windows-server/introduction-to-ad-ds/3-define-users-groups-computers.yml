@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-ad-ds.define-users-groups-computers
+title: Define users, groups, and computers
+metadata:
+  title: Define users, groups, and computers
+  description: "Define users, groups, and computers"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-define-users-groups-computers.md)]
