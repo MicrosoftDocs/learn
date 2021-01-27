@@ -90,7 +90,7 @@ Customers can now troubleshoot Conditional Access policies through all sign-in r
 First, narrow down the reported data to a level that works for you. Second, filter sign-in data using date field as default filter. Azure AD provides you with a broad range of additional filters you can set:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot shows the Add filters option.](../media/04.png)
+> ![Screenshot shows the Add filters option.](../media/lp4_04.png)
 
 **Request ID** - The ID of the request you care about.
 
@@ -163,7 +163,7 @@ First, narrow down the reported data to a level that works for you. Second, filt
 Click the **Download** option to create a CSV or JSON file of the most recent 250,000 records. Start with **Download Sign-ins** if you want to work with the data outside the Azure portal.
 
 > [!div class="mx-imgBorder"]
-> ![Download](../media/71.png)
+> ![Download](../media/lp4_71.png)
 
 > [!IMPORTANT]
 > The number of records you can download is constrained by the [Azure AD report retention policies](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention).
@@ -185,7 +185,7 @@ Azure AD and the Azure portal both provide you with additional entry points to s
 The user sign-in graph in the **Identity security protection** overview page shows weekly aggregations of sign-ins. The default for the period is 30 days.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot shows a graph of Sign-ins over a month.](../media/06.png)
+> ![Screenshot shows a graph of Sign-ins over a month.](../media/lp4_06.png)
 
 Click on a day in the sign-in graph, you get an overview of the sign-in activities for this day.
 
@@ -229,7 +229,7 @@ By clicking an item, you get more details about the sign-in operation:
 On the **Users** page, you get a complete overview of all user sign-ins by clicking **Sign-ins** in the **Activity** section.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot shows the Activity section where you can select Sign-ins.](../media/08.png)
+> ![Screenshot shows the Activity section where you can select Sign-ins.](../media/lp4_08.png)
 
 ## Usage of managed applications
 
@@ -244,7 +244,7 @@ With an application-centric view of your sign-in data, you can answer questions 
 The entry point to this data is the top three applications in your organization. The data is contained within the last 30 days report in the **Overview** section under **Enterprise applications**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot shows where you can select Overview.](../media/10.png)
+> ![Screenshot shows where you can select Overview.](../media/lp4_10.png)
 
 The app-usage graphs weekly aggregations of sign-ins for your top three applications in a given time period. The default time period is 30 days.
 
