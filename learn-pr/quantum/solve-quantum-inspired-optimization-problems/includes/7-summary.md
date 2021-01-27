@@ -1,3 +1,5 @@
+Phew! Luckily, an intergalactic crisis could be averted, thanks to your clever use of a QIO algorithm to equitably distribute the rare mineral.
+
 You now have a basic understanding of QIO and some of the problems it can solve. Here's a brief recap:
 
 * There are many types of quantum-inspired algorithms. One commonly used quantum-inspired algorithm is based on a computational model called *adiabatic quantum computing*.
@@ -19,6 +21,6 @@ Here are resources where you can learn more:
 
 [How the quest for a scalable quantum computer is helping fight cancer](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/?azure-portal=true) shows how QIO is helping fight cancer.
 
-## Get started with quantum programming with Q#
+## Get started with quantum programming with Q\#
 
-To get started with writing quantum programs, check out [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). There, you'll build a basic program that measures qubits to generate random numbers.
+To get started with writing quantum programs, check out [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true). There, you'll build a basic program that measures qubits to generate random numbers.
