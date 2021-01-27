@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-maintain-azure-active-directory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of the audit logs?"
+    choices:
+    - content: "Azure AD audit logs provide a comparison of budgeted Azure usage compared to actual."
+      isCorrect: false
+      explanation: "Incorrect. Audit logs provide traceability through logs for all changes made by various features within Azure AD. Examples of audit logs include changes made to any resources within Azure AD like adding or removing users, apps, groups, roles, and policies."
+    - content: "Azure AD audit logs provide records of system activities for compliance reporting."
+      isCorrect: true
+      explanation: "Correct. An audit log has a default list view that shows data, like the date and time of the occurrence, the service that logged the occurrence, the category and name of the activity (what), the status of the activity (success or failure), the target, and the initiator/actor (who) of an activity."
+    - content: "Azure AD audit logs allow customer to monitor activity when provisioning new services within Azure."
+      isCorrect: false
+      explanation: "Incorrect. Audit logs provide traceability through logs for all changes made by various features within Azure AD. Examples of audit logs include changes made to any resources within Azure AD like adding or removing users, apps, groups, roles, and policies."
+  - content: "Can Azure export logging data to third-party SIEM tools?"
+    choices:
+    - content: "Yes, Azure supports exporting log data to several common third-party SIEM tools."
+      isCorrect: true
+      explanation: "Correct. Azure can export to many of the most popular SIEM tools. The most common are Splunk, IBM QRadar, and ArcSight."
+    - content: "No, Azure only supports the export to Azure Sentinel."
+      isCorrect: false
+      explanation: "Incorrect. Azure Sentinel is a Microsoft first-party SIEM tool, but we do support using other tools, such as Splunk, IBM QRadar, and ArcSight."
+    - content: "Insert the second incorrect answer text in this cell."
+      isCorrect: false
+      explanation: "Incorrect. While Splunk is one of the third-party SIEM tools we can export data to, it is not the only one. We also support other third-party SIEM tools, such as IBM QRadar and ArcSight."
+  - content: "You want to configure email notifications to be sent from Azure AD Domain Services when issues are detected. In Azure, where would you configure this?"
+    choices:
+    - content: "Azure Portal > Azure Active Directory > Monitoring > Notifications > Add email recipient."
+      isCorrect: false
+      explanation: "Incorrect. Azure Active Directory Domain Services is a standalone blade in Azure that allows you to configure notifications and other services."
+    - content: "Azure Portal > Azure AD Domain Services > Notification settings > Add email recipient."
+      isCorrect: true
+      explanation: "Correct. The health of an Azure Active Directory Domain Services (Azure AD DS) managed domain is monitored by the Azure platform. The health status page in the Azure portal shows any alerts for the managed domain. To make sure issues are responded to in a timely manner, email notifications can be configured to report on health alerts as soon as they're detected in the Azure AD DS managed domain."
+    - content: "Azure Portal > Notification Hubs > Azure Active Directory > Add email recipient."
+      isCorrect: false
+      explanation: "Incorrect. Azure Notification Hubs are to provide push notification to any platform (iOS, Android, Windows, etc.) to share breaking news, promotional content, or other Azure App to user topics."
