@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/26/2021
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -20,24 +20,24 @@ quiz:
     choices:
     - content: "eDiscovery cases"
       isCorrect: false
-      explanation: "This is not correct."
+      explanation: "This is not correct. eDiscovery cases don't provide versioning."
     - content: "Versioning in SharePoint Online"
       isCorrect: true
-      explanation: "This is correct."
+      explanation: "This is correct. SharePoint Online provides versioning."
     - content: "Exchange hidden mailbox folders."
       isCorrect: false
-      explanation: "This is not correct."
+      explanation: "This is not correct. Exchange hidden mailbox folders doesn't resolve it."
   - content: "How can all messages of a single Exchange mailbox be retained?"
     choices:
     - content: "Activating litigation hold on the mailbox."
       isCorrect: true
-      explanation: "This is correct."
+      explanation: "Correct, litigation hold is the right answer."
     - content: "Using single item recovery."
       isCorrect: false
-      explanation: "This is not correct."
+      explanation: "This is not correct. Using single item recovery does not solve the situation."
     - content: "Using a preservation hold library."
       isCorrect: false
-      explanation: "This is not correct."
+      explanation: "This is not correct. A preservation hold does not solve the situation."
   - content: "Which feature should be used to support users in archiving their mailbox messages?"
     choices:
     - content: "Preservation Hold Libraries"
