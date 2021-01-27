@@ -22,9 +22,9 @@ Let's add support to our .NET core application to retrieve a connection string f
 
     ```json
     {
-    "ConnectionStrings": {
-        "StorageAccount": "<value>"
-    }
+        "ConnectionStrings": {
+            "StorageAccount": "<value>"
+        }
     }
     ```
 
