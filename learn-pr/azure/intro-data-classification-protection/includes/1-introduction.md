@@ -6,7 +6,7 @@ Contoso’s IT director realizes that Contoso has an outdated operational model 
 
 As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You should make sure that these services have the capabilities to address the legal department's concerns.
 
-In this module, you’ll learn about data classification, DLP, and the management of sensitive data. You’ll learn about the most commonly-used Microsoft technologies for data classification, data protection, and DLP.
+In this module, you’ll learn about data classification, DLP, and the management of sensitive data. You’ll learn about the most commonly used Microsoft technologies for data classification, data protection, and DLP.
 
 ## Learning objectives
 
