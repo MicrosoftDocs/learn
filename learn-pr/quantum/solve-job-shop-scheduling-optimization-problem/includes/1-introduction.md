@@ -1,4 +1,4 @@
-Throughout the [quantum computing fundamentals learning path](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/), you've been carrying out various tasks alongside the crew of the spaceship. In this module, you will be faced with an emergency scenario that requires you to work with the maintenance crew to repair critical systems onboard. To achieve this as quickly as possible while still following safety procedure, you will use the Azure Quantum optimization service to optimize the order in which you tackle repair tasks.
+Throughout the [quantum computing fundamentals learning path](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/?azure-portal=true), you've been carrying out various tasks alongside the crew of the spaceship. In this module, you will be faced with an emergency scenario that requires you to work with the maintenance crew to repair critical systems onboard. To achieve this as quickly as possible while still following safety procedure, you will use the Azure Quantum optimization service to optimize the order in which you tackle repair tasks.
 
 This is an example of the **job shop scheduling** problem. Job shop scheduling is a common and important problem in many industries. For example, in the automobile industry manufacturing a car involves many different types of operations. These operations are performed by a number of specialized machines - optimizing the production line to minimize manufacturing time can make for significant cost savings.
 
@@ -22,4 +22,4 @@ After completing this module, you'll be able to:
 - [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html?azure-portal=true)
 - An Azure Quantum workspace
 
-If you don't have these tools yet, we recommend that you follow the [How to create an Azure Quantum workspace module first](MODULE10//TODO).
+If you don't have these tools yet, we recommend that you follow the [How to create an Azure Quantum workspace module first](https://docs.microsoft.com/en-us/learn/modules/get-started-azure-quantum/?azure-portal=true).
