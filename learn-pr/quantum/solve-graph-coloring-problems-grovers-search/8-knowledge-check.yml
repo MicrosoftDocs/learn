@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: '$\frac12 (|00\rangle \otimes |1\rangle + |01\rangle \otimes |0\rangle + |10\rangle \otimes |0\rangle + |11\rangle \otimes |1\rangle)$'
       isCorrect: true
-      explanation: 'Indeed, to apply the oracle to a superposition state you need to split the expression into a linear combination of basis states and apply the oracle to each term individually. This will flip the state of the third qubit for input states $|01\rangle$ and $|10\rangle$.'
+      explanation: "Indeed, to apply the oracle to a superposition state you need to split the expression into a linear combination of basis states and apply the oracle to each term individually. This will flip the state of the third qubit for input states $|01\rangle$ and $|10\rangle$."
     - content: '$\frac12 (|00\rangle - |01\rangle - |10\rangle + |11\rangle) \otimes |1\rangle$'
       isCorrect: false
       explanation: 'Applying a phase oracle that implements this check would indeed yield this state. A marking oracle stores the computation result in the target qubit.'
@@ -37,7 +37,7 @@ quiz:
       explanation: 'This is the success probability behavior in a typical case. Is there anything special about this problem that would cause a different behavior? You might want to think about the algorithm visualization from unit 5.'
     - content: 'The success probability remains the same regardless of the number of iterations.'
       isCorrect: true
-      explanation: "Indeed, if you recall the circle visualization from unit 5, youll see that the angle θ will be exactly 45 degrees. Each iteration will rotate the state by 90 degrees, keeping the success probability constant and equal to 50%."
+      explanation: "Indeed, if you recall the circle visualization from unit 5, you'll see that the angle θ will be exactly 45 degrees. Each iteration will rotate the state by 90 degrees, keeping the success probability constant and equal to 50%."
     - content: 'The success probability first decreases to nearly 0%, then increases to nearly 100%, then decreases again, and so on.'
       isCorrect: false
       explanation: 'This is the success probability behavior if the solutions comprise more than half of the possible inputs.'
