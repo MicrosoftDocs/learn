@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-querying-digital-twin-graphs
+uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.knowledge-check
 metadata:
-  description: In this final exercise, you create custom queries for your digital twin graph.
+  description: Check your knowledge of the Azure Digital Twins Definition Language (DTDL) and query language
   ms.date: 01/28/2021
   author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title:  Exercise - Querying digital twin graphs
-durationInMinutes: 8
+title: Knowledge check
+durationInMinutes: 5
 content: |
-  [!include[](includes/9-exercise-querying-digital-twin-graphs.md)]
 quiz:
   title: Check your knowledge
   questions:
