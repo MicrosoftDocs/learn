@@ -3,9 +3,9 @@ uid: learn.the-mojifier.8-integrate-with-slack
 metadata:
   title: Integrate The Mojifier with Slack
   description: Connect your Azure Functions together with Slack and create a slack slash command to call our Azure Functions and display the resulting mojified image in the Slack window.
-  author: lnyswonger
   ms.date: 10/18/2018
-  ms.author: luken
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Integrate The Mojifier with Slack
