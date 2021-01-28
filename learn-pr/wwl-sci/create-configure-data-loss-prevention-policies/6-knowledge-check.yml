@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2021
+  ms.date: 01/28/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Microsoft Cloud App Security (MCAS) built-in DLP engine performs content inspection by extracting text from all common file types including which of the following types?"
+  - content: "Microsoft Cloud App Security (MCAS) built-in DLP engine performs content inspection by extracting text from all common file types including which of these file types?"
     choices:
     - content: "BTML"
       isCorrect: false
@@ -38,7 +38,7 @@ quiz:
     - content: "Azure Information Protection policies"
       isCorrect: false
       explanation: "This is not correct.  These policies are configured in Azure."
-  - content: "Which of the following is a way a DLP policy for non-Microsoft cloud apps can be configured?"
+  - content: "How can a DLP policy for non-Microsoft cloud apps be configured?"
     choices:
     - content: "Policies may be created in the Microsoft Exchange Online portal."
       isCorrect: false
