@@ -48,7 +48,7 @@ quiz:
       explanation: 'Constructive interference occurs when two states of the same phase superpose.'
     - content: 'Quantum interference is a phenomenon in which electromagnetic waves produce noise in our quantum computations.'
       isCorrect: false
-      explanation: 'Quantum interference is not related to electromagnetic interference.'
+      explanation: "Quantum interference isn't related to electromagnetic interference."
     - content: 'We can exploit quantum interference to do calculations faster than classical computers can do them.'
       isCorrect: true
       explanation: 'Quantum interference is one of the key parts of efficient quantum algorithms.'

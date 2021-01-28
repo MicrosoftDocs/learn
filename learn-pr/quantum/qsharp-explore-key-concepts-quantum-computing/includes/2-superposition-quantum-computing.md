@@ -9,7 +9,7 @@ Quantum computers are controllable quantum mechanical devices that exploit the p
 
 $$i \hbar \frac{\partial}{\partial t}\psi(t)= \hat H \psi(t).$$
 
-This equation captures the _wave function_, $\psi(t)$, which is the state of the quantum system, and the Hamiltonian, $\hat H$, which represents the energy of the system. Here, $t$ is time and $\hbar$ is the Planck constant.
+This equation captures the _wave function_, $\psi(t)$, which represents the state of the quantum system, and the Hamiltonian, $\hat H$, which represents the energy of the system. Here, $t$ is time and $\hbar$ is the Planck constant.
 
 You may be thinking that you didn't choose the life of galactic adventures to learn about quantum mechanics and algebra in the first place. Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when they write quantum algorithms. But we can use the equation to help us understand some concepts of quantum computing.
 
@@ -34,7 +34,7 @@ How do we describe a quantum state?
 
 A handy notation to write quantum states is the *Dirac bra-ket* notation. In this notation, we describe the possible states of quantum systems by using symbols called _kets_ $| \rangle$.
 
-For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states, respectively, and they're two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
+For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states, respectively. They're two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
 
 > [!NOTE]
 > There are many interpretations of the concept of *measurement* in
