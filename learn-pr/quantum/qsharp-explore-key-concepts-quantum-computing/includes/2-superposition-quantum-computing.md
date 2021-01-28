@@ -34,7 +34,7 @@ How do we describe a quantum state?
 
 A handy notation to write quantum states is the *Dirac bra-ket* notation. In this notation, we describe the possible states of quantum systems by using symbols called _kets_ $| \rangle$.
 
-For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states, respectively, and they are two of possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
+For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states, respectively. They're two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
 
 > [!NOTE]
 > There are many interpretations of the concept of *measurement* in
@@ -133,7 +133,7 @@ computing.
 
 How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$|\psi\rangle = a |00\rangle + b |01\rangle + c |10\rangle + d |11\rangle.$$
 
-Remember that $a,b,c$ and $d$ are complex numbers and they are probability amplitudes for each state. Their
+Remember that $a,b,c$ and $d$ are complex numbers, and they're probability amplitudes for each state. Their
 absolute values, for example $|a|$, squared, give the corresponding probabilities. For
 instance, the probability for observing $|00\rangle$ is $P(00)=|a|^2$. For
 $|01\rangle$, it's $P(01)=|b|^2$, and so on.
