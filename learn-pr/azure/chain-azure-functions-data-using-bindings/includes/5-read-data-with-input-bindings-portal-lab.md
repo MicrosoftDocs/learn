@@ -220,7 +220,33 @@ Now that you have your binding defined, it's time to use it in your function.
 
 1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
 
-   [!code-javascript[](../code/find-bookmark-single.js)]
+     ```java
+ 	module.exports = function (context, req) {
+    
+    	var bookmark = context.bindings.bookmark
+    
+    	if(bookmark){
+            context.res = {
+            body: { "url": bookmark.url },
+            headers: {
+            'Content-Type': 'application/json'
+            	}
+        	};
+    	}
+    	else {
+        
+        context.res = {
+            status: 404,
+            body : "No bookmarks found",
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        };
+    	}
+
+    	context.done();
+	};
+    ```
 
 ::: zone-end
 
