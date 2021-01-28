@@ -9,7 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: exercise
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/6-implementing-pessimistic-concurrency.md)]
