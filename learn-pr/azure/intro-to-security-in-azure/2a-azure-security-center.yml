@@ -9,7 +9,6 @@ metadata:
   ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/2a-azure-security-center.md)]
