@@ -7,9 +7,9 @@ Azure Quantum is currently in limited preview with select partners and customers
 
 ## What's included on Azure Quantum?
 
-![A diagram showing various Azure Quantum features](../media/6-quantum-execution-info.png)
+![A diagram showing various Azure Quantum features](../media/6-azure-quantum.png)
 
-**Quantum execution**: If you're interested in developing quantum software, then Azure Quantum offers a suite of tools that help you express your algorithms using the Quantum Development Kit and Q#.
+**Quantum computing**: If you're interested in developing quantum software, then Azure Quantum offers a suite of tools that help you express your algorithms using the Quantum Development Kit and Q#.
 
 There are tools for simulating your programs so that you can test the behavior and performance of your code. In addition, there are tools such as the resource estimator, which helps you understand the resources that your code would require. In terms of a quantum program, this can mean the types of quantum gates you use, the number of operations performed, or the number of qubits you need.
 
@@ -17,15 +17,19 @@ Using all these tools together helps you understand the features of a quantum co
 
 For more details on how this is done in practice, check out Dave Wecker's talk on [Achieving Practical Quantum Computing](https://cloudblogs.microsoft.com/quantum/2018/06/01/achieving-practical-quantum-computing/?azure-portal=true).
 
+![A diagram showing azure qc](../media/6-azure-quantum-computing.png)
+
 **Quantum-inspired solutions**: If you want to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
 
 Solvers emulate certain processes from quantum physics by using classical hardware that's available today.
+
+![A diagram showing azure qio](../media/6-azure-quantum-inspired-solutions.png)
 
 **Quantum hardware**: After you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
 
 For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
 
-![A diagram that lists companies who provide quantum hardware on Azure Quantum](../media/6-azure-quantum.png)
+![A diagram that lists companies who provide quantum hardware on Azure Quantum](../media/6-azure-quantum-hardware.png)
 
 ## What are Azure Quantum Workspaces?
 
