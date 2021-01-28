@@ -49,7 +49,7 @@ quiz:
       explanation: 'Searching databases has efficient classical approaches, such as indexes and distributed databases, and is hard to implement on a quantum computer.'
     - content: 'A 2-SAT problem: Boolean satisfiability problem with at most two literals per clause'
       isCorrect: false
-      explanation: '2-SAT problem has a classical solution that runs in polynomial time. Grover''s algorithm has exponential complexity, so it does not offer a speedup over the classical solution.'
+      explanation: "2-SAT problem has a classical solution that runs in polynomial time. Grover''s algorithm has exponential complexity, so it doesn't offer a speedup over the classical solution."
     - content: 'A cryptographic problem, such as decrypting symmetric cryptography keys'
       isCorrect: true
       explanation: 'These problems are indeed a candidate for a practical application of quantum search, though smaller instances can be solved using massively parallel classical computation. The field of post-quantum cryptography researches cryptosystems that will be secure from quantum algorithms.'
