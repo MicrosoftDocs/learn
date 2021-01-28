@@ -122,4 +122,4 @@ In practical applications, you don't usually know how many solutions your proble
 To handle this issue, you can pick a small number, run the algorithm with that many iterations, and if it doesn't yield an answer, retry with a different, larger number of iterations. 
 An efficient strategy of gradually increasing the iteration number will still find the solution with an average number of iterations around $\sqrt{\frac{N}{M}}$.
 
-In the next unit, you will implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the interstellar communication problem!
+In the next unit, you will implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the space communication problem!
