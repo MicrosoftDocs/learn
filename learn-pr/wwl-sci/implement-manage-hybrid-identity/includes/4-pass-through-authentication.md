@@ -7,7 +7,7 @@ Enable pass-through authentication through [Azure AD Connect](https://docs.micro
 If you're installing Azure AD Connect for the first time, choose the [custom installation path](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom). At the **User sign-in** page, choose **Pass-through authentication** as the **Sign On method**. On successful completion, a pass-through authentication agent is installed on the same server as Azure AD Connect. In addition, the pass-through authentication feature is enabled on your tenant.
 
 > [!div class="mx-imgBorder"]
-> ![Azure AD Connect: User sign-in.](../media/single-sign-on3.png)
+> ![Azure AD Connect: User sign-in.](../media/single-sign-on-3.png)
 
 If you have already installed Azure AD Connect by using the express installation or the custom installation path, select the **Change user sign-in** task on Azure AD Connect, and then select **Next**. Then select **Pass-through authentication** as the sign-in method. On successful completion, a pass-through authentication agent is installed on the same server as Azure AD Connect and the feature is enabled on your tenant.
 
