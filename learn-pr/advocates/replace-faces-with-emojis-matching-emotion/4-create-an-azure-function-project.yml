@@ -3,9 +3,9 @@ uid: learn.the-mojifier.4-create-an-azure-function-project
 metadata:
   title: Create an Azure Function project
   description: Create and debug your first Azure Function HTTP trigger.
-  author: lnyswonger
   ms.date: 10/18/2018
-  ms.author: luken
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an Azure Function project

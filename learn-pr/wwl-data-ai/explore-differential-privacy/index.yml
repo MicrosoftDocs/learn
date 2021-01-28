@@ -3,7 +3,7 @@ uid: learn.wwl.explore-differential-privacy
 metadata:
   title: Explore differential privacy
   description: "Explore differential privacy"
-  ms.date: 12/03/2020
+  ms.date: 01/28/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/explore-differential-privacy.svg
 levels:
 - advanced
 roles:

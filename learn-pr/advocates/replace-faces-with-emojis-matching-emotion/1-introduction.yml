@@ -3,9 +3,9 @@ uid: learn.the-mojifier.1-introduction
 metadata:
   title: Introduction
   description: TheMojifier is a Slack slash command which replaces peoples faces in images with emojis matching their emotion.
-  author: lnyswonger
   ms.date: 10/18/2018
-  ms.author: luken
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
