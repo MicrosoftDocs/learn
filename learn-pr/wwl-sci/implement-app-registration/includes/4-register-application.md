@@ -13,7 +13,7 @@ Registering your application establishes a trust relationship between your app a
 5. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying the Register an application blade with the name and default settings highlighted](../media/lp3-mod3-register-an-application.png)
+> ![Screen image displaying the Register an application blade with the name and default settings highlighted.](../media/lp3-mod3-register-application.png)
 
 6. When complete, you will be directed to the **Demo app** blade.
 
@@ -38,7 +38,7 @@ To configure application settings based on the platform or device you're targeti
 4. In **Configure platforms**, select the tile for your application type (platform) to configure its settings.
 
 >[!div class="mx-imgBorder"]
->!["Screenshot of the Platform configuration pane in the Azure portal"](../media/configure-platforms.png)
+>![Screenshot of the Platform configuration pane in the Azure portal.](../media/configure-platforms.png)
 
 | Platform| Configuration settings|
 | :--- | :--- |
@@ -57,7 +57,7 @@ Credentials are used by confidential client applications that access a web API. 
 You can add both certificates and client secrets (a string) as credentials to your confidential client app registration.
 
 >[!div class="mx-imgBorder"]
->![alt: "Screenshot of Azure portal showing the Certificates and secrets pane in app registration"](../media/portal-05-app-reg-04-credentials.png)
+>![Screenshot of Azure portal showing the Certificates and secrets pane in app registration.](../media/portal-05-app-reg-04-credentials.png)
 
 ## Add a certificate
 
@@ -106,7 +106,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 4. Select **Expose an API** > **Add a scope**.
 
 >[!div class="mx-imgBorder"]
->![alt: "An app registration's Expose an API pane in the Azure portal"](../media/portal-02-expose-api.png)
+>![An app registration's Expose an API pane in the Azure portal](../media/portal-02-expose-api.png)
 
 5. You're prompted to set an **Application ID URI **if you haven't yet configured one.  The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
 
@@ -153,7 +153,7 @@ To add the Employees.Write.All example scope, follow the steps above and specify
 If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
 
 >[!div class="mx-imgBorder"]
->![alt: "Screenshot of the Expose an API pane showing two exposed scopes."](../media/portal-03-scopes-list.png)
+>![Screenshot of the Expose an API pane showing two exposed scopes.](../media/portal-03-scopes-list.png)
 
 As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
 

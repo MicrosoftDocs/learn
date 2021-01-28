@@ -41,7 +41,7 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 3. Under **Permissions,** select **Grant admin consent.**
 
 >[!div class="mx-imgBorder"]
->![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](../media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
+>![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](../media/lp3-mod3-grant-admin-consent-enterprise-app.png)
 
 > [!WARNING]
 > Warning

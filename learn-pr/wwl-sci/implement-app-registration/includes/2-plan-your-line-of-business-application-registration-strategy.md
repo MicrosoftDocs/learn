@@ -104,7 +104,7 @@ Like application objects, service principals can be created through multiple pat
 
 An application has one application object in its home directory that's referenced by one or more service principals in each of the directories where it operates (including the application's home directory).
 
-!["Shows relationship between app objects and service principals"](../media/howappsareaddedtoaad.png)
+![Shows relationship between app objects and service principals.](../media/howappsareaddedtoaad.png)
 
 In the preceding diagram, Microsoft maintains two directories internally (shown on the left) that it uses to publish applications:
 
