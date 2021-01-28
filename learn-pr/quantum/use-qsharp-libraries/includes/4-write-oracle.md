@@ -46,7 +46,7 @@ To do this, we need to implement the operation $(9 + 6\cdot x) \bmod 11$ on a qu
 Fortunately, the operation [MultiplyAndAddByModularInteger](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyandaddbymodularinteger?azure-portal=true) from the `Microsoft.Quantum.Artithmetic` namespace of the Standard Library can be used to do just that. 
 It implements the mapping
 $$
-|x}|b\rangle \mapsto |x\rangle|(b + a \cdot x) \bmod N\rangle
+|x\rangle b\rangle \mapsto |x\rangle|(b + a \cdot x) \bmod N\rangle
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 
@@ -74,7 +74,7 @@ $$
 $$
 and then apply the mapping, yielding
 $$
-|x\rangle|(9 + 6 \cdot x) \bmod 11}\_{\text{target}\rangle|-\rangle.
+|x\rangle|(9 + 6 \cdot x) \bmod 11\rangle_{\text{target}}|-\rangle
 $$
 
 Finally, we can apply a controlled `X` operation on the $|-\rangle$ flag qubit, controlled by the target register being in the $|0\rangle$ number state (for four qubits this is represented as $|0000\rangle$).
