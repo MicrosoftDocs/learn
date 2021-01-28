@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Deploy an application that uses OpenID Connect to authenticate users
 durationInMinutes: 10
 interactive: bash
