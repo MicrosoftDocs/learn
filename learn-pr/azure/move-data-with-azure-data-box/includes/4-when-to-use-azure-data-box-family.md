@@ -4,9 +4,9 @@ In this unit, you'll learn when to use a Data Box device and when to use some ot
 
 ## Use cases for Data Box devices
 
-Data Box is ideally suited to transfer data sizes larger than 40 TBs in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers. 
+Data Box is ideally suited to transfer terabytes of data in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers. 
 
-Here are the various scenarios where Data Box can be used to import data to Azure.
+Here are the various scenarios where Data Box devices can be used to import data to Azure.
 
  - **One time migration** - when large amount of on-premises data is moved to Azure. 
      - Moving a media library from offline tapes into Azure to create an online media library.
@@ -25,7 +25,7 @@ Here are the various scenarios where Data Box can be used to export data from Az
 
 - **Migrate back to on-premises or to another cloud service provider** - when you want to move all the data back to on-premises, or to another cloud service provider, export data via Data Box to migrate the workloads.
 
-## Offline transfer
+## Offline transfer options 
 
 To get data into Azure, you can load your data onto physical devices and send them to an Azure datacenter. There, the data is copied into your Azure subscription. As you saw in unit 2, three Data Box products work this way:
 
@@ -41,7 +41,7 @@ The other service that uses physical devices to transfer data into Azure is Azur
 
 The setup procedure to import data using Azure Import/Export is more difficult than Azure Data Box family. You have to handle all the shipping details and device preparation. We recommend using Azure Data Box, a done-for-you service that minimizes the effort required to move huge volumes of data inexpensively and securely into Azure.
 
-## Network transfer
+## Network transfer options
 
 Another general method to get data into Azure is to send it across the internet. As you saw in unit 2, Data Box Gateway works this way.
 
