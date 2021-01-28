@@ -55,3 +55,8 @@ _2. Event Alex buys a cappuccino._
 _Server: (Second) order (for Alex): Cappuccino_
 
 ![Event Sourcing for buying a coffee](../media/2-event-sourcing.png)
+
+## Telemetry Data are real-time events
+
+But there are also other examples we can think of.
+Imagine running a refrigeration system, for instance for food or drug manufactures. You'd need at any time to control the temperature and other relevant data in your system. Being aware of the telemetry data and controlling them automatically is critical to your success. Measuring the telemetry every two seconds and then send it towards the control system where the data gets analyzed, processed, and handled should be seen as an event-driven system. Also, the data should be processed in real time as it is critical to react as soon as possible to avoid tragic consequences for the business.
