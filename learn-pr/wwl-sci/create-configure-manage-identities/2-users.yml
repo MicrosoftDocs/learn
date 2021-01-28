@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.users
+title: Create, configure, and manage users
+metadata:
+  title: Create, configure, and manage users
+  description: "Create, configure, and manage users"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-users.md)]
