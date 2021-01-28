@@ -38,7 +38,7 @@ The IRM and OME configuration cmdlets allow you to configure how RMS content is 
 
 OME is managed via configuration objects, or more precisely templates, which can be assigned and referenced. The default template for all users is named "OME Configuration" and any setting done in this configuration, is applied to all users. While the basic Office 365 Message Encryption allows only a single template, Office 365 Advanced Message Encryption provides more flexibility with multiple branding templates for different purposes.
 
-The following examples provide a general description of which settings are available with the *-OMEConfiguration cmdlets and which settings should be configured when implementing OME for the first time. The first default template with the name "OME Configuration" is the default OME settings object for all users in a tenant.
+The following examples provide a general description of which settings are available with the `*-OMEConfiguration` cmdlets and which settings should be configured when implementing OME for the first time. The first default template with the name "OME Configuration" is the default OME settings object for all users in a tenant.
 
 > [!NOTE]
 > If your tenant only includes Microsoft 365 E3 licenses, the number of cmdlets available is limited to managing the default OME template only. You cannot create new templates or add other Office 365 Advanced Message Encryption related settings.

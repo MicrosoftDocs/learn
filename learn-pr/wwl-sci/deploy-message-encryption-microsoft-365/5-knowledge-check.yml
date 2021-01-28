@@ -26,7 +26,7 @@ quiz:
       explanation: "That is not correct."
     - content: "Five."
       isCorrect: false
-      explanation: "That is not correct.."
+      explanation: "That is not correct."
   - content: "What must be activated on your tenant before you can use Office Message Encryption?"
     choices:
     - content: "BitLocker"
