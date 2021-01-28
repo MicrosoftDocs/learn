@@ -14,9 +14,11 @@ After connecting the agent to the windows machine:
 
 1. Make sure Windows Event Logs is selected
 
-1. In the "Collect events from the following log events" textbox, enter: *Microsoft-Windows-Sysmon/Operation*
+1. In the "Collect events from the following log events" textbox, enter: *Microsoft-Windows-Sysmon/Operational*
 
 1. Then select the **+**
+
+1. Select **save** in the command bar.
 
 Once configured, the Sysmon events will be available in the Event table.
 
