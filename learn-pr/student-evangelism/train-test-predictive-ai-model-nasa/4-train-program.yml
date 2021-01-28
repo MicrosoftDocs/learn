@@ -3,8 +3,8 @@ uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.4-train-progra
 metadata:
   title: Exercise - Train a neural network to accurately classify space rocks in photos
   description: Use training data to train the a neural network in an AI model to accurately predict types of space rocks in photos. 
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

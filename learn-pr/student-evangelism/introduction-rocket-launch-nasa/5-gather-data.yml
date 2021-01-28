@@ -3,8 +3,8 @@ uid: learn.student-evangelism.introduction-rocket-launch-nasa.5-gather-data
 metadata:
   title: The role of data in machine learning
   description: Find out why we need data to program machine learning models.
-  ms.date: 07/24/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

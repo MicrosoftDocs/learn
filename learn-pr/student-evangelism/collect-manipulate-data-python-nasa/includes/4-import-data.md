@@ -6,7 +6,7 @@ You can use various tools and services to solve machine learning problems. These
 
 Watch this Microsoft video to learn how to download and configure a similar environment to the one you'll need.
 
-> [!VIDEO https://www.youtube.com/embed/5E3WMb8_T3s]
+> [!VIDEO https://channel9.msdn.com/Series/Dev-Intro-to-Data-Science/How-do-you-setup-your-local-environment-for-data-exploration-8-of-28/player?format=ny]
 
 When you're setting up your local programming environment, we recommend creating an Anaconda environment to ensure you have exactly what you need for that project. If you have another way or set of tools that you prefer to use, the majority of these modules don't explicitly require Visual Studio Code or Azure.
 
@@ -33,7 +33,7 @@ To set up your local environment:
 3. In the Anaconda prompt, create a new Anaconda environment:  
 
     ```bash
-    conda create -n myenv python=3.7 pandas numpy jupyter seaborn scikit-learn pydotplus
+    conda create -n myenv python=3.8 pandas numpy jupyter seaborn scikit-learn pydotplus
     ```
 
 4. In the Anaconda prompt, activate the new environment:  
@@ -67,7 +67,9 @@ Copy the following code into a cell and run it to import the libraries.
 ```python
 # Pandas library is used for handling tabular data
 import pandas as pd
+
 # NumPy is used for handling numerical series operations (addition, multiplication, and ...)
+
 import numpy as np
 # Sklearn library contains all the machine learning packages we need to digest and extract patterns from the data
 from sklearn import linear_model, model_selection, metrics

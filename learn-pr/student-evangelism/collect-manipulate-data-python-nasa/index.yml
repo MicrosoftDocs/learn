@@ -3,8 +3,8 @@ uid: learn.student-evangelism.collect-manipulate-data-python-nasa
 metadata:
   title: Data collection and manipulation
   description: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
-  ms.date: 07/24/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -15,6 +15,9 @@ abstract: |
  - Explore weather data on days crewed and uncrewed rockets were launched
  - Explore weather data on the days surrounding launch days
  - Clean the data in preparation for training the machine learning model
+
+ > [!TIP]
+ > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
 prerequisites: |
  - Visual Studio Code with Python and Jupyter Extensions
  - Some Python experience

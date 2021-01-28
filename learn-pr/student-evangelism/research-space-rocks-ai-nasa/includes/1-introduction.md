@@ -6,6 +6,9 @@ The programming services and libraries that do much of the complex math and algo
 
 Although AI has complexities and levels we won't cover in the Learn modules, this learning path introduces you to some basic AI tools and services. It guides you through a practical use of the tools and services for an introductory exploration of images of space rocks.
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/XoHR4p8AO9o?azure-portal=true) in a new tab.
+
 ## Learning objectives
 
 In this module, you'll use AI to build an aid to space rock classification techniques. Along the way, you'll:

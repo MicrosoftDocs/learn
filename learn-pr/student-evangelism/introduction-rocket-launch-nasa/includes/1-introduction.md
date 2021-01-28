@@ -10,6 +10,9 @@ Cape Canaveral is on the East coast of the Florida peninsula. The area experienc
 
 There are many potential factors at play. NASA has to take into account many different data sources to get the most accurate picture of what the rocket will have to endure on its 100 kilometer journey into space.
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/eK3ATduvFGM?azure-portal=true) in a new tab.
+
 ## Learning objectives
 
 In this module, you'll begin to discover:

@@ -3,8 +3,8 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa
 metadata:
   title: Analyze images of rocks by using artificial intelligence
   description: Identify data to add to an artificial intelligence module that classifies space rocks in random photos.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -16,6 +16,9 @@ abstract: |
  - Learn how to import data
  - Learn how to clean and separate data
  - Show the data you imported
+
+ > [!TIP]
+ > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
 prerequisites: |
  - Ability to write and run introductory Python programs
  - Visual Studio Code, a Python extension, and Jupyter Notebook installed

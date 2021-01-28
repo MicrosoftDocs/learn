@@ -3,8 +3,8 @@ uid: learn.student-evangelism.intermediate-python-nasa
 metadata:
   title: Code control statements in Python
   description: Learn more advanced topics of Python.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -17,6 +17,10 @@ abstract: |
   - How to make your own functions
   - How to call your own functions
   - How to use parameters and global variables
+
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
+
 prerequisites: |
   - Visual Studio Code installed
   - Python Installed

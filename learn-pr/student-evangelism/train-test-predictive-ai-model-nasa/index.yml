@@ -3,8 +3,8 @@ uid: learn.student-evangelism.train-test-predictive-ai-model-nasa
 metadata:
   title: Classify types of space rocks in random photos by using AI
   description: Learn how to build and train an AI model to predict types of space rocks in photos, and then test the model.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -14,6 +14,9 @@ abstract: |
  In this module, you will:
  - Train an artificial intelligence model
  - Test the model by using it to classify random photos of space rocks
+
+ > [!TIP]
+ > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
 prerequisites: |
  - Ability to write and run introductory Python programs
  - Visual Studio Code, a Python extension, and Jupyter Notebook installed

@@ -3,8 +3,8 @@ uid: learn.student-evangelism.intermediate-python-nasa.5-functions
 metadata:
   title: Exercise - Chunk code into functions for easy reusability and readability
   description: Learn about functions in Python.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

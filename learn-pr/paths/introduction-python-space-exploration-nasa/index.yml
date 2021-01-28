@@ -4,8 +4,8 @@ metadata:
   title: Discover the role of Python in space exploration
   description: Get an introduction to Python, and be inspired to learn, discover, and create using Python-based data science and machine learning to help generate knowledge about the world beyond Earth.
   brand: vs-code
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -19,6 +19,9 @@ summary: |
   - Learn core programming concepts and apply them to real-life NASA problems
   - Gain knowledge about cutting-edge technologies like machine learning and artificial intelligence
   - See actual NASA employees talk about their job and give advice
+
+  > [!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
 
 prerequisites: None
 iconUrl: /learn/achievements/introduction-python-space-exploration-nasa.svg

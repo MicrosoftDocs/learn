@@ -3,8 +3,8 @@ uid: learn.student-evangelism.research-space-rocks-ai-nasa
 metadata:
   title: Learn about space rocks and how to classify them
   description: Learn what space rocks are, where they are found, and why they're a valuable focus of scientific research.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -14,6 +14,9 @@ abstract: |
   In this module, you will:
   - Learn what space rocks are and why we study them
   - Learn about upcoming space missions that focus on space rocks
+
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
     -none
 iconUrl: /learn/achievements/student-evangelism/research-space-rocks-ai-nasa.svg

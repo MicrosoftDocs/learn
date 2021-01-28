@@ -3,9 +3,9 @@ uid: learn.student-evangelism.analyze-rock-images-ai-nasa.2-import-ai-libraries
 metadata:
   title: Exercise - Import Python libraries to analyze photos of space rocks
   description: Run code to import the AI libraries you'll use to create and run an AI classification model.
-  ms.date: 10/26/2020
-  author: angevin17
-  ms.author: shanama
+  ms.date: 01/26/2021
+  author: sguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Import Python libraries for analyzing photos of space rocks

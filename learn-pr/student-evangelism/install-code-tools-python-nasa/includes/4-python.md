@@ -6,12 +6,12 @@ Guido van Rossum created Python in 1991 and named it after the television show M
 
 ## Why Python?
 
-You may be asking why we chose Python out of all the programming languages out there. Over the past 15 years, [Python has become increasingly more popular](https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages?azure-portal=true) and it is often known as a great beginner programming language. It is also versatile and can be applied to advanced computing topics such as data science and machine learning. Additionally, Python has many packages and libraries of code written by others that you can include in your own projects to cut down on the code you need to write.
+You may be asking why we chose Python out of all the programming languages out there. Over the past 15 years, [Python has become increasingly more popular](https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-loved?azure-portal=true) and it is often known as a great beginner programming language. It is also versatile and can be applied to advanced computing topics such as data science and machine learning. Additionally, Python has many packages and libraries of code written by others that you can include in your own projects to cut down on the code you need to write.
 
 ## Real world examples of Python at work
 
-Examples of software that include Python code are YouTube, Dropbox, and Google. [NASA even has a page of open-source projects](https://code.nasa.gov/?azure-portal=true), many of which are programmed in Python.
+Examples of software that include Python code are YouTube, Dropbox, and Google. [NASA even has a page of open-source projects](https://code.nasa.gov/?azure-portal=true), many of which are programmed in Python. 
 
 ## Jupyter Notebooks and Python
 
-We'll be using a type of file called [Jupyter Notebooks](https://jupyter.org/?azure-portal=true) to help you learn Python. Jupyter Notebooks support Python in a read-eval-print loop (REPL) style, which means that users can write a few lines of code in one file, execute them *within* the file, and then write more code and continue executing. Jupyter Notebooks also supports rerunning "cells", which are chunks of code. This kind of coding environment creates a great experience for learning a new programming language.
+We'll be using a type of file called [Jupyter Notebooks](https://jupyter.org/?azure-portal=true) to help you learn Python. Jupyter Notebooks support Python in a read-eval-print loop (REPL) style, which means that users can write a few lines of code in one file, execute them *within* the file, and then write more code and continue executing. Jupyter Notebooks also supports rerunning "cells", which are chunks of code. This kind of coding environment creates a great experience for learning a new programming language. But don't worry, installing the Python extension for Visual Studio Code will install the notebook for you!

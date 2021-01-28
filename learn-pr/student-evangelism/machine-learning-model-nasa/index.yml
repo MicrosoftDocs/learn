@@ -3,8 +3,8 @@ uid: learn.student-evangelism.machine-learning-model-nasa
 metadata:
   title: Build a machine learning model
   description: In this module you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
-  ms.date: 07/24/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -16,6 +16,9 @@ abstract: |
  - How to split data to effectively train and test a machine learning algorithm.
  - How to train, test, and score a machine learning algorithm.
  - How to visualize a tree classification model.
+
+ > [!TIP]
+ > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
 prerequisites: |
  - Basic Python experience
  - Have clean data about rocket launches

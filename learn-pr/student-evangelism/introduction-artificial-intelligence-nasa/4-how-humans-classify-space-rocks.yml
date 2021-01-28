@@ -4,8 +4,8 @@ uid: >-
 metadata:
   title: Classify space rocks like a human
   description: Learn about the process humans commonly use to classify things.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

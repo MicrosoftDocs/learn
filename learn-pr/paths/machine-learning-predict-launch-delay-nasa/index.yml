@@ -4,13 +4,18 @@ metadata:
   title: Predict rocket launch delays with machine learning
   description: An introduction to the world of machine learning that shows you how to take a real-life problem that NASA faces and apply machine learning to solve it.
   brand: vs-code
-  ms.date: 07/28/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Predict rocket launch delays with machine learning
-summary: This learning path introduces you to the world of machine learning. You'll take a real-life problem that NASA faces and apply machine learning to solve it. The goal is to get students excited and curious to discover how machine learning could help solve other problems in space discovery and different aspects of life. 
+summary: |
+  This learning path introduces you to the world of machine learning. You'll take a real-life problem that NASA faces and apply machine learning to solve it. The goal is to get students excited and curious to discover how machine learning could help solve other problems in space discovery and different aspects of life. 
+
+  > [!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
 prerequisites: |
  - The [Role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/) learning path
  - Visual Studio Code and Python installed

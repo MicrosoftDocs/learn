@@ -2,13 +2,13 @@ Now that you have a brief introduction to code, you can move on to learning abou
 
 ## What is Visual Studio Code?
 
-[Visual Studio Code](https://code.visualstudio.com?azure-portal=true) (often referred to as VS Code) is a free, open-source, extensible, code editor. We can break this description down a little further to get a better understanding:
+[Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true) (often referred to as VS Code) is a free, open-source, extensible, code editor. We can break this description down a little further to get a better understanding:
 
 - **Code editor**: A code editor is made specifically for writing, running, and debugging code. Code editors can be compared to an application like Microsoft Word, but having additional functionality such as autocomplete of code functions and the ability to execute, or run, code.
 
 - **Open-source**: Open Source Software (OSS) has its code available for anyone to explore, modify, and enhance. The main takeaway from this is that anyone, even you, can build a new feature in software such as Visual Studio Code and contribute it back to the source code for others to use. You can find the [open-source Visual Studio project on GitHub](https://github.com/microsoft/vscode?azure-portal=true)
 
-- **Extensible**: Extensible means that something can be extended and expanded. In the context of Visual Studio Code, being extensible means that you can download, or even create, extensions to make Visual Studio Code exactly right for your work style. Think mods in a game or customizations. If the color scheme is hurting your eyes or an obscure programming language isn't supported, you can customize Visual Studio Code to add new colors or support for the language. You can find the [Visual Studio Code extensions on the marketplace](https://marketplace.visualstudio.com/VSCode?azure-portal=true) or discover how to [build your own extension in the Visual Studio Code documentation](https://code.visualstudio.com/api).
+- **Extensible**: Extensible means that something can be extended and expanded. In the context of Visual Studio Code, being extensible means that you can download, or even create, extensions to make Visual Studio Code exactly right for your work style. Think mods in a game or customizations. If the color scheme is hurting your eyes or an obscure programming language isn't supported, you can customize Visual Studio Code to add new colors or support for the language. You can find the [Visual Studio Code extensions on the marketplace](https://marketplace.visualstudio.com/VSCode?azure-portal=true) or discover how to [build your own extension in the Visual Studio Code documentation](https://code.visualstudio.com/api?azure-portal=true).
 
 ## Why Visual Studio Code is popular in the developer community
 

@@ -3,8 +3,8 @@ uid: learn.student-evangelism.introduction-artificial-intelligence-nasa
 metadata:
   title: Prepare to research space rocks by using artificial intelligence
   description: Learn about the scientific research of space rocks and how artificial intelligence can enhance research.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -17,6 +17,9 @@ abstract: |
  - Discover how machines classify objects
  - Learn about artificial intelligence libraries
  - Install artificial intelligence libraries
+
+ > [!TIP]
+ > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
 prerequisites: |
  - Ability to write and run introductory Python programs
  - Visual Studio Code, a Python extension, and Jupyter Notebook installed

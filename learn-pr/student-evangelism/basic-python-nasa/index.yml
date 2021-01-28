@@ -3,8 +3,8 @@ uid: learn.student-evangelism.basic-python-nasa
 metadata:
   title: Write basic Python in Notebooks in Visual Studio Code
   description: Learn the basics of Python.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -17,6 +17,10 @@ abstract: |
   - How to create variables
   - How to use pre-made functions
   - How to output data
+
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
+
 prerequisites: |
   - Visual Studio Code installed
   - Python installed

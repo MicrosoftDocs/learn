@@ -3,8 +3,8 @@ uid: learn.student-evangelism.collect-manipulate-data-python-nasa.5-clean-data
 metadata:
   title: Exercise - Clean weather data to analyze rocket launch criteria
   description: Clean the weather data to prepare it to train the machine learning model
-  ms.date: 07/24/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

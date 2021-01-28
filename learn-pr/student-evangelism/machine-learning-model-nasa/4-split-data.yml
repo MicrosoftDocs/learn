@@ -3,8 +3,8 @@ uid:  learn.student-evangelism.machine-learning-model-nasa.4-split-data
 metadata:
   title: Exercise - Split data into training and testing datasets
   description: Learn how to call functions to split data into two groups.
-  ms.date: 07/24/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

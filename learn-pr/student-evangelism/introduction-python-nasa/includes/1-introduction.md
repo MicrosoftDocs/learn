@@ -6,6 +6,9 @@ Furthermore, learning how to explore and understand the massive amounts of data 
 
 Although this data exploration journey is one that can be lifelong, this first learning path will give you the basic tools to get started and this module will provide the context for why these problems are interesting in the first place.
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/NcUreWUpQFo?azure-portal=true) in a new tab.
+
 ## Learning objectives
 
 In this module, you'll scratch the surface (pun intended) of how to start the data exploration. You'll learn:

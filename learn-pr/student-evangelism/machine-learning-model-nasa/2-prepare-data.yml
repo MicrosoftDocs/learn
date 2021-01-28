@@ -3,8 +3,8 @@ uid:  learn.student-evangelism.machine-learning-model-nasa.2-prepare-data
 metadata:
   title: Exercise - Determine columns to include in a machine learning model
   description: Decide which aspects of the weather data we're going to use to train the model.
-  ms.date: 07/24/2020
-  author: angevin17
+  ms.date: 01/26/2021
+  author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
