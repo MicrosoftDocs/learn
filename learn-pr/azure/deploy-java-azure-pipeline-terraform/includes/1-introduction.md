@@ -21,7 +21,7 @@ There are several tools available to help you achieve these goals. However, sinc
 By the end of this module, you can:
 
 - Create a Terraform configuration for your Azure resources
-- Provision your Infrastructure and deploy to Azure
+- Provision your Infrastructure and deploy your application to Azure
 - Set up your project for Continuous Integration and Deployment (CI/CD)
 
 ## Prerequisites
