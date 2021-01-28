@@ -16,7 +16,6 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
     ```azurecli
     RG=<resource group name>
-
     az group create --name $RG --location <location>
     ```
 
