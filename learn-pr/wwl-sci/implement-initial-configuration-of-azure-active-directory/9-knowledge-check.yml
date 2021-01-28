@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A domain name is included as part of a user name or email address for users and groups. Can a domain name also be included as part of an application or other resource?"
+    choices:
+    - content: "Yes, a domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
+      isCorrect: true
+      explanation: "Correct. When an organization that contains and application or other resources, the domain can be included if it is owned by the same organization."
+    - content: "A domain name can be included as part of the app ID URI for an application, but cannot be included as part of other resources."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
+    - content: "No, a domain name cannot be included as part of an application or other resource."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
+  - content: "The proliferation of many types of devices and bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and anytime.  What is the other goal?"
+    choices:
+    - content: "Provide antimalware apps for a various devices."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Providing antimalware apps for a all devices is not a goal that IT professionals need to accommodate."
+    - content: "Establish baseline security guidelines for users."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Establishing baseline security guidelines is not a goal that IT professionals need to accommodate."
+    - content: "Protect the organization's assets."
+      isCorrect: true
+      explanation: "Correct. Identity is new perimeter is a common security phrase these days, meaning that validation or both people and devices are required to protect company assets."
+  - content: "Azure AD guest users have restricted directory permissions. Which of the following answers best describes guest users capabilities?"
+    choices:
+    - content: "They can manage their own profile, change their own password, and add other B2B guests to groups."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Azure AD guest users cannot add other B2B guests to groups."
+    - content: "They can manage their own profile, change their own password, and retrieve some information about other users, groups, and apps."
+      isCorrect: true
+      explanation: "Correct.  Guest users can only manage aspects of their own profile information, like their password; and view available resource like apps."
+    - content: "They can manage their own profile, change their own password, and identify group members or other directory objects."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Azure AD guest users cannot identify group members and other directory objects."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-threat-indicators-to-azure-sentinel.view-your-with-kql
+title: View your threat indicators with KQL
+metadata:
+  title: View your threat indicators with KQL
+  description: "View your threat indicators with KQL"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-view-your-threat-indicators.md)]
