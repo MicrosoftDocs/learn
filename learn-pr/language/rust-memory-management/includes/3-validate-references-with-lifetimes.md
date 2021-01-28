@@ -114,7 +114,7 @@ fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 You can try this code at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=39c0e9eab0903d6b16f97e712709426a&azure-portal=true).
 
-Generic lifetime parameters are annotated inside angle brackets between the function name and the parameter list. Because the constraint that we want to express in this signature is *that all the references in the parameters and the return value must have the same lifetime*, we use the same lifetime name `'a` and then add it to each reference in the function signature.
+Generic lifetime parameters are annotated inside angle brackets between the function name and the parameter list. Because the constraint that we want to express in this signature is *that all the references in the parameters and the return value must have the same lifetime*, we use the same lifetime name: `'a`. We then add it to each reference in the function signature.
 
 There's nothing special about the name `'a` in this case. It would be just as fine to use any other word, such as `'response` or `'program`. The important thing to keep in mind is that all parameters and the returned value will live at least as long as the lifetime associated with each of them.
 
@@ -158,7 +158,7 @@ If you guessed that this code is broken, you're right. This time, we see the fol
 
 This error shows that the compiler expected the lifetime of `magic2` to be the same as the lifetime of the returned value and of the `x` input argument. Rust knows this because we annotated the lifetimes of the function parameters and return value by using the same lifetime name: `'a`.
 
-If we were to inspect the code, as humans, we would see that `magic1` is longer than `magic2`. We would see that the result contains a reference to `magic1`, which will live long enough to be valid. However, Rust can't run that code at compile time. It will consider both references `&magic1` and `&magic2` to be possible return values and will emit the error we saw earlier.
+If we were to inspect the code, as humans, we would see that `magic1` is longer than `magic2`. We would see that the result contains a reference to `magic1`, which will live long enough to be valid. However, Rust can't run that code at compile time. It will consider both the `&magic1` and `&magic2` references to be possible return values and will emit the error that we saw earlier.
 
 We've told Rust that the lifetime of the reference that the `longest_word` function returns is the same as the smaller of the lifetimes of the references passed in. So, the borrow checker disallows the earlier code as possibly having an invalid reference.
 

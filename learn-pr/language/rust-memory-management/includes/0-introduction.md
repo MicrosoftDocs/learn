@@ -1,4 +1,4 @@
-This module explains one of Rust's most powerful features: the borrow checker. It enables Rust to make memory safety guarantees without needing a garbage collector, unlike many other languages.
+This module explains one of Rust's most powerful features: the borrow checker. The feature enables Rust to make memory safety guarantees without needing a garbage collector, unlike many other languages.
 
 ## Learning objectives
 

@@ -54,7 +54,7 @@ fn caller() {
 }
 ```
 
-The compiler complains about the value `greeting` being *moved*.
+The compiler complains that the value `greeting` was *moved*.
 
 ```output
     error[E0382]: use of moved value: `s`
@@ -70,7 +70,7 @@ The compiler complains about the value `greeting` being *moved*.
 
 As you can see in the preceding snippet, the first call to `process` transfers ownership of the variable `s`. The compiler tracks ownership, so the second call to `process` results in an error. After resources are moved, the previous owner can no longer be used.
 
-*Moving* a value is a way to transfer ownership of its underlying resources. For example, moving a string would transfer the string's buffer instead of copying it.
+Moving a value is a way to transfer ownership of its underlying resources. For example, moving a string would transfer the string's buffer instead of copying it.
 
 This pattern has a profound impact on the way Rust code is written. It's central to the promise of memory safety that Rust proposes.
 
