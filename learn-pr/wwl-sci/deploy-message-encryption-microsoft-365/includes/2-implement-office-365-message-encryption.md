@@ -43,14 +43,6 @@ The following examples provide a general description of which settings are avail
 > [!NOTE]
 > If your tenant only includes Microsoft 365 E3 licenses, the number of cmdlets available is limited to managing the default OME template only. You cannot create new templates or add other Office 365 Advanced Message Encryption related settings.
 
-| **To customize this feature of the encryption experience**| **Use these commands**|
-| :--- | :--- |
-| Control social IDs for sign in, such as Google account, a Yahoo account, or Microsoft accounts|    Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true|
-| Activate one-time pass codes for recipients not using Outlook, to view protected content in the browser.| Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true|
-| Hide the Encrypt button for all users in Outlook on the web.| Set-IRMConfiguration -SimplifiedClientAccessEnabled $false|
-| Allow users to decrypt messages for legacy clients that do not support Azure RMS.| Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true|
-| Allow legacy web clients to download attachments decrypted.| Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true|
-
 ## OME branding templates
 
 Customized company branding templates control the look of an organization's email messages and the encryption portal. The Get-OMEConfiguration and Set-OMEConfiguration Windows PowerShell cmdlets are used to modify the default template and to customize these parts of encrypted email messages:
