@@ -52,4 +52,4 @@ The main steps in the process are:
 1. Copy files to the data volume. Run a batch file to extract files to the volume with Data Deduplication enabled.
 1. Review Data Deduplication status. Use Windows PowerShell to review status of Data Deduplication jobs.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MFIg]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIg]
