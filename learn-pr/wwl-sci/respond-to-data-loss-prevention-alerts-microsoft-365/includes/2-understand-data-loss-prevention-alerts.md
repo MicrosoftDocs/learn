@@ -22,7 +22,7 @@ With a DLP policy, you can:
 
 - View DLP alerts and reports showing content that matches your organization’s DLP policies.
 
-## Data loss prevention Components
+## Data loss prevention components
 
 If you have not worked with DLP, it is important to understand the underlying components.
 
