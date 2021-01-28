@@ -1,6 +1,6 @@
 After you create data loss prevention policies, administrators need to verify and monitor the performance of their DLP policies in production. This is an important recurring task for an organization to ensure they stay compliant with policies while minimizing impact on user productivity. 
 
-## Data loss prevention Reports in the Microsoft 365 compliance center
+## Data loss prevention reports in the Microsoft 365 compliance center
 
 The Microsoft 365 compliance center provides the following DLP reports that can be accessed in reports under organization data:
 
@@ -53,7 +53,7 @@ You can also view a report for DLP alerts in the MCAS Dashboard. This report sho
 
 - The actions that have been taken to secure the matched file
 
-![Alerts screen example.](../media/alerts-report-mcas.png)
+[ ![Alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png) ](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
 
 Use the MCAS DLP alerts report to view an overview of MCAS policy alerts. Since policies created on the MCAS side have different options and scopes compared to MCAS policies created in the Compliance center, it's prudent to be aware of alerts in both dashboards.
 

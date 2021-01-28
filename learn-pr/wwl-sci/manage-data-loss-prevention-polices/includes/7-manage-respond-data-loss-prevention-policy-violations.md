@@ -12,7 +12,7 @@ You can also use the reports to allow your users to help you with refining the D
 
 For example, you open the false positives and overrides report and notice a high number of false positives on your Tax Identification Number policy. Opening the details of these false positives you see that your internal product numbers look like European tax identification numbers, which result in users reporting these matches as false positives.
 
-## **Configure DLP rule exclusions**
+## Configure DLP rule exclusions
 
 You decide to adjust the Tax identification number DLP policy to exclude instances where it matches your custom sensitive information type for Product Number. To do this, follow these steps:
 

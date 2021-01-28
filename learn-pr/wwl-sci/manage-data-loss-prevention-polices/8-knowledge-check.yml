@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2021
+  ms.date: 01/28/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to fine-tune your DLP policies before activating policy tips. Which report do you use to gather information?"
+  - content: "A security operations analyst wants to fine-tune their DLP policies before activating policy tips. Which report should they use to gather information?"
     choices:
     - content: "DLP incidents"
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "DLP false positives and overrides"
       isCorrect: false
       explanation: "This is not correct. This report allows you to fine-tune policies based on user input."
-  - content: "You want to fine-tune your DLP policies based on user input. Which report do you use to gather information?"
+  - content: "A security operations analyst wants to fine-tune their DLP policies based on user input. Which report should they use to gather information?"
     choices:
     - content: "DLP false positives and overrides"
       isCorrect: true
@@ -38,7 +38,7 @@ quiz:
     - content: "DLP policy matches"
       isCorrect: false
       explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning but it is not based on user input."
-  - content: "You want to identify items in your organization that might contain a high volume of sensitive information based on your DLP policies. Which report do you use to gather information?"
+  - content: "A security operations analyst wants to identify items in their organization that might contain a high volume of sensitive information based on your DLP policies. Which report should they use to gather information?"
     choices:
     - content: "DLP false reports and overrides"
       isCorrect: false

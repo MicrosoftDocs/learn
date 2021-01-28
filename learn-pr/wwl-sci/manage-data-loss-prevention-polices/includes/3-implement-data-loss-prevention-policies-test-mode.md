@@ -24,7 +24,7 @@ To enable test mode for your DLP policy, you need to edit the DLP policy and go 
 
 1. On the Reports page, filter for the policy you created and review the results.
 
-    :::image type="content" source="../media/policy-matches-report.png" alt-text="example of policy matching report":::
+    :::image type="content" source="../media/policy-matches-report.png" alt-text="example of policy matching report" lightbox="../media/policy-matches-report.png":::
 
 > [!TIP]
 >DLP Policy reports might take up to 24 hours to show up in your display!

@@ -12,7 +12,7 @@ Familiarizing yourself with the available filters and options of the DLP reports
 
 When using the DLP policy matches report, you should use the filters to limit the report to specific policies. This will help you reduce the number of matches displayed and focus on the impact of selected policies in your organization.
 
-:::image type="content" source="../media/policy-matches-report.png" alt-text="Report in Microsoft 365 showing DLP matches":::
+:::image type="content" source="../media/policy-matches-report.png" alt-text="Report in Microsoft 365 showing DLP matches" lightbox="../media/policy-matches-report.png":::
 
 Consider a scenario where you created a new policy to protect financial data a few days ago and currently have it set to test mode. You should set the start date in the filter close to the start date of the policy to avoid whitespace in your report from before the policy existed.
 
@@ -46,7 +46,7 @@ When using the DLP Incidents report to get a general overview of which items gen
 
 Using the DLP incidents report you should keep the timeframe broad and drill-down if you identify any peaks at certain times.
 
-:::image type="content" source="../media/jan-incidents.png" alt-text="Reports in Microsoft 365 screen example.":::
+:::image type="content" source="../media/january-incidents.png" alt-text="Reports in Microsoft 365 screen example." lightbox="../media/january-incidents.png":::
 
 For example, you created a new set of DLP policies and prioritized them according to your DLP strategy. If you want to see if the priority you chose aligns with the reality of sensitive data in your organization, you should open the DLP incidents report page and follow these steps:
 
