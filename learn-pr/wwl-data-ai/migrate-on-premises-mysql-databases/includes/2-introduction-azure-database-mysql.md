@@ -1,3 +1,10 @@
+Azure Database for MySQL can be deployed as a single server or Flexible Server (Preview) to host your organizations MySQL database in Azure. It's a fully managed database as a service that can handle mission-critical workloads with predictable performance and dynamic scalability.
+
+As a database developer with many years experience of running and managing on-premises MySQL installations, you want to explore how Azure Database for MySQL supports and scales its features.
+
+In this unit, you'll explore the pricing, version support, replication, and scaling options of Azure Database for PostgreSQL.
+## Understand the benefits of Azure Database for MySQL
+
 Azure Database for MySQL is provisioned as an Azure Database for MySQL server. The Azure Database for MySQL server is equivalent to an on-premises MySQL server and provides a central point to administer multiple MySQL databases.
 
 To create an Azure Database for MySQL database, you must first provision an Azure Database for MySQL Server. An Azure Database for MySQL server is the parent of one or many databases and provides the namespace for the databases. If you delete the server, you'll delete all databases that it contains.

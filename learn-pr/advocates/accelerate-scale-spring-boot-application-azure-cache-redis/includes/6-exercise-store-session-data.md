@@ -67,7 +67,7 @@ You can now restart your application, and you'll now benefit from HTTP session r
 
 Sessions are specific to each user, and are maintained using a cookie.
 
-There are two ways to test that sessions are working correctly here: you can point your browser to [http://localhost:8080/session](http://localhost:8080/session) and reload your page several times, or use the following command line:
+There are two ways to test that sessions are working correctly here: you can point your browser to `http://localhost:8080/session` and reload your page several times, or use the following command line:
 
 ```bash
 curl -b cookie.txt -c cookie.txt http://127.0.0.1:8080/session
