@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.13-finalize-web-app
 metadata:
-  title: "Complete the SPACE JAM: A NEW LEGACY Water Break App"
+  title: "Exercise - Complete the SPACE JAM: A NEW LEGACY Water Break App"
   description: "Complete the SPACE JAM: A NEW LEGACY Water Break App"
-  ms.date: 12/14/2020
+  ms.date: 01/26/2021
   author: sguthals 
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Complete the SPACE JAM: A NEW LEGACY Water Break App"
+title: "Exercise - Complete the SPACE JAM: A NEW LEGACY Water Break App"
 durationInMinutes: 5
 content: |
   [!include[](includes/13-finalize-web-app.md)]

@@ -4,7 +4,7 @@ We'll build a *very* basic app. If you want, you can continue building up your w
 
 Although the rest of this module will include explanations for the code that we're writing, you have two options for actually writing the functionality for this web app:
 
-- Use [CodeTour](https://aka.ms/codetour-mslearn) and be guided through writing the JavaScript from within Visual Studio Code.
+- Use [CodeTour](https://aka.ms/codetour-mslearn?azure-portal=true) and be guided through writing the JavaScript from within Visual Studio Code.
 - Copy and paste code from this module, like you did with Python code for the Jupyter Notebook files.
 
 Using CodeTour offers you an opportunity to see how well you can write code when you have instructions, but not the exact code to copy and paste. If you want to challenge yourself, try starting with CodeTour. And you have nothing to worry about because you can always look at the code in this module to get back on track if you get stuck.

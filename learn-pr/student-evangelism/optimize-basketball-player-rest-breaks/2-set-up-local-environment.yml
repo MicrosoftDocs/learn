@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.2-set-up-local-environment
 metadata:
-  title: Set up your local environment for data science coding
+  title: Exercise - Set up your local environment for data science coding
   description: Set up your local environment for data science coding
-  ms.date: 12/14/2020
+  ms.date: 01/26/2021
   author: sguthals 
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Set up your local environment for data science coding
+title: Exercise - Set up your local environment for data science coding
 durationInMinutes: 5
 content: |
   [!include[](includes/2-set-up-local-environment.md)]

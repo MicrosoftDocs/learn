@@ -9,7 +9,7 @@ Inspired by the film, this module explores the connection between sports (specif
 In this module, you get to explore stats related to basketball players (both human and animated). You'll learn how various stats result in a PER (player efficiency rating), which is the per-minute productivity rating for each player. Your goal is to use machine learning practices to create a clean dataset of players. The dataset is used during games to make quick decisions and optimize a team's chance of winning.
 
 > [!TIP]
-> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true). 
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://youtu.be/R6S05RkWl10?azure-portal=true). 
 
 © 2020 Warner Bros. Ent. All Rights Reserved.
 

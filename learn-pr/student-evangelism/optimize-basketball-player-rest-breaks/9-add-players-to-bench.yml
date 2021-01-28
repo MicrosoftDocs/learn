@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.9-add-players-to-bench
 metadata:
-  title: Add players to the bench in your web app with JavaScript
+  title: Exercise - Add players to the bench in your web app with JavaScript
   description: Add players to the bench in your web app with JavaScript
-  ms.date: 12/14/2020
+  ms.date: 01/26/2021
   author: sguthals 
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add players to the bench in your web app with JavaScript
+title: Exercise - Add players to the bench in your web app with JavaScript
 durationInMinutes: 5
 content: |
   [!include[](includes/9-add-players-to-bench.md)]

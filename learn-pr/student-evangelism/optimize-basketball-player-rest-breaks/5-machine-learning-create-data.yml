@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.5-machine-learning-create-data
 metadata:
-  title: Use machine learning and standard deviation to create fictional game data
+  title: Exercise - Use machine learning and standard deviation to create fictional game data
   description: Use machine learning and standard deviation to create fictional game data
-  ms.date: 12/14/2020
+  ms.date: 01/26/2021
   author: sguthals 
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use machine learning and standard deviation to create fictional game data
+title: Exercise - Use machine learning and standard deviation to create fictional game data
 durationInMinutes: 5
 content: |
   [!include[](includes/5-machine-learning-create-data.md)]

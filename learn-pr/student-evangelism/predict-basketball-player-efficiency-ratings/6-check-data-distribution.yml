@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.6-check-data-distribution
 metadata:
-  title: 'Data exploration part 2 - Check the distribution of the data'
+  title: 'Exercise - Data exploration part 2 - Check the distribution of the data'
   description: Use histograms to discover the distribution of data in a dataset.
-  ms.date: 11/11/2020
+  ms.date: 01/26/2021
   author: sguthals
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Data exploration part 2 - Check the distribution of the data'
+title: 'Exercise - Data exploration part 2 - Check the distribution of the data'
 durationInMinutes: 6
 content: |
   [!include[](includes/6-check-data-distribution.md)]

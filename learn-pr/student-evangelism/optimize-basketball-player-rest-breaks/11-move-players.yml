@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.11-move-players
 metadata:
-  title: Add button functionality for player buttons
+  title: Exercise - Add button functionality for player buttons
   description: Add button functionality for player buttons
-  ms.date: 12/14/2020
+  ms.date: 01/26/2021
   author: sguthals 
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add button functionality for player buttons
+title: Exercise - Add button functionality for player buttons
 durationInMinutes: 5
 content: |
   [!include[](includes/11-move-players.md)]

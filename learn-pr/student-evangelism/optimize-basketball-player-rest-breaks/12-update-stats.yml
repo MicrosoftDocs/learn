@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.12-update-stats
 metadata:
-  title: Complete the stat-updating functionality
+  title: Exercise - Complete the stat-updating functionality
   description: Complete the stat-updating functionality
-  ms.date: 12/14/2020
+  ms.date: 01/26/2021
   author: sguthals 
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Complete the stat-updating functionality
+title: Exercise - Complete the stat-updating functionality
 durationInMinutes: 5
 content: |
   [!include[](includes/12-update-stats.md)]

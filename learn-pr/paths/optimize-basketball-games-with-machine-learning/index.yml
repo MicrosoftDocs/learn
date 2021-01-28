@@ -4,9 +4,9 @@ metadata:
   title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by the new film SPACE JAM: A NEW LEGACY"
   description: "This *Space Jam: A New Legacy* - inspired learning path aims to equip you with data science, web development skills, and coding strategies to impact a game of basketball in real time, ensuring victory for the Tune Squad in their next game."
   brand: vs-code
-  ms.date: 12/14/2020
+  ms.date: 01/26/2021
   author: sguthals
-  ms.author: shanama
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
