@@ -1,6 +1,6 @@
 As the administrator for the autonomous vehicle company, you need an easy, secure, and relatively inexpensive way to regularly import the enormous amounts of telemetry data that your vehicles generate every day. But you can't dedicate your entire network bandwidth to the task. You decide to look at the Azure Data Box family, an ensemble of physical and virtual devices that aims to solve this type of problem. Each device is designed to meet the slightly different needs and priorities of customers looking for a solution in this space.
 
-In this unit, you'll learn about the five products in the Azure Data Box family.
+In this unit, you'll learn about the products in the Azure Data Box family.
 
 ## Azure Data Box products
 
@@ -20,4 +20,25 @@ Online data transfer enables a link between your on-premises assets and Azure. T
 
 - **Data Box Gateway**: This device is an entirely virtual appliance. It's based on a virtual machine that you provision in your on-premises environment.
 
-Having considered all these devices, you decide to focus on Azure Data Box Disk. It's a physical device that enables you to send terabytes of data quickly, cheaply, and securely. You can install the devices in the autonomous vehicles and upload data even while the car sensors are generating it.
+
+## Security protections
+
+Data Box devices have built-in security protections for the device, data, and the service.
+
+Data Box Disk has the following security protections:
+
+- The disks are tamper-resistant and support secure update capability.
+- The data on the disks is secured with an AES 128-bit encryption at all times.
+- The disks can only be unlocked with a key provided in the Azure portal.
+- The service is protected by the Azure security features.
+- Once your data is uploaded to Azure, the disks are wiped clean, in accordance with NIST 800-88r1 standards. 
+
+Data Box and Data Box Heavy have the following security protections:
+
+- The device has a rugged casing secured by tamper-resistant screws and tamper-evident stickers. 
+- The data on the device is secured with an AES 256-bit encryption at all times.
+- The device can only be unlocked with a password provided in the Azure portal.
+- The service is protected by the Azure security features.
+- Once the data from your import order is uploaded to Azure, the disks on the device are wiped clean in accordance with NIST 800-88r1 standards. 
+
+For Data Box export orders, the disks are erased after the device reaches the Azure datacenter.

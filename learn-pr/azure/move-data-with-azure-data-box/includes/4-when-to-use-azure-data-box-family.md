@@ -2,6 +2,29 @@ Azure Data Box family devices aren't the only ways to get data into Azure. For y
 
 In this unit, you'll learn when to use a Data Box device and when to use some other solution.
 
+## Use cases for Data Box devices
+
+Data Box is ideally suited to transfer data sizes larger than 40 TBs in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers. 
+
+Here are the various scenarios where Data Box can be used to import data to Azure.
+
+ - **One time migration** - when large amount of on-premises data is moved to Azure. 
+     - Moving a media library from offline tapes into Azure to create an online media library.
+     - Migrating your VM farm, SQL server, and applications to Azure
+     - Moving historical data to Azure for in-depth analysis and reporting using HDInsight
+
+ - **Initial bulk transfer** - when an initial bulk transfer is done using Data Box (seed) followed by incremental transfers over the network. 
+
+- **Periodic uploads** - when large amount of data is generated periodically and needs to be moved to Azure. For example in energy exploration, where video content is generated on oil rigs and windmill farms. 
+
+Here are the various scenarios where Data Box can be used to export data from Azure.
+
+- **Disaster recovery** - when a copy of the data from Azure is restored to an on-premises network. In a typical disaster recovery scenario, a large amount of Azure data is exported to a Data Box. Microsoft then ships this Data Box, and the data is restored on your premises in a short time.
+
+- **Security requirements** - when you need to be able to export data out fo Azure due to government or security requirements. For example, Azure Storage is available in US Secret and Top Secret clouds, and you can use Data Box to export data out of Azure. 
+
+- **Migrate back to on-premises or to another cloud service provider** - when you want to move all the data back to on-premises, or to another cloud service provider, export data via Data Box to migrate the workloads.
+
 ## Offline transfer
 
 To get data into Azure, you can load your data onto physical devices and send them to an Azure datacenter. There, the data is copied into your Azure subscription. As you saw in unit 2, three Data Box products work this way:
