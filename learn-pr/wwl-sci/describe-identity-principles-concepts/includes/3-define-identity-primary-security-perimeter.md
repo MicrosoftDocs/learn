@@ -11,7 +11,7 @@ The traditional perimeter-based security model is no longer enough. Identity has
 
 But what do we mean by an identity?  An identity is how someone or something can be verified and authenticated to be who they say they are.  An identity may be associated with a user, an application, a device, or something else.
 
-:::image type="content" source="../media/3-identity-new-security-perimeter.png" alt-text="Identity is the new security perimeter":::
+![Identity is the new security perimeter](../media/3-identity-new-security-perimeter.png)
 
 ## Four pillars of identity
 
