@@ -2,7 +2,7 @@ In many cases, internal, external, or public policies, regulations, and laws def
 
 ## Overview of privacy regulations
 
-A country/region can define a law or regulation that defines how government authorities or companies that process personal data, collect and manage that personal data. Examples of these regulations are General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA), which the next units discuss in more detail.
+A country/region can define a law or regulation that defines how government authorities or companies that process personal data, collect, and manage that personal data. Examples of these regulations are General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA), which the next units discuss in more detail.
 
 In general, information privacy, data privacy, or data protection regulations and laws provide a legal framework on how to obtain, use, and store data about persons, companies, or other entities. Laws and regulations rarely define or prescribe specific technologies that you can use to protect data. Instead, you should choose appropriate technologies, platforms, or vendors that comply with a specific regulation or law.
 
