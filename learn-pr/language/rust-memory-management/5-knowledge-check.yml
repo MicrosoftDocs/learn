@@ -17,18 +17,18 @@ quiz:
   questions:
   - content: "What is the meaning of the `<'a>` segment in the following struct declaration? `struct Nominee<'a> { person: &'a Person }`"
     choices:
-    - content: "It means that the `Nominee` struct will live no longer than the `Person` value it borrows from."
+    - content: "It means that the `Nominee` struct will live no longer than the `Person` value that it borrows from."
       isCorrect: true
-      explanation: "Correct. The `Nominee` struct can't live longer than the `Person` value it borrows."
-    - content: "It means that the `Nominee` struct will live no longer than the `AwardKind` value it borrows from."
+      explanation: "Correct. The `Nominee` struct can't live longer than the `Person` value that it borrows from."
+    - content: "It means that the `Nominee` struct will live no longer than the `AwardKind` value that it borrows from."
       isCorrect: false
-      explanation: "Incorrect. The field `award` owns the `AwardKind` value, so no borrow occurs."
-    - content: "It means that the `Nominee` struct will live no longer than the `String` value it holds."
+      explanation: "Incorrect. The field `award` owns the `AwardKind` value, so no borrowing occurs."
+    - content: "It means that the `Nominee` struct will live no longer than the `String` value that it holds."
       isCorrect: false
-      explanation: "Incorrect. The field `contribution` owns the `String` value, so no borrow occurs."
+      explanation: "Incorrect. The field `contribution` owns the `String` value, so no borrowing occurs."
     - content: "It means that the `Nominee` struct can have an optional value in its `person` field."
       isCorrect: false
-      explanation: "Incorrect. The `person` field requires a reference to a `Person` value and it is not optional."
+      explanation: "Incorrect. The `person` field requires a reference to a `Person` value, and it's not optional."
   - content: "What type of aliasing is permitted in Rust?"
     choices:
     - content: "One mutable reference and multiple immutable references."
@@ -39,7 +39,7 @@ quiz:
       explanation: "Correct. Rust forbids the combination of aliasing and mutation on the same location."
     - content: "Many mutable references and no immutable references."
       isCorrect: false
-      explanation: "Incorrect. The compiler won't allow many mutable references to the same value, even if there is no immutable references."
+      explanation: "Incorrect. The compiler won't allow many mutable references to the same value, even if there are no immutable references."
     - content: "Many mutable and immutable references."
       isCorrect: false
       explanation: "Incorrect. The compiler won't allow many mutable references to the same value, let alone combining mutable with immutable references."

@@ -1,4 +1,4 @@
-If you take a closer look at the previous compiler error, you'll see a hint about changing our reference to be **mutable** by changing our type parameter from `&String` to `&mut String`. We also need to declare our original value as mutable:
+If you take a closer look at the previous compiler error, you'll see a hint about changing our reference to be *mutable* by changing the type parameter from `&String` to `&mut String`. We also need to declare our original value as mutable:
 
 ```rust
 fn main() {
@@ -13,13 +13,14 @@ fn change(text: &mut String) {
 
 ## Borrowing and mutable references
 
-Mutable data can be borrowed using `&mut T`. This is called a *mutable reference* or
-*mutable borrow* and gives read/write access to the borrower. In contrast, `&T` borrows the data via an *immutable reference*, and the borrower can read the data but not modify it.
+You can borrow mutable data by using `&mut T`. This is called a *mutable reference* or *mutable borrow*, and it gives read/write access to the borrower. 
 
-You may have either one or the other of these two kinds of borrows, but not both at the same time:
+In contrast, `&T` borrows the data via an *immutable reference*. The borrower can then read the data but not modify it.
 
-- one or more references (`&T`) to a resource.
-- exactly one mutable reference (`&mut T`)
+You might have either of these kinds of borrows, but not both at the same time:
+
+- One or more references (`&T`) to a resource
+- Exactly one mutable reference (`&mut T`)
 
 The following code would then fail to compile:
 
@@ -48,7 +49,7 @@ fn main() {
       |                        ---- first borrow later used here
 ```
 
-We can even try to mix *immutable references* with *mutable references* but the compiler will still complain:
+We can even try to mix immutable references with mutable references, but the compiler will still complain:
 
 ```rust
 fn main() {
@@ -74,4 +75,4 @@ fn main() {
       |                        ---- immutable borrow later used here
 ```
 
-The main idea when dealing with references is that Rust developers are always choosing between aliasing and mutation, but never both. This might seem harsh at first, but this aspect of the borrow checker prevents Rust code from ever having a race condition.
+The main idea in dealing with references is that Rust developers are always choosing between aliasing and mutation, but never both. This might seem harsh at first, but this aspect of the borrow checker prevents Rust code from ever having a race condition.

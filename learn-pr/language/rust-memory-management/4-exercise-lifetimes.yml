@@ -2,7 +2,7 @@
 uid: learn.languages.rust-memory-management.4-exercise-lifetimes
 metadata:
   title: Exercise - Lifetimes
-  description: Use what you've learned to implement a function using lifetimes.
+  description: Use what you've learned to implement a function by using lifetimes.
   ms.date: 01/21/2021
   author: meaghanlewis
   ms.author: shanama
