@@ -4,11 +4,11 @@ Before using quantum computers to solve important problems, your first task is t
 
 You're likely already familiar with the concept of a random number generator (RNG). Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
 
-You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers used to generate passwords and thus jeopardize space fleet security. To do so you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and more secure.
+You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers used to generate passwords and thus jeopardize space fleet security. To do so, you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and more secure.
 
 A QRNG is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
 
-You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there is no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger numbers to use as a valid password?
+You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there's no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger numbers to use as a valid password?
 
 Let's say you repeat the process four times, generating this sequence of binary digits:
 
@@ -73,11 +73,11 @@ Compare that with the operation below. You define the `GenerateRandomBit` operat
 
 To define the operation:
 
-1. Replace the contents of *Program.qs* with this:
+1. Replace the contents of *Program.qs* with this code:
 
     [!code-qsharp[](code/4-program-2.qs?highlight=7-9)]
 
-    `EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
+    `EntryPoint` tells the Q# compiler to begin executing the program here.
 
 1. Add this code to the `GenerateRandomBit` operation:
 

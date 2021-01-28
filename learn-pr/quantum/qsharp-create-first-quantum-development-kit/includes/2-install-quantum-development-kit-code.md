@@ -17,12 +17,12 @@ But first, let's take a quick look at what you get with the Quantum Development 
 
 The QDK gives you everything you need to start writing quantum programs. Included in the QDK is the Q# programming language.
 
-Q# is a *domain-specific programming language* (DSL). A DSL is a computer language that's built for a specific kind of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
+Q# is a *domain-specific programming language* (DSL). A DSL is a computer language that's built for a specific type of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
 
 The QDK also includes:
 
 * Q# libraries that help you build real-world quantum applications right away.
-* Targets, which allow you to run your program locally or on a variety of hardware through Azure Quantum.
+* Targets, which allow you to run your program locally or on different kinds of hardware through Azure Quantum.
 
     Targets include resource estimators and simulators for larger quantum programs, as well as a quantum simulator, which behaves much like a quantum computer would.
 

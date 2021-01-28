@@ -101,7 +101,7 @@ Q# libraries also provide operations that you can use in your programs. One oper
 
 ### Types
 
-Q# provides a number of built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
+Q# provides many built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
 
 In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have one of two possible values: `One` and `Zero`.
 
