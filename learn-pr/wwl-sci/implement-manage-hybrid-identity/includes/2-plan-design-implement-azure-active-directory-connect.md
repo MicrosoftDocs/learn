@@ -12,8 +12,8 @@ Azure AD Connect is the Microsoft tool designed to meet and accomplish your hybr
 
 - Health monitoring - Azure AD Connect Health provides robust monitoring.
 
-> [!div class="mx-imgBorder"]
-> ![What is Azure AD Connect](../media/architecture.png)
+    > [!div class="mx-imgBorder"]
+    > ![What is Azure AD Connect](../media/architecture.png)
 
 ## Why use Azure AD Connect?
 
@@ -79,18 +79,18 @@ The following diagrams outline the high-level architecture components required f
 
 - Simplicity of a password hash synchronization solution:
 
-  > [!div class="mx-imgBorder"]
-  > ![Azure AD hybrid identity with password hash synchronization](../media/azure-active-directory-authentication-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure AD hybrid identity with password hash synchronization](../media/azure-active-directory-authentication-2.png)
 
 - Agent requirements of pass-through authentication, using two agents for redundancy:
 
-  > [!div class="mx-imgBorder"]
-  > ![Azure AD hybrid identity with pass-through authentication](../media/azure-active-directory-authentication-3.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure AD hybrid identity with pass-through authentication](../media/azure-active-directory-authentication-3.png)
 
 - Components required for federation in your perimeter and internal network of your organization:
 
-  > [!div class="mx-imgBorder"]
-  > ![Azure AD hybrid identity with federated authentication](../media/azure-active-directory-authentication-4.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure AD hybrid identity with federated authentication](../media/azure-active-directory-authentication-4.png)
 
 ## Recommendations
 

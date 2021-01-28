@@ -14,15 +14,15 @@ You can configure the Azure AD Connect Health service to send email notification
 
 1. Open the **Alerts** blade for the service for which you want to receive email notification.
 
-1. From the action bar, click **Notification Settings**.
+2. From the action bar, click **Notification Settings**.
 
-1. At the email notification switch, select **ON**.
+3. At the email notification switch, select **ON**.
 
-1. Select the check box if you want all global administrators to receive email notifications.
+4. Select the check box if you want all global administrators to receive email notifications.
 
-1. If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, right-click the entry and select **Delete**.
+5. If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, right-click the entry and select **Delete**.
 
-1. To finalize the changes, click **Save**. Changes take effect only after you save.
+6. To finalize the changes, click **Save**. Changes take effect only after you save.
 
 > [!NOTE]
 > When there are issues processing synchronization requests in our back-end service, this service sends a notification email with the details of the error to the administrative contact email address(es) of your tenant. We heard feedback from customers that in certain cases the volume of these messages is prohibitively large so we are changing the way we send these messages.
@@ -65,15 +65,15 @@ Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azu
 
 Azure AD Connect Health for Azure Active Directory Domain Services:
 
-1. Open the **Domain Controllers** dashboard.
+5. Open the **Domain Controllers** dashboard.
 
-1. Select the domain controller to be removed.
+6. Select the domain controller to be removed.
 
-1. From the action bar, click **Delete Selected**.
+7. From the action bar, click **Delete Selected**.
 
-1. Confirm the action to delete the server.
+8. Confirm the action to delete the server.
 
-1. Click **Delete**.
+9. Click **Delete**.
 
 ### Delete a service instance from Azure AD Connect Health service
 
@@ -167,9 +167,9 @@ Now the listed users and groups have access, according to their assigned roles.
 
 **Step 3: Share the blade location with users or groups**
 
-1. After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
+7. After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
 
-1. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
+8. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/role-based-access-control-pin-blade.png)
@@ -189,7 +189,7 @@ You can remove a user or a group added to Azure AD Connect Health and Azure RBAC
 |||
 | :--- | :--- |
 | ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more about using Azure AD Connect Health for monitoring.|
-> [!VIDEO https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-AD-Connect-Health-monitors-on-premises-AD-Domain-Services?format=ny]
+> [!VIDEO https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-AD-Connect-Health-monitors-on-premises-AD-Domain-Services/player?format=ny]
 
 ## Diagnose and remediate duplicated attribute sync errors
 
