@@ -200,6 +200,8 @@ Summary
 
 Inspect Metamask to verify that the Ether used to deploy the contract.
 
+source="media\Metamask_balance_after_deploying_to Ropsten.png" alt-text="Screenshot showing the Metamask balance after deploying to Ropsten":::
+
 ### On Ropsten Etherscan
 
 Go to [ropsten.etherscan.io](https://ropsten.etherscan.io), enter the contract address, and then inspect your contract.
