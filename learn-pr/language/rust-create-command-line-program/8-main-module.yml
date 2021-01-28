@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-command-line-program.main-module
+metadata:
+  title: Complete the main module
+  description: Finish implementing the main module to include the functions to create, add and list tasks.
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Complete the main module
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-main-module.md)]
