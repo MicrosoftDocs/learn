@@ -12,7 +12,6 @@ Now you’ve completed this module, you should be able to:
 - [Overview of the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)
 - [Secure Score in Azure Security Center](https://docs.microsoft.com/azure/security-center/secure-score-security-controls?WT.mc_id=Portal-Microsoft_Azure_Security)
-- [Define your security posture with Microsoft security center and Secure Store](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [Monitor and view reports in the Microsoft 365 security center](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [Incidents overview in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview?view=o365-worldwide)
 - [Azure Security Center Documentation](https://docs.microsoft.com/azure/security-center)

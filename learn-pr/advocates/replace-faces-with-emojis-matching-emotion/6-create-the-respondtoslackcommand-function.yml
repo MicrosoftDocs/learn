@@ -8,7 +8,6 @@ metadata:
   ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Create the RespondToSlackCommand Azure function
 durationInMinutes: 7
 content: |

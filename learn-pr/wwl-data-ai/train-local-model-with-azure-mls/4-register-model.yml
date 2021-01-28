@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.train-local-model-with-azure-mls.register-model
-title: Register models
+title: Registering models
 metadata:
-  title: Register models
-  description: "Register models"
-  ms.date: 12/02/2020
+  title: Registering models
+  description: "Registering models"
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
