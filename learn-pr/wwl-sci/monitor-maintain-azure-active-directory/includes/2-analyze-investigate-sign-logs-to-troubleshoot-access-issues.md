@@ -71,7 +71,7 @@ A sign-ins log has a default list view that shows the:
 You can customize the list view by clicking Columns in the toolbar.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot shows the Columns option in the Sign-ins page.](../media/19.png)
+> ![Screenshot shows the Columns option in the Sign-ins page.](../media/lp4_19.png)
 
 The Columns dialog gives you access to the selectable attributes. In a sign-in report, you can't have fields that have more than one value for a given sign-in request as column. For example, this is true for authentication details, conditional access data, and network location.
 
