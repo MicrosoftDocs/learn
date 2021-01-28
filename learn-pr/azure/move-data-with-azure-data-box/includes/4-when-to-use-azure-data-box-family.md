@@ -10,20 +10,17 @@ To get data into Azure, you can load your data onto physical devices and send th
 - Data Box Disk
 - Data Box Heavy
 
-If you're not in a region supported by Azure Data Box family, consider using Azure Import/Export to import data into Azure. Azure Data Box family doesn't support export of data from Azure.
+If you're not in a region supported by Azure Data Box family, consider using Azure Import/Export to import data into Azure.
 
 ### Azure Import/Export
 
-The other service that uses physical devices to transfer data into Azure is Azure Import/Export. Azure Import/Export allows you to use your own disks. You can do offline transfers of data from Blob storage to disks. Azure Import/Export also exports data from Azure back to your own datacenters and allows data to cross international borders. 
+The other service that uses physical devices to transfer data into Azure is Azure Import/Export. Azure Import/Export allows you to use your own disks.  You can do offline transfers of data from Blob storage to disks. Azure Import/Export also exports data from Azure back to your own datacenters and allows data to cross international borders. 
 
 The setup procedure to import data using Azure Import/Export is more difficult than Azure Data Box family. You have to handle all the shipping details and device preparation. We recommend using Azure Data Box, a done-for-you service that minimizes the effort required to move huge volumes of data inexpensively and securely into Azure.
 
 ## Network transfer
 
-Another general method to get data into Azure is to send it across the internet. As you saw in unit 2, two Data Box products work this way:
-
-- Data Box Edge
-- Data Box Gateway
+Another general method to get data into Azure is to send it across the internet. As you saw in unit 2, Data Box Gateway works this way.
 
 There are several other tools you can use to transfer data across the network.
 
@@ -32,6 +29,21 @@ There are several other tools you can use to transfer data across the network.
 Azure Storage Explorer is a free, downloadable application that you can run on Windows, Mac, or Linux. It provides a graphical user interface (GUI) that you can use to explore blobs, files, queues, and tables in Azure storage accounts. If you transfer only a few files at a time and you don't need to automate transfers, Storage Explorer is an ideal solution.
 
 If you don't want to install an application, but you have a browser, you can use the Storage Explorer page in the Azure portal to transfer files.
+
+### Azure Stack Edge
+
+Azure Stack Edge also uses physical devices to transfer data into Azure. Unlike Data Box devices, Azure Stack Edge devices provide Azure capabilities like compute, storage, networking, and hardware-accelerated machine learning to any edge location. Use an Azure Stack Edge device for the following scenarios:
+
+- **Inference with Azure Machine Learning** - Run ML models to get quick results that can be acted on before the data is sent to the cloud. The full data set can optionally be transferred to continue to retrain and improve your ML models.
+
+- **Preprocess data** - Transform data via compute options such as containers or virtual machines before sending it to Azure to create a more actionable dataset. Preprocessing can be used to:
+
+    - Aggregate data.
+    - Modify data, for example to remove personal data.
+    - Subset data to optimize storage and bandwidth, or for further analysis.
+    - Analyze and react to IoT Events.
+
+- **Transfer data over network to Azure** - Easily and quickly transfer data to Azure to do further compute and analytics or for archival purposes.
 
 ### Azure Data Factory
 
@@ -61,7 +73,7 @@ If you want to transfer a few files occasionally, choose Azure Storage Explorer 
 
 If network bandwidth is low or expensive to use, and you have a large volume of data, use a physical device to transfer data. If you want to use your own disks, choose Azure Import/Export. If you prefer the convenience of using Microsoft hardware, choose an Azure Data Box product. Choose from Data Box, Data Box Disk, and Data Box Heavy according to their maximum data volumes.
 
-If you have plenty of available network bandwidth and you want to transfer data regularly or continuously, choose a network transfer method. If you want to transform the data as you transfer it, without using code, consider Azure Data Factory. If you can invest the time and have the skills to write code, use scripting tools or developed compiled code against the REST APIs. If you want to transfer large datasets over the network and you have high available bandwidth, choose Data Box Edge or Data Box Gateway.
+If you have plenty of available network bandwidth and you want to transfer data regularly or continuously, choose a network transfer method. If you want to transform the data as you transfer it, without using code, consider Azure Data Factory. If you can invest the time and have the skills to write code, use scripting tools or developed compiled code against the REST APIs. If you want to transfer large datasets over the network and you have high available bandwidth, choose Data Box Gateway or an Azure Stack Edge device.
 
 ## Data transfer for the autonomous vehicles
 

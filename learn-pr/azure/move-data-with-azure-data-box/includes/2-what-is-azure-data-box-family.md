@@ -18,7 +18,6 @@ The devices in the offline grouping include:
 
 Online data transfer enables a link between your on-premises assets and Azure. Transferring huge amounts of data to Azure is similar to copying data to a networking share. Online data transfer is ideal when you need a continuous link to transfer a massive amount of data.
 
-- **Data Box Edge**: This device is a dedicated appliance with 12 TB of local SSD storage. It can preprocess and run machine learning on data before uploading it to Azure.
 - **Data Box Gateway**: This device is an entirely virtual appliance. It's based on a virtual machine that you provision in your on-premises environment.
 
 Having considered all these devices, you decide to focus on Azure Data Box Disk. It's a physical device that enables you to send terabytes of data quickly, cheaply, and securely. You can install the devices in the autonomous vehicles and upload data even while the car sensors are generating it.
