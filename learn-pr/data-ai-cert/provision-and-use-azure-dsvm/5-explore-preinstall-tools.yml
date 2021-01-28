@@ -9,7 +9,6 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/5-explore-preinstall-tools.md)]
