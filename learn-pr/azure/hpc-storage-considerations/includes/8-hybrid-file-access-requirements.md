@@ -40,7 +40,7 @@ If the data is moved to Azure, you may need to consider how it will be secured. 
 Next, we consider the methods of accessing the data: caching, copying or synchronizing.
 
 
-** Caching vs Copying vs Sync **
+## Caching vs Copying vs Sync ##
 
 We will discuss the general approaches you can use to put data into Azure. The focus of this transfer is on **active** data; we will not discuss data archival and backup. The data being transferred in our discussion is presumed to be the *working set* of a HPC job. In a life sciences HPC environment, data might include source data such as raw genomic data, binaries used to process that data, or supplemental data such as reference genomes. It is to be processed immediately upon arrival or not long after. It must also be stored on media with the appropriate performance profile in terms of IOPS, latency and throughput...and cost. By contrast, archive/backup data is most often transferred to the lowest storage cost solution possible, which is not intended for high performance access.
 
