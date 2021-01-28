@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-api-docs.md)]
+  [!include[](includes/3-api-documentation.md)]
