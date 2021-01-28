@@ -10,17 +10,19 @@ Finally, we'll create a home.html file to show results.
 
 ### Create the folders for the Python app
 
-1. Create a folder on your computer to store the code.
+1. Create a folder on your computer to store the application code.
 
-1. Open Visual Studio Code, and open the folder you've created.
+1. Open Visual Studio Code, and open the folder you created.
 
-1. At the root of your app code folder, create a new Python application file called *app.py*. By creating this Python file, Visual Studio Code will activate the Python extension, so it's ready to build this Python app. You can see the progress of the extension activation in the bottom status bar at the far left.
+1. At the root of your application code folder, create a Python application file called *app.py*. 
+ 
+   When you create this Python file, Visual Studio Code activates the Python extension, so it's ready to build a Python app. You can see the progress of the extension activation in the status bar in the lower-left corner of Visual Studio Code.
 
-1. At the root of your app code folder, create a new folder named *templates*. This new folder will hold the HTML templates that are used by the Flask app.
+1. At the root of your application code folder, create a folder named *templates*. This folder will hold the HTML templates that the Flask app will use.
 
 ### Configure the Python environment
 
-1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**.
+1. In Visual Studio Code, select **Terminal** > **New terminal** to open the terminal.
 
 1. In the terminal, enter the following command to create a Python virtual environment.
 
@@ -36,22 +38,32 @@ Finally, we'll create a home.html file to show results.
     python3 -m venv .venv
     ```
 
-    This command creates a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder. Select **Yes**.
+    This command creates a virtual environment inside the current folder. Visual Studio Code detects this change and prompts you to select the virtual environment for this folder. Select **Yes** to select the new virtual environment.
 
     ![The activate virtual env dialog](../media/activate-venv-dialog.png)
 
     > [!NOTE]
-    > If you don’t see a popup dialog to select the virtual environment, you can manually select the Python interpreter version. In the Visual Studio Code status bar at the bottom, at the far left, select the Python version. The Python interpreter selection drop-down opens at the top of the window. In the drop-down, select the Python version that is in the *./.venv/bin/python* folder.
+    > If you don’t see a dialog box that asks whether you want to select the virtual environment, you can manually select the Python interpreter version. In the Visual Studio Code status bar in the lower-left corner, select the Python version. At the top of the Visual Studio Code window, the Python interpreter selection opens. Select the Python version that is in the *./.venv/bin/python* folder.
 
 1. Stop the virtual environment and close the terminal by selecting the trash can icon.
 
     ![The kill terminal button](../media/kill-terminal.png)
 
-1. Relaunch the terminal by selecting **Terminal** > **New terminal**, to ensure that your terminal is using the virtual environment. When the terminal is running in a Python virtual environment, notice that the prompt shows "(.venv)" as a prefix.
+1. Select **Terminal** > **New terminal** to restart the terminal using the virtual environment. 
 
-### Install the necessary Pip packages
+   When the terminal is running in a Python virtual environment, notice that the prompt shows "(.venv)" as a prefix.
 
-1. In Visual Studio code, create a new text file named *requirements.txt* at the root of your app code folder. Copy the following statements into the text file:
+### Install the necessary pip packages
+
+Pip is the package installer for Python. The application we'll create requirs the following pip packages:
+
+* `flask` - This package is a web framework for Python.
+* `python-dotenv` - This package allows environment variables like the Maps key to be loaded from environment files.
+* `requests` - This package makes it easy to make web requests and will be used later to query air quality data.
+
+First, we'll create a text file that lists the pip packages we need. Then, we'll run a command that install the packages that are listed in the text file.
+
+1. In Visual Studio Code, at the root of your application code folder, create a new text file named *requirements.txt*. Copy the following code into the text file:
 
     ```console
     flask
@@ -59,18 +71,12 @@ Finally, we'll create a home.html file to show results.
     requests
     ```
 
-    This file lists the Pip packages that are needed by this app.
-
-    * `flask` - this package is a web framework for Python
-    * `python-dotenv` - this package allows environment variables such as the maps key to be loaded from environment files
-    * `requests` - this package makes it easy to make web requests, and will be used later to query air quality data
-
 1. Save the file.
 
     > [!TIP]
-    > If you to automatically save files after each change, select **File** > **Auto Save**.
+    > If you want to automatically save files after each change, select **File** > **Auto Save**.
 
-1. In the terminal, enter the following command to install the Pip packages:
+1. In the terminal, run this command to install the pip packages:
 
     ```console
     pip install -r requirements.txt
