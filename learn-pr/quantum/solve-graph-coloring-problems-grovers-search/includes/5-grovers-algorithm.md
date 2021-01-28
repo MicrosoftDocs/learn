@@ -3,7 +3,7 @@ In the previous units, you learned about the search problem and to implement its
 
 Preliminaries are over! Prepare yourself for your first real mission! In this unit, you'll implement Grover's search algorithm. It isn't necessary to dive deep into the gate-level implementation details but you'll focus the discussion on the high-level logic instead.
 
-For a strategic delivery, you have to make sure that two connected stations don't receive the same type of supply. You have to prepare a route to deliver to different space stations according to this requirement. 
+For effectiveness, you have to make sure that two connected stations don't use the same bandwidth.
 
 ## Algorithm outline
 
@@ -122,4 +122,4 @@ In practical applications, you don't usually know how many solutions your proble
 To handle this issue, you can pick a small number, run the algorithm with that many iterations, and if it doesn't yield an answer, retry with a different, larger number of iterations. 
 An efficient strategy of gradually increasing the iteration number will still find the solution with an average number of iterations around $\sqrt{\frac{N}{M}}$.
 
-In the next unit, you'll implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the best delivery route!
+In the next unit, you'll implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the  space communication problem!

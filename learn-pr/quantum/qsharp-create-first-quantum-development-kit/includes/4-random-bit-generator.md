@@ -10,7 +10,7 @@ A QRNG is a perfect introduction to quantum computing because it illustrates qua
 
 You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there is no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger numbers to use as a valid password?
 
-Let's say you run your QRNG four times, generating this sequence of binary digits:
+Let's say you repeat the process four times, generating this sequence of binary digits:
 
 $${0, 1, 1, 0}$$
 

@@ -1,4 +1,4 @@
-In this part, you implement the second part of your quantum random number generator: combining multiple random bits to form a larger number to use as a valid and secure password. This phase builds on the random bit generator that you already created. You will need to write some classical code for this part.
+In this section, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number to use as a valid and secure password. This phase builds on the random bit generator that you already created. You will need to write some classical code for this phase.
 
 First, let's see how classical code fits in with Q#.
 
@@ -31,7 +31,7 @@ Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent t
 
 Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
 
-The QRNG will return number 6 as your password. In practice, you want to set a larger number as maximum since lower numbers are easy to crack. In fact, as a way to increase the difficulty of guessing or cracking your password, you could use ASCII code to convert binary to text and to generate a password with numbers, symbols and mixed-case letters. 
+The QRNG will return number 6 as your password. In practice, you want to set a larger number as maximum since lower numbers are easy to crack by just trying all possible passwords. In fact, as a way to increase the difficulty of guessing or cracking your password, you could use ASCII code to convert binary to text and to generate a password with numbers, symbols and mixed-case letters. 
 
 Now you can be sure that your passwords are truly random. Space fleet data and their facilities are protected with the highest security standards.
 

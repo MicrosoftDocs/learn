@@ -7,7 +7,7 @@ The problem it solves is often referred to as "searching a database", but it's m
 This formulation seems rather mathematical at first, but it's powerful enough to express a broad class of problems. 
 The core idea of Grover's algorithm also turns out to be an important building block of other, more complex quantum algorithms.
 
-Get ready! Your first real task is here! In this module, we'll introduce the necessary concepts and tools for implementing Grover's algorithm and applying it to solve a problem that has driven space pilots crazy - finding the best route between space stations for cost effectiveness. Then you'll demonstrate the implementation in Q#.
+Get ready! Your first real task is here! In this module, we'll introduce the necessary concepts and tools for implementing Grover's algorithm and applying it to solve a problem that has driven our interstellar communications division crazy - assign a bandwidth to each space station so communications don't interfere. Then you'll demonstrate the implementation in Q#.
 
 Finally, we'll outline some practical aspects of using Grover's algorithm for solving problems.
 
