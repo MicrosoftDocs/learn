@@ -1,13 +1,13 @@
 Q# provides you with an increasing number of libraries that will help you leverage existing functionalities to create advanced quantum algorithms.
 
-In previous modules, you learned how to use the basic features of the [Quantum Development Kit](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals?azure-portal=true) for solving tasks of your space mission. Now, you are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their identifying number sequence (ISBN). You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field, one of the digits is now illegible.
-By implementing Grover's algorithm with the Q# Standard Library you will determine the missing digit and save your space garden.
+In previous modules, you learned how to use the basic features of the [Quantum Development Kit](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals?azure-portal=true) for solving tasks of your space mission. Now, you're in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their identifying number sequence (ISBN). You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field, one of the digits is now illegible.
+By implementing Grover's algorithm with the Q# Standard Library, you'll determine the missing digit and save your space garden.
 
 ## Learning objectives
 
-In this module you will:
+In this module you'll:
 
-- Learn about libraries in Q#, specifically how they are distributed and how to add them to your projects
+- Learn about libraries in Q#, specifically how they're distributed and how to add them to your projects
 - Use the Q# Standard Library to express quantum algorithms at a high level
 - Get to know the API documentation and integrated help capabilities to more efficiently find and use Q# functionality
 - Write API documentation comments to help document and explain your Q# programs

@@ -1,12 +1,12 @@
-You are in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their International Standard Book Number, or ISBN, a sequence of numbers which uniquely identify every book. 
-You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field,  one of the digits is now illegible.
-The online library only allows three attempts when searching for a book, so you need to somehow determine the missing digit without guessing.
+You're in desperate need of a book on how to grow potatoes in outer space, but the intergalactic online library only lets you search for books by their International Standard Book Number, or ISBN, a sequence of numbers that uniquely identify every book. 
+You had written it down on a sticky note, but after spilling your coffee while the spaceship went through an asteroid field, one of the digits is now illegible.
+The online library allows only three attempts when searching for a book, so you need to somehow determine the missing digit without guessing.
 
-In the next few units you will write a Q# program to do just that using Grover's algorithm.
+In the next few units, you'll write a Q# program to do just that using Grover's algorithm.
 
 ## ISBN check digits
 
-Fortunately, an ISBN is not simply a random sequence of digits. 
+Fortunately, an ISBN isn't simply a random sequence of digits. 
 Instead, they utilize check digits, a type of redundancy check historically used to detect simple errors when digits are input manually.
 In the ISBN 10 system, each ISBN is a ten-digit sequence and the last digit serves as the check: the full sequence $(x_0, x_1, \ldots, x_9)$ should satisfy the following condition: 
 
@@ -29,14 +29,14 @@ $$
 
 which can only be true for the proper value of $x$. 
 
-Clearly this can be easily solved by a classical computer (not to mention by hand), but let's assume that it cannot be and consider how we might solve it with a quantum computer.
+Clearly this can be easily solved by a classical computer (not to mention by hand), but let's assume that it can't be and consider how we might solve it with a quantum computer.
 Toy problems such as these, while clearly not demonstrating a scenario where quantum computing would be beneficial, are often useful in developing our understanding of various problems and approaches that may be taken. 
-Then, when such a problem is at too large a scale to handle classically, you will already have the knowledge and tools to begin tackling it with a quantum computer.
+Then, when such a problem is at too large a scale to handle classically, you'll already have the knowledge and tools to begin tackling it with a quantum computer.
 
 To find the value of $x$ with a quantum computer, Grover's algorithm can be used with an oracle that checks whether the above equation is satisfied.
-In the rest of this unit, you will create and document this oracle in a new Q# project using the Standard and Numerics libraries.
-Then, in the next unit, you will put it all together into Grover's algorithm and finally find that book you need. 
-The instructions here are specifically for Q# via the command line in VS Code, but easily extend to other environments. 
+In the rest of this unit, you'll create and document this oracle in a new Q# project using the Standard and Numerics libraries.
+Then, in the next unit, you'll put it all together into Grover's algorithm and finally find that book you need. 
+The instructions here are specifically for Q# via the command line in Visual Studio Code, but easily extend to other environments. 
 
 ## Implementing the oracle
 
@@ -50,21 +50,21 @@ $$
 $$
 for a given modulus $N$ and constant integer multiplier $a$. 
 
-To implement our mapping specifically then, we will need to set the $|b\rangle$ register to the number state $|9\rangle$. 
+To implement our mapping specifically then, we'll need to set the $|b\rangle$ register to the number state $|9\rangle$. 
 Note that each register will need consist of four qubits to accurately represent the digits 0 through 9.
 
-Properly using this mapping as an oracle on the four-qubit data register $|x\rangle$  proceeds by first creating a four-qubit target register (i.e. $|b\rangle$ above) and preparing it in the number state $|9\rangle$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace?azure-portal=true)), and then performing the mapping above by providing $N=11$ and $a=6$, so
+Properly using this mapping as an oracle on the four-qubit data register $|x\rangle$  proceeds by first creating a four-qubit target register (that is,$|b\rangle$ above) and preparing it in the number state $|9\rangle$ (this can be done using the [`ApplyXorInPlace` operation](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic.applyxorinplace?azure-portal=true)), and then performing the mapping above by providing $N=11$ and $a=6$, so
 $$
 |x\rangle|9\rangle \mapsto |x\rangle|(9 + 6 \cdot x) \bmod 11\rangle.
 $$
 
-In the remainder of this unit you will learn how to explicitly implement this mapping as a Q# operation. 
-In the next unit, you will put it all together and finally find the book you need!
+In the remainder of this unit, you'll learn how to explicitly implement this mapping as a Q# operation. 
+In the next unit, you'll put it all together and finally find the book you need!
 
 ### Step 1. Flag the correct state by applying the oracle
 
-Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, i.e. those which are a solution to the search problem.
-This can be done using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` operation is applied to the $|-\rangle$ state, the $|-\rangle$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
+Recall from the [module on Grover's algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states, that is, those that are a solution to the search problem.
+This can be done by using the "*phase kickback*" trick, which makes use of the fact that when a controlled `X` operation is applied to the $|-\rangle$ state, the $|-\rangle$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 
 Supposing we have in hand the search register `digitReg` and a `flagQubit` initialized to $|-\rangle$, how would we go about getting that phase factor on strictly the state $|x\rangle$ in `digitReg` which satisfies $(9 + 6 \cdot x) \bmod 11 = 0$?
 
@@ -82,7 +82,7 @@ Thus the state of `digitReg` which satisfies the equation acquires the phase fac
 $$
 -1*|x\_{good}\rangle |0\rangle\_{\text{target}} |-\rangle
 $$
-and the non-solution states do not:
+and the non-solution states don't:
 $$
 |x\_{bad}\rangle |\neq 0\rangle\_{\text{target}} |-\rangle.
 $$
@@ -91,7 +91,7 @@ After this, the target register and the flag qubit can be uncomputed (handled by
 
 The following code defines the operation `IsbnOracle`, which implements the full oracle on `digitReg`. To perform the arithmetic mapping to the target register it uses the operation `ComputeIsbnCheck`, which we define further below.
 
-:::code language="qsharp" source="code/4-program-1.qs":::
+:::code language="qsharp" source="../code/4-program-1.qs":::
 
 Note that upon allocation, `targetReg` will be in the state $|0\rangle$. Therefore, `ComputeIsbnCheck` will need to first initialize
 
@@ -107,7 +107,7 @@ As mentioned above, we can straightforwardly bring the target register from $|0\
 Then, the only step left to perform the mapping using `MultiplyAndAddByModularInteger`.
 The code to do this is shown below.
 
-:::code language="qsharp" source="code/4-program-2.qs":::
+:::code language="qsharp" source="../code/4-program-2.qs":::
 
 
 ## Step 3. Generalize to arbitrary ISBNs
@@ -119,22 +119,22 @@ $$
 which resulted from the incomplete ISBN of 0-306-$x$0615-2.
 
 But what about any future space explorers who also forget to properly secure their coffee cups around their notes from the librarian?
-Surely they would appreciate a program which would let them find any one missing digit from any arbitrary ISBN.
+Surely they would appreciate a program that would let them find any one missing digit from any arbitrary ISBN.
 
 With them in mind, we can write a function `GetIsbnCheckConstants` to return the constants $a$ and $b$ of the corresponding check equation:
 $$
 0 = (b + a\cdot x) \bmod 11.
 $$
-Assuming we will represent the incomplete ISBN as a 10-integer array with the missing digit indicated by a `-1`, we define this function as
+Assuming we'll represent the incomplete ISBN as a 10-integer array with the missing digit indicated by a `-1`, we define this function as
 
-:::code language="qsharp" source="code/4-program-3.qs":::
+:::code language="qsharp" source="../code/4-program-3.qs":::
 
 As expected, this returns a tuple `(6, 9)` if given our example as `[0, 3, 0, 6, -1, 0, 6, 1, 5, 2]`.
 
 Now, we redefine `ComputeIsbnCheck` and `IsbnOracle` to take these constants as inputs:
 
-:::code language="qsharp" source="code/4-program-4.qs":::
+:::code language="qsharp" source="../code/4-program-4.qs":::
 
 ## What's next?
 
-In the next unit, you will put all this together and run Grover's algorithm to find the missing digit.
+In the next unit, you'll put all this together and run Grover's algorithm to find the missing digit.
