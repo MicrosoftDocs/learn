@@ -1,6 +1,6 @@
-We have already covered how we can iterate over collection types using the loop, but this time we will do a more in-depth review on how Rust handles the concept of iteration itself.
+We've already covered how we can iterate over collection types by using the loop. This time, we'll do a more in-depth review on how Rust handles the concept of iteration itself.
 
-In Rust, all iterators implement a trait named `Iterator` that is defined in the standard library and is used to implement iterators over collections such as ranges, arrays, vectors and hash maps.
+In Rust, all iterators implement a trait named `Iterator` that's defined in the standard library and is used to implement iterators over collections such as ranges, arrays, vectors, and hash maps.
 
 The core of that trait looks like this:
 
@@ -11,19 +11,19 @@ trait Iterator {
 }
 ```
 
-An `iterator` has a method, `next`, which when called, returns an `Option<Item>`. `next` will return `Some(Item)` as long as there are elements, and once they've all been exhausted, will return `None` to indicate that iteration is finished.
+An `Iterator` has a method, `next`, which when called returns an `Option<Item>`. The `next` method will return `Some(Item)` as long as there are elements. After they've all been exhausted, it will return `None` to indicate that iteration is finished.
 
 Notice this definition uses some new syntax: `type Item` and `Self::Item`, which are defining an
 associated type with this trait. This means that every implementation of the `Iterator` traits also requires the definition of the associated `Item` type, which is used as the return type of the `next` method. In other words, the `Item` type will be the type returned from the iterator inside the `for` loop block.
 
-## Implementing our own iterator
+## Implement our own iterator
 
 Creating an iterator of your own involves two steps:
 
-1. Creating a struct to hold the iterator's state, and then
-2. Implementing Iterator for that struct.
+1. You create a struct to hold the iterator's state.
+2. You implement the iterator for that struct.
 
-Let's make an iterator named `Counter` which counts from 1 to an arbitrary number, defined when the `Counter` struct is created.
+Let's make an iterator named `Counter`, which counts from one to an arbitrary number, that's defined when the `Counter` struct is created.
 
 First, we create the struct that will hold our iterator state. We also implement a `new` method to control how it should be initiated.
 
@@ -44,12 +44,10 @@ impl Counter {
 }
 ```
 
-Then, we implement the `Iterator` trait for our `Counter` struct. We will be counting with usize, so we declare that our associated `Item` type should be of that type.
+Then, we implement the `Iterator` trait for our `Counter` struct. We'll be counting with usize, so we declare that our associated `Item` type should be of that type.
 
-`next()` is the only required method that we should define, and inside its body we increment our
-count by 1 at every call *(this is why we started at zero)*, and then we check to see if we've
-finished counting or not. We use the `Some(value)` variant of the `Option` type to express that
-iteration is still yielding results and the `None` variant to express that iteration should stop.
+The `next()` method is the only required method that we should define. Inside its body, we increment our
+count by one at every call *(this is why we started at zero)*. Then we check to see if we've finished counting or not. We use the `Some(value)` variant of the `Option` type to express that iteration is still yielding results and the `None` variant to express that iteration should stop.
 
 ```rust
 impl Iterator for Counter {
@@ -88,8 +86,7 @@ fn main() {
 
 ```
 
-But calling `next` this way gets repetitive. Rust allows us to use `for` loops in types that
-implement the `Iterator` trait, so lets do that:
+But calling `next` this way gets repetitive. Rust allows us to use `for` loops in types that implement the `Iterator` trait, so let's do that:
 
 ```rust
 fn main() {
@@ -99,7 +96,7 @@ fn main() {
 }
 ```
 
-The snippet above will then print the following in the console:
+The preceding snippet will then print the following output in the console:
 
 ```output
     1
@@ -114,8 +111,7 @@ The snippet above will then print the following in the console:
     10
 ```
 
-`Iterator`'s full definition includes a number of other methods as well, but they are default
-methods, built on top of `next`, and so you get them for free:
+The `Iterator` trait's full definition includes other methods too, but they are default methods. They're built on top of `next`, so you get them for free:
 
 ```rust
 let sum_until_10: usize = Counter::new(10).sum();

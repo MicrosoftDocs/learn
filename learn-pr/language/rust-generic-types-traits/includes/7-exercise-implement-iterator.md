@@ -1,14 +1,11 @@
-In this exercise you'll be requested to implement an iterator that returns equal items in a sequence grouped in vectors, such as:
+In this exercise, you'll be requested to implement an iterator that returns equal items in a sequence grouped in vectors, such as:
 
-- **input:** `[ 1, 1, 2, 1, 3, 3 ]`
-- **output:** `[ [1, 1], [2], [1], [3, 3] ]`
+- **Input:** `[ 1, 1, 2, 1, 3, 3 ]`
+- **Output:** `[ [1, 1], [2], [1], [3, 3] ]`
 
-Your goal is to finish writing the implementation of the `Iterator` trait for the `Group` struct,
-which will be responsible for keeping the data state in its `inner` field between iterations.
+Your goal is to finish writing the implementation of the `Iterator` trait for the `Group` struct, which will be responsible for keeping the data state in its `inner` field between iterations.
 
-Note that the generic type `T` will need to be an implementor of the trait `PartialEq` since you'll
-need to compare values to perform this assignment. But don't worry about that, because that part is
-already solved for you at the `impl<T: PartialEq>` segment.
+The generic type `T` will need to be an implementor of the trait `PartialEq` since you'll need to compare values to perform this assignment. But don't worry about that, because that part is already solved for you at the `impl<T: PartialEq>` segment.
 
 ```rust
 struct Groups<T> {
