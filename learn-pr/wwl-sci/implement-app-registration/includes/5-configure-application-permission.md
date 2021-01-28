@@ -6,11 +6,11 @@ Applications that integrate with Microsoft identity platform follow an authoriza
 
 The Microsoft identity platform implements the OAuth 2.0 authorization protocol, a method through which a third-party app can access web-hosted resources on behalf of a user. Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or *Application ID URI*. For example, Microsoft's web-hosted resources include:
 
-- Microsoft Graph: https://graph.microsoft.com
+- Microsoft Graph: https<nolink>://graph.microsoft.com
 
-- Microsoft 365 Mail API: https://outlook.office.com
+- Microsoft 365 Mail API: https<nolink>://outlook.office.com
 
-- Azure Key Vault: https://vault.azure.net
+- Azure Key Vault: https<nolink>://vault.azure.net
 
 The same is true for any third-party resources that have integrated with the Microsoft identity platform. Any of these resources also can define a set of permissions that can be used to divide the functionality of that resource into smaller chunks. As an example, Microsoft Graph has defined permissions for tasks such as:
 
@@ -48,7 +48,7 @@ Microsoft identity platform supports two types of permissions: **delegated permi
 
 - For application permissions, the *effective permissions* of your app will be the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
 
-## OpenID Connect scopes
+## OpenID Connect Scopes
 
 The Microsoft identity platform implementation of OpenID Connect has a few well-defined scopes that are also hosted on the Microsoft Graph: openid, email, profile, and offline_access. The address and phone OpenID Connect scopes are not supported.
 

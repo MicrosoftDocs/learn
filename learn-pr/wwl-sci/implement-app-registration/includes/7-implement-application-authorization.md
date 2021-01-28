@@ -4,7 +4,7 @@ Application roles are used to assign permissions to users. You define app roles 
 
 There are two ways to declare app roles by using the Azure portal:
 
-- App roles UI | Preview
+- App roles UI|Preview
 
 - App manifest editor
 

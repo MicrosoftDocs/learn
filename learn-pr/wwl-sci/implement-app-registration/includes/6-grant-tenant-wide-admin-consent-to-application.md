@@ -1,6 +1,6 @@
 
 
-## Grant admin consent in App registrations
+## Grant admin consent in app registrations
 
 For applications your organization has developed or for those that are registered directly in your Azure AD tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
@@ -15,14 +15,14 @@ The Global Administrator role is required in order to provide admin consent for 
 2. On the **Demo app** blade, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
 
 >[!div class="mx-imgBorder"]
->![Screen image displaying the Demo app blade with the directory ID highlighted](../media/lp3-mod3-demo-app-directory-id.png)
+>![Screen image displaying the Demo app blade with the directory ID highlighted](../media/lp-3-mod-3-demo-app-directory-id.png)
 
 3. In the left navigation, under **Manage**, select **API permissions**.
 
 4. Under **Configured permissions**, select **Grant admin consent**.
 
 >[!div class="mx-imgBorder"]
->![Screen image displaying the API permission page with Grant admin consent for Contoso highlighted](../media/lp3-mod3-api-permissions-admin-consent.png)
+>![Screen image displaying the API permission page with Grant admin consent for Contoso highlighted](../media/lp-3-mod-3-api-permissions-admin-consent.png)
 
 5. Review the dialogue box, and then select **Yes.**
 
@@ -41,7 +41,7 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 3. Under **Permissions,** select **Grant admin consent.**
 
 >[!div class="mx-imgBorder"]
->![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](../media/lp3-mod3-grant-admin-consent-enterprise-app.png)
+>![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](../media/lp-3-mod-3-grant-admin-consent-enterprise-app.png)
 
 > [!WARNING]
 > Warning

@@ -1,6 +1,6 @@
 
 
-## Declare app roles using the App roles UI
+## Declare app roles using the app roles UI
 
 > [!IMPORTANT]
 > Important
@@ -17,7 +17,7 @@ To create an app role by using the Azure portal's user interface:
 4. Select **App roles | Preview**, and then select **Create app role**.
 
  >[!div class="mx-imgBorder"]
- >![Screen image displaying app roles with create app role highlighted](../media/lp3-mod3-app-roles-create-app-role.png)
+ >![Screen image displaying app roles with create app role highlighted](../media/lp-3-mod-3-app-roles-create-app-role.png)
 
 5. In the **Create app role** pane, in the **Display name** box, enter **Survey Writer**.
 
@@ -55,7 +55,7 @@ To assign users and groups to roles by using the Azure portal:
 
 1. After you have selected users and groups, select **Select**.
 
-1. When using the **Select a role **assignment, all the roles that you've defined for the application are displayed.
+1. When using the **Select a role** assignment, all the roles that you've defined for the application are displayed.
 
 1. Choose a role and then select **Select**.
 

@@ -13,7 +13,7 @@ Registering your application establishes a trust relationship between your app a
 5. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying the Register an application blade with the name and default settings highlighted.](../media/lp3-mod3-register-application.png)
+> ![Screen image displaying the Register an application blade with the name and default settings highlighted.](../media/lp-3-mod-3-register-application.png)
 
 6. When complete, you will be directed to the **Demo app** blade.
 
@@ -29,7 +29,7 @@ Settings for each application type, including redirect URIs, are configured in *
 
 To configure application settings based on the platform or device you're targeting:
 
-1. Select your application in **App registrations **in the Azure portal.
+1. Select your application in **App registrations** in the Azure portal.
 
 2. Under **Manage**, select **Authentication**.
 
@@ -108,7 +108,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 >[!div class="mx-imgBorder"]
 >![An app registration's Expose an API pane in the Azure portal](../media/portal-02-expose-api.png)
 
-5. You're prompted to set an **Application ID URI **if you haven't yet configured one.  The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
+5. You're prompted to set an **Application ID URI** if you haven't yet configured one.  The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
 
 6. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
 
