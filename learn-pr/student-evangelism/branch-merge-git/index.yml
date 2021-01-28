@@ -3,7 +3,7 @@ uid: learn.student-evangelism.branch-merge-git
 metadata:
   title: Edit code through branching and merging in Git
   description: Level up your Git knowledge by learning about how to keep code separate using branches and how to merge them later
-  ms.date: 06/24/2019
+  ms.date: 01/30/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -40,6 +40,7 @@ units:
 - learn.student-evangelism.branch-merge-git.2-exercise-create-branch-alice
 - learn.student-evangelism.branch-merge-git.3-exercise-merge-bob
 - learn.student-evangelism.branch-merge-git.4-exercise-resolve-merge-conflicts
+- learn.student-evangelism.branch-merge-git.4a-knowledge-check
 - learn.student-evangelism.branch-merge-git.5-summary
 badge:
   uid: learn.student-evangelism.branch-merge-git.badge
