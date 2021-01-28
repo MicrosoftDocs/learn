@@ -1,4 +1,3 @@
-
 Keep in mind that the programs you ran here use a _simulator_ to mimic quantum behavior. A simulator is a perfect way to experiment with and verify your quantum algorithms before you run your programs on a quantum computer.
 
 When you're ready to run your programs on quantum hardware, there's Azure Quantum, a quantum computing service that runs on Azure.
@@ -7,7 +6,7 @@ Azure Quantum is currently in limited preview with select partners and customers
 
 ## What's included on Azure Quantum?
 
-![A diagram showing various Azure Quantum features](../media/6-quantum-execution-info.png)
+![A diagram showing various Azure Quantum features.](../media/6-quantum-execution-info.png)
 
 **Quantum execution**: If you're interested in developing quantum software, then Azure Quantum offers a suite of tools that help you express your algorithms using the Quantum Development Kit and Q#.
 
@@ -25,7 +24,7 @@ Solvers emulate certain processes from quantum physics by using classical hardwa
 
 For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
 
-![A diagram that lists companies who provide quantum hardware on Azure Quantum](../media/6-azure-quantum.png)
+![A diagram that lists companies that provide quantum hardware on Azure Quantum.](../media/6-azure-quantum.png)
 
 ## What are Azure Quantum Workspaces?
 
@@ -39,11 +38,11 @@ Here's a brief overview of some of the terminology that's associated with a quan
 
 For quantum programs, your target will either be a quantum computer or a quantum simulator. For quantum-inspired problems, your target will typically be one of the solvers.
 
-**Provider**: Once you've decided on the type of target to use, you can enable different providers in your workspace that offer that target.
+**Provider**: After you've decided on the type of target to use, you can enable different providers in your workspace that offer that target.
 
 For example, you could choose to enable IonQ, Honeywell, and QCI in your workspace and run your Q# program on each of their hardware types.
 
-Every workspace comes with the Microsoft provider always enabled, and you can select which third party providers you'd like to add.
+Every workspace comes with the Microsoft provider always enabled, and you can select which third-party providers you'd like to add.
 
 **Jobs**: When you execute a quantum program or solve a quantum-inspired optimization (QIO) problem on Azure Quantum, you're creating and running a job.
 
@@ -51,7 +50,7 @@ A job consists of:
 
 * An ID that's unique within your workspace.
 * The provider that will execute your job.
-* The target that you will execute your job on.
+* The target that you'll execute your job on.
 * A name that you choose to help you organize your job.
 * Any input parameters that your target requires.
 
