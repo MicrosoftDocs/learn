@@ -15,10 +15,10 @@ This observation gives us the first part of the answer; the problems that benefi
 ## Problems that allow efficient oracle implementation
 
 Remember that the complexity analysis of Grover's algorithm uses the number of function evaluations necessary to find the answer as a metric; approximately $\sqrt{\frac{N}{M}}$, where $N$ is the size of the search space, and $M$ is the number of solutions to the problem. 
-For comparison, doing an exhaustive classical search (choosing a random input, calculating the value of the function for it, and checking whether it is 1) takes approximately $\frac{N}{M}$ function evaluations.
+For comparison, doing an exhaustive classical search (choosing a random input, calculating the value of the function for it, and checking whether it's 1) takes approximately $\frac{N}{M}$ function evaluations.
 
 However, this analysis doesn't consider the complexity of evaluating the function, both in classical and in quantum cases. If a function evaluation is much more complicated on a quantum computer than on a classical one, the overall algorithm runtime will be longer in the quantum case, even though technically, it will use fewer queries.
 
-For example, if the function is defined as a classical "opaque box", where the implementation of the function is not known, you can't use the internal structure of the function to implement the quantum oracle efficiently. Each quantum query has to evaluate the classical function for each of the $N$ inputs. In this scenario, it would be more efficient to run an exhaustive classical search!
+For example, if the function is defined as a classical "opaque box", where the implementation of the function isn't known, you can't use the internal structure of the function to implement the quantum oracle efficiently. Each quantum query has to evaluate the classical function for each of the $N$ inputs. In this scenario, it would be more efficient to run an exhaustive classical search!
 
-Thus, only problems that allow you to compute success criteria quickly on a quantum computer can be considered as a practical application for Grover's algorithm.
+So only problems that allow you to compute success criteria quickly on a quantum computer can be considered as a practical application for Grover's algorithm.

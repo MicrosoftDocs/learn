@@ -1,7 +1,7 @@
 
 In the previous units, you learned about the search problem and to implement its instances as quantum oracles. 
 
-Preliminaries are over! Prepare yourself for your first real mission! In this unit, you will implement Grover's search algorithm. It is not necessary to dive deep into the gate-level implementation details but you will focus the discussion on the high-level logic instead.
+Preliminaries are over! Prepare yourself for your first real mission! In this unit, you'll implement Grover's search algorithm. It isn't necessary to dive deep into the gate-level implementation details but you'll focus the discussion on the high-level logic instead.
 
 For effectiveness, you have to make sure that two connected stations don't use the same bandwidth.
 
@@ -16,9 +16,9 @@ Let's start with an outline of the algorithm and then discuss each step in detai
 
    * Apply the quantum oracle - This operation multiplies the phases of all states that are solutions to our problem by $-1$, as we've seen earlier in this module. Notice that this is the only step that uses the information about our problem.
 
-   * Apply the so-called "diffusion operator" - This operator changes the amplitudes of the basis states as follows: the amplitudes that are greater than the average of the amplitudes will get smaller, and the amplitudes that are less than the average will get larger.  This step does not depend on our problem.
+   * Apply the so-called "diffusion operator" - This operator changes the amplitudes of the basis states as follows: the amplitudes that are greater than the average of the amplitudes will get smaller, and the amplitudes that are less than the average will get larger.  This step doesn't depend on our problem.
 
-   Overall, one iteration *decreases* the amplitudes of the basis states that are not solutions to our problem and *increases* the amplitudes of the basis states that are solutions, while keeping both types of amplitudes positive.
+   Overall, one iteration *decreases* the amplitudes of the basis states that aren't solutions to our problem and *increases* the amplitudes of the basis states that are solutions, while keeping both types of amplitudes positive.
 
 3. Finally, we measure the state of the system. Repeating the iteration several times introduces significant differences between the two types of amplitudes so the measurement yields the answer with a high probability.
 
@@ -47,17 +47,17 @@ This means that we can always represent the overall system state as a superposit
 
    If we imagine a plane on which $|\textrm{good}\rangle$ and $|\textrm{bad}\rangle$ vectors correspond to vertical and horizontal axes, respectively, we can plot this state like this:
 
-   ![Figure 1. A circle showing superposition of all states](../media/5-equal-superposition.png)
+   ![Figure showing a circle that illustrates the superposition of all states.](../media/5-equal-superposition.png)
 
    The angle $\theta$ depends on the proportion of "good" states among all basis states: $\sin \theta = \sqrt{\frac{M}{N}}$.
 
 2. Next, we apply the oracle. Remember that this operation multiplies the amplitudes of "good" states by $-1$. On the circle plot, this transformation leaves the horizontal component of the state vector unchanged and reverses its vertical component. In other words, this operation is a reflection along the horizontal axis:
 
-   ![Figure 2. A circle showing the result of the first reflection](../media/5-first-reflection.png)
+   ![Figure showing a circle that illustrates the result of the first reflection.](../media/5-first-reflection.png)
 
 3. Now we apply the diffusion operator. Its effect is another reflection, this time along the vector $|\textrm{all}\rangle$:
 
-   ![Figure 3. A circle showing the result of the second reflection](../media/5-second-reflection.png)
+   ![Figure showing circle that illustrates the result of the second reflection.](../media/5-second-reflection.png)
 
    Notice how this sequence of two reflections becomes a counterclockwise rotation by an angle $2\theta$. If we repeat this sequence, reflecting the new state first along the horizontal axis and then along the $|\textrm{all}\rangle$ vector, it performs a rotation by $2\theta$ again. The angle of this rotation depends only on the angle between the reflection axes and not on the state we reflect. 
 
@@ -69,7 +69,7 @@ This means that we can always represent the overall system state as a superposit
    Since our goal is to get one of the "good" states with probability as high as possible, we need to increase the amplitudes of "good" states as much as we can (and reduce the amplitudes of "bad" states correspondingly).
    Geometrically, this means that we want to rotate our state vector as close to the vertical axis as possible.
 
-   ![Figure 4. A circle showing the several rotations](../media/5-measurement.png)
+   ![Figure showing circle that illustrates the several rotations.](../media/5-measurement.png)
 
    If we pick the right number of iterations, we'll get to the point at which the measurement will produce a correct answer with sufficiently high probability.
 
@@ -83,11 +83,11 @@ Grover's search algorithm has several important properties that are worth callin
 The final measurement produces a result that solves our problem with high probability, but usually not with absolute certainty; in most cases, there remains a small probability of failure.
 
 We have to deal with possible failure in the same way we deal with classical randomized algorithms: check whether the result we got is indeed a solution to our problem, and if it's not, rerun the algorithm from scratch. 
-Unfortunately, there is no way to use the result we obtained to improve the chances of success for the next attempt.
+Unfortunately, there's no way to use the result we obtained to improve the chances of success for the next attempt.
 Fortunately, however, the average number of algorithm reruns doesn't depend on the size of the problem.
 
 
-### More iterations does not mean better!
+### More iterations aren't necessarily better!
 
 For many iterative classical algorithms, running extra iterations slows them down but doesn't ultimately reduce the success probability of the algorithm. 
 Grover's search has a particular "sweet spot" - the number of algorithm iterations that yields the highest success probability. 
@@ -108,9 +108,9 @@ After that, the probability grows again and approaches 100% on iteration $3 R_{o
 > The periodic behavior of the success probability can be explained using the same visualization.
 > Each iteration is a rotation in the same direction by a fixed angle. If we keep iterating, we'll over-rotate our state, which will start getting further and further away from the vertical axis, thus reducing our success probability.
 >
-> ![Figure 5. A circle showing overrotation](../media/5-overrotation.png)
+> ![Figure showing circle that illustrates overrotation.](../media/5-overrotation.png)
 > 
-> Once the state passes the horizontal axis, further rotations bring it closer to the vertical axis from the opposite direction, which increases our success probability again.
+> When the state passes the horizontal axis, further rotations bring it closer to the vertical axis from the opposite direction, which increases our success probability again.
 > (Remember that measurement probabilities are defined by *squares* of amplitudes, not just amplitudes.)
 
 
@@ -122,4 +122,4 @@ In practical applications, you don't usually know how many solutions your proble
 To handle this issue, you can pick a small number, run the algorithm with that many iterations, and if it doesn't yield an answer, retry with a different, larger number of iterations. 
 An efficient strategy of gradually increasing the iteration number will still find the solution with an average number of iterations around $\sqrt{\frac{N}{M}}$.
 
-In the next unit, you will implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the space communication problem!
+In the next unit, you'll implement Grover's algorithm in Q# and run it to solve the vertex coloring problem for the  space communication problem!

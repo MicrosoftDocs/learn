@@ -1,6 +1,6 @@
 For the moment, forget about noisy messages and bandwidths and consider only colors and vertices. You have a picture of dots connected by edges and you wonder about the ways to color the dots. 
 
-In this part, you will implement a quantum oracle for the graph coloring problem.
+In this part, you'll implement a quantum oracle for the graph coloring problem.
 
 > [!NOTE]
 > In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 
@@ -16,7 +16,7 @@ Start by creating a Q# project as described in the module [Create your first Q# 
 1. Select a directory to hold your project, such as your home directory. Enter *ExploringGroversSearch* as the project name, then select **Create Project**.
 1. From the window that appears at the bottom, select **Open new project**.
 
-You will see two files: the project file and *Program.qs*, which contains starter code. 
+You'll see two files: the project file and *Program.qs*, which contains starter code. 
 
 For each of the code snippets in this module, you should copy the whole snippet to replace the contents of the file *Program.qs*. 
 After that, open the integrated terminal (from the **Terminal** menu, select **New Terminal**) and run `dotnet run`:
@@ -30,9 +30,9 @@ dotnet run
 
 We need two parameters to represent a graph: the number of vertices and the list of edges. 
 
-In Q#, we will store the number of vertices `nVertices` as an integer, and the list of edges `edges` as an array of tuples. Each tuple describes one edge of the graph as a pair of indices of vertices connected by this edge; we will use zero-based indices so that the index value can be between 0 and `nVertices` - 1.
+In Q#, we'll store the number of vertices `nVertices` as an integer, and the list of edges `edges` as an array of tuples. Each tuple describes one edge of the graph as a pair of indices of vertices connected by this edge; we'll use zero-based indices so that the index value can be between 0 and `nVertices` - 1.
 
-![Figure 1. A graph](../media/2-valid-labeling.png)
+![Figure showing a graph.](../media/2-valid-labeling.png)
 
 The structure of our example graph can be represented as follows:
 
@@ -40,12 +40,12 @@ The structure of our example graph can be represented as follows:
 
 ## Representing the vertex coloring
 
-We will describe our graph coloring by an array of `nVertices` colors. 
-For our example, we will look for a four-coloring of the graph - a coloring that uses at most four colors, encoded with integers 0 through 3. 
+We'll describe our graph coloring by an array of `nVertices` colors. 
+For our example, we'll look for a four-coloring of the graph - a coloring that uses at most four colors, encoded with integers 0 through 3. 
 
 We need to represent our coloring in a bit string, so we'll use a bit string of length 2 * `nVertices`, with the first pair of bits encoding the color of vertex 0, the second pair - the color of vertex 1, and so on. We'll store our bits as Boolean values, with 0 and 1 bits encoded as `false` and `true`, respectively. The pair of bits will encode an integer color index using little-endian notation, this is, an integer 1 is encoded as 10, with the least significant bit stored first.
 
-Here is how the coloring of our example graph will be encoded and interpreted:
+Here's how the coloring of our example graph will be encoded and interpreted:
 
 :::code language="qsharp" source="code/4-program-2.qs":::
 
@@ -86,9 +86,9 @@ The smallest building block for checking whether the given graph coloring is val
 
 The operation that implements this check (`MarkColorEquality`) has to take two 2-qubit arrays as inputs, representing the colors of the vertices, and a qubit that we'll use to mark the result of the comparison by flipping its state if the colors are the same.
 To compare the qubit arrays, we compare their corresponding bits to each other; if all pairs of bits are the same, then the arrays are the same, and the colors of the vertices stored in those arrays are the same.
-To compare a pair of bits, we can compute their XOR: if the result is 0, the bits are the same; otherwise they are different.
+To compare a pair of bits, we can compute their XOR: if the result is 0, the bits are the same; otherwise they're different.
 
-Here is the Q# code that implements this check and uses it to compare two qubit arrays: the first one in the $|00\rangle$ state and the second one in an equal superposition of all basis states.
+Here's the Q# code that implements this check and uses it to compare two qubit arrays: the first one in the $|00\rangle$ state and the second one in an equal superposition of all basis states.
 
 :::code language="qsharp" source="code/4-program-3.qs":::
 
@@ -98,7 +98,7 @@ The `within ... apply` statement implements a common pattern in quantum computin
 > The `DumpRegister` function is similar to the `DumpMachine` function that has been used in previous modules. However, it prints the information about the state of a *subset* of qubits, rather than all the qubits used by the program. 
 > In the current implementation of the full-state simulator, `DumpRegister` can only be used if that register is not entangled with the rest of the qubits.
 
-Here is the output of this code:
+Here's the output of this code:
 
 ```output
 The starting state of qubits c1 and target:
@@ -157,11 +157,11 @@ We start with those qubits in $|0\rangle$ state and compare colors of vertices i
 
 Lastly, we compute the final result. If all the extra qubits allocated are in the $|0\rangle$ state, we flip the state of our target qubit to indicate that the vertex coloring is valid.
 
-Here is the Q# code that validates that the vertex coloring is valid.
+Here's the Q# code that validates that the vertex coloring is valid.
 
 :::code language="qsharp" source="code/4-program-4.qs":::
 
-Here is the output of this code:
+Here's the output of this code:
 
 ```output
 The coloring is valid
@@ -182,13 +182,13 @@ We can do it using the so-called "phase kickback trick":
 1. Allocate an extra qubit in the $\frac{1}{\sqrt2}(|0\rangle - |1\rangle)$ state.
 2. Apply the marking oracle $U_\textrm{mark}$ with this extra qubit as the target.  
 What happens to the register that encodes the coloring at this step? 
-   * If the basis state $|x\rangle$ encodes an *invalid coloring*, the state does not change.
+   * If the basis state $|x\rangle$ encodes an *invalid coloring*, the state doesn't change.
    * If the basis state $|x\rangle$ encodes a *valid* coloring, the operation $U_\textrm{mark}$ flips the state of the extra qubit, converting it to $\frac{1}{\sqrt2}(|1\rangle - |0\rangle)$, which is equivalent to multiplying the whole state by $-1$.
 
 If you apply these steps to a basis state, you won't be able to tell the difference - the global phase won't be observable. 
 But if you apply these steps to a superposition state, you'll see that the basis states that encode valid colorings acquire the $-1$ relative phase - exactly the effect we need the phase operation to have!
 
-Here is what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation that implements a marking oracle.
+Here's what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation that implements a marking oracle.
 
 :::code language="qsharp" source="code/4-program-5.qs":::
 
@@ -210,4 +210,6 @@ The state of qubits c1 after the equality check:
 
 You can see that indeed, the amplitude of the $|00\rangle$ state changed to $-0.5$, so its relative phase compared to the other basis states is now $-1$.
 
-Congrats space explorer! Now you know how to build a complete quantum oracle for a graph coloring problem! In the next unit, you finally put into practice your skills to implement Grover’s search algorithm to determine the minimum number of different bandwitdths we need to assign. 
+Congrats, space explorer! Now you know how to build a complete quantum oracle for a graph coloring problem! 
+
+In the next unit, you finally put into practice your skills to implement Grover's search algorithm to determine the minimum number of bandwidths we need to assign. 
