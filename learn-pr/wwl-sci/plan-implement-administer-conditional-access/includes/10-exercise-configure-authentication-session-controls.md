@@ -41,7 +41,6 @@
 > ![Screen image displaying a new conditional access policy with policy settings highlighted](../media/lp2-mod3-create-session-conditional-access-policy.png)
 
 > [!NOTE]
-> Note
 > Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:
 >
 >- Conditional Access policies can be enabled in report-only mode.

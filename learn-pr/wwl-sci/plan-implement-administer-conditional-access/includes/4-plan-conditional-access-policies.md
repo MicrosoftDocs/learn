@@ -1,11 +1,3 @@
----
-
-**#COMMENT**
-
-From [https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
-
----
-
 Planning your Conditional Access deployment is critical to achieving your organization's access strategy for apps and resources.
 
 In a mobile-first, cloud-first world, your users access your organization's resources from anywhere using a variety of devices and apps. As a result, focusing on who can access a resource is no longer enough. You also need to consider where the user is, the device being used, the resource being accessed, and more.
@@ -34,7 +26,8 @@ The benefits of deploying CA are:
 
 CA policies are if-then statements: If an assignment is met, then apply these access controls. When configuring CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
 
-![create policy screen](../media/create-policy.png)
+> [!div class="mx-imgBorder"]
+> ![create policy screen](../media/create-policy.png)
 
 Assignments define the users and groups to be affected by the policy, the cloud apps or actions to which the policy will apply, and the conditions under which the policy will apply. Access control settings grant or block access to different cloud apps and can enable limited experiences within specific cloud apps.
 

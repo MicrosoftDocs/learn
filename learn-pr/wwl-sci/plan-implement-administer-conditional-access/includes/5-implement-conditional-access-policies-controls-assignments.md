@@ -1,11 +1,3 @@
----
-
-**#COMMENT**
-
-From [https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access)
-
----
-
 Visual Studio App Center supports Azure AD Conditional Access, an advanced feature of Azure AD that enables you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like group, device type, location, and role.
 
 ## Setting up Conditional Access

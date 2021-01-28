@@ -33,7 +33,8 @@ To disable security defaults in your directory:
 
 4. Set the **Enable security defaults** toggle to **No**.
 
-![Screen image of security defaults being disabled and selection of the required reason for disabling. In this case, the organization is using Conditional Access.](../media/security-defaults-disable-before-conditional-access.png)
+> [!div class="mx-imgBorder"]
+> ![Screen image of security defaults being disabled and selection of the required reason for disabling. In this case, the organization is using Conditional Access.](../media/security-defaults-disable-before-conditional-access.png)
 
 5. Select **Save**.
 

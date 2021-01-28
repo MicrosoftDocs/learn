@@ -1,26 +1,4 @@
----
-
-**#COMMENT**
-
-From:
-
-- [https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
-
-- [https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)
-
-- [https://docs.microsoft.com/mem/intune/apps/app-protection-policy](https://docs.microsoft.com/mem/intune/apps/app-protection-policy)
-
----
-
 ## How to: Require app protection policy and an approved client app for cloud app access with Conditional Access
-
----
-
-**#COMMENT**
-
-(2 of 3) [https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
-
----
 
 People regularly use their mobile devices for both personal and work tasks. While making sure staff can be productive, organizations also want to prevent data loss from potentially unsecure applications. With Conditional Access, organizations can restrict access to approved (modern authentication-capable) client apps.
 
@@ -105,14 +83,6 @@ Organizations must complete the following three steps in order to require the us
 
 Review the article [How to create and assign app protection policies](https://docs.microsoft.com/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
----
-
-**#COMMENT**
-
-I'm leaving this link in at the moment, because I don't want to have a bare step listed with no guidance but the content is too long to import.
-
----
-
 ### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
 In this scenario, Contoso has decided that users may only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Azure AD credentials and have licenses assigned to them that include Azure AD Premium P1 or P2 and Microsoft Intune.
@@ -189,23 +159,7 @@ Organizations must complete the following three steps in order to require the us
 
 Review the article [How to create and assign app protection policies](https://docs.microsoft.com/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
----
-
-**#COMMENT**
-
-I'm leaving this link in at the moment, because I don't want to have a bare step listed with no guidance but the content is too long to import.
-
----
-
 ## App protection policies overview
-
----
-
-**#COMMENT**
-
-(3 of 3) [https://docs.microsoft.com/mem/intune/apps/app-protection-policy](https://docs.microsoft.com/mem/intune/apps/app-protection-policy)
-
----
 
 App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. A managed app has app protection policies applied to it, and it can be managed by Intune.
 

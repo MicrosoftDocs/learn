@@ -1,11 +1,3 @@
----
-
-**#COMMENT**
-
-From [https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)
-
----
-
 In complex deployments, organizations might have a need to restrict authentication sessions. Some scenarios might include:
 
 - Resource access from an unmanaged or shared device.
@@ -86,7 +78,8 @@ A persistent browser session allows users to remain signed in after closing and 
 
 Use the What-If tool to simulate a login from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
 
-![Conditional Access What If tool results](../media/conditional-access-what-if-tool-result.png)
+> [!div class="mx-imgBorder"]
+> ![Conditional Access What If tool results](../media/conditional-access-what-if-tool-result.png)
 
 ## Policy deployment
 

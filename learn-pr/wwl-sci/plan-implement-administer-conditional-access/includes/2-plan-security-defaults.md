@@ -1,11 +1,3 @@
----
-
-**#COMMENT**
-
-From [https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
-
----
-
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
 - Requiring all users to register for Azure AD Multi-Factor Authentication.
@@ -18,7 +10,8 @@ Managing security can be difficult with common identity-related attacks like pas
 
 - Protecting privileged activities like access to the Azure portal.
 
-![Screenshot of the Azure portal with the toggle to enable security defaults](../media/security-defaults-azure-ad-portal.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Azure portal with the toggle to enable security defaults](../media/security-defaults-azure-ad-portal.png)
 
 ## Availability
 
