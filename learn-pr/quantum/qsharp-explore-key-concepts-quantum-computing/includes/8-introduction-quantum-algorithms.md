@@ -1,4 +1,4 @@
-Congratulations, space explorer! You have learned the basic concepts on quantum computing, and you have successfully completed the first steps of the the training program. 
+Congratulations, space explorer! You've learned the basic concepts on quantum computing, and you've successfully completed the first steps of the training program. 
 
 In this part, you explore some famous quantum computing algorithms.
 

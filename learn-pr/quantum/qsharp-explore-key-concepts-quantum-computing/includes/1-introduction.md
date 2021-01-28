@@ -1,4 +1,4 @@
-As part of the mission, you need to get some theorical formation to operate quantum computers. You will learn some basic concepts on quantum physics and explore the tools that will help you to achieve your tasks. Don't worry, this module is specially created for crew members with no previous knowledge in quantum physics. 
+As part of the mission, you need to get some theoretical formation to operate quantum computers. You'll learn some basic concepts on quantum physics and explore the tools that will help you to achieve your tasks. Don't worry, this module is specially created for crew members with no previous knowledge in quantum physics. 
 
 Quantum computers work fundamentally differently from classical computers. They can offer solutions when classical computers run into limitations.
 
