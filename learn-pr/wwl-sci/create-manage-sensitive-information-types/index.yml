@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.create-manage-sensitive-information-types
+metadata:
+  title: Create and manage sensitive information types
+  description: "Create and manage sensitive information types"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Create and manage sensitive information types
+summary: Learn how to use sensitive information types to support your information protection strategy.
+abstract: |
+  After completing this module, you will be able to:
+  - Recognize the difference between built-in and custom sensitivity labels
+  - Configure sensitive information types with exact data match-based classification
+  - Implement document fingerprinting
+  - Create custom keyword dictionaries
+prerequisites: |
+  - Basic understanding of the Microsoft 365 services
+  - Basic understanding information protection and governance in Microsoft 365
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+- risk-practitioner
+- security-engineer
+products:
+- m365
+- m365-information-protection
+units:
+- learn.wwl.create-manage-sensitive-information-types.introduction
+- learn.wwl.create-manage-sensitive-information-types.compare-built-versus-custom
+- learn.wwl.create-manage-sensitive-information-types.create-manage-custom
+- learn.wwl.create-manage-sensitive-information-types.describe-custom-with-exact-data-match
+- learn.wwl.create-manage-sensitive-information-types.implement-document-fingerprinting
+- learn.wwl.create-manage-sensitive-information-types.create-keyword-dictionary
+- learn.wwl.create-manage-sensitive-information-types.knowledge-check
+- learn.wwl.create-manage-sensitive-information-types.summary-resources
+badge:
+  uid: learn.wwl.create-manage-sensitive-information-types.badge
