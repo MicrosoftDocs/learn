@@ -10,219 +10,219 @@ To edit the application properties:
 
 3. Take a moment to understand the options available. The options available will depend on how the app is integrated with Azure AD. For example, an app that uses SAML-based SSO will have fields such as *User access URL* whereas an app that uses OIDC-based SSO will not. Note that apps added through **Azure Active Directory > App registrations** are by default OIDC-based apps, while apps added **through Azure Active Directory > Enterprise applications** might use any of a number of SSO standards. All apps will have fields for configuring when an app appears and can be used. These fields are:
 
-- **Enabled for users to sign in?** determines whether users assigned to the application can sign in.
+    - **Enabled for users to sign in?** determines whether users assigned to the application can sign in.
 
-- **User assignment required?** determines whether users who aren't assigned to the application can sign in.
+    - **User assignment required?** determines whether users who aren't assigned to the application can sign in.
 
-- **Visible to users?** determines whether users assigned to an app can see it in [My Apps](https://myapps.microsoft.com/) and Microsoft 365 app launcher. (See the waffle menu in the upper-left corner of a Microsoft 365 website.)
+    - **Visible to users?** determines whether users assigned to an app can see it in [My Apps](https://myapps.microsoft.com/) and Microsoft 365 app launcher. (See the waffle menu in the upper-left corner of a Microsoft 365 website.)
 
-> [!TIP]
-> Assigning users happens on the Users and groups section of navigation.
+    > [!TIP]
+    > Assigning users happens on the Users and groups section of navigation.
 
-The three options can be toggled independently of each other, and the resulting behavior is not always obvious. This table might help:
+    The three options can be toggled independently of each other, and the resulting behavior is not always obvious. This table might help:
 
-:::row:::
-:::column span="4":::
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::row:::
+    :::column span="4":::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-**Enabled for users to sign in?**
+    **Enabled for users to sign in?**
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-**User assignment required?**
+    **User assignment required?**
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-**Visible to users?**
+    **Visible to users?**
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-**Behavior for users who have either been assigned to the app or not.**
+    **Behavior for users who have either been assigned to the app or not.**
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned users can see the app and sign in.Unassigned users cannot see the app and cannot sign in.
+    Assigned users can see the app and sign in.Unassigned users cannot see the app and cannot sign in.
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned uses cannot see the app but they can sign in.Unassigned users cannot see the app and cannot sign in.
+    Assigned uses cannot see the app but they can sign in.Unassigned users cannot see the app and cannot sign in.
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned users can see the app and sign in.Unassigned users cannot see the app but can sign in.
+    Assigned users can see the app and sign in.Unassigned users cannot see the app but can sign in.
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned users cannot see the app but can sign in.Unassigned users cannot see the app but can sign in.
+    Assigned users cannot see the app but can sign in.Unassigned users cannot see the app but can sign in.
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+    Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+    Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Yes
+    Yes
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+    Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
+    :::column-end:::
+    :::row-end:::
+    :::row:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-No
+    No
 
-:::column-end:::
-:::column:::
+    :::column-end:::
+    :::column:::
 
-Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+    Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
 
-:::column-end:::
-:::row-end:::
+    :::column-end:::
+    :::row-end:::
 
 4. When you're finished, select **Save**.
 

@@ -12,8 +12,8 @@ Create a new custom role that can be used to grant access to manage app registra
 
 4. On the **Roles and administrators** blade, on the menu, select **New custom role.**
 
->[!div class="mx-imgBorder"]
->![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](../media/lp3-mod1-new-custom-role.png)
+    >[!div class="mx-imgBorder"]
+    >![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](../media/lp3-mod1-new-custom-role.png)
 
 5. In the **New custom role** blade, on the **Basics** tab, in the name box, enter **My custom app role**.
 
@@ -25,8 +25,8 @@ Create a new custom role that can be used to grant access to manage app registra
 
 9. In the results, select the **Manage** permissions and then select **Next**.
 
->[!div class="mx-imgBorder"]
->![Screen image displaying the New custom role Permissions tab with search, manage permissions, and Next highlighted](../media/lp3-mod1-custom-role-permissions.png)
+    >[!div class="mx-imgBorder"]
+    >![Screen image displaying the New custom role Permissions tab with search, manage permissions, and Next highlighted](../media/lp3-mod1-custom-role-permissions.png)
 
 10. Review the changes and then select **Create.**
 

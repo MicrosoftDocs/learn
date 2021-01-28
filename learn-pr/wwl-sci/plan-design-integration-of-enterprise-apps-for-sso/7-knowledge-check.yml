@@ -38,7 +38,7 @@ quiz:
     - content: "Only users assigned the Global Administrator role"
       isCorrect: false
       explanation: "Incorrect. Global admin role users have global access to most management features and data across an organization's estate. By default, the Global administrators can create app registrations, however, they are not the only users who have permission to do so."
-  - content: "Which statement best describes the Cloud Application Administrator role."
+  - content: "Which statement best describes the Cloud Application Administrator role?"
     choices:
     - content: "Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy. Users assigned to this role are not added as owners when creating new application registrations or enterprise applications."
       isCorrect: true

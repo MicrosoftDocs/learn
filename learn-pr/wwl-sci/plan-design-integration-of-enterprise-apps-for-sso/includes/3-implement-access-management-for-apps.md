@@ -36,13 +36,13 @@ Here, you’ll add an Enterprise app that you can use for the exercise.
 
 4. In the **Enterprise applications** pane, select **+ New application**.
 
->[!div class="mx-imgBorder"]
->![Screen image displaying the Enterprise applications blade with New application highlighted.](../media/lp3-mod1-new-enterprise-application.png)
+    >[!div class="mx-imgBorder"]
+    >![Screen image displaying the Enterprise applications blade with New application highlighted.](../media/lp3-mod1-new-enterprise-application.png)
 
 5. In the **Browse Azure AD Gallery (Preview)** blade, in the **Search application** box, enter **GitHub**.
 
->[!div class="mx-imgBorder"]
->![Screen image displaying the Browse Azure AD Gallery (Preview) blade with the search box highlighted.](../media/lp3-mod1-azure-active-directory-gallery-search.png)
+    >[!div class="mx-imgBorder"]
+    >![Screen image displaying the Browse Azure AD Gallery (Preview) blade with the search box highlighted.](../media/lp3-mod1-azure-active-directory-gallery-search.png)
 
 6. In the results, select **GitHub Enterprise Cloud – Enterprise Account**.
 
@@ -62,8 +62,8 @@ Assign your administrator account to the recently added app.
 
 4. In the **Users and groups** pane, select your administrator account and then **Select**.
 
->[!div class="mx-imgBorder"]
->![Screen image displaying adding a user account assignment to an app with the Select button highlighted.](../media/lp3-mod1-add-app-assignment.png)
+    >[!div class="mx-imgBorder"]
+    >![Screen image displaying adding a user account assignment to an app with the Select button highlighted.](../media/lp3-mod1-add-app-assignment.png)
 
 5. Select **Assign**.
 

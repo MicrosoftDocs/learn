@@ -64,14 +64,14 @@ The AD FS application activity report is available in the Azure portal under Azu
 
 3. Under **Activity**, select **Usage & insights (Preview)**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
 
->[!div class="mx-imgBorder"]
->![AD FS application activity.](../media/active-directory-federation-services-application-activity.png)
+    >[!div class="mx-imgBorder"]
+    >![AD FS application activity.](../media/active-directory-federation-services-application-activity.png)
 
 4. For each application in the AD FS application activity list, view the **Migration status**:
 
-- **Ready to migrate** means the AD FS application configuration is fully supported in Azure AD and can be migrated as-is.
+    - **Ready to migrate** means the AD FS application configuration is fully supported in Azure AD and can be migrated as-is.
 
-- **Needs review** means some of the application's settings can be migrated to Azure AD, but you'll need to review the settings that can't be migrated as-is.
+    - **Needs review** means some of the application's settings can be migrated to Azure AD, but you'll need to review the settings that can't be migrated as-is.
 
-- **Additional steps required** means Azure AD doesn't support some of the application's settings, so the application can’t be migrated in its current state.
+    - **Additional steps required** means Azure AD doesn't support some of the application's settings, so the application can’t be migrated in its current state.
 
