@@ -3,9 +3,9 @@ uid: learn.the-mojifier.2-conceptual-overview
 metadata:
   title: Conceptual overview
   description: Let’s first answer some higher level questions about emotion detection.
-  author: lnyswonger
   ms.date: 10/18/2018
-  ms.author: luken
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Conceptual overview
