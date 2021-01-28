@@ -13,3 +13,7 @@ _Loose coupling_ is achieved for the price of eventual consistency and potential
 ## Cosmos DB
 
 Azure Cosmos DB is a fully managed NoSQL database for modern app development. Single-digit millisecond response times, and automatic and instant scalability, guarantee speed at any scale. Business continuity is assured with SLA-backed availability and enterprise-grade security. App development is faster and more productive thanks to turnkey multi region data distribution anywhere in the world, open-source APIs and SDKs for popular languages. As a fully managed service, Azure Cosmos DB takes database administration off your hands with automatic management, updates, and patching. It also handles capacity management with cost-effective serverless and automatic scaling options that respond to application needs to match capacity with demand.
+
+## Other databases to consider
+
+MongoDB, Cassandra, Gremlin, PostkreSQL, and others could also be an option you should consider. In this Learn Module, we'll focus on Cosmos DB.

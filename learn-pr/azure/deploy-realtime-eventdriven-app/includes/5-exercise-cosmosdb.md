@@ -263,3 +263,5 @@ Now, let's shift the whole workload in the cloud. To deploy the functions to Azu
 ``` Bash
 mvn azure-functions:deploy
 ```
+
+Wonderful! We deployed the whole telemetry scenario from sending the data towards an event hub, consuming the data with a different independent function, which processes the data and then stores the result in a Cosmos DB. How can we make sure that our application is meeting our predefined requirements? That's when monitoring comes into play.

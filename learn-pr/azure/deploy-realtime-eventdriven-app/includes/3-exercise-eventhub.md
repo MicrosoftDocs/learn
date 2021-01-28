@@ -255,6 +255,9 @@ After some build and startup messages, you'll see output similar to the followin
 
 ```
 
+> [!NOTE]
+> You are sending events from your local machine now all over the world!
+
 ## Deploy to Azure
 
 Trigger the deployment on Azure simply by running the `mvn azure-functions:deploy` command and continue.
