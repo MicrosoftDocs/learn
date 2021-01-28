@@ -3,7 +3,7 @@ In the previous units, you learned about the search problem and to implement its
 
 Preliminaries are over! Prepare yourself for your first real mission! In this unit, you will implement Grover's search algorithm. It is not necessary to dive deep into the gate-level implementation details but you will focus the discussion on the high-level logic instead.
 
-For effectiveness, you have to make sure that two connected stations don't use the same bandwidth. You have to calculate the minimum number of different bandwidths we assign to space stations according to this requirement. 
+For effectiveness, you have to make sure that two connected stations don't use the same bandwidth.
 
 ## Algorithm outline
 
