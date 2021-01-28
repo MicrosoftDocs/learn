@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "If you want to restrict access to a file, you need to configure a sensitivity label with which of the following?"
+    choices:
+    - content: "Marking content"
+      isCorrect: false
+      explanation: "The answer is incorrect. Only marking a content is not the way to restrict access to a file."
+    - content: "Encryption"
+      isCorrect: true
+      explanation: "This answer is correct. Only a label with encryption can have a access rules to prevent other user to edit or open the file."
+    - content: "Guest access"
+      isCorrect: false
+      explanation: "The answer is incorrect. The Guest access prevention is only an option, but with it it´s not possible to restrict file access in detail."
+  - content: "The Unified Labeling Scanner requires which other system to conduct scans?"
+    choices:
+    - content: "a SQL Server Standard or SQL Server Enterprise"
+      isCorrect: true
+      explanation: "This answer is correct. The SQL Server Express version is only for testing."
+    - content: "Microsoft 365 alerts enabled."
+      isCorrect: false
+      explanation: "The answer is incorrect."
+    - content: "A Linux server."
+      isCorrect: false
+      explanation: "The answer is incorrect. A Windows server is needed."

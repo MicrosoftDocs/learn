@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/19/2021
+  ms.date: 01/26/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,47 +16,47 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your organization has recently merged with a competitor, nearly doubling the number of employees. You urgently need to implement an access lifecycle system that won't add a significant amount of work for your IT administrators. Which Azure AD feature should you implement?"
+  - content: "An organization has recently merged with a competitor, nearly doubling the number of employees. The organization needs to implement an access lifecycle system that won't add a significant amount of work for its IT administrators. Which Azure AD feature should they implement?"
     choices:
     - content: "Dynamic groups."
       isCorrect: true
       explanation: "Correct. Dynamic groups use attribute-based rules to determine who is a member of a group, thereby reducing the administrative overhead of adding and removing users."
-    - content: "Conditional access policies."
+    - content: "Conditional Access policies."
       isCorrect: false
-      explanation: "Incorrect. Conditional access policies are used to enforce organizational rules for access, but do not implement access lifecycle requirements."
+      explanation: "Incorrect. Conditional Access policies are used to enforce organizational rules for access, but don't implement access lifecycle requirements."
     - content: "Azure AD Terms of Use."
       isCorrect: false
-      explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data. Azure AD Terms of Use does not implement access lifecycle requirements."
-  - content: "Your organization is project-oriented with employees often working on more than one project at a time. Which solution is best suited to managing user access to your organization’s resources?"
+      explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data. Azure AD Terms of Use doesn't implement access lifecycle requirements."
+  - content: "An organization is project-oriented with employees often working on more than one project at a time. Which solution is best suited to managing user access to this organization’s resources?"
     choices:
     - content: "Azure Terms of Use."
       isCorrect: false
-      explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data but does not manage access rights."
+      explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data but doesn't manage access rights."
     - content: "Dynamic groups."
       isCorrect: false
       explanation: "Incorrect. Dynamic groups use attribute-based rules to determine who is a member of a group, which is well suited to role-based organizations."
     - content: "Entitlement management."
       isCorrect: true
       explanation: "Correct. Entitlement management is well suited to handling project-based access needs. Entitlement management automates access requests, access assignments, reviews, and expiration for bundles of resources relevant to a project."
-  - content: "Your organization has recently conducted a security audit and found that four people who have left the organization were still active and assigned Global Admin roles. The users have now been deleted and you've been asked to recommend a solution to prevent a similar security lapse happening in future. Which solution should you recommend?"
+  - content: "An organization has recently conducted a security audit and found that four people who have left were still active and assigned global admin roles. The users have now been deleted but the IT organization has been asked to recommend a solution to prevent a similar security lapse happening in future. Which solution should they recommend?"
     choices:
-    - content: "Entitlement Management."
+    - content: "Entitlement management."
       isCorrect: false
-      explanation: "Incorrect. Entitlement management automates access request workflows, access assignments, reviews, and expiration but does not prevent users who have left the organization retaining access rights."
+      explanation: "Incorrect. Entitlement management automates access request workflows, access assignments, reviews, and expiration but doesn't prevent users who have left the organization retaining access rights."
     - content: "Privileged Identity Management."
       isCorrect: true
       explanation: "Correct. Privileged Identity Management mitigates the risks of excessive, unnecessary, or misused access permissions."
-    - content: "Identity protection."
+    - content: "Identity Protection."
       isCorrect: false
-      explanation: "Incorrect. Identity protection allows you to detect identity-based risk but does not mitigate the risk of inappropriate privileges being assigned to users who have left the organization."
-  - content: "You've recently discovered that several user accounts in the Finance Department have been compromised. Your CTO has asked for your help in finding a solution to reduce the impact of compromised user accounts. They've asked you to look at three Azure AD features, which one should you recommend?"
+      explanation: "Incorrect. Identity Protection allows you to detect identity-based risk but doesn't mitigate the risk of inappropriate privileges being assigned to users who have left the organization."
+  - content: "Your IT organization recently discovered that several user accounts in the finance department have been compromised. The CTO has asked for a solution to reduce the impact of compromised user accounts. The IT admin team is looking into Azure AD features. Which one should they recommend?"
     choices:
-    - content: "Identity protection."
+    - content: "Identity Protection."
       isCorrect: true
-      explanation: "Correct. Identity protection is a tool that allows organizations to utilize security signals to identify potential threats."
-    - content: "Conditional access."
+      explanation: "Correct. Identity Protection is a tool that allows organizations to utilize security signals to identify potential threats."
+    - content: "Conditional Access."
       isCorrect: false
-      explanation: "Incorrect. Conditional access policies are used to enforce organizational rules for access."
+      explanation: "Incorrect. Conditional Access policies are used to enforce organizational rules for access."
     - content: "Entitlement management."
       isCorrect: false
       explanation: "Incorrect. Entitlement management is an Azure tool that automates access to the applications and data needed for someone to be productive in a particular project or role."
