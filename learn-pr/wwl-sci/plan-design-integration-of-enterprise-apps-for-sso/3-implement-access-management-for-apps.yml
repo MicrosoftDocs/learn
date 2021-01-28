@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.implement-access-management-for-apps
-title: Implement access management for apps
+title: Exercise implement access management for apps
 metadata:
-  title: Implement access management for apps
-  description: "Implement access management for apps"
-  ms.date: 01/25/2021
+  title: Exercise implement access management for apps
+  description: "Exercise implement access management for apps"
+  ms.date: 01/28/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

@@ -257,5 +257,5 @@ You can use the notes field to add any information that is relevant for the mana
 1. Update the Notes field, select **Save**.
 
 >[!div class="mx-imgBorder"]
->!["Screenshot of the Properties screen that shows how to change the notes"](../media/notes-application.png)
+>![Screenshot of the Properties screen that shows how to change the notes](../media/notes-application.png)
 

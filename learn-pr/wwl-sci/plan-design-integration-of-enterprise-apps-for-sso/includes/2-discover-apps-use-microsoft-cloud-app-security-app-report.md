@@ -16,7 +16,7 @@ Cloud App Security integrates visibility with your cloud by:
 
 - Helping you have continuous control by setting and continually fine-tuning policies.
 
-![alt: "Cloud App Security architecture diagram"](../media/proxy-architecture.png)
+![Cloud App Security architecture diagram.](../media/proxy-architecture.png)
 
 ### Cloud Discovery
 
@@ -30,11 +30,11 @@ You can use Cloud App Security to sanction or unsanction apps in your organizati
 
 If you have an on-premises directory that contains user accounts, you likely have many applications to which users authenticate. Each of these apps is configured for users to access using their identities. Users may also authenticate directly with your on-premises Active Directory. Active Directory Federation Services (AD FS) is a standards-based on-premises identity service. AD FS extends the ability to use single sign-on (SSO) functionality between trusted business partners without requiring users to sign in separately to each application. This is known as federation. Many organizations have software as a service (SaaS) or custom line-of-business (LOB) apps federated directly to AD FS, alongside Microsoft 365 and Azure AD-based apps.
 
-!["Applications connected directly on-premises"](../media/app-integration-before-migration1.png)
+![Applications connected directly on-premises](../media/app-integration-before-migration1.png)
 
 To increase application security, your goal is to have a single set of access controls and policies across your on-premises and cloud environments.
 
-!["Applications connected through Azure AD"](../media/app-integration-after-migration1.png)
+![Applications connected through Azure AD](../media/app-integration-after-migration1.png)
 
 Many organizations use AD FS to provide SSO to cloud applications. Moving your AD FS applications to Azure AD for authentication provides significant benefits, especially in terms of cost management, risk management, productivity, compliance, and governance. But understanding which applications are compatible with Azure AD and identifying specific migration steps can be time consuming.
 
@@ -65,8 +65,7 @@ The AD FS application activity report is available in the Azure portal under Azu
 3. Under **Activity**, select **Usage & insights (Preview)**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
 
 >[!div class="mx-imgBorder"]
->!["AD FS application activity"
-](../media/adfs-application-activity.png)
+>![AD FS application activity.](../media/active-directory-federation-services-application-activity.png)
 
 4. For each application in the AD FS application activity list, view the **Migration status**:
 
