@@ -41,13 +41,13 @@ Now, let's create a user account.
 
 4. Create a user using the following information:
 
-| **Setting**| **Value**|
-| :--- | :--- |
-| User name| Chris|
-| Name| Chris Green|
-| First name| Chris|
-| Last name| Green|
-| Password| Pass@word1|
+   | **Setting**| **Value**|
+   | :--- | :--- |
+   | User name| Chris|
+   | Name| Chris Green|
+   | First name| Chris|
+   | Last name| Green|
+   | Password| Pass@word1|
 
 5. Select **Create**. The user is now created and registered to your organization.
 

@@ -89,8 +89,8 @@ The goal of Azure AD joined devices is to simplify:
 
 - Users to sign in to their devices with their Azure AD or synced Active Directory work or school accounts.
 
-> [!div class="mx-imgBorder"]
-> ![Azure AD joined devices.](../media/azure-active-directory-joined-device.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure AD joined devices.](../media/azure-active-directory-joined-device.png)
 
 Azure AD Join can be deployed by using a number of different methods. The following  subsection focuses on the self-service experience method.
 
