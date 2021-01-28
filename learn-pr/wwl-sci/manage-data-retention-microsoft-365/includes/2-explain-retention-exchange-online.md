@@ -40,7 +40,7 @@ To access these hidden folders, administrators can use different methods, such a
 
 The permissions to perform a compliance search, create eDiscovery cases and use Advanced eDiscovery are managed via built-in RBAC roles in the Security or Compliance Center in Microsoft 365. The following table lists which role group contains which permissions:
 
-| **Role**| **Compliance Administrator**| **eDiscovery Manager & Administrator**| **Organization Management**| **Reviewer**|
+| Role| Compliance Administrator| eDiscovery Manager & Administrator| Organization Management| Reviewer|
 | :--- | :--- | :--- | :--- | :--- |
 | Case Management| ✓| ✓| ✓||
 | Communication|| ✓|||
@@ -75,7 +75,7 @@ When the non-technical compliance users require support creating an eDiscovery c
 
 Besides using retention policies and labels, Exchange provides more features to protect messages in mailboxes, which have their origin in retention features of the Exchange Server on-premises:
 
-| **Feature**| **Scope**| **Description**|
+| Feature| Scope| Description|
 | :--- | :--- | :--- |
 | Litigation Hold| All mailbox contents.| Litigation hold is activated on the mailbox level and retains all mailbox content.|
 | eDiscovery Hold| Mailbox content matching the search filter.| Created in eDiscovery cases to retain all content matching the keyword search. Was formerly also available outside eDiscovery cases and called in-place hold.|

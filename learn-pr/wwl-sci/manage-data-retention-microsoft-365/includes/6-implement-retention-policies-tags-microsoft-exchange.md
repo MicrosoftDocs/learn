@@ -12,7 +12,7 @@ Messaging records management (MRM) consists of the following features:
 
 By default, all mailboxes have assigned an MRM retention policy named Default MRM Policy, which includes the following retention tags:
 
-| **Retention Tag**| **Type**| **Description**|
+| Retention Tag| Type| Description|
 | :--- | :--- | :--- |
 | 1 Month Delete, 1 Week Delete, 1 Year Delete, 5 Year Delete, 6 Month Delete, Never Delete, Personal 1-year move to archive, Personal 5-year move to archive, Personal never move to archive| Personal tags| Can be assigned by users and applies the assigned action to messages.|
 | Junk Email, Recoverable Items 14 days move to archive| Retention policy tags (RPTs)| Automatically assigned tags for the default folders "Junk" and "Recoverable items". Deletes messages automatically from Junk and moves messages in Recoverable Items to the archive mailbox.|

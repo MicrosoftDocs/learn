@@ -21,7 +21,7 @@ After a retention policy is configured for chat and channel messages, the paths 
 
 The following table provides an overview of the different ways content is held or removed by retention policies for Teams:
 
-| **Step**| (1) **If a chat or channel message is edited or deleted** by the user during the retention period…| (2) **If a chat or channel message is not deleted** during the retention period…|
+| Step| (1) **If a chat or channel message is edited or deleted** by the user during the retention period…| (2) **If a chat or channel message is not deleted** during the retention period…|
 | :--- | :--- | :--- |
 | **retain and delete**| The original message is copied (if edited) or moved (if deleted) to the SubstrateHolds folder within 21 days. The message is stored there until the retention period expires and then the message is permanently deleted within 24 hours.| The message is moved to the SubstrateHolds folder after the retention period expires. This action takes up to 7 days from the expiry date. When the message is in the SubstrateHolds folder, it is then permanently deleted within 24 hours.|
 | **retain-only**| A copy of the original message is created in the SubstrateHolds folder within 21 days, and retained there until the retention period expires. Then the message is permanently deleted from the SubstrateHolds folder within 24 hours.| Nothing happens before and after the retention period; the message remains in its original location.|
@@ -41,7 +41,7 @@ Because the Teams storage locations are complex, there are several other conside
 
 It is also important to know what happens to the data of users, when they leave the organization:
 
-| **Documents and Files**| **Chat messages**| **Channel messages**|
+| Documents and Files| Chat messages| Channel messages|
 | :--- | :--- | :--- |
 | Because files and documents stored in a team are located on SharePoint Online sites, the same behavior as for SharePoint Online and OneDrive for Business applies.| If a user leaves the organization and the according account is deleted, the chat messages that are subject to retention are stored in an inactive mailbox. The chat messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. | Channel messages posted by a user are stored in the Azure database and the mailbox of the teams. When a user leaves the organization, those data remains unaffected.|
 

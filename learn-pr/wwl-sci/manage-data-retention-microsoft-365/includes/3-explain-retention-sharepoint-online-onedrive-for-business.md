@@ -19,9 +19,9 @@ The following image shows the way files are handled in SharePoint Online documen
 
 ![processing of retention periods for preservation and deletion.](../media/preservation-hold-libraries.png)
 
-1. How the content from the document library is handled, varies between the different retention settings. The following table shows the differences between the retention settings **retain and delete**, **retain-only** and **or delete-only**:
+How the content from the document library is handled, varies between the different retention settings. The following table shows the differences between the retention settings **retain and delete**, **retain-only** and **or delete-only**:
 
-| **Step**| (1) **If the content is modified or deleted** during the retention period…| (2) **If the content is not modified or deleted** during the retention period…|
+| Step| (1) **If the content is modified or deleted** during the retention period…| (2) **If the content is not modified or deleted** during the retention period…|
 | :--- | :--- | :--- |
 | **retain and delete**| A copy of the original content as it existed when the retention policy was assigned is created in the Preservation Hold library. There, the timer job identifies items whose retention period has expired. Those items are moved to the second stage Recycle Bin, where they're permanently deleted at the end of 93 days. The second stage Recycle Bin is not visible to end users (only the first stage Recycle Bin is), but site collection admins can view and restore content from there.| The timer job moves this content to the first stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second stage Recycle Bin. A 93-day retention period spans both the first- and second stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold.|
 | **retain-only**| A copy of the original document is created in the Preservation Hold library and retained until the end of the retention period, when the copy in the Preservation Hold library is moved to the second stage Recycle Bin and is permanently deleted after 93 days.| Nothing happens before and after the retention period; the document remains in its original location.|
@@ -48,7 +48,7 @@ It is clear how retention in SharePoint Online and OneDrive for Business works f
 
 It is also important to know what happens to the files of users, when they leave the organization:
 
-| **SharePoint Online**| **OneDrive for Business**|
+| SharePoint Online| OneDrive for Business|
 | :--- | :--- |
 | When a user leaves the organization, any content created by that user is not affected because SharePoint is a shared workspace and single files are not affected. That differs from a user's mailbox or OneDrive account.| If a user leaves the organization, any files that are subject to a retention policy or has a retention label will remain during the policy or label. During that time period, all sharing access continues to work. When the retention period expires, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin. If a document is marked by a retention label as a record, the document will not be deleted until the retention period is over, after which time the content is permanently deleted.|
 
