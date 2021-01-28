@@ -217,8 +217,8 @@ Here is what the migration process could look like:
     > [!div class="mx-imgBorder"]
     > ![The expected user state during migration.](../media/expected-user-state.png)
 
-This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
-
+    This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
+    
     - Select each license to see which services are enabled. To verify that the direct and group licenses enable exactly the same services for the user, select Assignments.
 
 4. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
