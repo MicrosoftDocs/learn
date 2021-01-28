@@ -23,7 +23,7 @@ quiz:
       explanation: "Data Box allows up to an 80-TB transfer. Two Data Box Disk orders allow up to 70 TB."
     - content: "Data Box Gateway"
       isCorrect: false
-      explanation: "Data Box Gateway is an online physical appliance that needs a significant amount of dedicated network bandwidth."
+      explanation: "Data Box Gateway is an online virtual appliance that needs a significant amount of dedicated network bandwidth."
     - content: "Data Box Heavy"
       isCorrect: false
       explanation: "Data Box Heavy allows for up to 800 TB of data transfer and is not applicable in this scenario."
