@@ -1,4 +1,4 @@
-Let's take a step back and see how Grover's algorithm works and why we can use it to solve our best-delivery-route problem. 
+Let's take a step back and see how Grover's algorithm works and why we can use it to solve our communication between space stations problem. 
 
 In this section, we define the problem solved by Grover's search algorithm — the so-called "search problem"  — and take a closer look at how various real-life problems can be represented in terms of this problem.
 
@@ -23,9 +23,9 @@ Here are some examples:
 
 Some of these problems are better suited to benefit from using Grover's algorithm than the others. 
 
-The problem you have been tasked with is the following. You need to prepare a route to deliver specific supplies to different space fleet stations so space pilots can follow that route. We supply our spaceships and space stations with different materials and you have to make sure that two connected stations don't receive the same type of supply. 
+The space fleet has several space stations scattered throughout the galaxy. Noise and interference are problems that the communication division is trying to solve. Space stations need to communicate among them, but if two stations are too close, the radio signals interfere and we cannot decode the information. For this reason, we need to assign a specific bandwidth to each space station. However, we cannot assign a unique bandwidth to each space station as available bandwidths are limited and the space fleet grows year by year. For effectiveness, two space stations may share the same bandwidth if they are far enough to not interfere. Based on this, you need to assign a bandwidth to each station while trying to keep the number of different assigned bandwiths as low as possible. 
 
-This problem is an instance of the graph coloring problem.
+This problem is an instance of the graph coloring problem where the vertices are the space stations, the labels/colors are the bandwidth and two vertices are connected if they are close enough so their signals interfere.
 
 We'll use the graph coloring problem as an example throughout this module. In the last unit, we will return to the question of the quantum speedup and the types of problems that can be solved faster by using Grover's algorithm rather than a classical algorithm.
 
