@@ -72,7 +72,7 @@ Azure is a cloud service that gives you the compute power to run code in a secur
 
 :::image type="content" source="../media/azure-portal.png" alt-text="Screenshot of the Azure portal with our resource group and Custom Vision resource.":::
 
-What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&products=azure-cognitive-services/) available.
+What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&products=azure%20cognitive%20services/) available.
 
 ### Custom Vision resource
 

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.predict-meteor-showers-using-python.8-finish-search
 metadata: 
-  title: Add data from the Chang'e story
+  title: Exercise - Add data from the Chang'e story
   description: Add data from the time when Chang'e's tears might have caused a meteor shower, to add a bit of Moon Goddess magic your prediction.
-  ms.date: 11/24/2020
+  ms.date: 01/26/2021
   author: sguthals
-  ms.author: shanama
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add data from the Chang'e story
+title: Exercise - Add data from the Chang'e story
 durationInMinutes: 5
 content: |
   [!include[](includes/8-finish-search.md)]

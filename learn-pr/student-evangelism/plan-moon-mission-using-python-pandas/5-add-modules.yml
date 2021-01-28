@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.5-add-modules
 metadata:
-  title: Add rocket weight data to the mission analysis
+  title: Exercise - Add rocket weight data to the mission analysis
   description: Include the weight of the various modules within the Apollo rockets in the DataFrames for further insight.
-  ms.date: 11/24/2020
+  ms.date: 01/26/2021
   author: sguthals
-  ms.author: shanama
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Add rocket weight data to the mission analysis
+title: Exercise - Add rocket weight data to the mission analysis
 durationInMinutes: 6
 content: |
   [!include[](includes/5-add-modules.md)]

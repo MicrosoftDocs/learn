@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.predict-meteor-showers-using-python.5-prep-data
 metadata:
-  title: Cleanse meteor data
+  title: Exercise - Cleanse meteor data
   description: Learn how to cleanse meteor data by using Python and pandas.
-  ms.date: 11/24/2020
+  ms.date: 01/26/2021
   author: sguthals
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Cleanse meteor data
+title: Exercise - Cleanse meteor data
 durationInMinutes: 10
 content: |
   [!include[](includes/5-prep-data.md)]

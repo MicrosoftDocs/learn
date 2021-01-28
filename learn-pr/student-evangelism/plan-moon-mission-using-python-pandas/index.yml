@@ -3,9 +3,9 @@ uid: learn.student-evangelism.plan-moon-mission-using-python-pandas
 metadata:
   title: Plan a Moon mission by using Python pandas
   description: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
-  ms.date: 11/24/2020
+  ms.date: 01/26/2021
   author: sguthals
-  ms.author: shanama
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan a Moon mission by using Python pandas
@@ -17,7 +17,7 @@ abstract:  |
     - Use data cleansing techniques to get a clear representation of data.
     - Hypothesize how much rock sample astronauts might bring back on the Artemis missions.
 
-  >[!TIP]
+  > [!TIP]
   > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 
 prerequisites: |

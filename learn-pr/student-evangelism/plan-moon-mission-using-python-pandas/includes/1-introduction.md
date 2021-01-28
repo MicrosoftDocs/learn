@@ -21,7 +21,8 @@ Fei Fei, on the other hand, still was able to land on the Moon, with the help of
 
 In this module, you will take inspiration from both Fei Fei and NASA scientists to explore data related to the Apollo missions and the rock samples that were returned to Earth. You will learn data cleansing and manipulation techniques that are critical to developing the machine learning models and AI that aid humankind in preparation for space exploration.
 
-This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/OverTheMoon/Video1?azure-portal=true).
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/jyFHnO7-4Gc?azure-portal=true) in a new tab.
 
 ## Learning objectives
 

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.6-understand-modules
 metadata:
-  title: Understand the cleansed and manipulated mission data
+  title: Exercise - Understand the cleansed and manipulated mission data
   description: Using the data that has been cleansed and manipulated, gather insights about the relationship between rock samples and rocket weights.
-  ms.date: 11/24/2020
+  ms.date: 01/26/2021
   author: sguthals 
-  ms.author: shanama 
+  ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Understand the data in the missions DataFrame
+title: Exercise - Understand the data in the missions DataFrame
 durationInMinutes: 4
 content: |
   [!include[](includes/6-understand-modules.md)]

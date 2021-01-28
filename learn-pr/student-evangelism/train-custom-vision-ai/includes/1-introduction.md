@@ -10,7 +10,8 @@ In this module, you will choose an animal, which could be your pet. You will tra
 
 Remember, while you can use technical skills to build almost anything, the ultimate goal should always be to help people. Designing technology to help people is something Microsoft is passionate about, *especially* when it applies to AI. We focus on [AI for Good](https://www.microsoft.com/ai/ai-for-good?azure-portal=true). We want to encourage you to start your AI journey by always thinking about how you can help improve our world.
 
-This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/OverTheMoon/Video3?azure-portal=true).
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/rP6VcSL2KxY?azure-portal=true) in a new tab.
 
 ## Learning objectives
 
