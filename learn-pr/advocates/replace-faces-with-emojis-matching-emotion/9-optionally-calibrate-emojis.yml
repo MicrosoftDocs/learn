@@ -3,9 +3,9 @@ uid: learn.the-mojifier.9-optionally-calibrate-emojis
 metadata:
   title: Optionally calibrate emojis
   description: Learn how to fine-tune your face to work as data for the Face API.
-  author: lnyswonger
   ms.date: 10/18/2018
-  ms.author: luken
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optionally calibrate emojis

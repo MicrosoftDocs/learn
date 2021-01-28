@@ -9,7 +9,6 @@ metadata:
   ms.author: abornst
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
 title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
 summary: Learn to train deep learning models with Jupyter, PyTorch and the Data Science Virtual Machine.
 abstract: |
