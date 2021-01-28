@@ -15,7 +15,7 @@ fn change(text: &mut String) {
 
 You can borrow mutable data by using `&mut T`. This is called a *mutable reference* or *mutable borrow*, and it gives read/write access to the borrower. 
 
-In contrast, `&T` borrows the data via an *immutable reference*. The borrower can then read the data but not modify it.
+In contrast, `&T` borrows the data via what's called an *immutable reference* or *immutable borrow*. The borrower can then read the data but not modify it.
 
 You might have either of these kinds of borrows, but not both at the same time:
 
