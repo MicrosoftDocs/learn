@@ -36,6 +36,9 @@ products:
 - dynamics-guides
 - dynamics-remote-assist
 - windows
+- windows-mixed-reality
+- mrtk
+- hololens
 units:
 - learn.intro-to-mixed-reality.1-introduction
 - learn.intro-to-mixed-reality.2-what
