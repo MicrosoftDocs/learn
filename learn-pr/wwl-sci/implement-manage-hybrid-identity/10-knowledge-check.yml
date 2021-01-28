@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2021
+  ms.date: 01/28/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -38,14 +38,14 @@ quiz:
     - content: "Federated authentication."
       isCorrect: false
       explanation: "The authentication system can provide additional advanced authentication requirements, such as smartcard-based authentication or third-party multifactor authentication."
-  - content: "Some situations might require you to remove a server from being monitored by the Azure AD Connect Health service. What do you need to do to start monitoring the same server again?"
+  - content: "Some situations might require the removal of a server from being monitored by the Azure AD Connect Health service. What needs to be done to start monitoring the same server again?"
     choices:
-    - content: "You must stop and restart the Azure AD Connect Health service on any other targeted server in the network."
+    - content: "The Azure AD Connect Health service needs to be stopped and restarted on any other targeted server in the network."
       isCorrect: false
       explanation: "Sorry, that's incorrect. Stopping and restarting the Azure AD Connect Health service on another server will not allow you to start monitoring on the server you wish to start monitoring again."
-    - content: "You must uninstall and reinstall the Health Agent on this server."
+    - content: "The Health Agent needs to be uninstalled and reinstalled on this server."
       isCorrect: true
-      explanation: "That's correct."
-    - content: "You must delete the data already collected from this server and then reactivate the Health Agent on the server."
+      explanation: "That's correct. To start monitoring a server again, the Health Agent needs to be uninstalled and reinstalled."
+    - content: "The data already collected from this server needs to be deleted and then the Health Agent needs to be reactivated on the server."
       isCorrect: false
       explanation: "Sorry, that's incorrect. Deleting the data already collected isn't necessary, and there is no way to reactivate the Health Agent without uninstalling and reinstalling it."

@@ -6,9 +6,9 @@ Starting September 1, 2016 [Azure Active Directory Duplicate Attribute Resilienc
 
 Azure AD Connect performs three types of operations from the directories it keeps in sync: Import, Synchronization, and Export. Errors can take place in all the operations. This section mainly focuses on errors during Export to Azure AD.
 
-## Errors during Export to Azure AD
+## Errors during export to Azure AD
 
-Following section describes different types of synchronization errors that can occur during the export operation to Azure AD using the Azure AD connector. This connector can be identified by the name format being "contoso.*onmicrosoft.com*". Errors during Export to Azure AD indicate that the operation (add, update, delete etc.) attempted by Azure AD Connect (Sync Engine) on Azure Active Directory failed.
+The following section describes different types of synchronization errors that can occur during the export operation to Azure AD using the Azure AD connector. This connector can be identified by the name format being "contoso.*onmicrosoft.com*". Errors during export to Azure AD indicate that the operation (add, update, delete etc.) attempted by Azure AD Connect (Sync Engine) on Azure Active Directory failed.
 
 > [!div class="mx-imgBorder"]
 > ![Export Errors Overview.](../media/export-errors-overview-01.png)
@@ -36,7 +36,7 @@ Azure Active Directory schema does not allow two or more objects to have the sam
 
 [Azure AD Attribute Duplicate Attribute Resiliency](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency) feature is also being rolled out as the default behavior of Azure Active Directory. This will reduce the number of synchronization errors seen by Azure AD Connect (as well as other sync clients) by making Azure AD more resilient in the way it handles duplicated ProxyAddresses and UserPrincipalName attributes present in on premises AD environments. This feature does not fix the duplication errors. So the data still needs to be fixed. But it allows provisioning of new objects which are otherwise blocked from being provisioned due to duplicated values in Azure AD. This will also reduce the number of synchronization errors returned to the synchronization client. If this feature is enabled for your Tenant, you will not see the InvalidSoftMatch synchronization errors seen during provisioning of new objects.
 
-### Example Scenarios for InvalidSoftMatch
+### Example scenarios for InvalidSoftMatch
 
 1. Two or more objects with the same value for the ProxyAddresses attribute exist in on-premises Active Directory. Only one is getting provisioned in Azure AD.
 
@@ -56,39 +56,39 @@ Azure Active Directory schema does not allow two or more objects to have the sam
 
 1. **Bob Smith** is a synced user in Azure Active Directory from on premises Active Directory of *contoso.com*
 
-1. Bob Smith's **UserPrincipalName** is set as **bobs@contoso.com**.
+2. Bob Smith's **UserPrincipalName** is set as **bobs@contoso.com**.
 
-1. **"abcdefghijklmnopqrstuv=="** is the **SourceAnchor** calculated by Azure AD Connect using Bob Smith's **objectGUID** from on premises Active Directory, which is the **immutableId** for Bob Smith in Azure Active Directory.
+3. **"abcdefghijklmnopqrstuv=="** is the **SourceAnchor** calculated by Azure AD Connect using Bob Smith's **objectGUID** from on premises Active Directory, which is the **immutableId** for Bob Smith in Azure Active Directory.
 
-1. Bob also has following values for the **proxyAddresses** attribute:
+4. Bob also has following values for the **proxyAddresses** attribute:
 
-- smtp: bobs@contoso.com
+    - smtp: bobs@contoso.com
 
-- smtp: bob.smith@contoso.com
+    - smtp: bob.smith@contoso.com
 
-- **smtp: bob@contoso.com**
+    - **smtp: bob@contoso.com**
 
-1. A new user, **Bob Taylor**, is added to the on premises Active Directory.
+5. A new user, **Bob Taylor**, is added to the on premises Active Directory.
 
-1. Bob Taylor's **UserPrincipalName** is set as **bobt@contoso.com**.
+6. Bob Taylor's **UserPrincipalName** is set as **bobt@contoso.com**.
 
-1. **"abcdefghijkl0123456789==""** is the **sourceAnchor** calculated by Azure AD Connect using Bob Taylor's **objectGUID** from on premises Active Directory. Bob Taylor's object has NOT synced to Azure Active Directory yet.
+7. **"abcdefghijkl0123456789==""** is the **sourceAnchor** calculated by Azure AD Connect using Bob Taylor's **objectGUID** from on premises Active Directory. Bob Taylor's object has NOT synced to Azure Active Directory yet.
 
-1. Bob Taylor has the following values for the proxyAddresses attribute
+8. Bob Taylor has the following values for the proxyAddresses attribute
 
-- smtp: bobt@contoso.com
+    - smtp: bobt@contoso.com
 
-- smtp: bob.taylor@contoso.com
+    - smtp: bob.taylor@contoso.com
 
-- **smtp: bob@contoso.com**
+    - **smtp: bob@contoso.com**
 
-1. During sync, Azure AD Connect will recognize the addition of Bob Taylor in on premises Active Directory and ask Azure AD to make the same change.
+9. During sync, Azure AD Connect will recognize the addition of Bob Taylor in on premises Active Directory and ask Azure AD to make the same change.
 
-1. Azure AD will first perform hard match. That is, it will search if there is any object with the immutableId equal to "abcdefghijkl0123456789==". Hard Match will fail as no other object in Azure AD will have that immutableId.
+10. Azure AD will first perform hard match. That is, it will search if there is any object with the immutableId equal to "abcdefghijkl0123456789==". Hard Match will fail as no other object in Azure AD will have that immutableId.
 
-1. Azure AD will then attempt to soft-match Bob Taylor. That is, it will search if there is any object with proxyAddresses equal to the three values, including smtp: bob@contoso.com
+11. Azure AD will then attempt to soft-match Bob Taylor. That is, it will search if there is any object with proxyAddresses equal to the three values, including smtp: bob@contoso.com
 
-1. Azure AD will find Bob Smith's object to match the soft-match criteria. But this object has the value of immutableId = "abcdefghijklmnopqrstuv==". which indicates this object was synced from another object from on premises Active Directory. Thus, Azure AD cannot soft-match these objects and results in an **InvalidSoftMatch** sync error.
+12. Azure AD will find Bob Smith's object to match the soft-match criteria. But this object has the value of immutableId = "abcdefghijklmnopqrstuv==". which indicates this object was synced from another object from on premises Active Directory. Thus, Azure AD cannot soft-match these objects and results in an **InvalidSoftMatch** sync error.
 
 ### How to fix InvalidSoftMatch error
 
@@ -133,7 +133,7 @@ The most common reason for the ObjectTypeMismatch error is two objects of differ
 
 1. Identify which object should continue to have the duplicated value and which object should not.
 
-1. Remove the duplicated value from the object that should NOT have that value. Note that you should make the change in the directory where the object is sourced from. In some cases, you may need to delete one of the objects in conflict.
+1. Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you may need to delete one of the objects in conflict.
 
 1. If you made the change in the on premises AD, let Azure AD Connect sync the change. Sync error report within Azure AD Connect Health for sync gets updated every 30 minutes and includes the errors from the latest synchronization attempt.
 
@@ -159,27 +159,27 @@ Duplicate value is assigned to an already synced object, which conflicts with an
 
 1. **Bob Smith** is a synced user in Azure Active Directory from on premises Active Directory of contoso.com
 
-1. Bob Smith's **UserPrincipalName** on premises is set as **bobs@contoso.com**.
+2. Bob Smith's **UserPrincipalName** on premises is set as **bobs@contoso.com**.
 
-1. Bob also has following values for the **proxyAddresses** attribute:
+3. Bob also has following values for the **proxyAddresses** attribute:
 
-- smtp: bobs@contoso.com
+    - smtp: bobs@contoso.com
 
-- smtp: bob.smith@contoso.com
+    - smtp: bob.smith@contoso.com
 
-- **smtp: bob@contoso.com**
+    - **smtp: bob@contoso.com**
 
-1. A new user, **Bob Taylor**, is added to the on premises Active Directory.
+4. A new user, **Bob Taylor**, is added to the on premises Active Directory.
 
-1. Bob Taylor's **UserPrincipalName** is set as **bobt@contoso.com**.
+5. Bob Taylor's **UserPrincipalName** is set as **bobt@contoso.com**.
 
-1. **Bob Taylor** has the following values for the **ProxyAddresses** attribute i. smtp: bobt@contoso.com ii. smtp: bob.taylor@contoso.com
+6. **Bob Taylor** has the following values for the **ProxyAddresses** attribute i. smtp: bobt@contoso.com ii. smtp: bob.taylor@contoso.com
 
-1. Bob Taylor's object is synchronized with Azure AD successfully.
+7. Bob Taylor's object is synchronized with Azure AD successfully.
 
-1. Admin decided to update Bob Taylor's **ProxyAddresses** attribute with the following value: i. **smtp: bob@contoso.com**
+8. Admin decided to update Bob Taylor's **ProxyAddresses** attribute with the following value: i. **smtp: bob@contoso.com**
 
-1. Azure AD will attempt to update Bob Taylor's object in Azure AD with the above value, but that operation will fail as that ProxyAddresses value is already assigned to Bob Smith, resulting in "AttributeValueMustBeUnique" error.
+9. Azure AD will attempt to update Bob Taylor's object in Azure AD with the above value, but that operation will fail as that ProxyAddresses value is already assigned to Bob Smith, resulting in "AttributeValueMustBeUnique" error.
 
 ### How to fix AttributeValueMustBeUnique error
 
@@ -189,7 +189,7 @@ The most common reason for the AttributeValueMustBeUnique error is two objects w
 
 1. Identify which object should continue to have the duplicated value and which object should not.
 
-1. Remove the duplicated value from the object that should NOT have that value. Note that you should make the change in the directory where the object is sourced from. In some cases, you may need to delete one of the objects in conflict.
+1. Remove the duplicated value from the object that should NOT have that value. You should make the change in the directory where the object is sourced from. In some cases, you may need to delete one of the objects in conflict.
 
 1. If you made the change in the on premises AD, let Azure AD Connect sync the change for the error to get fixed.
 
@@ -265,7 +265,7 @@ When an attribute exceeds the allowed size limit, length limit or count limit se
 
 Ensure that the attribute causing the error is within the allowed limitation.
 
-## Existing Admin Role Conflict
+## Admin role conflict
 
 ### Description
 

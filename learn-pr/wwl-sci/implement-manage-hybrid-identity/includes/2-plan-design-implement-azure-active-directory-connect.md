@@ -19,7 +19,7 @@ Azure AD Connect is the Microsoft tool designed to meet and accomplish your hybr
 
 Integrating your on-premises directories with Azure AD makes your users more productive by providing a common identity for accessing both cloud and on-premises resources. With Azure AD Connect, users can use a single identity to access on-premises applications and cloud services such as Microsoft 365. Additionally, organizations can provide an easy deployment experience for synchronization and sign-in using a single tool. Azure AD Connect replaces older versions of identity integration tools such as DirSync and Azure AD Sync; and is included in your Azure AD subscription.
 
-## Selecting an authentication method
+## Select an authentication method
 
 Identity is the new control plane of IT security, so authentication is an organization’s access guard to the new cloud world. Organizations need an identity control plane that strengthens their security and keeps their cloud apps safe from intruders. When the Azure AD hybrid identity solution is your new control plane, authentication is the foundation of cloud access. Choosing the correct authentication method is a crucial first decision in setting up an Azure AD hybrid identity solution. To choose an authentication method, you need to consider the time, existing infrastructure, complexity, and cost of implementing your choice. These factors are different for every organization and might change over time.
 
@@ -79,18 +79,18 @@ The following diagrams outline the high-level architecture components required f
 
 - Simplicity of a password hash synchronization solution:
 
-> [!div class="mx-imgBorder"]
-> ![Azure AD hybrid identity with password hash synchronization](../media/azure-active-directory-authentication-2.png)
+  > [!div class="mx-imgBorder"]
+  > ![Azure AD hybrid identity with password hash synchronization](../media/azure-active-directory-authentication-2.png)
 
 - Agent requirements of pass-through authentication, using two agents for redundancy:
 
-> [!div class="mx-imgBorder"]
-> ![Azure AD hybrid identity with pass-through authentication](../media/azure-active-directory-authentication-3.png)
+  > [!div class="mx-imgBorder"]
+  > ![Azure AD hybrid identity with pass-through authentication](../media/azure-active-directory-authentication-3.png)
 
 - Components required for federation in your perimeter and internal network of your organization:
 
-> [!div class="mx-imgBorder"]
-> ![Azure AD hybrid identity with federated authentication](../media/azure-active-directory-authentication-4.png)
+  > [!div class="mx-imgBorder"]
+  > ![Azure AD hybrid identity with federated authentication](../media/azure-active-directory-authentication-4.png)
 
 ## Recommendations
 
@@ -146,7 +146,7 @@ If you have a single forest on-premises, the attribute you should use is **objec
 
 ## Azure AD sign-in
 
-While integrating your on-premises directory with Azure AD, it is important to understand how the synchronization settings can affect the way user authenticates. Azure AD uses userPrincipalName (UPN) to authenticate the user. However, when you synchronize your users, you must choose the attribute to be used for value of userPrincipalName carefully. When you are selecting the attribute for providing the value of UPN to be used in Azure one should ensure
+While integrating your on-premises directory with Azure AD, synchronization settings can affect the way user authenticates. Azure AD uses userPrincipalName (UPN) to authenticate the user. However, when you synchronize your users, you must choose the attribute to be used for value of userPrincipalName carefully. When you are selecting the attribute for providing the value of UPN to be used in Azure one should ensure
 
 - The attribute values conform to the UPN syntax (RFC 822), that is it should be of the format username@domain
 
@@ -154,9 +154,9 @@ While integrating your on-premises directory with Azure AD, it is important to u
 
 In express settings, the assumed choice for the attribute is userPrincipalName. If the userPrincipalName attribute does not contain the value you want your users to sign in to Azure, then you must choose **Custom Installation**.
 
-### Custom domain state and UPN
+### Custom domain state and User Principal Name
 
-It is important to ensure that there is a verified domain for the UPN suffix. John is a user in contoso.com. You want John to use the on-premises UPN john@contoso.com to sign in to Azure after you have synced users to your Azure AD directory contoso.onmicrosoft.com. To do so, you need to add and verify contoso.com as a custom domain in Azure AD before you can start syncing the users. If the UPN suffix of John, for example contoso.com, does not match a verified domain in Azure AD, then Azure AD replaces the UPN suffix with contoso.onmicrosoft.com.
+Ensure that there is a verified domain for the User Principal Name (UPN) suffix. John is a user in contoso.com. You want John to use the on-premises UPN john@contoso.com to sign in to Azure after you have synced users to your Azure AD directory contoso.onmicrosoft.com. To do so, you need to add and verify contoso.com as a custom domain in Azure AD before you can start syncing the users. If the UPN suffix of John, for example contoso.com, does not match a verified domain in Azure AD, then Azure AD replaces the UPN suffix with contoso.onmicrosoft.com.
 
 Some organizations have non-routable domains, like contoso.local, or simple single label domains like contoso. You are not able to verify a non-routable domain in Azure AD. Azure AD Connect can sync to only a verified domain in Azure AD. When you create an Azure AD directory, it creates a routable domain that becomes default domain for your Azure AD for example, contoso.onmicrosoft.com. Therefore, it becomes necessary to verify any other routable domain in such a scenario in case you don't want to sync to the default onmicrosoft.com domain.
 

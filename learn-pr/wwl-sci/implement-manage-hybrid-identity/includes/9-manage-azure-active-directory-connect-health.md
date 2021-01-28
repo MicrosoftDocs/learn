@@ -54,14 +54,14 @@ Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azu
 
 1. Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
 
-1. On the **Server** blade, from the action bar, click **Delete**.
+2. On the **Server** blade, from the action bar, click **Delete**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health delete server.](../media/delete-server-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of Azure AD Connect Health delete server.](../media/delete-server-2.png)
 
-1. Confirm by typing the server name in the confirmation box.
+3. Confirm by typing the server name in the confirmation box.
 
-1. Click **Delete**.
+4. Click **Delete**.
 
 Azure AD Connect Health for Azure Active Directory Domain Services:
 
@@ -93,16 +93,16 @@ When you're deleting a service instance, be aware of the following:
 
 1. Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
 
-1. On the **Service** blade, from the action bar, click **Delete**.
+2. On the **Service** blade, from the action bar, click **Delete**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health delete service.](../media/delete-server.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of Azure AD Connect Health delete service.](../media/delete-server.png)
 
-1. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
+3. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
 
-1. Click **Delete**.
+4. Click **Delete**.
 
-## Manage access with Azure RBAC
+## Manage access with Azure Role Based Access Control
 
 [Azure role-based access control (Azure RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) for Azure AD Connect Health provides access to users and groups other than global administrators. Azure RBAC assigns roles to the intended users and groups, and provides a mechanism to limit the global administrators within your directory.
 
@@ -140,24 +140,24 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 
 1. From the **Configure** section, click **Users**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health resource sidebar](../media/start-role-based-access-control.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of Azure AD Connect Health resource sidebar](../media/start-role-based-access-control.png)
 
-1. Select **Add**.
+2. Select **Add**.
 
-1. In the **Select a role** pane, select a role (for example, **Owner**).
+3. In the **Select a role** pane, select a role (for example, **Owner**).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/role-based-access-control-add.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of Azure AD Connect Health and Azure RBAC configure menu](../media/role-based-access-control-add.png)
 
-1. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
+4. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/role-based-access-control-select-users.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of Azure AD Connect Health and Azure RBAC and new users highlighted](../media/role-based-access-control-select-users.png)
 
-1. Select **OK**.
+5. Select **OK**.
 
-1. After the role assignment is complete, the users and groups appear in the list.
+6. After the role assignment is complete, the users and groups appear in the list.
 
 Now the listed users and groups have access, according to their assigned roles.
 
@@ -171,8 +171,8 @@ Now the listed users and groups have access, according to their assigned roles.
 
 1. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/role-based-access-control-pin-blade.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/role-based-access-control-pin-blade.png)
 
 > [!NOTE]
 > A user with the Reader role assigned is not able to get Azure AD Connect Health extension from the Azure Marketplace. The user cannot perform the necessary "create" operation to do so. The user can still get to the blade by going to the preceding link. For subsequent usage, the user can pin the blade to the dashboard.
@@ -255,11 +255,11 @@ From the Azure portal, take a few steps to identify specific fixable scenarios:
 > [!IMPORTANT]
 > The diagnostic status column will reset after each sync cycle.
 
-1. Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
+2. Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
 
-1. If a **Close** button appears at the end of the diagnostics, there's no quick fix available from the portal based on your answers. Refer to the solution shown in the last step. Fixes from on-premises are still the solutions. Select the **Close** button. The status of the current sync error switches to **Manual fix required**. The status stays during the current sync cycle.
+3. If a **Close** button appears at the end of the diagnostics, there's no quick fix available from the portal based on your answers. Refer to the solution shown in the last step. Fixes from on-premises are still the solutions. Select the **Close** button. The status of the current sync error switches to **Manual fix required**. The status stays during the current sync cycle.
 
-1. After an orphaned object case is identified, you can fix the duplicated attributes sync errors directly from the portal. To trigger the process, select the **Apply Fix** button. The status of the current sync error updates to **Pending sync**.
+4. After an orphaned object case is identified, you can fix the duplicated attributes sync errors directly from the portal. To trigger the process, select the **Apply Fix** button. The status of the current sync error updates to **Pending sync**.
 
-1. After the next sync cycle, the error should be removed from the list.
+5. After the next sync cycle, the error should be removed from the list.
 

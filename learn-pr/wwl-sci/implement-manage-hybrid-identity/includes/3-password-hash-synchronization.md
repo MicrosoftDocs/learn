@@ -18,7 +18,7 @@ When you install Azure AD Connect by using the **Express Settings** option, pass
 > [!div class="mx-imgBorder"]
 > ![Enabling password hash synchronization](../media/user-sign-in-2.png)
 
-### Password hash synchronization and FIPS
+### Password hash synchronization and Federal Information Processing standard
 
 If your server has been locked down according to Federal Information Processing Standard (FIPS), then MD5 is disabled.
 
