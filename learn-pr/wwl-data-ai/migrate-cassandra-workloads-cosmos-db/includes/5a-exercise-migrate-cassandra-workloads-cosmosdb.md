@@ -1,11 +1,11 @@
 In this exercise, you'll migrate two datasets from Cassandra to Cosmos DB. You'll move the data in two ways. First, you'll export the data from Cassandra and use the **CQLSH COPY** command to import the database into Cosmos DB. Then, you'll migrate the data using Spark. You'll verify that migration was successful by running queries against the data held in the Cosmos DB database. 
 
-The scenario for this lab concerns an ecommerce system. Customers can place orders for goods. The customer and order details are recorded in a Cassandra database.
+The scenario for this lab concerns an ecommerce system. The customer and order details are recorded in a Cassandra database.
 
 > [!IMPORTANT]
 > You can perform these steps in your own personal subscription, or just follow along to understand how to migrate your database.
 
-### Task 1: Create a Resource Group and Virtual Network
+### Create a Resource Group and Virtual Network
 
 1. Using a web browser, open a new tab and navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. In the Azure portal, select **Resource groups**, and then select **+Add**.
@@ -18,7 +18,7 @@ The scenario for this lab concerns an ecommerce system. Customers can place orde
     | Region | Select your nearest location |
 
 1. Select **Review + Create** and then select **Create**. Wait for the resource group to be created.
-1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
+1. In the top left menu on the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Virtual Network**, and press Enter.
 1. On the **Virtual Network** page, select **Create**.
 1. On the **Basics** page, enter the following details, and then select **Next:IP Addresses**:
@@ -45,7 +45,7 @@ The scenario for this lab concerns an ecommerce system. Customers can place orde
 
 ### Create a Cassandra database server
 
-1. In the left-hand pane of the Azure portal, select **+ Create a resource**.
+1. In the top left menu on the Azure portal, select **+ Create a resource**.
 1. In the **Search the Marketplace** box, type **Cassandra Certified by Bitnami**, and then press Enter.
 1. On the **Cassandra Certified by Bitnami** page, select **Create**.
 1. On the **Create a virtual machine** page, enter the following details, and then select **Next: Disks \>**.
@@ -57,7 +57,7 @@ The scenario for this lab concerns an ecommerce system. Customers can place orde
     | Region | Select the same location that you specified for the resource group |
     | Availability options | **No infrastructure redundancy required** |
     | Image | **Cassandra Certified by Bitnami - Gen1** |
-    | Size | **Standard D2 v2** |
+    | Size | **Standard_D2_v2** |
     | Authentication type | **Password** |
     | Username | **azureuser** |
     | Password | **Pa55w.rdPa55w.rd** |
@@ -79,9 +79,10 @@ The scenario for this lab concerns an ecommerce system. Customers can place orde
 1. On the **Management** page, accept the default settings, and then select **Next: Advanced \>**.
 1. On the **Advanced** page, accept the default settings, and then select **Next: Tags \>**.
 1. On the **Tags** page, accept the default settings, and then select **Next: Review + create \>**.
+1. On the **Review + create** page, confirm you agree to the terms by entering your contact details. 
 1. On the validation page, select **Create**.
 1. Wait for the virtual machine to be deployed before continuing.
-1. In the left-hand pane of the Azure portal, select **All resources**.
+1. In the top left menu on the Azure portal, select **All resources**.
 1. On the **All resources** page, select **cassandraserver-nsg**.
 1. On the **cassandraserver-nsg** page, under **Settings**, select **Inbound security rules**.
 1. On the **cassandraserver-nsg - Inbound security rules** page, select **+ Add**.
@@ -101,7 +102,7 @@ The scenario for this lab concerns an ecommerce system. Customers can place orde
 
 ### Download the sample code
 
-1. In the left-hand pane of the Azure portal, select **All resources**.
+1. In the top left menu on the Azure portal, select **All resources**.
 1. On the **All resources** page, select **cassandraserver-ip**.
 1. On the **cassandraserver-ip** page, make a note of the **IP address**.
 1. In the toolbar at the top of the Azure portal, select **Cloud Shell**.
@@ -143,7 +144,7 @@ The scenario for this lab concerns an ecommerce system. Customers can place orde
     bash upload.sh
     ```
 
-    The script creates two keyspaces named **customerinfo** and **orderinfo**. The script creates a table named **customerdetails** in the **customerinfo** keyspace, and two tables named **orderdetails** and **orderline** in the**orderinfo** keyspace.
+    The script creates two keyspaces named **customerinfo** and **orderinfo**. The script creates a table named **customerdetails** in the **customerinfo** keyspace, and two tables named **orderdetails** and **orderline** in the **orderinfo** keyspace.
 
 1. Run the following command, and make a note of the default password in this file:
 
@@ -199,13 +200,80 @@ The scenario for this lab concerns an ecommerce system. Customers can place orde
     exit
     ```
 
+1. You can close the Cloud Shell. 
+
+### Create a Cosmos Account and Database
+
+1. In the top left menu on the Azure portal, click **+ Create a resource**.
+1. On the **New** page, in the **Search the Marketplace** box, type **Azure Cosmos DB**, end then press Enter.
+1. On the **Azure Cosmos DB** page, click **Create**.
+1. On the **Create Azure Cosmos DB Account** page, enter the following settings, and then click **Review + create**:
+
+    | Property  | Value  |
+    |---|---|
+    | Subscription | Select your subscription |
+    | Resource group | **cassandradbrg** |
+    | Account Name | cassandra*nnn*, where *nnn* is a random number selected by you |
+    | API | **Cassandra** |
+    | Notebooks | **Off** |
+    | Location | **Specify the same location that you used for the Cassandra server and virtual network** |
+    | Capacity mode | **Provisioned throughput** |
+    | Apply Free Tier Discount | **Apply** |
+    | Account Type | **Non-Production** |
+    | Geo-Redundancy | **Disable** |
+    | Multi-region Writes | **Disable** |
+    | Availability Zones | **Disable** |
+
+1. On the validation page, click **Create**, and wait for the Cosmos DB account to be deployed.
+1. In the left-hand pane, click **All resources**.
+1. On the **All resources** page, click your Cosmos DB account (**cassandra*nnn***).
+1. On the **cassandra*nnn** page, click **Data Explorer**.
+1. In the **Data Explorer** pane, click **New Table**.
+1. In the **Add Table** pane, specify the following settings, and then click **OK**:
+
+    | Property  | Value  |
+    |---|---|
+    | Keyspace name | Click **Create new**, and then type **customerinfo** |
+    | Provision keyspace throughput | **de-selected** |
+    | Enter tableId | **customerdetails** |
+    | *CREATE TABLE* box | (customerid int, firstname text, lastname text, email text, stateprovince text, PRIMARY KEY ((stateprovince), customerid)) |
+    | Throughput | 10000 |
+
+1. In the **Data Explorer** pane, click **New Table**.
+1. In the **Add Table** pane, specify the following settings, and then click **OK**:
+
+    | Property  | Value  |
+    |---|---|
+    | Keyspace name | Click **Create new**, and then type **orderinfo** |
+    | Provision keyspace throughput | **de-selected** |
+    | Enter tableId | **orderdetails** |
+    | *CREATE TABLE* box | (orderid int, customerid int, orderdate date, ordervalue decimal, PRIMARY KEY ((customerid), orderdate, orderid)) |
+    | Throughput | 10000 |
+
+1. In the **Data Explorer** pane, click **New Table**.
+1. In the **Add Table** pane, specify the following settings, and then click **OK**:
+
+    | Property  | Value  |
+    |---|---|
+    | Keyspace name | Click **Use existing**, and then select **orderinfo** |
+    | Enter tableId | orderline |
+    | *CREATE TABLE* box | (orderid int, orderline int, productname text, quantity smallint, orderlinecost decimal, PRIMARY KEY ((orderid), productname, orderline)) |
+    | Throughput | 10000 |
+
+1. On the left under **Settings**, click **Connection String**, and make a note of the following items:
+
+   - Contact Point
+   - Port
+   - Username
+   - Primary Password
+
 ## Migrate data from Cassandra to Cosmos DB using Spark
 
 In the next steps you'll migrate the same data you just created. You'll use Spark from an Azure Databricks notebook.
 
 ### Create a Spark cluster
 
-1. In the Azure portal, in the left-hand pane, select **+ Create a resource**.
+1. In the top left menu on the Azure portal, select **+ Create a resource**.
 1. In the **New** pane, in the **Search the Marketplace** box, type **Azure Databricks**, and then press Enter.
 1. On the **Azure Databricks** page, select **Create**.
 1. On the **Azure Databricks Service** page, enter the following details, and then select **Review + create**:
@@ -218,7 +286,7 @@ In the next steps you'll migrate the same data you just created. You'll use Spar
     | Pricing Tier | **Standard** |
 
 1. On the **Review + create** page, select **Create** and then wait for the Databricks Service to be deployed.
-1. In the left-hand pane, select **Resource groups**, select **cassandradbrg**, and then select the **CassandraMigration** Databricks Service.
+1. In the top left menu on the Azure portal, select **Resource groups**, select **cassandradbrg**, and then select the **CassandraMigration** Databricks Service.
 1. On the **CassandraMigration** page, select **Launch Workspace**.
 1. On the **Azure Databricks** page, under **Common Tasks**, select **New Cluster**.
 1. On the **New Cluster** page, enter the following settings, and then select **Create Cluster**:
@@ -239,7 +307,11 @@ In the next steps you'll migrate the same data you just created. You'll use Spar
 
 ### Create a Notebook for migrating data
 
-1. In the pane to the left, select **Clusters**, select the **Libraries** tab, and then select **Install New**.
+1. In the pane to the left, select **Clusters**, then **MigrtationCluster**. 
+
+    ![Screenshot showing how to install a new library](../media/add-new-library.png)
+
+1. In the menu at the top select the **Libraries** tab, and then select **Install New**.
 1. In the **Install Library** dialog, enter the following settings, and then select **Install**:
 
     | Property  | Value  |
@@ -466,7 +538,7 @@ You have successfully migrated a Cassandra database to Cosmos DB by using Spark 
 ### Clean up the resources you've created
 
 > [!IMPORTANT]
-> If you've performed these steps in your own personal subscription, you can delete the resources individually or delete the resource group to delete the entire set of resources. Resources left running can cost you money.
+> If you've performed these steps in your own personal subscription, you can delete the resources individually or delete the resource group to delete the entire set of resources. Resources left running incur costs.
 
 1. Using the Cloud Shell run this command to delete the resource group:
 
