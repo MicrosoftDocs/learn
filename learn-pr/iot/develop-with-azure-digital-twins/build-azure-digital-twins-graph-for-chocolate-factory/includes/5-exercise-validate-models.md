@@ -2,7 +2,7 @@ In this unit, you download the DTDL Validator sample. This is a command line sam
 
 ## Download the DTDL Validator sample application
 
-1. Download the [DTDL Validator](https://docs.microsoft.com/en-us/samples/azure-samples/dtdl-validator/dtdl-validator/).
+1. Download the [DTDL Validator](https://docs.microsoft.com/samples/azure-samples/dtdl-validator/dtdl-validator/).
 
 1. Extract the zip file to an appropriate location. The default location will be in your **Downloads** folder.
 

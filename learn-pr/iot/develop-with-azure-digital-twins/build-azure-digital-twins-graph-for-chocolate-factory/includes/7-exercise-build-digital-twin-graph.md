@@ -11,7 +11,7 @@ In this exercise, you'll download and run the ADT Explorer sample locally, conne
 
 For the ADT Explorer sample to run properly, you'll need to locally log in to the Azure subscription where you've deployed the ADT instance for your machine to create an environment variable that references those credentials. When running the ADT Explorer sample locally, it will look for this environment variable so that it can connect the sample to your ADT instance in Azure.
 
-1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
+1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
 
 1. Once you successfully installed the Azure CLI, you'll be able to log in to Azure by running the following command in PowerShell:
 
