@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-testing-troubleshooting-conditional-access-policies.md)]
+  [!include[](includes/7-test-troubleshooting-conditional-access-policies.md)]

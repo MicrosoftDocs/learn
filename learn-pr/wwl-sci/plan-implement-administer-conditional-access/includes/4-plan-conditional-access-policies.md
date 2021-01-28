@@ -49,7 +49,7 @@ Access tokens enable clients to securely call protected web APIs, and they're us
 
 It’s important to understand how access tokens are issued.
 
-![Access token issuance diagram](../media/ca-policy-token-issuance.png)
+![Access token issuance diagram](../media/access-policy-token-issuance.png)
 
 > [!NOTE]
 > If no assignment is required, and no CA policy is in effect, the default behavior is to issue an access token.

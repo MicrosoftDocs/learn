@@ -11,7 +11,7 @@ Managing security can be difficult with common identity-related attacks like pas
 - Protecting privileged activities like access to the Azure portal.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Azure portal with the toggle to enable security defaults](../media/security-defaults-azure-ad-portal.png)
+> ![Screenshot of the Azure portal with the toggle to enable security defaults](../media/security-defaults-azure-active-directory-portal.png)
 
 ## Availability
 
