@@ -1,6 +1,6 @@
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
-- Requiring all users to register for Azure AD multi-factor authentication.
+- Requiring all users to register for Azure Active Directory Multi-Factor Authentication.
 
 - Requiring administrators to perform multi-factor authentication.
 
