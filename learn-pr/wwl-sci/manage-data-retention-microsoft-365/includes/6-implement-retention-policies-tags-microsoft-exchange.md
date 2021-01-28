@@ -21,7 +21,7 @@ By default, all mailboxes have assigned an MRM retention policy named Default MR
 > [!NOTE]
 > Retention tags are assigned when a new message is created in a folder or when the user changes the tag manually. When the retention policy is changed, there is no automatic change of existing assigned tags!
 
-## Create a new Retention Tag
+## Create a new retention tag
 
 To create new retention tags, adjust existing policies and tags, and assign policies to user mailboxes, administrators can use the Exchange admin center or the Exchange Online PowerShell module.
 
@@ -48,7 +48,7 @@ New-RetentionPolicyTag <tag name> -Type Personal -Comment <tag comment> -Retenti
 
 This example will create a new personal retention tag which users can use for tagging messages that are removed after seven years (2556 days) automatically from the mailbox.
 
-## Changing the default Retention Policy
+## Changing the default retention policy
 
 To change existing retention policies, administrators can use the Exchange admin center or the Exchange Online PowerShell module.
 

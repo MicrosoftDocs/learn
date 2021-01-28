@@ -27,15 +27,15 @@ To put a mailbox on litigation hold, which prevents the deletion of all content 
 
 1. To set a mailbox on litigation hold, you can also use the following cmdlet:
 
-```powershell
-Set-Mailbox <username> -LitigationHoldEnabled $true
+    ```powershell
+    Set-Mailbox <username> -LitigationHoldEnabled $true
 
-```
+    ```
 
 1. To modify the number of days to put the mailbox content on hold, use the following cmdlet:
 
-```powershell
-Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
+    ```powershell
+    Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 
-```
+    ```
 

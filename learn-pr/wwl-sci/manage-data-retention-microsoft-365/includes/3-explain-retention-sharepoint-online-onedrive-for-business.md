@@ -13,7 +13,7 @@ After retention settings are assigned to content in a OneDrive account or ShareP
 > [!NOTE]
 > To help prevent inadvertent data loss, no content is permanently deleted from the Preservation Hold library but instead the content is only moved to the Recycle Bin. So, when content is deleted from the Preservation Hold library, it goes through the second-stage Recycle Bin before being deleted permanently.
 
-## Preservation Hold Library Functionality
+## Preservation hold library functionality
 
 The following image shows the way files are handled in SharePoint Online document libraries when preservation hold libraries are used with default service settings.
 
@@ -42,7 +42,7 @@ For items that are subject to a retention policy (or an eDiscovery hold), the ve
 > [!IMPORTANT]
 > Important: The retained versions of these SharePoint and OneDrive documents are not searchable by eDiscovery tools. That is very important to know for compliance reasons.
 
-## Important Considerations
+## Important considerations
 
 It is clear how retention in SharePoint Online and OneDrive for Business works for items stored in document libraries. Because any Microsoft 365 Group and any OneDrive for Business personal site is equipped with a OneNote notebook by default, the configured retention settings on a site level also apply to the notebook. However, behind the scenes, the different OneNote sections are individual files, each section will be individually retained and deleted.
 

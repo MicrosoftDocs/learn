@@ -11,7 +11,7 @@ Retention policies with Teams locations can retain chats and channel messages in
 > [!TIP]
 > It is important to understand where the various content of a Team is stored to create the right Retention Policies. When using Retention Labels, the storage location of the labeled elements does not matter.
 
-## Teams Retention Functionality
+## Teams retention functionality
 
 After a retention policy is configured for chat and channel messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Teams messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—another hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted.
 
@@ -27,7 +27,7 @@ The following table provides an overview of the different ways content is held o
 | **retain-only**| A copy of the original message is created in the SubstrateHolds folder within 21 days, and retained there until the retention period expires. Then the message is permanently deleted from the SubstrateHolds folder within 24 hours.| Nothing happens before and after the retention period; the message remains in its original location.|
 | **delete-only**| At the end of the retention period, the message is moved to the SubstrateHolds folder. This action takes up to seven days from the expiry date. Then the message is permanently deleted from the SubstrateHolds folder within 24 hours.| The item is moved to the SubstrateHolds folder within 21 days where it is then permanently deleted within 24 hours.|
 
-## Important Considerations
+## Important considerations
 
 Because the Teams storage locations are complex, there are several other considerations to make, when configuring retention policies for Teams:
 

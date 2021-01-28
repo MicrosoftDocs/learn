@@ -1,6 +1,6 @@
 Microsoft Exchange Online is a solution to transport and deliver messages, sensitive information flows through and are stored in Exchange Online mailboxes. This makes Exchange an important location for retaining and deleting messages to fulfill various data protection and compliance requirements.
 
-## Hidden Recoverable Items Folders
+## Hidden Recoverable Items folders
 
 Any Exchange mailbox consists of the visible folders for the users, such as the Inbox, Sent Items and Deleted Items, and hidden folders not accessible by the mailbox owner. These hidden folders retain mailbox items to provide features like single item recovery for users to restore deleted items, for storing mailbox audit logs, and to apply compliance features.
 
