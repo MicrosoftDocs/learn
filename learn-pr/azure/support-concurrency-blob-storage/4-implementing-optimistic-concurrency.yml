@@ -9,7 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: exercise
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/4-implementing-optimistic-concurrency.md)]
