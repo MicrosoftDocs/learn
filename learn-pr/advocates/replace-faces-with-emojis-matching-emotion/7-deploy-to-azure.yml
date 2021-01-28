@@ -3,9 +3,9 @@ uid: learn.the-mojifier.7-deploy-to-azure
 metadata:
   title: Deploy to Azure
   description: Deploy our Azure Function to the cloud and update the slack configuration to use the new production version of our code.
-  author: lnyswonger
   ms.date: 10/18/2018
-  ms.author: luken
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy to Azure

@@ -32,7 +32,7 @@ Now we can add code to create the _photos_ container where we will store our ima
 container.CreateIfNotExists();
 ```
 
-Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists()` method, you can run your program multiple times but the container will only be created on the first run.
+Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists` method, you can run your program multiple times but the container will only be created on the first run.
 
 ```dotnetcli
 dotnet run
@@ -42,7 +42,7 @@ You can verify you have created the container by running the following Azure CLI
 
 ```azurecli
 az storage container list \
-    --account-name <name>
+  --account-name <name>
 ```
 
 ::: zone-end
@@ -57,7 +57,7 @@ require('dotenv').config();
 const { BlobServiceClient } = require("@azure/storage-blob");
 ```
 
-Now, you can create a `BlobServiceClient` object in your code by getting the storage account connection string, and passing it to the factory method `fromConnectionString()` on the `BlobServiceClient` object like this.
+Now, you can create a `BlobServiceClient` object in your code by getting the storage account connection string, and passing it to the factory method `fromConnectionString` on the `BlobServiceClient` object like this.
 
 ```javascript
 const storageAccountConnectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
@@ -81,7 +81,7 @@ The container name must be between 3 and 63 characters long and may only contain
 
 To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though our container does not yet exist in our storage account, the `ContainerClient` can be used to create the container as well as manage it once it is created.
 
-To obtain the `ContainerClient` object, you call the `getContainerClient()` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists()` method on the **containerClient** object.
+To obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object.
 
 ```javascript
 async function main() {
@@ -108,7 +108,7 @@ You can verify you have created the container by running the following Azure CLI
 
 ```azurecli
 az storage container list \
-    --account-name <name>
+  --account-name <name>
 ```
 
 ::: zone-end
