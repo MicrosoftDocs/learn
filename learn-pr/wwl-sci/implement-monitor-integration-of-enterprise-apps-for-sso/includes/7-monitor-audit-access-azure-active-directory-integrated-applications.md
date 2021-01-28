@@ -15,7 +15,7 @@ With Azure AD reports, you can get the information needed to determine how your 
 1. From the **Activity** section, select **Usage & insights** to open the report.
 
 > [!div class="mx-imgBorder"]
->![alt: "Screenshot shows Usage & insights selected from the Activity section."](../media/main-menu.png)
+>![Screenshot shows Usage & insights selected from the Activity section.](../media/main-menu.png)
 
 ## Use the report
 
@@ -28,7 +28,7 @@ You can also set the focus on a specific application. Select **view sign-in acti
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
 
 > [!div class="mx-imgBorder"]
->![alt: "Screenshot shows Usage & insights for Application activity where you can select a range and view sign-in activity for different apps](../media/usage-and-insights-report.png)
+>![Screenshot shows Usage & insights for Application activity where you can select a range and view sign-in activity for different apps.](../media/usage-and-insights-report.png)
 
 ## Audit logs
 
@@ -48,19 +48,19 @@ An audit log has a default list view that shows:
 
 - the initiator/actor (who) of an activity
 
-![alt: "Audit logs"](../media/listview.png)
+![Audit logs](../media/list-view.png)
 
 You can customize the list view by clicking **Columns** in the toolbar.
 
-![alt: "Audit columns"](../media/columns.png)
+![Audit columns](../media/columns.png)
 
 This enables you to display additional fields or remove fields that are already displayed.
 
-![alt: "Remove fields"](../media/columnselect.png)
+![Remove fields](../media/column-select.png)
 
 Select an item in the list view to get more detailed information.
 
-![alt: "select item"](../media/details.png)
+![select item](../media/details.png)
 
 ## Enterprise applications audit logs
 
@@ -78,5 +78,5 @@ With application-based audit reports, you can get answers to questions such as:
 
 If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** blade. This entry point has **Enterprise applications** preselected as the **Application Type**.
 
-![alt: "Enterprise applications"](../media/enterpriseapplications.png)
+![Enterprise applications](../media/enterprise-applications.png)
 

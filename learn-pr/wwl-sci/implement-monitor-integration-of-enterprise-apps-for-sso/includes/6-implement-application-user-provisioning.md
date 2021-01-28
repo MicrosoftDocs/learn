@@ -1,6 +1,6 @@
 In Azure AD, the term app provisioning refers to automatically creating user identities and roles in the cloud ([SaaS](https://azure.microsoft.com/overview/what-is-saas/)) applications that users need access to. In addition to creating user identities, automatic provisioning includes the maintenance and removal of user identities as status or roles change. A common scenarios is provisioning an Azure AD user into applications like [Dropbox](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/dropboxforbusiness-provisioning-tutorial), [Salesforce](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/salesforce-provisioning-tutorial), [ServiceNow](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/servicenow-provisioning-tutorial), and more.
 
-![alt: "Provisioning overview diagram"](../media/provisioning-overview.png)
+![Provisioning overview diagram.](../media/provision-overview.png)
 
 This feature lets you to the following actions.
 
@@ -30,7 +30,7 @@ Applications in the Azure AD gallery support either manual or automatic provisio
 
 In the Azure AD gallery, applications that support automatic provisioning are designated by a **Provisioning** icon.
 
-![alt: "Provisioning icon in the application gallery"](../media/browse-gallery.png)
+![Provisioning icon in the application gallery.](../media/browse-gallery.png)
 
 The provisioning mode supported by an application is also visible on the **Provisioning** tab once you have added the application to your **Enterprise apps**.
 
@@ -46,7 +46,7 @@ As an application developer, you can use the System for Cross-Domain Identity Ma
 
 SCIM is a standardized definition of two endpoints: a /Users endpoint and a /Groups endpoint. It uses common Representational state transfer (REST) verbs to create, update, and delete objects, and a pre-defined schema for common attributes like group name, username, first name, last name, and email. Apps that offer a SCIM 2.0 REST API can reduce or eliminate the pain of working with a proprietary user management API. For example, any compliant SCIM client knows how to make an HTTP POST of a JSON object to the /Users endpoint to create a new user entry. Instead of needing a slightly different API for the same basic actions, apps that conform to the SCIM standard can instantly take advantage of pre-existing clients, tools, and code.
 
-![alt: "Provisioning from Azure AD to an app with SCIM"](../media/scim-provisioning-overview.png)
+![Provisioning from Azure AD to an app with SCIM.](../media/system-for-cross-domain-identity-management-provision-overview.png)
 
 The standard user object schema and REST APIs for management defined in SCIM 2.0 allow identity providers and apps to integrate with each other more easily. Application developers that build a SCIM endpoint can integrate with any SCIM-compliant client without having to do custom work, rather than starting from scratch and building the implementation completely on your own, you can rely on a number of open source SCIM libraries published by the SCIM community.
 

@@ -22,7 +22,7 @@ By choosing which app consent policies apply for all users, you can set limits o
 - **Custom app consent policy** – For even more options over the conditions governing when users consent, you can [create custom app consent policies](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-app-consent-policies) and configure those to apply for user consent.
 
 > [!div class="mx-imgBorder"]
->![alt: "User consent settings"](../media/setting-for-all-users.png)
+>![User consent settings.](../media/set-for-all-users.png)
 
 > [!TIP]
 > [Enable the admin consent workflow](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow) to allow users to request an administrator's review and approval of an application that the user is not allowed to consent to—for example, when user consent has been disabled or when an application is requesting permissions that the user is not allowed to grant.
