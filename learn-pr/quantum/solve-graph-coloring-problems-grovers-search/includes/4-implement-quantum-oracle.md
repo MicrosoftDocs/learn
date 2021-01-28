@@ -1,4 +1,4 @@
-For the moment, forget about spacecraft traveling between stations and consider only colors and vertices. You have a picture of dots connected by edges and you wonder about the ways to color the dots. 
+For the moment, forget about noisy messages and bandwidths and consider only colors and vertices. You have a picture of dots connected by edges and you wonder about the ways to color the dots. 
 
 In this part, you will implement a quantum oracle for the graph coloring problem.
 
@@ -210,4 +210,4 @@ The state of qubits c1 after the equality check:
 
 You can see that indeed, the amplitude of the $|00\rangle$ state changed to $-0.5$, so its relative phase compared to the other basis states is now $-1$.
 
-Congrats space explorer! Now you know how to build a complete quantum oracle for a graph coloring problem! In the next unit, you finally put into practice your skills to implement Grover’s search algorithm to determine our delivery routes. 
+Congrats space explorer! Now you know how to build a complete quantum oracle for a graph coloring problem! In the next unit, you finally put into practice your skills to implement Grover’s search algorithm to determine the minimum number of different bandwitdths we need to assign. 
