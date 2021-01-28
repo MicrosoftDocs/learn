@@ -30,11 +30,11 @@ You can use Cloud App Security to sanction or unsanction apps in your organizati
 
 If you have an on-premises directory that contains user accounts, you likely have many applications to which users authenticate. Each of these apps is configured for users to access using their identities. Users may also authenticate directly with your on-premises Active Directory. Active Directory Federation Services (AD FS) is a standards-based on-premises identity service. AD FS extends the ability to use single sign-on (SSO) functionality between trusted business partners without requiring users to sign in separately to each application. This is known as federation. Many organizations have software as a service (SaaS) or custom line-of-business (LOB) apps federated directly to AD FS, alongside Microsoft 365 and Azure AD-based apps.
 
-![Applications connected directly on-premises](../media/app-integration-before-migration1.png)
+![Applications connected directly on-premises](../media/app-integration-before-migration-1.png)
 
 To increase application security, your goal is to have a single set of access controls and policies across your on-premises and cloud environments.
 
-![Applications connected through Azure AD](../media/app-integration-after-migration1.png)
+![Applications connected through Azure AD](../media/app-integration-after-migration-1.png)
 
 Many organizations use AD FS to provide SSO to cloud applications. Moving your AD FS applications to Azure AD for authentication provides significant benefits, especially in terms of cost management, risk management, productivity, compliance, and governance. But understanding which applications are compatible with Azure AD and identifying specific migration steps can be time consuming.
 
@@ -48,7 +48,7 @@ Migrating all your application authentication to Azure AD is optimal, as it give
 
 There are two types of applications to migrate:
 
-1. SaaS applications, which are generally procured by the organization.****
+1. SaaS applications, which are generally procured by the organization.
 
 2. Line-of-business applications, which are developed by the organization and not meant to be used by other companies.
 
