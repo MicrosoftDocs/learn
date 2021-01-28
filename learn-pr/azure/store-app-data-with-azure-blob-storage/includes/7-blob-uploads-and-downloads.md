@@ -61,10 +61,26 @@ public Task<Stream> Load(string name)
 The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
 ```azurecli
-az appservice plan create --name blob-exercise-plan --resource-group <rgn>[sandbox resource group name]</rgn> --sku FREE --location centralus
-az webapp create --name <your-unique-app-name> --plan blob-exercise-plan --resource-group <rgn>[sandbox resource group name]</rgn>
-CONNECTIONSTRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
-az webapp config appsettings set --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn> --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
+az appservice plan create \
+--name blob-exercise-plan \
+--resource-group <rgn>[sandbox resource group name]</rgn> \
+--sku FREE --location centralus
+```
+```azurecli
+az webapp create \
+--name <your-unique-app-name> \
+--plan blob-exercise-plan \
+--resource-group <rgn>[sandbox resource group name]</rgn>
+```
+```azurecli
+CONNECTIONSTRING=$(az storage account show-connection-string \
+--name <your-unique-storage-account-name> \
+--output tsv)
+```
+```azurecli
+az webapp config appsettings set \
+--name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn> \
+--settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
 ```
 
 4. Now, you'll deploy your app. The following commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service.
