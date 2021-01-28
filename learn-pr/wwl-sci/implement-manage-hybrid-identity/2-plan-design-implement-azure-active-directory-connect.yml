@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-hybrid-identity.plan-design-implement-azure-active-directory-connect
+title: Plan, design, and implement Azure Active Directory Connect (AADC)
+metadata:
+  title: Plan, design, and implement Azure Active Directory Connect (AADC)
+  description: "Plan, design, and implement Azure Active Directory Connect (AADC)"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-plan-design-implement-azure-active-directory-connect.md)]
