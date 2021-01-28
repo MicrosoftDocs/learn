@@ -6,7 +6,6 @@ The web service you created is hosted in an *Azure Container Instance*. If you d
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Endpoints** tab, select the **predict-rentals** endpoint. Then select **Delete** (&#128465;) and confirm that you want to delete the endpoint.
 2. On the **Compute** page, on the **Compute Instances** tab, select your compute instance and then select **Stop**.
-3. On the **Compute** page, on the **Compute clusters** tab, open your compute cluster and select **Edit**. Then set the **Minimum number of nodes** setting to **0** and select **Update**.
 
 If you have finished exploring Azure Machine Learning, you can delete the resource group containing your Azure Machine Learning workspace:
 

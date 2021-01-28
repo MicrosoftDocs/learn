@@ -8,7 +8,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Build container images with Azure Container Registry Tasks
 durationInMinutes: 15
 content: |
