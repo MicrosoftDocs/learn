@@ -13,4 +13,4 @@ By the end of this module, you'll be able to:
 - List the benefits of migrating a Cassandra database to Azure Cosmos DB.
 - Plan a Cassandra to Cosmos DB migration.
 - Explain the steps to perform a migration.
-- List the post migration steps to connect your application and optimize your database.
+- List the post migration steps to connect your application and optimize your database. 
