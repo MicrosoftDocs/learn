@@ -10,13 +10,15 @@ Example layers of security might include:
 - **Application** layer security ensures that applications are secure and free of security vulnerabilities.
 - **Data** layer security controls access to business and customer data, and encryption to protect data.
 
-:::image type="content" source="../media/4-defense-depth.png" alt-text="Defense in depth uses multiple layers of security to protect sensitive data":::
+> [!div class="mx-imgBorder"]
+> ![Defense in depth uses multiple layers of security to protect sensitive data](../media/4-defense-depth.png)
 
 ## Confidentiality, Integrity, Availability (CIA)
 
 Confidentiality, Integrity, Availability, or CIA, is a way to think about security trade-offs. This is not a Microsoft model, but is common to all security professionals.
 
-:::image type="content" source="../media/4-confidentiality-integrity-availability.png" alt-text="Confidentiality, Integrity, Availability (CIA)":::
+> [!div class="mx-imgBorder"]
+> ![Confidentiality, Integrity, Availability (CIA)](../media/4-confidentiality-integrity-availability.png)
 
 **Confidentiality** refers to the need to keep confidential sensitive data such as customer information, passwords, or financial data. You can encrypt data to keep it confidential, but then you also need to keep the encryption keys confidential. Confidentiality is the most visible part of security; we can clearly see need for sensitive data, keys, passwords, and other secrets to be kept confidential.
 
