@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: '$\frac12 (|00\rangle \otimes |1\rangle + |01\rangle \otimes |0\rangle + |10\rangle \otimes |0\rangle + |11\rangle \otimes |1\rangle)$'
       isCorrect: true
-      explanation: "Indeed, to apply the oracle to a superposition state you need to split the expression into a linear combination of basis states and apply the oracle to each term individually. This will flip the state of the third qubit for input states |01U+232A and |10\U232A."
+      explanation: "Indeed, to apply the oracle to a superposition state you need to split the expression into a linear combination of basis states and apply the oracle to each term individually. This will flip the state of the third qubit for input states |01U+232A and |10 U+232A."
     - content: '$\frac12 (|00\rangle - |01\rangle - |10\rangle + |11\rangle) \otimes |1\rangle$'
       isCorrect: false
       explanation: 'Applying a phase oracle that implements this check would indeed yield this state. A marking oracle stores the computation result in the target qubit.'
