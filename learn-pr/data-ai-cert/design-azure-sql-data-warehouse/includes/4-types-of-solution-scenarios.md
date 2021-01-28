@@ -41,4 +41,4 @@ PolyBase uses standard T-SQL queries to bring the data into SQL Analytics tables
 
 ## Real-time analytics
 
-Real-time analytics enables you to capture data continuously from devices or applications and to process it in near real time. This enables you to you get live insights and can be set up with ease from a range of devices.
+Real-time analytics enables you to capture data continuously from devices or applications and to process it in near real time. This enables you to get live insights and can be set up with ease from a range of devices.
