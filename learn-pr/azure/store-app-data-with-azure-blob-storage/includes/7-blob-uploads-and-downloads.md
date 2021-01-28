@@ -92,7 +92,12 @@ az webapp config appsettings set \
 dotnet publish -o pub
 cd pub
 zip -r ../site.zip *
-az webapp deployment source config-zip --src ../site.zip --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn>
+```
+```azurecli
+az webapp deployment source config-zip \
+--src ../site.zip \
+--name <your-unique-app-name> \
+--resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
 To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
