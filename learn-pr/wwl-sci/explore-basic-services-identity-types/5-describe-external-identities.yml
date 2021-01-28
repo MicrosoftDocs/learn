@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-external-identities
+title: Describe the types of external identities
+metadata:
+  title: Describe the types of external identities
+  description: "Describe the types of external identities"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-describe-external-identities.md)]

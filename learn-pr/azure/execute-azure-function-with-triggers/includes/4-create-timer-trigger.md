@@ -36,7 +36,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Under **Plan**, for your **Plan type**, select **Consumption (Serverless)**. When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.
 
-1. Select **Review + create**, and then select **Create**. After the function app is deployed, in the Azure portal, go to **All resources**. The function app will be listed with type **App Service** and has the name you gave it. Select it.
+1. Select **Review + create**, and then select **Create**. After the function app is deployed, in the Azure portal, go to **All resources**. The function app will be listed with type **Function App** and has the name you gave it. Select it.
 
 ## Create a timer-triggered function
 

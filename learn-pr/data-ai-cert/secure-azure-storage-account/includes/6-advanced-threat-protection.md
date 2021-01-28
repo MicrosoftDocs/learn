@@ -1,4 +1,4 @@
-Azure Defender for Storage provides an additional layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. This layer of protection allows you to address threats without being a security expert or managing security monitoring systems.
+Azure Defender for Storage provides an extra layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. This layer of protection allows you to address threats without being a security expert or managing security monitoring systems.
 
 Security alerts are triggered when anomalies in activity occur. These security alerts are integrated with Azure Security Center, and are also sent via email to subscription administrators, with details of suspicious activity and recommendations on how to investigate and remediate threats.
 
@@ -10,9 +10,9 @@ You can turn on Azure Defender for Storage in the Azure portal through the confi
 
 1. Launch the Azure portal.
 
-1. Navigate to your storage account. Under Settings, select Advanced security.
+1. Navigate to your storage account. Under **Settings**, select **Advanced security**.
 
-1. Select Enable Azure Defender for Storage.
+1. Select **Enable Azure Defender for Storage**.
 
     ![Screenshot of Azure Defender for Storage](../media/azure-defender-for-storage.png)
 
@@ -20,17 +20,17 @@ You can turn on Azure Defender for Storage in the Azure portal through the confi
 
 When storage activity anomalies occur, you receive an email notification with information about the suspicious security event. Details of the event include:
 
-- The nature of the anomaly
-- The storage account name
-- The event time
-- The storage type
-- The potential causes
-- The investigation steps
-- The remediation steps
-- The email also includes details on possible causes and recommended actions to investigate and mitigate the potential threat.
+- Nature of the anomaly
+- Storage account name
+- Event time
+- Storage type
+- Potential causes
+- Investigation steps
+- Remediation steps
+- Email also includes details about possible causes and recommended actions to investigate and mitigate the potential threat.
 
     ![Viewing security anomolies in Azure Defender for Security](../media/view-security-anomolies-in-azure-defender-for-security.png)
 
-You can review and manage your current security alerts from Azure Security Center's Security alerts tile. Clicking on a specific alert provides details and actions for investigating the current threat and addressing future threats.
+You can review and manage your current security alerts from Azure Security Center's Security alerts tile. Selecting a specific alert provides details and actions for investigating the current threat and addressing future threats.
 
-    ![Viewing security anomolies details in Azure Defender for Security](../media/view-security-anomolies-details-in-azure-defender-for-security.png)
+![Viewing security anomolies details in Azure Defender for Security](../media/view-security-anomolies-details-in-azure-defender-for-security.png)

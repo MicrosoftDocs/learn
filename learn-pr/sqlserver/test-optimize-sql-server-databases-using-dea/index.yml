@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea
 metadata:
-  title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA) 
-  description: Test and Optimize SQL Server Databases using DEA
-  ms.date: 01/31/2019
-  author: markohot
+  title: Test and optimize SQL Server databases using the Data Experimentation Assistant (DEA)
+  description: "Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA)"
+  ms.date: 01/07/2021
+  author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA)
-summary: The Database Experimentation Assistant is a standalone application that can compare workloads between the current version of your database, and the target.
+summary: The Database Experimentation Assistant (DEA) is a standalone application that can compare workloads between the current version of your database, and the target.
 abstract: |
- In this module, you will:
- - Decide if DEA is the right tool for your workload testing
- - Install DEA on your client machine
- - Test a typical workload on an upgraded database 
- - Review the results of a trace analysis report
-prerequisites: | 
+  In this module, you will:
+  - Decide if DEA is the right tool for your workload testing
+  - Install DEA on your client machine
+  - Test a typical workload on an upgraded database
+  - Review the results of a trace analysis report
+prerequisites: |
   - Experience administering SQL Server databases
   - Knowledge of SQL Server Profiler and trace files
   - Understanding of database performance
@@ -25,7 +25,7 @@ levels:
 - beginner
 roles:
 - administrator
-products: 
+products:
 - sql-server
 units:
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.1-introduction
@@ -37,5 +37,5 @@ units:
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.7-exercise-configure-new-capture
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.8-exercise-review-trace-analysis-report
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea.9-module-summary
-badge: 
+badge:
   uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.badge

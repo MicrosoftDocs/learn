@@ -1,6 +1,6 @@
 You can fail over protected resources in three ways: using the portal, using PowerShell, or automating the failover with an Azure Automation runbook.
 
-With all your resources protected, you can run a real failover of your patient-records VM. With the disaster recovery drill complete, you'll do the failover with PowerShell and the portal. After completion, you'll be in a better position to recommend which approach your company should use.
+With all your resources protected, you can run a real failover of your patient-records VM. With the DR drill complete, you'll do the failover with PowerShell and the portal. After completion, you'll be in a better position to recommend which approach your company should use.
 
 In this exercise, you'll complete failover for a VM using PowerShell, and fail back the VM using the Azure portal.
 
@@ -110,7 +110,7 @@ The job to reprotect the VM can take around approximately 10 minutes to complete
 
 1. Close the Cloud Shell to use the Azure portal more easily.
 
-1. In the upper left-hand side of the portal. select **All resources** .
+1. In the upper left-hand side of the portal. select **All resources**.
 
 1. Select **asr-vault**. and then select the **Recovery Services vault**.
 
@@ -124,7 +124,7 @@ The job to reprotect the VM can take around approximately 10 minutes to complete
 
 1. For the Recovery Point, select the latest processed (low RTO).
 
-1. To begin the failback. select **OK**.
+1. To begin the failback, select **OK**.
 
 ## Monitor the failback
 

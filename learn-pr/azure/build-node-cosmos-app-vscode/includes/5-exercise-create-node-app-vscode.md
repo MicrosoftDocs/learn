@@ -15,7 +15,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. Start Visual Studio Code if it isn't already running.
 
-2. On the **Terminal** menu, click **New Terminal**.
+2. On the **Terminal** menu, select **New Terminal**.
 
 3. In the **Terminal** window, run the following command to create a new folder named **grades** for the Node application.
   
@@ -23,7 +23,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
     mkdir grades
     ```
 
-4. Type the following commands to move to the **grades** folder, and initialize a new Node application:
+4. Enter the following commands to move to the **grades** folder, and initialize a new Node application.
 
     ```bash
     cd grades
@@ -32,13 +32,13 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     The **npm init** command creates a **package.json** file and displays its contents. This file contains the initial metadata for the application, containing a default name, description, and entry point.
 
-5. On the **File** menu in Visual Studio Code, select **Open Folder**, and open the **grades** folder.
+5. On the **File** menu in Visual Studio Code, select **Open Folder**, and then open the **grades** folder.
 
-6. In the **Explorer** window, click the **package.json** file.
+6. In the **Explorer** window, select the **package.json** file.
 
     :::image type="content" source="../media/5-edit-package.png" alt-text="Screenshot of Visual Studio Code. The user is editing the package.json file." loc-scope="vs-code":::
 
-7. In the editor pane, change the **description** property to **Student and course grades maintenance**, and change the **main** property to **studentgrades.js**. The file should look like this:
+7. In the editor pane, change the **description** property to **Student and course grades maintenance**, and change the **main** property to **studentgrades.js**. The file should look like this.
 
     ```text
     {
@@ -55,9 +55,9 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
     }
     ```
 
-8. On the **File** menu, click **Save**.
+8. On the **File** menu, select **Save**.
 
-9. In the **Terminal** window, run the following commands to install the **readline-sync**, and **\@types/node** packages:
+9. In the **Terminal** window, run the following commands to install the **readline-sync**, and **\@types/node** packages.
 
     ```bash
     npm install readline-sync
@@ -71,11 +71,11 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 ## Create the studentgrades app
 
-1. In Visual Studio Code, on the **File** menu, click **New File**.
+1. In Visual Studio Code, on the **File** menu, select **New File**.
 
-2. On the **File** menu, click **Save As**. Save the new file with the name **studentgrades.js**.
+2. On the **File** menu, select **Save As**. Save the new file with the name **studentgrades.js**.
 
-3. In the editor window, add the following lines to the top of the **studentgrades.js** file:
+3. In the editor window, add the following lines to the top of the **studentgrades.js** file.
 
     ```javascript
     //@ts-check
@@ -84,7 +84,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     The **\@ts-check** directive enables advanced type checking, using the **\@types/node** module that you added to the application in the previous task. The **require** statement imports the **question** function from the **readline-sync** module. You'll use the **question** function to prompt the user for input later in this application.
 
-4. After the **require** statement, add the following **class** definition to the file:
+4. After the **require** statement, add the following **class** definition to the file.
 
     ```javascript
     class Student {
@@ -116,7 +116,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
     > [!NOTE]
     > It's important to distinguish between the **id** field, which is used by Azure Databases extension to identify the document, and the **StudentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **StudentNumber** field may change over time.
 
-5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class:
+5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class.
 
     ```javascript
     function getStudentData () {
@@ -131,7 +131,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     This function prompts the user for the details of a student and creates a new **Student** object.
 
-6. Add the following function to the **studentgrades.js** file:
+6. Add the following function to the **studentgrades.js** file.
 
     ```javascript
     function test () {
@@ -152,7 +152,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     This function is a test harness that asks the user to input information for two students. The function adds grades for each student and displays the results.
 
-7. Add the following statement at the end of the file:
+7. Add the following statement at the end of the file.
 
     ```javascript
     test();
@@ -166,13 +166,13 @@ You'll now run the app and verify that the **Student** class creates student obj
 
 The application doesn't store student information in the Azure Databases extension. You'll see how to do that in the next exercise.
 
-1. In the **Terminal** window, start the **studentgrades** app using **node**:
+1. In the **Terminal** window, start the **studentgrades** app using **node**.
 
     ```bash
     node studentgrades.js
     ```
 
-2. At the prompts, enter the values shown in the following table:
+2. At the prompts, enter the values shown in the following table.
 
     | Prompt  | Value  |
     |---|---|
@@ -189,7 +189,7 @@ The application doesn't store student information in the Azure Databases extensi
     Applied Mathematics:C
     ```
 
-3. At the next set of prompts, enter the following values:
+3. At the next set of prompts, enter the following values.
 
     | Prompt  | Value  |
     |---|---|
@@ -198,7 +198,7 @@ The application doesn't store student information in the Azure Databases extensi
     | Enter the student's forename: | GGG |
     | Enter the student's lastname: | HHH |
 
-    The following messages should be displayed:
+    The following messages should appear.
 
     ```text
     002: GGG, HHH

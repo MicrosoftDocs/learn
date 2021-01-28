@@ -26,7 +26,7 @@ This module introduced the concept of using application performance monitoring (
 
 - More complex performance indicators include request saturation point and application performance index. The latter was defined by a coalition of APM vendors seeking to provide a standard performance metric that could be used across systems and across platforms.
 
-- Correlations provide deeper insights into performance and availability by comparing two or more sets of metrics. Two common correlation methodologies are Utilization-Saturation-Errors (USE) and Rate-Errors-Detection (RED).
+- Correlations provide deeper insights into performance and availability by comparing two or more sets of metrics. Two common correlation methodologies are Utilization-Saturation-Errors (USE) and Rate-Errors-Duration (RED).
 
 - Remediation planning defines how problems uncovered by monitoring are mitigated and resolved. Ticketing is a common element in many remediation plans.
 

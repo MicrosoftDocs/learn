@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.create-saas-offer-commercial-marketplace
+metadata:
+  title: Create a SaaS offer for the commercial marketplace
+  description: This module provides a high-level overview of SaaS offers in the commercial marketplace
+  ms.date: 01/25/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a SaaS offer for the commercial marketplace
+summary: This module provides a high-level overview of SaaS offers in the commercial marketplace
+abstract: |
+  In this module, you will:
+  - Develop a basic understanding of how SaaS applications are sold through the commercial marketplace
+  - Explore the benefits of SaaS offers in the commercial marketplace
+  - Learn the key technical components of a SaaS offer
+  - Learn how to publish a SaaS offer in Partner Center
+  - Learn how to access Marketplace Rewards benefits in Partner Center
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+prerequisites: |
+  - None
+roles:
+- business-user
+- business-owner
+- technology-manager
+- administrator
+products:
+- azure
+units:
+- learn.create-saas-offer-commercial-marketplace.1-introduction
+- learn.create-saas-offer-commercial-marketplace.2-what-is-saas-offer
+- learn.create-saas-offer-commercial-marketplace.3-get-ready-create-saas-offer
+- learn.create-saas-offer-commercial-marketplace.4-saas-offer-technical-configuration
+- learn.create-saas-offer-commercial-marketplace.5-publish-saas-offer-partner-center
+- learn.create-saas-offer-commercial-marketplace.6-knowledge-check
+- learn.create-saas-offer-commercial-marketplace.7-summary
+badge:
+  uid: learn.create-saas-offer-commercial-marketplace.badge

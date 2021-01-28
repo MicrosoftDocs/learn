@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.mitigate-incidents-microsoft-365-defender
+metadata:
+  title: Mitigate incidents using Microsoft 365 Defender
+  description: "Mitigate incidents using Microsoft 365 Defender"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Mitigate incidents using Microsoft 365 Defender
+summary: Learn how the Microsoft Security center portal provides a unified view of incidents from the Microsoft 365 Defender family of products.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Manage incidents in Microsoft 365 Defender
+  - Investigate incidents in Microsoft 365 Defender
+  - Conduct advanced hunting in Microsoft 365 Defender
+prerequisites: |
+  Intermediate understanding of Microsoft 365.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- m365
+units:
+- learn.wwl.mitigate-incidents-microsoft-365-defender.introduction
+- learn.wwl.mitigate-incidents-microsoft-365-defender.use-microsoft-security-center-portal
+- learn.wwl.mitigate-incidents-microsoft-365-defender.manage-incidents
+- learn.wwl.mitigate-incidents-microsoft-365-defender.investigate-incidents
+- learn.wwl.mitigate-incidents-microsoft-365-defender.use-action-center
+- learn.wwl.mitigate-incidents-microsoft-365-defender.knowledge-check
+- learn.wwl.mitigate-incidents-microsoft-365-defender.summary-resources
+badge:
+  uid: learn.wwl.mitigate-incidents-microsoft-365-defender.badge
