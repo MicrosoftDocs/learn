@@ -1,11 +1,11 @@
 In this unit, you will:
 
-- Create an Azure Redis Cache instance.
+- Create an Azure Cache for Redis instance.
 - Remove the Redis cache deployment from the cluster.
-- Reconfigure the affected projects to use the new Azure Redis Cache instance.
+- Reconfigure the affected projects to use the new Azure Cache for Redis instance.
 - Redeploy the affected projects.
 
-## Create an Azure Redis Cache instance
+## Create an Azure Cache for Redis instance
 
 1. Run the following script:
 
