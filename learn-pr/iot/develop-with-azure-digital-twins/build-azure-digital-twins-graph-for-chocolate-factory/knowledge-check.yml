@@ -2,8 +2,8 @@
 uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.knowledge-check
 metadata:
   description: Check your knowledge of the Azure Digital Twins Definition Language (DTDL) and query language
-  ms.date: 10/1/2020
-  author: PeterTurcan
+  ms.date: 01/28/2021
+  author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

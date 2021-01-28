@@ -2,12 +2,12 @@
 uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.summary
 metadata:
   description: Summary
-  ms.date: 10/1/2020
-  author: PeterTurcan
+  ms.date: 01/28/2021
+  author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
 durationInMinutes: 8
 content: |
-  [!include[](includes/11-summary.md)]
+  [!include[](includes/10-summary.md)]
