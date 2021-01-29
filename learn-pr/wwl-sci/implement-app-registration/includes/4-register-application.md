@@ -157,9 +157,9 @@ If you successfully added both example scopes described in the previous sections
 
 As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
 
-For example, if your web API's application ID URI is https://contoso.com/api and the scope name is Employees.Read.All, the full scope is:
+For example, if your web API's application ID URI is https<nolink>://contoso.com/api and the scope name is Employees.Read.All, the full scope is:
 
-https://contoso.com/api/Employees.Read.All
+https<nolink>://contoso.com/api/Employees.Read.All
 
 ### Using the exposed scopes
 
