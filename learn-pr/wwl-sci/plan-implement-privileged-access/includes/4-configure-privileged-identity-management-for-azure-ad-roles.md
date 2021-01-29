@@ -12,8 +12,8 @@ Follow these steps to open the settings for an Azure AD role.
 
 4. On the Quick start page, in the left navigation, select **Settings.**
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](../media/lp3-mod3-pim-ad-roles-settings.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](../media/privileged-identity-management-ad-roles-settings.png)
 
 5. Review the list of roles and then, in the **Search by role name**, enter **compliance**.
 
@@ -27,8 +27,8 @@ If setting multiple approvers, approval completes as soon as one of them approve
 
 1. In the Role setting details page, on the top menu, select **Edit**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the top portion of the Role setting details -Compliance Administrator page with Edit highlighted](../media/lp4-mod3-pim-edit-compliance-role.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the top portion of the Role setting details -Compliance Administrator page with Edit highlighted](../media/privileged-identity-management-edit-compliance-role.png)
 
 2. In the Edit role setting – Compliance Administrator blade, select the **Require approval to activate** check box.
 
@@ -36,8 +36,8 @@ If setting multiple approvers, approval completes as soon as one of them approve
 
 4. In the Select a member pane, select your administrator account and then select **Select**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the edit role settings blade and select a member pane with the selected members highlighted](../media/lp4-mod3-pim-add-approver.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screen image displaying the edit role settings blade and select a member pane with the selected members highlighted](../media/privileged-identity-management-add-approver.png)
 
 5. Once you have configured the role settings, select **Update** to save your changes.
 

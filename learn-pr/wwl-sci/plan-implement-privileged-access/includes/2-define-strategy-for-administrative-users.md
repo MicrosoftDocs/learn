@@ -52,8 +52,8 @@ Follow these steps to implement the principle of least privilege for your Azure 
 
 2. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
 
-> [!div class="mx-imgBorder"]
-> ![Discovery and insights (preview) page to reduce exposure via privileged roles](../media/new-preview-page.png)
+    > [!div class="mx-imgBorder"]
+    > ![Discovery and insights (preview) page to reduce exposure via privileged roles](../media/new-preview-page.png)
 
 3. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
 
@@ -157,7 +157,7 @@ Manually keeping track of who is assigned to a role and managing their assignmen
 A group owner can manage membership for a group. For Azure AD role-assignable groups, only the Privileged Role Administrator, the Global Administrator, and the group owners can manage group membership. By adding new members to the group, the member gets access to the roles to which the group is assigned whether the assignment is eligible or active. Use group owners to delegate the management of group membership for an assigned role to reduce the breadth of privilege required.
 
 > [!TIP]
-> ✔️ Microsoft recommends that you bring Azure AD role-assignable groups under management by PIM. After a role-assignable group is brought under management by PIM, it's called a privileged access group. Use PIM to require group owners to activate their Owner role assignment before they can manage group membership.
+> Microsoft recommends that you bring Azure AD role-assignable groups under management by PIM. After a role-assignable group is brought under management by PIM, it's called a privileged access group. Use PIM to require group owners to activate their Owner role assignment before they can manage group membership.
 
 ## Decide which role assignments should be permanent or eligible
 

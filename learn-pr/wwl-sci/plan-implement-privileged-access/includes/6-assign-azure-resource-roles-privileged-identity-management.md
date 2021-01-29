@@ -24,8 +24,8 @@ Follow these steps to make a user eligible for an Azure resource role.
 
 5. In the Azure resources – Discovery blade, select your subscription and then, on the top menu, select **Manage resource**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted](../media/lp4-mod3-pim-azure-resource-management.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted](../media/privileged-identity-management-azure-resource-management.png)
 
 6. In the **Onboarding selected resource for management** dialog box, review the information and then select **OK**.
 
@@ -33,8 +33,8 @@ Follow these steps to make a user eligible for an Azure resource role.
 
 8. In the Azure resources blade, select the resource you just added.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the recently added Azure resource](../media/lp4-mod3-pim-az-resource-overview.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the recently added Azure resource](../media/privileged-identity-management-azure-resource-overview.png)
 
 9. In the left navigation menu, under **Manage**, select **Roles** to see the list of roles for Azure resources.
 
@@ -50,9 +50,9 @@ Follow these steps to make a user eligible for an Azure resource role.
 
 15. On the **Settings** tab, under **Assignment type**, select **Eligible**.
 
-  - **Eligible** assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
+     - **Eligible** assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
 
-  - **Active** assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
+     - **Active** assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 
 16. Specify an assignment duration by changing the start and end dates and times.
 
