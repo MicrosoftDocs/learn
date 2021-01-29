@@ -78,6 +78,8 @@ A note on "cold tier": Archive tiers offer attractive costs to store the data wi
 
 **Authentication / Authorization method**
 
+You will want to add your authentication/authorization requirement to the checklist. At minimum, adding it ensures that you include the appropriate supporting systems to your architecture, such as an LDAP server or Active Directory environment. However, in the case of supporting capabilities such as UID/GID mapping to Active Directory users, you will need to confirm that the storage solution supports that capability.
 
     - Local (UID/GID on file server only)
     - Directory (LDAP, Active Directory)
+    - UID/GID Mapping to Active Directory users (Y/N)
