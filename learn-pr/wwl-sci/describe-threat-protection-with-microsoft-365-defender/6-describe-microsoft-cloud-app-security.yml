@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-cloud-app-security
+title: Describe Microsoft Cloud App Security
+metadata:
+  title: Describe Microsoft Cloud App Security
+  description: "Describe Microsoft Cloud App Security"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/6-describe-microsoft-cloud-app-security.md)]

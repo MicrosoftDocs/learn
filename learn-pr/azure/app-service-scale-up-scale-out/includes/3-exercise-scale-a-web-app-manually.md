@@ -16,7 +16,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Select **Web** > **Web App**.
+1. Select **Web**, search for and select **Web App**, and then select **Create**.
 
 1. On the **Web App** page, enter the values in the following table.
 
@@ -37,32 +37,32 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 ## Build and deploy the web app
 
-1. Open the Cloud Shell in the Azure portal (at the top-right, looks like a square with >_ inside). Run this command to download the source code for the hotel reservation system:
+1. Open the Cloud Shell in the Azure portal (at the top-right, looks like a square with >_ inside). Run the following command to download the source code for the hotel reservation system.
 
      ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
     ```
 
- 1. Go to the *mslearn-hotel-reservation-system/src* folder:
+1. Go to the *mslearn-hotel-reservation-system/src* folder.
 
      ```bash
     cd mslearn-hotel-reservation-system/src
     ```
 
- 1. Build the apps for the hotel system. There are two apps: a web app that implements the web API for the system and a client app that you'll use to load test the web app.
+1. Build the apps for the hotel system. There are two apps: a web app that implements the web API for the system and a client app that you'll use to load test the web app.
 
      ```bash
     dotnet build
     ```
 
- 1. Prepare the HotelReservationSystem web app for publishing:
+1. Prepare the HotelReservationSystem web app for publishing.
 
      ```bash
     cd HotelReservationSystem
     dotnet publish -o website
     ```
 
- 1. Go to the *website* folder, which contains the published files. Zip the files and deploy them to the web app that you created in the previous task. Replace `<your-webapp-name>` with the name of your web app.
+1. Go to the *website* folder, which contains the published files. Zip the files and deploy them to the web app that you created in the previous task. Replace `<your-webapp-name>` with the name of your web app.
 
      ```bash
     cd website
@@ -70,25 +70,25 @@ The exercise also runs a client app that simulates several users issuing POST an
     az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-scale
     ```
 
-1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. You should see a JSON document that contains the details for reservation number 1:
+1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. A JSON document appears that contains the details for reservation number 1.
 
     :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot of the running web app, showing the details for reservation number 1 in JSON format." loc-scope="other"::: <!-- no loc -->
 
 ## Monitor the performance of the web app before scaling out
 
-1. Return to the Cloud Shell and go to the *~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient* folder:
+1. Return to the Cloud Shell and go to the *~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient* folder.
 
     ```bash
    cd ~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient
     ```
 
-1. Edit the App.config file in this folder by using the code editor:
+1. Edit the App.config file in this folder by using the code editor.
 
     ```bash
     code App.config
     ```
 
-1. Uncomment the line that specifies the `ReservationsServiceURI` and replace the value with the URL of your web app. The file should look like this example:
+1. Uncomment the line that specifies the `ReservationsServiceURI` and replace the value with the URL of your web app. The file should look like this example.
 
     ```text
     <?xml version="1.0" encoding="utf-8" ?>
@@ -106,7 +106,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Save the file and close the code editor.
 
-1. Rebuild the test client app with the new configuration:
+1. Rebuild the test client app with the new configuration.
 
     ```bash
     dotnet build
@@ -119,7 +119,6 @@ The exercise also runs a client app that simulates several users issuing POST an
     ```
 
     :::image type="content" source="../media/3-web-client.png" alt-text="Screenshot of a running client app, showing the responses and error messages that occur." loc-scope="other"::: <!-- no-loc -->
-
 
 1. In the Azure portal, go to the pane for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
 
@@ -136,7 +135,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Leave the client app running while you perform the next task.
 
-## Scale-out the web app and verify the performance improvement
+## Scale out the web app and verify the performance improvement
 
 1. In the Azure portal, in the pane for your web app, under **Settings**, select **Scale-out (App Service Plan)**.
 
@@ -146,7 +145,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Switch to the Cloud Shell that's running the client app. You should see fewer requests failing with errors, though you'll still see some that time out.
 
-1. Run the app for another five minutes. Then go to the chart that shows the metrics for the app on the dashboard in the Azure portal. You should see that the CPU time has increased dramatically because there's now five times more CPU power available. The average response time should have dropped, and the number of HTTP 4xx errors should also have decreased. The following chart shows a typical set of results. The point at which scale-out occurred is noted.
+1. Run the app for another five minutes. Next, go to the chart that shows the metrics for the app on the dashboard in the Azure portal. You should see that the CPU time has increased dramatically because there's now five times more CPU power available. The average response time should have dropped, and the number of HTTP 4xx errors should also have decreased. The following chart shows a typical set of results. The point at which scale-out occurred is noted.
 
     ![Screenshot showing the performance metrics for the web app after scaling out to five instances.](../media/3-web-app-chart-after-scaling-out.png)
 
@@ -154,4 +153,4 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Return to the Cloud Shell that's running the client app. Select Enter to stop the app.
 
-1. In the Azure portal, set the instance count for the App Service plan back to 1. 
+1. In the Azure portal, set the instance count for the App Service plan back to 1.
