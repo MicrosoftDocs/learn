@@ -22,7 +22,7 @@ First you'll create the MongoDB database for holding the data captured from the 
     | Region | Select your nearest location |
 
 1. Select **Review + Create** and then select **Create**. Wait for the resource group to be created.
-1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
+1. In the menu of the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Virtual Network**, and press Enter.
 1. On the **Virtual Network** page, select **Create**.
 1. On the **Create virtual network** page, enter the following details, and then select **Next: IP Addresses**:
@@ -42,7 +42,7 @@ First you'll create the MongoDB database for holding the data captured from the 
 
 ### Create a MongoDB database server
 
-1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
+1. In the menu of the Azure portal, select **+ Create a resource**.
 1. In the **Search the Marketplace** box, type **Ubuntu**, and then press Enter.
 1. On the **Marketplace** page, select **Ubuntu Server 18.04 LTS**. 
 1. On the **Ubuntu Server 18.04 LTS** page, select **Create**.
@@ -81,7 +81,7 @@ First you'll create the MongoDB database for holding the data captured from the 
 1. Select **Review + create \>**.
 1. On the validation page, select **Create**.
 1. Wait for the virtual machine to be deployed before continuing
-1. In hamburger menu of the Azure portal, select **All resources**.
+1. In menu of the Azure portal, select **All resources**.
 1. On the **All resources** page, select **mongodbserver-nsg**.
 1. On the **mongodbserver-nsg** page, under **Settings**, select **Inbound security rules**.
 1. On the **mongodbserver-nsg - Inbound security rules** page, select **+ Add**.
@@ -106,7 +106,7 @@ First you'll create the MongoDB database for holding the data captured from the 
 
 ### Task 3: Install MongoDB
 
-1. In the hamburger menu the Azure portal, select **All resources**.
+1. In the menu the Azure portal, select **All resources**.
 1. On the **All resources** page, select **mongodbserver-ip**.
 1. On the **mongodbserver-ip** page, make a note of the **IP address**.
 1. In the toolbar at the top of the Azure portal, select **Cloud Shell**.
@@ -356,7 +356,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 ### Create a Cosmos account and database
 
 1. Return to the Azure portal.
-1. In the hamburger menu, select **+ Create a resource**.
+1. In the menu, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type ***Azure Cosmos DB**, end then press Enter.
 1. On the **Azure Cosmos DB** page, select **Create**.
 1. On the **Create Azure Cosmos DB Account** page, enter the following settings, and then select **Review + create**:
@@ -377,7 +377,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
     | Availability Zones | **Disable** |
 
 1. On the validation page, select **Create**, and wait for the Cosmos DB account to be deployed.
-1. In the hamburger menu of the Azure portal, select **All resources**, and then select your new Cosmos DB account (**mongodb*nnn***).
+1. In the menu of the Azure portal, select **All resources**, and then select your new Cosmos DB account (**mongodb*nnn***).
 1. On the **mongodb*nnn*** page, select **Data Explorer**.
 1. In the **Data Explorer** pane, select **New Collection**.
 1. In the **Add Collection** pane, specify the following settings, and then select **OK**:
@@ -401,7 +401,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 1. On your subscription page, under **Settings**, click **Resource providers**.
 1. In the **Filter by name** box, type **DataMigration**, and then click **Microsoft.DataMigration**.
 1. If the **Microsoft.DataMigration** isn't registered, click **Register**, and wait for the **Status** to change to **Registered**. It might be necessary to click **Refresh** to see the status change.
-1. In the hamburger menu of the Azure portal, select **+ Create a resource**.
+1. In the menu of the Azure portal, select **+ Create a resource**.
 1. On the **New** page, in the **Search the Marketplace** box, type **Azure Database Migration Service**, and then press Enter.
 1. On the **Azure Database Migration Service** page, select **Create**.
 1. On the **Create Migration Service** page, enter the following settings, and then select **Next: Networking**:
@@ -420,7 +420,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 
 ### Create and run a new migration project
 
-1. In the hamburger menu of the Azure portal, select **Resource groups**.
+1. In the menu of the Azure portal, select **Resource groups**.
 1. In the **Resource groups** window, select mongodbrg.
 1. In the mongodbrg window, select **MongoDBMigration**.
 1. On the **MongoDBMigration** page, select **+ New Migration Project**.
@@ -476,7 +476,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 
 ### Verify that the migration was successful
 
-1. In the hamburger menu of the Azure portal, select **All Resources**.
+1. In the menu of the Azure portal, select **All Resources**.
 1. On the **All resources** page, select **mongodb*nnn***.
 1. On the **mongodb*nnn** page, select **Data Explorer**.
 1. In the **Data Explorer** pane, expand the **DeviceData** database, expand the **Temperatures** collection, and then select **Documents**.
