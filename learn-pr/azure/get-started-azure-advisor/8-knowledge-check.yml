@@ -9,40 +9,42 @@ metadata:
   ms.author: darasera
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-durationInMinutes: 3
+durationInMinutes: 6
 quiz:
   questions:
-  - content: "Question 1?"
+  - content: "Azure Advisor provides recommendations for _________."
     choices:
-    - content: "Answer A"
+    - content: "Costs and security only"
+      isCorrect: false
+      explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
+    - content: "High availability, security, performance, operational excellence, and cost"
       isCorrect: true
-      explanation: "Correct, here's why."
-    - content: "Answer B"
+      explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
+    - content: "High availability, performance, and cost"
       isCorrect: false
-      explanation: "Incorrect, here's why."
-    - content: "Answer C"
-      isCorrect: false
-      explanation: "Incorrect, here's why."
-  - content: "Question 2?"
+      explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
+  - content: "After you select an Advisor recommendation, you can choose to _________."
     choices:
-    - content: "Answer A"
+    - content: "Postpone the recommendation and deal with it later"
       isCorrect: false
-      explanation: "Incorrect, here's why."
-    - content: "Answer B"
+      explanation: "While this is one option you can choose, you could also follow the link to resolve the issue now or just dismiss it all together."
+    - content: "Follow the link to take steps to resolve the issue"
+      isCorrect: false
+      explanation: "This is one of several options to choose from. You could also decide to postpone or dismiss the recommendation."
+    - content: "Dismiss the recommendation all together so it doesn't show up again"
+      isCorrect: false
+      explanation: "Although this is one option, you could also follow the link to resolve the issue now or postpone it and handle it later."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "Correct, here's why."
-    - content: "Answer C"
-      isCorrect: false
-      explanation: "Incorrect, here's why."
-  - content: "Question 3?"
+      explanation: "You have several options for handling recommendations. You can follow the provided link for steps on how to fix the issue. Or you can choose to either postpone or dismiss the recommendation."
+  - content: "What is the highest possible Advisor score you can receive in any of the five categories that Advisor checks?"
     choices:
-    - content: "Answer A"
+    - content: "10, since the Advisor score is based on a scale of 1 to 10."
       isCorrect: false
-      explanation: "Incorrect, here's why."
-    - content: "Answer B"
+      explanation: "Each of the five categories has a highest potential score of 100. A score of 100% in any category means all your resources follow the best practices that Advisor recommends."
+    - content: "20, since all five categories added together create a maximum best score of 100%."
       isCorrect: false
-      explanation: "Incorrect, here's why."
-    - content: "Answer C"
+      explanation: "Each of the five categories has a highest potential score of 100. A score of 100% in any category means all your resources follow the best practices that Advisor recommends."
+    - content: "100, since you can score 100% in each of the five categories."
       isCorrect: true
-      explanation: "Correct, here's why."
-
+      explanation: "Each of the five categories has a highest potential score of 100. A score of 100% in any category means all your resources follow the best practices that Advisor recommends."
