@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-integrate-data-loss-prevention-with-microsoft-cloud-app-security.md)]
+  [!include[](includes/3-integrate-data-loss-prevention-microsoft-cloud-app-security.md)]
