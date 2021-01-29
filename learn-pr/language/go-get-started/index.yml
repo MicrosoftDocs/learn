@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with programming basics in general
   - Familiarity with at least one programming language
   - Familiarity with downloading and installing software from the internet
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/go-get-started.svg
 levels:
 - beginner
 roles:
@@ -37,4 +37,4 @@ units:
 - learn.language.go-get-started.6-knowledge-check
 - learn.language.go-get-started.7-summary
 badge:
-  uid: ""
+  uid: learn.language.go-get-started.badge
