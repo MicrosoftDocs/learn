@@ -205,7 +205,7 @@ To read data from the database, you need to define an input binding. As you'll s
     | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
     | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
     | **Collection Name** | _Bookmarks_ | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    | **Partition key (optional)** | _{id}_ | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
+    | **Partition key (optional)** |/id | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
     | **SQL Query (optional)** | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
 1. To save all changes to this binding configuration, select **OK**.
@@ -220,7 +220,33 @@ Now that you have your binding defined, it's time to use it in your function.
 
 1. Replace all code in the index.js with the code from the following snippet, and then select **Save**.
 
-   [!code-javascript[](../code/find-bookmark-single.js)]
+     ```java
+ 	module.exports = function (context, req) {
+    
+    	var bookmark = context.bindings.bookmark
+    
+    	if(bookmark){
+            context.res = {
+            body: { "url": bookmark.url },
+            headers: {
+            'Content-Type': 'application/json'
+            	}
+        	};
+    	}
+    	else {
+        
+        context.res = {
+            status: 404,
+            body : "No bookmarks found",
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        };
+    	}
+
+    	context.done();
+	};
+    ```
 
 ::: zone-end
 
