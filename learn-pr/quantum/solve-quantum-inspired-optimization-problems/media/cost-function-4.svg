@@ -10,7 +10,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1100.5878"
    height="173.17543"
-   viewBox="35 0 291.19716 45.819331"
+   viewBox="0 0 291.19716 45.819331"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
@@ -1942,6 +1942,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(187.34716,-75.661822)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect658"
+       width="291.19717"
+       height="45.819332"
+       x="-187.34715"
+       y="75.661819" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g317"

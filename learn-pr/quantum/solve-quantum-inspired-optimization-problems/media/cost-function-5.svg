@@ -10,7 +10,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1100.5878"
    height="155.03333"
-   viewBox="25 0 291.19717 41.019235"
+   viewBox="0 0 291.19717 41.019235"
    version="1.1"
    id="svg8"
    sodipodi:docname="costfun-5.svg"
@@ -3768,6 +3768,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(14.161003,3.5103906)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect658"
+       width="291.19717"
+       height="41.019234"
+       x="-14.161003"
+       y="-3.5103905" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g487"
