@@ -234,6 +234,10 @@ The scenario for this lab concerns an ecommerce system. The customer and order d
    - Username
    - Primary Password
 
+> [!NOTE]
+> If you don't see these options for the connection, check that you have created your Cosmos DB account to use the **Cassandra API**. 
+
+
 ## Migrate data from Cassandra to Cosmos DB using Spark
 
 In the next steps you'll migrate the same data you just created. You'll use Spark from an Azure Databricks notebook.
