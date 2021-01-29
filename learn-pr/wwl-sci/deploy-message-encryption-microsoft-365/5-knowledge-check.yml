@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/28/2021
+  ms.date: 01/29/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "One"
       isCorrect: true
-      explanation: "That is correct. Advanced Message Encryption is required to support more than one template."
+      explanation: "One is correct. Advanced Message Encryption is required to support more than one template."
     - content: "Unlimited"
       isCorrect: false
-      explanation: "That is not correct."
+      explanation: "Unlimited is not correct.  There is a limit."
     - content: "Five."
       isCorrect: false
-      explanation: "That is not correct."
+      explanation: "Five is not correct. The limit is not this high."
   - content: "What must be activated on your tenant before you can use Office Message Encryption?"
     choices:
     - content: "BitLocker"
       isCorrect: false
-      explanation: "That is not correct."
+      explanation: "BitLocker is not correct. BitLocker is not a requirement of Office Message Encryption."
     - content: "Information Rights Management"
       isCorrect: true
-      explanation: "That is correct."
+      explanation: "Information Rights Management is correct. You must have activate Information Rights Management to use Office Message Encryption"
     - content: "Microsoft 365 Compliance center"
       isCorrect: false
-      explanation: "That is not correct."
+      explanation: "Microsoft 365 Compliance center is not correct. The Compliance center is not a requirement of Office Message Encryption."
   - content: "Which solution is the technology behind Office Message Encryption?"
     choices:
     - content: "Azure RMS."
       isCorrect: true
-      explanation: "That is correct. Azure RMS and IRM functionality is the technology supporting OME functionality."
+      explanation: "Azure RMS is correct. Azure RMS and IRM functionality is the technology supporting OME functionality."
     - content: "Service Encryption."
       isCorrect: false
-      explanation: "That is not correct. Service Encryption is the application or tenant layer in between an organizations data saved in Microsoft 365 and servers in Microsoft 365 datacenters."
+      explanation: "Service Encryption is not correct. Service Encryption is the application or tenant layer in between an organizations data saved in Microsoft 365 and servers in Microsoft 365 datacenters."
     - content: "BitLocker."
       isCorrect: false
-      explanation: "That is not correct. BitLocker is required to encrypt data at rest in Microsoft datacenters and hard disks in Windows 10 devices."
+      explanation: "BitLocker is not correct. BitLocker is required to encrypt data at rest in Microsoft datacenters and hard disks in Windows 10 devices."
