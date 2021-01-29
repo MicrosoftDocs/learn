@@ -3,9 +3,9 @@ uid: learn.the-mojifier.3-setup
 metadata:
   title: Setup
   description: First things first we need to make sure you are setup with a few accounts and have the sample code working locally.
-  author: lnyswonger
   ms.date: 10/18/2018
-  ms.author: luken
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Setup
