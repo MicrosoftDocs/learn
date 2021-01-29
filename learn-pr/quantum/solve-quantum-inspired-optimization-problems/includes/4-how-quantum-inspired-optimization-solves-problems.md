@@ -8,7 +8,7 @@ For optimization problems in search spaces that are too large to solve by exhaus
 
 Simulated annealing is similar to gradient descent. The algorithm simulates a walker that, ideally, always moves downhill. But, unlike gradient descent, the walker can also take uphill moves with some non-zero probability. This creates the possibility for the walker to escape from local minima and then descend into deeper neighboring minima.
 
-![A plot which shows a walker taking an uphill move in order to find a lower point.](../media/plot-simulated-annealing-2.png)
+![A plot that shows a walker taking an uphill move in order to find a lower point.](../media/plot-simulated-annealing-2.png)
 
 In this graph, notice that this uphill move is described as a *thermal jump*. That's because simulated annealing is an algorithm from physics that mimics the behavior of materials as they are slowly cooled. The walker is like an atom in a metal that's driven by temperature to reconfigure itself. These changes are random but moves to lower-energy configurations are more likely than moves to higher-energy configurations. That is why we say the walker follows a biased random walk.
 
