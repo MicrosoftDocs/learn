@@ -31,22 +31,23 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
 
-> [!IMPORTANT]
-> To use and configure Azure AD terms of use, you must have:
->  - Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
->    - If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
->  - One of the following administrator accounts for the directory you want to configure:
->    - Global Administrator
->    - Security Administrator
->    - Conditional Access Administrator
+    > [!IMPORTANT]
+    > To use and configure Azure AD terms of use, you must have:
+    >  - Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
+    >    - If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
+    >  - One of the following administrator accounts for the directory you want to configure:
+    >    - Global Administrator
+    >    - Security Administrator
+    >    - Conditional Access Administrator
+
 2. Open **Azure Active Directory** and the select **Identity Governance**.
 
 3. In the left menu, under **Entitlement management**, select **Catalogs**.
 
 4. On the top menu, select **+New Catalog**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the Identity governance catalog page with the New catalog menu highlighted ](../media/lp4-mod1-identity-governance-new-catalog.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the Identity governance catalog page with the New catalog menu highlighted ](../media/identity-governance-catalog.png)
 
 5. In the New catalog pane, in the **Name** box, enter **Marketing**.
 
@@ -56,10 +57,10 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 8. Under **Enabled, select No**.
 
- You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
+    You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](../media/lp4-mod1-new-catalog-marketing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](../media/new-catalog-marketing.png)
 
 9. Select Create.
 
@@ -79,14 +80,14 @@ To include resources in an access package, the resources must exist in a catalog
 
 6. You may not have any resources in Groups and Teams, Applications, or SharePoint sites. Select any resource category and then select a resource from that category.
 
- For this exercise, it is okay to choose any resource you may have available.
+    For this exercise, it is okay to choose any resource you may have available.
 
-> [!div class="mx-imgBorder"]
-> ![Add resources to a catalog](../media/catalog-add-resources.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add resources to a catalog](../media/catalog-add-resources.png)
 
 7. When finished, click **Add**.
 
- These resources can now be included in access packages within the catalog.
+    These resources can now be included in access packages within the catalog.
 
 ## Add additional catalog owners
 
@@ -94,10 +95,10 @@ The user that created a catalog becomes the first catalog owner. To delegate man
 
 1. In the Marketing catalog blade, in the left navigation menu, select Roles and administrators.
 
- If necessary, in the Azure portal, browse to **Azure Active Directory** > **Identity Governance > Catalogs** and then select **Marketing**.
+    If necessary, in the Azure portal, browse to **Azure Active Directory** > **Identity Governance > Catalogs** and then select **Marketing**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the Roles and administrators page for the Marketing catalog](../media/lp4-mod1-catalog-roles-and-admins.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the Roles and administrators page for the Marketing catalog](../media/catalog-roles-admins.png)
 
 2. On the top menu, review the available roles and then select **+ Add owner**.
 
@@ -115,8 +116,8 @@ You can edit the name and description for a catalog. Users see this information 
 
 3. Review the setting and, under **Properties** > **Enabled**, select **Yes**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the properties being enabled.](../media/lp4-mod1-edit-marketing-catalog.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the properties being enabled.](../media/edit-marketing-catalog.png)
 
 4. Select **Save**.
 

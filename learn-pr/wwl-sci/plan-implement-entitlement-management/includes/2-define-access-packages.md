@@ -10,7 +10,7 @@ These problems are compounded for users who need access from another organizatio
 
 This video provides an overview of entitlement management and its value:
 
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about Azure Active Directory entitlement management|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more about Azure Active Directory entitlement management|
 | :--- | :--- |
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIb]
@@ -67,7 +67,7 @@ With an **access package**, an administrator or delegated access package manager
 Access packages also include one or more *policies*. A policy defines the rules or guardrails for assignment to access package. Each policy can be used to ensure that only the appropriate users are able to request access, that there are approvers for their request, and that their access to those resources is time-limited and will expire if not renewed.
 
 > [!div class="mx-imgBorder"]
-> ![Access package and policies](../media/elm-overview-access-package.png)
+> ![Access package and policies](../media/entitlement-management-overview-access-package.png)
 
 Within each policy, an administrator or access package manager defines the already existing users who are eligible to request access, the process to approve or deny access, and the duration of a user's access.
 
@@ -86,7 +86,7 @@ Access packages do not replace other mechanisms for access assignment. They are 
 The following diagram shows an example of the elements in entitlement management:
 
 > [!div class="mx-imgBorder"]
-> ![Entitlement management overview](../media/elm-overview.png)
+> ![Entitlement management overview](../media/entitlement-management-overview.png)
 
 In **Access package 1,** there is only one single group as a resource. Access is defined with a policy that enables a set of users in the directory to request access. **Access package 2** includes a group, an application, and a SharePoint Online site as resources. Access is defined with two different policies. The first policy enables a set of users in the directory to request access. The second policy enables users in an external directory to request access.
 
