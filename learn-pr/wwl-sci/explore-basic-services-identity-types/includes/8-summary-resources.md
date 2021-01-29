@@ -10,11 +10,9 @@ Finally, you learned about the hybrid model, where all user identities are manag
 
 For more information on the topics covered in this module, see:
 
-- [Azure Active Directory Overview](https://docs.microsoft.com/azure/active-directory/devices/overview)
 - [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Azure Active Directory Pricing](https://azure.microsoft.com/pricing/details/active-directory/)
 - [Azure AD Licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
-- [Which features work in Azure AD?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#which-features-work-in-azure-ad)
 - [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 - [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)
 - [Azure AD External Identity pricing](https://azure.microsoft.com/pricing/details/active-directory/external-identities/)

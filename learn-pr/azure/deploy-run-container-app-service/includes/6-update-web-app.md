@@ -25,11 +25,5 @@ Container Registry tasks must be created from the command line. Unlike the `az a
 The following command shows how to create a task called *buildwebapp*. The task monitors the GitHub repository for the sample web app used by this module. Each time a change is committed, the task builds the `webimage` Docker image from the source code in GitHub and stores it to your registry in Container Registry. Before running this command, you need to create a GitHub personal access token with permissions to create a webhook in your repository. For private repositories, the token will also need full repository read permissions.
 
 ```bash
-az acr task create \
---registry <container_registry_name> \
---name buildwebapp --image webimage \
---context https://github.com/MicrosoftDocs/mslearn-deploy-run-container-app-service.git \
---branch master \
---file Dockerfile \
---git-access-token <access_token>
+az acr task create --registry <container_registry_name> --name buildwebapp --image webimage --context https://github.com/MicrosoftDocs/mslearn-deploy-run-container-app-service.git --branch master --file Dockerfile --git-access-token <access_token>
 ```
