@@ -1,10 +1,10 @@
-Some of the most common types of security threats that organizations face today are identity attacks.  Identity attacks are designed to steal the credentials used to validate or authenticate that someone or something is who they claim to be. The result is identity theft.
+Some of the most common types of security threats that organizations face today are identity attacks.  These attacks are designed to steal the credentials used to validate or authenticate that someone or something is who they claim to be. The result is identity theft.
 
-## Password based attacks
+## Password-based attacks
 
-Password based attacks include password spray attacks and brute force attacks. A password spray attack attempts to match a username against a list of weak passwords.
+Password-based attacks include password spray attacks and brute force attacks. A password spray attack attempts to match a username against a list of weak passwords.
 
-Brute force attacks try many passwords against one or more accounts, sometimes using dictionaries of commonly used passwords.  When a user has assigned a weak password to their account, the hacker will find a match, and gain access to that account.
+Brute force attacks try many passwords against one or more accounts, sometimes using dictionaries of commonly used passwords.  When a user has assigned a weak password to their account, the hacker will find a match, and access that account.
 
 :::image type="content" source="../media/2-password-spray-attack.png" alt-text="Password spray attack":::
 
@@ -16,7 +16,7 @@ Although many phishing scam emails are badly written and easy to identify, when 
 
 ### Spear phishing
 
-A spear phishing scam is a variant on phishing. Hackers build databases of information about users, which can be used to create highly credible emails. The email may appear to come from someone in your organization who is requesting information. Although careful scrutiny might uncover the fraud, users might not read it carefully enough and send the requested information or log in to the web site before they realize the fraud. It is called spear phishing because it is highly targeted.
+A spear phishing scam is a variant on phishing. Hackers build databases of information about users, which can be used to create highly credible emails. The email may appear to come from someone in your organization who is requesting information. Although careful scrutiny might uncover the fraud, users may not read it carefully enough and send the requested information or login to the website before they realize the fraud. This practice is called spear phishing because it's highly targeted.
 
 To protect against all types of identity attacks, robust identity security and monitoring is needed.
 Risk detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts.

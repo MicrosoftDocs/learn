@@ -83,7 +83,7 @@ Shared access signature tokens should be allowed only over https protocol.
 
 Both SAS features follow.
 
-    ![Screenshot the storage setting pane](../media/4-storage-SAS.png)
+![Screenshot the storage setting pane](../media/4-storage-SAS.png)
 
 ### Enable Azure Files encryption - Level 1
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-generic-types-traits.6-exercise-implement-generic-type
+metadata:
+  title: Exercise - Implement a generic type
+  description: Implement a generic type.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Implement a generic type
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-implement-generic-type.md)]

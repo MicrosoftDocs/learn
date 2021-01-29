@@ -2,11 +2,11 @@ Cloud security posture management is essential for every organization. Microsoft
 
 Security Center is offered in two modes:
 
-#### Azure Defender OFF
+#### Azure Defender off
 
-Security Center without Azure Defender is enabled for free on all your Azure subscriptions when you visit the Azure Security Center dashboard in the Azure portal for the first time or if enabled programmatically via API.
+Security Center without Azure Defender is enabled free of charge on all your Azure subscriptions when you visit the Azure Security Center dashboard in the Azure portal for the first time, or if enabled programmatically via API.
 
-#### Azure Defender ON
+#### Azure Defender on
 
 Enabling Azure Defender extends the free mode capabilities to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads.
 

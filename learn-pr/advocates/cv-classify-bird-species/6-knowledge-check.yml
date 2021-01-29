@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/30/2020
+  ms.date: 01/19/2021
   author: cassieview
   ms.author: cassieb
   ms.topic: interactive-tutorial
@@ -17,11 +17,11 @@ quiz:
       choices:
         - content: "To build Skynet."
           isCorrect: false
-          explanation: "Incorrect! Skynet is from a movie and isn't real."
+          explanation: "Incorrect. Skynet is a fictional artificial intelligence system that's featured in a movie."
         - content: "To mimic human intelligence by using a computer."
           isCorrect: true
           explanation: "Correct!"
-    - content: "Which of the following options <i>isn't</i> an indicator that Azure Cognitive Services Custom Vision provides to help you understand how well the model performs?"
+    - content: "Which of the following options *isn't* an indicator that Custom Vision provides to help you understand how well a machine learning model performs?"
       choices:
         - content: "A confusion matrix"
           isCorrect: true
@@ -35,7 +35,7 @@ quiz:
         - content: "Precision"
           isCorrect: false
           explanation: "Incorrect. The precision metric is provided."
-    - content: "What's a common rookie mistake?"
+    - content: "What's a common beginner's mistake when using machine learning models?"
       choices:
         - content: "Using bad data."
           isCorrect: true
@@ -45,12 +45,12 @@ quiz:
           explanation: "Incorrect. More data is better, if the data is good data."
         - content: "Using unseen (new) data to test."
           isCorrect: false
-          explanation: "Incorrect. You always want to test by using unseen (new) data."
+          explanation: "Incorrect. You always want to test by using data the model hasn't seen before."
     - content: "The model shouldn't be deployed until it has perfect results and is 100% accurate on all classes."
       choices:
         - content: "False"
           isCorrect: true
-          explanation: "Correct! You must decide when the model is performing <i>good enough</i> for the problem you're trying to solve."
+          explanation: "Correct! You must decide when the model performs at a satisfactory level for the problem you're trying to solve."
         - content: "True"
           isCorrect: false
           explanation: "Incorrect. There's always some error in models. Machine learning models will never be perfect."
