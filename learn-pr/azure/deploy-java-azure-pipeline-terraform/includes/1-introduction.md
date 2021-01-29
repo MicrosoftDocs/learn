@@ -1,20 +1,22 @@
 Imagine you're an infrastructure manager and have been asked to provision your Azure resources using Terraform. Once you've created your project, you plan to build/deploy your application with GitHub Actions.
 
-## Provision, Build, and Deploy pipelines
+## Provision, Build, and Deploy tracks
 
-As an Infrastructure Manager, you aim to achieve automation of both infrastructure **provisioning** and application **build/deploy** using **three** pipelines - **Account**, **Infrastructure** and **Application**:
+Automation typically uses three tracks - Provision, Build, and Deploy.
+Each track can have one or more "pipelines".
+In the below image, there are multiple pipelines in the "provision" track with each pipeline focusing on the infrastructure a team.
 
-1. **Account** – Azure subscriptions, resource groups, vnets, subnets, express route circuits…
+![track types.](../media/1-tracks.png)
 
-1. **Infrastructure** - Databases and Azure App Service instances.
+In this modules scenario, you'll use all three tracks - **PROVISIONING**, **BUILD**, and **DEPLOY** by implementing multiple pipelines:
 
-1. **Application** – Java applications, and their dependencies.
+1. Azure subscriptions, resource groups, vnets, subnets, express route circuits…
 
-There are several tools available to help you achieve these goals. However, since you're already using GitHub for your code repository, you decide to investigate GitHub Actions to see if it provides the automation you need.
+1. Databases and Azure App Service instances.
 
-- For the **Account** pipeline, you'll use a personal Azure account.
-- For the **Infrastructure** pipeline, you'll use Terraform and GitHub Actions to provision the Azure infrastructure.
-- For the **Application** pipeline, you'll use Maven and GitHub Actions to build and deploy your application.
+1. Java applications, and their dependencies.
+
+There are several tools available to help you achieve these goals. As you're already using GitHub for your code repository, you'll use GitHub Actions with Terraform to provide the automation you need.
 
 ## Learning Goals
 
