@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-storage-replica.list-functionalities-components-of
+title: List the functionalities and components of Storage Replica
+metadata:
+  title: List the functionalities and components of Storage Replica
+  description: "List the functionalities and components of Storage Replica"
+  ms.date: 01/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-list-functionalities-components-storage-replica.md)]

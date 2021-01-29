@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-storage-replica.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When implementing Storage Replica, what is the round-trip latency threshold above which asynchronous, rather than synchronous, replication should be used?"
+    choices:
+    - content: "1 ms"
+      isCorrect: false
+      explanation: "That's incorrect. Asynchronous replication enables replication across longer distances in cases where network round trip latency exceeds 5 ms."
+    - content: "5 ms"
+      isCorrect: true
+      explanation: "That's correct. Asynchronous replication enables replication across longer distances in cases where network round trip latency exceeds 5 ms."
+    - content: "50 ms"
+      isCorrect: false
+      explanation: "That's incorrect. Asynchronous replication enables replication across longer distances in cases where network round trip latency exceeds 5 ms."
+  - content: "Which of the following ports needs to be open between servers replicating by using Storage Replica to allow SMB Direct traffic?"
+    choices:
+    - content: "443"
+      isCorrect: false
+      explanation: "That's incorrect. This port isn't required for Storage Replica."
+    - content: "5445"
+      isCorrect: true
+      explanation: "That's correct. To allow SMB Direct traffic, bi-directional connectivity for SMB port 445 is provided, plus port 5445 for SMB Direct, between the servers hosting the replicated volumes."
+    - content: "5985"
+      isCorrect: false
+      explanation: "That's incorrect. This port, while required, is used by WS-MAN, not SMB Direct."
+  - content: "Which Windows PowerShell cmdlet is used to determine whether the source and destination volumes meet the requirements of Storage Replica before its implementation?"
+    choices:
+    - content: "`Get-SRPartnership`"
+      isCorrect: false
+      explanation: "That's incorrect. The `Get-SRPartnership` cmdlet is used to retrieve configuration of an existing Storage Replica partnership."
+    - content: "`Test-SRTopology`"
+      isCorrect: true
+      explanation: "That's correct. The `Test-SRTopology` cmdlet is used to determine whether the source and destination volumes meet Storage Replica requirements."
+    - content: "`Get-SRGroup`"
+      isCorrect: false
+      explanation: "That's incorrect. The `Get-SRGroup` cmdlet is used to retrieve configuration of an existing Storage Replica group."

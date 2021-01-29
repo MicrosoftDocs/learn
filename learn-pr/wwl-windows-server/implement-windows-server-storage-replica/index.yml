@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.implement-windows-server-storage-replica
+metadata:
+  title: Implement Windows Server Storage Replica
+  description: "Implement Windows Server Storage Replica"
+  ms.date: 01/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement Windows Server Storage Replica
+summary: Learn about the core functionality, benefits, use cases, and implementation of Storage Replica in Windows Server 2019.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the functionality and components of Storage Replica.
+  - Describe the prerequisites for implementing Storage Replica.
+  - Implement Storage Replica.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+  - Fundamental knowledge of Windows Server File Server role.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.implement-windows-server-storage-replica.introduction
+- learn.wwl.implement-windows-server-storage-replica.list-functionalities-components-of
+- learn.wwl.implement-windows-server-storage-replica.examine-prerequisites-for-implementing
+- learn.wwl.implement-windows-server-storage-replica.implement-by-using-windows-admin-center
+- learn.wwl.implement-windows-server-storage-replica.implement-by-using-windows-powershell
+- learn.wwl.implement-windows-server-storage-replica.knowledge-check
+- learn.wwl.implement-windows-server-storage-replica.summary
+badge:
+  uid: learn.wwl.implement-windows-server-storage-replica.badge
