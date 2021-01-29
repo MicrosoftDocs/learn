@@ -1,6 +1,4 @@
 Azure Quantum is a cloud service that offers two different types of service: *optimization* solutions, which allow you to solve optimization problems by running optimization algorithms on classical hardware and *quantum computing* solutions, which allow you to run Q# quantum programs on real or simulated quantum devices. 
-access to quantum computing targets where you can run Q# quantum programs in
-real or simulated quantum devices.
 
 :::image type="content" source="../media/1-azure-quantum-services.png" alt-text="Diagram of the different parts of Azure Quantum." border="false":::
 

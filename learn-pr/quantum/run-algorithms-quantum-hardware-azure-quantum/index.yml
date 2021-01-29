@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Module [How to create an Azure Quantum workspace](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals)
   - Module [Create your first Q# program by using the Quantum development kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/)
-iconUrl: /learn/achievements/quantum/run-quantum-algorithms-hardware.svg
+iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
 - beginner
