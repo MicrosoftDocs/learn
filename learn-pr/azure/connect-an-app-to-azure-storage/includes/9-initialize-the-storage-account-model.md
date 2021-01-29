@@ -11,7 +11,6 @@ A storage account in Azure is organized into one or more _containers_ that store
 ```csharp
 using Azure.Storage.Blobs;
 ```
-
 To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` client object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we will simply use the name _photos_.
 
 2. First, add the following code to your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
@@ -77,11 +76,11 @@ async function main() {
 
 4. Now let's execute an operation against our storage account. A storage account is organized into one or more containers which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
 
-The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we will simply use the name  _photos_.
+  The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we will simply use the name  _photos_.
 
-To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though our container does not yet exist in our storage account, the `ContainerClient` can be used to create the container as well as manage it once it is created.
+  To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though our container does not yet exist in our storage account, the `ContainerClient` can be used to create the container as well as manage it once it is created.
 
-To obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object.
+  To obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object.
 
 ```javascript
 async function main() {
