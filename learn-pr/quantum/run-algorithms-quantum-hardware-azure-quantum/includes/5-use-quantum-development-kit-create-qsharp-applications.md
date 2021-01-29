@@ -1,15 +1,13 @@
 Now let's see how you can use Azure Quantum to test quantum algorithms, first on
 a simulator, and then on real hardware.
 
-If you took a [previous module](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm) of this learning path, you created a version of
-Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same
-algorithm in a trapped ion quantum computer.
+If you took a [previous module](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/6-implement-grovers-algorithm) of this learning path, you created a version of Grover's algorithm in Q# and ran it on a local simulator. Now let's run the same algorithm in a trapped ion quantum computer.
 
 ## Create the Q# project for IonQ
 
 Use Visual Studio Code to create a Q# Project.
 
-1. In VS Code open the **View** menu, and select **Command Palette**.
+1. In Visual Studio Code open the **View** menu, and select **Command Palette**.
 
 1. Type `Q#: Create New Project`.
 
@@ -26,7 +24,7 @@ Use Visual Studio Code to create a Q# Project.
 
 1. Start by opening the `MyFirstJob.csproj` file and adding the
    `ExecutionTarget` property, which will give you design-time feedback on the
-   compatibility of your program for IonQ's hardware in VS Code.
+   compatibility of your program for IonQ's hardware in Visual Studio Code.
 
     ```xml
     <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
@@ -38,7 +36,7 @@ Use Visual Studio Code to create a Q# Project.
     ```
 
    with `yy.yy.yyyyyyyy` being the number of the last version of the Quantum
-   Development Kit. If your QDK Visual Studio Code extension is updated, the
+   development kit. If your QDK Visual Studio Code extension is updated, the
    version should already be up to date.
 
 ## Adapt Grover's algorithm to run in hardware
@@ -47,7 +45,7 @@ Fortunately, you don't need control flow features to implement the basic variant
 algorithm, so you can easily adapt the Q# code of previous modules to run on
 IonQ's targets.
 
-For the moment, we have a limited number of qubits available, so you will run a
+For the moment, we have a limited number of qubits available, so you'll run a
 very simple version of Grover's algorithm.
 
 ### Write the core part of Grover's algorithm
@@ -56,13 +54,13 @@ Open the file `Program.qs` and add the following content:
 
 1. First, add the Grover's diffusion operation:
 
-   :::code language="qsharp" source="code/5-program-1.qs":::
+   :::code language="qsharp" source="../code/5-program-1.qs":::
 
 
 1. Now, write the full Grover's search operation that takes a phase oracle as
    input:
 
-   :::code language="qsharp" source="code/5-program-2.qs":::
+   :::code language="qsharp" source="../code/5-program-2.qs":::
 
    Recall that the number of iterations is given by the formula:
    $N_{\text{iterations}}=\frac{\pi}{4}\sqrt{\frac{N}{M}}$, where $N$ is the
@@ -70,24 +68,24 @@ Open the file `Program.qs` and add the following content:
 
 ### Implement an oracle
 
-Since this is just a demonstration, we are going to solve a trivial task. You are going
+Since this is just a demonstration, we're going to solve a trivial task. You're going
 to give an integer as input to the oracle, and then use the quantum computer to find this integer.
 
 1. First you need to implement a marking oracle that takes an integer as input
    and marks the basis state that corresponds to that integer. You can do this using
    the following operation:
 
-   :::code language="qsharp" source="code/5-program-3.qs":::
+   :::code language="qsharp" source="../code/5-program-3.qs":::
 
    This operation takes as input the integer to be marked and flips the state of the
    target qubit if the control register state corresponds to the input integer.
    To do this, it uses the function
-   [`ControledOnInt`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint)
+   [`ControledOnInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint)
    from the Standard library.
 
 2. Since the general operation to run Grover's algorithm that you defined takes a phase oracle as an input, you need to transform your marking oracle into a phase oracle using the phase kickback trick. We can use the same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle):
 
-   :::code language="qsharp" source="code/5-program-4.qs":::
+   :::code language="qsharp" source="../code/5-program-4.qs":::
 
    These two operations combined flip the phase of the basis state that corresponds to the input integer. This is a crucial step of each iteration of the Grover's search.
 
@@ -98,31 +96,31 @@ correct solutions and the total number of possible states. In this case, we have
 single correct solution, so we define the function `NIterations` that takes
 the number of qubits as input:
 
-:::code language="qsharp" source="code/5-program-5.qs":::
+:::code language="qsharp" source="../code/5-program-5.qs":::
 
 ### Create a runnable operation
 
-Now you just need to define the main operation that you will run on Azure Quantum
+Now you just need to define the main operation that you'll run on Azure Quantum
 hardware. You need to annotate the operation with the `@EntryPoint` attribute
 just before the operation signature. The input parameters of the operation will be
-provided through the Azure CLI as command line arguments of the job submission.
+provided through the Azure CLI as command-line arguments of the job submission.
 
 > [!NOTE]
 > Keep in mind that for Azure Quantum targets the output of the main operation needs to have a `Result` data type, either a single result (`Result`) or an array of results (`Result[]`).
 
 The full code should be:
 
-   :::code language="qsharp" source="code/5-program-6.qs":::
+   :::code language="qsharp" source="../code/5-program-6.qs":::
 
 ## Submit your job to Azure Quantum
 
-Now your code is ready to submit the job to Azure Quantum. First you will evaluate the resources that your code requires. Then you will try your code in the IonQ's simulator, and finally you will run it against hardware.
+Now your code is ready to submit the job to Azure Quantum. First you'll evaluate the resources that your code requires. Then you'll try your code in the IonQ's simulator, and finally you'll run it against hardware.
 
-In this example we will set the number of qubits to 2, and the marked integer is going to be 1.
+In this example we'll set the number of qubits to 2, and the marked integer is going to be 1.
 
 ### Estimate the resources for your job
 
-To estimate the resources of the job, the Quantum Development Kit offers you the `ResourcesEstimator` tool that was presented in the module [Explore the key concepts of quantum computing by using Q#](https://docs.microsoft.com/learn/modules/qsharp-explore-key-concepts-quantum-computing/7-explore-entanglement-qsharp).
+To estimate the resources of the job, the Quantum development kit offers you the `ResourcesEstimator` tool that was presented in the module [Explore the key concepts of quantum computing by using Q#](https://docs.microsoft.com/learn/modules/qsharp-explore-key-concepts-quantum-computing/7-explore-entanglement-qsharp).
 
 To use `ResourcesEstimator`:
 
@@ -172,7 +170,7 @@ Now that you know what resources you need to run your job, you can test it on th
     az quantum job show -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy 
    ```
 
-1. Eventually, you will see the `Status` in the above table change to `Succeeded`.
+1. Eventually, you'll see the `Status` in the above table change to `Succeeded`.
    Once that happens, you can get the results from the job by running `az quantum job output`:
 
    ```dotnetcli
@@ -225,4 +223,4 @@ Result    Frequency
 
 This is a more accurate statistical representation of the theoretical outcome of the program that enables you to infer the correct result.
 
-In the next section, you are going to see some ideas to continue exploring quantum computing with Azure Quantum.
+In the next section, you're going to see some ideas to continue exploring quantum computing with Azure Quantum.

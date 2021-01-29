@@ -1,13 +1,13 @@
 
-You are ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q#  in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/).
+You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q#  in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/).
 
 To do so, in this part you learn how to submit a job to Azure Quantum.
 
 ## Install the quantum extension
 
-Azure Quantum uses the quantum extension for the Azure Command-line interface (Azure CLI) to enable submitting Q# programs from the command line. Now you are going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
+Azure Quantum uses the quantum extension for the Azure Command-line interface (Azure CLI) to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you have installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.17.1 or higher).
+1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
@@ -20,21 +20,19 @@ az extension add --source https://msquantumpublic.blob.core.windows.net/az-quant
 First, you need to create a Quantum Workspace in your Azure subscription and
 select the providers you desire to use, in case you haven't already. Follow these steps:
 
-1. Open the [Azure portal](https://ms.portal.azure.com/) and log in with your
+1. Open the [Azure portal](https://ms.portal.azure.com/) and sign in to your
    account.
 
-1. Click **Create a resource** and then search for **Azure Quantum**. On the
+1. Select **Create a resource** and then search for **Azure Quantum**. On the
    results page, you should see a tile for the **Azure Quantum**
    service.
 
-   ![Tile for the Azure Quantum (preview)
-   service](../media/3-azure-quantum-preview-search.png)
+   :::image type="content" source="../media/3-azure-quantum-preview-search.png" alt-text="Tile for the Azure Quantum preview service." border="false":::
 
-1. Click **Azure Quantum** and then click **Create**. This opens a
+1. Select **Azure Quantum** and then select **Create**. This opens a
    form to create a Quantum Workspace.
 
-   ![Create resource for the Azure Quantum (preview)
-   service](../media/3-azure-quantum-preview-create.png)
+   :::image type="content" source="../media/3-azure-quantum-preview-create.png" alt-text="Screenshot showing option to create resource for the Azure Quantum preview service." border="false":::
 
 1. Fill out the details of your Workspace:
    - **Subscription:** The subscription that you want to associate with this
@@ -44,12 +42,11 @@ select the providers you desire to use, in case you haven't already. Follow thes
    - **Name:** The name of your Quantum Workspace.
    - **Region:** The region for the Workspace.
    - **Storage Account**: The Azure storage account to store your jobs and
-     results. If you don't have an existing storage account, click **Create a
+     results. If you don't have an existing storage account, select **Create a
      new storage account** and complete the necessary fields. We recommend using
      the default values.
 
-   ![Properties for the Azure Quantum
-   Workspace](../media/3-azure-quantum-preview-properties.png)
+   :::image type="content" source="../media/3-azure-quantum-preview-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum Workspace." border="false":::
 
    > [!NOTE]
    > You must be an Owner of the selected resource group to create a
@@ -57,26 +54,26 @@ select the providers you desire to use, in case you haven't already. Follow thes
    > Azure, see [Control and organize Azure resources with Azure Resource
    > Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/).
 
-1. After completing the information, click the **Providers** tab to add
+1. After completing the information, select the **Providers** tab to add
    providers to your Workspace. A provider gives you access to a quantum
    service, which can be quantum hardware, a quantum simulator, or an
-   optimization service. In this case we are interested in quantum hardware and
-   we will use the IonQ provider example, but the steps should be valid for
+   optimization service. In this case, we are interested in quantum hardware and
+   we'll use the IonQ provider example, but the steps should be valid for
    other quantum hardware providers.
 
-1. Add at least the IonQ provider, then click **Review + create**.
+1. Add at least the IonQ provider, then select **Review + create**.
 
 1. Review the settings and approve the *Terms and Conditions of Use* of the
-   selected providers. If everything is correct, click on **Create** to create
+   selected providers. If everything is correct, select **Create** to create
    your Quantum Workspace.
 
-   ![Review and create the Workspace](../media/3-azure-quantum-preview-terms.png)
+   :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the Workspace." border="false":::
 
-## Setup the project and write your program
+## Set up the project and write your program
 
 Next, you'll use Visual Studio Code to create a Q# Project, similar to how you did in the previous modules.
 
-1. In VS Code open the **View** menu, and select **Command Palette**.
+1. In Visual Studio Code open the **View** menu, and select **Command Palette**.
 
 1. Type `Q#: Create New Project`.
 
@@ -92,7 +89,7 @@ Next, you'll use Visual Studio Code to create a Q# Project, similar to how you d
 
 1. Start by opening the `MyFirstJob.csproj` file and adding the
    `ExecutionTarget` property, which will give you design-time feedback on the
-   compatibility of your program for IonQ's hardware in VS Code.
+   compatibility of your program for IonQ's hardware in Visual Studio Code.
 
     ```xml
     <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
@@ -109,7 +106,7 @@ Next, you'll use Visual Studio Code to create a Q# Project, similar to how you d
 
 1. Replace the contents of `Program.qs` with the program:
 
-    :::code language="qsharp" source="code/3-program-1.qs":::
+    :::code language="qsharp" source="../code/3-program-1.qs":::
 
 
 This program prepares a qubit in an even superposition and then measures it,
@@ -177,8 +174,8 @@ algorithm is doing what you want.
 
 Run your program with `az quantum execute --target-id ionq.simulator -o table`.
 This command will compile your program, submit it to Azure Quantum, and wait
-until IonQ has finished simulating the program. Once it's done it will output a
-histogram which should look like the one below:
+until IonQ has finished simulating the program. Once it's done, it will output a
+histogram, which should look like the one below:
 
    ```azurecli
    az quantum execute --target-id ionq.simulator -o table
@@ -235,7 +232,7 @@ command `az quantum job submit`.
    ```
 
 1. Eventually, you will see the `Status` in the above table change to `Succeeded`.
-   Once that's done you can get the results from the job by running `az quantum job output`:
+   Once that's done, you can get the results from the job by running `az quantum job output`:
 
    ```azurecli
    az quantum job output -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
