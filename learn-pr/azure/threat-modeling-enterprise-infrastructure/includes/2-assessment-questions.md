@@ -29,7 +29,7 @@ These questions allow you to:
 |**Describe the password policy for each user type.**|<ul><li>Password requirements for each user type.</li><li>Password requirement differences between users, elevated users, smart cards, shared accounts, and service accounts.</li><li>Password lifecycle guidelines on creation, modification, and reset.</li><li>Logging and monitoring mechanisms used to track password actions.</li><li>Password expiration policies for each user type.</li><li>Unsuccessful password attempt limits.</li><li>Password sharing restrictions.</li></ul>|
 |**How do you securely manage access to your online social presence?**|<ul><li>Prefix requirements used for social media branding.</li><li>People who manage social media accounts.</li><li>Social media access guidelines.</li><li>Access audit cadence.</li></ul>|
 |**How do you manage elevated, shared, alternate, and system accounts?**|<ul><li>Approval process for each account type.</li><li>Expiration or deactivation dates.</li><li>People who manage these accounts.</li><li>Process used to monitor, log, and handle suspicious activity.</li><li>Accounts used for remote access.</li><li>Security controls used, like just-in-time access.</li><li>Local administrative account usage and security.</li><li>Administrative account usage restrictions, like secured environment use only.</li></ul>|
-|**Describe the process used to approve, audit, and manage access requests.**|<ul><li>Initial request handling, review process, initial training requirements, and audits.</li><li>People who manage these access requests.</li></ul>|
+|**Describe the process used to approve, audit, and manage access requests.**|<ul><li>Initial request handling, review process, initial training requirements, and audits.</li><li>People who manage access requests.</li></ul>|
 
 ## Secure development
 
@@ -107,7 +107,7 @@ These questions allow you to:
 |--------|--------------|
 |**Describe any limitations to global sales due to encryption capabilities that are part of the product.**|<ul><li>Markets that prohibit the sale of a product due to its encryption capabilities.</li></ul>|
 |**How do employees and vendors adhere to security policies?**|<ul><li>Terms and conditions, NDAs, policies, agreements, and other contracts signed by employees and vendors.</li></ul>|
-|**Describe the process used to meet all industry, legal, contractual, and regulatory compliance as it relates to enterprise assets.**|<ul><li>How the enterprise meets compliance requirements.<li><li>Who is responsible for meeting those requirements.</li><li>Compliance risk assessment reviews.</li><li>Logging and monitoring mechanisms in place.</li><li>Access controls used for each user type.</li><li>Asset security baselines used.</li><li>How each endpoint connecting to the network meets security compliance.</li><li>Detection and protection systems in place to enforce compliance.</li><li>Specialized facility operations to meet regulatory compliance.</li></ul>|
+|**Describe the process used to meet all industry, legal, contractual, and regulatory compliance as it relates to enterprise assets.**|<ul><li>How the enterprise meets compliance requirements.<li><li>People responsible for meeting those requirements.</li><li>Compliance risk assessment reviews.</li><li>Logging and monitoring mechanisms in place.</li><li>Access controls used for each user type.</li><li>Asset security baselines used.</li><li>How each endpoint connecting to the network meets security compliance.</li><li>Detection and protection systems in place to enforce compliance.</li><li>Specialized facility operations to meet regulatory compliance.</li></ul>|
 
 ## Incident response
 
@@ -152,8 +152,8 @@ These questions allow you to:
 
 |Question|Areas to cover|
 |--------|--------------|
-|**Describe the process used to time-out working sessions across assets and services.**|<ul><li>Automatically time-out sessions designed to prevent unauthorized access.</li></ul>|
-|**Describe how malicious activity is detected, prevented, and removed across all endpoints.**|<ul><li>Tools used by the enterprise, such as Antivirus (AV) software and Mobile Device Management (MDM) solutions.</li><li>Implementation and enforcement of each tool.</li><li>Security patch delivery process to all endpoints.</li><li>Vulnerability and penetration testing programs, including those from third-party vendors.</li><li>Security event identification, logging, and monitoring.</li><li>Intelligence platform usage and configuration to ingest security events.</li><li>Mobile Device Management (MDM) solutions configuration and usage.</li></ul>|
+|**Describe the process used to time out working sessions across assets and services.**|<ul><li>Automatically time out sessions designed to prevent unauthorized access.</li></ul>|
+|**Describe how malicious activity is detected, prevented, and removed across all endpoints.**|<ul><li>Tools used by the enterprise, such as Antivirus (AV) software and Mobile Device Management (MDM) solutions.</li><li>Implementation and enforcement of each tool.</li><li>Security patch delivery process to all endpoints.</li><li>Vulnerability and penetration testing programs, including third-party vendors.</li><li>Security event identification, logging, and monitoring.</li><li>Intelligence platform usage and configuration to ingest security events.</li><li>Mobile Device Management (MDM) solutions configuration and usage.</li></ul>|
 |**Describe your security operations processes as they relate to changes in the production environment.**|<ul><li>How changes to the production environment are documented, accessed, and updated.</li><li>Change management policy details.</li><li>How and when employees can access security operation policies.</li></ul>|
 
 ## Physical and environmental
@@ -197,7 +197,7 @@ These questions allow you to:
 
 |Question|Areas to cover|
 |--------|--------------|
-|**Describe your on-premises and/or cloud infrastructure.**|<ul><li>Whether the infrastructure is all on-premises, cloud, or hybrid.</li><li>Access controls used to secure the on-premise, cloud or hybrid infrastructures.</li><li>Tracking mechanisms used for hardware, like data-centers.</li><li>Backup requirements.</li><li>Network security requirements.</li><li>Testing and monitoring systems.</li><li>Data handling requirements.</li><li>Software usage restrictions.</li><li>Baselines used to provide acceptable levels of security across different platforms.</li></ul>|
+|**Describe your on-premises and/or cloud infrastructure.**|<ul><li>Whether the infrastructure is all on-premises, cloud, or hybrid.</li><li>Access controls used to secure the on-premise, cloud, or hybrid infrastructures.</li><li>Tracking mechanisms used for hardware, like data-centers.</li><li>Backup requirements.</li><li>Network security requirements.</li><li>Testing and monitoring systems.</li><li>Data handling requirements.</li><li>Software usage restrictions.</li><li>Baselines used to provide acceptable levels of security across different platforms.</li></ul>|
 |**Describe your container and/or IoT infrastructure.**|<ul><li>Use of IoT and/or containers.</li><li>Security controls used for network access, device configuration, and data handling.</li><li>Security requirements for containers as they relate to containerization and orchestrators.</li></ul>|
 
 ## Supplier
