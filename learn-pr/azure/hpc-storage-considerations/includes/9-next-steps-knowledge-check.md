@@ -32,35 +32,52 @@ You will also want to account for the *major* workloads you intend to run on thi
 
 **Data locality**
 
-The next category should account for the *location* of the data. Is there a requirement to keep the data on-premises? If yes, how do you envision the working data movement to Azure? Will you have concerns over data modifications while running your HPC job? 
+The next category should account for the *location* of the data. Is there a requirement to keep the data on-premises? If yes, how do you envision data presence in Azure? Will you have concerns over data modifications while running your HPC job? Will modifications happen only on-premises, Azure, or both locations?
 
+Adding locality to your checklist:
 
-- Data location
-    - must reside on-prem
-        - cache, copy or synchronize
-    - level of security
-        - PII data, HIPAA requirements
+    - Source data on-premises, in-Azure, or both
+    - Results data on-premises, in-Azure, or both
+    - Will HPC job runs in Azure be coordinated with source data modification timelines?
+        - Note this will help to inform the risk of stale data 
+    - Data sensitivity
+        - PII/HIPAA data?
+        - Note this will help inform the level of authentication and encryption required
 
-- Performance requirements
-    - throughput requirement
-    - latency
-    - IOPs
-    
-- Access methods
-    - NFS
-    - SMB
+From here you will better understand whether you can use copying, caching or synchronization as your data movement strategy.
+
+**Performance requirements**
+
+Your performance requirements should look something like this:
+
+    - Single-stream throughput (in GB/s)
+    - Multi-stream throughput (in GB/s)
+    - Expected maximum IOPS
+    - Average latency (ms)
+
+Every consideration impacts performance, and so these numbers represent a guide that a particular solution should achieve. For example, you may have a HPC job that does extensive file creation and deletion as part of the workflow, which can impact the overall throughput.
+
+**Access methods**
+
+You will want to account for the client access protocol required. As we discussed, there are different versions of NFS (and SMB, the Windows client protocol). If you are intending to use NFSv4, you will want to be clear about what aspects of the protocol are required (such as ACLs).
+
+    - NFS versions required
+        - If v4: expected protocol behaviors (ACLs, encryption)
     - Parallel FS (which solution is being used)
 
-- Total capacity requirement
-    - Hot/warm data
-    - Cold / archive data
+**Total capacity requirement**
 
-- Authentication / Authorization method
+Storage capacity in Azure will be the next consideration, and helps to inform the overall cost of the solution. If you intend to store a large amount of data over the longer term, you may want to consider **tiering** as part of the storage solution, to offer lower cost storage options combined with higher cost but higher performance storage in a hot tier.
+
+    - Total capacity required
+    - Total "hot tier" capacity required
+    - Total "warm tier" capacity required
+    - Total "cold tier" capacity required
+
+A note on "cold tier": Archive tiers offer attractive costs to store the data with higher transaction costs to retrieve the data. Also, archive tiers have long retrieval times for data, and should not be considered part of your hot/warm tiers.
+
+**Authentication / Authorization method**
+
+
     - Local (UID/GID on file server only)
     - Directory (LDAP, Active Directory)
-
-- Data location
-    - must reside on-prem
-        - cache, copy or synchronize
-    - level of security
-        - PII data, HIPAA requirements
