@@ -1,7 +1,6 @@
-Modern classical computers are based on transistors made from semiconductors to implement classical logic operations. Quantum computers take
-radically different approaches to exploit the properties of quantum systems to implement qubits and quantum operations.
+Modern classical computers are based on transistors made from semiconductors to implement classical logic operations. Quantum computers take radically different approaches to exploit the properties of quantum systems to implement qubits and quantum operations.
 
-In this unit, you'lll learn about the challenges of building a quantum computer. You'll also learn the different types of physical qubit systems and how quantum devices are designed.
+In this unit, you'll learn about the challenges of building a quantum computer. You'll also learn the different types of physical qubit systems and how quantum devices are designed.
 
 ## Harnessing quantum systems to perform computations
 
@@ -22,12 +21,12 @@ general, a functional quantum computer should fulfill the following criteria:
   interaction with the environment can "contaminate" the state of the qubits and
   ruin our computations. Qubit registers need to be able to remain in a
   consistent quantum state long enough for us to perform the computations. The
-  amount of time a qubit can remain in a specific quantum state is often called
+  amount of time that a qubit can remain in a specific quantum state is often called
   *coherence time*.
 - **Ability to perform a universal set of operations:** like in classical
   computing, any quantum algorithm can be decomposed as the application of
-  a sequence of operations from a universal set of basic operations. This set is
-  not unique, but a quantum computer should be able to reliably perform all the
+  a sequence of operations from a universal set of basic operations. This set isn't
+  unique, but a quantum computer should be able to reliably perform all the
   operations of the chosen universal set.
 - **Reliable measurements:** to obtain the results of quantum
   computations, we need to measure each qubit with high precision. Note that
@@ -37,12 +36,9 @@ general, a functional quantum computer should fulfill the following criteria:
 These five criteria are often known as the *DiVincenzo* criteria for quantum
 computation.
 
-Building devices that meet these five criteria is one of the most demanding engineerings challenges ever faced by humankind. However, recent years have seen
-astounding advances in condensed matter physics and quantum optics. These advances are allowing
-companies and universities to build the first working versions of quantum
-computers. Microsoft is partnering with some of the best-in-class quantum computer
-manufacturers around the world to give you access to the latest quantum
-computing solutions through Azure Quantum.
+Building devices that meet these five criteria is one of the most demanding engineering challenges ever faced by humankind. However, recent years have seen
+astounding advances in condensed matter physics and quantum optics. These advances are allowing companies and universities to build the first working versions of quantum
+computers. Microsoft is partnering with some of the best-in-class quantum computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
 
 Here's an overview of the different technologies used to create quantum computers, accessible via Azure Quantum.
 
@@ -61,7 +57,7 @@ internal states of each ion. The qubit states are often stored in two hyperfine 
 > [!NOTE]
 > The hyperfine levels of an atom arise from the different possible
 > configurations of the spin orientations of the electron and the nucleus.
-> Generally, the state with the lower energy is associated
+> Generally, the state with the lower energy is associated 
 > with the state $|0\rangle$ and the state with higher energy is associated with the
 > qubit state $|1\rangle$.
 
