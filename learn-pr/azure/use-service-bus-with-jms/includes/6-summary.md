@@ -27,6 +27,6 @@ This command may take a minute to run.
 
 For more information about Spring JMS, see Spring's [reference documentation](https://docs.spring.io/spring-framework/docs/3.0.x/spring-framework-reference/html/jms.html).
 
-For more information about how to use JMS with Azure Service Bus, see [the Azure Service Bus JMS 2.0 documentation](https://docs.microsoft.com/en-us/azure/service-bus-messaging/how-to-use-java-message-service-20).
+For more information about how to use JMS with Azure Service Bus, see [the Azure Service Bus JMS 2.0 documentation](https://docs.microsoft.com/azure/service-bus-messaging/how-to-use-java-message-service-20).
 
-For more information about Java Message Service entities and how they work with Azure Service Bus, check out the [JMS 2.0 entities documentation](https://docs.microsoft.com/en-us/azure/service-bus-messaging/java-message-service-20-entities).
+For more information about Java Message Service entities and how they work with Azure Service Bus, check out the [JMS 2.0 entities documentation](https://docs.microsoft.com/azure/service-bus-messaging/java-message-service-20-entities).

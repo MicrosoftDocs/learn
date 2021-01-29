@@ -10,7 +10,15 @@ Since we are working with the Spring Petclinic application as a starting point, 
 
 ## Create an Azure Service Bus Premium tier namespace
 
-## Create a Send grid account and obtain the API
+For this course, we will have various microservices send messages to and receive messages from Azure Service Bus - Premium tier namespace.
+
+To know how to create an Azure Service Bus Premium tier namespace, follow the steps mentioned in [this guide](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-create-namespace-portal).
+
+## Create a SendGrid account and obtain the API
+
+As part of this course, we will build workflows to send emails to customers of the Spring Petclinic application. To achieve this, we must utilize a mail sending service, SendGrid, to programmatically send these emails.
+
+To learn more about how to create a SendGrid account and use it to send emails from a Java program, review the steps mentioned in [this guide](https://docs.microsoft.com/azure/store-sendgrid-java-how-to-send-email).
 
 ## Create the Communications microservice
 
