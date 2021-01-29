@@ -117,9 +117,9 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
 
 ## Upload an image to blob storage
 
-1. To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object.  Then, you can use the `uploadFile` method to upload your image to Azure Storage.
+4. To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object.  Then, you can use the `uploadFile` method to upload your image to Azure Storage.
 
-2. Add this code to your program immediately after the code that creates the container.
+5. Add this code to your program immediately after the code that creates the container.
 
     ```javascript
     const filename = 'docs-and-friends-selfie-stick.png';
@@ -129,7 +129,7 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
 
 ## List objects in an Azure Blob Storage container
 
-3. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program.
+6. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program.
 
     ```javascript
     let blobs = containerClient.listBlobsFlat();
@@ -138,9 +138,9 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
     }
     ```
 
-4. This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
+7. This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
 
-5. The final file should look like this.
+8. The final file should look like this.
 
     ```javascript
     #!/usr/bin/env node
@@ -179,7 +179,7 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
 
 ## Run the app
 
-6. Build and run the application.
+9. Build and run the application.
 
 > [!NOTE]
 > Make sure you're in the PhotoSharingApp directory.
