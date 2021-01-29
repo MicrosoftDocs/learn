@@ -14,8 +14,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
   > If you need to find the location name, you can use the following command: az account list-locations -o table
 
     ```azurecli
-
-      RG=<resource group name>
+    RG=<resource group name>
     az group create --name $RG --location <location>
     ```
 
