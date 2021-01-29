@@ -4,7 +4,7 @@ metadata:
   title: Take your first steps with Rust
   description: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple applications by using Rust.
   brand: azure
-  ms.date: 01/26/2021
+  ms.date: 01/29/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -15,11 +15,11 @@ summary: |
 
   In this learning path, you'll:
     - Write your first lines of Rust code.
-    - Learn how to handle errors.
-    - Create a command-line program in Rust.
-    - Run automated tests.
-    - Set up modules for packages and crates.
     - Use generic types traits.
+    - Set up modules for packages and crates.
+    - Run automated tests.
+    - Create a command-line program in Rust.
+    - Learn how to handle errors.
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -33,9 +33,10 @@ products:
 modules:
 - learn.language.rust-get-started
 - learn.language.rust-understand-common-concepts
+- learn.languages.rust-memory-management
 - learn.language.rust-generic-types-traits
-- learn.language.rust-create-command-line-program
 - learn.language.rust-modules-packages-crates
+- learn.language.rust-create-command-line-program
 - learn.language.rust-automated-tests
 - learn.language.rust-error-handling
 trophy:
