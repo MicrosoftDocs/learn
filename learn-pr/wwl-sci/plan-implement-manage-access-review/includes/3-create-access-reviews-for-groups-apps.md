@@ -1,8 +1,8 @@
 Access to groups and applications for employees and guests changes over time. To reduce the risk associated with stale access assignments, administrators can use Azure Active Directory (Azure AD) to create access reviews for group members or application access. If you need to routinely review access, you can also create recurring access reviews.
 
-|||
+
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more about how to deploy and create access reviews.|
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn more about how to deploy and create access reviews.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAkF]
 
@@ -20,109 +20,109 @@ Access to groups and applications for employees and guests changes over time. To
 
 3. Click **New access review** to create a new access review.
 
-> [!div class="mx-imgBorder"]
-> ![Access reviews pane in Identity Governance](../media/access-reviews.png)
+    > [!div class="mx-imgBorder"]
+    > ![Access reviews pane in Identity Governance](../media/access-reviews.png)
 
 4. In **Step 1: Select what to review** select the resource you would like to review.
 
-> [!div class="mx-imgBorder"]
-> ![Create an access review - Review name and description](../media/select-what-review.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create an access review - Review name and description](../media/select-what-review.png)
 
 5. If you selected **Teams + Groups** in Step 1, you have two options in Step 2:
 
-  - **All Microsoft 365 groups with guest users.** Select this option if you would like to create recurring reviews on all your guest users across all your Microsoft Teams and M365 groups in your organization. You can choose to exclude certain groups by clicking on "Select group(s) to exclude."
+   - **All Microsoft 365 groups with guest users.** Select this option if you would like to create recurring reviews on all your guest users across all your Microsoft Teams and M365 groups in your organization. You can choose to exclude certain groups by clicking on "Select group(s) to exclude."
 
-  - **Select teams + groups.** Select this option if you would like to specify a finite set of teams and/or groups to review. After clicking on this option, you will see a list of groups to the right to pick from.
+   - **Select teams + groups.** Select this option if you would like to specify a finite set of teams and/or groups to review. After clicking on this option, you will see a list of groups to the right to pick from.
 
-> [!div class="mx-imgBorder"]
-> ![Teams and groups](../media/teams-groups.png)
+    > [!div class="mx-imgBorder"]
+    > ![Teams and groups](../media/teams-groups.png)
 
-> [!div class="mx-imgBorder"]
-> ![Teams and groups chosen in the user interface](../media/teams-groups-detailed.png)
+    > [!div class="mx-imgBorder"]
+    > ![Teams and groups chosen in the user interface](../media/teams-groups-detailed.png)
 
 6. If you selected **Applications** in Step 1, you can then select one or more applications in Step 2.
 
-> [!NOTE]
-> Selecting multiple groups and/or applications will result in multiple access reviews created. For example, if you select five groups to review, that will result in five separate access reviews
+    > [!NOTE]
+    > Selecting multiple groups and/or applications will result in multiple access reviews created. For example, if you select five groups to review, that will result in five separate access reviews
 
-> [!div class="mx-imgBorder"]
-> ![The interface displayed if you chose applications rather than groups](../media/select-application-detailed.png)
+    > [!div class="mx-imgBorder"]
+    > ![The interface displayed if you chose applications rather than groups](../media/select-application-detailed.png)
 
 7. Next, in Step 3 you can select a scope for the review. Your options are:
 
-  - **Guest users only.** Selecting this option limits the access review to just the Azure AD B2B guest users in your directory.
+   - **Guest users only.** Selecting this option limits the access review to just the Azure AD B2B guest users in your directory.
 
-  - **Everyone.** Selecting this option scopes the access review to all user objects associated with the resource.
+   - **Everyone.** Selecting this option scopes the access review to all user objects associated with the resource.
 
-> [!NOTE]
-> If you selected All Microsoft 365 groups with guest users in Step 2, then your only option is to review Guest users in Step 3.
+    > [!NOTE]
+    > If you selected All Microsoft 365 groups with guest users in Step 2, then your only option is to review Guest users in Step 3.
 
 8. Click on Next: Reviews
 
 9. In the **Select reviewers** section, select one or more people to perform the access reviews. You can choose from:
 
-  - **Group owner(s)** (Only available when performing a review on a team or group)
+   - **Group owner(s)** (Only available when performing a review on a team or group)
 
-  - **Selected user(s) or groups(s)**
+   - **Selected user(s) or groups(s)**
 
-  - **Users review own access**
+   - **Users review own access**
 
-  - **(Preview) Managers of users.** If you choose either **Managers of users** or **Group owners,** you also have the option to specify a fallback reviewer. Fallback reviewers are asked to do a review when the user has no manager specified in the directory or the group does not have an owner.
+   - **(Preview) Managers of users.** If you choose either **Managers of users** or **Group owners,** you also have the option to specify a fallback reviewer. Fallback reviewers are asked to do a review when the user has no manager specified in the directory or the group does not have an owner.
 
-> [!div class="mx-imgBorder"]
-> ![new access review](../media/new-access-review.png)
+    > [!div class="mx-imgBorder"]
+    > ![new access review](../media/new-access-review.png)
 
 10. In the **Specify recurrence of review** section, you can specify a frequency such as **Weekly, Monthly, Quarterly, Semi-annually, Annually**. You then specify a **Duration**, which defines how long a review will be open for input from reviewers. For example, the maximum duration that you can set for a monthly review is 27 days to avoid overlapping reviews. You might want to shorten the duration to ensure that your reviewers input is applied earlier. Next, you can select a **Start date** and **End date**.
 
-> [!div class="mx-imgBorder"]
-> ![Choose how often the review should happen](../media/frequency.png)
+    > [!div class="mx-imgBorder"]
+    > ![Choose how often the review should happen](../media/frequency.png)
 
 11. Click the **Next: Settings** button at the bottom of the page.
 
 12. In the **Upon completion settings,** you can specify what happens after the review completes.
 
-> [!div class="mx-imgBorder"]
-> ![Create an access review - upon completion settings](../media/upon-completion-settings-new.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create an access review - upon completion settings](../media/upon-completion-settings-new.png)
 
-If you want to automatically remove access for denied users, set **Auto apply results to resource** to **Enable**. If you want to manually apply the results when the review completes, set the switch to **Disable**. Use the **If reviewers don't respond** list to specify what happens for users that are not reviewed by the reviewer within the review period. This setting does not impact users who have been reviewed by the reviewers manually. If the final reviewer's decision is Deny, then the user's access will be removed.
+    If you want to automatically remove access for denied users, set **Auto apply results to resource** to **Enable**. If you want to manually apply the results when the review completes, set the switch to **Disable**. Use the **If reviewers don't respond** list to specify what happens for users that are not reviewed by the reviewer within the review period. This setting does not impact users who have been reviewed by the reviewers manually. If the final reviewer's decision is Deny, then the user's access will be removed.
 
-  - **No change** - Leave user's access unchanged
+      - **No change** - Leave user's access unchanged
 
-  - **Remove access** - Remove user's access
+      - **Remove access** - Remove user's access
 
-  - **Approve access** - Approve user's access
+      - **Approve access** - Approve user's access
 
-  - **Take recommendations** - Take the system's recommendation on denying or approving the user's continued access
+      - **Take recommendations** - Take the system's recommendation on denying or approving the user's continued access
 
-> [!div class="mx-imgBorder"]
-> ![Upon completion settings options](../media/upon-completion-settings-new.png)
+    > [!div class="mx-imgBorder"]
+    > ![Upon completion settings options](../media/upon-completion-settings-new.png)
 
-Use the Action to apply on denied **guest** users to specify what happens to guest users if they are denied.
+    Use the Action to apply on denied **guest** users to specify what happens to guest users if they are denied.
 
-  - **Remove user’s membership from the resource** will remove denied user’s access to the group or application being reviewed, they will still be able to sign-in to the tenant.
+      - **Remove user’s membership from the resource** will remove denied user’s access to the group or application being reviewed, they will still be able to sign-in to the tenant.
 
-  - **Block user from signing in for 30 days, then remove user from the tenant** will block the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user has been disabled. If there is no action taken on the disabled users, they will be deleted from the tenant.
+      - **Block user from signing in for 30 days, then remove user from the tenant** will block the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user has been disabled. If there is no action taken on the disabled users, they will be deleted from the tenant.
 
-> [!NOTE]
-> Action to apply on denied guest users is not configurable on reviews scoped to more than guest users. It is also not configurable for reviews of all M365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
+    > [!NOTE]
+    > Action to apply on denied guest users is not configurable on reviews scoped to more than guest users. It is also not configurable for reviews of all M365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
 
 13. In **Enable review decision helpers** choose whether you would like your reviewer to receive recommendations during the review process.
 
-> [!div class="mx-imgBorder"]
-> ![Enable decision helpers options](../media/helpers.png)
+    > [!div class="mx-imgBorder"]
+    > ![Enable decision helpers options](../media/helpers.png)
 
 14. In the **Advanced settings** section, you can choose the following
 
-  - Set **Justification required** to **Enable** to require the reviewer to supply a reason for approval.
+     - Set **Justification required** to **Enable** to require the reviewer to supply a reason for approval.
 
-  - Set **email notifications** to **Enable** to have Azure AD send email notifications to reviewers when an access review starts, and to administrators when a review completes.
+     - Set **email notifications** to **Enable** to have Azure AD send email notifications to reviewers when an access review starts, and to administrators when a review completes.
 
-  - Set **Reminders** to **Enable** to have Azure AD send reminders of access reviews in progress to reviewers who have not completed their review. These reminders will be half-way through the duration of the review.
+     - Set **Reminders** to **Enable** to have Azure AD send reminders of access reviews in progress to reviewers who have not completed their review. These reminders will be half-way through the duration of the review.
 
-  - The content of the email sent to reviewers is autogenerated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information, such as additional instructions or contact information, you can specify these details in the **Additional content for reviewer email** section. The information that you enter is included in the invitation and reminder emails sent to assigned reviewers. The section highlighted in the image below shows where this information is displayed.
+     - The content of the email sent to reviewers is autogenerated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information, such as additional instructions or contact information, you can specify these details in the **Additional content for reviewer email** section. The information that you enter is included in the invitation and reminder emails sent to assigned reviewers. The section highlighted in the image below shows where this information is displayed.
 
-> [!div class="mx-imgBorder"]
-> ![additional content for reviewer](../media/additional-content-reviewer.png)
+    > [!div class="mx-imgBorder"]
+    > ![additional content for reviewer](../media/additional-content-reviewer.png)
 
 15. Click on **Next: Review + Create** to move to the next page.
 
@@ -130,8 +130,8 @@ Use the Action to apply on denied **guest** users to specify what happens to gue
 
 17. Review the information and select **Create.**
 
-> [!div class="mx-imgBorder"]
-> ![create review screen](../media/create-review.png)
+    > [!div class="mx-imgBorder"]
+    > ![create review screen](../media/create-review.png)
 
 ## Start the access review
 
