@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-generic-types-traits.5-iterators
 metadata:
-  title: Using iterators
+  title: Use iterators
   description: Learn how to use iterators.
   ms.date: 01/20/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Using iterators
+title: Use iterators
 durationInMinutes: 1
 content: |
   [!include[](includes/5-iterators.md)]
