@@ -6,9 +6,9 @@
 
 3. If you're working in the Microsoft Learn Sandbox environment, run the following command in the same folder as you have your application to download the image into your sandbox.
 
-```bash
-wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
-```
+    ```bash
+    wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
+    ```
 
 In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_.
 
@@ -20,12 +20,12 @@ In both cases, the name of the image should be _docs-and-friends-selfie-stick.pn
 
 5. After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage.
 
-```csharp
-string blobName = "docs-and-friends-selfie-stick";
-string fileName = "docs-and-friends-selfie-stick.png";
-BlobClient blobClient = container.GetBlobClient(blobName);
-blobClient.Upload(fileName, true);
-```
+    ```csharp
+    string blobName = "docs-and-friends-selfie-stick";
+    string fileName = "docs-and-friends-selfie-stick.png";
+    BlobClient blobClient = container.GetBlobClient(blobName);
+    blobClient.Upload(fileName, true);
+    ```
 
 6. The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we are specifying `true` to allow the program to be run multiple times.
 
@@ -35,30 +35,30 @@ blobClient.Upload(fileName, true);
 
 8. Add the following code to your program after the code you previously added.
 
-```csharp
-var blobs = container.GetBlobs();
-foreach (var blob in blobs)
-{
-    Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
-}
-```
+    ```csharp
+    var blobs = container.GetBlobs();
+    foreach (var blob in blobs)
+    {
+        Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
+    }
+    ```
 
 9. This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ container. It then iterates through each blob, printing out the name of the blob, the date and time the blob was created, and the size of the blob. When you run your program, this code should appear as a single line for the one image that has been uploaded.
 
 10. The final **Program.cs** file should look like this if you want to check your work.
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using Azure.Storage.Blobs;
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    using Azure.Storage.Blobs;
 
-namespace PhotoSharingApp
-{
-    class Program
+    namespace PhotoSharingApp
     {
-        static void Main(string[] args)
+        class Program
         {
+            static void Main(string[] args)
+            {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
@@ -88,9 +88,9 @@ namespace PhotoSharingApp
                 Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
             }
         }
+        }
     }
-}
-```
+    ```
 
 ## Run the app
 
@@ -99,9 +99,9 @@ namespace PhotoSharingApp
 > [!NOTE]
 > Make sure you're in the PhotoSharingApp directory.
 
-```dotnetcli
-dotnet run
-```  
+    ```dotnetcli
+    dotnet run
+    ```  
 
 ::: zone-end
 
@@ -121,37 +121,37 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
 
 2. Add this code to your program immediately after the code that creates the container.
 
-```javascript
-const filename = 'docs-and-friends-selfie-stick.png';
-const blockBlobClient = containerClient.getBlockBlobClient(filename);
-blockBlobClient.uploadFile(filename);
-```
+    ```javascript
+    const filename = 'docs-and-friends-selfie-stick.png';
+    const blockBlobClient = containerClient.getBlockBlobClient(filename);
+    blockBlobClient.uploadFile(filename);
+    ```
 
 ## List objects in an Azure Blob Storage container
 
 3. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program.
 
-```javascript
-let blobs = containerClient.listBlobsFlat();
-for await (const blob of blobs) {
-  console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
-}
-```
+    ```javascript
+    let blobs = containerClient.listBlobsFlat();
+    for await (const blob of blobs) {
+    console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
+    }
+    ```
 
 4. This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
 
 5. The final file should look like this.
 
-```javascript
-#!/usr/bin/env node
-require('dotenv').config();
+    ```javascript
+    #!/usr/bin/env node
+    require('dotenv').config();
 
-const { BlobServiceClient } = require("@azure/storage-blob");
+    const { BlobServiceClient } = require("@azure/storage-blob");
 
-const storageAccountConnectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
-const blobServiceClient = BlobServiceClient.fromConnectionString(storageAccountConnectionString);
+    const storageAccountConnectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
+    const blobServiceClient = BlobServiceClient.fromConnectionString(storageAccountConnectionString);
 
-async function main() {
+    async function main() {
     // Create a container (folder) if it does not exist
     const containerName = 'photos';    
     const containerClient = blobServiceClient.getContainerClient(containerName);
@@ -173,9 +173,9 @@ async function main() {
     for await (const blob of blobs) {
       console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`)
     }
-}
-main();
-```
+    }
+    main();
+    ```
 
 ## Run the app
 
@@ -184,9 +184,9 @@ main();
 > [!NOTE]
 > Make sure you're in the PhotoSharingApp directory.
 
-```bash
-node index.js
-```
+    ```bash
+    node index.js
+    ```
 
 > [!TIP]
 > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
