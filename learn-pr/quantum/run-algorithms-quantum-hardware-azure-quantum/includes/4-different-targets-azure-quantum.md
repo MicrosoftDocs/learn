@@ -1,6 +1,6 @@
 Azure Quantum offers a variety of quantum solutions. At this time, due to the
 early development stage of the field, these devices have some limitations and
-requirements for programs that run on them. The Quantum Development Kit and
+requirements for programs that run on them. The Quantum development kit and
 Azure Quantum will keep track of these requirements in the background so that
 you can run your Q# programs on Azure Quantum targets.
 
@@ -25,7 +25,7 @@ as having one of three profiles:
 
 For example, this operation cannot be run on a No Control Flow target:
 
-:::code language="qsharp" source="code/4-program-1.qs":::
+:::code language="qsharp" source="../code/4-program-1.qs":::
 
 If you try to run this operation on a No Control Flow target (like `ionq.qpu`) it will fail
 because it evaluates a comparison between two results—`desired != M(q)`—to
@@ -36,7 +36,7 @@ statement within the `if` block.
 For example, the operation above could be used in a Basic Measurement Feedback target, but the following
 cannot:
 
-:::code language="qsharp" source="code/4-program-2.qs":::
+:::code language="qsharp" source="../code/4-program-2.qs":::
 
 
-In the next unit you will run Grover's algorithm in a No Control Flow target.
+In the next unit, you'll run Grover's algorithm in a No Control Flow target.

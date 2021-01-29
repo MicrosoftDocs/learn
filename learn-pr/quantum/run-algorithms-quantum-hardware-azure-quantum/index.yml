@@ -16,10 +16,10 @@ abstract: |
   - Differentiate and comprehend the main hardware solutions for quantum computers.
   - Understand how Azure Quantum provides you with access to quantum devices to run quantum algorithms.
   - Adapt and create Q# applications to run them in Azure Quantum.  
-  - Submit and manage quantum computing jobs in Azure Quantum in your preferred environment: Python, Jupyter or the Azure CLI.
+  - Submit and manage quantum computing jobs in Azure Quantum in your preferred environment: Python, Jupyter, or the Azure CLI.
 prerequisites: |
   - Module [How to create an Azure Quantum workspace](https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals)
-  - Module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/)
+  - Module [Create your first Q# program by using the Quantum development kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/)
 iconUrl: /learn/achievements/quantum/run-quantum-algorithms-hardware.svg
 ratingEnabled: true
 levels:

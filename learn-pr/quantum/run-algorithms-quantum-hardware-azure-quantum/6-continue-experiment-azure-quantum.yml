@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-continue-experimenting-azure-quantum.md)]
+  [!include[](includes/6-continue-experiment-azure-quantum.md)]
