@@ -4,22 +4,22 @@ Those two sets correspond to whether a mineral chunk is loaded onto container *A
 
 This short animation shows one possible way an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4MFtm>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFtm]
 
 In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although it is classified as NP-hard, in practice there exist other efficient algorithms able to provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. In a later [module](https://docs.microsoft.com/learn/modules/solve-job-shop-scheduling-optimization-problem?azure-portal=true), we'll tackle a more challenging problem where QIO might provide a practical advantage.
+> This problem is known as a *number partitioning problem*. Although it is classified as NP-hard, in practice there exist other efficient algorithms able to provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. In a later [module](/learn/modules/solve-job-shop-scheduling-optimization-problem?azure-portal=true), we'll tackle a more challenging problem where QIO might provide a practical advantage.
 
 ## Express the problem
 
 Let's start by coming up with an expression for the weight of a given container. This is simply the sum of all the mineral chunks it contains. The sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
 
-![An equation that shows the sum of mineral weights](../media/costfun-1.svg)
+![An equation that shows the sum of mineral weights.](../media/cost-function-1.svg)
 
 Ideally, we want a solution where the weight difference between the containers, $\Delta$, is as small as possible.
 
-![An equation that subtracts the total weights on one container from the total weights on the other container to produce a cost function](../media/costfun-2.svg)
+![An equation that subtracts the total weights on one container from the total weights on the other container to produce a cost function.](../media/cost-function-2.svg)
 
 This equation subtracts the sum of weights on container *B* from the sum of weights on container *A*.
 
@@ -33,7 +33,7 @@ Because we assign the chunk *i* to either of two containers, the variable $x_i$ 
 
 By introducing the variable $x_i$, we can simplify the equation as follows:
 
-![An equation that introduces a binary variable to simplify the calculation of the cost function](../media/costfun-3.svg)
+![An equation that introduces a binary variable to simplify the calculation of the cost function.](../media/cost-function-3.svg)
 
 ## Refine the problem again
 
@@ -41,20 +41,20 @@ There's one last change we need to make before we can solve our problem.
 
 If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to container *B* by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
-![An equation that squares the previous computation to ensure that the cost function is not negative](../media/costfun-4.svg)
+![An equation that squares the previous computation to ensure that the cost function is not negative.](../media/cost-function-4.svg)
 
 This final model gives us a cost function with the required properties.
 
 - If all the mineral is on one container, the function is at its highest value. This is the least optimal solution.
 - If the freight containers are perfectly balanced, the value of the summation inside the square is *0*. This means the function is at its lowest, or optimal, value.
 
-## Solving the Problem with Azure Quantum
+## Solve the problem with Azure Quantum
 
 Now that you've learned how our combinatorial optimization problem can be cast in Ising form, we're ready to invoke a QIO solver to compute solutions for us. We'll use Python to connect to the Azure Quantum services. As you make your way through the rest of this section, copy the code sequences into a Jupyter notebook to execute them. Feel free to play with the problem parameters and observe how the results change.
 
 ### Setup
 
-First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [Get Started with Azure Quantum](https://docs.microsoft.com/learn/modules/get-started-azure-quantum?azure-portal=true) module if you don't have a workspace set up yet. Be sure to fill in the settings below which can be retrieved from the [web interface](https://ms.portal.azure.com#home?azure-portal=true) or by running `az quantum workspace show` through the Azure CLI.
+First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum?azure-portal=true) module if you don't have a workspace set up yet. Be sure to fill in the settings below which can be retrieved from the [web interface](https://ms.portal.azure.com#home?azure-portal=true) or by running `az quantum workspace show` through the Azure CLI.
 
 ```python
 from azure.quantum import Workspace
@@ -64,6 +64,7 @@ workspace = Workspace(
     subscription_id=    "", # add your subscription_id
     resource_group=     "", # add your resource_group
     name=               "", # add your workspace name
+    location=           ""  # add your workspace location (for example, "westus")
 )
 
 workspace.login()
@@ -95,7 +96,7 @@ While it may not look like it, this double sum is just another way to write a la
 
 $$ H(x) = \sum_{k=0}^{n^2-1} \alpha_k \cdot p_k(x_0, \cdots, x_{n-1}) $$
 
-Let's plug in some numbers! We will use 3 mineral chunks with the weights $w_i \in [2,4,7]$, and thus with indices $i,j \in \{0,1,2\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
+Let's plug in some numbers! We will use 3 mineral chunks with the weights $w_i \in [2,4,7]$, and thus with indices $i,j \in \\{0,1,2\\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
 
 $$ H(x) = (2 \cdot 2) \cdot (x_0 \cdot x_0) + (2 \cdot 4) \cdot (x_0 \cdot x_1) + (2 \cdot 7) \cdot (x_0 \cdot x_2) $$
 $$ \hspace{25pt} +\ (4 \cdot 2) \cdot (x_1 \cdot x_0) + (4 \cdot 4) \cdot (x_1 \cdot x_1) + (4 \cdot 7) \cdot (x_1 \cdot x_2) $$
@@ -156,7 +157,7 @@ problem = createProblemForMineralWeights(mineralWeights)
 We're ready to submit our problem to Azure using the `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. For more information about available solvers, see the [Microsoft Quantum Solution provider](//TODO) page. However, solver selection and tuning is beyond the scope of this module.
+> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. For more information about available solvers, you can visit the Azure Quantum documentation page. However, solver selection and tuning is beyond the scope of this module.
 
 ```python
 from azure.quantum.optimization import ParallelTempering
@@ -223,7 +224,7 @@ Total weights:
 
 Great! The solver found a partition such that the containers are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution doesn't exist for this problem instance.
 
-## Improving the Cost Function
+## Improve the cost function
 
 The cost function we've built works well so far, but let's take a closer look at the `Problem` that was generated:
 
@@ -241,7 +242,7 @@ That's a lot of terms for just 10 chunks! On closer inspection, you'll note that
 
 This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms as follows:
 
-![An equation that reduces the number of terms in the previous cost function](../media/costfun-5.svg)
+![An equation that reduces the number of terms in the previous cost function.](../media/cost-function-5.svg)
 
 Notice that we've expanded the square in our previous cost function to a summation over two indices, $i$ and $j$. With the constraint $i<j$, we exclude the symmetric copies of terms mentioned above. As a bonus, "constant" $i=j$ terms are excluded as well, which don't contribute to the solution.
 

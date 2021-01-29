@@ -13,7 +13,8 @@
    viewBox="0 0 291.19717 41.520126"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="costfun-3.svg">
   <defs
      id="defs2">
     <g
@@ -1907,8 +1908,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.41"
-     inkscape:cx="1195.0905"
+     inkscape:zoom="0.48"
+     inkscape:cx="543.02358"
      inkscape:cy="319.26633"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -1941,6 +1942,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(134.57514,-36.350086)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect658"
+       width="291.19717"
+       height="41.52013"
+       x="-134.57513"
+       y="36.350086" />
     <g
        style="fill:#000000;fill-opacity:1"
        id="g317"
