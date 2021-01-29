@@ -1,6 +1,6 @@
 Now's your chance to use what you've learned about using modules in functions and visibility.
 
-The code below has a few compiler error. Your assignment in this exercise is to make the code compile successfully without modifying the `main` function.
+The following code has a few compiler errors. Your assignment in this exercise is to make the code compile successfully without modifying the `main` function.
 
 ```rust
 mod text_processing {
