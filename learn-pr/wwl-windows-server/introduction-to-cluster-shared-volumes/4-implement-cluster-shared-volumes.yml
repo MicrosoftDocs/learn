@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-cluster-shared-volumes.implement
+title: Implement Cluster Shared Volumes
+metadata:
+  title: Implement Cluster Shared Volumes
+  description: "Implement Cluster Shared Volumes"
+  ms.date: 01/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-implement-cluster-shared-volumes.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What is the first step when setting up iSCSI-based storage on a newly deployed Windows Server by using iSCSI Initiator?"
+    choices:
+    - content: "Install a Windows Server feature."
+      isCorrect: false
+      explanation: "That's incorrect. There is no need to install iSCSI Initiator on the Windows Server operating system."
+    - content: "Start a Windows Service."
+      isCorrect: true
+      explanation: "That's correct. The iSCSI Initiator service needs to be started first."
+    - content: "Modify Windows Firewall settings."
+      isCorrect: false
+      explanation: "That's incorrect. Windows Firewall by default allows outbound connections via iSCSI."

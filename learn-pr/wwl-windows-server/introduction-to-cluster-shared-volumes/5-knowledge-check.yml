@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-cluster-shared-volumes.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What tool can be used to perform online repair of CSV volumes?"
+    choices:
+    - content: "diskpart"
+      isCorrect: false
+      explanation: "That's incorrect. The diskpart tool isn't suitable for CSV management."
+    - content: "chkdsk"
+      isCorrect: true
+      explanation: "That's correct. CSV allows you to scan and repair volumes with no downtime when using tools such as chkdsk, fsutil, and the `Repair-Volume` Windows PowerShell cmdlet."
+    - content: "diskmgmt.msc"
+      isCorrect: false
+      explanation: "That's incorrect. The Disk Management snap-in doesn't offer online repair functionality."
+  - content: "Which of the following file system operations would involve the use of a CSV coordinator node when operating in the Direct I/O mode?"
+    choices:
+    - content: "Writing to a file"
+      isCorrect: false
+      explanation: "That's incorrect. The coordinator node is responsible for applying metadata changes; however, it's not required when performing reads or writes targeting file content."
+    - content: "Creating a file"
+      isCorrect: true
+      explanation: "That's correct. Creating a file involves a metadata change, which requires the use of the coordinator node."
+    - content: "Reading from a file"
+      isCorrect: false
+      explanation: "That's incorrect. The coordinator node is responsible for applying metadata changes; however, it's not required when performing reads or writes targeting file content."
+  - content: "What is the benefit of the CSV block-level redirection when compared with the CSV file system redirection?"
+    choices:
+    - content: "In case of a failure of Direct I/O, it provides connectivity to a target volume via SMB 3.x."
+      isCorrect: false
+      explanation: "That's incorrect. Both block-level and file system redirection use SMB 3.x."
+    - content: "It is considerably faster."
+      isCorrect: true
+      explanation: "That's correct. The block level redirection bypasses the NTFS or ReFS stack on the owner node, similarly, to Direct I/O, which significantly improves their performance."
+    - content: "In case of a failure of Direct I/O, it can use SMB Direct to enhance performance of a connection to a target volume."
+      isCorrect: false
+      explanation: "That's incorrect. That's incorrect. Both block-level and file system redirection support SMB Direct."
