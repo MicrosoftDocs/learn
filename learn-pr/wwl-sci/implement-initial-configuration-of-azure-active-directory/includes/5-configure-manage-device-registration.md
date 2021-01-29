@@ -148,8 +148,8 @@ In addition, if your tenant is federated, your Identity provider MUST support WS
 
 To verify whether a device is joined to your Azure AD, review the **Access work or school** dialog on your Windows device. The dialog should indicate that you are connected to your Azure AD directory.
 
-    > [!div class="mx-imgBorder"]
-    > ![Access work or school screen.](../media/access-work-school.png)
+> [!div class="mx-imgBorder"]
+> ![Access work or school screen.](../media/access-work-school.png)
 
 ## Hybrid Azure AD joined devices
 
@@ -174,8 +174,8 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 | Device management| <ul><li>Group Policy</li> <li>Configuration Manager standalone or co-management with Microsoft Intune</li></ul>|
 | Key capabilities| <ul><li>SSO to both cloud and on-premises resources</li> <li>Conditional Access through Domain join or through Intune if co-managed</li> <li>Self-service Password Reset and Windows Hello PIN reset on lock screen</li> <li>Enterprise State Roaming across devices</li></ul>|
 
-    > [!div class="mx-imgBorder"]
-    > ![Hybrid Azure AD joined devices.](../media/azure-active-directory-hybrid-joined-device.png)
+> [!div class="mx-imgBorder"]
+> ![Hybrid Azure AD joined devices.](../media/azure-active-directory-hybrid-joined-device.png)
 
 ### Scenarios
 
