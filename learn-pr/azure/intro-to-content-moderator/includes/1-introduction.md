@@ -1,17 +1,17 @@
-The Azure Personalizer is a cloud-based service that helps your applications choose the best content item to show your users.
+The Azure Content Moderator is an AI cloud-based service. Access this API in your applications to help recognize and handle potentially offensive, risky, or undesirable content. The API currently supports text, image, and video content.
 
-You work for an outdoor clothing company with an online e-commerce site. The company has taken on a new accessory line for the hiking community. They want to promote the accessories to the customers who are purchasing hiking clothing.
+Your company provides a platform for customers to review movies. The movie library that is being reviewed may contain content that spans the range of ratings as outlined by the Motion Picture Association of America, such as PG-13, NC-17, R, etc. While the movies may contain material that is not suitable for all audiences, you do not want to the reviews to contain any offensive or risky content. The movie review site should only display reviews that contain suitable for all age levels.
 
-Your task is to devise a solution that not only provides the appropriate recommendations for the customers, based on the items they are viewing or adding to their shopping cart, but you are also being asked to show how well the recommendations are performing. The company wants to know if users are selecting the items that are recommended.
+Your task is to investigate the Content Moderator API to gain an understanding of its functionality. You want to determine if the services in the API can provide an automated review of content. You also want to ensure that the service offers a way to integrate review by humans if necessary.
 
 ## Learning Objectives
 
 After completing this module, you'll be able to:
 
-- Assess the benefits of Personalizer
-- Describe what Personalizer is
-- Define scenarios where Personalizer can be applied
-- Decide if Personalizer is the right choice for your scenario
+- Assess the benefits of Content Moderator
+- Describe what Content Moderator is
+- Define scenarios where Content Moderator can be applied
+- Decide if Content Moderator is the right choice for your scenario
 
 ## Prerequisites
 
