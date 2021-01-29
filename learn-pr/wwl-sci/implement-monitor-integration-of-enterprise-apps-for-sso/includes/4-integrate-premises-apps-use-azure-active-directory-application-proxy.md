@@ -22,7 +22,7 @@ Application Proxy is recommended for giving remote users access to internal reso
 
 The following diagram shows how Azure AD and Application Proxy work together to provide single sign-on to on-premises applications.
 
-![alt: Azure AD Application Proxy diagram](../media/azure-app-proxxy.png)
+![Azure AD Application Proxy diagram.](../media/azure-app-proxxy.png)
 
 1. After the user has accessed the application through an endpoint, the user is directed to the Azure AD sign-in page.
 
