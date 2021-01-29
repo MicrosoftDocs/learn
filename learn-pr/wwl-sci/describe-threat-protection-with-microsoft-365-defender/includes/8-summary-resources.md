@@ -10,7 +10,7 @@ Now that you've completed this module, you should be able to:
 - Describe how and when to implement Microsoft Defender for Endpoint.
 - Describe how Microsoft Cloud App Security can help defend your data and assets.
 
-## Learn More
+## Learn more
 
 To find out more about any of the topics covered in this module, please visit these links:
 

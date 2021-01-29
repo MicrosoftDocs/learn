@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-storage-spaces-storage-spaces-direct.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the minimum number of disks required to create a virtual disk with the three-way mirroring storage layout?"
+    choices:
+    - content: "3"
+      isCorrect: false
+      explanation: "That's incorrect. This is not sufficient. Three-way mirroring requires at least five physical disks."
+    - content: "4"
+      isCorrect: false
+      explanation: "That's incorrect. This is not sufficient. Three-way mirroring requires at least five physical disks."
+    - content: "5"
+      isCorrect: true
+      explanation: "That's correct. Three-way mirroring requires at least five physical disks."
+  - content: "What's a limitation of Storage Spaces?"
+    choices:
+    - content: "It is not possible to mix different types of storage in the same pool."
+      isCorrect: false
+      explanation: "That's incorrect. You can use different types of storage in the same pool (for example, SATA, SAS, USB, and SCSI)."
+    - content: "It is not possible to use Storage Spaces on boot and system volumes."
+      isCorrect: true
+      explanation: "That's correct. Storage Spaces volumes aren't supported on boot or system volumes."
+    - content: "After a storage pool is created, it is not possible to increase its size."
+      isCorrect: false
+      explanation: "That's incorrect. You can grow storage pools as required."
+  - content: "How many cluster nodes are required to implement nested resiliency in Storage Spaces Direct?"
+    choices:
+    - content: "2"
+      isCorrect: true
+      explanation: "That's correct. With nested resiliency, a two-node Storage Spaces Direct cluster can provide continuously accessible storage for apps and VMs even if one server node stops working, a drive fails in the other server node."
+    - content: "3"
+      isCorrect: false
+      explanation: "That's incorrect. Nested resiliency is available only on clusters with two nodes."
+    - content: "4"
+      isCorrect: false
+      explanation: "That's incorrect. Nested resiliency is available only on clusters with two nodes."

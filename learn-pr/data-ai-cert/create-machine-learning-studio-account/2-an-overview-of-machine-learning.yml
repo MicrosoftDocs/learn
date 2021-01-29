@@ -9,7 +9,6 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
   [!include[](includes/2-an-overview-of-machine-learning.md)]
