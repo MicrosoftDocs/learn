@@ -6,7 +6,7 @@ Before you proceed with the implementation, you should first validate that all S
 
 1. Identify the data volume you intend to use for replication and create a corresponding destination volume. For each destination volume, create a corresponding log volume on its respective servers.
 
-    > [!tip]
+    > [!TIP]
     > Log volumes should reside on the faster storage, preferably solid-state drive (SSD)-based.
 
     > [!IMPORTANT]
