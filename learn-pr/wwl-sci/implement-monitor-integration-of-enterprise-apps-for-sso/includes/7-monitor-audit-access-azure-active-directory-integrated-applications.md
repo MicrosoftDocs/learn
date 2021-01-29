@@ -28,7 +28,7 @@ You can also set the focus on a specific application. Select **view sign-in acti
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
 
 > [!div class="mx-imgBorder"]
->![Screenshot shows Usage & insights for Application activity where you can select a range and view sign-in activity for different apps.](../media/usage-and-insights-report.png)
+>[ ![Screenshot shows Usage & insights for Application activity where you can select a range and view sign-in activity for different apps.](../media/usage-and-insights-report.png) ](../media/usage-and-insights-report.png#lightbox)
 
 ## Audit logs
 
@@ -48,7 +48,7 @@ An audit log has a default list view that shows:
 
 - the initiator/actor (who) of an activity
 
-![Audit logs](../media/list-view.png)
+[ ![Audit logs](../media/list-view.png) ](../media/list-view.png#lightbox)
 
 You can customize the list view by clicking **Columns** in the toolbar.
 

@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/28/2021
+  ms.date: 01/29/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
@@ -38,12 +38,12 @@ quiz:
     - content: "Manual and automatic"
       isCorrect: true
       explanation: "Correct. Manual provisioning means there is no automatic Azure AD provisioning connector for the app yet. User accounts must be created manually, for example by adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app or contact the app developer to determine what mechanisms are available. Automatic means that an Azure AD provisioning connector has been developed for this application."
-  - content: "Which of the following groups of information can be found in the Azure Active Direcotry Usage and insights report?"
+  - content: "Which of the following groups of information can be found in the Azure Active Directory Usage and insights report?"
     choices:
     - content: "<ul><li>The top used application in your organization</li> <li>Who gave consent to an application</li> <li>The top sign-in errors for each application</li></ul>"
       isCorrect: false
       explanation: "Incorrect. The Enterprise application audit logs are used to identify who gave consent to an application."
-    - content: "<ul><li>The top used application in your orgnaization</li> <li>The applications with the most failed sign-ins</li> <li>The service that logged the occurence</li></ul>"
+    - content: "<ul><li>The top used application in your organization</li> <li>The applications with the most failed sign-ins</li> <li>The service that logged the occurrence</li></ul>"
       isCorrect: false
       explanation: "Incorrect. Information about a service that logged an occurrence is part of Audit logs and not usage and insights."
     - content: "<ul><li>The top used applications in your organization</li> <li>The application with the most failed sign-ins</li> <li>The top sign-in errors for each application</li></ul>"
