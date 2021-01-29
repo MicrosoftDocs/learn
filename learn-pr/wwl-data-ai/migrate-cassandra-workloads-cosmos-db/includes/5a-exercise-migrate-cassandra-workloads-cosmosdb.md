@@ -227,39 +227,6 @@ The scenario for this lab concerns an ecommerce system. The customer and order d
 1. On the validation page, click **Create**, and wait for the Cosmos DB account to be deployed.
 1. In the left-hand pane, click **All resources**.
 1. On the **All resources** page, click your Cosmos DB account (**cassandra*nnn***).
-1. On the **cassandra*nnn** page, click **Data Explorer**.
-1. In the **Data Explorer** pane, click **New Table**.
-1. In the **Add Table** pane, specify the following settings, and then click **OK**:
-
-    | Property  | Value  |
-    |---|---|
-    | Keyspace name | Click **Create new**, and then type **customerinfo** |
-    | Provision keyspace throughput | **de-selected** |
-    | Enter tableId | **customerdetails** |
-    | *CREATE TABLE* box | (customerid int, firstname text, lastname text, email text, stateprovince text, PRIMARY KEY ((stateprovince), customerid)) |
-    | Throughput | 10000 |
-
-1. In the **Data Explorer** pane, click **New Table**.
-1. In the **Add Table** pane, specify the following settings, and then click **OK**:
-
-    | Property  | Value  |
-    |---|---|
-    | Keyspace name | Click **Create new**, and then type **orderinfo** |
-    | Provision keyspace throughput | **de-selected** |
-    | Enter tableId | **orderdetails** |
-    | *CREATE TABLE* box | (orderid int, customerid int, orderdate date, ordervalue decimal, PRIMARY KEY ((customerid), orderdate, orderid)) |
-    | Throughput | 10000 |
-
-1. In the **Data Explorer** pane, click **New Table**.
-1. In the **Add Table** pane, specify the following settings, and then click **OK**:
-
-    | Property  | Value  |
-    |---|---|
-    | Keyspace name | Click **Use existing**, and then select **orderinfo** |
-    | Enter tableId | orderline |
-    | *CREATE TABLE* box | (orderid int, orderline int, productname text, quantity smallint, orderlinecost decimal, PRIMARY KEY ((orderid), productname, orderline)) |
-    | Throughput | 10000 |
-
 1. On the left under **Settings**, click **Connection String**, and make a note of the following items:
 
    - Contact Point
