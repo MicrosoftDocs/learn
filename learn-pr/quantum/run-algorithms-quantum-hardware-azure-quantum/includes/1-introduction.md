@@ -22,5 +22,5 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Module [Get started with Azure Quantum](https://docs.microsoft.com/learn/modules/get-started-azure-quantum/)
-- Module [Create your first Q# program by using the Quantum development kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/)
+- Module [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/)
+- Module [Create your first Q# program by using the Quantum development kit](/learn/modules/qsharp-create-first-quantum-development-kit/)
