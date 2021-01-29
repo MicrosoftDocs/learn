@@ -18,7 +18,7 @@ An organization might need to use an emergency access account in the following s
 
 ## Create emergency access accounts
 
-Create two or more emergency access accounts. These accounts should be cloud-only accounts that use the *.onmicrosoft.com domain and that are not federated or synchronized from an on-premises environment.
+Create two or more emergency access accounts. These accounts should be cloud-only accounts that use the .onmicrosoft.com domain and that are not federated or synchronized from an on-premises environment.
 
 When configuring these accounts, the following requirements must be met:
 

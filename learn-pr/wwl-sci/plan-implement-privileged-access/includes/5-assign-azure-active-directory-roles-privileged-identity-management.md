@@ -23,7 +23,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
 7. Select the **Select role** menu and then select **Compliance Administrator**.
 
-You can use the **Search role by name** filter to help located a role.
+   You can use the **Search role by name** filter to help located a role.
 
 8. Under **Select member(s),** select **No members selected**.
 
@@ -36,9 +36,9 @@ You can use the **Search role by name** filter to help located a role.
 
 11. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
 
-  - Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
+     - Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
 
-  - Active assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
+     - Active assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 
 12. Review the remaining settings and then select **Assign**.
 

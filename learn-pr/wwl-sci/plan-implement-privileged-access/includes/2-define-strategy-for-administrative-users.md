@@ -171,8 +171,8 @@ Even though we recommend zero standing administrators, it is sometimes difficult
 
 - Cases specific to your organization – If the person being given the eligible role is from a distant team or a high-ranking executive to the point that communicating and enforcing the elevation process is difficult, they can be considered for the permanent role.
 
-> [!TIP]
-> Microsoft recommends you to set up recurring access reviews for users with permanent role assignments (should you have any). 
+    > [!TIP]
+    > Microsoft recommends you to set up recurring access reviews for users with permanent role assignments (should you have any). 
 
 ## Draft your Privileged Identity Management settings
 

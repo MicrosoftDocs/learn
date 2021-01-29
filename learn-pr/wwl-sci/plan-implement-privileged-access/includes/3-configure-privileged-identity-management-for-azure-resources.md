@@ -27,7 +27,7 @@ When you first set up PIM for Azure resources, you need to discover and select t
     > [!div class="mx-imgBorder"]
     > ![Screen image displaying the Discovery resource page within the Azure resources](../media/discovery-pane.png)
 
-6. On the **Discovery** page, use **Resource state filter** and Select resource type to filter the management groups or subscriptions you have write permission to. It's probably easiest to start with **All** initially.You can search for and select management group or subscription resources to manage in PIM. When you manage a management group or a subscription in PIM, you can also manage its child resources.
+6. On the **Discovery** page, use **Resource state filter** and Select resource type to filter the management groups or subscriptions you have write permission to. It's probably easiest to start with **All** initially. You can search for and select management group or subscription resources to manage in PIM. When you manage a management group or a subscription in PIM, you can also manage its child resources.
 
     > [!NOTE]
     > When you add a new child Azure resource to a PIM-managed management group, you can bring the child resource under management by searching for it in PIM.
