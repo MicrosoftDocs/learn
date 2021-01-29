@@ -2,7 +2,7 @@ Visual Studio App Center supports Azure AD Conditional Access, an advanced featu
 
 ## Setting up Conditional Access
 
-This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [https://docs.microsoft.com/azure/active-directory/conditional-access/overview](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview).
+This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [https://docs.microsoft.com/azure/active-directory/conditional-access/overview](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 In the Azure portal, open your Active Directory tenant, then open the **Security** settings, and click on **Conditional Access**.
 
@@ -170,7 +170,7 @@ Organizations that have deployed Microsoft Intune can use the information return
 
 This policy compliance information is forwarded to Azure AD where Conditional Access can make decisions to grant or block access to resources.
 
-## Create a Conditional Access policy
+### Create a Conditional Access policy
 
 The following steps will help create a Conditional Access policy to require devices accessing resources be marked as compliant with your organization's Intune compliance policies.
 

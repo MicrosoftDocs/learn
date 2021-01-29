@@ -13,7 +13,7 @@ Azure Active Directory Conditional Access is an advanced feature of Azure AD tha
 5. On the top menu, select **New policy**.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying the Conditional Access blade with New policy highlighted](../media/lp2-mod1-conditional-access-new-policy.png)
+> ![Screen image displaying the Conditional Access blade with New policy highlighted](../media/conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Test app conditional access**.
 
@@ -45,7 +45,7 @@ Azure Active Directory Conditional Access is an advanced feature of Azure AD tha
 17. Under **Enable policy**, select **On**, and then select **Create**.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying a new conditional access policy with enable and create highlighted](../media/lp2-mod3-create-conditional-access-policy.png)
+> ![Screen image displaying a new conditional access policy with enable and create highlighted](../media/create-conditional-access-policy.png)
 
 ## Test the conditional access policy
 
@@ -58,7 +58,7 @@ You should test your conditional access policies to ensure they working as expec
 3. Verify you are prevented from successfully access you My Apps page.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](../media/lp2-mod3-test-conditional-access-policy.png)
+> ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](../media/test-conditional-access-policy.png)
 
    If you are signed in, close the tab, wait 1-2 minutes, and then retry.
 

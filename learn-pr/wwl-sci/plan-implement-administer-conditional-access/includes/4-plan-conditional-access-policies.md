@@ -22,7 +22,7 @@ The benefits of deploying CA are:
 
 - Zero trust. Conditional Access helps you move toward a zero-trust environment.
 
-## Understand CA policy components
+## Understand Conditional Access policy components
 
 CA policies are if-then statements: If an assignment is met, then apply these access controls. When configuring CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
 

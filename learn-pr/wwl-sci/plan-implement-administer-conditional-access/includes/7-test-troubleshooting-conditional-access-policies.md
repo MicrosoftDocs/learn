@@ -25,7 +25,7 @@ The first way is to review the error message that appears. For problems signing 
 
 In the above error, the message states that the application can only be accessed from devices or client applications that meet the company's mobile device management policy. In this case, the application and device do not meet that policy.
 
-## Azure AD sign-in events
+## Azure Active Directory sign-in events
 
 The second method to get detailed information about the sign-in interruption is to review the Azure AD sign-in events to see which Conditional Access policy or policies were applied and why.
 

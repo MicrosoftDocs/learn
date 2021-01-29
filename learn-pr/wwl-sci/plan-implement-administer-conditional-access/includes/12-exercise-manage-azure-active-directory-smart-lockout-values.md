@@ -1,4 +1,4 @@
-## Manage Azure AD smart lockout values
+## Manage Azure Active Directory smart lockout values
 
 Based on your organizational requirements, you can customize the Azure AD smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Azure AD Premium P1 or higher licenses for your users.
 
@@ -13,7 +13,7 @@ Based on your organizational requirements, you can customize the Azure AD smart 
 5. In the left navigation, select **Password protection**.
 
 > [!div class="mx-imgBorder"]
-> ![Screen image displaying the Authentication methods blade and the highlighted selections to browse to Password authentication](../media/lp2-mod3-browse-to-password-protection.png)
+> ![Screen image displaying the Authentication methods blade and the highlighted selections to browse to Password authentication](../media/browse-password-protection.png)
 
 6. In the Password protection settings, in the **Lockout duration in seconds** box, set the value to 120.
 

@@ -187,7 +187,7 @@ App protection policies can be configured for apps that run on devices that are:
 > [!IMPORTANT]
 > You can create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. You can also protect access to Exchange on-premises mailboxes by creating Intune app protection policies for Outlook for iOS/iPadOS and Android enabled with hybrid Modern Authentication. Before using this feature, make sure you meet the Outlook for iOS/iPadOS and Android requirements. App protection policies are not supported for other apps that connect to on-premises Exchange or SharePoint services.
 
-### Benefits of using App protection policies
+### Benefits of using app protection policies
 
 The important benefits of using app protection policies are the following:
 
