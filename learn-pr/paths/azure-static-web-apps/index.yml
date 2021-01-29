@@ -24,7 +24,7 @@ prerequisites: |
   - [Node.js LTS and Git](https://nodejs.org/)
   - [GitHub](https://github.com) account
   - [Visual Studio Code](https://code.visualstudio.com)
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-static-web-apps.svg
 levels:
 - beginner
 roles:
