@@ -43,7 +43,7 @@ Advanced data security (ADS) provides a set of advanced SQL security capabilitie
 
 Advanced Threat Protection is part of the advanced data security (ADS) offering, which is part of the defense in depth SQL security strategy. Advanced Threat Protection can be accessed and managed via the central SQL ADS portal.
 
-    ![Screenshot the SQL Server setting pane](../media/5-auditing.png)
+   ![Screenshot the SQL Server setting pane](../media/5-auditing.png)
 
 ### Enable the option to send security alerts - Level 1
 
