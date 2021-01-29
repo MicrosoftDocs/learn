@@ -98,10 +98,10 @@ In both cases, the name of the image should be _docs-and-friends-selfie-stick.pn
 
 > [!NOTE]
 > Make sure you're in the PhotoSharingApp directory.
-
-    ```dotnetcli
+    
+```dotnetcli
     dotnet run
-    ```  
+```  
 
 ::: zone-end
 
@@ -184,9 +184,9 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
 > [!NOTE]
 > Make sure you're in the PhotoSharingApp directory.
 
-    ```bash
+```bash
     node index.js
-    ```
+```
 
 > [!TIP]
 > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
