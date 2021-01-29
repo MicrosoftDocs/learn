@@ -48,19 +48,19 @@ An audit log has a default list view that shows:
 
 - the initiator/actor (who) of an activity
 
-[ ![Audit logs](../media/list-view.png) ](../media/list-view.png#lightbox)
+[ ![Audit logs.](../media/list-view.png) ](../media/list-view.png#lightbox)
 
 You can customize the list view by clicking **Columns** in the toolbar.
 
-![Audit columns](../media/columns.png)
+![Audit columns.](../media/columns.png)
 
 This enables you to display additional fields or remove fields that are already displayed.
 
-![Remove fields](../media/column-select.png)
+![Remove fields.](../media/column-select.png)
 
 Select an item in the list view to get more detailed information.
 
-![select item](../media/details.png)
+![select item.](../media/details.png)
 
 ## Enterprise applications audit logs
 
@@ -78,5 +78,5 @@ With application-based audit reports, you can get answers to questions such as:
 
 If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** blade. This entry point has **Enterprise applications** preselected as the **Application Type**.
 
-![Enterprise applications](../media/enterprise-applications.png)
+![Enterprise applications.](../media/enterprise-applications.png)
 
