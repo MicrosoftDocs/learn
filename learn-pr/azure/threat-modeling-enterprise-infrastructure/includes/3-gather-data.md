@@ -2,7 +2,7 @@ To help you navigate the infrastructure threat modeling module, we created a fic
 
 ## Company background
 
-![Woodgrove bank](../media/Woodgrove.svg)
+![Woodgrove bank](../media/WoodgroveBank.svg)
 
 Established in 2018, Woodgrove Bank is an online banking provider that gives customers the ability to conduct financial transactions and bill payments online.
 
