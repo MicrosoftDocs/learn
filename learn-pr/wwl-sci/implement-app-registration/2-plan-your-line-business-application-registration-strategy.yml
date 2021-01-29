@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-plan-your-line-of-business-application-registration-strategy.md)]
+  [!include[](includes/2-plan-your-line-business-application-registration-strategy.md)]
