@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-multi-table-statements-kql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which join flavor contains a row in the output for every combination of matching rows from left and right?"
+    choices:
+    - content: "kind=leftouter"
+      isCorrect: false
+      explanation: "Incorrect.  Leftouter Contains a row for every row on the left and right, even if it has no match."
+    - content: "kind=inner"
+      isCorrect: true
+      explanation: "Correct.  Inner contains a row in the output for every combination of matching rows from left and right."
+    - content: "kind=fullouter"
+      isCorrect: false
+      explanation: "Incorrect.  Fullouter Contains a row for every row on the left and right, even if it has no match."
+  - content: "When using the join operator, how do you specify fields from each table?"
+    choices:
+    - content: "`$1.columname` and `$2.columnname`"
+      isCorrect: false
+      explanation: "Incorrect. The $left and $right preceding the field name specifies the table."
+    - content: "`$left.columname` and `$right.columnname`"
+      isCorrect: true
+      explanation: "Correct.  The $left and $right preceding the field name specifies the table."
+    - content: "`$inner.columname` and `$outer.columnname`"
+      isCorrect: false
+      explanation: "Incorrect. The $left and $right preceding the field name specifies the table."
+  - content: "When you union two tables, the two tables need matching columns?"
+    choices:
+    - content: "No."
+      isCorrect: true
+      explanation: "Correct.  The results contain all columns from both tables."
+    - content: "Yes."
+      isCorrect: false
+      explanation: "Incorrect.  The result set will contain columns from both tables, even if the columns don't match."
+    - content: "Only when the project operator is used."
+      isCorrect: false
+      explanation: "Incorrect.  The result set will contain columns from both tables, even if the columns don't match."

@@ -14,10 +14,7 @@ You also learned a bit about chocolate production!
 
 ## Clean up
 
-Delete the resources manually by locating the resources in the Azure portal and selecting the delete icon. Delete the following resources you created in Unit 2:
-
-- the Azure Digital Twins instance
-- the Azure Active Directory app registration
+Delete the resources manually by locating the Azure Digital Twins instance you created in Unit 2 in the Azure portal. Select the resource and delete it.
 
 ## Next steps
 

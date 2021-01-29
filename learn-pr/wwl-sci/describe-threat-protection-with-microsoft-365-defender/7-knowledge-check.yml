@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A lead admin for an organization is looking to protect against malicious threats posed by email messages, links (URLs), and collaboration tools. Which solution from the Microsoft 365 Defender suite is best suited for this purpose?"
+    choices:
+    - content: "Microsoft Defender for Office 365 (MSDO)."
+      isCorrect: true
+      explanation: "That's correct. Microsoft Defender for Office 365 (MSDO) safeguards against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients."
+    - content: "Microsoft Defender for Endpoint (MSDE)."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Defender for Endpoint (MSDE) is a platform designed to help enterprise networks protect endpoints by preventing, detecting, investigating, and responding to advanced threats."
+    - content: "Microsoft Defender for Identity."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Defender for Identity is a cloud-based security solution that uses on-premises Active Directory data to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at an organization."
+  - content: "A team admin is asked to provide a short presentation on the use and benefit of Microsoft Cloud App Security. Which of the four MCAS pillars is responsible for identifying and controlling sensitive information?"
+    choices:
+    - content: "Threat protection."
+      isCorrect: false
+      explanation: "That's incorrect. Threat protection offers adaptive access control but isn't used to identify and control sensitive information."
+    - content: "Compliance."
+      isCorrect: false
+      explanation: "That's incorrect. Compliance covers data residency and regulatory compliance."
+    - content: "Data Security."
+      isCorrect: true
+      explanation: "That's correct. Through the Data Security pillar, an admin can identify and control sensitive information and respond to classification labels on content."
+  - content: "When considering using Microsoft Cloud App Security for an organization, what is one of the key considerations?"
+    choices:
+    - content: "The data security of your entire estate."
+      isCorrect: false
+      explanation: "That's incorrect. While data security is important for any organization. However,  it's not the key considerations for Microsoft Cloud App Security."
+    - content: "The architecture of your entire estate."
+      isCorrect: true
+      explanation: "That's correct. When using Cloud App Security, consideration must be given to the entire estate."
+    - content: "The use of Shadow IT in your entire estate."
+      isCorrect: false
+      explanation: "That's incorrect. While the use of shadow IT is important for any organization it is not one of the key considerations when implementing Microsoft Cloud App Security."

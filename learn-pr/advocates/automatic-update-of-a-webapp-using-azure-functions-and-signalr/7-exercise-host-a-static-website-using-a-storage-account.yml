@@ -8,7 +8,6 @@ metadata:
   ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Use a storage account to host a static website
 interactive: bash
 azureSandbox: true

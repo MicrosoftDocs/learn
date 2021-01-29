@@ -27,7 +27,7 @@ quiz:
     - content: "A load balancer"
       isCorrect: true
       explanation: "That's correct. The listener requires the creation of an Azure load balancer and has some additional configuration in the WSFC related to the load balancer."
-  - content: "What tool can be used to create a WSFC in Azure for AGs and FCIs?"
+  - content: "What tool can be used to enable a WSFC in Azure for AGs and FCIs?"
     choices:
     - content: "Wizard in Failover Cluster Manager"
       isCorrect: false

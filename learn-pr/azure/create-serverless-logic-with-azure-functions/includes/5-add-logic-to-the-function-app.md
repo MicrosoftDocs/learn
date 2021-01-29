@@ -282,7 +282,7 @@ module.exports = function (context, req) {
 
 The logic we added is straightforward. We iterate over the array of readings and check the temperature field. Depending on the value of that field, we set a status of **OK**, **CAUTION**, or **DANGER**. We then send back the array of readings with a status field added to each entry.
 
-Notice the `Log` statements when you expand **Logs** at the bottom of the page. When the function runs, these statements will add messages in the log window.
+Notice the `Log` statements when you expand **Logs** at the bottom of the page. When the function runs, these statements will add messages in the Logs window.
 
 ::: zone-end
 
@@ -329,7 +329,7 @@ Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
 
 The logic we added is straightforward. We iterate over the array of readings and check the temperature field. Depending on the value of that field, we set a status of **OK**, **CAUTION**, or **DANGER**. We then send back the array of readings with a status field added to each entry.
 
-Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the log window.
+Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the Logs window.
 
 ::: zone-end
 

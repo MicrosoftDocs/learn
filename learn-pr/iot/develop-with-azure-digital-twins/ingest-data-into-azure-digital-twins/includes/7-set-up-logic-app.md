@@ -52,7 +52,7 @@ In this unit a custom Logic App connector will be created and used within a Logi
         - Login URL: https://login.windows.net (leave default)
         - Tenant ID: The Directory (tenant) ID for your Azure AD app registration
         - Resource URL: 0b07f429-9f4b-4714-9392-cc5e8e80c8b0
-        - Scope: https://digitaltwins.azure.net/.default
+        - Scope: 'https://digitaltwins.azure.net/.default'
         - Redirect URL: (leave default for now)
 
         > [!Note]

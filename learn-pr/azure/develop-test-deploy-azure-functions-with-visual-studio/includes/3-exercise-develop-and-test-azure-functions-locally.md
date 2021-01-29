@@ -12,7 +12,9 @@ Create an Azure Functions app using the **Azure Functions** template.
 
     :::image type="content" source="../media/3-create-project.png" alt-text="Screenshot of the Visual Studio 2019 with Create a new project link." loc-scope="vs":::
 
-1. The **Configure your new project** page appears. In the **Project name** field, enter **WatchPortalFunction**. For the **Location** field, select a convenient location on your computer to store the project. The **Solution name** field should default to **WatchPortalFunction**. Select the checkbox **Place solution and project in the same directory**, and then select **Create.**
+1. The **Configure your new project** page appears. In the **Project name** field, enter **WatchPortalFunction**. For the **Location** field, select a convenient location on your computer to store the project. The **Solution name** field should default to **WatchPortalFunction**. Make sure **Place solution and project in the same directory** is NOT selected (unchecked). This will result in the proper folder structure throughout the learning module.
+
+1. Select **Create.**
 
     :::image type="content" source="../media/3-configure-project.png" alt-text="Screenshot of the Visual Studio 2019 with Configure your new project link." loc-scope="vs":::
 
@@ -92,7 +94,7 @@ Create an Azure Functions app using the **Azure Functions** template.
     if (model != null)
     {
         // Use dummy data for this example
-        dynamic watchinfo = new { Manufacturer = "Abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
+        dynamic watchinfo = new { Manufacturer = "abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
 
         return (ActionResult)new OkObjectResult($"Watch Details: {watchinfo.Manufacturer}, {watchinfo.CaseType}, {watchinfo.Bezel}, {watchinfo.Dial}, {watchinfo.CaseFinish}, {watchinfo.Jewels}");
     }

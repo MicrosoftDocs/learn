@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-capabilities-of-microsoft-identity-access-management-solutions
+metadata:
+  title: Describe the capabilities of Microsoft Identity and access management solutions
+  description: Describe the capabilities of Microsoft Identity and access management solutions
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Describe the capabilities of Microsoft Identity and access management solutions
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+summary: |
+  Azure Active Directory is the tool for identity and access management in the Microsoft Cloud.  Learn about Azure AD services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
+iconUrl: /learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure-active-directory
+modules:
+- learn.wwl.describe-identity-principles-concepts
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad
+- learn.wwl.explore-authentication-capabilities-of-azure-ad
+- learn.wwl.explore-access-management-capabilities-of-azure-ad
+- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad
+trophy:
+  uid: learn.wwl.describe-capabilities-of-microsoft-identity-access-management-solutions.trophy

@@ -30,7 +30,7 @@ Scaling your database after deployment means that you can reduce costs for your 
 
 ## How the backups work
 
-Backup and restore are an essential part of any business continuity strategy because they protect your data from accidental corruption or deletion. For example, when a user accidentally deletes data, drops an important table or database, or if an application accidentally overwrites good data with bad data. On Azure Databases for PostgreSQL, data is backed up and encrypted on Azure storage by default. Backups can be used to restore data to any point in time within the last 35 days. 
+Backup and restore are an essential part of any business continuity strategy because they protect your data from accidental corruption or deletion. For example, when a user accidentally deletes data, drops an important table or database, or if an application accidentally overwrites good data with bad data. On Azure Databases for PostgreSQL, data is backed up and encrypted on Azure storage by default. Backups can be used to restore data to any point in time within the last 35 days.
 
 Servers can also be replicated on up to 5 read-only ‘read replica’ servers, improving the performance and scale of read-intensive workloads. A common scenario is to have business intelligence and analytical workloads use the read replica as the data source for reporting.
 
