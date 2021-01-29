@@ -262,7 +262,7 @@ All users with a work, school, or personal Microsoft account can use your applic
 :::column-end:::
 :::row-end:::
 
-### Best practices for multi-tenant apps
+### Best practices for multi-tenant apps
 
 Building great multi-tenant apps can be challenging because of the number of different policies that IT administrators can set in their tenants. If you choose to build a multi-tenant app, follow these best practices:
 
