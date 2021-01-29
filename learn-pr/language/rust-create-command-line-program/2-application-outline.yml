@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-command-line-program.application-outline
+metadata:
+  title: Outline the application
+  description: Identify what the command line application will do and the approach to implement it.
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Outline the application
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-application-outline.md)]
