@@ -26,14 +26,17 @@ quiz:
   - content: 'Which of the following databases are best to perform event driven workloads?'
     choices:
     - content: Cosmos DB
-      isCorrect: true
-      explanation: "Correct. Cosmos DB ensures single-digit millisecond response times, and automatic and instant scalability."
+      isCorrect: false
+      explanation: "Yes, Cosmos DB ensures single-digit millisecond response times, and automatic and instant scalability. But aren't you missing one?"
     - content: MySQL
       isCorrect: false
-      explanation: "MySQL doesn't support instant scalability."
+      explanation: "Azure Mysql Database is a fully managed database service that lets developers quickly develop and deploy secure cloud-native applications also for event driven workloads. But aren't you missing one?"
     - content: PostgreSQL
       isCorrect: false
-      explanation: "PostgreSQL doesn't support instant scalability."
+      explanation: "Azure Database for PostgreSQL is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability. But aren't you missing one?"
+    - content: All of them.
+      isCorrect: true
+      explanation: "Yes, using an event-driven workload does not limit you from a specific database. Choose the one fitting best to your given scenario."
   - content: "How should events be build?"
     choices:
     - content: "Events should be build generic."
