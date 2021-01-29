@@ -20,8 +20,7 @@ summary: |
     - Use generic types and traits.
     - Set up modules for packages and crates.
     - Run automated tests.
-    - Create a command-line program.
-    
+    - Create a command-line program.    
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
