@@ -12,7 +12,7 @@ Each node is connected to other nodes using a blockchain network. For example, D
 
 Data in a blockchain represents state. That's why digital tokens like cryptocurrency are a good fit for blockchain. If we think about the ownership of physical currency, a coin can only be in one person's pocket at a time. If the coin is in your pocket, the state of ownership is yours. If you give the coin to your friend, the state changes to your friend owning the coin. In our scenario, shipments move through the supply chain. Responsibility for the product must be transferred. The data we're interested in is the responsible party, temperature, and if the product is in compliance.
 
-Blockchain uses transactions change the state of the data from one value to another. For example, we need to know if the ice cream is stored below freezing. In a shipment of ice cream, a temperature sensor reports the temperature periodically. The reported temperature is a transaction that is sent to a blockchain transaction node.
+Blockchain uses transactions to change the state of the data from one value to another. For example, we need to know if the ice cream is stored below freezing. In a shipment of ice cream, a temperature sensor reports the temperature periodically. The reported temperature is a transaction that is sent to a blockchain transaction node.
 
 ![Example transaction from an IoT temperature sensor. The transaction sets the temperature to -2° celsius in the ledger.](../media/transaction.png)
 

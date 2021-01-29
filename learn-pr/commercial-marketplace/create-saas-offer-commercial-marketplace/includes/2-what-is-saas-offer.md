@@ -2,7 +2,7 @@
 
 When you publish your SaaS application to the Microsoft commercial marketplace, it’s called a SaaS offer. Customers can find SaaS offers in both of the commercial marketplace online stores—[**Azure Marketplace**](https://azuremarketplace.microsoft.com/) and [**Microsoft AppSource**](https://appsource.microsoft.com/). Your application’s placement in one or both online stores depends on the kind of service the application provides and the industries it was built to serve.
 
-IT-focused SaaS solutions are placed in Azure Marketplace, including the Azure Marketplace experience in the Azure portal. These applications help customers build, run, analyze, and manage customer’s workloads in the cloud.
+IT-focused SaaS solutions are placed in Azure Marketplace, including the Azure Marketplace experience in the Azure portal. These applications help customers build, run, analyze, and manage their workloads in the cloud.
 
 Business-oriented SaaS applications are typically found in Microsoft AppSource. These applications help customers run their businesses and include software built to serve specific industries such as financial services, healthcare, and manufacturing.
 
@@ -12,7 +12,7 @@ Before you publish your SaaS offer to the commercial marketplace, you’ll need 
 
 :::image type="content" source="../media/2-sell-through-microsoft.png" alt-text="Screenshot of the 'sell through Microsoft' question from the offer setup page in Partner Center.":::
 
-To start, you’ll be asked if you would like to sell through Microsoft. You’ll have the following options:
+When asked if you'd like to sell through Microsoft, you’ll have the following options:
 
 - **No**: If you answer “no,” customers will be able to find information about your SaaS application in Microsoft AppSource and Azure Marketplace, but they won’t be able to purchase it directly through Microsoft. You’ll have to process transactions and manage customers independently. These offers are referred to as a “list” offers, which we’ll explain in more detail soon.
 

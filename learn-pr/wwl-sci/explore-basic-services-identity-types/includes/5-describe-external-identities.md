@@ -23,6 +23,7 @@ With Azure AD B2C, external users are managed in the Azure AD B2C directory, sep
 
 Azure AD B2C is an authentication solution that you can customize with your brand so that it blends with your web and mobile applications.
 
-:::image type="content" source="../media/customized-screen.png" alt-text="Azure AD B2C customized sign-in screen":::
+![Azure AD B2C customized sign-in screen](../media/customized-screen.png)
+
 
 Azure AD External Identities is a feature of Premium P1 and P2 Azure AD editions, and pricing is based on Monthly Active Users. For more information, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/external-identities/).
