@@ -4,47 +4,37 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/15/2021
+  ms.date: 01/25/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When browsing Microsoft compliance documentation, you have found several documents that are specific to your industry. What is the best way of ensuing you keep up to date with the information they contain?"
+  - content: "What is the best way of staying current with Microsoft compliance documentation available through the Service Trust Portal?"
     choices:
     - content: "Save the documents to your My Library."
       isCorrect: true
-      explanation: "This is correct. By saving the documents to your My Library you will be prompted to say when you want to be notified of updates."
+      explanation: "That's correct. By saving the documents to your My Library you will be prompted to say when you want to be notified of updates."
     - content: "Print each document so you can easily refer to them."
       isCorrect: false
-      explanation: "This is incorrect. Printing the documents will not inform you of any changes to the documents."
+      explanation: "That's incorrect. Printing the documents will not inform you of any changes to the documents."
     - content: "Download each document."
       isCorrect: false
-      explanation: "This is incorrect. Downloading the documents will not keep you notified of any updates to the documents."
-  - content: "A colleague has asked for your help in locating compliance and regulatory information relevant to your industry. You want to provide one link that will provide all the information they might need. Which Microsoft link should you send?"
+      explanation: "That's incorrect. Downloading the documents will not keep you notified of any updates to the documents."
+  - content: "A compliance admin is looking for regulatory information relevant to a specific region, which one link will provide the needed information?"
     choices:
     - content: "Microsoft Privacy Principles."
       isCorrect: false
-      explanation: "This is incorrect. Microsoft’s Privacy Principles set out the guiding principles for security decisions but do not provide compliance and regulatory documentation."
+      explanation: "That's incorrect. Microsoft’s Privacy Principles set out the guiding principles for security decisions but do not provide compliance and regulatory documentation."
     - content: "Service Trust Portal."
       isCorrect: true
-      explanation: "This is correct. From the Service Trust Portal there are links to different sites containing compliance and regulatory documentation."
+      explanation: "That's correct. From the Service Trust Portal there are links to different sites containing compliance and regulatory documentation."
     - content: "Microsoft Compliance Manager."
       isCorrect: false
-      explanation: "This is incorrect. Microsoft Compliance Manager measures your progress in reducing risk."
-  - content: "One of Microsoft’s six Privacy Principles is Strong Legal Protections. What benefit does this principle provide to your organization?"
-    choices:
-    - content: "You're assured that Microsoft will pay your legal fees if your company has a data breach."
-      isCorrect: false
-      explanation: "This is incorrect. Microsoft respects local privacy laws, you but are responsible for your data and legal costs."
-    - content: "You're assured that Microsoft has good legal teams that can defend lawsuits brought against them."
-      isCorrect: false
-      explanation: "This is incorrect. This privacy principle refers to Microsoft adhering to privacy laws in all locales in which they operate."
-    - content: "You're assured that Microsoft respects privacy laws in your locale."
-      isCorrect: true
-      explanation: "This is correct. Strong Legal Protections means respecting local privacy laws."
+      explanation: "That's incorrect. Microsoft Compliance Manager measures your progress in reducing risk."

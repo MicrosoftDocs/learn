@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/15/2021
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -15,18 +15,18 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your organization has deployed Microsoft 365 applications to all employees. Who is responsible for the security of the personal data relating to your employees?"
+  - content: "An organization has deployed Microsoft 365 applications to all employees. Who is responsible for the security of the personal data relating to these employees?"
     choices:
-    - content: "Your organization."
+    - content: "The organization."
       isCorrect: true
       explanation: "That's correct. In the shared responsibility model, the customer organization always has responsibility for their data, including personal data relating to employees."
     - content: "Microsoft, the SaaS provider."
       isCorrect: false
-      explanation: "That's incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on, the cloud customer is responsible for data, including personal data."
-    - content: "The shared responsibility between your organization and Microsoft."
+      explanation: "That's incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on. The cloud customer is responsible for data, including personal data."
+    - content: "There's shared responsibility between an organization and Microsoft."
       isCorrect: false
       explanation: "That's incorrect. The shared responsibility model shows that the cloud customer always retains responsibility for data, including personal data."
-  - content: "Your organization has adopted the defense in-depth security methodology. Which of the following measures might you implement?"
+  - content: "Which of the following measures might an organization implement as part of the defense in-depth security methodology?"
     choices:
     - content: "Locating servers at different locations in your organization."
       isCorrect: false
@@ -37,14 +37,14 @@ quiz:
     - content: "Ensuring there's no segmentation of your corporate network."
       isCorrect: false
       explanation: "That's incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
-  - content: "You've been advised that your department must protect employee training data. Which security mechanism would you use?"
+  - content: "The human resources organization want to ensure that stored employee data is encrypted. Which security mechanism would they use?"
     choices:
-    - content: "Hashing."
+    - content: "Encryption in transit."
       isCorrect: false
-      explanation: "That's  incorrect. Hashing uses a one-way algorithm to store data in an encrypted state. However, you would not be able to read the employee training data, making it an unsuitable method to protect the data."
+      explanation: "That's  incorrect.  Encryption in transit is used for encrypting data that is moving from one location to another, not for data that is stored or at rest."
     - content: "Digital signing."
       isCorrect: false
-      explanation: "That's incorrect. Digital signing is a mechanism to show that a message has come from the correct sender, and has not been tampered with, making it an inappropriate method to protect the data."
+      explanation: "That's incorrect. Digital signing is a mechanism to show that a message has come from the correct sender, and has not been tampered with, making it an inappropriate method to protect the stored data."
     - content: "Encryption at rest."
       isCorrect: true
-      explanation: "That's correct. Encryption at rest could be part of a security strategy to protect employee training data."
+      explanation: "That's correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
