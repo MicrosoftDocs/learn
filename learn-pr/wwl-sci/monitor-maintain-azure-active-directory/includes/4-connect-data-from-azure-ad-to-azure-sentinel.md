@@ -18,18 +18,18 @@ Use these instructions if you do not already have a workspace available to Azure
 
 3. In the Azure Sentinel workspaces blade, on the menu, select **+ Add**.
 
- If you already have an Azure Sentinel workspace, you can select that and continue to the next task.
+    If you already have an Azure Sentinel workspace, you can select that and continue to the next task.
 
 4. In the Add Azure Sentinel to a workspace blade, select **Create a new workspace**.
 
 5. Use the following information to create a new log analytics workspace:
 
-| Setting| Value|
-| :--- | :--- |
-| Subscription  | Use your current subscription.|
-| Resource group| Use an existing resource group or create a new one.|
-| Name          | <li>**Lab-workspace-yourinitialsanddate** </li><li>The workspace must be a globally unique value. </li>|
-| Pricing tier  | Pay-as-you-go|
+    | Setting| Value|
+    | :--- | :--- |
+    | Subscription  | Use your current subscription.|
+    | Resource group| Use an existing resource group or create a new one.|
+    | Name          | <li>**Lab-workspace-yourinitialsanddate** </li><li>The workspace must be a globally unique value. </li>|
+    | Pricing tier  | Pay-as-you-go|
 
 6. When complete, select your new workspace and then select **Add** to add the workspace to Azure Sentinel.
 
@@ -41,13 +41,13 @@ You can use Azure Sentinel's built-in connector to collect data from [Azure Acti
 
 2. In the **Data connectors** list, select **Azure Active Directory** and then select **Open connector page**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the data connectors blade with the Azure Active Directory connector and Open Connector page highlighted](../media/lp4-mod4-sentinel-add-aad-connector.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the data connectors blade with the Azure Active Directory connector and Open Connector page highlighted](../media/sentinel-add-azure-active-directory-connector.png)
 
 3. Under **Configuration**, select the **Azure Active Directory Sign-in logs** and **Audit logs** checkboxes and then select **Apply changes**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the Azure Active Directory logs collected by Azure Sentinel selections highlighted](../media/lp4-mod4-sentinel-config-aad-connector.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the Azure Active Directory logs collected by Azure Sentinel selections highlighted](../media/sentinel-configure-azure-active-directory-connector.png)
 
 4. Close the Azure Active Directory connector page.
 
