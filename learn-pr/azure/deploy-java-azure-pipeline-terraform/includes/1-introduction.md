@@ -4,7 +4,7 @@ Imagine you're an infrastructure manager and have been asked to provision your A
 
 Automation typically uses three tracks - Provision, Build, and Deploy.
 Each track can have one or more "pipelines".
-In the below image, there are multiple pipelines in the "provision" track with each pipeline focusing on the infrastructure a team.
+In the below image, there are multiple pipelines in the "provision" track with each pipeline focusing on the infrastructure for a team.
 
 ![track types.](../media/1-tracks.png)
 
