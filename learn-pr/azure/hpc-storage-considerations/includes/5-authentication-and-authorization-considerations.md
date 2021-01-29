@@ -1,10 +1,12 @@
-Once you understand the overall performance and traffic characteristics, you will need to consider *security* aspects of your workload. Your data may be sensitive, such as patient radiological images. You may want to restrict access to the data for many reasons. You may want to offer each of your researchers their own "home directory" from which they can load data and conduct HPC analysis and simulations.
+# How does security impact HPC workflows?
+
+After you understand the overall performance and traffic characteristics, you will need to consider *security* aspects of your workload. Your data may be sensitive, such as patient radiological images. You may want to restrict access to the data for many reasons. You may want to offer each of your researchers their own "home directory" from which they can load data and conduct HPC analysis and simulations.
 
 When you select your HPC storage, you must be aware of how it will integrate with your current file system security posture. You must understand the methods by which your file system will authenticate and authorize access to the files, whether the enforcement is local or remote (or both), where authentication and authorization is sourced. If using a remote file system, you will need to understand how to control access via standard NAS practices. Finally, if you are offering unique working spaces for users (home directories), you may need to understand how to allocate that space.
 
 By the end of this module you will have gained understanding of these considerations and how they impact your storage architecture.
 
-### Overview of Authentication and Authorization ###
+## Overview of Authentication and Authorization
 
 If you have an on-premises environment, it is very likely this is review for you, but it's important to appreciate the acts of authentication and authorization.
 
@@ -22,7 +24,7 @@ The Linux OS assigns an *user identifier* (UID) to individual user accounts. The
 
 Linux OS uses *group identifiers* (GIDs) for group assignments. A user is associated with a single primary group. Users can be associated with any number of additional, or supplemental, group assignments, up to 65536 on most modern Linux systems.
 
-#### Local and Remote Authentication and Authorization ####
+### Local and Remote Authentication and Authorization 
 
 Local authentication and authorization refers to the access of a local file system by a user/machine account that is also local to the machine. For example, I may create a user account that I then grant access to the `/data` directory located on my local file system. That user account is local, as is any grant of access to the directory. I may also use group assignment to control access. The combination of user and group authorization gives a user *effective* permissions over a file/folder.
 

@@ -1,37 +1,41 @@
-File access, in the context of running HPC workloads, involves ensuring that the required data is present on HPC cluster machines at the right time, and that any results from those individual machines are quickly saved, making that data available for further analysis.
+# How does file access impact HPC workloads?
 
-Files can be a variety of data, including but not limited to:
+File access is an important part of planning for HPC workloads. You need to make sure that the required data gets to HPC cluster machines at the right time. You also need to make sure results from those individual machines are quickly saved and available for further analysis.
 
-- unstructured data such as images, documents, or media files.
-- time-series data from various sources.
-- pricing data (such as stock price history).
-- assets used for computational analysis, such as genomic data, radiological imagery, or weather simulation.
+Files can be a variety of data, including but not limited to these:
+
+- Unstructured data, such as images, documents, or media files.
+- Time-series data from various sources.
+- Pricing data (such as stock price history).
+- Assets used for computational analysis, such as genomic data, radiological imagery, or weather simulation.
 
 The data is assumed to reside in one or more storage solutions in your local environment. Storage solutions in this context include the following:
 
-- Directly-attached disks; Each machine in the HPC cluster has their own local disks and storage.
-- Storage-Area Network (SAN) solution.
-- Network-attached Storage (NAS) solution.
+- Directly attached disks - that is, each machine in the HPC cluster has its own local storage disks.
+- Storage area network (SAN) solutions.
+- Network-attached storage (NAS) solutions.
 
-The data in question may be created locally by analysts, artists, researchers or scientists, and it may also be periodically acquired from third parties and deposited in your local storage solution.
+The data in question may be created locally by analysts, artists, researchers, or scientists, and it might also be periodically acquired from third parties and deposited in your local storage solution.
 
-Files are accessed by machines participating in the HPC cluster via either a direct disk or network export/share. In both cases the files are presented as a local path (such as /mnt/data).
+## How do HPC machines get working set data?
 
-The code and scripts which make up the actual HPC job assume the files are accessible via this file system path, and will leverage the machine's file access capabilities to obtain the file. For example, a machine running Linux that needs to access a file located on a NAS would use the Network File System (NFS) protocol via NFS client packages.
+Machines in the HPC cluster access files through either a directly attached disk or through a network export or share. In both cases, the files are presented in a local path (for example, `/mnt/data`).
 
-## File Data and Metadata
+The code and scripts that make up the actual HPC job assume the files are accessible on this file system path, and leverage the machine's file access capabilities to obtain the file. For example, a machine running Linux that needs to access a file located on a NAS would use the Network File System (NFS) protocol and NFS client packages.
 
-Files refer to the actual file data (i.e., the image, the text), and a series of values known as **metadata**. Metadata is important to understand in the context of HPC file system performance.
+## Understanding file metadata
 
-Metadata describes attributes of the data, but is not part of the data.  For example, it will tell you when the file was created and modified, who created the file, and who has permissions to access it.
+Within a file, there is a reference to the actual data (for example, an image or lines of text) and additional information known as **metadata**. This metadata is important to understand in the context of HPC file system performance.
 
-When a file is created, there are metadata operations that allocate the structures, and to update directory entries for that file. This occurs prior to a file's data being written.
+Metadata is a set of values that describes attributes of the data, but is not part of the data. For example, metadata tells you when the file was created and modified, who created the file, and who has permissions to access it.
 
-## File Traffic Types
+When a file is created, there are metadata operations that allocate the structures, and to update directory entries for that file. This happens before data is written to the file.
+
+## Types of file traffic
 
 The general file traffic types we will discuss in this module are limited to the following activities:
 
-- Loading and running job code, libraries and/or toolchains on HPC cluster machines.  
-- Reading source data for the job. Examples of this would be daily pricing data, genomic data or satellite data.
-- Intermediate, or scratch, writes. Certain jobs require that initial data be processed, and the output of that processing become new input for downstream activity.
+- Loading and running job code, libraries, and/or toolchains on HPC cluster machines.
+- Reading source data for the job. Examples of this could be daily pricing data, genomic data, or satellite data.
+- Intermediate,  or *scratch*, writes. Certain jobs require that initial data be processed, and the output of that processing become new input for downstream activity.
 - Finally, writing out the results of the job. This involves placing the data in a desirable location for further consumption. For example, rendering a video and placing the rendered results in a shared volume for use.
