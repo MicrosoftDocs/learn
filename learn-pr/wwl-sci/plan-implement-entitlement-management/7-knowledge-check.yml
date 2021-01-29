@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Device registrations"
       isCorrect: false
-      explanation: "Incorrect. Device registrations are maintained in Azure Active Directory and Microsft Intune."
+      explanation: "Incorrect. Device registrations are maintained in Azure Active Directory and Microsoft Intune."
     - content: "Resources and access packages"
       isCorrect: true
       explanation: "Correct. Catalogs are used to group related resources and access packages."
@@ -29,16 +29,16 @@ quiz:
       explanation: "Incorrect. A list of user accounts is not included in a catalog."
   - content: "How long are deleted users retained by Azure AD by default?"
     choices:
+    - content: "14 days"
+      isCorrect: false
+      explanation: "Incorrect. Although deleted user account retention can be changed, by default a deleted user is in a deleted state in Azure AD for 30 days, during which time they can be restored by an administrator if necessary."
     - content: "30 days"
       isCorrect: true
       explanation: "Correct. By default, a deleted user is in a deleted state in Azure AD for 30 days, during which time they can be restored by an administrator if necessary."
     - content: "60 days"
       isCorrect: false
       explanation: "Incorrect. Although deleted user account retention can be changed, by default a deleted user is in a deleted state in Azure AD for 30 days, during which time they can be restored by an administrator if necessary."
-    - content: "14 days"
-      isCorrect: false
-      explanation: "Incorrect. Although deleted user account retention can be changed, by default a deleted user is in a deleted state in Azure AD for 30 days, during which time they can be restored by an administrator if necessary."
-  - content: "When should you use access packages?"
+  - content: "When should access packages be used?"
     choices:
     - content: "To allow one organization access when collaborating on a project."
       isCorrect: false

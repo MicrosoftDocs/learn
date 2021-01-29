@@ -76,7 +76,7 @@ Once you have finalized your terms of use document, use the following procedure 
     > [!IMPORTANT]
     > Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
 
-    Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [Quickstart: Require terms of use to be accepted before accessing cloud apps](https://docs.microsoft.com/azure/active-directory/conditional-access/require-tou).
+    Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [Quickstart: Require terms of use to be accepted before accessing cloud apps](https://docs.microsoft.com/azure/active-directory/conditional-access/require-tou).
 
 15. When complete, select **Create**.
 
@@ -93,7 +93,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
     If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
 
-20. Select **Cloud apps or actions.**
+20. Select **Cloud apps or actions**.
 
 21. Select **All cloud apps**.
 
@@ -114,7 +114,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 The Terms of use blade shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
-1. In Microsoft Azure, in **Identity Governance > Terms of use**, locate your terms of use.
+1. In Microsoft Azure, in **Identity Governance** > **Terms of use**, locate your terms of use.
 
 2. For a terms of use, select the numbers under **Accepted** or **Declined** to view the current state for users.
 
@@ -157,7 +157,7 @@ The Terms of use blade shows a count of the users who have accepted and declined
 
 Users can review and see the terms of use that they have accepted by using the following procedure.
 
-1. Brose to to [https://myaccount.microsoft.com](https://myapps.microsoft.com/) and then sign in using your user account.
+1. Browse to [https://myaccount.microsoft.com](https://myapps.microsoft.com/) and then sign in using your user account.
 
 2. On the Overview page, select VIEW SETTINGS AND PRIVACY.
 
@@ -193,12 +193,12 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
     - **Require users to expand the terms of use** – Setting this to **On** will force the end use to expand the terms of use document before accepting it.
 
-    - U**pdate an existing terms of use** document.
+    - **Update an existing terms of use** document.
 
-    - You can add a language to an existing ToUIf there are other settings you would like to change, such as require users to consent on every device, expire consents, duration before reacceptance, or Conditional Access policy, you must create a new terms of use.
+    - You can add a language to an existing ToU. If there are other settings you would like to change, such as require users to consent on every device, expire consents, duration before reacceptance, or Conditional Access policy, you must create a new terms of use.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screen image of the Identity Governance terms of use being edited.](../media/edit-terms-of-use.png)
+        > [!div class="mx-imgBorder"]
+        > ![Screen image of the Identity Governance terms of use being edited.](../media/edit-terms-of-use.png)
 
 7. Once you are done, select **Save** to save your changes.
 
