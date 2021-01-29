@@ -21,7 +21,7 @@ Organizations should avoid the following configurations:
 The first way is to review the error message that appears. For problems signing in when using a web browser, the error page itself has detailed information. This information alone may describe what the problem is and suggest a solution.
 
 > [!div class="mx-imgBorder"]
-> ![Sign in error - compliant device required](../media/image1.png)
+> ![Sign in error - compliant device required](../media/image-1.png)
 
 In the above error, the message states that the application can only be accessed from devices or client applications that meet the company's mobile device management policy. In this case, the application and device do not meet that policy.
 
@@ -32,7 +32,7 @@ The second method to get detailed information about the sign-in interruption is 
 Find more information about the problem by clicking **More Details** in the initial error page. Clicking **More Details** will reveal troubleshooting information that's helpful when searching the Azure AD sign-in events for the specific failure event the user saw or when opening a support incident with Microsoft.
 
 > [!div class="mx-imgBorder"]
-> ![More details from a Conditional Access interrupted web browser sign-in.](../media/image2.png)
+> ![More details from a Conditional Access interrupted web browser sign-in.](../media/image-2.png)
 
 To find out which Conditional Access policy or policies applied and why, do the following:
 
@@ -53,7 +53,7 @@ To find out which Conditional Access policy or policies applied and why, do the 
       1. Date scoped to the time frame in question.
 
 > [!div class="mx-imgBorder"]
-> ![Selecting the Conditional access filter in the sign-ins log](../media/image3.png)
+> ![Selecting the Conditional access filter in the sign-ins log](../media/image-3.png)
 
 4. Once the sign-in event that corresponds to the user's sign-in failure has been found select the **Conditional Access** tab, the tab will show the specific policy or policies that resulted in the sign-in interruption.
 
@@ -68,7 +68,7 @@ To find out which Conditional Access policy or policies applied and why, do the 
 Selecting the ellipsis on the right side of the policy in a sign-in event brings up policy details. This gives administrators additional information about why a policy was successfully applied or not.
 
 > [!div class="mx-imgBorder"]
-> ![Sign in event Conditional Access tab](../media/image5.png)
+> ![Sign in event Conditional Access tab](../media/image-5.png)
 
 > [!div class="mx-imgBorder"]
 > ![Policy details (preview)](../media/policy-details.png)
@@ -78,7 +78,7 @@ The left side provides details collected at sign-in, and the right side provides
 If the information in the event isn't enough to understand the sign-in results or adjust the policy to get desired results, then a support incident may be opened. Navigate to that sign-in event's **Troubleshooting and support** tab and select **Create a new support request**.
 
 > [!div class="mx-imgBorder"]
-> ![The Troubleshooting and support tab of the Sign-in event](../media/image6.png)
+> ![The Troubleshooting and support tab of the Sign-in event](../media/image-6.png)
 
 When submitting the incident, provide the request ID and time and date from the sign-in event in the incident submission details. This information will allow Microsoft support to find the event you're concerned about.
 
