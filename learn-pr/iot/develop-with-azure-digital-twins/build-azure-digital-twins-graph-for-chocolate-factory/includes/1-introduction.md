@@ -16,16 +16,18 @@ To summarize, in this module, you will:
 
 ## Prerequisites
 
-- Introductory knowledge of the purpose of Azure IoT
-- Ability to navigate the Azure IoT portal
-- Ability to use the Command Prompt and command-line windows
-- Ability to download and install software tools
-- Ability to use Visual Studio at the beginner level
-- A Basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended
+- Familiarity with the Azure portal
+- It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/) Learning Path
+- A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended
 - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli)
   - It is recommended to install AZ CLI locally
-  - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab
-- Access to an Azure subscription where you have Administrator role for your account as well as Azure Active Directory Tenant to complete the exercise units
+  - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab 
+- macOS: [PowerShell for Mac](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
+- Windows OS: PowerShell is built-in
+- Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory Tenant to complete the exercise units
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET Core 3.1](https://dotnet.microsoft.com/download)
+- [C# VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 
 ## The scenario
 
@@ -37,7 +39,7 @@ For the sake of explanation, the production of chocolate has been simplified int
 
 Cocoa beans are the input to this production line and chocolate bars the output!
 
-1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 degrees to 150 degrees C. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
+1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 to 150 degrees C. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
 
 1. **Grinding**: The grinding process takes the cocoa nibs that result from the roasting and crushes them to pieces, typically between steel plates, to create a liquid cocoa butter.
 
