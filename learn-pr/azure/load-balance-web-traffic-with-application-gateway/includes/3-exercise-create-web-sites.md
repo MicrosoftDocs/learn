@@ -8,19 +8,19 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
 1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
 
-2. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
-  > [!NOTE]
-  > If you need to find the location name, you can use the following command: az account list-locations -o table
+    > [!NOTE]
+    > If you need to find the location name, you can use the following command: az account list-locations -o table
 
-  ```azurecli
-  RG=<resource group name>
-  az network group create \
-    --name $RG \
-    --location <location>
-  ```
+    ```azurecli
+    RG=<resource group name>
+    az network group create \
+      --name $RG \
+      --location <location>
+    ```
 
-3. In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
+1. In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
 
     ```azurecli
     az network vnet create \
@@ -31,13 +31,13 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --subnet-prefix 10.0.1.0/24
     ```
 
-4. To download the script that creates the virtual machines, run the following command.
+1. To download the script that creates the virtual machines, run the following command.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway module-files
     ```
 
-5. To create and configure the virtual machines for the web servers, run the following commands. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server. An administrative user account is created for each virtual machine, with the login name `azureuser`. Each virtual machine has the vehicle registration web app installed.
+1. To create and configure the virtual machines for the web servers, run the following commands. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server. An administrative user account is created for each virtual machine, with the login name `azureuser`. Each virtual machine has the vehicle registration web app installed.
 
     The first command runs asynchronously to enable both virtual machines to be created simultaneously.
 
@@ -70,7 +70,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --custom-data module-files/scripts/vmconfig.sh
     ```
 
-6. To confirm both virtual machines were created successfully, run the following command.
+1. To confirm both virtual machines were created successfully, run the following command.
 
     ```azurecli
     az vm list \
