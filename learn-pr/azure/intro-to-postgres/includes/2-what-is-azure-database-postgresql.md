@@ -14,16 +14,16 @@ Azure Database for PostgreSQL is available in three deployment modes, with each 
 
 **Single Server** deployments are suitable for most applications that don’t require high levels of customization or low latency performance across multiple regions. Single server deployments can be scaled down to only cost a few dollars per month. Workloads could include servers used for development and enterprise applications.
 
-**Flexible Server** is an option that is in public preview. Designed to provide more control over database management and configuration settings, Flexible Servers provide better cost optimization controls. Ideal for workloads that do not need full compute capacity continuously. 
-
-The Azure layer gives each deployment option four noticeable benefits: 
+**Flexible Server** is an option that is in public preview. Designed to provide more control over database management and configuration settings, Flexible Servers provide better cost optimization controls. Ideal for workloads that don't need full compute capacity continuously.
 
 :::row:::
 :::column span="3":::
 
-**Hyperscale (Citus)** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data.  Hyperscale can also be deployed and managed on-premises, on the edge, or on multi-cloud environments using Azure Arc.
+**Hyperscale (Citus)** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data. Hyperscale can also be deployed and managed on-premises, on the edge, or on multi-cloud environments using Azure Arc.
 
-* High availability, with an SLA of up to 99.9% uptime
+The Azure layer gives each deployment option four noticeable benefits:
+
+* High availability, with an SLA of up to 99.99% uptime
 * AI-powered performance optimization
 * Automated hardware and software maintenance
 * Advanced data and server security
@@ -56,6 +56,6 @@ Using our example of a contactless payment app, having a simple and reliable way
 
 ### Lower administrative complexity and cost
 
-For many businesses, the decision to transition to a cloud service is as much about offloading the complexity of administration as it is about cost. Azure helps to lower administrative costs in three key ways. Firstly, options such as Hyperscale can optimize performance for you. Secondly, Azure automates maintenance and updates for the underlying hardware, operating system, and the database engine. Thirdly, Azure provides automated management and analytics for monitoring of large-scale deployments. Together, these capabilities can allow for significant cost savings, especially when many databases need to be supported. 
+For many businesses, the decision to transition to a cloud service is as much about offloading the complexity of administration as it is about cost. Azure helps to lower administrative costs in three key ways. Firstly, options such as Hyperscale can optimize performance for you. Secondly, Azure automates maintenance and updates for the underlying hardware, operating system, and the database engine (minor versions). Thirdly, Azure provides automated management and analytics for monitoring of large-scale deployments. Together, these capabilities can allow for significant cost savings, especially when many databases need to be supported.
 
 Using PostgreSQL on Azure for your Woodgrove Bank app would help you to structure your mobile app to accommodate its future growth. Once your app has proven its success, you can focus on building new features, and less on day-to-day operations.

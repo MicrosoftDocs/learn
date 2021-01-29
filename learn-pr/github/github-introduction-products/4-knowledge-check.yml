@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned.
+  ms.date: 11/16/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You plan on using GitHub Actions to build, test, and deliver your cross-platform code. Which of the following platforms will be the most expensive to use?"
+    choices:
+    - content: "macOS"
+      isCorrect: true
+      explanation: "macOS is the most expensive platform to use with GitHub Actions."
+    - content: "Windows"
+      isCorrect: false
+      explanation: "Windows is not the most expensive platform to use with GitHub Actions."
+    - content: "Linux"
+      isCorrect: false
+      explanation: "Linux is the least expensive platform to use with GitHub Actions."
+  - content: "When would you decide to upgrade to the GitHub Enterprise product?"
+    choices:
+    - content: "Because you want to use GitHub Actions and Codespaces."
+      isCorrect: false
+      explanation: "You do not need to license GitHub Enterprise to use GitHub Actions or Codespaces."
+    - content: "Because your VP needs to use GitHub Insights."
+      isCorrect: false
+      explanation: "GitHub Insights is available with the GitHub One product, not the GitHub Enterprise product."
+    - content: "Because you want to centrally manage users and repositories across multiple organizations."
+      isCorrect: true
+      explanation: "Correct! GitHub Enterprise allows you to collect multiple organizations together for central management."
+    - content: "Because you want to use the team pull request reviewers feature."
+      isCorrect: false
+      explanation: "The team pull request reviewers feature is available at the GitHub Pro and GitHub Team product level."
+  - content: "What is the purpose of a team?"
+    choices:
+    - content: "A team allows you to manage an organization account."
+      isCorrect: false
+      explanation: "A team does not allow you to manage an organization account."
+    - content: "A team allows you to control permission levels for an enterprise."
+      isCorrect: false
+      explanation: "A team does not allow you to control permission levels for an enterprise."
+    - content: "A team allows a single user to log in using different accounts credentials."
+      isCorrect: false
+      explanation: "A team does not allow a single user to log in using different accounts credentials."
+    - content: "A team is intended to reflect a company or group's structure, and is used to provide cascading access permissions and make it easy to notify all team members via mentions"
+      isCorrect: true
+      explanation: "Correct!"

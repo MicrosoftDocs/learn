@@ -21,7 +21,7 @@ Clone the lab archives that provide sample notebooks with detailed steps for bas
 
 1. Select **Import**.
 
-1. A folder named after the archive should appear. Select that folder. The folder contains one or more notebooks that you'll use in completing this lab.
+1. A folder named after the archive should appear (03 Model Training, Selection, and Evaluation). Select that folder. The folder contains one or more notebooks that you'll use in completing this lab.
 
 ## Configure the Databricks cluster with the scikit-learn library
 

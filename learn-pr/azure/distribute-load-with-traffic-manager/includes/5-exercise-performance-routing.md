@@ -2,7 +2,7 @@ Your network architect would like to ensure customers have the best performance.
 
 ## Create a Traffic Manager profile using performance routing
 
-1. Create a new Traffic Manager profile that is set up with performance routing.
+1. Create a new Traffic Manager profile that is set up with performance routing. Run these commands.
 
     ```azurecli
         az network traffic-manager profile create \
@@ -13,7 +13,7 @@ Your network architect would like to ensure customers have the best performance.
         --output table
     ```
 
-1. Create two new endpoints that point to the public IP addresses of the virtual machines.
+1. Create two new endpoints that point to the public IP addresses of the virtual machines. Run these commands.
 
     ```azurecli
     WestId=$(az network public-ip show \
@@ -45,9 +45,9 @@ Your network architect would like to ensure customers have the best performance.
 
 ## Test the new configuration
 
-1. Go to the Traffic Manager profiles fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the lowest latency.
+1. Run this command to go to the Traffic Manager profiles fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the lowest latency.
 
-    ```bash
+    ```azurecli
     echo http://$(az network traffic-manager profile show \
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name TM-MusicStream-Performance \
@@ -59,9 +59,9 @@ Your network architect would like to ensure customers have the best performance.
 
     :::image type="content" source="../media/5-performance-testing.png" alt-text="Screenshot of a webpage running the web app closest to you." loc-scope="other":::
 
-1. Use `nslookup` to resolve the Traffic Manager profile domain name.
+1. Run the following `nslookup` command to resolve the Traffic Manager profile domain name.
 
-    ```bash
+    ```azurecli
     nslookup $(az network traffic-manager profile show \
             --resource-group <rgn>Sandbox resource group </rgn> \
             --name TM-MusicStream-Performance \

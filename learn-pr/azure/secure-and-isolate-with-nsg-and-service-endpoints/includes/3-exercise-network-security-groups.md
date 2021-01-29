@@ -12,15 +12,23 @@ First, you'll create a resource group, the virtual network, and subnets for your
 
 1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in. Use the Bash version of Cloud Shell.
 
-1. To create a variable to store your resource group name, and a resource group for your resources, in the Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+2. To create a variable to store your resource group name, and a resource group for your resources, in the Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
-    ```azurecli
-    $rg=<resource group name>
+Find the location name with the following command.
+
+```azurecli
+    az account list-locations -o table
+```
+
+3. Next, create the resource group.
+
+```azurecli
+    rg=<resource group name>
 
     az group create --name $rg --location <location>
-    ```
+```
 
-1. To create the **ERP-servers** virtual network and the **Applications** subnet, in the Cloud Shell, run the following command.
+4. To create the **ERP-servers** virtual network and the **Applications** subnet, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network vnet create \
@@ -31,7 +39,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
         --subnet-prefix 10.0.0.0/24
     ```
 
-1. To create the **Databases** subnet, in the Cloud Shell, run the following command.
+5. To create the **Databases** subnet, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network vnet subnet create \
@@ -41,7 +49,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
         --name Databases
     ```
 
-1. To create the **ERP-SERVERS-NSG** network security group, in the Cloud Shell, run the following command.
+6. To create the **ERP-SERVERS-NSG** network security group, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network nsg create \
@@ -317,7 +325,7 @@ Next, create an app security group for database servers, so that all servers in 
 
 1. As before, the response should include a `200 OK` message. The app security group settings can take a minute or two to take effect. If you don't initially receive the `200 OK` message, wait a minute and try again.
 
-1. To connect to your **DataServer** V< in the Cloud Shell, run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
+1. To connect to your **DataServer** in the Cloud Shell (at the top-right in Azure; the box with the >_) , run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
 
     ```bash
     ssh -t azureuser@$DATASERVERIP 'wget http://10.0.0.4; exit; bash'

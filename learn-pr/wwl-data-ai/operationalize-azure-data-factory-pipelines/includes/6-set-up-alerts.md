@@ -18,11 +18,13 @@ To get started, go to the **Monitor** tab and select **Alerts & metrics**.
 
     ![Box for target criteria](../media/add-criteria-1.png)
 
-    ![Screenshot that shows where you select one metric to set up the alert condition.](../media/add-criteria-2.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot that shows where you select one metric to set up the alert condition.](../media/add-criteria-2.png)
 
-    ![List of criteria](../media/add-criteria-3.png)
+    > [!div class="mx-imgBorder"]  
+    > ![List of criteria](../media/add-criteria-3.png)
 
-    You can create alerts on various metrics, including ADF entity count/size, activity/pipeline/trigger runs, Integration Runtime (IR) CPU utilization/memory/node count/queue, as well as for SSIS package executions and SSIS IR start/stop operations.
+    You can create alerts on various metrics, including Azure Data Factory entity count/size, activity/pipeline/trigger runs, Integration Runtime (IR) CPU utilization/memory/node count/queue, as well as for SSIS package executions and SSIS IR start/stop operations.
 
 1.  Configure the alert logic. You can create an alert for the selected metric for all pipelines and corresponding activities. You can also select a particular activity type, activity name, pipeline name, or failure type.
 

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-stack.2-azure-stack
+metadata:
+  title: What is Azure Stack?
+  description: Describe the Azure Stack portfolio, hybrid cloud model, hybrid characteristics of Azure Stack, and the basic characteristics of Azure Stack products
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Azure Stack?
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-azure-stack.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which of the following features is common across the three Azure Stack products?"
+    choices:
+    - content: "Purpose-built, pre-configured, and Microsoft-certified hardware."
+      isCorrect: true
+      explanation: "That's correct. Azure Stack Hub and Azure Stack HCI use urpose-built, pre-configured, and Microsoft-certified hardware available from third-party vendors. Azure Stack Edge uses Microsoft-provided appliances."
+    - content: "Built-in support for disaster recovery."
+      isCorrect: false
+      explanation: "That's incorrect. Only Azure Stack HCI provides this functionality."
+    - content: "Support for up to 16 nodes."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack Edge supports only a single node."
+
+  - content: "What is the common pricing model supported by Azure Stack products?"
+    choices:
+    - content: "Reserved instances"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack products support pay-as-you go pricing."
+    - content: "Spot pricing"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack products support pay-as-you go pricing."
+    - content: "Pay-as-you use"
+      isCorrect: true
+      explanation: "That's correct. Azure Stack products support pay-as-you go pricing."

@@ -3,14 +3,14 @@ uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.6-exercise-ins
 title: Exercise - Install the Database Experimentation Assistant
 metadata:
   title: Exercise - Install the Database Experimentation Assistant
-  description: Exercise - Install the Database Experimentation Assistant
-  ms.date: 01/31/2019
-  author: markohot
+  description: "Exercise - Install the Database Experimentation Assistant"
+  ms.date: 01/07/2021
+  author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 azureSandbox: true
-interactive: bash
 durationInMinutes: 3
 content: |
   [!include[](includes/6-exercise-install-dea.md)]
+interactive: bash

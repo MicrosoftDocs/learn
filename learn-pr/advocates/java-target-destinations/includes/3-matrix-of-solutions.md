@@ -2,42 +2,44 @@ We've described the most typical deployment types for Java applications. Let's n
 
 ## Azure App Service
 
-Azure App Service is a Platform as a Service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java Web applications, with automatic OS and JVM updates and patches, as well as autoscaling or monitoring.
+Azure App Service is a platform as a service (PaaS) solution provided by Azure. It offers an easy-to-use service for running Java web applications, with automatic OS and Java Virtual Machine (JVM) updates and patches, as well as autoscaling or monitoring.
 
-App Service can run any executable Jar file, like the ones provided by Spring Boot, and can also deploy any War application on top of popular application servers like Tomcat or JBoss.
+App Service can run any executable JAR file, such as the files provided by Spring Boot, and it can deploy any WAR application on top of popular application servers such as Apache Tomcat or Red Hat JBoss.
 
-For running a simple Java monolithic application, it would therefore be the best option.
+For running a simple Java monolithic application, App Service would therefore be the best option.
 
-If you need more control about what you are deploying, App Service also supports Docker images, offering you the possibility to include specific or custom solutions, as the cost of more maintenance on your side.
+If you need more control over your deployments, App Service also supports Docker images. This benefit makes it possible for you to include specific or custom solutions, but at the cost of more maintenance at your end.
 
 ## Azure Functions
 
-Azure Function is the serverless platform provided by Azure, and it supports running Java workloads.
+Azure Functions is the serverless platform provided by Azure, and it supports running Java workloads.
 
-Running a Java application on Azure Functions usually requires some minor configuration and setup. By nature, serverless functions will have short lives (a few minutes usually), so some of the services that you would traditionally use might not be as efficient or practical as with Azure App Service.
+Running a Java application on Azure Functions usually requires some minor configuration and setup. By their nature, serverless functions have short lives (usually, only a few minutes), so some of the services that you would traditionally use might not be as efficient or practical as Azure App Service.
 
-As a result, Azure Functions is tailored for applications that need a lot of scalability: they can be stopped regularly to reduce cost, and they can scale up to response to high load.
+As a result, Azure Functions is tailored for applications that need a lot of scalability. You can stop them regularly to reduce cost, and you can scale them up to respond to high loads.
 
 ## Azure Spring Cloud
 
-Azure Spring Cloud is a unique Azure service that provides a Platform-as-a-Service solution for running Spring Boot microservices. It provides many tools like a service registry or a configuration server, as well as specific autoscaling and security mechanisms that will greatly simplify the usage of a microservice architecture based on Spring Boot. This offer is jointly created and managed by Microsoft and VMware, the company building the Spring Framework, and provides support for OS and JVM updates and patches (like Azure App Service), but also support for advanced Spring services.
+Azure Spring Cloud is a unique Azure service that provides a platform as a service solution for running Spring Boot microservices. Spring Cloud provides many tools, such as a service registry or a configuration server. It also provides specific autoscaling and security mechanisms that greatly simplify the use of a microservice architecture that's based on Spring Boot. 
 
-This service can also be used to run other workloads, like Spring Boot monolithic applications or even .NET microservices (using Steeltoe), but its main usage and interest is for running Spring Boot microservices.
+The Spring Cloud offering is created and managed jointly by Microsoft and VMware, the company that builds the Spring Framework. Spring Cloud provides support both for OS and JVM updates and patches, such as Azure App Service, and for advanced Spring services.
+
+You can also use the Azure Spring Cloud service to run other workloads, such as Spring Boot monolithic applications or even .NET microservices, which use Steeltoe, but the service is mainly used to run Spring Boot microservices.
 
 ## Azure Kubernetes Service
 
-Azure Kubernetes Service is a managed and secured Kubernetes solution provided by Azure. It can run any Docker image and benefits from the whole Kubernetes ecosystem, which makes it a great solution if you want to deliver cloud-native applications in any languages, including Java.
+Azure Kubernetes Service (AKS) is a managed and secured Kubernetes solution provided by Azure. It can run any Docker image, and it benefits from belonging to the whole Kubernetes ecosystem. AKS works well if you want to deliver cloud-native applications in any language, including Java.
 
-Therefore, Azure Kubernetes Service is a great solution if you have heterogenous workloads or if you want precise control on your environment. It will run Java workloads well, but you will need to build and maintain your Docker images.
+Azure Kubernetes Service is a great solution if you have heterogenous workloads or if you want precise control over your environment. AKS runs Java workloads well, but you'll need to build and maintain your Docker images.
 
 ## Azure VMs
 
-Running Virtual Machines on Azure is what provide you with the most flexibility and options. You can choose between a wide variety of OS, typically Windows, and the main Linux distributions. And you can bring your own software, or use some of the provided images.
+Running VMs on Azure gives you the greatest flexibility and variety of options. You can choose between multiple operating systems, typically Windows, and the main Linux distributions. You can bring your own software, or use some of the provided images.
 
-Concerning Java specifically, the main usages are usually:
+For Java specifically, you mainly use VMs to:
 
-- Installing and running a Java Web application manually on top of Windows or Linux
-- Installing and running Docker (or even Kubernetes) to run an image containing a Java Web application
-- Using one of the supported offers, for example Oracle WebLogic, to run Java Web applications on it
+- Install and run a Java web application manually on top of Windows or Linux.
+- Install and run Docker or even AKS to run an image that contains a Java web application.
+- Use one of the supported offers, such as Oracle WebLogic, to run Java web applications on your VMs.
 
-There is no limit to what you can install and run here, as you have full control on your Virtual Machines. The main issues you will have, however, will be to maintain those machines and to secure them. On Virtual Machines, this maintenance work is your full responsibility.
+When you use Azure VMs, there's no limit to what you can install and run, because you have full control over them. The main drawback with VMs, though, is that you'll need to maintain and secure them. For VMs, this maintenance work is your responsibility.

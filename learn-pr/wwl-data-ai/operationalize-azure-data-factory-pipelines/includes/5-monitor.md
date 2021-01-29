@@ -1,6 +1,6 @@
 
 
-Once you've created and published a pipeline in Azure Data Factory, you can associate it with a trigger or manually kick off an on-demand run. You can monitor all of your pipeline runs natively in the Azure Data Factory user experience. To open the monitoring experience, select the **Monitor & Manage** tile in the data factory blade of the Azure portal. If you're already in the ADF UX, click on the **Monitor** icon on the left sidebar.
+Once you've created and published a pipeline in Azure Data Factory, you can associate it with a trigger or manually kick off an on-demand run. You can monitor all of your pipeline runs natively in the Azure Data Factory user experience. To open the monitoring experience, select the **Monitor & Manage** tile in the data factory blade of the Azure portal. If you're already in the Azure Data Factory UX, click on the **Monitor** icon on the left sidebar.
 
 ## Monitor pipeline runs
 
@@ -105,12 +105,12 @@ Create or add diagnostic settings for your data factory.
 1. Select the data factory for which you want to set a diagnostic setting.
 
 1. If no settings exist on the selected data factory, you're prompted to create a setting. Select **Turn on diagnostics**.
-
-   ![Create a diagnostic setting if no settings exist](../media/monitor-oms-image-1.png)
+  > [!div class="mx-imgBorder"]  
+  > ![Create a diagnostic setting if no settings exist](../media/monitor-oms-image-1.png)
 
    If there are existing settings on the data factory, you see a list of settings already configured on the data factory. Select **Add diagnostic setting**.
-
-   ![Add a diagnostic setting if settings exist](../media/add-diagnostic-setting.png)
+  > [!div class="mx-imgBorder"]  
+  > ![Add a diagnostic setting if settings exist](../media/add-diagnostic-setting.png)
 
 1. Give your setting a name, select **Send to Log Analytics**, and then select a workspace from **Log Analytics Workspace**.
 
@@ -129,9 +129,9 @@ Create or add diagnostic settings for your data factory.
 
       You can select various logs relevant to your workloads to send to Log Analytics tables. For example, if you don't use SQL Server Integration Services (SSIS) at all, you need not select any SSIS logs. If you want to log SSIS Integration Runtime (IR) start/stop/maintenance operations, you can select SSIS IR logs. If you invoke SSIS package executions via T-SQL on SQL Server Management Studio (SSMS), SQL Server Agent, or other designated tools, you can select SSIS package logs. If you invoke SSIS package executions via Execute SSIS Package activities in ADF pipelines, you can select all logs.
 
-    * If you select _AllMetrics_, various ADF metrics will be made available for you to monitor or raise alerts on, including the metrics for ADF activity, pipeline, and trigger runs, as well as for SSIS IR operations and SSIS package executions.
-
-   ![Name your settings and select a log-analytics workspace](../media/monitor-oms-image-2.png)
+    * If you select _AllMetrics_, various Azure Data Factory metrics will be made available for you to monitor or raise alerts on, including the metrics for Azure Data Factory activity, pipeline, and trigger runs, as well as for SSIS IR operations and SSIS package executions.
+  > [!div class="mx-imgBorder"]  
+  > ![Name your settings and select a log-analytics workspace](../media/monitor-oms-image-2.png)
 
     > [!NOTE]
     > Because an Azure log table can't have more than 500 columns, Select _Resource-Specific mode_.

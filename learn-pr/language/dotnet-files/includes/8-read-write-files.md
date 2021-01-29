@@ -32,7 +32,7 @@ You add the *Json.NET* package to your project by using NuGet.
 dotnet add package Newtonsoft.Json
 ```
 
-Then add `using Newtonsoft.Json` to the top of your class file, and use the `JsonConver.DeserializeObject` method.
+Then add `using Newtonsoft.Json` to the top of your class file, and use the `JsonConvert.DeserializeObject` method.
 
 ```csharp
 class SalesTotal

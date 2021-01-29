@@ -12,7 +12,7 @@ After Contoso's competitor has a data breach, Contoso tasks the network administ
 
 ## Encryption at rest
 
-All data written to Azure Storage is automatically encrypted by Storage Service Encryption (SSE) with a 256-bit Advanced Encryption Standard (AES) cipher. SSE automatically encrypts data when writing it to Azure Storage. When you read data from Azure Storage, Azure Storage decrypts the data before returning it. This process incurs no additional charges and doesn't degrade performance. It can't be disabled.
+All data written to Azure Storage is automatically encrypted by Storage Service Encryption (SSE) with a 256-bit Advanced Encryption Standard (AES) cipher, and is FIPS 140-2 compliant. SSE automatically encrypts data when writing it to Azure Storage. When you read data from Azure Storage, Azure Storage decrypts the data before returning it. This process incurs no additional charges and doesn't degrade performance. It can't be disabled.
 
 For virtual machines (VMs), Azure lets you encrypt virtual hard disks (VHDs) by using Azure Disk Encryption. This encryption uses BitLocker for Windows images, and it uses dm-crypt for Linux. 
 
@@ -40,6 +40,6 @@ To a security principal or a managed identity for Azure resources, you can assig
 
 ## Auditing access
 
-Auditing is another part of controlling access. You can audit Azure Storage access by using the built-in Storage Analytics service. 
+Auditing is another part of controlling access. You can audit Azure Storage access by using the built-in Storage Analytics service.
 
 Storage Analytics logs every operation in real time, and you can search the Storage Analytics logs for specific requests. Filter based on the authentication mechanism, the success of the operation, or the resource that was accessed.

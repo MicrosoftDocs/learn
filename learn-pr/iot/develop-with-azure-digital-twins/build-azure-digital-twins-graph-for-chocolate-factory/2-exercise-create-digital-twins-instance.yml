@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-create-digital-twins-instance
+metadata:
+  description: In this first exercise, you use the Azure portal to create an instance of the Azure Digital Twins resource. You also collect connection strings and set required permissions.
+  ms.date: 01/28/2021
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+###  zone_pivot_groups: vs-vscode-language
+title: Create an Azure Digital Twins instance
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-exercise-create-digital-twins-instance.md)]

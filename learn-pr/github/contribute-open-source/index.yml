@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.github.contribute-opensource
+metadata:
+  title: Contribute to an open-source project on GitHub
+  description: Learn how to contribute to an open-source project on GitHub.
+  ms.date: 11/11/2020
+  author: sinedied
+  ms.author: yolasors
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Contribute to an open-source project on GitHub
+summary: Learn how to use GitHub to find open-source projects and tasks to contribute to. Discover how to create pull requests and communicate with project maintainers effectively to get your changes accepted. Learn about the benefits of getting involved with open-source communities.
+abstract: |
+  In this module, you will learn how to:
+  - Find open-source projects and tasks to contribute to in GitHub.
+  - Create pull requests to open-source projects.
+  - Implement best practices to communicate with open-source maintainers and perform code reviews.
+  - Find and engage with open-source communities.
+levels:
+  - beginner
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - functional-consultant
+  - data-scientist
+  - security-engineer
+  - solution-architect
+  - student
+  - technology-manager
+  - business-owner
+  - ai-engineer
+  - ai-edge-engineer
+products:
+  - vs
+  - github
+  - azure
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+units:
+  - learn.github.contribute-opensource.1-introduction
+  - learn.github.contribute-opensource.2-identify
+  - learn.github.contribute-opensource.3-contribute
+  - learn.github.contribute-opensource.4-exercise-create-pr
+  - learn.github.contribute-opensource.5-next-steps
+  - learn.github.contribute-opensource.6-knowledge-check
+  - learn.github.contribute-opensource.7-summary
+iconUrl: /learn/achievements/github/contribute-to-an-open-source-project-on-github.svg
+badge:
+  uid: learn.github.contribute-opensource.badge

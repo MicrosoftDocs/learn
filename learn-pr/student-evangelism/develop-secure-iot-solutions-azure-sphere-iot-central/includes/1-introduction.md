@@ -20,9 +20,9 @@ Together these components implement [The Seven Properties of Highly Secure Devic
 
 ## Azure Sphere Architecture
 
-The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a Real-time operating system such as Azure RTOS or FreeRTOS.
+The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a real-time operating system such as Azure RTOS or FreeRTOS.
 
-High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with Real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub.
+High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub.
 
 ![Azure Sphere architecture](../media/azure-sphere-architecture.png)
 
@@ -68,8 +68,8 @@ In this module, you will:
 * Build and deploy the Azure Sphere application
 * Display environment data in the Azure IoT Central dashboard
 * Control an Azure Sphere application by using Azure IoT Central properties and commands
-* Deploy a new more sensitive room sensor onto an Azure Sphere Real-time core running Azure RTOS
-* Read the data from the new sensor running on the Real-time core and send the data to IoT Central
+* Deploy a new more sensitive room sensor onto an Azure Sphere real-time core running Azure RTOS
+* Read the data from the new sensor running on the real-time core and send the data to IoT Central
 
 ## Prerequisites
 

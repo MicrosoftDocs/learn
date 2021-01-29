@@ -1,7 +1,5 @@
 Serverless SQL pool acts and behaves like a regular SQL Server. So, all clients that can connect to SQL Server can connect to serverless SQL pool as well. This enables plethora of use cases. In general, serverless SQL pool is an analytics system and it’s not recommended to be used for OLTP type of workloads. Workloads that require millisecond response times and are looking to pinpoint a single row in a data set are not good fit for serverless SQL pool.
 
-Serverless SQL pool acts and behaves like a regular SQL Server. So all clients that can connect to SQL Server can connect to serverless SQL pool as well. This enables plethora of use cases. In general, serverless SQL pool is an analytics system and it’s not recommended to be used for OLTP type of workloads. Workloads that require millisecond response times and are looking to pinpoint a single row in a data set are not good fit for serverless SQL pool.
-
 When it comes to analytics workloads, there are three major use cases:
 
 ## Data exploration 

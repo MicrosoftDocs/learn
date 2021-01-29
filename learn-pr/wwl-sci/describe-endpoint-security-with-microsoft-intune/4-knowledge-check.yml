@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-endpoint-security-with-microsoft-intune.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Employees are allowed to bring and use their cell phones at work. The employees don't want their phone to be under full corporate control, but admins want to allow users to read emails and use Teams while protecting corporate data. Which of the following will allow admins to accomplish these goals?"
+    choices:
+    - content: "Mobile Application Management (MAM)."
+      isCorrect: true
+      explanation: "That's correct. This service will allow you to manage apps on your employees mobile devices without needing full control."
+    - content: "Mobile Device Management (MDM)."
+      isCorrect: false
+      explanation: "That's incorrect. Users don't want corporate full control"
+    - content: "Role-based access control (RBAC)."
+      isCorrect: false
+      explanation: "That's incorrect. RBAC is out of scope for this requirement."
+  - content: "An organization uses different types of devices, including Windows, iOS, and Android devices. Admins for that organization have created a security baseline profile in Intune that they want to apply across the devices. To which devices can the security baseline profile be applied?"
+    choices:
+    - content: "Android devices."
+      isCorrect: false
+      explanation: "That's incorrect. Security baselines cannot be used on Android devices at this time."
+    - content: "iOS devices."
+      isCorrect: false
+      explanation: "That's incorrect. Security baselines cannot be used on iOS devices at this time."
+    - content: "Windows devices."
+      isCorrect: true
+      explanation: "That's correct. Security baseline settings are used only on devices running Windows 10 version 1809 or later."

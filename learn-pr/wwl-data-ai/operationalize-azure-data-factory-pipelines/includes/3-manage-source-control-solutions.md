@@ -43,7 +43,7 @@ In the Azure Data Factory UX authoring canvas, select the **Data Factory** drop-
 
 ### Configuration method 3: Management hub
 
-Go to the management hub in the ADF UX. Select **Git configuration** in the **Source control** section. If you have no repository connected, click **Set up code repository**.
+Go to the management hub in the Azure Data Factory UX. Select **Git configuration** in the **Source control** section. If you have no repository connected, click **Set up code repository**.
 
 ![Configure the code repository settings from management hub](../media/configure-repo-3.png)
 
@@ -63,7 +63,7 @@ When you are ready to merge the changes from your feature branch to your collabo
 
 ### Configure publishing settings
 
-By default, data factory generates the Resource Manager templates of the published factory and saves them into a branch called `adf_publish`. To configure a custom publish branch, add a `publish_config.json` file to the root folder in the collaboration branch. When publishing, ADF reads this file, looks for the field `publishBranch`, and saves all Resource Manager templates to the specified location. If the branch doesn't exist, data factory will automatically create it. And example of what this file looks like is below:
+By default, data factory generates the Resource Manager templates of the published factory and saves them into a branch called `adf_publish`. To configure a custom publish branch, add a `publish_config.json` file to the root folder in the collaboration branch. When publishing, Azure Data Factory reads this file, looks for the field `publishBranch`, and saves all Resource Manager templates to the specified location. If the branch doesn't exist, data factory will automatically create it. And example of what this file looks like is below:
 
 ```json
 {
@@ -84,7 +84,8 @@ After you have merged changes to the collaboration branch , click **Publish** to
 
 A side pane will open where you confirm that the publish branch and pending changes are correct. Once you verify your changes, click **OK** to confirm the publish.
 
-![Confirm the correct publish branch](../media/configure-publish-branch.png)
+> [!div class="mx-imgBorder"]  
+> ![Confirm the correct publish branch](../media/configure-publish-branch.png)
 
 > [!IMPORTANT]
 > The collaboration branch is not representative of what's deployed in the Data Factory service. The collaboration branch *must* be published manually to the Data Factory service.

@@ -8,6 +8,7 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
 title: Plan your Azure Static Web App
 durationInMinutes: 5
 content: |

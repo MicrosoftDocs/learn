@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender
+metadata:
+  title: Describe threat protection with Microsoft 365 Defender
+  description: "Describe threat protection with Microsoft 365 Defender"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Describe threat protection with Microsoft 365 Defender
+summary: Learn about Microsoft 365 Defender, a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the services of Microsoft 365 Defender
+  - Describe how Microsoft 365 Defender provides integrated protection against sophisticated attacks
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/describe-threat-protection-with-microsoft-365-defender.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- m365-threat-protection
+units:
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.introduction
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-services
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-identity-formerly-azure-atp
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-office-365-formerly-office-365-atp
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-endpoint-formerly-microsoft-defender-atp
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-cloud-app-security
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.summary-resources
+badge:
+  uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.badge

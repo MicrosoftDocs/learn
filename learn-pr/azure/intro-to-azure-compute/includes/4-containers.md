@@ -44,6 +44,8 @@ Imagine your website backend has reached capacity but the front end and storage 
 
 ## Migrating apps to containers
 
+You can move existing applications to containers and run them within AKS. In the cluster, you can use Azure Service Operator (ASO) to control access to Service Level Agreement (SLA)–backed Azure services, such as Azure Database for MySQL. ASO makes use of the AKS cluster-managed identity for authentication when accessing Azure resources.
+
 You can move existing apps to containers and run them within AKS. You can control access via integration with Azure Active Directory (Azure AD) and access Service Level Agreement (SLA)–backed Azure services, such as Azure Database for MySQL for any data needs, via Azure Service Operator (for Kubernetes).
 
 :::image type="complex" source="../media/4-kub-migration.png" alt-text="Diagram showing numbered steps of moving an existing app to containers and running them within Azure Kubernetes Service (AKS)":::
@@ -57,3 +59,4 @@ The preceding figure depicts this process as follows:
 1. Azure AD controls access to AKS resources.
 1. You access SLA-backed Azure services, such as Azure Database for MySQL, via Azure Service Operator (for Kubernetes).
 1. Optionally, AKS is deployed with a virtual network.
+1. With ASO, Kubernetes manifests can provision an Azure Database for MySQL on your behalf.
