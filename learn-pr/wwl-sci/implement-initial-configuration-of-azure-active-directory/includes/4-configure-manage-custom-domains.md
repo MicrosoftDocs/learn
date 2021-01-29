@@ -76,7 +76,7 @@ An error is returned when:
 
 ## Add your custom domain name with the Azure Active Directory portal
 
-Every new Azure AD tenant comes with an initial domain name, *<domainname>.onmicrosoft.com*. You can't change or delete the initial domain name, but you can add your organization's names. Adding custom domain names helps you to create user names that are familiar to your users, such as *alain@contoso.com*.
+Every new Azure AD tenant comes with an initial domain name, *<domainname>.onmicrosoft.com*. You can't change or delete the initial domain name, but you can add your organization's names. Adding custom domain names helps you to create user names that are familiar to your users, such as *chrisg@contoso.com*.
 
 ### Before you begin
 
