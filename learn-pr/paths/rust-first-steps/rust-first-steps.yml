@@ -2,7 +2,7 @@
 uid: learn.languages.rust-first-steps
 metadata:
   title: Take your first steps with Rust
-  description: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple applications by using Rust.
+  description: Interested in learning a programming language but aren't sure where to start? Start here! Lay the foundation of knowledge you need to build programs and handle errors in Rust.
   brand: azure
   ms.date: 01/29/2021
   author: meaghanlewis
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Take your first steps with Rust
 summary: |
-  Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple applications by using Rust.
+  Interested in learning a programming language but aren't sure where to start? Start here! Lay the foundation of knowledge you need to build programs and handle errors in Rust.
 
   In this learning path, you'll:
     - Write your first lines of Rust code.
