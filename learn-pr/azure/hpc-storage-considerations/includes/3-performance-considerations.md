@@ -1,89 +1,116 @@
-If you have run HPC workloads, chances are that you have run into the terms **operations**, **block size**, **IOPS**, **throughput** and **latency**. You most likely selected hard drives or NAS environments based on the combination of these factors. By the end of this section you should have a working understanding of these five performance factors and how they impact your HPC workloads.
+# What factors determine file system performance?
 
-## Factors contributing to File System Performance
+If you have run HPC workloads, chances are that you have run into the terms **operations**, **block size**, **IOPS**, **throughput**, and **latency**. You've probably considered these factors when choosing hard drives or NAS environments.
 
-### Operations
+By the end of this section you should have a working understanding of these five performance factors and how they impact your HPC workloads.
 
-**Operations** refers to any activity between the host/machine and the file system or disk. OS-level operations, those operations involving the Operating System and the local disk, are shown in the following list to provide context for what exactly an operation does.
+## Operations
 
-- File create
-- File delete
-- File open
-- close
-- read
-- write
-- append
-- get attribute
-- set attribute
-- rename
+**Operations** refers to any activity between the host/machine and the file system or disk.
 
-NFS represents the network level interaction between a file client and server. You'll notice that some of these operations look similar to the local operations. However, because this is a network API, a NFS operation may involve multiple local operations.
+For example, you are probably familiar with these operations that involve an operating system and its local disk:
+
+- Create (a file)
+- Delete
+- Open
+- Close
+- Read
+- Write
+- Append
+- Get attribute
+- Set attribute
+- Rename
+
+These are listed to provide context for what exactly an operation does.
+
+NFS represents the network-level interaction between a file client and server. You'll notice that some of these operations look similar to the local operations. However, because this is a network API, a NFS operation may involve multiple local operations.
 
 - create (file or link)
 - mkdir
-- readdir / readdirplus
+- readdir or readdirplus
 - getattr
 - setattr
-- lookup (search for file handle in directory)
-- link / symlink /readlink
+- lookup (search for a filehandle in directory)
+- link/symlink/readlink
 - read
 - rename
 - remove
 - rmdir
 - write
 
-It is helpful to appreciate how operations impact your storage system. For example, if your HPC workload creates a large number of small files in nested directory structures, the required quantity of operations will be significantly greater than if your workload reads a few large sequential files. We will discuss these access patterns in the next unit, but for now note that a create involves multiple operations and so the more creating your workload does, the greater the impact.
+### How do operations affect HPC storage?
 
-### Block Size
+It is helpful to appreciate how operations impact your storage system. For example, if your HPC workload creates a large number of small files in nested directory structures, your workload will require a significantly greater number of operations than it would for a workload that reads a few large sequential files.
 
-**Block Size** refers to the smallest size of a read or write, in bytes, of a file system. For our purposes, block size also refers to the payload size of a NFS data chunk (read/write) that can be transmitted between NFS clients and servers.
+We will discuss these access patterns in the next unit. For now, note that a `create` involves multiple operations, and so the more creating your workload does, the greater the impact.
 
-NFS servers and clients negotiate the block size, accepting the largest size both can support. Default settings can range from 4KB to 64KB, with the current maximum configurable value being 1MB. This would translate into individual packets with payloads no greater than the set value.
+## Block size
 
-Block size may be explicitly configured on clients. Check the full `mount` statement on your HPC cluster machines to determine what the value is.
+**Block size** refers to the smallest size a file system can read or write (in bytes).
 
-The two arguments used to configure NFS block size are `rsize` and `wsize`, configuring block sizes for reading and writing data respectively.
+For our purposes, block size also refers to the payload size of a NFS data chunk (read/write) that can be transmitted between NFS clients and servers.
+
+NFS servers and clients negotiate the block size, accepting the largest size both can support. Default settings can range from 4 KB to 64 KB, and the current maximum configurable value is 1 MB. Individual data packets can have payloads no larger than the set value.
+
+Block size can be explicitly configured on clients. Check the full `mount` statement on your HPC cluster machines to determine what the value is.
+
+The two arguments used to configure NFS block size are `rsize` (reading size) and `wsize` (writing size)
 
 If you have configured a small block size (or your choice of file systems has a small maximum block size), but your workload consists of large files, performance will suffer due to the additional chunking of those large files (to fit the block size).
 
-### IOPS
+## IOPS
 
-**IOPS** stands for "Input/Output operations per second". The number of IOPS will vary depending on the following attributes:
+**IOPS** stands for "Input/output operations per second". The number of IOPS **< in what component/element of the system? >** depends on the following attributes:
 
-- the type of storage media (Hard Disk Drives (HDD) vs Solid-State Drives(SSD))
-- latency, usually introduced via network connectivity
-- the block size used by the file system
-- the amount of concurrent access to the file system
+- The type of storage media - for example, hard disk drives (HDD) versus solid-state drives(SSD)
+- Latency, usually introduced via network connectivity
+- The block size used by the file system
+- The amount of concurrent access available to the file system
 
-There is a single IOPS number for a storage solution. As an example, if you are using an Azure Managed Disk that states 5000 IOPS, this is the total for all read and write operations against that disk.
+A particular storage solution has a single IOPS number. As an example, if you are using an Azure Managed Disk that states it supports 5000 IOPS, that means that you can have up to 5000 operations per second total. However, IOPS measures the *total* maximum for all read or write operations against that disk, including system overhead reads and writes. 
 
-IOPS are a *guide* to the possible maximum number of operations your disk or NAS environment can support. The measurements are typically broken down between **Random** and **Sequential** read and write operations. Random operations refer to the reading/writing of data at different, random points of a disk/file (for example, editing a specific range of bytes somewhere in a file), while sequential operations reflect the contiguous access of a disk/file.
+IOPS are a guide to the possible maximum number of operations that your disk or NAS environment can support. 
 
-### Throughput
+The measurements are typically broken down between **Random** and **Sequential** read and write operations. 
 
-**Throughput** refers to the total possible transfer rate the file system can handle, measured in bytes per second. The basic calculation for throughput is to multiply IOPS x Block Size. So for example if you have a disk that supports 3000 IOPS and your block size is 4K, your total possible throughput is 12MB/s. This provides a basic understanding of the general performance possibility, but can be affected by a variety of factors, including high rates of small file creates/deletes (as one example).
+- Random operations refer to the reading or writing of data at different, random points of a disk or file - for example, editing a specific range of bytes somewhere in a file.
+- Sequential operations reflect contiguous access of a disk file.
 
-### Latency
+## Throughput
 
-**Latency** refers to the measured amount of time it takes to complete an operation. The higher the latency, the higher the likelihood of slower workload runs. There can be multiple sources of latency within a single architecture, each contributing to an overall latency impact.
+**Throughput** refers to the total possible transfer rate the file system can handle, measured in bytes per second. 
 
-File system latency may occur under the following conditions:
+To do a basic calculation of throughput, multiply the system's IOPS x block size.
+
+For example, if you have a disk that supports 3000 IOPS and your block size is 4 K, your total possible throughput is 12 MB/s. 
+
+This calculation provides a basic understanding of the general performance possibility. Actual throughput might be quite different, however. Throughput is affected by a variety of factors, including things like overhead if doing high rates of small file creates or deletes (as one example).
+
+## Latency
+
+**Latency** refers to the measured amount of time it takes to complete an operation. The higher the latency, the higher the likelihood of slower workload runs. 
+
+There can be multiple sources of latency within a single architecture, each contributing to an overall latency impact.
+
+File system latency can occur under the following conditions:
 
 - Slow network connection between client and server
 - Congestion on the network, or at the file server, due to a large number of concurrent requests
-- Natural latency due to distance between clients and servers, for instance across a Wide-Area Network
+- Natural latency because of distance between clients and servers (for instance, across a WAN)
 - Slow disk subsystem access on the file server itself
 
-Latency is not always consistent or clearly documented. You will need to run tests to determine latency between your HPC cluster machines and the storage endpoint. Latency is also a cumulative issue, where the network performance may be the sole contributor, but there may also be misconfiguration of the machine operating system, or inefficiencies in the actual workload code itself. Each of these will impact overall latency.
+Latency is not always consistent or clearly documented. You will need to run tests to determine latency between your HPC cluster machines and the storage endpoint. 
 
-Latency is the most important factor when assessing your file system's actual performance. Higher latencies translate into fewer IOPS. Fewer IOPS may translate into lower throughput.
+Latency is also a cumulative issue. Network performance might be the one contributor, but there also might be other factors, like a misconfigured machine operating system, or inefficiencies in the workload code itself. Each of these factors will impact overall latency.
 
-## Baseline Values
+Latency is the most important factor when assessing your file system's actual performance. Higher latencies translate into fewer IOPS. Fewer IOPS can translate into lower throughput.
 
-Choosing the precise performance configuration for HPC workloads is highly conditional on the workloads themselves.
+## Test and calculate baseline values
 
-Azure file system offerings will present IOPS and throughput values you can expect. If you choose to build your own NAS solution, you would use the metrics documented for each virtual machine SKU as well as the metrics provided for the managed disks you would be using.
+When choosing the exact performance configuration for HPC workloads, the workload itself has a large influence. 
 
-You can use your local datacenter HPC configuration as a starting point for performance expectations, but keep in mind that cloud solutions may be more on-demand, and thus you may have more per-workload flexibility when building in Azure.
+Azure file system offerings will present expected IOPS and throughput values. If you choose to build your own NAS solution, you would use the metrics documented for each virtual machine SKU as well as the metrics provided for the managed disks you would be using.
 
-You will want to use basic tools such as `ping`, `fio`, `iozone` and `iometer` to determine some of your Azure file system's baseline numbers.
+You can use a local datacenter HPC configuration as a starting point for performance expectations, but keep in mind that cloud solutions may be more on-demand **< ??? >**, and so you might have more per-workload flexibility when building in Azure.
+
+You will want to use basic tools such as `ping`, `fio`, `iozone`, and `iometer` to determine some of your Azure file system's baseline numbers.
