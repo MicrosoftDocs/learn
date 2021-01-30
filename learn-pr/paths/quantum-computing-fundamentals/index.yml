@@ -1,6 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.quantum-computing-fundamentals
 metadata:
+  title: Quantum computing foundations
   description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure
   ms.date: 09/20/2020
@@ -35,8 +36,8 @@ modules:
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing
 - learn.quantum.solve-graph-coloring-problems-grovers-search
 - learn.quantum.get-started-azure-quantum
-- learn.quantum.run-algorithms-quantum-hardware-azure-quantum
+- learn.quantum.run-quantum-algorithms-hardware
 - learn.quantum.solve-quantum-inspired-optimization-problems
-- learn.quantum.solve-job-scheduling-optimization-azure-quantum
+- learn.quantum.solve-job-shop-optimization-azure-quantum
 trophy:
   uid: learn.quantum-computing-fundamentals.trophy
