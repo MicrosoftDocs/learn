@@ -11,9 +11,9 @@ Azure Quantum uses the quantum extension for the Azure Command-line interface (A
 
 1. Open a command prompt, and then run the following command:
 
-```azurecli
-az extension add --source https://msquantumpublic.blob.core.windows.net/az-quantum-cli/quantum-latest-py3-none-any.whl
-```
+   ```azurecli
+   az extension add --source https://msquantumpublic.blob.core.windows.net/az-quantum-cli/quantum-latest-py3-none-any.whl
+   ```
 
 ## Create a quantum workspace
 
