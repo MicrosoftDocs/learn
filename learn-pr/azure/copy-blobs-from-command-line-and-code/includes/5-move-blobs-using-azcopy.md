@@ -18,7 +18,7 @@ From the command line, you call AzCopy using the all lower-case name, `azcopy`, 
 azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/"
 ```
 
-The AzCopy command requires you are authenticated and authorized to access the storage account. If your organization uses Active Directory Federation Service (ADFS), you can authenticate by running the `azcopy login` command and signing in. Alternatively, the owner of a storage account can create a Shared Access Signature (SAS) token that provides access to the storage account. The SAS token is time-limited, and can be restricted to only allowing certain operations. You provide the SAS token as a query string to the Azure storage URL when you upload or download data.
+The AzCopy command requires you are authenticated and authorized to access the storage account. If your organization uses Active Directory Federation Service (ADFS), you can authenticate by running the `azcopy login` command, and signing in. Alternatively, the owner of a storage account can create a Shared Access Signature (SAS) token that provides access to the storage account. The SAS token is time-limited, and can be restricted to only allowing certain operations. You provide the SAS token as a query string to the Azure storage URL when you upload or download data.
 
 ```bash
 azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/?<sas token>"
