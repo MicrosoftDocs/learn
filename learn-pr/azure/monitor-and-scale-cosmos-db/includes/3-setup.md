@@ -10,11 +10,13 @@ A database account is a container for multiple Azure Cosmos DB databases.
     export COSMOS_NAME=cosmos$RANDOM
     ```
 
-1. A sandbox resource group "<rgn>[sandbox resource group name]</rgn>" has been created for you, which we will store in an environment variable that we will use later.
+1. A sandbox resource group has been created for you, which the following command will store in an environment variable that you'll use for the rest of the code samples in this exercise.
 
     ```bash
     export RESOURCE_GROUP=$(az group list | jq -r '.[0].name')
     ```
+
+    Note: If you were using your own Azure account instead of the sandbox, you would configure a static resource name in this variable.
 
 1. Create an Azure Cosmos DB account using the following command.
 
