@@ -10,11 +10,17 @@ A database account is a container for multiple Azure Cosmos DB databases.
     export COSMOS_NAME=cosmos$RANDOM
     ```
 
+1. A sandbox resource group "<rgn>[sandbox resource group name]</rgn>" has been created for you, which we will store in an environment variable that we will use later.
+
+    ```bash
+    export RESOURCE_GROUP=$(az group list | jq -r '.[0].name')
+    ```
+
 1. Create an Azure Cosmos DB account using the following command.
 
     ```azurecli
     az cosmosdb create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --name $COSMOS_NAME
     ```
 
@@ -60,7 +66,7 @@ We look at indexing in subsequent units.
 
     ```bash
     export ENDPOINT=$(az cosmosdb list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --output tsv \
         --query [0].documentEndpoint)
     ```
@@ -69,7 +75,7 @@ We look at indexing in subsequent units.
 
     ```bash
     export KEY=$(az cosmosdb keys list \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group $RESOURCE_GROUP  \
         --name $COSMOS_NAME \
         --output tsv \
         --query primaryMasterKey)
@@ -81,7 +87,7 @@ We look at indexing in subsequent units.
 
     ```azurecli
     az cosmosdb sql database create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --name mslearn
     ```
@@ -94,7 +100,7 @@ We look at indexing in subsequent units.
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --database-name mslearn \
         --name Small \
@@ -108,7 +114,7 @@ We look at indexing in subsequent units.
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --database-name mslearn \
         --name HotPartition \
@@ -122,7 +128,7 @@ We look at indexing in subsequent units.
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --database-name mslearn \
         --name Orders \
@@ -156,14 +162,14 @@ We'll use an open-source C# console application to populate your collections. Th
 
     ```bash
     export ENDPOINT=$(az cosmosdb list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --output tsv \
         --query [0].documentEndpoint)
     ```
 
     ```bash
     export KEY=$(az cosmosdb keys list \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group $RESOURCE_GROUP  \
         --name $COSMOS_NAME \
         --output tsv \
         --query primaryMasterKey)
