@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/5-no-overlap-constraint.md)]
