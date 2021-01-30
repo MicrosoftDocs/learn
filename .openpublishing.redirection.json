@@ -4596,12 +4596,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/2-what-are-quantum-inspired-algorithms.yml",
+      "source_path": "learn-pr/modules/solve-quantum-inspired-optimization-problems/2-what-are-quantum-inspired-algorithms.yml",
       "redirect_url": "/learn/modules/solve-quantum-inspired-optimization-problems/2-what-is-quantum-inspired-optimization",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/3-when-is-quantum-inspired-optimization-useful.yml",
+      "source_path": "learn-pr/modules/solve-quantum-inspired-optimization-problems/3-when-is-quantum-inspired-optimization-useful.yml",
       "redirect_url": "/learn/modules/solve-quantum-inspired-optimization-problems/3-optimization-basics",
       "redirect_document_id": false
     }
