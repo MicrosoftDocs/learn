@@ -2,7 +2,7 @@ The Chief Technology Officer (CTO) for your company, Tailwind Traders, has taske
 
 The following video introduces the different services that available with Azure Storage.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MAbS]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAbS]
 
 To begin using Azure Storage, you first create an Azure Storage account to store your data objects. You can create an Azure Storage account by using the Azure portal, PowerShell, or the Azure CLI.
 
