@@ -16,7 +16,7 @@ summary: |
   - Explain the fundamental concepts of quantum computing.
   - Build basic quantum programs by using the Quantum Development Kit and Q#.
   - Identify the kinds of problems quantum algorithms can solve more efficiently than classical algorithms.
-  - Use the Azure Quantum Workspace
+  - Use the Azure Quantum Workspace.
   - Adapt and create Q# applications to run them in Azure Quantum.
   - Apply quantum-inspired optimization to a real-world problem.
   - Solve a job shop scheduling optimization problem.
