@@ -17,7 +17,7 @@ abstract: |
   - Create a Quantum workspace.
   - Learn about application domains for Azure Quantum.
 prerequisites: In order to use the Azure Quantum service, you will need an active Azure subscription. For more information about creating an Azure account and subscription, see the Microsoft Learn module [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/).
-iconUrl: /learn/achievements/quantum/get-started-azure-quantum.svg
+iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
 - beginner
