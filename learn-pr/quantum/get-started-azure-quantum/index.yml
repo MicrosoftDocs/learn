@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.quantum.get-started-azure-quantum
+metadata:
+  title: Get started with Azure Quantum
+  description: Learn how to get started with Azure Quantum and create an Azure Quantum workspace.
+  ms.date: 01/01/2021
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with Azure Quantum
+summary: Learn how to get started with Azure Quantum, what it has to offer, and how to create a Quantum workspace to run jobs in the cloud.
+abstract: |
+  In this module you will:
+  - Discover what the Azure Quantum service has to offer: Quantum computing and Optimization
+  - Prepare your Azure account to use Azure Quantum.
+  - Create a Quantum workspace.
+  - Learn about application domains for Azure Quantum.
+prerequisites: In order to use the Azure Quantum service, you will need an active Azure subscription. For more information about creating an Azure account and subscription, see the Microsoft Learn module [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/).
+iconUrl: /learn/achievements/quantum/get-started-azure-quantum.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+units:
+- learn.quantum.get-started-azure-quantum.1-introduction
+- learn.quantum.get-started-azure-quantum.2-azure-quantum-structure-overview
+- learn.quantum.get-started-azure-quantum.3-create-quantum-workspace
+- learn.quantum.get-started-azure-quantum.4-case-study-quantum-computing
+- learn.quantum.get-started-azure-quantum.5-case-study-optimization
+- learn.quantum.get-started-azure-quantum.6-knowledge-check
+- learn.quantum.get-started-azure-quantum.7-summary
+badge:
+  uid: learn.quantum.get-started-azure-quantum.badge
