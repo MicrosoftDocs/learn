@@ -16,7 +16,7 @@ One example of applying quantum-inspired optimization is to significantly reduce
 
 [Traffic optimizations](https://arxiv.org/abs/1708.01625?azure-portal=true) of approximately 400 vehicles takes 20 seconds on a quantum annealing machine. In the case study, the quantum-inspired algorithms tackle a comparable problem in only 0.02 seconds on a single CPU core. Larger problems could also be accelerated using specialized hardware, such as FPGAs available in Azure, by at least two orders of magnitude, which enables the speed required to address the scale of real-world routing complexity, well beyond simple toy problems.
 
-### Materials Design
+### Materials design
 
 Many of the staples of modern life such as compact electronics, energy-efficient transportation, and innovative buildings and construction techniques are owed to advancements in materials science that allow researchers to create materials whose chemical structures maximize certain physical properties such as strength, electrical characteristics, weight, or other features. However, designing materials to maximize these properties requires simulating the complex quantum physics that dictate how the atoms that make up these materials interact with the world around them. For most molecules, this simulation represents a problem that is intractable using traditional computers or methods.
 
