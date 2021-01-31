@@ -25,8 +25,8 @@ To create and manage containers in your storage account from your .NET applicati
     BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
     ```
 
-> [!NOTE]
-> At this point, the client library has not attempted to connect to Azure or validate the connection string and access key being used. It has simply constructed a lightweight client object used to perform operations against Azure Blob Storage. Only when an operation is invoked against the storage account, will a network call be made.
+    > [!NOTE]
+    > At this point, the client library has not attempted to connect to Azure or validate the connection string and access key being used. It has simply constructed a lightweight client object used to perform operations against Azure Blob Storage. Only when an operation is invoked against the storage account, will a network call be made.
 
 3. Now we can add code to create the _photos_ container where we will store our images.
 
@@ -66,8 +66,8 @@ To create and manage containers in your storage account from your .NET applicati
     const blobServiceClient = BlobServiceClient.fromConnectionString(storageAccountConnectionString);
     ```
 
-> [!NOTE]
-> The client library will not attempt to connect to Azure until an operation is invoked that requires it. The client object is a lightweight object enabling access to the Azure Blob Storage; it does not validate the connection or the access key being used.
+    > [!NOTE]
+    > The client library will not attempt to connect to Azure until an operation is invoked that requires it. The client object is a lightweight object enabling access to the Azure Blob Storage; it does not validate the connection or the access key being used.
 
 3. After you have a client object, you can use the methods on the client object to perform actual work. Methods that make network calls are intentionally asynchronous. The library uses Promises to return asynchronous results. For that reason, you need to mark your main function as async as shown below.
 
@@ -101,8 +101,8 @@ To create a container in your storage account, you need to obtain a `ContainerCl
     node index.js
     ```
 
-> [!TIP]
-> If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
+    > [!TIP]
+    > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
 
 The first time you run the program, you should see a message that the container was created successfully. The second and subsequent times you run your program, you will see a message of false because the container already exists.
 
