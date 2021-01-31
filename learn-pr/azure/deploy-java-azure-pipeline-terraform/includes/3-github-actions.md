@@ -8,7 +8,7 @@ GitHub actions allow you to run Continuous Integration and Deployments (CI/CD) l
 
 Github Actions let you build, test, and deploy your code right from GitHub. You can also assign code reviews, manage branches, and triage issues the way you want with actions.
 
-## What are GitHub Actions?
+## GitHub Actions Components
 
 ![GitHub Actions workflow.](../media/3-actions.png)
 
@@ -26,7 +26,7 @@ Each step is made up of individual actions that run after a specific event (like
 
 To create a workflow, you add actions to a .yml file in the .github/workflows directory in your GitHub repository.
 
-## Terraform with GitHub Actions
+## Terraform GitHub Action
 
 The `hashicorp/setup-terraform` action sets up Terraform CLI in your GitHub Actions workflow by:
 

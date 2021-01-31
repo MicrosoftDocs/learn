@@ -1,4 +1,5 @@
-Congratulations! You've used Terraform to provision an Azure App Service, MySQL database, and deployed a Spring Boot web application.
+Congratulations! You've used Terraform with GitHub Actions to create multiple pipelines.
+You created an Azure App Service, MySQL database, and deployed a Spring Boot web application.
 
 Your company wanted to learn how they could provision their existing Spring Boot Java web applications to Azure App Service. You used the following steps:
 
@@ -8,7 +9,7 @@ Your company wanted to learn how they could provision their existing Spring Boot
 
 1. Configured your GIT repository to use GitHub actions to build and deploy your application on demand.
 
-You're confident that you can recommend Terraform to provision your Spring Boot Java applications to Azure.
+You're confident that you can now recommend this architecture for your Spring Boot applications.
 
 ## Clean up resources
 
