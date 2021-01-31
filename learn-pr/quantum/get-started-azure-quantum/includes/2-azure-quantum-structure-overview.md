@@ -10,9 +10,9 @@ Azure Quantum is a service on Azure. To use it, you create a *Quantum Workspace*
 
 The workspace also contains a list of *providers* and *targets* that you've selected. Every provider publishes a set of targets, each of which allows you to run either a quantum program or solve an optimization problem. Simulators, quantum computers, and optimization solvers are examples of targets.
 
-In the next section of this module you'll create an Azure Quantum workspace.
+In the next section of this module, you'll create an Azure Quantum workspace.
 
-## Storage Account
+## Storage account
 
 To store your jobs and results, you will need an Azure storage account. It is one of the properties configured when you set up a Quantum Workspace.
 
@@ -31,6 +31,6 @@ the job type and the provider and target that you configure for the Workspace.  
 |**Name**|A user-defined name to help organize your jobs.|
 |**Parameters**|Optional input parameters for targets. See the documentation for the selected target for a definition of available parameters.|
 
-Once you create a job, you'll also find various metadata available about its state and run history.
+After you create a job, you'll also find various metadata available about its state and run history.
 
-In the next unit, you will create an Azure Quantum workspace.
+In the next unit, you'll create an Azure Quantum workspace.
