@@ -1,4 +1,4 @@
-In this exercise, we'll look at creating and our Azure for MySql Database and load it with sample data.
+In this exercise, we'll creat your Azure for MySql Database and load it with sample data.
 
 ## Get Sample Application and script
 
@@ -51,7 +51,7 @@ After you cloned the project, you'll see the following directories and files.
 
 ## Sign in to Azure
 
-First, sign in to Azure
+Next, sign in to Azure:
 
 ```azurecli
 az login
@@ -59,9 +59,9 @@ az login
 
 ## Setup default install location
 
-You can specify the Azure Data-Centre Region for your Flexible Database. 
+You can specify the Azure Data-Centre Region for your Flexible Database.
 
-Currently the following Azure regions are available for MySQL Flexible severs: 
+The following Azure regions are available for your MySQL Flexible server:
 "eastus2, westus2, brazilsouth, southeastasia, northeurope, australiaeast, japaneast, koreacentral, uksouth, westeurope, canadacentral, centralus, eastus"
 
 ```azurecli
@@ -113,7 +113,7 @@ If your environment has a IPv6 address, this command will fail because the firew
 
 ## Get a sample database for MySQL
 
-In this module, you'll use a sample `World` dataBase from the official MySQL website.
+In this module, you'll use a sample `World` database from the official MySQL website.
 You can get the original data from following URL:
 `https://downloads.mysql.com/docs/world.sql.zip`
 
@@ -123,13 +123,13 @@ Download the `world` sample database:
 curl -o world.sql.zip https://downloads.mysql.com/docs/world.sql.zip
 ```
 
-After downloading the file, unzip the file as follows:
+After downloading the file, unzip the file:
 
 ```bash
 unzip world.sql.zip
 ```
 
-Then get the SQL file:
+Then access the SQL file:
 
 ```bash
 ls -l world.sql
@@ -138,7 +138,7 @@ ls -l world.sql
 
 ## Sign in to the MySQL DB
 
-After you created the MySQL database, you can access the database using the `mysql` command-line and password that was returned when you created your flexible server:
+After you created the MySQL database, you can access the database using the `mysql` command-line and password that you recorded when you created your flexible server:
 
 ```bash
 mysql -u azureuser -h mysqlserver-<your instance>.mysql.database.azure.com -p [Enter]
@@ -217,13 +217,13 @@ mysql> show tables;
 
 Next we'll view the contents of the `world` database by using the three steps:
 
-1. Get all continent information
-2. List all the names of country and their country codes in each continent
-3. Get cities, which have population greater than 1 million
+1. Get all `Continent` information
+2. List all the names of countries and their country codes
+3. Get all cities, which have population greater than 1 million
 
 ### Get all the continent information
 
-To get the continent information, execute following command:
+To get the Continent information, execute following command:
 
 ```mysql
 mysql> select distinct Continent from country ;
