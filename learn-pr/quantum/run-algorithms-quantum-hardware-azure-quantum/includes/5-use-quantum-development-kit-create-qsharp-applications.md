@@ -7,7 +7,7 @@ If you took a [previous module](https://docs.microsoft.com/learn/modules/solve-g
 
 Use Visual Studio Code to create a Q# Project.
 
-1. In Visual Studio Code open the **View** menu, and select **Command Palette**.
+1. In Visual Studio Code, open the **View** menu, and select **Command Palette**.
 
 1. Type `Q#: Create New Project`.
 
@@ -68,10 +68,10 @@ Open the file `Program.qs` and add the following content:
 
 ### Implement an oracle
 
-Since this is just a demonstration, we're going to solve a trivial task. You're going
+Because this is just a demonstration, we're going to solve a trivial task. You're going
 to give an integer as input to the oracle, and then use the quantum computer to find this integer.
 
-1. First you need to implement a marking oracle that takes an integer as input
+1. First, you need to implement a marking oracle that takes an integer as input
    and marks the basis state that corresponds to that integer. You can do this using
    the following operation:
 
@@ -83,7 +83,7 @@ to give an integer as input to the oracle, and then use the quantum computer to 
    [`ControledOnInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.controlledonint)
    from the Standard library.
 
-2. Since the general operation to run Grover's algorithm that you defined takes a phase oracle as an input, you need to transform your marking oracle into a phase oracle using the phase kickback trick. We can use the same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/en-us/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle):
+2. Because the general operation to run Grover's algorithm that you defined takes a phase oracle as an input, you need to transform your marking oracle into a phase oracle using the phase kickback trick. We can use the same operation that we used in the module [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/4-implement-quantum-oracle):
 
    :::code language="qsharp" source="../code/5-program-4.qs":::
 
@@ -116,7 +116,7 @@ The full code should be:
 
 Now your code is ready to submit the job to Azure Quantum. First you'll evaluate the resources that your code requires. Then you'll try your code in the IonQ's simulator, and finally you'll run it against hardware.
 
-In this example we'll set the number of qubits to 2, and the marked integer is going to be 1.
+In this example, we'll set the number of qubits to 2, and the marked integer is going to be 1.
 
 ### Estimate the resources for your job
 
@@ -131,6 +131,7 @@ To use `ResourcesEstimator`:
    ```
 
 1. Review the printed list of the quantum resources that are required to run the job.
+
    ```output
    Metric          Sum     Max
    CNOT            11      11
@@ -155,6 +156,7 @@ Now that you know what resources you need to run your job, you can test it on th
    ```azurecli
    az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1
    ```
+
    You should obtain something like this:
 
    ```output
@@ -186,6 +188,7 @@ Now that you know what resources you need to run your job, you can test it on th
    ```
 
 In this particular case, Grover's algorithm theoretically succeeds with 100% probability.
+
 Remember that the integer is represented as its binary notation in little endian (with the least significant bit written first), and binary result 10 is exactly the decimal 1 we used as the input.
 
 ### Run your code against hardware
