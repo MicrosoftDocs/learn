@@ -22,7 +22,7 @@ Your HPC workload may be largely focused on transforming data, and so the amount
 
 ### Random vs sequential traffic
 
-Application access drives the type of reading and writing traffic patterns your workload may require. For example, if you are running an image analysis workload, there may be an initial set of sequential reads, loading the image onto each machine.
+Application access drives the type of reading and writing traffic patterns your workload may require.
 
 HPC workloads may be highly parallel, with many machines requesting the same data from a shared file system. Or they may be unique and serialized, with unique and random data access patterns. Sequential traffic performance will be greater than random traffic. An example of sequential traffic might be the loading of a binary library or a large image or video file by one or more machines. An example of random traffic might include requests for different byte ranges of a a single or multiple files, versus reading the entire file itself.
 
@@ -42,6 +42,6 @@ The same job may then stop requiring any concurrent access, or may require burst
 
 The number and average size of the files must also be considered when selecting file storage. A workload that consumes 2TB of data will have different performance characteristics if that 2TB consists of 100 20GB files versus 10000 200MB files. Especially if those 10,000 files are nested in deep directory structures.
 
-The recommendation is to identify the most likely **working set** of data. Working set refers to the most likely maximum file count and file size you would require. You should try to identify the maximum and the average working set definitions and use those to guide your planning.
+The recommendation is to identify the most likely **working set** of data. Working set refers to the potential maximum file count and file size you would require. You should try to identify the maximum and the average working set definitions and use those to guide your planning.
 
-It isn't always easy to define working set, especially for an environment as opposed to a single HPC job. For example, one day you may need to create a small simulation against a static set of data, and the next day scale up to do a much larger analysis with intermediate outputs and checkpointing.
+It isn't always easy to define working set, especially for an environment as opposed to a single HPC workload. For example, one day you may need to create a small simulation against a static set of data, and the next day scale up to do a much larger analysis with intermediate outputs and checkpointing.
