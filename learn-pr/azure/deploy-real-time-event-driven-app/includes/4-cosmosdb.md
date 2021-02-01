@@ -4,11 +4,11 @@ Not every data storage solution is fast enough to meet the requirements of event
 
 _Loose coupling_ is achieved for the price of eventual consistency and potentially replicated data. The storage solutions might need to handle high throughput especially for write access. It might be even necessary to distinguish between the datasets for reading and writing access. In conclusion, the storage solution needs fulfill the following requirements:
 
-1. fast non-blocking write access
-2. fast non-blocking read access
-3. high throughput
-4. scalability
-5. for productive systems, as always: SLA
+- fast non-blocking write access
+- fast non-blocking read access
+- high throughput
+- scalability
+- for productive systems, as always: SLA
 
 ## Cosmos DB
 

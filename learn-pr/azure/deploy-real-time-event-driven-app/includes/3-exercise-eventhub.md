@@ -17,6 +17,7 @@ FUNCTION_APP=<value>
 LOCATION=<value>
 ```
 
+> [!NOTE]
 > To set the LOCATION variable, you can check the `az functionapp list-consumption-locations` command and take the closest.
 
 ## Create the required components
