@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Who should you engage when planning a technology project?"
+  - content: "Who should be engaged when planning a technology project?"
     choices:
     - content: "Engage the right stakeholders."
       isCorrect: true
