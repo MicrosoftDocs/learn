@@ -1,6 +1,7 @@
 ### YamlMime:Module
 uid: learn.quantum.solve-graph-coloring-problems-grovers-search
 metadata:
+  title: Solve graph coloring problems by using Grover's search
   description: Learn how Grover's algorithm can help you solve search problems such as graph coloring problems.
   ms.date: 09/19/2020
   author: tcNickolas
@@ -18,11 +19,11 @@ abstract: |
 prerequisites: |
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-  - The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode?azure-portal=true)
+  - The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode&azure-portal=true)
 
-  You will need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement.
+  You'll need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement.
 
-  You will also need some familiarity with Q# and the Quantum Development Kit.
+  You'll also need some familiarity with Q# and the Quantum Development Kit.
 iconUrl: /learn/achievements/quantum/solve-graph-coloring-problems-grovers-search.svg
 levels:
 - intermediate

@@ -15,7 +15,7 @@ The ‘sell through Microsoft’ selection you make in this step determines the 
 When you get to the properties tab of the publishing process, you’ll be asked to define the categories and industries that will be used to index your offering in the commercial marketplace. You’ll select your choices from a pre-populated list of options.
 
 > [!Important]
-> The categories you select to describe your offer will determine your SaaS offer’s placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT & developer applications are published to Microsoft AppSource.
+> The categories you select to describe your offer will determine your SaaS offer’s placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT & developer applications are published to Azure Marketplace.
 
 The properties tab is also where you provide the legal terms and conditions that govern the use of your SaaS application by customers. You can use the commercial marketplace standard contract, or you can define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments that you define. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](https://docs.microsoft.com/azure/marketplace/standard-contract).
 

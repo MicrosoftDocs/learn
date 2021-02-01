@@ -1,3 +1,5 @@
+As a new member of the space crew, you first need to learn the tools you'll use.
+
 In this part, you prepare your development environment so you can begin writing quantum programs.
 
 To set up your development environment, you:
@@ -9,18 +11,18 @@ To set up your development environment, you:
 But first, let's take a quick look at what you get with the Quantum Development Kit (QDK).
 
 > [!NOTE]
-> Before you proceed, make sure you have the latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
+> Before you proceed, make sure you have the [.NET Core 3.1 version](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
 
 ## What's the Quantum Development Kit (QDK)?
 
 The QDK gives you everything you need to start writing quantum programs. Included in the QDK is the Q# programming language.
 
-Q# is a *domain-specific programming language* (DSL). A DSL is a computer language that's built for a specific kind of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
+Q# is a *domain-specific programming language* (DSL). A DSL is a computer language that's built for a specific type of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
 
 The QDK also includes:
 
 * Q# libraries that help you build real-world quantum applications right away.
-* Targets, which allow you to run your program locally or on a variety of hardware through Azure Quantum.
+* Targets, which allow you to run your program locally or on different kinds of hardware through Azure Quantum.
 
     Targets include resource estimators and simulators for larger quantum programs, as well as a quantum simulator, which behaves much like a quantum computer would.
 
