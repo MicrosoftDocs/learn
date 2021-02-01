@@ -1,6 +1,16 @@
 Now that you've successfully deployed your first serverless web function using the Azure Functions Maven Archetype, your company would like you to research how to analyze your application's usage with Azure Application Insights.
 
-In this unit, you'll learn about the integration between Azure Functions and Application Insights, and how to set up Application Insights for your Azure Function.
+In this unit, you'll learn about log streaming as basic troubleshooting tool and the integration between Azure Functions and Application Insights.
+
+## Stream logs in real time
+
+Once you have your funciton app deployed and running. You can use the simple Azure CLI command to get real time log streaming from the app for basic troubleshooting:
+
+    ```azcli
+    az webapp log tail -n <function app name> -g <sandbox resource group name>
+    ```
+    
+For more complicate troubleshooting and monitoring scenario, Application Insights will be a better fit.
 
 ## What is Application Insights?
 
@@ -8,15 +18,7 @@ Azure Application Insights is an Application Performance Management (APM) servic
 
 Application Insights supports applications that are developed in Node.js, Java, or .NET, which allows your development team greater flexibility and choice in how they structure and build your company's applications.
 
-Application Insights will provide essential information on failed requests, server response time, server requests, and availability. It can also use telemetry data sent from the application. However, this will require you to include telemetry tracking points in your code.
-
-## Enabling Application Insights for your function
-
-To enable Application Insights, you will need to locate your function in the Azure portal. To do so, you would sign into the Azure portal as you have done in previous exercises, then locate your function in the list of resources that you have created.
-
-When you expand the list of functions, you would select the **Monitor** link for the function where you want to enable Application Insights, then click **Configure** to begin setting up your monitoring.
-
-![Image showing where to enable Application Insights](../media/8-enable-application-insights.png)
+Application Insights will provide essential information on failed requests, server response time, server requests, and availability. It can also use telemetry data sent from the application. However, this will require you to include telemetry tracking points in your code. Application Insights is enabled by default for your Azure Functions.
 
 ## Adding instrumentation to your Java project
 
