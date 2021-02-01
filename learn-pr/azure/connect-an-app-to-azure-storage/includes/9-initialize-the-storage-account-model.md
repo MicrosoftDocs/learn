@@ -16,7 +16,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, firs
 
 To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` client object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we will simply use the name _photos_.
 
-2. Next, add the following code to your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
+1. Next, add the following code to your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
 
     ```csharp
     var connectionString = configuration.GetConnectionString("StorageAccount");
@@ -28,19 +28,19 @@ To create and manage containers in your storage account from your .NET applicati
     > [!NOTE]
     > At this point, the client library has not attempted to connect to Azure or validate the connection string and access key being used. It has simply constructed a lightweight client object used to perform operations against Azure Blob Storage. Only when an operation is invoked against the storage account, will a network call be made.
 
-3. Now we can add code to create the _photos_ container where we will store our images.
+1. Now we can add code to create the _photos_ container where we will store our images.
 
     ```csharp
     container.CreateIfNotExists();
     ```
 
-4. Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists` method, you can run your program multiple times but the container will only be created on the first run.
+1. Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists` method, you can run your program multiple times but the container will only be created on the first run.
 
     ```dotnetcli
     dotnet run
     ```
 
-5. You can verify you have created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
+1. You can verify you have created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
 
     ```azurecli
     az storage container list \
@@ -59,7 +59,7 @@ To create and manage containers in your storage account from your .NET applicati
     const { BlobServiceClient } = require("@azure/storage-blob");
    ```
 
-2. Now, you can create a `BlobServiceClient` object in your code by getting the storage account connection string, and passing it to the factory method `fromConnectionString` on the `BlobServiceClient` object like this.
+1. Now, you can create a `BlobServiceClient` object in your code by getting the storage account connection string, and passing it to the factory method `fromConnectionString` on the `BlobServiceClient` object like this.
 
     ```javascript
     const storageAccountConnectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
@@ -69,7 +69,7 @@ To create and manage containers in your storage account from your .NET applicati
     > [!NOTE]
     > The client library will not attempt to connect to Azure until an operation is invoked that requires it. The client object is a lightweight object enabling access to the Azure Blob Storage; it does not validate the connection or the access key being used.
 
-3. After you have a client object, you can use the methods on the client object to perform actual work. Methods that make network calls are intentionally asynchronous. The library uses Promises to return asynchronous results. For that reason, you need to mark your main function as async as shown below.
+1. After you have a client object, you can use the methods on the client object to perform actual work. Methods that make network calls are intentionally asynchronous. The library uses Promises to return asynchronous results. For that reason, you need to mark your main function as async as shown below.
 
     ```javascript
     async function main() {
@@ -83,7 +83,7 @@ The container name must be between 3 and 63 characters long and may only contain
 
 To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though our container does not yet exist in our storage account, the `ContainerClient` can be used to create the container as well as manage it once it is created.
 
-4. Run the following command to obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object.
+1. Run the following command to obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object.
 
     ```javascript
     async function main() {
@@ -95,7 +95,7 @@ To create a container in your storage account, you need to obtain a `ContainerCl
     }
     ```
 
-5. Now, build and run the app to have your program create the container in your storage account.
+1. Now, build and run the app to have your program create the container in your storage account.
 
     ```bash
     node index.js
@@ -106,7 +106,7 @@ To create a container in your storage account, you need to obtain a `ContainerCl
 
 The first time you run the program, you should see a message that the container was created successfully. The second and subsequent times you run your program, you will see a message of false because the container already exists.
 
-6. You can verify you have created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
+1. You can verify you have created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
 
     ```azurecli
     az storage container list \
