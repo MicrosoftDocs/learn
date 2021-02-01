@@ -9,7 +9,7 @@ CSV consists of shared volumes mapped to subdirectories within the C:\ClusterSto
 
 One of the key modules of the CSV file system stack is the CSV Volume Manager. This is the driver that makes sure that the CSVs are presented as local volumes. In the following diagram, each volume in the storage pool has its own file system directory. For example, C:\ClusterStorage\Volume 1 folder maps to Volume1.
 
-:::image type="content" source="../media/m21-csv-architecture1.png" alt-text="The correlation between the storage pool, CSVs, and C:\ClusterStorage\ file system directories." border="false":::
+:::image type="content" source="../media/m21-csv-architecture-1.png" alt-text="The correlation between the storage pool, CSVs, and C:\ClusterStorage\ file system directories." border="false":::
 
 While each node can independently read from and write to individual files on the volume, a single node functions as the CSV owner (or, *coordinator*) of the volume. That node hosts the mount of the volume. You have the option of assigning an individual volume to a specific owner, however, a failover cluster automatically distributes CSV ownership between cluster nodes. The distribution mechanism considers the number of CSVs that each node owns. The cluster service rebalances the ownership following such changes as adding, removing, or restarting a node.
 
@@ -30,11 +30,11 @@ CSV supports two I/O redirection modes, depending on the type of event that trig
 
 - File system redirection. This might happen when a third-party backup application performs a snapshot of a CSV volume. In this case, redirection takes place at the file system level. I/O operations traverse CSVFS on the originating node and travel via SMB to the owner node. From there, they reach the target disk via the NTFS or ReFS file system stack, which resembles the path of metadata updates. The following image illustrates this scenario. Node 1 represents the cluster node which operates in the file system redirection mode. Node 2 serves the role of the node owner.
 
-:::image type="content" source="../media/m21-csv-file-system-redirected-mode.png" alt-text="The CSV file system redirection, with one node maintaining direct access to the volume while the other redirecting the traffic via the SMB Server and the CSVFS layer." border="false":::
+    :::image type="content" source="../media/m21-csv-file-system-redirected-mode.png" alt-text="The CSV file system redirection, with one node maintaining direct access to the volume while the other redirecting the traffic via the SMB Server and the CSVFS layer." border="false":::
 
 - Block redirection. This happens when a node loses connectivity to a volume, however, the volume remains online. Redirection takes place at the block level. In this case, I/O operations also traverse CSVFS on the originating node and travel via SMB to the owner node. However, they bypass the NTFS or ReFS stack on the owner node, similarly, to Direct I/O, which significantly improves their performance. The following image illustrates this scenario. As before, Node 1 represents the cluster node which operates in the file system redirection mode. Node 2 serves the role of the node owner.
 
-:::image type="content" source="../media/m21-csv-block-redirected-mode.png" alt-text="The CSV block redirection, with one node maintaining direct access to the volume while the other redirecting the traffic via the SMB Server but bypassing the CSVFS layer." border="false":::
+    :::image type="content" source="../media/m21-csv-block-redirected-mode.png" alt-text="The CSV block redirection, with one node maintaining direct access to the volume while the other redirecting the traffic via the SMB Server but bypassing the CSVFS layer." border="false":::
 
 > [!NOTE]
 > You can identify the status of the CSV volume per node, including its I/O redirection mode and the reason for it by using the `Get-ClusterSharedVolumeState` Windows PowerShell cmdlet.
