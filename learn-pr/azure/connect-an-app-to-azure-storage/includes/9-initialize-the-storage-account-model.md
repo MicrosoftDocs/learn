@@ -14,7 +14,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, firs
     using Azure.Storage.Blobs;
     ```
 
-To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` client object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we will simply use the name _photos_.
+    To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` client object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we will simply use the name _photos_.
 
 1. Next, add the following code to your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
 
@@ -76,12 +76,12 @@ To create and manage containers in your storage account from your .NET applicati
      // Function code here
     }
     ```
+    
+    Now let's execute an operation against our storage account. A storage account is organized into one or more containers which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
 
-Now let's execute an operation against our storage account. A storage account is organized into one or more containers which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
+    The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we will simply use the name  _photos_.
 
-The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we will simply use the name  _photos_.
-
-To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though our container does not yet exist in our storage account, the `ContainerClient` can be used to create the container as well as manage it once it is created.
+    To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though our container does not yet exist in our storage account, the `ContainerClient` can be used to create the container as well as manage it once it is created.
 
 1. Run the following command to obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object.
 
@@ -104,7 +104,7 @@ To create a container in your storage account, you need to obtain a `ContainerCl
     > [!TIP]
     > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
 
-The first time you run the program, you should see a message that the container was created successfully. The second and subsequent times you run your program, you will see a message of false because the container already exists.
+    The first time you run the program, you should see a message that the container was created successfully. The second and subsequent times you run your program, you will see a message of false because the container already exists.
 
 1. You can verify you have created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
 
@@ -115,4 +115,4 @@ The first time you run the program, you should see a message that the container 
 
 ::: zone-end
 
-Now that our program is connecting to our Azure storage account and we have created a _photos_ container, let's have our program upload an image to it.
+    Now that our program is connecting to our Azure storage account and we have created a _photos_ container, let's have our program upload an image to it.
