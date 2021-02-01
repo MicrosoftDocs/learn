@@ -194,7 +194,7 @@ To read data from the database, you need to define an input binding. As you'll s
 
     You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
-1. In the **Document ID (optional)** field, enter `{id}`.
+1. In the **Document ID** field, enter `{id}`.
 
     This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
@@ -205,8 +205,8 @@ To read data from the database, you need to define an input binding. As you'll s
     | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
     | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
     | **Collection Name** | _Bookmarks_ | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    | **Partition key (optional)** |/id | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
-    | **SQL Query (optional)** | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | **Partition key** |/id | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
+    | **SQL Query (optional)** | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
 1. To save all changes to this binding configuration, select **OK**.
 
