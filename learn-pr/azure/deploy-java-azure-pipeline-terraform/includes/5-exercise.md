@@ -13,16 +13,17 @@ The Azure App Service Deployment Center will automatically generate a GitHub Act
 - On the left side, select **Deployment Center**
 - Under **Continuous Deployment (CI / CD)**, select **GitHub**
 - Next, select **GitHub Actions**
-- Use the dropdowns to select your GitHub repository, branch, and **JAVA 8** as the application stack
-- On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. Your Workflow file will be created similar to the below (You'll have a different app name and publishing profile):
+- On the right, under **Settings**, use the dropdowns to select your GitHub repository, **main** branch, and **JAVA 8** as the application stack
+- On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. Your Workflow file will be created similar to the below. You'll have a different application name (APP_NAME) and publishing profile:
 
 ```yml
-name: Build and deploy JAR app to Azure Web App - spring-petclinic-app
+name: Build and deploy JAR app to Azure Web App - APP_NAME
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -42,7 +43,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'spring-petclinic-app'
+        app-name: 'APP_NAME'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
         package: '${{ github.workspace }}/target/*.jar'
