@@ -112,7 +112,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, firs
     az storage container list \
     --account-name <name>
     ```
-
+    
 ::: zone-end
 
-    Now that our program is connecting to our Azure storage account and we have created a _photos_ container, let's have our program upload an image to it.
+Now that our program is connecting to our Azure storage account and we have created a _photos_ container, let's have our program upload an image to it.
