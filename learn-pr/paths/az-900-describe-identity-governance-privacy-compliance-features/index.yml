@@ -59,6 +59,9 @@ summary: |
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals learning path 5 video"
+  url: https://www.microsoft.com/videoplayer/embed/RE4McuP]
 iconUrl: /learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg
 levels:
 - beginner
