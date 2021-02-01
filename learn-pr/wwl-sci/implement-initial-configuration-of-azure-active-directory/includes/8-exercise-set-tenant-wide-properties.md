@@ -59,14 +59,14 @@ You add your organization's privacy information in the **Properties** area of Az
 
 12. Add your privacy info for your employees:
 
-- **Technical contact**. Type the email address for the person to contact for technical support within your organization.
+    - **Technical contact**. Type the email address for the person to contact for technical support within your organization.
 
-- **Global privacy contact**. Type the email address for the person to contact for inquiries about personal data privacy. This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
+    - **Global privacy contact**. Type the email address for the person to contact for inquiries about personal data privacy. This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
 
-- **Privacy statement URL**. Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
+    - **Privacy statement URL**. Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
 
-> [!IMPORTANT]
-> If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, <your org name> has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
+    > [!IMPORTANT]
+    > If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, <your org name> has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
 
     > [!div class="mx-imgBorder"]
     > ![B2B Collaboration Review permissions box with message.](../media/active-directory-privacy-statement-contact.png)
