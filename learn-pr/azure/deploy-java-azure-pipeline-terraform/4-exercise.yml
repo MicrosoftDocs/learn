@@ -4,7 +4,7 @@ title: Exercise - Provision Azure resources
 metadata:
   title: Exercise - Provision Azure resources
   description: In this exercise, you'll configure GitHub actions with Terraform, to provision your Azure resources.
-  ms.date: 09/18/2020
+  ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial

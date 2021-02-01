@@ -18,7 +18,7 @@ https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
 
 - select to "Create Repository from template" under your GitHub Account as a private repository.
 
-![Github create repo from template.](../media/4-template_create.png)
+![Github create repo from template.](../media/4-template-create.png)
 
 ## Workflow
 
@@ -270,13 +270,13 @@ Commit your changes.
 - Go to the "Actions" tab on your repository, then select the "TERRAFORM" workflow.
   - Verify the "Terraform Init", "Terraform Plan" and "Terraform Validate" steps have been triggered:
 
-![Maven GitHubAction run.](../media/4-terraform_run.png)
+![Maven GitHubAction run.](../media/4-terraform-run.png)
 
 - Expand the "Terraform Apply" step.
   - Terraform has created the resources and displayed the Azure Instance URL.
 - Verify your Azure App Instance is publicly available.
 
-![Maven GitHubAction.](../media/4-template_url.png)
+![Maven GitHubAction.](../media/4-template-url.png)
 
 ## Next Steps
 

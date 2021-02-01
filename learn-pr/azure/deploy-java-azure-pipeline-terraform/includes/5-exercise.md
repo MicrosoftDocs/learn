@@ -62,7 +62,7 @@ jobs:
   - Terraform has deployed the Java Web App and displayed the Azure Instance URL.
 - Verify your Java application is deployed, connection to your MySQL database, and returning data.
 
-![Maven GitHubAction run.](../media/4-maven_run.png)
+![Maven GitHubAction run.](../media/4-maven-run.png)
 
 ## Next steps
 

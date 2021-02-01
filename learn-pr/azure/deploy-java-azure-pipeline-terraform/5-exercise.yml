@@ -4,7 +4,7 @@ title: Exercise - Deploy a sample Spring Boot application
 metadata:
   title: Exercise - Deploy a sample Spring Boot application
   description: In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
-  ms.date: 09/18/2020
+  ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
