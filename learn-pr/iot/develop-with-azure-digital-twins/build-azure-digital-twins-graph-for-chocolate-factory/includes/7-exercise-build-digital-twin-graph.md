@@ -13,9 +13,9 @@ For the explorer sample to run properly, you need to sign in locally to the Azur
 
 1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
 
-1. Sign in to Azure by running the following command in a command prompt:
+1. After you successfully install the Azure CLI, you can sign in to Azure by running the following command in PowerShell:
 
-    ```cmd
+    ```PowerShell
     az login
     ```
 
@@ -23,21 +23,31 @@ For the explorer sample to run properly, you need to sign in locally to the Azur
 
 ## Run Azure Digital Twins explorer
 
-1. Open a command prompt as an administrator. Change the directory to the path you saved off at the start of this unit, by typing **cd**. Then paste in the path to the **src** folder. For example:
+1. Open **PowerShell** as an administrator. Change the directory to the path you saved off at the start of this unit, by typing **cd**. Then paste in the path to the **src** folder. For example:
 
     ```cmd
     cd C:\Users\<your alias>\Downloads\Azure_Digital_Twins__ADT__explorer\client\src
     ```
 
-1. Type **npm install**. This command installs all the required dependencies of the explorer sample.
+1. Run the following command to install all the required dependencies of the ADT Explorer sample:
 
-    :::image type="content" source="../media/explorer-npm-install.png" alt-text="Screenshot of the command prompt help output when running npm install." lightbox="../media/explorer-npm-install.png":::
+    ```powershell
+    npm install
+    ```
 
-1. Start the explorer sample by typing **npm run start**. It might take a few seconds before the opening screen appears in your web browser.
+    :::image type="content" source="../media/explorer-npm-install.png" alt-text="Terminal help output when running npm install." lightbox="../media/explorer-npm-install.png":::
+
+1. Start the ADT Explorer sample by running the following command:
+
+    ```powershell
+    npm run start
+    ```
+
+    It might take a few seconds before the opening screen of the Azure Digital Twins explorer sample appears in your web browser.
 
 1. When prompted, enter your Azure Digital Twins URL. This string has the format of **https://**, followed by the Azure Digital Twins host name.
 
-1. You might have to grant consent for the app, if a **Permissions requested** pop-up appears.
+1. You might have to grant consent for the app if a **Permissions requested** pop-up appears.
 
 The Azure Digital Twins explorer sample is now loaded and ready.
 

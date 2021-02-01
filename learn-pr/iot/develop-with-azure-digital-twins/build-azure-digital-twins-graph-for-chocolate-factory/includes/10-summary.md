@@ -14,10 +14,7 @@ You also learned a bit about chocolate production!
 
 ## Clean up
 
-Delete the resources manually by locating the resources in the Azure portal and selecting the delete icon. Delete the following resources that you created earlier in the module, in Unit 2:
-
-- The instance of Azure Digital Twins
-- The app registration in Azure Active Directory
+Delete the resources manually by locating the Azure Digital Twins instance you created in Unit 2 in the Azure portal. Select the resource and delete it.
 
 ## Next steps
 
@@ -27,7 +24,7 @@ Take your interest further with:
 
 - [Azure Digital Twins documentation](/azure/digital-twins/)
 - [Understand twin models in Azure Digital Twins](/azure/digital-twins/concepts-models)
-- [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md)
+- [Digital Twins Definition Language (DTDL)](/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md)
 - [Use the Azure Digital Twins APIs and SDKs](/azure/digital-twins/how-to-use-apis-sdks)
 
 And look for additional Learn modules that take the chocolate factory scenario further.

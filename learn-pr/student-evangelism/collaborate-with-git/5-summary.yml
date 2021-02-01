@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/5-summary.md)]

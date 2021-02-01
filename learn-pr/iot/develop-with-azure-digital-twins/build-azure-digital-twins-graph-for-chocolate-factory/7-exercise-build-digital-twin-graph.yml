@@ -1,8 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-build-digital-twin-graph
 metadata:
+<<<<<<< HEAD
   description: In this exercise, you'll download and run the explorer sample locally, connect it to your instance, and set up your chocolate factory digital twin.
   ms.date: 10/1/2020
+=======
+  description: In this exercise, you'll download and run the ADT Explorer sample locally, connect it to your Azure ADT instance, and set up your chocolate factory digital twin.
+  ms.date: 01/28/2021
+>>>>>>> fe7ed90ff1ce8bd2eaffb9484eed5ef2aae591dd
   author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial

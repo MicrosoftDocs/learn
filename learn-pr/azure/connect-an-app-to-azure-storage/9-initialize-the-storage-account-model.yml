@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript
-  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/9-initialize-the-storage-account-model.md)]

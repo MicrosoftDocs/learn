@@ -46,8 +46,7 @@ The next step is to save some important data used to connect other resources to 
 
     > [!NOTE]
     > If you get the following warning message, ignore it. You don't need to see other role assignments.
-
-    :::image type="content" source="../media/permission-error.png" alt-text="Screenshot showing a permissions warning message." lightbox="../media/permission-error.png":::
+    > :::image type="content" source="../media/permission-error.png" alt-text="Screenshot showing a permissions warning message." lightbox="../media/permission-error.png":::
 
 1. Select **+ Add** > **Add role assignment**.
 

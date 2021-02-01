@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-loss-prevention-polices.manage-permissions-for-data-loss-prevention-reports
+title: Manage permissions for data loss prevention reports
+metadata:
+  title: Manage permissions for data loss prevention reports
+  description: "Manage permissions for data loss prevention reports"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-manage-permissions-for-data-loss-prevention-reports.md)]
