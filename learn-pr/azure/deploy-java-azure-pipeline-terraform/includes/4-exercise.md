@@ -10,15 +10,15 @@ Create a GitHub repository from the following GitHub template:
 https://github.com/MicrosoftDocs/mslearn-java-petclinic-simplified
 ```
 
-- On GitHub, navigate to the main page of the repository.
+1. On GitHub, navigate to the main page of the repository.
 
-- Above the file list, select "Use this template".
+2. Above the file list, select "Use this template".
 
-![Github template.](../media/4-template.png)
+    ![Github template.](../media/4-template.png)
 
-- select to "Create Repository from template" under your GitHub Account as a private repository.
+3. Select "Create Repository from template" under your GitHub Account as a private repository.
 
-![Github create repo from template.](../media/4-template-create.png)
+    ![Github create repo from template.](../media/4-template-create.png)
 
 ## Workflow
 

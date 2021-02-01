@@ -37,13 +37,17 @@ quiz:
     - content: Plain Text Passwords
       isCorrect: false
       explanation: "A Password is an insecure mechanism."
-  - content: "Which of the following options are benefits of Automating infrastructure?"
+  - content: "Which of the following options are benefits of automating infrastructure?"
     choices:
     - content: "Lowers the potential for human errors while deploying and managing infrastructure."
       isCorrect: false
+      explanation: Automation does lower the potential for human error, but that's not the only benefit.
     - content: "Deploys the same template multiple times to create identical development, test, and production environments."
       isCorrect: false
+      explanation: Automation does help establish consistency between environments, but that's not the only benefit.
     - content: "Reduces the cost of development and test environments by creating them on-demand."
       isCorrect: false
+      explanation:  Automation does reduce costs by increasing velocity and flexibility, but that's not the only benefit.
     - content: All of the Above
       isCorrect: true
+      explanation: Automation is an effective way of reducing errors, establishing consistency, and increasing speed and flexibility of development.
