@@ -32,7 +32,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     COOL_SAS_TOKEN="<token from portal>"
     ```
 
-8. Repeat the steps above and assign a generated SAS token for the hot storage account to a variable named **HOT_SAS_TOKEN**.
+8. Repeat these steps, and assign a generated SAS token for the hot storage account to a variable named **HOT_SAS_TOKEN**.
 
     ```bash
     HOT_SAS_TOKEN="<token from portal>"
@@ -46,7 +46,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     cd azcopy_linux_amd64_<version>
     ```
 
-2. Create a new container named *azcopy-archive* in the cool storage destination for the archived content from this AzCopy command line process:
+2. Create a new container named *azcopy-archive* in the cool storage destination for the archived content from this AzCopy command line process.
 
     ```bash
     ./azcopy make https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
@@ -66,7 +66,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
       --query '[].{name:name, properties:properties.lastModified}'
     ```
 
-1. Now that you have a list of blobs and their last modified times, you can use this information to create a script that uses AzCopy to transfer each blob that has a last modified time of more than six months ago to *Cool* storage. Since these files were just added, none of them will be old enough to filter by six months. Instead, run this example command to copy the *specification01.md* file to this new cool storage container.
+1. Now that you have a list of blobs and their last modified times, you can use this information to create a script that uses AzCopy to transfer each blob that has a last modified time of more than six months ago to *Cool* storage. Because these files were just added, none of them will be old enough to filter by six months. Instead, run this example command to copy the *specification01.md* file to this new cool storage container.
 
     ```bash
     ./azcopy copy https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specification01.md$HOT_SAS_TOKEN https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
