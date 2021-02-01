@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.plan,-implement,-administer-conditional-access
+uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
   title: Plan, implement, and administer conditional access
   description: "Plan, implement, and administer conditional access"
@@ -30,19 +30,19 @@ products:
 - azure
 - azure-active-directory
 units:
-- learn.wwl.plan,-implement,-administer-conditional-access.introduction
-- learn.wwl.plan,-implement,-administer-conditional-access.plan-security-defaults
-- learn.wwl.plan,-implement,-administer-conditional-access.exercise-working-with-security-defaults
-- learn.wwl.plan,-implement,-administer-conditional-access.plan-policies
-- learn.wwl.plan,-implement,-administer-conditional-access.implement-policy-controls-assignments
-- learn.wwl.plan,-implement,-administer-conditional-access.exercise-implement-condition-access-policies-roles-assignments
-- learn.wwl.plan,-implement,-administer-conditional-access.test-troubleshoot-policies
-- learn.wwl.plan,-implement,-administer-conditional-access.implement-application-controls
-- learn.wwl.plan,-implement,-administer-conditional-access.implement-session-management
-- learn.wwl.plan,-implement,-administer-conditional-access.exercise-configure-authentication-session-controls
-- learn.wwl.plan,-implement,-administer-conditional-access.configure-smart-lockout-thresholds
-- learn.wwl.plan,-implement,-administer-conditional-access.exercise-manage-azure-ad-smart-lockout-values
-- learn.wwl.plan,-implement,-administer-conditional-access.knowledge-check
-- learn.wwl.plan,-implement,-administer-conditional-access.summary-resources
+- learn.wwl.plan-implement-administer-conditional-access.introduction
+- learn.wwl.plan-implement-administer-conditional-access.plan-security-defaults
+- learn.wwl.plan-implement-administer-conditional-access.exercise-working-with-security-defaults
+- learn.wwl.plan-implement-administer-conditional-access.plan-policies
+- learn.wwl.plan-implement-administer-conditional-access.implement-policy-controls-assignments
+- learn.wwl.plan-implement-administer-conditional-access.exercise-implement-condition-access-policies-roles-assignments
+- learn.wwl.plan-implement-administer-conditional-access.test-troubleshoot-policies
+- learn.wwl.plan-implement-administer-conditional-access.implement-application-controls
+- learn.wwl.plan-implement-administer-conditional-access.implement-session-management
+- learn.wwl.plan-implement-administer-conditional-access.exercise-configure-authentication-session-controls
+- learn.wwl.plan-implement-administer-conditional-access.configure-smart-lockout-thresholds
+- learn.wwl.plan-implement-administer-conditional-access.exercise-manage-azure-ad-smart-lockout-values
+- learn.wwl.plan-implement-administer-conditional-access.knowledge-check
+- learn.wwl.plan-implement-administer-conditional-access.summary-resources
 badge:
-  uid: learn.wwl.plan,-implement,-administer-conditional-access.badge
+  uid: learn.wwl.plan-implement-administer-conditional-access.badge
