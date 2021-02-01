@@ -159,13 +159,13 @@ Now that you have a reasonable number of changes recorded, you can use `git log`
 
     ```output
     commit ae3f99c45db2547e59d8fcd8a6723e81bbc03b70
-    Author: shana <shana@email.com>
+    Author: User Name <user-name@contoso.com>
     Date:   Fri Nov 15 22:04:05 2019 +0000
 
         Add a simple stylesheet
 
     commit 4d07803d7c706bb48c52fcf006ad50946a2a9503
-    Author: shana <shana@email.com>
+    Author: User Name <user-name@contoso.com>
     Date:   Fri Nov 15 21:59:10 2019 +0000
 
         Make small wording change; ignore editor backups

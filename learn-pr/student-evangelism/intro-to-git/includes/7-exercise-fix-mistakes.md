@@ -152,7 +152,7 @@ One solution to this problem is to revert the previous commit.
 1. Now, this is the output you should see:
 
     ```output
-    Author: shana <shana@email.com>
+    Author: User Name <user-name@contoso.com>
     Date:   Tue Nov 19 23:42:26 2019 +0000
 
     Revert "Purposely overwrite the contents of index.html"

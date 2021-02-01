@@ -18,7 +18,7 @@ Before you can create your first repo, you make sure Git is installed and config
 
 1. To configure Git, you must define some global variables: `user.name` and `user.email`. Both are required for commits.
 
-1. Set your name in Cloud Shell with this command, replacing `<USER_NAME>` with the user name you wish to use (for example, "Shana"):
+1. Set your name in Cloud Shell with this command. Replace `<USER_NAME>` with the user name you wish to use:
 
     ```bash
     git config --global user.name "<USER_NAME>"
@@ -39,8 +39,8 @@ Before you can create your first repo, you make sure Git is installed and config
 1. Confirm the output includes two lines similar to the following example. Note that your name and e-mail address will be different from what's shown here:
 
     ```output
-    user.name=Shana
-    user.email=shana@email.com
+    user.name=User Name
+    user.email=user-name@contoso.com
     ```
 
 ## Set up your Git repository
