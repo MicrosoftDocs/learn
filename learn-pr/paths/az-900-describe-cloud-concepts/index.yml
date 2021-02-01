@@ -63,7 +63,7 @@ prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
 video:
-  title: "Azure Fundamentals learning path 1 video"
+  title: "Azure Fundamentals video: Describe cloud concepts"
   url: https://www.microsoft.com/videoplayer/embed/RE4M6Yh
 iconUrl: /learn/achievements/az-900-describe-cloud-concepts.svg
 levels:
