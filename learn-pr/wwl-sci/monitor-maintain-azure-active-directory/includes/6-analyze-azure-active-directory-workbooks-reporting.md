@@ -24,8 +24,8 @@ To access the data from the usage and insights report, you need:
 
 1. From the **Activity** section, select **Usage & insights** to open the report.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows Usage & insights selected from the Activity section.](../media/main-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot shows Usage & insights selected from the Activity section.](../media/main-menu.png)
 
 ## Use the report
 

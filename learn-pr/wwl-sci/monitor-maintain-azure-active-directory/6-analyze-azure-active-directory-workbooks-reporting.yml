@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-maintain-azure-active-directory.analyze-azure-ad-workbooks-reporting
-title: Analyze azure ad workbooks and reporting
+title: Analyze azure active directory workbooks and reporting
 metadata:
-  title: Analyze azure ad workbooks and reporting
-  description: "Analyze azure ad workbooks and reporting"
+  title: Analyze azure active directory workbooks and reporting
+  description: "Analyze azure active directory workbooks and reporting"
   ms.date: 02/01/2021
   author: wwlpublish
   ms.author: roberts
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-analyze-azure-ad-workbooks-reporting.md)]
+  [!include[](includes/6-analyze-azure-active-directory-workbooks-reporting.md)]

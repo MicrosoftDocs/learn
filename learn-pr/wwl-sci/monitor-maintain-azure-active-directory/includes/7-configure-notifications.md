@@ -44,8 +44,8 @@ To review the existing email notification recipients or add additional recipient
 
 5. When done, select **Save** on the top-hand navigation.
 
-> [!WARNING]
-> When you change the notification settings, the notification settings for the entire managed domain—not just for you—are updated.
+   > [!WARNING]
+   > When you change the notification settings, the notification settings for the entire managed domain—not just for you—are updated.
 
 ## Frequently asked questions
 

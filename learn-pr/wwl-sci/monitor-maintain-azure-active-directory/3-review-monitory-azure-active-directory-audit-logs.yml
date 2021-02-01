@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-maintain-azure-active-directory.review-monitory-azure-ad-audit-logs
-title: Review and monitory azure ad audit logs
+title: Review and monitory azure active directory audit logs
 metadata:
-  title: Review and monitory azure ad audit logs
-  description: "Review and monitory azure ad audit logs"
+  title: Review and monitory azure active directory audit logs
+  description: "Review and monitory azure active directory audit logs"
   ms.date: 02/01/2021
   author: wwlpublish
   ms.author: roberts
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-review-monitory-azure-ad-audit-logs.md)]
+  [!include[](includes/3-review-monitory-azure-active-directory-audit-logs.md)]

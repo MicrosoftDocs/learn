@@ -38,7 +38,7 @@ quiz:
     - content: "Insert the second incorrect answer text in this cell."
       isCorrect: false
       explanation: "Incorrect. While Splunk is one of the third-party SIEM tools we can export data to, it is not the only one. We also support other third-party SIEM tools, such as IBM QRadar and ArcSight."
-  - content: "You want to configure email notifications to be sent from Azure AD Domain Services when issues are detected. In Azure, where would you configure this?"
+  - content: "John wants to configure email notifications to be sent from Azure AD Domain Services when issues are detected. In Azure, where this would be configured?"
     choices:
     - content: "Azure Portal > Azure Active Directory > Monitoring > Notifications > Add email recipient."
       isCorrect: false
