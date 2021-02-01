@@ -25,7 +25,7 @@ Let's start by creating a new Azure Stream Analytics job in the Azure portal.
 
 1. Set the **Streaming units** to **1** to minimize the cost for this test.
 
-1. Select **Create** to create the new job.
+1. Select **Create** to create the new job. Your job will go through validation.
 
     ![Screenshot of the new Stream Analytics job](../media/3-create-new-job.png)
 

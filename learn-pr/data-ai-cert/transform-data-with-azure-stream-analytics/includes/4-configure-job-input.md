@@ -38,7 +38,7 @@ Let's start by creating an Azure Blob Storage account.
 
 1. After the request has been validated, select **Create** to submit the deployment request.
 
-Wait for a few moments for the deployment to complete. After the message "Your deployment is complete" appears, go to the next step.
+Wait a few moments for the deployment to complete. After the message "Your deployment is complete" appears, go to the next step.
 
 ## Connect the input source to the Stream Analytics job
 
