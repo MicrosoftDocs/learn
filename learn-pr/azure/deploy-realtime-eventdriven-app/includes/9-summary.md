@@ -39,4 +39,4 @@ This command might take a minute to run.
 
 [Best practices for Azure Functions](https://docs.microsoft.com/azure/azure-functions/storage-considerations?WT.mc_id=java-9741-sakriema)
 
-[Store and manage connection strings with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-java?WT.mc_id=java-9741-sakriema)
+[Store and manage connection strings with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/secrets/quick-create-java?WT.mc_id=java-9741-sakriema)

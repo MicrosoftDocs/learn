@@ -16,4 +16,4 @@ Azure Cosmos DB is a fully managed NoSQL database for modern app development. Si
 
 ## Other databases to consider
 
-MongoDB, Cassandra, Gremlin, PostkreSQL, and others could also be an option you should consider. In this Learn Module, we'll focus on Cosmos DB.
+MongoDB, or Cassandra and others could also be an option you should consider. In this Learn Module, we'll focus on Cosmos DB.

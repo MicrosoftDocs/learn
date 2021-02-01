@@ -92,7 +92,7 @@ az functionapp config appsettings set \
 ```
 
 > [!NOTE]
-> For productive environments you can use an Azure Key Vault to store and manage the connection strings.
+> For production environments you can use an Azure Key Vault to store and manage the connection strings.
 
 ### Create the functions application
 
@@ -239,12 +239,14 @@ When the event hub receives the message, it generates an event. The `processSens
 
 ## Run locally
 
+With Azure Function you can receive events from all over the world. Yes, locally, on your development machine!
+
 ``` Bash
 mvn clean package
 mvn azure-functions:run
 ```
 
-After the build and startup messages, you'll see the incoming events when the functions run:
+After the build and startup messages, you'll see the incoming events when the function runs:
 
 ``` Output
 [2021-01-19T16:45:24.709Z] Executing 'Functions.processSensorData' (Reason='(null)', Id=87354afa-abf4-4963-bd44-0c1421048240)

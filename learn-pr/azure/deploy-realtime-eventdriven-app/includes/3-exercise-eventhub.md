@@ -240,6 +240,9 @@ public class TelemetryItem {
 
 ## Run locally
 
+When you run Azure Functions locally they are already streamed all over the world!
+You can see them in the Azure portal as well as 
+
 ``` Bash
 mvn clean package
 mvn azure-functions:run
@@ -256,7 +259,7 @@ After some build and startup messages, you'll see output similar to the followin
 ```
 
 > [!NOTE]
-> You are sending events from your local machine now all over the world!
+> You are sending events from your local machine now all over the world! 
 
 ## Deploy to Azure
 
