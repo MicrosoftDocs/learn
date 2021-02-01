@@ -73,7 +73,7 @@ The Web site's home page, **index.html** currently contains just one line of HTM
 
     This example uses the `-A` option with `git add` to add all untracked (and not ignored) files as well as ones that have changed to those already under Git control.
 
-If you do a `git diff` right now, the output will be empty because the changes have been committed. However, you can always use a `git diff HEAD^` command to compare differences between the latest commit and previous commit. (Try it and see.)
+If you do a `git diff` right now, the output will be empty because the changes have been committed. However, you can always use a `git diff HEAD^` command to compare differences between the latest commit and previous commit. Try it and see. Don't forget to include the "^" character at the end of the command.
 
 ## Add a subdirectory
 
@@ -159,13 +159,13 @@ Now that you have a reasonable number of changes recorded, you can use `git log`
 
     ```output
     commit ae3f99c45db2547e59d8fcd8a6723e81bbc03b70
-    Author: shana <shana@email.com>
+    Author: User Name <user-name@contoso.com>
     Date:   Fri Nov 15 22:04:05 2019 +0000
 
         Add a simple stylesheet
 
     commit 4d07803d7c706bb48c52fcf006ad50946a2a9503
-    Author: shana <shana@email.com>
+    Author: User Name <user-name@contoso.com>
     Date:   Fri Nov 15 21:59:10 2019 +0000
 
         Make small wording change; ignore editor backups

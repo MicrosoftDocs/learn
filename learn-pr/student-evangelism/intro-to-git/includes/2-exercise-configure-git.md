@@ -18,7 +18,7 @@ Before you can create your first repo, you make sure Git is installed and config
 
 1. To configure Git, you must define some global variables: `user.name` and `user.email`. Both are required for commits.
 
-1. Set your name in Cloud Shell with this command, replacing `<USER_NAME>` with the user name you wish to use (for example, "Shana"):
+1. Set your name in Cloud Shell with this command. Replace `<USER_NAME>` with the user name you wish to use:
 
     ```bash
     git config --global user.name "<USER_NAME>"
@@ -39,16 +39,15 @@ Before you can create your first repo, you make sure Git is installed and config
 1. Confirm the output includes two lines similar to the following example. Note that your name and e-mail address will be different from what's shown here:
 
     ```output
-    user.name=Shana
-    user.email=shana@email.com
+    user.name=User Name
+    user.email=user-name@contoso.com
     ```
 
 ## Set up your Git repository
 
 Git works by checking for changes to files within a certain folder.  We will create a folder to serve as our *working tree* (project directory), and let Git know about it, so it can start tracking changes. We tell Git to start tracking changes by initializing a Git repository into that folder.
 
-Start by creating an empty project directory and initializing a Git repository
-inside it.
+Start by creating an empty project directory and initializing a Git repository inside it.
 
 1. Create a folder named "Cats". This folder will be the *working tree* (sometimes called a "project directory") where your Web site is stored and the files that comprise it are located.
 
@@ -62,11 +61,21 @@ inside it.
     cd Cats
     ```
 
-1. Then execute a `git init`command to initialize the repository:
+1. Now initialize your new repository and set the name of the default branch to `main`.
 
-     ```bash
-     git init
-     ```
+    If you're running git version 2.28.0 and later, use the following commands:
+
+    ```bash
+    git init --initial-branch=main
+    git init -b main
+    ```
+
+    For earlier versions of git, use these commands:
+
+    ```bash
+    git init
+    git checkout -b main
+    ```
 
 1. Now use a `git status` command to show the status of the working tree:
 
@@ -74,7 +83,7 @@ inside it.
     git status
     ```
 
-    Git responds by saying "nothing to commit." It also says "On branch master" indicating that "master" is the current branch. (It's also the only branch.) So far, so good.
+    Git responds by saying "nothing to commit." It also says "On branch main" indicating that "main" is the current branch. (It's also the only branch.) So far, so good.
 
 1. Use an `ls` command to show the contents of the working tree:
 

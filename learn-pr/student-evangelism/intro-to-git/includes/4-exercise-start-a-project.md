@@ -54,7 +54,7 @@ Git doesn't do much with empty directories, so let's add a file to the working t
 1. You should get an output like:
 
     ```output
-    On branch master
+    On branch main
 
     Initial commit
 
@@ -83,7 +83,7 @@ Now that **index.html** has been added to the index, the next step is to commit 
 1. Git will respond with a confirmation of what you did:
 
     ```output
-    [master (root-commit) 87e874c] Create an empty index.html file
+    [main (root-commit) 87e874c] Create an empty index.html file
      1 file changed, 0 insertions(+), 0 deletions(-)
      create mode 100644 index.html
      ```
@@ -100,7 +100,7 @@ Now that **index.html** has been added to the index, the next step is to commit 
 
     ```output
     commit 87e874c4aeeb3f9692ae5d9875235353708d7dd5
-    Author: shana <shana@email.com>
+    Author: User Name <user-name@contoso.com>
     Date:   Fri Nov 15 20:47:05 2019 +0000
 
     Create an empty index.html file
@@ -133,7 +133,7 @@ Now that **index.html** has been added to the index, the next step is to commit 
 1. You can see that Git is aware of the changes you made:
 
     ```output
-    On branch master
+    On branch main
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git checkout -- <file>..." to discard changes in working directory)
@@ -154,7 +154,7 @@ Now that **index.html** has been added to the index, the next step is to commit 
 1. Note output:
 
     ```output
-    [master 8c9143a] Add a heading to index.html
+    [main 8c9143a] Add a heading to index.html
      1 file changed, 1 insertion(+)
      ```
 
