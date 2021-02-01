@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-service-bus-with-jms.3-adapt-your-spring-boot-app-to-send-messages-to-azure-service-bus
+title: Adapt your spring boot application to send messages to Azure Service Bus
+metadata:
+  title: Adapt your spring boot application to send messages to Azure Service Bus
+  description: Adapt your Spring Boot microservices, send messages to Azure Service Bus
+  ms.date: 1/29/2021
+  author: axisc
+  ms.author: aschhab
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-adapt-your-spring-boot-app-to-send-messages-to-azure-service-bus.md)]

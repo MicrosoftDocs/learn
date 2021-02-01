@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-service-bus-with-jms.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 1/29/2021
+  author: axisc
+  ms.author: aschhab
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

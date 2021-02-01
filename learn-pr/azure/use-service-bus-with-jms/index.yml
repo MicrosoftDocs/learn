@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.use-service-bus-with-jms
+metadata:
+  title: Create and deploy a Spring Boot Java application to Azure Spring Cloud that interacts with Azure Service Bus
+  description: Create a Spring Boot application, connect it to an Azure Service Bus namespace and then deploy to Azure Spring Cloud.
+  ms.date: 1/29/2021
+  author: axisc
+  ms.author: aschhab
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and deploy a Spring Boot Java application to Azure Spring Cloud that interacts with Azure Service Bus
+summary: Create a Spring Boot application, connect it to an Azure Service Bus namespace and then deploy to Azure Spring Cloud.
+abstract: |
+  In this module, you will:
+  - Develop a Spring Boot Web application
+  - Connect your application to an Azure Service Bus namespace
+  - Deploy the web application to Azure Spring Cloud
+prerequisites: | 
+  - An Azure Subscription
+  - Local installations of Java JDK (1.8+), Maven (3.0+), and the Azure CLI (2.12+)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-spring-cloud
+- azure-service-bus
+- azure-database-mysql
+units:
+- learn.azure.use-service-bus-with-jms.1-introduction
+- learn.azure.use-service-bus-with-jms.2-build-your-spring-boot-application
+- learn.azure.use-service-bus-with-jms.3-adapt-your-spring-boot-app-to-send-messages-to-azure-service-bus
+- learn.azure.use-service-bus-with-jms.4-develop-spring-boot-app-to-receive-messages-from-azure-service-bus
+- learn.azure.use-service-bus-with-jms.5-deploy-app
+- learn.azure.use-service-bus-with-jms.6-summary
+badge:
+  uid: learn.azure.use-service-bus-with-jms.badge
