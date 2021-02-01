@@ -10,7 +10,7 @@ If you're working on your local machine, right-click on this image, and save it 
     wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
     ```
 
-In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_.
+    In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_.
 
 ::: zone pivot="csharp"
 
@@ -27,7 +27,7 @@ To work with individual blob objects in your Azure Storage account, you use a `B
     blobClient.Upload(fileName, true);
     ```
 
-The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we are specifying `true` to allow the program to be run multiple times.
+    The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we are specifying `true` to allow the program to be run multiple times.
 
 ## List objects in an Azure Blob Storage container
 
@@ -43,7 +43,7 @@ To validate that our program worked, we'll exercise another capability of the **
     }
     ```
 
-This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ container. It then iterates through each blob, printing out the name of the blob, the date and time the blob was created, and the size of the blob. When you run your program, this code should appear as a single line for the one image that has been uploaded.
+    This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ container. It then iterates through each blob, printing out the name of the blob, the date and time the blob was created, and the size of the blob. When you run your program, this code should appear as a single line for the one image that has been uploaded.
 
 1. The final **Program.cs** file should look like this if you want to check your work.
 
@@ -138,7 +138,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     }
     ```
 
-This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
+    This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
 
 1. The final file should look like this.
 
