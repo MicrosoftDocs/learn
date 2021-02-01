@@ -13,7 +13,7 @@ summary: |
   Start here and learn how you can build, migrate and scale Java applications on Azure leveraging Azure services, and using tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform etc.
 prerequisites: |
   - An Azure subscription
-  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](https://docs.microsoft.com/cli/azure/install-azure-cli)
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
