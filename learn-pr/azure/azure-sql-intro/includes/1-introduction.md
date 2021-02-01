@@ -19,4 +19,4 @@ To get the most out of this module, you should understand and be experienced in 
 
 - [Pro SQL Server on Linux, by Bob Ward](https://www.oreilly.com/library/view/pro-sql-server/9781484241288/?azure-portal=true): This book (available online) introduces SQL Server on Linux. In the process, it walks through topics that are fundamental to SQL Server.
 - [SQL Server 2019 Workshop (GitHub)](https://github.com/microsoft/sqlworkshops-sql2019workshop?azure-portal=true): This workshop helps you learn about the latest innovations available in SQL Server 2019. You'll be able to directly apply much of that knowledge in this module and learning path.
-- [Azure fundamentals learning path](https://docs.microsoft.com/learn/paths/azure-fundamentals/?azure-portal=true): This free hands-on learning path helps you understand the fundamentals of Azure at a general level. (It's not data focused.)
+- [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts//?azure-portal=true): This free hands-on learning path helps you understand the fundamentals of Azure at a general level. (It's not data focused.)
