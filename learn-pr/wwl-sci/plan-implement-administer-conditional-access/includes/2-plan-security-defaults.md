@@ -59,7 +59,7 @@ We tend to think that administrator accounts are the only accounts that need ext
 
 After these attackers gain access, they can request access to privileged information on behalf of the original account holder. They can even download the entire directory to perform a phishing attack on your whole organization.
 
-One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Azure Multi-Factor Authentication registration, they'll be prompted for additional authentication whenever necessary. This functionality protects all applications registered with Azure AD, including SaaS applications.
+One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Azure Active Directory Multi-Factor Authentication registration, they'll be prompted for additional authentication whenever necessary. This functionality protects all applications registered with Azure AD, including SaaS applications.
 
 ### Blocking legacy authentication
 
