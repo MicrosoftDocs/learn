@@ -4,7 +4,7 @@ For our example, we'll use Event Sourcing. So let's build a function, which is s
 
 ## Prepare your environment
 
-Let's define some environment variables to keep all following commands as short and understandable as possible.
+Let's define some environment variables to keep all following commands as short and understandable as possible. Define the `<value>` placeholders, and paste and run the following commands in your terminal, or command-line tool.
 
 ```bash
 RESOURCE_GROUP=<value>
@@ -25,7 +25,7 @@ Provisioning the resources on Azure will take some time. So let's start with the
 
 ### Create Resource Group
 
-It's always a good idea to have all the resources of a training, proof of concept or a prototype in one resource group. That allows you to clean up all used services with one command to prevent any inconveniences.
+It's always a good idea to bind all the resources of a training, proof of concept or a prototype in one resource group. That allows you to clean up all used services with one command to prevent any inconveniences. To create a resource group in the specified location, run the following command in your terminal:
 
 ``` bash
 az group create \
@@ -97,7 +97,7 @@ EVENT_HUB_CONNECTION_STRING=$( \
 echo $EVENT_HUB_CONNECTION_STRING
 ```
 
-These connection strings need to be stored in the application settings at your Azure Functions account.
+To store the connection strings in the application settings of your Azure Function account, run the following command in your terminal:
 
 ```bash
 az functionapp config appsettings set \
@@ -240,8 +240,8 @@ public class TelemetryItem {
 
 ## Run locally
 
-When you run Azure Functions locally they are already streamed all over the world!
-You can see them in the Azure portal as well as 
+When you run Azure Functions locally, they are already streamed all over the world!
+Also, you can review them in your Azure portal.
 
 ``` Bash
 mvn clean package
@@ -259,7 +259,7 @@ After some build and startup messages, you'll see output similar to the followin
 ```
 
 > [!NOTE]
-> You are sending events from your local machine now all over the world! 
+> Before deploying and running your function in the Azure cloud, you can send events from your local machine all over the world! That is very useful for developing, debugging, and local testing.
 
 ## Deploy to Azure
 
