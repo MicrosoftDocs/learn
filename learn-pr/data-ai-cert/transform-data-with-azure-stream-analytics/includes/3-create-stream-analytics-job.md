@@ -13,7 +13,7 @@ Let's start by creating a new Azure Stream Analytics job in the Azure portal.
 
     ![Screenshot showing the Stream Analytics jobs page in the Azure portal](../media/3-add-jobs.png)
 
-    The **New Stream Analytics jov** page appears.
+    The **New Stream Analytics job** page appears.
 
 1. Enter a **Job name**, such as **SimpleTransformer**.
 
