@@ -1,6 +1,6 @@
 In this unit, you'll look at the layout and features of the Azure Digital Twins (ADT) Explorer sample application on a conceptual level. In the next unit, you'll apply these features to your chocolate factory digital twin.
 
-The ADT Explorer sample is run from a command prompt window after installing a number of dependencies.
+The ADT Explorer sample is run from a terminal window after installing a number of dependencies.
 
 ## Sign in
 

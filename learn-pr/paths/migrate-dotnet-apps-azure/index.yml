@@ -29,6 +29,9 @@ products:
 - azure-app-service
 - aspnet
 modules:
+- learn.azure.intro-to-migrating-aspnet-apps-azure
+- learn.host-a-web-application-with-azure-web-apps
+- learn.provision-azure-sql-db
 - learn.azure.migrate-app-service-migration-assistant
 - learn.migrate-sql-server-relational-data
 trophy:
