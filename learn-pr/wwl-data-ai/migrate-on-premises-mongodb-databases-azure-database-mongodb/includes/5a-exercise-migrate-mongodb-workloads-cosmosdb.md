@@ -384,10 +384,10 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 
     | Property  | Value  |
     |---|---|
-    | Database id | Select **Create new**, and then type **DeviceData** |
+    | Database ID | Select **Create new**, and then type **DeviceData** |
     | Provision database throughput | **selected** |
     | Throughput | **1000** |
-    | Collection id | **Temperatures** |
+    | Collection ID | **Temperatures** |
     | Storage capacity | **Unlimited** |
     | Shard key | **deviceID** |
     | My shard key is larger than 100 bytes | leave de-selected |
@@ -628,7 +628,7 @@ You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured
 
 1. Using the Cloud Shell run this command to delete the resource group:
 
-```azurecli
-az group delete --name mongodbrg
-```
+    ```azurecli
+    az group delete --name mongodbrg
+    ```
 

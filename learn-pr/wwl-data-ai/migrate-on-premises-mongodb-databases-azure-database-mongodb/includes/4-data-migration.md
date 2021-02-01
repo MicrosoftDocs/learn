@@ -58,7 +58,7 @@ Here are the steps to migrate the database:
 
 ### Specify the source database
 
-1. In **Source details**, select **Standard mode**, to use an IP address or server name, **Connection String mode**, to specify a connection string, or **Data from azure storage**, to specify a backup file in Azure Storage.
+1. In **Source details**, select **Standard mode**, to use an IP address or server name, **Connection String mode**, to specify a connection string, or **Data from Azure Storage**, to specify a backup file in Azure Storage.
 1. Specify the remaining connection details based on the **Mode** that you selected.
 1. Click **Save**.
 
