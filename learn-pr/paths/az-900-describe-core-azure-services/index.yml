@@ -63,7 +63,7 @@ prerequisites: |
   - An understanding of cloud computing is helpful, but isn't necessary.
 video:
   title: "Azure Fundamentals video: Describe core Azure services"
-  url: https://www.microsoft.com/videoplayer/embed/RE4M4X7]
+  url: https://www.microsoft.com/videoplayer/embed/RE4M4X7
 iconUrl: /learn/achievements/az-900-describe-core-azure-services.svg
 levels:
 - beginner
