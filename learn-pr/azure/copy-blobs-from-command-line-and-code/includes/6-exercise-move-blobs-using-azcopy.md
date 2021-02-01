@@ -16,23 +16,23 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 <!-- NOTE TO REVIEWER. I wanted to generate SAS tokens from the command line, using the Azure CLI. However, there are currently bugs in the CLI storage commands which cause dates and timestamps to be handled incorrectly (may also be responsible for some of the issues in Exercise 4), so I have used the portal to generate SAS tokens. -->
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+2. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Select **All resources**, and select your destination (cool) storage account.
+3. Select **All resources**, and select your destination (cool) storage account.
 
-1. On the storage account page, under **Settings**, select **Shared access signature**.
+4. On the storage account page, under **Settings**, select **Shared access signature**.
 
-1. On the shared access signature page, check **Container** under the **Allowed resource types** section.
+5. On the shared access signature page, check **Container** under the **Allowed resource types** section.
 
-1. With the allowed resource type checked, select **Generate SAS and connection string** at the bottom of the shared access signature page.
+6. With the allowed resource type checked, select **Generate SAS and connection string** at the bottom of the shared access signature page.
 
-1. In the Cloud Shell, create an environment variable to assign the generated **SAS token** value from the portal.
+7. In the Cloud Shell, create an environment variable to assign the generated **SAS token** value from the portal.
 
     ```bash
     COOL_SAS_TOKEN="<token from portal>"
     ```
 
-1. Repeat these steps, and assign a generated SAS token for the hot storage account to a variable named **HOT_SAS_TOKEN**.
+8. Repeat these steps, and assign a generated SAS token for the hot storage account to a variable named **HOT_SAS_TOKEN**.
 
     ```bash
     HOT_SAS_TOKEN="<token from portal>"

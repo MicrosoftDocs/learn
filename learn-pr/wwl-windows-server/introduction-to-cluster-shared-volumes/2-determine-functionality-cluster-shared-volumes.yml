@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-cluster-shared-volumes.determine-functionality-of
+title: Determine the functionality of Cluster Shared Volumes
+metadata:
+  title: Determine the functionality of Cluster Shared Volumes
+  description: "Determine the functionality of Cluster Shared Volumes"
+  ms.date: 02/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-determine-functionality-cluster-shared-volumes.md)]
