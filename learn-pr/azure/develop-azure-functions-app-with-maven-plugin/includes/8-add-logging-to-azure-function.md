@@ -4,7 +4,7 @@ In this unit, you'll learn about log streaming as basic troubleshooting tool and
 
 ## Stream logs in real-time with Azure CLI
 
-Once you have your funciton app deployed and running. You can use the simple Azure CLI command to get real-time log streaming from the app for basic troubleshooting:
+Once you have your function app deployed and running. You can use the simple Azure CLI command to get real-time log streaming from the app for basic troubleshooting:
 
 ```azcli
 az webapp log tail -n <function app name> -g <resource group name>

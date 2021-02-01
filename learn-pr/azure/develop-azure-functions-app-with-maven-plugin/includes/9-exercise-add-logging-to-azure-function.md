@@ -20,7 +20,7 @@ Now you have your Function app deployed and running on Azure. In case for troubl
     az webapp log tail -n functest-20210201081801273 -g learn-f0af729c-0493-4b45-a5b8-d6b4783b03da
     ```
 
-1. Access your funciton app to generate some logs.
+1. Access your function app to generate some logs.
 
 ## Adding instrumentation to your Java project for Application Insights
 
