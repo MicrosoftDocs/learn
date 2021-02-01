@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Group multiple operations in a transaction
 durationInMinutes: 5
 content: |
