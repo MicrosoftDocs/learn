@@ -65,7 +65,7 @@ prerequisites: |
   - An understanding of cloud computing is helpful, but isn't necessary.
 video:
   title: "Azure Fundamentals video: Describe core solutions and management tools on Azure"
-  url: https://www.microsoft.com/videoplayer/embed/RE4M6Z1
+  url: https://www.microsoft.com/en-us/videoplayer/embed/RE4M6Z1
 iconUrl: /learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
 levels:
 - beginner

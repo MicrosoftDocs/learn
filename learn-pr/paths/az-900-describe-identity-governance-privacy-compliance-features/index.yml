@@ -61,7 +61,7 @@ prerequisites: |
   - An understanding of cloud computing is helpful, but isn't necessary.
 video:
   title: "Azure Fundamentals video: Describe identity, governance, privacy, and compliance features"
-  url: https://www.microsoft.com/videoplayer/embed/RE4McuP
+  url: https://www.microsoft.com/en-us/videoplayer/embed/RE4McuP
 iconUrl: /learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg
 levels:
 - beginner
