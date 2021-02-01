@@ -154,22 +154,18 @@ We'll use an open-source C# console application to populate your collections. Th
     cd mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
     ```
 
-1. Check your environment variables. The console application needs the environment variables to connect to the database. If Azure Cloud Shell times out, you need to set these and the `COSMOS_NAME` variable again. You can reset the `COSMOS_NAME` value by running the following command.
+1. Check your environment variables. The console application needs the environment variables to connect to the database. If Azure Cloud Shell times out, you need to set these and the `COSMOS_NAME` variable again. You can reset your `COSMOS_NAME`, `RESOURCE_GROUP`, `ENDPOINT` and `KEY` variables by running the following commands.
 
     ```bash
     export COSMOS_NAME=$(az cosmosdb list --output tsv --query [0].name)
-    ```
 
-    You can reset your `ENDPOINT` and `KEY` variables by running the following commands.
+    export RESOURCE_GROUP=$(az group list | jq -r '.[0].name')
 
-    ```bash
     export ENDPOINT=$(az cosmosdb list \
         --resource-group $RESOURCE_GROUP \
         --output tsv \
         --query [0].documentEndpoint)
-    ```
 
-    ```bash
     export KEY=$(az cosmosdb keys list \
         --resource-group $RESOURCE_GROUP  \
         --name $COSMOS_NAME \
@@ -209,3 +205,5 @@ We'll use an open-source C# console application to populate your collections. Th
     ```bash
     dotnet run -- -c Orders -o InsertDocument -n 20000 -p 10
     ```
+
+Notice that the throughput changes for each of the different 
