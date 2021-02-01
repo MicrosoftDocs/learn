@@ -14,13 +14,13 @@ az group delete --name <name of your JBoss EAP on Azure App Service resource>
 
 ### Microsoft Azure Related
 
-* [Azure App Service](https://docs.microsoft.com/azure/app-service/)
-* [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/azure-monitor/app/azure-web-apps?tabs=java)
-* [Quickstart: Get started with Application Insights in a Java web project](https://docs.microsoft.com/azure/azure-monitor/app/java-get-started?tabs=maven)
-* [Get started with Autoscale in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-get-started)
-* [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?tabs=userlevel)
-* [Integrate your app with an Azure virtual network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet)
-* [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux/)
+* [Azure App Service](https://docs.microsoft.com/azure/app-service?WT.mc_id=java-14033-yoterada)
+* [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/azure-monitor/app/azure-web-apps?WT.mc_id=java-14033-yoterada&tabs=java)
+* [Quickstart: Get started with Application Insights in a Java web project](https://docs.microsoft.com/azure/azure-monitor/app/java-get-started?tabs=maven&WT.mc_id=java-14033-yoterada)
+* [Get started with Autoscale in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-14033-yoterada)
+* [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?tabs=userlevel?WT.mc_id=java-14033-yoterada)
+* [Integrate your app with an Azure virtual network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet?WT.mc_id=java-14033-yoterada)
+* [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux?WT.mc_id=java-14033-yoterada)
 
 ### Java EE (Jakarta EE) Related
 
