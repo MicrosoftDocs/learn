@@ -2,13 +2,15 @@ Now that you've successfully deployed your first serverless web function using t
 
 In this unit, you'll learn about log streaming as basic troubleshooting tool and the integration between Azure Functions and Application Insights.
 
-## Stream logs in real time with Azure CLI
+## Stream logs in real-time with Azure CLI
 
-Once you have your funciton app deployed and running. You can use the simple Azure CLI command to get real time log streaming from the app for basic troubleshooting:
+Once you have your funciton app deployed and running. You can use the simple Azure CLI command to get real-time log streaming from the app for basic troubleshooting:
 
 ```azcli
-az webapp log tail -n <function app name> -g <sandbox resource group name>
+az webapp log tail -n <function app name> -g <resource group name>
 ```
+
+With traffics to your Function app you will see for example:
 
 ![Image showing Log Streaming from Azure CLI](../media/8-log-streaming-cli.png)
 
@@ -26,13 +28,13 @@ Application Insights will provide essential information on failed requests, serv
 
 To get the best from Application Insights, you'll need to update your function project. There are two types of changes that you'll need to make:
 
-- The first set of changes are updates to your configuration in order to add Application Insights and logging support:
+- The first set of changes is updates to your configuration in order to add Application Insights and logging support:
 
     - Update your project's *pom.xml* file to add a dependency for the Application Insights library.
 
     - Update your project's *host.json* file to add parameters that define how the logging and Application Insights will work for your application.
 
-- The second set of changes are modifications to your application's code, which provides you with opportunities to fine-tune your application's reporting:
+- The second set of changes is modifications to your application's code, which provides you with opportunities to fine-tune your application's reporting:
 
     - To implement the event tracking in Application Insight, you'll need to add a *tracker* to your code.
     
