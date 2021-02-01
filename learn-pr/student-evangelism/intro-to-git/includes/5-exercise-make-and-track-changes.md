@@ -6,7 +6,7 @@ As you work on your project, Git helps keep track of the changes you make. It al
 
 The Web site's home page, **index.html** currently contains just one line of HTML. Let's update it to do more and commit the change to Git.
 
-1. Re-open the **index.html** file in the online editor for Cloud Shell (`code index.html`) and replace the file contents with the following HTML:
+1. Open **index.html** in Cloud Shell's editor again and replace its contents with the following HTML:
 
     ```html
     <!DOCTYPE html>
@@ -23,7 +23,7 @@ The Web site's home page, **index.html** currently contains just one line of HTM
     </html>
     ```
 
-1. Save the file and close the online editor.
+1. Save the file and close the editor.
 
 1. Use a `git diff` command to see what changed:
 
@@ -73,7 +73,7 @@ The Web site's home page, **index.html** currently contains just one line of HTM
 
     This example uses the `-A` option with `git add` to add all untracked (and not ignored) files as well as ones that have changed to those already under Git control.
 
-If you do a `git diff` right now, the output will be empty because the changes have been committed. However, you can always use a `git diff HEAD^` command to compare differences between the latest commit and previous commit. (Try it and see.)
+If you do a `git diff` right now, the output will be empty because the changes have been committed. However, you can always use a `git diff HEAD^` command to compare differences between the latest commit and previous commit. Try it and see. Don't forget to include the "^" character at the end of the command.
 
 ## Add a subdirectory
 
