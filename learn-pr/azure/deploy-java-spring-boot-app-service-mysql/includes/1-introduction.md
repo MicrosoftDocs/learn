@@ -2,7 +2,7 @@ Imagine you're a Java developer working for a company that creates Spring Boot a
 
 You want to build a to-do list application that uses a MySQL database. You've decided to build this Spring Boot application from scratch.
 
-In this module, you'll first scaffold a Spring Boot web application by using Spring Initializr. Spring Initializr is an online tool that generates a Spring Boot project that includes just what you need to start quickly. This scaffold gives you a base to work from.
+In this module, you'll first scaffold a Spring Boot web application by using Spring Initializr. Spring Initializr is an online tool that generates a Spring Boot project that includes just what you need to start quickly. This scaffold gives you a base to work from. 
 
 You'll then code a to-do application that stores tasks in a relational database. The tasks will need a MySQL database, so you'll create and host by using Azure Database for MySQL.
 

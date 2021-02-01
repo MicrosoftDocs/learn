@@ -4,7 +4,7 @@ title: Exercise - Proceed the events and store the data in Cosmos DB
 metadata:
   title: Exercise - Proceed the events and store the data in Cosmos DB
   description: In this exercise section, you'll create an Azure Function to read the events from the event hub, and then stores them processed in Cosmos DB.
-  ms.date: 12/22/2020
+  ms.date: 02/01/2021
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial

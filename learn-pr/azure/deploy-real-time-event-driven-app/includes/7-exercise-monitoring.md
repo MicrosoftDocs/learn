@@ -12,7 +12,7 @@ The Application map gives you an idea how dependent your services are with each 
 
 Live Metrics Stream:
 
-![Live Metrics Stream](../media/7-livemetrics.gif)
+![Live Metrics Stream](../media/7-live-metrics.gif)
 
 Performance:
 
