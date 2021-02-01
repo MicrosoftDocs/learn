@@ -1,7 +1,8 @@
 Congratulations! You've used Terraform with GitHub Actions to create multiple pipelines.
 You created an Azure App Service, MySQL database, and deployed a Spring Boot web application.
 
-Your company wanted to learn how they could provision their existing Spring Boot Java web applications to Azure App Service. You used the following steps:
+Your company wanted to learn how they could provision their existing Spring Boot Java web applications to Azure App Service.
+You used the following steps:
 
 1. You accessed a sample Spring Boot web application and configured it.
 
@@ -13,10 +14,13 @@ You're confident that you can now recommend this architecture for your Spring Bo
 
 ## Clean up resources
 
-In the preceding steps, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group by running the following command in the Azure Cloud Shell:
+In the preceding steps, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group by running the following commands in the Azure Cloud Shell:
 
 ```azurecli
 az group delete --name <your Resource Group Name> --yes
+```
+
+```azurecli
 az ad sp delete --id <your Service Principal Name>
 ```
 
