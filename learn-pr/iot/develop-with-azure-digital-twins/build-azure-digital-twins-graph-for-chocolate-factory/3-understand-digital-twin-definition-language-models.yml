@@ -1,13 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.understand-digital-twin-definition-language-models
 metadata:
-<<<<<<< HEAD
-  description: In this unit, you'll examine the Digital Twins Definition Language by going over the main components of the language and looking at some examples.
-  ms.date: 10/1/2020
-=======
   description: In this unit, you'll examine the Digital Twins Definition Language (DTDL) by going over the main components of the language and looking at some examples.
   ms.date: 01/28/2021
->>>>>>> fe7ed90ff1ce8bd2eaffb9484eed5ef2aae591dd
   author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial

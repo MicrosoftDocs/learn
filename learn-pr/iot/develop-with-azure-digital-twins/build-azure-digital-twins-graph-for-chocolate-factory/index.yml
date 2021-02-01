@@ -2,13 +2,8 @@
 uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory
 metadata:
   title: Build an Azure Digital Twins graph for a chocolate factory production line
-<<<<<<< HEAD
-  description: This module covers the first steps in building an Azure Digital Twins solution. The units cover making an instance of Azure Digital Twins, and learning about, creating, and visualizing, Digital Twins Definition Language (DTDL) models. You will create, validate, graph, and query models for a chocolate factory production line.
-  ms.date: 11/1/2020
-=======
   description: This module covers the first steps in building an Azure Digital Twins solution. The units cover making an instance of Azure Digital Twins, and learning about, creating, and visualizing, DTDL models. You will create, validate, graph, and query, models for a chocolate factory production line.
   ms.date: 01/28/2021
->>>>>>> fe7ed90ff1ce8bd2eaffb9484eed5ef2aae591dd
   author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
@@ -24,18 +19,6 @@ abstract: |
   - Create a graph of the models by using the Azure Digital Twins explorer sample
   - Query the graph by using SQL-like queries
 prerequisites: |
-<<<<<<< HEAD
-  - Introductory knowledge of the purpose of Azure IoT
-  - Ability to navigate the Azure IoT portal
-  - Ability to use the command prompt and command-line windows
-  - Ability to download and install software tools
-  - Ability to use Visual Studio at the beginner level
-  - A basic understanding of the Azure CLI
-  - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli)
-    - Install the Azure CLI locally
-    - Don't use Azure Cloud Shell because this will time out due to the length of the lab
-  - Access to an Azure subscription where you have administrator role for your account, as well as Azure Active Directory tenant to complete the exercise units
-=======
   - Familiarity with the Azure portal
   - It is recommended that you have introductory knowledge of Azure IoT, you can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/) Learning Path
   - A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended
@@ -48,7 +31,6 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com/)
   - [.NET Core 3.1](https://dotnet.microsoft.com/download)
   - [C# VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
->>>>>>> fe7ed90ff1ce8bd2eaffb9484eed5ef2aae591dd
 iconUrl: /learn/achievements/iot/build-azure-digital-twins-graph-for-chocolate-factory.svg
 ratingEnabled: true
 levels:
