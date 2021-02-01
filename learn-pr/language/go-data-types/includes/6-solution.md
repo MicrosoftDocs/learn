@@ -2,7 +2,7 @@ Here you can find one solution for the previous challenges.
 
 ## Fibonacci sequence
 
-The solution to this challenge could be something like this:
+The solution to this challenge could be something like this example:
 
 ```go
 package main
@@ -36,7 +36,7 @@ func main() {
 
 ## Roman numerals translator
 
-The solution to this challenge could be something like this:
+The solution to this challenge could be something like this example:
 
 ```go
 package main

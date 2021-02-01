@@ -46,12 +46,12 @@ Notice how, at the moment, a slice doesn't differ too much from an array. You de
 Go has support for the slice operator `s[i:j]`, where:
 
 - `s` represents the array.
-- `i` represents the pointer to the first element of the array (or another slice) that will use.
-- `j` that represents in which position is the last element the slice will use.
+- `i` represents the pointer to the first element of the array (or another slice) that it will use.
+- `j` represents the position of the last element that the slice will use.
 
 In other words, a slice can refer only to a subset of elements.
 
-For instance, let's say that you'd like to have four variables representing each quarter of the year. The following image illustrates how that looks in Go:
+For instance, let's say that you want four variables to represent each quarter of the year. The following image illustrates how that looks in Go:
 
 :::image type="content" source="../media/go-slices-multiple.png" alt-text="Diagram showing how multiple slices look in Go." border="false":::
 
@@ -84,7 +84,7 @@ When you run the code, you get the following output:
 [October November December] 3 3
 ```
 
-Notice how the length of the slices is the same, but the capacity is different. Let's explore the `quarter2` slice. When you declare this slice, you're saying you want the slice to start at position number three, and the last element is located at position number six. the slice's length is three elements, but the capacity is nine because the underlying array has more elements or positions available but not visible to the slice. For instance, if you try to print out something like `fmt.Println(quarter2[3])`, you'll get the following error: `panic: runtime error: index out of range [3] with length 3`.
+Notice how the length of the slices is the same, but the capacity is different. Let's explore the `quarter2` slice. When you declare this slice, you're saying you want the slice to start at position number three, and the last element is located at position number six. The slice's length is three elements, but the capacity is nine because the underlying array has more elements or positions available but not visible to the slice. For instance, if you try to print out something like `fmt.Println(quarter2[3])`, you'll get the following error: `panic: runtime error: index out of range [3] with length 3`.
 
 The capacity of a slice only tells you how much you can extend a slice. For this reason, you could create an extended slice from `quarter2`, like this example:
 
@@ -109,7 +109,7 @@ When you run the preceding code, you get the following output:
 [April May June July] 4 9
 ```
 
-Notice that when you declare the `quarter2Extended` variable, we didn't have to specify the initial position (`[:4]`). When you do that, Go assumes that you want the first position of the slice. You can do the same for the last position (`[1:]`). Go will assume that you want to reference all the elements up to the latest position of a slice (`len()-1`).
+Notice that when you declare the `quarter2Extended` variable, you don't have to specify the initial position (`[:4]`). When you do that, Go assumes that you want the first position of the slice. You can do the same for the last position (`[1:]`). Go will assume that you want to reference all the elements up to the latest position of a slice (`len()-1`).
 
 ## Append items
 
