@@ -17,7 +17,7 @@ You'll evaluate a database design for problems with normalization, data type sel
     :::image type="content" source="../media/new-query.png" alt-text="New Query":::
 
     > [!NOTE]
-    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Secure Environment\exercise_steps.sql** file.
+    > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Query Performance\exercise_steps.sql** file.
 
 1. Copy and paste the code below into your query window.
 
