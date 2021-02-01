@@ -15,7 +15,7 @@ az group delete --name <name of your JBoss EAP on Azure App Service resource>
 ### Microsoft Azure Related
 
 * [Azure App Service](https://docs.microsoft.com/azure/app-service?WT.mc_id=java-14033-yoterada)
-* [Monitor Azure App Service performance](https://docs.microsoft.com/en-us/azure/azure-monitor/app/azure-web-apps?WT.mc_id=java-14033-yoterada&tabs=java)
+* [Monitor Azure App Service performance](https://docs.microsoft.com/azure/azure-monitor/app/azure-web-apps?WT.mc_id=java-14033-yoterada&tabs=java)
 * [Quickstart: Get started with Application Insights in a Java web project](https://docs.microsoft.com/azure/azure-monitor/app/java-get-started?tabs=maven&WT.mc_id=java-14033-yoterada)
 * [Get started with Autoscale in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-14033-yoterada)
 * [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?tabs=userlevel?WT.mc_id=java-14033-yoterada)

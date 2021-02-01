@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.azure.deploy-javaee-app-to-appservice
+uid: learn.azure.deploy-java-ee-app-to-app-service
 metadata:
   title: Deploy a Java EE (Jakarta EE) App to Azure
   description: You'll learn how to create a Java web application and deploy it to Azure App Services.
-  ms.date: 11/25/2020
+  ms.date: 02/01/2021
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
@@ -25,21 +25,21 @@ products:
   - azure
 prerequisites: |
   - Azure Subscription
-  - [Azure CLI command]((https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada))
-  - [Java SE 8 (or 11)]((https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html))
+  - [Azure CLI command](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada)
+  - [Java SE 8 (or 11)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
   - [Git CLI](https://git-scm.com/downloads)
   - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
   - [jq Utility](https://stedolan.github.io/jq/)
 units:
-  - learn.azure.deploy-javaee-app-to-appservice.1-introduction
-  - learn.azure.deploy-javaee-app-to-appservice.2-deploy-azure-database-mysql
-  - learn.azure.deploy-javaee-app-to-appservice.3-exercise-deploy-azure-database-mysql
-  - learn.azure.deploy-javaee-app-to-appservice.4-deploy-jakartaee-app-to-jboss-eap
-  - learn.azure.deploy-javaee-app-to-appservice.5-exercise-deploy-jakartaee-app-to-jboss-eap
-  - learn.azure.deploy-javaee-app-to-appservice.6-admin-jboss-eap
-  - learn.azure.deploy-javaee-app-to-appservice.7-exercise-admin-jboss-eap
-  - learn.azure.deploy-javaee-app-to-appservice.8-knowledge-check
-  - learn.azure.deploy-javaee-app-to-appservice.9-summary
+  - learn.azure.deploy-java-ee-app-to-app-service.1-introduction
+  - learn.azure.deploy-java-ee-app-to-app-service.2-deploy-azure-database-mysql
+  - learn.azure.deploy-java-ee-app-to-app-service.3-exercise-deploy-azure-database-mysql
+  - learn.azure.deploy-java-ee-app-to-app-service.4-deploy-jakartaee-app-to-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.5-exercise-deploy-jakartaee-app-to-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.6-admin-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.7-exercise-admin-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.8-knowledge-check
+  - learn.azure.deploy-java-ee-app-to-app-service.9-summary
 
 badge:
-  uid: learn.azure.deploy-javaee-app-to-appservice.badge
+  uid: learn.azure.deploy-java-ee-app-to-app-service.badge

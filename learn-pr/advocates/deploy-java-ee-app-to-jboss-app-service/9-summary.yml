@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-javaee-app-to-appservice.9-summary
+uid: learn.azure.deploy-java-ee-app-to-app-service.9-summary
 title: Summary
 metadata:
   title: Summary
   description: Summary and cleanup of Azure resources.
   author: yoshioterada
   ms.author: yoterada
-  ms.date: 11/05/2020
+  ms.date: 02/01/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

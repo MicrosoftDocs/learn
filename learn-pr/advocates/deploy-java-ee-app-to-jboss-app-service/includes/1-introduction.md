@@ -25,8 +25,8 @@ By the end of this module, you can:
 ## Prerequisites
 
 - Azure Subscription
-- [Azure CLI command]((https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada))
-- [Java SE 8 (or 11)]((https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html))
+- [Azure CLI command](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada)
+- [Java SE 8 (or 11)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 - [Git CLI](https://git-scm.com/downloads)
 - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
 - [jq Utility](https://stedolan.github.io/jq/)
