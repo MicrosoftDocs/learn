@@ -8,13 +8,7 @@ In the below image, there are multiple pipelines in the "Provision" track with e
 
 ![track types.](../media/1-tracks.png)
 
-In this module's scenario, you'll use all three tracks - **PROVISIONING**, **BUILD**, and **DEPLOY** by implementing multiple pipelines:
-
-1. Azure subscriptions, resource groups, vnets, subnets, express route circuits…
-
-1. Databases and Azure App Service instances.
-
-1. Java applications, and their dependencies.
+In this module's scenario, you'll use all three tracks - **PROVISIONING**, **BUILD**, and **DEPLOY** by implementing multiple pipelines.
 
 There are several tools available to help you achieve these pipelines. As you're already using GitHub for your code repository, you'll use GitHub Actions with Terraform to provide the automation you need.
 
