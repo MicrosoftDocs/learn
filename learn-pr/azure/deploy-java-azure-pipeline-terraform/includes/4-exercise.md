@@ -241,6 +241,7 @@ This workflow does the following actions:
 Next, in your repository, let's trigger your GitHub Action.
 
 Using the built-in GitHub Text editor, or an editor of choice, edit `terraform/variables.tf`
+Change "**CHANGE_ME_RESOURCE_GROUP**" to your intended resource group name and "**CHANGE_ME_APP_NAME**" to your intended application name.
 
 ```yaml
 variable "resource_group" {
@@ -258,8 +259,6 @@ variable "location" {
   default     = "westeurope"
 }
 ```
-
-Change "**CHANGE_ME_RESOURCE_GROUP**" to your intended resource group name and "**CHANGE_ME_APP_NAME**" to your intended application name.
 
 Commit your changes.
 
