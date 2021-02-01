@@ -32,7 +32,7 @@ To understand Git, you have to understand the terminology. Here is a short list 
 
 - **Commit:** When used as a verb, "commit" means to make a commit object. This action takes its name from commits to a database. It means you are committing the changes you have made so others can eventually see them, too.
 
-- **Branch:** A named series of linked commits. The most recent commit on a branch is called the *head*. The default branch, which is created when you initialize a repository, is commonly named `main` or `trunk`. The head of the current branch is named `HEAD`. Branches are an incredibly useful feature of Git because they allow developers to work independently (or together) in branches and later merge their changes into the main branch.
+- **Branch:** A named series of linked commits. The most recent commit on a branch is called the *head*. The default branch, which is created when you initialize a repository, is commonly named `master`. The head of the current branch is named `HEAD`. Branches are an incredibly useful feature of Git because they allow developers to work independently (or together) in branches and later merge their changes into the default branch.
 
 - **Remote:** A named reference to another Git repository. When you create a repo, Git creates a remote named "origin" that is the default remote for push and pull operations.
 
