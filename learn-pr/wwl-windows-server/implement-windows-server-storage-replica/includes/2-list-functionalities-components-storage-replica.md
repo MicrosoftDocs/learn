@@ -35,7 +35,7 @@ Storage Replica supports two types of replication:
 
 When using synchronous replication, a data write must complete successfully on both volumes. If that isn't the case, the workload initiating the write must retry the same operation. With synchronous replication, the data on both volumes is identical.
 
-:::image type="content" source="../media/m20-sr-synchronous.png" alt-text="The synchronous replication and volume writes between writing data to the primary volume and the log on the local server and the remote server, including the acknowledgment from the remote server and the application." border="false":::
+:::image type="content" source="../media/m20-synchronous.png" alt-text="The synchronous replication and volume writes between writing data to the primary volume and the log on the local server and the remote server, including the acknowledgment from the remote server and the application." border="false":::
 
 > [!TIP]
 > Use synchronous replication when it's imperative that you avoid data loss.
@@ -44,4 +44,4 @@ When using synchronous replication, a data write must complete successfully on b
 
 When using asynchronous replication, after a data write completes successfully on the primary volume, the workload initiating the write receives a confirmation and can proceed with another I/O operation. The corresponding data writes take place afterwards on the secondary volume, without affecting the primary volume.
 
-:::image type="content" source="../media/m20-sr-asynchronous.png" alt-text="The asynchronous replication and volume writes between writing data to the primary volume and the log on the local server and the log on the remote server, including the acknowledgment returned from the remote server and the application." border="false":::
+:::image type="content" source="../media/m20-asynchronous.png" alt-text="The asynchronous replication and volume writes between writing data to the primary volume and the log on the local server and the log on the remote server, including the acknowledgment returned from the remote server and the application." border="false":::
