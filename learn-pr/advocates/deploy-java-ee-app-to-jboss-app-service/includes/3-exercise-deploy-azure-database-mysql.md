@@ -1,6 +1,6 @@
 In this exercise, we'll creat your Azure for MySql Database and load it with sample data.
 
-## Get Sample Application and script
+## Get sample application and script
 
 First, let us clone the sample application and shell script from its GitHub repository:
 
@@ -71,7 +71,7 @@ az configure --defaults location=japaneast
 > [!NOTE]
 > It's advisable to also change to the same region for deploying your Java EE application.
 
-## Create an Instance of Azure Database for MySQL
+## Create an Azure Database for MySQL instance
 
 After you've signed in, we'll create your MySQL DB instance, by using the Projects Script `setup_mysql.sh`.
 
@@ -158,7 +158,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-## Create a Database and Tables for your application
+## Create a database and tables for your application
 
 Execute the following mysql command:
 
@@ -172,7 +172,7 @@ Query OK, 0 rows affected (0.01 sec)
 mysql>
 ```
 
-### Evaluate the Database and Tables
+### Evaluate the database and tables
 
 The `world` database and its tables are automatically created in your MySQL database.
 
@@ -213,7 +213,7 @@ mysql> show tables;
 3 rows in set (0.04 sec)
 ```
 
-## Query for Sample Database
+## Query for sample database
 
 Next we'll view the contents of the `world` database by using the three steps:
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-ee-app-to-app-service.5-exercise-deploy-jakartaee-app-to-jboss-eap
+uid: learn.azure.deploy-java-ee-app-to-app-service.5-exercise-deploy-jakarta-ee-app-to-jboss-eap
 title: Exercise - Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service
 metadata:
   title: Exercise - Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-deploy-jakartaee-app-to-jboss-eap.md)]
+  [!include[](includes/5-exercise-deploy-jakarta-ee-app-to-jboss-eap.md)]

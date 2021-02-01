@@ -31,7 +31,7 @@ Step 1 - Sign in to Azure with following command:
 az login
 ```
 
-#### Create a Resource Group
+#### Create a resource group
 
 Step 2 - Create an Azure Resource Group with following command:
 
@@ -39,7 +39,7 @@ Step 2 - Create an Azure Resource Group with following command:
 az group create --name $MYSQL_RES_GRP_NAME --location $MYSQL_LOCATION
 ```
 
-#### Create a MySQL DB Instance
+#### Create a MySQL DB instance
 
 Step 3 - Create an Azure Database for MySQL Flexible Server with following command:
 
@@ -56,7 +56,7 @@ az mysql flexible-server create \
       --version 5.7
 ```
 
-#### Create a firewall Rule
+#### Create a firewall rule
 
 Step 4 - Create a Firewall Rule to MySQL Flexible Server with following command:
 

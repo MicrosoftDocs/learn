@@ -13,7 +13,7 @@ In a similar manner, in this module, you'll create a sample database on `Azure D
 You'll then create and deploy a `Java EE (Jakarta EE) Application` to `JBoss EAP on Azure App Service`.
 Finally you'll learn how to also manage your application's lifecycle.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you can:
 
@@ -25,7 +25,7 @@ By the end of this module, you can:
 ## Prerequisites
 
 - Azure Subscription
-- [Azure CLI command](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=java-9121-yoterada)
+- [Azure CLI command](https://docs.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada)
 - [Java SE 8 (or 11)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 - [Git CLI](https://git-scm.com/downloads)
 - [MySQL CLI](https://dev.mysql.com/downloads/shell/)

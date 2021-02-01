@@ -1,6 +1,6 @@
 In this unit, we outline how to deploy our Java EE application to JBoss EAP on Azure App Service.
 
-## Deployment Procedure
+## Deployment procedure
 
 To deploy your Java EE application and connect to your database, the deployment procedure is as follows:
 
@@ -11,7 +11,7 @@ To deploy your Java EE application and connect to your database, the deployment 
 5. Configure a DB Connection from JBoss EAP
 6. Access your application
 
-### Create  a Java EE (Jakarta EE) Application
+### Create  a Java EE (Jakarta EE) application
 
 In this module, you'll use a sample Java EE application that's prepared in advance and uses the following technologies:
 
@@ -81,7 +81,7 @@ You'll configure the `DataSource` to connect to the `Azure Database for MySQL` c
 We created a `JNDI Name` as `java:jboss/datasources/JPAWorldDataSource` for the `DataSource`.
 JNDI is useful in multiple environments to change to a different database without code changes.
 
-### Access the Application
+### Access the application
 
 After configuring the MySQL data source connection in JBoss EAP, you can access the Java EE application using a Web browser or `curl` command.
 

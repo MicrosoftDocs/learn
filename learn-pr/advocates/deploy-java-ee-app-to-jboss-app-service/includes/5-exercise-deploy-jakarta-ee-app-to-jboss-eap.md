@@ -6,7 +6,7 @@ We'll need to follow the following steps:
 1. Compile the application and create a WAR package.
 1. Deploy the WAR package to JBoss EAP on Azure App Service.
 
-### Configure the App with Maven Plugin for Azure App Service
+## Configure the App with Maven Plugin for Azure App Service
 
 Let's configure our application by executing the config goal in the Maven plugin for Azure App Service:
 
@@ -130,7 +130,7 @@ After the command is completed, you can see following entry is added in your Mav
 > [!IMPORTANT]
 > Check the `<region>` element, if it is not the same install location as MySQL, please modify to the same location.
 
-### Compile and build the Java EE App
+## Compile and build the Java EE app
 
 After configuring the Azure App Service Deployment settings, compile and package the source code:
 
@@ -156,7 +156,7 @@ Then you can see following output in the terminal:
 [INFO] ------------------------------------------------------------------------
 ```
 
-### Deploy Java EE application to JBoss EAP on Azure App Service
+## Deploy Java EE application to JBoss EAP on Azure App Service
 
 After compiling and packaging the code, deploy the application by executing the following command:
 
@@ -193,7 +193,7 @@ Note down the URL of the deployed application, particularly the following line i
 https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 ```
 
-## Configure a Database Connection
+## Configure a database connection
 
 In our sample application, it will connect to your MySQL Database and display data.
 In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC Driver as follows:
@@ -213,7 +213,7 @@ You can refer the name of MySQL JDBC Driver as follows:
 ROOT.war_com.mysql.cj.jdbc.Driver_8_0
 ```
 
-### Create the MySQL DataSource in JBoss EAP
+## Create the MySQL DataSource in JBoss EAP
 
 To access to the `Azure Database for MySQL`, you need to configure the `DataSource` in JBoss EAP, and specify the JNDI name in your source code.
 To create a MySQL `DataSource` in JBoss EAP, we created a startup shell script file `createMySQLDataSource.sh` under the `/WEB-INF` directory.
@@ -261,7 +261,7 @@ az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/crea
 After execution, the script will be invoked every time when the application server is restarted.
 If your deployment artifact isn't "ROOT.war", you need to change the "--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0" value too.
 
-### Configure the Environment Variables for Connecting to MySQL
+## Configure the environment variables for connecting to MySQL
 
 After you configured your startup script, configure your App service to use certain environment variables:
 
@@ -277,7 +277,7 @@ az webapp config appsettings set \
 > [!TIP]
 > The values of `MYSQL_CONNECTION_URL`, `MYSQL_USER` and `MYSQL_PASSWORD` were set from the previous unit.
 
-### Confirm the DataSource Reference in the Code
+## Confirm the DataSource reference in the code
 
 To access the MySQL database from your application, you need to configure the data source reference in your application project. We implemented the DB access code by using `Java Persistence API (JPA)`.
 The configuration for the `DataSource` reference has been added in the `persistence.xml`, which is the configuration file of the JPA.
@@ -393,6 +393,6 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/countries/
 "Kitakyushu"
 ```
 
-## Exercise Summary
+## Exercise summary
 
 You've now validated the application REST endpoints and tested that your application can get data from your MySQL database.

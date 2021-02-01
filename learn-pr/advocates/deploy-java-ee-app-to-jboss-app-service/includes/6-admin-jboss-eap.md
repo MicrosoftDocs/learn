@@ -1,12 +1,12 @@
 In this unit, we'll outline the JBoss Admin tooling and in the next exercise, access it.
 
-## JBoss EAP Admin Tools (CLI & Web Console)
+## JBoss EAP admin tools (CLI & web console)
 
 Azure App Service provides both an administrative graphical user interface and a command-Line Interface.
 
 When you access to Admin Web Console, you'll see the following Screen:
 
-:::image type="content" source="../media/jboss-admin-console2.png" alt-text="Admin Console Top Page":::
+:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Admin Console Top Page":::
 
 ## View the application logs
 

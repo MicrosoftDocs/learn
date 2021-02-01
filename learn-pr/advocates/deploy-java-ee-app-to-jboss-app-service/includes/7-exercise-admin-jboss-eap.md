@@ -1,6 +1,6 @@
 In this exercise, we'll access the JBoss Admin interface and stream its logs
 
-### Create a TCP Tunnel
+## Create a TCP tunnel
 
 To access the remote server, you need to create a TCP Tunnel between your remote server and your local machine.
 Execute the following command:
@@ -24,7 +24,7 @@ Then you'll get the following information from the command result:
 |  username  |  root  |
 |  password  |  Docker!  |
 
-### SSH with TCP Tunnel
+## SSH with TCP tunnel
 
 You now need to sign in to the Server by using a `ssh` command.
 Open a new command terminal and execute the following command:
@@ -61,7 +61,7 @@ Documentation: http://aka.ms/webapp-linux
 -bash-4.2# 
 ```
 
-### Execute the JBoss CLI
+## Execute the JBoss CLI
 
 After signing in to the remote server, you can execute the JBoss EAP Admin CLI Tool as `jboss-cli.sh`.
 The CLI command is located on `/opt/eap/bin/` directory.
@@ -122,7 +122,7 @@ Next, test the database connection by executing the following command:
 }
 ```
 
-### Access the JBoss EAP Admin Web Console
+## Access the JBoss EAP admin web console
 
 Next let us access the JBossAdmin Web Console.
 First, create an admin user and password for authentication:
@@ -140,25 +140,25 @@ http://127.0.0.1:9990/console
 
 Then you'll see the following Sign-on Screen and you can sign in with the previously created user name and password:
 
-:::image type="content" source="../media/jboss-admin-console1.png" alt-text="Admin Console Auth Window":::
+:::image type="content" source="../media/jboss-admin-console-1.png" alt-text="Admin Console Auth Window":::
 
 After signing in to the Web Console, you'll see the following screen:
 
-:::image type="content" source="../media/jboss-admin-console2.png" alt-text="Admin Console Top Page":::
+:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Admin Console Top Page":::
 
 You can confirm your created Datasource from `Configuration` -> `Subsystems` -> `Datasources & Drivers` -> `Datasources`.
 
-:::image type="content" source="../media/jboss-admin-console3.png" alt-text="Admin Console DataSources List":::
+:::image type="content" source="../media/jboss-admin-console-3.png" alt-text="Admin Console DataSources List":::
 
 You can also confirm your RESTful endpoints of your application from `Runtime` -> `system` -> `JAX-RS` -> `Your Application`.
 
-:::image type="content" source="../media/jboss-admin-console4.png" alt-text="Admin Console RESTful Endpoint":::
+:::image type="content" source="../media/jboss-admin-console-4.png" alt-text="Admin Console RESTful Endpoint":::
 
 > [!WARNING]
 > If you directly access to the Remote Server via the JBoss CLI command or Web Console and add or update some configuration, the configuration will be cleared and deleted after the Azure App Services instance is rebooted. To persist the configuration, configure this in a Start up script.
 For example, we created the `createMySQLDataSource.sh` in previous section as a startup script.
 
-## Open a Log stream
+## Open a log stream
 
 Next let's sign in to the server and access the Application log.
 You can access the Application sign in your local machine, by executing the following command:
@@ -183,7 +183,7 @@ az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
 2020-12-09T02:23:24.680950010Z: [INFO]  02:23:24,680 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
 ```
 
-## Exercise Summary
+## Exercise summary
 
 In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) Application to JBoss EAP on Azure App Service.
 Then we created a `DataSource` for connecting MySQL to JBoss EAP in a startup script.

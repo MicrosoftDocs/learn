@@ -10,9 +10,9 @@ az group delete --name <name of your MySQL resource>
 az group delete --name <name of your JBoss EAP on Azure App Service resource>
 ```
 
-## Other Resources
+## Other resources
 
-### Microsoft Azure Related
+### Microsoft Azure
 
 * [Azure App Service](https://docs.microsoft.com/azure/app-service?WT.mc_id=java-14033-yoterada)
 * [Monitor Azure App Service performance](https://docs.microsoft.com/azure/azure-monitor/app/azure-web-apps?WT.mc_id=java-14033-yoterada&tabs=java)
@@ -22,7 +22,7 @@ az group delete --name <name of your JBoss EAP on Azure App Service resource>
 * [Integrate your app with an Azure virtual network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet?WT.mc_id=java-14033-yoterada)
 * [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux?WT.mc_id=java-14033-yoterada)
 
-### Java EE (Jakarta EE) Related
+### Java EE (Jakarta EE)
 
 * [Jakarta EE](https://jakarta.ee/)
 * [Jakarta RESTful Web Services](https://projects.eclipse.org/projects/ee4j.jaxrs)
