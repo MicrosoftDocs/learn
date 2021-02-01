@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-event-driven-real-time
 metadata:
-  title: Deploy Event-driven real-time apps to Azure
+  title: Build a real-time event-driven Java solution on Azure
   description: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
   ms.date: 12/22/2020
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy Event-driven real-time apps to Azure
+title: Build a real-time event-driven Java solution on Azure
 summary: Send event based telemetric data in real time to Cosmos DB using Azure Functions and Event Hub.
 abstract: |
   By the end of this module, you'll be able to:
