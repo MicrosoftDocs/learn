@@ -6,11 +6,11 @@ In this unit, you'll learn about log streaming as basic troubleshooting tool and
 
 Once you have your funciton app deployed and running. You can use the simple Azure CLI command to get real time log streaming from the app for basic troubleshooting:
 
-    ```azcli
-    az webapp log tail -n <function app name> -g <sandbox resource group name>
-    ```
+```azcli
+az webapp log tail -n <function app name> -g <sandbox resource group name>
+```
 
-    ![Image showing Log Streaming from Azure CLI](../media/8-log-streaming-cli.png)
+![Image showing Log Streaming from Azure CLI](../media/8-log-streaming-cli.png)
 
 For more complicate troubleshooting and monitoring scenario, Application Insights will be a better fit.
 
