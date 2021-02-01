@@ -6,7 +6,7 @@ In this unit, you create an instance of a digital twins resource and collect the
 
 1. Select **+ Create a resource**.
 
-1. In the **Search the marketplace** text box, enter "digital twins".
+1. In the **Search the marketplace** text box, enter "Azure Digital Twins".
 
 1. Select **Azure Digital Twins** when the option appears. Select **Create**.
 
@@ -46,8 +46,7 @@ The next step is to save some important data used to connect other resources to 
 
     > [!NOTE]
     > If you get the following warning message, ignore it. You don't need to see other role assignments.
-
-    :::image type="content" source="../media/permission-error.png" alt-text="Screenshot showing a permissions warning message" lightbox="../media/permission-error.png":::
+    > :::image type="content" source="../media/permission-error.png" alt-text="Screenshot showing a permissions warning message" lightbox="../media/permission-error.png":::
 
 1. Select **+ Add**, then select **Add role assignment**.
 

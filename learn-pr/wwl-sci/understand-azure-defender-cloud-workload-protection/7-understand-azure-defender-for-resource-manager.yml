@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-defender-cloud-workload-protection.for-resource-manager
+title: Understand Azure Defender for Resource Manager
+metadata:
+  title: Understand Azure Defender for Resource Manager
+  description: "Understand Azure Defender for Resource Manager"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-understand-azure-defender-for-resource-manager.md)]
