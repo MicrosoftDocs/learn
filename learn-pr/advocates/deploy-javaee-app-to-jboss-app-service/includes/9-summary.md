@@ -36,5 +36,5 @@ az group delete --name <name of your JBoss EAP on Azure App Service resource>
 * [MySQL Community Edition](https://www.mysql.com/products/community/)
 * [MySQL Connector/J](https://mvnrepository.com/artifact/mysql/mysql-connector-java)
 * [MySQL Sample World Database Installation](https://dev.mysql.com/doc/world-setup/en/world-setup-installation.html)
-* [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/)
-* [Azure Database for MySQL - Flexible Server](https://docs.microsoft.com/azure/mysql/flexible-server/overview)
+* [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql?WT.mc_id=java-14033-yoterada)
+* [Azure Database for MySQL - Flexible Server](https://docs.microsoft.com/azure/mysql/flexible-server/overview?WT.mc_id=java-14033-yoterada)
