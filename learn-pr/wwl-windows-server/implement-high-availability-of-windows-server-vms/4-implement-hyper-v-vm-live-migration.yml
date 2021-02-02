@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-high-availability-of-windows-server-vms.implement-hyper-v-vm-live-migration
+title: Implement Hyper-V VM live migration
+metadata:
+  title: Implement Hyper-V VM live migration
+  description: "Implement Hyper-V VM live migration"
+  ms.date: 02/02/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/4-implement-hyper-v-vm-live-migration.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What type of storage option was used to host the disk of a highly available VM in the demonstration?"
+    choices:
+    - content: "Local disk of the first cluster node"
+      isCorrect: false
+      explanation: "That's incorrect. The demo illustrated the use of CSV to host disks of a highly available VM. You can't use a local volume on a cluster node to store disks of highly available VMs"
+    - content: "CSV"
+      isCorrect: true
+      explanation: "That's correct. The demo illustrated the use of CSV to host disks of a highly available VM."
+    - content: "VHD Set"
+      isCorrect: false
+      explanation: "That's incorrect. VHD Set is an option to implement shared storage for clustered VMs. The demo illustrated the use of CSV to host disks of a highly available VM."

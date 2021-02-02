@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-high-availability-of-windows-server-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/02/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Hyper-V technology allows shared disks for clustered VMs to be configured?"
+    choices:
+    - content: "Fixed disks"
+      isCorrect: false
+      explanation: "That's incorrect. Fixed disks are recommended for workloads that demand better IO performance, however, are not suitable for shared disks of clustered VMs ."
+    - content: "VHD Set"
+      isCorrect: true
+      explanation: "That's correct. VHD Set-based disks allow you to implement shared virtual disks for Hyper-V VMs."
+    - content: "IDE disks"
+      isCorrect: false
+      explanation: "That's incorrect. You can implement shared disks by attaching VHD Set-based disks to SCSI controller, however, not the IDE controller."
+  - content: "What action must be taken to use Kerberos authentication when initiating Hyper-V live migration from a remote computer?"
+    choices:
+    - content: "Sign in to the source Hyper-V host."
+      isCorrect: false
+      explanation: "That's incorrect. This is a requirement when using CredSSP authentication."
+    - content: "Modify the AD DS computer object of the source Hyper-V host."
+      isCorrect: true
+      explanation: "That's correct. Kerberos authentication requires additional configuration of constrained delegation, which involves modifying properties of AD DS computer accounts of the source Hyper-V host."
+    - content: "Sign in to the target Hyper-V host."
+      isCorrect: false
+      explanation: "That's incorrect. This isn't required with CredSSP or Kerberos authentication."
+  - content: "Which option needs to be chosen to perform VM storage migration from Hyper-V Manager?"
+    choices:
+    - content: "**Export**"
+      isCorrect: false
+      explanation: "That's incorrect. This option allows you to export VM disks, however, not live migrate VM storage."
+    - content: "**Move**"
+      isCorrect: true
+      explanation: "That's correct. You can migrate VM storage from a non-clustered Hyper-V server by using the **Move Wizard** in Hyper-V Manager."
+    - content: "**Enable Replication**"
+      isCorrect: false
+      explanation: "That's incorrect. This option allows you to configure VM replication via Hyper-V Replica."
