@@ -22,15 +22,15 @@ Git only pulls or pushes when you tell it to. That's different from, say, Dropbo
 
 ## Create pull requests with the `git request-pull` command
 
-Once another developer, like Alice, has cloned your repo and made some changes locally, they will want to incorporate those changes back into the original repo. It may seem like pushing those changes to the original repo is the right approach. However, a push to the original repo would fail because other users don't have permission to modify your repo. And that's as it should be. For now, you want to review incoming changes before folding them into the master code base.
+Once another developer, like Alice, has cloned your repo and made some changes locally, they will want to incorporate those changes back into the original repo. It may seem like pushing those changes to the original repo is the right approach. However, a push to the original repo would fail because other users don't have permission to modify your repo. And that's as it should be. For now, you want to review incoming changes before folding them into the main code base.
 
 For now, Alice would have to submit a *pull request* asking you to pull her changes. Alice can do that with `git request-pull`, which might look like this:
 
 ```bash
-git request-pull -p origin/master .
+git request-pull -p origin/main .
 ```
 
-`origin/master` is Alice's way of referring to the "master" branch on the "origin" remote.
+`origin/main` is Alice's way of referring to the "main" branch on the "origin" remote.
 
 This pull request is essentially the same thing as a pull request on GitHub - which is a place to store code, that we do not cover in this module. A pull request gives you a chance to review others' changes before you incorporate their work into the Web site. Code reviews are an important part — some would say the most important part — of collaborative programming.
 
