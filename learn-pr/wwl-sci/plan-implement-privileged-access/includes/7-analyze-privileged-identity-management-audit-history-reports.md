@@ -19,7 +19,7 @@ Follow these steps to view the audit history for privileged access groups.
 5. Filter the history using a predefined date or custom range.
 
     > [!div class="mx-imgBorder"]
-    > ![Resource audit list with filters](../media/groups-resource-audit.png)
+    > [![Resource audit list with filters](../media/groups-resource-audit.png)](../media/groups-resource-audit.png#lightbox)
 
 ## View my audit
 

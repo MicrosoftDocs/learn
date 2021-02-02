@@ -25,7 +25,7 @@ Follow these steps to make a user eligible for an Azure resource role.
 5. In the Azure resources – Discovery blade, select your subscription and then, on the top menu, select **Manage resource**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted](../media/privileged-identity-management-azure-resource-management.png)
+    > [![Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted](../media/privileged-identity-management-azure-resource-management.png)](../media/privileged-identity-management-azure-resource-management.png#lightbox)
 
 6. In the **Onboarding selected resource for management** dialog box, review the information and then select **OK**.
 
@@ -34,7 +34,7 @@ Follow these steps to make a user eligible for an Azure resource role.
 8. In the Azure resources blade, select the resource you just added.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the recently added Azure resource](../media/privileged-identity-management-azure-resource-overview.png)
+    > [![Screen image displaying the recently added Azure resource](../media/privileged-identity-management-azure-resource-overview.png)](../media/privileged-identity-management-azure-resource-overview.png#lightbox)
 
 9. In the left navigation menu, under **Manage**, select **Roles** to see the list of roles for Azure resources.
 

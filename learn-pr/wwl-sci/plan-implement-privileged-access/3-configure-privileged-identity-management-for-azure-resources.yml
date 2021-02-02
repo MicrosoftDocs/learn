@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-privileged-access.configure-privileged-identity-management-for-azure-resources
-title: Configure privileged identity management for azure resources
+title: Configure Privileged Identity Management for Azure resources
 metadata:
-  title: Configure privileged identity management for azure resources
-  description: "Configure privileged identity management for azure resources"
+  title: Configure Privileged Identity Management for Azure resources
+  description: "Configure Privileged Identity Management for Azure resources"
   ms.date: 02/02/2021
   author: wwlpublish
   ms.author: roberts

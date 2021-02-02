@@ -53,7 +53,7 @@ Follow these steps to implement the principle of least privilege for your Azure 
 2. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
 
     > [!div class="mx-imgBorder"]
-    > ![Discovery and insights (preview) page to reduce exposure via privileged roles](../media/new-preview-page.png)
+    > [![Discovery and insights (preview) page to reduce exposure via privileged roles](../media/new-preview-page.png)](../media/new-preview-page.png#lightbox)
 
 3. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
 
@@ -62,7 +62,7 @@ Follow these steps to implement the principle of least privilege for your Azure 
 To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Azure AD roles in Privileged Identity Management," you can set up an access review for every Azure AD role that has one or more members.
 
 > [!div class="mx-imgBorder"]
-> ![Create an access review pane for Azure AD roles](../media/create-access-review.jpg)
+> [![Create an access review pane for Azure AD roles](../media/create-access-review.jpg)](../media/create-access-review.jpg#lightbox)
 
 Set the reviewers to **Members (self)**. All users in the role will receive an email asking them to confirm that they need the access. Also, turn on **Require reason on approval** in the advanced settings so that users must state why they need the role. Based on this information, you can remove users from unnecessary roles or delegate them to more granular administrator roles.
 
@@ -88,25 +88,25 @@ Choosing which roles to protect with PIM can be difficult and will be different 
 
 It's important to prioritize protecting Azure AD roles that have the most permissions. Based on usage patterns among all PIM customers, the top 10 Azure AD roles managed by PIM are:
 
-1. Global Administrator
+* Global Administrator
 
-2. Security Administrator
+* Security Administrator
 
-3. User Administrator
+* User Administrator
 
-4. Exchange Administrator
+* Exchange Administrator
 
-5. SharePoint Administrator
+* SharePoint Administrator
 
-6. Intune Administrator
+* Intune Administrator
 
-7. Security Reader
+* Security Reader
 
-8. Service Administrator
+* Service Administrator
 
-9. Billing Administrator
+* Billing Administrator
 
-10. Skype for Business Administrator
+* Skype for Business Administrator
 
 > [!TIP]
 > Microsoft recommends you manage all your Global Administrators and Security Administrators using PIM as a first step, because they are the users who can do the most harm when compromised.
