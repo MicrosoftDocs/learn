@@ -206,4 +206,4 @@ We'll use an open-source C# console application to populate your collections. Th
     dotnet run -- -c Orders -o InsertDocument -n 20000 -p 10
     ```
 
-Notice that the throughput changes for each of the different collections; the data populates the `Small` collection at a slower rate than the remaining collections because it was configured to use 400 RU/s, whereas the `HotPartition` and `Orders` were congigured for 7000 RU/s.
+Notice that the throughput changes for each of the different collections; the data populates the `Small` collection at a slower rate than the remaining collections because it was configured to use 400 RU/s, whereas the `HotPartition` and `Orders` were configured for 7000 RU/s.
