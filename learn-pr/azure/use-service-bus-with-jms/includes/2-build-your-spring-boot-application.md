@@ -2,11 +2,17 @@ In this unit, you'll learn how to extend a Spring microservices application and 
 
 ## Introduction to Azure Spring Cloud
 
+**Azure Spring Cloud** is a platform as a service (PaaS) for Spring developers. It enables lifecycle management of your Spring Boot applications with comprehensive monitoring and diagnostics, configuration management, service discovery, CI/CD integration, blue-green deployments, and more.
+
 ## Clone and deploy the Spring Petclinic Microservices sample
 
 Spring is the perfect framework to host and manage our applications. All we have to do is wire certain Spring components without managing the underlying server runtime.
 
 Since we are working with the Spring Petclinic application as a starting point, it is recommended that you follow the [instructions](https://github.com/Azure-Samples/spring-petclinic-microservices/blob/azure/README.md) to clone and deploy the microservices on to Azure Spring Cloud.
+
+> [!IMPORTANT]
+> The tutorial presumes that the [Spring Petclinic microservices](https://github.com/Azure-Samples/spring-petclinic-microservices) has been setup as mentioned in the detailed [README](https://github.com/Azure-Samples/spring-petclinic-microservices/blob/azure/README.md).
+>
 
 ## Create an Azure Service Bus Premium tier namespace
 
