@@ -28,7 +28,7 @@ Use these instructions if you do not already have a workspace available to Azure
     | :--- | :--- |
     | Subscription  | Use your current subscription.|
     | Resource group| Use an existing resource group or create a new one.|
-    | Name          | <li>**Lab-workspace-yourinitialsanddate** </li><li>The workspace must be a globally unique value. </li>|
+    | Name          | <ul><li>**Lab-workspace-yourinitialsanddate** </li><li>The workspace must be a globally unique value. </li></ul>|
     | Pricing tier  | Pay-as-you-go|
 
 6. When complete, select your new workspace and then select **Add** to add the workspace to Azure Sentinel.
