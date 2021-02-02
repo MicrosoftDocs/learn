@@ -46,8 +46,8 @@ The following policy applies to all selected users who attempt to register using
 
 4. Under **Assignments**, select **Users and groups**, and select the users and groups you want this policy to apply to.
 
-> [!WARNING]
-> Users must be enabled for the combined registration.
+   > [!WARNING]
+   > Users must be enabled for the combined registration.
 
    1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 
