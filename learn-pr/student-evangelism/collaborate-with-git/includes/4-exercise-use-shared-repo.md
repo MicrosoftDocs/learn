@@ -32,12 +32,18 @@ Creating a bare repo for sharing is easy.
     git init --bare
     ```
 
+1. When a repo is still bare, the `git checkout` command can't be used to set the name of the default branch. To accomplish this task, you can change the `HEAD` branch to point at a different branch, in this case, the `main` branch:
+
+    ```bash
+    git symbolic-ref HEAD refs/heads/main
+    ```
+
 1. The next step is to get the contents of _your_ repo into the shared repo. Use these commands to return to the project directory where your repo is stored, set up an "origin" remote, and perform an initial push:
 
     ```bash
     cd ../Cats
     git remote add origin ../Shared.git
-    git push origin master
+    git push origin main
     ```
 
 1. You should see this output indicating success:
@@ -49,19 +55,19 @@ Creating a bare repo for sharing is easy.
     Writing objects: 100% (12/12), 1.07 KiB | 0 bytes/s, done.
     Total 12 (delta 1), reused 0 (delta 0)
     To ../Shared.git
-     * [new branch]      master -> master
+     * [new branch]      main -> main
     ```
 
-1. You want `push` and `pull` to use "origin's" master branch by default, as if you had made your repo by cloning it in the first place. To do so, you need to tell Git which branch to track:
+1. You want `push` and `pull` to use "origin's" `main` branch by default, as if you had made your repo by cloning it in the first place. To do so, you need to tell Git which branch to track:
 
     ```bash
-    git branch --set-upstream-to origin/master
+    git branch --set-upstream-to origin/main
     ```
 
 1. You'll get this output:
 
     ```output
-    Branch master set up to track remote branch master from origin.
+    Branch main set up to track remote branch main from origin.
     ```
 
 Git would have complained if you had tried to do this command before the initial push, because the new repository had no branches. Git can't track a branch that doesn't exist. All Git is doing under the hood is looking in ".git/refs/remotes/origin" for a file named **trunk**.
@@ -177,7 +183,7 @@ Now that Bob is set up to work on the Web site, they decide to add a footer to t
     remote: Total 3 (delta 2), reused 0 (delta 0)
     Unpacking objects: 100% (3/3), done.
     From ../Shared
-       843d142..2cf6cbf  master     -> origin/master
+       843d142..2cf6cbf  main     -> origin/main
     Updating 843d142..2cf6cbf
     error: Your local changes to the following files would be overwritten by merge:
             index.html
@@ -208,7 +214,7 @@ Now that Bob is set up to work on the Web site, they decide to add a footer to t
 1. You should see this output:
 
     ```output
-    Saved working directory and index state WIP on master: 95bbc3b Change background color to light blue
+    Saved working directory and index state WIP on main: 95bbc3b Change background color to light blue
     HEAD is now at 95bbc3b Change background color to light blue
     ```
 
@@ -225,8 +231,8 @@ Now that Bob is set up to work on the Web site, they decide to add a footer to t
 
     ```output
     Auto-merging index.html
-    On branch master
-    Your branch is up-to-date with 'origin/master'.
+    On branch main
+    Your branch is up-to-date with 'origin/main'.
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git checkout -- <file>..." to discard changes in working directory)

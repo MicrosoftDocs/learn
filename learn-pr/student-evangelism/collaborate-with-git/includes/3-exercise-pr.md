@@ -46,7 +46,7 @@ Alice starts working on the web site. Their first decision is to change the site
 1. Now, you must make a pull request back to the original repo:
 
     ```bash
-    git request-pull -p origin/master .
+    git request-pull -p origin/main .
     ```
 
 1. You should see output similar to the following example:
@@ -97,10 +97,10 @@ Because your project directory and the "Alice" directory are on the same compute
 1. Now execute a pull:
 
     ```bash
-    git pull remote-alice master
+    git pull remote-alice main
     ```
 
-    Notice that you have to specify a branch, "master," in the pull command. You will learn in the next lesson how to fix that by setting an upstream URL.
+    Notice that you have to specify a branch, `main`, in the pull command. You will learn in the next lesson how to fix that by setting an upstream URL.
 
 1. You should see an output like this indicating success:
 
@@ -110,8 +110,8 @@ Because your project directory and the "Alice" directory are on the same compute
     remote: Total 4 (delta 1), reused 0 (delta 0)
     Unpacking objects: 100% (4/4), done.
     From ../Alice
-     * branch            master     -> FETCH_HEAD
-     * [new branch]      master     -> remote-alice/master
+     * branch            main     -> FETCH_HEAD
+     * [new branch]      main     -> remote-alice/main
     Updating 2bf69ab..95bbc3b
     Fast-forward
      CSS/site.css | 2 +-
