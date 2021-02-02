@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.render-a-model-with-azure-remote-rendering
+uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 metadata:
   title: Render a Model with Azure Remote Rendering
   description: TBD
@@ -34,12 +34,12 @@ products:
 - windows-mixed-reality
 - hololens
 units:
-- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.1-introduction
-- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.2-what-is-azure-remote-rendering
-- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.3-exercise-create-an-azure-remote-rendering-resource
-- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.4-creating-and-rendering-models
-- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.5-exercise-render-a-model-in-unity
-- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.6-knowledge-check
-- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.7-summary
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.1-introduction
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.2-what-is-azure-remote-rendering
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.3-exercise-create-an-azure-remote-rendering-resource
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.4-creating-and-rendering-models
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.5-exercise-render-a-model-in-unity
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.6-knowledge-check
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.7-summary
 badge:
   uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
