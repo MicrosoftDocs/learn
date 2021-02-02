@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-file-server-high-availability.implement-scale-out
+title: Implement Scale-Out File Server
+metadata:
+  title: Implement Scale-Out File Server
+  description: "Implement Scale-Out File Server"
+  ms.date: 02/02/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-implement-scale-out-file-server.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Which Windows PowerShell cmdlet assigns an IP address resource to an SOFS cluster role?"
+    choices:
+    - content: "`Add-ClusterResource`"
+      isCorrect: false
+      explanation: "That's incorrect. You can use this cmdlet to create an IP address resource, not assign it."
+    - content: "`Set-ClusterParameter`"
+      isCorrect: true
+      explanation: "That's correct. You can use this cmdlet to assign an existing IP address resource to an SOFS cluster role."
+    - content: "`Add-ClusterScaleOutFileServerRole`"
+      isCorrect: false
+      explanation: "That's incorrect. You can use this cmdlet to create an SOFS cluster role."
