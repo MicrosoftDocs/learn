@@ -51,7 +51,7 @@ The following policy applies to all selected users who attempt to register using
 
    1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 
-   1. Select **Done**.
+   2. Select **Done**.
 
 5. Under **Cloud apps or actions**, select **User actions**, check **Register security information**.
 
@@ -59,13 +59,13 @@ The following policy applies to all selected users who attempt to register using
 
    1. Configure **Yes**.
 
-   1. Include **Any location**.
+   2. Include **Any location**.
 
-   1. Exclude **All trusted locations**.
+   3. Exclude **All trusted locations**.
 
-   1. Select **Done** on the **Locations** blade.
+   4. Select **Done** on the **Locations** blade.
 
-   1. Select **Done** on the **Conditions** blade.
+   5. Select **Done** on the **Conditions** blade.
 
 7. Under **Conditions** > **Client apps (Preview)**, set **Configure** to **Yes**, and select **Done**.
 
@@ -73,7 +73,7 @@ The following policy applies to all selected users who attempt to register using
 
    1. Select **Block access**.
 
-   1. Then click **Select**.
+   2. Then click **Select**.
 
 9. Set **Enable policy** to **On**.
 
@@ -83,17 +83,17 @@ At step 6 in this policy, organizations have choices they can make. The policy a
 
 Some may choose to use device state instead of location in step 6 above:
 
-6. Under **Conditions** > **Device state (Preview)**.
+11. Under **Conditions** > **Device state (Preview)**.
 
    1. Configure **Yes**.
 
-   1. Include **All device state**.
+   2. Include **All device state**.
 
-   1. Exclude **Device Hybrid Azure AD joined** and/or **Device marked as compliant.**
+   3. Exclude **Device Hybrid Azure AD joined** and/or **Device marked as compliant.**
 
-   1. Select **Done** on the **Locations** blade.
+   4. Select **Done** on the **Locations** blade.
 
-   1. Select **Done** on the **Conditions** blade.
+   5. Select **Done** on the **Conditions** blade.
 
 > [!WARNING]
 > If you use device state as a condition in your policy, this may impact guest users in the directory. Report-only mode can help determine the impact of policy decisions. Note that report-only mode is not applicable for Conditional Access policies with "User Actions" scope.
@@ -106,55 +106,55 @@ With the location condition in Conditional Access, you can control access to you
 
 1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 
-1. Browse to **Azure Active Directory** > **Security** > **Conditional Access** > **Named locations**.
+2. Browse to **Azure Active Directory** > **Security** > **Conditional Access** > **Named locations**.
 
-1. Choose **New location**.
+3. Choose **New location**.
 
-1. Give your location a name.
+4. Give your location a name.
 
-1. Choose **IP ranges** if you know the specific externally accessible IPv4 address ranges that make up that location or **Countries/Regions**.
+5. Choose **IP ranges** if you know the specific externally accessible IPv4 address ranges that make up that location or **Countries/Regions**.
 
    1. Provide the **IP ranges** or select the **Countries/Regions** for the location you are specifying.
 
     - If you choose Countries/Regions, you can optionally choose to include unknown areas.
 
-1. Choose **Save.**
+6. Choose **Save.**
 
 ### Create a Conditional Access policy
 
 1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 
-1. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+2. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
 
-1. Select **New policy**.
+3. Select **New policy**.
 
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 
-1. Under **Assignments**, select **Users and groups.**
+5. Under **Assignments**, select **Users and groups.**
 
    1. Under **Include**, select **All users**.
 
-   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
+   2. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 
-   1. Select **Done**.
+   3. Select **Done**.
 
-1. Under **Cloud apps or actions** > **Include**, and select **All cloud apps**.
+6. Under **Cloud apps or actions** > **Include**, and select **All cloud apps**.
 
-1. Under **Conditions** > **Location**.
+7. Under **Conditions** > **Location**.
 
    1. Set **Configure** to **Yes.**
 
-   1. Under **Include**, select **Selected locations.**
+   2. Under **Include**, select **Selected locations.**
 
-   1. Select the blocked location you created for your organization.
+   3. Select the blocked location you created for your organization.
 
-   1. Click **Select**.
+   4. Click **Select**.
 
-1. Under **Access controls** > select **Block Access**, and select **Select**.
+8. Under **Access controls** > select **Block Access**, and select **Select**.
 
-1. Confirm your settings and set **Enable policy** to **On**.
+9. Confirm your settings and set **Enable policy** to **On**.
 
-1. Select **Create** to create Conditional Access Policy.
+10. Select **Create** to create Conditional Access Policy.
 
 ## Require compliant devices
 
@@ -176,35 +176,35 @@ The following steps will help create a Conditional Access policy to require devi
 
 1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 
-1. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+2. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
 
-1. Select **New policy**.
+3. Select **New policy**.
 
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 
-1. Under **Assignments**, select **Users and groups.**
+5. Under **Assignments**, select **Users and groups.**
 
    1. Under **Include**, select **All users**.
 
-   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
+   2. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 
-   1. Select **Done**.
+   3. Select **Done**.
 
-1. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
+6. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
 
    1. If you must exclude specific applications from your policy, you can choose them from the **Exclude** tab under **Select excluded cloud apps** and choose **Select**.
 
-   1. Select **Done**.
+   2. Select **Done**.
 
-1. Under **Conditions** > **Client apps (Preview)** > **Select the client apps this policy will apply to**, leave all defaults selected and select **Done**.
+7. Under **Conditions** > **Client apps (Preview)** > **Select the client apps this policy will apply to**, leave all defaults selected and select **Done**.
 
-1. Under **Access controls** > **Grant**, select **Require device to be marked as compliant**.
+8. Under **Access controls** > **Grant**, select **Require device to be marked as compliant**.
 
    1. Select **Select**.
 
-1. Confirm your settings and set **Enable policy** to **On**.
+9. Confirm your settings and set **Enable policy** to **On**.
 
-1. Select **Create** to create to enable your policy.
+10. Select **Create** to create to enable your policy.
 
 > [!NOTE]
 > You can enroll your new devices to Intune even if you select Require device to be marked as compliant for All users and All cloud apps using the steps above. Require device to be marked as compliant control does not block Intune enrollment.
@@ -240,71 +240,71 @@ The first policy blocks access to all apps except for Microsoft 365 applications
 
 1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 
-1. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
+2. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
 
-1. Select **New policy**.
+3. Select **New policy**.
 
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 
-1. Under **Assignments**, select **Users and groups**.
+5. Under **Assignments**, select **Users and groups**.
 
    1. Under **Include**, select **All users**.
 
-   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
+   2. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 
-   1. Select **Done**.
+   3. Select **Done**.
 
-1. Under **Cloud apps or actions**, select the following options:
+6. Under **Cloud apps or actions**, select the following options:
 
    1. Under **Include**, select **All cloud apps**.
 
-   1. Under **Exclude**, select **Office 365**, select **Select**, then select **Done**.
+   2. Under **Exclude**, select **Office 365**, select **Select**, then select **Done**.
 
-1. Under **Conditions**:
+7. Under **Conditions**:
 
    1. Under **Conditions** > **Location**.
 
       1. Set **Configure** to **Yes.**
 
-      1. Under **Include**, select **Any location**.
+      2. Under **Include**, select **Any location**.
 
-      1. Under **Exclude**, select **All trusted locations**.
+      3. Under **Exclude**, select **All trusted locations**.
 
-      1. Select **Done**.
+      4. Select **Done**.
 
-   1. Under **Client apps (Preview)**, set **Configure** to **Yes**, and select **Done**, then **Done**.
+   2. Under **Client apps (Preview)**, set **Configure** to **Yes**, and select **Done**, then **Done**.
 
-1. Under **Access controls** > **Grant**, select **Block access**, then select **Select**.
+8. Under **Access controls** > **Grant**, select **Block access**, then select **Select**.
 
-1. Confirm your settings and set **Enable policy** to **Report-only**.
+9. Confirm your settings and set **Enable policy** to **Report-only**.
 
-1. Select **Create** to create to enable your policy.
+10. Select **Create** to create to enable your policy.
 
 A second policy is created below to require multifactor authentication or a compliant device for users of Microsoft 365.
 
 1. Select **New policy**.
 
-1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
+2. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 
-1. Under **Assignments**, select **Users and groups**.
+3. Under **Assignments**, select **Users and groups**.
 
    1. Under **Include**, select **All users**.
 
-   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
+   2. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
 
-   1. Select **Done**.
+   3. Select **Done**.
 
-1. Under **Cloud apps or actions** > **Include**, select **Select apps**, choose **Office 365**, and select **Select**, then **Done**.
+4. Under **Cloud apps or actions** > **Include**, select **Select apps**, choose **Office 365**, and select **Select**, then **Done**.
 
-1. Under **Access controls** > **Grant**, select **Grant access**.
+5. Under **Access controls** > **Grant**, select **Grant access**.
 
    1. Select **Require multi-factor authentication** and **Require device to be marked as compliant** select **Select**.
 
-   1. Ensure **Require all the selected controls** is selected.
+   2. Ensure **Require all the selected controls** is selected.
 
-   1. Select **Select**.
+   3. Select **Select**.
 
-1. Confirm your settings and set **Enable policy** to **Report-only**.
+6. Confirm your settings and set **Enable policy** to **Report-only**.
 
-1. Select **Create** to create to enable your policy.
+7. Select **Create** to create to enable your policy.
 

@@ -6,8 +6,8 @@ To enable security defaults in your directory:
 
 2. Select the Show portal menu hamburger icon and then select Azure Active Directory.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal menu with Azure Active Directory selected](../media/azure-portal-menu-azure-active-directory.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal menu with Azure Active Directory selected](../media/azure-portal-menu-azure-active-directory.png)
 
 3. In the left navigation, in the Manage section, select Properties.
 

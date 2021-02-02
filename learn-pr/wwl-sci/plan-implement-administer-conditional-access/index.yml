@@ -3,7 +3,7 @@ uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
   title: Plan, implement, and administer conditional access
   description: "Plan, implement, and administer conditional access"
-  ms.date: 02/01/2021
+  ms.date: 02/02/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ units:
 - learn.wwl.plan-implement-administer-conditional-access.exercise-working-with-security-defaults
 - learn.wwl.plan-implement-administer-conditional-access.plan-policies
 - learn.wwl.plan-implement-administer-conditional-access.implement-policy-controls-assignments
-- learn.wwl.plan-implement-administer-conditional-access.exercise-implement-condition-access-policies-roles-assignments
+- learn.wwl.plan-implement-administer-conditional-access.exercise-implement-conditional-access-policies-roles-assignments
 - learn.wwl.plan-implement-administer-conditional-access.test-troubleshoot-policies
 - learn.wwl.plan-implement-administer-conditional-access.implement-application-controls
 - learn.wwl.plan-implement-administer-conditional-access.implement-session-management

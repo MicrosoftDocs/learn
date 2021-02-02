@@ -10,8 +10,8 @@
 
 5. On the top menu, select **New policy**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying the Conditional Access blade with New policy highlighted](../media/conditional-access-new-policy.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying the Conditional Access blade with New policy highlighted](../media/conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Sign in frequency**.
 
@@ -37,8 +37,8 @@
 
 17. Under **Enable policy**, select **Report-only**, and then select **Create**.
 
-> [!div class="mx-imgBorder"]
-> ![Screen image displaying a new conditional access policy with policy settings highlighted](../media/create-session-conditional-access-policy.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screen image displaying a new conditional access policy with policy settings highlighted](../media/create-session-conditional-access-policy.png)
 
 > [!NOTE]
 > Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:
