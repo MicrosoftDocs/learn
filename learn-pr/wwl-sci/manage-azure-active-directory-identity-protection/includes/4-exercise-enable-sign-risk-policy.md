@@ -1,4 +1,4 @@
-## Enable User risk policy
+## Enable user risk policy
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
 
@@ -34,7 +34,7 @@
 
 12. Under **Enforce Policy**, select **On** and then select **Save**.
 
-## Enable Sign-in risk policy
+## Enable sign-in risk policy
 
 1. On the Identity protection blade, in the left navigation, select **Sign-in risk policy**.
 
