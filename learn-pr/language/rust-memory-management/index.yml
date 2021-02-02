@@ -12,11 +12,10 @@ title: Understand how Rust manages memory
 summary: "Discover the features that make Rust so unique: ownership and borrowing."
 abstract:  |
   In this module, you'll learn:
-  - What generic types are and how "wrapper" types use them.
-  - What traits are and how they help us define shared behavior.
-  - How to implement an existing trait for a custom type.
-  - How to implement a custom trait for an existing type.
-  - How trait bounds help us write generic functions.
+  - The concept of ownership in Rust.
+  - Moving and borrowing values.
+  - Scoping rules and lifetimes.
+  - Rust's pointer types, commonly called *references*.
 prerequisites: | 
   - You should have a basic understanding of Rust's primitive and collection types, as covered in the previous modules.
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
