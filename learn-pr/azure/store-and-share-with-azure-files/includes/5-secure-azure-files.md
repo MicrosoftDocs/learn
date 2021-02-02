@@ -23,7 +23,7 @@ Add-AzStorageAccountNetworkRule `
     -IPAddressOrRange "NNN.NNN.NNN.NNN"
 ```
 
-Or you could use a CLI command:
+Or, you could use a CLI command.
 
 ```azurecli
 "az storage account network-rule add \"
@@ -32,7 +32,7 @@ Or you could use a CLI command:
     --ip-address "NNN.NNN.NNN.NNN"
 ```
 
-Where `NNN.NNN.NNN.NNN` is your public-facing IP address.
+where `NNN.NNN.NNN.NNN` is your public-facing IP address.
 
 ### Require secure transfer for all connections
 
