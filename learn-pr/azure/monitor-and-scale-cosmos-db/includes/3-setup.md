@@ -98,7 +98,7 @@ We look at indexing in subsequent units.
 
     We're going to create three collections to compare different partitioning strategies and workloads.
 
-    We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important because the collection is smaller than a single partition.
+    We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important because the collection is smaller than a single partition. In addition, this first collection is configured for 400 request units per second (RU/s), which is less than the next two collections.
 
     ```azurecli
     az cosmosdb sql container create \
@@ -112,7 +112,7 @@ We look at indexing in subsequent units.
 
 1. Create the second collection.
 
-    This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module.
+    This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module. This second collection is configured for 7000 RU/s, which is more than the first collection.
 
     ```azurecli
     az cosmosdb sql container create \
@@ -126,7 +126,7 @@ We look at indexing in subsequent units.
 
 1. Create a third collection.
 
-    This collection partitions the documents by the order item's unique product identifier.
+    This collection partitions the documents by the order item's unique product identifier. This last collection is also configured for 7000 RU/s.
 
     ```azurecli
     az cosmosdb sql container create \
@@ -206,4 +206,4 @@ We'll use an open-source C# console application to populate your collections. Th
     dotnet run -- -c Orders -o InsertDocument -n 20000 -p 10
     ```
 
-Notice that the throughput changes for each of the different 
+Notice that the throughput changes for each of the different collections; the data populates the `Small` collection at a slower rate than the remaining collections because it was configured to use 400 RU/s, whereas the `HotPartition` and `Orders` were congigured for 7000 RU/s.
