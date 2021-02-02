@@ -4594,6 +4594,16 @@
       "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/5-endpoint-formerly-microsoft-defender-advanced-threat-protection.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/5-describe-defender-endpoint",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/2-what-are-quantum-inspired-algorithms.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/2-what-is-quantum-inspired-optimization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/3-when-is-quantum-inspired-optimization-useful.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/3-optimization-basics",
+      "redirect_document_id": false
     }
   ]
 }

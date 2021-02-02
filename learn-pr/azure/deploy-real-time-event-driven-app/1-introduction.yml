@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-event-driven-real-time.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction of the concept of real-time event-driven architectures and their key indicators.
+  ms.date: 02/01/2021
+  author: SandraAhlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
