@@ -39,9 +39,5 @@ The main steps in the process are:
 1. Create a highly available File Server role. Use Failover Cluster Manager to create a highly available File Server role with the Scale-Out File Server for application data profile.
 1. Create a highly available File Server role. Use Windows PowerShell to create a highly available File Server role with the Scale-Out File Server for application data profile.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKz]  
-
- 
-
-
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKz]  \
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKB]
