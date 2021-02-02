@@ -44,7 +44,7 @@ func main() {
 
 You need to build two programs from this existing code:
 
-- *An improved version where you implement concurrency.* It should take a few seconds to finish, no more than 15 seconds as it does now. You should use buffered channels.
+- *An improved version where you implement concurrency.* It should take a few seconds to finish (no more than 15 seconds), as it does now. You should use buffered channels.
 - *Write a new version that calculates Fibonacci numbers until the user enters `quit` in the terminal by using the `fmt.Scanf()` function.* If the user presses Enter, you should calculate a new Fibonacci number. In other words, you'll no longer have a loop from 1 to 10. 
 
    Use two unbuffered channels: one to calculate the Fibonacci number and another that's waiting for the "quit" message from the user. You'll need to use the `select` statement.

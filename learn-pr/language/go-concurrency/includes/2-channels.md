@@ -103,7 +103,7 @@ SUCCESS: https://api.github.com is up and running!
 Done! It took 0.263611711 seconds!
 ```
 
-Notice that now you see the output for two APIs. If you continue adding more `fmt.Print(<-ch)` lines, you'll end up reading all the data that's being sent to the channel. But what happens if you try to read more data and no one is sending data anymore, something like this:
+Notice that now you see the output for two APIs. If you continue adding more `fmt.Print(<-ch)` lines, you'll end up reading all the data that's being sent to the channel. But what happens if you try to read more data and no one is sending data anymore? An example is something like this:
 
 ```go
 ch := make(chan string)
@@ -133,7 +133,7 @@ SUCCESS: https://outlook.office.com/ is up and running!
 SUCCESS: https://dev.azure.com is up and running!
 ```
 
-It's working, but the program doesn't finish because the last print line is blocking it because it's expecting to receive data. You'll have to close the program with a command like `Ctrl+C`. 
+It's working, but the program doesn't finish. The last print line is blocking it because it's expecting to receive data. You'll have to close the program with a command like `Ctrl+C`. 
 
 This simply proves that reading data and receiving data are blocking operations. To fix this problem, you might simply change the code for a loop and receive only the data that you're sure you're sending, like this:
 

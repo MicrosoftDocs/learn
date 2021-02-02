@@ -1,4 +1,4 @@
-As you've seen, Go's approach to concurrency is different from other programming languages. This approach is captured in the GO slogan: *"Do not communicate by sharing memory; instead, share memory by communicating."* 
+As you've seen, Go's approach to concurrency is different from other programming languages. This approach is captured in the Go slogan: *"Do not communicate by sharing memory; instead, share memory by communicating."* 
 
 That simple sentence changes everything. You've seen that by using goroutines and channels, you can write concurrent programs that run faster and are easy to understand (at least when you've learned why certain things are the way they are in Go).
 

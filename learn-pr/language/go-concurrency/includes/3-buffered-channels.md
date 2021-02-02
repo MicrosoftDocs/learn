@@ -154,7 +154,7 @@ Conversely, buffered channels decouple the send and receive operations. They don
 
 ## Channel directions
 
-An interesting feature for channels in Go is that when you use channels as parameters to a function, you can specify whether a channel is meant to *send1* or *receive* data. As your program grows, you might have too many functions, and it's a good idea to document the intent of each channel to use them properly. Or perhaps you're writing a library and want to expose a channel as read-only to maintain data consistency.
+An interesting feature for channels in Go is that when you use channels as parameters to a function, you can specify whether a channel is meant to *send* or *receive* data. As your program grows, you might have too many functions, and it's a good idea to document the intent of each channel to use them properly. Or perhaps you're writing a library and want to expose a channel as read-only to maintain data consistency.
 
 To define the channel's direction, you do it in a similar way to when you're reading or receiving data. But you do it when you're declaring the channel in a function parameter. The syntax to define the type of channel as a parameter in a function is like the following:
 
@@ -211,7 +211,7 @@ When you run the program, you see the following error:
 ./main.go:12:5: invalid operation: ch <- "Bye!" (send to receive-only type <-chan string)
 ```
 
-It's better to have a compile error than misuse a channel.
+It's better to have a compile error than to misuse a channel.
 
 ## Multiplexing
 

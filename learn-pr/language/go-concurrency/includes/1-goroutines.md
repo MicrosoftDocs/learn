@@ -1,6 +1,6 @@
 Concurrency is the composition of independent activities, like the work that a web server does when it deals with multiple user requests simultaneously but in an autonomous way. Concurrency is present in many programs today. Web servers are one example, but you also see the need for concurrency in processing significant amounts of data in batches.
 
-Go has two styles for writing concurrent programs. One is the traditional one you might have used in other languages with threads. In this module, you'll learn about Go's style, where values are passed between independent activities known as goroutines to communicate processes.
+Go has two styles for writing concurrent programs. One is the traditional style that you might have used in other languages with threads. In this module, you'll learn about Go's style, where values are passed between independent activities known as goroutines to communicate processes.
 
 If this is your first time learning about concurrency, we encourage you to spend some extra time reviewing each piece of code we'll write to practice.
 
@@ -16,7 +16,7 @@ Let's start by exploring goroutines.
 
 ## Goroutines
 
-A goroutine is a concurrent activity, a lightweight thread, not the traditional one you have in an operating system. Let's suppose that you have a program that writes to the output and another function that calculates things like adding two numbers. A concurrent program can have several goroutines calling both functions at the same time.
+A goroutine is a concurrent activity in a lightweight thread, not the traditional one you have in an operating system. Let's suppose that you have a program that writes to the output and another function that calculates things like adding two numbers. A concurrent program can have several goroutines calling both functions at the same time.
 
 We can say that the first goroutine that a program executes is the `main()` function. If you want to create another goroutine, you have to use the `go` keyword before calling the function, like this:
 
