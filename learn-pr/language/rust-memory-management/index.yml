@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Rust memory management - ownership, borrowing, and lifetimes
-summary: "Discover one of Rust's most powerful features: the borrow checker."
+summary: "Discover the features that make Rust so unique: ownership and borrowing."
 abstract:  |
   In this module, you'll learn:
   - What generic types are and how "wrapper" types use them.
