@@ -18,7 +18,7 @@ To learn more about some of the topics we've examined in this module, check out 
 
 - [Create a resilient access control management strategy in Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls)
 
-- [Microsoft Graph REST API beta](https://docs.microsoft.com/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)
+- [Microsoft Graph REST API beta](https://docs.microsoft.com/graph/api/resources/authenticationmethods-overview)
 
 - [Windows Hello for Business overview](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)
 

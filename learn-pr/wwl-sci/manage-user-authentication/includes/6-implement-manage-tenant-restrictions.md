@@ -20,8 +20,7 @@ The overall solution comprises the following components:
 
 The following diagram illustrates the high-level traffic flow. Tenant restrictions requires TLS inspection only on traffic to Azure AD, not to the Microsoft 365 cloud services. This distinction is important, because the traffic volume for authentication to Azure AD is typically much lower than traffic volume to SaaS applications like Exchange Online and SharePoint Online.
 
->[!div class="mx-imgBorder"]
->[ ![Tenant restrictions traffic flow - diagram](../media/traffic-flow.png) ](../media/traffic-flow.png#lightbox)
+[ ![Tenant restrictions traffic flow - diagram](../media/traffic-flow.png) ](../media/traffic-flow.png#lightbox)
 
 In the scenario depicted here, a user is trying to access a shared SaaS application via an allowed fully qualified domain name (FQDN) to get access to the Fabrikam application instance, or tenant, while on the Contoso network:
 
