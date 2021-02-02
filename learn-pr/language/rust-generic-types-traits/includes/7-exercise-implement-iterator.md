@@ -1,4 +1,4 @@
-In this exercise, you'll be requested to implement an iterator that returns equal items in a sequence grouped in vectors, such as:
+In this exercise, you'll implement an iterator that returns equal items in a sequence grouped in vectors, such as:
 
 - **Input:** `[ 1, 1, 2, 1, 3, 3 ]`
 - **Output:** `[ [1, 1], [2], [1], [3, 3] ]`

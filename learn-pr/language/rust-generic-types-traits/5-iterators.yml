@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use iterators
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/5-iterators.md)]

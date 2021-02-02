@@ -1,4 +1,4 @@
-In this exercise, you'll be requested to transform a `Container` struct that only accepts positive integers of the `u32` type into a generic container that can hold values of any given type.
+In this exercise, you'll transform a `Container` struct that only accepts positive integers of the `u32` type into a generic container that can hold values of any given type.
 
 Don't edit any content inside the `main` function. This exercise is complete when the code compiles.
 
