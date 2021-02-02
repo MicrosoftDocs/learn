@@ -162,12 +162,12 @@ Users can review and see the terms of use that they have accepted by using the f
 2. On the Overview page, select VIEW SETTINGS AND PRIVACY.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image of a popup which says "View settings and privacy"](../media/my-account-setting-privacy.png)
+    > ![Screen image of a popup which says "View settings and privacy"](../media/my-account-settings-privacy.png)
 
 3. On the Settings & Privacy page, select the **Privacy** tab.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the settings and privacy page with organization's notes highlighted](../media/my-account-setting-privacy-organization-notes.png)
+    > ![Screen image displaying the settings and privacy page with organization's notes highlighted](../media/my-account-settings-privacy-organization-notes.png)
 
 4. Under **Organization’s notice**, you can review the terms of use you have accepted.
 
