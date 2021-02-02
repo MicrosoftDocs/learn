@@ -4,13 +4,13 @@ Some application architectures will not support using the Azure Digital Twin SDK
 
 More information on Azure digital twin REST APIs is found in the documentation.
 
- [Azure Digital Twins REST APIs](https://docs.microsoft.com/en-us/rest/api/azure-digitaltwins/)
+ [Azure Digital Twins REST APIs](https://docs.microsoft.com/rest/api/azure-digitaltwins/)
 
 ## API authentication
 
 Use the OAuth 2.0 client credentials grant specified in RFC 6749, sometimes called two-legged OAuth, to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often referred to as daemons or service accounts.
 
-More information on the different authentication patterns is found in the [Azure Active Directory documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types)
+More information on the different authentication patterns is found in the [Azure Active Directory documentation](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types)
 
 ### Admin consent
 

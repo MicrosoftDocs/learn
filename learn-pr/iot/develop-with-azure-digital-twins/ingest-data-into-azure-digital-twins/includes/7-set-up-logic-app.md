@@ -20,7 +20,7 @@ In this unit a custom Logic App connector will be created and used within a Logi
 
 ## Configure connector for Azure Digital Twins
 
-1. Download a custom Azure Digital Twins Swagger that has been modified to work with Logic Apps. Download the Azure Digital Twins custom Swaggers (Logic Apps connector) sample from [this link](https://docs.microsoft.com/en-us/samples/azure-samples/digital-twins-custom-swaggers/azure-digital-twins-custom-swaggers/) by hitting the Download ZIP button. Navigate to the downloaded Azure_Digital_Twins_custom_Swaggers__Logic_Apps_connector_.zip folder and unzip it.
+1. Download a custom Azure Digital Twins Swagger that has been modified to work with Logic Apps. Download the Azure Digital Twins custom Swaggers (Logic Apps connector) sample from [this link](https://docs.microsoft.com/samples/azure-samples/digital-twins-custom-swaggers/azure-digital-twins-custom-swaggers/) by hitting the Download ZIP button. Navigate to the downloaded Azure_Digital_Twins_custom_Swaggers__Logic_Apps_connector_.zip folder and unzip it.
 1. Back in the Azure portal on your connector's Overview page, click on **Edit**
 
     :::image type="content" source= "..\media\edit-connector.png" alt-text="Edit new connector":::
