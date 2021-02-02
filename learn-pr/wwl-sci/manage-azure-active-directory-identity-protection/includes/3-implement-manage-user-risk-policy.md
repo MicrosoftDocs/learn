@@ -5,7 +5,7 @@ There are two risk policies that can be enabled in the directory:
 - User risk policy: The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behavior.
 
 > [!div class="mx-imgBorder"]
-> ![Security overview page to enable user and sign-in risk policies](../media/identity-protection-security-overview.png)
+> [ ![Security overview page to enable user and sign-in risk policies](../media/identity-protection-security-overview.png) ](../media/identity-protection-security-overview.png#lightbox)
 
 Both policies work to automate the response to risk detections in your environment and allow users to self-remediate when risk is detected.
 
