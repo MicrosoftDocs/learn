@@ -8,7 +8,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn about the borrow checker
+title: Learn about the borrowing
 durationInMinutes: 4
 content: |
   [!include[](includes/2-learn-about-borrow-checker.md)]
