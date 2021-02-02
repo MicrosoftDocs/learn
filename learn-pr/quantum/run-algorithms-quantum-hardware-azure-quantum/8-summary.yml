@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.run-quantum-algorithms-hardware.8-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary.
+  ms.date: 01/01/2021
+  author: geduardo
+  ms.author: v-edsanc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

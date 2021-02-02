@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.iot-fundamentals
 metadata:
-  title: Choose the best Azure IoT service for your application
-  description: Examine Azure IoT services, and choose the right service for your scenario.
+  title: Choose the best Azure IoT service for your application (AZ-900)
+  description: Examine Azure IoT services, and choose the right service for your scenario. Prepare for AZ-900.
   ms.date: 09/14/2020
   author: bobtabor-msft
   ms.author: rotabor

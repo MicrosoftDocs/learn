@@ -9,7 +9,7 @@ In this module, you learned about:
 ## Resources
 
 - [Learn more about Azure Digital Twins](https://azure.microsoft.com/en-us/services/digital-twins/).
-- [Get started with Azure Digital Twins technical resources](https://docs.microsoft.com/en-us/azure/digital-twins/overview).
+- [Get started with Azure Digital Twins technical resources](https://docs.microsoft.com/azure/digital-twins/overview).
 - [Watch Azure Digital Twins demo video](https://aka.ms/ADTSupplyChainVideo).
 - [Read Azure Digital Twins customer stories](https://customers.microsoft.com/en-us/search?sq=azure%20digital%20twins&ff=&p=2&so=story_publish_date%20desc).
 - Watch IoT Shows:
