@@ -8,11 +8,11 @@ These objectives are the ultimate goals for digital twins. In this module, the g
 
 To summarize, in this module, you will:
 
-- Create an instance of Azure Digital Twins by using the Azure portal
-- Create digital models for the production line of a chocolate factory
-- Validate the digital models by using a validator sample
-- Create a graph of the models by using an explorer sample
-- Query the graph by using SQL-like queries
+- Create an instance of Azure Digital Twins by using the Azure portal.
+- Create digital models for the production line of a chocolate factory.
+- Validate the digital models by using a validator sample.
+- Create a graph of the models by using an explorer sample.
+- Query the graph by using SQL-like queries.
 
 ## Prerequisites
 

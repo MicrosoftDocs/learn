@@ -1,4 +1,4 @@
-In this unit, you create an instance of a resource in Azure Digital Twins. Then you collect the connection data you need to access the instance.
+In this unit, you create an instance of an Azure Digital Twins resource. Then you collect the connection data you need to access the instance.
 
 ## Create an instance of a resource
 
@@ -24,7 +24,7 @@ In this unit, you create an instance of a resource in Azure Digital Twins. Then 
 
 1. Wait a few moments while the deployment is in progress. When it's ready, select  **Go to resource**. You should see a screen with the title **Get started with Azure Digital Twins**.
 
-The next step is to save some important data used to connect other resources to your instance.
+The next step is to save some important data used to connect other resources to your instance of Azure Digital Twins.
 
 ## Save the connection data to a reference file
 
