@@ -7,13 +7,13 @@ Git lets you make changes fearlessly, because it *always* offers a way to get ba
 In the previous exercise, you updated the **index.html** file to modify the path to the style sheet. You should have added the following statement:
 
 ```html
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="CSS/site.css">
 ```
 
-Suppose you discover that you made an error when you entered the statement. Instead of specifying the folder path as `assets` plural, you entered `asset` singular:
+Suppose you discover that you made an error when you entered the statement. Instead of specifying the folder path as `CSS`, you entered `CS`:
 
 ```html
-<link rel="stylesheet" href="asset/site.css">
+<link rel="stylesheet" href="CS/site.css">
 ```
 
 When you refresh the page in your browser, you notice that your CSS style sheet isn't applied. After you investigate, you realize that you miss-entered the path values.

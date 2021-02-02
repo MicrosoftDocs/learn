@@ -22,7 +22,7 @@ Now let's get some hands-on practice fixing our mistakes!
     CSS
     ```
 
-1. Now, let's recover **index.html**. Use ``git checkout`` to bring **index.html** back:
+1. Now, let's recover **index.html**. Use `git checkout` to bring **index.html** back:
 
     ```bash
     git checkout -- index.html
