@@ -25,7 +25,7 @@ roles:
 products:
 - m365
 - windows
-- mdatp
+- m365-threat-protection
 units:
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment.introduction
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment.create-your-environment
