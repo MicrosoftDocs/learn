@@ -31,57 +31,57 @@ quiz:
       explanation: "Incorrect. You should always check for errors."
   - content: "What's the function that you can use to create an error variable?"
     choices:
-    - content: "errors.New('Employee not found!')"
+    - content: "`errors.New('Employee not found!')`"
       isCorrect: true
       explanation: "Correct. You should create an error variable if you're planning to reuse the error message."
-    - content: "fmt.Errorf('Employee not found!')"
+    - content: "`fmt.Errorf('Employee not found!')`"
       isCorrect: false
-      explanation: "Incorrect. Use errors.New('error message') to create an error variable."
-    - content: "error.New('Employee not found!')"
+      explanation: "Incorrect. Use `errors.New('error message')` to create an error variable."
+    - content: "`error.New('Employee not found!')`"
       isCorrect: false
-      explanation: "Incorrect. Use errors.New('error message') to create an error variable."
-    - content: "log.Error('Employee not found!'')"
+      explanation: "Incorrect. `Use errors.New('error message')` to create an error variable."
+    - content: "`log.Error('Employee not found!')`"
       isCorrect: false
-      explanation: "Incorrect. Use errors.New('error message') to create an error variable."
-  - content: "Which are the functions from the log package?"
+      explanation: "Incorrect. Use `errors.New('error message')` to create an error variable."
+  - content: "Which of the following functions are in the `log` package?"
     choices:
-    - content: "log.Print, log.Error, log.Info"
+    - content: "`log.Print`, `log.Error`, `log.Info`"
       isCorrect: false
-      explanation: "Incorrect, log.Error and log.Info don't exist."
-    - content: "log.Fatal, log.Print, log.Panic"
+      explanation: "Incorrect. `log.Error` and `log.Info` don't exist."
+    - content: "`log.Fatal`, `log.Print`, `log.Panic`"
       isCorrect: true
-      explanation: "Correct. These are functions that exist in the log package."
-    - content: "log.Info, log.Warn, log.Fatal"
+      explanation: "Correct. These functions are in the `log` package."
+    - content: "`log.Info`, `log.Warn`, `log.Fatal`"
       isCorrect: false
-      explanation: "Incorrect, log.Info and log.Warn don't exist."
-    - content: "log.Printf, log.Warning, log.Error"
+      explanation: "Incorrect. `log.Info` and `log.Warn` don't exist."
+    - content: "`log.Printf`, `log.Warning`, `log.Error`"
       isCorrect: false
-      explanation: "Incorrect, log.Warning and log.Error don't exist."
-  - content: "What's the function that you could use to configure logging to a file?"
+      explanation: "Incorrect. `log.Warning` and `log.Error` don't exist."
+  - content: "Which function can you use to configure logging to a file?"
     choices:
-    - content: "log.SetOutputFile(file)"
+    - content: "`log.SetOutputFile(file)`"
       isCorrect: false
-      explanation: "Incorrect. The function to configure the output file is log.SetOutput(file)."
-    - content: "log.SetFilePath(file)"
+      explanation: "Incorrect. You can use `log.SetOutput(file)` to configure logging to a file."
+    - content: "`log.SetFilePath(file)`"
       isCorrect: false
-      explanation: "Incorrect. The function to configure the output file is log.SetOutput(file)."
-    - content: "log.SetPath(file)"
+      explanation: "Incorrect. You can use `log.SetOutput(file)` to configure logging to a file."
+    - content: "`log.SetPath(file)`"
       isCorrect: false
-      explanation: "Incorrect. The function to configure the output file is log.SetOutput(file)."
-    - content: "log.SetOutput(file)"
+      explanation: "Incorrect. You can use `log.SetOutput(file)` to configure logging to a file."
+    - content: "`log.SetOutput(file)`"
       isCorrect: true
-      explanation: "Correct. The function to configure the output file is log.SetOutput(file)."
+      explanation: "Correct. You can use `log.SetOutput(file)` to configure logging to a file."
   - content: "Why would you want to use a logging framework?"
     choices:
     - content: "To configure logging levels, multiple outputs, and global contexts."
       isCorrect: true
-      explanation: "Correct. The standard log package doesn't offer this type of functionality, which you might need as your codebase grows."
+      explanation: "Correct. The standard `log` package doesn't offer this functionality. You might need it as your codebase grows."
     - content: "To make your programs run slower."
       isCorrect: false
-      explanation: "Incorrect. Although this might be true to some extent, it isn't accurate."
+      explanation: "Incorrect. Although this statement might be true to some extent, it isn't accurate."
     - content: "To simply configure structured logging."
       isCorrect: false
-      explanation: "Incorrect. Although you can structure logs, this isn't the primary purpose."
+      explanation: "Incorrect. Although you can structure logs, this isn't the main purpose of logging frameworks."
     - content: "To write less code."
       isCorrect: false
-      explanation: "Incorrect. Although you might end up writing less code, this isn't the primary purpose."    
+      explanation: "Incorrect. Although you might end up writing less code, this isn't the main purpose of logging frameworks."    
