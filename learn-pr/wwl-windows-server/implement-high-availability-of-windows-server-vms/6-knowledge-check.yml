@@ -38,12 +38,12 @@ quiz:
       explanation: "That's incorrect. This isn't required with CredSSP or Kerberos authentication."
   - content: "Which option needs to be chosen to perform VM storage migration from Hyper-V Manager?"
     choices:
-    - content: "**Export**"
+    - content: "Export"
       isCorrect: false
       explanation: "That's incorrect. This option allows you to export VM disks, however, not live migrate VM storage."
-    - content: "**Move**"
+    - content: "Move"
       isCorrect: true
       explanation: "That's correct. You can migrate VM storage from a non-clustered Hyper-V server by using the **Move Wizard** in Hyper-V Manager."
-    - content: "**Enable Replication**"
+    - content: "Enable Replication"
       isCorrect: false
       explanation: "That's incorrect. This option allows you to configure VM replication via Hyper-V Replica."
