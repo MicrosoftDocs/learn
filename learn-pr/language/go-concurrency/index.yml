@@ -12,19 +12,19 @@ title: Learn how concurrency works in Go
 summary: Understand more about concurrency, one of the most unique features in Go.
 abstract:  |
   In this module, you'll learn about:
-  - How concurrency works in Go
-  - The difference between concurrency and parallelism
-  - How communication works in a concurrent program by using channels
-  - How to write a program that runs faster by implementing concurrency
-  - How to write dynamic programs that can use buffers to take advantage of concurrency when one to launch a limited number of concurrent calls
+  - How concurrency works in Go.
+  - The difference between concurrency and parallelism.
+  - How communication works in a concurrent program by using channels.
+  - How to write a program that runs faster by implementing concurrency.
+  - How to write dynamic programs that can use buffers to take advantage of concurrency when you want to launch a limited number of concurrent calls.
 prerequisites: |
-  - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
-  - Be able to create and modify `.go` files
-  - Be able to run Go applications using the terminal prompt
-  - Have knowledge of basic data types like `string`, `int`, and `boolean`
-  - Have knowledge of how to write basic data control flows like `if` and `for` statements
-  - Have knowledge of how to write functions
-  - Have knowledge of how to use libraries like `net/http`
+  - A Go environment that's ready to create applications. Ideally, you should have installed and configured Go locally and installed [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go).
+  - The ability to create and modify `.go` files.
+  - The ability to run Go applications by using the terminal prompt.
+  - Knowledge of basic data types like `string`, `int`, and `boolean`.
+  - Knowledge of how to write basic data control flows like `if` and `for` statements.
+  - Knowledge of how to write functions.
+  - Knowledge of how to use libraries like `net/http`.
 iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner

@@ -94,7 +94,7 @@ Done! It took 1.658436834 seconds!
 
 Nothing out of the ordinary here, but we can do better. Perhaps, checking all sites at the same time? Instead of taking almost two seconds, the program could finish in less than 500ms. Notice that the portion of code we need to run concurrently is the one that makes the HTTP call to the site. In other words, we need to create a goroutine for each API that the program is checking. 
 
-To create a goroutine we need to use the `go` keyword before calling a function, but we don't have a function there. So, let's refactor that code and create a new function, like this:
+To create a goroutine, we need to use the `go` keyword before calling a function, but we don't have a function there. So, let's refactor that code and create a new function, like this:
 
 ```go
 func checkAPI(api string) {
