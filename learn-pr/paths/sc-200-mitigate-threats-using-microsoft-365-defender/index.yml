@@ -22,7 +22,6 @@ roles:
 products:
 - m365-ems
 - m365-threat-protection
-- office-365-atp
 modules:
 - learn-m365.m365-security-threat-define
 - learn.wwl.mitigate-incidents-microsoft-365-defender
