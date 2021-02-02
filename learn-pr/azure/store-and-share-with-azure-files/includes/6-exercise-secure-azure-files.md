@@ -6,7 +6,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Enable secure file transfer
 
-1. Use your local browser to sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. Open your local browser to sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. In the portal menu on the left, select **Storage accounts**.
 
