@@ -1,7 +1,7 @@
 
 In this exercise, you'll download and run the ADT Explorer sample locally, connect it to your Azure ADT instance, and set up your chocolate factory digital twin.
 
-1. Download the [Azure Digital Twins (ADT) explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
+1. Download the [Azure Digital Twins explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
 
 1. Extract all the files.
 
@@ -103,6 +103,10 @@ You should now see all the relationships between the digital twins in the graph 
 :::image type="content" source="../media/explorer-graph-relationships.png" alt-text="Screenshot showing the completed graph in the ADT Explorer sample" lightbox="../media/explorer-graph-relationships.png":::
 
 ## Explore the graph layout options
+
+1. The button to switch graph layouts is grayed out until a query is run. To enable it, run the default query `select * FROM digitaltwins`:
+
+    :::image type="content" source="../media/explorer-run-query.png" alt-text="Screenshot showing the layout of the ADT Explorer sample" lightbox="../media/explorer-run-query.png":::
 
 1. Locate the icon in the graph view that gives a range of layout options, with names such as "Cola" and "Klay":
 

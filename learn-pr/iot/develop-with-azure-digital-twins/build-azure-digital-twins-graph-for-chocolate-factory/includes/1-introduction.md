@@ -26,6 +26,7 @@ To summarize, in this module, you will:
 - Windows OS: PowerShell is built-in
 - Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory Tenant to complete the exercise units
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Node.js](https://nodejs.org/en/download/) version 14
 - [.NET Core 3.1](https://dotnet.microsoft.com/download)
 - [C# VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 
