@@ -8,9 +8,9 @@ Create a user account that will be added to a security group.
 
 2. The User pane now appears. Enter the following values:
 
-    - User name: Utu
+    - User name: Julieta
 
-    - Name: Utu  Linna
+    - Name: Julieta Oliveira
 
 3. Select **Show Password** and then copy it somewhere to reference it later.
 
@@ -34,7 +34,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
    | Group name| SSPRTesters|
    | Group description| Testers of SSPR rollout|
    | Membership type| Assigned|
-   | Members| Utu  Linna|
+   | Members| Julieta Oliveira |
 
 5. Select **Create**.
 
@@ -72,7 +72,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 
    This is to ensure you well be prompted for user authentication.
 
-2. Sign in as **utu@***organization-domain-name***.onmicrosoft.com** with the password that you noted earlier.
+2. Sign in as **julieta@***organization-domain-name***.onmicrosoft.com** with the password that you noted earlier.
 
    Replace the organization-domain-name with your domain name.
 
@@ -103,7 +103,7 @@ Now let's test whether the user can reset their password.
 
    This is to ensure you well be prompted for user authentication.
 
-2. In the **Email, phone, or Skype** box, enter **utu@***organization-domain-name***.onmicrosoft.com** and then select Next.
+2. In the **Email, phone, or Skype** box, enter **julieta@***organization-domain-name***.onmicrosoft.com** and then select Next.
 
    Replace the organization-domain-name with your domain name.
 
@@ -125,7 +125,7 @@ Now let's test whether the user can reset their password.
 
 8. When complete, select **Finish**.
 
-9. Sign in as **Utu** with the new password you created.
+9. Sign in as **Julieta** with the new password you created.
 
 10. Enter your verification code and then verify you can complete the sign in process.
 
