@@ -2,7 +2,7 @@
 uid: learn.languages.rust-memory-management
 metadata:
   title: Rust memory management - ownership, borrowing, and lifetimes
-  description: "Discover one of Rust's most powerful features: the borrow checker."
+  description: "Discover the features that make Rust so unique: ownership and borrowing."
   ms.date: 01/21/2021
   author: meaghanlewis
   ms.author: shanama
