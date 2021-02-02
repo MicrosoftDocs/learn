@@ -23,9 +23,9 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
 
 1. When asked to overwrite the `package.json` file, make sure you select **no**.
 
-The "api" folder in Visual Studio Code will now contain an Azure Functions project along with a new function called "GetProducts".
+    The "api" folder in Visual Studio Code will now contain an Azure Functions project along with a new function called "GetProducts".
 
-1. Replace the code in the "GetProducts/index.ts" file with the following...
+1. Replace the code in the "GetProducts/index.ts" file with the following code.
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from "@azure/functions";

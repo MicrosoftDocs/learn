@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.construct-kql-statements.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does the search operator do?"
+    choices:
+    - content: "Searches across tables and is not column-specific."
+      isCorrect: true
+      explanation: "Correct. The search will search across all columns in tables specified"
+    - content: "Searches only one table at a time."
+      isCorrect: false
+      explanation: "Incorrect. The search operator can accept a list of tables to search."
+    - content: "Searches in columns specified."
+      isCorrect: false
+      explanation: "Incorrect. The search will search across all columns in a table."
+  - content: "What are project operators?"
+    choices:
+    - content: "Project operators filter a table to the subset of rows that satisfy a predicate."
+      isCorrect: false
+      explanation: "Incorrect. The where operator filters a table to the subset of rows that satisfy a predicate."
+    - content: "Project operators create calculated columns and append them to the result set."
+      isCorrect: false
+      explanation: "Incorrect. extend operators create calculated columns and append them to the result set."
+    - content: "Project operators add, remove, or rename columns in a result set."
+      isCorrect: true
+      explanation: "Correct. project operators control what columns to include, add, remove or rename in the result set of a statement."
+  - content: "What is the maximum number of rows a KQL query can return?"
+    choices:
+    - content: "1,000,000"
+      isCorrect: false
+      explanation: "Incorrect. The maximum number of rows a KQL query can return is 10,000."
+    - content: "There is no maximum."
+      isCorrect: false
+      explanation: "Incorrect. The maximum number of rows a KQL query can return is 10,000."
+    - content: "10,000"
+      isCorrect: true
+      explanation: "Correct. The maximum number of rows is 10,000."

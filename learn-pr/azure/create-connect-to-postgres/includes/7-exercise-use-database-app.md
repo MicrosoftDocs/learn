@@ -47,9 +47,9 @@ Let's connect to our database again, and load the CSV data into the database.
     psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
     ```
 
-    Type in your password and select enter.
+    Enter your password, and press <kbd>Enter</kbd>.
 
-2. At the prompt, we'll **connect directly** to the **paymentapp** database by executing the `\c` command:
+2. At the prompt, we'll connect directly to the **paymentapp** database by executing the `\c` command:
 
     ```sql
     \c paymentapp
@@ -92,7 +92,7 @@ Now we have more data to query, we'll deploy our webapp, then connect it to our 
         --name $WEBAPPNAME
     ```
 
-    When the webapp has been deployed, the output will show an *App_url* with the URL of the web site. **Open the URL in a new tab**.
+    When the webapp has been deployed, the output will show an *App_url* with the URL of the web site. Open the URL in a new tab.
 
     > [!NOTE]
     > If you select the URL directly from the Azure Cloud Shell, there may be an extra `"` on the end of the URL, causing the website to not connect. If you remove the `"` from the end of the URL, you will connect to the website.
@@ -115,7 +115,7 @@ Now let's add to the application the code to retrieve user data from the databas
     code DataAccessController.cs
     ```
 
-    This file contains an empty class that's named `DataAccessController`, with the code below:
+    This file contains an empty class that's named `DataAccessController`, with the following code.
 
     ```C#
         using Microsoft.Extensions.Options;
@@ -189,7 +189,6 @@ Now let's add to the application the code to retrieve user data from the databas
 
     > [!NOTE]
     > We are including the connection string in the source code to make this exercise easy and understandable. Best practice, however, is to keep your connection string in a configuration file.
-
 
 7. After the comment `//TODO: Connect to the database`, replace the commented-out `//using ()` statement on line 22 with the following code.
 
@@ -289,7 +288,7 @@ Now let's add to the application the code to retrieve user data from the databas
 
     Later, if your program doesn't properly query the user data, come back to this file and replace the entire contents with the code block above, with your connection string and password, and save.
 
-    Save the file, and close the **Code** editor.
+    Save the file, and close the **Code Editor**.
 
 ## Add code to the web app to display the data
 
@@ -309,7 +308,7 @@ The application can now retrieve the course data. Now, update the app to display
     code Index.cshtml
     ```
 
-    This file contains the display logic for the webpage. Our data is delivered by the `UsersModel` - It will return a list, containing the user information.
+    This file contains the display logic for the webpage. Our data is delivered by the `UsersModel`. It will return a list, containing the user information.
 
     Currently, the page just displays the table headings. The table body (`<tbody>`) is empty.
 
@@ -404,7 +403,7 @@ The application can now retrieve the course data. Now, update the app to display
     </div>
     ```
 
-    Save the file, and close the code editor.
+    Save the file, and close the **Code Editor**.
 
 ## Deploy and test the updated web app
 

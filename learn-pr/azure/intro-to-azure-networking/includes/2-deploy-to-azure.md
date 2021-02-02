@@ -8,11 +8,11 @@ Larger enterprise systems are often composed of multiple inter-connected applica
 
 There are several strategies and patterns employed by software architects and designers to make these complex systems easier to design, build, manage, and maintain. Let's look at a few of them, starting with _loosely coupled architectures_.
 
-### Benefits of Loosely Coupled Architectures
+### Benefits of loosely-coupled architectures
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yHrc]
 
-### Using an N-tier architecture
+### Use an N-tier architecture
 
 An architectural pattern that can be used to build loosely coupled systems is _N-tier_.
 
@@ -47,6 +47,7 @@ Let's break this down.
     ![A pinned location on the Earth representing an Azure region](../media/2-azure-region.png)
   :::column-end:::
     :::column span="3":::
+
 **What's an Azure region?**
 
 A _region_ is one or more Azure data centers within a specific geographic location. East US, West US, and North Europe are examples of regions. In this instance, you see that the application is running in the East US region.
@@ -58,6 +59,7 @@ A _region_ is one or more Azure data centers within a specific geographic locati
     ![Two virtual machines running on a virtual network](../media/2-azure-vnet.png)
   :::column-end:::
     :::column span="3":::
+
 **What's a virtual network?**
 
 A _virtual network_ is a logically isolated network on Azure. Azure virtual networks will be familiar to you if you've set up networks on Hyper-V, VMware, or even on other public clouds. A virtual network allows Azure resources to securely communicate with each other, the internet, and on-premises networks. A virtual network is scoped to a single region; however, multiple virtual networks from different regions can be connected together using virtual network peering. 
@@ -77,6 +79,7 @@ Azure manages the physical hardware for you. You configure virtual networks and 
     ![Two virtual machines with a shared network security group](../media/2-azure-nsg.png)
   :::column-end:::
     :::column span="3":::
+
 **What's a network security group?**
 
 A _network security group_, or NSG, allows or denies inbound network traffic to your Azure resources. Think of a network security group as a cloud-level firewall for your network.
@@ -97,4 +100,4 @@ Each tier can access services only from a lower tier. The VM running in the web 
 
 _Virtual networks_ enable you to group and isolate related systems. You define _network security groups_ to control what traffic can flow through a virtual network.
 
-The configuration you saw here is a good start. But when you deploy your e-commerce site to production in the cloud, you'll likely run into the same problems as you did in your on-premises deployment.    
+The configuration you saw here is a good start. But when you deploy your e-commerce site to production in the cloud, you'll likely run into the same problems as you did in your on-premises deployment.
