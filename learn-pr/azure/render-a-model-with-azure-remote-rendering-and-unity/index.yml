@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.render-a-model-with-azure-remote-rendering
+metadata:
+  title: Render a Model with Azure Remote Rendering
+  description: TBD
+  ms.date: Render a Model with Azure Remote Rendering
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Render a Model with Azure Remote Rendering
+summary: >
+  TBD
+abstract: | 
+  By the end of this module, you'll be able to:
+  - Create a Remote Rendering session
+  - Render a 3D model 
+  - Use a cut plane to reveal the inside of meshes 
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - Unity Hub with Unity 2019.4.X installed
+  - Familiarity with [setting up a Unity project for Windows Mixed Reality](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity)
+  - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
+  - Basic familiarity with C# and Unity scripting
+iconUrl: /learn/achievements/language-translator-mixed-reality.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-remote-rendering
+- windows-mixed-reality
+- hololens
+units:
+- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.1-introduction
+- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.2-what-is-azure-remote-rendering
+- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.3-exercise-create-an-azure-remote-rendering-resource
+- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.4-creating-and-rendering-models
+- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.5-exercise-render-a-model-in-unity
+- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.6-knowledge-check
+- learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.7-summary
+badge:
+  uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
