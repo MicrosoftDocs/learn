@@ -23,7 +23,7 @@ prerequisites: |
   - Familiarity with [setting up a Unity project for Windows Mixed Reality](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity)
   - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
   - Basic familiarity with C# and Unity scripting
-iconUrl: /learn/achievements/language-translator-mixed-reality.svg
+iconUrl: /learn/achievements/learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
@@ -42,4 +42,4 @@ units:
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.6-knowledge-check
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.7-summary
 badge:
-  uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.badge
+  uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.badge
