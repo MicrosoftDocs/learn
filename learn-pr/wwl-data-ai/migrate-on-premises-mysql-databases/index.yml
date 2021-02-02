@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql
 metadata:
   title: Migrate on-premises MySQL databases to Azure Database for MySQL
   description: "Migrate on-premises MySQL databases to Azure Database for MySQL"
-  ms.date: 01/26/2021
+  ms.date: 02/01/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
