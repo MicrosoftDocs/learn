@@ -75,4 +75,4 @@ fn main() {
       |                        ---- immutable borrow later used here
 ```
 
-The main idea in dealing with references is that Rust developers are always choosing between aliasing and mutation, but never both. This might seem harsh at first, but this aspect of the borrow checker prevents Rust code from ever having a race condition.
+The main idea in dealing with references is that Rust developers are always choosing between aliasing and mutation, but never both. This might seem harsh at first, but this aspect of borrowing prevents Rust code from ever having a race condition.
