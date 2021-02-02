@@ -14,7 +14,7 @@ The table below indicates what you should do based on the SIEM tool(s) you are u
 | :--- | :--- | :--- |
 | **Splunk**| Begin migrating to the Azure Monitor Add-On for Splunk.| Use the Azure Monitor Add-On for Splunk.|
 | **IBM QRadar**| Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website.| Use the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website. You can learn more about the integration with Azure.|
-| **ArcSight**| The Azure log integration tool offered collecting Azure logs into JSON files for the purpose of integrating with ArcSight using existing JSON connectors from ArcSight, with JSON to CEF mapping available only for Azure Activity Logs and not for the other types of Azure logs. The ArcSight team is currently working on a new comprehensive solution, which is planned to have its first release with limited coverage in the October 2018 timeframe. Please contact ArcSight for more details. If you are already using the Azure Log Integration tool, you should plan to use the ArcSight connector for Azure when it is available.|  |
+| **ArcSight**| The Azure log integration tool offered collecting Azure logs into JSON files for the purpose of integrating with ArcSight using existing JSON connectors from ArcSight, with JSON to CEF mapping available only for Azure Activity Logs and not for the other types of Azure logs. |  |
 
 ## Integration roadmap
 
