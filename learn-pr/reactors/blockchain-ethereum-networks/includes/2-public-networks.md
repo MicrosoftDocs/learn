@@ -1,8 +1,8 @@
-The [Ethereum](https://ethereum.org/?azure-portal=true) protocol is made up of multiple public networks. Different Ethereum networks can have different properties, uses, functionality, and consensus mechanisms. There are currently four different test networks, called *testnets*, and one production network, called *mainnet*.
+The [Ethereum](https://ethereum.org/?azure-portal=true) protocol is made up of multiple public networks. Different Ethereum networks can have different properties, uses, functionality, and consensus mechanisms. Ethereum currently has four test networks, called *testnets*. It has one production network, called *mainnet*.
 
-## An overview of mainnet
+## Overview of mainnet
 
-[Mainnet](https://ethereum.org/en/glossary/#mainnet), short for "main network" is the one real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
+[*Mainnet*](https://ethereum.org/en/glossary/#mainnet?azure-portal=true), short for "main network," is the one real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
 
 Once deployed, the applications can use the full potential of decentralized blockchain. There's no centralized authority and mainnet is fully decentralized. There might be different types of tokens and applications deployed to mainnnet. Once deployed on the mainnet, transactions are immutable and can't be changed. Each transaction also has real costs associated with it, which requires actual Ether (ETH). All blocks on the Ethereum mainnet can be viewed by using [Etherscan](https://etherscan.io/), which shows the latest mined blocks and transactions. All blocks can be inspected.
 
