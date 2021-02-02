@@ -2,7 +2,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
 ## Create a branch for Bob
 
-1. Return to the "Bob" directory and use the following command to create a branch named "add-cat,", using the popular `checkout -b` option to create the branch and switch to it in a single command:
+1. Return to the "Bob" directory and use the following command to create a branch named `add-cat`,, using the popular `checkout -b` option to create the branch and switch to it in a single command:
 
     ```bash
     cd ../Bob
@@ -32,7 +32,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
     Now save and close the file.
 
-1. You've now made two changes to Bob's "add-cat" branch: added one file and modified another. Use `git status` to double check your changes:
+1. You've now made two changes to Bob's `add-cat` branch: added one file and modified another. Use `git status` to double check your changes:
 
     ```bash
     git status
@@ -45,14 +45,14 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     git commit -a -m "Add picture of Bob's cat"
     ```
 
-1. Bob now does the same action that Alice did earlier. They switch back to the "master" branch and execute a pull to see if anything has changed:
+1. Bob now does the same action that Alice did earlier. They switch back to the `main` branch and execute a pull to see if anything has changed:
 
     ```bash
-    git checkout master
+    git checkout main
     git pull
     ```
 
-1. This time, the output indicates that changes *have* been made to "master" in the shared repo (the result of Alice's push). It also indicates that the change pulled from "master" in the shared repo have been merged with "master" in Bob's repo:
+1. This time, the output indicates that changes *have* been made to the `main` branch in the shared repo (the result of Alice's push). It also indicates that the change pulled from `main` in the shared repo have been merged with `main` in Bob's repo:
 
     ```output
     remote: Counting objects: 4, done.
@@ -60,21 +60,21 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     remote: Total 4 (delta 1), reused 0 (delta 0)
     Unpacking objects: 100% (4/4), done.
     From D:/Labs/Git/Bob/../Shared
-       e81ae09..1d2bfea  master     -> origin/master
+       e81ae09..1d2bfea  main     -> origin/main
     Updating e81ae09..1d2bfea
     Fast-forward
      Assets/site.css | 3 ++-
      1 file changed, 2 insertions(+), 1 deletion(-)
     ```
 
-1. Now Bob merges their branch into "master" so that "master" in their repo will have both theirs *and* Alice's changes. Then, Bob pushes "master" on their computer to "master" in the shared repo:
+1. Now Bob merges their branch into the `main` branch so that `main` in their repo will have both theirs *and* Alice's changes. Then, Bob pushes `main` on their computer to the `main` branch in the shared repo:
 
     ```bash
     git merge add-cat --no-edit
     git push
     ```
 
-Bob didn't use the `--ff-only` option because he knew "master" had changed. A fast-forward-only merge would have failed.
+Bob didn't use the `--ff-only` option because he knew `main` had changed. A fast-forward-only merge would have failed.
 
 ## Sync the repos
 

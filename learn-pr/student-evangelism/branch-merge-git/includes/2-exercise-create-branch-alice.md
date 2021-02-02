@@ -21,6 +21,13 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     git init --bare
     ```
 
+1. Set the name of the default branch for the new repo. To accomplish this task, you can change the `HEAD` branch to point at a different branch, in this case, the `main` branch:
+
+    ```bash
+    git symbolic-ref HEAD refs/heads/main
+    ```
+
+
 ### Clone the shared repo for Alice and Bob
 
 1. Move back up out of this directory, and create directories for Alice and Bob to store their repos:
@@ -89,7 +96,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     </html>
     ```
 
-1. Save and close the file. You can click the ellipse "..." in the right corner of the cloud editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save and close the file. You can click the ellipse (...) in the right corner of the cloud editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
 
 1. Change directories to the **Assets** directory and open **site.css** in the editor:
 
@@ -155,12 +162,12 @@ As a final setup step, we'll add our base website files and push them to the sha
     Writing objects: 100% (12/12), 1.07 KiB | 0 bytes/s, done.
     Total 12 (delta 1), reused 0 (delta 0)
     To ../Shared.git
-     * [new branch]      master -> master
+     * [new branch]      main -> main
     ```
 
 ## Create a branch for Alice
 
-Alice wants to create a _topic branch_ called "add-style" to do her work. Let's assume the role of Alice, and then create the branch and add some code into this branch.
+Alice wants to create a _topic branch_ named `add-style` to do her work. Let's assume the role of Alice, and then create the branch and add some code into this branch.
 
 1. Navigate back to the **Alice** directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
 
@@ -177,10 +184,10 @@ Alice wants to create a _topic branch_ called "add-style" to do her work. Let's 
     remote: Total 8 (delta 0), reused 0 (delta 0)
     Unpacking objects: 100% (8/8), done.
     From /home/shana/Alice/../Shared
-     * [new branch]      master     -> origin/master
+     * [new branch]      main     -> origin/main
     ```
 
-1. Then use the `git branch` command to create a branch named "add-style," and the `git checkout` command to switch to that branch (make it the *current branch*):
+1. Then use the `git branch` command to create a branch named `add-style`, and the `git checkout` command to switch to that branch (make it the *current branch*):
 
     ```bash
     git branch add-style
@@ -199,18 +206,18 @@ Alice wants to create a _topic branch_ called "add-style" to do her work. Let's 
     git commit -a -m "Add style for cat pictures"
     ```
 
-1. At this point, Alice wants to make her style available to everyone else, so she switches back to "master" and does a pull in case anyone else has made changes:
+1. At this point, Alice wants to make her style available to everyone else, so she switches back to `main` and does a pull in case anyone else has made changes:
 
     ```bash
-    git checkout master
+    git checkout main
     git pull
     ```
 
-1. The output says that "master" is up to date (in other words, "master" on Alice's computer matches "master" in the shared repo), so Alice merges the "add-style" branch into "master" using `git merge --ff-only` to perform a fast-forward merge. Then Alice pushes "master" from their repo to the shared repo:
+1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo), so Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a fast-forward merge. Then Alice pushes `main` from their repo to the shared repo:
 
     ```bash
     git merge --ff-only add-style
     git push
     ```
 
-Performing a fast-forward merge because "master" had no changes wasn't strictly necessary in this case because Git would have done it anyway. Still, it's a good habit to get into because an `--ff-only` merge fails if "master" has changed, making you acutely aware that changes have occurred.
+Performing a fast-forward merge because the `main` branch had no changes wasn't strictly necessary in this case because Git would have done it anyway. Still, it's a good habit to get into because an `--ff-only` merge fails if `main` has changed, making you acutely aware that changes have occurred.

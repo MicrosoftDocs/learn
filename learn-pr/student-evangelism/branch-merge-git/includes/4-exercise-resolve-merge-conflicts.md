@@ -7,13 +7,13 @@ Conflicts like this can happen, so you *must* to know how to deal with them. The
 
 Let's begin by creating a branch for Alice and a branch for Bob. They're both updating files in the project repo at the same time. They're not aware of each other's changes because they're making updates in their local branches.
 
-1. Be sure you're in the "Alice" directory. Create a branch named "add-cat" for Alice to work in:
+1. Be sure you're in the "Alice" directory. Create a branch named `add-cat` for Alice to work in:
 
     ```bash
     git checkout -b add-cat
     ```
 
-1. Change to the "Bob" directory and create a branch named "style-cat" for Bob to work in:
+1. Change to the "Bob" directory and create a branch named `style-cat` for Bob to work in:
 
     ```bash
     cd ../Bob
@@ -62,12 +62,12 @@ Start by assuming the role of Alice and make a change to the website home page. 
 
     Save and close the file.
 
-1. Now use the following Git commands to push the changes to the project repo. First, we'll add the commits made in the "Assets" folder. Then we'll switch back to the "master" branch and do a `pull` to make sure nothing has changed. Finally, we'll `merge` the "add-cat" local branch into the "master" branch and then `push` the changes to the repo.
+1. Now use the following Git commands to push the changes to the project repo. First, we'll add the commits made in the "Assets" folder. Then we'll switch back to the `main` branch and do a `pull` to make sure nothing has changed. Finally, we'll `merge` the `add-cat` local branch into the `main` branch and then `push` the changes to the repo.
 
     ```bash
     git add Assets
     git commit -a -m "Add picture of Alice's cat"
-    git checkout master
+    git checkout main
     git pull
     git merge --ff-only add-cat
     git push
@@ -94,11 +94,11 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
 
     Save and close the file.
 
-1. Now use the following Git commands to sync our changes to the project repo like we did for the updates to Alice's repo. Commit the change, switch to the "master" branch, do a `pull`, and then `merge` the style change:
+1. Now use the following Git commands to sync our changes to the project repo like we did for the updates to Alice's repo. Commit the change, switch to the `main` branch, do a `pull`, and then `merge` the style change:
 
     ```bash
     git commit -a -m "Style Bob's cat"
-    git checkout master
+    git checkout main
     git pull
     git merge style-cat
     ```
@@ -118,7 +118,7 @@ The question now is: What's Bob to do?
 ## Resolve the merge conflict
 
 Bob has a few options at this point:
-- Use the `git merge --abort` command to restore the "master" branch to what it was before the attempted merge. Use the `pull` command to get Alice's changes. Then create a new branch, make their changes, and merge their branch into the "master" branch. Last, push their changes.
+- Use the `git merge --abort` command to restore the `main` branch to what it was before the attempted merge. Use the `pull` command to get Alice's changes. Then create a new branch, make their changes, and merge their branch into the `main` branch. Last, push their changes.
 - Use the `git reset --hard` command to get back to where they were before they started the merge.
 - Resolve the conflict manually by using information that Git inserts into the affected files.
 
@@ -128,7 +128,7 @@ Here's what the **index.html** file in Bob's repo looks like now. Notice the spe
 
 :::code language="html" source="../resources/bob-index.html" range="1-18" highlight="11,13,15":::
 
-Let's resolve the merge conflict by editing the **index.html** file. Because this is a quick fix, you'll make the change directly in the "master" branch even though you're still in the "Bob" directory.
+Let's resolve the merge conflict by editing the **index.html** file. Because this is a quick fix, you'll make the change directly in the `main` branch even though you're still in the "Bob" directory.
 
 1. Open the **index.html** file and delete the special formatting lines. Don't remove any other statements. 
 
@@ -159,7 +159,7 @@ Let's resolve the merge conflict by editing the **index.html** file. Because thi
 
     The `git add` command tells Git that the conflict in the **index.html** file has been resolved.
 
-1. Push the changes to the "master" branch on the remote:
+1. Push the changes to the `main` branch on the remote:
 
     ```bash
     git push

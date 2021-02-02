@@ -26,9 +26,9 @@ quiz:
     - content: "A branch can have other branches that extend from its line of development."
       isCorrect: false
       explanation: "This statement is true. The purpose of branches is to be able to isolate some changes from other changes in the same project. Git supports the ability to add as many branches and sub-branches as your project requires."            
-    - content: "The primary branch in a Git repo is called \"master\" and this branch name can never be changed."
+    - content: "The default branch in a Git repo is named \"master\" and this branch name can never be changed."
       isCorrect: true
-      explanation: "Correct! This statement is false. By default, Git names the primary branch \"master,\" but you can rename this branch as you would any other branch." 
+      explanation: "Correct! This statement is false. By default, Git names the default branch \"master,\" but you can rename this branch as you would any other branch." 
   
   - content: 'Which of the following Git commands creates a new branch and then changes your working location to the new branch?'
     choices:
@@ -42,14 +42,14 @@ quiz:
       isCorrect: false
       explanation: "That's not quite right. Review the parameters for the `git branch` command. The command `git switch` is valid, although we didn't review it in this module. You can learn more about the [git switch](https://git-scm.com/docs/git-switch) command in the Git documentation."
 
-  - content: 'Suppose you try to merge changes from your local branch into the project repo, but Git returns a merge conflict error. What command can you use to restore the \"master\" branch to its correct state?'
+  - content: 'Suppose you try to merge changes from your local branch into the project repo, but Git returns a merge conflict error. What command can you use to restore the default (main) branch to its correct state?'
     choices:    
     - content: "`git merge --cancel` <br>"
       isCorrect: false
       explanation: "Incorrect. The flag `cancel` is not a recognized parameter for the `git merge` command."
     - content: "`git merge --abort` <br>"
       isCorrect: true
-      explanation: "Correct! This command restores the \"master\" branch to the state it was in before you tried to merge your changes." 
+      explanation: "Correct! This command restores the default (main) branch to the state it was in before you tried to merge your changes." 
     - content: "`git merge --reset` <br>"
       isCorrect: false
       explanation: "Incorrect. The command `git reset` is valid, but this form isn't correct. The correct form of the command is `git reset --hard`."
