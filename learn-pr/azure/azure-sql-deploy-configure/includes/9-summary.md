@@ -50,4 +50,4 @@ To learn more about the differences between SQL Server Agent in SQL Server and i
 
 #### Load data
 
-For more information on using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, refer to [this documentation page](https://docs.microsoft.com/en-us/azure/data-factory/connector-sql-server). Also, [here's a blog](https://techcommunity.microsoft.com/t5/datacat/turbo-boost-data-loads-from-spark-using-sql-spark-connector/ba-p/305523) detailing how to use Spark to load efficiently into Azure SQL.
+For more information on using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, refer to [this documentation page](https://docs.microsoft.com/azure/data-factory/connector-sql-server). Also, [here's a blog](https://techcommunity.microsoft.com/t5/datacat/turbo-boost-data-loads-from-spark-using-sql-spark-connector/ba-p/305523) detailing how to use Spark to load efficiently into Azure SQL.
