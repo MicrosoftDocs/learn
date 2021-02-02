@@ -13,7 +13,7 @@ You can select what happens when an external user, who was invited to your direc
 4. On the top menu, select **Edit**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the Identity governance settings page with manage the lifecycle of external users highlighted.](../media/manage-lifcycle-of-external-users.png)
+    > ![Screen image displaying the Identity governance settings page with manage the lifecycle of external users highlighted.](../media/manage-lifecycle-of-external-users.png)
 
 5. In the **Manage the lifecycle of external users** section, review the different settings for external users.
 
