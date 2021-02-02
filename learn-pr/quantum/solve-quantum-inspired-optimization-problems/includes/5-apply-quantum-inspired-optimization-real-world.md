@@ -157,7 +157,7 @@ problem = createProblemForMineralWeights(mineralWeights)
 We're ready to submit our problem to Azure using the `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. For more information about available solvers, you can visit the Azure Quantum documentation page. However, solver selection and tuning is beyond the scope of this module.
+> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. For more information about available solvers, you can visit the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
 
 ```python
 from azure.quantum.optimization import ParallelTempering
