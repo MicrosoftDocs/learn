@@ -63,6 +63,9 @@ summary: |
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals video: Describe Azure cost management and service level agreements"
+  url: https://www.microsoft.com/en-us/videoplayer/embed/RE4MhQI
 iconUrl: /learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
 levels:
 - beginner

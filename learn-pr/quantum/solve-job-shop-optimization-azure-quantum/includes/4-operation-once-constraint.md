@@ -141,12 +141,12 @@ If $T$ was larger, you would have more terms ($z$ and so on, for example).
 You can now use this expanded version of the penalty function to build the penalty terms in code. Again, the `weight` argument is included, to be assigned a value later on:
 
 ```python
-    # Reminder of the relevant parameters
-    ## Allowed time (jobs can only be scheduled below this limit)
-    T = 10
+# Reminder of the relevant parameters
+## Allowed time (jobs can only be scheduled below this limit)
+T = 10
 
-    ## Assignment of operations to jobs (operation ID: job ID)
-    ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
+## Assignment of operations to jobs (operation ID: job ID)
+ops_jobs_map = {0: 0, 1: 0, 2: 1, 3: 1, 4: 2, 5: 2}
 
 def operation_once_constraint(ops_jobs_map:dict, T:int, weight:float):
     """
