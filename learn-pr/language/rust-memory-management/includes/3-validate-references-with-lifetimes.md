@@ -49,7 +49,7 @@ fn main() {
 
 Here we can see that the inner `'b` lifetime block is shorter than the outer `'a` block.
 
-At compile time, the borrow checker compares the two lifetimes and sees that `x` has a lifetime of `'a` but that it refers to a value with a lifetime of `'b`. The program fails to compile
+The Rust compiler has a *borrow checker* that compares scopes to determine whether all borrows are valid. At compile time, the borrow checker compares the two lifetimes and sees that `x` has a lifetime of `'a` but that it refers to a value with a lifetime of `'b`. The program fails to compile
 because the subject of the reference *(`y` at lifetime `'b`)* doesn't live as long as the reference *(`x` at lifetime `'a`)*.
 
 ## Annotating lifetimes in functions
