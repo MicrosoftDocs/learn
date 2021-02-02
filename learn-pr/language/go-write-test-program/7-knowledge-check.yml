@@ -26,7 +26,7 @@ quiz:
     - content: "`test.go`"
       isCorrect: false
       explanation: "Incorrect. This file name would not be recognized as a test file."
-    - content: "test_bank.go"
+    - content: "`test_bank.go`"
       isCorrect: false
       explanation: "Incorrect. This file name would not be recognized as a test file."
   - content: "What's the command to run tests in verbose mode?"
