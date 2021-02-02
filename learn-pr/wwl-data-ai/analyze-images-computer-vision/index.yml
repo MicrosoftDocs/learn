@@ -2,8 +2,8 @@
 uid: learn.wwl.analyze-images-computer-vision
 metadata:
   title: Analyze images with the Computer Vision service
-  description: "The Computer Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios."
-  ms.date: 09/13/2020
+  description: "Analyze images with the Computer Vision service"
+  ms.date: 02/02/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

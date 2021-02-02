@@ -3,8 +3,8 @@ uid: learn.wwl.analyze-images-computer-vision.get-started
 title: Get started with image analysis on Azure
 metadata:
   title: Get started with image analysis on Azure
-  description: "Learn how the Computer Vision service enables image analysis on Azure."
-  ms.date: 09/13/2020
+  description: "Get started with image analysis on Azure"
+  ms.date: 02/02/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
