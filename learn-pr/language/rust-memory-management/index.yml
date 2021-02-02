@@ -8,7 +8,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Rust memory management - ownership, borrowing, and lifetimes
+title: Understand how Rust manages memory
 summary: "Discover the features that make Rust so unique: ownership and borrowing."
 abstract:  |
   In this module, you'll learn:
