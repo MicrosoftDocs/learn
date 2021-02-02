@@ -1,5 +1,5 @@
 
-You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q#  in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/).
+You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q#  in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true).
 
 To do so, in this part you learn how to submit a job to Azure Quantum.
 
@@ -7,7 +7,7 @@ To do so, in this part you learn how to submit a job to Azure Quantum.
 
 Azure Quantum uses the quantum extension for the Azure Command-line interface (Azure CLI) to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
 
-1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) (version 2.17.1 or higher).
+1. Ensure you've installed the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest/?azure-portal=true) (version 2.17.1 or higher).
 
 1. Open a command prompt, and then run the following command:
 
@@ -20,7 +20,7 @@ Azure Quantum uses the quantum extension for the Azure Command-line interface (A
 First, you need to create a Quantum Workspace in your Azure subscription and
 select the providers you desire to use, in case you haven't already. Follow these steps:
 
-1. Open the [Azure portal](https://ms.portal.azure.com/) and sign in to your
+1. Open the [Azure portal](https://ms.portal.azure.com/?azure-portal=true) and sign in to your
    account.
 
 1. Select **Create a resource** and then search for **Azure Quantum**. On the
@@ -52,7 +52,7 @@ select the providers you desire to use, in case you haven't already. Follow thes
    > You must be an Owner of the selected resource group to create a
    > new storage account. For more information about how resource groups work in
    > Azure, see [Control and organize Azure resources with Azure Resource
-   > Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/).
+   > Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
 
 1. After completing the information, select the **Providers** tab to add
    providers to your Workspace. A provider gives you access to a quantum
