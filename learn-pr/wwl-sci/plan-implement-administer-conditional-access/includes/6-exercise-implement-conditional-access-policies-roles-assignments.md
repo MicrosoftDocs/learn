@@ -44,8 +44,8 @@ Azure Active Directory Conditional Access is an advanced feature of Azure AD tha
 
 17. Under **Enable policy**, select **On**, and then select **Create**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screen image displaying a new conditional access policy with enable and create highlighted](../media/create-conditional-access-policy.png)
+      > [!div class="mx-imgBorder"]
+      > ![Screen image displaying a new conditional access policy with enable and create highlighted](../media/create-conditional-access-policy.png)
 
 ## Test the conditional access policy
 

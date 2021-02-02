@@ -12,8 +12,8 @@ Based on your organizational requirements, you can customize the Azure AD smart 
 
 5. In the left navigation, select **Password protection**.
 
-> [!div class="mx-imgBorder"]
-> [ ![Screen image displaying the Authentication methods blade and the highlighted selections to browse to Password authentication](../media/browse-password-protection.png) ](../media/browse-password-protection.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [ ![Screen image displaying the Authentication methods blade and the highlighted selections to browse to Password authentication](../media/browse-password-protection.png) ](../media/browse-password-protection.png#lightbox)
 
 6. In the Password protection settings, in the **Lockout duration in seconds** box, set the value to 120.
 
