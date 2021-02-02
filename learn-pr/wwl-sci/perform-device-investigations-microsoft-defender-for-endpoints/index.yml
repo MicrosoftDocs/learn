@@ -24,7 +24,7 @@ roles:
 - security-engineer
 products:
 - m365
-- mdatp
+- m365-threat-protection
 units:
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.introduction
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.use-device-inventory-list
