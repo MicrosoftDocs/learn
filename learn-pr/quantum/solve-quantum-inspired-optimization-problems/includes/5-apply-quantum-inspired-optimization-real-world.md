@@ -157,14 +157,14 @@ problem = createProblemForMineralWeights(mineralWeights)
 We're ready to submit our problem to Azure using the `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. For more information about available solvers, you can visit the Azure Quantum documentation page. However, solver selection and tuning is beyond the scope of this module.
+> Here we use the parametrized Quantum Monte Carlo solver as an example of a QIO solver. For more information about available solvers, you can visit the Azure Quantum documentation page. However, solver selection and tuning is beyond the scope of this module.
 
 ```python
-from azure.quantum.optimization import ParallelTempering
+from azure.quantum.optimization import QuantumMonteCarlo
 import time
 
 # Instantiate a solver to solve the problem.
-solver = ParallelTempering(workspace, timeout=100)
+solver = QuantumMonteCarlo(workspace, sweeps = 2, trotter_number = 10, restarts = 72, seed = 22, beta_start = 0.1, transverse_field_start = 10, transverse_field_stop = 0.1)
 
 # Optimize the problem
 print('Submitting problem...')
@@ -176,8 +176,7 @@ print(f'Result in {timeElapsed} seconds: ', result)
 
 ```output
 Submitting problem...
-.......
-Result in 35.41556143760681 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -2052.0, 'parameters': {'all_betas': [0.00020408163265306123, 0.0010031845282727856, 0.004931258069052868, 0.024240112818991428, 0.00020408163265306123, 0.00041416312947479666, 0.0008405023793001501, 0.0017057149691356173, 0.0034615768230851457, 0.007024921700835206, 0.014256371424073268, 0.028931870679351317, 0.058714319100389226, 0.00020408163265306123, 0.0003216601955060876, 0.000506979878727771, 0.0007990687098552142, 0.0012594401274306443, 0.001985047612326009, 0.003128702935041415, 0.0049312580690528685, 0.007772328229454337, 0.012250238227336452, 0.019308028713685834, 0.030432059025318557, 0.04796503207311015, 0.07559936381105262, 0.00020408163265306123, 0.0002853639172320586, 0.0003990195697643234, 0.0005579423586529702, 0.000780161423569038, 0.0010908866075247, 0.0015253684103382742, 0.0021328970135012235, 0.0029823940494438134, 0.004170231478526455, 0.0058311645933360684, 0.008153619454858395, 0.011401069057563778, 0.015941923261808107, 0.022291323383991948, 0.031169582869598398, 0.043583903904173556, 0.06094264037716683, 0.08521506986401543, 0.00020408163265306123, 0.0002661133962019146, 0.0003470000642267741, 0.0004524726913109797, 0.0005900043184095882, 0.0007693394594342792, 0.0010031845282727856, 0.001308108124995844, 0.0017057149691356171, 0.002224176656606702, 0.002900227698828882, 0.0037817682692016645, 0.004931258069052867, 0.006430141778288393, 0.0083846196467327, 0.010933172089261346, 0.01425637142407326, 0.018589675944162696, 0.02424011281899142, 0.031608031858238926, 0.04121547145476594, 0.05374314651596505, 0.0700786790855087, 0.09137948893466513], 'replicas': 70, 'sweeps': 600}}
+..Result in 9.753058433532715 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': 1, '2': -1, '3': -1, '4': 1, '5': -1, '6': -1, '7': -1, '8': -1, '9': 1}, 'cost': -2052.0}
 ```
 
 Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the function below to print a summary of what the solution means:
@@ -206,20 +205,20 @@ printResultSummary(result)
 ```
 
 ```output
-Chunk 0 with weight 1 was placed on Container A
-Chunk 1 with weight 5 was placed on Container B
-Chunk 2 with weight 9 was placed on Container A
-Chunk 3 with weight 21 was placed on Container A
-Chunk 4 with weight 35 was placed on Container B
-Chunk 5 with weight 5 was placed on Container B
-Chunk 6 with weight 3 was placed on Container B
-Chunk 7 with weight 5 was placed on Container B
-Chunk 8 with weight 10 was placed on Container A
-Chunk 9 with weight 11 was placed on Container A
+Mineral chunk 0 with weight 1 was placed on Container A
+Mineral chunk 1 with weight 5 was placed on Container A
+Mineral chunk 2 with weight 9 was placed on Container B
+Mineral chunk 3 with weight 21 was placed on Container B
+Mineral chunk 4 with weight 35 was placed on Container A
+Mineral chunk 5 with weight 5 was placed on Container B
+Mineral chunk 6 with weight 3 was placed on Container B
+Mineral chunk 7 with weight 5 was placed on Container B
+Mineral chunk 8 with weight 10 was placed on Container B
+Mineral chunk 9 with weight 11 was placed on Container A
 
 Total weights:
-    Container a: 52 tons
-    Container b: 53 tons
+    Container A: 52 tons
+    Container B: 53 tons
 ```
 
 Great! The solver found a partition such that the containers are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution doesn't exist for this problem instance.
@@ -292,18 +291,17 @@ printResultSummary(simplifiedResult)
 
 ```output
 Submitting simplified problem...
-......
-Result in 21.3847393989563 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -1026.0, 'parameters': {'all_betas': [0.00040816326530612246, 0.002006369056545571, 0.009862516138105735, 0.048480225637982856, 0.00040816326530612246, 0.0008283262589495933, 0.0016810047586003002, 0.0034114299382712347, 0.006923153646170291, 0.014049843401670412, 0.028512742848146536, 0.05786374135870263, 0.11742863820077845, 0.00040816326530612246, 0.0006433203910121752, 0.001013959757455542, 0.0015981374197104284, 0.0025188802548612886, 0.003970095224652018, 0.00625740587008283, 0.009862516138105737, 0.015544656458908674, 0.024500476454672904, 0.03861605742737167, 0.060864118050637114, 0.0959300641462203, 0.15119872762210523, 0.00040816326530612246, 0.0005707278344641172, 0.0007980391395286468, 0.0011158847173059405, 0.001560322847138076, 0.0021817732150494, 0.0030507368206765485, 0.004265794027002447, 0.005964788098887627, 0.00834046295705291, 0.011662329186672137, 0.01630723890971679, 0.022802138115127556, 0.03188384652361621, 0.044582646767983895, 0.062339165739196796, 0.08716780780834711, 0.12188528075433366, 0.17043013972803087, 0.00040816326530612246, 0.0005322267924038292, 0.0006940001284535482, 0.0009049453826219594, 0.0011800086368191764, 0.0015386789188685584, 0.002006369056545571, 0.002616216249991688, 0.0034114299382712343, 0.004448353313213404, 0.005800455397657764, 0.007563536538403329, 0.009862516138105733, 0.012860283556576787, 0.0167692392934654, 0.021866344178522693, 0.02851274284814652, 0.03717935188832539, 0.04848022563798284, 0.06321606371647785, 0.08243094290953187, 0.1074862930319301, 0.1401573581710174, 0.18275897786933026], 'replicas': 70, 'sweeps': 600}}
-Chunk 0 with weight 1 was placed on Container A
-Chunk 1 with weight 5 was placed on Container B
-Chunk 2 with weight 9 was placed on Container A
-Chunk 3 with weight 21 was placed on Container A
-Chunk 4 with weight 35 was placed on Container B
-Chunk 5 with weight 5 was placed on Container B
-Chunk 6 with weight 3 was placed on Container B
-Chunk 7 with weight 5 was placed on Container B
-Chunk 8 with weight 10 was placed on Container A
-Chunk 9 with weight 11 was placed on Container A
+..Result in 8.950008630752563 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': -1, '3': -1, '4': 1, '5': -1, '6': -1, '7': 1, '8': -1, '9': 1}, 'cost': -1026.0}
+Mineral chunk 0 with weight 1 was placed on Container A
+Mineral chunk 1 with weight 5 was placed on Container B
+Mineral chunk 2 with weight 9 was placed on Container B
+Mineral chunk 3 with weight 21 was placed on Container B
+Mineral chunk 4 with weight 35 was placed on Container A
+Mineral chunk 5 with weight 5 was placed on Container B
+Mineral chunk 6 with weight 3 was placed on Container B
+Mineral chunk 7 with weight 5 was placed on Container A
+Mineral chunk 8 with weight 10 was placed on Container B
+Mineral chunk 9 with weight 11 was placed on Container A
 
 Total weights:
     Container A: 52 tons
