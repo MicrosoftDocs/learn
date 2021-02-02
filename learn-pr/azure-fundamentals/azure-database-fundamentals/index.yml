@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.azure-database-fundamentals
 metadata:
-  title: Explore Azure database and analytics services
-  description: Learn about the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL Database, Azure SQL Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL, as well as big data and analytics.
+  title: Explore Azure database and analytics services (AZ-900)
+  description: Learn about the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL Database, Azure SQL Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL, as well as big data and analytics. (AZ-900)
   ms.date: 09/14/2020
   author: rmcmurray
   ms.author: robmcm
