@@ -1,4 +1,4 @@
-In this module, you will implement Grover's search algorithm end-to-end - from the oracle definition for the vertex coloring problem to the logic of dealing with the randomized nature of the algorithm.
+In this module, you'll finally implement Grover's search algorithm end-to-end - from the oracle definition for the graph coloring problem to the logic of dealing with the randomized nature of the algorithm. 
 
 > [!NOTE]
 > Out of necessity, the overall code in this example is rather long, as it includes not only the generic Grover's algorithm implementation but also the problem-specific oracle implementation. 
@@ -7,7 +7,7 @@ In this module, you will implement Grover's search algorithm end-to-end - from t
 
 ## Generic quantum search implementation
 
-Here is the Q# code that implements the core of Grover's algorithm.
+Here's the Q# code that implements the core of Grover's algorithm.
 
 :::code language="qsharp" source="code/6-program-1.qs":::
 
@@ -32,9 +32,12 @@ Instead, the operation takes a qubit array as one of the inputs, and the code th
 
 ## Let's solve the graph coloring problem!
 
-Now we are ready to put together everything we've learned so far and solve the graph coloring problem we introduced in the second unit!
 
-Here is the full code.
+Now you're ready to put together everything you've learned so far and calculate the minimum number of different bandwidths we need to assign to space stations. 
+
+The number of bandwidths will vary according to the number of stations and how close they are to each other. Recall that this problem is an instance of the graph coloring problem. Here color stands for a specific bandwidth. We strongly recommend that you start solving a smaller version of the problem and consider only five space stations connected as they are in the graph in unit 2. 
+
+Here's the full code.
 
 :::code language="qsharp" source="code/6-program-2.qs":::
 
@@ -44,13 +47,13 @@ This leaves us only the last operation, which defines the problem we're solving,
 
 * Note the definition of variables `markingOracle` and `phaseOracle` - the two variants of implementing our problem as a quantum operation. 
   Both variables use _partial application_, that is, fixing several parameters of an operation to produce another operation that takes fewer parameters. 
-  Thus, `MarkValidVertexColoring` operation takes three parameters (the list of the graph edges, the input register, and the target qubit), while the `markingOracle` operation takes only two parameters (the input register and the target qubit), with the list of graph edges fixed to the `edges` variable.
+  So the `MarkValidVertexColoring` operation takes three parameters (the list of the graph edges, the input register, and the target qubit), while the `markingOracle` operation takes only two parameters (the input register and the target qubit), with the list of graph edges fixed to the `edges` variable.
 
 * As we've seen in the previous unit, the optimal number of iterations depends on both the search space size and the number of solutions. 
 
   The first one is easy to define - any bit string of `2 * nVertices` bits can be interpreted as a potential coloring of `nVertices` vertices, so there are $2^{2\textrm{nVertices}} = 1024$ candidates.
 
-  The number of solutions is generally trickier to estimate, but in our example, the graph structure is easy to analyze. 
+  The number of solutions is trickier to estimate, but in our example, the graph structure is easy to analyze. 
   Vertices 0 - 3 make up a full graph, so they have to be assigned distinct colors in any order - since we have a total of four colors available, there are $4!$ ways to do this. 
   Vertex 4 is connected only to vertex 3, so it can take any color except the color of vertex 3, which gives us three options for each coloring of the other vertices. 
   The total number of solutions is $4! \cdot 3 = 72$.
@@ -58,7 +61,7 @@ This leaves us only the last operation, which defines the problem we're solving,
   Taking this into account, we'll end up running $\frac{\pi}{4} \sqrt{\frac{N}{M}} = 2.96 \approx 3$ iterations.
 
 * The `repeat ... until` loop handles the possibility of getting an incorrect answer on the first run of the algorithm. 
-  The body of the loop runs the algorithm once, measures the qubit register to get the result, and then checks whether it is a solution to the problem. If it is, the variable `correct` is updated to reflect that and the measurement results are converted to a bit array. Otherwise, the algorithm is run again.
+  The body of the loop runs the algorithm once, measures the qubit register to get the result, and then checks whether it's a solution to the problem. If it is, the variable `correct` is updated to reflect that and the measurement results are converted to a bit array. Otherwise, the algorithm is run again.
 
 If you run the algorithm, you'll see output like this:
 
@@ -70,6 +73,7 @@ Vertex 2 - color 1
 Vertex 3 - color 3
 Vertex 4 - color 2
 ```
+For five space stations with these characteristics, we need to assign four different bandwidths based on these results.
 
 ## Watching the amplitudes
 
@@ -79,4 +83,5 @@ Now let's take a look at the behavior of the amplitudes of the basis states at t
 
 Congratulations! You've implemented your first quantum search algorithm and used it to solve a small problem.
 
-In the next unit, we take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
+In the next unit, you consider other examples and you take a look at what kinds of real-world problems are, or are not, a good fit for using Grover's algorithm to solve them.
+
