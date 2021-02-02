@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-identity-governance-privacy-compliance-features
 metadata:
-  title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features"
-  description: Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards.
+  title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features (AZ-900)"
+  description: Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards. Prepare for AZ-900.
   brand: azure
   ms.date: 09/14/2020
   author: tpetchel

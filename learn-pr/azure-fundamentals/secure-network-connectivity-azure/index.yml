@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.secure-network-connectivity-azure
 metadata:
-  title: Secure network connectivity on Azure
-  description: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
+  title: Secure network connectivity on Azure (AZ-900)
+  description: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted. Prepare for AZ-900.
   ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
