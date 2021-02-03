@@ -105,4 +105,4 @@ Great work. You just ran your first Q# program!
 You likely noticed that this basic program doesn't involve any quantum computations. Shortly, you'll use quantum computation to create a random number generator.
 
 > [!NOTE]
-> If you ran into any issues with installation of the QDK, take a look at the [QDK documentaiton](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information. 
+> If you run into any issues with installation of the QDK, take a look at the [QDK documentaiton](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information. 
