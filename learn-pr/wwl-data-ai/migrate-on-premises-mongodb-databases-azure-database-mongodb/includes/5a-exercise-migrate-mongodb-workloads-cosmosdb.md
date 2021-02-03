@@ -339,7 +339,7 @@ You have now created a MongoDB server and database. The next step is to demonstr
 
 1. Set the value for the **Address** key to the IP address of the MongoDB server that you recorded earlier.
 1. Change the port the app uses to **8080**.
-1. Save the file and close the editor using <kbd>CTRL</kbd> + <kbd>s/kbd>, and then <kbd>CTRL</kbd> + <kbd>q</kbd>.
+1. Save the file and close the editor using <kbd>CTRL</kbd> + <kbd>s</kbd>, and then <kbd>CTRL</kbd> + <kbd>q</kbd>.
 1. Build and run the application:
 
     ```bash
@@ -387,7 +387,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
     |---|---|
     | Database ID | Select **Create new**, and then type **DeviceData** |
     | Provision database throughput | **selected** |
-    | Throughput | **1000** |
+    | Throughput | **10000** |
     | Collection ID | **Temperatures** |
     | Storage capacity | **Unlimited** |
     | Shard key | **deviceID** |
@@ -419,7 +419,7 @@ The next step is to take the MongoDB database and transfer it to Cosmos DB.
 
 1. Select **Next: Networking**.
 1. On the **Networking** page, select **databasevnet/default**,  then select **Review + create**.
-1. Select **Create**, and wait for the service to be deployed before continuing. This operation will take a few minutes.
+1. Select **Create**, and wait for the service to be deployed before continuing. This operation can take around 10 minutes.
 
 ### Create and run a new migration project
 
@@ -559,12 +559,12 @@ The final step is to reconfigure your existing MongoDB applications to connect t
             <add key="Database" value="DeviceData" />
             <add key="Collection" value="Temperatures" />
 
-            <!-- Settings for MongoDB -->
-            <!--add key="Address" value="nn.nn.nn.nn" />
+            <!-- Settings for MongoDB 
+            <add key="Address" value="nn.nn.nn.nn" />
             <add key="Port" value="27017" />
             <add key="Username" value="deviceadmin" />
-            <add key="Password" value="Pa55w.rd" /-->
-            <!-- End of settings for MongoDB -->
+            <add key="Password" value="Pa55w.rd" />
+            End of settings for MongoDB -->
 
             <!-- Settings for CosmosDB Mongo API -->
             <add key="Address" value="mongodbnnn.documents.azure.com"/>
@@ -622,9 +622,24 @@ The final step is to reconfigure your existing MongoDB applications to connect t
     ```
 
 1. At the **Enter Device Number** prompt, enter a device number between 0 and 99. The application should run exactly as before, except this time it is using the data held in the Cosmos DB database.
+
+## Improve query performance in Cosmos DB
+
+Cosmos DB allows you to add more indexes to improve query performance. As we are aggregating over deviceID adding that field as an index will speed up your queries.
+
+1. Switch back to the Azure portal.
+1. On the left, select **Data Explorer**.
+1. In the **Data Explorer** pane, expand the **DeviceData** database, expand the **Temperatures** collection, and then select **Settings**.
+
+    ![Screenshot showing adding a Cosmos DB indexing policy](../media/add-index-policy.png)
+
+1. Select **Indexing policy**.
+1. Under **_id** add a new index, enter **deviceID** for the **Definition**, and select **Single Field** for the **Type**.
+1. Select **Save** to add the new index.
+1. Return to your Cloud Shell to try your query again, and note the improved response in your application.
 1. Test the application with other device numbers. Enter **Q** to finish.
 
-You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured an existing MongoDB application to connect to the Cosmos DB database.
+You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured an existing MongoDB application to connect to the new Cosmos DB database.
 
 ### Clean up the resources you've created
 
@@ -636,4 +651,3 @@ You have successfully migrated a MongoDB database to Cosmos DB, and reconfigured
     ```azurecli
     az group delete --name mongodbrg
     ```
-
