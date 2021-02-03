@@ -57,6 +57,10 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.
+
+> [!NOTE]
+> If you run into problem with VS Code project templates, please install [node.js including npm](https://nodejs.org/en/?azure-portal=true). We are working on removing that dependency. Alternatively, use our [command line templates](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-another-environment?azure-portal=true) to create a Q# project , or use [Visual Studio](https://docs.microsoft.com/en-us/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-visual-studio?azure-portal=true).
+
 1. Select **Standalone console application**.
 1. Select a directory to hold your project, such as your home directory. Enter *QuantumHello* as the project name, then select **Create Project**.
 1. From the window that appears at the bottom, select **Open new project**.
