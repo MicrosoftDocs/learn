@@ -1,4 +1,4 @@
-At the outset of this module, we assumed that you've already written a "Hello World" application by using C#.  If you haven't, then you might want to review this learning path's first module, [Write your first C# code](https://docs.microsoft.com/en-us/learn/modules/csharp-write-first/?azure-portal=true).
+At the outset of this module, we assumed that you've already written a "Hello World" application by using C#.  If you haven't, then you might want to review this learning path's first module, [Write your first C# code](https://docs.microsoft.com/learn/modules/csharp-write-first/?azure-portal=true).
 
 For simplicity, we'll rewrite the "Hello World" application. This time we'll take a .NET perspective on what's happening behind the scenes.
 

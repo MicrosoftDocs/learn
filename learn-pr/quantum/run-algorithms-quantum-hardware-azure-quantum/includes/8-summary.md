@@ -14,4 +14,4 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
 Now you're ready to dive deeper. You can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true) or improve your Q# and quantum computing skills with [the Quantum Katas](/quantum/intro-to-katas?azure-portal=true).
 
-Be sure to [join the quantum community](https://docs.microsoft.com/quantum/overview/understanding-quantum-computing) if you have questions or want to contribute to Microsoft's many open-source projects.
+Be sure to [join the quantum community](https://docs.microsoft.com/quantum/overview/understanding-quantum-computing?azure-portal=true) if you have questions or want to contribute to Microsoft's many open-source projects.

@@ -118,7 +118,7 @@ development. With Azure Quantum, you have access to an ever-growing collection
 of quantum computers to run your own quantum algorithms. 
 
 You can learn about Microsoft's latest efforts to advance quantum computing
-technologies in [our research page](https://www.microsoft.com/research/research-area/quantum-computing/?facet%5Btax%5D%5Bmsr-research-area%5D%5B%5D=243138&sort_by=most-recent&facet%5Btax%5D%5Bmsr-content-type%5D%5B%5D=3).
+technologies in [our research page](https://www.microsoft.com/research/research-area/quantum-computing/?facet%5Btax%5D%5Bmsr-research-area%5D%5B%5D=243138&sort_by=most-recent&facet%5Btax%5D%5Bmsr-content-type%5D%5B%5D=3?azure-portal=true).
 
 ### Azure Quantum for cloud quantum computing
 
