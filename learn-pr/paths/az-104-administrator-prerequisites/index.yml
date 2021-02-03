@@ -29,7 +29,7 @@ products:
 - azure-container-registry
 - azure-storage
 modules:
-- learn.intro-to-governance
+- learn.azure.build-cloud-governance-strategy-azure
 - learn.introduction-to-azure-virtual-machines
 - learn.azure.network-fundamentals
 - learn.azure.network-fundamentals-2
