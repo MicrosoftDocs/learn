@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.protect-against-security-threats-azure
 metadata:
-  title: Protect against security threats on Azure
-  description: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
+  title: Protect against security threats on Azure (AZ-900)
+  description: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter. Prepare for AZ-900.
   ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche

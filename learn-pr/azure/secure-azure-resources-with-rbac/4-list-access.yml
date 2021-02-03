@@ -8,7 +8,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - List access using Azure RBAC and the Azure portal
 labId: 46468
 labModal: true
