@@ -29,7 +29,7 @@ products:
 units:
 - learn.languages.rust-memory-management.0-introduction
 - learn.languages.rust-memory-management.1-what-is-ownership
-- learn.languages.rust-memory-management.2-learn-about-borrow-checker
+- learn.languages.rust-memory-management.2-learn-about-borrowing
 - learn.languages.rust-memory-management.3-validate-references-with-lifetimes
 - learn.languages.rust-memory-management.4-exercise-lifetimes
 - learn.languages.rust-memory-management.5-knowledge-check
