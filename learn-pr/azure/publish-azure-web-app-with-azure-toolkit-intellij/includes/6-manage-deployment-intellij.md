@@ -1,14 +1,14 @@
 The Azure Toolkit for IntelliJ provides several tools in the Azure Explorer that you can use to manage, configure, and redeploy web apps to an Azure App Service. If your deployment requirements are more complex, you can customize the steps when using the **Deploy to Azure** wizard, which provides a flexible application deployment system.
 
-In this unit, you'll learn how to use these features to start and stop a web app, redeploy it, switch deployment slots, set properties for a web app, and delete it.
+In this unit, you'll learn how to use these features to manage, troubleshoot, switch deployment slots and set properties for a web app.
 
 ## How to manage and troubleshoot web app on Azure
 
 There are powerful tools provided to troubleshoot the app deployed from your IDE, including:
-    - Log streaming
-    - Remote file explorer
-    - One click SSH to the app
-    - Profiling on the fly
+- Log streaming
+- Remote file explorer
+- One click SSH to the app
+- Profiling on the fly
 
 Using these tools from Azure Explorer is straightforward. Open the **Azure Explorer** window, right-click the web app in the **Web Apps** folder, and you will see some useful actions in the menu.
 
