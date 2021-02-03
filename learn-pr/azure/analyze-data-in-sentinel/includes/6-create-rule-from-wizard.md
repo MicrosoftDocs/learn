@@ -36,7 +36,7 @@ AzureActivity
 ```
 
 > [!Tip]
-> For assistance with the query language, refer to the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](https://docs.microsoft.com/en-us/azure/kusto/query/)
+> For assistance with the query language, refer to the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](https://docs.microsoft.com/azure/kusto/query/)
 
 ### Map entities
 

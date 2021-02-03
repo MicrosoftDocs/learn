@@ -23,7 +23,7 @@ roles:
 - security-engineer
 products:
 - m365
-- mdatp
+- m365-threat-protection
 units:
 - learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.introduction
 - learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.configure-advanced-features
