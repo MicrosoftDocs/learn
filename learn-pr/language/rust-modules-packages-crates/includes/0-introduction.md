@@ -1,4 +1,4 @@
-Up until now, we've written programs as single-file modules. But as our programs grow, we can do better and organize our code into multiple modules, files, and even packages.
+Up until now, we've written programs as single-file modules. But as our programs grow, we can organize our code into multiple modules, files, and even packages.
 
 ## Learning objectives
 
