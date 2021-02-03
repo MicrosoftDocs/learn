@@ -56,7 +56,7 @@ In this exercise, you'll install the DEA on the virtual machine you created earl
 
 ## Install the Database Experimentation Assistant
 
-1. Go to [https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DatabaseExperimentationAssistantV2.6.exe]https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DatabaseExperimentationAssistantV2.6.exe).
+1. Go to [https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DatabaseExperimentationAssistantV2.6.exe](https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DatabaseExperimentationAssistantV2.6.exe).
 1. Select **Download**.
 1. In the pop-up, select **Run**.
 1. On the screen, you'll see **Microsoft Software License Terms**. Read the terms and, if you agree, select **I agree to the license terms and conditions**. Then select **Install**.
