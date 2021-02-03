@@ -87,7 +87,7 @@ You'll notice that each of the five category tiles shows:
 - Their impact level: low, medium, or high.
 
 > [!div class="mx-imgBorder"]
-> [ ![Screenshot of Advisor dashboard showing five recommendation tiles.](../media/azure-advisor-five-categories.png) ](../media/azure-advisor-five-categories.png#ligthbox)
+> [ ![Screenshot of Advisor dashboard showing five recommendation tiles.](../media/azure-advisor-five-categories.png) ](../media/azure-advisor-five-categories.png#lightbox)
 
 After you make your selection, a new page opens showing details about the recommendations for the chosen category. Under a summary of the recommendations, you'll see a table that provides more information, such as:
 
