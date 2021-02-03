@@ -15,7 +15,7 @@ A common task in the web app development cycle involves writing code to close th
 
 Azure Web Application Firewall is an Azure service that provides centralized protection of Azure-hosted web apps. Azure Web Application Firewall protects web apps from common threats such as SQL injection and cross-site scripting.
 
-:::image type="content" source="../media/2-web-application-firewall-description.png" alt-text="Network diagram showing an Azure virtual network that includes a web app and an instance of Azure Web Application Firewall. Bots and threats are blocked from the app, while legitimate requests are allowed.":::
+:::image type="content" source="../media/2-web-application-firewall-description.png" alt-text="Diagram of an Azure virtual network with Azure Web Application Firewall. Bots and threats are blocked from a web app; legitimate requests are allowed.":::
 
 You can deploy Azure Web Application Firewall in minutes. Your web apps immediately get powerful protection from known threats, all without writing a single line of security code.
 
