@@ -5,8 +5,8 @@ metadata:
   title: Identify the product options
   description: Examine each serverless product that's available from Microsoft Azure.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+   author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

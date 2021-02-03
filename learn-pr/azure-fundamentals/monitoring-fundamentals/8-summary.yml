@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Review the Azure service offerings that help IT organizations assess the health of cloud applications and diagnose issues.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+   author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
