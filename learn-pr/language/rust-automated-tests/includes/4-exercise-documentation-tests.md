@@ -1,15 +1,15 @@
-In this exercise, you'll create documentation tests in the code snippet below for the functions `div` and `sub`.
+In this exercise, you'll create documentation tests in the following code snippet for the functions `div` and `sub`.
 
-For the `div` function, write the following doctests:
+For the `div` function, write the following documentation tests:
 
-  1. assert that `10` divided by `2` equals `5`
-  2. assert that `6` divided by `3` equals `2`
-  3. assert that `10` divided by `0` panics
+  1. Assert that `10` divided by `2` equals `5`.
+  2. Assert that `6` divided by `3` equals `2`.
+  3. Assert that `10` divided by `0` panics.
 
-For the `sub` function, write the following doctests:
+For the `sub` function, write the following documentation tests:
 
-  1. assert that `9` subtracted by `2` equals `7`
-  2. assert that `6` subtracted by `9` equals `-3`
+  1. Assert that `9` subtracted by `2` equals `7`.
+  2. Assert that `6` subtracted by `9` equals `-3`.
 
 ```rust
 /// This function divides two numbers.
@@ -60,14 +60,14 @@ pub fn sub(a: i32, b: i32) -> i32 {
 }
 ```
 
-Remember to create the project in your computer first, as documentation tests are only available for library crates. You can run the following commands in your terminal to accomplish this objective:
+Remember to create the project in your computer first because documentation tests are only available for library crates. You can run the following commands in your terminal to accomplish this objective:
 
 ```sh
 $ cargo new --lib doctests_exercise
 $ cd doctests_exercise
 ```
 
-Keep in mind that the name of the crate must prefix the name of the function, as it is already filled in for the first assignment of this exercise.
+The name of the crate must prefix the name of the function because it's already filled in for the first assignment of this exercise.
 
-To find a complete version of this exercise, visit this [Rust Playground
+To find a complete version of this exercise, see this [Rust Playground
 link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e53758e499766ca348ee8d52724d583b&azure-portal=true).

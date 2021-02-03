@@ -16,12 +16,12 @@ quiz:
   questions:
   - content: "What is the expected outcome of a test function tagged with the `#[test]` attribute?"
     choices:
-    - content: "This function should not be executed during tests."
+    - content: "This function shouldn't be executed during tests."
       isCorrect: false
-      explanation: "Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, is not applied to this function."
+      explanation: "Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, isn't applied to this function."
     - content: "This function should panic during tests."
       isCorrect: false
-      explanation: "Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, is not applied to this function."
+      explanation: "Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, isn't applied to this function."
     - content: "This function should execute a test without any panic."
       isCorrect: true
       explanation: "Correct. The function marked with this attribute will run without any panic."
@@ -33,20 +33,20 @@ quiz:
     - content: "This function should panic during tests."
       isCorrect: true
       explanation: "Correct. The `$[should_panic]` attribute indicates a test should generate a panic."
-    - content: "This function should not be executed during tests."
+    - content: "This function shouldn't be executed during tests."
       isCorrect: false
-      explanation: "Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, is not applied to this function."
+      explanation: "Incorrect. The `$[ignore]` attribute, which disables a test function during test execution, isn't applied to this function."
     - content: "This function should execute without any panic."
       isCorrect: false
       explanation: "Incorrect. The `$[should_panic]` attribute indicates a test should generate a panic."
   - content: "What is the expected outcome of a test function tagged with the `#[test]` and `#[ignore]` attributes?"
     choices:
-    - content: "This function should not be executed during tests."
+    - content: "This function shouldn't be executed during tests."
       isCorrect: true
       explanation: "Correct. The `#[ignore]` attribute disables a test function during test execution."
     - content: "This function should panic during tests."
       isCorrect: false
-      explanation: "Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, is not applied to this function."
+      explanation: "Incorrect. The `$[should_panic]` attribute, which indicates a test should generate a panic, isn't applied to this function."
     - content: "This function should execute without any panic."
       isCorrect: false
-      explanation: "Incorrect. This function is marked with The `#[ignore]` attribute, that disables a test function during test execution."         
+      explanation: "Incorrect. This function is marked with the `#[ignore]` attribute, which disables a test function during test execution."
