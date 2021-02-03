@@ -80,7 +80,7 @@ func main() {
 
     _, err = bruce.RemoveCredits(2500)
     if err != nil {
-        fmt.Println("Can't withdraw or overdrwan!", err)
+        fmt.Println("Can't withdraw or overdrawn!", err)
     }
 
     bruce.ChangeName("Mark")

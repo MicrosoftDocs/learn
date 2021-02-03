@@ -1,7 +1,11 @@
-What a ride! As you've noticed, even though Go is not an OOP language, you can write extensible and reusable code. Still, you needed to learn first the Go way for encapsulation, overloading, embedding, and interfaces. A useful feature in Go is extending code from the standard libraries, even if your codebase ends up growing. You might use frameworks, but Go doesn't favor them because, as you can see, you can overwrite a lot of the functionality from the standard libraries.
+What a ride! 
 
-In this module, you learned how methods work and how Go doesn't need to have a `class` object like other programming languages to write reusable and extensible code. You knew already that you can embed methods in a similar way of fields, making it possible to change the behavior of an object or type (even if it's from the standard library).
+As you've noticed in this module, you can write extensible and reusable code even though Go isn't an OOP language. Still, you needed to first learn the Go way to handle encapsulation, overloading, embedding, and interfaces. 
 
-Lastly, you learned how interfaces work in Go by exploring the fundamentals of how to declare and implementing them. And we included a few complex examples like creating a server API where implementing interfaces come very handy.
+A useful feature in Go is extending code from the standard libraries, even if your code base ends up growing. You might use frameworks, but Go doesn't favor them. That's because you can overwrite a lot of the functionality from the standard libraries.
 
-With the knowledge you have at this point, you're ready to write code that's extensible and reusable.
+In this module, you learned how methods work in Go. You learned that Go, unlike other programming languages, doesn't require a `class` object when you're writing reusable and extensible code. You knew already that you can embed methods in a similar way of fields, which makes it possible to change the behavior of an object or type, even if it's from the standard library.
+
+Finally, you learned how interfaces work in Go by exploring the fundamentals of declaring and implementing them. We included a few complex examples such as creating a server API, where implementing interfaces comes in very handy.
+
+With the knowledge you have at this point, you're ready to write code that's reusable and extensible.
