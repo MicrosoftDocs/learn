@@ -14,9 +14,9 @@ Now that you've completed this module, you should be able to:
 
 To find out more about any of the topics covered in this module, please visit these links:
 
-- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is)
-- [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+- [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [What is cloud app security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 - [MCAS and Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/editions-cloud-app-security-o365)
