@@ -26,18 +26,18 @@ quiz:
           explanation: "You're partially right, but this answer isn't the only use case."
         - content: "All of the above."
           isCorrect: true
-          explanation: "Correct. You can use Azure Cache for Redis as a distributed cache, an data store for an HTTP session, and a message broker."
+          explanation: "Correct. You can use Azure Cache for Redis as a distributed cache, a data store for an HTTP session, and a message broker."
     - content: "How does Azure Cache for Redis scale out a web application?"
       choices:
         - content: "It uses IP multicast to find other application nodes and share data among them."
           isCorrect: false
-          explanation: "Incorrect. Some alternate caching solutions use this mechanism, but not Azure Cache for Redis. It doesn't work well in a cloud environment."
+          explanation: "Incorrect. Some alternative caching solutions use this mechanism, but not Azure Cache for Redis. It doesn't work well in a cloud environment."
         - content: "It acts as a central and scalable data store, where all application nodes can store and retrieve cached data."
           isCorrect: true
           explanation: "Correct. All nodes can store and retrieve data at scale by connecting to Azure Cache for Redis."
-        - content: "It sends messages to every application node to invalidate stale data, so they can then retrieve that data from a persistent database."
+        - content: "It sends messages to every application node to invalidate stale data, so the nodes can then retrieve that data from a persistent database."
           isCorrect: false
-          explanation: "Incorrect. Some alternate caching solutions use this mechanism, but not Azure Cache for Redis."
+          explanation: "Incorrect. Some alternative caching solutions use this mechanism, but not Azure Cache for Redis."
         - content: "It stores cached data in a SQL database, so that application nodes can retrieve it easily."
           isCorrect: false
           explanation: "Incorrect. Spring Session can use a SQL database to store its data, but it's an alternative and less effective solution than Azure Cache for Redis."
@@ -46,7 +46,7 @@ quiz:
         - content: "Azure Cache for Redis is a limited version of Redis that focuses only on caching."
           isCorrect: false
           explanation: "Incorrect. Azure Cache for Redis isn't a limited version of Redis."
-        - content: "Azure Cache for Redis is an Azure Cosmos DB database, compatible with Redis at the API layer."
+        - content: "Azure Cache for Redis is an Azure Cosmos DB database that's compatible with Redis at the API layer."
           isCorrect: false
           explanation: "Incorrect. Azure Cache for Redis uses the real Redis software."
         - content: "Azure Cache for Redis is a managed version of Redis that's maintained and operated by Azure."

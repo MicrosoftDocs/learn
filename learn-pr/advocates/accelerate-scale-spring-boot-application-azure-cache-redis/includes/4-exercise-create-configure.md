@@ -1,8 +1,8 @@
-You'll now create a Spring Boot application that'll use Spring Data Redis to store, and retrieve data from Azure Cache for Redis.
+You'll now create a Spring Boot application that will use Spring Data Redis to store and retrieve data from Azure Cache for Redis.
 
-## Create a Spring Boot project using Spring Data Redis
+## Create a Spring Boot project by using Spring Data Redis
 
-To create our Spring Boot project, we'll use [https://start.spring.io/](https://start.spring.io/) with the command line:
+To create our Spring Boot project, we'll use [Spring Initializr](https://start.spring.io/) with the command line:
 
 ```bash
 curl https://start.spring.io/starter.tgz -d dependencies=web,data-redis -d baseDir=spring-redis-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
@@ -10,9 +10,9 @@ curl https://start.spring.io/starter.tgz -d dependencies=web,data-redis -d baseD
 
 > [!NOTE]
 > We use the `Spring Web` and the `Spring Data Redis` components.
-> `Spring Data Redis` uses the [Lettuce](https://github.com/lettuce-io/lettuce-core) Redis driver, and you'll be able to use it for more advanced usage.
+> `Spring Data Redis` uses the [Lettuce](https://github.com/lettuce-io/lettuce-core) Redis driver, and you'll be able to use it for more advanced tasks.
 
-## Add Spring code to manage data using Spring Data Redis
+## Add Spring code to manage data by using Spring Data Redis
 
 Next to the `DemoApplication` class, create a `Todo` domain object:
 
@@ -93,7 +93,7 @@ public interface TodoRepository extends CrudRepository<Todo, String> {
 }
 ```
 
-And finish coding this application by adding a Spring MVC controller called `TodoController`:
+Finish coding this application by adding a Spring MVC controller called `TodoController`:
 
 ```java
 package com.example.demo;
@@ -126,13 +126,13 @@ public class TodoController {
 
 ## Check if your Azure Cache for Redis instance is available
 
-Creating a Redis instance can take some time, and it's time to check if it's now ready to be used. Use the following command to check:
+Creating an Azure Cache for Redis instance can take a while, and it's time to check if it's now ready to be used. Use the following command to check:
 
 ```bash
 az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP
 ```
 
-This command will return a JSON file, containing an attribute named `provisioningState`.
+This command will return a JSON file that contains an attribute named `provisioningState`.
 
 If you have the [jq](https://stedolan.github.io/jq/) utility, you can even do this command in one line:
 
@@ -140,11 +140,11 @@ If you have the [jq](https://stedolan.github.io/jq/) utility, you can even do th
 az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP | jq '.provisioningState'
 ```
 
-When the `provisioningState` has the value **"Succeeded"**, it means your Redis instance is fully available.
+When `provisioningState` has the value `Succeeded`, your Azure Cache for Redis instance is fully available.
 
 ## Configure Spring Boot to connect to Azure Cache for Redis
 
-Once you have successfully created your Redis instance, retrieve its security keys:
+After you've successfully created your Azure Cache for Redis instance, retrieve its security keys:
 
 ```bash
 az redis list-keys \
@@ -152,9 +152,9 @@ az redis list-keys \
     --name $AZ_REDIS_NAME
 ```
 
-Note the `primaryKey` as we'll use it afterwards.
+Note the `primaryKey` value, because we'll use it later.
 
-Now open up the `src/main/resources/application.properties` configuration file, and add the following properties:
+Now open the `src/main/resources/application.properties` configuration file, and add the following properties:
 
 ```properties
 spring.redis.host=<xxxxxxx>.redis.cache.windows.net
@@ -163,20 +163,20 @@ spring.redis.port=6380
 spring.redis.ssl=true
 ```
 
-And replace the two `<xxxxxxx>` parameters with the following values:
+Replace the two `<xxxxxxx>` parameters with the following values:
 
-- The first one is the name of your Redis instance, which you stored in the `$AZ_REDIS_NAME` variable earlier.
-- The second one is the key to your Redis instance: this key is the `primaryKey` we have retrieved earlier.
+- `spring.redis.host`: The name of your Redis instance, which you stored in the `$AZ_REDIS_NAME` variable earlier.
+- `spring.redis.password`: The key to your Redis instance. This key is the `primaryKey` value that we retrieved earlier.
 
 ## Test the application locally
 
-You can now run your Spring Boot application, either by running the executable `DemoApplication` within your IDE, or by running the Spring Boot Maven plugin:
+You can now run your Spring Boot application, either by running the executable `DemoApplication` within your IDE or by running the Spring Boot Maven plug-in:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Once the application is running, you can store some data into Redis:
+After the application is running, you can store some data in Redis:
 
 ```bash
 curl -d '{"description":"a description", "details":"some details"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:8080
