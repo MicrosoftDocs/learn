@@ -1,8 +1,6 @@
-In the previous unit, you learned that the Azure Explorer in the Azure Toolkit for IntelliJ enables you to manage and configure Azure web apps. In this exercise, you'll see how to use Azure Explorer to stop and restart your web app in Azure App Service from within IntelliJ IDEA.
+In the previous unit, you learned that the Azure Explorer in the Azure Toolkit for IntelliJ enables you to manage and configure Azure web apps. In this exercise, you'll see how to use Azure Explorer to stream logs from your web app in Azure App Service within IntelliJ IDEA.
 
 Next, you'll modify the web app by using Azure Explorer to add a pair of properties to the configuration. You'll modify the web app to read the value of these properties and use them in the web app logic. You'll then redeploy the web app and verify that it functions as expected.
-
-Finally, you'll use Azure Explorer to delete the web app and remove it from Azure.
 
 ## Monitor the app with log streaming
 
@@ -94,8 +92,6 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 1. Switch back to the web browser and refresh the display. This time, the page will display the time at one-second intervals, repeated only five times. Notice that you didn't need to redeploy the web app.
 
     :::image type="content" source="../media/7-modified-web-app.png" alt-text="Screenshot of the web browser running the modified version of the web app." loc-scope="third-party":::
-
-1. Close the web browser and return to IntelliJ IDEA.
 
 > [!IMPORTANT]
 >
