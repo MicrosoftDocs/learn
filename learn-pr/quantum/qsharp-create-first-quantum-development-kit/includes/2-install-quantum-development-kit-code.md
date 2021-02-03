@@ -11,7 +11,7 @@ To set up your development environment, you:
 But first, let's take a quick look at what you get with the Quantum Development Kit (QDK).
 
 > [!NOTE]
-> Before you proceed, make sure you have the [.NET Core 3.1 version](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
+> Before you proceed, make sure you have the [.NET Core 3.1 version (both SDK and Core)](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
 
 ## What's the Quantum Development Kit (QDK)?
 
@@ -40,6 +40,7 @@ This step installs the QDK and adds extensions to Visual Studio Code that provid
 
 > [!NOTE]
 > If you already have an older version of the QDK, we recommend that you [update to the latest version](/quantum/install-guide/update?azure-portal=true).
+> After installing the QDK extension, restart Visual Studio Code to continue the next steps.
 
 ## Verify the installation
 

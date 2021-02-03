@@ -35,7 +35,7 @@ You can see that it really doesn't matter what kind of food the quiz taker choos
 
 With [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) and the power of Python, and inspired by the [WONDER WOMAN 1984](https://www.wonderwomanfilm.com/?azure-portal=true) film, you're going to make your own "Which WONDER WOMAN 1984 character are you most like?" quiz. 
 
-If you haven't already, set up your local developer environment by following the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
+If you haven't already, set up your local developer environment by following the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
 ## Learning objectives
 

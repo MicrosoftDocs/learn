@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-general-security-network-security-features
 metadata:
-  title: "Azure Fundamentals part 4: Describe general security and network security features"
-  description: Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted.
+  title: "Azure Fundamentals part 4: Describe general security and network security features (AZ-900)"
+  description: Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted. Prepare for AZ-900.
   brand: azure
   ms.date: 09/14/2020
   author: tpetchel
@@ -59,7 +59,7 @@ prerequisites: |
   - An understanding of cloud computing is helpful, but isn't necessary.
 video:
   title: "Azure Fundamentals video: Describe general security and network security features"
-  url: https://www.microsoft.com/en-us/videoplayer/embed/RE4MhFV
+  url: https://www.microsoft.com/videoplayer/embed/RE4MhFV
 iconUrl: /learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
 levels:
 - beginner
