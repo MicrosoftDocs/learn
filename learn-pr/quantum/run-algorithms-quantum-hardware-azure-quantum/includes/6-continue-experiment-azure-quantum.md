@@ -6,7 +6,7 @@ Keep in mind that current quantum computers offer a very limited number of qubit
 
 Quantum computers are a fantastic platform to continue the scientific validation of quantum theories. The widely available access to controllable quantum devices empowers researchers and enthusiasts to run scientific tests without the need of access to restricted expensive laboratories.
 
-For example, you can use Q# and Azure Quantum to verify the validity of quantum theory by realizing an empirical observation of the violation of quantum inequalities. A famous example experiments with a Q# implementation is the [CHSH game](https://docs.microsoft.com/samples/microsoft/quantum/validating-quantum-mechanics/).
+For example, you can use Q# and Azure Quantum to verify the validity of quantum theory by realizing an empirical observation of the violation of quantum inequalities. A famous example experiments with a Q# implementation is the [CHSH game](https://docs.microsoft.com/samples/microsoft/quantum/validating-quantum-mechanics/?azure-portal=true).
 
 ## Implement and test early prototypes of quantum algorithms
 
