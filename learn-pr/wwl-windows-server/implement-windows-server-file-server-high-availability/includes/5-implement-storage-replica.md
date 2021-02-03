@@ -53,17 +53,17 @@ To automate implementation of Storage Replica, use the following Windows PowerSh
 
 1. Use the `Test-SRTopology` cmdlet to determine whether the source and destination volumes meet the Storage Replica requirements. You can use the cmdlet in requirements-only mode by specifying the `IgnorePerfTests` parameter first, and if that's successful, rerun the cmdlet in the performance evaluation mode without the `IgnorePerfTests` parameter, as in the following example:
 
-```powershell
-Test-SRTopology -SourceComputerName 'SEA-SVR1.contoso.com' -SourceVolumeName S: -SourceLogVolumeName L: -DestinationComputerName 'SEA-SVR2.contoso.com' -DestinationVolumeName S: -DestinationLogVolumeName L: -DurationInMinutes 1 -ResultPath C:\Temp
-} -Authentication Credssp -Credential $cred
-```
+    ```powershell
+    Test-SRTopology -SourceComputerName 'SEA-SVR1.contoso.com' -SourceVolumeName S: -SourceLogVolumeName L: -DestinationComputerName 'SEA-SVR2.contoso.com' -DestinationVolumeName S: -DestinationLogVolumeName L: -DurationInMinutes 1 -ResultPath C:\Temp
+    } -Authentication Credssp -Credential $cred
+    ```
 
-2. Review the results of the test stored in the C:\temp folder on SEA-SVR1 and verify that there are no issues that need to be addressed.
+1. Review the results of the test stored in the C:\temp folder on SEA-SVR1 and verify that there are no issues that need to be addressed.
 1. Use the `New-SRPartnership` cmdlet to create a Storage Replica partnership, specifying the source and destination disks, the source and destination logs, the source and destination cluster names, and optionally, the log size:
 
-```powershell
-New-SRPartnership -SourceComputerName 'SEA-SVR1' -SourceRGName 'RG01' -SourceVolumeName S: -SourceLogVolumeName L: -DestinationComputerName 'SEA-SVR2' -DestinationRGName 'RG02' -DestinationVolumeName S: -DestinationLogVolumeName L:
-```
+    ```powershell
+    New-SRPartnership -SourceComputerName 'SEA-SVR1' -SourceRGName 'RG01' -SourceVolumeName S: -SourceLogVolumeName L: -DestinationComputerName 'SEA-SVR2' -DestinationRGName 'RG02' -DestinationVolumeName S: -DestinationLogVolumeName L:
+    ```
 
 ## Demonstration
 

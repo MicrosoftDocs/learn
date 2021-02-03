@@ -4,7 +4,7 @@ To accommodate a wide range of high availability scenarios, clustering technolog
 
 CSV is a general-purpose clustered file system (referred to as CSVFS) that enables cluster nodes to simultaneously read from and write to the same set of NT file system (NTFS) or Resilient File System (ReFs) volumes. CSV maps the volumes hosted on disks connected to cluster nodes to the C:\ClusterStorage\ directory on each cluster node. This approach provides a single namespace, with all CSV content available via the same name and path on any node in a cluster.
 
-:::image type="content" source="../media/m30-csv-architecture1.png" alt-text="The correlation between the storage pool, CSVs, and C:\ClusterStorage\ file system directories." border="false":::
+:::image type="content" source="../media/m30-csv-architecture-1.png" alt-text="The correlation between the storage pool, CSVs, and C:\ClusterStorage\ file system directories." border="false":::
 
 ### CSV capabilities
 

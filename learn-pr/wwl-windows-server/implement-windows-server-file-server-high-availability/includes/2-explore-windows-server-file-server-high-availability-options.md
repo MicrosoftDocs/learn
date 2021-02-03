@@ -32,10 +32,10 @@ Storage Replica supports two types of replication:
 
 When using synchronous replication, a data write must complete successfully on both volumes. If that's not the case, the workload initiating the write must retry the same operation. With synchronous replication, the data on both volumes is identical.
 
-:::image type="content" source="../media/m30-sr-synchronous.png" alt-text="The synchronous replication and volume writes between writing data to the primary volume and the log on the local server and the remote server, including the acknowledgment from the remote server and the application." border="false":::
+:::image type="content" source="../media/m30-server-synchronous.png" alt-text="The synchronous replication and volume writes between writing data to the primary volume and the log on the local server and the remote server, including the acknowledgment from the remote server and the application." border="false":::
 
 Use synchronous replication when it's imperative that you avoid data loss. Synchronous replication requires low network latency to minimize wait for the acknowledgment of the remote write. This requirement limits the distance between the servers or clusters hosting each volume.
 
 When using asynchronous replication, after a data write completes successfully on the primary volume, the workload initiating the write receives a confirmation and can proceed with another I/O operation. The corresponding data writes takes place afterwards on the secondary volume, without affecting the primary volume.
 
-:::image type="content" source="../media/m30-sr-asynchronous.png" alt-text="The asynchronous replication and volume writes between writing data to the primary volume and the log on the local server and the log on the remote server, including the acknowledgment returned from the remote server and the application." border="false":::
+:::image type="content" source="../media/m30-server-asynchronous.png" alt-text="The asynchronous replication and volume writes between writing data to the primary volume and the log on the local server and the log on the remote server, including the acknowledgment returned from the remote server and the application." border="false":::
