@@ -52,7 +52,7 @@ Local UID/GID assignment works fine if you are running everything as a single us
 
 Locating data on a file server or NAS environment allows for remote access of the data. This approach helps to reduce the local disk cost, ensures that the data is up to date for all users, and reduces overall user and group management. 
 
-** DIAGRAM OF NAS **
+![NAS and Directory Services](../media/NAS_and_DS.png)
 
 Centrally locating files may introduce the need for a *directory service* that contains the user and group configuration. Directory services, such as Active Directory or Lightweight Directory Access Protocol (LDAP) allow you to create a user/group mapping that can then be used by all remote systems. You configure your remote machines, and your NAS environment, as clients of the directory service. You may also use Active Directory mappings between your Windows user accounts and a specific UID/GID combination.
 

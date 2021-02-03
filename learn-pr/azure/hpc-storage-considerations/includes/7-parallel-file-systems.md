@@ -14,15 +14,13 @@ Both Distributed NAS and parallel file systems are shared file systems; files ca
 
 They can both be scaled by adding or upgrading storage hardware technologies, adding "front-end" servers to scale client access, or improving network connectivity.
 
-    * PICTURE OF NAS AND PFS *
+![NAS vs PFS](../media/nas_vs_pfs.png)
 
 ### Parallel I/O ###
 
 Parallel file systems break files up into discrete blocks or stripes and distributes these across multiple storage servers. While there are distributed file systems that stripe data, the difference is that parallel file systems then expose stripes directly to clients, via communication with the hosting storage servers themselves. This allows for significant parallel I/O over a standard distributed NAS system. NFS clients running with the most common scale-out NAS environments must access a file via a single server. This causes issues when the number of *concurrent requests* grow beyond what that server can handle. Further, parallel file systems approach to parallel access and striping makes them a great fit for workloads where the need to is access very large files across large numbers of concurrent clients.
 
 Two major parallel file systems are IBM's GPFS (known as Spectrum Scale) and Lustre (which is open source with some commercial implementations). These systems achieve parallel I/O differently, with GPFS leveraging servers known as Network Storage Devices (NSDs) that connect to a high-performance Storage Area Network (SAN), which means GPFS servers have raw disk I/O as their backing storage.
-
-     * picture of lustre *
 
 In both cases however, parallel file systems can scale by adding more storage servers, which in turn offer more parallel I/O to clients. It also means that total client count can be significant, ranging into the tens of thousands.
 
