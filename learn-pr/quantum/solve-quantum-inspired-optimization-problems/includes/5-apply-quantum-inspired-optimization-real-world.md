@@ -154,7 +154,7 @@ problem = createProblemForMineralWeights(mineralWeights)
 
 ### Submit to Azure Quantum
 
-We're ready to submit our problem to Azure using the `ParallelTempering` solver:
+We're ready to submit our problem to Azure using the `QuantumMonteCarlo` solver:
 
 > [!NOTE]
 > Here we use the parametrized Quantum Monte Carlo solver as an example of a QIO solver. For more information about available solvers, you can visit the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
