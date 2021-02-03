@@ -24,7 +24,7 @@ To explore your Azure resources, you must first sign into Azure. By signing in, 
 
 1. In **IntelliJ IDEA**, in the **Select Subscriptions** dialog, select the **Concierge Subscription**. This is a subscription created specifically for the sandbox.
 
-    ![Azure Sign In button](../media/3-select-subscription.png)
+    ![Select Azure Subscription](../media/3-select-subscription.png)
 
 The **Azure Explorer** now displays objects in your Azure subscription. You can explore the different types of objects, such as storage accounts.
 
@@ -36,7 +36,7 @@ Now, you can use the **Deploy to Azure** wizard to create a new app in Azure App
 
 1. In the **Deploy to Azure** dialog, Click the **+** button for **Web App**.
 
-    :::image type="content" source="../media/5-deploy-to-azure-dialog.png" alt-text="Create WebApp dialog." loc-scope="other":::
+    :::image type="content" source="../media/5-deploy-to-azure-dialog.png" alt-text="Deploy WebApp dialog." loc-scope="other":::
 
 1. In the **Create Web App** dialog, click **More Settings**, Select **Resource Group** and select *<rgn>[sandbox resource group name]</rgn>*, and then select **OK**:
 
