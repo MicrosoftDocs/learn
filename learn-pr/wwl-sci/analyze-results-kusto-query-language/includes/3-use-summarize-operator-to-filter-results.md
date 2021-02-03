@@ -6,9 +6,7 @@ The following statement will return the most current row from the SecurityEvent 
 
 ```kusto
 SecurityEvent 
-
 | where Computer == "SQL12.NA.contosohotels.com"
-
 | summarize arg_max(TimeGenerated,*) by Computer
 
 ```
@@ -19,9 +17,7 @@ In this statement, the oldest SecurityEvent for the computer SQL12.NA.contosohot
 
 ```kusto
 SecurityEvent 
-
 | where Computer == "SQL12.NA.contosohotels.com"
-
 | summarize arg_min(TimeGenerated,*) by Computer
 
 ```
@@ -36,17 +32,13 @@ Run each Query separately to see the results.
 // Statement 1
 
 SecurityEvent
-
 | summarize arg_max(TimeGenerated, *) by Account
-
 | where EventID == "4624"
 
 // Statement 2
 
 SecurityEvent
-
 | where EventID == "4624"
-
 | summarize arg_max(TimeGenerated, *) by Account
 
 ```

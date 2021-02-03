@@ -16,8 +16,8 @@ One way to deploy your website is to use Azure Static Web Apps.
 
 **Azure Static Web Apps**
 
-- [Azure Static Web Apps on Microsoft Learn](https://docs.microsoft.com/en-us/learn/paths/azure-static-web-apps/)
-- [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/en-us/azure/static-web-apps)
+- [Azure Static Web Apps on Microsoft Learn](https://docs.microsoft.com/learn/paths/azure-static-web-apps/)
+- [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
 
 **Visual Studio Code documentation**
 

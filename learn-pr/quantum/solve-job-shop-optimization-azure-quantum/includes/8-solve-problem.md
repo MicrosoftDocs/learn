@@ -1,6 +1,6 @@
 Next, you will submit the problem to Azure Quantum.
 
-This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum Optimization solvers available (for example, `ParallelTempering`). You can find further information on the various solvers available through the Azure Quantum Optimization service on our docs site.
+This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum Optimization solvers available (for example, `ParallelTempering`). You can find further information on the various solvers available through the Azure Quantum Optimization service on the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page.
 
 The job is run synchronously in this instance, however this could also be submitted asynchronously as shown in the next subsection.
 
