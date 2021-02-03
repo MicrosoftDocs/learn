@@ -1,6 +1,6 @@
 Tailwind Traders needs to stay up to date on the latest security standards for protecting its data. Today, the security team needs to verify whether Azure meets ISO 27001, a commonly used information security standard. Where can the company access this information?
 
-The [Trust Center](https://www.microsoft.com/en-us/trust-center?rtc=1) showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
+The [Trust Center](https://www.microsoft.com/trust-center?rtc=1) showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
 
 :::image type="content" source="../media/4-trust-center.png" alt-text="A screenshot that shows the Trust Center home page.":::
 
@@ -18,7 +18,7 @@ As an optional exercise, let's take a brief look at the Trust Center's entry for
 
 Access to the Trust Center doesn't require an Azure subscription or a Microsoft account.
 
-1. Go to the [Trust Center](https://www.microsoft.com/en-us/trust-center?rtc=1).
+1. Go to the [Trust Center](https://www.microsoft.com/trust-center?rtc=1).
 
 1. Locate the **Additional resources** section on the page. Under **Compliance offerings**, select **Learn more**.
 

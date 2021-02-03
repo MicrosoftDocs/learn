@@ -4,13 +4,13 @@ In this unit, learn about the Azure Digital Twins REST APIs: what they're for an
 
 Some application architectures don't support the Azure Digital Twins SDK. In such cases, you can use the Azure Digital Twins REST APIs to perform both control-plane operations (for example, to create Digital Twins instances) and data-plane operations (for example, ingesting telemetry or modifying Digital Twins instance properties).
 
-For more information, see the [Azure Digital Twins REST APIs documentation](https://docs.microsoft.com/en-us/rest/api/azure-digitaltwins/).
+For more information, see the [Azure Digital Twins REST APIs documentation](https://docs.microsoft.com/rest/api/azure-digitaltwins/).
 
 ## API authentication
 
 Use the OAuth 2.0 client-credentials grant, specified in RFC 6749 and sometimes called "two-legged OAuth", to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often called daemons or service accounts.
 
-For more information on different authentication patterns, see the [Azure Active Directory documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
+For more information on different authentication patterns, see the [Azure Active Directory documentation](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types).
 
 ### Grant admin consent
 
