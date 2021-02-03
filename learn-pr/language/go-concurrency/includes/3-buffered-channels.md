@@ -74,7 +74,7 @@ The reason is that the calls to the `send` function are sequential. You're not c
 
 Channels are deeply connected to goroutines. Without another goroutine receiving data from the channel, the whole program might enter into a block forever. As you've seen, it does happen. 
 
-Let's make something interesting, create a goroutine for the last two calls (the first two fit into the buffer properly), and make a for loop run four times. Here's the code:
+Now let's make something interesting! We'll create a goroutine for the last two calls (the first two fit into the buffer properly), and make a for loop run four times. Here's the code:
 
 ```go
 func main() {
