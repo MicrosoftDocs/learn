@@ -38,10 +38,12 @@ The main steps in the process are:
 1. Configure CSV. Use Failover Cluster Manager to configure CSV.
 1. Create a highly available File Server role by using Failover Cluster Manager or Windows PowerShell.
 
-    Use Failover Cluster Manager to configure a Scale-Out File Server to host an application data share.
+Use Failover Cluster Manager to configure a Scale-Out File Server to host an application data share.
 
-     >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKz]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKz]
 
-    Use Windows PowerShell to configure an existing failover cluster that uses Cluster Shared Volumes as a Scale-Out File Server and configure an additional IP address resource to bring the Scale-Out File Server online.
+
+
+Use Windows PowerShell to configure an existing failover cluster that uses Cluster Shared Volumes as a Scale-Out File Server and configure an additional IP address resource to bring the Scale-Out File Server online.
     
-     >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKB]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKB]
