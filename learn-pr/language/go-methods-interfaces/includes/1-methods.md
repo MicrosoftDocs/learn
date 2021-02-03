@@ -6,7 +6,7 @@ To understand why methods are important in Go, let's start with how you declare 
 
 ## Declare methods
 
-So far, you've used structs only as another custom type you can create in Go. But in this module, you'll learn that, by adding methods, you can add behavior to the structs you create.
+So far, you've used structs only as another custom type you can create in Go. In this module, you'll learn that, by adding methods, you can add behaviors to the structs you create.
 
 The syntax to declare a method is something like this:
 
@@ -16,7 +16,7 @@ func (variable type) MethodName(parameters ...) {
 }
 ```
 
-However, before you can declare a method, you have to create a struct. let's say you want to make a geometry package and, as part of that package, you decide to create a triangle struct called `triangle`. Then, you want to have a method to calculate the perimeter of that triangle. You could represent it in Go like this:
+However, before you can declare a method, you have to create a struct. Let's say you want to make a geometry package and, as part of that package, you decide to create a triangle struct called `triangle`. You then want to use a method to calculate the perimeter of that triangle. You can represent it in Go like this:
 
 ```go
 type triangle struct {
@@ -28,7 +28,7 @@ func (t triangle) perimeter() int {
 }
 ```
 
-Notice that the struct looks like a normal struct. However, the `perimeter()` function has an extra parameter of type `triangle` before the function name. This means that when you use the struct, you can call the function with the dotted notation, like this:
+The struct looks like a normal one, but the `perimeter()` function has an extra parameter of type `triangle` before the function name. This means that when you use the struct, you can call the function with the dotted notation, like this:
 
 ```go
 func main() {
@@ -75,11 +75,11 @@ Perimeter (triangle): 9
 Perimeter (square): 16
 ```
 
-From the two calls to the `perimeter()` function, the compiler determines which function to call based on the receiver type. This helps keep consistency and short names in functions among packages and avoids including the package name as a prefix. We'll talk about why this might be important when we cover interfaces in the next module.
+From the two calls to the `perimeter()` function, the compiler determines which function to call based on the receiver type. This helps keep consistency and short names in functions among packages and avoids including the package name as a prefix. We'll talk about why this might be important when we cover interfaces in the next unit.
 
 ## Pointers in methods
 
-There will be times when a method needs to update a variable, or if the argument is too big, you might want to avoid copying it. Therefore, you need to use pointers to pass the address of a variable. Remember, in a previous module, when we talked about pointers, we said that every time you call a function in Go, Go makes a copy of each argument value to use it.
+There will be times when a method needs to update a variable or, if the argument is too big, you might want to avoid copying it. In these instances, you need to use pointers to pass the address of a variable. In a previous module, when we discussed pointers, we said that every time you call a function in Go, Go makes a copy of each argument value to use it.
 
 The same behavior is present when you need to update the receiver variable in a method. For instance, let's say you want to create a new method to double the triangle size. You need to use a pointer in the receiver variable, like this:
 
@@ -89,7 +89,7 @@ func (t *triangle) doubleSize() {
 }
 ```
 
-Then, you can prove that the method works, like this:
+You can prove that the method works, like this:
 
 ```go
 func main() {
@@ -113,7 +113,7 @@ You don't need a pointer in the receiver variable when the method is merely acce
 
 One crucial aspect of methods is defining them for any type, not just for custom types such as structs. However, you can't define a struct from a type that belongs to another package. Therefore, you can't create a method on a basic type, such as a `string`.
 
-Nonetheless, there's a hack that lets you create a custom type from a basic type and then use it as if it were the basic type. For instance, let's say you want to create a method to transform a string from lowercase letters to uppercase. You could write something like this:
+Nonetheless, you can use a hack to create a custom type from a basic type and then use it as if it were the basic type. For instance, let's say you want to create a method to transform a string from lowercase letters to uppercase. You could write something like this:
 
 ```go
 package main
@@ -147,7 +147,7 @@ Notice how you can continue using the new object as if it were a string by the f
 
 ## Embed methods
 
-When you learned about structs in a previous module, you learned that you can use a property in one struct and embed the same property in another struct. That is, you can reuse properties from one struct to avoid repetition and keep consistency in your code base. A similar idea applies to methods. You can call methods of the embedded struct even if the receiver is different.
+In a previous module, you learned that you can use a property in one struct and embed the same property in another struct. That is, you can reuse properties from one struct to avoid repetition and keep consistency in your code base. A similar idea applies to methods. You can call methods of the embedded struct even if the receiver is different.
 
 For instance, let's say you want to create a new triangle struct with logic to include a color. Additionally, you want to continue using the triangle struct you declared before. So, the colored triangle struct would look like this:
 
@@ -168,14 +168,14 @@ func main() {
 }
 ```
 
-Go ahead and include the preceding changes in your program to see how embedding works. When you run the program with a `main()` like the previous one, you should get the following output:
+Go ahead and include the preceding changes in your program to see how embedding works. When you run the program with a `main()` method like the previous one, you should get the following output:
 
 ```output
 Size: 3
 Perimeter 9
 ```
 
-If you're familiar with any existing OOP language, you might think that the `triangle` struct looks like a base class and `coloredTriangle` is a subclass (like inheritance), but that's not quite correct. What's happening, in reality, is that the Go compiler is promoting the `perimeter()` method by creating a wrapper method, something like this:
+If you're familiar with any existing OOP language, you might think that the `triangle` struct looks like a base class and `coloredTriangle` is a subclass (such as inheritance), but that's not quite correct. What's happening, in reality, is that the Go compiler is promoting the `perimeter()` method by creating a wrapper method, which looks something like this:
 
 ```go
 func (t coloredTriangle) perimeter() int {
@@ -183,7 +183,7 @@ func (t coloredTriangle) perimeter() int {
 }
 ```
 
-Notice that the receiver is `coloredTriangle`, calling the `perimeter()` method from the triangle field. The good news is that you don't need to create the preceding method. You could, but Go does that for you under the hood. We included the preceding example only for learning purposes.
+Notice that the receiver is `coloredTriangle`, which calls the `perimeter()` method from the triangle field. The good news is that you don't need to create the preceding method. You could, but Go does that for you under the hood. We included the preceding example only for learning purposes.
 
 ## Overload methods
 
@@ -237,7 +237,7 @@ As you've noticed, in Go, you can *override* a method and still access the *orig
 
 ## Encapsulation in methods
 
-Encapsulation means that a method is inaccessible to the caller (client) of an object. Usually, in other programming languages, you place the `private` or `public` keywords before the method name. In Go, you need only to use a capitalized identifier to make a method public and an uncapitalized identifier to make a method private.
+Encapsulation means that a method is inaccessible to the caller (client) of an object. Usually, in other programming languages, you place the `private` or `public` keywords before the method name. In Go, you need to use only a capitalized identifier to make a method public and an uncapitalized identifier to make a method private.
 
 As a reminder, encapsulation in Go takes effect only between packages. In other words, you can hide implementation details only to another package, but not to the package itself.
 
