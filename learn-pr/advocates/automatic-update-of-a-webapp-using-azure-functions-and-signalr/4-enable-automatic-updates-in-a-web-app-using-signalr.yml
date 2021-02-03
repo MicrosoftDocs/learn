@@ -8,7 +8,6 @@ metadata:
   ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Enable automatic updates in a web application using SignalR Service
 durationInMinutes: 3
 content: |

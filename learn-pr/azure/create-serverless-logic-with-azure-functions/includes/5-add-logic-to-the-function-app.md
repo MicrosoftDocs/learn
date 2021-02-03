@@ -184,7 +184,7 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
     ![Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.](../media/5-get-function-key.png)
 
-1. At the bottom of the screen, scroll to the left to see your function. At the top-right, under the **Essentials** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
+1. At the bottom of the screen, scroll to the left to see your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
 1. Next, from the left nav bar, select **Functions**, and then select the **HttpTrigger1**.
 

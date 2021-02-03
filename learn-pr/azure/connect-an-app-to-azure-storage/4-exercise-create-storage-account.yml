@@ -9,7 +9,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 interactive: bash
 azureSandbox: true
 durationInMinutes: 5
