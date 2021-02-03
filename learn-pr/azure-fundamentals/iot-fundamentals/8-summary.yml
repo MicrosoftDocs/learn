@@ -5,7 +5,7 @@ metadata:
   title: Summary
   description: Review what you've learned about the IoT services that are available on Azure.
   ms.date: 09/14/2020
-   author: Randall-Knapp
+  author: Randall-Knapp
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

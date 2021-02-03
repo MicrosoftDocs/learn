@@ -5,7 +5,7 @@ metadata:
   title: Analyze the decision criteria
   description: Choose the right technology for your scenario based on criteria that experts use.
   ms.date: 09/14/2020
-   author: Randall-Knapp
+  author: Randall-Knapp
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
