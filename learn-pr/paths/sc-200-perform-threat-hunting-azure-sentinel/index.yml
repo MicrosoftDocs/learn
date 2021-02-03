@@ -22,7 +22,6 @@ roles:
 products:
 - azure
 - azure-sentinel
-- mdatp
 modules:
 - learn.wwl.what-is-threat-hunting-azure-sentinel
 - learn.azure.hunt-threats-sentinel
