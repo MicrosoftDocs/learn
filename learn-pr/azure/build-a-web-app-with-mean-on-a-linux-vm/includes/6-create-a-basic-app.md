@@ -53,7 +53,7 @@ Don't add this code quite yet, but here's an example that loads AngularJS from a
 
 Here, you'll use a basic process. You'll write application code from the Cloud Shell and then use SCP, or secure copy protocol, to copy the files to your VM. Then you'll start the Node.js application and see the results in your browser.
 
-In practice, you would typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a revision control system such as Git and use a continuous integration and continuous delivery, or CI/CD, system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
+In practice, you would typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a rersion control system such as Git and use a continuous integration and continuous delivery, or CI/CD, system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
 
 ## Create the Books web application
 
