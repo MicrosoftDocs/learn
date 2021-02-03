@@ -10,9 +10,7 @@ Run each Query separately to see the results.
 SecurityEvent | summarize by Activity
 
 SecurityEvent
-
 | where EventID == "4688"
-
 | summarize count() by Process, Computer
 
 ```
@@ -39,11 +37,8 @@ The KQL statement will return three columns: <cnt>, <AccountType>, and <Computer
 
 ```kusto
 SecurityEvent
-
 | where TimeGenerated > ago(1h)
-
 | where EventID == 4624
-
 | summarize cnt=count() by AccountType, Computer
 
 ```
@@ -54,7 +49,6 @@ The following example will return a count of unique IP Addresses.
 
 ```kusto
 SecurityEvent
-
 | summarize dcount(IpAddress)
 
 ```
@@ -71,15 +65,10 @@ let timeframe = 1d;
 let threshold = 3;
 
 SigninLogs
-
 | where TimeGenerated >= ago(timeframe)
-
 | where ResultType == "50057"
-
 | where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
-
 | summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
-
 | where applicationCount >= threshold
 
 ```
