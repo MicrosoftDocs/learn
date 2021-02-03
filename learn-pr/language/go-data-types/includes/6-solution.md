@@ -1,6 +1,6 @@
 Here you can find one solution for the previous challenges.
 
-## Fibonacci sequence
+## Write a program to calculate the Fibonacci sequence
 
 The solution to this challenge could be something like this example:
 
@@ -34,7 +34,7 @@ func main() {
 
 ```
 
-## Roman numerals translator
+## Create a Roman numerals translator
 
 The solution to this challenge could be something like this example:
 

@@ -1,8 +1,8 @@
-A map in Go is basically a hash table, which is a collection of key or value pairs items. All keys in a map have to be of the same type, and so do the values. But, you can use different types for keys and values. For instance, keys could be numbers, and the values could be strings. To access a particular item in a map, you reference its key.
+A map in Go is basically a hash table, which is a collection of key and value pairs. All keys in a map have to be of the same type, and so do the values. But, you can use different types for keys and values. For instance, keys could be numbers, and the values could be strings. To access a particular item in a map, you reference its key.
 
 ## Declare and initialize a map
 
-To declare a map, you need to use the `map` keyword. Then you define the key and value type, like this `map[T]T`. For instance, if you want to create a map that contains the age of students, you can use the following code:
+To declare a map, you need to use the `map` keyword. Then you define the key and value type, like this: `map[T]T`. For instance, if you want to create a map that contains the age of students, you can use the following code:
 
 ```go
 package main

@@ -9,7 +9,7 @@ In this module, you'll learn about:
 - The aggregate types in Go: arrays and slices.
 - The differences between arrays and slices.
 - Built-in functions to manipulate data.
-- How to use key or value data structures by using maps.
+- How to use key and value data structures by using maps.
 - How to write complex custom data types with structs.
 
 ## Prerequisites
