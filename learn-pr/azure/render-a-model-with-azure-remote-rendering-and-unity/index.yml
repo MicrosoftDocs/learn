@@ -2,7 +2,7 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 metadata:
   title: Render a Model with Azure Remote Rendering
-  description: TBD
+  description: Create an Azure Remote Rendering session and render a 3D model.
   ms.date: 02/01/2021
   author: aprilspeight
   ms.author: apspeigh
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Render a Model with Azure Remote Rendering
 summary: >
-  TBD
+  Create an Azure Remote Rendering session and render a 3D model.
 abstract: | 
   By the end of this module, you'll be able to:
   - Create a Remote Rendering session
