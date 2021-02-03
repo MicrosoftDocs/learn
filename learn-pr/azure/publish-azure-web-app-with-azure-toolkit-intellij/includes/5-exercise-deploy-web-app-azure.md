@@ -32,20 +32,20 @@ The **Azure Explorer** now displays objects in your Azure subscription. You can 
 
 Now, you can use the **Deploy to Azure** wizard to create a new app in Azure App Service and then deploy your project to it:
 
-1. In IntelliJ IDEA, in the **Project** window, right-click the **AzureTests** project, select **Azure**, and then select **Deploy to Azure Web Apps**.
+1. In IntelliJ IDEA, in the **Project** window, right-click the **webapp** project, select **Azure**, and then select **Deploy to Azure Web Apps**.
 
 1. In the **Deploy to Azure** dialog, Click the **+** button for **Web App**.
 
     :::image type="content" source="../media/5-deploy-to-azure-dialog.png" alt-text="Create WebApp dialog." loc-scope="other":::
 
-1. In the **Create WebApp** dialog, click **More Settings**, Select **Resource Group** and select *<rgn>[sandbox resource group name]</rgn>*, and then select **OK**:
+1. In the **Create Web App** dialog, click **More Settings**, Select **Resource Group** and select *<rgn>[sandbox resource group name]</rgn>*, and then select **OK**:
 
     ![Create WebApp dialog](../media/5-create-webapp-dialog.png)
 
-1. In the **Create WebApp** dialog, click the **+** button for **Web App**, type any name in **Name** and select **Free_F1** for **pricing Tier**.
+1. In the **Create Web App** dialog, click the **+** button for **Plan**, type any name in **Name** and select **Free_F1** for **pricing Tier**.
 
     ![Create App Service Plan](../media/5-create-service-plan.png)
 
-1. In the **Deploy to Azure** dialog, select **Run**. The Azure Toolkit for IntelliJ deploys the web app to Azure and displays the site in your default web browser.
+1. In the **Create Web App** dialog, select **OK**. In the **Deploy to Azure** dialog, select **Run**. The Azure Toolkit for IntelliJ deploys the web app to Azure and displays the site in your default web browser.
 
     :::image type="content" source="../media/5-deployed-webapp.png" alt-text="The deployed web app running in Azure App Service." loc-scope="other":::
