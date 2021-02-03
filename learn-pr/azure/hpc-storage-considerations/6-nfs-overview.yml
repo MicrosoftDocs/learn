@@ -15,3 +15,30 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-nfs-overview.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "If you need to secure files or folders based on a set of groups and users, you may want to consider using"
+    choices:
+    - content: "NFSv2"
+      isCorrect: false
+      explanation: "NFSv2 uses standard POSIX mode bits for security"
+    - content: "NFSv3"
+      isCorrect: false
+      explanation: "NFSv3 uses standard POSIX mode bits for security"
+    - content: "NFSv4"
+      isCorrect: true
+      explanation: "NFSv4 supports the use of Access Control Lists which support greater than one user and group for granular security"
+
+  - content: "If your application requires OS-level enforced file locking, you will want to use"
+    choices:
+    - content: "NFSv2"
+      isCorrect: false
+      explanation: "NFSv2/v3 uses NLM/NSM advisory locking which is not enforced"
+    - content: "NFSv3"
+      isCorrect: false
+      explanation: "NFSv2/v3 uses NLM/NSM advisory locking which is not enforced""
+    - content: "NFSv4"
+      isCorrect: true
+      explanation: "NFSv4 supports active file locking"

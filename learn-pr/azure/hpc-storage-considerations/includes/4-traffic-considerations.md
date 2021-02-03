@@ -28,7 +28,7 @@ HPC workloads may be highly parallel, with many machines requesting the same dat
 
 ### Checkpoints and Snapshots
 
-Workloads may often be **checkpointed** -- the state of the application and its data are copied to durable storage and then the workload continues. Checkpointing is used to resume long-running workloads without requiring a complete job restart. Checkpointing may also be used in conjunction with **snapshots**, which are read-only copies of data taken at a point-in-time. Checkpoints can be thought of as application-specific or application-dependent, while snapshots are relevant to the file system level.
+Workloads may often be **checkpointed** -- the state of the application and its data are copied to durable storage and then the workload continues. Checkpointing is used to resume long-running workloads without requiring a complete job restart. Checkpointing may also be used in conjunction with **snapshots**, which are read-only copies of your file system taken at a point-in-time. Checkpoints can be thought of as application-specific or application-dependent, while snapshots are relevant to the file system level.
 
 Both checkpoints and snapshots consume IOPS and storage, and so will impact the overall performance of the file system depending on their frequency and the amount of data involved.
 
