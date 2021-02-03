@@ -16,7 +16,7 @@ Before you can examine your Azure resources with the Azure Explorer, you must cr
 
     ![Select an archetype](../media/3-select-archetype.png)
 
-1. Type **AzureTests** in the **Name** textbox, then expand **webapp**.
+1. Type **webapp** in the **Name** textbox, then click **Next**.
 
 1. To accept the default Maven settings, click **Finish**.
 
