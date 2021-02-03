@@ -15,4 +15,29 @@ azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/4-traffic-considerations.md)]
-
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A read-only copy of your file system taken at a point in time is known as:"
+    choices:
+    - content: "backup"
+      isCorrect: false
+      explanation: "backups are point in time copies of data"
+    - content: "Checkpointing"
+      isCorrect: false
+      explanation: "checkpointing focuses on copying the state of an application and its data"
+    - content: "Snapshot"
+      isCorrect: true
+      explanation: "Snapshots are read-only copies of your file system"
+    - content: "A read-only copy of your file system taken at a point in time is known as:"
+  - content: "the potential maximum file count and size your workload requires is known as the:"  
+    choices:
+    - content: "data"
+      isCorrect: false
+      explanation: "data is a generic term for all of the files and information"
+    - content: "working set"
+      isCorrect: true
+      explanation: "Working set refers to the "the potential maximum file count and size your workload requires"
+    - content: "directory"
+      isCorrect: false
+      explanation: "A directory is a data structure which records file information in a file system"

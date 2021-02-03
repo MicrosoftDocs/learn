@@ -16,25 +16,23 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you need to store profile and order information about your customers. You need to query the data to answer questions like \"who are my top 100 customers?\" and \"how many customers live in a given geographic region?\". True or false: blob storage is a good choice for this data?"
+  - content: "Small block sizes will reduce performance your file sizes are:"
     choices:
-    - content: "True"
+    - content: "Small files"
       isCorrect: false
-      explanation: "Blobs are not appropriate for structured data that needs to be queried frequently. They have higher latency than memory and local disk and don't have the indexing features that make databases efficient at running queries."
-    - content: "False"
+      explanation: "Small block sizes combined with small file sizes will not impair performance"
+    - content: "Large Files"
       isCorrect: true
-      explanation: "Blobs are not appropriate for structured data that needs to be queried frequently. They have higher latency than memory and local disk and don't have the indexing features that make databases efficient at running queries."
+      explanation: "Small block sizes combined with large files results in lower performance due to breaking down large files to fit the smaller block size"
 
-  - content: Blobs provide *unstructured* data storage. What does *unstructured* mean?
+  - content: "If you have a disk that supports 5000 IOPS and your block size is 4K, your total possible throughput is"
     choices:
-    - content: "Blobs can't be organized or named."
+    - content: "9 MB/s"
       isCorrect: false
-      explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
-    - content: "There are no restrictions on the type of data you can store in blobs."
+      explanation: "5000 IOPS * 4K block size = 20 MB/s"
+    - content: "15 MB/s"
+      isCorrect: false
+      explanation: "5000 IOPS * 4K block size = 20 MB/s"
+    - content: ""20 MB/s
       isCorrect: true
-      explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
-    - content: "Blobs can't contain structured data, like JSON or XML."
-      isCorrect: false
-      explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
-      
-
+      explanation: "5000 IOPS * 4K block size = 20 MB/s"

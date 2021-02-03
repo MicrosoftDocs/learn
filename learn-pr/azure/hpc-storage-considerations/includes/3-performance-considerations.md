@@ -82,7 +82,7 @@ The measurements are typically broken down between **Random** and **Sequential**
 
 To do a basic calculation of throughput, multiply the system's IOPS x block size.
 
-For example, if you have a disk that supports 3000 IOPS and your block size is 4 K, your total possible throughput is 12 MB/s.
+For example, if you have a disk that supports 3000 IOPS and your block size is 4K, your total possible throughput is 12 MB/s.
 
 This calculation provides a basic understanding of your file system's general performance possibilities. Actual throughput might be quite different, however. Throughput is affected by a variety of factors, including things like network overhead if doing high rates of small file creates or deletes (as one example).
 
