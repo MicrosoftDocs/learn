@@ -6,40 +6,33 @@ The let statement allows for the creating variables to be used in later statemen
 
 ```kusto
 let timeOffset = 7d;
-
 let discardEventId = 4688;
 
 SecurityEvent
-
 | where TimeGenerated > ago(timeOffset*2) and TimeGenerated < ago(timeOffset)
-
 | where EventID != discardEventId
 
 ```
 
 > [!TIP]
-> "ago()" is a function that will take the current Date and Time and subtract the value provided.
+> "ago()" is a function that will take the current Date and Time and subtract the value provided.
+
 ## Declare dynamic tables or lists
 
 The let statement allows for the creation of dynamics tables or lists.
 
 ```kusto
 let suspiciousAccounts = datatable(account: string) [
-
     @"\administrator", 
-
     @"NT AUTHORITY\SYSTEM“
-
 ];
 
 SecurityEvent | where Account in (suspiciousAccounts)
-
+```
+```kusto
 let LowActivityAccounts =
-
     SecurityEvent 
-
     | summarize cnt = count() by Account 
-
     | where cnt < 10;
 
 LowActivityAccounts | where Account contains "Mal"
