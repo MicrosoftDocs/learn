@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-compliance.2-azure-policy
+title: Define IT compliance with Azure Policy
+metadata:
+  title: Define IT compliance with Azure Policy
+  description: Learn about governance enforcement in Azure.
+  ms.date: 02/28/2020
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-azure-policy.md)]

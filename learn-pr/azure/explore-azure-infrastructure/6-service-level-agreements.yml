@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-infrastructure.6-service-level-agreements
+title: Understand Service-Level Agreements for Azure
+metadata:
+  title: Understand Service-Level Agreements for Azure
+  description: Understand Service-Level Agreements for Azure
+  ms.date: 01/1/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-service-level-agreements.md)]

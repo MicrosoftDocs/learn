@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.predict-costs-and-optimize-spending.3-predict-and-optimize-with-cost-management-and-advisor
+title: Exercise - Predict and optimize with Cost Management and Azure Advisor
+metadata:
+  title: Exercise - Predict and optimize with Cost Management and Azure Advisor 
+  description: In this unit, we'll discuss how to predict and optimize with Cost Management and Azure Advisor
+  ms.date: 03/31/2020
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-predict-and-optimize-with-cost-management-and-advisor.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+
+    - content: "Azure Advisor provides recommendations for _________."
+      choices:
+      - content: "Costs only"
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
+        isCorrect: false
+      - content: "High availability, security, performance, operational excellence, and cost"
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
+        isCorrect: true
+      - content: "High availability, performance, and cost"
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
+        isCorrect: false
+    - content: "Azure Cost Management allows you to _________."
+      choices:
+      - content: "See historical breakdowns of what services you are spending your money on."
+        explanation: "Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
+        isCorrect: true
+      - content: "See estimates of what your services might cost if you make a change."
+        explanation: "To see cost estimates, you use the Azure pricing calculator. Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
+        isCorrect: false

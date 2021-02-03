@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-infrastructure.1-introduction
+title: Introduction
+metadata:
+  title: Introduction to Azure infrastructure, regions, geographies, and SLAs
+  description: Introduction to Azure infrastructure, regions, geographies, and SLAs
+  ms.date: 01/1/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.principles-cloud-computing.5-types-of-cloud-services
+title: Types of cloud services
+metadata:
+  title: Types of cloud services
+  description: Types of cloud services
+  ms.date: 12/20/2018
+  author: patridge 
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-types-of-cloud-services.md)]

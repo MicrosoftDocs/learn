@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-data-in-azure.3-how-azure-storage-meets-your-business-storage-needs
+title: How Azure data storage can meet your business storage needs
+metadata:
+  title: How Azure data storage can meet your business storage needs
+  description: How Azure data storage can meet your business storage needs
+  ms.date: 09/24/2018
+  author: patridge 
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-how-azure-storage-meets-your-business-storage-needs.md)]

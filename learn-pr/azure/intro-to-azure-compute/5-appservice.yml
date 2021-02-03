@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-compute.5-appservice
+title: Explore Azure App Service
+metadata:
+  title: Explore Azure App Service
+  description: Explore Azure App Service
+  ms.date: 10/21/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-appservice.md)]

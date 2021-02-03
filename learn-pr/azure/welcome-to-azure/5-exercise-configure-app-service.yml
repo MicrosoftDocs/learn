@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.welcome-to-azure.5-exercise-configure-app-service
+title: Exercise - Configure an App Service
+metadata:
+  title: Exercise - Configure an App Service
+  description: Explore the configuration options to scale up your app service to give it more compute power and memory.
+  ms.date: 09/06/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-configure-app-service.md)]

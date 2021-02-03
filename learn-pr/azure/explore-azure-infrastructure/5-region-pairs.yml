@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-infrastructure.5-region-pairs
+title: Understand Region Pairs in Azure
+metadata:
+  title: Understand Region Pairs in Azure
+  description: Understand Region Pairs in Azure
+  ms.date: 01/1/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-region-pairs.md)]

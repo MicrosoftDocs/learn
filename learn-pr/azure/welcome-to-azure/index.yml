@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.welcome-to-azure
+metadata:
+  title: Core Cloud Services - Introduction to Azure
+  description: Create your first virtual machine as you discover the power of Azure cloud computing and storage, along with services that help you explore new software paradigms. 
+  ms.date: 09/06/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Core Cloud Services - Introduction to Azure
+summary: Get started with Azure by creating and configuring your first website in the cloud.
+abstract: |
+  In this module, you will:
+  - Learn what Microsoft Azure is and how it relates to cloud computing
+  - Deploy a website using Azure App Service
+  - Learn how to scale up your website to give you more compute power
+  - Use Azure Cloud Shell to interact with your website
+  > [!NOTE]
+  > Azure fundamentals is being updated to a new series of learning paths. Begin the new series with: [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/)
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
+prerequisites: None
+iconUrl: /learn/achievements/welcome-to-azure.svg
+hidden: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-clis
+units:
+- learn.welcome-to-azure.1-introduction
+- learn.welcome-to-azure.2-what-is-azure
+- learn.welcome-to-azure.3-tour-of-azure-services
+- learn.welcome-to-azure.4-exercise-create-website
+- learn.welcome-to-azure.5-exercise-configure-app-service
+- learn.welcome-to-azure.6-exercise-cloud-shell
+- learn.welcome-to-azure.7-knowledge-check
+- learn.welcome-to-azure.8-summary
+badge:
+  uid: learn.welcome-to-azure.badge

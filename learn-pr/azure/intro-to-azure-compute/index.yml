@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.intro-to-compute
+metadata:
+  title: Core Cloud Services - Introduction to Azure compute
+  description: Explore essential Azure concepts to find out how virtual machines, containers, and apps combined with serverless computing services can fortify your business.
+  ms.date: 10/21/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Core Cloud Services - Azure compute options
+summary: Review the Azure compute services and explore how they can solve common business needs.
+abstract:  | 
+  In this module, you will:
+  - Identify Azure compute options
+  - Select compute options that will solve your specific business needs
+  > [!NOTE]
+  > This module has been updated to [Explore Azure compute services](https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.  
+prerequisites: None
+iconUrl: /learn/achievements/intro-to-azure-compute.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- solution-architect
+- administrator
+- security-engineer
+- student
+products:
+- azure
+- azure-virtual-machines
+- azure-app-service
+- azure-container-instances
+- azure-kubernetes-service
+- azure-functions
+- azure-logic-apps
+units:
+- learn.intro-to-compute.1-introduction
+- learn.intro-to-compute.2-essential-azure-compute-concepts
+- learn.intro-to-compute.3-virtual-machines
+- learn.intro-to-compute.4-containers
+- learn.intro-to-compute.5-appservice
+- learn.intro-to-compute.6-serverless-computing
+- learn.intro-to-compute.7-summary
+badge:
+  uid: learn.intro-to-compute.badge

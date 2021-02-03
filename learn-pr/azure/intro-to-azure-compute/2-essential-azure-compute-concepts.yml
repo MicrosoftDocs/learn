@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-compute.2-essential-azure-compute-concepts
+title: Essential Azure compute concepts
+metadata:
+  title: Essential Azure compute concepts
+  description: Essential Azure compute concepts
+  ms.date: 10/21/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-essential-azure-compute-concepts.md)]

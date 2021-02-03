@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-networking.2-deploy-to-azure
+title: Deploy your site to Azure
+metadata:
+  title: Deploy your site to Azure
+  description: See what a basic three-tier application might look like on Azure.
+  ms.date: 09/24/2018
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-deploy-to-azure.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is an Azure _region_?'
+    choices:
+    - content: 'One or more Azure data centers within a specific geographical location.'
+      isCorrect: true
+      explanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
+    - content: 'A way of breaking networks into smaller networks.'
+      isCorrect: false
+      explanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
+    - content: 'Firewall rules which define the flow of traffic in and out of Azure.'
+      isCorrect: false
+      explanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
+      
+  - content: 'Which of the following is true about virtual networks?'
+    choices:
+    - content: 'You configure virtual networks through software.'
+      isCorrect: true
+      explanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'
+    - content: 'A virtual network accepts network traffic on all ports. You configure the firewall through virtual machines.'
+      isCorrect: false
+      explanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'
+    - content: 'Virtual networks are always reachable from the internet.'
+      isCorrect: false
+      explanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'

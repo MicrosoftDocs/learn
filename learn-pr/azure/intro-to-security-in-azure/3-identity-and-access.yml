@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-security.3-identity-and-access
+title: Identity and access
+metadata:
+  title: Identity and access
+  description: In this unit, we'll discuss identities and role-based authorization.
+  ms.date: 12/20/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-identity-and-access.md)]

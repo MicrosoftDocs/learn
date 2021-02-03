@@ -1,0 +1,35 @@
+### YamlMime:ModuleUnit
+uid: learn.predict-costs-and-optimize-spending.2-estimate-costs-with-the-azure-pricing-calculator
+title: Exercise - Estimate costs with the Azure pricing calculator
+metadata:
+  title: Exercise - Estimate costs with the Azure pricing calculator
+  description: In this unit, we'll discuss how to estimate costs with the Azure pricing calculator 
+  ms.date: 03/31/2020
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-estimate-costs-with-the-azure-pricing-calculator.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which tab of the Azure pricing calculator will you use to put together your estimate?"
+    choices:
+    - content: "Estimate"
+      isCorrect: false
+      explanation: "This tab has all of your previously saved estimates."
+    - content: "Products"
+      isCorrect: true
+      explanation: "This tab has all the Azure services listed and is where you'll add or remove services to get your estimate."
+  
+  - content: "True or false: You can share your estimate through an Excel spreadsheet or through a URL."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Clicking *Export* at the bottom of the estimate will export an Excel spreadsheet that you can share, or you can click *Share* to get a URL link that you can share with your team."
+    - content: "False"
+      isCorrect: false
+      explanation: "Clicking *Export* at the bottom of the estimate will export an Excel spreadsheet that you can share, or you can click *Share* to get a URL link that you can share with your team."

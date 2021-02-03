@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.welcome-to-azure.3-tour-of-azure-services
+title: Tour of Azure services
+metadata:
+  title: Tour of Azure services
+  description: Tour of Azure services
+  ms.date: 1/1/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-tour-of-azure-services.md)]

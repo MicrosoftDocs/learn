@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-infrastructure.3-geographies
+title: Understand Geographies in Azure
+metadata:
+  title: Understand Geographies in Azure
+  description: Understand Geographies in Azure
+  ms.date: 01/1/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-geographies.md)]

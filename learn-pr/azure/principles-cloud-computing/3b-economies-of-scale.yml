@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.principles-cloud-computing.3b-economies-of-scale
+title: Economies of scale
+metadata:
+  title: Economies of scale
+  description: Economies of scale
+  ms.date: 12/20/2018
+  author: patridge 
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3b-economies-of-scale.md)]

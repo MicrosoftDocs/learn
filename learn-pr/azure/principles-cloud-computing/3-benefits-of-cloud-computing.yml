@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.principles-cloud-computing.3-benefits-of-cloud-computing
+title: Benefits of cloud computing
+metadata:
+  title: Benefits of cloud computing
+  description: Benefits of cloud computing
+  ms.date: 12/20/2018
+  author: patridge 
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-benefits-of-cloud-computing.md)]
