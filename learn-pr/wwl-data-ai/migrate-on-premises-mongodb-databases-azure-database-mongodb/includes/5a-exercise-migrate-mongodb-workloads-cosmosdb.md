@@ -630,8 +630,9 @@ Cosmos DB allows you to add more indexes to improve query performance. As we are
 1. Switch back to the Azure portal.
 1. On the left, select **Data Explorer**.
 1. In the **Data Explorer** pane, expand the **DeviceData** database, expand the **Temperatures** collection, and then select **Settings**.
-
-    ![Screenshot showing adding a Cosmos DB indexing policy](../media/add-index-policy.png)
+    
+    >[!div class="mx-imgBorder"]
+    >![Screenshot showing adding a Cosmos DB indexing policy.](../media/add-index-policy.png)
 
 1. Select **Indexing policy**.
 1. Under **_id** add a new index, enter **deviceID** for the **Definition**, and select **Single Field** for the **Type**.
