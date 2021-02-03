@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.rust-memory-management.2-learn-about-borrow-checker
+uid: learn.languages.rust-memory-management.2-learn-about-borrowing
 metadata:
   title: Learn about borrowing
   description: Learn about one of Rust's most unique features, how to borrow mutable data.
@@ -11,4 +11,4 @@ metadata:
 title: Learn about borrowing
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-learn-about-borrow-checker.md)]
+  [!include[](includes/2-learn-about-borrowing.md)]
