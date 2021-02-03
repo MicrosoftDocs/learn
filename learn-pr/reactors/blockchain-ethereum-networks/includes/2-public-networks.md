@@ -1,12 +1,12 @@
-The [Ethereum](https://ethereum.org/?azure-portal=true) protocol is made up of multiple public networks. Different Ethereum networks can have different properties, uses, functionality, and consensus mechanisms. Ethereum currently has four test networks, called *testnets*. It has one production network, called *mainnet*.
+The [Ethereum](https://ethereum.org/?azure-portal=true) protocol is made up of multiple public networks. Different Ethereum networks can have different properties, uses, functionality, and consensus mechanisms. Ethereum currently has four test networks, called *testnets*. It has one production network, called the *mainnet*.
 
-## Overview of mainnet
+## Overview of the mainnet
 
-[*Mainnet*](https://ethereum.org/en/glossary/#mainnet?azure-portal=true), short for "main network," is the one real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
+The [*mainnet*](https://ethereum.org/en/glossary/#mainnet?azure-portal=true), short for "main network," is the one real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
 
-Deployed applications can use the full potential of decentralized blockchain. There's no centralized authority. Mainnet is fully decentralized. 
+Deployed applications can use the full potential of decentralized blockchain. There's no centralized authority. The mainnet is fully decentralized. 
 
-Different types of tokens and applications might be deployed to mainnet. After transactions are deployed on the mainnet, they're immutable and can't be changed. 
+Different types of tokens and applications might be deployed to the mainnet. After transactions are deployed on the mainnet, they're immutable and can't be changed. 
 
 Each transaction has real costs. These costs require ether (ETH) cryptocurrency. 
 
@@ -23,7 +23,7 @@ Testnets use either [proof of work (PoW)](https://www.investopedia.com/terms/p/p
 - **PoW**: A mining rig solves a cryptographic hashing problem to mine a new block and decide which transactions are part of that block.
 - **PoA**: Block validators verify their identity on a network to decide which transactions become part of the next block in the chain.
 
- And testnets require *test ether*. Test ether is free. You can access it from *faucets*. You provide faucets with an account address to receive a certain amount of test ether. 
+Testnets require *test ether*. Test ether is free, and you can access it from *faucets*. You provide faucets with an account address to receive a certain amount of test ether. 
 
 Faucets have become the primary way to get test ether for a testnet. The community manages public test networks for the benefit of developers and testing. Faucets protect the testnet from spam attacks because the ether is controlled by trusted parties.
 
@@ -33,12 +33,12 @@ Let's take a look at the [Ethereum testnets](https://ethereum.org/en/developers/
 
 ### Ropsten
 
-[Ropsten](https://ropsten.etherscan.io/?azure-portal=true) is a PoW consensus protocol. It's closest to mainnet in functionality. It's named after a Swedish subway station and has been around since 2016. Some say it has the best reproduction of the conditions on the mainnet. 
+[Ropsten](https://ropsten.etherscan.io/?azure-portal=true) is a PoW consensus protocol. It's closest to the mainnet in functionality. Ropsten is named after a Swedish subway station and has been around since 2016. Some say it has the best reproduction of the conditions on the mainnet. 
 
 More details:
 - Supported clients: 
-  - [Geth](https://geth.ethereum.org/?azure-portal=true) clients 
-  - [OpenEthereum](https://openethereum.github.io/?azure-portal=true) clients
+  - [Geth](https://geth.ethereum.org/?azure-portal=true) 
+  - [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
 - Block time: 30 seconds or less
 - Ropsten-specific links:
   - [Faucet](https://faucet.ropsten.be/?azure-portal=true)
@@ -50,7 +50,7 @@ More details:
 [Kovan](https://kovan-testnet.github.io/website/?azure-portal=true) is a PoA testnet named after a subway station in Singapore. Its ether must be requested from the faucet and is controlled by trusted parties. Because of this property, Kovan is immune to spam attacks.
 
 More details:
-- Supported client: [OpenEthereum](https://openethereum.github.io/?azure-portal=true) clients
+- Supported client: [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
 - Block time: 4 seconds
 - Kovan-specific links:
   - [Faucet](https://faucet.kovan.network/?azure-portal=true)
@@ -63,7 +63,7 @@ More details:
 [Rinkeby](https://www.rinkeby.io/?azure-portal=true) is a PoA testnet started by the Ethereum team in April 2017. It's named after a metro station in Stockholm.
 
 More details:
-- Supported client: [Geth](https://geth.ethereum.org/?azure-portal=true) client
+- Supported client: [Geth](https://geth.ethereum.org/?azure-portal=true)
 - Block time: 15 seconds
 - Rinkeby-specific links:
   - [Faucet](https://faucet.rinkeby.io/?azure-portal=true)
@@ -76,7 +76,10 @@ More details:
 The PoA cross-client testnet [Görli](https://goerli.net/?azure-portal=true) was named after a Berlin subway station. This testnet aims to be widely usable across various clients. It's robust enough to guarantee consistent availability. It began with the Goerli Initiative in 2018.
 
 More details:
-- Supported clients: Most clients including [Geth](https://geth.ethereum.org/?azure-portal=true), [OpenEthereum](https://openethereum.github.io/?azure-portal=true), and [Nethermind](https://nethermind.io/?azure-portal=true)
+- Görli supports most clients, including these options: 
+    - [Geth](https://geth.ethereum.org/?azure-portal=true)
+    - [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
+    - [Nethermind](https://nethermind.io/?azure-portal=true)
 - Block time: 15 seconds on average
 - Görli-specific links:
   - [Faucet](https://faucet.goerli.mudit.blog/?azure-portal=true)
@@ -85,36 +88,42 @@ More details:
   - [GitHub](https://github.com/goerli/testnet/?azure-portal=true)
   - [Website](https://www.goerli.net/?azure-portal=true)
 
-Ropsten is said to be the testnet most similar to mainnet and was historically the first major testnet. Kovan, Goerli, and Rinkeby are stable and have increased usage. Before deploying to mainnet, you're advised to deploy to and test on multiple testnets.
+Ropsten is said to be the testnet most similar to the mainnet. It was the first major testnet. Kovan, Görli, and Rinkeby are stable and have high usage. Before you deploy to the mainnet, deploy to and test on multiple testnets.
 
-## Clients and APIs for deploying to **Testnets** and **Mainnet**
+## Clients and APIs for deploying to testnets and the mainnet
 
-Ethereum is designed to offer different clients, developed by different teams using different programming languages. This variety makes the network stronger and more diverse. The ideal goal is to achieve diversity without any client dominating to reduce any single points of failure.
+Ethereum is designed to offer multiple clients. Clients can be developed by different teams and can use different programming languages. This variety makes the network stronger and more diverse. The goal is to achieve diversity without any client dominating. This design reduces the chances of any single point of failure.
 
 ### Clients
 
-Below is a summary of some common [Ethereum clients](https://ethereum.org/en/developers/docs/nodes-and-clients/#clients):
+Here are some common [Ethereum clients](https://ethereum.org/en/developers/docs/nodes-and-clients/#clients):
 
-[Geth Client](https://geth.ethereum.org/?azure-portal=true)
+- [Geth client](https://geth.ethereum.org/?azure-portal=true)
 
-Go Ethereum (Geth for short) is one of the original implementations of the Ethereum protocol. Currently, it's the most widespread client with the biggest user base and variety of tooling for users and developers. It's written in Go, fully open source, and licensed under the GNU LGPL v3.
+    Go Ethereum (also called *Geth*) is one of the original implementations of the Ethereum protocol. Currently, it's the most widespread client. It has the biggest user base and offers numerous tools for users and developers. 
 
-[OpenEthereum](https://openethereum.github.io/?azure-portal=true)
+    Geth is written in Go. It's fully open source and is licensed under GNU Lesser General Public License (LGPL) version 3.
 
-OpenEthereum's goal is to be the fastest, lightest, and most secure Ethereum client. We're developing OpenEthereum by using the Rust programming language. OpenEthereum is licensed under the GPLv3 and can be used for all your Ethereum needs.
+- [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
 
-[Nethermind](https://nethermind.io/?azure-portal=true)
+    The goal of OpenEthereum is to be the fastest, lightest, and most secure Ethereum client. OpenEthereum is written in  the Rust programming language. It's licensed under GNU General Public License (GPL) version 3. You can use it for all of your Ethereum needs.
 
-Nethermind provides the world's fastest .NET Ethereum Client and P2P Data Marketplace, along with consulting services for anyone looking to build Ethereum blockchain solutions.
+- [Nethermind](https://nethermind.io/?azure-portal=true)
+
+    Nethermind provides the world's fastest .NET Ethereum client and P2P data marketplace. It offers consulting services for developers of Ethereum blockchain solutions.
 
 ### APIs
 
-[Infura](https://infura.io/?azure-portal=true)
+Here are some common Ethereum APIs:
 
-The Infura API suite provides instant access over HTTPS and WebSockets to the Ethereum and IPFS networks. It provides a simple, easy to use interface for connecting to the endpoints of all testnets. Infura supports both **Truffle Suite** and the **VS Code Blockchain Development Kit for Ethereum.**
+- [Infura](https://infura.io/?azure-portal=true)
 
-[MetaMask](https://metamask.io/?azure-portal=true)
+    The Infura API suite provides instant access over HTTPS and WebSockets to the Ethereum and IPFS networks. Use its simple, intuitive interface to connect to the endpoints of all testnets. Infura supports both *Truffle Suite* and the *Visual Studio Code Blockchain development kit for Ethereum*.
 
-When deploying to either a testnet or mainnet, the MetaMask client provides a robust interface and wallet that connects to and interacts with Ethereum blockchains.
+- [MetaMask](https://metamask.io/?azure-portal=true)
 
-Using MetaMask to send ether and tokens on a testnet is straightforward. As we've seen in previous tutorials, the client provides an easy interface to select and use different Ethereum networks. For interacting with development networks, it's simple with MetaMask to connect to Localhost 8545 or Custom RPC to connect with Ganache and Truffle. Similarly, MetaMask has predefined connections to the public testnets and mainnet. If connecting to mainnet, be careful to secure your private key since real ether is being used.
+    When you deploy to either a testnet or the mainnet, the MetaMask client provides a robust interface and wallet that connects to and interacts with Ethereum blockchains.
+
+    Using MetaMask to send ether and tokens on a testnet is straightforward. As you've seen in previous tutorials, the client provides an easy interface to select and use different Ethereum networks. When you need to interact with development networks, MetaMask simplifies connecting to localhost 8545 or custom RPC so you can connect with Ganache and Truffle. Similarly, MetaMask has predefined connections to the public testnets and the mainnet. 
+
+    If you connect to the mainnet, be careful to secure your private key. Real ether is used for this connection.
