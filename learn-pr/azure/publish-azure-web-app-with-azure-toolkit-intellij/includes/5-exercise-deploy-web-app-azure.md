@@ -42,7 +42,7 @@ Now, you can use the **Deploy to Azure** wizard to create a new app in Azure App
 
     ![Create WebApp dialog](../media/5-create-webapp-dialog.png)
 
-1. In the **Create Web App** dialog, click the **+** button for **Plan**, type any name in **Name** and select **Free_F1** for **pricing Tier**.
+1. In the **Create Web App** dialog, click the **+** button for **Plan**, type any name in **Name** and select **Free_F1** for **Pricing Tier**.
 
     ![Create App Service Plan](../media/5-create-service-plan.png)
 
