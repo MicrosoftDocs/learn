@@ -8,7 +8,7 @@ If this is your first time learning about concurrency, we encourage you to spend
 
 Typically, the biggest problem in writing concurrent programs is sharing data between processes. Go takes a different approach from other programming languages with communication, because Go passes data back and forth through channels. This means that only one activity (goroutine) has access to the data, and there's no race condition by design. As you learn about goroutines and channels in this module, you'll better understand Go's concurrency approach.
 
-Go's approach can be summarized in the following slogan: *"Do not communicate by sharing memory; instead, share memory by communicating."* You can learn more about it in [the post from the Go blog about sharing memory by communicating](https://blog.golang.org/codelab-share#:~:text=Hoare's%20Communicating%20Sequential%20Processes.),data%20at%20a%20given%20time.), but we'll continue talking about this in the following sections.
+Go's approach can be summarized in the following slogan: *"Do not communicate by sharing memory; instead, share memory by communicating."* You can learn more about it in [the post from the Go blog about sharing memory by communicating](https://blog.golang.org/codelab-share#:~:text=Hoare's%20Communicating%20Sequential%20Processes.), but we'll continue talking about this in the following sections.
 
 As we said before, Go includes low-level concurrency primitives as well. But we'll cover only the idiomatic way of Go for concurrency in this module.
 
