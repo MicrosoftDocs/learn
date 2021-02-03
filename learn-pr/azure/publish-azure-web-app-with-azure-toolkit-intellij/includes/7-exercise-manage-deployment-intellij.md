@@ -4,25 +4,19 @@ Next, you'll modify the web app by using Azure Explorer to add a pair of propert
 
 Finally, you'll use Azure Explorer to delete the web app and remove it from Azure.
 
-## Stop and restart the web app
+## Monitor the app with log streaming
 
 1. In **IntelliJ IDEA**, on the **View** menu, select **Tool windows** and then select **Azure Explorer**.
 
-1. In the **Azure Explorer** window, expand **Web Apps**, right-click your web app, and then click **Stop**.
+1. In the **Azure Explorer** window, expand **Web Apps**, right-click your web app, and then click **Start Streaming Logs**.
 
-    ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/7-web-app-stop.png)
+    ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/6-streaming-logs-entry.png)
 
-1. Right-click your web app again, and then click **Open in Browser**. The web browser should display an HTTP 403 message indicating that the web app isn't currently running.
+1. You will see logs showing up in a few seconds. You can access the web app to generate some logs.
 
-    :::image type="content" source="../media/7-web-browser-403.png" alt-text="Screenshot of the web browser displaying the HTTP 403 message." loc-scope="third-party":::
+    :::image type="content" source="../media/7-log-streaming.png" alt-text="Screenshot of the web browser displaying the HTTP 403 message." loc-scope="third-party":::
 
-1. Leave the web browser open and return to IntelliJ IDEA. 
-
-1. In the **Azure Explorer** window, right-click the web app once, and then click **Start**.
-
-1. Return to the web browser, and refresh the display. The web app should be running again. 
-
-1. Close the web browser and return to IntelliJ IDEA.
+1. To stop steaming logs, right-click your web app, and then click **Stop Streaming Logs**.
 
 ## Add configuration properties to the web app
 
@@ -102,18 +96,6 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
     :::image type="content" source="../media/7-modified-web-app.png" alt-text="Screenshot of the web browser running the modified version of the web app." loc-scope="third-party":::
 
 1. Close the web browser and return to IntelliJ IDEA.
-
-## Delete the web app
-
-1. In the **Azure Explorer** window, right-click the web app, and then click **Delete**.
-
-    ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/7-web-app-delete.png)
-
-1. In the **Azure Explorer** message box that prompts you to make sure that you want to delete your web app, click *Yes**.
-
-    ![Screenshot of the message box confirming that the user wants to delete the web app](../media/7-delete-web-app.png)
-
-1. When the web app has been deleted, it will disappear from the **Web Apps** folder in **Azure Explorer**.
 
 > [!IMPORTANT]
 >
