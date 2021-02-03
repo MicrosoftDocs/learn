@@ -49,3 +49,9 @@ Now, you can use the **Deploy to Azure** wizard to create a new app in Azure App
 1. In the **Create Web App** dialog, select **OK**. In the **Deploy to Azure** dialog, select **Run**. The Azure Toolkit for IntelliJ deploys the web app to Azure and displays the site in your default web browser.
 
     :::image type="content" source="../media/5-deployed-webapp.png" alt-text="The deployed web app running in Azure App Service." loc-scope="other":::
+
+## Redeploy the web app
+
+1. Once you have deployed the web app to Azure, the settings will be saved as run configurations in your IDE. To re-deploy, simply click the green **Run** icon on the top right or hit **Shift+F10**.
+
+    :::image type="content" source="../media/5-redeploy-webapp.png" alt-text="Redeploy web app running in Azure App Service." loc-scope="other":::
