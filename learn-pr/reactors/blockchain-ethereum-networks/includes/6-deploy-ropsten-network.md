@@ -2,17 +2,17 @@ Now we have a smart contract, and have successfully deployed it to our developme
 
 ## Exercise overview
 
-For this tutorial, we'll deploy to Ropsten by using MetaMask with test ether. The deployment process requires setting up an [Infura](http://www.infura.io/) account to connect and deploy to the Ropsten testnet. Once deployed, we can use the [Ropsten Testnet Explorer](https://ropsten.etherscan.io/) to inspect the blocks that have been deployed to the testnet.
+For this tutorial, we'll deploy to Ropsten by using MetaMask with test ether. The deployment process requires setting up an [Infura](http://www.infura.io/?azure-portal=true) account to connect and deploy to the Ropsten testnet. Once deployed, we can use the [Ropsten Testnet Explorer](https://ropsten.etherscan.io/?azure-portal=true) to inspect the blocks that have been deployed to the testnet.
 
 ## Exercise setup
 
 ### Set up Metamask
 
-If you haven’t done so already, install and set up Metamask by visiting [metamask.io](https://metamask.io) and following the prompts. Once you're signed into your account in the browser, you can move on to the next step.
+If you haven’t done so already, install and set up Metamask by visiting [metamask.io](https://metamask.io?azure-portal=true) and following the prompts. Once you're signed into your account in the browser, you can move on to the next step.
 
 ### Add Ether to Metatmask Ropsten test network
 
-Using your Metamask account, connect to the Ropsten test network. You can get some test Ether from the [Ropsten Test Faucet](https://faucet.ropsten.be) by following these steps:
+Using your Metamask account, connect to the Ropsten test network. You can get some test Ether from the [Ropsten Test Faucet](https://faucet.ropsten.be?azure-portal=true) by following these steps:
 
 1. Open MetaMask.
 1. Connect to Ropsten.
@@ -20,7 +20,7 @@ Using your Metamask account, connect to the Ropsten test network. You can get so
 
     :::image type="content" source="../media/metamask-0-ether-connect.png" alt-text="Screenshot showing the Metamask browser extension to copy the account address.":::
 
-1. Open a browser window or tab, and go to [https://faucet.ropsten.be/](https://faucet.ropsten.be/).
+1. Open a browser window or tab, and go to [https://faucet.ropsten.be/](https://faucet.ropsten.be/?azure-portal=true).
 1. Request Ether by entering your testnet account address and selecting the button **Send me test Ether**.
 
     :::image type="content" source="../media/ropsten-test-faucet-request-ether.png" alt-text="Screenshot showing how to request test Ether on the Ropsten faucet.":::
@@ -31,7 +31,7 @@ Using your Metamask account, connect to the Ropsten test network. You can get so
 
 ### Install HDWalletProvider and fs
 
-You'll need [HDWalletProvider](https://www.npmjs.com/package/@truffle/hdwallet-provider) as a wallet-enabled web3 provider to provide your secret mnemonic and connection network address and [fs](https://www.npmjs.com/package/fs) to read from your filesystem.
+You'll need [HDWalletProvider](https://www.npmjs.com/package/@truffle/hdwallet-provider?azure-portal=true) as a wallet-enabled web3 provider to provide your secret mnemonic and connection network address and [fs](https://www.npmjs.com/package/fs?azure-portal=true) to read from your filesystem.
 
 To install both of those, focus your attention back to the **todolist** project in Visual Studio Code. Open the terminal window and run the following commands:
 
@@ -43,9 +43,9 @@ Wait for the installations of fs and HDWalletProvider to complete. You might see
 
 ### Set up Infura and link the endpoints to the Ropsten Test Network
 
-[Infura](https://infura.io/) development suite provides instant, scalable API access to the Ethereum networks. Infura is a hosted Ethereum node cluster that gives users the ability to run an application on a public network. Infura gives users the ability to deploy and interact with public networks.
+[Infura](https://infura.io/?azure-portal=true) development suite provides instant, scalable API access to the Ethereum networks. Infura is a hosted Ethereum node cluster that gives users the ability to run an application on a public network. Infura gives users the ability to deploy and interact with public networks.
 
-Setting up an account is easy. Go to the [Infura website](http://www.infura.io/) and follow these steps:
+Setting up an account is easy. Go to the [Infura website](http://www.infura.io/?azure-portal=true) and follow these steps:
 
 1. Set up an account and confirm your email address.
 1. Select **Ethereum**, then **Create new project**, and then name the project **TodoList**.
@@ -204,7 +204,7 @@ source="media\Metamask_balance_after_deploying_to Ropsten.png" alt-text="Screens
 
 ### On Ropsten Etherscan
 
-Go to [ropsten.etherscan.io](https://ropsten.etherscan.io), enter the contract address, and then inspect your contract.
+Go to [ropsten.etherscan.io](https://ropsten.etherscan.io?azure-portal=true), enter the contract address, and then inspect your contract.
 
 :::image type="content" source="../media/ropsten-etherscan-with-deployed-contract.png" alt-text="Screenshot showing the contract deployed in Etherscan.":::
 

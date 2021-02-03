@@ -96,7 +96,7 @@ Ethereum is designed to offer multiple clients. Clients can be developed by diff
 
 ### Clients
 
-Here are some common [Ethereum clients](https://ethereum.org/en/developers/docs/nodes-and-clients/#clients):
+Here are some common [Ethereum clients](https://ethereum.org/en/developers/docs/nodes-and-clients/#clients?azure-portal=true):
 
 - [Geth client](https://geth.ethereum.org/?azure-portal=true)
 
