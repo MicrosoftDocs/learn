@@ -1,9 +1,9 @@
-Defining policy and access provides fine-grained control over resources in your cloud IT infrastructure. Once those resources are deployed, you will want to know about any issues or performance problems they might encounter.
+Defining policy and access provides fine-grained control over resources in your cloud IT infrastructure. Once those resources are deployed, you'll want to know about any issues or performance problems they might encounter.
 
 Azure provides two primary services to monitor the health of your apps and resources.
 
-1. Azure Monitor
-2. Azure Service Health
+- Azure Monitor
+- Azure Service Health
 
 ## Azure Monitor
 
@@ -31,10 +31,11 @@ Azure Monitor can collect data from a variety of sources. You can think of monit
 
 ### Diagnostic settings
 
-As soon as you create an Azure subscription and start adding resources such as virtual machines and web apps, Azure Monitor starts collecting data. *Activity Logs* record when resources are created or modified and *Metrics* tell you how the resource is performing and the resources that it's consuming.
+As soon as you create an Azure subscription and start adding resources such as virtual machines and web apps, Azure Monitor starts collecting data. *Activity Logs* record when resources are created or modified, and *Metrics* tell you how the resource is performing and the resources that it's consuming.
 
-You can extend the data you're collecting into the actual operation of the resources by enabling **diagnostics** and adding an agent to compute resources. Under resource settings, you can enable Diagnostics
+You can extend the data you're collecting into the actual operation of the resources by enabling **diagnostics**, and adding an agent to compute resources. Under resource settings, you can:
 
+- *Enable diagnostics*
 - *Enable guest-level monitoring*
 - *Performance counters*: collect performance data
 - *Event Logs*: enable various event logs
@@ -42,7 +43,7 @@ You can extend the data you're collecting into the actual operation of the resou
 - *Sinks*: send your diagnostic data to other services for more analysis
 - *Agent*: configure agent settings
 
-### Getting more data from your apps
+### Get more data from your apps
 
 Data monitoring is only useful if it improves your visibility of the operations in your computing environment. Azure Monitor includes several features and tools that provide valuable insights into your applications, and the other resources they may depend on.
 
@@ -54,7 +55,7 @@ Data monitoring is only useful if it improves your visibility of the operations 
 
 Integrating any, or all, of these monitoring services with Azure Service Health has additional benefits. Staying informed of the health status of Azure services will help you understand if, and when, an issue affecting an Azure service is impacting your environment. What may seem like a localized problem could be the result of a more widespread issue, and Azure Service Health provides this kind of insight. Azure Service Health identifies any issues with Azure services that might affect your application. Azure Service Health also helps you to plan for scheduled maintenance.
 
-### Responding to alert conditions
+### Respond to alert conditions
 
 In addition to allowing you to analyze your monitoring data interactively, an effective monitoring solution must respond proactively to any critical conditions that are identified within the data it collects. This might involve, for example, sending a text or email to an administrator who is responsible for investigating an issue, or launching an automated process that attempts to correct an error condition.
 
@@ -64,10 +65,10 @@ In addition to allowing you to analyze your monitoring data interactively, an ef
 
 ### Visualize monitoring data
 
-Visualizations, such as charts and tables, are effective tools for summarizing monitoring data and for presenting data to different audiences. Azure Monitor has its own features for visualizing monitoring data, and it leverages other Azure services for publishing data for different audiences. Other tools you may use for visualizing data, for particular audiences and scenarios, include:
+Visualizations, such as charts and tables, are effective tools for summarizing monitoring data, and for presenting data to different audiences. Azure Monitor has its own features for visualizing monitoring data, and it leverages other Azure services for publishing data for different audiences. Other tools you may use for visualizing data, for particular audiences and scenarios, include:
 
 - Dashboards
-- Views
+- [View Designer](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer) 
 - Power BI
 
 ### Integrate with other services

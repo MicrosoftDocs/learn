@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-results-kql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/03/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The `<dcount()>` function will do which of the following?"
+    choices:
+    - content: "Return a day count on the expression difference provided to the function."
+      isCorrect: false
+      explanation: "Incorrect. `<dcount>` provides a distinct count."
+    - content: "Return a difference count on the expression provided to the function."
+      isCorrect: false
+      explanation: "Incorrect. `<dcount>` provides a distinct count."
+    - content: "Return a distinct count on the expression provided to the function."
+      isCorrect: true
+      explanation: "Correct. `<dcount>` provides a distinct count."
+  - content: "The `<arg_max()>` function will do which of the following?"
+    choices:
+    - content: "Return the maximum value across a group."
+      isCorrect: false
+      explanation: "Incorrect. The `<max()>` function will return the maximum value across a group."
+    - content: "Return a JSON Array of the max values."
+      isCorrect: false
+      explanation: "Incorrect. The `<arg_max>` function returns the most current row in the result set based on the by clause."
+    - content: "Return the most current row."
+      isCorrect: true
+      explanation: "Correct. The `<arg_max>` function returns the most current row in the result set based on the by clause."
+  - content: "The `<bin()>` function provides the most value to which type of chart?"
+    choices:
+    - content: "`<Scatterchart>`"
+      isCorrect: false
+      explanation: "Incorrect.  The `<timechart>` is designed to display a time series."
+    - content: "`<Timechart>`"
+      isCorrect: true
+      explanation: "Correct. `<Bin()>` will round down values to an integer multiple of the given bin size.  The `<timechart>` displays a time series based on the bin size."
+    - content: "`<Barchart>`"
+      isCorrect: false
+      explanation: "Incorrect.  The `<timechart>` is designed to display a time series."

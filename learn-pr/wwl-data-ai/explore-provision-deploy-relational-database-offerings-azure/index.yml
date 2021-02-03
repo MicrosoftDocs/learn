@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
-  title: Explore provisioning and deploying relational database offerings in Azure
-  description: "Explore provisioning and deploying relational database offerings in Azure"
-  ms.date: 10/25/2020
+  title: Explore provisioning and deploying relational database services in Azure
+  description: "Explore provisioning and deploying relational database services in Azure"
+  ms.date: 01/08/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore provisioning and deploying relational database offerings in Azure
+title: Explore provisioning and deploying relational database services in Azure
 summary: Learn how to provision and configure Azure SQL Database, Azure Database for PostgreSQL, and Azure Database for MySQL.
 abstract: |
   In this module, you will:

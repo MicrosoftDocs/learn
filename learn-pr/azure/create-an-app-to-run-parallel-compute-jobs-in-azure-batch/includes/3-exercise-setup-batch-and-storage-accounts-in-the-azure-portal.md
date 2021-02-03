@@ -1,10 +1,10 @@
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-Before you manage the Azure Batch services from a .Net application, you have to create the Azure Batch account and Storage account. You can use the Azure portal, Powershell, Azure CLI, or the Batch Management API to create these accounts.
+Before you manage the Azure Batch services from a .NET application, you have to create the Azure Batch account and Storage account. You can use the Azure portal, PowerShell, Azure CLI, or the Batch Management API to create these accounts.
 
 In this unit, you'll create an Azure Batch and Azure Storage account using the Azure portal.
 
-## Create New Storage Account
+## Create new storage account
 
 1. Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in your favorite browser.
 
@@ -29,9 +29,9 @@ In this unit, you'll create an Azure Batch and Azure Storage account using the A
 
 1. Wait for the deployment to complete. We now have a storage account that we'll use in our processing to store input and output files. We'll associate this storage account with our Batch account shortly.
 
-## Create new Batch Account
+## Create new batch account
 
-In order to create Batch workloads, we need to create an account within the Batch service.
+In order to create batch workloads, we need to create an account within the Batch service.
 
 1. From the **Home** page:
 1. In the left navigation bar (top left hand blue bars), select **Create a resource**.
@@ -64,7 +64,7 @@ For our scenario, we've decided to enlist the help of **FFmpeg** to do our video
 
     !["New application" configuration form](../media/3-add-application-to-batch.png)
 
-1. In **Application id** type **ffmpeg**.
+1. In **Application id**, type **ffmpeg**.
 1. In **Version** type **3.4**.
 1. In **Application package**, select the folder icon to the right.
 1. Navigate to the folder containing **ffmpeg-3.4-win64-static.zip** that you downloaded, and select **Open**.

@@ -3,8 +3,8 @@ uid: learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.4-cr
 title: Exercise - Create a batch inference pipeline
 metadata:
   title: Exercise - Create a batch inference pipeline
-  description: "Get hands-on experience creating a batch inference pipeline with Azure Machine Learning"
-  ms.date: 09/25/2020
+  description: "Exercise - Create a batch inference pipeline"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

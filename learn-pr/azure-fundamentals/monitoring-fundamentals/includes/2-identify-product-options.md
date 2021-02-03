@@ -23,7 +23,7 @@ At a high level, there are three primary Azure monitoring offerings, each of whi
 
 The recommendations are available via the Azure portal and the API, and you can set up notifications to alert you to new recommendations.
 
-When you're in the Azure portal, the Advisor dashboard displays personalized recommendations for all your subscriptions, and you can use filters to home in on recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories:
+When you're in the Azure portal, the Advisor dashboard displays personalized recommendations for all your subscriptions, and you can use filters to select recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories:
 
 - **Reliability**: Used to ensure and improve the continuity of your business-critical applications.
 - **Security**: Used to detect threats and vulnerabilities that might lead to security breaches.

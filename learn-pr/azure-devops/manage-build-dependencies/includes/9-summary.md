@@ -19,7 +19,7 @@ You might need to consider the language of the package and the process for acces
 * [NuGet Documentation](https://docs.microsoft.com/nuget/?azure-portal=true)
 * [npm documentation](https://docs.npmjs.com?azure-portal=true)
 * [Maven documentation](https://maven.apache.org/guides/?azure-portal=true)
-* [Chocolatey documentation](https://chocolatey.org/docs?azure-portal=true)
+* [Chocolatey documentation](https://docs.chocolatey.org/en-us/)
 
 ## Appendix
 

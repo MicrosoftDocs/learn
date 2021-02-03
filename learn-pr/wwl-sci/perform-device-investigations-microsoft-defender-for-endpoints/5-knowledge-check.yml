@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The security operations analyst has found an interesting event, what should be done to mark it for further review?"
+    choices:
+    - content: "Tag"
+      isCorrect: false
+      explanation: "Incorrect.  You can Flag events."
+    - content: "Highlight"
+      isCorrect: false
+      explanation: "Incorrect.  You can Flag events."
+    - content: "Flag"
+      isCorrect: true
+      explanation: "Correct. You can Flag events."
+  - content: "Which Behavioral blocking can be used with third-party antivirus?"
+    choices:
+    - content: "Client behavior blocking."
+      isCorrect: false
+      explanation: "Incorrect.  This is used with Defender AV."
+    - content: "EDR in block mode"
+      isCorrect: true
+      explanation: "Correct.  EDR in Block allows for blocking even when 3rd party AV is used."
+    - content: "Feedback-loop blocking"
+      isCorrect: false
+      explanation: "Incorrect.  This is used with Defender AV."
+  - content: "A Windows 10 Device doesn't appear in the device list, what could be the problem?"
+    choices:
+    - content: "The Device was renamed."
+      isCorrect: false
+      explanation: "Incorrect. Renaming the device has no impact on the Device list."
+    - content: "The Device is missing the latest KB's"
+      isCorrect: false
+      explanation: "Incorrect. KB's has no impact on the Device list."
+    - content: "The Device hasn't had alerts in the past 30 days."
+      isCorrect: true
+      explanation: "Correct.  You can adjust the time setting to find the device."

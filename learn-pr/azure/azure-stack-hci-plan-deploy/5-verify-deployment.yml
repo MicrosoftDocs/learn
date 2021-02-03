@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-plan-deploy.5-verify-deployment
+metadata:
+  title: Validate deployment of Azure Stack HCI
+  description: An overview of validating a deployment of Azure Stack HCI
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Validate deployment of Azure Stack HCI
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-verify-deployment.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which event warrants running the Azure Stack HCI cluster validation?"
+    choices:
+    - content: "Adding a new server to an existing cluster."
+      isCorrect: true
+      explanation: "That's correct. Cluster validation is warranted when adding a new server to an existing cluster."
+    - content: "Replacing a failed drive in an existing cluster."
+      isCorrect: false
+      explanation: "That's incorrect. Replacing a failed drive in an existing cluster. Replacement does not warrant running the wizard, but adding drives to the nodes of the existing cluster does."
+    - content: "Adding a highly available VM to the cluster."
+      isCorrect: false
+      explanation: "That's incorrect. Workload-related changes do not warrant running cluster validation."
+
+  - content: "What tool can you use to validate cluster performance by using synthetic workloads?"
+    choices:
+    - content: "Validate-DCB"
+      isCorrect: false
+      explanation: "That's incorrect. The Validate-DCB tool validates the DCB configuration in clustering scenarios."
+    - content: "Test-Cluster"
+      isCorrect: false
+      explanation: "That's incorrect. Test-Cluster run the cluster validation."
+    - content: "VM Fleet"
+      isCorrect: true
+      explanation: "That's correct. VM Fleet provisions a distributed set of VMs to emulate a functional or performance impact of actual workloads against S2D infrastructure."

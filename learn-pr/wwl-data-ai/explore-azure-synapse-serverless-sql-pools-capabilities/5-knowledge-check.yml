@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-synapse-serverless-sql-pools-capabilities.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Performing ad hoc data exploration in Azure Synapse Analytics uses which resource model?"
+    choices:
+    - content: "Dedicated SQL pools."
+      isCorrect: false
+      explanation: "Incorrect. Dedicated SQL pools are used to store persisted tables in a data warehouse."
+    - content: "Serverless SQL pools."
+      isCorrect: true
+      explanation: "Correct. Serverless SQL pools are used to perform ad hoc data exploration in Azure Synapse Analytics."
+    - content: "Serverless Spark pools."
+      isCorrect: false
+      explanation: "Incorrect. Serverless Spark pools are used to perform big data engineering."
+  - content: "What objects are used to provide a SQL metadata layer that creates a logical data warehouse in Azure Synapse Analytics?"
+    choices:
+    - content: "Views."
+      isCorrect: true
+      explanation: "Correct. Views are used to provide a SQL metadata layer that creates a logical data warehouse."
+    - content: "Stored procedures."
+      isCorrect: false
+      explanation: "Incorrect. Stored procedures encapsulate SQL logic that can be used to read or modify data."
+    - content: "Functions."
+      isCorrect: false
+      explanation: "Incorrect. Functions can encapsulate logic that can work on data."
+  - content: "Which Azure storage service is the primary service used to query data from using Serverless SQL pools?"
+    choices:
+    - content: "Azure SQL Database."
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database is a relational data store that is typically used in transactional database scenarios."
+    - content: "Azure Cosmos DB."
+      isCorrect: false
+      explanation: "Incorrect. Azure Cosmos DB is a planetary scaled database that has different APIs in which data can be stored."
+    - content: "Azure Data Lake."
+      isCorrect: true
+      explanation: "Correct. Azure Data Lake is the primary service used to query data from using Serverless SQL pools."

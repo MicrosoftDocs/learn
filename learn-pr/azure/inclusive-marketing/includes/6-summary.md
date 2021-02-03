@@ -7,10 +7,9 @@ Beginning with the simple framework of what, who and how you market. One or all 
 
 - [Inclusive Marketing: Why it’s essential for your brand](https://about.ads.microsoft.com/blog/post/january-2020/inclusive-marketing-why-its-essential-for-your-brand)
 - [How Microsoft defines and pursues inclusive marketing](https://www.warc.com/content/paywall/article/event-reports/how-microsoft-defines-and-pursues-inclusive-marketing/129014)
-- [LGBT advertising: How brands are taking a stance on issues](https://www.thinkwithgoogle.com/intl/en-gb/consumer-insights/lgbt-advertising-how-brands-are-taking-stance-issues/)
+- [LGBT advertising: How brands are taking a stance on issues](https://www.thinkwithgoogle.com/future-of-marketing/management-and-culture/diversity-and-inclusion/lgbt-advertising-brands-taking-stance-on-issues/)
 - [Brands & Stands: Social Purpose is the New Black](https://engageforgood.com/guides/statistics-every-cause-marketer-should-know/ ) 
 - [Inspiring Girls to Stay in STEM and #MakeWhatsNext](https://blogs.microsoft.com/on-the-issues/2017/03/07/inspiring-girls-stay-stem-makewhatsnext/)
 - [Diversity + Inclusion = Better Decision Making At Work](https://www.forbes.com/sites/eriklarson/2017/09/21/new-research-diversity-inclusion-better-decision-making-at-work/#8f41d994cbfa)
 - [Microsoft Super Bowl 2020 Commercial: Be The One / Katie Sowers](https://www.youtube.com/watch?v=_xPn4DXIj5w)
 - [Maurice Harris, an artist in full bloom](https://www.youtube.com/watch?v=W6Dp6dzfH2Y)
-

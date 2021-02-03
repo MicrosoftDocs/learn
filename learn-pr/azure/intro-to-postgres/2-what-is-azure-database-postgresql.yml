@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-db-for-postgresql.2-what-is-azure-database-for-postgresql
+title: What is Azure Database for PostgreSQL? 
+metadata:
+  title: What is Azure Database for PostgreSQL?
+  description: An overview of Azure Database for PostgreSQL and Hyperscale (Citus)
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-azure-database-postgresql.md)]

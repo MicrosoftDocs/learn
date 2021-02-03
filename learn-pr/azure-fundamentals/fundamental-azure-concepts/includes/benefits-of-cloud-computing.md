@@ -6,8 +6,8 @@ There are several advantages that a cloud environment has over a physical enviro
 
 - **Scalability**: Apps in the cloud can scale *vertically* and *horizontally*:
 
-   - Scale horizontally to increase compute capacity by adding RAM or CPUs to a virtual machine.
-   - Scaling vertically increases compute capacity by adding instances of resources, such as adding VMs to the configuration.
+   - Scale vertically to increase compute capacity by adding RAM or CPUs to a virtual machine.
+   - Scaling horizontally increases compute capacity by adding instances of resources, such as adding VMs to the configuration.
 
 - **Elasticity**: You can configure cloud-based apps to take advantage of autoscaling, so your apps always have the resources they need.
 
@@ -43,4 +43,4 @@ In other words, when Tailwind Traders owns its infrastructure, it buys equipment
 
 Cloud services, on the other hand, are categorized as an OpEx, because of their consumption model. There's no asset for Tailwind Traders to amortize, and its cloud service provider (Azure) manages the costs that are associated with the purchase and lifespan of the physical equipment. As a result, OpEx has a direct impact on net profit, taxable income, and the associated expenses on the balance sheet.
 
-To summarize, CapEx requires significant up-front financial costs, as well ongoing maintenance and support expenditures. By contrast, OpEx is a consumption-based model, so Tailwind Traders is only responsible for the cost of the computing resources that it uses.
+To summarize, CapEx requires significant up-front financial costs, as well as ongoing maintenance and support expenditures. By contrast, OpEx is a consumption-based model, so Tailwind Traders is only responsible for the cost of the computing resources that it uses.

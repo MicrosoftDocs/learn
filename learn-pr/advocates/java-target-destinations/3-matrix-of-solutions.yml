@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.java-target-destinations.3-matrix-of-solutions
-title: Matrix of solutions
+title: Compare the solutions
 metadata:
-  title: Matrix of solutions
-  description: Matrix of solutions provided on Azure to deploy Java applications
+  title: Compare the solutions
+  description: This unit presents a comparison of Azure solutions for deploying Java applications.
   author: judubois
   ms.author: judubois
   ms.date: 11/16/2020

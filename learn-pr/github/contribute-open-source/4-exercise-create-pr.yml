@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.contribute-opensource.4-exercise-create-pr
+title: Exercise - Create your first pull request
+metadata:
+  title: Exercise - Create your first pull request
+  description: Learn how to write a good commit message and pull request.
+  author: floord
+  ms.author: fldrees
+  ms.date: 11/23/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-create-pr.md)]

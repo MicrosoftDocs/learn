@@ -95,7 +95,7 @@ The following object types in Azure can receive and handle events from Event Gri
 - **Azure Functions:** Custom code that runs in Azure, without the need for explicit configuration of a host virtual server or container. Use an Azure function as an event handler when you want to code a custom response to the event.
 - **Webhooks:** A webhook is a web API that implements a push architecture.
 - **Azure Logic Apps:** An Azure logic app hosts a business process as a workflow.
-- **Microsoft Flow:** Flow also hosts workflows, but it is easier for non-technical staff to use.
+- **Microsoft Power Automate:** Flow also hosts workflows, but it is easier for non-technical staff to use.
 
 ## Should you use Event Grid?
 Use Event Grid when you need these features:
