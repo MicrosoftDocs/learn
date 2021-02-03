@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-costs-data-analysis-powerbi.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/08/2021
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following reports in the Azure Cost Management App are used to view total charges for a specific time period?"
+    choices:
+    - content: "Top 5 usage drivers"
+      isCorrect: false
+      explanation: "The Top 5 usage drivers report shows costs for only the top five meter categories."
+    - content: "Billing account overview"
+      isCorrect: true
+      explanation: "The Billing account overview shows the total charges for a specific time period."
+    - content: "RI Purchases"
+      isCorrect: false
+      explanation: "The RI Purchases report shows the cost of reservation purchases only. It doesn't show other costs."
+  - content: "What's the purpose of the Windows Server Azure Hybrid Benefits report?"
+    choices:
+    - content: "To increase your use of Power BI"
+      isCorrect: false
+      explanation: "Although Power BI is used to help understand your use of hybrid benefits and reservations, the goal of the report is to assist in tracking utilization and make optimization suggestions to maximize potential savings."
+    - content: "To identify expensive Windows Server VMs"
+      isCorrect: false
+      explanation: "Although larger VMs where AHB isn't enabled are more expensive than smaller ones, the goal of the report is to assist in tracking utilization and make optimization suggestions to maximize potential savings."
+    - content: "To track your Windows Server licensing benefit usage"
+      isCorrect: true
+      explanation: "The purpose of the Windows Server Azure Hybrid Benefits report is to assist in tracking utilization and make optimization suggestions to maximize potential savings."
+  - content: "When do you save the most money with Azure reservations?"
+    choices:
+    - content: "When a reservation is fully used"
+      isCorrect: true
+      explanation: "You save the most money when a reservation is fully used."
+    - content: "When a reservation isn't used at all"
+      isCorrect: false
+      explanation: "When a reservation isn't fully used, your maximum possible savings are reduced. You should consider exchanging unused reservations."
+    - content: "When you have under-utilized reservations"
+      isCorrect: false
+      explanation: "When a reservation isn't fully used, your maximum possible savings are reduced. You should consider exchanging unused reservations."
+  - content: "What account types can you use with the Azure Cost Management Connector for Power BI Desktop?"
+    choices:
+    - content: "An Enterprise Administrator account for Enterprise Agreements and a billing account owner for Microsoft Customer Agreements"
+      isCorrect: true
+      explanation: "Only an Enterprise Administrator account for Enterprise Agreements and a billing account owner for Microsoft Customer Agreements are supported. Other account types aren't supported."
+    - content: "An Enterprise Agreement account owner and a Billing profile owner for a Microsoft Customer Agreement"
+      isCorrect: false
+      explanation: "An EA account owner and a Billing profile owner for a Microsoft Customer Agreement don't have the necessary permission to use the Cost Management connector. Only an Enterprise Administrator account for Enterprise Agreements and a billing account owner for Microsoft Customer Agreements are supported. Other account types aren't supported."
+    - content: "An Enterprise Agreement Department Administrator and an Invoice section owner for a Microsoft Customer Agreement"
+      isCorrect: false
+      explanation: "An EA Department Administrator and an Invoice section owner for a Microsoft Customer Agreement don't have the necessary permission to use the Cost Management connector. Only an Enterprise Administrator account for Enterprise Agreements and a billing account owner for Microsoft Customer Agreements are supported. Other account types aren't supported."
