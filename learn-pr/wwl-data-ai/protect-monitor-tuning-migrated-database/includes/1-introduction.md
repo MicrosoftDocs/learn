@@ -10,5 +10,5 @@ By the end of this module, you'll be able to:
 - Protect a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
 - Monitor a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
 - Trace and track activity for a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
-- Configure read replicas for a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
+- Configure read replicas for a database running in Azure Database for MySQL and Azure Database for PostgreSQL. 
    
