@@ -11,7 +11,7 @@ if err != nil {
 
 Notice how the `getInformation` function is returning the `employee` struct and returns an error as a second value (the error) that could be `nil`. An error could be `nil`, which mean success. Or it could be non-`nil`, which means failure. A non-`nil` error comes with an error message that you could either print or log (preferably). This is how you handle errors in Go. We'll cover a few other strategies in the next section.
 
-You'll probably notice that error handling in Go demands that you pay more attention to how you report and handle an error, but that's exactly the point. Let's look at some other examples to help you better understand Go's approach to error handling.
+You'll probably notice that error handling in Go demands that you pay more attention to how you report and handle an error. That's exactly the point. Let's look at some other examples to help you better understand Go's approach to error handling.
 
 Let's use the code snippet that we used for structs to practice various error handling strategies:
 
@@ -78,7 +78,7 @@ func getInformation(id int) (*Employee, error) {
 }
 ```
 
-Another strategy is to run retry logic when errors are transient. For example, you could use a simple retry policy to call a function three times and wait for two seconds, like this:
+Another strategy is to run retry logic when errors are transient. For example, you could use a retry policy to call a function three times and wait for two seconds, like this:
 
 ```go
 func getInformation(id int) (*Employee, error) {
@@ -115,7 +115,7 @@ func getInformation(id int) (*Employee, error) {
 }
 ```
 
-The code for the `getInformation` function looks better, and if you need to change the error message, you do it in ony one place. Also, notice that the convention is to include the `Err` prefix for error variables.
+The code for the `getInformation` function looks better, and if you need to change the error message, you do it in only one place. Also, notice that the convention is to include the `Err` prefix for error variables.
 
 Finally, when you have an error variable, you could be more specific when you're handling an error in a caller function. The `errors.Is()` function allows you to compare the type of error you're getting, like this:
 
@@ -128,7 +128,7 @@ if errors.Is(err, ErrNotFound) {
 }
 ```
 
-## Best practices for error handling
+## Recommended practices for error handling
 
 When you're handling errors in Go, here are some recommended practices to keep in mind:
 
