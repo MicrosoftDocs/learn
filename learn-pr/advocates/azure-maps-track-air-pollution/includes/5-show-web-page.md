@@ -51,11 +51,11 @@ Finally, we'll create a home.html file to show results.
 
 1. Select **Terminal** > **New terminal** to restart the terminal using the virtual environment. 
 
-   When the terminal is running in a Python virtual environment, notice that the prompt shows "(.venv)" as a prefix.
+   When the terminal is running in a Python virtual environment, notice that the prompt shows `(.venv)` as a prefix.
 
 ### Install the necessary pip packages
 
-Pip is the package installer for Python. The application we'll create requirs the following pip packages:
+Pip is the package installer for Python. The application we'll create requires the following pip packages:
 
 * `flask` - This package is a web framework for Python.
 * `python-dotenv` - This package allows environment variables like the Maps key to be loaded from environment files.
@@ -87,12 +87,14 @@ First, we'll create a text file that lists the pip packages we need. Then, we'll
 
 ### Create an environment file
 
-The Flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control. Environment variables can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file named **.env** at the root of your app code folder and load environment variables from this file.
+The Flask app that you'll create will need to use your Azure Maps key to load the map control onto a page. A best practice is to store data like this in environment variables so that the data isn't checked in to source code control. Environment variables can be configured to different values when you develop or publish your app. Flask uses the python-dotenv package to look for a file named *.env* at the root of your app code folder and load environment variables from this file.
 
 > [!TIP]
-> If you deploy this app to Azure using Azure App Services, the values in the `.env` file will need to be added to the Application Settings so that they are automatically set as environment variables that the app can use.
+> If you deploy this app to Azure by using Azure App Services, the values in the *.env* file must be added to an application settings file so that they're automatically set as environment variables that the app can use.
 
-1. Create a new environment file at the root of your app code folder named **.env.**
+To create the environment file:
+
+1. At the root of your app code folder, create a new environment file named *.env.*.
 
 1. Copy the following statement into the environment file:
 
@@ -100,13 +102,13 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     MAP_KEY=<your map key>
     ```
 
-    Replace `<your map key>` with the value of the primary key you retrieved after creating the Azure Maps account in an earlier unit. This value shouldn't be in quotes.
+    Replace `<your map key>` with the value of the primary key you retrieved after you created the Azure Maps account earlier. Don't include the quotation marks.
 
-1. Save the file
+1. Save the file.
 
 ### Create the application Python file
 
-1. In Visual Studio Code, open the app.py file in your app code folder.
+1. In Visual Studio Code, in your app code folder, open the *app.py* file.
 
 1. Copy the following code into the application file:
 
@@ -115,28 +117,28 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     from flask import Flask, render_template, request
     import requests
 
-    # Load the Azure Maps key from the .env file
+    # Load the Azure Maps key from the .env file.
     MAP_KEY = os.environ["MAP_KEY"]
 
-    # Initialize the Flask app
+    # Initialize the Flask app.
     app = Flask(__name__)
 
-    # Handle requests to the root of the web site, returning the home page
+    # Handle requests to the root of the website, returning the home page.
     @app.route("/")
     def home():
-        # Create data for the home page to pass the maps key
+        # Create data for the home page to pass the Maps key.
         data = { "map_key" : MAP_KEY }
         # Return the rendered HTML page
         return render_template("home.html", data = data)
     ```
 
-    This code handles requests to '/', which is the root of the web site. When this web page is loaded, the app uses the key from your .env file to create some data. The data is used to render the home.html file as a parameter named `data`.
+    This code handles requests to `/`, which is the root of the website. When this webpage is loaded, the app uses the key from your *.env* file to create some data. The data is used to render the home.html file as a parameter named `data`.
 
 1. Save the file.
 
 ### Create the home.html file
 
-1. In Visual Studio Code, in the templates folder, create a new HTML file named **home.html**.
+1. In Visual Studio Code, in the templates folder, create a new HTML file named *home.html*.
 
 1. Copy the following code into the HTML file:
 
@@ -144,13 +146,13 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     <!doctype html>
     <html>
     <head>
-        <title>Air Quality tracker</title>
-        <!-- Ensures that IE and Edge uses the latest version and doesn't emulate an older version -->
+        <title>Air quality tracker</title>
+        <!-- Ensures that Internet Explorer and Microsoft Edge use the latest versions and that they don't emulate older versions. -->
         <meta http-equiv="x-ua-compatible" content="IE=Edge">
         <meta charset='utf-8'>
-        <!-- Ensures the webpage looks good on all screen sizes. -->
+        <!-- Ensures that the webpage looks good on all screen sizes. -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Import the Azure Maps control -->
+        <!-- Import the Azure Maps control. -->
         <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css">
         <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
         <style>
@@ -168,17 +170,17 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
         <div id="myMap"></div>
         <script type="text/javascript">
             window.addEventListener("DOMContentLoaded", function () {
-                // Pick a pre-defined location of the Microsoft Campus
+                // Pick a predefined location of the Microsoft headquarters.
                 map_center = [-122.136866, 47.642472]
 
-                // Get the users location if permitted - they will be asked for permission before we can get their location
+                // If the user grants permission when prompted, get the user's location.
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function (position) {
                         map_center = [position.coords.longitude, position.coords.latitude]
                     })
                 }
 
-                //Create an instance of the map control using the map key from the Flask app
+                // Create an instance of the map control by using the map key from the Flask app.
                 var map = new atlas.Map('myMap', {
                     authOptions: {
                         authType: 'subscriptionKey',
@@ -186,7 +188,7 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
                     }
                 });
 
-                // when the map is ready, center the map on the users location
+                // When the map is ready, center the map on the user's location.
                 map.events.add('ready', function () {
                     map.setCamera({
                         center: map_center,
@@ -199,7 +201,7 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     </html>
     ```
 
-    This webpage will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise it will use the location of the Microsoft campus in Redmond, Washington, USA.
+    This webpage renders a full-screen `div` element that has an ID of `myMap`. After the page is fully loaded, the user's location is retrieved. The request causes the browser to request permission to get the user's location. The browser gets the user's location only if permission is granted. Otherwise, the browser uses the location of the Microsoft headquarters in Redmond, Washington, USA.
 
     > [!NOTE]
     > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°.
@@ -273,16 +275,16 @@ Check the following:
 
 ### No data on the map
 
-If you don't see any data on the map, but you do see the Microsoft logo, then you aren't using a valid key for the map control. Check the value in the `.env` file to ensure it is correct. This value shouldn't be in quotes.
+If you don't see any data on the map, but you do see the Microsoft logo, you aren't using a valid key for the map control. Check the value in the `.env` file to ensure it is correct. This value shouldn't be in quotes.
 
 ## 500 Internal server error
 
-If a **500 Internal Server Error** is returned, check the logs in the Visual Studio Code terminal. If you see the following:
+If a `500 Internal Server Error` is returned, check the logs in the Visual Studio Code terminal. The following indicates that the *home.html* file isn't in the correct location:
 
 ```output
 jinja2.exceptions.TemplateNotFound: home.html
 ```
 
-Then the `home.html` file is not in the right location. It should be in the `templates` folder. Move the file and re-launch the Flask app.
+The *home.html* file should be in the *templates* folder. Move the file and reopen the Flask app.
 
-In this unit, you created a Flask app that showed a map using the Azure Maps web SDK. Next, let's learn about the GeoJSON format for spatial data.
+In this unit, you used the Azure Maps Web SDK to create a Flask app that shows a map. Next, let's learn about the GeoJSON format for spatial data.
