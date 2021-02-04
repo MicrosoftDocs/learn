@@ -15,7 +15,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
         --allocation-method Dynamic
     ```
 
-1. Run this command in Cloud Shell to create the virtual network gateway.
+1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network.
 
     ```azurecli
     az network vnet create \
@@ -51,7 +51,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --allocation-method Dynamic
     ```
 
-1. Run this command in Cloud Shell to create the virtual network gateway.
+1. Run this command in Cloud Shell to create the **VNG-HQ-Network** virtual network.
 
     ```azurecli
     az network vnet create \
