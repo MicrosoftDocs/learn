@@ -45,7 +45,8 @@ The prerequisites to use Storage Replica include:
 > [!NOTE]
 > You can't use Storage Replica to replicate Windows Server operating system volumes.
 
-> **Note:** You can verify that these requirements are satisfied by using the `Test-SRTopology` Windows PowerShell cmdlet. This tool is part of the Windows Server Storage Replica Management Tools feature.
+> [!NOTE] 
+> You can verify that these requirements are satisfied by using the `Test-SRTopology` Windows PowerShell cmdlet. This tool is part of the Windows Server Storage Replica Management Tools feature.
 
 ## Implementing Storage Replica by using Windows PowerShell
 
