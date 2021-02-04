@@ -1,17 +1,17 @@
-In this unit, you'll retrieve air quality data from an API and convert it to GeoJSON ready to show on the map as a bubble layer.
+In this unit, you'll retrieve air quality data from an API and convert it to GeoJSON. Then, you can use it in your map app as a bubble layer of information for a location.
 
 ## Get air quality data
 
-The [World Air Quality Index](https://waqi.info?azure-portal=true) aggregates air quality data from around the world, and makes this data available through a free API you can use in your app. The data is available as the current AQI (Air Quality Index) reading for multiple recording stations around the world. When you request data, you can do it for either:
+The [World Air Quality Index](https://waqi.info?azure-portal=true) aggregates air quality data from around the world. The data is available through a free API that you can use in your app. The data is available as the current Air Quality Index (AQI) reading for multiple recording stations around the world. When you request data, you have two options. You can:
 
-* A single location to get the nearest reading for a city or location
-* All the stations within a rectangle defined using the north-east and south-west coordinates of the rectangle.
+* Request data for a single location, to get the nearest reading for a city or location.
+* Request data for all stations within a rectangle that's defined by using the north-east and south-west coordinates of the rectangle.
 
-The map should plot as much data as possible based on the visible area of the map. AQI data can be requested for just those stations within the visible area. This makes the API call faster, as only the data needed is requested.
+The map should plot as much data as possible based on the visible area of the map. AQI data can be requested for just those stations within the visible area. Narrowing your request makes the API call faster, because only the data that's needed is requested.
 
 ### AQI data format
 
-The AQI data is in the following JSON format:
+AQI data is in the following JSON format:
 
 ```json
 {
@@ -32,9 +32,9 @@ The AQI data is in the following JSON format:
 }
 ```
 
-The `data` property contains an array of JSON objects for all the measuring stations requested. These object have a location as longitude and latitude, and the AQI measurement. This data can't be plotted on the map as is, it first needs to be converted to a GeoJSON feature collection.
+The `data` property contains an array of JSON objects for all the measuring stations requested. These objects have a location that's defined as longitude, latitude, and the AQI measurement. The data can't be plotted on the map as it is delivered. Your app must first convert the data to a GeoJSON feature collection.
 
-The following steps will convert the data to a feature collection, and these steps will be implemented in code later in this unit.
+The following steps convert AQI data to a feature collection. You'll implement these steps in code later in this unit.
 
 1.  Create a blank feature collection.
 
@@ -42,9 +42,9 @@ The following steps will convert the data to a feature collection, and these ste
 
     1. The geometry of the feature is a location `Point`, with the coordinates set to the longitude `lon` and latitude `lat`.
 
-    1. Rather than plot the AQI measurement directly, it's easier to visualize with a colored bubble. Convert the AQI measurement to a color value as an RGB hex string. Then add the converted color value to the feature’s `properties` array.
+    1. Instead of plotting the AQI measurement directly, it's easier to visualize the data by using a colored bubble. Convert the AQI measurement to a color value as an RGB hex string. Then, add the converted color value to the feature’s `properties` array.
 
-    For example, for the data above, the GeoJSON would be:
+    Here's the GeoJSON for the data in this example:
     
     ```json
     {
@@ -65,31 +65,31 @@ The following steps will convert the data to a feature collection, and these ste
 
 ### Get an API token
 
-To use the WAQI API, you'll need to register for an API key and add the key to the environment variables for the application.
+To use the WAQI API, register for an API key, and then add the key to the environment variables for the application.
 
 To get the WAQI API key:
 
-1.	Browse to the [WAQI Open Data Platform](existing link) site.
+1.	Go to the [Air Quality Open Data Platform](https://aqicn.org/data-platform/token/#/?azure-portal=true) token request website.
 
 1.	Enter your email address and name.
 
-1.	Review and agree to the terms of service for the site.
+1.	Review and agree to the API usage terms of service.
 
 1.	Select **Submit**.
 
-1.	Check your inbox for a confirmation message from the WAQI Open Data Platform site. In the email message, select the **Confirm your email address** link.
+1.	Check your email inbox for a confirmation message from the AQI Open Data Platform website. In the email message, select the **Confirm your email address** link.
 
-1.	After you confirm your email address, you’re redirected to a new page on the WAQI site. Your token is displayed on the site. Copy and save your token.
+1.	After you confirm your email address, you’re redirected to a new webpage that displays your token. Copy and save your token.
 
-    This token is the WAQI API key value that you’ll use in a later step.
+    The token is the WAQI API key value that you’ll use in a later step.
 
-### Update app to use the API token 
+### Update the app to use the API token 
 
-After you have the WAQI API token, you need to add the value to the environment variables for your app.
+When you have the WAQI API token, add the token key value to the environment variables for your app.
 
-1.	In Visual Studio Code, open the .env file in your app code folder.
+1.	In Visual Studio Code, open the *.env* file in your app code folder.
 
-1.	Add the following statement to the end of the .env file. Replace the `<your waqi key>` placeholder with your token key value for the WAQI.
+1.	Add the following statement to the end of the *.env* file. Replace the `<your waqi key>` placeholder with your token key value for the WAQI API.
 
     ```console
     WAQI_API_KEY=<your waqi key>
@@ -97,32 +97,32 @@ After you have the WAQI API token, you need to add the value to the environment 
 
     Replace `<your waqi key>` with the value of your API key from the World Air Quality Index.
 
-1.	Save the changes to the .env file.
+1.	Save the changes to the *.env* file.
 
-1.	Now open your app.py file in Visual Studio Code.
+1.	Open your *app.py* file in Visual Studio Code.
 
-1.	In the app.py code, find the statement that loads the `MAP_KEY` value. After that statement, add the following statements to load the WAQI API key. The code defines a constant for the API URL, `WAQI_API_KEY`:
+1.	In the *app.py* code, find the statement that loads the `MAP_KEY` value. After that statement, add the following statements to load the WAQI API key. The code defines the `WAQI_API_KEY` constant for the API URL:
 
    ```console
-   # Load the World Air Quality Index key from the .env file
+   # Load the World Air Quality Index key from the .env file.
    WAQI_API_KEY = os.environ["WAQI_API_KEY"]
    WAQI_API_URL = https://api.waqi.info/map/bounds/?latlng={},{},{},{}&token={}
    ```
 
    The `WAQI_API_URL` defines a call to get all the air quality readings for a rectangular region that’s defined by the `lon` and `lat` coordinates.
 
-1.	Save the changes to the app.py file.
+1.	Save the changes to the *app.py* file.
 
 ### Add a data source to the map
 
-The last update is to add a data source to the map to render the WAQI data. Azure Maps uses data sources to plot layers. The data sources can source their data from GeoJSON feature collections.
+The last update is to add a data source to the map to render the WAQI data. Azure Maps uses data sources to plot layers. The data sources can get their data from GeoJSON feature collections.
 
-1.	In Visual Studio Code, open the home.html file in the templates folder for your app.
+1.	In Visual Studio Code, open the *home.html* file in the templates folder for your app.
 
-1.	In the app.py code, find the statements that handle the `ready` event for the map. You should see this code on lines 46 through 52.
+1.	In the *app.py* code, find the statements that handle the `ready` event for the map. This code should appear on lines 46 through 52:
 
-    ```js
-    // when the map is ready, center the map on the users location
+    ```javascript
+    // When the map is ready, center the map on the user's location.
     map.events.add('ready', function () {
         map.setCamera({
             center: map_center,
@@ -133,20 +133,20 @@ The last update is to add a data source to the map to render the WAQI data. Azur
 
 1.	Replace this section of code with the following statements, and then save the file.
 
-    ```js
-    // when the map is ready, center the map on the users location
+    ```javascript
+    // When the map is ready, center the map on the user's location.
     map.events.add('ready', function () {
-        // Declare a data source for the AQI data
+        // Declare a data source for the AQI data.
         var datasource = new atlas.source.DataSource();
         map.sources.add(datasource);
 
-        // Declare a function to update the AQI data
+        // Declare a function to update the AQI data.
         function updateAQIData(e) {
-            // Get the current bounds on screen
+            // Get the current bounds on the screen.
             bounds = map.getCamera().bounds
 
-            // Set the data source data to results of the aqi call
-            // This is a feature collection with the AQI measurements
+            // Set the data source data to results of the AQI call.
+            // This is a feature collection with the AQI measurements.
             fetch('./aqi?bounds=' + bounds)
                 .then(res => {
                     return res.json()
@@ -156,16 +156,16 @@ The last update is to add a data source to the map to render the WAQI data. Azur
                 })
         }
 
-        // Add a bubble layer
+        // Add a bubble layer.
         map.layers.add(new atlas.layer.BubbleLayer(datasource, null, {
             radius: 10,
             opacity: 0.5,
             strokeOpacity: 0,
-            // Get the color from the color property
+            // Get the color from the color property.
             color: ['get', 'color']
         }));
 
-        // Handle any events that change the bounds of the map
+        // Handle any events that change the bounds of the map.
         map.events.add('zoomend', updateAQIData)
         map.events.add('dragend', updateAQIData)
         map.events.add('pitchend', updateAQIData)
@@ -183,15 +183,15 @@ The last update is to add a data source to the map to render the WAQI data. Azur
 
 ### Load the air quality data
 
-The Flask app will need to call the API to load the data for the visible portion of the map.
+The Flask app needs to call the API to load the data for the visible portion of a map.
 
-1. Open the `app.py` file
+1. Open the *app.py* file.
 
 1. Add the following code to the bottom of this file:
 
     ```python
     def get_color(aqi):
-        # Convert the AQI value to a color
+        # Convert the AQI value to a color.
         if aqi <= 50: return "#009966"
         if aqi <= 100: return "#ffde33"
         if aqi <= 150: return "#ff9933"
@@ -200,18 +200,18 @@ The Flask app will need to call the API to load the data for the visible portion
         return "#7e0023"
 
     def load_aqi_data(lon1, lat1, lon2, lat2):
-        # Load the air quality data
+        # Load the air quality data.
         url = WAQI_API_URL.format(lat1, lon1, lat2, lon2, WAQI_API_KEY)
         aqi_data = requests.get(url)
 
-        # Create a GeoJSON feature collection from the data
+        # Create a GeoJSON feature collection from the data.
         feature_collection = {
             "type" : "FeatureCollection",
             "features" : []
         }
 
         for value in aqi_data.json()["data"]:
-            # Filter out empty values
+            # Filter out empty values.
             if value["aqi"] != "-":
                 feature_collection["features"].append({
                     "type" : "Feature",
@@ -228,28 +228,28 @@ The Flask app will need to call the API to load the data for the visible portion
 
     @app.route("/aqi", methods = ["GET"])
     def get_aqi():
-        # Get the bounds from the request
+        # Get the bounds from the request.
         bounds = request.args["bounds"].split(",")
 
-        # Load the AQI data and create the GeoJSON for the given bounds
+        # Load the AQI data and create the GeoJSON for the specified bounds.
         return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
     ```
 
-1. Save the file
+1. Save the file.
 
-This code implements an API call inside the Flask app that will load the AQI data from the API for a given set of coordinates. The AQI data will then be converted to a feature collection and returned as a JSON string. This API can then be called from the webpage.
+This code implements an API call inside the Flask app that loads the AQI data from the API for a specific set of coordinates. The AQI data then is converted to a feature collection and returned as a JSON string. The API can then be called from the webpage.
 
 ### Show the air quality data on the map
 
 The feature collection that you created from the WAQI data is ready to show on a map.
 
-In Visual Studio code, make sure your app.py file is open. On the left, select the **Run** icon to expose the Run activity section. Then select the green triangle icon to run the Flask app and open it in a browser.
+In Visual Studio Code, make sure that your *app.py* file is open. On the left, select the **Run** icon to expose the **Run** activity section. Then, select the green triangle icon to run the Flask app and open it in a browser.
 
-You should see colored circles (bubbles) on the map that show the WAQI data.
+You should see colored circles (bubbles) on the map that show the WAQI data:
 
-![A map showing air quality as colored circles](../media/final-output.png)
+:::image type="content" source="../media/final-output.png" alt-text="Screenshot that shows a map with air quality shown as colored circles.":::
 
-Navigate around the map and you'll see the bubbles update to match the area you are viewing.
+Move around the map and you'll see the bubbles update to match the area you're viewing.
 
-Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as areas with large numbers of fossil fuel burning power stations or factories, others are not so obvious. Find ones near to you, and think about the cause of the pollution.
+Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as areas with large numbers of fossil fuel burning power stations or factories. Others are not so obvious. Find ones near to you, and think about the cause of the pollution.
 

@@ -201,47 +201,48 @@ To create the environment file:
     </html>
     ```
 
-    This webpage renders a full-screen `div` element that has an ID of `myMap`. After the page is fully loaded, the user's location is retrieved. The request causes the browser to request permission to get the user's location. The browser gets the user's location only if permission is granted. Otherwise, the browser uses the location of the Microsoft headquarters in Redmond, Washington, USA.
+    This webpage renders a full-screen `div` element that has an ID of `myMap`. After the page is fully loaded, the app attempts to get the user's location. The browser requests the user's permission to get their location, and it gets the location only if the user grants permission. Otherwise, the browser uses the location of the Microsoft headquarters in Redmond, Washington, USA.
 
     > [!NOTE]
-    > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°.
+    > Azure Maps uses longitude and latitude for the map coordinates. Longitude measures around the Earth from east to west, at 0° at the prime meridian (a line from the North Pole to the South Pole that runs through the United Kingdom). It goes east to 180° on the opposite side of the globe, roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0°, and the South Pole at -90°.
 
-    The map control is then loaded into the div. The Maps key is set to `{{ data.map_key }}`, and this notation is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
+    The map control is then loaded into the `div` element. The Maps key is set to `{{ data.map_key }}`. This notation is the Flask notation to render data into the HTML file. When this page is returned to the user's web browser, the value `{{ data.map_key }}` is replaced by the value of `map_key` set on the `data` object. This object was passed to the `render_template` call in the *app.py* file, and `map_key` is set to the Azure Maps primary key that loads from the *.env* file.
 
-    When the control is ready, a camera is set up over the user's location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid?azure-portal=true).
+    When the control is ready, a virtual camera centers the map view over the user's location. The zoom value shows how far above Earth the camera should be, and it determines how many meters of the map are shown per pixel on the screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](/azure/azure-maps/zoom-levels-and-tile-grid?azure-portal=true).
 
 1. Save the file.
 
 ## Run the app
 
-Visual Studio Code can be configured run and debug Flask apps, and you can use your browser to see the app in action.
+You can set up Visual Studio Code to run and debug Flask apps. Then, use your browser to see the app in action.
 
 To configure debugging for your app:
 
-1. Ensure the `app.py` file is open in the editor. The debug options you can configure vary depending on what the active file is.
+1. In Visual Studio Code, be sure that the *app.py* file is open in the editor. Debug options vary based on the file you have open.
 
-1. Select the **Run** tab from the activity bar, or select **View** > **Run**.
+1. In the activity bar, select the **Run** tab, or on the menu, select **View** > **Run**.
 
-    :::image type="content" source="../media/run-app.png" alt-text="w":::
+    :::image type="content" source="../media/run-app.png" alt-text="Screenshot that shows selecting Run for an open file in Visual Studio Code.":::
 
-1. Select **create a launch.json file**.
+1. Under the **Run and Debug** button, select the **create a launch.json file** link.
 
-    :::image type="content" source="../media/create-launch-file.png" alt-text="w":::
+    :::image type="content" source="../media/create-launch-file.png" alt-text="Screenshot that shows selecting the create a launch.json file link.":::
 
-1. A dropdown will appear to select the debug configuration. Select ***Flask** Launch and debug a Flask web application*.
+1. In the Command Palette, select **_Flask_ Launch and debug a Flask web application**.
 
-    :::image type="content" source="../media/launch-debug-flask-app.png" alt-text="w":::
+    :::image type="content" source="../media/launch-debug-flask-app.png" alt-text="Screenshot that shows selecting Flask Launch and debug a Flask web application in the Command Palette.":::
 
    > [!Note]
-   > If you don’t see a new file named **launch.json** inside a folder named **.vscode** in your app code folder, you can manually create the configuration file.
-   > Select the gear icon to the right of the **Run** drop-down box.
-   > A new launch.json file should open. The file should be placed in the .vscode folder. The text in the **Run** drop-down box should change to "Python:Flask."
+   > If you don’t see a new file named *launch.json* in the *.vscode* folder in your app code folder, you can manually create the configuration file:
+   >
+   > - To the right of **Run**, select the gear icon. A new launch.json opens in the *.vscode* folder and the text in **Run** changes to "Python:Flask."
+   >
 
-1. After the text in the **Run** drop-down box changes to "Python:Flask," select the green triangle icon to run the application.
+1. When "Python:Flask" shows in **Run**, select the green triangle icon to run the application.
 
-    :::image type="content" source="../media/run-flask-app.png" alt-text="w":::
+    :::image type="content" source="../media/run-flask-app.png" alt-text="Screenshot that shows the green triangle icon selected to run Flask.":::
 
-    The app will start. Code output shows the local URL it's running on.
+    The app starts. The code output shows the local URL the app is running on:
 
     ```output
      * Serving Flask app "app.py"
@@ -250,41 +251,41 @@ To configure debugging for your app:
      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
     ```
 
-1. Position your cursor on the IP address link in the terminal output. Enter CTRL+click to open the application in your web browser. If you give the site permission to get your location it will center on you, otherwise it will center on the Microsoft Campus in Redmond, Washington, USA.
+1. Position your cursor on the IP address link in the terminal output. Enter Ctrl+Click to open the application in your web browser. If you give the site permission to get your location, it centers on you. Otherwise, the app centers on the Microsoft headquarters in Redmond, Washington, USA.
 
-   ![The map running in the Edge web browser](../media/map-in-edge.png)
+    :::image type="content" source="../media/map-in-edge.png" alt-text="Screenshot of the map running in the Microsoft Edge web browser.":::   
 
-   Try navigating around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
+   Try moving around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
 
-   When you're finished, stop the app using the stop button on the debug toolbar in Visual Studio Code.
+   When you're finished, stop the app by using the stop button on the debug toolbar in Visual Studio Code.
 
-   ![The stop button](../media/stop-button.png)
+   :::image type="content" source="../media/stop-button.png" alt-text="Screenshot that shows the debug stop button in Visual Studio Code.":::
 
 ## Troubleshooting
 
 ### Exception has occurred: KeyError
 
-If your app stops as soon as it's run and shows an exception with the message `Exception has occurred: KeyError`, your Azure Maps key hasn't been added to the `.env` file.
+If your app stops as soon as it runs and shows an exception with the message `Exception has occurred: KeyError`, your Azure Maps key hasn't been added to the *.env* file.
 
-![Exception has occurred: KeyError](../media/key-error.png)
+:::image type="content" source="../media/key-error.png" alt-text="Screenshot that shows an example of the error message Exception has occurred: KeyError.":::
 
 Check the following:
 
-* Is there a file called `.env` in the root of your application?
-* This file should contain a key/value pair in the format of `key=value`. The key needs to be `MAP_KEY`, and the value needs to be your Primary key for the Azure Maps account.
+* Is there a file called *.env* in the root of your application?
+* The *.env* file should contain a key/value pair in the format `key=value`. The key must be `MAP_KEY`, and the value must be your primary key copied from the Azure Maps account.
 
 ### No data on the map
 
-If you don't see any data on the map, but you do see the Microsoft logo, you aren't using a valid key for the map control. Check the value in the `.env` file to ensure it is correct. This value shouldn't be in quotes.
+If you don't see any data on the map, but you do see the Microsoft logo, you aren't using a valid key for the map control. Check the value in the *.env* file to ensure that it's correct. The value shouldn't be in quotes.
 
 ## 500 Internal server error
 
-If a `500 Internal Server Error` is returned, check the logs in the Visual Studio Code terminal. The following indicates that the *home.html* file isn't in the correct location:
+If a `500 Internal Server Error` is returned, check the logs in the Visual Studio Code terminal. The following output example indicates that the *home.html* file isn't in the correct location:
 
 ```output
 jinja2.exceptions.TemplateNotFound: home.html
 ```
 
-The *home.html* file should be in the *templates* folder. Move the file and reopen the Flask app.
+The *home.html* file should be in the *templates* folder. Move the file and restart the Flask app.
 
-In this unit, you used the Azure Maps Web SDK to create a Flask app that shows a map. Next, let's learn about the GeoJSON format for spatial data.
+In this unit, you used the Azure Maps web SDK to create a Flask app that displays a map for the user's location. Next, let's learn about the GeoJSON format for spatial data.

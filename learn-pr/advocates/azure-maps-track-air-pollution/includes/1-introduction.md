@@ -26,7 +26,7 @@ In this module, you'll:
 - Learn about Azure Maps and the Maps web SDK
 - Create an Azure Maps account
 - Use the Azure Maps web SDK on a webpage
-- earn about GeoJSON, the data format of spatial data
+- Learn about GeoJSON, the data format of spatial data
 - Load air quality data from an API and show it on a map
 
 ## Prerequisites
