@@ -20,7 +20,7 @@ Maps can be rendered in different styles. These styles include:
 
 - **High-contrast**: A dark road map with higher contrast than other styles
 
-    ![A high-contrast map of Seattle](../media/map-high-contrast-dark.png)
+    ![A high-contrast map of Seattle](../media/high-contrast-dark.png)
 
 More styles are described in [Azure Maps supported map styles](/azure/azure-maps/supported-map-styles?azure-portal=true).
 

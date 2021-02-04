@@ -15,14 +15,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'The Spherical Mercator projection coordinate system does what to the map'
+  - content: 'What does the Spherical Mercator projection coordinate system do to a map?'
     choices:  
-    - content: 'Makes it round'
+    - content: 'Makes it round.'
       isCorrect: false
-      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
-    - content: 'Colors it in green and blue'
+      explanation: Incorrect. The Spherical Mercator projection coordinate system stretches the map at both the North Pole and the South Pole. This stretching makes a square map that can be rendered on a flat screen.
+    - content: 'Colors it in green and blue.'
       isCorrect: false
-      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
+      explanation: Incorrect. The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
     - content: 'Stretches the map at the poles'
       isCorrect: true
       explanation: Correct. The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
