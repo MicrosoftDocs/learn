@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a website hosted in Azure
   description: No matter your area of interest, get started with the cloud by creating your first Azure-hosted website.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

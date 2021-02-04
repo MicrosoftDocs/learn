@@ -5,8 +5,8 @@ metadata:
   description: Learn about the factors that influence cost, tools you can use to help estimate and manage your cloud spend, and how Azure's service-level agreements (SLAs) can impact your application design decisions. Prepare for AZ-900.
   brand: azure
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 6: Describe Azure cost management and service level agreements"

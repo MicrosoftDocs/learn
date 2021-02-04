@@ -5,8 +5,8 @@ metadata:
   title: Tour of Azure services
   description: In this unit, you'll take a tour of Azure services.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 11
