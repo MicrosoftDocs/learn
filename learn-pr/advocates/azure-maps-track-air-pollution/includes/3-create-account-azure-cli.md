@@ -1,4 +1,4 @@
-Before you can use Azure Maps on a webpage, you need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account and get a key that the web SDK needs to access the Maps account.
+Before you can use Azure Maps on a webpage, you need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account. You'll get a key that the web SDK needs to access the Maps account.
 
 ### Activate the sandbox
 

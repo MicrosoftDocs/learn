@@ -2,11 +2,11 @@ In this unit, you'll use Flask to create a Python app that shows the Azure Maps 
 
 ## Build the app
 
-To build the app, first, we'll create project folders, configure the Python environment, and install the Pip packages we need.
+To build the app, first, we'll create project folders, configure the Python environment, and install the pip packages we need.
 
 Then, we'll create an environment file and create the application Python file.
 
-Finally, we'll create a home.html file to show results.
+Finally, we'll create a *home.html* file to show results.
 
 ### Create the folders for the Python app
 
@@ -61,7 +61,7 @@ Pip is the package installer for Python. The application we'll create requires t
 * `python-dotenv` - This package allows environment variables like the Maps key to be loaded from environment files.
 * `requests` - This package makes it easy to make web requests and will be used later to query air quality data.
 
-First, we'll create a text file that lists the pip packages we need. Then, we'll run a command that install the packages that are listed in the text file.
+First, we'll create a text file that lists the pip packages we need. Then, we'll run a command that installs the packages that are listed in the text file.
 
 1. In Visual Studio Code, at the root of your application code folder, create a new text file named *requirements.txt*. Copy the following code into the text file:
 
@@ -94,7 +94,7 @@ The Flask app that you'll create will need to use your Azure Maps key to load th
 
 To create the environment file:
 
-1. At the root of your app code folder, create a new environment file named *.env.*.
+1. At the root of your app code folder, create a new environment file named *.env*.
 
 1. Copy the following statement into the environment file:
 
@@ -269,10 +269,10 @@ If your app stops as soon as it runs and shows an exception with the message `Ex
 
 :::image type="content" source="../media/key-error.png" alt-text="Screenshot that shows an example of the error message Exception has occurred: KeyError.":::
 
-Check the following:
+Verify that these requirements are met:
 
-* Is there a file called *.env* in the root of your application?
-* The *.env* file should contain a key/value pair in the format `key=value`. The key must be `MAP_KEY`, and the value must be your primary key copied from the Azure Maps account.
+* A file called *.env* is in the root of your application.
+* The *.env* file contains a key/value pair in the format `key=value`. The key must be `MAP_KEY`, and the value must be your primary key copied from the Azure Maps account.
 
 ### No data on the map
 

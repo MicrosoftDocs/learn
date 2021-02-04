@@ -17,7 +17,7 @@ In this module, you'll get air pollution data by using a free API, and then use 
 
 The app you'll create will look like this:
 
-[![A map of the world showing pollution data as colored circles](../media/final-output.png)](../media/final-output.png#lightbox)
+:::image type="content" source="../media/final-output.png" alt-text="Image of a map of the world that shows pollution data as colored circles.":::
 
 ## Learning objectives
 
@@ -38,4 +38,4 @@ In this module, you'll:
 - Python extension for Visual Studio Code installed
 
 > [!TIP]
-> If you want to learn how to set up and configure Visual Studio Code for Python development, complete [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/languages/python-install-vscode/?azure-portal=true).
+> If you want to learn how to set up and configure Visual Studio Code for Python development, complete [Set up your Python beginner development environment with Visual Studio Code](/learn/languages/python-install-vscode/?azure-portal=true).
