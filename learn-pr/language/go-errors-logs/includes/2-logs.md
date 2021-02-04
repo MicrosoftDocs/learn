@@ -206,4 +206,4 @@ When you run the preceding code, you get this output:
 
 Notice how we added as a context the employee ID. It becomes part of the logline as another property. Also, it's important to highlight that the fields you include are strongly typed.
 
-You can implement other features with zerolog, like using levelled logging, using formatted stack traces, and using more than one logger instance to manage different outputs. For more information, see the [GitHub site](https://github.com/rs/zerolog).
+You can implement other features with zerolog, like using leveled logging, using formatted stack traces, and using more than one logger instance to manage different outputs. For more information, see the [GitHub site](https://github.com/rs/zerolog).
