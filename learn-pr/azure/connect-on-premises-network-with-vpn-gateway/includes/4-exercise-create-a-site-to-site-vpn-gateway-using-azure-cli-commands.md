@@ -24,7 +24,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
         --subnet-name GatewaySubnet 
     ```
 
-1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway.
+1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway. 
 
     ```azurecli
     az network vnet-gateway create \
