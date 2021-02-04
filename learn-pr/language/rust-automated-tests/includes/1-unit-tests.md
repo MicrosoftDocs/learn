@@ -1,4 +1,4 @@
-Unit Tests in Rust are simple functions marked with the `#[test]` attribute that verify that the non-test code is functioning in the expected manner. These functions are only compiled when testing our code.
+Unit tests in Rust are simple functions marked with the `#[test]` attribute that verify that the non-test code is functioning in the expected manner. These functions are only compiled when testing our code.
 
 The bodies of test functions typically perform some setup, run the code we want to test, and then assert whether the results are what we expect.
 
@@ -100,7 +100,7 @@ fn add_negatives() {
 }
 ```
 
-Ignored test functions will still be type-checked and compiled but won't be executed in our tests.
+Ignored test functions will still be type checked and compiled but won't be executed in our tests.
 
 ```output
 running 3 tests
