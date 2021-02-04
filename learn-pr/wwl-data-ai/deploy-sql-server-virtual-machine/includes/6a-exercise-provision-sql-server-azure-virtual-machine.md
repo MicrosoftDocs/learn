@@ -13,7 +13,7 @@ You're a database administrator. You need to create a test environment for use i
 1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
 
 1. Select **Yes** to save the login information.
-
+   
 1. On the **Welcome to Azure** popup, select **Maybe later**.
 
 
