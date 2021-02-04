@@ -29,7 +29,7 @@ quiz:
     - content: "Let the program terminate."
       isCorrect: false
       explanation: "Incorrect. You should always check for errors."
-  - content: "What's the function that you can use to create an error variable?"
+  - content: "Which function can you use to create an error variable?"
     choices:
     - content: "`errors.New('Employee not found!')`"
       isCorrect: true
@@ -78,10 +78,10 @@ quiz:
       explanation: "Correct. The standard `log` package doesn't offer this functionality. You might need it as your codebase grows."
     - content: "To make your programs run slower."
       isCorrect: false
-      explanation: "Incorrect. Although this statement might be true to some extent, it isn't accurate."
+      explanation: "Incorrect. This statement might be true to some extent, but it isn't accurate."
     - content: "To simply configure structured logging."
       isCorrect: false
-      explanation: "Incorrect. Although you can structure logs, this isn't the main purpose of logging frameworks."
+      explanation: "Incorrect. You can structure logs, but it isn't the main purpose of logging frameworks."
     - content: "To write less code."
       isCorrect: false
-      explanation: "Incorrect. Although you might end up writing less code, this isn't the main purpose of logging frameworks."    
+      explanation: "Incorrect. You might end up writing less code, but it isn't the main purpose of logging frameworks."    

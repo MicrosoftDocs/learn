@@ -1,6 +1,6 @@
-While you're writing your programs, you need to consider the various ways your programs can fail and manage failures. Your users don't need to see a long and confusing stack trace error. It's better if they see meaningful information about what went wrong. As you've seen, Go has built-in functions like `panic` and `recover` to manage exceptions, or unexpected behavior, in your programs. But errors are known failures that your programs should be built to expect.
+While you're writing your programs, you need to consider the various ways your programs can fail, and you need to manage failures. Your users don't need to see a long and confusing stack trace error. It's better if they see meaningful information about what went wrong. As you've seen, Go has built-in functions like `panic` and `recover` to manage exceptions, or unexpected behavior, in your programs. But errors are known failures that your programs should be built to handle.
 
-Go's approach to error handling is simply a control-flow mechanism where only an `if` and a `return` statement are needed. For example, when you're calling a function to get information from an `employee` object, you might want to know if the employee exists. Go's opinionated way for handling such an expected error would look like so:
+Go's approach to error handling is simply a control-flow mechanism where only an `if` and a `return` statement are needed. For example, when you're calling a function to get information from an `employee` object, you might want to know if the employee exists. Go's opinionated way for handling such an expected error would look like this:
 
 ```go
 employee, err := getInformation(1000)
@@ -9,11 +9,11 @@ if err != nil {
 }
 ```
 
-Notice how the `getInformation` function is returning the `employee` struct and returns an error as a second value (the error) that could be `nil`. An error could be `nil`, which mean success. Or it could be non-`nil`, which means failure. A non-`nil` error comes with an error message that you could either print or log (preferably). This is how you handle errors in Go. We'll cover a few other strategies in the next section.
+Notice how the `getInformation` function returns the `employee` struct and also an error as a second value. The error could be `nil`. If the error is `nil`, that means success. If it's not `nil`, that means failure. A non-`nil` error comes with an error message that you can either print or, preferably, log. This is how you handle errors in Go. We'll cover a few other strategies in the next section.
 
 You'll probably notice that error handling in Go demands that you pay more attention to how you report and handle an error. That's exactly the point. Let's look at some other examples to help you better understand Go's approach to error handling.
 
-Let's use the code snippet that we used for structs to practice various error handling strategies:
+We'll use the code snippet that we used for structs to practice various error handling strategies:
 
 ```go
 package main
@@ -96,7 +96,7 @@ func getInformation(id int) (*Employee, error) {
 }
 ```
 
-Finally, instead of printing to errors to the console, you could log errors and hide any implementation details from the end user. We'll cover logging in the next module. For now, let's see how you can create and use custom errors.
+Finally, instead of printing errors to the console, you could log errors and hide any implementation details from end users. We'll cover logging in the next module. For now, let's look at how you can create and use custom errors.
 
 ## Create reusable errors
 
@@ -132,8 +132,8 @@ if errors.Is(err, ErrNotFound) {
 
 When you're handling errors in Go, here are some recommended practices to keep in mind:
 
-- Always check for errors, even if you don't expect them. Then handle them properly to avoid exposing unnecessary information to the end user.
-- Include a prefix in an error message so you know the origin of the error. For example, the name of the package and function.
+- Always check for errors, even if you don't expect them. Then handle them properly to avoid exposing unnecessary information to end users.
+- Include a prefix in an error message so you know the origin of the error. For example, you could include the name of the package and function.
 - Create reusable error variables as much as you can.
 - Understand the difference between using returning errors and panicking. Panic when there's nothing else you can do. For example, if a dependency isn't ready, it doesn't make sense for the program to work (unless you want to run a default behavior).
 - Log errors with as many details as possible (we'll cover how in the next section) and print out errors that an end user can understand.

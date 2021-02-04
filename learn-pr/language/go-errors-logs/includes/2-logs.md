@@ -140,7 +140,7 @@ When you run the preceding code, you don't see anything in the console. In your 
 
 ## Logging frameworks
 
-Finally, there might be times when the `log` package's functions aren't enough. You might find it helpful to use a logging framework instead of writing your own libraries. For example, a few logging frameworks in Go are [Logrus](https://github.com/sirupsen/logrus), [zerolog](https://github.com/rs/zerolog), [zap](https://github.com/uber-go/zap), and [Apex](https://github.com/apex/log).
+Finally, there might be times when the `log` package's functions aren't enough. You might find it helpful to use a logging framework instead of writing your own libraries. A few logging frameworks for Go are [Logrus](https://github.com/sirupsen/logrus), [zerolog](https://github.com/rs/zerolog), [zap](https://github.com/uber-go/zap), and [Apex](https://github.com/apex/log).
 
 Let's explore what we can do with zerolog.
 
@@ -206,4 +206,4 @@ When you run the preceding code, you get this output:
 
 Notice how we added as a context the employee ID. It becomes part of the logline as another property. Also, it's important to highlight that the fields you include are strongly typed.
 
-You can implement other features with zerolog, like logging levels, format stack traces, and using more than one logger instance to manage different outputs. For more information, see the [GitHub site](https://github.com/rs/zerolog).
+You can implement other features with zerolog, like using levelled logging, using formatted stack traces, and using more than one logger instance to manage different outputs. For more information, see the [GitHub site](https://github.com/rs/zerolog).
