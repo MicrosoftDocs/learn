@@ -1,24 +1,18 @@
-In many cases, internal, external, or public policies, regulations, and laws define data protection requirements. For example, a company can define an internal data protection policy to protect its intellectual property. The company can also define an external policy for its vendors to specify how they should manage data when doing business with the company.
+Data-protection requirements will vary depending on an organization's needs. Internal, external, and public policies and laws can help define these requirements. For example, a company might define an internal data-protection policy to protect its intellectual property. The company also might define an external policy that applies to its vendors and how they must manage data when doing business with the company. <!-- ID/SME: Per CELA's review, they suggest the following: "This only talks about company policies. Because this is a section about “privacy regulations,” you may want to describe what these generally are in the intro." !-->
 
 ## Overview of privacy regulations
 
-A country/region can define a law or regulation that defines how government authorities or companies that process personal data, collect, and manage that personal data. Examples of these regulations are General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA), which the next units discuss in more detail.
+A country/region can define laws or regulations about data collection and management. The governmental authorities or companies that are based in the country/region must follow these laws or regulations. Examples include the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA). Subsequent units provide more detail about this two examples. 
 
-In general, information privacy, data privacy, or data protection regulations and laws provide a legal framework on how to obtain, use, and store data about persons, companies, or other entities. Laws and regulations rarely define or prescribe specific technologies that you can use to protect data. Instead, you should choose appropriate technologies, platforms, or vendors that comply with a specific regulation or law.
+Information privacy, data privacy, and data protection regulations and laws provide a legal framework about how organizations and individuals can collect, use, and store data about people, companies, or other entities. Laws and regulations rarely define or prescribe specific technologies that you must use to protect data. Rather, you're responsible for selecting appropriate technologies, platforms, or vendors that comply with your legal requirements.
 
-The various laws around the world describe the rights of persons and companies to control who is using their data. This usually includes the right to get details on:
-
-- The data that's being stored.
-
-- The purpose of data storage.
-
-- Requesting deletion if the purpose of data storage is not valid anymore.
+Various laws around the world describe the rights of people and companies to control who's using their data. Privacy laws and regulations generally set forth requirements that must be followed when handling different types of data.
 
 ## Considerations for defining compliant procedures
 
-Data protection policies that companies use internally mostly focus on the principles and procedures for data access management and data protection. At the same time, laws and regulations in this field strongly focus on data collection and data usage. Regulations very specifically define the who, when, and how of personal data collection. They also define how the data should be used and removed or deleted.
+Internal data-handling policies that your organization develops should reflect the requirements in laws and regulations that apply to your organization and the data it's handling. Your internal compliance framework should focus on principles and procedures for data access, use, and protection.
 
-Very often, organizations implement government-provided data privacy and protection regulations and internal data protection policies. Data protection officers must have a good understanding of the requirements according to their country/region’s laws and regulations and their organization’s internal policies. Based on this understanding, they define procedures for data collection, storage, and protection and the use of technologies for their implementation.
+Data-protection officers must understand data-handling requirements based on their country/region’s laws and regulations and their organization’s internal policies. This can help them define procedures for data collection, storage, and protection and technology use.
 
 > [!NOTE]
-> Microsoft provides compliance offerings to help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+> Microsoft provides compliance offerings that you can use to help your organization comply with national, regional, and industry-specific requirements governing data collection and use.
