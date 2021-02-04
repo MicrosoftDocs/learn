@@ -5,7 +5,7 @@ metadata:
   title: File system performance considerations
   description: File system performance considerations
   ms.date: 12/29/2020
-  author: scjeschomsft
+  author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -33,6 +33,6 @@ quiz:
     - content: "15 MB/s"
       isCorrect: false
       explanation: "5000 IOPS * 4K block size = 20 MB/s"
-    - content: ""20 MB/s
+    - content: "20 MB/s"
       isCorrect: true
       explanation: "5000 IOPS * 4K block size = 20 MB/s"

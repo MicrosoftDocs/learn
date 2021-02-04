@@ -5,7 +5,7 @@ metadata:
   title: NFS Overview
   description: NFS Overview
   ms.date: 12/29/2020
-  author: scjeschomsft
+  author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -38,7 +38,7 @@ quiz:
       explanation: "NFSv2/v3 uses NLM/NSM advisory locking which is not enforced"
     - content: "NFSv3"
       isCorrect: false
-      explanation: "NFSv2/v3 uses NLM/NSM advisory locking which is not enforced""
+      explanation: "NFSv2/v3 uses NLM/NSM advisory locking which is not enforced"
     - content: "NFSv4"
       isCorrect: true
       explanation: "NFSv4 supports active file locking"

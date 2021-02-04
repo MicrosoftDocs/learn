@@ -5,7 +5,7 @@ metadata:
   title: File system traffic considerations
   description: File system traffic considerations
   ms.date: 12/29/2020
-  author: scjeschomsft
+  author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -29,7 +29,6 @@ quiz:
     - content: "Snapshot"
       isCorrect: true
       explanation: "Snapshots are read-only copies of your file system"
-    - content: "A read-only copy of your file system taken at a point in time is known as:"
   - content: "the potential maximum file count and size your workload requires is known as the:"  
     choices:
     - content: "data"
@@ -37,7 +36,7 @@ quiz:
       explanation: "data is a generic term for all of the files and information"
     - content: "working set"
       isCorrect: true
-      explanation: "Working set refers to the "the potential maximum file count and size your workload requires"
+      explanation: "Working set refers to the the potential maximum file count and size your workload requires"
     - content: "directory"
       isCorrect: false
       explanation: "A directory is a data structure which records file information in a file system"
