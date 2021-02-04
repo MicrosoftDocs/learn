@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.innovate-applications-azure-cloud-technologies
+metadata:
+  title: Innovate applications with Azure cloud technologies. 
+  description: Innovation is a complex topic that encompasses many disciplines. The agility of public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements. 
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Innovate applications with Azure cloud technologies.
+summary: Innovation is a complex topic that encompasses many disciplines. The agility of public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements.
+abstract: | 
+  In this module, you will:
+  - Understand the innovation cycle
+  - Map Azure services to the different phases of the innovation cycle
+  - Correlate technologies to business outcomes of innovation
+prerequisites: | 
+  - Foundational understanding of cloud adoption 
+  - Understanding of your organization's products, markets and customers 
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- solution-architect
+- functional-consultant
+- business-analyst
+- business-owner
+- technology-manager
+- auditor
+- student
+products:
+- azure
+- azure-kubernetes-service
+- azure-machine-learning
+units:
+- learn.innovate-applications-azure-cloud-technologies.1-introduction
+- learn.innovate-applications-azure-cloud-technologies.2-innovation-lifecycle
+- learn.innovate-applications-azure-cloud-technologies.3-azure-technologies-build-process
+- learn.innovate-applications-azure-cloud-technologies.4-infuse-application-artificial-intelligence
+- learn.innovate-applications-azure-cloud-technologies.5-azure-technologies-measure-process
+- learn.innovate-applications-azure-cloud-technologies.6-azure-technologies-learn-process
+- learn.innovate-applications-azure-cloud-technologies.7-summary
+badge:
+  uid: learn.innovate-applications-azure-cloud-technologies.badge

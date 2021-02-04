@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.ensure-stable-operations-azure-workloads.3-azure-technologies-build-process
+metadata:
+  title: Azure technologies for the build process
+  description: TBD.
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure technologies for the build process
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-azure-technologies-build-process.md)]

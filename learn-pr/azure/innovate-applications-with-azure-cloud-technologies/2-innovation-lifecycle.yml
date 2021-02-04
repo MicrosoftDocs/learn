@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.ensure-stable-operations-azure-workloads.2-innovation-lifecycle
+metadata:
+  title: Follow the innovation lifecycle
+  description: TBD
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Follow the innovation lifecycle
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-establish-business-commitments.md)]

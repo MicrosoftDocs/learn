@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.ensure-stable-operations-azure-workloads.4-infuse-application-artificial-intelligence
+metadata:
+  title: Infuse your applications with Artificial Intelligence
+  description: TBD
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Infuse your applications with Artificial Intelligence
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-infuse-application-artificial-intelligence.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: True
+      explanation: A.
+    - content: B.
+      isCorrect: false
+      explanation: B.
+    - content: C.
+      isCorrect: false
+      explanation: C.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: A.
+    - content: B.
+      isCorrect: true
+      explanation: B.
+    - content: C.
+      isCorrect: false
+      explanation: C.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: A.
+    - content: B.
+      isCorrect: false
+      explanation: B.
+    - content: C. 
+      isCorrect: true
+      explanation: C.
