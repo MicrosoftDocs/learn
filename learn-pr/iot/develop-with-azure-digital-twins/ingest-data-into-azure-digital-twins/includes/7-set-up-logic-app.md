@@ -79,7 +79,7 @@ az ad app update --id <application ID> --reply-urls http://localhost <redirect U
 
 ## Create the logic app
 
-1. Go to the [Logic Apps](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Logic%2Fworkflows) Pane and select **Add**.
+1. Go to the [Logic Apps](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Logic%2Fworkflows) pane and select **Add**.
 1. On the **Logic App** page that follows, enter your subscription and resource group. Also, choose a name for your logic app and select the deployment location.
 1. Select **Review + create**.
 1. You're taken to the deployment page for the logic app. When deployment is finished, select **Go to resource** to continue to the Logic Apps Designer, where you'll fill in the logic of the workflow.
