@@ -1,6 +1,6 @@
 What a ride! 
 
-As you've noticed in this module, you can write extensible and reusable code even though Go doesn't fully fit the OOP paradigm. Still, you needed to first learn the Go way to handle encapsulation, overloading, embedding, and interfaces. 
+As you've noticed in this module, you can write reusable and extensible code even though Go doesn't fully fit the OOP paradigm. Still, you first needed to learn the Go way to handle encapsulation, overloading, embedding, and interfaces. 
 
 A useful feature in Go is the ability to extend code from the standard libraries, even if your code base ends up growing. You might use frameworks, but Go doesn't favor them. That's because you can overwrite a lot of the functionality from the standard libraries.
 
