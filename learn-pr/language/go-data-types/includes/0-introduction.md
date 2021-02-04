@@ -14,7 +14,7 @@ In this module, you'll learn about:
 
 ## Prerequisites
 
-- A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/).
+- A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
 - Be able to create and modify `.go` files.
 - Be able to run Go applications by using the terminal prompt.
 - Have knowledge of basic data types like `string`, `int`, and `boolean`.
