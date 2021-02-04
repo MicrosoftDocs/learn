@@ -81,7 +81,7 @@ quiz:
       explanation: "Incorrect. This statement might be true to some extent, but it isn't accurate."
     - content: "To simply configure structured logging."
       isCorrect: false
-      explanation: "Incorrect. You can structure logs, but it isn't the main purpose of logging frameworks."
+      explanation: "Incorrect. You can structure logs, but that isn't the main purpose of logging frameworks."
     - content: "To write less code."
       isCorrect: false
-      explanation: "Incorrect. You might end up writing less code, but it isn't the main purpose of logging frameworks."    
+      explanation: "Incorrect. You might end up writing less code, but that isn't the main purpose of logging frameworks."    
