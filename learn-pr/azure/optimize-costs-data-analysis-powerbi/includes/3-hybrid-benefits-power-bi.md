@@ -6,10 +6,10 @@ In the Azure Cost Management Power BI App, navigate to the **Windows Server AHB 
 
 The report shows the number of virtual machines that have Azure Hybrid Benefit enabled over time. It also shows a count of cores/vCPUs currently used by the virtual machines.
 
-:::image type="content" source="../media/3-windows-server-usage-report.png" alt-text="Image showing the Windows Server AHB usage report" lightbox="../media/3-windows-server-usage-report.png" :::
+:::image type="content" source="../media/3-windows-server-usage-report.png" alt-text="Screenshot showing the Windows Server A H B usage report." lightbox="../media/3-windows-server-usage-report.png" :::
 
 The report also identifies Windows VMs where Hybrid Benefit is currently **enabled** but there are _less than_ 8 vCPUs. They're shown under **AHB enabled SKUs with less than 8 vCPU (last day)**. In other words, the VMs shown in this area aren't fully using the benefit.
 
 There might be situations where you intend to use less than 8 vCPUs. However, licenses for VMs in this area are likely good candidates to get replaced by VMs under **SKUs with 8+ vCPUs where AHB not enabled (last day)**. That's because the larger VMs where AHB isn't enabled are much more expensive than smaller ones. In other words, VMs shown in this area _aren't using any benefits at all_. Apply the benefit to your most expensive virtual machines, like those in this area, to maximize your potential savings.
 
-:::image type="content" source="../media/3-benefits-usage.png" alt-text="Image showing a section where VMs are underused and not enabled" lightbox="../media/3-benefits-usage.png" :::
+:::image type="content" source="../media/3-benefits-usage.png" alt-text="Screenshot showing a section where V M are underused and not enabled." lightbox="../media/3-benefits-usage.png" :::

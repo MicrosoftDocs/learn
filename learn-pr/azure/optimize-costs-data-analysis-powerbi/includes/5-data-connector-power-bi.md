@@ -17,7 +17,7 @@ To connect to using the **Azure Cost Management connector** in Power BI Desktop:
 1. In the **Home** ribbon, select **Get Data**.
 1. Select **Azure** from the list of data categories. You might need to select **More** at the end of the list.
 1. Select **Azure Cost Management** and then select **Connect**.  
-    :::image type="content" source="../media/5-power-bi-desktop-get-data.png" alt-text="Image showing Connect to Azure Cost Management in Power BI Desktop" :::
+    :::image type="content" source="../media/5-power-bi-desktop-get-data.png" alt-text="Screenshot showing Connect to Azure Cost Management in Power B I Desktop." :::
 1. In the dialog that appears for **Choose Scope**, select either your **Billing Profile ID** for **Microsoft Customer Agreements**, or your **Enrollment Number** for **Enterprise Agreements (EA)**.
 
 ### Connect with a Microsoft Customer Agreement account
@@ -30,7 +30,7 @@ To connect with a **Microsoft Customer Agreement** account, you can get your **B
 1. Under **Billing profile**, copy the **ID**.
 1. For **Choose Scope**, select **Billing Profile ID** and paste the billing profile ID from the previous step.
 1. Enter the number of months of data to get and select **OK**.  
-    :::image type="content" source="../media/5-billing-profile-id.png" alt-text="Image showing selecting the Billing Profile ID for a Microsoft Customer Agreement" :::
+    :::image type="content" source="../media/5-billing-profile-id.png" alt-text="Screenshot showing selecting the Billing Profile I D for a Microsoft Customer Agreement." :::
 1. When prompted, sign in with your Azure user account and password.
 
 ### Connect with an Enterprise Agreement account
@@ -42,7 +42,7 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 1. On the **Overview** page, copy the **Billing account ID**.
 1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number**, and then paste the billing account ID from the previous step.
 1. Enter the number of months of data to get and then select **OK**.  
-    :::image type="content" source="../media/5-enrollment-number.png" alt-text="Image showing selecting the billing account ID for an Enterprise Agreement" :::
+    :::image type="content" source="../media/5-enrollment-number.png" alt-text="Screenshot showing selecting the billing account I D for an Enterprise Agreement." :::
 1. When prompted, sign in with your Azure user account and password.
 
 ## Create a custom report with your data
@@ -78,10 +78,10 @@ To create a report:
  1. Next, under **Visualizations**, choose a visualization to view. For this example, select **Stacked column chart**. Under **Visualizations**, various items become available. An empty chart is also inserted on to the page.
  1. In the **Fields** list, select and drag **Cost** to the **Values** area. The chart on the page is updated with data.
  1. Next, in the **Fields** list, select and then drag **Date** to **Axis**. The chart is updated and now shows costs over time.  
-    :::image type="content" source="../media/5-power-bi-desktop-report-costs-date.png" alt-text="Image showing the report with costs by date" lightbox="../media/5-power-bi-desktop-report-costs-date.png" :::
+    :::image type="content" source="../media/5-power-bi-desktop-report-costs-date.png" alt-text="Screenshot showing the report with costs by date." lightbox="../media/5-power-bi-desktop-report-costs-date.png" :::
  1. In the **Fields** list, select and then drag **MeterCategory** to the **Legend** area. The chart is updated and shows the costs over time where each day shows the cost for each MeterCategory (Azure service).
  1. To better read values in the Legend, select **Format**, which looks like a paint roller symbol and then select **Legend** > **Position** > **Right**.
  1. Optionally, resize the chart if needed.  
-     :::image type="content" source="../media/5-power-bi-desktop-report-costs-date-meter-category.png" alt-text="Image showing the completed report with costs by date and meter category" lightbox="../media/5-power-bi-desktop-report-costs-date-meter-category.png" :::
+     :::image type="content" source="../media/5-power-bi-desktop-report-costs-date-meter-category.png" alt-text="Screenshot showing the completed report with costs by date and meter category." lightbox="../media/5-power-bi-desktop-report-costs-date-meter-category.png" :::
 
 Now you have a simple report that shows your cost over time. Continue to explore other options and fields on your own to create reports that satisfy your needs.
