@@ -8,7 +8,7 @@ In this unit, you'll use Search explorer to write queries, review top results, a
 
 1. If you aren't still signed into the Azure portal, sign in [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
 1. Select the Azure Cognitive Search resource you created to navigate to its overview page.
 
@@ -22,7 +22,7 @@ Using the Search explorer, you'll build up complex search queries that you can p
 
 ## Simple search
 
-1. Enter `yoga` in the **Query string**, then select **Search**.
+1. Enter `yoga` in the **Query string** field, and then select **Search**.
 
 1. The search index should return a JSON document containing your search results. The matching documents are contained in the `value` array. Each item in the array is the data related to the video in the catalog.
 
@@ -67,9 +67,9 @@ Using the Search explorer, you'll build up complex search queries that you can p
 1. Try to change the query to exclude results for Hatha Yoga. Enter `yoga -hatha`, and then select **Search**.
 
     > [!IMPORTANT]
-    > Note that all the exercise classes are returned. This is because the default behavior for query expressions is to search on *any* of the terms. For the above query, all titles that do not include hatha (the `-hatha` term) are considered a match. You can switch the `searchMode` on the query to use all the terms instead of any of them (`searchMode=all`).
+    > Note that all the exercise classes are returned. This is because the default behavior for query expressions is to search on *any* of the terms. For this query, all titles that do not include hatha (the `-hatha` term) are considered a match. You can switch the `searchMode` on the query to use all the terms instead of any of them (`searchMode=all`).
 
-1. Change the query to `yoga -hatha&searchMode=all`, then select **Search**. This will ensure that both yoga and **NOT** hatha are in the title of the videos, returning:
+1. Change the query to `yoga -hatha&searchMode=all`, and then select **Search**. This will ensure that both yoga and **NOT** hatha are in the title of the videos, returning:
 
     ```json
     {
@@ -99,23 +99,23 @@ Using the Search explorer, you'll build up complex search queries that you can p
 
 1. Using the `+` operator, can you change the previous query to return the same results above? Enter `yoga + -hatha` in the **Query string**, then select **Search**.
 
-1. Search for all the videos that have boxing or cardio in the title. Enter `(boxing | boxercise) cardio` in the **Query string**, then select **Search**.
+1. Search for all the videos that have boxing or cardio in the title. Enter `(boxing | boxercise) cardio` in the **Query string** field, and then select **Search**.
 
-1. Using the suffix operator `*` can you change the query to give the same results? Enter `box* cardio` in the **Query string**, then select **Search**.
+1. Using the suffix operator `*`, can you change the query to give the same results? Enter `box* cardio` in the **Query string** field, and then select **Search**.
 
 ## Top three results
 
-1. Write a query to return the top three most difficult exercise videos. Enter `*&$top=3&$orderby=Difficulty desc` in the **Query string**, then select **Search**.
+1. Write a query to return the top three most difficult exercise videos. Enter `*&$top=3&$orderby=Difficulty desc` in the **Query string** field, and then select **Search**.
 
-1. Can you enhance the above query to simulate paging through all the exercise videos, using five results per page, to return the third page? Enter `*&$top=5&$skip=10` in the **Query string**, then select **Search**.
+1. Can you enhance the above query to simulate paging through all the exercise videos, using five results per page, to return the third page? Enter `*&$top=5&$skip=10` in the **Query string** field, and then select **Search**.
 
-## Filtering a query
+## Filter a query
 
-1. Imagine a use case where a customer only wants to view small videos on their mobile device. Use a filter to return the all the exercises that are less than 500mb. Enter `*&$filter=Size lt 500` in the **Query string**, then select **Search**.
+1. Imagine a use case where a customer only wants to view small videos on their mobile device. Use a filter to return the all the exercises that are less than 500mb. Enter `*&$filter=Size lt 500` in the **Query string** field, and then select **Search**.
 
 ## Faceting
 
-1. The users need a way to quickly select videos of a specific difficulty. The web team would like to offer faceted browsing on the difficulty of exercises in a video. Enter `*&facet=Difficulty` in the **Query string**, then select **Search**.
+1. The users need a way to quickly select videos of a specific difficulty. The web team would like to offer faceted browsing on the difficulty of exercises in a video. Enter `*&facet=Difficulty` in the **Query string** field, and then select **Search**.
 
 1. This returns all the videos in the search results, but also includes a facets array:
 
