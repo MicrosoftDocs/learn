@@ -62,19 +62,19 @@ Important data-processing terms to know include:
 
   - Customer content that they upload to, or create in, specific services. Examples include customer content in an Azure Storage account, customer content of an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
   
-- System-generated logs. Microsoft and other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, which is data that's replaced by one or more artificial identifiers or pseudonyms. An example of pseudonymized data is unique identifiers. A unique identifier typically is a number that a system generates that can't identify an individual person. However, it's used to deliver enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.
+- System-generated logs. Microsoft and other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized data, which is data that's replaced by one or more artificial identifiers or pseudonyms. Unique identifiers are an example of pseudonymized data. They're typically a number that a system generates that can't identify an individual person. They're used to deliver enterprise services to users. System-generated logs might also contain identifiable information about end users, such as a username.
 
 ## Process of completing DSRs
 
-A controller must promptly consider each DSR and produce a substantive response, either by taking the requested action or providing an explanation about why they can't accommodate the DSR. A controller should consult with their own legal or compliance advisers about the proper disposition of a DSR. Completing a DSR might involve several processes that are subject to your organization's GDPR compliance rules, including:
+A controller must promptly consider each DSR and produce a substantive response. This response can include pursuing the requested action or providing an explanation about why the DSR can't be addressed. A controller should consult with their legal or compliance advisers about a DSR's proper disposition. Completing a DSR might involve several processes that are subject to your organization's GDPR compliance rules, including:
 
--	Discovery. Use search and discovery tools to find customer data that might be the subject of a DSR. After collecting potentially responsive documents, you can perform one or more of the DSR actions described in the following steps to respond. Alternatively, you might decide that the request doesn't meet your organization's guidelines for responding to DSRs.
+-	Discovery. Use search and discovery tools to find customer data that might be the subject of a DSR. After collecting potentially responsive documents, you can perform the DSR actions described in the following steps. Alternatively, you might decide that the request doesn't meet your organization's guidelines for responding to DSRs.
 
 - Access. Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it available to the data subject.
 
 - Rectification. Make changes or implement other requested actions on the personal data, where applicable.
 
-- Restriction. Restrict processing of personal data, either by removing licenses for various Azure services or turning off the desired services, where possible. You can also remove data from the Microsoft cloud and keep it on-premises or at another location.
+- Restriction. Restrict processing of personal data, either by removing licenses for various Azure services or turning off desired services, if possible. You can also remove data from the Microsoft cloud and keep it on-premises or at another location.
 
 - Deletion. Permanently remove personal data that resides in the Microsoft cloud.
 

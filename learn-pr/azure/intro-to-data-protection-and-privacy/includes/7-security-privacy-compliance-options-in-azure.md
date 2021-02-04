@@ -18,9 +18,27 @@ The Service Trust Portal has extra guidance and tools to help you meet your secu
 
 ### Azure Blueprints
 
-The free Azure Blueprints service helps customers build secure Azure applications that comply with GDPR, Health Insurance Portability and Accountability Act, and other regulations. Azure Blueprints also helps simplify large-scale Azure deployments. It packages key environment artifacts in a single blueprint definition. These definitions can include Azure Resource Manager templates, resource groups, role-based access controls, and policies. It also provides templates that you can use to create, deploy, and update fully governed cloud environments that meet and comply with regulatory requirements and standards.
+The free Azure Blueprints service helps customers build secure Azure applications that comply with GDPR, Health Insurance Portability and Accountability Act, and other regulations. Azure Blueprints also helps simplify large-scale Azure deployments. It packages key environment artifacts in a single blueprint definition. These definitions can include:
 
-Azure Blueprints differs from Azure Resource Manager and Azure Policy because it's a package that has different artifact types. Artifacts include Azure Resource Manager templates, resource groups, policy assignments, and role assignments. Azure Blueprints packages them all in one container, so you can deploy them in a repeatable configuration. You can use its built-in blueprints or create your custom ones.
+- Azure Resource Manager templates
+
+- Resource groups
+
+- Role-based access controls
+
+- Policies
+
+Azure Blueprints also has templates that you can use to create, deploy, and update fully governed cloud environments that meet and comply with regulatory requirements and standards. It differs from Azure Resource Manager and Azure Policy because it's a package that has different artifact types. Artifacts include:
+
+- Azure Resource Manager templates
+
+- Resource groups
+
+- Policy assignments
+
+- Role assignments
+
+Azure Blueprints packages these artifacts in one container, which you can deploy them in a repeatable configuration. You can use its built-in blueprints or create your custom ones.
 
 > [!NOTE]
 > You can create blueprints in the Azure portal or by using the REST API with tools such as PowerShell or the Azure portal. If you use the REST API, you can define blueprint parameters that help prevent conflicts if you reuse blueprints.
@@ -43,7 +61,7 @@ Azure Disk Encryption uses the industry-standard BitLocker feature of Windows an
 
 ### Protocols
 
-<!--ID/SME Please review for technical accuracy. Acrolinx really wanted this paragraph to have more simple, short sentences and less technical verbiage. I took my best shot.-->Azure uses industry-standard transport protocols for in-transit data. These protocols include TLS 1.2+ between devices and Microsoft datacenters, and within datacenters. You can enable encryption for traffic between your VMs and users. Use Server Message Block (SMB) 3.0 in VMs that are running Windows Server 2012 or newer to encrypt in-transit data. This encryption occurs over Azure virtual networks and help secure data transfers. Administrators can enable SMB encryption for an entire server or specific shares. You can use Secure Shell (SSH) to connect to Linux VMs that are running in Azure. SSH is an encrypted connection protocol that allows you to sign in securely over an unsecured connection.
+<!--ID/SME Please review for technical accuracy. Acrolinx really wanted this paragraph to have more simple, short sentences and less technical verbiage. I took my best shot.-->Azure uses industry-standard transport protocols for in-transit data. These protocols include TLS 1.2+ between devices and Microsoft datacenters, and within datacenters. You can enable encryption for traffic between your VMs and users. Use Server Message Block (SMB) 3.0 in VMs that are running Windows Server 2012 or newer to encrypt in-transit data. This encryption occurs over Azure virtual networks, helping secure data transfers. Administrators can enable SMB encryption for an entire server or specific shares. You can use Secure Shell (SSH) to connect to Linux VMs that are running in Azure. SSH is an encrypted connection protocol that allows you to sign in securely over an unsecured connection.
 
 #### Azure VPN encryption
 
@@ -51,7 +69,7 @@ Azure VPN encryption creates a secure, encrypted tunnel that helps protect data'
 
 ### Data redundancy
 
-You can opt for in-country/region storage for compliance or latency considerations. Conversely, you can use out-of-country/region storage for security or disaster-recovery purposes. Data might replicate, for redundancy, within a selected geographic area. Data in your Azure Storage account always replicate to ensure durability and high availability. You can choose from the following replication options:
+You can opt for in-country/region storage for compliance or latency considerations. Conversely, you can use out-of-country/region storage for security or disaster-recovery purposes. Data might replicate, for redundancy, within a selected geographic area. Data in your Azure Storage account always replicate to ensure durability and high availability. Replication options include:
 
 - Locally redundant storage
 
@@ -63,7 +81,7 @@ You can opt for in-country/region storage for compliance or latency consideratio
 
 #### Azure Defender for Storage
 
-Azure Defender for Storage provides a security-intelligence layer that detects unusual and potentially harmful attempts to access or exploit storage accounts. This protection layer enables you to address threats without having to be a security expert or manage security monitoring systems. Activity anomalies trigger security alerts that integrate with Azure Security Center. They're also sent through email to subscription administrators. The alerts contain details about suspicious activity and recommendations about how to investigate and remediate threats.
+Azure Defender for Storage provides a security-intelligence layer that detects unusual and potentially harmful attempts to access or exploit storage accounts. This protection layer enables you to address threats without having to be a security expert or manage security-monitoring systems. Activity anomalies trigger security alerts that integrate with Azure Security Center. They're also sent through email to subscription administrators. The alerts contain details about suspicious activity and recommendations about how to investigate and remediate threats.
 
 #### Azure Defender for SQL Database
 
