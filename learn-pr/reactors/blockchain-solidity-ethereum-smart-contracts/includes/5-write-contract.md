@@ -79,4 +79,4 @@ Next, make sure that you can deploy the contract successfully before you move on
 
 Watch the information in the output window. Look for a deployment of **3_deploy_contracts.js**.
 
-:::image type="content" source="../media/shipping-status-migration.png" alt-text="Screenshot showing the output window for the shipping status migration.":::
+:::image type="content" source="../media/shipping-migration.png" alt-text="Screenshot showing the output window for the shipping contract migration.":::
