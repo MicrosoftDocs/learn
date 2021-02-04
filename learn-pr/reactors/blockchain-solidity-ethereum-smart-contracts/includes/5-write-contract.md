@@ -72,7 +72,7 @@ Now let's add a migration file so that we can deploy the contract to the Ethereu
       deployer.deploy(Shipping);
     };
     ```
-    
+
 ## Deploy
 
 Next, make sure that you can deploy the contract successfully before you move on. Right-click the contract name and then select **Deploy Contracts**. In the window that appears, select **development** and then wait for the deployment to finish.
