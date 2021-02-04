@@ -8,6 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Introduction to Azure Arc enabled servers
 summary: This module introduces you to Azure Arc enabled servers and describes its characteristics, capabilities, and use cases.
 abstract: |

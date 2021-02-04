@@ -5,8 +5,8 @@ metadata:
   title: Use Bot Service for interactive chat experiences
   description: Analyze a scenario that requires a chat bot to handle common customer service issues.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

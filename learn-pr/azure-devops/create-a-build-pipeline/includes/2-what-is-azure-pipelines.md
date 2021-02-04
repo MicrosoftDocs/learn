@@ -36,7 +36,7 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Continuous-Integration--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLSx]
 
 **Amita:** Give me the 5-minute rundown on continuous integration.
 

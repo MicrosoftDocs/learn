@@ -4,8 +4,8 @@ metadata:
   title: Choose the right Azure services by examining service-level agreements (SLAs) and service lifecycle (AZ-900)
   description: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the right Azure services by examining SLAs and service lifecycle

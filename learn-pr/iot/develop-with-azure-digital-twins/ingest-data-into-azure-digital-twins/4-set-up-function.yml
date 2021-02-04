@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.ingest-data-into-azure-digital-twins.set-up-function
-title: Set up Azure Function
+title: Set up Azure Functions
 metadata:
-  title: Set up Azure Function
-  description: Create an Azure Function that will be used to receive data from IoT Hub and publish data into Azure Digital Twins.
+  title: Set up Azure Functions
+  description: Create a function app to receive data from Azure IoT Hub and publish data into Azure Digital Twins.
   ms.date: 10/30/2020
   author: teodelas
   ms.author: teodelas
