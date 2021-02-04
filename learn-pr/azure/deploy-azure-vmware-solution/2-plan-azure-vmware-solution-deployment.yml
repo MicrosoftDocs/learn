@@ -15,22 +15,22 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which planning step is not required to deploy Azure VMware Solution in the Azure portal?"
+  - content: "Which planning step is required to deploy Azure VMware Solution in the Azure portal?"
     choices: 
-    - content: "Create a new support request if you're an Enterprise Agreement customer."
+    - content: "Create a resource lock."
       isCorrect: false
-      explanation: "Before you provision AVS, you'll need to submit a support ticket to have your hosts allocated. This step is required and you need to identify what is not required."
+      explanation: "A resource lock allows administrators to lock a subscription, resource group, or resource. A resource lock is not required to deploy AVS."
     - content: "Register the Microsoft.AVS resource provider."
-      isCorrect: false
-      explanation: "Before you can provision your hosts, make sure that you register the Microsoft.AVS resource provider in the Azure portal. This step is required and you need to identify what is not required."
-    - content: "A service principal"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Before you can provision your hosts, make sure that you register the Microsoft.AVS resource provider in the Azure portal."
+    - content: "A service principal"
+      isCorrect: false
+      explanation: "A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. A service principal is not required to deploy AVS."
   - content: "At a minimum, which CIDR network address block does Azure VMware Solution private clouds require?"
     choices:
     - content: "/22"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "AVS needs a /22 CIDR network address block for IP segments."
     - content: "/30"
       isCorrect: false
       explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "4"
       isCorrect: false
-      explanation: "In terms of a minimum deployment, AVS requires less than 4 nodes."
+      explanation: "In terms of a minimum deployment, AVS requires fewer than four nodes."
     - content: "8"
       isCorrect: false
-      explanation: "In terms of a minimum deployment, AVS requires less than 8 nodes."
+      explanation: "In terms of a minimum deployment, AVS requires fewer than eight nodes."
     - content: "3"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "In terms of a minimum deployment, AVS requires three nodes."
