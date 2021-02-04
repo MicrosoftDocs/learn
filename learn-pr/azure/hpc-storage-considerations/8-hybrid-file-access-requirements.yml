@@ -15,3 +15,25 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/7-hybrid-file-access-requirements.md)]
+  quiz:
+  title: Check your knowledge
+  questions:
+  - content: "________ will transmit data to a destination based on whether it exists there or reflects the latest changes"
+    choices:
+    - content: "caching"
+      isCorrect: false
+      explanation: "caching is driven by requests for a given file"
+    - content: "synchronization"
+      isCorrect: true
+      explanation: "synchronization will check the destination directory and create or update files based on whether they exist and are the most recent changes"
+  - content: "a widely used tool for synchronizing data is called ________"
+    choices:
+    - content: "caching"
+      isCorrect: false
+      explanation: "caching generally refers to the placement of data in fast memory or storage close to compute, based on client requests"
+    - content: "cp"
+      isCorrect: false
+      explanation: "cp is the Linux os copy utility""
+    - content: "rsync"
+      isCorrect: true
+      explanation: "rsync is a widely used tool for synchronizing data"
