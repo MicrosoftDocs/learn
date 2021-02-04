@@ -3,7 +3,7 @@ uid: learn.optimize-costs-data-analysis-powerbi
 metadata:
   title: Optimize costs with data analysis in Power BI
   description: Use Power BI to understand where your money is being spent in Azure so you can help your organization to optimize its costs.
-  ms.date: 01/08/2021
+  ms.date: 02/04/2021
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   - Analyze your costs using Cost Management reporting in the Power BI app
   - Increase your organization’s use of hybrid benefits
   - Increase your savings by optimizing your organization's Reserved Instance coverage
-  - Enable custom reporting creation within your team through the Cost Management data connector for Power BI Desktop. 
+  - Enable custom reporting creation within your team through the Cost Management data connector for Power BI Desktop to better understand your spending
 iconUrl: /learn/achievements/optimize-costs-data-analysis-powerbi.svg
 levels: 
 - beginner

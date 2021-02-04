@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.optimize-costs-data-analysis-powerbi.analyze-costs-power-bi
 metadata:
-  title: Analyze costs in the Azure Cost Management Power BI app
-  description: Analyze costs in the Azure Cost Management Power BI app
+  title: Analyze costs in the Azure Cost Management Power BI app to optimize costs
+  description: Analyze costs in the Azure Cost Management Power BI app to optimize costs
   ms.date: 02/03/2021
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Analyze costs in the Azure Cost Management Power BI app
+title: Analyze costs in the Azure Cost Management Power BI app to optimize costs
 durationInMinutes: 5
 content: |
   [!include[](includes/2-analyze-costs-power-bi.md)]
