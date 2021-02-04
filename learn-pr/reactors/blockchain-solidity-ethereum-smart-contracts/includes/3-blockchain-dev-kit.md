@@ -62,7 +62,7 @@ We'll start with the *HelloBlockchain.sol* smart contract inside the *contracts*
 
 1. Select **View** > **Output** to see information about the compiled contract. In the window, you might need to select **Azure Blockchain** to see the output from the extension.
 
-:::image type="content" source="../media/compile-output.png" alt-text="Screenshot showing output information about the compiled contract. The Azure Blockchain menu item is selected.":::
+   :::image type="content" source="../media/compile-output.png" alt-text="Screenshot showing output information about the compiled contract. The Azure Blockchain menu item is selected.":::
 
 ## Deploy contracts
 
