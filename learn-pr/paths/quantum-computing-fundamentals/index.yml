@@ -14,11 +14,9 @@ summary: |
   Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing. 
   
   > [!NOTE]
-  > You don't need to take modules in order. 
-  > If you want to learn more about quantum computing, follow [Solve graph coloring problems by using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/) and
- [Run algorithms on quantum hardware by using Azure Quantum](https://docs.microsoft.com/learn/modules/run-algorithms-quantum-hardware-azure-quantum/) modules.
-  > If you want to delve into optimization solutions, follow [Solve optimization problems by using quantum-inspired optimization](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/) 
-  and [Solve a job shop scheduling optimization problem by using Azure Quantum](https://docs.microsoft.com/learn/modules/solve-job-shop-optimization-azure-quantum/) modules. 
+  > You don't need to take the modules in the listed order. Take a look at each module's description and prerequisites. Many modules do not have prerequisite requirements. 
+  > If you would like to use the Azure Quantum cloud service, for either quantum computing or optimization, start with Get started with Azure Quantum and proceed to the corresponding quantum computing or optimization modules.
+  > If you would like to learn more about quantum programming using the Quantum Development Kit and the Q# programming language, choose from the later modules. 
   
   After completing this learning path, you'll be able to:
   - Explain the fundamental concepts of quantum computing.
