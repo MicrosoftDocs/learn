@@ -16,7 +16,7 @@ git clone https://github.com/Azure-Samples/digital-twins-samples
 Now, create and store some variables. These variables will make it easier to run the commands in the later units and to avoid typing mistakes.
 
 1. Open a PowerShell console locally or Azure Cloud Shell with PowerShell.
-1. To make sure you're logged into the right account and set to the correct default Azure subscription, run this command:
+1. To make sure you're logged in to the right account and set to the correct default Azure subscription, run this command:
 
     ```azurecli
     az account show
@@ -54,13 +54,13 @@ Now, create and store some variables. These variables will make it easier to run
     az group create -n $rgname -l $location
     ```
 
-1. Create Azure Digital Twins:
+1. Create an Azure Digital Twins instance:
 
     ```azurecli
    az dt create --dt-name $dtname -g $rgname -l $location
     ```
 
-1. To be able to modify the Digital Twins service, you'll need to assign the *Azure Digital Twins Data Owner* role:
+1. To be able to modify the Azure Digital Twins service, you'll need to assign the *Azure Digital Twins Data Owner* role:
 
     ```azurecli
     az dt role-assignment create -n $dtname -g $rgname --role "Azure Digital Twins Data Owner" --assignee $username -o json
@@ -90,7 +90,7 @@ Now, create and store some variables. These variables will make it easier to run
     
     ```
 
-1. Create an Azure Active Directory (Azure AD) application with permissions to connect to Digital Twins. You'll use this application in later units.
+1. Create an Azure Active Directory (Azure AD) application with permissions to connect to Azure Digital Twins. You'll use this application in later units.
 
     ```azurecli
     az ad app create --display-name $aaddtapp --native-app --required-resource-accesses ./manifest.json --reply-url http://localhost -o json 
@@ -126,7 +126,7 @@ Now, create and store some variables. These variables will make it easier to run
 
 ## Collect important values
 
-You'll need several important values from the resources set as you continue working with your Digital Twins instance.
+You'll need several important values from the resources set as you continue working with your Azure Digital Twins instance.
 
 > [!NOTE]
 > Save these values for later use.
@@ -134,7 +134,7 @@ You'll need several important values from the resources set as you continue work
 
 ### Collect instance values
 
-Get the host name of the Digital Twins instance. Copy the output to Notepad for later use.
+Get the host name of the Azure Digital Twins instance. Copy the output to Notepad for later use.
 
 ```azurecli
 az dt show -n $dtname --query 'hostName'
