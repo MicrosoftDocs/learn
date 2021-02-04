@@ -96,7 +96,7 @@ Now, create and store some variables. These variables will make it easier to run
     az ad app create --display-name $aaddtapp --native-app --required-resource-accesses ./manifest.json --reply-url http://localhost -o json 
     ```
 
-1. The following command will output the application ID . Save this ID for later use.
+1. The following command will output the application ID. Save this ID for later use.
 
     ```azurecli
     $appid = $(az ad app list --display-name $aaddtapp --query '[0].appId' -o json)
