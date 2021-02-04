@@ -16,3 +16,9 @@ Consider video for difficult to explain conceptual topic (networking related?)
 advertised (shown/displayed?) NSX-T segment, DHCP services to NSX-T segment(optional), add VM on NSX-T segment, verify connectivity
 
 -->
+
+You can build out your AVS environment once all pre-planning steps are complete. AVS will provide you and your company an ability to deploy a vSphere cluster in Azure. AVS also allows you to easily migrate and deploy workloads for your company. You'll use all the information you gathered from the planning module to successfully deploy AVS to your subscription. 
+
+To use AVS, you must first register the resource provider with your subscription, like how we talked about in the last unit. Registering the resource provider can be done through the portal, AZ-CLI, or PowerShell.
+
+Next, you must hold contributor level rights to the subscription you use in order to deploy AVS.
