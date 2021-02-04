@@ -101,7 +101,7 @@ In this exercise, you'll use the Import data wizard to create an index, and impo
 
     Azure Cognitive Search will read the contents of the JSON file, and create an index schema automatically.
 
-1. Under the **Add cognitive search (Optional)** tab, select **Skip to: Customize target index**.
+1. On the **Add cognitive search (Optional)** tab, select **Skip to: Customize target index**.
 
     ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-6.png)
 
@@ -125,7 +125,7 @@ In this exercise, you'll use the Import data wizard to create an index, and impo
 
     Select **Next: Create an indexer**.
 
-1. Under the **Create an indexer** tab, select **Submit** to begin building the indexer.
+1. On the **Create an indexer** tab, select **Submit** to begin building the indexer.
 
     When the process completes, the portal returns to the Search service overview.
 

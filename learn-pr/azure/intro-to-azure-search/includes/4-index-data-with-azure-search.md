@@ -110,7 +110,7 @@ If you start to hit the quota limits, or require better guarantees on availabili
 
 Increasing the partitions, (each gives you an extra 25 GB of storage), not only increases the total storage available for indexes, it also enables you to set up indexers to run in parallel. You will need to create an indexer per partition, and partition the data set by the number of those partitions. For example, if your video catalog contained 1000 videos, you could split the single JSON document into five separate documents containing 200 videos each, storing the files in their own blob containers. Next, you could set up five indexers, and schedule them to start at the same time. The indexers will run and import the documents into the search index.
 
-It isn't necessary to set up parallel indexers for the JSON data used in the examples for this module. As indexing  text files is quick, and has relatively low CPU requirements. However, it's a recommended approach to improve the time to complete data ingestion into your index, (for example, if your company, uin the future, wanted to do some image processing, which is more CPU intensive).
+It isn't necessary to set up parallel indexers for the JSON data used in the examples for this module. As indexing  text files is quick, and has relatively low CPU requirements. However, it's a recommended approach to improve the time to complete data ingestion into your index, (for example, if your company, in the future, wanted to do some image processing, which is more CPU intensive).
 
 ## Enhance Azure Cognitive Search indexes with AI
 

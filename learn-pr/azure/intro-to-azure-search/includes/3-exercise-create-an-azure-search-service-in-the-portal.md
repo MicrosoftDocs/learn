@@ -18,10 +18,10 @@ In the unit, you'll create the Azure Cognitive Search service.
 
     | Setting      | Value |
     | ------------ | ----- |
-    | On the **Basics** tab, under **Project Details** |
+    | On the **Basics** tab > **Project Details** |
     | **Subscription** | Concierge Subscription  |
     | **Resource Group** |  Select the existing group <rgn>[sandbox resource group name]</rgn> |
-    | Under **Instance Details** |
+    | **Instance Details** |
     | **URL** | Choose a unique name. In this exercise, enter *northwindfitness*  |
     | **Location** | Select your nearest datacenter |
     | **Pricing tier** | Standard |
