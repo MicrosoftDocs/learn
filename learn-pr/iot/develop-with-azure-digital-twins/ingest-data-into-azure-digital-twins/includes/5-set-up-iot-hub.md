@@ -28,7 +28,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
     az iot hub device-identity connection-string show --device-id GrindingStep --hub-name $dtname
     ```
 
-1. Open the file ~\digital-twins-samples\HandsOnLab\SimulatedClient\Sensor.js
+1. Open the file ~\digital-twins-samples\HandsOnLab\SimulatedClient\Sensor.js.
 1. Find the line `const deviceConnectionString = ""` and update it by supplying the device connection string you created earlier.
 
       :::image type="content" source= "../media/update-device-key.png" alt-text="Partial screenshot of a code listing, showing the line in which to specify the device connection string.":::
