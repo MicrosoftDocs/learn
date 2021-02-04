@@ -15,7 +15,7 @@ abstract:  |
   - How Go implements OOP principles such as encapsulation and composition.
   - How to write methods and why you use them.
   - How to write embedding and overloading methods.
-  - How to write and use interfaces, and why they're different from other programming languages.
+  - How to write and use interfaces, and why they differ from interfaces in other programming languages.
 prerequisites: |
   - A Go environment that's ready to create applications. Ideally, you've installed and configured Go and [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go).
   - Ability to create and modify `.go` files.
