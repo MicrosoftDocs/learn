@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Implement a generic type
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-implement-generic-type.md)]

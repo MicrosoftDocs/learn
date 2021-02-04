@@ -2,7 +2,7 @@ Traits let us define functions that accept many different types, because when a 
 
 We can declare function arguments to be an anonymous type parameter where the callee must provide a type that has the bounds declared by the anonymous type parameter.
 
-Lets imagine that we are writing a web application and would like to have an interface for
+Let's imagine that we're writing a web application and want to have an interface for
 serializing values to the JSON format. We could write a trait like this:
 
 ```rust
@@ -11,8 +11,7 @@ trait AsJson {
 }
 ```
 
-And then we could write a function that accepts any type that implements the `AsJson` trait. They
-are written as `impl` followed by a set of trait bounds.
+Then we could write a function that accepts any type that implements the `AsJson` trait. They're written as `impl` followed by a set of trait bounds.
 
 ```rust
 fn send_data_as_json(value: &impl AsJson) {
@@ -23,10 +22,9 @@ fn send_data_as_json(value: &impl AsJson) {
 ```
 
 Instead of a concrete type for the `item` parameter, we specify the `impl` keyword and the trait
-name. This parameter accepts any type that implements the specified trait. Note that since the
-function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
+name. This parameter accepts any type that implements the specified trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
 
-Another way to write the same function, but with a little different syntax, that explicitly tells that T is a generic type that must implement the `AsJson` trait:
+Another way to write the same function, but with a little different syntax, explicitly tells that T is a generic type that must implement the `AsJson` trait:
 
 ```rust
 fn send_data_as_json<T: AsJson>(value: &T) { ... }
@@ -66,8 +64,7 @@ impl AsJson for Dog {
 }
 ```
 
-Now that both `Person` and `Dog` implements the `AsJson` trait, we can use them as input parameters
-for our `send_data_as_json` function.
+Now that both `Person` and `Dog` implement the `AsJson` trait, we can use them as input parameters for our `send_data_as_json` function.
 
 ```rust
 fn main() {
@@ -88,7 +85,7 @@ fn main() {
 }
 ```
 
-But what happens when we pass a type that doesn't implement the expected trait to the function? Lets create a new struct and see what happens:
+But what happens when we pass a type that doesn't implement the expected trait to the function? Let's create a new struct and see what happens:
 
 ```rust
 struct Cat {
@@ -117,8 +114,8 @@ The compiler raises the following error:
        |                       ^^^^^^ the trait `AsJson` is not implemented for `Cat`
 ```
 
-This happened because we tried to use a type which doesn't implement the `AsJson` trait in a place which expected that trait: the `send_data_as_json` function.
+This error happened because we tried to use a type that doesn't implement the `AsJson` trait in a place that expected that trait: the `send_data_as_json` function.
 
-To view the code used in this unit, visit this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eb322a632e8eca7f39056fcc6c966163&azure-portal=true).
+To view the code used in this unit, see this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eb322a632e8eca7f39056fcc6c966163&azure-portal=true).
 
 As an optional challenge, you can try to implement the `AsJson` trait for the `Cat` type.

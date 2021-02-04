@@ -18,16 +18,16 @@ quiz:
     choices:
     - content: "When a function or struct needs to accept optional parameters."
       isCorrect: false
-      explanation: "Incorrect. In Rust there are no optional parameters in function or struct signatures."
-    - content: "When we need to specify function or struct parameters in terms of of behavior instead of concrete value."
+      explanation: "Incorrect. In Rust, there are no optional parameters in function or struct signatures."
+    - content: "When we need to specify function or struct parameters in terms of behavior instead of concrete value."
       isCorrect: true
       explanation: "Correct. Rust traits are useful when we want to specify functions or struct parameters."
     - content: "When we need to avoid the compile time guarantees of the Borrow Checker."
       isCorrect: false
-      explanation: "Incorrect. Rust compile time guarantees can't be affected by using Traits."
+      explanation: "Incorrect. Rust compile time guarantees can't be affected by using traits."
     - content: "When we need our values to continue valid even past their lifetime scope."
       isCorrect: false
-      explanation: "Incorrect. Traits can't alter when values go out of scope.."
+      explanation: "Incorrect. Traits can't alter when values go out of scope."
   - content: "What does the following function signature mean? `fn show_on_screen<T: Display>(data: T)`"
     choices:
     - content: "The `data` parameter can be of any type."
@@ -35,10 +35,10 @@ quiz:
       explanation: "Incorrect. The type of `data` must be any type that implements the `Display` trait."
     - content: "The `data` parameter can be of any type that optionally implements the `Display` trait."
       isCorrect: false
-      explanation: "Incorrect. It is mandatory that the value passed as the `data` parameter implements the `Display` trait."
-    - content: "The `data` parameter is restricted only to types that implements the `Display` trait."
+      explanation: "Incorrect. It's mandatory that the value passed as the `data` parameter implements the `Display` trait."
+    - content: "The `data` parameter is restricted only to types that implement the `Display` trait."
       isCorrect: true
-      explanation: "Correct. The data parameter can only have types which implement the  `Display` trait."
+      explanation: "Correct. The data parameter can only have types that implement the `Display` trait."
     - content: "The `data` parameter is optional."
       isCorrect: false
       explanation: "Incorrect. There are no optional parameters in Rust."
