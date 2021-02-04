@@ -22,6 +22,6 @@ Using Spring Boot, typically with [Spring Initializr](https://start.spring.io/),
 
 - Add the Spring Session Data Redis library to your application.
 - Configure your `application.yml` file to connect to your Azure Cache for Redis instance.
-- Use Java's HTTP Session mechanism to store or retrieve data.
+- Use Java's HTTP session mechanism to store or retrieve data.
 
-Those tasks are what we're going to achieve in the next section's exercise.
+We're going to achieve those tasks in the next section's exercise.

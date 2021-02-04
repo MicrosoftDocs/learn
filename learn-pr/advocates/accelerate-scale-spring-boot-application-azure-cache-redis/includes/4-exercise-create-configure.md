@@ -166,7 +166,7 @@ spring.redis.ssl=true
 Replace the two `<xxxxxxx>` parameters with the following values:
 
 - `spring.redis.host`: The name of your Redis instance, which you stored in the `$AZ_REDIS_NAME` variable earlier.
-- `spring.redis.password`: The key to your Redis instance. This key is the `primaryKey` value that we retrieved earlier.
+- `spring.redis.password`: The key to your Redis instance. This key is the `primaryKey` value that you retrieved earlier.
 
 ## Test the application locally
 

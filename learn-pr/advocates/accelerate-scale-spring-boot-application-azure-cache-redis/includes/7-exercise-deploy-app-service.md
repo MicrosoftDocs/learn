@@ -93,6 +93,6 @@ curl -b cookie.txt -c cookie.txt https://$AZ_REDIS_NAME-webapp.azurewebsites.net
 ```
 
 > [!NOTE]
-> Your local server and your cloud service use the same Redis instance, so they are, in fact, clustered! Any data that you write in one instance will be available in the other instance.
+> Your local server and your cloud service use the same Redis instance. So they are, in fact, clustered! Any data that you write in one instance will be available in the other instance.
 > 
 >That's also how the cloud service will be able to scale out: by adding more nodes that will all use the same Redis instance to store both business data and session data.

@@ -7,7 +7,7 @@ By the end of this module, you'll be able to:
 
 - Describe and differentiate the main use cases for Azure Cache for Redis.
 - Configure a Spring Boot application to use Redis as a cache for business objects.
-- Configure Spring Session to replicate HTTP Session data between server nodes.
+- Configure Spring Session to replicate HTTP session data between server nodes.
 
 ## Prerequisites
 
