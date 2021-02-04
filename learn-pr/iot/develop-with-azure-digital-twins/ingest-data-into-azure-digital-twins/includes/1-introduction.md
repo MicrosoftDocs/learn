@@ -12,7 +12,7 @@ In this module you will:
 
 - Create an Azure Digital Twins instance
 - Create and instantiate Azure Digital Twin models
-- Create an Azure function app that publishes data into Digital Twins
+- Create an Azure function app that publishes data into Azure Digital Twins
 - Create an IoT Hub instance that sends telemetry to an Azure function app
 - Use REST APIs to publish data to Azure Digital Twins
 - Create an Azure Logic Apps instance that publishes data to Azure Digital Twins
