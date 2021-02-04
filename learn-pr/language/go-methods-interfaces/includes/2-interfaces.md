@@ -17,12 +17,12 @@ type Shape interface {
 }
 ```
 
-The `Shape` interface means that any type that you want to consider a `Shape` needs to have the `Perimeter()` *and* `Area()` methods. For instance, when you create a `Square` struct, it has to implement both methods, not just one. Also, notice that an interface doesn't contain the implementation details for those methods (for example, for calculating the perimeter and area of a shape). They're simply a contract. Shapes such as triangles, circles, or squares have different ways to calculate area and perimeter.
+The `Shape` interface means that any type that you want to consider a `Shape` needs to have both the `Perimeter()` and `Area()` methods. For instance, when you create a `Square` struct, it has to implement both methods, not just one. Also, notice that an interface doesn't contain implementation details for those methods (for example, for calculating the perimeter and area of a shape). They're simply a contract. Shapes such as triangles, circles, and squares have different ways to calculate area and perimeter.
 
 ## Implement an interface
-As we said previously, in Go, you don't have a keyword to implement an interface. An interface in Go is satisfied implicitly by a type when it has all the methods that an interface requires. 
+As we discussed previously, in Go, you don't have a keyword to implement an interface. An interface in Go is satisfied implicitly by a type when it has all the methods that an interface requires. 
 
-For instance, let's create a `Square` struct that has both methods from the `Shape` interface, like this:
+Let's create a `Square` struct that has both methods from the `Shape` interface, as shown in the following example code:
 
 ```go
 type Square struct {
@@ -59,7 +59,7 @@ Area:  9
 Perimeter: 12
 ```
 
-At this point, it makes no difference whether you use an interface or not. Let's create another type, such as `Circle`, and then explore why interfaces are useful. Here's the code for the `Circle` struct:
+At this point, it makes no difference whether or not you use an interface. Let's create another type, such as `Circle`, and then explore why interfaces are useful. Here's the code for the `Circle` struct:
 
 ```go
 type Circle struct {
@@ -160,7 +160,7 @@ As you can see, you've used a custom type (a struct) to write a custom version o
 
 Let's say that you have the following code, and you'd like to extend its functionality by writing a custom implementation of a `Writer` method that's in charge of manipulating some data.
 
-By using the following code, create a program that consumes the GitHub API to get three repositories from Microsoft:
+By using the following code, you can create a program that consumes the GitHub API to get three repositories from Microsoft:
 
 ```go
 package main
@@ -190,7 +190,7 @@ When you run the preceding code, you get something like the following output (sh
 ....
 ```
 
-Notice that the `io.Copy(os.Stdout, resp.Body)` call is the one that prints out to the terminal the content obtained from the call to the GitHub API. Let's say that you'd like to write your own implementation to shorten the content you see in the terminal. When you look at the [source of the `io.Copy` function](https://golang.org/pkg/io/#Copy), you see the following:
+Notice that the `io.Copy(os.Stdout, resp.Body)` call is the one that prints to the terminal the content you've obtained from the call to the GitHub API. Let's say that you want to write your own implementation to shorten the content you see in the terminal. When you look at the [source of the `io.Copy` function](https://golang.org/pkg/io/#Copy), you see the following:
 
 ```go
 func Copy(dst Writer, src Reader) (written int64, err error)
@@ -204,17 +204,17 @@ type Writer interface {
 }
 ```
 
-You can continue exploring the `io` package's source code until you find where [`Copy` calls the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411) but we'll leave it here for now.
+You can continue exploring the `io` package's source code until you find where [`Copy` calls the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411). We'll leave this alone for now.
 
-Because `Writer` is an interface and it's an object that the `Copy` function is expecting, it means that you could write your custom implementation of the `Write` method. Therefore, you can customize the content that you print to the terminal. 
+Because `Writer` is an interface and it's an object that the `Copy` function is expecting, you could write your custom implementation of the `Write` method. Therefore, you can customize the content that you print to the terminal. 
 
-So, the first thing you need to implement an interface is to create a custom type. In this case, you can create an empty struct because you simply need to write your custom `Write` method, like this:
+The first thing you need to implement an interface is to create a custom type. In this case, you can create an empty struct, because you simply need to write your custom `Write` method, like this:
 
 ```go
 type customWriter struct{}
 ```
 
-Now you're ready to write your custom `Write` function. Also, you need to write a struct to parse the API response in JSON format to a Golang object. You could use the JSON-to-Go site to create a struct from a JSON payload. So the `Write` method could look like this:
+Now you're ready to write your custom `Write` function. You also need to write a struct to parse the API response in JSON format to a Golang object. You could use the JSON-to-Go site to create a struct from a JSON payload. So the `Write` method might look like this:
 
 ```go
 type GitHubResponse []struct {
@@ -246,7 +246,7 @@ func main() {
 }
 ```
 
-Now when you run the program, you should get the following output:
+When you run the program, you should get the following output:
 
 ```output
 microsoft/aed-blockchain-learn-content
@@ -310,7 +310,7 @@ type Handler interface {
 func ListenAndServe(address string, h Handler) error
 ```
 
-Notice how the `ListenAndServe` function is expecting a server address like `http://localhost:8000` and an instance of the `Handler` that will dispatch the response from the call to the server address.
+Notice how the `ListenAndServe` function is expecting a server address, such as `http://localhost:8000`, and an instance of the `Handler` that will dispatch the response from the call to the server address.
 
 Let's create and then explore the following program:
 
@@ -362,7 +362,7 @@ Go T-Shirt: $25.00
 Go Jacket: $55.00
 ```
 
-Let's review the preceding code slowly to understand what it does and to observe the power of Go interfaces. First, you start by creating a custom type for a `float32` type, with the idea of writing a custom implementation of the `String()` method that we'll use later.
+Let's review the preceding code slowly to understand what it does and to observe the power of Go interfaces. First, you start by creating a custom type for a `float32` type, with the idea of writing a custom implementation of the `String()` method, which you'll use later.
 
 ```go
 type dollars float32
