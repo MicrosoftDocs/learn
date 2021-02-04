@@ -10,7 +10,7 @@ The report provides recommendations for VM RI purchases at a shared scope, even 
 
 To use the report, select the drill-down filter, as marked in the following image.
 
-:::image type="content" source="../media/4-vm-ri-coverage-shared-report.png" alt-text="Image showing the VM RI Coverage (shared recommendation) report" lightbox="../media/4-vm-ri-coverage-shared-report.png" :::
+:::image type="content" source="../media/4-vm-ri-coverage-shared-report.png" alt-text="Screenshot showing the V M R I Coverage (shared recommendation) report." lightbox="../media/4-vm-ri-coverage-shared-report.png" :::
 
 Select the region that you want to analyze. Then select the instance size flexibility group, and so on.
 
@@ -29,7 +29,7 @@ The report provides recommendations for VM RI purchases at a single subscription
 
 For details about how to use the report, see the previous VM RI Coverage (shared recommendation) section.
 
-:::image type="content" source="../media/4-vm-ri-coverage-single-report.png" alt-text="Image showing the VM RI Coverage (single recommendation) report" lightbox="../media/4-vm-ri-coverage-single-report.png" :::
+:::image type="content" source="../media/4-vm-ri-coverage-single-report.png" alt-text="Screenshot showing the V M R I Coverage (single recommendation) report." lightbox="../media/4-vm-ri-coverage-single-report.png" :::
 
 ## RI Savings
 
@@ -45,7 +45,7 @@ You can use the amortized usage data to build on the data.
 
 Pricing information in the following image is an example for informational purposes only.
 
-:::image type="content" source="../media/4-reservations-savings.png" alt-text="Image showing the Reservations Savings report" lightbox="../media/4-reservations-savings.png" :::
+:::image type="content" source="../media/4-reservations-savings.png" alt-text="Screenshot showing the Reservations Savings report." lightbox="../media/4-reservations-savings.png" :::
 
 ## RI Chargeback
 
@@ -55,7 +55,7 @@ You can apply a filter on _chargetype_ to view RI underutilization data only.
 
 Pricing information in the following image is an example for informational purposes only.
 
-:::image type="content" source="../media/4-reservations-chargeback.png" alt-text="Image showing the Reservations Chargeback report" lightbox="../media/4-reservations-chargeback.png" :::
+:::image type="content" source="../media/4-reservations-chargeback.png" alt-text="Screenshot showing the Reservations Chargeback report." lightbox="../media/4-reservations-chargeback.png" :::
 
 For more information about amortized data, see [Get Enterprise Agreement reservation costs and usage](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea).
 
@@ -65,4 +65,4 @@ The Reservations Purchases report is a simple report that shows reservation purc
 
 Pricing information in the following image is an example for informational purposes only.
 
-:::image type="content" source="../media/4-reservations-purchases.png" alt-text="Image showing the Reservations Purchases report" lightbox="../media/4-reservations-purchases.png" :::
+:::image type="content" source="../media/4-reservations-purchases.png" alt-text="Screenshot showing the Reservations Purchases report." lightbox="../media/4-reservations-purchases.png" :::
