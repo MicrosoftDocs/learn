@@ -24,7 +24,7 @@ Take your interest further with:
 
 - [Azure Digital Twins Documentation](/azure/digital-twins/)
 - [Understand twin models in Azure Digital Twins](/azure/digital-twins/concepts-models)
-- [Digital Twins Definition Language (DTDL)](/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md)
+- [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md)
 - [Use the Azure Digital Twins APIs and SDKs](/azure/digital-twins/how-to-use-apis-sdks)
 
 And look for additional Learn modules that take the chocolate factory scenario further.

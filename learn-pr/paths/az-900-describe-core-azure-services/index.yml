@@ -5,8 +5,8 @@ metadata:
   description: "This learning path provides you with an introduction to the basics of Azure's core services for compute, network, storage, and database. Prepare for AZ-900."
   brand: azure
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 2: Describe core Azure services"
