@@ -39,9 +39,9 @@ The main steps in the process are:
 1. Create a highly available File Server role by using Failover Cluster Manager or Windows PowerShell.
 
     1. Use Failover Cluster Manager to configure a Scale-Out File Server to host an application data share.
-        <br>
-        >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKz]
+        
+        <br>>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKz]
 
     2. Use Windows PowerShell to configure an existing failover cluster that uses Cluster Shared Volumes as a Scale-Out File Server and configure an additional IP address resource to bring the Scale-Out File Server online.
-        <br>
-        >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKB]
+        
+        <br>>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKB]
