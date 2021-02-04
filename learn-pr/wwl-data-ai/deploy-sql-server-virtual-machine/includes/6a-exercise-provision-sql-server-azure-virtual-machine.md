@@ -40,7 +40,7 @@ You're a database administrator. You need to create a test environment for use i
     - Region: **&lt;your local region, same as the selected region for your resource group&gt;**
     - Availability Options: **No infrastructure redundancy required**
     - Azure spot instance: **No** (don't check the box)
-    - Size: Standard **D2s v2** (You will need to select 'show all sizes' to find **D2s v2** -- 2 vCPUs, 7 GiB memory)
+    - Size: Standard **D2s v2** (You will need to select 'see all sizes' to find **D2s v2** -- 2 vCPUs, 7 GiB memory)
     - Administrator account username: **labadmin**
     - Administrator account password: **Azur3Pa$$2020**
     - Selected inbound ports: **RDP (3389)**
