@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.language.go-write-test-program
+metadata:
+  title: Write and test a program
+  description: Use what you've learned about Go, write and test a complete program.
+  ms.date: 02/02/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write and test a program
+summary: Use what you've learned about Go, write and test a complete program.
+abstract:  |
+  In this module, you'll practice and learn about:
+
+  - How testing works in Go
+  - How to wrap the core logic of a program into a package
+  - How to expose the core logic through a Web API
+  - How to write tests for your core logic package (using TDD)
+  - How almost all concepts we've covered so far could work together
+prerequisites: | 
+  - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [VS Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
+  - Be able to create and modify `.go` files
+  - Be able to run Go applications using the terminal prompt
+  - Have knowledge of basic data types like `string`, `int`, and `boolean`
+  - Have knowledge of how to write basic data control flows like `if` and `for` statements
+  - Have knowledge of how to write functions
+  - Have knowledge of how to create structs and methods
+  - Have knowledge of how to use libraries like `net/http`
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.language.go-write-test-program.0-introduction
+- learn.language.go-write-test-program.1-project-files
+- learn.language.go-write-test-program.2-project-tests
+- learn.language.go-write-test-program.3-project-core
+- learn.language.go-write-test-program.4-project-api
+- learn.language.go-write-test-program.5-challenge
+- learn.language.go-write-test-program.6-solution
+- learn.language.go-write-test-program.7-knowledge-check
+- learn.language.go-write-test-program.8-summary
+badge:
+  uid: learn.language.go-write-test-program.badge

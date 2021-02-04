@@ -30,5 +30,6 @@ modules:
 - learn.language.go-errors-logs
 - learn.language.go-methods-interfaces
 - learn.language.go-concurrency
+- learn.language.go-write-test-program
 trophy:
   uid: learn.languages.go-first-steps.trophy

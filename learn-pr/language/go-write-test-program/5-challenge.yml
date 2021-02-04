@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-write-test-program.5-challenge
+metadata:
+  title: Challenge - Complete the bank project functionality
+  description: Finish the bank project by creating the transfer method and modifying the statement endpoint.
+  ms.date: 02/02/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge - Complete the bank project functionality
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-challenge.md)]
