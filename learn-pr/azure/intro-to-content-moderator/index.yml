@@ -12,9 +12,10 @@ title: Introduction to Content Moderator
 summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable.
 abstract: | 
   After completing this module, you will be able to:
-  - Describe the Content Moderator service
-  - Briefly describe how Content Moderator works
-  - Describe when to use Content Moderator
+  - Assess the benefits of Content Moderator
+  - Describe what Content Moderator is
+  - Define scenarios where Content Moderator can be applied
+  - Decide if Content Moderator is the right choice for your scenario
 prerequisites: | 
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal

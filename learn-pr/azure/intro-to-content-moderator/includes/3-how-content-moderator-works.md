@@ -1,50 +1,50 @@
-To understand how Personalizer works, consider the concept of reinforcement learning. You may recall experiments showing a cat or dog learning how to get a treat by activating some mechanism. In a sense, we consider that a reinforcement learning concept. Applied to artificial intelligence, reinforcement learning is considered a *closed-loop* model. The term refers to a model where the actions influence later inputs. The model learns behaviors to use based on feedback collected from its use.
+Before you can use Content Moderator, you will require an Azure subscription and a Content Moderator resource. The resource is required for accessing the service as it provides a unique endpoint for accessing the APIs and an access key for securing access to the service. Microsoft provides a free pricing tier that you can use to test the service. Using the free tier, you can determine if the Content Moderator service is the right choice for your organization.
 
-Personalizer uses this model to *learn* how to map the appropriate item to display, based on the users' actions to that item. The learning is realized when the reward score is highest. In other words, if a user is currently viewing hiking shoes on a web site, Personalizer may also display a suggestion for hiking socks and show laces. If users choose the socks item but not the laces item, the reward scores will be different for those items leading to the socks item having a higher reward score.
+The Content Moderator service can be accessed through REST or by using the appropriate software development kit (SDK). The currently supported languages in the SDK are:
 
-## Terminology
+- .NET
+- Java
+- Node.js
+- Python
+- Go
 
-To better understand the concepts discussed in this introduction to Personalizer, it helps to have a grasp of the terminology that will be used.  The following definitions will provide context.
+## Moderating text
 
-- Learning loop - a Personalizer resource created for each part of your application.
-- Model - the unit that captures all data learned about user behavior, getting training data from the combination of the arguments you send to Rank and Reward calls, and with a training behavior determined by the Learning Policy
-- Online mode - The default learning behavior for Personalizer where your learning loop, uses machine learning to build the model that predicts the top action for your content.
-- Apprentice mode - A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions.
+You can call a single method in the API, **ModerateText**, to scan text in a file. You specify the input file as well as an output file in the method call. The service will scan the text in the file and return the results in the output file. The API will return a JSON formatted result back to the calling application. Using a sample text input of:
 
-## Selecting the best item
+"Is this a crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052"
 
-The selection of the *best* item is accomplished using the collective behavior and reward scores that have been accumulated across all users. An item, is considered an action, and can be a product, a recommended movie, or a news article recommendation. Personalizer evaluates features related to actions and context.
+The service will identify some PII information (email, phone, IP, and address). It will also classify the text with a review recommendation.
 
-- Action features provide metadata about that action. For example, using socks as the action (item), features might include foot, comfort, shoe accessories, cushioning, etc.
-- Context features can include the users (previous shopping history), users' environment (mobile device or desktop browser), or the category they are shopping in (hiking, walking, swimming, etc.).
+:::image type="content" source="../media/3-text-moderator-result.png" alt-text="text moderation results in JSON format showing identified text categories with scores and review recommended":::
 
-The Personalizer service will use a **Rank** call when working with action and context features. The **Rank** call considers the action and its features, along with the context features, to help select the top action item to display. The Rank call returns the ID of which content item, action, to show to the user, in the Reward Action ID field. The action shown to the user is chosen with machine learning models, that try to maximize the total number of rewards over time.
+## Moderating images
 
-Consider the scenario presented in this table to understand the process:
+If you decide to use the service for image moderation, you will need to have your images accessible to the service through a URL. If you have multiple images, you would place the URLs for each image as a separate line item in a text file and send that to the service.  Each image will be evaluated separately by the service.
 
-| Content Type | Action with features | Context features | Returned Reward Action ID (item displayed) |
-|---|---|---|---|
-| Products | 1. Socks (foot, cushioning, shoe accessories) | Device being used, user's spending habits, shopping category | 1. Socks |
-| | 2. Laces (shoes, boots, enclosure) |  
-| | 3. Gaiters (wet weather, rain, protection)|
+When the image has been evaluated, a JSON result is returned indicating a score and classification for the adult and racy categories.
 
-## Interaction flow
+```json
+{
+  "AdultClassificationScore": 0.02518901415169239,
+  "IsImageAdultClassified": false,
+  "RacyClassificationScore": 0.052860850468277931,
+  "IsImageRacyClassified": false,
+  "Result": false,
+  "AdvancedInfo": [{
+    "Key": "ImageDownloadTimeInMs",
+    "Value": "499"
+  }, {
+    "Key": "ImageSizeInBytes",
+    "Value": "273405"
+  }],
+  "Status": {
+    "Code": 3000,
+    "Description": "OK",
+    "Exception": null
+  },
+  "TrackingId": "d993e832-1bf5-48b2-b2b3-73e57b2bd6a2"
+}
+```
 
-The following image shows the flow of an application's interaction with Personalizer.
-
-:::image type="content" source="../media/personalization-how-it-works.png" alt-text="Application flow diagram with Personalizer":::
-
-The preceding image depicts the following action sequences:
-
-1. User interacts with the site or application
-1. User information, context plus features, and actions to choose plus features are sent to the Rank API
-1. The Personalizer service will:
-    1. decide whether to exploit the current model
-    1. or explore new choices for the model
-1. The Personalizer service returns a rank response, in the form of a reward action ID.
-    1. Your system presents that content and determines a reward score based on your own business rules.
-1. Your system returns the reward score to the learning loop using the following sequence
-    1. When Personalizer receives the reward, the reward is sent to EventHub
-    1. The rank and reward are correlated
-    1. The AI model is updated based on the correlation results
-    1. The inference engine is updated with the new model
+The image API also offers the ability to run the face detection, perform OCR to scan text in the image, or performing image matching against a custom image list.  Each API call is a separate function.
