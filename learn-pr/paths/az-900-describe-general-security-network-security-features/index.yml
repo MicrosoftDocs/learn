@@ -5,8 +5,8 @@ metadata:
   description: Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted. Prepare for AZ-900.
   brand: azure
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 4: Describe general security and network security features"
