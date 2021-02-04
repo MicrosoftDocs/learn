@@ -8,7 +8,7 @@ You'll use the following tools and extensions in this unit:
 - The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 - The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code.
 
-## Create an function app via the CLI
+## Create a function app via the CLI
 
 1. Create an Azure storage account:
 
