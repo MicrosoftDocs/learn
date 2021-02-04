@@ -14,22 +14,25 @@ In the unit, you'll create the Azure Cognitive Search service.
 
    ![Screenshot of the Azure portal, New Search Service pane](../media/3-exercise-screenshot-2.png)
 
-1. On the **New Search Service** page, fill out the form using this information:
+1. On the **New Search Service** page, complete the following fields.
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **URL** | Choose a unique name  |
+    | On the **Basics** tab, under **Project Details** |
     | **Subscription** | Concierge Subscription  |
-    | **Resource group** |  Select the existing group <rgn>[sandbox resource group name]</rgn> |
-    | **Location** | Select your nearest data center |
+    | **Resource Group** |  Select the existing group <rgn>[sandbox resource group name]</rgn> |
+    | Under **Instance Details** |
+    | **URL** | Choose a unique name. In this exercise, enter *northwindfitness*  |
+    | **Location** | Select your nearest datacenter |
+    | **Pricing tier** | Standard |
 
-1. Select **Create**.
+1. Select **Review + create**, and after you see the response **Validation Success**, select **Create**.
 
     Your Azure Cognitive Search service will be up and running soon. There are many options to further configure your new search instance.
 
-    If you were to continue to interact with the search service programmatically, you will need to obtain the URL and API key.
+    If you were to continue to interact with the search service programmatically, you would need to obtain the URL and API key.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**.
+1. After deployment completes, select **Go to resource**.
 
 1. Select the Azure Cognitive Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
 
