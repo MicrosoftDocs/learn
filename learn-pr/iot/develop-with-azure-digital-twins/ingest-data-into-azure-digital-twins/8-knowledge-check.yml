@@ -43,7 +43,7 @@ quiz:
     - content: "Azure Event Grid and Azure Functions"
       isCorrect: true
       explanation: "IoT Hub can publish telemetry events to Event Grid, which triggers Azure Functions running the Azure Digital Twins SDK. The SDK is used to update Azure Digital Twins."
-    - content: "Virtual Machines"
+    - content: "Virtual machines"
       isCorrect: false
       explanation: "Although virtual machines could be used as 'external compute', this approach would be overly complex and costly."
     - content: "Azure Storage"
