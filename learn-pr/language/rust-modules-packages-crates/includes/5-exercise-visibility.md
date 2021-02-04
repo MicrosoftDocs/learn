@@ -1,6 +1,6 @@
 Unless explicitly noted, every item in a module is private. Only the public items of a module can be accessed from outside the module scope.
 
-The code below has a compiler error. Your assignment in this exercise is to make the code compile successfully without modifying the `main` function.
+The following code has a compiler error. Your assignment in this exercise is to make the code compile successfully without modifying the `main` function.
 
 ```rust
 mod car_factory {

@@ -29,9 +29,9 @@ fn main() {
 }
 ```
 
-In the preceding code, we can see that the `authentication` module provides the `User` struct with the `User::new` method, since they're both public *(mind the `pub` keyword)*.
+In the preceding code, we can see that the `authentication` module provides the `User` struct with the `User::new` method, since they're both public. *Notice the `pub` keyword.*
 
-This code fails to compile because it tries to access the `username` and `password_hash` fields from the `User` struct, but they are private. Running the code results in the following error:
+This code fails to compile because it tries to access the `username` and `password_hash` fields from the `User` struct, but they're private. Running the code results in the following error:
 
 ```output
     error[E0616]: field `username` of struct `User` is private
@@ -49,7 +49,7 @@ This code fails to compile because it tries to access the `username` and `passwo
     error: aborting due to 2 previous errors
 ```
 
-This is useful when we want to control which parts of our program can access each part of a given module. If we wanted to give read access to the `username` field and write access to the `password` field while keeping them private, we could use getter and setter methods:
+This error information is useful when we want to control which parts of our program can access each part of a given module. If we wanted to give read access to the `username` field and write access to the `password` field while keeping them private, we could use getter and setter methods:
 
 ```rust
 mod authentication {
@@ -71,6 +71,6 @@ mod authentication {
 }
 ```
 
-This ensures that every read and write attempt will be controlled by the `authentication` module.
+Now every read and write attempt will be controlled by the `authentication` module.
 
 To view the code for this unit, visit this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=35b4e3ff0e72ee9d87abaa8313dd3b23&azure-portal=true).

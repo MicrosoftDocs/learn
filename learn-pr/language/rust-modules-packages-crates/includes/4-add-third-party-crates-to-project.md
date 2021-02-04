@@ -1,15 +1,15 @@
-In this module, we'll learn how to add third party crates to your project. Rust standard library doesn't have a module for **regular expressions**, so lets add the `regex` crate that is available in the [Crates.io](https://crates.io?azure-portal=true) website, which is the Rust community's central package registry that serves as a location to discover and download packages.
+In this module, we'll learn how to add third-party crates to your project. Rust standard library doesn't have a module for *regular expressions*, so let's add the `regex` crate that's available at [Crates.io](https://crates.io?azure-portal=true). This website is the Rust community's central package registry that serves as a location to discover and download packages.
 
-Whenever we want to add dependent crates to our project, we can rely on Cargo to do all the heavy-lifting for us. To depend on a library hosted on crates.io, add it to your `Cargo.toml` file:
+Whenever we want to add dependent crates to our project, we can rely on Cargo to do all the heavy lifting for us. To depend on a library hosted on crates.io, add it to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
 regex = "1.4.2"
 ```
 
-If your `Cargo.toml` doesn't already have a `[dependencies]` section, add that, then list the crate name and version that you would like to use.
+If your `Cargo.toml` doesn't already have a `[dependencies]` section, add that section. Then list the crate name and version that you want to use.
 
-The next step is to run the command `cargo build`, and Cargo will fetch the new dependency and all of its dependencies, compile them all:
+The next step is to run the command `cargo build`. Cargo will fetch the new dependency and all of its dependencies, and compile them all:
 
 ```output
     $ cargo build
@@ -50,4 +50,4 @@ Running it will show:
     Did our date match? true
 ```
 
-You can also use third party crates in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bc8a88c8013941d1d58c9e3b3bdafb42&azure-portal=true).
+You can also use third-party crates in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bc8a88c8013941d1d58c9e3b3bdafb42&azure-portal=true).
