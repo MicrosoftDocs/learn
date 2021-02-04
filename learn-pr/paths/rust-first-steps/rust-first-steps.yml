@@ -2,7 +2,7 @@
 uid: learn.languages.rust-first-steps
 metadata:
   title: Take your first steps with Rust
-  description: Interested in learning a programming language but aren't sure where to start? Start here! Lay the foundation of knowledge you need to build programs and handle errors in Rust.
+  description: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
   brand: azure
   ms.date: 01/29/2021
   author: meaghanlewis
@@ -11,15 +11,16 @@ metadata:
   ms.prod: learning-azure
 title: Take your first steps with Rust
 summary: |
-  Interested in learning a programming language but aren't sure where to start? Start here! Lay the foundation of knowledge you need to build programs and handle errors in Rust.
+  Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
 
   In this learning path, you'll:
-    - Write your first lines of Rust code.
-    - Learn how to handle errors.
+    - Install the tools you need to write your first lines of Rust code.
     - Learn basic concepts in Rust.
+    - Learn how to handle errors.
+    - Manage memory in Rust.
     - Use generic types and traits.
     - Set up modules for packages and crates.
-    - Run automated tests.
+    - Write and run automated tests.
     - Create a command-line program.    
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
@@ -33,8 +34,8 @@ products:
 - azure
 modules:
 - learn.language.rust-get-started
-- learn.language.rust-error-handling
 - learn.language.rust-understand-common-concepts
+- learn.language.rust-error-handling
 - learn.languages.rust-memory-management
 - learn.language.rust-generic-types-traits
 - learn.language.rust-modules-packages-crates
