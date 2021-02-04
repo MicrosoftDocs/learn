@@ -1,4 +1,4 @@
-With Rust, you can execute documentation examples as tests. The primary way of documenting a Rust library is through annotating the source code with triple forward slashes *(///)*, known as *documentation comments*. Documentation comments are written in markdown and support code blocks in them, so these code blocks are compiled and used as tests.
+With Rust, you can execute documentation examples as tests. The primary way to document a Rust library is through annotating the source code with triple forward slashes *(///)*, known as *documentation comments*. Documentation comments are written in Markdown and support code blocks in them, so these code blocks are compiled and used as tests.
 
 To try out this feature, you'll need to create a new library project first.
 
@@ -7,7 +7,7 @@ $ cargo new --lib basic_math
 $ cd basic_math
 ```
 
-Open the file `src/lib.rs` in Visual Studio Code and replace the existing contents with the following code:
+Open the file `src/lib.rs` in Visual Studio Code, and replace the existing contents with the following code:
 
 ```rust
 /// Generally, the first line is a brief summary describing the function.
@@ -25,7 +25,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 ```
 
-Like unit tests, doc tests will pass if they run without panicking. To verify certain results, use an `assert!` macro to verify the actual output is as expected.  You can call the test suite for this code with the command `$ cargo test`, and the output would look like this:
+Like unit tests, documentation tests will pass if they run without panicking. To verify certain results, use an `assert!` macro to verify the actual output is as expected. You can call the test suite for this code with the command `$ cargo test`, and the output would look like this example:
 
 ```output
 $ cargo test
@@ -44,4 +44,4 @@ test src/lib.rs - add (line 6) ... ok
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-Notice that the output indicates that there are 0 unit tests and 1 doc test.
+Notice that the output indicates that there are 0 unit tests and 1 documentation test.

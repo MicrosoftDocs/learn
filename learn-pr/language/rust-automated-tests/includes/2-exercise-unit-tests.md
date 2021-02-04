@@ -1,4 +1,4 @@
-In this exercise you'll write two test functions for the `is_even` function. You'll know the exercise is complete once the code compiles and both tests passes. You should edit only the body of the two test functions.
+In this exercise, you'll write two test functions for the `is_even` function. You'll know the exercise is complete after the code compiles and both tests pass. You should edit only the body of the two test functions.
 
 ```rust
 pub fn is_even(num: i32) -> bool {
