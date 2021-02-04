@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-entitlement-management.knowledge-checks
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/02/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What do catalogs contain?"
+    choices:
+    - content: "Device registrations"
+      isCorrect: false
+      explanation: "Incorrect. Device registrations are maintained in Azure Active Directory and Microsoft Intune."
+    - content: "Resources and access packages"
+      isCorrect: true
+      explanation: "Correct. Catalogs are used to group related resources and access packages."
+    - content: "User lists"
+      isCorrect: false
+      explanation: "Incorrect. A list of user accounts is not included in a catalog."
+  - content: "How long are deleted users retained by Azure AD by default?"
+    choices:
+    - content: "14 days"
+      isCorrect: false
+      explanation: "Incorrect. Although deleted user account retention can be changed, by default a deleted user is in a deleted state in Azure AD for 30 days, during which time they can be restored by an administrator if necessary."
+    - content: "30 days"
+      isCorrect: true
+      explanation: "Correct. By default, a deleted user is in a deleted state in Azure AD for 30 days, during which time they can be restored by an administrator if necessary."
+    - content: "60 days"
+      isCorrect: false
+      explanation: "Incorrect. Although deleted user account retention can be changed, by default a deleted user is in a deleted state in Azure AD for 30 days, during which time they can be restored by an administrator if necessary."
+  - content: "When should access packages be used?"
+    choices:
+    - content: "To allow one organization access when collaborating on a project."
+      isCorrect: false
+      explanation: "Incorrect. When two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Azure AD B2B to access another organization's resources."
+    - content: "An employee requires permanent permissions to perform their job role."
+      isCorrect: false
+      explanation: "Incorrect. Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department."
+    - content: "For access that requires the approval of an employee's manager or other designated individuals."
+      isCorrect: true
+      explanation: "-Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Azure AD B2B to access another organization's resources."

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a SQL database
   description: In this unit, you'll create an Azure SQL database by using the Azure portal.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
