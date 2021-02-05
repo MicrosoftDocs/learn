@@ -71,24 +71,24 @@ More details:
   - [GitHub](https://github.com/ethereum/EIPs/issues/225/?azure-portal=true)
   - [Website](https://www.rinkeby.io/?azure-portal=true)
 
-### Görli
+### Goerli
 
-The PoA cross-client testnet [Görli](https://goerli.net/?azure-portal=true) was named after a Berlin subway station. This testnet aims to be widely usable across various clients. It's robust enough to guarantee consistent availability. It began with the Goerli Initiative in 2018.
+The PoA cross-client testnet [Goerli](https://goerli.net/?azure-portal=true) was named after a Berlin subway station. This testnet aims to be widely usable across various clients. It's robust enough to guarantee consistent availability. It began with the Goerli Initiative in 2018.
 
 More details:
-- Görli supports most clients, including these options: 
+- Goerli supports most clients, including these options: 
     - [Geth](https://geth.ethereum.org/?azure-portal=true)
     - [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
     - [Nethermind](https://nethermind.io/?azure-portal=true)
 - Block time: 15 seconds on average
-- Görli-specific links:
+- Goerli-specific links:
   - [Faucet](https://faucet.goerli.mudit.blog/?azure-portal=true)
   - [Status dashboard](https://stats.goerli.net/?azure-portal=true)
   - [Explorer](https://goerli.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/goerli/testnet/?azure-portal=true)
   - [Website](https://www.goerli.net/?azure-portal=true)
 
-Ropsten is said to be the testnet most similar to the mainnet. It was the first major testnet. Kovan, Görli, and Rinkeby are stable and have high usage. Before you deploy to the mainnet, deploy to and test on multiple testnets.
+Ropsten is said to be the testnet most similar to the mainnet. It was the first major testnet. Kovan, Goerli, and Rinkeby are stable and have high usage. Before you deploy to the mainnet, deploy to and test on multiple testnets.
 
 ## Clients and APIs for deploying to testnets and the mainnet
 
@@ -110,7 +110,7 @@ Here are some common [Ethereum clients](https://ethereum.org/en/developers/docs/
 
 - [Nethermind](https://nethermind.io/?azure-portal=true)
 
-    Nethermind provides the world's fastest .NET Ethereum client and P2P data marketplace. It offers consulting services for developers of Ethereum blockchain solutions.
+    Nethermind provides the world's fastest .NET Core Ethereum client and P2P data marketplace. It offers consulting services for developers of Ethereum blockchain solutions.
 
 ### APIs
 
@@ -124,6 +124,6 @@ Here are some common Ethereum APIs:
 
     When you deploy to either a testnet or the mainnet, the MetaMask client provides a robust interface and wallet that connects to and interacts with Ethereum blockchains.
 
-    Using MetaMask to send ether and tokens on a testnet is straightforward. As you've seen in previous tutorials, the client provides an easy interface to select and use different Ethereum networks. When you need to interact with development networks, MetaMask simplifies connecting to localhost 8545 or custom RPC so you can connect with Ganache and Truffle. Similarly, MetaMask has predefined connections to the public testnets and the mainnet. 
+    Using MetaMask to send ether and tokens on a testnet is straightforward. The client provides an easy interface to select and use different Ethereum networks. When you need to interact with development networks, MetaMask simplifies connecting to localhost 8545 or custom RPC so you can connect with Ganache and Truffle. Similarly, MetaMask has predefined connections to the public testnets and the mainnet. 
 
     If you connect to the mainnet, be careful to secure your private key. Real ether is used for this connection.
