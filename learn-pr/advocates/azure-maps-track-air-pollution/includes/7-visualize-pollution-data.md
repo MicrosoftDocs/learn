@@ -34,7 +34,7 @@ AQI data is in the following JSON format:
 }
 ```
 
-The `data` property contains an array of JSON objects for all the measuring stations that are requested. The objects have a location that's defined by longitude, latitude, and the AQI measurement. The data can't be plotted on the map as it is delivered, though. Your app must first convert the data to a GeoJSON feature collection.
+The `data` property contains an array of JSON objects for all the measuring stations that are requested. Objects have locations that are defined by longitude, latitude, and the AQI measurement. The data can't be plotted on the map in the format that you receive it. Your app must first convert the data to a GeoJSON feature collection.
 
 The following steps are an overview of the steps you take to convert AQI data to a feature collection. You'll implement these steps in code later in this unit.
 
@@ -46,7 +46,7 @@ To convert AQI data to a GeoJSON feature collection:
 
     1. The geometry of the feature is a location `Point`, with the coordinates set to the longitude `lon` and latitude `lat`.
 
-    1. Instead of plotting the AQI measurement directly, it's easier to visualize the data by using a colored bubble. Convert the AQI measurement to a color value as an RGB hex string. Then, add the converted color value to the feature’s `properties` array.
+    1. Instead of plotting the AQI measurement directly, it's easier to depict the data by using a colored bubble. Convert the AQI measurement to a color value as an RGB hex string. Then, add the converted color value to the feature’s `properties` array.
 
     Here's the GeoJSON for the data in this example:
     
@@ -93,7 +93,7 @@ When you have the WAQI API token, add the token key value to the environment var
 
 1.	In Visual Studio Code, open the *.env* file in your application code folder.
 
-1.	Add the following statement to the end of the *.env* file. Replace the `<your waqi key>` placeholder with your token key value for the WAQI API.
+1.	Add the following statement to the end of the *.env* file: 
 
     ```console
     WAQI_API_KEY=<your waqi key>
@@ -103,7 +103,7 @@ When you have the WAQI API token, add the token key value to the environment var
 
 1.	Save the changes to the *.env* file.
 
-1.	Open your <i>app.py</i> file in Visual Studio Code.
+1.	In Visual Studio Code, open your <i>app.py</i> file.
 
 1.	In the <i>app.py</i> code, find the statement that loads the `MAP_KEY` value. After that statement, add the following statements to load the WAQI API key. The code defines the `WAQI_API_KEY` constant for the API URL:
 
@@ -119,7 +119,7 @@ When you have the WAQI API token, add the token key value to the environment var
 
 ### Add a data source to the map
 
-The last update is to add a data source to the map to render the AQI data. Azure Maps uses data sources to plot layers. The data sources can get their data from GeoJSON feature collections.
+The last step is to add a data source to the map to render the AQI data. Azure Maps uses data sources to plot layers. A data source can get its data from a GeoJSON feature collection.
 
 1.	In Visual Studio Code, open the *home.html* file in the *templates* folder for your app.
 
@@ -135,7 +135,7 @@ The last update is to add a data source to the map to render the AQI data. Azure
     })
     ```
 
-1.	Replace this section of code with the following statements, and then save the file.
+1.	Replace this section of code with the following statements, and then save the file:
 
     ```javascript
     // When the map is ready, center the map on the user's location.
@@ -181,13 +181,13 @@ The last update is to add a data source to the map to render the AQI data. Azure
     })
     ```
 
-    This data source is used to create a bubble layer that shows circles on the map. This layer shows one bubble for each feature in the feature collection, using the coordinates on the geometry. The bubbles have a fixed size and opacity, but the color isn't fixed. Instead, the `['get', 'color']` code tells the map to load the color from a property of the feature called `color`.
+    This data source is used to create a bubble layer that shows circles on a map. This layer shows one bubble for each feature in the feature collection, using the coordinates of the geometry. The bubbles have a fixed size and opacity, but the color isn't fixed. Instead, the `['get', 'color']` code tells the map to load the color from a property of the feature called `color`.
 
-    The `updateAQIData` function is added to three map events that fire when the map is zoomed or moved, or the pitch is changed. Every time the user moves the map, the function is called. This function gets the current bounds from the Maps camera; that is, from the north-west and south-east coordinates of the map piece that is visible on the screen. The function then passes these bounds to a call to the `api` route, calling into the Python code to load the AQI data. Finally, the feature collection is added to the data source.
+    The `updateAQIData` function is added to three map events that fire when the map is zoomed or moved, or the pitch is changed. Every time the user moves the map, the function is called. The function gets the current bounds from the Maps camera; that is, from the north-west and south-east coordinates of the map piece that is visible on the screen. The function then passes these bounds to a call to the `api` route, calling into the Python code to load the AQI data. Finally, the feature collection is added to the data source.
 
 ### Load the air quality data
 
-The Flask app needs to call the API to load the data for the visible portion of a map:
+The Flask app needs to call the API to load the data for the visible portion of a map.
 
 1. Open the <i>app.py</i> file.
 
@@ -251,9 +251,9 @@ In Visual Studio Code, make sure that your <i>app.py</i> file is open. Select th
 
 You should see colored circles (bubbles) on the map that show the WAQI data:
 
-:::image type="content" source="../media/final-output.png" alt-text="Screenshot that shows a map with air quality shown as colored circles.":::
+:::image type="content" source="../media/final-output.png" alt-text="Screenshot that shows a map with air quality shown as colored circles." lightbox="../media/final-output.png#lightbox":::
 
 Move around the map and you'll see the bubbles update to match the area you're viewing.
 
-Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as areas with large numbers of fossil fuel burning power stations or factories. Others are not so obvious. Find ones near you and think about what might cause the pollution.
+Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some reasons are obvious, like in areas with large numbers of fossil fuel-burning power stations or factories. Others are not so obvious. Find ones near you and think about what might cause the pollution.
 

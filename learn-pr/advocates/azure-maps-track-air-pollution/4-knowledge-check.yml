@@ -37,16 +37,16 @@ quiz:
       explanation: Incorrect. Heat map layers don't literally represent heat or temperature.
     - content: How high above sea level a location is.
       isCorrect: false
-      explanation: Incorrect. Heat map layers don't represent altitude.
+      explanation: Incorrect. Heat map layers don't represent the altitude of locations or features on a map.
 
   - content: What GeoJSON object is used to render a layer on a map?
     choices:  
     - content: Geometry
       isCorrect: false
-      explanation: Incorrect. A geometry is not the GeoJSON object that's used to render layers on a map.
+      explanation: Incorrect. A geometry is not used to render layers on a map.
     - content: Feature
       isCorrect: false
-      explanation: Incorrect. A feature is not the GeoJSON object that's used to render layers on a map.
+      explanation: Incorrect. A feature is not used to render layers on a map.
     - content: Feature collection
       isCorrect: true
       explanation: Correct! Azure Maps uses data sources that contain GeoJSON feature collections to render layers on the map.
@@ -55,10 +55,10 @@ quiz:
     choices:
     - content: Get the bounds property from the Maps camera.
       isCorrect: true
-      explanation: Correct! The viewable area of the map is controlled by a virtual camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
+      explanation: Correct! The viewable area of a map is controlled by a virtual camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
     - content: Get the top, bottom, left, and right coordinates from the map control.
       isCorrect: false
-      explanation: Incorrect. The map control doesn't contain the information you need to get the coordinates of part of a map that's shown in a web browser.
+      explanation: Incorrect. The map control doesn't contain the information you need to get the coordinates of a map that's shown in a web browser.
     - content: Calculate based on the last known location.
       isCorrect: false
-      explanation: Incorrect. Azure Maps offers a direct way to get the coordinates of part of a map that's shown in a web browser.
+      explanation: Incorrect. Azure Maps offers a direct way to get the coordinates of a map that's shown in a web browser.

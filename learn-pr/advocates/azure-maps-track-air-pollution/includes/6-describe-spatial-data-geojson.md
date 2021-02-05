@@ -1,7 +1,7 @@
-GeoJSON is an internet-standard geospatial data format that's based on JavaScript Object Notation (JSON). To add layers to an Azure Maps control, you need to define a data source that contains GeoJSON data. The map control uses the data to create overlays based on locations. For example, you'd use a data source to define the placement of features in a bubble layer.
+GeoJSON is an internet-standard geospatial data format that's based on JavaScript Object Notation (JSON). To add layers to a map control, you need to define a data source that contains GeoJSON data. The map control uses the data to create overlays based on locations. For example, you'd use a GeoJSON data source to define the placement of features in a bubble layer on a map.
 
 > [!NOTE]
-> GeoJSON is defined as a standard in the Internet Engineering Task Force [RFC 7946](https://tools.ietf.org/html/rfc7946?azure-portal=true).
+> GeoJSON is defined as a standard in Internet Engineering Task Force (IETF)) [RFC 7946](https://tools.ietf.org/html/rfc7946?azure-portal=true).
 
 ## GeoJSON objects
 
@@ -23,7 +23,7 @@ A *geometry* is a region in space. A geometry can be:
 A geometry GeoJSON object has two properties:
 
 * `type`: Specifies the type of geometry, like a `Point` or a `Polygon`.
-* `coordinates`: Contains the coordinates as longitude and latitude values in a two-item array. The first item is the longitude, and the second item is the latitude. Points have a single value in an array. Lines and polygons have multiple values in an array. For polygons, the shape must be closed, so the last coordinate must be the same as the first coordinate.
+* `coordinates`: Contains coordinates as longitude and latitude values in a two-item array. The first item is the longitude, and the second item is the latitude. Points have a single value in an array. Lines and polygons have multiple values in an array. For polygons, the shape must be closed, so the last coordinate must be the same as the first coordinate.
 
 Here's an example geometry object that contains a single point on the Microsoft headquarters in Redmond, Washington, USA:
 
@@ -34,7 +34,7 @@ Here's an example geometry object that contains a single point on the Microsoft 
 }
 ```
 
-Here's an example polygon for a square around Paris, France:
+Here's an example of a polygon for a square around Paris, France:
 
 ```json
 {
@@ -61,7 +61,7 @@ A feature GeoJSON object has three properties:
 
 * `type`:  Specifies the type of object and is always `Feature` for a feature.
 * `geometry`: A GeoJSON geometry object that defines the location of the feature.
-* `properties`:  Any valid GeoJSON object and defines the properties of the feature.
+* `properties`:  Any valid GeoJSON object, and it defines the properties of the feature.
 
 Here's an example feature for Paris, France:
 
@@ -143,4 +143,4 @@ Here's an example of a feature collection for two European cities:
 }
 ```
 
-In this unit, you learned about the GeoJSON format for storing spatial data and its three object types. Next, you'll use an API to get air quality data, convert it to GeoJSON, and show it on a map.
+In this unit, you learned about the GeoJSON format that's used to store spatial data and its three object types. Next, you'll use an API to get air quality data, convert the data to GeoJSON, and then show the data on a map.
