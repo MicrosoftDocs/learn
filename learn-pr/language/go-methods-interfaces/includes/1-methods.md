@@ -143,7 +143,7 @@ Learning Go!
 LEARNING GO!
 ```
 
-Notice how you can continue using the new object as if it were a string by the first time you print out its value. Then, when you call the `Upper` method, the string changes.
+Notice how you can use the new object `s` as if it were a string when you first print out its value. Then, when you call the `Upper` method, `s` prints out all uppercase letters of type string.
 
 ## Embed methods
 
