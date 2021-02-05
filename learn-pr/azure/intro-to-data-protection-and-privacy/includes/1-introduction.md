@@ -6,7 +6,7 @@ Contoso’s IT director realizes that Contoso has an outdated operational model.
 
 As Contoso's lead system engineer and server administrator, you've been asked to evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You should decide whether these services can help address the Contoso legal department's concerns.
 
-<!-- ID/SME Per the Learn Contributor Guide, we're not supposed to use "in this module" or "you'll learn", so I'd recommend changing to "This modules details data protection and privacy regulations. It also describes the Microsoft principles and standards for helping protect customer data." Please approve and effect this change.--> In this module, you’ll learn about data protection and privacy regulations. You’ll also learn about Microsoft’s principles and standards for helping protect customer data.  
+This modules details data protection and privacy regulations. It also describes the Microsoft principles and standards for helping protect customer data.  
 
 ## Learning objectives
 
