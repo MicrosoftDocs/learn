@@ -10,7 +10,7 @@ The following diagram shows the high-level steps for ordering a device from the 
 
 For clarity, let's break these workflow stages out into discrete steps:
 
-1. Create an order in the Azure portal.
+1. Create an order in the Azure portal or by using Azure CLI or PowerShell.
 1. Receive the device from the Azure datacenter. Connect to and unlock the device.
 1. Set up and copy data to the device. Validate the data.
 1. Ship the device to Azure.
@@ -48,7 +48,7 @@ For your vehicle data, you'd follow these steps to order a Data Box Disk to impo
 
 1. **Create an order**
    - Start by making an assessment of how much data your vehicles generate during the time you plan to sample before shipping it to Azure.
-   - Create an order in the portal, and specify the amount of data, source country, and destination region.
+   - Create an order in the portal or by using Azure CLI or PowerShell. Specify the amount of data, source country, and destination region.
 
 1. **Receive the device from Azure Datacenter**
    - The service assigns from one to five 8-TB BitLocker-encrypted SSDs (up to 35 TB of usable capacity) and ships them within 10 days. If you need more than 35 TB, you can create more orders.
