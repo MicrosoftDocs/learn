@@ -28,7 +28,7 @@ func (t triangle) perimeter() int {
 }
 ```
 
-The struct looks like a normal one, but the `perimeter()` function has an extra parameter of type `triangle` before the function name. This means that when you use the struct, you can call the function with the dotted notation, like this:
+The struct looks like a normal one, but the `perimeter()` function has an extra parameter of type `triangle` before the function name. This means that when you use the struct, you can call the function like this:
 
 ```go
 func main() {
@@ -175,7 +175,7 @@ Size: 3
 Perimeter 9
 ```
 
-If you're familiar with any existing OOP language, you might think that the `triangle` struct looks like a base class and `coloredTriangle` is a subclass (such as inheritance), but that's not quite correct. What's happening, in reality, is that the Go compiler is promoting the `perimeter()` method by creating a wrapper method, which looks something like this:
+If you're familiar with an OOP language such as Java or C++, you might think that the `triangle` struct looks like a base class and `coloredTriangle` is a subclass (such as inheritance), but that's not quite correct. What's happening, in reality, is that the Go compiler is promoting the `perimeter()` method by creating a wrapper method, which looks something like this:
 
 ```go
 func (t coloredTriangle) perimeter() int {
@@ -187,7 +187,7 @@ Notice that the receiver is `coloredTriangle`, which calls the `perimeter()` met
 
 ## Overload methods
 
-Let's return to the `triangle` example that we discussed earlier. What happens if you want to change the implementation of the `perimeter()` method in the `coloredTriangle` struct? You can't have two functions with the same name. However, because methods need an extra parameter (the receiver), you're allowed to have a method with the same name as long as it's specific to the receiver you want to use.
+Let's return to the `triangle` example that we discussed earlier. What happens if you want to change the implementation of the `perimeter()` method in the `coloredTriangle` struct? You can't have two functions with the same name. However, because methods need an extra parameter (the receiver), you're allowed to have a method with the same name as long as it's specific to the receiver you want to use. That's how you overload methods.
 
 In other words, you could write the wrapper method we've just discussed if you want to change its behavior. If the perimeter of a colored triangle is twice the perimeter of a normal triangle, the code would be something like this:
 
@@ -233,7 +233,7 @@ Perimeter (colored) 18
 Perimeter (normal) 9
 ```
 
-As you've noticed, in Go, you can *override* a method and still access the *original* one if you need it.
+As you might have noticed, in Go, you can *override* a method and still access the *original* one if you need it.
 
 ## Encapsulation in methods
 
