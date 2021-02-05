@@ -5,7 +5,7 @@ Take the example of a freight delivery system:
 - Your service receives a package, captures the shipping address information, and registers the delivery address.
 - Your service queries and updates data from a relational database.
 
-In this module, you'll use this example to create a database on Azure Database for MySQL. You'll then create and deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. Finally, you'll learn how to manage your application's life cycle.
+In a similar way, in this module, you'll create a database on Azure Database for MySQL. You'll then create and deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. Finally, you'll learn how to manage your application's life cycle.
 
 ## Learning objectives
 
