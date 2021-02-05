@@ -239,7 +239,7 @@ As you might have noticed, in Go, you can *override* a method and still access t
 
 Encapsulation means that a method is inaccessible to the caller (client) of an object. Usually, in other programming languages, you place the `private` or `public` keywords before the method name. In Go, you need to use only a capitalized identifier to make a method public and an uncapitalized identifier to make a method private.
 
-As a reminder, encapsulation in Go takes effect only between packages. In other words, you can hide implementation details only to another package, but not to the package itself.
+Encapsulation in Go takes effect only between packages. In other words, you can hide only implementation details from another package, not the package itself.
 
 To give it a try, create a new package `geometry` and move the triangle struct there, like this:
 
