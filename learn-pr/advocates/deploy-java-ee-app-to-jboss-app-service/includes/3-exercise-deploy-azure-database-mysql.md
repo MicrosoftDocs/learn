@@ -279,5 +279,7 @@ Now you can view the contents of the `world` database.
    11 rows in set (0.33 sec)
    ```
 
+## Unit summary
+
 You've now completed the setup and preparation for your MySQL Server.
 In the next unit, you'll deploy the Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and configure it.

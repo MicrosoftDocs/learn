@@ -49,19 +49,19 @@ Your application will require a binding to a data source. We'll configure it to 
 
 To connect to the database from JBoss EAP, you need configure a `DataSource` object. When you configure a `DataSource` object, an application can connect to the database.
 
-You'll configure `DataSource` to connect to the Azure Database for MySQL that you created earlier with the following information:
+You'll configure `DataSource` to connect to the Azure Database for MySQL instance that you created earlier with the following information:
 
 | DataSource configuration | value |
 | --- | --- |
-| DataSource Name | `JPAWorldDataSourceDS`  |
-| JNDI Name | `java:jboss/datasources/JPAWorldDataSource` |
-| Connection URL| `${MYSQL_CONNECTION_URL}` |
-| JDBC Driver Name| `$PACKAGE_NAME.war_com.mysql.cj.jdbc.Driver_8_0` |
-| User Name | `${MYSQL_USER}` |
-| Password | `${MYSQL_PASSWORD}`|
-| Minimum Pool Size | `5` |
-| Maximum Pool Size | `20` |
-| JDBC Class Name| `com.mysql.cj.jdbc.Driver` |
+| `DataSource Name` | `JPAWorldDataSourceDS`  |
+| `JNDI Name` | `java:jboss/datasources/JPAWorldDataSource` |
+| `Connection URL`| `${MYSQL_CONNECTION_URL}` |
+| `JDBC Driver Name`| `$PACKAGE_NAME.war_com.mysql.cj.jdbc.Driver_8_0` |
+| `User Name` | `${MYSQL_USER}` |
+| `Password` | `${MYSQL_PASSWORD}`|
+| `Minimum Pool Size` | `5` |
+| `Maximum Pool Size` | `20` |
+| `JDBC Class Name`| `com.mysql.cj.jdbc.Driver` |
 
 We used a Java Naming and Directory Interface (JNDI) name of `java:jboss/datasources/JPAWorldDataSource` for the data source. JNDI is useful in multiple environments to change to a different database without code changes.
 
