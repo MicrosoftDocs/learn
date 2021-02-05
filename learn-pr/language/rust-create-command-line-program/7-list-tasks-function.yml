@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-create-command-line-program.list-tasks-function
 metadata:
-  title: Implement the function to print out all tasks
-  description: Write the function body to print out tasks in a formatted output.
+  title: Write the function that prints tasks
+  description: Write the function that prints tasks in a formatted output.
   ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement the function to print out all tasks
+title: Write the function that prints tasks
 durationInMinutes: 4
 content: |
   [!include[](includes/7-list-tasks-function.md)]

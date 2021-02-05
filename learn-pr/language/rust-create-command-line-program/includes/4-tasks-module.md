@@ -1,6 +1,6 @@
-This next module we create will be responsible for representing our tasks, persisting them on disk and deserializing them from it.
+The next module we create will be responsible for representing our tasks, persisting them on disk, and deserializing them from the disk.
 
-We'll begin by defining a simple struct to represent what a to-do item will look like in our
+We'll start by defining a simple struct to represent what a to-do item will look like in our
 program:
 
 ```rust
@@ -15,24 +15,23 @@ pub struct Task {
 
 Our struct has two fields:
 
-- `text`: stores the task description, such as `"pay the bills"`, and
-- `created_at`: stores the timestamp of the task's creation.
+- `text` stores the task description, like `"pay the bills"`.
+- `created_at` stores the timestamp of the task's creation.
 
-We won't add a `status` or `is_complete` field because we will represent our to-do list as a vector of tasks (`Vec<Task>`), so when a task is complete we can simply remove it from that vector.
+We won't add a `status` or `is_complete` field because we'll represent the to-do list as a vector of tasks (`Vec<Task>`). So when a task is complete, we can simply remove it from the vector.
 
-You might have noticed that we're using a third-party crate, `chrono`, and its `DateTime` struct
-specialized with the `Utc` parameter. `chrono` is the crate of choice to go for if you need to
-handle date and time data in Rust. It offers a really simple API for us to represent a moment in time.
+You might have noticed that we're using a third-party crate, `chrono`. We've specified the `Utc` parameter for its `DateTime` struct. `chrono` is a good crate to use if you need to
+handle date and time data in Rust. It provides an easy API for representing a moment in time.
 
-Since we're using it, we must declare it in our `Cargo.toml` file:
+Because we're using it, we need to declare it in the `Cargo.toml` file:
 
 ```toml
 [dependencies]
 structopt = "0.3"
-chrono = "0.4" # <-- add chrono here
+chrono = "0.4" # Add chrono here.
 ```
 
-The next step we need to do is to implement a method for instantiating new tasks that will always be timestamped with the current date and time:
+The next step is to implement a method for instantiating new tasks. Tasks will always be timestamped with the current date and time:
 
 ```rust
 impl Task {
@@ -43,18 +42,18 @@ impl Task {
 }
 ```
 
-The code above defines the `Task::new` function that asks only for the task description, as it will capture the current timestamp for itself using the `Utc::now()` method.
+This code defines the `Task::new` function. The function requires only the task description. It will capture the current timestamp by using the `Utc::now()` method.
 
-Alright, it seems that our task struct is complete. Now let's tackle this module's next item:
+It seems that our task struct is complete. Now let's tackle this module's next item:
 *persistence*.
 
-Since we will represent our to-do list as a vector of tasks, we could easily use a `JSON` file to persist our data. To achieve this, the best course of action is to use another excellent crate from the Rust ecosystem, `serde_json`.
+Because we'll represent our to-do list as a vector of tasks, we could easily use a JSON file to persist the data. To achieve that, the best course of action is to use another excellent crate from the Rust ecosystem: `serde_json`.
 
-## Serialize and Deserialize our tasks with serde_json
+## Serialize and deserialize tasks by using `serde_json`
 
-Before we continue, we should cover some background of Rust's encoding and decoding good practices.
+Before we continue, we should cover some recommended practices for encoding and decoding in Rust.
 
-Whenever we need to persist our structs and enum instances, we touch the topic of **serialization**, and when we need to get that data back into our program, we are talking about **deserialization**.
+When we need to persist structs and enum instances, we need to think about *serialization*. When we need to get that data back into a program, we’re talking about *deserialization*.
 
 According to [OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html?azure-portal=true):
 

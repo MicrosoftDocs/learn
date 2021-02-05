@@ -2,7 +2,7 @@
 uid: learn.language.rust-create-command-line-program.tasks-module
 metadata:
   title: Create the tasks module
-  description: Implement the module that create and store tasks.
+  description: Implement the module that creates and stores tasks.
   ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: shanama
