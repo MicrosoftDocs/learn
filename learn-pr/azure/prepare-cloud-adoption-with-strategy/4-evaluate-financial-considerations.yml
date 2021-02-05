@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.prepare-cloud-adoption-strategy.4-evaluate-financial-considerations
+metadata:
+  title: Evaluate financial considerations 
+  description: TBD
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Evaluate financial considerations 
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-evaluate-financial-considerations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: True
+      explanation: A.
+    - content: B.
+      isCorrect: false
+      explanation: B.
+    - content: C.
+      isCorrect: false
+      explanation: C.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: A.
+    - content: B.
+      isCorrect: true
+      explanation: B.
+    - content: C.
+      isCorrect: false
+      explanation: C.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: A.
+    - content: B.
+      isCorrect: false
+      explanation: B.
+    - content: C. 
+      isCorrect: true
+      explanation: C.

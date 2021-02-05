@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.prepare-cloud-adoption-strategy
+metadata:
+  title: Prepare for successful cloud adoption with a well-defined strategy. 
+  description: Success in cloud adoption is predicated by a clear strategy that helps the team understand executive direction and regularly measure progress. This module will help capture the cloud adoption strategy needed to drive your success. 
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare for successful cloud adoption with a well-defined strategy.
+summary: All great efforts start with a simple question; Why? Digital transformation is disrupting entire industries. Some organizations embrace transformation & reshape their future. Others use transformation to improve margins and hold onto existing market share. Success in cloud adoption is predicated by a clear strategy that helps the team understand executive direction and regularly measure progress. This module will help capture the cloud adoption strategy needed to drive your success. 
+abstract: | 
+  In this module, you will:
+  - Create clarity on corporate strategy to ensure all team members are working towards common goals  
+  - Establish metrics to create clarity, help the team learn, and systematically work towards your organizational objectives 
+  - Evaluate financial considerations to understand the value of cloud adoption  
+  - Evaluate technical considerations to help the team prepare for successful cloud adoption projects 
+prerequisites: | 
+  - Foundational understanding of cloud adoption  
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- solution-architect
+- technology-manager
+- business-owner
+- business-analyst
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- student
+products:
+- azure
+- azure-monitor
+- azure-arc
+- azure-resource-manager
+units:
+- learn.prepare-cloud-adoption-strategy.1-introduction
+- learn.prepare-cloud-adoption-strategy.2-capture-strategic-motivation
+- learn.prepare-cloud-adoption-strategy.3-define-objective-key-result
+- learn.prepare-cloud-adoption-strategy.4-evaluate-financial-considerations
+- learn.prepare-cloud-adoption-strategy.5-understand-technical-considerations
+- learn.prepare-cloud-adoption-strategy.6-summary
+badge:
+  uid: learn.prepare-cloud-adoption-strategy.badge
