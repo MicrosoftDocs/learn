@@ -4,6 +4,8 @@ In this unit, you'll learn about the products in the Azure Data Box family.
 
 ## Azure Data Box products
 
+Data Box devices let you send terabytes of data into and out of Azure in a quick, inexpensive, and reliable way.
+
 The Azure Data Box family can be divided into two groups, for *offline* and *online* data transfer. Offline data transfer allows you to move large amounts of data to Azure whenever you have time, network bandwidth, or cost constraints. Because your organization doesn't want to tie up its network bandwidth while shifting the vehicle data to Azure, this solution might be ideal.
 
 ### Offline data transfer

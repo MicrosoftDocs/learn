@@ -1,8 +1,8 @@
 After looking at the options for moving data, you decide that Azure Data Box Disk is the best choice. You don't want to dedicate your entire network bandwidth to the task of importing your data to Azure. As the administrator for your organization, you need to better understand the overall workflow involved in getting the data into Azure.
 
-In this unit, you'll learn how to use Azure Data Box Disk and the other devices in the Azure Data Box family.
+In this unit, you'll learn how to use Azure Data Box Disk and the other devices in the Azure Data Box family to import data to Azure.
 
-## Azure Data Box family workflow
+## Import data by using Azure Data Box family
 
 The following diagram shows the high-level steps for ordering a device from the Azure Data Box family:
 
@@ -41,7 +41,7 @@ Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob
 
 If you don't follow the file structure, size limit, and naming conventions, the data upload to Azure might fail. If you're using Windows, we recommend that you validate the files by using DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. If you have time, use the _generate checksums_ option to validate your data before sending it to Azure.
 
-## Azure Data Box Disk workflow
+## Import data by using Azure Data Box Disk
 
 For your vehicle data, you'd follow these steps to order a Data Box Disk to import the data to Azure:
 
