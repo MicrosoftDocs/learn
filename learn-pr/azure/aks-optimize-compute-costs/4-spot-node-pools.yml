@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-optimize-compute-costs.spot-node-pools
-title: How to configure multiple node pools by using AKS spot node pools with cluster autoscaler
+title: Configure multiple node pools by using AKS spot node pools with the cluster autoscaler
 
 metadata:
-  title: How to configure multiple node pools by using AKS spot node pools with cluster autoscaler
-  description: Using spot VMs for nodes with your AKS cluster allows you to take advantage of unused capacity in Azure and optimize costs. Here you'll explore how to configure a spot node pool, enable autoscaler on the node pool, and deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
+  title: Configure multiple node pools by using AKS spot node pools with the cluster autoscaler
+  description: Use spot VMs for user nodes with your AKS cluster to take advantage of unused capacity in Azure and to optimize costs. Here you'll explore how to configure a spot node pool and enable the autoscaler on the node pool. You'll also see how to deploy a workload that uses the node pool's taint information to schedule the workload on the node pool's nodes.
   ms.date: 7/10/2020
   author: cryophobia
   ms.author: chrvaw
@@ -19,38 +19,38 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Suppose you have a stateless service that process online orders running on an AKS cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. How does one add spot node pools to an AKS cluster?"
+  - content: "Suppose you have a stateless service that processes online orders and runs on an Azure Kubernetes Service (AKS) cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. How do you add spot node pools to an AKS cluster?"
     choices:
-    - content: "Run the `az aks update command` and specify the `convert-to-spot-vm` parameter."
+    - content: "Run the `az aks update` command and specify the `convert-to-spot-vm` parameter."
       isCorrect: false
       explanation: "It isn't possible to convert an existing user node pool to a spot node pool."
     - content: "Use the Azure portal to add a new spot node pool to the AKS cluster."
       isCorrect: false
       explanation: "The Azure portal currently doesn't support the option to add spot node pools. "
-    - content: "Run the `az aks node pool add` command to add a new spot node pool to the AKS cluster."
+    - content: "Run the `az aks nodepool add` command to add a new spot user node pool to the AKS cluster."
       isCorrect: true
-      explanation: "Spot node pools must be added to an AKS cluster, can't be updated, and availability can't be guaranteed since Azure will allocate VMs to the underlying scale set only if there's capacity available."
+      explanation: "Spot node pools must be added to an AKS cluster. They can't be updated, and availability can't be guaranteed, because Azure will allocate VMs to the underlying scale set only if capacity is available."
 
-  - content: "Suppose you have a stateless service that process online orders running on an AKS cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. Which eviction policy will be the most cost effective option to use when configuring the spot node pool?"
+  - content: "For the service described in the preceding question, which eviction policy is the most cost-effective option for configuring the spot node pool?"
     choices:
-    - content: "Use the `az aks update command` and set the `--eviction-policy` to `Hibernate`."
+    - content: "Use the `az aks update` command to set the `--eviction-policy` to `Hibernate`."
       isCorrect: false
-      explanation: "There's no hibernate eviction policy available for spot nodes."
-    - content: "Use the `az aks update command` and set the `--eviction-policy` to `Delete`."
+      explanation: "There's no `Hibernate` eviction policy available for spot nodes."
+    - content: "Use the `az aks update` command to set the `--eviction-policy` to `Delete`."
       isCorrect: true
-      explanation: "The delete eviction policy allows you to avoid the cost of disks and hitting quota limits. This option is the most cost effective option to use with spot node pools."
-    - content: "Use the `az aks update command` and set the `--eviction-policy` to `Deallocate`."
+      explanation: "The `Delete` eviction policy enables you to avoid both paying disk costs and hitting quota limits. This option is the most cost effective one to use with spot node pools."
+    - content: "Use the `az aks update` command and set the `--eviction-policy` to `Deallocate`."
       isCorrect: false
-      explanation: "A deallocated VM keeps counting to your Spot vCPU quota, and charges for the underlying allocated disks still apply. This option isn't the most cost effective option to use with spot node pools."
+      explanation: "A deallocated VM keeps counting toward your spot virtual CPU quota, and charges for the underlying, allocated disks still apply. This option isn't the most cost-effective one to use with spot node pools."
 
-  - content: "Suppose you have a stateless service that process online orders running on an AKS cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. How do you ensure that workloads are scheduled on the nodes of the spot node pool?"
+  - content: "For the service described in the preceding questions, how do you ensure that workloads are scheduled on the nodes of the spot user node pool?"
     choices:
-    - content: "AKS ensures that new workloads are always scheduled on spot node pools in an AKS cluster. This behavior is the default behavior and no additional configuration is required."
+    - content: "AKS ensures that new workloads are always scheduled on spot node pools in an AKS cluster. This behavior is the default, and no additional configuration is required."
       isCorrect: false
-      explanation: "You configure the workload manifest file with a toleration to tell the system to schedule the workload on the nodes in the spot node pool."
+      explanation: "You configure the workload manifest file with a toleration, which tells the system to schedule the workload on the nodes in the spot node pool."
     - content: "Configure the workload manifest file with a `nodeTaint` value of `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`"
       isCorrect: false
-      explanation: "The `nodeTaint` value of `kubernetes.azure.com/scalesetpriority=spot:NoSchedule` is automatically applied to the spot node pool. You configure the workload manifest file with a toleration to tell the system to schedule the workload on the nodes in the spot node pool."
+      explanation: "The `nodeTaint` value of `kubernetes.azure.com/scalesetpriority=spot:NoSchedule` is automatically applied to the spot node pool. You configure the workload manifest file with a toleration, which tells the system to schedule the workload on the nodes in the spot node pool."
     - content: "Configure the workload manifest file with a toleration that uses the key `kubernetes.azure.com/scalesetpriority` and applies the `NoSchedule` effect. This configuration tells the system to schedule the workload on the nodes in the spot node pool."
       isCorrect: true
-      explanation: "You configure the workload manifest file with a toleration to tell the system to schedule the workload on the nodes in the spot node pool."
+      explanation: "You configure the workload manifest file with a toleration as described."

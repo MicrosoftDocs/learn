@@ -60,20 +60,25 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
         --admin-username azureuser
     ```
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox. On the portal menu, select **Virtual machines**. Then select the **2019FileServer** VM you created.
-1. On the **Overview** pane, select **Connect** > **Download RDP File**.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox. On the portal menu, select **All services** > **Virtual machines**. Then select the **2019FileServer** VM you created.
+
+1. On the **Overview** pane, select **Connect** > **RDP**, and then select **Download RDP File**.
+
 1. Run the RDP file, and select **Connect** when you're prompted.
-1. On the **Enter your credentials** prompt, select **More choices**. Then select **Use a different account**. In the **Username** field, enter **azureuser** and enter the password for this user.
+
+1. On the **Enter your credentials** prompt, select **More choices**. Then select **Use a different account**. In the **Username** field, enter **azureuser**, and enter the password for this user.
+
 1. Select **OK**, and then select **Yes** to connect to the server.
 
 ## Map drives to the Azure file shares
 
-1. In the portal, select **Storage Accounts** from the portal menu.
+1. In the Azure portal, select or search for **Storage Accounts** from the portal menu.
+
 1. Select the created storage account that should be named **learnazurefileshare**, followed by random numbers.
 
     ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
 
-1. Select **File shares**, and then select **data**.
+1. Select **File shares**, and then select **data** (same page you just selected data).
 
     ![Screenshot of the file shares in the storage account](../media/4-select-data.png)
 
@@ -94,7 +99,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 ## Test the mounted drive
 
-1. Open Explorer, and select **This PC**.
+1. Open Explorer in the VM , and select **This PC**.
 
     ![Explorer showing This PC](../media/4-explorer-mapped-drives.png)
 

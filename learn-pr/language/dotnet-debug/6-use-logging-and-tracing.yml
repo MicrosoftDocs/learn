@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug.6-use-logging-and-tracing
+title: Exercise - Logging and tracing
+metadata:
+  title: Exercise - Logging and tracing
+  description: Learn how to use logging, tracing, and assertions in .NET applications.
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.date: 10/28/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-use-logging-and-tracing.md)]

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics
+metadata:
+  title: Understand big data engineering with Apache Spark in Azure Synapse Analytics
+  description: "Understand big data engineering with Apache Spark in Azure Synapse Analytics"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand big data engineering with Apache Spark in Azure Synapse Analytics
+summary: Learn how to differentiate between Apache Spark, Azure Databricks, HDInsight, and SQL Pools, as well as understanding the use-cases of data-engineering with Apache Spark in Azure Synapse Analytics.
+abstract: |
+  After completing this module, you will be able to:
+  -  Differentiate between Apache Spark and Spark pools
+  -  Differentiate between Azure Databricks and Spark pools
+  - Differentiate between HDInsight and Spark Pools
+  - Differentiate between Spark Pools and SQL Pools
+  - Understand the use-cases of data engineering with Apache Spark in Azure Synapse analytics
+  - Create a Spark pool in Azure Synapse Analytics
+prerequisites: |
+  Before taking this module, it is recommended that you complete the following modules:
+  - Data Fundamentals
+  - Introduction to Azure Data Factory
+  - Introduction to Azure Synapse Analytics
+iconUrl: /learn/achievements/understand-big-data-engineering-apache-spark-azure-synapse-analytics.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.introduction
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.what-is-apache-spark-pool
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.how-do-apache-spark-pools-work
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.when-do-you-use-apache-spark-pools
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.knowledge-check
+- learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.badge

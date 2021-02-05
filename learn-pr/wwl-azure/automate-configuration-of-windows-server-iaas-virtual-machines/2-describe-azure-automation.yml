@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.describe-azure-automation
+title: Describe Azure Automation
+metadata:
+  title: Describe Azure Automation
+  description: "Describe Azure Automation"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-describe-azure-automation.md)]

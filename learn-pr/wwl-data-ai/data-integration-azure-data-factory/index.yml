@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-data-azure-data-factory
+metadata:
+  title: Data integration with Azure Data Factory
+  description: "Integrate data with Azure Data Factory or Azure Synapse Pipeline"
+  ms.date: 12/21/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate data with Azure Data Factory or Azure Synapse Pipeline
+summary: In this module, you will examine Azure Data Factory and the core components that enable you to create large scale data ingestion solutions in the cloud
+abstract: |
+  In this module, you will:
+  * Understand Azure Data Factory
+  * Describe data integration patterns
+  * Explain the data factory process
+  * Understand Azure Data Factory components
+  * Azure Data Factory security
+  * Set up Azure Data Factory
+  * Create linked services
+  * Create datasets
+  * Create data factory activities and pipelines
+  * Manage integration runtime
+prerequisites: |
+  The student should be able to:
+  - Log into the Azure portal
+  - Explain and create resource groups
+iconUrl: /learn/achievements/integrate-data-azure-data-factory.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-data-factory
+- azure-synapse-analytics
+units:
+- learn.wwl.integrate-data-azure-data-factory.introduction
+- learn.wwl.integrate-data-azure-data-factory.understand
+- learn.wwl.integrate-data-azure-data-factory.describe-data-integration-patterns
+- learn.wwl.integrate-data-azure-data-factory.explain-process
+- learn.wwl.integrate-data-azure-data-factory.understand-components
+- learn.wwl.integrate-data-azure-data-factory.security
+- learn.wwl.integrate-data-azure-data-factory.set-up
+- learn.wwl.integrate-data-azure-data-factory.create-linked-services
+- learn.wwl.integrate-data-azure-data-factory.create-datasets
+- learn.wwl.integrate-data-azure-data-factory.create-activities-pipelines
+- learn.wwl.integrate-data-azure-data-factory.manage-integration-runtime
+- learn.wwl.integrate-data-azure-data-factory.knowledge-check
+- learn.wwl.integrate-data-azure-data-factory.summary
+badge:
+  uid: learn.wwl.integrate-data-azure-data-factory.badge

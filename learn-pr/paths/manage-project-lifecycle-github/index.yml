@@ -23,7 +23,7 @@ summary: |
   - Explore the history of your GitHub repository through issues, pull requests, and search.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/github/manage-project-lifecycle-github.svg
 levels:
 - intermediate
 roles:

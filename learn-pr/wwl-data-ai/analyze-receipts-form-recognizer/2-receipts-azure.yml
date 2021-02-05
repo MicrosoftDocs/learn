@@ -3,10 +3,10 @@ uid: learn.wwl.analyze-receipts-form-recognizer.get-started
 title: Get started with receipt analysis on Azure
 metadata:
   title: Get started with receipt analysis on Azure
-  description: "Learn how the Form Recognizer service makes it easy to extract information from sales receipts"
-  ms.date: 07/30/2020
+  description: "Get started with receipt analysis on Azure"
+  ms.date: 01/11/2021
   author: benjiang
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

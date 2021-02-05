@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-ready.4-design-areas
+title: Azure landing zone design areas
+metadata:
+  title: Azure landing zone design areas
+  description: The design areas outline the considerations that are included in each of the available Azure landing zones.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5 
+content: |
+  [!include[](includes/4-design-areas.md)]
+# quiz:
+#   title: Check your knowledge
+#   questions:
+#   - content: Which platform development velocity best fits Tailwind Traders?
+#     choices:
+#     - content: Start small and expand
+#       isCorrect: true
+#       explanation: Correct!
+#     - content: Start with enterprise scale
+#       isCorrect: false
+#       explanation: In the last knowledge check, we reviewed why an enterprise operations would be problematic for Tailwind Traders. The same answer would suggest that their development velocity would best align with a start-small approach.

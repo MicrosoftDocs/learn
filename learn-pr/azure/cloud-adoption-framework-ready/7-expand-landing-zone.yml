@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-ready.7-expand-landing-zone
+title: Expand or refactor your landing zone(s)
+metadata:
+  title: Expand or refactor your landing zone(s)
+  description: No Azure landing zone implementation option can meet all of your needs. You will need to refactor the initial landing zone to align with all of your security, governance, and operations requirements.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-expand-landing-zone.md)] 

@@ -1,6 +1,6 @@
 ::: zone pivot="nodeexpress"
 
-With Node.js and Express.js, you can create a webapp very quickly. 
+With Node.js and Express.js, you can create a webapp very quickly.
 
 Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Node.js to run server-side code and, to make the development as quick as possible, you're going to use the Express.js framework for webapps. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
@@ -13,7 +13,7 @@ Here, you'll install the necessary software and then use Visual Studio Code to c
 
 You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder with Express.js installed:
 
-1. Start Visual Studio Code. 
+1. Start Visual Studio Code.
 1. On the **View** menu, click **Terminal**.
 1. To create a new folder, type the following commands:
 
@@ -46,10 +46,10 @@ You can use the Express Generator tool to create all the components of an Expres
 You now have a functional webapp that Node.js can run. Let's modify its code to display the countdown:
 
 1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
-1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2019 10:00`):
+1. Add the following code, immediately after the `const router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2019 10:00`):
 
     ```JavaScript
-    var launchTime = new Date("12/29/2019 10:00").getTime();
+    let launchTime = new Date("12/29/2019 10:00").getTime();
     ```
 
 1. Locate this line of code:
@@ -61,8 +61,8 @@ You now have a functional webapp that Node.js can run. Let's modify its code to 
 1. Replace that single line with the following three lines of code:
 
     ```JavaScript
-    var currentTime = new Date().getTime();
-    var numberOfMilliseconds = parseInt(launchTime - currentTime);
+    let currentTime = new Date().getTime();
+    let numberOfMilliseconds = parseInt(launchTime - currentTime);
     res.render('index', { title: 'Countdown to Launch', countDown: numberOfMilliseconds });
     ```
 
@@ -71,7 +71,7 @@ You now have a functional webapp that Node.js can run. Let's modify its code to 
 > [!NOTE]
 > For this initial version, you're happy to display the countdown in milliseconds. Later, we'll update the code to display a whole number of days, which is what a user might expect.
 
-## Render the countdown 
+## Render the countdown
 
 Now, modify the default homepage for the webapp to display the countdown:
 
@@ -83,7 +83,7 @@ Now, modify the default homepage for the webapp to display the countdown:
     ```
 
 1. Replace that line with this code:
-  
+
     ```jade
     p Only a few days left until our new game launch!
     ```
@@ -127,7 +127,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 ::: zone pivot="pythonflask"
 
-As you'll see, using Python and the py utility to install Flask, you can create a webapp very quickly. 
+As you'll see, using Python and the py utility to install Flask, you can create a webapp very quickly.
 
 Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Flask to run server-side code and, to make the development as quick as possible, you're going to use the default Jinja templating engine. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
@@ -140,7 +140,7 @@ Here, you'll install the necessary software and then use Visual Studio Code to c
 
 You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder for your project:
 
-1. Start Visual Studio Code. 
+1. Start Visual Studio Code.
 1. On the **View** menu, click **Terminal**.
 1. To create a new folder, type the following commands:
 
@@ -153,7 +153,7 @@ You can use Visual Studio Code to run all the commands and edit all the code for
 
 ## Create and activate a virtual environment for Flask development
 
-Using a virtual environment avoids installing Flask into a global Python environment and gives you exact control over the libraries used in an application.  
+Using a virtual environment avoids installing Flask into a global Python environment and gives you exact control over the libraries used in an application.
 
 1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
 1. To create a virtual environment named `env`, in Windows type the following command into the terminal:
@@ -173,7 +173,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
-    ![Screenshot of completed project in web browser.](../media/3-python-select-interpreter.png)
+    ![Screenshot of project in web browser.](../media/3-python-select-interpreter.png)
 
 1. Close the integrated terminal.
 
@@ -240,7 +240,7 @@ Our aim here is to:
     app = Flask(__name__)
     ```
 
-1. Finally, create a function that will handle the default route.  
+1. Finally, create a function that will handle the default route.
 
     ```JavaScript
     @app.route("/")
@@ -261,7 +261,7 @@ Our aim here is to:
 
     Above the function's definition, we use `@app.route()` to adorn the function with the route attribute to tell Flask which URL pattern to route to this function.  In this case, we're only handling the route for the root of the site.
 
-    First, you create two variables, `launchTime` and `currentTime`, to hold the future date and the current date, respectively.  
+    First, you create two variables, `launchTime` and `currentTime`, to hold the future date and the current date, respectively.
 
     Next, you create the `diff` variable to hold the difference between the two dates.  This will return the value in microseconds, so you will need to multiply that value by 1000.  Then, to eliminate any fractions of milliseconds, you convert the floating number to an integer using the `int()` function.  You store that value in a new variable named `numberOfMilliseconds`.
 
@@ -295,7 +295,7 @@ Our aim here is to:
     > [!NOTE]
     > For this initial version, you're happy to display the countdown in milliseconds. Later, we'll update the code to display a whole number of days, which is what a user might expect.
 
-## Render the countdown 
+## Render the countdown
 
 Now, we'll build the template to display the countdown:
 
@@ -345,7 +345,7 @@ Now, we'll build the template to display the countdown:
 
 Now the app is complete, let's run it on your local computer and see if it shows the countdown:
 
-1. In the Visual Studio Code Terminal on Windows, run the following command: 
+1. In the Visual Studio Code Terminal on Windows, run the following command:
 
     ```command
     py -m flask run

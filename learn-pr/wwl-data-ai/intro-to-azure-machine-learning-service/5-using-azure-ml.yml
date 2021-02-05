@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.intro-to-azure-machine-learning-service.using-azure-ml
-title: Exercise - Getting started with Azure Machine Learning
+title: Exercise - Run experiments
 metadata:
-  title: Exercise - Getting started with Azure Machine Learning
-  description: "Use this hands-on exercise to get started with Azure Machine Learning"
-  ms.date: 07/16/2020
+  title: Exercise - Run experiments
+  description: "Exercise - Run experiments"
+  ms.date: 12/04/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

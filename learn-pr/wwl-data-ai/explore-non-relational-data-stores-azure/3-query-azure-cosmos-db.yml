@@ -4,12 +4,12 @@ title: Query Azure Cosmos DB
 metadata:
   title: Query Azure Cosmos DB
   description: "Query Azure Cosmos DB"
-  ms.date: 07/23/2020
+  ms.date: 12/01/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: wwlpub
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/3-query-azure-cosmos-db.md)]

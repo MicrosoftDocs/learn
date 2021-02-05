@@ -94,6 +94,7 @@ log_lines_RDD = sc.textFile("server.logs")
 xss_RDD =  log_lines_RDD.filter(lambda x: "%3C%73%63%72%69%70%74%3E" in x)
 sqli_RDD =  log_lines_RDD.filter(lambda x: "bobby_tables" in x)
 owasp_attacks_RDD = xss_RDD.union(sqli_RDD)
+print("Number of attacks:" + owasp_lines_RDD.count())
 ```
 
 Clearly, RDDs are best suited for batch operations where the same operations are applied to all elements of the dataset. Applications requiring asynchronous, fine-grained updates would need more specialized systems. Since they are immutable, the overhead of computing new RDDs for each additional input item is very high. Hence, even when dealing with real-time data inputs, Spark often batches the changes over short periods of time. 

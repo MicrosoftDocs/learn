@@ -3,46 +3,46 @@ uid: learn.wwl.use-automated-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 07/31/2020
+  description: "Knowledge check"
+  ms.date: 01/27/2021
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "An automobile dealership wants to use historic car sales data to train a machine learning model. The model should predict the price of a pre-owned car based on characteristics like its age, engine size, and mileage. What kind of machine learning model does the dealership need to create?"
+  - content: "An automobile dealership wants to use historic car sales data to train a machine learning model. The model should predict the price of a pre-owned car based on its make, model, engine size, and mileage. What kind of machine learning model should the dealership use automated machine learning to create?"
     choices:
     - content: "Classification"
       isCorrect: false
-      explanation: "That is incorrect. To predict a numeric value, use a regression model."
+      explanation: "Incorrect. To predict a numeric value, use a regression model."
     - content: "Regression"
       isCorrect: true
       explanation: "That is correct. To predict a numeric value, use a regression model."
-    - content: "Clustering"
+    - content: "Time series forecasting"
       isCorrect: false
-      explanation: "That is incorrect. To predict a numeric value, use a regression model."
-  - content: "A bank wants to use historic loan repayment records to categorize loan applications as low-risk or high-risk based on characteristics like the loan amount, the income of the borrower, and the loan period. What kind of machine learning model does the bank need to create?"
+      explanation: "Incorrect. To predict a numeric value, use a regression model."
+  - content: "A bank wants to use historic loan repayment records to categorize loan applications as low-risk or high-risk based on characteristics like the loan amount, the income of the borrower, and the loan period. What kind of machine learning model should the bank use automated machine learning to create?"
     choices:
     - content: "Classification"
       isCorrect: true
       explanation: "That is correct. To predict a category, or class, use a classification model."
     - content: "Regression"
       isCorrect: false
-      explanation: "That is incorrect. To predict a category, or class, use a classification model."
-    - content: "Clustering"
+      explanation: "Incorrect. To predict a category, or class, use a classification model."
+    - content: "Time series forecasting"
       isCorrect: false
-      explanation: "That is incorrect. To predict a category, or class, use a classification model."
-  - content: "Which of the following types of machine learning is an example of unsupervised machine learning?"
+      explanation: "Incorrect. To predict a category, or class, use a classification model."
+  - content: "You want to use automated machine learning to train a regression model with the best possible *R2 score*. How should you configure the automated machine learning experiment?"
     choices:
-    - content: "Classification"
-      isCorrect: false
-      explanation: "That is incorrect. classification and regression are supervised machine learning, clustering is unsupervised."
-    - content: "Regression"
-      isCorrect: false
-      explanation: "That is incorrect. classification and regression are supervised machine learning, clustering is unsupervised."
-    - content: "Clustering"
+    - content: "Set the Primary metric to R2 score"
       isCorrect: true
-      explanation: "That is correct. classification and regression are supervised machine learning, clustering is unsupervised."
+      explanation: "That is correct. The primary metric determines the metric used to evaluate the best performing model."
+    - content: "Block all algorithms other than GradientBoosting"
+      isCorrect: false
+      explanation: "Incorrect. The choice of algorithms does not determine the metric used to evaluate the best performing model."
+    - content: "Enable featurization"
+      isCorrect: false
+      explanation: "Incorrect. Enabling featurization does not determine the metric used to evaluate the best performing model."

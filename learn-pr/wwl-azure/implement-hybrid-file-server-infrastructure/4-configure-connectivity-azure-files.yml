@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-file-server-infrastructure.configure-connectivity-azure-files
+title: Configure connectivity to Azure Files
+metadata:
+  title: Configure connectivity to Azure Files
+  description: "Configure connectivity to Azure Files"
+  ms.date: 11/27/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-connectivity-azure-files.md)]

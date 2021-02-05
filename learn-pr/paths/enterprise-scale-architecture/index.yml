@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.azure.enterprise-scale-architecture
+metadata:
+  title: Create an enterprise-scale architecture in Azure
+  description: Explore how to create Azure landing zone architecture at enterprise scale.
+  brand: azure
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create an enterprise-scale architecture in Azure
+summary: Learn how Microsoft Cloud Adoption Framework for Azure enterprise-scale landing zones can help your organization to accelerate cloud adoption from months to weeks. We will explore how to create Azure landing zone architecture at enterprise-scale. Learn about landing zone critical design areas to build and operationalize your Azure environment.
+prerequisites: None
+iconUrl: /learn/achievements/enterprise-scale-architecture.svg
+levels: 
+- beginner
+roles: 
+- solution-architect
+products: 
+- azure
+modules:
+- learn.azure.enterprise-scale-introduction
+- learn.azure.enterprise-scale-organizational-design-principles
+- learn.azure.enterprise-scale-networking
+- learn.azure.enterprise-scale-operations
+trophy:
+  uid: learn.azure.enterprise-scale-architecture.trophy

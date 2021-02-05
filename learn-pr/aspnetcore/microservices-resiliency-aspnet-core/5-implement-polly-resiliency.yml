@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.5-implement-polly-resiliency
+metadata:
+  title: Exercise - Implement code-based resiliency
+  description: Configure code-based resiliency in your microservices app with Polly.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 08/04/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Exercise - Implement code-based resiliency
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-implement-polly-resiliency.md)]

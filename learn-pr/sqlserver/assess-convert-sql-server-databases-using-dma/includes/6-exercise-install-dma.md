@@ -1,6 +1,9 @@
-You need to upgrade several CRM databases to SQL Server 2019. These databases include versions from SQL Server 2008R2 through to SQL Server 2016. You've chosen the **Microsoft Data Migration Assistant (DMA)** to help with these upgrades. 
+In your law firm, you need to upgrade several CRM databases used by different teams to SQL Server 2019. These databases include versions from SQL Server 2008R2 through to SQL Server 2016. You've chosen the **Microsoft Data Migration Assistant (DMA)** to help with these upgrades. 
 
 In this exercise, you'll install the Data Migration Assistant.
+
+> [!NOTE]
+> Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if the Data Migration Assistant (DMA) is right for your task**.
 
 ## Download the RDP connection file from Azure
 
@@ -40,7 +43,7 @@ https://github.com/microsoft/sql-server-samples/releases/download/adventureworks
 
 ## Download the Data Migration Assistant
 
-1. Go to the [https://github.com/PhilStollery/mslearn-sqlserver-assess-convert-sql-server-databases-using-dma/blob/master/DataMigrationAssistant.msi](https://github.com/PhilStollery/mslearn-sqlserver-assess-convert-sql-server-databases-using-dma/blob/master/DataMigrationAssistant.msi), then select **Download**.
+1. Go to the [https://github.com/MicrosoftDocs/mslearn-assess-convert-sql-server-databases-using-dma-samples/blob/master/DataMigrationAssistant.msi](https://github.com/MicrosoftDocs/mslearn-assess-convert-sql-server-databases-using-dma-samples/blob/master/DataMigrationAssistant.msi), then select **Download**.
 1. On the pop-up menu, select **Save**.
 
 ## Install the Data Migration Assistant
@@ -54,3 +57,6 @@ Continue by using the installer to set up the Data Migration Assistant.
 1. On the **Privacy Statement** page, select **Read Microsoft privacy statement online**. Read through this statement, and then close Internet Explorer.
 1. In the **Microsoft Data Migration Assistant Setup** window, select **Install**.
 1. On the **Completed the Microsoft Data Migration Assistant Setup Wizard** page, when the installation has finished, select the **Launch Microsoft Data Migration Assistant** check box, and then select **Finish**. The **Data Migration Assistant** launches.
+
+> [!WARNING]
+> Do not deactivate the sandbox. This sandbox will continue to be used in the next unit.

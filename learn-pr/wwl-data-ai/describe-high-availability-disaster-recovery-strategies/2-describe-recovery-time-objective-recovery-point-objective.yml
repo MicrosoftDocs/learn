@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-recovery-time-objective-recovery-point-objective
-title: Describe Recovery Time Objective and Recovery Point Objective
+title: Describe recovery time objective and recovery point objective
 metadata:
-  title: Describe Recovery Time Objective and Recovery Point Objective
-  description: "Describe Recovery Time Objective and Recovery Point Objective"
-  ms.date: 08/07/2020
+  title: Describe recovery time objective and recovery point objective
+  description: "Describe recovery time objective and recovery point objective"
+  ms.date: 08/23/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

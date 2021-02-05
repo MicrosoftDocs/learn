@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.intro-to-mixed-reality
+metadata:
+  title: Introduction to mixed reality
+  description: Mixed reality is transforming the nature of on-the-job training, game development, and consumer application development. Build a foundation in the core concepts, terminology, and design processes that are unique to the development space for augmented reality, virtual reality, and mixed reality. Get familiar with HoloLens, Windows Mixed Reality immersive headsets, bodystorming prototypes, and the most common use cases for mixed-reality content.
+  ms.date: 11/17/2020
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to mixed reality
+summary: Build a foundation in the core concepts, terminology, and design processes unique to the mixed-reality development space.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Define mixed reality and differentiate between virtual reality and augmented reality
+  - Describe the core ideas behind holograms
+  - Start designing and developing 3D applications 
+  - Understand what mixed reality offers in real-world apps
+  - Use the power of the cloud for mixed reality
+prerequisites: |
+  This Learn module has no prerequisites. Come as you are and dive into mixed reality!
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- business-owner
+- student
+- technology-manager
+products:
+- azure
+- azure-cloud-services
+- azure-cognitive-services
+- dynamics-365
+- dynamics-guides
+- dynamics-remote-assist
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+units:
+- learn.intro-to-mixed-reality.1-introduction
+- learn.intro-to-mixed-reality.2-what
+- learn.intro-to-mixed-reality.3-make-sense
+- learn.intro-to-mixed-reality.4-explore-devices
+- learn.intro-to-mixed-reality.5-understand-holograms
+- learn.intro-to-mixed-reality.6-design-3d
+- learn.intro-to-mixed-reality.7-use-cases-examples
+- learn.intro-to-mixed-reality.8-cloud-services
+- learn.intro-to-mixed-reality.9-knowledge-check
+- learn.intro-to-mixed-reality.10-summary
+badge:
+  uid: learn.intro-to-mixed-reality.badge

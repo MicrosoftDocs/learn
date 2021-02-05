@@ -13,27 +13,27 @@ durationInMinutes: 10
 content: |
   [!include[](includes/4-purchasing-models-service-tiers.md)]
 quiz:
-    title: Knowledge Check
+    title: Knowledge check
     questions:
-    - content: "You're moving an application and database to Azure, but your database is currently 62 TB, with plans to continue to grow. You don't currently leverage any instance-scoped features. Which Azure SQL deployment option will be the easiest to move to?"
+    - content: "You're moving an application and database to Azure, but your database is currently 62 TB and will to continue to grow. You don't currently use any instance-scoped features. Which Azure SQL deployment option will be easiest to use?"
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false
-        explanation: "This will technically work, but is there a PaaS offering?"
+        explanation: "This option will work, but is there a PaaS offering?"
       - content: "Azure SQL Managed Instance"
         isCorrect: false
-        explanation: "62TB is bigger than the max size allowed for this deployment option"
-      - content: "Azure SQL Database - single database"
+        explanation: "62 TB is bigger than the maximum size allowed for this deployment option."
+      - content: "Azure SQL Database, single database"
         isCorrect: true
-        explanation: "Azure SQL Database - single database is currently the only deployment option that supports databases of that size, specifically with the Hyperscale service tier. If and when Azure SQL Managed Instance supports Hyperscale, since the application doesn't currently need any instance-scoped features, Azure SQL Database may still be the right option."
-      - content: "Azure SQL Database - elastic pool"
+        explanation: "Azure SQL Database, single database, is currently the only deployment option that supports databases of that size, specifically with the Hyperscale service tier. If Azure SQL Managed Instance supports Hyperscale in the future, because the application doesn't currently need any instance-scoped features, Azure SQL Database might still be the right option."
+      - content: "Azure SQL Database, elastic database pool"
         isCorrect: false
-        explanation: "62TB is bigger than the max size allowed for this deployment option"
-    - content: "Imagine you have an Azure SQL Database with the Serverless compute tier database deployed, with an auto-pause delay of two hours. After two hours of no activity, what happens to your database and incurred charges?"
+        explanation: "62 TB is bigger than the maximum size allowed for this deployment option."
+    - content: "Imagine you have Azure SQL Database with the serverless compute tier database deployed and an autopause delay of two hours. After two hours of no activity, what happens to your database and incurred charges?"
       choices:
-      - content: "Azure will pause your database to stop compute costs and only charge you for storage"
+      - content: "Azure will pause your database to stop compute costs and charge you only for storage."
         isCorrect: true
-        explanation: "To reduce your costs during times of inactivity, Azure will pause the compute resources and will only charge for storage during this time."
-      - content: "The database resources are reduced to a lower service tier to reduce costs."
+        explanation: "To reduce your costs during times of inactivity, Azure will pause the compute resources and will charge only for storage during this time."
+      - content: "Database resources are reduced to a lower service tier to reduce costs."
         isCorrect: false
-        explanation: "The service tier of the database does not change when using serverless compute."
+        explanation: "The service tier of the database doesn't change when you use serverless compute."

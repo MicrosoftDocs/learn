@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control
+metadata:
+  title: Create and implement application allowlists with adaptive application control
+  description: "You'll be able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and implement application allowlists with adaptive application control
+summary: You'll be able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
+abstract: |
+  After completing this module, you'll be able to:
+  - Enable Adaptive application controls.
+  - Implement adaptive application control policies.
+prerequisites: |
+  In order to get the best learning experience from this module, you should have knowledge and experience of:
+  - Managing Windows Server workloads
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing IaaS services in Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies (firewalls, encryption, multi-factor authentication)
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/create-and-implement-application-whitelists-with-adaptive-application-control.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.introduction
+- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.describe-controls
+- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.implement-policy
+- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.knowledge-check
+- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.summary
+badge:
+  uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge

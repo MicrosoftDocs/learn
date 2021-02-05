@@ -8,8 +8,6 @@ You will need the subscription key when using the Speech SDK or the REST APIs bu
 ## View the subscription keys and endpoint
 
 1. In the left menu of the portal, select **Resource groups**, and then select the **mslearn-speechapi** resource group that you created for the Speech Translation API.
-1. Select the Speech Translation subscription name (such as **SpeechTranslation**).
-1. There are two locations that will display your endpoint and at least one key. 
-1. Under the **RESOURCE MANAGEMENT** group, select the **Quick start** option to display **Key1** and **Endpoint** values.
-1. The second option is used to view a second key for the service. Under the **RESOURCE MANAGEMENT** group, select **Keys and Endpoint** to view the Service name, the endpoint, and two API keys.
+1. Select the Speech Translation subscription name (such as **SpeechTranslation**). 
+1. Under the **RESOURCE MANAGEMENT** group, select the **Keys and Endpoint** option to display **Key** and **Endpoint** values.
 1. Copy the value of **KEY 1** or **KEY 2** to the clipboard for use in an application.

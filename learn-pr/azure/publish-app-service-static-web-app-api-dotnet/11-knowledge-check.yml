@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api-dotnet.11-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "When you make changes to your app, how do you publish an update to Azure Static Web Apps?"
+      choices:
+        - content: "Delete the Azure Static Web Apps instance and recreate it."
+          isCorrect: false
+          explanation: "The Azure Static Web Apps instance doesn't need to be recreated to redeploy changes to your web app."
+        - content: "Push commits to the watched branched or create pull request to watched branch."
+          isCorrect: true
+          explanation: "Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure."
+        - content: "Create a new GitHub Actions workflow to build and publish your web app."
+          isCorrect: false
+          explanation: "The existing GitHub Actions workflow is capable of redeploying your web app."
+        - content: "Create and push a new branch to your git repository."
+          isCorrect: false
+          explanation: "A new branch will not be watched by the existing GitHub Actions workflow."
+    - content: "How do you view the progress of building and redeploying after you make changes to your app?"
+      choices:
+        - content: "Go to the production URL of your app."
+          isCorrect: false
+          explanation: "The production URL of your Azure Static Web Apps instance displays your web app, not your build progress."
+        - content: "Go to your resource in the Azure portal and view the configuration."
+          isCorrect: false
+          explanation: "The configuration for your resource in the Azure portal allows you to view or modify the configuration of the resource. It does not show the progress of your build and redeployment of your web app."
+        - content: "Push your commits to your watched branched of your git repository."
+          isCorrect: false
+          explanation: "Pushing your commits will not show your progress, but it will trigger a GitHub Actions workflow."
+        - content: "Go to the repository on `github.com`, then navigate to the Actions menu."
+          isCorrect: true
+          explanation: "You can view the progress of the GitHub Actions workflow in your browser on your repository."
+    - content: "How do you configure your app so that when you navigate to _/about_ in the browser, it serves the root _index.html_ file?"
+      choices:
+        - content: "Add an entry in _routes.json_ for a wildcard route **/*** to serve **/index.html**."
+          isCorrect: true
+          explanation: "You can customize routing rules in the _routes.json_ file in your app's artifact folder. When you define a routing rule for route = **/*** to serve **/index.html**, all unmatched routes will serve **/index.html**."
+        - content: "Add an entry in _Client.csproj_ for a wildcard route **/*** to serve **/index.html**."
+          isCorrect: false
+          explanation: "The routing rules must be defined in the _routes.json_ file."
+        - content: "Add an entry in _routes.json_ for a wildcard route **/index** to serve **/index.html**."
+          isCorrect: false
+          explanation: "The route **/index** is not a wildcard route."
+        - content: "Configure a wildcard route in the GitHub Actions workflow file to serve **/index.html**."
+          isCorrect: false
+          explanation: "Routing rules must be defined in the _routes.json_ file."
+    - content: "How do you tell Azure Static Web Apps that you changed where your API is located?"
+      choices:
+        - content: "In the Client.csproj file."
+          isCorrect: false
+          explanation: "The configuration for your app's locations are defined in the GitHub Actions workflow file."
+        - content: "Add an entry in _routes.json_ for the location."
+          isCorrect: false
+          explanation: "The _routes.json_ file is where you define routing rules, not the location of your API."
+        - content: "Azure Static Web Apps automatically knows where your code and API are located, without any configuration."
+          isCorrect: false
+          explanation: "You can configure the location of your code, artifacts, and API in the GitHub Actions workflow file. If you do not specify these locations, default values will be used."
+        - content: "In the GitHub Actions workflow file in your _.github/workflows_ folder."
+          isCorrect: true
+          explanation: "You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your _.github/workflows_ folder."

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing
 metadata:
   title: Implement Windows Server IaaS VM IP addressing and routing
   description: "Implement Windows Server IaaS VM IP addressing and routing"
-  ms.date: 07/18/2020
+  ms.date: 08/16/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -30,13 +30,12 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-windows-server-iaas-vm-ip-addressing-and-routing.svg
 levels:
 - intermediate
 roles:
 - administrator
 - solution-architect
-- student
 - technology-manager
 products:
 - azure

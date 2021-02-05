@@ -4,13 +4,13 @@ title: 'Exercise: Provision non-relational Azure data services'
 metadata:
   title: 'Exercise: Provision non-relational Azure data services'
   description: "Exercise: Provision non-relational Azure data services"
-  ms.date: 08/06/2020
+  ms.date: 02/01/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-environment
 azureSandbox: true
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-provision-non-relational-azure.md)]

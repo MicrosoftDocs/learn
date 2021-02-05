@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.install-code-tools-python-nasa.7-install-python
+metadata:
+  title: Exercise - Install Python to use in Visual Studio Code for data exploration
+  description: Learn how to install Python.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Install Python to use in Visual Studio Code for data exploration
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-install-python.md)]

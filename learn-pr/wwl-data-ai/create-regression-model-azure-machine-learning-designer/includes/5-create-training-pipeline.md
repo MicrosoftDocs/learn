@@ -13,7 +13,7 @@ Follow the steps below, using the image above for reference as you add and confi
 
 1. Open the **Auto Price Training** pipeline you created in the previous unit if it's not already open.
 
-2. In the pane on the left, on the **Modules** tab, in the **Data Transformations** section, drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
+2. In the pane on the left, in the **Data Transformations** section, drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 3. Select the **Split Data** module, and configure its settings as follows:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7
@@ -36,7 +36,7 @@ Follow the steps below, using the image above for reference as you add and confi
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Submit**, and run the pipeline using the existing experiment named **auto-price-training**.
+1. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.
 2. Wait for the experiment run to complete. This may take 5 minutes or more.
 3. When the experiment run has completed, select the **Score Model** module and in the settings pane, on the **Outputs + logs** tab, under **Data outputs** in the **Scored dataset** section, use the **Visualize** icon to view the results.
 4. Scroll to the right, and note that next to the **price** column (which contains the known true values of the label) there is a new column named **Scored labels**, which contains the predicted label values.

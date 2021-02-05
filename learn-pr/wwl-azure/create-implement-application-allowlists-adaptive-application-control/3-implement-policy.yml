@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.implement-policy
+title: Implement adaptive application control policies
+metadata:
+  title: Implement adaptive application control policies
+  description: "Implement adaptive application control policies"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-implement-policy.md)]

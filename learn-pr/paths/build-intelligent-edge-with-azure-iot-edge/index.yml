@@ -11,16 +11,16 @@ metadata:
   ms.prod: learning-azure
 title: Build the intelligent edge with Azure IoT Edge
 summary: |
-  Interested in running cloud intelligence on edge devices? This path is the place to start to learn how to use Azure IoT Edge to build IoT solutions that require having cloud intelligence deployed locally on IoT Edge devices. Azure IoT Edge is a fully managed service built on Azure IoT Hub. Deploy your cloud workloads—artificial intelligence, Azure and third-party services, or your own business logic—to run on Internet of Things (IoT) edge devices via standard containers. By moving certain workloads to the edge of the network, your devices spend less time communicating with the cloud, react more quickly to local changes, and operate reliably even in extended offline periods.
+  Interested in running cloud intelligence on edge devices? This path is the place to start to learn how to use Azure IoT Edge to build IoT solutions that require having cloud intelligence deployed locally on IoT Edge devices. Azure IoT Edge is a fully-managed service built on Azure IoT Hub. Deploy your cloud workloads—artificial intelligence, Azure and third-party services, or your own business logic—to run on Internet of Things (IoT) edge devices via standard containers. By moving certain workloads to the edge of the network, your devices spend less time communicating with the cloud, react more quickly to local changes, and operate reliably even in extended offline periods.
 
   In this learning path, you will:
     - Learn more about how intelligent edge can unblock new scenarios
-    - Learn how to deploy a prebuilt modules to the Edge device
+    - Learn how to deploy prebuilt modules to the Edge device
     - Learn how an IoT Edge device can be used as a gateway
   
-  Skills Learned in the learning path:
+  Skills learned in the learning path:
   - Set up and deploy an IoT Edge device
-  - Develop Modules
+  - Develop modules
   - Configure an IoT Edge device
   
   Once you complete this learning path, you will have the understanding on how Azure IoT Edge moves cloud analytics and custom business logic to devices so that your organization can focus on business insights instead of data management.

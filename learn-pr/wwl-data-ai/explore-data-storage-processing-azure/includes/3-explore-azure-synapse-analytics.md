@@ -4,7 +4,7 @@ In this unit, you'll look more closely at the features of Synapse Analytics, and
 
 ## What are the components of Azure Synapse Analytics?
 
-Azure Synapse Analytics is an integrated analytics service that allows organizations gain insights quickly from all their data at any hyperscale, from both data warehouses and big data analytics systems​.
+Azure Synapse Analytics is an integrated analytics service that allows organizations to gain insights quickly from all their data at any hyperscale, from both data warehouses and big data analytics systems​.
 
 Azure Synapse is composed of the following elements:
 
@@ -30,7 +30,7 @@ The control and compute nodes use the Data Movement Service (DMS) to move data a
 
 Synapse Analytics uses a technology called *PolyBase* to make external data look like SQL tables. You can run queries against these tables directly, or you can transfer the data into a series of SQL tables managed by Synapse Analytics for querying later. Synapse uses Azure Storage to manage your data while it's being processed. 
 
-By default, an on-demand SQL pool is created in each Azure Synapse Analytics workspace. You can then provision addition pools, either on-demand or provisioned.
+By default, an on-demand SQL pool is created in each Azure Synapse Analytics workspace. You can then provision additional pools, either on-demand or provisioned.
 
 > [!NOTE]
 > On-demand pools only allow you to query data held in external files. If you want to ingest and load the data into Synapse Analytics, you must create your own SQL pool.
@@ -80,7 +80,7 @@ Synapse pipelines use the same Data Integration engine used by Azure Data Factor
 
 For more information, read [Pipelines and activities in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities).
 
-### What is Synapse link?
+### What is Synapse Link?
 
 Azure Synapse Link for Azure Cosmos DB is a cloud-native hybrid transactional and analytical processing (HTAP) capability that enables you to run near real-time analytics over operational data stored in Azure Cosmos DB.
 

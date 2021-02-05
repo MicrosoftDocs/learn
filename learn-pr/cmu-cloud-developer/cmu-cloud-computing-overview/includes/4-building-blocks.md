@@ -96,7 +96,7 @@ However, there are situations where SaaS may not be the right choice, such as:
 
 Webmail is one of the early examples of SaaS. Webmail enables users with a browser and an internet connection to access their e-mail anywhere at any time. Offerings like Outlook, Yahoo Mail, and Gmail are extremely popular. Some of these services are based on the "freemium" model, wherein basic services are free, and more advanced features are available with a subscription. Furthermore, providers earn revenue mainly from advertisements that are displayed to the users as they use the service.
 
-Another popular example of SaaS is online office suites, such as Microsoft Office 365, which allow users to create, edit, and share documents online.
+Another popular example of SaaS is online office suites, such as Microsoft 365, which allow users to create, edit, and share documents online.
 
 ## PaaS model
 

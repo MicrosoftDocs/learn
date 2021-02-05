@@ -9,7 +9,7 @@ The process to create a singleton database through the Azure portal is straightf
 In the blade in the image below, you’ll notice that the subscription should already be provided for you. You will need to supply the following information:
 
 - Resource Group – If there is an existing resource group that you wish to use, you may select it from the drop-down list. You can click on the “Create new” option if you wish to create a new resource group for this Azure SQL Database.
-- Database Name – You must provide a database name
+- Database Name – You must provide a database name.
 - Server – Each database must reside on a logical server. If you have one already in existence in the appropriate region, you may choose to use it. Otherwise, you can click on the “Create new” and follow the prompts to create a new logical server to house the database.
 - Determine whether to use an elastic pool.
 - Determine the appropriate compute resources needed. By default, it will be a Gen5, 2vCore, with 32 GB of storage until something else is selected. Click on “Configure database” to view alternate configuration options.

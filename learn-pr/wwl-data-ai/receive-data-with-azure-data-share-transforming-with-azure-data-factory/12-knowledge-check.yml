@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/10/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a logical grouping of activities in Azure Data Factory?"
+    choices:
+    - content: "Linked Service."
+      isCorrect: false
+      explanation: "Incorrect, Linked services define the connection information for data factory to the external resources you want to connect with, for example, an Azure SQL Database or Azure Data Lake Storage."
+    - content: "Pipeline."
+      isCorrect: true
+      explanation: "Correct, A pipeline in Azure Data Factory is a logical grouping of activities such as copy in order to perform a task. The activity defines the operation that you’re performing on the data (therefore, a copy means copying the same data to another data store)."
+    - content: "Sink."
+      isCorrect: false
+      explanation: "Incorrect, It’s an Azure Data Factory, Data Flows transformation functionality where each sink transformation is associated with exactly one Azure Data Factory dataset object or linked service. The sink transformation determines the shape and location of the data you want to write to."
+  - content: "When is it possible to add or remove datasets if created with Azure Data Share?"
+    choices:
+    - content: "It is possible to add or remove datasets within Azure Data Share after it has been created."
+      isCorrect: true
+      explanation: "Correct. It is possible to add or remove datasets after it has been created in Azure Data Share."
+    - content: "It is only possible to remove or add datasets before it's sent within Azure Data Share."
+      isCorrect: false
+      explanation: "Incorrect. It is possible to add or remove datasets after it has been created in Azure Data Share."
+    - content: "It is not possible to add or remove datasets if created with Azure Data Share."
+      isCorrect: false
+      explanation: "Incorrect. It is possible to add or remove datasets after it has been created in Azure Data Share."
+  - content: "What should be done when a connector in data factory is not supported in mapping data flow in order to transform data from one of these sources?"
+    choices:
+    - content: "Use an aggregate transformation in Dataflow."
+      isCorrect: false
+      explanation: "Incorrect. An aggregate transformation in Mapping dataflow can only be used once the data has landed in a supported data source in mapping dataflow, therefore you first need to copy the data into a supported source."
+    - content: "Use a group by activity in Dataflow."
+      isCorrect: false
+      explanation: "Incorrect. A group by activity in Mapping dataflow can only be used once the data has landed in a supported data source in mapping dataflow, therefore you first need to copy the data into a supported source."
+    - content: "Ingest the data into a supported source using the copy activity."
+      isCorrect: true
+      explanation: "Correct. If a connector in Data factory is not supported, create a copy activity of the source data into a supported data source in mapping dataflow and continue the transformations from there."

@@ -5,7 +5,7 @@ metadata:
   description: Summary
   ms.date: 1/20/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: We don't render any particular background in this module.
 
-  - content: 'What three components make up a Condition for a rule. The rule is not time-aggregated?'
+  - content: 'What three components make up a Condition for a rule that is not time-aggregated?'
     choices: 
     - content: 'Telemetry, Operator, Value'
       isCorrect: true

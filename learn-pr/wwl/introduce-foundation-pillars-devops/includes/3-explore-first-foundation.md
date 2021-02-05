@@ -31,7 +31,7 @@ Gartner research shows that through 2023, 90% of DevOps initiatives will fail be
 
  People who work in creative endeavors don’t need “beer in the break room” to motivate them. Creative people instead need mastery, autonomy, and **purpose**.
 
- When people asked what is the most important part of our success – is it vision, strategy, or execution? – CEO Satya Nadella said they're all important, but in the end, it was our purpose and our growth mindset.
+ When people asked what is the most important part of Microsoft's success – is it vision, strategy, or execution? – Microsoft CEO Satya Nadella said they're all important, but in the end, it was their purpose and growth mindset.
 
 ### The 12 examples of a DevOps mindset
 

@@ -13,30 +13,30 @@ durationInMinutes: 10
 content: |
   [!include[](includes/4-high-availability-architecture.md)]
 quiz:
-    title: Knowledge Check
+    title: Knowledge check
     questions:
-    - content: "Which service tier puts the data and log files on Azure premium storage?"
+    - content: "Which service tier puts the data and log files on Azure Premium Storage?"
       choices:
-      - content: "General purpose"
+      - content: "General Purpose"
         isCorrect: true
-        explanation: "In General purpose, tempdb is on directly-attached SSD, but the data and log files are in Azure premium storage."
+        explanation: "In General Purpose, tempdb is on direct-attached SSD, but the data and log files are in Azure Premium Storage."
       - content: "Business Critical"
         isCorrect: false
-        explanation: "In Business critical, tempdb, data, and log files are on directly-attached SSD."
+        explanation: "In Business Critical, tempdb, data, and log files are on direct-attached SSD."
       - content: "Hyperscale"
         isCorrect: false
-        explanation: "Hyperscale has a different architecture, and the data files are on Azure standard storage and the log files have a mix: the landing zone is in Azure premium storage and the long term log storage is in Azure standard storage."
+        explanation: "Hyperscale has a different architecture. The data files are on Azure Standard Storage. For log files, the landing zone is in Azure Premium Storage, and the long-term log storage is in Azure Standard Storage."
       - content: "All of the above"
         isCorrect: false
         explanation: "Review the unit to understand the architectures of each tier."
-    - content: "Which service tier has an Always on Availability Group deployed behind the scenes?"
+    - content: "Which service tier has an Always On availability group deployed behind the scenes?"
       choices:
-      - content: "General purpose"
+      - content: "General Purpose"
         isCorrect: false
         explanation: "Review the unit to understand the architectures of each tier."
       - content: "Business Critical"
         isCorrect: true
-        explanation: "Business critical is similar to deploying an Always on Availability Group. You can even leverage one of the secondaries as a read-only endpoint."
+        explanation: "Business Critical functionality is similar to that of Always On availability groups. You can even use one of the secondaries as a read-only endpoint."
       - content: "Hyperscale"
         isCorrect: false
         explanation: "Review the unit to understand the architectures of each tier."

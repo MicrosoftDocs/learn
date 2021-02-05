@@ -15,7 +15,7 @@ summary: |
 
   Take this learning path to help prepare for [Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/learn/certifications/exams/az-400).
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/az-400-develop-security-compliance-plan.svg
 levels:
 - beginner
 roles:
@@ -36,10 +36,10 @@ modules:
 - learn.authenticate-apps-with-managed-identities
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.control-authentication-with-apim
-- learn.introduction-to-security
+- learn.azure.protect-against-security-threats-azure
 - learn.monitor-report-aad-security-events
 - learn.github.maintain-secure-repository-github
-- learn.intro-to-governance
+- learn.azure.build-cloud-governance-strategy-azure
 - learn.improve-reliability-failure
 - learn.improve-reliability-incidents
 trophy:

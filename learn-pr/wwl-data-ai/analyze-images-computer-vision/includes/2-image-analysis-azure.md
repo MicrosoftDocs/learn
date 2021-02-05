@@ -59,7 +59,7 @@ For example, in the following image, a laptop has a Microsoft logo on its lid, w
 
 ### Detecting faces
 
-The Computer Vision service can detect and analyze human faces in an image, including the ability to determine age, gender, and a bounding box rectangle for the location of the face(s). The facial analysis capabilities of the Computer Vision service are a subset of those provided by the dedicated [Face Service](https://docs.microsoft.com/azure/cognitive-services/face/). If you need basic face detection and analysis, combined with general image analysis capabilities, you can use the Computer Vision service; but for more comprehensive facial analysis and facial recognition functionality, use the Face service.
+The Computer Vision service can detect and analyze human faces in an image, including the ability to determine age and a bounding box rectangle for the location of the face(s). The facial analysis capabilities of the Computer Vision service are a subset of those provided by the dedicated [Face Service](https://docs.microsoft.com/azure/cognitive-services/face/). If you need basic face detection and analysis, combined with general image analysis capabilities, you can use the Computer Vision service; but for more comprehensive facial analysis and facial recognition functionality, use the Face service.
 
 The following example shows an image of a person with their face detected and approximate age estimated.
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.personality-quiz.create-quiz-1
+metadata:
+  title: Part 1 - Asking the user a question in your WONDER WOMAN 1984 personality quiz
+  description: This unit introduces how to interact with users in Python.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Part 1 - Asking the user a question in your WONDER WOMAN 1984 personality quiz
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-create-quiz-1.md)]

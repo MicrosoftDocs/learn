@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/06/2020
+  ms.date: 02/01/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
       explanation: "That's incorrect. Providing other users access to an existing service is the description of security configuration."
     - content: "Tuning a service to improve performance."
       isCorrect: false
-      explanation: "That's incorrect. This is tuning and optmization."
+      explanation: "That's incorrect. This is tuning and optimization."
   - content: "What is a security principal?"
     choices:
     - content: "A named collection of permissions that can be granted to a service, such as the ability to use the service to read, write, and delete data. In Azure, examples include **Owner** and **Contributor**."

@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/02/2020
+  ms.date: 12/14/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -34,7 +34,7 @@ quiz:
       explanation: "That's incorrect. ATP does not inspect user passwords."
     - content: "Open Firewall rules"
       isCorrect: false
-      explanation: "That's incorrect. he scope of ATP is connections or brute force attacks of the database."
+      explanation: "That's incorrect. The scope of ATP is connections or brute force attacks of the database."
     - content: "SQL Injection"
       isCorrect: true
       explanation: "That's correct. One of the key features of ATP is SQL Injection inspection."

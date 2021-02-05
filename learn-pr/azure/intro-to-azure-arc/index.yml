@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-arc
+metadata:
+  title: Introduction to Azure Arc
+  description: Introduction to Azure Arc
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Introduction to Azure Arc
+summary: In this module, you'll be able to describe Azure Arc enabled servers. You'll also be able to describe Azure Arc enabled Kubernetes.
+abstract: | 
+  In this module, you will:
+  - Describe Azure Arc enabled servers.
+  - Describe Azure Arc enabled Kubernetes.
+prerequisites: | 
+  - Knowledge of personal computer operating systems.
+  - Fundamentals of cloud computing.
+iconUrl: /learn/achievements/intro-to-azure-arc.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+- azure-arc
+units:
+- learn.azure.intro-to-azure-arc.1-introduction
+- learn.azure.intro-to-azure-arc.2-describe-azure-arc
+- learn.azure.intro-to-azure-arc.3-describe-azure-arc-enabled-servers
+- learn.azure.intro-to-azure-arc.4-describe-azure-arc-enabled-kubernetes
+- learn.azure.intro-to-azure-arc.5-azure-policy-and-azure-monitor
+- learn.azure.intro-to-azure-arc.6-knowledge-check
+- learn.azure.intro-to-azure-arc.7-summary
+badge:
+  uid: learn.azure.intro-to-azure-arc.badge

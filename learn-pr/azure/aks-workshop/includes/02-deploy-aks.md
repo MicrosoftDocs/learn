@@ -172,9 +172,8 @@ With the new virtual network in place, you can go ahead and create your new clus
 
     ```output
     NAME                                STATUS   ROLES   AGE  VERSION
-    aks-nodepool1-24503160-vmss000000   Ready    agent   1m   v1.15.7
-    aks-nodepool1-24503160-vmss000001   Ready    agent   1m   v1.15.7
-    aks-nodepool1-24503160-vmss000002   Ready    agent   1m   v1.15.7
+    aks-nodepool1-29333311-vmss000000   Ready    agent   2m36s   v1.17.9
+    aks-nodepool1-29333311-vmss000001   Ready    agent   2m34s   v1.17.9
     ````
 
 ## Create a Kubernetes namespace for the application

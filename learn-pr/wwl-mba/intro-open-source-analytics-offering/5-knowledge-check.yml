@@ -3,15 +3,14 @@ uid: learn.wwl.introduction-open-source-analytics-offering.5-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 10/25/2019
+  description: "Knowledge check"
+  ms.date: 10/14/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
 durationInMinutes: 5
-
 quiz:
   questions:
   - content: "Apache Hadoop stores data in what type of file system?"

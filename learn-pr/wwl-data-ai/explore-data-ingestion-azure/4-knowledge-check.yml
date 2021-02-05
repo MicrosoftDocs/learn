@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/01/2020
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -29,7 +29,7 @@ quiz:
       explanation: "That's incorrect. A linked service specifies the connection parameters for connecting to an Azure service. It's not a task that you can run."
   - content: "When might you use PolyBase?"
     choices:
-    - content: "To query data from external data sources from Azure SQL Database"
+    - content: "To query data from external data sources from Azure Synapse Analytics"
       isCorrect: true
       explanation: "That's correct. This is the purpose of PolyBase"
     - content: "To ingest streaming data using Azure Databricks"

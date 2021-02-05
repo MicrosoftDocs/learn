@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Modern authentication for your application
 durationInMinutes: 10
 content: |
@@ -27,9 +26,9 @@ quiz:
     - content: "OpenID Connect is an identity provider."
       isCorrect: false
       explanation: "OpenID Connect is an authentication standard. An example of an identity provider is Azure AD."
-  - content: "You want users of your application to authenticate by using their accounts, which are stored in Office 365. What must you do in Azure AD?"
+  - content: "You want users of your application to authenticate by using their accounts, which are stored in Microsoft 365. What must you do in Azure AD?"
     choices:
-      - content: "Register every Office 365 user account in Azure AD."
+      - content: "Register every Microsoft 365 user account in Azure AD."
         isCorrect: false
         explanation: "Only the application needs a record in Azure AD, not all the user accounts."
       - content: "Register the application in Azure AD."

@@ -11,13 +11,13 @@ The default connectivity for Azure relational data services is to disable access
 To enable connectivity, use the **Firewalls and virtual networks** page for a service. To enable connectivity, choose **Selected networks**. Three further sections will appear, labeled **Virtual network**, **Firewall**, and **Exceptions**.
 
 > [!NOTE]
-> An Azure Virtual Network is a representation of your own network in the cloud. A virtual network enables you to connect virtual machines and Azure services together, in much the same way that you might use a physical network on-premises. Azure ensures that each virtual network is isolated from other virtual networks created by other users, and from the Internet. Azure enables you to specify wich machines (real and virtual), and services, are allowed to access resources on the virtual network, and which ports they can use.
+> An Azure Virtual Network is a representation of your own network in the cloud. A virtual network enables you to connect virtual machines and Azure services together, in much the same way that you might use a physical network on-premises. Azure ensures that each virtual network is isolated from other virtual networks created by other users, and from the Internet. Azure enables you to specify which machines (real and virtual), and services, are allowed to access resources on the virtual network, and which ports they can use.
 
 In the **Virtual networks** section, you can specify which virtual networks are allowed to route traffic to the service. When you create items such as web applications and virtual machines, you can add them to a virtual network. If these applications and virtual machines require access to your resource, add the virtual network containing these items to the list of allowed networks. 
 
 If you need to connect to the service from an on-premises computer, in the **Firewall** section, add the IP address of the computer. This setting creates a firewall rule that allows traffic from that address to reach the service.
 
-The **Exceptions** setting allows you to enable access to any other of your services created in your Azure subscription. 
+The **Exceptions** setting allows you to enable access to any other services that cannot be uniquely isolated through virtual network or IP address rules. 
 
 The image below shows the **Firewalls and virtual networks** page for an Azure SQL database. MySQL and PostgreSQL have a similar page.
 

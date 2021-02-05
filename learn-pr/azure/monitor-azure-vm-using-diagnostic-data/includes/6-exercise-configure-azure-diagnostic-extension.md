@@ -44,21 +44,13 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
    |AGGREGATION    |    Max     |
 
 1. Select the **Finish editing** check mark.
-1. At the top of the chart, select **Pin to dashboard** > **Select another dashboard**.
+1. At the top of the chart, select **Pin to dashboard**.
 1. In the **Pin to another dashboard** pane, select **Create new**.
-1. Use the following values:
+1. Select **Private**. If you're using your own subscription, you can create a shared dashboard.
+1. Enter **KPI Dashboard**.
 
-    ![Screenshot that shows the "Pin to another dashboard" pane filled out](../media/6-create-a-dashboard.png)
-
-   |Field  |Value  |
-   |---------|---------|
-   |Dashboard name     |KPI Dashboard         |
-   |Subscription   |   Concierge Subscription    |
-   |Publish to the dashboard resource group   |    Clear the check box     |
-   |Resource group     |  <rgn>[sandbox resource group name]</rgn>       |
-
-1. Select **Apply**.
-1. Close the pane.
+    ![Screenshot that shows the "Pin to another dashboard" pane filled out](../media/6-create-dashboard.png)
+1. Select **Create and pin**.
 
 ### Add a free memory percentage graph
 
@@ -72,13 +64,9 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
    |AGGREGATION    |    Max     |
 
 1. Select the **Finish editing** check mark.
-1. At the top of the chart, select **Pin to dashboard** > **Select another dashboard**.
-1. Expand **Browse dashboards**.
+1. At the top of the chart, select **Pin to dashboard**.
 1. Under **Dashboard**, select **KPI Dashboard**.
-
-    ![Screenshot that shows "KPI Dashboard" selected on the "Select existing" tab](../media/6-select-existing-dashboard.png)
-
-1. Select **Apply** and close the pane.
+1. Select **Pin**.
 
 ### Add a CPU usage graph
 
@@ -92,10 +80,9 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
    |AGGREGATION    |    Max     |
 
 1. Select the **Finish editing** check mark.
-1. At the top of the chart, select **Pin to dashboard** > **Select another dashboard**.
-1. In the **Pin to another dashboard** pane, expand **Browse dashboards**.
+1. At the top of the chart, select **Pin to dashboard**.
 1. Under **Dashboard**, select **KPI Dashboard**.
-1. Select **Apply** and close the pane.
+1. Select **Pin**.
 
 ### View the new dashboard
 

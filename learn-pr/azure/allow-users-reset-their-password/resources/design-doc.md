@@ -45,7 +45,7 @@ Identify the subtasks of *Allow users to reset their password with Azure Active 
 
 1. **Introduction**
 
-   You're an IT administrator for a large organization. Your organization has just started using Azure Active Directory to allow employees to securely sign in and use SaaS apps, and access organization resources in Office 365. You're overwhelmed with password reset requests because you currently reset employee's passwords manually. To get these employees back to being productive quickly and reduce your workload, you decide to evaluate and set up self-service password reset in Azure Active Directory.  
+   You're an IT administrator for a large organization. Your organization has just started using Azure Active Directory to allow employees to securely sign in and use SaaS apps, and access organization resources in Microsoft 365. You're overwhelmed with password reset requests because you currently reset employee's passwords manually. To get these employees back to being productive quickly and reduce your workload, you decide to evaluate and set up self-service password reset in Azure Active Directory.  
 
 1. **What is self-service password reset in Azure Active Directory?**
 

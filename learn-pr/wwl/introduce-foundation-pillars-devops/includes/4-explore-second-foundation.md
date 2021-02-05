@@ -1,6 +1,6 @@
 
 
-According to Richard Banfield, great product companies have four things in common:
+According to Richard Banfield, author of *Design Sprint: A Practical Guidebook for Building Great Digital Products* and Product Leadership: How Top Product Managers Launch Awesome Products and Build Successful Teams), great product companies have four things in common:
 
 - Speed to market
 - Agility when faced with change

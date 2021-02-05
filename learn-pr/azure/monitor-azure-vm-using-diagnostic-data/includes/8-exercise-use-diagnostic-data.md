@@ -51,28 +51,38 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Under **Action group**, select **Select action group**.
 1. Select **Create action group**.
-1. Use the following values:
+1. On the **Basics** page, use the following values:
 
-   ![Screenshot that shows the "Add action group" pane filled out](../media/8-add-action-group-pane.png)
+   ![Screenshot that shows the "Add action group" pane filled out](../media/8-create-action-group-basics.png)
 
     |Field  |Value  |
     |---|---|
-    |Action group name | Email alerts         |
-    |Short name        | Emails              |
     |Subscription       | Concierge Subscription               |
     |Resource group       | <rgn>[sandbox resource group name]</rgn>                |
-    |Action name     | High CPU usage       |
-    |Action type      | Email/SMS/Push/Voice |
+    |Action group name | Email alerts         |
 
-1. In the **Email/SMS/Push/Voice** pane, select **Email**, and enter your email address to receive the alert notification.
+1. Select **Notifications**.
+1. On the **Notifications** page, use the following values:
+
+   ![Screenshot that shows the "Add action group" pane filled out](../media/8-create-action-group-notifications.png)
+
+    |Field  |Value  |
+    |---|---|
+    |Notification type      | Email/SMS/Push/Voice |
+    |Name     | High CPU usage       |
+
+1. In the **Email/SMS/Push/Voice** pane, select **Email**, and enter your email address to receive the alert notification. If this pane doesn't appear, select the edit button for the notification type.
   
-   ![Screenshot that shows the "Email/SMS/Push/Voice" pane ](../media/8-create-an-action.png)
+   ![Screenshot that shows the "Email/SMS/Push/Voice" pane ](../media/8-create-action-group-notifications-email.png)
 
 1. Select **OK**.
-1. In the **Add action group** pane, select **OK**.
+1. Select **Review + create** > **Create**
+
+### Enter alert rule details
+
 1. For **Alert rule details**, use the following values:
 
-   ![Screenshot that shows the fields for alert details](../media/8-alert-details.png)
+   ![Screenshot that shows the fields for alert details](../media/8-alert-rule-details.png)
 
     |Field  |Value  |
     |---|---|
@@ -81,7 +91,9 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Select **Create alert rule**.
 
-## Activate the alert
+Wait a few minutes for this rule to activate.
+
+## Trigger the alert
 
 1. Go to the VM **Overview** pane.
 1. Select **Connect** > **SSH**.

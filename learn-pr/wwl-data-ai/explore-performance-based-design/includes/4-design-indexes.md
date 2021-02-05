@@ -33,7 +33,7 @@ Index design is a little bit art and a little bit science. A narrow index with f
 
 Properly indexing a database is a complex task. When planning your indexes for a table, you should keep a few basic principles in:
 
-* Understand the workloads of the system. A table that is used mainly for insert operations it will benefit far less from additional indexes than a table used for data warehouse operations that are 90% read activity.
+* Understand the workloads of the system. A table that is used mainly for insert operations will benefit far less from additional indexes than a table used for data warehouse operations that are 90% read activity.
 * Understand what queries are run most frequently , and optimize your indexes around those queries
 * Understand the data types of the columns used in your queries. Indexes are ideal for integer data types, or unique or non-null columns.
 * Create nonclustered indexes on columns that are frequently used in predicates and join clauses, and keep those indexes as narrow as possible to avoid overhead.

@@ -1,35 +1,35 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.6-data-protection
 metadata:
-  title: Data protection
-  description: Data protection
+  title: Protect your data
+  description: Protect your data
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Data protection
+title: Protect your data
 durationInMinutes: 10
 content: |
   [!include[](includes/6-data-protection.md)]
 quiz:
-    title: Knowledge Check
+    title: Knowledge check
     questions:
     - content: "How can you manage who has access to view masked data?"
       choices:
-      - content: "You can't. Only the server admin can view masked data"
+      - content: "You can't. Only the server admin can view masked data."
         isCorrect: false
-        explanation: "Review the Dynamic data masking section."
-      - content: "You can `GRANT` or `REVOKE` the `UNMASK` capability with T-SQL"
+        explanation: "Review the Dynamic Data Masking section."
+      - content: "You can `GRANT` or `REVOKE` the `UNMASK` capability with T-SQL."
         isCorrect: true
-        explanation: "That's correct, by using `GRANT UNMASK` you can allow certain users or roles access to view data."
-      - content: "Anyone who can query masked data can view masked data"
+        explanation: "That's correct. By using `GRANT UNMASK` you can allow certain users or roles access to view data."
+      - content: "Anyone who can query masked data can view masked data."
         isCorrect: false
-        explanation: "Review the Dynamic data masking section."
-      - content: "You can use the `ADD MASKED WITH` T-SQL to allow certain users access"
+        explanation: "Review the Dynamic Data Masking section."
+      - content: "You can use the `ADD MASKED WITH` T-SQL command to allow certain users access."
         isCorrect: false
-        explanation: "Review the Dynamic data masking section."
-    - content: "When doing equality comparisons on data encrypted with Always Encrypted, which operators are currently supported in Azure SQL?"
+        explanation: "Review the Dynamic Data Masking section."
+    - content: "When you're doing equality comparisons on data that's encrypted with Always Encrypted, which operators are currently supported in Azure SQL?"
       choices:
       - content: "`JOIN`"
         isCorrect: false

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.create-language-model-with-luis
+metadata:
+  title: Create a language model with Language Understanding
+  description: "In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to build and publish a LUIS model."
+  ms.date: 09/13/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a language model with Language Understanding
+summary: In this module, we'll introduce you to the Language Understanding service, and show how to create applications that understand language.
+abstract: |
+   In this module, you'll:
+   - Learn what Language Understanding is.
+   - Learn about key features, such as intents and utterances.
+   - Build and publish a natural-language machine-learning model.
+prerequisites: |
+  Ability to navigate the Azure portal
+iconUrl: /learn/achievements/create-publish-luis-model.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-bot-service
+- azure-cognitive-services
+- azure-language-understanding
+- azure-sdks
+units:
+- learn.wwl.create-language-model-with-luis.introduction
+- learn.wwl.create-language-model-with-luis.get-started
+- learn.wwl.create-language-model-with-luis.exercise-create-luis-application
+- learn.wwl.create-language-model-with-luis.knowledge-check
+- learn.wwl.create-language-model-with-luis.summary
+badge:
+  uid: learn.wwl.create-language-model-with-luis.badge

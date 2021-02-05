@@ -20,7 +20,7 @@ quiz:
     - content: 'Waiting for users to reach out to you with reports of errors in your application.'
       isCorrect: false
       explanation: 'This is a poor practice and will result in a bad user experience.'
-    - content: 'Performing different functional tests in development and production environments.'
+    - content: 'Performing different tests for functionality in development versus production environments.'
       isCorrect: false
       explanation: 'You should perform the same functional tests between environments to ensure you are identifying issues early in your development process rather than in production.'
     - content: 'Omitting infrastructure deployment from test plans.'

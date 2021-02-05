@@ -5,7 +5,7 @@ metadata:
   description: Read about the purpose and features of IoT Hub monitoring. The features include rules, alerts, diagnostics, and logs.
   ms.date: 2/2/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create IoT Hub metrics and alerts
@@ -46,17 +46,17 @@ quiz:
       isCorrect: false
       explanation: There's no formal collection of these features.
 
-  - content: 'What are the four entries for the IoT Hub Monitoring menu?'
+  - content: 'What are the five entries for the IoT Hub Monitoring menu?'
     choices:  
-    - content: 'Alerts, Metrics, Security Alerts, Custom Alerts'
+    - content: 'Alerts, Metrics, Security Alerts, Custom Alerts, and Workbooks'
       isCorrect: false
-      explanation: Security Alerts and Custom Alerts fall under the <b>Security</b> heading.
-    - content: 'Alerts, Metrics, Diagnostic settings, Logs'
+      explanation: Security Alerts and Custom Alerts fall under the **Security** heading.
+    - content: 'Alerts, Metrics, Diagnostic settings, Logs, and Workbooks'
       isCorrect: true
-      explanation: These entries are the four features of IoT Hub monitoring.
-    - content: 'Overview, Alerts, Metrics, Logs'
+      explanation: These entries are the five features of IoT Hub monitoring.
+    - content: 'Overview, Alerts, Metrics, Logs, and Workbooks'
       isCorrect: false
       explanation: An Overview feature isn't available for Monitoring.
-    - content: 'Alerts, Metrics, Diagnostic settings, Resource Health'
+    - content: 'Alerts, Metrics, Diagnostic settings, Resource Health, and Workbooks'
       isCorrect: false
-      explanation: Resource Health is a feature of <b>Support + Troubleshooting</b>
+      explanation: Resource Health is a feature of **Support + Troubleshooting**.

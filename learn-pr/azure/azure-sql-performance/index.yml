@@ -15,7 +15,7 @@ abstract: |
   - Identify the performance capabilities of Azure SQL
   - Configure and maintain the performance features of Azure SQL
   - Monitor and troubleshoot performance in Azure SQL
-  - Improve performance with Intelligent Insights
+  - Improve performance with intelligent insights
 prerequisites: | 
  - Experience working with, maintaining, and developing with SQL Server
  - Experience with Azure, such as deploying and managing resources

@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.personality-quiz.knowledge-check
+metadata:
+  title: Check your knowledge
+  description: Answer questions to see what you've learned.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Check your knowledge
+durationInMinutes: 10
+content: |
+  Answer the following questions to see what you've learned:
+quiz:
+  questions:
+  - content: "If you have an <code>elif</code> statement, what does the last conditional statement need to be?"
+    choices:
+    - content: "An <code>if</code> statement"
+      isCorrect: false
+      explanation: "Incorrect. The first statement always has to be an <code>if</code> statement."
+    - content: "An <code>elif</code> statement"
+      isCorrect: false
+      explanation: "Incorrect, but you can have as many <code>elif</code> statements as you want."
+    - content: "An <code>else</code>statement"
+      isCorrect: true
+      explanation: "Correct. You must end an <code>elif</code> statement with an <code>else</code> statement."
+    - content: "Any; an <code>if</code>, <code>elif</code>, or <code>else</code> statement"
+      isCorrect: false
+      explanation: "Incorrect. Only one is correct."
+  - content: "How do you test if variable x has a value of 10?"
+    choices:
+    - content: "if x = 10"
+      isCorrect: false
+      explanation: "Incorrect. If you have only one equal sign, you're assigning the value to the variable, even if it's in an <code>if</code> statement."
+    - content: "if x is 10"
+      isCorrect: false
+      explanation: "Incorrect. Python doesn't have an <code>is</code> keyword."
+    - content: "if x equals 10"
+      isCorrect: false
+      explanation: "Incorrect. Python doesn't have an <code>equals</code> keyword."
+    - content: "if x == 10"
+      isCorrect: true
+      explanation: "Correct. You must use two equal signs when comparing a value to a variable."
+  - content: "What's true about coding?"
+    choices:
+    - content: "Coding isn't a part of live-action movie making."
+      isCorrect: false
+      explanation: "False. Almost every industry has software built by coders that affects it. Even live-action movies use software for special effects, editing, sound, and so much more!"
+    - content: "Coding is only for experts."
+      isCorrect: false
+      explanation: "False. Although the folks who build the software that lands space shuttles on the moon are experts, the beauty of learning to code is that if you mess up, you can just re-run your code!"
+    - content: "You have to have a Windows computer to code."
+      isCorrect: false
+      explanation: "False. Coding can be done on almost any computer, even netbooks! With software-live Visual Studio Code, you can even have the same editor across multiple devices."
+    - content: "Coding is for everyone."
+      isCorrect: true
+      explanation: "True! Even if you don't want to be a developer as your career, learning to code helps you develop problem-solving skills and gives you insight into the software that you use every day."
+

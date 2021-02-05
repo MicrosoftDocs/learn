@@ -4,7 +4,7 @@ In this unit, you'll learn how self-service password reset (SSPR) works in Azure
 
 ## Why use SSPR?
 
-In Azure AD, any user can change their password if they're already signed in. But if they're not signed in and forgot their password or it's expired, they'll need to reset their password. With SSPR, users can reset their passwords in a web browser or from a Windows sign-in screen to regain access to Azure, Office 365, and any other application that uses Azure AD for authentication.
+In Azure AD, any user can change their password if they're already signed in. But if they're not signed in and forgot their password or it's expired, they'll need to reset their password. With SSPR, users can reset their passwords in a web browser or from a Windows sign-in screen to regain access to Azure, Microsoft 365, and any other application that uses Azure AD for authentication.
 
 SSPR reduces the load on administrators, because users can fix password problems themselves, without having to call the help desk. Also, it minimizes the productivity impact of a forgotten or expired password. Users don't have to wait until an administrator is available to reset their password.
 
@@ -30,7 +30,7 @@ As an administrator, you choose the methods to use when you configure SSPR. Enab
 | --- | --- | --- |
 | Mobile app notification | Install the Microsoft Authenticator app on your mobile device, and then register it on the multifactor authentication setup page. | Azure sends a notification to the app, which you can either verify or deny. |
 | Mobile app code | This method also uses the Authenticator app, and you install and register it in the same way. | Enter the code from the app. |
-| Email | Provide an email address that's external to Azure and Office 365. | Azure sends a code to the address, which you enter in the reset wizard. |
+| Email | Provide an email address that's external to Azure and Microsoft 365. | Azure sends a code to the address, which you enter in the reset wizard. |
 | Mobile phone | Provide a mobile phone number. | Azure sends a code to the phone in an SMS message, which you enter in the reset wizard. Or, you can choose to get an automated call. |
 | Office phone | Provide a nonmobile phone number. | You receive an automated call to this number and press #. |
 | Security questions | Select questions such as "In what city was your mother born?" and save responses to them. | Answer the questions. |
@@ -70,6 +70,6 @@ The editions of Azure AD are free, Premium P1, and Premium P2. The password rese
 
 Any user who is signed in can change their password, regardless of the edition of Azure AD.
 
-If you're not signed in and you've forgotten your password or your password has expired, you can use SSPR in Azure AD Premium P1 or P2. It's also available with Microsoft 365 Business or Office 365. SSPR isn't available in the free edition of Azure AD.
+If you're not signed in and you've forgotten your password or your password has expired, you can use SSPR in Azure AD Premium P1 or P2. It's also available with Microsoft 365 Apps for business or Microsoft 365. SSPR isn't available in the free edition of Azure AD.
 
-In a hybrid situation, where you have Active Directory on-premises and Azure AD in the cloud, any password change in the cloud must be written back to the on-premises directory. This writeback support is available in Azure AD Premium P1 or P2. It's also available with Microsoft 365 Business.
+In a hybrid situation, where you have Active Directory on-premises and Azure AD in the cloud, any password change in the cloud must be written back to the on-premises directory. This writeback support is available in Azure AD Premium P1 or P2. It's also available with Microsoft 365 Apps for business.

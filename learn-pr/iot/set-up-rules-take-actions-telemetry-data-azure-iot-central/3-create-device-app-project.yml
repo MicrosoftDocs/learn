@@ -5,7 +5,7 @@ metadata:
   description: Create the programming project to simulate the real device. Use Visual Studio, or Visual Studio Code as the development environment. Use C# or Node.js as the programming language. Finally, set the device app running, and watch the telemetry and dashboard.
   ms.date: 1/20/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language

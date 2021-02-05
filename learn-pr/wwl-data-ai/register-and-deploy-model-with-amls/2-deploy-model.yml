@@ -3,8 +3,8 @@ uid: learn.data-ai.register-and-deploy-model-with-amls.deploy-model
 title: Deploying a model as a real-time service
 metadata:
   title: Deploying a model as a real-time service
-  description: "Learn how to deploy a model as a real-time inferencing service."
-  ms.date: 07/16/2020
+  description: "Deploying a model as a real-time service"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-container-for-use-with-cognitive-services.consume-from-container
+title: Consume Cognitive Services from a container
+metadata:
+  title: Consume Cognitive Services from a container
+  description: "Consume Cognitive Services from a container"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-consume-container.md)]

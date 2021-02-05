@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.compliance-endpoint-manager.7-connector-status
+title: Review connector status
+metadata:
+  title: Review connector status
+  description: Review and understand connector status.
+  ms.date: 10/26/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-connector-status.md)]
+  

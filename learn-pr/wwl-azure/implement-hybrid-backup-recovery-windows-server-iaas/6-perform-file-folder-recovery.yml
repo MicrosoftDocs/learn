@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.perform-file-folder-recovery
+title: Perform file and folder recovery
+metadata:
+  title: Perform file and folder recovery
+  description: "Perform file and folder recovery"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-perform-file-folder-recovery.md)]

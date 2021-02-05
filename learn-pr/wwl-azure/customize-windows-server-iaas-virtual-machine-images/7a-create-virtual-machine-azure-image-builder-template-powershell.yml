@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.customize-windows-server-iaas-vm-images.create-windows-virtual-machine-azure-image-builder-powershell
+title: Create a Windows Virtual Machine with Azure Image Builder using PowerShell
+metadata:
+  title: Create a Windows Virtual Machine with Azure Image Builder using PowerShell
+  description: "Create a Windows Virtual Machine with Azure Image Builder using PowerShell"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/7a-create-virtual-machine-azure-image-builder-template-powershell.md)]

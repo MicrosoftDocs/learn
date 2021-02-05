@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-graph-coloring-problems-grovers-search.7-grovers-algorithm-practice
+title: Potential applications of Grover's algorithm in practice
+metadata:
+  description: Discussion of problems that may be good applications of Grover's algorithm.
+  ms.date: 09/19/2020
+  author: tcNickolas
+  ms.author: mamykhai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-quantum
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-grovers-algorithm-practice.md)]

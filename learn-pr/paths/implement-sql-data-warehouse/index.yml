@@ -6,7 +6,7 @@ metadata:
   brand: azure
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement a Data Warehouse with Azure Synapse Analytics
@@ -20,6 +20,7 @@ summary: |
     - Understand the security controls provided by Azure Storage and Azure Synapse Analytics
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/implement-sql-data-warehouse-trophy.svg
+hidden: true
 levels:
 - beginner
 roles:

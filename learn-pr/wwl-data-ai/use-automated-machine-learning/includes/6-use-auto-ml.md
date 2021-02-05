@@ -1,4 +1,11 @@
-Azure Machine Learning includes an *automated machine learning* capability that leverages the scalability of cloud compute to automatically try multiple pre-processing techniques  and model-training algorithms in parallel to find the best performing model for your data.
+Azure Machine Learning includes an *automated machine learning* capability that leverages the scalability of cloud compute to automatically try multiple pre-processing techniques and model-training algorithms in parallel to find the best performing supervised machine learning model for your data.
+
+> [!NOTE]
+> The automated machine learning capability in Azure Machine Learning supports *supervised* machine learning models - in other words, models for which the training data includes known label values. You can use automated machine learning to train models for:
+>
+> - **Classification** (predicting categories or *classes*)
+> - **Regression** (predicting numeric values)
+> - **Time series forecasting** (regression with a time-series element, enabling you to predict numeric values at a future point in time)
 
 ## Run an automated machine learning experiment
 
@@ -9,7 +16,7 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
     - **Select dataset**:
         - **Dataset**: bike-rentals
     - **Configure run**:
-        - **New experiment name**: auto-train-bike-rental
+        - **New experiment name**: mslearn-bike-rental
         - **Target column**: rentals (*this is the label the model will be trained to predict)*
         - **Training compute target**: *the compute cluster you created previously*
     - **Task type and settings**:
@@ -24,9 +31,9 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
         - **Featurization settings:**
             - **Enable featurization**: Selected - *this causes Azure Machine Learning to automatically preprocess the features before training.*
 
-3. When you finish submitting the automated ML run details, it will start automatically. Wait for the run status to change from *Preparing* to *Running* (this may take five minutes or so, as the cluster nodes need to be initialized before training can begin - now might be a good time for a coffee break!). You may need to select **&#8635; Refresh** periodically.
-4. When the run status changes to *Running*, view the **Models** tab and observe as each possible combination of training algorithm and pre-processing steps is tried and the performance of the resulting model is evaluated. The page will automatically refresh periodically, but you can also select **&#8635; Refresh**.
-5. Wait for the experiment to finish. It may take a few minutes.
+3. When you finish submitting the automated ML run details, it will start automatically. Wait for the run status to change from *Preparing* to *Running*.
+4. When the run status changes to *Running*, view the **Models** tab and observe as each possible combination of training algorithm and pre-processing steps is tried and the performance of the resulting model is evaluated. The page will automatically refresh periodically, but you can also select **&#8635; Refresh**. It may take ten minutes or so before models start to appear, as the cluster nodes need to be initialized before training can begin.
+5. Wait for the experiment to finish. It may take a while - now might be a good time for a coffee break!
 
 ## Review the best model
 
@@ -49,7 +56,7 @@ After the experiment has finished; you can review the best performing model that
     > [!div class="centered"]
     > ![Residuals histogram](../media/residual-histogram.png)
 
-5. Select the **Explanations** tab, and view the **Global Importance** chart. This shows how much each feature in the dataset influences the label prediction, like this:
+5. Select the **Explanations** tab. Click on the arrows >> next to **Explanation ID** to expand the explanations list. Select an explanation ID, select **View previous dashboard experience** on the right-hand side. Then select **Global Importance**. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
     > [!div class="centered"]
-    > ![Residuals histogram](../media/feature-importance.png)
+    > ![Feature importance](../media/feature-importance.png)

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.3-exercise-create-azure-speech-resource
+title: Exercise - Create an Azure Speech service resource
+metadata:
+  title: Exercise - Create an Azure Speech service resource
+  description: Use the Azure portal to create a Speech service resource in Azure
+  ms.date: 10/06/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-azure-speech-resource.md)]
+
+  

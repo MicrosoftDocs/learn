@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which transformation in the Mapping Data Flow is used to routes data rows to different streams based on matching conditions?"
+    choices:
+    - content: "Lookup."
+      isCorrect: false
+      explanation: "Incorrect. A Lookup transformation is used to add reference data from another source to your Data Flow."
+    - content: "Conditional Split."
+      isCorrect: true
+      explanation: "Correct. A Conditional Split transformation routes data rows to different streams based on matching conditions. The conditional split transformation is similar to a CASE decision structure in a programming language."
+    - content: "Select."
+      isCorrect: false
+      explanation: "Incorrect. A Select transformation is used for selecting and/or defining your columns."
+  - content: "Which transformation is used to load data into a data store or compute resource?"
+    choices:
+    - content: "Window."
+      isCorrect: false
+      explanation: "Incorrect. A Window transformation is where you will define window-based aggregations of columns in your data streams."
+    - content: "Source."
+      isCorrect: false
+      explanation: "Incorrect. A Source transformation configures your data source for the data flow. When designing data flows, your first step will always be configuring a source transformation."
+    - content: "Sink."
+      isCorrect: true
+      explanation: "Correct. A Sink transformation allows you to choose a dataset definition for the destination output data. You can have as many sink transformations as your data flow requires."

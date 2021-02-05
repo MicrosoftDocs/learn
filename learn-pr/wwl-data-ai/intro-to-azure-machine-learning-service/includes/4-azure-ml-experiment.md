@@ -84,7 +84,7 @@ metrics = run.get_metrics()
 print(json.dumps(metrics, indent=2))
 ```
 
-The previous code produces output similar to this:
+The previous code might produce output similar to this:
 
 ```JSON
 {
@@ -113,7 +113,7 @@ files = run.get_file_names()
 print(json.dumps(files, indent=2))
 ```
 
-The previous code produces output similar to this:
+The previous code would produce output similar to this:
 
 ```JSON
 [
@@ -125,7 +125,7 @@ The previous code produces output similar to this:
 
 You can run an experiment inline using the **start_logging** method of the **Experiment** object, but it's more common to encapsulate the experiment logic in a script and run the script as an experiment. The script can be run in any valid compute context, making this a more flexible solution for running experiments as scale.
 
-An experiment script is just a Python code file that contains the code you want to run in the experiment. To access the experiment run context (which is needed to log metrics) the script must import the **azureml.core.Run** class and call its **get_context** method. The script can then use the run context to log metrics, upload files, and complete the experiment, as shown here:
+An experiment script is just a Python code file that contains the code you want to run in the experiment. To access the experiment run context (which is needed to log metrics) the script must import the **azureml.core.Run** class and call its **get_context** method. The script can then use the run context to log metrics, upload files, and complete the experiment, as shown in the following example:
 
 ```Python
 from azureml.core import Run
@@ -151,20 +151,16 @@ data.sample(100).to_csv("outputs/sample.csv", index=False, header=True)
 run.complete()
 ```
 
-To run a script as an experiment, you must define a *run configuration* that defines the Python environment in which the script will be run, and a *script run configuration* that associates the run environment with the script. These are implemented by using the **RunConfiguration** and **ScriptRunConfig** objects.
+To run a script as an experiment, you must define a *script configuration* that defines the script to be run and the Python environment in which to run it. This is implemented by using a **ScriptRunConfig** object.
 
 For example, the following code could be used to run an experiment based on a script in the **experiment_files** folder (which must also contain any files used by the script, such as the *data.csv* file in previous script code example):
 
 ```Python
-from azureml.core import Experiment, RunConfiguration, ScriptRunConfig
-
-# create a new RunConfig object
-experiment_run_config = RunConfiguration()
+from azureml.core import Experiment, ScriptRunConfig
 
 # Create a script config
-script_config = ScriptRunConfig(source_directory=experiment_folder, 
-                      script='experiment.py',
-                      run_config=experiment_run_config) 
+script_config = ScriptRunConfig(source_directory=experiment_folder,
+                                script='experiment.py') 
 
 # submit the experiment
 experiment = Experiment(workspace = ws, name = 'my-experiment')
@@ -172,5 +168,5 @@ run = experiment.submit(config=script_config)
 run.wait_for_completion(show_output=True)
 ```
 
-> [!NOTE]
-> The **RunConfiguration** object defines the Python environment for the experiment, including the packages available to the script. If your script depends on packages that are not included in the default environment, you must associate the **RunConfiguration** with an **Environment** object that makes use of a **CondaDependencies** object to specify the Python packages required.
+> [!NOTE] 
+> An implicitly created **RunConfiguration** object defines the Python environment for the experiment, including the packages available to the script. If your script depends on packages that are not included in the default environment, you must associate the **ScriptRunConfig** with an **Environment** object that makes use of a **CondaDependencies** object to specify the Python packages required. Runtime environments are discussed in more detail later in this course.

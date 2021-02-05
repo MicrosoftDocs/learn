@@ -27,7 +27,6 @@ roles:
 products:
 - azure
 - azure-cosmos-db
-achievement: learn.monitor-azure-cosmos-db.badge
 units:
 - learn.monitor-azure-cosmos-db.1-introduction
 - learn.monitor-azure-cosmos-db.2-request-units

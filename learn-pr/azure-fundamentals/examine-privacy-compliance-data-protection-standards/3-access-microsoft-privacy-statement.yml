@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.examine-privacy-compliance-data-protection-standards.3-access-microsoft-privacy-statement
+title: Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum
+metadata:
+  description: Learn how the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum explain what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-access-microsoft-privacy-statement.md)]

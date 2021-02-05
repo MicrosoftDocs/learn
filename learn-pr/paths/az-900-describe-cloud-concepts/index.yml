@@ -1,0 +1,85 @@
+### YamlMime:LearningPath
+uid: learn.az-900-describe-cloud-concepts
+metadata:
+  title: "Azure Fundamentals part 1: Describe core Azure concepts (AZ-900)"
+  description: "This learning path provides you with an introduction to the basics of Azure cloud computing and Azure architecture. Prepare for AZ-900."
+  brand: azure
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Azure Fundamentals part 1: Describe core Azure concepts"
+summary: |
+  New to the cloud? Azure fundamentals is a six-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
+
+  After completing this learning path, you'll be able to:
+
+    - Understand the benefits of cloud computing in Azure and how it can save you time and money
+    - Explain cloud concepts such as high availability, scalability, elasticity, agility, and disaster recovery
+    - Describe core Azure architecture components such as subscriptions, management groups, resources and resource groups
+    - Summarize geographic distribution concepts such as Azure regions, region pairs, and availability zones
+
+  Here are the learning paths in this series:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" role="presentation"></img>
+
+    Part 1: Describe core Azure concepts
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" role="presentation"></img>
+
+    [Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+  :::column-end:::
+  :::row-end:::
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" role="presentation"></img>
+
+    [Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+  :::column-end:::
+  :::row-end:::
+
+  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://www.microsoft.com/learning/exam-AZ-900.aspx).
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals video: Describe cloud concepts"
+  url: https://www.microsoft.com/videoplayer/embed/RE4M6Yh
+iconUrl: /learn/achievements/az-900-describe-cloud-concepts.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+- student
+products:
+- azure
+- azure-resource-manager
+- azure-functions
+modules:
+- learn.azure.intro-to-azure-fundamentals
+- learn.azure.fundamental-azure-concepts
+- learn.azure.azure-architecture-fundamentals
+trophy:
+  uid: learn.az-900-describe-cloud-concepts.trophy

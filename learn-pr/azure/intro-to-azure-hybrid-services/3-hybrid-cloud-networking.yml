@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-hybrid-services.3-hybrid-cloud-networking
+metadata:
+  title: Hybrid cloud networking
+  description: Hybrid cloud networking
+  ms.date: 09/21/2020
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Hybrid cloud networking
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-hybrid-cloud-networking.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Tailwind Traders must ensure that the data transmitted from the Canberra office to workloads running in Azure doesn't pass across the public internet, even in an encrypted tunnel. Which of the following technologies can Tailwind Traders use to connect this office to workloads running in Azure?"
+    choices:
+    - content: "Azure VPN Gateway"
+      isCorrect: false
+      explanation: "Tailwind Traders can't use this solution because Azure VPN Gateway has traffic pass across the public internet in an encrypted tunnel."
+    - content: "Azure Virtual WAN"
+      isCorrect: false
+      explanation: " Azure Virtual WAN allows you to set up hub-and-spoke traffic routing. Although it's compatible with both Azure VPN Gateway and Azure ExpressRoute, it doesn't by itself carry traffic from an on-premises location to workloads running in Azure."
+    - content: "Azure ExpressRoute"
+      isCorrect: true
+      explanation: "Azure ExpressRoute allows you to have a dedicated connection from your organization's on-premises location to an Azure datacenter. Traffic that passes across an ExpressRoute circuit never crosses the public internet."
+
+
+  - content: "At present, all Tailwind Traders branch office locations link to the Sydney office by using a VPN connection. Internal network traffic between branch offices is all routed through Sydney in a hub-and-spoke architecture. Rather than use the Sydney office as the hub for routing traffic between branch offices, Tailwind Traders would prefer to use Azure. Which of the following technologies can Tailwind Traders use to accomplish this goal?"
+    choices:
+    - content: "Azure VPN Gateway"
+      isCorrect: false
+      explanation: "Although Tailwind Traders can route traffic to Azure over Azure VPN Gateway, it can't use this technology solely as the hub for routing traffic between sites. Azure VPN Gateway is used in some Azure Virtual WAN topologies, but it's also possible using only ExpressRoute."
+    - content: "Azure Virtual WAN"
+      isCorrect: true
+      explanation: "Azure Virtual WAN allows you to set up hub-and-spoke traffic routing and is compatible with both Azure VPN Gateway and Azure ExpressRoute."
+    - content: "Azure ExpressRoute"
+      isCorrect: false
+      explanation: "Azure ExpressRoute allows you to have a dedicated connection from your organization's on-premises location to an Azure datacenter, but Azure ExpressRoute does not route traffic between branch office sites."

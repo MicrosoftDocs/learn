@@ -3,4 +3,4 @@ Gathering data from customers is crucial. Their feedback can alert you to proble
 
 ## Learn more
 
-One way to collect customer feedback is [Microsoft Forms Pro](https://formspro.microsoft.com/?azure-portal=true). Microsoft Forms Pro is a survey solution that integrates with Office 365, Dynamics 365, and the Power Platform.
+One way to collect customer feedback is [Microsoft Forms Pro](https://formspro.microsoft.com/?azure-portal=true). Microsoft Forms Pro is a survey solution that integrates with Microsoft 365, Dynamics 365, and the Power Platform.

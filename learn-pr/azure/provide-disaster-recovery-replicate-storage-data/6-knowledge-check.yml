@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.provide-disaster-recovery-replicate-storage-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Summary
+  ms.date: 10/08/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Suppose you want data redundancy and protection from a datacenter outage but for compliance reasons you need to keep your data in the same region. Which redundancy option should you choose?"
+    choices:
+    - content: "GZRS"
+      isCorrect: false
+      explanation: "With geo-zone-redundant storage (GZRS), your data is copied across three availability zones in your primary region and to a paired secondary region."
+    - content: "ZRS"
+      isCorrect: true
+      explanation: "Zone-redundant storage (ZRS) copies your data to three different availability zones within a single region. If one datacenter is experiencing an outage, your data remains accessible from another availability zone within the same Azure region."
+    - content: "RA-GRS"
+      isCorrect: false
+      explanation: "Read-access geo-redundant storage (RA-GRS) is similar to geographically redundant storage (GRS), but it allows you to read from the secondary region, even if the primary region hasn't failed."
+  - content: "Suppose you want to provide the highest availability to your storage data and to protect against a region-wide outage. Which redundancy option should you choose?"
+    choices:
+    - content: "LRS"
+      isCorrect: false
+      explanation: "Locally redundant storage (LRS) copies your data three times across separate racks of hardware in a datacenter within one region. "
+    - content: "ZRS"
+      isCorrect: false
+      explanation: "Zone-redundant storage (ZRS) copies your data to three different availability zones within a single region."
+    - content: "GZRS"
+      isCorrect: true
+      explanation: "With geo-zone-redundant storage (GZRS), your data is copied across three availability zones in your primary region and to a paired secondary region. You could also use geographically redundant storage (GRS), read-access geo-redundant storage (RA-GRS), or read-access geo-zone-redundant storage (RA-GZRS)."
+  - content: "Suppose you're using geo-zone-redundant storage (GZRS) and there's an outage in your primary region. You initiate a failover to the secondary region. How does the failover affect the data in your storage account?"
+    choices:
+    - content: "You might have some data loss."
+      isCorrect: true
+      explanation: "There's delay before data is copied from the primary region and written to the secondary because data is copied asynchronously. After you fail over, compare the last sync time and last failover time."
+    - content: "Data in the primary region is inaccessible to users."
+      isCorrect: false
+      explanation: "Given the scenario, the inaccessibility is because of the outage."
+    - content: "After you fail over, the data is still protected with geo-replication."
+      isCorrect: false
+      explanation: "The storage account is updated to use locally redundant storage (LRS). You'll need to update the replication type to geo-redundant storage like geographically redundant storage (GRS) or GZRS."

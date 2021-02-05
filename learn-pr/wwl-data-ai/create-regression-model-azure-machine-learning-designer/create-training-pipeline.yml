@@ -3,10 +3,10 @@ uid: learn.wwl.create-regression-model-azure-machine-learning-designer.create-tr
 title: Create and run a training pipeline
 metadata:
   title: Create and run a training pipeline
-  description: "Let's use Azure machine Learning designer to train and publish a regression model."
-  ms.date: 07/30/2020
+  description: "Create and run a training pipeline"
+  ms.date: 01/21/2021
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

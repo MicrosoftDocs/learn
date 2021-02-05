@@ -81,7 +81,7 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
     }
     ```
 
-1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell.
+1. Finally, create the `Clothing` container with the `cosmosdb container create` command in the Cloud Shell.
 
     ```azurecli
     az cosmosdb sql container create \

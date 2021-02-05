@@ -3,8 +3,8 @@ uid: learn.wwl.work-with-data-in-aml.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge"
-  ms.date: 07/16/2020
+  description: "Knowledge check"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,25 +13,36 @@ azureSandbox: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "You've uploaded some data files to a folder in a blob container, and registered the blob container as a datastore in your Azure Machine Learning workspace. You want to run a script as an experiment that loads the data files and trains a model. What should you do?"
+  - content: "You have a reference to a Workspace named ws. Which code retrieves the default datastore for the workspace?"
     choices:
-    - content: "Save the experiment script in the same blob folder as the data files."
+    - content: "default_ds = Datastore.get(ws, 'default')"
       isCorrect: false
-      explanation: "That is incorrect. To access a path in a datastore in an experiment script, you must create a data reference and pass it to the script as a parameter. The script can then read data from the data reference parameter just like a local file path."
-    - content: "Create a data reference for the datastore location and pass it to the script as a parameter."
+      explanation: "That is incorrect. To get the default datastore, use the get_default_datastore method of the Workspace."
+    - content: "default_ds = ws.Datastores[0]"
+      isCorrect: false
+      explanation: "That is incorrect. To get the default datastore, use the get_default_datastore method of the Workspace."
+    - content: "default_ds = ws.get_default_datastore()"
       isCorrect: true
-      explanation: "That is correct. To access a path in a datastore in an experiment script, you must create a data reference and pass it to the script as a parameter. The script can then read data from the data reference parameter just like a local file path."
-    - content: "Create global variables for the Azure Storage account name and key in the experiment script."
-      isCorrect: false
-      explanation: "That is incorrect. To access a path in a datastore in an experiment script, you must create a data reference and pass it to the script as a parameter. The script can then read data from the data reference parameter just like a local file path."
-  - content: "You've registered a dataset in your workspace. You want to use the dataset in an experiment script that is run using an estimator. What should you do?"
+      explanation: "That is correct. To get the default datastore, use the get_default_datastore method of the Workspace."
+  - content: "A datastore contains a CSV file of structured data that you want to use as a Pandas dataframe. Which kind of object should you create to make it easy to do this?"
     choices:
-    - content: "Pass the dataset as a named input to the estimator."
+    - content: "A datastore."
+      isCorrect: false
+      explanation: "That is incorrect. A tabular dataset provides the easiest way to consume structured data as a Pandas dataframe."
+    - content: "A tabular dataset."
       isCorrect: true
-      explanation: "That is correct. To access a dataset in an experiment script, pass the dataset as a named input to the estimator."
-    - content: "Create a data reference for the datastore location where the dataset data is stored, and pass it to the script as a parameter."
+      explanation: "That is correct. A tabular dataset provides the easiest way to consume structured data as a Pandas dataframe."
+    - content: "A file dataset."
       isCorrect: false
-      explanation: "That is incorrect. To access a dataset in an experiment script, pass the dataset as a named input to the estimator."
-    - content: "Use the dataset to save the data as a CSV file in the experiment script folder before running the experiment."
+      explanation: "That is incorrect. A tabular dataset provides the easiest way to consume structured data as a Pandas dataframe."
+  - content: "You want a script to stream data directly from a file dataset. Which mode should you use?"
+    choices:
+    - content: "as_mount()"
+      isCorrect: true
+      explanation: "That is correct. To stream data directly from its source, use the as_mount mode."
+    - content: "as_download()"
       isCorrect: false
-      explanation: "That is incorrect. To access a dataset in an experiment script, pass the dataset as a named input to the estimator."
+      explanation: "That is incorrect. To stream data directly from its source, use the as_mount mode."
+    - content: "as_upload()"
+      isCorrect: false
+      explanation: "That is incorrect. To stream data directly from its source, use the as_mount mode."

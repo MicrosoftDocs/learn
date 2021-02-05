@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.install-code-tools-python-nasa.3-visual-studio-code
+metadata:
+  title: Discover the power to solve problems using Visual Studio Code
+  description: Learn what Visual Studio Code is.
+  ms.date: 07/20/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover the power to solve problems using Visual Studio Code
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-visual-studio-code.md)]

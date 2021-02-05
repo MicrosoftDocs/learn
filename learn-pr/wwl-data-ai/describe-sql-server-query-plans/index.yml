@@ -2,10 +2,10 @@
 uid: learn.wwl.describe-sql-server-query-plans
 metadata:
   title: Describe SQL Server query plans
-  description: "Read and understand various forms of execution plans. Compare estimated vs actual plans. Learn how and why plans are generated."
-  ms.date: 08/06/2020
+  description: "Describe SQL Server query plans"
+  ms.date: 02/01/2021
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe SQL Server query plans
@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Basic understanding of structure and usage of SQL Server indexes.
   - Basic understanding of relational database concepts.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/describe-sql-server-query-plans.svg
 levels:
 - intermediate
 roles:
@@ -33,6 +33,7 @@ units:
 - learn.wwl.describe-sql-server-query-plans.describe-types-of
 - learn.wwl.describe-sql-server-query-plans.explain-estimated-actual
 - learn.wwl.describe-sql-server-query-plans.identify-problematic
+- learn.wwl.describe-sql-server-query-plans.exercise-identify-issues-database-design
 - learn.wwl.describe-sql-server-query-plans.knowledge-check
 - learn.wwl.describe-sql-server-query-plans.summary
 badge:

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-network-infrastructure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator at Contoso wants to enable communications between a number of Azure VMs he's planning to create and deploy. Which of the following solutions represents the simplest way for these VMs to be able to communicate with one another?"
+    choices:
+    - content: "The administrator should connect the network interfaces of each VM to the same VNet."
+      isCorrect: true
+      explanation: "That's correct. By placing the VMs on the same VNet, they can automatically communicate with each other."
+    - content: "The administrator should connect the network interfaces of each VM to a different VNet."
+      isCorrect: false
+      explanation: "That's incorrect. This solution might require additional configuration to enable communications."
+    - content: "The administrator must configure a subnet extension to enable communications between the VMs."
+      isCorrect: false
+      explanation: "That's incorrect. Subnet extension enables you to extend a subnet to encompass workloads in both an on-premises subnet and an Azure subnet. Because all VMs are in Azure, this step is unnecessary."
+  - content: "An administrator wants to deploy an Azure VPN but is uncertain of the type required. She wants to enable communications from users back to Azure resources. What type of VPN should she implement?"
+    choices:
+    - content: "She should implement a S2S VPN solution."
+      isCorrect: false
+      explanation: "That's incorrect. You use S2S connections to support cross-premises and hybrid configurations."
+    - content: "She should implement a P2S VPN."
+      isCorrect: true
+      explanation: "That's correct. A P2S VPN connection enables users to connect to your organization from a remote network, such as their home or a public Wi-Fi hotspot."
+    - content: "She should implement a multi-site VPN."
+      isCorrect: false
+      explanation: "That's incorrect. A multi-site connection is a variation of the S2S connection. You use both S2S and multi-site connections to support cross-premises and hybrid configurations"
+  - content: "What is Microsoft peering?"
+    choices:
+    - content: "It provides a direct connection from your on-premises network to an Azure datacenter."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
+    - content: "It enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
+      isCorrect: true
+      explanation: "That's correct."
+    - content: "It provides a connection between your on-premises network and an ExpressRoute provider."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."

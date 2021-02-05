@@ -1,4 +1,4 @@
-The Query Store provides database administrators with in-depth insights on query plans and performance metrics. By default, execution plans evolve over time due to schema changes, index modifications, or changes to the data that cause updates to the statistics. This evolution can cause queries to perform poorly as the execution plan no longer meets the demands of the given query. As mentioned earlier in the module, the Query Store in Azure SQL features a plan forcing option to always force a given execution plan.
+The Query Store provides database administrators with in-depth insights on query plans and performance metrics. By default, execution plans evolve over time due to schema changes, index modifications, or changes to the data that cause updates to the statistics. This evolution can cause queries to perform poorly as the execution plan no longer meets the demands of the given query. The Query Store in Azure SQL features a plan forcing option to always force a given execution plan.
 
 ### Automatic tuning features
 
@@ -6,7 +6,7 @@ SQL Server 2017 introduced a feature called automatic tuning. Automatic tuning a
 
 ### Automatic plan correction
 
-Using Query Store, the database engine can identify when query execution plans have regressed in their performance. While you can manually identify a regressed plan through the user interface, the Query Store also provides the option to notify you automatically. 
+Using Query Store, the database engine can identify when query execution plans have regressed in their performance. While you can manually identify a regressed plan through the user interface, the Query Store also provides the option to notify you automatically.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-25.png" alt-text="Query Store view of Automatic Plan Correction":::
 
@@ -20,7 +20,7 @@ You can enable automatic plan correction via a T-SQL query, as shown below. The 
 ALTER DATABASE [WideWorldImporters] SET AUTOMATIC_TUNING (FORCE_LAST_GOOD_PLAN = ON);
 ```
 
-You can examine the automatic tuning recommends through a dynamic management view (DMV), *sys.dm_db_tuning_recommendations*, which is available in SQL Server 2017 or higher and is also available in Azure SQL Database solutions. This DMV provides information such as reasons as to why the recommendation was provided, the type of recommendation, the state of the recommendation, as well as others. To confirm that automatic tuning is enabled for a database, there is a DMV sys.*database_automatic_tuning_options* that can be queried.
+You can examine the automatic tuning recommendations through a dynamic management view (DMV), *sys.dm_db_tuning_recommendations*, which is available in SQL Server 2017 or higher and is also available in Azure SQL Database solutions. This DMV provides information such as reasons as to why the recommendation was provided, the type of recommendation, the state of the recommendation, as well as others. To confirm that automatic tuning is enabled for a database, there is a DMV sys.*database_automatic_tuning_options* that can be queried.
 
 ### Automatic index management
 

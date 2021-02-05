@@ -1,10 +1,10 @@
 Key Vault access has two facets: the management of the Key Vault itself, and accessing the data contained in the Key Vault. Documentation refers to these facets as  the _management plane_ and the _data plane_.
 
-These two areas are separated because the creation of the Key Vault (a management operation) is a different role than storing and retrieving a secret stored in the Key Vault. To access a key vault, all users or applications must have proper _authentication_ to identify the caller, and _authorization_ to determine the operations the caller can perform.
+These two areas are separated because the creation of the Key Vault (a management operation) is a different role than storing and retrieving a secret stored in the Key Vault. To access a key vault, all users or apps must have proper _authentication_ to identify the caller, and _authorization_ to determine the operations the caller can perform.
 
 ## Authentication
 
-Azure Key Vault uses Azure Active Directory to authenticate users and applications that try to access a vault. Authentication is always performed by associated the Azure AD tenant of the subscription that the Key Vault is part of and every user or app making a request must be known to the AAD. There is no support for anonymous access to a Key Vault.
+Azure Key Vault uses Azure Active Directory (Azure AD) to authenticate users and apps that try to access a vault. Authentication is always performed by associating the Azure AD tenant of the subscription that the Key Vault is part of, and every user or app making a request having to be known to Azure AD. There is no support for anonymous access to a Key Vault.
 
 ## Authorization
 
@@ -18,7 +18,7 @@ The system has a list of predefined management options that define the permissio
 
 ![Screenshot showing the permission list cut down to read only in the Azure portal](../media/3-permissions.png)
 
-Developers will only need `Get` and `List` permissions to a development-environment vault. A lead or senior developer will need full permissions to the vault to change and add secrets when necessary. Full permissions to production-environment vaults are typically reserved for senior operations staff. For applications, often only `Get` permissions are required as they will just need to retrieve secrets.
+Developers will only need `Get` and `List` permissions to a development-environment vault. A lead or senior developer will need full permissions to the vault to change and add secrets when necessary. Full permissions to production-environment vaults are typically reserved for senior operations staff. For apps, often only `Get` permissions are required as they will just need to retrieve secrets.
 
 ## Restricting network access
 

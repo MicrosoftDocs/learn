@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-network-infrastructure.implement-dns-hybrid-environments
+title: Implement DNS in hybrid environments
+metadata:
+  title: Implement DNS in hybrid environments
+  description: Implement DNS in hybrid environments
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-implement-domain-name-system-hybrid-environments.md)]

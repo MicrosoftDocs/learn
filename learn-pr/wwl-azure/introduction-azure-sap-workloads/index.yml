@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-azure-sap-workloads
 metadata:
   title: Introduction to Azure for SAP workloads
   description: "With the recently expanded partnership between Microsoft and SAP, you can run SAP applications across development, test, and production scenarios in Azure, taking advantage of the scalability, flexibility, and cost savings of Microsoft Azure."
-  ms.date: 01/10/2020
+  ms.date: 10/28/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

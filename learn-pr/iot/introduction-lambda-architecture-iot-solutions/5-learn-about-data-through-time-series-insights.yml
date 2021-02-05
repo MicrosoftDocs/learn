@@ -5,7 +5,7 @@ metadata:
   description: Describes how an Azure Time Series Insights resource provides ways to visualize and make sense of incoming data.
   ms.date: 12/20/2019
   author: olivierbloch
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about data through Time Series Insights

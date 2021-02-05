@@ -17,8 +17,13 @@ abstract: |
   - Learn how encryption capabilities built into Azure can protect your data
   - Learn how to protect your network and virtual networks
   - Learn about advanced services and features Azure provides to keep your services and data secure and safe
+  > [!NOTE]
+  > This module has been updated to [Protect against security threats on Azure](https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/).
+  > 
+  > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
 prerequisites: None
 iconUrl: /learn/achievements/intro-to-security-in-azure.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -26,7 +31,6 @@ roles:
 - administrator
 - solution-architect
 - security-engineer
-- student
 products:
 - azure
 - azure-active-directory

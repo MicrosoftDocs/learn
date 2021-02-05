@@ -19,10 +19,11 @@ quiz:
       isCorrect: false
       explanation: "Use of webservices won't help ."
     - content: "The company could use specific libraries per environment."
-      isCorrect: false
-      explanation: "The company could use containers."
       isCorrect: true
       explanation: "The use of libraries helps managing dependencies"
+    - content: "The company could use containers."
+      isCorrect: false
+      explanation: "Use of containers won't help ."
   - content: "The workflow for deploying models in production is:"
     choices:
     - content: "Register the model - Prepare to deploy - Deploy the model to the compute target - Test the deployed model as a web service."

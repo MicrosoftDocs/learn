@@ -6,10 +6,9 @@ metadata:
   description: Understand the Streaming Analytics Workflow
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
   [!include[](includes/2-stream-analytics-workflow.md)]

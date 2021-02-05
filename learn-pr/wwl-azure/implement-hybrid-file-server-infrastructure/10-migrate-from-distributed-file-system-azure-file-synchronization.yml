@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-file-server-infrastructure.migrate-from-dfsr-to-azure-file-sync
+title: Migrate from DFSR to Azure File Sync
+metadata:
+  title: Migrate from DFSR to Azure File Sync
+  description: "Migrate from DFSR to Azure File Sync"
+  ms.date: 11/27/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-migrate-from-distributed-file-system-azure-file-synchronization.md)]

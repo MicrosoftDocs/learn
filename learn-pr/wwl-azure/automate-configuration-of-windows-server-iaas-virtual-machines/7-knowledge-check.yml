@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements best describes Azure Automation State Configuration?"
+    choices:
+    - content: "A declarative management platform to configure, deploy, and control systems."
+      isCorrect: false
+      explanation: "That's incorrect. PowerShell DSC is a declarative management platform to configure, deploy, and control systems."
+    - content: "A service used to write, manage, and compile PowerShell DSC configurations, import DSC resources, and assign configurations to target nodes."
+      isCorrect: true
+      explanation: "That's correct. Azure Automation State Configuration enables you to ensure that all the VMs in a collection are in the same consistent state."
+    - content: "A service that manages the state configuration on each destination, or node."
+      isCorrect: false
+      explanation: "That's incorrect. The LCM is responsible for updating the configuration to match the desired state on a node."
+  - content: "Why should Contoso use pull mode instead of push mode for DSC?"
+    choices:
+    - content: "Pull mode is best for complex environments that need redundancy and scale."
+      isCorrect: true
+      explanation: "That's correct. The LCM on each node automatically polls the pull server at regular intervals to get the latest configuration details. In push mode, an administrator manually sends the configurations toward the nodes."
+    - content: "Pull mode is easy to set up and doesn't need its own dedicated infrastructure."
+      isCorrect: false
+      explanation: "That's incorrect. Push mode is easy to set up and doesn't need its own dedicated infrastructure."
+    - content: "Pull mode uses the LCM to make sure that the state on each node matches the state specified by the configuration."
+      isCorrect: false
+      explanation: "That's incorrect. Both pull mode and push mode use the LCM. The LCM is responsible for updating the configuration to match the desired state on a node."
+  - content: "When you onboard servers with Azure Automation State Configuration, you set the configuration mode to one of the following. Which should you choose to enable remediation for servers so that they remain compliant automatically?"
+    choices:
+    - content: "ApplyOnly."
+      isCorrect: false
+      explanation: "That's incorrect. Choosing this option requires you to manually remediate noncompliant servers."
+    - content: "ApplyandMonitor."
+      isCorrect: false
+      explanation: "That's incorrect. Choosing this option requires you to manually remediate noncompliant servers."
+    - content: "ApplyAndAutoCorrect."
+      isCorrect: true
+      explanation: "That's correct. With this option, servers that drift from a compliant state are auto-remediated."

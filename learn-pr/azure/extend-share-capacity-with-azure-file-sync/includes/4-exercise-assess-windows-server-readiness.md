@@ -2,19 +2,23 @@ You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Ser
 
 Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. You'll run the evaluation cmdlets to produce a report.
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 The following video shows how to do the assessment on your on-premises server. Follow the steps in this exercise to complete the assessment on a virtual machine that you create in your Azure subscription.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit4/player?format=ny]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LpZg]
 
 ## Create a Windows file server
 
 You'd normally install Azure File Sync on your on-premises server. For this exercise, you'll create an Azure virtual machine (VM) to act as your Windows file server.
 
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. From the menu bar on the top right-hand side, open **Cloud Shell**.
 1. Run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
 
     ```powershell
-    $resourceGroup = 'learn-file-sync-rg' `
-    $location = 'EastUS' `
+    $resourceGroup = 'learn-file-sync-rg'
+    $location = 'EastUS'
     New-AzResourceGroup -Name $resourceGroup -Location $location
     ```
 
@@ -33,7 +37,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Name Syncvnet `
     -AddressPrefix 10.0.0.0/16 `
     -Location $location `
-    -ResourceGroupName $resourceGroup`
+    -ResourceGroupName $resourceGroup `
     -Subnet $subnetConfig
 
     ```

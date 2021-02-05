@@ -4,9 +4,9 @@ title: Exercise - Analyze images with the Computer Vision service
 metadata:
   title: Exercise - Analyze images with the Computer Vision service
   description: "Get hands-on with the Computer Vision service"
-  ms.date: 07/30/2020
+  ms.date: 09/13/2020
   author: benjiang
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

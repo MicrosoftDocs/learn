@@ -3,8 +3,8 @@ uid: learn.data-ai.register-and-deploy-model-with-amls.troubleshoot-deployment
 title: Troubleshooting service deployment
 metadata:
   title: Troubleshooting service deployment
-  description: "Learn how to troubleshoot issues when deploying a model as a real-time service."
-  ms.date: 07/16/2020
+  description: "Troubleshooting service deployment"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

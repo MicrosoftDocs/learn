@@ -3,10 +3,10 @@ uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.create-co
 title: Create compute resources
 metadata:
   title: Create compute resources
-  description: "Learn about clustering algorithms that you can use to train a clustering model."
-  ms.date: 07/30/2020
+  description: "Create compute resources"
+  ms.date: 01/21/2021
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

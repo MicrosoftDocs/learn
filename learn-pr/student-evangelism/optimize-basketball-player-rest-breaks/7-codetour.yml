@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.7-codetour
+metadata:
+  title: Use CodeTour to build your web app functionality
+  description: Use CodeTour to build your web app functionality
+  ms.date: 12/14/2020
+  author: sguthals 
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use CodeTour to build your web app functionality
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-codetour.md)]

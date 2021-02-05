@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You want to start up a data platform service to execute as Spark job to ingest and process data and then shut down the service after the job is complete. What would be the best compute resource to use?"
+    choices:
+    - content: "On-demand HDInsight cluster."
+      isCorrect: true
+      explanation: "Correct. On-demand HDInsight cluster service to execute as Spark job to ingest and process data and then shut down the service after the job is complete."
+    - content: "HDInsight."
+      isCorrect: false
+      explanation: "Incorrect. Whilst HDInsight can be used to execute as Spark job to ingest and process data, it will not shut down after the job is complete."
+    - content: "Azure Databricks."
+      isCorrect: false
+      explanation: "Incorrect. Whilst Azure Databricks can be used to execute as Spark job to ingest and process data, it will not shut down after the job is complete."
+  - content: "In Azure Data Factory authoring tool, where would you find the Copy data activity?"
+    choices:
+    - content: "Move & Transform"
+      isCorrect: true
+      explanation: "Correct. The Move & Transform section contains activities that are specific to Azure Data Factory copying data and defining data flows."
+    - content: "Batch Service"
+      isCorrect: false
+      explanation: "Incorrect. The Batch Service section contains activities that are specific to Azure Data Factory interacting with Azure Batch activities."
+    - content: "Databricks"
+      isCorrect: false
+      explanation: "Incorrect. The Databricks section contains activities that are specific to Azure Data Factory interacting with Azure Databricks."
+  - content: "You want to ingest data from a SQL Server database hosted on an on-premises Windows Server. What integration runtime is required for Azure Data Factory to ingest data from the on-premises server?"
+    choices:
+    - content: "Azure-SSIS Integration Runtime"
+      isCorrect: false
+      explanation: "Incorrect. The Azure-SSIS Integration Runtime is used when you need to integrate deployed SSIS packages into Azure Data Factory."
+    - content: "Self-Hosted Integration Runtime"
+      isCorrect: true
+      explanation: "Correct. A self-hosted integration runtime can run copy activities between a cloud data store and a data store in a private network. It also can dispatch transform activities against compute resources in an on-premises network or an Azure virtual network."
+    - content: "Azure Integration Runtime"
+      isCorrect: false
+      explanation: "Incorrect. Azure IR provides a fully managed compute to natively perform data movement and dispatch data transformation activities to compute services."
+  - content: "By default, how long are the Azure Data Factory diagnostic logs retained for?"
+    choices:
+    - content: "15 days"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Data Factory diagnostic logs are retained for 45 days."
+    - content: "30 days"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Data Factory diagnostic logs are retained for 45 days."
+    - content: "45 days"
+      isCorrect: true
+      explanation: "Correct. The Azure Data Factory diagnostic logs are retained for 45 days."

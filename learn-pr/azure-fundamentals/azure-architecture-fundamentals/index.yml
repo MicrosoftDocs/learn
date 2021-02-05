@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.azure-architecture-fundamentals
+metadata:
+  title: Describe core Azure architectural components (AZ-900)
+  description: Learn about Azure subscriptions, management groups, resource groups, Azure Resource Manager, Azure regions, and availability zones. Prepare for AZ-900.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe core Azure architectural components
+summary: In this module, you'll examine the various concepts, resources, and terminology that are necessary to work with Azure architecture. For example, you'll learn about Azure subscriptions and management groups, resource groups and Azure Resource Manager, as well as Azure regions and availability zones.
+abstract: | 
+  After completing this module, you'll be able to describe the benefits and usage of:
+  - Azure subscriptions and management groups.
+  - Azure resources, resource groups, and Azure Resource Manager.
+  - Azure regions, region pairs, and availability zones.
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
+iconUrl: /learn/achievements/azure-architecture-fundamentals.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+- student
+products:
+- azure
+- azure-resource-manager
+units:
+- learn.azure.azure-architecture-fundamentals.introduction
+- learn.azure.azure-architecture-fundamentals.overview
+- learn.azure.azure-architecture-fundamentals.management-groups-subscriptions
+- learn.azure.azure-architecture-fundamentals.resources-resource-manager
+- learn.azure.azure-architecture-fundamentals.regions-availability-zones
+- learn.azure.azure-architecture-fundamentals.exercise-create-website
+- learn.azure.azure-architecture-fundamentals.knowledge-check
+- learn.azure.azure-architecture-fundamentals.summary
+badge:
+  uid: learn.azure.azure-architecture-fundamentals.badge

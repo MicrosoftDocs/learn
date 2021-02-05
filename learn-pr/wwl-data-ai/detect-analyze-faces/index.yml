@@ -2,10 +2,10 @@
 uid: learn.wwl.detect-analyze-faces
 metadata:
   title: Detect and analyze faces with the Face service
-  description: "Face detection, analysis, and recognition is an important capability for artificial intelligence (AI) solutions. The Face cognitive service in Azure makes it easy integrate these capabilities into your applications."
-  ms.date: 07/30/2020
+  description: "Detect and analyze faces with the Face service"
+  ms.date: 01/18/2021
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Detect and analyze faces with the Face service

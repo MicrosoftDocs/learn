@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.fundamental-azure-concepts.types-of-cloud-computing
+title: Describe the different types of cloud computing
+metadata:
+  title: Describe the different types of cloud computing
+  description: In this unit, you'll learn about the different types of cloud computing.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/types-of-cloud-computing.md)]

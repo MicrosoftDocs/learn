@@ -4,12 +4,12 @@ title: Describe Active Directory and Azure Active Directory
 metadata:
   title: Describe Active Directory and Azure Active Directory
   description: "Describe Active Directory and Azure Active Directory"
-  ms.date: 08/02/2020
+  ms.date: 12/30/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-active-directory.md)]

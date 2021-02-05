@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-configuration-aspnet-core.6-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 11/23/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What's the key abstraction that supports the configuration system in ASP.NET Core apps?
+      choices:
+        - content: Feature Management library
+          isCorrect: false
+          explanation: "The Feature Management library provides standardized .NET APIs for managing feature flags within apps."
+        - content: Configuration provider
+          isCorrect: true
+          explanation: "A configuration provider is an abstraction over a specific configuration source, such as a JSON file. Configuration in an ASP.NET Core project is supported by one or more .NET Core configuration providers."
+        - content: ConfigMap
+          isCorrect: false
+          explanation: "ConfigMap is an API object used to manage configuration in Kubernetes. It stores data in a collection of plain-text key-value pairs."
+        - content: Azure App Configuration
+          isCorrect: false
+          explanation: "Azure App Configuration is a centralized configuration service useful in microservices apps. In an ASP.NET Core app, Azure App Configuration is registered as another configuration provider."
+    - content: "The Feature Management library's `<feature>` Tag Helper serves what purpose in ASP.NET Core Razor views?"
+      choices:
+        - content: The `<feature>` tag is irrelevant to ASP.NET Core Razor views. It's used in an Angular view to render content based on a feature's state.
+          isCorrect: false
+          explanation: "`<feature>` tags are a feature specific to ASP.NET Core Razor pages that help render content based on a feature's state."
+        - content: The `<feature>` tag conditionally renders content based on a feature's state in ASP.NET Core Razor views.
+          isCorrect: true
+          explanation: "The `<feature>` tag can also be used to show content if any or all features in a list are enabled. To display alternate content when the requirements aren't met, the `negate` attribute can be used."
+        - content: "The `<feature>` tag defines a new feature flag, in the Razor markup, to be used in Azure App Configuration."
+          isCorrect: false
+          explanation: "Feature flags are defined either with the Feature Management library or in Azure App Configuration."
+        - content: "The `<feature>` tag defines a new feature flag, in the project file, to be used in Azure App Configuration."
+          isCorrect: false
+          explanation: "The `<feature>` tag is only recognized in ASP.NET Core Razor view (*.cshtml) files."
+    - content: Which of the following statements is **NOT** true about Azure App Configuration?
+      choices:
+        - content: App Configuration provides a service to centrally manage app settings and feature flags.
+          isCorrect: false
+          explanation: "A centralized configuration service is especially useful in apps that are distributed in nature. Use App Configuration to store all the settings for your app and secure their accesses in one place."
+        - content: The easiest way to add an App Configuration store to your .NET Core app is through a client library provided by Microsoft.
+          isCorrect: false
+          explanation: "The NuGet package `Microsoft.Azure.AppConfiguration.AspNetCore` can be added to your projects to configure the Azure Configuration provider for your ASP.NET Core app."
+        - content: App Configuration doesn't encrypt your app settings at rest.
+          isCorrect: true
+          explanation: "App Configuration encrypts all key values it holds, and it encrypts network communication. Key names and labels are used as indices for retrieving configuration data and aren't encrypted."
+        - content: App Configuration can be integrated with the .NET Feature Management library.
+          isCorrect: false
+          explanation: "Though it's decoupled from the Feature Management library, App Configuration does easily integrate with the library."

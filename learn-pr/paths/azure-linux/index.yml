@@ -13,7 +13,7 @@ title: Linux on Azure
 summary: |
   This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
 
-  This learning path should be explored alongside the [Azure Fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals/) learning path. If you're new to cloud computing, consider taking the first few modules from the Azure Fundamentals path first.
+  This learning path should be explored alongside the [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) learning path. If you're new to cloud computing, consider taking the first learning path in the Azure Fundamentals 6-part learning path series first.
 prerequisites: None
 iconUrl: /learn/achievements/azure-linux.svg
 levels:
@@ -25,16 +25,17 @@ roles:
 products:
 - azure
 modules:
-- learn.principles-cloud-computing
+- learn.azure.fundamental-azure-concepts
 - learn.azure.intro-to-azure-linux
 - learn.introduction-to-azure-virtual-machines
 - learn.create-linux-vm-in-azure
-- learn.control-and-organize-with-resource-manager
+- learn.azure.azure-architecture-fundamentals
 - learn.design-your-migration-to-azure
 - learn-sqlserver.introduction-sql-server-linux
 - learn.wwl.introduction-open-source-database-migration-azure
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
 - learn.host-a-web-application-with-azure-web-apps
+- learn.optimize-web-app-with-redis
 - learn.create-serverless-logic-with-functions
 - learn.intro-to-azure-kubernetes-service
 - learn.run-docker-containers-aci

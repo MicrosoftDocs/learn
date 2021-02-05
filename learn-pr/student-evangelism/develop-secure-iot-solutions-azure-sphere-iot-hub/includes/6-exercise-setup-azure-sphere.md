@@ -1,163 +1,156 @@
-Connect your Azure Sphere dev kit to your PC through USB. When plugged in, the device exposes three COM ports. Open Device Manager on PC and make sure that three COM ports are installed. COM ports may be different from those in the figure.
+Install the following software on your computer.
 
-![The illustration shows COM ports in Device Manager.](../media/comports.png)
+## Troubleshooting
 
-Alternatively, you can download the drivers from [Future Technology Devices International](https://www.ftdichip.com/Drivers/VCP.htm) ([FTDI](https://www.ftdichip.com/Drivers/VCP.htm)). Choose the driver that matches your Windows installation (32-bit or 64-bit).
+1. If you have trouble connecting to the Azure Sphere over USB be sure to disable any VPNs you might have enabled.
+2. The **TAP-Windows Adapter V9** installed with VPN clients, including OpenVPN client is not compatible with the **TAP-Windows Adapter V9** required and installed by the Azure Sphere SDK. You will need to uninstall the VPN client and reinstall the Azure Sphere SDK for Visual Studio.
 
-## Install Azure Sphere SDK
+## Azure Sphere SDK version
 
-1. [Download the SDK](https://aka.ms/AzureSphereSDKDownload). Save the downloaded file on your PC.
-2. Run the downloaded .exe to install the SDK. Agree to the license terms, and then select **Next**.
-3. Select **Install** to begin installation.
-4. Accept the elevation prompt if one appears.
-5. When setup completes, restart your PC if the setup application requests it.
+This learning module requires Azure Sphere SDK version 20.11 or newer.
 
-## Sign in to Azure Sphere
+## Windows 10 users
 
-1. Press the Windows Key and type **Azure Sphere Developer Command prompt**.
+This learning module supports developers on Linux and Windows using Visual Studio Code. However, if you are a Windows user comfortable using Visual Studio then you can still complete the exercises appreciating that the IDE screenshots included in this module will be different.
 
-2. Select and start the **Azure Sphere Developer Command Prompt**.
+You need to do the following:
 
-3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace `<email@address.com>` with your account and run the command.
+1. Install the latest Azure Sphere SDK.
+1. Install CMake and Ninja.
+1. Install Visual Studio Code.
+1. Install the Visual Studio Code Azure Sphere extension.
+1. Claim your device.
+1. Configure networking for the device.
 
-   ```
-   azsphere login --newuser <email@address.com>
-   ```
+The following [Quickstart: Install the Azure Sphere SDK for Windows](https://docs.microsoft.com/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
 
-   Type the following command to sign in to Azure Sphere using a Microsoft account.
+### Install the Git client for Windows
 
-   ```
-   azsphere login
-   ```
+The Git client is required to clone the Learning Path Labs and the Azure Sphere SDK Samples.
 
-## Create a new tenant
+Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
 
-> [!NOTE]
-> If you have access to single tenant or multiple tenants, you can proceed to the next step.
+### Install Azure IoT Explorer for Windows
 
-1. Now that you have successfully logged in, you'll create a new tenant. Type the following command. Replace <tenant_name> with name that other users can recognize. You can create only one Azure Sphere tenant with each device.
+This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices.
 
-   ```
-   azsphere tenant create -n <tenant_name>
-   ```
+**Download** and install the latest Azure IoT Explorer **.msi** package from the [Azure IoT explorer releases](https://github.com/Azure/azure-iot-explorer/releases?azure-portal=true) GitHub page.
 
-2. After that, you'll be prompted to log in again for the Azure Sphere Tenant credentials.
+### Install the GNU Arm Embedded Toolchain for Windows
 
-## Select the default Azure Sphere tenant
+1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true) for Windows.
+2. Install the GNU Arm Embedded Toolchain
 
-1. If you have access to a single tenant, it will be selected by default.
+## Ubuntu 18.04 or 20.04 LTS users
 
-   If you have access to more than one tenant, run the following command to list Azure Sphere Tenants.
+You need to do the following:
 
-   ```
-   azsphere tenant list
-   ```
+1. Install the Azure Sphere SDK.
+    **Ensure you install the new Azure Sphere CLI v2**.
+1. Set up the device connection.
+1. Install CMake and Ninja.
+1. Install Visual Studio Code.
+1. Install the Visual Studio Code Azure Sphere extension.
+1. Claim your device.
+1. Configure networking for the device.
 
-2. Copy the ID from the list above and replace <tenant_id> with it. Run the following command to set the default tenant.
+The following [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.microsoft.com/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
 
-   ```
-   azsphere tenant select -i <tenant_id>
-   ```
+### Install the Git client for Linux
 
-## Claim your device
+The Git client is required to clone the Learning Path Labs and the Azure Sphere SDK Samples.
 
-> [!NOTE]
-> If you have already claimed your Azure Sphere, you can proceed to the next step.
+```bash
+sudo apt install git
+```
 
-- Run the following command to claim the device.
+### Install Azure IoT Explorer for Ubuntu
 
-   ```
-   azsphere device claim
-   ```
+This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices.
 
-> [!NOTE]
-> Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
+**Download** and install the latest Azure IoT Explorer **.deb** package from the [Azure IoT explorer releases](https://github.com/Azure/azure-iot-explorer/releases?azure-portal=true) GitHub page.
 
-## Configure the Azure Sphere WiFi network
+### Install the GNU Arm Embedded Toolchain for Linux
 
-You'll configure the Azure Sphere for networking. Hence, you can receive cloud updates from the Azure Sphere Security Service and communicate with services such as an Azure IoT Hub.
+Install the GNU Arm Embedded Toolchain for Linux
 
-1. Scan for WiFi Access Points using the command as follow.
+1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true). At the time of writing this is *Version 10-2020-q4-major*.
+2. Install the downloaded package. The following installs the toolchain in the /opt directory.
 
-   ```
-   azsphere device wifi scan
-   ```
+    ```bash
+    sudo tar -xjvf gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2 -C /opt
+    ```
 
-2. Run the following command to add your Wi-Fi network to the device. Replace <yourwifissid> with the name of your network and replace <yourwifipassword> with your network password.
+3. Update your path. Open ~/.bashrc and add to the end.
 
-   ```
-   azsphere device wifi add -s <yourwifissid> -p <yourwifipassword>
-   ```
+    ```bash
+    export PATH=$PATH:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin
+    ```
 
-3. Run the following command to check your Wi-Fi connection status.
+4. Optional: The real-time core debugger relies on the *libncurses.so.5* library. Depending on your system setup, this library may already be install, if not, then run the following commands.
 
-   ```
-   azsphere device wifi show-status
-   ```
+    ```bash
+    sudo add-apt-repository universe
+    sudo apt-get install libncurses5
+    ```
 
-## Update Azure Sphere OS
+## Recommended Visual Studio Code extension
 
-1. Run the following command to check the device OS version.
+The Peacock extension allows you to change the color of your Visual Studio Code workspace. The Peacock extension is useful when you have multiple instances of Visual Studio Code open. In one of the exercises an instance of Visual Studio Code will be attached to the real-time core, and another instance will be attached to the high-level application core.
 
-   ```
-   azsphere device show-os-version
-   ```
+   1. Open Extensions sideBar panel in Visual Studio Code
+      - Or choose the menu options for View → Extensions
+   1. Search for Peacock
+   1. Click Install
+   1. Click Reload, if required
 
-2. If the device isn't up to date, run the following command to restart to trigger the update process.
+## Delete existing applications on Azure Sphere
 
-   ```
-   azsphere device restart
-   ```
-
-3. It will take a few minutes for the update to be applied. Then recheck the OS version.
-
-   ```
-   azsphere device show-os-version
-   ```
-
-4. Run the following command to check that the WiFi network connection is active after updating OS.
-
-   ```
-   azsphere device wifi show-status
-   ```
-
-## Delete any existing applications on the Azure Sphere
-
-1. Run the following command to delete existing application on the device.
+1. From the Windows **PowerShell command line** or Linux **Terminal**, run the following command to delete any existing applications on the device.
 
    ```
    azsphere device sideload delete
    ```
 
-2. Restart the Azure Sphere.
+2. Restart Azure Sphere.
 
    ```
    azsphere device restart
    ```
 
-## Enable High-Level core device debugging
+## Enable high-level core development
 
-- Run the following command to enable app development on device.
+1. From the Windows **PowerShell command line** or Linux **Terminal**, run the following command to enable high-level app development on the device.
 
    ```
    azsphere device enable-development
    ```
 
-## Clone the Azure Sphere Learning Path
+## Enable real-time core development
+
+### Windows 10 users
+
+1. Open the Windows **PowerShell command line** as **Administrator**, and run the following command to enable real-time core development on the device.
+
+   ```
+   azsphere device enable-development -r
+   ```
+
+2. Close the Windows **PowerShell command line**
+
+### Linux users
+
+1. Open the Linux **Terminal** and run the following command to enable real-time core development on the device.
+
+   ```bash
+   azsphere device enable-development -r
+   ```
+
+## Clone the Azure Sphere Developer Learning Path
 
 > [!NOTE]
-> On Windows, clone the *Azure Sphere Learning Path* to a directory close to the root directory on your computer. For example **c:\lab**. The reason is the Azure Sphere build process uses CMake which does not support Windows 10 long path/folder names.
+> Clone the *Azure Sphere Developer Learning Path* to a directory close to the root directory on your computer. For example, **c:\lab**, or **~/**. The reason is that the Azure Sphere build process uses CMake which can struggle with long path and directory names.
 
 ```
-git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git
-```
-
-## Clone the Azure Sphere Samples
-
-The Azure Sphere samples repository includes a tool required for listing IoT Central network endpoints.
-
-Clone this repository into the same directory you cloned the Azure Sphere Developer Learning Path into.
-
-```
-git clone https://github.com/Azure/azure-sphere-samples.git
+git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git Azure-Sphere
 ```

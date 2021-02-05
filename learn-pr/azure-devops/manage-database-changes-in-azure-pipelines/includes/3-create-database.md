@@ -36,8 +36,12 @@ Mara creates the development database and populates it with test data. She expor
 1. Download the [bacpac file](https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac?azure-portal=true) to your computer.
 
     You'll upload this file to your storage account later.
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). On the left, select **Storage accounts**.
-1. On the **Storage accounts** page, select **+ Add**.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). 1. On the top left, select **+ Create a resource**.
+1. Type **Storage accounts** in the *Search the Marketplace* box.
+1. You see this. Select **Create**.
+
+    :::image type="content" source="../media/3-create-storage-account.png" alt-text="A screenshot of the storage account page highlighting the create button.":::
+
 1. On the **Basics** tab, fill in these fields:
 
     | Property  | Value  |
@@ -51,9 +55,9 @@ Mara creates the development database and populates it with test data. She expor
 
 1. Select **Review + create** > **Create**.
 1. Wait for the storage account to be created and then select **Go to resource**.
-1. Under **Services**, select **containers**.
+1. Select **containers**.
 
-   ![The services section of the Containers page.](../media/3-select-containers.png)
+    :::image type="content" source="../media/3-select-containers.png" alt-text="A screenshot of the storage account page with containers highlighted.":::
 
 1. On the **Containers** page, select **+ Container**.
 1. In the **Name** field, enter *bacpac* and select **Create**.
@@ -81,8 +85,8 @@ Here you create the SQL Server that holds your new database.
 
 1. Select **Review + create** > **Create**.
 1. After the server is created, select **Go to resource**.
-1. On the right side of the overview page, select **Show firewall settings**.
-1. On the firewall settings page, make sure that **Allow Azure services and resources to access this server** is switched **On**. Select **Save** > **OK**.
+1. On the right side of the overview page, select **Show firewall and virtual networks**.
+1. On the firewall settings page, make sure that **Allow Azure services and resources to access this server** is switched to **Yes**. Select **Save** > **OK**.
 
     Azure creates the tables and inserts the data that you need.
 
@@ -113,16 +117,10 @@ Before you explore your database, you need to set a firewall rule that permits d
 1. Choose **tailspindatabase**.
 1. At the top of the **tailspindatabase** page, select **Set server firewall**.
 
-    Your current IP address appears next to **Client IP address**. For example, **123.12.123.123**.
-1. Enter the following rule:
+    Select **+ Add Client IP**.
+1. Save the new rule.
 
-    | Property  | Value  |
-    |---|---|
-    | Rule name| **LocalIP** |
-    | Start IP | Your IP address. Change the last octet to `0`. For example, 123.12.123.*0* |
-    | End IP | Your IP address. Change the last octet to `255`. For example, 123.12.123.*255* |
-
-1. Ensure that **Allow Azure services and resources to access this server** is set to **On**.
+1. Ensure that **Allow Azure services and resources to access this server** is set to **Yes**.
 1. At the top, select **Save** > **OK**.
 
 ## Explore the database

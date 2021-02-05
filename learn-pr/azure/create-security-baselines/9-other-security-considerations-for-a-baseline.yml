@@ -9,7 +9,6 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/9-other-security-considerations-for-a-baseline.md)]

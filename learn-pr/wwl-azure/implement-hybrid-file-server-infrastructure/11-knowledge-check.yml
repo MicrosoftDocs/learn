@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-file-server-infrastructure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/27/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "David at Contoso wants to set up Azure Files. He knows he must set up a storage account first. What type of storage should he use for Azure files?"
+    choices:
+    - content: "Files."
+      isCorrect: true
+      explanation: "That's correct. Files is the correct type of storage for Azure files."
+    - content: "Blobs."
+      isCorrect: false
+      explanation: "That's incorrect. Files is the correct type of storage for Azure files."
+    - content: "Queues."
+      isCorrect: false
+      explanation: "That's incorrect. Files is the correct type of storage for Azure files."
+  - content: "When considering Azure file share permissions, what permissions does a Storage File Data SMB Share Elevated Contributor have?"
+    choices:
+    - content: "Read, write, and delete access in Azure Storage file shares over SMB."
+      isCorrect: false
+      explanation: "That's incorrect. These are the permissions of a Storage File Data SMB Share Contributor."
+    - content: "Read, write, delete, and modify NTFS permission access in Azure Storage file shares over SMB. Also, full control permissions to the Azure file share."
+      isCorrect: true
+      explanation: "That's correct. These are the permissions of a Storage File Data SMB Share Elevated Contributor."
+    - content: "Read access to the Azure file share over SMB."
+      isCorrect: false
+      explanation: "That's incorrect. These are the permissions of Storage File Data SMB Share Readers."
+  - content: "When implementing Azure File Sync, after registering a Windows Server with Storage Sync Service, what does the administrator need to do next?"
+    choices:
+    - content: "Install the Azure File Sync agent."
+      isCorrect: false
+      explanation: "That's incorrect. The administrator performs this step before registering the Windows Server."
+    - content: "Add server endpoints."
+      isCorrect: false
+      explanation: "That's incorrect. The administrator must create a sync group next, and then they can add the server endpoints."
+    - content: "Create a sync group."
+      isCorrect: true
+      explanation: "That's correct. A *sync group* contains endpoints that you want to keep synced with each other. This task is performed after registering the Windows Server and before adding server endpoints."

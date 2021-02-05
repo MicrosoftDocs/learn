@@ -13,33 +13,33 @@ durationInMinutes: 10
 content: |
   [!include[](includes/3-deployment-options.md)]
 quiz:
-    title: Knowledge Check
+    title: Knowledge check
     questions:
-    - content: "Consider the following scenario: you want to migrate to the cloud, but you leverage a third-party application which requires access to the operating system (OS). Which Azure SQL deployment option will be the easiest to move to?"
+    - content: "Consider this scenario: you want to migrate to the cloud, but you use a third-party application that requires access to the operating system (OS). Which Azure SQL deployment option will be easiest to use?"
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: true
-        explanation: "Correct! Only SQL Server in an Azure virtual machine gives you access to the underlying OS. In the PaaS deployment options, this is abstracted away from you, meaning Azure manages it, but you can't access it."
+        explanation: "Correct! Only SQL Server in an Azure virtual machine gives you access to the underlying OS. In the PaaS deployment options, the OS is abstracted away from you, meaning Azure manages it, but you can't access it."
       - content: "Azure SQL Managed Instance"
         isCorrect: false
-        explanation: "Only one deployment option is going to give you OS-level access."
-      - content: "Azure SQL Database - single database"
+        explanation: "Only one deployment option gives you OS-level access."
+      - content: "Azure SQL Database, single database"
         isCorrect: false
-        explanation: "Only one deployment option is going to give you OS-level access."
-      - content: "Azure SQL Database - elastic pool"
+        explanation: "Only one deployment option gives you OS-level access."
+      - content: "Azure SQL Database, elastic database pool"
         isCorrect: false
-        explanation: "Only one deployment option is going to give you OS-level access."
-    - content: "Consider the following scenario: you want to migrate to the cloud and remove some of the management associated with SQL Server, but your application leverages CLR and Service Broker capabilities from SQL Server. Which Azure SQL deployment option will be the easiest to move to?"
+        explanation: "Only one deployment option gives you OS-level access."
+    - content: "Consider this scenario: you want to migrate to the cloud and remove some of the management associated with SQL Server, but your application uses CLR and Service Broker capabilities from SQL Server. Which Azure SQL deployment option will be easiest to use?"
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false
-        explanation: "This will technically work, but is there a better option to consider which removes some of the management overhead?"
+        explanation: "This option will work, but is there an option that removes some of the management overhead?"
       - content: "Azure SQL Managed Instance"
         isCorrect: true
-        explanation: "Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker. A is also technically correct, but doesn't unlock the benefits that PaaS can offer."
-      - content: "Azure SQL Database - single database"
+        explanation: "Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker. The first answer choice is also correct, but it doesn't provide the benefits that PaaS can offer."
+      - content: "Azure SQL Database, single database"
         isCorrect: false
-        explanation: "Azure SQL Database doesn't support instance-scoped features like Service Broker and CLR"
-      - content: "Azure SQL Database - elastic pool"
+        explanation: "Azure SQL Database doesn't support instance-scoped features like Service Broker and CLR."
+      - content: "Azure SQL Database, elastic database pool"
         isCorrect: false
-        explanation: "Azure SQL Database doesn't support instance-scoped features like Service Broker and CLR"
+        explanation: "Azure SQL Database doesn't support instance-scoped features like Service Broker and CLR."

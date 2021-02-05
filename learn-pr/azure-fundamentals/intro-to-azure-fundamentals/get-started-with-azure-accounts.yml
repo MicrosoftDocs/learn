@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-fundamentals.get-started-with-azure-accounts
+title: Get started with Azure accounts
+metadata:
+  title: Get started with Azure accounts
+  description: In this unit, you'll learn how to get started with Azure accounts.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/get-started-with-azure-accounts.md)]

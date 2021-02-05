@@ -27,7 +27,7 @@ However, if you would rather create an Azure Cosmos DB database and container pr
     | Database id  | Products | Enter *Products* as the name for the new database. Database names must be 1 to 255 characters in length, and must not contain /, \\, #, ?, or a trailing space. |
     | Throughput | 1000 RU | Change the throughput to 1000 request units per second (RU/s). |
     | Container id | Clothing | Enter *Clothing* as the name for your new container. Container IDs have the same character requirements as database names. |
-    | Partition key | productId | productId is a good partition key for an online retail scenario, as so many queries are based around the product ID. |
+    | Partition key | /productId | productId is a good partition key for an online retail scenario, as so many queries are based around the product ID. |
     
 1. Accept the defaults for any remaining options, and then click **OK**. The Data Explorer displays the new database **Products** and the container **Clothing**.
 

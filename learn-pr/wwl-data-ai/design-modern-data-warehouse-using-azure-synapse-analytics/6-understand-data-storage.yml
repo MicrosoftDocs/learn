@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.understand-data-storage-for
+title: Understand data storage for a modern data warehouse
+metadata:
+  title: Understand data storage for a modern data warehouse
+  description: "Understand data storage for a modern data warehouse"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-understand-data-storage.md)]

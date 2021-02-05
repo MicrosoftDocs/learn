@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Channa in IT support at Contoso has been tasked with running a script on an Azure Arc–managed VM hosted in an on-premises datacenter in the London office. Which of the following represents the best solution for this requirement?"
+    choices:
+    - content: "Channa should onboard the machine to Azure Arc and then use a **policy** to configure the script."
+      isCorrect: false
+      explanation: "That's incorrect. Channa should onboard the machine to Azure Arc and then use a **CustomScriptExtension VM extension** to download and execute the script."
+    - content: "Channa should onboard the machine to Azure Arc and then use a **CustomScriptExtension VM extension** to download and execute the script."
+      isCorrect: true
+      explanation: "That's correct. Using a VM extension, in this case the CustomScriptExtension, enables her to run the script."
+    - content: "Channa should onboard the machine to Azure Arc and then **Update management** and execute the script."
+      isCorrect: false
+      explanation: "That's incorrect. Channa must onboard the machine to Azure Arc and then use a **CustomScriptExtension VM extension** to download and execute the script."
+  - content: "In the demonstration video, at time index 3:25, the administrator selects an account to sign in with. What are the minimum permissions this account needs?"
+    choices:
+    - content: "The account must be a member of the Azure Connected Machine Resource Administrator role."
+      isCorrect: false
+      explanation: "That's incorrect. The account only needs to be a member of the Azure Connected Machine Onboarding role."
+    - content: "The account must be a member of the Azure Connected Machine Onboarding role."
+      isCorrect: true
+      explanation: "That's correct. These are the required permissions."
+    - content: "The account must be a member of the Global Administrator role."
+      isCorrect: false
+      explanation: "That's incorrect. The account only needs to be a member of the Azure Connected Machine Onboarding role."

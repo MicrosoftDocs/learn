@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.python-partnership.personality-quiz
+metadata:
+  title: Which WONDER WOMAN 1984 character are you most like?
+  description: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Which WONDER WOMAN 1984 character are you most like?
+summary: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+abstract: |
+ In this module, you'll discover how to: 
+  - Write your first lines of Python code
+  - Create a program that allows users to interact with your code
+  - Use <code>if</code>, <code>elif</code>, and <code>else</code> statements
+
+  <strong>No coding experience is required to complete this Microsoft Learn module.</strong>
+prerequisites: |
+  - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3)
+  - [Visual Studio Code with the Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script)
+
+iconUrl: /learn/achievements/python-partnership/personality-quiz.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+units:
+- learn.python-partnership.personality-quiz.introduction
+- learn.python-partnership.personality-quiz.set-up-visual-studio-code
+- learn.python-partnership.personality-quiz.python-basics
+- learn.python-partnership.personality-quiz.create-quiz-1
+- learn.python-partnership.personality-quiz.create-quiz-2
+- learn.python-partnership.personality-quiz.create-quiz-3
+- learn.python-partnership.personality-quiz.score-quiz
+- learn.python-partnership.personality-quiz.knowledge-check
+- learn.python-partnership.personality-quiz.summary
+badge:
+  uid: learn.python-partnership.personality-quiz.badge

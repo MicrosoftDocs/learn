@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-architecture-fundamentals.resources-resource-manager
+title: Azure resources and Azure Resource Manager
+metadata:
+  title: Azure resources and Azure Resource Manager
+  description: In this unit, you'll learn about Azure resources and Azure Resource Manager.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/resources-resource-manager.md)]

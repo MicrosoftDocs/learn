@@ -1,11 +1,11 @@
-The example web application used by this module is based on part of an e-commerce system. The sample web application enables a warehouse employee to update the details of products sold by the system, and maintain the current stock levels.
+The example web application in this module is part of an e-commerce system. The sample web application provides a way for a warehouse employee to update the details of products sold by a company and to maintain current stock levels.
 
-Here, you'll download and test the application locally, and then create the resources needed to deploy the application to Azure and configure it. You'll do the deployment and configuration in a later unit in this module.
+First, you'll download and test the application locally, and then you'll create resources that are needed to deploy the application to Azure and configure the application. You'll configure and deploy the application later in this module.
  
 ## Download and test the sample web application locally
 
-1. Using Windows Explorer, create a folder named **MigrationWorkshop** in a convenient place on your computer.
-1. Open a command prompt window, and move to the **MigrationWorkshop** folder.
+1. In File Explorer in Windows, create a folder named *MigrationWorkshop* in a convenient place on your computer.
+1. Open a Command Prompt window, and then change the directory to the *MigrationWorkshop* folder.
 1. Run the following command to download the sample application from the Microsoft repository on GitHub:
 
     ```bash
@@ -13,34 +13,30 @@ Here, you'll download and test the application locally, and then create the reso
     ```
 
 1. Start Visual Studio 2019.
-1. Click **Open a project or solution**.
+1. Select **Open a project or solution**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Image of Visual Studio 2019 start screen. The user has selected **Open a project or solution**](..\media\2-open-project-or-solution.png)
+    :::image type="content" source="../media/2-open-project-or-solution.png" alt-text="Screenshot of the Visual Studio 2019 start screen with the Open a project or solution tile highlighted.":::
+   
+1. Go to the *MigrationWorkshop* folder, and then select **eShopModernizing** > **eShopLegacyWebFormsSolution** > **eShopLegacyWebFormsSolution** > **Open**.
 
-1. Browse to the **MigrationWorkshop** folder, move to the **eShopModernizing** folder, move to the **eShopLegacyWebFormsSolution** folder, select the **eShopLegacyWebFormsSolution**, and then click **Open**.
+    :::image type="content" source="../media/2-open-solution.png" alt-text="Screenshot of the Open Project/Solution dialog box, with the eShopLegacyWebForms solution highlighted.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Image of the Open Project/Solution dialog box in Visual Studio 2019. The user has selected the **eShopLegacyWebForms** solution](..\media\2-open-solution.png)
-
-    You might be prompted to install additional components in the Solution Explorer window:
+    In Solution Explorer, you might be prompted to install additional components:
     
-    > [!div class="mx-imgBorder"]
-    > ![Image of the Solution Explorer window in Visual Studio. The user is being prompted to install additional components to support Visual Studio.**](..\media\2-install-components.png)
-    
-    If this occurs, click **Install** to install the required items, and follow the instructions.
+    :::image type="content" source="../media/2-install-components.png" alt-text="Screenshot of Solution Explorer, with a prompt to install additional components highlighted and an Install button.":::
+  
+    If the prompt is shown, select **Install** to install the required items, and then follow the instructions.
 
-1. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps:
+1. This project currently uses v2.0.1 of the Microsoft.CodeDom.Providers.DotNetCompilerPlatform assembly. The version has an issue that requires you to restart Visual Studio to refresh a cached value:
 
-    1. Close Visual Studio, and start it again. 
-    2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
+    1. Close Visual Studio and then restart it. 
+    2. Open the eShopLegacyWebFormsSolution solution. On the **Build** menu, select **Rebuild Solution**.
 
-1. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
+1. In Solution Explorer, expand the **eShopLegacyWebForms** project, and then select the **Web.config** file.
 
-    > [!div class="mx-imgBorder"]
-    > ![Image of Solution Explorer window. The user has selected the **Web.config** file](..\media\2-open-web-config.png).
+    :::image type="content" source="../media/2-open-web-config.png" alt-text="Screenshot of Solution Explorer, with the Web.config file highlighted.":::
 
-1. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
+1. In the *Web.config* file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting causes the application to use data that's stored in a local SQL Server database.
 
     ```xml
     ...
@@ -51,37 +47,36 @@ Here, you'll download and test the application locally, and then create the reso
     ...
     ```
 
-1. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
+1. Press **F5** to build and run the application. The application opens a web browser and displays the **Catalog manager** page in the web application:
 
-    > [!div class="mx-imgBorder"]
-    > ![Image of the **Catalog Manager** page for the sample application in a web browser window](..\media\2-catalog-manager.png)
+    :::image type="content" source="../media/2-catalog-manager.png" alt-text="Screenshot of the Catalog manager page in the eShop onContainers sample web application in a web browser window.":::
 
-    The Catalog Manager enables you to view the products sold by the organization, add new products, modify the details of existing products, and delete products.
+    You can use the **Catalog manager** page to view the products that are sold by the organization, add new products, modify the details of existing products, and delete products.
 
-1. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
+1. Experiment with the application. Try adding, editing, and removing products. Close the web browser when you're finished. This action stops the application and returns you to Visual Studio.
 
-## Create Azure resources for running the application as an Azure web app
+## Create Azure resources to run the application as an Azure web app
 
-1. In the Cloud Shell window on the right, run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
+1. In the Azure Cloud Shell window on the right, run the next commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace *\<your-initials-with-suffix\>* with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace *\<your-password\>* with a password that you choose. The password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
-    > The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically. Use this as your resource group name, you will not have permission to create additional resource groups in the sandbox.
+    > The resource group *<rgn>[sandbox resource group name]</rgn>* is automatically created. Use this as your resource group name. You don't have permissions in the sandbox to create additional resource groups.
 
-    ```PowerShell
+    ```powershell
     $useralias = "<your-initals-with-suffix>"
     ```
 
-    ```PowerShell
+    ```powershell
     $serveradminpassword = "<your-password>"
     ```
 
-    ```PowerShell
+    ```powershell
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
-1. Run the following commands to define further variables that will be used to create the resources used by this module:
+1. Run the following commands to define more variables that will be used to create the resources used by this module:
 
-    ```PowerShell
+    ```powershell
     $location = "eastus"
     $webappplanname = (-join($useralias,"-webappplan"))
     $webappname = (-join($useralias,"-webapp"))
@@ -90,17 +85,18 @@ Here, you'll download and test the application locally, and then create the reso
     $dbname = "eShop"
     ```
 
-1. Run the following PowerShell command to create a new Azure App Service plan for hosting the web app:
+1. Create a new Azure App Service plan to host the web app:
 
-    ```PowerShell
+    ```powershell
     New-AzAppServicePlan `
         -Name $webappplanname `
         -ResourceGroup $resourcegroupname `
         -Location $location
     ```
-1. Run the following PowerShell command to create a web app using the App Service plan:
 
-    ```PowerShell
+1. Create a web app by using the App Service plan:
+
+    ```powershell
     New-AzWebApp `
         -Name $webappname `
         -AppServicePlan $webappplanname `
@@ -108,18 +104,18 @@ Here, you'll download and test the application locally, and then create the reso
         -Location $location
     ```
 
-1. Run the following PowerShell command to assign a managed identity to the web app. You'll require this identity later:
+1. Assign a managed identity to the web app. You'll require this identity later.
 
-    ```PowerShell
+    ```powershell
     Set-AzWebApp `
         -AssignIdentity $true `
         -Name $webappname `
         -ResourceGroupName $resourcegroupname
     ```
 
-1. Run the following PowerShell command to create a new Azure SQL Database server:
+1. Create a new SQL Database server:
 
-    ```PowerShell
+    ```powershell
     New-AzSqlServer `
         -ServerName $servername `
         -ResourceGroupName $resourcegroupname `
@@ -131,9 +127,9 @@ Here, you'll download and test the application locally, and then create the reso
             -String $serveradminpassword `
             -AsPlainText -Force))
     ```
-1. Run the following PowerShell command to open the SQL Database server firewall to allow access to services hosted in Azure.
+1. Open the SQL Database server firewall to allow access to services that are hosted in Azure:
 
-    ```PowerShell
+    ```powershell
     New-AzSqlServerFirewallRule `
         -ResourceGroupName $resourcegroupname `
         -ServerName $servername `
@@ -142,9 +138,9 @@ Here, you'll download and test the application locally, and then create the reso
         -EndIpAddress "0.0.0.0"
     ```
 
-1. Run the following PowerShell command to create a database on the SQL Database server. The database will be populated later, when you migrate the web app.
+1. Create a database on the SQL Database server. The database will be populated later, when you migrate the web app.
 
-    ```PowerShell
+    ```powershell
     New-AzSqlDatabase  `
         -ResourceGroupName $resourcegroupname `
         -ServerName $servername `

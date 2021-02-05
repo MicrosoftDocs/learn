@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-ready.3-common-operating-models
+title: Compare common operating models
+metadata:
+  title: Compare common operating models
+  description: Operating models define a number of constraints that will impact your environmental design.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-common-operating-models.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following best describes the operating model at Tailwind Traders?
+    choices:
+    - content: Decentralized operations
+      isCorrect: false
+      explanation: Since all production operations are supported by a centralized team, this isn't an operating model that Tailwind Traders could support.
+    - content: Centralized operations
+      isCorrect: true
+      explanation: Correct!
+    - content: Enterprise operations
+      isCorrect: false
+      explanation: See the last question in the knowledge check to understand why enterprise operations aren't currently a good fit for Tailwind Traders.
+    - content: Distributed operations
+      isCorrect: false
+      explanation: Operations at Tailwind Traders aren't complex enough to fit this operating model.
+  - content: In the customer narrative, there's a controlled process for release of the solutions coming from the retail innovation team. If that process improves to allow that team to manage their own workloads in a controlled landing zone, which operating model would better describe the new arrangement?
+    choices:
+    - content: Decentralized operations
+      isCorrect: false
+      explanation: The central operations team isn't going away, so decentralized still wouldn't fit.
+    - content: Centralized operations
+      isCorrect: false
+      explanation: When additional teams are allowed to manage production operations, the centralized model becomes unruly. If that increased pace of innovation is required, Tailwind Traders should consider an enterprise operations model.
+    - content: Enterprise operations
+      isCorrect: true
+      explanation: Correct!
+    - content: Distributed operations
+      isCorrect: false
+      explanation: Fortunately, this change wouldn't suggest a distributed operations approach. Try again.
+  - content: The retail innovation team was entirely workload-focused before they were acquired by Tailwind Traders. Based on our limited knowledge, what operating model best describes how that team operated prior to the acquisition?
+    choices:
+    - content: Decentralized operations
+      isCorrect: true
+      explanation: Correct!
+    - content: Centralized operations
+      isCorrect: false
+      explanation: There weren't centralized support services before the acquisition. Try again.
+    - content: Enterprise operations
+      isCorrect: false
+      explanation: Enterprise operations would require centralized operations and innovative workload teams. There weren't centralized support services before the acquisition.
+    - content: Distributed operations
+      isCorrect: false
+      explanation: While the company might become distributed after a few more acquisitions, Tailwind Traders isn't there today, nor was the startup prior to acquisition.
+  # - content: Which of the following is an indicator that centralized operations is the better fit for Tailwind Traders?
+  #   choices:
+  #   - content: Openness to embrace cloud-native operations tools and processes
+  #     isCorrect: false
+  #     explanation: The narrative suggests limited appetite for cloud-native tools and processes. This customer currently needs a best-of-breed approach.
+  #   - content: Multiple teams accessing production environments
+  #     isCorrect: false
+  #     explanation: Only the central operations team has access to production. There is no need currently for a more complex approach to separation of duties.
+  #   - content: Central operations team size
+  #     isCorrect: true
+  #     explanation: There are indications that an enterprise operations approach could provide advantages, but the strained staff and lack of well-organized teams outside of central operations would add strain to the current team structure. Organizational change would be required to adopt enterprise operations.
+  #   - content: Scope of the portfolio
+  #     isCorrect: false
+  #     explanation: The overall scope of the portfolio is large enough to qualify for enterprise operations. This is an indicator that an enterprise operations approach might be beneficial. 

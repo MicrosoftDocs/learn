@@ -2,10 +2,6 @@
 
 Continuous Delivery is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Delivery: Release pipeline, Secure infra deployment, IaaS deployment, PaaS deployment, SaaS deployment, Shared services, Infrastructure-as-code, Change management, Configuration management, Release management, On-premises or cloud deployment, Security/quality end-to-end check with automation.](../media/4-2-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Delivery is necessary
 
 In 2012, a software deployment error resulted in a $460M loss for Knight Capital Group, the largest trader in U.S. equities at the time.

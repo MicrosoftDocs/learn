@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-data-in-aml
 metadata:
-  title: Working with Data in Azure Machine Learning
-  description: "Learn how to work with datastores and datasets in Azure Machine Learning."
-  ms.date: 07/16/2020
+  title: Work with Data in Azure Machine Learning
+  description: "Work with Data in Azure Machine Learning"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Working with Data in Azure Machine Learning
+title: Work with Data in Azure Machine Learning
 summary: Data is the foundation of machine learning. In this module, you will learn how to work with datastores and datasets in Azure Machine Learning, enabling you to build scalable, cloud-based model training solutions.
 abstract: |
   - Create and use datastores in an Azure Machine Learning workspace.

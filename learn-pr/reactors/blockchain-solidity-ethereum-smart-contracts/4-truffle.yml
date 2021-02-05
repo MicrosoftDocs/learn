@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.4-truffle
+metadata:
+  title: Exercise - Install Truffle
+  description: Learn how to install Truffle.
+  ms.date: 10/06/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Install Truffle
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-truffle.md)]

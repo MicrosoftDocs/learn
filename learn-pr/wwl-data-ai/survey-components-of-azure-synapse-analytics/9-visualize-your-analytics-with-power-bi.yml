@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.survey-components-of-azure-synapse-analytics.visualize-your-analytics-with-power-bi
+title: Visualize your analytics with Power BI
+metadata:
+  title: Visualize your analytics with Power BI
+  description: "Visualize your analytics with Power BI"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-visualize-your-analytics-with-power-bi.md)]

@@ -1,0 +1,3 @@
+Conversational AI is the term used to describe solutions where AI agents participate in conversations with humans. Most commonly, conversational AI solutions use bots to manage dialogs with users. You can create basic bots in the Azure portal to gain an understanding of how bots work.  Testing with the web test chat interface can provide a way or understanding how you would interact with a bot.
+
+Downloading the source code from a bot you create in the Azure portal can serve as a starting point for building your own bot.  The source code contains the foundational components for bot creation and interaction. Reviewing the sample code can help you learn more about the activities and even handling mechanisms in the bot framework.

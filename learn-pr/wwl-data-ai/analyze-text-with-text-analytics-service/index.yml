@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
   title: Analyze Text with the Text Analytics Service
   description: "The Text Analytics service is a cloud-based service that provides advanced natural language processing over raw text for sentiment analysis, key phrase extraction, named entity recognition, and language detection."
-  ms.date: 06/07/2020
+  ms.date: 09/13/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-bot-conversation-flow.navigation
+title: Design bot navigation
+metadata:
+  title: Design bot navigation
+  description: "Design bot navigation"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-navigation.md)]

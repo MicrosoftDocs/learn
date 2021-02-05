@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ai-machine-learning-fundamentals.use-bot-services
+title: Use Bot Service for interactive chat experiences
+metadata:
+  title: Use Bot Service for interactive chat experiences
+  description: Analyze a scenario that requires a chat bot to handle common customer service issues.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+azureSandbox: false
+content: |
+  [!include[](includes/6-use-bot-services.md)]

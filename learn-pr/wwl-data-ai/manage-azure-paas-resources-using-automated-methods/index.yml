@@ -2,8 +2,8 @@
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
   title: Manage Azure PaaS resources using automated methods
-  description: "Explore SQL automation for Azure SQL Database and Open Source databases. Configure elastic jobs and Azure Policy."
-  ms.date: 08/07/2020
+  description: "Manage Azure PaaS resources using automated methods"
+  ms.date: 12/14/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
   - Familiarly with Open Source database systems on Azure.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-azure-paas-resources-using-automated-methods.svg
 levels:
 - intermediate
 roles:
@@ -38,6 +38,7 @@ units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.describe-azure-automation
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.build-automation-runbook
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.describe-elastic-jobs-azure-sql-database
+- learn.wwl.manage-azure-paas-resources-using-automated-methods.exercise-deploy-automation-runbook-rebuild-indexes
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.knowledge-check
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.summary
 badge:
