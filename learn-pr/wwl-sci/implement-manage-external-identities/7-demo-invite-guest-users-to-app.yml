@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-external-identities.demo-invite-guest-users-to-app
+title: Demo - invite guest users to app
+metadata:
+  title: Demo - invite guest users to app
+  description: "Demo - invite guest users to app"
+  ms.date: 02/02/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-demo-invite-guest-users-to-app.md)]

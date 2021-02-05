@@ -15,17 +15,16 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
         --allocation-method Dynamic
     ```
 
-1. Run this command in Cloud Shell to create the virtual network gateway.
+1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network.
 
     ```azurecli
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-Azure-VNet-1 \
-        --public-ip-address PIP-VNG-Azure-VNet-1 \
-        --subnet-name GatewaySubnet \
+        --subnet-name GatewaySubnet 
     ```
 
-1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway.
+1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway. 
 
     ```azurecli
     az network vnet-gateway create \
@@ -52,14 +51,13 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --allocation-method Dynamic
     ```
 
-1. Run this command in Cloud Shell to create the virtual network gateway.
+1. Run this command in Cloud Shell to create the **VNG-HQ-Network** virtual network.
 
     ```azurecli
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-HQ-Network \
-        --public-ip-address PIP-VNG-HQ-Network \
-        --subnet-name GatewaySubnet \
+        --subnet-name GatewaySubnet 
     ```
 
 1. Run these commands in Cloud Shell to create the **VNG-HQ-Network** virtual network gateway.
@@ -78,7 +76,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
 1. Gateway creation will take several minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
 
-    ```bash
+    ```azurecli
     watch -d -n 5 az network vnet-gateway list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --output table
@@ -107,11 +105,18 @@ az network vnet-gateway list \
     --output table
 ```
 
+```output
+Name              Location    GatewayType    VpnType     VpnGatewayGeneration    EnableBgp    EnablePrivateIpAddress    Active    ResourceGuid                        ProvisioningState    ResourceGroup
+----------------  ----------  -------------  ----------  ----------------------  -----------  ------------------------  --------  ------------------------------------  -------------------  ------------------------------------------
+VNG-Azure-VNet-1  westus      Vpn            RouteBased  Generation1         False        False                     False     9a2e60e6-da57-4274-99fd-e1f8b2c0326d  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
+VNG-HQ-Network    westus      Vpn            RouteBased  Generation1         False        False                     False     c36430ed-e6c0-4230-ae40-cf937a102bcd  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
+```
+
 Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
 
 1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1** and store it in a variable.
 
-    ```bash
+    ```azurecli
     PIPVNGAZUREVNET1=$(az network public-ip show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name PIP-VNG-Azure-VNet-1 \
@@ -130,7 +135,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
 
 1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-HQ-Network** and store it in a variable.
 
-    ```bash
+    ```azurecli
     PIPVNGHQNETWORK=$(az network public-ip show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name PIP-VNG-HQ-Network \
@@ -153,10 +158,12 @@ You'll now complete the configuration by creating the connections from each VPN 
 
 1. Create the shared key to use for the connections. In the following command, replace `<shared key>` with a text string to use for the IPSec pre-shared key. The pre-shared key is a string of printable ASCII characters no longer than 128 characters. You'll use this pre-shared key on both connections.
 
-    ```bash
+> [!NOTE] 
+> Any set of number will work for a shared key in this example:  SHAREDKEY=123456789    It is recommended in production environments to use string of printable ASCII characters no longer than 128 characters.
+    
+  ```bash
     SHAREDKEY=<shared key>
-    ```
-
+  ```
 1. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
 
     ```azurecli
@@ -201,24 +208,6 @@ Let's confirm that the VPN tunnels are connected.
     Name                        ConnectionStatus
     --------------------------  ------------------
     Azure-VNet-1-To-HQ-Network  Connected
-    ```
-
-1. Now lets confirm the corresponding **HQ-Network-To-Azure-VNet-1** connection is also established.
-
-    ```azurecli
-    az network vpn-connection show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name HQ-Network-To-Azure-VNet-1  \
-        --output table \
-        --query '{Name:name,ConnectionStatus:connectionStatus}'
-    ```
-
-    You should see the following output indicating this connection is also successful.
-
-    ```output
-    Name                        ConnectionStatus
-    --------------------------  ------------------
-    HQ-Network-To-Azure-VNet-1  Connected
     ```
 
 The site-to-site configuration is now complete. Your final topology, including the subnets, and connections, with logical connection points, is shown in this diagram. Virtual machines deployed in the **Services** and **Applications** subnets can now communicate with each other, now that the VPN connections have been successfully established.

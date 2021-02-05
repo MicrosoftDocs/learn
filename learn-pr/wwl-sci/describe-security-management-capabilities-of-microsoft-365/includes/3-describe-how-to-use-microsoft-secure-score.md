@@ -14,7 +14,7 @@ Points are given for the following actions:
 
 Some improvement actions only give points when fully completed. Others give partial points if they're completed for some devices or users. If you can't, or don't want to, enact one of the improvement actions, you can choose to accept the risk or remaining risk.
 
-If you have a license for one of the supported Microsoft products, you'll see related recommendations. Security Score will show all possible improvements for the product, whatever the license edition, subscription, or plan. You'll then see all the security best practices and improvements that can be made to your score.
+If you have a license for one of the supported Microsoft products, you'll see related recommendations. Secure Score will show all possible improvements for the product, whatever the license edition, subscription, or plan. You'll then see all the security best practices and improvements that can be made to your score.
 
 Your absolute security posture, represented by Secure Score, stays the same whatever licenses your organization owns for a specific product. Keep in mind that security should be balanced with usability, and not every recommendation can work for your environment.
 
@@ -24,11 +24,11 @@ In this diagram, you can see the Secure Score is 32.86%. It illustrates a breakd
 
 :::image type="content" source="../media/3-secure-score-overview-inline.png" lightbox="../media/3-secure-score-overview-expanded.png" alt-text="Screenshot showing a Microsoft Secure Score page, with several panels highlighted: Secure Score, Breakdown of score, implementation actions, and a comparison of the score against other organizations.":::
 
-## Differences between the Azure and Microsoft security scores
+## Differences between the Azure and Microsoft Secure Score
 
 There's a Secure Score for both Microsoft 365 Defender and Azure Defender, but they're subtly different. Secure Score in the Azure Security Center is a measure of the security posture of your Azure subscriptions. Secure Score in the Microsoft 365 security center is a measure of the security posture of the organization across your apps, data, devices, identity, and infrastructure.
 
-Both the Azure and Microsoft Secure Score provide a list of steps you can take to improve your score. In Microsoft 365 Security Score, these steps are called improvement actions. In the Azure Secure Score, scores are assessed for each subscription. The steps you can take to improve your score are called security recommendations and they're grouped into security controls.
+Both the Azure and Microsoft Secure Score provide a list of steps you can take to improve your score. In Microsoft 365 Secure Score, these steps are called improvement actions. In the Azure Secure Score, scores are assessed for each subscription. The steps you can take to improve your score are called security recommendations and they're grouped into security controls.
 
 Use Microsoft Secure Score to understand and rapidly improve your organization’s security posture.
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-event-driven-real-time.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 02/01/2021
+  author: SandraAhlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

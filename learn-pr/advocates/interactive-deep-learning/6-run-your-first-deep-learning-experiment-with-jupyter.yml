@@ -10,7 +10,6 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 30
 content: |
   [!include[](includes/6-run-your-first-deep-learning-experiment-with-jupyter.md)]
