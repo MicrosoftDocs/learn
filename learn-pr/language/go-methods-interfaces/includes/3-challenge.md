@@ -2,11 +2,11 @@ Here's a challenge to help you practice what you've learned about methods and in
 
 ## Create a package to manage an online store
 
-Write a program that uses a custom package to manage an online store. Your challenge includes the following four elements:
+Write a program that uses a custom package to manage accounts for an online store. Your challenge includes the following four elements:
 
 1. Create a custom type called `Account` that includes the first and last name of the account owner. The type must also include the functionality to `ChangeName`.
 
-2. Create another custom type called `Employee` that includes a variable to store the number of credits (`float64`) and that embeds the `Account` object. The type must also include the functionality to `AddCredits`, `RemoveCredits`, and `CheckCredits`. You need to demonstrate that you can change the account name via the `Employee` object.
+2. Create another custom type called `Employee` that includes a variable to store the number of credits as type `float64` and that embeds the `Account` object. The type must also include the functionality to `AddCredits`, `RemoveCredits`, and `CheckCredits`. You need to demonstrate that you can change the account name via the `Employee` object.
 
 3. Write a Stringer method to your `Account` object so that the `Employee` name can be printed out in a format that includes the first and last name.
 
