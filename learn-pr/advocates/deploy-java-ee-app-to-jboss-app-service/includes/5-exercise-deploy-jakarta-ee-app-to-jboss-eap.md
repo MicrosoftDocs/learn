@@ -1,4 +1,4 @@
-In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service.
+In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You'll use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
@@ -150,7 +150,7 @@ The following output appears in the terminal:
 [INFO] ------------------------------------------------------------------------
 ```
 
-## Deploy Java EE application to JBoss EAP on Azure App Service
+## Deploy the Java EE app to JBoss EAP on Azure App Service
 
 After you compile and package the code, deploy the application:
 
@@ -256,7 +256,7 @@ az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/crea
 After the script runs, it will be invoked every time the application server is restarted.
 
 > [!NOTE]
-> If your deployment artifact isn't "ROOT.war", you need to change the `--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0` value too.
+> If your deployment artifact isn't `ROOT.war`, you need to change the `--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0` value too.
 
 ## Configure the environment variables for connecting to MySQL
 
@@ -336,7 +336,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area
 ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]$ 
 ```
 
-And if you specify the continent in the URL, you can get all the countries in the specified continent:
+And if you specify the continent in the URL, you can get all the countries in the specified continent.
 
 :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint.":::
 
@@ -368,7 +368,7 @@ $ curl https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net/area/Asia 
 ....
 ```
 
-Finally, if you specify a country code after `/countries`, you can get all the cities that have population greater than 1 million within the county.
+Finally, if you specify a country code after `/countries`, you can get all the cities that have population greater than 1 million within the country.
 
 :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
 

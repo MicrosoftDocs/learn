@@ -144,11 +144,11 @@ After you sign in to the web console, the following screen appears:
 
 :::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot that shows the main page of the admin console.":::
 
-You can confirm your created data source from `Configuration` > `Subsystems` > `Datasources & Drivers` > `Datasources`.
+You can confirm your created data source from **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
 
 :::image type="content" source="../media/jboss-admin-console-3.png" alt-text="Screenshot that shows the list of data sources on the admin console.":::
 
-You can also confirm the RESTful endpoints of your application from `Runtime` > `system` > `JAX-RS` > `Your Application`.
+You can also confirm the RESTful endpoints of your application from **Runtime** > *System* > **JAX-RS** > *Your Application*.
 
 :::image type="content" source="../media/jboss-admin-console-4.png" alt-text="Screenshot that shows RESTful endpoints on the admin console.":::
 

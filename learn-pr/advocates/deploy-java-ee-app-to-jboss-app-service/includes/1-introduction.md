@@ -1,4 +1,4 @@
-Java EE applications are used in many enterprises, such as purchase management, manufacturing, and CRM.
+Java EE applications are used in many enterprises, such as purchase management, manufacturing, and customer relationship management.
 
 Take the example of a freight delivery system:
 

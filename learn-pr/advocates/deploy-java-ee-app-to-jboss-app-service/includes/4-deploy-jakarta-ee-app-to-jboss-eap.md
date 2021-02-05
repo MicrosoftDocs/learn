@@ -11,7 +11,7 @@ In this module, you'll use a sample Java EE application that's prepared in advan
 - JPA 2.2
 
 > [!TIP]
-> The deployment procedure introduced here's is similar for most Java EE (Jakarta EE) web applications.
+> The deployment procedure introduced here is similar for most Java EE (Jakarta EE) web applications.
 
 ## Configure the application project for deploying to Azure by using Maven
 
@@ -45,13 +45,13 @@ The `deploy` command creates an Azure resource group and an instance of JBoss EA
 
 ## Configure a database connection by using a data source and JNDI
 
-Your application will require a binding to a data source. We'll configure it to use the MySQL database that we created in the previous units.
+Your application will require a binding to a data source. We'll configure the application to use the MySQL database that we created in the previous units.
 
 To connect to the database from JBoss EAP, you need configure a `DataSource` object. When you configure a `DataSource` object, an application can connect to the database.
 
 You'll configure `DataSource` to connect to the Azure Database for MySQL instance that you created earlier with the following information:
 
-| DataSource configuration | value |
+| Data source configuration | value |
 | --- | --- |
 | `DataSource Name` | `JPAWorldDataSourceDS`  |
 | `JNDI Name` | `java:jboss/datasources/JPAWorldDataSource` |
