@@ -2,7 +2,7 @@ Before you deploy to the Ethereum mainnet, you need to fully test and audit your
 
 After you develop, test, and audit your code, run the project on at least one testnet and resolve any problems. Most projects follow a comprehensive process before they're deployed to the mainnet. The process includes auditing, testing, security, and governance. This process minimizes the risks and costs of things going wrong in the mainnet.
 
-The process for preparing for mainnet and deploying to the Ethereum mainnet involves a series of steps: 
+The process for preparing for and deploying to the Ethereum mainnet involves a series of steps: 
 
 1. Audit smart contracts.
 1. Verify source code.
