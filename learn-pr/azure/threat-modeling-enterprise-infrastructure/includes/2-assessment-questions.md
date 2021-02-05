@@ -17,13 +17,14 @@ This list of assessment questions is a great starting point. You may add more qu
 
 These questions allow you to:
 
-- Know who can access enterprise resources, like admins, vendors, or users.
-- Understand what is used to restrict access, like Role-based Access Control (RBAC), Access Control Lists (ACL), or least-privilege access.
-- Investigate access requirements, like identity management, Two-Factor Authentication (2FA), Multi-Factor Authentication (MFA), Single-Sign-On (SSO), or Azure Active Directory (AAD).
+- Know who is authorized to access enterprise resources, like admins, vendors, or users.
+- Understand what is required to restrict access, like Role-based Access Control (RBAC), Access Control Lists (ACL), or least-privilege access.
+- Investigate identity management systems used, like Azure Active Directory (AAD).
+- Learn what is used to authenticate, like Multi-Factor Authentication (MFA) and Single-Sign-On (SSO).
 
 |Question|Areas to cover|
 |--------|--------------|
-|**Describe your physical and logical access controls.**|<ul><li>Use of an Active Directory.</li><li>Process to grant access to assets and resources.</li><li>Federations used to help enable SSO experiences.</li><li>Trusts established between two or more separate domains to understand potential relationship risks.</li><li>Complete workflows for provisioning and de-provisioning of access.</li><li>People who manage access workflows.</li></ul>|
+|**Describe your physical and logical access controls.**|<ul><li>Usage of an Active Directory.</li><li>Process to grant access to assets and resources.</li><li>Federations used to help enable SSO experiences.</li><li>Trusts established between two or more separate domains to understand potential relationship risks.</li><li>Complete workflows for provisioning and de-provisioning of access.</li><li>People who manage access workflows.</li></ul>|
 |**How do you establish and verify the identity of each person?**|<ul><li>Process to create and manage aliases for each user type.</li><li>Access controls used, like SSO, 2FA, and MFA.</li><li>Authentication factors used, like biometric scanning, phone authentication, smart cards, and Trusted Platform Modules (TPM).</li><li>People who manage identity and access controls.</li></ul>|
 |**How do you know what people can and cannot access?**|<ul><li>Enforced permissions and access restrictions, like least-privilege, segregation of duties, RBAC, glass-break scenarios, vendor access restrictions, and group memberships.</li><li>People who manage access restrictions and permissions.</li></ul>|
 |**Describe the password policy for each user type.**|<ul><li>Password requirements for each user type.</li><li>Password requirement differences between users, elevated users, smart cards, shared accounts, and service accounts.</li><li>Password lifecycle guidelines on creation, modification, and reset.</li><li>Logging and monitoring mechanisms used to track password actions.</li><li>Password expiration policies for each user type.</li><li>Unsuccessful password attempt limits.</li><li>Password sharing restrictions.</li></ul>|
