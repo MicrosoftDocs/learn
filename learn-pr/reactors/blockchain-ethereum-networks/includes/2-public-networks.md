@@ -86,7 +86,7 @@ More details:
   - [Status dashboard](https://stats.goerli.net/?azure-portal=true)
   - [Explorer](https://goerli.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/goerli/testnet/?azure-portal=true)
-  - [Website](https://www.goerli.net/?azure-portal=true)
+  - [Website](http://www.goerli.net/?azure-portal=true)
 
 Ropsten is said to be the testnet most similar to the mainnet. It was the first major testnet. Kovan, Goerli, and Rinkeby are stable and have high usage. Before you deploy to the mainnet, deploy to and test on multiple testnets.
 

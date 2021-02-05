@@ -25,9 +25,9 @@ quiz:
     - content: "Kovan"
       isCorrect: false
       explanation: "Incorrect. Ropsten supports OpenEthereum clients."
-    - content: "Görli"
+    - content: "Goerli"
       isCorrect: false
-      explanation: "Incorrect. Görli supports multiple clients, including Geth, Nethermind, and OpenEthereum."
+      explanation: "Incorrect. Goerli supports multiple clients, including Geth, Nethermind, and OpenEthereum."
   - content: "Which of the following actions is required to prepare for mainnet deployment?"
     choices:
     - content: "Verifying source code"
