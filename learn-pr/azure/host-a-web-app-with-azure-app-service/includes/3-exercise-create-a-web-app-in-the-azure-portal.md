@@ -20,7 +20,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | On the **Basics** tab > **Project Details** |
     | **Subscription** | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | **Resource Group** | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
@@ -51,7 +51,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | On the **Basics** tab > **Project Details** |
     | **Subscription** | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | **Resource Group** | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
@@ -83,7 +83,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | On the **Basics** tab > **Project Details** |
     | **Subscription** | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | **Resource Group** | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
@@ -114,7 +114,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     |---|---|---|
     | On the **Basics** tab > **Project Details** |
     | **Subscription** | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
-    | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
+    | **Resource Group** | From the dropdown, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
