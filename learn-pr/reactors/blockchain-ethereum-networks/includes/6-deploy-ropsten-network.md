@@ -210,7 +210,7 @@ Follow the steps in the next sections to verify that your contract was deployed.
 
 Check MetaMask to verify that ether was used to deploy the contract.
 
-:::image type="content" source="media\metamask-balance-after-deploy-ropsten.png" alt-text="Screenshot showing the MetaMask balance after deployment to Ropsten.":::
+:::image type="content" source="../media/metamask-balance-after-deploy-ropsten.png" alt-text="Screenshot showing the MetaMask balance after deployment to Ropsten.":::
 
 ### Verify in Ropsten Etherscan
 
