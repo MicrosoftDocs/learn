@@ -1,12 +1,12 @@
-JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your webpage. When you select a button, JavaScript is the code that defines the event or behavior that will happen, such as open a popup window. Using JavaScript, you can add or remove content like text from the webpage without reloading it. As a web developer, you can use the browser to test and get feedback about your scripts.
+JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your webpage. When you select a button, JavaScript is the code that defines the event or behavior that will happen, such as opening a pop-up window. Using JavaScript, you can add or remove content, like text from the webpage without reloading it. As a web developer, you can use the browser to test and get feedback about your scripts.
 
-In this unit, you set up the JavaScript file, create a button to switch between light and dark themes, and then wire up the button to JavaScript code that performs the actual theme switching. When this is done, you check the finished project in developer tools.
+In this unit, you set up the JavaScript file, create a button to switch between light and dark themes, and then attach the button to JavaScript code that performs the actual theme switching. When this is done, you check the finished project in developer tools.
 
 ## Link to JavaScript
 
-Like CSS, you could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
+Like CSS, you could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a pop-up alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
 
-1. In **Visual Studio Code**, type `script:src` and press Enter (Return).
+1. In **Visual Studio Code**, enter `script:src` and press <kbd>Enter</kbd>.
 
 1. Adjust the script element to look like the following. Place it right after the list.
 
@@ -19,7 +19,7 @@ Like CSS, you could add JavaScript directly to the HTML page, but it's better no
     <script src="app.js"></script>
     ```
 
-The script element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` at the end of the `<body>` section allows all the page content to display on the screen first, then load the script.
+The script element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` at the end of the `<body>` section enables all the page content to display on the screen first, and then load the script.
 
 ## Add fault tolerance
 
@@ -32,20 +32,20 @@ The script element could be placed in the `<head>` or elsewhere in the `<body>`.
 
    Using the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. We can detect and plan for when a feature isn't supported or available.
 
-1. Save your changes with the keyboard shortcut Control+S (Windows) or Command+S (macOS).
+1. Save your changes with the keyboard shortcut <kbd>Control+S</kbd> (Windows) or <kbd>Command+S</kbd> (macOS).
 
 ## Set strict mode
 
-As you get started with JavaScript, the initial focus is often working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter; assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution even if the result should be an error. To combat these shortcomings, you can activate *strict mode*, which reduces silent errors, improves performance, provides more warnings, and fewer unsafe features.
+As you get started with JavaScript, the initial focus is often working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter - assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution, even if the result should be an error. To combat these shortcomings, you can activate *strict mode*, which reduces silent errors, improves performance, provides more warnings, and fewer unsafe features.
 
-- In **Visual Studio Code**, open the `app.js` file and type the following.
+- In **Visual Studio Code**, open the `app.js` file, and enter the following.
 
     ```javascript
     'use strict'
     ```
 
 > [!NOTE]
-> You can usually omit semicolons in JavaScript, but it's a good idea to brush up on when semicolons are necessary before making any decisions about that. There's a bit of debate about this topic in the JavaScript community.
+> You can usually omit semicolons in JavaScript, but it's a good idea to understand when semicolons are necessary before making any decisions about that. There's a bit of debate about this topic in the JavaScript community.
 
 ## Add a button
 
@@ -133,7 +133,7 @@ Before you can add the event handler, you need a reference to the button.
     });
     ```
 
-In the preceding code, you use the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically gets the dark theme styles applied instead of light theme. However, the button label also needs to be updated to show the correct theme, so you need to add an `if` statement to check the current theme and update the button label.
+In the preceding code, you used the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically gets the dark theme styles applied instead of light theme. However, the button label also needs to be updated to show the correct theme, so you need to add an `if` statement to check the current theme, and update the button label.
 
 Here is what the complete JavaScript code should look like.
 
@@ -156,7 +156,7 @@ switcher.addEventListener('click', function() {
 });
 ```
 
-It's a JavaScript convention to use *camel case* for variable names with more than one word—for example, the variable `className`.
+It's a JavaScript convention to use *camel case* for variable names with more than one word—for example - the variable `className`.
 
 ## Console message
 
@@ -170,21 +170,21 @@ You can create a hidden message that won't appear on your webpage. However, what
     });
     ```
 
-In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete for `console.log` by typing `log` then hitting enter (return).
+In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete for `console.log` by entering `log`, and then Pressing <kbd>Enter</kbd>.
 
 You can define a text *string* with single or double quotes around the text.
 
 ## Open in browser
 
-As before, even though you were just editing the `app.js` file, to preview the changes, you should select the `index.html` file.
+As previously described, even though you were just editing the `app.js` file, to preview the changes, select the `index.html` file.
 
-1. To preview, select `index.html` and select **Open In Default Browser**.
+1. To preview, select `index.html`, and select **Open In Default Browser**.
 
    The webpage opens in your default browser.
 
    :::image type="content" source="../media/chrome-light-theme-with-button.png" alt-text="Screenshot of website with the button":::
 
-1. Click the new **Dark** button to switch to the dark theme.
+1. Select the new **Dark** button to switch to the dark theme.
 
    :::image type="content" source="../media/chrome-dark-theme-with-button.png" alt-text="Screenshot of website after switching to dark theme":::
 
@@ -192,11 +192,11 @@ As before, even though you were just editing the `app.js` file, to preview the c
 
 ## Check the page in the developer tools
 
-1. Open developer tools.
+1. Open Developer Tools.
 
-   - In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, you can view **Settings and more** with Alt+X and select **Developer Tools**.
+   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is F12 (FN+F12). Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
 
-   - In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is Option+Command+J. (F12 also works.)
+   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd>. (<kbd>F12</kbd> also works.)
 
 1. Select the **Styles** tab.
 
@@ -210,4 +210,4 @@ As before, even though you were just editing the `app.js` file, to preview the c
 
 :::image type="content" source="../media/chrome-console-output.png" alt-text="Screenshot of console message in Chrome":::
 
-Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, the last class name applied, the dark theme, takes precedence. In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strike though text.
+Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, the last class name applied, the dark theme, takes precedence. In the **Styles** tab, you can see that the dark theme rules override the light theme rules, which are shown using strikethrough text.
