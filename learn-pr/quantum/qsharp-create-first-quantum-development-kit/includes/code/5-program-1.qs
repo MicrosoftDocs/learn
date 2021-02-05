@@ -9,12 +9,11 @@ namespace QuantumRNG {
     @EntryPoint()
     operation GenerateRandomBit() : Result {
         // Allocate a qubit.
-        using (q = Qubit()) {
-            // Put the qubit to superposition.
-            H(q);
-            // It now has a 50% chance of being measured 0 or 1.
-            // Measure the qubit value.
-            return MResetZ(q);
-        }
+        use q = Qubit();
+        // Put the qubit to superposition.
+        H(q);
+        // It now has a 50% chance of being measured 0 or 1.
+        // Measure the qubit value.
+        return MResetZ(q);
     }
 }
