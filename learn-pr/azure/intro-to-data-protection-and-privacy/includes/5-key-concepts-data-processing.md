@@ -40,7 +40,7 @@ Similarities between GDPR and CCPA include:
 
 - The CCPA definition of businesses encompasses the GDPR definition of controllers.
 
-<!--ID/SME, please review the following sentences, as I added a description of "valuable consideration" and also tweaked the original sentences. --> There is one significant difference between the GDPR and CCPA. The CCPA has a core requirement that enables consumers to opt-out from the sale of their personal data to third parties. The term *sale* broadly includes data sharing for valuable consideration, which refers to a party either receiving a benefit or incurring a loss for something received or promised.
+There is one significant difference between the GDPR and CCPA. The CCPA has a core requirement that enables consumers to opt-out from the sale of their personal data to third parties. The term *sale* broadly includes data sharing for valuable consideration, which refers to a party either receiving a benefit or incurring a loss for something received or promised.
 
 ## Data processing
 
