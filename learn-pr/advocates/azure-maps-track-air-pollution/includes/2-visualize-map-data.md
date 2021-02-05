@@ -34,7 +34,7 @@ You can set map navigation in your app code. For example, you can set the view t
 
 You can augment maps by adding layers. A layer visualizes data on top of a map. In a later unit in this module, you'll use a layer on a map to visualize air quality data.
 
-When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [MapBox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We'll cover GeoJSON later in this module
+When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [MapBox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We'll cover GeoJSON later in this module.
 
 The different layer types include:
 
