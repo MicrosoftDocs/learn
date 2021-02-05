@@ -1,10 +1,10 @@
-Data is everywhere. It’s on your devices, your organization’s file servers, and on various cloud-storage services. Business and personal data often resided in many locations. Therefore, data leakage, misuse, and loss are more probable than ever before. At the same time, data typically is extremely valuable. Unauthorized, careless, or ignorant processing and use of personal or business data potentially can cause considerable losses for individuals and companies.
+Data is everywhere. It’s on your devices, your organization’s file servers, and on various cloud-storage services. Business and personal data often resides in many locations. Therefore, data leakage, misuse, and loss are more probable than ever before. At the same time, data typically is extremely valuable. Unauthorized, careless, or ignorant processing and use of personal or business data potentially can cause considerable losses for individuals and companies.
 
 That's why data protection is important for companies and individuals. People should understand the need for data protection and learn necessary skills to help protect data. The importance of data protection increases as the amount of data that's created and stored grows exponentially.
 
 Another important consideration is that we're accessing data from everywhere. Individuals and organizations store ever-increasing amounts of data in the cloud and access it from various locations, using many different devices. These devices and locations also play a key role in Contoso’s data-protection strategy.
 
-<!--ID/SME: Please review for technical veracity.--> *Data protection* is a set of processes, procedures, and technologies that help safeguard valuable information from corruption, compromise, or loss. It's important to recognize that there’s no one product or technology that guarantees data protection at any location or on any device. Rather, you need to know about the available procedures, technologies, and products to help protect your data.
+*Data protection* is a set of processes, procedures, and technologies that help safeguard valuable information from corruption, compromise, or loss. It's important to recognize that there’s no one product or technology that guarantees data protection at any location or on any device. Rather, you need to know about the available procedures, technologies, and products to help protect your data.
 
 To help implement data protection, you should consider:
 
@@ -14,7 +14,7 @@ To help implement data protection, you should consider:
 
 - Applicable data-protection requirements and regulations. Laws, regulations, and policies often define data-protection requirements. To efficiently help implement data protection, you should work with your legal representation to ensure you have a solid knowledge of these requirements.
 
-- <!--ID/SME: Please review for technical veracity.--> Technologies that enable data protection. Again, there isn't a single technology that enables data protection in any scenario. To help protect your data efficiently, you should be familiar with the most common platforms, processes, and technologies that apply to your situation.
+- Technologies that enable data protection. Again, there isn't a single technology that enables data protection in any scenario. To help protect your data efficiently, you should be familiar with the most common platforms, processes, and technologies that apply to your situation.
 
 ## Data protection vs. data privacy
 It’s also important to know the difference between data protection and data privacy. Data protection usually pertains to helping protect data from unauthorized use, leakage, or loss. Data privacy generally focuses on managing access to, and the use of, data.
