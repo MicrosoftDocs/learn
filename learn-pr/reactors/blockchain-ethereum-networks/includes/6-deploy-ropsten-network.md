@@ -106,9 +106,9 @@ Return to the *todolist* project folder in Visual Studio Code.
     ```javascript
     ropsten: {
        provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/${infuraKey}`),
-       network_id: 3,       // Ropsten ID
+       network_id: 3,       // Ropsten's id
        gas: 5500000,        // Ropsten has a lower block limit than mainnet
-       confirmations: 2,    // # of confirmations to wait between deployments (default: 0)
+       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
        timeoutBlocks: 200,  // # of blocks before a deployment times out (minimum/default: 50)
        skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
      },
@@ -219,5 +219,3 @@ In [Ropsten Etherscan](https://ropsten.etherscan.io?azure-portal=true), enter th
 :::image type="content" source="../media/ropsten-etherscan-with-deployed-contract.png" alt-text="Screenshot showing the contract deployed in Etherscan.":::
 
 You can also verify your deployment by opening a new terminal window within Visual Studio Code. You interact with your contract by using the Truffle console like you do on the Ganache development blockchain. 
-
-The following sample code displays two active networks. Continue to interact with and inspect transactions by using the Truffle console and Ropsten Etherscan.
