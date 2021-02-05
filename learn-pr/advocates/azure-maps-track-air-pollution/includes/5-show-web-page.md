@@ -255,7 +255,7 @@ To set up debugging for your Flask app:
 
 1. In the terminal output, position your cursor on the IP address link. Select Ctrl+Click to open the app in your web browser. If you give the browser permission to get your location, it centers on your current location. Otherwise, the app centers on the Microsoft headquarters in Redmond, Washington, USA.
 
-    :::image type="content" source="../media/map-in-edge.png" alt-text="Screenshot of the map running in the Microsoft Edge web browser." lightbox="../media/map-in-edge.png"::: 
+    :::image type="content" source="../media/map-in-edge.png" alt-text="Screenshot of the map running in the Microsoft Edge web browser." lightbox="../media/map-in-edge.png#lightbox"::: 
 
    Try moving around the map by dragging, using the mouse wheel, or pinching to zoom in and out, depending on your device input options.
 

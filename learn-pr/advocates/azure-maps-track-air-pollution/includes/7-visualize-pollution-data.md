@@ -46,7 +46,7 @@ To convert AQI data to a GeoJSON feature collection:
 
     1. The geometry of the feature is a location `Point`, with the coordinates set to the longitude `lon` and latitude `lat`.
 
-    1. Instead of plotting the AQI measurement directly, it's easier to depict the data by using a colored bubble. Convert the AQI measurement to a color value as an RGB hex string. Then, add the converted color value to the feature’s `properties` array.
+    1. Instead of plotting the AQI measurement directly, it's easier to represent the data as a colored bubble. Convert the AQI measurement to a color value as an RGB hex string. Then, add the converted color value to the feature’s `properties` array.
 
     Here's the GeoJSON for the data in this example:
     
