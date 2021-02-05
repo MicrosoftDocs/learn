@@ -53,7 +53,7 @@ Azure is a multitenant service that uses logical isolation to segregate data sto
 
 ### Data encryption
 
-<!--ID/SME Please review for technical accuracy. --> You can help protect your data confidentiality and integrity by encrypting data in storage (at rest) and in transit. Some Azure services enable you to decide between Microsoft-managed or customer-managed encryption keys. Azure supports various encryption models, including client-side and server-side encryption. For data at rest, Azure offers several flexible encryption capabilities from which you can choose.
+You can help protect your data confidentiality and integrity by encrypting data in storage (at rest) and in transit. Some Azure services enable you to decide between Microsoft-managed or customer-managed encryption keys. Azure supports various encryption models, including client-side and server-side encryption. For data at rest, Azure offers several flexible encryption capabilities from which you can choose.
 
 #### Azure Disk Encryption and Azure Key Vault
 
@@ -61,7 +61,7 @@ Azure Disk Encryption uses the industry-standard BitLocker feature of Windows an
 
 ### Protocols
 
-<!--ID/SME Please review for technical accuracy. Acrolinx really wanted this paragraph to have more simple, short sentences and less technical verbiage. I took my best shot.-->Azure uses industry-standard transport protocols for in-transit data. These protocols include TLS 1.2+ between devices and Microsoft datacenters, and within datacenters. You can enable encryption for traffic between your VMs and users. Use Server Message Block (SMB) 3.0 in VMs that are running Windows Server 2012 or newer to encrypt in-transit data. This encryption occurs over Azure virtual networks, helping secure data transfers. Administrators can enable SMB encryption for an entire server or specific shares. You can use Secure Shell (SSH) to connect to Linux VMs that are running in Azure. SSH is an encrypted connection protocol that allows you to sign in securely over an unsecured connection.
+Azure uses industry-standard transport protocols for in-transit data. These protocols include TLS 1.2+ between devices and Microsoft datacenters, and within datacenters. You can enable encryption for traffic between your VMs and users. Use Server Message Block (SMB) 3.0 in VMs that are running Windows Server 2012 or newer to encrypt in-transit data. This encryption occurs over Azure virtual networks, helping secure data transfers. Administrators can enable SMB encryption for an entire server or specific shares. You can use Secure Shell (SSH) to connect to Linux VMs that are running in Azure. SSH is an encrypted connection protocol that allows you to sign in securely over an unsecured connection.
 
 #### Azure VPN encryption
 
