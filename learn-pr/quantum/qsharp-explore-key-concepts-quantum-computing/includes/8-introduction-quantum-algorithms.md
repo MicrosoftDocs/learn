@@ -1,3 +1,5 @@
+Congratulations, space explorer! You've learned the basic concepts on quantum computing, and you've successfully completed the first steps of the training program. 
+
 In this part, you explore some famous quantum computing algorithms.
 
 You'll learn the basics of how they use superposition, interference, and entanglement to achieve a quantum advantage over classical algorithms. In later modules, you'll explore these algorithms in more detail.
@@ -87,7 +89,7 @@ If you're interested in the details of this algorithm and want to implement it
 in Q#, see the [Quantum Katas tutorial for the Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true) and
 the [sample for the Deutsch-Jozsa algorithm](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/simple-algorithms/DeutschJozsa.qs?azure-portal=true).
 
-![Diagram summarizing the Deutsch-Jozsa algorithm.](../media/8-deutsch–jozsa.svg)
+![Diagram summarizing the Deutsch-Jozsa algorithm.](../media/8-deutsch-jozsa.svg)
 
 ## Shor's algorithm
 

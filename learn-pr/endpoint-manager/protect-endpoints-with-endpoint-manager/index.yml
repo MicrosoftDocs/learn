@@ -16,13 +16,13 @@ abstract: |
   - Understand key endpoint management considerations involving the endpoint environment and available platforms.
 prerequisites: None
 iconUrl: /learn/achievements/protect-endpoints-with-endpoint-manager.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:
 - administrator
 products:
-- azure
+- mem
 units:
 - learn.protect-endpoints-with-endpoint-manager.1-introduction
 - learn.protect-endpoints-with-endpoint-manager.2-manage-protect-devices

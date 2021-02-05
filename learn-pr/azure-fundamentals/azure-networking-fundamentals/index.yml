@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.azure-networking-fundamentals
 metadata:
-  title: Explore Azure networking services
-  description: Learn about the core networking resources that are available in Azure, such as Azure Virtual Network, Azure VPN Gateway, and Azure ExpressRoute.
+  title: Explore Azure networking services (AZ-900)
+  description: Learn about the core networking resources that are available in Azure, such as Azure Virtual Network, Azure VPN Gateway, and Azure ExpressRoute. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure networking services
@@ -15,8 +15,8 @@ abstract: |
   - Describe the core networking resources that are available in Azure.
   - Describe the benefits and usage of Virtual Network, VPN Gateway, and ExpressRoute.
 prerequisites: | 
-  - You should be familiar with basic network concepts and terminology.
-  - Familiarity with cloud computing is helpful but isn't necessary.
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/azure-networking-fundamentals.svg
 levels:
 - beginner

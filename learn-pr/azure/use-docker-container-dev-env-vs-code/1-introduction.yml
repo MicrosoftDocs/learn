@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-docker-container-dev-env-vs-code.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Get an introduction to containerized development environments in Visual Studio Code.
+  ms.date: 11/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

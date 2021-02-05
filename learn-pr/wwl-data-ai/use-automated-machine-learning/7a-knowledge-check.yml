@@ -3,8 +3,8 @@ uid: learn.wwl.use-automated-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 09/25/2020
+  description: "Knowledge check"
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,24 +17,24 @@ quiz:
     choices:
     - content: "Classification"
       isCorrect: false
-      explanation: "That is incorrect. To predict a numeric value, use a regression model."
+      explanation: "Incorrect. To predict a numeric value, use a regression model."
     - content: "Regression"
       isCorrect: true
       explanation: "That is correct. To predict a numeric value, use a regression model."
     - content: "Time series forecasting"
       isCorrect: false
-      explanation: "That is incorrect. To predict a numeric value, use a regression model."
-  - content: "A bank wants to use historic loan repayment records to categorize loan applications as low-risk or high-risk based on characteristics like the loan amount, the income of the borrower, and the loan period. What kind of machine learning model should the dealership use automated machine learning to create?"
+      explanation: "Incorrect. To predict a numeric value, use a regression model."
+  - content: "A bank wants to use historic loan repayment records to categorize loan applications as low-risk or high-risk based on characteristics like the loan amount, the income of the borrower, and the loan period. What kind of machine learning model should the bank use automated machine learning to create?"
     choices:
     - content: "Classification"
       isCorrect: true
       explanation: "That is correct. To predict a category, or class, use a classification model."
     - content: "Regression"
       isCorrect: false
-      explanation: "That is incorrect. To predict a category, or class, use a classification model."
+      explanation: "Incorrect. To predict a category, or class, use a classification model."
     - content: "Time series forecasting"
       isCorrect: false
-      explanation: "That is incorrect. To predict a category, or class, use a classification model."
+      explanation: "Incorrect. To predict a category, or class, use a classification model."
   - content: "You want to use automated machine learning to train a regression model with the best possible *R2 score*. How should you configure the automated machine learning experiment?"
     choices:
     - content: "Set the Primary metric to R2 score"
@@ -42,7 +42,7 @@ quiz:
       explanation: "That is correct. The primary metric determines the metric used to evaluate the best performing model."
     - content: "Block all algorithms other than GradientBoosting"
       isCorrect: false
-      explanation: "That is incorrect. The choice of algorithms does not determine the metric used to evaluate the best performing model."
+      explanation: "Incorrect. The choice of algorithms does not determine the metric used to evaluate the best performing model."
     - content: "Enable featurization"
       isCorrect: false
-      explanation: "That is incorrect. Enabling featurization does not determine the metric used to evaluate the best performing model."
+      explanation: "Incorrect. Enabling featurization does not determine the metric used to evaluate the best performing model."

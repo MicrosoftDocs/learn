@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-to-azure-digital-twins.use-cases
+metadata:
+  title: Azure Digital Twins use cases in different industries
+  description: This unit outlines use cases in different industries
+  ms.date: 11/4/2020
+  author: raniabayoumy
+  ms.author: bamut
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Digital Twins use cases in different industries
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-use-cases.md)]

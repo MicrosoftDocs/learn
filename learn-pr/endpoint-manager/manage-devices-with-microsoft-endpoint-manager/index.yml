@@ -17,13 +17,13 @@ abstract: |
   - Learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
 prerequisites: None
 iconUrl: /learn/achievements/device-management-with-microsoft-endpoint-manager.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:
 - administrator
 products:
-- azure
+- mem
 units:
 - learn.manage-devices-with-microsoft-endpoint-manager.1-introduction
 - learn.manage-devices-with-microsoft-endpoint-manager.2-understand-provisioning

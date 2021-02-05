@@ -24,7 +24,7 @@ Workflow Automations are created directly in the Security Center portal.
    |Alert name contains    | _Malware_      |
    |Alert severity    |  _All severities selected_      |
 
-1. Under **Actions** you can select an existing Azure Logic App, or create a new one. Since we don't have any yet, select the **Create a new one** link to build a new Logic App.
+1. Under **Actions** you can select an existing Azure Logic App, or create a new one. Since we don't have any yet, select the **visit the Logic Apps page** link to build a new Logic App.
 
     A new window will open in the Azure portal with the Logic Apps view. Make sure you're still in the Microsoft Learn Sandbox directory before continuing.
 

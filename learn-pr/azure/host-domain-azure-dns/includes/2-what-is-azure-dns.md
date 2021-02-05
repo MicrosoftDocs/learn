@@ -29,7 +29,7 @@ Here's a simplified overview of the process a DNS server uses when it resolves a
 
 - Checks to see if the domain name is stored in the short-term cache. If so, the DNS server resolves the domain request.
 - If the domain isn't in the cache, it contacts one or more DNS servers on the web to see if they have a match. When a match is found, the DNS server updates the local cache and resolves the request.
-- If the domain isn't found after a reasonable number of DNS checks, the DNS server responds with a *domain cannot be found* (404) error.
+- If the domain isn't found after a reasonable number of DNS checks, the DNS server responds with a *domain cannot be found* error.
 
 ### IPv4 and IPv6
 

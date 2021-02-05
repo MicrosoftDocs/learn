@@ -3,8 +3,8 @@ uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.explore-d
 title: Explore data
 metadata:
   title: Explore data
-  description: "How do you know if a clustering model is effective? Learn how to evaluate clustering performance in this unit."
-  ms.date: 10/16/2020
+  description: "Explore data"
+  ms.date: 01/21/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -1,12 +1,16 @@
-The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to display many data to users that are human readable include dates, times, and numbers. .NET has the capabilities to do this, but the developers are certain someone has solved this problem. So they need a framework, and after some searching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers, and quantities. At this point, they just want you to install Humanizer, write a couple of data manipulations, and run them to see if Humanizer delivers on its promise.
+The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to display human-readable data to users, including dates, times, and numbers. 
 
-## Creating a sample .NET project
+.NET has the capabilities to do this, but the developers are certain someone has solved this problem. They need a framework. After some searching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of their .NET needs for manipulating and displaying strings, enumerations, dates, times, timespans, numbers, and quantities. 
 
-In order to set up our .NET project to work with dependencies we will use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project really easy. If you do not wish to use another code editor you can run the commands in this module in a terminal.
+At this point, the developers want you to install Humanizer, write a couple of data manipulations, and run them to see if Humanizer delivers on its promise.
+
+## Create a sample .NET project
+
+To set up a .NET project to work with dependencies, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named `DotNetDependencies` in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named **DotNetDependencies** in the location of your choice, and then click **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
@@ -38,21 +42,19 @@ The terminal window displays "Hello World!" as output.
 
 ## Set up Visual Studio Code for .NET debugging
 
-Open *Program.cs* by clicking on it.
+Open Program.cs. The first time you open a C# file in Visual Studio Code, you get a prompt to install recommended extensions for C#. Select the **Install** button in the prompt.
 
-The first time you open a C# file in Visual Studio Code, you will receive a prompt to install recommended extensions for C#. Click the **Install** button in the prompt.
+:::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of the Visual Studio Code prompt for recommended extensions.":::
 
-:::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of Visual Studio Code recommended extension prompt.":::
+Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select  **Yes**. 
 
-Visual Studio Code will install the **C#** extension, and will show an additional prompt to add required assets to build and debug your project. Click the **Yes** button. 
+:::image source="../media/install-required-assets.png" alt-text="Screenshot of the Visual Studio Code prompt for required assets.":::
 
-:::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code required assets prompt.":::
+You can close the **Extension: C#** tab to focus on the code we'll be writing.
 
-You can close the tab titled "Extension: C#" to focus on the code we'll be writing.
+## Add a NuGet package by using the .NET Core tool 
 
-## Add a NuGet package by using the dotnet tool 
-
-1. Open Program.cs. It should look like this:
+1. Open **Program.cs**. It should look like this:
     
     ```csharp
     using System;
@@ -82,7 +84,7 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be writi
 
     ```xml
     <ItemGroup>
-        <PackageReference Include="Humanizer" Version="2.7.9 />
+        <PackageReference Include="Humanizer" Version="2.7.9" />
     </ItemGroup>
     ```
 
@@ -92,7 +94,7 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be writi
     using Humanizer;
     ```
 
-1. Add the following content to the Program.cs file under the `Program` class
+1. Add the following content to the Program.cs file under the `Program` class:
 
     ```csharp
     static void HumanizeQuantities()
@@ -124,7 +126,7 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be writi
     }
     ```
 
-1. Run the application by typing this command in the terminal:
+1. Run the application by entering this command in the terminal:
 
     ```dotnetcli
     dotnet run
@@ -145,4 +147,4 @@ You can close the tab titled "Extension: C#" to focus on the code we'll be writi
     2 weeks
     ```
 
-Congratulations. You've managed to successfully install Humanizer as a dependency and write logic for application code to make data more human readable. Humanizer seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
+Congratulations. You've successfully installed Humanizer as a dependency and written logic for application code to make data more human-readable. Humanizer seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.

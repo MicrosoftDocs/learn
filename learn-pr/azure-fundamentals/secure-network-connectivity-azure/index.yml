@@ -1,10 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.secure-network-connectivity-azure
 metadata:
-  description: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
+  title: Secure network connectivity on Azure (AZ-900)
+  description: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure network connectivity on Azure
@@ -18,7 +19,7 @@ abstract: |
   * Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
-  - Familiarity with cloud computing is helpful but isn't necessary.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/secure-network-connectivity.svg
 levels:
 - beginner

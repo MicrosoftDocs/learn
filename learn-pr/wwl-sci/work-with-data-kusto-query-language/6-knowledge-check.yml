@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-data-kql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which KQL statement should you use to parse external data into a virtual table?"
+    choices:
+    - content: "parse_json"
+      isCorrect: false
+      explanation: "Incorrect.  This function will parse JSON data already imported."
+    - content: "extract"
+      isCorrect: false
+      explanation: "Incorrect. This function will extract data from a string field using a regular expression."
+    - content: "externaldata"
+      isCorrect: true
+      explanation: "Correct.  Use the externaldata operator to create a virtual table from an external source."
+  - content: "A Dynamic field contains which of the following items?"
+    choices:
+    - content: "Calculated data."
+      isCorrect: false
+      explanation: "Incorrect.  The data in the field is a string of key-value pairs"
+    - content: "Key-value pair data."
+      isCorrect: true
+      explanation: "Correct.  The properties in the field are accessed with the dot notation."
+    - content: "External data."
+      isCorrect: false
+      explanation: "Incorrect.  The data in the field is a string of key-value pairs"
+  - content: "To create a virtual table, save your KQL as a which type?"
+    choices:
+    - content: "Module."
+      isCorrect: false
+      explanation: "Incorrect. Functions define a virtual table."
+    - content: "Function."
+      isCorrect: true
+      explanation: "Correct.  Functions then can be referenced in other KQL statements."
+    - content: "Definition."
+      isCorrect: false
+      explanation: "Incorrect. Functions define a virtual table."

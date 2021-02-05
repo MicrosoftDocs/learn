@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.management-fundamentals
 metadata:
-  title: Choose the best tools for managing and configuring your Azure environment
-  description: Explore the Azure management, administration, and reporting tools, and choose the ones that best meet your organization's needs.
+  title: Choose the best tools for managing and configuring your Azure environment (AZ-900)
+  description: Explore the Azure management, administration, and reporting tools, and choose the ones that best meet your organization's needs. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best tools for managing and configuring your Azure environment
@@ -14,8 +14,8 @@ abstract: |
   After completing this module, you'll be able to:
   - Choose the Azure management tools that best address your organization's technical needs and challenges.
 prerequisites: |
-  - Familiarity with basic computing concepts and terminology
-  - Familiarity with cloud computing is helpful but not necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 ratingEnabled: true
 iconUrl: /learn/achievements/management-fundamentals.svg
 levels:

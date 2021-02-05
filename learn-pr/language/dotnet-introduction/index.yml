@@ -2,24 +2,26 @@
 uid: learn.languages.dotnet-introduction
 metadata:
   title: Introduction to .NET
-  description: Get started with learning .NET by understanding what .NET is, how it works, and quickly build a small app in a web-based .NET environment.
+  description: Start learning about .NET. Understand what .NET is and how it works. Quickly build a small app in a web-based .NET environment.
   ms.date: 10/12/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to .NET
-summary: Get started with learning .NET by understanding what .NET is, how it works, and quickly build a small app in a web-based .NET environment.
+summary: Start learning about .NET. Understand what .NET is and how it works, and quickly build a small app in a web-based .NET environment.
 abstract: |
   By the end of this module, you'll be able to:
     
   - Describe the major parts of .NET and its ecosystem.
-  - Write code in Try .NET and explain how the different parts of .NET come together to produce a running application.
+  - Explain how .NET languages and the .NET compiler, runtime, and libraries work together to produce a running application.
   - Choose when it makes sense to use .NET to build your applications.
 prerequisites: |
-  - No familiarity with C# or .NET is assumed, though it might be helpful
+  - You should have already written your first lines of C# code.
+  - You should be able to recognize how to use `Console.WriteLine()` to send text to an output window.
+  - You should be able to recognize minor issues in your code and to fix them.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/dotnet-introduction.svg
 levels:
 - beginner
 roles:

@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of the Govern methodology before starting this exercise.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: To address the risks and concerns raised by the Tailwind Traders CIO, which of the following would you act on first?
+    choices:
+    - content: Implement a governance foundation in Azure.
+      isCorrect: false
+      explanation: Governance tools can't address poorly defined corporate policy.
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
+      isCorrect: True
+      explanation: Starting with sound corporate policy will make all downstream implementations go smoother.
+    - content: Deploy cost management controls and processes.
+      isCorrect: false
+      explanation: It will be hard to address cost management without a clear set of policies and a governance foundation.
+    - content: Deploy security baseline controls and processes.
+      isCorrect: false
+      explanation: It will be hard to address security baseline without a clear set of policies and a governance foundation.
+  - content: Which would you address second?
+    choices:
+    - content: Implement a governance foundation in Azure.
+      isCorrect: True
+      explanation: A governance foundation will implement the tools and a few references to begin building your cloud governance solutions.
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
+      isCorrect: false
+      explanation: Corporate policy should be number one on the list of things to address.
+    - content: Deploy cost management controls and processes.
+      isCorrect: false
+      explanation: It will be hard to address cost management without a clear set of policies and a governance foundation.
+    - content: Deploy security baseline controls and processes.
+      isCorrect: false
+      explanation: It will be hard to address security baseline without a clear set of policies and a governance foundation.
+  - content: Which will deliver the most visible improvement based on the existing corporate policy?
+    choices:
+    - content: Implement a governance foundation in Azure.
+      isCorrect: false
+      explanation: This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team.
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
+      isCorrect: false
+      explanation: Corporate policy is important, but few will initially see the value of this exercise.
+    - content: Deploy cost management controls and processes.
+      isCorrect: false
+      explanation: While important, cost management won't help with the security concerns.
+    - content: Deploy Security baseline controls and processes.
+      isCorrect: true
+      explanation: In the narrative the visible pain points can be addressed through an automated security baseline to reduce security risks.
+  - content: Which will create the most confidence with the Chief Information Officer?
+    choices:
+    - content: Implement a governance foundation in Azure.
+      isCorrect: false
+      explanation: This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team.
+    - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
+      isCorrect: false
+      explanation: Corporate policy is important, but few will see the value of this exercise initially.
+    - content: Deploy Cost Management controls and processes.
+      isCorrect: true
+      explanation: In this narrative the CIO expressed concerns with cost. Addressing those concerns with cost management controls will build confidence.
+    - content: Deploy security baseline controls and processes.
+      isCorrect: false
+      explanation: The Chief Information Officer (CIO) injected cost risks and concerns into the list when the existing policy had nothing to do with cost. This has also been a message shared by the CIO throughout this narrative.

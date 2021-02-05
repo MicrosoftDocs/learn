@@ -52,7 +52,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     :::image source="../media/4-create-site.png" alt-text="Screenshot of Azure portal showing WordPress resource type summary.":::
 
-1. Next, you're presented several options to configure your deployment. Enter the following information:
+1. Next, you're presented with several options to configure your deployment. Enter the following information:
 
     1. **App Name**: Choose a unique value for the App name. It will form part of a Fully Qualified Domain Name (FQDN).
     1. **Subscription**: Make sure the **Concierge Subscription** is selected.

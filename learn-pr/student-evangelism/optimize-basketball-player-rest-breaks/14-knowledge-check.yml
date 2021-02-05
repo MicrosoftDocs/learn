@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.14-knowledge-check
+metadata:
+  title: Check your knowledge
+  description: Check your knowledge
+  ms.date: 12/14/2020
+  author: sguthals 
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Check your knowledge
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "What type of machine learning model is effective for predicting one value based on many other values?"
+    choices:
+    - content: "Decision tree"
+      isCorrect: false
+      explanation: "Incorrect. Decision trees typically are used in classification problems."
+    - content: "Principal component analysis, or PCA"
+      isCorrect: false
+      explanation: "Incorrect. PCA typically is used in anomaly detection problems."
+    - content: "K-means"
+      isCorrect: false
+      explanation: "Incorrect. K-means typically is used in clustering problems."
+    - content: "Linear regression"
+      isCorrect: true
+      explanation: "Correct. Regression is the act of taking many complex data pieces and determining a numerical outcome."
+  - content: "What is one way to create randomized sample data that is close to accurate?"
+    choices:
+    - content: "Use a random number within the standard deviation of input values for a machine learning algorithm."
+      isCorrect: true
+      explanation: "Correct. The standard deviation represents a reasonable range of values for an accurate prediction."
+    - content: "Use `random.randrange`, with the smallest and largest number of input values."
+      isCorrect: false
+      explanation: "Incorrect. Although it's *possible* that a random number within that range is effective, the standard deviation will give a more accurate range."
+    - content: "It's never useful to create randomized sample data."
+      isCorrect: false
+      explanation: "Incorrect. Although randomized sample data shouldn't be used to make critical decisions, they can serve as effective testing data."
+    - content: "Any integer between 0 and 100."
+      isCorrect: false
+      explanation: "Incorrect. Although it's *possible* that a random number within that range is effective, the standard deviation will give a more accurate range."
+  - content: "Static web apps in Azure take significant expertise to develop and deploy."
+    choices:
+    - content: "True - Static web apps in Azure typically are used by web developers with decades of experience."
+      isCorrect: false
+      explanation: "Incorrect. Static web apps in Azure, although powerful for professionals, also are novice-friendly!"
+    - content: "True - Static web apps in Azure are only for expert Flask developers."
+      isCorrect: false
+      explanation: "Incorrect. Although there is a Microsoft Learn module that guides you through creating and deploying a Flask app by using static web apps in Azure, that's just one of many options, and they can be novice-friendly!"
+    - content: "False - Static web apps in Azure have many entry points and can be novice-friendly."
+      isCorrect: true
+      explanation: "Correct. Static web apps in Azure can be created and deployed in numerous ways and for numerous languages, some more novice-friendly and others better for more experienced developers."
+    - content: "False - Static web apps in Azure are only for learners who are just starting out."
+      isCorrect: false
+      explanation: "Incorrect. Although there are entry points to using static web apps in Azure for novices, there are also many ways they can support more experienced developers' workflows."

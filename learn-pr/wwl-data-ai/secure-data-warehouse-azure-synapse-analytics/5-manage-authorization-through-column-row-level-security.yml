@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.manage-authorization-through-column-row-level-security
+title: Manage authorization through column and row level security
+metadata:
+  title: Manage authorization through column and row level security
+  description: "Manage authorization through column and row level security"
+  ms.date: 11/27/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-manage-authorization-through-column-row-level-security.md)]

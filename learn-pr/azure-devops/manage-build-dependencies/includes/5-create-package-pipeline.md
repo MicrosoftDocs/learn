@@ -1,8 +1,8 @@
-Here you'll get the team's new code for the *Tailspin.SpaceGame.Web.Models* project that is now separate from the *Tailspin.SpaceGame.Web* project. You'll create a Microsoft Azure Pipelines project for the Models project, and see the artifact in Microsoft Azure Artifacts with a version number of 1.0.0 in your feed.
+Here, you'll get the team's new code for the *Tailspin.SpaceGame.Web.Models* project that is now separate from the *Tailspin.SpaceGame.Web* project. You'll create a Microsoft Azure Pipelines project for the Models project, and see the artifact in Microsoft Azure Artifacts with a version number of 1.0.0 in your feed.
 
 ## What changes were made to the project?
 
-Recall that the _Space Game_ website is an ASP.NET Core application. It uses the Model-View-Controller (MVC) pattern to separate data from how that data is displayed in the user interface. Andy and Mara want to move the model classes to a separate library so that multiple projects can use those classes.
+Recall that the _Space Game_ website is an ASP.NET Core app. It uses the Model-View-Controller (MVC) pattern to separate data from how that data is displayed in the user interface. Andy and Mara want to move the model classes to a separate library so that multiple projects can use those classes.
 
 To do that, they create a new C# project, called **Tailspin.SpaceGame.Web.Models**, that contains only the model classes. At the same time, they remove the model classes from their existing project, **Tailspin.SpaceGame.Web**. They replace the model classes in their existing project with a reference to the **Tailspin.SpaceGame.Web.Models** project.
 
@@ -25,18 +25,18 @@ The first step is to fork the **mslearn-tailspin-spacegame-web-models** reposito
 
 To fork the **mslearn-tailspin-spacegame-web-models** project into your GitHub account:
 
-1. From a web browser, go to [GitHub](https://github.com?azure-portal=true) and sign in.
+1. From a web browser, go to [GitHub](https://github.com?azure-portal=true), and sign in.
 1. Go to the [mslearn-tailspin-spacegame-web-models](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-models?azure-portal=true) project.
 1. Select **Fork**.
-1. Follow the instructions to fork the repository into your account.
+1. To fork the repository into your account, follow the instructions.
 
 ### Clone your fork locally
 
 To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer:
 
-1. Go to your fork of the **mslearn-tailspin-spacegame-web-models** project on GitHub.
-1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard.
-1. From Visual Studio Code, go to the terminal window and run this `git clone` command. Replace the URL that's shown with the contents of your clipboard.
+1. On GitHub, go to your fork of the **mslearn-tailspin-spacegame-web-models** project.
+1. Select **Clone or download**. To copy the URL to your clipboard, select the button next to the URL that appears.
+1. From Visual Studio Code, go to the terminal window, and run this `git clone` command. Replace the URL that's shown with the contents of your clipboard.
 
     ```bash
     git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-models.git
@@ -72,7 +72,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
         projects: '**/*.csproj'
     ```
 
-    This `DotNetCoreCLI@2` task packages the project with a version of 1.0.0:
+    This `DotNetCoreCLI@2` task packages the project with a version of 1.0.0.
 
     ``` yml
     - task: DotNetCoreCLI@2
@@ -89,7 +89,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
     When developing your package, it's common to use the `byPrereleaseNumber` versioning scheme. This appends a unique pre-release suffix, such as "-CI-20190621-042647" to the end of the version number. Following this example, the complete version number would be "1.0.0-CI-20190621-042647".
 
-    This `NuGetCommand@2` task pushes the package to your **Tailspin.SpaceGame.Web.Models** Azure Artifacts feed:
+    This `NuGetCommand@2` task pushes the package to your **Tailspin.SpaceGame.Web.Models** Azure Artifacts feed.
 
     ```yml
     - task: NuGetCommand@2
@@ -105,12 +105,12 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You learned how to set up Azure Pipelines in an earlier module. If you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true).
 
-Since your solution has just the one project in it, the scope of the job agent is limited and cannot access the package. To make sure the agent has the permissions it needs to publish the artifact, you need to turn off **Limit job authorization scope to current project** in the pipeline settings.
+Because your solution has just the one project in it, the scope of the job agent is limited and cannot access the package. To make sure the agent has the permissions it needs to publish the artifact, in the pipeline settings, you need to turn off **Limit job authorization scope to current project**.
 
 To turn off this setting:
 
 1. In Azure DevOps, navigate to your organization.
-1. Select **Organization settings** from the bottom corner.
+1. From the bottom corner, select **Organization settings**.
 1. Under **Pipelines**, select **Settings**.
 1. Turn off **Limit job authorization scope to current project**.
 
@@ -119,19 +119,19 @@ To turn off this setting:
 You need to make a similar change to your project:
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
-1. Select **Project settings** at the bottom left.
-1. Under **Pipelines**, select **Settings**
+1. At the bottom left, select **Project settings**.
+1. Under **Pipelines**, select **Settings**.
 1. Turn off **Limit job authorization scope to current project**.
 
-Next, you'll set up a second pipeline to build the package and upload that package to Azure Artifacts.
+Next, you'll set up a second pipeline to build the package, and upload that package to Azure Artifacts.
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
-1. Select **Pipelines**, from the menu on the left.
+1. From the menu on the left, select **Pipelines**.
 1. Select **+ New Pipeline**.
 1. From the **Connect** tab, select **GitHub**.
 1. From the **Select** tab, select **mslearn-tailspin-spacegame-web-models**.
 
-    If prompted, enter your GitHub credentials. From the page that appears, scroll to the bottom and select **Approve and install**.
+    If prompted, enter your GitHub credentials. From the page that appears, scroll to the bottom, and select **Approve and install**.
 
 1. From the **Review** tab, you see the new pipeline's *azure-pipelines.yml* file.
 1. Select **Run**.
@@ -141,12 +141,12 @@ Next, you'll set up a second pipeline to build the package and upload that packa
 
     ![Screenshot of Azure Artifacts dropdown selection](../media/5-feed-dropdown.png)
 
-    You see the resulting package, **Tailspin.SpaceGame.Web.Models**, in Azure Artifacts. 
+    You see the resulting package, **Tailspin.SpaceGame.Web.Models**, in Azure Artifacts.
 
     ![Screenshot of Azure Artifacts, showing version 1.0 of the package](../media/5-artifacts-package.png)
 
-1. Select the package to go to the details page. Then copy the version number to a location where you can easily access it later.
+1. Select the package to go to the details page. Then, copy the version number to a location where you can easily access it later.
 
     ![Screenshot of Azure Artifacts dropdown selection](../media/5-package-details.png)
 
-    You'll use this version number in the next part.
+    You'll use this version number in the next unit.

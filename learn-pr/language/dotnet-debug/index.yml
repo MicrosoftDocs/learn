@@ -15,7 +15,7 @@ abstract: |
   - Use the Visual Studio Code debugger with a .NET program.
   - Create breakpoints and run your code step by step to find issues.
   - Inspect your program state at any execution step.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/dotnet-debug.svg
 levels:
 - beginner
 roles:

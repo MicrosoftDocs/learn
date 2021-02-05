@@ -53,7 +53,8 @@ There are four different types of flow that you can create:
 - **Automated**: A flow that is started by a trigger from some event. For example, the event could be the arrival of a new tweet or a new file being uploaded.
 - **Button**: Use a button flow to run a repetitive task with a single click from your mobile device.
 - **Scheduled**: A flow that executes on a regular basis such as once a week, on a specific date, or after 10 hours.
-- **Business process**: A flow that models a business process such as the stock ordering process or the complaints procedure.
+- **Business process**: A flow that models a business process such as the stock ordering process or the complaints procedure. 
+  The flow process can have: notification to required people; with their approval recorded; calendar dates for steps; and recorded time of flow steps.
 
 Microsoft Power Automate provides an easy-to-use design surface that anyone can use to create flows of the above types. As the following screenshot illustrates, the designer makes it easy to design and layout your process.
 
@@ -87,7 +88,7 @@ The [Azure App Service](https://azure.microsoft.com/services/app-service/) is a 
 - **Continuous.** These WebJobs run in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
 - **Triggered.** These WebJobs run when you manually start them or on a schedule.
 
-To determine what actions your WebJobs takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Node.js, or Java.
+To determine what actions your WebJobs takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Node.js, or JavaScript.  These WebJOBS do have a few limitations, such as only supporting ASP.NET / SDK 2.x; however SDK 3.x supports .NET Core. 
 
 You can also program a WebJob by using the .NET Framework or the .NET Core Framework and a .NET language such as C# or VB.NET. In this case, you can also use the WebJobs SDK to make the task easier. The SDK includes a range of classes, such as `JobHostConfiguration` and `HostBuilder`, which reduce the amount of code required to interact with the Azure App Service.
 

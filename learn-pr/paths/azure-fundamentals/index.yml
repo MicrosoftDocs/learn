@@ -11,12 +11,14 @@ metadata:
   ms.prod: learning-azure
 title: Azure fundamentals
 summary: |
-  New to the cloud? Azure Fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
+  New to the cloud? Azure fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
 
   > [!NOTE]
-  > We’re retiring this Azure fundamentals learning path on November 9, 2020. If you’ve already started it, be sure to finish by that date. Your completed modules will be visible in your profile. 
+  > Azure fundamentals is being updated to a new series of learning paths.
   > 
-  > If you’re new to cloud or to Azure, start your journey with the [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) learning path. It’s the first in a series of new learning paths that cover foundational knowledge of cloud services and how those services are provided with Microsoft Azure.
+  > If you’ve already started this path, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.
+  >   
+  > Haven’t started yet? Begin the new series with: [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/).
   
   In this learning path, you will:
     - Learn cloud concepts such as High Availability, Scalability, Elasticity, Agility, Fault Tolerance, and Disaster Recovery
@@ -27,6 +29,7 @@ summary: |
   Visit the [Exam AZ-900: Microsoft Azure Fundamentals](https://www.microsoft.com/learning/exam-AZ-900.aspx) page to find training and resources to help you prepare and to schedule your exam.
 prerequisites: None
 iconUrl: /learn/achievements/azure-fundamentals.svg
+hidden: true
 levels:
 - beginner
 roles:

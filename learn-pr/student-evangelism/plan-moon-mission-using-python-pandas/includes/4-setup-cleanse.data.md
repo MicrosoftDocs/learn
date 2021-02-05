@@ -7,12 +7,12 @@ While details of rocket design are proprietary, some information is publicly ava
 We will get into the specifics of that in a later unit, but the critical part for the purposes of the samples is understanding that rocket weight is often measured in kilograms, not grams. We should then manipulate the original data by converting the sample weights into kilograms for easier data analysis later.
 
 ```python
-rock_samples['Weight(g)'] = rock_samples['Weight(g)'].apply(lambda x : x * 0.001)
-rock_samples.rename(columns={'Weight(g)':'Weight(kg)'}, inplace=True)
+rock_samples['Weight (g)'] = rock_samples['Weight (g)'].apply(lambda x : x * 0.001)
+rock_samples.rename(columns={'Weight (g)':'Weight (kg)'}, inplace=True)
 rock_samples.head()
 ```
 
-|   | ID | Mission | Type | Subtype | Weight(g) | Pristine(%) |
+|   | ID | Mission | Type | Subtype | Weight (g) | Pristine (%) |
 |---|---|---|---|---|---|---|
 | 0 | 10001 | Apollo11 | Soil | Unsieved | 0.125 | 88.36 |
 | 1 | 10002 | Apollo11 | Soil | Unsieved | 5.6290 | 93.73 |
@@ -20,15 +20,15 @@ rock_samples.head()
 | 3 | 10004 | Apollo11 | Core | Unsieved | 0.0448 | 71.76 |
 | 4 | 10005 | Apollo11 | Core | Unsieved | 0.0534 | 40.31 |
 
-Here we first modified the values in the **Weight(g)** column to be the same value multiplied by 0.001. Then we modified the name of the column to be more accurate by changing it to **Weight(kg)**.
+Here we first modified the values in the **Weight (g)** column to be the same value multiplied by 0.001. Then we modified the name of the column to be more accurate by changing it to **Weight (kg)**.
 
-## Create a new dataframe
+## Create a new DataFrame
 
-Pandas, the Python library we are using to do our data analysis, has "dataframes," which are really effective for representing 2D data. You might have recognized that, when you run the `rock_samples.head()` code, what is printed out looks almost like a snapshot of an Excel worksheet, which is a great way to think about dataframes.
+Pandas, the Python library we are using to do our data analysis, has a structure called a DataFrame, and it's really effective for representing 2D data. You might have recognized that, when you run the `rock_samples.head()` code, what is printed out looks almost like a snapshot of an Excel worksheet, which is a great way to think about DataFrames in pandas.
 
-The `rock_samples` dataframe has a row for every sample that was collected but, as we mentioned earlier, we want to understand the rock samples in total as they relate to the specific rockets that brought them back. 
+The `rock_samples` DataFrame has a row for every sample that was collected but, as we mentioned earlier, we want to understand the rock samples in total as they relate to the specific rockets that brought them back. 
 
-Create a new dataframe called `missions` that will be a summary of data for each of the six Apollo missions that brought samples back. Create a column in this dataframe called **Mission** that has one row for each mission.
+Create a new DataFrame called `missions` that will be a summary of data for each of the six Apollo missions that brought samples back. Create a column in this DataFrame called **Mission** that has one row for each mission.
 
 ```python
 missions = pd.DataFrame()
@@ -56,15 +56,15 @@ missions.info()
 
 ## Sum total sample weight by mission
 
-Now you can add a new column to the `missions` dataframe to represent the sum of all samples collected on that mission. 
+Now you can add a new column to the `missions` DataFrame to represent the sum of all samples collected on that mission. 
 
 ```python
-sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()
+sample_total_weight = rock_samples.groupby('Mission')['Weight (kg)'].sum()
 missions = pd.merge(missions, sample_total_weight, on='Mission')
-missions.rename(columns={'Weight(kg)':'Sample Weight(kg)'}, inplace=True)
+missions.rename(columns={'Weight (kg)':'Sample weight (kg)'}, inplace=True)
 missions
 ```
-| Index | Mission | Sample Weight(kg) |
+| Index | Mission | Sample weight (kg) |
 |-------|---------|-------------------|
 | 0     | Apollo11 | 21.55424 |
 | 1     | Apollo12 | 34.34238 |
@@ -73,15 +73,15 @@ missions
 | 4     | Apollo16 | 92.46262 |
 | 5     | Apollo17 | 109.44402 |
 
-Let's break out this code a bit. The first line was `sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()`, which can be broken out as follows:
+Let's break out this code a bit. The first line was `sample_total_weight = rock_samples.groupby('Mission')['Weight (kg)'].sum()`, which can be broken out as follows:
 - `rock_samples.groupby('Mission')` - This groups all the rows by the values in the **Mission** column.
-- `rock_samples.groupby('Mission')['Weight(kg)']` - This grabs all the values in the **Weight(kg)** column, but groups by unique values in the **Mission** column.
-- `rock_samples.groupby('Mission')['Weight(kg)'].sum()` - This sums all the values in the **Weight(kg)** column for each unique value in the **Mission** column.
+- `rock_samples.groupby('Mission')['Weight (kg)']` - This grabs all the values in the **Weight (kg)** column, but groups by unique values in the **Mission** column.
+- `rock_samples.groupby('Mission')['Weight (kg)'].sum()` - This sums all the values in the **Weight (kg)** column for each unique value in the **Mission** column.
 
 If you were to print out that one line, you would get a pandas series, which is basically a 1D data type, or a list. The list would have the index be the unique value from the **Mission** column, instead of a number:
 
 ```python
-sample_total_weight = rock_samples.groupby('Mission')['Weight(kg)'].sum()
+sample_total_weight = rock_samples.groupby('Mission')['Weight (kg)'].sum()
 sample_total_weight
 ```
 
@@ -98,24 +98,24 @@ Name: Weight (kg), dtype: float64
 
 The next line, `pd.merge(missions, sample_total_weight, on='Mission')`, can be described as:
 
-> Merge the `missions` dataframe with the `sample_total_weight` series by using the **Mission** column as the index to merge on. What the computer will do is basically this: for each value in the **Missions** column in the `missions` dataframe, find that same value in the  `sample_total_weight` series, and add the value from the series into the row as a new column in the dataframe.  
+> Merge the `missions` DataFrame with the `sample_total_weight` series by using the **Mission** column as the index to merge on. What the computer will do is basically this: for each value in the **Missions** column in the `missions` DataFrame, find that same value in the  `sample_total_weight` series, and add the value from the series into the row as a new column in the DataFrame.  
 
-This example is fairly straightforward, because there are only six rows. So we can confirm that the number 21.55424, for example, was added to the Apollo 11 row in the `missions` dataframe. 
+This example is fairly straightforward, because there are only six rows. So we can confirm that the number 21.55424, for example, was added to the Apollo 11 row in the `missions` DataFrame. 
 
 The next line simply renames the column, just as we did before, to ensure that we are being specific with our data. 
 
-The last line prints out the entire `missions` dataframe. Because there are only six missions, we can print out the entire dataframe and still understand what we are looking at. There is no need to use `head()` to print out only the first five rows.
+The last line prints out the entire `missions` DataFrame. Because there are only six missions, we can print out the entire DataFrame and still understand what we are looking at. There is no need to use `head()` to print out only the first five rows.
 
 ## Get the difference in weights across missions
 
-We're not rocket experts, so it's important to take a look at a lot of different cross sections of data that are available to you. In this case, we can see that the total weight of the samples increased with each mission, but it's hard to immediately see by how much. We can add one more column to the `missions` dataframe that simply grabs the difference between the current row and the row preceding it:
+We're not rocket experts, so it's important to take a look at a lot of different cross sections of data that are available to you. In this case, we can see that the total weight of the samples increased with each mission, but it's hard to immediately see by how much. We can add one more column to the `missions` DataFrame that simply grabs the difference between the current row and the row preceding it:
 
 ```python
-missions['Weight Diff'] = missions['Sample Weight(kg)'].diff()
+missions['Weight diff'] = missions['Sample weight (kg)'].diff()
 missions
 ```
 
-| Index | Mission | Sample Weight(kg) | Weight Diff |
+| Index | Mission | Sample weight (kg) | Weight diff |
 |-------|---------|-------------------|-------------|
 | 0     | Apollo11 | 21.55424 | NaN |
 | 1     | Apollo12 | 34.34238 | 12.78814 |
@@ -124,14 +124,14 @@ missions
 | 4     | Apollo16 | 92.46262 | 17.06352 |
 | 5     | Apollo17 | 109.44402 | 16.98140 |
 
-Notice that in the first row, for Apollo11, the value in the **Weight Diff** column is `NaN`. This is called a *null* value. Because Apollo11 was the first mission, there is no difference between the weight of the rock collected on Apollo11 and that of the previous mission. We can fill this `NaN` value with 0:
+Notice that in the first row, for Apollo11, the value in the **Weight diff** column is `NaN`. This is called a *null* value. Because Apollo11 was the first mission, there is no difference between the weight of the rock collected on Apollo11 and that of the previous mission. We can fill this `NaN` value with 0:
 
 ```python
-missions['Weight Diff'] = missions['Weight Diff'].fillna(value=0)
+missions['Weight diff'] = missions['Weight diff'].fillna(value=0)
 missions
 ```
 
-| Index | Mission | Sample Weight(kg) | Weight Diff |
+| Index | Mission | Sample weight (kg) | Weight diff |
 |-------|---------|-------------------|-------------|
 | 0     | Apollo11 | 21.55424 | 0.00000 |
 | 1     | Apollo12 | 34.34238 | 12.78814 |
@@ -141,7 +141,7 @@ missions
 | 5     | Apollo17 | 109.44402 | 16.98140 |
 
 This Python code did the following:
-- Looked only at the **Weight Diff** column in the `missions` dataframe
+- Looked only at the **Weight diff** column in the `missions` DataFrame
 - Filled all "na" (or null) values with a certain value 
 - The value to fill in the na values is 0
 - Saved the modified list of values for that column back into the column

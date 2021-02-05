@@ -6,7 +6,7 @@ The team moved its applications to the cloud, and it now needs a way to perform 
 
 As you did in the preceding unit, apply the decision criteria you learned about earlier to find the right option.
 
-First, in this scenario, does the Tailwind Traders team need to perform one-off management, administrative, or reporting tasks?  Yes. However, the team already knows that it doesn't want to rely on the Azure portal for these one-off actions.  Therefore, both Azure PowerShell and the Azure CLI are good options.  We'll home in on which tool the team should use in a moment.
+First, in this scenario, does the Tailwind Traders team need to perform one-off management, administrative, or reporting tasks?  Yes. However, the team already knows that it doesn't want to rely on the Azure portal for these one-off actions.  Therefore, both Azure PowerShell and the Azure CLI are good options.  We'll hone in on which tool the team should use in a moment.
 
 Second, in this scenario, does Tailwind Traders need a repeatable and reliable means of deploying its entire infrastructure?  No, not in this scenario.  Therefore, Azure Resource Manager templates (ARM templates) are not the right choice.
 

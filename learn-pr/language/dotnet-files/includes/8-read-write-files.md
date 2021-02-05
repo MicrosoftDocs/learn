@@ -20,19 +20,19 @@ The return object from `ReadAllText` is a string.
 }
 ```
 
-## Parse data in files.
+## Parse data in files
 
-This data in its string format doesn't do you much good. It's still just characters, but now in a format that you can read. You want the ability to parse this data into a format that you can use programmatically. 
+This data in its string format doesn't do you much good. It's still just characters, but now in a format that you can read. You want the ability to parse this data into a format that you can use programmatically.
 
 There are many ways to parse JSON files with .NET, including a community library known as *Json.NET*.
 
-You add the *Json.NET* package to your project using NuGet.
+You add the *Json.NET* package to your project by using NuGet.
 
 ```bash
 dotnet add package Newtonsoft.Json
 ```
 
-Then add `using Newtonsoft.Json` to the top of your class file and then use the `JsonConver.DeserializeObject` method.
+Then add `using Newtonsoft.Json` to the top of your class file, and use the `JsonConvert.DeserializeObject` method.
 
 ```csharp
 class SalesTotal
@@ -46,7 +46,7 @@ Console.WriteLine(data.Total);
 ```
 
 > [!TIP]
-> Files come in a variety of formats. JSON files are the most desirable to work with because of the built-in support in the language. However, you might encounter files that are .csv, fixed width, or some other format. In that case, it's best to search nuget.org for a parser for that file type.
+> Files come in a variety of formats. JSON files are the most desirable to work with because of the built-in support in the language. You also might encounter files that are .csv, fixed width, or some other format. In that case, it's best to search nuget.org for a parser for that file type.
 
 ## Write data to files
 
@@ -63,7 +63,7 @@ File.WriteAllText($"SalesTotals{Path.DirectorySeparatorChar}totals.txt", data.To
 
 ### Append data to files
 
-In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can do this with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it does not already exist.
+In the preceding example, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can append data with the `File.AppendAllText` method. By default, `File.AppendAllText` will create the file if it doesn't already exist.
 
 ```csharp
 var data = JsonConvert.DeserializeObject<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");

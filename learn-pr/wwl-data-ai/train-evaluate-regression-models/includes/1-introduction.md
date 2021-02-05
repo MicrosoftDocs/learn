@@ -4,7 +4,7 @@ For example, a company that rents bicycles might want to predict the expected nu
 
 ![Weather and date features predicting cycle rentals](../media/cycle-rentals.png)
 
-## Training and evaluating a regression model
+## Train and evaluate a regression model
 
 Regression works by establishing a relationship between variables in the data that represent characteristics (known as the *features*) of the thing being observed, and the variable we're trying to predict (known as the *label*). In this case, we're observing information about days, so the features include things like the day of the week, month, temperature, rainfall, and so on; and the label is the number of bicycle rentals.
 

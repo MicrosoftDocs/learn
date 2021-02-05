@@ -8,13 +8,13 @@ In this module, you'll write a program that searches through folders for sales f
 
 By the end of this module, you will be able to:
 
-- Work with directories
-- Create and delete files
-- Read from files
-- Write to files
-- Parse data in files
+- Work with directories.
+- Create and delete files.
+- Read from files.
+- Write to files.
+- Parse data in files.
 
 ## Prerequisites
 
-- Experience writing C# at the beginner level 
+- Experience writing C# at the beginner level
 - Familiarity with basic programming constructs, such as loops and `if` statements

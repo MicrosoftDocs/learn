@@ -1,20 +1,12 @@
-Our goal in this module was to introduce .NET and help you begin understanding what it is, what are the major facets of the .NET ecosystem, the workflow that developers use, the tools they rely on to build applications, and the scenarios where .NET makes sense. We also built a simple "Hello World" application just to illustrate the workflow and how the different components of .NET work together to build even the most simple application.
+This module's goal was to introduce .NET. By now, you've begun to understand what .NET is and the major parts of the .NET ecosystem. You learned about the workflow that developers use, the tools they rely on to build applications, and the scenarios in which .NET makes sense. You built a simple "Hello World" application to illustrate the workflow and how the parts of .NET work together.
 
 ## Resources
 
-If you want to start with a graphical user interface that will help you build applications with C#, download and install Visual Studio 2019.  As we said earlier in the module, the installation process can take a while and require a lot of internet bandwidth.
-
-[Download Visual Studio 2019](https://visualstudio.microsoft.com/vs/?azure-portal=true)
+If you want to use a graphical user interface to build applications by using C#, [download and install Visual Studio 2019](https://visualstudio.microsoft.com/vs/?azure-portal=true).  As you learned earlier in the module, the installation process can take a while and require a lot of internet bandwidth.
 
 > [!NOTE]
-> If you're not already a (paid) licensed user of Visual Studio, you should download the **Community Edition** which has all of the features you need as you're just getting started.
+> If you're not a (paid) licensed user of Visual Studio, download the *Community edition*, which has all of the features you need to get started.
 
-If you want to start with a command-line interface, download and install both the .NET SDK and Visual Studio Code.
+If you want to start by using a command-line interface, download and install both the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true).
 
-[Download the .NET SDK](https://dotnet.microsoft.com/download?azure-portal=true)
-
-[Download Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
-
-Finally, if you need to learn more about C# before you continue on, check out the following learning path:
-
-[Take your first steps with C#](https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/?azure-portal=true)
+Finally, if you need to learn more about C# before you continue, check out the [Take your first steps with C#](https://docs.microsoft.com/learn/paths/csharp-first-steps/?azure-portal=true) learning path.

@@ -37,11 +37,16 @@ Azure requires you to create the LUIS app in the same geographic location where 
 
 1. Select the **Sign in** link in the upper-right corner.
 1. Sign in with your Microsoft account.
-1. On the **Welcome** page, select **Create a LUIS app now**.
-1. Select **+ Create a new app**.
+1. If a **Welcome** page displays, select **Create a LUIS app now**.
+1. Select **+ New app**.
+
+>[!Note]
+>The portal pages are udpated resulting in different titles for the options and actions. You are creating a new app so choose that option.
+
 1. Give your LUIS app a name, for example, **PictureBotLUIS**.
 1. For **Culture**, select the appropriate choice.
 1. Give your LUIS app a description so it's clear what the app's purpose is.
+1. Select the **Prediction resource** drop-down and choose the resource you created earlier in this exercise.
 1. Select **Done**. 
 
 The newly created app will open to the Dashboard. Select Build on the top nav bar to switch to the Build view for editing your app.

@@ -3,12 +3,13 @@ uid: learn.azure.publish-static-web-app-and-api.3-static-web-apps
 metadata:
   title: Plan your Azure Static Web App
   description: Plan your Azure Static Web App
-  ms.date: 09/21/2020
+  ms.date: 11/09/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
 title: Plan your Azure Static Web App
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/3-static-web-apps.md)]

@@ -30,7 +30,7 @@ Remember, always print as you go to make sure that you're getting the data that 
 
 ```python
 def predict_best_meteor_shower_viewing(city):
-    # Get the latitude of the city from the cities data frame
+    # Get the latitude of the city from the cities DataFrame
     latitude = cities.loc[cities['city'] == city, 'latitude'].iloc[0]
 
     # Get the list of constellations that are viewable from that latitude
@@ -82,7 +82,7 @@ def predict_best_meteor_shower_viewing(city):
         meteor_shower_string = "Unfortunately, " + city + " isn't available for a prediction at this time."
         return meteor_shower_string
 
-    # Get the latitude of the city from the cities data frame
+    # Get the latitude of the city from the cities DataFrame
     latitude = cities.loc[cities['city'] == city, 'latitude'].iloc[0]
 
     # Get the list of constellations that are viewable from that latitude
@@ -96,6 +96,7 @@ def predict_best_meteor_shower_viewing(city):
 ```
 
 Now, at the beginning of the string to return, add a starter sentence:
+
 ```python
 meteor_shower_string = "In " + city + " you can see the following meteor showers:\n"
 ```
@@ -122,6 +123,7 @@ The code should look familiar:
 ```
 
 Remember to test! You can add a print statement at the end. Just make sure to indent it so that it prints each time the `for` loop iterates.
+
 ```python
 print(moon_phases_list)
 ```
@@ -149,6 +151,7 @@ best_moon_date = moon_phases_list.loc[moon_phases_list['percentage'].idxmin()]['
 ```
 
 Then add that information to the string that you'll send back:
+
 ```python
 # Add that date to the string to report back to the user
 meteor_shower_string += meteor_shower + " is best seen if you look towards the " + constellation + " constellation on " +  best_moon_date.to_pydatetime().strftime("%B %d, %Y") + ".\n"
@@ -169,7 +172,7 @@ def predict_best_meteor_shower_viewing(city):
         meteor_shower_string = "Unfortunately, " + city + " isn't available for a prediction at this time."
         return meteor_shower_string
 
-    # Get the latitude of the city from the cities data frame
+    # Get the latitude of the city from the cities DataFrame
     latitude = cities.loc[cities['city'] == city, 'latitude'].iloc[0]
 
     # Get the list of constellations that are viewable from that latitude
@@ -207,11 +210,13 @@ def predict_best_meteor_shower_viewing(city):
 Make sure you're careful with indentation!
 
 Call the function like this:
+
 ```python
 print(predict_best_meteor_shower_viewing('Abu Dhabi'))
 ```
 
 Here's your result:
+
 ```output
 In Abu Dhabi you can see the following meteor showers:
 Lyrids is best seen if you look towards the Lyra constellation on April 22, 2020.
