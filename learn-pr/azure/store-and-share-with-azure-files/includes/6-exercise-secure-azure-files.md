@@ -88,7 +88,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ```
     
     > [!NOTE]
-    > Due to security you now need to use an external web browser.  You will need to type the URL into another device, your phone works well.  Enter the code to completed the connection.
+    > Due to security you now need to use an external web browser.  You will need to type the URL into another device, your phone works well.  Enter the code to complete the connection.
 
 ## Copy local files to Azure
 
