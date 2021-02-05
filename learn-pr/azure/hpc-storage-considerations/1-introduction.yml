@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.hpc-storage-considerations.1-introduction
-title: HPC Storage Considerations
+title: Introduction
 metadata:
-  title: HPC Storage Considerations
-  description: HPC Storage Considerations
+  title: Introduction
+  description: TODO must be one or more complete sentences, differ from title
   ms.date: 12/29/2020 
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

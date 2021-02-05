@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.hpc-storage-considerations
 metadata:
-  title: HPC Storage Considerations
-  description: Understand factors that influence HPC storage selection in Azure
+  title: Understand factors that influence HPC storage selection in Azure
+  description: TODO this field is not rendered, but is critical for SEO. It should be similar to the summary and be composed of complete, grammatically-correct sentences, but should also contain lots of key search terms.
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand factors that influence HPC storage selection in Azure
-summary: Understand factors that influence HPC storage selection in Azure
+summary: TODO this is the text rendered on the title page under the title. It should be 2-3 complete sentences.
 abstract: |
   In this module, you will:
     - Identify selection criteria for your HPC file system solution
@@ -28,10 +28,11 @@ units:
 - learn.hpc-storage-considerations.2-file-access
 - learn.hpc-storage-considerations.3-performance-considerations
 - learn.hpc-storage-considerations.4-traffic-considerations
-- learn.hpc-storage-considerations.5-authentication-and-authorization-considerations
+- learn.hpc-storage-considerations.5-authentication-authorization-considerations
 - learn.hpc-storage-considerations.6-nfs-overview
 - learn.hpc-storage-considerations.7-parallel-file-systems
 - learn.hpc-storage-considerations.8-hybrid-file-access-requirements
-- learn.hpc-storage-considerations.9-next-steps-knowledge-check
+- learn.hpc-storage-considerations.9-knowledge-check
+- learn.hpc-storage-considerations.10-summary
 badge:
   uid: learn.hpc-storage-considerations.badge

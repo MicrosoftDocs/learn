@@ -1,35 +1,20 @@
 ### YamlMime:ModuleUnit
 uid: learn.hpc-storage-considerations.7-parallel-file-systems
-title: Parallel File Systems
+title: Parallel file systems
 metadata:
-  title: Parallel File Systems
-  description: Parallel File Systems
+  title: Parallel file systems
+  description: TODO must be one or more complete sentences, differ from title
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/7-parallel-file-systems.md)]
-  quiz:
+quiz:
   title: Check your knowledge
   questions:
-  - content: "________ is one of the most widely used parallel file systems"
-    choices:
-    - content: "NFS"
-      isCorrect: false
-      explanation: "GPFS or Lustre would be the two most widely deployed parallel file systems"
-    - content: "GPFS"
-      isCorrect: false
-      explanation: "NFSv3 uses standard POSIX mode bits for security"
-    - content: "SMB"
-      isCorrect: false
-      explanation: "GPFS or Lustre would be the two most widely deployed parallel file systems"
-
   - content: "Which of the below reflects an excellent use of parallel file system"
     choices:
     - content: "reading and writing very large files"
@@ -37,7 +22,7 @@ content: |
       explanation: "parallel file systems leverage striping across a scale-out number of storage servers to optimize for large file workloads"
     - content: "reading a large number of small files in a deep directory structure"
       isCorrect: false
-      explanation: "NFSv2/v3 uses NLM/NSM advisory locking which is not enforced""
+      explanation: "NFSv2/v3 uses NLM/NSM advisory locking which is not enforced"
     - content: "creation a large numbers of very small files"
       isCorrect: false
       explanation: "large numbers of small file creation may generate a significant amount of metadata"

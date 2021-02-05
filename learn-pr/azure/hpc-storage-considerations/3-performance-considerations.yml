@@ -3,13 +3,12 @@ uid: learn.hpc-storage-considerations.3-performance-considerations
 title: File system performance considerations
 metadata:
   title: File system performance considerations
-  description: File system performance considerations
+  description: TODO must be one or more complete sentences, differ from title
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/3-performance-considerations.md)]

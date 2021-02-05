@@ -16,17 +16,17 @@ Also, you may have a need for a solution that optimizes for very large numbers o
 
 You will want to record the following in your checklist:
 
-    - single-stream vs multi-stream
-    - ratio of read traffic to write traffic
-    - average file sizes and counts
-    - Random vs sequential access patterns
+- single-stream vs multi-stream
+- ratio of read traffic to write traffic
+- average file sizes and counts
+- Random vs sequential access patterns
 
 For example, your checklist may reflect:
 
-    - multi-stream traffic
-    - read heavy (75-25)
-    - average file sizes between 10 and 200 GB, approximately 50,000 files
-    - sequential heavy (80-20)
+- multi-stream traffic
+- read heavy (75-25)
+- average file sizes between 10 and 200 GB, approximately 50,000 files
+- sequential heavy (80-20)
 
 You will also want to account for the *major* workloads you intend to run on this architecture, if there are more than one or two, to ensure that there is not a significant divergence in requirements.
 
@@ -36,13 +36,13 @@ The next category should account for the *location* of the data. Is there a requ
 
 Adding locality to your checklist:
 
-    - Source data on-premises, in-Azure, or both
-    - Results data on-premises, in-Azure, or both
-    - Will HPC workloads in Azure be coordinated with source data modification timelines?
-        - Note this will help to inform the risk of stale data 
-    - Data sensitivity
-        - PII/HIPAA data?
-        - Note this will help inform the level of authentication and encryption required
+- Source data on-premises, in-Azure, or both
+- Results data on-premises, in-Azure, or both
+- Will HPC workloads in Azure be coordinated with source data modification timelines?
+    - Note this will help to inform the risk of stale data 
+- Data sensitivity
+    - PII/HIPAA data?
+    - Note this will help inform the level of authentication and encryption required
 
 From here you will better understand whether you can use copying, caching or synchronization as your data movement strategy.
 
@@ -50,10 +50,10 @@ From here you will better understand whether you can use copying, caching or syn
 
 Your performance requirements should look something like this:
 
-    - Single-stream throughput (in GB/s)
-    - Multi-stream throughput (in GB/s)
-    - Expected maximum IOPS
-    - Average latency (ms)
+- Single-stream throughput (in GB/s)
+- Multi-stream throughput (in GB/s)
+- Expected maximum IOPS
+- Average latency (ms)
 
 Every consideration impacts performance, and so these numbers represent a guide that a particular solution should achieve. For example, you may have a HPC workload that does extensive file creation and deletion as part of the workflow, which can impact the overall throughput.
 
@@ -61,25 +61,25 @@ Every consideration impacts performance, and so these numbers represent a guide 
 
 You will want to account for the client access protocol required. As we discussed, there are different versions of NFS (and SMB, the Windows client protocol). If you are intending to use NFSv4, you will want to be clear about what aspects of the protocol are required (such as ACLs).
 
-    - NFS versions required
-        - If v4: expected protocol behaviors (ACLs, encryption)
-    - Parallel FS (which solution is being used)
+- NFS versions required
+    - If v4: expected protocol behaviors (ACLs, encryption)
+- Parallel FS (which solution is being used)
 
 **Total capacity requirement**
 
 Storage capacity in Azure will be the next consideration, and helps to inform the overall cost of the solution. If you intend to store a large amount of data over the longer term, you may want to consider **tiering** as part of the storage solution, to offer lower cost storage options combined with higher cost but higher performance storage in a hot tier.
 
-    - Total capacity required
-    - Total "hot tier" capacity required
-    - Total "warm tier" capacity required
-    - Total "cold tier" capacity required
+- Total capacity required
+- Total "hot tier" capacity required
+- Total "warm tier" capacity required
+- Total "cold tier" capacity required
 
 A note on "cold tier": Archive tiers offer attractive costs to store the data with higher transaction costs to retrieve the data. Also, archive tiers have long retrieval times for data, and should not be considered part of your hot/warm tiers.
 
-**Authentication / Authorization method**
+**Authentication / authorization method**
 
 You will want to add your authentication/authorization requirement to the checklist. At minimum, adding it ensures that you include the appropriate supporting systems to your architecture, such as an LDAP server or Active Directory environment. However, in the case of supporting capabilities such as UID/GID mapping to Active Directory users, you will need to confirm that the storage solution supports that capability.
 
-    - Local (UID/GID on file server only)
-    - Directory (LDAP, Active Directory)
-    - UID/GID Mapping to Active Directory users (Y/N)
+- Local (UID/GID on file server only)
+- Directory (LDAP, Active Directory)
+- UID/GID Mapping to Active Directory users (Y/N)
