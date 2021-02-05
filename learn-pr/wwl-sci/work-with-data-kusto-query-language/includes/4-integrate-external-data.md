@@ -31,18 +31,14 @@ Returns
 The externaldata operator returns a data table of the given schema with data parsed from the specified storage artifact, indicated by the storage connection string.
 
 > [!NOTE]
-> This example is not available in the demo environment.
+> This example is not available in the demo environment.
+
 ```kusto
 Users
-
 | where UserID in ((externaldata (UserID:string) [
-
     @"https://storageaccount.blob.core.windows.net/storagecontainer/users.txt" 
-
       h@"?...SAS..." // Secret token needed to access the blob
-
     ]))
-
 | ...
 
 ```

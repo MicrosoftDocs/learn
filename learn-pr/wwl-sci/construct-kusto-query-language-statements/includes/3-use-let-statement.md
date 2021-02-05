@@ -24,7 +24,7 @@ The let statement allows for the creation of dynamics tables or lists.
 ```kusto
 let suspiciousAccounts = datatable(account: string) [
     @"\administrator", 
-    @"NT AUTHORITY\SYSTEM“
+    @"NT AUTHORITY\SYSTEM"
 ];
 
 SecurityEvent | where Account in (suspiciousAccounts)
