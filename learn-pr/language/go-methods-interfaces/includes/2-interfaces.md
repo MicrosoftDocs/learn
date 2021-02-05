@@ -38,7 +38,7 @@ func (s Square) Perimeter() float64 {
 }
 ```
 
-Notice how the method's signature from the `Square` struct matches the signature from the `Shape` interface. However, another interface might have a different name but the same methods. How or when does Go know which interface a concrete type is implementing? Go knows it when you're using it, at runtime.
+Notice how the method's signature of the `Square` struct matches the signature of the `Shape` interface. However, another interface might have a different name but the same methods. How or when does Go know which interface a concrete type is implementing? Go knows it when you're using it, at runtime.
 
 To demonstrate how interfaces are used, you could write the following:
 
@@ -114,7 +114,7 @@ Perimeter: 37.69911184307752
 
 Notice how you don't get an error, and the output varies depending on the object type it receives. You can also see that the object type in the output doesn't say anything about the `Shape` interface.
 
-The beauty of using interfaces is that, for every new type or implementation of `Shape`, the `printInformation` function doesn't have to change. This is why we said earlier that your code becomes flexible and easier to extend when you use interfaces.
+The beauty of using interfaces is that, for every new type or implementation of `Shape`, the `printInformation` function doesn't have to change. This is why we said earlier that your code becomes more flexible and easier to extend when you use interfaces.
 
 ## Implement a Stringer interface
 
