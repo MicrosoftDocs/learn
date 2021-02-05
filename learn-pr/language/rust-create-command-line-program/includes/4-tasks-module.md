@@ -1,4 +1,4 @@
-The next module we create will be responsible for representing our tasks, persisting them on disk, and deserializing them from the disk.
+The next module we create will represent our tasks, persisting them on disk and deserializing them from the disk.
 
 We'll start by defining a simple struct to represent what a to-do item will look like in our
 program:
@@ -61,9 +61,9 @@ According to [OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Deserializat
 
 - **Deserialization** is the reverse of that process, taking data structured from some format, and rebuilding it into an object. Today, the most popular data format for serializing data is JSON. Before that, it was XML.
 
-In short mean that we can stash our data into a stream of bytes and retrieve it for later use, without any loss of information. We can then send those bytes over some connection or store them into a file in our storage device.
+In short, that means that you can store data in a stream of bytes and then retrieve it for later use, without any loss of information. You can then send those bytes over a connection or store them in a file in a storage device.
 
-The Rust community recommends the `serde` crate for handling most (de)serialization of Rust data structures efficiently and generically, ours included. By standing in shoulders of giants, we can be even more productive and idiomatic.
+The Rust community recommends the `serde` crate for handling most serialization and deserialization of Rust data structures efficiently and generically, ours included. By standing in shoulders of giants, we can be even more productive and idiomatic.
 
 To get started serializing our `Task` type, we will need two crates:
 
