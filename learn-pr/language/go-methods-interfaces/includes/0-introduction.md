@@ -6,8 +6,6 @@ This module covers how interfaces work in Go and why they differ between Go and 
 
 This module also covers methods and why you use them in Go. 
 
-When you've finished this module, you'll be able to read and understand other programmers' code, including code from the open-source community.
-
 ## Learning objectives
 
 In this module, you'll learn about:
