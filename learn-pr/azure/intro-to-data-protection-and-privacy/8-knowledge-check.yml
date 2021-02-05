@@ -44,7 +44,7 @@ quiz:
 
   - content: "What is a processor?"
     choices:
-    - content: "A person, public authority, agency, or other body that alone or jointly with others, determines the purposes and means of the processing of personal data."
+    - content: "A person, public authority, agency, or other body that alone or jointly with others determines the purposes and means of the processing of personal data."
       isCorrect: false
       explanation: "That's incorrect. A processor does not determine the purpose of processing of personal data."
     - content: "A part of a data protection technology that processes users' data."
