@@ -6,7 +6,7 @@ metadata:
   description: Use the Azure CLI to create an Azure Maps account and get a key the web SDK uses to access the Maps account.
   author: jimbobbennett
   ms.author: jabenn
-  ms.date: 04/20/2020
+  ms.date: 02/05/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True

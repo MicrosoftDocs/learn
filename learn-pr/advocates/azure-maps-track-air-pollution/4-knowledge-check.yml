@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.4-knowledge-check
-title: Knowledge Check - Azure Maps
+title: Knowledge check
 metadata:
-  title: Knowledge Check - Azure Maps
+  title: Knowledge check
   description: See what you've learned so far.
   author: jimbobbennett
   ms.author: jabenn
-  ms.date: 04/20/2020
+  ms.date: 02/05/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -15,47 +15,50 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What does the Spherical Mercator projection coordinate system do to a map?'
+  - content: What does the Spherical Mercator projection coordinate system do to a map?
     choices:  
-    - content: 'Makes it round.'
+    - content: Makes it round.
       isCorrect: false
-      explanation: Incorrect. The Spherical Mercator projection coordinate system stretches the map at both the North Pole and the South Pole. This stretching makes a square map that can be rendered on a flat screen.
-    - content: 'Colors it in green and blue.'
+      explanation: Incorrect. The Spherical Mercator projection coordinate system changes the chape of a map, but it doesn't make it round.
+    - content: Colors it in green and blue.
       isCorrect: false
-      explanation: Incorrect. The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
-    - content: 'Stretches the map at the poles'
+      explanation: Incorrect. The Spherical Mercator projection coordinate system doesn't affect the color of a map.
+    - content: Stretches the map at the poles.
       isCorrect: true
-      explanation: Correct. The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
+      explanation: Correct! The Spherical Mercator projection coordinate system stretches the map at both the North Pole and the South Pole. This stretching makes a square map that can be rendered on a flat screen.
     
-  - content: 'Heat map layers show...'
+  - content: What do heat map layers show?
     choices:
-    - content: 'The density of data using a range of colors'
+    - content: The density of data, by using a range of colors.
       isCorrect: true
-      explanation: Correct, heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
-    - content: 'The current temperature of the planet'
+      explanation: Correct! Heat map layers represent data density. Heat map layers use a range of colors to show 'hot spot' areas on a map.
+    - content: The current temperature of the planet.
       isCorrect: false
-      explanation: Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
-    - content: 'The height above sea level'
+      explanation: Incorrect. Heat map layers don't literally represent heat or temperature.
+    - content: How high above sea level a location is.
       isCorrect: false
-      explanation: Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
+      explanation: Incorrect. Heat map layers don't represent altitude.
 
-  - content: 'What GeoJSON object is used to render a layer on a map'
+  - content: What GeoJSON object is used to render a layer on a map?
     choices:  
-    - content: 'Geometry'
+    - content: Geometry
       isCorrect: false
-      explanation: Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
-    - content: 'Feature'
+      explanation: Incorrect. A geometry is not the GeoJSON object that's used to render layers on a map.
+    - content: Feature
       isCorrect: false
-      explanation: Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
-    - content: 'Feature Collection'
+      explanation: Incorrect. A feature is not the GeoJSON object that's used to render layers on a map.
+    - content: Feature collection
       isCorrect: true
-      explanation: Correct. Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
+      explanation: Correct! Azure Maps uses data sources that contain GeoJSON feature collections to render layers on the map.
 
-  - content: 'How can you get the coordinates of the part of the map visible in the browser?'
+  - content: How can you get the coordinates of the part of a map that's visible in a web browser?
     choices:
-    - content: 'Get the bounds property from the maps camera'
+    - content: Get the bounds property from the Maps camera.
       isCorrect: true
-      explanation: Correct, the viewable area of the map is controlled by a camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
-    - content: 'Get the top, bottom, left, and right coordinates from the map control'
+      explanation: Correct! The viewable area of the map is controlled by a virtual camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
+    - content: Get the top, bottom, left, and right coordinates from the map control.
       isCorrect: false
-      explanation: The viewable area of the map is controlled by a camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
+      explanation: Incorrect. The map control doesn't contain the information you need to get the coordinates of part of a map that's shown in a web browser.
+    - content: Calculate based on the last known location.
+      isCorrect: false
+      explanation: Incorrect. Azure Maps offers a direct way to get the coordinates of part of a map that's shown in a web browser.

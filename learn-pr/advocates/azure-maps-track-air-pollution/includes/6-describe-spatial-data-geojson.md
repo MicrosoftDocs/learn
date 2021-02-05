@@ -1,7 +1,7 @@
-GeoJSON is an internet-standard geospatial data format that's based on JavaScript Object Notation (JSON). To add layers to an Azure Maps control, you need to define a data source that contains GeoJSON data to indicate the locations to use to show different overlays. For example, you'd use it to define the location of location bubbles in a bubble layer.
+GeoJSON is an internet-standard geospatial data format that's based on JavaScript Object Notation (JSON). To add layers to an Azure Maps control, you need to define a data source that contains GeoJSON data. The map control uses the data to create overlays based on locations. For example, you'd use a data source to define the placement of features in a bubble layer.
 
 > [!NOTE]
-> GeoJSON is defined as a standard in the Internet Engineering Task Force [RfC7946](https://tools.ietf.org/html/rfc7946?azure-portal=true).
+> GeoJSON is defined as a standard in the Internet Engineering Task Force [RFC 7946](https://tools.ietf.org/html/rfc7946?azure-portal=true).
 
 ## GeoJSON objects
 
@@ -20,10 +20,10 @@ A *geometry* is a region in space. A geometry can be:
 * Multiple points that describe the outline of a polygon
 * A collection of multiple geometries
 
-A geometry JSON object has two properties:
+A geometry GeoJSON object has two properties:
 
-* `type` - Specifies the type of geometry, like a `Point` or a `Polygon`.
-* `coordinates` - Contains the coordinates as longitude and latitude values in a two-item array. The first item is the longitude and the second item is the latitude. Points have a single value in an array. Lines and polygons have multiple values in an array. For polygons, the shape must be closed, so the last coordinate must be the same as the first coordinate.
+* `type`: Specifies the type of geometry, like a `Point` or a `Polygon`.
+* `coordinates`: Contains the coordinates as longitude and latitude values in a two-item array. The first item is the longitude and the second item is the latitude. Points have a single value in an array. Lines and polygons have multiple values in an array. For polygons, the shape must be closed, so the last coordinate must be the same as the first coordinate.
 
 Here's an example geometry object that contains a single point on the Microsoft headquarters in Redmond, Washington, USA:
 
@@ -57,11 +57,11 @@ This square has five coordinates: four corners and the last coordinate, which is
 
 A *feature* is a spatially bounded entity. So, it's a geometry that has a set of properties that describe what is in that location. The properties can be data, like a place name or the temperature.
 
-A feature JSON object has three properties:
+A feature GeoJSON object has three properties:
 
-* `type` - Specifies the type of object and is always `Feature` for a feature
-* `geometry` - A GeoJSON geometry object that defines the location of the feature
-* `properties` - Any valid JSON object and defines the properties of the feature
+* `type`:  Specifies the type of object and is always `Feature` for a feature.
+* `geometry`: A GeoJSON geometry object that defines the location of the feature.
+* `properties`:  Any valid GeoJSON object and defines the properties of the feature.
 
 Here's an example feature for Paris, France:
 
@@ -91,10 +91,10 @@ Here's an example feature for Paris, France:
 
 A *feature collection*, as its name suggests, is a collection of features.
 
-A feature collection JSON object has two properties:
+A feature collection GeoJSON object has two properties:
 
-* `type` - Specifies the type of object, and is always `FeatureCollection` for a feature collection
-* `features` - An array of GeoJSON feature objects
+* `type`: Specifies the type of object and is always `FeatureCollection` for a feature collection.
+* `features`: An array of GeoJSON feature objects.
 
 Here's an example of a feature collection for two European cities:
 
@@ -143,4 +143,4 @@ Here's an example of a feature collection for two European cities:
 }
 ```
 
-In this unit, you learned about the GeoJSON format for storing spatial data and it's three object types. Next, you'll use an API to get air quality data, convert it to GeoJSON, and show it on a map.
+In this unit, you learned about the GeoJSON format for storing spatial data and its three object types. Next, you'll use an API to get air quality data, convert it to GeoJSON, and show it on a map.

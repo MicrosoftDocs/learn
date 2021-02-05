@@ -3,7 +3,7 @@ uid: learn.advocates.use-azure-maps-to-track-air-pollution
 metadata:
   title: Track global air quality with Azure Maps
   description: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
-  ms.date: 04/20/2020
+  ms.date: 02/05/2021
   author: jimbobbennett
   ms.author: jabenn
   ms.topic: interactive-tutorial

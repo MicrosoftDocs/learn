@@ -6,7 +6,7 @@ metadata:
   description: Learn about the capabilities of the Azure Maps web SDK and use it to visualize air pollution data.
   author: jimbobbennett
   ms.author: jabenn
-  ms.date: 04/20/2020
+  ms.date: 02/05/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
