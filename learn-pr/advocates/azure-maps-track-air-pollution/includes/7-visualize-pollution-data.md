@@ -9,7 +9,7 @@ When you request data, you have two options. You can:
 * Request data for a single location, to get the nearest reading for a city or location.
 * Request data for all stations within a rectangle that's defined by using the north-east and south-west coordinates of the rectangle.
 
-The map should plot as much data as possible based on the visible area of the map. AQI data can be requested for only those stations within the visible area. Narrowing your request makes the API call faster because only the data that's needed is requested.
+The map should plot as much data as possible based on the visible area of a map. AQI data can be requested only for stations that are in the visible area of the map. Narrowing your request makes the API call faster because only the data that's needed is requested.
 
 ### AQI data format
 
@@ -46,7 +46,7 @@ To convert AQI data to a GeoJSON feature collection:
 
     1. The geometry of the feature is a location `Point`, with the coordinates set to the longitude `lon` and latitude `lat`.
 
-    1. Instead of plotting the AQI measurement directly, it's easier to visualize the data by using a color bubble. Convert the AQI measurement to a color value as an RGB hex string. Then, add the converted color value to the feature’s `properties` array.
+    1. Instead of plotting the AQI measurement directly, it's easier to visualize the data by using a colored bubble. Convert the AQI measurement to a color value as an RGB hex string. Then, add the converted color value to the feature’s `properties` array.
 
     Here's the GeoJSON for the data in this example:
     
@@ -73,7 +73,7 @@ To use the WAQI API, register for an API key. Later, you'll add the key to the e
 
 To get the WAQI API key:
 
-1.	Go to the [Air Quality Open Data Platform](https://aqicn.org/data-platform/token/#/?azure-portal=true) token request website.
+1.	Go to the [Air Quality Open Data Platform](https://aqicn.org/data-platform/token/#/?azure-portal=true) token request page on the WAQI website.
 
 1.	Enter your email address and name.
 
@@ -247,7 +247,7 @@ This code implements an API call inside the Flask app that loads the AQI data fr
 
 The feature collection that you created from the WAQI data is ready to show on a map.
 
-In Visual Studio Code, make sure that your *<i>app.py</i> file is open. Select the **Run** icon to expose the **Run** activity section. Then, select the green triangle icon to run the Flask app and open it in a browser.
+In Visual Studio Code, make sure that your <i>app.py</i> file is open. Select the **Run** icon in the Activity Bar to open the **Run** view. Then, select the green arrow to run the Flask app and open it in a browser.
 
 You should see colored circles (bubbles) on the map that show the WAQI data:
 

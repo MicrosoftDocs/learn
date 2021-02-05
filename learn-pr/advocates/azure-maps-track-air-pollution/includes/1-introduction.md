@@ -1,8 +1,8 @@
 Air pollution can cause serious harm to human and animal health. Air pollution is caused by various factors that might occur naturally or result from specific activities. Factory output, burning some types of fuel, and wildfires all contribute to a rise in air pollution. This pollution is airborne, and it doesn't remain in the area where it was produced. Air pollution can be carried by the wind many kilometers and across the globe. For example, in late 2019, smoke from wildfires in Australia reached New Zealand, more than 2,000 kilometers away.
 
-Air pollution is measured by *Air Quality Index (AQI)*. The index is based on a scale that ranges from 0 to 500. The higher the AQI value, the greater the health risk. An AQI value that's lower than 50 indicates little to no risk, but a value that's 300 or higher means that the air is hazardous to everyone. 
+Air pollution is measured by the *Air Quality Index (AQI)*. The index reflects a scale that ranges from 0 to 500. The higher the AQI value, the greater the health risk. An AQI value that's lower than 50 indicates little to no risk, but a value that's 300 or higher means that the air is hazardous to everyone. 
 
-The AQI looks at a few different pollutants:
+The AQI takes into account the presence of several pollutants:
 
 - Ground-level ozone
 - Particulates

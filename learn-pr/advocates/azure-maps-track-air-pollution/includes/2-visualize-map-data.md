@@ -18,7 +18,7 @@ Maps can be rendered in different styles. These styles include:
 
     :::image type="content" source="../media/satellite-road-labels.png" alt-text="Image of a satellite and road map of Seattle." border="false":::
 
-- **High-contrast**: A dark road map with higher contrast than other styles.
+- **High contrast**: A dark road map with higher contrast than other styles.
 
     :::image type="content" source="../media/high-contrast-dark.png" alt-text="Image of a high-contrast map of Seattle." border="false":::
 
@@ -34,7 +34,7 @@ You can set map navigation in your app code. For example, you can set the view t
 
 You can augment maps by adding layers. A layer visualizes data on top of a map. In a later unit in this module, you'll use a layer on a map to visualize air quality data.
 
-When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [MapBox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We'll cover GeoJSON later in this module.
+When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [Mapbox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We'll cover GeoJSON later in this module.
 
 The different layer types include:
 

@@ -23,7 +23,7 @@ A *geometry* is a region in space. A geometry can be:
 A geometry GeoJSON object has two properties:
 
 * `type`: Specifies the type of geometry, like a `Point` or a `Polygon`.
-* `coordinates`: Contains the coordinates as longitude and latitude values in a two-item array. The first item is the longitude and the second item is the latitude. Points have a single value in an array. Lines and polygons have multiple values in an array. For polygons, the shape must be closed, so the last coordinate must be the same as the first coordinate.
+* `coordinates`: Contains the coordinates as longitude and latitude values in a two-item array. The first item is the longitude, and the second item is the latitude. Points have a single value in an array. Lines and polygons have multiple values in an array. For polygons, the shape must be closed, so the last coordinate must be the same as the first coordinate.
 
 Here's an example geometry object that contains a single point on the Microsoft headquarters in Redmond, Washington, USA:
 
