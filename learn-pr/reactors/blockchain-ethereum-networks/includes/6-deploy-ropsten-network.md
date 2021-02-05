@@ -2,21 +2,26 @@ Now we have a smart contract. We've successfully deployed it to our development 
 
 ## Exercise overview
 
-For this tutorial, we'll deploy to Ropsten by using MetaMask with test ether. The deployment process requires setting up an [Infura](http://www.infura.io/?azure-portal=true) account to connect and deploy to the Ropsten testnet. After we deploy, we can use the [Ropsten Testnet Explorer](https://ropsten.etherscan.io/?azure-portal=true) to inspect the blocks that have been deployed to the testnet.
+For this tutorial, we'll deploy to Ropsten by using MetaMask with test ether. The deployment process requires setting up an [Infura](http://www.infura.io/?azure-portal=true) account to connect and deploy to the Ropsten testnet. After we deploy, we can use [Ropsten Testnet Explorer](https://ropsten.etherscan.io/?azure-portal=true) to inspect the blocks that have been deployed to the testnet.
 
 ## Exercise setup
 
+To set up the exercise, you'll:
+1. Install and set up MetaMask.
+1. Get test ether.
+1. Install HDWallet-Provider and fs.
+1. Install Infura and link the endpoints to the Ropsten test network.
 ### Set up MetaMask
 
-If you haven't done so already, [install and set up MetaMask](https://metamask.io?azure-portal=true) by following the prompts. After you sign in to your account in the browser, move on to the next step.
+If you haven't done so already, [install and set up MetaMask](https://metamask.io?azure-portal=true). Then sign in to your account in the browser.
 
-### Add Ether to the MetaMask Ropsten test network
+### Add ether to the MetaMask Ropsten test network
 
 Use your MetaMask account to connect to the Ropsten test network. Begin by getting test ether from the [Ropsten Test Faucet](https://faucet.ropsten.be?azure-portal=true):
 
 1. Open MetaMask.
 1. Connect to Ropsten.
-1. Copy the address of your account to the clipboard.
+1. Copy the address of your account.
 
     :::image type="content" source="../media/metamask-0-ether-connect.png" alt-text="Screenshot showing the MetaMask browser extension where you can copy the account address.":::
 
@@ -29,17 +34,17 @@ Use your MetaMask account to connect to the Ropsten test network. Begin by getti
 
     :::image type="content" source="../media/metamask-ropsten-test-with-1-ether.png" alt-text="Screenshot showing the MetaMask browser extension. The account lists the ether quantity.":::
 
-### Install HDWalletProvider and fs
+### Install HDWallet-Provider and fs
 
-Next you'll need the [HDWallet-Provider](https://www.npmjs.com/package/@truffle/hdwallet-provider?azure-portal=true). This wallet-enabled Web3 provider creates your secret mnemonic and connection network address. You'll also need [fs](https://www.npmjs.com/package/fs?azure-portal=true) to read from your file system.
+Next you'll need [HDWallet-Provider](https://www.npmjs.com/package/@truffle/hdwallet-provider?azure-portal=true). This wallet-enabled Web3 provider creates your secret mnemonic and connection network address. You'll also need [fs](https://www.npmjs.com/package/fs?azure-portal=true) to read from your file system.
 
-To install both tools, return to the *todolist* project in Visual Studio Code. Open the terminal window and run the following commands:
+To install both tools, return to the *todolist* project in Visual Studio Code. Open the terminal pane and run the following commands:
 
 1. `npm init`
 1. `npm install fs`
 1. `npm install @truffle/hdwallet-provider`
 
-Wait for the installations of fs and HDWallet-Provider to finish. You might see several warnings. Unless these warnings are errors, you can ignore them.
+Wait for the installations of fs and HDWallet-Provider to finish. You might see several warnings. As long as these warnings aren't errors, you can ignore them.
 
 ### Set up Infura and link the endpoints to the Ropsten test network
 
@@ -59,7 +64,7 @@ Your view should look similar to the following test project:
 
 Return to the *todolist* project folder in Visual Studio Code.
 
-1. In the Truffle configuration file, *./truffle-config.js*, uncomment the lines for **HDWallet Provider**, **infuraKey**, **fs**, and **mnemonic**:
+1. In the Truffle configuration file, *./truffle-config.js*, uncomment the lines for `hdwallet-provider`, `infuraKey`, `fs`, and `mnemonic`:
 
     ```javascript
      const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -73,7 +78,9 @@ Return to the *todolist* project folder in Visual Studio Code.
 
     :::image type="content" source="../media/infurakey.png" alt-text="Screenshot showing the Ropsten endpoint to copy.":::
 
-1. Next to **Project ID**, select the clipboard icon to copy the ID. Return to *./truffle-config.js* to paste in the `infuraKey` value. The following image shows an example of what to paste. Your key will be different than the one you see here:
+1. Next to **Project ID**, select the clipboard icon to copy the ID. Return to *./truffle-config.js* to paste in the `infuraKey` value. 
+
+    The following image shows an example of what to paste. Your key will be different than the one you see here:
 
     ```javascript
     const infuraKey = "f6bfe21890a84b9fa27def74bafb0b1b";
@@ -211,6 +218,6 @@ In [Ropsten Etherscan](https://ropsten.etherscan.io?azure-portal=true), enter th
 
 :::image type="content" source="../media/ropsten-etherscan-with-deployed-contract.png" alt-text="Screenshot showing the contract deployed in Etherscan.":::
 
-You can also verify your deployment by opening a new terminal window within Visual Studio Code. Similar to interacting with your contract on the Ganache development blockchain, you can interact with your contract by using the Truffle console. 
+You can also verify your deployment by opening a new terminal window within Visual Studio Code. You interact with your contract by using the Truffle console like you do on the Ganache development blockchain. 
 
 The following sample code displays two active networks. Continue to interact with and inspect transactions by using the Truffle console and Ropsten Etherscan.

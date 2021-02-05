@@ -2,31 +2,30 @@
 uid: learn.reactors.blockchain-ethereum-networks
 metadata:
   title: Connect and deploy to Ethereum networks
-  description: Learn about and use multiple networks that Ethereum has available for development, testing, and production.
+  description: Learn about and use Ethereum networks for development, testing, and production.
   ms.date: 01/20/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect and deploy to Ethereum networks
-summary: Learn about and use multiple networks that Ethereum has available for development, testing, and production.
+summary: Learn about and use Ethereum networks for development, testing, and production.
 abstract:  |
- By the end of this module, you will be able to:
- 
+ By the end of this module, you'll be able to:
  - Identify the public and private networks available in Ethereum.
- - Explain what is required to prepare a solution for the mainnet
- - Know how to use Metamask with Infura to connect a solution to networks
+ - Explain how to prepare a solution for the mainnet.
+ - Use MetaMask with Infura to connect a solution to networks.
 prerequisites: | 
-  - [Fundamental knowledge about blockchain](/learn/modules/intro-to-blockchain/?azure-portal=true)
+  - Basic knowledge about [blockchain](/learn/modules/intro-to-blockchain/?azure-portal=true)
   - [Solidity programming knowledge](/learn/modules/blockchain-learning-solidity/?azure-portal=true)
   - [Ethereum smart contract knowledge](/learn/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
-  - Previous experience with a programming language like C, Python, or JavaScript
-  - Basic knowledge of programming concepts
-  - Familiarity with the command line to create new directories and install programs
+  - Experience with a programming language like C, Python, or JavaScript
+  - Basic knowledge about programming concepts
+  - Ability to use the command line to create new directories and install programs
   - Node.js installed
   - Truffle and Ganache CLI installed
   - Visual Studio Code installed
-  - Blockchain Development Kit for Ethereum installed
+  - Blockchain development kit for Ethereum installed
 iconUrl: /learn/achievements/reactors/blockchain-ethereum-networks.svg
 levels:
 - beginner
@@ -35,6 +34,7 @@ roles:
 - student
 products:
 - azure
+- vs-code
 units:
 - learn.reactors.blockchain-ethereum-networks.1-introduction
 - learn.reactors.blockchain-ethereum-networks.2-public-networks

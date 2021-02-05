@@ -9,51 +9,50 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-     Choose the best response for each question. Then select **Check your answers**.
+ Choose the best response for each question. Then select **Check your answers**.
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "Which test network only supports Geth clients?"
+  - content: "Which test network supports only Geth clients?"
     choices:
-    - content: "Rinkeby."
+    - content: "Rinkeby"
       isCorrect: true
-      explanation: "Correct. Rinkeby is the only network that only supports Geth."
-    - content: "Ropsten."
+      explanation: "Correct. Rinkeby is the only network that supports only Geth."
+    - content: "Ropsten"
       isCorrect: false
       explanation: "Incorrect. Ropsten supports Geth and OpenEthereum clients."
-    - content: "Kovan."
+    - content: "Kovan"
       isCorrect: false
       explanation: "Incorrect. Ropsten supports OpenEthereum clients."
-    - content: "Görli."
+    - content: "Görli"
       isCorrect: false
-      explanation: "Incorrect. Görli supports multiple clients like Geth, Nethermind, and OpenEthereum"
-  - content: "Which of the following actions is necessary to prepare for mainnet deployment?"
+      explanation: "Incorrect. Görli supports multiple clients, including Geth, Nethermind, and OpenEthereum."
+  - content: "Which of the following actions is required to prepare for mainnet deployment?"
     choices:
-    - content: "Verifying source code."
+    - content: "Verifying source code"
       isCorrect: true
       explanation: "Correct. Submit source code to be verified by a service like Etherscan."
-    - content: "Smart contract testing."
+    - content: "Smart contract testing"
       isCorrect: false
       explanation: "Incorrect. Smart contract testing should happen during development, but it isn't required."
-    - content: "Key distribution to project managers"
+    - content: "Distributing keys to project managers"
       isCorrect: false
-      explanation: "Incorrect. Keys should be stored securely and only shared with whoever governs or administrates the project."
-    - content: "Documentation for smart contracts and dapps."
+      explanation: "Incorrect. Keys should be stored securely. They should be shared only with whoever governs or administers the project."
+    - content: "Documentation for smart contracts and Dapps"
       isCorrect: false
-      explanation: "Incorrect. Documentation for the blockchain solution is helpful, but not required."
+      explanation: "Incorrect. Documentation for the blockchain solution is helpful but not required."
   - content: "What service does Infura provide?"
     choices:
     - content: "A wallet service to add ether, test ether, and other tokens"
       isCorrect: false
-      explanation: "Incorrect. This answer best describes the service that Metamask provides."
+      explanation: "Incorrect. This answer best describes the service that MetaMask provides."
     - content: "A development suite that provides API access to Ethereum networks"
       isCorrect: true
-      explanation: "Correct. Infura provides an API to easily access and connect your solution to different Ethereum networks."
-    - content: "A development suite to make it easy to create, compile, and deploy smart contracts."
+      explanation: "Correct. Infura provides an API that allows you to connect your solution to different Ethereum networks."
+    - content: "A development suite that allows you to create, compile, and deploy smart contracts"
       isCorrect: false
-      explanation: "Incorrect. This answer best describes what the TruffleSuite provides."
-    - content: "A destination to stage and test blockchain solutions before deploying to the mainnet."
+      explanation: "Incorrect. This answer best describes what Truffle Suite provides."
+    - content: "A destination to stage and test blockchain solutions before you deploy to the mainnet"
       isCorrect: false
       explanation: "Incorrect. This answer best describes test networks."
