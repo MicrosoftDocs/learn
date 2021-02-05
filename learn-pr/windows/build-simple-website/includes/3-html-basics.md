@@ -48,9 +48,9 @@ The *title* of a webpage appears at the top of a browser window, and is signific
 
 To style the HTML elements on the page, you could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS, you can make changes once, and have those updates broadcast to all dependent pages. Let's link to an external stylesheet.
 
-1. In **Visual Studio Code**, add a blank line after the `<title>` element, enter `link`, and press <kbd>Enter</kbd>.
+1. In **Visual Studio Code**, add a blank line after the `<title>` element, enter `link`, and then press <kbd>Enter</kbd>.
 
-1. Update the `href` to `main.css` and save the file by pressing <kbd>Control+S</kbd> (Windows) or <kbd>Command+S</kbd> (macOS).
+1. Update the `href` to `main.css`, and save the file by pressing <kbd>Control+S</kbd> (Windows) or <kbd>Command+S</kbd> (macOS).
 
    ```html
    ...
@@ -98,12 +98,12 @@ Each list item `<li>` element is grouped into an unordered list `<ul>`.
 
 You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path. For example, the path might look similar to the following: *file:///Users/username/Desktop/public/index.html*.
 
-- To preview using **Visual Studio Code**, right-click `index.html`, and select **Open In Default Browser** or use the keyboard shortcut <kbd>Alt+B</kbd>.
+- To preview using **Visual Studio Code**, right-click `index.html`, and select **Open In Default Browser**, or use the keyboard shortcut <kbd>Alt+B</kbd>.
 
    :::image type="content" source="../media/vs-code-open-in-browser.png" alt-text="Screenshot of Open in Browser in Visual Studio Code":::
 
   > [!IMPORTANT]
-  > If you're having trouble, make sure you're directly selecting on the filename icon or text.
+  > If you're having trouble, make sure you're directly right-clicking the filename icon or text.
 
   The webpage opens in your default browser.
 
@@ -113,7 +113,7 @@ You can inspect a webpage by using the developer tools in your browser. Let's gi
 
 1. Open Developer Tools.
 
-   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is F12 (FN+F12). Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
+   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> (<kbd>FN+F12</kbd>). Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
 
    - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd>. (<kbd>F12</kbd> also works.)
 

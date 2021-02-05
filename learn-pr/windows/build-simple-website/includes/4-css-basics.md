@@ -107,7 +107,7 @@ Next, add support for a color theme for your website. Begin by defining a light-
 
 1. Open Developer Tools.
 
-   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is F12 (FN+F12). Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
+   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> (<kbd>FN+F12</kbd>). Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
 
    - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd>. (<kbd>F12</kbd> also works.)
 
