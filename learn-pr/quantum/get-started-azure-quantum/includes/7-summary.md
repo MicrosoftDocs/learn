@@ -7,7 +7,7 @@ Optimization problems are very important for reducing costs, accelerating proces
 In this module, you learned how to create a quantum workspace to create and run your jobs on the Azure Quantum service. In the next modules, you will learn to submit and manage quantum computing and optimization jobs:
 
 * If you want to learn how to submit quantum computing jobs to quantum hardware, check out [Run algorithms on quantum hardware by using Azure Quantum](/learn/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true).
-* If you want to learn how to solve optimization problems using Azure Quantum solvers, check out [Quantum Inspired Optimization module](/learn/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true).
+* If you want to learn how to solve optimization problems using Azure Quantum solvers, check out [Solve optimization problems by using quantum-inspired optimization](/learn/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true).
 
 ## Learn more
 
