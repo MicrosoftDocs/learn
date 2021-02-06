@@ -61,37 +61,37 @@ According to [OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Deserializat
 
 - **Deserialization** is the reverse of that process, taking data structured from some format, and rebuilding it into an object. Today, the most popular data format for serializing data is JSON. Before that, it was XML.
 
-In short, that means that you can store data in a stream of bytes and then retrieve it for later use, without any loss of information. You can then send those bytes over a connection or store them in a file in a storage device.
+In short, that means you can store data in a stream of bytes and then retrieve it for later use, without any loss of information. You can then send those bytes over a connection or store them in a file in a storage device.
 
-The Rust community recommends the `serde` crate for handling most serialization and deserialization of Rust data structures efficiently and generically, ours included. By standing in shoulders of giants, we can be even more productive and idiomatic.
+The Rust community recommends the `serde` crate for handling most serialization and deserialization of Rust data structures efficiently and generically, ours included. By using this preexisting crate, we can be even more productive and idiomatic.
 
-To get started serializing our `Task` type, we will need two crates:
+To get started with serializing our `Task` type, we'll need two crates:
 
-- `serde`, the base crate that will provide our types the ability to `derive` the `Serialize` and `Deserialize` traits, and
-- `serde_json`, the crate that will implement those traits into our desired file specification
+- `serde`. The base crate that will enable our types to derive the `Serialize` and `Deserialize` traits.
+- `serde_json`. The crate that will implement those traits into our chosen file specification
 format, JSON.
 
-As always, the first step to do is include the `serde_json` and `serde` in our `[dependencies]` section of our `Cargo.toml`. But this time we are going to use a different notation for specifying them, since we'll need to conditionally compile some of `serde`'s features. Your file should look like this by now:
+As always, the first step is to include `serde_json` and `serde` in the `[dependencies]` section of our `Cargo.toml`. This time we're going to use a different notation to specify them because we'll need to conditionally compile some `serde` features. Your file should look like this:
 
 ```toml
 [dependencies]
 structopt = "0.3"
-serde_json = "1.0"    # add `serde_json`
+serde_json = "1.0"    # Add serde_json.
 
-[dependencies.serde]  # add `serde` in its own section
+[dependencies.serde]  # Add serde in its own section.
 version = "1.0"
-features = ["derive"] # we will need the "derive" feature
+features = ["derive"] # We'll need the derive feature.
 
 [dependencies.chrono]
 version = "0.4"
-features = ["serde"]  # since we're here, we are also going to need
-          # the "serde" feature for the `chrono` crate,
-          # crate, so we can serialize our DateTime field.
-          # declare it the same way as we did for the
-          # `serde` crate.
+features = ["serde"]  # Since we're here, we're also going to need
+          # the serde feature for the chrono crate,
+          # so we can serialize our DateTime field.
+          # Declare it the same way as we did for the
+          # serde crate.
 ```
 
-Now we should be able to adapt our `Task` struct to use the new features from `serde`. Open the `tasks.rs` file and modify our struct so it looks like this:
+We should now be able to adapt the `Task` struct to use the new features from `serde`. Open the `tasks.rs` file and modify the struct so it looks like this:
 
 ```rust
 use chrono::{serde::ts_seconds, DateTime, Local, Utc};
@@ -109,20 +109,20 @@ pub struct Task {
 
 Note the differences:
 
-- We've added the `Deserialize` and `Serialize` to our list of traits to implement
-- We've annotated our `created_at_field` passing the `ts_seconds` from `chrono` to the `serde(with = ...)` attribute, so `chrono` can tell serde how its type `Datetime` will implement the two new traits.
+- We added `Deserialize` and `Serialize` to our list of traits to implement.
+- We annotated the `created_at` field, passing `ts_seconds` from `chrono` to the `serde(with = ...)` attribute so `chrono` can inform `serde` how its `Datetime` type will implement the two new traits.
 
-Great. Now that our `Task` type can perform both serialization and deserialization, we can move on and implement our file handling functions.
+Now that our `Task` type can do both serialization and deserialization, we can move on and implement our file handling functions.
 
 ## Interact with the file system
 
-Lets review the three kinds of actions our program must perform:
+Let's review the three kinds of actions our program needs to perform:
 
-1. Add new tasks to a to-do list.
-2. Remove completed tasks from that list.
-3. Print all the current tasks in that list.
+- Add new tasks to a to-do list.
+- Remove completed tasks from that list.
+- Print all the current tasks in the list.
 
-Our module interface should be as simple as that list, so we are going to expose three functions, one for each action:
+Our module interface should be as simple as that list, so we're going to expose three functions, one for each action:
 
 ```rust
 use std::io::Result;
@@ -135,13 +135,13 @@ pub fn complete_task(journal_path: PathBuf, task_position: usize) -> Result<()> 
 pub fn list_tasks(journal_path: PathBuf) -> Result<()> { ... }
 ```
 
-Take a look at each function's signature first. See that all of them require a `journal_path:
-PathBuf` argument. That means all of them need a file path to work upon, the file where the tasks will be stored.
+First, take a look at each function's signature. Notice that all of them require a `journal_path:
+PathBuf` argument. That's because all of them need a file path to complete their work: the file where the tasks will be stored.
 
-- `add_task` also requires a `Task` argument. That makes sense because that is the taskthal will be added to the list.
-- `complete_task` requires a `task_position` argument to indicate which `Task` will be removed, meaning it is completed.
-- `list_tasks` does not need any additional information, since it will only show to our user all tasks currently stored in the journal file in a pretty format.
+- `add_task` also requires a `Task` argument. That argument specifies the task that will be added to the list.
+- `complete_task` requires a `task_position` argument to indicate which `Task` will be removed. When a task is removed, that means it's completed.
+- `list_tasks` doesn't need any additional information. It will just present to the user all tasks currently stored in the journal file, in a pretty format.
 
-They all have the same return type: `std::io::Result<()>`, which means that this is an I/O result, signaling that we're expecting a broad family of unwanted outcomes that might arise when dealing with data in the physical word. The `Ok` variant is just an empty tuple, `()`, which is the type commonly associated with "no data" at all; its only purpose is to signal that the function returned an `Ok` and no errors happened.
+The functions all have the same return type: `std::io::Result<()>`. This format indicates that the return type is an I/O result. This return type signals that we're expecting a broad family of unwanted outcomes that might arise when we deal with data in the physical word. The `Ok` variant is just an empty tuple, `()`, which is the type commonly associated with no data at all. Its only purpose is to signal that the function returned an `Ok` and no errors occurred.
 
-In the next units, we will walk through writing the contents of each function in detail.
+In the next units, we'll walk through writing the contents of each function in detail.
