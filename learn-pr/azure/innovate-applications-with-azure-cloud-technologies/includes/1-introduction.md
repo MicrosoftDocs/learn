@@ -1,0 +1,6 @@
+
+Tailwind Traders is now facing competitive pressure for its products from startups that have entered the online retail market. Preliminary customer feedback indicates that these new entities offer a much better online experience than Tailwind Traders, and that the growth of the online market is substantially higher than the brick and mortar business. As a consequence, Tailwind Traders has reprioritized innovation efforts to reshape its digital presence and e-commerce platforms.
+
+One obstacle is the large efforts that the existing applications require to introduce modifications. However, Tailwind Traders experience shows that application changes often result in application downtime, and a subsequent reduced customer experience. Hence, the change rate has traditionally been quite slow for Tailwind Traders applications in order to reduce downtime. However, the new competitive threats in the e-commerce sector demand a much higher innovation speed, and at the same time guarantee as much uptime as possible.
+
+After migrating the on-premises applications to Azure with a lift-and-shift process, Tailwind Traders is aiming at rearchitect them to achieve the required innovation rate that will allow for the company to survive in the new competitive ecosystem.

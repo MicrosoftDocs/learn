@@ -1,0 +1,6 @@
+- After validating or rejecting our hypothesis additional data can be gathered to formulate additional hypothesis and restart the innovation cycle
+- Customer interaction is key to perceive in which areas additional value could be delivered, and which innovations would be required.
+- Other feedback mechanisms
+    - Allow customers to give feedback easily
+    - Send customer surveys (offering the option to opt out). Example: which additional payment options would you like to see in our platform?
+    - Build with customer empathy
