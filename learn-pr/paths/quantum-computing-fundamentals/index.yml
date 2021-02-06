@@ -19,7 +19,7 @@ summary: |
 
   Welcome aboard!
 
-  <img src="/learn/quantum/qsharp-create-first-quantum-development-kit/media/spaceship-core.svg" width="300" height="260.7"></img>
+  <img src="/learn/quantum/qsharp-create-first-quantum-development-kit/media/spaceship-core.svg" alt="Spaceship of the quantum exploration crew." width="350" height="304"></img>
 
   After completing this learning path, you'll be able to:
   - Explain the fundamental concepts of quantum computing.
@@ -32,7 +32,7 @@ summary: |
 
   > [!NOTE]
   > You don't need to take the modules in the listed order. Take a look at each module's description and prerequisites. Many modules do not have prior requirements.
-  > If you would like to use the Azure Quantum cloud service, for either quantum computing or optimization, start with the [first module](learn/modules/get-started-azure-quantum).
+  > If you would like to use the Azure Quantum cloud service, for either quantum computing or optimization, start with the [first module](/learn/modules/get-started-azure-quantum).
   > If you would like to learn more about quantum programming using the Quantum Development Kit and the Q# programming language, feel free to jump to [your first Q# program](/learn/modules/qsharp-create-first-quantum-development-kit).
 prerequisites: None
 iconUrl: /learn/achievements/quantum/quantum-computing-fundamentals.svg
