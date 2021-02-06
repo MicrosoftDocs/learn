@@ -1,4 +1,4 @@
-In this module, you learned about the two main services Azure Quantum offers: quantum computing and optimization solutions. You also reviewed some real-case applications. 
+In this module, you learned about the two main services Azure Quantum offers: quantum computing and optimization solutions. You also reviewed some real-case applications.
 
 Quantum computing exploits quantum properties such as superposition, interference and entanglement to perform computations. For simulating quantum mechanical systems such as molecules, quantum computing provides important speedups.
 
