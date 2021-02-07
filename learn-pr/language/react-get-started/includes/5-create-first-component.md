@@ -74,4 +74,4 @@ Our `import` statement imports our component using the same syntax we would for 
 
 Save all files. The browser automatically refreshes with the results!
 
-![Screenshot of Recipe Manager](media/recipe-manager.png)
+![Screenshot of Recipe Manager](/media/recipe-manager.png)

@@ -18,11 +18,7 @@ abstract: |
   - Create a React component
   - Work with dynamic data
   - Work with CSS and style
-prerequisites:
-- html/css
-- javascript
-- git
-- npm
+prerequisites: none #TODO
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
@@ -31,7 +27,6 @@ roles:
 - student
 - developer
 products:
-- react-js
 - azure-app-service-static
 - vs-code
 units:

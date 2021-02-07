@@ -76,7 +76,7 @@ With our code created, let's see our site in action!
 
 Your default browser should automatically open and display your page. If this does not happen automatically, open your browser and navigate to **http://localhost:8080**. You should now see your page!
 
-![Screenshot of Hello world page](media/hello.png)
+![Screenshot of Hello world page](/media/hello.png)
 
 ### Exploring the generated code
 

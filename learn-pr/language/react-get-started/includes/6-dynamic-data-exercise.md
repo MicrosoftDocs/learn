@@ -74,4 +74,4 @@ Much in the same way we were able to use `<App />` as if it were an HTML element
 
 Save all files. The browser should automatically refresh and display the updated page, with **Mashed potatoes** now displayed.
 
-![Screenshot of page displaying title](media/title.png)
+![Screenshot of page displaying title](/media/title.png)
