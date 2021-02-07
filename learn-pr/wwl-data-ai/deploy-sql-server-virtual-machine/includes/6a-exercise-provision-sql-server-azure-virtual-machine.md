@@ -37,10 +37,10 @@ You're a database administrator. You need to create a test environment for use i
 
     - Resource group: Choose the existing resource group; it should have a name starting with **RG**
     - Virtual machine name:  **azureSQLserverVM**
-    - Region: **&lt;your local region, same as the selected region for your resource group&gt;**
+    - Region: Choose one of the **Recommended**  US regions
     - Availability Options: **No infrastructure redundancy required**
     - Azure spot instance: **No** (don't check the box)
-    - Size: Standard **D2s v2** (You will need to select 'see all sizes' to find **D2s v2** -- 2 vCPUs, 7 GiB memory)
+    - Size: Standard **DS2_v2** (You will need to select 'see all sizes' to find **DS2_v2** -- 2 vCPUs, 7 GiB memory)
     - Administrator account username: **labadmin**
     - Administrator account password: **Azur3Pa$$2020**
     - Selected inbound ports: **RDP (3389)**
@@ -102,7 +102,6 @@ You're a database administrator. You need to create a test environment for use i
 
     :::image type="content" source="../media/dp-3300-module-11-lab-20.png" alt-text="Screenshot of overview page of the new SQL server.":::
 
-1. Select **SQL Server configuration** from the left navigation, then select **Manage SQL virtual machine**.
 
 1. Review the information available in Azure about your SQL Server installation.
 
