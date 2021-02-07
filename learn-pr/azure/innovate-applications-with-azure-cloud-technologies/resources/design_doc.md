@@ -10,7 +10,7 @@ CAF Innovate: use Azure to innovate your applications and give a better experien
 - functional consultant
 - solution architect
 - student
-- technology manager 
+- technology manager
 
 ## Level
 
