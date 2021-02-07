@@ -3,9 +3,7 @@ The externaldata operator returns a table whose schema is defined in the query i
 Syntax
 
      externaldata ( ColumnName : ColumnType [, ...] )
-
       [ StorageConnectionString [, ...] ]
-
       [with ( PropertyName = PropertyValue [, ...] )]
 
 Arguments
