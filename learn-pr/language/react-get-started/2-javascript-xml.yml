@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.2-javascript-xml
+metadata:
+  title: JavaScript XML
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: 
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: JavaScript XML
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-javascript-xml.md)]

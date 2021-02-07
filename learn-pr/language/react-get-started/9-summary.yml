@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.9-summary
+metadata:
+  title: Summary
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: 
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

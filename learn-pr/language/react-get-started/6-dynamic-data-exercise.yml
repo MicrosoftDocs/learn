@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.6-dynamic-data-exercise
+metadata:
+  title: Display dynamic data
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: 
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Display dynamic data
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-dynamic-data-exercise.md)]

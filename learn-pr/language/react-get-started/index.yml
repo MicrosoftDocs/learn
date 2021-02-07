@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.language.react-get-started
+metadata:
+  title: Get started with React
+  description: Description #TODO
+  ms.date: 02/03/2021
+  author: 
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with React
+summary: Summary #TODO
+abstract: | 
+  In this module, you will:
+  - Understand JSX
+  - Install React
+  - Create a React project
+  - Create a React component
+  - Work with dynamic data
+  - Work with CSS and style
+prerequisites:
+- html/css
+- javascript
+- git
+- npm
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- react-js
+- azure-app-service-static
+- vs-code
+units:
+- learn.language.react-get-started.1-introduction
+- learn.language.react-get-started.2-javascript-xml
+- learn.language.react-get-started.3-clone-starter
+- learn.language.react-get-started.4-hello-world-test
+- learn.language.react-get-started.5-create-first-component
+- learn.language.react-get-started.6-dynamic-data-exercise
+- learn.language.react-get-started.7-add-style
+- learn.language.react-get-started.8-knowledge-check
+- learn.language.react-get-started.9-summary
+badge:
+  uid: learn.language.react-get-started.badge

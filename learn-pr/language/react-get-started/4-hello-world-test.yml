@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.4-hello-world-test
+metadata:
+  title: Hello world exercise
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: 
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Hello world exercise
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-hello-world-test.md)]
