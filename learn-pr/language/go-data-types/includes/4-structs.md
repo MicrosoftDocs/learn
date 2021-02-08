@@ -1,12 +1,12 @@
 There are times when you need to represent a collection of fields in one structure. For instance, when you need to write a payroll program, you need to use an employee data structure. In Go, you can use structs to group together different fields that could form a record.
 
-A *struct* in Go is **another data type** that could contain zero or more fields of arbitrary types and represent them as a single entity.
+A *struct* in Go is *another data type* that could contain zero or more fields of arbitrary types and represent them as a single entity.
 
 In this section, we'll explore why structs are essential and how to use them.
 
-## Declaring and initializing a struct
+## Declare and initialize a struct
 
-To declare a struct, you need to use the `struct` keyword, along with the list of fields and their type that you'd like your new data type to have. For instance, to define an employee struct, you could use the following code:
+To declare a struct, you need to use the `struct` keyword, along with the list of fields and their type that you want your new data type to have. For instance, to define an employee struct, you could use the following code:
 
 ```go
 type Employee struct {
@@ -29,15 +29,15 @@ And if you want to declare and initialize a variable at the same time, you could
 employee := Employee{1001, "John", "Doe", "Doe's Street"}
 ```
 
-Notice that you have to specify a value for each of the fields from the struct. But that could be problematic sometimes. Alternatively, you can be more specific about the fields you'd like to initialize in a struct:
+Notice that you have to specify a value for each of the fields from the struct. But that could be problematic sometimes. Alternatively, you can be more specific about the fields you want to initialize in a struct:
 
 ```go
 employee := Employee{LastName: "Doe", FirstName: "John"}
 ```
 
-Notice that from the previous statement, the order you assign values to each field doesn't matter. Moreover, it doesn't matter if you don't specify a value for any other field (Go will assign a default value depending on the field data type).
+Notice that from the previous statement, the order you assign values to each field doesn't matter. Also, it doesn't matter if you don't specify a value for any other field. Go will assign a default value depending on the field data type.
 
-To access individual fields of a struct, you can do it by using the dot notation (`.`), like this:
+To access individual fields of a struct, you can do it by using the dot notation (`.`), like this example:
 
 ```go
 employee.ID = 1001
@@ -67,7 +67,7 @@ func main() {
 }
 ```
 
-When you run the above code, you see the following output:
+When you run the preceding code, you see the following output:
 
 ```output
 {0 John Doe }
@@ -78,7 +78,7 @@ Notice how the struct becomes mutable when you use pointers.
 
 ## Struct embedding
 
-Structs in Go allows you to embed another struct within a struct. There are going to be times where you'd like to reduce repetition and reuse a common struct. For example, let's say that you'd like to refactor the previous code to have a data type for an Employee and another one for a Contractor. You could have a `Person` struct that holds common fields, like this:
+Structs in Go allow you to embed another struct within a struct. There are going to be times where you want to reduce repetition and reuse a common struct. For example, let's say that you want to refactor the previous code to have a data type for an Employee and another one for a Contractor. You could have a `Person` struct that holds common fields, like this example:
 
 ```go
 type Person struct {
@@ -89,7 +89,7 @@ type Person struct {
 }
 ```
 
-You can then declare other types that embed a `Person` type, like an `Employee` and a `Contractor`. To embed another struct, you simply create a new field, like this:
+You can then declare other types that embed a `Person` type, like an `Employee` and a `Contractor`. To embed another struct, you create a new field, like this example:
 
 ```go
 type Employee struct {
@@ -98,14 +98,14 @@ type Employee struct {
 }
 ```
 
-But to reference a field from the `Person` struct, you'll need to include the `Information` field from an employee variable, like this:
+But to reference a field from the `Person` struct, you'll need to include the `Information` field from an employee variable, like this example:
 
 ```go
 var employee Employee
 employee.Information.FirstName = "John"
 ```
 
-However, if you're refactoring code (as we're doing), that would break our code. Alternatively, you can simply include a new field with the same name of the struct you're embedding, like this:
+If you're refactoring code like we're doing, that would break our code. Alternatively, you can simply include a new field with the same name of the struct you're embedding, like this example:
 
 ```go
 type Employee struct {
@@ -149,13 +149,13 @@ func main() {
 }
 ```
 
-Notice how you access the `FirstName` field from an `Employee` struct without having to specify the `Person` field because it's embedding all its fields automatically. However, when you're initializing a struct, you have to be specific about which field you want to assign a value to.
+Notice how you access the `FirstName` field from an `Employee` struct without having to specify the `Person` field because it's embedding all its fields automatically. But, when you're initializing a struct, you have to be specific about which field you want to assign a value to.
 
-## Encoding and decoding structs with JSON
+## Encode and decode structs with JSON
 
 Finally, you can use structs to encode and decode data in JSON. Go has excellent support for the JSON format, and it's already included in the standard library packages.
 
-You can also do things like rename the name of a field from the struct. For instance, let's say that you don't want the JSON output to show `FirstName` but simply `name` or ignore empty fields. You could use field tags like this:
+You can also do things like rename the name of a field from the struct. For instance, let's say that you don't want the JSON output to show `FirstName` but simply `name` or ignore empty fields. You could use field tags like this example shows:
 
 ```go
 type Person struct {
@@ -216,7 +216,7 @@ func main() {
 }
 ```
 
-When you run the above code, you see the following output:
+When you run the preceding code, you see the following output:
 
 ```output
 [{"ID":0,"name":"John","LastName":"Doe","ManagerID":0},{"ID":0,"name":"David","LastName":"Campbell","ManagerID":0}]
