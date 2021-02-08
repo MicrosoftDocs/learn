@@ -31,7 +31,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-Azure-VNet-1 \
         --public-ip-address PIP-VNG-Azure-VNet-1 \
-        --vnet Azure-VNet-1 \
+        --vnet VNG-Azure-VNet-1 \
         --gateway-type Vpn \
         --vpn-type RouteBased \
         --sku VpnGw1 \

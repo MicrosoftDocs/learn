@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-exercise-stage-commit.md)]
+  [!include[](includes/5-exercise-stage-commit.md)]

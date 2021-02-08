@@ -99,7 +99,7 @@ The `DumpMachine` function creates a table of information that describes the sta
        |1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
    ```
 
-   Every qubit that's allocated with the `using` statement starts in the state $|0\rangle$. So `DumpMachine` produces the information that corresponds to a single-qubit register in the state $|0\rangle$.
+   Every qubit that's allocated with the `use` statement starts in the state $|0\rangle$. So `DumpMachine` produces the information that corresponds to a single-qubit register in the state $|0\rangle$.
 
 1. ```output
        Qubit after applying H:
