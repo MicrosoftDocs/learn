@@ -1,6 +1,6 @@
 Here's the complete code that solves the two challenges in this module.
 
-## Bank core test - bank_test.go
+## Bank core test: bank_test.go
 
 ```go
 
@@ -36,7 +36,7 @@ func TestTransfer(t *testing.T) {
 }
 ```
 
-## Bank Core - bank.go
+## Bank Core: bank.go
 
 ```go
 package bank
@@ -74,7 +74,7 @@ func Statement(b Bank) string {
 }
 ```
 
-## Bank API - main.go
+## Bank API: main.go
 
 ```go
 package main
