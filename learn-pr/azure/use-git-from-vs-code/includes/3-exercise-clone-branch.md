@@ -33,7 +33,7 @@ After a moment or two, the repository is forked to your GitHub account.
 
 When you're working with a fork of a project repository, you usually want to perform the clone operation from your own fork, not from the original repository. This automatically configures Git on your development computer to push your changes to the fork, where you have permissions to do so.
 
-You need the URL of your fork to clone it to your local hard drive. While at the root of this repository, copy the URL of your address bar. It will be in the format of `https://github.com/{Owner}/{Repository}`. Eg: https://github.com/Microsoft/mslearn-use-git-from-vs-code
+You need the URL of your fork to clone it to your local hard drive. While at the root of this repository, copy the URL of your address bar. It will be in the format of `https://github.com/{Owner}/{Repository}`. For example, https://github.com/Microsoft/terminal.
 
 That address is all we need to clone the fork to your machine.
 
