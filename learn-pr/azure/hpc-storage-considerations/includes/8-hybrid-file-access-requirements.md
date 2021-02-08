@@ -79,4 +79,4 @@ Caching offers an additional advantage for hybrid scenarios. Because the data is
 
 Finally, certain caching solutions offer what is called an *attribute check*. Similar to synchronization, the cache will periodically check the attributes of the file located in the source, and retrieve byte ranges where the file modification is greater at the source. This ensures that you're HPC environment is always operating with the freshest data.
 
-![WAN Cachine](../media/wan-caching.png)
+![A diagram showing WAN caching between Azure compute and on-premises storage](../media/wan-caching.png)

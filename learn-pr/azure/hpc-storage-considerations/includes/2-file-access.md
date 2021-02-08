@@ -13,7 +13,7 @@ The data is assumed to reside in one or more storage solutions in your local env
 - Storage area network (SAN) solutions.
 - Network-attached storage (NAS) solutions.
 
-![Three different Storage Architectures](../media/storage-architectures.png)
+![A diagram of three different storage architectures.](../media/storage-architectures.png)
 
 The data in question may be created locally by analysts, artists, researchers, or scientists, and it might also be periodically acquired from third parties and deposited in your local storage solution.
 
@@ -39,5 +39,3 @@ While a file stores actual data (for example, an image or lines of text) and add
 Metadata is a set of values that describes attributes of the data, but is not part of the data. For example, metadata tells you when the file was created and modified, who created the file, and who has permissions to access it.
 
 When a file is created, there are metadata operations that allocate the structures, and to update directory entries for that file. This happens before data is written to the file.
-
-

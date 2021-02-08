@@ -12,9 +12,14 @@ title: Understand factors that influence HPC storage selection in Azure
 summary: TODO this is the text rendered on the title page under the title. It should be 2-3 complete sentences.
 abstract: |
   In this module, you will:
-    - Identify selection criteria for your HPC file system solution
-    - Understand HPC storage options available in Azure today
-prerequisites: None
+  - Document the desired file access architecture for your HPC use case
+  - Consider the implications of your architecture requirements
+  - Compare several file access architectures
+prerequisites:
+- Understanding of file systems
+- Understanding of shared file systems
+- File system permissions and authentication methods, and file system operations
+- Understanding of High Performance Computing (HPC), how HPC jobs run, and how HPC interacts with storage
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -32,7 +37,6 @@ units:
 - learn.hpc-storage-considerations.6-nfs-overview
 - learn.hpc-storage-considerations.7-parallel-file-systems
 - learn.hpc-storage-considerations.8-hybrid-file-access-requirements
-- learn.hpc-storage-considerations.9-knowledge-check
-- learn.hpc-storage-considerations.10-summary
+- learn.hpc-storage-considerations.9-summary
 badge:
   uid: learn.hpc-storage-considerations.badge

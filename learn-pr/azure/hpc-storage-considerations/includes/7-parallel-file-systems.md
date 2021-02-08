@@ -14,7 +14,7 @@ Both Distributed NAS and parallel file systems are shared file systems; files ca
 
 They can both be scaled by adding or upgrading storage hardware technologies, adding "front-end" servers to scale client access, or improving network connectivity.
 
-![NAS vs PFS](../media/nas-vs-pfs.png)
+![A diagram contrasting Network-Attached Storage and Parallel File System architectures](../media/nas-vs-pfs.png)
 
 ### Parallel I/O ###
 

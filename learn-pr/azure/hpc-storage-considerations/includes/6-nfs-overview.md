@@ -26,7 +26,7 @@ We will discuss a *hybrid* architecture in a future unit where this will become 
 
 ### Squashing ###
 
-![Root Squash](../media/root-squash.png)
+![A diagram of client NFS traffic as root being 'squashed' to 65434.](../media/root-squash.png)
 
 *Squashing* refers to the NFS server's ability to force the use of a specific UID when accessing files/folders. For example, an administrator may want to control which UID is used for a specific exported folder. Linux NFS server environments support the ability to squash root access to a non-root UID. NAS products support specific squashing based on incoming client network/address and UID value. One of the key uses of squashing is to ensure non-root access over remote connections.
 
