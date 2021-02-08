@@ -1,4 +1,6 @@
-Before you can use Content Moderator, you will require an Azure subscription and a Content Moderator resource. The resource is required for accessing the service as it provides a unique endpoint for accessing the APIs and an access key for securing access to the service. Microsoft provides a free pricing tier that you can use to test the service. Using the free tier, you can determine if the Content Moderator service is the right choice for your organization.
+Using the Content Moderator service requires an Azure subscription and a Content Moderator resource. The resource is required for accessing the service and provides the endpoint and access key for the service. 
+
+Microsoft provides a free pricing tier that you can use to test the service. Using the free tier, you can determine if the Content Moderator service is the right choice for your organization.
 
 The Content Moderator service can be accessed through REST or by using the appropriate software development kit (SDK). The currently supported languages in the SDK are:
 
@@ -10,17 +12,17 @@ The Content Moderator service can be accessed through REST or by using the appro
 
 ## Moderating text
 
-You can call a single method in the API, **ModerateText**, to scan text in a file. You specify the input file as well as an output file in the method call. The service will scan the text in the file and return the results in the output file. The API will return a JSON formatted result back to the calling application. Using a sample text input of:
+You can call a single method in the API, **ModerateText**, to scan text in a file. You specify the input file and an output file in the method call. The service will scan the text in the file and return the results in the output file. The API will return a JSON formatted result back to the calling application. Using a sample text input of:
 
 "Is this a crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052"
 
-The service will identify some PII information (email, phone, IP, and address). It will also classify the text with a review recommendation.
+The service will identify some personal data (email, phone, IP, and address). It will also classify the text with a review recommendation.
 
 :::image type="content" source="../media/3-text-moderator-result.png" alt-text="text moderation results in JSON format showing identified text categories with scores and review recommended":::
 
 ## Moderating images
 
-If you decide to use the service for image moderation, you will need to have your images accessible to the service through a URL. If you have multiple images, you would place the URLs for each image as a separate line item in a text file and send that to the service.  Each image will be evaluated separately by the service.
+Using the service for image moderation requires the images to be accessible through a URL. If you have multiple images, you would place the URLs for each image as a separate line item in a text file and send that to the service.  Each image will be evaluated separately by the service.
 
 When the image has been evaluated, a JSON result is returned indicating a score and classification for the adult and racy categories.
 

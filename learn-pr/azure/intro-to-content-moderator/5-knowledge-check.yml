@@ -13,36 +13,36 @@ azureSandbox: false
 durationInMinutes: 10
 quiz:
   questions:
-  - content: "What is an example of reinforcement learning?"
+  - content: "What is content moderation?"
     choices:
-    - content: "Rewarding the user for selecting the proper item."
+    - content: "Having a panel of experts review content in real-time."
       isCorrect: false
-      explanation: "Incorrect. Reinforcement learning is not intended to offer rewards for choices made."
-    - content: "The act of retraining the model by adding new inputs."
+      explanation: "Incorrect. This would be an expensive option and take considerable resources. It can be done, but is not truly representative of content moderation."
+    - content: "Only allowing limited amounts of information to be published for time constraints."
       isCorrect: false
-      explanation: "Incorrect. You may want to retrain the model with new inputs if it is not performing as expected, but that is not a definition of reinforcement learning."
-    - content: "Actions influence later inputs."
+      explanation: "Incorrect. While you may consider moderation as a means to limit content, time constraints are not real factors in content moderation."
+    - content: "Content moderation is a process that involves reviewing, monitoring, and interpreting content before it is released for general consumption."
       isCorrect: true
-      explanation: "Correct. Applied to artificial intelligence, reinforcement learning is considered a closed-loop* model. The term refers to a model where the actions influence later inputs. The model learns behaviors to use based on feedback collected from its use."
-  - content: "What is Apprentice Mode?"
+      explanation: "Correct. Content moderation is a process that involves simple steps. Reviewing, monitoring, and interpretation of content before it is displayed or released for general consumption."
+  - content: "What is the purpose of a custom term list?"
     choices:
-    - content: "A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions."
+    - content: "A list of terms that you have created to block or allow content based on your organization's content policies."
       isCorrect: true
-      explanation: "Correct. A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions."
-    - content: "Setting up a staging environment to help train the model before pushing to release."
+      explanation: "Correct. Custom term list is a list of terms that you have created. You can use the list to block or allow content based on your organization's content policies."
+    - content: "To automatically trigger the Review Tool."
       isCorrect: false
-      explanation: "Incorrect. Apprentice mode is not concerned with staging environments for model training."
-    - content: "The default learning behavior for Personalizer where your learning loop, uses machine learning to build the model that predicts the top action for your content."
+      explanation: "Incorrect. You may decide to implement the Review Tool for human review actions but custom term lists do not automatically trigger the Review Tool."
+    - content: "To allow users to enter acceptable terms for online forum discussions, based on their region."
       isCorrect: false
-      explanation: "Incorrect. It is known as the Online mode."
-  - content: "Why is it important to ensure you have clearly defined business goals for your Personalizer scenario?"
+      explanation: "Incorrect. Acceptable content should not be controlled by end users so allowing them to change custom term lists is not a good practice."
+  - content: "What is a possible scenario where content moderator can help?"
     choices:
-    - content: "To satisfy business acceptance testing (BAT) needs."
+    - content: "To test your marketing campaign's content effectiveness in reaching the target audience."
       isCorrect: false
-      explanation: "Incorrect. While BAT may be necessary to validate the outcome of the use of Personalizer, it is not a reason to have clear business goals."
-    - content: "Clearly defined business goals are critical to ensuring Personalizer is a valid choice for the intended purpose."
+      explanation: "Incorrect. Content Moderator may use custom term lists to moderate content but it doesn't measure effective use of content."
+    - content: "Identify locations in a video where offensive content was detected."
       isCorrect: true
-      explanation: "Correct. Personalizer is not the right choice for all scenarios. Without clearly defined business goals, the application of Personalizer may not achieve the desired outcomes."
-    - content: "Personalizer can be used in any scenario so business goals are irrelevant."
+      explanation: "Correct. The service can scan video content and return time markers where the offensive content was found."
+    - content: "Scanning web sites that blacklist URLs to determine if your web site is found there."
       isCorrect: false
-      explanation: "Incorrect. Just like careful planning for the service or application is critical to its success, business goals are a critical component of a Personalizer evaluation and implementation scenario."
+      explanation: "Incorrect. The Content Moderator can scan the content of these web sites, and you may use custom term lists to determine if specific words are present, but this is not a viable scenario for the Content Moderator service."

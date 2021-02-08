@@ -1,5 +1,9 @@
-Azure Personalizer is a cloud-based service that helps your applications choose the best content item to show your users. Using a *closed-loop* learning model, the service learns the best option to display to the user based on the user's selections.
+Content moderation is a process that involves simple steps. Reviewing, monitoring, and interpretation of content before it is displayed or released for general consumption. 
 
-Personalizer uses features, which are information about the current context to choose the best action. The features represent all information you think may help personalize to achieve higher rewards. Features can be generic, or specific to an item.
+The Azure Content Moderator service can help your organization review text, image, and video content. Use the service to ensure content does not contain objectionable material. The built-in capabilities to incorporate human review into the process is an advantage that can add an extra layer of validation.
 
-Personalizer can be used when you want to select and display content to users for enhancing their experience with your services, achieve better business results through upsell opportunities or driving revenues through targeted advertisements on your site, or improving productivity by guiding employees through complex processes.
+Use the Azure Content Moderator service for situations that would require a content moderation service such as:
+
+- Online marketplaces that moderate product catalogs and other user-generated content.
+- Gaming companies that moderate user-generated game artifacts and chat rooms.
+- Social messaging platforms that moderate images, text, and videos added by their users.
