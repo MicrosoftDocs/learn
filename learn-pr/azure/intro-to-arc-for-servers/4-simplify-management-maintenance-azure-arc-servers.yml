@@ -9,6 +9,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 durationInMinutes: 10
 content: |
   [!include[](includes/4-simplify-management-maintenance-azure-arc-servers.md)]

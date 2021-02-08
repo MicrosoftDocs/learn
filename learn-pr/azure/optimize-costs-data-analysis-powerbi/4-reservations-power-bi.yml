@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-costs-data-analysis-powerbi.reservations-power-bi
+metadata:
+  title: Optimize your Azure reservation use to save money
+  description: Optimize your Azure reservation use to save money
+  ms.date: 02/03/2021
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize your Azure reservation use to save money
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-reservations-power-bi.md)]
