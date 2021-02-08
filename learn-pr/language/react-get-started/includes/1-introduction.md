@@ -22,4 +22,4 @@ In this module, we'll create a starter project for React. We will introduce JSX,
 
 - [Node.js](https://nodejs.org)
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com)
-- [git](https://git-scm.com/)
+- [git](https://git-scm.com/?azure-portal=true)

@@ -4,7 +4,7 @@ metadata:
   title: Knowledge check
   description: Check your understanding so far.
   ms.date: 02/03/2021 
-  author: 
+  author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
@@ -12,9 +12,7 @@ title: Knowledge check
 durationInMinutes: 1
 content: |
   Choose the best response for each question. Then select **Check your answers.**
-
 quiz:
-  title: Check your knowledge
   questions:
   - content: Question 1 #TODO
     choices:
@@ -25,6 +23,14 @@ quiz:
       isCorrect: false
       explanation: explanation #TODO
   - content: Question 2 #TODO
+    choices:
+    - content: Answer 1 #TODO
+      isCorrect: false
+      explanation: explanation #TODO
+    - content: Answer 2 #TODO
+      isCorrect: true
+      explanation: explanation #TODO
+  - content: Question 3 #TODO
     choices:
     - content: Answer 1 #TODO
       isCorrect: false

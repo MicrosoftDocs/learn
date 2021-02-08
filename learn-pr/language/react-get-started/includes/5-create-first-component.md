@@ -30,7 +30,7 @@ The core of our component is contained in the `return` statement. Notice that we
 
 The HTML returned by the function (or component) is what is displayed on the page. The display is a header containing the text **Recipe Manager**.
 
-> ![NOTE]
+> [!NOTE]
 > Notice that the `h1` element is contained inside an HTML 5 `article` element. Because JSX uses XML, we are required to always have one root element. `article` serves as the root for this component. This allows us to add HTML and other React components as our application continues to grow.
 
 ## Update our application to use our core component

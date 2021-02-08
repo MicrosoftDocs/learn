@@ -2,13 +2,13 @@
 uid: learn.language.react-get-started.3-clone-starter
 metadata:
   title: Clone the repository and explore the starter package
-  description: Description #TODO
+  description: Use a starter project to get familiar with React.
   ms.date: 02/03/2021 
-  author: 
+  author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
 title: Clone the repository and explore the starter package
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/3-clone-starter.md)]

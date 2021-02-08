@@ -2,13 +2,13 @@
 uid: learn.language.react-get-started.5-create-first-component
 metadata:
   title: Create your first component
-  description: Description #TODO
+  description: Create your core component.
   ms.date: 02/03/2021 
-  author: 
+  author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
 title: Create your first component
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/5-create-first-component.md)]

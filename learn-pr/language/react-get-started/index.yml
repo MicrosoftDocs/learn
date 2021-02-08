@@ -2,14 +2,14 @@
 uid: learn.language.react-get-started
 metadata:
   title: Get started with React
-  description: Description #TODO
+  description: Learn what you need to start building with React.
   ms.date: 02/03/2021
-  author: 
+  author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with React
-summary: Summary #TODO
+summary: React.js is the most popular front-end JavaScript framework. Through JSX, a combination of HTML and JavaScript, developers are able to create views in a natural fashion. Developers can also create components for reusable blocks across their applications. This learning path will introduce you to React, and the core skills you need as a developer to use this powerful framework.
 abstract: | 
   In this module, you will:
   - Understand JSX
@@ -18,7 +18,7 @@ abstract: |
   - Create a React component
   - Work with dynamic data
   - Work with CSS and style
-prerequisites: none #TODO
+prerequisites: You'll need knowledge of HTML, CSS, and JavaScript, package management with Node.js and `npm' Knowledge of Git
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
