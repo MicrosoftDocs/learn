@@ -43,6 +43,6 @@ quiz:
     - content: "Identify locations in a video where offensive content was detected."
       isCorrect: true
       explanation: "Correct. The service can scan video content and return time markers where the offensive content was found."
-    - content: "Scanning web sites that blacklist URLs to determine if your web site is found there."
+    - content: "Scanning web sites that show a blocklist of URLs to determine if your web site is found there."
       isCorrect: false
       explanation: "Incorrect. The Content Moderator can scan the content of these web sites, and you may use custom term lists to determine if specific words are present, but this is not a viable scenario for the Content Moderator service."

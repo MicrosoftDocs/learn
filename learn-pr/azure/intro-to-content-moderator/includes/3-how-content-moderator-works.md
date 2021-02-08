@@ -18,7 +18,61 @@ You can call a single method in the API, **ModerateText**, to scan text in a fil
 
 The service will identify some personal data (email, phone, IP, and address). It will also classify the text with a review recommendation.
 
-:::image type="content" source="../media/3-text-moderator-result.png" alt-text="text moderation results in JSON format showing identified text categories with scores and review recommended":::
+```json
+{
+  "OriginalText": "Is this a crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052",
+  "NormalizedText": "   crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052",
+  "Misrepresentation": null,
+  "PII": {
+    "Email": [{
+      "Detected": "abcdef@abcd.com",
+      "SubType": "Regular",
+      "Text": "abcdef@abcd.com",
+      "Index": 21
+    }],
+    "IPA": [{
+      "SubType": "IPV4",
+      "Text": "255.255.255.255",
+      "Index": 61
+    }],
+    "Phone": [{
+      "CountryCode": "US",
+      "Text": "6657789887",
+      "Index": 45
+    }],
+    "Address": [{
+      "Text": "1 Microsoft Way, Redmond, WA 98052",
+      "Index": 78
+    }],
+    "SSN": []
+  },
+  "Classification": {
+    "ReviewRecommended": true,
+    "Category1": {
+      "Score": 0.00040505084325559437
+    },
+    "Category2": {
+      "Score": 0.22345089912414551
+    },
+    "Category3": {
+      "Score": 0.98799997568130493
+    }
+  },
+  "Language": "eng",
+  "Terms": [{
+    "Index": 3,
+    "OriginalIndex": 10,
+    "ListId": 0,
+    "Term": "crap"
+  }],
+  "Status": {
+    "Code": 3000,
+    "Description": "OK",
+    "Exception": null
+  },
+  "TrackingId": "7a6e3717-1382-4b63-a8f4-24922e041f82"
+}
+```
 
 ## Moderating images
 

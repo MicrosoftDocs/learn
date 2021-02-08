@@ -4,7 +4,7 @@ Your company provides a platform for customers to review movies. The movie libra
 
 Your task is to investigate the Content Moderator API to gain an understanding of its functionality. You want to determine if the services in the API can provide an automated review of content. You also want to ensure that the service offers a way to integrate review by humans if necessary.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you'll be able to:
 
