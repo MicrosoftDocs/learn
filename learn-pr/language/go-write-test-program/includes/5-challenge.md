@@ -11,7 +11,7 @@ To create the transfer method, you should keep these points in mind:
 
 ## Modify the statement endpoint to return a JSON object
 
-At this point, the `/statement` endpoint returns a string that won't be useful if you want to expose it as an API. Modify the endpoint to return the account object in a JSON format, like this:
+At this point, the `/statement` endpoint returns a string that won't be useful if you want to expose it as an API. Modify the endpoint to return the account object in a JSON format:
 
 ```output
 "{\"Name\":\"John\",\"Address\":\"Los Angeles, California\",\"Phone\":\"(555) 314 8947\",\"Number\":1001,\"Balance\":0}"
@@ -20,8 +20,8 @@ At this point, the `/statement` endpoint returns a string that won't be useful i
 We'd like you to make this change expecting that anyone who uses your core package might want to implement a different statement method to change the output. So you need to make the proper changes to make your core package extensible. In other words, you need to:
 
 1. Create an interface with a `Statement() string` function.
-1. Create a new `Statement()` function in your core package that receives the interface that you created as a parameter. This function should call the `Statement()` method that your structs already have. 
+1. Create a new `Statement()` function in your core package that receives the interface that you created as a parameter. This function should call the `Statement()` method that your structures already have. 
    
-   When you do this, you'll be allowed to create your custom `Account` struct and your custom `Statement()` method. To remember how to do this, you can go back to the module about structs (embedding) and interfaces.
+   When you do this, you'll be allowed to create your custom `Account` structure and your custom `Statement()` method. To remember how to do this, you can go back to the module about structures (embedding) and interfaces.
 
 Happy coding!

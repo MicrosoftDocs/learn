@@ -1,14 +1,14 @@
-Let's talk about what we'll be creating. As mentioned previously, we'll create two projects: one for the application's core logic and another one to expose logic through a Web API. Imagine that you're now part of a team that's building an online bank system where users need to create accounts, transfer money, withdraw money, and get an account statement.
+Let's talk about what we'll be creating. As mentioned previously, we'll create two projects: one for the application's core logic and another one to expose logic through a Web API. Imagine that you're now part of a team that's building an online bank system.
 
 ## Define the features and requirements
 
 The online bank we're about to build is a proof of concept, which will determine how feasible it is to build the bank app. In this first iteration, the interaction with the core package will be through a CLI program. We won't have a user interface or persist data into a database. To see the account statement from a customer, we'll simply expose an endpoint.
 
-The online bank system will be able to:
+The online bank system will:
 
-- Create an account.
-- Give customers the ability to withdraw money.
-- Give customers the ability to transfer money to another account.
+- Enable customers to create an account.
+- Enable customers to withdraw money.
+- Enable customers to transfer money to another account.
 - Provide an account statement with customer data and a final balance.
 - Expose a Web API through an endpoint to print an account statement.
 
@@ -18,7 +18,7 @@ We'll build this together, so don't worry too much about the details for now.
 
 Let's create the initial set of files that we'll need for the application. We'll create a Go package for all the bank core logic and a `main` program to initialize the system with a few customers and actions like deposits and transfers. Additionally, this `main` program will start a Web API server to expose an endpoint for the account statement.
 
-Let's create the following files structure in your `$GOPATH` directory:
+Let's create the following file structure in your `$GOPATH` directory:
 
 ```output
 $GOPATH/

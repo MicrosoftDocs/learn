@@ -1,12 +1,12 @@
-Now that we have the base project running along with our test file, let's start writing the code that implements the previous unit's features and requirements. We'll come back to a few topics we've discussed, like errors, structs, and methods.
+Now that we have the base project running along with our test file, let's start writing the code that implements the previous unit's features and requirements. We'll come back to a few topics we've discussed, like errors, structures, and methods.
 
 Open the `$GOPATH/src/bankcore/bank.go` file, remove the `Hello()` function, and let's start writing the core logic of our online bank system.
 
-## Create structs for customers and accounts
+## Create structures for customers and accounts
 
-Let's begin by creating a `Customer` struct where we'll have the name, address, and phone number from a person who wants to become a bank customer. Also, we need a struct for the `Account` data. Because a customer can have more than one account, let's embed the customer information into the account object. Basically, let's create what we defined in the `TestAccount` test.
+Let's begin by creating a `Customer` structure where we'll have the name, address, and phone number from a person who wants to become a bank customer. Also, we need a structure for the `Account` data. Because a customer can have more than one account, let's embed the customer information into the account object. Basically, let's create what we defined in the `TestAccount` test.
 
-The structs that we need might look like the following:
+The structures that we need might look like the following:
 
 ```go
 package bank
@@ -35,7 +35,7 @@ PASS
 ok      github.com/msft/bank    0.094s
 ```
 
-This test is passing because we've implemented the structs for `Customer` and `Account`. Now that we have the structs, let's write the methods for adding the features that we need in the initial version of our bank. These features include deposit, withdraw, and transfer money.
+This test is passing because we've implemented the structures for `Customer` and `Account`. Now that we have the structures, let's write the methods for adding the features that we need in the initial version of our bank. These features include deposit, withdraw, and transfer money.
 
 ## Implement the deposit method
 
@@ -69,7 +69,7 @@ When you run `go test -v`, you should see a failing test in the output:
 FAIL    github.com/msft/bank [build failed]
 ```
 
-To satisfy the previous test, let's create a `Deposit` method to our `Account` struct that returns an error if the amount received is equal to or lower than zero. Otherwise, simply add the amount received to the balance of the account.
+To satisfy the previous test, let's create a `Deposit` method to our `Account` structure that returns an error if the amount received is equal to or lower than zero. Otherwise, simply add the amount received to the balance of the account.
 
 Use the following code for the `Deposit` method:
 
@@ -130,7 +130,7 @@ ok      github.com/msft/bank    0.197s
 ```
 
 > [!NOTE]
-> From here on, we'll write one test case for each method. But you should write as many tests as you feel comfortable with to your programs, so you can cover both expected and unexpected scenarios. For example, in this case, the error-handling logic is tested.
+> From here on, we'll write one test case for each method. But you should write as many tests to your applications as you feel comfortable with, so you can cover both expected and unexpected scenarios. For example, in this case, the error-handling logic is tested.
 
 ## Implement the withdraw method
 

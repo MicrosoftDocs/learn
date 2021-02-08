@@ -61,7 +61,7 @@ func TestAccount(t *testing.T) {
 }
 ```
 
-We introduced a struct for account and customer that we haven't yet implemented. And we're using the `t.Error()` function to say that the test will fail if something doesn't happen the way it's supposed to happen.
+We introduced a structure for account and customer that we haven't yet implemented. And we're using the `t.Error()` function to say that the test will fail if something doesn't happen the way it's supposed to happen.
 
 Also, notice that the test has the logic to create an account object (that doesn't exist yet). But we're designing at this moment how we'd like to interact with our package. 
 

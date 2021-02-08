@@ -1,15 +1,15 @@
 We've come to the final module, where we'll write a simple application that uses almost all of the concepts we've seen so far. The idea is to guide you step by step on how to write an application, how to structure the files, how to compile the files, how to run the application, and how to test the application. We haven't covered how to write tests in Go, but we'll use this module to introduce this important topic.
 
-We'll start by writing the core of the application, which will be for an online bank. Users will interact with your program through an API. We'll create two projects in Go to practice how to reference local packages from another program. Finally, to make sure our core program logic always works, we'll create a set of tests that we can run before testing the program manually in the browser.
+We'll start by writing the core of the application, which will be for an online bank. Users will interact with your application through an API. We'll create two projects in Go to practice how to reference local packages from another program. Finally, to make sure our core application logic always works, we'll create a set of tests that we can run before testing the application manually in the browser.
 
-Like other modules, you'll have to extend the application by solving a challenge that will help you be more confident when writing Go programs in the future.
+Like other modules, you'll have to extend the application by solving a challenge that will help you be more confident when writing Go application in the future.
 
 ## Learning objectives
 
 In this module, you'll practice and learn:
 
 - How testing works in Go.
-- How to wrap the core logic of a program into a package.
+- How to wrap the core logic of an application into a package.
 - How to expose the core logic through a Web API.
 - How to write tests for your core logic package (by using test-driven development).
 - How almost all concepts we've covered so far can work together.
@@ -22,5 +22,5 @@ In this module, you'll practice and learn:
 - Knowledge of basic data types like `string`, `int`, and `boolean`.
 - Knowledge of how to write basic data control flows like `if` and `for` statements.
 - Knowledge of how to write functions.
-- Knowledge of how to create structs and methods.
+- Knowledge of how to create structures and methods.
 - Knowledge of how to use libraries like `net/http`.
