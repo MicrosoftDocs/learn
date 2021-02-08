@@ -87,7 +87,7 @@ First, you'll create a text file that lists the required pip packages. Then, you
 
 ### Create an environment file
 
-The Flask app that you'll create will need to use your Azure Maps key to load the map control onto a webpage. A best practice is to store data like this in environment variables so that the data isn't checked in to source code control. You can set an environment variable to a specific value when you develop or publish your app. Flask uses the python-dotenv package to look for a file named *.env* at the root of your application code folder and then load environment variables from this file.
+The Flask app that you'll create will need to use your Azure Maps key to load the map control onto a webpage. A best practice is to store data like this in environment variables so that the data isn't checked in to source code control. You can set an environment variable to a specific value when you develop or publish your app. Flask uses the python-dotenv package to look for a file named *.env* at the root of your application code folder and then loads environment variables from this file.
 
 > [!TIP]
 > If you deploy this app to Azure by using Azure App Service, the values in the *.env* file must be added to an application settings file so that the values are automatically set as environment variables that the app can use.
@@ -216,28 +216,16 @@ To create the environment file:
 
 You can set up Visual Studio Code to run and debug a Flask app. Then, use your browser to see the app in action.
 
-To set up debugging for your Flask app:
+In Visual Studio Code, be sure that the <i>app.py</i> file is open in the editor. (Debug options vary based on the file you have open.) In the Activity Bar, select the **Run** icon. Under the **Run and Debug** button, select the **create and launch.json file** link. In the selection drop-down, choose the **Flask** link.
 
-1. In Visual Studio Code, be sure that the <i>app.py</i> file is open in the editor. Debug options vary based on the file you have open.
-
-1. In the Activity Bar, select the **Run** icon, or on the menu, select **View** > **Run**.
-
-    :::image type="content" source="../media/run-app.png" alt-text="Screenshot that shows selecting Run for an open file in Visual Studio Code.":::
-
-1. Below the **Run and Debug** button, select the **create a launch.json file** link.
-
-    :::image type="content" source="../media/create-launch-file.png" alt-text="Screenshot that shows selecting the create a launch.json file link.":::
-
-1. In the Command Palette, select **_Flask_ Launch and debug a Flask web application**.
-
-    :::image type="content" source="../media/launch-debug-flask-app.png" alt-text="Screenshot that shows selecting Flask Launch and debug a Flask web application in the Command Palette.":::
+:::image type="content" source="../media/debug-flask-combined.png" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
 
    > [!Note]
    > If you don’t see a new file named *launch.json* in the *.vscode* folder in your application code folder, you can manually create the configuration file.
    >
    > To create the config file, to the right of the **Run** view, select the gear icon.
    >
-   >    A new *launch.json* file  opens in the *.vscode* folder, and the text in the **Run** view changes to *Python:Flask*.
+   > A new *launch.json* file  opens in the *.vscode* folder, and the text in the **Run** view changes to *Python:Flask*.
    >
 
 1. When *Python:Flask* shows in the **Run** view, select the green arrow to run the application.
