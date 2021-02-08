@@ -1,7 +1,3 @@
-Visual Studio Code provides tight source-control integration with Git, by default, and with other source code management (SCM) providers through Visual Studio Code extensions.
-
-If you're an avid user of Visual Studio Code, it's possible that you've either kept Git Bash open in a separate window or used the Visual Studio Code integrated terminal window to enter Git commands. Although this technique works, you might want to improve your workflow efficiency by learning more about other tools that Visual Studio Code has to offer.  Visual Studio Code provides many visual cues, helpful prompts, and shortcuts to common Git features that are tucked away and available when you use common tools such as the Command Palette, the Status Bar, and the Source Control view.
-
 ## What you'll accomplish in this exercise
 
 In this first exercise, you'll simulate the process of contributing to an open-source library.  This provides the perfect context for using the Visual Studio Code integration with Git. You'll see how each tool and feature plays a part in creating a local clone and making your first change to your project code.
@@ -23,15 +19,13 @@ After you've created a fork of the repository that you want to contribute to, yo
 
 Creating a fork of the repository that you want to contribute to is an important first step. Forking takes place entirely within GitHub, so you use the GitHub web interface to do it, not a tool on your development computer.
 
-First, sign in to your GitHub account. If you don't already have an account, you should create one now.
-
 Next, go to the repository that we've named [mslearn-use-git-from-vs-code](https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code).
 
 At this time, don't worry about what the code in this repository does or how it works, or try to get it running locally. In this exercise, you're interested only in learning about the Visual Studio Code integration with Git. This project contains code that you can fork, clone, and modify.
 
 Next, select **Fork** near the upper right of the webpage.
 
-![Screenshot of a GitHub repository webpage with a callout highlighting the Fork button.](../media/2-exercise-clone-branch-01.png)
+![Screenshot of a GitHub Fork button.](../media/3-exercise-clone-branch-01.png)
 
 After a moment or two, the repository is forked to your GitHub account.
 
@@ -39,24 +33,22 @@ After a moment or two, the repository is forked to your GitHub account.
 
 When you're working with a fork of a project repository, you usually want to perform the clone operation from your own fork, not from the original repository. This automatically configures Git on your development computer to push your changes to the fork, where you have permissions to do so.
 
-You need the URL of your fork to clone it to your local hard drive. On the webpage for your fork, near the upper right, copy the URL by selecting the green **Clone or download** button.
+You need the URL of your fork to clone it to your local hard drive. While at the root of this repository, copy the URL of your address bar. It will be in the format of `https://github.com/{Owner}/{Repository}`. Eg: https://github.com/Microsoft/mslearn-use-git-from-vs-code
 
-In the **Clone with HTTPS** window, select the clipboard icon next to the URL to copy the URL to the clipboard.
-
-:::image type="content" source="../media/2-exercise-clone-branch-02.png" alt-text="Screenshot of the GitHub repository webpage, with focus on the Clone or download button and the clipboard icon.":::
+That address is all we need to clone the fork to your machine.
 
 ### Step 3 - Clone the forked project to your local development environment
 
 Open Visual Studio Code.
 
-Select <kbd>Ctrl+Shift+P</kbd> to open the **Command Palette**.
+Press <kbd>Ctrl+Shift+P</kbd> (macOS: <kbd>Cmd+Shift+P</kbd>) to open the **Command Palette**.
 
-In the Search box, enter **clone**.  The dropdown option should list **Git: Clone** as the selected option. Select <kbd>Enter</kbd>.
+In the Search box, enter **clone**.  The drop-down option should list `Git: Clone` as the selected option. Press <kbd>Enter</kbd>.
 
-At the prompt, enter the repository URL by selecting <kbd>Ctrl+V</kbd>. This action pastes the URL that you copied from the **Clone with HTTPS** window in Step 2. Select <kbd>Enter</kbd>.
+At the prompt, enter the repository URL by pressing <kbd>Ctrl+V</kbd> (macOS: <kbd>Cmd+V</kbd>). This action pastes the URL that you copied from the **Clone with HTTPS** window in Step 2. Press <kbd>Enter</kbd>.
 
 > [!NOTE]
-> The Command Palette provides access to many Git features with helpful prompts. If you're curious about what you can accomplish from the Command Palette, open it by selecting <kbd>Ctrl+Shift+P</kbd>, then enter **git** to display a list containing dozens of commands.
+> The Command Palette provides access to many Git features with helpful prompts.  If you're curious about what you can accomplish from the Command Palette, open it by pressing <kbd>Ctrl+Shift+P</kbd> (macOS: <kbd>Cmd+Shift+P</kbd>), then type **git** to display a list containing dozens of commands.
 
 Next, the **Select Folder** window appears. Select the folder on your local hard drive where you want to store the files for the cloned repository.
 
@@ -69,39 +61,39 @@ All the repository's code files appear in the Visual Studio Code **Explorer** vi
 > [!NOTE]
 > An additional window might open at the lower right, suggesting that you install one or more Visual Studio Code extensions for the files in this workspace. You can safely dismiss it for now by selecting **Close** (**X**).
 
-### Step 3 - Create a branch for your changes
+### Step 4 - Create a branch for your changes
 
 The **Status Bar** appears at the bottom of the Visual Studio Code window, and provides a host of functionality depending on the extensions you've loaded and what you're working on. The Status Bar features some handy Git information and functionality. It displays two parts:
 
 - On the left is the name of the current working branch. If you modify any tracked files in the working branch, the Status Bar adds an asterisk symbol (*) next to the branch name.
 
-   ![Screenshot of the Status Bar with an arrow pointing to the asterisk next to the working branch name.](../media/2-exercise-clone-branch-03.png)
+   ![Screenshot of the Status Bar with an asterisk next to the working branch name.](../media/3-exercise-clone-branch-03.png)
 
    When you stage your changes, the asterisk becomes a plus sign (+). After you commit your staged changes, the plus sign disappears, and only the branch name appears.
 
 - On the right is an icon that switches from a circle with arrows (**Synchronize Changes**) to a cloud with an arrow pointing upward (**Publish Changes**).
 
-   The **Synchronize Changes** icon appears in the following image.
+   The **Synchronize Changes** icon is displayed beside the current branch name. Pressing this icon will synchronize your local and remote commits between your machine and your GitHub repository.
 
-   ![Screenshot of the Status Bar with an arrow pointing to the Synchronize Changes icon.](../media/2-exercise-clone-branch-04.png)
+   ![Screenshot of the Status Bar with a Synchronize Changes icon.](../media/3-exercise-clone-branch-04.png)
 
-   And the following image shows you what the **Publish Changes** icon looks like.
+   The **Publish Changes** icon is displayed beside the current branch name. Pressing this will your local commit to your GitHub repository.
 
-   ![Screenshot of the Status Bar with an arrow pointing to the Publish Changes icon.](../media/2-exercise-clone-branch-05.png)
+   ![Screenshot of the Status Bar with a Publish Changes icon.](../media/3-exercise-clone-branch-05.png)
 
-To create a branch, select the branch name (currently set to **master**) in the Status Bar. This opens the **Command Palette** and allows you to either switch to an existing branch or create a new branch.
+To create a branch, click on the branch name (currently set to **master**) in the Status Bar.  This opens the **Command Palette** and allows you to either switch to an existing branch or create a new branch.
 
 Start entering the name of the new branch, **update-response**. As you enter characters, notice that the existing branch names disappear.
 
-After you enter **update-response**, select <kbd>Enter</kbd>. The Command Palette prompts you to select the branch that you will base your new branch on. Select **master**.
+After you type **update-response**, press <kbd>Enter</kbd>.  The Command Palette prompts you to select the branch that you will base your new branch on. Select **master**.
 
 The Status Bar should now display **update-response**, indicating the branch you're now working on.
 
-### Step 4 - Make a change to the source code
+### Step 5 - Make a change to the source code
 
-In the Explorer View, expand the *node/routes* folder, and select the *index.js* file so that it appears in the code editor area of Visual Studio Code.
+In the Explorer View, expand the `node/routes` folder and select the `index.js` file so that it is displayed in the code editor area of Visual Studio Code.
 
-Update the code example to match the following code.
+Update the code example to match the following code without saving your changes:
 
 ```javascript
 const express = require('express');
@@ -116,18 +108,13 @@ module.exports = router;
 
 ```
 
-> [!IMPORTANT]
-> Resist the urge to save your changes for now. You want to reserve that task for the next step so that you can observe how Visual Studio Code provides visual feedback when your code is in a state that needs to be staged and committed.
+### Step 6 - Observe the current state of your branch in the status bar
 
-### Step 5 - Observe the current state of your branch in the status bar
+If you didn't save the `index.js` file in the previous step, you'll notice several visual cues that indicate a change of state to your files in Visual Studio Code.  As you're editing the file, a small blue circle with a number appears on the **Explorer View** icon in the left column.  The number indicates how many files have unsaved changes.
 
-If you pay close attention, you'll notice several visual cues that indicate a change of state to your files in Visual Studio Code. As you're editing the file, a small blue circle with a number appears on the **Explorer View** icon in the left column.  The number indicates how many files have unsaved changes.
+When you save your changes to the file by using <kbd>Ctrl+S</kbd>, the blue circle will disappears and a new blue icon with a number appears on the Source Control Icon, indicating the number of pending changes (unstaged or staged) that are ready to be committed.  The number increments as you make more changes to more files.
 
-When you save your changes to the file by using <kbd>Ctrl+S</kbd>, the blue circle disappears. A moment later, a new blue icon featuring a clock appears over the **Source Control** icon in the left column. This icon indicates that Visual Studio Code is working with Git behind the scenes to understand what just changed.
-
-After a moment, the clock icon disappears, and a new blue icon with a number appears, indicating the number of pending changes (unstaged or staged) that are ready to be committed. The number increments as you make more changes to the files.
-
-:::image type="content" source="../media/2-exercise-clone-branch-06.png" alt-text="Screenshot of the Source Control icon with a circled number indicating the number of changed files ready to commit.":::
+:::image type="content" source="../media/3-exercise-clone-branch-06.png" alt-text="Screenshot of the Source Control icon with a circled number indicating the number of changed files ready to commit.":::
 
 This number corresponds to the appearance of the asterisk symbol (*) in the Status Bar next to the branch name.
 
@@ -140,7 +127,7 @@ Finally, after you commit your changes, this icon disappears. You'll commit the 
 
 Here are a few important takeaways from this exercise:
 
-- To quickly clone a repository, open the Command Palette by selecting <kbd>Ctrl+Shift+P</kbd>, and entering **clone**.
+- To quickly clone a repository, open the Command Palette by pressing <kbd>Ctrl+Shift+P</kbd> and typing **clone**.
 - To quickly see which branch you're working with, look at the Status Bar.
 - To quickly switch to a new branch or create a new branch, select the current branch name in the Status Bar.
 - To quickly run `git pull` and `git push` commands on an existing branch, select **Synchronize Changes**.
