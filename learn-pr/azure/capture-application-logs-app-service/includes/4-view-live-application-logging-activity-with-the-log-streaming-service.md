@@ -8,7 +8,7 @@ Live log streaming is an easy and efficient way to view live logs for troublesho
 
 The log streaming service adds a redirect from the file system logs, so you'll see the same information as is saved to those log files. So, if you enable verbose logging for ASP.NET Windows apps, for example, the live log stream will show all your logged messages.
 
-![Screenshot of a live log stream with sample data from an ASP.NET website including the process ID, error severity, and full error message.](../media/4-live-log-stream.png)
+![Screenshot of a live log stream with sample data from an ASP.NET website including the process I D, error severity, and full error message.](../media/4-live-log-stream.png)
 
 ### Typical scenarios for using live logging
 
