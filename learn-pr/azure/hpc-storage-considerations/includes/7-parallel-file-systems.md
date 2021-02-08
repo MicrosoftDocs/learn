@@ -8,13 +8,13 @@ Once you complete this unit you will be more familiar with the main parallel fil
 
 Please note that parallel file systems have historically been a full class of capability that requires in-depth knowledge of application I/O and so this information is simply here to help build understanding, not expertise.
 
-## Distributed NAS(NFS) vs Parallel File Systems ##
+## Distributed NAS(NFS) vs parallel file systems ##
 
 Both Distributed NAS and parallel file systems are shared file systems; files can be read by multiple clients concurrently, files can be written to, locked, metadata can be modified, etc.
 
 They can both be scaled by adding or upgrading storage hardware technologies, adding "front-end" servers to scale client access, or improving network connectivity.
 
-![NAS vs PFS](../media/nas_vs_pfs.png)
+![NAS vs PFS](../media/nas-vs-pfs.png)
 
 ### Parallel I/O ###
 
@@ -30,9 +30,9 @@ NFS clients interface directly with a NFS server, which provides metadata inform
 
 Parallel file systems, by contrast, typically implement strategies to better scale client data access. Lustre, for example, implements a separate metadata server (MDS) and clients retrieve all metadata from that system. Further, Lustre clients are then able to directly access the storage server where a given file is located and are able to read/write multiple parallel threads. This approach allows the architecture to scale bandwidth based on the number of deployed storage servers.
 
-### Block Size ###
+### Block size ###
 
-**Block Size** was discussed earlier in the context of NFS. Parallel file system block sizes can be much larger than NFS. The default rsize/wsize for NFS clients is usually 64K; Lustre, as one example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. On the other hand, parallel file systems offer very little advantage when the file sizes are very small and the number those files is significantly high.
+**Block size** was discussed earlier in the context of NFS. Parallel file system block sizes can be much larger than NFS. The default rsize/wsize for NFS clients is usually 64K; Lustre, as one example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. On the other hand, parallel file systems offer very little advantage when the file sizes are very small and the number those files is significantly high.
 
 ### Complexity ###
 
@@ -40,6 +40,6 @@ Distributed file system solutions running NFS are easy to set up and run for com
 
 Parallel file systems typically operate against complex workloads in scale environments and are more likely to require configuration and tuning to ensure sufficient performance and scale.
 
-## Deployment Considerations ##
+## Deployment considerations ##
 
 Today, Azure offers several roll-your-own parallel file system offerings. You can go to the Azure Marketplace to see the options, which include BeeGFS, Lustre (search for Whamcloud). You can also install Lustre on standard Linux Virtual Machines, or you can use of the ARM templates found at our Azure Quickstart site: https://azure.microsoft.com/en-us/resources/templates/?term=lustre

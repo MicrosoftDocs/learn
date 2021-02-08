@@ -3,19 +3,16 @@ uid: learn.hpc-storage-considerations.8-hybrid-file-access-requirements
 title: Hybrid file access requirements
 metadata:
   title: Hybrid file access requirements
-  description: Hybrid file access requirements
+  description: TODO must be one or more complete sentences, differ from title
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/8-hybrid-file-access-requirements.md)]
-  quiz:
+quiz:
   title: Check your knowledge
   questions:
   - content: "________ will transmit data to a destination based on whether it exists there or reflects the latest changes"
@@ -33,7 +30,7 @@ content: |
       explanation: "caching generally refers to the placement of data in fast memory or storage close to compute, based on client requests"
     - content: "cp"
       isCorrect: false
-      explanation: "cp is the Linux os copy utility""
+      explanation: "cp is the Linux os copy utility"
     - content: "rsync"
       isCorrect: true
       explanation: "rsync is a widely used tool for synchronizing data"

@@ -1,6 +1,6 @@
 The previous units were largely focused on **what** your storage solution was doing. This unit will focus on **where** your data is located. We will discuss *hybrid* file access considerations and how to approach them.
 
-## Overview of Hybrid File Access ##
+## Overview of hybrid file access ##
 
 You have decided to run a HPC workload in Azure that is currently running in your datacenter. Your compute environment accesses data on your NAS, which is serving NFSv3 ops to your workload. It's been running there for years but perhaps your NAS environment is reaching the end of its cycle and rather than replace it you're considering a long-term migration into the cloud.
 
@@ -24,10 +24,10 @@ The challenge then is to present the data to Azure Compute, in a cost-effective,
 
 This is an example of the considerations you may face when attempting to run a new HPC workload in Azure. The main questions you must answer are:
 
-    - Can source data be moved to Azure without retaining a copy on-premises?
-    - Can results data be saved in Azure storage without retaining a copy on-premises?
-    - Do on-premises users require concurrent access to the source or results data?
-    - If they do, are they able to operate on the data in Azure, or are they requiring it be stored on-premises?
+- Can source data be moved to Azure without retaining a copy on-premises?
+- Can results data be saved in Azure storage without retaining a copy on-premises?
+- Do on-premises users require concurrent access to the source or results data?
+- If they do, are they able to operate on the data in Azure, or are they requiring it be stored on-premises?
 
 If the data must be kept on-premises, how much data must be copied to Azure for the workload? How long from the time the data is processed to the need to process a new set of data? Will your workload run in that timeframe?
 
@@ -39,7 +39,7 @@ If the data is moved to Azure, you may need to consider how it will be secured. 
 
 Next, we consider the methods of accessing the data: caching, copying or synchronizing.
 
-## Caching vs Copying vs Sync ##
+## Caching vs copying vs sync ##
 
 We will discuss the general approaches you can use to put data into Azure. The focus of this transfer is on **active** data; we will not discuss data archival and backup. The data being transferred in our discussion is presumed to be the *working set* of a HPC workload. In a life sciences HPC environment, data might include source data such as raw genomic data, binaries used to process that data, or supplemental data such as reference genomes. It is to be processed immediately upon arrival or not long after. It must also be stored on media with the appropriate performance profile in terms of IOPS, latency, throughput and cost. By contrast, archive/backup data is most often transferred to the lowest storage cost solution possible, which is not intended for high performance access.
 
@@ -79,4 +79,4 @@ Caching offers an additional advantage for hybrid scenarios. Because the data is
 
 Finally, certain caching solutions offer what is called an *attribute check*. Similar to synchronization, the cache will periodically check the attributes of the file located in the source, and retrieve byte ranges where the file modification is greater at the source. This ensures that you're HPC environment is always operating with the freshest data.
 
-![WAN Cachine](../media/wan_caching.png)
+![WAN Cachine](../media/wan-caching.png)

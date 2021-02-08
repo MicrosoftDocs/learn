@@ -15,7 +15,7 @@ The data is assumed to reside in one or more storage solutions in your local env
 - Storage area network (SAN) solutions.
 - Network-attached storage (NAS) solutions.
 
-![Three different Storage Architectures](../media/storage_architectures.png)
+![Three different Storage Architectures](../media/storage-architectures.png)
 
 The data in question may be created locally by analysts, artists, researchers, or scientists, and it might also be periodically acquired from third parties and deposited in your local storage solution.
 

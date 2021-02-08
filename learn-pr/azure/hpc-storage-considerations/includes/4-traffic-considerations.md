@@ -26,7 +26,7 @@ Application access drives the type of reading and writing traffic patterns your 
 
 HPC workloads may be highly parallel, with many machines requesting the same data from a shared file system. Or they may be unique and serialized, with unique and random data access patterns. Sequential traffic performance will be greater than random traffic. An example of sequential traffic might be the loading of a binary library or a large image or video file by one or more machines. An example of random traffic might include requests for different byte ranges of a a single or multiple files, versus reading the entire file itself.
 
-### Checkpoints and Snapshots
+### Checkpoints and snapshots
 
 Workloads may often be **checkpointed** -- the state of the application and its data are copied to durable storage and then the workload continues. Checkpointing is used to resume long-running workloads without requiring a complete job restart. Checkpointing may also be used in conjunction with **snapshots**, which are read-only copies of your file system taken at a point-in-time. Checkpoints can be thought of as application-specific or application-dependent, while snapshots are relevant to the file system level.
 

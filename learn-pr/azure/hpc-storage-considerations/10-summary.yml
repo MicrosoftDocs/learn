@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.hpc-storage-considerations.2-file-access
-title: File access for HPC jobs
+uid: learn.hpc-storage-considerations.10-summary
+title: Summary
 metadata:
-  title: File access for HPC jobs
+  title: Summary
   description: TODO must be one or more complete sentences, differ from title
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
-  [!include[](includes/2-file-access.md)]
+  [!include[](includes/10-summary.md)]

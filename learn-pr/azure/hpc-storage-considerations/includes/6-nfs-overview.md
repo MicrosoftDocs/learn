@@ -1,12 +1,12 @@
 There are some key NFS concepts we want to discuss in the context of choosing your HPC storage solution. The main challenge when usign NFS is whether or not your target HPC storage environment requires certain configuration elements, network connectivity, or security features specific to a given version of NFS. Gathering some of theseconcepts into your selection criteria will be helpful when assessing the various available solutions. At minimum, accounting for these items will save you valuable time by eliminating anything that doesn't quite fit the specific NFS requirements you may have.
 
-## NFS Considerations ##
+## NFS considerations ##
 
 There are two main versions of the NFS protocol: NFSv3 and NFSv4.x (v4.1, v4.2). The full scope of these two versions' differences lies outside the goals of this module, but there are a handful of issues related to authentication and authorization that we will identify here. We will also not get into the history of the two protocols, or why there are two other than to say many users are still running NFSv3 in their environments.
 
 We will first discuss some topics specific to the use of NFSv3.
 
-### NFSv3 and Groups ###
+### NFSv3 and groups ###
 
 NFSv3 is a simple file system protocol that passes API requests NFS clients and servers. We mentioned earlier that a user is represented by their UID and have a primary group GID association. We also mentioned that a user may be associated with a larger number of groups. For NFS purposes, these additional group assignments are known as *auxiliary groups*. The UID and GID information are passed with requests, which the NFS server will use to determine the appropriate level of access.
 
@@ -26,7 +26,7 @@ We will discuss a *hybrid* architecture in a future unit where this will become 
 
 ### Squashing ###
 
-![Root Squash](../media/root_squash.png)
+![Root Squash](../media/root-squash.png)
 
 *Squashing* refers to the NFS server's ability to force the use of a specific UID when accessing files/folders. For example, an administrator may want to control which UID is used for a specific exported folder. Linux NFS server environments support the ability to squash root access to a non-root UID. NAS products support specific squashing based on incoming client network/address and UID value. One of the key uses of squashing is to ensure non-root access over remote connections.
 

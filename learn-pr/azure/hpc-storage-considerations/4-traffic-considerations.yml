@@ -3,15 +3,12 @@ uid: learn.hpc-storage-considerations.4-traffic-considerations
 title: File system traffic considerations
 metadata:
   title: File system traffic considerations
-  description: File system traffic considerations
+  description: TODO must be one or more complete sentences, differ from title
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-interactive: bash
-azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/4-traffic-considerations.md)]
