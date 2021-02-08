@@ -202,7 +202,7 @@ ok      github.com/msft/bank    0.250s
 
 ## Implement the statement method
 
-Let's write a simple method to print out the statement that includes the account name, number, and balance. But first, let's create the `TestStatement` function:
+Let's write a simple method to print the statement that includes the account name, number, and balance. But first, let's create the `TestStatement` function:
 
 ```go
 func TestStatement(t *testing.T) {

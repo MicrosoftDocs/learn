@@ -4,7 +4,7 @@ Let's talk about what we'll be creating. As mentioned previously, we'll create t
 
 The online bank we're about to build is a proof of concept, which will determine how feasible it is to build the bank app. In this first iteration, the interaction with the core package will be through a CLI program. We won't have a user interface or persist data into a database. To see the account statement from a customer, we'll simply expose an endpoint.
 
-In a nutshell, the online bank system will be able to do the following:
+The online bank system will be able to:
 
 - Create an account.
 - Give customers the ability to withdraw money.

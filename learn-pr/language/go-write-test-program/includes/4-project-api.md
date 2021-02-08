@@ -35,7 +35,7 @@ Run the application with `go run main.go` to make sure you don't have any errors
 
 Creating a Web API in Go is easy, as you saw in a previous module. We'll continue using the `net/http` package. We'll also use the `HandleFunc` and `ListenAndServe` functions to expose endpoints and launch the server. The `HandleFunc` function requires a name for the URL path that you want to expose and the name of a function with the logic for that endpoint.
 
-Let's start by exposing the functionality to print out the statement for an account. Copy and paste the following function in `main.go`:
+Let's start by exposing the functionality to print the statement for an account. Copy and paste the following function in `main.go`:
 
 ```go
 func statement(w http.ResponseWriter, req *http.Request) {
@@ -63,7 +63,7 @@ The first highlight from the `statement` function is that it's receiving the obj
 
 Then, notice that we're using the `req.URL.Query().Get()` function to read a parameter from the query string. This is the account number that we'll send through the HTTP call. We'll use that value to access the account map and get its information. 
 
-Because we're getting data from the user, we should include some validations to avoid a crash. When we know that we have a valid account number, we can make the call to the `Statement()` method and print out the string that it returns to the browser (`fmt.Fprintf(w, account.Statement())`).
+Because we're getting data from the user, we should include some validations to avoid a crash. When we know that we have a valid account number, we can make the call to the `Statement()` method and print the string that it returns to the browser (`fmt.Fprintf(w, account.Statement())`).
 
 Now, modify your `main()` function so it looks like this:
 
@@ -131,7 +131,7 @@ func deposit(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
-Notice that this function follows a similar approach to get and validate the data that it receives from the user. We're also declaring and using variables directly in the `if` statement. Finally, after we add some funds to the account, we print out the statement to see the new account balance.
+Notice that this function follows a similar approach to get and validate the data that it receives from the user. We're also declaring and using variables directly in the `if` statement. Finally, after we add some funds to the account, we print the statement to see the new account balance.
 
 Now, you should expose a `/deposit` endpoint that calls the `deposit` function. Modify your `main()` function to look like this:
 
@@ -168,7 +168,7 @@ If you make the same call several times, the account balance will continue to in
 
 ## Expose the withdraw method
 
-Finally, let's expose the method to withdraw money from an account. Again, let's first create the `withdraw` function in the main program. The function will validate the account number information, withdraw, and print out any error that you receive from the core package. Add the following function to your main program:
+Finally, let's expose the method to withdraw money from an account. Again, let's first create the `withdraw` function in the main program. The function will validate the account number information, withdraw, and print any error that you receive from the core package. Add the following function to your main program:
 
 ```go
 func withdraw(w http.ResponseWriter, req *http.Request) {
