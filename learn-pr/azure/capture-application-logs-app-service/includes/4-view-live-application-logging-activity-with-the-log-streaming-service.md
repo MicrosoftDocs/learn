@@ -28,7 +28,7 @@ To open the log stream, run the following command.
 az webapp log tail --name <app name> --resource-group <resource group name>
 ```
 
-To stop viewing live logs, press `Ctrl+C`.
+To stop viewing live logs, press <kbd>Ctrl+C</kbd>.
 
 ### Curl
 
@@ -57,4 +57,4 @@ After you have created a set of credentials, to open the log stream, run the fol
 curl -u {username} https://{sitename}.scm.azurewebsites.net/api/logstream
 ```
 
-To close the log stream session, press `Ctrl+C`.
+To close the log stream session, press <kbd>Ctrl+C</kbd>.

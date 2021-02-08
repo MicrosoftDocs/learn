@@ -17,8 +17,8 @@ In this module you'll:
 
 ## Prerequisites
 
-* The latest version of the [Python SDK for Azure Quantum](https://pypi.org/project/azure-quantum/?azure-portal=true)
-* [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html?azure-portal=true)
+* The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true)
+* [Jupyter Notebook](https://jupyter.org/install?azure-portal=true)
 * An Azure Quantum workspace
 
 If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.

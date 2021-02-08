@@ -22,7 +22,7 @@ $$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \text
 
 - **Makespan minimization**:
 
-$$k(x) = \sum_{i \in \{k_0-1, \dots, k_{n-1}-1\}} \left( \sum_{M_{lb} < t < T+p_i} c_t \cdot x_{i, ~t-p_i} \right)$$
+$$k(x) = \sum_{i \in \\{k_0-1, \dots, k_{n-1}-1\\}} \left( \sum_{M_{lb} < t < T+p_i} c_t \cdot x_{i, ~t-p_i} \right)$$
 
 As you saw earlier, combining the penalty functions is straightforward - all you need to do is assign each term a weight and add all the weighted terms together, like so:
 
@@ -131,4 +131,4 @@ terms = c1 + c2 + c3 + c4
 ```
 
 > [!NOTE]
-> You can find the full Python script (including the code from all units in this module) and an interactive Jupyter notebook of this sample in our samples repo.
+> You can find the full Python script (including the code from all units in this module) and an interactive Jupyter notebook of this sample in our [samples repo](https://github.com/microsoft/qio-samples/tree/main/samples/job-shop-scheduling?azure-portal=true).

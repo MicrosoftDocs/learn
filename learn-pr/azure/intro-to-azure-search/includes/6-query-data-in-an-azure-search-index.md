@@ -8,7 +8,7 @@ Index and query design are closely linked. A crucial component to understand is 
 
 Azure Cognitive Search queries can be submitted as an HTTP or REST API request, with the response coming back as JSON. Queries can specify what fields are searched and returned, how search results are shaped, and how the results should be filtered or sorted. A query that doesn't specify the field to search will execute against all the searchable fields within the index.
 
-All of the methods of searching are made possible by the Azure Cognitive Search REST API. You can choose to programmatically make GET requests to the API, in Powershell by running `Invoke-RestMethod`, or with tools like PostMan. In the portal, you can use the built-in Search explorer, enabling you to easily execute searches and view the JSON results. Or, there's a rich SDK available for .NET programming languages, with which you can use the `SearchIndexClient` object to submit searches.
+All of the methods of searching are made possible by the Azure Cognitive Search REST API. You can choose to programmatically make GET requests to the API, in PowerShell by running `Invoke-RestMethod`, or with tools like PostMan. In the portal, you can use the built-in Search explorer, enabling you to easily execute searches and view the JSON results. Or, there's a rich SDK available for .NET programming languages, with which you can use the `SearchIndexClient` object to submit searches.
 
 Azure Cognitive Search supports two types of syntax: simple and full Lucene. Simple syntax covers all of the common query scenarios, including geo-search. Full Lucene is useful for advanced scenarios such as wildcard and fuzzy search, or term boosting.
 

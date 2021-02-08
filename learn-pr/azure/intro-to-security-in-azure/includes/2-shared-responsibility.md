@@ -1,6 +1,6 @@
-Organizations face many challenges with securing their datacenters, including recruiting and keeping security experts, using many security tools, and keeping pace with the volume and complexity of threats.
+Organizations face many challenges with securing their data centers, including recruiting and keeping security experts, using many security tools, and keeping pace with the volume and complexity of threats.
 
-As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. By shifting these responsibilities to a cloud service like Azure, organizations can reduce focus on activities that aren't core business competencies. Depending on the specific technology choices, some security protections will be built into the particular service, while addressing others will remain the customer's responsibility. To ensure that the proper security controls are provided, a careful evaluation of the services and technology choices becomes necessary.
+As computing environments move from customer-controlled data centers to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. By shifting these responsibilities to a cloud service like Azure, organizations can reduce the focus on activities that aren't core business competencies. Depending on the specific technology choices, some security protections will be built into the particular service, while addressing others will remain the customer's responsibility. To ensure that the proper security controls are provided, a careful evaluation of the services and technology choices becomes necessary.
 
 :::image type="complex" source="../media/2-cloud-security.png" alt-text="Diagram depicting the advantages of using cloud technology for security.":::
     Diagram titled Security Advantages of Cloud Era. Showing two grids of boxes, one titled traditional approach, one titled cloud-enabled security, where boxes are shaded representing satisfied responsibility, unmet responsibility, partially met responsibility, and Cloud Provider responsibility. The traditional approach has these boxes scattered while the cloud-enabled security grid has them consolidated with several enabling factors: shift commodity responsibilities to provider and re-allocate your resources, leverage cloud-based security capabilities for more effectiveness, and use cloud intelligence to improve detection/response time.
@@ -14,7 +14,7 @@ As computing environments move from customer-controlled datacenters to the cloud
 
 The first shift you'll make is from on-premises data centers to infrastructure as a service (IaaS). With IaaS, you are leveraging the lowest-level service and asking Azure to create virtual machines (VMs) and virtual networks. At this level, it's still your responsibility to patch and secure your operating systems and software, as well as configure your network to be secure. At Contoso Shipping, you are taking advantage of IaaS when you start using Azure VMs instead of your on-premises physical servers. In addition to the operational advantages, you receive the security advantage of having outsourced concern over protecting the physical parts of the network.
 
-Moving to platform as a service (PaaS) outsources several security concerns. At this level, Azure is taking care of the operating system and of most foundational software like database management systems. Everything is updated with the latest security patches and can be integrated with Azure Active Directory for access controls. PaaS also comes with many operational advantages. Rather than building whole infrastructures and subnets for your environments by hand, you can "point and click" within the Azure portal or run automated scripts to bring complex, secured systems up and down, and scale them as needed. Contoso Shipping uses Azure Event Hubs for ingesting telemetry data from drones and trucks &mdash; as well as a web app with an Azure Cosmos DB back end with its mobile apps &mdash; which are all examples of PaaS.
+Moving to the platform as a service (PaaS) outsources several security concerns. At this level, Azure is taking care of the operating system and of most foundational software like database management systems. Everything is updated with the latest security patches and can be integrated with Azure Active Directory for access controls. PaaS also comes with many operational advantages. Rather than building whole infrastructures and subnets for your environments by hand, you can "point and click" within the Azure portal or run automated scripts to bring complex, secured systems up and down and scale them as needed. Contoso Shipping uses Azure Event Hubs for ingesting telemetry data from drones and trucks as well as a web app with an Azure Cosmos DB back end with its mobile apps which are all examples of PaaS.
 
 With software as a service (SaaS), you outsource almost everything. SaaS is software that runs with an internet infrastructure. The code is controlled by the vendor but configured to be used by the customer. Like so many companies, Contoso Shipping uses Microsoft 365 (formerly Office 365), which is a great example of SaaS!
 
@@ -72,7 +72,7 @@ It's the responsibility of those storing and controlling access to data to ensur
 - Store sensitive application secrets in a secure storage medium.
 - Make security a design requirement for all application development.
 
-Integrating security into the application development life cycle will help reduce the number of vulnerabilities introduced in code. We encourage all development teams to ensure their applications are secure by default, and that they're making security requirements non-negotiable.
+Integrating security into the application development life cycle will help reduce the number of vulnerabilities introduced in code. We encourage all development teams to ensure their applications are secure by default and that they're making security requirements non-negotiable.
   :::column-end:::
 :::row-end:::
 
@@ -86,7 +86,7 @@ Integrating security into the application development life cycle will help reduc
 - Secure access to virtual machines.
 - Implement endpoint protection and keep systems patched and current.
 
-Malware, unpatched systems, and improperly secured systems open your environment to attacks. The focus in this layer is on making sure your compute resources are secure, and that you have the proper controls in place to minimize security issues.
+Malware, unpatched systems, and improperly secured systems open your environment to attacks. The focus in this layer is on making sure your compute resources are secure and that you have the proper controls in place to minimize security issues.
   :::column-end:::
 :::row-end:::
 
@@ -113,10 +113,10 @@ At this layer, the focus is on limiting the network connectivity across all your
   :::column span="3":::  
 **Perimeter**
 
-- Use distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for end users.
+- Use distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for end-users.
 - Use perimeter firewalls to identify and alert on malicious attacks against your network.
 
-At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting you when they happen are important ways to keep your network secure.
+At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting you when they happen are essential ways to keep your network secure.
   :::column-end:::
 :::row-end:::
 
@@ -131,7 +131,7 @@ At the network perimeter, it's about protecting from network-based attacks again
 - Use single sign-on and multi-factor authentication.
 - Audit events and changes.
 
-The identity and access layer is all about ensuring identities are secure, access granted is only what is needed, and changes are logged.
+The identity and access layer are all about ensuring identities are secure, access granted is only what is needed, and changes are logged.
   :::column-end:::
 :::row-end:::
 
