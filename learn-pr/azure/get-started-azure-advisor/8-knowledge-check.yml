@@ -41,9 +41,9 @@ quiz:
       explanation: "You have several options for handling recommendations. You can follow the provided link for steps on how to fix the issue. Or you can choose to either postpone or dismiss the recommendation."
 
 
-  - content: "What is the highest possible Advisor score you can receive in any of the five categories that Advisor checks?"
+  - content: "What is the highest possible Advisor Score you can receive in any of the five categories that Advisor checks?"
     choices:
-    - content: "10, since the Advisor score is based on a scale of 1 to 10."
+    - content: "10, since the Advisor Score is based on a scale of 1 to 10."
       isCorrect: false
       explanation: "Each of the five categories has a highest potential score of 100. A score of 100% in any category means all your resources follow the best practices that Advisor recommends."
     - content: "20%, since all five categories added together create a maximum best score of 100%."
