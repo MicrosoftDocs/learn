@@ -48,7 +48,7 @@ func (e *Employee) RemoveCredits(amount float64) (float64, error) {
             e.Credits -= amount
             return e.Credits, nil
         }
-        return 0.0, errors.New("You can't remove more credits that what the account has.")
+        return 0.0, errors.New("You can't remove more credits than the account has.")
     }
     return 0.0, errors.New("You can't remove negative numbers.")
 }
@@ -80,7 +80,7 @@ func main() {
 
     _, err = bruce.RemoveCredits(2500)
     if err != nil {
-        fmt.Println("Can't withdraw or overdrwan!", err)
+        fmt.Println("Can't withdraw or overdrawn!", err)
     }
 
     bruce.ChangeName("Mark")
