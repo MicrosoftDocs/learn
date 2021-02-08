@@ -27,7 +27,7 @@ As an example, for a single subscription, the Advisor Score is the simple mean o
 - Operational excellence = 77
 - Performance = 100
 
-The Advisor Score would be $[(73 + 85 + 77 + 100)/(4x100) = 0.84]$ or 84%.
+The Advisor Score would be $frac{73 + 85 + 77 + 100}{4 x 100} = 0.84$ or 84%.
 
 The scores for multiple subscriptions are calculated a bit differently. Each category score is aggregated according to resources consumed by each subscription.
 
@@ -43,11 +43,12 @@ Your Advisor Score changes as you remediate issues by adopting the best practice
 
 ### Monitor your progress over time
 
-You can track your progress over time by seeing how much your overall score and your category scores change on a daily, weekly, and monthly basis. This lets you set benchmarks to help you achieve your goals. 
+You can track your progress over time by seeing how much your overall score and your category scores change on a daily, weekly, and monthly basis. This lets you set benchmarks to help you achieve your goals.
 
-You can tailor your use of Advisor Score to fit your particular needs, but here is a recommended general workflow for how to manage your Advisor Score. 
+You can tailor your use of Advisor Score to fit your particular needs, but here is a recommended general workflow for how to manage your Advisor Score.
 
 Once you set a target goal for your overall Advisor Score, you can:
+
 - Check in to your Advisor Score dashboard to see if your target goal is being met
 - If the score falls below your target, analyze the category scores to see what is most in need of addressing
 - Look at the category score impact for each recommendation to see which ones will produce the most benefit when addressed
