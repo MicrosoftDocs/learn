@@ -4,8 +4,8 @@ metadata:
   title: Examine privacy, compliance, and data protection standards on Azure (AZ-900)
   description: Learn about Microsoft's commitment to privacy, how Azure adheres to common regulatory and compliance standards, and additional considerations government agencies need to make. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Examine privacy, compliance, and data protection standards on Azure

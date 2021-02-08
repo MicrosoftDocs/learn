@@ -5,8 +5,8 @@ metadata:
   description: "Learn how to choose the best services from Azure to build and manage cloud solutions. Prepare for AZ-900."
   brand: azure
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"

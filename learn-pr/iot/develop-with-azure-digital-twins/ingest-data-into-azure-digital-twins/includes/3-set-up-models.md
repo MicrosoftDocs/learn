@@ -1,6 +1,4 @@
-## Add a model and twin
-
-You can add/upload a model using the CLI command below, and then create a twin using this model that will be updated with information from IoT Hub.
+You can add or upload a model by using the CLI command in step 1. Then, you can use this model to create a twin that will be updated with information from Azure IoT Hub.
 
 The model looks like this:
 
@@ -28,7 +26,7 @@ The model looks like this:
   }
 ```
 
-1. Upload this model to your twins instance by running the following commands in the PowerShell session from the previous unit
+1. Upload this model to your twins instance by running the following commands in the PowerShell session from the previous unit:
 
     ```azurecli
     $model = '{"@id": "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1", "@type": "Interface","displayName": "Factory Production Step: Moulding - Interface Model","@context": "dtmi:dtdl:context;2", "contents": [{"@type": [ "Property", "Temperature" ],"name": "ChasisTemperature","schema": "double","unit": "degreeFahrenheit", "writable": true }, { "@type": "Property", "name": "PowerUsage", "schema": "double"  } ]}'
@@ -36,7 +34,7 @@ The model looks like this:
     az dt model create --models ./model.json -n $dtname
     ```
 
-1. Use the following command to create a twin and set 0.0 as an initial temperature value.
+1. Use the next command to create a twin and set 0.0 as an initial temperature value:
 
     ```azurecli
      $properties = '{"ChasisTemperature": 0.0}'
@@ -44,7 +42,7 @@ The model looks like this:
     az dt twin create --dtmi "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1" --twin-id GrindingStep --properties  ./properties.json --dt-name $dtname
     ```
 
-    Output of a successful twin create command should look like this:
+    The output of a successful **twin create** command should look like this:
 
     ```json
     {
