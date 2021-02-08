@@ -1,4 +1,4 @@
-The Azure Maps web SDK has a wide variety of tools you can use to render spatial data visually on an interactive map on a webpage. Before we get started adding a map to a webpage, let's look at some of the capabilities of the SDK.
+The Azure Maps web SDK has a wide variety of tools you can use to visualize spatial data on an interactive map on a webpage. Before we get started adding a map to a webpage, let's look at some of the capabilities of the SDK.
 
 ## Render a map
 
@@ -32,7 +32,7 @@ You can set map navigation in your app code. For example, you can set the view t
 
 ## Layers
 
-You can augment maps by adding layers. A layer depicts data as a visual object on top of a map. In the app you create, you'll use a layer on a map to depict air quality data.
+You can augment maps by adding layers. A layer visualizes a data object on top of a map. In the app you create, you'll use a layer on a map to visualize air quality data.
 
 When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [Mapbox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We'll talk about GeoJSON later in this module.
 
