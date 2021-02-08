@@ -154,7 +154,6 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```sql
     SELECT SUM(CustomerOrder.Quantity) 
     FROM CustomerOrder
-    JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
     ```
 
     The answer should be 29.
