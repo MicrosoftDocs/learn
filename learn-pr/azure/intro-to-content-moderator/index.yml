@@ -33,11 +33,11 @@ products:
 - azure-cognitive-services
 - azure-cloud-services
 units:
-- learn.azure.intro-to-personalizer.1-introduction
-- learn.azure.intro-to-personalizer.2-what-is-content-moderator
-- learn.azure.intro-to-personalizer.3-how-content-moderator-works
-- learn.azure.intro-to-personalizer.4-when-to-use-content-moderator
-- learn.azure.intro-to-personalizer.5-knowledge-check
-- learn.azure.intro-to-personalizer.6-summary
+- learn.azure.intro-to-content-moderator.1-introduction
+- learn.azure.intro-to-content-moderator.2-what-is-content-moderator
+- learn.azure.intro-to-content-moderator.3-how-content-moderator-works
+- learn.azure.intro-to-content-moderator.4-when-to-use-content-moderator
+- learn.azure.intro-to-content-moderator.5-knowledge-check
+- learn.azure.intro-to-content-moderator.6-summary
 badge:
   uid: learn.azure.intro-to-content-moderator.badge
