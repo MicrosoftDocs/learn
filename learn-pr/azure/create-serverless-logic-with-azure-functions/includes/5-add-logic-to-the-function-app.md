@@ -14,15 +14,11 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="javascript"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. From the previous exercise, when your function app successfully deploys, select **Go to Resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
 
-1. In the left-hand menu, select **All resources**, and then select "**<rgn>[sandbox resource group name]</rgn>**" for the resource group you created in the first exercise.
+1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page appears for your Function App.
 
-1. The resources for the group appear. Select the name of the function app that you created in the previous exercise - **escalator-functions-xxxxxxx** (also indicated by the lightning bolt Function icon).
-
-    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
-
-1. From the top menu bar, select (**+ Add**). The **Add function** pane appears.
+1. From the top menu bar, select (**+ Add**). The **Add function** panel appears.
 
 1. In the **Add function** panel, under the **Select a template** section, select **HTTP trigger**, and then select **Add**. Your **HttpTrigger1** function page appears.
 
