@@ -41,14 +41,14 @@ That address is all we need to clone the fork to your machine.
 
 Open Visual Studio Code.
 
-Press <kbd>Ctrl+Shift+P</kbd> (MacOS: <kbd>Cmd+Shift+P</kbd>) to open the **Command Palette**.
+Press <kbd>Ctrl+Shift+P</kbd> (macOS: <kbd>Cmd+Shift+P</kbd>) to open the **Command Palette**.
 
 In the Search box, enter **clone**.  The drop-down option should list `Git: Clone` as the selected option. Press <kbd>Enter</kbd>.
 
-At the prompt, enter the repository URL by pressing <kbd>Ctrl+V</kbd> (MacOS: <kbd>Cmd+V</kbd>). This action pastes the URL that you copied from the **Clone with HTTPS** window in Step 2. Press <kbd>Enter</kbd>.
+At the prompt, enter the repository URL by pressing <kbd>Ctrl+V</kbd> (macOS: <kbd>Cmd+V</kbd>). This action pastes the URL that you copied from the **Clone with HTTPS** window in Step 2. Press <kbd>Enter</kbd>.
 
 > [!NOTE]
-> The Command Palette provides access to many Git features with helpful prompts.  If you're curious about what you can accomplish from the Command Palette, open it by pressing <kbd>Ctrl+Shift+P</kbd> (MacOS: <kbd>Cmd+Shift+P</kbd>), then type **git** to display a list containing dozens of commands.
+> The Command Palette provides access to many Git features with helpful prompts.  If you're curious about what you can accomplish from the Command Palette, open it by pressing <kbd>Ctrl+Shift+P</kbd> (macOS: <kbd>Cmd+Shift+P</kbd>), then type **git** to display a list containing dozens of commands.
 
 Next, the **Select Folder** window appears. Select the folder on your local hard drive where you want to store the files for the cloned repository.
 
