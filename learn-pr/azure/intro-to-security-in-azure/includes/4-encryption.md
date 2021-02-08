@@ -48,7 +48,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
   :::column span="3":::
 **Encrypt raw storage**
 
-**Azure Storage Service Encryption** for data at rest helps you protect your data inorder to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval. The handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services.
+**Azure Storage Service Encryption** for data at rest helps you protect your data in order to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval. The handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services.
 
   :::column-end:::
 :::row-end:::
