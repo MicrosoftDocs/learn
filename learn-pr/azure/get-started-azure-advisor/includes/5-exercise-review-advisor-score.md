@@ -7,14 +7,14 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 1. In the left panel, select **Advisor Score (preview)**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to open the Advisor Score page.](../media/azure-select-advisor-score.png)
+    > [ ![Screenshot showing how to open the Advisor Score page.](../media/azure-select-advisor-score.png) ](../media/azure-select-advisor-score.png#lightbox)
 
     The Advisor Score page opens showing your overall Advisor Score as well as individual category scores. Remember, your dashboard will look different from the screenshots in this exercise because Advisor is personalized for you.
 
- 1. Notice your overall Advisor Score.
+1. Notice your overall Advisor Score.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the overall Advisor Score.](../media/azure-overall-advisor-score.png)
+    > [ ![Screenshot showing the overall Advisor Score.](../media/azure-overall-advisor-score.png) ](../media/azure-overall-advisor-score.png#lightbox)
 
     Your personal Advisor Score will likely be different than what's shown in our example. The important thing to know is that it gives you a quick snapshot of how much your entire workload is in line with documented best practices for optimization.
 
@@ -23,7 +23,7 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 1. Now let's look over at the Advisor category scores.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the category scores on the Advisor Score page.](../media/azure-advisor-score-by-category.png)
+    > [ ![Screenshot showing the category scores on the Advisor Score page.](../media/azure-advisor-score-by-category.png) ](../media/azure-advisor-score-by-category.png#lightbox)
 
     One thing you'll notice right away is that even though the Advisor Score in this example might be considered pretty good, there are a couple of category scores that are below 50% and really could use some attention.
 
@@ -32,7 +32,7 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
     The area at the bottom of the Advisor Score page shows recommendations for the category you chose.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing how to select a recommendation from the Advisor Score page.](../media/azure-advisor-score-recommendations.png)
+    > [ ![Screenshot showing how to select a recommendation from the Advisor Score page.](../media/azure-advisor-score-recommendations.png) ](../media/azure-advisor-score-recommendations.png#lightbox)
 
     You'll be familiar with some of the fields shown in the table, such as **Potential yearly savings** and **Impacted resources**. But you'll also notice a new field called **Cost score impact**. This is the **Category score impact** for the **Cost** category. It shows you at a quick glance how much the corresponding recommendation will impact the category score when you address it – the higher the percentage, the greater benefit it will have. This lets you focus on those recommendations that will improve your Advisor Score the most.
 
@@ -43,7 +43,3 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 When you do apply any of the recommendations, your Advisor Score will improve! It can take up to 24 hours for the score to change, so check back in a day or so to see how much higher it is.
 
 We recommend that you use Advisor Score as a way to set goals for how closely you want to align with Azure best practices and then track your progress in achieving those goals over time.
-
-
-
-
