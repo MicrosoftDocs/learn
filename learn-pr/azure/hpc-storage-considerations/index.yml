@@ -15,11 +15,11 @@ abstract: |
   - Document the desired file access architecture for your HPC use case
   - Consider the implications of your architecture requirements
   - Compare several file access architectures
-prerequisites:
-- Understanding of file systems
-- Understanding of shared file systems
-- File system permissions and authentication methods, and file system operations
-- Understanding of High Performance Computing (HPC), how HPC jobs run, and how HPC interacts with storage
+prerequisites: |
+  - Understanding of file systems
+  - Understanding of shared file systems
+  - File system permissions and authentication methods, and file system operations
+  - Understanding of High Performance Computing (HPC), how HPC jobs run, and how HPC interacts with storage
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
