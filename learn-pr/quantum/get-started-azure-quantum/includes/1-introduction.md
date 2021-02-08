@@ -6,7 +6,7 @@ In the [Quantum Computing Foundations](/learn/paths/quantum-computing-fundamenta
 
 ![Figure showing Azure Quantum services.](../media/1-azure-quantum-services.png)
 
-In this module, you'll set up your access to Azure Quantum and learn about solutions that are available to you in the cloud. Azure Quantum offers two different types of services: optimization solutions, and quantum computing solutions. Different divisions of the quantum space crew will need one of the two different types of solutions that Azure Quantum offers:
+In this module, you'll set up your access to Azure Quantum and learn about solutions that are available to you in the cloud. Azure Quantum offers two different types of services: quantum computing solutions and optimization solutions. Different divisions of the quantum space crew will need one of the two different types of solutions that Azure Quantum offers:
 
 * Quantum computing solutions to run quantum algorithms in real or simulated quantum devices. Quantum computing with Q# harnesses quantum mechanics to enable computation through a high-level quantum-focused programming language. You will develop Q# applications for quantum hardware with Azure Quantum. The navigation division will run Grover's algorithm in Q# for routing between space stations.
 
