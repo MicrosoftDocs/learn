@@ -251,7 +251,7 @@ In Visual Studio Code, make sure that your <i>app.py</i> file is open. Select th
 
 You should see colored circles (bubbles) on the map that show the WAQI data:
 
-:::image type="content" source="../media/final-output.png" alt-text="Screenshot that shows a map with air quality shown as colored circles." lightbox="../media/final-output.png#lightbox":::
+:::image type="content" source="../media/final-output.png" alt-text="Screenshot that shows a map with air quality shown as colored circles." lightbox="../media/final-output.png":::
 
 Move around the map and you'll see the bubbles update to match the area you're viewing.
 

@@ -218,7 +218,7 @@ You can set up Visual Studio Code to run and debug a Flask app. Then, use your b
 
 In Visual Studio Code, be sure that the <i>app.py</i> file is open in the editor. (Debug options vary based on the file you have open.) In the Activity Bar, select the **Run** icon. Under the **Run and Debug** button, select the **create and launch.json file** link. In the selection drop-down, choose the **Flask** link.
 
-:::image type="content" source="../media/debug-flask-combined.png" lightbox="../media/debug-flask-combined.png#lightbox" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
+:::image type="content" source="../media/debug-flask-combined.png" lightbox="../media/debug-flask-combined.png" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
 
 > [!Note]
 > If you don’t see a new file named *launch.json* in the *.vscode* folder in your application code folder, you can manually create the configuration file.
@@ -245,7 +245,7 @@ To debug the Flask app:
 
 1. In the terminal output, position your cursor on the IP address link. Select Ctrl+Click to open the app in your web browser. If you give the browser permission to get your location, it centers on your current location. Otherwise, the app centers on the Microsoft headquarters in Redmond, Washington, USA.
 
-    :::image type="content" source="../media/map-in-edge.png" alt-text="Screenshot of the map running in the Microsoft Edge web browser." lightbox="../media/map-in-edge-large.png"::: 
+    :::image type="content" source="../media/map-in-edge.png" alt-text="Screenshot of the map running in the Microsoft Edge web browser." lightbox="../media/map-in-edge.png"::: 
 
    Try moving around the map by dragging, using the mouse wheel, or pinching to zoom in and out, depending on your device input options.
 
