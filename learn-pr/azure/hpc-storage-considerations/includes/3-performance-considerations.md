@@ -1,5 +1,3 @@
-# What factors determine file system performance?
-
 If you have run HPC workloads, chances are that you have run into the terms **operations**, **block size**, **IOPS**, **throughput**, and **latency**. You've probably considered these factors when choosing storage.
 
 By the end of this section you should have a working understanding of these five performance factors and how they impact your HPC workloads.

@@ -3,7 +3,7 @@ uid: learn.hpc-storage-considerations.2-file-access
 title: File access for HPC jobs
 metadata:
   title: File access for HPC jobs
-  description: TODO must be one or more complete sentences, differ from title
+  description: A discussion of what files may be used in HPC workloads, and how files are typically accessed
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho

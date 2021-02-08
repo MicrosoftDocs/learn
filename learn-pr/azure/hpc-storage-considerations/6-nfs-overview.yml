@@ -3,7 +3,7 @@ uid: learn.hpc-storage-considerations.6-nfs-overview
 title: NFS overview
 metadata:
   title: NFS overview
-  description: TODO must be one or more complete sentences, differ from title
+  description: An overview of the key characteristics of NFS. We will also contrast the two major versions of NFS.
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho

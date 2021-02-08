@@ -1,5 +1,3 @@
-# How does security impact HPC workflows?
-
 After you understand the overall performance and traffic characteristics, you will need to consider *security* aspects of your workload. Your data may be sensitive, such as patient radiological images. You may want to restrict access to the data for many reasons. You may want to offer each of your researchers their own "home directory" from which they can load data and conduct HPC analysis and simulations.
 
 When you select your cloud HPC storage, you must be aware of how it will integrate with your current security posture. You must understand the methods by which your file system will authenticate and authorize access to the files, whether the enforcement is local or remote (or both), where authentication and authorization is sourced. If using a remote shared file system, you will need to understand how to control access via standard NAS practices. Finally, if you are offering unique working spaces for users (home directories), you may need to understand how to allocate that space.

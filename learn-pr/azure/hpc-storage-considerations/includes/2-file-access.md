@@ -1,5 +1,3 @@
-# How does storage access impact HPC workloads?
-
 Storage access is an important part of planning for HPC workload performance. You need to make sure that the required data gets to HPC cluster machines at the right time. You also need to make sure results from those individual machines are quickly saved and available for further analysis.
 
 Files can be a variety of data, including but not limited to these:

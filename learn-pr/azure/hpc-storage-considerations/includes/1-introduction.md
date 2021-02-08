@@ -4,7 +4,7 @@ Suppose you have a computationally intensive compute job you wish to run in Azur
 
 You need a storage solution that can provide fast, scale-out access to your files. The solution you choose will be driven by a variety of considerations.
 
-By the end of this module you will understand the major considerations when choosing your HPC storage solution, and will create a requirements spreadsheet based on all of these considerations.
+By the end of this module you will understand the major considerations when choosing your HPC storage solution, and will be able to create a requirements spreadsheet based on all of these considerations.
 
 ## Learning objectives
 
@@ -12,7 +12,7 @@ In this module, you will:
 
 - Document the desired file access architecture for your HPC use case
 - Consider the implications of your architecture requirements
-- Compare several file access options
+- Compare several file access architectures
 
 ## Prerequisites  
 

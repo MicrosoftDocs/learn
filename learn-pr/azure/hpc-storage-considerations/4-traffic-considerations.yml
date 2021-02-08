@@ -3,7 +3,7 @@ uid: learn.hpc-storage-considerations.4-traffic-considerations
 title: File system traffic considerations
 metadata:
   title: File system traffic considerations
-  description: TODO must be one or more complete sentences, differ from title
+  description: A discussion of the various file access traffic patterns. We will also discuss how each may impact your HPC workload. 
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho

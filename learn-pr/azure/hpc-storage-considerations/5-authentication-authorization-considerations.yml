@@ -3,7 +3,7 @@ uid: learn.hpc-storage-considerations.5-authentication-authorization-considerati
 title: File system authentication and authorization considerations
 metadata:
   title: File system authentication and authorization considerations
-  description: TODO must be one or more complete sentences, differ from title
+  description: By the end of this module you will have gained understanding of these considerations and how they impact your storage architecture.
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho

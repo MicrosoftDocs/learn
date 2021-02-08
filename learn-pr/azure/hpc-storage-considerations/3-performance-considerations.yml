@@ -3,7 +3,7 @@ uid: learn.hpc-storage-considerations.3-performance-considerations
 title: File system performance considerations
 metadata:
   title: File system performance considerations
-  description: TODO must be one or more complete sentences, differ from title
+  description: A discussion of the five performance factors that impact storage and how to determine what tools to use to determine your HPC workload's performance requirements
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
