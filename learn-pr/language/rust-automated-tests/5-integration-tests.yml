@@ -2,7 +2,7 @@
 uid: learn.language.rust-automated-tests.integration-tests
 metadata:
   title: Write integration tests
-  description: Learn about what integration tests are write some test examples.
+  description: Learn about what integration tests are and write some test examples.
   ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: shanama
