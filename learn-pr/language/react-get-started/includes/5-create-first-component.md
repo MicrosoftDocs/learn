@@ -67,11 +67,11 @@ ReactDOM.render(
 
 Our `import` statement imports our component using the same syntax we would for any other module. We're now able to use the component as if it were HTML.
 
-> ![NOTE]
+> [!NOTE]
 > Because JSX uses XML syntax, we're required to close the `App` tag. We can do this by either using the long-form syntax of `<App></App>`, or the "self-closing" short-hand `<App />`. Both options are the same, but most developers use the short-hand option.
 
 ## See the results
 
 Save all files. The browser automatically refreshes with the results!
 
-![Screenshot of Recipe Manager](/media/recipe-manager.png)
+![Screenshot of Recipe Manager](../media/recipe-manager.png)

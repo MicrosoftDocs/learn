@@ -33,7 +33,7 @@ There are two key lines in our HTML:
 - `<script type="module" src="/dist/index.js"></script>`
   - Loads the JavaScript.
 
-> ![NOTE]
+> [!NOTE]
 > You'll notice that the name of the file we are importing is **index.js**. You might be wondering why we are not using **index.jsx**. The reason is that browsers are unable to render JSX files. We always need a bundler (Snowpack in our case) to generate JavaScript, and we reference the JavaScript rather than the JSX.
 >
 > If you are unfamiliar with the `type="module"` attribute, this allows us to use `import` statements in our JavaScript (or JSX) files. This is relatively new to browsers, and makes it much easier to import the necessary packages and components.
@@ -67,7 +67,7 @@ Notice how we are able to use HTML inside our JavaScript. This is the power of J
 
 With our code created, let's see our site in action!
 
-1. Open the integrated terminal in Visual Studio Code by selecting **View** > **Terminal** (or clicking on **Ctl-\`** (or **Cmd-\`** on a Mac)).
+1. Open the integrated terminal in Visual Studio Code by selecting **View** > **Terminal** (or selecting **Ctl-\`** (or **Cmd-\`** on a Mac).
 1. Use the following command to start Snowpack's dev server:
 
     ```bash
@@ -76,7 +76,7 @@ With our code created, let's see our site in action!
 
 Your default browser should automatically open and display your page. If this does not happen automatically, open your browser and navigate to **http://localhost:8080**. You should now see your page!
 
-![Screenshot of Hello world page](/media/hello.png)
+![Screenshot of Hello world page](../media/hello.png)
 
 ### Exploring the generated code
 
