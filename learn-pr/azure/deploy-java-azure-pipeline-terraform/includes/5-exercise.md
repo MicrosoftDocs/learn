@@ -54,7 +54,7 @@ The Azure App Service Deployment Center will automatically generate a GitHub Act
             package: '${{ github.workspace }}/target/*.jar'
     ```
 
-1. Select **Finish** to commit the workflow file to the repository, and immediately start to build and deploy your app.
+1. Select **Save** to commit the workflow file to the repository, and immediately start to build and deploy your app.
 
     > [!NOTE]
     > You also trigger the GitHub Actions workflow by going to "Actions", then select the "build-and-deploy" workflow and "Re-run Jobs".
