@@ -18,7 +18,7 @@ abstract: |
   - Create a React component
   - Work with dynamic data
   - Work with CSS and style
-prerequisites: You'll need knowledge of HTML, CSS, and JavaScript, package management with Node.js and `npm' Knowledge of Git
+prerequisites: You'll need knowledge of HTML, CSS, JavaScript, Git, package management with Node.js and `npm', and a code editor such as Visual Studio.
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
