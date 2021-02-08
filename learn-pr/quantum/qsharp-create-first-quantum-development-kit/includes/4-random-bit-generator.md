@@ -46,19 +46,6 @@ Here, you create a Q# project just like you did earlier.
 
     Like before, you see two files: the project file and *Program.qs*, which contains starter code.
 
-## Include the Measurement library
-
-To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true) operation. After you measure a qubit, you need to use the [Reset](/qsharp/api/qsharp/microsoft.quantum.intrinsic.reset?azure-portal=true) operation to place the qubit back in the zero state. The `Microsoft.Quantum.Intrinsic` library provides both of these operations.
-
-To simplify the process, you can use the [MResetZ](/qsharp/api/qsharp/microsoft.quantum.measurement.mresetz?azure-portal=true) operation. This operation combines `M` and `Reset` as one operation.
-
-The `Microsoft.Quantum.Measurement` library provides the `MResetZ` operation. Let's add that library now.
-
-1. In Visual Studio, open *Program.qs*.
-1. Near the top of the file, add this `open` directive:
-
-    [!code-qsharp[](code/4-program-1.qs?highlight=5)]
-
 ## Define the GenerateRandomBit operation
 
 Recall that in the *QuantumHello* program, you defined the `HelloQ` operation like this:
@@ -69,9 +56,9 @@ operation HelloQ() : Unit {
 }
 ```
 
-Compare that with the operation below. You define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`.
+Compare that with the operation below. You define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`. To measure a qubit, you use the operation [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true).
 
-To define the operation:
+To define the full operation:
 
 1. Replace the contents of *Program.qs* with this code:
 
@@ -83,9 +70,10 @@ To define the operation:
 
     [!code-qsharp[](code/4-program-3.qs?highlight=9-16)]
 
-    Recall that you allocate qubits through the `using` keyword.
+    Recall that you allocate qubits through the `use` keyword.
 
-    The `H` operation places the qubit in superposition. The `MResetZ` operation measures the qubit, resets the qubit to the zero state, and returns the measured value (a zero or a one).
+    The `H` operation places the qubit in superposition. The `M` operation
+    measures the qubit and returns the measured value (a zero or a one).
 
 ## Run the program
 
@@ -103,6 +91,7 @@ Let's try out your random bit generator. To do so:
     ```output
     Zero
     ```
+
 1. Run the program again. This time, you can skip the build phase by using the `--no-build` flag.
 
     ```bash
