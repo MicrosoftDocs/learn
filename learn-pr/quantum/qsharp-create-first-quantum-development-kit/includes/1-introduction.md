@@ -27,5 +27,5 @@ In this module you'll:
 
 ## Prerequisites
 
-- The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
+- [.NET Core 3.1](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)

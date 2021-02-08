@@ -83,6 +83,9 @@ The input table extended according to the list of columns that are provided to t
 
 The following example uses a parse to SQL Audit events in the Application log of Windows Events.
 
+> [!NOTE]
+> This example is not available in the demo environment.
+
 ```kusto
 // KQL SQL Audit Event Parser
 

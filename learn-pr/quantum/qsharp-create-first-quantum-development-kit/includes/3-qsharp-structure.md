@@ -107,7 +107,7 @@ In this module, you'll work with the `Result` type. A `Result` represents the re
 
 ### Allocating qubits
 
-In Q#, to obtain a qubit you use the `using` keyword. You can allocate one or many qubits at a time.
+In Q#, to obtain a qubit you use the `use` keyword. You can allocate one or many qubits at a time.
 
 Here's an example that allocates one qubit:
 
@@ -118,6 +118,6 @@ using (q = Qubit()) {
 }
 ```
 
-Every qubit you allocate with the `using` keyword starts in the zero state.
+Every qubit you allocate with the `use` keyword starts in the zero state.
 
 With these ideas in place, let's dive in and start building our random number generator. You'll start by defining an operation that produces a single random bit.
