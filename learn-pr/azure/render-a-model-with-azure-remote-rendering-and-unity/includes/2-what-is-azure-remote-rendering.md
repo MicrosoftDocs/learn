@@ -2,7 +2,7 @@ In scenarios where every detail matters—industrial plant management, design re
 
 However, untethered devices have limited computational power for rendering complex models. Although you could potentially reduce the quality of a model, this simplification can result in a loss of important detail that's needed in key business and design decisions.
 
-Azure Remote Rendering (ARR) solves this problem by moving the rendering workload to high-end GPUs in the cloud. A cloud-hosted graphics engine renders the image, encodes it as a video stream, and streams the image in real time to devices, such a HoloLens 2. Participants in an remote rendering sessions can interact with rendered models all while viewing the model together in it's current manipulated state.
+Azure Remote Rendering (ARR) solves this problem by moving the rendering workload to high-end GPUs in the cloud. A cloud-hosted graphics engine renders the image, encodes it as a video stream, and streams the image in real time to devices, such a HoloLens 2. Not only can a user view the model, they can interact with the model as well.
 
 ## Quality
 
