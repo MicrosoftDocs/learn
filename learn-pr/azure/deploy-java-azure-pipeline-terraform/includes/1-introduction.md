@@ -1,4 +1,4 @@
-Imagine that you're an infrastructure manager and you've been asked to provision your Azure resources by using Terraform. After you've created your project, you plan to build and deploy your application with GitHub Actions.
+Imagine that you're an infrastructure manager who's been asked to provision your Azure resources by using Terraform. After you've created your project, you plan to build and deploy your application by using GitHub Actions.
 
 ## Provision, build, and deploy tracks
 
