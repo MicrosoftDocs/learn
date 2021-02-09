@@ -1,4 +1,6 @@
-You can ingest data into Azure Digital Twins through external compute resources. An example might be a function app that receives the data and uses the Azure Digital Twins APIs to set properties.
+You can ingest data into Azure Digital Twins through external compute resources: Virtual Machines, Azure Functions, Logic Apps, etc... In this module, a function app will be invoked by Event Grid.  The function app receives the data and uses the [Azure Digital Twins APIs](https://docs.microsoft.com/rest/api/azure-digitaltwins) to set properties.
+
+Additionally, when choosing what type of external compute to use, remember to factor in the additional cost. Virtual Machines, Functions, and Logic Apps all have different cost models.
 
 ## Configure your environment
 
@@ -9,6 +11,8 @@ You'll use the following tools and extensions in this unit:
 - The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code.
 
 ## Create a function app via the CLI
+
+First we'll created and configure the Azure resources needed.
 
 1. Create an Azure storage account:
 
@@ -24,7 +28,7 @@ You'll use the following tools and extensions in this unit:
 
 ## Configure security access for the function app
 
-The Azure function skeleton from earlier examples requires a bearer token to be passed in order to authenticate with Azure Digital Twins. To make sure that this token is passed, you'll need to create a managed identity for the function app.
+The Azure function requires a bearer token to be passed in order to authenticate with Azure Digital Twins. To make sure that this token is passed, you'll need to create a managed identity for the function app.
 
 In this section, we'll create a system-managed identity. We'll then assign the function app's identity to the **Azure Digital Twins Owner (Preview)** role for your Azure Digital Twins instance. The managed identity gives the function app permission in the instance to perform data-plane activities. We'll also provide the URL of the Azure Digital Twins instance to the function by setting an environment variable.
 
@@ -50,9 +54,9 @@ In this section, we'll create a system-managed identity. We'll then assign the f
     az functionapp config appsettings set -g $rgname -n $telemetryfunctionname --settings "ADT_SERVICE_URL=$adthostname"
     ```
 
-## Create an Azure function app in Visual Studio Code
+## Create an Azure function project in Visual Studio Code
 
-In this section, you use Visual Studio Code to create a local Azure Functions project in your chosen language. Later in this unit, you'll publish your function code to Azure.
+In this section, you use Visual Studio Code to create a local Azure Functions project in your chosen language. Later in this unit, you'll publish your function code to the Azure Function that was created earlier.
 
 1. Select the Azure icon in the Activity bar. Then, in the **Azure: Functions** area, select the **Create new project** icon.
 
@@ -80,8 +84,8 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
 In the Visual Studio Code terminal, add the required NuGet packages by typing the following commands:
 
 ```dos
-dotnet add package Azure.DigitalTwins.Core --version 1.0.0-preview.3
-dotnet add package Azure.identity --version 1.2.2
+dotnet add package Azure.DigitalTwins.Core --version 1.2.0
+dotnet add package Azure.identity --version 1.3.0
 dotnet add package System.Net.Http
 ```
 
@@ -138,9 +142,10 @@ namespace My.Function
                     log.LogInformation($"Device:{deviceId} Temperature is:{chasistemperature}");
 
                     //Update twin by using device temperature.
-                    var uou = new UpdateOperationsUtility();
-                    uou.AppendReplaceOp("/ChasisTemperature", temperature.Value<double>());
-                    await client.UpdateDigitalTwinAsync(deviceId, uou.Serialize());
+                    var patch = new Azure.JsonPatchDocument();
+                    patch.AppendReplace<double>("/ChasisTemperature", chasistemperature.value<double>()); 
+
+                    await client.UpdateDigitalTwinAsync(deviceId, patch); 
                 }
             }
             catch (Exception e)
@@ -167,7 +172,7 @@ namespace My.Function
 
      ![Screenshot of dialog box showing three options: Stream logs, Upload settings, and View output.](../media/function-stream-logs.png)
 
-1. Select **Stream logs** to see the messages that are received by the Azure function after the IoT hub setup in the next unit. No messages will be received until the IoT hub is set up and a device sends messages.
+1. Select **Stream logs** to see the messages that are received by the Azure function after the IoT hub set up in the next unit. No messages will be received until the IoT hub is set up and a device sends messages.
 
     Or, you can choose to stream logs at a later time. Right-click the Azure function in Visual Studio Code and select **Start Streaming Logs**:
 
