@@ -15,17 +15,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which planning step is required to deploy Azure VMware Solution in the Azure portal?"
-    choices: 
-    - content: "Create a resource lock."
-      isCorrect: false
-      explanation: "A resource lock allows administrators to lock a subscription, resource group, or resource. A resource lock is not required to deploy AVS."
-    - content: "Register the Microsoft.AVS resource provider."
-      isCorrect: true
-      explanation: "Before you can provision your hosts, make sure that you register the Microsoft.AVS resource provider in the Azure portal."
-    - content: "A service principal"
-      isCorrect: false
-      explanation: "A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. A service principal is not required to deploy AVS."
   - content: "At a minimum, which CIDR network address block does Azure VMware Solution private clouds require?"
     choices:
     - content: "/22"
