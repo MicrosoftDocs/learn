@@ -47,7 +47,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. The function responds by returning the message **Hello, {name}**, echoing back the name that was sent in the request.
 
-    Again, from the source dropdown, select **function.json** to view the configuration of the function, which should look like the following.
+    Again, from the source dropdown, select **function.json** to view the configuration of the function, which should look like the following code.
 
     ```javascript
     {
