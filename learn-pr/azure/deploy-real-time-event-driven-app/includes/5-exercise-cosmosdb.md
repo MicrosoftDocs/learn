@@ -65,7 +65,7 @@ COSMOS_DB_CONNECTION_STRING=$( \
 echo $COSMOS_DB_CONNECTION_STRING
 ```
 
-You can check with `echo $EVENT_HUB_CONNECTION_STRING` if the variable is still set correctly. Otherwise,rerun the following command:
+You can check with `echo $EVENT_HUB_CONNECTION_STRING` if the variable is still set correctly. Otherwise, rerun the following command:
 
 ``` bash
 EVENT_HUB_CONNECTION_STRING=$( \
