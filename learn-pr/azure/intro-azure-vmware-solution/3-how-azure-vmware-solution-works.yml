@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
+title: How Azure VMware Solution Works
+metadata:
+  title: How Azure VMware Solution Works
+  description: How Azure VMware Solution Works
+  ms.date: 01/11/2021
+  author: jdooley-clt
+  ms.author: jedooley
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-azure-vmware-solution-works.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are two benefits to the migration process using Azure VMware Solution?"
+    choices:
+    - content: "Extensive downtime is required."
+      isCorrect: false
+      explanation: "The passkey is shown on the **Device Details** page in the Azure portal."
+    - content: "It eliminates the need and cost of re-skilling."
+      isCorrect: true
+      explanation: "The security key is too sensitive to be displayed on the device."
+    - content: "It encourages the creation of new skills and the learning of new tools."
+      isCorrect: false
+      explanation: "The device is encrypted, so you can't get the passkey from the device itself."
+  - content: "Which of the AVS Security Building Blocks includes patch management and audit trails?"
+    choices:
+    - content: "Azure Inherited Security"
+      isCorrect: false
+      explanation: "The PageBlob folder is the correct place to copy the VHDX."
+    - content: "VMware Inherited Security"
+      isCorrect: false
+      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
+    - content: "Private Cloud Security"
+      isCorrect: true
+      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
+  - content: "Shannon is considering leveraging Reserved Instances to reduce the cost of dedicated nodes. What discount level should she expect to see over standard pricing?"
+    choices:
+    - content: "10%-20%"
+      isCorrect: false
+      explanation: "The PageBlob folder is the correct place to copy the VHDX."
+    - content: "30%-50%"
+      isCorrect: true
+      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
+    - content: "60%-90%"
+      isCorrect: false
+      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
+  - content: "James reads that there's a new patch available for one of the ESXi hosts. Who is responsible for applying that patch?"
+    choices:
+    - content: "James is responsible for doing it himself."
+      isCorrect: false
+      explanation: "The PageBlob folder is the correct place to copy the VHDX."
+    - content: "Microsoft support is responsible for the ESXi Hosts and Host Patching."
+      isCorrect: true
+      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
+    - content: "VMware support is responsible for the ESXi Hosts and Host Patching."
+      isCorrect: false
+      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."

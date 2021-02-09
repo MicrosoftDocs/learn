@@ -1,0 +1,5 @@
+You need to evaluate options to migrate your production workloads out of your on-premises data center. You need to maintain your existing investments in training and operational processes, but want to avoid incurring more datacenter and hardware ownership costs, and you need to move quickly.
+
+The Azure VMware Solution allowed you to redeploy your VMware environment as-is, including all automation and operational knowledge, and scale the size of the environment dynamically.
+
+What used to take days, or even weeks, to deploy was now available on-demand across multiple Azure regions. VMware Solution is capable of scaling to meet the needs to all production workloads. It has connectivity options to suit your deployment, integration with many Azure services that can improve performance and capabilities, full Microsoft support, and clear licensing benefits. Azure VMware Solution can dramatically reduce the challenges of deploying a VMware Private Cloud environment.
