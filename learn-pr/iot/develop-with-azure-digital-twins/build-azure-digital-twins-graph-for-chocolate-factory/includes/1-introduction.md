@@ -21,9 +21,9 @@ To summarize, in this module, you will:
 - A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended.
 - [Azure Command Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli).
   - It is recommended to install AZ CLI locally.
-  - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab. 
+  - It is not recommended to use the Azure Cloud Shell as it will time out due to the length of the lab. 
 - macOS: [PowerShell for Mac](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6&preserve-view=true).
-- Windows OS: PowerShell is built-in.
+- Windows OS: PowerShell is built in.
 - Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory Tenant to complete the exercise units.
 - [Visual Studio Code](https://code.visualstudio.com/).
 - [Node.js](https://nodejs.org/en/download/) version 14.
