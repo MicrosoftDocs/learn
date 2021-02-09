@@ -18,7 +18,6 @@ abstract: |
   - Identify different elements of PowerShell syntax
 prerequisites: None
 ratingEnabled: true
-
 levels:
 - beginner
 roles:
