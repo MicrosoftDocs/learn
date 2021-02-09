@@ -1,5 +1,4 @@
-With an active Azure subscription, your crew is ready to create an Azure Quantum
-workspace.
+With an active Azure subscription, your crew is ready to create an Azure Quantum workspace.
 
 ## Create an Azure Quantum workspace
 
