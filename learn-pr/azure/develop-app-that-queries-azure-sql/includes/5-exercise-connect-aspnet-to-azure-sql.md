@@ -110,7 +110,7 @@ Now let's add to the application the code to retrieve course data from the datab
     }
     ```
 
-1. Save the file, and close the code editor.
+1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the code editor by pressing <kbd>Ctrl+Q</kbd>.
 
 1. Use the code editor to open the **DataAccessController.cs** file.
 
@@ -158,7 +158,7 @@ Now let's add to the application the code to retrieve course data from the datab
     }
     ```
 
-1. Leave the code editor open, and switch to the Azure portal. 
+1. Leave the code editor open, and switch to the Azure portal.
 
 1. On the Azure portal menu, select **SQL databases**, and select your database.
 
@@ -166,7 +166,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
     ![The connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
-1. Return to the code editor. Replace the value of the *connectionString* variable with the value from the clipboard. In the connection string, replace the text `{your_username}` with the value `azuresql`. And replace the text `{your_password}` with the password for this account.
+1. Return to the code editor. Replace the value of the *connectionString* variable with the value from the clipboard. In the connection string, see the text `User ID` with the value `azuresql`. Replace the text `{your_password}` with the password for this account.
 
     ```C#
     private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
