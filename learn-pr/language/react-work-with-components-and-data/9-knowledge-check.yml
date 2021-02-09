@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Choose the best response for each question. Then select **Check your answers.**
+
+quiz:
+  questions:
+  - content: What function is typically used to display arrays in React?
+    choices:
+    - content: Sort
+      isCorrect: false
+      explanation: Sort will reorder the contents of an array, but does not provide the ability to generate JSX.
+    - content: Filter
+      isCorrect: false
+      explanation: Filter will limit the contents of an array, but does not provide the ability to generate JSX.
+    - content: Map
+      isCorrect: true
+      explanation: Map allows you to generate JSX from the contents of an array.
+    - content: Reverse
+      isCorrect: false
+      explanation: Reverse reverses the contents of an array, but does not provide the ability to generate JSX
+  - content: What package is typically used to create a React application?
+    choices:
+    - content: generate-cool-app
+      isCorrect: false
+      explanation: generate-cool-app is not used to create React applications.
+    - content: create-react-app
+      isCorrect: true
+      explanation: create-react-app is used to create React applications.
+    - content: go-react
+      isCorrect: false
+      explanation: go-react is not used to create React applications.
+    - content: start-react
+      isCorrect: false
+      explanation: start-react is not used to create React applications.

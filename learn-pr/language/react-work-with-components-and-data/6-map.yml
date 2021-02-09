@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.6-map
+metadata:
+  title: Map
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Map
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-map.md)]

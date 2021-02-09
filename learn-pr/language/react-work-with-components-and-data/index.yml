@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.language.react-work-with-components-and-data
+metadata:
+  title: React component data #TODO
+  description: Description #TODO
+  ms.date: 02/03/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: React component data #TODO
+summary: The goal of React components is to create reusable blocks of code and UI. To support reusability you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.
+abstract: | 
+  In this module, you will:
+  - 
+prerequisites: You will need knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- azure-app-service-static
+- vs-code
+units:
+- learn.language.react-work-with-components-and-data.1-introduction
+- learn.language.react-work-with-components-and-data.2-concepts
+- learn.language.react-work-with-components-and-data.3-exercise-props
+- learn.language.react-work-with-components-and-data.4-logic
+- learn.language.react-work-with-components-and-data.5-exercise-prop-object
+- learn.language.react-work-with-components-and-data.6-map
+- learn.language.react-work-with-components-and-data.7-exercise-lists
+- learn.language.react-work-with-components-and-data.8-challenge
+- learn.language.react-work-with-components-and-data.9-knowledge-check
+- learn.language.react-work-with-components-and-data.10-summary
+badge:
+  uid: learn.language.react-work-with-components-and-data.badge

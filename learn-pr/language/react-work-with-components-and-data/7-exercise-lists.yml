@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.7-exercise-lists
+metadata:
+  title: Exercise - lists
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Exercise - lists
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-lists.md)]

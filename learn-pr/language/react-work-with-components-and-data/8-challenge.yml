@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.8-challenge
+metadata:
+  title: Challenge
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Challenge
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-challenge.md)]
