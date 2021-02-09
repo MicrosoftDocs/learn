@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-concepts-methodologies.describe-common-threats
+title: Describe common threats
+metadata:
+  title: Describe common threats
+  description: "Describe common threats"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-describe-common-threats.md)]

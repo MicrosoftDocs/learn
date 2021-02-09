@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.connect-azure-assets-to-azure-defender
+metadata:
+  title: Connect Azure assets to Azure Defender
+  description: "Connect Azure assets to Azure Defender"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect Azure assets to Azure Defender
+summary: Learn how to connect your various Azure assets to Azure Defender to detect threats.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explore Azure assets
+  - Configure auto-provisioning in Azure Defender
+  - Describe manual provisioning in Azure Defender
+prerequisites: |
+  - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
+  - Familiarity with Azure virtual machines and virtual networking.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-security-center
+units:
+- learn.wwl.connect-azure-assets-to-azure-defender.introduction
+- learn.wwl.connect-azure-assets-to-azure-defender.explore-manage-your-resources-with-asset-inventory
+- learn.wwl.connect-azure-assets-to-azure-defender.configure-auto-provisioning
+- learn.wwl.connect-azure-assets-to-azure-defender.manual-log-analytics-agent-provisioning
+- learn.wwl.connect-azure-assets-to-azure-defender.knowledge-check
+- learn.wwl.connect-azure-assets-to-azure-defender.summary-resources
+badge:
+  uid: learn.wwl.connect-azure-assets-to-azure-defender.badge

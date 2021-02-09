@@ -8,6 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: What is Windows Server software-defined storage?
 durationInMinutes: 12
 content: |

@@ -10,7 +10,7 @@ Traffic Manager uses DNS to direct clients to a specific service endpoint IP add
 
 ## Traffic Manager endpoints
 
-Endpoints are the destination location that is returned to the client. You configure each application deployment as an 'endpoint' in Traffic Manager. When Traffic Manager receives a DNS request, it chooses an available endpoint to return in the DNS response. There are three types of endpoint supported by Traffic Manager:
+An endpoint is the destination location that is returned to the client. You configure each application deployment as an 'endpoint' in Traffic Manager. When Traffic Manager receives a DNS request, it chooses an available endpoint to return in the DNS response. There are three types of endpoint supported by Traffic Manager:
 
 - **Azure endpoints** are used for services hosted in Azure. These can be services like Azure App Service, as well as public IP resources that are associated with load balancers or virtual machines.
 - **External endpoints** are used for IPv4/IPv6 addresses, FQDNs, or for services hosted outside Azure that can either be on-premises or with a different hosting provider.

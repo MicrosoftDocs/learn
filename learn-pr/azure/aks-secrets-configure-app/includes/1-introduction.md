@@ -28,17 +28,22 @@ All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/clou
 We'll assume an AKS cluster is already created and running. To create your AKS cluster, run the following commands in a Cloud Shell environment:
 
 ```azurecli-interactive
-RESOURCE_GROUP=learn-ship-manager
-echo $RESOURCE_GROUP
+export RESOURCE_GROUP=learn-ship-manager && \
 az group create -n $RESOURCE_GROUP -l eastus
-CLUSTER_NAME=ship-manager
-echo $CLUSTER_NAME
+```
+
+```azurecli-interactive
+export CLUSTER_NAME=ship-manager && \
 az aks create \
  -g $RESOURCE_GROUP \
  -n $CLUSTER_NAME \
  --node-count 1 \
  --node-vm-size Standard_B2s \
+ --generate-ssh-keys \
  --enable-addons http_application_routing
+```
+
+```azurecli-interactive
 az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
 ```
 

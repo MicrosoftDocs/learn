@@ -14,15 +14,11 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="javascript"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
 
-1. In the left-hand menu, select **All resources**, and then select "**<rgn>[sandbox resource group name]</rgn>**" for the resource group you created in the first exercise.
+1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page appears for your Function App.
 
-1. The resources for the group appear. Select the name of the function app that you created in the previous exercise - **escalator-functions-xxxxxxx** (also indicated by the lightning bolt Function icon).
-
-    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
-
-1. From the top menu bar, select (**+ Add**). The **Add function** pane appears.
+1. From the top menu bar, select (**+ Add**). The **Add function** panel appears.
 
 1. In the **Add function** panel, under the **Select a template** section, select **HTTP trigger**, and then select **Add**. Your **HttpTrigger1** function page appears.
 
@@ -51,7 +47,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. The function responds by returning the message **Hello, {name}**, echoing back the name that was sent in the request.
 
-    Again, from the source dropdown, select **function.json** to view the configuration of the function, which should look like the following.
+    Again, from the source dropdown, select **function.json** to view the configuration of the function, which should look like the following code.
 
     ```javascript
     {
@@ -82,21 +78,17 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
 
-1. In the left-hand menu, select **All resources**, and then select "**<rgn>[sandbox resource group name]</rgn>**" for the resource group you created in the first exercise.
+1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page appears for your Function App.
 
-1. The resources for the group appear. Select the name of the function app that you created in the previous exercise -  **escalator-functions-xxxxxxx** (also indicated by the lightning bolt Function icon).
-
-    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
-
-1. Select **Functions** from the left nav bar, and then select **+ Add** from the top menu bar. The **Add function** panel appears that starts the function creation process.
+1. From the top menu bar, select (**+ Add**). The **Add function** panel appears that starts the function creation process.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
 1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and select **Add** to create the function.
 
-1. When your function creation completes, the code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
+1. When your function creation completes, in the left nav bar, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```powershell
     using namespace System.Net
@@ -131,7 +123,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. HTTP functions must generate a response by writing to their output binding, which is accomplished in PowerShell Functions with the `Push-OutputBinding` cmdlet. This function returns the message **Hello $name**, echoing back the name that was sent in the request.
 
-    On the right-hand side of the source view, you'll see two tabs. The **View files** tab lists the code and config file for your function. Select **function.json** to view the configuration of the function, which should look like the following.
+1. From the source dropdown, select **function.json** to view the configuration of the function, which should look like the following.
 
     ```json
     {
@@ -149,10 +141,9 @@ As we described in the preceding unit, Azure provides templates that help you ge
         {
           "type": "http",
           "direction": "out",
-          "name": "Response"
+          "name": "res"
         }
       ],
-      "disabled": false
     }
     ```
 
@@ -184,7 +175,7 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
     ![Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.](../media/5-get-function-key.png)
 
-1. At the bottom of the screen, scroll to the left to see your function. At the top-right, under the **Essentials** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
+1. At the bottom of the screen, scroll to the left to see your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
 1. Next, from the left nav bar, select **Functions**, and then select the **HttpTrigger1**.
 
@@ -282,7 +273,7 @@ module.exports = function (context, req) {
 
 The logic we added is straightforward. We iterate over the array of readings and check the temperature field. Depending on the value of that field, we set a status of **OK**, **CAUTION**, or **DANGER**. We then send back the array of readings with a status field added to each entry.
 
-Notice the `Log` statements when you expand **Logs** at the bottom of the page. When the function runs, these statements will add messages in the log window.
+Notice the `Log` statements when you expand **Logs** at the bottom of the page. When the function runs, these statements will add messages in the Logs window.
 
 ::: zone-end
 
@@ -329,7 +320,7 @@ Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
 
 The logic we added is straightforward. We iterate over the array of readings and check the temperature field. Depending on the value of that field, we set a status of **OK**, **CAUTION**, or **DANGER**. We then send back the array of readings with a status field added to each entry.
 
-Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the log window.
+Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the Logs window.
 
 ::: zone-end
 

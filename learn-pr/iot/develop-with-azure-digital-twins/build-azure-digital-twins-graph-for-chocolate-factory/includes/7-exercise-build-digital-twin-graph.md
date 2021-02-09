@@ -1,7 +1,7 @@
 
 In this exercise, you'll download and run the ADT Explorer sample locally, connect it to your Azure ADT instance, and set up your chocolate factory digital twin.
 
-1. Download the [Azure Digital Twins (ADT) explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
+1. Download the [Azure Digital Twins explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/), which is a locally hosted web application.
 
 1. Extract all the files.
 
@@ -13,9 +13,9 @@ For the ADT Explorer sample to run properly, you'll need to locally log in to th
 
 1. [Install the Azure CLI for your operating system](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true).
 
-1. Once you successfully installed the Azure CLI, you'll be able to log in to Azure by running the following command in a command prompt:
+1. Once you successfully installed the Azure CLI, you'll be able to log in to Azure by running the following command in PowerShell:
 
-    ```cmd
+    ```PowerShell
     az login
     ```
 
@@ -23,21 +23,31 @@ For the ADT Explorer sample to run properly, you'll need to locally log in to th
 
 ## Run ADT Explorer
 
-1. Open a **Command Prompt** as an administrator. Change directory to the path you saved off at the start of this unit, by typing **cd**, then pasting in the path to the **src** folder. For example:
+1. Open **PowerShell** as an administrator. Change directory to the path you saved off at the start of this unit, by typing **cd**, then pasting in the path to the **src** folder. For example:
 
     ```cmd
     cd C:\Users\<your alias>\Downloads\Azure_Digital_Twins__ADT__explorer\client\src
     ```
 
-1. Type **npm install**. This command will install all the required dependencies of the ADT Explorer sample.
+1. Run the following command to install all the required dependencies of the ADT Explorer sample:
 
-    :::image type="content" source="../media/explorer-npm-install.png" alt-text="Command prompt help output when running npm install" lightbox="../media/explorer-npm-install.png":::
+    ```powershell
+    npm install
+    ```
 
-1. Start the explorer ADT Explorer sample by typing **npm run start**. It might take a few seconds before the opening screen of the ADT Explorer sample appears in your web browser.
+    :::image type="content" source="../media/explorer-npm-install.png" alt-text="Terminal help output when running npm install" lightbox="../media/explorer-npm-install.png":::
+
+1. Start the ADT Explorer sample by running the following command:
+
+    ```powershell
+    npm run start
+    ```
+
+    It might take a few seconds before the opening screen of the ADT Explorer sample appears in your web browser.
 
 1. When prompted, enter your Azure Digital Twins URL - this string has the format of **https://** followed by the ADT host name.
 
-1. You may have to grant consent for the app, if a **Permissions requested** pop-up appears.
+1. You may have to grant consent for the app if a **Permissions requested** pop-up appears.
 
 Great, the ADT Explorer sample is loaded and ready! The next stage is to start uploading the models you created in an earlier unit.
 
@@ -47,7 +57,7 @@ Great, the ADT Explorer sample is loaded and ready! The next stage is to start u
 
 1. Navigate to your folder that contains all your chocolate factory production line models. Select all of them and upload them to the ADT Explorer sample.
 
-1. If you get any errors, you'll need to go back to [unit 4](https://docs.microsoft.com/learn/modules/developing-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models.md) and check your work for the model that has the error.
+1. If you get any errors, you'll need to go back to [unit 4](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models) and check your work for the model that has the error.
 
 If there aren't any errors, you'll see a list of models in the left of your ADT Explorer sample window:
 
@@ -93,6 +103,10 @@ You should now see all the relationships between the digital twins in the graph 
 :::image type="content" source="../media/explorer-graph-relationships.png" alt-text="Screenshot showing the completed graph in the ADT Explorer sample" lightbox="../media/explorer-graph-relationships.png":::
 
 ## Explore the graph layout options
+
+1. The button to switch graph layouts is grayed out until a query is run. To enable it, run the default query `select * FROM digitaltwins`:
+
+    :::image type="content" source="../media/explorer-run-query.png" alt-text="Screenshot showing the layout of the ADT Explorer sample" lightbox="../media/explorer-run-query.png":::
 
 1. Locate the icon in the graph view that gives a range of layout options, with names such as "Cola" and "Klay":
 

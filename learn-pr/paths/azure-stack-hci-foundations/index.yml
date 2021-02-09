@@ -3,12 +3,12 @@ uid: learn.azure-stack-hci-foundations
 metadata:
   title: Azure Stack HCI foundations
   description: This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
-  brand: azure
   ms.date: 12/10/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Azure Stack HCI foundations
 summary: |
   This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
@@ -17,7 +17,7 @@ prerequisites: |
   - Window Server software-defined storage
   - Windows Server software-defined networking
   - IoT technologies
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-stack-hci.svg
 levels:
 - beginner
 roles:

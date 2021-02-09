@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.serverless-fundamentals
 metadata:
-  title: Choose the best Azure serverless technology for your business scenario
-  description: Examine Azure serverless technologies, and choose the right service for your business scenario.
+  title: Choose the best Azure serverless technology for your business scenario (AZ-900)
+  description: Examine Azure serverless technologies, and choose the right service for your business scenario. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best Azure serverless technology for your business scenario

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.deploy-java-azure-pipeline-terraform
+metadata:
+  title: Rapidly develop and deploy Java apps using GitHub Actions
+  description: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
+  ms.date: 02/01/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Rapidly develop and deploy Java apps using GitHub Actions
+summary: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
+abstract: |
+  In this module, you will:
+  - Create a Terraform configuration for your Azure resources
+  - Provision your Infrastructure and deploy to Azure
+  - Set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
+prerequisites: | 
+  - An Azure Subscription
+  - A GitHub account
+  - Basic knowledge of Software Development
+  - Basic knowledge of managing and provisioning Azure Resources
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-app-service
+- azure-app-service-web
+- azure-database-mysql
+units:
+- learn.azure.deploy-java-azure-pipeline-terraform.1-introduction
+- learn.azure.deploy-java-azure-pipeline-terraform.2-terraform
+- learn.azure.deploy-java-azure-pipeline-terraform.3-github-actions
+- learn.azure.deploy-java-azure-pipeline-terraform.4-exercise
+- learn.azure.deploy-java-azure-pipeline-terraform.5-exercise
+- learn.azure.deploy-java-azure-pipeline-terraform.6-knowledge-check
+- learn.azure.deploy-java-azure-pipeline-terraform.7-summary
+badge:
+  uid: learn.azure.deploy-java-azure-pipeline-terraform.badge
