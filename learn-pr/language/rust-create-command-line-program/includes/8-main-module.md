@@ -1,11 +1,11 @@
-Now that our program can deal with user interaction (using the `cli` module) and file handling
-(using the `tasks` module) we can try it out to see if everything is working as expected.
+Now that our program can deal with user interaction (by using the `cli` module) and file handling
+(by using the `tasks` module), we can try it out to see if everything works as expected.
 
-We still need to polish some aspects, like using a default journal file and presenting friendly errors to our end users, but let's deal with those topics later.
+We still need to polish some things, like using a default journal file and presenting friendly errors to users, but let's deal with those tasks later.
 
 ## Complete the main module and run the program
 
-The next thing we should do is connect our `Actions` struct to our three public functions defined in the `tasks` module. Open your `main.rs` file and make it look like this:
+The next thing we should do is connect the `Actions` struct to the three public functions defined in the `tasks` module. Open the `main.rs` file and make it look like this:
 
 ```rust
 use structopt::StructOpt;
@@ -16,16 +16,16 @@ use cli::{Action::*, CommandLineArgs};
 use tasks::Task;
 
 fn main() {
-    // Get the command line arguments
+    // Get the command-line arguments.
     let CommandLineArgs {
         action,
         journal_file,
     } = CommandLineArgs::from_args();
 
-    // Unpack the journal file
+    // Unpack the journal file.
     let journal_file = journal_file.expect("Failed to find journal file");
 
-    // Perform the action
+    // Perform the action.
     match action {
         Add { text } => tasks::add_task(journal_file, Task::new(text)),
         List => tasks::list_tasks(journal_file),
@@ -41,11 +41,11 @@ Our `main.rs` outline looks really simple.
 We start by *destructuring* our `CommandLineArgs` struct into its fields, so we can pass those
 values independently to our task-handling functions.
 
-Since `journal_file` is of type `Option<PathBuf>`, we need to extract the path to our journal file or emit a `panic`. We'll revisit this step later to make our program look for a default file, but this `.expect` instruction will work just fine for this experiment.
+Because `journal_file` is of type `Option<PathBuf>`, we need to extract the path to our journal file or emit a `panic`. We'll revisit this step later to make the program look for a default file. For now, this `.expect` instruction will work fine.
 
-Finally, we match each possible `Action` to its function, passing the required fields from our enum to our functions. We call `.expect` at the end of our `match` block because all functions return a `Result` type, which can fail. Again, this will be polished to provide nice error messages to our users in case of failure.
+Finally, we match each possible `Action` to its function, passing the required fields from the enum to the functions. We call `.expect` at the end of the `match` block because all functions return a `Result` type, which can fail. Again, we'll polish this functionality later to provide nice error messages to users in case of failure.
 
-Let's give it a try. Open your terminal and type the following commands:
+Let's give it a try. Open your terminal and enter these commands:
 
 ```output
 $ cargo run -- -j test-journal.json add "buy milk"
