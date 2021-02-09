@@ -1,4 +1,4 @@
-1. Follow the instructions in [Installing PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?azure-portal=true).
+1. Follow the instructions in [Installing PowerShell on Windows](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?azure-portal=true).
 1. From Visual Studio Code, [install the PowerShell extension](https://code.visualstudio.com/docs/languages/powershell?azure-portal=true).  
 
 ### Download the test toolkit
