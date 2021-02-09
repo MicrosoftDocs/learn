@@ -19,7 +19,7 @@ quiz:
     choices:  
     - content: Makes it round.
       isCorrect: false
-      explanation: Incorrect. The Spherical Mercator projection coordinate system changes the chape of a map, but it doesn't make it round.
+      explanation: Incorrect. The Spherical Mercator projection coordinate system changes the shape of a map, but it doesn't make it round.
     - content: Colors it in green and blue.
       isCorrect: false
       explanation: Incorrect. The Spherical Mercator projection coordinate system doesn't affect the color of a map.
