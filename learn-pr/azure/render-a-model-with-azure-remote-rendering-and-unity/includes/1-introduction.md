@@ -12,7 +12,7 @@ By the end of this module, you'll be able to create a remote rendering session a
 
 ## Prerequisites
 
-- A Windows 10 PC configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
+- A Windows 10 PC that meets the [system requirements](https://docs.microsoft.com/azure/remote-rendering/overview/system-requirements) and is configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
 - Windows 10 SDK 10.0.18362.0 or later
 - Unity Hub with Unity 2019.4.X installed
 - Familiarity with [setting up a Unity project for Windows Mixed Reality with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true)
